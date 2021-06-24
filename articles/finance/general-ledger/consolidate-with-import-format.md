@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: e3124ac0e161e003986d7e167e292cbb374e1bfa
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 714c34dfcd109a442a4ecd741409dea5c4aade20
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085443"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216799"
 ---
 # <a name="import-format-for-consolidation"></a>Formát importu pro konsolidaci
 
@@ -34,7 +34,7 @@ V následující tabulce je uveden formát importu, který byste měli použít 
 |--------------|---------|-------|
 | 1            | 170150, Goodwill, 4 | <ul><li>Tabulka záznamů</li><li>ID hlavního účtu zdroje</li><li>Řádek hlavního účtu</li><li>Typ hlavního účtu</li></ul> |
 | 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>ID hlavního účtu</li><li>Datum transakce</li><li>Typ fiskálního období (**0** = Zahájení, **1** = Provozní a **2** = Uzávěrka)</li><li>Měna transakce</li><li>Debet nebo kredit (**0** = Debet a **1** = Kredit)</li><li>Účtovací vrstva</li><li>Částky transakce</li><li>Množství</li><li>Místní RecID (nejednoznačná, jedinečná hodnota int64 pro transakci)</li></ul> |
-| 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Číslo záznamu (číslo transakce záhlaví rozpočtu)</li><li>Výchozí datum hlavičky rozpočtu</li><li>ID rozpočtového modelu</li><li>Hodnota celočíselného výčtu pro typ transakce (prázdný, původní rozpočet atd.)</li><li>Datum řádku.</li><li>ID hlavního účtu pro řádek</li><li>Kód měny pro řádek</li><li>Částka řádku v měně transakce</li><li>Hodnota celočíselného výčtu pro typ rozpočtu pro řádek (výdaj nebo výnos)</li></ul> |
+| 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Číslo záznamu (číslo transakce záhlaví rozpočtu)</li><li>Výchozí datum hlavičky rozpočtu</li><li>ID rozpočtového modelu</li><li>Typ rozpočtu (**1** - původní rozpočet, **2** - převod, **3** - revize, **4** - břemeno, **5** - předběžné břemeno, **6** - přenesený rozpočet, **7** - projekt, **8** - dlouhodobý majetek, **9** - prognóza poptávky, **10** - prognóza nabídky, **11** - rozdělení, **12** - předběžný rozpočet.)</li><li>Datum řádku.</li><li>ID hlavního účtu pro řádek</li><li>Kód měny pro řádek</li><li>Částka řádku v měně transakce</li><li>Hodnota celočíselného výčtu pro typ rozpočtu pro řádek (výdaj nebo výnos)</li></ul> |
 | 4            | DEMF | RecordCompany je zdrojová právnická osoba. |
 | 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>ID hlavního účtu</li><li>Datum transakce</li><li>Typ fiskálního období (0 Zahájení, 1 Provozní a 2 Uzávěrka)</li><li>Měna transakce</li><li>Debet nebo kredit (0 Debet a 1 Kredit)</li><li>Účtovací vrstva</li><li>Částka transakce</li><li>Množství</li><li>Místní RecID (nejednoznačná, jedinečná hodnota int64 pro transakci)</li></ul>  |
 | 6            | BusinessUnit, 1 oddělení, 2 | Atributy finanční dimenze, které jsou definovány v pořadí segmentů.<p>Můžete použít stránku **Export** k ověření, jak jsou definovány atributy.</p> |

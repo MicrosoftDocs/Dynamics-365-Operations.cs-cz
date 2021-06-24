@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b72ccbcec1e3796917c041def19f3985668e7e1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ac31634844ea5d82f795b2262d17a6be3a926c2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807913"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190129"
 ---
 # <a name="procurement-catalogs-overview"></a>Přehled zásobovacího katalogu
 
@@ -66,8 +66,7 @@ Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnost
 -   **Obě**: Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Statická**, je nutné je aktualizovat ručně při aktualizaci těchto kategorií. Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Dynamická**, aktualizuje se automaticky pokaždé, když se změní.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Nastavení hierarchie kategorií zásobování](tasks/set-up-procurement-category-hierarchy.md)
 

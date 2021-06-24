@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058913"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189594"
 ---
 # <a name="compensation-plans"></a>Plány kompenzace
 
@@ -121,8 +121,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 ## <a name="process-events"></a>Procesní události
 Procesní události vypočítá informace o kompenzaci za dané časové období pro všechny zaměstnance, kteří jsou přihlášeni v jednom nebo několika plánech fixní nebo variabilní kompenzace. Procesní událost lze spouštět opakovaně a tím otestovat nebo aktualizovat vypočítané výsledky kompenzace.
 
-<a name="compensation-events"></a>Události kompenzace
--------------------
+## <a name="compensation-events"></a>Události kompenzace
 
 Při každém spuštění procesní události se vytvoří událost kompenzace.  Události kompenzace obsahují výsledky procesu kompenzace pro každého zaměstnance zahrnutého do této události procesu.  Pokud jsou výpočty správné, můžete načtením události kompenzace aktualizovat záznamy kompenzace pro zaměstnance, kteří jsou ovlivněny danou procesní událostí.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835189"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188703"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Nastavení úrokových sazeb pro kód úroku
 
@@ -90,7 +90,6 @@ Takto nastavíte rozsah informací.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Příklad 2: Úrok podle rozsahu = dny
---------------------------------------------------
 
 Nastavíte kód úroku, který přiřadí úrok jednou za každých 15 dnů, po které platba faktury překročí její splatnost. Chcete založit výpočet na hodnotě částky úroku podle stupňovitých intervalů dnů. Hodnota úroku bude 10,00 za každých 15 dní během prvních 60 dnů, 15,00 za každých 15 dní od 61. do 90. dne a 20,00 za každých 15 dní od 91. dne. Hodnoty polí pro kód úroku nastavíte následovně.
 
@@ -111,7 +110,6 @@ Takto nastavíte rozsah informací.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Příklad 3: Úrok podle rozsahu = měsíce
-----------------------------------------------------
 
 Nastavíte kód úroku, který přiřadí úrok jednou za každý měsíc, po které platba faktury překročí její splatnost. Chcete založit výpočet na hodnotě úroku v procentech podle stupňovitých intervalů měsíců. Hodnota úroků bude 1,5 % měsíčně za první tři měsíce po splatnosti, 2,0 % měsíčně za druhé tři měsíce a 2,5 % měsíčně za každý měsíc po prvních šesti měsících. Hodnoty polí pro kód úroku nastavíte následovně.
 

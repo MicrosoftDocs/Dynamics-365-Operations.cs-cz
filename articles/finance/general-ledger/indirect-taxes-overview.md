@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826611"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188433"
 ---
 # <a name="sales-tax-overview"></a>Přehled DPH
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826611"
 
 Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
 
-<a name="overview"></a>Přehled
---------
+## <a name="overview"></a>Přehled
 
 Systém DPH podporuje spoustu typů nepřímých daní, jako daň z prodeje, daň z přidané hodnoty (DPH), daň ze zboží a služeb tax (GST), poplatky jednotkové poplatky a srážková daň. Tyto daně jsou vypočítány a zdokumentovány během transakcí nákupu a prodeje. Musí být pravidelně vykazována a zaplacena finančnímu úřadu. 
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816525"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189709"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -88,8 +88,7 @@ Na kartě **Alokační klíče** lze nastavit **Parametry algoritmu prognózy** 
 - **Nápověda k sezónnosti**: pro sezónní data uveďte nápovědu pro model prognózy, která zlepší přesnost prognózy. Formát: celé číslo, které představuje počet intervalů pro opakování vzoru poptávky. Zadejte například "6" pro data, která se opakují jednou za 6 měsíců.
 - **Procento velikosti testovací sady**: Procentní míra historických dat, která se má použít jako testovací sada pro výpočet přesnosti prognózy. 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled prognózy poptávky](introduction-demand-forecasting.md)
 

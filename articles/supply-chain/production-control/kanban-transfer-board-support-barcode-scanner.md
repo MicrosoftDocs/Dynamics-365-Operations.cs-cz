@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c48c4737c260004ea44109cfb2a0478a3e8653cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825860"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190057"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
 
@@ -29,8 +29,7 @@ ms.locfileid: "5825860"
 
 Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
 
-<a name="registration-modes"></a>Režimy registrace
-------------------
+## <a name="registration-modes"></a>Režimy registrace
 
 Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, který řídí akci při skenování čísla kanbanové karty ne ručně skenujete číslo v poli Číslo kanbanové karty.
 
@@ -42,8 +41,7 @@ Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, kt
 | Vybrat                | Registrovat číslo kanbanové karty a automaticky vybrat odkazovanou úlohu ze seznamu kanbanu. |
 
  
-<a name="registration-mode-select"></a>Režim registrace – Nastavit
-------------------------
+## <a name="registration-mode-select"></a>Režim registrace – Nastavit
 
 Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní. V tomto režimu platí následující podmínky:
 

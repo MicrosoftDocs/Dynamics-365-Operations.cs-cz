@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826364"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193611"
 ---
 # <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826364"
 
 Účetní profily odběratele řídí zaúčtování transakcí odběratelů do hlavní knihy
 
-<a name="customer-posting-profiles"></a>Účetní profily odběratele
--------------------------
+## <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
 Účetní profily odběratelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem odběratelům, skupině odběratelů nebo jednomu odběrateli. Toto nastavení se použije při vytváření prodejních objednávek, volných faktur, hotovostních plateb, upomínek a oznámení úroků. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. 
 
@@ -118,7 +117,6 @@ Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil,
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Tabulka omezení**
 

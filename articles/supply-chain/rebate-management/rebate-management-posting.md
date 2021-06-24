@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020404"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216736"
 ---
 # <a name="rebate-management-posting-setup"></a>Nastavení zaúčtování správy rabatu
 
@@ -43,7 +43,7 @@ Následující tabulka Popisuje nastavení, která jsou k dispozici v části z�
 | Popis | Zadejte Popis profilu. |
 | Modul | Vyberte typ rabatů a autorských poplatků, s nimiž je profil spojen (*Zákazník* nebo *Dodavatel*). |
 | Typ | Vyberte typ profilu (*Rabat* nebo *Autorský poplatek*). |
-| Typ platby | <p>Toto pole určuje formát zaúčtovaného výstupu rabatu.<p><p>Když je pole **Typ** nastaveno na *Rabat*, jsou k dispozici následující hodnoty:</p><ul><li>*Žádný* - Neexistuje žádný výchozí typ účtování. Proto musíte při zpracování definovat typ.</li><li>*Platba pomocí závazků* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro dodavatele úhrady, která je nastavena na zákazníka rabatu.</li><li>*Odpočty zákazníků* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Odpočty zákazníka daňové faktury* - Když zaúčtujete rabat, vytvoří se volná faktura pro zákazníka rabatu.</li><li>*Obchodní výdaje* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li></ul><p>Když je pole **Typ** nastaveno na *Autorský poplatek*, jsou k dispozici následující hodnoty:</p><ul><li>*Žádný* - Neexistuje žádný výchozí typ účtování. Proto musíte při zpracování definovat typ.</li><li>*Platba pomocí závazků* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li></ul><p>Další informace naleznete v následující části [Typy plateb](#payment-types). |
+| Typ platby | <p>Toto pole určuje formát zaúčtovaného výstupu rabatu.<p><p>Když je pole **Typ** nastaveno na *Rabat*, jsou k dispozici následující hodnoty:</p><ul><li>*Platba pomocí závazků* - Když zaúčtujete zákaznický rabat, vytvoří se faktura dodavatele pro dodavatele úhrady, která je nastavena na zákazníka rabatu. Když zaúčtujete rabat dodavatele, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li><li>*Odpočty zákazníků* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Odpočty zákazníka daňové faktury* - Když zaúčtujete rabat, vytvoří se volná faktura pro zákazníka rabatu.</li><li>*Obchodní výdaje* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li></ul><p>Když je pole **Typ** nastaveno na *Autorský poplatek*, jsou k dispozici následující hodnoty:</p><ul><li>*Platba pomocí závazků* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li></ul><p>Další informace naleznete v následující části [Typy plateb](#payment-types). |
 | Společnost | Zvolte společnost (právnickou osobu), pro kterou budou časově rozlišeny dodávky a kterou budou zaplaceny nároky. |
 
 ### <a name="payment-types"></a>Typy plateb

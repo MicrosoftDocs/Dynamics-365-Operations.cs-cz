@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908921"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188927"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908921"
 
 Toto téma obsahuje obecné informace o postupech a operacích. Postup definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět. U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů.
 
-<a name="overview"></a>Přehled
---------
+## <a name="overview"></a>Přehled
 
 Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Supply Chain Management se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 

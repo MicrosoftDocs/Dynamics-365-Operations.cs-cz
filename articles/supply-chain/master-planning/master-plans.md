@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4506e081258bf125a329830032972b35191aca72
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3da1e7d4f6fb709f5ed849022b199a367dbafbee
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833370"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187499"
 ---
 # <a name="master-plans-overview"></a>Přehled hlavních plánů
 
@@ -43,8 +43,7 @@ Můžete také nastavit počáteční dynamický plán tak, aby se aktualizoval 
 
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Nastavení distponibility](coverage-settings.md)
 

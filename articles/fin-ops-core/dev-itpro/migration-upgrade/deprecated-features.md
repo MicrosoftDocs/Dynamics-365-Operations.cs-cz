@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112614"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193559"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -92,7 +92,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Italská lokalizace |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Do 1. října 2020 plánujeme již nepodporovat položku **Sestava černé listiny (IT) – odkaz na funkci IT-00001**. |
+| **Stav**                         | Zastaralé: Do 1. října 2020 plánujeme ukončit podporu této sestavy. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Sestava domácí daně – odkaz na funkci IT-00003
 
@@ -365,6 +365,16 @@ Funkce pro vytvoření šablony pro nové registry daně ze zisku. Tato funkce v
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Mzdy a Lidské zdroje pro Rusko
+Modul specifický pro Rusko pro správu informací o správě zaměstnanců, podrobnosti časového rozvrhu pro zaměstnance, mzdové účetnictví a vytváření výkazů o mzdě. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Mzdy nejsou zahrnuty do globálního strategického zaměření portfolia Dynamics 365. Partneři a nezávislí tvůrci softwaru mají nejlepší pozici pro poskytování funkcí mezd, která je v souladu s místními předpisy a aktualizacemi daní.|
+| **Nahrazeno jinou funkcí?**   | Žádný|
+| **Ovlivněné oblasti produktu**         | Správa aplikace Mzdy a Lidské zdroje pro Rusko |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je jednou z aktualizací funkcí verze 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 s aktualizací Platform Update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.

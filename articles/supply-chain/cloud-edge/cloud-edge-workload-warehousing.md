@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980942"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184015"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -289,14 +289,15 @@ Následující tabulka ukazuje, které funkce skladových operací a zpracován�
 | Změnit fond práce u práce                           | Ano | Ano                          |
 | Zrušit práci                                        | Ano | Ano                          |
 
-
 ### <a name="production"></a>Výrobní
 
-Provozní scénáře správy skladu nejsou v současné době v pracovních zatíženích jednotky škálování podporovány, jak znázorňuje následující tabulka.
+Následující tabulka shrnuje, které provozní scénáře správy skladu jsou (či nejsou) v současné době v pracovních zatíženích jednotky škálování podporovány.
 
 | Zpracovat | Centrum | Pracovní zátěž WES na jednotce škálování |
 |---------|-----|------------------------------|
-| <p>Všechny procesy správy skladu, které souvisí s výrobou. Několik příkladů:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>RAF a výdej dokončeného zboží</li><li>Vyskladnění vedlejšího produktu</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Žádný |
+| Ohlásit jako dokončené a vyskladnit dokončené zboží | Ano | Ano |
+| Vyskladnění vedlejšího produktu | Ano | Ano |
+| <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Žádný |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Údržba jednotek škálování pro WES
 

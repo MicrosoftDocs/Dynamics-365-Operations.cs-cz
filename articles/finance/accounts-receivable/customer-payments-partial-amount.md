@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c6d96f1f957bfe8002a763d98f170681ad92b23
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824021"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188727"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Platby částečných částek odběratelem
 
@@ -28,8 +28,7 @@ ms.locfileid: "5824021"
 
 Odběratelé někdy provedou platbu, která je nižší než částka faktury. Tento článek popisuje různé možnosti pro zvládnutí této situace. Dostupné možnosti závisí na daných obchodních požadavcích a konfiguraci.
 
-<a name="partial-payment-with-no-discount"></a>Částečná platba beze slevy
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>Částečná platba beze slevy
 
 Odběratelé mohou provést částečnou úhradu, protože u sebe právě nemají dostatek hotovosti k zaplacení faktury v plném rozsahu, nebo protože došlo k nesrovnalosti ohledně položky na faktuře. V takovém případě lze fakturu uhradit částečnou platbou. Faktura zůstane otevřená a bude na ní uveden zůstatek.
 

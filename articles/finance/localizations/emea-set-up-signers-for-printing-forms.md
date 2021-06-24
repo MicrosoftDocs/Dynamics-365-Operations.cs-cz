@@ -13,12 +13,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7825aaa8486eb063928ccfc1c67e1f79669c1a1f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9bd6e21a39ee24d2c1ab05b47be2859d31d5a0e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818274"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188979"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Nastavení podepisujících uživatelů pro tiskové formuláře
 
@@ -26,8 +26,7 @@ ms.locfileid: "5818274"
 
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy.
 
-<a name="set-up-default-values"></a>Nastavení výchozích hodnot
----------------------
+## <a name="set-up-default-values"></a>Nastavení výchozích hodnot
 
 K nastavení podepisujících dokumentů, které společnost tiskne, použijte stránku **Úředníci**. Pro firmu i pro zákazníky nebo dodavatele můžete nastavit podepisující osoby a jejich jména, v závislosti na typu dokumentu. Následující tabulka popisuje karty na stránce **Úředníci**.
 

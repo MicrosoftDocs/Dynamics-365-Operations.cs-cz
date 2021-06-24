@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920102"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188834"
 ---
 # <a name="transportation-management-engines"></a>Moduly správy přepravy
 
@@ -43,8 +43,7 @@ Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozic
 | **Typ účtu dopravného**            | Standardizuje fakturu za přepravu a řádky účtu dopravného a používá se při automatickém párování účtu dopravného.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jaké moduly musí být nakonfigurovány pro výpočet sazby dodávky?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jaké moduly musí být nakonfigurovány pro výpočet sazby dodávky?
 
 K vypočítání sazby pro určitého dopravce je nutné nakonfigurovat několik modulů správy přepravy. **Výpočet přepravních sazeb** je sice vyžadován, ale pro podporu **Výpočet přepravních sazeb** mohou být nutné také ostatní moduly. Například **Výpočet přepravních sazeb** slouží k načtení dat z **Výpočet kilometrovného** pro výpočet sazby za kilometráž mezi zdrojem a cílem.
 
@@ -62,8 +61,7 @@ Ve většině případů můžete klepnout na tlačítko **Parametry** ve formul
 |  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi.                        |
 | <em>PřidělovacíStroj</em> |                        Modul pro výpočet rozdělení nákladů, který identifikuje záznam ve výpočtu rozdělení nákladů v databázi.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
 
 Moduly správy přepravy, které pracují s daty, která jsou definovány v rámci Supply Chain Management, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
 

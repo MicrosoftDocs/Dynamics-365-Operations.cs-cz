@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75d994db80071c4ef9e23caf24cb4cadbc1473ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839190"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189885"
 ---
 # <a name="use-tracing-for-explosion"></a>Použití sledování pro rozpad
 
@@ -38,8 +38,7 @@ Po povolení sledování můžete zobrazit informace o činitelích, které tvo�
 
 Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování. K sledování dochází, když rozložíte objednávku. Sledování objednávky zahájíte kliknutím na možnost **Aktualizace** a následným označením zaškrtávacího políčka **Povolit sledování**. Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**. Výsledky hledání jsou zvýrazněny ve stromové struktuře.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
 

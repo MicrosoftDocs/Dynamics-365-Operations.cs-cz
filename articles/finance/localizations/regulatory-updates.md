@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941133"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129770"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -38,37 +38,52 @@ Regulativní aktualizace vydané v rámci měsíční aktualizace jsou označeny
 Nejnovější plány povinné aktualizace naleznete v následující tabulce.   
 
 |Země/oblast|Datum vydání|Verze vydání|Povinná aktualizace|
-|--------------------|---------------|-------|-------|
-|      Rakousko         |   2020. září      | 10.0.15      |   Formát přiznání k DPH U30 byl aktualizován pro vykazování 2020   |
-|      Belgie         |   2020. prosince      | 10.0.16      |   Belgie: "Export transakcí hlavní knihy" hlásí zlepšení výkonu v Dynamics 365 Finance   |   
-|      Brazílie         |   Listopad 2020      | 10.0.15HF      |   SPED Fiscal ICMS/IPI - Záznam C176 - Stav RS   |
-|      Brazílie         |   2020. říjen      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 - přijetí pravidel ověřování kódu výhody společností Distrito Federal   |
-|      Brazílie         |   Říjen 2020, listopad 2020      | 10.0.16, 10.0.15HF      |   Fiskální SPED – rozložení 015   |
-|      Brazílie         |   2020. říjen      | 10.0.16      |   Prohlášení SC DRCST - SEF 262/2020   |
-|      Brazílie         |   2020. říjen      | 10.0.16      |   SPED Fiskální ICMS / IPI záznam C176   |
-|      Brazílie         |   2020. prosince      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 - Identifikace zprostředkovatele digitální platformy (aktualizace pravidel rozložení a ověření)   |
-|      Brazílie         |   2021. březen         | 10.0.17, 10.0.18, 10.0.19         |    Rozložení SPED REINF 1.5.1
-|      Evropa        |   2021. leden       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Dopad protokolu Severního Irska na hlášení obchodu uvnitř společenství v zemích EU  |
-|      Německo        |   2021. leden       | 10.0.16HF      |   Formát oznámení o zaplacení zálohy DPH ELSTER UstVA byl rozšířen o dva nové rámečky 37,50 pro odepsání nedobytných dluhů  |
+|--------------------|---------------|-------|-------| 
+|      Brazílie         |   Květen 2021, prosinec 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006 - Identifikace zprostředkovatele digitální platformy (aktualizace pravidel rozložení a ověření)   |
+|      Brazílie         |   2021. březen         | 10.0.19         |    Rozložení SPED REINF 1.5.1  |
+|      Brazílie         |   2021. únor         | 10.0.18         |    SPED Fiscal 015 - pravidla RS |
+|      Brazílie         |   2021. březen         | 10.0.17 HF       |    NFS-e Elektronická faktura za služby (městské) pro Brazílii  |
+|      Brazílie         |   2021. duben         | 10.0.20        |    SPED ECD Layout 9  |
+|      Brazílie         |   2021. květen         | 10.0.20         |    SPED příspěvky - Průvodce verzí 1.34  |
+|      Egypt         |   2021. únor         | 10.0.17         |    Formulář a sestavy vrácení DPH  |
+|      Egypt        |   2021. únor         | 10.0.17         |    Konfigurace rozložení faktury  |
+|      Egypt         |   2021. únor         | 10.0.17         |    Formulář přiznání ke srážkové dani 41  |
+|      Egypt         |   2021. únor         | 10.0.17         |    Formulář přiznání ke srážkové dani 11  |
+|      Egypt         |   2021. únor         | 10.0.17         |    Odkazy na původní faktury v dobropisech  |
+|      Evropa        |   2021. leden       | 10.0.17      |   Brexit - Dopad protokolu Severního Irska na hlášení obchodu uvnitř společenství v zemích EU  |
+|      Francie        |   2021. březen       | 10.0.18      |   Maloobchod – Aktualizace certifikovaného POS systému – Dynamics 365 Commerce  |
+|      Francie        |   2021. duben       | 10.0.20      |   Vylepšení exportu archivace francouzských dat (FEC)  |
 |      Německo        |   2021. leden       | 10.0.17      |   Změny ve struktuře XML ELSTER předběžného oznámení o DPH (UstVA)  |
-|      Globální        |   2021. leden       | 10.0.16      |   Povolit mechanismus přenesení daňové povinnosti pro schéma DPH/GST  |
-|      Indie         |   2020. prosince      | 10.0.16, HF, 10.0.15HF      |   Změna TCS pro prodej zboží 206 9 (1H) na základě tiskové zprávy CBDT  |
+|      Německo        |   2021. březen       | 10.0.19      |   Rozšíření GDPDU pro tabulku dlouhodobého majetku a transakce  |
+|      Německo        |   2021. duben       | 10.0.20HF      |   Změny ve formátu elektronické fakturace (xRechnung) v Německu od roku 2021  |
+|      Globální        |   2021. leden       | 10.0.17      |   Úroveň srážkové daně online  |
+|      Globální        |   2021. leden       | 10.0.17      |   Platba srážkové daně  |
+|      Globální        |   2021. leden       | 10.0.17      |   Srážková daň v prodejních objednávkách  |
+|      Globální        |   2021. leden       | 10.0.17      |   Mezní hodnota srážkové daně v částce faktury  |
+|      Globální        |   2021. leden       | 10.0.17      |   Ověření data vystavení faktury po odeslání dodacího listu je nyní dostupné u všech zemí  |
+|      Maďarsko        |   2021. únor       | 10.0.17HF, 10.0.18      |   Online fakturační systém v.3.0  |
+|      Indie         |   2021. únor      | 10.0.17HF, 10.0.18      |   Elektronické faktury GST: fakturační údaje eWay  |
+|      Indie         |   2021. březen      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Elektronické faktury GST: exportní objednávky, zamýšlený export, SEZ  |
+|      Indie         |   2021. březen      | 10.0.17HF, 10.0.18HF, 10.0.19      |   QR kód Dynamics na faktuře B2C  |
+|      Itálie         |   2021. březen      | 10.0.19      |   Změny formátu komunikace faktur (Esterometro) v.2.1.1  |
+|      Itálie        |   2021. květen      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Maloobchod – ukázková aktualizace integrace fiskální tiskárny pro podporu formátu XML RT 2.0  |
+|      Itálie         |   2021. březen      | 10.0.19      |   Maloobchod - Povolení maloobchodních faktur porušujících chronologické účtování  |
+|      Itálie         |   2021. únor      | 10.0.19      |   Jedinečná certifikace – 2021  |
 |      Lotyšsko         |   2020. prosince      | 10.0.17      |   Formát Intrastat se aktualizuje od roku 2021  |
-|      Mexiko         |   2020. prosince      | 10.0.17, 10.0.16, 10.0.15      |   Aktualizace atributu „Monto“ |
-|      Nizozemsko         |   2020. říjen      | 10.0.16     |   Formát Intrastat se aktualizuje od roku 2021 |
-|      Nizozemsko         |   2020. prosince      | 10.0.167     |   Nová verze taxonomie pro Nizozemsko NT15 |
-|      Polsko          |   2020. září     | 10.0.15     |   Dobrovolná vylepšení rozdělené platby |
-|      Polsko          |   Listopad 2020     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) - prodejní doklad typu FP a RO pro maloobchodní transakce |
-|      Polsko          |   2020. září     | 10.0.15     |   Polsko: JPK-V7M (VDEK) - možnost odemknout spuštění generování sestavy po částech |
-|      Polsko          |   2020. říjen     | 10.0.16     |   Zpráva JPK-V7M (VDEK) - využití parametru „Dobrovolně rozdělená platba“ |
-|      Polsko          |   Listopad 2020     | 10.0.16, 10.0.15HF     |   Maloobchod - vystavení faktury pro maloobchodního zákazníka na žádost |
-|      Polsko          |   2021. leden     | 10.0.17, 10.0.16HF , 10.0.15HF     |   Polsko: Vysvětlení JPK_KR (účetní knihy SAF), účinné od ledna 2021 |
-|      Rusko          |   Listopad 2020     | 10.0.16    |   Formát přiznání DPH je aktualizován na verzi 5.07 počínaje vykazováním za 4. čtvrtletí 2020|
-|      Rusko          |   2020. říjen     | 10.0.16    |   Změny v PBU18 pro účetní výkaznictví pro rok 2020|
+|      Litva         |   2021. březen      | 10.0.18      |   Sestava SAF-T verze 2.01  |
+|      Mexiko         |   2020. prosince      | 10.0.17      |   Aktualizace atributu „Monto“ |
+|      Nizozemsko         |   2020. prosince      | 10.0.17     |   Nová verze taxonomie pro Nizozemsko NT15 |
+|      Polsko          |   2021. leden     | 10.0.17     |   Polsko: Vysvětlení JPK_KR (účetní knihy SAF), účinné od ledna 2021 |
 |      Rusko          |   2021. leden     | 10.0.17    |   Nový formát přiznání k dani z nemovitosti (technická verze 5.07 místo 5.06) pro výkaznictví 2020|
+|      Rusko          |   2021. březen     | 10.0.19    |   V daňovém přiznání k nemovitosti z roku 2020 bude muset být uvedena průměrná roční hodnota movitého majetku|
+|      Rusko          |   2021. březen     | 10.0.19HF    |   Přiznání daně ze zisku verze 5.09 pro výkaznictví 2020|
+|      Rusko          |   2021. březen     | 10.0.19    |   Vládní nařízení N 2200 21.12.2020 aplikace 4 – je vyžadován nový formulář pro fakturu za přepravu|
 |      Španělsko          |   Listopad 2020     | 10.0.17    |   Ověření aktualizace SII a chyby v.2.1 (bis) od 1. ledna 2021|
-|      Spojené království         |   2020. prosince     | 10.0.17, 10.0.16, 10.0.15    |   Registrace daně z příjmu právnických osob na zákaznických fakturách (Brexit - protokol Severního Irska)|
-|      Spojené království          |   2020. prosince     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit - dopad protokolu Severního Irska na společnosti obchodující se zbožím v lokalitách VB i SI|
+|      Thajsko          |   2021. únor     | 10.0.17HF    |   Formulář srážkové daně Por Ngor Dor 53, 3 a 2 |
+|      Spojené arabské emiráty   |   2021. květen     | 10.0.20    |   Zaúčtování deníku plateb s postdatovanými šeky na bankovní účet |
+|      Spojené království         |   2020. prosince     | 10.0.17    |   Registrace daně z příjmu právnických osob na zákaznických fakturách (Brexit - protokol Severního Irska)|
+|      Spojené království          |   2020. prosince     | 10.0.17    |   Brexit - dopad protokolu Severního Irska na společnosti obchodující se zbožím v lokalitách VB i SI|
+|      Spojené království          |   2021. březen     | 10.0.18    |   DPH MTD > změny znění v rozložení náhledu tisku (políčka 2,8,9) pro rok 2021|
 
 
 

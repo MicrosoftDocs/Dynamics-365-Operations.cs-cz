@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753257"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223979"
 ---
 # <a name="electronic-reporting-formula-language"></a>Jazyk receptur v elektronickém výkaznictví
 
@@ -38,13 +38,13 @@ Výrazy elektronické výkaznictví mohou obsahovat jakékoli nebo všechny nás
 - [Cesty](#Paths)
 - [Funkce](#Functions)
 
-## <a name=""></a><a name="Constants">Konstanty</a>
+## <a name="constants"></a><a name="Constants"></a>Konstanty
 
 Při návrhu výrazů lze použít text a numerické konstanty (hodnoty, které nejsou vypočteny). Například výraz `VALUE ("100") + 20` používá číselnou konstantu **20** a řetězcovou konstantu **"100"** a vrátí číselnou hodnotu **120**.
 
 Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence. Můžete tedy určit řetězec výrazu, se kterým má být zacházeno jinak. Výraz `"Leo Tolstoy ""War and Peace"" Volume 1"` například vrátí textový řetězec **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name=""></a><a name="Operators">Operátory</a>
+## <a name="operators"></a><a name="Operators"></a>Operátory
 
 Následující tabulka ukazuje aritmetické operátory, které lze používat k provádění základních matematických operací, například sčítání, odčítání, dělení a násobení.
 
@@ -88,9 +88,9 @@ Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité.
 
 Pokud výraz obsahuje několik po sobě jdoucích operátorů, které mají stejnou prioritu, vyhodnocují se tyto operátory zleva doprava. Například výraz `1 + 6 / 2 \* 3 > 5` vrátí hodnotu **pravda**. Doporučujeme vám pomocí závorek explicitně určit požadované pořadí operátorů ve výrazech, usnadní se tím čtení a správa výrazů.
 
-## <a name=""></a><a name="References">Odkazy</a>
+## <a name="references"></a><a name="References"></a>Odkazy
 
-Všechny zdroje dat aktuální součásti elektronického výkaznictví, které jsou k dispozici během návrhu výrazu, lze použít jako pojmenované odkazy. Aktuální komponenta ER může být buď mapování modelu, nebo formát. Aktuální datový model elektronického výkaznictví například obsahuje zdroj dat **ReportingDate**, který vrací hodnotu datového typu *DateTime*. Abyste tuto hodnotu v generování dokumentu správně zformátovali, můžete odkazovat na zdroj dat ve výrazu, jako je `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Všechny zdroje dat aktuální součásti elektronického výkaznictví, které jsou k dispozici během návrhu výrazu, lze použít jako pojmenované odkazy. Aktuální komponenta ER může být buď mapování modelu, nebo formát. Aktuální datový model elektronického výkaznictví například obsahuje zdroj dat **ReportingDate**, který vrací hodnotu datového typu [*DateTime*](er-formula-supported-data-types-primitive.md#datetime). Abyste tuto hodnotu v generování dokumentu správně zformátovali, můžete odkazovat na zdroj dat ve výrazu, jako je `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Všechny znaky v názvu referenčního datového zdroje, které nepředstavují písmeno abecedy, musí předcházet jednoduchá uvozovka ('). Pokud název odkazujícího zdroje dat obsahuje alespoň jeden znak, který nepředstavuje písmeno abecedy, musí být název v jednoduchých uvozovkách. Těmito nealfabetickými symboly mohou být například interpunkční znaménka nebo jiné psané symboly. Několik příkladů:
 
@@ -99,7 +99,7 @@ Všechny znaky v názvu referenčního datového zdroje, které nepředstavují 
 
 Pokud mají metody aplikace datové zdroje s parametry, používá se pro volání těchto metod následující syntaxe:
 
-- Pokud má metoda **isLanguageRTL** datového zdroje **Systém** parametr **EN-US** datového typu *Řetězec*, musí být odkazována ve výrazu elektronického výkaznictví jako `System.isLanguageRTL("EN-US")`.
+- Pokud má metoda **isLanguageRTL** datového zdroje **Systém** parametr **EN-US** datového typu [*Řetězec*](er-formula-supported-data-types-primitive.md#string), musí být odkazována ve výrazu elektronického výkaznictví jako `System.isLanguageRTL("EN-US")`.
 - Pokud název metody obsahuje pouze alfanumerické znaky, nejsou uvozovky vyžadovány. U metod tabulky, jejichž název obsahuje závorky, jsou však povinné.
 
 Při přidání datového zdroje **Systém** do mapování elektronického výkaznictví, které odkazuje na třídu aplikace **Globální**, výraz `System.isLanguageRTL("EN-US ")` vrátí *logickou hodnotu* **FALSE**. Upravený výraz `System.isLanguageRTL("AR")` vrátí *logickou* hodnotu **TRUE**.
@@ -107,9 +107,9 @@ Při přidání datového zdroje **Systém** do mapování elektronického výka
 Je možné omezit způsob, jakým jsou hodnoty předány do parametrů tohoto typu metody:
 
 - Lze předat pouze konstanty do metod tohoto typu. Hodnoty konstant jsou definovány v době návrhu.
-- Podporovány jsou pouze jednoduché (základní) datové typy pro parametry tohoto typu. Jednoduché datové typy jsou *celé číslo*, *reálné*, *logická hodnota* a *řetězec*.
+- Podporovány jsou pouze [jednoduché](er-formula-supported-data-types-primitive.md) (základní) datové typy pro parametry tohoto typu. Jednoduché datové typy jsou *celé číslo*, *reálné*, *logická hodnota* a *řetězec*.
 
-## <a name=""></a><a name="Paths">Cesty</a>
+## <a name="paths"></a><a name="Paths"></a>Cesty
 
 Pokud výraz odkazuje na strukturovaný zdroj dat, můžete použít definici cesty k volbě určitého primitivního prvku daného zdroje dat. Znak tečky (.) se používá k oddělení jednotlivých prvků strukturovaného zdroje dat. Například aktuální model mapování elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů. Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty. Proto můžete pro výpočet fakturované částky navrhnout následující výraz: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstrukce `InvoiceTransactions.AmountDebit` v tomto výrazu je cesta, která se používá pro přístup k poli **AmountDebit** zdroje dat **InvoiceTransactions** typu *Seznam záznamů*.
 
@@ -129,7 +129,7 @@ Zbývající část absolutní cesty je také zobrazena v [editoru vzorců ER](g
 
 Další informace získáte v části [Použití relativní cesty v datových vazbách modelů a formátů elektronického výkaznictví](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funkce</a>
+## <a name="functions"></a><a name="Functions"></a>Funkce
 
 Vestavěné funkce ER lze používat ve výrazech ER. Všechny zdroje dat kontextu výrazu (tj. aktuální mapování modelu nebo formát elektronického výkaznictví) mohou sloužit jako parametry funkcí volání, v souladu se seznamem argumentů pro funkce volání. Konstanty lze také použít jako parametry funkcí volání. Například aktuální model mapování elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů. Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty. Takže pokud chcete vypočítat fakturovanou částku, můžete navrhnout následující výraz využívající integrovanou funkci zaokrouhlování pro použití v elektronickém výkaznictví: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Rozšíření seznamu funkcí elektronického výkaznictví](general-electronic-reporting-formulas-list-extension.md)
 
+[Podporované typy jednoduchých dat](er-formula-supported-data-types-primitive.md)
+
+[Podporované typy složených dat](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

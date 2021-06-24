@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744156"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188068"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
@@ -31,8 +31,7 @@ Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, j
 > [!IMPORTANT]
 > Můžete nahrát své vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 Human Resources, ale nebude možné je uložit do knihovny modelování podnikových procesů nebo je otevřít z podokna Nápovědy. Můžete je uložit v místním počítači nebo na umístění v síti a potom je otevřít a přehrát pomocí záznamníku úkolů. 
 
-<a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
--------------------------
+## <a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
 
 Záznamník úkolů je nástroj, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní produktu. Při použití Záznamníku úkolů jsou zaznamenány všechny události prováděné v uživatelském rozhraní, které jsou spouštěny na serveru, včetně přidání hodnot, změny nastavení a odebrání dat. Kroky, které zaznamenáte, jsou souhrnně označovány termínem *záznam úkolu*. Záznamy úloh lze používat mnoha způsoby:
 
@@ -111,8 +110,7 @@ Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použí
 
 
 
-<a name="additional-resources"></a>Další prostředky
---------
+## <a name="additional-resources"></a>Další prostředky
 
 [Systém nápovědy](../../fin-ops/get-started/help-overview.md)
 

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3c69781aa7a67d22fe7d0fc70b1349673c5867c
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 289b51c1dcb2a30a09c643d7cc419af0627bd8d8
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897253"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193348"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Katalog kurzů pro správce Dynamics 365 Finance
 
@@ -60,7 +60,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 | Obsah | popis  | Formát | Délka    |
 |---------|--------------|--------|-----------|
-| [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. | Bezplatný záznam webové konference | 61 min. |
+| [Upgrade aplikací Dynamics AX 2012 na Finance and Operations](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Naučte se nejdůležitější prvky a osvědčené postupy pro úspěšnou aktualizaci vašeho řešení Dynamics AX 2012 na aplikace Finance and Operations. Od prvních kroků k objevování klíčových architektonických rozdílů, od zahájení procesu upgradu a nástrojů pro upgrade kódu a dat až po nejlepší způsoby redesignu vašich integrací, analytiky a sestav na základě nejnovějších schopností. | Libovolná online školení vlastním tempem | 7 hodin |
+| [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. | Bezplatný záznam webové konference | 61 min. |
 | [Jak upgradovat na verzi 7.2 (červenec 2017) z 7.0 (RTW)/7.1 (vydání 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | V této relaci si ukážeme, jak upgradovat aplikaci Dynamics 365 Finance and Operations v7.0 (RTW) a v7.1 (1611) na v7.2 (červenec 2017). Provedli jsme jasné rozlišení mezi aktivními zákaznickými a probíhajícími (dosud neaktivními) projekty. | Bezplatný záznam webové konference | 58 min. |
 | [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Bezplatný záznam webové konference | 45 minut |
 | [AX2009 Nástroj pro migraci](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Tato relace pokryje dostupné nástroje, které vám budou pomáhat při migraci z AX2009 na D365 for Operations. | Bezplatný záznam webové konference | 55 minut |

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f80d1509c7c363e93b83cb47c1b93ab00bf67180
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020855"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193461"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -37,7 +37,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>Interval generování celé datové sady je zastaralý
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Počínaje tímto vydáním, ve formuláři **Parametry plánovače obchodu** v centrále Dynamics 365 bude pole **Celý interval generování datové sady ve dnech** zastaralé. Počínaje touto verzí bude pole vizuálně odstraněno, takže hodnotu nebude možné upravit. Zůstane jako hodnota **0**. |
 | **Nahrazeno jinou funkcí?**   | Žádný |
@@ -49,7 +49,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Podpora aplikace Internet Explorer 11 pro Dynamics 365 je zastaralá
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
@@ -59,7 +59,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.11
 ### <a name="data-action-hooks"></a>Zavěšení datových akcí
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce háčků datových akcí byla zastaralá kvůli problémům s výkonem. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme použít [přepisy akce dat](../e-commerce-extensibility/data-action-overrides.md) ke změně obchodní logiky ve vrstvě akce dat.|
@@ -68,7 +68,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Stav**                         | Zastaralé: k verzi 10.0.11 |
 
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Maloobchodní podpora SDK pro Visual Studio 2015, msbuild 14.0 a Retail SDK\Referenční knihovny a nástroje
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Maloobchodní podpora SDK pro Visual Studio 2015 byla vyřazena a aktualizována tak, aby podporovala VS 2017, msbuild 15.0 a všechny referenční knihovny a nástroje komerčního generátoru proxy ve složce RetailSDK\References přesunuty do balíčků NuGet ke zjednodušení modelu rozšíření a procesu upgradu SDK.|
 | **Nahrazeno jinou funkcí?**   | Doporučujeme vám řídit se při aktualizaci systému řídit informacemi v části [Migrace sady Retail SDK z Visual Studio 2015 na Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md). |
@@ -77,7 +77,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Stav**                         | Zastaralé: k verzi 10.0.11 |
 
 ### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Maloobchodní rozšíření serveru pomocí IEdmModelExtender a CommerceController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Rozšíření Retail serveru pomocí IEdmModelExtender a CommerceController bylo vyřazeno, aby poskytovalo zjednodušený model rozšíření. Nová implementace bude mít pouze třídu kontrolerů bez další implementace třídy IEdmModelExtender. Tím se také vyhnete závislosti na konkrétní verzi OData (pokud je aktualizována verze OData, může to poškodit rozšíření). |
 | **Nahrazeno jinou funkcí?**   |  Doporučujeme použít model rozšíření třídy IController importováním balíčku NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -86,7 +86,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Stav**                         | Zastaralé: k verzi 10.0.11 |
 
 ### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Rozšíření hardwarové stanice pomocí IHardwareStationController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Rozšíření hardwarové stanice pomocí IHardwareStationController bylo vyřazeno, aby se získal zjednodušený model rozšíření. Nová implementace bude mít pouze třídu IController bez jakékoli další implementace třídy a aby se předešlo závislosti na knihovnách základních hardwarových stanic, musí předchozí rozšíření odkazovat na více knihoven.) |
 | **Nahrazeno jinou funkcí?**   | Doporučuje se použít model rozšíření třídy IController importováním balíčku NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -96,7 +96,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>Operace POS 803 – Vyzvednutí a příjem
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Operace stahování a přijímání jsou zastaralé kvůli novému přepracování operací. |
 | **Nahrazeno jinou funkcí?**   | Ano. Je nahrazen dvěma novými operacemi POS: příchozí operace (804) a odchozí operace (805).|
@@ -107,7 +107,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.7
 ### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Rozhraní API obchodu GetProductAvailabilities a GetAvailableInventoryNearby
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Byla vytvořena nová optimalizovaná rozhraní API nahrazující rozhraní API GetProductAvailabilities a GetAvailableInventoryNearby. |
 | **Nahrazeno jinou funkcí?**   | Ano: Nahrazuje je rozhraní API GetEstimatedAvailability a GetEstimatedProductWarehouseAvailability. |

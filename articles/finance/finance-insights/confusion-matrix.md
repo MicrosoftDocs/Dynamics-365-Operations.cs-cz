@@ -2,7 +2,7 @@
 title: Výsledky modelů strojového učení (Preview)
 description: Toto téma pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028196"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193533"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Výsledky modelů strojového učení (Preview)
 
@@ -129,16 +129,12 @@ Pro zjednodušení výpočtů byla sestrojena ukázková pole, která odpovídaj
 
 Další informace, jak tento výpočet funguje, najdete zde v sestavě klasifikace sklearn.metrics pro model 1. Tři stavy: „Včas“, „Pozdě“ a „Velmi pozdě“ jsou reprezentovány řádky, které jsou označeny 1, 2 a 3. Průměr makra je pouze průměr sloupce „skóre-f1“.
 
-|           | přesnost | úplnost   | skóre-f1 |
+| &nbsp;    | přesnost | úplnost   | skóre-f1 |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Jak tyto výsledky ukazují, oba modely mají téměř identické skóre správnosti makra F1. V tomto a mnoha dalších případech poskytuje správnost F1 lepší indikátor schopnosti modelu. Pokud jde o přesnost, interpretace výsledků vyžaduje, abyste pochopili, co je v modelu nejdůležitější vzít v úvahu.
-
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

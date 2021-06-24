@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814988"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216781"
 ---
 # <a name="intrastat-overview"></a>Intrastat - přehled
 
@@ -73,7 +73,7 @@ V následující tabulce jsou uvedeny předpoklady pro vykazování v systému
 </tr>
 <tr class="odd">
 <td>Hierarchie kategorií produktů (prodejní hierarchie, hierarchie zásobování)</td>
-<td>Na kartě <strong>Kódy komodit</strong> na stránce <strong>Hierarchie kategorií</strong> přiřaďte kódy komodit v systému Intrastat k uzlům kategorií. Když přiřadíte kód komodity k nadřazenému uzlu kategorie, lze kód použít pro všechny podřízené uzly kategorií. Vybrané kódy komodit budou dostupné v zobrazení <strong>Vybrané</strong>, pokud daný kód komodity vyberete v podrobnostech o uvolněném produktu, na prodejní objednávce, na nákupní objednávce a na řádcích převodního příkazu.</td>
+<td>Na kartě <strong>Kódy komodit</strong> na stránce <strong>Hierarchie kategorií</strong> přiřaďte kódy komodit v systému Intrastat k uzlům kategorií. Když přiřadíte kód komodity k nadřazenému uzlu kategorie, lze kód použít pro všechny podřízené uzly kategorií. Vybrané kódy komodit budou dostupné v zobrazení <strong>Vybrané</strong>, pokud daný kód komodity vyberete v podrobnostech o produktu, na prodejní objednávce, na nákupní objednávce a na řádcích převodního příkazu.</td>
 </tr>
 <tr class="even">
 <td>Podrobnosti o uvolněném produktu</td>
@@ -84,10 +84,11 @@ V následující tabulce jsou uvedeny předpoklady pro vykazování v systému
 <li><strong>Země/oblast původu</strong> – vyberte výchozí zemi nebo oblast, kde bylo zboží zcela získáno nebo vyrobeno.</li>
 <li><strong>Stát/provincie původu/určení</strong> – vyberte výchozí stát/provincii určení a stát/provincii původu zásilky.</li>
 <li><strong>Čistá hmotnost v kg</strong></li>
+<li><strong>Vyloučit</strong> - Povolte tento parametr, aby se transakce s tímto produktem nepřenášely do Intrastatu</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Zákazníci</td>
+<td>Odběratelé</td>
 <td>Nastavte dodací adresu odběratele v zemi/regionu EU.</td>
 </tr>
 <tr class="even">

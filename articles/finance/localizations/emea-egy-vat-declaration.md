@@ -2,7 +2,7 @@
 title: Přiznání k DPH pro Egypt
 description: Toto téma vysvětluje, jak nakonfigurovat a vygenerovat formulář přiznání k DPH pro Egypt.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021949"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186607"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Přiznání k DPH pro Egypt (EG-00002)
 
@@ -85,6 +85,7 @@ Tyto následující konfigurace vyhledávání se používají ke klasifikaci tr
 - **VATRateTypeLookup** > Sloupec B: Typ daně
 - **VATRateTypeLookup** > Sloupec C: Typ položky tabulky
 - **PurchaseOperationTypeLookup** > Sloupec A: Typ dokumentu
+- **CustomerTypeLookup** > Sloupec A: Typ dokumentu
 - **SalesOperationTypeLookup** > Sloupec N: Typ operace
 - **SalesItemTypeLookup** > Sloupec O: Typ položky
 
@@ -98,6 +99,8 @@ Pomocí následujících kroků můžete nastavit různá vyhledávání použit
 6. Opakujte kroky 3–5 pro všechna dostupná vyhledávání.
 7. Vyberte **Přidat** k zahrnutí závěrečného řádku záznamu a ve sloupci **Výsledek vyhledávání** vyberte **Nelze použít**. 
 8. Ve zbývajících sloupcích vyberte **Není prázdné**. 
+9. V poli **Stav** vyberte možnost **Dokončeno**.
+10. Vyberte **Uložit** a zavřete stránku **Parametry specifické pro aplikaci**.
 
 > [!NOTE]
 > Když přidáte poslední záznam, **Nelze použít**, definujete následující pravidlo: Když skupina DPH, skupina DPH zboží, daňový kód a název, který je předán jako argument, nesplňují žádné z předchozích pravidel, transakce nejsou zahrnuty do knihy DPH. Ačkoli se toto pravidlo nepoužívá při generování sestavy, toto pravidlo pomáhá vyhnout se chybám při generování sestavy, když chybí konfigurace pravidla.
@@ -138,7 +141,7 @@ Následující tabulky představují příklad navrhované konfigurace pro popsa
 | Služby       | 7    | VAT_SERV                | *Neprázdné* | SaleExempt            |
 | Služby       | 8    | VAT_SERV                | *Neprázdné* | SalesExemptCreditNote |
 | Úpravy    | 9    | *Bianko*                 | VAT_ADJ     | Prodej.                 |
-| Úpravy    | 10   | *Bianko*                 | VAT_ADJ     | Nákup              |
+| Úpravy    | 10   | *Bianko*                 | VAT_ADJ     | SalesCreditNote       |
 | Nelze použít | 11   | *Neprázdné*             | *Neprázdné* | *Neprázdné*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Následující tabulky představují příklad navrhované konfigurace pro popsa
 | Zboží                  | 1    | VAT_GOODS               | *Neprázdné* | Nákup                 |
 | Zboží                  | 2    | VAT_GOODS               | *Neprázdné* | PurchaseCreditNote       |
 | Služby               | 3    | VAT_SERV                | *Neprázdné* | Nákup                 |
-| Služby               | 4    | VAT_SERV                | *Neprázdné*  | PurchaseCreditNote       |
+| Služby               | 4    | VAT_SERV                | *Neprázdné* | PurchaseCreditNote       |
 | Stroje a zařízení  | 5    | VAT_M&E                 | *Neprázdné* | Nákup                 |
 | Stroje a zařízení  | 6    | VAT_M&E                 | *Neprázdné* | PurchaseCreditNote       |
 | Části strojů         | 7    | VAT_PARTS               | *Neprázdné* | Nákup                 |
 | Části strojů         | 8    | VAT_PARTS               | *Neprázdné* | PurchaseCreditNote       |
 | Výjimky             | 9    | VAT_EXE                 | *Není banka*  | PurchaseExempt           |
 | Výjimky             | 10   | VAT_EXE                 | *Neprázdné* | PurchaseExemptCreditNote |
-| Nelze použít         | 11   | *Bianko*                 | VAT_ADJ     | *Neprázdné*              |
-| Nelze použít         | 12   | *Neprázdné*             | *Neprázdné* | *Neprázdné*              |
-| Nelze použít         | 13   | *Bianko*                 | *Neprázdné* | *Neprázdné*              |
+| Nelze použít         | 11   | *Neprázdné*             | *Neprázdné* | *Neprázdné*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Následující tabulky představují příklad navrhované konfigurace pro popsa
 | Úpravy    | 9    | *Bianko*          | VAT_ADJ     | PurchaseCreditNote       |
 | Úpravy    | 10   | *Bianko*          | VAT_ADJ     | Nákup                 |
 | Nelze použít | 11   | *Neprázdné*      | *Neprázdné* | *Neprázdné*              |
+
+**CustomerTypeLookup**
+
+|    Výsledek vyhledávání    | Řádek | Skupina prodejní daně |
+|---------------------|------|-----------------|
+| Organizace        |  1   | VAT_LOCAL       |
+| Organizace        |  2   | VAT_EXPORT      |
+| Organizace        |  3   | VAT_EXE         |
+| Konečný spotřebitel      |  4   | VAT_FINALC      |
+| Veřejná organizace |  5   | VAT_PUBLIO      |
+| Nelze použít.      |  6   | *Neprázdné*     |
 
 **VATRateTypeLookup**
 

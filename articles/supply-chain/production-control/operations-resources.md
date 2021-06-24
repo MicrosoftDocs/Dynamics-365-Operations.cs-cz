@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57495de069a11f2ab41c20d17cfbe87df276ef47
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 191d5aee93217af19364932a0066464b2af89794
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817886"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189269"
 ---
 # <a name="operations-resources"></a>Prostředky aplikace Operations
 
@@ -29,8 +29,7 @@ ms.locfileid: "5817886"
 
 Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti. 
 
-<a name="operations-resources"></a>Prostředky aplikace Operations
---------------------
+## <a name="operations-resources"></a>Prostředky aplikace Operations
 
 Provozní prostředky jsou stroje, nástroje, pracovníci, zařízení, fyzické oblasti nebo dodavatelé provádějící aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti.
 

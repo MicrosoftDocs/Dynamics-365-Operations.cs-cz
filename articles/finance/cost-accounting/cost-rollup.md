@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815757"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189038"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -149,8 +149,7 @@ Pravidla přidělení nákladů můžete nastavit následujícím způsobem.
 | CC001                                | Celkem         | **Služby HR**        |
 | CC002                                | Celkem         | **Finanční služby** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Tok nákladů mezi nákladovými středisky 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Tok nákladů mezi nákladovými středisky 
 
 Pokud chcete zjistit, jaký je tok nákladů mezi nákladovými středisky v organizaci, můžete vytvořit prvky nákladů typu **Sekundární** pro každé nákladové středisko. Tyto prvky nákladů budou poté použity k přenosu zůstatků mezi nákladovými středisky během výpočtu režijních nákladů.
 

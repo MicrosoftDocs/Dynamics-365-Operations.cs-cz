@@ -2,7 +2,7 @@
 title: Vyhodnotit počáteční predikční model platby zákazníka (náhled)
 description: Toto téma popisuje kroky, které můžete podniknout, abyste porozuměli modelu predikce plateb zákazníků a vyhodnotili jeho účinnost.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897905"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186731"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Vyhodnotit počáteční predikční model platby zákazníka (náhled)
 
@@ -95,9 +95,5 @@ Poté, co lépe pochopíte výsledky svého prvního modelu, možná budete cht�
 ## <a name="for-more-information"></a>Získání dalších informací
 
 Další informace o tom, jak vyhodnotit predikční modely, naleznete ve [Výsledcích modelů strojového učení](/confusion-matrix.md)
-
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027787"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189171"
 ---
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027787"
 
 Toto téma obsahuje příklady třícestného párování.
 
-<a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
 
 **Souhrn:** Ken bude kontrolor v sídle společnosti právnické osoby Fabrikam. Ken se rozhodne, že všechny faktury dodavatele, které jsou založeny na nákupních objednávkách, budou párovány s řádky nákupní objednávky (dvoucestné párování). Pro nákupy položek, které budou použity jako dlouhodobý majetek, by faktury měly být spárovány s řádky nákupní objednávky i řádky příjemky produktu (třícestné párování).
 

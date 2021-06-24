@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937879"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216605"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -143,16 +143,22 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
 ## <a name="setup"></a>Nastavení
 
-1. Nainstalujte si nejnovější verzi (2.2.2.60 nebo novější) z [Řešení orchestrace aplikace s duálním zápisem](https://aka.ms/dual-write-app).
+1. Otevřete prostředí aplikace pro zapojení zákazníků.
 
-2. Nainstalujte [Řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab).
+2. Nainstalujte si nejnovější verzi (2.2.2.60 nebo novější) z [Řešení orchestrace aplikace s duálním zápisem](https://aka.ms/dual-write-app).
 
-3. Ukončete následující mapování, protože již nejsou nutná. Místo toho spusťte mapu `Contacts V2 (msdyn_contactforparties)`.
+3. Nainstalujte [Řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab).
+
+4. Otevřete aplikaci Finance and Operations. Přejděte do modulu Správa dat a vyberte kartu Duální zápis. Otevře se stránka pro správu duálního zápisu.
+
+5. Aplikujte obě řešení nainstalovaná v krocích 2 a 3 pomocí funkce [Použít řešení](link-your-environment.md).
+
+6. Ukončete následující mapování, protože již nejsou nutná. Místo toho spusťte mapu `Contacts V2 (msdyn_contactforparties)`.
 
     + Kontakty CDS V2 a Kontakty (týká se zákaznických kontaktů)
     + Kontakty CDS V2 a Kontakty (týká se dodavatelských kontaktů)
 
-4. Následující mapování entit jsou aktualizována pro funkčnost strany, takže na tato mapování musí být použita nejnovější verze.
+7. Následující mapování entit jsou aktualizována pro funkčnost strany, takže na tato mapování musí být použita nejnovější verze.
 
     Zobrazit na mapě | Aktualizujte na tuto verzi | Změny
     ---|---|---
@@ -176,7 +182,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
 
-5. Před spuštěním výše uvedených map musíte ručně aktualizovat integrační klíče, jak je popsáno v následujících krocích. Pak vyberte **Uložit**.
+8. Před spuštěním výše uvedených map musíte ručně aktualizovat integrační klíče, jak je popsáno v následujících krocích. Pak vyberte **Uložit**.
 
     | Zobrazit na mapě | Klíče |
     |-----|------|
@@ -185,7 +191,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     | Kontakt na zákazníka/Prodejce | msdyn_contactforpartynumber [Kontakt na číslo strany]<br>msdyn_associatedcompanyid.cdm_companycode [Přidružená společnost (Kód společnosti)] |
     | Dodavatel | msdyn_vendoraccountnumber [Číslo účtu dodavatele]<br>msdyn_company.cdm_companycode [společnost (Kód společnosti)]|
 
-6. v Dataverse, limity počtu znaků pravidel pro detekci duplikátů se zvýšily ze 450 na 700 znaků. Tento limit umožňuje přidat jeden nebo více klíčů k pravidlům detekce duplikátů. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Účty** nastavením následujících polí.
+9. v Dataverse, limity počtu znaků pravidel pro detekci duplikátů se zvýšily ze 450 na 700 znaků. Tento limit umožňuje přidat jeden nebo více klíčů k pravidlům detekce duplikátů. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Účty** nastavením následujících polí.
 
     | Pole | Hodnota |
     |-------|-------|
@@ -201,7 +207,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
     ![Duplicitní pravidlo pro účty](media/duplicate-rule-1.PNG)
 
-7. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Kontakty** nastavením následujících polí.
+10. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Kontakty** nastavením následujících polí.
 
     | Pole | Hodnota |
     |-------|-------|
@@ -217,9 +223,9 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
     ![Duplicitní pravidlo pro kontakty](media/duplicate-rule-2.PNG)
 
-8. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data.
+11. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data.
 
-9. Spusťte mapy v následujícím pořadí. Pokud se zobrazí chyba se stavem „Ověření projektu se nezdařilo. Chybí cílové pole ... “, otevřete mapu a vyberte **Obnovit tabulky**. Poté spusťte mapu.
+12. Spusťte mapy v následujícím pořadí. Pokud se zobrazí chyba se stavem „Ověření projektu se nezdařilo. Chybí cílové pole ... “, otevřete mapu a vyberte **Obnovit tabulky**. Poté spusťte mapu.
 
     Aplikace Finance and Operations | Aplikace Customer Engagement  
     ----------------------------|------------------------

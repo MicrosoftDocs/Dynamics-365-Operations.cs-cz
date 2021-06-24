@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891786"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224027"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Navrhněte nové řešení ER pro tisk vlastní sestavy
 
@@ -285,7 +285,7 @@ Chcete-li pokračovat, přeskočte další postup, [Vytvoření nové konfigurac
 
 Stav verze 1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verzi 1 již nelze změnit. Tato verze obsahuje konfigurovaný datový model a lze ji použít jako základ pro další konfigurace ER. Verze 2 této konfigurace je vytvořena a má stav **Návrh**. Tuto verzi můžete upravit a tak upravit datový model **Dotazník**.
 
-![Verze konfigurovatelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-model-configuration.png)
+![Verze konfigurovatelné konfigurace na stránce Konfigurace](./media/er-quick-start1-model-configuration.png)
 
 Další informace o verzích pro konfigurace ER viz [Přehled elektronického výkaznictví (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ Následující obrázek ukazuje vygenerovanou sestavu ve formátu Excel, kde jso
 
 Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verzi 1.1 již nelze změnit. Tato verze obsahuje nakonfigurovaný formát a lze ji použít k vytištění vlastní sestavy. Verze 1.2 této konfigurace je vytvořena a má stav **Návrh**. Tuto verzi můžete upravit a tak upravit formát vašeho sestavení **Dotazníku**.
 
-![Verze konfigurovatelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-format-configuration.png)
+![Upravitelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Konfigurovaný formát je váš návrh sestavení **Dotazníku** a neobsahuje žádné vztahy k artefaktům specifickým pro Finance.

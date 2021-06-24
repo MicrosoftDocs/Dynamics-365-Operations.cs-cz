@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814577"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188142"
 ---
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
@@ -74,8 +74,7 @@ Následující kroky ve výrobním cyklu mohou nastat pro všechny typy smíšen
 12. **Uzavření období** – některé zásady nákladového účetnictví, jako je například periodický průměr, náklady zpětného vyprázdnění, či metody FIFO a LIFO, vyžadují periodické aktivity pro uzávěrku zásob nebo fiskálního období. Obvykle se systém pokusí vytvořit sestavy všech materiálů a spotřeby zdrojů, a také provést opravy zásob a odpadu předtím, než je uzavřeno období. Toto oznámení se obvykle provádí pomocí deníků pohybů zásob nebo deníků úprav. Cílem je hodnocení ekonomické výkonnosti provozní jednotky za dané období. V některých případech při použití časově náročných výrobních objednávek, které pokrývají finanční období, se na konci období používají deníky výroby pro vykazování průběhu produkce a spotřeby zdrojů.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Zpětná vazba z výroby](production-feedback.md)
 

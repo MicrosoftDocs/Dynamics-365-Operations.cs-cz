@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910058"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189661"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
@@ -92,8 +92,7 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 |                           Odešlete novou verzi nákupní objednávky na portál pro dodavatele.                            |                                                                                                                                                                    Nová verze je registrována na portálu pro dodavatele a stav se změní na <strong>Na externí kontrole</strong>.                                                                                                                                                                     |
 |                                Dodavatel schválí novou verzi nákupní objednávky.                                 |                                                                                                                                                     Stav se změní na <strong>Potvrzeno</strong> buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Zabezpečení uživatele portálu pro dodavatele](configure-security-vendor-portal-users.md)
 

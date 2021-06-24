@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817862"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190009"
 ---
 # <a name="operations-scheduling"></a>Plánování operací
 
@@ -74,8 +74,7 @@ Když spustíte plánování operací, můžete zrušit konkrétní částí pos
 ## <a name="finite-materials"></a>Omezený materiál
 Pokud pracujete s hotovými materiály, plánování je závislé také na dostupnosti materiálů potřebných k výrobě. Pokud není k dispozici dostatek součástí pro výrobu, může být výroba zpožděna. Plánování můžete založit na použití materiálů zadáním materiálů, které musí být k dispozici pro výrobu. Při optimalizaci kapacity prostředků a dostupnosti materiálů je výroba vypočtena podle těchto omezení. Zahájení výrobní zakázky nelze naplánovat, dokud nebude k dispozici veškerá kapacita a materiály současně a v požadovaných množstvích.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Možnosti plánování v aplikaci Operations](operation-scheduling-options.md)
 

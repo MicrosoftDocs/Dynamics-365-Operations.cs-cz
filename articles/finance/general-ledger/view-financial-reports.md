@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897277"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187787"
 ---
 # <a name="view-financial-reports"></a>Zobrazení finančních sestav
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897277"
 
 Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 
-<a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
-----------------------------
+## <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
 ## <a name="open-a-financial-report"></a>Otevření finanční sestavy
 Chcete-li otevřít sestavu, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2015, je sestava generována pro 31. července 2015. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
@@ -76,8 +75,7 @@ Po dokončení nastavení možností tisku klikněte na **Tisk** a budete vyzvá
 ## <a name="export-a-financial-report"></a>Exportování finanční sestavy
 Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítko **Exportovat**. Sestava se exportuje do aplikace Microsoft Excel a prohlížeč zobrazí výzvu k otevření nebo uložení exportovaného souboru. V exportované sestavě se použijí nastavení exportu definovaná v návrhu sestavy.    
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

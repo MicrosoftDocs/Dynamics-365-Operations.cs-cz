@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058817"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189743"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců pomocí oddělení, prací a pozic
 
@@ -42,8 +42,7 @@ Následující příklad slouží k zobrazení konceptů popsaných v tomto čl�
 |**Lidské zdroje**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
 
 
- <a name="departments"></a>Oddělení
-------------
+##  <a name="departments"></a>Oddělení
 
 Oddělení je provozní jednotka, která představuje kategorii nebo funkční oblast organizace, která je zodpovědná za určitou oblast organizace, jako například prodej nebo účtování. Oddělení slouží k hlášení ve funkčních oblastech a může mít odpovědnost za zisky a ztráty. Oddělení také mohou obsahovat i skupinu nákladových středisek. Prodej, účtování a lidské zdroje jsou některé příklady oddělení v rámci organizace.
 
@@ -96,8 +95,7 @@ Používejte typy úloh pro klasifikaci podobných pozic do kategorií. Typy úl
 
 Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. příkladem oblasti odpovědnosti pro práci s názvem "Účetní" může být "Finanční vykazování pro produkt A".
 
-<a name="positions"></a>Pozice
-----------
+## <a name="positions"></a>Pozice
 
 Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je pouze jednou pozicí, která je přidružena k úloze „Manažer prodeje“. Pozice existují v oddělení a jsou přiřazeny pracovníkům.
 ### <a name="position-creation-and-maintenance"></a>Vytváření a údržba pozic

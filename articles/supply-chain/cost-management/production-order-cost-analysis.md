@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50df2a63584d3db0d3b91fabd224e12dffa809d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809631"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187691"
 ---
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
@@ -55,8 +55,7 @@ Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomo
 -   **Dokončené položky v procesu**− V této sestavě jsou uvedeny aktuální výrobní zakázky a transakce označené jako dokončené k určenému datu transakce.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Běžné zdroje výrobních odchylek](common-sources-of-production-variances.md)
 

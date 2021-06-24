@@ -2,7 +2,7 @@
 title: Úpravy ceny a slevy
 description: Tento článek obsahuje informace o úpravách cen a slev v aplikaci Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d3e8025c5ab28296713634094694156f9addf62
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44c03ae0a04d648e788a72d8f6dcc3671c5736c7
+ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802784"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6240935"
 ---
 # <a name="price-adjustments-and-discounts"></a>Úpravy ceny a slevy
 
@@ -48,6 +48,13 @@ Existují mnoho typů slev:
 - **Přepravní sleva** – Sleva, která se použije, když celková částka transakce přesáhne zadanou částku a na objednávku se použije určitý způsob doručení (například dvoudenní nebo noční přeprava).
 
 Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
+
+> [!NOTE]
+> Kombinační sleva a mezní sleva mají vlastnosti s názvem „Započítat produkty bez slevy“ a „Započítat produkty bez slevy do mezní hodnoty“. Pokud jsou tyto vlastnosti povoleny, položka, která nemá nárok na žádnou slevu, může stále pomoci kvalifikovat transakci k udělení slevy, ale nezpůsobilá položka slevu nezíská. 
+> 
+> Například pokud vytvoříte kombinační slevu se dvěma řádky A a B, kde by měl zákazník získat slevu 10% na obě položky, ale položka A má zaškrtnutou konfiguraci „Zabránit všem slevám“, pak by obvykle položka A do slevy zahrnuta nebyla. Pokud je však povolena vlastnost „Započítat produkty bez slevy“, lze položku A použít k získání kombinační slevy, ale 10% sleva se použije pouze na položku B. Podobná logika platí i pro mezní slevu. 
+>
+> Vlastnost „Započítat produkty bez slevy do mezní hodnoty“ má však ve srovnání s vlastností „Započítat produkty bez slevy“ kombinační slevy další schopnost. Pokud je povolena mezní sleva a pokud existuje položka, která má existující slevu, která by bránila položce v jakýchkoli jiných slevách, pak by cena zaplacená za tuto položku způsobila splnění mezní hodnoty, ale tato položka nedostane další slevu.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

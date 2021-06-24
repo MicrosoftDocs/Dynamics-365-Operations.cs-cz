@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835213"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189462"
 ---
 # <a name="set-up-collections"></a>Nastavit kolekcí
 
@@ -40,8 +40,7 @@ Tento článek popisuje postup nastavení funkce inkasa. Při použití možnost
 
 Tyto body jsou podrobněji popsány ve zbývající části tohoto tématu. 
 
-<a name="set-up-aging-period-definitions"></a>Nastavit definice období pro sledování splatnosti
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Nastavit definice období pro sledování splatnosti
 
 Nastavte definici období pro sledování splatnosti. Definice období pro sledování splatnosti určuje sloupce, které se zobrazují na stránkách se seznamem **Splatné zůstatky**, **Inkasní aktivity** a **Případy inkasa**. Také definuje období, které se zobrazuje na stránce **Inkasa**. Pokud je nastaven fond zákazníků, je použita jeho definice období pro sledování splatnosti. Pokud nejsou nastaveny žádné fondy, použije se výchozí definice období pro sledování splatnosti, která je určena na stránce **Parametry pohledávek**. Pokud není určena žádná výchozí definice období pro sledování splatnosti, použije se první definice období pro sledování splatnosti na stránce **Definice období pro sledování splatnosti**.
 

@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826122"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188377"
 ---
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826122"
 
 V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 
-<a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
------------------------
+## <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
 Dodavatel, který provádí intrakomunitární plnění dodávek zboží nebo služeb společnostem, které jsou vytvořeny v Evropské unii (EU), musí dodat přehled interních dodávek (souhrnné hlášení EU neboli ESL). Obecně platí, že přehled ESL je nutné podat finančnímu úřadu nejpozději poslední den v měsíci po kalendářním období, ke kterému se přehled ESL vztahuje. Dodavatel musí uvést své daňové identifikační číslo (DIČ) na formuláři ESL a musí také uvést následující informace o odběrateli:
 

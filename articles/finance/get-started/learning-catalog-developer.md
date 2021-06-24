@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9e3976eaf94f6a8440794beebae1ab7241e5aa54
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: cdc16d02f24f24e0f9933542589573ee6b5cde45
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897641"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193372"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Výukový katalog pro vývojáře Dynamics 365 Finance
 
@@ -29,20 +29,20 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
-| Obsah  | popis     | Formát     | Délka    |
-|-------------|-----------------|-------------|------------|
-| [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2.2 hodin |
-| [Začínáme s aplikací Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance umožňuje podnikovým uživatelům přizpůsobit se rychle se měnícím podnikovým prostředím. Poskytuje podnikům vše, co potřebují, pokud chtějí kontrolovat finance a kdykoli spravovat finanční prostředky se správnými informacemi pro finanční plánování a prognózy a pomáhá mít stále aktuální analýzy. Protože finance jsou jádrem každého podnikání, je důležité se seznámit s možnostmi Dynamics 365 Finance. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
+| [Začínáme s aplikacemi Finance and Operations](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2.2 hodin |
+| [Začínáme s aplikací Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance umožňuje podnikovým uživatelům přizpůsobit se rychle se měnícím podnikovým prostředím. Poskytuje podnikům vše, co potřebují, pokud chtějí kontrolovat finance a kdykoli spravovat finanční prostředky se správnými informacemi pro finanční plánování a prognózy a pomáhá mít stále aktuální analýzy. Protože finance jsou jádrem každého podnikání, je důležité se seznámit s možnostmi Dynamics 365 Finance. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |
 
 ## <a name="core-development-concepts"></a>Klíčové koncepty vývoje<a name="core-development-concepts"></a>
 
-| Obsah  | popis  | Formát   | Délka    |
-|-------------|-----------------|-------------|------------|
-| [Úvod do vývoje aplikací Finance and Operations](/learn/paths/introduction-develop-finance-operations/) | Jako vývojář, který pracuje s aplikacemi Finance and Operations, je důležité mít důkladné znalosti hlavních součástí architektury ekosystému Dynamics 365 a aplikací Finance and Operations. Znalosti základních koncepcí vývojáře, včetně technických možností, zdrojového kódu, testovacích architektur a nástrojů pro vykazování, podpoří vaše další úsilí při budování vývojářských dovedností, které budete moci uplatnit v aplikacích Finance and Operations. | Libovolná online školení vlastním tempem | 7.75 hodin |
-| [Sestavování aplikací Finance and Operations](/learn/paths/build-finance-operations/) | Vývoj v aplikacích Finance and Operations vyžaduje základní pochopení úkolů vyžadovaných k vytvoření nových prvků a přizpůsobení aplikací Finance and Operations. Tyto úkoly zahrnují znalost kódu X++ a Visual Studio, stejně jako schopnost vytvářet a měnit základní prvky systému. | Libovolná online školení vlastním tempem | 13 hodin |
-| [Rozšíření aplikací Finance and Operations](/learn/paths/extending-finance-operations/) | Rozšíření umožňují vývojářům provádět změny v uživatelském prostředí aplikací Finance and Operations implementací změn kódu, které neovlivňují základní kód. Kromě jiných výhod rozšíření vývojářům umožňují aktualizovat aplikace Finance and Operations, aby odpovídalo obchodním procesům a požadovaným změnám. | Libovolná online školení vlastním tempem | 2.5 hodin |
-| [Připojení k aplikacím Finance and Operations](/learn/paths/connect-finance-operations/) | Integrace a přístup k vašim datům v aplikacích Finance and Operations jsou důležité funkce. Vývojáři, kteří se naučili sestavovat a rozšiřovat kód v aplikacích Finance and Operations, mohou rozšířit své znalosti vývoje o integraci dat a způsoby, jakým připojení k datům může mít kladné dopady na uživatele. | Libovolná online školení vlastním tempem | 5.75 hodin |
-| [Migrace dat a zahájení práce s aplikacemi Finance and Operations](/learn/paths/migrate-data-go-live-finance-operations/) | Jako funkční konzultant musíte chápat, jak připravit data odběratele na migraci, pracovat se správou dat a provádět testování přijetí uživatele s aplikacemi Finance and Operations. | Libovolná online školení vlastním tempem | 4 hodin |
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
+| [Úvod do vývoje aplikací Finance and Operations](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Jako vývojář, který pracuje s aplikacemi Finance and Operations, je důležité mít důkladné znalosti hlavních součástí architektury ekosystému Dynamics 365 a aplikací Finance and Operations. Znalosti základních koncepcí vývojáře, včetně technických možností, zdrojového kódu, testovacích architektur a nástrojů pro vykazování, podpoří vaše další úsilí při budování vývojářských dovedností, které budete moci uplatnit v aplikacích Finance and Operations. | Libovolná online školení vlastním tempem | 7.75 hodin |
+| [Sestavování aplikací Finance and Operations](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Vývoj v aplikacích Finance and Operations vyžaduje základní pochopení úkolů vyžadovaných k vytvoření nových prvků a přizpůsobení aplikací Finance and Operations. Tyto úkoly zahrnují znalost kódu X++ a Visual Studio, stejně jako schopnost vytvářet a měnit základní prvky systému. | Libovolná online školení vlastním tempem | 13 hodin |
+| [Rozšíření aplikací Finance and Operations](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | Rozšíření umožňují vývojářům provádět změny v uživatelském prostředí aplikací Finance and Operations implementací změn kódu, které neovlivňují základní kód. Kromě jiných výhod rozšíření vývojářům umožňují aktualizovat aplikace Finance and Operations, aby odpovídalo obchodním procesům a požadovaným změnám. | Libovolná online školení vlastním tempem | 2.5 hodin |
+| [Připojení k aplikacím Finance and Operations](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | Integrace a přístup k vašim datům v aplikacích Finance and Operations jsou důležité funkce. Vývojáři, kteří se naučili sestavovat a rozšiřovat kód v aplikacích Finance and Operations, mohou rozšířit své znalosti vývoje o integraci dat a způsoby, jakým připojení k datům může mít kladné dopady na uživatele. | Libovolná online školení vlastním tempem | 5.75 hodin |
+| [Migrace dat a zahájení práce s aplikacemi Finance and Operations](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | Jako funkční konzultant musíte chápat, jak připravit data odběratele na migraci, pracovat se správou dat a provádět testování přijetí uživatele s aplikacemi Finance and Operations. | Libovolná online školení vlastním tempem | 4 hodin |
 | [Finance and Operations: Vývoj ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Tato technická přednáška popisuje koncepce správy životního cyklu aplikace, nástroje a doporučené postupy. V přednášce se dozvíte, jak Lifecycle Services, Visual Studio a Azure DevOps vzájemně spolupracují a tím umožňují na obchodní procesy zaměřené nepřetržité zajištění základu kódu vašeho řešení a obsluhu vašich prostředí. | Bezplatný záznam webové konference | 52 minut |
 | [Finance and Operations: Rozšíření Dynamics 365 for Finance and Operations pomocí PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Seznamte se s jednoduchostí aplikací Microsoft PowerApps a jejich integrací s aplikacemi Dynamics 365 for Finance and Operations umožňující digitální transformaci podniku a zvýšení produktivity uživatelů. | Bezplatný záznam webové konference | 43 minut |
 | [Finance and Operations: Rozšiřitelnost (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Poskytneme vám přehled a novinky v plánech rozšiřitelnosti společnosti Microsoft. Budeme podrobně probírat různé způsoby rozšíření řešení a podrobněji se věnovat funkcím rozšiřitelnosti metadat, a také schopnosti doplnit a rozšířit kód, včetně užitečné funkce Chain of Command. | Bezplatný záznam webové konference | 50 min |
@@ -58,8 +58,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="servicing"></a>Servis<a name="servicing"></a>
 
-| Obsah  | popis  | Formát  | Délka    |
-|-------------|-----------------|-------------|------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Servis, podpora a údržba výroby (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Odborná komunikace, jak efektivně podporovat, spravovat a obsluhovat produkční prostředí Dynamics 365 for Finance and Operations. | Bezplatný záznam webové konference | 53 minut |
 | [Finance and Operations: Správa funkcí (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Technická přednáška o správě funkcí. Poskytuje pracovní prostor pro zobrazení, povolení, zakázání a plánování funkcí, které byly dodány v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Na této schůzce zjistíte, co je součástí verze 10.0.3 a jaké jsou naše plány pro budoucí vydání. | Bezplatný záznam webové konference | 47 min. |
 | [Finance And Operations: Průběžné aktualizace spravované společností Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Byla zahájena průběžná aktualizace Cadence Finance and Operations! V této lekci se můžete zapojit do diskuse o průběžných aktualizacích spravovaných společností Microsoft, které jsou již k dispozici v Lifecycle Services a nadcházejících aktualizacích. | Bezplatný záznam webové konference | 61 minut |
@@ -68,16 +68,17 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="migration-and-upgrade"></a>Migrace a upgrade<a name="migration-and-upgrade"></a>
 
-| Obsah  | popis    | Formát  | Délka    |
-|-------------|-----------------|-------------|------------|
-| [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. Část 1 ze 2. | Bezplatný záznam webové konference | 61 minut |
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
+| [Upgrade aplikací Dynamics AX 2012 na Finance and Operations](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Naučte se nejdůležitější prvky a osvědčené postupy pro úspěšnou aktualizaci vašeho řešení Dynamics AX 2012 na aplikace Finance and Operations. Od prvních kroků k objevování klíčových architektonických rozdílů, od zahájení procesu upgradu a nástrojů pro upgrade kódu a dat až po nejlepší způsoby redesignu vašich integrací, analytiky a sestav na základě nejnovějších schopností. | Libovolná online školení vlastním tempem | 7 hodin |
+| [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. Část 1 ze 2. | Bezplatný záznam webové konference | 61 minut |
 | [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Bezplatný záznam webové konference | 45 min. |
 | [Nástroje pro migraci AX2009 do Dynamics 365 for Operations (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Tato relace pokryje dostupné nástroje, které vám budou pomáhat při migraci z AX2009 na D365 for Operations. | Bezplatný záznam webové konference | 55 minut |
 
 ## <a name="testing"></a>Testování<a name="testing"></a>
 
-| Obsah  | popis  | Formát  | Délka    |
-|-------------|-----------------|-------------|------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Knihovna akceptačních testů (DYN650PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Odborná komunikace, jak efektivně podporovat, spravovat a obsluhovat produkční prostředí Dynamics 365 for Finance and Operations. | Bezplatný záznam webové konference | 61 minut |
 | [Finance and Operations: Regression Suite Automation Tool --Nastavení & na pozadí (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Toto je první díl dvoudílného seriálu testování Regression Suite Automation Testing (RSAT). V této relaci se budeme věnovat tomu, jak udržovat průběžné aktualizace pomocí automatizovaného testování prostřednictvím nástroje RSAT. Budeme se věnovat školení a doporučení týkajícím se vytváření záznamů úloh a provádění testů pomocí RSAT spolu s podrobnými návody instalace a nastavení aplikace. | Bezplatný záznam webové konference | 70 min |
 | [Finance and Operations: Regression Suite Automation Tool -- Ukázka testování životního cyklu (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Toto je druhý díl dvoudílného seriálu testování Regression Suite Automation Testing (RSAT). Tato relace pokryje ukázku celého cyklu vytváření a ukládání nahrávek úkolů z modulu Finance and Operations do knihovny BPM v LCS, synchronizaci knihovny BPM za účelem vytvoření testovacích případů v aplikaci Azure DevOps, seskupení testovacích případů do testovacích sad a načtení a provádění testovacích sad na RSAT. | Bezplatný záznam webové konference | 70 min |
@@ -89,9 +90,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="exam"></a>Zkouška<a name="exam"></a>
 
-| Obsah | popis  | Formát  |
-|-------------|-----------------|-------------|
-|[Zkouška MB-500: Microsoft Dynamics 365: Vývojář aplikací Finance and Operations](/learn/certifications/exams/mb-500) | Tato zkouška ověří vaši schopnost splnit následující technické úkoly: naplánovat architekturu a návrh řešení; použít vývojářské nástroje; navrhovat a vyvíjet prvky AOT; vývoj a testování kódu; implementovat reporting; integrovat a spravovat datová řešení; a implementovat zabezpečení a optimalizovat výkon. | Zkouška; náklady se liší podle oblasti. |
-
+| Obsah | popis | Formát |
+|---------|-------------|--------|
+|[Zkouška MB-500: Microsoft Dynamics 365: Vývojář aplikací Finance and Operations](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Tato zkouška ověří vaši schopnost splnit následující technické úkoly: naplánovat architekturu a návrh řešení; použít vývojářské nástroje; navrhovat a vyvíjet prvky AOT; vývoj a testování kódu; implementovat reporting; integrovat a spravovat datová řešení; a implementovat zabezpečení a optimalizovat výkon. | Zkouška; náklady se liší podle oblasti. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

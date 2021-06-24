@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82d94be7a0ce915b0a2b86fb3894435afdd6f37a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821954"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187837"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Auditní porušení zásad a případy
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821954"
 
 Tento článek popisuje, jak jsou generovány případy auditu z porušení pravidel zásad auditu. Dále zahrnuje informace o různých způsobech použití rozsahu dat pro výběr dokumentu v zásadách auditu.
 
-<a name="how-audit-cases-are-generated"></a>Způsob generování případů auditu
------------------------------
+## <a name="how-audit-cases-are-generated"></a>Způsob generování případů auditu
 
 Zásady auditu slouží k identifikaci výkazy výdajů, nákupních objednávek a faktur dodavatele, které nejsou v souladu s obchodními pravidly, která se definují a nakonfigurují jako pravidla zásad auditu. 
 

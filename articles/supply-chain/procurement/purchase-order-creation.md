@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909149"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188238"
 ---
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
@@ -80,8 +80,7 @@ Nákupní objednávky lze nakonfigurovat tak, aby vyžadovaly, aby byly rozpočt
 
 Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Například můžete vyžadovat další informace o produktech nebo službách, nebo může být pravděpodobně nutné získat povolení pro výdaj. Existuje několik způsobů pro pozdržení objednávky. Například můžete počkat na potvrzení objednávky. Navíc pokud používáte pracovní postup pro změny, neodesílejte objednávku ke schválení. Pokud zablokujete všechny objednávky pro určitého dodavatele, můžete označit dodavatele jako **Blokováno** a umožnit tak zpracování u hlavního dodavatele. Existují okolnosti, které by mohly bránit zpracování objednávky. Zpracování například může být zakázáno, pokud byly překročeny limity úvěru, nebo pokud nejsou k dispozici rozpočtové prostředky.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 

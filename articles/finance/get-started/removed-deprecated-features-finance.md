@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980890"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184118"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -65,7 +65,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | **Nahrazeno jinou funkcí?**   | Ano |
 | **Ovlivněné oblasti produktu**         | Dynamics 365 Finance, produkty Supply Chain Management a Project Operations|
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Do 1. dubna 2022 plánujeme přestat podporovat úložiště Microsoft Dynamics Lifecycle Services (LCS) jako možnost úložiště pro konfigurace elektronického vykazování (ER). Nové konfigurace Microsoft ER budou publikovány ke stažení výhradně z globálního úložiště. Globální úložiště je přístupné z produktů Dynamics 365 a RCS. Další informace získáte v tématu [Import konfigurací ER z RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
+| **Stav**                         | Zastaralé: Do 1. dubna 2022 plánujeme přestat podporovat úložiště Microsoft Dynamics Lifecycle Services (LCS) jako možnost úložiště pro konfigurace elektronického vykazování (ER). Nové konfigurace Microsoft ER budou publikovány ke stažení výhradně z globálního úložiště. Globální úložiště je přístupné z produktů Dynamics 365 a RCS. Další informace viz témata [Import konfigurací ER z RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) a [Regulatory Configuration Service – ukončení podpory úložiště Lifecycle Services](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.16
 

@@ -14,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: f2f74982d557bcdfec83b8a424521706600d9534
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96001b6817b02523297b1d2bbf00ff0e4b5d90c7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894854"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187983"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
@@ -33,8 +33,7 @@ Společnosti v rámci České republiky musí vydávat dobropisy pro hotovostní
 -   Daň z přidané hodnoty (DPH) a částka z původního dokumentu.
 -   Důvod opravy
 
-<a name="prerequisites"></a>Požadavky
--------------
+## <a name="prerequisites"></a>Požadavky
 
 ### <a name="set-up-number-sequences"></a>Nastavit číselné řady
 

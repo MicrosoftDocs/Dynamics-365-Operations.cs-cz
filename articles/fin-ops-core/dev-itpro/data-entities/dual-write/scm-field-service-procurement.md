@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941102"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219780"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrace nákupu mezi Supply Chain Management a Field Service
 
@@ -196,23 +196,10 @@ Následující šablony jsou k dispozici pro integraci dokumentů souvisejícíc
 
 | Správa dodavatelsko-odběratelského řetězce | Field Service | popis |
 |---|---|---|
-| Záhlaví nákupní objednávky V2 | msdyn\_Purchaseorders | Tato tabulka obsahuje sloupce, které představují záhlaví nákupní objednávky. |
-| Entita řádku nákupní objednávky | msdyn\_PurchaseOrderProducts | Tato tabulka obsahuje řádky, které představují řádky nákupní objednávky. Číslo produktu je použito k synchronizaci. To identifikuje produkt jako skladovou jednotku (SKU), včetně rozměrů produktu. Další informace o integraci produktu s Dataverse najdete v části [Jednotná zkušenost s produktem](product-mapping.md). |
-| Záhlaví příjemky produktů | msdyn\_purchaseorderreceipts | Tato tabulka obsahuje záhlaví příjemky produktu, které se vytvoří při zaúčtování příjemky produktu v Supply Chain Management. |
-| Řádek příjemky produktu | msdyn\_purchaseorderreceiptproducts | Tato tabulka obsahuje řádky příjemky produktu, které se vytvoří při zaúčtování příjemky produktu v Supply Chain Management. |
-| Obnovitelně odstraněná entita řádku nákupní objednávky | msdyn\_purchaseorderproducts | Tato tabulka obsahuje informace o řádcích nákupní objednávky, které jsou vymazány. Řádek nákupní objednávky v Supply Chain Management lze vymazat pouze tehdy, když je nákupní objednávka potvrzena nebo schválena, pokud je zapnuto řízení změn. Řádek existuje v databázi Supply Chain Management a je označen jako **Je odstraněno**. Protože Dataverse nemá koncept měkkého mazání, je důležité, aby byly tyto informace synchronizovány s Dataverse. Tímto způsobem lze automaticky mazat řádky, které jsou v Supply Chain Management odstraněny z Dataverse. V tomto případě se logika pro odstranění řádku z Dataverse nachází v Supply Chain Management Extended. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Záhlaví nákupní objednávky V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Tato tabulka obsahuje sloupce, které představují záhlaví nákupní objednávky. |
+| [Entita řádku nákupní objednávky](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Tato tabulka obsahuje řádky, které představují řádky nákupní objednávky. Číslo produktu je použito k synchronizaci. To identifikuje produkt jako skladovou jednotku (SKU), včetně rozměrů produktu. Další informace o integraci produktu s Dataverse najdete v části [Jednotná zkušenost s produktem](product-mapping.md). |
+| [Záhlaví příjemky produktů](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Tato tabulka obsahuje záhlaví příjemky produktu, které se vytvoří při zaúčtování příjemky produktu v Supply Chain Management. |
+| [Řádek příjemky produktu](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Tato tabulka obsahuje řádky příjemky produktu, které se vytvoří při zaúčtování příjemky produktu v Supply Chain Management. |
+| [Obnovitelně odstraněná entita řádku nákupní objednávky](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Tato tabulka obsahuje informace o řádcích nákupní objednávky, které jsou vymazány. Řádek nákupní objednávky v Supply Chain Management lze vymazat pouze tehdy, když je nákupní objednávka potvrzena nebo schválena, pokud je zapnuto řízení změn. Řádek existuje v databázi Supply Chain Management a je označen jako **Je odstraněno**. Protože Dataverse nemá koncept měkkého mazání, je důležité, aby byly tyto informace synchronizovány s Dataverse. Tímto způsobem lze automaticky mazat řádky, které jsou v Supply Chain Management odstraněny z Dataverse. V tomto případě se logika pro odstranění řádku z Dataverse nachází v Supply Chain Management Extended. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

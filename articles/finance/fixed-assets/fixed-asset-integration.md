@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826827"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189777"
 ---
 # <a name="fixed-assets-integration"></a>Integrace dlouhodobého majetku
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826827"
 
 Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
 
-<a name="general-ledger"></a>Hlavní kniha
---------------
+## <a name="general-ledger"></a>Hlavní kniha
 
 V hlavní knize je obvykle hodnota veškerého dlouhodobého majetku shrnuta do několika hlavních účtů, které jsou nutné pro finanční vykazování. Avšak na stránce **Dlouhodobý majetek** můžete vytvořit mnoho záznamů dlouhodobého majetku. Tyto záznamy mohou zahrnovat informace, jako je například pořizovací cena, odpisy a oceněni. Při každém zaúčtování transakce s dlouhodobým majetkem se aktualizují příslušné hlavní účty. Hlavní účty vždy ukazují aktualizovanou hodnotu dlouhodobého majetku.
 

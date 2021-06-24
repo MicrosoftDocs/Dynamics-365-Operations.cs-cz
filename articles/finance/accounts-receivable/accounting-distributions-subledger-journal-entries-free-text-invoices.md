@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c3609ed396b543bb708ea36f308eee60976e66f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7e3e1e0a757dcd51edcd38bb348e52b756e57334
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837170"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188751"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Rozúčtování a položky dílčí hlavní knihy pro volné faktury
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837170"
 
 Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách. Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
 
-<a name="accounting-distributions"></a>Rozúčtování
-------------------------
+## <a name="accounting-distributions"></a>Rozúčtování
 
 Na stránce Volné faktury můžete použít následující tlačítka k zobrazení a případné změně rozúčtování pro každou částku na volné faktuře.
 

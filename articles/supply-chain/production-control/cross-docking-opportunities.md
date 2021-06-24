@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839142"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190081"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839142"
 
 Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 
-<a name="introduction"></a>Úvod
-------------
+## <a name="introduction"></a>Úvod
 
 Cross docking z výroby do výstupního skladového místa je relevantní pro výrobce, kteří produkují velké množství a v ideálním případě chtějí expedovat dokončené produkt při jejich prohlášení za dokončené z výrobních linek. Účelem je dodat produkty do distribučních center, které se fyzicky nacházejí blízko poptávky odběratele, namísto vytváření zásob na výrobním pracovišti.
 

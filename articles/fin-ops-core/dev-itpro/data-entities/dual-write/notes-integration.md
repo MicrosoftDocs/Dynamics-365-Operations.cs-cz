@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018379"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186779"
 ---
 # <a name="note-integration"></a>Integrace poznámek
 
@@ -122,5 +122,9 @@ Integrace poznámek zahrnuje mapy kolekce tabulek, které pracují společně b�
 | [Přílohy dokumentu dodavatele](mapping-reference.md#231) | Poznámky | Firmy, které používají prostý text a adresy URL k zachycení specifických informací o dodavateli (pro organizace i osoby). |
 | [Přílohy dokumentu záhlaví prodejní objednávky](mapping-reference.md#229) | Poznámky | Firmy, které používají k zachycení konkrétních informací o prodejní objednávce prostý text a adresy URL. |
 | [Přílohy dokumentu záhlaví nákupní objednávky](mapping-reference.md#232) | Poznámky | Firmy, které používají k zachycení konkrétních informací o nákupní objednávce prostý text a adresy URL. |
+
+## <a name="limitations"></a>Omezení
+
+Jakmile nainstalujete řešení pro poznámky, nemůžete jej odinstalovat. 
 
 Další informace viz [Odkaz na mapování duálního zápisu ](mapping-reference.md).

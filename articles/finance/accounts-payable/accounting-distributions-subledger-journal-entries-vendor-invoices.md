@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820977"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189086"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Rozúčtování a položky deníku pro faktury dodavatele
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820977"
 
 Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele. Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování. 
 
-<a name="accounting-distributions"></a>Rozúčtování 
--------------------------
+## <a name="accounting-distributions"></a>Rozúčtování 
 
 Můžete použít následující tlačítka na stránce Faktura dodavatele pro zobrazení a případnou úpravu rozúčtování pro každou částku na faktuře dodavatele.
 -   **Rozúčtovat částky** – zobrazení a úprava rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.
@@ -227,8 +226,7 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 </table>
 
 
-<a name="distributing-taxes"></a>Distribuce daní
-------------------
+## <a name="distributing-taxes"></a>Distribuce daní
 
 Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování. Při výpočtu DPH je třeba na stránce Faktura dodavatele provést jeden z následujících úkolů:
 -   Zobrazit celkový součet faktury.

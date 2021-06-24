@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822220"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188014"
 ---
 # <a name="budget-planning"></a>Plánování rozpočtu
 
@@ -34,8 +34,7 @@ Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Mi
 - Použití přidělení pro úpravu dat dokumentu plánu rozpočtu
 - Úpravy dat dokumentu plánu rozpočtu v aplikaci Excel 
 
-<a name="prerequisites"></a>Předpoklady 
-------------------
+## <a name="prerequisites"></a>Předpoklady 
 
 Pro tento kurz budete potřebovat přístup k prostředí aplikace Microsoft Dynamics 365 Finance s ukázkovými daty Contoso a přiřazení k instanci jako správce. Pro tento seminář nepoužívejte soukromý režim prohlížeče – odhlaste se z jiného účtu v prohlížeči podle potřeby a přihlaste se pomocí údajů správce. Při přihlašování **MUSÍTE** zaškrtnout políčko „Zůstat přihlášen”. Tímto krokem zajistíte vytvoření trvalého souboru cookie, který aplikace Excel momentálně vyžaduje. Přihlašujete-li se k aplikaci pomocí jiného prohlížeče než IE, zobrazí se výzva k přihlášení v aplikaci Excel. Po kliknutí na tlačítko „Přihlásit” v aplikaci Excel se otevře místní okno IE a při přihlašování **MUSÍTE** zaškrtněte políčko „Zůstat přihlášeni”. Pokud se zdá, že volba „Přihlásit se” v aplikaci Excel nemá žádný účinek, vyprázdněte mezipaměť souborů cookie v IE.
 

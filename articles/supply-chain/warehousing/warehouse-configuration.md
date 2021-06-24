@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734246cde20f5ce76e34dae772ed0ba6b0e361a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1dc6c99a986bad767691f7cac7e0135c54e1d0b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837362"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189544"
 ---
 # <a name="warehouse-configuration-overview"></a>Přehled konfigurace skladu
 
@@ -109,8 +109,7 @@ Jako název naznačuje, směrnice skladového místa slouží ke směrování pr
 
 Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jednotlivým řádkům směrnice skladového místa, použijte jednu z předdefinovaných strategií. Můžete například použít strategii **Prázdné umístění s žádnou příchozí prací** k vyhledávání volného místa ve skladu, nebo můžete použít strategii **Rezervace dávky FEFO** pro odchozí výdej prodeje.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Konfigurace umístění ve skladu s povolenými procesy řízení skladu](tasks/configure-locations-wms-enabled-warehouse.md)
 

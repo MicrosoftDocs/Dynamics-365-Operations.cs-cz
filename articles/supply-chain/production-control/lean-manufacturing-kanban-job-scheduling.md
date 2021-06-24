@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d3de7d9d49cbd05f7d3d3daa42f51e60dc0f8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0d0cbaf6b8440dbbb71146a34cbbe949cfe78d0c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825836"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190033"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Plánování kanbanové úlohy pro lean manufacturing
 
@@ -65,8 +65,7 @@ Kalendář, který je přiřazen k pracovní buňce definuje podle dnů nebo tý
 
 Stránka se seznamy **Plánování kanbanové úlohy** obsahuje okna s fakty zobrazující dostupná a rezervovaná období kapacity pro vybranou pracovní buňku. V závislosti na vybraném plánu období v modelu výrobního toku období zobrazí dny nebo týdny.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 
 

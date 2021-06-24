@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811354"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193898"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -165,7 +165,8 @@ Zákazníci, kteří používají finanční výkaznictví pro finanční konsol
 - **Efektivní převod měny** – Po minimální nastavení v aplikaci Finance můžete převést všechny sestavy finančního výkaznictví na jakoukoli měnu vykazování, která byla nastavena. Kromě toho můžete nastavit neomezený počet měn vykazování.
 - **Zaúčtování eliminací u zdroje** –Lze vytvořit a vytisknout sestavu eliminace pro ověření transakcí eliminace. Potom můžete zaúčtovat všechny nové eliminace jako standardní mezipodnikové transakce. Můžete také použít právnickou osobu eliminace pro jakoukoliv transakci, kterou ve svých právnických osobách nechcete.
 
-## <a name="supported-consolidation-scenarios"></a>Podporované scénáře konsolidace
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Podporované scénáře konsolidace pro Financial Reporting
+
 Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční výkaznictví:
 
 - Jednoúrovňové a mnohoúrovňové konsolidace mezi právnickými osobami

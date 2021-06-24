@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815349"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189366"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Metody výpočtu DPH v poli Zdroj
 
@@ -52,8 +52,7 @@ Pokud je čistá částka 10,00, pak CLO 1 = 1,00 (10,00 x 10 %) a CLO 2 = 2,00 
 | Pro transakci lze použít pouze jeden daňový kód, kde Zdroj = procento z hrubé částky. Je-li více než jeden takový kód daně určen pro transakci, zobrazí se chyba a DPH nemůže být vypočítána. |
 
 
-<a name="percentage-of-sales-tax"></a>Procento DPH
------------------------
+## <a name="percentage-of-sales-tax"></a>Procento DPH
 
 Vyberete-li v poli Zdroj hodnotu Procento DPH, DPH se vypočítá jako procento z DPH vybrané v části Prodejní daň v poli DPH. DPH, která je vybrána v části Prodejní daň v poli DPH se vypočítá jako první. Druhá DPH bude vypočítána následovně na základě první částky DPH.
 ### <a name="example"></a>Příklad
@@ -119,8 +118,7 @@ Dokument / deník je nastaven na Částky včetně DPH = Ne Částka řádku tra
 
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Sazby DPH na základě polí Základ marže a Metody výpočtu](marginal-base-field.md)
 

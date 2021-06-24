@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811767"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190105"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Kusovníky a receptury
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811767"
 
 Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby. 
 
-<a name="bills-of-materials"></a>Kusovník
-------------------
+## <a name="bills-of-materials"></a>Kusovník
 
 Kusovník definuje součásti, které jsou potřebné pro výrobu produktu. Komponenty mohou být suroviny, polotovary a přísady. V některých případech může kusovník odkazovat na služby. Nejčastěji však kusovníky popisují *materiálové zdroje*, které jsou vyžadované.  
 

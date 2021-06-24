@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 9ae13ce4038346cd5b101b5c40fe3b7c5e617fbf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960042"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187933"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960042"
 
 Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 
-<a name="overview"></a>Přehled
---------
+## <a name="overview"></a>Přehled
 
 Schválený rozpočet pro právnickou osobu je udržován v dokumentu, který je označován jako *položka registru rozpočtu*. Řádky v dokumentu položek registru rozpočtu se označují jako položky *rozpočtového účtu* a obsahují informace o finančních dimenzích, datech a částkách schváleného rozpočtu. Dokument s položkami registru rozpočtu je integrován se základními finančními sestavami a stránkami s dotazy, kde se skutečné částky hlavní knihy porovnávají s částkami rozpočtu. 
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 962edb3fd0478a8f0281054abc00c35b732620f6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796407"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193148"
 ---
 # <a name="store-order-fulfillment"></a>Plnění objednávek obchodu
 
@@ -33,7 +33,7 @@ Operace plnění objednávky na pokladním místě poskytuje jediný pracovní p
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Přístup k jednotnému plnění objednávky v pokladním místě
 
-Plnění objednávky [ID operace 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
+Plnění objednávky [ID operace 928](pos-operations.md) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
 
 Operace plnění objednávky nemá momentálně vlastní oprávnění, ale v budoucnosti budou uživatelé moci používat oprávnění **Povolit načtení objednávky** k vyvolání operace z pokladního místa.
 
@@ -93,7 +93,7 @@ Po přijetí objednávky lze vybrat řádky a označit je jako **Výdej**. Ozna�
 
 Výdejky lze vytisknout na pokladním místě, aby se pomohlo pracovníkům při provádění procesu výdeje. Vytištěnou výdejku může mít u sebe pracovníka provádějící výdej, a jakmile jsou produkty vydány, pracovníka je ručně označí na výdejce jako vyskladněné.
 
-Formát výdejky je nakonfigurován v aplikaci Commerce a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Formát výdejky je nakonfigurován v aplikaci Commerce a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md).
 
 Jestliže jsou vybrané řádky a u těchto řádků se vytiskne výdejka, jsou automaticky aktualizovány se stavem **Výdej**.
 
@@ -119,7 +119,7 @@ Pokud je řádek objednávky vyskladněn s chybou, je nutné provést na řádku
 - **Výsledný stav:** Zabaleno nebo částečně zabaleno
 - **Výsledný stav v účetním systému:** Dodáno nebo částečně dodáno
 
-Tato akce označí řádky jako zabalené nebo částečně zabalené a vytiskne dodací list. Dodací list lze vytisknout pro ověření produktů, které jsou zabaleny dohromady. Formát dodacího listu je nakonfigurován v aplikaci Commerce a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Tato akce označí řádky jako zabalené nebo částečně zabalené a vytiskne dodací list. Dodací list lze vytisknout pro ověření produktů, které jsou zabaleny dohromady. Formát dodacího listu je nakonfigurován v aplikaci Commerce a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md).
 
 **Akce: Označit jako zabaleno**
 

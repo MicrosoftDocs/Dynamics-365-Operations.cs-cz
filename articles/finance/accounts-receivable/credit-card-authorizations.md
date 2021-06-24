@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837122"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190302"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Nastavení platební karty, autorizace a záznam
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837122"
 
 Tento článek přehled autorizace platební karty v aplikaci Microsoft Dynamics 365 Finance. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Nastavení služby pro platby platební kartou
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Nastavení služby pro platby platební kartou
 
 Pokud chcete použít platební karty, musíte nastavit a aktivovat službu pro platby na stránce Služby pro platby. Služba pro platby funguje jako spojovací článek mezi vaší právnickou osobou a bankou, která zpracovává kreditní kartu odběratele. Musíte spolupracovat s poskytovatelem kreditní karty, který je uveden v poli Konektor platby a nastavit účet u tohoto poskytovatele. Musíte poté nastavit další možnosti na stránce Služby pro platby, nastavit typy platebních karet pro American Express, Discover, MasterCard a Discover na stránce Typy platebních karet a aktivovat zprostředkovatele jako výchozího zprostředkovatele. Je nutné také postupovat podle těchto kroků pro dokončení instalace:
 -   Na stránce Parametry pohledávek zadejte parametry pro použití autorizace platební karty.
@@ -39,13 +38,11 @@ Pokud chcete použít platební karty, musíte nastavit a aktivovat službu pro 
 ## <a name="adding-a-new-credit-card"></a>Přidání nové platební karty
 Můžete vytvořit nové záznamy kreditní karty na stránce Odběratelé pomocí polí Odběratel, Nastavení, Platební karta. Můžete také vytvořit záznamy kreditní karty při zadávání prodejních objednávek na stránce Prodejní objednávku pomocí polí Správa, Odběratel, Kreditní karta, Registrační pokladna.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Přidání platební karty do prodejní objednávky
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Přidání platební karty do prodejní objednávky
 
 Platební kartu lze přidat do prodejní objednávky výběrem platební karty ve vyhledávání platební karty na pevné záložce Cena a sleva na stránce Prodejní objednávky. Ke spuštění procesu ověření v podokně akcí na kartě Spravovat vyberte Kreditní karta a Ověřit.
 
-<a name="authorizing-a-credit-card"></a>Autorizace platební karty
--------------------------
+## <a name="authorizing-a-credit-card"></a>Autorizace platební karty
 
 Při ověření dochází nejprve k ověření jména držitele karty a potom k potvrzení disponibilního zůstatku. V případě potřeby lze ověřit i hodnotu ověření platební karty a adresu držitele karty. Disponibilní zůstatek odběratele je snížen o částku faktury. Služba pro platby odešle informaci, zda byla kreditní karta přijata nebo odmítnuta. Při fakturaci prodejní objednávky je kreditní karta zatížena (zaznamenána) částkou faktury.
 

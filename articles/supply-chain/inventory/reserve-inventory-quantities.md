@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1fcdb43f95892c541be2c31101d8f592f5d5e16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 052cb56e026fbfe5cf5f6ad5d265337d7b88dc4d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834186"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193946"
 ---
 # <a name="reserve-inventory-quantities"></a>Rezervace skladových množství
 
@@ -46,7 +46,7 @@ Zásady rezervace zásob, které jsou nastaveny na stránce **Skupiny modelů po
 
 Část **Zásady zásob** obsahuje následující zásady rezervace.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zásada rezervace**  | **Popis**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Řízení FIFO podle data    | Pokud jste vybrali možnost **Řízení FIFO podle data**, rezervace zásob se řídí podle data třídění podle principu FIFO. Dávky jsou rezervovány na základě nejbližšího data příjmu položek podle principu první do skladu, první ze skladu (FIFO).                                                                                                                                                                                                                                                                       |

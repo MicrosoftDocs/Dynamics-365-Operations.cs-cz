@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897057"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193324"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Finance
 
@@ -88,10 +88,10 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="exams"></a>Zkoušky<a name="exams"></a>
 
-| Obsah  | popis  | Formát   |
-|-------------|-----------------|-------------|
-| [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. | |
-| [Zkuška MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: nastavení a konfigurace finanční správy, správa a použití běžných procesů; implementace a správa závazků a pohledávek a správa rozpočtování a dlouhodobého majetku. | Zkouška; náklady se liší podle oblasti. | |
+| Obsah | popis | Formát |
+|---|---|---|
+| [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. |
+| [Zkuška MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: nastavení a konfigurace finanční správy, správa a použití běžných procesů; implementace a správa závazků a pohledávek a správa rozpočtování a dlouhodobého majetku. | Zkouška; náklady se liší podle oblasti. |
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional sjednocuje globální finance a provozy a automatizuje úkoly a workflowy, zjednodušuje objednávky, prodej, fakturaci a výkaznictví pro zákazníky. | Certifikace; náklady se liší podle oblasti. |
 
 

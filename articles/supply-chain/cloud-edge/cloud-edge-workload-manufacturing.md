@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899088"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183989"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
@@ -72,6 +72,7 @@ Následující úlohy provádění výroby lze aktuálně spouštět na úlohác
 - Vykázat odpad
 - Nepřímá aktivita
 - Přerušení
+- Hlášení jako dokončeno a vyskladněno (vyžaduje, abyste také spustili prováděcí úlohu skladování na vaší jednotce škálování, viz také [Hlášení jako dokončeno a vyskladněno na jednotce škálování](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Práce s výrobními úlohami spuštění v centru
 
@@ -108,6 +109,26 @@ Chcete-li zkontrolovat historii výrobních úloh, které byly zpracovány na je
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Výrobní centrum pro úlohu procesoru zprávy jednotky škálování
 
 Úloha _Výrobní centrum pro procesor zpráv jednotky škálování_ zpracovává data z centra do jednotky škálování. Tato úloha se automaticky spustí, když je nasazena úloha provedení. Můžete jej však kdykoli spustit ručně tak, že přejdete na **Kontrola výroby \> Pravidelné úkoly \> Správa úlohy backoffice \> Výrobní centrum pro škálování procesorů zpráv jednotky**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Hlášení jako dokončeno a vyskladněno na jednotce škálování
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+V aktuální verzi jsou zprávy o dokončení a operace vyskladnění (u hotových produktů, vedlejších produktů a souběžných produktů) podporovány [prováděcími úlohami skladování](cloud-edge-workload-warehousing.md) (nikoli prováděcími úlohami výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Pomocí mobilní aplikace Warehouse Management můžete hlásit jako dokončené a zpracovat vyskladňovací práce. Rozhraní pro provádění výrobního provozu tyto procesy aktuálně nepodporuje.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 0ccb2ed2a143735c199c36f2da357996ad3fbff3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edab3420cbd39539358c03fe4d6b3646433f8ec5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812828"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190153"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
@@ -188,8 +188,7 @@ V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné
 
 Během jednoho kroku procesu konfigurace systém navrhne hodnotu konfigurace podle klasifikace. V tomto kroku můžete ručně změnit hodnotu konfigurace. Po uložení konfigurace systém zkontroluje, zda je hodnota konfigurace jedinečná. Není-li hodnota, kterou jste zadali jedinečná, zobrazí se chybová zpráva. Chcete-li uložit konfiguraci, musíte zadat jedinečnou hodnotu konfigurace.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 

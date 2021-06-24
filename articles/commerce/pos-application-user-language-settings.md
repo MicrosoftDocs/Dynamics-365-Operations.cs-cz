@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804374"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193096"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Nastavení pokladního místa (POS) a uživatelského jazyka
 
@@ -57,7 +57,7 @@ Nastavení jazyka uživatele POS určuje překlady používané v uživatelském
 
 Nastavení jazyka uživatele POS pochází z nabídky **Všichni pracovníci** na stránce **Pracovník** v části **Maloobchod a velkoobchod &gt; Jazyk**. Není nastaveno na hlavní kartě Profil. Toto nastavení není použito v programu POS. Pokud není jazyk uživatele nastaven, nebo pokud je nastaven na jazyk, pro který nejsou k dispozici překlady, POS obnoví používání jazyka obchodu.
 
-|             | Jazyk UR                  | Jazyk dat (produkty, formáty příjemky, řádkový displej atd.) |
+| &nbsp;      | Jazyk UR                  | Jazyk dat (produkty, formáty příjemky, řádkový displej atd.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Company (Společnost)** | Výchozí                    | Výchozí                                                       |
 | **Obchod**   | Přepsání společnosti          | Přepsání společnosti                                             |

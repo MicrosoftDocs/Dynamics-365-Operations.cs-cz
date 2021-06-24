@@ -2,7 +2,7 @@
 title: Požadavky nastavení velikosti hardwaru pro místní prostředí
 description: Toto téma uvádí požadavky nastavení velikosti hardwaru pro místní prostředí.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923473"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168722"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -131,6 +131,8 @@ Ve většině případů, pokud se často nepoužívají by měly doporučené m
 ## <a name="sql-server-reporting-services"></a>služba SQL Server Reporting Services
 
 Pro všeobecnou dostupnost lze nasadit pouze jeden uzel SSRS. Při testování sledujte uzel SSRS a zvyšte počet jader k dispozici pro SSRS podle potřeby. Ujistěte se, že máte k dispozici předem konfigurovaný sekundární uzel dostupný na virtuálním hostiteli, než je na virtuálním počítači SSRS. To je důležité, pokud se jedná o problém s virtuálním počítačem, který je hostitelem SSRS nebo virtuálním hostitelem. V takovém případě je nutné je vyměnit.
+
+Počínaje verzí 10.0.17 je možné nakonfigurovat další uzly SSRS pro dosažení vysoké dostupnosti. Další informace viz [Konfigurace vysoké dostupnosti pro uzly SQL Server Reporting Services (SSRS)](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Orchestrátor prostředí
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959962"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188038"
 ---
 # <a name="budget-control-overview"></a>Přehled kontroly rozpočtu
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959962"
 
 Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu, abyste mohli spravovat finančních prostředky.
 
-<a name="overview"></a>Přehled
---------
+## <a name="overview"></a>Přehled
 
 Kontrola rozpočtu podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, workflowů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
 
