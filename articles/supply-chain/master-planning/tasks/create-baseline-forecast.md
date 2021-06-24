@@ -1,5 +1,5 @@
 ---
-title: Vytvoření základní prognózy
+title: 'Průvodce: Vytvoření základní prognózy'
 description: Plánovač výroby může vytvořit základní prognózu pomocí modelů prognózování časových řad nebo zkopírováním historické poptávky.
 author: ShylaThompson
 ms.date: 08/29/2018
@@ -13,72 +13,73 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d89219d90ddff7cec70195025ffc361fb8101552
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 95a20b30827c9096dd8d8f67d149305cf594ff05
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841712"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223955"
 ---
-# <a name="create-a-baseline-forecast"></a><span data-ttu-id="b5b64-103">Vytvoření základní prognózy</span><span class="sxs-lookup"><span data-stu-id="b5b64-103">Create a baseline forecast</span></span>
+# <a name="guide-create-a-baseline-forecast"></a><span data-ttu-id="e059a-103">Průvodce: Vytvoření základní prognózy</span><span class="sxs-lookup"><span data-stu-id="e059a-103">Guide: Create a baseline forecast</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="b5b64-104">Plánovač výroby může vytvořit základní prognózu pomocí modelů prognózování časových řad nebo zkopírováním historické poptávky.</span><span class="sxs-lookup"><span data-stu-id="b5b64-104">A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand.</span></span> <span data-ttu-id="b5b64-105">Tento postup popisuje, jak zkopírováním historické poptávky vytvořit základní prognózu pro všechny produkty použitím jednoho alokačního klíče položky.</span><span class="sxs-lookup"><span data-stu-id="b5b64-105">This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key.</span></span> 
+<span data-ttu-id="e059a-104">Plánovač výroby může vytvořit základní prognózu pomocí modelů prognózování časových řad nebo zkopírováním historické poptávky.</span><span class="sxs-lookup"><span data-stu-id="e059a-104">A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand.</span></span> <span data-ttu-id="e059a-105">Tento postup popisuje, jak zkopírováním historické poptávky vytvořit základní prognózu pro všechny produkty použitím jednoho alokačního klíče položky.</span><span class="sxs-lookup"><span data-stu-id="e059a-105">This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key.</span></span>
 
+## <a name="set-up-an-item-allocation-key"></a><span data-ttu-id="e059a-106">Nastavení alokačního klíče</span><span class="sxs-lookup"><span data-stu-id="e059a-106">Set up an item allocation key</span></span>
 
-## <a name="set-up-an-item-allocation-key"></a><span data-ttu-id="b5b64-106">Nastavení alokačního klíče</span><span class="sxs-lookup"><span data-stu-id="b5b64-106">Set up an item allocation key</span></span>
-1. <span data-ttu-id="b5b64-107">Přejděte na Hlavní plánování > Nastavení > Skupiny mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="b5b64-107">Go to Master planning > Setup > Intercompany planning groups.</span></span>
-2. <span data-ttu-id="b5b64-108">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="b5b64-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="b5b64-109">Můžete například filtrovat v poli Jméno pomocí hodnoty „10“.</span><span class="sxs-lookup"><span data-stu-id="b5b64-109">For example, filter on the Name field with a value of '10'.</span></span>
-    * <span data-ttu-id="b5b64-110">Prognóza poptávky se provádí mezi právnickými osobami.</span><span class="sxs-lookup"><span data-stu-id="b5b64-110">Demand forecasting runs across legal entities.</span></span> <span data-ttu-id="b5b64-111">Proto je nutné nastavit všechny společnosti, pro které chcete vygenerovat prognózy v jedné skupině mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="b5b64-111">That's why you need to set up all the companies for which you want to generate forecasts in one intercompany planning group.</span></span>  
-3. <span data-ttu-id="b5b64-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="b5b64-112">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="b5b64-113">Klikněte na Alokační klíče položek.</span><span class="sxs-lookup"><span data-stu-id="b5b64-113">Click Item allocation keys.</span></span>
-    * <span data-ttu-id="b5b64-114">Vyberte všechny alokační klíče položky, pro které chcete vytvořit prognózy.</span><span class="sxs-lookup"><span data-stu-id="b5b64-114">Select all the item allocation keys for which you want to create forecasts.</span></span>  
-5. <span data-ttu-id="b5b64-115">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="b5b64-115">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="b5b64-116">Vyberte alokační klíč položky D_Aloc.</span><span class="sxs-lookup"><span data-stu-id="b5b64-116">Select D_Aloc item allocation key.</span></span>  
-6. <span data-ttu-id="b5b64-117">Klepněte na >.</span><span class="sxs-lookup"><span data-stu-id="b5b64-117">Click >.</span></span>
-7. <span data-ttu-id="b5b64-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="b5b64-118">Close the page.</span></span>
-8. <span data-ttu-id="b5b64-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="b5b64-119">Close the page.</span></span>
+1. <span data-ttu-id="e059a-107">Přejděte na **Hlavní plánování > Nastavení > Skupiny mezipodnikového plánování**.</span><span class="sxs-lookup"><span data-stu-id="e059a-107">Go to **Master planning > Setup > Intercompany planning groups**.</span></span>
+2. <span data-ttu-id="e059a-108">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="e059a-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="e059a-109">Můžete například filtrovat v poli *Název* pomocí hodnoty *10*.</span><span class="sxs-lookup"><span data-stu-id="e059a-109">For example, filter on the *Name* field with a value of *10*.</span></span>
+    * <span data-ttu-id="e059a-110">Prognóza poptávky se provádí mezi právnickými osobami.</span><span class="sxs-lookup"><span data-stu-id="e059a-110">Demand forecasting runs across legal entities.</span></span> <span data-ttu-id="e059a-111">Proto je nutné nastavit všechny společnosti, pro které chcete vygenerovat prognózy v jedné skupině mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="e059a-111">That's why you need to set up all the companies for which you want to generate forecasts in one intercompany planning group.</span></span>  
+3. <span data-ttu-id="e059a-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e059a-112">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="e059a-113">Vyberte **Alokační klíče položek**.</span><span class="sxs-lookup"><span data-stu-id="e059a-113">Select **Item allocation keys**.</span></span>
+    * <span data-ttu-id="e059a-114">Vyberte všechny alokační klíče položky, pro které chcete vytvořit prognózy.</span><span class="sxs-lookup"><span data-stu-id="e059a-114">Select all the item allocation keys for which you want to create forecasts.</span></span>  
+5. <span data-ttu-id="e059a-115">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e059a-115">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e059a-116">Vyberte alokační klíč položky D_Aloc.</span><span class="sxs-lookup"><span data-stu-id="e059a-116">Select D_Aloc item allocation key.</span></span>  
+6. <span data-ttu-id="e059a-117">Vyberte **>**.</span><span class="sxs-lookup"><span data-stu-id="e059a-117">Select **>**.</span></span>
+7. <span data-ttu-id="e059a-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e059a-118">Close the page.</span></span>
+8. <span data-ttu-id="e059a-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e059a-119">Close the page.</span></span>
 
-## <a name="set-up-the-demand-forecasting-parameters"></a><span data-ttu-id="b5b64-120">Nastavení parametrů prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="b5b64-120">Set up the demand forecasting parameters</span></span>
-1. <span data-ttu-id="b5b64-121">Přejděte na Hlavní plánování > Nastavení > Prognóza poptávky > Parametry tvorby prognóz poptávky.</span><span class="sxs-lookup"><span data-stu-id="b5b64-121">Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.</span></span>
-2. <span data-ttu-id="b5b64-122">Rozbalte část Parametry algoritmu prognózy.</span><span class="sxs-lookup"><span data-stu-id="b5b64-122">Expand the Forecast algorithm parameters section.</span></span>
-3. <span data-ttu-id="b5b64-123">V poli Strategie generování prognózy vyberte "Kopírování mezi historickými poptávkami".</span><span class="sxs-lookup"><span data-stu-id="b5b64-123">In the Forecast generation strategy field, select 'Copy over historical demand'.</span></span>
-4. <span data-ttu-id="b5b64-124">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="b5b64-124">Click Save.</span></span>
+## <a name="set-up-the-demand-forecasting-parameters"></a><span data-ttu-id="e059a-120">Nastavení parametrů prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="e059a-120">Set up the demand forecasting parameters</span></span>
 
-## <a name="create-a-baseline-forecast"></a><span data-ttu-id="b5b64-125">Vytvoření základní prognózy</span><span class="sxs-lookup"><span data-stu-id="b5b64-125">Create a baseline forecast</span></span>
-1. <span data-ttu-id="b5b64-126">Přejděte na Hlavní plánování > Prognózování > Prognóza poptávky > Generovat statistickou základní prognózu.</span><span class="sxs-lookup"><span data-stu-id="b5b64-126">Go to Master planning > Forecasting > Demand forecasting > Generate statistical baseline forecast.</span></span>
-2. <span data-ttu-id="b5b64-127">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="b5b64-127">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="b5b64-128">Pokud prodejní objednávky začínají od 1. ledna 2015, zadejte toto datum.</span><span class="sxs-lookup"><span data-stu-id="b5b64-128">If you have sales orders starting from January 1, 2015, enter this date.</span></span> <span data-ttu-id="b5b64-129">V opačném případě zadejte nejdřívější datum prodejních objednávek.</span><span class="sxs-lookup"><span data-stu-id="b5b64-129">If you don't, enter the earliest date of your sales orders.</span></span>  
-3. <span data-ttu-id="b5b64-130">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="b5b64-130">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="b5b64-131">Zadejte poslední datum prodejních objednávek (např. '2015-03-31').</span><span class="sxs-lookup"><span data-stu-id="b5b64-131">Enter the last date of your sales orders, for example '2015-03-31'.</span></span>  
-4. <span data-ttu-id="b5b64-132">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="b5b64-132">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="b5b64-133">Zadejte '2015-04-01'.</span><span class="sxs-lookup"><span data-stu-id="b5b64-133">Enter '2015-04-01'.</span></span> <span data-ttu-id="b5b64-134">Toto datum se vypočítá automaticky jako počáteční datum následujícího intervalu prognózy.</span><span class="sxs-lookup"><span data-stu-id="b5b64-134">This date will be automatically calculated as the start date of the next forecasting bucket.</span></span>  
-5. <span data-ttu-id="b5b64-135">Rozbalte oddíl Záznamy k zahrnutí.</span><span class="sxs-lookup"><span data-stu-id="b5b64-135">Expand the Records to include section.</span></span>
-6. <span data-ttu-id="b5b64-136">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="b5b64-136">Click Filter.</span></span>
-7. <span data-ttu-id="b5b64-137">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="b5b64-137">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="b5b64-138">Označte řádek, kde pole = skupina mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="b5b64-138">Mark the row where Field = Intercompany planning group.</span></span>  
-8. <span data-ttu-id="b5b64-139">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="b5b64-139">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="b5b64-140">Zadejte skupinu vnitropodnikového plánování, například „10“, kterou používáte v prvním úkolu.</span><span class="sxs-lookup"><span data-stu-id="b5b64-140">Type the intercompany planning group, for example, 10, that you used in the first task.</span></span>  
-9. <span data-ttu-id="b5b64-141">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="b5b64-141">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="b5b64-142">Vyberte řádek, kde pole = alokační klíč položky.</span><span class="sxs-lookup"><span data-stu-id="b5b64-142">Select the row where Field = Item allocation key.</span></span>  
-10. <span data-ttu-id="b5b64-143">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="b5b64-143">In the Criteria field, type a value.</span></span>
-11. <span data-ttu-id="b5b64-144">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b5b64-144">Click OK.</span></span>
-12. <span data-ttu-id="b5b64-145">Rozbalte sekci Rozšířené parametry.</span><span class="sxs-lookup"><span data-stu-id="b5b64-145">Expand the Advanced parameters section.</span></span>
-13. <span data-ttu-id="b5b64-146">V poli Interval prognózy vyberte Měsíc.</span><span class="sxs-lookup"><span data-stu-id="b5b64-146">In the Forecast bucket field, select 'Month'.</span></span>
-14. <span data-ttu-id="b5b64-147">V poli Horizont prognózy zadejte „3“.</span><span class="sxs-lookup"><span data-stu-id="b5b64-147">In the Forecast horizon field, enter '3'.</span></span>
-15. <span data-ttu-id="b5b64-148">V poli Ochranná doba zablokování zadejte číslo 1.</span><span class="sxs-lookup"><span data-stu-id="b5b64-148">In the Freeze time fence field, enter '1'.</span></span>
-16. <span data-ttu-id="b5b64-149">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b5b64-149">Click OK.</span></span>
+1. <span data-ttu-id="e059a-121">Přejděte na **Hlavní plánování > Nastavení > Prognóza poptávky > Parametry tvorby prognóz poptávky**.</span><span class="sxs-lookup"><span data-stu-id="e059a-121">Go to **Master planning > Setup > Demand forecasting > Demand forecasting parameters**.</span></span>
+2. <span data-ttu-id="e059a-122">Rozbalte část **Parametry algoritmu prognózy**.</span><span class="sxs-lookup"><span data-stu-id="e059a-122">Expand the **Forecast algorithm parameters** section.</span></span>
+3. <span data-ttu-id="e059a-123">V poli **Strategie generování prognózy** vyberte **Kopírování mezi historickými poptávkami**.</span><span class="sxs-lookup"><span data-stu-id="e059a-123">In the **Forecast generation strategy** field, select **Copy over historical demand**.</span></span>
+4. <span data-ttu-id="e059a-124">Zvolte možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="e059a-124">Select **Save**.</span></span>
 
-## <a name="visualize-the-demand-forecast"></a><span data-ttu-id="b5b64-150">Vizualizace prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="b5b64-150">Visualize the demand forecast</span></span>
-1. <span data-ttu-id="b5b64-151">Přejděte na Hlavní plánování > Prognózování > Prognóza poptávky > Upravená prognóza poptávky.</span><span class="sxs-lookup"><span data-stu-id="b5b64-151">Go to Master planning > Forecasting > Demand forecasting > Adjusted demand forecast.</span></span>
-2. <span data-ttu-id="b5b64-152">V tabulce agregovaného zobrazení vyberte buňku na řádku 1, ve sloupci 2.</span><span class="sxs-lookup"><span data-stu-id="b5b64-152">In the aggregated view table, select the cell in row 1, column 2.</span></span> <span data-ttu-id="b5b64-153">Jedná se o druhé měsíc, pro který jste vytvořili prognózu.</span><span class="sxs-lookup"><span data-stu-id="b5b64-153">This is the second month for which you have created forecast.</span></span>
-3. <span data-ttu-id="b5b64-154">Nastavte QtyCell na '400'.</span><span class="sxs-lookup"><span data-stu-id="b5b64-154">Set QtyCell to '400'.</span></span>
-    * <span data-ttu-id="b5b64-155">V buňce zadejte jiné číslo než to, který bylo předvídáno, například 400.</span><span class="sxs-lookup"><span data-stu-id="b5b64-155">In the cell, enter a different number than the one that was forecasted, for example, 400.</span></span>  
-4. <span data-ttu-id="b5b64-156">Právě jste provedli ruční úpravu prognózy.</span><span class="sxs-lookup"><span data-stu-id="b5b64-156">You have made a manual adjustment to the forecast.</span></span> <span data-ttu-id="b5b64-157">Všimněte si grafické indikace v dalším kroku.</span><span class="sxs-lookup"><span data-stu-id="b5b64-157">Notice the graphical indication in the next step.</span></span>
-5. <span data-ttu-id="b5b64-158">Klikněte na Podrobnosti o řádcích prognózy.</span><span class="sxs-lookup"><span data-stu-id="b5b64-158">Click Forecast line details.</span></span>
-    * <span data-ttu-id="b5b64-159">Na této stránce můžete zobrazit hodnoty přesnosti, historické poptávky a prognózu.</span><span class="sxs-lookup"><span data-stu-id="b5b64-159">In this page, you can see the accuracy values, historical demand, and forecast.</span></span> <span data-ttu-id="b5b64-160">Podle potřeby můžete upravit také prognózu.</span><span class="sxs-lookup"><span data-stu-id="b5b64-160">You can make changes to the forecast as well.</span></span>  
+## <a name="create-a-baseline-forecast"></a><span data-ttu-id="e059a-125">Vytvoření základní prognózy</span><span class="sxs-lookup"><span data-stu-id="e059a-125">Create a baseline forecast</span></span>
 
+1. <span data-ttu-id="e059a-126">Přejděte na **Hlavní plánování > Prognózování > Prognóza poptávky > Generovat statistickou základní prognózu**.</span><span class="sxs-lookup"><span data-stu-id="e059a-126">Go to **Master planning > Forecasting > Demand forecasting > Generate statistical baseline forecast**.</span></span>
+2. <span data-ttu-id="e059a-127">Do pole **Od data** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e059a-127">In the **From date** field, enter a date.</span></span>
+    * <span data-ttu-id="e059a-128">Pokud prodejní objednávky začínají od 1. ledna 2015, zadejte toto datum.</span><span class="sxs-lookup"><span data-stu-id="e059a-128">If you have sales orders starting from January 1, 2015, enter this date.</span></span> <span data-ttu-id="e059a-129">V opačném případě zadejte nejdřívější datum prodejních objednávek.</span><span class="sxs-lookup"><span data-stu-id="e059a-129">If you don't, enter the earliest date of your sales orders.</span></span>  
+3. <span data-ttu-id="e059a-130">Do pole **Do data** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e059a-130">In the **To date** field, enter a date.</span></span>
+    * <span data-ttu-id="e059a-131">Zadejte poslední datum prodejních objednávek, např. *2015-03-31*.</span><span class="sxs-lookup"><span data-stu-id="e059a-131">Enter the last date of your sales orders, for example *2015-03-31*.</span></span>  
+4. <span data-ttu-id="e059a-132">Do pole **Od data** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e059a-132">In the **From date** field, enter a date.</span></span>
+    * <span data-ttu-id="e059a-133">Zadejte *2015-04-01*.</span><span class="sxs-lookup"><span data-stu-id="e059a-133">Enter *2015-04-01*.</span></span> <span data-ttu-id="e059a-134">Toto datum se vypočítá automaticky jako počáteční datum následujícího intervalu prognózy.</span><span class="sxs-lookup"><span data-stu-id="e059a-134">This date will be automatically calculated as the start date of the next forecasting bucket.</span></span>  
+5. <span data-ttu-id="e059a-135">Rozbalte oddíl **Záznamy k zahrnutí**.</span><span class="sxs-lookup"><span data-stu-id="e059a-135">Expand the **Records to include** section.</span></span>
+6. <span data-ttu-id="e059a-136">Vyberte **Filtr**.</span><span class="sxs-lookup"><span data-stu-id="e059a-136">Select **Filter**.</span></span>
+7. <span data-ttu-id="e059a-137">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e059a-137">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e059a-138">Označte řádek, kde **pole** = *skupina mezipodnikového plánování*.</span><span class="sxs-lookup"><span data-stu-id="e059a-138">Mark the row where **Field** = *Intercompany planning group*.</span></span>  
+8. <span data-ttu-id="e059a-139">Zadejte hodnotu do pole **Kritéria**.</span><span class="sxs-lookup"><span data-stu-id="e059a-139">In the **Criteria** field, type a value.</span></span>
+    * <span data-ttu-id="e059a-140">Zadejte skupinu vnitropodnikového plánování (například *10*), kterou používáte v prvním úkolu.</span><span class="sxs-lookup"><span data-stu-id="e059a-140">Type the intercompany planning group (for example, *10*) that you used in the first task.</span></span>  
+9. <span data-ttu-id="e059a-141">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e059a-141">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e059a-142">Vyberte řádek, kde **pole** = *alokační klíč položky*.</span><span class="sxs-lookup"><span data-stu-id="e059a-142">Select the row where **Field** = *Item allocation key*.</span></span>  
+10. <span data-ttu-id="e059a-143">Zadejte hodnotu do pole **Kritéria**.</span><span class="sxs-lookup"><span data-stu-id="e059a-143">In the **Criteria** field, type a value.</span></span>
+11. <span data-ttu-id="e059a-144">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="e059a-144">Select **OK**.</span></span>
+12. <span data-ttu-id="e059a-145">Rozbalte sekci **Rozšířené parametry**.</span><span class="sxs-lookup"><span data-stu-id="e059a-145">Expand the **Advanced parameters** section.</span></span>
+13. <span data-ttu-id="e059a-146">V poli **Kontejner prognózy** vyberte *Měsíc*.</span><span class="sxs-lookup"><span data-stu-id="e059a-146">In the **Forecast bucket** field, select *Month*.</span></span>
+14. <span data-ttu-id="e059a-147">V poli **Horizont prognózy** zadejte *3*.</span><span class="sxs-lookup"><span data-stu-id="e059a-147">In the **Forecast horizon** field, enter *3*.</span></span>
+15. <span data-ttu-id="e059a-148">V poli **Ochranná doba zablokování** zadejte číslo *1*.</span><span class="sxs-lookup"><span data-stu-id="e059a-148">In the **Freeze time fence** field, enter *1*.</span></span>
+16. <span data-ttu-id="e059a-149">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="e059a-149">Select **OK**.</span></span>
 
+## <a name="visualize-the-demand-forecast"></a><span data-ttu-id="e059a-150">Vizualizace prognózy poptávky</span><span class="sxs-lookup"><span data-stu-id="e059a-150">Visualize the demand forecast</span></span>
+
+1. <span data-ttu-id="e059a-151">Přejděte na **Hlavní plánování > Prognózování > Prognóza poptávky > Upravená prognóza poptávky**.</span><span class="sxs-lookup"><span data-stu-id="e059a-151">Go to **Master planning > Forecasting > Demand forecasting > Adjusted demand forecast**.</span></span>
+2. <span data-ttu-id="e059a-152">V tabulce agregovaného zobrazení vyberte buňku na řádku 1, ve sloupci 2.</span><span class="sxs-lookup"><span data-stu-id="e059a-152">In the aggregated view table, select the cell in row 1, column 2.</span></span> <span data-ttu-id="e059a-153">Jedná se o druhé měsíc, pro který jste vytvořili prognózu.</span><span class="sxs-lookup"><span data-stu-id="e059a-153">This is the second month for which you have created forecast.</span></span>
+3. <span data-ttu-id="e059a-154">Nastavte **QtyCell** na *400*.</span><span class="sxs-lookup"><span data-stu-id="e059a-154">Set **QtyCell** to *400*.</span></span>
+    * <span data-ttu-id="e059a-155">V buňce zadejte jiné číslo než to, který bylo předvídáno, například 400.</span><span class="sxs-lookup"><span data-stu-id="e059a-155">In the cell, enter a different number than the one that was forecasted, for example, 400.</span></span>  
+4. <span data-ttu-id="e059a-156">Právě jste provedli ruční úpravu prognózy.</span><span class="sxs-lookup"><span data-stu-id="e059a-156">You have made a manual adjustment to the forecast.</span></span> <span data-ttu-id="e059a-157">Všimněte si grafické indikace v dalším kroku.</span><span class="sxs-lookup"><span data-stu-id="e059a-157">Notice the graphical indication in the next step.</span></span>
+5. <span data-ttu-id="e059a-158">Vyberte **Podrobnosti o řádcích prognózy**.</span><span class="sxs-lookup"><span data-stu-id="e059a-158">Select **Forecast line details**.</span></span>
+    * <span data-ttu-id="e059a-159">Na této stránce můžete zobrazit hodnoty přesnosti, historické poptávky a prognózu.</span><span class="sxs-lookup"><span data-stu-id="e059a-159">In this page, you can see the accuracy values, historical demand, and forecast.</span></span> <span data-ttu-id="e059a-160">Podle potřeby můžete upravit také prognózu.</span><span class="sxs-lookup"><span data-stu-id="e059a-160">You can make changes to the forecast as well.</span></span>  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
