@@ -1208,15 +1208,15 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Nejčastější dotazy k finančnímu výkaznictví
               href: general-ledger/financial-reporting-faq.md
-        - name: Přehledy Finance
+        - name: Finance insights
           items:
-            - name: Domovská stránka přehledů Finance
+            - name: Domovská stránka Finance insights
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurace a správa
               items:
-                - name: Nakonfigurujte Finance Insights pro Public Preview
+                - name: Nakonfigurujte Finance insights pro Public Preview
                   href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurace Finance Insights
+                - name: Konfigurace Finance insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Povolení předpovědí plateb zákazníka
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Vytvoření projektu integrátoru dat
                   href: finance-insights/create-data-integrate-project.md
-            - name: Použití přehledů Finance
+            - name: Použití Finance insights
               items:
                 - name: Návrhy rozpočtu
                   href: finance-insights/budget-proposals.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service - Odstranění prostředí RCS
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronická fakturace
@@ -1520,10 +1522,14 @@
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: Vykazování pro Nizozemsko
                           items:
-                            - name: "Přiznání k\_DPH"
+                            - name: Přiznání k DPH
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Vykazování ve Spojeném království
+                          items:
+                            - name: Připravte se na integraci s MTD pro DPH
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
             - name: Austrálie
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Daňové registry dluhů závazků a odpisy dluhů
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Rezervy nedobytných pohledávek v pohledávkách
+                      href: localizations/rus-bad-debts.md
             - name: Saúdská Arábie
               items:
                 - name: Saúdská Arábie - přehled
@@ -3288,12 +3296,10 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: Nastavení skupin DPH položky pro stornovací poplatek DPH
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: "Nastavení skupin položek, pravidel a\_parametrů stornovacího poplatku DPH"
+                    - name: "Nastavení skupin položek, pravidel a\_parametrů přenesení daňové povinnosti DPH"
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                    - name: Nastavení skupin DPH pro stornovací poplatek DPH
+                    - name: Nastavení skupin DPH pro přenesení daňové povinnosti DPH
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Digitalizování daní pro DPH
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Sestava statistik způsobů plateb
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Spojené státy americké
@@ -3665,6 +3671,12 @@
               items:
                 - name: Jazyk vzorce
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Podporované datové typy pro vzorce elektronického výkaznictví
+                  items:
+                    - name: Typy primitivních dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Typy složených dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funkce
                   items:
                     - name: Kontejner
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: Návrh formátů elektronické výkaznictví pro generování odchozích dokumentů v různých formátech
               items:
+                - name: Návrh konfigurace pro generování sestav ve formátu OPENXML
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Návrh konfigurací pro generování odchozích dokumentů ve formátu Excel
                   items:
                     - name: Návrh konfigurace pro generování dokumentů ve formátu Excel
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Příklad generování sestav ve formátu OPENXML
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
@@ -4211,12 +4223,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Delegování vytvoření cíle elektronického výkaznictví do vlastního cílového objektu pro vytváření
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                    - name: Implementace vlastního cílového umístění pro vygenerované dokumenty
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Aplikace pro mobilní zařízení
