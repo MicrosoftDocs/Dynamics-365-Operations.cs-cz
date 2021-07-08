@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: cf009e32f8c137e235793d80bf8448a5f55988bd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dc41df33d01c3c8523afb6d8f16bfec88e0c42b8
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020428"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271022"
 ---
 # <a name="rebate-management-parameters"></a>Parametry správy rabatu
 
@@ -27,7 +27,7 @@ ms.locfileid: "6020428"
 
 Stránka **Parametry správy rabatu** se používá k definování nastavení, která platí v celém modulu **Správa rabatů**. Tato nastavení ovlivňují účtování, aktualizace stavu, číselné řady a další chování. Nastavení na této stránce je sdíleno mezi právnickými osobami a může být upravováno uživateli, kteří mají příslušná bezpečnostní oprávnění.
 
-Chcete-li otevřít stránku **Parametry správy rabatu**, přejděte na **Odpočty a rabaty \> Nastavení \> Parametry správy rabatu**. Poté nastavte pole, jak je popsáno v následujících pododdílech.
+Chcete-li otevřít stránku **Parametry správy rabatu**, přejděte na **Správa rabatu \> Nastavení \> Parametry správy rabatu**. Poté nastavte pole, jak je popsáno v následujících pododdílech.
 
 ## <a name="rebate-management-tab"></a>Karta správy rabatů
 
@@ -36,12 +36,12 @@ Následující tabulka popisuje pole, která jsou k dispozici na kartě **Správ
 | Pole | popis |
 |---|---|
 | Výchozí stav | Vyberte výchozí stav pro všechny nové nabídky. Chcete-li definovat sadu hodnot stavu, které jsou k dispozici pro výběr, použijte [stránku **Stavy rabatů**](rebate-statuses.md). |
-| Zpracování podle dimenze | Vyberte, zda mají být transakce dodávek, rabatů a odpisů zpracovány podle finanční dimenze. Když je tato možnost zapnutá, systém použije finanční dimenze pro zdrojové transakce. |
+| Zpracování podle dimenze | Vyberte, zda mají být transakce dodávek, rabatů a odpisů zpracovány podle finanční dimenze. Když je tato možnost zapnutá, systém použije finanční dimenze ze zdrojových transakcí v cílových transakcí. |
 | Kontrola dřívějšího zaúčtování | <p>Vyberte chování systému, pokud jsou nazaúčtované transakce rabatů zpracovávány vícekrát za stejné období:</p><ul><li>**Varování** - Systém umožňuje uživatelům přepsat původní řádky transakcí, ale zobrazí se varování.</li><li>**Chyba** - Systém zabraňuje uživatelům přepsat původní řádky transakcí a zobrazí se chybová zpráva. |
 | Automatické zaúčtování deníků | Vyberte, zda má systém automaticky zaúčtovat navrhované deníky. Mezi tyto deníky patří denní deníky, které se používají pro dodávky a odpočty zákazníků, a také deníky daňových faktur dodavatele. |
 | Automatické zaúčtování volných faktur | Vyberte, zda má systém automaticky zaúčtovat volné faktury. Tato možnost se vztahuje pouze na volné faktury, kde je nastaven typ platby *Odpočty zákazníků daňové faktury*. |
-| Odkaz na objednávku položky rabatu | Vyberte odkaz na rabat, který se má použít na prodejních a nákupních objednávkách, které jsou generovány z procesu rabatu (*Žádný*, *Nabídka odpočtu a rabatu*, *Číslo odpočtů a rabatů*, *Číslo transakce rabatu* nebo *Poznámky k dokumentu*). |
-| Použití procesu nároků | <p>Tuto možnost nastavte na *Ano*, chcete-li použít proces nároku. Tímto způsobem můžete označit transakce, které správa rabatu vytvoří, buď jako nárokované nebo nenárokované, a poté zaúčtovat pouze nárokované transakce.</p><p>Například vypočítáte rabaty za měsíční transakce, ale zákazník ponechal dva dny nenárokované. V tomto případě budou nneárokované transakce znovu vytvořeny při příštím spuštění funkce *Zpracovat* pro stejné období.</p><p>Pokud nastavíte tuto možnost na *Ne*, jsou zaúčtovány všechny transakce nároků.</p> |
+| Odkaz na objednávku položky rabatu | Vyberte odkaz na rabat, který se má použít na prodejních a nákupních objednávkách, které jsou generovány z procesu rabatu (*Žádný*, *Nabídka správy rabatu*, *Číslo správy rabatu*, *Číslo transakce rabatu* nebo *Poznámky k dokumentu*). |
+| Použití procesu nároků | <p>Tuto možnost nastavte na *Ano*, chcete-li použít proces nároku. Tímto způsobem můžete označit transakce, které správa rabatu vytvoří, buď jako nárokované nebo nenárokované, a poté zaúčtovat pouze nárokované transakce.</p><p>Například vypočítáte rabaty za měsíční transakce, ale zákazník ponechal dva dny nenárokované. V tomto případě budou nneárokované transakce znovu vytvořeny při příštím spuštění funkce *Zpracovat* pro příští období.</p><p>Pokud nastavíte tuto možnost na *Ne*, jsou zaúčtovány všechny transakce nároků.</p> |
 | Zahrnutí deníku typu objednávky | Pro nabídky nebo řádky nabídek, kde je nastaven typ transakce je *Objednávka*, tato volba určuje, zda má prodejní objednávka typu *Deník* být zahrnuta. Poskytuje flexibilitu, pokud se tyto typy objednávek používají ve scénářích, kdy by se ještě neměl uplatnit rabat. |
 
 ## <a name="number-sequences-tab"></a>Karta Číselné řady
@@ -50,8 +50,8 @@ Použijte kartu **Číselné řady** na stránce **Parametry správy rabatu** pr
 
 | Odkaz | popis |
 |---|---|
-| Nabídky rabatů a odpočtů | Číselná řada přiřadí každé nabídce rabatu jedinečnou hodnotu klíče. Tento klíč se používá při vytváření nabídek. |
-| Číslo rabatů a odpočtů | Číselná řada přiřadí každému rabatu jedinečnou hodnotu klíče. Tento klíč se používá k identifikaci vztahů rabatů. |
+| Nabídka správy rabatu | Číselná řada přiřadí každé nabídce rabatu jedinečnou hodnotu klíče. Tento klíč se používá při vytváření nabídek. |
+| Číslo správy rabatu | Číselná řada přiřadí každému rabatu jedinečnou hodnotu klíče. Tento klíč se používá k identifikaci vztahů rabatů. |
 | Číslo transakce rabatu | Číselná řada přiřadí každé transakci rabatu jedinečnou hodnotu klíče. Tento klíč se používá k identifikaci transakcí rabatů. |
 | Daňová faktura | Číselná řada přiřadí každé faktuře rabatu jedinečnou hodnotu klíče. Tento klíč se používá při automatickém zaúčtování deníků rabatů. |
 

@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814795"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270780"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Přepis výchozího principu rezervace pro materiály ve výrobě
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Funkce *Přepsat výchozí produkční rezervaci* umožňuje nastavit výchozí princip rezervace pro každou skupinu modelů položek. Proto lze pro každou položku, která je součástí vzorce kusovníku (BOM) nebo vzorce dávkové objednávky, automaticky použít různé zásady rezervace. Můžete si vybrat, zda má každá skupina modelů položek přepsat výchozí princip rezervace nastavený pro objednávku a jaký princip rezervace by měl být použit místo toho (*ruční*, *odhad*, *plánování*, *uvolnění* nebo *Start*).
 
@@ -37,7 +36,7 @@ Například pokud máte suroviny nebo přísady, které vyžadují výběr, kuso
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení výroby*
-- **Název funkce:** *(Preview) Přepsat výchozí produkční rezervaci*
+- **Název funkce:** *Přepsat výchozí produkční rezervaci*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Přiřazení zásady rezervace výroby ke skupině modelů zboží
 
