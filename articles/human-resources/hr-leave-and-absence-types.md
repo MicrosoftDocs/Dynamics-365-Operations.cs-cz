@@ -2,7 +2,7 @@
 title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056605"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271120"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
 
@@ -71,7 +71,7 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
    
  3. Nastavte **Typ převodu pracovního volna** pro typ volna. Pokud vyberete tuto možnost, veškeré zůstatky k převodu budou převedeny na zadaný typ volna. Do plánu volna a nepřítomnosti musí být rovněž zahrnut typ převodu volna. 
  
- 4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Můžete také nastavit datum účinnosti pravidla vypršení platnosti. Datum účinnosti se používá k určení, kdy se má spustit dávková úloha, která zpracovává vypršení platnosti volna, nebo datum, kdy se pravidlo projeví. K samotnému vypršení platnosti dojde vždy v den zahájení plánu pracovního volna, jakmile je dávková úloha nastavena na zpracování. Například datum zahájení plánu může být 1. 1. 2020, ale pravidlo bylo vytvořeno až 1. 6. 2020. Nastavením data účinnosti na 1. 6. 2020 bude pravidlo zpracováno na hranici příštího roku, tedy 1. 1. 2021. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené. 
+4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Datum účinnosti oravidla ukončení platnosti se používá k určení, kdy se má spustit dávková úloha, která zpracovává vypršení platnosti volna, nebo datum, kdy se pravidlo projeví. Samotné vypršení platnosti nastane vždy k datu zahájení období časového rozlišení. Například pokud je datem zahájení období časového rozlišení 3. srpna 2021 a pravidlo vypršení platnosti bylo nastaveno na 6 měsíců, bude pravidlo zpracováno na základě offsetu vypršení platnosti od data zahájení období časového rozlišení, takže by bylo provedeno 3. února 2022. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené.
  
 ## <a name="see-also"></a>Viz také
 
@@ -79,6 +79,7 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 - [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
 - [Přerušit pracovní volno](hr-leave-and-absence-suspend-leave.md)
+- [Vytvoření pracovního postupu žádosti o koupi a prodej pracovního volna](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

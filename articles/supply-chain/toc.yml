@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (květen 2021)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (duben 2021)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -603,6 +601,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Použití pracovního prostoru řízení pro mobilní aplikaci Finance and Operations
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globální účetnictví zásob
+          items:
+            - name: Domovská stránka globálního skladového účetnictví
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: Začínáme s globálním skladovým účetnictvím
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: Obchodní dokumenty podporované globálním skladovým účetnictvím
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: Povolení Power BI pro globální skladové účetnictví
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Konvence
+              href: global-inventory-accounting/conventions.md
+            - name: Hlavní kniha globálního skladového účetnictví
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Správa nákladů
           items:
             - name: Domovská stránka Správa nákladů
@@ -873,6 +885,12 @@
               items:
                 - name: Jazyk vzorce
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Podporované datové typy pro vzorce elektronického výkaznictví
+                  items:
+                    - name: Typy primitivních dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Typy složených dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funkce
                   items:
                     - name: Kontejner
@@ -1417,12 +1435,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Delegování vytvoření cíle elektronického výkaznictví do vlastního cílového objektu pro vytváření
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Implementace vlastního cílového umístění pro vygenerované dokumenty
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Řízení zásob
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Tolerance zpoždění (záporné dny)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Nákupní žádanky
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Plánování výroby
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Vyloučení produktů s určitými stavy životního cyklu produktu
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Metody doplnění a modifikace množství
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Ochranné doby disponibility
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Schválení plánovaných objednávek
@@ -3047,6 +3073,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Import příchozích ASN prostřednictvím datové entity V2
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
@@ -3215,6 +3243,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Definování procesu částečné cyklické inventury skladového místa
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Příkladové scénáře cyklické inventury
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: Úloha vyčištění položek zásob na skladě v řízení skladu
                       href: warehousing/onhand-cleanup.md
                     - name: Skladové deníky
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: Řešení potíží s prací skladu
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: Aplikace skladu
+              items:
+                - name: 'Instalace, nastavení a použití mobilních zařízení'
+                  items:
+                    - name: Co je nového a co se změnilo v mobilní aplikaci Warehouse Management
+                      href: warehousing/whats-new-wma.md
+                    - name: Instalace a připojení mobilní aplikace Warehouse Management
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Instalace a připojení aplikace skladu
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Skenování čárových kódů pomocí fotoaparátu v mobilní aplikaci Warehouse Management
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Odstraňování problémů s připojením k mobilní aplikaci Warehouse Management
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Nastavení polí a nabídek pro mobilní zařízení
+                  items:
+                    - name: Konfigurace polí pro mobilní aplikaci Warehouse Management
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Nastavení mobilních zařízení pro práci ve skladu
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Nastavení položky nabídky mobilního zařízení pro poskytnutí přehledu řádku výdeje
+                      href: warehousing/pick-line-overview.md
+                    - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Přijetí smíšené registrační značky na mobilním zařízení
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Vyskladnění nejstarší dávky na mobilním zařízení
+                      href: warehousing/pick-oldest-batch.md
+                - name: Uživatelská nastavení mobilního zařízení
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Zpracování události aplikace skladu
+                  href: warehousing/warehouse-app-events.md
+                - name: Přizpůsobení aplikace skladu
+                  items:
+                    - name: Architektura průvodce procesem
+                      href: warehousing/process-guide-framework.md
+                    - name: "Přiřazení ikon a\_názvů kroků"
+                      href: warehousing/step-icons-titles.md
             - name: Nastavení skladu
               items:
                 - name: Konfigurace skladu
@@ -3277,8 +3353,12 @@
                           href: warehousing/wave-execution-notifications.md
                         - name: Tisk štítků vlny
                           href: warehousing/configure-wave-label-printing.md
+                        - name: Plánování tisku štítků vlny během vlny
+                          href: warehousing/configure-task-based-wave-label-printing.md
                         - name: Vytváření kontejnerů
                           href: warehousing/wave-containerization.md
+                        - name: Strategie balení kontejnerů
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Automatická aktualizace dodávek
                       href: warehousing/auto-update-shipment.md
                     - name: Vytvoření profilu skladového místa
@@ -3309,44 +3389,6 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Řešení potíží s konfigurací skladu
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Instalace a konfigurace mobilní aplikace Řízení skladu
-                  items:
-                    - name: Instalace a připojení mobilní aplikace Řízení skladu
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Uživatelská nastavení mobilního zařízení
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: Instalace a připojení aplikace skladu
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Skenování čárových kódů pomocí fotoaparátu v mobilní aplikaci Řízení skladu
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurace polí pro mobilní aplikaci Warehouse Management
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Nastavení mobilních zařízení pro práci ve skladu
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: "Přiřazení ikon a\_názvů kroků"
-                      href: warehousing/step-icons-titles.md
-                    - name: Zpracování události aplikace skladu
-                      href: warehousing/warehouse-app-events.md
-                    - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Nastavení položky nabídky mobilního zařízení pro poskytnutí přehledu řádku výdeje
-                      href: warehousing/pick-line-overview.md
-                    - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Přijetí smíšené registrační značky na mobilním zařízení
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Vyskladnění nejstarší dávky na mobilním zařízení
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Architektura průvodce procesem
-                      href: warehousing/process-guide-framework.md
-                    - name: Odstraňování problémů s připojením k mobilní aplikaci Řízení skladu
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: "Upgrade a\_migrace"
                   items:
                     - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
@@ -3393,6 +3435,22 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Hlavní plánování
               items:
+                - name: Při spuštění integrovaného modulu hlavního plánování se zobrazí chyba
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: Položka nemůže mít kusovník ani recepturu
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Parametry hlavního plánu neexistují
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: Plánovaná výrobní zakázka musí být před potvrzením naplánována
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: Produkt je blokován pro transakce
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: Vybrané číslo receptury není pro dávkovou objednávku schváleno.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: Kód prodejce není autorizován pro konkrétní produkt a datum
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: Při potvrzení plánovaných objednávek není určen dodavatel
+                  href: troubleshooting/planning/vendor-not-specified.md
                 - name: "Přímo odvozené potvrzené objednávky jsou zpracovávány v\_rámci pracovního postupu kontroly"
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Položky hlavního plánování nemůžete filtrovat podle hodnot souvisejících skupin pokrytí
@@ -3451,6 +3509,20 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Řízení skladu
               items:
+                - name: Zrušené příjemky produktu neaktualizují stav transakcí na registrované
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: Desetinné zaokrouhlení fyzického aktualizovaného je nesprávné
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: Fyzický zůstatek v jednotce nesmí být roven nule
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: Vybrané množství není během generování dodacího listu dostatečné
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: Množství překračuje procento nadměrné dodávky během generování dodacího listu
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: 'Množství, které se pokoušíte aktualizovat, přesahuje přijaté/doručené množství'
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: Množství překračuje procento nedostatečné dodávky během generování dodacího listu
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: "Při výběru umístění během registrace výdejky dochází k\_chybě"
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: "Stanice balení nezobrazuje poznámky k\_produktu"

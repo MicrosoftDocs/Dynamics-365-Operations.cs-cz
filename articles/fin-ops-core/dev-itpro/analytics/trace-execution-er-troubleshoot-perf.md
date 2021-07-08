@@ -2,7 +2,7 @@
 title: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
 description: Toto téma obsahuje informace o způsobu použití funkce sledování výkonu v elektronickém výkaznictví pro řešení potíží s výkonem.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944646"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295566"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -119,12 +119,27 @@ Odpovídající verze konfigurací datových modelů a mapování modelů jsou a
 2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
 3. V dialogovém okně **Parametry uživatelů** v části **Sledování provádění** postupujte takto:
 
-    1. V poli **Formát sledování provádění** zvolte **Ladit formát sledování** pro spuštění shromažďování podrobností o provádění formátu elektronického výkaznictví. Je-li vybrána tato hodnota, sledování výkonu bude shromažďovat informace o době strávené na následujících akcích:
+    1. V poli **Formát sledování provádění** upřesněte formát generovaného sledování výkonu, ve kterém by měly být uloženy podrobnosti o provádění pro formát elektronického výkaznictví a prvky mapování:
 
-        - Spuštění každého zdroje dat v mapování modelu, které je voláno za účelem získání dat
-        - Zpracování jednotlivých položek formátu za účelem zadání dat ve výstupu, který je generován
+        - **Ladit formát sledování** - Tuto hodnotu vyberte, pokud plánujete interaktivně spustit formát ER, který má krátkou dobu provedení. Poté se zahájí shromažďování podrobností o provádění formátu ER. Je-li vybrána tato hodnota, sledování výkonu shromažďuje informace o době strávené na následujících akcích:
 
-        Pole **Formát sledování provádění** použijte k upřesnění formátu generovaného sledování výkonu, ve kterém jsou uloženy podrobnosti o provádění pro formát elektronického výkaznictví a prvky mapování. Volbou možnosti **adit formát sledování** budete moci analyzovat obsah sledování v návrháři operací elektronického výkaznictví a zobrazit formát elektronického výkaznictví nebo prvky mapování, které jsou uvedeny ve sledování.
+            - Spuštění každého zdroje dat v mapování modelu, které je voláno za účelem získání dat
+            - Zpracování jednotlivých položek formátu za účelem zadání dat ve výstupu, který je generován
+
+            Pokud vyberete hodnotu **Ladit formát sledování**, můžete analyzovat obsah trasování v návrháři provozu ER. Zde si můžete prohlédnout formát ER nebo mapovací prvky, které jsou uvedeny v trasování.
+
+        - **Agregovaný formát sledování** - Tuto hodnotu vyberte, pokud plánujete pustit formát ER, který má dlouhou dobu provedení v dávkovém režimu. Poté se zahájí shromažďování agregovaných podrobností o provádění formátu ER. Je-li vybrána tato hodnota, sledování výkonu shromažďuje informace o době strávené na následujících akcích:
+
+            - Spuštění každého zdroje dat v mapování modelu, které je voláno za účelem získání dat
+            - Spuštění každého zdroje dat v mapování formátu, které je voláno za účelem získání dat
+            - Zpracování jednotlivých položek formátu za účelem zadání dat ve výstupu, který je generován
+
+            Hodnota **Agregovaný formát trasování** je k dispozici v Microsoft Dynamics 365 Finance verze 10.0.20 a novější.
+
+            V návrháři formátu ER a návrháři mapování modelů ER můžete zobrazit celkovou dobu provedení pro jednu komponentu. Trasování dále obsahuje podrobnosti o spuštění, například počet spuštění a minimální a maximální čas jednoho provedení.
+
+            > [!NOTE]
+            > Toto trasování je shromažďováno na základě cesty trasovaných komponent. Statistiky proto mohou být nesprávné, pokud jedna nadřazená komponenta obsahuje několik nepojmenovaných podřízených komponent nebo když má několik podřízených komponent stejný název.
 
     2. Chcete-li shromažďovat konkrétní podrobnosti o provádění mapování modelu elektronického výkaznictví a součástech formátu elektronického výkaznictví, nastavte následující možnosti na hodnotu **Ano**:
 

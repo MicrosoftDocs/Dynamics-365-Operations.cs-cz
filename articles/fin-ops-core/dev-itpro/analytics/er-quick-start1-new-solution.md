@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224027"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304386"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Navrhněte nové řešení ER pro tisk vlastní sestavy
 
@@ -185,7 +185,7 @@ Dokončením kroků v části [Importujte novou konfiguraci datového modelu](#I
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Import nové konfigurace datového modelu
 
-1. Stáhněte si soubor [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
@@ -300,7 +300,7 @@ Dokončením kroků v [Importujte novou konfiguraci mapování](#ImportModelMapp
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Import nové konfigurace mapového modelu
 
-1. Stáhněte si soubor [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
@@ -366,7 +366,7 @@ Pro přístup k aplikačním tabulkám, které obsahují podrobnosti dotazníku,
     2. Vyberte **přidat**.
     3. V dialogovém okně do pole **Název** zadejte **\$ResultGroup**.
     4. Vyberte možnost **Upravit vzorec**.
-    5. V [Editoru vzorců ER](general-electronic-reporting-formula-designer.md), v poli **Vzorec**, zadejte **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** k použití vzájemných vztahů mezi tabulkami KMCollection a KMQQuestionesultGroup typu [cesta](er-formula-language.md#paths).
+    5. V [Editoru vzorců ER](general-electronic-reporting-formula-designer.md), v poli **Vzorec**, zadejte **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** k použití vzájemných vztahů mezi tabulkami KMCollection a KMQQuestionesultGroup typu [cesta](er-formula-language.md#Paths).
     6. Zvolte **Uložit** a pak zavřete editor vzorců.
     7. Vyberte **OK** pro přidání nového počítaného pole.
 
@@ -547,7 +547,7 @@ Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verz
 
 Architektura elektronického výkaznictví používá předdefinované šablony ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word). Při generování požadované sestavy je šablona podle požadovaných datových toků vyplněna požadovanými daty. Proto musíte nejprve vytvořit šablonu pro vlastní sestavu. Tato šablona musí být navržena jako sešit aplikace Excel, jehož struktura představuje rozložení vlastní sestavy. Musíte pojmenovat každou položku aplikace Excel, kterou chcete vyplnit požadovanými údaji.
 
-1. Stáhněte si soubor [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) a uložte jej do místního počítače.
 2. Otevřete soubor v aplikaci Excel a zkontrolujte strukturu sešitu.
 
 Jak ukazuje následující obrázek, stažená šablona byla navržena pro tisk specifických dotazníků, které představují otázky v dotazníku, spolu s příslušnými odpověďmi.
@@ -572,7 +572,7 @@ Dokončením kroků v části [Import navrženého formátu konfigurace](#Format
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Import navrženého formátu konfigurace
 
-1. Stáhněte si soubor [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.

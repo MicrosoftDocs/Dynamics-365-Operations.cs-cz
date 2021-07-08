@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6f78441445baecba279f96eb3935d9ebbb4ff03f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 442a5f5b321833c170cfecc4069e62a1254605cd
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021877"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270473"
 ---
 # <a name="predefined-product-variants"></a>Předdefinované varianty produktů
 
@@ -76,8 +76,6 @@ Vytvoření variant produktů:
 1. Zvolte **Uložit**.
 
 ## <a name="improved-variant-suggestions"></a>Vylepšené návrhy variant
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Funkce *Vylepšení stránky s návrhy variant* vylepšuje stránku **Návrhy variant** věnovanou problémům s výkonem a použitelností pro společnosti, které mají vysoký počet kombinací dimenzí produktů. Vylepšený proces výběru hodnot dimenzí produktu, pro které se generují návrhy variant, umožňuje rychlejší a snazší identifikaci a vydání příslušné sady variant produktu.
 

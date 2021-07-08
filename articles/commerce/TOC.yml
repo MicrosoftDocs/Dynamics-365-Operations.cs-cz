@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (květen 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Commerce 10.0.17 (duben 2021)
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Požadavky na verzování komponent Dynamics 365 Commerce
                   href: arch-component-versioning.md
-                - name: Bezobslužná architektura obchodního modulu
+                - name: Bezobslužná architektura obchodu
                   href: dev-itpro/retail-server-architecture.md
                 - name: Výběr topologie v obchodu
                   href: dev-itpro/retail-in-store-topology.md
@@ -1248,6 +1246,16 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: Nastavení a nasazení lokalizace aplikace Commerce pro Brazílii
                   href: localizations/latam-bra-deployment.md
+                - name: Funkce fiskálních dokumentů NFC-e v Commerce POS pro Brazílii
+                  href: localizations/latam-bra-nfce.md
+                - name: Správa informací o zákazníkovi v POS pro Brazílii
+                  href: localizations/latam-bra-customer-information.md
+                - name: Zrušení a vrácení dokumentů NFC-e v Commerce POS pro Brazílii
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: Odložená registrace dokumentů NFC-e vydaných v pohotovostním režimu offline
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Zaúčtování brazilských fiskálních dokumentů prostřednictvím maloobchodních výpisů v Commerce Headquarters
+                  href: localizations/latam-bra-retail-statements.md
             - name: Východní Evropa
               items:
                 - name: Společné
@@ -1458,6 +1466,12 @@
               items:
                 - name: Jazyk vzorce
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: Podporované datové typy pro vzorce elektronického výkaznictví
+                  items:
+                    - name: Typy primitivních dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: Typy složených dat
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Funkce
                   items:
                     - name: Kontejner
@@ -2002,12 +2016,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Delegování vytvoření cíle elektronického výkaznictví do vlastního cílového objektu pro vytváření
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementace vlastního cílového umístění pro vygenerované dokumenty
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Mobilní aplikace Finance and Operations (Dynamics 365)

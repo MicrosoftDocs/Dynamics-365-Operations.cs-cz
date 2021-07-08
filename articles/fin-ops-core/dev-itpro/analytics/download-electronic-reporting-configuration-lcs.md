@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 418586113c038c3227f0704495a561eac319bdc9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745080"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271176"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
 Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronického výkaznictví](general-electronic-reporting.md#Configuration) z [knihovny sdíleného majetku](../lifecycle-services/asset-library.md) v Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Používání služby LCS jako úložiště pro konfigurace elektronického výkaznictví (ER) je označeno jako [zastaralé](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Další informace viz [Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services (LCS)](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Přihlaste se k aplikaci použitím některé z následující role:
 

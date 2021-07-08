@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941189"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306382"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -124,7 +124,7 @@ Dimenze produktu jsou vlastnosti, které identifikují variantu produktu. K defi
 
 Pokud má produkt jiné dimenze produktu (například velikost a barvu základního produktu jako dimenze produktu), je každý jedinečný produkt (tj. každá varianta produktu) definován jako kombinace těchto dimenzí produktů. Například číslo produktu B0001 je velmi malé černé triko a číslo produktu B0002 je malé černé triko. V tomto případě jsou definovány existující kombinace dimenzí produktů. Například tričko z předchozího příkladu může být velmi malé a černé, malé a černé, střední a černé nebo velké a černé, ale nemůže být navíc velmi velké a černé. Jinými slovy se specifikují dimenze produktu, které může základní produkt, a varianty mohou být uvolněny na základě těchto hodnot.
 
-Chcete-li sledovat dimenze produktu, které může mít základní produkt, budou vytvořeny a mapovány následující tabulky v Dataverse pro každou dimenzi produktu. Další informace najdete ve člunku [Přehled informací o produktu](../../../supply-chain/pim/product-information.md).
+Chcete-li sledovat dimenze produktu, které může mít základní produkt, budou vytvořeny a mapovány následující tabulky v Dataverse pro každou dimenzi produktu. Další informace viz [Přehled informací o produktech](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

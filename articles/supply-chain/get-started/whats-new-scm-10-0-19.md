@@ -1,5 +1,5 @@
 ---
-title: Náhled Dynamics 365 Supply Chain Management 10.0.19 (červen 2021)
+title: Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114968"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271442"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.19 (červen 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.19. Tato verze má číslo sestavení 10.0.837 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.19. Tato verze má číslo sestavení 10.0.837 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** duben 2021
 - **Obecně dostupné vydání (vlastní aktualizace):** červen 2021
@@ -32,7 +31,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci.
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 | Oblast funkce | Funkce | Další informace |
 |---|---|---|

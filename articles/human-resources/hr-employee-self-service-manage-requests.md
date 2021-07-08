@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a2db97cfd5aa6210002bf3e6abb1d7a178623c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: a2bcd7a1ce68dfd6c4c93d10561d58a42d30f611
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057351"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303237"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Správa žádostí o pracovní volno a absenci
 
@@ -34,11 +34,9 @@ Spravujte požadavky na volno v pracovním prostoru **Samoobsluha zaměstnance**
 
 3. Podle potřeby zobrazte a schvalte požadavky členů týmu.
 
-## <a name="preview-leave-request-workflow-experience-enhancements"></a>(Preview) Vylepšení prostředí pracovního postupu žádosti o pracovní volno
+## <a name="leave-request-workflow-experience-enhancements"></a>Vylepšení prostředí pracovního postupu žádosti o pracovní volno
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Tato funkce Preview poskytuje následující vylepšení:
+Tato funkce poskytuje následující vylepšení:
 
 - Můžete vybrat více žádostí o dovolenou a u všech provést stejnou akci.
 - Pás karet v horní části a nové tlačítko pracovního postupu na stránce zobrazují akce, které můžete provést při žádostech o dovolenou.

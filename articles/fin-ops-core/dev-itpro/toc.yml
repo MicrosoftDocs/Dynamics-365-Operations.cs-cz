@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Aktualizace Platform Update pro verzi 10.0.18 (květen 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Aktualizace Platform Update pro verzi 10.0.17 (duben 2021)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -278,6 +276,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Zpřístupnění úložiště entit jako Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: Změna dat v Azure Data Lake
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Operace přesunu databáze
           items:
             - name: Přehled

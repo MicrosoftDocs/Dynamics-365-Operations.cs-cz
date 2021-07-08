@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020452"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271046"
 ---
 # <a name="rebate-management-module-overview"></a>Přehled modulu správy rabatu
 
@@ -70,7 +70,7 @@ Rabaty lze konfigurovat na základě mnoha různých parametrů. Mohou být nap�
 
 Výsledky výpočtu rabatu lze snížit také o jiné rabaty, v závislosti na tom, zda je rabat nastaven tak, aby se počítal na základě čisté částky.
 
-Na straně dodavatele mohou rabaty vypočítat cenu na základě pravidla FIFO, nejnovější nákupní ceny, průměrné nákupní ceny nebo prodejní ceny.
+Na straně dodavatele mohou rabaty, které jsou založené na prodejních objednávkách, vypočítat cenu na základě pravidla FIFO, nejnovější nákupní ceny, průměrné nákupní ceny nebo prodejní ceny.
 
 ## <a name="rebate-target-transactions"></a>Cílové transakce rabatu
 
@@ -84,11 +84,12 @@ Výstupy položek vytvářejí bezplatnou prodejní objednávku položky pro rab
 
 Kombinace přidružených nabídek, četnost výpočtů, základ výpočtu a vybraná metoda výpočtu určuje přesnost výpočtů rabatů. K časovému rozlišení zaúčtovaných a nárokovaných hodnot lze použít dodávky rabatů.
 
-Dodávky lze spravovat denně nebo měsíčně. Funkce však může přidělit či vyplatit rabat, nebo obdržet jeho platbu v libovolné definované frekvenci. Uživatelé mohou kdykoli během vyplacení snadno upravit plán nebo částky plateb.
+Zřizování lze spravovat denně, týdně, měsíčně nebo podle vlastního období. Funkce však může alokovat nebo vyplatit slevu nebo obdržet její platbu v jakékoli definované frekvenci, která je stejně dlouhá nebo delší než frekvence poskytování. Odpis používá stejnou frekvenci jako rabat. Uživatelé mohou kdykoli během vyplacení snadno upravit plán nebo částky plateb.
 
-Uživatelé již nemusí řešit nabídky nebo dodávky ve dvou krocích. Dodávky a odpisy se zaúčtují přímo do hlavní knihy. Navíc lze automaticky vytvářet dobropisy. Existuje tedy úplná integrace se závazky a pohledávkami. Během zpracování výpočty zohledňují slevy na vyrovnání, zaplacené faktury, obchodní slevy a stávající dobropisy, aby bylo zajištěno přesné vypočítání částek a hodnot.
+Uživatelé již nemusí řešit nabídky nebo dodávky ve dvou krocích. Dodávky a odpisy se zaúčtují přímo do hlavní knihy. Navíc lze automaticky vytvářet dobropisy. Existuje tedy úplná integrace se závazky a pohledávkami. Během zpracování výpočty mohou zohlednit slevy na vyrovnání, zaplacené faktury, obchodní slevy a stávající dobropisy, aby bylo zajištěno přesné vypočítání částek a hodnot.
 
-Když se vypočítají rabaty, proces vytvoří transakce, které lze zkontrolovat, než dojde k zaúčtování. Poté lze vytvořit deník, dobropis nebo debetní transakci. Samostatný proces zaúčtuje transakce rabatů a odpočtů. Pro zajištění souladu, účinnosti a transparentnosti lze získat výkazy a výpisy transakcí.
+Když se vypočítají rabaty, proces vytvoří transakce, které lze zkontrolovat, než dojde k zaúčtování. Samostatný proces zaúčtuje transakce správy rabatů. Deník, dobropis nebo debetní transakci lze poté vytvořit během zaúčtování do navrhovaných transakcí. Pro zajištění souladu, účinnosti a transparentnosti lze získat výkazy a výpisy transakcí.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Zaručené platby autorských poplatků
 

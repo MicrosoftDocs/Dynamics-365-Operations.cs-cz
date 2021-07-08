@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821242"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270652"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
 
@@ -79,16 +79,14 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Zásobo
 
 ## <a name="saved-views-for-the-production-control-module"></a>Uložená zobrazení pro modul řízení výroby
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízení výroby.
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
-| Stránka podrobností výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
-| Stránka výdejky výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
-| Stránka výdejky výrobních příkazů | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | (Preview) Uložená zobrazení pro řízení výroby |
+| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
+| Stránka podrobností výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
+| Stránka výdejky výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
+| Stránka výdejky výrobních příkazů | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Uložená zobrazení pro modul Prodej a marketing
 

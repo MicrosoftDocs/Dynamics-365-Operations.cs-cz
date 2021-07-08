@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216736"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270998"
 ---
 # <a name="rebate-management-posting-setup"></a>Nastavení zaúčtování správy rabatu
 
@@ -40,8 +40,8 @@ Následující tabulka Popisuje nastavení, která jsou k dispozici v části z�
 | Pole | Popis |
 |---|---|
 | Účetní profil | Zadejte jedinečný název profilu. |
-| Popis | Zadejte Popis profilu. |
-| Modul | Vyberte typ rabatů a autorských poplatků, s nimiž je profil spojen (*Zákazník* nebo *Dodavatel*). |
+| popis | Zadejte Popis profilu. |
+| Modul | Vyberte modul, s nímž jsou rabaty a autorské poplatky profilu spojeny (*Zákazník* nebo *Dodavatel*). |
 | Typ | Vyberte typ profilu (*Rabat* nebo *Autorský poplatek*). |
 | Typ platby | <p>Toto pole určuje formát zaúčtovaného výstupu rabatu.<p><p>Když je pole **Typ** nastaveno na *Rabat*, jsou k dispozici následující hodnoty:</p><ul><li>*Platba pomocí závazků* - Když zaúčtujete zákaznický rabat, vytvoří se faktura dodavatele pro dodavatele úhrady, která je nastavena na zákazníka rabatu. Když zaúčtujete rabat dodavatele, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li><li>*Odpočty zákazníků* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Odpočty zákazníka daňové faktury* - Když zaúčtujete rabat, vytvoří se volná faktura pro zákazníka rabatu.</li><li>*Obchodní výdaje* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se deník odpočtu zákazníka pro zákazníka rabatu.</li></ul><p>Když je pole **Typ** nastaveno na *Autorský poplatek*, jsou k dispozici následující hodnoty:</p><ul><li>*Platba pomocí závazků* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li><li>*Vykazování* - Když zaúčtujete rabat, vytvoří se faktura dodavatele pro účet dodavatele rabatu.</li></ul><p>Další informace naleznete v následující části [Typy plateb](#payment-types). |
 | Společnost | Zvolte společnost (právnickou osobu), pro kterou budou časově rozlišeny dodávky a kterou budou zaplaceny nároky. |
@@ -66,23 +66,23 @@ Následující tabulka shrnuje, jak různá nastavení pole **Typ platby** ovliv
 > Při nastavování [nabídek správy rabatu](rebate-management-deals.md) zvažte následující body:
 >
 > - Pro nabídky, kde je pole **Odsouhlasit podle** je nastaveno na *Nabídka*, nemůžete během zaúčtování použít dynamický účet nabídky. Musíte použít určený účet zákazníka nebo dodavatele.
-> - Pro nabídky, kde je pole **Odsouhlasit podle** nastaveno na *Řádek*, můžete použít účetní profil, který kompenzuje dynamický účet nabídky na řádku nabídky, protože zákazník je nastaven podle řádku nabídky.
+> - Pro nabídky, kde je pole **Odsouhlasit podle** nastaveno na *Řádek*, můžete použít účetní profil, který kompenzuje dynamický účet nabídky na řádku nabídky, protože zákazník nebo dodavatel je nastaven podle řádku nabídky.
 
 ## <a name="posting-fasttab"></a>Záložka s náhledem Účtování
 
 Následující tabulka popisuje pole, která jsou k dispozici na záložce s náhledem **Účtování** každého účetního profilu správy rabatů.
 
-| Pole | Popis |
+| Pole | popis |
 |---|---|
-| Typ strany Dal | Vyberte, zda chcete připsat kredit na účet hlavní knihy nebo na zákazníka či dodavatele. |
-| Dal účet | Účet, na který jsou zaúčtovány částky kreditu, při vytvoření dodávek rabatu. Tento účet bude také použit jako debetní účet, když je rabat zaúčtován pro kredit zákazníka. |
+| Typ strany Dal | Vyberte, zda chcete připsat kredit na účet hlavní knihy nebo zákazníka. Pokud je pole **Typ platby** v záhlaví nastaveno na *Odpočty zákazníků daňové faktury*, toto pole je nastaveno na *Účet hlavní knihy*. U rabatu dodavatele je toto pole nastaveno na *Účet hlavní knihy*. |
+| Dal účet | Vyberte účet, na který jsou zaúčtovány částky kreditu, při vytvoření dodávek rabatu. Tento účet bude také použit jako protiúčet, když je rabat zaúčtován pro kreditování zákazníka nebo debetování dodavatele. |
 | Název deníku<br>(V části **Dodávka**) | Vyberte název deníku, který se má použít k zaznamenání zaúčtované dodávky. |
 | Typ | Vyberte, zda chcete zaúčtovat rabat na účet hlavní knihy nebo na zákazníka či dodavatele. Pokud je pole **Typ platby** v záhlaví nastaveno na *Odpočty zákazníků daňové faktury*, toto pole je nastaveno na *Zákazník/dodavatel*. |
-| Použití zdroje účtu | <p>Vyberte jednu z následujících hodnot:</p><ul><li>*Žádný* - Pokud vyberete tuto hodnotu, musíte zadat účet v poli **Účet rabatu**.</li><li>*Účet nabídky* - Použijte účet zákazníka nebo dodavatele uvedený na řádku rabatu. Tuto hodnotu můžete vybrat pouze u nabídek, kde je pole **Odsouhlasit podle** nastaveno na *Řádek* a řádky nabídky, kde je pole **Kód účtu** nastaveno na *Tabulka*. To se nevztahuje na účetní profily autroských poplatků zákazníků.</li></ul> |
+| Použití zdroje účtu | <p>Vyberte jednu z následujících hodnot:</p><ul><li>*Pevný účet* - Pokud vyberete tuto hodnotu, musíte zadat účet v poli **Účet rabatu**.</li><li>*Účet řádku nabídky* - Použijte účet zákazníka nebo dodavatele uvedený na řádku rabatu. Tuto hodnotu můžete vybrat pouze u nabídek, kde je pole **Odsouhlasit podle** nastaveno na *Řádek* a řádky nabídky, kde je pole **Kód účtu** nastaveno na *Tabulka*. To se nevztahuje na profily účtování licenčních poplatků zákazníků nebo rabaty dodavatelů, které jsou založeny na prodejních objednávkách.</li></ul> |
 | Účet rabatu | Účet, na který budou skutečné náklady rabatu zaúčtovány. |
-| Název deníku<br>(V sekce **Správa rabatu**) | Vyberte název deníku, který se má použít k zaúčtování dobropisu pro částku rabatu zákazníkovi. Toto pole není k dispozici, pokud je pole **Typ platby** v záhlaví nastaveno na *Odpočty zákazníků daňové faktury*. |
+| Název deníku<br>(Ve skupině polí **Správy rabatu**) | Vyberte název deníku, který se má použít k zaúčtování dobropisu pro částku rabatu zákazníkovi nebo dodavateli. Toto pole není k dispozici, pokud je pole **Typ platby** v záhlaví nastaveno na *Odpočty zákazníků daňové faktury*. U rabatů pro zákazníky budou k dispozici názvy žurnálů typu *Deník*. U licenčních poplatků zákazníků a slev prodejců budou k dispozici názvy žurnálů typu *Záznam faktury dodavatele*. |
 | Skupina DPH zboží | Uveďte, zda je rabat zdanitelný. |
-| Název deníku<br>(V sekci **Odpis**) | Pokud se zaúčtovaný rabat nerovná dodávce, může být rozdíl odepsán. Vyberte název deníku, který se má použít k zaznamenání zaúčtovaného odpisu. |
+| Název deníku<br>(Ve skupině polí **Odpis**) | Pokud se zaúčtovaný rabat nerovná dodávce, může být rozdíl odepsán. Vyberte název deníku, který se má použít k zaznamenání zaúčtovaného odpisu. |
 
 ## <a name="posting-by-company-fasttab"></a>Záložka s náhledem Zaúčtování podle společnosti
 
@@ -92,6 +92,6 @@ Tlačítka na panelu nástrojů používejte k přidání společností do mří
 
 Vyberte řádek pro každou společnost a poté pomocí polí pod mřížkou zadejte následující informace:
 
-- **Typ debetu** – Vyberte, zda chcete připsat debet na účet hlavní knihy nebo na zákazníka či dodavatele.
+- **Typ debetu** – Vyberte, zda chcete debovat účet hlavní knihy nebo dodavatele. U rabatu zákazníků a autorských poplatků je toto pole nastaveno na *Účet hlavní knihy*.
 - **Účet debetu** - Zadejte účet, na který je zaúčtována částka debetu, když jsou vytvořeny dodávky.
 - **Hlavní účet** - Vyberte hlavní účet pro odpisy.

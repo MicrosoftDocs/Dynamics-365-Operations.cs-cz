@@ -1,8 +1,8 @@
 ---
 title: Zřízení Human Resources
-description: Tento článek vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
+description: Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193717"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248814"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -28,9 +28,15 @@ ms.locfileid: "6193717"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tento článek vás povede procesem zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. Tento článek předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto článku, kontaktujte podporu.
+Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Human Resources. Toto téma předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto článku, kontaktujte podporu.
 
 Pro začátek se musí globální správce přihlásit do služby [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) a vytvořit nový projekt aplikace Human Resources. Pokud vám v pořízení aplikace Human Resources nebrání problémy s licencí, není zapotřebí pomoc od zástupce služby Support or Dynamics Service Engineering (DSE).
+
+## <a name="provision-a-human-resources-trial-environment"></a>Zřídit zkušební prostředí Human Resources
+
+Před zřízením prvního sandboxu nebo produkčního prostředí můžete zřídit [Zkušební prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) k ověření funkčnosti Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. 
+
+Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 60denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 ## <a name="plan-human-resources-environments"></a>Plánování prostředí Human Resources
 
@@ -94,8 +100,6 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
 
     > [!NOTE]
     > Pokud ještě nesplňujete všechny konečné předpoklady, můžete v projektu nasadit zkušební instanci aplikace Human Resources. Poté můžete tuto instanci použít k vyzkoušení vašeho řešení, dokud všechny předpoklady nesplníte. Pokud použijete nové prostředí pro testování, musíte stejným způsobem opakovat tento postup k vytvoření produkčního prostředí.
-
-    > Můžete zvážit využití [zkušebního prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) zdarma na 60 dní. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 ## <a name="select-a-power-apps-environment"></a>Výběr prostředí Power Apps
 

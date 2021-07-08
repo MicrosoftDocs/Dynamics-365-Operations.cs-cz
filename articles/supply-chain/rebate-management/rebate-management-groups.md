@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020476"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271070"
 ---
 # <a name="rebate-management-groups"></a>Skupiny správy rabatu
 
 [!include [banner](../includes/banner.md)]
 
-Výpočty rabatů a odpočtů mohou být řízeny skupinami. Pro zákazníky, dodavatele a položky lze vytvořit skupiny správy rabatů. Mohou být připojeny k hlavnímu záznamu.
+Výpočty správy rabatů mohou být řízeny skupinami. Pro zákazníky, dodavatele a položky lze vytvořit skupiny správy rabatů. Mohou být připojeny k hlavnímu záznamu.
 
 ## <a name="rebate-management-customer-groups"></a>Skupiny zákazníka správy rabatu
 
@@ -52,7 +52,6 @@ Chcete-li zobrazit, přidat nebo odebrat zákazníky pro vybranou skupinu, postu
 1. Chcete-li do skupiny přidat nového zákazníka, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Účet zákazníka** - Vyberte ID účtu zákazníka.
-    - **Název** - Zadejte název anebo popis zákazníka.
 
 1. Chcete-li odebrat zákazníka ze skupiny, vyberte zákazníka a poté vyberte **Odstranit** v podokně akcí.
 
@@ -64,7 +63,6 @@ Chcete-li zobrazit, přidat nebo odebrat přiřazení ke skupině pro vybraného
 1. Chcete-li do nové skupiny přidat zákazníka, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Skupina správy rabatů** - Vyberte skupinu, do které chcete přidat zákazníka.
-    - **Popis** - Zadejte popis skupiny (například pro vysvětlení, proč je zákazník jejím členem).
 
 1. Chcete-li odebrat zákazníka ze skupiny, vyberte skupinu a poté vyberte **Odstranit** v podokně akcí.
 
@@ -91,7 +89,6 @@ Chcete-li zobrazit, přidat nebo odebrat dodavatele pro vybranou skupinu, postup
 1. Chcete-li do skupiny přidat nového dodavatele, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Účet dodavatele** - Vyberte ID účtu dodavatele.
-    - **Název** - Zadejte název anebo popis dodavatele.
 
 1. Chcete-li odebrat dodavatele ze skupiny, vyberte dodavatele a poté vyberte **Odstranit** v podokně akcí.
 
@@ -103,7 +100,6 @@ Chcete-li zobrazit, přidat nebo odebrat přiřazení ke skupině pro vybraného
 1. Chcete-li do nové skupiny přidat dodavatele, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Skupina správy rabatů** - Vyberte skupinu, do které chcete přidat dodavatele.
-    - **Popis** - Zadejte popis skupiny (například pro vysvětlení, proč je dodavatel jejím členem).
 
 1. Chcete-li odebrat dodavatele ze skupiny, vyberte skupinu a poté vyberte **Odstranit** v podokně akcí.
 
@@ -130,7 +126,6 @@ Chcete-li zobrazit, přidat nebo odebrat položky pro vybranou skupinu, postupuj
 1. Chcete-li do skupiny přidat novou položku, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Účet položky** - Vyberte ID účtu položky.
-    - **Název produktu** - Zadejte název anebo popis položky.
 
 1. Chcete-li odebrat položku ze skupiny, vyberte položku a poté vyberte **Odstranit** v podokně akcí.
 
@@ -142,7 +137,6 @@ Chcete-li zobrazit, přidat nebo odebrat přiřazení ke skupině pro vybranéou
 1. Chcete-li do nové skupiny přidat položku, vyberte **Nový** v podokně akcí a přidejte řádek do mřížky. Poté pro nový řádek nastavte následující pole:
 
     - **Skupina správy rabatů** - Vyberte skupinu, do které chcete přidat položku.
-    - **Popis** - Zadejte popis skupiny (například pro vysvětlení, proč je položka jejím členem).
 
 1. Chcete-li odebrat položku ze skupiny, vyberte skupinu a poté vyberte **Odstranit** v podokně akcí.
 

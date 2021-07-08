@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908873"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301643"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Import historických dat pro prognózy poptávky
 
@@ -39,26 +39,6 @@ Pokud chcete používat datovou entitu, musíte mít soubor Microsoft Excel nebo
 
 Další informace o tom, jak importovat data, včetně toho, jak vyčistit data po importu, najdete v části [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) a jsou to související témata.
 
-## <a name="example"></a>Příklad
-
-Jako příklad můžete použít následující soubor: Stáhněte si článek [HistoricalDemandData](/dynamics/s-e/). Tento soubor obsahuje historická data poptávky pro položku D0001. Obsahuje pouze následující povinná pole: site, množství a data poptávky.
-
-1. Vyberte společnost do které chcete importovat historická data.
-2. Otevřete pracovní prostor **Správa dat**.
-3. Vyberte dlaždici **Import**.
-4. Zadejte název projektu importu, například **Import historické poptávky pro položku D0001**.
-5. V poli **Formát zdrojových dat** vyberte formát souboru, který importujete. K importu souboru HistoricalDemandData v tomto příkladu vyberte **CSV**.
-6. V poli **Název entity** vyberte **Historická externí poptávka**.
-7. Uložte si soubor do počítače a poté jej odešlete.
-8. Vyberte **Import**.
-9. Automaticky se otevře stránka **Souhrn spuštění**. Ověřte importovaná data na stránce.
-
-Po importu historických dat poptávky lze generovat prognózu poptávky.
-
-## <a name="additional-resources"></a>Další prostředky
-
-[Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)  
-[Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Viz také [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

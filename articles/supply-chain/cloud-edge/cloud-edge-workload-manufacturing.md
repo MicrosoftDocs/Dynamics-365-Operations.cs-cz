@@ -16,17 +16,16 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6183989"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270528"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Úloha provádění výroby je v tomto okamžiku k dispozici v preview.
@@ -122,7 +121,7 @@ This section describes how to enable the abilities to report as finished and the
 V aktuální verzi jsou zprávy o dokončení a operace vyskladnění (u hotových produktů, vedlejších produktů a souběžných produktů) podporovány [prováděcími úlohami skladování](cloud-edge-workload-warehousing.md) (nikoli prováděcími úlohami výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující:
 
 - Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
-- Pomocí mobilní aplikace Warehouse Management můžete hlásit jako dokončené a zpracovat vyskladňovací práce. Rozhraní pro provádění výrobního provozu tyto procesy aktuálně nepodporuje.
+- Pomocí mobilní aplikace Řízení skladu můžete hlásit jako dokončené a zpracovat vyskladňovací práce. Rozhraní pro provádění výrobního provozu tyto procesy aktuálně nepodporuje.
 
 <!-- KFM: API details needed
 

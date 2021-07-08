@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115016"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271148"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -64,8 +64,6 @@ Tato funkce přidává tlačítko do rozhraní provádění výrobního provozu,
 - Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkce správy majetku pro rozhraní provádění výrobního provozu
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Tato funkce přidává kartu správy majetku do rozhraní pro spuštění výrobního provozu. Pracovníci mohou na této kartě vybrat majetek, který je připojen ke zdroji stroje, který je ve vybraném filtru seznamu úloh. U vybraného majetku stroje může pracovník zobrazit stav a stav majetek z hodnot čítače až pro čtyři vybrané čítače. Chcete-li tuto funkci použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

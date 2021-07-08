@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052066"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271472"
 ---
 # <a name="buy-and-sell-leave"></a>Koupit a prodat pracovní volno
 
@@ -47,6 +47,12 @@ Vaše zůstatky se před aktualizací buď automaticky aktualizují, nebo projdo
 3. Jakmile budete připravení žádost odeslat, vyberte **Odeslat**.
 
 Vaše zůstatky se před aktualizací buď automaticky aktualizují, nebo projdou schvalovacím procesem. To záleží na tom, jak byla nakonfigurována zásada nákupu.
+
+
+## <a name="troubleshooting"></a>Řešení potíží 
+
+Pokud pracovní postup požadavku na nákup nebo prodej volna selže, uživatelé s oprávněním **EssLeaveBuySellRequestApprover** mohou zkontrolovat protokol zpráv o všech požadavcích na nákup a prodej. Chcete-li to provést, přejděte na **Pracovní volno a nepřítomnost > Odkaz > Žádosti o nákup a prodej volna > Protokol zpráv** (vlevo nahoře). **Protokol zpráv** ukazuje uživatelům, jak byly transakce zpracovány, a související historii pracovního postupu.
+
 
 ## <a name="see-also"></a>Viz také
 

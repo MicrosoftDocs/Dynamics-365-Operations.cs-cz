@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222503"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261903"
 ---
 # <a name="finance-insights-home-page-preview"></a>Domovská stránka Finanční přehledy (náhled)
 
@@ -32,6 +32,9 @@ Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, kter
 Náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
 
 Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+
+> [!NOTE]
+> Tato funkce je nabízena jako sada funkcí náhledu. Jako funkci náhledu byste neměli používat výsledné modely strojového učení k řízení nebo ovlivňování vašich obchodních rozhodnutí nebo návrhů rozpočtu. Vaše používání této funkce se řídí [Doplňkovými podmínkami použití](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 ## <a name="prerequisites"></a>Předpoklady
 

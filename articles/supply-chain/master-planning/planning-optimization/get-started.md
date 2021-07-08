@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103586"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301667"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -109,6 +109,8 @@ Nastavení možnosti **Použít optimalizaci plánování** určuje, který plá
 
 - **Ano** – optimalizace plánování se používá pro hlavní plánování.
 - **Ne** – pro hlavní plánování se používá integrovaný modul Supply Chain Management
+
+Toto nastavení platí pro všechny právnické osoby (společnosti). Optimalizaci plánování není možné použít u některých právnických osob a integrované hlavní plánování u jiných právnických osob.
 
 > [!NOTE]
 > Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro předdefinovaný modul plánování Supply Chain Management, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano**, tyto úlohy se nezdaří.

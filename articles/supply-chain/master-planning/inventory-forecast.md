@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216835"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306408"
 ---
 # <a name="inventory-forecasts"></a>Prognózy zásob
 
@@ -353,20 +353,46 @@ Tento postup slouží ke zpracování existujících transakčních řádků pro
 1. Oddíl **Finanční dimenze** použijte k aktualizaci finančních dimenzí řádků prognózy. Vyberte finanční dimenze, které chcete změnit, a poté zadejte hodnotu, která se použije na vybrané dimenze.
 1. Výběrem **OK** použijte změny.
 
-## <a name="run-forecast-planning"></a>Spuštění plánování prognózy
+## <a name="use-forecasts-with-master-planning"></a>Použít hlavní plánování s prognózou
 
-Po zadání prognózy poptávky anebo nabídky můžete spuštěním plánování prognóz vypočítat celkové požadavky na materiály a kapacitu a vygenerovat plánované objednávky.
+Po zadání prognózy poptávky a/nebo prognózy nabídky můžete zahrnout prognózy během hlavního plánování, aby se zohlednila očekávaná poptávka a/nebo nabídka v běhu hlavního plánování. Když jsou prognózy zahrnuty do hlavního plánování, jsou vypočítány hrubé požadavky na materiál a kapacitu a jsou generovány plánované objednávky.
 
-1. Přejděte do nabídky **Hlavní plánování \> Prognózování \> Plánování prognóz**.
-1. Zvolte plán prognózy v poli **Plán prognózy**.
-1. Zapnutím možnosti **Sledovat čas zpracování** zaznamenáte čas zpracování pro každou plánovací úlohu.
-1. Do pole **Počet vláken** zadejte hodnotu. (Další informace najdete v tématu [Vylepšení výkonu hlavního plánování](master-planning-performance.md) .)
-1. Do pole **Komentář** zadejte text, který obsahuje jakékoli další požadované informace.
-1. Na záložce s náhledem **Záznamy k zahrnutí** vyberte **Filtr** a omezte výběr položek.
-1. Na záložce s náhledem **Spustit na pozadí** určete parametry dávky.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Nastavení hlavního plánu tak, aby zahrnoval prognózu zásob
+
+Chcete-li nastavit hlavní plán tak, aby obsahoval prognózu zásob, postupujte takto.
+
+1. Přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**.
+1. Vyberte stávající plán nebo vytvořte nový plán.
+1. Na pevné záložce **Obecné** zadejte následující pole:
+
+    - **Model prognózy** - vyberte model prognózy, který se použije. Tento model se zohlední, když se vygeneruje návrh dodávky pro aktuální hlavní plán.
+    - **Zahrnout prognózu dodávek** - Tuto možnost nastavte na *Ano*, aby byla prognóza dodávek zahrnuta do aktuálního hlavního plánu. Pokud ji nastavíte na *Ne*, transakce prognózy dodávek nebudou zahrnuty do hlavního plánu.
+    - **Zahrnout prognózu poptávky** - Tuto možnost nastavte na *Ano*, aby byla prognóza poptávky zahrnuta do aktuálního hlavního plánu. Pokud ji nastavíte na *Ne*, transakce prognózy poptávky nebudou zahrnuty do hlavního plánu.
+    - **Metoda použitá ke snížení požadavků na prognózu** - Vyberte metodu, která by měla být použita ke snížení požadavků na prognózu. Další informace viz [Redukční klíč prognózy](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. Na pevné záložce **Ochranné doby ve dnech** můžete nastavit následující pole a určit období, během kterého je prognóza zahrnuta během:
+
+    - **Plán prognózy** - Nastavte tuto možnost na *Ano* pro přepis ochranné doby plánu prognózy, která pochází z jednotlivých skupin pokrytí. Pokud chcete použít hodnoty z jednotlivých skupin pokrytí pro aktuální hlavní plán, nastavte *Ne*.
+    - **Časové období prognózy** - Pokud nastavíte možnost **Plán prognózy** na *Ano*, zadejte počet dní (od dnešního data), kdy má být použita prognóza poptávky.
+
+    > [!IMPORTANT]
+    > Možnost **Plán prognózy** ještě není v rámci optimalizace plánování podporováno.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Spustit hlavní plán tak, aby zahrnoval prognózu zásob
+
+Chcete-li spustit hlavní plán tak, aby obsahoval prognózu zásob, postupujte takto.
+
+1. Přejděte na **Hlavní plánování \> Pracovní prostory \> Hlavní plánování**
+1. V poli **Hlavní plán** zadejte nebo vyberte hlavní plán, který jste nastavili v předchozím postupu.
+1. Na dlaždici **Hlavní plánování** vyberte **Spustit**.
+1. V dialogovém okně **Hlavní plánování** nastavte možnost **Sledujte čas zpracování** na *Ano*.
+1. Do pole **Počet vláken** zadejte číslo.
+1. Na pevné záložce **záznamy, které mají být zahrnuty** vyberte možnost **Filtr**.
+1. Zobrazí se standardní dialogové okno editoru dotazů. Na kartě **Oblast** vyberte řádek, ve kterém je pole **Pole** nastaveno na *Číslo položky*.
+1. V poli **Kritéria** vyberte číslo položky, kterou chcete zahrnout do plánu.
 1. Vyberte **OK**.
 
-Chcete-li zobrazit vypočítané požadavky, otevřete stránku **Celkové požadavky**. Například na stránce **Uvolněné produkty** na kartě **Plán** vyberte v oddíle **Požadavky** možnost **Celkové požadavky**.
+Chcete-li zobrazit vypočítané požadavky, otevřete stránku **Celkové požadavky**. Například na stránce **Uvolněné produkty** v podokně akcí, na kartě **Plán**, vyberte ve skupině **Požadavky** možnost **Celkové požadavky**.
 
 Chcete-li zobrazit generované plánované objednávky, přejděte na **Hlavní plánování \> Běžné \> Plánované objednávky** a vyberte příslušný plán prognózy.
 
@@ -376,5 +402,6 @@ Chcete-li zobrazit generované plánované objednávky, přejděte na **Hlavní 
 - [Nastavení prognózy poptávky](demand-forecasting-setup.md)
 - [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)
 - [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
+- [Hlavní plánování s prognózami poptávky](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
