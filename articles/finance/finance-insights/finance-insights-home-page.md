@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261903"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338222"
 ---
 # <a name="finance-insights-home-page-preview"></a>Domovská stránka Finanční přehledy (náhled)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261903"
 
 Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení. Když jsou tyto nové funkce kombinovány s automatizací plateb a inkas od dodavatelů, poskytují bohatý a inteligentní finanční systém, který řídí rozhodování a pomáhá vám podniknout kroky k efektivní reakci na aktuální a očekávané obchodní výzvy.
 
-Náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
-
-Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Preview finančních přehledů je k dispozici pro nasazení v USA, Kanadě, Spojeném království, Evropě, Asii a Tichomoří, Austrálii a Novém Zélandu. Microsoft postupně přidává podporu pro další regiony. Chcete-li povolit Finance Insights na produkčním prostředí, je třeba nejprve aktivovat funkce [Export do Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) v produkčním prostředí.
 
 > [!NOTE]
 > Tato funkce je nabízena jako sada funkcí náhledu. Jako funkci náhledu byste neměli používat výsledné modely strojového učení k řízení nebo ovlivňování vašich obchodních rozhodnutí nebo návrhů rozpočtu. Vaše používání této funkce se řídí [Doplňkovými podmínkami použití](https://go.microsoft.com/fwlink/?linkid=2105274).
@@ -46,7 +47,7 @@ Chcete-li požádat o program náhledu, vyplňte [Náhled finančních přehled�
 
 ### <a name="system-requirements"></a>Systémové požadavky
 
-Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí sandbox úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Požadavky verzí
 
@@ -55,8 +56,6 @@ Tento dokument se vztahuje na verzi 10.0.11 aplikace Finance and Operations (akt
 ### <a name="historical-data-requirements"></a>Požadavky na historické údaje
 
 K správnému trénování modelu strojového učení, který se používá pro funkci předpovědi plateb zákazníka, je zapotřebí alespoň jeden rok faktur zákazníka.
-
-Ukázková data jsou k dispozici pro demo systémy, které mají demo datovou sadu Contoso.
 
 ### <a name="role-and-permission-requirements"></a>Role a požadavky na povolení
 
@@ -72,7 +71,7 @@ Znalost procesu vytváření a správy prostředků v Azure, Microsoft Dataverse
 ## <a name="configure-finance-insights"></a>Nakonfigurujte Finanční přehledy
 
 Než budete moci používat Finanční přehledy, musíte dokončit některé konfigurační kroky. Další informace o postupu konfigurace Finance Insights najdete v:
-  - Pro verze do 10.0.19: [Konfigurace pro Finance Insights - verze až 10.0.19](configure-for-fin-insites.md).
+  - Pro verze do 10.0.19: [Konfigurace pro Finance Insights (Preview) – verze až 10.0.19](configure-for-fin-insites.md).
   - Pro verze 10.0.20 a vyšší: [Konfigurace pro Finance Insights (náhled) - verze 10.0.20 a vyšší](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Vytvořte projekt integrátora dat

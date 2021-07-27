@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.custom: intro-internal
 ms.search.region: Czech Republic
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a47278909d057445819b2182f7ffec19539def3f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 811d49cfc96b72658c3578e2ba0e3959a4490edf
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893816"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340152"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 

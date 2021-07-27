@@ -15,43 +15,27 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4a64794a0e04516441fab628d441640e4d154b8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36fe4c8376ad0364516c0268965c798e20436c6
+ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796879"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "6334418"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Vrácení položek napříč vícero objednávkami odběratele a fakturami
 
 [!include [banner](includes/banner.md)]
 
 
-Tento článek popisuje dvě funkce, které optimalizují vratky zákazníků na více fakturách. 
+Vrácení lze provést napříč vícero objednávkami a fakturami. 
 
-## <a name="enable-refunds-over-multiple-captures"></a>Povolit refundace přes více záznamů
+## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurace aplikace Commerce pro podporu vrácení napříč vícero objednávkami a fakturami
 
-Tato funkce umožňuje více propojených refundací proti stejné objednávce zákazníka. 
-
-1. Přejděte do pracovního prostoru **Správa funkcí** a vyhledejte možnost **Povolit refundace na vícero záznamech**.
-2. Vyberte **Povolit refundace na vícero objednávkách** a poté klikněte na **Povolit**. 
-
-## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Povolení správného výpočtu daně pro vrácení s částečným množstvím
-
-Tato funkce zajišťuje, že při vrácení objednávky s použitím více faktur se daně nakonec budou rovnat původně účtované částce daně. 
-
-1. Přejděte do pracovního prostoru **Správa funkcí** a vyhledejte možnost **Povolení správného výpočtu daně pro vrácení s částečným množstvím**.
-2. Vyberte **Povolení správného výpočtu daně pro vrácení s částečným množstvím** a poté klikněte na **Povolit**. 
-
+1. Přejděte na **Parametry obchodu \> Objednávky odběratele**.
+1. Zapněte parametr **Povolit vrácení pro více objednávek**. 
 
 ## <a name="process-returns"></a>Zpracování vracení
 
-Poté, co jsou zapnuty tyto funkce a změny se synchronizují do obchodů, pokladník v obchodě může zvolit více prodejních objednávek pro odběratele k vrácení.
+Poté, co je zapnut tento parametr a změny se synchronizují do obchodů, pokladník v obchodě může zvolit více prodejních objednávek pro odběratele k vrácení.
 
 Když jsou zvoleny objednávky, zobrazí se seznam všech vratných produktů napříč všemi fakturami pro objednávky. Pokladník může poté zvolit produkty, které mají být vráceny. Pro všechny zvolené produkty bude vytvořena jediná vratka.
-
-Pokud je objednávka plně vrácena, částka daní vrácená zákazníkovi se bude rovnat částce původně účtované daně.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

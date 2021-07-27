@@ -355,6 +355,8 @@
           items:
             - name: Úvod
               href: hr-admin-integration-ats-api-introduction.md
+            - name: Ověřování mezi servery pro integraci ATS
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: Požadavek na nábor a související entity
               items:
                 - name: Požadavek na nábor
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generování a kontrola entit mzdy
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Zaměstnanec na výplatní listině
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Adresa pracovníka na výplatní listině
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Mzdový plán fixní kompenzace
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Práce pozice mzdy
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Pozice mzdy
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Parametry integrace mezd
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Entity mzdy
+              items:
+                - name: Zaměstnanec na výplatní listině
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Adresa pracovníka na výplatní listině
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Mzdový plán fixní kompenzace
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Mzdový plán variabilní kompenzace
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Pozice mzdy
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Práce pozice mzdy
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Entity související s pracovním volnem a absencí
+              items:
+                - name: Zůstatek pracovního volna
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Typ pracovního volna
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Žádost o pracovní volno
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Sady možností
+              items:
+                - name: Pohlaví
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Ne Ano
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Typ odměny
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Typ procesu
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Uživatelská příručka
       items:
         - name: Přehled
@@ -505,7 +531,7 @@
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
-                - name: Architektura systému workflowu
+                - name: Architektura systému pracovních postupů
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
                 - name: Prvky workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
@@ -561,7 +587,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Přidružení třídy dokumentu workflow k typu workflow
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-                - name: Sestava typů workflow
+                - name: Sestava typů pracovních postupů
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
                 - name: Workflow – Často kladené otázky
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
@@ -599,6 +625,8 @@
           items:
             - name: Organizování zaměstnanců
               href: hr-personnel-departments-jobs-positions.md
+            - name: Pracovní prostor správy personálu
+              href: hr-personnel-personnel-management-workspace.md
             - name: Nastavení komponent práce
               href: hr-personnel-jobs.md
             - name: Definování oddělení
@@ -607,6 +635,8 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Definování prací
               href: hr-personnel-define-jobs.md
+            - name: Pozice
+              href: hr-personnel-positions.md
             - name: Vytvoření kalendáře pracovní doby
               href: hr-personnel-create-working-time-calendar.md
             - name: Nábor uchazečů o práci
@@ -837,3 +867,69 @@
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: Omezení úprav osobních údajů
               href: hr-employee-self-service-restrict-editing.md
+        - name: Použití systému pracovního postupu
+          items:
+            - name: Přehled systému workflow
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Architektura systému pracovních postupů
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Prvky workflow
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Akce workflowu
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vytvoření workflow
+              items:
+                - name: Přehled vytvoření workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace vlastností workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace ručních úkolů
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace automatizovaných úkolů
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace procesu schválení
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace kroků schválení
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace kontrolorů výdajů
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace ručních rozhodnutí
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace podmíněných rozhodnutí
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace paralelních aktivit
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace paralelních větví
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurace workflow položky řádku
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurace dávkových úloh zpracování zprávy workflowu jako kritických
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Delegování položek práce ve workflow
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Zobrazení historie workflow
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurace systému pro odeslání e-mailů souvisejících s workflow uživatelům
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Typy workflow
+              items:
+                - name: Vytvoření typu workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kontrolní seznam typu workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření kategorie workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření dotazu pro typ workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření nového typu workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření třídy dokumentu workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vytvoření třídy SubmitToWorkflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Přidružení třídy dokumentu workflow k typu workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Sestava typů pracovních postupů
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Workflow – Často kladené otázky
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

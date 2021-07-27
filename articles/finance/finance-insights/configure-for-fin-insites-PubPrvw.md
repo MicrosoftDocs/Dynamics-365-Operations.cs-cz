@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222605"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309658"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfigurace Finance Insights pro public review (náhled) - verze 10.0.20 a novější
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222605"
 Finanční přehledy kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights pro public preview.
 
 > [!NOTE]
-> Kroky konfigurace, které jsou popsány v tomto tématu, se vztahují pouze na verzi Finance 10.0.20 a novější. Informace o nastavení Finance Insights ve verzi 10.0.19 a starší najdete v tématu [Konfigurace Finance Insights - do verze 10.0.18](configure-for-fin-insites.md).
+> Kroky konfigurace, které jsou popsány v tomto tématu, se vztahují pouze na verzi Finance 10.0.20 a novější. Informace o nastavení Finance Insights ve verzi 10.0.19 a starší najdete v tématu [Konfigurace Finance Insights - do verze 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Nasazení Finance
 
@@ -748,6 +748,8 @@ Podle těchto pokynů nainstalujte doplněk Finance Insights.
 2. V sekci **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
 3. Vyberte doplněk **Finance Insights**.
 4. Odsouhlaste podmínky a pak vyberte **Instalovat**.
+
+Instalace doplňku může trvat několik minut.
 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 
