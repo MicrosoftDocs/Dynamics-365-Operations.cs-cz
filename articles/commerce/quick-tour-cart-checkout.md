@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027932"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352029"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
 
@@ -37,7 +38,7 @@ Stránka košíku slouží jako nákupní sáček a zahrnuje všechny položky, 
 
 Následující ilustrace znázorňuje příklad stránky košíku, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
-![Příklad stránky košíku](./media/cart2.PNG)
+![Příklad stránky košíku.](./media/cart2.PNG)
 
 HLavní část stránky košíku zobrazuje všechny položky, které odběratel přidal do nákupního košíku. Přednastaveny všechny použitelné slevy. Tyto slevy zahrnují složité slevy. Příklady zahrnují "nákup 3 položky a získej 10% slevu" nebo "kup láhev a batoh a získej slevu 10%." V modulu souhrn objednávek je zobrazena částka, která je splatná po použití slev, expedice, daní atd. Existuje také modul propagačního kódu, který umožňuje odběrateli použití nebo odebrání propagačních kódů.
 
@@ -53,7 +54,7 @@ Na stránce pokladny jsou umístěny informace vyžadované k zadání objedná
 
 Následující ilustrace znázorňuje příklad stránky pokladny, která byla sestavena pomocí knihovny modulů.
 
-![Příklad stránky pokladny](./media/Checkout.PNG)
+![Příklad stránky pokladny.](./media/Checkout.PNG)
 
 Hlavní část stránky pokladny, v níž jsou shromážděny všechny informace o objednávce. Tyto informace zahrnují dodací adresu, možnosti dodání a informace o platbě. Pokladna má tok krok za krokem, protože informace musí být zadány v určitém pořadí, které má být zpracováno. Před vypočítáním nákladů na dodání je například nutné zadat dodací adresu a autorizovat platbu.
 

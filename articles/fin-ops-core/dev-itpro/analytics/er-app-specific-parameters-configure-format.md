@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351907"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu
 
@@ -78,17 +78,17 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 
     Formát ER **Formát pro učení parametrizovaných volání** je navržen tak, aby vygeneroval daňový výkaz ve formátu XML, který představuje několik úrovní zdanění (pravidelná, redukovaná a žádná). Každá úroveň má různý počet podrobností.
 
-    ![Více úrovní formátu ER, formát pro učení parametrizovaných volání](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Více úrovní formátu ER, formát pro učení parametrizovaných volání.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Na kartě **Mapování** rozbalte položky **Model**, **Data** a **Souhrn**.
 
     Zdroj dat **Model.Data.Summary** vrátí seznam daňových transakcí. Tyto transakce jsou sumarizovány v seznamu podle kódu DPH. Pro tento zdroj dat bylo nakonfigurováno vypočítané pole **Model.Data.Summary.Level**, které vrací kód úrovně zdanění jednotlivých souhrnných záznamů. Pro jakýkoli kód zdanění, který lze načíst ze zdroje dat **Model.Data.Summary** v době běhu, vrátí vypočtené pole kód úrovně zdanění (**Běžný**, **Redukovaný**, **Žádný** nebo **Ostatní**) jako textovou hodnotu. Vypočtené pole **Model.Data.Summary.Level** se použije k filtrování záznamů zdroje dat **Model.Data.Summary** a zadání filtrovaných dat do každého prvku XML, který představuje úroveň zdanění pomocí polí **Model.Data2.Level1**, **Model.Data2.Level2** a **Model.Data2.Level3**.
 
-    ![Seznam datových zdrojů daňových transakcí Model.Data.Summary](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Seznam datových zdrojů daňových transakcí Model.Data.Summary.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Vypočítané pole **Model.Data.Summary.Level** je nakonfigurováno tak, aby obsahovalo výraz ER. Do této konfigurace jsou zakódovány kódy daní (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** a **InVAT0**). Tento formát ER je závislý na právnické osobě, kde byly tyto kódy daně nakonfigurovány.
 
-    ![Vypočítané pole Model.Data.Summary.Level s pevně zakódovanými daňovými kódy](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Vypočítané pole Model.Data.Summary.Level s pevně zakódovanými daňovými kódy.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Chcete-li podporovat jinou sadu kódů daní pro každou právnickou osobu, je nutné provést následující kroky:
 
@@ -128,7 +128,7 @@ Dále přidáte nový výčet formátu ER. Hodnoty tohoto formátu budou prezent
 12. Znovu vyberte **Přidat**.
 13. Do pole **Název** zadejte **Jiné**.
 
-    ![Nový záznam na stránce Vyčíslení formátu](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Nový záznam na stránce Vyčíslení formátu.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů daní závislé na právnické osobě, doporučujeme překládat hodnoty tohoto výčtu do jazyků konfigurovaných jako preferované jazyky pro tyto uživatele v modulu finance.
 
@@ -141,9 +141,9 @@ Dále přidáte nový výčet formátu ER. Hodnoty tohoto formátu budou prezent
 20. Do pole **přeložený text** napište **keine Besteuerung**.
 21. Vyberte **Přeložit**.
 
-    ![Vysunutí překladu textu](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Vysunutí překladu textu.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
-22. Zvolte **Uložit**.
+22. Zvolte možnost **Uložit**.
 23. Zavřete stránku **Vyčíslení formátu**.
 
 ### <a name="add-a-new-lookup-data-source"></a>Přidání nového zdroje dat vyhledávání
@@ -168,13 +168,13 @@ Dále přidáte nový zdroj dat, který určuje, jakým způsobem budou obchodn�
 10. Vyberte položku **Model.Data.Tax.Code**.
 11. Klepněte na tlačítko **přidat** (šipka vpravo).
 
-    ![Vysunuté sloupce](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Vysunuté sloupce.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Právě jste zadali, že pro každé pravidlo, které je zadáno v tomto zdroji dat pro rozpoznání úrovně zdanění, musí obchodní uživatel vybrat jeden z daňových kódů jako podmínku. Seznam kódů daní, které může obchodní uživatel vybrat, bude vrácen zdrojem dat **Model.Data.Tax**. Vzhledem k tomu, že tento zdroj dat obsahuje pole **Název**, zobrazí se název kódu daně pro každou hodnotu kódu daně ve vyhledávání, které je prezentováno obchodnímu uživateli.
     
 12. Vyberte **OK**.
 
-    ![Stránka návrháře vyhledávání](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Stránka návrháře vyhledávání.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Obchodní uživatelé mohou přidat více pravidel jako záznamy tohoto datového zdroje. Každý záznam bude očíslován kódem řádku. Pravidla budou vyhodnocována v pořadí podle rostoucího čísla řádku.
 
@@ -188,13 +188,13 @@ Dále přidáte nový zdroj dat, který určuje, jakým způsobem budou obchodn�
 
     Všimněte si, že jste přidali nový zdroj dat, který vrátí úroveň zdanění jako hodnotu **seznamu úrovní zdanění** pro jakýkoliv daňový kód, který je předán zdroji dat, jako argument parametru **kód** datového typu **řetězec**.
     
-    ![Stránka návrháře formátů s novým zdrojem dat](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Stránka návrháře formátů s novým zdrojem dat.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Vyhodnocení konfigurovaných pravidel závisí na datovém typu polí, která byla vybrána pro definování podmínek těchto pravidel. Pokud vyberete pole, které je konfigurováno jako pole datového typu **Číselný** nebo **Datum**, kritéria se budou lišit od kritérií, která byla popsána dříve pro datový typ **řetězec**. U **číselného** a **datového** pole musí být pravidlo specifikováno jako rozsah hodnot. Pokud je hodnota předaná zdroji dat v nakonfigurovaném rozsahu, bude podmínka pravidla považována za splněnou.
     
     Následující obrázek znázorňuje příklad tohoto typu nastavení. Kromě pole **Model.Data.Tax.Code** datového typu **ŘEtězec** je použito pole **Model.Tax.Summary.Base** datového typu **Real** k určení podmínek pro zdroj dat vyhledávání.
     
-    ![Stránka návrháře vyhledávání s dalšími sloupci](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Stránka návrháře vyhledávání s dalšími sloupci.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Protože jsou pro tento zdroj dat vyhledávání vybraná pole **Model.Data.Tax.Code** a **Model.Tax.Summary.Base**, každé pravidlo tohoto zdroje dat bude konfigurováno následovně:
     
@@ -223,7 +223,7 @@ Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů 
 9.  Vyberte **Přeložit**.
 10. Vyberte **OK**.
 
-    ![Vysunuté vlastnosti zdroje dat](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Vysunuté vlastnosti zdroje dat.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Přidání nového pole ke spotřebování nakonfigurovaného vyhledávání
 
@@ -236,12 +236,12 @@ Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů 
 7.  Do **pole Receptura** zadejte **Model.Selector(Model.Data.Summary.Code)**.
 8.  Zvolte **Uložit**.
 
-    ![Přidání části Model.Selector (Model.Data.Summary.Code) na stránku návrháře vzorců](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Přidání části Model.Selector (Model.Data.Summary.Code) na stránku návrháře vzorců.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Zavřete stránku **Editor vzorců**.
 10. Vyberte **OK**.
 
-    ![Stránka návrháře formátů s novým přidaným vzorcem](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Stránka návrháře formátů s novým přidaným vzorcem.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Všimněte si, že vypočtené pole **LevelByLookup**, které jste přidali, vrátí daňovou úroveň jako hodnotu **seznamu úrovní zdanění** pro každý záznam sumarizovaných daňových transakcí. Kód daně záznamu bude předán do zdroje dat vyhledávání **Model.Selector** a sada pravidel pro tento zdroj dat bude použita při výběru správné úrovně zdanění.
 
@@ -269,7 +269,7 @@ Dále upravíte existující vypočtené pole tak, aby používalo konfigurovan�
 
 4.  Do pole **Formula** Receptura zadejte **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 
-    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![Stránka návrháře operace ER.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Všimněte si, že výraz v poli **Model.Data.Summary.Level** bude nyní vracet úroveň zdanění na základě kódu daně aktuálního záznamu a sady pravidel, které uživatel obchodního pravidla konfiguruje ve zdroji dat vyhledávání **Model.Data.Summary.Level**.
     

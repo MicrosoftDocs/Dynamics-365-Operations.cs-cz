@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd652af3100f8de59e06490443baeebca58a4dd3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7976a7d555c04cb2ea01a2dbe571f6b8b440b69a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838531"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347061"
 ---
 # <a name="maintenance-forecasts"></a>Prognózy údržby
 
@@ -102,7 +102,7 @@ Chcete-li získat přehled o tom, kde se ve správě majetku používá položka
 
 Na následujícím obrázku je uveden příklad stránky **Prognóza údržby pracovního příkazu**.
 
-![Obrázek č. 1](media/06-work-orders.png)
+![Obrázek č. 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatická aktualizace prognóz pracovních příkazů
@@ -120,7 +120,7 @@ Pokud jsou hodinové náklad,y náklady na položku a výdaje aktualizovány v o
 
 Na následujícím obrázku je uveden příklad stránky **Aktualizovat prognózu údržby pracovního příkazu**.
 
-![Obrázek č. 2](media/07-work-orders.png)
+![Obrázek č. 2.](media/07-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

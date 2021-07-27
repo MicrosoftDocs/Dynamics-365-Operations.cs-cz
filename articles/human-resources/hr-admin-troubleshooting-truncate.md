@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 7f735726a7e126174bc9c6a4002e421df3f21298
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053244"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360609"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 
@@ -29,7 +29,7 @@ ms.locfileid: "6053244"
 
 Když si zákazník zobrazí hierarchii pozic v aplikaci Microsoft Dynamics 365 Human Resources, názvy osob a pozic jsou zkráceny. Z tohoto důvodu může být obtížné provést snímek obrazovky, nebo vytisknout a rozdělit hierarchii.
 
-![Hierarchie pozic](media/position-h.png)
+![Hierarchie pozic.](media/position-h.png)
 
 **Příčina**
 
@@ -47,48 +47,48 @@ Tento postup slouží k exportu do aplikace Visio.
 
 2. V podokně akcí, vyberte tlačítko **Otevřít v aplikaci Microsoft Office** a poté v nabídce **Exportovat do aplikace Excel** vyberte **Pozice**. Případně stiskněte Ctrl+T.
 
-    ![Export stránky se seznamem Pozice do aplikace Excel](media/org-admin.png)
+    ![Export stránky se seznamem Pozice do aplikace Excel.](media/org-admin.png)
 
 3. Uložte soubor aplikace Excel, který je vyexportovaný.
 
-    ![Export do dialogového okna Excelu](media/export-excel.png)
+    ![Export do dialogového okna Excelu.](media/export-excel.png)
 
 4. V aplikaci Visio vyberte **Visio – Vytvořit novou** a vyberte kategorii šablony **Obchodní**.
 
-    ![Nový diagram](media/new.png)
+    ![Nový diagram.](media/new.png)
 
 5. Vyberte **Průvodce grafem organizace** a poté vyberte **Vytvořit**.
 
-    ![Dialogové okno průvodce grafem organizace](media/orgchart-wizard.png)
+    ![Dialogové okno průvodce grafem organizace.](media/orgchart-wizard.png)
 
 6. Vyberte **Informace, které jsou již uložené v souboru nebo databázi** a poté vyberte **Další**.
 
-    ![Průvodce grafem organizace 1](media/orgchart-wizard7.png)
+    ![Průvodce grafem organizace 1.](media/orgchart-wizard7.png)
 
 7. Zvolte **Text, Org Plus (\*.txt), nebo soubor aplikace Excel** a poté zvolte **Další**.
 
-    ![Průvodce grafem organizace 2](media/orgchart-wizard3.png)
+    ![Průvodce grafem organizace 2.](media/orgchart-wizard3.png)
 
 8. Vyhledejte exportovaný soubor aplikace Excel, který obsahuje hierarchii pozic, a poté vyberte **Další**.
 
-    ![Průvodce grafem organizace 3](media/orgchart-wizard2.png)
+    ![Průvodce grafem organizace 3.](media/orgchart-wizard2.png)
 
 9. Nastavte pole **Název** na **pozice**, nastavte pole **Nadřízená pozice** na **Podřízený pozice** a poté vyberte **Další**.
 
-    ![Průvodce grafem organizace 4](media/orgchart-wizard1.png)
+    ![Průvodce grafem organizace 4.](media/orgchart-wizard1.png)
 
 10. Vyberte pole, která mají být zobrazena na každém uzlu, a poté vyberte **Další**.
 
-    ![Průvodce grafem organizace 5](media/orgchart-wizard5.png)
+    ![Průvodce grafem organizace 5.](media/orgchart-wizard5.png)
 
 11. Přidejte sloupec **Pozice** do seznamu **Pole vlastností obrazce** a pak vyberte **Další**.
 
-    ![Průvodce grafem organizace 6](media/orgchart-wizard6.png)
+    ![Průvodce grafem organizace 6.](media/orgchart-wizard6.png)
 
 12. Obrázky nejsou v současné době k dispozici. Proto na další stránce vyberte **Další**.
 13. Vyberte **Chci, aby průvodce automaticky rozdělil organizační schéma mezi stránky**.
 
-    ![Průvodce grafem organizace 7](media/orgchart-wizard4.png)
+    ![Průvodce grafem organizace 7.](media/orgchart-wizard4.png)
 
 14. Vyberte **Dokončit**.
 
@@ -98,7 +98,7 @@ Diagram, který se vygeneruje v aplikaci Visio, zobrazuje každého manažera v 
 
 Na základě polí, která jste vybrali do schématu, každý uzel zobrazí příslušné informace při generování souboru Visio.
 
-![Diagram hierarchie](media/hierarchy.png)
+![Diagram hierarchie.](media/hierarchy.png)
 
 **Další možnost**
 

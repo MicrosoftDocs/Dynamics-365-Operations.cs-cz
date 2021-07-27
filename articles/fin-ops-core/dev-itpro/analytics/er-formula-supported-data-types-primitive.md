@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224081"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355315"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Podporované typy jednoduchých dat pro vzorce elektronického výkaznictví
 
@@ -112,13 +112,13 @@ Aplikace *výčet* lze použít ve výrazech libovolného mapování modelu ER a
 
 Následující obrázek ukazuje, jak můžete přidat výčet modelu **CustVendCorrectiveReasonCode** do upravitelného datového modelu ER.
 
-[![Konfigurace výčtu modelu v návrháři datového modelu ER](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Konfigurace výčtu modelu v návrháři datového modelu ER.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 *Výčet* modelu lze použít ve výrazech libovolného mapování modelu ER a formátu ER, které byly vytvořeny pod datovým modelem, kde byl *výčet* představen.
 
 Následující obrázek ukazuje, jak můžete přidat výčet formátu **Seznam podkategorií stornovacích poplatků Natura** do upravitelného formátu ER.
 
-[![Konfigurace výčtu formátu v návrháři formátu ER](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Konfigurace výčtu formátu v návrháři formátu ER.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 *Výčet* formátu lze použít pouze ve výrazech formátu ER, kde byl *výčet* představen.
 
@@ -126,15 +126,15 @@ Musíte použít vhodný typ zdrojů dat ER k přenesení konkrétního výčtu 
 
 - K výčtu aplikací lze přistupovat pomocín zdrojů dat **Dynamics 365 for Operations \ Výčet** a **Obecné \ Uživatelské vstupní parametry**. Následující obrázek ukazuje, jak můžete přidat do upravitelného formátu ER datové zdroje **appenumNoAno** a **uipNoYes**, které odkazují na výčet aplikací **NoYes**.
 
-    [![Přidání zdrojů dat výčtu aplikace v návrháři formátu ER](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Přidání zdrojů dat výčtu aplikace v návrháři formátu ER.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - K výčtům datového modelu lze přistupovat pomocí zdrojů dat  **Datový model \ Výčet** a **Datový model \ Vstupní parametry uživatele výčtu**. Následující obrázek ukazuje, jak můžete přidat do upravitelného formátu ER datové zdroje **CustVendCorrectiveReasonCode**, které odkazují na datový model **CustVendCorrectiveReasonCode**.
 
-    [![Přidání zdrojů dat výčtu modelu v návrháři formátu ER](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Přidání zdrojů dat výčtu modelu v návrháři formátu ER.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - K výčtům formátů lze přistupovat pomocí zdrojů dat **Formát \ Výčet** a **Formát \ Vstupní parametry uživatele výčtu** Následující obrázek ukazuje, jak můžete přidat do upravitelného formátu ER datové zdroje **NaturaReverseCharge**, které odkazují na výčet formátu **Podkategorie stornovacích poplatků Natura**.
 
-    [![Přidání zdrojů dat výčtu formátu v návrháři formátu ER](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Přidání zdrojů dat výčtu formátu v návrháři formátu ER.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 *Výčet* nemá žádné implicitní převody. Můžete však použít převodní funkci [TEXT](er-functions-text-text.md) pro převod *výčtu* na textový řetězec. Tato konverze není závislá na jazyce. Chcete-li se dozvědět, jak můžete přidružit hodnotu *výčet* s příslušnými popisky specifickými pro daný jazyk, viz příklady použití pro funkce [LISTOFFIELDS](er-functions-list-listoffields.md) a [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 

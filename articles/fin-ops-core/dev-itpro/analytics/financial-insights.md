@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193743"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345805"
 ---
 # <a name="financial-analysis"></a>Finanční analýza
 
@@ -60,7 +60,7 @@ Aby se zobrazil na finančních výkazech a byl zahrnut v různých dalších vi
 ## <a name="entity-store"></a>Úložiště entit
 Data pro **finanční analýzu** pocházejí z úložiště entit (**Správa systému** \> **Nastavení** \> **Úložiště entit**). Otevřete-li pracovní prostory **Přehled CFO** nebo **Finanční analýza** a zobrazí se následující upozornění ve vizuálních prvcích, je nutné aktualizovat entity.
 
-![Upozornění](./media/Cantdisplay.png)
+![Upozornění.](./media/Cantdisplay.png)
 
 Je nutné aktualizovat následující entity pro zobrazení dat v pracovním prostoru **Finanční analýza**:
 
@@ -124,7 +124,7 @@ Uživatelé mohou filtrovat sestavu pomocí podokna **Filtr** na levé straně. 
 - **Filtry na úrovni vizuálních prvků** – Tyto filtry se používají pouze na vybrané vizuální prvky. Tyto filtry se používají nad filtry na úrovni stránek.
 - **Podrobný filtr** – Tento filtr filtruje ze zdrojového vizuálního prvku, který je použit na aktuální vizuální prvek při procházení ze zdrojového na aktuální vizuální prvek.
 
-![Možnosti filtrování](./media/filter.png)
+![Možnosti filtrování.](./media/filter.png)
 
 Chcete-li odebrat konkrétní hodnotu filtru, vyberte symbol gumy vedle něj. Neodebírejte filtr pomocí výběru X. Když zvolíte X, je pole, které chcete filtrovat, odebráno jako možnost filtru. Pokud omylem odeberete pole z filtru, zavřete pracovní prostor a otevřete ho znovu. Výchozí nastavení filtru se znovu použije.
 
@@ -169,25 +169,25 @@ V Power BI jsou k dispozici různé úrovně přechodu na podrobnosti. Každá �
 
 Na následujícím obrázku je výkaz **Předvaha** sbalen na nejvyšší úroveň hierarchie řádku, hlavní typ účtu.
 
-![Výkaz předvahy](./media/trial-balance.png)
+![Výkaz předvahy.](./media/trial-balance.png)
 
 Chcete-li zobrazit další úroveň hierarchie, kategorie hlavního účtu, lze nastavit pole **Přejít na podrobnosti** na **Řádky** a poté vybrat tlačítko **Rozbalit** (třetí tlačítko po poli přechodu na podrobnosti). Nyní se rozbalí všechny kategorie hlavního účtu. V současné Power BI neumožňuje rozbalit pouze jeden řádek nebo sloupec, ale stále se zobrazují všechny ostatní řádky nebo sloupce.
 
-![Rozpis předvahy v řádcích](./media/trial-balance2.png)
+![Rozpis předvahy v řádcích.](./media/trial-balance2.png)
 
 Chcete-li rozbalit na úrověň hlavních účtů pro všechny řádky, můžete znovu použíttlačítko **Rozbalit**. Chcete-li však přejít dolů na podrobnosti hlavních účtů pro jeden řádek, nejprve zvolte tlačítko **Přejít dolů k podrobnostem** (jednoduchá šipka směrem dolů na pravé straně okna) a pak vyberte řádek, na který chcete přejít. Následující obrázek znázorňuje výsledek při volbě řádku **Prodej** po zvolení tlačítka **Přejít dolů k podrobnostem**.
 
-![Tlačítko rozbalení předvahy](./media/trial-balance3.png)
+![Tlačítko rozbalení předvahy.](./media/trial-balance3.png)
 
 Po přechodu dolů k podrobnostem na jeden řádek je třeba několik kliknutí, abyste se vrátili k plné předvaze. Tlačítko **Přejít nahoru k podrobnostem** (první tlačítko po poli **Přejít k podrobnostem**) přejde nahoru pouze v kontextu kategori **Prodej**, jak je uvedeno na následujícím obrázku.
 
-![Tlačítko přechodu nahoru k podrobnostem předvahy](./media/trial-balance4.png)
+![Tlačítko přechodu nahoru k podrobnostem předvahy.](./media/trial-balance4.png)
 
 Můžete nadále používat tlačítko **Přejít nahoru k podrobnostem** pro návrat na nejvyšší úrověň souhrnu řádků.
 
 Power BI má také tlačítko, které vám umožní přejít na další úroveň v hierarchii (druhé tlačítko po poli **Přejít na podrobnosti**). Účinek tohoto tlačítka se liší od účinku tlačítka **Rozbalit** (třetí tlačítko po poli **Přejít na podrobnosti**), které se používá k rozbalení hierarchie. Po rozbalení hierarchie se hierarchie uchová v sestavě. Jak bylo zobrazeno dříve, pokud například rozbalíte na úrověň typu hlavního účtu, stále uvidíte v sestavě typ hlavního účtu. Pokud všask přejdete na další úroveň v hierarchii, tato sestava již nezobrazuje nadřazenou položku v hierarchii, jak je zobrazeno na následujícím obrázku.
 
-![Tlačítko přechodu zpět předvahy](./media/trial-balance5.png)
+![Tlačítko přechodu zpět předvahy.](./media/trial-balance5.png)
 
 Chcete-li zobrazit podrobnosti o transakcích za souhrnnými zůstatky, můžete vybrat některé částky pro přechod zpět do aplikace Finance and Operations.
 
@@ -226,7 +226,7 @@ V současné době finanční výkazy nepodporují organizační hierarchie, kte
 ## <a name="data-limitations"></a>Limitace dat
 Vizuální prvky finančního výkazu mají limit na počet řádků, které mohou být zobrazeny. V současné době je limit nastaven na 30 000. Pokud překročíte tento limit, bude mít vizuální prvek varovný symbol upozorňující na tuto situaci.
 
-![Limitace dat](./media/data-limit.png)
+![Limitace dat.](./media/data-limit.png)
 
 Při překročení maxima budou součty, které se objevují ve finančním výkazu, nesprávné, protože nebyly načteny všechny řádky do vizuálního prvku.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a641789adf27e51b7a3f8ab03269cc2e748eef96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359804"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Synchronizace pracovních příkazů s projektem z aplikace Field Service do Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "5909936"
 
 Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci pracovních příkazů v s číslem projektu z Dynamics 365 Field Service do prodejních objednávek v Dynamics 365 Supply Chain Management.
 
-[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 Používaná šablona **Pracovní příkazy s projektem (Field Service do Supply Chain Management)** je založena na šabloně **Pracovní příkazy (Field Service do Supply Chain Management)**. Více informací naleznete v části [Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
@@ -61,19 +61,19 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Pracovní příkazy s aplikací Project (Field Service do Supply Chain Management): WorkOrderHeader
 
-[![Mapování šablony v integraci dat](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Mapování šablony v integraci dat.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Pracovní příkazy s aplikací Project (Field Service do Supply Chain Management): WorkOrderHeaderProject
 
-[![Mapování šablony v integraci dat](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Mapování šablony v integraci dat.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Pracovní příkazy s aplikací Project (Field Service do Supply Chain Management): WorkOrderProduct
 
-[![Mapování šablony v integraci dat](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Mapování šablony v integraci dat.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Pracovní příkazy s aplikací Project (Field Service do Supply Chain Management): WorkOrderService
 
-[![Mapování šablony v integraci dat](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Mapování šablony v integraci dat.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

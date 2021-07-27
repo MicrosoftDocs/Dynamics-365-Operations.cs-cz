@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881029"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350177"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Uživatelské rozhraní ve stylu Microsoft Office v modulu Správa obchodních dokumentů
 
@@ -51,18 +51,18 @@ Chcete-li tuto funkci zapnout pro všechny právnické osoby, postupujte podle n
 
 1. V pracovním prostoru **správy obchodních dokumentů** vyberte **Nový dokument**.
 
-    ![Pracovní prostor správy obchodních dokumentů](./media/BDM_overview_new_template1.png)
+    ![Pracovní prostor správy obchodních dokumentů.](./media/BDM_overview_new_template1.png)
 
 2. Na kartě **Vybrat** vyberte dokument, který chcete použít jako šablonu, a poté vyberte možnost **Vytvořit dokument**.
 
-    ![Dialogové okno obchodních dokumentů](./media/BDM_overview_new_template2.png)
+    ![Dialogové okno obchodních dokumentů.](./media/BDM_overview_new_template2.png)
 
 3. V novém dialogovém okně v poli **Název** změňte požadovaným způsobem název. Text názvu se použije k pojmenování nové konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)**) bude obsahovat upravenou šablonu a bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Původní šablona ze základní konfigurace formátu elektronického výkaznictví bude použita ke spuštění tohoto formátu elektronického výkaznictví pro každého jiného uživatele.
 4. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
 5. V poli **Komentář** aktualizujte poznámky pro revizi upravitelné šablony, která bude automaticky vytvořena.
 6. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
-    ![Dialogové okno vytvoření dokumentu](./media/BDM_overview_new_template3.png)
+    ![Dialogové okno vytvoření dokumentu.](./media/BDM_overview_new_template3.png)
 
 Tlačítko **Nový dokument** se používá pro vytváření úpravy šablony v konfiguraci formátu elektronického výkaznictví, kterou poskytuje jiný poskytovatel. V tomto příkladu je poskytovatelem Microsoft. Když vyberete **Nový dokument**, zobrazí se všechny šablony vlastněné aktuálními a jinými poskytovateli. Po výběru bude šablona otevřena pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
@@ -71,16 +71,16 @@ Před odesláním šablony postupujte podle těchto pokynů a poskytněte požad
 
 1. V pracovním prostoru **správy obchodních dokumentů** vyberte **Nový dokument**.
 
-    ![Pracovní prostor správy obchodních dokumentů](./media/BDM_overview_new_template1.png)
+    ![Pracovní prostor správy obchodních dokumentů.](./media/BDM_overview_new_template1.png)
     
 2. Na stránce **Vytvořit novou šablonu** na kartě **Nahrát** na kartě **Šablona** vyberte možnost **Procházet** k vyhledání a výběru souboru Excel, který chcete použít jako šablonu. V části **Šablona** se pole **Název** a **Popis** vyplňují automaticky. Určují název a popis nové konfigurace formátu ER, která se automaticky vytvoří. V případě potřeby můžete tato pole upravit.
 3. V části **Typ dokumentu** do pole **Název** zadejte typ obchodního dokumentu. Tato hodnota se použije k vyhledání správného zdroje dat (tj. konfigurace modelu ER).
 
-    ![Karta Šablona](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Karta Šablona.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Na kartě **Zdroj dat** na rychlé kartě **Filtr** vyberte **Použít filtr**. V části **Zdroj dat** je pole **Název** vyplněno automaticky nebo můžete hodnotu vybrat ručně. Pomocí filtru můžete vyhledat název příslušného zdroje dat podle názvu, popisu, kódu země/oblasti a typu obchodního dokumentu.
 
-    ![Karta zdroje dat](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Karta zdroje dat.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > Karta **Filtr** se používá k vyhledání správného zdroje dat (tj. konfigurace modelu ER). Můžete upravit všechna pole filtru a vyhledat nejvhodnější zdroj dat pro dokument, který nahráváte.
@@ -89,7 +89,7 @@ Před odesláním šablony postupujte podle těchto pokynů a poskytněte požad
     
 5. Na kartě **Mapování** vyberte **Automaticky zjistit**. Pole **Definice kořene** je vyplněno automaticky nebo můžete hodnotu vybrat ručně. Tato karta zobrazuje mapování konce pro prvky ze šablony a modelu.
 
-    ![Karta Mapování](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Karta Mapování.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > Mapování v části **Struktura šablony** používá úplnou shodu štítků nebo popisů ve zdroji dat v jazyce uživatele a v názvu buňky v šabloně.
@@ -102,11 +102,11 @@ Pokud v elektronickém vykazování není poskytovatel, můžete ho vytvořit. P
 
 - Chcete-li vytvořit poskytovatele, změňte název poskytovatele v poli **Název**, aktualizujte internetovou adresu nového poskytovatele v poli **Internetová adresa** a vyberte **OK** k potvrzení.
 
-    ![Vytvoření nového poskytovatele v BDM](./media/bdm_create_provider.png)
+    ![Vytvoření nového poskytovatele v BDM.](./media/bdm_create_provider.png)
     
 - Chcete-li aktivovat stávajícího poskytovatele, vyberte jeho jméno v poli **Poskytovatel konfigurace** a vyberte **OK** k nastavení poskytovatele jako aktivního.
 
-    ![Aktivace poskytovatele v BDM](./media/bdm_choose_provider.png)
+    ![Aktivace poskytovatele v BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Každá šablona BDM bude odkazovat na zprostředkovatele jako na autora konfigurace. Proto je pro šablonu vyžadován aktivní poskytovatel.

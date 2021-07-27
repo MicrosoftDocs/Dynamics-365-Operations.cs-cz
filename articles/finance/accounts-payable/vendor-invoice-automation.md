@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841230"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344799"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur pro naskenované dokumenty
 
@@ -34,7 +34,7 @@ Automatické řešení faktur má standardní rozhraní, které přijímá metad
 
 Následující obrázek znázorňuje scénář integrace vzorku, kde se společnost Contoso stala partnerem poskytovatele služeb OCR ke zpracování faktur dodavatele. Dodavatelé společnosti Contoso odesílají faktury poskytovateli služeb e-mailem. Prostřednictvím zpracování OCR poskytovatel služby generuje metadata faktury (záhlaví a řádky) a naskenovanou kopii faktury. Vrstva integrace pak transformuje tyto artefakty tak, aby je bylo možné používat.
 
-![Vzorový scénář integrace](media/vendor_invoice_automation_01.png)
+![Vzorový scénář integrace.](media/vendor_invoice_automation_01.png)
 
 Předchozí scénář umožňuje několik variant v případě, že je nutná integrace faktury. Migrace dat představuje jiný příklad použití tohoto rozhraní k vytvoření faktur a příloh faktur.
 
@@ -92,7 +92,7 @@ V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Opera
 
 Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**. Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**. Můžete provést také stejné akce , které jsou k dispozici ve funkci zpracování výjimek z pracovního prostoru **Správa dat**. Funkce zpracování výjimek byla optimalizována pro funkčního uživatele, což usnadňuje její používání.
 
-![Stránka seznamu výjimek](media/vendor_invoice_automation_02.png)
+![Stránka seznamu výjimek.](media/vendor_invoice_automation_02.png)
 
 Tato stránka seznamu zahrnuje následující pole, která se dodávají prostřednictvím kanálu:
 
@@ -136,7 +136,7 @@ Stránka seznamu výjimek podporuje standardní konstrukty zabezpečení, které
 + Podle uživatelů
 + Podle právnické osoby
 
-![Úloha importu, která je zabezpečena pomocí role uživatele a právnické osoby](media/vendor_invoice_automation_04.png)
+![Úloha importu, která je zabezpečena pomocí role uživatele a právnické osoby.](media/vendor_invoice_automation_04.png)
 
 Pokud je pro úlohu importu faktury nakonfigurované zabezpečení, stránka seznamu výjimek toto nastavení ocení. Uživatelé budou moci zobrazit pouze záznamy výjimky faktury, které jim toto nastavení umožňuje zobrazit.
 

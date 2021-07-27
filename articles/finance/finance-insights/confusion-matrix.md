@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193533"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349051"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Výsledky modelů strojového učení (Preview)
 
@@ -34,7 +34,7 @@ Poté, co je kontrolovaný problém ML vycvičen na sadě historických dat, je 
 
 Vaším cílem je například předpovědět, zda je domácí zvíře pes nebo kočka, na základě některých fyzických a behaviorálních atributů. Pokud máte testovací datovou sadu, která obsahuje 30 psů a 20 koček, matice zmatku může vypadat jako na následujícím obrázku.
 
-![Příklad předpovědi druhů](media/species-prediction-matrix.png)
+![Příklad předpovědi druhů.](media/species-prediction-matrix.png)
 
 Čísla v zelených buňkách představují správné předpovědi. Jak vidíte, model správně předpovídal vyšší procento koček. Celková správnost modelu je snadno vypočitatelná. V tomto případě je to 42 ÷ 50 nebo 0,84.
 
@@ -44,7 +44,7 @@ Většina diskusí o matici zmatku je zaměřena na binární klasifikátory, ja
 
 Dále zvážíme problém klasifikace pro finanční scénář, který má tři stavy. Model předpovídá, zda bude faktura od zákazníka zaplacena včas, pozdě nebo velmi pozdě. Například ze 100 testovacích faktur je 50 zaplaceno včas, 35 zaplaceno pozdě a 15 zaplaceno velmi pozdě. V tomto případě může model vytvořit matici zmatku, která se podobá následující ilustraci.
 
-![Model 1](media/payment-prediction-matrix.png)]
+![Model 1.](media/payment-prediction-matrix.png)]
 
 Matice zmatku poskytuje podstatně více informací než jednoduchá metrika správnosti. Stále je to však relativně snadné pochopit. Matice zmatku vám řekne, zda máte vyváženou datovou sadu, kde výstupní třídy mají podobné počty. Pro scénář pro více tříd vám řekne, jak mylná může být předpověď, když jsou výstupní třídy řadové, jako v předchozím příkladu o platbách zákazníků.
 
@@ -55,7 +55,7 @@ Protože správnost je snadno pochopitelná metrika, je to dobrý výchozí bod 
 
 Pro důkladnější pochopení je však třeba uvést několik problémů, které jsou spojeny se správností. Užitečnost metriky závisí na kontextu problému. Ve vztahu k výkonu modelu často vyvstává otázka: „Jak dobrý je model?“ Odpověď na tuto otázku však nemusí být nutně přímočará. Zvažte následující matici zmatku (model 2).
 
-![Příklad předpovědi platby s větším vzorkem](media/payment-prediction-matrix-2.png)
+![Příklad předpovědi platby s větším vzorkem.](media/payment-prediction-matrix-2.png)
 
 Rychlý výpočet ukazuje, že správnost tohoto modelu je (70 + 10 + 3) ÷ 100 nebo 0,83. Na povrchu se tento výsledek jeví lepší než výsledek pro předchozí model s více třídami (model 1), který má správnost 0,73. Ale je to lepší?
 
@@ -87,7 +87,7 @@ Konečným hlediskem v tomto tématu je pokročilejší měřítko výkonu stroj
 
 Před definováním správnosti F1 je třeba zavést dvě další metriky: přesnost a úplnost. Přesnost označuje, kolik z celkového počtu předpovědí, které jsou zadány jako pozitivní, je správně přiřazeno. Tato metrika je také známá jako pozitivní prediktivní hodnota. Úplnost je celkový počet skutečných pozitivních případů, které byly správně předpovězeny. Tato metrika je také známá jako citlivost.
 
-[![Pravé výsledky vs. falešné výsledky](./media/tn-fn.png)](./media/tn-fn.png)
+[![Pravé výsledky vs. falešné výsledky.](./media/tn-fn.png)](./media/tn-fn.png)
 
 V matici zmatku na předchozím obrázku se tyto metriky počítají následujícím způsobem:
 
@@ -100,7 +100,7 @@ Míra F1 kombinuje přesnost a úplnost. Výsledkem je harmonický průměr obou
 
 Podívejme se na konkrétní příklad. Dříve v tomto tématu byl příklad modelu, který předpovídal, zda je zvíře pes nebo kočka. Ilustrace se zde opakuje.
 
-[![Příklad předpovědi druhů (opakování)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Příklad předpovědi druhů (opakování).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Zde jsou výsledky, pokud je jako pozitivní odpověď použit „pes“.
 
@@ -114,9 +114,9 @@ Ačkoli správnost F1 není tak snadno pochopitelná, přidává k základnímu 
 
 Část [Správnost modelu](#model-accuracy) tohoto tématu porovnala následující dvě matice zmatků. I když první model měl nižší přesnost, byl považován za užitečnější model, protože vykázal větší zlepšení než výchozí odhad včasné platby.
 
-![Příklad předpovědi platby vs. skutečných hodnot](media/payment-prediction-matrix.png)
+![Příklad předpovědi platby vs. skutečných hodnot.](media/payment-prediction-matrix.png)
 
-![Příklad předpovědi platby s větším vzorkem (opakování)](media/payment-prediction-matrix-2.png)
+![Příklad předpovědi platby s větším vzorkem (opakování).](media/payment-prediction-matrix-2.png)
 
 Podívejme se, jak se tyto dva modely porovnávají, když se použije skóre F1. Faktory skóre F1 v přesnosti a úplnosti pro každý stav a výpočet makra F1 poté zprůměruje skóre F1 napříč stavy a určí celkové skóre F1. Existují i jiné varianty F1, ale je mnohem zajímavější zvážit verzi makra, vzhledem ke stejné úvaze, která je věnována všem třem stavům.
 

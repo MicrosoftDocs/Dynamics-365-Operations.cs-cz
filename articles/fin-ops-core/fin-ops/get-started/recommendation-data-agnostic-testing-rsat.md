@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744656"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348648"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostické testování dat pomocí Regression Suite Automation Tool
 
@@ -30,7 +30,7 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
 - Rámec ATL
 - Regression Suite Automation Tool (RSAT)
 
-[![Zkušební pyramida klasifikace](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Zkušební pyramida klasifikace.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Přehled
 -   **Rámec SysTest** – rámec SysTest je spolehlivý pro zapisování testů jednotek. Vzhledem k tomu, že testy jednotek obvykle testují metodu nebo funkci, měly by vždy být agnostické podle dat a záviset pouze na vstupních datech, která jsou poskytována jako součást testu.
@@ -42,7 +42,7 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
     - o Zadejte jedinečné identifikátory, jako například čísla faktur, pomocí číselné řady nebo pomocí funkcí Microsoft Excel jako = =TEXT(NOW(),"yyyymmddhhmm"). Tato funkce zadá jedinečné číslo každou minutu, což umožňuje sledovat, kdy k akci došlo. Lze je použít pro proměnné, jako jsou například čísla příjemek produktů a čísla faktur dodavatele. Tyto testy znovu pracují se stejnou databází i znovu, aniž by bylo nutné provést obnovení.
     - Vždy nastavte **režim úprav** prostředí na **čtení** nebo **úprava** jako první testovací případ, protože výchozí volba je **Auto**. Možnosti **Auto** vždy používají předchozí nastavení a mohou být příčinou nespolehlivých testů. 
  
-    [![Stránka Možnosti, karta Výkon](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Stránka Možnosti, karta Výkon.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Proveďte ověření až poté, co filtrujete určitou transakci namísto obecného ověřování. Například pro počet záznamů můžete filtrovat číslo transakce nebo datum transakce tak, aby ověření vyloučilo všechny ostatní transakce. 
     - Pokud kontrolujete zůstatek odběratele nebo kontrolu rozpočtu, nejprve hodnotu uložte a poté přidejte hodnotu transakce pro ověření očekávaného výsledku namísto ověření pevné očekávané hodnoty. 

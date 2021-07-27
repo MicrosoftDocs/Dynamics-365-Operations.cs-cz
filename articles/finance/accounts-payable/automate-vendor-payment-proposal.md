@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820804"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350639"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatizace návrhů plateb dodavatelům
 
@@ -97,11 +97,11 @@ Doporučujeme, abyste na základě vašich požadavků vyhodnotili, zda bude aut
 
 Po vytvoření řady automatizace návrhu platby dodavateli jsou výskyty pro každou platbu zobrazeny v týdenním zobrazení automatizace procesů. U plateb dodavatelům bylo do pracovního prostoru **Platby dodavatelům** a na stránku **Automatizace procesů** přidáno týdenní zobrazení automatizace procesů.
 
-[![Týdenní zobrazení automatizace procesů v pracovním prostoru Platby dodavatelům](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Týdenní zobrazení automatizace procesů v pracovním prostoru Platby dodavatelům.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Týdenní zobrazení automatizace procesů v pracovním prostoru **Platby dodavatelům** zobrazuje pouze automatizace návrhů plateb dodavatelům. Zobrazuje všechny výskyty plateb za aktuální týden pro všechny právnické osoby, ke kterým má přihlášený uživatel bezpečnostní oprávnění. Pokud je například úředník pro platby závazků zodpovědný za platby ve společnostech USMF a USSI, uvidí výskyty automatizace návrhů plateb dodavatelům pro tyto dvě společnosti, nikoli však pro jiné společnosti.
 
-[![Týdenní zobrazení automatizace procesů pro společnosti USMF a USSI](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Týdenní zobrazení automatizace procesů pro společnosti USMF a USSI.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Každý výskyt zobrazuje společnost, ve které byl nebo bude vytvořen deník plateb. Pokud jsou platby vytvářeny pomocí centralizovaných plateb, zobrazí se společnost, ve které budou platby vytvořeny. Výskyt nutně neukazuje, které faktury společností budou zaplaceny.
 

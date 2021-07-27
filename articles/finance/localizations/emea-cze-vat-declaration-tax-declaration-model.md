@@ -14,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d05f9ff2a248012c34657ae7ca63a8bc844873b8
-ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
+ms.openlocfilehash: fc12449d5ad244a6be04ff2bf6de4d7be57926a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349916"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -351,7 +351,7 @@ Chcete-li automaticky generovat přiznání k DPH, musíte přidružit kódy DPH
 
 6. V poli **Stát** vyberte **Dokončeno** a zkontrolujte parametry.
 
-    [![Záložka s náhledem Podmínky na stránce s parametry specifickými pro aplikaci](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+    [![Záložka s náhledem Podmínky na stránce s parametry specifickými pro aplikaci.](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
 
 7. V podokně Akce volbou **Export** exportujte parametry do souboru XML.
 8. Vyberte konfiguraci **Přiznání k DPH pro Excel (CZ**) a poté v podokně Akce volbou **Import** importujte parametry, pro které jste nakonfigurovali **Přiznání k DPH v XML (CZ)**. 
@@ -380,7 +380,7 @@ Chcete-li automaticky klasifikovat transakci podle kódu subjektu přenesení da
     |---------------|----------------------------|-------------------------------------|---------|
     | Ostatní         | \*Bianko\*                  | \*Neprázdné\*                       | Tento řádek musí být vytvořen, aby se zabránilo generování chybové zprávy u transakcí, které nemají kód přenesení daňové povinnosti. |
 
-[![Vyhledání kódu subjektu](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[![Vyhledání kódu subjektu.](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
 
 ### <a name="set-up-parameters-for-fulfillment-mode-codes"></a>Nastavení parametrů pro kódy režimu plnění
 
@@ -425,7 +425,7 @@ Prodejní transakci lze automaticky klasifikovat, že splňuje podmínku, že ne
 
 6. Zkontrolujte parametry.
 
-    [![Vyhledání podmínky, že neexistuje povinnost vystavit daňový doklad](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+    [![Vyhledání podmínky, že neexistuje povinnost vystavit daňový doklad.](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
 
 7. Aktualizujte pole **Stav** pro všechny parametry na **Dokončeno**.
 
@@ -543,7 +543,7 @@ Chcete-li generovat soubor XML pro přiznání k DPH, postupujte takto.
 
 15. Vyberte **OK**. Po vygenerování přiznání ve formátu XML se stav zprávy změní na **Vygenerováno**.
 
-    [![Elektronická zpráva, která má stav Vygenerováno](media/PicEM.jpg)](media/PicEM.jpg)
+    [![Elektronická zpráva, která má stav Vygenerováno.](media/PicEM.jpg)](media/PicEM.jpg)
 
     Pokud během generování sestavy dojde k chybě, stav zprávy se změní na **Technická chyba**.
 

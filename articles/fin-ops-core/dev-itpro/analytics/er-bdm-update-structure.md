@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750477"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350249"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Aktualizace struktury šablony obchodního dokumentu 
 
@@ -58,7 +58,7 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 
     Nová šablona se otevře v režimu úprav ve vloženém ovládacím prvku Excel Online na stránce editoru šablon.
 
-[![Použití pracovního prostoru pro správu obchodních dokumentů k úpravám šablony obchodního dokumentu](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Použití pracovního prostoru pro správu obchodních dokumentů k úpravám šablony obchodního dokumentu.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Kontrola aktuální struktury upravitelné šablony
 
@@ -68,7 +68,7 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 4. V podokně **Struktura šablony** rozbalte položky **Zpráva \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Všimněte si, že ve struktuře šablon ve Finance je položka **rptHeaderCompLogo** prezentována jako podřízená vůči položce **Zpráva \> Faktura \> rptHeader \> rptHeaderPart1**.
 
-[![Použití pracovního prostoru pro správu obchodních dokumentů ke kontrole aktuální struktury upravitelné šablony](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Použití pracovního prostoru pro správu obchodních dokumentů ke kontrole aktuální struktury upravitelné šablony.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Aktualizace struktury šablony obchodního dokumentu odstraněním obrázku
 
@@ -85,7 +85,7 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 4. V podokně **Struktura šablony** rozbalte položky **Zpráva \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Všimněte si, že položka **rptHeaderCompLogo** již není součástí struktury šablony v aplikaci Finance.
 
-[![Použití pracovního prostoru pro správu obchodních dokumentů k odstranění obrázku z šablony obchodního dokumentu](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Použití pracovního prostoru pro správu obchodních dokumentů k odstranění obrázku z šablony obchodního dokumentu.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Aktualizace struktury šablony obchodního dokumentu přidáním obrázku
 
@@ -97,7 +97,7 @@ Proveďte následující procedury v části [Přehled správy obchodních dokum
 6. V podokně **Struktura šablony** rozbalte položky **Zpráva \> Faktura \> rptHeader \> rptHeaderPart1**.
 7. Všimněte si, že nový obrázek je nyní položkou struktury šablony v aplikaci Finance.
 
-[![Použití pracovního prostoru pro správu obchodních dokumentů k přidání obrázku do šablony obchodního dokumentu](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Použití pracovního prostoru pro správu obchodních dokumentů k přidání obrázku do šablony obchodního dokumentu.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Související odkazy
 

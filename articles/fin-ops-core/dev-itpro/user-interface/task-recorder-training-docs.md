@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a2bc5aa1080709931b3aa71c548a7bf2fb9b1192
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188068"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354286"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
@@ -62,21 +62,21 @@ Při vytváření nového záznamu úkolů nebo založení záznamu na záznamů
 
 Toto je podokno úprav, které se zobrazí při přidání poznámky během vytváření záznamu. Do pole **Nadpis** zadejte poznámku k nadpisu. 
 
-[![Podokno úprav s poznámkou v záhlaví](./media/screen1.png)](./media/screen1.png) 
+[![Podokno úprav s poznámkou v záhlaví.](./media/screen1.png)](./media/screen1.png) 
 
 Toto je vzhled poznámky k nadpisu v bublině v průvodci záznamem úloh. 
 
-[![Vzhled poznámky nadpisu v Průvodci záznamem úloh](./media/screen2.png)](./media/screen2.png)
+[![Vzhled poznámky nadpisu v Průvodci záznamem úloh.](./media/screen2.png)](./media/screen2.png)
 
 -   **Poznámky:** Poznámka k poznámkám se zobrazí za textem kroku, který Záznamník úkolů automaticky vygeneruje. V průvodci úkolem bude viditelná, pouze pokud uživatel klikne na odkaz **Zobrazit více** v bublině v průvodci úkolem. Použijte tento typ poznámky, chcete-li popsat cokoli, co musí uživatel znát pro dokončení kroku.
 
 Toto je podokno úprav, které se zobrazí při přidání poznámky během vytváření záznamu. Do pole **Poznámky** zadejte poznámku k poznámkám. 
 
-[![Podokno úprav s komentářem v poli Poznámky](./media/screen3.png)](./media/screen3.png) 
+[![Podokno úprav s komentářem v poli Poznámky.](./media/screen3.png)](./media/screen3.png) 
 
 Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 
-[![Vzhled anotace Poznámky v Průvodci záznamem úloh](./media/screen4.png)](./media/screen4.png)
+[![Vzhled anotace Poznámky v Průvodci záznamem úloh.](./media/screen4.png)](./media/screen4.png)
 
 -   **Informační krok**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok.** Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci, nebo pro účely odkazování na jiné záznamy (však v poznámkách nelze vytvořit hypertextové odkazy).
 

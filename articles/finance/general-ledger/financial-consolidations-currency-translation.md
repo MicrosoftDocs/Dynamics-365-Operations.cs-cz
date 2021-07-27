@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193898"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345373"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -66,13 +67,13 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje konsolidace 
 ## <a name="legal-entity-setup"></a>Nastavení právnické osoby
 Před zpracováním konsolidace je nutné nakonfigurovat právnickou osobu. Konsolidaci lze spustit tolikrát, kolikrát budete potřebovat, a všechna data budou převedena z měny účetnictví zdrojové společnosti na měnu, která je definována pro konsolidační společnost. Proto pro následující organizační strukturu, pokud musíte převést všechny severoamerické společnosti nejprve na americké dolary (USD) a poté na eura (EUR), měnu mateřské společnosti, musíte mít alespoň dvě konsolidační společnosti.
 
-![Organizační struktura](./media/organizational-structure.png "Organizační struktura")
+![Organizační struktura.](./media/organizational-structure.png "Organizační struktura")
 
 V předchozí organizační struktuře musíte mít pro konsolidaci v Severní Americe právnickou osobu, protože konsolidace vždy konsolidují z účetní měny zdrojové společnosti na měnu konsolidační společnosti. V příkladu, pokud jsou všechny společnosti zahrnuty do jediné konsolidace, bude mexická dceřiná společnost převedena z mexických pesos (MXN) na EUR, nikoliv z MXN na USD na EUR.
 
 Když vytvoříte právnickou osobu, můžete specifikovat, zda je společnost použita jak pro konsolidační proces, tak pro proces eliminace, nebo pouze pro jeden z těchto procesů. Na následujícím obrázku se společnost používá pro oba tyto procesy. Všimněte si, že nelze zaúčtovat denní deníky v konsolidované společnosti, ale lze je zaúčtovat ve společnosti eliminace. Proto můžete chtít samostatnou společnost eliminace.
 
-![Právnická osoba, která je použita pro konsolidaci i eliminaci](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci i eliminaci")
+![Právnická osoba, která je použita pro konsolidaci i eliminaci.](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci i eliminaci")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hlavní účty a skupiny konsolidačních účtů
 Jednu volbu, kterou musíte provést, je to, jak chcete konsolidovat svou účtovou osnovu. Během procesu konsolidace existují tři možnosti pro konsolidaci hlavních účtů.
@@ -81,11 +82,11 @@ První možností je použití hlavních účtů ze zdrojové společnosti. V ta
 
 Druhou možností je zadat výchozí konsolidační účet na stránce **Hlavní účty**. Účet bude poté namapován na konsolidační účet. Tato možnost může být užitečná, pokud máte různé účtové osnovy nebo musíte mapovat na osnovu, která je definována ústředím.
 
-![Na stránce hlavního účtu byl zadán výchozí konsolidační účet](./media/main-accounts.png "Na stránce hlavního účtu byl zadán výchozí konsolidační účet")
+![Na stránce hlavního účtu byl zadán výchozí konsolidační účet.](./media/main-accounts.png "Na stránce hlavního účtu byl zadán výchozí konsolidační účet")
 
 Třetí možností je použití skupiny konsolidačních účtů. Můžete definovat tolik skupin konsolidačních účtů, kolik potřebujete. Poté na stránce **Další konsolidační účty** jen namapujete hlavní účet z účetní osnovy na účet, který pro tuto skupinu vyžadujete.
 
-![Mapování na stránce Další konsolidační účty](./media/additional-consolidation-accounts.png "Mapování na stránce Další konsolidační účty")
+![Mapování na stránce Další konsolidační účty.](./media/additional-consolidation-accounts.png "Mapování na stránce Další konsolidační účty")
 
 ## <a name="consolidating-online"></a>Online konsolidace
 Chcete-li získat informace o zadání podrobností online konsolidace, přečtěte si téma [Online finanční konsolidace](./consolidate-online.md).
@@ -97,7 +98,7 @@ Chcete-li zobrazit výsledky konsolidace, máte několik možností:
 - Zkontrolujte stránku se seznamem **Předvaha** v konsolidační společnosti.
 - V seznamu transakcí konsolidace na stránce **Konsolidace** zobrazte zůstatky vytvořené podle data pro každou zdrojovou společnost pro každé období.
 
-    ![Transakce konsolidace na stránce konsolidace](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
+    ![Transakce konsolidace na stránce konsolidace.](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
 
 Pokud chcete spustit konsolidaci znovu, můžete zpracovat pouze konsolidaci. Případně vyberte nejprve **Odebrat transakce** na stránce **Konsolidace**.
 V případě, že zůstatky na vašem konsolidovaném účtu nejsou přesné, lze tyto zůstatky opravit pomocí stránky **Úpravy v dpbě uzávěrky**.
@@ -118,7 +119,7 @@ Nastavení pro eliminace naleznete v části **Nastavení** modulu **Konsolidace
 
 Můžete podle potřeby nastavit datum, kdy pravidlo eliminace nabude platnosti, a datum jeho vypršení. Musíte nastavit volbu **Aktivní** na **Ano**, pokud chcete, aby bylo pravidlo eliminace k dispozici v procesu návrhu eliminace. Vyberte název deníku typu **Eliminace**.
 
-![Základní vlastnosti pravidla eliminace](./media/ledger-elimination-rule-journal.png "Základní vlastnosti pravidla eliminace")
+![Základní vlastnosti pravidla eliminace.](./media/ledger-elimination-rule-journal.png "Základní vlastnosti pravidla eliminace")
 
 Po definování základních vlastností zvolte **Řádky** pro definování skutečných pravidel zpracování. Existují dvě možnosti pro eliminace: eliminace změny čisté částky nebo určení pevné částky.
 
@@ -126,7 +127,7 @@ Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*
 
 Po výběru zdrojových účtů použijte pole **Specifikace účtu** pro určení účtu, který se používá z cílové společnosti. Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný ve zdrojovém účtu. Vyberete-li možnost **Definováno uživatelem**, je nutné zadat cílový účet.
 
-![Stránka řádku pravidla eliminace hlavní knihy](./media/ledger-elimination-rule-line.png "Stránka řádku pravidla eliminace hlavní knihy")
+![Stránka řádku pravidla eliminace hlavní knihy.](./media/ledger-elimination-rule-line.png "Stránka řádku pravidla eliminace hlavní knihy")
 
 Pole **Specifikace dimenze** funguje jako pole **Specifikace účtu**. Vyberte **Zdroj** pro použití stejné dimenze v cílové společnosti a ve zdrojové společnosti. Vyberete-li **Definováno uživatelem**, je třeba určit dimenze v cílové společnosti volbou **Cílové dimenze**. Pak vyberte zdrojové dimenze, finanční dimenze a hodnoty, které slouží jako zdroj eliminace.
 

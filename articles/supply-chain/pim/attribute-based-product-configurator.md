@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812919"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359094"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Prodejní ceny podle atributů pro konfiguraci produktu založeného na omezeních
 
@@ -33,7 +33,7 @@ Nastavení výchozí měny:
 1. Otevřete kartu **Modely konfigurace produktů založených na omezeních**.
 1. Otevřete rozevírací seznam **Výchozí měna** a vyberte měnu.
 
-    ![Nastavení výchozí měny pro konfiguraci produktu založeného na omezeních](media/prod-config-currency.png "Nastavení výchozí měny pro konfiguraci produktu založeného na omezeních")
+    ![Nastavení výchozí měny pro konfiguraci produktu založeného na omezeních.](media/prod-config-currency.png "Nastavení výchozí měny pro konfiguraci produktu založeného na omezeních")
 
 1. Pokud chcete připojit excelovýc soubor s rozpisem cen pro všechny řádky objednávky nebo nabídky, pak v oddílu **Cenový model** nastavte možnost **Připojit** na *Ano*.
 
@@ -60,7 +60,7 @@ Následující příklad ukazuje základní cenu statického čísla 899,95 EUR
 - Za povrchovou úpravu skříně z růžového dřeva připočítejte 119,95 EUR.
 - Připočítejte 12,95 EUR za každou jednotku výšky reproduktoru.
 
-![Příklad cenového modelu](media/prod-config-rules-example.png "Příklad cenového modelu")
+![Příklad cenového modelu.](media/prod-config-rules-example.png "Příklad cenového modelu")
 
 ## <a name="add-support-for-multiple-currencies"></a>Přidání podpory pro více měn
 
@@ -81,7 +81,7 @@ Postup přidání explicitních cen v další měně:
 
 V níže uvedeném příkladu je výchozí měna _EUR_ a měna _USD_ byla přidána jako další měna.
 
-![Příklad modelu s více měnami](media/prod-config-rules-currency-example.png "Příklad modelu s více měnami")
+![Příklad modelu s více měnami.](media/prod-config-rules-currency-example.png "Příklad modelu s více měnami")
 
 > [!NOTE]
 > Nelze přidat pravidla výrazu, která jsou jedinečná pro jinou než výchozí měnu. Chcete-li vytvořit pravidla výrazu, která by byla relevantní pouze pro jinou měnu než výchozí měnu, nastavte výraz ceny pro výchozí měnu na nulu. Poté nastavte odpovídající výraz pro jinou než výchozí měnu.
@@ -93,11 +93,11 @@ Chcete-li otestovat, jak prodejní ceny fungují v konfigurační relaci, otevř
 - Pomocí zde nabízeného nastavení konfigurace vyberte možnosti produktu a poté zjistěte, jak ovlivňují zobrazenou hodnotu **Cena a datum expedice**.
 - Výběrem **Zobrazit rozúčtování ceny** si stáhnete excelový dokument, který zobrazuje veškeré podrobnosti o tom, jak byla cena vypočítána.
 
-![Otestování modelu produktu](media/prod-config-test.png "Otestování modelu produktu")
+![Otestování modelu produktu.](media/prod-config-test.png "Otestování modelu produktu")
 
 Stažená tabulka zobrazuje absolutní hodnotu i příspěvek jako procento pro každý element aktivní ceny. Pokud jste na stránce **Parametry modulu řízení informací o produktu** nastavili možnost cenového modelu **Připojit**, připojí se tato excelová stránka k řádku objednávky nebo nabídky.
 
-![Excelová tabulka zobrazující rozpis cen](media/prod-config-excel-example.png "Excelová tabulka zobrazující rozpis cen")
+![Excelová tabulka zobrazující rozpis cen.](media/prod-config-excel-example.png "Excelová tabulka zobrazující rozpis cen")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Nastavení kritérií výběru pro cenové modely
 
@@ -116,7 +116,7 @@ Nastavení kritérií výběru pro cenové modely:
     - **Platné od** – Určete první den, kdy se dotaz použije.
     - **Ukončit platnost k datu** – Určete poslední datum, kdy se dotaz použije.
 
-    ![Kritéria cenového modelu](media/prod-config-price-model-criteria.png "Kritéria cenového modelu")
+    ![Kritéria cenového modelu.](media/prod-config-price-model-criteria.png "Kritéria cenového modelu")
 
 1. Vyberte řádek pro dotaz, který chcete definovat, a poté v **Podoknu akcí** vyberte **Upravit**. Otevře se dialogové okno návrháře dotazů. Funguje jako většina návrhářů dotazů v aplikaci Supply Chain Management. Slouží k definování podmínek, za kterých by měl být použit cenový model pro vybraný řádek.
 
@@ -137,7 +137,7 @@ Posledním krokem je určení prodejních cen založených na atributech pro ver
 1. Vyberte cílový model konfigurace produktu.
 1. V podokně akcí otevřete kartu **Model** a ve skupině **Podrobnosti modelu produktu** vyberte **Verze**.
 1. Otevře se stránka **Verze**. Ujistěte se, že **Metoda cenových kalkulací** je nastavená na **Na základě atributů**.
-    ![Nastavení metody cenových kalkulací podle atributů](media/prod-config-versions.png "Nastavení metody cenových kalkulací podle atributů")
+    ![Nastavení metody cenových kalkulací podle atributů.](media/prod-config-versions.png "Nastavení metody cenových kalkulací podle atributů")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

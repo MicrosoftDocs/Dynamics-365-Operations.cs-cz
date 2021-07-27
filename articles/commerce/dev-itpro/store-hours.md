@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348235"
 ---
 # <a name="create-and-update-store-hours"></a>Vytvoření a aktualizace pracovní doby obchodu
 
@@ -49,14 +49,14 @@ Chcete-li nakonfigurovat pracovní dobu obchodu, postupujte následovně.
     > [!NOTE]
     > Je možné vytvořit více šablon, které se překrývají s počátečním a koncovým datem. Lze tedy například definovat pracovní dobu obchodu pro obchody v různých časových pásmech.
 
-    ![Dialogové okno Přidat rozsah](../dev-itpro/media/Storehours1.png "Dialogové okno Přidat rozsah")
+    ![Dialogové okno Přidat rozsah.](../dev-itpro/media/Storehours1.png "Dialogové okno Přidat rozsah")
 
 4. Přiřaďte k šabloně pracovní doby obchodu obchody, kde bude použita. V dialogovém okně **Vybrat uzly organizace** vyberte obchody, oblasti a organizace, ke kterým má být daná šablona přidružena.
 
     - Ke každému obchodu lze přidružit pouze jednu šablonu pracovní doby obchodu.
     - Pomocí tlačítek se šipkami vyberte obchody, regiony nebo organizace. Kalendář bude k dispozici pro obchody nebo skupiny obchodů a bude viditelný na POS pro referenci.
 
-    ![Dialogové okno Vybrat organizační uzly](../dev-itpro/media/Storehours2.png "Dialogové okno Vybrat organizační uzly")
+    ![Dialogové okno Vybrat organizační uzly.](../dev-itpro/media/Storehours2.png "Dialogové okno Vybrat organizační uzly")
 
 5. Na stránce **Plán distribuce** spusťte úlohy **1070** a **1090**, které umožní POS zpřístupnit pracovní dobu.
 
@@ -75,7 +75,7 @@ Pomocí následujících kroků přidejte do tištěných příjemek POS pracovn
 
 Příjemky POS nyní zahrnují pracovní dobu obchodu. Pokud byly do šablony zahrnuty nějaké svátky, zobrazí se na účtence.
 
-![Příklad účtenky](../dev-itpro/media/Storehours3.png "Příklad účtenky")
+![Příklad účtenky.](../dev-itpro/media/Storehours3.png "Příklad účtenky")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

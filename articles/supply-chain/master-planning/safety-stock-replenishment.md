@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841784"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353509"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Splnění rezervních zásob položek
 
@@ -72,37 +72,50 @@ Následující scénář zobrazuje fungování tohoto parametru a rozdíly mezi 
 > [!NOTE]
 > Pro všechny ilustrace v tomto tématu představuje osa X zásoby, osa Y představuje dny, pruhy představují úroveň zásob, šipky představují transakce, jako například řádky prodejní objednávky, řádky nákupní objednávky nebo plánované objednávky.
 
-[![Běžný scénář pro splnění rezervních zásob](./media/Scenario1.png)](./media/Scenario1.png) Parametr **Splnit minimum** může mít následující hodnoty:
+[![Běžný scénář plnění pojistných zásob.](./media/Scenario1.png)](./media/Scenario1.png)
+Parametr **Minimum splnění** může mít následující hodnoty:
 ### <a name="todays-date"></a>Dnešní datum 
 Určené minimální množství je dosaženo v den spuštění hlavního plánování. Systém se pokusí naplnit limit rezervních zásob co nejdříve, i v případě, že to může být nereálné z důvodu doby realizace. 
-[![Požadavek na dnešní datum](./media/TodayReq.png)](./media/TodayReq.png) Plánovaná objednávka P1 je vytvořena pro dnešní den, aby doplnila dostupné zásoby nad úroveň rezervních zásob k tomuto datu. Řádky prodejní objednávky S1 až S3 nadále snižují úroveň zásob. Plánované objednávky P2 až P4 jsou vygenerovány hlavním plánováním tak, aby se úroveň skladu vrátila na rezervní limit po každém požadavku prodejní objednávky.
+[![Požadavek k dnešnímu dni.](./media/TodayReq.png)](./media/TodayReq.png)
+Plánovaná objednávka P1 je vytvořena pro dnešní den, aby doplnila dostupné zásoby nad úroveň rezervních zásob k tomuto datu. Řádky prodejní objednávky S1 až S3 nadále snižují úroveň zásob. Plánované objednávky P2 až P4 jsou vygenerovány hlavním plánováním tak, aby se úroveň skladu vrátila na rezervní limit po každém požadavku prodejní objednávky.
 Při použití kódu disponibility **Požadavek** se vytvoří více plánovaných objednávek. Vždy je vhodné použít buď disponibilitu **Období** nebo **Min/Max** pro často poptávané položky a materiály za účelem seskupení doplnění. Následující obrázek znázorňuje příklad kódu disponibility **Období**.
-[![Období. Dnešní datum](./media/TodayPeriod.png)](./media/TodayPeriod.png) Následující obrázek znázorňuje příklad kódu disponibility **Min/Max**.
-[![Min/Max. Dnešní datum](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Období. Dnešní datum.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Následující obrázek znázorňuje příklad kódu disponibility **Min/max**.
+[![MinMax. Dnešní datum.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Dnešní datum a čas pořízení 
 Určené minimální množství je dosaženo v den spuštění hlavního plánování plus doba realizace nákupu nebo výroby. Tento čas zahrnuje případnou bezpečné marže. Existuje-li pro položku obchodní smlouva a současně je zaškrtnuto políčko **Najít obchodní dohody** na stránce **Parametry hlavního plánování**, nebude brána v úvahu doba realizace dodávky uvedená v obchodní smlouvě. Doba realizace je převzata z položky nebo z nastavení disponibility položky.
 Tento režim plnění vytvoří plány s menším zpožděním a s méně plánovanými objednávkami, bez ohledu na skupinu disponibility nastavenou pro položku. Následující obrázek znázorňuje výstup plánu, pokud je kód disponibility **Požadavek** nebo **Období**.  
-[![Požadavek. Období. Dnešní datum a doba realizace](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Následující obrázek znázorňuje výstup plánu, pokud je kód disponibility **Min/Max**.  
-[![MinMax. Dnešní datum a doba realizace](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Požadavek. Období Dnešní datum a doba realizace.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+Následující obrázek znázorňuje výstup plánu, pokud je kód disponibility **Min./max.**  
+[![MinMax. Dnešní datum a doba realizace.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>První výdej 
 Zadané minimální množství je dosaženo v den přechodu dostupných zásob pod minimální úroveň, jak je uvedeno na následujícím obrázku. I v případě, že jsou dostupné zásoby pod minimální úrovni k datu, kdy bude spuštěno hlavní plánování, **První vydání** se ho nepokusí pokrýt, dokud nepřijde další požadavek.
 Následující obrázek znázorňuje příklad kódu disponibility **Požadavek**.
-[![Plánování položky s kódem disponibility **Požadavek** a plněním **První vydání**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Na následujícím obrázku je uveden příklad kódu disponibility **Období**.
-[![Plánování položky s kódem disponibility **Období** a plněním **První vydání**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Na následujícím obrázku je uveden příklad kódu disponibility **Min/Max**.
-[![Plánování položky s kódem disponibility **MinMax** a plněním **První vydání**](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) V den spuštění hlavního plánování, pokud jsou dostupné zásoby již pod limitem rezervních zásob, spustí **Dnešní datum** a **Dnešní datum a čas pořízení** doplnění okamžitě. **První vydání** počká na položku, dokud nedojde k další výdejové transakci, jako je například prodejní objednávka a požadavek na řádek kusovníku, a poté spustí doplnění v den této transakce. V den spuštění hlavního plánování, pokud nejsou dostupné zásoby pod limitem rezervních zásob, možnosti **Dnešní datum** a **První vydání** poskytnou přesně stejný výsledek, jako je znázorněno na obrázku níže. 
+[![Plánování položky s kódem disponibility **Požadavek** a plněním **První vydání**.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Následující obrázek znázorňuje příklad kódu disponibility **Období**.
+[![Plánování položky s kódem disponibility **Období** a plněním **První vydání**.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Následující obrázek znázorňuje příklad kódu disponibility **Min/max**.
+[![Plánování položky s kódem disponibility **MinMax** a plněním **První vydání**.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+V den spuštění hlavního plánování, pokud jsou dostupné zásoby již pod limitem rezervních zásob, spustí **Dnešní datum** a **Dnešní datum a čas pořízení** doplnění okamžitě. **První vydání** počká na položku, dokud nedojde k další výdejové transakci, jako je například prodejní objednávka a požadavek na řádek kusovníku, a poté spustí doplnění v den této transakce. V den spuštění hlavního plánování, pokud nejsou dostupné zásoby pod limitem rezervních zásob, možnosti **Dnešní datum** a **První vydání** poskytnou přesně stejný výsledek, jako je znázorněno na obrázku níže. 
 
-[![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) V den spuštění hlavního plánování, pokud nejsou dostupné zásoby pod limitem rezervních zásob, možnost **Dnešní datum a šas pořízení** poskytne následující výsledek, protože odloží plnění až do konce doby realizace pořízení.
-![Plánování položky s kódem disponibility **Požadavek** a plněním **První vydání**](./media/ReqTodayLT.png)
+[![NotUnderLimit.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+V den spuštění hlavního plánování, pokud nejsou dostupné zásoby pod limitem rezervních zásob, možnost **Dnešní datum a čas pořízení** poskytne následující výsledek, protože odloží plnění až do konce doby realizace pořízení.
+![Plánování položky s kódem disponibility **Požadavek** a plněním **První vydání**.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Ochranná doba disponibility
 Nastavené minimální množství je dosaženo během časového období uvedeného v poli **Ochranná doba disponibility**. Tato možnost je užitečná, když hlavní plánování neumožňuje použití dostupných zásob pro skutečné objednávky, jako jsou například prodejní objednávky nebo převody, při pokusu o udržení úrovně rezervních zásob. V dalších verzích však tento způsob doplnění nebude již zapotřebí a tato možnost bude zastaralá.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>Plánování doplnění rezervních zásob pro položky FEFO
 Kdykoli v čase se pro rezervní zásoby použije příjem na sklad s nejpozdějším datem vypršení, aby se umožnilo splnění skutečné poptávky, jako jsou řádky prodejní objednávky nebo kusovníku, v FEFO pořadí.
 Abychom si vysvětlili, jak to funguje, předpokládejme následující situaci.
-[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) Při spuštění plánování se pokryje první prodejní objednávka ze stávajících zásob na skladě a další nákupní objednávka pro zbývající množství.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) Vytvoří se plánovaná objednávka, aby se zajistilo, že jsou dostupné zásoby doplněny zpět na limit rezervních zásob.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) Při plánování druhé prodejní se použije pro pokrytí tohoto množství dříve vytvořená plánovaná objednávka pokrývající limit rezervních zásob. Z tohoto důvodu se rezervní zásoby stále vrací.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Nakonec se vytvoří jiná plánovaná objednávka k pokrytí rezervních zásob.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Všechny dávky vyprší odpovídajícím způsobem a plánované objednávky budou vytvořeny k doplnění rezervních zásob po jejich vypršení.
+[![FEFOScenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+Při spuštění plánování se pokryje první prodejní objednávka ze stávajících zásob na skladě a další nákupní objednávka pro zbývající množství.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+Vytvoří se plánovaná objednávka, aby se zajistilo, že jsou dostupné zásoby doplněny zpět na limit rezervních zásob.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+Při plánování druhé prodejní se použije pro pokrytí tohoto množství dříve vytvořená plánovaná objednávka pokrývající limit rezervních zásob. Z tohoto důvodu se rezervní zásoby stále vrací.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Nakonec se vytvoří jiná plánovaná objednávka k pokrytí rezervních zásob.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Všechny dávky vyprší odpovídajícím způsobem a plánované objednávky budou vytvořeny k doplnění rezervních zásob po jejich vypršení.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Jak hlavní plánování zachází s omezením rezervních zásob
 

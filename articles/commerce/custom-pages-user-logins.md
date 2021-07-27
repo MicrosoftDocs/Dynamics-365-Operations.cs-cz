@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936773"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349643"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
@@ -40,7 +40,7 @@ Vlastní stránky Commerce lze sestavit pomocí modulu přihlášení, registrac
 
 Po nastavení klienta Azure AD B2C a jeho přidružení k prostředí Commerce přejděte na stránku **Azure AD B2C** na portálu Azure a pak v nabídce v části **Zásady** vyberte možnost **Toky uživatelů (zásady)**.
 
-![Příkaz Toky uživatelů (zásady) v nabídce](./media/B2C_CustomPage_PoliciesMenu.png)
+![Příkaz Toky uživatelů (zásady) v nabídce.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Nyní můžete nakonfigurovat toky přihlášení uživatelů „Registrace a přihlášení“ a „Resetování hesla“.
 
@@ -54,13 +54,13 @@ Chcete-li konfigurovat zásadu „Registrace a přihlášení“, postupujte pod
 1. Ve sloupci **Shromáždit atribut** zaškrtněte políčka **E-mailová adresa**, **Křestní jméno** a **Příjmení**.
 1. Ve sloupci **Vrátit deklaraci identity** zaškrtněte políčka **E-mailová adresa**, **Křestní jméno**, **Poskytovatelé identit**, **Příjmení** a **ID objektu uživatele**.
 
-    ![Vybrané atributy a deklarace identity](./media/B2C_SignInSignUp_Attributes.png)
+    ![Vybrané atributy a deklarace identity.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Zvolte **OK** pro vytvoření zásady.
 1. Poklepejte na název nové zásady a poté v navigačním podokně vyberte možnost **Vlastnosti**.
 1. Nastavte možnost **Povolit JavaScript s vynucením rozložení stránky (Preview)** na **Zapnuto**.
 
-    ![Stránka vlastností pro novou zásadu](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Stránka vlastností pro novou zásadu.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Název zásady bude plně odkazován v prostředí Commerce. (Předpona **B2C\_1\_** bude zahrnuta do odkazu.) Zásady nelze po vytvoření přejmenovat. Pokud nahrazujete existující zásady pro vaše prostředí Commerce, můžete odstranit původní zásady a vytvořit novou zásadu se stejným názvem. Je-li však prostředí již zřízeno, můžete název nové zásady odeslat prostřednictvím požadavku na službu.
@@ -148,9 +148,9 @@ Chcete-li aktualizovat zásadu „Registrace a přihlášení“ o informace o v
     1. Pro atributy **Křestní jméno** a **Příjmení** vyberte v poli **Vyžaduje ověření** hodnotu **Ne**.
     1. Pro atribut **Emailová adresa** doporučujeme ponechat výchozí hodnotu **Ano** vybranou ve sloupci **Vyžaduje ověření**. Tato možnost zajišťuje, že uživatelé, kteří se registrují pomocí dané e-mailové adresy, ověří, že e-mailovou adresu vlastní.
     1. Pro atributy **E-mailová adresa**, **Křestní jméno** a **Příjmení** vyberte ve sloupci **Volitelné** hodnotu **Ne**.
-1. Zvolte **Uložit**.
+1. Zvolte možnost **Uložit**.
 
-    ![Konfigurace zásady stránky pro registraci místního účtu](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfigurace zásady stránky pro registraci místního účtu.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Aktualizace zásady „Úprava profilu“ o informace o vlastní stránce
 
@@ -188,11 +188,11 @@ V knihovně modulů jsou moduly přihlášení předvyplněny výchozími texto
 
 Například výchozí text odkazu zapomenutého hesla je **Zapomenuté heslo?**. Tento výchozí text je zobrazen na přihlašovací stránce.
 
-![Výchozí text odkazu zapomenutého hesla na přihlašovací stránce](./media/B2C_SignUp_ModuleFace.png)
+![Výchozí text odkazu zapomenutého hesla na přihlašovací stránce.](./media/B2C_SignUp_ModuleFace.png)
 
 V souboru global.json pro modul přihlášení v knihovně modulů je však možné upravit text na **Zapomněli jste heslo?**, jak je znázorněno na následujícím obrázku.
 
-![Aktualizovaný text odkazu v souboru global.json v modulu přihlášení](./media/B2C_CustomizingStringsForModule.png)
+![Aktualizovaný text odkazu v souboru global.json v modulu přihlášení.](./media/B2C_CustomizingStringsForModule.png)
 
 Po aktualizaci souboru global.json a publikování změn se nový text odkazu zobrazí v modulu přihlášení, a to jak v řešení Commerce, tak na aktivní přihlašovací stránce.
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4003bd78e400994f3c164d2f7e8e3aa5ce93146
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76b8111ddc9e634ce689999da7b8621f550afc5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802062"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349569"
 ---
 # <a name="define-channel-specific-discounts"></a>Definování slev specifických pro kanál
 
@@ -37,7 +37,7 @@ Commerce používá cenové skupiny pro definování slev specifických pro kan�
 
 ## <a name="price-groups"></a>Cenové skupiny
 
-[![Cenové skupiny](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Cenové skupiny.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Ve výše uvedeném diagramu je znázorněn vztah mezi entitami, které mohou být v transakci (kanál, katalog, umístění, odběratel, věrnostní karta), a různými typy slev, které lze konfigurovat. Ke všem transakcím dochází v kanálu, takže přítomnost kanálu v transakci je zaručena. Zbývající entity jsou volitelné. Na všech stránkách hlavních dat se nachází odkaz na související stránku cenové skupiny, na které si můžete prohlédnout cenové skupiny a v případě potřeby přidat další. Cenová skupina se používá k propojení čtyř typů entit se slevami, úpravami cen a obchodními smlouvami. Doporučujeme, abyste si naplánovali princip, jakým budete cenové skupiny pojmenovávat, aby se vám dobře spravovaly. Jednou z možností je použít písmeno či číslo jako předponu nebo příponu, podle které bude možné rozlišit různé typy. Název ve formátu „1-xxxxx“ může například odkazovat na cenové skupiny pro kanály a název ve formátu „2-xxxxx“ na cenové skupiny pro katalog. Existují čtyři stránky s dotazy – každá z nich je zaměřená na entity commerce, které mohou mít přidruženy slevy.
 

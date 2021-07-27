@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822532"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354101"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Nastavení preferovaných pracovníků údržby
 
@@ -59,7 +59,7 @@ Upřednostňovaný pracovník údržby nebo skupina pracovníků může souviset
 
     [!NOTE] Obecně platí, že když je při plánování pracovních příkazů vybrán preferovaný pracovník údržby, Správa majetku projde všechny záznamy **Preferovaní pracovníci údržby** a zkontroluje možné odpovídající položky. Vždy nejprve zkontroluje nejkonkrétnější kombinaci. Pokud není nalezena žádná shoda, bude použit "výchozí" záznam s výběrem v poli **Skupina preferovaných pracovníků údržby** nebo **Preferovaný pracovník údržby**.
 
-![Obrázek č. 1](media/02-work-order-scheduling.png)
+![Obrázek č. 1.](media/02-work-order-scheduling.png)
 
 Můžete také nastavit *odpovědné* pracovníky údržby, kteří mohou být vybráni při vytvoření požadavku na údržbu nebo pracovního příkazu. Ve **Všech pracovních příkazech** a **Všech požadavcích na údržbu** můžete výběr v případě potřeby upravit. Další informace naleznete v části [Odpovědní pracovníci údržby](../setup-for-maintenance-requests/responsible-workers.md).
 

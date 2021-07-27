@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bef79df8d9806771f87a6f77a0c9094887050646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 112d3d37d1f70218265f264cda7ecefcb76f1f67
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822196"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343855"
 ---
 # <a name="budget-planning-data-allocation"></a>Přidělení dat pro plánování rozpočtu
 
@@ -36,28 +36,28 @@ Tři metody přidělení (Přidělit napříč obdobími, Přidělit k dimenzím
 > [!NOTE] 
 > Jedinečný scénář by měl být použit pro agregaci, která se liší od scénáře používaného pro distribuci nebo jiné úpravy, které byly dříve provedeny v nadřazeném plánu.  
 
-[![Metoda přidělení Přidělit napříč obdobími](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![Metoda přidělení Přidělit napříč obdobími.](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Přidělit napříč obdobími** – kategorie přidělení období slouží k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími k cílovému scénáři. Zdrojová částka je přiřazena k více řádkům v cílovém scénáři na základě procenta a data, které jsou definované v rámci kategorie přidělení období.         
 
-[![Metoda přidělení Přidělit k dimenzím](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![Metoda přidělení Přidělit k dimenzím.](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Přidělit k dimenzím** – řádky plánu rozpočtu jsou přiřazeny ze zdrojového scénáře plánování rozpočtu k jednomu nebo více řádkům v cílovém scénáři na základě procent a finančních dimenzí, které jsou definovány ve vybrané podmínce přidělení rozpočtu.           
 
-![Graf agregace](./media/aggregatechart-300x230.png)
+![Graf agregace.](./media/aggregatechart-300x230.png)
 **Agregovat** – řádky plánu rozpočtu jsou agregovány ze zdrojového scénáře plánu rozpočtu v přidružených (podřízených) plánech rozpočtu do cílového scénáře v nadřazeném plánu rozpočtu. Tato metoda umožňuje částky rozpočtu, které jsou připraveny na nižší úrovni v organizaci pro konsolidaci na vyšší úrovni.          
 
-[![Graf rozdělení](./media/distributechart-300x230.png)](./media/distributechart.png)
+[![Graf rozdělení.](./media/distributechart-300x230.png)](./media/distributechart.png)
 **Rozdělit** – řádky plánu rozpočtu jsou rozděleny ze zdrojového scénáře plánování rozpočtu v nadřazenému plánu rozpočtu do cílového scénáře v přidružených (podřízených) plánech rozpočtu na základě finančních dimenzí organizačních jednotek přidružených plánů. Tato metoda umožňuje částky rozpočtu, které jsou připraveny na vyšší úrovni v organizaci k rozšíření pro účely lokalizovanější kontroly.           
 
-[![Pravidla přidělení hlavní knihy](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![Pravidla přidělení hlavní knihy.](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Použít pravidla přidělení hlavní knihy** – řádky plánu rozpočtu jsou rozděleny ze zdrojového scénáře plánování rozpočtu do cílového scénáře na základě vybraného pravidla přidělení hlavní knihy. 
 
-[![Kopírovat z plánu rozpočtu](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+[![Kopírovat z plánu rozpočtu.](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopírovat z plánu rozpočtu** – stejně jako u přidělovací metody Rozdělení jsou řádky plánu rozpočtu vytvořeny v cíli na základě řádků v souvisejícím plán rozpočtu. Pro tuto metodu však zdrojový plán rozpočtu nemusí být nadřazený, může však být na libovolné vyšší úrovni v hierarchii plánu rozpočtu. Tato metoda přidělení je užitečná, pokud jsou konsolidované částky původně rozpočtované na výrazně vyšší úrovni a předtím, než obdrží schválení vyšší úrovně, musí být převedeny na nižší úroveň organizace pro podrobnou kontrolu a úpravy.          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Použití metod přidělení v plánu rozpočtu
 Pokud chcete provést přidělení na stránce plánu rozpočtu, vyberte řádky k přidělení a klikněte na tlačítko **Přidělit rozpočet**.
 
-[![Tlačítko Přidělit rozpočet](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Tlačítko Přidělit rozpočet.](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Dále vyberte metodu přidělení. Zbývající pole se poté nastaví na základě metody, kterou jste vybrali. Tato pole zahrnují zdrojová a cílová data plánu rozpočtu a možnosti, které umožňují znásobit zdroj určeným koeficientem při vytváření cílových částek za účelem usnadnění hromadných úprav. Můžete také nastavit možnost **Připojit k plánu**. Výběrem možnosti **Ne** nahraďte existující řádky plánu rozpočtu, nebo výběrem možnosti **Ano** zachovejte existující řádky plánu rozpočtu a přidejte nové řádky pro přidělené částky.
 
@@ -70,7 +70,7 @@ Dále vytvořte přidělení fáze na stránce **Konfigurace plánování rozpo�
 
 Nakonec přidejte automatizovanou úlohu pro přidělení fáze plánování rozpočtu v požadované fázi workflowu. V následujícím příkladu byla do workflowu vložena dvě přidělení fází plánování rozpočtu (červený okraj).
 
-[![Přidělení fází plánování rozpočtu](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Přidělení fází plánování rozpočtu.](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

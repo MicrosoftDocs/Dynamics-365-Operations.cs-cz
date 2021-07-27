@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fae899bcfa8bb2566d1a9aee3f0dbe22bc219edf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f49ae2a65bf590eea13265712621675da87dd621
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825631"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360070"
 ---
 # <a name="scheduled-execution"></a>Plánované provedení
 
@@ -37,9 +37,9 @@ Plánovaná úloha nastavení, která souvisí s pracovními příkazy, může b
 3. V polích **Funkční umístění**, **Typ pracovního příkazu**, **Typ majetku**, **Výrobce**, **Model**, **Kategorie typu úlohy údržby**, **Typ úlohy údržby**, **Varianta typu úlohy údržby** a **Obchod** vyberte hodnoty podle potřeby.
 4. V vyberte úroveň služeb pracovního příkazu v poli **Úroveň služeb**. Pokud toto pole ponecháte prázdné, provedete nejobecnější typ řádku plánovaného provedení. Příklad obecného řádku naleznete v prvním záznamu na následujícím obrázku. Tento řádek umožňuje naplánovat všechny pracovní příkazy, které nemají žádnou úroveň služby pracovního příkazu pro určité datum a čas.
 5. V poli **Plánované provedení** vyberte časový interval.
-6. Zvolte **Uložit**.
+6. Zvolte možnost **Uložit**.
 
-![Plánované provedení](media/20-setup-for-work-orders.png)
+![Plánované provedení.](media/20-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

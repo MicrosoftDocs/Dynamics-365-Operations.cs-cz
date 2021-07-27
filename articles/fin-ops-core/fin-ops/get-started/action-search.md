@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754819"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360241"
 ---
 # <a name="action-search"></a>Vyhledání akce
 
@@ -31,7 +31,7 @@ Tento článek popisuje funkci hledání akce. Hledání akce vám pomůže naj�
 
 Stránky primárně vystavují příkazy v podoknech akcí, standardním podokně akcí, které se zobrazí v horní části stránky, a na panelech nástrojů, které se zobrazují v různých částech stránky. V předchozích verzích umožňovala funkce Klíčové tipy rychlý přístup k libovolnému tlačítku v podokně akcí stisknutím klávesy Alt a řady čísel.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Klíčové tipy již nejsou k dispozici, ale byly nahrazeny funkcí hledání akce. Nová funkce vám umožňuje rychle vyhledat a spustit tlačítko z jakéhokoli viditelného podokna akcí.
 
@@ -45,7 +45,7 @@ Chcete-li použít funkci hledání akce, postupujte takto.
 
 Po spuštění tlačítka bude výběr vrácen do vaší poslední pozice na stránce tak, abyste mohli pokračovat v práci.
 
-[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field.](./media/action-search-field.png)](./media/action-search-field.png)
 
 Vyhledávání akcí také spustíte stisknutím kláves Ctrl +/ nebo Alt + Q. Stiskněte klávesovou zkratku ještě jednou, chcete-li se vrátit na výběr do vaší poslední pozice na stránce.
 
@@ -61,11 +61,11 @@ Vyhledávání akcí také spustíte stisknutím kláves Ctrl +/ nebo Alt + Q. S
 
 Předpokládejme například, že jste zadali výraz **cel** do pole **vyhledávání akcí** a nyní prověřujete seznam výsledků. První položka u tlačítek, která má název **Celkem**, je zvýrazněna. Rovněž je zobrazena cesta tlačítka **Prodejní objednávka** &gt; **Zobrazení**. Část **Prodejní objednávka** cesty odpovídá kartě **Prodejní objednávka** v podokně akcí a část **Zobrazení** cesty odpovídá skupině **Zobrazení** na této kartě. Podobně cesta tlačítka **Celková sleva** tlačítko (**Prodej** &gt; **Vypočítat**) informuje o tom, že toto tlačítko se nachází ve skupině **Vypočítat** na kartě podokna akcí **Prodej**. Z toho vyplývá, že tyto informace vám pomohou pochopit, které tlačítko bude přesně vyvoláno vyhledáním akce (pokud ho vyberete v podokně výsledků).
 
-[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![action-search-field-with-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardního podokna akcí v horní části stránky. Vyhledávání akcí však zobrazuje také výsledky z viditelných panelů nástrojů, které jsou umístěny na jiných místech na stránce. Například vyhledáváte tlačítko **Zásoby na skladě**, které je na pevné záložce **Řádky prodejní objednávky**. V tomto případě vás cesta tlačítka v seznamu výsledků (**Řádky prodejní objednávky** &gt; **Zásoby** &gt; **Zobrazení**) informuje o tom, že toto tlačítko se nachází v nadpisu **Zobrazení** na tlačítku nabídky **Zásoby** na pevné záložce **Řádky prodejní objednávky**.
 
-[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > V hledání Akcí se nezobrazují některá tlačítka. Tyto zahrnují tlačítka ukončení dialogu a tlačítka z podformulářů. 

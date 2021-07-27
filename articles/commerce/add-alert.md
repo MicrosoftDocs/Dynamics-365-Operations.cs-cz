@@ -2,7 +2,7 @@
 title: Modul propagačního banneru
 description: Tohle téma se zabývá moduly propagačního banneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796239"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479345"
 ---
 # <a name="promo-banner-module"></a>Modul propagačního banneru
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly propagačního banneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -34,7 +35,7 @@ Moduly propagačního banneru podporují textové zprávy a odkazy. Je-li do mod
 
 Moduly propagačního banneru jsou řízeny daty ze systému správy obsahu (CMS) a lze je umístit na libovolnou stránku.
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Příklady použití propagačního banneru v e-Commerce
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Příklady použití propagačního banneru v e-commerce
 
 Reklamní bannery mohou být použity v záhlaví pracoviště pro zobrazení promoakcí a zpráv na úrovni celého pracoviště, jak je uvedeno v následujících příkladech.
 
@@ -46,7 +47,7 @@ Reklamní bannery mohou být použity v záhlaví pracoviště pro zobrazení pr
 
 Na následujícím obrázku je znázorněn příklad propagačního banneru.
 
-![Příklad modulu propagačního banneru](./media/ecommerce-Promobanner.PNG)
+![Příklad modulu propagačního banneru.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Vlastnosti modulu propagačního banneru
 
@@ -58,7 +59,11 @@ Na následujícím obrázku je znázorněn příklad propagačního banneru.
 | Povolit zavření             | **Pravda** nebo **nepravda**              | Je-li tato hodnota nastavena na hodnotu **pravda**, zákazníci mohou výstrahu zavřít. |
 | Zobrazit páku karuselu     | **Pravda** nebo **nepravda**              | Hodnota, která určuje, zda se mají zobrazit páky karuselu, aby zákazníci mohli ručně cyklovat více položek banneru. |
 | Zarovnání textu            | **Vpravo**, **vlevo** nebo **uprostřed** | Zarovnání textu v modulu propagačního banneru. |
-| Připojení                      | Adresa URL                              | Adresa URL pro volitelný odkaz. |
+| Propojení                      | Adresa URL                              | Adresa URL pro volitelný odkaz. |
+|Zarovnání textu             | **Vpravo**, **vlevo** nebo **uprostřed** | Tato vlastnost je k dispozici jako rozšíření motivu v motivu Adventure Works. Umožňuje uživateli nastavit zarovnání textu v propagačním banneru. |
+
+> [!IMPORTANT]
+> Motiv Adventure Works je k dispozici od Dynamics 365 Commerce verze 10.0.20.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Přidání modulu propagačního banneru na novou stránku 
 
@@ -78,7 +83,6 @@ Chcete-li přidat modul propagačního banneru na stránku a nastavit požadovan
 
 > [!NOTE]
 > Propagační banner se obvykle používá v patici záhlaví stránky nebo v pozici dílčího hlavního záhlaví.
-
 
 ## <a name="additional-resources"></a>Další prostředky
 

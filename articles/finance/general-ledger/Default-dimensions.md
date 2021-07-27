@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897301"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360681"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
@@ -71,29 +71,29 @@ Uživatelé mají často dotazy ohledně pořadí, ve kterém se různé kompone
 
 Následující obrázek znázorňuje pevnou výchozí dimenzi, která je nastavena na hlavním účtu 401100.
 
-[![Výchozí finanční dimenze](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Výchozí finanční dimenze.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 V tomto velmi základním příkladu zadáme hlavní deník, kde je dimenze oddělení nastavena na použití výchozí hodnoty **023** (Operace). Zadáme a zaúčtujeme účet hlavní knihy. Následující obrázek znázorňuje výchozí finanční dimenze v hlavičce hlavní knihy.
 
-[![Hlavní deníky](./media/general-journal.png)](./media/general-journal.png)
+[![Hlavní deníky.](./media/general-journal.png)](./media/general-journal.png)
 
 Výchozí dimenze v hlavičce deníku způsobí, že oddělení 023 se použije ve výchozím nastavení na řádku účtu prodeje. Následující obrázek znázorňuje řádek hlavního deníku, kde se použije výchozí hodnota dimenze **023** ze záhlaví.
 
-[![Doklad deníku](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Doklad deníku.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Nicméně při zaúčtování řádku se použije pevná dimenze a řádek se zaúčtuje do oddělení 022. Následující obrázek znázorňuje zaúčtovaný doklad, kde je použita pevná dimenze pro účet prodeje.
 
-[![Poukazové transakce s pevnou dimenzí](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Poukazové transakce s pevnou dimenzí.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Příklad 2
 
 Tento příklad používá stejné nastavení jako první příklad. Přidáme však druhou komponentu a použijeme dimenzi oddělení jako vyrovnávací dimenzi. Na následujícím obrázku je nastaveno **Oddělení** jako vyrovnávací finanční dimenze pro hlavní knihu USMF.
 
-[![Ilustrace znázorňující oddělení jako vyrovnávající finanční dimenzi](./media/ledger.png)](./media/ledger.png)
+[![Ilustrace znázorňující oddělení jako vyrovnávající finanční dimenzi.](./media/ledger.png)](./media/ledger.png)
 
 Když se použije stejné nastavení hlavičky deníku a zaúčtuje se stejná transakce, použije se nejdříve pevná dimenze. Poté se použije logika vyrovnání, aby se zajistilo, že má každé oddělení vyrovnanou položku. Následující obrázek znázorňuje transakce dokladu, které zahrnují položku vyrovnání po použití pevné dimenze.
 
-[![Poukazové transakce po uplatnění vyrovnávacího záznamu](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Poukazové transakce po uplatnění vyrovnávacího záznamu.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Příklad 3
 
@@ -101,11 +101,11 @@ V tomto příkladu přidáme rozšířené pravidlo. Rozšířené pravidlo urč
 
 Tento příklad je důležitý z důvodu pořadí. Účetní struktura je určena po zadání hlavního účtu. Pokud odkazujete na nastavení účetní struktury, systém může určit, že hlavní účet, obchodní jednotka, oddělení a nákladové středisko jsou relevantní. V tomto okamžiku nebylo rozšířené pravidlo spuštěno, protože pevné dimenze nejsou použity, dokud nebyly použity výchozí dimenze pro doklad deníku při zaúčtování. Na následujícím obrázku není segment Odběratel přítomen, protože nebyla splněna kritéria pro rozšířené pravidlo.
 
-[![Účet hlavní knihy](./media/drop-down.png)](./media/drop-down.png)
+[![Účet hlavní knihy.](./media/drop-down.png)](./media/drop-down.png)
 
 Zaúčtování nebude úspěšné, protože pevná dimenze byla použita na konci procesu. Ověření dimenzí určuje, zda je segment Odběratel vyžadován, pokud je hlavní účet 401100 a oddělení 022. Zaúčtování nelze provést, protože došlo k chybě ověření. Následující obrázek znázorňuje zprávu, která se zobrazí poté, co ověření dimenze určí, že Odběratel je požadovaný segment.
 
-[![Podrobnosti zprávy](./media/message.png)](./media/message.png)
+[![Podrobnosti zprávy.](./media/message.png)](./media/message.png)
 
 V tomto příkladu musíte přepsat výchozí hodnotu, aby se spustilo rozšířené pravidlo, můžete zadat segment Odběratel. Toto řešení však není možné dispozici vždy a někteří uživatelé dokonce ani neznají pravidla účtování. Proto je důležité pochopit pořadí, ve kterém se výchozích dimenze používají při nastavení účtové osnovy.
 

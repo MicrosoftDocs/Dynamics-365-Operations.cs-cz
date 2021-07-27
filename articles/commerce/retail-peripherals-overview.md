@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.custom: 268444
+ms.custom:
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345025"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -119,7 +121,7 @@ Aby bylo možno zaručit, že spolu s aplikací Commerce bude možné používat
 -   **Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program. Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO). K testování komponenty POS v Commerce se používají CCO. Proto testování pomáhá zaručit, aby, pokud Commerce podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS. Není nutné explicitně testovat každý typ zařízení.
 -   **Objekt služby** – objekt služby zajišťuje komunikaci mezi objektem ovládacího prvku (CCO) a zařízením. Objekt služby pro nějaké zařízení obvykle pochází od výrobce zařízení. V některých případech však bude pravděpodobně nutné stáhnout objekt služby z webu výrobce. Například může být k dispozici novější objekt služby. Adresu webu výrobce najdete v dokumentaci k hardwaru.
 
-[![Ovládací prvek objektu a objekt služby](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly by systémy POS a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány. 
+[![Předměty kontroly a servisu.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly pokladní systémy a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány. 
 
 > [!NOTE]
 > Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Comerce musí nejprve podporovat typ nebo třídu zařízení prostřednictvím OPOS. Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO. Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.

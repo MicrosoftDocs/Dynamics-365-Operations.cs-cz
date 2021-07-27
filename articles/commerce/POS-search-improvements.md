@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796359"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345153"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -36,7 +36,7 @@ Ve výchozím nastavení se vyhledávání produktů provádí v sortimentu obch
 
 Na stránce **Změnit katalog** mohou zaměstnanci snadno vybrat libovolný obchod, nebo mohou vyhledávat produkty ve všech obchodech.
 
-![Změna katalogu](./media/Changecatalog.png "Změna katalogu")
+![Změna katalogu.](./media/Changecatalog.png "Změna katalogu")
 
 Vyhledávání místních produktů vyhledává v rámci následujících vlastností produktu:
 
@@ -59,9 +59,9 @@ Vyhledávání místních produktů vyhledává v rámci následujících vlastn
 - Maloobchodníci mohou nakonfigurovat vyhledávání produktů pro zobrazení návrhů vyhledávání, když uživatelé zadávají názvy produktů. Nové nastavení této funkce je k dispozici v profilu funkce POS pod skupinu s názvem **Vyhledávání produktu**. Toto nastavení se nazývá **Zobrazit návrhy vyhledávání při zadávání**. Tato funkce pomůže zaměstnancům rychle najít produkt, který hledají, protože nemusí ručně zadávat celé jméno.
 - Algoritmus vyhledávání produktu nyní hledá vyhledávané termíny ve vlastnosti produktu **Vyhledávání jména**.
 
-![Návrhy produktů](./media/Productsuggestions.png "Návrhy produktů")
+![Návrhy produktů.](./media/Productsuggestions.png "Návrhy produktů")
 
-## <a name="customer-search"></a>Hledání zákazníka
+## <a name="customer-search"></a>Hledat zákazníka
 
 Vyhledávání zákazníka slouží k vyhledání zákazníků pro různé účely. Pokladníci například mohou chtít zobrazit seznam přání zákazníka nebo historii nákupů, nebo přidat zákazníka do transakce. Vyhledávací algoritmus spáruje hledané termíny oproti hodnotám uvedeným v následujících vlastnostech odběratele:
 
@@ -83,7 +83,7 @@ Pokud chtějí vyhledávat globálně, mohou zaměstnanci vybrat tlačítko **Fi
 
 ID zákazníka se nezobrazuje pro zákazníky dotazované z jiných právnických osob, protože pro tyto strany v současné společnosti nebylo vytvořeno žádné ID zákazníka. Pokud však zaměstnanec otevře stránku s podrobnostmi o zákazníkovi, systém automaticky vygeneruje ID zákazníka pro danou stranu a zároveň propojí adresáře zákazníka obchodu se zákazníkem. Proto bude zákazník viditelný v prohledáváních místního obchodu, která budou provedena později.
 
-![Globální vyhledávání zákazníků](./media/Globalcustomersearch.png "Globální vyhledávání zákazníků")
+![Globální vyhledávání zákazníků.](./media/Globalcustomersearch.png "Globální vyhledávání zákazníků")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Další možnosti vyhledávání místních zákazníků
 
@@ -94,11 +94,11 @@ Když uživatel vyhledá telefonní číslo, systém ignoruje speciální znaky 
 
 Tradiční vyhledávání zákazníků může být časově náročné, protože vyhledává mezi více poli. Místo toho mohou pokladníci hledat v jedné vlastnosti zákazníka, jako je jméno, e-mailová adresa nebo telefonní číslo. Vlastnosti, které používá algoritmus hledání odběratele, jsou souhrnně označovány jako *kritéria hledání odběratele*. Správce systému může snadno konfigurovat jedno nebo více kritérií jako zástupce, který se zobrazí v POS. Vzhledem k tomu, že je hledání omezeno na jediné kritérium, jsou zobrazeny pouze relevantní výsledky hledání a výkon je mnohem lepší než výkon standardního hledání odběratele. Následující obrázek znázorňuje zkratky hledání odběratele v POS.
 
-![Klávesové zkratky vyhledávání zákazníků](./media/SearchShortcutsPOS.png "Klávesové zkratky vyhledávání zákazníků")
+![Klávesové zkratky vyhledávání zákazníků.](./media/SearchShortcutsPOS.png "Klávesové zkratky vyhledávání zákazníků")
 
 Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **Parametry Commerce** v aplikaci Commerce a poté na kartě **Kritéria vyhledávání POS** vybrat všechna kritéria, která se mají zobrazit jako zástupci.
 
-![Konfigurovat klávesové zkratky vyhledávání](./media/ConfigureShortcutsAX.png "Konfigurovat zástupce vyhledávání")
+![Konfigurovat klávesové zkratky vyhledávání.](./media/ConfigureShortcutsAX.png "Konfigurovat zástupce vyhledávání")
 
 > [!NOTE]
 > Pokud přidáte příliš mnoho zástupců, rozevírací nabídka panelu vyhledávání v POS se přehltí a může to ovlivnit vyhledávání zaměstnance. Doporučujeme přidávat pouze tolik zástupců, kolik potřebujete.

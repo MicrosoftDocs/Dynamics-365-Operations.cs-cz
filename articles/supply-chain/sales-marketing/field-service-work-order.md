@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc656c6339da92deceff2f8861fd8570171b7a2d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824959"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345541"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 
@@ -31,7 +31,7 @@ ms.locfileid: "5824959"
 
 Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v Dynamics 365 Field Service do prodejních objednávek v Dynamics 365 Supply Chain Management.
 
-[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
@@ -245,31 +245,31 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 Filtr: (msdyn_systemstatus ne 690970005) a (msdyn_systemstatus ne 690970000) a (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mapování šablony v integraci dat](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mapování šablony v integraci dat.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004)
 
-[![Mapování šablony v integraci dat](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mapování šablony v integraci dat.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004))
 
-[![Mapování šablony v integraci dat](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mapování šablony v integraci dat.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004) a (msdyn_allocated eq true)
 
-[![Mapování šablony v integraci dat](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mapování šablony v integraci dat.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004) nebo (msdyn_allocated ne true))
 
-[![Mapování šablony v integraci dat](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mapování šablony v integraci dat.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

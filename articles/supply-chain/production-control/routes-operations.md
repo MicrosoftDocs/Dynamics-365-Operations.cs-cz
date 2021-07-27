@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188927"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350491"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -45,7 +45,7 @@ Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu.
 
 Jednoduchý postup je sekvenční a existuje u něj pouze jeden počáteční bod.  
 
-[![Jednoduchý postup](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Jednoduchý postup.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduché postupy, aplikace Supply Chain Management při definování postupu automaticky vygeneruje čísla operací (10, 20, 30 a tak dále).
 
@@ -53,7 +53,7 @@ Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduc
 
 Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější síťové postupy, můžete definovat postupy, které mají více počátečních bodů, a operace, které lze spustit současně.  
 
-[![Síťový postup](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Síťový postup.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Každá operace může mít pouze jednu následnou operaci a celý postup musí končit jednou operací.
@@ -64,7 +64,7 @@ Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější
 
 Někdy je k provedení operace třeba kombinace několika provozních prostředků s odlišnými vlastnostmi. Operace montáže může například vyžadovat stroj, nástroj a jednoho dohlížejícího pracovníka u každých dvou strojů. Tento příklad lze modelovat pomocí paralelních operací, kde je jedna operace určena jako primární operace a ostatní jsou sekundární.  
 
-[![Postup s primární operací a sekundárními operacemi](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Postup s primární operací a sekundárními operacemi.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Primární operace obvykle představuje kritický prostředek a určuje dobu nutnou k provedení sekundárních operací. Při plánování s omezenou kapacitou však musí být k dispozici prostředky, které jsou naplánovány pro primární i sekundární operace, a současně musí mít volnou kapacitu.  
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224080"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355339"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Podporované typy složených dat pro vzorce elektronického výkaznictví
 
@@ -43,11 +43,11 @@ Výchozí hodnota a *třídy* je **null**.
 
 Následující obrázek ukazuje, jak zdroj dat **Systémové informace(xInfo)** typu **Třída** je přidán, aby se vytvořila instance třídy aplikací **xInfo** volala svoji metodu **productName()** pro získání názvu aktuální aplikace. Název aktuální aplikace se načte za běhu spuštěním vazby `xInfo.productName`, která byla nakonfigurována pro pole **Název softwaru(SoftwareName)** datového modelu ER. Tato vazba volá metodu `productName()` třídy aplikací **xInfo**, která je v aktuálním mapování modelu reprezentována jako zdroj dat **Systémové informace(xInfo)**.
 
-[![Konfigurace zdroje dat třídy v návrháři mapování modelů ER](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurace zdroje dat třídy v návrháři mapování modelů ER.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Následující obrázek ukazuje, jak je formát ER nakonfigurován tak, aby poskytoval zadaný název aplikace do generovaných dokumentů. Pole **Název softwaru(SoftwareName)** použitého datového modelu bylo vázáno na komponentu **Řetězec**, která je vnořená pod prvek XML **softwareUsed** formátu ER. Takže název aktuální aplikace je umístěn za běhu do prvku XML **softwareUsed** vygenerovaného dokumentu ve formátu XML.
 
-[![Konfigurace struktury elektronického odchozího dokumentu v návrháři formátů ER](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Konfigurace struktury elektronického odchozího dokumentu v návrháři formátů ER.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Kontejner
 
@@ -60,7 +60,7 @@ Výchozí hodnota a *kontejneru* je **null**.
 
 Následující obrázek ukazuje, jak je pole **Bitmap(Image)** typu *Kontejner* vázáno na pole **Logo** datového modelu typu **Kontejner** v mapování modelu **Prodejní faktura**. Tato vazba zpřístupňuje logo společnosti pro jakýkoli formát ER, který je určen pro kořenovou definici **SalesInvoice** a která používá toto mapování modelu za běhu.
 
-[![Vazba pole typu kontejner v návrháři mapování modelu ER](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Vazba pole typu kontejner v návrháři mapování modelu ER.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Záznam
 
@@ -109,7 +109,7 @@ Výchozí hodnota *objektu* je **null**.
 
 Následující obrázek ukazuje, jak je zdroj dat **ReportDataContract** typu *Objekt* přidán pro předání informací o generované faktuře ze zdrojového kódu do mapování modelu **Faktura projektu**. Například text instance faktury se předává jako součást kontextu provádění. Tento text je převzat ze zdrojového kódu za běhu spuštěním vazby `ReportDataContract.parmInvoiceInstanceText`, která byla nakonfigurována pro pole **Poznámka** datového modelu ER. Tato vazba volá metodu `parmInvoiceInstanceText()` třídy aplikací **PSAProjInvoiceContract**, která je v aktuálním mapování modelu reprezentována jako zdroj dat **ReportDataContract**.
 
-[![Konfigurace zdroje dat objektu v návrháři mapování modelů ER](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurace zdroje dat objektu v návrháři mapování modelů ER.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Pokud se chcete dozvědět, jak předat podrobnosti kontextu spuštění ze zdrojového kódu do spuštěného řešení ER, přečtěte si téma [Vyvíjejte artefakty aplikací pro volání navržené zprávy](er-quick-start1-new-solution.md#DevelopCustomCode).
 

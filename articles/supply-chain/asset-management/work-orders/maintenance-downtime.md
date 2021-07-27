@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813718"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344609"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Prostoj údržby pro pracovní příkazy
 
@@ -45,7 +45,7 @@ Registrace prostojů údržby můžete vytvořit u majetku vybraného v pracovn�
 
 Následující ilustrace znázorňuje příklad stránky **Kódy důvodu prostoje údržby**.
 
-![Obrázek č. 1](media/15-work-orders.png)
+![Obrázek č. 1.](media/15-work-orders.png)
 
 Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můžete vytvořit registrace prostojů údržby pro pracovní příkazy a majetek.
 
@@ -71,15 +71,15 @@ Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můž
 
 Následující ilustrace znázorňuje příklad stránky registrace prostoje údržby.
 
-![Obrázek č. 2](media/16-work-orders.png)
+![Obrázek č. 2.](media/16-work-orders.png)
 
 Kalendář použitý k výpočtu registrace prostoje údržby závisí na výběru v nastavení majetku a parametrů. Pokud je prostředek vybrán pro majetek v poli **Prostředek** pevné záložky **Investiční majetek** na stránce **Veškerý majetek**, použije se nastavený kalendář pro přidruženou skupinu prostředků, jak je znázorněno na následujícím obrázku.
 
-![Obrázek č. 3](media/17-work-orders.png)
+![Obrázek č. 3.](media/17-work-orders.png)
 
 Není-li pro majetek vybrán žádný prostředek, použije se standardní kalendář vybraný v části **Parametry správy majetku**, jak je znázorněno na následujícím obrázku.
 
-![Obrázek č. 4](media/18-work-orders.png)
+![Obrázek č. 4.](media/18-work-orders.png)
 
 Pokud chcete zobrazit přehled všech registrací prostojů údržby, klikněte na **Správa majetku** > **Dotazy** > **Prostoj údržby**.
 

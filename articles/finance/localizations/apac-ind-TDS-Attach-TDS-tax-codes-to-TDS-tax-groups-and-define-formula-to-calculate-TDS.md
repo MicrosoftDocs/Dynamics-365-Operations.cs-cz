@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023097"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358475"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Připojení daňových kódů TDS k daňovým skupinám TDS a definování vzorce pro výpočet TDS
 
@@ -33,7 +33,7 @@ Pomocí těchto kroků můžete nastavit daňovou skupinu TDS, připojit k ní d
 
 1. Přejděte na **Daň \> Nepřímé daně \> Srážková daň \> Skupiny srážkové daně**.
 
-    [![Stránka Skupiny srážkové daně](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Stránka Skupiny srážkové daně.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. V podokně akcí vyberte **Nový** pro vytvoření skupiny srážkové daně pro TDS a zadejte požadované podrobnosti.
 3. V poli **Typ daně** vyberte **TDS**.
@@ -43,7 +43,7 @@ Pomocí těchto kroků můžete nastavit daňovou skupinu TDS, připojit k ní d
 7. Aby se zabránilo výpočtu této daňové skupiny v transakcích, zaškrtněte políčko **Vyloučit**.
 8. V podokně Akce vyberte **Návrhář** k otevření návrháře vzorců, abyste mohli definovat vzorec pro výpočet TDS pro daňovou skupinu TDS. Na stránce **Návrhář** karta **Daně** zobrazuje daňové kódy TDS, které byly vybrány pro daňovou skupinu TDS.
 
-    [![Stránka návrháře](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Stránka návrháře.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Na kartě **Výpočet** vyberte **Alt + N** k vytvoření čáry. Pole **ID** zobrazuje automaticky generované ID priority pro výpočet TDS.
 10. V poli **Kód daně** vyberte kód daně TDS, pro kterou se má vzorec definovat. V tomto poli jsou k dispozici pro výběr všechny daňové kódy TDS, které byly vybrány pro daňovou skupinu TDS.

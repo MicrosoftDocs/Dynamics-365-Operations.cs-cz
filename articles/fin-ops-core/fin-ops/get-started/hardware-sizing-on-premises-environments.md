@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343951"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -36,7 +36,7 @@ Po kontrole dokumentace můžete zahájit proces odhadu transakčních a soubě�
 
 Všechny faktory na následujícím obrázku přispívají k nastavení velikosti. Čím podrobnější informace jsou shromážděny tím přesnější nastavení velikosti můžete určit. Nastavení velikosti hardwaru bez podpůrných dat bude pravděpodobně nepřesné. Minimální absolutní požadavek na potřebná data nejvyšší vytížení řádku transakce za hodinu.
 
-[![Nastavení velikosti hardwaru pro místní prostředí](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Nastavení velikosti hardwaru pro místní prostředí.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Při pohledu zleva doprava je prvním a nejdůležitějším faktorem potřebným pro přesný odhad nastavení velikosti profil transakce nebo charakteristika transakce. Je důležité vždy najít maximální objem transakcí za hodinu. Pokud existuje více vrcholných období, je nutné tato období přesně definovat.
 

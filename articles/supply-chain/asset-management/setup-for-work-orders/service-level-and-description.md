@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808249"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356457"
 ---
 # <a name="service-level-and-description"></a>Úroveň a popis služby
 
@@ -43,9 +43,9 @@ Při vytvoření pracovního příkazu můžete pro něj definovat úrovně slu�
 6. Chcete-li nastavit i čas zahájení pro pracovní příkaz kromě počátečního data, nastavte volbu **Nastavit počáteční čas** na hodnotu **Ano**. Poté zadejte počáteční čas do pole **Čas zahájní**. Pokud nastavíte možnost na **Ne**, použije se aktuální čas dne.
 7. Do pole **Koncový den** zadejte počet dní určující období, během kterého má být pracovní příkaz ukončen. Počet dnů se vypočítá od počátečního data pracovního příkazu. Má-li například pracovní příkaz končit během jednoho týdne od počátečního data, zadejte **7**.
 8. Chcete-li nastavit i čas ukončení pro pracovní příkaz kromě koncového data, nastavte volbu **Nastavit koncový čas** na hodnotu **Ano**. Poté zadejte čas ukončení do pole **Čas ukončení**. Pokud nastavíte možnost na **Ne**, použije se aktuální čas dne.
-9. Zvolte **Uložit**.
+9. Zvolte možnost **Uložit**.
 
-![Stránka Úroveň služby pracovních příkazů](media/19-setup-for-work-orders.png)
+![Stránka Úroveň služby pracovních příkazů.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Vytvořit popis
 

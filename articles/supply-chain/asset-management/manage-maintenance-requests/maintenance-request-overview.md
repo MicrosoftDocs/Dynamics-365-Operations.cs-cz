@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c72a16b8f3865129ad737c511e50eb34c9f2e91
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 536f512abc2b7ce74ebc35dfdaf48e812a85cc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015870"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344237"
 ---
 # <a name="maintenance-requests"></a>Požadavky na údržbu
 
@@ -40,7 +40,7 @@ Požadavky na údržbu mohou být vytvořeny pro libovolný majetek v modulu Spr
 
 Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**, **Aktivní požadavky na údržbu** nebo **Moje požadavky na údržbu funkčního místa**. Na každé stránce se seznamem jsou uvedeny některé informace související s požadavkem na údržbu.
 
-![Zobrazit požadavky na údržbu](media/01-manage-maintenance-requests.png)
+![Zobrazit požadavky na údržbu.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Použijte stránku se seznamem **Moje požadavky na údržbu funkčního místa** pro zobrazení seznamu požadavků na údržbu, které obsahují buď funkční místa, se kterými jste spojen jako pracovník, nebo majetek nainstalovaný ve funkčních místech, místěních, se kterým jste spojen jako pracovník (Informace o tom, jak nastavit funkční místa nebo pracovníky údržby, naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
@@ -49,7 +49,7 @@ Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Spol
 
 Chcete-li otevřít zobrazení podrobností záznamu, na stránce se seznamem **Všechny požadavky na údržbu** v zobrazení mřížky vyberte odkaz ve sloupci **Požadavek na údržbu**.
 
-![Zobrazení podrobností o požadavku na údržbu](media/02-manage-maintenance-requests.png)
+![Zobrazení podrobností o požadavku na údržbu.](media/02-manage-maintenance-requests.png)
 
 Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabulka stručně popisuje tlačítka, která souvisejí se správou majetku.
 

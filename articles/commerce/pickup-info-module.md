@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353797"
 ---
 # <a name="pickup-information-module"></a>Modul informací o vyzvednutí
 
@@ -40,7 +40,7 @@ Pokud je pro vyzvednutí vybráno více položek ve více obchodech, modul s inf
 
 Následující obrázek ukazuje příklad výběru časového úseku prostřednictvím modulu s informacemi o vyzvednutí na stránce pokladny.
 
-![Příklad modulu s informacemi o vyzvednutí na stránce pokladny](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Příklad modulu s informacemi o vyzvednutí na stránce pokladny.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
@@ -56,11 +56,11 @@ Pokyny k přidání modulu s informacemi o vyzvednutí na stránku pokladny a na
 
 Následující ilustrace ukazuje příklad stránky pokladny elektronického obchodu, která obsahuje časové úseky pro vyzvednutí řádkových položek.
 
-![Příklad stránky pokladny elektronického obchodu, která obsahuje časové úseky pro vyzvednutí řádkových položek](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Příklad stránky pokladny elektronického obchodu, která obsahuje časové úseky pro vyzvednutí řádkových položek.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem](dev-itpro/pickup-timeslots.md)
+[Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem](dev-itpro/pickup-timeslots.md)
 
 [Modul pokladny](add-checkout-module.md)
 

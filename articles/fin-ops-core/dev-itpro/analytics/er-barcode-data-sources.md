@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: f72ef77a35c484a40e1384baf69001bba6a333f6
-ms.sourcegitcommit: ec272aa133189569abaf4c09b03230611b5a756f
+ms.openlocfilehash: e0ba43ff1bab391d141f28289144cc552ee28609
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "6274529"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351811"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Ke generování obrázků čárových kódů použijte zdroje dat čárového kódu
 
@@ -130,7 +130,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti **Litware, Inc.** a že je označen jako aktivní. Není-li uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-![Nastavení ukázkové společnosti Litware, Inc. do aktivního stavu na stránce konfigurace lokalizace](./media/er-barcode-data-source-active-provider.png)
+![Nastavení ukázkové společnosti Litware, Inc. do aktivního stavu na stránce konfigurace lokalizace.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>Importovat poskytnuté řešení ER
 
@@ -160,14 +160,14 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 7. V podokně akcí klikněte na možnost **Test tisku**.
 8. V dialogovém okně nastavte **Dohodnutelný formát kontroly** na **Ano** a poté vyberte **OK**.
 
-    ![Zkontrolujte rozložení - dialogové okno testu tisku](./media/er-barcode-data-source-check-layout.png)
+    ![Zkontrolujte rozložení – dialogové okno testu tisku.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>Kontrola generovaného platebního šeku
 
 - Otevřete vygenerovaný šek v Excelu.
 2. Prohlédněte si vygenerovaný šek.
 
-    ![Vygenerovaný platební šek v Excelu](./media/er-barcode-data-source-cheque1.png)
+    ![Vygenerovaný platební šek v Excelu.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>Upravte formát poskytovaného řešení ER
 
@@ -175,7 +175,7 @@ Dále si stáhněte následující soubor Excel, který obsahuje upravenou šabl
 
 Aplikací na ploše Excel můžete otevřít soubor **Cheque template Excel.xlsx**, který jste importovali dříve. Všimněte si, že se tato šablona liší od šablony, kterou jste použili ke generování platebního šeku v dodávaném řešení ER. Kromě toho obsahuje prvek **AmountBarcode** pro obrázek čárového kódu.
 
-![Prvek AmountBarcode v šabloně Excel](./media/er-barcode-data-source-cheque2.png)
+![Prvek AmountBarcode v šabloně Excel.](./media/er-barcode-data-source-cheque2.png)
 
 Nyní musíte upravit řešení ER a poté [znovu použít](modify-electronic-reporting-format-reapply-excel-template.md) upravenou šablonu.
 
@@ -186,7 +186,7 @@ Nyní musíte upravit řešení ER a poté [znovu použít](modify-electronic-re
 5. V návrháři operací ER vyberte kartu **Mapování** na pravé straně stránky a poté v podokně stromu formátu vlevo vyberte **Rozbalit / sbalit**.
 6. Všimněte si, že všechny prvky formátu buňky jsou vázány na příslušné zdroje dat.
 
-    ![Vazba prvků buněčného formátu na zdroje dat v návrháři operací ER](./media/er-barcode-data-source-cells-bound.png)
+    ![Vazba prvků buněčného formátu na zdroje dat v návrháři operací ER.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Vyberte kartu **Formát** na pravé straně stránky.
 8. V podokně akcí vyberte tři tečky (**...**) a poté vyberte **Import**.
@@ -195,7 +195,7 @@ Nyní musíte upravit řešení ER a poté [znovu použít](modify-electronic-re
 11. Vyberte kartu **Mapování** na pravé straně stránky a poté v podokně stromu formátu vlevo vyberte **Rozbalit / sbalit**.
 12. Všimněte si, že prvek buňky **AmountBarcode** byl přidán do formátu. Tento prvek je spojen s prvkem **AmountBarcode**, který byl přidán do upravené šablony Excel jako zástupný symbol pro obrázek čárového kódu.
 
-    ![Prvek buňky AmountBarcode přidaný do formátu v návrháři operací ER](./media/er-barcode-data-source-cell-added.png)
+    ![Prvek buňky AmountBarcode přidaný do formátu v návrháři operací ER.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Přidání nového zdroje čárového kódu
 
@@ -204,14 +204,14 @@ Dále musíte přidat nový zdroj dat typu **Čárový kód**.
 1. V návrháři operací ER na kartě **Mapování** na pravé straně stránky vyberte zdroj dat **tisk**.
 2. Vyberte **Přidat** a pak ve skupině **Funkce** vyberte typ zdroje dat **čárový kód**.
 
-    ![Výběr typu zdroje dat čárového kódu](./media/er-barcode-data-source-add.png)
+    ![Výběr typu zdroje dat čárového kódu.](./media/er-barcode-data-source-add.png)
 
 3. V dialogovém okně do pole **Název** zadejte **čárový kód**.
 4. Ve **Formátu čárového kódu** vyberte **Code 128**.
 5. Do pole **Šířka** zadejte **500**.
 6. Vyberte **OK**.
 
-    ![Dialogové okno Vlastnosti zdroje dat](./media/er-barcode-data-source-add2.png)
+    ![Dialogové okno Vlastnosti zdroje dat.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Vázat nový prvek formátu
 
@@ -222,7 +222,7 @@ Dále musíte nový prvek formátu svázat se zdrojem dat, který jste právě p
 3. V podokně akcí zvolte **Zobrazit podrobnosti**.
 4. Všimněte si, že protože zdroj dat **čárový kód** je ve vazbě reprezentován jako funkce, která obsahuje jeden parametr, název prvku vázaného formátu byl automaticky považován za argument tohoto parametru.
 
-    ![Podrobnosti o zdroji čárových kódů v návrháři operací ER](./media/er-barcode-data-source-bind1.png)
+    ![Podrobnosti o zdroji čárových kódů v návrháři operací ER.](./media/er-barcode-data-source-bind1.png)
 
 5. Vyberte **Upravit vzorec** a upravte vazbu.
 
@@ -232,7 +232,7 @@ Dále musíte nový prvek formátu svázat se zdrojem dat, který jste právě p
 7. Vyberte **Uložit** a potom zavřete [Návrhář operací ER](general-electronic-reporting-formula-designer.md).
 8. Všimněte si, že vazba byla upravena.
 
-    ![Upravená vazba v návrháři operací ER](./media/er-barcode-data-source-bind2.png)
+    ![Upravená vazba v návrháři operací ER.](./media/er-barcode-data-source-bind2.png)
 
 9. Vyberte **Uložit** a zavřete Návrhář operací ER.
 
@@ -277,7 +277,7 @@ Koncept verze vybraného formátu je označen jako dostupný pro použití při 
 6. Vyberte **OK**.
 7. Prohlédněte si vygenerovaný šek. Všimněte si, že byl vygenerován čárový kód pro kódování splatné částky šeku.
 
-    ![Generovaný platební šek s čárovým kódem v Excelu](./media/er-barcode-data-source-cheque3.png)
+    ![Generovaný platební šek s čárovým kódem v Excelu.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Výjimka je vyvolána, pokud argument zdroje dat **čárový kód** nesplňuje příslušné požadavky, které jsou specifické pro formát čárového kódu. Například, když zdroj dat **čárový kód** je volán pro generování čárového kódu [EAN-8](https://wikipedia.org/wiki/EAN-8) pro poskytnutý text, vyvolá se výjimka, pokud délka textu přesáhne sedm znaků.
@@ -288,7 +288,7 @@ Jak je popsáno v [Vytvářejte tisknutelné formuláře FTI](er-generate-printa
 
 Nicméně, když používáte zdroj dat **čárový kód** dat pro výrobu čárových kódů, vykreslování těchto čárových kódů nezávisí na žádném písmu. Proto můžete snadno převádět dokumenty, které obsahují čárové kódy, do formátu PDF. Následující obrázek ukazuje náhled vygenerovaného platebního šeku, který byl [převedený](electronic-reporting-destinations.md#OutputConversionToPDF) do PDF na základě nastavení nakonfigurované ER [destinace](electronic-reporting-destinations.md).
 
-![Náhled PDF platebního šeku](./media/er-barcode-data-source-cheque4.png)
+![Náhled PDF platebního šeku.](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Omezení
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352415"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Vytvoření nového produktu v Commerce
 
@@ -49,13 +49,13 @@ Produkt je definován především číslem, názvem a popisem. Jsou však poža
 
 Následující obrázek znázorňuje příklad přidaného produktu.
 
-![Vytvoření produktu](media/create-new-product.png)
+![Vytvoření produktu.](media/create-new-product.png)
 
 Po přidání produktu lze pro něj nastavit další data, například **Popis produktu**, **Skupiny variant**, **Skupiny dimenzí**, **Atributy produktu** a **Související produkty**.
 
 Následující obrázek znázorňuje další podrobnosti o produktu.
 
-![Podrobnosti produktu](media/create-new-product-2.png)
+![Podrobnosti produktu.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Vytvořit varianty produktů
 
@@ -74,23 +74,23 @@ Při prodeji produktu musí být nejprve uvolněn právnické osobě.
 
 1. Na stránce produkt vyberte možnost **Uvolnit produkty**.
 
-    ![Uvolnit produkt](media/create-new-product-3.png)
+    ![Uvolnit produkt.](media/create-new-product-3.png)
 
 1. Vyberte produkt k uvolnění a pak klikněte na tlačítko **Další**.
 
-    ![Vyberte produkt k uvolnění](media/create-new-product-4.png)
+    ![Vyberte produkt k uvolnění.](media/create-new-product-4.png)
 
 1. Vyberte sadu variant produktu k uvolnění a pak klikněte na tlačítko **Další**.
 
-    ![Vyberte varianty k uvolnění](media/create-new-product-5.png)
+    ![Vyberte varianty k uvolnění.](media/create-new-product-5.png)
 
 1. Vyberte právnickou osobu a poté vyberte možnost **Další**.
 
-    ![Zvolte právnickou osobu](media/create-new-product-6.png)
+    ![Zvolte právnickou osobu.](media/create-new-product-6.png)
 
 1. Vyberte **Dokončit**.
 
-    ![Dokončit uvolnění produktu](media/create-new-product-7.png)
+    ![Dokončit uvolnění produktu.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfigurovat uvolněný produkt
 
@@ -105,9 +105,9 @@ Jakmile je produkt uvolněn, bude vyžadovat další konfiguraci, která zahrnuj
 
 Následující obrázek znázorňuje příklad konfigurace pro uvolněný produkt.
 
-![Konfigurovat uvolněný produkt](media/create-new-product-8.png)
+![Konfigurovat uvolněný produkt.](media/create-new-product-8.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Vytvořit právnické osoby](channels-legal-entities.md)
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937055"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349667"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Změna pořadí řazení pro maloobchodní entity
 
@@ -51,9 +51,9 @@ Před provedením tohoto postupu je nutné, aby byla v prostředí nainstalován
 
 Pořadí zobrazení hierarchie navigace kanálu se odrazí v centrále pro hierarchii produktů commerce a uvolněné produkty podle kategorie.
 
-![Vlastní řazení hierarchie produktů se zápornými hodnotami](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Vlastní řazení hierarchie produktů se zápornými hodnotami.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Vlastní řazení uvolněných produktů podle kategorie na základě hierarchie produktů](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Vlastní řazení uvolněných produktů podle kategorie na základě hierarchie produktů.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurace pořadí zobrazení pro kategorie v hierarchii navigace kanálů
 
@@ -77,11 +77,11 @@ Před provedením tohoto postupu je nutné, aby byla v prostředí nainstalován
 
 Pořadí zobrazení hierarchie navigace kanálu se odráží v centrále, katalogu a kanálech.
 
-![Vlastní řazení hierarchie navigace kanálu](./media/ChannelNavCustomSorted.png)
+![Vlastní řazení hierarchie navigace kanálu.](./media/ChannelNavCustomSorted.png)
 
-![Vlastní řazení hierarchie navigace katalogu na základě hierarchie navigace kanálu](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Vlastní řazení hierarchie navigace katalogu na základě hierarchie navigace kanálu.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS s vlastním řazením kategorií](./media/POSChannelCategoriesCustomSorted.png)
+![POS s vlastním řazením kategorií.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Ve výchozím nastavení je funkce vlastního řazení vypnutá. Informace o zapnutí této funkce a dalších funkcí naleznete v tématu [Správa funkcí](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

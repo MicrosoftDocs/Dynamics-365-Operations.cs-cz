@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3a8d4c57ca6b1fee5f4eb1414bfb503470b5e570
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944502"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348084"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
 
@@ -88,14 +88,14 @@ Než začnete, musíte také stáhnout a uložit následující konfiguraci uká
 6. Ve stromu konfigurace rozbalte **Model to learn deferred elements**.
 7. Zkontrolujte seznam importovaných konfigurací elektronického výkaznictví ve stromu konfigurace.
 
-    ![Importované konfigurace elektronického výkaznictví na stránce konfigurace](./media/ER-DeferredSequence-Configurations.png)
+    ![Importované konfigurace elektronického výkaznictví na stránce konfigurace.](./media/ER-DeferredSequence-Configurations.png)
 
 ### <a name="activate-a-configurations-provider"></a>Aktivace zprostředkovatele konfigurací
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti Litware, Inc. (`http://www.litware.com`) a že je označen jako aktivní. Není-li tento poskytovatel konfigurace uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Ukázková společnost Litware, Inc. na stránce konfigurace lokalizace](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
+    ![Ukázková společnost Litware, Inc. na stránce konfigurace lokalizace.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Kontrola importovaného mapování modelu
 
@@ -117,7 +117,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Datový zdroj **Seskupený** typu *Seskupit podle* je nakonfigurován tak, aby seskupoval filtrované daňové transakce datového zdroje **Filtrované**.
     - Pole agregace **TotalSum** datového zdroje **Seskupený** je nakonfigurováno tak, aby shrnoval hodnoty pole **\$TaxAmount** datového zdroje **Filtrované** pro všechny filtrované daňové transakce zdroje dat.
 
-        ![Pole agregace TotalSum na stránce Úpravy parametrů GroupBy](./media/ER-DeferredSequence-GroupByParameters.png)
+        ![Pole agregace TotalSum na stránce Úpravy parametrů GroupBy.](./media/ER-DeferredSequence-GroupByParameters.png)
 
 9. Zkontrolujte, jakým způsobem jsou nakonfigurované zdroje dat navázány na datový model a jakým způsobem vystavují data přístupu k jejich zpřístupnění ve formátu elektronického výkaznictví:
 
@@ -125,7 +125,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Pole **\$TaxAmount** datového zdroje **Filtrovaný** je navázán na pole **Data.List.Value** datového modelu.
     - Pole **TotalSum** datového zdroje **Seskupený** je navázán na pole **Data.Summary.Total** datového modelu.
 
-    ![Stránka návrháře mapování modelu](./media/ER-DeferredSequence-ModelMapping.png)
+    ![Stránka návrháře mapování modelu.](./media/ER-DeferredSequence-ModelMapping.png)
 
 10. Zavřete stránky **Návrhář mapování modelu** a **Mapování modelu**.
 
@@ -138,12 +138,12 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
 
     - Prvek formátu posloupnosti **Report\\Lines** je nakonfigurován tak, aby vyplnil odchozí dokument jedním řádkem, který je generován z vnořených prvků posloupnosti (**Záhlaví**, **Záznam** a **Souhrn**).
 
-        ![Prvek formátu posloupnosti řádků a vnořené prvky na stránce Návrhář formátu](./media/ER-DeferredSequence-Format.png)
+        ![Prvek formátu posloupnosti řádků a vnořené prvky na stránce Návrhář formátu.](./media/ER-DeferredSequence-Format.png)
 
     - Prvek formátu posloupnosti **Report\\Lines\\Header** je nakonfigurován tak, aby vyplnil odchozí dokument jedním řádkem záhlaví, který zobrazuje datum a čas zahájení zpracování.
     - Prvek formátu posloupnosti **Report \\Lines\\Record** je nakonfigurován tak, aby vyplnil odchozí dokument jedním řádkem, který zobrazuje podrobnosti jednotlivých daňových transakcí. Tyto daňové transakce jsou odděleny středníkem.
 
-        ![Prvek formátu posloupnosti záznamů, který používá středník jako oddělovač](./media/ER-DeferredSequence-Format1.png)
+        ![Prvek formátu posloupnosti záznamů, který používá středník jako oddělovač.](./media/ER-DeferredSequence-Format1.png)
 
     - Prvek formátu posloupnosti **Report\\Lines\\Summary** je nakonfigurován tak, aby vyplnil odchozí dokument jedním řádkem souhrnu, který zahrnuje souhrn hodnot daně ze zpracovaných daňových transakcí.
 
@@ -162,14 +162,14 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Prvek **TotalTaxAmount** je vázán na **model. Data.Summary.Total** pro vygenerování součtu hodnot daně zpracovaných daňových transakcí.
     - Prvek **ExecutionDateTime** generuje datum a čas (včetně milisekund), kdy je přidán řádek souhrnu.
 
-    ![Karta mapování na stránce Návrhář formátu](./media/ER-DeferredSequence-Format2.png)
+    ![Karta mapování na stránce Návrhář formátu.](./media/ER-DeferredSequence-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Spuštění importovaného formátu
 
 1. Na stránce **Návrhář formátu** zvolte **Spustit**.
 2. Stáhněte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený ukázkový soubor zprávy](./media/ER-DeferredSequence-Run.png)
+    ![Stažený ukázkový soubor zprávy.](./media/ER-DeferredSequence-Run.png)
 
 Povšimněte si, že souhrnný řádek 22 představuje součet hodnot daně pro zpracované transakce. Vzhledem k tomu, že formát je konfigurován pro použití vazby **model.Data.Summary.Total** pro vrácení tohoto souhrnu, vypočte se součet voláním agregace **TotalSum** datového zdroje **Seskupený** typu *GroupBy*, který používá mapování modelu. Pro výpočet této agregace prochází mapování modelů všechny transakce, které byly vybrány ve zdroji dat **Filtrované**. Porovnáním dob provádění řádků 21 a 22 můžete určit, že výpočet součtu trval 10 milisekund (ms). Porovnáním dob provádění řádků 2 a 21 můžete určit, že generování všech transakčních řádků trvalo 7 ms. Z tohoto důvodu je nutné celkem 17 ms.
 
@@ -183,26 +183,26 @@ Pokud je objem transakcí mnohem větší než objem v aktuálním příkladu, m
 4. Konfigurujte výraz **Název klíče shromážděných dat** jako `WsColumn`.
 5. Konfigurujte výraz **Hodnota klíče shromážděných dat** jako `WsRow`.
 
-    ![Prvek posloupností řádků na stránce Návrhář formátu](./media/ER-DeferredSequence-Format3.png)
+    ![Prvek posloupností řádků na stránce Návrhář formátu.](./media/ER-DeferredSequence-Format3.png)
 
 6. Vyberte číselný prvek **Report\\Lines\\Record\\TaxAmount**.
 7. Konfigurujte výraz **Název klíče shromážděných dat** jako `SummingAmountKey`.
 
-    ![Číselný prvek TaxAmount na stránce Návrhář formátu](./media/ER-DeferredSequence-Format4.png)
+    ![Číselný prvek TaxAmount na stránce Návrhář formátu.](./media/ER-DeferredSequence-Format4.png)
 
     Toto nastavení je možné vzít v úvahu při plnění virtuálního listu, kde je hodnota buňky A1 připojena k hodnotě částky daně z každé zpracované daňové transakce.
 
 8. Vyberte číselný prvek **Report\\Lines\\Record\\RunningTotal** a poté zvolte **Upravit vzorec**.
 9. Nakonfigurujte výraz `SUMIF(SummingAmountKey, WsColumn, WsRow)` pomocí vestavěné funkce elektronického výkaznictví [SUMIF](er-functions-datacollection-sumif.md).
-10. Zvolte **Uložit**.
+10. Zvolte možnost **Uložit**.
 
-    ![Výraz SUMIF](./media/ER-DeferredSequence-FormulaDesigner.png)
+    ![Výraz SUMIF.](./media/ER-DeferredSequence-FormulaDesigner.png)
 
 11. Zavřete stránku **Návrhář vzorce**.
 12. Vyberte **Uložit** a potom **Spustit**.
 13. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor – Souhrnné hodnoty daně](./media/ER-DeferredSequence-Run1.png)
+    ![Stažený soubor – Souhrnné hodnoty daně.](./media/ER-DeferredSequence-Run1.png)
 
     Řádek 21 obsahuje mezisoučet hodnot daně, který se vypočítává pro všechny zpracované transakce s použitím generovaného výstupu jako zdroje dat. Tento zdroj dat začíná od začátku sestavy a pokračuje k poslední daňové transakci. Řádek 22 obsahuje součet hodnot daně ze všech zpracovaných transakcí, které jsou vypočteny v mapování modelu pomocí zdroje dat typu *GroupBy*. Všimněte si, že tyto hodnoty jsou stejné. Z tohoto důvodu lze použít souhrn založený na výstupu namísto **GroupBy**. Porovnáním dob provádění řádků 2 a 21 můžete určit, že generování všech transakčních řádků a sčítání trvalo 9 ms. Proto, pokud jde o generování podrobných řádků a sčítání daňových hodnot, je upravený formát přibližně dvakrát rychlejší než původní formát.
 
@@ -211,7 +211,7 @@ Pokud je objem transakcí mnohem větší než objem v aktuálním příkladu, m
 16. Vyberte **Uložit** a potom **Spustit**.
 17. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor s upraveným vzorcem](./media/ER-DeferredSequence-Run2.png)
+    ![Stažený soubor s upraveným vzorcem.](./media/ER-DeferredSequence-Run2.png)
 
     Povšimněte si, že mezisoučet daňových hodnot na posledním řádku podrobností transakce se nyní rovná součtu na řádku souhrnu.
 
@@ -224,7 +224,7 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor pro sčítání v záhlaví sestavy](./media/ER-DeferredSequence-Run3.png)
+    ![Stažený soubor pro sčítání v záhlaví sestavy.](./media/ER-DeferredSequence-Run3.png)
 
     Všimněte si, že součet hodnot daně na souhrnném řádku 2 se nyní rovná 0 (nula), protože tento součet je nyní vypočten na základě generovaného výstupu. Je-li generován řádek 2, vygenerovaný výstup dosud neobsahuje řádky s podrobnostmi transakce. Tento formát lze nakonfigurovat tak, aby odložil provádění prvku posloupnosti **Report\\Lines\\Summary**, dokud prvek posloupnosti **Report\\Lines\\Record** nebyl spuštěn pro všechny daňové transakce.
 
@@ -233,12 +233,12 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 1. Na stránce **Návrhář formátu** na kartě **Formát** vyberte prvek posloupnosti **Report\\Lines\\Summary**.
 2. Nastavte možnost **Odložené provedení** na **Ano**.
 
-    ![Možnost odloženého provedení prvku posloupnosti souhrnu na stránce Návrhář formátu](./media/ER-DeferredSequence-Format5.png)
+    ![Možnost odloženého provedení prvku posloupnosti souhrnu na stránce Návrhář formátu.](./media/ER-DeferredSequence-Format5.png)
 
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor – odložené provedení](./media/ER-DeferredSequence-Run4.png)
+    ![Stažený soubor – odložené provedení.](./media/ER-DeferredSequence-Run4.png)
 
     Prvek posloupnosti **Report\\Lines\\Summary** je nyní spuštěn pouze po spuštění všech ostatních položek, které jsou vnořeny pod svým nadřazeným prvkem **Report\\Lines**. Proto je spuštěn po spuštění prvku posloupnosti **Report\\Lines\\Record** pro všechny daňové transakce datového zdroje **model.Data.List**. Doba provádění řádků 1, 2 a 3 a posledního řádku, 22, odhalí tuto skutečnost.
 
