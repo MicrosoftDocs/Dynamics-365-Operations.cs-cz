@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fe3ac2393e66a00e070d8cb6862c29625d39b53
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b1386cca9fd39c2cf021e87fcc33da2bbda89630
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057157"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353583"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (16. září 2020)
 
@@ -99,9 +99,9 @@ Tato funkce také podporuje možnosti pracovního postupu, které se zobrazují 
 
 - [Vylepšení prostředí pracovního postupu pro správu organizace a personálu](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) v plánu Dynamics 365 2020 2. vlna vydání
 
-![Pracovní položky přiřazené mně](./media/hr-workflow-work-items-assigned-to-me.png)
+![Pracovní položky přiřazené mně.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Rychlý přístup k položkám pracovního postupu](./media/hr-workflow-quick-access.png)
+![Rychlý přístup k položkám pracovního postupu.](./media/hr-workflow-quick-access.png)
 
 ### <a name="leave-and-absence-calendar"></a>Kalendář pracovního volna a absence
 

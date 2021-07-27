@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6e16c0bcd9521f822d0f92681e2a545439b78acb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839552"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354850"
 ---
 # <a name="manually-created-work-orders"></a>Ručně vytvořené pracovní příkazy
 
@@ -111,7 +111,7 @@ Můžete vytvořit pracovní příkaz na základě stávajícího pracovního p�
 
 Na následujícím obrázku je uveden příklad dialogu **Vytvořit související pracovní příkaz**.
 
-![Obrázek č. 1](media/03-work-orders.png)
+![Obrázek č. 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >Pokud jste nastavili související masku pracovního příkazu na kartě **Parametry správy majetku** > **Pracovní příkazy** > **Související maska pracovního příkazu**, budou v souladu s nastavením masky vytvořena ID pracovních příkazů. Není-li nastavena žádná související maska pracovního příkazu, bude pro související pracovní příkazy použito další dostupné ID pracovního příkazu.
@@ -137,7 +137,7 @@ Nový pracovní příkaz lze rychle vytvořit z existujícího pracovního pří
 
 Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat pracovní příkaz**.
 
-![Obrázek č. 2](media/04-work-orders.png)
+![Obrázek č. 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Vytvoření pracovního příkazu na základě požadavku na údržbu
@@ -157,7 +157,7 @@ Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat p
 
 Na následujícím obrázku je uveden příklad dialogového okna **Vytvořit pracovní příkaz**.
 
-![Obrázek č. 3](media/05-work-orders.png)
+![Obrázek č. 3.](media/05-work-orders.png)
 
 
 >[!NOTE]

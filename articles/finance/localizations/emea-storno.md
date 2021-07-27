@@ -13,12 +13,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e1d5b0ae6191204b7dd3be4e9c446d704263e67
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 95a9969650e4b7f0feac38caa05d672fa72ee7b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832672"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348869"
 ---
 # <a name="storno-accounting"></a>Záporné storno
 
@@ -162,7 +162,7 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 
 Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole. Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky. Můžete také použít pole **oprava** se všemi nastaveními zobrazení, pokud má pole **Oprava** zadanou hodnotu „Ano“, po které následuje položka Storno.
 
-![Částky storna položky deníku](./media/journal-storno.png)
+![Částky storna položky deníku.](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Jak dokumenty vytvářejí storno
 Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Další informace naleznete v tématu [přecenění cizí měny v hlavní knize](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [přecenění cizí měny pro závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.

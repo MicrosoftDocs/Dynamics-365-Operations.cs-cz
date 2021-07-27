@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937323"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351012"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -106,7 +107,7 @@ Existují dvě zobrazení mapování: **Vizualizace mapování**, což je výcho
 
 Mapování na stránce můžete vygenerovat výběrem možnosti **Generovat mapování zdroje**. Vygenerované mapování se chová jako automatické mapování. Proto je nutné ručně namapovat všechna nenamapovaná pole.
 
-![Mapování dat](./media/dixf-map.png)
+![Mapování dat.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Ověření zabezpečení pro úlohu import nebo exportu
 Přístup k pracovnímu prostoru **Správa dat** lze omezit, tak, aby uživatelé bez oprávnění správce měli přístup pouze k určitým datovým úlohám. Přístup k úloze dat zahrnuje úplný přístup ke spuštění historie této úlohy a přístup k tabulkám fázování. Proto je třeba se ujistit, že existují příslušný ovládací prvky přístupu při vytváření datové úlohy na místě.
@@ -132,11 +133,11 @@ Spustit úlohu můžete jednou výběrem tlačítka **Importovat** nebo **Export
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ověření, zda byla úloha spuštěna podle očekávání
 Historie úloh je dostupná pro řešení potíží a analýzu na úlohách importu i exportu. Historie spuštění úloh je organizována podle časových rozsahů.
 
-![Rozsahy historie úloh](./media/dixf-job-history.md.png)
+![Rozsahy historie úloh.](./media/dixf-job-history.md.png)
 
 Spuštění každé úlohy poskytuje následující podrobnosti:
 
-- Podrobnosti o spuštění
+- Podrobnosti o provádění
 - Protokol provádění
 
 Podrobnosti o spuštění zobrazují stav každé datové entity, kterou úloha zpracovala. Díky tomu můžete rychle vyhledat následující informace:

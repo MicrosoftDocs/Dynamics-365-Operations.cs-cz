@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797808"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347583"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
@@ -33,7 +33,7 @@ Modul pokladny vykresluje data na základě ID košíku. ID košíku je uloženo
 
 Následující obrázek ukazuje příklad modulu poklady Fabrikam na stránce pokladny.
 
-![Příklad modulu pokladny](./media/Checkout.PNG)
+![Příklad modulu pokladny.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Vlastnosti modulu pokladny
 
@@ -52,13 +52,13 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek ukazuje příklad modulu dodací adresy na stránce pokladny.
 
-    ![Příklad modulu dodací adresy](./media/ecommerce-shippingaddress.PNG)
+    ![Příklad modulu dodací adresy.](./media/ecommerce-shippingaddress.PNG)
 
 - **Možnosti dodání** – Tento modul umožňuje zákazníkovi vybrat způsob dodání pro objednávku. Další informace o tomto modulu naleznete v části [Modul možností doručení](delivery-options-module.md).
 
     Následující obrázek ukazuje příklad modulu možností dodání na stránce pokladny.
  
-    ![Příklad modulu možností dodání](./media/ecommerce-deliveryoptions.PNG)
+    ![Příklad modulu možností dodání.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kontejner sekce pokladny** – Tento modul je kontejner, do kterého můžete vložit více modulů a vytvořit sekci v rámci toku pokladny. Všechny moduly související s platbou v tomto kontejneru můžete například vložit do jedné sekce. Tento modul má vliv pouze na rozložení toku.
 
@@ -70,7 +70,7 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek ukazuje příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny.
 
-    ![Příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny](./media/ecommerce-payments.PNG)
+    ![Příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny.](./media/ecommerce-payments.PNG)
 
 - **Kontaktní informace** – Tento modul umožňuje zákazníkovi přidat nebo změnit kontaktní informace (e-mailovou adresu) na objednávce.
 
@@ -80,7 +80,7 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek znázorňuje příklad smluvních podmínek na stránce pokladny.
 
-    ![Příklad smluvních podmínek na stránce pokladny](./media/ecommerce-checkout-terms.PNG)
+    ![Příklad smluvních podmínek na stránce pokladny.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 

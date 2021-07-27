@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936797"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346797"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Správa atributů a skupin atributů
 
@@ -70,7 +70,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
     - Pojmenujte typ atributu **Tvar čočky** a přidejte následující hodnoty: **Ovál**, **Čtverec** a **Obdélník**.
     - Pojmenujte druhý typ atributu **Značka slunečních brýlí** a přidejte následující hodnoty: **Ray ban**, **Aviator** a **Oakley**.
 
-![Typy atributů](media/AttributeType.png)
+![Typy atributů.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Nastavit atribut
 
@@ -79,7 +79,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 3. Vytvořte atribut s názvem **Čočky**.
 4. Nastavte pole **Typ atributu** na **Tvar čočky**.
 
-![Atributy](media/Attribute.png)
+![Atributy.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Metadata atributu
 
@@ -134,7 +134,7 @@ Stránka **Předvolby zobrazení filtru** obsahuje následující pole:
     - 200 – 500
     - 500 a více
 
-![Nastavení filtru atributů](media/AttributeFilterSettings.PNG)
+![Nastavení filtru atributů.](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Skupiny atributů
 
@@ -142,7 +142,7 @@ Po definování atributů je lze přiřadit do skupin atributů. *Skupina atribu
 
 Můžete také nastavit výchozí hodnoty atributů, které jsou součástí skupiny atributů. Například přidáte atribut barvy do skupiny atributů a zvolíte výchozí hodnotu atributu **Modrá**. V takovém případě po přidání skupiny atributů k produktu, který zahrnuje barvu jako jeden z jeho atributů, zobrazí se pro tento produkt výchozí barva **Modrá**.
 
-![Skupiny atributů](media/AttributeGroup.png)
+![Skupiny atributů.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Tvorba skupiny atributů
 
@@ -155,7 +155,7 @@ Můžete také nastavit výchozí hodnoty atributů, které jsou součástí sku
 
 Jednu nebo více skupin atributů lze přiřadit k uzlům kategorií v následujících typech hierarchií kategorií: Hierarchie produktů Commerce, hierarchie kategorie navigace kanálu a Doplňková hierarchie kategorií produktu. Poté po zařazení produktů do kategorií zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
 
-![Hierarchie produktů – Skupiny atributů produktů](media/AGRetailProdHierarchy.PNG)
+![Hierarchie produktů – Skupiny atributů produktů.](media/AGRetailProdHierarchy.PNG)
 
 Chcete-li přiřadit skupiny atributů ke kategoriím v hierarchii produktů Commerce, postupujte podle následujících kroků.
 
@@ -200,7 +200,7 @@ Jednu nebo více skupin atributů lze přiřadit k jedné nebo více prodejnám 
     3. Vyberte uzel kategorie **Módní doplňky**, zvolte **Módní sluneční brýle** a poté na pevné záložce **Atributy produktu kanálu** vyberte **Zahrnout atribut** pro každý atribut.
     4. Vyberte uzel kategorie **Pánské oděvy**, zvolte **Kalhoty** a poté na pevné záložce **Atributy produktu kanálu** vyberte **Zahrnout atribut** pro každý atribut.
 
-![Kategorie kanálu a atributy produktu - Skupiny atributů](media/CCPAttrGrp.png)
+![Kategorie kanálu a atributy produktu - Skupiny atributů.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Přepsání hodnot atributů
 
@@ -214,7 +214,7 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 4. Vyberte požadovaný produkt v mřížce. Poté v podokně akcí na kartě **Produkt** ve skupině **Nastavení** zvolte **Atributy produktu**.
 5. V levém podokně vyberte atribut a aktualizujte jeho hodnotu v pravém podokně.
 
-![Stránka podrobností produktu – Skupiny atributů produktů](media/ProdDetailsProdAttrValues.png)
+![Stránka podrobností produktu – Skupiny atributů produktů.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Přepsání hodnot atributu produktů v katalogu
 
@@ -233,7 +233,7 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
     > [!NOTE]
     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny produkty.
 
-![Skupiny atributu produktu katalogu](media/CatalogProdAttrValues.png)
+![Skupiny atributu produktu katalogu.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Přepsání hodnot atributu produktů v kanálu
 

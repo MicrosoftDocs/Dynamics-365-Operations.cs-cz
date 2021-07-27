@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270878"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350467"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Výpočet dostupnosti zásob pro maloobchodní kanály
 
@@ -105,7 +105,7 @@ V Commerce verze 10.0.9 a starší se operace **Vyhledávání zásob** z POS po
 
 Je-li výpočet na straně kanálu správně nakonfigurován a spravován, může poskytovat spolehlivější odhad aktuálních skladových zásob, protože používá transakční data, která jsou uložena v databázi kanálů Commerce, ale centrála ještě nemusí tyto informace obsahovat. Použijete-li například existující volání v reálném čase služby pro vyhledávání zásob v POS, nebude mít centrála k dispozici informace o prodeji a převodu, které se právě vyskytly u produktu. Hodnota množství na skladě, kterou centrála vrátí pro daný produkt, však pravděpodobně překročí skutečné množství na skladě pro obchod o jednu jednotku. Pokud však použijete výpočet na straně kanálu, bude prodej uskutečněný a přenesený do výpočtu určen a odečten od zobrazené hodnoty množství na skladě. Ačkoliv hodnoty, které jsou vyvolány výpočtem na straně kanálu a jsou v reálném čase, poskytují pouze odhady množství na skladě, hodnota, kterou výpočet na straně kanálu poskytuje, je pro aktuální obchod mnohem pravděpodobnější.
 
-Ke konfiguraci operace POS **Vyhledávání zásob** v centrále s použitím logiky výpočtu na straně kanálu a vypnutí volání služby v reálném čase postupujte takto.
+Chcete-li nakonfigurovat operaci POS **Vyhledání skladových zásob** v ústředí Commerc k použití logiky výpočtu na straně kanálu a vypnout volání služeb v reálném čase, musíte nejprve povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v ústředí Commerce a postupovat následovně.
 
 1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**.
 1. Vyberte funkční profil.

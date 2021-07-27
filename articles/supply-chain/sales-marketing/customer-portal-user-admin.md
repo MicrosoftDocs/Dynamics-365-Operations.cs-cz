@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c08cee1fc772dbd06aeca3a96fdc40c1ca62413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907758"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353883"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
@@ -38,7 +38,7 @@ Video [POzvěte zákazníky k registraci a používání vašeho zákaznického 
 
 Kontakty v portálech Power Apps jsou uloženy jako záznamy v tabulce **Kontakty** v Microsoft Dataverse. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
 
-![Systémový diagram pro kontakty zákaznického portálu](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
+![Systémový diagram pro kontakty zákaznického portálu.](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
 
 Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování tabulky **Kontakt** dvojitým zápisem.
 

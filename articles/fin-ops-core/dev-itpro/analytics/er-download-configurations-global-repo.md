@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893973"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351739"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby
 
@@ -40,7 +40,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
 3. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Microsoft**.
 3. Na dlaždici **Microsoft** vyberte **Úložiště**.
 
-    ![Pracovní prostor elektronického vykazování](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Pracovní prostor elektronického vykazování.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Na stránce **Úložiště konfigurací** v mřížce vyberte existující úložiště typu **Globální**. Pokud se toto úložiště nezobrazí v mřížce, postupujte následovně:
 
@@ -52,7 +52,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
 
 5. Vyberte **Otevřít** a zobrazte tak seznam konfigurací ER pro vybrané úložiště.
 
-    ![Stránka úložišť konfigurace](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Stránka úložišť konfigurace.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Import jediné konfigurace
 
@@ -63,7 +63,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
     > [!NOTE]
     > Tlačítko **Import** nebude k dispozici u verzí konfigurace ER, které jsou již v aktuální instanci Finance přítomny.
 
-    ![Stránka úložiště konfigurace](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Stránka úložiště konfigurace.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Import filtrovaných konfigurací
 
@@ -77,7 +77,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
 4. Na pevné záložce **Konfigurace** vyberte **Import**, chcete-li stáhnout filtrované konfigurace z globálního úložiště do aktuální instance.
 5. Na pevné záložce **Konfigurace** vyberte **Reset filtru** k vyčištění stanovených podmínek výběru.
 
-    ![Stránka úložiště konfigurace](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Stránka úložiště konfigurace.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > V závislosti na nastavení ER jsou konfigurace ověřeny po jejich importu. Můžete být upozorněni na potíže se zjištěnou nekonzistencí. Tyto potíže je nutné před importováním verze konfigurace odstranit. Další informace naleznete v seznam souvisejících zdrojů pro toto téma.

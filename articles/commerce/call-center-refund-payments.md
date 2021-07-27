@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351362"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Zpracování refundace platby v kontaktních střediscích
 
@@ -37,7 +37,7 @@ Call centrum používá platební metodu původní objednávky k určení plateb
 
     Následující obrázek ukazuje konfiguraci pro scénář, kdy zákazník vrátí produkty z prodejní objednávky, která je propojena s měnou USD a která byla původně zaplacena pomocí běžného nebo šekového typu platby. V tomto scénáři bude zákazníkovi vrácena refundace prostřednictvím šeku refundace generovaného systémem. Způsob platby AR **REF-CHK** byl nakonfigurován jako typ platby šeku pro refundaci.
 
-    ![Konfigurace metod refundace call centra pro normální a šekové původní platby](media/callcenterrefundmethods.png)
+    ![Konfigurace metod refundace call centra pro normální a šekové původní platby.](media/callcenterrefundmethods.png)
 
 - **Kreditní karta** – Když vytvořená návratová objednávka odkazuje na původní objednávku, která byla zaplacena pomocí kreditní karty, použije logika call centra pro platby vrácení stejnou původní kreditní kartu na objednávku vrácení.
 - **Věrnostní karta** – Když vytvořená návratová objednávka odkazuje na původní objednávku, která byla zaplacena pomocí zákaznické věrnostní karty, použije logika call centra pro platby vrácení stejnou věrnostní kartu.
@@ -48,7 +48,7 @@ Pokud je z jakéhokoli důvodu neznámý typ platby původní objednávky nebo p
 
 Následující obrázek ukazuje pole **Způsob platby** na kartě **RMA/vrácení** stránky **Parametry call centra**.
 
-![Pole Způsob platby na kartě RMA/vrácení stránky Parametry call centra](media/callcenterrefundparameters.png)
+![Pole Způsob platby na kartě RMA/vrácení stránky Parametry call centra.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > Pravidla zpracování refundace, která jsou popsána výše, platí také pro objednávky nebo řádky objednávek, které uživatel call centra zruší v ústředí Commerce. Pokud zrušení objednávky nebo konkrétních řádků objednávky způsobí jakékoli přeplatky, použijí se ke generování řádků platby refundace stejná pravidla.
@@ -82,7 +82,7 @@ Nastavení **Ano** pro možnost **Použít kredit** je k dispozici pouze v pří
 > [!NOTE]
 > Pro objednávku vrácení, která nemá žádnou propojenou objednávku výměny, nastavení **Ano** u možnosti **Použít kredit** nebude mít žádný vliv na platební logiku objednávky vrácení, protože toto nastavení se vztahuje pouze na objednávky náhrady.
 
-![Použití pole způsobu platby kreditu na kartě RMA/vrácení stránky Parametry call centra](media/callcenterrefundparameters1.png)
+![Použití pole způsobu platby kreditu na kartě RMA/vrácení stránky Parametry call centra.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Pokud uživatelé, kteří vytvářejí objednávky náhrady, plánují použít možnost **Použít kredit**, neměli by spouštět funkci **Dokončit** na objednávce vrácení, než nastaví možnost **Použít kredit** na **Ano**. Po spuštění funkce **Dokončit** je platba refundace vypočítána a použita na prodejní objednávku vrácení. Jakýkoli pokus o nastavení možnost **Použít kredit** na **Ano** poté, co již byla vypočítána a použita platba refundace, nespustí přepočet platby refundace a platební metoda, která je vybrána v poli **Použít platební metodu kreditů** nebude použita. Pokud je třeba v tomto kontextu potřeba použít možnost **Použít kredit**, uživatel musí odstranit objednávku náhrady a RMA a poté začít znovu a vytvořit nové RMA. Tentokrát musí uživatel zajistit, aby byla možnost **Použít kredit** nastavena na **Ano** před spuštění funkce **Dokončit**.
@@ -91,14 +91,14 @@ Nastavení **Ano** pro možnost **Použít kredit** je k dispozici pouze v pří
 
 Ačkoli logika call centra systematicky určuje způsob platby refundace způsobem popsaným výše v tomto tématu, uživatelé někdy mohou chtít tyto platby přepsat. Uživatel může například upravit nebo odebrat stávající řádky platby pro refundaci a použít nové řádky platby. Systémem vypočítané platby refundace mohou změnit pouze uživatelé, kteří mají správná přepisovací oprávnění. Tato oprávnění lze konfigurovat na stránce **Přepsat oprávnění** v Retail a Commerce. Chcete-li provést přepsání platby refundace, musí být uživatel propojen s rolí zabezpečení, kde je možnost **Povolit alternativní platbu** nastavena na **Ano** na stránce **Přepsat oprávnění**.
 
-![Povolení alternativních možností platby na stránce Přepsat oprávnění](media/overridepermissions.png)
+![Povolení alternativních možností platby na stránce Přepsat oprávnění.](media/overridepermissions.png)
 
 Alternativně může organizace nastavit možnost **Povolit přepsání plateb** na **Ano** na kartě **RMA/vrácení** stránky **Parametry call centra**. V takovém případě musí být v kód přepsání zabezpečení vybrán v poli **Kód přepsání zabezpečení**. Kód přepsání zabezpečení je alfanumerický kód, který musí být spravován externě, protože uživatelé jej po nastavení nemohou zobrazit v Commerce. Kód přepsání zabezpečení by mělo znát jen několik klíčových důvěryhodných lidí v organizaci. Když je možnost **Povolit přepsání plateb** nastavena na **Ano** a uživatelé, kteří nemají správná oprávnění role, se pokusí změnit způsob platby na objednávce vrácení, budou mít možnost zadat kód přepsání zabezpečení. Pokud to nevědí nebo pokud to pro ně manažer nebo vedoucí na stránce nemůže zadat, nebudou moci přepsat způsob platby vrácení.
 
 > [!NOTE]
 > Pokud je kód přepsání zabezpečení ztracen nebo zapomenut, organizace ho bude muset resetovat definováním nového kódu přepsání zabezpečení v poli **Kód přepsání zabezpečení** na kartě **RMA/vrácení** stránky **Parametry call centra**.
 
-![Parametry přepsání platby na kartě RMA/vrácení stránky Parametry call centra](media/overridepaymentparameter.png)
+![Parametry přepsání platby na kartě RMA/vrácení stránky Parametry call centra.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Než se organizace pokusí přepsat platby refundace, které používají typy plateb kreditní kartou, musí ověřit, zda jejich zpracovatel kreditní karty umožňuje nepřipojené vrácení. Mnoho zpracovatelů požaduje vrácení peněz zpět na původní kartu. Jakýkoli pokus o refundaci peněz na kartu, která nemá žádné předchozí zachycení, může způsobit selhání odesílání u zpracovatele.

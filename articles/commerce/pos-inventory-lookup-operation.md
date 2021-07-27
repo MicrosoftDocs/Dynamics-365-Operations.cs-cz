@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025441"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353773"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Operace vyhledání zásob v POS
 
@@ -45,7 +45,10 @@ Pro jednotlivý produkt poskytuje operace vyhledávání zásob zobrazení sezna
 
 Zobrazení seznamu umístění zahrnuje všechny obchody a sklady, které jsou konfigurovány ve skupinách plnění, s nimiž je propojen aktuální obchod, jak je znázorněno na následujícím vzorovém obrázku.
 
-![Zobrazení seznamu operace vyhledání zásob](media/inventory-lookup-list-view.png)
+![Zobrazení seznamu operace vyhledání zásob.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Ujistěte se, že je váš aktuální obchod zahrnut do přidružených skupin plnění.
 
 Na panelu aplikací POS jsou k dispozici následující akce:
 
@@ -65,7 +68,7 @@ Na panelu aplikací POS jsou k dispozici následující akce:
 - **Přidat k transakci** - Tato akce přidá produkt do košíku a přesměruje uživatele na obrazovku transakce.
 
 > [!NOTE]
-> U řazení založeného na umístění je vzdálenost mezi místem a aktuálním úložištěm určena souřadnicemi (zeměpisná šířka a délka) definované v obchodním ústředí. U úložiště jsou informace o poloze definovány na primární adrese provozní jednotky spojené s úložištěm. U skladu, který není skladem, jsou informace o umístění definovány v adrese skladu. Pokud aktuální úložiště nemá správně definované souřadnice, zobrazí možnost řazení podle umístění aktuální úložiště v horní části seznamu a poté seřadí další umístění podle názvu.
+> U řazení založeného na umístění je vzdálenost mezi místem a aktuálním úložištěm určena souřadnicemi (zeměpisná šířka a délka) definované v obchodním ústředí. U úložiště jsou informace o poloze definovány na primární adrese provozní jednotky spojené s úložištěm. U skladu, který není skladem, jsou informace o umístění definovány v adrese skladu. Pokud aktuální úložiště nemá definované souřadnice, zobrazí možnost řazení podle umístění aktuální úložiště v horní části seznamu a poté seřadí další umístění podle názvu.
 
 > [!NOTE]
 > Akce **Zobrazit dostupnost obchodu**, **Zobrazit umístění obchodu**, **Vyzvednout v obchodě** a **Odeslat produkt** nejsou k dispozici pro umístění mimo prodejnu.
@@ -76,7 +79,7 @@ U hlavního produktu s variantami poskytuje operace vyhledávání zásob také 
 
 Následující ukázkový obrázek ukazuje zobrazení matice vyhledávání zásob v POS.
 
-![Maticové zobrazení operace vyhledání zásob](media/inventory-lookup-matrix-view.png)
+![Maticové zobrazení operace vyhledání zásob.](media/inventory-lookup-matrix-view.png)
 
 V maticovém zobrazení představuje každá buňka samostatnou variantu a v pravém dolním rohu zobrazuje hodnotu zásob na skladě (dostupná fyzická), stejně jako hodnoty **Rezervováno** (fyzická rezervace) a **Objednáno** (seřazeno podle celku) v levém horním rohu. Následující tabulka vysvětluje význam různých hodnot na skladě.
 
@@ -103,7 +106,7 @@ Uživatelé POS mohou přistupovat k operaci vyhledávání zásob z jiných str
 
 Následující ukázkový obrázek ukazuje výsledky vyhledávacího kódu zásob z PDP v POS.
 
-![Vyhledávání zásob na stránce s podrobnostmi o produktu](media/inventory-lookup-from-product-details-page.png)
+![Vyhledávání zásob na stránce s podrobnostmi o produktu.](media/inventory-lookup-from-product-details-page.png)
 
 Na PDP hlavního produktu můžete použít akci **Zobrazit všechny varianty** na panelu aplikací pro spuštění matice zobrazení vyhledávacího kódu, které zobrazuje informace o dostupnosti zásob pro aktuální obchod pro všechny varianty produktu. U jednotlivého produktu PDP zobrazuje okamžitou hodnotu množství na skladě (dostupného fyzického) daného produktu pro aktuální obchod. Dále můžete vybrat odkaz **Zásoby jiných obchodů** ke spuštění operace vyhledávání zásob k ověření dostupnosti zásob produktu v jiných obchodech nebo skladech.
 

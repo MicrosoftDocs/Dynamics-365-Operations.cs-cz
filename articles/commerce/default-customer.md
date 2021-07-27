@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799172"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349595"
 ---
 # <a name="create-a-default-customer"></a>Vytvoření výchozího odběratele
 
@@ -47,7 +47,7 @@ Pokud chcete vytvořit skupinu odběratelů, postupujte takto.
 
 Následující obrázek znázorňuje několik konfigurovaných skupin odběratelů.
 
-![Skupiny odběratelů](media/customer-groups.png)
+![Skupiny odběratelů.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Vytvoření adresáře odběratelů
 
@@ -63,7 +63,7 @@ Při vytváření nového adresáře odběratelů postupujte takto:
 
 Následující obrázek znázorňuje příklad adreáře.
 
-![Adresář](media/address-book.png)
+![Adresář.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Vytvoření výchozího odběratele
 
@@ -86,11 +86,11 @@ Pokud chcete vytvořit výchozího odběratele, postupujte takto.
 
 Na následujícím obrázku je znázorněn příklad vytvoření zákazníka.
 
-![Vytvoření výchozího odběratele](media/default-customer-creation.png)
+![Vytvoření výchozího odběratele.](media/default-customer-creation.png)
 
 Následující obrázek znázorňuje výchozí konfiguraci odběratele.
 
-![Konfigurace ukázkového odběratele](media/default-customer-configuration1.png)
+![Konfigurace ukázkového odběratele.](media/default-customer-configuration1.png)
 
 Většina výchozích hodnot na obrazovce podrobností odběratele může zůstat, ale je třeba změnit dvě hodnoty.
 
@@ -100,9 +100,9 @@ Většina výchozích hodnot na obrazovce podrobností odběratele může zůsta
 
 Na následujícím obrázku je znázorněn příklad konfigurace zákazníka.
 
-![Konfigurace ukázkového odběratele](media/default-customer-configuration2.png)
+![Konfigurace ukázkového odběratele.](media/default-customer-configuration2.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled kanálů](channels-overview.md)
 

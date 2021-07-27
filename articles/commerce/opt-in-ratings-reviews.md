@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9e3f2a17e182c0e3efc8b90380eff74f350c3278
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cce8cb6ef9e0cc74abf90f16ed0ee481b8274a03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804642"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352981"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Připojení k používání hodnocení a recenzí
 
@@ -43,7 +43,7 @@ Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, p
 1. Nastavte možnost **Povolit službu hodnocení a recenzování** na hodnotu **Ano**.
 1. V poli **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí (ID objektu skupiny zabezpečení)** zadejte ID skupiny zabezpečení Microsoft Azure Active Directory (Azure AD), která obsahuje moderátory hodnocení a recenzí.
 
-    ![Připojení k používání hodnocení a recenzí](media/LCS_RnR_Preference.png)
+    ![Připojení k používání hodnocení a recenzí.](media/LCS_RnR_Preference.png)
 
 1. Dokončete proces inicializace e-Commerce.
 

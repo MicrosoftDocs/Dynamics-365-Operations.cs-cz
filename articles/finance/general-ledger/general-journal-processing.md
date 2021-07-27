@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815565"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352851"
 ---
 # <a name="general-journal-processing"></a>Zpracování hlavního deníku
 
@@ -42,14 +42,14 @@ Na stránce **Názvy deníků** můžete nastavit následující prvky:
 
 Název deníku lze použít pouze pro úpravy. V tomto případě můžete určit, že pouze typ účtu **Hlavní kniha** je platný napříč všemi společnostmi. 
 
-[![Typy účtů kontroly deníku](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Typy účtů kontroly deníku.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlavních účtů. 
 
-[![Segment kontroly deníku](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Segment kontroly deníku.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Možnost **Automatické storno** je k dispozici v hlavních denících. Například máte úpravu časového rozlišení, u které skutečný dokument dosud nebyl zpracován, jak je uvedeno v následujícím obrázku.
-[![Stornování hlavního deníku](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Stornování hlavního deníku.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel** je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
 

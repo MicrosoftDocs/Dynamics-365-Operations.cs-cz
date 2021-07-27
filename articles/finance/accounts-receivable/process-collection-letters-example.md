@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021409"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347801"
 ---
 # <a name="process-collection-letters-example"></a>Příklad zpracování upomínek
 
@@ -40,7 +40,7 @@ Po dokončení postupujte následovně.
 
 Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vypadaly na stránce **Upomínky**. 
 
-[![Nastavení pořadí upomínek](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Nastavení pořadí upomínek.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Nyní musíte nastavit dva parametry požadované pro tento příklad.
 
@@ -49,7 +49,7 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
     1. Na kartě **Inkasa** nastavte možnost **Při výpočtu kódu upomínky ignorovat platby a dobropisy** na **Ano**.
     2. Ujistěte se, že pole **Vytvořit upomínku pro** je nastaveno na **Zákazník**.
 
-    [![Nastavení parametrů pohledávek pro inkasa](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Nastavení parametrů pohledávek pro inkasa.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Přejděte do **Pohledávky \> Faktury \> Všechny faktury s volným textem**, vyberte **Nový** a potom postupujte podle těchto kroků:
 
@@ -74,7 +74,7 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
 5. Opakujte krok 4, ale zadejte **−200,00** do pole **Jednotková cena**.
 6. Přejděte na **Pohledávky \> Zákazníci \> Všichni zákazníci** a vyberte zákazníka **US-045**. Poté v podokně akcí vyberte **Transakce \> Transakce** a zkontrolujte zákaznické transakce, které jste zaúčtovali dříve.
 
-    [![Kontrola zaúčtovaných transakcí se zákazníkem](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Kontrola zaúčtovaných transakcí se zákazníkem.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Nyní musíte vytvořit upomínky pro zákazníka US-045.
 
@@ -93,7 +93,7 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
 
     1. Všimněte si, že kód upomínky na řádcích záhlaví i transakce je **Upomínka 1**, protože tato upomínka je prvním sběrným dopisem v pořadí. (Chcete-li zobrazit řádky transakcí, možná budete muset vybrat kartu s náhledem **Transakce**.)
 
-   [![Ověření, že se v záhlaví a řádcích objeví stejný kód upomínky](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Ověření, že se v záhlaví a řádcích objeví stejný kód upomínky.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. V podokně akcí zvolte **Zaúčtovat**.
     3. Do pole **Datum zaúčtování** zadejte **19. 1. 2021**.
@@ -115,7 +115,7 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
 
     1. Všimněte si, že kód upomínky v záhlaví je **Upomínka 1**. Kód na řádcích transakce však je **Upomínka 2**.
 
-   [![Ověřuje, že se v záhlaví a řádcích objeví různé kódy upomínky](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Ověřuje, že se v záhlaví a řádcích objeví různé kódy upomínky.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Kódy se liší, protože možnost **Při výpočtu kódu upomínky ignorovat platby a dobropisy** je na **Ano**.
 
@@ -123,7 +123,7 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
 
 11. Přejděte na **Úvěr a inkasa \> Nastavit \> Parametry pohledávek** a poté na kartě **Inkasa** nastavte **Při výpočtu kódu upomínky ignorovat platby a dobropisy** na **Ne**.
 
-    [![Nastavení možnosti Ignorovat platby a dobropisy pro výpočet kódu upomínky na Ne](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Nastavení možnosti Ignorovat platby a dobropisy pro výpočet kódu upomínky na Ne.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Nyní musíte opět vytvořit upomínky pro zákazníka US-045.
 
@@ -140,6 +140,6 @@ Následující obrázek ukazuje informace, které jsou v tabulce tak, jak by vyp
 
 13. Přejděte na **Kredit a inkasa \> Upomínka \> Zkontrolovat a zpracovat upomínky** a všimněte si, že kód upomínky na řádcích záhlaví i transakce je **Upomínka 2**.
 
-    [![Další zobrazení, že se v záhlaví a řádcích objeví stejný kód upomínky](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Další zobrazení, že se v záhlaví a řádcích objeví stejný kód upomínky.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Stejný kód se zobrazuje na obou místech, protože možnost **Při výpočtu kódu upomínky ignorovat platby a dobropisy** je nyní nastavena na **Ne**.

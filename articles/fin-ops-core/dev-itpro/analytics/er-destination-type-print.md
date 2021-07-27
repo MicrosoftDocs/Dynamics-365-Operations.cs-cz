@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b79c93c4920d7f40e88aa7d463961128ea9e83c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893997"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347917"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Cílové místo tiskárny
 
@@ -39,7 +39,7 @@ Chcete-li zpřístupnit cíl **tiskárny** v aktuální instanci Microsoft Dynam
 1. Převod odchozích dokumentů elektronického výkaznictví z formátů Microsoft Office do formátu PDF
 2. Agent pro směrování dokumentů jako cílové umístění elektronického výkaznictví pro odchozí dokumenty
 
-[![Zapnutí cíle tiskárny elektronického výkaznictví ve správě funkcí](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Zapnutí cíle tiskárny elektronického výkaznictví ve správě funkcí.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Použitelnost
 
@@ -55,7 +55,7 @@ Cíl **tiskárny** je implementován pouze pro nasazení v cloudu.
 2. V poli **Název tiskárny** vyberte požadovanou síťovou tiskárnu.
 3. Chcete nastavit ukládání v tiskovém archivu, nastavte možnost **Uložit do tiskového archivu?** na **Ano**, aby byl k dispozici pro další tisk. Chcete-li získat přístup k archivovanému výstupu později, přejděte na **Správa organizace** \> **Dotazy a sestavy** \> **Archive sestav**.
 
-[![Použití cíle tiskárny](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Použití cíle tiskárny.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Pokud konfigurujete cíl **tiskárny**, možnost **převést do PDF** není nutné mít zapnutou. Převod souboru PDF pro účely tisku bude proveden i v případě, že je tato možnost vypnuta.

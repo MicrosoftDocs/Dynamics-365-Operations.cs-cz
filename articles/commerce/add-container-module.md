@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e1d2d600a00ab71348fbef2bc2f30cc53bc5314
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59887b058346d55341e68d553ec5dfbc6eb365d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797784"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347559"
 ---
 # <a name="container-module"></a>Modul kontejneru
 
@@ -42,7 +42,7 @@ Podporovány jsou tři moduly kontejneru: kontejner, kontejner se 2 pozicemi a k
 
 Následující obrázek ukazuje příklad modulu kontejneru, který obsahuje karuselový modul ve tvůrci webů Commerce. V tomto příkladu je vlastnost **Šířka** modulu kontejneru nastavena na **Vyplnit obrazovku**.
 
-![Příklad modulu kontejneru](./media/ecommerce-container.PNG)
+![Příklad modulu kontejneru.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Vlastnosti modulu kontejneru
 

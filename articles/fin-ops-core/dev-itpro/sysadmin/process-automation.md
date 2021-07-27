@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: a8722adfe410f15bc379f9b550f0618c881f067d
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: a861710e29962e1222d95bfa8c4ef7407bd3401d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920822"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343977"
 ---
 # <a name="process-automation"></a>Automatizace procesů
 
@@ -36,7 +36,7 @@ Všechny procesy, které jsou zakázány ve správě prvků, se po deaktivaci fu
 
 Jednou z klíčových výhod automatizace procesů je možnost vidět plánovanou práci v jednoduchém kalendářovém zobrazení.  Toto zobrazení umožňuje zobrazit najednou práci na období jednoho týdne. Toto zobrazení uvidíte na pravé straně na stránce **Automatizace procesů**. Bude naplněno naplánovanou prací pro vybranou řadu. 
 
-[![Kalendář automatizace procesů](./media/CalendarView2.png)](./media/CalendarView2.png)
+[![Kalendář automatizace procesů.](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## <a name="occurrence-changes"></a>Změny výskytů
 

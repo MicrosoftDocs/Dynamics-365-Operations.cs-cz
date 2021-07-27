@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b2e2ead990332f1afd338a430406e6d1db95347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754343"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350129"
 ---
 # <a name="report-designer-interface"></a>Rozhraní Návrháře sestav
 
@@ -169,56 +169,56 @@ Následující tabulky popisují tlačítka na panelu nástrojů, která lze pou
 
 Tento panel nástrojů poskytuje rychlý přístup k příkazům pro práci se soubory a k editačním příkazům. Tento panel nástrojů obsahuje následující tlačítka.
 
-| Tlačítko                                                                                       | Popis |
+| Tlačítko                                                                                       | popis |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![Tlačítko Nový](./media/rowc130389.png)](./media/rowc130389.png)                              | Vytvoří novou (prázdnou) definici sestavy, definici řádků, definici sloupců nebo definici organizačního stromu. |
-| [![Tlačítko Otevřít](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Otevře existující definici řádků, definici sloupců, definici organizačního stromu nebo definici sestavy. |
-| [![Tlačítko Uložit](./media/savec130389.png)](./media/savec130389.png)                           | Uloží aktuální definici řádků, definici sloupců, definici organizačního stromu nebo definici sestavy. |
-| [![Tlačítko Kopírovat](./media/copyc130389.png)](./media/copyc130389.png)                           | Zkopíruje vybraný text do schránky. |
-| [![Tlačítko Vyjmout](./media/cutc130389.png)](./media/cutc130389.png)                              | Odstraní vybraný text a zkopíruje ho do schránky. |
-| [![Tlačítko Vložit](./media/pastec130389.png)](./media/pastec130389.png)                        | Vloží text ze schránky. |
-| [![Tlačítko Zpět](./media/undoc130389.png)](./media/undoc130389.png)                           | Vrátí zpět poslední akci. |
-| [![Tlačítko Znovu](./media/redoc130389.png)](./media/redoc130389.png)                           | Stornuje poslední akci vrácení. |
-| [![Tlačítko Najít](./media/findc130389.png)](./media/findc130389.png)                           | Otevře dialogové okno **Najít a nahradit**, kde můžete prohledávat a nahrazovat text v aktivním okně. |
-| [![Tlačítko Vložit řádek](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Vloží prázdný řádek do definice řádků nebo prázdný řádek záhlaví do definice sloupců. Toto tlačítko je dostupné z definice řádků nebo definice sloupců. |
-| [![Tlačítko Vložit sloupec](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Vloží prázdný sloupec do definice sloupců. Toto tlačítko je dostupné z definice sloupců. |
-| [![Tlačítko Zámek](./media/lockc130389.png)](./media/lockc130389.png)                           | Uplatní heslo na aktuální stavební blok. Toto tlačítko je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
-| [![Tlačítko Odkaz řádku](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Otevře dialogové okno **Odkazy řádků**, kde můžete určit zdroje pro datové odkazy v definicích řádků a definicích stromů výkaznictví. Toto tlačítko je dostupné z definice řádků. |
-| [![Tlačítko Zvýšit úroveň](./media/promotec130389.png)](./media/promotec130389.png)                  | Zvýší úroveň jednotky v definici organizačního stromu. Když vyberete podřízenou jednotku a kliknete na tlačítko **Zvýšit úroveň**, podřízená jednotka bude přesunuta na stejnou úroveň jako nadřazená jednotka. |
-| [![Tlačítko Snížit úroveň](./media/demotec130389.png)](./media/demotec130389.png)                     | Sníží úroveň jednotky v definici organizačního stromu. Pokud vyberete jednotku a kliknete na tlačítko **Snížit úroveň**, jednotka se stane podřízenou pro jednotku, která jí předchází. |
-| [![Tlačítko Rozbalit](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Rozbalí všechny jednotky v definici organizačního stromu na úrovni vybrané jednotky. |
-| [![Tlačítko Sbalit](./media/collapsec130389.png)](./media/collapsec130389.png)               | Sbalí strom výkaznictví. |
-| [![Tlačítko Nápověda](./media/helpc130389.png)](./media/helpc130389.png)                           | Otevřete nápovědu. |
+| [![Tlačítko Nový.](./media/rowc130389.png)](./media/rowc130389.png)                              | Vytvoří novou (prázdnou) definici sestavy, definici řádků, definici sloupců nebo definici organizačního stromu. |
+| [![Tlačítko Otevřít.](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Otevřete existující definici řádku, definici sloupce, definici stromu výkaznictví nebo definici sestavy. |
+| [![Tlačítko Uložit.](./media/savec130389.png)](./media/savec130389.png)                           | Uloží aktuální definici řádků, definici sloupců, definici organizačního stromu nebo definici sestavy. |
+| [![Tlačítko Kopírovat.](./media/copyc130389.png)](./media/copyc130389.png)                           | Zkopíruje vybraný text do schránky. |
+| [![Tlačítko Vyjmout.](./media/cutc130389.png)](./media/cutc130389.png)                              | Odstraní vybraný text a zkopíruje ho do schránky. |
+| [![Tlačítko Vložit.](./media/pastec130389.png)](./media/pastec130389.png)                        | Vloží text ze schránky. |
+| [![Tlačítko Zpět.](./media/undoc130389.png)](./media/undoc130389.png)                           | Vrátí zpět poslední akci. |
+| [![Tlačítko Znovu.](./media/redoc130389.png)](./media/redoc130389.png)                           | Stornuje poslední akci vrácení. |
+| [![Tlačítko Najít.](./media/findc130389.png)](./media/findc130389.png)                           | Otevře dialogové okno **Najít a nahradit**, kde můžete prohledávat a nahrazovat text v aktivním okně. |
+| [![Tlačítko Vložit řádek.](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Vloží prázdný řádek do definice řádků nebo prázdný řádek záhlaví do definice sloupců. Toto tlačítko je dostupné z definice řádků nebo definice sloupců. |
+| [![Tlačítko Vložit sloupec.](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Vloží prázdný sloupec do definice sloupců. Toto tlačítko je dostupné z definice sloupců. |
+| [![Tlačítko Zámek.](./media/lockc130389.png)](./media/lockc130389.png)                           | Uplatní heslo na aktuální stavební blok. Toto tlačítko je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
+| [![Tlačítko Odkaz řádku.](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Otevře dialogové okno **Odkazy řádků**, kde můžete určit zdroje pro datové odkazy v definicích řádků a definicích stromů výkaznictví. Toto tlačítko je dostupné z definice řádků. |
+| [![Tlačítko Zvýšit úroveň.](./media/promotec130389.png)](./media/promotec130389.png)                  | Zvýší úroveň jednotky v definici organizačního stromu. Když vyberete podřízenou jednotku a kliknete na tlačítko **Zvýšit úroveň**, podřízená jednotka bude přesunuta na stejnou úroveň jako nadřazená jednotka. |
+| [![Tlačítko Snížit úroveň.](./media/demotec130389.png)](./media/demotec130389.png)                     | Sníží úroveň jednotky v definici organizačního stromu. Pokud vyberete jednotku a kliknete na tlačítko **Snížit úroveň**, jednotka se stane podřízenou pro jednotku, která jí předchází. |
+| [![Tlačítko Rozbalit.](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Rozbalí všechny jednotky v definici organizačního stromu na úrovni vybrané jednotky. |
+| [![Tlačítko Sbalit.](./media/collapsec130389.png)](./media/collapsec130389.png)               | Sbalí strom výkaznictví. |
+| [![Tlačítko Nápověda.](./media/helpc130389.png)](./media/helpc130389.png)                           | Otevřete nápovědu. |
 
 ### <a name="formatting-toolbar"></a>Panel nástrojů formátování
 
 Panel nástrojů formátování nabízí snadný přístup k příkazům stylů. Tento panel nástrojů obsahuje následující tlačítka.
 
-| Tlačítko                                                                                                       | Popis                                             |
+| Tlačítko                                                                                                       | popis                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Tlačítko Styl písma](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Použije na aktuální text vybraný styl písma.      |
-| [![Tlačítko Písmo](./media/fonttype.png)](./media/fonttype.png)                                                 | Nastaví u aktuálního textu vybrané písmo.              |
-| [![Tlačítko Velikost písma](./media/fontsize.png)](./media/fontsize.png)                                            | Nastaví u aktuálního textu vybranou velikost písma (v bodech). |
-| [![Tlačítko Tučné](./media/boldc130389.png)](./media/boldc130389.png)                                           | Nastaví aktuální text jako tučný.                             |
-| [![Tlačítko Kurzíva](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Nastaví aktuální text jako kurzívu.                           |
-| [![Tlačítko Podtržené](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podtrhne aktuální text.                             |
-| [![Tlačítko Zmenšit odsazení](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmenší odsazení aktuálního textu.                |
-| [![Tlačítko Zvětšit odsazení](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zvětší odsazení aktuálního textu.                |
-| [![Tlačítko Barva pozadí](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Změní barvu pozadí aktuální buňky.        |
-| [![Tlačítko Barva písma](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Změní barvu aktuálního textu.                   |
+| [![Tlačítko Styl písma.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Použije na aktuální text vybraný styl písma.      |
+| [![Tlačítko Písmo.](./media/fonttype.png)](./media/fonttype.png)                                                 | Nastaví u aktuálního textu vybrané písmo.              |
+| [![Tlačítko Velikost písma.](./media/fontsize.png)](./media/fontsize.png)                                            | Nastaví u aktuálního textu vybranou velikost písma (v bodech). |
+| [![Tlačítko Tučné.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Nastaví aktuální text jako tučný.                             |
+| [![Tlačítko Kurzíva.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Nastaví aktuální text jako kurzívu.                           |
+| [![Tlačítko Podtržené.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podtrhne aktuální text.                             |
+| [![Tlačítko Zmenšit odsazení.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmenší odsazení aktuálního textu.                |
+| [![Tlačítko Zvětšit odsazení.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zvětší odsazení aktuálního textu.                |
+| [![Tlačítko Barva pozadí.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Změní barvu pozadí aktuální buňky.        |
+| [![Tlačítko Barva písma.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Změní barvu aktuálního textu.                   |
 
 ### <a name="report-designer-toolbar"></a>Panel nástrojů návrháře sestav
 
 Panel nástrojů návrháře sestav poskytuje rychlý přístup k příkazům navigace v návrháři sestav. Tento panel nástrojů obsahuje následující tlačítka.
 
-| Tlačítko                                                                                              | Popis |
+| Tlačítko                                                                                              | popis |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Tlačítko Definice sestavy](./media/reportc130389.png)](./media/reportc130389.png)                 | Zobrazí definici sestavy uvedenou v nabídce **Okno**. |
-| [![Tlačítko Definice řádku](./media/rowc130389.png)](./media/rowc130389.png)                          | Zobrazí definici řádků, která je přiřazena k definici aktivní sestavy. |
-| [![Tlačítko Definice sloupce](./media/columnc130389.png)](./media/columnc130389.png)                 | Zobrazí definici sloupců, která je přiřazena k definici aktivní sestavy. |
-| [![Tlačítko Definice stromu výkaznictví](./media/treec130389.png)](./media/treec130389.png)             | Zobrazí definici organizačního stromu, která je přiřazena k definici aktivní sestavy. |
-| [![Tlačítko Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Spustí Prohlížeč sestav s nejnovější verzí vygenerované sestavy. Toto tlačítko je dostupné z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
-| [![Tlačítko Generovat sestavu](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Vygeneruje sestavu z definice aktivní sestavy. Toto tlačítko je dostupné z definice sestavy. |
+| [![Tlačítko Definice sestavy.](./media/reportc130389.png)](./media/reportc130389.png)                 | Zobrazí definici sestavy uvedenou v nabídce **Okno**. |
+| [![Tlačítko Definice řádku.](./media/rowc130389.png)](./media/rowc130389.png)                          | Zobrazí definici řádků, která je přiřazena k definici aktivní sestavy. |
+| [![Tlačítko Definice sloupce.](./media/columnc130389.png)](./media/columnc130389.png)                 | Zobrazí definici sloupců, která je přiřazena k definici aktivní sestavy. |
+| [![Tlačítko Definice stromu výkaznictví.](./media/treec130389.png)](./media/treec130389.png)             | Zobrazí definici organizačního stromu, která je přiřazena k definici aktivní sestavy. |
+| [![Tlačítko Report Viewer.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Spustí Prohlížeč sestav s nejnovější verzí vygenerované sestavy. Toto tlačítko je dostupné z definice sestavy, pokud jste vygenerovali alespoň jednu sestavu. |
+| [![Tlačítko Generovat sestavu.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Vygeneruje sestavu z definice aktivní sestavy. Toto tlačítko je dostupné z definice sestavy. |
 
 ## <a name="additional-resources"></a>Další zdroje
 

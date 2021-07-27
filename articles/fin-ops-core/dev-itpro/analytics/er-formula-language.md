@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223979"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355387"
 ---
 # <a name="electronic-reporting-formula-language"></a>Jazyk receptur v elektronickém výkaznictví
 
@@ -117,15 +117,15 @@ Pokud výraz odkazuje na strukturovaný zdroj dat, můžete použít definici ce
 
 Pokud cesta strukturovaného zdroje dat začíná znakem "zavináče" (@), jedná se o relativní cestu. Místo zbývající části absolutní cesty k hierarchické stromové struktuře, která je použita, se zobrazí znaménko zavináče. Následující obrázek znázorňuje příklad. Absolutní cesta `Ledger.'accountingCurrency()'` zde označuje, že hodnota účetní měny ze zdroje dat **hlavní knihy** je zadána do pole **AccountingCurrency** datového modelu.
 
-![Příklad absolutní cesty na stránce návrháře mapování modelu ER](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Příklad absolutní cesty na stránce návrháře mapování modelu ER.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Příklad na následujícím obrázku znázorňuje, jak je použita relativní cesta. Relativní cesta `@.AccountNum` označuje, že pole **AccountNum** zdroje dat **Intrastat** (které se zobrazuje o jednu úroveň nad polem **AccountNum** v hierarchickém stromu datového modelu) se používá k zadání čísla účtu odběratele nebo dodavatele v poli **AccountNum** datového modelu.
 
-![Příklad relativní cesty na stránce návrháře mapování modelu ER](./media/ER-FormulaLanguage-RelativePath1.png)
+![Příklad relativní cesty na stránce návrháře mapování modelu ER.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Zbývající část absolutní cesty je také zobrazena v [editoru vzorců ER](general-electronic-reporting-formula-designer.md).
 
-![Zbývající část absolutní cesty na stránce návrháře vzorců ER](./media/ER-FormulaLanguage-RelativePath2.png)
+![Zbývající část absolutní cesty na stránce návrháře vzorců ER.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Další informace získáte v části [Použití relativní cesty v datových vazbách modelů a formátů elektronického výkaznictví](relative-path-data-bindings-er-models-format.md).
 

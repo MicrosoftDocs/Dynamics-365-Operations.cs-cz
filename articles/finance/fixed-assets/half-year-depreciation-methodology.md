@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355525"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metodologie půlročního způsobu odpisů
 
@@ -36,7 +36,7 @@ První rok provozu bude uzavřen v prosinci 2020, což znamená, že konec pěti
 > Roční odpisy 50 000 / 5 = 10 000 měsíčních odpisů 10 000 / 12 = 833,33 <br>
 > Odpisy v prvním roce 10 000 / 2 = 5 000 a následné měsíční odpisy 5 000 / 9 = 555,56
 
-   [![Plán odpisů pro půlroční způsob odpisů](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Plán odpisů pro půlroční způsob odpisů.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Prodloužená období odpisů, která jsou přidána půlročním způsobem, poskytují přesnější rozdělení odpisů. Šestiměsíční způsob představuje rovnoměrnější výdaje na odpisy, což je užitečné pro vykazování zisků a ztrát.
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271394"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350321"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Použití nastavení měrné jednotky
 
@@ -32,7 +32,7 @@ Produkt lze prodávat v různých jednotkách, například „jednotlivě“, �
 
 V příkladu na následujícím obrázku byla v Commerce Headquarters nakonfigurována měrná jednotka prodeje ve výši **ea** (jednotlivě).
 
-![Příklad produktu, který je nakonfigurován s měrnou jednotkou v Commerce Headquarters](./media/Productunit-headquarters.PNG)
+![Příklad produktu, který je nakonfigurován s měrnou jednotkou v Commerce Headquarters.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Podpora pro použití a zobrazování měrných jednotek je k dispozici od verze Commerce 10.0.19.
@@ -54,11 +54,11 @@ Moduly, které používají nastavení měrné jednotky, zahrnují moduly buy bo
 
 Na příkladu na následujícím obrázku zobrazuje stránka s podrobnostmi o produktu (PDP) měrné jednotky (**ea**) pro produkt.
 
-![Příklad PDP, která zobrazuje měrnou jednotku](./media/Productunit-PDP.png)
+![Příklad PDP, která zobrazuje měrnou jednotku.](./media/Productunit-PDP.png)
 
 Na příkladu na následujícím obrázku zobrazuje modul kolekce produktu měrné jednotky (**ea**) pro produkt.
 
-![Příklad modulu kolekce produktu, který zobrazuje měrnou jednotku](./media/Productunit-productcollection.png)
+![Příklad modulu kolekce produktu, který zobrazuje měrnou jednotku.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

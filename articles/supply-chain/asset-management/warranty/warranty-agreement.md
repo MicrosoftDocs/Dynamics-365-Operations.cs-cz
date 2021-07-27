@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5644b5076aeda30d5535c0128497e267359583a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1f5c8ca5acab8f62637be8f6a04d982a3181ffc2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808201"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354221"
 ---
 # <a name="warranty-agreements"></a>Záruční smlouvy
 
@@ -51,7 +51,7 @@ Záruční smlouva může zahrnovat několik řádků smlouvy, které pokryjí z
     3. V poli **Interval** zadejte požadované číslo. Toto pole definuje počet období, pro která má být záruka platná.
     4. V poli **Procento** zadejte procento disponibility pro řádek záruky. Procentuální hodnota označuje, kolik je kryto vaší společností.
 
-![Stránka Záruka](media/01-warranty.png)
+![Stránka Záruka.](media/01-warranty.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

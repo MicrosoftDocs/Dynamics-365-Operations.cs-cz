@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187990"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355028"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
@@ -48,7 +48,7 @@ Výpočet režijních nákladů spustí zásady účtování nákladů ve správ
 
 Výpočet režijních nákladů se spustí bez ohledu na verzi. Proto lze vypočítat rozpočtovou verzi před skutečnou verzí. Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku. V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku. Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu. Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup. Máte tedy vždy plnou sledovatelnost. 
 
-[![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Výpočet režijních nákladů.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Výpočet a přidělení režijních nákladů za elektřinu
 Ve finančním účetnictví se některé náklady, jako je například elektřina, registrují jako paušální. Podrobný přehled pro vedoucí není tedy pro nákladové účetnictví k dispozici. V nákladovém účetnictví musí náklady procházet organizačními jednotkami, aby byl získán správný přehled pro vedoucí napříč všemi jednotkami a úrovněmi organizace. Tento tok musí být založen buď na přesném záznamu spotřeby nebo na objektivním hodnocení. V hlavní knize mohou být zaúčtovány náklady na elektřinu způsobem znázorněným v následující tabulce.
@@ -618,7 +618,7 @@ Další informace naleznete v tématu [Provedení výpočtu režijních náklad�
 
 Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Aplikace Finance podporuje reciproční metodu přidělování. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. 
 
-[![Reciproční metoda](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciproční metoda.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definice přidělení nákladů
 

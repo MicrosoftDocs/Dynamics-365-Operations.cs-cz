@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a447dee71e57df07d1e7709bc8e4d075fcc803b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837794"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343669"
 ---
 # <a name="schedule-maintenance-plans"></a>Rozvrhnout plány údržby
 
@@ -52,14 +52,14 @@ Preventivní plánování údržby vygeneruje položky kalendáře na majetku na
 
 5. Kliknutím na tlačítko **OK** zahájíte generování položek plánu údržby na majetku. Vygenerované položky budou zobrazeny na stránce se seznamem **Všechny plány údržby**. Následující ilustrace znázorňuje příklad sestavy **Plány rozvrhu údržby**.
 
-![Obrázek č. 1](media/09-preventive-maintenance.png)
+![Obrázek č. 1.](media/09-preventive-maintenance.png)
 
 - V dialogovém okně **Rozvrhnout plány údržby** můžete nastavit dávkové úlohy na pevné záložce **Spustit na pozadí** pro automatické generování položek kalendáře v pravidelných intervalech.  
 - Při plánování preventivní údržby nebudou vytvořeny řádky plánu údržby s očekávaným počátečním datem a časem, které předchází systémovému datu a času.  
 
 Následující obrázek poskytuje grafické znázornění výpočtu plánu údržby založené na čase.  
 
-![Obrázek č. 2](media/10-preventive-maintenance.jpg)
+![Obrázek č. 2.](media/10-preventive-maintenance.jpg)
 
 V souvislosti s plány údržby založenými na čítačích: v následujících obrázcích jsou zobrazeny dva různé cykly registrace čítačů. Jsou založeny na plánu údržby nastaveném pro majetek "V0001", což předpokládá, že majetek (auto) najede přibližně 2 000 km každý měsíc.
 
@@ -69,9 +69,9 @@ Na dalším obrázku je každý měsíc registrováno 2 000 km nebo více. Pok
 
 Zde popsané příklady znázorňují, že všechny registrace čítačů provedené na majetku ukazují trend popisující opotřebení majetku. Tato funkce se používá jako základ výpočtu v době plánování plánu údržby.
 
-![Obrázek č. 3](media/11-preventive-maintenance.png)
+![Obrázek č. 3.](media/11-preventive-maintenance.png)
 
-![Obrázek č. 4](media/12-preventive-maintenance.png)
+![Obrázek č. 4.](media/12-preventive-maintenance.png)
 
 
 

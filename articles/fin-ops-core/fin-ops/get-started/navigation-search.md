@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2fc57579f817d2735aaa94a5f6834185961dab39
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd9b6239a8f5db51ab3f238593197408e641b782
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750221"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349101"
 ---
 # <a name="navigation-search"></a>Hledání za účelem navigace
 
@@ -34,7 +34,7 @@ Chcete-li tuto funkci použít, kliknutím na ikonu **Hledat** zobrazíte pole *
 > [!NOTE]
 > Pole **hledání** usnadňuje hledání a přechod na stránky. Neslouží k hledání konkrétních dat nebo akcí.
 
-[![search-box](media/navigation-search.png "Vyhledávací pole")
+[![search-box.](media/navigation-search.png "Vyhledávací pole")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Rychlý přechod na konkrétní stránku
 

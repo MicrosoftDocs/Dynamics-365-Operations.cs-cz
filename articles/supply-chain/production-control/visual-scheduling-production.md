@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908699"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353413"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Ganttův diagram pro plánování úloh
 
@@ -45,10 +45,10 @@ Ganttův graf lze otevřít dvěma různými způsoby, **Zobrazení objednávky*
 
 ## <a name="order-view"></a>Zobrazení objednávek
 
-[![Zobrazení objednávek](./media/orderview.png)](./media/orderview.png)
+[![Zobrazení objednávek.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Zobrazení prostředků
-[![Zobrazení prostředků](./media/resview.png)](./media/resview.png)
+[![Zobrazení prostředků.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktivity
 Aktivity se zobrazují jako panely a jsou uspořádány v mřížce na časovém měřítku s plánovaným počátečním a koncovým časem, což nastavuje délku pruhů úměrnou době potřebné pro dokončení aktivity. Aktivity budou zobrazeny podle časového rozmezí. Časové rozmezí můžete upravit v nabídce, kde vyberete jednotku pro počáteční a koncové datum a čas, například hodiny nebo dny. Úpravou časového měřítka můžete nastavit fokus na časový interval, ve kterém chcete spravovat aktivity. 
@@ -102,25 +102,25 @@ Není možné plánovat úlohy mimo stanovený časový interval Ganttova diagra
 
 V síti, aktivit, jako jsou úlohy náležející do stejné výrobní zakázky, můžete vybrat funkci **naplánovat předchozí úlohy** k naplánování předchozích úloh vzhledem k vybrané úloze v síti. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním předchozí úlohy a po naplánování předchozí úlohy. 
 
-[![Naplánovat předchozí úlohu](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Naplánovat předchozí úlohu.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Naplánovat následující úlohy
 
 Můžete použít funkci **Naplánovat následující úlohy** k naplánování dalších úloh vzhledem k vybrané úloze v síti aktivit. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním následující úlohy a po naplánování následující úlohy. 
 
-[![Naplánovat následující úlohu](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Naplánovat následující úlohu.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Plánování kolem úlohy
 
 Můžete použít funkci **Plánování kolem úlohy** k naplánování další úlohy a předchozí úlohy vzhledem k vybrané úloze v síti aktivit. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním úlohy a po naplánování úlohy. 
 
-[![Plánování kolem úlohy](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Plánování kolem úlohy.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Uspořádat úlohy
 
 Pomocí funkce **Uspořádat** můžete uspořádat vybrané aktivity ve stejném prostředku. Tyto aktivity mohou být ve stejné síti aktivit, ale náležet také do různých sítí. Při použití funkce uspořádání budou mezery mezi vybranými aktivitami odstraněny. Tato funkce slouží k optimalizaci kapacity využití zdrojů. Diagram znázorňuje stav před naplánováním úlohy a po naplánování úlohy. 
 
-[![Uspořádat úlohu](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Uspořádat úlohu.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Opětovné přiřazení aktivit z jednoho zdroje do druhého
 

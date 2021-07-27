@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826244"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356768"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Snížení odpisu zůstatku po rozdělení
 
@@ -37,7 +37,7 @@ Platí například následující podmínky:
 - Odpisy prvního fiskálního roku se rovnají 18 000 USD, měsíční odpisy se rovnají 150 USD a majetek se poté odepisuje do listopadu 2019, a to ve výši 738 75 USD.
 - V listopadu 2019 je 80 procent majetku rozděleno na jiný dlouhodobý majetek.
 
-[![Snížení odpisu zůstatku po rozdělení](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Snížení odpisu zůstatku po rozdělení.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Částka k odpisu u původního majetku je 1 822,25 USD. Tato částka se rovná NBV před zaúčtováním rozdělené transakce (9 111,25 USD) plus úprava akvizice, která je generována během účtování rozdělené transakce (-8 000 USD), plus úprava odpisů, která je generována během rozdělené transakce (711 USD). Proto je odpis za druhý rok (1 822,25 × 18 procent) ÷ 12 = 27,33 USD.
 

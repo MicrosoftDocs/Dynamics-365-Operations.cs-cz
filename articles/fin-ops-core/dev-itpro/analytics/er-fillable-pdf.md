@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355411"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -115,11 +115,11 @@ V libovolném prohlížeči PDF otevřete stažené šablony PDF. Všimněte si,
 
 Na následujícím obrázku je zobrazena šablona PDF pro první stránku sestavy.
 
-![Šablona 1](media/rcs-ger-filloutpdf-template1.png)
+![Šablona 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Na následujícím obrázku je zobrazena šablona PDF pro další stránky sestavy.
 
-![Šablona 2](media/rcs-ger-filloutpdf-template2.png)
+![Šablona 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. Na stránce **Konfigurace** zvolte **Návrhář**.
 2. Vyberte **Přidat kořen**.
@@ -146,7 +146,7 @@ Na následujícím obrázku je zobrazena šablona PDF pro další stránky sesta
 
 12. Vyberte **OK**.
 
-    ![Dialogové okno Importovat z PDF](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Dialogové okno Importovat z PDF.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Ve stromu rozbalte **Výstup**.
 
@@ -176,7 +176,7 @@ Na následujícím obrázku je zobrazena šablona PDF pro další stránky sesta
 
     Všimněte si, že importovaný dokument PDF je připojen k upravenému formátu elektronického výkaznictví.
 
-    ![Náhled přílohy PDF](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Náhled přílohy PDF.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Pokračujte v návrhu tohoto formátu importováním druhé šablony PDF, přidáním potřebných vazeb do datových zdrojů a tak dále.
 20. Zvolte **Uložit**.
@@ -215,7 +215,7 @@ Poté naimportujete ukázkový formát elektronického výkaznictví, který jst
 1. Na stránce **Návrhář formátu** vyberte kartu **Mapování.**
 2. Ve stromu rozbalte **Stránkování \> Strany**.
 
-    ![Stránka návrháře receptury, na které je rozbalen strom modelu](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Stránka návrháře receptury, na které je rozbalen strom modelu.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Mějte na paměti následující podrobnosti:
 
@@ -238,7 +238,7 @@ Poté naimportujete ukázkový formát elektronického výkaznictví, který jst
 
     Všimněte si, že atribut **Název** tohoto prvku formátu je definován jako **Oprava 1**. Všimněte si také, že výraz **Název** prvku formátu je definován jako **Paging.FldName("Oprava",\@.Number)**.
 
-![Návrhář formátu, kde je vybráno mapování](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Návrhář formátu, kde je vybráno mapování.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Všimněte si, že prvek formátu **Pole** se používá k vyplnění jednotlivého pole vyplnitelného dokumentu PDF, který je definován jako šablona nadřazeného prvku formátu **Soubor PDF**. Vazba prvku formátu **Soubor PDF** nebo jeho vnořených prvků, pokud obsahuje vnořené prvky, určuje hodnotu, která je zadána do odpovídajících polí PDF. Různé vlastnosti prvku formátu **Pole** lze použít k určení toho, které pole PDF je vyplněno pomocí jednotlivého prvku formátu:
 
@@ -275,7 +275,7 @@ Dále načtete vzorový formát elektronického výkaznictví **Intrastat (impor
 
     Je-li možnost **Výchozí pro mapování modelu** nastavena na **Ano**, bude formát elektronického výkaznictví **Intrastat (import z aplikace Excel)** přiřazen jako výchozí zdroj dat pro konfiguraci formátu **sestavy Intrastat (PDF)**. Poté, co je spuštěna konfigurace formátu **sestavy Intrastat (PDF),** bude obsah sešitu aplikace Excel, který je analyzovaný formátem elektronického výkaznictví **Intrastat (import z aplikace Excel)**, simulovat transakce zahraničního obchodu, které musí být vykázány. Následující obrázek znázorňuje příklad sešitu aplikace Excel.
 
-    ![Sešit aplikace Excel, který obsahuje ukázková data](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Sešit aplikace Excel, který obsahuje ukázková data.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Spuštění konfigurace formátu
 
@@ -289,13 +289,13 @@ Dále načtete vzorový formát elektronického výkaznictví **Intrastat (impor
 
 Následující obrázek znázorňuje příklad první stránky vygenerované sestavy.
 
-![První stránka vygenerované sestavy](media/rcs-ger-filloutpdf-generatedreport.png)
+![První stránka vygenerované sestavy.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Následující obrázek znázorňuje příklad další stránky vygenerované sestavy.
 
-![Další stránka vygenerované sestavy](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Další stránka vygenerované sestavy.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 - [Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word](tasks/er-design-configuration-word-2016-11.md)

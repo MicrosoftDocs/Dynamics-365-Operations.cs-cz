@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86e8787320721a58f449abcfba21c2c4c6b4caf9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 988340d9e5fc12c9329a587c7401fe039c8e5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751769"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350687"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurace schvalovacích kroků ve workflowu
 
@@ -156,7 +156,7 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
 
     - **Jednotlivý schvalovatel** – akce použitá pro dokument je určena první reagující osobou. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Pokud je Sue první osobou reagující na dokument, je akce, kterou provede, použita pro dokument. Jestliže ho Sue odmítne, je dokument zamítnut a odeslán zpět Samovi. Jakmile Sue dokument schválí, je odeslán Anně ke schválení.
 
-        ![Workflow se schvalovacím procesem](./media/workflow_multipleusersinstep.gif)
+        ![Workflow se schvalovacím procesem.](./media/workflow_multipleusersinstep.gif)
 
     - **Většina schvalovatelů** – akce použitá pro dokument je určena, když reaguje většina schvalujících. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Akci použitou pro dokument určují první dva schvalující, kteří reagují, tedy Sue a Jo.
 

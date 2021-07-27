@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6834b460d3a78e47edb2edb7a72651e8454bf0ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020084"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343807"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Daň je v dokladu zaúčtovaná na nesprávný účet hlavní knihy
 
@@ -30,26 +30,26 @@ Daň se může během zaúčtování zaúčtovat na nesprávný účet hlavní k
 
 1. Na stránce **Transakce dokladu** vyberte transakci, se kterou chcete pracovat, a poté vyberte možnost **Zaúčtování DPH**.
 
-    [![Tlačítko Zaúčtování DPH na stránce Transakce dokladu](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Tlačítko Zaúčtování DPH na stránce Transakce dokladu.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Zkontrolujte hodnotu v poli **Kód DPH**. V tomto příkladu je hodnota **DPH 19**.
 
-    [![Pole Kód DPH na stránce Zaúčtování DPH](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Pole Kód DPH na stránce Zaúčtování DPH.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Zkontrolujte skupinu účtování hlavní knihy kvůli daňovému kódu
 
 1. Přejděte k nabídce **Daň** \> **Nepřímé daně** \> **DPH** \> **Kódy DPH**.
 2. Najděte a vyberte daňový kód a poté zkontrolujte hodnotu v poli **Skupina účtování hlavní knihy**. V tomto příkladu je hodnota **DPH**.
 
-    [![Pole Skupina zaúčtování hl. knihy na stránce Kódy DPH](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Pole Skupina zaúčtování hl. knihy na stránce Kódy DPH.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. Hodnota v poli **Skupina zaúčtování hl. knihy** je prázdná. Chcete-li zobrazit podrobnosti o konfiguraci skupiny, vyberte odkaz. Případně vyberte a podržte (nebo klikněte pravým tlačítkem) v poli a poté vyberte **Zobrazit podrobnosti**.
 
-    [![Příkaz Zobrazit podrobnosti](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Příkaz Zobrazit podrobnosti.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. V poli **DPH na výstup** ověřte správnost čísla účtu podle typu transakce. Pokud není správné, vyberte správný účet k zaúčtování. V tomto příkladu by měla být DPH prodejní objednávky zaúčtována na účet závazků DPH 222200.
 
-    [![Pole Splatná DPH na stránce Skupiny zaúčtování hlavní knihy](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![Pole Splatná DPH na stránce Skupiny zaúčtování hlavní knihy.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     Následující tabulka poskytuje informace o jednotlivých polích na stránce **Skupiny zaúčtování hlavní knihy**.
 
@@ -71,11 +71,11 @@ V kódu je účet zaúčtování určen dimenzí hlavní knihy. Dimenze hlavní 
 
 1. U prodejní objednávky přidejte zarážku u metod **Tax::saveAndPost()** a **Tax::post()**. Věnujte pozornost hodnotě **\_LedgerDimension**.
 
-    [![Ukázka kódu prodejní objednávky, která má zarážku](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Ukázka kódu prodejní objednávky, která má zarážku.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     U nákupní objednávky přidejte zarážku u metod **TaxPost::saveAndPost()** a **TaxPost::postToTaxTrans()**. Věnujte pozornost hodnotě **\_LedgerDimension**.
 
-    [![Ukázka kódu prodejní objednávky, která má zarážku](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Ukázka kódu prodejní objednávky, která má zarážku.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Spuštěním následujícího dotazu SQL vyhledejte zobrazenou hodnotu účtu v databázi na základě ID záznamu uloženého dimenzí hlavní knihy.
 
@@ -83,7 +83,7 @@ V kódu je účet zaúčtování určen dimenzí hlavní knihy. Dimenze hlavní 
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Zobrazená hodnota ID záznamu](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Zobrazená hodnota ID záznamu.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Prozkoumejte zásobník volání a zjistěte, kde je přiřazena hodnota **ledgerDimension**. Hodnota je obvykle od **TmpTaxWorkTrans**. V tomto případě byste měli přidat zarážku na **TmpTaxWorkTrans::insert()** a **TmpTaxWorkTrans::update()**, abyste zjistili, kde je přiřazená hodnota.
 

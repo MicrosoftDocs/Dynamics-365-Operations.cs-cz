@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216605"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346613"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -41,7 +41,7 @@ Model strany se často používá k reprezentaci středních až složitých vzt
 
 Následující obrázek ukazuje datový model pro stranu:
 
-![Datový model pro stranu](media/party-gab-image1.png)
+![Datový model pro stranu.](media/party-gab-image1.png)
 
 > [!TIP]
 > Když se pokoušíte vytvořit nový záznam účtu, použijte pole **Strana** k vyhledání záznamu podle názvu. Tímto způsobem, pokud najdete záznam, stačí jej vybrat. Systém automaticky vyplní všechna data ze strany. Nemusíte ručně zadávat všechna požadovaná pole. Toto chování najdete na integrovaných formulářích na stránkých **Účet**, **Kontakt** a **Dodavatel**.
@@ -58,7 +58,7 @@ V závislosti na obchodním kontextu může osoba nebo organizace hrát více ne
 
 Následující ilustrace znázorňuje datový model pro globální adresář.
 
-![Datový model pro globální adresář](media/party-gab-image2.png)
+![Datový model pro globální adresář.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakt
 
@@ -94,7 +94,7 @@ Tyto relace jsou uloženy v tabulce **Kontakt pro stranu**. Tyto informace najde
     + Když zvolíte hodnotu v poli **Přidružený kontakt**, pak vybíráte prokládaný kontakt typu **Osoba**.
     + Pokud vyberete hodnotu v poli **Přidružený účet** nebo **Přidružený prodejce**, vybíráte organizaci.
 
-    ![Karta Přidružené organizace na stránce Kontakt](media/party-gab-image3.png)
+    ![Karta Přidružené organizace na stránce Kontakt.](media/party-gab-image3.png)
 
     Bez ohledu na váš výběr je přidružení vytvořeno na úrovni strany a je použitelné na všechny role strany a je uloženo v entitě **Kontakt pro stranu**.
 
@@ -109,7 +109,7 @@ Když otevřete řádek **Kontakt**, ve kterém jsou pole **Je zákazník** nebo
 
 Do formulářů **Účet**, **Kontakt** a **Dodavatel** byla přidána nová stránka s názvem **Adresy**. Tato karta podporuje více poštovních adres pomocí mřížky, jak je znázorněno na následujícím obrázku.
 
-![Mřížka pro poštovní adresy](media/party-gab-image4.png)
+![Mřížka pro poštovní adresy.](media/party-gab-image4.png)
 
 Mřížka obsahuje následující sloupce:
 
@@ -121,7 +121,7 @@ Můžete použít tlačítko **Nová adresa** nad mřížkou k vytvoření tolik
 
 Pole **Adresa 1** a **Adresa 2** na kartě **Souhrn** stránky **Účet** odpovídají adresám **Dodávka** a **Faktura**.
 
-![Karta Souhrn pro poštovní adresy](media/party-gab-image5.png)
+![Karta Souhrn pro poštovní adresy.](media/party-gab-image5.png)
 
 Pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **Kontakt** odpovídají adresám **Podnik**, **Dodávka** a **Faktura**.
 
@@ -129,7 +129,7 @@ Pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **K
 
 Do formulářů **Elektronické adresy**, **Kontakt** a **Dodavatel** byla přidána nová stránka s názvem **Adresy**. Tato karta podporuje více elektronických adres pomocí mřížky, jak je znázorněno na následujícím obrázku.
 
-![Mřížka pro elektronické adresy](media/party-gab-image6.png)
+![Mřížka pro elektronické adresy.](media/party-gab-image6.png)
 
 Mřížka obsahuje následující sloupce:
 
@@ -205,7 +205,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     | ID strany (pole) | Přesná shoda |
     | Výběr (pole) | (prázdné) |
 
-    ![Duplicitní pravidlo pro účty](media/duplicate-rule-1.PNG)
+    ![Duplicitní pravidlo pro účty.](media/duplicate-rule-1.PNG)
 
 10. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Kontakty** nastavením následujících polí.
 
@@ -221,7 +221,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     | ID strany (pole) | Přesná shoda |
     | Výběr (pole) | (prázdné) |
 
-    ![Duplicitní pravidlo pro kontakty](media/duplicate-rule-2.PNG)
+    ![Duplicitní pravidlo pro kontakty.](media/duplicate-rule-2.PNG)
 
 11. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data.
 
@@ -300,11 +300,11 @@ Další informace viz [Odkaz na mapování duálního zápisu ](mapping-referenc
 + Elektronické adresy nastavené v záložce elektronických adres tabulek **Účet**, **Kontakt** a **Dodavatel** pochází z tabulky `msdyn_partyelectronicaddress`. Tyto informace neplynou k souvisejícím transakcím, jako je prodejní objednávka, nabídka a nákupní objednávka. Plánujeme tento problém vyřešit v přírůstkové verzi. Existující data v polích elektronické adresy v záznamech účtu a kontaktů budou i nadále fungovat na transakcích, jako je prodejní objednávka, nabídka a nákupní objednávka.
 + V aplikacích Finance and Operations můžete vytvořit záznam kontaktu z formuláře **Přidat kontakt**. Když se pokusíte vytvořit nový kontakt z formuláře **Zobrazit kontakt**, akce selže. Toto je známý problém.
 
-    ![Známý problém s Přidat kontakt](media/party-gab-contact-issue.png)
+    ![Známý problém s Přidat kontakt.](media/party-gab-contact-issue.png)
 
 + **Počáteční synchronizace** nepodporuje časová pole **Dostupný z** a **K dispozici pro** v **ContactForParty**, protože DIXF převádí hodnotu na řetězec místo na celé číslo. Konverze spustí chybu `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + Pokud se poštovní adresa používá z více než jednoho důvodu, například adresa obchodní komunikace a fakturační adresa, měla by vypadat jako `Business;Invoice` jak je znázorněno na následujícím obrázku. Pokud mezi hodnoty přidáte mezeru, zobrazí se chyba.
 
-    ![Známý problém s adresou](media/party-gab-address-issue.png)
+    ![Známý problém s adresou.](media/party-gab-address-issue.png)
 
 + Poštovní adresu se zpětným datem nelze zadat pomocí aplikace Finance and Operations s duálním zápisem, protože Dataverse nepodporuje datum platnosti. Pokud zadáte poštovní adresu s datem do budoucna pomocí aplikace Finance and Operations, synchronizuje se do Dataverse úplně a uvidíte adresu na uživatelském rozhraní okamžitě. Jakékoli aktualizace tohoto záznamu budou mít za následek chybu, protože je datován do budoucnosti a není aktuální v aplikaci Finance and Operations.

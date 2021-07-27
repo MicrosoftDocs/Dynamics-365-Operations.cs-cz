@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018599"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352173"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
 
@@ -56,9 +56,9 @@ Tento scénář ukazuje chování, když je možnost **Poměrné rozdělení na 
 
 V tomto scénáři organizace definovala náklady na úrovni záhlaví pro vztah způsobu dodání **99** a vztah způsobu dodání **11**. Nejsou konfigurovány žádné automatické náklady pro způsob dodání **21**.
 
-![Automatické náklady pro způsob dodání 99, když je poměrné rozdělení na odpovídající řádky vypnuto](media/99_disabled.png)
+![Automatické náklady pro způsob dodání 99, když je poměrné rozdělení na odpovídající řádky vypnuto.](media/99_disabled.png)
 
-![Automatické náklady pro způsob dodání 11, když je poměrné rozdělení na odpovídající řádky vypnuto](media/11_disabled.png)
+![Automatické náklady pro způsob dodání 11, když je poměrné rozdělení na odpovídající řádky vypnuto.](media/11_disabled.png)
 
 V kontaktním středisku je vytvořena prodejní objednávka a způsob dodání je nastaven na **99**. Tato objednávka obsahuje pět položek. Dva řádky objednávky byly konfigurovány pro použití způsobu dodání **99**, dva řádky byly nakonfigurovány pro použití způsobu dodání **11**, a jeden řádek byl nakonfigurován pro použití způsobu dodání **21**, jak je uvedeno v následující tabulce.
 
@@ -78,9 +78,9 @@ V tomto scénáři, pokud zákazník vrátí některé položky na objednávce a
 
 V tomto scénáři jsou definovány náklady na úrovni záhlaví pro vztah způsobu dodání **99** a vztah způsobu dodání **11**. Nicméně možnost **Poměrné rozdělení na odpovídající řádky prodeje** je nastavena na **Ano** pro tyto tabulky automatických nákladů.
 
-![Automatické náklady pro způsob dodání 99, když je poměrné rozdělení na odpovídající řádky zapnuto](media/99_enabled.png)
+![Automatické náklady pro způsob dodání 99, když je poměrné rozdělení na odpovídající řádky zapnuto.](media/99_enabled.png)
 
-![Automatické náklady pro způsob dodání 11, když je poměrné rozdělení na odpovídající řádky zapnuto](media/11_enabled.png)
+![Automatické náklady pro způsob dodání 11, když je poměrné rozdělení na odpovídající řádky zapnuto.](media/11_enabled.png)
 
 Tento scénář používá stejnou prodejní objednávku, která obsahuje pět řádků. Způsob dodání v záhlaví objednávky je nastaven **99**, ale způsob dodání pro každou položku na prodejní objednávce je nakonfigurován způsobem znázorněným v následující tabulce.
 
@@ -130,9 +130,9 @@ Vzhledem k tomu, že konfigurace automatických nákladů je nastavena na poměr
     - Celková hodnota produktu = 15 USD
     - **Hodnota nákladů = 0 USD** (Nebyly nakonfigurovány žádné automatické náklady pro tuto kombinaci odběratele a způsobu dodání.)
 
-    ![Náklady způsobu dodání 11 spadají do zvýrazněné úrovně](media/step2mode11.png)
+    ![Náklady způsobu dodání 11 spadají do zvýrazněné úrovně.](media/step2mode11.png)
 
-    ![Náklady způsobu dodání 99 spadají do zvýrazněné úrovně](media/step2mode99.png)
+    ![Náklady způsobu dodání 99 spadají do zvýrazněné úrovně.](media/step2mode99.png)
 
 3. Systém vypočítá hodnotu nákladů, která by měla být aplikována na každý řádek, na základě logiky poměrného rozdělení, která zohledňuje poměrnou hodnotu řádku ve vztahu k celkové hodnotě produktu skupiny.
 
@@ -163,7 +163,7 @@ Vzhledem k tomu, že konfigurace automatických nákladů je nastavena na poměr
 
 Proto bude pro tento příklad k položce 81334 přiřazeno přepravné 5,62 USD. Tyto náklady lze zobrazit na stránce **Spravovat náklady** pro řádek prodeje. Následující obrázek znázorňuje, jak vypadá tato stránka pro položku 81334.
 
-![Poměrně rozdělené náklady na řádku prodeje pro položku 81334](media/proratedlinecharge.png)
+![Poměrně rozdělené náklady na řádku prodeje pro položku 81334.](media/proratedlinecharge.png)
 
 Pokud je tento způsob výpočtu použit ve scénáři částečného vrácení, je-li kód nákladů vratný, bude vrácena pouze část nákladů, která je tomuto řádku přidělena.
 

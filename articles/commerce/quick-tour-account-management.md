@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027956"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352053"
 ---
 # <a name="account-management-pages-overview"></a>Přehled stránek správy účtů
 
@@ -35,7 +36,7 @@ Když se odběratel přihlásí a vybere **Můj účet**, otevře se úvodní st
 
 Následující ilustrace znázorňuje příklad cílové stránky správy účtu.
 
-![Příklad cílové stránky správy účtu](./media/Account-Management.PNG)
+![Příklad cílové stránky správy účtu.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Stránka profilu
 
@@ -43,7 +44,7 @@ Stránka **Můj profil** zobrazuje informace o účtu zákazníka, jako je např
 
 Následující ilustrace znázorňuje příklad stránky **Můj profil**, která byla sestavena pomocí knihovny modulů.
 
-![Příklad stránky s mým profilem](./media/Account-Management-MyProfile.PNG)
+![Příklad stránky s mým profilem.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Stránka adres
 
@@ -51,7 +52,7 @@ Stránka **Adresy** umožňuje odběrateli přidat adresy ke svému účtu. Dál
 
 Následující ilustrace znázorňuje příklad stránky **Adresy**.
 
-![Příklad stránky adresy](./media/Account-Management-Address.png)
+![Příklad stránky adresy.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Stránky Historie objednávek a Podrobnosti objednávky
 
@@ -59,11 +60,11 @@ Na stránce **Historie objednávek** se zobrazí souhrn všech objednávek odesl
 
 Následující ilustrace znázorňuje příklad stránky **Historie objednávek**.
 
-![Příklad stránky Historie objednávek](./media/Account-Management-OrderHistory.PNG)
+![Příklad stránky Historie objednávek.](./media/Account-Management-OrderHistory.PNG)
 
 Následující ilustrace znázorňuje příklad stránky **Podrobnosti objednávek**.
 
-![Příklad stránky Podrobnosti objednávek](./media/Account-Management-OrderDetails.PNG)
+![Příklad stránky Podrobnosti objednávek.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Stránka Věrnostní program
 
@@ -71,7 +72,7 @@ Stránka **Věrnostní program** umožňuje, aby se odběratel stal členem věr
 
 Následující obrázek znázorňuje příklad stránky **Věrnostní program**.
 
-![Příklad stránky Věrnostního programu](./media/Account-Management-Loyalty.PNG)
+![Příklad stránky Věrnostního programu.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Stránka seznamu požadovaných položek
 
@@ -79,7 +80,7 @@ Na stránce **Seznam požadovaných položek** se zobrazí seznam položek, kter
 
 Následující obrázek znázorňuje příklad stránky **Seznam požadovaných položek**.
 
-![Příklad stránky Seznam požadovaných položek](./media/Account-Management-Wishlist.PNG)
+![Příklad stránky Seznam požadovaných položek.](./media/Account-Management-Wishlist.PNG)
 
 Další informace o modulech správy účtů a o jejich vytváření naleznete v tématu [Správa účtu](account-management.md).
 

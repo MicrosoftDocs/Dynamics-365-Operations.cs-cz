@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022465"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353005"
 ---
 # <a name="e-commerce-site-overview"></a>Přehled webu elektronického obchodu
 
@@ -47,27 +47,27 @@ Během inicializace webu elektronického obchodu se zobrazí výzva k zadání n
 
 Když spustíte konfigurátor webů Commerce z LCS, zobrazí se stránka **Weby** (Sites). Tato stránka obsahuje dva předem konfigurované weby, **výchozí** (default) a **fabrikam**, jak je znázorněno v příkladu na následujícím obrázku.
 
-![Stránka Weby v konfigurátoru webů Commerce](media/e-commerce-site-01.png)
+![Stránka Weby v konfigurátoru webů Commerce.](media/e-commerce-site-01.png)
 
 Když vyberete jeden z těchto webů, budete vyzváni k výběru názvu domény, výchozího kanálu online obchodu, podporovaného jazyka pro vybraný kanál a cesty. Pokud je použit pouze jeden kanál, můžete cestu nechat prázdnou. Více kanálů nebo jazyků online obchodu lze nakonfigurovat později v konfigurátoru webů Commerce. Každý další kanál nebo jazyk bude vyžadovat jedinečnou cestu. Například máte dva online kanály, které jsou přidruženy k jednomu webu, a název domény pro tento web je `www.fabrikam.com`. V tomto případě může být cesta pro jeden kanál výchozí hodnota, která neobsahuje žádnou cestu (`https://www.fabrikam.com`) a druhý kanál lze nastavit na novou cestu, například **web2**, který bude mít adresu URL `https://www.fabrikam.com/site2`. Následující obrázek ukazuje příklad dialogového okna inicializace webu v konfigurátoru webů Commerce.
 
-![Dialogové okno inicializace konfigurátoru webů Commerce](media/e-commerce-site-02.png)
+![Dialogové okno inicializace konfigurátoru webů Commerce.](media/e-commerce-site-02.png)
 
 Stránka **Weby** také obsahuje tlačítko **Nový web**. Dialogové okno, které se zobrazí, když vyberete toto tlačítko, se podobá dialogovému oknu inicializace webu, ale slouží k vytvoření nového webu. Nové weby jsou prázdné. Nezahrnují stejné výchozí šablony, fragmenty, stránky a obrázky, které obsahují **výchozí** a **fabrikam** weby. Dle potřeby však můžete otevřít lístek podpory a požádat o přidání kopie výchozího obsahu na nový prázdný web. Další informace najdete v části [Vytvoření webu elektronického obchodu](create-ecommerce-site.md).
 
 Po inicializaci nového webu se zobrazí **domovská** stránka konfigurátoru webů Commerce. Tato stránka obsahuje odkazy na běžné akce a průvodce, jak je znázorněno v příkladu na následujícím obrázku.
 
-![Odkazy na domovské stránce v konfigurátoru webů Commerce](media/e-commerce-site-03.png)
+![Odkazy na domovské stránce v konfigurátoru webů Commerce.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Změna kanálů online obchodu nebo přidání kanálů online obchodu na web elektronického obchodu
 
 Po vytvoření webu elektronického obchodu můžete změnit kanál, ke kterému je přidružen, podle pokynů v části [Přidružení webu elektronického obchodu k online kanálu](associate-site-online-store.md). Příklad na následujícím obrázku ukazuje, jak lze na stránce **Kanály** změnit číslo provozní jednotky kanálu (OUN) (**Nastavení webu \> Kanály**). Po provedení změny nezapomeňte vybrat **Uložit a publikovat**. Tímto způsobem zajistíte publikování změny.
 
-![Stránka Kanály v konfigurátoru webů Commerce](media/e-commerce-site-04.png)
+![Stránka Kanály v konfigurátoru webů Commerce.](media/e-commerce-site-04.png)
 
 Nové kanály můžete přidat volbou **Přidat kanál**. Chcete-li do kanálu přidat nové jazyky, vyberte daný kanál a poté vyberte **Přidat národní prostředí** v zobrazeném dialogovém okně kanálu. Než se v dialogovém okně mohou objevit národní prostředí, musí být předem nakonfigurována pro kanál online obchodu v centrále Commerce.
 
-![Dialogové okno Kanál konfigurátoru webů Commerce](media/e-commerce-site-05.png)
+![Dialogové okno Kanál konfigurátoru webů Commerce.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Vytvoření klienta Azure B2C
 

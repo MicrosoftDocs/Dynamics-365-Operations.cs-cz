@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750611"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346489"
 ---
 # <a name="integrated-vendor-master"></a>Integrovaná hlavní data dodavatelů
 
@@ -39,11 +39,11 @@ U obou přístupů jsou data dodavatele integrována mezi Dynamics 365 Supply Ch
 
 Pokud nechcete uložit data dodavatele v tabulce **Účet/kontakt** v Dataverse, můžete použít nový návrh dodavatele.
 
-![Tok dat dodavatele](media/dual-write-vendor-data-flow.png)
+![Tok dat dodavatele.](media/dual-write-vendor-data-flow.png)
 
 Pokud nechcete nadále ukládat data dodavatele v tabulce **Účet/kontakt**, můžete použít rozšířený návrh dodavatele. Chcete-li použít rozšířený návrh dodavatele, je nutné nakonfigurovat workflowy dodavatele v balíčku řešení dvojitého zápisu. Další informace naleznete v tématu [Přepínání mezi návrhy dodavatele](vendor-switch.md).
 
-![Rozšířený tok dat dodavatele](media/dual-write-vendor-detail.jpg)
+![Rozšířený tok dat dodavatele.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Používáte portály Power Apps pro samoobslužné dodavatele, mohou informace o dodavateli téci přímo do aplikací Finance and Operations.

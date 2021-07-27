@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354462"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 
@@ -55,14 +55,14 @@ Tento postup slouží k vytvoření nového záznamu pomocí Záznamníku úloh.
 1. Spusťte Retail Modern POS nebo Cloud POS a přihlaste se.
 2. Na stránce **Nastavení** v části **Záznamník úloh** klikněte na **Otevřít záznamník úloh**. Otevře se podokno **Záznamníku úloh**. Můžete kliknout na tlačítko **Zavřít** (**X**) v pravém horním rohu pro zavření podokna **Záznamník úkolů** před zahájením nového záznamu. K opětovnému otevření podokna zopakujte krok 2.
 
-    [![Podokno Záznamník úloh](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Podokno Záznamník úloh.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Zadejte jméno a popis pro nahrávky a poté klepněte na možnost **Spustit**. Relace záznamu začne hned po klepnutí na tlačítko **Spustit**.
 
     > [!NOTE]
     > Pokud kliknete na tlačítko **Zavřít** (**X**) v pravém horním rohu v době, kdy probíhá nahrávání, podokno **Záznamník úloh** se zavře, ale relace nahrávání se neukončí. K opětovnému otevření podokna Záznamník úkolů klepněte na tlačítko **Nápověda** (otazník) v horní části obrazovky.
     >
-    > [![Otazník](./media/help.jpg)](./media/help.jpg)
+    > [![Otazník.](./media/help.jpg)](./media/help.jpg)
 
 4. Po kliknutí na tlačítko **Spustit** záznamník úloh přejde do režimu nahrávání. V podokně **Záznamník úloh** se zobrazují informace a ovládací prvky, které se vztahují k procesu záznamu.
 5. Proveďte akce, které chcete provést v uživatelském rozhraní Retail Modern POS nebo Cloud POS.
@@ -72,7 +72,7 @@ Tento postup slouží k vytvoření nového záznamu pomocí Záznamníku úloh.
 
 Po ukončení relace záznamu se zobrazuje několik možností tak, abyste si mohli stáhnout záznam.
 
-[![Možnosti stahování](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Možnosti stahování.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Uložit do tohoto počítače
 
@@ -88,7 +88,7 @@ Nezpracovaný soubor záznamu je užitečný pro scénáře vývojářů, jako j
 
 ## <a name="recording-controls"></a>Ovládací prvky pro záznam
 
-[![Ovládací prvky pro záznam](./media/controls.jpg)](./media/controls.jpg)
+[![Ovládací prvky pro záznam.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Zastavit
 
@@ -117,13 +117,13 @@ Začátek a konec sady seskupených kroků můžete určit pomocí tlačítka **
 
 Poznámka je doplňkový text, který přidáváte do kroku v záznamu. Můžete například použít poznámky k poskytnutí uživateli dalšího kontextu nebo pokynů. Můžete přidat poznámky před nebo za krok. Můžete přidat poznámky k jakémkoli kroku klepnutím na tlačítko **Upravit** (symbol tužky) napravo od kroku.
 
-[![Tlačítko Upravit u kroku](./media/annotate.jpg)](./media/annotate.jpg)
+[![Tlačítko Upravit u kroku.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Texty a poznámky
 
 V polích **Texty** a **Poznámky** můžete přidat text, který by měl být přidružený ke kroku v Průvodci záznamem úloh.
 
-[![Pole Text a Poznámky](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Pole Text a Poznámky.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Text
 
@@ -137,7 +137,7 @@ Text, který zadáte do pole **Poznámky**, se zobrazí *pod* krokem v Průvodci
 
 Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-ops-core/fin-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Commerce, a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání.
 
-[![Tlačítko Nápověda](./media/help.jpg)](./media/help.jpg)
+[![Tlačítko Nápověda.](./media/help.jpg)](./media/help.jpg)
 
 Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako téma nápovědy nebo kroky exportovat do wordového dokumentu.
 
