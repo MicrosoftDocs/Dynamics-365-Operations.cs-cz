@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0ea0fc8d50c25312b184ec1d3bd613695870d121
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2d098f323d58bf3233a83655b213afe131ae3f36
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792552"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349273"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Povýšení varianty a dokončení experimentu
 
 Toto téma popisuje, jak můžete povýšit variantu, která ve vašem experimentu přinesla nejlepší výsledky, a jak experiment dokončit. Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
 
-[ ![Cesta uživatele experimentováním – kontrola a dokončení](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
+[ ![Cesta uživatele experimentováním – kontrola a dokončení.](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
 Po [spuštění experimentu](experimentation-run-monitor.md) a shromáždění dostatečných dat, abyste mohli určit, kterou variantu chcete používat na živém webu, můžete danou variantu povýšit a experiment ukončit.
 

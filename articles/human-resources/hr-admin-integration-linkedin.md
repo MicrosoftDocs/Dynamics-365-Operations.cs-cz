@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055093"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360585"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrace s LinkedIn Talent Hub
 
@@ -48,7 +48,7 @@ Nastavení integrace s LinkedIn Talent Hub musí provést správce systému. Nej
 
 5. Na stránce **Dynamics 365 Human Resources** vyberte prostředí, ke kterému chcete propojit LinkedIn Talent Hub, a poté vyberte **Propojit**.
 
-    ![Zprovoznění LinkedIn Talent Hub](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![Zprovoznění LinkedIn Talent Hub.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Můžete se připojit pouze k prostředím, kde má váš uživatelský účet přístup správce do prostředí Human Resources i do přidruženého prostředí Power Apps. Pokud na stránce propojení s Human Resources nejsou uvedena žádná prostředí, ujistěte se, že máte v klientovi licencovaná prostředí Human Resources a že uživatel, pod kterým jste se přihlásili ke stránce s propojením, má oprávnění správce jak do prostředí Human Resources, tak do prostředí Power Apps.
@@ -91,7 +91,7 @@ Pro adaptér LinkedIn Talent Hub musí být vytvořen uživatel aplikace, aby by
 
 6. V rozevírací nabídce nad seznamem můžete změnit zobrazení z výchozího **Povolení uživatelé** na **Uživatelé aplikace**.
 
-    ![Zobrazení Uživatelé aplikace](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Zobrazení Uživatelé aplikace.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Na panelu nástrojů vyberte **Nový**.
 
@@ -163,7 +163,7 @@ Poté, co kandidát prošel náborovým procesem a byl přijat, můžete exporto
     - V poli **Location** (Umístění) zadejte umístění, kde bude zaměstnanec sídlit.
     - Zadejte nebo ověřte e-mailovou adresu zaměstnance.
 
-![Export do podokna HRIS v LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Export do podokna HRIS v LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Dokončení zprovoznění v Human Resources
 

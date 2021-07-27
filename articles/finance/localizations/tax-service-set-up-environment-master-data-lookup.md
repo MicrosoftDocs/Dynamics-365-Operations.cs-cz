@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e4aa941c57e8c31793d6db8ae87140cd1bb1a82b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 348643d7213b8c053d6a15b4b716a3ce75ba2fa2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021337"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346367"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Nastavení prostředí pro vyhledávání hlavních dat
 
@@ -69,16 +69,16 @@ Toto téma vysvětluje, jak nastavit prostředí tak, aby používalo funkci vyh
 
 8. Vyberte **Zkontrolovat připojení** a dokončete proces připojení. 
 
-   [![Tlačítko Zkontrolovat připojení](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
+   [![Tlačítko Zkontrolovat připojení.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
 
 9. Přejděte na **Elektronické výkaznictví** > **Daňové konfigurace** a importujte daňové konfigurace z [Daňové konfigurace](https://go.microsoft.com/fwlink/?linkid=2158352).
 
-   [![Stránka Daňové konfigurace, strom datového modelu daní](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
+   [![Stránka Daňové konfigurace, strom datového modelu daní.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
 10. Přejděte na **Mapování modelu zdanitelného dokumentu** nebo **Mapování modelu Dataverse**, pokud používáte konfiguraci Microsoftu a v poli **Připojená aplikace** vyberte záznam, který jste vytvořili v kroku 7.
 11. Nastavte možnost **Výchozí pro mapování modelu** na **Ano**.
 
-   [![Stránka mapování modelu](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
+   [![Stránka mapování modelu.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

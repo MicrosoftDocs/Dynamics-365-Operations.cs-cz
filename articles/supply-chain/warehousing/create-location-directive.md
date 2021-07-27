@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: a896953a5603d9766f2c4938158088fc9424d5bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911289"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343741"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -51,7 +51,7 @@ Než budete moci vytvořit směrnici o umístění, musíte se ujistit, že jsou
 
 Mnoho polí, která lze nastavit pro směrnice skladového místa, je společných pro všechny typy pracovních příkazů. Ostatní pole jsou však specifická pro konkrétní typy pracovních příkazů.
 
-![Typy pracovních příkazů pro směrnice skladového místa](media/Location_Directives_Work_Order_Types.png "Typy pracovních příkazů pro směrnice skladového místa")
+![Typy pracovních příkazů pro směrnice skladového místa.](media/Location_Directives_Work_Order_Types.png "Typy pracovních příkazů pro směrnice skladového místa")
 
 > [!NOTE]
 > Dva typy pracovních příkazů, *Zrušená práce* a *Počítání cyklů*, jsou používány pouze systémem. Pro tyto typy pracovních příkazů nelze vytvořit směrnice skladového místa.

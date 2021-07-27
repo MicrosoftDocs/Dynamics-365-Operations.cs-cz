@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838712"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361204"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Vytvoření konfigurací v Regulatory Configuration Services (RCS) a jejich odeslání do globálního úložiště
 
@@ -51,7 +51,7 @@ Pokud již bylo pro vaši společnost zřízeno prostředí RCS, přistupte k n�
 5. Zadejte jméno a popis a poté vyberte **Vytvořit konfiguraci** k vytvoření nové odvozené verze.
 6. Vyberte nově odvozenou konfiguraci, přidejte popis verze a poté vyberte **OK**. Stav konfigurace na se změní na **Dokončeno**.
 
-![Nová verze konfigurace v RCS](media/RCS_CompleteConfig.JPG)
+![Nová verze konfigurace v RCS.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Při změně stavu konfigurace se může zobrazit chybová zpráva o ověření související s připojenými aplikacemi. Chcete-li validaci vypnout, v podokně Akce na kartě **Konfigurace** vyberte **Uživatelské parametry**, a poté nastavte **Přeskočit ověření při změně stavu konfigurace a přeskládat** možnost na **Ano** 
@@ -63,7 +63,7 @@ Chcete-li s organizací sdílet novou nebo odvozenou konfiguraci, nahrajte ji do
 1. Vyberte dokončenou verzi konfigurace a poté vyberte **Nahrát do úložiště**.
 2. Vyberte **Globální (Microsoft)** a poté vyberte **Nahrát**.
 
-    ![Nahrání do možností úložiště](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Nahrání do možností úložiště.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. V dialogovém okně pro potvrzení vyberte **Ano**. 
 4. Podle potřeby aktualizujte popis verze a poté vyberte **OK**. 
@@ -73,7 +73,7 @@ Stav konfigurace je aktualizován na **Sdílení** a konfigurace se nahraje do g
 - Importujte jej do instance Dynamics 365. Další informace získáte v tématu [(ER) Import konfigurací z RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Pro sdílení s třetí stranou nebo externí organizací, viz [RCS sdílení konfigurací elektronického výkaznictví (ER) s externími organizacemi](rcs-global-repo-share-configuration.md)
 
-    ![Odvozená verze konfigurace Intrastat Contoso v globálním úložišti](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Odvozená verze konfigurace Intrastat Contoso v globálním úložišti.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Odstranění konfigurace z globálního úložiště
 Pomocí následujících kroků odstraňte konfiguraci, kterou vaše organizace vytvořila.
@@ -84,11 +84,11 @@ Pomocí následujících kroků odstraňte konfiguraci, kterou vaše organizace 
 4. Na záložce s náhledem **Filtr** vyhledejte konfiguraci, kterou chcete odstranit, pomocí funkce **Filtr**.
 5. Na záložce s náhledem **Verze** vyberte verzi konfigurace, kterou chcete odstranit, a poté vyberte **Odstranit**:
 
-    ![Odstranění konfigurace z globálního úložiště](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Odstranění konfigurace z globálního úložiště.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. V dialogovém okně pro potvrzení vyberte **Ano**.
 
-    ![Odstranění zprávy s potvrzením o verzi konfigurace](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Odstranění zprávy s potvrzením o verzi konfigurace.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 Verze konfigurace je odstraněna a zobrazí se potvrzovací zpráva. 
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828483"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359830"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synchronizace seznamu projektů z aplikace Supply Chain Management do služby Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828483"
 
 Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 Následující šablona a základní úlohy se používají ke spuštění synchronizace projektů ze Supply Chain Management do Field Service.
@@ -63,7 +63,7 @@ Povolte sledování změn pro projekty datové entity.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekty (z aplikace Supply Chain Management do služby Field Service): Projekty
 
-[![Mapování šablony v integraci dat](./media/FSProject1.png)](./media/FSProject1.png)
+[![Mapování šablony v integraci dat.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Začněte s elektronickou fakturací pro Egypt
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začněte s elektronickou fakturací pro Itálii
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Začněte s elektronickou fakturací pro Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Nastavení elektronické fakturace
@@ -1607,6 +1605,8 @@
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analýza přizpůsobení pro optimalizaci plánování
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: 'Parametry, které optimalizace plánování nepoužívá'
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Použití filtrů na plán
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hlavní plánování s prognózou poptávky
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Plánování výroby
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Plánování s nekonečnou kapacitou
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Značení zásob s optimalizací plánování
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
@@ -1841,7 +1843,7 @@
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektura systému workflowu
+                - name: Architektura systému pracovních postupů
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Prvky workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurace kroků schválení
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace kontrolorů výdajů
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurace ručních rozhodnutí
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurace podmíněných rozhodnutí
@@ -1897,7 +1901,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Přidružení třídy dokumentu workflow k typu workflow
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sestava typů workflow
+                - name: Sestava typů pracovních postupů
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Workflow – Často kladené otázky
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json

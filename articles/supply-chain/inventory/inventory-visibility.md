@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6016999"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358091"
 ---
 # <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
@@ -143,7 +143,7 @@ Až budete mít nasazené předpoklady, použijte následující postup, pokud d
 
             Další informace o této proměnné najdete v části [ Nastavení integrace Viditelnosti zásob](#setup-inventory-visibility-integration) v další části tohoto tématu.
 
-        ![Trigger konfigurace](media/configuration-trigger.png "Trigger konfigurace")
+        ![Trigger konfigurace.](media/configuration-trigger.png "Trigger konfigurace")
 
     1. Vyberte příkaz **Zapnout**.
 
@@ -157,7 +157,7 @@ Pro instalaci doplňku Viditelnost zásob proveďte následující:
 1. Na stránce prostředí přejděte dolů, dokud neuvidíte část **Doplňky prostředí** v části **Integrace Power Platform** , kde najdete název prostředí Dataverse.
 1. V sekci **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
 
-    ![Stránka prostředí v LCS](media/inventory-visibility-environment.png "Stránka prostředí v LCS")
+    ![Stránka prostředí v LCS.](media/inventory-visibility-environment.png "Stránka prostředí v LCS")
 
 1. Vyberte odkaz **Nainstalovat nový doplněk**. Otevře se seznam dostupných doplňků.
 1. V seznamu vyberte možnost **Viditelnost zásob**.
@@ -166,7 +166,7 @@ Pro instalaci doplňku Viditelnost zásob proveďte následující:
     - **ID aplikace AAD (klienta)**
     - **ID klienta AAD**
 
-    ![Stránka nastavení doplňku](media/inventory-visibility-setup.png "Stránka nastavení doplňku")
+    ![Stránka nastavení doplňku.](media/inventory-visibility-setup.png "Stránka nastavení doplňku")
 
 1. Odsouhlaste smluvní podmínky výběrem zaškrtávacího políčka **Smluvní podmínky**.
 1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení obnovte stránku, aby se zobrazila změna stavu **Nainstalováno**.

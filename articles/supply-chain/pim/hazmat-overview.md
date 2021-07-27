@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f8c3dc084f4f260f8cc29b3957913e9bc1b762d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829371"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356992"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 
@@ -27,7 +28,7 @@ Aby organizace, které přepravují materiály klasifikované jako nebezpečné 
 
 Následující diagram znázorňuje kroky potřebné k nastavení a používání funkce nebezpečných materiálů.
 
-![Nastavení a použití funkce nebezpečných materiálů](media/hazmat-overview.png "Nastavení a použití funkce nebezpečných materiálů")
+![Nastavení a použití funkce nebezpečných materiálů.](media/hazmat-overview.png "Nastavení a použití funkce nebezpečných materiálů")
 
 Funkce nebezpečných materiálů je nastavena ve správě informací o produktu a poskytuje dokumenty, které lze vytisknout prostřednictvím správy skladu. Obecně řečeno, tyto oblasti jsou dvě hlavní oblasti, kde budete kontrolovat, nastavovat a používat tuto funkci:
 

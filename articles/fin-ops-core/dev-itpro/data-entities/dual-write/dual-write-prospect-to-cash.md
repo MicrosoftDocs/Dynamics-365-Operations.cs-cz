@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754081"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361374"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
@@ -33,7 +33,7 @@ Důležitým cílem většiny společností je převod potenciálních zákazní
 
 V rozhraní aplikace můžete přistupovat ke stavům zpracování a informacím o fakturách v reálném čase. Z tohoto důvodu je možné snadněji spravovat funkce, jako je například výdeje produktu, zpracování zásob a splnění v modulu Supply Chain Management, aniž by bylo nutné znovu vytvářet nabídky a objednávky.
 
-![Datový tok s dvojím zápisem ve zpeněžení potenciálního zákazníka](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Datový tok s dvojím zápisem ve zpeněžení potenciálního zákazníka.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Informace o integraci zákazníků a kontaktů najdete v části [Integrovaný kmenový soubor zákazníka](customer-mapping.md). Informace o integraci produktu najdete v části [Jednotná zkušenost s produktem](product-mapping.md).
 
@@ -48,7 +48,7 @@ Než bude možné synchronizovat prodejní nabídky, je nutné aktualizovat nás
 
 V Sales přejděte na **Nastavení \> Správa \> Nastavení systému \> Prodej** a ujistěte se, že se používají následující nastavení:
 
-- Systémová možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
+- Možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
 - Sloupec **Metoda výpočtu slevy** je nastaven na **Položka řádku**.
 
 ### <a name="sites-and-warehouses"></a>Pracoviště a sklady

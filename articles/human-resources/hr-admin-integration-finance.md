@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360633"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurace integrace s aplikací Finance
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055117"
 
 Chcete-li integrovat Dynamics 365 Human Resources s Dynamics 365 Finance, můžete použít šablonu Human Resources do Finance v [Integrátoru dat](/powerapps/administrator/data-integrator). Šablona Human Resources do Finance umožňuje tok dat pro úlohy, pozice a pracovníky. Šablona umožňuje tok dat z Human Resources do Finance, ale neumožňuje data tok z Finance do Human Resources.
 
-![Tok integrace z Human Resources do Finance](./media/hr-admin-integration-finance-flow.png)
+![Tok integrace z Human Resources do Finance.](./media/hr-admin-integration-finance-flow.png)
 
 Řešení Human Resources do Finance poskytuje následující typy synchronizace dat:
 
@@ -253,6 +253,6 @@ ID místa použité pro adresu pracovníka není součástí číselné řady. J
 
 Na následujícím obrázku je příklad mapování šablony v integrátoru dat. 
 
-![Mapování šablony](./media/IntegrationMapping.png)
+![Mapování šablony.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e066deedcdb02237d6f492047e19100255dab84e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bd33158514de149ecc7da5823c799dd567aeee13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795542"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357827"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Nastavení a správa obrázků pro Modern POS (MPOS)
 
@@ -46,11 +46,11 @@ V následujících procedurách jsou obrázky nastaveny jako příklad pro entit
 1. Otevřete portál Commerce HQ.
 2. Klikněte na **Maloobchod a velkoobchod** &gt; **Nastavení kanálu** &gt; **Profily kanálu**.
 
-    [![Navigace](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigace.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. V profilu kanálu, který váš obchod používá pro MPOS aktualizujte pole **Základní adresu URL média** se základní adresou URL serveru média nebo CDN. Základní adresa URL je první část adresy URL, která je společná pro všechny složky obrázku různých entit.
 
-    [![Stránka profilů kanálu](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Stránka profilů kanálu.](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definování šablon médií pro entitu
 
@@ -68,7 +68,7 @@ V následujících procedurách jsou obrázky nastaveny jako příklad pro entit
 8. Spusťte úlohy synchronizace pro zadání nové šablony do databáze kanálů, aby MPOS mohl šablonu použít pro přístup k obrázkům.
 9. Pokud chcete aktualizovat šablonu médií pro katalogové obrázky na straně kanálu média, je nutné spustit **Úlohu katalogu 1150** z **IT pro maloobchodní a velkoobchodní prodej** &gt; **Plán distribuce**.
 
-    [![Dialogové okno Definovat šablonu média](./media/catalog1.png)](./media/catalog1.png)
+    [![Dialogové okno Definovat šablonu média.](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Náhled obrázku z úrovně entity
 
@@ -77,7 +77,7 @@ V následujících procedurách jsou obrázky nastaveny jako příklad pro entit
 3. Lze použít tlačítka **Přidat** a **Odebrat** pro ruční změnu cesty, která je založena na implicitní šabloně a je využívána pro konkrétní obrázek. Další informace naleznete v části [Přepsání šablony médií pro položky entit](#overwriting-the-media-template-for-entity-items) v další části tohoto článku.
 4. Poté, co jste dokončili náhled obrázku a provedli jakékoli změny, které jste požadovali, spusťte instanci MPOS odpovídajícího obchodu a podívejte se, zda se zobrazily katalogové obrázky.
 
-    [![Dialogové okno Obrázky](./media/catalog4.png)](./media/catalog4.png)
+    [![Dialogové okno Obrázky.](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Stejný postup lze použít pro všech pět entit, které jsou podporovány: pracovníka, odběratele, katalog, kategorie a produkty. „Katalogové produkty“ (produkty, které jsou nastaveny na úrovni katalogu) a „Produkty kanálu“ (produkty, které jsou nastaveny na úroveň kanálu) používají šablonu média, která je nastavena pro entitu produktů. Pro šablonu médií produktů můžete vybrat číslo obrázků produktů, které mají být zobrazeny po produktu. Můžete také nastavit pro daný produkt výchozí obrázek. Tímto způsobem lze zabránit prázdným obrázkům v MPOS a pomoci řídit, který obrázek se používá jako výchozí obrázek vyráběnou položku. V následujícím příkladu má každý produkt pět obrázků a první obrázek je nastaven jako výchozí obrázek. Varianty produktů jsou zpracovány stejným způsobem jako hlavní produkty. Název souboru obrazového souboru má být založen na čísle produktu. Některé znaky také unikly, zatímco byl vytvářen název souboru. Je tedy dobré ověřit název souboru za použití oddílu **Generovat adresy URL obrázku pro Excel**. Další informace naleznete v části [Přepis pomocí úprav v aplikaci Excel](#overwrite-by-using-edit-in-excel) dále v tomto článku.
@@ -108,7 +108,7 @@ Jak jste se již dozvěděli v předchozím oddílu, šablona média dané entit
 
     Nyní můžete zobrazit náhled adres URL obrázků, které byly vygenerovány na základě naposledy uložené šablony média.
 
-    [![Generování URL adres obrázků pro záložku s náhledem Excel po volbě Generovat](./media/excel2.png)](./media/excel2.png)
+    [![Generování URL adres obrázků pro záložku s náhledem Excel po volbě Generovat.](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Adresy URL generované pro aplikaci Excel používají cestu a konvence šablony média, která je definována. Tyto konvence zahrnují konvence pro názvy souborů. Předpokladem je, že jste nastavili fyzické obrázky mimo aplikaci Commerce a obrázky lze získat z adresy URL, která je odvozena z šablony média, kterou jste definovali dříve. Odvozené adresy URL lze přepisovat použitím funkcí úpravy v aplikaci Excel.
@@ -117,17 +117,17 @@ Jak jste se již dozvěděli v předchozím oddílu, šablona média dané entit
 6. Po otevření sešitu aplikace Microsoft Excel po zobrazení výzvy klepněte na tlačítko **povolit úpravu**.
 7. Po zobrazení výzvy klepněte v pravém podokně na možnost **Důvěřovat tomuto doplňku** a počkejte, až doplněk dokončí instalaci.
 
-    [![Důvěřovat tomuto doplňku](./media/excel4.jpg)](./media/excel4.jpg)
+    [![Důvěřovat tomuto doplňku.](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Pokud budete vyzváni k přihlášení, zadejte pověření používané pro přístup k centrále.
 
-    [![Výzva k přihlášení](./media/excel5.png)](./media/excel5.png)
+    [![Výzva k přihlášení.](./media/excel5.png)](./media/excel5.png)
 
 9. Poté, co se přihlásíte, je třeba zobrazit seznam adres URL obrázků pro různé položky katalogu.
 10. Upravujte, přidávejte a odebírejte adresy URL obrázků pro různé položky entity.
 11. Pro všechny entity s výjimkou produktů je možné přepsat adresy URL obrázku. Upravte stávající adresu URL obrázku tak, aby používala novou cílovou adresu URL obrázku a aktualizujte název souboru novým názvem souboru pro soubor obrázku. Název souboru musí být jedinečný, aby pomohl zajistit, že daný záznam je jedinečný.
 
-    [![Přepis adres URL obrázku v Excelu](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Přepis adres URL obrázku v Excelu.](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > Při přepsání adres URL obrázku pro entity produktů pomocí funkce úprav aplikace Excel nebo stránky s položkami entity MPOS vždy zobrazí všechny adresy URL obrázku šablon médií spolu s přepsaným obrázkem adresy URL.
@@ -153,11 +153,11 @@ Pro všechny entity s výjimkou produktů, je možné přepsat adresu URL obráz
 3. Potřebujete-li, aby se tento obrázek zobrazil v MPOS pro katalog, můžete jej nastavit jako výchozí obrázek.
 4. Klepněte na tlačítko **OK**. Adresa URL obrázku je aktualizovaná pro tento obrázek v katalogu a zobrazuje se náhled.
 
-    [![Aktualizovaná adresa URL v dialogovém okně Nový obrázek](./media/preview3.png)](./media/preview3.png)
+    [![Aktualizovaná adresa URL v dialogovém okně Nový obrázek.](./media/preview3.png)](./media/preview3.png)
 
 5. Můžete také zobrazit náhled obrázku pro všechny přepsané adresy URL obrázku na stránce s galerií **Obrázky v katalogu**.
 
-    [![Stránka s galerií obrázků katalogu](./media/preview-4.png)](./media/preview-4.png)
+    [![Stránka s galerií obrázků katalogu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > V současné době galerie nezobrazuje náhledy obrázků pro šablony médií adres URL obrázků. Pro entity katalogu, pracovníka, odběratele a kategorie, pokud uživatel explicitně poskytne adresy URL prostřednictvím této stránky, doporučujeme naznačit, který obrázek bude výchozí obrázek, protože klienti Commerce Scale Unit zobrazují pouze jeden obrázek pro katalog, odběratele, pracovníka a kategorii. Pokud uživatel nezadá výchozí obrázek, systém určí výchozí obrázek a odešlete jej volajícímu velkoobchodních služeb (MPOS nebo obchodní stránky).
@@ -172,7 +172,7 @@ Pro přepsání adresy URL obrázku pro obrázky produktů v katalogu musíte po
 4. Klepněte na tlačítko **přidat** a adresu URL obrázku přepište novou adresou URL.
 5. Klepněte na tlačítko **OK**. Nyní vidíte náhled nového obrázku a můžete jej nastavit jako výchozí obrázek.
 
-    [![Náhled obrázku v dialogovém okně Nový obrázek](./media/cat3.png)](./media/cat3.png)
+    [![Náhled obrázku v dialogovém okně Nový obrázek.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > Po přidružení obrázků kategorie musíte publikovat kanálu a spustit úlohu kanálu, abyste mohli zajistit, že změny jsou publikované do databáze kanálů.
@@ -193,7 +193,7 @@ Obrázky produktu, které je nutné použít v offline režimu lze nastavit odes
 6. Při online režimu MPOS spusťte úlohu katalogu v ústředí, abyste se ujistili, že data jsou odeslána alespoň jednou do offline databáze.
 7. MPOS přepněte do offline režimu. Zobrazí se obrázek, který jste odeslali určitého výrobku v ústředí.
 
-    [![Obrázek produktu v offline režimu](./media/offline1.png)](./media/offline1.png)
+    [![Obrázek produktu v offline režimu.](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Nastavení obrázků katalogu, kategorie, zaměstnance a odběratele pro zobrazení v offline režimu MPOS.
 
@@ -205,7 +205,7 @@ Obrázky katalogu, kategorie, zaměstnance a odběratelů, které musí být pou
 4. Spusťte úlohu katalogu. Tento obrázek bude nyní použit jako offline obrázek pro tento katalog v MPOS.
 5. Postupujte podobně pro ostatní entity, jako je například kategorie, zaměstnanec a odběratel.
 
-    [![Offline obrázek](./media/offline2.png)](./media/offline2.png)
+    [![Offline obrázek.](./media/offline2.png)](./media/offline2.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

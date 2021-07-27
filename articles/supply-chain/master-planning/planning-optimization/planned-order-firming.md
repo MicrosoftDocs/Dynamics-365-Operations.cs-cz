@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271201"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360369"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -81,7 +81,7 @@ Chcete-li ručně zpracovat plánované objednávky, vyhledejte a vyberte pláno
     - **Seskupit podle období** (v části **Nákupní objednávky**) - Vyberte období, do kterého chcete seskupit plánované nákupní objednávky. Pro použití této možnosti je také nutné vybrat možnost **Seskupit podle dodavatele**.
     - **Seskupit podle období** (v části **Převody**) - Vyberte období, do kterého chcete seskupit plánované převodní příkazy. Objednávky budou seskupeny podle hodnot **Ze skladu** a **Do skladu**.
 
-    ![Záložka s náhledem Parametry v dialogovém okně Potvrzení](./media/manual-firming.png "Záložka s náhledem Parametry v dialogovém okně Potvrzení")
+    ![Záložka s náhledem Parametry v dialogovém okně Potvrzení.](./media/manual-firming.png "Záložka s náhledem Parametry v dialogovém okně Potvrzení")
 
 1. Na záložce s náhledem **Spustit na pozadí**, nastavte úlohu tak, aby běžela v dávkovém režimu. Nemá však smysl nastavovat opakovaný plán, když provádíte ruční potvrzování. Pole fungují stejně jako u jiných typů [prací na pozadí](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) v Supply Chain Management. U ručního zpracování však bude dávková úloha zpracovávat pouze aktuálně vybrané plánované objednávky. Nebude zpracovávat žádné objednávky, které odpovídají filtrům, které jsou aktuálně použity na stránce.
 1. Vyberte **OK**, pokud chcete použít své nastavení a vygenerovat potvrzené objednávky.
@@ -140,15 +140,15 @@ Chcete-li naplánovanou objednávku potvrdit pomocí procesu potvrzení na zákl
     - **Počet dní dopředu pro ochrannou dobu potvrzení** - Vyberte, jak daleko v budoucnosti musí být různé požadavky a další ohledy vypočítány podle hlavního plánování.
     - **Počet dní dozadu pro ochrannou dobu potvrzení** - Vyberte, jak daleko v minulosti musí být různé požadavky a další ohledy vypočítány podle hlavního plánování.
 
-    ![Záložka s náhledem Parametry v dialogovém okně Zpracování plánovaných objednávek](./media/planned-order-firming-main-1.png "Záložka s náhledem Parametry v dialogovém okně Zpracování plánovaných objednávek")
+    ![Záložka s náhledem Parametry v dialogovém okně Zpracování plánovaných objednávek.](./media/planned-order-firming-main-1.png "Záložka s náhledem Parametry v dialogovém okně Zpracování plánovaných objednávek")
 
 1. Chcete-li určit, které záznamy by měly být zahrnuty do objednávky, vyberte tlačítko **Filtr** na záložce s náhledem **Záznamy, které mají být zahrnuty**. Zobrazí se standardní dialogové okno dotazu, kde můžete definovat kritéria výběru, kritéria řazení a spojení. Pole fungují stejně jako u jiných typů dotazů v Supply Chain Management. Pole zde jsou jen pro čtení a zobrazují hodnoty, které se vztahují k vašemu dotazu.
 
-    ![Záložka s náhledem Zahrnuté záznamy v dialogovém okně Zpracování plánovaných objednávek](./media/planned-order-firming-main-2.png "Záložka s náhledem Zahrnuté záznamy v dialogovém okně Zpracování plánovaných objednávek")
+    ![Záložka s náhledem Zahrnuté záznamy v dialogovém okně Zpracování plánovaných objednávek.](./media/planned-order-firming-main-2.png "Záložka s náhledem Zahrnuté záznamy v dialogovém okně Zpracování plánovaných objednávek")
 
 1. Vyberte **Náhled** k náhledu obsahu potvrzené objednávky na základě vašeho dosavadního nastavení. Seznam plánovaných objednávek, které budou zpracovány, se zobrazí jako zpráva. Poté můžete podle potřeby upravit svá nastavení, dokud náhled neukáže potvrzenou objednávku tak, jak ji zamýšlíte.
 
-    ![Příklad náhledu potvrzené objednávky](./media/planned-order-firming-preview.png "Příklad náhledu potvrzené objednávky")
+    ![Příklad náhledu potvrzené objednávky.](./media/planned-order-firming-preview.png "Příklad náhledu potvrzené objednávky")
 
     > [!WARNING]
     > Tato funkce potvrdí všechny plánované objednávky, které odpovídají kritériím filtru. Nekritické potvrzování plánovaných objednávek může způsobit vytvoření obrovského počtu nechtěných nákupních, převodových a výrobních objednávek. Než budete pokračovat, vždy použijte tlačítko **Náhled** k ověření záznamů, které budou zahrnuty.

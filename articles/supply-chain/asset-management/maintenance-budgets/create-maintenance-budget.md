@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b91b398c4ef864a92a5318b7e80f71a5a572844e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75deb3dcca2c5a7fd7341b30411e04715bf27c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836751"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361179"
 ---
 # <a name="create-maintenance-budgets"></a>Vytvoření rozpočtů údržby
 
@@ -50,7 +50,7 @@ Rozpočty údržby jsou založeny na typech nákladů, které se používají ve
     > [!NOTE]
     > Po schválení rozpočtu údržby nelze přepočítat nebo upravit související řádky na stránce **Řádky rozpočtu údržby**, pokud jste nejprve neodebrali schválení. Chcete-li odstranit schválení rozpočtu údržby, vyberte jej na stránce **Rozpočty údržby** a poté vyberte **Schválit**. Poté v dialogovém okně **Schválit rozpočet** vyberte možnost **OK**.
 
-![Rozpočty údržby](media/01-maintenance-budgets.png)
+![Rozpočty údržby.](media/01-maintenance-budgets.png)
 
 Nový rozpočet údržby můžete také vytvořit zkopírováním existujícího rozpočtu. Na stránce **Rozpočty údržby** vyberte rozpočet, který chcete kopírovat, a poté vyberte **Kopírovat**. Tento přístup je užitečný, pokud jste například vytvořili rozpočet na jeden měsíc a chcete jej zkopírovat do dalších měsíců.
 

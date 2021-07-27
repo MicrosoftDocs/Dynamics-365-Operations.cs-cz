@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837866"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361139"
 ---
 # <a name="asset-fault-analysis"></a>Analýza závady majetku
 
@@ -60,7 +60,7 @@ Na níže uvedeném snímku obrazovky je vybráno pouze tlačítko **Příznak**
 - Registrace závad byly provedeny se třemi příznaky poruch: únik vzduchu, vyhořelá pojistka a ucpané zařízení.  
 - Ve sloupci **Pravděpodobnost %** se všechny procentuální hodnoty sčítají až do 100%. Pravděpodobnost je založena na všech registracích **příznaku** v této analýze závad.
 
-![Obrázek č. 1](media/06-controlling-and-reporting.png)
+![Obrázek č. 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Seskupit podle příznaků a časového období
 
@@ -69,7 +69,7 @@ Na níže uvedeném snímku obrazovky se přidají **Rok** a **Měsíc**, aby se
 - Příznaky závad jsou nyní zobrazeny jako registrace za rok/měsíc.  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro každý měsíc, přidá se až 100%. Pravděpodobnost je založena na registracích **příznaku** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací příznaku závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tento příznak závady.
 
-![Obrázek č. 2](media/07-controlling-and-reporting.png)
+![Obrázek č. 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Seskupit podle více příznaků a majetku
 
@@ -84,7 +84,7 @@ Na níže uvedeném snímku obrazovky byl přidán **Majetek** a **Typ majetku**
 - Příznaky závad jsou nyní rozděleny do kombinací **Majetek** / **Typ majetku** / **Příznak**.  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak**, každá dosáhne 100%. Pravděpodobnost je založena na registracích **příznaku** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací příznaku závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tento příznak závady.
 
-![Obrázek č. 3](media/08-controlling-and-reporting.png)
+![Obrázek č. 3.](media/08-controlling-and-reporting.png)
 
 **Seskupit podle dvou příznaků, majetku a typu majetku**
 
@@ -92,7 +92,7 @@ Na níže uvedeném snímku obrazovky byla přidána **Oblast** k možnostem **P
 
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak** na majetku, každá dosáhne 100%. Pravděpodobnost je založena na kombinaci **příznaku** a **oblasti** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací oblasti závady, kterou je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tuto oblast závady.  
 
-![Obrázek č. 4](media/09-controlling-and-reporting.png)
+![Obrázek č. 4.](media/09-controlling-and-reporting.png)
 
 **Seskupit podle tří příznaků, majetku a typu majetku**
 
@@ -100,7 +100,7 @@ Na snímku obrazovky níže byl přidán **Typ** a v tomto příkladu je zobraze
  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak** na majetku, každá dosáhne 100%. Pravděpodobnost je založena na kombinaci **příznaku**, **oblasti** a **typu** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací typu závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tenti typ závady.
 
-![Obrázek č. 5](media/10-controlling-and-reporting.png)
+![Obrázek č. 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

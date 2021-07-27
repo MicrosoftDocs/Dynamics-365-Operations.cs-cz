@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359478"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalace a připojení aplikace skladu
 
@@ -64,28 +64,28 @@ Pokud chcete povolit interakci aplikace skladu s konkrétním serverem Supply C
 1. Zadejte jméno a heslo uživatele, kteří mají přístup k předplatnému Azure.
 1. Na portálu Azure v levém navigačním podokně vyberte **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Ujistěte se, že pracujete s instancí Azure AD, kterou používá Supply Chain Management.
 1. V seznamu **Spravovat** zvolte **Registrace aplikací**.
 
-    ![Registrace aplikací](media/app-connect-azure-register.png "Registrace aplikací")
+    ![Registrace aplikací.](media/app-connect-azure-register.png "Registrace aplikací")
 
 1. Na panelu nástrojů vyberte **Nová registrace** a otevřete průvodce **Zaregistrovat aplikaci**.
 1. Zadejte název aplikace, vyberte možnost **Pouze účty v tomto organizačním adresáři** a poté zvolte **Registrovat**.
 
-    ![Průvodce registrací aplikace](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
+    ![Průvodce registrací aplikace.](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
 
 1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto tématu odkazovat jako na *ID klienta*.
 
-    ![ID aplikace (klienta)](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
+    ![ID aplikace (klienta).](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
 
 1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto tématu.)
 
     - **Odeslat certifikát** – Odešlete certifikát, který chcete použít jako tajný klíč. Tento přístup doporučujeme, protože je bezpečnější a lze jej také zcela automatizovat. Pokud provozujete aplikaci skladu na zařízeních Windows, poznamenejte si hodnota **Kryptografický otisk**, která se zobrazí po odeslání certifikátu. Tuto hodnotu budete potřebovat při konfiguraci certifikátu na zařízeních Windows.
     - **Nový tajný klíč klienta** – Vytvořte klíč zadáním popisu klíče a jeho délky trvání do části **Hesla** a poté vyberte **Přidat**. Vytvořte kopii klíče a bezpečně ji uložte.
 
-    ![Certifikát a tajné klíče](media/app-connect-azure-authentication.png "Certifikát a tajné klíče")
+    ![Certifikát a tajné klíče.](media/app-connect-azure-authentication.png "Certifikát a tajné klíče")
 
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
@@ -105,7 +105,7 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
     1. Vytvořte uživatele.
     1. Přiřaďte uživatele skladového mobilního zařízení.
 
-    ![Přiřazení uživatele skladového mobilního zařízení](media/app-connect-app-users.png "Přiřazení uživatele skladového mobilního zařízení")
+    ![Přiřaďte uživatele skladového mobilního zařízení.](media/app-connect-app-users.png "Přiřazení uživatele skladového mobilního zařízení")
 
 1. Přidružte aplikaci Azure AD k uživateli aplikace skladu:
 
@@ -113,7 +113,7 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
     1. Vytvořte řádek.
     1. Zadejte ID klienta, které jste si poznamenali v předchozí části, pojmenujte ho a vyberte právě vytvořeného uživatele. Doporučujeme označit všechna vaše zařízení. Pokud je ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management.
 
-    ![Aplikace Azure Active Directory](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
+    ![Aplikace Azure Active Directory.](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Ověření pomocí certifikátu nebo tajného klíče klienta
 
@@ -201,26 +201,26 @@ Chcete-li importovat nastavení připojení ze souboru nebo z QR kódu, postupu
 1. Přejděte na **Nastavení připojení**.
 1. Nastavte možnost **Použít ukázkový režim** na _Ne_.
 
-    ![Použití možnosti ukázkového režimu](media/app-connect-app-demo-mode.png "Použití možnosti ukázkového režimu")
+    ![Použití možnosti ukázkového režimu.](media/app-connect-app-demo-mode.png "Použití možnosti ukázkového režimu")
 
 1. Vyberte **Zvolit soubor** nebo **Naskenovat QR kód**, v závislosti na tom, jak chcete nastavení importovat:
 
     - Pokud importujete nastavení připojení ze souboru, aplikace již mohla soubor najít, pokud byl při uložení použit výchozí název a výchozí umístění. Jinak vyberte **Zvolit soubor**, vyhledejte soubor na místním zařízení a vyberte ho. Pokud vyberete vlastní umístění, aplikace ho uloží a při příštím použití ho automaticky použije.
     - Pokud importujete nastavení připojení skenováním QR kódu, vyberte **Skenovat QR kód**. Aplikace vás vyzve k povolení pro použití fotoaparátu zařízení. Po udělení povolení se fotoaparát spustí, takže ho můžete použít ke skenování. V závislosti na kvalitě fotoaparátu zařízení a složitosti QR kódu může být obtížné získat správný sken. V takovém případě zkuste snížit složitost QR kódu generováním pouze jednoho připojení na QR kód. (V současné době můžete ke skenování QR kódu použít pouze fotoaparát zařízení.)
 
-    ![Import nastavení připojení](media/app-connect-app-select-file.png "Import nastavení připojení")
+    ![Import nastavení připojení.](media/app-connect-app-select-file.png "Import nastavení připojení")
 
 1. Po úspěšném načtení nastavení připojení vyberte **Zpět** (šipka vlevo) v levém horním rohu stránky.
 
-    ![Nastavení připojení načteno](media/app-connect-app-settings-loaded.png "Nastavení připojení načteno")
+    ![Nastavení připojení načteno.](media/app-connect-app-settings-loaded.png "Nastavení připojení načteno")
 
 1. Pokud používáte Android zařízení a k ověření certifikát, zařízení vás vyzve k výběru certifikátu.
 
-    ![Výzva k výběru k certifikátu na zařízení Android](media/app-connect-app-choose-cert.png "Výzva k výběru k certifikátu na zařízení Android")
+    ![Výzva k výběru k certifikátu na zařízení Android.](media/app-connect-app-choose-cert.png "Výzva k výběru k certifikátu na zařízení Android")
 
 1. Aplikace se připojí k serveru Supply Chain Management a zobrazí přihlašovací stránku.
 
-    ![Přihlašovací stránka](media/app-connect-sign-in.png "Přihlašovací stránka")
+    ![Přihlašovací stránka.](media/app-connect-sign-in.png "Přihlašovací stránka")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Ruční konfigurace aplikace
 
@@ -230,11 +230,11 @@ Aplikaci můžete nakonfigurovat na zařízení ručně, aby se připojovala k 
 1. Přejděte na **Nastavení připojení**.
 1. Nastavte možnost **Použít ukázkový režim** na _Ne_.
 
-    ![Ukázkový režim vypnutý](media/app-connect-app-select-file.png "Ukázkový režim vypnutý")
+    ![Ukázkový režim vypnutý.](media/app-connect-app-select-file.png "Ukázkový režim vypnutý")
 
 1. Klepněte na pole **Vybrat připojení** pro rozbalení nastavení, která jsou vyžadována pro ruční zadání podrobností o připojení.
 
-    ![Pole pro ruční připojení](media/app-connect-manual-connect.png "Pole pro ruční připojení")
+    ![Pole pro ruční připojení.](media/app-connect-manual-connect.png "Pole pro ruční připojení")
 
 1. Zadejte následující informace:
 

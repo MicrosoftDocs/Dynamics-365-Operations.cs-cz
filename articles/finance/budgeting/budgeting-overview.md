@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187909"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355693"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 

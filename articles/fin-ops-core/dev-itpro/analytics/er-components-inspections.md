@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357659"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -242,7 +242,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 1. Začněte konfigurovat datový model ER a komponenty mapování modelu ER současně.
 2. Ve stromu datového modelu přidejte pole s názvem **X** a jako datový typ vyberte **Celé číslo**.
 
-    ![Pole X a datový typ Celé číslo byly přidány do stromu datového modelu na stránce Datový model](./media/er-components-inspections-01.png)
+    ![Pole X a datový typ Celé číslo byly přidány do stromu datového modelu na stránce Datový model.](./media/er-components-inspections-01.png)
 
 3. V podokně **Zdroje dat** mapování modelu přidejte zdroj dat typu **Vypočítané pole**.
 4. Pojmenujte nový zdroj dat jako **Y** a konfigurujte jej tak, aby obsahoval výraz `INTVALUE(100)`.
@@ -250,17 +250,17 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 6. V návrháři datového modelu změňte datový typ pole **X** z hodnoty **Celé číslo** na **Int64**.
 7. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Ověřování upravitelné komponenty mapování modelu na stránce Návrhář mapování modelu](./media/er-components-inspections-01.gif)
+    ![Ověřování upravitelné komponenty mapování modelu na stránce Návrhář mapování modelu.](./media/er-components-inspections-01.gif)
 
 8. Výběrem příkazu **Ověřit** zkontrolujete komponentu mapování modelu vybrané konfigurace ER na stránce **Konfigurace**.
 
-    ![Kontrola komponenty mapování modelu na stránce Konfigurace](./media/er-components-inspections-01a.png)
+    ![Kontrola komponenty mapování modelu na stránce Konfigurace.](./media/er-components-inspections-01a.png)
 
 9. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že hodnotu typu **Celé číslo**, kterou vrátí výraz `INTVALUE(100)` zdroje dat **Y**, nelze uložit do pole datového modelu **X** typu **Int64**.
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát, který má konfigurováno použití mapování modelu.
 
-![Chyby za běhu na stránce Návrhář formátu](./media/er-components-inspections-01b.png)
+![Chyby za běhu na stránce Návrhář formátu.](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -290,7 +290,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 6. Ve stromu struktury formátu změňte datový typ prvku formátu **Y** z hodnoty **Celé číslo** na **Int64**.
 7. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu formátu na stránce **Návrhář formátu**.
 
-    ![Ověření kompatibility typů na stránce Návrhář formátu](./media/er-components-inspections-02.gif)
+    ![Ověření kompatibility typů na stránce Návrhář formátu.](./media/er-components-inspections-02.gif)
 
 8. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že konfigurovaný výraz může přijmout pouze hodnoty typu **Int64**. Proto nelze hodnotu pole datového modelu **X** typu **Celé číslo** zadat do prvku formátu **Y**.
 
@@ -317,7 +317,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 1. Začněte konfigurovat datový model ER a komponenty mapování modelu ER současně.
 2. Ve stromu datového modelu přidejte pole s názvem **X** a jako datový typ vyberte **Celé číslo**.
 
-    ![Strom datového modelu s polem X a datovým typem Celé číslo na stránce Datový model](./media/er-components-inspections-01.png)
+    ![Strom datového modelu s polem X a datovým typem Celé číslo na stránce Datový model.](./media/er-components-inspections-01.png)
 
 3. V podokně **Zdroje dat** mapování modelu přidejte zdroj dat typu **Vypočítané pole**.
 4. Pojmenujte nový zdroj dat jako **Y** a konfigurujte jej tak, aby obsahoval výraz `INTVALUE(100)`.
@@ -325,7 +325,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 6. V návrháři mapování modelu v podokně **Zdroje dat** odstraňte zdroj dat **Y**.
 7. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Kontrola upravitelné komponenty mapování modelu ER na stránce Návrhář mapování modelu](./media/er-components-inspections-03.gif)
+    ![Kontrola upravitelné komponenty mapování modelu ER na stránce Návrhář mapování modelu.](./media/er-components-inspections-03.gif)
 
 8. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že vazba pole datového modelu **X** obsahuje cestu, která odkazuje na zdroj dat **Y**, ale tento zdroj dat nebyl nalezen.
 
@@ -359,13 +359,13 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 8. Pojmenujte nové vnořené pole jako **$AccNumber** a konfigurujte jej tak, aby obsahovalo výraz `TRIM(Vendor.AccountNum)`.
 9. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** stránku a ověřte, zda výraz `FILTER(Vendor, Vendor.AccountNum="US-101")` ve zdroji dat **Vendor** lze používat v dotazech.
 
-    ![Ověření výrazu lze zkontrolovat dotazem na stránce Návrhář mapování modelů](./media/er-components-inspections-04.gif)
+    ![Ověření výrazu lze zkontrolovat dotazem na stránce Návrhář mapování modelů.](./media/er-components-inspections-04.gif)
 
 10. Všimněte si, že dojde k chybě ověření, protože zdroj dat **Vendor** obsahuje vnořené pole typu **Vypočítané pole**, které neumožňuje přeložit výraz **FilteredVendor** zdroje dat na přímý příkaz SQL.
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát, který má konfigurováno použití mapování modelu.
 
-![Chyby za běhu, ke kterým dochází při spuštění upravitelného formátu na stránce Návrhář formátů](./media/er-components-inspections-04a.png)
+![Chyby za běhu, ke kterým dochází při spuštění upravitelného formátu na stránce Návrhář formátů.](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -396,23 +396,23 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     - Vyberte zdroj dat **Trans** jako zdroj záznamů, které by měly být seskupeny.
     - V poli **Místo provedení** vyberte **Dotaz** a určete tak, že chcete spustit tento zdroj dat na úrovni databáze.
 
-    ![Konfigurace zdroje dat na stránce Upravit parametry „Seskupit podle“](./media/er-components-inspections-05a.gif)
+    ![Konfigurace zdroje dat na stránce Upravit parametry „Seskupit podle“.](./media/er-components-inspections-05a.gif)
 
 6. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** a ověřte, zda je možné konfigurovaný zdroj dat **GroupedTrans** používat v dotazech.
 7. Upravte zdroj dat **Trans** přidáním vnořeného pole typu **Vypočítané pole** a získejte oříznuté číslo účtu dodavatele.
 8. Pojmenujte nový zdroj dat jako **$AccNumber** a konfigurujte jej tak, aby obsahoval výraz `TRIM(Trans.AccountNum)`.
 
-    ![Konfigurace zdroje dat na stránce návrháře mapování modelů](./media/er-components-inspections-05a.png)
+    ![Konfigurace zdroje dat na stránce návrháře mapování modelů.](./media/er-components-inspections-05a.png)
 
 9. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** a ověřte, zda je možné konfigurovaný zdroj dat **GroupedTrans** používat v dotazech.
 
-    ![Po ověření komponenty mapování modelu ER a ověření konfigurovaného zdroje dat je možné zdroj dat používat v dotazech na stránce návrháře mapování modelů](./media/er-components-inspections-05b.png)
+    ![Po ověření komponenty mapování modelu ER a ověření konfigurovaného zdroje dat je možné zdroj dat používat v dotazech na stránce návrháře mapování modelů.](./media/er-components-inspections-05b.png)
 
 10. Všimněte si, že dojde k chybě ověření, protože zdroj dat **Trans** obsahuje vnořené pole typu **Vypočítané pole**, které neumožňuje přeložit volání určené pro zdroj dat **GroupedTrans** na přímý příkaz SQL.
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát, který má konfigurováno použití mapování modelu.
 
-![Chyby za běhu, ke kterým dochází při ignorování upozornění na stránce Návrhář formátů](./media/er-components-inspections-05c.png)
+![Chyby za běhu, ke kterým dochází při ignorování upozornění na stránce Návrhář formátů.](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -448,21 +448,21 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     2. Přidejte zdroj dat **Vendor.FilteredTrans** jako druhou sadu záznamů, která bude spojena. Vyberte typ spojení **INNER**.
     3. V poli **Provést** vyberte **Dotaz** a určete tak, že chcete spustit tento zdroj dat na úrovni databáze.
 
-    ![Konfigurace zdroje dat na stránce návrháře spojení](./media/er-components-inspections-06a.gif)
+    ![Konfigurace zdroje dat na stránce návrháře spojení.](./media/er-components-inspections-06a.gif)
 
 10. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** a ověřte, zda je možné konfigurovaný zdroj dat **JoinedList** používat v dotazech.
 11. Změňte výraz zdroje dat **Vendor.FilteredTrans** z `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` na `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** a ověřte, zda je možné konfigurovaný zdroj dat **JoinedList** používat v dotazech.
 
-    ![Ověření upravitelné komponenty mapování modelu a ověření, že je možné konfigurovaný zdroj dat JoinedList používat v dotazech na stránce návrháře mapování modelu](./media/er-components-inspections-06b.png)
+    ![Ověření upravitelné komponenty mapování modelu a ověření, že je možné konfigurovaný zdroj dat JoinedList používat v dotazech na stránce návrháře mapování modelu.](./media/er-components-inspections-06b.png)
 
 13. Všimněte si, že dojde k chybě ověření, protože výraz zdroje dat **Vendor.FilteredTrans** nelze přeložit na přímé volání SQL. Přímé volání SQL navíc neumožňuje volání zdroje dat **JoinedList**, které má být přeloženo do přímého příkazu SQL.
 
-    ![Chyby za běhu z neúspěšného ověření zdroje dat JoinedList na stránce návrháře mapování modelů](./media/er-components-inspections-06c.png)
+    ![Chyby za běhu z neúspěšného ověření zdroje dat JoinedList na stránce návrháře mapování modelů.](./media/er-components-inspections-06c.png)
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát, který má konfigurováno použití mapování modelu.
 
-![Spuštění upravitelného formátu na stránce Návrhář formátů](./media/er-components-inspections-06e.png)
+![Spuštění upravitelného formátu na stránce Návrhář formátů.](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -474,7 +474,7 @@ Není k dispozici žádná možnost automatického řešení tohoto problému.
 
 Změňte výraz zdroje dat **Vendor.FilteredTrans** z `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` zpět na `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, jak doporučovalo zobrazené upozornění.
 
-![Aktualizovaný výraz zdroje dat na stránce návrháře mapování modelů](./media/er-components-inspections-06d.png)
+![Aktualizovaný výraz zdroje dat na stránce návrháře mapování modelů.](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>Možnost 2
 
@@ -497,11 +497,11 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 9. Pojmenujte nový zdroj dat jako **FilteredVendor** a konfigurujte jej tak, aby obsahoval výraz `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Kontrola upravitelné komponenty mapování modelu ER na stránce Návrhář mapování modelu](./media/er-components-inspections-07a.png)
+    ![Kontrola upravitelné komponenty mapování modelu ER na stránce Návrhář mapování modelu.](./media/er-components-inspections-07a.png)
 
 11. Všimněte si, že upozornění ověření doporučují používat funkci **FILTER** namísto funkce **WHERE** u zdrojů dat **FilteredVendor** a **FilteredTrans**.
 
-    ![Doporučení použití funkce FILTER namísto funkce WHERE na stránce návrháře mapování modelů](./media/er-components-inspections-07b.png)
+    ![Doporučení použití funkce FILTER namísto funkce WHERE na stránce návrháře mapování modelů.](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -509,7 +509,7 @@ Výběrem příkazu **Opravit** automaticky nahradíte funkci **WHERE** funkcí 
 
 Alternativně můžete vybrat řádek pro jedno upozornění v mřížce a poté vybrat příkaz **Opravit vybrané**. V tomto případě se výraz automaticky změní pouze ve zdroji dat, který je uveden ve vybraném upozornění.
 
-![Výběrem možnosti Opravit automaticky nahradíte funkci WHERE funkcí FILTER na stránce návrháře mapování modelů](./media/er-components-inspections-07c.png)
+![Výběrem možnosti Opravit automaticky nahradíte funkci WHERE funkcí FILTER na stránce návrháře mapování modelů.](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Ruční řešení
 
@@ -530,11 +530,11 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 7. Pojmenujte nový zdroj dat jako **FilteredVendorTrans** a konfigurujte jej tak, aby obsahoval výraz `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Kontrola upravitelné komponenty mapování modelu na stránce Návrhář mapování modelu](./media/er-components-inspections-08a.png)
+    ![Kontrola upravitelné komponenty mapování modelu na stránce Návrhář mapování modelu.](./media/er-components-inspections-08a.png)
 
 9. Všimněte si, že se zobrazí upozornění ověření. Zpráva doporučuje použít funkci **ALLITEMSQUERY** namísto funkce **ALLITEMS** pro zdroj dat **FilteredVendorTrans**.
 
-    ![Doporučení použití funkce ALLITEMSQUERY namísto funkce ALLITEMS na stránce návrháře mapování modelů](./media/er-components-inspections-08b.png)
+    ![Doporučení použití funkce ALLITEMSQUERY namísto funkce ALLITEMS na stránce návrháře mapování modelů.](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -542,7 +542,7 @@ Výběrem příkazu **Opravit** automaticky nahradíte funkci **ALLITEMS** funkc
 
 Alternativně můžete vybrat řádek pro jedno upozornění v mřížce a poté vybrat příkaz **Opravit vybrané**. V tomto případě se výraz automaticky změní pouze ve zdroji dat, který je uveden ve vybraném upozornění.
 
-![Výběr příkazu Opravit vybrané na stránce návrháře mapování modelů](./media/er-components-inspections-08c.png)
+![Výběr příkazu Opravit vybrané na stránce návrháře mapování modelů.](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Ruční řešení
 
@@ -563,7 +563,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     - Přidejte vnořené pole typu **Řetězec** a pojmenujte jej jako **Name**.
     - Přidejte vnořené pole typu **Řetězec** a pojmenujte jej jako **AccountNumber**.
 
-    ![Přidání vnořených polí na stránce Datový model](./media/er-components-inspections-09a.png)
+    ![Přidání vnořených polí na stránce Datový model.](./media/er-components-inspections-09a.png)
 
 6. V podokně **Zdroje dat** mapování modelu přidejte zdroj dat typu **Dynamics 365 for Operations \\ Záznamy tabulky**.
 7. Pojmenujte nový zdroj dat jako **Vendor**. V poli **Tabulka** vyberte **VendTable** a určete tak, že tento zdroj dat bude požadovat tabulku VendTable.
@@ -577,7 +577,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     - Vytvořte vazbu položky **FilteredVendor.AccountNum** na položku **Vendor.AccountNumber**.
     - Vytvořte vazbu položky **FilteredVendor.'name()'** na položku **Vendor.Name**.
 
-    ![Vázání položek datového modelu na stránce návrháře mapování modelů](./media/er-components-inspections-09b.png)
+    ![Vázání položek datového modelu na stránce návrháře mapování modelů.](./media/er-components-inspections-09b.png)
 
 13. Ve stromu struktury formátu přidejte následující položky, které generují odchozí dokument ve formátu XML obsahující podrobnosti o dodavateli:
 
@@ -595,15 +595,15 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 
 15. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu formátu na stránce **Návrhář formátu**.
 
-    ![Ověření prvků formátu navázaných na zdroje dat na stránce Návrhář formátů](./media/er-components-inspections-09c.png)
+    ![Ověření prvků formátu navázaných na zdroje dat na stránce Návrhář formátů.](./media/er-components-inspections-09c.png)
 
 16. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že chyba může být za běhu vyvolána u konfigurovaných komponent formátu **Statement\\Party\\Name** a **Statement\\Party\\AccountNum**, pokud je seznam `model.Vendor` prázdný.
 
-    ![Chyba ověření, která upozorňuje na potenciální chybu u konfigurovaných komponent formátu](./media/er-components-inspections-09d.png)
+    ![Chyba ověření, která upozorňuje na potenciální chybu u konfigurovaných komponent formátu.](./media/er-components-inspections-09d.png)
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění, vyberete příkaz **Spustit** a zvolíte číslo účtu neexistujícího dodavatele. Protože požadovaný dodavatel neexistuje, seznam `model.Vendor` bude prázdný (to znamená, že nebude obsahovat žádné záznamy).
 
-![Chyby za běhu, ke kterým došlo za běhu mapování formátu](./media/er-components-inspections-09e.png)
+![Chyby za běhu, ke kterým došlo za běhu mapování formátu.](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -615,7 +615,7 @@ Pro vybraný řádek v mřížce na kartě **Upozornění** můžete vybrat př�
 
 Můžete navázat prvek formátu **Statement\\Party\\Name** na položku zdroje dat `model.Vendor`. Za běhu tato vazba volá nejprve zdroj dat `model.Vendor`. Když `model.Vendor` vrátí prázdný seznam záznamů, vnořené prvky formátu se nespustí. Proto u této konfigurace formátu nejsou vyvolána žádná upozornění ověření.
 
-![Vazba prvku formátu na položku zdroje dat na stránce Návrhář formátů](./media/er-components-inspections-09e.gif)
+![Vazba prvku formátu na položku zdroje dat na stránce Návrhář formátů.](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Možnost 2
 
@@ -626,7 +626,7 @@ Změňte vazbu prvku formátu **Statement\\Party\\Name** z `model.Vendor.Name` n
 
 Proto se pro prvek formátu **Statement\\Party\\Name** nevyskytují žádná upozornění ověření, když je vázán na výraz `FIRSTORNULL(model.Vendor).Name`.
 
-![Změněná vazba řeší upozornění ověření na stránce Návrhář formátů](./media/er-components-inspections-09f.gif)
+![Změněná vazba řeší upozornění ověření na stránce Návrhář formátů.](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>Možnost 3
 
@@ -653,17 +653,17 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 7. Pojmenujte nový zdroj dat jako **FilteredVendor** a konfigurujte jej tak, aby obsahoval výraz `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Označte konfigurovaný zdroj dat **Vendor** jako ukládaný v mezipaměti.
 
-    ![Konfigurace komponenty mapování modelu na stránce Návrhář mapování modelu](./media/er-components-inspections-10a.gif)
+    ![Konfigurace komponenty mapování modelu na stránce Návrhář mapování modelu.](./media/er-components-inspections-10a.gif)
 
 9. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Ověření funkce FILTER použité na zdroj dat dodavatele ukládaný do mezipaměti na stránce návrháře mapování modelů](./media/er-components-inspections-10a.png)
+    ![Ověření funkce FILTER použité na zdroj dat dodavatele ukládaný do mezipaměti na stránce návrháře mapování modelů.](./media/er-components-inspections-10a.png)
 
 10. Všimněte si, že dojde k chybě ověření. Zpráva uvádí, že funkci **FILTER** nelze použít na zdroj dat **Vendor**, který je ukládán do mezipaměti.
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát.
 
-![Chyba za běhu, ke které dojde během provádění mapování formátu na stránce Návrhář formátů](./media/er-components-inspections-10b.png)
+![Chyba za běhu, ke které dojde během provádění mapování formátu na stránce Návrhář formátů.](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution&quot;></a>Automatické řešení
 
@@ -694,7 +694,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     - Přidejte vnořené pole typu **Řetězec** a pojmenujte jej jako **Name**.
     - Přidejte vnořené pole typu **Řetězec** a pojmenujte jej jako **AccountNumber**.
 
-    ![Přidání vnořených polí k položce dodavatele na stránce Datový model](./media/er-components-inspections-11a.png)
+    ![Přidání vnořených polí k položce dodavatele na stránce Datový model.](./media/er-components-inspections-11a.png)
 
 6. V podokně **Zdroje dat** mapování modelu přidejte zdroj dat typu **Dynamics 365 for Operations \\ Záznamy tabulky**.
 7. Pojmenujte nový zdroj dat jako **Vendor**. V poli **Tabulka** vyberte **VendTable** a určete tak, že tento zdroj dat bude požadovat tabulku VendTable.
@@ -710,7 +710,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
     > [!NOTE]
     > Pole datového modelu **Vendor.Name** zůstává nevázané.
 
-    ![Položky datového modelu vázané na konfigurované zdroje dat a položka datového režimu, která zůstává neomezená na stránce Návrháře mapování modelů](./media/er-components-inspections-11b.png)
+    ![Položky datového modelu vázané na konfigurované zdroje dat a položka datového režimu, která zůstává neomezená na stránce Návrháře mapování modelů.](./media/er-components-inspections-11b.png)
 
 13. Ve stromu struktury formátu přidejte následující položky, které generují odchozí dokument ve formátu XML obsahující podrobnosti o dodavatelích, kteří vás zajímají:
 
@@ -729,15 +729,15 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 
 15. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu formátu na stránce **Návrhář formátu**.
 
-    ![Ověření komponenty formátu ER na stránce Návrhář formátů](./media/er-components-inspections-11c.png)
+    ![Ověření komponenty formátu ER na stránce Návrhář formátů.](./media/er-components-inspections-11c.png)
 
 16. Všimněte si, že se zobrazí upozornění ověření. Zpráva uvádí, že pole zdroje dat **model.Vendor.Name** není vázáno na žádný zdroj dat v mapování modelu, který je konfigurován pro použití ve formátu. Proto prvek formátu **Statement\\Party\\Name** nemusí být za běhu vyplněn a může dojít k výjimce za běhu.
 
-    ![Ověření komponenty formátu ER na stránce Návrhář formátů](./media/er-components-inspections-11d.png)
+    ![Ověření komponenty formátu ER na stránce Návrhář formátů.](./media/er-components-inspections-11d.png)
 
 Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete upozornění a výběrem příkazu **Spustit** spustíte formát.
 
-![Spuštění upravitelného formátu na stránce Návrhář formátů](./media/er-components-inspections-11e.png)
+![Spuštění upravitelného formátu na stránce Návrhář formátů.](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 
@@ -766,7 +766,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 5. V prvku **Excel\\File** vyberte soubor sešitu A.
 6. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu formátu na stránce **Návrhář formátu**.
 
-    ![Ověření komponenty upravitelného formátu souboru sešitu na stránce Návrhář formátů](./media/er-components-inspections-12a.gif)
+    ![Ověření komponenty upravitelného formátu souboru sešitu na stránce Návrhář formátů.](./media/er-components-inspections-12a.gif)
 
 7. Všimněte si, že se zobrazí upozornění ověření. Zpráva uvádí, že soubor sešitu B.xlsx není propojen se žádnými komponentami a že bude odstraněn po změně stavu verze konfigurace.
 
@@ -794,11 +794,11 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 4. Přidejte prvek **Excel\\Cell** s názvem **Title** jako vnořený prvek prvku **Report**. Do pole **Oblast Excelu** zadejte **ReportTitle**.
 5. Výběrem příkazu **Ověřit** zkontrolujete upravitelnou komponentu formátu na stránce **Návrhář formátu**.
 
-    ![Ověření vnořených prvků a polí na stránce Návrhář formátu](./media/er-components-inspections-13a.png)
+    ![Ověření vnořených prvků a polí na stránce Návrhář formátu.](./media/er-components-inspections-13a.png)
 
 6. Všimněte si, že se zobrazí upozornění ověření. Zpráva uvádí, že název **ReportTitle** neexistuje v listu **Sheet1** šablony aplikace Excel, kterou používáte.
 
-    ![Upozornění ověření na fakt, že název ReportTitle neexistuje na listu Sheet1 šablony aplikace Excel](./media/er-components-inspections-13b.png)
+    ![Upozornění ověření na fakt, že název ReportTitle neexistuje na listu Sheet1 šablony aplikace Excel.](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>Automatické řešení
 

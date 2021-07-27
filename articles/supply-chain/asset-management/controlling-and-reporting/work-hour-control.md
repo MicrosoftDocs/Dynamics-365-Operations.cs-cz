@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838651"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346195"
 ---
 # <a name="work-hour-control"></a>Kontrola pracovní doby
 
@@ -66,7 +66,7 @@ Následující snímek obrazovky ukazuje příklad výpočtu **Řízení hodin m
 - Pole **Skutečné hodiny** zobrazuje zaúčtované hodiny na pracovních příkazech. 
 - Pole **Potvrzené hodiny** zobrazuje celkové množství hodin, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
 
-![Příklad výpočtu kontrolního času majetku](media/04-controlling-and-reporting.png)
+![Příklad výpočtu kontrolního času majetku.](media/04-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu hodin je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení hodin** na pevné záložce **Obecné**. Vybraný majetek je automaticky vložen do pole **Majetek** na pevné záložce **Záznamy, které mají být zahrnuty**. Klikněte na tlačítko **OK** v dialogovém okně **Řízení hodin majetku** a zobrazí se výpočet pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 

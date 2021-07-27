@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112666"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346539"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -89,7 +89,7 @@ K přípravě na upgrade jsou potřeba následující aktivity:
 
 10. Po nasazení ověřte datové sady, tok dat a propojenou službu datové továrny.
 
-   ![Datové sady, tok dat a propojená služba](media/data-factory-validate.png)
+   ![Datové sady, tok dat a propojená služba.](media/data-factory-validate.png)
 
 11. Přejděte na **Spravovat**. V části **Připojení** vyberte **Propojená služba**. Vyberte **DynamicsCrmLinkedService**. Ve formuláři **Upravit propojenou službu (Dynamics CRM)** zadejte následující hodnoty.
 
@@ -154,7 +154,7 @@ K přípravě na upgrade jsou potřeba následující aktivity:
 
 7. V datové továrně spusťte šablonu výběrem **Spustit hned**, jak je znázorněno na následujícím obrázku. V závislosti na objemu dat může tento proces trvat několik hodin.
 
-    ![Spustit běh](media/data-factory-trigger.png)
+    ![Spustit běh.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Pokud máte přizpůsobení pro **Účet**, **Kontakt** a **Prodejce**, pak musíte šablonu upravit.
@@ -164,7 +164,7 @@ K přípravě na upgrade jsou potřeba následující aktivity:
     + Stáhněte si soubor `FONewParty.csv` z úložiště Azure blob. Cesta je `partybootstrapping/output/FONewParty.csv`.
     + Převeďte soubor `FONewParty.csv` do souboru Excel a importujte soubor Excel do souboru aplikace Finance and Operations. Pokud vám csv import vyhovuje, můžete soubor csv importovat přímo. Import může trvat několik hodin, v závislosti na objemu dat. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
 
-    ![Importování záznamů strany Datavers](media/data-factory-import-party.png)
+    ![Importování záznamů strany Datavers.](media/data-factory-import-party.png)
 
 9. V aplikaci pro zapojení zákazníků aktivujte následující kroky pluginu:
 
@@ -199,7 +199,7 @@ K přípravě na upgrade jsou potřeba následující aktivity:
 3. Datová továrna běží na základě souborů CSV, které jsou odděleny čárkami. Pokud existuje hodnota pole s čárkou, může to ovlivnit výsledky. Musíte odstranit čárky.
 4. Karta **Monitorování** poskytuje informace o všech krocích a zpracovaných datech. Vyberte konkrétní krok k ladění.
 
-    ![Záložka Monitorování](media/data-factory-monitor.png)
+    ![Záložka Monitorování.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Další informace o šabloně
 

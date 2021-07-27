@@ -2,7 +2,7 @@
 title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088380"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333062"
 ---
 # <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
 
@@ -33,26 +33,27 @@ Chcete-li získat další informace o základních principech, které společnos
 
 Následující tabulka ukazuje aktuální referenční seznam souborů cookie, které vkládají weby Dynamics 365 Commerce.
 
-| Název souboru cookie                               | Použití                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Uložit ověřovací soubory cookie Microsoft Azure Active Directory (Azure AD) pro jednotné přihlašovaní (SSO). Ukládá šifrované základní informace o uživateli (jméno, příjmení, e-mail). |
-| &#95;msdyn365___cart&#95;                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance košíku. |
-| &#95;msdyn365___ucc&#95;                            | Sledování souhlasu se soubory cookies.                          |
-| ai_session                                  | Zjistí, kolik relací uživatelské aktivity zahrnovalo určité stránky a funkce aplikace. |
-| ai_user                                     | Zjistí, kolik lidí použilo aplikaci a její funkce. Uživatelé se počítají pomocí anonymních ID. |
-| b2cru                                       | Dynamicky ukládá adresu URL přesměrování.                              |
-| JSESSIONID                                  | Používá platební konektor Adyen k uložení relace uživatele.       |
-| OpenIdConnect.nonce.&#42;                       | Ověřování                                               |
-| x-ms-cpim-cache:.&#42;                          | Používá se pro udržování stavu žádosti.                      |
-| x-ms-cpim-csrf                              | Token CRSF používaný k ochraně před CRSF.     |
-| x-ms-cpim-dc                                | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
-| x-ms-cpim-rc.&#42;                              | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
-| x-ms-cpim-slice                             | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        |
-| x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. |
-| \_msdyn365___muid_                            | Používá se, pokud je pro prostředí aktivováno experimentování; využíváno jako ID uživatele pro experimentální účely. |
-| \_msdyn365___exp_                             | Používá se, pokud je pro prostředí aktivováno experimentování; slouží k měření vyvažování zatížení výkonu.         |
-| d365mkt                                       | Používá se, pokud je v nástroji pro tvorbu webu Commerce povolena detekce založená na poloze ke sledování adresy IP uživatele pro návrhy umístění obchodu **Nastavení webu > Obecné > Povolit zjišťování obchodů na základě polohy**.      |
+| Název souboru cookie                               | Použití                                                        | Životnost |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Uložit ověřovací soubory cookie Microsoft Azure Active Directory (Azure AD) pro jednotné přihlašovaní (SSO). Ukládá šifrované základní informace o uživateli (jméno, příjmení, e-mail). | Relace |
+| \_msdyn365___cart_                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance košíku. | Relace |
+| \_msdyn365___checkout_cart_                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance nákupního košíku. | Relace |
+| \_msdyn365___ucc_                            | Sledování souhlasu se soubory cookies.                          | 1 rok |
+| ai_session                                  | Zjistí, kolik relací uživatelské aktivity zahrnovalo určité stránky a funkce aplikace. | 30 min |
+| ai_user                                     | Zjistí, kolik lidí použilo aplikaci a její funkce. Uživatelé se počítají pomocí anonymních ID. | 1 rok |
+| b2cru                                       | Dynamicky ukládá adresu URL přesměrování.                              | Relace |
+| JSESSIONID                                  | Používá platební konektor Adyen k uložení relace uživatele.       | Relace |
+| OpenIdConnect.nonce.&#42;                       | Ověřování                                               | 11 minut |
+| x-ms-cpim-cache:.&#42;                          | Používá se pro udržování stavu žádosti.                      | Relace |
+| x-ms-cpim-csrf                              | Token CRSF používaný k ochraně před CRSF.     | Relace |
+| x-ms-cpim-dc                                | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
+| x-ms-cpim-rc.&#42;                              | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
+| x-ms-cpim-slice                             | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        | Relace |
+| x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. | Relace |
+| \_msdyn365___muid_                            | Používá se, pokud je pro prostředí aktivováno experimentování; využíváno jako ID uživatele pro experimentální účely. | 1 rok |
+| \_msdyn365___exp_                             | Používá se, pokud je pro prostředí aktivováno experimentování; slouží k měření vyvažování zatížení výkonu.         | 1 hodina |
+| d365mkt                                       | Používá se, pokud je v nástroji pro tvorbu webu Commerce povolena detekce založená na poloze ke sledování adresy IP uživatele pro návrhy umístění obchodu **Nastavení webu \> Obecné \> Povolit zjišťování obchodů na základě polohy**.      | 1 hodina |
 
 Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, soubory cookie v následující tabulce budou sledovány také v jeho prohlížeči.
 

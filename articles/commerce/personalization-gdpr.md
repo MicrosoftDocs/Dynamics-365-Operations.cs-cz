@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352269"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Odhlášení přizpůsobených doporučení
 
@@ -44,11 +44,11 @@ V modulu Správa účtu v obchodu v administrativě aplikace Commerce se maloobc
 1. Na administrativní domovské stránce hledejte **Všichni zákazníci**.
 1. Vyhledejte a vyberte zákazníka a pak vyberte pevnou záložku **maloobchod**.
 
-    ![Pevná záložka maloobchod](./media/Disablepersonalizationpart1.png)
+    ![Pevná záložka maloobchod.](./media/Disablepersonalizationpart1.png)
 
 1. V části **Ochrana osobních údajů** nastavte možnost **Zakázat individuální nastavení** na hodnotu **Ano**.
 
-    ![Nastavení ochrany osobních údajů](./media/Disablepersonalizationpart2.png)
+    ![Nastavení ochrany osobních údajů.](./media/Disablepersonalizationpart2.png)
 
 1. Zvolte **Uložit** a zavřete stránku.
 

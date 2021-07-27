@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52ca23e5aaeb7058853fed2241d5804180fa7f8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 99e873a07accd33aebfe010fbc8678cd8bc3ed9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798956"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349297"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Náhled a publikování experimentu
 
 Toto téma popisuje, jak můžete zobrazit náhled a publikovat experiment v Dynamics 365 Commerce poté, co jste [připojili experiment a upravili varianty](experimentation-connect-edit.md). Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
 
-[ ![Cesta uživatele experimentováním – náhled a publikování](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+[ ![Cesta uživatele experimentováním – náhled a publikování.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
 ## <a name="preview-your-experiment-variations"></a>Náhled variant experimentu
 Můžete si prohlédnout náhled svých variant a dál je upravovat, dokud nebudou vypadat tak, jak chcete.

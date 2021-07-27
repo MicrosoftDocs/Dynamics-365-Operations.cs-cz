@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ccf1557d3c95829421b26d5f84750e3d4236c9e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023088"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358211"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Nastavení parametrů TDS v závazcích a pohledávkách
 
@@ -38,12 +38,12 @@ Toto téma vysvětluje, jak nastavit parametry v závazcích a pohledávkách na
     - **Výzva** – Uživatelé obdrží zprávu, která je vyzve k aktualizaci skupiny TDS na řádcích objednávky.
 4. Vyberte **OK**.
 
-    [![Dialogové okno Aktualizovat řádky objednávky](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Dialogové okno Aktualizovat řádky objednávky.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Přejděte do **Daň \> Nastavení \> Parametry \> Parametry zakázek**.
 6. Na kartě **Všeobecné** na pevné záložce **Rozdělit na základě informací o doručení** nastavte možnost **Příjem produktu** na **Ano** k zaúčtování a rozdělení příjemky produktu, která má různé doručovací adresy a čísla daňových účtů (TAN). Pokud je tato možnost nastavena na **Ne**, nemůžete zaúčtovat nákupní dodací list, který má různé dodací adresy a TAN.
 7. Nastavte možnost **Faktura** na **Ano** k zaúčtování a rozdělení nákupní fakturu, která má různé dodací adresy a čísla TAN.
 
-    [![Pevná záložka Rozdělit na základě informací o doručení](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Pevná záložka Rozdělit na základě informací o doručení.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Zavřete stránku.

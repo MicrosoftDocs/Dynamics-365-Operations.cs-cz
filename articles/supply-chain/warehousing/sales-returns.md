@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d460cab24ca73d43a0f055c5f65791968841e472
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 511652c50354a440d6a165d82cb9563ce1136040
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359046"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
@@ -33,7 +33,7 @@ Zákazníci mohou zboží vracet z různých důvodů. Například může být 
 ## <a name="return-order-process"></a>Proces objednávky vrácení
 Následující obrázek podává přehled procesu objednávky vrácení.  
 
-[![Proces objednávky vrácení](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Proces objednávky vrácení.](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Existují dva typy procesu vracení: fyzické vrácení a jen kredit.
 
@@ -62,7 +62,7 @@ Zpracování schvalování vracených materiálů (RMA) je založeno na funkci p
 ## <a name="create-a-return-order"></a>Vytvořit vratku
 Proces objednávky vrácení začíná, když zákazník kontaktuje Vaši organizaci s vrácením vadného nebo nebo nežádoucího produktu a/nebo s nárokem na vracení platby. Poté, co Vaše organizace vrácení přijme, bude vrácení zdokumentováno formou objednávky vrácení. Tato objednávka vrácení bude ústředním bodem interního zpracování vraceného produktu. Následující obrázek znázorňuje postup vytvoření objednávky vrácení.  
 
-[![Postup pro vytvoření objednávky vrácení](./media/salesreturn02.png)](./media/salesreturn02.png)
+[![Postup pro vytvoření objednávky vrácení.](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### <a name="create-a-return-order-header"></a>Vytvořit hlavičku objednávky vrácení
 
@@ -177,7 +177,7 @@ Kromě určení toho, co bude provedeno s vráceným zbožím, mohou dispozičn�
 ## <a name="arrival-at-the-warehouse-for-inspection"></a>Příchod do skladu na prohlídku
 Než budete moci fyzicky přijmout vrácené zboží do zásob vydáním průvodky, musí zboží absolvovat registraci a případnou prohlídku na příchodu. Následující ilustrace podává přehled procesu příchodu. Následující oddíly popisují jednotlivé kroky, které jsou znázorněny na obrázku.  
 
-[![Proces doručení](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Proces doručení.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
 Proces má několik jiných variant, které nejsou probírány v tomto tématu. Zde je několik příkladů těchto variant:
 
@@ -220,7 +220,7 @@ Existují dvě metody pro správu náhradního produktu:
 
 Při náhradě předem lze náhradu zboží doručit zákazníkovi už předtím, než bude zboží vráceno. Tato metoda je užitečná například tehdy, jestliže je toto zboží součástí stroje, kterou nelze vyjmout, není-li k dispozici náhradní díl namísto něj, nebo jestliže chcete, aby Váš zákazník měl náhradní produkt k dispozici co nejdříve. Objednávka náhrady předem je nezávislá prodejní objednávka. Informace v záhlaví jsou inicializovány od zákazníka a informace o řádku jsou inicializovány z objednávky vrácení. Objednávku náhrady můžete upravovat, zpracovávat a odstraňovat nezávisle na objednávce vracení. Při výmazu objednávky náhrady obdržíte zprávu, že objednávka byla vytvořena jako objednávka náhrady. Následující obrázek znázorňuje proces náhrady předem.  
 
-![Proces náhrady předem](./media/SalesReturn04.png)
+![Proces náhrady předem.](./media/SalesReturn04.png)
 
 Objednávka vrácení obsahuje odkaz na objednávku vrácení. Pokud pro objednávku vrácení bude už před vrácením vadného zboží vytvořena objednávka předem, pak po vrácení vadného zboží už nemůžete vybrat dispoziční kódy pro náhradu.
 
@@ -228,7 +228,7 @@ Objednávka vrácení obsahuje odkaz na objednávku vrácení. Pokud pro objedn�
 
 Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení použijete dispoziční akce **Nahradit a vyřadit** nebo **Nahradit a připsat na účet** postupujte podle procesu vyobrazeného na následujícím obrázku.  
 
-![Náhradní proces při použití dispozičního kódu](./media/SalesReturn05.png)
+![Náhradní proces při použití dispozičního kódu.](./media/SalesReturn05.png)
 
 Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace&quot; (&quot;nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
 
@@ -268,7 +268,7 @@ Objednávky vrácení lze dokončit mezi dvěma společnostmi v rámci organizac
 
 Na následujícím obrázku je zobrazeno minimální nastavení, které je potřebné pro dvě společnosti, aby se mohly účastnit mezipodnikových vztahů a využívat mezipodnikový obchod.  
 
-![Minimální nastavení](./media/SalesReturn06.png)
+![Minimální nastavení.](./media/SalesReturn06.png)
 
 V následujícím scénáři je CompBuy kupující společnost a CompSell je prodávající společnost. Prodávající společnost obvykle dodává zboží buďto kupující společnosti, nebo, v případech scénáře přímé dodávky, přímo ke koncovému zákazníkovi. V CompBuy je mezipodnikový dodavatel\_CompSell definován jako mezipodnikový koncový bod, který je spojen s firmou CompSell. Zároveň je v CompSell je mezipodnikový odběratel\_CompBuy definován jako mezipodnikový koncový bod, který je propojen s firmou CompBuy. V obou společnostech musí být definovány příslušné podrobnosti zásad akce a mapování hodnot. V případě scénáře přímé dodávky zásilky je v prodávající společnosti vytvořena mezipodniková objednávka vrácení, což je také mezipodniková prodejní objednávka. Číslo RMA mezipodnikové objednávky vrácení lze vybrat z posloupnosti čísel RMA v CompSell nebo jej lze zkopírovat z čísla RMA přiřazeného k původní objednávce vrácení v CompBuy. Tyto akce určuje nastavení čísla RMA v zásadách akce **Nákupní požadavek** v CompBuy. Bude-li číslo RMA synchronizováno, měli byste naplánovat zmírňování rizika střetu čísel pro případ, že obě společnosti použijí stejnou číselnou posloupnost.
 
@@ -276,7 +276,7 @@ V následujícím scénáři je CompBuy kupující společnost a CompSell je pro
 
 Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno na následujícím obrázku.  
 
-![Jednoduché mezipodnikové vrácení](./media/SalesReturn07.png)
+![Jednoduché mezipodnikové vrácení.](./media/SalesReturn07.png)
 
 Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Je vytvořena příslušná objednávka v opačné společnosti a zajištěno, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
 
@@ -284,7 +284,7 @@ Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno 
 
 Tento scénář lze založit, jestliže byl dokončen předchozí prodej typu **Přímá dodávka** a jestliže existuje faktura oproti zákazníkovi ve společnosti, která spolupracuje se zákazníkem. Na následujícím obrázku společnost CompBuy nejprve prodala a fakturovala produkty zákazníkovi Extern. Produkty byly zaslány přímo od společnosti CompSell zákazníkovi prostřednictvím mezipodnikového řetězce.  
 
-![Vrácení zásilky přímé dodávky mezi třemi stranami](./media/SalesReturn08.png)
+![Vrácení zásilky přímé dodávky mezi třemi stranami.](./media/SalesReturn08.png)
 
 Jestliže chce externí zákazník produkty vrátit, bude vytvořena objednávka vrácení(RMA02) pro odběratele ve společnosti CompBuy. Jestliže chcete vytvořit mezipodnikový řetězec, musí být objednávka vrácení označena pro přímou dodávku. Při použití funkce **Najít prodejní objednávku** vyberte fakturu odběratele, kterou chcete vrátit, a bude založen mezipodnikový řetězec skládající se z následujících dokladů:
 
@@ -314,7 +314,7 @@ Objednávka vrácení neodkazuje na fakturu odběratele. Vrácené zboží je ú
 
 Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro objednávku vrácení je vybrán parametr **Korekce přípisu**.  
 
-![Objednávka vrácení, v níž byla vybrána korekce na straně Dal ](./media/SalesReturn10.png)  
+![Objednávka vrácení, v níž byla vybrána korekce na straně Dal.](./media/SalesReturn10.png)  
 
 >[Poznámka!] Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
 
@@ -322,7 +322,7 @@ Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro ob
 
 V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **Najít prodejní objednávku**. Při vytváření faktury není vybrán parametr **Korekce přípisu**.  
 
-![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku ](./media/SalesReturn11.png)  
+![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku.](./media/SalesReturn11.png)  
 
 >[Poznámka!] **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
 

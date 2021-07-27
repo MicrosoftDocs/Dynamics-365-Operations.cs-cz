@@ -2,7 +2,7 @@
 title: Modul přehrávače videa
 description: Tohle téma se zabývá moduly přehrávače videa a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa1efa6ce959439c49983553edfaf247c8e8dcd5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48d7a047a739420fa4aaa3f520c774854f254ef9
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797400"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479273"
 ---
 # <a name="video-player-module"></a>Modul videopřehrávače
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly přehrávače videa a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -43,13 +44,17 @@ Modul přehrávače videa také podporuje sekundární zvukové stopy. Po nahrá
 
 Následující obrázek znázorňuje příklad modulu přehrávače videa na domovské stránce.
 
-![Příklad modulu video přehrávače](./media/ecommerce-videoplayer.PNG)
+![Příklad modulu video přehrávače.](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Vlastnosti modulu přehrávače videa
 
 | Název vlastnosti         | Hodnota                               | popis |
 |-----------------------|-------------------------------------|-------------|
-| Automatické přehrání             | **Pravda** nebo **Nepravda**               | Je-li hodnota nastavena na **Pravda**, video se automaticky přehraje. |
+| Záhlaví               | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Standardně je použita značka nadpisu **H2** pro nadpis, ale značku lze změnit, aby odpovídala požadavkům na přístupnost. |
+| Formátovaný text             | Text odstavce | Modul podporuje text odstavce ve formátu RTF. Jsou podporovány některé základní funkce pro formát RTF, například hypertextové odkazy, tučné a podtržené písmo, kurzíva. Některé z těchto funkcí mohou být přepsány motivem stránky, který je použit pro daný modul. |
+| Připojení                  | Text odkazu, adresa URL odkazu, popisek ARIA (Accessible Rich Internet Applications) a volič **Otevřít odkaz na nové kartě** | Modul podporuje jeden nebo více odkazů „výzvy k akci“. Je-li přidán odkaz, je nutné zadat text odkazu, adresu URL a popisek ARIA. Popisky ARIA by měly být názorné, aby splňovaly požadavky na usnadnění. Odkazy lze konfigurovat tak, aby byly otevřeny na nové kartě. |
+| Dílčí text              | Nadpis, text nebo odkazy | Lze přidat další kontext pro modul přehrávače videa, například jméno autora nebo návrháře nebo odkazy na osobní blogy. |
+| Automatické přehrání             | **Pravda** nebo **nepravda**               | Je-li hodnota nastavena na **Pravda**, video se automaticky přehraje. |
 | Ztlumit                  | **Pravda** nebo **Nepravda**               | Je-li hodnota nastavena na **Pravda**, zvuk je ztlumen. Pro tento přehrávač je výchozí hodnota **Nepravda**. V prohlížeči Chrome je ve výchozím nastavení ztlumeno přehrávání videozáznamů a zvuk je přehráván pouze v případě, že uživatel video přehrává ručně. |
 | Smyčka                  | **Pravda** nebo **Nepravda**               | Je-li hodnota nastavena na **Pravda**, video se opakuje ve smyčce. |
 | Média                 | Cesta a název souboru videa | Soubor videa, který je přehráván přehrávačem videa. |
@@ -58,6 +63,9 @@ Následující obrázek znázorňuje příklad modulu přehrávače videa na dom
 | Ovládací prvky přehrávače videa | **Pravda** nebo **nepravda**               | Je-li tato hodnota nastavena nahodnotu **Pravda**, zobrazí se všechny ovládací prvky přehrávače videa. Tyto ovládací prvky zahrnují tlačítka Přehrát a Pozastavit, ukazatel průběhu a možnosti skrytých titulků. |
 | Skrýt obrázek plakátu     | **Pravda** nebo **nepravda**               | Video může mít titulní snímek. Je-li tato vlastnost nastavena na hodnotu **Pravda**, je titulní snímek skrytý. |
 | Úroveň masky            | Číslo od **0** do **100** | Maska použitá na video pro úpravu stylů. |
+
+> [!IMPORTANT]
+> Vlastnosti **Nadpis**, **Bohatý text**, **Odkaz** a **Dílčí text** jsou k dispozici od Dynamics 365 Commerce verze 10.0.20.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Přidání modulu přehrávače videa na stránku
 

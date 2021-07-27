@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346845"
 ---
 # <a name="cart-module"></a>Modul košíku
 
@@ -35,11 +35,11 @@ Modul košíku vykresluje data založená na ID košíku, což je soubor cookie 
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam.
 
-![Příklad modulu nákupního košíku na webu Fabrikam](./media/cart2.PNG)
+![Příklad modulu nákupního košíku na webu Fabrikam.](./media/cart2.PNG)
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam. V tomto příkladu je za řádkovou položku účtován manipulační poplatek.
 
-![Příklad modulu nákupního košíku s manipulačním poplatkem za řádkovou položku](./media/ecommerce-handling-fee.png)
+![Příklad modulu nákupního košíku s manipulačním poplatkem za řádkovou položku.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Vlastnosti a pozice modulu košíku
 

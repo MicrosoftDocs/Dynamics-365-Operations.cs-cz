@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 071c73f9295ad7911037cbd10a48b46b044eebda
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 19cdc33fcc9d1293b235facbaffd1ccf62875217
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808225"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360046"
 ---
 # <a name="work-order-project-setup"></a>Nastavení projektu pracovního příkazu
 
@@ -69,15 +69,15 @@ Nastavení umožňuje úplnou integraci s modulem **Řízení projektů a úče
 
     Ve výchozím nastavení je počátečním datem datum přidání projektu pracovní objednávky na stránku. Je ovládáno polem **Platné od**, které je ve výchozím nastavení skryto. Chcete-li zobrazit pole **Platné od**, vyberte **Zobrazit** \> **Vše**. Poté můžete použít pole **Platné od** spolu s polem **Koncové datum** pro nastavení omezené doby platnosti pro projekt pracovního příkazu.
 
-    ![Stránka Nastavení projektu pracovních příkazů](media/17-setup-for-work-orders.png)
+    ![Stránka Nastavení projektu pracovních příkazů.](media/17-setup-for-work-orders.png)
 
 6. Na kartě **Skupina projektů** vyberte **Přidat**.
 7. V poli **Typ pracovního příkazu** vyberte typ pracovního příkazu.
 8. Chcete-li, aby seskupení projektu bylo konkrétnější, vyberte typ majetku v poli **Typ majetku** nebo majetek v poli **Majetek**.
 9. V poli **Skupina projektů** vyberte skupinu projektů, která by měla souviset s typem pracovního příkazu. Například typ pracovního příkazu s názvem **Preventivní údržba** může být přidružen ke skupině projektů s názvem **Předchozí údr.** nebo **Interní.** Alternativně, typ pracovního příkazu **Investice**, který se používá pro pracovní příkazy související s investicemi a s dlouhodobým majetkem, může být přidružen ke skupině projektů s názvem **Investovat** nebo **Investice**.
-10. Zvolte **Uložit**.
+10. Zvolte možnost **Uložit**.
 
-![Stránka nastavení projektu pracovních příkazů, přidání pracovního příkazu](media/18-setup-for-work-orders.png)
+![Stránka nastavení projektu pracovních příkazů, přidání pracovního příkazu.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Při každém vytvoření řádku pracovního příkazu vyhledá Správa majetku skupinu projektů, která by měla souviset s projektem pracovního příkazu. Hledání je založeno na nastavení popsaném v tomto tématu. Každá skupina projektů má související typ projektu. Skupiny projektů s **Časem a materiálem** nebo typem projektu **S pevnou cenou** jsou platné pouze pro majetek, který souvisí s účtem odběratele.

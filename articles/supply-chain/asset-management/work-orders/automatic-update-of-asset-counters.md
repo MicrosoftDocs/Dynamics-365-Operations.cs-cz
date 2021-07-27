@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15aea2f867de6f0bcf01ecfd046efc44581a1ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d1e8a3b34cb359b7ea7f7181d2308f8e021f3c95
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820435"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359118"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatická aktualizace čítačů majetku
 
@@ -49,7 +49,7 @@ Jak bylo uvedeno výše, automatické čítače lze aktualizovat z registrací v
 
     Následující ilustrace znázorňuje příklad dialogu **Aktualizovat čítače majetku**.
 
-    ![Obrázek č. 1](media/12-work-orders.png)
+    ![Obrázek č. 1.](media/12-work-orders.png)
 
 5. Vyberte **OK**. 
 
@@ -59,7 +59,7 @@ Na stránce **Souhrnná hodnota majetku** lze získat přehled o poslední regis
 
 Následující ilustrace znázorňuje příklad stránky **Agregovaná hodnota majetku**.
 
-![Obrázek č. 2](media/13-work-orders.png)
+![Obrázek č. 2.](media/13-work-orders.png)
 
 Mějte na paměti následující body:
 

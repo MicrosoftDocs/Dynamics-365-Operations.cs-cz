@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360393"
 ---
 # <a name="set-up-consignment"></a>Nastavení zásilky
 
@@ -61,7 +61,7 @@ Objednávka doplňovací zásilky je dokument, který se používá pro zažád�
 
 Dimenze **Vlastník** se používá k oddělení informací o tom, které zásoby vlastní dodavatel a které vlastní přijímající právnická osoba. Řádky objednávky doplnění stavu zásob dodávky mají stav **Otevřená objednávka**, dokud nedojde k přijetí nebo zrušení úplného množství řádků. Až dojde k přijetí nebo zrušení úplného množství, stav se změní na **Dokončeno**. Fyzické zásoby na skladě související s objednávkou doplňovací dodávky lze zaznamenat pomocí registračního procesu a také procesu aktualizace příjemky produktu. Registraci lze provést jako součást procesu doručení položky, nebo lze ručně aktualizovat řádky objednávky. Při procesu aktualizace příjemky produktu se provádí záznam do deníku příjemek produktů, který pro dodavatele slouží k potvrzení o přijetí zboží.
 
-[![Zakázky na doplnění stavu zásob dodávky](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Zakázky na doplnění stavu zásob dodávky.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Deník změn vlastnictví zásob
 
@@ -74,7 +74,7 @@ Jsou vytvořeny pouze transakce, které se vztahují k zaúčtovanému deníku. 
 
 Není možné aktualizovat množství v řádcích nákupní objednávky po vytvoření objednávky.
 
-[![Deník změn vlastnictví zásob](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Deník změn vlastnictví zásob.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Dodavatelská spolupráce v procesech zásilky
 
@@ -90,13 +90,13 @@ Další informace o nastavení dodavatelů pro použití dodavatelské spoluprá
 
 Aby bylo možné zaznamenat fyzickou zásilku zásob, je třeba definovat dodavatele vlastníka. To se provádí na stránce **Vlastník zásob**. Při výběru **Účet dodavatele** se generují výchozí hodnoty pro pole **Název** a **Vlastník**. Hodnota v poli **Vlastník** se zobrazí dodavateli, takže ji můžete změnit v případě, že název účtu dodavatele se špatně rozpoznává externím uživatelům. Je možné upravit pole **Vlastník**, ale pouze do okamžiku, když ukládáte záznam **Vlastník zásob**. Pole **Název** se vyplňuje s názvem strany, k níž je přidružen účet dodavatele, a nemůže být změněno.
 
-[![Vlastníci zásob](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Vlastníci zásob.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Skupina sledovací dimenze
 
 Položky, které chcete použít v procesech dodávky, musí být přidruženy k **Skupina sledovací dimenze** kde dimenze **Vlastník** je nastavena na **Aktivní**. Dimenze vlastníka má vždy vybrané možnosti **Fyzické zásoby** a **Finanční zásoby**. Nikdy není vybrána možnost **Plán disponibility podle dimenzí**.
 
-[![Skupina sledovací dimenze](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Skupina sledovací dimenze.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

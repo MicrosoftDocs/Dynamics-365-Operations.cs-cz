@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164839"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343618"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
@@ -95,7 +95,7 @@ Kromě nastavení možnosti vytvoření převodního příkazu v položkách nab
 
 Provozujete maloobchod a máte více registračních značek, z nichž každá obsahuje kombinaci položek umístěných v konkrétním místě v jednom z vašich skladů (*Sklad 51*). Chcete povolit proces, který pracovníkům umožní vytvořit převodní příkaz do jiného skladu (*Sklad 61*) pro kolekci naskenovaných registračních značek. Převodní příkaz automaticky aktualizujete pro expedici, jakmile bude identifikována poslední registrační značka pro tento příkaz.
 
-![Příklad automatizovaného procesu pro převodní příkazy](media/create-transfer-order-from-app-example.png "Příklad automatizovaného procesu převodního příkazu")
+![Příklad automatizovaného procesu pro převodní příkazy.](media/create-transfer-order-from-app-example.png "Příklad automatizovaného procesu převodního příkazu")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Vytvoření položky nabídky mobilního zařízení pro vytváření převodních příkazů
 

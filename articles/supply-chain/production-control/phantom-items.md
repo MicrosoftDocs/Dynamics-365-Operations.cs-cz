@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814771"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360891"
 ---
 # <a name="phantom-items"></a>Fiktivní položky
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814771"
 
 Toto téma podrobně popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury. Na následujícím obrázku, (a) je kusovník pro produkt H a části F a G, a (b) je tabulka postupů pro produkty H a část F.
 
-![Produkt H a část F](media/product-H-part-F.png)
+![Produkt H a část F.](media/product-H-part-F.png)
 
 
 Na obrázku je uveden příklad struktury kusovníku ve dvou úrovních. Dokončený produkt H představuje produkt pro sestavení stroje. Sestavení stroje se skládá ze dvou částí, z elektrické jednotky (F), která má dva materiály (A a B), a skupiny obalových materiálů (G), která má rovněž dva materiály (C a D). Další materiál (E) se používá při obecném sestavení stroje.
 
-![Produkt H a část F](media/product-H-part-B.png)
+![Produkt H a část F.](media/product-H-part-B.png)
 
 Předcházející obrázek představuje vývojový kusovník pro produkt H. Tato struktura poskytuje dobrý přehled o součástech a komponentách celkového sestavení stroje. I když návrháři produktu mohou upřednostňovat zobrazení kusovníku tímto způsobem, tato struktura nemusí správně představovat způsob, jakým je stroj sestaven na dílně. 
 
@@ -53,23 +53,23 @@ Přechod mezi vývojovým kusovníkem a výrobním kusovníkem povolen prostřed
 ## <a name="multilevel-phantom-bom-structures"></a>Víceúrovňové struktury fiktivního kusovníku
 Fiktivní typ řádku typu lze použít ve víceúrovňových strukturách kusovníku, jak je uvedeno na následujícím obrázku. Na tomto obrázku je (a) kusovník pro produkt G a (b) je tabulka postupů pro části E a F a produkt G. 
 
-![Produkt G a část F s tabulkami postupů](media/product-G-route-sheet-G.png)
+![Produkt G a část F s tabulkami postupů.](media/product-G-route-sheet-G.png)
 
 
 Následující obrázek znázorňuje výsledný výrobní kusovník a tabulku postupu, pokud jsou řádky kusovníku pro části E a F nakonfigurovány tak, aby byl typ řádku fiktivní. Na tomto obrázku (a) je kusovník pro produkt G a (b) je tabulka postupů pro produkt G.
 
-![Produkt G](media/product-G.png)
+![Produkt G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Fiktivní a síťový postup
 Fiktivní kusovníky lze také použít pro kusovník, který má síťový postup. V síťovém postupu běží jedna nebo více operací současně. Následující obrázek znázorňuje příklad síťového postupu, který se používá ve víceúrovňovém kusovníku. Na tomto obrázku je (a) kusovník pro produkt G a část F a (b) je tabulka postupů pro produkt G a část F, která má síťový postup.
 
-![Produkt G a část F](media/product-G-part-F.png)
+![Produkt G a část F.](media/product-G-part-F.png)
 
 
 Na následujícím obrázku, (a) je kusovník pro produkt G a část F, a (b) je tabulka postupů pro produkt G a část F.
 
-![Produkt G a část F s tabulkami postupů](media/product-G-part-F-with-route-sheet.png)
+![Produkt G a část F s tabulkami postupů.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

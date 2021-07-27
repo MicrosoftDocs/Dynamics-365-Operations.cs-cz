@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357407"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Vytvořte účet úložiště Azure a trezor klíčů
 
@@ -49,7 +49,7 @@ V tomto tématu provedete dva hlavní kroky:
 5. Vyberte **Přidat zásady**, chcete-li přidat uloženou zásadu přístupu.
 6. Nastavte pole **Identifikátor** a **Oprávnění** dle potřeby. V poli **Oprávnění** byste měli vybrat všechna oprávnění.
 
-    ![Udělení oprávnění úložiště blob](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Udělení oprávnění úložiště blob.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Zadejte data zahájení a ukončení platnosti. Doba použitelnosti by měla být v budoucnu.
 8. Vyberte **OK** pro uložení zásad a poté uložte změny do kontejneru.
@@ -57,7 +57,7 @@ V tomto tématu provedete dva hlavní kroky:
 10. Klikněte pravým tlačítkem na kontejner a poté vyberte **Získejte sdílený přístupový podpis**.
 11. V dialogovém okně **Sdílený přístupový podpis** zkopírujte a uložte hodnotu do pole **URI**. Tato hodnota bude použita v dalším postupu a bude označována jako *sdílený přístupový podpis URI*.
 
-    ![Výběr a kopírování hodnoty URI](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Výběr a kopírování hodnoty URI.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Nastavte trezor klíčů pro uložení URI účtu úložiště
 
@@ -69,11 +69,11 @@ V tomto tématu provedete dva hlavní kroky:
 6. Nastavte zásady přístupu a udělte Elektronické fakturaci správnou úroveň zabezpečeného přístupu k tajnému kódu, který jste vytvořili. Přejděte na **Nastavení \> Zásady přístupu** a vyberte **Přidat zásady přístupu**.
 7. Nastavte tajná oprávnění pro operace **Získat** a **Seznam**.
 
-    ![Udělení přístupu ke službě](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Udělení přístupu ke službě.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Nastavte oprávnění pro operace **Získat** a **Seznam**.
 
-    ![Udělení povolení k certifikátu](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Udělení povolení k certifikátu.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. V poli **Vybrat objekt zabezpečení** vyberte **Není vybrán žádný**.
 10. V dialogovém okně **Objekt zabezpečení** vyberte objekt zabezpečení přidáním **Služba elektronické fakturace**.

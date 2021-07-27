@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e13e99515d52e1e24970908a106ae99a7e8b0d80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188403"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360809"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 
@@ -39,7 +39,7 @@ Mobilní aplikace umožňuje vaší organizaci zpřístupnit své obchodní proc
 ## <a name="elements-of-the-mobile-app"></a>Prvky mobilní aplikace
 Navigace v mobilní aplikaci se skládá ze čtyř základních konceptů: řídicího panelu, pracovních prostorů, stránek a akcí. 
 
-[![Navigační koncepty v mobilní aplikaci](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigační koncepty v mobilní aplikaci.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Při spuštění aplikace přejděte do **řídicího panelu**.
 2. Na řídicím panelu můžete zobrazit seznam **pracovních prostorů**, které jsou publikované.
@@ -53,7 +53,7 @@ Navigace v mobilní aplikaci se skládá ze čtyř základních konceptů: říd
 ## <a name="implementation-process"></a>Proces implementace
 Následující obrázek znázorňuje proces implementace mobilních pracovních prostorů, které poskytuje společnost Microsoft, a vlastních mobilních pracovních prostorů. 
 
-[![Proces implementace mobilní aplikace](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Proces implementace mobilní aplikace.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při implementaci mobilních pracovních prostorů poskytovaných společností Microsoft a vlastních mobilních pracovních prostorů Čísla v prvním sloupci odpovídají číslovaným krokům na předchozím obrázku.
 

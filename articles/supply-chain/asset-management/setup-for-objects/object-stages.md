@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985fedc13e28caee90c9db27b145e415d256208d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db025b3edb9daa2ffc19b5fc92930f76d8007dce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808273"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360094"
 ---
 # <a name="asset-lifecycle-states"></a>Stavy životního cyklu majetku
 
@@ -61,9 +61,9 @@ Po vytvoření požadovaných stavů životního cyklu majetku můžete nastavit
 
 5. Na pevné záložce **Stavy časového cyklu** vyberte stavy životního cyklu majetku, které si přejete zahrnout v modelu životního cyklu majetku:
 
-    - Chcete-li pro model použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/15-setup-for-objects.png) a přesuňte jej do části **Vybrané stavy životního cyklu**.
-    - Chcete-li pro model použít všechny dostupné stavy životního cyklu, vyberte tlačítko **Všechny dostupné stavy životního cyklu** ![Všechny dostupné stavy životního cyklu](media/20-setup-for-objects.png). Všechny stavy životního cyklu jsou převedeny do části **Vybrané stavy životního cyklu**.
-    - Chcete-li z modelu odebrat stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/16-setup-for-objects.png) a přesuňte jej do části **Zbývající stavy životního cyklu**.
+    - Chcete-li v modelu použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/15-setup-for-objects.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Vybrané stavy životního cyklu**.
+    - Chcete-li pro model použít všechny dostupné stavy životního cyklu, vyberte tlačítko **Všechny dostupné stavy životního cyklu** ![Všechny dostupné stavy životního cyklu.](media/20-setup-for-objects.png). Všechny stavy životního cyklu jsou převedeny do části **Vybrané stavy životního cyklu**.
+    - Chcete-li z modelu odstranit stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/16-setup-for-objects.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Zbývající stavy životního cyklu**.
 
 6. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu majetku, které mohou následovat po vybraném stavu životního cyklu.
 7. Pevná záložka **Stav majetku** se používá, pokud manipulujete s majetkem, který obdržíte k opravě. V sekci **Příchozí/odchozí** můžete vybrat stavy životního cyklu majetku a vyznačit tak pracovní postup majetku, který obdržíte k opravě. Pokud nabízíte zapůjčený majetek zákazníkům nebo oddělením, můžete v sekci **Výpůjčka** vybrat stavy životního cyklu pro zapůjčený majetek.

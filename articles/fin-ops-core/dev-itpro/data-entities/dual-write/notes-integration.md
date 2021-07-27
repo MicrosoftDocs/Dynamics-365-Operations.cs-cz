@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186779"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358972"
 ---
 # <a name="note-integration"></a>Integrace poznámek
 
@@ -51,23 +51,23 @@ Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchron
 1. V aplikaci Customer Engagement otevřete záznam účtu pro zákazníka.
 2. V podokně **Časová osa** vyberte znaménko plus (**+**) a poté vyberte **Poznámka** k vytvoření poznámky.
 
-    ![Vytvoření poznámky v aplikaci Customer Engagement](media/notes-ce-1.png)
+    ![Vytvoření poznámky v aplikaci Customer Engagement.](media/notes-ce-1.png)
 
 3. Zadejte název a popis a poté vyberte **Přidat poznámku**.
 
-    ![Zadání nadpisu a popisu](media/notes-ce-2.png)
+    ![Zadání nadpisu a popisu.](media/notes-ce-2.png)
 
     Nová poznámka se přidá na časovou osu zákazníka.
 
-    ![Nová poznámka na časové ose zákazníka](media/notes-ce-3.png)
+    ![Nová poznámka na časové ose zákazníka.](media/notes-ce-3.png)
 
 4. Přihlaste se do aplikace Finance and Operations a otevřete stejný záznam zákazníka. Všimněte si, že tlačítko **Přílohy** (symbol kancelářské sponky) v pravém horním rohu označuje, že záznam má přílohu.
 
-    ![Oznámení o příloze](media/notes-ce-4.png)
+    ![Oznámení o příloze.](media/notes-ce-4.png)
 
 5. Vyberte tlačítko **Přílohy** pro otevření stránky **Přílohy**. Měli byste najít poznámku, kterou jste vytvořili v aplikaci Customer Engagement.
 
-    ![Poznámka z aplikace Customer Engagement](media/notes-ce-5.png)
+    ![Poznámka z aplikace Customer Engagement.](media/notes-ce-5.png)
 
 Všechny aktualizace poznámky se synchronizují tam a zpět mezi aplikací Finance and Operations a aplikací Customer Engagement.
 
@@ -79,21 +79,21 @@ Chcete-li vytvořit poznámku v aplikaci Finance and Operations a poté ji synch
 
 1. V aplikaci Finance and Operations na stránce **Přílohy** vyberte **Nový** \> **Poznámka**.
 
-    ![Vytvoření poznámky v aplikaci Finance and Operations](media/notes-fo-1.png)
+    ![Vytvoření poznámky v aplikaci Finance and Operations.](media/notes-fo-1.png)
 
 2. Zadejte název a krátkou sadu pokynů a poté vyberte **Uložit**.
 
-    ![Zadání nadpisu a pokynů](media/notes-fo-2.png)
+    ![Zadání nadpisu a pokynů.](media/notes-fo-2.png)
 
 3. V aplikaci Customer Engagement aktualizujte záznam. Na časové ose byste měli najít novou poznámku.
 
-    ![Nová poznámka na časové ose v aplikaci Customer Engagement](media/notes-fo-3.png)
+    ![Nová poznámka na časové ose v aplikaci Customer Engagement.](media/notes-fo-3.png)
 
 Poznámku můžete klasifikovat jako interní nebo externí.
 
 - V aplikaci Finance and Operations na stránce **Přílohy** otevřete poznámku a poté v poli **Omezení** vyberte **Interní**, nebo **Externí**.
 
-    ![Pole omezení](media/notes-fo-4.png)
+    ![Pole omezení.](media/notes-fo-4.png)
 
 Můžete také vytvořit adresu URL.
 
@@ -101,13 +101,13 @@ Můžete také vytvořit adresu URL.
 2. Zadejte nadpis a adresu URL.
 3. V poli **Omezení** pole, vyberte **Interní**, nebo **Externí**.
 
-    ![Vytvoření adresy URL v aplikaci Finance and Operations](media/notes-fo-5.png)
+    ![Vytvoření adresy URL v aplikaci Finance and Operations.](media/notes-fo-5.png)
 
-4. Zvolte **Uložit**.
+4. Zvolte možnost **Uložit**.
 
     Protože aplikace Customer Engagement nemají typ adresy URL, je adresa URL integrována s duálním zápisem jako poznámka.
 
-    ![Adresa URL zobrazená jako poznámka v aplikaci Customer Engagement](media/notes-ce-6.png)
+    ![Adresa URL zobrazená jako poznámka v aplikaci Customer Engagement.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Přílohy souborů nejsou podporovány.

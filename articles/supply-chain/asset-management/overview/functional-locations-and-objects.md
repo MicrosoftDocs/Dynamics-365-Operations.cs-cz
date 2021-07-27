@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351578"
 ---
 # <a name="functional-locations-and-assets"></a>Funkční místa a majetek
 
@@ -34,13 +34,13 @@ Toto téma popisuje funkční místa a majetek v modulu Správa majetku. Správa
 
 Správa majetku je bezproblémově integrována s několika moduly v dalších aplikacích Finance and Operations. Následující ilustrace znázorňuje rozhraní s jinými moduly.
 
-![Diagram znázorňující způsob, jakým jsou rozhraní správy majetku s jinými moduly](media/01-overview-image.png)
+![Diagram znázorňující způsob, jakým jsou rozhraní správy majetku s jinými moduly.](media/01-overview-image.png)
 
 Správa majetku umožňuje efektivně spravovat a provádět všechny úkoly související se správou a údržbou mnoha typů zařízení ve vaší firmě. Toto zařízení zahrnuje stroje, výrobní zařízení a vozidla. Správa majetku též podporuje řešení napříč četnými průmyslovými odvětvími.
 
 Následující ilustrace znázorňuje přehled hlavních funkcí, které jsou pokryty správou majetku.
 
-![Diagram znázorňující hlavní funkce ve správě majetku](media/02-overview-image.png)
+![Diagram znázorňující hlavní funkce ve správě majetku.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funkční místa a majetek
 
@@ -50,11 +50,11 @@ Náklady na majetek se vždy řídí místem majetku. Jinými slovy, pokud je ma
 
 Způsob vytvoření hierarchie funkčních míst závisí na požadavcích vaší společnosti na údržbu interního vybavení nebo na údržbě vybavení zákazníka. Následující obrázek znázorňuje příklad funkčních míst, která jsou založena na zeměpisných lokalitách.
 
-![Diagram znázorňující funkční místa na základě geografických umístění](media/03-overview-image.png)
+![Diagram znázorňující funkční místa na základě geografických umístění.](media/03-overview-image.png)
 
 Následující obrázek znázorňuje příklad funkčních míst, která jsou založena na zákaznících.
 
-![Diagram znázorňující funkční místa na základě zákazníků](media/04-overview-image.png)
+![Diagram znázorňující funkční místa na základě zákazníků.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

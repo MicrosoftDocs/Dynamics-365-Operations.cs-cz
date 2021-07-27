@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894165"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357635"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimujte velké dokumenty generované v elektronickém výkaznictví 
 
@@ -55,7 +55,7 @@ Před provedením procedur v tomto tématu je nutné provést následující kro
 1. [Spuštění importovaného formátu](er-defer-xml-element.md#run-the-imported-format).
 2. Všimněte si, že velikost vygenerovaného dokumentu ve formátu XML je 3 kilobajty (KB).
 
-    ![Náhled nekomprimovaného odchozího dokumentu](./media/er-compress-outbound-files1.png)
+    ![Náhled nekomprimovaného odchozího dokumentu.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Upravte formát pro kompresi generovaného výstupu
 
@@ -80,7 +80,7 @@ Před provedením procedur v tomto tématu je nutné provést následující kro
     > [!NOTE] 
     > Kompresní poměr souboru XML, který tento soubor zip obsahuje, je 87 procent. Kompresní poměr závisí na komprimovaných datech.
 
-    ![Náhled komprimovaného odchozího dokumentu](./media/er-compress-outbound-files2.png)
+    ![Náhled komprimovaného odchozího dokumentu.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Pokud je [destinace](electronic-reporting-destinations.md) ER nakonfigurována pro prvek formátu, který generuje výstup (prvek **Sestava** v tomto příkladu), obejde se komprese výstupu.

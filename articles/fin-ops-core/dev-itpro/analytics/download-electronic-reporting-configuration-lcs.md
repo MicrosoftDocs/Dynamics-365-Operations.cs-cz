@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1e20528cd0af00c46f1376e02097bf3171100769
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358688"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services
 
@@ -41,7 +41,7 @@ Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronic
 3. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Microsoft**.
 4. Na dlaždici **Microsoft** vyberte **Úložiště**.
 
-    [![Dlaždice Microsoft na stránce Konfigurace lokalizace](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Dlaždice Microsoft na stránce Konfigurace lokalizace.](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. Na stránce **Úložiště konfigurací** v mřížce vyberte existující úložiště typu **LCS**. Pokud se toto úložiště nezobrazí v mřížce, postupujte následovně:
 
@@ -55,7 +55,7 @@ Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronic
 
 6. Vyberte **Otevřít** a zobrazte tak seznam konfigurací ER pro vybrané úložiště.
 
-    [![Stránka úložišť konfigurace](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Stránka úložišť konfigurace.](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
     > [!TIP]
     > Pokud máte potíže s přístupem do úložiště LCS ke stažení konfigurací ze sdílené knihovny majetku v LCS, můžete si konfigurace stánout také z [globálního úložiště](er-download-configurations-global-repo.md).
@@ -67,7 +67,7 @@ Tohle téma popisuje, jak stáhnout nejnovější verzi [konfigurací elektronic
     > [!NOTE]
     > Tlačítko **Import** nebude k dispozici u verzí konfigurace ER, které jsou již v aktuální instanci přítomny.
 
-    [![Stránka úložiště konfigurace](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Stránka úložiště konfigurace.](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
 > V závislosti na nastavení ER jsou konfigurace ověřeny po jejich importu. Můžete být upozorněni na potíže se zjištěnou nekonzistencí. Tyto potíže je nutné před importováním verze konfigurace odstranit. Další informace naleznete v seznam souvisejících témat pro toto téma.

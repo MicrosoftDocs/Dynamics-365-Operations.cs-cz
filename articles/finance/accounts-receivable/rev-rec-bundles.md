@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347775"
 ---
 # <a name="revenue-recognition-bundles"></a>Sady pro uznání výnosů
 

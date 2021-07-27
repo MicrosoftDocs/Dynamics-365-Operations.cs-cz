@@ -1,32 +1,34 @@
 ---
 title: Přehled směnného kurzu DPH
-description: Toto téma obsahuje informace o směnných kurzech pro výpočet DPH. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
+description: Toto téma poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko.
 author: ShylaThompson
-ms.date: 04/10/2017
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 272703
+ms.custom:
+- "272703"
+- intro-internal
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8a3f02d0a86ddf54e6f1a5a11a795561a7ec01af
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ff918768a65618c39023a6b141c5f168a9fdd9ca
+ms.sourcegitcommit: fb563aa77d62c797562ddc2bb84415cdfa3dbb79
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832668"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "6479050"
 ---
 # <a name="vat-exchange-rate-overview"></a>Přehled směnného kurzu DPH
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o směnných kurzech pro výpočet DPH. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
+Toto téma poskytuje informace o směnných kurzech pro výpočet DPH, který je k dispozici pro Česko, Maďarsko a Polsko. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
 
 Vaše organizace může vybrat směnný kurz, který používá, pro výpočet daně z přidané hodnoty (DPH) pro výkazy DPH. Tento směnný kurz může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví společnosti. Funkce účetnictví zahrnují přípravu následujících dokumentů souvisejících s daněmi:
 

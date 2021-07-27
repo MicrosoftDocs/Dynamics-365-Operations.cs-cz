@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2f0118b197f465113bb894e3e57b3e682e04ef36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a277ef0634c4ddd5769d278ce6186aac5e84ebfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352511"
 ---
 # <a name="cookie-consent-module"></a>Modul souhlasu se soubory cookie
 
@@ -35,7 +35,7 @@ Pokud není obdržen souhlas uživatele se soubory cookie na webu, nebudou se na
 Modul souhlasu se soubory cookie lze nakonfigurovat ve fragmentu záhlaví stránky, takže jej lze vynutit při načtení stránky. Modul souhlasu se soubory cookie by měl obsahovat jasnou zprávu informující uživatele webu o používání souborů cookie na webu a měl by poskytovat odkaz na stránku ochrany osobních údajů webu.
 
 Následující obrázek znázorňuje příklad zprávy o souhlasu se soubory cookie s odkazem na stránku zásad ochrany osobních údajů webu zobrazeným v záhlaví stránky webu.
-![Příklad modulu souhlasu se soubory cookie](./media/ecommerce-cookieconsent.png)
+![Příklad modulu souhlasu se soubory cookie.](./media/ecommerce-cookieconsent.png)
 
 ## <a name="cookie-consent-module-properties"></a>Vlastnosti modulu souhlasu se soubory cookie
 
