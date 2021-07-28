@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e119eee82b1438dd8c3ccbaf2d54962b59fe6ae3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 47fd386875e3000d579890ae58a462b643ef1876
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808393"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360915"
 ---
 # <a name="counters"></a>Čítače
 
@@ -62,7 +62,7 @@ Registraci čítače majetku lze aktualizovat ručně nebo automaticky na zákla
 
 Když jsou typy majetku přidány k typu čítače v poli **Čítače**, je tento čítač automaticky přidán k typům majetku na pevné záložce v okně **čítače** v poli [Typy majetku](../setup-for-objects/object-types.md).
 
-![Obrázek č. 1](media/071-setup-for-objects.png)
+![Obrázek č. 1.](media/071-setup-for-objects.png)
 
 
 

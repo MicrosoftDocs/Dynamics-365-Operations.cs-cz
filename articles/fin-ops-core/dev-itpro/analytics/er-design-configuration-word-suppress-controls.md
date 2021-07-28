@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753593"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348037"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Potlačit ovládací prvky obsahu Word v generovaných sestavách
 
@@ -63,7 +63,7 @@ Musíte si také stáhnout a uložit následující šablonu pro vzorovou sestav
     > [!NOTE]
     > Opakující se ovládací prvek obsahu je označen klíčem **SummaryLines**, který odpovídá poli vlastní části XML, na kterou byl namapován.
 
-    ![Rozložení šablony Word](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Rozložení šablony Word.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Volba existující konfigurace sestavy ER
 
@@ -98,7 +98,7 @@ V současné době se používá soubor SampleVendPaymDocReportBounded.docx jako
 7. Vyberte **OK**.
 8. V dialogovém okně **Parametry elektronického přiznání** vyberte **OK** a analyzujte vygenerovaný výstup.
 
-    ![Platby za zpracování na stránce Platby dodavatele](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Platby za zpracování na stránce Platby dodavatele.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Výstup je prezentován ve formátu Word a obsahuje souhrnnou část.
 
@@ -149,7 +149,7 @@ Pokud chcete potlačit souhrnnou část v generovaném dokumentu na základě po
 
 9. Změny upravitelného formátu uložíte výběrem možnosti **Uložit**.
 
-    ![Generovaný výstup ve formátu Word](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Generovaný výstup ve formátu Word.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Spuštění upraveného formátu pro vytvoření výstupu ve Wordu
 
@@ -163,7 +163,7 @@ Pokud chcete potlačit souhrnnou část v generovaném dokumentu na základě po
 8. V dialogovém okně **Parametry elektronického přiznání** v poli **Potlačit část shrnutí** vyberte **Ano**.
 9. Vyberte **OK** a analyzujte vygenerovaný výstup.
 
-    ![Generovaný výstup ve formátu Word](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Generovaný výstup ve formátu Word.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Všimněte si, že výstup neobsahuje souhrnnou část, protože byla potlačena.
 

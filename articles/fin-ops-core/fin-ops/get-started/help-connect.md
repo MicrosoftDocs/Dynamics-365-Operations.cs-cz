@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745682"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343927"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro aplikace Finance and Operations
 
@@ -32,7 +32,7 @@ V tomto tématu najdete přehled součástí systému nápovědy pro aplikace Fi
 
 Aplikace Finance and Operations zahrnují koncepční přehledy a další témata, která jsou publikována na web internetu [https://docs.microsoft.com/dynamics365](/dynamics365/). K tomuto obsahu lze poté přistupovat z podokna **Nápověda** v produktu. Následující obrázek znázorňuje části systému nápovědy.
 
-[![Architektura nápovědy](./media/help-architecture.png)](./media/help-architecture.png)
+[![Architektura nápovědy.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Systém nápovědy v produktu stahuje články z docs.microsoft.com a dalších připojených webů. Načítá také průvodce záznamem úloh, které jsou uloženy v modelování podnikových procesů v Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -47,14 +47,14 @@ Na stránce **Parametry systému** mohou správci systému nakonfigurovat přís
 > - Chcete-li nakonfigurovat nápovědu, musíte se přihlásit pomocí účtu u stejného klienta jako je klient, ve kterém je aplikace umístěna.
 > - Knihovnu LCS nelze připojit z instance aplikace spuštěné na místním virtuálním pevném disku (VHD).
 
-[![Formulář Systémové parametry s nastavením nápovědy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formulář Systémové parametry s nastavením nápovědy.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Chcete-li nakonfigurovat průvodce záznamem úloh pro řešení, postupujte podle těchto kroků na stránce **Parametry systému**.
 
 > [!IMPORTANT]
 > Při prvním otevření karty **Nápověda** je nutné se připojit k službě Lifecycle Services. Zvolte odkaz uprostřed formuláře, počkejte na připojení, zavřete dialogové okno a volbou tlačítka **OK** otevřete stránku **Parametry systému**.
 >
-> [![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png "Připojit k LCS")](./media/connect-to-lcs-crop.png)
+> [![Připojení k LCS](./media/connect-to-lcs-crop-1024x365.png „Připojení k LCS.“](./media/connect-to-lcs-crop.png)
 
 1. Vyberte projekt služby Lifecycle Services pro připojení.
 2. Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úkolů.

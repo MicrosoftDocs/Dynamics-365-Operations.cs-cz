@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349003"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Vyhodnotit počáteční predikční model platby zákazníka (náhled)
 
@@ -33,32 +33,32 @@ Toto téma vysvětluje, jak vyhodnotit predikční model poté, co jste zapnuli 
 
 Na stránce **Parametry finančních přehledů** v Microsoft Dynamics 365 Finance se objeví odkaz **Zlepšete přesnost modelu** vedle skóre přesnosti.
 
-[![Odkaz Zlepšete přesnost modelu](./media/prediction-model.png)](./media/prediction-model.png)
+[![Odkaz Zlepšete přesnost modelu.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Tento odkaz vás přenese do AI Builderu, kde se můžete dozvědět více o aktuálním modelu a také podniknout kroky k jeho vylepšení. Na následující ilustraci je zobrazena otevřená stránka.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Na otevřené stránce se zobrazí následující informace:
 
 - V části **Výkon** poskytuje stupeň výkonu modelu pohled na kvalitu modelu. Další informace o tomto stupni viz [Predikční výkon modelu](/ai-builder/prediction-performance) v dokumentaci AI Builderu.
 - Čáset **Nejvlivnější data** ukazuje, jak důležité byly různé typy vstupních dat pro váš model. Tento seznam a odpovídající procenta můžete vyhodnotit, abyste zjistili, zda jsou informace v souladu s informacemi o vašem podnikání a trhu.
 
-    [![Výkonové a nejvlivnější datové sekce pro predikční model](./media/models.png)](./media/models.png)
+    [![Výkonové a nejvlivnější datové sekce pro predikční model.](./media/models.png)](./media/models.png)
 
 - V části **Výkon** vyberte **Zobrazit podrobnosti**, chcete-li se dozvědět více o stupni a dalších aspektech. Na následujícím obrázku podrobnosti ukazují, že model používá méně informací, než je doporučeno. Proto systém vygeneroval varovnou zprávu.
 
-    [![Varování ohledně výkonu modelu](./media/details.png)](./media/details.png)
+    [![Varování ohledně výkonu modelu.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Podrobnější informace
 
 Ačkoli přesnost je dobrým výchozím bodem pro hodnocení modelu a stupeň výkonu poskytuje perspektivu, AI Builder poskytuje podrobnější metriky, které můžete použít pro své vyhodnocení. Chcete-li stáhnout podrobnosti, v části **Výkon** vyberte tlačítko se třemi tečkami (**...**) vedle tlačítka **Použít model** a poté vyberte **Stáhnout podrobné metriky**.
 
-[![Stáhnout podrobný příkaz metriky](./media/performance.png)](./media/performance.png)
+[![Stáhnout podrobný příkaz metriky.](./media/performance.png)](./media/performance.png)
 
 Následující obrázek ukazuje formát, ve kterém si můžete data stáhnout.
 
-[![Formát stažených dat](./media/data-format.png)](./media/data-format.png)
+[![Formát stažených dat.](./media/data-format.png)](./media/data-format.png)
 
 Pro hlubší analýzu výsledků je dobrým výchozím bodem kontrola metriky „Matice zmatků“. Například zde jsou data, která se pro tuto metriku zobrazují na předchozím obrázku.
 

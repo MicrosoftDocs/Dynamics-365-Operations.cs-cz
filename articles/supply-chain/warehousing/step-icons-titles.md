@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049357"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344484"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management
 
@@ -25,7 +25,7 @@ Toto téma popisuje, jak přiřadit ikony a názvy kroků pro nové nebo přizp�
 
 Následující ilustrace ukazují, jak se ikony kroků a názvy zobrazují v mobilní aplikaci Warehouse Management.
 
-![Příklad ikony kroku a názvu kroku v mobilní aplikaci Warehouse Management](media/step-icon-example.png "Příklad ikony kroku a názvu kroku v mobilní aplikaci Warehouse Management")
+![Příklad ikony kroku a názvu kroku v mobilní aplikaci Warehouse Management.](media/step-icon-example.png "Příklad ikony kroku a názvu kroku v mobilní aplikaci Warehouse Management")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
 
@@ -350,13 +350,13 @@ Tento příklad vysvětluje, jak nastavit ikony a názvy kroků pro vlastní tok
 
 Následující obrázek znázorňuje tento tok úloh.
 
-![Vývojový diagram úkolu](media/step-icons-example-task-flow.png "Vývojový diagram úkolu")
+![Vývojový diagram úkolu.](media/step-icons-example-task-flow.png "Vývojový diagram úkolu")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Vytvořte třídu kroků pro vstupní stránku kontejneru
 
 Na vstupní stránce kontejneru může pracovník skenovat nebo zadat ID kontejneru.
 
-![Stránka vstupu do kontejneru](media/step-icons-example-container-input.png "Stránka vstupu do kontejneru")
+![Stránka vstupu do kontejneru.](media/step-icons-example-container-input.png "Stránka vstupu do kontejneru")
 
 Na vstupní stránce kontejneru je název ovládacího prvku vstupního pole `ContainerId`. Protože tento název ovládacího prvku není v [seznamu ID kroků](#step-ids-classes), nenajdete existující krok, který je na něm založen. Proto musíte vytvořit třídu kroku, která představuje krok. Následuje příklad.
 
@@ -382,7 +382,7 @@ Chcete-li přiřadit ikonu kroku, nastavte `defaultStepIcon` na jedno z ID ikon,
 
 Stránka pro zadání hmotnosti umožňuje pracovníkovi zadat hmotnost.
 
-![Stránka pro zadání hmotnosti](media/step-icons-example-weight-input.png "Stránka pro zadání hmotnosti")
+![Stránka pro zadání hmotnosti.](media/step-icons-example-weight-input.png "Stránka pro zadání hmotnosti")
 
 Na stránce pro zadávání hmotnosti je název ovládacího prvku vstupního pole `Weight`, které je v [seznamu ID kroků](#step-ids-classes). Pokud tedy ikona a název kroku, které jsou definovány v třídě `WHSMobileAppStepWeight`, jsou pro vás přijatelné, pro tento krok nemusíte nic měnit.
 

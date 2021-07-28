@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347157"
 ---
 # <a name="asset-types"></a>Typy majetku
 
@@ -45,9 +45,9 @@ Nejdříve nastavte požadované typy majetku. Dále vytvoříte modely majetku,
 7. Zvolte **Uložit**.
 8. Na pevné záložce **Typy práce údržby** vyberte typy práce údržby, které mají souviset s typem majetku:
 
-    - Chcete-li vybrat typ práce údržby, vyberte jej v poli **Zbývající typy práce údržby** a potom výběrem tlačítka se šipkou vpravo ![Tlačítko se šipkou vpravo](media/29-setup-for-objects.png) jej přesuňte do části **Vybrané typy práce údržby**.
-    - Chcete-li vybrat všechny dostupné typy práce údržby, vyberte tlačítko ![Šipka přesunout vše](media/30-setup-for-objects.png). Všechny typy práce údržby jsou přeneseny z pole **Zbývající typy práce údržby** do pole **Vybrané typy práce údržby**.
-    - Chcete-li zrušit výběr typu práce údržby, vyberte jej v poli **Vybrané typy práce údržby** a potom výběrem tlačítka šipky vlevo ![Tlačítko šipka vlevo](media/31-setup-for-objects.png) jej přesuňte do pole **Zbývající typy práce údržby**.
+    - Chcete-li vybrat typ prací údržby, vyberte ho v poli **Zbývající typy prací údržby** a potom ho výběrem tlačítka šipky vpravo ![Tlačítko šipka vpravo](media/29-setup-for-objects.png) přesuňte do části Vybrané typy úloh. pro přesun do části **Vybrané typy prací údržby**.
+    - Chcete-li vybrat všechny dostupné typy práce údržby, vyberte tlačítko ![Šipka přesunout vše](media/30-setup-for-objects.png) . Všechny typy práce údržby jsou přeneseny z pole **Zbývající typy práce údržby** do pole **Vybrané typy práce údržby**.
+    - Chcete-li zrušit výběr typu prací údržby, vyberte ho v poli **Vybrané typy prací údržby** a potom ho výběrem tlačítka šipky vlevo ![Tlačítko šipka vlevo](media/31-setup-for-objects.png) přesuňte do části Vybrané typy úloh. pro přesun do pole **Zbývající typy prací údržby**.
 
 9. Také můžete vybrat čítače, které by měly souviset s typem majetku. Na pevné záložce **Čítače** proveďte své výběry pomocí metod popsaných pro typy práce údržby v kroku 8. Další informace o nastavení čítačů naleznete v tématu [Čítače](counters.md).
 10. Také můžete vybrat typy atributů, které by měly souviset s typem majetku. Na pevné záložce **Typy atributů** proveďte své výběry pomocí metod popsaných pro typy práce údržby v kroku 8. Chcete-li potom vytvořit upřednostňovanou posloupnost typů atributů, vyberte typ atributu v poli **Vybrané typy atributů** a pomocí tlačítek se šipkami nahoru a dolů jej přesuňte. Posloupnost typů atributů bude zobrazena u majetku, který používá tento typ majetku. Další informace o atributech majetku naleznete v části [Typy atributů údržby](../setup-for-functional-locations/specification-types.md).

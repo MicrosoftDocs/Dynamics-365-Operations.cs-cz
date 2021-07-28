@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349321"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentování v Dynamics 365 Commerce
 Pomocí experimentování v Dynamics 365 Commerce můžete ověřovat hypotézy o efektivnosti vašich stránek elektronického obchodování a rozhodovat se na základě dat. Commerce podporuje testování A/B na stránkách, v modulech a fragmentech a umožňuje vám měřit dopad navrhovaných změn na váš web.
@@ -39,7 +39,7 @@ V konfigurátoru webů Commerce můžete vytvářet, upravovat a spravovat zprac
 ## <a name="experimentation-lifecycle"></a>Životní cyklus experimentování
 Nastavení experimentu, vytváření variant a spuštění experimentu je iterativní proces. Na schématu níže je znázorněn životní cyklus experimentování v Commerce a ve službě třetí strany. 
 
-[ ![Životní cyklus experimentování](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Životní cyklus experimentování.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Další informace o jednotlivých krocích v procesu experimentování najdete v následujících tématech.
 - [Identifikace hypotézy a určení metriky experimentu](experimentation-identify.md)

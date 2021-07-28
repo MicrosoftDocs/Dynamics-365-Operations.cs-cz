@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941048"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350805"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Poradce při potížích s počáteční synchronizací
 
@@ -38,7 +38,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn**, došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
 
-![Chyba na kartě Počáteční podrobnosti synchronizace](media/initial_sync_status.png)
+![Chyba na kartě Počáteční podrobnosti synchronizace.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Počáteční synchronizaci nelze dokončit: 400 Chybný požadavek
 
@@ -85,7 +85,7 @@ Chcete-li opravit problém, postupujte následovně.
 1. Přihlášení do aplikace Finance and Operations.
 2. Na stránce **aplikací Azure Active Directory** odstraňte klienta **DtAppID** a poté jej znovu přidejte.
 
-![DtAppID klient v seznamu aplikací Azure AD](media/aad_applications.png)
+![DtAppID klient v seznamu aplikací Azure AD.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Selhání odkazů na sebe sama a cirkulárních odkazů při počáteční synchronizaci
 
@@ -115,11 +115,11 @@ Pokud mají libovolné řádky v tabulce dodavatele hodnoty ve sloupcích **Prim
     2. Vyhledejte **primarycontactperson** a najděte zdrojový sloupec **PrimaryContactPersonId**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
-        ![Odstranění sloupce PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Odstranění sloupce PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Opakujte tyto kroky pro odstranění sloupce **InvoiceVendorAccountNumber**.
 
-        ![Odstranění sloupce InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Odstranění sloupce InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Uložte změny do mapování.
 
@@ -129,7 +129,7 @@ Pokud mají libovolné řádky v tabulce dodavatele hodnoty ve sloupcích **Prim
     2. Vyberte tabulku **Vendors V2**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
-        ![Vyberte možnost Sledování změn](media/selfref_options.png)
+        ![Vyberte možnost Sledování změn.](media/selfref_options.png)
 
     4. Vyberte **Zakázat sledování změn**.
 
@@ -162,11 +162,11 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
     2. Vyhledejte **contactperson** a najděte zdrojový sloupec **ContactPersonID**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
-        ![Odstranění sloupce ContactPersonID](media/cust_selfref3.png)
+        ![Odstranění sloupce ContactPersonID.](media/cust_selfref3.png)
 
     4. Opakujte tyto kroky pro odstranění sloupce **InvoiceAccount**.
 
-        ![Odstranění sloupce InvoiceAccount](media/cust_selfref4.png)
+        ![Odstranění sloupce InvoiceAccount.](media/cust_selfref4.png)
 
     5. Uložte změny do mapování.
 
@@ -176,7 +176,7 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
     2. Vyberte tabulku **Zákazníci V3**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
-        ![Vyberte možnost Sledování změn](media/selfref_options.png)
+        ![Vyberte možnost Sledování změn.](media/selfref_options.png)
 
     4. Vyberte **Zakázat sledování změn**.
 
@@ -196,7 +196,7 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
 
         Následující ilustrace ukazuje projekt, který aktualizuje **CustomerAccount** a **ContactPersonId**.
 
-        ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId](media/cust_selfref6.png)
+        ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId.](media/cust_selfref6.png)
 
     2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly v aplikaci Finance and Operations aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -204,7 +204,7 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
 
         Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value**, budou všechny řádky synchronizovány.
 
-        ![Přidání dotazu filtru](media/cust_selfref7.png)
+        ![Přidání dotazu filtru.](media/cust_selfref7.png)
 
     Počáteční synchronizace řádků je nyní dokončena.
 

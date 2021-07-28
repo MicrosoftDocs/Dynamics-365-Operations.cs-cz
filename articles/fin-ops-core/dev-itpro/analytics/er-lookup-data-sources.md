@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351066"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurace zdrojů dat vyhledávání pro použití parametrů specifických pro aplikace elektronického výkaznictví 
 
@@ -44,38 +44,38 @@ Můžete nakonfigurovat následující typy zdrojů dat **Vyhledávání** v zá
 
 Následující obrázek ukazuje, jak lze konfigurovat výčet formátu ve vzorovém formátu ER.
 
-   ![Zobrazení výčtu formátu jako základu pro nakonfigurovaný zdroj dat vyhledávání](./media/er-lookup-data-sources-img1.gif)
+   ![Zobrazení výčtu formátu jako základu pro nakonfigurovaný zdroj dat vyhledávání.](./media/er-lookup-data-sources-img1.gif)
 
 Následující obrázek ukazuje komponenty formátu, které byly nakonfigurovány tak, aby vykazovaly různé typy daní v jiné části generované sestavy.
 
-   ![Zobrazení sekcí formátu pro samostatné hlášení různých typů daní](./media/er-lookup-data-sources-img2.png)
+   ![Zobrazení sekcí formátu pro samostatné hlášení různých typů daní.](./media/er-lookup-data-sources-img2.png)
 
 Následující obrázek ukazuje, jak návrhář operací ER umožňuje přidání zdroje dat typu **Výčet formátu\Vyhledávání**.  Přidaný zdroj dat je nakonfigurován jako vracející hodnotu výčtu formátu `List of taxation levels`.
 
-   ![Přidání zdroje dat ER typu Výčet formátu\Vyhledávání](./media/er-lookup-data-sources-img3.gif)
+   ![Přidání zdroje dat ER typu Výčet formátu\Vyhledávání.](./media/er-lookup-data-sources-img3.gif)
 
 Následující obrázek ukazuje, jak je přidaný zdroj dat nakonfigurován pro použití pole **Kód** seznamu záznamů **Model.Data.Tax** zdroje dat **Model** jako parametru, který musí být zadán pro každé nakonfigurované pravidlo.
 
-![Konfigurace parametrů přidaného zdroje dat typu Výčet formátu\Vyhledávání](./media/er-lookup-data-sources-img4.gif)
+![Konfigurace parametrů přidaného zdroje dat typu Výčet formátu\Vyhledávání.](./media/er-lookup-data-sources-img4.gif)
 
 Přidaný zdroj dat `Model.Data.Tax` je nakonfigurován tak, aby určoval daňový kód pro každé nakonfigurované pravidlo přístupem k záznamům tabulky aplikace **TaxTable**.
 
-   ![Kontrola zdroje dat vyhledávání jedné firmy typu Výčet formátu\Vyhledávání](./media/er-lookup-data-sources-img5.gif)
+   ![Kontrola zdroje dat vyhledávání jedné firmy typu Výčet formátu\Vyhledávání.](./media/er-lookup-data-sources-img5.gif)
 
 Pravidla vyhledávání pro vybraný formát ER můžete nastavit pomocí uživatelského rozhraní, které je automaticky v souladu se strukturou nakonfigurovaného zdroje dat. V současné době toto uživatelské rozhraní vyžaduje, abyste pro každé pravidlo zadali vrácenou hodnotu jako hodnotu výčtu formátu `List of taxation levels` a daňový kód jako parametr.
 
-   ![Nastavte pravidla pro nakonfigurovaný zdroj dat](./media/er-lookup-data-sources-img6.gif)
+   ![Nastavte pravidla pro nakonfigurovaný zdroj dat.](./media/er-lookup-data-sources-img6.gif)
 
 Následující obrázek ukazuje, jak lze zdroj dat `Model.Data.Summary.LevelByLookup` typu **Vypočítané pole** nakonfigurovat tak, aby volal nakonfigurovaný zdroj dat **Vyhledávání** poskytující požadované parametry. Ke zpracování tohoto volání za běhu, ER prochází seznam nakonfigurovaných pravidel v definované sekvenci a vyhledá první pravidlo, které splňuje zadané podmínky. V tomto příkladu je to pravidlo, které obsahuje daňový kód, který odpovídá uvedenému. Výsledkem je nalezení nejvhodnějšího pravidla a tento zdroj dat vrátí hodnotu výčtu, která je nakonfigurována pro nalezené pravidlo.
 
 > [!NOTE]
 > Pokud není nalezeno žádné použitelné pravidlo, je vyvolána výjimka. Chcete-li těmto výjimkám zabránit, nakonfigurujte na konci seznamu pravidel další pravidla pro zpracování případů, kdy je zadána nekonfigurovaná hodnota nebo žádná hodnota. Podle potřeby použijte možnosti **\*Není prázdné\*** a **\*Prázdné\***.  
 >
-> ![Přidejte zdroj dat pro volání nakonfigurovaného zdroje dat vyhledávání](./media/er-lookup-data-sources-img7.png)
+> ![Přidejte zdroj dat pro volání nakonfigurovaného zdroje dat vyhledávání.](./media/er-lookup-data-sources-img7.png)
 
 Když nastavíte možnost **Mezi firmami** na **Ano** pro upravitelný zdroj dat vyhledávání, přidáte nový požadovaný parametr **Firma** k sadě parametrů tohoto zdroje dat. Hodnota parametru **Společnost** musí být zadána za běhu, když je volán zdroj dat vyhledávání. Když je za běhu zadán kód společnosti, použijí se pravidla nakonfigurovaná pro tuto společnost k nalezení nejvhodnějšího pravidla a vrátí se odpovídající hodnota. Následující ilustrace ukazuje, jak to můžete udělat a jak se změní sada parametrů upravitelného zdroje dat.
 
-   ![Kontrola zdroje dat vyhledávání mezi firmami typu Výčet formátu\Vyhledávání](./media/er-lookup-data-sources-img8.gif)
+   ![Kontrola zdroje dat vyhledávání mezi firmami typu Výčet formátu\Vyhledávání.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Vyberte každou společnost zvlášť a nakonfigurujte sadu pravidel pro tento zdroj dat vyhledávání upravitelného formátu ER. Výjimka je vyvolána za běhu, když je voláno vyhledávání mezi společnostmi s kódem společnosti, pro kterou nebylo nastavení vyhledávání dokončeno.
@@ -84,7 +84,7 @@ Když nastavíte možnost **Mezi firmami** na **Ano** pro upravitelný zdroj dat
 
 Od verze 10.0.19 jsou k dispozici rozšířené možnosti zdrojů dat **Vyhledávání**. Když nastavíte možnost **Rozšířené** na **Ano** pro upravitelný zdroj dat vyhledávání, je nakonfigurovaný zdroj dat vyhledávání transformován na strukturovaný zdroj dat, který nabízí další funkce pro analýzu nakonfigurované sady pravidel. Následující obrázek znázorňuje tuto transformaci.
 
-   ![Kontrola strukturovaného zdroje dat vyhledávání typu Výčet formátu\Vyhledávání](./media/er-lookup-data-sources-img9.gif)
+   ![Kontrola strukturovaného zdroje dat vyhledávání typu Výčet formátu\Vyhledávání.](./media/er-lookup-data-sources-img9.gif)
 
 - Podpoložka **Vyhledávání** je navržena jako funkce k nalezení nejvhodnějšího pravidla ze sady konfigurovatelných pravidel na základě poskytnuté sady parametrů.
 - Podpoložka **IsLookupResultSet** je navržena jako funkce, která přijímá zadanou hodnotu základního výčtového zdroje dat a vrací *logickou* hodnotu **True**, když sada pravidel obsahuje alespoň jedno pravidlo, pro které byla zadaná hodnota výčtu nakonfigurována jako vrácená hodnota. Tato funkce vrací *logickou* hodnotu **False**, když nejsou nakonfigurována žádná pravidla pro vrácení poskytnuté hodnoty výčtu.

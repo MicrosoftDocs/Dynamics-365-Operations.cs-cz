@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347109"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -56,7 +56,7 @@ Je možné naplánovat pouze pracovní příkazy se stavem životního cyklu pra
 
 *Příklad:* v níže uvedeném obrázku bude vzorec vložený do pole **Očekávaný začátek** generovat pracovní příkaz pro všechny pracovní příkazy s očekávaným počátečním datem týdne od nynějška a později. Tento vzorec může být užitečný, když provádíte plánování pracovních příkazů průběžně, ale chcete mít jistotu, že pracovní příkazy naplánované pro následující 5-6 dnů nebudou přeplánovány.
 
-![Obrázek č. 1](media/03-work-order-scheduling.png)
+![Obrázek č. 1.](media/03-work-order-scheduling.png)
 
 Typ pracovního příkazu vztahující se k pracovním objednávkám může nastavovat plánování jednoho pracovníka údržby (**Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Typ pracovních příkazů** >  přepínací tlačítko **Jeden pracovník údržby** nastavené na hodnotu „Ano“). To znamená, že pokud je typ pracovního příkazu použit v rámci pracovního příkazu, bude přepínací tlačítko **Jeden pracovník údržby** nastaveno na „Ano“ na stránce s podrobnostmi **Všechny pracovní příkazy** > zobrazení **Záhlaví** > pevná záložka **Plánovat**. Při plánování pracovních příkazů budou všechny úlohy pracovních příkazů vytvořené v daném pracovním příkazu následně naplánovány na stejného pracovníka údržby. V případě potřeby můžete upravit výběr pomocí přepínacího tlačítka **Jeden pracovník údržby** ve volbě **Všechny pracovní příkazy** tak, aby bylo možné plánovat několik pracovníků nebo jednoho pracovníka na úlohy pracovních příkazů.
 

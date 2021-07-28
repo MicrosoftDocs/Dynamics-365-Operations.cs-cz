@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023075"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348902"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Nastavení období vyrovnání srážkové daně pro typ daně TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak nastavit období vypořádání pro období vypořá
 
 1. Přejděte na **Daň \> Nepřímé daně \> Srážková daň \> Období vypořádání srážkové daně**.
 
-    [![Stránka období vyrovnání srážkové daně](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Stránka období vyrovnání srážkové daně.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. V poli **Typ daně** vyberte **TDS** a nastavte období vypořádání srážkové daně pro typ daně TDS.
 3. Volbou možnosti **Nová položka** vytvořte řádek.
@@ -47,6 +47,6 @@ Toto téma vysvětluje, jak nastavit období vypořádání pro období vypořá
     > [!NOTE]
     > Chcete-li spustit proces periodického vypořádání TDS, přejděte na **Hlavní kniha \> Pefiodické \> Srážková daň \> Platba srážkové daně**.
 
-    [![Stránka Platba srážkové daně](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Stránka Platba srážkové daně.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Zavřete stránku.

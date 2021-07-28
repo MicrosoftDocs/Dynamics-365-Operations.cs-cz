@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893949"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351715"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Import aktualizovaných verzí konfigurací ER
 
@@ -41,11 +41,11 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Import aktualizovaných verzí konfigurací**.
 
-    ![Stránka konfigurací lokalizace](./media/er-download-updated-versions-global-repo1.png)
+    ![Stránka konfigurací lokalizace.](./media/er-download-updated-versions-global-repo1.png)
 
 4. V dialogovém okně **Import aktualizovaných verzí konfigurací elektronického výkaznictví** vyberte v poli **Režim spouštění** možnost **Zobrazit pouze dostupné aktualizace**. Pak vyberte **OK**. 
 
-    ![Pole Režim spuštění s hodnotou Zobrazit pouze dostupné aktualizace](./media/er-download-updated-versions-global-repo2.png)
+    ![Pole Režim spuštění s hodnotou Zobrazit pouze dostupné aktualizace.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Zkontrolujte zprávy, které obdržíte. Tyto zprávy uvádějí následující informace o konfiguracích ER v aktuální instanci systému Finance a o tom, jak srovnávají s obsahem globálního úložiště:
 
@@ -72,14 +72,14 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 4. V dialogovém okně **Import aktualizovaných verzí konfigurací elektronického výkaznictví** vyberte v poli **Režim spouštění** možnost **Importovat nejnovější aktualizace**. Provede se import nejnovějších verzí konfigurací ER z globálního úložiště do aktuální instance systému Finance.
 5. Chcete-li naplánovat dávkovou úlohu importu, nastavte na záložce s náhledem **Spustit na pozadí** u možnosti **Dávkové zpracování** hodnotu **Ano**. Pokud chcete import opakovat pravidelně, nakonfigurujte požadované opakování.
 
-    ![Pole Režim spouštění nastavené na Import nejnovějších aktualizací](./media/er-download-updated-versions-global-repo5.png)
+    ![Pole Režim spouštění nastavené na Import nejnovějších aktualizací.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Vyberte **OK**.
 7. Chcete-li zjistit, jaké verze konfigurací byly importovány, postupujte takto:
 
     - Pokud import spustíte interaktivně místo použití dávkové úlohy, zkontrolujte zprávy, které obdržíte.
 
-        ![Zprávy přijaté během interaktivního importování](./media/er-download-updated-versions-global-repo6.png)
+        ![Zprávy přijaté během interaktivního importování.](./media/er-download-updated-versions-global-repo6.png)
 
     - Pokud spouštíte import v dávkovém režimu, postupujte takto:
 
@@ -87,7 +87,7 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
         2. Vyhledejte a vyberte úlohu **Import aktualizací verzí konfigurací elektronického výkaznictví** a poté v podokně Akce vyberte na kartě **Dávková úloha** možnost **Historie dávkových úloh**. Zobrazí se historie úloh.
         3. Na stránce **Historie dávkových úloh** vyberte možnost **Protokol**. Poté v obdržené zprávě klikněte na odkaz **Podrobnosti zprávy**. Zobrazí se protokol úlohy.
 
-        ![Protokol úlohy](./media/er-download-updated-versions-global-repo7.png)
+        ![Protokol úlohy.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Nedoporučujeme plánovat opakovanou dávkovou úlohu tak, aby importovala aktualizované verze konfigurací ER přímo z globálního úložiště do produkčního prostředí, protože importované verze budou okamžitě k dispozici k použití. Místo toho tímto postupem přeneste verze konfigurací ER do prostředí sandbox. Poté je můžete vyhodnotit v prostředí sandbox a teprve následně nasadit do produkčního prostředí.

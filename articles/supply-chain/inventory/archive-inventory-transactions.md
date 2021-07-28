@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021260"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345517"
 ---
 # <a name="archive-inventory-transactions"></a>Archivace skladových transakcí
 
@@ -64,7 +64,7 @@ Chcete-li archivovat skladové transakce, postupujte takto.
 
     Zobrazí se stránka **Archivace skladových transakcí** se seznamem archivovaných záznamů procesu.
 
-    ![Stránka Archivace skladových transakcí](media/archive-inventory-empty.png "Stránka Archivace skladových transakcí")
+    ![Stránka Archivace skladových transakcí.](media/archive-inventory-empty.png "Stránka Archivace skladových transakcí")
 
 1. V podokně akcí vyberte příkaz **Archivace skladových transakcí** pro vytvoření archivu skladových transakcí.
 1. V dialogovém okně **Archivace skladových transakcí** na záložce **Parametry** nastavte následující pole:
@@ -72,7 +72,7 @@ Chcete-li archivovat skladové transakce, postupujte takto.
     - **Od data v uzavřeném účetním období** - Vyberte nejstarší datum transakce, které chcete zahrnout do archivu.
     - **Do data v uzavřeném účetním období** - Vyberte nejnovější datum transakce, které chcete zahrnout do archivu.
 
-    ![Dialogové okno Archivace skladových transakcí](media/archive-inventory-dates.png "Dialogové okno Archivace skladových transakcí")
+    ![Dialogové okno Archivace skladových transakcí.](media/archive-inventory-dates.png "Dialogové okno Archivace skladových transakcí")
 
     > [!NOTE]
     > Vybrat bude možné pouze období, která splňují [předpoklady](#prerequisites).
@@ -87,7 +87,7 @@ Chcete-li archivovat skladové transakce, postupujte takto.
 
 Stránka **Archivace skladových transakcí** zobrazuje vaši úplnou historii archivace. Každý řádek v mřížce zobrazuje informace, jako je datum vytvoření archivu, jméno uživatele, který jej vytvořil, a jeho stav.
 
-![Historie archivace na stránce Archivace skladových transakcí](media/archive-inventory-full.png "Historie archivace na stránce Archivace skladových transakcí")
+![Historie archivace na stránce Archivace skladových transakcí.](media/archive-inventory-full.png "Historie archivace na stránce Archivace skladových transakcí")
 
 Chcete-li filtrovat archivy zobrazené v mřížce, vyberte v rozevíracím seznamu v horní části stránky jednu z následujících hodnot:
 
@@ -109,7 +109,7 @@ Panel nástrojů nad mřížkou poskytuje následující tlačítka, která mů�
 
 - **Archivované transakce** – Zobrazí všechny podrobnosti o vybraném archivu. Stránka **Archivované transakce**, která se zobrazí, ukazuje všechny transakce v archivu.
 
-    ![Stránka archivovaných transakcí](media/archive-inventory-transactions.png "Stránka archivovaných transakcí")
+    ![Stránka archivovaných transakcí.](media/archive-inventory-transactions.png "Stránka archivovaných transakcí")
 
     Chcete-li zobrazit více informací o konkrétní transakci na stránce **Archivované transakce**, vyberte ji v mřížce a poté v podokně akcí vyberte **Detaily archivované transakce**. Stránka **Detaily archivované transakce**, která se zobrazí, ukazuje například účtování do hlavní knihy, související odkazy na dílčí hlavní knihu a finanční dimenze.
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839973"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344751"
 ---
 # <a name="electronic-invoicing-overview"></a>Přehled elektronické fakturace
 
@@ -98,7 +100,7 @@ Když je Elektronická fakturace nainstalována z LCS a požadované nastavení 
 
 Následující obrázek ukazuje, jak data proudí do a z Elektronické fakturace.
 
-![Tok dat pro Elektronickou fakturaci](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Tok dat pro Elektronickou fakturaci.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 Povolení a používání Elektronické fakturace může vyžadovat odesílání omezených dat, která zahrnují daňové identifikační číslo organizace. To bude předáno agenturám třetích stran oprávněným daňovými úřady pro účely zasílání elektronických faktur v předdefinovaných formátech požadovaných pro integraci s webovými službami těchto vlád. Data importovaná z těchto externích systémů do této online služby Dynamics 365 podléhají našim [Prohlášením o ochraně osobních informací](https://go.microsoft.com/fwlink/?LinkId=512132). Další informace najdete v oddílech Oznámení o ochraně osobních údajů v dokumentaci funkcí pro jednotlivé země.

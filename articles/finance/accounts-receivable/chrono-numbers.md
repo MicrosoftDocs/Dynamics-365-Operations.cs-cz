@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838854"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350065"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologické číslování dokumentů a dokladů
 
@@ -69,7 +69,7 @@ Chcete-li definovat číselné řady, přejděte na **Správa organizace** > **�
 
 Zadejte společnost pro každou číselnou řadu. Segmenty číselných sekvencí musí být definovány tak, aby tvořily chronologické pořadí pro období. Názvy segmentů mohou například obsahovat speciální předponu, která identifikuje konkrétní období.
 
-![Nastavení číselných řad](media/chrono-num-sequence.jpg)
+![Nastavení číselných řad.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Konfigurace skupin číselných řad
 
@@ -77,7 +77,7 @@ Chcete-li konfigurovat skupiny číselných řad, přejděte na **Pohledávky** 
 
 Pro každou skupinu v části **Odkaz** vyberte jeden z podporovaných odkazů na dokumenty a v části **Kód číselné řady** zadejte číselnou řadu, která byla dříve vytvořena pro příslušné období.
 
-![Nastavení skupiny číselných řad](media/chrono-num-sequence-group.jpg)
+![Nastavení skupiny číselných řad.](media/chrono-num-sequence-group.jpg)
 
 Podobně nakonfigurujte skupiny číselných řad v modulech **Pohledávky** a **Řízení projektů a účetnictví**.
 
@@ -85,7 +85,7 @@ Podobně nakonfigurujte skupiny číselných řad v modulech **Pohledávky** a *
 
 Chcete-li nakonfigurovat chronologii skupin číselných řad, přejděte na **Správa organizace** > **Číselné řady** > **Skupiny chronologických číselných řad**. Definujte podmínky použitelnosti pro skupiny číselných sekvencí.
 
-![Nastavení chronologických čísel](media/chrono-num-sequence-group-period.jpg)
+![Nastavení chronologických čísel.](media/chrono-num-sequence-group-period.jpg)
 
 | Pole            | popis                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

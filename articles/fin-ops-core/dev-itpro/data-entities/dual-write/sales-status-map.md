@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750707"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346563"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Nastavení mapování pro sloupce stavu prodejní objednávky
 
@@ -100,7 +100,7 @@ Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následující
 1. Přejděte v prohlížeči na `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Nahraďte **\<test-name\>** odkazem vaší společnosti na aplikaci Prodej.
 2. Na otevřené stránce najděte **organizationid** a poznamenejte si hodnotu.
 
-    ![Nalezení organizationid](media/sales-map-orgid.png)
+    ![Nalezení organizationid.](media/sales-map-orgid.png)
 
 3. V aplikaci Sales otevřete konzolu prohlížeče a spusťte následující skript. Použijte hodnotu **organizationid** z kroku 2.
 
@@ -119,33 +119,33 @@ Chcete-li povolit atribut **IsSOPIntegrationEnabled**, postupujte následující
     );
     ```
 
-    ![Kód JavaScript v konzole prohlížeče](media/sales-map-script.png)
+    ![Kód JavaScript v konzole prohlížeče.](media/sales-map-script.png)
 
 4. Ověřte, zda je **IsSOPIntegrationEnabled** nastaveno na **true**. Použijte URL adresu z kroku 1 pro ověření hodnoty.
 
-    ![IsSOPIntegrationEnabled nastaveno na true](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled nastaveno na true.](media/sales-map-integration-enabled.png)
 
 Chcete-li povolit atribut **isIntegrationUser**, postupujte následujícím způsobem.
 
 1. V aplikaci Sales přejděte na **Nastavení \> Přizpůsobení \> Přizpůsobit systém**, vyberte **Tabulka uživatele** a poté otevřete **Formulář \> Uživatel**.
 
-    ![Otevření formuláře uživatele](media/sales-map-user.png)
+    ![Otevření formuláře uživatele.](media/sales-map-user.png)
 
 2. V prohlížeči polí najděte **Uživatelský režim integrace** a dvojitým kliknutím ho přidejte do formuláře. Uložte změnu.
 
-    ![Přidání sloupce uživatelského režimu integrace do formuláře](media/sales-map-field-explorer.png)
+    ![Přidání sloupce uživatelského režimu integrace do formuláře.](media/sales-map-field-explorer.png)
 
 3. V aplikaci Sales přejděte na **Nastavení \> Zabezpečeno \> Uživatelé** a změňte zobrazení z **Povolení uživatelé** na **Uživatelé aplikace**.
 
-    ![Změna zobrazení z povolených uživatelů na uživatele aplikace](media/sales-map-enabled-users.png)
+    ![Změna zobrazení z povolených uživatelů na uživatele aplikace.](media/sales-map-enabled-users.png)
 
 4. Vyberte dvě položky pro **DualWrite IntegrationUser**.
 
-    ![Seznam uživatelů aplikací](media/sales-map-user-mode.png)
+    ![Seznam uživatelů aplikací.](media/sales-map-user-mode.png)
 
 5. Změňte hodnotu sloupce **Uživatelský režim integrace** na **Ano**.
 
-    ![Změna hodnoty sloupce uživatelského režimu integrace](media/sales-map-user-mode-yes.png)
+    ![Změna hodnoty sloupce uživatelského režimu integrace.](media/sales-map-user-mode-yes.png)
 
 Vaše prodejní objednávky jsou nyní mapovány.
 

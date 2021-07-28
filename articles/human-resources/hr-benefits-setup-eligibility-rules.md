@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093913"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351650"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace pravidel a možností nároků
 
@@ -137,20 +137,20 @@ Můžete definovat pravidla, která mají více kritérií. Když definujete ví
 
 Například výše uvedené pravidlo **Aktivní zaměstnanci** se skládá z následujících kritérií. Aby měl zaměstnanec nárok na základě pravidla **Aktivní zaměstnanci**, musí být zaměstnanec zaměstnán v právnické osobě USMF *a* mít typ pozice na plný úvazek.  
 
-![Kritéria v rámci pravidla nároků](media/CriteriaWithinAnEligibilityRule.png) 
+![Kritéria v rámci pravidla nároků.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Více podmínek v rámci kritérií
 
 Pravidla lze dále rozšířit tak, aby používala více podmínek v rámci jednoho kritéria. Zaměstnanec musí splňovat alespoň jednu podmínku, aby měl nárok. Chcete-li navázat na výše uvedený příklad, pravidlo **Aktivní zaměstnanci** lze dále rozšířit o zaměstnance, kteří jsou také zaměstnanci na částečný úvazek. Výsledkem je, že zaměstnanec musí být zaměstnancem v USMF *a* zaměstnanec na plný nebo částečný úvazek.  
 
-![Více podmínek v rámci kritérií](media/MultipleConditionsWithinCriteria.png) 
+![Více podmínek v rámci kritérií.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Podmínky nároků v rámci vlastního kritéria pole 
 Podobně jako výše, vlastní pole lze použít při vytváření pravidel nároků a pracovat stejným způsobem. Můžete například nabídnout náhradu za internet zaměstnancům ve Fargu a Kodani, kteří pracují z domova, protože v těchto lokalitách jsou náklady na internet vyšší. Chcete-li to provést, vytvořte dvě vlastní pole: **Umístění kanceláře** (výběr) a **Práce z domova** (zaškrtávací políčko). Poté vytvořte pravidlo s názvem **Zaměstnanci WFH**. Kritériem pravidla je **Umístění kanceláře = Fargo** nebo **Kodaň** *a* **Práce z domova = Ano**.
 
 Je třeba nastavit vlastní pravidla nároků, jak je uvedeno na následujícím obrázku. 
 
-![Podmínky nároků v rámci vlastního kritéria pole](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Podmínky nároků v rámci vlastního kritéria pole.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Konfigurace svazků
 

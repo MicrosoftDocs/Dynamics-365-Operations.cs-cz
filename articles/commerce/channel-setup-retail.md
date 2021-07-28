@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346051"
 ---
 # <a name="set-up-a-retail-channel"></a>Nastavení maloobchodního kanálu
 
@@ -50,11 +50,11 @@ Před vytvořením maloobchodního kanálu se ujistěte, že splňujete [předpo
 
 V následujícím obrázku je znázorněno vytvoření nového maloobchodního kanálu.
 
-![Nový maloobchodní kanál](media/channel-setup-retail-1.png)
+![Nový maloobchodní kanál.](media/channel-setup-retail-1.png)
 
 Následující obrázek znázorňuje příklad maloobchodního kanálu.
 
-![Příklad maloobchodního kanálu](media/channel-setup-retail-2.png)
+![Příklad maloobchodního kanálu.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Další nastavení
 
@@ -64,7 +64,7 @@ Kromě toho viz [Rozložení obrazovky pokladního místa (POS)](pos-screen-layo
 
 Následující obrázek znázorňuje příklad konfigurace nastavení maloobchodního kanálu.
 
-![Příklad konfigurace maloobchodní sítě](media/channel-setup-retail-3.png)
+![Příklad konfigurace maloobchodní sítě.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Nastavení dodatečného kanálu
 
@@ -74,7 +74,7 @@ Další úkoly požadované pro nastavení online kanálu zahrnují nastavení z
 
 Následující obrázek ukazuje další možnosti nastavení maloobchodních kanálů na kartě **Nastavení**.
 
-![Nastavení kanálu](media/channel-setup-retail-4.png)
+![Nastavení kanálu.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
@@ -89,7 +89,7 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto ka
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby](media/channel-setup-retail-5.png)
+![Příklad způsobů platby.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Nastavení výkazu hotovosti
 
@@ -98,7 +98,7 @@ Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
 Na následujícím obrázku je znázorněn příklad výkazu hotovosti.
 
-![Nastavení výkazu hotovosti](media/channel-setup-retail-6.png)
+![Nastavení výkazu hotovosti.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
@@ -112,7 +112,7 @@ Chcete-li změnit nebo přidat způsob dodání, postupujte podle následující
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
-![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
+![Nastavit způsoby dodání.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Nastavit účet příjmů/výdajů
 
@@ -129,7 +129,7 @@ Chcete-li nastavit účet příjmů/výdajů, postupujte následujícím způsob
 
 Následující obrázek znázorňuje příklad účtu příjmů/výdajů.
 
-![Nastavit účty příjmů/výdajů](media/channel-setup-retail-8.png)
+![Nastavit účty příjmů/výdajů.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Nastavení sekcí
 
@@ -155,7 +155,7 @@ Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujíc�
 
 Následující obrázek znázorňuje příklad nastavení přiřazení skupiny plnění.
 
-![Nastavení Přiřazení skupiny plnění](media/channel-setup-retail-9.png)
+![Nastavení Přiřazení skupiny plnění.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Nastavit trezory
 

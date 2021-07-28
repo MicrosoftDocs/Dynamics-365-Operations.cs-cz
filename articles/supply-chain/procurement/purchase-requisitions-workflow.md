@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188166"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353461"
 ---
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
@@ -51,7 +51,7 @@ Následující obrázek znázorňuje, jak můžete nákupní požadavek odeslat 
 -   **Nákupčí**: Uživatel, který provádí kontrolu zásobování a může schválit dokument.
 -   **Manažer žadatele**: Uživatel, který provádí manažerskou kontrolu a může schválit dokument.
 
-![Proces kontroly workflowu nákupní žádanky](./media/purchreqworkflowoverview_submission.gif)  
+![Proces kontroly workflowu nákupní žádanky.](./media/purchreqworkflowoverview_submission.gif)  
 V tomto příkladu obsahuje proces workflowu pro nákupní žádanku následující kroky:
 
 1.  Pořizovatel odešle nákupní žádanku ke kontrole.
@@ -74,7 +74,7 @@ V tomto příkladu jsou v procesu workflowu zahrnuty následující role:
 -   **Manažer oddělení**: Uživatel, který provádí výdajovou kontrolu a může schválit dokument.
 -   **Manažer skupiny**: Uživatel, který provádí kontrolu podpisové autority a může schválit dokument.
 
-![Proces kontroly workflowu na řádku nákupní žádanky](./media/purchreqlineworkflowoverview.gif)  
+![Proces kontroly workflowu na řádku nákupní žádanky.](./media/purchreqlineworkflowoverview.gif)  
 V tomto příkladu obsahuje proces workflowu pro řádky nákupní žádanky následující kroky:
 
 1.  Pořizovatel odešle nákupní žádanku ke kontrole. Každý řádek je směrován kontrolorovi, který je nakonfigurován pro jeho příjem v rámci procesu workflowu.

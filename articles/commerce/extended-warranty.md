@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792456"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353821"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Vytváření a konfigurace rozšířených záruk
 
@@ -81,7 +81,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
 
     Například pro dvouletou záruku nastavte hodnotu pole **Jednotka času** na **Rok(y)** a **Doba** na **2**. Případně nastavte hodnotu v poli **Jednotka času** na **Měsíc(e)** a hodnotu v poli **Doba** na **24**, jak ukazuje následující obrázek.
 
-    ![Stránka s podrobnostmi o produktu pro záruční zboží](./media/ew-time-properties.png)
+    ![Stránka s podrobnostmi o produktu pro záruční zboží.](./media/ew-time-properties.png)
 
 1. Kliknutím na tlačítko **Uložit** uložte záruční zboží.
 1. Vydejte záruční produkt společnosti, aby mohl být prodán. Další informace získáte v tématu [Nastavení maloobchodních produktů](set-up-retail-products.md)
@@ -94,7 +94,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
 
     Například následující obrázek ukazuje pole **Základ cenového rozpětí** nastavené na hodnotu **Základní cena**, pole **Dolní limit** nastavené na $500 a pole **Horní limit** nastavené na $1000.
     
-    ![Stránka s podrobnostmi o vydané produktu pro záruční zboží](./media/ew-release-product-details.png)
+    ![Stránka s podrobnostmi o vydané produktu pro záruční zboží.](./media/ew-release-product-details.png)
 
 1. Zařaďte záruční zboží do kanálu, kde bude prodáváno. Další informace naleznete v tématu [Nastavení sortimentu](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Dvě operace POS umožňují prodejním partnerům prodávat během pracovního 
 
 Následující obrázek ukazuje příklad stránky terminálu POS s výzvou k přidání záručního zboží u zboží spadajícího do záruky.
 
-![Příklad výzvy k přidání záručního zboží pro aktuální nákup](./media/ew-sell-warranty.png)
+![Příklad výzvy k přidání záručního zboží pro aktuální nákup.](./media/ew-sell-warranty.png)
 
 Následující obrázek ukazuje příklad funkce pro přidání záručního zboží u zboží spadajícího do záruky, které bylo přidáno předtím.
 
-![Příklad funkce pro přidání záručního zboží pro dříve prodané zboží spadající do záruky](./media/ew-add-warranty-existing.png)
+![Příklad funkce pro přidání záručního zboží pro dříve prodané zboží spadající do záruky.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Zpracovat transakce záruky
 

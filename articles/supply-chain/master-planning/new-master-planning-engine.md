@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907684"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348750"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrace na optimalizaci plánování pro hlavní plánování
 
@@ -65,7 +65,7 @@ Poté, co budou k dispozici požadované funkce, poskytne Microsoft období odkl
 
 Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Vývojový diagram výjimek](media/exception-diagram.png "Vývojový diagram výjimek")
+![Vývojový diagram výjimek.](media/exception-diagram.png "Vývojový diagram výjimek")
 
 > [!NOTE]
 > Výjimku můžete požadovat pouze pro klienty, kteří aktuálně zahrnují nebo budou zahrnovat provozní prostředí, nikoli pouze pro klienty s izolovanými prostředími. Pokud potřebujete zakázat chybu výjimky optimalizace plánování v sandboxovém prostředí infrastruktury jako služby (IaaS), spusťte dotaz SQL uvedený v části [Sandboxová prostředí](#faq-sandbox).

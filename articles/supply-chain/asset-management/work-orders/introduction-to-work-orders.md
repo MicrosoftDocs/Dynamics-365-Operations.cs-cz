@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0f33dad05fc9a17fc673525ac5ab79f9cf0ab08
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f66786d634bc08f07d1739af5e49c902640a469a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821626"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352779"
 ---
 # <a name="introduction-to-work-orders"></a>Úvod do pracovních příkazů
 
@@ -51,7 +51,7 @@ Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všec
 
 Na následujícím obrázku je uveden stránky se seznamem **Všechny pracovní příkazy**.
 
-![Obrázek č. 1](media/01-work-orders.png)
+![Obrázek č. 1.](media/01-work-orders.png)
 
 Chcete-li zobrazit seznam pouze aktivních pracovních příkazů, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Aktivní pracovní příkazy**. 
 
@@ -69,7 +69,7 @@ Zde je několik způsobů, jak můžete použít stránku **Všechny pracovní p
 
 Na následujícím obrázku je uveden příklad podrobného zobrazení **Všechny pracovní příkazy**.
 
-![Obrázek č. 2](media/02-work-orders.png)
+![Obrázek č. 2.](media/02-work-orders.png)
 
 
 Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabulka stručně popisuje tlačítka, která souvisejí se správou majetku:

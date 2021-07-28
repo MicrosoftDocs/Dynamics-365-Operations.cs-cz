@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 64b03faa76e16a4e587f26ec2fb9bf1e34d226df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186389"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355645"
 ---
 # <a name="customer-payment-predictions-preview"></a>Předpovědi plateb odběratelů (Preview)
 
@@ -53,11 +55,11 @@ Pro každou otevřenou fakturu funkce přiřadí tři pravděpodobnosti platby:
 
 Tato funkce také poskytuje souhrnný pohled na očekávané platby.
 
-[![Agregované zobrazení předpovědí platby](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Agregované zobrazení předpovědí platby.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Každá faktura má přiřazenou pravděpodobnost platby včas. Faktury, jejichž pravděpodobnost včasné úhrady je nižší než 50 %, budou označeny červeným kroužkem, což znamená, že mohou vyžadovat pozornost inkasního agenta.
 
-[![Seznam pravděpodobností platby](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Seznam pravděpodobností platby.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Funkce Zákaznické předpovědi plateb také poskytuje kontextové informace vysvětlující předpovědi. Tyto informace zahrnují hlavní faktory, které ovlivnily predikci, aktuální stav obchodu se zákazníkem a podrobnosti o historickém platebním chování zákazníka.
 

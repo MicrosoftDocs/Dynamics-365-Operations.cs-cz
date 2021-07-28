@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186557"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355613"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Použití předpovědí plateb zákazníka (náhled)
 
@@ -38,13 +38,13 @@ Pracovní prostor **Správa kreditu a kolekcí zákazníka** obsahuje dvě nové
 - Dlaždice **Predikce platby na transakci** zobrazuje počet otevřených transakcí zákazníka, u nichž je pravděpodobnost platby menší než 50 procent v intervalu **Včas**. Tuto dlaždici můžete vybrat a otevřít tak stránku se seznamem **Předpovědi plateb za transakci**.
 - Dlaždice **Zákazníci s předpokládanými vysokými pozdními zůstatky** zobrazuje počet zákazníků, u nichž se předpokládá, že více než polovina (50 procent) z celkového zůstatku bude vyplacena pozdě nebo velmi pozdě. Tuto dlaždici můžete vybrat a otevřít tak stránku se seznamem **Předpovědi plateb na zákazníka**.
 
-[![Správa pracovního prostoru kreditu a kolekcí zákazníka](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Správa pracovního prostoru kreditu a kolekcí zákazníka.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Stránka se seznamem předpovědí plateb na transakci
 
 Na stránce se seznamem **Předpovědi plateb za transakci** můžete zobrazit pravděpodobnost platby za otevřené transakce v intervalech **Včas**, **Pozdě** a **Velmi pozdě**. Pro každou transakci v mřížce sloupec **Pravděpodobnost dodání včas** zobrazuje pravděpodobnost, že faktura bude zaplacena v den splatnosti nebo před datem splatnosti. Pokud je pravděpodobnost včasné platby menší než 50 procent, vedle procenta ve sloupci **Pravděpodobnost včastné platby** se zobrazí červený kroužek označující riziko opožděné platby.
 
-[![Stránka se seznamem předpovědi plateb na transakci](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Stránka se seznamem předpovědi plateb na transakci.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 Podokno **Související informace** na pravé straně stránky zobrazuje další podrobnosti o předpovědích:
 
@@ -54,13 +54,13 @@ Podokno **Související informace** na pravé straně stránky zobrazuje další
 
 Údaje v části **Hlavní faktory** a na pevné záložce **Customer Insights** a **Historie zákazníků** pomáhá vysvětlit platební předpovědi. Může to pomoci zvýšit vaši důvěru v účinnost předpovědí.
 
-[![Grafické ukazatele pro předpovědi plateb v podokně Související informace](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafické ukazatele pro předpovědi plateb v podokně Související informace.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Předpověď platby na stránce se seznamem zákazníků
 
 Stránka se seznamem **předpověď platby na zákazníka** zobrazuje celkový otevřený zůstatek a částku, která má být podle očekávání vyplacena v intervalech **Včas**, **Pozdě** a **Velmi pozdě**.
 
-[![Předpovědi platby na stránce se seznamem zákazníků](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Předpovědi platby na stránce se seznamem zákazníků.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Částka platby v každém bloku se vypočítá jako součet váženého průměru zůstatku transakce. Tato částka se počítá na základě pravděpodobnosti platby v každém segmentu.
 
@@ -92,11 +92,11 @@ V tomto případě se platby promítají pro každý segment následujícím zp�
 
 Přesnost předpovědí plateb můžete zobrazit na stránce **Úvěr a inkasa \> Nastavení \> Finanční přehledy \> Parametry finančního přehledu**. Na kartě **Statistiky plateb zákazníků** v části **Predikční model** je ukázána přesnost modelu předpovědi v procentech.
 
-[![Přesnost předpovědí platby](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Přesnost předpovědí platby.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Pokud nejste spokojeni s přesností, vyberte odkaz **Zlepšit přesnost modelu** pro otevření rozšíření AI Builder. V prostředí rozšíření AI Builder můžete vybrat nebo zrušit výběr polí, dokud nevyberete pole, která jsou podle vás nejdůležitější pro přesnou předpověď pravděpodobnosti platby. Po dokončení můžete snadno proškolit model předpovědi a publikovat změny. Nově trénovaný model předpovědi se automaticky spustí a vygeneruje předpovědi v Dynamics 365 Finance.
 
-[![Zkušenosti s rozšířením AI Builder](./media/ai-builder.png)](./media/ai-builder.png)
+[![Zkušenosti s rozšířením AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Podrobnosti uvolnění
 

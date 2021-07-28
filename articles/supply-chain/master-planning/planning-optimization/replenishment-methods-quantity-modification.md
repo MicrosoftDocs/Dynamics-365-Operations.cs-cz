@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261689"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347751"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Metody doplnění a modifikace množství
 
@@ -34,11 +34,11 @@ V optimalizaci plánování lze použít následující kódy pokrytí:
 
 - **Období** - metoda doplnění kombinuje všechny požadavky na období do jedné objednávky pro daný produkt. Zakázka bude naplánována pro první den období a její množství bude plnit čisté požadavky během stanoveného období. Toto období začíná první poptávkou produktu a pokrývá určenou délku v čase. Další období bude začínat následujícími požadavky produktu. Kód pokrytí *Období* se často používá pro nepředvídatelné čerpání zásob, produkty ovlivněné sezónou nebo produkty s vysokou cenou. Následující obrázek znázorňuje příklad.
 
-    ![Příklad použití kódu pokrytí období](./media/coverage-code-period.png "Příklad použití kódu pokrytí období")
+    ![Příklad použití kódu pokrytí období.](./media/coverage-code-period.png "Příklad použití kódu pokrytí období")
 
 - **Požadavek** – v metodě doplňování systém vytváří plánovaný nákup, převod nebo výrobní zakázku podle požadavků na produkt. Tato metoda se používá pro drahé výrobky, které mají nestálou poptávku. Kód pokrytí *Požadavek* se často používá pro konfigurovatelné produkty nebo scénáře na objednávku. Následující obrázek znázorňuje příklad.
 
-    ![Příklad použití kódu pokrytí požadavku](./media/coverage-code-requirement.png "Příklad použití kódu pokrytí požadavku")
+    ![Příklad použití kódu pokrytí požadavku.](./media/coverage-code-requirement.png "Příklad použití kódu pokrytí požadavku")
 
 - **Min./Max.** - Metoda doplňování je založena na úrovni zásob. Definuje doplnění zásob až na určitou úroveň, když je předpokládaná úroveň po ruce pod určitou prahovou hodnotou. Množství doplnění bude rozdíl mezi maximální úrovní a předpokládanou úrovní zásob na skladě. *Min./Max.* kód pokrytí se často používá k předvídatelnému čerpání zásob, nejprodávanějším produktům nebo levnějším výrobkům. Následující obrázek znázorňuje příklad.
 

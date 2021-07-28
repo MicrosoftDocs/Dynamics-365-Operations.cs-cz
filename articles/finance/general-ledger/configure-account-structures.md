@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22123eb7a46910a2bc68a85b57271cfa2f3eb41e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8d4d3ebed7cf3f006672454e086fc0f918f2418d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193799"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360657"
 ---
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
@@ -65,7 +65,7 @@ Oddíl **Segmenty** a **povolené hodnoty podrobnosti** obsahuje mřížku jako 
 
 Oddíl **podrobnosti povolené hodnoty** vás provede kritérii vytváření pomocí **operátorů**, například začíná na, je mezi, zahrnuje a mnoha dalšími.
 
-[![Povolit hodnoty](./media/account.png)](./media/account.png) 
+[![Povolit hodnoty.](./media/account.png)](./media/account.png) 
 
 Pokud neexistují další možné hodnoty pro výběr v souladu s nastavením účetní struktury, budou povolené hodnoty se nastaví na výchozí na stránce zadání deníku nebo rozúčtování.
 

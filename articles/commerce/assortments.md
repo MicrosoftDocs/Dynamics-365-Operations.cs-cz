@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797274"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348700"
 ---
 # <a name="assortment-management"></a>Správa sortimentu
 
@@ -35,7 +35,7 @@ Celková kombinace produktu kanálu je určena publikovanými sortimenty, které
 
 V následujícím příkladu je nakonfigurován jedinečný sortiment pro každý obchod. V takovém případě je pouze produkt 1 k dispozici v obchodě 1 a pouze produkt 2 je k dispozici v obchodě 2.
 
-![Každý produkt je k dispozici v jednom obchodě](./media/Managing-assortments-figure1.png)
+![Každý produkt je k dispozici v jednom obchodě.](./media/Managing-assortments-figure1.png)
 
 Chcete-li, aby byl produkt 2 k dispozici v obchodě 1, lze přidat produkt do sortimentu 1.
 
@@ -49,13 +49,13 @@ Případně můžete přidat obchod 1 do sortimentu 2.
 
 V situacích, kdy více kanálů sdílejí stejné sortimenty produktů, můžete nakonfigurovat sortimenty pomocí hierarchie organizace sortimentu aplikace Commerce. Při přidávání uzlů z této hierarchie budou zahrnuty všechny kanály v tomto uzlu a jeho podřízené uzly.
 
-![Organizační hierarchie](./media/Managing-assortments-figure4.png)
+![Organizační hierarchie.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktu
 
 Stejně tak na straně produktu můžete zahrnout skupiny produktů pomocí hierarchie kategorií produktu. Můžete konfigurovat sortimenty zahrnutím jednoho nebo více uzlů hierarchie kategorií. V tomto případě bude sortiment obsahovat všechny produkty v tomto uzlu kategorie a jeho podřízených uzlech.
 
-![Kategorie produktu](./media/Managing-assortments-figure5.png)
+![Kategorie produktu.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Vyloučené produkty nebo kategorie
 
@@ -64,7 +64,7 @@ Kromě zahrnutí produktů a kategorií do sortimentů můžete použít možnos
 > [!NOTE]
 > Pokud je produkt současně zahrnut a vyloučen v jednom nebo více sortimentech podle svojí podstatou, produkt bude vždy považován za vyloučený.
 
-![Vyloučené produkty](./media/Managing-assortments-figure6.png)
+![Vyloučené produkty.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globální a uvolněné produkty
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085493"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351145"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -62,7 +62,7 @@ Pokud nastavíte možnost **Dávkové zpracování** na **Ano**, formát ER se s
 > [!NOTE]
 > Popis úlohy vás informuje o průběhu mapování formátu elektronického výkaznictví. Zahrnuje také název provedené komponenty ER.
 
-[![Spuštění formátu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![Spuštění formátu ER.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 Informace o této úloze najdete na několika místech:
 
@@ -74,17 +74,17 @@ Informace o této úloze najdete na několika místech:
 
 - Na stránce **Úlohy elektronického výkaznictví** vyberte **Zobrazit souboru** k zobrazení seznamu případných chyb a varování generovaných v průběhu provádění úlohy.
 
-    [![Prohlížení seznamu úloh ER](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![Prohlížení seznamu úloh ER.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Uživatelem nakonfigurované chování
 
 Na stránce **Cíl elektronického výkaznictví** můžete přepsat výchozí chování pro konfiguraci. Importované konfigurace na této stránce nejsou zobrazeny, dokud nezvolíte **Nový** a pak v poli **Odkaz** nevyberete konfiguraci, pro kterou chcete vytvořit nastavení cíle.
 
-[![Výběr konfigurace v poli Odkaz](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Výběr konfigurace v poli Odkaz.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 Po vytvoření odkazu můžete vytvořit cíl souboru pro každou výstupní komponentu **složky** nebo **souboru** odkazovaného formátu elektronického výkaznictví.
 
-[![Vytvoření cíle souboru](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Vytvoření cíle souboru.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Poté lze povolit nebo zakázat jednotlivé cíle pro cíl souboru v dialogovém okně **Nastavení cíle**. Tlačítko **Nastavení** se používá k řízení všech cílů pro vybraný cíl souboru. V dialogovém okně **Nastavení cíle** lze ovládat samostatně každý cíl nastavením možnosti **Povoleno**.
 
@@ -92,7 +92,7 @@ Ve verzích Finance **před verzí 10.0.9** můžete vytvořit **jeden cíl soub
 
 Pomocí této funkce můžete například konfigurovat cíle souborů pro součást souboru, která se používá ke generování odchozího dokumentu ve formátu aplikace Excel. Jeden cíl ([archiv](er-destination-type-archive.md)) lze nakonfigurovat tak, aby ukládal původní soubor aplikace Excel do archivu úloh elektronického výkaznictví, a další místo určení ([E-mail](er-destination-type-email.md)) lze nakonfigurovat tak, aby současně [převedl](#OutputConversionToPDF) soubor Excel do formátu PDF a odeslal soubor PDF e-mailem.
 
-[![Konfigurace více cílů pro jeden prvek formátu](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Konfigurace více cílů pro jeden prvek formátu.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 Při spuštění formátu ER se vždy spustí všechny cíle, které byly nakonfigurovány pro komponenty formátu. Kromě toho v aplikaci Finance **verze 10.0.17 a novější** byla vylepšena funkčnost cílů ER a nyní vám umožňuje konfigurovat různé sady cílů pro jeden formát ER. Tato konfigurace označí každou sadu jako nakonfigurovanou pro konkrétní akci uživatele. Rozhraní API ER bylo [prodlouženo](er-apis-app10-0-17.md), takže lze poskytnout akci, kterou uživatel provede, spuštěním formátu ER. Poskytnutý kód akce je předán cílům ER. Můžete spustit různé cíle ve formátu ER, v závislosti na poskytnutém kódu akce. Další informace viz [Konfigurace cílů ER závislých na akci](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ Cíle můžete nastavit pouze pro konfigurace EV, které byly importovány, a u 
 
 Když konfigurujete cíle souboru pro vybraný formát, nakonfigurujete je pro celý formát.
 
-[![Odkaz na konfiguraci](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Odkaz na konfiguraci.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Zároveň můžete mít více [verzí](general-electronic-reporting.md#component-versioning) formátu, které byly importovány do aktuální instance Finance. Můžete je zobrazit, pokud vyberete odkaz **Konfigurace**, který je nabídnutý při výběru pole **Odkaz**.
 
-[![Verze konfigurace](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Verze konfigurace.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Ve výchozím nastavení jsou konfigurované cíle použity pouze při spuštění verze formátu elektronického výkaznictví, jejíž stav je buď **Dokončeno** nebo **Sdíleno**. V některých případech je však nutné použít nakonfigurované cíle při spuštění verze formátu elektronického výkaznictví. Například upravíte verzi konceptu vašeho formátu a chcete použít nakonfigurované cíle pro otestování, jak bude vygenerovaný výstup poskytnut. Chcete-li použít cíle pro formát elektronického výkaznictví při spuštění verze konceptu, postupujte podle následujících kroků.
 
@@ -128,19 +128,19 @@ Ve výchozím nastavení jsou konfigurované cíle použity pouze při spuštěn
 2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
 3. Nastavte volbu **Použít cíle pro stav konceptu** na **Ano**.
 
-[![Možnost Použít cíle pro stav konceptu](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Možnost Použít cíle pro stav konceptu.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Chcete-li použít verzi konceptu ve formátu elektronického výkaznictví, musíte odpovídajícím způsobem označit formát elektronického výkaznictví.
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
-2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
+2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
 3. Nastavte možnost **Spustit nastavení** na **Ano**.
 
-[![Možnost Spustit nastavení](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Možnost Spustit nastavení.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Po dokončení tohoto nastavení bude k dispozici možnost **Spustit koncept** pro formáty elektronického výkaznictví, které jste změnili. Tuto možnost nastavte na **Ano**, chcete-li při spuštění formátu použít verzi konceptu formátu.
 
-[![Možnost Spustit koncept](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Možnost Spustit koncept.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Zpracování selhání cíle
 
@@ -148,7 +148,7 @@ Formát elektronického výkaznictví je obvykle spuštěn v rozsahu určitého 
 
 Například konfigurujete zpracování plateb dodavatele, aby byl spuštěn formát elektronického výkaznictví **Převod kreditu ISO20022** pro generování souboru plateb a doplňkových dokumentů (například průvodní dopis a kontrolní sestava). Pokud má být platba považována za úspěšnou pouze v případě, že průvodní dopis byl úspěšně doručen e-mailem, je nutné zaškrtnout políčko **Zastavit zpracování při selhání** pro komponentu **Průvodní dopis** v příslušném cíli souboru, jak je znázorněno na následujícím obrázku. V tomto případě bude stav platby, která je vybrána ke zpracování, změněn z **Žádný** na **Odesláno** pouze v případě, že vygenerovaný dopis je úspěšně přijat pro doručení poskytovatelem e-mailu, který je konfigurován v instanci Finance.
 
-[![Konfigurace zpracování procesu pro selhání cíle souboru](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Konfigurace zpracování procesu pro selhání cíle souboru.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Pokud odškrtnete políčko **Zastavit zpracování při selhání** pro komponentu **Průvodní dopis** v cíli souboru, bude platba považována za úspěšně zpracovanou i tehdy, když nebude průvodní dopis úspěšně odeslán e-mailem. Stav platby bude změněn z **Žádný** na **Odesláno** i v případě, že průvodní dopis nelze odeslat, protože například chybí e-mailová adresa příjemce nebo odesílatele, nebo jsou adresy nesprávné.
 
@@ -160,7 +160,7 @@ Chcete-li převést výstup ve formátu Microsoft Office (Excel nebo Word) do fo
 
 Chcete-li, aby byla v aktuální instanci modulu Finance k dispozici možnost převodu PDF, otevřete pracovní prostor **Správa funkcí** a zapněte funkci **Převod odchozích dokumentů elektronického výkaznictví z formátů Microsoft Office do PDF**.
 
-[![Zapnutí funkce převodu odchozích dokumentů do PDF ve správě funkcí](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Zapnutí funkce převodu odchozích dokumentů do PDF ve správě funkcí.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Použitelnost
 
@@ -185,13 +185,13 @@ Pro převod výstupu, který neobsahuje žádná vložená písma, se používaj
 
 Chcete-li zapnout převod do PDF pro cíl souboru, zaškrtněte políčko **Převést do PDF**.
 
-[![Zapnutí převodu do PDF pro cíl souboru](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![Zapnutí převodu do PDF pro cíl souboru.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Výběr orientace stránky pro převod do PDF</a>
 
 Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete určit orientaci stránky v dokumentu PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
 
-[![Výběr orientace stránky pro převod do PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Výběr orientace stránky pro převod do PDF.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Chcete-li mít možnost vybrat orientaci stránky PDF, je nutné nainstalovat Finance verze 10.0.10 nebo novější.
@@ -222,7 +222,7 @@ Na pevné záložce **Všeobecné** v poli **Odeslat složku jako** vyberte jedn
     > [!NOTE]
     > Když vyberete **Oddělte soubory**, generovaný výstup se shromažďuje v paměti ve stavu zip. Proto maximální [limit velikosti souboru](er-compress-outbound-files.md) se použije pro výstup ZIP, když skutečná velikost souboru může překročit tento limit. Doporučujeme vybrat tuto hodnotu, pokud očekáváte, že velikost generovaného výstupu bude příliš velká.
 
-[![Konfigurace cíle pro komponentu Formát složky](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Konfigurace cíle pro komponentu Formát složky.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Omezení
 

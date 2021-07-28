@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799898"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349691"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Povolení a konfigurace automatických nákladů podle kanálu
 
@@ -66,7 +66,7 @@ Chcete-li přiřadit výchozí hierarchii k účelu organizační hierarchie v C
 1. V podokně akcí zvolte **Spustit nyní**.
 1. Zopakováním předchozích dvou kroků spusťte úlohy **1070** (**Konfigurace kanálů**) a **1110** (**globální konfigurace**).
 
-![Konfigurace maloobchodního automatického poplatku účel organizační hierarchie](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfigurace maloobchodního automatického poplatku účel organizační hierarchie.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definovat automatické náklady podle kanálu
 
@@ -86,7 +86,7 @@ Chcete-li definovat automatické náklady podle kanálu v Commerce, postupujte p
 1. V podokně akcí zvolte **Spustit nyní**.
 1. Zopakováním předchozích dvou kroků spusťte úlohy **1070** (**Konfigurace kanálů**) a **1110** (**globální konfigurace**).
     
-![Automatické náklady definované podle kanálu](media/Auto-charges-line-charge-by-channel.png)
+![Automatické náklady definované podle kanálu.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Příklad
 
@@ -94,7 +94,7 @@ Následující příklad popisuje kroky, které jsou nutné ke konfiguraci produ
 
 Organizace definuje kód nákladů, který se nazývá **RECYKLACE**, jak je znázorněno na následujícím obrázku.
 
-![Kód nákladů RECYKLACE](media/Auto-charges-charge-code.png)
+![Kód nákladů RECYKLACE.](media/Auto-charges-charge-code.png)
 
 Vytvoří se automatické náklady na úrovni řádku. Má následující konfiguraci:
 
@@ -112,13 +112,13 @@ Je vytvořen řádek automatických nákladů. Má následující konfiguraci:
 - Pole **Kategorie** je nastaveno na hodnotu **Pevná**.
 - Pole **Náklady** je nastaveno na **$ 6,25**.
 
-![Konfigurace automatického nákladu na úrovni řádku a řádku automatických nákladů](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfigurace automatického nákladu na úrovni řádku a řádku automatických nákladů.](media/Auto-charges-recyclingfee-line-fee.png)
 
 V aplikaci POS se vytvoří prodejní objednávka v kanálu obchodu **San Francisco**. Řádek **Náklady** zobrazuje poplatek za recyklaci **$6,25.**
 
 Výběrem **Možnosti transakce \> Náklady \> Správa nákladů** v aplikaci POS můžete zobrazit kód nákladů a popis poplatku za recyklaci.
 
-![Poplatek za recyklaci v aplikaci POS](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Poplatek za recyklaci v aplikaci POS.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

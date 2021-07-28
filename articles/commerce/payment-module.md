@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804472"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352317"
 ---
 # <a name="payment-module"></a>Platební modul
 
@@ -46,9 +46,9 @@ Konektor platby Adyen také podporuje silné ověření klienta (SCA). Část re
 
 Následující obrázek ukazuje příklad modulů dárkové karty, věrnostních bodů a plateb Ayden na stránce pokladny.
 
-![Příklad modulů dárkové karty, věrnostních bodů a plateb Ayden na stránce pokladny](./media/ecommerce-payments.PNG)
+![Příklad modulů dárkové karty, věrnostních bodů a plateb Ayden na stránce pokladny.](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Konektor platby Dynamics 365 pro PayPal
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector pro PayPal
 
 Od Commerce verze 10.0.14 je platební modul také integrován v konektoru platby Dynamics 365 pro PayPal. Další informace o nastavení a konfiguraci konektoru platby pro online obchody naleznete v tématu [Konektor platby Dynamics 365 pro PayPal](paypal.md).
  
@@ -59,10 +59,10 @@ Když je platební modul nakonfigurován pro použití konektoru platby PayPal, 
 Konektor platby PayPal nevyžaduje modul fakturační adresy, protože všechny informace související s fakturací zpracovává PayPal v rámci svého prvku iframe. Jsou však potřeba moduly dodací adresy a doručení.
 
 Následující obrázek ukazuje příklad dvou platebních modulů na stránce pokladny, jeden konfigurovaný s platebním konektorem Adyen a druhý s platebním konektorem PayPal.
-![Příklad modulů platby Ayden a PayPal na stránce pokladny](./media/ecommerce-paypal.png)
+![Příklad modulů platby Ayden a PayPal na stránce pokladny.](./media/ecommerce-paypal.png)
 
 Následující obrázek ukazuje příklad prvku iframe PayPal vyvolaného pomocí tlačítka PayPal. 
-![Příklad prvku iframe Paypal na stránce pokladny](./media/ecommerce-paypal-iframe.png)
+![Příklad prvku iframe Paypal na stránce pokladny.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Vlastnosti modulu platby
 
@@ -76,7 +76,7 @@ Následující obrázek ukazuje příklad prvku iframe PayPal vyvolaného pomoc�
 |Je primární platba|  **Pravda** nebo **nepravda** | Má-li hodnotu **Pravda**, jakékoli chybové zprávy budou generovány z primárního konektoru platby na stránce pokladny. Pokud jsou nakonfigurovány konektory platby Adyen i PayPal, nastavte Adyen na **Pravda**, což bylo přidáno ve verzi Commerce 10.0.14.|
 
 Následující obrázek ukazuje příklad hodnoty **Podporované typy úhrad** nastavené na „PayPal“ v konfiguraci konektoru platby v centrále Commerce.
-![Příklad podporovaných typů úhrad v centrále Commerce](./media/ecommerce-paymenttendertypes.png)
+![Příklad podporovaných typů úhrad v centrále Commerce.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Fakturační adresa
 

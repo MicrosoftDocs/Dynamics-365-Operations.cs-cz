@@ -14,12 +14,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 86f475cc0b78c620309301516b6c3b525b640637
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 25464c89352f44a77a96dee6ad2f633b7a55669e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791550"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350273"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Odhlášení z kolekce událostí webové aktivity
 [!include [banner](includes/banner.md)]
@@ -40,7 +40,7 @@ V modulu Správa účtu v centrále obchodu se správci mohou odhlašovat jméne
 1. V klientovi centrály obchodu na stránce **Všichni zákazníci** vyhledejte a vyberte zákazníka.
 1. Na stránce s podrobnostmi zákazníka, na pevné záložce **Maloobchod**, v sekci **Soukromí**, nastavte možnost **Nesledujte aktivitu na webu** na **Ano**.
 
-    ![Nastavení ochrany osobních údajů](media/Disablepersonalizationpart2.png)
+    ![Nastavení ochrany osobních údajů.](media/Disablepersonalizationpart2.png)
 
 1. Zvolte **Uložit** a pak zavřete stránku.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189937"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356920"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -35,7 +35,7 @@ Kanban odběru lze použít k přesunutí kanbanu jedné položky mezi sklady a 
 
 Následující scénář zobrazuje systém doplňování na vyžádání, kde signál vyžádání vyvolá vytvoření kanbanu k doplnění materiálu pro výrobní proces. 
 
-[![Signál vyžádání vyvolá událost vytvoření kanbanu k doplnění materiálu pro výrobní proces](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Signál vyžádání vyvolá událost vytvoření kanbanu k doplnění materiálu pro výrobní proces.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Kanban odběru
 2.  Kanban z místa a umístění pro příjem skladu práce
@@ -72,7 +72,7 @@ Při malé vzdálenost mezi skladovými místy a vstupním místem výroby můž
 
 V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na převod mezi dvěma místy ve stejném skladu. Aktivita převodu kanbanu odběru je nastavena tak, aby se doplnila automaticky. 
 
-[![Automatické doplnění aktivity převodu při zpracování práce výdeje kanbanu](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Automatické doplnění aktivity převodu při zpracování práce výdeje kanbanu.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Sdílený sklad pro suroviny a výrobu
 2.  Skladová místa pro suroviny

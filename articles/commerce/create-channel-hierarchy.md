@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951901"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352463"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace sítě
 
@@ -49,7 +49,7 @@ Chcete-li vytvořit hierarchii navigace kanálu, postupujte následovně.
 
 Následující obrázek znázorňuje příklad kořenového uzlu.
 
-![Ukázkový kořenový uzel](media/create-channel-hierarchy-1.png)
+![Ukázkový kořenový uzel.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Vytvoření uzlů navigačních kategorií
 
@@ -65,7 +65,7 @@ Chcete-li vytvořit další uzly navigační kategorie, které budou představov
 
 Následující obrázek znázorňuje příklad dokončené navigační hierarchie kanálů.
 
-![Vzorová hierarchie kanálu](media/create-channel-hierarchy-2.png)
+![Vzorová hierarchie kanálu.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Přidat produkty do uzlů kategorií
 
@@ -81,7 +81,7 @@ Chcete-li přidat produkty do uzlů kategorií, postupujte podle následujícíc
 
 Následující obrázek znázorňuje příklad uzlu s přidanými produkty.
 
-![Produkty přidané do uzlu kategorií](media/create-channel-hierarchy-3.png)
+![Produkty přidané do uzlu kategorií.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Přidat skupiny atributů produktů do uzlů kategorií
 
@@ -97,9 +97,9 @@ Přidání produktu skupiny atributů do uzlu kategorií provedete následovně.
 
 Následující obrázek znázorňuje příklad uzlu s přidanými skupinami atributů produktů.
 
-![Skupiny atributů produktu v uzlu](media/create-channel-hierarchy-4.png)
+![Skupiny atributů produktu v uzlu.](media/create-channel-hierarchy-4.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Nastavení sortimentu](set-up-assortments.md)
 

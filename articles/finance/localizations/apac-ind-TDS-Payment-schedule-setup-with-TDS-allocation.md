@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 47551f52f35fec5ae49d696e3f4027b7d2eb2e19
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 27f6750dd91a211ad12a1bd5d9c4ab9a2e1e4a79
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023096"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358403"
 ---
 # <a name="set-up-payment-schedules-with-tds-allocation"></a>Nastavení platebního kalendáře s přidělením TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak nastavit plány plateb s alokací daně odečtené u
 
 1. Přejděte do nabídky **Závazky \> Nastavení platby \> Platební kalendáře**.
 
-    [![Stránka Platební kalendáře](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
+    [![Stránka Platební kalendáře.](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
 
 2. V podokně akcí vyberte **Nový** pro vytvoření platebního kalendáře a zadejte požadované údaje.
 3. V poli **Přidělení** vyberte metodu, která se použije k alokaci platby pro časový plán plateb:

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186607"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349890"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Přiznání k DPH pro Egypt (EG-00002)
 
@@ -77,7 +77,7 @@ Parametry specifické pro aplikaci vám umožňují stanovit kritéria, jak budo
 
 Sestavy prodejních a nákupních knih pro Egypt obsahují sadu sloupců, které odpovídají konkrétním klasifikacím transakcí jako typů operací, produktů a dokumentů, které jsou specifické pro Egypt. Namísto zahrnutí těchto nových klasifikací jako nových vstupních údajů při zaúčtování transakcí bude klasifikace určena na základě různých vyhledávání zavedených v nabídce **Konfigurace** > **Nastavit parametry specifické pro aplikaci** > **Nastavit** za účelem splnění požadavků přiznání k DPH pro Egypt. 
 
-![Stránka specifické parametry aplikace](media/egypt-vat-declaration-setup1.png)
+![Stránka specifické parametry aplikace.](media/egypt-vat-declaration-setup1.png)
 
 Tyto následující konfigurace vyhledávání se používají ke klasifikaci transakcí v sestavách knih DPH u nákupu a prodeje:
 
@@ -206,7 +206,7 @@ Chcete-li vygenerovat hlášení z daňového přiznání k DPH ve formátu Micr
 2. Na kartě **DPH** v části **Možnosti daně** v poli **Mapování formátu přiznání k DPH** vyberte **Přiznání k DPH pro Excel (EG)**. Pokud toto pole necháte prázdné, vygeneruje se standardní hlášení o DPH ve formátu SSRS.
 3. Vyberte **Hierarchie kategorií**. Tato kategorie aktivuje kód zboží v transakcích na kartě Zahraniční obchod a umožňuje uživatelům vybrat a klasifikovat zboží a služby. Popis této klasifikace je podrobně uveden ve zprávách o prodejních a nákupních transakcích. Tato konfigurace je volitelná.
 
-![Formulář přiznání](media/egypt-vat-declaration-setup2.png)
+![Formulář přiznání.](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>Vygenerovat sestavu přiznání k DPH

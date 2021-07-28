@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359854"
 ---
 # <a name="sales-and-marketing-overview"></a>Přehled prodeje a marketingu
 
@@ -29,18 +31,18 @@ Modul prodeje a marketingu můžete používat k získávání, ukládání a po
 
 ## <a name="marketing"></a>Marketing
 
-Můžete používat marketingové kampaně a aktivity pro hledání potenciálních zákazníků a vytváření vztahů s nimi tak, aby se počáteční interakce mohly rozvíjet do prodejních vztahů. Následující vývojový diagram znázorňuje obchodní proces marketingu. [![Obchodní proces pro marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
+Můžete používat marketingové kampaně a aktivity pro hledání potenciálních zákazníků a vytváření vztahů s nimi tak, aby se počáteční interakce mohly rozvíjet do prodejních vztahů. Následující vývojový diagram znázorňuje obchodní proces marketingu. [![Obchodní proces pro marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Vztahy
 
-V okně Prodej a marketing může v různých situacích dojít k počátečním interakcích s potenciálními zákazníky. Například můžete objevit potenciálního zákazníka, zatímco se účastníte veletrhu, nebo naleznete potenciálního zákazníka poté, co vaše organizace realizuje hromadnou poštovní kampaň. Je velmi důležité porozumět toku u entity strany, než se tato strana stane zákazníkem. Následující obrázek znázorňuje vztahy toku u entity tak, jak se z potenciálního zákazníka stává skutečný zákazník. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+V okně Prodej a marketing může v různých situacích dojít k počátečním interakcích s potenciálními zákazníky. Například můžete objevit potenciálního zákazníka, zatímco se účastníte veletrhu, nebo naleznete potenciálního zákazníka poté, co vaše organizace realizuje hromadnou poštovní kampaň. Je velmi důležité porozumět toku u entity strany, než se tato strana stane zákazníkem. Následující obrázek znázorňuje vztahy toku u entity tak, jak se z potenciálního zákazníka stává skutečný zákazník. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampaně
 
 Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Supply Chain Management můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
 
 ## <a name="sales"></a>Prodeje
-Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces pro prodej](./media/sales01.jpg)](./media/sales01.jpg)
+Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces pro prodej.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Prodejní nabídky
 

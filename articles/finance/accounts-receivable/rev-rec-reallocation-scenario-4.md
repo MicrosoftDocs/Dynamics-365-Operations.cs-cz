@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2b53145ac1ef4b277afadb4262fd1e704a2e7662
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ce429290f98e2e1ae7ff20e3554db43d3371c65
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830657"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356142"
 ---
 # <a name="revenue-recognition-reallocation--scenario-4"></a>Opětovné přidělení uznání výnosů – scénář 4
 
@@ -34,7 +34,7 @@ Pro odběratele US\_SI\_0003 je vytvořena prodejní objednávka. Odběratel si 
 
 [![Řádky prodejní objednávky pro přenosný počítač, instalační služby a plán podpory](./media/38_rev-rec-scenarios.png)](./media/38_rev-rec-scenarios.png)
 
-Prodejní objednávka je potvrzena. Protože jsou všechny tři položky nastaveny pro přidělení výnosové ceny, při potvrzení prodejní objednávky se vypočítá výnosová cena. Výnosy, které budou uznány, můžete zobrazit na stránce **Přidělení výnosové ceny** (na stránce **Prodejní objednávka** v podokně akcí na kartě **Spravovat** ve skupině **Uznání výnosů** vyberte **Přidělení výnosové ceny**). Výnos za přenosný počítač bude zaúčtován na účet výnosů ve výši $995,84. Výnosy za instalační služby budou také zaúčtovány na účet výnosů ve výši $314,47. Výnosy za plán podpory budou zaúčtovány na účet odložených výnosů ve výši $188,69. Součet výnosových cen se musí rovnat součtu řádků, které byly nastaveny pro zachytávání přidělení výnosových cen ($1499).
+Prodejní objednávka je potvrzena. Protože jsou všechny tři položky nastaveny pro přidělení výnosové ceny, při potvrzení prodejní objednávky se vypočítá výnosová cena. Výnosy, které budou uznány, můžete zobrazit na stránce **Přidělení výnosové ceny** (na stránce **Prodejní objednávka** v podokně akcí na kartě **Spravovat** ve skupině **Uznání výnosů** vyberte **Přidělení výnosové ceny**). Výnos za přenosný počítač bude zaúčtován na účet výnosů ve výši $995,84. Výnosy za instalační služby budou také zaúčtovány na účet výnosů ve výši $314,47. Výnosy za plán podpory budou zaúčtovány na účet odložených výnosů ve výši $188,69. Součet výnosových cen se musí rovnat součtu řádků, které byly nastaveny pro zachytávání přidělení výnosových cen (1 499 USD).
 
 [![Stránka Přidělení výnosové ceny](./media/39_rev-rec-scenarios.png)](./media/39_rev-rec-scenarios.png)
 

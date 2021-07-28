@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794156"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352221"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -46,7 +46,7 @@ Cenová skupina je sama o sobě pouze název, popis, popřípadě priorita cenov
 
 Následující obrázek znázorňuje, jak se cenové skupiny používají. Na tomto obrázku si všimněte, že „Cenová skupina“ je doslova centrem správy cen a slev. Enity Commerce, které můžete použít ke správě rozdílových cen a slev, jsou vlevo, a záznamy skutečné ceny a slevy se nacházejí napravo.
 
-![Cenové skupiny](./media/PriceGroups.png "Cenové skupiny")
+![Cenové skupiny.](./media/PriceGroups.png "Cenové skupiny")
 
 Při vytvoření cenových skupin nepoužívejte jednu cenovou skupinu pro více typů entit Commerce. V opačném případě může být obtížné určit, proč se konkrétní cena nebo sleva použije na transakci.
 
