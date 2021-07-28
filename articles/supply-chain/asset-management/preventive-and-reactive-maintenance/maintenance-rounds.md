@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825727"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361035"
 ---
 # <a name="maintenance-rounds"></a>Pořadí údržby
 
@@ -80,7 +80,7 @@ V modulu **Správa majetku** můžete vytvořit pořadí údržby pro různé po
 
 Následující obrázek znázorňuje ukázku a příklad pořadí údržby obsahující tři aktiva.
 
-![Obrázek č. 1](media/13-preventive-maintenance.png)
+![Obrázek č. 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Naplánovat pořadí údržby
@@ -106,9 +106,9 @@ Když nastavíte pořadí údržby, spusťte úlohu plánu, která plánuje vše
 
 Následující dvě ilustrace zobrazují **úlohu plánování v** dialogovém okně Naplánovat pořadí údržby a řádky plánu údržby vytvořené ve **všech plánech** údržby na základě této úlohy plánu.
 
-![Obrázek č. 2](media/14-preventive-maintenance.png)
+![Obrázek č. 2.](media/14-preventive-maintenance.png)
 
-![Obrázek č. 3](media/15-preventive-maintenance.png)
+![Obrázek č. 3.](media/15-preventive-maintenance.png)
 
 - Pokud jsou pro majetek, na který se vztahuje záruka dodavatele, vytvořeny pracovní příkazy ručně, zobrazí se dialogové okno, které uživatele upozorní na záruku. Vytvoření pracovního příkazu lze v tuto chvíli zrušit. Kontrola vztahu záruky je vynechána pro automaticky vytvořené pracovní příkazy.  
 - Na záložce s náhledem **Spustit na pozadí** můžete nastavit dávkovou úlohu pro plánování pořadí v pravidelných intervalech.  

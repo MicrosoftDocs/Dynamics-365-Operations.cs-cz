@@ -1,6 +1,6 @@
 ---
-title: Konfigurace Finance Insights - verze do 10.0.19
-description: Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve Finance insights pro verze do 10.0.19.
+title: Konfigurace Finance Insights – před verzí 10.0.19
+description: Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve Finance insights pro verze před 10.0.19.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 6b578962839a34a1e2ce0311f7d8e7ee57a10927
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186413"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357431"
 ---
-# <a name="configuration-for-finance-insights-preview"></a>Konfigurace finančních přehledů (Preview)
+# <a name="configuration-for-finance-insights-for-private-preview-preview---before-version-10019"></a>Konfigurace Finance Insights pro private review (náhled) – před verzí 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "6186413"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Následující postupy pro nastavení Finance Insights jsou platné pro verze Microsoft Dynamics 365 Finance do 10.0.19. Informace o nastavení Finance Insights ve verzi 10.0.20 a novější najdete v tématu [Konfigurace Finance Insights (náhled) - verze 10.0.20 a vyšší](configure-for-fin-insites-PubPrvw.md).
+> Následující postupy pro nastavení Finance Insights jsou platné pro verze Microsoft Dynamics 365 Finance před verzí 10.0.19. Informace o nastavení Finance Insights ve verzi 10.0.20 a novější najdete v tématu [Konfigurace Finance Insights (náhled) - verze 10.0.20 a vyšší](configure-for-fin-insites-PubPrvw.md).
 
 Finanční přehledy kombinují funkčnost Microsoft Dynamics 365 Finance s Microsoft Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech.
 
@@ -59,7 +59,7 @@ Ke konfiguraci Dataverse pro Finance Insights použijte následující kroky.
 
     1. Otevřete stránku **Prostředí**.
 
-        [![Stránka Prostředí](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Stránka Prostředí.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Vyberte výše uvedené prostředí Dataverse ke zkopírování a pak vyberte **Nastavení**.
     3. Vyberte **Prostředky \> Všechna starší nastavení**.
@@ -792,6 +792,8 @@ Doplněk bude nainstalován během několika minut.
     | Adresa URL organizace CDS                                     | URL organizace Dataverse zkopírované shora. |
     | ID org. CDS                                               | ID organizace Dataverse zkopírované shora. |
 5. Aktivujte **Je toto výchozí prostředí pro klienta**.
+
+Instalace doplňku může trvat několik minut.
     
 ## <a name="configure-the-entity-store"></a>Konfigurace úložiště entit
 

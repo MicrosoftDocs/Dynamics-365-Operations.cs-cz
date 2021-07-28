@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745758"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358542"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Diagnostika zabezpečení pro záznamy úkolů
 
@@ -39,7 +39,7 @@ Toto téma poskytuje informace o tom, jak analyzovat a spravovat požadavky na z
 
 4. V poli **ID uživatele** vyberte uživatele. Pokud uživatel nemá oprávnění pro některé položky nabídky, pole **Chybějící oprávnění** se aktualizuje na **Ano**.
   
-  ![Stránka podrobností položky nabídky zabezpečení](../media/Security-Menu-Item-Details.png)
+  ![Stránka podrobností položky nabídky zabezpečení.](../media/Security-Menu-Item-Details.png)
 
 5. Vyberte **Přidat odkaz** pro zobrazení seznamu bezpečnostních objektů, včetně rolí, povinností a oprávnění, která udělují chybějící oprávnění.
 6. Vyberte objekt zabezpečení ze seznamu.

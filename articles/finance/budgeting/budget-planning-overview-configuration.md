@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 93e5d46d6b9817b7f019e529bf4da6199bc29dbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898203"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355717"
 ---
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
@@ -40,7 +42,7 @@ Organizace může nastavit plánování rozpočtu a poté nastavit procesy plán
 - **Fáze plánování rozpočtu** – fáze plánování rozpočtu definují postup, který plán rozpočtu dodržuje od počátku až do konečného schválení. Fáze plánování rozpočtu jsou uspořádány do workflowu plánování rozpočtu.
 - **Workflowy plánování rozpočtu** – workflowy plánování rozpočtu se skládají z fází plánování rozpočtu a definují je. Workflowy rozpočtového plánování jsou přidruženy k workflowům rozpočtování. Workflowy rozpočtování jsou automatizované a ruční procesy, které posunují plány rozpočtu do dalších fází plánování rozpočtu.
 
-[![Terminologie plánování rozpočtu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologie plánování rozpočtu.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Typické úkoly
 
@@ -65,11 +67,11 @@ Volitelný doporučený první krok je vytvořit schéma zobrazující postupy o
 
 Následující obrázek znázorňuje obecný příkladu, kde jsou oddělené workflowy plánování rozpočtu vytvořené pro různé úrovně organizace. Fáze jsou definovány v rámci každého workflowu a konkrétní scénáře jsou přiřazené jednotlivým fázím k uchování dat rozpočtu. Úlohy jsou dokončeny k přesunu dat z jedné fáze do druhé. Například částky můžete přidělit nebo agregovat do různých účtů, schválení nebo jiných hodnocení. V této inlustraci kurzíva označuje scénář, který nelze upravit během fáze, nebo data, která jsou z minulosti nebo byla schválena v dřívější fázi, a proto by neměla být změněna.
 
-[![Obecné schéma plánování rozpočtu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Obecné schéma plánování rozpočtu.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Následující ilustrace ukazuje příklad, kdy vedení společnosti odhaduje základní částky prvotního základu rozpočtu a distribuuje je pro Prodejní oddělení. Prodejní oddělení pak odhadují a odesílají vlastní předpovědi zpět na ústředí, kde správce rozpočtu agreguje a upraví předpovědi. Správce rozpočtu nakonec odešle upravené částky rozpočtu vedoucímu finančního oddělení (CFO) pro kontrolu, konečné úpravy a k schválení.
 
-[![Příklad schématu plánování rozpočtu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Příklad schématu plánování rozpočtu.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Organizační hierarchie pro plánování rozpočtu
 
@@ -93,7 +95,7 @@ Je vhodné vytvořit workflow plánování rozpočtu pro každou úroveň hierar
 
 Workflow rozpočtování můžete vytvořit pro plánování rozpočtu na stránce **Workflowy rozpočtování**. Tento proces se podobá procesu vytváření jiných workflowů. Následující obrázek znázorňuje příklad workflowu pro ústředí.
 
-[![Workflow rozpočtování pro plánování rozpočtu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Workflow rozpočtování pro plánování rozpočtu.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Workflow obsahuje následující prvky:
 
@@ -141,11 +143,11 @@ Při nastavení přidělení fáze můžete přiřadit workflow a fázi plánu r
 
 V příkladu schématu zobrazeném dříve v tomto tématu je přidělení provedeno k převodu částek z plánu rozpočtu a scénářů v "základní" fázi ústředí do jiného plánu rozpočtu a scénářů obchodních oddělení ve fázi "odhadu". Následující obrázek ukazuje příslušnou část ilustračního schématu.
 
-[![Přidělení fází](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Přidělení fází.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Navíc se v příkladu schématu provádí agregace z plánů rozpočtu a scénářů prodejních oddělení ve fázi "odesláno" v nadřazeném plánu v "kumulativní" fázi ústředí. Následující obrázek ukazuje příslušnou část ilustračního schématu.
 
-[![Agregace](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Agregace.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Priority
 
@@ -163,7 +165,7 @@ Kromě sloupce částek rozpočtu můžete definovat sloupce pro pole projekt, n
 
 U ukázkového schématu můžete chtít vytvořit sloupce pro scénáře "prodeje PY", "smlouvy" a "prognóza". (Následující ilustrace ukazuje příslušnou sekci schématu). Můžete pak rozdělit jeden nebo všechny z uvedených scénářů do samostatných sloupců za každé čtvrtletí fiskálního roku, takže správce oddělení prodeje může přesně zadávat prognózy částek pro každé období.
 
-[![Ilustrace sekcí schématu pro přidávání sloupců](./media/columns.png)](./media/columns.png)
+[![Ilustrace sekcí schématu pro přidávání sloupců.](./media/columns.png)](./media/columns.png)
 
 Rovněž určujete, zda každý prvek rozvržení (sloupec), lze upravit a zda je k dispozici v kterékoli šabloně listu, která je vytvořená pro toto rozvržení. V příkladovém schématu v rozložení použitém pro fáze "odhadu" lze upravovat sloupce "prognózy", zatímco sloupce "Prodeje PY" a "Smlouvy" jsou jen pro čtení.
 
@@ -201,7 +203,7 @@ V nabídce **Akce** je také možné vytvořit proces zkopírováním existujíc
 
 Další užitečný příkaz v nabídce **Akce** je **Zobrazit stav zpracování rozpočtu**. Tento příkaz graficky zobrazí plány rozpočtu v rámci procesu spolu s odpovídajícími daty, jako jsou například stav workflowu plánů, souhrny podle množství a jednotky a navigace jedním kliknutím k samotným plánům rozpočtu.
 
-[![Stav procesu plánování rozpočtu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Stav procesu plánování rozpočtu.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

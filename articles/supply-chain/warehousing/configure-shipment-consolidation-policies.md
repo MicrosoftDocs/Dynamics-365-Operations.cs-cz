@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840406"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360417"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurace zásad konsolidace dodávek
 
@@ -179,7 +179,7 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
 1. V podokně akcí vyberte **Uložit**.
 1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** v mřížce vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001*.
 1. Vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
@@ -214,7 +214,7 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano*.
 1. V podokně akcí vyberte **Uložit**.
 1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Propojení tabulek** rozbalte a vyberte ve stromu **Tabulky \> Načíst podrobnosti**.
 1. Zvolte **Přidat propojení tabulek**.
@@ -251,9 +251,9 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Nastavte možnost **Konsolidace s otevřenými dodávkami** na *Ano*.
 1. V podokně akcí vyberte **Uložit**.
 1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Požadavek zákazníka*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Účet zákazníka* a nastavte pole **Kritéria** pro tento řádek na *US-001*.
 1. Zvolte **OK** a zavřete dialogové okno.
@@ -283,7 +283,7 @@ Postupujte podle těchto kroků a vytvořte zásadu konsolidace dodávek pro ten
 1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
 1. V podokně akcí vyberte **Uložit**.
 1. Na záložce s náhledem **Pole konsolidace** v seznamu **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyberte **Přidat** a přidejte do mřížky řádek, který má následující nastavení:
 
@@ -317,7 +317,7 @@ Obvykle lze tento obchodní případ řešit pomocí výchozích zásad, které 
 1. Opusťte možnost **Konsolidace s otevřenými dodávkami** nastavenou na *Ne*.
 1. V podokně akcí vyberte **Uložit**.
 1. Na záložce s náhledem **Pole konsolidace** v poli **Zbývající pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Způsob doručení*.
-1. Vyberte tlačítko **Přidat** ![Pravá šipka](media/forward-button.png) a přesuňte do seznamu **Vybraná pole**.
+1. Klepněte na tlačítko **Přidat** ![Šipka vpravo.](media/forward-button.png) přesuňte pole do seznamu **Vybraná pole**.
 1. V podokně akcí vyberte **Upravit dotaz**.
 1. V dialogovém okně editoru dotazů na kartě **Rozsah** vyhledejte řádek, kde je pole **Pole** nastaveno na *Sklad* a nastavte pole **Kritéria** pro tento řádek na *61, 63*.
 1. Zvolte **OK** a zavřete dialogové okno.

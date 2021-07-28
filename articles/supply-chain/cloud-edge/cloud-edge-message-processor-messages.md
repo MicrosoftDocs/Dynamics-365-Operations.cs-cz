@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271094"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350563"
 ---
 # <a name="message-processor-messages"></a>Zprávy procesoru zpráv
 
@@ -88,15 +88,15 @@ V tomto příkladu použijte **Když dojde k obchodní události** s *Microsoft 
 
 1. V [Power Automate](https://preview.flow.microsoft.com) vytvořte nový automatizovaný cloudový tok pro aktivační událost toku **Když dojde k obchodní události – aplikace Fin & Ops (Dynamics 365)** následovaný kroky **Analyzovat JSON** a **Poslat email**, jak je znázorněno na následujícím obrázku.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Automatizovaný cloudový tok Power Automate":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Automatizovaný cloudový tok Power Automate.":::
 
 1. V kroku **Když dojde k obchodní události** můžete vyhledat nebo zadat **Instance** centra po **Kategorie** a pak **Obchodní akce** *Zpráva procesoru zprávy byla zpracována*, jak je znázorněno na následujícím obrázku.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Krok, když dojde k obchodní události":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Krok, když dojde k obchodní události.":::
 
 1. Pro krok **Analyzovat JSON** zadejte **Schéma**, které definuje rozšířená pole. Můžete použít možnost *Stáhnout schéma* na stránce **Katalog obchodních akcí** v Supply Chain Management nebo začněte vložením příkladu textu schématu. Tento příklad textu je uveden za následujícím obrázkem.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Analyzovat krok JSON":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Analyzovat krok JSON.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ V tomto příkladu použijte **Když dojde k obchodní události** s *Microsoft 
 
 1. V kroku **Poslat email** můžete vybrat jednotlivá pole nebo začít vložením příkladu těla e-mailu do pole **Tělo**. Tento příklad je uveden za následujícím obrázkem.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate – krok odeslání zprávy":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate – krok odeslání zprávy.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

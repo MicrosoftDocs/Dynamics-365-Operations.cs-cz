@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 4bf47b15b668a37f12edb3dbb842d19655fac97a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 76b11eaec0f22393e877c2837e2533a176018f2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019020"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355475"
 ---
 # <a name="wave-creation-and-processing"></a>Vytvoření a zpracování vlny
 
@@ -42,7 +42,7 @@ Můžete určit, která z těchto možností výrobní zakázky se má ve výcho
 
 Následující diagram ukazuje postup pro vytvoření, zpracování a uvolnění vln expedice. Čísla odpovídají sekcím dále v této sekci.
 
-![Proces vytvoření vlny](media/wave-processing-diagram.png "Proces vytvoření vlny")
+![Proces vytvoření vlny.](media/wave-processing-diagram.png "Proces vytvoření vlny")
 
 ### <a name="prerequisites"></a>Předpoklady
 
@@ -158,7 +158,7 @@ Když je povolena funkce *Naplánovat vytvoření práce*, zpracování ve vlná
 
 Následující vývojový diagram ukazuje, jak se během zpracování ve vlnách vytváří plánovaná práce.
 
-![Naplánovat vytvoření práce](media/schedule-work-creation-process.png)
+![Naplánovat vytvoření práce.](media/schedule-work-creation-process.png)
 
 ### <a name="planned-work"></a>Plánovaná práce
 

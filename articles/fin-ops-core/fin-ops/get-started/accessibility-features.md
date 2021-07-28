@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744116"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360283"
 ---
 # <a name="accessibility-features"></a>Funkce usnadnění přístupu
 
@@ -52,13 +52,13 @@ Ke každé akci, kterou nabízí stránka, se lze dostat z klávesnice pomocí p
 
 Chcete spustit akci **Protokol oznámení e-mailem**, která se zobrazí ve skupině **Oznámení e-mailem** na kartě **Prodejní objednávka** v podokně akcí.
 
-![Akce protokolu e-mailového oznámení v podokně akcí](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Akce protokolu e-mailového oznámení&quot; v podokně akcí")
+![Akce protokolu e-mailového oznámení v podokně akcí.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Akce protokolu e-mailového oznámení&quot; v podokně akcí")
 
 Jedna z možností je použití klávesnice. Stisknutím kombinace kláves Ctrl + F6 přesuňte výběr na podokno akcí a poté stiskněte opakovaně klávesu Tab, abyste se přesunuli přes všechny karty a akce až na výběr akce **Protokol oznámení e-mailem**.
 
 Můžete také spustit akci přímějším způsobem. Kdekoliv na stránce stiskněte kombinaci kláves Ctrl + apostrof a zobrazí se pole vyhledávání akcí.
 
-![Vyhledávací pole akcí](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Vyhledávací pole akcí")
+![Vyhledávací pole akcí.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Vyhledávací pole akcí")
 
 V poli pro vyhledávání zadejte slova, která popisují akci. Tato akce vám bude k dispozici a lze ji spustit přímo. Například zadáním slov **e-mail**, **oznám** (částečné slovo), nebo **protokol**, je možné "přeskočit" na funkci protokolu oznámení e-mailem.
 

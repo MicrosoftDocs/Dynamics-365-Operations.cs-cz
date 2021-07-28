@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348479"
 ---
 # <a name="set-up-electronic-invoicing"></a>Nastavení Elektronické fakturace
 
@@ -37,7 +37,7 @@ Konfigurovatelnost závisí na konfiguraci formátu Electronic reporting (ER) ja
 
 Následující obrázek ukazuje hlavní součásti funkce elektronické fakturace.
 
-![Přehled funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Přehled funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Z důvodu variací formátů faktur a toků akcí se může nastavení funkce lišit podle země nebo oblasti nebo podle obchodních požadavků.
 
@@ -50,7 +50,7 @@ Proces instalace musí být dokončen ve vašem prostředí RCS. Podle těchto p
 3. Na stránce **Funkce elektronické fakturace** vyberte **Import**, chcete-li importovat konfiguraci datového modelu ER z globálního úložiště.
 4. Vyberte **Přidat**, chcete-li vytvořit funkci elektronické fakturace. Funkci můžete vytvořit buď úplně od začátku, nebo ji odvodit ze stávající funkce elektronické fakturace.
 
-    ![Přidání funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Přidání funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Když vytvoříte novou funkci elektronické fakturace, bude mít číslo verze a její výchozí stav je nastaven na **Koncept**.
@@ -63,21 +63,21 @@ Podle těchto pokynů přidejte formáty ER k funkci elektronické fakturace.
 
 1. Na stránce **Funkce elektronické fakturace** na kartě **Konfigurace** vyberte **Přidat**, chcete-li přidat konfigurace formátu souboru ER pro funkci elektronické fakturace.
 
-    ![Přidání konfigurace funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Přidání konfigurace funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Když vytvoříte funkci elektronické fakturace úplně od začátku, musíte ručně přidat všechny konfigurace formátu souboru ER. Když odvodíte funkci elektronické fakturace z existujícího prvku, automaticky se vytvoří konfigurace formátu souboru ER, protože se dědí z původní funkce elektronické fakturace.
 
 2. Vyberte **Upravit** pro otevření stránky **Návrhář formátů**, kde můžete upravit konfiguraci formátu souboru ER.
 
-    ![Úprava konfigurace funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Úprava konfigurace funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Při úpravách formátu je stav konfigurační verze nastaven na **Koncept**.
 
 3. Použijte stránku **Návrhář formátů**, chcete-li změnit konfiguraci formátu souborů. Další informace získáte v tématu [Vytvoření konfigurací elektronického dokumentu](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Stránka návrháře formátu](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Stránka návrháře formátu.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Nastavení funkcí
 
@@ -87,18 +87,18 @@ Podle těchto pokynů přidejte nastavení funkce k funkci elektronické faktura
 
 1. Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat**, chcete-li přidat nastavení funkcí pro funkci elektronické fakturace.
 
-    ![Přidání nastavení funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Přidání nastavení funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Když vytvoříte funkci elektronické fakturace úplně od začátku, musíte ručně přidat všechny požadované nastavení funkcí. Když odvodíte funkci elektronické fakturace z existujícího prvku, automaticky se vytvoří všechna nastavení funkcí, protože se dědí z původní funkce elektronické fakturace.
 
 2. Vyberte **Upravit**, chcete-li upravit nastavení verze funkce.
 
-    ![Úprava nastavení funkce elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Úprava nastavení funkce elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Použijte stránku **Nastavení verze funkce** pro konfiguraci akcí, pravidel použitelnosti a proměnných.
 
-    ![Akce, pravidla použitelnosti a proměnné](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Akce, pravidla použitelnosti a proměnné.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Akce
 
@@ -113,7 +113,7 @@ Na stránce **Nastavení verzí funkcí** na kartě **Akce** na pevné záložce
 - Vyberte **Nový** nebo **Vymazat**, chcete-li přidat nové akce nebo odstranit stávající akce.
 - Vyberte **Nahoru** nebo **Dolů**, chcete-li přesunout vybrané akce nahoru nebo dolů v mřížce, a proto změnit pořadí, ve kterém jsou spuštěny. Akce se spouštějí v pořadí, v jakém se zobrazují v mřížce, zeshora dolů.
 
-![Správa akcí](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Správa akcí.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 V následující tabulce jsou popsána pole, která jsou k dispozici na pevné kartě **Akce**.
 
@@ -129,7 +129,7 @@ V následující tabulce jsou popsána pole, která jsou k dispozici na pevné k
 
 Pevná záložka **Parametry** uvádí seznam parametrů akce, která je vybrána na pevné záložce **Akce**.
 
-![Pevná záložka Parametry](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Pevná záložka Parametry.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 V následující tabulce jsou popsána pole, která jsou k dispozici na záložce s náhledem **Parametry**.
 
@@ -259,20 +259,20 @@ Pravidla použitelnosti vám umožňují vytvářet logická pravidla, která ur
 
 1. Na stránce **Nastavení verze funkce** na kartě **Pravidla použitelnosti** vyberte **Nový**, chcete-li přidat pravidlo použitelnosti.
 
-    ![Správa pravidel použitelnosti](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Správa pravidel použitelnosti.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. V mřížce vyberte klauzule, které by měly být seskupeny.
 3. Vyberte **Skupinová klazule**.
 
-    ![Seskupení klauzulí](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Seskupení klauzulí.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Když jsou klauzule seskupeny, je do mřížky přidán nový sloupec. Tento sloupec určuje logický operátor pro seskupené klauzule.
 
-    ![Logický operátor pro seskupené klauzule](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logický operátor pro seskupené klauzule.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Chcete-li seskupit klauzule, vyberte seskupené klauzule, jejichž seskupení chcete zrušit, a poté vyberte **Zrušit seskupení klauzulí**.
 
-![Zrušení seskupení klauzulí](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Zrušení seskupení klauzulí.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Když rušíte seskupení klauzuli, vždy začněte od nejvnitřnější úrovně seskupení.
@@ -294,7 +294,7 @@ Můžete vytvořit proměnné a poté je použít jako vstupní hodnotu pro para
 
 - Na stránce **Nastavení verze funkce** na kartě **Proměnné** vyberte **Nový** nebo **Vymazat**, chcete-li spravovat proměnné.
 
-    ![Správa proměnných](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Správa proměnných.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 V následující tabulce jsou popsána pole, která jsou k dispozici na kartě **Proměnné**.
 
@@ -310,7 +310,7 @@ V následující tabulce jsou popsána pole, která jsou k dispozici na kartě *
 
 - Na stránce **Nastavení verze funkce** v podokně akcí vyberte **Ověřit** k ověření nastavení verze funkce.
 
-   ![Výběr tlačítka Ověřit](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Výběr tlačítka Ověřit.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Ověření zkontroluje konzistenci celé konfigurace. Například, pokud je konkrétní parametr akce povinný, ale jeho hodnota zůstane prázdná, ověření zjistí tuto nekonzistenci a zobrazí se varování.
 
@@ -323,7 +323,7 @@ Pomocí těchto kroků povolte prostředí elektronické fakturace pro funkci el
 1. Na stránce **Funkce elektronické fakturace** na kartě **Prostředí** vyberte **Povolit**, chcete-li přidat prostředí elektronické fakturace.
 2. V poli **Platí od** zadejte datum, kdy má začít platnost nového prostředí.
 
-![Povolení prostředí elektronické fakturace](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Povolení prostředí elektronické fakturace.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organizace
 

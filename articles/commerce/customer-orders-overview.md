@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936723"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349619"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
@@ -44,7 +46,7 @@ Než vyzkoušíte funkci objednávek zákazníků v POS, nezapomeňte provést v
 
 Chcete-li používat objednávky zákazníků, musíte nakonfigurovat způsoby dodání, které může kanál obchodu používat. Musíte definovat alespoň jeden způsob dodání, který lze použít, když jsou řádky objednávky odeslány odběrateli z obchodu. Musíte také definovat alespoň jeden způsob vyskladnění dodávky, který lze použít, když jsou řádky objednávky vyzvednuty z obchodu. Způsoby doručení jsou definovány na stránce **Způsoby dodání** v centrále Commerce. Další informace o nastavení způsobů dodání pro kanály Commerce naleznete v tématu [Definování způsobů dodání](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Stránka Způsoby dodání](media/customer-order-modes-of-delivery.png)
+![Stránka Způsoby dodání.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Nastavení skupin plnění
@@ -53,7 +55,7 @@ Některé obchody nebo sklady nemusí být schopny plnit objednávky zákazník�
 
 V Commerce verze 10.0.12 a novějších mohou organizace definovat, zda lze sklad nebo kombinaci sklad a obchod, které jsou definovány ve skupinách plnění, použít k přepravě, k vyzvednutí nebo k přepravě a vyzvednutí. To umožňuje podnikům větší flexibilitu při určování, které sklady lze vybrat při vytváření objednávky zákazníka k odeslání zboží, a které obchody lze vybrat při vytváření objednávky zákazníka pro vyzvednutí zboží. Chcete-li využít výhod těchto možností konfigurace, zapněte funkci **Možnost specifikovat místa jako „Expedice“ nebo „Výdej“ povolena ve skupině plnění**. Pokud sklad, který je propojen se skupinou plnění, není obchod, lze jej nakonfigurovat pouze jako místo expedice. Nelze jej použít, když jsou objednávky pro výdej konfigurovány v POS.
 
-![Stránka Skupiny plnění](media/customer-order-fulfillment-group.png)
+![Stránka Skupiny plnění.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurace nastavení kanálu
 
@@ -65,7 +67,7 @@ Při práci s objednávkami zákazníků v POS musíte zvážit některá nastav
 - **Použít daň podle místa určení** – Tato možnost určuje, zda se dodací adresa použije k určení daňové skupiny, která se použije na řádky objednávky, které jsou dodávány na adresu zákazníka.
 - **Použít daň podle zákazníka** – Tato možnost určuje, zda se daňová skupina, která je definována pro doručovací adresu zákazníka, použije k zdanění objednávek zákazníků, které jsou vytvořeny v POS pro odeslání k zákazníkovi domů.
 
-![Nastavení kanálu obchodu na stránce Obchody](media/customer-order-all-stores.png)
+![Nastavení kanálu obchodu na stránce Obchody.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Nastavení parametrů objednávek zákazníků
 
@@ -80,7 +82,7 @@ Než budete vytvářet objednávky zákazníků v POS, musíte nakonfigurovat p�
 - **Kód dopravného** – Pokud je možnost **Použít rozšířené automatické náklady** nastavena na **Ano**, toto nastavení parametrů nemá žádný účinek. Pokud je tato možnost nastavena na **Ne**, uživatelé budou při vytváření objednávek zákazníků v POS vyzváni k ručnímu zadání dopravného. Tento parametr použijte k mapování kódu poplatků za pohledávky, který se použije na objednávky, když uživatelé zadají dopravné. Kód poplatku definuje logiku finančního účtování dopravného.
 - **Použít rozšířené automatické náklady** – Nastavte tuto možnost na **Ano**, chcete-li používat systémem počítané automatické poplatky, když jsou objednávky zákazníků vytvořeny v POS. Tyto automatické náklady lze použít k výpočtu dopravného nebo jiných poplatků za konkrétní objednávku nebo položku. Další informace, jak nastavit a používat rozšířené automatické náklady, naleznete v tématu [Omnikanálové rozšířené automatické náklady](./omni-auto-charges.md).
 
-![Karta Objednávky zákazníka na stránce Parametry Commerce](media/customer-order-parameters.png)
+![Karta Objednávky zákazníka na stránce Parametry Commerce.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualizace rozložení obrazovky transakcí v POS
 
@@ -95,7 +97,7 @@ Ujistěte se, že [rozložení obrazovky](./pos-screen-layouts.md) POS je nakonf
 - **Změnit způsob dodání** – Tuto operaci lze použít k rychlé změně režimu dodání u řádků, které jsou již nakonfigurovány pro dodávku, aniž by uživatelé museli znovu projít tokem „expedovat všechny produkty“ nebo „expedovat vybrané produkty“.
 - **Přepsání zálohy** – Tuto operaci lze použít ke změně částky zálohy, kterou zákazník zaplatí za vybranou objednávku zákazníka.
 
-![Operace na obrazovce transakcí POS](media/customer-order-screen-layout.png)
+![Operace na obrazovce transakcí POS.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Práce s objednávkami zákazníků v POS
 

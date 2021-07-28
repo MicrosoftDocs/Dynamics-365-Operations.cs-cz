@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0389ed6ca7926a4981029f6e91be2d1be4b8618e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754487"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354408"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Domovská stránka vytváření sestav a analýzy s Power BI
 
@@ -86,7 +88,7 @@ Následující sestavy poskytují referenční informace o objektech:
 - [Hledání informací o standardních datových entitách](../data-entities/data-entities-report.md)
 - [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md)
 - [Dostupné sestavy služby Microsoft SQL Server Reporting Services](SSRS-report.md)
-- [Sestava typů workflow](../../fin-ops/organization-administration/workflow-types-report.md)
+- [Sestava typů pracovních postupů](../../fin-ops/organization-administration/workflow-types-report.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

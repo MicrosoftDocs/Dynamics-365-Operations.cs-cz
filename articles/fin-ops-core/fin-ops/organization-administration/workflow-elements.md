@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747144"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348546"
 ---
 # <a name="workflow-elements"></a>Prvky workflowu
 
@@ -60,7 +60,7 @@ Workflow se skládá z jednotlivých prvků. Následující části popisují je
 
 Workflow lze vytvořit pro zpracování dokumentů nebo položek řádku v dokumentu. Například vytvoříte workflow schválení pro časové rozvrhy. (Tento pracovní postup budeme označovat jako *pracovní postup dokumentu*.) K tomuto pracovnímu procesu dokumentu můžete přidat prvek *pracovního postupu řádkové položky*. Při spuštění prvku položky řádku je každá položka řádku v dokumentu odeslána ke zpracování. Je vhodné řádkové položky zpracovávat ve stejném workflowu položky řádku, nebo můžete každou položku řádku zpracovat jiným workflowem položky řádku. Představte si, že zaměstnanec odeslal časový rozvrh, který se podobá na následujícímu obrázku.
 
-![Workflow položek na řádku](./media/workflow_lineitemworkflow.gif)
+![Workflow položek na řádku.](./media/workflow_lineitemworkflow.gif)
 
 V tomto scénáři může být třeba vytvořit následující workflowy položky řádku:
 

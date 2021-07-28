@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a3b48667bb266fec082c48e777fd71d8e5ef6dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907636"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357016"
 ---
 # <a name="intercompany-planning"></a>Mezipodnikové plánování
 
@@ -76,7 +76,7 @@ V tomto příkladu je ve společnosti USMF vytvořena plánovaná výrobní zak�
 
 Následující ilustrace ukazuje, jak by se tento příklad mohl objevit na stránce **Víceúrovňové zakotvení** pro plánovanou výrobní zakázku.
 
-![Mezipodnikový příklad, který zahrnuje dvě společnosti](media/IntercompanyPlanning1.png)
+![Mezipodnikový příklad, který zahrnuje dvě společnosti.](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Mezipodnikový příklad, který zahrnuje tři společnosti
 
@@ -84,7 +84,7 @@ V tomto příkladu je ve společnosti USMF vytvořena plánovaná nákupní obje
 
 Následující ilustrace ukazuje, jak by se tento příklad mohl objevit na stránce **Víceúrovňové zakotvení** pro plánovanou výrobní zakázku.
 
-![Mezipodnikový příklad, který zahrnuje tři společnosti](media/IntercompanyPlanning2.png)
+![Mezipodnikový příklad, který zahrnuje tři společnosti.](media/IntercompanyPlanning2.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

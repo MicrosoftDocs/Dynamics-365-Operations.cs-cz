@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353437"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuální plánování pro lean manufacturing
 
@@ -47,7 +47,7 @@ Je možné plánovat pouze úlohy typu **Proces**. Kanbanová úloha a její vla
 ## <a name="kanban-schedule-board"></a>Rozvrh plánování kanbanu
 Stránka **Deska plánování kanbanu** stránka obsahuje sedm hlavních prvků, jak je uvedeno na následujícím obrázku. 
 
-![Rozvrh plánování kanbanu](./media/kanban-schedule-board-1024x554.png)
+![Rozvrh plánování kanbanu.](./media/kanban-schedule-board-1024x554.png)
 1.  Podokno akcí
 2.  Filtrovat pole
 3.  Tlačítko pro neplánované úlohy
@@ -71,7 +71,7 @@ K vylepšení přehledu, který deska plánování kanbanu poskytuje, můžete p
 ## <a name="plan-unplanned-jobs"></a>Naplánovat neplánované úlohy
 Můžete naplánovat neplánované kanbanové úlohy z dialogového okna **Naplánovat neplánované úlohy**. Toto dialogové okno otevřete kliknutím na tlačítko **Neplánované úlohy**, na kterém je zobrazeno číslo neplánovaných úloh. Případně klikněte na tlačítko **Naplánovat neplánované úlohy** na kartě **deska** podokna akcí. V dialogovém okně se zobrazuje seznam neplánovaných kanbanových úloh pro pracovní buňku. K filtrování všech polí v mřížce lze použít pole **Filtr**. Můžete například filtrovat kanbanové úlohy pro konkrétní produkt. Poté, co máte filtrovaný seznam úloh, které chcete naplánovat, vyberte je v seznamu a klepněte na tlačítko **OK**. Pokud chcete k plánování úloh použít automatické plánování, nastavte možnost **Automatické plánování** na **Ano**. V takovém případě jsou úlohy plánovány na období podle data splatnosti. Úlohy je možné plánovat také podle období. Stačí vybrat období v poli **Období**. Následující obrázek znázorňuje příklad dialogového okna **Naplánovat neplánované úlohy**. 
 
-![Dialogové okno Naplánovat neplánované úlohy](./media/plan-unplanned-jobs-1024x564.png)
+![Dialogové okno Naplánovat neplánované úlohy.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Pořadí kanbanových úloh ve stejném období
 V rámci období můžete změnit pořadí jeden nebo více vybraných úloh. Tato možnost může být užitečná, pokud chcete určit prioritu některých úloh v rámci období. Případně můžete vytvořit sekvenci úloh, které mají stejné atributy produktu, k optimalizaci provádění úloh. Sekvenci můžete změnit přetažením nebo pomocí číselné řady **zpět** a **dopředu** a položek nabídky na kartě **Deska** podokna akcí.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056341"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360537"
 ---
 # <a name="set-up-reason-codes"></a>Nastavení kódů důvodů
 
@@ -56,15 +56,15 @@ Uvidíte banner na stránce **Odkazy** pracovního prostoru **Správa zaměstnan
 
 1. Vyberte **Kódy důvodů** pro podrobnosti o stavu migrace.
 
-   [![Kódy důvodu](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Kódy důvodu.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Vyberte kód důvodu, který se nepodařilo migrovat.
 
-   [![Stav migrace kódu důvodu](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Stav migrace kódu důvodu.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Vyberte **Migrujte kód důvodu**.
 
-   [![Migrovat kód důvodu](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Migrovat kód důvodu.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. V podokně **Migrace kódu důvodu zaměstnaneckých výhod** máte dvě možnosti pro mapování na kód důvodu Správy zaměstnanců:
 
@@ -73,10 +73,10 @@ Uvidíte banner na stránce **Odkazy** pracovního prostoru **Správa zaměstnan
      > Existující kód důvodu můžete použít ve správě zaměstnanců pouze v případě, že na něj již jiný kód důvodu správy výhod nebyl migrován.
    - Chcete-li ve správě zaměstnanců vytvořit nový kód důvodu, zadejte nový v **Nový kód důvodu** a poté zadejte popis do **Nový popis**.
 
-   [![Namapujte na kód důvodu správy zaměstnanců](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Namapujte na kód důvodu správy zaměstnanců.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Po migraci kódů důvodu na správu zaměstnanců je možnost jejich použití ve správě zaměstnaneckých výhod automaticky nastavena na **Ano**.
 
-[![Použít ód důvodu ve správě zaměstnaneckých výhod](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Použít ód důvodu ve správě zaměstnaneckých výhod.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

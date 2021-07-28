@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823829"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360705"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Přidání finančních dimenzí k pracovnímu prostoru CFO
 
@@ -45,14 +45,14 @@ Toto téma vysvětluje postup při přidání finančních dimenzí do pracovní
 11. Změňte hodnotu **Směr křížového filtru** na **Jednoduchý**.
 12. Zvolte **Aktivovat tuto relaci** a **Předpokládat referenční integritu**, vyberte **OK** a poté vyberte **Zavřít**.
 
-    [![Vytvoření relace](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Vytvoření relace.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. V seznamu **Pole** by se měla zobrazit tabulka a dostupné finanční dimenze. Přetáhněte finanční dimenze, které chcete mít ve filtrech na úrovni sestavy.
 14. Uložte změny.
 15. Ve stromu aplikačních objektů (AOT) klikněte pravým tlačítkem myši a poté vyberte **Synchronizovat**.
 16. Vytvořte svůj projekt a potom otevřete aplikaci pro zobrazení výsledků.
 
-    [![Dokončený pracovní prostor](./media/workspace.png)](./media/workspace.png)
+    [![Dokončený pracovní prostor.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

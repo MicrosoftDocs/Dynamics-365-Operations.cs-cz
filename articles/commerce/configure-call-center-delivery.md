@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796141"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352607"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
@@ -65,11 +65,11 @@ V oddílu **řádky** lze definovat jeden nebo více nákladů podle měny, jak 
 
 Společnosti často konfigurují vrstvené poplatky. Částka, kterou odběratelé platí za dodání, je v tomto případě založena na hodnotě objednávky. Chcete-li konfigurovat vrstvené poplatky, zadejte hodnoty do pole **od částky** a **do částky** a také definujte náklady na vlastní poplatky v poli **náklady**. Například u objednávek, které mají hodnotu, která je nižší než $50, účtuje prodejce $5,95 pro expedici po zemi. Pro objednávky, které mají hodnotu, která je rovno nebo větší než $50, ale méně než $100, prodejce účtuje $7.95. A nakonec pro objednávky, které mají hodnotu, která je rovna nebo větší než $100, prodejce poskytuje dodání zdarma. Následující obrázek znázorňuje konfiguraci těchto nákladů.
 
-![Příklad pevných vrstvených poplatků](media/fixedtieredcharges.png)
+![Příklad pevných vrstvených poplatků.](media/fixedtieredcharges.png)
 
 Můžete vybrat kombinaci kategorie nákladů, v závislosti na požadavcích vaší společnosti. Například u všech objednávek, které mají hodnotu, která je nižší než $100, se účtuje pevný poplatek ve výši $9,95 za dodání. Poté pro objednávky, které mají hodnotu, která se rovná nebo je větší než $100, jsou náklady na dodání vypočítávány ve výši hodnoty objednávky. Následující obrázek znázorňuje konfiguraci těchto nákladů.
 
-![Příklad kombinovaných vrstvených poplatků](media/mixedtieredcharges.png)
+![Příklad kombinovaných vrstvených poplatků.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Použití způsobů dodání během zadání objednávky v kontaktním středisku
 

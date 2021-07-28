@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102680"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359878"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
@@ -27,7 +27,7 @@ Toto téma popisuje různé stránky, které jsou ihned k dispozici na zákaznic
 
 Zákaznický portál nabízí ihned několik webových stránek a akcí. Následující mapa webu poskytuje přehled těchto webových stránek a akcí a rolí, které mohou akce provádět.
 
-![Mapa webu zákaznického portálu](media/customer-portal-site-map.png "Mapa webu zákaznického portálu")
+![Mapa webu zákaznického portálu.](media/customer-portal-site-map.png "Mapa webu zákaznického portálu")
 
 ## <a name="typical-customizations"></a>Typické úpravy
 
@@ -61,12 +61,12 @@ Zde jsou standardní kroky pro odeslání objednávky ze zákaznického portálu
     - **Číslo žádosti** - Zadejte číslo žádosti o objednávku. Toto pole není povinné.
     - **Odeslat do země / oblasti** - Zadejte zemi nebo region, do kterého budou položky doručeny. Toto pole je automaticky nastaveno pro neadministrátorské uživatele.
 
-    ![Stránka s informacemi o objednávce](media/customer-portal-order-information.png "Stránka s informacemi o objednávce")
+    ![Stránka s informacemi o objednávce.](media/customer-portal-order-information.png "Stránka s informacemi o objednávce")
 
 1. Zvolte **Další**.
 1. Na stránce **Položky** vyberte **Přidat položku**.
 
-    ![Stránka položek](media/customer-portal-items.png "Stránka položek")
+    ![Stránka položek.](media/customer-portal-items.png "Stránka položek")
 
 1. V dialogovém okně **Informace o položce** nastavte následující pole:
 
@@ -75,14 +75,14 @@ Zde jsou standardní kroky pro odeslání objednávky ze zákaznického portálu
     - **Jednotka** - Určete měrnou jednotku (například **ks**, **kg** nebo **krabice**).
     - **Odhadovaná čistá částka** - Hodnota se vypočítá jako odhadovaná cena položky × množství pro vybranou jednotku.
 
-    ![Dialogové okno Informace o položce](media/customer-portal-item-information.png "Dialogové okno Informace o položce")
+    ![Dialogové okno Informace o položce.](media/customer-portal-item-information.png "Dialogové okno Informace o položce")
 
 1. Vyberte **Odeslat** a přidejte položku do objednávky.
 1. Opakujte kroky 4 až 6, dokud nepřidáte všechny položky, které chcete objednat.
 1. Po dokončení přidávání položek vyberte **Další** na stránce **Položky**.
 1. Stránka **Informace o objednávce** obsahuje shrnutí objednávky. Zkontrolujte obsah objednávky a podrobnosti o doručení. Pokud vše vypadá správně, vyberte **Odeslat** k odeslání objednávky.
 
-    ![Stránka s informacemi o dokončené objednávce](media/customer-portal-order-submit.png "Stránka s informacemi o dokončené objednávce")
+    ![Stránka s informacemi o dokončené objednávce.](media/customer-portal-order-submit.png "Stránka s informacemi o dokončené objednávce")
 
 ### <a name="standard-data-setup"></a>Standardní nastavení dat
 
@@ -147,19 +147,19 @@ Všechny ovládací prvky v zákaznickém portálu jsou vestavěné ovládací p
 
 Jediný vlastní ovládací prvek, který je součástí šablony zákaznického portálu, se používá k vytvoření dlaždic na domovské stránce.
 
-![Dlaždice na domovské stránce](media/customer-portal-home-page-tiles.png "Dlaždice na domovské stránce")
+![Dlaždice na domovské stránce.](media/customer-portal-home-page-tiles.png "Dlaždice na domovské stránce")
 
 Chcete-li upravit dlaždice, postupujte takto.
 
 1. Otevřete [Aplikaci pro správu portálu](/powerapps/maker/portals/configure/configure-portal).
 1. V navigačním podokně nalevo vyberte položku **Šablony stránky**.
 
-    ![Navigační podokno správy portálu](media/customer-portal-nav.png "Navigační podokno správy portálu")
+    ![Navigační podokno správy portálu.](media/customer-portal-nav.png "Navigační podokno správy portálu")
 
 1. Vyberte šablonu stránky s názvem **Domov**.
 1. V poli **Webová šablona** vyberte okaz **Domov** pro otevření zdrojového kódu pro tuto stránku.
 
-    ![Pole webové šablony](media/customer-portal-web-template.png "Pole webové šablony")
+    ![Pole webové šablony.](media/customer-portal-web-template.png "Pole webové šablony")
 
 1. Nyní byste měli vidět veškerý zdrojový kód domovské stránky a můžete jej podle potřeby upravit.
 
