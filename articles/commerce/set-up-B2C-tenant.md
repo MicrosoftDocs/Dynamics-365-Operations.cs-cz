@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1351b9f22416e8ce6d90022997f0a15e9eb4042a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344364"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacíc
 1. Přihlaste se do [portálu Azure](https://portal.azure.com/).
 1. Z nabídky portálu Azure vyberte možnost **Vytvořit prostředek**. Ujistěte se, že používáte předplatné a adresář, který bude připojen k vašemu prostředí Commerce.
 
-    ![Vytvoření prostředku na portálu Azure](./media/B2CImage_1.png)
+    ![Vytvoření prostředku na portálu Azure.](./media/B2CImage_1.png)
 
 1. Přejděte na **Identita \> Azure Active Directory B2C**.
 1. Na stránce **Vytvoření nového klienta B2C nebo připojení k existujícímu klientovi** použijte jednu z následujících možností, které nejlépe vyhovují potřebám vaší společnosti:
@@ -52,25 +52,25 @@ Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacíc
         1. Pro **Země nebo oblast** vyberte zemi nebo oblast.
         1. Volbou **Vytvořit** vytvoříte klienta.
 
-     ![Vytvoření nového klienta Azure AD](./media/B2CImage_2.png)
+     ![Vytvoření nového klienta Azure AD.](./media/B2CImage_2.png)
 
      - **Propojit existujícího klienta Azure AD B2C s mým předplatným Azure**: Tuto možnost použijte, pokud již existuje klient Azure AD B2C, který chcete propojit.
         1. Vyberte **Propojit existujícího klienta Azure AD B2C s mým předplatným Azure**.
         1. Pro **Klient Azure AD B2C** vyberte příslušného klienta B2C. Pokud se v oblasti výběru zobrazí zpráva „Nebyly nalezeni žádní oprávnění klienti B2C“, nemáte žádného existující oprávněného klienta B2C a budete muset vytvořit nového.
         1. Pro **Skupina prostředků** vyberte možnost **Vytvořit novou**. Zadejte **Název** pro skupinu prostředků, která bude obsahovat klienta, vyberte **Umístění skupiny prostředků** a pak vyberte možnost **Vytvořit**.
 
-    ![Propojení existujícího klienta Azure AD B2C s předplatným Azure](./media/B2CImage_3.png)
+    ![Propojení existujícího klienta Azure AD B2C s předplatným Azure.](./media/B2CImage_3.png)
 
 1. Po vytvoření nového adresáře Azure AD B2C (což může chvíli trvat) se na řídicím panelu zobrazí odkaz na nový adresář. Tento odkaz vás přesměruje na stránku „Vítá vás Azure Active Directory B2C“.
 
-    ![Odkaz na nový adresář AAD](./media/B2CImage_4.png)
+    ![Odkaz na nový adresář AAD.](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Pokud máte více předplatných v rámci účtu Azure nebo jste zřídili klienta B2C bez propojení s aktivním předplatným, banner **Řešení potíží** vás nasměruje k propojení klienta a předplatného. Vyberte zprávu řešení potíží a podle pokynů vyřešte problém s předplatným.
 
 Na následujícím obrázku je znázorněn příklad banneru **Řešení potíží** v Azure AD B2C.
 
-![Upozornění, že adresář nemá žádné aktivní předplatné](./media/B2CImage_5.png)
+![Upozornění, že adresář nemá žádné aktivní předplatné.](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>Vytvoření aplikace B2C
 
@@ -136,11 +136,11 @@ Chcete-li vytvořit zásadu toku uživatele pro registraci a přihlášení, pos
 
 Následující obrázek je příkladem toku uživatele pro registraci a přihlášení Azure AD B2C.
 
-![Nastavení zásady registrace a přihlášení](./media/B2CImage_11.png)
+![Nastavení zásady registrace a přihlášení.](./media/B2CImage_11.png)
 
 Následující obrázek znázorňuje možnost **Spustit tok uživatele** v toku uživatele pro registraci a přihlášení Azure AD B2C.
 
-![Možnost Spustit tok uživatele v toku zásady](./media/B2CImage_23.png)
+![Možnost Spustit tok uživatele v toku zásady.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Vytvoření zásady toku uživatele pro úpravu profilu
 
@@ -161,7 +161,7 @@ Chcete-li vytvořit zásadu toku uživatele pro úpravu profilu, postupujte podl
 
 Na následujícím obrázku je znázorněn příklad toku uživatele pro upravu profilu Azure AD B2C.
 
-![Vytvoření toku uživatele pro úpravu profilu](./media/B2CImage_12.png)
+![Vytvoření toku uživatele pro úpravu profilu.](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Vytvoření zásady toku uživatele pro resetování hesla
 
@@ -225,18 +225,18 @@ Chcete-li přidat a nastavit zprostředkovatele sociální identity, postupujte 
 
 Následující obrázek znázorňuje příklad obrazovek **Přidání zprostředkovatele identity** a **Nastavení zprostředkovatele** sociální identity v Azure AD B2C.
 
-![Přidání poskytovatele sociální identity do aplikace](./media/B2CImage_14.png)
+![Přidání poskytovatele sociální identity do aplikace.](./media/B2CImage_14.png)
 
 Následující obrázek znázorňuje příklad, jak vybrat zprostředkovatele identity na stránce **Zprostředkovatelé identity** v Azure AD B2C.
 
-![Výběr jednotlivých zprostředkovatelů sociální identity a povolení vaší zásady](./media/B2CImage_16.png)
+![Výběr jednotlivých zprostředkovatelů sociální identity a povolení vaší zásady.](./media/B2CImage_16.png)
 
 Následující obrázek znázorňuje příklad výchozí přihlašovací obrazovky se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity.
 
 > [!NOTE]
 > Pokud používáte vlastní stránky integrované v Commerce pro vaše toky uživatelů, bude nutné přidat tlačítka pro zprostředkovatele sociální identity pomocí funkcí rozšiřitelnosti knihovny modulů Commerce. Navíc při nastavování aplikací u konkrétního zprostředkovatele sociální identity mohou v některých případech řetězce adresy URL nebo konfigurace rozlišovat velká a malá písmena. Další informace najdete v pokynech pro připojení zprostředkovatele sociální identity.
  
-![Příklad výchozí obrazovky pro přihlášení se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity](./media/B2CImage_17.png)
+![Příklad výchozí obrazovky pro přihlášení se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity.](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Aktualizace Commerce Headquarters o nové informace Azure AD B2C
 
@@ -291,15 +291,15 @@ Chcete-li získat požadované informace o aplikaci, postupujte podle následuj�
 
 Na následujícím obrázku je znázorněn příklad stránky **Azure AD B2C – aplikace**.
 
-![Přechod k aplikaci B2C ve vašem klientovi](./media/B2CImage_19.png)
+![Přechod k aplikaci B2C ve vašem klientovi.](./media/B2CImage_19.png)
 
 Na následujícím obrázku je znázorněn příklad stránky **Vlastnosti** aplikace v Azure AD B2C. 
 
-![Kopírování ID aplikace z vlastností aplikace B2C](./media/B2CImage_21.png)
+![Kopírování ID aplikace z vlastností aplikace B2C.](./media/B2CImage_21.png)
 
 Následující obrázek znázorňuje příklad zásad toku uživatelů na stránce **Azure AD B2C – toky uživatelů (zásady)**.
 
-![Získání názvů jednotlivých toků zásad B2C](./media/B2CImage_22.png)
+![Získání názvů jednotlivých toků zásad B2C.](./media/B2CImage_22.png)
 
 ### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Zadání informací o aplikaci klienta AAD B2C do platformy Commerce
 

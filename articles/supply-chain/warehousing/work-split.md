@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344139"
 ---
 # <a name="work-split"></a>Rozdělení práce
 
@@ -51,7 +51,7 @@ Funkce *Rozdělení práce* přidá následující dvě tlačítka na kartu **Pr
 - **Rozdělení práce** - Rozdělte ID aktuální práce do několika menších ID práce, která lze zpracovat samostatnými pracovníky.
 - **Zrušte relaci rozdělení práce** - Zrušte relaci rozdělení práce a zpřístupněte práci ke zpracování.
 
-![Tlačítka relace Rozdělit práci a Zrušit rozdělení práce](media/Work_split_buttons.png "Tlačítka relace Rozdělit práci a Zrušit rozdělení práce")
+![Tlačítka relace Rozdělit práci a Zrušit rozdělení práce.](media/Work_split_buttons.png "Tlačítka relace Rozdělit práci a Zrušit rozdělení práce")
 
 > [!IMPORTANT]
 > Tlačítko **Rozdělit práci** nebude k dispozici, pokud bude splněna některá z následujících podmínek:
@@ -94,7 +94,7 @@ Chcete-li rozdělit práci, postupujte takto.
 
     Pole **Důvod blokování práce** pro aktuální práci bude nastaveno na *Rozdělit práci* a práce bude zablokována.
 
-    ![Důvod blokování](media/Blocking_reason.png "Důvod blokování")
+    ![Důvod blokování.](media/Blocking_reason.png "Důvod blokování")
 
 1. Vyberte řádky, které chcete odebrat z aktuálního ID práce a přidat do nového ID práce. Dojde k následujícím událostem:
 

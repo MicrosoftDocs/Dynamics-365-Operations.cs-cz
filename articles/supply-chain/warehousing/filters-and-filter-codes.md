@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838243"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345227"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurace produktových filtrů pro skladové transakce
 
@@ -46,11 +46,11 @@ Filtry produktu poskytují až 10 vlastností **Název filtru**, což jsou hodno
 1. V poli **Název filtru** vyberte hodnotu.
 1. Zadejte hodnotu do pole **Kód filtru**.
 
-    ![Nastavení filtru produktu](media/Product_Filters10.png "Nastavení filtru produktu")
+    ![Nastavení filtru produktu.](media/Product_Filters10.png "Nastavení filtru produktu")
 
 1. Do pole **Popis** zadejte název kódu. Například *Kód 2* může představovat dodavatele. Poté můžete vytvořit produktový filtr pro konkrétního dodavatele nebo skupinu dodavatelů. Více informací naleznete v části [Nastavení kódů filtru dodavatele](#vendor-product-filters) dále v tomto tématu.
 
-    ![Nastavení filtrů produktu](media/Product_Filters.png "Nastavení filtrů produktu")
+    ![Nastavení filtrů produktu.](media/Product_Filters.png "Nastavení filtrů produktu")
 
 ## <a name="set-up-product-filter-groups"></a>Nastavení skupin filtru produktu
 
@@ -69,7 +69,7 @@ Chcete-li nastavit skupiny filtrů, postupujte následujícím způsobem.
 1. V poli **Skupina položek** vyberte skupinu položek, na kterou by se měl filtr produktu vztahovat.
 1. V poli **Kód 1** až **Kód 10** podle potřeby vyberte kódy filtrů, které chcete do skupiny zahrnout.
 
-    ![Sk. položek](media/ProdFilterGroup.png "Sk. položek")
+    ![Sk. položek.](media/ProdFilterGroup.png "Sk. položek")
 
 > [!NOTE]
 > Pokud se při zavření stránky zobrazí chybová zpráva, může chybět nastavení kódu. Na stránce **Skupiny položek** můžete označit kódy jako povinné pro skupinu položek zaškrtnutím políček **Přiřadit kód 1 filtru pro skupinu položek**, **Přiřadit kód 2 filtru pro skupinu položek** atd.
@@ -88,7 +88,7 @@ Chcete-li nastavit kódy filtrů pro skupiny zboží postupujte takto.
 
     Chcete-li aktualizovat vydaný produkt, otevřete jeho stránku **Podrobnosti o vydaném produktu** a poté v podokně akcí vyberte **Upravit**. Filtry, které jsou přidruženy ke kódům, budou poté k dispozici na záložce s náhledem **Sklad**.
 
-    ![Sk. položek](media/ItemGroup10.png "Sk. položek")
+    ![Sk. položek.](media/ItemGroup10.png "Sk. položek")
 
 1. V části **Filtr skupin položek** zaškrtněte políčka u filtrů, které se musí shodovat, aby skupina filtrů byla výchozí skupinou filtrů pro položku.
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908560"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344263"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrace Dynamics 365 Supply Chain Management (správa majetku) s Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ Chcete-li přiřadit průvodce k šabloně kontrolního seznamu údržby, postup
     1. Na pevné záložce **Řádky kontrolního seznamu údržby** vyberte řádek, se kterým chcete průvodce spojit.
     1. Na pevné záložce **Přidružení průvodci** vyberte **Přidat průvodce**.
 
-        ![Přiřazení průvodce řádku kontrolního seznamu údržby](media/am-guides-integration-add-guide.png "Přiřazení průvodce řádku kontrolního seznamu údržby")
+        ![Přiřazení průvodce řádku kontrolního seznamu údržby.](media/am-guides-integration-add-guide.png "Přiřazení průvodce řádku kontrolního seznamu údržby")
 
     1. V poli **Název** vyberte průvodce a poté vyberte **Uložit**.
 
-        ![Výběr průvodce v poli Název](media/am-guides-integration-select-guide.png "Výběr průvodce v poli Název")
+        ![Výběr průvodce v poli Název.](media/am-guides-integration-select-guide.png "Výběr průvodce v poli Název")
 
 1. Přidružení šablony kontrolního seznamu údržby typu úlohy:
 
     1. [Vytvořte typ úlohy údržby](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type) nebo vyberte existující typ úlohy údržby.
     1. V podokně akcí vyberte **Výchozí typ úlohy údržby**.
 
-        ![Tlačítko Výchozí hodnoty typu práce údržby](media/am-guides-integration-job-defaults.png "Tlačítko Výchozí hodnoty typu práce údržby")
+        ![Tlačítko Výchozí hodnoty typu práce údržby.](media/am-guides-integration-job-defaults.png "Tlačítko Výchozí hodnoty typu práce údržby")
 
     1. Vytvořte řádek a vyberte **Uložit**.
 
-        ![Vytvoření řádku](media/am-guides-integration-add-line.png "Vytvoření řádku")
+        ![Vytvořte řádek.](media/am-guides-integration-add-line.png "Vytvoření řádku")
 
     1. V podokně akcí klikněte na možnost **Kontrolní seznam údržby**.
 
-        ![Tlačítko Kontrolní seznamy údržby](media/am-guides-integration-maintenance-checklist.png "Tlačítko Kontrolní seznamy údržby")
+        ![Tlačítko Kontrolní seznamy údržby.](media/am-guides-integration-maintenance-checklist.png "Tlačítko Kontrolní seznamy údržby")
 
     1. Na pevné záložce **Řádky kontrolního seznamu údržby** přidejte řádek a poté změňte hodnotu pole **Typ** na **Šablona**.
 
-        ![Změna hodnoty typu](media/am-guides-integration-checklist-lines.png "Změna hodnoty typu")
+        ![Změna hodnoty typu.](media/am-guides-integration-checklist-lines.png "Změna hodnoty typu")
 
     1. Na pevné záložce **Podrobnosti řádku** v poli **Šablona** vyberte šablonu, s níž jste průvodce spojili, a vyberte **Uložit**.
 
-        ![Výběr šablony](media/am-guides-integration-checklist-line-details.png "Výběr šablony")
+        ![Výběr šablony.](media/am-guides-integration-checklist-line-details.png "Výběr šablony")
 
 1. [Vytvořte pracovní příkaz](work-orders/manually-created-workorders.md#create-work-order) a poté vyberte typ úlohy údržby, který používá šablonu kontrolního seznamu údržby, s níž jste průvodce spojili. Průvodce je automaticky přiřazen k pracovnímu příkazu.
 
-    ![Výběr typu úlohy údržby](media/am-guides-integration-create-work-order.png "Výběr typu úlohy údržby")
+    ![Výběr typu úlohy údržby.](media/am-guides-integration-create-work-order.png "Výběr typu úlohy údržby")
 
 1. Podívejte se na průvodce, který je spojen s pracovním příkazem a zaměstnanci:
 
@@ -95,11 +95,11 @@ Chcete-li přiřadit průvodce k šabloně kontrolního seznamu údržby, postup
     1. [Otevřete kontrolní seznam údržby](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) pro pracovní příkaz.
     1. Vyberte řádek kontrolního seznamu k zobrazení souvisejícího průvodce.
 
-        ![Průvodce spojený s řádkem kontrolního seznamu](media/am-guides-integration-show-guide.png "Průvodce spojený s řádkem kontrolního seznamu")
+        ![Průvodce spojený s řádkem kontrolního seznamu.](media/am-guides-integration-show-guide.png "Průvodce spojený s řádkem kontrolního seznamu")
 
     1. Otevřete průvodce v aplikaci HoloLens.
 
-        ![Otevřete průvodce v aplikaci HoloLens](media/am-guides-integration-hololens-select.png "Otevření průvodce v aplikaci HoloLens")
+        ![Otevřete průvodce v aplikaci HoloLens.](media/am-guides-integration-hololens-select.png "Otevření průvodce v aplikaci HoloLens")
 
 > [!NOTE]
 > Průvodce můžete také přiřadit přímo do kontrolního seznamu údržby pracovního příkazu nebo typu úlohy.

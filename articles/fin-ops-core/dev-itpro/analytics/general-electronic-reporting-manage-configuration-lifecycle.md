@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893194"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345731"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Správa životního cyklu konfigurace elektronického vykazování
 
@@ -80,7 +80,7 @@ Je doporučeno navrhovat konfigurace pravidel ve vývojovém prostředí, jako v
 
 Konfigurace elektronického výkaznictví navržené ve vývojovém prostředí je možné [odeslat](#data-persistence-consideration) do testovacího prostředí pro hodnocení konfigurace (správný proces integrace, správnost výsledků, výkonnost) a kontrola kvality (správnost role řídící přístupová práva, dělení zodpovědnosti atd.). Pro tento účel lze použít funkce, které umožňují výměnu konfigurace elektronického výkaznictví. Ověřené konfigurace elektronického výkaznictví je možné uložit buď do LCS pro sdílení se službami odběratelů, nebo je možné je [importovat](#data-persistence-consideration) do provozního prostředí pro interní použití.
 
-![Životní cyklus elektronického výkaznictví](./media/ger-configuration-lifecycle.png)
+![Životní cyklus elektronického výkaznictví.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Záležitosti perzistence dat
 

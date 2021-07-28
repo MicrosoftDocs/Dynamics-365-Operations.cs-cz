@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 079eda04fcc41fc637419a83452db10b89ed1ab9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a9e0f07241de003dd2971e0d336f89795ad1319b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348013"
 ---
 # <a name="archive-er-destination-type"></a>Typ cílového místa elektronického výkaznictví archivu
 
@@ -30,7 +30,7 @@ Můžete konfigurovat cíl archivu pro každou komponentu **Složka** nebo **Sou
 
 Tuto možnost můžete použít k odeslání vygenerovaného dokumentu do složky Microsoft SharePoint nebo úložiště Microsoft Azure. Nastavením **Povoleno** na **Ano** dojde k odeslání výstupu do cíle, který je definován pro vybraný typ dokumentu. K dispozici pro výběr jsou pouze typy dokumentu, kde je skupina nastavena na **Soubor**. [Typy](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) dokumentů definujete pomocí **Správa organizace** \> **Správa dokumentů** \> **Typy dokumentů**. Konfigurace pro cíle EV je stejná, jako nastavení pro systém správy dokumentů.
 
-[![Stránka typu dokumentu](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
+[![Stránka typu dokumentu.](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
 
 Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze výsledky uložit do archivu úloh. Výsledky můžete zobrazit pod **Správa organizace** \> **Elektronické výkaznictví** \> **Archivované úlohy elektronického výkaznictví**.
 
@@ -41,7 +41,7 @@ Umístění určuje, kde bude soubor uložen. Po povolení cíle **Archiv** lze 
 
 Soubor můžete uložit do určené složky SharePoint. Výchozí server SharePoint definujete v nabídce **Správa organizace** \> **Správa dokumentu** \> **Parametry správy dokumentů**. Na kartě **SharePoint** nakonfigurujte složku SharePoint. Poté ji můžete vybrat jako složku, do které bude uložen výstup elektronického výkaznictví. V tomto typu dokumentu musí být vybráno místo **SharePoint**.
 
-[![Výběr složky služby SharePoint](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
+[![Výběr složky služby SharePoint.](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
 
 ## <a name="azure-storage"></a>Úložiště Azure
 

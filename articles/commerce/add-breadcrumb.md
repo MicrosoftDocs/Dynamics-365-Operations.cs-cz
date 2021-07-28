@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7b7cff280d8c6bcb09f2f59d96ec415b9cc1167
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 050ba58073d6e7e7710ab768e7ce3ea628440f4d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796191"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346941"
 ---
 # <a name="breadcrumb-module"></a>Modul popisu cesty
 
@@ -37,7 +37,7 @@ Na stránkách, které mají kontext kategorie produktu, jako jsou stránky podr
 
 Následující obrázek znázorňuje příklad modulu popisu cesty, který zobrazuje hierarchii kategorií na stránce podrobností o produktu.
 
-![Příklad modulu popisu cesty](./media/ecommerce-breadcrumb.PNG)
+![Příklad modulu popisu cesty.](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Nastavení modulu popisu cesty
 

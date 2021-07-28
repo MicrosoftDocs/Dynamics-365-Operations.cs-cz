@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 5a18fed2eac4c120dca20a1d7797d047639275b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 70904ee716aabd019210e92895a894810bde27fb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750587"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346513"
 ---
 # <a name="switch-between-vendor-designs"></a>Přepínání mezi návrhy dodavatele
 
@@ -48,14 +48,14 @@ Pro vytvoření nových procesů workflowu pomocí šablon procesů workflowu po
 
 1. Vytvořte proces pracovního postupu pro tabulku **Dodavatel** a vyberte šablonu procesu pracovního postupu **Vytvoření dodavatelů v tabulce Účty**. Pak vyberte **OK**. Tento workflow zpracovává scénář vytvoření dodavatele pro tabulku **Účet**.
 
-    ![Proces pracovního postupu Vytvoření dodavatelů v tabulce Účty](media/create_process.png)
+    ![Proces pracovního postupu Vytvoření dodavatelů v tabulce Účty.](media/create_process.png)
 
 2. Vytvořte proces pracovního postupu pro tabulku **Dodavatel** a vyberte šablonu procesu pracovního postupu **Aktualizace dodavatelů v tabulce Účty**. Pak vyberte **OK**. Tento workflow zpracovává scénář aktualizace dodavatele pro tabulku **Účet**.
 3. Vytvořte proces pracovního postupu pro tabulku **Účet** a vyberte šablonu procesu pracovního postupu **Vytvoření dodavatelů v tabulce Dodavatelé**.
 4. Vytvořte proces pracovního postupu pro tabulku **Účet** a vyberte šablonu procesu pracovního postupu **Aktualizace dodavatelů v tabulce Dodavatelé**.
 5. Pracovní postupy můžete konfigurovat buď jako workflowy v reálném čase nebo na pozadí v závislosti na vašich požadavcích. Chcete-li nakonfigurovat workflow jako workflow na pozadí, vyberte možnost **Převést na workflow na pozadí**.
 
-    ![Tlačítko Převést na workflow na pozadí](media/background_workflow.png)
+    ![Tlačítko Převést na workflow na pozadí.](media/background_workflow.png)
 
 6. Aktivujte pracovní postupy, které jste vytvořili pro tabulky **Účet** a **Dodavatel**, abyste mohli začít používat tabulku **Účet** k ukládání informací pro dodavatele typu **Organizace**.
 

@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292754"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343717"
 ---
 # <a name="container-packing-strategies"></a>Strategie balení kontejnerů
 
@@ -251,7 +252,7 @@ Pokud chcete nastavit zásady konsolidace dodávky, postupujte následovně.
 1. Vyberte **Výchozí** zásady v seznamu.
 1. V podokně akcí vyberte **Upravit**.
 1. Na záložce s náhledem **Pole konsolidace** v seznamu **Vybraná pole** vyberte řádek, ve kterém je pole **Název pole** nastaveno na *Číslo objednávky*.
-1. Vyberte tlačítko **Odebrat** ![Levá šipka](media/backward-button.png) a přesuňte do seznamu **Zbývající pole**.
+1. Vyberte tlačítko **Odstranit** ![šipka vlevo.](media/backward-button.png) přesuňte pole do seznamu **Zbývající pole**.
 1. V podokně akcí vyberte **Uložit**.
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>Nastavit fyzické rozměry produktu.

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796479"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345201"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Zobrazení oznámení objednávek v pokladním místě (POS)
 
@@ -72,14 +72,14 @@ Tlačítka POS mohou nyní zobrazit počet, což pracovníkům usnadňuje určit
 
 Následující obrázek znázorňuje nastavení aktivního obsahu v návrháři mřížky tlačítek.
 
-![Nastavení živého obsahu v Návrháři mřížky tlačítek](./media/ButtonGridDesigner.png "Nastavení živého obsahu v Návrháři mřížky tlačítek")
+![Nastavení živého obsahu v Návrháři mřížky tlačítek.](./media/ButtonGridDesigner.png "Nastavení živého obsahu v Návrháři mřížky tlačítek")
 
 Chcete-li zobrazit počet oznámení na tlačítku, je nutné zajistit, aby bylo aktualizováno správné rozvržení obrazovky. Chcete-li určit rozvržení obrazovky, které používá POS, vyberte ikonu **Nastavení** v pravém horním rohu a poznamenejte si **ID rozvržení obrazovky** a **Rozlišení rozvržení**. Nyní pomocí prohlížeče Edge přejděte na stránku **Rozvržení obrazovky**, najděte výše uvedené **ID rozvržení obrazovky** a **Rozlišení rozvržení** a zaškrtněte políčko **Povolit živý obsah**. Přejděte na **Maloobchod a velkoobchod \> IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu 1090 (Registry) pro synchronizaci změn rozvržení.
 
-![Najít rozvržení obrazovky použité POS](./media/Choose_screen_layout.png "Vyhledání rozložení obrazovky")
+![Najít rozvržení obrazovky použité POS.](./media/Choose_screen_layout.png "Vyhledání rozložení obrazovky")
 
 Následující obrázek znázorňuje účinek výběru **Vpravo nahoře** oproti možnosti **Na střed** v poli **Zarovnání obsahu** pro tlačítka různých velikostí.
 
-![Aktivní obsah na tlačítkách POS](./media/ButtonsWithLiveContent.png "Aktivní obsah na tlačítkách POS")
+![Aktivní obsah na tlačítkách POS.](./media/ButtonsWithLiveContent.png "Aktivní obsah na tlačítkách POS")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

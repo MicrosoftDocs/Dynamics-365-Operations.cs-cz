@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190081"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347679"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
@@ -42,7 +42,7 @@ Produkt je vykázaný jako dokončený do výstupního místa výroby (3) a řid
 -   Pokud je k nákladové bráně již přiřazen přívěs, řidič nákladního automobilu bude nasměrován k přímému naložení výrobku na přívěs.
 -   Pokud neexistuje žádná plánovaná aktivita pro převod produktu, řidič vysokozdvižného vozíku bude nasměrován umístit produkt v interním skladu (5).
 
-[![příležitostný cross docking](./media/scenario1.png)](./media/scenario1.png)
+[![příležitostný cross docking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurace cross dockingu
 Proces cross dockingu se konfiguruje v **zásadách práce**. Zásady práce obsahují typ pracovního příkazu, umístění a produkt. V následujícím příkladu je cross docking nakonfigurovaný pro produkt X a skladové místo Y.

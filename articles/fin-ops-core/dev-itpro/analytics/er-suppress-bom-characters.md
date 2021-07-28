@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893269"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345881"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Návrh konfigurací ER k potlačení znaků kusovníku ve vygenerovaných souborech
 
@@ -29,14 +29,14 @@ Můžete navrhnout [řešení](general-electronic-reporting.md) [pro formát ele
 > [!NOTE]
 > Pokud formát obsahuje nesprávný název kódování, dojde k chybě, když uložíte změny v nastavení formátu.
 
-![Přidání kořenového prvku a polí na stránce Návrhář formátu](./media/er-suppress-bom-characters-image1.gif)
+![Přidání kořenového prvku a polí na stránce Návrhář formátu.](./media/er-suppress-bom-characters-image1.gif)
 
 Pokud jako kódování zadáte **UTF-8**, **UTF-16**, nebo **UTF-32**, zpřístupní se možnost **Potlačit znaky BOM**. Tuto možnost nastavte na **Ano**, pokud chcete potlačit [znaky pořadí bajtů (BOM)](/globalization/encoding/byte-order-mark) v odchozích souborech, které jsou generovány za běhu, když je spuštěn upravitelný formát ER.
 
 > [!NOTE]
 > Ponecháte-li pole **Kódování** prázdné, použije se výchozí kódování **UTF-8**.
 
-![Nastavení možnosti Potlačit znaky BOM na stránce Návrhář formátů](./media/er-suppress-bom-characters-image2.gif)
+![Nastavení možnosti Potlačit znaky BOM na stránce Návrhář formátů.](./media/er-suppress-bom-characters-image2.gif)
 
 Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Například proveďte kroky v tématu [Odložit provedení prvků XML ve formátech ER](er-defer-xml-element.md). Po dokončení kroků v části [Úprava formátu tak, aby byl výpočet založen na generovaném výstupu](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tohoto tématu, postupujte podle těchto dalších kroků.
 
@@ -59,7 +59,7 @@ Chcete-li zkontrolovat funkčnost za běhu, proveďte příslušný postup. Nap�
 
     První rozdíl, kterého si všimnete, je v záhlaví souboru. Soubor SampleXmlReport.xml obsahuje znak BOM, kdežto soubor SampleXmlReport (1) .xml nikoli.
 
-    ![Porovnávání generovaných souborů pomocí nástroje pro porovnání souborů](./media/er-suppress-bom-characters-image3.png)
+    ![Porovnávání generovaných souborů pomocí nástroje pro porovnání souborů.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Viz také
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348157"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
@@ -39,7 +39,7 @@ Také musí mít přístup k vývojovému prostředí pro tuto topologii.
 
 V aktuální topologii [vytvořte nový formát elektronického výkaznictví](tasks/er-format-configuration-2016-11.md) ke generování dokumentů, pro které chcete přidat vlastní umístění úložiště. Alternativně [importujte stávající formát elektronického výkaznictví do této topologie](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Stránka návrháře formátu](media/er-extend-file-storages-format.png)
+![Stránka návrháře formátu.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Formát elektronického výkaznictví, který vytvoříte nebo importujete, musí obsahovat alespoň jednu z následujících prvků formátu:
@@ -58,7 +58,7 @@ Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elekt
 3. V poli **Třída** určete **Připojit soubor**.
 4. V poli **Skupina** určete **Soubor**.
 
-![Stránka typu dokumentu](media/er-extend-file-storages-document-type.png)
+![Stránka typu dokumentu.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Typy dokumentů jsou specifické pro společnost. Chcete-li použít formát elektronického výkaznictví s nakonfigurovaným umístěním ve více společnostech, musíte v každé společnosti nakonfigurovat samostatný typ dokumentu.
@@ -113,14 +113,14 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 - **Archiv** – Při použití tohoto umístění je v tabulce ERFormatMappingRunJobTable vytvořen nový záznam pro formát elektronického výkaznictví, který je spuštěn. Pole **Archivované** v tomto záznamu je nastaveno na **False**. Je-li formát elektronického výkaznictví spuštěn úspěšně, generovaný dokument je připojen k tomuto záznamu a je vyvolána událost **AttachingFile()**. Typ dokumentu, který je vybrán v tomto umístění elektronického výkaznictví, určuje umístění úložiště pro připojený soubor (Microsoft Azure Storage nebo složka Microsoft SharePoint).
 - **Archiv úloh** – Při použití tohoto umístění je v tabulce ERFormatMappingRunJobTable vytvořen nový záznam pro formulář elektronického výkaznictví, který je spuštěn. Pole **Archivované** v tomto záznamu je nastaveno na **True**. Je-li formát elektronického výkaznictví spuštěn úspěšně, generovaný dokument je připojen k tomuto záznamu a je vyvolána událost **AttachingFile()**. Typ dokumentu, který je nakonfigurován v parametrech elektronického výkaznictví, určuje umístění úložiště pro připojený soubor (Azure Storage nebo složka Microsoft SharePoint).
 
-![Stránka parametrů elektronického výkaznictví](media/er-extend-file-storages-parameters.png)
+![Stránka parametrů elektronického výkaznictví.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurace umístění elektronického výkaznictví
 
 1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Použijte typ dokumentu, který jste přidali dříve pro nakonfigurované umístění. (Například v tomto tématu je typ dokumentu **FileX**.)
 
-![Dialogové okno nastavení cíle](media/er-extend-file-storages-destination.png)
+![Dialogové okno nastavení cíle.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Úprava zdrojového kódu
 

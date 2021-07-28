@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944358"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345683"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -101,7 +103,7 @@ Komponenta formátu umožňuje připojit určité soubory, které lze použít v
 
 Následující obrázek znázorňuje tok dat u těchto formátů.
 
-[![Tok dat pro odchozí komponenty formátu](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Tok dat pro odchozí komponenty formátu.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Chcete-li spustit jednu konfiguraci formátu ER a vygenerovat odchozí elektronický dokument, je nutné určit mapování konfigurace formátu.
 
@@ -115,7 +117,7 @@ Komponenta formátu je schématem příchozího dokumentu, které se importuje p
 
 Následující obrázek znázorňuje tok dat u těchto formátů.
 
-[![Tok dat pro příchozí komponenty formátu](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Tok dat pro příchozí komponenty formátu.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Chcete-li spustit jednu konfiguraci formátu ER při importu dat z příchozího elektronického dokumentu, je nutné určit požadované mapování konfigurace formátu a bod integrace mapování modelu. Pro různé typy příchozích dokumentů můžete použít stejné mapování modelu a cíle společně s různými formáty.
 
@@ -290,7 +292,7 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 
 Seznam konfigurací ER pro Finance se neustále aktualizuje. Otevřete [Globální úložiště](er-download-configurations-global-repo.md) ke kontrole seznamu konfigurací ER, které jsou aktuálně podporovány. Na kartě s náhledem **Podrobnosti o ukončení** můžete zkontrolovat informace o konfiguracích, které byly přerušeny nebo které již nejsou udržovány. 
 
-![Obsah globálního úložiště na stránce úložiště konfigurace](./media/er-overview-03.gif)
+![Obsah globálního úložiště na stránce úložiště konfigurace.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344875"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -56,14 +56,14 @@ Je také nutné stáhnout a lokálně uložit následující soubory.
 
 Každé sledování výkonu elektronického výkaznictví, které je generováno v aplikaci, je uloženo jako příloha záznamu protokolu provádění. Pro správu těchto příloh se používá architektura správy dokumentů (DM). Parametry elektronického výkaznictví je nutné nakonfigurovat s předstihem, aby bylo možné určit typ dokumentu ve správě dokumentů, který se má použít pro připojení sledování výkonu. V pracovním prostoru **Elektronické sestavy** vyberte **Parametry elektronického vykazování**. Poté na stránce **Parametry elektronického výkaznictví** na kartě **Přílohy** v poli **Jiné** vyberte dokument správy dokumentů pro použití sledování výkonů.
 
-![Stránka parametrů elektronického výkaznictví](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Stránka parametrů elektronického výkaznictví.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 Aby byl k dispozici ve vyhledávacím poli **Jiné**, musí být typ dokumentu typu správy dokumentů nakonfigurován následujícím způsobem na stránce **Typy dokumentů** (**Správa organizace \> Správa dokumentů \> Typy dokumentů**):
 
 - **Třída:** Připojit soubor
 - **Skupina:** Soubor
 
-![Stránka typu dokumentu](./media/GER-PerfTrace-DM-DocumentType.png)
+![Stránka typu dokumentu.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Vybraný typ dokumentu musí být k dispozici ve všech společnostech aktuální instance, protože přílohy správy dokumentů jsou specifické pro konkrétní společnost.
@@ -72,7 +72,7 @@ Aby byl k dispozici ve vyhledávacím poli **Jiné**, musí být typ dokumentu t
 
 Sledování výkonu elektronického výkaznictví, která jsou generována, budou importována do RCS pro analýzu pomocí návrháře formátu elektronického výkaznictví a návrháře mapování elektronického výkaznictví. Vzhledem k tomu, že sledování výkonu elektronického výkaznictví jsou uložena jako přílohy záznamu protokolu spouštění, který souvisí s formátem elektronického výkaznictví, je nutné předem nakonfigurovat parametry RCS, aby bylo možné určit typ dokumentu správy dokumentů, který se má použít pro připojení sledování výkonu. V instanci RCS zřízené pro vaši společnost vyberte v pracovním prostoru **Elektronické výkaznictví** možnost **Parametry elektronického výkaznictví**. Poté na stránce **Parametry elektronického výkaznictví** na kartě **Přílohy** v poli **Jiné** vyberte dokument správy dokumentů pro použití sledování výkonů.
 
-![Stránka parametrů elektronického výkaznictví v RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Stránka parametrů elektronického výkaznictví v RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 Aby byl k dispozici ve vyhledávacím poli **Jiné**, musí být typ dokumentu typu správy dokumentů nakonfigurován následujícím způsobem na stránce **Typy dokumentů** (**Správa organizace \> Správa dokumentů \> Typy dokumentů**):
 
@@ -92,7 +92,7 @@ Předpokládejme, že jste začali navrhovat nové řešení elektronického vý
     2. Zvolte **Procházet** a vyberte příslušný soubor pro požadovanou konfiguraci elektronického výkaznictví ve formátu XML.
     3. Vyberte **OK**.
 
-    ![Stránka konfigurace v RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Stránka konfigurace v RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Spuštění řešení elektronického výkaznictví pro sledování provádění
 
@@ -109,7 +109,7 @@ Předpokládejme, že jste dokončili návrh první verze řešení elektronick�
     3. Na záložce s náhledem **Konfigurace** vyberte konfiguraci **Formát sledování výkonu**.
     4. Na záložce s náhledem **Verze** zvolte verzi **1.1** zvolené konfigurace a poté zvolte **Importovat**.
 
-    ![Stránka úložiště konfigurace](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Stránka úložiště konfigurace.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Odpovídající verze konfigurací datových modelů a mapování modelů jsou automaticky importovány jako předpoklady pro importovanou konfiguraci formátu elektronického výkaznictví.
 
@@ -156,7 +156,7 @@ Odpovídající verze konfigurací datových modelů a mapování modelů jsou a
     > [!NOTE]
     > Parametry v dialogovém okně **Parametry uživatelů** jsou specifické pro uživatele a aktuální společnost.
 
-    ![Dialogové okno Parametry uživatele](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Dialogové okno Parametry uživatele.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Spuštění formátu elektronického výkaznictví
 
@@ -177,11 +177,11 @@ Sledování výkonu je odděleno od zdrojového formátu elektronického výkazn
 2. Na stránce **Protokoly spuštění elektronického výkaznictví** v levém podokně v poli **Název konfigurace** vyberte **Formát sledování výkonu** pro vyhledání záznamů protokolů, které byly vygenerovány provedením konfigurace **Formát sledování výkonu**.
 3. Vyberte tlačítko **Přílohy** (ikona kancelářské sponky) v pravém horním rohu stránky, nebo stiskněte **Ctrl+Shift+A**.
 
-    ![Tlačítko Přílohy na stránce Protokoly spuštění elektronického výkaznictví](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Tlačítko Přílohy na stránce Protokoly spuštění elektronického výkaznictví.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. Na stránce **Přílohy pro protokoly spuštění elektronického výkaznictví** v podokně akcí zvolte **Otevřít** pro získání sledování výkonu jako souboru ZIP, a lokálně ho uložte.
 
-    ![Přílohy pro protokoly spuštění elektronických sestav](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Přílohy pro protokoly spuštění elektronických sestav.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Vygenerovaní sledování má odkaz na zdrojovou sestavu elektronického výkaznictví prostřednictvím jedinečného identifikátoru sestavy pouze ve formátu **GUID**. Číslování verzí formátu není zvažováno.
@@ -198,7 +198,7 @@ Všimněte si, že přidružení mezi sledováním výkonu, které bylo vygenero
 6. Vyberte **Procházet** a vyberte soubor zip, který jste předtím exportovali.
 7. Vyberte **OK**.
 
-    ![Dialogové okno nastavení výsledků sledování výkonu v RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Dialogové okno nastavení výsledků sledování výkonu v RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Použití sledování výkonu pro analýzu v RCS – provádění formátu
 
@@ -209,7 +209,7 @@ Všimněte si, že přidružení mezi sledováním výkonu, které bylo vygenero
     - Skutečný čas strávený zadáváním dat ve vygenerovaném výstupu s použitím položky formátu
     - Stejný čas vyjádřený jako procento z celkového času stráveného generováním celého výstupu
 
-    ![Stránka návrháře formátu v RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Stránka návrháře formátu v RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Zavřete stránku **návrháře formátu**.
 
@@ -232,7 +232,7 @@ Všimněte si, že elektronické výkaznictví vás informuje, že aktuální ma
 - Jedno volání se provádí pro zadání podrobností o každé transakci v datovém modelu na základě konfigurovaných vazeb.
 - Druhé volání se provádí k zadání vypočítaného počtu transakcí pro dodavatele v datovém modelu.
 
-![Zpráva o duplicitních žádostech databáze na stránce návrháře mapování modelu v RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Zpráva o duplicitních žádostech databáze na stránce návrháře mapování modelu v RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 Hodnota **\[Q:530\]** označuje, že tabulka VendTrans byla volána 530krát, aby vracela záznam z této tabulky do datové zdroje VendTable/\<Relations/VendTrans.VendTable\_AccountNum. Hodnota **\[530\]** označuje, že zdroj dat VendTable/\<Relations/VendTrans.VendTable\_AccountNum byl volán 530krát, aby vracel záznam z tohoto zdroje dat a zadal z něj podrobnosti do datového modelu.
 
@@ -253,7 +253,7 @@ Je také užitečné omezit počet volání, která jsou provedena na zdroj dat 
     3. Rozbalte položku **VendTable**, rozbalte seznam relací 1:N pro zdroj dat VendTable (položka **\<Vztahy**) a vyberte položku **VendTrans. VendTable\_AccountNum**.
     4. Vyberte **Mezipaměť**.
 
-    ![Nastavení ukládání do mezipaměti za účelem předcházení duplicitním voláním](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Nastavení ukládání do mezipaměti za účelem předcházení duplicitním voláním.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Chcete-li do rozsahu datového zdroje VendTable přenést zdroj dat LedgerTransTypeList, postupujte podle následujících kroků:
 
@@ -274,7 +274,7 @@ Je také užitečné omezit počet volání, která jsou provedena na zdroj dat 
     3. Vyberte položku **VendTable.\$TransType**.
     4. Vyberte **Mezipaměť**.
 
-    ![Nastavení ukládání do mezipaměti pro pole $TransType](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Nastavení ukládání do mezipaměti pro pole $TransType.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Chcete-li změnit **\$TransTypeRecord** tak, aby začalo používat pole **\$TransType** uložené v mezipaměti, použijte následující postup:
 
@@ -329,19 +329,19 @@ Opakujte kroky v části [Použití sledování výkonu pro analýzu v RCS – m
 
 Všimněte si, že úpravy provedené v mapování modelu odstranily duplicitní dotazy do databáze. Počet volání databázových tabulek a zdrojů dat pro toto mapování modelu byl také snížen. Z toho vyplývá zvýšení výkonu celého řešení elektronického výkaznictví.
 
-![Sledování informací pro datový zdroj VendTable na stránce návrháře mapování modelu v RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Sledování informací pro datový zdroj VendTable na stránce návrháře mapování modelu v RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 Hodnota **\[12\]** pro zdroj dat VendTable v informacích o sledování označuje, že tento zdroj dat byl volán 12krát. Hodnota **\[Q:6\]** označuje, že šest volání bylo přeloženo do volání databáze do tabulky VendTable. Hodnota **\[C:6\]** označuje, že záznamy načtené z databáze byly uloženy do mezipaměti a šest dalších volání bylo zpracováno pomocí mezipaměti.
 
 Všimněte si, že počet volání zdroje dat LedgerTransTypeList byl snížen z 9 027 na 240.
 
-![Sledování informací pro datový zdroj LedgerTransTypeList na stránce návrháře mapování modelu v RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Sledování informací pro datový zdroj LedgerTransTypeList na stránce návrháře mapování modelu v RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Kontrola sledování spuštění v aplikaci
 
 Kromě RCS mohou některé verze nabídnout možnosti pro rozhraní návrháře architektury elektronického výkaznictví. Tyto verze mají možnost **Povolit režim návrhu**, kterou lze zapnout. Tuto možnost naleznete na kartě **Obecné** na stránce **Parametry elektronického výkaznictví**, kterou lze otevřít v pracovním prostoru **elektronického výkaznictví**.
 
-![Povolení možnosti režimu návrhu na stránce parametry elektronického vykazování](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Povolení možnosti režimu návrhu na stránce parametry elektronického vykazování.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Pokud používáte některou z těchto verzí můžete analyzovat podrobnosti generovaných sledováních výkonu přímo v aplikaci. Nemusíte je exportovat z aplikace a importovat do RCS.
 
@@ -359,7 +359,7 @@ Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#r
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví.
 
-![Informace o sledování výkonu ve formátu PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informace o sledování výkonu ve formátu PerfView.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Použití externích nástrojů ke kontrole sledování provádění, které obsahuje databázové dotazy
 
@@ -375,7 +375,7 @@ Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronické
     - Nastavte možnost **Shromáždit statistiky dotazů** na **Ano**.
     - Nastavte možnost **Dotaz na sledování** na **Ano**.
 
-    ![Sekce sledování spuštění, dialogové okno Parametry uživatelů](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Sekce sledování spuštění, dialogové okno Parametry uživatelů.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
 
@@ -383,7 +383,7 @@ Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#r
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví. Sledování nyní zahrnuje podrobné informace o přístupu k databázi SQL během provádění formátu elektronického výkaznictví.
 
-![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Další prostředky
 

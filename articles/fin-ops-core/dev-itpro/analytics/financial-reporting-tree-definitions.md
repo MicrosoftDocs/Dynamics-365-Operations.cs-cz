@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345779"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definice organizačního stromu ve finančních sestavách
 
@@ -170,23 +170,23 @@ V následujícím stromu výkaznictví je uvedena struktura jednotek výkaznictv
 - Jednotky výkaznictví podrobností na nejnižší úrovni (Domovní prodej, Automatický prodej, Klientské služby a Provoz) představují oddělení ve finančních datech. Tyto jednotky výkaznictví jsou v šedé oblasti diagramu.
 - Jednotky souhrnu na vyšší úrovni shrnují informace z jednotek podrobností.
 
-[![Struktura souhrnné zprávy Contoso – příklad 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktura souhrnné zprávy Contoso – příklad 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktura jednotky výkaznictví – příklad 2
 
 Následující diagram znázorňuje strom výkaznictví zobrazující organizační strukturu, která je rozdělena podle firemní funkce.
 
-[![Struktura souhrnné zprávy Contoso – příklad 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktura souhrnné zprávy Contoso – příklad 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Příklad dialogového okna Vložit jednotky výkaznictví z dimenzí
 
 V následujícím příkladu dialogové okno **Vložit jednotky výkaznictví z dimenzí** obsahuje následující informace. V tomto příkladu vrátí výsledky kombinaci obchodních jednotek, nákladových středisek a oddělení.
 
-[![Vložit organizační jednotky](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Vložit organizační jednotky.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Výsledná definice stromu výkaznictví je řazena podle organizační jednotky, potom podle nákladového střediska a nakonec podle oddělení. Dimenze páté jednotky výkaznictví je **Obchodní jednotka = \[001\], Nákladové středisko =\[\], Oddělení = \[022\]**, a identifikuje jednotky výkaznictví pro účty, které jsou specifické pro obchodní jednotku 001 a oddělení 022.
 
-[![Ilustrace organizačních stromů](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Ilustrace organizačních stromů.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Příklady shrnutí dat
 
@@ -194,11 +194,11 @@ Následující příklady ukazují možné informace, které jsou použity v def
 
 #### <a name="example-1"></a>Příklad 1
 
-[![Shrnutí společnost Mutli](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Shrnutí více společností.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Příklad 2
 
-[![Souhrn oddělení napříč společností](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Souhrn oddělení napříč společností.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

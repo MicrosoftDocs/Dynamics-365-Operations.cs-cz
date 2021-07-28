@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897155"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346443"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
 
@@ -30,7 +32,7 @@ Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, kter
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co je zpráva o bezhotovostním převodu?
 Zpráva o převodu kreditu je požadavek, který odešle iniciující strana (vaše společnost) pro převod financí z vlastního účtu věřiteli. Existuje celá řada implementací specifických pro zemi/oblast a konkrétní implementace zpráv o převodu kreditu. Některé z nich se používají v rámci jedné země nebo oblasti a některé se stávají standardem. Jeden dobře zavedený globální standard je ISO 20022 a jeho iniciační zprávy, jako je například převod kreditu. Následující obrázek znázorňuje vztahy a pokrytí pro vybrané zprávy o převodu kreditu. 
-![Převod kreditu](./media/credit-transfer.jpg) Zprávy o převodu kreditu 
+![Peněžní převod](./media/credit-transfer.jpg) Zprávy o peněžním převodu 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Co jsou platby ISO 20022 a SEPA?
 Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází. Neexistuje žádný rozdíl mezi národní a zahraniční platbou. SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino. SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP). Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat. Evropská komise ustanovila právní základ pro platby SEPA prostřednictvím směrnice týkající se platebních služeb (PSD). Evropská rada pro platby (EPC) podporuje platby SEPA prostřednictvím následujících činností:

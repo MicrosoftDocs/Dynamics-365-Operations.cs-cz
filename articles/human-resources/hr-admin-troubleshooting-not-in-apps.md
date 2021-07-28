@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 292db7e430bf0f2171f2b0a482ad70250774caec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053364"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346339"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
 
@@ -39,19 +39,19 @@ Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Micr
 
 3. Na kartě **Zabezpečení** na kartě **Role prostředí** zvolte **Tvůrce prostředí**.
 
-    ![Karta Role prostředí](media/environment-roles.png)
+    ![Karta Role prostředí.](media/environment-roles.png)
 
 4. Na kartě **Uživatelé** přidejte uživatele nebo organizaci.
 
-    ![Karta Uživatelé](media/environment-maker.png)
+    ![Karta Uživatelé.](media/environment-maker.png)
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
 6. Uživatel se musí nyní přihlásit do [Microsoft Dynamics 365](https://home.dynamics.com/).
 
 7. Vyberte **Synchronizovat** pro aktualizaci uživatelských aplikací.
 
-    ![Tlačítko Synchronizovat](media/get-more.png)
+    ![Tlačítko Synchronizovat.](media/get-more.png)
 
     Po dokončení synchronizace se Human Resources se objeví na domovské stránce.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894069"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346637"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Návrh nové konfigurace ER pro generování sestav ve formátu Word
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894069"
 
 Abyste mohli generovat zprávy jako dokumenty Microsoft Word, musíte navrhnout šablonu pro zprávy například pomocí desktopové aplikace Word. Následující obrázek ukazuje vzorovou šablonu pro kontrolní sestavu, kterou lze vygenerovat pro zobrazení podrobností zpracovaných plateb dodavatele.
 
-![Ukázková šablona pro kontrolní sestavu v desktopové aplikaci Word](./media/er-design-configuration-word-image1.png)
+![Ukázková šablona pro kontrolní sestavu v desktopové aplikaci Word.](./media/er-design-configuration-word-image1.png)
 
 Chcete-li použít dokument Word jako šablonu pro sestavy ve formátu Word, můžete nakonfigurovat nové [řešení](general-electronic-reporting.md)[elektronického výkaznictví (ER)](er-quick-start1-new-solution.md). Toto řešení musí obsahovat [konfiguraci ER](general-electronic-reporting.md#Configuration), která obsahuje komponentu [formát](general-electronic-reporting.md#FormatComponentOutbound) ER.
 
 > [!NOTE]
 > Když vytvoříte novou konfiguraci formátu ER pro generování sestav ve formátu Word, musíte jako typ formátu zdroje vybrat buď **Word** v rozevíracím dialogu **Vytvořit konfiguraci**, nebo nechat pole **Typ formátu** prázdné.
 
-![Vytvoření konfigurace formátu na stránce Konfigurace](./media/er-design-configuration-word-image2.gif)
+![Vytvoření konfigurace formátu na stránce Konfigurace.](./media/er-design-configuration-word-image2.gif)
 
 Komponenta formátu ER řešení musí obsahovat prvek formátu **Excel\\Soubor** a tento prvek formátu musí být propojen s dokumentem Word, který bude použit jako šablona pro generované sestavy za běhu. Chcete-li nakonfigurovat komponentu formátu ER, musíte otevřít [rámcovou](general-electronic-reporting.md#component-versioning) verzi vytvořené konfigurace ER v návrháři formátu ER. Pak přidejte prvek **Excel\\Soubor**, připojte šablonu Wordu k upravitelnému formátu ER a propojte tuto šablonu s prvkem **Excel\\Soubor**, který jste přidali.
 
 > [!NOTE]
 > Když ručně připojíte šablonu, musíte použít [typ dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), který byl předtím [nakonfigurován](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) v parametrech ER k uložení šablon formátů ER.
 
-![Připojení šablony na stránce Návrhář formátů](./media/er-design-configuration-word-image3.gif)
+![Připojení šablony na stránce Návrhář formátů.](./media/er-design-configuration-word-image3.gif)
 
 Můžete přidat vnořené prvky **Excel\\Rozsah** a **Excel\\Buňka** pro prvek **Excel\\Soubor** k určení struktury dat, která budou zadána do generovaných sestav za běhu. Tyto prvky pak musíte vázat se zdroji dat upravitelného formátu ER, abyste určili skutečná data, která budou zadána do generovaných sestav za běhu.
 
-![Přidání vnořených prvků a polí na stránce Návrhář formátu](./media/er-design-configuration-word-image4.gif)
+![Přidání vnořených prvků a polí na stránce Návrhář formátu.](./media/er-design-configuration-word-image4.gif)
 
 Když uložíte změny do formátu ER v době návrhu, hierarchická struktura formátu se uloží v přiložené šabloně Word jako [vlastní část XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), která má název **Sestava**. Musíte mít přístup k upravené šabloně, stáhnout ji z aplikace Finance, uložit ji místně a otevřít ji v desktopové aplikaci Word. Následující obrázek ukazuje lokálně uloženou ukázkovou šablonu pro kontrolní sestavu, která obsahuje vlastní část XML **Sestava**.
 
-![Náhled ukázkové šablony sestavy v desktopové aplikaci Word](./media/er-design-configuration-word-image5.gif)
+![Náhled ukázkové šablony sestavy v desktopové aplikaci Word.](./media/er-design-configuration-word-image5.gif)
 
 Při vázání prvků formátu **Excel\\Rozsah** a **Excel\\buňka** v době běhu jsou data, která každá vazba doručí, v generovaném dokumentu Word jako jednotlivé pole části vlastního XML **Sestava**. Chcete-li do generovaného dokumentu zadat hodnoty z polí vlastní části XML, musíte přidat příslušné [ovládací prvky obsahu](/office/client-developer/word/content-controls-in-word) aplikace Word do šablony aplikace Word, aby sloužil jako zástupný symbol pro data, která budou vyplněna za běhu. Chcete-li určit, jak se vyplňují ovládací prvky obsahu, namapujte každý ovládací prvek obsahu do příslušné vlastní části XML **Sestavy** .
 
-![Přidávání a mapování ovládacích prvků obsahu v desktopové aplikaci Word](./media/er-design-configuration-word-image6.gif)
+![Přidávání a mapování ovládacích prvků obsahu v desktopové aplikaci Word.](./media/er-design-configuration-word-image6.gif)
 
 Poté musíte nahradit původní šablonu Word upravitelného formátu ER upravenou šablonou, která nyní obsahuje ovládací prvky obsahu Word, které byly namapovány na vlastní část XML pole **Sestava**.
 
-![Nahrazení šablony na stránce Návrhář formátů](./media/er-design-configuration-word-image7.gif)
+![Nahrazení šablony na stránce Návrhář formátů.](./media/er-design-configuration-word-image7.gif)
 
 Když spustíte nakonfigurovaný formát ER, připojená šablona Word se použije ke generování nové sestavy. Skutečná data jsou uložena v sestavě Word jako vlastní část XML s názvem **Sestava**. Po otevření vygenerované sestavy se ovládací prvky obsahu Word vyplní údaji z vlastní části XML **Sestavy**.
 

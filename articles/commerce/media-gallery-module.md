@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271273"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346709"
 ---
 # <a name="media-gallery-module"></a>Modul galerie médií
 
@@ -41,7 +41,7 @@ Zde je několik příkladů použití modulů galerie médií:
 
 V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky produktů pomocí modulu galerie médií.
 
-![Příklad nákupního boxu na stránce s podrobnostmi o produktu, který hostuje obrázky produktů pomocí modulu galerie médií](./media/ecommerce-pdp-buybox.PNG)
+![Příklad nákupního boxu na stránce s podrobnostmi o produktu, který hostuje obrázky produktů pomocí modulu galerie médií.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Vlastnosti galerie médií
 
@@ -59,11 +59,11 @@ V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky p
 
 Následující obrázek ukazuje příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.
 
-![Příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení](./media/ecommerce-media-zoom.png)
+![Příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.](./media/ecommerce-media-zoom.png)
 
 Následující obrázek ukazuje příklad modulu galerie médií, který obsahuje uspořádané obrázky (tj. učené obrázky nezávisí na ID produktu nebo kontextu stránky).
 
-![Příklad modulu galerie médií, který má uspořádané obrázky](./media/ecommerce-media-curated.PNG)
+![Příklad modulu galerie médií, který má uspořádané obrázky.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 

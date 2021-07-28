@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 7c94cdfda4bab43cfc753374d517e22fd21da4bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190278"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343831"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
@@ -37,17 +37,17 @@ Dokumenty plánu rozpočtu lze zobrazit a upravit pomocí jednoho nebo více roz
 1. Otevřete **Seznam plánů rozpočtu** (**Rozpočtování** &gt; **Plány rozpočtu**). 
 2. Kliknutím na možnost **Nový** vytvořte nový dokument plánu rozpočtu. 
 
-   [![Seznam plánů rozpočtu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Seznam plánů rozpočtu.](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Použijte možnost řádku **Přidat** k přidání řádků. Klikněte na možnost **Rozvržení**, abyste zobrazili konfiguraci rozvržení dokumentu plánu rozpočtu. 
 
-   [![Přidání plánů rozpočtu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Přidání plánů rozpočtu.](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Můžete zkontrolovat konfiguraci rozvržení a podle potřeby ji upravit. 
 1. Přejděte na možnosti **Šablona**&gt;**Generovat** k vytvoření souboru aplikace Excel pro toto rozvržení. 
 2. Po vytvoření šablony přejděte na položky **Šablona**&gt;**Zobrazit** a otevřete a zkontrolujte šablonu dokumentu plánu rozpočtu. Soubor aplikace Excel můžete uložit na místní disk. 
 
-[![Uložit jako](./media/bpt3-1024x545.png)](./media/bpt3.png)
+[![Uložit jako.](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Poté, co přidružíte k rozvržení dokumentu plánu rozpočtu šablonu aplikace Excel, nemůžete už rozvržení upravovat. Chcete-li změnit rozvržení, odstraňte přidružený soubor šablony aplikace Excel a vygenerujte ho znovu. Tato možnost je vyžadována pro zachování polí v rozvržení a synchronizaci listů. 
@@ -64,7 +64,7 @@ Na kartě **Návrh** klikněte na pole **Přidat** a pak vyberte **BudgetPlanHea
 
 Kurzor přejděte do požadovaného umístění v souboru aplikace Excel. Chcete-li přidat popisek pole do vybraného umístění, klikněte na tlačítko **Přidat popisek**. Chcete-li přidat pole hodnoty na vybrané místo, zvolte možnost **Přidat hodnotu**. Kliknutím na tlačítko **Hotovo** ukončíte návrháře.
 
-## <a name="select-add-valuemediabpt7png"></a>[![Výběr možnosti Přidat hodnotu](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Výběr možnosti Přidat hodnotu.](./media/bpt7.png)](./media/bpt7.png)
 
 ## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Přidání vypočteného sloupce do tabulky šablony dokumentu plánu rozpočtu
 
@@ -72,11 +72,11 @@ Poté se přidají vypočtené sloupce do vygenerované šablony dokumentu rozpo
 
 Klikněte na tlačítko **Návrh** v **datovém konektoru**, pokud chcete přidat sloupce do tabulky. Klikněte na tlačítko **Upravit** vedle zdroje dat **BudgetPlanWorksheet** a začněte přidávat sloupce.
 
-[![Začátek přidávání sloupců](./media/bpt8-1024x301.png)](./media/bpt8.png) 
+[![Začátek přidávání sloupců.](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
 Vybraná skupina polí zobrazuje sloupce, které jsou k dispozici v šabloně. Kliknutím na **Vzorec** přidejte nový sloupec. Zadejte název nového sloupce a poté vložte vzorec do pole **Vzorec**. Kliknutím na položku **Aktualizovat** vložte sloupec.
 
-[![Přidání a vložení sloupce](./media/bpt12-1024x565.png)](./media/bpt12.png)
+[![Přidání a vložení sloupce.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
 > Abyste definovali vzorec, vytvořte vzorec v tabulce a zkopírujte ho do okna **Návrh**. Tabulka vázaná na aplikaci Finance and Operations se obvykle nazývá "AXTable1". Například k sumarizaci sloupců požadavků na první až čtvrté čtvrtletí v tabulce je vzorec = AxTable1\[Požadavek na 1. čtvrtletí\]+ AxTable1\[Požadavek na 2. čtvrtletí\]+ AxTable1\[Požadavek na 3. čtvrtletí\]+ AxTable1\[Požadavek na 4. čtvrtletí\].
@@ -85,11 +85,11 @@ Opakujte tyto kroky pro vložení sloupce **Úprava**. Použijte vzorec = AxTabl
 
 Uložte a zavřete soubor aplikace Excel. V **Rozvržení** klikněte na **Šablona &gt; Odeslat** k odeslání uložené šablony aplikace Excel, která se použije pro plán rozpočtu. 
 
-[![Odeslání šablony v Excelu](./media/bpt10-1024x352.png)](./media/bpt10.png) 
+[![Odeslání šablony v Excelu.](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
 Zavřete posuvník **Rozvržení**. Chcete-li zobrazit a upravit dokument v aplikaci Excel, v dokumentu **Plán rozpočtu** klikněte na tlačítko **List**. Všimněte si, že upravená šablona aplikace Excel byla použita k vytvoření tohoto listu plánu rozpočtu a vypočtené sloupce jsou aktualizovány pomocí vzorců, které byly definovány v předchozích krocích. 
 
-[![Zobrazení a úprava dokumentu v Excelu](./media/bpt111-1024x431.png)](./media/bpt111.png)
+[![Zobrazení a úprava dokumentu v Excelu.](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
 ## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tipy a triky pro vytvoření šablon plánu rozpočtu
 ### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Mohu přidávat a používat další zdroje dat pro šablonu plánu rozpočtu?
@@ -102,21 +102,21 @@ Můžete použít možnost **Filtr** v **datovém konektoru**, abyste přidali p
 
 Ano. Otevřete možnosti **datového konektoru** a skryjte možnost **Návrh** před jinými uživateli.
 
-[![Možnost otevření datového konektoru](./media/bpt13-1024x565.png)](./media/bpt13.png)
+[![Možnost otevření datového konektoru.](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
 Rozbalte **Možnosti datového konektoru** a zrušte zaškrtávací políčko **Povolit návrh**. Tato akce skryje možnost **Návrh** z **datového konektoru**.
 
-[![Skrytí možnosti Návrh z datového konektoru](./media/bpt14-1024x592.png)](./media/bpt14.png)
+[![Skrytí možnosti Návrh z datového konektoru.](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Můžu zabránit uživatelům v náhodném uzavření datového konektoru během práce s daty?
 
 Doporučujeme šablonu uzamknout, abyste zabránili uživatelům v jejím uzavření. Zámek zapnete kliknutím na **Datový konektor**. V pravém horním rohu se zobrazí šipka. 
 
-[![Zapnutí zámku](./media/bpt15-1024x285.png)](./media/bpt15.png) 
+[![Zapnutí zámku.](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
 Klikněte na šipku pro další nabídku. Vyberte **Uzamknout**.
 
-### <a name="select-lockmediabpt16png"></a>[![Volba zámku](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Volba zámku.](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Můžu použít jiné funkce aplikace Excel, jako například formátování buněk, barvy, podmíněné formátování a grafy pro moje šablony plánu rozpočtu?
 

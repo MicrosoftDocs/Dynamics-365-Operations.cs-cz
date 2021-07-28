@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129798"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345177"
 ---
 # <a name="create-returns-in-pos"></a>Vytvoření vrácení v POS
 
@@ -48,7 +48,7 @@ Pokud je nalezena transakce nebo objednávka, která odpovídá kritériím vyhl
 
 U každého řádku objednávky v seznamu vratných produktů POS zobrazuje informace o původním množství nákupu a množstvích z jakýchkoli vrácených položek, které byly dříve zpracovány. Vrácené množství, které uživatel zadá pro řádek objednávky, musí být menší nebo rovné hodnotě pole **Dostupné k vrácení**.
 
-![Stránka vratných produktů](media/returnslist.png)
+![Stránka vratných produktů.](media/returnslist.png)
 
 Pokud má uživatel během zpracování vratky fyzický produkt a tento produkt má čárový kód, může uživatel naskenováním čárového kódu zaregistrovat vrácení. Každé naskenování čárového kódu zvyšuje vrácené množství o jednu položku. Pokud však štítek s čárovým kódem obsahuje vložené množství, bude toto množství zadáno do pole **Nyní se vrací**.
 
@@ -97,6 +97,13 @@ Pokud informace na straně kanálu nejsou z nějakého důvodu aktuální a je z
 
 > [!NOTE]
 > Když je zapnuta funkce **Sjednocené prostředí pro zpracování vrácení v POS**, jsou k dispozici nové volitelné funkce, které podporují ověřování vrácení serializovaného produktu. Další informace viz [Vrácení produktů řízených sériovým číslem v aplikaci Point of Sale (POS)](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Povolení správného výpočtu daně pro vrácení s částečným množstvím
+
+Tato funkce zajišťuje, že při vrácení objednávky s použitím více faktur se daně nakonec budou rovnat původně účtované částce daně.
+1.  Přejděte do pracovního prostoru **Správa funkcí** a vyhledejte možnost **Povolení správného výpočtu daně pro vrácení s částečným množstvím**.
+2.  Vyberte **Povolení správného výpočtu daně pro vrácení s částečným množstvím** a poté klikněte na **Povolit**.
+
 
 ## <a name="additional-resources"></a>Další prostředky
 

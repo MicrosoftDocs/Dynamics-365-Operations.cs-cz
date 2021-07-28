@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
-ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
+ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6219780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346587"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrace nákupu mezi Supply Chain Management a Field Service
 
@@ -31,7 +31,7 @@ Tato integrace podporuje vytváření objednávek a ve většině případů akt
 
 Následující obrázek ukazuje tabulky v obou systémech a jejich vzájemné mapování. Nákupní objednávky ve Field Service odkazují na řádek *účet*, zatímco nákupní objednávky v Supply Chain Management odkazují na řádek *dodavatel*. K vyřešení integrace používá dvojí zápis odkaz na řádky *dodavatel* s řádky *účet*. Další informace naleznete v tématu [Integrovaný kmenový soubor dodavatele](vendor-mapping.md).
 
-![Mapování pro zásobování](media/scm-field-service-tables.png)
+![Mapování pro zásobování.](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Předpoklady
 

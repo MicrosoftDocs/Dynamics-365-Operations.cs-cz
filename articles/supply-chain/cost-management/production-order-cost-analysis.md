@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187691"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343643"
 ---
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
@@ -41,7 +41,7 @@ Odchylky jsou výsledkem porovnání vykázaných výrobních činností s výpo
 
 V následujícím diagramu jsou uvedeny tyto čtyři odchylky, které způsobují rozdíl mezi skutečnými náklady na výrobní zakázku a náklady kalkulovanými v rámci záznamu o ceně položky v okamžiku ukončení výrobní zakázky. 
 
-![Odchylky, které představují rozdíly v dokončené výrobní zakázce](./media/control.jpg) 
+![Odchylky, které představují rozdíly v dokončené výrobní zakázce.](./media/control.jpg) 
 
 Výrobní odchylky lze analyzovat prostřednictvím stránky **Odchylka** nebo sestavy **Výrobní odchylka**. Uvedené možnosti umožňují prohlédnout si podrobné odchylky podle položek a provozních prostředků, nebo podle nákladové skupiny. Zásady pro rozúčtování nákladů v parametrech zásob určují, zda budou odchylky sledovány podle nákladových skupin. Můžete také použít možnost zobrazení **jediná**, **více** a **celkem** umožňující zobrazení souhrnných odchylek. Informace o podrobných odchylkách představují způsob, jak porozumět zdroji každé odchylky. Chcete-li předjímat odchylky před dokončením výrobní zakázky, analyzujte podrobné informace, které jsou k dispozici v sestavě **Odhad a výpočet nákladů**.
 

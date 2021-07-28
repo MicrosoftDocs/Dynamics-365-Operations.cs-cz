@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf211e9f256a7489cdc3c38ed2d2198bd1dd6789
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813814"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345421"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognózy, pracovní příkazy a projekty
 
@@ -58,13 +58,13 @@ Některé z těchto informací nemusí být v pracovním příkazu nalezeny. Vyh
 
 Na následujícím obrázku, vzhledem ke způsobu nsatavení typu majetku **Motor n ákladního automobilu**, bude každá úloha pracovního příkazu, která je vytvořena s typem majetku **Motor nákladního automobilu** dílčím projektem ID projektu 000186.
 
-![Obrázek č. 1](media/01-integration-to-pma.png)
+![Obrázek č. 1.](media/01-integration-to-pma.png)
 
 Účelem ID projektu na úloze pracovního příkazu a čísla související aktivity je sledování nákladů, které souvisejí s úlohou pracovního příkazu, a majetku, který je na něm vybrán, v modulu **Řízení projektů a účetnictví**. (Chcete-li zobrazit ID projektu a číslo aktivity, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** a poté vyberte požadovaný pracovní příkaz. Na pevné záložce **Podrobnosti řádku** pole **ID projektu** obsahuje ID projektu a pole **Číslo aktivity** obsahuje číslo aktivity.) Další informace o řízení nákladů v modulu Správa majetku naleznete v [Kontrola data a nákladů](../controlling-and-reporting/cost-and-date-control.md).
 
 Na následujícíilustraci je zobrazen grafický přehled projektů pracovních příkazů a souvisejících aktivit projektu.
 
-![Obrázek č. 2](media/02-integration-to-pma.png)
+![Obrázek č. 2.](media/02-integration-to-pma.png)
 
 Při vytvoření nové úlohy pracovního příkazu na pracovním příkazu je automaticky vytvořen projekt pracovního příkazu pro danou úlohu. Finanční dimenze majetku, které souvisí s úlohou pracovního příkazu, se automaticky přenesou do projektu pracovního příkazu.
 
@@ -86,17 +86,17 @@ Chcete-li pomoci zajistit správné používání stavů životního cyklu praco
 
 Následující obrázky znázorňují přidružení mezi skupinami projektů pracovních příkazů, typy souvisejících projektů, fázemi projektu a stavy životního cyklu pracovního příkazu.
 
-![Obrázek č. 3](media/03-integration-to-pma.png)
+![Obrázek č. 3.](media/03-integration-to-pma.png)
 
-![Obrázek č. 4](media/04-integration-to-pma.png)
+![Obrázek č. 4.](media/04-integration-to-pma.png)
 
-![Obrázek č. 5](media/05-integration-to-pma.png)
+![Obrázek č. 5.](media/05-integration-to-pma.png)
 
 Další informace o nastavení projektů pracovních příkazů naleznete v tématu [Nastavení projektu pracovního příkazu](../setup-for-work-orders/work-order-project-setup.md). Další informace o tom, jak vytvořit stavy životního cyklu pracovního příkazu naleznete v tématu [Stavy životního cyklu pracovního příkazu](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Na následujícím obrázku je znázorněn grafický přehled různých projektů vytvořených v modulu **Správa majetku**, které umožňují integraci s modulem **Řízení projektů a účetnictví**. Dále jsou zde uvedeny pracovní procesy, s kterými souvisí projekty.
 
-![Obrázek č. 6](media/06-integration-to-pma.png)
+![Obrázek č. 6.](media/06-integration-to-pma.png)
 
 
 

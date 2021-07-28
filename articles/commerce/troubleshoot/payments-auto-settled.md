@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b4fd37a3c45f2559c9659f072ca0b6f02e712f53
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 79300c84b07db23ad387e0f3e475ca1707c79548
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347361"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>Platby jsou automaticky vypořádány před fakturací nebo odesláním objednávek
 
@@ -43,12 +43,12 @@ Ke konfiguraci ručního snímání pro platby elektronickým obchodem na portá
 1. Na horním navigačním panelu vyberte **Účet** a potom vyberte **Nastavení**.
 1. V poli **Zachycení zpoždění** vyberte **ruční**.
 
-    ![Nastavení Zachycení zpoždění na portálu Adyen](media/adyen-capture-delay.jpg)
+    ![Nastavení Zachycení zpoždění na portálu Adyen.](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Zachycení platby Adyen](https://docs.adyen.com/point-of-sale/capturing-payments)
 
-[Platební konektor Dynamics 365 pro Adyen](../dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector pro Adyen](../dev-itpro/adyen-connector.md)
 
 [Nastavení konektoru plateb Adyen pro Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)

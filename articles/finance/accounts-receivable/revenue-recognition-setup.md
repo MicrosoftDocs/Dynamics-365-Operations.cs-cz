@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837146"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345619"
 ---
 # <a name="revenue-recognition-setup"></a>Nastavení uznání výnosů
 [!include [banner](../includes/banner.md)]

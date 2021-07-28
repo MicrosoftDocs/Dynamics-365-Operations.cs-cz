@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184015"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345493"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -73,7 +73,7 @@ Centrum vlastní následující data:
 
 Jednotky stupnice vlastní skutečné vlnové zpracování (jako je přidělení práce, doplňovací práce a vytvoření poptávky práce) po vydání vlny. Pracovníci skladu proto mohou zpracovávat odchozí práci pomocí mobilní aplikace Řízení skladu, která je připojena k jednotce škálování.
 
-![Tok zpracování vlny](./media/wes-wave-processing-ga.png "Tok zpracování vlny")
+![Tok zpracování vlny.](./media/wes-wave-processing-ga.png "Tok zpracování vlny")
 
 ### <a name="process-work-and-ship"></a>Zpracování práce a odeslání
 
@@ -81,7 +81,7 @@ Jakmile konečný pracovní proces umístí zásoby na konečné místo odeslán
 
 Jakmile centrum aktualizuje transakce na *Vybráno*, může zpracovat potvrzení odchozí zásilky a související dodací list nebo zásilku s převodem objednávky pro náklad.
 
-![Odchozí tok procesu](./media/WES-outbound-processing-19.png "Odchozí tok procesu")
+![Odchozí tok procesu.](./media/WES-outbound-processing-19.png "Odchozí tok procesu")
 
 ## <a name="inbound-process-flow"></a>Příchozí tok procesu
 
@@ -107,11 +107,11 @@ Pracovník může spustit proces příjmu pomocí mobilní aplikace Řízení sk
 
 Pokud nepoužíváte proces *vydání do skladu* a tím pádem ani *skladové objednávky*, centrum může zpracovávat příjem skladu a zpracování práce nezávisle na jednotkách škálování.
 
-![Příchozí tok procesu](./media/wes-inbound-ga.png "Příchozí tok procesu")
+![Příchozí tok procesu.](./media/wes-inbound-ga.png "Příchozí tok procesu")
 
 Když provádíte příchozí registraci prostřednictvím procesu přijímání aplikace skladu proti objednávce skladové jednotky škálování, úloha jednotky škálování bude signalizovat centru, aby aktualizovalo související transakce řádku nákupní objednávky na *Registrováno*. Jakmile to bude hotové, budete moci spustit příjem produktu z nákupní objednávky na centru.
 
-![Příchozí tok procesu](./media/WES-inbound-processing-19.png "Příchozí tok procesu")
+![Příchozí tok procesu.](./media/WES-inbound-processing-19.png "Příchozí tok procesu")
 
 ## <a name="supported-processes-and-roles"></a>Podporované procesy a role
 

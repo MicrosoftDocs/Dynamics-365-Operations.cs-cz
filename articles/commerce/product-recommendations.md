@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795590"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337496"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce lze použít k zobrazení doporučení produktů
 Doporučení produktů umožňují zákazníkům snadno a rychle najít produkty, které chtějí, a u toho mají pozitivní zkušenosti. Křížový prodej a návazný prodej může dokonce zákazníkům pomoci najít další produkty, než které původně nakupují. Pokud se při zjišťování produktů používají doporučení, mohou vytvářet více možností převodu, pomoci zvýšit výnosy z prodeje a dokonce také zvýšit spokojenost a uchování zákazníků.
 
 V platformě e-Commerce doporučení produktů využívají technologie strojového učení Microsoft Recommendations ve velkém měřítku.
+
+Tato služba je doplňkem Dynamics 365 Commerce. Další informace získáte stažením nejnovějšího [průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Služba doporučení
 

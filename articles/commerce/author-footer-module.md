@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d6e7b0ad4fe0723575a0ec55a9b02d110568db58
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2768317092f43862f26847c4b4c57f5929d43912
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346771"
 ---
 # <a name="footer-module"></a>Modul zápatí  
 
@@ -31,7 +31,7 @@ Modul zápatí je speciální kontejner, který se používá k hostování modu
 
 Následující obrázek znázorňuje příklad modulu zápatí na stránce webu.
 
-![Příklad modulu zápatí](./media/ecommerce-footer.PNG)
+![Příklad modulu zápatí.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Vlastnosti modulu zápatí 
 

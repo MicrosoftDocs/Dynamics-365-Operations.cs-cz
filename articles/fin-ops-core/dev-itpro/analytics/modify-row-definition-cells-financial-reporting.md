@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3827c5cff009453c820e70f00bfa4f36d78973f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755245"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347941"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
@@ -174,7 +174,7 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 
 V následujícím příkladu chce uživatel zabránit vytištění záhlaví a podtržení v řádku **Hotovost celkem** ve své sestavě, protože nebyla zaznamenána žádná aktivita v žádném z pokladních účtů. Proto uživatel v řádku 220 (který je podle kódu formátu **---** řádkem formátování) v buňce **Související vzorce/řádky/jednotky** zadá **250**, což je kód řádku s částkou, který chce potlačit.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Výběr základního řádku pro výpočet sloupce
 V relačním vykazování přiřadíte jeden nebo více základních řádků v definici řádku pomocí kódu formátu **CBR** (změna základního řádku). Na základní řádek se pak odkazují výpočty v definicích sloupců. Zde jsou některé typické příklady výpočtů CBR:
@@ -399,7 +399,7 @@ Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, kter�
 2. Dvakrát klikněte na některou buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V dialogovém okně **Dimenze** dvakrát klikněte na buňku pod názvem dimenze.
 4. V dialogovém okně pro dimenzi vyberte položku **Jednotlivec nebo rozsah**.
-5. V poli **Od** zadejte počáteční dimenzi nebo klikněte na tlačítko ![Procházet](media/browse.gif "Procházet") a vyhledejte dostupné dimenze. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
+5. Do pole **Od** zadejte počáteční dimenzi nebo klikněte na ![Procházet.](media/browse.gif "Procházet") pro vyhledání dostupných dimenzí. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
 6. Kliknutím na tlačítko **OK** zavřete dialogové okno pro dimenzi. Dialogové okno **Dimenze** zobrazuje aktualizovanou dimenzi nebo rozsah.
 7. Kliknutím na tlačítko **OK** zavřete dialogové okno **Dimenze**.
 

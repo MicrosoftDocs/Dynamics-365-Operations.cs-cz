@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838339"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345251"
 ---
 # <a name="cycle-counting"></a>Cyklická inventura
 
@@ -34,7 +34,7 @@ Cyklická inventura je skladový proces, který slouží k auditu skladových po
 2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Dynamics 365 Supply Chain Management pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
 3.  **Vyřešení rozdílu v cyklicky vypočtené hodnotě** ─ po cyklické inventuře budou mít všechny položky, které se liší ve vypočítané hodnotě, stav práce **Čeká na kontrolu** na stránce **Veškerá práce**. Tyto rozdíly můžete vyřešit na stránce **Cyklická inventura práce čeká na kontrolu**.
 
-Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru](./media/performcyclecountinginawarehouselocation.jpg)
+Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Požadavky cyklické inventury
 Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete používat cyklickou inventuru.

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 69f497ed8efff9aa18dedbce65d88e3b2d5168a6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8941ca0d2b9599dabd05427949d72f55aae7d6bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839022"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347631"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synchronizace záhlaví a řádků prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales
 
@@ -33,7 +33,7 @@ Toto téma se věnuje šablonám a základní úloze, které se používají k s
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -116,11 +116,11 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Mapování šablony v integraci dat](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integraci dat.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Mapování šablony v integraci dat](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Mapování šablony v integraci dat.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
