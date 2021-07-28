@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ac440362379475b05c6a37019c25e3a96be3739
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792600"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349489"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Podrobnější přehled kroků potřebných k povolení Azure Data Lake Storage 
 
 Následující obrázek znázorňuje příklad konfigurace Azure Data Lake Storage.
 
-![Příklad konfigurace Azure Data Lake Storage](./media/exampleADLSConfig1.png)
+![Příklad konfigurace Azure Data Lake Storage.](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Test připojení Azure Data Lake Storage
 
@@ -79,7 +79,7 @@ Chcete-li povolit automatickou aktualizaci pro úložiště entit, postupujte n�
 
 Následující obrázek znázorňuje příklad úložiště entit s povolenou automatickou aktualizací.
 
-![Příklad úložiště entit s povolenou automatickou aktualizací](./media/exampleADLSConfig2.png)
+![Příklad úložiště entit s povolenou automatickou aktualizací.](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage je nyní nakonfigurováno pro prostředí. 
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 42280c811e1f4ed5d33c66f5a8634417a61be905
-ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
+ms.openlocfilehash: 79eb7d750869ef365ad117ecc024afc8db2edbf7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301322"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348822"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Správa kvality pro procesy skladu
 
@@ -43,7 +43,7 @@ Funkce _Správa kvality pro procesy skladu_ automaticky generuje práci v rámc
 
 Je-li _Správa kvality pro procesy skladu_ zapnuta, změní se nastavení klíčových subjektů správy skladu a správy kvality. Na následujícím obrázku je uveden přehled entit, které umožňují objednávky kvality pro procesy skladu. Text v závorkách označuje doporučené akce při použití správy kvality před zapnutím fukce _Správa kvality pro procesy skladu_.
 
-![Entity správy kvality](media/quality-management-entity-diagram.png "Entity správy kvality")
+![Entity správy kvality.](media/quality-management-entity-diagram.png "Entity správy kvality")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Aktivátory: typy pracovní objednávky pro vzorkování položek kvality a pořadí kvality
 

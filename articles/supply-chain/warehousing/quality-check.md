@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838219"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358043"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -310,7 +310,7 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 
     Stránka **Kontrola kvality**, která se objeví, nemá žádná vstupní pole. Ve spodní části je pouze potvrzovací tlačítko (znak zaškrtnutí) a tlačítko Nabídka (**≡**) nahoře. (Tlačítko Nabídka se někdy označuje jako hamburger nebo hamburgerové tlačítko.) Pro urychlení procesu kontroly kvality, když paleta projde kontrolou kvality, uživatel pouze potvrdí stránku **Kontrola kvality**.
 
-    ![Stránka Kontrola kvality](media/quality-check.png "Stránka Kontrola kvality")
+    ![Stránka Kontrola kvality.](media/quality-check.png "Stránka Kontrola kvality")
 
 1. Vyberte potvrzovací tlačítko a předejte kontrolu kvality palety 1 z řádku 1.
 

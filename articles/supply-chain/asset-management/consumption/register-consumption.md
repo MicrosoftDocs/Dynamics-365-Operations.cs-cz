@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837890"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346219"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
@@ -54,7 +54,7 @@ Když byla úloha údržby dokončena na pracovním příkazu, následující kr
 
 Snímek obrazovky níže ukazuje příklad registrace hodin a položek na pracovním příkazu v **Denících pracovních příkazů**.
 
-![Obrázek č. 1](media/01-consumption.png)
+![Obrázek č. 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Rozdělit hodiny na pracovní objednávky s několika úlohami pracovních příkazů
@@ -73,13 +73,13 @@ Obsahuje-li pracovní příkaz několik úloh pracovního příkazu, můžete za
 
 6. Zadejte počet odpracovaných hodin, které mají být rozděleny v poli **Hodiny**.
 
-    ![Obrázek č. 2](media/02-consumption.png)
+    ![Obrázek č. 2.](media/02-consumption.png)
 
 7. Klikněte na tlačítko **OK**.
 
 *Příklad:* v dolní části obrazovky se zobrazí řádky deníku pro pracovní příkaz, které obsahují tři úlohy pracovního příkazu. První řádek, který obsahuje tři pracovní hodiny, byl rozdělen a pro každou úlohu pracovního příkazu je registrována jedna pracovní hodina. Po vytvoření tří řádků pro registraci hodin se rozhodnete, co dělat s původním řádkem registrace hodin (první řádek v příkladu). Můžete ji ponechat tak, jak je, nebo ji odstranit. 
 
-![Obrázek č. 3](media/03-consumption.png)
+![Obrázek č. 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finanční dimenze pro registrace spotřeby
 

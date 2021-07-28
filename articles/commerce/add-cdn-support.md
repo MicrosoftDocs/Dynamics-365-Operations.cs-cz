@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936823"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346821"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory sítě pro doručování obsahu (CDN)
 
@@ -74,11 +74,11 @@ Chcete-li konfigurovat backendový fond ve službě Azure Front Door Service, po
 
 Následující ilustrace znázorňuje dialogové okno **Přidat backend** služby Azure Front Door Service s vloženým názvem hostitele backendu.
 
-![Dialogové okno Přidat back-endový fond](./media/CDN_BackendPool.png)
+![Dialogové okno Přidat back-endový fond.](./media/CDN_BackendPool.png)
 
 Následující ilustrace znázorňuje dialogové okno **Přidat backendový pool** služby Azure Front Door Service s výchozími hodnotami vyrovnávání zatížení.
 
-![Pokračování dialogového okna Přidat back-endový fond](./media/CDN_BackendPool_2.png)
+![Pokračování dialogového okna Přidat back-endový fond.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Nezapomeňte zakázat **Sondy stavu** při nastavování vlastní služby Azure Front Door Service pro Commerce.
@@ -107,13 +107,13 @@ Pokud je vaše doména nová a nejedná se o dříve existující živou doménu
 
 Následující ilustrace znázorňuje dialogové okno **Konfigurace CNAME** služby Azure Front Door Service.
 
-![Dialogové okno Konfigurace CNAME](./media/CNAME_Configuration.png)
+![Dialogové okno Konfigurace CNAME.](./media/CNAME_Configuration.png)
 
 Službu Azure Front Door Service můžete použít ke správě certifikátu, nebo můžete pro vlastní doménu použít vlastní certifikát.
 
 Následující ilustrace znázorňuje dialogové okno **HTTPS vlastní domény** služby Azure Front Door Service.
 
-![Dialogové okno HTTPS vlastní domény](./media/Custom_Domain_HTTPS.png)
+![Dialogové okno HTTPS vlastní domény.](./media/Custom_Domain_HTTPS.png)
 
 Podrobné pokyny pro přidání vlastní domény do vašich Azure Front Door najdete na stránce [Přidejte do Front Door vlastní doménu](/azure/frontdoor/front-door-custom-domain).
 

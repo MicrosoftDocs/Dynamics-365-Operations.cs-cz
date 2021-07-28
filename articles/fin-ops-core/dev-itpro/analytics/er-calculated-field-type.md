@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749482"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349153"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
@@ -86,7 +86,7 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 
     Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty ER vytvořené pro tento model a prováděné ve Finance and Operations. V důsledku toho je obsah zdrojů dat **Daň** a **Gr** vystaven pro formáty ER, jako jsou například abstraktní zdroje dat.
 
-    ![Stránka Návrhář mapování modelu zobrazující zdroje dat Daň a Gr](media/er-calculated-field-type-01.png)
+    ![Stránka Návrhář mapování modelu zobrazující zdroje dat Daň a Gr.](media/er-calculated-field-type-01.png)
 
 5.  Zavřete stránku **Návrhář mapování modelu**.
 6.  Zavřete stránku **Mapování modelu**.
@@ -101,21 +101,21 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
     - V daňovém výkazu prezentujte následující úrovně zdanění: normální, snížené a žádné.
     - Prezentujte více podrobností na každé úrovni zdanění, které mají různý počet podrobností na každé úrovni.
 
-    ![Stránka návrháře formátu](media/er-calculated-field-type-02.png)
+    ![Stránka návrháře formátu.](media/er-calculated-field-type-02.png)
 
 4. Vyberte **Mapování**.
 5. Rozbaltepoložky **Model**, **Data** a **Souhrnné** . 
 
     Vpočítané pole **Model.Data.Summary.Leve** obsahuje výraz vracející kód úrovně zdanění (**Pravidelný**, **Snížený**, **Žádný** nebo **Jiný**) jako textovou hodnotu pro libovolný kód daně, který lze načíst ze zdroje dat **Model.Data.Summary** za běhu.
 
-    ![Stránka návrháře formátu s podrobnostmi o modelu datového modelu pro zjištění parametrizovaných hovorů](media/er-calculated-field-type-03.png)
+    ![Stránka návrháře formátu s podrobnostmi o modelu datového modelu pro zjištění parametrizovaných hovorů.](media/er-calculated-field-type-03.png)
 
 6. Rozbalte položku **Model**.**Data2**.
 7. Rozbalte položku **Model**.**Data2.Summary2**.
    
     Datový zdroj **Model**.**Data2.Summary2** je konfigurováno pro seskupení podrobností transakcí datového zdroje **Model.Data.Summary** podle úrovně zdanění (vráceno vypočítaným polem **Model.Data.Summary.Level**) a výpočet agregací.
 
-    ![Stránka návrháře formátu s podrobnostmi o zdroji dat Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Stránka návrháře formátu s podrobnostmi o zdroji dat Model.Data2.Summary2.](media/er-calculated-field-type-04.png)
 
 8. Zkontrolujte vypočítaná pole **Model**.**Data2.Level1**, **Model**.**Data2.Level2** a **Model**.**Data2.Level3.** Tato vypočítaná pole slouží k filtrování seznamu záznamů **Model**.**Data2.Summary2** a vrátí pouze záznamy, které reprezentují určitou úroveň zdanění.
 9. Zavřete stránku **Návrhář formátu**.
@@ -155,7 +155,7 @@ Poskytnutý formát lze zlepšit přidáním jednoho vypočítaného pole pro fi
 
     Maximální počet parametrů, které lze zadat pro jedno vypočtené pole, je 8.
 
-    ![Seznam zdroje dat parametrů](media/er-calculated-field-type-05.png)
+    ![Seznam zdroje dat parametrů.](media/er-calculated-field-type-05.png)
 
 5. Vyberte **OK**.
 
@@ -165,7 +165,7 @@ Přidáte-li tento parametr, zadáte podmínku, která musí být na místě, ab
 
    Konfigurovaný parametr je k dispozici v seznamu zdrojů dat pro toto vypočtené pole. Chcete-li přidat parametr do konfigurovaného výrazu, vyberte možnost **Přidat zdroj dat**.
 
-   ![Pole zdroje dat](media/er-calculated-field-type-06.png)
+   ![Pole zdroje dat.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definovat výraz pro přidání vypočítaného pole
 
@@ -179,9 +179,9 @@ Přidáte-li tento parametr, zadáte podmínku, která musí být na místě, ab
 
     **WHERE(\@.Summary2, \@.Summary2.grouped.Level = 'Taxation Level')**
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
-    ![Informace o datových zdrojových polích](media/er-calculated-field-type-07.png)
+    ![Informace o datových zdrojových polích.](media/er-calculated-field-type-07.png)
 
 6. Zavřete stránku **Návrhář vzorce**.
 
@@ -191,7 +191,7 @@ Přidáte-li tento parametr, zadáte podmínku, která musí být na místě, ab
 
 Na stránce **Návrhář formátu** je v konfigurovaných vypočítaných polích **Úrovně** vyžadován argument **Řetězec**.
 
-![Rozbalený seznam úrovní vypočítaných polí](media/er-calculated-field-type-08.png)
+![Rozbalený seznam úrovní vypočítaných polí.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Použít nakonfigurované počítané pole pro prvky formátu vazby
 
@@ -220,7 +220,7 @@ Opakující se volání jakéhokoliv parametrizovaného pole nejsou podporována
 
 Můžete vybrat možnost **Upravit vzorec** a změnit argument vyrovnáno podle výchozího pole ve vybrané vazbě. Pokud tento argument chybí, může způsobit chyby za běhu – uživatelé jsou informováni o takové situaci, když je aktuální formát ověřen.
 
-![Upozornění na potvrzení ověření](media/er-calculated-field-type-10.png)
+![Upozornění na potvrzení ověření.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record&quot;></a>Konfigurace parametrizovaného vypočítaného pole pro návrat záznamu
 Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotlivých polí tohoto záznamu k formátování prvků. V takovém případě nebude existovat žádná nadřazená vazba, která obsahuje hodnotu argumentu pro volání parametrizovaného počítaného pole - tato hodnota musí být definována ve vazbě pole jednoho záznamu.
@@ -272,7 +272,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 8. Vyberte možnost **Upravit vzorec**.
 9. Změňte výraz na **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Aktualizovaný výraz](media/er-calculated-field-type-11.png)
+![Aktualizovaný výraz.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Odebrat vypočtená pole, která nejsou použita
 

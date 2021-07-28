@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751649"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358998"
 ---
 # <a name="generate-printable-fti-forms"></a>Generovat formulářů FTI k tisku
 
@@ -77,7 +77,7 @@ Chcete-li generovat formuláře FTI pomocí architektury elektronického výkazn
 3. Vyberte úroveň dokumentu k určení rozsahu faktury ke zpracování.
 4. Vyberte formát elektronického výkaznictví pro konkrétní úroveň dokumentu.
 
-![Nastavení správy tisku](media/FTIbyGER-PMSetting.png)
+![Nastavení správy tisku.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Pouze formáty elektronického výkaznictví, které používají kořenový popisovač **FreeTextInvoice** datvého modelu **CustomersInvoicing** se objeví v poli **Vyhledání formátu sestavy** pro zvolený formát.
@@ -87,9 +87,9 @@ Formuláře FTI se generují v architektuře elektronického výkaznictví stejn
 
 Chcete-li generovat formuláře FTI, můžete vybrat faktury podle rozsahu nebo podle výběru. 
 
-![Volba faktury](media/FTIbyGER-InvoiceSelection.png)
+![Volba faktury.](media/FTIbyGER-InvoiceSelection.png)
 
-![Náhled faktury](media/FTIbyGER-InvoiceExcelPreview.png)
+![Náhled faktury.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Pokud používáte formáty elektronického výkaznictví pro tisk formulářu FTI tímto způsobem, použijí se výchozí cíloví umístění souboru elektronického výkaznictví. Cílové umístění nelze změnit. Více informací o konfiguraci cílových umístění elektronického výkaznictví pro formáty elektronického výkaznictví (ER) naleznete v části [Cílová umístění elektronického výkaznictví](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Můžete také generovat formuláře FTI při zaúčtování FTI zapnutím možn
 > - **Název:** ERFormatDestinationRuntimeMaintain
 > - **Popisek:** Spravovat cílové umístění formátu elektronického výkaznictví za běhu
 
-![Místo určení elektronického výkaznictví](media/FTIbyGER-ERFileDestinationSetting.png)
+![Místo určení elektronického výkaznictví.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Cílové umístění formátu elektronického výkaznictví](media/FTIbyGER-ERFileDestinationUsage.png)
+![Cílové umístění formátu elektronického výkaznictví.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 Architektura elektronického výkaznictví aktuálně podporuje následující cílová umístění pro vygenerované dokumenty:
 
@@ -128,7 +128,7 @@ Můžete si stáhnout vzorové konfigurace elektronického výkaznictví pro jej
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Funkce, které jsou implementovány ve vzorovém formátu elektronického výkaznictví
 Ve vzorové konfiguraci formátu elektronického výkaznictví je použit jako šablona pro generování formulářů FTI soubor Excel.
 
-![Návrhář formátu](media/FTIbyGER-ERFormat.png)
+![Návrhář formátu.](media/FTIbyGER-ERFormat.png)
 
 Aktuálně tento vzorový formát elektronického výkaznictví podporuje následující funkce pro generování FTI formulářů:
 
@@ -179,7 +179,7 @@ Kromě vygenerovaného formuláře faktury lze vygenerovat převodní poukázky 
 - Pro právnickou osobu, která používá kontext země/oblasti pro Finsko a má alespoň jeden bankovní účet označený jako **Žiro účet** a **Čárový kód banky**. 
 - Pro fakturu, která je označena jako povinná pro **finskou** přidruženou přílohu platby
 
-![Poukázka žira](media/FTIbyGER-GiroSlip.PNG)
+![Poukázka žira.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > Vzorový formát elektronického výkaznictví byl nakonfigurován tak, aby volitelně generoval převodní poukázky žira v samostatném listu.
@@ -194,7 +194,7 @@ Použijte následující prvky vzorového formátu elektronického výkaznictví
 - K textu předmětu e-mailu lze přistoupit prostřednictvím následujícího výrazu elektronického výkaznictví: **Emailing.TxtToUse.Subject**.
 - K tělu e-mailu lze přistoupit prostřednictvím následujícího výrazu elektronického výkaznictví: **Emailing.TxtToUse.Body**.
 
-![Nastavení cíle](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Nastavení cíle.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Výchozí text předmětu a textu e-mailu je definován ve vzorovém formátu elektronického výkaznictví. Jazyk závisí na popiscích formátu. Tento výchozí text se použije pro e-maily, pokud vlastní šablona e-mailu organizace s předdefinovaným ID **ERFTITMP** nebyla přidána.
 
@@ -203,9 +203,9 @@ Výchozí text předmětu a textu e-mailu je definován ve vzorovém formátu el
 
 Pokud byla pro právnickou osobu, pro kterou zpracováváte fakturu, s předdefinovaným ID **ERFTITMP**, přidána šablona e-mailu organizace, pro vygenerování e-mailu se použije šablona předmětu a těla e-mailu. 
 
-![Šablony e-mailu organizace](media/FTIbyGER-EmailTemplate.png)
+![Šablony e-mailu organizace.](media/FTIbyGER-EmailTemplate.png)
 
-![Odeslat šablonu e-mailu](media/FTIbyGER-EmailTemplateBody.png)
+![Odeslat šablonu e-mailu.](media/FTIbyGER-EmailTemplateBody.png)
 
 Výraz elektronického výkaznictví **Emailing.TxtToUse.Subject** vzorového formátu elektronického výkaznictví je nakonfigurován pro nahrazení všech výskytů zástupce %1 identifikátorem ID faktury.
 
@@ -218,9 +218,9 @@ Výraz **Emailing.TxtToUse.Body** vzorového formátu je nakonfigurován pro ná
 - %5 je nahrazen funkcí kontaktní osoby společnosti.
 - %6 je nahrazen e-mailovou adresou kontaktní osoby společnosti.
 
-![E-mail](media/FTIbyGER-Email.PNG)
+![E-mail.](media/FTIbyGER-Email.PNG)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 

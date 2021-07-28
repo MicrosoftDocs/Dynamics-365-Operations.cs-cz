@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5b77985a75d2930267cf94d6f218d53b47e6e705
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a9912151ef9fc68941858545e39bccc1e5d3e411
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023095"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358307"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>Vypořádání plateb TDS prodejcům autorit TDS a generování challan TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak vyrovnat platby daně odečtené u zdroje (TDS) prod
 
 1. Přejděte na **Pohledávky \> Platby \> Deník plateb dodavatele**.
 
-    [![Stránka deníku plateb dodavatelů](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
+    [![Stránka deníku plateb dodavatelů.](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
 
 2. Na stránce **Deník plateb dodavatele** vyberte **Nový** k vytvoření řádku deníku.
 3. V poli **Účet** vyberte dodavatele oprávnění TDS, kterému chcete platby TDS zúčtovat.

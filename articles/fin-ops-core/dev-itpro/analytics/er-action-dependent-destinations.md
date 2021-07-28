@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358662"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
@@ -69,11 +69,11 @@ Můžete například použít formát ER **volná textová faktura (Excel)**, po
 
 Následující obrázek ukazuje, jak můžete dosáhnout této konfigurace cílů ER jako sady individuálních záznamů o cíli, když je každý záznam nakonfigurován pro jednotlivou akci uživatele:
 
-![Cílová stránka elektronického hlášení, která má nastavení cíle závislé na akci pro formát ER, když je každý záznam cíle nakonfigurován pro jednu akci uživatele](./media/er-destination-action-dependent-01.png)
+![Cílová stránka elektronického hlášení, která má nastavení cíle závislé na akci pro formát ER, když je každý záznam cíle nakonfigurován pro jednu akci uživatele.](./media/er-destination-action-dependent-01.png)
 
 Následující obrázek ukazuje, jak můžete dosáhnout stejné alternativní konfigurace cílů ER jako sady individuálních záznamů o cíli, když je každý záznam nakonfigurován pro jednotlivý cíl:
 
-![Cílová stránka elektronického hlášení, která má nastavení cíle závislé na akci pro formát ER, když je každý záznam cíle nakonfigurován pro jeden cíl](./media/er-destination-action-dependent-01a.png)
+![Cílová stránka elektronického hlášení, která má nastavení cíle závislé na akci pro formát ER, když je každý záznam cíle nakonfigurován pro jeden cíl.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Pokud je pro spuštěný formát ER poskytnut kód akce, ale pro tento kód akce nebyly nakonfigurovány žádné cíle, je použito chování [výchozího](electronic-reporting-destinations.md#default-behavior) cíle.
@@ -84,7 +84,7 @@ Při spuštění formátu ER, pokud byly akce uživatelů zřízeny uživateli, 
 
 Následující obrázek ukazuje příklad dialogového okna **Cíle formátu elektronického výkaznictví**, které se zobrazí při [zaúčtování](../../../finance/accounts-receivable/create-free-text-invoice-new.md) volné textové faktury a je spuštěn formát ER **Volná textová faktura (Excel)** ke generování tohoto dokumentu, pokud byla zřízena akce **Tiskárna** a cíle ER byly pro tento formát nakonfigurovány, jak je uvedeno dříve v tomto tématu.
 
-![Dialogové okno, které umožňuje změnit původně nakonfigurované cíle ER pro spuštěný formát ER](./media/er-destination-action-dependent-02.gif)
+![Dialogové okno, které umožňuje změnit původně nakonfigurované cíle ER pro spuštěný formát ER.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Pokud jste nakonfigurovali cíle ER pro několik komponent běžícího formátu ER, bude nabídnuta možnost samostatně pro každou nakonfigurovanou komponentu formátu ER.
@@ -103,7 +103,7 @@ Pomocí těchto kroků ověřte poskytnutý kód akce uživatele.
 6. Na stránce **Protokoly ladění konfigurace** filtrujte protokoly běhu ER a vyhledejte protokol pro běh ve formátu ER.
 7. Zkontrolujte položky protokolu, které musí obsahovat záznam, který představuje poskytnutý kód akce uživatele, pokud byla poskytnuta nějaká akce pro spuštění formátu ER.
 
-    ![Stránka s protokoly běhu elektronického výkaznictví, která obsahuje informace o kódu akce uživatele, který byl poskytnut pro filtrovaný běh formátu ER](./media/er-destination-action-dependent-03.png)
+    ![Stránka s protokoly běhu elektronického výkaznictví, která obsahuje informace o kódu akce uživatele, který byl poskytnut pro filtrovaný běh formátu ER.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Seznam obchodních dokumentů (vlna 1)</a>
 

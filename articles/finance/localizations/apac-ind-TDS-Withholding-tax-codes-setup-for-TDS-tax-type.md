@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d56a23f7af7633e1761a8a7c48f71381d6f14df2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 57de382c6d363a6c1d87cf734e9aedb32d6009a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349921"
 ---
 # <a name="set-up-withholding-tax-codes-for-the-tds-tax-type"></a>Nastavení kódů srážkové daně pro typy daně TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak nastavit kódy daně odečtené u zdroje (TDS).
 
 1. Přejděte na **Daň \> Nepřímé daně \> Srážková daň \> Kódy srážkové daně**.
 
-    [![Stránka Kódy srážkové daně](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
+    [![Stránka Kódy srážkové daně.](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
 2. V podokně akcí vyberte **Nový** pro vytvoření kódu srážkové daně pro TDS a zadejte požadované podrobnosti.
 3. Na pevné záložce **Obecné** v poli **Typ daně** vyberte **TDS** ke kategorizaci kódu daně jako kódu daně TDS.

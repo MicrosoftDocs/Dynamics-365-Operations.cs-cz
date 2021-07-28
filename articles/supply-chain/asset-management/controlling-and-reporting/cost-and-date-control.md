@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016125"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354946"
 ---
 # <a name="cost-and-date-control"></a>Kontrola data a nákladů
 
@@ -58,7 +58,7 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
     Následující obrázek ukazuje příklad dialogového okna **Řízení nákladů majetku**.
 
-    ![Dialogové okno Řízení nákladů na majetek](media/01-controlling-and-reporting.png)
+    ![Dialogové okno Řízení nákladů na majetek.](media/01-controlling-and-reporting.png)
 
 10. Na kartě **Kontrola nákladů majetku** klikněte na tlačítka **Seskupit podle** pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
@@ -71,7 +71,7 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 - Pole **Otevřené potvrzené náklady** zobrazuje závazky k zaplacení za položky, hodiny a služby, které byly objednány nebo přijaty, ale dosud nebyly zaplaceny. 
 - Po zaúčtování všech registrací spotřeby budou související náklady zahrnuty do pole **Skutečné náklady**.
 
-![Příklad výsledků výpočtu v řízení nákladů na majetek](media/02-controlling-and-reporting.png)
+![Příklad výsledků výpočtu v řízení nákladů na majetek.](media/02-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu nákladů je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení nákladů** na kartě **Obecné**. V dialogovémokně  **Řízení nákladů majetku** je vybraný majetek automaticky vložen do pole **Majetek** na záložce s náhledem **Záznamy k zahrnutí**. Klikněte na **OK** a zobrazí se výpočet nákladů pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
@@ -99,7 +99,7 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 - Pole **Průměrné zpoždění ukončení** zobrazuje rozdíl mezi dny plánovaného koncového data pro pracovní příkaz ve srovnání se skutečným koncovým datem. Pokud například skutečné datum ukončení bylo tři dny po plánovaném koncovém datu, zobrazí se v tomto poli 3.  
 - V poli **Výskyty** se zobrazuje počet časových odchylek v závislosti na plánovaném a skutečném počátečním datu a plánovaném a skutečném koncovém datu na pracovním příkazu.
 
-![Příklad výsledků výpočtu v řízení pracovních příkazů](media/03-controlling-and-reporting.png)
+![Příklad výsledků výpočtu v řízení pracovních příkazů.](media/03-controlling-and-reporting.png)
 
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054901"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346267"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimalizace dotazů virtuálních tabulek Dataverse
 
@@ -50,13 +50,13 @@ Příklad, kde můžete vidět tento dopad, je v dotazech proti entitě pracovn�
 - **Časový limit dotazu**: Dotaz může vypršet a vrátit následující chybu: „Byl získán token pro volání Finance and Operations, ale Finance and Operations vrátil chybu typu InternalServerError.“
 - **Neočekávaná chyba** : Dotaz může vrátit chybu typu 400 s následující zprávou: „Došlo k neočekávané chybě.“
 
-  ![Typ chyby 400 na HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Typ chyby 400 na HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Omezování**: Dotaz může nadužívat prostředky serveru a podléhat omezením. V tomto případě dotaz vrátí následující chybu: „Byl získán token pro volání Finance and Operations, ale Finance and Operations vrátil chybu typu 429.“ Další informace o omezení v v Human Resources najdete v tématu [Časté otázky k omezování](./hr-admin-integration-throttling-faq.md).
 
-  ![Typ chyby 429 na HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Typ chyby 429 na HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>Rozlišení
+## <a name="resolution"></a>Řešení
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>Omezte počet sloupců obsažených v dotazu na data
 
@@ -96,7 +96,7 @@ Pokud narazíte na některý z výše uvedených náznaků pomalého výkonu př
 2. Do okna **Získat data** zadejte do vyhledávacího pole **Common Data Service**, vyberte konektor **Common Data Service** a vyberte **Připojit**.
 3. Do pole **URL serveru** okna Common Data Service zadejte URI organizace pro vaše prostředí Dataverse a vyberte **OK**.
   
-   ![Zadejte URI pro prostředí Dataverse](./media/PowerBIDataverseURLSetup.png)
+   ![Zadejte URI pro prostředí Dataverse.](./media/PowerBIDataverseURLSetup.png)
   
 4. V okně Navigátor rozbalte uzel **Entity**.
 5. Do vyhledávacího pole zadejte **mshr_hcmworkerbaseentity** a vyberte entitu.
@@ -113,7 +113,7 @@ Pokud narazíte na některý z výše uvedených náznaků pomalého výkonu př
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Aktualizujte dotaz v Rozšířeném editoru pro editor Power Query](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Aktualizujte dotaz v Rozšířeném editoru pro editor Power Query.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Vyberte **Hotovo**.
 
@@ -138,7 +138,7 @@ Například pokud jedno z datových polí zahrnutých na stránce v aplikaci odk
 
 Můžete použít [Power Apps Monitor](/powerapps/maker/monitor-overview), abyste zajistili, že do dotazu budou zahrnuty pouze sloupce, které potřebujete, abyste získali data pro Power App. Můžete zobrazit adresu URL vytvořenou pro operaci getRows, abyste zajistili, že sloupce, které jste vybrali pro vaši aplikaci, budou optimální pro načítání dat.
 
-![Použijte Power Apps Monitor k analyzování operace getData](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Použijte Power Apps Monitor k analyzování operace getData.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Filtrování datového dotazu
 

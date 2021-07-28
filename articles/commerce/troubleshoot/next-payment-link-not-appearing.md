@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: af19a3abd78d543d82f7a8d017e2dc413115a6d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 679c2453068695caca03ac9618573eba0686b863
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018427"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347313"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Možnost „Uložit pro mou další platbu“ se nezobrazí
 
@@ -34,9 +34,9 @@ Zaškrtávací políčko **Uložit na mou další platbu** políčko se nezobraz
 
 Následující obrázek ukazuje příklad stránky pokladny, která obsahuje zaškrtávacího políčka **Uložit pro mou další platbu**.
 
-![Zaškrtávací políčko Uložit pro mou další platbu v modulu Platba](media/payment-module-save-payment.jpg)
+![Zaškrtávací políčko Uložit pro mou další platbu v modulu Platba.](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Rozlišení
+## <a name="resolution"></a>Řešení
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Ověřte, zda je Konektor platby Dynamics 365 pro Adyen správně nakonfigurován v centrále Commerce
 
@@ -46,7 +46,7 @@ K ověření, zda je Konektor platby Dynamics 365 pro Adyen správně nakonfigur
 1. Vyberte online obchod.
 1. Na kartě s náhledem **Platební účty** zkontrolujte, že pole **Povolit ukládání platebních údajů v elektronickém obchodování** je nastaveno na **True**.
 
-![Povolení ukládání platebních údajů v poli elektronického obchodu v centrále Commerce](media/payment-connector-save-payment.jpg)
+![Povolení ukládání platebních údajů v poli elektronického obchodu v centrále Commerce.](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Další prostředky
 

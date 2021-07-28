@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 615e22234323e2235fba002c50f9ab9c230c021e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 888ce67f1feba9876f71d2988268b47c9a4ca1dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827883"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358874"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Časové rozlišení projektu na nákupních příjemkách
 
@@ -37,20 +37,20 @@ Společnost Contoso Consulting zahájila nový projekt nasazení do cloudu. Je v
 Časově rozlišené náklady musí být zaznamenány na finanční úrovni i na úrovni projektu pro účely vykazování. V aplikaci Finance and Operations lze sledovat finanční aktualizaci příjemky produktu pro kategorie zboží a zakázek. 
 
 U zboží na stránce **Parametry závazků** vyberte možnost **Zaúčtování příjemky produktu do knihy**.
-[![Stránka Parametry závazků](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Stránka Parametry závazků.](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 Pro kategorie zásobování na stránce **Pravidlo zásad kategorie** vyberte zásady **Zásobování** a potom vyberte **Časově rozlišený nákupní výdaj na příjemce** pro každou kategorii zásobování.
-[![Stránka Pravidlo zásad kategorie](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Stránka Pravidlo zásad kategorie.](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 Účty **Nákupní výdaj nefakturovaný** a **Časově rozlišený nákup** v **nastavení účtování** budou použity k zaúčtování dokladů, které jsou spojené s touto příjemkou produktu
 
 Pomocí stejného scénáře se podíváme na to, jaký vliv bude mít zaúčtování příjemky produktu na hlavní knihu a informace o projektu. 
 
 **Krok 1:** Vytvořte a potvrďte novou nákupní objednávku pro projekt k zaznamenání nákupu počítače za 1500 USD a instalační služby za 150 USD.
-[![Vytvoření nové nákupní objednávky](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Vytvoření nové nákupní objednávky.](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Při potvrzení nákupní objednávky jsou pro projekt vytvořeny transakce pro potvrzené náklady. 
-[![Vytvořené transakce](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Vytvořené transakce.](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Transakce pro potvrzené náklady bude mít v poli **Původ transakce** nastavenou hodnotu **Nákupní objednávka**. Vytvoření a potvrzení nákupní objednávky nevytváří transakce pro projekt. 
@@ -58,23 +58,23 @@ Při potvrzení nákupní objednávky jsou pro projekt vytvořeny transakce pro 
 **Krok 2:** Doručení zboží a služeb proběhne a je registrována příjemka produktu. 
 
 Zaúčtování příjemky produktu bude generovat a zaúčtuje doklad do hlavní knihy. Doklad bude připsán na stranu nákupních výdajů, nefakturovaného účtu a poměrně rozloženého účtu nákupního kreditu. 
-[![Transakce dokladu](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Transakce dokladu.](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > Zaúčtování příjemky produktu bude používat nastavení účtování pro kategorie zásobování a produkty a nikoli nastavení účtování pro kategorie projektu. Aby se správně projevil finanční dopad na časově rozlišený nákup, je nutné toto nastavení vyrovnat. 
 
 Je možné mapovat kategorie zásobování na kategorie projektu na stránce **Kategorie zásobování**.
-[![Stránka Kategorie zásobování](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Stránka Kategorie zásobování.](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Krok 3:** Vytvořte standardní fakturu dodavatele. 
 
 Zaúčtování příjemky produktu nemá vliv na informace o projektu. Tento problém odstraníte vygenerováním návrhu faktury dodavatele přímo po zaúčtování nákupní příjemky. Přejděte na stránku **Nákupní objednávka** &gt; **karta Faktura** &gt; **Generovat** &gt; **Faktura**. Tím se vytvoří dokument čekající faktury, který aktualizuje informace o projektu. 
 
 Vytvoření návrhu faktury dodavatele bude generovat čekající transakce projektu. 
-[![Čekající transakce projektu](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Čekající transakce projektu.](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 Na stránce **Potvrzené náklady** se záznamy vytvořené v kroku 1 uzavřou a nové záznamy budou vytvořeny tak, aby odrážely náklady závazků pocházející z nevyřízené faktury dodavatele. Pole **Původ transakce** pro potvrzené náklady bude nastaveno na hodnotu **faktura dodavatele**.
-[![Stránka Potvrzené náklady](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Stránka Potvrzené náklady.](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Faktura dodavatele zůstane v nevyřízeném stavu, dokud nepřijde skutečná dodavatelská faktura.
 

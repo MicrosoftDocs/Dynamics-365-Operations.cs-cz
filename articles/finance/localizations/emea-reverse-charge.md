@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a537509fe034d85f8f4f441dc82d54efd3ed4f28
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348878"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 
@@ -121,7 +121,7 @@ Při zaúčtování nákupní faktury s reverse charge se vytvoří dvě transa
 
 Následující snímek obrazovky má jedna transakce směr **DPH na vstupu** směru a druhá **DPH na výstupu**. 
 
-![Zaúčtování DPH](media/apac-sau-posted-sales-tax.png)
+![Zaúčtování DPH.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Povolit mechanismus přenesení daňové povinnosti pro funkci schématu DPH/GST
 V pracovním prostoru **Správa funkcí** najděte funkci a vyberte **Povolit**.

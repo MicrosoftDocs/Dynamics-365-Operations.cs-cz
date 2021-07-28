@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6c4cf4e94e6271843d55b4ca7a0fb3ffaffc9542
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344388"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitální dárkové karty elektronického obchodování
 
@@ -34,13 +34,13 @@ Nákup digitálních dárkových karet je podporován ve verzi Dynamics 365 Comm
 
 Následující obrázek ukazuje příklad stránky s podrobnostmi o produktu (PDP) pro digitální dárkovou kartu na webu elektronického obchodování Fabrikam.
 
-![Příklad PDP digitální dárkové karty na webu elektronického obchodu Fabrikam](./media/GiftcardPDP.PNG)
+![Příklad PDP digitální dárkové karty na webu elektronického obchodu Fabrikam.](./media/GiftcardPDP.PNG)
 
 ## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>Zapnutí funkce digitální dárkové karty v centrále Commerce
 
 Aby fungoval postupu nákupu digitálních dárkových karet v Dynamics 365 Commerce, funkce **Nákup dárkové karty v elektronické obchodu** musí být zapnutá v ústředí Commerce. Funkci naleznete v pracovním prostoru **Správa funkcí** centrále Commerce, jak je vidět na následujícím obrázku.
 
-![Pracovní prostor správy funkcí v centrále Commerce](./media/Featureflag.PNG)
+![Pracovní prostor správy funkcí v centrále Commerce.](./media/Featureflag.PNG)
 
 ## <a name="configure-a-digital-gift-card-in-commerce-headquarters"></a>Konfigurace digitální dárkové karty v centrále Commerce
 
@@ -49,16 +49,16 @@ Produkty digitální dárkové karty se konfigurují v centrále Commerce. Tento
 - Když konfigurujete produkty digitálních dárkových karet v dialogovém okně **Nový produkt**, nastavte pole **Typ produktu** na **Služba**. (Chcete-li otevřít dialogové okno, přejděte na **Retail a Commerce \> Produkty a kategorie \> Produkty podle kategorie** a vyberte **Nový**.) Produkty typu **Služba** se před odesláním objednávky nekontrolují na dostupné skladové zásoby. Další informace naleznete v tématu [Vytvoření nového produktu](create-new-product-commerce.md#create-a-new-product).
 - Na stránce **Parametry Commerce** na kartě **Zaúčtování** musí být pole **Produkt dárkové karty** nastaveno na **Digitální dárková karta**, jak je znázorněno na následujícím obrázku. Pokud je produkt externí dárkovou kartou, další informace naleznete v části [Podpora externích dárkových karet](./dev-itpro/gift-card.md).
 
-    ![Pole produktu Dárkové karty v ústředí Commerce](./media/PostGiftcard.png)
+    ![Pole produktu Dárkové karty v ústředí Commerce.](./media/PostGiftcard.png)
 
 - Pokud dárková karta musí podporovat více předdefinovaných částek (například $25, $50 a $100), rozměr **Velikost** se použije k nastavení těchto předdefinovaných částek. Každá předdefinovaná částka bude variantou. Další informace naleznete v tématu [Dimenze produktu](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Pokud zákazníci musí být schopni určit vlastní částku pro dárkovou kartu, nejprve nastavte variantu, která umožňuje vlastní částku. Poté otevřete produkt ze stránky **Vydané produkty v kategorii** a poté na pevné kartě **Commerce** nastavte pole **Zadat cenu** na **Je třeba zadat novou cenu**, jak je znázorněno na následujícím obrázku. Toto nastavení zajišťuje, že zákazníci mohou zadat cenu, když procházejí produkt na PDP.
 
-    ![Pole Zadat cenu v ústředí Commerce](./media/KeyInPrice.png)
+    ![Pole Zadat cenu v ústředí Commerce.](./media/KeyInPrice.png)
 
 - Režim doručování digitální dárkové karty musí být nastaven na **Elektronicky**. Na stránce **Způsoby dodání** (**Reatil a Commerce \> Nastavení kanálu \> Způsoby dodání**) vyberte způsob dodání **Elektronicky** v podokně se seznamem a poté přidejte produkt digitální dárkové karty do mřížky na pevné kartě **Produkty**, jak je znázorněno na následujícím obrázku. Další informace naleznete v tématu [Nastavení způsobů doručení](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Produkty digitálních dárkových karet na stránce Způsob doručení v ústředí Commerce](./media/ElectronicMode.PNG)
+    ![Produkty digitálních dárkových karet na stránce Způsob doručení v ústředí Commerce.](./media/ElectronicMode.PNG)
 
 - Ujistěte se, že byl vytvořen profil online funkcí a přidružen k vašemu online obchodu v ústředí Commerce. V profilu funkce nastavte možnost **Agregovat produkty** na **Ano**. Toto nastavení zajišťuje agregaci všech položek kromě dárkových karet. Další informace viz [Vytvoření online funkčního profilu](online-functionality-profile.md).
 - Abyste zajistili, že zákazníci obdrží e-mail po fakturaci dárkové karty, vytvořte nový typ e-mailového oznámení na stránce **Profily e-mailových oznámení** a nastavte pole **Typ e-mailového oznámení** na **Vydat dárkový poukaz**. Další informace viz [Nastavení profilu e-mailového oznámení](email-notification-profiles.md).

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750557"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352905"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Šablony dat s více listy
 
@@ -32,13 +32,13 @@ Podíváme se na příklad, kde existuje jeden soubor aplikace Excel s listy naz
 
 Pokud přidáte druhou entitu **Sklady**, aniž byste opustili formulář **Přidat soubor**, vyhledávání listu vám umožní vybrat list **Sklady** bez nutnosti znovu odeslat soubor. Jediný důvod k odeslání nového souboru by byl ten, kdyby data **Sklady** byla v jiném souboru.
 
-![Více listů](./media/AddFileMultipleWorkSheets.png)
+![Více listů.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Opravení listu pro mapování entit
 
 Mapování listu na datovou entitu v úloze importu lze opravit z mřížky. Sloupec **List** v mřížce zobrazí listy ze souboru, který byl mapován. Jiný list můžete vybrat z rozevírací nabídky. Pokud je zvolený list již namapován na entitu v datovém projektu, systém zobrazí výzvu k potvrzení změny. Doporučujeme, abyste v mřížce opravili všechna mapování.
 
-![Aktualizace mapování listu](./media/UpdateMappings.png)
+![Aktualizace mapování listu.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Opětovné namapování na nový soubor
 

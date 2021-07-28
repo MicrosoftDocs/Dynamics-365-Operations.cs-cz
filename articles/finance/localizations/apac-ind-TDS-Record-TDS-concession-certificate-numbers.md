@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023076"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358379"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Zaznamenání čísel koncesních certifikátů TDS
 
@@ -33,7 +33,7 @@ Toto téma vysvětluje, jak zaznamenat čísla koncesních certifikátů daně o
 2. V poli **Typ daně** vyberte **TDS** k zaznamenání koncesních certifikátů pro daňový typ TDS.
 3. Na kartě **Přehled** vyberte **Alt + N** k vytvoření řádku.
 
-    [![Záhlaví nového řádku](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Záhlaví nového řádku.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. V poli **Kód srážkové daně** vyberte daňový kód TDS, pro který jsou vydány koncesní certifikáty dodavatele. Pole **Název srážkové daně** zobrazuje název kódu daně TDS.
 5. V polích **Od data** a **Do data** definujte dobu platnosti koncesního certifikátu, který používá daňový kód TDS k výpočtu TDS koncesně.
@@ -50,6 +50,6 @@ Toto téma vysvětluje, jak zaznamenat čísla koncesních certifikátů daně o
 
 11. Do pole **Certifikát** zadejte číslo koncesního certifikátu TDS.
 
-    [![Pevná záložka Certifikát](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Pevná záložka Certifikát.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Zavřete stránku.

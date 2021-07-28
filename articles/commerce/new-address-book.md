@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e963cf8cbae4651ad05126cdf465a386dea2d7a5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 052ac3291ea6d2984c25445b7165284dfdcfa2b2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353077"
 ---
 # <a name="create-new-address-book"></a>Vytvoření nového adresáře
 
@@ -40,9 +40,9 @@ Při vytváření nového adresáře postupujte takto:
 
 Na následujícím obrázku je znázorněno vytvoření adresáře zaměstnance pro maloobchodní obchod.
 
-![Příklad adresáře zaměstnance](media/address-books.png)
+![Příklad adresáře zaměstnance.](media/address-books.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Informační kódy a skupiny informačních kódů](info-codes-retail.md)           
 

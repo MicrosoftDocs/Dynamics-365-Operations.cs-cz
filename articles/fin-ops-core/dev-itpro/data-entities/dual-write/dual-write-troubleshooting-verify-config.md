@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: af746d1d20ddd1552bce797288c6d62d69d7bd16
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d903d58fbd5e9d6bd9ecf7943d09525446721ba2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748842"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350757"
 ---
 # <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Ověření, zda je v aplikacích Finance and Operations a Dataverse nakonfigurován duální zápis
 
@@ -39,11 +39,11 @@ Chcete-li zjistit, zda jsou chyby, které se zobrazí při pokusu o uložení ř
 
 + Máte-li v aplikaci Finance and Operations oprávnění správce, přejděte na možnost **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**. Jsou-li zobrazeny podrobnosti o propojených prostředích a seznam spuštěných map tabulek, je nakonfigurován dvojí zápis.
 
-    ![Ověřuje se připojení aplikace Finance and Operations, když máte oprávnění správce](media/verify_fin_ops_1.png)
+    ![Ověřuje se připojení aplikace Finance and Operations, když máte oprávnění správce.](media/verify_fin_ops_1.png)
 
 + Nemáte-li oprávnění správce, zobrazí se chybová zpráva *Nelze zapsat data do entity \<entity name\>*. V příkladu na následujícím obrázku nelze vytvořit řádek odběratele v aplikaci Finance and Operations, protože je nakonfigurován dvojí zápis, ale skupina odběratelů a referenční data platebních podmínek neexistují v Dataverse.
 
-    ![Ověřuje se připojení aplikace Finance and Operations, když nemáte oprávnění správce](media/verify_fin_ops_2.png)
+    ![Ověřuje se připojení aplikace Finance and Operations, když nemáte oprávnění správce.](media/verify_fin_ops_2.png)
 
 Informace o tom, jak vyřešit problémy při vytváření dat v aplikacích Finance and Operations, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
 
@@ -51,7 +51,7 @@ Informace o tom, jak vyřešit problémy při vytváření dat v aplikacích Fin
 
 Pokud se při vytváření dat nachází sloupec **Společnost** na stránkách v aplikaci Dataverse, je nakonfigurováno dvojí zapisování.
 
-![Ověřování připojení Dataverse](media/verify_cds.png)
+![Ověřování připojení Dataverse.](media/verify_cds.png)
 
 Informace o tom, jak vyřešit problémy při vytváření dat v Dataverse, naleznete v tématu [Poradce při potížích s synchronizací v ostrém provozu](dual-write-troubleshooting-live-sync.md).
 

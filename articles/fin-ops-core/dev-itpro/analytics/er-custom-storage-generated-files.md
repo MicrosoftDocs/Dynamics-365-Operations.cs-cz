@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894141"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348133"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Určení vlastních umístění úložišť pro vygenerované dokumenty
 
@@ -41,7 +41,7 @@ Všechny úkoly v tomto tématu lze dokončit ve společnosti **USMF**.
 
 Chcete-li vygenerovat dokumenty, u kterých plánujete přidat vlastní umístění úložiště, [importujte](er-download-configurations-global-repo.md) konfiguraci formátu ER **Dopředné posunutí dlouhodobého majetku** do aktuální topologie.
 
-![Stránka úložiště konfigurace](./media/er-custom-storage-generated-files-import-format.png)
+![Stránka úložiště konfigurace.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Spuštění sestavy dopředného posunutí dlouhodobého majetku
 
@@ -52,7 +52,7 @@ Chcete-li vygenerovat dokumenty, u kterých plánujete přidat vlastní umístě
 5. V poli **Mapování formátu** vyberte **Dopředné posunutí dlouhodobého majetku**.
 6. Vyberte **OK**.
 
-![Dialogové okno modulu runtime pro sestavu dopředného posunutí dlouhodobého majetku](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Dialogové okno modulu runtime pro sestavu dopředného posunutí dlouhodobého majetku.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 v aplikaci Microsoft Excel zkontrolujte odchozí dokument, který je generován a je k dispozici ke stažení. Toto chování je [výchozí](electronic-reporting-destinations.md#default-behavior) pro formát ER, který nemá konfigurovány žádné [cíle](electronic-reporting-destinations.md) a běží v interaktivním režimu.
 

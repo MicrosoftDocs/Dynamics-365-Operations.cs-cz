@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9976ca461f7e988c32b81565fa2d084709e5ad6e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7453f0780d46ec1b3a09fe122938c8729c35aef6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792500"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349225"
 ---
 # <a name="set-up-an-experiment"></a>Nastavení experimentu
 
 Jakmile [definujete hypotézu a určíte, jakou metriku úspěšnosti chcete používat](experimentation-identify.md), budete svůj experiment muset nastavit ve službě třetí strany. Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
 
-[ ![Cesta uživatele experimentováním – nastavení](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
+[ ![Cesta uživatele experimentováním – nastavení.](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
 
 ## <a name="set-up-your-experiment-in-the-third-party-service"></a>Nastavení experimentu ve službě třetí strany

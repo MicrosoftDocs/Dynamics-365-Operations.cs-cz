@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270528"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352729"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
@@ -44,7 +44,7 @@ Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s clou
 
 Jak ukazuje následující obrázek, životní cyklus výroby je rozdělen do tří fází: *Plánování*, *Provedení* a *Dokončení*.
 
-[![Fáze provedení výroby při použití jediného prostředí](media/mes-phases.png "Fáze provedení výroby při použití jediného prostředí")](media/mes-phases-large.png)
+[![Fáze výroby při použití jediného prostředí](media/mes-phases.png „Fáze provádění výroby při použití jediného prostředí.“](media/mes-phases-large.png)
 
 Fáze _Plánování_ zahrnuje definici produktu, plánování, vytváření a plánování objednávek a vydání. Krok uvolnění označuje přechod z fáze _Plánování_ do fáze _Provedení_. Po uvolnění výrobní zakázky budou úlohy výrobní zakázky viditelné na produkční ploše a připraveny k provedení.
 
@@ -54,7 +54,7 @@ Když je úloha produkce označena jako dokončená, přesune se z fáze _Proved
 
 Jak ukazuje následující obrázek, při použití jednotek měřítka je fáze _Provedení_ rozdělena jako samostatná úloha.
 
-[![Fáze provedení výroby při použití jednotek škálování](media/mes-phases-workloads.png "Fáze provedení výroby při použití jednotek škálování")](media/mes-phases-workloads-large.png)
+[![Fáze výroby při použití jednotek škálování](media/mes-phases-workloads.png „Fáze výroby při použití jednotek škálování.“](media/mes-phases-workloads-large.png)
 
 Model nyní přechází z instalace s jednou instancí na model, který je založen na jednotkách centra a škálování. Fáze _Plánování_ a _Dokončení_ běží jako operace back-office v centru a pracovní zátěž provedení výroby probíhá na jednotkách škálování. Data se přenášejí asynchronně mezi centrem a jednotkami měřítka.
 
@@ -87,7 +87,7 @@ I když se úloha obvykle spouští automaticky, můžete ji kdykoli spustit ru�
 
 Chcete-li zkontrolovat protokol zpracování registrace, přihlaste se do centra a přejděte na **Kontrola výroby \> Pravidelné úkoly \> Správa zátěže backoffice \> Nezpracovaný protokol zpracování registrace**. Stránka **Protokol zpracování nezpracované registrace** zobrazuje seznam zpracovaných nezpracovaných registrací a stav každé registrace.
 
-![Kontrola stránky protokolu nezpracované registrace](media/mes-processing-log.png "Kontrola stránky protokolu nezpracované registrace")
+![Kontrola stránky protokolu nezpracované registrace.](media/mes-processing-log.png "Kontrola stránky protokolu nezpracované registrace")
 
 Na jakékoli registraci v seznamu můžete pracovat tak, že ji vyberete a poté vyberete jedno z následujících tlačítek v podokně akcí:
 

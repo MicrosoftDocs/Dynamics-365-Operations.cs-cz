@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058553"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360561"
 ---
 # <a name="payroll-integration-api-introduction"></a>Úvod do rozhraní API integrace mezd
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058553"
 
 Tento dokument popisuje rozhraní API Dynamics 365 Human Resources pro integraci mezd. API umožňuje efektivní přímou integraci mezi systémy Human Resources a mzdovými systémy partnerů. Integrované prostředí začíná v Human Resources profilem zaměstnanců, platem a srážkami a informacemi o příspěvcích. Když si najmete zaměstnance a zadáte požadovaný profil a informace o platu do Human Resources, mzdový systém tyto informace použije při zpracování mezd. Veškeré aktualizace provedené v informacích o zaměstnancích nebo výplatách jsou také staženy pro použití v pozdějších výplatách.
 
-![Tok integrace mezd](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Tok integrace mezd.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Aby bylo možné integraci povolit, v modulu Human Resources jsou přidány tyto komponenty:
 
@@ -60,7 +60,7 @@ Informace o generování virtuálních tabulek pro rozhraní API najdete v čás
 
 Následující diagramy ukazují vztahy v rámci rozhraní API. Několik typů má cizí klíče k jiným, již existujícím entitám v modulu Human Resources, které zde nejsou znázorněny. Tento dokument poskytuje informace o entitách, které jsou specifické pro scénáře integrace mezd. Existuje však mnoho dalších entit ve webovém rozhraní API Dataverse pro Human Resources, které mohou být pro integraci rovněž relevantní. Na některé z těchto entit se odkazuje ve vztazích cizích klíčů nebo ve vlastnostech navigace.
 
-![Datový model rozhraní API pro integraci mezd](media/hr-admin-payroll-api-data-model.png)
+[![Datový model rozhraní API pro integraci mezd.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Zaměstnanec na výplatní listině a související entity
 
@@ -68,7 +68,8 @@ Entity:
 
 - [Zaměstnanec na výplatní listině](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Adresa pracovníka na výplatní listině](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Mzdový plán fixní kompenzace](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Mzdový plán fixní kompenzace](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Mzdový plán variabilní kompenzace](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Práce pozice mzdy](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Pozice mzdy](hr-admin-integration-payroll-api-payroll-position.md)
 

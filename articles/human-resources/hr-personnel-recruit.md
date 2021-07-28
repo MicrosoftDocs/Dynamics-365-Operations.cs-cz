@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051802"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359669"
 ---
 # <a name="recruit-job-candidates"></a>Nábor uchazečů o práci
 
@@ -61,13 +61,13 @@ Pokud má vaše organizace více umístění, můžete je přidat, aby si žadat
 
 3. V poli **Umístění žádosti o nábor** zadejte název umístění.
 
-   ![Přidání umístění žádosti o nábor](./media/hr-recruit-0a-add-location.png)
+   ![Přidání umístění žádosti o nábor.](./media/hr-recruit-0a-add-location.png)
 
 4. Do pole **Popis** zadejte popis umístění.
 
 5. Ve volbě **Umístění** vyberte **Přidat**. Pokud se otevře okno **Nová adresa**, zadejte adresu umístění.
 
-   ![Zadejte adresu](./media/hr-recruit-0b-address.png)
+   ![Zadejte adresu.](./media/hr-recruit-0b-address.png)
 
 6. Pod **Kontaktní informace** zadejte kontaktní informace místa.
 
@@ -83,11 +83,11 @@ Manažeři mohou odesílat žádosti o nábor v Human Resources. Pokud použív�
 
 3. Vyberte **Žádost o nábor**.
 
-   ![Zahájení žádosti o nábor](./media/hr-recruit-1-request-to-recruit.png)
+   ![Zahájení žádosti o nábor.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Vyplňte pole **Popis**, **Práce** a **Odhadované počáteční datum**.
 
-   ![Vyplnění žádosti o nábor](./media/hr-recruit-2-request-to-recruit.png)
+   ![Vyplnění žádosti o nábor.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Vyberte **Pokračovat**. Zobrazí se žádost o nábor pro vaši pozici.
 
@@ -95,7 +95,7 @@ Manažeři mohou odesílat žádosti o nábor v Human Resources. Pokud použív�
 
 7. V části **Práce** podle potřeby změňte informace a poté vyberte **Vytvořit podrobnosti z práce**.
 
-   ![Vytvořte podrobnosti z úlohy](./media/hr-recruit-3-create-details-from-job.png)
+   ![Vytvořte podrobnosti z úlohy.](./media/hr-recruit-3-create-details-from-job.png)
 
    Zbytek žádosti o nábor se naplní výchozími informacemi o zadané práci.
 
@@ -103,13 +103,13 @@ Manažeři mohou odesílat žádosti o nábor v Human Resources. Pokud použív�
 
 9. V části **Pozice** vyberte **Přidat** a poté vyberte pozici pro tuto žádost o nábor.
 
-   ![Přidání pozice](./media/hr-recruit-4-select-position.png)
+   ![Přidání pozice.](./media/hr-recruit-4-select-position.png)
 
 10. V části **Dovednosti** vyberte **Přidat** a poté vyberte dovednost.
 
 11. V části **Požadavky na vzdělání** vyberte **Přidat** a poté vyberte hodnoty z rozevíracích seznamů **Vzdělání** a **Úroveň vzdělání**.
 
-   ![Přidání dalších požadavků](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Přidání dalších požadavků.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. V části **Komentář** podle potřeby přidávejte komentáře.
 
@@ -117,9 +117,9 @@ Manažeři mohou odesílat žádosti o nábor v Human Resources. Pokud použív�
 
 14. Když je vaše žádost o nábor dokončen a jste připraveni zahájit proces náboru, vyberte **Aktivovat** v řádku nabídek.
 
-   ![Aktivace žádosti o nábor](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktivace žádosti o nábor.](./media/hr-recruit-6-activate-recruit-request.png)
 
-15. Zvolte **Uložit**.
+15. Zvolte možnost **Uložit**.
 
 ## <a name="view-and-edit-your-recruiting-requests"></a>Zobrazení a úpravy žádostí o nábor
 
@@ -131,7 +131,7 @@ Pokud jste manažer a chcete zobrazit své vlastní požadavky:
 
 3. V části **Informace o mém týmu** vyberte kartu **Žádosti o nábor**.
 
-   ![Výběr karty Žádosti o nábor](./media/hr-recruit-7-recruiting-requests.png)
+   ![Výběr karty Žádosti o nábor.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Chcete-li zobrazit nebo upravit žádost o nábor, vyberte jej v mřížce.
 
@@ -141,7 +141,7 @@ Pokud jste personalista a chcete zobrazit všechny žádosti o nábor:
 
 2. Vyberte **Žádosti o nábor**.
 
-   ![Zobrazení žádostí o nábor ve správě zaměstnanců](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Zobrazení žádostí o nábor ve správě zaměstnanců.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Chcete-li zobrazit nebo upravit žádost o nábor, vyberte jej v mřížce.
 
@@ -155,7 +155,7 @@ Pokud vaše organizace integrovala jinou aplikaci pro správu žádostí o nábo
 
 3. V části **Nábor** vyberte **Kandidáti**.
 
-   ![Zobrazení kandidátů](./media/hr-recruit-9-candidates.png)
+   ![Zobrazení kandidátů.](./media/hr-recruit-9-candidates.png)
 
 4. Chcete-li přidat kandidáta, vyberte **Nový**. Chcete-li upravit existujícího kandidáta, vyberte jej ze seznamu a pak vyberte možnost **Upravit**. Zobrazí se profil kandidáta.
 
@@ -163,7 +163,7 @@ Pokud vaše organizace integrovala jinou aplikaci pro správu žádostí o nábo
 
 6. V části **Žádosti o nábor** vyberte žádost o nábor, se kterou chcete kandidáta propojit. Poté dle potřeby vyplňte pole **Odhadované počáteční datum**, **Náborový manažer**, **Pozice** a **Popis**.
 
-   ![Odkaz na žádost o nábor](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Odkaz na žádost o nábor.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Vyplňte všechny informace v následujících oblastech, které chcete zahrnout do záznamu kandidáta:
    - **Komentáře**
@@ -182,11 +182,11 @@ Až budete připraveni přijmout kandidáta, postupujte podle tohoto postupu a p
 
 1. Na formuláři kandidáta vyberte **Přijmout**.
 
-   ![Přijetí kandidáta](./media/hr-recruit-11-hire.png)
+   ![Přijetí kandidáta.](./media/hr-recruit-11-hire.png)
 
 2. Ve formuláři **Přijetí nového pracovníka** pod **Podrobnosti** vyplňte všechna pole.
 
-   ![Zadání podrobností nového zaměstnance](./media/hr-recruit-12-hire-new-worker.png)
+   ![Zadání podrobností nového zaměstnance.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Pod **Podrobnosti o pozici** ověřte a podle potřeby změňte informace.
 
@@ -203,7 +203,7 @@ Pokud se rozhodnete kandidáta nepřijmout, postupujte podle tohoto postupu, kte
 
 1. Na formuláři kandidáta vyberte **Nepřijmout**.
 
-   ![Nepřijetí kandidáta](./media/hr-recruit-13-do-not-hire.png)
+   ![Nepřijetí kandidáta.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Vyberte **Kód důvodu** a přidejte veškeré potřebné komentáře.
 
@@ -215,7 +215,7 @@ V případě potřeby můžete kandidáta poté, co ho přijmete, propustit. Nap
 
 - Na formuláři kandidáta vyberte **Propustit kandidáta**.
 
-  ![Zamítnout kandidáta](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Zamítnout kandidáta.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Viz také
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822460"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344213"
 ---
 # <a name="vendor-rebates"></a>Rabaty dodavatele
 
@@ -53,7 +53,7 @@ Smlouva o rabatu dodavatele je záznamem dohody s dodavatelem, který určuje vy
 
 Chcete-li o stránku **Smlouvy o rabatech dodavatele**, vyberte **Zásobování a zdroje** &gt; **Rabaty dodavatele** &gt; **Smlouvy o rabatu**.
 
-![Nákupní smlouva](media/purchase-agreement.PNG)
+![Nákupní smlouva.](media/purchase-agreement.PNG)
 
 Na stránce **Smlouvy o rabatu dodavatele** můžete zobrazit podrobnosti o vyjednaných podmínkách ze smlouvy s dodavatelem.
 
@@ -129,7 +129,7 @@ Po schválení nároků je lze zpracovat podle závazků. Je automaticky vygener
 
     Deník časového rozlišení rabatu se zaúčtuje pro částku nároku. Toto zaúčtování zapisuje na vrub účtu pohledávek časově rozlišených rabatů dodavatele pro očekávaný kredit dodavatele a připisuje prozatímní účet přijatých časově rozlišených rabatů dodavatele k očekávanému zisku.
 
-    ![Zpráva](media/message.png)
+    ![Zpráva.](media/message.png)
 
 5. V seznamu rabatů vyberte řádek a poté vyberte v podokně akcí **Transakce rabatu** pro zobrazení a přechod na číslo dávky deníku pro toto zaúčtování časově rozlišeného rabatu.
 

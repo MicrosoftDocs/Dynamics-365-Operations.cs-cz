@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754591"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354438"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
@@ -54,11 +54,11 @@ Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual
 3. V dialogovém okně **Přidat novou položku**, v části **Operační artefakty**, vyberte šablonu **Prostředek**.
 4. Zadejte název, který se použije k odkazování na sestavu v metadatech X ++ a klepněte na tlačítko **přidat**.
 
-    ![Dialogové okno Přidat novou položku](media/analytical-workspace-add.png)
+    ![Dialogové okno Přidat novou položku.](media/analytical-workspace-add.png)
 
 5. Najděte soubor .pbix, který obsahuje definici analytické sestavy, a klepněte na tlačítko **Otevřít**.
 
-    ![Dialogové okno Vybrat soubor zdrojů](media/analytical-workspace-select-resource.png)
+    ![Dialogové okno Vybrat soubor zdrojů.](media/analytical-workspace-select-resource.png)
 
 Poté, co jako prostředek Dynamics 365 nepřidáte .pbix soubor, můžete vložit sestavy pracovní prostory a přidat přímé odkazy pomocí položky nabídky.
 
@@ -67,7 +67,7 @@ V tomto příkladu doporučujeme rozšířit pracovní prostor **řízení rezer
 
 Následující obrázek znázorňuje, jak formulář **FMClerkWorkspace** vypadá v Návrháři v aplikaci Microsoft Visual Studio.
 
-![Formulář FMClerkWorkspace před změnami](media/analytical-workspace-definition-before.png)
+![Formulář FMClerkWorkspace před změnami.](media/analytical-workspace-definition-before.png)
 
 Pomocí následujícího postupu rozšířit definici formuláře pracovního prostoru **Řízení rezervací**.
 
@@ -92,7 +92,7 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 
 Následující obrázek znázorňuje, jak návrh vypadá poté, co tyto změny se projeví.
 
-![FMClerkWorkspace po provedení změn](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace po provedení změn.](media/analytical-workspace-definition-after.png)
 
 Poté, co jste přidali ovládací prvky formuláře, které budou použity pro sestavu pracovního prostoru, je nutné definovat velikost nadřazenému ovládacímu prvku tak, aby se přizpůsobilo rozvržení. Ve výchozím bude v sestavě viditelná stránka **Podokno Filtry** a **Karta**. Můžete však změnit viditelnost zobrazení těchto ovládacích prvků v závislosti na příjemci cílové sestavy.
 
@@ -142,7 +142,7 @@ Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládac�
 
 Nyní jste dokončili úkol přidání obchodní logiky v ovládacím prvku prohlížeče sestavy. Následující obrázek znázorňuje, jak pracovní prostor vypadá poté, co se tyto změny projeví.
 
-![Sestava vložená do pracovního prostoru](media/analytical-workspace-final.png)
+![Sestava vložená do pracovního prostoru.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Můžete zobrazit stávající operační zobrazení pomocí záložek pracovního prostor pod nadpisem stránky.

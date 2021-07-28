@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937005"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352681"
 ---
 # <a name="clienteling-overview"></a>Přehled clientelingu
 
@@ -68,7 +70,7 @@ Chcete-li ve vašem prostředí zapnout funkci clientelingu, postupujte podle n�
 
 1. V pracovním prostoru **Správa funkcí** filtrujte funkce podle modulu **Maloobchodní a velkoobchodní prodej**.
 
-    ![Clienteling v seznamu funkcí pro modul Commerce](./media/Enable_clienteling.png "Clienteling v seznamu funkcí pro modul Maloobchodní a velkoobchodní prodej")
+    ![Clienteling v seznamu funkcí pro modul Commerce.](./media/Enable_clienteling.png "Clienteling v seznamu funkcí pro modul Maloobchodní a velkoobchodní prodej")
 
 2. Zapněte funkci **Clienteling** volbou **Povolit nyní**.
 3. Na stránce **Parametry Commerce** na kartě **Číselná řada** vyberte řádek identifikátoru **Identifikátor knihy klienta**. V poli **Kód číselné řady** vyberte číselnou řadu. Systém použije tuto číselnou řadu k přiřazení ID ke klientským knihám.
@@ -83,7 +85,7 @@ Chcete-li ve vašem prostředí zapnout funkci clientelingu, postupujte podle n�
 
 6. Na stránce **Parametry Commerce** na kartě **Clienteling** v poli **Skupina atributů klientských knih** vyberte skupinu atributů, kterou jste právě vytvořili.
 
-    ![Vybraná skupina atributů knihy klientů](./media/Client%20book%20attributes.png "Vybraná skupina atributů knihy klientů")
+    ![Vybraná skupina atributů knihy klientů.](./media/Client%20book%20attributes.png "Vybraná skupina atributů knihy klientů")
 
 7. Chcete-li zaznamenat aktivity, které se vyskytují v POS, definujte typy aktivit stránce **Typ aktivity** (**Retail and Commerce \> Zákazníci \> Typy aktivit**).
 
@@ -95,7 +97,7 @@ Chcete-li ve vašem prostředí zapnout funkci clientelingu, postupujte podle n�
 
 Po dokončení tohoto postupu může zaměstnanec obchodu otevřít stránku podrobnosti o odběrateli v POS a přidat odběratele do své klientské knihy, zobrazit a zaznamenat aktivity a poznámky pro odběratele a zaměřit se na zákazníky pomocí atributů odběratele a knihy klienta k filtrování knihy klienta. Následující obrázek znázorňuje příklad knihy klienta.
 
-![Příklad knihy klienta](./media/client_book.png "Příklad knihy klienta")
+![Příklad knihy klienta.](./media/client_book.png "Příklad knihy klienta")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Zapnutí integrace Customer Insights s aplikací Commerce
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d132ed979a84c2906298c05708cef1ee87f47078
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fb5b851c71ac632a045cf09c725a088d13f21ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360251"
 ---
 # <a name="client-alert-notifications-by-email"></a>Emailové oznámení výstrah klientovi
 
@@ -36,7 +36,7 @@ Další informace o způsobu konfigurace e-mailu naleznete v tématu [Konfigurac
 
 Následující obrázek znázorňuje dialogové okno **Vytvoření pravidla výstrahy**, které nyní zahrnuje možnost **Odeslat e-mail**.
 
-[![Dialogové okno vytvoření pravidla výstrahy, kde je možnost Odeslat e-mail nastavena na Ano](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![Dialogové okno vytvoření pravidla výstrahy, kde je možnost Odeslat e-mail nastavena na Ano.](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > Když je možnost **Odeslat e-mail** nastavena na **Ano**, výstražná oznámení budou nadále doručována z Centra akcí.
@@ -47,7 +47,7 @@ Služba odešle e-mailová upozornění pomocí předdefinovaných šablon e-mai
 
 Následující obrázek zobrazuje strukturu výstražných oznámení při přijetí e-mailem.
 
-[![Výstražná upozornění založená na šabloně pro vytvoření záznamu, změny polí a odstranění šablon](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![Výstražná upozornění založená na šabloně pro vytvoření záznamu, změny polí a odstranění šablon.](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

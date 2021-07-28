@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360118"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Použití mobilního pracovního prostoru správy majetku
 
@@ -60,7 +60,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-    ![Výběr pracovního prostoru](media/am-mobile-01.png "Výběr pracovního prostoru")
+    ![Výběr pracovního prostoru.](media/am-mobile-01.png "Výběr pracovního prostoru")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře
 
@@ -72,7 +72,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. V seznamu vyberte úlohu pracovního příkazu, v níž se zobrazí podrobnosti o úloze: informace o majetku a funkčním umístění a další navigační odkazy pro zobrazení možností **Přílohy**, **Kontrolní seznamy**, **Nástroje**, **Čítače majetku**, **Poznámky**, **Deníky**.
 
-    ![Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře](media/am-mobile-02.png "Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře")
+    ![Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře.](media/am-mobile-02.png "Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře")
 
 ## <a name="create-a-work-order-job"></a>Vytvoření úlohy pracovního příkazu
 
@@ -90,7 +90,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Vyberte **Hotovo**.
 
-    ![Obrazovka Přidat řádek](media/am-mobile-03.png "Obrazovka Přidat řádek")
+    ![Obrazovka Přidat řádek.](media/am-mobile-03.png "Obrazovka Přidat řádek")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Přidejte přílohu k úloze pracovního příkazu
@@ -112,7 +112,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Vyberte **Hotovo**.
 
-    ![Zobrazení a přidání příloh k úloze pracovního příkazu](media/am-mobile-04.png "Zobrazení a přidání příloh k úloze pracovního příkazu")
+    ![Zobrazení a přidání příloh k úloze pracovního příkazu.](media/am-mobile-04.png "Zobrazení a přidání příloh k úloze pracovního příkazu")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Zobrazit kontrolní seznam údržby pro úlohu pracovního příkazu
 
@@ -129,7 +129,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Chcete-li se vrátit k na předchozí stránku, klikněte na tlačítko Zpět (**<**).
 
-    ![Kontrolní seznam údržby a podrobnosti o řádku](media/am-mobile-05.png "Kontrolní seznam údržby a podrobnosti o řádku")
+    ![Kontrolní seznam údržby a podrobnosti o řádku.](media/am-mobile-05.png "Kontrolní seznam údržby a podrobnosti o řádku")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Zobrazit a aktualizovat čítače majetku na úloze pracovního příkazu
 
@@ -146,7 +146,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Zadejte novou hodnotu čítače a vyberte tlačítko **Hotovo**.
 
-    ![Zobrazení a aktualizace počítadel majetku](media/am-mobile-06.png "Zobrazení a aktualizace počítadel majetku")
+    ![Zobrazení a aktualizace počítadel majetku.](media/am-mobile-06.png "Zobrazení a aktualizace počítadel majetku")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Registrovat spotřebu pro úlohu pracovního příkazu
 
@@ -178,7 +178,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
     1. Zadejte **Nákladovou cenu** pro registraci výdaje.
     1. Vyberte **Hotovo**.
 
-    ![Aktualizace deníku pracovních příkazů](media/am-mobile-07.png "Aktualizace deníku pracovních příkazů")
+    ![Aktualizace deníku pracovních příkazů.](media/am-mobile-07.png "Aktualizace deníku pracovních příkazů")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Aktualizace stavu životního na pracovním příkazu.
 
@@ -194,7 +194,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Vyberte **Hotovo**.
 
-    ![Aktualizace stavu životního na pracovním příkazu.](media/am-mobile-08.png "Aktualizace stavu životního na pracovním příkazu.")
+    ![Aktualizace stavu životního na pracovním příkazu..](media/am-mobile-08.png "Aktualizace stavu životního na pracovním příkazu.")
 
 ## <a name="create-a-maintenance-request"></a>Vytvoření požadavku na údržbu
 
@@ -216,7 +216,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Vyberte **Hotovo**.
 
-    ![Vytvoření požadavku na údržbu](media/am-mobile-09.png "Vytvoření požadavku na údržbu")
+    ![Vytvoření požadavku na údržbu.](media/am-mobile-09.png "Vytvoření požadavku na údržbu")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Přidat přílohu k požadavku na údržbu
 
@@ -236,7 +236,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 1. Vyberte **Hotovo**.
 
-    ![Přidat přílohu k požadavku na údržbu](media/am-mobile-10.png "Přidat přílohu k požadavku na údržbu")
+    ![Přidat přílohu k požadavku na údržbu.](media/am-mobile-10.png "Přidat přílohu k požadavku na údržbu")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

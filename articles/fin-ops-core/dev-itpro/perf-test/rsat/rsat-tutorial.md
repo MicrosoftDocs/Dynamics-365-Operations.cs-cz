@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866149"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357511"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Kurz pro nástroj Regression Suite Automation Tool
 
@@ -67,11 +67,11 @@ RSAT umožňuje používat stejný Záznam úloh s více testovacími případy,
 
 Tuto funkci lze použít k ověření, zda došlo k akci. Je-li například vytvořena, odhadnuta a následně zahájena výrobní zakázka, aplikace zobrazí zprávu „Výroba - Zahájení“ a upozorní vás, že výrobní zakázka byla zahájena.
 
-![Oznámení Výroba - Zahájení](./media/use_rsa_tool_05.png)
+![Oznámení Výroba – Zahájení.](./media/use_rsa_tool_05.png)
 
 Tuto zprávu můžete ověřit prostřednictvím RSAT zadáním textu zprávy na kartě **Ověření zprávy** souboru parametrů aplikace Excel pro příslušný záznam.
 
-![Karta Ověření zprávy](./media/use_rsa_tool_06.png)
+![Karta Ověření zprávy.](./media/use_rsa_tool_06.png)
 
 Po spuštění testovacího případu se zpráva v souboru parametrů aplikace Excel porovná se zprávou zobrazenou. Pokud se zprávy neshodují, testovací případ se nezdaří.
 
@@ -104,11 +104,11 @@ Když spustíte testovací případ, RSAT bude generovat snímky (obrázky) krok
 
 Následující ilustrace znázorňuje tok pro tento scénář.
 
-![Tok ukázkového scénáře](./media/use_rsa_tool_14.png)
+![Tok ukázkového scénáře.](./media/use_rsa_tool_14.png)
 
 Na následujícím obrázku je znázorněna hierarchie obchodních procesů pro tento scénář v modulu pro Modelování obchodních procesů LCS.
 
-![Obchodní procesy pro ukázkový scénář](./media/use_rsa_tool_15.png)
+![Obchodní procesy pro ukázkový scénář.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Strategie – klíčové učení
 

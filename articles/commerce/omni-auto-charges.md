@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022700"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353053"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
@@ -43,7 +43,7 @@ Díky funkci rozšířených automatických nákladů mohou mít uživatelé POS
 
 Na stránce **Maloobchod a velkoobchod \> Nastavení centrály \> Parametry \> Parametry velkoobchodu** přejděte na kartu **Objednávky odběratele**. Na záložce s náhledem **Náklady** nastavte možnost **Použít rozšířené automatické náklady** na **Ano**.
 
-![Parametr rozšířených automatických nákladů](media/advancedchargesparameter.png)
+![Parametr rozšířených automatických nákladů.](media/advancedchargesparameter.png)
 
 Když jsou povoleny rozšířené automatické náklady, uživatelé nejsou nadále vyzýváni k ručnímu zadání nákladů na terminálu POS při vytváření objednávky odběratele expedovat vše a expedovat vybrané. Náklady objednávky POS jsou systematicky vypočítávány a přidávány k transakci POS (pokud je nalezena odpovídající tabulka automatických nákladů, která odpovídá kritériu vytvářené objednávky). Uživatelé mohou přidávat nebo udržovat náklady záhlaví nebo na úrovni řádku ručně prostřednictvím nově přidaných operací POS, které lze přidat do rozvržení obrazovky POS.
 
@@ -86,7 +86,7 @@ Nakonfigurujte dva druhy různých automatických nákladů na úrovni záhlaví
 
 U nákladů za pozemní doručení definujte v části řádků stránky **Automatické náklady** náklad 10 USD, který bude použit pro objednávky mezi 0,01 a 100 USD. Vytvořte jiný řádek nákladů pro označení, že objednávky nad 100,01 USD nebudou mít žádné náklady.
 
-![Příklad dvou tabulek s automatickými náklady](media/headerchargesexample.png)
+![Příklad dvou tabulek s automatickými náklady.](media/headerchargesexample.png)
 
 U nákladů za letecké doručení definujte v části řádků formuláře automatických nákladů náklad 20 USD, který bude použit na všechny objednávky (mezi 0,01 a 9 999 999 USD).
 
@@ -116,7 +116,7 @@ Přejděte na **Pohledávky \> Nastavení nákladů \> Automatické náklady**.
 
 Nastavte rozevírací nabídku **Úroveň** na **Řádek** a vytvořte nový záznam automatických nákladů pro všechny odběratele a pro konkrétní produkt nebo skupinu produktů, u kterých bud účtován instalační poplatek.
 
-![Příklad jedné tabulky s automatickými náklady na úrovni řádku](media/linechargesexample.png)
+![Příklad jedné tabulky s automatickými náklady na úrovni řádku.](media/linechargesexample.png)
 
 Odešlete poplatky do databáze Commerce Scale Unit/kanál, aby je mohlo POS použít spuštěním úlohy **1040 plán distribuce**.
 
@@ -136,7 +136,7 @@ Maloobchodní prodejce uděluje výjimku z typických procesů tím, že nabíz
 
 Ujistěte se, že kód nákladů, který bude použit v tomto scénáři, byl správně nakonfigurovaný přechodem na **Pohledávky \> Nastavení nákladů \> Náklady** pro definování příslušného kódu nákladů pro tento scénář.
 
-![Příklad nákladů](media/chargesexample.png)
+![Příklad nákladů.](media/chargesexample.png)
 
 Pokud by poplatek měl být považován za náklad související s přepravou pro účel slevy nebo propagace související s přepravou, nastavte **Dopravné** na kódu nákladů na **Ano**. Pokud je rovněž možné tento poplatek systematicky refundovat během procesu transakce vrácení v aplikaci POS, nastavte **Vratný** na **Ano**. Příznak **Vratný** lze použít pouze tehdy, když je parametr **Použít rozšířené automatickyé náklady** nastaven na hodnotu **Ano**.
 

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c043ac9c19a810d1718f0d4907cd5e9d651d778f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5038a1a1b3fa4c32f54ea87b03f886504e0b004f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357381"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Úvod do rozhraní API pro integraci systému sledování žadatelů
 
@@ -26,7 +26,7 @@ ms.locfileid: "6055285"
 
 Toto téma popisuje rozhraní API pro integraci systému sledování žadatelů (ATS) v Dynamics 365 Human Resources. Účelem rozhraní API je umožnit efektivní integraci mezi Dynamics 365 Human Resources a partnerskými systémy ATS.
 
-![Tok integrace ATS](media/hr-admin-integration-ats-api-introduction-flow.png)
+![Tok integrace ATS.](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 Integrované prostředí začíná v modulu Human Resources, když náborový manažer vytvoří požadavek na nábor. Když je požadavek aktivován, ATS vytáhne podrobnosti o požadavku k vytvoření náborového projektu. Poté dle náborového kanálu vybere a přijme kandidáta na dané pozice. Nakonec ATS dokončí integraci opakovanou cestou zasláním záznamu vybraného kandidáta do modulu Human Resources. Záznam kandidáta pak může projít více ověřeními a pracovními postupy náboru, než je vytvořen záznam zaměstnance.
 
@@ -69,7 +69,7 @@ Datový model je soustředěn kolem dvou hlavních entit:
 
 Následující diagramy ukazují vztahy v rámci rozhraní API. Několik typů má cizí klíče k jiným, již existujícím entitám v modulu Human Resources, které zde nejsou znázorněny. Tento dokument poskytuje informace o entitách, které jsou specifické pro scénáře integrace náboru. Existuje však mnoho dalších entit v Dataverse Web API pro Dynamics 365 Human Resources, které mohou být pro integraci rovněž relevantní. Můžete například potřebovat také podrobnosti o pracovnících, pracích, pozicích nebo jiných entitách, které zde nejsou definovány. Na mnoho z těchto entit se odkazuje ve vztazích cizích klíčů nebo ve vlastnostech navigace.
 
-![Datový model rozhraní API pro integraci ATS](media/hr-admin-integration-ats-api-data-model.png)
+![Datový model rozhraní API pro integraci ATS.](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Žádost o nábor a související entity a sady možností
 

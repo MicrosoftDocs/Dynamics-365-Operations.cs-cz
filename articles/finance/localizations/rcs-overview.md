@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216555"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358115"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS poskytuje následující možnosti:
 
 Můžete se zaregistrovat nebo přihlásit do RCS ze [stránky Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
 
-![Registrace/přihlášení k RCS](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![Registrace/přihlášení k RCS.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 Na stránce **Regulatory Configuration Service** zkontrolujte a přijměte doplňkové podmínky pro používání služby a poté vyberte jedno z následujících tlačítek:
 
@@ -91,7 +93,7 @@ Další informace o souvisejících součástech naleznete v následujících 
 
 Při registraci do RCS ze stránky služby se můžete setkat s problémem, který souvisí se službou Azure Active Directory (Azure AD). Chybová zpráva, která se zobrazí, naznačuje, že registrace do RCS je aktuálně vypnutá a je nutné ji zapnout, abyste mohli dokončit proces registrace.
 
-![Chybová zpráva registrace RCS](media/01_RCSSignUpError.jpg)
+![Chybová zpráva registrace RCS.](media/01_RCSSignUpError.jpg)
 
 K problému dochází, protože nemáte povoleno přihlášení k odběru ad hoc předplatných a ve vašem klientu musí být zapnuta vlastnost `AllowAdHocSubscriptions`. 
 

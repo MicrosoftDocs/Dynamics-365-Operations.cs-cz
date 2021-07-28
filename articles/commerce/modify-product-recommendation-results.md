@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796963"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346661"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
@@ -51,7 +51,7 @@ V závislosti na vaší společnosti může seznam "nejlépe prodávaných produ
 
 Seznam "nejlépe prodávaných" produktů má jeden parametr, který lze změnit:
 
-![Příklad výchozího parametru seznamu nejlépe se prodávajících produktů](./media/examplebestsellingparameters.PNG)
+![Příklad výchozího parametru seznamu nejlépe se prodávajících produktů.](./media/examplebestsellingparameters.PNG)
 
 1. **Zahrnout prodeje z posledních X dnů** - prodejní transakce, které se vyskytly během zadaného počtu dnů před aktuálním datem, lze použít k objednání produktů. Výchozí hodnota výše naznačuje, že k určení umístění produktu v seznamu nejlépe se prodávajících produktů se použijí všechny nákupy produktu za posledních 30 dnů. 
 
@@ -65,13 +65,13 @@ Seznam "nejlépe prodávaných" produktů má jeden parametr, který lze změnit
 1.  Chcete-li přidat produkty do tabulky, vyberte možnost **Přidat řádek.** 
 1.  Ve sloupci produkt vyhledejte produkt podle **názvu** nebo **čísla produktu**.
 
-    ![Příklad hledání produktu v novém seznamu produktů](./media/examplenewlistconfiguration1.png)
+    ![Příklad hledání produktu v novém seznamu produktů.](./media/examplenewlistconfiguration1.png)
 
 1.  Ve sloupci Typ řádku vyberte jednu z následujících možností:
     -   **Zahrnout** – vynutí umístění produkt v předu na seznamu
     -   **Vyloučit** – odebere produkt ze zobrazení v seznamu.
     
-    ![Příklad zahrnutí nebo vyloučení produktu z nového seznamu produktů](./media/examplenewlistconfiguration2.png)
+    ![Příklad zahrnutí nebo vyloučení produktu z nového seznamu produktů.](./media/examplenewlistconfiguration2.png)
 
 1.  Při změně **Pořadí zobrazení** se změní pořadí, v jakém se produkty označené jako **zahrnout** objeví na seznamu.
     - Pokud mají dva produkty stejnou hodnotu **pořadí zobrazení**, pak se konečné pořadí těchto dvou výsledků může lišit od back office.
@@ -87,11 +87,11 @@ V kontextu seznamů Často zakoupeno společně nebo Lidem se také líbí se st
 Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupujte takto:
 1.  Vyberte **Produkt typu seed**. 
 1.  Ve sloupci **Produkt** vyhledejte produkt podle **Názvu** nebo **Čísla produktu.**
-![Příklad hledání produktu v seznamu Často zakoupeno společně](./media/exampleFBTlistconfiguration1.png)
+![Příklad hledání produktu v seznamu Často zakoupeno společně.](./media/exampleFBTlistconfiguration1.png)
 1. Ve sloupci **Typ řádku** vyberte jednu z následujících možností:
     - **Zahrnout** – vynutí umístění produkt v předu na seznamu
     - **Vyloučit** – odebere produkt ze zobrazení v seznamu.     
-![Příklad zahrnutí nebo vyloučení produktu v seznamu Často zakoupeno společně](./media/exampleFBTlistconfiguration2.png)
+![Příklad zahrnutí nebo vyloučení produktu v seznamu Často zakoupeno společně.](./media/exampleFBTlistconfiguration2.png)
 1.  Odebrání produktů z tabulky: vyberte řádek, který chcete odebrat, a vyberte možnost Odstranit.
 
 

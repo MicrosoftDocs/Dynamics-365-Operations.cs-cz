@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103161"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359780"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -30,7 +30,7 @@ Pro každý příchozí náklad by váš systém již měl obsahovat souvisejíc
 
 Následující ilustrace znázorňuje typický tok pro zpracování příchozích nákladů s množstvím nákupních objednávek při jejich dochodu do skladu.
 
-![Proces zpracování příchozího nákladu](media/inbound-process.png "Proces zpracování příchozího nákladu")
+![Proces zpracování příchozího nákladu.](media/inbound-process.png "Proces zpracování příchozího nákladu")
 
 1. **Dodavatel potvrdí nákupní objednávku.**
 
@@ -293,7 +293,7 @@ V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidá
 
     Všechna ostatní nastavení lze ponechat ve výchozích hodnotách.
 
-    ![Nastavení položky nabídky mobilních zařízení](media/inbound-mobile-menu-items.png "Nastavení položky nabídky mobilních zařízení")
+    ![Nastavení položky nabídky mobilních zařízení.](media/inbound-mobile-menu-items.png "Nastavení položky nabídky mobilních zařízení")
 
     Další informace o nastavení položek nabídky mobilního zařízení naleznete v tématu [Nastavení mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ V tomto postupu můžete ručně vytvořit nákupní objednávku a souvisejíc�
     - Na pevné záložce **Náklad** je pole **Stav nákladu** nastaveno na _Otevřeno_.
     - V části **Řádky nákladu** je k dispozici jediný řádek, ve kterém je pole **Množství** nastaveno na _10_ a pole **Množství vytvořené práce** je nastaveno _0_ (nula).
 
-    ![Podrobnosti o nákladu](media/inbound-load-details.png "Podrobnosti o nákladu")
+    ![Podrobnosti o nákladu.](media/inbound-load-details.png "Podrobnosti o nákladu")
 
 1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Potvrdit \> Příchozí dodávka**. Povšimněte si, že **Stav nákladu** se změnil na _Expedováno_.
 1. Poznamenejte si hodnotu **ID nákladu**, aby jej bylo možné použít v dalším postupu.

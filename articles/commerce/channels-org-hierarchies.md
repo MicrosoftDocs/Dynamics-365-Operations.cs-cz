@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800560"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346001"
 ---
 # <a name="set-up-organization-hierarchies"></a>Nastavení organizačních hierarchií
 
@@ -54,7 +54,7 @@ Následující postup použijte k vytvoření organizační hierarchie.
 
 Následující obrázek znázorňuje ukázkovou organizační hierarchii vytvořenou pro fiktivní sadu obchodů "Adventure Works".
 
-![Příklad organizační hierarchie](media/organizational-hierarchies.png)
+![Příklad organizační hierarchie.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Přidání organizací do hierarchie
 
@@ -67,9 +67,9 @@ Chcete-li přidat organizace do hierachie, postupujte takto.
 
 Na následujícím obrázku je znázorněna právnická osoba přidaná v kořenové složce hierarchie se čtyřmi nákladovými středisky přidanými pro kanály "Obchodní centrum", "Outlet", "Online" a "Kontaktní středisko". Do každé z nich lze přidat různé maloobchodní a online kanály.
 
-![Příklad návrháře hierarchie](media/hierarchy-designer.png)
+![Příklad návrháře hierarchie.](media/hierarchy-designer.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled organizací a organizačních hierarchií](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

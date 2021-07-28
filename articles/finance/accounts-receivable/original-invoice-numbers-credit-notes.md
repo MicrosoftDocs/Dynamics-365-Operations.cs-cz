@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897325"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347827"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odkazy na původní faktury v dobropisech
 
@@ -51,7 +51,7 @@ Pomocí těchto kroků nastavíte parametr, který řídí, zda se odkazy na pů
 1. Přejděte do **Pohledávky** \> **Nastavení** \> **Parametry pohledávek**.
 2. Na kartě **Aktualizace** na pevné záložce **Faktura** nastavte možnost **Použije rozvržení opravné fakturace v sestavách prodejních faktur a projektů** na **Ano**.
 
-![Konfigurace parametrů pohledávek](media/original-invoice-number-in-credit-note.jpg)
+![Konfigurace parametrů pohledávek.](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>Definujte odkazy na původní faktury
 
@@ -65,7 +65,7 @@ Pomocí následujících postupů definujte odkazy na původní faktury na zákl
 4. V podokně akcí na kartě **Faktura** ve skupině **Funkce** zvolte **Opravná fakturace**.
 5. Zadejte odkaz na původní fakturu a vyberte důvod opravy.
 
-![Definování odkazu na fakturu s volným textem](media/reference-original-invoice-FTI.jpg)
+![Definování odkazu na fakturu s volným textem.](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>Dobropis zákazníkům
 
@@ -74,7 +74,7 @@ Pomocí následujících postupů definujte odkazy na původní faktury na zákl
 3. V podokně akcí na kartě **Prodej** ve skupině **Dobropis** zvolte **Dobropis**.
 4. Zadejte důvod opravy. Odkaz na původní fakturu se vytvoří automaticky.
 
-![Definování odkazu na prodejní objednávku](media/reference-original-invoice-SO.jpg)
+![Definování odkazu na prodejní objednávku.](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>Dobropis projektu
 
@@ -84,13 +84,13 @@ Pomocí následujících postupů definujte odkazy na původní faktury na zákl
 4. Vyberte **Opravná fakturace**.
 5. Zadejte důvod opravy. Odkaz na původní fakturu se vytvoří automaticky.
 
-![Definování odkazu na projektovou fakturu](media/reference-original-invoice-project.jpg)
+![Definování odkazu na projektovou fakturu.](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>Tisk dobropisů
 
 Když vytisknete deobropisy s volným textem, dobropisy zákazníků a projektů, budou obsahovat odkaz na původní fakturu a důvod opravy.
 
-![Vytištěný dobropis](media/credit-note-FTI.jpg)
+![Vytištěný dobropis.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Ujistěte se, že jsou tiskové formáty dokumentů správně nakonfigurovány za předpokladu, že budou vytištěny odkazy na původní faktury.

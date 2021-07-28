@@ -2,7 +2,7 @@
 title: Konfigurace parametrů Human Resources
 description: Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost v aplikaci Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356529"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurace parametrů Human Resources
 
@@ -30,7 +30,7 @@ Nastavení některých parametrů lidských zdrojů nesmí být sdílena napří
 
 K nastavení parametrů lidských zdrojů slouží dvě stránky. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**.
 
-![Přechod na parametry lidských zdrojů](./media/hr-employee-self-service-human-resources-parameters.png)
+![Přechod na parametry lidských zdrojů.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 Na stránce **Parametry lidských zdrojů** jsou nastavení rozdělena mezi šest karet:
 
@@ -51,14 +51,15 @@ Každá karta obsahuje informace, které se vztahují na jednu společnost.
 
 Nastavení kartě **Obecné** určuje vzhled informací o absencích, zraněních a onemocněních a nově přijatých zaměstnancích. Nastavení na této kartě také definují některé výchozí položky, které se zobrazí při práci. Tato karta konkrétně umožňuje:
 
-- Vybrat barvu, kterou chcete použít na otevřené transakce absencí
-- Určit šablonu stylů, kterou chcete použít pro sestavy
-- Povolit integraci mezi školeními a registrací absencí
+- Vybrat barvu, kterou chcete použít na otevřené transakce absencí.
+- Určit šablonu stylů, kterou chcete použít pro sestavy.
+- Povolit integraci mezi školeními a registrací absencí.
 - Vybrat kód absence, který se používá k řízení této integrace.
 - Uvést, jak dlouho chcete zachovat případy zranění a nemoci.
 - Zadat výchozí identifikační číslo zobrazené při najímání nového pracovníka.
+- Zadejte datum, které se použije k výpočtu let služby. 
 
-![Karta Obecné](./media/hr-setup-parameters-general.png)
+![Karta Obecné.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Nábor
 
@@ -76,7 +77,7 @@ V Human Resources můžete na kartě **Kompenzace** omezit přístup k plánům 
 
 Další informace o kompenzacích naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
 
-![Karta Kompenzace](./media/hr-setup-parameters-compensation.png)
+![Karta Kompenzace.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Číselné řady
 
@@ -96,13 +97,13 @@ Další informace naleznete v tématu [Přehled číselných řad](../fin-ops-co
 > [!NOTE]
 > Počet hodin, které jsou odpracovány nesmí překročit 1 250 a délka zaměstnání nesmí přesáhnout 12 měsíců. Tyto maximální hodnoty jsou v souladu s federálním právem ve Spojených státech amerických.
 
-![Karta Číselné řady](./media/hr-setup-parameters-number-sequences.png)
+![Karta Číselné řady.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>Pracovní volno
 
 Na kartě Pracovní volno nastavíte požadavky na způsobilost a hodiny nároků na pracovní volno. Další informace naleznete v tématu [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md).
 
-![Karta Pracovní volno](./media/hr-setup-parameters-fmla.png)
+![Karta Pracovní volno.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Samoobsluha pro zaměstnance
 
@@ -115,7 +116,7 @@ Nastavení na kartě **Samoobsluha pro zaměstnance** ovlivňuje, jak se zaměst
 
 Další informace o nastavení samoobsluhy pro zaměstnance najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
 
-![Karta Samoobsluha pro zaměstnance](./media/hr-setup-parameters-employee-self-service.png)
+![Karta Samoobsluha pro zaměstnance.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Samoobsluha pro manažery
 
@@ -129,13 +130,13 @@ Nastavení na kartě **Samoobsluha pro manažery** ovlivní to, co manažeři uv
 
 Další informace o nastavení samoobsluhy pro manažery najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
 
-![Karta Samoobsluha pro manažery](./media/hr-setup-parameters-manager-self-service.png)
+![Karta Samoobsluha pro manažery.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Správa zaměstnaneckých výhod
 
 Na kartě Správa výhod můžete konfigurovat e-mailové možnosti pro správu výhod. Další informace o nastavení a použití správy zaměstnaneckých výhod naleznete v tématu [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md).
 
-![Karta Správa zaměstnaneckých výhod](./media/hr-setup-parameters-benefits-management.png)
+![Karta Správa zaměstnaneckých výhod.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Pracovní volno a absence
 
@@ -145,7 +146,7 @@ Další informace o nastavení a používání pracovního volna a absencí zís
 
 Na kartě **Metody platby** můžete vybrat metody platby podporované vaší organizací. Další informace o konfiguraci kompenzací naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
 
-![Karta Metody platby](./media/hr-setup-parameters-payment-methods.png)
+![Karta Metody platby.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
