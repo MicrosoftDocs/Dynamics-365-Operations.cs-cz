@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798746"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353101"
 ---
 # <a name="navigation-menu-module"></a>Modul navigační nabídky
 
@@ -33,7 +33,7 @@ Primárním účelem modulů navigační nabídky je umožnit uživatelům webu 
 Modul navigační nabídky lze přidat do modulu záhlaví stránky. V motivu Fabrikam zobrazuje navigační nabídka ve výchozím nastavení dvě úrovně. V motivu Starter zobrazuje navigační nabídka ve výchozím nastavení tři úrovně. Chcete-li změnit počet úrovní, je u motivu vyžadováno rozšíření zobrazení.
 
 Následující obrázek ukazuje příklad navigační nabídky pro web Fabrikam se dvěma úrovněmi hierarchie kategorií a některými položkami statické nabídky.
-![Příklad modulu navigační nabídky](./media/ecommerce-header.png)
+![Příklad modulu navigační nabídky.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Vlastnosti modulu navigační nabídky
 
@@ -50,7 +50,7 @@ Následující obrázek ukazuje příklad navigační nabídky pro web Fabrikam 
 | Kořenová nabídka | řetězec | Tuto vlastnost lze použít k definování textu pro vlastní kořen, pokud je vlastnost **Zobrazit kořenovou nabídku** nastavena na **Pravda**. |
 
 Následující obrázek ukazuje příklad obrázku kategorie zobrazeného v navigační nabídce pro web Fabrikam.
-![Příklad modulu navigační nabídky s obrázky kategorií](./media/ecommerce-categoryimages.PNG)
+![Příklad modulu navigační nabídky s obrázky kategorií.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Přidání modul navigační nabídky do modulu záhlaví
 

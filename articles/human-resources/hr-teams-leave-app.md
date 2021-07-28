@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097252"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356505"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -61,7 +61,7 @@ Můžete požádat robota a následující akce:
 
 - Zahájit žádost o volno za vás. Například pošlete zprávu s textem „Vezměte si volno“ nebo „Chci si vzít volno na příští čtvrtek a pátek“, aby bylo konkrétnější požadovat dovolenou u typu dovolené na dovolenou. 
 
-  ![Zahájení žádosti o volno v chatu Teams](./media/hr-teams-leave-app-initiate.png)
+  ![Zahájení žádosti o volno v chatu Teams.](./media/hr-teams-leave-app-initiate.png)
 
 - Chatovací robot za vás vyplní žádost o volno. Vyberte možnost **Požádat o volno** a upravte podrobnosti své žádosti.
 
@@ -69,11 +69,11 @@ Můžete požádat robota a následující akce:
 
    Pokud vyberete půldenní dovolenou, když je jednotka žádosti o dovolenou ve dnech, můžete určit, zda chcete požádat o volno v první půlden nebo druhý půlden výběrem možnosti **Půldenní definice** v nabídce **Více možností**.
    
-   ![Půldenní definice](./media/HalfDayDefinitions.png)
+   ![Půldenní definice.](./media/HalfDayDefinitions.png)
 
 - Po dokončení úprav podrobností žádosti o volno vyberte **Odeslat** a předejte žádost ke schválení.
 
-  ![Odeslání žádosti o volno](./media/hr-teams-leave-app-submit.png)
+  ![Odeslání žádosti o volno.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Správa volna v aplikaci Teams
 
@@ -93,7 +93,7 @@ Karta **Volno** umožňuje zobrazit:
 
 2. Zadejte den nebo dny, na které chcete volno, a poté vyberte **Přidat**.
 
-   ![Přidání volna aplikace pracovního volna Human Resources Teams](./media/TimeOffHours.png)
+   ![Přidání volna aplikace pracovního volna Human Resources Teams.](./media/TimeOffHours.png)
 
 3. V případě potřeby zadejte kód důvodu. Také zadejte případné komentáře a přidejte všechny přílohy.
 
@@ -123,7 +123,7 @@ Po instalaci aplikace Human Resources pro Teams můžete snadno poslat informace
 
 1. V týmu nebo chatu v Teams vyberte tlačítko Human Resources pod oknem chatu.
 
-   ![Tlačítko Human Resources pod oknem chatu](./media/hr-teams-leave-app-chat-button.png)
+   ![Tlačítko Human Resources pod oknem chatu.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Vyberte žádost o dovolenou, kterou chcete sdílet. Pokud chcete sdílet koncept žádosti o dovolenou, nejprve vyberte **Koncepty**.
 
@@ -173,11 +173,11 @@ Pokud se překlady nezobrazují podle očekávání, ujistěte se, že jazyk, kt
 
 V Teams se podívejte na pole **Jazyk aplikace** v **Nastavení**.
 
-![Nastavení Teams](./media/hr-teams-leave-app-settings.png)
+![Nastavení Teams.](./media/hr-teams-leave-app-settings.png)
 
 V Human Resources vyberte **Nastavení** a poté vyberte **Možnosti uživatele**. Ověřte, že pole **Jazyk** odpovídá poli **Jazyk aplikace** v Teams.
 
-![Možnosti uživatele v Human Resources](./media/hr-teams-leave-app-user-options.png)
+![Možnosti uživatele v Human Resources.](./media/hr-teams-leave-app-user-options.png)
 
 Pokud problémy s překladem přetrvávají, dejte nám vědět. Informace najdete v tématu [Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

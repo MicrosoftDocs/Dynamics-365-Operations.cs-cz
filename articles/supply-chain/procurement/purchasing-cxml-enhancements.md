@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b579ebff28e01caa727a22b01ae636ff713a27aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359950"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML rozšíření nákupu
 
@@ -38,7 +38,7 @@ Po zapnutí této funkce byste měli nakonfigurovat nastavení v následujícíc
 
 Následující obrázek shrnuje tuto konfiguraci.
 
-![Oblasti pro nastavení funkcí cXML](media/cxml-settings-areas.png "Oblasti pro nastavení funkcí cXML")
+![Oblasti pro nastavení funkcí cXML.](media/cxml-settings-areas.png "Oblasti pro nastavení funkcí cXML")
 
 Kromě toho musíte nastavit [dávkovou úlohu požadavku na nákupní objednávku](#po-batch). Tato dávková úloha se používá k odeslání potvrzených nákupních objednávek.
 
@@ -46,7 +46,7 @@ Kromě toho musíte nastavit [dávkovou úlohu požadavku na nákupní objednáv
 
 Použijte stránku **Parametry cXML** pro provedení několika globálních nastavení, která se použijí na funkci pro odesílání nákupních objednávek.
 
-![Stránka parametrů cXML](media/cxml-parameters.png "Stránka parametrů cXML")
+![Stránka parametrů cXML.](media/cxml-parameters.png "Stránka parametrů cXML")
 
 Přejděte na **Zásobování a zdroje \> Nastavit \> Správa cXML \> Parametry cXML** a nastavte následující parametry:
 
@@ -67,7 +67,7 @@ Pokaždé, když potvrdíte nákupní objednávku, kde je možnost **Odeslat ná
 - Chcete-li nastavit dodavatele tak, aby automaticky používal cXML pro všechny nové nákupní objednávky, které jsou vytvořeny z žádanky, přejděte na **Zásobování a zdroje \> Dodavatelé \> Všichni dodavatelé** a vyberte nebo vytvořte dodavatele, abyste otevřeli stránku podrobností. Pak na záložce s náhledem **Výchozí hodnoty nákupní objednávky** nastavte možnost **Odeslat nákupní objednávku pomocí cXML** na _Ano_. Pokud by cXML mělo být automaticky použito i pro nové nákupní objednávky, které **nejsou** vytvořené z žádanky, musíte také nastavit vlastnost objednávky **ENABLEMANUALPO** na _True_ pro související externí katalog, jak je popsáno později v tomto tématu v části [Nastavení vlastností objednávky](#set-order-properties).
 - Pro jednotlivé nákupní objednávky přejděte na **Zásobování a zdroje \> Nákupní objednávky \> Všechny nákupní objednávky** a výběrem nebo vytvořením nákupní objednávky otevřete stránku s podrobnostmi. Přepněte na zobrazení **Záhlaví** a poté na záložce s náhledem **Nastavení** nastavte možnost **Odeslat nákupní objednávku pomocí cXML** podle potřeby.
 
-![Výchozí nastavení pro nákupní objednávky dodavatele](media/cxml-order-defaults.png "Výchozí nastavení pro nákupní objednávky dodavatele")
+![Výchozí nastavení pro nákupní objednávky dodavatele.](media/cxml-order-defaults.png "Výchozí nastavení pro nákupní objednávky dodavatele")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Nastavení externího katalogu pro použití cXML
 
@@ -76,7 +76,7 @@ Na stránce **Externí katalogy** pro každý z vašich katalogů můžete nasta
 > [!NOTE]
 > Když potvrdíte nákupní objednávku, kterou lze odeslat prostřednictvím cXML, systém vyhledá dodavatele, který je přidružen k nákupní objednávce, a poté najde první aktivní externí katalog, který je přidružen k danému dodavateli. Systém poté použije nastavení z tohoto externího katalogu k odeslání nákupní objednávky. Pokud je nastaveno více externích katalogů, systém použije pouze první externí katalog, který najde, na základě dodavatele v nákupní objednávce. Proto doporučujeme, abyste pro každého dodavatele vytvořili pouze jeden externí katalog.
 
-![Nastavení externího katalogu](media/cxml-supplier-catalog.png "Nastavení externího katalogu")
+![Nastavení externího katalogu.](media/cxml-supplier-catalog.png "Nastavení externího katalogu")
 
 ### <a name="set-the-punchout-protocol-type"></a>Nastavení typu protokolu PunchOut
 
@@ -143,11 +143,11 @@ Jak bylo uvedeno v části [Nastavení vlastností objednávky](#set-order-prope
 
 Chcete-li nastavit typy poznámek, které bude systém hledat, přejděte na **Zásobování a zdroje \> Nastavit \> Formuláře \> Z nastavení**. Pak na kartě **Nákupní objednávka** nastavte pole **Zahrnout dokumenty typu** na typ poznámky, kterou chcete zahrnout. Zahrnuty budou pouze textové poznámky, nikoli přílohy v podobě dokumentů.
 
-![Stránka nastavení formuláře](media/cxml-form-setup.png "Stránka nastavení formuláře")
+![Stránka nastavení formuláře.](media/cxml-form-setup.png "Stránka nastavení formuláře")
 
 Přílohy budou k nákupní objednávce zahrnuty, pouze pokud je pole **Typ** nastaveno na hodnotu, kterou vyberete v poli **Zahrnout dokumenty typu**, a pokud jejich pole **Omezení** je nastaveno na _Externí_. Chcete-li vytvořit, zobrazit nebo upravit přílohy nákupní objednávky, přejděte na **Zásobování a zdroje \> Všechny nákupní objednávky**, vyberte nebo vytvořte nákupní objednávku a poté vyberte tlačítko **Přílohy** (symbol kancelářské sponky) v pravém horním rohu.
 
-![Přiložená poznámka, která je nastavena k odeslání dodavateli](media/cxml-note-to-vendor.png "Přiložená poznámka, která je nastavena k odeslání dodavateli")
+![Přiložená poznámka, která je nastavena k odeslání dodavateli.](media/cxml-note-to-vendor.png "Přiložená poznámka, která je nastavena k odeslání dodavateli")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Zobrazit protokol zpráv košíku cXML pro externí katalog PunchOut
 
@@ -155,7 +155,7 @@ Když nastavíte pole **Typ protokolu Punchout** na _cXML_ u externího katalogu
 
 Chcete-li otevřít protokol pro externí katalog, vyberte příslušný katalog a poté v podokně akcí vyberte **Protokol zpráv košíku cXML**. Stránka **Protokol zpráv košíku cXML** zobrazuje seznam košíků, které byly vráceny, XML související s těmito košíky a řádky, které byly vytvořeny v související nákupní žádance.
 
-![Stránka protokolu zpráv košíku cXML](media/cxml-cart-message-log.png "Stránka protokolu zpráv košíku cXML")
+![Stránka protokolu zpráv košíku cXML.](media/cxml-cart-message-log.png "Stránka protokolu zpráv košíku cXML")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Nastavení externích prvků pro externí katalog PunchOut
 
@@ -178,21 +178,21 @@ Chcete-li přidat externí prvky do externího katalogu, postupujte takto.
         - **Příjmení** - Použijte příjmení kontaktní osoby přidružené k uživateli, který přistupuje k externímu katalogu.
         - **Telefonní číslo** - Použijte primární telefonní číslo kontaktní osoby přidružené k uživateli, který přistupuje k externímu katalogu.
 
-![Nastavení vnějšího prvku](media/cxml-extrinsics.png "Nastavení vnějšího prvku")
+![Nastavení vnějšího prvku.](media/cxml-extrinsics.png "Nastavení vnějšího prvku")
 
 Uživatel nebo správce neuvidí vnější prvky, protože nejsou přidány, dokud uživatel neprovede PunchOut. Budou automaticky vloženy mezi prvky **BuyerCookie** a **BrowserFromPost** ve zprávě s požadavkem na nastavení cXML. Při nastavování externího katalogu je tedy nemusíte nastavovat ručně v XML.
 
-![Vnější prvky přidané do XML](media/cxml-extrinsics-xml.png "Vnější prvky přidané do XML")
+![Vnější prvky přidané do XML.](media/cxml-extrinsics-xml.png "Vnější prvky přidané do XML")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Vytvoření a zpracování nákupní objednávky
 
 Když vytvoříte nákupní objednávku pro dodavatele, zdědí nastavení možnosti **Odeslat nákupní objednávku přes cXML** z tohoto dodavatele. Nastavení však zůstává dostupné na záložce s náhledem **Nastavit** v zobrazení **Záhlaví** nákupní objednávky, abyste ho mohli podle potřeby změnit později.
 
-![Nákupní objednávka nastavena na použití cXML](media/cxml-purchase-order.png "Nákupní objednávka nastavena na použití cXML")
+![Nákupní objednávka nastavena na použití cXML.](media/cxml-purchase-order.png "Nákupní objednávka nastavena na použití cXML")
 
 Když vytvoříte nákupní objednávku z nákupní žádanky, která pochází z toku PunchOut, budou vyplněny všechny požadované podrobnosti řádku. Poté můžete ručně přidat řádky nákupní objednávky nebo je zkopírovat z jiných nákupních objednávek. Nezapomeňte nastavit všechna povinná pole. Tato povinná pole zahrnují externí referenční číslo, což je číslo dodavatele, které bude použito ve zprávě cXML.
 
-![Příklad externího referenčního čísla](media/cxml-line-details.png "Příklad externího referenčního čísla")
+![Příklad externího referenčního čísla.](media/cxml-line-details.png "Příklad externího referenčního čísla")
 
 Po dokončení vyplnění všech podrobností nákupní objednávky ji nezapomeňte potvrdit. Dokud nebude potvrzena nákupní objednávka, nebude odeslána žádná zpráva. Pro potvrzení nákupní objednávky v podokně akcí na kartě **Nákup** ve skupině **Akce** klikněte na tlačítko **Potvrdit**. 
 
@@ -200,17 +200,17 @@ Po potvrzení nákupní objednávky můžete zobrazit stav potvrzení prostředn
 
 Každá nákupní objednávka může mít mnoho potvrzení. Každé potvrzení je označeno přírůstkovým číslem. Na následujícím obrázku je nákupní objednávka *00000275* a potvrzení je *00000275-1*. Toto číslování odráží standardní funkce Supply Chain Management, kde jsou na základě potvrzení identifikovány změny v nákupní objednávce, a tedy typ zprávy cXML, která by měla být zaslána dodavateli. Jak ukazuje obrázek, stránka **Potvrzení nákupní objednávky** také obsahuje pole **Stav odeslání objednávky** a **Stav dodavatele požadavku na objednávku**. Další informace o různých hodnotách stavu, které se na této stránce mohou zobrazit, najdete v části [Monitorování žádosti o nákupní objednávku](#monitor-po-requests) dále v tomto tématu.
 
-![Stránka potvrzení nákupních objednávek](media/cxml-po-confirmations.png "Stránka potvrzení nákupních objednávek")
+![Stránka potvrzení nákupních objednávek.](media/cxml-po-confirmations.png "Stránka potvrzení nákupních objednávek")
 
 Chcete-li zobrazit více informací o dokumentu, vyberte **Požadavek na objednávku** nad mřížkou.
 
 Stránka **Požadavek na objednávku** obsahuje dvě mřížky. Mřížka v horní části stránky má jeden záznam pro každou nákupní objednávku, která je označena k odeslání. Mřížka na kartě **Historie požadavků na nákupní objednávky** ve spodní části stránky může mít několik záznamů pro vybranou nákupní objednávku, což označuje stav každého potvrzení. Následující obrázek ukazuje nákupní objednávku 00000275 v horní mřížce a dokument 00000275-1 v mřížce na kartě **Historie požadavků na nákupní objednávky**.
 
-![Stránka požadavků na nákupní objednávky](media/cxml-po-request.png "Stránka požadavků na nákupní objednávky")
+![Stránka požadavků na nákupní objednávky.](media/cxml-po-request.png "Stránka požadavků na nákupní objednávky")
 
 Pokud je dávková úloha nastavena a spuštěna, dokument bude odeslán. Změnu stavu můžete zobrazit po odeslání dokumentu. Na následujícím obrázku je pole **Stav odeslání objednávky** nastaveno na _Odesláno_. Pole **Stav dodavatele požadavku na objednávku** je nastaveno na _Potvrzeno_ k označení, že dodavatel obdržel dokument a byl schopen ho přečíst a uložit do svého systému. Mřížka na kartě **Historie požadavků na nákupní objednávky** zobrazuje čas, kdy byl dokument odeslán. Další informace o různých hodnotách stavu, které se na této stránce mohou zobrazit, najdete v části [Monitorování žádosti o nákupní objednávku](#monitor-po-requests).
 
-![Stavové zprávy na stránce požadavku na nákupní objednávku](media/cxml-po-request-2.png "Stavové zprávy na stránce požadavku na nákupní objednávku")
+![Stavové zprávy na stránce požadavku na nákupní objednávku.](media/cxml-po-request-2.png "Stavové zprávy na stránce požadavku na nákupní objednávku")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Naplánujte dávkovou úlohu požadavku na nákupní objednávku
 
@@ -226,7 +226,7 @@ Tento proces vyhledá dokumenty požadavků na nákupní objednávku, které maj
 
 Když jsou potvrzeny objednávky, které lze odeslat prostřednictvím cXML, přejdou do stavu _Čekání_. Jak bylo popsáno v části [Vytvoření a zpracování nákupní objednávky](#create-po), můžete zobrazit stav nákupní objednávky na stránce **Požadavek na nákupní objednávku**. Každý požadavek na nákupní objednávku může mít jeden z několika stavů, v závislosti na jeho parametrech a datech. Tato část popisuje různé typy stavu a hodnoty, které mohou mít. Tyto informace vám pomohou spravovat problémy a porozumět stavu vašich objednávek.
 
-![Stav nákupní objednávky na stránce požadavku na nákupní objednávku](media/cxml-monitor-po-request.png "Stav nákupní objednávky na stránce požadavku na nákupní objednávku")
+![Stav nákupní objednávky na stránce požadavku na nákupní objednávku.](media/cxml-monitor-po-request.png "Stav nákupní objednávky na stránce požadavku na nákupní objednávku")
 
 Mřížka v horní části stránky **požadavku na nákupní objednávku** může zobrazit následující stavové hodnoty:
 
@@ -262,17 +262,17 @@ Mřížka na kartě **Historie požadavků na nákupní objednávky** ve spodní
 
 Chcete-li zobrazit XML pro zprávu požadavku na nákupní objednávku, vyberte kartu **Text XML požadavku** ve spodní části stránky **Požadavek na nákupní objednávku**. Informace na této kartě mohou být užitečné během testování nebo ověření chyby. Chcete-li informace snáze číst, můžete je zobrazit jako naformátovanou zprávu. Zkopírujte obsah karty do textového souboru a poté jej zobrazte v editoru XML.
 
-![Karta textu XML požadavku](media/cxml-request-xml-text.png "Karta textu XML požadavku")
+![Karta textu XML požadavku.](media/cxml-request-xml-text.png "Karta textu XML požadavku")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Zobrazení podrobností odpovědi dodavatele
 
 Chcete-li zobrazit obsah potvrzení dodavatele nebo chybové odpovědi, vyberte kartu **Odpověď XML** ve spodní části stránky **Požadavek na nákupní objednávku**.
 
-![Karta XML odpovědi](media/cxml-response-xml.png "Karta XML odpovědi")
+![Karta XML odpovědi.](media/cxml-response-xml.png "Karta XML odpovědi")
 
 ## <a name="additional-resources"></a>Další prostředky
 
-- [Nastavení externího katalogu pro funkci PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
+- [Nastavení externího katalogu pro funkci PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Použití externích katalogů pro funkci PunchOut eProcurement](use-external-catalogs-for-punchout.md)
 
 

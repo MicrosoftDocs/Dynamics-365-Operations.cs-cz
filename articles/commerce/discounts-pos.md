@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356871"
 ---
 # <a name="show-discounts-in-pos"></a>Zobrazit slevy v POS
 
@@ -33,7 +33,7 @@ Promoakce hrají důležitou roli při motivaci zákazníků, kteří prováděj
 
 Commerce obsahuje operaci nazvanou "Zobrazit všechny slevy". Tato operace zobrazí všechny slevy, které jsou aktuálně spuštěny v obchodě. Operaci "Zobrazit všechny slevy" lze mapovat na tlačítko na pokladním místě (POS) a toto tlačítko lze přidat na stránku **Vítejte** nebo na stránku **Transakce**. Následující ilustrace znázorňuje příklad otevřené stránky **Všechny slevy**.
 
-![Stránka Všechny slevy](./media/View_all_discounts.png "Stránka Všechny slevy")
+![Stránka Všechny slevy.](./media/View_all_discounts.png "Stránka Všechny slevy")
 
 Chcete-li zobrazit slevy, systém vyhledá všechny slevy, které odpovídají jedné nebo více z následujících podmínek:
 
@@ -61,11 +61,11 @@ Následující ilustrace znázorňují logiku, která určuje, které slevy se z
 
 Na následujícím obrázku je znázorněna logika, která se používá v případě, že je řízení souběžnosti nastaveno na **Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami**.
 
-![Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami](./media/Model_1.png "Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami").
+![Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami.](./media/Model_1.png "Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami").
 
 Na následujícím obrázku je znázorněna logika, která se používá v případě, že je řízení souběžnosti nastaveno na **Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou**.
 
-![Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou](./media/Model_2.png "Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou").
+![Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou.](./media/Model_2.png "Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

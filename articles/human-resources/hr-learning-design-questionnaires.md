@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2427e866a1cff91ff0ceca6a71e8052b880c7e5c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4a1cd6460ed93ce46e561071aedee314bf4f088
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056869"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357112"
 ---
 # <a name="create-questionnaires"></a>Vytvoření dotazníků
 
@@ -92,7 +92,7 @@ Dříve než začnete definovat vaše data, měli byste definovat veškeré para
 ## <a name="questionnaire-components"></a>Komponenty dotazníku
 Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový. Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
 
-[![Komponenty dotazníku](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Komponenty dotazníku.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Skupiny odpovědí a odpovědi
 

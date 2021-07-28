@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799510"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349715"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Povolení a použití sdílení napříč kanály
 
@@ -48,15 +48,15 @@ Sdílení napříč kanály povolíte v konfigurátoru webů Commerce tímto pos
 1. Přejděte na **Nastavení webu \> Funkce**.
 1. Možnost **Napříč kanály** nastavte na **Zapnuto**.
 
-    ![Možnost Napříč kanály nastavená na Zapnuto v konfigurátoru webů Commerce](./media/enabling-cross-channel-sharing.png)
+    ![Možnost Napříč kanály nastavená na Zapnuto v konfigurátoru webů Commerce.](./media/enabling-cross-channel-sharing.png)
 
 Po povolení sdílení napříč kanály se informace pro více kanálů objeví v sekci **Kanály** v oblasti **Nastavení webu \> Funkce**, jak ukazuje příklad na následujícím obrázku.
 
-![Informace kanálů viditelné po povolení sdílení napříč kanály](./media/channels-cross-channel.png)
+![Informace kanálů viditelné po povolení sdílení napříč kanály.](./media/channels-cross-channel.png)
 
 Jakmile povolíte sdílení napříč kanály, bude pole **Kanál** v pravém horním rohu konfigurátoru webů Commerce obsahovat možnost **Online obchod s více kanály**, kterou můžete použít ke správě obsahu pro více kanálů, jak znázorňuje následující obrázek.
 
-![Možnost Online obchod s více kanály v poli Kanály po povolení sdílení napříč kanály](./media/cross-channel-dropdown.png)
+![Možnost Online obchod s více kanály v poli Kanály po povolení sdílení napříč kanály.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Vytvoření a používání obsahu pro více kanálů
 

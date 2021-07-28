@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839600"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361107"
 ---
 # <a name="maintenance-plans"></a>Plány údržby
 
@@ -145,23 +145,23 @@ Níže se nachází příklady nastavení řádků plánu údržby s časovým r
 
 **Příklad 1 – Řádek plánu údržby na základě času:** Úloha namazání může být nastavena v pevném intervalu a dojde k ní jednou týdně. Pro tento účel vyberte v poli **Typ intervalu** hodnotu „Opakováno od data plánu“. Viz příklad na následujícím obrázku.
 
-![Servisní úloha nastavená v pevném intervalu, vyskytující se jednou týdně](media/02-preventive-maintenance.png "Servisní úloha nastavená v pevném intervalu, vyskytující se jednou týdně")
+![Servisní úloha nastavená v pevném intervalu, vyskytující se jednou týdně.](media/02-preventive-maintenance.png "Servisní úloha nastavená v pevném intervalu, vyskytující se jednou týdně")
 
 **Příklad 2 – Řádek práce údržby na základě času:** Úlohu kontroly lze nastavit tak, aby byla provedena přibližně jednou týdně. Pro tento účel vyberte v poli **Typ intervalu** hodnotu „Opakováno od posledního pracovního příkazu“. Viz příklad na následujícím obrázku.
 
-![Přibližně jednou týdně je nastavena úloha kontroly](media/03-preventive-maintenance.png "Přibližně jednou týdně je nastavena úloha kontroly")
+![Přibližně jednou týdně je nastavena úloha kontroly.](media/03-preventive-maintenance.png "Přibližně jednou týdně je nastavena úloha kontroly")
 
 **Příklad: 3 – Řádek plánu údržby na základě čítače:** Následující grafické znázornění ukazuje hodinové počitadlo, pro které je vytvořen nový řádek plánu údržby při každém 250 hodin. Typ intervalu pro tento řádek založený na čítači je opakován od počátečního data. Počáteční datum představuje počáteční datum souvisejících položek majetku v zobrazení podrobností **Všechen majetek** \> záložka s náhledem **Plány údržby majetku** \> pole **Počáteční datum** nebo v zobrazení podrobností **Funkční místo** \> záložka s náhledem **Plány údržby** pole \> **Počáteční datum**. Toto je příklad plánu *preventivní* údržby, protože řádek rozvrhu údržby je automaticky vytvořen pokaždé, když je dosaženo prahové hodnoty (+250).
 
-![Čítač hodin, který pravidelně vytváří řádky plánu údržby](media/04-preventive-maintenance.png "Čítač hodin, který pravidelně vytváří řádky plánu údržby")
+![Čítač hodin, který pravidelně vytváří řádky plánu údržby.](media/04-preventive-maintenance.png "Čítač hodin, který pravidelně vytváří řádky plánu údržby")
 
 **Příklad 4 – Řádek plánu údržby založený na čítači** : Následující grafické znázornění ukazuje snížení hodnoty čítače s měřením opotřebení brzdových destiček. Řádek rozvrhu údržby se vytvoří, když je na brzdové destičce vytvořena registrace čítače pod 20 mm. Typ intervalu pro tento řádek založený na čítači je „Po dosažení spodní hodnoty“ nebo „Od posledního počátečního data“. Toto je příklad plánu *reaktivní* údržby, protože řádek rozvrhu údržby není vytvořen až do doby, než je registrováno měření pod 20 mm.
 
-![Snížení hodnoty čítače, měření opotřebení brzdových destiček](media/05-preventive-maintenance.png "Snížení hodnoty čítače, měření opotřebení brzdových destiček")
+![Snížení hodnoty čítače, měření opotřebení brzdových destiček.](media/05-preventive-maintenance.png "Snížení hodnoty čítače, měření opotřebení brzdových destiček")
 
 **Příklad 5 – Řádek plánu údržby založený na čítači:** Následující grafické znázornění ukazuje čítač s prahovou hodnotou -18°C. Řádek rozvrhu údržby se vytvoří po provedení registrace čítače nad -18°C. Typ intervalu pro tento řádek založený na čítači je „Po dosažení horní hodnoty“. Toto je příklad plánu *reaktivní* údržby, protože řádek rozvrhu údržby není vytvořen až do doby, než je registrováno měření vyšší než -18°C.
 
-![Počítadlo s prahovou hodnotou -18 °C](media/06-preventive-maintenance.png "Počítadlo s prahovou hodnotou -18 °C")
+![Počítadlo s prahovou hodnotou -18 °C.](media/06-preventive-maintenance.png "Počítadlo s prahovou hodnotou -18 °C")
 
 - Když vytvoříte nový majetek a tento majetek používá typ související s plánem údržby, plán údržby se automaticky vloží do umístění **Všechny objekty \> záložka s náhledem Plány údržby majetku**. V části **Výchozí nastavenítypu majetku** na záložce s náhledem **Plány údržby** budou automaticky vloženy související plány údržby.
 - Pokud přidáte nebo odeberete typy majetku nebo funkčních míst v **plánech údržby**, tato změna se projeví pouze u nových položek majetku vytvořených po provedení změny.
@@ -169,7 +169,7 @@ Níže se nachází příklady nastavení řádků plánu údržby s časovým r
 
 Na následujícím obrázku je znázorněn příklad plánu údržby "nákladní vozík" na stránce **Plány údržby**.
 
-![Příklad plánu údržby nákladních vozidel](media/07-preventive-maintenance.png "Příklad plánu údržby nákladních vozidel")
+![Příklad plánu údržby nákladních vozidel.](media/07-preventive-maintenance.png "Příklad plánu údržby nákladních vozidel")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Přidání plánu údržby do majetku
 
@@ -187,11 +187,11 @@ Na následujícím obrázku je znázorněn příklad plánu údržby "nákladní
 
 Na následujícím obrázku je znázorněn příklad plánů údržby nastavených u majetku na stránce **Všechny majetky**.
 
-![Příklad plánů údržby nastavených na majetku](media/08-preventive-maintenance.png "Příklad plánů údržby nastavených na majetku")
+![Příklad plánů údržby nastavených na majetku.](media/08-preventive-maintenance.png "Příklad plánů údržby nastavených na majetku")
 
 <a id="counter-based-maintenance"></a>
 
-## <a name="counter-based-maintenance-enhancements"></a>Vylepšení údržby založené na počítadle
+## <a name="counter-based-maintenance-enhancements"></a>Vylepšení údržby na základě čítače
 
 Funkce *Vylepšení údržby založené na počítadle* zavádí následující funkce:
 

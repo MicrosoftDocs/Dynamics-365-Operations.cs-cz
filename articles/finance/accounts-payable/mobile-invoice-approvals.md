@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2406df379084fefd4e1ca33c271b69f4dafeb5b5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189195"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358898"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
@@ -136,7 +136,7 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
 
 1.  V adrese URL aplikace nahraďte název položky nabídky hodnotou **VendMobileInvoiceAssignedToMeListPage** k otevření mobilní verze stránky se seznamem **Nevyřízené faktury dodavatele přiřazené mně** v modulu **Závazky**. V závislosti na počtu faktur, které máte v systému přidělené, se na této stránce se zobrazí tyto faktury. Pokud chcete najít konkrétní fakturu, můžete použít filtr vlevo. Nevyžadujeme ale použití konkrétní faktury pro tento příklad. Vyžadujeme pouze, aby vám byly přiřazeny některé faktury, které vám umožní navrhnout mobilní stránku. Nové stránky, které jsou k dispozici, byly navrženy speciálně pro vývoj mobilních scénářů pro faktury dodavatele. Proto je nutné použít tyto stránky. Adresa URL by měla vypadat jako následující adresa URL a po jejím zadání se musí zobrazit stránka, která je ukázána na obrázku: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Stránka Čekající faktury dodavatele – přiřazené mně](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Stránka Čekající faktury dodavatele – přiřazené mně.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**.
 3.  Vyberte pracovní prostor a klikněte na **Úpravy**
@@ -145,7 +145,7 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
 6.  Klepněte na tlačítko **Hotovo**.
 7.  V mobilním návrháři na kartě **Pole** klepněte na tlačítko **Vybrat pole**. Sloupce na stránce seznamu musí vypadat podobně jako na následujícím obrázku. 
 
-    [![Sloupce na stránce Čekající faktury dodavatele přiřazené mně](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Sloupce na stránce Čekající faktury dodavatele přiřazené mně.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Přidejte požadované sloupce ze stránky seznamu, které musí být zobrazeny pro uživatele na mobilní stránce. Pořadí, ve kterém přidáváte, je pořadí, ve kterém se pole zobrazí koncovému uživateli. Jediný způsob, jak změnit pořadí polí, je opětovný výběr všech polí. Na základě požadavků pro tento scénář je vyžadováno následující osm polí. Nicméně někteří uživatelé mohou považovat osm polí za příliš mnoho informací v mobilním zařízení. Nejdůležitější pole proto ukážeme v zobrazení mobilního seznamu. Zbývající pole se zobrazí v zobrazení podrobností, které můžeme navrhnout později. Nyní přidáme následující pole. Klepněte na znaménko plus (**+**) v těchto sloupcích pro přidání na mobilní stránku.
     - Název dodavatele
@@ -156,7 +156,7 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
 
     Po přidání polí musí mobilní stránka vypadat podobně jako na následujícím obrázku. 
     
-    [![Stránka po přidání polí](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Stránka po přidání polí.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Nyní také musíte přidat následující sloupce, abychom mohli později povolit akce pracovního postupu.
     - Zobrazit dokončené úkoly
@@ -175,7 +175,7 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
 
 Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, použijte stránku **VendMobileInvoiceHeaderDetails**. Všimněte si, že v závislosti na počtu faktur, které máte v systému, tato stránka zobrazuje nejstarší faktury (faktura, která byla vytvořena jako první). Pokud chcete najít konkrétní fakturu, můžete použít filtr vlevo. Nevyžadujeme ale použití konkrétní faktury pro tento příklad. Vyžadujeme pouze některá data faktury, abychom mohli navrhnout mobilní stránku. 
 
-[![Stránka workflowu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Stránka workflowu.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. V adrese URL nahraďte název položky nabídky názvem **VendMobileInvoiceHeaderDetails** k otevření formuláře
 
@@ -212,7 +212,7 @@ Pokud chcete navrhnout stránky podrobností faktury pro mobilní zařízení, p
 
 11. Po přidání všech polí z předchozích dvou kroků klepněte na **Hotovo**. Stránka musí vypadat podobně jako na následujícím obrázku.
     
-    [![Ilustrace zobrazující přidaná další pole](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Ilustrace zobrazující přidaná další pole.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Kliknutím na **Hotovo** ukončete režim úprav.
 
@@ -322,7 +322,7 @@ Chcete-li přidat akce workflowu, použijte stránku **VendMobileInvoiceHeaderDe
 
 4. Nastavte možnost **Správa dokumentů** na **Ano**, jak je ukázáno níže. **Poznámka:** Pokud neexistují žádné požadavky na mobilním zařízení, můžete nechat tuto možnost nastavenou na **Ne**, což je výchozí nastavení.
    
-   ![Správa dokumentů](./media/docmanagement-216x300.png)
+   ![Správa dokumentů.](./media/docmanagement-216x300.png)
 
 5. Kliknutím na **Hotovo** ukončete režim úprav.
 
@@ -339,7 +339,7 @@ Požadavky pro tento scénář potvrzují, že budou existovat pouze distribuce 
 
 1.  V adrese URL nahraďte název položky nabídky jako předtím. Stránky, které se objeví, by měly vypadat jako na následujícím obrázku.
 
-    [![Stránka Všechny distribuce](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Stránka Všechny distribuce.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
 

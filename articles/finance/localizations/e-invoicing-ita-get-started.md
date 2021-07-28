@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894770"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356070"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Začínáme s Elektronickou fakturací pro Itálii
 
@@ -59,7 +61,7 @@ Během instalace RCS dokončíte tyto úlohy:
 
 4. Vyberte funkci **Export eletronických faktur (IT)** a vyberte **Import**.
 
-![Import funkce exportu elektronických faktur (IT)](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Import funkce exportu elektronických faktur (IT).](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 Při importu funkce **Export elektronických faktur (IT)** z globálního úložiště, importují se také všechna nastavení, která jsou popsána v následujících částech.
 
@@ -67,13 +69,13 @@ Při importu funkce **Export elektronických faktur (IT)** z globálního úlož
 
 1. Na stránce **Funkce elektronické fakturace** na kartě **Verze** vyberte **Nový**. 
 
-    ![Přidání nové verze funkce elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Přidání nové verze funkce elektronické fakturace.](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     Dále nakonfigurujete formáty elektronických zpráv (ER), které jsou spojeny s funkcí elektronické fakturace.
 
 2. Na kartě **Konfigurace** vyberte **Přidat** ke správě verzí konfigurace.
 
-    ![Správa verzí konfigurace funkcí elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![Správa verzí konfigurace funkcí elektronické fakturace.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     V tomto kroku přidáváte a konfigurujete formáty ER různých souborů, které se používají k exportu italských elektronických faktur. U italských elektronických faktur FatturaPA použijte buď následující standardní konfigurace, nebo skutečné přizpůsobené konfigurace, které používáte pro elektronickou fakturaci:
 
@@ -85,17 +87,17 @@ Při importu funkce **Export elektronických faktur (IT)** z globálního úlož
 3. Vyberte konkrétní konfiguraci souboru formátu ER.
 4. Vyberte **Upravit** nebo **Zobrazit** a otevřete stránku **Návrhář formátů**.
 
-    ![Otevření stránky Návrhář formátu](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![Otevření stránky Návrhář formátu.](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. Použijte stránku **Návrhář formátů**, chcete-li upravovat a prohlížet konfigurace souborů ve formátu ER.
 
-    ![Stránka návrháře formátu](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![Stránka návrháře formátu.](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Spravujte nastavení funkce elektronické fakturace
 
 - Na stránce **Funkce elektronické fakturace** na kartě **Nastavení** vyberte **Přidat**, **Odebrat** nebo **Upravit** ke správě nastavení funkcí elektronické fakturace.
 
-![Správa nastavení funkce elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![Správa nastavení funkce elektronické fakturace.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 V tomto kroku nakonfigurujete události, které se vztahují na elektronické faktury, včetně generování výstupních souborů XML ve formátu **FatturaPA** a digitální podepisování (je-li požadováno).
 
@@ -105,20 +107,20 @@ V tomto kroku nakonfigurujete události, které se vztahují na elektronické fa
 2. Vyberte možnost **Upravit**.
 3. Na stránce **Nastavení verze funkce** vyberte kartu **Akce** pro správu seznamu akcí. Akce definují seznam operací, které je nutné spustit v postupném pořadí, aby bylo možné provést úplné provedení události.
 
-    ![Karta Akce](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![Karta Akce.](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | ID akce | Název akce        | Popis akce                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Převod dokumentu | Vytvořte soubor XML e-faktury ve formátu **FatturaPA**. |
+    | 1         | Transformovat dokument | Vytvořte soubor XML e-faktury ve formátu **FatturaPA**. |
     | 2         | Podepsat dokument      | Aplikujte digitální podpis na soubor XML.             |
 
 4. Vyberte kartu **Pravidla použitelnosti** pro zobrazení a udržování pravidel použitelnosti. Pravidla použitelnosti definují kontext, kde bude akce spuštěna.
 
-    ![Karta Pravidla použitelnosti](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![Karta Pravidla použitelnosti.](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. Vyberte kartu **Proměnné** pro zobrazení a údržbu proměnných.
 
-    ![Karta Proměnné](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Karta Proměnné.](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. Definujte veřejné proměnné, které jsou nutné ke spuštění akcí.
 
@@ -133,7 +135,7 @@ Kroky a nastavení, které jsou nutné ke konfiguraci nastavení funkce **Projek
 3. V poli **Platí od** vyberte datum, kdy má začít platnost prostředí.
 4. Vyberte **Povolit**. 
 
-![Povolení prostředí elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Povolení prostředí elektronické fakturace.](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>Publikování funkce elektronické fakturace
 
@@ -149,7 +151,7 @@ Funkci elektronické fakturace můžete publikovat změnou stavu verze na **Doko
 1. Na stránce **Funkce elektronické fakturace** na kartě **Verze** vyberte verzi funkce elektronické fakturace, která má stav **Dokončeno**.
 2. Vyberte **Změnit stav \> Publikovat**.
 
-![Změna stavu funkce elektronické fakturace](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Změna stavu funkce elektronické fakturace.](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Nastavení integrace Elektronické fakturace ve Finance
 
@@ -170,7 +172,7 @@ Během instalace Finance dokončíte tyto úlohy:
 1. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
 2. Na kartě **Funkce** zaškrtněte políčko **Povoleno** v řádku pro odkaz na funkci **IT00036**.
 
-![Zapnutí funkce FatturaPA](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![Zapnutí funkce FatturaPA.](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>Konfigurace elektronických dokumentů
 
@@ -185,7 +187,7 @@ Během instalace Finance dokončíte tyto úlohy:
     - Pro **Deník faktury zákazníka** vyberte **Kontext faktury zákazníka**.
     - Pro **Faktura projektu** vyberte **Kontext faktury projektu**.
 
-![Nastavení typů odpovědí](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Nastavení typů odpovědí.](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>Zpracování elektronických faktur
 
@@ -207,13 +209,13 @@ Dokumenty můžete odeslat ručně na základě vašeho požadavku na dokumenty 
 2. Pro první odeslání jakéhokoli dokumentu nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
 3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
 
-![Dialogové okno Odeslat elektronické dokumenty](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Dialogové okno Odeslat elektronické dokumenty.](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>Dotaz filtru
 
 1. V dialogovém okně **Dotaz** nakonfigurujte podmínky filtrování prodejních faktur i projektových faktur nebo ponechte podmínky prázdné, aby zahrnovaly všechny neodeslané faktury.
 
-    ![Nastavení kritérií filtru odeslání](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Nastavení kritérií filtru odeslání.](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Zvolte **OK** a zavřete dialogové okno **Dotaz**.
 3. Vyberte **OK** k odeslání vybraných dokumentů.
@@ -227,7 +229,7 @@ Můžete si prohlédnout protokoly o odeslání pro všechny odeslané dokumenty
 1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
 2. V poli **Typ dokumentu** vyberte **Deník faktury zákazníka** nebo **Faktura projektu**, chcete-li filtrovat požadované elektronické dokumenty.
 
-    ![Výběr typu dokumentu pro zobrazení protokolů odeslání](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![Výběr typu dokumentu pro zobrazení protokolů odeslání.](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     Hodnota, která je uvedena ve sloupci **Stav odeslání** představuje stav procesu odesílání. Označuje, zda byl proces spuštěn tak, jak byl nakonfigurován, a zda je vyžadována další akce.
 

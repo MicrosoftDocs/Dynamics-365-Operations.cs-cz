@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: efa9be4a5243444c2bf0b154836efbf8cfa76de9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2f1e633bf06a44acadee8e9fd93d682321b80e0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894664"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359263"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 
@@ -45,7 +45,7 @@ Výkaz DPH je založený na částkách daňových transakcí. Proces generován
 
 Pro každý kód vykazování by mělo být určeno konkrétní rozložení sestavy. Ve stejnou dobu jsou kódy DPH propojeny s konkrétním finančním úřadem prostřednictvím období vyrovnání DPH. Pro každý finanční úřad pro vykazování DPH by mělo být určeno konkrétní rozložení sestavy. Tedy pouze kódy vykazování DPH se stejným rozložením sestavy, která je nastavena pro finanční úřad k odvedení DPH v období vyrovnání DPH pro kód DPH lze vybrat v nastavení sestavy kódu DPH. Transakce DPH generované při účtování objednávky nebo deníku obsahují kód DPH, zdroj DPH, směr DPH a částky transakcí (částka základu daně a výše daně v zúčtovací měně, měně DPH a měně transakce). V závislosti na kombinaci atributů transakce DPH, částky transakce tvoří celkové částky určené pro kódy vykazování DPH určené pro kódy DPH. Následující obrázek znázorňuje vztah mezi daty.
 
-![diagram](./media/diagram4.jpg)
+![diagram.](./media/diagram4.jpg)
 
 ## <a name="vat-statement-setup"></a>Nastavení výkazu DPH
 Chcete-li generovat výkazy DPH, je nutné vytvořit následující nastavení:

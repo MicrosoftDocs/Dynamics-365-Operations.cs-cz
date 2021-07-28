@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dad1cad6dcda1c7768f9be8bd7bd4426be7fbcbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815445"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358850"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Tisk platby DPH podle sestavy kódu 
 
@@ -40,11 +40,11 @@ V pracovním prostoru **Správa funkcí** zapněte následující funkci: **Gene
     - **Zúčtovací měna** – tisk částek sestavy v zúčtovací měně.
     - **Měna kódu DPH** – Tisk částek sestavy v měnách kódů DPH.
 
-    ![Dialogové okno Platba DPH dle kódu (sestava)](media/Sales-tax-payment-by-code.png)
+    ![Dialogové okno Platba DPH dle kódu (sestava).](media/Sales-tax-payment-by-code.png)
 
 Následující obrázek znázorňuje příklad vygenerované sestavy. Sestava ukazuje, že kód vykazování **101** má měnu **EUR**, pokud je pole **Měna DPH** nastaveno na **EUR** pro kód DPH, ke kterému je kód vykazování přiřazen.
 
-![Příkald sestavy Platba DPH podle kódu](media/Sales-tax-payment-by-code-2.png)
+![Příkald sestavy Platba DPH podle kódu.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

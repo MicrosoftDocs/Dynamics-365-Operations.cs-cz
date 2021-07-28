@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944823"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349177"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE
 
@@ -56,7 +56,7 @@ Prvním krokem je import ukázkového řešení elektronického výkaznictví k 
     2. Zvolte **Procházet** a vyberte příslušný soubor pro konfiguraci elektronického výkaznictví ve formátu XML.
     3. Vyberte **OK**.
 
-![Importované konfigurace na stránce Konfigurace](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Importované konfigurace na stránce Konfigurace.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Kontrola ukázkového řešení elektronického výkaznictví
 
@@ -76,7 +76,7 @@ Prvním krokem je import ukázkového řešení elektronického výkaznictví k 
 
     Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty elektronického výkaznictví vytvořené pro tento model a spuštěné ve Finance. V důsledku toho je obsah zdroje dat **Trans** vystaven pro formáty elektronického výkaznictví, jako jsou například abstraktní zdroje dat **modelu**.
 
-    ![Zdroj dat Trans na stránce návrháře mapování modelů](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Zdroj dat Trans na stránce návrháře mapování modelů.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Zavřete stránku **Návrhář mapování modelu**.
 5. Zavřete stránku **Mapování modelu na zdroj dat**.
@@ -90,7 +90,7 @@ Prvním krokem je import ukázkového řešení elektronického výkaznictví k 
 
     Tento formát elektronického výkaznictví je navržen tak, aby generoval zprávu o transakcích dodavatele ve formátu XML.
 
-    ![Formátování zdroje dat a konfigurovaných vazeb prvků formátu na stránce Návrhář formátu](media/er-calculated-field-ds-performance-format.png)
+    ![Formátování zdroje dat a konfigurovaných vazeb prvků formátu na stránce Návrhář formátu.](media/er-calculated-field-ds-performance-format.png)
 
 5. Zavřete stránku **Návrhář formátu**.
 
@@ -103,7 +103,7 @@ Představte si, že jste dokončili návrh první verze řešení elektronickéh
 1. Vyberte společnost **DEMF**.
 2. Podle pokynů v části [Zapnutí sledování výkonu elektronického výkaznictví](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) vygenerujte sledování výkonu, když je spuštěn formát elektronického výkaznictví.
 
-    ![Dialogové okno Parametry uživatele](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Dialogové okno Parametry uživatele.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Spuštění formátu elektronického výkaznictví
 
@@ -124,7 +124,7 @@ Nyní jsou dostupné nové informace pro některé položky zdroje dat aktuáln�
 - Skutečný čas strávený získáváním dat pomocí zdroje dat
 - Stejný čas vyjádřený jako procento z celkového času stráveného spouštěním celého mapování modelu
 
-![Podrobnosti o době provedení na stránce návrháře mapování modelů](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Podrobnosti o době provedení na stránce návrháře mapování modelů.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Mřížka **Statistiky výkonu** ukazuje, že zdroj dat **Trans** jednou volá tabulku VendTrans. Hodnota **\[265\]\[Q:265\]** ze zdroje dat **Trans** udává, že 265 transakcí dodavatele bylo načteno z tabulky aplikace a vráceno do datového modelu.
 
@@ -137,7 +137,7 @@ Mřížka **Statistiky výkonu** také ukazuje, že aktuální model mapování 
 
 - Tabulka dodavatelů je volána pro každou iterovanou transakci dodavatele, přestože načtené transakce byly zaúčtovány pouze pro pět dodavatelů. Z 530 hovorů je 525 duplikátů. Následující obrázek ukazuje zprávu, kterou obdržíte o duplicitních voláních (databázové požadavky).
 
-![Zpráva o duplicitních žádostech databáze na stránce návrháře mapování modelu](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Zpráva o duplicitních žádostech databáze na stránce návrháře mapování modelu.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Z celkové doby provedení mapování modelu (přibližně osm sekund) si všimněte, že více než 80 procent (přibližně šest sekund) bylo vynaloženo na načtení hodnot z tabulky aplikace VendTable. Toto procento je příliš vysoké pro dva atributy pěti dodavatelů ve srovnání s objemem informací z tabulky aplikace VendTrans.
 
@@ -172,7 +172,7 @@ Pomocí těchto kroků můžete použít ukládání zdroje dat typu **Počítan
     3. V dialogovém okně do pole **Název** zadejte **Box**.
     3. Vyberte **OK**.
 
-    ![Zdroj dat Box na stránce návrháře mapování modelů](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Zdroj dat Box na stránce návrháře mapování modelů.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Pomocí těchto kroků přidáte parametrizovaný zdroj dat typu **Počítané pole**:
 
@@ -206,9 +206,9 @@ Pomocí těchto kroků můžete použít ukládání zdroje dat typu **Počítan
     4. Vyberte **Uložit** a poté zavřete stránku **Návrhář vzorců**.
     5. Tlačítkem **OK** dokončíte změny ve vybraném zdroji dat.
 
-9. Zvolte **Uložit**.
+9. Zvolte možnost **Uložit**.
 
-    ![Zdroj dat Vend na stránce návrháře mapování modelů](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Zdroj dat Vend na stránce návrháře mapování modelů.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Zavřete stránku **Návrhář mapování modelu**.
 11. Zavřete stránku **Mapování modelu**.
@@ -232,11 +232,11 @@ Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#r
 
 Všimněte si, že úpravy provedené v mapování modelu odstranily duplicitní dotazy do databáze. Počet volání databázových tabulek a zdrojů dat pro toto mapování modelu byl snížen.
 
-![Informace o sledování na stránce Návrhář mapování modelů 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Informace o sledování na stránce Návrhář mapování modelů 1.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Celková doba provedení byla snížena přibližně 20krát (z přibližně 8 sekund na přibližně 400 milisekund). Z toho vyplývá zvýšení výkonu celého řešení elektronického výkaznictví.
 
-![Informace o sledování na stránce Návrhář mapování modelů 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Informace o sledování na stránce Návrhář mapování modelů 2.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Příloha 1: Stáhněte si součásti ukázkového řešení elektronického výkaznictví Microsoft
 

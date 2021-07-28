@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82332a8ac8a68f5a9092ae08a094514827f39113
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d351066b0092318275491d933b7b90089c6855b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359926"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
@@ -50,7 +50,7 @@ Reálné studie implementace odběratele ukázaly, že změna strategii řešite
 
 Chcete-li změnit strategii řešitele, na stránce **Modely konfigurace produktu** v podokně akcí zaškzvoltee **Vlastnosti modelu**. V dialogovém okně **Upravit podrobnosti modelu** vyberte strategii řešitele.
 
-[![Změna strategie řešitele](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Změna strategie řešitele.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 V současné době neexistuje žádná logiká, která automaticky detekuje, jaká strategie řešitele bude nejúčinnější strategií pro konfigurace produktu na základě omezení. Proto musíte vyzkoušet strategie řešitele po jedné.
 

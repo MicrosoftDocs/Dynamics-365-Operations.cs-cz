@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 75913edcbac0151d5d27d866ff5430b194c62738
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 447d319f5a96851f7eb3104b3330026d269e7dd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815253"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358802"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Specifikace DPH podle sestavy transakce hlavní knihy
 [!include [banner](../includes/banner.md)]
@@ -54,7 +54,7 @@ Při generování sestavy jsou k dispozici následující výchozí pole. Tato p
 
 Chcete-li v sestavě zobrazit pouze nedaňové účty, nastavte podmínku filtru, například hvězdičku (\*), jak je znázorněno na následujícím obrázku.
 
-![Sestava zobrazující nedaňové účty](media/taxspecperledgertrans.png)
+![Sestava zobrazující nedaňové účty.](media/taxspecperledgertrans.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

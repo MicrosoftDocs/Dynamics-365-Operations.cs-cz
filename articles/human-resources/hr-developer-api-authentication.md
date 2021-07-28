@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4e73438170294863b7aa092cf1fc027787f57c70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 87e9779dc47494583ad4a299206bada4b85c6a15
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360465"
 ---
 # <a name="authentication"></a>Ověřování
 
@@ -87,7 +87,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 6. Vyberte **Registrovat**.
 
-   [![Registrace nové aplikace na portálu Azure](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Registrace nové aplikace na portálu Azure.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD přiřadí vaší aplikaci jedinečné ID aplikace (ID klienta) a přejde na stránku **přehledu** vaší aplikace. Chcete-li do aplikace přidat více možností, můžete vybrat další možnosti konfigurace, jako jsou například možnosti pro obchodní značky a pro certifikáty a tajné klíče.
 

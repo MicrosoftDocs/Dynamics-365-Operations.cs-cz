@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: a2ea914344341ee26138e853727c551bdd5d733e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833083"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358610"
 ---
 # <a name="using-power-portal-with-the-party-data-model"></a>Používání Power Portal s datovým modelem strany
 
@@ -28,11 +28,11 @@ Stručně řečeno, změnil se způsob interakce tabulek, ale oprávnění k tab
 
 Tento diagram ukazuje relaci tabulky **bez** datového modelu strany a globálního adresáře:
 
-   ![bez modelu strany](media/without-party-model.PNG)
+   ![bez modelu strany.](media/without-party-model.PNG)
 
 Tento diagram ukazuje relaci tabulky **s** datovým modelem strany a globálního adresáře:
 
-   ![s modelem strany](media/with-party-model.png)
+   ![s modelem strany.](media/with-party-model.png)
 
 ## <a name="create-a-new-table-permission"></a>Vytvořte nové oprávnění k tabulce
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6fbada6feb55b8627b1aa1ddfe367177edb7a0a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 71cb119e533e64b14badf65f55e8c4d5aa4c4b2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051706"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356577"
 ---
 # <a name="workers-without-employment"></a>Pracovníci bez zaměstnání
 
@@ -42,13 +42,13 @@ V seznamu **Pracovníci bez zaměstnání** můžete odstranit uvedené osoby. V
 
 2. Na kartě **Oprávnění** vyfiltrujte seznam **Oprávnění**, aby bylo možné **spravovat pracovníky**.
 
-   [![Filtrovat seznam oprávnění](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![Filtrovat seznam oprávnění.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. Ve sloupci **Reference** vyberte **zobrazit položky nabídky**.
 
 4. V **Zobrazit položky nabídky** vyberte **HcmWorkersWithoutEmployment**.
 
-   [![Zvolit formulář](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Zvolit formulář.](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. Nastavte oprávnění **Odstranit** na **Udělit**.
 
@@ -56,6 +56,6 @@ V seznamu **Pracovníci bez zaměstnání** můžete odstranit uvedené osoby. V
 
 7. Zvolte **Publikovat vše**.
 
-   [![Publikovat změny](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![Publikovat změny.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

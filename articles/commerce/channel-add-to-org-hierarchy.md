@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800680"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351218"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Přidání kanálu do organizační hierarchie
 
@@ -44,7 +44,7 @@ Chcete-li vybrat hierarchii, postupujte podle následujících kroků.
 
 Následující obrázek zobrazuje podrobnosti organizační hierarchie pro vybranou hierarchii.
 
-![Podrobnosti organizační hierarchie pro vybranou hierarchii](media/channel-add-to-org-hierarchy-1.png)
+![Podrobnosti organizační hierarchie pro vybranou hierarchii.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Přidání kanálu do uzlu hierachie
 
@@ -58,13 +58,13 @@ Chcete-li přidat kanál do uzlu hierachie, postupujte takto.
 
 Následující obrázek ukazuje, jak vybrat kanál, který má být přidán do uzlu hierarchie.
 
-![Výběr kanálu pro přidání do uzlu hierarchie](media/channel-add-to-org-hierarchy-2.png)
+![Výběr kanálu pro přidání do uzlu hierarchie.](media/channel-add-to-org-hierarchy-2.png)
 
 Na následujícím obrázku je znázorněna hierarchie s různými kanály.
 
-![Hierarchie s různými přidanými kanály](media/channel-add-to-org-hierarchy-3.png)
+![Hierarchie s různými přidanými kanály.](media/channel-add-to-org-hierarchy-3.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled kanálů](channels-overview.md)
 

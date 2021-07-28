@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838123"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353365"
 ---
 # <a name="work-policies"></a>Zásady práce
 
@@ -200,7 +200,7 @@ Nákupní objednávka je nyní přijata, ale není s ní spojena žádná práce
 
 V následujícím příkladu jsou dvě výrobní zakázky, *PROD-001* a *PROD-002*. Výrobní zakázka *PROD-001* má operaci s názvem *Sestavení*, kde produkt *SC1* je hlášen jako dokončený v místě *001*. Výrobní zakázka *PROD-002* má operaci, která se nazývá *Lakování* a spotřebovává produkt *SC1* z umístění *001*. Výrobní zakázka *PROD-002* také spotřebovává suroviny *RM1* 1 z umístění *001*. Surovina *RM1* je uložena ve skladu *BULK-001* a bude vyskladněno v umístění *001* během práce ve skladu pro výdej surovin. Pro uvolnění výroby *PROD-002* je generována práce vyskladnění.
 
-[![Zásady práce ve skladu](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Zásady práce ve skladu.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Při plánování konfigurace zásad práce ve skladu pro tento scénář je třeba zvážit následujících body:
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 32dfcc65d8b76f7314dcc348299c29d4ccff8d91
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355573"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Oceňovací model dlouhodobého majetku a slučování knih odpisů
 
@@ -27,7 +27,7 @@ ms.locfileid: "5826731"
 
 V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. Ve vydání Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho konceptu, který je označován jako kniha.
 
-Funkce nová kniha je založena na dřívější funkcí oceňovacího modelu, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. [![Kniha jako sloučení funkce modelu hodnoty a odpisu knihy](./media/fixed-assets.png)](./media/fixed-assets.png) Kvůli tomuto sloučení nyní můžete používat jednu sadu stránek, dotazy a sestavy pro všechny vaše procesy pro dlouhodobý majetek. Tabulky v tomto tématu popisují dřívější funkci pro knihy odpisů a oceňovací modely, spolu s novou funkcí knih.
+Funkce nová kniha je založena na dřívější funkcí oceňovacího modelu, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. [![Kniha jako sloučení funkcí oceňovacího modelu a knih odpisů.](./media/fixed-assets.png)](./media/fixed-assets.png) Díky tomuto sloučení nyní můžete používat jedinou sadu stránek, dotazů a sestav pro všechny procesy pro dlouhodobý majetek. Tabulky v tomto tématu popisují dřívější funkci pro knihy odpisů a oceňovací modely, spolu s novou funkcí knih.
 
 ## <a name="setup"></a>Nastavení
 Podle výchozího nastavení se z knih účtuje jak do hlavní knihy (GL), tak do hlavní knihy dlouhodobého majetku. Knihy mají novou možnost **účtovat do hlavní knihy**, která vám umožňuje zakázat zaúčtování do hlavní Knihy a povolit jen zaúčtování do hlavní knihy pro dlouhodobý majetek. Tato funkce se podobá dřívějšímu chování zaúčtování pro knihy odpisů. Nastavení názvů deníků má novou účtovací vrstvu s názvem Žádná. Tato účtovací vrstva byla přidána zejména pro transakce dlouhodobého majetku. K zaúčtování transakcí pro knihy, které nechcete zaúčtovat do hlavní Knihy, je nutné použít název deníku s účtovací vrstvou nastavenou na **Žádná**.

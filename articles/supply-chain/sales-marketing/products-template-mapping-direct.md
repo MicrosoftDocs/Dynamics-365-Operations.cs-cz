@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8976bc69f63fe5b05ab7dcb8d415515436902658
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 613fd4bad93e28360ca6862b7b30b2e4356ca489
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909077"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353389"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales
 
@@ -38,7 +38,7 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -104,7 +104,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 > [!NOTE]
 > Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
 
-![Mapování šablony v integrátoru dat](./media/products-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integrátoru dat.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Související témata

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193970"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360513"
 ---
 # <a name="enter-skills"></a>Zadejte dovednosti
 
@@ -45,17 +45,17 @@ Chcete-li zadat dovednosti bez nutnosti schválení, musíte vytvořit pracovní
 
 4. V podokně **Vytvořit pracovní postup** vyberte **Dovednosti pracovníků**.
 
-   [![Vyberte pracovní postup Dovednosti pracovníků](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Vyberte pracovní postup Dovednosti pracovníků.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. V dialogovém okně **Otevřít tento soubor?** vyberte **Otevřít**. Po výzvě zadejte své přihlašovací údaje.
 
 6. V editoru pracovního postupu vyberte prvek pracovního toku **Schvánit dovednosti** a přetáhněte jej na plátno.
 
-   [![Vyberte prvek pracovního postupu Schválit dovednosti](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Vyberte prvek pracovního postupu Schválit dovednosti.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Připojte prvek **Start** k prvku **Schválit dovednosti 1** a poté připojte prvek **Schválit dovednosti 1** k prvku **Konec**. Možná se budete muset posunout dolů, abyste viděli prvek **Konec**. Můžete jej přetáhnout blíže k ostatním prvkům.
 
-   [![Prvky propojit pracovní postupy](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Prvky propojit pracovní postupy.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Poklepejte na prvek pracovního postupu **Schválit dovednosti 1** a poté klepněte pravým tlačítkem na prvek **Krok 1**. Klepněte pravým tlačítkem na prvek **Krok 1** a poté vyberte **Vlastnosti**.
 
@@ -65,7 +65,7 @@ Chcete-li zadat dovednosti bez nutnosti schválení, musíte vytvořit pracovní
 
 11. Vyberte **Přidat podmínku**. Po **Kde** vyberte **Dovednosti v samoobsluze zaměstnanců** a potom vyberte **Dovednosti samoobsluhy zaměstnanců. Osoba**. Po **je** vyberte **pole** a potom vyberte **Vztah mezi uživatelem a osobou**.
 
-    [![Uveďte podmínku](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Uveďte podmínku.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Vyberte **Úkol** na levé navigační liště.
 
@@ -73,7 +73,7 @@ Chcete-li zadat dovednosti bez nutnosti schválení, musíte vytvořit pracovní
 
 14. Na kartě **Výběr hierarchie** v poli **Typ hierarchie:** vyberte **Manažerská hierarchie**.
 
-    [![Určete manažerskou hierarchii](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Určete manažerskou hierarchii.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Vyberte **Zavřít**, vyberte **Pracovní postup** v popisu cesty k plátnu a poté vyberte **Uložit a zavřít**.
 

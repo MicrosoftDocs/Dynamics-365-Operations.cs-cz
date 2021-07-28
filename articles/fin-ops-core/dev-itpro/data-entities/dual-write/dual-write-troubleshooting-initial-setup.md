@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350829"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -42,7 +42,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 Chyby na stránce **Nastavení odkazu na Dataverse** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Dataverse**, jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
 
-![Úspěšná kontrola stavu](media/health_check.png)
+![Úspěšná kontrola stavu.](media/health_check.png)
 
 Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance and Operations a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
 
@@ -77,7 +77,7 @@ Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí D
 4. Vyberte společnost, která byla propojena při konfiguraci dvojího přepisu.
 5. Ověřte, zda má sloupec **Výchozí vlastnící tým** hodnotu. Na následujícím obrázku je sloupec **Výchozí vlastnící tým** nastaveno na **USMF dvojí zápis**.
 
-    ![Ověřování výchozího vlastnícího týmu](media/default_owning_team.png)
+    ![Ověřování výchozího vlastnícího týmu.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Najít limit počtu právnických osob nebo společností, které lze propojit s dvojím zapisováním
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750879"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351042"
 ---
 # <a name="er-migration-cleanup"></a>Vyčištění migrace elektronického výkaznictví 
 
@@ -30,11 +30,11 @@ Při správě instancí modulu Finance se můžete rozhodnout migrovat aktuáln�
 
 Pokud se pokusíte spustit formát ER, který používá šablonu pro generování obchodních dokumentů, dojde k výjimce a zobrazí se upozornění na chybějící šablonu. Také budete navedeni pomocí nástroje čištění migrace ER k tomu, abyste odstranili a následně znovu importovali konfiguraci formátu ER obsahující šablonu.
 
-[![Spuštění formátu ER](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Spuštění formátu ER.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Obdobnou chybu dostanete, pokud přejdete na stránku **Konfigurace** (**Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**) a ve stromu konfigurací se pokuste odstranit konfiguraci formátu ER, která používá šablonu.
 
-[![Odstranění formátu ER](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Odstranění formátu ER.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Chcete-li vyřešit problémy se šablonami ER, ke kterým nemáte přístup, proveďte následující kroky.
 
@@ -50,7 +50,7 @@ Chcete-li vyřešit problémy se šablonami ER, ke kterým nemáte přístup, pr
 >
 > Když odstraníte konfiguraci formátu ER pomocí možnosti **Vyčištění migrace** v době, kdy je odkazovaná šablona dostupná v úložišti objektů Blob, odstraníte pouze související konfigurační artefakty v databázi aplikací. Fyzický soubor šablony v úložišti objektů Blob zůstává. Přepisování souborů v úložišti objektů Blob již není povoleno. Další informace naleznete v článku [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Kromě toho již nebudete moci znovu importovat konfigurace odstraněné pomocí vyčištění migrace v tomto prostředí. Chcete-li tento problém vyřešit, musíte najít odpovídající soubor v úložišti objektů Blob a ručně jej odstranit.
 
-[![Import formátu ER](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Import formátu ER.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Podobný problém může nastat, pokud migrujete instanci aplikace do jiného umístění, které bylo více než jednou použito jako cíl migrace a pro které úložiště objektů Blob již obsahuje soubory šablony ER.
 

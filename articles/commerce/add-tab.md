@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c865d5e055e3fadf2dda225b49f13a163974768f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e7d2cd7b7ce9446d77eff66433739c8ea6b1f309
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797448"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348289"
 ---
 # <a name="tab-module"></a>Modul karty
 
@@ -34,13 +34,13 @@ Do každého modulu karty lze přidat jeden nebo více modulů položek karty. K
 
 Následující obrázek znázorňuje příklad modulu karty na stránce webu. V tomto příkladu je vybrána karta **Expedice**.
 
-![Příklad modulu karty](./media/ecommerce-tab.PNG)
+![Příklad modulu karty.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Vlastnosti modulu karty
 
 | Název vlastnosti | Hodnoty | popis |
 |---------------|--------|-------------|
-| Nadpis | Text | Tato vlastnost určuje volitelný textový nadpis pro modul karty. |
+| Záhlaví | Text | Tato vlastnost určuje volitelný textový nadpis pro modul karty. |
 | Index aktivních karet | Počet | Tato vlastnost určuje kartu, která by měla být při načítání stránky ve výchozím nastavení aktivní. Pokud není zadána žádná hodnota, je první položka ve výchozím nastavení aktivní. |
 
 ## <a name="tab-item-module-properties"></a>Vlastnosti modulu položky karty

@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 73d20958d0efadefc709db524fe16ed85d1ea33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ceb95198332d6a9da057d657771fe6fcca5c5b9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824887"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359598"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Přehled integrace se službou Microsoft Dynamics 365 Field Service
 
@@ -34,7 +34,7 @@ Standardní šablony lze používat k vytváření projektů vlastní integrace,
 
 Integrace Field Service staví na současné funkci potenciálního zákazníka k hotovosti.
 
-![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/field-service-integration.png)
+![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/field-service-integration.png)
 
 První fáze integrace mezi Field Service a Supply Chain Management se zaměřuje na povolení pracovních příkazů a smluv ve Field Service pro fakturaci v Supply Chain Management. Podporovaný tok začíná ve Field Service, kde jsou informace z pracovních příkazů synchronizovány s Supply Chain Management jako prodejní objednávky. V Supply Chain Management jsou prodejní objednávky fakturovány za účelem generování fakturačních dokumentů. Kromě toho jsou informace z faktur smluv ve službě Field Service synchronizovány do aplikace Supply Chain Management. Integrátor dat Microsoft Dynamics 365 synchronizuje data pomocí upravitelné projektů. Standardní šablony lze používat k vytváření projektů vlastní integrace, kde další standardní a vlastní sloupce a také tabulky, mohou být mapovány pro účely úpravy integrace a plnění konkrétních požadavků.
 
@@ -58,7 +58,7 @@ Další funkce v této druhé fázi se zaměřovala na to, aby technikům v ter�
 - Projekty Supply Chain Management spojené s pracovními objednávkami Dynamics 365 Field Service
 - Pracovní příkazy Dynamics 365 Field Service s odkazem na projekty Supply Chain Management, použijte toto číslo projektu na prodejní objednávky, abyste povolili fakturaci z projektu. 
 
-![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSv2overview.png)
+![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Druhá fáze integrace mezi Field Service a Supply Chain Management umožňuje synchronizaci s následujícími šablonami:
 - Sklady (Supply Chain Management do Field Service) - sklady ze Supply Chain Management do Field Service [rozšířený dotaz] 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359404"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Opětovné použití konfigurace ER se šablonami aplikace Excel ke generování zpráv ve formátu Word
 
@@ -54,14 +54,14 @@ Tyto postupy jsou pro funkci, která byla přidána do Dynamics 365 for Operatio
 5. Vyberte možnost **Návrhář**.
 6. Na stránce **Návrhář formátů** si všimněte, že nadpis prvku kořenového formátu označuje, že je aktuálně používána šablona aplikace Excel.
 
-![Výběr existující konfigurace sestavy ER](../media/er-design-configuration-word-2016-11-image01.gif)
+![Výběr existující konfigurace sestavy ER.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Kontrola stažené šablony Wordu
 
 1. V desktopové aplikaci Word otevřete soubor šablony **SampleVendPaymDocReport.docx**, který jste stáhli dříve.
 2. Ověřte, že tato šablona obsahuje pouze rozvržení dokumentu, který chcete generovat jako ER výstup.
 
-![Rozvržení šablony Word v desktopové aplikaci](../media/er-design-configuration-word-2016-11-image02.png)
+![Rozvržení šablony Word v desktopové aplikaci.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Nahrazení šablony aplikace Excel šablonou aplikace Word a přidání vlastní části XML
 
@@ -84,7 +84,7 @@ V současné době se používá dokument Excel jako šablona pro generování v
 
 9. Všimněte si, že nadpis prvku kořenového formátu označuje, že je aktuálně používána šablona aplikace Word.
 
-    ![Nahrazení šablony aplikace Excel šablonou aplikace Word a přidání vlastní části XML](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Nahrazení šablony aplikace Excel šablonou aplikace Word a přidání vlastní části XML.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Na kartě **Formát** vyberte **Přílohy**.
 
@@ -110,7 +110,7 @@ okud jste obeznámeni s dokumenty Word, které lze navrhovat jako formuláře ob
 1. V desktopové aplikaci Word otevřete soubor šablony **SampleVendPaymDocReportBounded.docx**, který jste stáhli dříve.
 2. Ověřte, že tato šablona obsahuje rozvržení dokumentu, který chcete generovat jako ER výstup. Ovládací prvky obsahu, které se používají jako zástupné symboly pro data, která ER za běhu zadá do této šablony, jsou založeny na mapování, která jsou konfigurována mezi vlastní částí XML **Sestava** a ovládacími prvky obsahu dokumentu Word.
 
-![Náhled šablony Word v desktopové aplikaci](../media/er-design-configuration-word-2016-11-image04.png)
+![Náhled šablony Word v desktopové aplikaci.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Nahrajte šablonu Word, kde je vlastní část XML namapována na ovládací prvky obsahu
 
@@ -144,7 +144,7 @@ Chcete-li spustit rámcovou verzi upravitelného formátu, musíte ji nastavit j
 3. Na stránce **Platby dodavatele** vyberte všechny řádky v mřížce.
 4. Vyberte **Stav platby** \> **Žádný**.
 
-    ![Platby za zpracování na stránce Platby dodavatele](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Platby za zpracování na stránce Platby dodavatele.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. V podokně akcí vyberte **Generovat platby**.
 6. V rozevíracím dialogovém okně proveďte následující kroky:
@@ -156,11 +156,11 @@ Chcete-li spustit rámcovou verzi upravitelného formátu, musíte ji nastavit j
 7. V dialogovém okně **Parametry elektronické sestavy** vyberte **OK**.
 8. Generovaný výstup je ve formátu aplikace Word a obsahuje podrobnosti o zpracovaných platbách. Analyzujte vygenerovaný výstup.
 
-    ![Generovaný výstup ve formátu Word](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Generovaný výstup ve formátu Word.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
-- [Návrh nové konfigurace ER pro generování sestav ve formátu Word](../er-design-configuration-word.md)
+- [Návrh nové konfigurace elektronického výkaznictví pro generování sestav ve formátu Word](../er-design-configuration-word.md)
 - [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

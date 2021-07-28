@@ -2,7 +2,8 @@
 title: Modul volby obchodu
 description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021457"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479369"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -50,12 +52,12 @@ Pro zadání hodnot zeměpisné šířky a délky umístění obchodu v centrá
 1. V levém podokně vyberte umístění skladu.
 1. Na rychlé kartě **Adresy** vyberte **Pokročilý**.
 
-    ![Příklad podrobností obchodu v ústředí](./media/Store-address.png)
+    ![Příklad podrobností obchodu v ústředí.](./media/Store-address.png)
 
 1. V podokně akcí vyberte **Upravit**.
 1. Na rychlé kartě **Všeobecné** zadejte hodnoty pro **Zeměpisná šířka** a **Zeměpisná délka**.
 
-    ![Příklad nastavení zeměpisné šířky a délky pro obchod v centrále](./media/Store-latitude-longitude.png)
+    ![Příklad nastavení zeměpisné šířky a délky pro obchod v centrále.](./media/Store-latitude-longitude.png)
 
 1. V podokně akcí vyberte **Uložit**. 
 
@@ -70,7 +72,6 @@ U rozhraní AUTOSuggest REST API musíte zajistit, aby byly povoleny následují
 - Do směrnice **script-src** **přidejte &#42;.bing.com, &#42;.virtualearth.net**.
 - Do směrnice **script-src** přidejte **&#42;.bing.com**.
 
- 
 ## <a name="pickup-in-store-mode"></a>Režim Vyzvednutí v obchodě
 
 Modul pro výběr obchodu podporuje a režim **Vyzvednutí v obchodě**, který zobrazuje seznam obchodů, kde je produkt k vyzvednutí. Ukazuje také provozní hodiny a inventář produktů pro každý obchod v seznamu. Modul selektoru obchodu vyžaduje, aby kontext produktu poskytoval dostupnost produktu a umožnil uživateli přidat produkt do košíku, pokud je režim dodání produktu nastaven na **vyzvednout** ve vybraném obchodě. Další informace naleznete v tématu [Nastavení zásob](inventory-settings.md). 
@@ -81,7 +82,7 @@ Aby scénář BOPIS fungoval, měly by být produkty konfigurovány se způsobem
 
 Následující obrázek znázorňuje příklad modulu volby obchodu použitého na stránce s podrobnostmi o produktu.
 
-![Příklad modulu volby obchodu používaného u PDP](./media/BOPIS.PNG)
+![Příklad modulu volby obchodu používaného u PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > Ve verzi 10.0.16 a novější lze povolit novou funkci, která organizaci umožňuje definovat více způsobů vyzvednutí zásilky pro zákazníky.  Pokud je tato funkce povolena, bude nástroj pro výběr obchodů a další moduly elektronického obchodování rozšířen, aby umožnil nakupujícímu vybrat si z potenciálně více možností vyzvednutí zásilky, pokud jsou nakonfigurovány.  Další informace o této funkci najdete v [této dokumentaci](./multiple-pickup-modes.md). 
@@ -92,7 +93,7 @@ Modul pro výběr obchodu také podporuje režim **Najít obchody**. Tento reži
 
 Následující obrázek ukazuje příklad modulu pro výběr obchodu, který se používá společně s mapovým modulem na stránce umístění obchodu.
 
-![Příklad modulu pro výběr obchodu a modulu mapování na stránce umístění obchodu](./media/ecommerce-Storelocator.PNG)
+![Příklad modulu pro výběr obchodu a modulu mapování na stránce umístění obchodu.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Vykreslit mapu
 
@@ -110,6 +111,10 @@ Modul pro výběr obchodu lze spolu s mapovým modulem použít k zobrazení um�
 | Možnosti automatického spuštění: Maximální výsledky | Počet | Tato vlastnost definuje maximální počet výsledků automatických návrhů, které lze zobrazit pomocí rozhraní Bing Autosuggest API. |
 | Poloměr pro hledání | Počet | Tato vlastnost definuje poloměr při vyhledávání obchodů v mílích. Není-li zadána žádná hodnota, použije se výchozí poloměr 50 mil. |
 | Podmínky služby | Adresa URL |  Tato vlastnost určuje podmínky adresy URL služby, která je vyžadována pro použití služby Mapy Bing. |
+
+## <a name="site-settings"></a>Nastavení webu
+
+Modul pro výběr obchodu respektuje [nastavení přidání produkt do košíku](add-cart-settings.md). Po přidání položky do košíku z modulu pro výběr obchodu se uživatelům webu zobrazí příslušné nakonfigurované pracovní postupy.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Přidání modulu volby obchodu na stránku
 

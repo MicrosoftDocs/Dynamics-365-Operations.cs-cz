@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103562"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359356"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
@@ -40,7 +40,7 @@ Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o
 
 2. Vyberte tlačítko **Aplikace pro dvojí zápis**.
 
-    ![Integrace Power Platform](media/powerplat_integration_step2.png)
+    ![Integrace Power Platform.](media/powerplat_integration_step2.png)
 
 3. Zkontrolujte smluvní podmínky a poté vyberte **Konfigurovat**.
 
@@ -52,7 +52,7 @@ Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o
 
 7. Vyberte **Odkaz na prostředí Power Platform**, chcete-li vytvořit spojení mezi Dataverse a databázemi aktuálního prostředí. To obvykle trvá méně než 5 minut.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Odkaz na prostředí Power Platform":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Odkaz na prostředí Power Platform.":::
 
 8. Po dokončení propojení se zobrazí hypertextový odkaz. Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí Finance and Operations. Odtud můžete nastavit mapování entit.
 

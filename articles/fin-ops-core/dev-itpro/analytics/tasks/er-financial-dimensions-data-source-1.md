@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92b44532dfae70f03d6686ca1d2f8b6f74345ee6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce7b1ad5472a6e276d356ff4e814defcc5af1f9d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752453"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359380"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1 - návrh datového modelu)
 
@@ -101,10 +101,10 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 66. Kliknutím na možnost Nový otevřete dialogové okno.
 67. Do pole Název zadejte název.
 68. Klepněte na možnost Přidat.
-69. Klepněte na tlačítko Uložit.
+69. Klikněte na tlačítko Uložit.
 70. Zavřete stránku.
 
-![Stránka Návrhář modelu dat ER](../media/er-financial-dimensions-guides-data-model.png)
+![Stránka Návrhář modelu dat ER.](../media/er-financial-dimensions-guides-data-model.png)
 
 
 

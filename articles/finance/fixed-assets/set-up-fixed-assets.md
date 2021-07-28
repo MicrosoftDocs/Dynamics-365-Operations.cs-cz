@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 9c26b45fc94d9983157eef9af5c0af6845d24056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356744"
 ---
 # <a name="set-up-fixed-assets"></a>Nastavení dlouhodobého majetku
 
@@ -32,7 +32,7 @@ Parametry řídí obecné chování v modulu Dlouhodobý majetek. Skupiny dlouho
 
 Dlouhodobý majetek je při vytvoření zařazen do určité skupiny položek. Ve výchozím nastavení jsou knihy, které jsou přiřazeny ke skupině dlouhodobého majetku, následně přiřazeny dlouhodobému majetku. Knihy, které jsou konfigurovány pro zaúčtování do hlavní knihy, souvisejí s účetním profilem. Účty hlavní knihy jsou definovány pro každou knihu v účetním profilu a jsou použity při zaúčtování transakcí dlouhodobého majetku.
 
-![Komponenty dlouhodobého majetku](./media/FAComponents_Updated.png)
+![Komponenty dlouhodobého majetku.](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Odpisové plány
 

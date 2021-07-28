@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810479"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351410"
 ---
 # <a name="outbound-workload-visualization"></a>Vizualizace odchozího pracovní vytížení
 
@@ -60,7 +60,7 @@ Chcete-li nastavit vizualizaci odchozího pracovní vytížení, postupujte takt
     - **Dny k zahrnutí** - Zadejte počet dní v minulosti, pro které by měl být graf vygenerován.
     - **Typ pracovního příkazu** - Vyberte typy odchozích pracovních příkazů, na kterých chcete filtrovat.
 
-    ![Stránka Konfigurace filtrů](media/work-viz-filters-1.png "Stránka Konfigurace filtrů")
+    ![Stránka Konfigurace filtrů.](media/work-viz-filters-1.png "Stránka Konfigurace filtrů")
 
 1. Zavřete stránku **Konfigurovat filtry** pro návrat na stránku **Vizualizace odchozího pracovní vytížení**.
 
@@ -70,11 +70,11 @@ Chcete-li nastavit vizualizaci odchozího pracovní vytížení, postupujte takt
     - **Poslední aktualizace** - Toto pole zobrazuje datum a čas, kdy byly informace v grafu naposledy aktualizovány.
     - **Odhadovaný/skutečný čas** - Pokud jsou ve vašem systému nastaveny pracovní standardy, nastavte tuto možnost na *Ano* pro zobrazení kumulovaných odhadovaných časů výdeje v horní části každého sloupce v grafu. Pokud nepoužíváte pracovní standardy, tato možnost není k dispozici.
 
-    ![Příklad vizualizace](media/work-viz-chart.png "Příklad vizualizace")
+    ![Příklad vizualizace.](media/work-viz-chart.png "Příklad vizualizace")
 
 1. Vyberte libovolný pruh v grafu a zobrazte podrobnosti přidruženého řádku práce.
 
-    ![Podrobnosti řádku práce](media/work-viz-work-details.png "Podrobnosti řádku práce")
+    ![Podrobnosti řádku práce.](media/work-viz-work-details.png "Podrobnosti řádku práce")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Příklad: Vizualizace odchozího pracovní vytížení pro zóny
 
@@ -92,7 +92,7 @@ V tomto příkladu chcete nastavit vizualizaci, která zobrazuje řádky práce 
 
 Následující ilustrace znázorňuje příklad výsledného grafu.
 
-![Vizualizace stavu zóny a práce](media/work-viz-chart.png "Vizualizace stavu zóny a práce")
+![Vizualizace stavu zóny a práce.](media/work-viz-chart.png "Vizualizace stavu zóny a práce")
 
 Tento graf ukazuje dvě zóny pojmenované **FLOOR** a **BULK** a zónu s názvem **Prázdná**. Zóna **Prázdná** představuje všechny řádky práce, které nejsou členy žádné zóny. Graf vždy zobrazuje všechna nesouvisející filtrovaná data jako **Prázdná**, aby byla zajištěna co největší viditelnost. V zóně **FLOOR** graf ukazuje tři uzavřené čáry a čtyři otevřené čáry. V zóně **BULK** graf ukazuje čtyři uzavřené čáry jednu otevřenou čáru a 24 zrušených čar. Nakonec graf ukazuje osm uzavřených čar, které nejsou součástí žádné zóny, a proto jsou uvedeny jako **Prázdné**.
 

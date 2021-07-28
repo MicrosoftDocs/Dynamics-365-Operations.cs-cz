@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748890"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350781"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
@@ -73,21 +73,21 @@ Pokud existují data na obou stranách a potvrdili jste, že problém není souv
 
 Při vytváření dat v aplikaci Finance and Operations se může zobrazit chybová zpráva "špatný požadavek", která se podobá následujícímu příkladu.
 
-![Příklad chybové zprávy o chybném požadavku](media/error_record_id_source.png)
+![Příklad chybové zprávy o chybném požadavku.](media/error_record_id_source.png)
 
 Chcete-li tento problém vyřešit, je nutné přiřadit správné roli zabezpečení týmu mapované obchodní jednotky Dynamics 365 Sales nebo Dynamics 365 Customer Service, aby bylo možné chybějící oprávnění povolit.
 
 1. V aplikaci Finance and Operations vyhledejte organizační jednotku, která je mapována v sadě Data Integration Connection.
 
-    ![Mapování organizace](media/mapped_business_unit.png)
+    ![Mapování organizace.](media/mapped_business_unit.png)
 
 2. Přihlaste se k prostředí v aplikaci řízené podle modelů v Dynamics 365, přejděte k **Nastavení \> Zabezpečení** a najděte tým mapované organizační jednotky.
 
-    ![Tým mapované organizační jednotky](media/setting_security_page.png)
+    ![Tým mapované organizační jednotky.](media/setting_security_page.png)
 
 3. Otevřete stránku pro tým pro úpravy a poté výběrem možnosti **Spravovat role** otevřete dialogové okno **Spravovat role týmu**.
 
-    ![Tlačítko Spravovat role](media/manage_team_roles.png)
+    ![Tlačítko Spravovat role.](media/manage_team_roles.png)
 
 4. Přiřaďte roli, která má oprávnění pro čtení a zápis pro příslušné tabulky, a pak vyberte **OK**.
 

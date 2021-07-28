@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cbb1d9a53a7a09ab525532f08553898c4e40223a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7faa9a3cf6a29d8ed126cfcb0e2902b2016d03ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358139"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) - funkce globalizace
 
@@ -53,7 +53,7 @@ V instanci aplikací Finance and Operations proveďte následující postup.
 1. V instanci RCS vyberte dlaždici **Správa funkcí**.
 2. V pracovním prostoru **Správa funkcí** vyberte pracovní prostor **Funkce globalizace** v seznamu a poté vyberte **Povolit hned**.
 
-    ![Funkce globalizace ve správě funkcí](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![Funkce globalizace ve správě funkcí.](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>Globalizační funkce
 
@@ -67,11 +67,11 @@ Chcete-li použít funkci globalizace, musíte ji nejprve naimportovat z globál
 1. Ujistěte se, že je funkce **Globalizační funkce** v okně Správa funkcí zapnutá, jak je popsáno dříve v tomto tématu.
 2. Otevřete nový pracovní prostor **Globalizační funkce** a poté v části **Funkce** vyberte dlaždici **elektronická fakturace**.
 
-    ![Pracovní prostor Globální funkce](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Pracovní prostor Globální funkce.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     Stránka **Funkce elektronické fakturace** je otevřená.
 
-    ![Stránka Funkce elektronické fakturace](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![Stránka Funkce elektronické fakturace.](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>Přidejte odvozenou funkci globalizace
 
@@ -79,27 +79,27 @@ Můžete přidat novou funkci globalizace odvozením z existující funkce, kter
 
 1. Výběrem možnosti **Import** otevřete stránku **Import funkce z globálního úložiště**.
 
-    ![Import funkce ze stránky Globální úložiště](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![Import funkce ze stránky Globální úložiště.](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. Výběrem volby **Synchronizovat** získáte nejnovější funkce.
 
     Synchronizovaný seznam obsahuje funkce, které máte k dispozici buď proto, že byly publikovány společností Microsoft, nebo proto, že byly s vámi sdíleny jiným poskytovatelem konfigurace.
 
-    ![Synchronizovaný seznam funkcí](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![Synchronizovaný seznam funkcí.](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. V seznamu vyberte funkce, které chcete importovat, a poté vyberte **Import**. Po úspěšném importu vybraných funkcí se zobrazí zpráva.
 
-    ![Zpráva o úspěšném importu](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![Zpráva o úspěšném importu.](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. Vyberte **Přidat** a poté v rozevíracím seznamu vyberte možnost **Na základě stávající verze**.
 5. Zadejte název a popis funkce.
 6. V seznamu dostupných funkcí vyberte základní verzi funkce a poté vyberte **Vytvořit funkci**.
 
-    ![Přidání odvozené funkce](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![Přidání odvozené funkce.](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     Funkce, kterou jste přidali, je vytvořena a má stav **Koncept**.
 
-    ![Odvozená funkce, která má stav Koncept](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![Odvozená funkce, která má stav Koncept.](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. Zkontrolujte součásti funkcí a zjistěte, zda jsou vyžadovány aktualizace:
 
@@ -120,7 +120,7 @@ Můžete přidat novou funkci globalizace vytvořením od nuly.
 2. Zadejte název a popis funkce.
 3. Vyberte **Vytvořit funkci**.
 
-    ![Přidání nové funkce](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![Přidání nové funkce.](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. Na kartě **Verze** vyberte datum **Platné od** a pak výběrem možnosti **Změnit stav** funkci dokončete. Dokončené funkce mohou být zpřístupněny pro konkrétní prostředí, takže mohou být použity ve službách globalizace nebo mohou být publikovány do globálního úložiště.
 
@@ -176,7 +176,7 @@ Pro nastavení funkcí jsou k dispozici následující akce:
     - Pravidla použitelnosti
     - Proměnné
 
-![Stránka nastavení verze funkce](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![Stránka nastavení verze funkce.](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>Prostředí
 
@@ -201,7 +201,7 @@ Funkce je sdílena s vybranou organizací a je k dispozici této organizaci v gl
 
 Odvozenou funkci globalizace můžete znovu převést na novou nebo aktualizovanou základní verzi funkce. Tímto způsobem lze automaticky aktualizovat změny, ke kterým došlo v základní verzi. Aktualizovaná verze základní funkce je vytvořena původním poskytovatelem konfigurace a poté je publikována nebo sdílena.
 
-![Aktualizovaná verze základní funkce](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![Aktualizovaná verze základní funkce.](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 Pokud například chcete znovu převést odvozenou verzi funkce, kterou jste vytvořili, nejprve získáte nejnovější verzi funkce importem z globálního úložiště.
 
@@ -209,23 +209,23 @@ Pokud například chcete znovu převést odvozenou verzi funkce, kterou jste vyt
 2. Výběrem volby **Synchronizovat** získáte nejnovější funkce.
 3. V seznamu funkcí vyberte funkce, které chcete importovat, a poté vyberte **Import**.
 
-    ![Import nejnovější verze funkce](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![Import nejnovější verze funkce.](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. V seznamu funkcí vyberte funkci, kterou chcete obnovit.
 5. Na kartě **Verze** vyberte **Nový** pro vytvoření rámcové verze.
 
-    ![Vytvořená nová rámcová verze](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![Vytvořená nová rámcová verze.](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. Vyberte **Přeskládat**.
 7. V dialogovém okně **Přeskládat** vyberte nejnovější verzi funkce, na kterou chcete znovu přejít.
 
-    ![Dialogové okno Přeskládat](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![Dialogové okno Přeskládat.](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. Vyberte **OK**.
 9. Zkontrolujte součásti funkce a proveďte požadované změny.
 10. Vyberte **Změnit stav** k dokončení funkce přeskládání. Po dokončení přeskládání můžete provádět další akce. Tuto funkci můžete například zveřejnit a zpřístupnit ji pro použití v globalizačních službách.
 
-    ![Stav funkce byl aktualizován na Dokončeno](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![Stav funkce byl aktualizován na Dokončeno.](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>Konfigurace prostředí pro funkce globalizace
 
@@ -233,13 +233,13 @@ Uživatelé globalizačních služeb mohou spravovat prostředí, aby nastavili 
 
 1. V pracovním prostoru **Funkce globalizace** v části **prostředí** vyberte dlaždici **elektronická fakturace**.
 
-    ![Pracovní prostor Funkce globalizace](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![Pracovní prostor Funkce globalizace.](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. Vyberte **Parametry úložiště klíčů** a poté výběrem možnost **Nový** vytvořte tajné úložiště klíčů Azure.
 3. Zadejte název a popis úložiště klíčů a poté do pole **URI úložiště klíčů** zadejte adresu URL, která identifikuje prostředek úložiště klíčů v Azure.
 4. Na pevné záložce **Certifikáty** vyberte **Přidat** pro přidání certifikátu a zadejte název a popis každého certifikátu.
 
-    ![Certifikát byl přidán](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![Certifikát byl přidán.](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. Vyberte **Nový** pro vytvoření nového prostředí.
 6. Zadejte název, popis a tajný token podpisu sdíleného přístupu požadovaný pro úložiště.
@@ -248,7 +248,7 @@ Uživatelé globalizačních služeb mohou spravovat prostředí, aby nastavili 
 9. Chcete-li přidat další uživatele, zopakujte kroky 7 a 8.
 10. Výběrem možnosti **Publikovat** publikujte prostředí.
 
-    ![Publikované prostředí](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![Publikované prostředí.](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816876"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356669"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Srážková daň v nákupních transakcích
 
@@ -64,15 +64,15 @@ Výchozí skupina srážkové daně a skupina srážkové daně položky budou p
 
 Dočasná částka srážkové daně je k dispozici v poli **Upravená srážková daň** na kartě **Součty** na stránce **Nákupní objednávka**.
 
-![V nákupní objednávce je zahrnuta srážková daň](media/withholding-tax-adjusted.png)
+![V nákupní objednávce je zahrnuta srážková daň.](media/withholding-tax-adjusted.png)
 
 Srážková daň se počítá v **Deníku plateb dodavatele**. Můžete ručně upravit příslušné kódy srážkové daně i skutečné částky srážkové daně na kartě **Srážková daň** na stránce **Vypořádat transakce**.
 
-![Srážky lze ručně upravit na stránce Vyrovnat transakce](media/withholding-tax-vendor-payment-tab.png)
+![Srážky lze ručně upravit na stránce Vyrovnat transakce.](media/withholding-tax-vendor-payment-tab.png)
 
 Odvozená částka srážkové daně bude odečtena z platby dodavatele a zaúčtována na **Účet srážkové daně** v souvisejícím dokladu.
 
-![Účet srážkové daně zobrazující související dokument](media/withholding-tax-adjusted.png)
+![Účet srážkové daně zobrazující související dokument.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

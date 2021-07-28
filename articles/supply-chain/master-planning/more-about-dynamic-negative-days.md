@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: 0fd573ab1676af292174efce562b010bcbeb6514
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354730"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Záporné dny a dynamické záporné dny
 
@@ -43,7 +43,7 @@ Poptávku můžete dostat buď relativně brzy v době realizace položky nebo t
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
-![Grafické zobrazení scénáře 1](./media/negative-days-1.jpg)
+![Grafické zobrazení scénáře 1.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
@@ -51,11 +51,11 @@ Nastavíte-li záporné dny na číslo, které je menší než doba realizace po
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu A pro scénář 1](./media/negative-days-2.png)
+![Snímek obrazovky případu A pro scénář 1.](./media/negative-days-2.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu A pro scénář 1](./media/negative-days-3.png)
+![Grafické zobrazení případu A pro scénář 1.](./media/negative-days-3.png)
 
 Pokud zvažujete výkonnost MRP a nechcete být nervózní, tento případ není ideální. MRP musí vytvořit novou plánovanou objednávku a musí spočítat zpoždění a akce. Tyto úkoly jsou časově náročné. Tento případ také přidá do plánu další dvě transakce. Na druhé straně je prodejní objednávka odložena pouze o šest dní, nikoli o sedm dní.
 
@@ -73,11 +73,11 @@ Ochranná doba dynamických záporných dnů = doba realizace nákupu + ochrann�
 
 Když se použijí dynamické záporné dny, je ochranná doba, po kterou se MRP dívá na příjemky, 6 + 2 + 0 = 8 dní. MRP vyhledá existující nákupní objednávku a naváže na ní prodejní objednávku. Nejsou vytvořeny žádné nové plánované objednávky. Operační čas pro MRP je tedy kratší. Následující obrázek zobrazuje čisté požadavky pro položku DemoProduct.
 
-![Čisté požadavky pro případ C scénáře 1](./media/negative-days-4.png)
+![Čisté požadavky pro případ C scénáře 1.](./media/negative-days-4.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu C pro scénář 1](./media/negative-days-5.png)
+![Grafické zobrazení případu C pro scénář 1.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Případ D: Použití pouze dynamických záporných dnů
 
@@ -85,11 +85,11 @@ Pokud nastavíte záporné dny na **0** (nula) a použijete ochrannou dobu pouze
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu D pro scénář 1](./media/negative-days-6.png)
+![Snímek obrazovky případu D pro scénář 1.](./media/negative-days-6.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu D pro scénář 1](./media/negative-days-7.png)
+![Grafické zobrazení případu D pro scénář 1.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Případ E: Použití záporných dnů, které jsou větší než doba realizace položky a ochranná doba dynamických záporných dnů.
 
@@ -106,7 +106,7 @@ V průběhu doby realizace položky můžete obdržet poptávku. Zde je příkla
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
-![Grafické zobrazení scénáře 2](./media/negative-days-8.png)
+![Grafické zobrazení scénáře 2.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
@@ -114,11 +114,11 @@ Nastavíte-li záporné dny na číslo, které je menší než doba realizace po
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu A pro scénář 2](./media/negative-days-9.png)
+![Snímek obrazovky případu A pro scénář 2.](./media/negative-days-9.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu A pro scénář 2](./media/negative-days-10.png)
+![Grafické zobrazení případu A pro scénář 2.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Případ B: záporné dny jsou větší než doba realizace položky
 
@@ -130,11 +130,11 @@ Tento případ se podobá případu C pro scénář 1, protože dynamické zápo
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu C pro scénář 2](./media/negative-days-11.png)
+![Snímek obrazovky případu C pro scénář 2.](./media/negative-days-11.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu C pro scénář 2](./media/negative-days-12.png)
+![Grafické zobrazení případu C pro scénář 2.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Případ D: Použití pouze dynamických záporných dnů
 
@@ -155,7 +155,7 @@ Můžete dostat poptávku po období realizace položky. Zde je příklad tohoto
 
 Následující obrázek znázorňuje grafické zobrazení tohoto scénáře.
 
-![Grafické zobrazení scénáře 3](./media/negative-days-13.png)
+![Grafické zobrazení scénáře 3.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Případ A: záporné dny jsou menší než doba realizace položky
 
@@ -163,11 +163,11 @@ Nastavíte-li záporné dny na číslo, které je menší než doba realizace po
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu A pro scénář 3](./media/negative-days-14.png)
+![Snímek obrazovky případu A pro scénář 3.](./media/negative-days-14.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu A pro scénář 3](./media/negative-days-15.png)
+![Grafické zobrazení případu A pro scénář 3.](./media/negative-days-15.png)
 
 > [!NOTE]
 > V předchozím snímku obrazovky je datum požadavku nákupní objednávky 12. ledna. Vzhledem k tomu, že snímek obrazovky byl pořízený v roce 2015, kdy 11. ledna byla neděle, MRP přesunul datum požadavku na následující pracovní den, což bylo pondělí 12. ledna. Nákupní objednávka má však datum dodání 11. ledna.
@@ -178,11 +178,11 @@ Pokud nastavíte záporné dny na číslo, které je větší než doba realizac
 
 Následující obrázek znázorňuje snímek obrazovky tohoto případu.
 
-![Snímek obrazovky případu B pro scénář 3](./media/negative-days-16.png)
+![Snímek obrazovky případu B pro scénář 3.](./media/negative-days-16.png)
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu B pro scénář 3](./media/negative-days-17.png)
+![Grafické zobrazení případu B pro scénář 3.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Případ C: Automatická korelace doby realizace položky na ochrannou dobu záporných dnů
 
@@ -192,7 +192,7 @@ Ochranná doba dynamických záporných dnů je nyní 6 + 2 – 7 = 1 den. V tom
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane v tomto případě.
 
-![Grafické zobrazení případu C pro scénář 3](./media/negative-days-18.png)
+![Grafické zobrazení případu C pro scénář 3.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Případ D: Použití pouze dynamických záporných dnů
 
@@ -219,11 +219,11 @@ Záporné dny můžete chtít nastavit na dlouhou ochrannou dobu a poté pracova
 
 Následující obrázek znázorňuje grafické zobrazení toho, co se stane.
 
-![Grafická revize příkladu](./media/negative-days-19.png)
+![Grafická revize příkladu.](./media/negative-days-19.png)
 
 MRP vytváří následující výsledky.
 
-![Příklad výsledků 1](./media/negative-days-20.png)
+![Příklad výsledků 1.](./media/negative-days-20.png)
 
 Na předchozím snímku obrazovky je datum požadavku prodejní objednávky 9. ledna namísto 10. ledna. Vzhledem k tomu, že snímek obrazovky byl pořízený v roce 2015, kdy 10. ledna byla sobota, datum požadavku objednávky by mělo být předchozí pracovní den, což byl pátek 9. ledna.
 
@@ -233,7 +233,7 @@ Výsledky nejsou nesprávné, ale operační doba pro MRP může být delší, p
 
 Pokud snížíte záporné dny na číslo, které je bližší k době realizace položky, a použijete dynamické záporné dny, vytvoří modul MRP následující výsledky.
 
-![Příklad výsledků 2](./media/negative-days-21.png)
+![Příklad výsledků 2.](./media/negative-days-21.png)
 
 MRP vytvoří plánovanou objednávku, která je připojena k první prodejní objednávce. Poté bude podle očekávání druhá prodejní objednávka navázána proti existující nákupní objednávce na základě nastavení záporných dnů. Tento výsledek plánování je také správný a operační doba pro MRP může být kratší. V takovém případě není důležité chápat a vědět, jak pracovat se zprávami akce.
 

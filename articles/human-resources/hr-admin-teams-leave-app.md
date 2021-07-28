@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053556"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357354"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053556"
 
 Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžou lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
-![Robot aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-bot.png)
+![Robot aplikace pracovního volna Human Resources Teams.](./media/hr-teams-leave-app-bot.png)
 
-![Karta volna aplikace pracovního volna Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Karta volna aplikace pracovního volna Human Resources Teams.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Karta s žádostí o volno v Human Resources](./media/hr-teams-leave-app-chat-card.png)
+![Karta s žádostí o volno v Human Resources.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Instalace a nastavení
 
@@ -57,11 +57,11 @@ Pokud chcete, aby uživatelé dostávali oznámení o žádostech o pracovní vo
 
 4. Na kartě **Obecné** nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**.
 
-   ![Povolení oznámení aplikace Teams v systémových parametrech](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Povolení oznámení aplikace Teams v systémových parametrech.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Chcete-li zapnout oznámení Teams pro všechny uživatele, při výzvě vyberte **Ano**.
 
-   ![Povolení oznámení Teams pro všechny uživatele](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Povolení oznámení Teams pro všechny uživatele.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Zapnutí nebo vypnutí oznámení aplikace Teams pro jednotlivé uživatele
 
@@ -77,9 +77,9 @@ Jakmile povolíte oznámení pro aplikaci Dynamics 365 Human Resources Teams, m�
 
 5. Nastavte možnost **Povolit oznámení pro aplikaci Teams** na **Ano**, čímž povolíte oznámení pro uživatele nebo **Ne**, čímž deaktivujete oznámení pro uživatele.
 
-   ![Povolte oznámení aplikace Teams na kartě Možnosti uživatele na kartě Pracovní postup.](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Povolte oznámení aplikace Teams na kartě Možnosti uživatele na kartě Pracovní postup..](./media/hr-admin-teams-leave-app-notifications.png)
 
-6. Zvolte **Uložit**.
+6. Zvolte možnost **Uložit**.
 
 ## <a name="supported-languages"></a>Podporované jazyky
 

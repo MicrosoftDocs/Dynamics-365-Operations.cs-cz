@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799098"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349417"
 ---
 # <a name="recall-order-operation-in-pos"></a>Operace odvolání objednávky v POS
 
@@ -29,7 +29,7 @@ Tuto funkčnost povolíte tak, že zapnete funkci **Vylepšená operace odvolán
 
 Konfigurace tlačítka operace **Odvolání objednávky** umožňuje organizacím nasadit tuto operaci s předdefinovaným zobrazením.
 
-![Konfigurace mřížky tlačítek](media/recallorderbuttongrid.png)
+![Konfigurace mřížky tlačítek.](media/recallorderbuttongrid.png)
 
 K dispozici jsou následující možnosti zobrazení.
 - **Žádné** – tato možnost nasadí tuto operaci bez konkrétního zobrazení. Když uživatel otevře operaci s touto konfigurací, bude vyzván k vyhledání objednávek nebo k výběru z předdefinovaného filtru objednávek.
@@ -42,11 +42,11 @@ Pokud uživatel zahájí operaci **Odvolat objednávku** z POS, když je zobraze
 - Vybere ikonu **Hledat objednávky** nebo **Hledat a filtrovat** na panelu aplikace a pomocí filtračního mechanizmu vyhledá objednávky, které splňují kritéria filtru.
 - Zvolí z předdefinovaného filtru v rozevírací nabídce **Zobrazit objednávky** (objednávky k plnění, objednávky k vydání nebo objednávky k dodávce).
 
-![Hlavní nabídka odvolání objednávky](media/recallordermain.png)
+![Hlavní nabídka odvolání objednávky.](media/recallordermain.png)
 
 Po uplatnění kritérií hledání zobrazí aplikace seznam odpovídajících prodejních objednávek. Je důležité si uvědomit, že při použití možností vyhledávání/filtrování nemusí být načtené objednávky objednávkami propojenými s aktuálním obchodem uživatele. Tento vyhledávací proces načte a zobrazí jakoukoli objednávku zákazníka, která odpovídá kritériím vyhledávání, i když byla objednávka vytvořena nebo nastavena tak, aby byla splněna v jiném obchodě/kanálu nebo skladem.
 
-![Podrobnosti odvolání objednávky](media/orderrecalldetail.png)
+![Podrobnosti odvolání objednávky.](media/orderrecalldetail.png)
 
 Výběrem objednávky v seznamu může uživatel zobrazit další podrobnosti. Informační panel na pravé straně obrazovky zobrazuje specifika vybrané objednávky, včetně podrobností o řádku objednávky, doručení a plnění.
 

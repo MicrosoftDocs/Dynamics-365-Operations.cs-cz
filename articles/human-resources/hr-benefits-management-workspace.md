@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 45f776238fbb8e028e8d5b2f342b7d27009c686d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193424"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353607"
 ---
 # <a name="benefits-management-workspace"></a>Pracovní prostor správy zaměstnaneckých výhod
 
@@ -31,7 +31,7 @@ ms.locfileid: "6193424"
 Toto téma popisuje pracovní prostor **Správa zaměstnaneckých výhod** v aplikaci Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Chcete-li zobrazit pracovní prostor **Správa zaměstnaneckých výhod**, musíte nejprve povolit funkci **(Preview) Pracovní prostor pro správu zaměstnaneckých výhod** ve Správě funkcí. Další informace o povolení funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br><br>![Povolení pracovního prostoru Správa zaměstnaneckých výhod](./media/hr-benefits-management-workspace-enable.png)
+> Chcete-li zobrazit pracovní prostor **Správa zaměstnaneckých výhod**, musíte nejprve povolit funkci **(Preview) Pracovní prostor pro správu zaměstnaneckých výhod** ve Správě funkcí. Další informace o povolení funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br><br>![Povolení pracovního prostoru Správa zaměstnaneckých výhod.](./media/hr-benefits-management-workspace-enable.png)
 
 Pracovní prostor **Správa zaměstnaneckých výhod** poskytuje rychlý přehled o výhodách, které vyžadují vaši pozornost. Na této stránce uvidíte tyto údaje:
 
@@ -43,13 +43,13 @@ Pracovní prostor **Správa zaměstnaneckých výhod** poskytuje rychlý přehle
 - Pracovníci s aktivními životními událostmi
 - Pracovníci s otevřenými zápisy, kteří si nevybrali žádné plány
 
-![Pracovní prostor správy zaměstnaneckých výhod](./media/hr-benefits-management-workspace.png)
+![Pracovní prostor správy zaměstnaneckých výhod.](./media/hr-benefits-management-workspace.png)
 
 ## <a name="view-action-items"></a>Zobrazení položek akcí
 
 Položky akcí můžete zobrazit výběrem dlaždice nebo karty. Pokud vyberete kartu, můžete zobrazit a vybrat pracovníky přímo na stránce pracovního prostoru.
 
-![Položky akcí](./media/hr-benefits-management-workspace-action-items.png)
+![Položky akcí.](./media/hr-benefits-management-workspace-action-items.png)
 
 Pokud vyberete dlaždici, přejdete na stránku pro danou oblast. Například výběrem kterékoli z těchto dlaždic zobrazíte stránku **Plány zaměstnaneckých výhod**, ve které jsou vyfiltrováni zaměstnanci, u kterých musíte provést nějakou akci:
 
@@ -58,21 +58,21 @@ Pokud vyberete dlaždici, přejdete na stránku pro danou oblast. Například v�
 - **Zaregistrován k zaměstnaneckým výhodám**
 - **Nový zaměstnanec nezaregistrován**
 
-![Plány zaměstnaneckých výhod pracovníka](./media/hr-benefits-management-workspace-plans.png)
+![Plány zaměstnaneckých výhod pracovníka.](./media/hr-benefits-management-workspace-plans.png)
 
 Výběrem dlaždice **Aktivní životní události** nebo **Budoucí životní události** se přesunete na seznam aktivních nebo budoucích životních událostí.
 
-![Životní události](./media/hr-benefits-management-workspace-life-events.png)
+![Životní události.](./media/hr-benefits-management-workspace-life-events.png)
 
 ## <a name="processing"></a>Zpracovává se
 
 Chcete-li zpracovat způsobilost k registraci, životní události nebo aktualizace změn sazeb, vyberte příslušnou položku na navigačním panelu.
 
-![Zpracovává se](./media/hr-benefits-management-workspace-processing.png)
+![Zpracovává se.](./media/hr-benefits-management-workspace-processing.png)
 
 Chcete-li zobrazit výsledky procesu, vyberte možnost **Výsledky procesu**.
 
-![Výsledky procesu](./media/hr-benefits-management-workspace-process-results.png)
+![Výsledky procesu.](./media/hr-benefits-management-workspace-process-results.png)
 
 Další informace o zpracování výhod naleznete v tématu:
 
@@ -86,13 +86,13 @@ Další informace o zpracování výhod naleznete v tématu:
 
 Chcete-li zobrazit jiné období výhod, vyberte jej z rozbalovací nabídky **Období**.
 
-![Změna období](./media/hr-benefits-management-workspace-period.png)
+![Změna období.](./media/hr-benefits-management-workspace-period.png)
 
 ## <a name="view-more-options"></a>Zobrazení dalších možností
 
 Chcete-li zobrazit další informace a akce, které můžete podniknout, vyberte možnost **Odkazy**.
 
-![Odkazy](./media/hr-benefits-management-workspace-links.png)
+![Odkazy.](./media/hr-benefits-management-workspace-links.png)
 
 ## <a name="see-also"></a>Viz také
 

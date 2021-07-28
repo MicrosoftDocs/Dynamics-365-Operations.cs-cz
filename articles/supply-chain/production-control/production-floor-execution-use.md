@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349763"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -32,7 +32,7 @@ Než mohou pracovníci začít zařízení používat, musí jej připravit supe
 
 Po přípravě zařízení se na něm zobrazí přihlašovací stránka. Tato stránka zobrazuje informace o stavu úloh pro místní pracovní buňku. Tyto informace jsou pravidelně aktualizovány. Na tuto stránku se pracovníci přihlásí pomocí ID znaku. Ačkoli pracovníci nemusí mít uživatelský účet pro Supply Chain Management, musí mít účet *časově registrovaný pracovník*, který mohou použít při přihlášení.
 
-![Přihlašovací stránka k rozhraní pro provádění výrobního provozu](media/pfei-sign-in-page.png "Přihlašovací stránka k rozhraní pro provádění výrobního provozu")
+![Přihlašovací stránka k rozhraní pro provádění výrobního provozu.](media/pfei-sign-in-page.png "Přihlašovací stránka k rozhraní pro provádění výrobního provozu")
 
 Zbývající části tohoto tématu popisují, jak pracovníci pracují s rozhraním.
 
@@ -40,7 +40,7 @@ Zbývající části tohoto tématu popisují, jak pracovníci pracují s rozhra
 
 Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
 
-![Karta Všechny úlohy](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
+![Karta Všechny úlohy.](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
 
 Seznam úloh má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
 
@@ -59,7 +59,7 @@ Seznam úloh má následující sloupce. Čísla odpovídají číslům na před
 
 Karty **Aktivní úlohy** zobrazují seznam všech úloh, které již přihlášený pracovník zahájil. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
 
-![Karta Aktivní úlohy](media/pfei-active-jobs-tab.png "Karta Aktivní úlohy")
+![Karta Aktivní úlohy.](media/pfei-active-jobs-tab.png "Karta Aktivní úlohy")
 
 Seznam aktivních úloh má následující sloupce:
 
@@ -76,7 +76,7 @@ Seznam aktivních úloh má následující sloupce:
 
 Karta **Můj stroj** pracovníkům umožňuje vybrat majetek, který je připojen ke zdroji stroje v sadě filtrů na kartě **Všechny úlohy**. Pracovník pak může zobrazit stav vybraného majetku čtením hodnot až čtyř vybraných čítačů a seznamů posledních požadavků na údržbu a registrovaných prostojů. Pracovník může také požádat o údržbu vybraného majetku a zaregistrovat a upravit prostoje stroje. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
  
-![Karta Můj stroj](media/pfei-my-machine-tab.png "Karta Můj stroj")
+![Karta Můj stroj.](media/pfei-my-machine-tab.png "Karta Můj stroj")
 
 Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
 
@@ -87,7 +87,7 @@ Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům 
 
 1. **Nastavení** - Vyberte ikonu ozubeného kola a otevřete dialogové okno, kde si můžete vybrat, která počítadla se mají zobrazit pro vybraný majetek stroje. Hodnoty těchto čítačů jsou zobrazeny v horní části karty **Správa majetku**. Nabídka **Nastavení** (zobrazená na následujícím snímku obrazovky) umožňuje povolit až čtyři čítače. U každého počítadla, které chcete povolit, použijte vyhledávací pole v horní části dlaždice a vyberte počítadlo. Vyhledávací pole obsahuje seznam všech čítačů přidružených k aktivu vybranému v horní části stránky **Správa majetku** . Nastavte každé počítadlo tak, aby sledovalo hodnotu **Agregované** nebo nejnovější **Aktuální** hodnotu čítače. Například pokud nastavíte čítač, který sleduje, kolik hodin stroj běžel, měli byste jej nastavit na **Agregované**. Pokud nastavíte počitadlo pro měření nejnovější aktualizované teploty nebo tlaku, měli byste jej nastavit na **Aktuální**. Volbou **OK** uložte svá nastavení a zavřete dialogové okno.
 
-    ![Nastavení karty Můj stroj](media/pfei-my-machine-tab-settings.png "Nastavení karty Můj stroj")
+    ![Nastavení karty Můj stroj.](media/pfei-my-machine-tab-settings.png "Nastavení karty Můj stroj")
 
 1. **požadavek na údržbu** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete vytvořit požadavek na údržbu. Budete moci poskytnout popis a poznámku. Na požadavek bude upozorněn uživatel Supply Chain Management, který poté bude moci převést požadavek na údržbu na objednávku údržby.
 1. **Registrovat prostoje** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete zaregistrovat prostoje stroje. Budete moci vybrat kód důvodu a zadat časové rozpětí data a času prostoje. Registrace výpadku stroje se používá pro výpočet efektivity majetku stroje.
@@ -98,7 +98,7 @@ Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům 
 
 Pracovníci zahájí výrobní úlohu výběrem úlohy na kartě **Všechny úlohy** a poté výběrem možnosti **Zahájit úlohu** otevřou dialogové okno **Zahájení úlohy**.
 
-![Dialogové okno Zahájení úlohy](media/pfei-start-job-dialog.png "Dialogové okno Zahájení úlohy")
+![Dialogové okno Zahájení úlohy.](media/pfei-start-job-dialog.png "Dialogové okno Zahájení úlohy")
 
 Pracovníci v dialogovém okně **Zahájení úlohy** potvrdí množství výroby a poté zahájí úlohu. Pracovníci mohou upravit množství výběrem pole **Množství** a poté pomocí zobrazené numerické klávesnice. Pracovníci pak volbou **Zahájit** začnou práci na úloze. Dialogové okno **Zahájení úlohy** se zavře a úloha se přidá na kartu **Aktivní úlohy**.
 
@@ -108,13 +108,13 @@ Pracovníci mohou zahájit úlohu v jakémkoli stavu. Když pracovník zahájí 
 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat množství zboží, které bylo vyprodukováno, výběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit průběh**. Pak v dialogovém okně **Hlášení průběhu** pracovník zadá množství zboží pomocí numerické klávesnice. Ve výchozím nastavení je množství prázdné. Po zadání množství může pracovník aktualizovat stav úlohy na *Probíhá*, *Zastaveno* nebo *Dokončeno*.
 
-![Dialogové okno Hlášení průběhu](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
+![Dialogové okno Hlášení průběhu.](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
 
 ## <a name="reporting-scrap"></a>Hlášení odpadu
 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod (*Žádný*, *Stroj*, *Operátor* nebo *Materiál*).
 
-![Dialogové okno Hlášení odpadu](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
+![Dialogové okno Hlášení odpadu.](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Dokončení a zahájení nové úlohy
 

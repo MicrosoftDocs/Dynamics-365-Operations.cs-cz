@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 827f4ca16341d29413f1b1d928965aa1919abf59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c28ade5bb6a22b9d15380085ea479e79ba246c1e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822508"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354053"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>Naplánování pracovního příkazu na konkrétní datum a čas
 
@@ -38,13 +38,13 @@ Je-li nutné naplánovat pracovní příkaz k určitému datu *a* času, můžet
 
 4. Na pevné záložce **Záhlaví pracovního příkazu** vložte počáteční a koncové datum a čas do polí **Očekávaný začátek** a **Očekávaný konec**.
 
-    ![Obrázek č. 1](media/05-work-order-scheduling.png)
+    ![Obrázek č. 1.](media/05-work-order-scheduling.png)
 
 5. Na kartě **Obecné** klikněte na možnost **Naplánovat** pro použití standardního procesu plánování, nebo klikněte na **Vypravit**, chcete-li přiřadit pracovní příkaz pro určitého pracovníka.
 
 6. Chcete-li přepsat všechny stávající rezervace kapacit, aby se zajistilo, že je v očekávaném období naplánována pracovní objednávka, proveďte výběr podle následujícího obrázku v dialogovém okně **Naplánovat pracovní příkaz** > sekce **Omezená kapacita**. To znamená, že proces plánování bude ignorovat existující rezervace kapacity, protože pracovní příkaz musí začínat očekávaným počátečním časem.
 
-    ![Obrázek č. 2](media/06-work-order-scheduling.png)
+    ![Obrázek č. 2.](media/06-work-order-scheduling.png)
 
 7. Plánování zahájíte kliknutím na tlačítko **OK**.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186635"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355669"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Vylepšit model předpovědi (preview)
 
@@ -33,7 +33,7 @@ Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predi
 
 Nejprve vyberete jeden nebo více ze tří možných výsledků pro faktury: **Včas**, **Pozdě** a **Velmi pozdě**. Měly by být vybrány všechny tři výsledky. Pokud zrušíte výběr některého z výsledků, faktury se odfiltrují z procesu cvičení a přesnost predikce se sníží.
 
-[![Potvrzování výsledků](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Potvrzování výsledků.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Pokud vaše organizace vyžaduje pouze dva výsledky, změňte prahové hodnoty **Pozdě** a **Velmi pozdě** na 0 (nula) dnů. Tímto způsobem efektivně sbalíte předpověď na binární stav **Včas** nebo **Pozdě**.
 
@@ -51,7 +51,7 @@ V následujících částech jsou uvedena pole, která jsou k dispozici pro enti
 
 Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku faktury.
 
-[![Dostupná pole pro tabulku faktury](./media/available-fields.png)](./media/available-fields.png)
+[![Dostupná pole pro tabulku faktury.](./media/available-fields.png)](./media/available-fields.png)
 
 Následující pole by pro cvičení neměla být vybrána:
 
@@ -66,7 +66,7 @@ Následující pole by pro cvičení neměla být vybrána:
 
 Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku zákazníka.
 
-[![Dostupná pole pro tabulku zákazníka](./media/related-entities.png)](./media/related-entities.png)
+[![Dostupná pole pro tabulku zákazníka.](./media/related-entities.png)](./media/related-entities.png)
 
 Následující pole by pro cvičení nemělo být vybráno:
 
@@ -74,8 +74,8 @@ Následující pole by pro cvičení nemělo být vybráno:
 
 ## <a name="filters"></a>Filtry
 
-Filtry aktuálně nepodporují scénář predikce plateb zákazníka. Proto vyberte **Přeskočit tento krok** a pokračujte na souhrnnou stránku.
+Faktury, které se používají ke trénování, můžete filtrovat nastavením kritérií filtru pro pole na faktuře nebo v tabulkách zákazníků. Můžete například nastavit prahovou hodnotu tak, aby zahrnovala pouze faktury, jejichž součet se rovná určité částce nebo ji překračuje. Alternativně můžete vyloučit faktury spojené se zákazníky v konkrétní skupině zákazníků.
 
-[![Detailní model s filtry](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Další informace o filtrování dat najdete v části [Vytvoření predikčního modelu](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

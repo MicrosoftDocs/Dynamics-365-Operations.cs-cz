@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893901"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359022"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -39,7 +39,7 @@ Při přidání nové konfigurace formátu elektronického výkaznictví pro gen
 
 Chcete-li nakonfigurovat komponentu formátu elektronického výkaznictví, vyberte v podokně akcí možnost **Návrhář** a otevřete komponentu formátu elektronického výkaznictví pro úpravy v návrháři operací elektronického výkaznictví.
 
-![Stránka Konfigurace](./media/er-excel-format-add-format.png)
+![Stránka konfigurace.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Součást souboru Excel
 
@@ -47,14 +47,14 @@ Chcete-li nakonfigurovat komponentu formátu elektronického výkaznictví, vybe
 
 Musíte přidat komponentu **Excel\\Soubor** do nakonfigurovaného formátu elektronického výkaznictví pro generování odchozího dokumentu ve formátu Excel.
 
-![Součást Excel\Soubor](./media/er-excel-format-add-file-component.png)
+![Součást Excel\Soubor.](./media/er-excel-format-add-file-component.png)
 
 Chcete-li určit rozvržení odchozího dokumentu, připojte sešit aplikace Excel, který má příponu .xlsx k součásti **Excel\\Soubor**, jako šablonu pro odchozí dokumenty.
 
 > [!NOTE]
 > Když ručně připojíte šablonu, musíte použít [typ dokumentu](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), který byl za tímto účelem nakonfigurován v [parametrech elektronického výkaznictví](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Přidání přílohy ke komponentě Excel\Soubor](./media/er-excel-format-add-file-component2.png)
+![Přidání přílohy ke komponentě Excel\Soubor.](./media/er-excel-format-add-file-component2.png)
 
 Chcete-li určit, jak bude připojená šablona vyplněna při spuštění konfigurovaného formátu elektronického výkaznictví, musíte přidat vnořené komponenty **List**, **Rozsah** a **Buňka** k součásti **Excel\\Soubor**. Každá vnořená součást musí být přidružena l položce s názvem Excel.
 
@@ -62,7 +62,7 @@ Chcete-li určit, jak bude připojená šablona vyplněna při spuštění konfi
 
 Můžete vybrat možnost **Importovat z Excelu** na kartě podokna akcí **Importovat** a naimportovat novou šablonu do prázdného formátu elektronického výkaznictví. V tomto příkladu bude součást **Excel\\Soubor** vytvořena automaticky a k ní bude připojena importovaná šablona. Všechny požadované komponenty elektronického výkaznictví budou také vytvořeny automaticky na základě nalezených položek s názvem Excel.
 
-![Volba možnosti Importovat z Excelu](./media/er-excel-format-import-template.png)
+![Volba možnosti Importovat z Excelu.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Pokud chcete vytvořit volitelný prvek **List** v editovatelném formátu elektronického výkaznictví, nastavte možnost **Vytvořit prvek formátu listu Excel** na **Ano**.
@@ -79,7 +79,7 @@ Na kartě **Mapování** návrháře operací elektronického výkaznictví mů�
 - Pokud je výraz vlastnosti **Povoleno** nakonfigurován pro vrácení hodnoty **True** za běhu, nebo pokud není vůbec nakonfigurován žádný výraz, bude do vygenerovaného dokumentu vložen příslušný list.
 - Pokud je výraz vlastnosti **Povoleno** nakonfigurován pro vrácení hodnoty **False** za běhu, vygenerovaný dokument nebude obsahovat pracovní list.
 
-![Příklad součásti listu](./media/er-excel-format-sheet-component.png)
+![Příklad součásti listu.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Součást rozsahu
 
@@ -182,7 +182,7 @@ Můžete vybrat možnost **Aktualizovat z Excelu** na kartě podokna akcí **Imp
 >
 > Pokud upravitelný formát elektronického výkaznictví původně obsahoval prvky **List**, doporučujeme nastavit možnost **Vytvořit prvek formátu listu Excel** na **Ano** při importu aktualizované šablony. V opačném případě budou všechny vnořené prvky původního prvku **List** vytvořeny od začátku. Proto budou všechny vazby znovu vytvořených prvků formátu ztraceny v aktualizovaném formátu elektronického výkaznictví.
 
-![Možnost Vytvořit prvek formátu listu Excel v dialogovém okně Aktualizovat z Excelu](./media/er-excel-format-update-template.png)
+![Možnost Vytvořit prvek formátu listu Excel v dialogovém okně Aktualizovat z Excelu.](./media/er-excel-format-update-template.png)
 
 Chcete-li se o této funkci dozvědět více, postupujte podle pokynů v části [Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -190,7 +190,7 @@ Chcete-li se o této funkci dozvědět více, postupujte podle pokynů v části
 
 Při ověření formátu elektronického výkaznictví, který lze upravit, se provede kontrola konzistence, aby se zajistilo, že název Excel bude přítomen v aktuálně používané šabloně Excel. O jakýchkoli nesrovnalostech budete informováni. V případě některých nesrovnalostí bude nabídnuta možnost automaticky opravit problémy.
 
-![Chybové zprávy ověření](./media/er-excel-format-validate.png)
+![Chybové zprávy ověření.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Řízení průběhu výpočtu vzorců aplikace Excel
 
@@ -209,7 +209,7 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 1. Použijte poskytnuté konfigurace ER ke [generování](er-generate-printable-fti-forms.md) dokumentu s volnou textovou fakturou (FTI), který lze tisknout.
 2. Zkontrolujte zápatí vygenerovaného dokumentu. Všimněte si, že obsahuje informace o aktuálním čísle stránky a celkovém počtu stránek v dokumentu.
 
-    ![Zkontrolujte zápatí vygenerovaného dokumentu ve formátu Excel](./media/er-fillable-excel-footer-1.gif)
+    ![Zkontrolujte zápatí vygenerovaného dokumentu ve formátu Excel.](./media/er-fillable-excel-footer-1.gif)
 
 3. V návrháři formátu ER [otevřete](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ukázkový formát ER pro kontrolu.
 
@@ -222,7 +222,7 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 
     - Druhý komponent **Řetězec** vyplní text, který obsahuje aktuální číslo stránky a celkový počet stránek v aktuálním dokumentu.
 
-    ![Zkontrolujte formát ER zápatí na stránce Návrhář formátů](./media/er-fillable-excel-footer-2.png)
+    ![Zkontrolujte formát ER zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-2.png)
 
 4. Přizpůsobte ukázkový formát ER a upravte aktuální zápatí stránky:
 
@@ -237,14 +237,14 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
         1. Přidejte komponentu **Řetězec**, která zarovná datum zpracování vpravo a zobrazí jej v 8bodovém písmu "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
         2. Přidejte komponentu **Řetězec**, která vyplní datum zpracování ve vlastním formátu (**"&nbsp;&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Kontrola formátu ER zápatí na stránce Návrhář formátů](./media/er-fillable-excel-footer-3.png)
+        ![Kontrola formátu ER zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-3.png)
 
     4. [Vyplňte](er-quick-start2-customize-report.md#CompleteDerivedFormat) verzi konceptu odvozeného formátu ER **Faktura s volným textem (Excel) vlastní**.
 
 5. [Nakonfigurujte](er-generate-printable-fti-forms.md#configure-print-management) správu tisku pro použití odvozeného formátu ER **Faktura s volným textem (Excel) vlastní** namísto ukázkového formátu ER.
 6. Vygenerujte tisknutelný dokument FTI a zkontrolujte zápatí vygenerovaného dokumentu.
 
-    ![Kontrola zápatí vygenerovaného dokumentu ve formátu Excel](./media/er-fillable-excel-footer-4.gif)
+    ![Kontrola zápatí vygenerovaného dokumentu ve formátu Excel.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Další prostředky
 

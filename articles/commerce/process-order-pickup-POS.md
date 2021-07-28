@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802760"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352149"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Zpracování vyzvednutí objednávek zákazníků v POS
 
@@ -32,7 +32,7 @@ Pokud jste uživatelem obchodu, můžete vyzvednutí provést buď pomocí opera
 
 Pokud vybraná objednávka nebo řádky objednávky nejsou nakonfigurovány pro vyzvednutí v tomto konkrétním obchodě nebo pokud již byla objednávka plně vyzvednuta, operace **Vyzvednout** nebude k dispozici.
 
-![Operace vyzvednutí](media/pickupoperation.png)
+![Operace vyzvednutí.](media/pickupoperation.png)
 
 V Microsoft Dynamics 365 Commerce verze 10.0.17 a novější lze funkci **Vylepšené uživatelské prostředí pro zpracování vyzvednutí objednávek v pokladním místě** prostřednictvím správy funkcí v centrále Commerce. Pokud je tato funkce vypnutá, uživatelé nemohou vybrat množství vyzvednutí. Ve výchozím nastavení je celé množství objednané pro řádek množstvím, které bude vyzvednuto. Tato zkušenost může být problematická, protože uživatelé mohou zapomenout vybrat některé položky k vyzvednutí, když provádějí vyzvednutí prostřednictvím plnění objednávky.
 
@@ -40,13 +40,13 @@ Funkce **Vylepšené uživatelské prostředí pro zpracování vyzvednutí obje
 
 Když je zapnutá funkce **Vylepšené uživatelské prostředí pro zpracování vyzvednutí objednávek v pokladním místě** a vyberete operaci **Vyzvednout**, zobrazí se dialogové okno **Vyzvednutí**. Zde můžete vybrat položky a množství, která budou vyzvednuta. Ve výchozím nastavení je jakékoli objednané množství, které má inventář ve vyzvednutém nebo zabaleném stavu, považováno za způsobilé k vyzvednutí. Ve výchozím nastavení je toto množství nastaveno jako množství vyzvednutí. Zadané množství můžete změnit za předpokladu, že množství není 0 (nula) a nepřekročí celkové otevřené (tj. nevyfakturované) množství pro vybraný řádek.
 
-![Dialogové okno Vyzvednutí](media/pickupselect.png)
+![Dialogové okno Vyzvednutí.](media/pickupselect.png)
 
 Poté, co vyberete množství, která budou vyzvednuta, a poté vyberte **Vyzvednout**, zobrazí se stránka transakce. Pokud je zapnutá funkce [vícekanálové platby](omni-channel-payments.md) existují předběžně autorizované platby kreditní kartou, musíte použít platbu.
 
 Na stránce transakce systém vypočítá částky, které jsou splatné, výpočtem celkové částky, která je splatná u vybraných položek vyzvednutí, a poté odečte všechny dříve použité vklady nebo autorizované platby kreditní kartou. K dokončení transakce vyzvednutí musíte zpracovat platbu. Pokud je [rozložení obrazovky](pos-screen-layouts.md) stránky transakce nakonfigurováno tak, aby obsahovalo operaci **Uzavřít transakci** a není splatná žádná částka, můžete transakci dokončit bez výběru platební metody. Pokud operace **Uzavřít transakci** není k dispozici, můžete vybrat odkaz **Splatná částka 0,00 Kč** v podokně **Celkem** k uzavření transakce bez nutnosti výběru platební metody.
 
-![Transakční stránka pro transakci vyzvednutí objednávky zákazníka](media/pickupcart.png)
+![Transakční stránka pro transakci vyzvednutí objednávky zákazníka.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Změna řádků vyzvednutí nebo množství
 
@@ -54,7 +54,7 @@ Pokud musíte změnit množství vyzvednutí poté, co vyberete položky, které
 
 Pokud je zapnutá funkce **Vylepšit uživatelské prostředí pro zpracování vyzvednutí objednávek v pokladním místě**, mohou organizace přidat tlačítko pro operaci **Změnit řádky vyzvednutí** do rozložení obrazovky stránky transakce. Poté, co vytvoříte nákupní košík transakce vyzvednutí v POS a vyberete položky, můžete vybrat **Změnit řádky vyzvednutí**, pokud musíte změnit vyzvedávané položky, ale nechcete zneplatnit celou transakci. V dialogovém okně **Změnit řádky vyzvednutí** můžete změnit položky k vyzvednutí a množství. Košík transakcí se poté aktualizuje, aby odrážel vaše změny.
 
-![Dialogové okno Změnit vyzvedávané položky](media/pickupchange.png)
+![Dialogové okno Změnit vyzvedávané položky.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

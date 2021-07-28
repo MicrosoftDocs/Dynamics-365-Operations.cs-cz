@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom: 69161
+ms.custom:
+- "69161"
+- intro-internal
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d41e299f0076e1016e8ddae8584bfec338a73a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 667d55381f54a9badabbb4c57fd0185674de33f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749386"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358636"
 ---
 # <a name="document-printing-overview"></a>Přehled tisku dokumentu
 
@@ -69,7 +71,7 @@ Zatímco dokumenty vytvořené hostovanými aplikacemi čekají na tisk na zař�
 
 Následující diagram znázorňuje základní komponenty, které pomáhají s podporou operací síťového tisku.
 
-[![servisní-komponenty-pro-síťový-tisk\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![servisní-komponenty-pro-síťový-tisk\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Všimněte si, že jednu tiskárnu lze registrovat s více agenty pro směrování dokumentů. Chcete-li vyřešit předvolby tiskárny, hostovaná služba používá síťovou cestu, která jednoznačně identifikuje každou síťovou tiskárnu. Výsledkem je, že i když je tiskárna registrována více klienty, zobrazí se jako jedna volba v seznamu tiskáren dostupných v aplikacích.
 
