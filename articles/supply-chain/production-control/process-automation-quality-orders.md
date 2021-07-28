@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f35adab3075ba810964a41899ba95ae40c115e83
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 0ebb34f58a4bfbe8bda935d7b40e9d89c3dacd03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115168"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353981"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Vyvolání toků automatizace procesů k vytvoření objednávek kvality
 
@@ -30,7 +30,7 @@ Můžete si stáhnout šablonu řešení automatizace [zde](https://aka.ms/D365S
 
 Přehled této funkce a jejích schopností najdete v následujícím videu: [Využijte RPA k vytváření objednávek kvality v Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
-![Možnosti automatizace pomocí RPA](media/rpa-automation-options.png "Možnosti automatizace pomocí RPA")
+![Možnosti automatizace pomocí RPA.](media/rpa-automation-options.png "Možnosti automatizace pomocí RPA")
 
 Šablona řešení Power Automate zahrnuje tok automatizace cloudu a tok automatizace stolních počítačů, které automatizují vytváření objednávek kvality v Supply Chain Management.
 
@@ -38,7 +38,7 @@ Automatizaci lze spustit v reakci na mnoho událostí a signálů, včetně vstu
 
 Zahrnuty jsou parametry řešení pro konfiguraci automatizace pro konkrétní případ použití ve výrobním zařízení.
 
-![Vytvořit objednávku kvality](media/rpa-create-quality-roder.png "Vytvořit objednávku kvality")
+![Vytvořit objednávku kvality.](media/rpa-create-quality-roder.png "Vytvořit objednávku kvality")
 
 Úplný podrobný průvodce, jak stáhnout, nainstalovat a použít ukázkové řešení pro automatizaci vytváření objednávek kvality, najdete v článku [Automatizovat vytváření objednávek kvality v Dynamics 365 Supply Chain Management s využitím automatizace robotických procesů Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa).
 

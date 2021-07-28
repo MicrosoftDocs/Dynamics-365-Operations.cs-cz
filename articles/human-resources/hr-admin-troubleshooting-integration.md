@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053369"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357282"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -37,7 +37,7 @@ Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou
 | --- | --- | --- | --- |
 | Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Výchozí nastavení pro uživatele aplikace Talent](media/DynamicsApplicationUser.png)
+![Výchozí nastavení pro uživatele aplikace Talent.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Jsou synchronizovaná všechna data nebo jenom některé datové entity?
 
@@ -57,7 +57,7 @@ Finanční dimenze aktuálně nejsou v Dataverse pro aplikace a proto nejsou sou
 
 V případě dat, která existují v modulu Finance, ale ne v aplikaci Human Resources, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Human Resources.
 
-![Mapovat finanční dimenze](media/MapFinancialDimensions.png)
+![Mapovat finanční dimenze.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Někdy se stane, že když importuji zaměstnance, přejdou v modulu Finance. Proč?
 
@@ -71,14 +71,14 @@ Synchronizace dat řídí plán provedení. Integrace vyzvedne záznam, pokud se
 
 S použitím "Rozšířeného dotazu" můžete filtrovat a měnit tvar zdrojových dat před předáním do cíle.
 
-![Rozšířený dotaz aktivních pracovníků](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Rozšířený dotaz aktivních pracovníků.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance pro konkrétní entitu?
 
 Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na Dataverse budou doplněna z Human Resources.
 Prostřednictvím Power Apps lze naplnit další data.
 
-![Přidání do úkolu integrace a odstranění z něj](media/SpecifyFieldsIncludedInIntegration.png)
+![Přidání do úkolu integrace a odstranění z něj.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Mám nastavenou integraci jako dávkovou úlohu, ale aplikace Human Resources ztratila připojení do cílového systému. Jak se dá odeslat stejná sada změny do cílového systému?
 
@@ -126,7 +126,7 @@ Sledujte čas od historie provedení integrátoru dat a hledejte projekt index -
 
 1. Zaznamenejte index úkolů z integrátoru dat (v tomto případě je to "9").
 
-    ![Zaznamenání indexu úkolů z integrátoru dat](media/CaptureTaskIndex.png)
+    ![Zaznamenání indexu úkolů z integrátoru dat.](media/CaptureTaskIndex.png)
 
 2. Sledujte čas provádění projektu.
 
@@ -134,13 +134,13 @@ Sledujte čas od historie provedení integrátoru dat a hledejte projekt index -
 
 3. V modulu finance určete index - 1. V tomto příkladu projekt bude mít příponu 8 a čas provedení projektu indexu 0 odpovídá času provedení v kroku 2.
 
-    ![Identifikace indexu](media/IdentifyIndex.png)
+    ![Identifikace indexu.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Po integraci aplikací Human Resources a Finance nevidím v aplikaci Finance žádná data z aplikace Human Resources. Co udělat?
 
 Integrace s aplikací Finance je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Human Resources aktualizovaná a dostupná v Dataverse. To je synchronizace v reálném čase a lze ji ověřit v Power Apps pohledem na data v rámci datových tabulek.
 
-![Data v Dataverse](media/DataInCDS.png)
+![Data v Dataverse.](media/DataInCDS.png)
 
 Pokud se data v Dataverse nezobrazují požadovaným způsobem, ověřte, že je entita v integraci podporovaná. Pokud chcete zahrnout do Dataverse další data, bude požadována změna na straně společnosti Microsoft.
 
@@ -165,9 +165,9 @@ Dále také vyberte správné právnické osoby pro přidruženou sadu připojen
 
 Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry systému \> Nastavení entity \> Aktualizovat seznam entit.** Mělo by to trvat několik minut a poté by se mělo zobrazit toto mapování. K tomuto problému dochází při vytváření nových projektů.
 
-![Mapování chybějících polí](media/MissingFieldMapping.png)
+![Mapování chybějících polí.](media/MissingFieldMapping.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 - Integrátor dat (Di): 
 

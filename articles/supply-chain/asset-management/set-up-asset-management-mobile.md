@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837770"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351506"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Nastavení mobilního pracovního prostoru správy majetku
 
@@ -47,7 +47,7 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 1. V části Supply Chain Management vyberte tlačítko **Nastavení** (symbol ozubeného kola v pravém horním rohu) a poté v nabídce vyberte **Mobilní aplikace**.
 1. V dialogovém okně **Spravovat mobilní aplikaci** najděte dlaždici **Správa majetku**. Pokud obsahuje text „V metadatech - nepublikováno,“ pracovní prostor ještě nebyl publikován. Pokud obsahuje text „V metadatech - publikováno,“ pracovní prostor již byl publikován a zbytek tohoto postupu můžete přeskočit.
 
-    ![Dialogové okno Správa mobilní aplikace](media/mobile-workspaces.png "Dialogové okno Správa mobilní aplikace")
+    ![Dialogové okno Správa mobilní aplikace.](media/mobile-workspaces.png "Dialogové okno Správa mobilní aplikace")
 
 1. Vyberte dlaždici **Správa majetku** a poté vyberte **Publikovat** na panelu nástrojů. Po několika sekundách byste měli obdržet oznámení, které uvádí, že pracovní prostor byl úspěšně publikován. Text na dlaždici by se měl navíc změnit na „V metadatech - publikováno“.
 
@@ -60,14 +60,14 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 
 1. Otevřete aplikaci Finance and Operations (Dynamics 365). Měla by se zobrazit přihlašovací stránka. Do pole **Přihlásit se** zadejte adresu URL pro správu dodavatelského řetězce nebo vyberte poslední adresu URL v seznamu **Nedávná prostředí** a potom klepněte na **Připojit**.
 
-    ![Přihlašovací stránka](media/mobile-app-sign-in.png "Přihlašovací stránka")
+    ![Přihlašovací stránka.](media/mobile-app-sign-in.png "Přihlašovací stránka")
 
 1. Pokud se zobrazí výzva k potvrzení připojení, zaškrtněte políčko **Rozumím** a potom klepněte na **Připojit**.
 1. Na stránce **Vyberte účet** použijte svůj účet Microsoft k přihlášení do mobilní aplikace.
 
     Zobrazí se stránka **Pracovní prostory**. Uvádí seznam všech mobilních pracovních prostorů, které byly publikovány vaší instancí Supply Chain Management.
 
-    ![Seznam pracovních prostorů](media/mobile-app-workspaces.png "Seznam pracovních prostorů")
+    ![Seznam pracovních prostorů.](media/mobile-app-workspaces.png "Seznam pracovních prostorů")
 
 1. Pokud musíte změnit právnickou osobu (společnost), klepněte na tlačítko Nabídka (někdy označované jako hamburger nebo hamburgerové tlačítko) v levém horním rohu a poté klepněte na **Změnit společnost**.
 
@@ -75,7 +75,7 @@ Pro zpřístupnění funkcí správy aktiv v mobilní aplikaci Finance and Opera
 
 1. Na stránce **Pracovní prostory** vyberte pracovní prostor, se kterým chcete pracovat, a otevřete jej.
 
-    ![Mobilní pracovní prostor správy majetku](media/mobile-app-asset-workspace.png "Mobilní pracovní prostor správy majetku")
+    ![Mobilní pracovní prostor správy majetku.](media/mobile-app-asset-workspace.png "Mobilní pracovní prostor správy majetku")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Práce s mobilním pracovním prostorem správy majetku
 

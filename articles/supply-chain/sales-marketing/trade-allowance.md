@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102799"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359526"
 ---
 # <a name="trade-allowance-management"></a>Správa obchodních náhrad
 
@@ -59,7 +59,7 @@ Smlouva o obchodních náhradách je motivační program, kdy jsou za výkonnost
 
 Finanční prostředky přiřazené ke smlouvám o obchodních náhradách se zaznamenávají na stránce **Finanční prostředky**. Otevřete stránku **Finanční prostředky**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Finanční prostředky** \> **Finanční prostředky**.
 
-![Stránka Finanční prostředky](./media/trade-allowance-management-funds-page.png "Stránka Finanční prostředky")
+![Stránka Finanční prostředky.](./media/trade-allowance-management-funds-page.png "Stránka Finanční prostředky")
 
 Na stránce **Finanční prostředky** můžete zobrazit podrobnosti o finančních prostředcích na promoakce.
 
@@ -75,7 +75,7 @@ Jakmile je hotova definici finančních prostředků, dalším krokem v plánov�
 
 Smlouvy o obchodních náhradách se zaznamenávají na stránce **Smlouvy o obchodních náhradách**. Chcete-li otevřít stránku **Smlouvy o obchodních náhradách**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**.
 
-![Stránka Smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-page.png "Stránka Smlouvy o obchodních náhradách")
+![Stránka Smlouvy o obchodních náhradách.](./media/trade-allowance-management-agreements-page.png "Stránka Smlouvy o obchodních náhradách")
 
 #### <a name="header"></a>Záhlaví
 
@@ -103,7 +103,7 @@ Karta **Výrobní události** zobrazují typy událostí pokrytých smlouvou. Ex
 
 Pokud vyberete výrobní událost a poté kartu **Částky**, vyhledají se podrobnosti události.
 
-![Řádky smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-lines.png "Řádky smlouvy o obchodních náhradách")
+![Řádky smlouvy o obchodních náhradách.](./media/trade-allowance-management-agreements-lines.png "Řádky smlouvy o obchodních náhradách")
 
 V části **řádky obchodních náhrad** určíte rozsahy množství nebo částky, kterých musí odběratel dosáhnout pro získání odměny.
 

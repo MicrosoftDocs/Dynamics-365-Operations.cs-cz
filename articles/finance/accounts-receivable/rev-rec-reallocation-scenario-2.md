@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31a0b26fbf2383c90caaa8c1ea0e56ab5f377609
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 53e5173accb83150b2c76d93b971d8908aba2a3d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814193"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356190"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Opětovné přidělení uznání výnosů – scénář 2
 
@@ -34,7 +34,7 @@ Pro odběratele US\_SI\_0003 je vytvořena prodejní objednávka. Odběratel kup
 
 [![Řádky prodejní objednávky pro instalační služby a plán podpory](./media/13_rev-rec-scenarios.png)](./media/13_rev-rec-scenarios.png)
 
-Prodejní objednávka je potvrzena. Protože jsou obě položky nastaveny pro přidělení výnosové ceny, při potvrzení prodejní objednávky se vypočítá výnosová cena. Výnosy, které budou uznány, můžete zobrazit na stránce **Přidělení výnosové ceny** (na stránce **Prodejní objednávka** v podokně akcí na kartě **Spravovat** ve skupině **Uznání výnosů** vyberte **Přidělení výnosové ceny**). Výnosy za instalační služby budou zaúčtovány na účet odložených výnosů ve výši $250. Výnosy za plán podpory budou také zaúčtovány na účet odložených výnosů ve výši $150. Součet výnosových cen se musí rovnat součtu řádků, které byly nastaveny pro zachytávání přidělení výnosových cen ($400).
+Prodejní objednávka je potvrzena. Protože jsou obě položky nastaveny pro přidělení výnosové ceny, při potvrzení prodejní objednávky se vypočítá výnosová cena. Výnosy, které budou uznány, můžete zobrazit na stránce **Přidělení výnosové ceny** (na stránce **Prodejní objednávka** v podokně akcí na kartě **Spravovat** ve skupině **Uznání výnosů** vyberte **Přidělení výnosové ceny**). Výnosy za instalační služby budou zaúčtovány na účet odložených výnosů ve výši $250. Výnosy za plán podpory budou také zaúčtovány na účet odložených výnosů ve výši $150. Součet výnosových cen se musí rovnat součtu řádků, které byly nastaveny pro zachytávání přidělení výnosových cen (400 USD).
 
 [![Stránka Přidělení výnosové ceny](./media/14_rev-rec-scenarios.png)](./media/14_rev-rec-scenarios.png)
 
@@ -87,7 +87,7 @@ Nyní je fakturována druhá prodejní objednávka. Celková faktura předložen
 
 [![Stránka transakcí dokladů se zaúčtovanou účetní položkou](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
-Protože součet výnosů a prodeje je vyšší než $1170,44, zaúčtovaný rozdíl je -$130,17. Tato částka vymaže zůstatek z clearingového účtu výnosů částečné faktury. Tento zůstatek je po opětovném přidělení zaúčtován v nové účetní položce.
+Protože součet výnosů a prodeje je vyšší než 1170,44 USD, zaúčtovaný rozdíl je -130,17 USD. Tato částka vymaže zůstatek z clearingového účtu výnosů částečné faktury. Tento zůstatek je po opětovném přidělení zaúčtován v nové účetní položce.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

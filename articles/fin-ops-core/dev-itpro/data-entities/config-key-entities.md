@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752329"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356256"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurační klíče a datové entity
 
@@ -52,24 +52,24 @@ Následující tabulka shrnuje, jak hodnoty konfiguračních klíčů na různý
 ### <a name="entity-list-refresh"></a>Obnovení seznamu entit
 Při obnovení seznamu entit vytvoří platforma správy dat metadat konfiguračního klíče pro použití za běhu. Tato metadata jsou vytvořena pomocí výše uvedené logiky. Důrazně doporučujeme počkat na dokončení obnovy seznamu entit před použitím úloh a entit v platformě správy dat. Pokud nepočkáte, metadata konfiguračního klíče nemusí být aktuální a mohou mít za následek neočekávané výsledky. Při obnově seznamu entit se zobrazí na stránce seznamu entit následující zpráva.
 
-![Obnovení seznamu entit](./media/Entity_refresh_list.png)
+![Obnovení seznamu entit.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Stránka seznamu datových entit
 Stránku seznamu datových entit v pracovním prostoru Správa dat zobrazuje nastavení konfiguračního klíče pro entity. Začněte touto stránkou pro pochopení dopadu konfiguračních klíčů na datové entity.
 
 Tyto informace se zobrazí pomocí metadat, která jsou vytvořena během obnovení entity. Sloupec konfiguračního klíče zobrazuje název konfiguračního klíče, který je přidružena k datové entitě. Pokud je tento sloupec prázdný, znamená to, že neexistuje konfigurační klíč přidružený k datové entitě. Sloupec stavu konfiguračního klíče zobrazuje stav konfiguračního klíče. Pokud je zaškrtnutý, znamená to, že je tento klíč povolen. Pokud je prázdný, je klíč buď zakázán nebo neexistuje žádný přidružený klíč.
 
-![Stránka seznamu entit](./media/Data_entity_list_page.png)
+![Stránka seznamu entit.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Cílová pole
 Dalším krokem je přechod na podrobnosti datové entity k zobrazení dopadu konfiguračních klíčů na tabulky a pole. Formulář cílových polí pro datovou entitu zobrazuje konfigurační klíč a informace o stavu klíče pro související tabulky a pole v datové entitě. Má-li samotná datová entita svůj konfigurační klíč zakázán, zobrazí se zpráva s upozorněním, že tabulky a pole ve formuláři cílových polí pro tuto entitu nebudou vůbec k dispozici, bez ohledu na stav konfiguračních klíčů.
 
-![Cílová pole](./media/Target_fields_1.png)
+![Cílová pole.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Podřízené entity 
 Některé entity mají další entity jako zdroje dat, nebo se jedná o složené datové entity: informace o konfiguračním klíči pro tyto entity jsou zobrazené ve formuláři podřízených entit. Použijte tento formulář stejným způsobem na stránku seznamu entit uvedenou výše. Formulář cílových polí pro podřízené entity se rovněž chová tak, jak je popsáno výše.
 
-![Cílová pole](./media/Target_fields_2.png)
+![Cílová pole.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Použití datových entit
 Po porozumění celému dopadu, pokud nějaký je, konfiguračních klíčů na datové entity, které chcete použít, nyní můžete přejít k použití datových entit pomocí jejich přidání do datových projektů. 
@@ -91,7 +91,7 @@ S použitím metadat konfiguračního klíče vytvořeného během seznamu obnov
 ### <a name="managing-configuration-key-changes"></a>Správa změn konfiguračních klíčů
 Kdykoli aktualizujete konfigurační klíče na entitě, úrovni tabulek nebo polí, seznam entit v platformě správy dat musí být aktualizován. Tento proces zajišťuje, aby platforma vzala nejnovější nastavení konfiguračního klíče. Dokud nebude obnoven seznam entit, bude se zobrazovat na stránce seznamu entit následující upozornění. Aktualizované změny konfiguračního klíče se projeví okamžitě po aktualizaci seznamu entit. Doporučujeme ověřit existující datové projekty a úlohy, abyste se ujistili, že fungují podle očekávání poté, co změny konfiguračních klíčů začaly být účinné.
 
-![Cílová pole](./media/Target_fields_3.png)
+![Cílová pole.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0a94a74f4eb00c24142f0390bcf352db0594ca0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019852"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349465"
 ---
 # <a name="enable-product-recommendations"></a>Povolit doporučení produktu
 
@@ -68,7 +68,7 @@ Chcete-li zapnout doporučení produktu, postupujte následujícím způsobem.
 1. Vyberte funkci **Doporučení k produktu**.
 1. V podokně vlastností **Doporučení produktů** vyberte **Ihned povolit**.
 
-![Zapnutí doporučení](./media/FeatureManagement_Recommendations.PNG)
+![Zapnutí doporučení.](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Tento postup spustí proces generování seznamů doporučení produktů. Mže trvat až několik hodin, než jsou seznamy k dispozici a lze je zobrazit na pokladním místě (POS) nebo v řešení Dynamics 365 Commerce.

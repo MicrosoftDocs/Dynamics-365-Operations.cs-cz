@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304360"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355966"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Prohlížení, správa a schvalování plánovaných objednávek
 
@@ -65,7 +65,7 @@ Schválení plánovaných objednávek je volitelným krokem v procesu vytvořen�
 
 Následující ilustrace ukazuje, jak můžete použít hodnotu **Stav** hodnota, která je přiřazena každé plánované objednávce k implementaci pracovního toku schválení. Chcete-li implementovat proces schválení, ručně upravte hodnotu **Stav** pro každou plánovanou objednávku, jak je popsáno v předchozí části.
 
-![Tok plánované objednávky](media/approved-planned-orders-1.png)
+![Tok plánované objednávky.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > Doporučujeme vám schválit všechny upravené plánované objednávky. Jinak budou úpravy při příštím spuštění plánování ignorovány a přepsány.

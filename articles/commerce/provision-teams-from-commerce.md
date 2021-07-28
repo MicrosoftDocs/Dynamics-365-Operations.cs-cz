@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 39dabeb8bacc4ebc3376f53f15c7fb292c8d301c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022439"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352101"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Zřízení Microsoft Teams z Dynamics 365 Commerce
 
@@ -49,7 +49,7 @@ Chcete-li zřídit Teams v Commerce Headquarters, postupujte takto.
 > [!TIP]
 > Pokud žádný z vašich regionálních manažerů, manažerů obchodů a pracovníků obchodů nebyl přidružen k licenci Teams, může se zobrazit následující chybová zpráva: „Nepodařilo se načíst použitelné kategorie SKU pro uživatele.“ Chcete-li problém vyřešit, vyberte **Synchronizovat týmy a členy** v podokně akcí.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>Ověření zřízení Teams v centru pro správu Teams
 
@@ -63,7 +63,7 @@ Chcete-li ověřit zřízení Microsoft Teams v centru pro správu Microsoft Tea
 
 Následující obrázek ukazuje příklad stránky **Spravovat týmy** v centru pro správu Teams.
 
-![Příklad stránky Spravovat týmy v centru pro správu Teams](media/Teams-FLW-Admin-Teams.png)
+![Příklad stránky Spravovat týmy v centru pro správu Teams.](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Nahrajte organizační hierarchii Commerce do Teams.
     
@@ -86,7 +86,7 @@ Chcete-li ověřit, že byla do Microsoft Teams nahrána hierarchie organizace, 
 1. Na kartě **Publikované seznamy** vytvořte nový seznam, který má fiktivní úkol.
 1. Zvolte **Publikovat**. Hierarchie organizace by se měla objevit v dialogovém okně **Vyberte, komu publikovat**, jak je znázorněno v příkladu na následujícím obrázku.
 
-![Příklad hierarchie organizace v dialogovém okně Vyberte, komu publikovat](media/Microsoft-teams-verify-org-hierarchy.png)
+![Příklad hierarchie organizace v dialogovém okně Vyberte, komu publikovat.](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

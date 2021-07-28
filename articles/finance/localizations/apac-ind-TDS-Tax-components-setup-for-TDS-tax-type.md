@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023083"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358163"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Nastavení složek daně pro typ daně TDS
 
@@ -33,7 +33,7 @@ Chcete-li nastavit složky TDS, postupujte následujícím způsobem:
 
 1. Přejděte do nabídky **Daň \> Nastavení \> Srážková daň \> Složky srážkové daně**.
 
-    [![Stránka Složky srážkové daně](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Stránka Složky srážkové daně.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. V poli **Typ daně** vyberte **TDS** a nastavte složky srážkové daně pro typ daně TDS.
 3. V podokně Akce vyberte možnost **Nový** a vytvořte řádek.
@@ -50,7 +50,7 @@ Chcete-li nastavit složky TDS, postupujte následujícím způsobem:
 
     Například pokud je prahová hodnota pro výjimku 5000, TDS se vypočítá na konkrétním řádku faktury, pokud částka faktury přesáhne 5000 (jinými slovy, pokud je to 5001 nebo více).
 
-    [![Stránka Mezní hodnota](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Stránka Mezní hodnota.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Výše mezní hodnoty výjimky musí být menší nebo rovna mezní hodnotě.
@@ -66,6 +66,6 @@ Chcete-li nastavit složky TDS, postupujte následujícím způsobem:
 
 14. Vyberte **OK** ke zkopírování a vytvoření složek TDS pro další skupinu složek TDS na stránce **Složky srážkové daně**.
 
-    [![Dialogové okno Zkopírovat složky srážkové daně](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Dialogové okno Zkopírovat složky srážkové daně.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Zavřete stránku.

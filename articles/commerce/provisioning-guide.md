@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022415"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352077"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
@@ -90,16 +90,16 @@ Pro nasazení prostředí postupujte takto.
 1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.14**.
 1. V poli **verze platformy** použijte verzi platformy, která je automaticky vybrána pro vybranou verzi aplikace. 
 
-    ![Vyběr verze aplikace a platformy](./media/project1.png)
+    ![Výběr verze aplikace a platformy.](./media/project1.png)
 
 1. Zvolte **Další**.
 1. Výberte **Demo** jako topologii prostředí.
 
-    ![Výběr topologie prostředí 1](./media/project2.png)
+    ![Výběr topologie prostředí 1.](./media/project2.png)
 
 1. Na stránce **Nasadit prostředí** zadejte název prostředí. Ponechte Upřesňující nastavení, jak je.
 
-    ![Stránka Nasazení prostředí](./media/project4.png)
+    ![Stránka Nasazení prostředí.](./media/project4.png)
 
 1. Upravte velikost VM podle potřeby. (Doporučujeme skladovou jednotku VM \[SKU\] **D13 v2**.)
 1. Zkontrolujte ceny a licenční podmínky a pak zaškrtnutím políčka označte, že s nimi souhlasíte.

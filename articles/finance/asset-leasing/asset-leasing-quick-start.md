@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892426"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360729"
 ---
 # <a name="asset-leasing-get-started"></a>Úvod k leasingu majetku
 
@@ -35,7 +37,7 @@ Další informace o účetních standardech naleznete v tématu Standardní doku
 ## <a name="asset-leasing-elements"></a>Prvky leasingu majetku
 Následující diagram ukazuje hlavní prvky obchodního procesu pro leasingy.
 
-[![Prvky leasingu majetku](./media/overview-01.png)](./media/overview-01.png)
+[![Prvky leasingu majetku.](./media/overview-01.png)](./media/overview-01.png)
 
 Pronajatý majetek obsahuje následující hlavní součásti:
 
@@ -54,7 +56,7 @@ Leasing majetku mapuje informace o leasingu, platební kalendáře, data zaháje
 
 Následující diagram ukazuje leasingovou knihu, leasing, vypočítaný platební kalendář, klasifikační testy leasingů a leasingových knih a odpovídající účetní transakce.
 
-[![Leasing, leasingová kniha a platební kalendář](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, leasingová kniha a platební kalendář.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leasingová kniha** – Obsahuje všechny informace o leasingové smlouvě, jako jsou podmínky leasingu, reálná hodnota a leasingové splátky. Zahrnuje také účetní standard, který používáte, typ leasingu a prahové hodnoty, které jsou zohledněny v klasifikačním testu leasingu. Leasingová kniha také obsahuje leasingové transakce, které byly zaúčtovány do hlavní knihy. 
   
@@ -117,7 +119,7 @@ První období začíná obdobím nula, pokud je typ anuity splatná anuita. Jin
 
 Klasifikační testy zahrnují převod vlastnictví, možnost nákupu, dobu trvání leasingu, čistou současnou hodnotu a unikátní majetek. Následující diagram ilustruje klasifikační testy leasingu.
 
-[![Klasifikační testy leasingu](./media/overview-03.png)](./media/overview-03.png)
+[![Klasifikační testy leasingu.](./media/overview-03.png)](./media/overview-03.png)
 
 Každý typ leasingu zpracovává účetnictví odlišně pro různé leasingové transakce. Transakce zahrnují počáteční uznání, úrokové náklady, splatnost leasingové splátky a odpisy leasingu a jsou založeny na účetních standardech, které používáte (IFRS 16 nebo ASC 842). Účty hlavní knihy jsou definovány v profilu účtování leasingu pro každý typ transakce a účetní rámec.
 
@@ -232,7 +234,7 @@ Pomocí následujících kroků vytvoříte nový leasing.
 
    Stránka **Platební kalendář** uvádí budoucí platební kalendáře pro ID leasingu. Vyberte **Potvrdit kalendář**, abyste mohli zaúčtovávat transakce **Počáteční uznání**. 
 
-[![Funkce Počáteční uznání](./media/overview-13.png)](./media/overview-13.png)
+[![Funkce Počáteční uznání.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Vyberte **Počáteční uznání** a vytvořte deník počátečního uznání. 
 
@@ -246,7 +248,7 @@ Pomocí následujících kroků vytvoříte nový leasing.
 
    Stránka **Plán odpisu majetku** zobrazuje odpisové transakce pro vybrané ID leasingu. 
 
-   [![Stránka Transakce používaného majetku](./media/overview-20.png)](./media/overview-20.png)
+   [![Stránka Transakce používaného majetku.](./media/overview-20.png)](./media/overview-20.png)
 
    Stránka **Transakce používaného majetku** uvádí počáteční uznání, akumulované odpisy a zůstatek majetku. 
 

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117212"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353855"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Nakonfigurujte hodnoty dimenze produktu tak, aby se zobrazovaly jako vzorky
 
@@ -39,11 +39,11 @@ Funkce zobrazení rozměrů jako vzorků umožňuje Commerce používat hexadeci
 
 Následující ilustrace ukazuje příklad, kdy se barvy objeví jako vzorky na Commerce PDP.
 
-![Příklad barev zobrazených jako vzorky na stránce s podrobnostmi o produktu](../dev-itpro/media/swatch_pdp.png)
+![Příklad barev zobrazených jako vzorky na stránce s podrobnostmi o produktu.](../dev-itpro/media/swatch_pdp.png)
 
 Následující ilustrace ukazuje příklad, kdy se barvy objeví jako vzorky na stránce se seznamem výsledků vyhledávání Commerce.
 
-![Příklad barev zobrazených jako vzorky na stránce se seznamem výsledků hledání](../dev-itpro/media/swatch_searchresults.PNG)
+![Příklad barev zobrazených jako vzorky na stránce se seznamem výsledků hledání.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>V centrále Commerce povolte zobrazení rozměrů jako vzorků
 
@@ -57,15 +57,15 @@ Konfiguraci lze provést na kterékoli z následujících úrovní:
 
 - **Dimenze** - V centrále Commerce otevřete stránku dimenze hledáním **Barva**, **Velikost** nebo **Styl**. Na každé stránce jsou v mřížce uvedeny hodnoty dimenzí. Můžete spravovat pořadí zobrazení, hexadecimální kód a hodnoty adresy URL obrázku. Následující ilustrace znázorňuje příklad konfigurace na stránce **Barvy**.
 
-    ![Příklad konfigurace dimenzí na stránce Barvy](../dev-itpro/media/swatch_Color.PNG)
+    ![Příklad konfigurace dimenzí na stránce Barvy.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Skupina dimenzí** - V Dynamics 365 Commerce můžete použít vlastnost **RefinerGroup** k vytvoření skupin dimenzí. Pokud jsou definovány skupiny dimenzí, otevřete příslušnou stránku vyhledáním **Skupiny barev**, **Velikostní skupiny** nebo **Skupiny stylů**. Na každé stránce můžete spravovat hexadecimální kód, adresu URL obrázku a hodnoty skupiny rafinování. Následující ilustrace znázorňuje příklad konfigurace na stránce **Skupiny barev**.
 
-    ![Příklad konfigurace dimenzí na stránce Skupiny barev](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Příklad konfigurace dimenzí na stránce Skupiny barev.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Dimenze produktu (během vytváření produktu)** - Když vytváříte nový produkt, můžete použít stránku **Rozměry produktu** pro zadání hodnot dimenzí. U stávajících produktů již mohou být pole **Hexadecimální kód**, **URL** (pro obrázky) a **RefinerGroup** nastavena. Hodnoty v tomto poli však můžete podle potřeby měnit. Následující ilustrace znázorňuje příklad konfigurace na stránce **Dimenze produktů**.
 
-    ![Příklad konfigurace dimenzí na stránce Dimenze produktů](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Příklad konfigurace dimenzí na stránce Dimenze produktů.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Proces správy konfigurací hexadecimálního kódu a adresy URL obrázku se řídí stejným vzorem, který se používá ke správě pořadí zobrazení dimenzí.
@@ -76,7 +76,7 @@ U většiny barevných dimenzí by měla být na stránkách dimenzí v obchodn�
 
 Následující obrázek ukazuje příklad, kde jsou barevné rozměry konfigurovány pomocí hodnot hexadecimálního kódu.
 
-![Příklad konfigurace dimenzí, které využívají hexadecimální kód](../dev-itpro/media/swatch_color_hexcode.png)
+![Příklad konfigurace dimenzí, které využívají hexadecimální kód.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Nakonfigurujte hodnoty dimenzí pomocí adres URL obrázků
 
@@ -86,13 +86,13 @@ Každý obrázek musíte nahrát do nástroje pro tvorbu webů Commerce a publik
 
 Následující ilustrace znázorňuje příklad, kdy je adresa URL používána pro konfiguraci na stránce **Barvy**.
 
-![Příklad konfigurace dimenzí, které využívají adresy URL obrázků](../dev-itpro/media/swatch_color_urls.PNG)
+![Příklad konfigurace dimenzí, které využívají adresy URL obrázků.](../dev-itpro/media/swatch_color_urls.PNG)
 
 K definování adres URL obrázků můžete použít mediální šablonu, stejně jako u obrázků produktů a kategorií. Když nahráváte obrázky do nástroje pro tvorbu webů, konvence názvů souborů a cesty k souborům musí být konzistentní.
 
 Následující ilustrace znázorňuje příklad, kdy je adresa URL používána pro konfiguraci šablony médií.
 
-![Příklad konfigurace šablony média](../dev-itpro/media/swatch_media_template.PNG)
+![Příklad konfigurace šablony média.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Nakonfigurujte hodnoty dimenzí pomocí hexadecimálních kódů a adres URL obrázků
 
@@ -100,7 +100,7 @@ U většiny barevných dimenzí můžete konfigurovat hexadecimální kódy i ad
 
 Následující ilustrace znázorňuje příklad, kdy se použije hexadecimální kód i adresa URL pro konfiguraci na stránce **Barvy**.
 
-![Příklad konfigurace dimenzí, které využívají hexadecimální kód i adresy URL obrázků](../dev-itpro/media/swatch_color_hexandimage.png)
+![Příklad konfigurace dimenzí, které využívají hexadecimální kód i adresy URL obrázků.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Nakonfigurujte skupiny zpřesnění
 
@@ -110,7 +110,7 @@ Pokud jsou například hodnoty barevných dimenzí „modrá“, „modrá kostk
 
 Příklad na následujícím obrázku ukazuje vztah mezi vlastnostmi **Barva** a **RefinerGroup** v centrále Commerce.
 
-![Příklad správy skupiny zpřesnění](../dev-itpro/media/swatch_refiner_group.png)
+![Příklad správy skupiny zpřesnění.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Správa obrázků v konfigurátoru webů Commerce
 
@@ -118,7 +118,7 @@ Pokud se pro libovolné hodnoty dimenze používají adresy URL obrázků, je nu
 
 Následující obrázek ukazuje příklad, kde dialogové okno **Nahrát soubory** se používá k nahrávání obrázků do knihovny médií Tvůrce webů. Zdůrazňuje kategorie **Velikost**, **Barva** a **Styl**, které jsou k dispozici pro výběr.
 
-![Příklad kategorií obrazových souborů během nahrávání do knihovny médií tvůrce webů](../dev-itpro/media/swatch_sitebuilder.png)
+![Příklad kategorií obrazových souborů během nahrávání do knihovny médií tvůrce webů.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Povolit zobrazení vzorků na stránkách webu elektronického obchodování
 

@@ -2,7 +2,7 @@
 title: Modul záhlaví
 description: Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799897"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479249"
 ---
 # <a name="header-module"></a>Modul záhlaví
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 
@@ -33,7 +34,7 @@ Modul záhlaví obsahuje logo webu, odkazy na navigační hierarchii, odkazy na 
 
 Následující obrázek znázorňuje příklad modulu záhlaví na domovské stránce.
 
-![Příklad modulu záhlaví](./media/ecommerce-header.png)
+![Příklad modulu záhlaví.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Vlastnosti modulu záhlaví
 
@@ -58,9 +59,16 @@ Následující moduly lze použít v modulu záhlaví:
 - **Výběr obchodu** - Modul pro výběr obchodu lze zahrnout do slotu pro výběr obchodu v modulu záhlaví. Umožňuje uživatelům procházet a vyhledávat obchody v okolí. Uživatelé mohou také určit preferovaný obchod. Tento obchod se poté zobrazí v záhlaví. Když je modul pro výběr obchodu zahrnut v modulu záhlaví, jeho vlastnost **Režim** musí být nastavena na **Najít obchody**. Další informace naleznete v tématu [Modul pro výběr obchodu](store-selector.md).
 
 > [!NOTE]
-> - Podpora pro použití modulu ikony košíku v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.11.
-> - Podpora pro použití modulu výběru webu v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.14.
-> - Podpora pro použití modulu výběru obchodu v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.15.
+> - Podpora pro použití modulu ikony košíku v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.11.
+> - Podpora pro použití modulu voliče webu v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.14.
+> - Podpora pro použití modulu voliče obchodu v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.15.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Modul záhlaví v motivu Adventure Works
+
+V motivu Adventure Works podporuje modul záhlaví vlastnost **Mobilní logo**. Tato vlastnost umožňuje zadat logo pro mobilní zobrazení. Vlastnost **Mobilní logo** je k dispozici jako rozšíření definice modulu.
+
+> [!IMPORTANT]
+> Motiv Adventure Works je k dispozici od Dynamics 365 Commerce verze 10.0.20.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Vytvoření fragmentu záhlaví stránky
 

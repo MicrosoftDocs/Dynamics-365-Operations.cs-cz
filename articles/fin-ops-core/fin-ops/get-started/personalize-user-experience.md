@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944526"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348672"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -85,7 +85,7 @@ Nejtypičtější a nejdůležitější změny, které lze na stránce provést,
 
 Kromě toho jsou k dispozici základní typy přizpůsobení kliknutím pravým tlačítkem myši a následným výběrem **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Použijete-li tuto metodu přizpůsobení, zobrazí se *okno Vlastnosti* prvku.
 
-![Přizpůsobení vlastností prvku](./media/cli-element-property-window.png)
+![Přizpůsobení vlastností prvku.](./media/cli-element-property-window.png)
 
 Můžete použít okno vlastností pro individuální nastavení prvku následujícími způsoby:
 
@@ -107,7 +107,7 @@ Pokud chcete provést více změn stránky nebo provést změny, které nejsou k
 - Vyberte **Přizpůsobit tuto stránku** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí libovolné stránky.
 - Na navigačním panelu vyberte tlačítko **nastavení** (symbol ozubeného kola) a pak vyberte volbu **přizpůsobit**.
 
-[![Panel nástrojů individuálních nastavení](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Panel nástrojů individuálních nastavení.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigace na stránce
 
@@ -147,7 +147,7 @@ U některých stránek, které obsahují seznamy, je funkce individuálního nas
 > [!NOTE]
 > Pokud je zapnutá funkce [Uložená zobrazení](saved-views.md), bude obsah, který zadáte do pracovního prostoru, přímo propojen se zobrazením. Dotaz zobrazení se používá k načtení dat v pracovním prostoru a odpovídající dlaždice nebo odkaz v pracovním prostoru otevře stránku s tímto zobrazením, takže se na něj uplatní dotazy a přizpůsobení zobrazení. Pokud je zobrazení aktualizováno, odpovídající prvky pracovního prostoru budou upraveny na novou definici zobrazení.
 
-[![Přidat na pracovní prostor](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Přidat na pracovní prostor.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Chcete-li přidat seznam do pracovního prostoru, nejprve seřaďte nebo filtrujte seznam na stránce tak, aby zobrazoval informace, jak chcete, aby se zobrazovaly v pracovním prostoru. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Seznam**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete vybrat sloupce, které se mají zobrazit na seznamu v pracovním prostoru. Můžete také určit popisek použitý pro seznam v pracovním prostoru.
 - Chcete-li přidat dlaždici do pracovního prostoru, nejprve vyfiltrujte seznam na stránce, aby ukázal data, která chcete sumarizovat, nebo k nim mít rychlý přístup. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Dlaždice**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který by měl být použit pro dlaždici v pracovním prostoru. Můžete také určit, zda má dlaždice ukazovat počet. Po přidání dlaždice do pracovního prostoru ji můžete vybrat k otevření aktuální stránky z pracovního prostoru. Poté můžete zobrazit filtrovaný seznam, který je spojený s dlaždicí.

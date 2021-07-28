@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261739"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354802"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
 
@@ -41,7 +41,7 @@ Schopnosti pracovního zatížení jsou vydávány nepřetržitě prostřednictv
 
 Jednotky škálování rozšiřují vaše centrální prostředí centra Supply Chain Management přidáním vyhrazené kapacity zpracování. Jednotky škálování mohou běžet v cloudu. Alternativně mohou běžet na hraně, onsite ve vašem místním zařízení.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 s jednotkami škálování":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 s jednotkami škálování.":::
 
 Jednotky škálování poskytují odolnost, spolehlivost a škálování pro přiřazené úlohy. Jednotky škálování hrany lze dočasně odpojit od prostředí cloudového centra a pracovníci pokračují v práci v přiřazených úlohách na hraně.
 
@@ -157,7 +157,7 @@ Jednotky škálování jsou nabízeny ve více skladových jednotkách (SKU) a c
 
 Základní SKU se označuje jako *Základní* a výkonnější SKU se označuje jako *Standard*. Každá SKU je předem načtena s konkrétním počtem měsíčních transakcí. Můžete však zvýšit měsíční rozpočet transakcí přidáním nadbytečných doplňků pro každou SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Doplňky cloudové jednotky škálování":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Doplňky cloudové jednotky škálování.":::
 
 > [!TIP]
 > Chcete-li určit velikost, která nejlépe vyhovuje vašim potřebám, spolupracujte se svým partnerem a společností Microsoft, abyste porozuměli měsíční velikosti transakce, kterou požadujete.
@@ -181,11 +181,11 @@ Pokud klient, kterého hledáte, není v tomto seznamu, přejděte na [LCS](http
 
 U každého klienta se v seznamu zobrazuje stav zprovoznění.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Seznam klientů na kartě Dynamics 365":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Seznam klientů na kartě Dynamics 365.":::
 
 Vyberte **Začněte kliknutím sem** k vyžádání zprovoznění pro klienta LCS. Musíte přijmout podmínky. Musíte také zadat pracovní e-mailovou adresu, na kterou může společnost Microsoft odesílat komunikaci související s procesem zprovoznění.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Předložení registrace klienta":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Předložení registrace klienta.":::
 
 Microsoft zkontroluje váš požadavek a bude vás informovat o dalších krocích zasláním e-mailu na adresu, kterou jste uvedli v registračním formuláři. Microsoft bude s vámi úzce spolupracovat na aktivaci jednotek škálování v hybridní topologii pro váš obchodní scénář.
 
@@ -195,13 +195,13 @@ Po dokončení zprovoznění můžete port použít ke konfiguraci jednotek mě�
 
 Přejděte na [portál správce jednotky škálování](https://aka.ms/SCMSUM) a přihlaste se pomocí účtu klienta. Na stránce **Konfigurovat jednotky škálování** můžete přidat prostředí centra, pokud ještě není uvedeno. Poté můžete vybrat centrum, které chcete konfigurovat pomocí jednotek škálování a úloh.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Zkušenosti se správou jednotky škálování a úlohy":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Zkušenosti se správou jednotky škálování a úlohy.":::
 
 Chcete-li přidat jednu nebo více jednotek škálování, které jsou k dispozici ve vašem předplatném, vyberte **Přidat jednotky škálování**.
 
 Na kartě **Definované úlohy** pomocí tlačítka **Vytvořit úlohu** přidejte správu skladu do některé z jednotek škálování. U každé úlohy musíte určit kontext procesů, které bude úloha vlastnit. Pro úlohy správy skladu je kontextem konkrétní sklad na konkrétním místě a právnické osobě.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Vytvoření úlohy":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Vytvoření úlohy.":::
 
 > [!TIP]
 > Postupem času budou do prostředí správce jednotky škálování přidávána přírůstková vylepšení, která usnadní operace správy životního cyklu. Specifické funkce pro aktuální verzi jsou zdokumentovány v příručce pro zprovoznění, která je k dispozici zákazníkům, kteří jsou v procesu zprovoznění distribuované hybridní topologie pro Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

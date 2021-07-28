@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358259"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Nastavení údajů skupiny TDS, PAN a TAN pro dodavatele a zákazníky
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak pro dodavatele a zákazníky nastavit informace o sk
 
 1. Přejděte na **Závazky \> Dodavatelé \> Všichni dodavatelé** nebo **Pohledávky \> Zákazníci \> Všichni zákazníci**.
 
-    [![Stránka Všichni dodavatelé](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Stránka Všichni dodavatelé.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. V podokně akcí vyberte **Nový** pro vytvoření dodavatele nebo zákazníka a zadejte požadované údaje. Případně vyberte existujícího dodavatele nebo zákazníka.
 3. Na pevné záložce **Faktura a dodání** v části **Srážková daň** nastavte možnost **Vypočítat srážkovou daň** na **Ano** k výpočtu srážkové daně, TDS nebo daně vybrané u zdroje (TCS) pro dodavatele nebo zákazníka.
@@ -60,7 +60,7 @@ Toto téma vysvětluje, jak pro dodavatele a zákazníky nastavit informace o sk
     - Obecní úřad
     - Další
 
-    [![Pevná záložka Daňové údaje](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Pevná záložka Daňové údaje.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. V podokně akcí na kartě **Dodavatel** ve skupině **Registrovat** výběrem možnosti **ID registrace** otevřete stránku **Spravovat adresy**.
 10. Na stránce **Spravovat adresy** na pevné záložce **Daňové údaje** vyberte možnosti **Přidat** nebo **Upravit** k otevření stránky **Spravovat daňové údaje**, kde můžete udržovat záznam o registraci k dani.

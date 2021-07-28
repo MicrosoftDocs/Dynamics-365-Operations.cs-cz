@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306382"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358586"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -33,15 +33,15 @@ Pokud se obchodní ekosystém skládá z aplikace Dynamics 365, jako je napřík
 
 Zde je datový model produktu z aplikace Sales.
 
-![Datový model pro produkty v CE](media/dual-write-product-4.jpg)
+![Datový model pro produkty v CE.](media/dual-write-product-4.jpg)
 
 Zde je datový model produktu z aplikací Finance and Operations.
 
-![Datový model pro produkty ve Finance and Operations](media/dual-write-products-5.jpg)
+![Datový model pro produkty ve Finance and Operations.](media/dual-write-products-5.jpg)
 
 Tyto dva modely datových modelů produktů byly integrovány do Dataverse, jak je uvedeno níže.
 
-![Datový model pro produkty v aplikacích Dynamics 365](media/dual-write-products-6.jpg)
+![Datový model pro produkty v aplikacích Dynamics 365.](media/dual-write-products-6.jpg)
 
 Mapování tabulek dvojího zápisu pro produkty bylo navrženo tak, aby data proudila pouze jednosměrně, a to v téměř reálném čase z aplikací Finance and Operations do Dataverse. Byla však vytvořena otevřená infrastruktura produktů, aby byla v případě potřeby obousměrná. I když ji můžete přizpůsobit, je to na vaše vlastní riziko, protože společnost Microsoft tento přístup nedoporučuje.
 
@@ -86,7 +86,7 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 - **Základní produkty** se používají jako obecné výrobky, které obsahují definici a pravidla určující chování obchodních procesů. Na základě těchto definic mohou být vygenerovány jedinečné produkty, které jsou známy jako varianty produktu. Například tričko je základní produkt a může mít barvu a velikost jako dimenze. Varianty lze uvolnit s různými kombinacemi těchto dimenzí, jako je například malé modré triko nebo středně velké zelené triko. V rámci integrace je v tabulce produktů vytvořen jeden řádek na variantu. Tento řádek obsahuje specifické informace o variantách, jako jsou například různé dimenze. Obecné informace o produktu jsou uloženy v tabulce **msdyn\_sharedproductdetails**. (Tyto obecné informace se uchovávají v základním produktu.) Informace základního produktu se synchronizují s Dataverse, jakmile je vytvořen uvolněný hlavní produkt (před uvolněním variant).
 - **Jedinečné produkty** odkazují na všechny produkty podtypu produktu a všechny varianty produktu. 
 
-![Datový model pro produkty](media/dual-write-product.png)
+![Datový model pro produkty.](media/dual-write-product.png)
 
 V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt. 
 
@@ -112,7 +112,7 @@ Synchronizace produktů se děje z aplikace Finance and Operations do Dataverse.
 
 Dimenze produktu jsou vlastnosti, které identifikují variantu produktu. K definování variant produktu jsou mapovány do Dataverse také čtyři dimenze produktu (barva, velikost, styl a konfigurace). Následující ilustrace znázorňuje datový model pro dimenzi produktu Barva. Stejný model se použije pro Velikosti, Styly a Konfigurace. 
 
-![Datový model pro dimenze produktu](media/dual-write-product-two.png)
+![Datový model pro dimenze produktu.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházej�
 
 Měrné jednotky a odpovídající převod jsou k dispozici v Dataverse podle datového modelu zobrazeného v diagramu.
 
-![Datový model pro měrnou jednotku](media/dual-write-product-three.png)
+![Datový model pro měrnou jednotku.](media/dual-write-product-three.png)
 
 Pojem měrné jednotky je integrován mezi aplikacemi Finance and Operations a jinými aplikacemi Dynamics 365. Pro každou třídu jednotek v Finance and Operations se v aplikaci Dynamics 365 vytvoří skupina jednotek, která obsahuje jednotky náležející ke třídě jednotek. Výchozí základní jednotka je také vytvořena pro každou skupinu jednotek. 
 

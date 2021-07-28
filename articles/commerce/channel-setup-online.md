@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936937"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351169"
 ---
 # <a name="set-up-an-online-channel"></a>Nastavení online kanálu
 
@@ -55,11 +55,11 @@ Chcete-li vytvořit a konfigurovat nový online kanál, postupujte dle těchto k
 
 V následujícím obrázku je znázorněno vytvoření nového online kanálu.
 
-![Nvý online kanál](media/channel-setup-online-1.png)
+![Nvý online kanál.](media/channel-setup-online-1.png)
 
 Následující obrázek znázorňuje příklad online kanálu.
 
-![Příklad online kanálu](media/channel-setup-online-2.png)
+![Příklad online kanálu.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Nastavit jazyky
 
@@ -75,7 +75,7 @@ Další úkoly požadované pro nastavení online kanálu zahrnují nastavení z
 
 Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek**, **Způsobů platby** a **Přiřazení skupiny plnění** na kartě **Nastavení**.
 
-![Další akce nastavení online kanálu](media/channel-setup-online-3.png)
+![Další akce nastavení online kanálu.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
@@ -90,7 +90,7 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto ka
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby](media/channel-setup-retail-5.png)
+![Příklad způsobů platby.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
@@ -104,7 +104,7 @@ Chcete-li změnit nebo přidat způsob dodání, postupujte podle následující
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
-![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
+![Nastavit způsoby dodání.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Nastavení přiřazení skupiny plnění
 
@@ -118,9 +118,9 @@ Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujíc�
 
 Následující obrázek znázorňuje příklad nastavení přiřazení skupiny plnění.
 
-![Nastavení Přiřazení skupiny plnění](media/channel-setup-retail-9.png)
+![Nastavení Přiřazení skupiny plnění.](media/channel-setup-retail-9.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled kanálů](channels-overview.md)
 

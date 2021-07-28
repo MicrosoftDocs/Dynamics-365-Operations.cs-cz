@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802038"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349545"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
@@ -78,7 +78,7 @@ Bez ohledu na to, zda samotná hardwarová stanice na úrovni kanálu obsahuje i
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS s připojenými periferními zařízeními
 
-[![Tradiční, stálá prodejní místa](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradiční, stálá prodejní místa.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Pokud chcete připojit MPOS k perifernímu zařízení POS v podobě tradičního, stálého řešení POS, přejděte nejprve do samotného rejstříku a přiřaďte k němu hardwarový profil. Pokladny POS naleznete v nabídce **Retail and Commerce** &gt; **Instalace kanálu** &gt; **Instalace POS** &gt; **Pokladny**. 
 
@@ -97,7 +97,7 @@ Nakonec v aplikaci MPOS pomocí operace **Vybrat hardwarovou stanici** vyberte h
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS nebo Cloud POS se samostatnou hardwarovou stanicí
 
-[![Sdílená periferní zařízení](./media/shared-300x254.png)](./media/shared.png)
+[![Sdílená periferní zařízení.](./media/shared-300x254.png)](./media/shared.png)
 
 V tomto scénáři je samostatná hardwarová stanice sdílena mezi klienty MPOS a Cloud POS. Tento scénář vyžaduje vytvoření profilu hardwarové stanice a zadání balíčku ke stažení, portu a hardwarový profil, který používá hardwarová stanice. Profil hardwarové stanice naleznete v části **Retail and Commerce** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. 
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019439"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350395"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Nastavení vývojového prostředí elektronického obchodování pro ladění proti virtuálnímu počítači maloobchodního serveru úrovně 1
 
@@ -38,13 +38,13 @@ Když ladíte proti prostředí úrovně 1, protože web nyní volá jiný maloo
 
 Následující obrázek ukazuje příklad chyby, ke které může dojít při výběru varianty na stránce s podrobnostmi o produktu.
 
-![Chyba při výběru varianty na stránce s podrobnostmi o produktu](media/unhandled-rejection-error.jpg)
+![Chyba při výběru varianty na stránce s podrobnostmi o produktu.](media/unhandled-rejection-error.jpg)
 
 Následující obrázek ukazuje příklad podobné chyby v ladicích nástrojích prohlížeče (Vývojářské nástroje F12). Chybová zpráva zmiňuje porušení směrnice o zásadách zabezpečení obsahu.
 
-![Chyba nástrojů ladicího programu](media/debugger-tools-error.JPG)
+![Chyba nástrojů ladicího programu.](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>Rozlišení
+## <a name="resolution"></a>Řešení
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>Deaktivace zásad zabezpečení obsahu pro web v nástroji pro tvorbu webů Commerce
 

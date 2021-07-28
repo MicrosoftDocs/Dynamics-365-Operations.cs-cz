@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831979"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348361"
 ---
 # <a name="visibility-into-material-exceptions"></a>Přehled výjimek materiálu
 
@@ -37,7 +37,7 @@ Nevydaný řádek kusovníku nebo receptury vyžaduje pozornost, pokud datum sur
 
 Na následujícím obrázku představuje modrý panel výrobní úlohu, která je naplánována na zdroji. Počátek úlohy je naplánován na 1. května 2017. Toto datum je datem surovin. Jinými slovy, materiály, které jsou přiřazeny k úloze na řádcích kusovníku a receptury musí být připraveny k tomuto datu. Jiné datum na obrázku, 6. května 2017, představuje datum pracovního prostoru. V tomto příkladu je datum materiálu dřívější než datum pracovního prostoru. Z toho vyplývá, že datum předpokládaného začátku spotřeby materiálu již uplynulo, a řádky kusovníku a řádky receptury splňují kritéria pro vyžadování pozornosti.
 
-![Příklad výrobní úlohy, kde je datum materiálu dřívější než datum pracovního prostoru](./media/improved-visibility.png)
+![Příklad výrobní úlohy, kde je datum materiálu dřívější než datum pracovního prostoru.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Neuvolněné řádky materiálu vyžadující pozornost
 

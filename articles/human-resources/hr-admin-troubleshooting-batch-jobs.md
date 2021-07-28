@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a5aeaeb7311d87a154882b7058b6da430900bd56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 13482ab7b9ee6303138a7a5e82dce78138e0b8ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053460"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357306"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optimalizace výkonu plánováním dávkových úloh po pracovní době
 
@@ -51,11 +51,11 @@ Následující dávkové úlohy by měly být spouštěny v noci nebo po pracov
 
 3. Vyberte možnost **Spustit na pozadí** a vyberte **Opakování**.
 
-   ![Nastavení opakování](media/talent-batch-history-cleanup-recurrence.png)
+   ![Nastavení opakování.](media/talent-batch-history-cleanup-recurrence.png)
 
 4. V části **Definovat opakování** nastavte **Počáteční datum** a **Počáteční čas** mimo pracovní dobu nebo víkend. Vyberte **Bez koncového data**. 
 
-   ![Definování počátečního data a času opakování](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definování počátečního data a času opakování.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Vyberte **OK**.
 

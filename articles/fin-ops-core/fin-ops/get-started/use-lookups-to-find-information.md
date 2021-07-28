@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adb8e1a0fef93fdd66a4cbac82689ff7a19aca4a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2672520ddf21e565edee5024d6886cabb18d6e94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754769"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348621"
 ---
 # <a name="find-information-by-using-lookups"></a>Nalezení informací pomocí vyhledávání
 
@@ -44,15 +44,15 @@ Jak příklad si uveďme vyhledávací pole s názvem **Město**.
 
 Pokud je výběr nastaven na pole **Město**, můžete začít hledat požadované město zadáním několika písmen, například „col“. Jakmile přestanete psát, vyhledávání se automaticky otevře a zobrazí města začínající na „col“.
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 V tomto okamžiku je kurzor stále ve vyhledávacím poli. Pokud budete pokračovat v psaní a zadáte hodnotu „colum“, obsahu vyhledávání se tomuto zadání automaticky přizpůsobí.
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
 
 I když je stále vybrán vyhledávací ovládací prvek, můžete pomocí kláves **Šipka nahoru** a **Šipka dolů** vybírat požadované řádky. Pokud stisknete klávesu **Enter**, zvýrazněný řádek se ve vyhledávání vybere a hodnota ovládacího prvku se aktualizuje.
 
-![changingSelectionLookup](./media/changingselectionlookup.png)
+![changingSelectionLookup.](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Zadání dalších údajů kromě ID
 
@@ -62,25 +62,25 @@ Příkladem je pole **Účet odběratele** při vytváření prodejní objednáv
 
 Pokud uživatel začne do vyhledávacího ovládacího prvku zadávat **ID účtu**, rozevírací nabídka se automaticky otevře (podle popisu v předchozí části) a vyhledávání se zobrazí jako níže.
 
-[![Kontextové vyhledávání při zadání ID účtu odběratele](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontextové vyhledávání při zadání ID účtu odběratele.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Uživatel však může zadat také začátek **názvu účtu**. Pokud to udělá, zobrazí se následující vyhledávání. Všimněte si, že sloupec **Název** se ve vyhledávání přesunul na první místo a že celé vyhledávání je seřazeno a filtrováno podle sloupce **Název**.
 
-[![Kontextové vyhledávání při zadání jména odběratele](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontextové vyhledávání při zadání jména odběratele.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Rozšířené filtrování a řazení pomocí záhlaví sloupců mřížky
 
 Vylepšení vyhledávání popsaná v předchozích dvou částech značně zlepšují možnosti procházení řádků při vyhledávání typu „začíná na“, které se týká polí **ID** nebo **Název**. Existují však situace, ve kterých je k nalezení správného řádku nutné použít pokročilejší filtrování nebo řazení. V těchto případech musí uživatel použít možnosti filtrování a řazení v záhlavích sloupců mřížky vyhledávání. Jako příklad si uvedeme zaměstnance, který zadává řádek prodejní objednávky a potřebuje jako produkt najít správnou položku typu „cable“ (kabel). Pokud do pole **Číslo položky** zadá „cable“, správnou položku nenajde, protože žádné názvy produktů začínající na „cable“ neexistují.
 
-![emptyitemlookup](./media/emptyitemlookup.png)
+![emptyitemlookup.](./media/emptyitemlookup.png)
 
 Místo toho je třeba hodnotu ovládacího prvku vyhledávání vymazat, otevřít rozevírací nabídku vyhledávání a filtrovat ji pomocí záhlaví sloupce mřížky, jak je uvedeno níže. Možnosti filtrování a řazení lze zobrazit jednoduchým kliknutím (nebo klepnutím) na požadované záhlaví sloupce. Na klávesnici stačí stisknout podruhé zkratku **Alt**+**Šipka** **dolů** a přesunout tak výběr do rozevírací nabídky. Potom lze pomocí tabulátoru vybrat správný sloupec a stisknutím klávesové zkratky **Ctrl**+**G** otevřít rozevírací nabídku záhlaví sloupce mřížky.
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 Po použití filtru (viz následující obrázek) může uživatel najít a vybrat řádek jako obvykle.
 
-![filtereditemlookup](./media/filtereditemlookup.png)
+![filtereditemlookup.](./media/filtereditemlookup.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

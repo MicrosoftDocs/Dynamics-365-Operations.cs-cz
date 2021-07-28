@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358826"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Výpočet DPH na řádcích hlavního deníku
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ V opačném případě je směr DPH pohledávka DPH.
 
 V následujícím diagramu je pravidlo znázorněno graficky.
 
-![Možnosti daňových směrů pro účty projektu](media/Sales-Tax-Direction-Vendor.jpg)
+![Možnosti daňových směrů pro účty projektu.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Typ účtu je Dodavatel
 
@@ -73,7 +73,7 @@ V opačném případě je směr DPH pohledávka DPH.
 
 V následujícím diagramu je pravidlo znázorněno graficky.
 
-![Možnosti daňových směrů pro účty dodavatele](media/Sales-Tax-Direction-Vendor.jpg)
+![Možnosti daňových směrů pro účty dodavatele.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Typ účtu je Zákazník.
 
@@ -89,7 +89,7 @@ V opačném případě je směr DPH Splatná DPH.
 
 V následujícím diagramu je pravidlo znázorněno graficky.
 
-![Možnosti daňových směrů pro účty zákazníka](media/Sales-Tax-Direction-Customer.jpg)
+![Možnosti daňových směrů pro účty zákazníka.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Typ účtu je Hlavní kniha
 
@@ -103,7 +103,7 @@ V opačném případě, je-li částka v deníku debetní (kladná), směr DPH j
 
 V následujícím diagramu je pravidlo znázorněno graficky.
 
-![Možnosti daňových směrů pro účty hlavní knihy](media/Sales-Tax-Direction-Ledger.jpg)
+![Možnosti daňových směrů pro účty hlavní knihy.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Přepis směru DPH
 
@@ -115,7 +115,7 @@ Přejděte na **Hlavní kniha \> Účtová osnova \> Účty \> Hlavní účty** 
 
 Tento oddíl popisuje, jak se vypočítává znak částky DPH.
 
-![Stránka transakce DPH](media/sales-tax-amount-sign.jpg)
+![Stránka transakce DPH.](media/sales-tax-amount-sign.jpg)
 
 V následující tabulce je uvedeno obecné pravidlo pro určení směru DPH a znaménka částek DPH v dočasné tabulce DPH.
 

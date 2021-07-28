@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023103"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358427"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Nastavení platebních poplatků pro platby autoritě TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak nastavit poplatky za platby, které se účtují za 
 
 1. Přejděte do nabídky **Závazky \> Nastavení platby \> Platební poplatek**.
 
-    [![Stránka Platební poplatek](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Stránka Platební poplatek.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Vybráním možnosti **Nové** vytvořte platební poplatek a poté zadejte požadované informace.
 3. V poli **Typ poplatku** vyberte typ platebního poplatku.
@@ -46,7 +46,7 @@ Toto téma vysvětluje, jak nastavit poplatky za platby, které se účtují za 
 5. Zadejte další požadované údaje.
 6. V podokně Akce vyberte **Nastavení platebního poplatku** k otevření stránky **Nastavení platebního poplatku**, kde můžete nastavit poplatky za platby pro různé kombinace bank, způsobů plateb, platebních podmínek, měn a časových intervalů.
 
-    [![Stránka Nastavení platebních poplatků](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Stránka Nastavení platebních poplatků.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Na kartě **Přehled** v poli **Seskupení** uveďte, u kterých bank nastavujete poplatek za platbu:
 
@@ -64,7 +64,7 @@ Toto téma vysvětluje, jak nastavit poplatky za platby, které se účtují za 
 15. V poli **Měna poplatku** zadejte kód měny pro poplatek.
 16. Vyberte kartu **Všeobecné** k zobrazení nebo úpravě údajů vybraného bankovního účtu.
 
-    [![Karta Obecné](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Karta Obecné.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. Do pole **Minimum** zadejte minimální částku transakce, která aktivuje poplatek.
 17. Do pole **Maximum** zadejte maximální částku transakce, která aktivuje poplatek.
@@ -74,7 +74,7 @@ Toto téma vysvětluje, jak nastavit poplatky za platby, které se účtují za 
 21. Do pole **Skupina DPH položky** vyberte skupinu DPH položky, která se má použít k výpočtu DPH položky pro částku poplatku.
 22. Vyberte kartu **Interval**. 
 
-    [![Karta Interval](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Karta Interval.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. Do pole **Dny** zadejte počet dní mezi datem zaúčtování (datem slevy) platby a datem splatnosti vlastní směnky.
 24. V poli **Procento/částka** vyberte, zda je specifikace procentem nebo stanovenou částkou.

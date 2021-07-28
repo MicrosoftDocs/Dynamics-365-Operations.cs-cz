@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794252"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352391"
 ---
 # <a name="manage-ratings-and-reviews"></a>Správa hodnocení a recenzí
 
@@ -45,7 +45,7 @@ Pokud si chcete přečíst recenzi v konfigurátoru webu v Commerce, postupujte 
 
 Další filtry umožňují omezit recenze podle období, hodnocení, kanálu nebo stavu sledování (přijaté, zodpovězené nebo nahlášené).
 
-![Domovská stránka moderování](media/rnr-moderation-home.png) 
+![Domovská stránka moderování.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Odpověď na recenzi 
 
@@ -59,7 +59,7 @@ Pokud chcete odpovědět na recenzi v konfigurátoru webu v Commerce, postupujte
 1. Zadejte text odpovědi a název, který má být zobrazen pro respondenta. Výchozí název respondenta je **Moderátor**.
 1. Po dokončení zvolte **Odeslat odpověď**.
 
-![Odpověď na recenzi](media/rnr-moderation-response.png) 
+![Odpověď na recenzi.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Odstranění recenze 
 
@@ -82,7 +82,7 @@ Chcete-li vyhledat a odstranit data o odběrateli v konfigurátoru webu v Commer
 1. Pokud má zákazník nějakou aktivitu týkající se recenzí (např. podání recenze, hlasování o užitečnosti recenzí jiného zákazníka nebo komentáře o recenzi jiného zákazníka), zobrazí se výsledky. Pro každou položku existuje tlačítko **odstranit.**
 1. Pro každou položku, kterou je třeba odstranit, vyberte možnost **Odstranit**. Po zobrazení výzvy k potvrzení vyberte možnost **Ano.** 
     
-![Odstranění dat zákazníků](media/rnr-moderation-delete-reviews.png) 
+![Odstranění dat zákazníků.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Může trvat až sedm dní, než budou data zcela odstraněna ze systému. Moderátoři by měli informovat zákazníky o této prodlevě.
@@ -106,21 +106,21 @@ Chcete-li si zobrazit trendy hodnocení a recenzí v konfigurátoru webu v Comme
 1. Přejděte na **Domů \> Recenze \> Vykazování**.
 1. Vyberte **Šablonu PowerBI** ke stažení šablony.
 
-    ![Stáhnout šablonu Power BI](media/rnr-moderation-reports.png) 
+    ![Stáhnout šablonu Power BI.](media/rnr-moderation-reports.png) 
 
 1. Otevře staženou šablonu pomocí aplikace Power BI. Zavřete dialogové okno **Přístup k webovému obsahu**, které se zobrazí, a poté zavřete zobrazenou chybovou zprávu "Obnovit".
 1. Přejděte na **Domovskou stránku**, vberte **Upravit dotazy** a pak vyberte **Nastavení zdroje dat**.
 1. V dialogovém okně **Nastavení zdroje dat** vyberte možnost **Změnit zdroj**.
 1. V poli **Adresa URL** zadejte cestu k datům recenzí, která jste stáhli v předchozím postupu (například **c:\\reviews\\ReviewsData.csv**).
 
-    ![Pole Adresa URL v dialogovém okně hodnot oddělených čárkou](media/rnr-powerbi-datasource-settings.png) 
+    ![Pole Adresa URL v dialogovém okně hodnot oddělených čárkou.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Vyberte možnost **OK** a pak zvolte **Použít změny**. Použijete-li změny ve zdroji dat, bude provedena za jednu až dvě minuty.
 1. Chcete-li zobrazit hodnocení a recenze trendů, vyberte volbu **List trendů**.
 
-    ![Trendy hodnocení a recenzí](media/rnr-powerbi-dashboard-template.png) 
+    ![Trendy hodnocení a recenzí.](media/rnr-powerbi-dashboard-template.png) 
     
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
 

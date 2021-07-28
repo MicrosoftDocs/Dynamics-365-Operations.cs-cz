@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941022"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350952"
 ---
 # <a name="company-concept-in-dataverse"></a>Koncept společnosti v Dataverse
 
@@ -43,7 +43,7 @@ Vzhledem k tomu, že organizační jednotka a společnost nejsou rovnocennými k
 
 Následující obrázek znázorňuje příklad nastavení dat v Dataverse.
 
-![Nastavení dat v Dataverse](media/dual-write-company-1.png)
+![Nastavení dat v Dataverse.](media/dual-write-company-1.png)
 
 Z důvodu této konfigurace bude každý řádek, který se týká společnosti USMF, vlastněn týmem, který je propojen s organizační jednotkou USMF v aplikaci Dataverse. Každý uživatel, který má přístup k této organizační jednotce prostřednictvím role zabezpečení nastavené na zobrazení na úrovni organizační jednotky, je tedy nyní schopen tyto řádky zobrazit. Následující příklad ukazuje, jak lze týmy použít k zajištění správného přístupu k těmto řádkům.
 
@@ -52,21 +52,21 @@ Z důvodu této konfigurace bude každý řádek, který se týká společnosti 
 + Tým USMF Sales je propojen s dříve uvedenou organizační jednotkou USMF.
 + Proto mohou členové týmu USMF Sales zobrazit jakýkoli obchodní vztah, který je vlastněn uživatelem USMF DW, který by pocházel z tabulky společnosti USMF v aplikaci Finance and Operations.
 
-![Jak lze použít týmy](media/dual-write-company-2.png)
+![Jak lze použít týmy.](media/dual-write-company-2.png)
 
 Jak ukazuje předchozí ilustrace, toto mapování 1:1 mezi organizační jednotkou, společností a týmem je pouze výchozím bodem. V tomto příkladu je nová obchodní jednotka Europe vytvořena ručně v aplikaci Dataverse jako nadřazená pro DEMF i ESMF. Tato nová kořenová organizační jednotka nesouvisí s dvojím zápisem. Lze ji však použít k tomu, aby členové týmu EUR Sales měli přístup k datům obchodních vztahů v DEMF i v ESMF nastavením viditelnosti dat na **Nadřazená/podřízená OJ** v přidružené roli zabezpečení.
 
 Závěrečným tématem, které je třeba projednat, je jak dvojí zápis určuje, kterému týmu vlastníků se mají přiřadit řádky. Toto chování je řízeno sloupcem **Výchozí vlastnící tým** na řádku cdm\_Company. Je-li pro řádek cdm\_Company povolen duální zápis, modul plug-in automaticky vytvoří přidruženou organizační jednotku a tým vlastníků (pokud již neexistuje) a nastaví sloupec **Výchozí vlastnící tým**. Správce může tento sloupec změnit na jinou hodnotu. Správce však nemůže vymazat sloupec, pokud je tabulka povolena pro duální zápis.
 
 > [!div class="mx-imgBorder"]
-![Sloupec výchozího vlastnícího týmu](media/dual-write-default-owning-team.jpg)
+![Sloupec výchozího vlastnícího týmu.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Prokládání a zavádění společnosti
 
 Integrace Dataverse přináší paritu společnosti použitím identifikátoru společnosti k prokládání dat. Jak ukazuje následující ilustrace, všechny tabulky specifické pro společnost jsou rozšířeny tak, aby měly vztah N:1 s tabulkou cdm\_Company.
 
 > [!div class="mx-imgBorder"]
-![Vztah N:1 mezi tabulkou specifickou pro společnost a entitou cdm_Company](media/dual-write-bootstrapping.png)
+![Vztah N:1 mezi tabulkou specifickou pro společnost a entitou cdm_Company.](media/dual-write-bootstrapping.png)
 
 + U řádků se po přidání a uložení společnosti hodnota změní na jen pro čtení. Uživatelé by proto měli zajistit, aby vybrali správnou firmu.
 + Pouze řádky s daty společnosti jsou způsobilé pro duální zápis mezi aplikací a Dataverse.
@@ -98,7 +98,7 @@ Existuje několik způsobů, jak automaticky vyplnit název společnosti v aplik
 
 Chcete-li použít filtrování na základě kontextu společnosti ve vlastních formulářích nebo ve vlastních vyhledávacích sloupcích přidaných do standardních formulářů, otevřete formulář a použijte sekci **Filtrování souvisejících záznamů** pro použití filtru společnosti. Tohle musíte pro každé vyhledávací sloupec, který vyžaduje filtrování na základě nejnižší společnosti v daném řádku. Nastavení je zobrazeno pro **Účet** na následujícím obrázku.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Použití kontextu společnosti":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Použití kontextu společnosti.":::
 
 
 

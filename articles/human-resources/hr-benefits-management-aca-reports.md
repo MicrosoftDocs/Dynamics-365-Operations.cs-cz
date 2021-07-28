@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052257"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353655"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generujte zprávy ACA ve Správě zaměstnaneckých výhod
 
@@ -48,11 +48,11 @@ Skupiny pokrytí Affordable Care vám pomohou spravovat tyto informace pro více
 
 1. V pracovním prostoru **správa zaměstnaneckých výhod** vyberte **Skupina pokrytí Affordable Care**.
 
-    ![Výběr skupiny pokrytí Affordable Care](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Výběr skupiny pokrytí Affordable Care.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Vyberte **Nová** k vytvoření nové skupiny pokrytí Affordable Care nebo **Upravit** ke změně existující skupiny.
 
-    ![Vyberte Nová nebo Upravit](./media/hr-benefits-management-aca-new.png)
+    ![Vyberte Nová nebo Upravit.](./media/hr-benefits-management-aca-new.png)
 
 3. Nastavte následující pole.
 
@@ -67,9 +67,9 @@ Skupiny pokrytí Affordable Care vám pomohou spravovat tyto informace pro více
     | Skupina platná od | První datum, kdy je tento záznam platný. |
     | Skupina platná do | Poslední datum, kdy je tento záznam platný. Pokud není datum vypršení platnosti, zadejte **Nikdy**. |
 
-    ![Vytvoření skupiny disponibility](./media/hr-benefits-management-aca-new-group.png)
+    ![Vytvoření skupiny disponibility.](./media/hr-benefits-management-aca-new-group.png)
 
-4. Zvolte **Uložit**.
+4. Zvolte možnost **Uložit**.
 
 ### <a name="assign-multiple-employees-to-an-affordable-care-coverage-group"></a>Přiřaďte více zaměstnanců do skupiny pokrytí Affordable Care
 
@@ -81,7 +81,7 @@ Skupiny pokrytí Affordable Care vám pomohou spravovat tyto informace pro více
 
 4. Vyberte zaměstnance v seznamu a poté vyberte **Přiřadit**.
 
-    ![Přiřaďte vybrané zaměstnance ke skupině](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Přiřaďte vybrané zaměstnance ke skupině.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Správa několika verzí možností pokrytí
 
@@ -111,14 +111,14 @@ Chcete-li zadat výjimky pro jakékoli hodnoty skupiny pokrytí Affordable Care,
 2. V seznamu vyberte zaměstnance.
 3. Na kartě **Zaměstnání** v sekci **Více informací** vyberte **Pokrytí Affordable Care**.
 
-    ![Změna možností pro jednoho zaměstnance](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Změna možností pro jednoho zaměstnance.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Vyberte možnost **Upravit**.
 5. U každého měsíce, který vyžaduje změny, zaškrtněte políčko **Přepsat výchozí** a poté podle potřeby změňte ostatní hodnoty.
 
-    ![Přepsat výchozí hodnoty](./media/hr-benefits-management-aca-override-default.png)
+    ![Přepsat výchozí hodnoty.](./media/hr-benefits-management-aca-override-default.png)
 
-6. Zvolte **Uložit**.
+6. Zvolte možnost **Uložit**.
 
 ## <a name="report-health-care-coverage"></a>Vykazování pokrytí zdravotní péče
 
@@ -131,9 +131,9 @@ Chcete-li určit, zda je třeba nahlásit plán výhod, postupujte podle těchto
 3. Vyberte možnost **Upravit**.
 4. Nastavte možnost **Hlášeno podle zákona Affordable Care** na **Ano**.
 
-    ![Vykazování pokrytí zdravotní péče](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Vykazování pokrytí zdravotní péče.](./media/hr-benefits-management-aca-report-coverage.png)
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
 Pokud si zaměstnanec zvolí krytí zdravotní péče pro závislou osobu, doba jejího krytí se určí podle data, kdy byla závislá osoba zapsána nebo odstraněna. Data pokrytí závislých osob se automaticky počítají na základě období, kdy závislá osoba byla způsobilá a aktivní v plánu během roku registrace.
 
@@ -147,23 +147,23 @@ ACA formuláře 1095-B and 1095-C můžete vygenerovat a poté rozeslat všem z
     > [!NOTE]
     > Při tisku formulářů 1095-C pro více než 500 zaměstnanců obdržíte více než jeden soubor PDF. Doporučujeme zvýšit hodnotu pole **Maximální velikost souboru v megabajtech** na stránce **Parametry správy dokumentů** na **150**. (Chcete-li tuto stránku rychle otevřít, můžete použít vyhledávací pole na navigační liště.)
     >
-    > ![Změna maximální velikosti souboru](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Změna maximální velikosti souboru.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Chcete-li zkontrolovat stav svých přehledů a zobrazit je, otevřete vyhledávací pole na navigačním panelu stránky **Úlohy elektronického hlášení**.
 
-    ![Hledání stránky úloh elektronického výkaznictví](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Hledání stránky úloh elektronického výkaznictví.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Vyberte sestavu, kterou chcete zobrazit, a poté vyberte **Zobrazit soubory**.
 
-    ![Zobrazují se soubory](./media/hr-benefits-management-aca-show-files.png)
+    ![Zobrazují se soubory.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Zvolte **Otevřít**.
 
-    ![Otevření souboru](./media/hr-benefits-management-aca-open-file.png)
+    ![Otevření souboru.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Na oznamovací liště, která se zobrazí v dolní části okna prohlížeče, otevřete soubor zip a poté vyberte sestavu. Můžete zobrazit nebo vytisknout soubor PDF.
 
-    ![Ukázkový formulář 1095-C](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Ukázkový formulář 1095-C.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Zobrazit informace o pokrytí ACA
 
@@ -178,7 +178,7 @@ Chcete-li tuto informaci zobrazit, postupujte takto.
 1. V pracovním prostoru **správa zaměstnaneckých výhod** vyberte **Skupina pokrytí Worker Affordable Care**.
 2. V poli **Název skupiny** vyberte skupinu.
 
-    ![Prohlížení pokrytí ACA](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Prohlížení pokrytí ACA.](./media/hr-benefits-management-aca-view-coverage.png)
 
 U případných přepsaných výchozích hodnot skupiny pokrytí ACA se vedle změněné hodnoty zobrazí hvězdička. Pokud jsou hodnoty u všech 12 měsíců stejné a nebyly přepsány, hodnota bude uvedena ve sloupci **Všech 12 měsíců**.
 
@@ -198,11 +198,11 @@ Chcete-li exportovat některý ze seznamů Microsoft Excel, postupujte takto.
 
 Pokud musíte hlásit kryté osoby, protože poskytujete pojištěné osoby, můžete zobrazit závislé osoby, na které se vztahují plány dávek, které jsou označeny jako **hlásitelné ACA**. V podokně akcí vyberte **Zobrazit data pokrytí rodinného příslušníka**.
 
-![Zobrazení pokrytí rodinného příslušníka](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Zobrazení pokrytí rodinného příslušníka.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Zobrazí se informace o pokrytí závislých osob zaměstnance.
 
-![Pokrytí závislých prvků](./media/hr-benefits-management-aca-dependents.png)
+![Pokrytí závislých prvků.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Tato stránka zobrazuje pouze plány výhod, které jsou označeny jako **hlásitelné ACA**.

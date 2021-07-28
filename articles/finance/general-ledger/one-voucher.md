@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897761"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356696"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
@@ -33,18 +33,18 @@ Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhod
 
 - Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \> **Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze číslo jednoho dokladu**. Všechny řádky, které přidáte do deníku, jsou nyní zahrnuty ve stejném dokladu. Proto lze doklad zadat jako doklad s více řádky, jako účet nebo protiúčet na stejném řádku nebo jako kombinaci.
 
-    [![Jeden řádek](./media/same-line.png)](./media/same-line.png)
+    [![Jeden řádek.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definice jednoho dokladu **nepokrývá** případy, kde jsou názvy deníků nastaveny jako **Pouze číslo jednoho dokladu**, ale uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy. V tomto tématu 'Jeden doklad' znamená, že existuje jediný doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt.
 
 - Zadejte víceřádkový doklad, když neexistuje protiúčet.
 
-    [![Víceřádkový doklad](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Víceřádkový doklad.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Zadejte doklad, kde účet i protiúčet obsahují typ účtu dílčí knihy, jako například **Dodavatel**/**Dodavatel**, **Odběratel**/**Odběratel**, **Dodavatel**/**Odběratel**, nebo **Banka**/**Banka**.
 
-    [![Doklad dílčí hlavní knihy](./media/subledger.png)](./media/subledger.png)
+    [![Doklad dílčí hlavní knihy.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Potíže s jedním číslem dokladu
 
@@ -52,11 +52,11 @@ Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stor
 
 Předpokládejme například, že zaúčtujete následující víceřádkový doklad:
 
-[![Příklad víceřádkového dokladu](./media/example.png)](./media/example.png)
+[![Příklad víceřádkového dokladu.](./media/example.png)](./media/example.png)
 
 Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **Finanční přehledy**. V této sestavě jsou zůstatky výdajových účtů seskupeny podle skupiny dodavatelů a poté dodavatele. Když je sestava vygenerována, systém nedokáže určit, kterým skupinám dodavatelů/dodavatelům vznikly výdaje 250,00. Vzhledem k tomu, že nebyly nalezeny podrobnosti o transakcích, systém bude předpokládat, že celé výdaje 250,00 jdou na vrub prvnímu dodavateli nalezenému v dokladu. Proto je výdaj 250,00, který je zahrnut do zůstatku na hlavním účtu 600120, uveden pod touto skupinou dodavatelů/dodavatelem. Je však velmi pravděpodobné, že první dodavatel v dokladu není správný dodavatel. Sestava je tedy pravděpodobně nesprávná.
 
-[![Výdaje podle sestavy dodavatele](./media/expenses.png)](./media/expenses.png)
+[![Výdaje podle sestavy dodavatele.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Budoucnost funkce Jeden doklad
 

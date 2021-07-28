@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354005"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Poskytování příruček v hybridní realitě pro pracovníky ve výrobě
 
@@ -57,7 +59,7 @@ V následujících pododdílech je popsáno několik vybraných scénářů, ve 
 
 ### <a name="assembly"></a>Sestavení
 
-![Použití aplikace Guides při montáži](media/instruction-guides-hero-assembly.png "Použití aplikace Guides při servisu")
+![Použití aplikace Guides při montáži.](media/instruction-guides-hero-assembly.png "Použití aplikace Guides při servisu")
 
 Pokyny v montážních operacích ukazují pracovníkům potřebné nástroje a součásti a způsob, jakým se používají v reálných pracovních situacích.
 
@@ -65,7 +67,7 @@ Manažeři výroby mohou vytvářet a přiřazovat příručky například pro [
 
 ### <a name="service"></a>Servis
 
-![Použití aplikace Guides při servisu](media/instruction-guides-hero-service.png "Použití aplikace Guides při servisu")
+![Použití aplikace Guides při servisu.](media/instruction-guides-hero-service.png "Použití aplikace Guides při servisu")
 
 Vybavte techniky pokyny v místě výkonu práce, což eliminuje potřebu plánování dalších návštěv.
 
@@ -73,7 +75,7 @@ Manažeři servisu mohou příručky přiřadit například ke konkrétním [pro
 
 ### <a name="quality"></a>Kvalita
 
-![Použití aplikace Guides při kontrole kvality](media/instruction-guides-hero-quality.png "Použití aplikace Guides při kontrole kvality")
+![Použití aplikace Guides při kontrole kvality.](media/instruction-guides-hero-quality.png "Použití aplikace Guides při kontrole kvality")
 
 Při zavádění nových procesů můžete přeměnou znalostí zaměstnanců na opakovaně použitelný nástroj zajistit větší konzistenci.
 
@@ -81,13 +83,13 @@ Manažeři kvality mohou příručky přiřadit například ke konkrétním [pro
 
 ### <a name="certifications"></a>Certifikáty
 
-![Použití aplikace Guides při úkolech spojených s certifikací](media/instruction-guides-hero-certification.png "Použití aplikace Guides při úkolech spojených s certifikací")
+![Použití aplikace Guides při úkolech spojených s certifikací.](media/instruction-guides-hero-certification.png "Použití aplikace Guides při úkolech spojených s certifikací")
 
 Rychlou identifikací toho, kdo a kde potřebuje pomoc, můžete zajistit, aby každý zaměstnanec splňoval vysoké standardy.
 
 ### <a name="safety"></a>Bezpečnost
 
-![Použití aplikace Guides v pokynech pro bezpečnost práce](media/instruction-guides-hero-safety.png "Použití aplikace Guides v pokynech pro bezpečnost práce")
+![Použití aplikace Guides v pokynech pro bezpečnost práce.](media/instruction-guides-hero-safety.png "Použití aplikace Guides v pokynech pro bezpečnost práce")
 
 Připravte pokyny, které procházejí nebezpečné postupy virtuálně předtím, než se realizují ve fyzickém prostředí. Díky hybridní realitě mohou pracovníci nebezpečné postupy zažít virtuálně.
 
@@ -119,7 +121,7 @@ Chcete-li tuto funkci ve svém systému zpřístupnit, musíte povolit její kon
 
 Chcete-li nakonfigurovat, jak se aplikace Guides bude zobrazovat v dílně, přejděte na **Hybridní realita \>Dynamics 365 Guides\> Konfigurovat integraci aplikace Guides**.
 
-![Konfigurace integrace aplikace Guides ve výrobě](media/instruction-guides-configure-integration.png "Konfigurace integrace aplikace Guides ve výrobě")
+![Konfigurace integrace aplikace Guides ve výrobě.](media/instruction-guides-configure-integration.png "Konfigurace integrace aplikace Guides ve výrobě")
 
 Nastavte následující pole:
 
@@ -136,7 +138,7 @@ Nastavte následující pole:
 
 Na stránce **Všechny příručky** si můžete prohlédnout seznam všech dostupných příruček ve vaší organizaci a jejich přiřazení k výrobním procesům a prostředkům. Otevřete ji tak, že přejdete na **Hybridní realita \> Příručky \> Všechny příručky**. V horní části seznamu se zobrazují všechny dostupné příručky a pole, které můžete použít k filtrování seznamu. V dolní části seznamu se zobrazují všechna přiřazení příručky a panel nástrojů pro jejich správu.
 
-![Správa příruček](media/instruction-guides-allguides.png "Správa příruček")
+![Správa příruček.](media/instruction-guides-allguides.png "Správa příruček")
 
 V následujících oddílech jsou popsány typy objektů, ke kterým můžete příručky přiřadit. Každá přiřazená příručka obsahuje pokyny, které se automaticky připojí k příslušným výrobním úkolům a budou dostupné v dílně.
 
@@ -157,7 +159,7 @@ Příručku přidáte k prostředku takto:
 1. Rozbalte pevnou záložku **Přidružené příručky**.
 1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Pokud máte velký počet příruček, můžete filtrováním seznamu najít tu, kterou hledáte.
-    ![Správa příruček](media/instruction-guides-allguides.png "Správa příruček")
+    ![Správa příruček.](media/instruction-guides-allguides.png "Správa příruček")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Přidružení příručky ke skupině prostředků
 
@@ -178,7 +180,7 @@ Příručku přidáte ke skupině prostředků takto:
 1. Rozbalte pevnou záložku **Přidružené příručky**.
 1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Pokud máte velký počet příruček, můžete filtrováním seznamu najít tu, kterou hledáte.
-    ![Přidání příručky ke skupině prostředků](media/instruction-guides-resourcegroup.png "Přidání příručky ke skupině prostředků")
+    ![Přidání příručky ke skupině prostředků.](media/instruction-guides-resourcegroup.png "Přidání příručky ke skupině prostředků")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Přidružení příručky k uvolněnému produktu
 
@@ -198,7 +200,7 @@ Příručku přidáte k uvolněnému produktu takto:
 1. Otevře se stránka **Přidružené příručky** pro vybraný produkt.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky. 
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k uvolněnému produktu](media/instruction-guides-ReleasedProduct-AddGuides.png "Přidání příručky k uvolněnému produktu")
+    ![Přidání příručky k uvolněnému produktu.](media/instruction-guides-ReleasedProduct-AddGuides.png "Přidání příručky k uvolněnému produktu")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Přidružení příručky k receptuře
 
@@ -223,7 +225,7 @@ Příručku přidáte k receptuře takto:
 1. Rozbalte pevnou záložku **Přidružené příručky**.
 1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k receptuře](media/instruction-guides-Formula.png "Přidání příručky k receptuře")
+    ![Přidání příručky k receptuře.](media/instruction-guides-Formula.png "Přidání příručky k receptuře")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Přidružení příručky k verzi receptury
 
@@ -248,11 +250,11 @@ Příručku přidáte k verzi receptury takto:
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
 1. Na pevné záložce **Verze receptury** vyberte verzi, ke které chcete přiřadit příručku.
 1. Na panelu nástrojů **Verze receptury** vyberte **Přidružené příručky**.
-    ![Otevření příruček přidružených k vybrané verzi receptury](media/instruction-guides-FormulaVersion.png "Otevření příruček přidružených k vybrané verzi receptury")
+    ![Otevření příruček přidružených k vybrané verzi receptury.](media/instruction-guides-FormulaVersion.png "Otevření příruček přidružených k vybrané verzi receptury")
 1. Otevře se stránka **Přidružené příručky** pro verzi receptury.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky. 
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k verzi receptury](media/instruction-guides-FormulaVersionAddGuide.png "Přidání příručky k verzi receptury")
+    ![Přidání příručky k verzi receptury.](media/instruction-guides-FormulaVersionAddGuide.png "Přidání příručky k verzi receptury")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Přidružení příručky ke kusovníku
 
@@ -275,7 +277,7 @@ Příručku přidáte ke kusovníku takto:
 1. Rozbalte pevnou záložku **Přidružené příručky**.
 1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky ke kusovníku](media/instruction-guides-BOM.png "Přidání příručky ke kusovníku")
+    ![Přidání příručky ke kusovníku.](media/instruction-guides-BOM.png "Přidání příručky ke kusovníku")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Přidružení příručky k verzi kusovníku
 
@@ -297,11 +299,11 @@ Příručku přidáte k verzi kusovníku takto:
 1. Otevřete kartu **Záhlaví** nad horní pevnou záložkou.
 1. Na pevné záložce **Verze kusovníku** vyberte verzi, ke které chcete přiřadit příručku.
 1. Na panelu nástrojů **Verze kusovníku** vyberte **Přidružené příručky**.
-    ![Otevření příruček přidružených k vybrané verzi kusovníku](media/instruction-guides-BOMVersion.png "Otevření příruček přidružených k vybrané verzi kusovníku")
+    ![Otevření příruček přidružených k vybrané verzi kusovníku.](media/instruction-guides-BOMVersion.png "Otevření příruček přidružených k vybrané verzi kusovníku")
 1. Otevře se stránka **Přidružené příručky** pro verzi kusovníku.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k verzi kusovníku](media/instruction-guides-BOMVersionAddGuide.png "Přidání příručky k verzi kusovníku")
+    ![Přidání příručky k verzi kusovníku.](media/instruction-guides-BOMVersionAddGuide.png "Přidání příručky k verzi kusovníku")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Přidružení příručky k postupu
 
@@ -322,7 +324,7 @@ Příručku přidáte k postupu takto:
 1. Rozbalte pevnou záložku **Přidružené příručky**.
 1. Na panelu nástrojů **Přidružené příručky** vyberte **Přidat**. Do mřížky je přidán nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k postupu](media/instruction-guides-Route.png "Přidání příručky k postupu")
+    ![Přidání příručky k postupu.](media/instruction-guides-Route.png "Přidání příručky k postupu")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Přidružení příručky k verzi postupu
 
@@ -340,11 +342,11 @@ Příručku přidáte k verzi postupu takto:
 1. Otevřete postup, ke kterému chcete přiřadit příručku.
 1. Na pevné záložce **Verze** vyberte verzi, ke které chcete přiřadit příručku.
 1. Na panelu nástrojů **Verze** vyberte **Přidružené příručky**.
-    ![Otevření příruček přidružených k vybrané verzi postupu](media/instruction-guides-RouteVersion.png "Otevření příruček přidružených k vybrané verzi postupu")
+    ![Otevření příruček přidružených k vybrané verzi postupu.](media/instruction-guides-RouteVersion.png "Otevření příruček přidružených k vybrané verzi postupu")
 1. Otevře se stránka **Přidružené příručky** pro verzi kusovníku.
 1. Výběrem možnosti **Přidat** v podokně akcí přidejte nový řádek do mřížky.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit.
-    ![Přidání příručky k verzi postupu](media/instruction-guides-RouteVersionAddGuide.png "Přidání příručky k verzi postupu")
+    ![Přidání příručky k verzi postupu.](media/instruction-guides-RouteVersionAddGuide.png "Přidání příručky k verzi postupu")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Přidružení příručky ke vztahu operace postupu
 
@@ -367,8 +369,8 @@ Příručku přidáte ke vztahu operace postupu takto:
 1. Otevře se stránka **Podrobnosti postupu** pro vybraný postup.
 1. V horní mřížce vyberte operaci, ke které chcete poskytnout pokyny.
 1. V dolní mřížce vyberte konkrétní vztah (nebo obecný vztah **Vše**).
-    ![Výběr operace a následně vztahu](media/instruction-guides-RouteOperationRelation.png "Výběr operace a následně vztahu")
-1. Nad dolní mřížkou otevřete kartu **Přidružené příručky**. ![Karta Přidružené příručky](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Přidružené příručky")
+    ![Výběr operace a následně vztahu.](media/instruction-guides-RouteOperationRelation.png "Výběr operace a následně vztahu")
+1. Nad dolní mřížkou otevřete kartu **Přidružené příručky**. ![Karta Přidružené příručky.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Přidružené příručky")
 1. Výběrem možnosti **Přidat** na panelu nástrojů v horní části dolní mřížky přidejte do mřížky nový řádek.
 1. Na novém řádku použijte rozevírací seznam ve sloupci **Název** a zvolte příručku, kterou chcete přiřadit. Ve zbytku řádku zaškrtněte políčko pro každý kontext, ve kterém má být vybraná příručka dostupná.
 
@@ -379,11 +381,11 @@ Příručku přidáte ke vztahu operace postupu takto:
 
 Když si pracovník otevře v realizačním rozhraní dílny seznam úkolů, najde Supply Chain Management příslušné příručky pro zobrazené úkoly. Tlačítkem **Příručky** si zobrazí relevantní příručky.
 
-![Tlačítko Příručky v realizačním rozhraní dílny](media/instruction-guides-Shopfloor1.png "Tlačítko Příručky v realizačním rozhraní dílny")
+![Tlačítko Příručky v realizačním rozhraní dílny.](media/instruction-guides-Shopfloor1.png "Tlačítko Příručky v realizačním rozhraní dílny")
 
 Pak si nasadí HoloLens a zpřístupní příslušnou příručku pohledem na kód QR a aktivací příslušné příručky.
 
-![Kód QR pro přístup k příručce pomocí HoloLens](media/instruction-guides-Shopfloor2.png "Kód QR pro přístup k příručce pomocí HoloLens")
+![Kód QR pro přístup k příručce pomocí HoloLens.](media/instruction-guides-Shopfloor2.png "Kód QR pro přístup k příručce pomocí HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Logika pro výběr příruček
 
@@ -406,7 +408,7 @@ Když Supply Chain Management vygeneruje úkoly pro výrobu, shromáždí z těc
 - Pokud připojíte verzi postupu k výrobní zakázce, zobrazí se u úkolu všechny příručky připojené k této verzi a také příručky připojené k nadřazenému postupu této verze.
 - Pokud definujete několik vztahů operací postupu, které obsahují vztah *Vše*, a přiřadíte k nim příručky, zobrazí se u úkolu jen příručky z nejkonkrétnějšího vztahu.  
 
-![Schéma řešení relevantních příruček](media/instruction-guides-Resolve.png "Schéma řešení relevantních příruček")
+![Schéma řešení relevantních příruček.](media/instruction-guides-Resolve.png "Schéma řešení relevantních příruček")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794342"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351266"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání
 
@@ -31,7 +31,7 @@ Tohle téma obsahuje přehled výchozí cílové stránky kategorie a stránky v
 
 Výchozí cílová stránka kategorie je stránka, na kterou jsou uživatelé webu obvykle přesměrování při výběru kategorie v navigační hierarchii. Stránka kategorie umožňuje procházení a také třídění a zpřesnění produktů zařazených do kategorií.
 
-![Výchozí cílová stránka kategorie](./media/SimpleCategoryLandingDressCategory.png)
+![Výchozí cílová stránka kategorie.](./media/SimpleCategoryLandingDressCategory.png)
 
 V horní části stránky se nachází záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů, jak je vytvořitl manažer prodeje. Konfigurace je součástí konfigurace hierarchie navigace kanálu. V dolní částí stránky se nachází zápatí, které obsahuje rychlé odkazy na různá témata, která by mohla zajímat nakupujícího.
 
@@ -55,7 +55,7 @@ Pro kategorii jsou nezbytné následující součásti:
 
 Chcete-li, aby cílová stránka kategorie měla lépe přizpůsobené prostředí pro určitou kategorii, můžete „obohatit“ kategorii na dané cílové stránce kategorie. Můžete například přidat marketingové video a nějaký příběh kategorie, abyste získali pozornost nakupujícího. Další informace naleznete v tématu [Obohacení cílové stránky kategorie](enrich-category-page.md).
 
-![Obohacená cílová stránka kategorie](./media/CategoryLandingPages.png)
+![Obohacená cílová stránka kategorie.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automatické návrhy a stránky výsledků hledání
 
@@ -69,11 +69,11 @@ Zde jsou některé typy návrhů, které mohou být zobrazeny:
 - **Produkty** poskytují přímé odkazy na stránku s podrobnostmi o produktu.
 - **Návrhy vyhledávání ve vymezených kategoriích** uvádí různé kategorie a umožňují uživatelům hledat klíčové slovo v určité kategorii.
 
-![Moderní automatické návrhy](./media/ImmersiveAutoSuggestUX.png)
+![Moderní automatické návrhy.](./media/ImmersiveAutoSuggestUX.png)
 
 Když uživatel vybere jeden z návrhů vyhledávání klíčového slova nebo ve vymezené kategorii, nebo když neexistují žádné návrhy pro hledaný termín, které zadají, budou přesměrováni na stránku s výsledky hledání. Uživatelé pak mohou procházet, třídit a upřesnit seznam výsledků hledání a vyhledat požadovanou položku.
 
-![Cílová stránka vyhledávání](./media/SearchLanding.png)
+![Cílová stránka vyhledávání.](./media/SearchLanding.png)
 
 Pro stránku výsledků hledání jsou nezbytné následující součásti:
 
@@ -94,7 +94,7 @@ Pro stránku výsledků hledání jsou nezbytné následující součásti:
 
 >[!NOTE]
 >Tyto vyhledávací funkce využívající cloud jsou k dispozici od verze 10.0.8. Ujistěte se, že v části **Parametry velkoobchodu> Konfigurační parametry** je u položky ProductSearch.UseAzureSearch nastavena hodnota „true“. 
-![Konfigurační parametry pro cloudové vyhledávání](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurační parametry pro cloudové vyhledávání.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

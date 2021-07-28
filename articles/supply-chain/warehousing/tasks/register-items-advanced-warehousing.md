@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830827"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357995"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
 
@@ -53,14 +53,14 @@ Následující scénář ukazuje, jak vytvořit záhlaví deníku pro doručení
 1. Nastavte **Číslo účtu** na *1001*.
 1. Nastavte **Číslo** na číslo nákupní objednávky, které jste identifikovali pro toto cvičení.
 
-    ![Deník doručení položky](../media/item-arrival-journal-header.png "Deník doručení položky")
+    ![Deník doručení položky.](../media/item-arrival-journal-header.png "Deník doručení položky")
 
 1. Vyberte **OK** k vytvoření záhlaví deníku.
 1. V sekci **Řádky deníku** vyberte **Přidat řádek** a zadejte následující údaje:
     - **Číslo položky** – nastavte na *M9200*. **Lokalita**, **Sklad** a **Množství** se nastaví na základě údajů o transakcích zásob pro 10 palet (1000 kusů).
     - **Umístění** – Nastavte na *001*. Toto konkrétní umístění nesleduje registrační značky.
 
-    ![Řádek deníku pro doručení položky](../media/item-arrival-journal-line.png "Řádek deníku pro doručení položky")
+    ![Řádek deníku pro doručení položky.](../media/item-arrival-journal-line.png "Řádek deníku pro doručení položky")
 
     > [!NOTE]
     > Pole **Datum** určuje datum, kdy bude na skladě registrováno množství této položky.  

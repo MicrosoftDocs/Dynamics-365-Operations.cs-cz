@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800656"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351193"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -54,11 +54,11 @@ Chcete-li vytvořit a konfigurovat nový kanál kontaktního střediska, postupu
 
 V následujícím obrázku je znázorněno vytvoření nového kanálu kontaktního střediska.
 
-![Nový kanál kontaktního střediska](media/channel-setup-callcenter-1.png)
+![Nový kanál kontaktního střediska.](media/channel-setup-callcenter-1.png)
 
 Následující obrázek znázorňuje příklad kanálu kontaktního centra.
 
-![Příklad kanálu kontaktního střediska](media/channel-setup-callcenter-2.png)
+![Příklad kanálu kontaktního střediska.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Nastavení dodatečného kanálu
 
@@ -66,7 +66,7 @@ Další úkoly požadované pro nastavení kanálu kontaktního střediska zahrn
 
 Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek** a **Způsobů platby** na kartě **Nastavení**.
 
-![Další akce nastavení kanálu kontaktního střediska](media/channel-setup-callcenter-3.png)
+![Další akce nastavení kanálu kontaktního střediska.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
@@ -81,11 +81,11 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kan
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby](media/channel-setup-callcenter-payments.png)
+![Příklad způsobů platby.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
-Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
+Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
 
 Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k kanálu kontaktního střediska, postupujte podle následujících kroků.
 
@@ -97,7 +97,7 @@ Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k k
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
-![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
+![Nastavit způsoby dodání.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Nastavení uživatele kanálu
 

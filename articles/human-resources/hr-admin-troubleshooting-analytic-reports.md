@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8dab12213e9730e72aede70c5b5d1368ef77664e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 382780405b2496cc655451790ef4a99ef60ba129
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053532"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354245"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Řešení potíží u analytických sestav
 
@@ -41,7 +41,7 @@ Tento problém může být pouze záležitostí časování. Tento postup slouž
 1. Vyhledejte úlohu **Nasadit měrný systém** v seznamu.
 1. Vyberte **Upravit** v horní části stránky a nastavte naplánované počáteční datum a čas na hodnotu, která bude aktualizovat analytiku blíže aktuálnímu času.
 
-![Dávkové úlohy](media/batch-jobs.png)
+![Dávkové úlohy.](media/batch-jobs.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
