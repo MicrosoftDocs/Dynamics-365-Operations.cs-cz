@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (červen 2021)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Supply Chain Management 10.0.18 (květen 2021)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -2001,9 +1999,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Vytvoření nákupní objednávky pro jednorázového dodavatele
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: "Vytvoření dílčí nákupní objednávky z\_nákupní smlouvy"
+                - name: Použít nákupní smlouvu při vytváření nákupní objednávky
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: Vytvoření nákupní vratky
                   href: procurement/tasks/create-purchase-return-order.md

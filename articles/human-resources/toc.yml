@@ -5,6 +5,8 @@
       items:
         - name: "Co je nového a\_co se změnilo v\_Human Resources"
           href: hr-admin-whats-new.md
+        - name: 12. července 2021
+          href: hr-whats-new-2021-07-12.md
         - name: 22. června 2021
           href: hr-whats-new-2021-06-22.md
         - name: "20.\_května\_2021"
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Často kladené dotazy týkající se ostrého nasazení
           href: hr-admin-go-live-faq.md
+        - name: Často kladené dotazy ke sloučení infrastruktury Human Resources
+          href: hr-infrastructure-merge-faq.md
         - name: Zdroje dokumentace
           items:
             - name: Systém nápovědy
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Zpracování plánů kompenzace
               href: hr-compensation-process.md
+            - name: Označení zaměstnance jako připraveného k výplatě
+              href: hr-compensation-payroll.md
         - name: Správa zaměstnaneckých výhod
           items:
             - name: Správa zaměstnaneckých výhod
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Konfigurace typů životních událostí
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Vytvoření typů plánu
+                    - name: Přehled typů plánů
                       href: hr-benefits-setup-plan-types.md
                     - name: Nastavení kódů důvodů
                       href: hr-benefits-setup-reason-codes.md
@@ -807,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Zobrazení kalendáře týmu a společnosti
               href: hr-employee-self-service-calendar.md
+            - name: Konfigurace role manažera absencí
+              href: hr-configure-absence-manager.md
             - name: Správa zásad nákupu a prodeje pracovního volna
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Vytvoření pracovních postupů nákupu a prodeje pracovního volna

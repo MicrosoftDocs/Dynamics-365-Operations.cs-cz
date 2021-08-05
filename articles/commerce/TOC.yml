@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (červen 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (květen 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Nastavení vlastních stránek pro přihlášení uživatelů
                   href: custom-pages-user-logins.md
+                - name: Povolení automatického propojení záznamů identity s účty zákazníků
+                  href: identity-record-linking.md
                 - name: Konfigurace více klientů B2C v prostředí Commerce
                   href: configure-multi-B2C-tenants.md
                 - name: Domény v Dynamics 365 Commerce
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Přehled motivu Adventure Works
                       href: adventure-works-theme.md
+                    - name: Instalace tématu Adventure Works
+                      href: install-adventure-works.md
             - name: Správa digitálních aktiv
               items:
                 - name: Přehled správy digitálních aktiv

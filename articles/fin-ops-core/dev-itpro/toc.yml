@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Aktualizace Platform Update pro verzi 10.0.19 (červen 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Aktualizace Platform Update pro verzi 10.0.18 (květen 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: "Plánovaná údržba v\_samoobslužných prostředích – nejčastější dotazy"
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Provozní kontinuita a zotavení po havárii
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Dokončení zprovoznění služby Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute a Finance and Operations
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Použití aktualizací a rozšíření na Commerce Scale Unit (cloud)
                   href: deployment/Update-retail-channel.md
+                - name: Automatická aktualizace pro Commerce Scale Unit (cloud)
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Inicializace Commerce Scale Unit (cloud)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Migrace kanálu do jiné Commerce Scale Unit
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: Plán a příprava pro místní nasazení
                       href: deployment/plan-onprem-deployment.md
+                    - name: Software podporovaný aplikací Microsoft Dynamics 365 Finance and Operations (on-premises)
+                      href: deployment/onprem-compatibility.md
                     - name: Požadavky na rozsah hardwaru
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Ověření v Dynamics 365 Finance + Operations (on-premises)
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurace samostatných vývojových prostředí
                   href: dev-tools/configure-developer-vm.md
-                - name: Vytvoření nových uživatelů na vývojových počítačích
-                  href: dev-tools/enable-development-machine.md
                 - name: 'Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Přejmenování místních prostředí pro přístup k Azure DevOps
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Strana a globální adresář
                       href: data-entities/dual-write/party-gab.md
-                    - name: Používání Power Portal s datovým modelem strany
+                    - name: Používání portálů Microsoft Power Apps s datovým modelem strany
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Upgrade na model strany a globálního adresáře
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1604,6 +1606,8 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: Upgrade AX 2012 – Ostré nasazení
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Upgrade z AX 2012 - Časté dotazy k upgradu dat
+                  href: migration-upgrade/upgrade-faq.md
                 - name: Změny ovlivňující upgrade z aplikace AX 2012
                   items:
                     - name: Jak vytvořit jedinečný oddělovač účtové osnovy

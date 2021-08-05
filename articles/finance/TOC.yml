@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (červen 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (květen 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Nákupní cla
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrajn
               items:
                 - name: Bahrajn - přehled
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Vygenerování prohlášení Intrastat EU
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Francouzský Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Intrastat pro Itálii
+                      href: localizations/emea-ita-intrastat.md
                 - name: Sestavy deníku zásob
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Koncová data vystavení faktury
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Přiznání k DPH s registry (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Příprava na vykazování JPK-V7M
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: Vykazování JPK-V7M
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Podrobnosti o konkrétních obchodních scénářích v sestavě JPK-V7M
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Katar - přehled
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Rezervy nedobytných pohledávek v pohledávkách
                       href: localizations/rus-bad-debts.md
+                    - name: Výpočet registrů daňových povinností a daňového majetku
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saúdská Arábie
               items:
                 - name: Saúdská Arábie - přehled
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Generování sestav ve formátech Office s integrovanými obrázky
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Návrh formátu ER pro generování zprávy v Excelu s vloženými obrázky v záhlaví nebo zápatí stránky
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: "Potlačení znaků kusovníku v\_generovaných souborech"
