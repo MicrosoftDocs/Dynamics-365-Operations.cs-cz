@@ -1,6 +1,6 @@
 ---
-title: Používání Power Portal s datovým modelem strany
-description: Toto téma popisuje změny webových rolí portálu Power Portal kvůli datovému modelu strany v duálním zápisu.
+title: Používání portálů Microsoft Power Apps s datovým modelem strany
+description: Toto téma popisuje změny webových rolí portálu Microsoft Power Apps kvůli datovému modelu strany v duálním zápisu.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358610"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542556"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Používání Power Portal s datovým modelem strany
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Používání portálů Microsoft Power Apps s datovým modelem strany
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Chcete-li vytvořit tato nová oprávnění k tabulce, postupujte takto:
 
     Musíte vytvořit tři nová oprávnění:
 
-    + Spojení kontakt – strana
-    + Spojení strana – účet
-    + Spojení účet – objednávka
+    + Propojení tabulky **Kontakt** -  **Strana**
+    + Propojení tabulky **Strana** -  **Účet**
+    + Propojení tabulky **Účet** -  **Objednávka**
 
 4. Vytvořte a uložte nové oprávnění pro spojení kontakt – strana a nastavte tyto parametry:
 
-    + **Název**: Spojení strana – účet (nebo podle vašeho výběru)
+    + **Název**: Propojení tabulky **strana** – **účet** (nebo podle vašeho výběru)
     + **Název tabulky**: msdyn_contactforparty
     + **Web**: Zákaznický portál
     + **Rozsah**: Kontakt

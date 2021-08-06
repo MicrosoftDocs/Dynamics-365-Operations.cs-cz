@@ -2,7 +2,7 @@
 title: Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 description: Toto téma vysvětluje, jak nastavit zásady vrácení a refundace pro kanál.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345101"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558290"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 
@@ -36,12 +36,21 @@ Rozsah zásady je aktuálně omezen na nastavení nabídek plateb, které lze po
 
 ## <a name="enable-return-policy"></a>Povolit zásady vracení
 
-Chcete-li povolit funkci zásad vrácení v rámci prodejního kanálu, postupujte takto:
+Chcete-li aktivovat funkci zásad vrácení kanálů v centrále Commerce, postupujte takto.
 
 1. Přejděte do pracovního prostoru **Správa funkcí** v Dynamics 365 Commerce.
 1. Vyhledejte v seznamu názvů funkcí funkci **Povolit zásady vracení kanálů**.
 1. Vyberte **Povolit**.
-1. Na stránce **Harmonogram distribuce** spusťte úlohu **1110** (Globální konfigurace) k distribuci změny funkce. 
+1. Na stránce **Harmonogram distribuce** spusťte úlohu **1110** (Globální konfigurace) k distribuci změny funkce.
+
+## <a name="initialize-the-commerce-scheduler"></a>Inicializujte plánovač Commerce
+
+Po povolení funkce **Povolit zásady vrácení kanálu** musíte inicializovat plánovač Commerce, abyste zajistili přidání nových změn v databázi funkcí prostřednictvím synchronizace Commerce Data Exchange (CDX). 
+
+Chcete-li spustut plánovač Commerce v centrále Commerce, postupujte následovně.
+
+- Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Plánovač velkoobchodu \> Inicializovat plánovač velkoobchodu**. Případně vyhledejte "inicializovat plánovač Commerce."
+- V dialogovém okně **Inicializovat velkoobchodní plánovač** zkontrolujte, zda je možnost **Odstranit existující konfiguraci** nastavena na hodnotu **Ne**, a pak vyberte **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurace zásad vracení
 

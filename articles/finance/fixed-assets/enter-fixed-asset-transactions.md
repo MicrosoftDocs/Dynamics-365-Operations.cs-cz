@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815709"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645365"
 ---
 # <a name="fixed-asset-transaction-options"></a>Možnosti transakce dlouhodobého majetku
 
@@ -46,7 +46,7 @@ Pokud se pro pořízení dlouhodobého majetku použije nákupní objednávka ne
 ## <a name="general-ledger"></a>Hlavní kniha
 Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hlavní deník. K zaúčtování transakcí můžete také použít deníky ve formuláři Dlouhodobý majetek.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Volby pro zadání typů transakcí s dlouhodobým majetkem
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Volby pro zadání typů transakcí s dlouhodobým majetkem
 
 
 | Typ transakce                    | Modul                   | Možnosti                                   |
@@ -61,10 +61,20 @@ Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hl
 | ** **                               | Hlavní kniha           | Hlavní deník                           |
 | ** **                               | Pohledávky      | Volné faktury                         |
 
-
 Zbývající hodnota období odpisu dlouhodobého majetku se neaktualizuje, pokud je řádek deníku typu transakce odpisu vytvořený nebo importovaný prostřednictvím datové entity. Tato hodnota je aktualizována při použití procesu schválení odpisu pro vytvoření řádku deníku.
 
 Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transakce, které vyžadují různá čísla dokladů
+
+Následující transakce s dlouhodobým majetkem budou používat různá čísla dokladů:
+
+- Je provedeno další pořízení dlouhodobého majetku a je vypočten 'opravný' odpis.
+- Majetek je rozdělen.
+- Je zapnutý parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
+- Datum uvedení majetku do služby je před datem pořízení. Z tohoto důvodu je zaúčtována oprava odpisu.
+
+> [!NOTE]
+> Při zadávání transakcí zkontrolujte, zda se všechny transakce vztahují ke stejnému dlouhodobému majetku. Doklad nebude zaúčtován, pokud zahrnuje více než jeden dlouhodobý majetek, a to i v případě, že je pole **Nový doklad** nastaveno na **Pouze jedno číslo dokladu** na stránce **Názvy deníku** v hlavní knize. Pokud do dokladu zahrnete více než jeden dlouhodobý majetek, může se zobrazit zpráva Na doklad může existovat jen jedna transakce dlouhodobého majetku a tento doklad nebude možné zaúčtovat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

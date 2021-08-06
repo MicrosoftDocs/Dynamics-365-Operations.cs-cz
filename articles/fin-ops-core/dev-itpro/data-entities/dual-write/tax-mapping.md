@@ -4,24 +4,17 @@ description: Toto téma popisuje integraci dat daní mezi aplikacemi Finance and
 author: robinarh
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: rhaertle
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a7992520b57b4c19b6dc8e13bd8e9ffc87b40f5a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1b5d62e56dd1f87dbfedc6a8ca7379587481ff4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750635"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542312"
 ---
 # <a name="integrated-tax"></a>Integrovaná daň
 
@@ -29,41 +22,20 @@ ms.locfileid: "5750635"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Data nastavení daně určují nastavení pro obě nepřímé daně (DPH, GST, DPH) a srážkové daně. Popisuje pravidlo výpočtu daně, daňovou sazbu, daňové účetnictví, vyrovnání a další koncepty.
 
 ## <a name="templates"></a>Šablony
 
 Daňová data zahrnují mapy kolekce tabulek, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
-Aplikace Finance and Operations | Modelem řízené aplikace v Dynamics 365 | popis |
--------------------------|---------------------------------|----|
-Skupina DPH zboží | msdyn_taxitemgroups |
-Finanční úřady | msdyn_taxauthorities |
-CDS entita kódu osvobození od DPH | msdyn_taxexemptcodes |
-Skupiny DPH | msdyn_taxgroups |
-Účetní skupiny hlavní knihy pro DPH V2 | msdyn_taxpostinggroups |
-Kódy srážkové daně | msdyn_withholdingtaxcodes |
-Skupiny srážkové daně | msdyn_withholdingtaxgroups | 
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
-
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
-
-[!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
-
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
-
-[!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
-
-[!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
-
+| Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
+|-----------------------------|-----------------------------------|-------------|
+[Skupina DPH zboží](mapping-reference.md#196) | msdyn_taxitemgroups | |
+[Finanční úřady](mapping-reference.md#193) | msdyn_taxauthorities | |
+[CDS entita kódu osvobození od DPH](mapping-reference.md#194) | msdyn_taxexemptcodes | |
+[Skupiny DPH](mapping-reference.md#195) | msdyn_taxgroups | |
+[Účetní skupiny hlavní knihy pro DPH V2](mapping-reference.md#197) | msdyn_taxpostinggroups | |
+[Kódy srážkové daně](mapping-reference.md#210) | msdyn_withholdingtaxcodes | |
+[Skupiny srážkové daně](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

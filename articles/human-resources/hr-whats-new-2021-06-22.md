@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae444b4d208804364333bd3d6e4704500da85470
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: c2f362e71832d6f7b17e06ad98142019ced4df14
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303555"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560067"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources 22. června 2021
 
@@ -44,7 +44,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 | --- | --- | --- |
 | Informovat uživatele pracovníků bez funkce zaměstnání - Když je zapnutý rozšířený přístup a funkce **Zobrazit všechny pracovníky bez zaměstnání** je ve správě funkcí zakázána, ve formuláři pracovníků bez zaměstnání se zobrazí banner. Banner nasměruje uživatele k zapnutí funkce **Zobrazit všechny pracovníky bez zaměstnání**. | Nelze použít| [Pracovníci bez zaměstnání](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Podpora vlastních polí v pravidlech nároku ve správě výhod | [Vlastní podpora pole pro zpracování způsobilosti](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Konfigurace pravidel způsobilosti](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Audit transakce časového rozlišení pracovního volna | Nelze použít | [Audit transakce časového rozlišení pracovního volna](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Audit transakce časového rozlišení pracovního volna | Nelze použít | [Audit transakce časového rozlišení pracovního volna](hr-leave-and-absence-accrue.md)|
 | Vylepšení workflowu s odchodem a nepřítomností | [Vylepšení workflowu s odchodem a nepřítomností](https://go.microsoft.com/fwlink/?linkid=2147528) | [Požádat o volno](hr-employee-self-service-request-time-off.md)|
 
 ### <a name="bug-fixes"></a>Opravy chyb

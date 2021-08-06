@@ -2,7 +2,7 @@
 title: Konfigurace pravidel a možností nároků
 description: Nastavte pravidla a možnosti nároků ve správě zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351650"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558362"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurace pravidel a možností nároků
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurace možností a pravidel způsobilosti 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Po nakonfigurování nezbytných parametrů pro správu výhod v Microsoft Dynamics 365 Human Resources můžete vytvářet pravidla způsobilosti, sady, období a programy, které budete přidružovat k plánům zaměstnaneckých výhod.
+Po nakonfigurování nezbytných parametrů pro správu výhod, můžete vytvářet pravidla způsobilosti, sady, období a programy, které budete přidružovat k plánům zaměstnaneckých výhod.
+
+Pravidla způsobilosti se používají k určení, zda má zaměstnanec nárok na plán. Zaměstnanci musí splňovat podmínku alespoň jednoho pravidla, aby mohli být považováni za způsobilé pro získání výhody. Například máte v plánu dvě pravidla. První pravidlo (řádek 1) uvádí, že typ zaměstnance musí být **Zaměstnanec**. Druhé pravidlo (řádek 2) uvádí, že typ zaměstnance musí být záměstnán na plný úvazek. Zaměstnanci, kteří splňují pravidlo 1, proto mají nárok, i když jsou zaměstnáni pouze na částečný úvazek.
+
+Můžete však nastavit jedno pravidlo, které má více podmínek. V takovém případě zaměstnanci musí splňovat všechny podmínky pravidla, aby mohli být považováni za způsobilé pro získání výhody. Například máte pravidlo s názvem **Zaměstnanec na plný úvazek**. Toto pravidlo uvádí, že typ zaměstnance musí být **Zaměstnanec** *a* zaměstnanec musí být zaměstnán na plný úvazek. Zaměstnanci proto musí splňovat obě podmínky pravidla, aby měli nárok.
+
+> [!IMPORTANT]
+> S každým plánem výhod musí být spojeno alespoň jedno pravidlo způsobilosti. K výhodě můžete přidružit více pravidel.
 
 ## <a name="create-an-eligibility-rule"></a>Vytvoření pravidla nároku
 
@@ -72,7 +79,7 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Způsobilý typ pozice** | Určuje typ nebo typy pozice, které splňují pravidlo způsobilosti. Například celý úvazek. |
    | **Způsobilý stav** | Určuje státy nebo provincie, které splňují pravidlo způsobilosti. Například Severní Dakota USA nebo Britská Kolumbie, Kanada. |
    | **Způsobilé podmínky zaměstnání** | Určuje podmínky zaměstnání, které splňují pravidlo způsobilosti. Například podle vůle nebo smlouvy skupiny. |
-   | **Způsobilý odbor** | Určuje členství v odborech, která splňují pravidlo způsobilosti. Například řidiči vysokozdvižného vozíku v Americe. </br></br>Použijete-li pravidlo způsobilosti založené na sjednocení, musí se v záznamu sjednocení pracovníka naplnit koncové datum. Nemůžete je nechat prázdné. |
+   | **Způsobilý odbor** | Určuje členství v odborech, která splňují pravidlo způsobilosti. Například řidiči vysokozdvižného vozíku v Americe.</br></br>Použijete-li pravidlo způsobilosti založené na sjednocení, musí se v záznamu sjednocení pracovníka naplnit koncové datum. Nemůžete je nechat prázdné. |
    | **Oprávněné PSČ** | Určuje úlohu nebo úlohy, které splňují pravidlo způsobilosti. Například 58104. |
 
 5. V části **Další podrobnosti** můžete zobrazit následující další podrobnosti.
@@ -131,7 +138,7 @@ Pokud je plánu zaměstnaneckých výhod přiděleno více pravidel nároků, mu
 ![Zaměstnanec může splnit požadavky pravidla Typu práce nebo pravidla Aktivní zaměstnanci.](media/RulesAssignedToAPlan.png)
  
 ### <a name="criteria-within-an-eligibility-rule"></a>Kritéria v rámci pravidla nároků 
-V pravidle definujete kritéria, která tvoří pravidlo. Ve výše uvedeném příkladu jsou kritéria pro pravidlo **Typ práce** je místo, kde Typ úlohy = Ředitelé. Zaměstnanec proto musí být ředitelem, aby byl způsobilý. Toto je pravidlo, kde je v pravidle pouze jedno kritérium.
+V pravidle definujete kritéria, která tvoří pravidlo. Ve výše uvedeném příkladu je kritérium pro pravidlo **Typ práce** místo, kde Typ úlohy = Ředitelé. Zaměstnanec proto musí být ředitelem, aby byl způsobilý. Toto je pravidlo, kde je v pravidle pouze jedno kritérium.
 
 Můžete definovat pravidla, která mají více kritérií. Když definujete více kritérií v rámci pravidla nároků, musí zaměstnanec splnit všechna kritéria v rámci pravidla, aby měl nárok na plán výhod. 
 

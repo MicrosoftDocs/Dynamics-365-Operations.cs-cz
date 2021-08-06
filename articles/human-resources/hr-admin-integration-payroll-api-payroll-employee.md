@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314278"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538847"
 ---
 # <a name="payroll-employee"></a>Zaměstnanec na výplatní listině
 
@@ -32,15 +32,19 @@ Fyzický název: mshr_payrollemployeeentity.
 
 Tato entita poskytuje informace o zaměstnanci. Musíte nastavit [parametry integrace mezd](hr-admin-integration-payroll-api-parameters.md) před použitím této entity.
 
+>[!IMPORTANT] 
+>Pole **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** a **NameValidTo** v této entitě již nebudou dostupné. Tím je zajištěno, že tuto entitu podporuje pouze jeden datový zdroj dat s platností, a to **HcmEmployment** s polemi **EmploymentStartDate** a **EmploymentEndDate**.
+
+>Tato pole budou k dispozici na **DirPersonNameHistoricalEntity**, která byla vydána v aktualizaci platformy 43. Existuje vztah OData z **PayrollEmployeeEntity** na **DirPersonNameHistoricalEntity** v poli **Osoba**. Případně lze entitu **DirPersonNameHistoricalEntity** přímo dotazovat prostřednictvím OData pomocí veřejného názvu **PersonHistoricalNames**.
+
+
 ## <a name="properties"></a>Vlastnosti
 
 | Vlastnost<br>**Fyzický název**<br>**_Typ_** | Použít | popis |
 | --- | --- | --- |
 | **Číslo pracovníka**<br>mshr_personnelnumber<br>*Řetězec* | Jen pro čtení<br>Povinná | Jedinečné osobní číslo zaměstnance. |
 | **Primární pole**<br>mshr_primaryfield<br>*Řetězec* | Povinná<br>Generováno systémem |  |
-| **Příjmení**<br>mshr_lastname<br>*Řetězec* | Jen pro čtení<br>Povinná | Příjmení zaměstnance. |
 | **ID právnické osoby**<br>mshr_legalentityID<br>*Řetězec* | Jen pro čtení<br>Povinná | Určuje právnickou osobu (společnost). |
-| **Platné od**<br>mshr_namevalidfrom<br>*Posun data a času* | Jen pro čtení <br>Povinná | Datum začátku platnosti informací o zaměstnanci.  |
 | **Rod**<br>mshr_gender<br>[Sada možností mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Jen pro čtení<br>Povinná | Pohlaví zaměstnance. |
 | **ID entity zaměstnance na výplatní listině**<br>mshr_payrollemployeeentityid<br>*GUID* | Povinná<br>Generováno systémem | Systémem generovaná hodnota GUID pro jedinečnou identifikaci zaměstnance. |
 | **Počáteční datum zaměstnání**<br>mshr_employmentstartdate<br>*Posun data a času* | Jen pro čtení<br>Povinná | Počáteční datum zaměstnaneckého poměru zaměstnance. |
@@ -50,8 +54,6 @@ Tato entita poskytuje informace o zaměstnanci. Musíte nastavit [parametry inte
 | **Platné do**<br>mshr_namevalidto<br>*Posun data a času* |  Jen pro čtení<br>Povinná | Datum konce platnosti informací o zaměstnanci. |
 | **Datum narození**<br>mshr_birthdate<br>*Posun data a času* | Jen pro čtení <br>Povinná | Datum narození zaměstnance |
 | **Identifikační číslo do**<br>mshr_identificationnumber<br>*Řetězec* | Jen pro čtení <br>Povinná |Identifikační číslo definované pro zaměstnance.  |
-| **Křestní jméno**<br>mshr_firstname<br>*Řetězec* | Jen pro čtení<br>Povinná | Jméno zaměstnance. |
-| **Druhé jméno**<br>mshr_middlename<br>*Řetězec* | Jen pro čtení<br>Povinná |Druhé jméno zaměstnance.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Příklad dotazu pro zaměstnance na výplatní pásce
 
@@ -69,11 +71,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

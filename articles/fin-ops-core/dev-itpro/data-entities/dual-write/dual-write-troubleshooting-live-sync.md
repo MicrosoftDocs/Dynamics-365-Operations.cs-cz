@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350781"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542508"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
 
@@ -81,7 +79,7 @@ Chcete-li tento problém vyřešit, je nutné přiřadit správné roli zabezpe�
 
     ![Mapování organizace.](media/mapped_business_unit.png)
 
-2. Přihlaste se k prostředí v aplikaci řízené podle modelů v Dynamics 365, přejděte k **Nastavení \> Zabezpečení** a najděte tým mapované organizační jednotky.
+2. Přihlaste se k prostředí v aplikaci customer engagement, přejděte k **Nastavení \> Zabezpečení** a najděte tým mapované organizační jednotky.
 
     ![Tým mapované organizační jednotky.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Může se zobrazit následující chybová zpráva při vytváření dat v aplik
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Nelze generovat datovou část pro entitu CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Vytvoření zatížení se nezdařilo s chybou Neplatný identifikátor URI: Identifikátor URI je prázdný."}\],"isErrorCountUpdated":true}*
 
-V tomto poli vypadá chyba v aplikaci řízené modelem v produktu Dynamics 365:
+Takto vypadá chyba v aplikaci customer engagement:
 
 *V kódu ISV došlo k neočekávané chybě. (ErrorType = ClientError) Neočekávaná výjimka z modulu plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: Nepodařilo se zpracovat účet entity. (Pokus o připojení se nezdařil, protože připojená strana nereagovala správně po určitém časovém období, nebo navázané připojení se nezdařilo, protože připojený hostitel neodpověděl.)*
 
@@ -125,6 +123,5 @@ Chcete-li opravit problém, postupujte následovně.
 
 3. Zkontrolujte, zda má sloupec **externalenvironmentURL** správnou Dataverse adresu URL aplikace. Odstraňte všechny duplicitní řádky, které ukazují na nesprávnou adresu URL Dataverse. Odstraňte odpovídající řádky z tabulek DUALWRITEPROJECTFIELDCONFIGURATION a DUALWRITEPROJECTCONFIGURATION.
 4. Zastavte mapování tabulek a restartujte jej
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

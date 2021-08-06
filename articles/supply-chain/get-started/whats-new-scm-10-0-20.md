@@ -1,5 +1,5 @@
 ---
-title: Náhled verze Dynamics 365 Supply Chain Management 10.0.20 (srpen 2021)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.20. (srpen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.20.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301739"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641049"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Náhled verze Dynamics 365 Supply Chain Management 10.0.20 (srpen 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.20. (srpen 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.20. Tato verze má číslo sestavení 10.0.886 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.20. Tato verze má číslo sestavení 10.0.886 a je k dispozici následujícím způsobem:
 
 - **Náhled verze:** květen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** červenec 2021
 - **Obecně dostupné vydání (automatická aktualizace):** srpen 2021
 
-
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
 V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci.
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 | Oblast funkce | Funkce | Další informace |
 |---|---|---|
@@ -49,7 +47,7 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 
 | Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
-| Hlavní plánování | Dny zpoždění pro Optimalizaci plánování | Tato funkce náhledu umožňuje optimalizaci plánování zohlednit toleranci zpoždění na základě parametru **Negativní dny** definovaného ve skupinách pokrytí. |
+| Hlavní plánování | Dny zpoždění pro Optimalizaci plánování | Tato funkce umožňuje optimalizaci plánování zohlednit toleranci zpoždění na základě parametru **Negativní dny** definovaného ve skupinách pokrytí. |
 | Hlavní plánování | Paralelní autorizace upravené prognózy poptávky | Tato funkce umožňuje paralelní autorizaci upravené prognózy poptávky ze stránky **Upravená předpověď poptávky**. Záměrem této funkce je zvýšit výkon při autorizaci vysokého počtu prognóz. Při autorizaci může uživatel zadat **Počet vláken** v autorizačním dialogu. |
 | Hlavní plánování | (Preview) Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Tato funkce umožňuje používat dávkové úlohy k potvrzení a konsolidaci plánovaných hromadných a balíkových objednávek. |
 | Řízení výroby | Zkopírujte obecné postupy | Tato funkce vylepšuje funkci kopírování trasy a umožňuje uživatelům kopírovat trasy, které nejsou specifické pro jednotlivé položky. Umožňuje systému aktualizovat všechny relevantní informace (například web, skupinu tras, požadavky na zdroje a různé časy) poté, co byla funkce kopírování trasy použita k přepsání trasy, která ještě není přiřazena k položce. |
@@ -75,7 +73,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.20 aplikací Finance and Operations (červenec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.20 aplikací Finance and Operations (červenec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

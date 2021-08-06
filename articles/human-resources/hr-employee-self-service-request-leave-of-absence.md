@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056317"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639407"
 ---
 # <a name="request-a-leave-of-absence"></a>Žádost o pracovní volno
 
@@ -48,6 +48,10 @@ Můžete podat žádost o pracovní volno a zobrazit stav svých žádostí o vo
 1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Více** (...) v dlaždici **Zůstatky volna**.
 
 2. Chcete-li zobrazit své žádosti o pracovní volno, vyberte **Zobrazit pracovní volno**.
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Import požadavků na dovolenou z jiných systémů nebo starších systémů
+
+Chcete-li importovat žádosti o dovolenou z jiného systému, musíte projít běžným pracovním postupem a vytvořit příslušné transakce dovolené. Případně můžete importovat bankovní transakce dovolené a žádosti o dovolenou v dokončeném stavu. Upozorňujeme, že transakce dovolené se nevytvářejí automaticky, pokud importujete pouze žádosti o dovolenou.
 
 ## <a name="see-also"></a>Viz také
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350829"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542408"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
@@ -71,7 +71,7 @@ Chcete-li poskytnout souhlas s aplikací, postupujte podle následujících krok
 
 Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Dataverse vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít tabulku **Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
 
-1. V aplikaci řízené modelem v produktu Dynamics 365 vyberte filtr v pravém horním rohu.
+1. V aplikaci Customer Engagement vyberte filtr v pravém horním rohu.
 2. V rozevíracím seznamu vyberte **Společnost**.
 3. Výsledky zobrazíte výběrem možnosti **Spustit**.
 4. Vyberte společnost, která byla propojena při konfiguraci dvojího přepisu.

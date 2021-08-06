@@ -1,7 +1,7 @@
 ---
 title: Průzkumník zdroje účetnictví
 description: Tento článek obsahuje informace o nástroji Průzkumník zdroje účetnictví, který slouží pro podrobnou analýzu informace zdroje za účetními položkami hlavní knihy.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820924"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661030"
 ---
 # <a name="accounting-source-explorer"></a>Průzkumník zdroje účetnictví
 
@@ -46,8 +46,10 @@ Pro zdrojové dokumenty, které používají koncept identit odkazu na zdrojový
 
 Pro tyto dokumenty můžete také z Průzkumníka zdroje účetnictví přejít na samotný zdrojový dokument.
 
-
-
-
+> [!NOTE]
+> Od verze 10.0.20 tlačítko **Aktualizace** poskytuje dva další rozsahy k omezení počátečního dotazu, který je spuštěn pro zadávání dat na stránce. Tyto další rozsahy jsou také k dispozici ve verzi 10.0.19 jako aktualizace služby. Byla přidána následující pole:
+>
+> - Od dokladu, Po doklad
+> - Z hlavního účtu, Na hlavní účet
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

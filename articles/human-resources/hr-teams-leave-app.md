@@ -2,7 +2,7 @@
 title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356505"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639431"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -166,6 +166,10 @@ Pokud máte potíže s přihlášením nebo používáním aplikace Dynamics 365
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nelze se přihlásit do aplikace Human Resources v Teams
 
 Pokud se nemůžete do aplikace přihlásit, je možné, že účet, pomocí kterého se přihlašujete do Microsoft Teams není spojen se záznamem zaměstnance v Dynamics 365 Human Resources. Požádejtea správce systému o ověření, jestli je váš záznam zaměstnance správně přidružen.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Nelze najít prostředí Dynamics 365 Human Resources v Nastavení
+
+Pokud nemůžete vybrat správné prostředí Dynamics 365, nemusí být záznam uživatele správně synchronizován. Požádejte správce systému, aby znovu vytvořil záznam uživatele a přidružil jej k pověření uživatele. Pak se pokuste přihlásit do aplikace Human Resources pro Microsoft Teams za pár minut.
 
 ### <a name="translations-dont-display-correctly"></a>Překlady se nezobrazují správně
 

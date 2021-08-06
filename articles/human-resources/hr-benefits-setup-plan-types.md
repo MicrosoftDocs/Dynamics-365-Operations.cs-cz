@@ -1,8 +1,8 @@
 ---
-title: Vytvoření typů plánu
+title: Přehled typů plánů
 description: Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057855"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558266"
 ---
-# <a name="create-plan-types"></a>Vytvoření typů plánu
+# <a name="plan-type-overview"></a>Přehled typů plánů
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu. Například typ základního životního plánu by měl mít kód typu plánu Životní, protože se jedná o druh plánu životního pojištění a musí vyhovovat pravidlům stanoveným pro kód typu plánu životního pojištění. Jiným typem plánu může být Doplňkové životní, rovněž s kódem typu plánu Životní.
+Typ plánu je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu. Například typ **základního životního** plánu bude mít kód typu plánu **Životní**, protože se jedná o typ plánu životního pojištění a musí vyhovovat pravidlům stanoveným pro kód typu plánu **životního** pojištění. Jiný typ plánu může být **Doplňkové životní**. Tento typ plánu bude mít také **Životní** kód typu plánu.
 
 Každý typ plánu určuje, zda může zaměstnanec zaregistrovat jeden nebo více plánů. Zaměstnanec by například mohl být schopen zaregistrovat se pro základní a doplňkové životní pojištění u typu plánu životní. Zaměstnanec by pravděpodobně mohl zaregistrovat pouze jednu pojistku typu Zdravotní.
 
 Pokud typ plánu zahrnuje kontakty, typ plánu indikuje, zda jsou kontakty příjemci nebo závislé osoby. Základní typ životního plánu by měl mít například oprávněné osoby, zatímco základní typ lékařského plánu by měl závislé osoby. V některých případech nesmí mít plán žádné osobní kontakty. Jedná se například o pružný účet výdajů nebo doplatek za parkování.
 
 Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definovány ve formuláři možnosti pokrytí. Možnost pokrytí může určovat výši zaměstnanecké výhody nebo kontakty, které mají nárok na typ plánu. Je-li například typem kontaktu příjemce, možnost pokrytí by měla definovat podmínky, které má příjemce nárokovat, pokud je výhoda využívána. Je-li typ kontaktu závislá osoba, možnost pokrytí by měla definovat vztah mezi závislou osobou a zaměstnancem. 
+
+> [!IMPORTANT]
+> Formulář obsahuje klíčová data, která ovlivňují možnosti, které jsou k dispozici při vytváření nového plánu výhod:
+>
+> - **Kód typu plánu** - Toto pole ovlivňuje to, co je zobrazeno na kartě **Konfigurace**, když je nastavena skutečná výhoda.  
+> - **Souběžná registrace** - Toto pole určuje, zda je povoleno více registrací. (U lékařského plánu je toto pole obvykle nastaveno na **Jedna registrace**.)
+> - **Typ kontaktu** - Toto pole umožňuje přidat závislé osoby nebo příjemce do plánu. Pokud je nastaven na **Žádný**, zaměstnanci, kteří si zaregistrují výhody, nebudou mít možnost vybrat si příjemce nebo závislou osobu.
+> - **Možnosti pokrytí** - Toto pole slouží k propojení možností pokrytí s typy plánů. Definuje buď jednotlivce, na které se bude tento typ plánu vztahovat, nebo částky krytí, které jsou pro tento typ plánu k dispozici. Můžete například určit, že krytí pro typ zdravotního plánu bude k dispozici pouze zaměstnanci, zaměstnanci a jedné další osobě nebo zaměstnanci a jejich rodině.
+
+## <a name="create-plan-types"></a>Vytvoření typů plánu
 
 1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **typy plánu**.
 

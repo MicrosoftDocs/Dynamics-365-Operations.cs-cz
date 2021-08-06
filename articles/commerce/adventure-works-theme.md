@@ -2,7 +2,7 @@
 title: Přehled motivu Adventure Works
 description: Toto téma poskytuje přehled motivu Adventure Works a popisuje, jak ho použít na stránky webu v Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479418"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655625"
 ---
 # <a name="adventure-works-theme-overview"></a>Přehled motivu Adventure Works
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Toto téma poskytuje přehled motivu Adventure Works a popisuje, jak ho použít na stránky webu v Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce má motiv pro elektronický obchod s názvem Adventure Works. Motiv Adventure Works představuje sportovní a rekreační produkty a je optimalizováno pro bohatý a vylepšený zážitek z vyprávění. Poskytuje moderní vzhled, nové rozvržení a animační efekty, které zákazníkům v oblasti elektronického obchodování nabízejí pohlcující a poutavý zážitek z online nakupování.
 
-Motiv Adventure Works poskytuje následující nové pracovní postupy:
+## <a name="trial-environments-in-commerce"></a>Zkušební prostředí v Commerce
+
+Chcete-li zjistit, jak vypadá motiv Adventure Works, když je nasazen pro weby business-to-consumer (B2C) a business-to-business (B2B), navštivte následující zkušební weby:
+
+- [Web B2C Adventure Works](https://www.adventure-works.com/)
+- [Web B2B Adventure Works](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Možnosti motivu
+
+Motiv Adventure Works poskytuje následující nové možnosti:
 
 - Modul přehrávače videa nyní podporuje funkci nadpisu, odstavce a odkazů pro další vyprávění.
-- Akce přidání do košíku vyvolá minikošík místo oznámení.
+- Existují lepší přechody obsahu prostřednictvím animace.
+- Akce "přidání do košíku" vyvolá minikošík místo oznámení.
 - Modul rychlého zobrazení je podokno, které se zasouvá do výřezů na stolních i mobilních zařízeních.
-- Prázdný košík může nyní prezentovat propagační akce.
+- Pro stránky webu existují nová rozvržení. 
+- Marketingový obsah lze nakonfigurovat pro košík a mini košík, když jsou prázdné.
+- Mini košík může zobrazovat propagační zprávy, například „Doprava zdarma u objednávek nad 50 USD.“
+- Karty popisu se vykreslují na stránkách vyhledávání a kategorií.
 
-Motiv Adventure Works obsahuje následující vyprávěcí moduly v knihovně modulů Commerce:
+Motiv Adventure Works nyní obsahuje následující vyprávěcí moduly v knihovně modulů Commerce:
 
-- Modul seznamu dlaždice
-- Modulu interaktivní funkce
-- Modulu přihlášení k odběru
-- Modul aktivního obrázku
-- Modul seznamu obrázků
+- [Modul seznamu dlaždic](tile-list-module.md)
+- [Interaktivní modul funkcí](interactive-feature-module.md)
+- [Aktivní modul obrázků](active-image-module.md)
+- [Modul odběru](subscribe-module.md)
+- [Modul seznamu obrázků](image-list-module.md)
 
 Motiv Adventure Works plně reaguje a poskytuje optimalizované prostředí pro zobrazení pro stolní počítače, mobilní zařízení a tablety.
 
@@ -78,11 +90,15 @@ Stejně tak ostatní moduly obsahují rozšíření definice modulů. Napříkla
 
 Další informace o rozšířeních motivů najdete v části [Rozšíření motivu](e-commerce-extensibility/theme-module-extensions.md).
 
+## <a name="install-the-adventure-works-theme"></a>Instalace motivu Adventure Works
+
+Informace o tom, jak nainstalovat motiv Adventure Works, najdete v části [Nainstalujte si motiv Adventure Works ](install-adventure-works.md).
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled knihovny modulů](starter-kit-overview.md)
 
-[Modul seznamu dlaždice](tile-list-module.md)
+[Modul seznamu dlaždic](tile-list-module.md)
 
 [Modulu interaktivní funkce](interactive-feature-module.md)
 

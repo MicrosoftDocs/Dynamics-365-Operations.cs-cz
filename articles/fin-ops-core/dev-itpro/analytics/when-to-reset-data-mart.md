@@ -2,7 +2,7 @@
 title: Časté otázky týkající se resetování datového tržiště
 description: Toto téma poskytuje odpovědi na několik dotazů týkajících se resetování datového tržiště.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266602"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638260"
 ---
 # <a name="data-mart-resets-faq"></a>Časté otázky týkající se resetování datového tržiště
 
@@ -37,6 +37,9 @@ Pokud se na vaši situaci vztahuje jeden nebo více z následujících výroků,
 
 - Byla obnovena databáze aplikací.
 - Otevřeli jste lístek podpory a technik podpory vám nařídil resetovat datové tržiště jako součást kroku odstraňování problémů.
+ 
+> [!NOTE]
+> Proces resetování datového tržiště je ovlivněn počtem transakcí hlavní knihy a rozpočtu ve vaší databázi. V závislosti na počtu transakcí ve vašem systému lze reset datového tržiště dokončit za pouhých 15 minut, nebo to může trvat až čtyři hodiny. Pokud však váš reset trvá déle než čtyři hodiny, doporučujeme vám kontaktovat podporu.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Kdy není resetování datového tržiště vhodné?
 

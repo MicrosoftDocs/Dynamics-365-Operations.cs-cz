@@ -2,7 +2,7 @@
 title: Začněte s výpočtem daně
 description: Toto téma vysvětluje, jak nastavit výpočet daně.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336649"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644967"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Začínáme s doplňkem výpočtem daně (preview)
 
@@ -58,15 +58,16 @@ Než budete moci dokončit postupy uvedené v tomto tématu, musí být splněn
 Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postup musíte dokončit pouze jednou a můžete jej dokončit u jakékoli právnické osoby v RCS.
 
 1. Přihlaste se do [RCS](https://marketing.configure.global.dynamics.com/).
-2. V pracovním prostoru **Elektronické výkaznictví** přidejte nového poskytovatele konfigurace. Jako název poskytovatele použijte název vaší společnosti. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Vyberte poskytovatele konfigurace, kterého jste právě vytvořili, a pak vyberte možnost **Nastavit jako aktivní**.
-4. Vyberte poskytovatele konfigurace **Microsoft** a poté vyberte **Úložiště**.
-5. V poli **Typ** vyberte **Globální**.
-6. Zvolte **Otevřít**.
-7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
-8. Vyberte nejnovější verzi a poté vyberte **Importovat**.
-9. Vraťte se do pracovního prostoru **Funkce globalizace (Preview)**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
-10. Vyberte jeden z následujících typů funkce:
+2. Přejděte do pracovního prostoru **Správa funkcí**, vyberte a zapněte funkci **Funkce globalizace**.
+3. V pracovním prostoru **Elektronické výkaznictví** přidejte nového poskytovatele konfigurace. Jako název poskytovatele použijte název vaší společnosti. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Vyberte poskytovatele konfigurace, kterého jste právě vytvořili, a pak vyberte možnost **Nastavit jako aktivní**.
+5. Vyberte poskytovatele konfigurace **Microsoft** a poté vyberte **Úložiště**.
+6. V poli **Typ** vyberte **Globální**.
+7. Zvolte **Otevřít**.
+8. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
+9. Vyberte nejnovější verzi a poté vyberte **Importovat**.
+10. Vraťte se do pracovního prostoru **Funkce globalizace**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
+11. Vyberte jeden z následujících typů funkce:
 
     - **Nová funkce** – Vytvořte nastavení funkce, která má prázdný obsah.
     - **Na základě stávající funkce** – Vytvořte funkci z existující funkce a zkopírujte obsah z nastavení existující funkce.

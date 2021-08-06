@@ -4,24 +4,17 @@ description: Toto téma obsahuje informace o kontrole dostupnosti zásob ve dvoj
 author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 0fded78134b1427e6faea9656e1d3b02b467ae91
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 175e1cc568ed027feee39eabfd9f08de6fe7f4b4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193400"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542630"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Dostupnost zásob v dvojitém zápisu
 
@@ -64,58 +57,12 @@ Když vyberete tlačítko **Zásoby na skladě** na stránce **Nabídky**, **Obj
 - Ruční žádosti o zásoby CDS (msdyn_inventoryonhandrequests)
 
 ## <a name="templates"></a>Šablony
+
 Následující šablony jsou k dispozici pro vystavení údajů o přímých zásobách.
 
-Aplikace Finance and Operations | Aplikace Customer Engagement | popis 
+Aplikace Finance and Operations | Aplikace Customer Engagement     | popis
 ---|---|---
-[Položky zásob na skladě CDS](#145) | msdyn_inventoryonhandentries |
-[Požadavky na zásoby na skladě CDS](#147) | msdyn_inventoryonhandrequests |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Ruční záznamy o zásobách CDS (msdyn_inventoryonhandentries)
-
-Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Dataverse.
-
-Pole aplikace Finance and Operations | Typ mapování | Pole Customer Engagement | Výchozí hodnota
----|---|---|---
-`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
-`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
-`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
-`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
-`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
-`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
-`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
-`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
-`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
-`ATPDATE` | = | `msdyn_atpdate` |
-`ATPQUANTITY` | > | `msdyn_atpquantity` |
-`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
-`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
-`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
-`ORDERQUANTITY` | > | `msdyn_orderquantity` |
-`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
-
-###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Ruční žádosti o zásoby CDS (msdyn_inventoryonhandrequests)
-
-Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Dataverse.
-
-Pole aplikace Finance and Operations | Typ mapování | Pole Customer Engagement | Výchozí hodnota
----|---|---|---
-`REQUESTID` | = | `msdyn_requestid` |
-`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
-`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
-`ORDERQUANTITY` | < | `msdyn_orderquantity` |
-`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`REFERENCENUMBER` | < | `msdyn_referencenumber` |
-`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
-
-
-
-
-
+[Položky zásob na skladě CDS](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[Požadavky na zásoby na skladě CDS](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

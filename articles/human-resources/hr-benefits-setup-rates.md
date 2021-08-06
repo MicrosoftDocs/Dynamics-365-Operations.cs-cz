@@ -2,7 +2,7 @@
 title: Konfigurace sazeb
 description: Sazby v Microsoft Dynamics 365 Human Resources definují, jakým způsobem přispívají zaměstnavatelé a zaměstnanci k zaměstnanecké výhodě.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 85cf561828aa8ef9d80df31436f473b29406e2fd
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266650"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558338"
 ---
 # <a name="configure-rates"></a>Konfigurace sazeb
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Sazby v Microsoft Dynamics 365 Human Resources definují, jakým způsobem přispívají zaměstnavatelé a zaměstnanci k zaměstnanecké výhodě. Hodnota může být v závislosti na konfiguraci částka nebo pružné kredity.
+Sazby definují, jakým způsobem přispívají zaměstnavatelé a zaměstnanci k zaměstnanecké výhodě. Hodnota může být v závislosti na konfiguraci částka nebo několik flexibilních kreditů.
 
 Pomocí sazeb lze určit, kolik zaměstnanců a zaměstnavatelů platí na jednotlivé zaměstnanecké výhody na základě několika faktorů. Sazby disponibility jsou efektivní podle data, takže je možné uchovat historické záznamy o sazbách. 
 
@@ -42,10 +42,10 @@ Pomocí sazeb lze určit, kolik zaměstnanců a zaměstnavatelů platí na jedno
    | --- | --- |
    | **Kurz** | Jedinečný název, který identifikuje sazbu zaměstnanecké výhody. |
    | **Popis** | Stručný popis sazby zaměstnanecké výhody |
-   | **Účinné:** | Datum, kdy je sazba platná. Výchozí hodnotou je aktuální systémové datum. 
+   | **Účinné:** | Datum, od kterého je sazba platná. Výchozí hodnotou je aktuální systémové datum. Toto datum by mělo být stejné nebo dříve než vaše období výhod. Dobrým postupem je nastavit toto datum na datum plánu dávek. |
    | **Vypršení platnosti** | Koncové datum sazby Výchozí hodnota je 12/31/2154 (což znamená nikdy). |
-   | **Použít úrovně** | Úroveň, která má být použita pro výpočet sazby zaměstnaneckých výhod. Jediná úroveň pro jednu sazbu zaměstnaneckých výhod nebo dvojnásobná úroveň pro sazbu zaměstnaneckých výhod dvou úrovní. Příkladem dvojité úrovně je úroveň založená na pohlaví a věku. |
-   | **Frekvence plateb** | Četnost plateb, která určuje, jak často je sazba příplatku na zaměstnanecké výhody placena zprostředkovatelem zaměstnaneckých výhod. Je-li například četnost plateb měsíční, představuje zaměstnanecká sazba měsíční částku platby. |
+   | **Použít úrovně** |  Toto pole použijte, pokud máte logiku, která musí být použita k určení sazby. Pokud se například sazba musí zvýšit na základě věku, vyberte zde hodnotu. Vyberte **Jediná úroveň** pro jednu sazbu zaměstnaneckých výhod nebo **dvojitá úroveň** pro sazbu zaměstnaneckých výhod dvou úrovní. Příkladem dvojité úrovně je úroveň založená na pohlaví a věku. Po výběru hodnoty vyberte **Akce** a potom vyberte **Úrovně sazeb**. Pokud máte paušální sazbu, která se nemění, nechte toto pole prázdné. |
+   | **Četnost plateb** | Uveďte, jak často by měla být sazba pojistného na dávky vyplácena poskytovateli dávek. Sazby, které zadáte na stránce popsané dále v tomto tématu, budou založeny na frekvenci plateb, kterou zde zadáte. Například pokud zadáte **Měsíční** do tohoto pole a zadáte sazbu pro zaměstnance ve výši **100 $**, předpokládá se, že výhoda bude zaměstnance stát $100 měsíčně. Zaměstnanec však může být placen dvakrát za měsíc na základě četnosti výplat dávek, která je nastavena v záznamu zaměstnance. V tomto případě, když se zaměstnanec přihlásí k samoobsluze zaměstnanců, bude částka, kterou zaplatí, $50, protože sazba, kterou samoobsluha zaměstnanců zobrazuje, je založena na frekvenci plateb zaměstnance. |
    | **Zaokrouhlení sazby platební frekvence** | Metody zaokrouhlování kurzu jsou: Standardní, Zkrácené, Normální, Dolů a Zaokrouhlování nahoru. </br></br><ul><li>**Standard** - Vždy zaokrouhlit nahoru. Například 10,611 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,23. </li><li>**Zkráceno** - Vždy zaokrouhlit dolů. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,24. </li><li>**Normální** - Desetinná místa končící nebo větší než 5 se zaokrouhlují směrem od nuly. Desetinné hodnoty končící na nebo menší než 4 se zaokrouhlují na nulu. Například 10,615 se zaokrouhlí na 10,62. -10,235 se zaokrouhlí na -10,24. 10,614 se zaokrouhlí na 10,61. -10,234 se zaokrouhlí na -10,23. </li><li>**Dolů** - Zaokrouhlit na nulu. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,23. </li><li>**Zaokrouhlování nahoru** - Zaokrouhlení nahoru. Například 10,619 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,24. |
    | **Částka zaměstnance nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
    | **Částka zaměstnavatele nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
@@ -66,6 +66,9 @@ V případě, že se sazba liší v závislosti na různých faktorech, může
 
 Můžete také používat dvojí úrovně. Pokud pro hodnotu **Použít úrovně** vyberete **Dvojí úroveň** ve formuláři **Nastavení sazby**, můžete definovat sazby na základě dvou dimenzí. Můžete například nakonfigurovat systém dvojité úrovně tak, aby uváděly, že jste muž ve věku až 34,99, částka pro nekuřáka bude 2. Pokud jste muž ve věku do 39,99, je částka pro nekuřáka 3. Pokud jste žena ve věku do 34,99, je částka pro nekuřáka 1.8. Pokud jste žena ve věku do 39,99, je částka pro nekuřáka 2.8.
 
+> [!IMPORTANT]
+> Možnost v **Osobní informace** v záznamu pracovníka se používá k označení, zda je zaměstnanec kuřák. Pokud je zaměstnanec zaznamenán jako kuřák, použije se kuřácká sazba. (Označení kuřáka se zaměstnanci nikdy nezobrazí.)
+   
 1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Sazby**.
 
 2. Vyberte jednu nebo více sazeb ze seznamu, vyberte **akce** a pak vyberte možnost **Úrovně sazby**.
@@ -92,6 +95,7 @@ Můžete také používat dvojí úrovně. Pokud pro hodnotu **Použít úrovně
    | **Sazba flexibilního kreditu kuřáka** | Počet flexibilních kreditů pro náklady na zaměstnanecké výhody na základě výpočtu definovaného pro úroveň úrovně pro kuřáky. |
 
 5. Zvolte **Uložit**. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

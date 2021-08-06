@@ -2,24 +2,24 @@
 title: Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování
 description: Toto téma popisuje, jak mohou správci přidávat, upravovat a mazat uživatele - obchodní partnery - na webech elektronického obchodování typu business-to-business (B2B).
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936649"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655599"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování
 
@@ -67,7 +67,7 @@ Chcete-li schválit a nastavit uživatele - správce obchodního partnera - v ce
 
 1. Přejděte na **IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu **1010** (**Zákazníci**), chcete-li poslat nově vytvořené záznamy zákazníků a hierarchie zákazníků do databáze kanálů.
 
-Po schválení požadavku a po synchronizaci záznamů zákazníka a hierarchie zákazníků do databáze kanálů se může žadatel přihlásit na web elektronického obchodování B2B pomocí e-mailové adresy, kterou zadal při odeslání žádosti. Uživatelé mohou pomocí postupu registrace definovat heslo pro svůj účet.
+Po schválení požadavku a po synchronizaci záznamů zákazníka a hierarchie zákazníků do databáze kanálů se může žadatel přihlásit na web elektronického obchodování B2B pomocí e-mailové adresy, kterou zadal při odeslání žádosti. Uživatelé mohou pomocí postupu registrace definovat heslo pro svůj účet. Pro povolení záznamu poskytovatele identity (Azure AD B2C), který má být propojen se záznamem zákazníka B2B, který byl vytvořen při registraci nebo přihlášení, postupujte podle pokynů v [Povolit automatické propojení záznamů totožnosti s účty zákazníků](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Zapojte další uživatele obchodních partnerů
 
@@ -83,7 +83,7 @@ Chcete-li zapojit další uživatele obchodních partnerů na web B2B elektronic
 
 1. Spusťte úlohu **1010** (**Zákazníci**) pro synchronizaci nového uživatele obchodního partnera s databází kanálů.
 
-Po synchronizaci záznamu zákazníka je stav uživatele na webu B2B elektronického obchodování nastaven na **Aktivní** a nový uživatel se může přihlásit na web elektronického obchodu B2B pomocí své e-mailové adresy. Uživatelé mohou pomocí postupu registrace definovat heslo pro svůj účet.
+Po synchronizaci záznamu zákazníka je stav uživatele na webu B2B elektronického obchodování nastaven na **Aktivní** a nový uživatel se může přihlásit na web elektronického obchodu B2B pomocí své e-mailové adresy. Uživatelé mohou pomocí postupu registrace definovat heslo pro svůj účet. Pro povolení záznamu poskytovatele identity (Azure AD B2C), který má být propojen se záznamem zákazníka B2B, který byl vytvořen při registraci nebo přihlášení, postupujte podle pokynů v [Povolit automatické propojení záznamů totožnosti s účty zákazníků](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Upravit údaje o uživateli - obchodním partnerovi
 

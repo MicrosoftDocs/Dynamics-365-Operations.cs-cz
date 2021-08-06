@@ -2,7 +2,7 @@
 title: Nastavení leasingových knih
 description: Toto téma popisuje informace udržované v leasingových knihách. Leasingové knihy obsahují účetní zásady, které určují, jak je v systému účtován leasing.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: aafb5913d9aff8b0ac2cfbb8126f4b6d8362c96c
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: cf663c95095c0b31a6282f96c50303b40e212646
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5880929"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638440"
 ---
 # <a name="set-up-lease-books"></a>Nastavení leasingových knih
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Leasingové knihy obsahují účetní zásady, které určují, jak je v systému účtován leasing. Kromě hotovostního účetnictví podporuje majetkový leasing následující standardy:
 

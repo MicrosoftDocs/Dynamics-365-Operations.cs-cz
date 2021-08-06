@@ -2,7 +2,7 @@
 title: Systém nápovědy
 description: Toto téma poskytuje přehled o systému nápovědy pro aplikace Finance and Operations.
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
-ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
+ms.openlocfilehash: e0ba083c64c840e17bf2fba982b2686c8a47e097
+ms.sourcegitcommit: 5c9a5bfef507ed36f0f849ab56fa0aa8abb78d54
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "6373360"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6646506"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -30,7 +30,7 @@ ms.locfileid: "6373360"
 
 Uživatelé následujících aplikací mohou přistupovat ke kontextové nápovědě a jinému obsahu, který je založen na stejném systému nápovědy:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -48,23 +48,23 @@ Web docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) je vý
 
 Obsah na docs.microsoft.com najdete pomocí libovolného vyhledávače. Pro dosažení nejlepších výsledků vám doporučujeme použít vyhledávání na webu, například **site:docs.microsoft.com dynamics 365 "hledaný termín"**.
 
-<!--## Get notified about changes through an RSS feed
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Získejte informace o změnách prostřednictvím kanálu RSS
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+Chcete-li se přihlásit k odběru kanálu RSS všech aktualizací obsahu na docs.microsoft.com npříč aplikacemi Finance and Operations, použijte následující odkaz:
 
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+[Kanál RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> Zdroj RSS vrací seznam 100 naposledy aktualizovaných témat. Seznam není roztříděn podle data.  
 
-Alternatively, you can subscribe to an RSS feed by app:
+Alternativně se můžete přihlásit k odběru kanálu RSS pomocí aplikace:
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
 - [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
-COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
+- [Dodavatelský řetězec](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Správa talentů](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+
 ### <a name="leave-us-feedback"></a>Zanechte nám svůj názor
 
 Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní části stránky.
