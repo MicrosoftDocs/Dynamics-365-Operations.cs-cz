@@ -2,7 +2,7 @@
 title: Pozice hotovosti (Preview)
 description: Toto téma popisuje, jak funkce prognózování cashflow predikuje pozici hotovosti organizace pro konkrétní časy. Také popisuje možnosti, které jsou k dispozici pro zobrazování prognóz pro různá období.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 1935be3b2d52e19b764e6afdf00a8bc546f801df
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186485"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638745"
 ---
 # <a name="cash-position-preview"></a>Pozice hotovosti (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Pozice hotovosti je projekce cashflow, která se předpovídá na nejbližší období. Je založena na projekci hotovostních příjmů od zákazníků, kteří platí neuhrazené faktury a objednávky, a také na projekci hotovostních výdajů, které jsou vypláceny prodejcům za nákupní faktury a objednávky.
 

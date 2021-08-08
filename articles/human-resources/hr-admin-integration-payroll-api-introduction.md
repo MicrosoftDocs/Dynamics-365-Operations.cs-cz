@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a1e94067e2dcca59f03e01520f16a09da1bd4f52
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360561"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559983"
 ---
 # <a name="payroll-integration-api-introduction"></a>Úvod do rozhraní API integrace mezd
 
@@ -30,8 +30,8 @@ Tento dokument popisuje rozhraní API Dynamics 365 Human Resources pro integraci
 
 Aby bylo možné integraci povolit, v modulu Human Resources jsou přidány tyto komponenty:
 
-- Funkce pro označení zaměstnance jako připraveného k výplatě
-- Rozhraní API pro integraci, které otevírá nové funkce pro integraci aplikací
+- [Funkce pro označení zaměstnance jako připraveného k výplatě.](hr-compensation-payroll.md)
+- Rozhraní API pro integraci, které otevírá nové funkce pro integraci aplikací.
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 

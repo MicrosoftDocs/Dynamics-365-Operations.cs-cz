@@ -4,24 +4,17 @@ description: Toto téma popisuje integraci dat organizace mezi aplikacemi Financ
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355291"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542580"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organizační hierarchie v Dataverse
 
@@ -45,32 +38,17 @@ Mapování tabulky organizační hierarchie je k dispozici pro jednosměrnou syn
 
 Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map tabulek pro synchronizaci produktů a souvisejících informací.
 
-Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
+Aplikace Finance and Operations | Aplikace Customer Engagement     | popis
 -----------------------|--------------------------------|---
-Účely organizační hierarchie | msdyn_internalorganizationhierarchypurposes | Tato šablona poskytuje jednosměrnou synchronizaci tabulky účelu hierarchie organizace.
-Typ organizační hierarchie | msdyn_internalorganizationhierarchytypes | Tato šablona poskytuje jednosměrnou synchronizaci tabulky typu hierarchie organizace.
-Organizační hierarchie - publikovaná | msdyn_internalorganizationhierarchies | Tato šablona poskytuje jednosměrnou synchronizaci tabulky publikované hierarchie organizace.
-Provozní jednotka | msdyn_internalorganizations |
-Právnické osoby | msdyn_internalorganizations |
-Právnické osoby | cdm_companies | Poskytuje obousměrnou synchronizaci informací o právnické osobě (společnosti).
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[Právnické osoby](mapping-reference.md#102) | cdm_companies | Poskytuje obousměrnou synchronizaci informací o právnické osobě (společnosti).
+[Právnické osoby](mapping-reference.md#142) | msdyn_internalorganizations |
+[Provozní jednotka](mapping-reference.md#143) | msdyn_internalorganizations |
+[Organizační hierarchie - publikovaná](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Tato šablona poskytuje jednosměrnou synchronizaci tabulky publikované hierarchie organizace.
+[Účely organizační hierarchie](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Tato šablona poskytuje jednosměrnou synchronizaci tabulky účelu hierarchie organizace.
+[Typ organizační hierarchie](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Tato šablona poskytuje jednosměrnou synchronizaci tabulky typu hierarchie organizace.
 
 ## <a name="internal-organization"></a>Interní organizace
 
-Informace o interní organizaci v Dataverse pocházejí ze dvou tabulek, **provozní jednotka** a **právnická osoba**.
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
+Informace o interní organizaci v Dataverse pocházejí ze dvou tabulek, **Provozní jednotka** a **Právnická osoba**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

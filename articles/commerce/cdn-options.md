@@ -2,7 +2,7 @@
 title: Možnosti implementace sítě pro doručování obsahu
 description: V tomto tématu jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351242"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657112"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Možnosti implementace sítě pro doručování obsahu
 
@@ -50,7 +50,7 @@ V následující tabulce jsou uvedeny výhody a nevýhody používání instance
 
 | Výhody | Nevýhody |
 |------|------|
-| <ul><li>Instance je zahrnuta v ceně Commerce.</li><li>Protože instance je spravována týmem Commerce, je vyžadována menší údržba a existují sdílené kroky instalace.</li><li>Infrastruktura hostovaná v Azure je škálovatelná, bezpečná a spolehlivá.</li><li>Certifikát SSL (Secure Sockets Layer) vyžaduje jednorázové nastavení a je automaticky obnovován.</li><li>Instance je monitorována z hlediska chyb a anomálií týmem Commerce.</li></ul> | <ul><li>WAF není podporována.</li><li>Neexistují žádná konkrétní přizpůsobení nebo úpravy nastavení.</li><li>Instance závisí na aktualizaci nebo změnách týmu Commerce.</li><li>Pro vrcholové domény je vyžadována samostatná instance Azure Front Door a pro integraci vrcholových domén s Azure DNS je zapotřebí další práce.</li><li>Zákazníkovi není poskytována žádná telemetrie o odpovědích za sekundu (RPS) ani chybovost.</li></ul> |
+| <ul><li>Instance je zahrnuta v ceně Commerce.</li><li>Protože instance je spravována týmem Commerce, je vyžadována menší údržba a existují sdílené kroky instalace.</li><li>Infrastruktura hostovaná v Azure je škálovatelná, bezpečná a spolehlivá.</li><li>Certifikát SSL (Secure Sockets Layer) vyžaduje jednorázové nastavení a je automaticky obnovován.</li><li>Instance je monitorována z hlediska chyb a anomálií týmem Commerce.</li></ul> | <ul><li>WAF není podporován.</li><li>Neexistují žádná konkrétní přizpůsobení nebo úpravy nastavení.</li><li>Instance závisí na aktualizaci nebo změnách týmu Commerce.</li><li>Pro vrcholové domény je vyžadována samostatná instance Azure Front Door a pro integraci vrcholových domén s Azure DNS je zapotřebí další práce.</li><li>Zákazníkovi není poskytována žádná telemetrie o odpovědích za sekundu (RPS) ani chybovost.</li></ul> |
 
 Následující obrázek ukazuje architekturu instance Azure Front Door poskytované Commerce.
 
@@ -74,7 +74,7 @@ V následující tabulce jsou uvedeny výhody a nevýhody používání externí
 
 | Výhody | Nevýhody |
 |------|------|
-| <ul><li>Tato možnost je užitečná, když je stávající doména již hostována na externím CDN.</li><li>Konkurenční CDN (například Akamai) mohou mít více funkcí WAF.</li></ul> | <ul><li>Je vyžadována samostatná smlouva a další náklady.</li><li>SSL může způsobit další náklady.</li><li>Protože je služba oddělená od cloudové struktury Azure, je nutné spravovat další infrastrukturu.</li><li>Služba může vyžadovat delší časové investice do nastavení koncového bodu a zabezpečení.</li><li>Služba je spravována samostatně.</li><li>Služba je automaticky monitorována.</li></ul> |
+| <ul><li>Tato možnost je užitečná, když je stávající doména již hostována na externím CDN.</li><li>WAF: Závisí na externím poskytovateli.</li></ul> | <ul><li>Je vyžadována samostatná smlouva a další náklady.</li><li>SSL může způsobit další náklady.</li><li>Protože je služba oddělená od cloudové struktury Azure, je nutné spravovat další infrastrukturu.</li><li>Služba může vyžadovat delší časové investice do nastavení koncového bodu a zabezpečení.</li><li>Služba je spravována samostatně.</li><li>Služba je automaticky monitorována.</li></ul> |
 
 Následující obrázek ukazuje infrastrukturu Commerce, která zahrnuje externí službu CDN.
 

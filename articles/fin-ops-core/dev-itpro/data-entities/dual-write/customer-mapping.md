@@ -4,24 +4,17 @@ description: Toto téma popisuje integraci dat zákazníků mezi aplikacemi Fina
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8f85759f650e1c0e2a1d228b6429d218edac8ef4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350904"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542532"
 ---
 # <a name="integrated-customer-master"></a>Integrovaná hlavní data odběratelů
 
@@ -29,8 +22,7 @@ ms.locfileid: "6350904"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Zákaznická data mohou být vyplněna ve více než jedné aplikaci Dynamics 365. Například řádek odběratele může pocházet z prodejní aktivity v Dynamics 365 Sales (aplikace řízená podle modelu v Dynamics 365) nebo může řádek pocházet z maloobchodní aktivity v Dynamics 365 Commerce (aplikace Finance and Operations). Bez ohledu na místo, odkud pocházejí data odběratele, je integrováno na pozadí. Integrovaná hlavní předloha odběratele poskytuje flexibilitu pro hlavní zákaznická data v jakékoli aplikaci Dynamics 365 a poskytuje komplexní přehled o zákaznících v rámci aplikační sady Dynamics 365.
+Zákaznická data mohou být vyplněna ve více než jedné aplikaci Dynamics 365. Například řádek odběratele může pocházet z prodejní aktivity v Dynamics 365 Sales (aplikace customer engagement) nebo může řádek pocházet z maloobchodní aktivity v Dynamics 365 Commerce (aplikace finance and operations). Bez ohledu na místo, odkud pocházejí data odběratele, je integrováno na pozadí. Integrovaná hlavní předloha odběratele poskytuje flexibilitu pro hlavní zákaznická data v jakékoli aplikaci Dynamics 365 a poskytuje komplexní přehled o zákaznících v rámci aplikační sady Dynamics 365.
 
 ## <a name="customer-data-flow"></a>Tok dat odběratele
 
@@ -50,43 +42,18 @@ Pokud se procesu nabídky nebo objednávky účastní neprodejný kontakt, je **
 
 Data odběratele zahrnují všechny informace o odběrateli, například skupinu odběratelů, adresy, kontaktní informace, platební profil a profil faktury a věrnostní stav. Kolekce mapování tabulek pracuje společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
-Aplikace Finance and Operations | Jiné aplikace Dynamics 365         | Popis
+Aplikace Finance and Operations | Aplikace Customer Engagement         | popis
 ----------------------------|---------------------------------|------------
-CDS kontakty V2             | kontakty                        | Tato šablona synchronizuje všechny primární, sekundární a terciární kontaktní informace pro odběratele i dodavatele.
-Skupiny odběratelů             | msdyn_customergroups            | Tato šablona slouží k synchronizaci informací o skupinách odběratele.
-Způsob platby odběratele     | msdyn_customerpaymentmethods    | Tato šablona slouží k synchronizaci informací o způsobu platby odběratele.
-Zákazníci V3                | účty                        | Tato šablona synchronizuje hlavní informace o zákaznících pro komerční a organizační zákazníky.
-Zákazníci V3                | kontakty                        | Tato šablona synchronizuje hlavní data odběratele pro spotřebitele a koncové uživatele.
-Přípony názvu                | msdyn_nameaffixes               | Tato šablona synchronizuje referenční data přípon názvů pro odběratele a dodavatele.
-Řádky dnů platby CDS V2    | msdyn_paymentdaylines           | Tato šablona synchronizuje referenční data řádků dnů platby pro odběratele a dodavatele.
-Dny platby CDS            | msdyn_paymentdays               | Tato šablona synchronizuje referenční data dnů platby pro odběratele a dodavatele.
-Řádky platebního kalendáře      | msdyn_paymentschedulelines      | Synchronizuje referenční data řádků platebního kalendáře pro odběratele i dodavatele.
-Platební kalendář            | msdyn_paymentschedules          | Tato šablona synchronizuje referenční data platebního kalendáře pro odběratele a dodavatele.
-Platební podmínky            | msdyn_paymentterms              | Tato šablona synchronizuje referenční data platebních podmínek (podmínek platby) pro odběratele a dodavatele.
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
-
-[!include [mapping customer group](includes/CustCustomerGroup-msdyn-customergroups.md)]
-
-[!include [mapping customer payment method](includes/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
-
-[!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
-
-[!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
-
-[!include [mapping payment day lines](includes/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
-
-[!include [mapping payment days](includes/PaymentDaysCds-msdyn-paymentdays.md)]
-
-[!include [mapping payment schedule lines](includes/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
-
-[!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
-
-[!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
-
+[CDS kontakty V2](mapping-reference.md#115) | kontakty | Tato šablona synchronizuje všechny primární, sekundární a terciární kontaktní informace pro odběratele i dodavatele.
+[Skupiny odběratelů](mapping-reference.md#126) | msdyn_customergroups | Tato šablona slouží k synchronizaci informací o skupinách odběratele.
+[Způsob platby odběratele](mapping-reference.md#127) | msdyn_customerpaymentmethods | Tato šablona slouží k synchronizaci informací o způsobu platby odběratele.
+[Zákazníci V3](mapping-reference.md#101) | účty | Tato šablona synchronizuje hlavní informace o zákaznících pro komerční a organizační zákazníky.
+[Zákazníci V3](mapping-reference.md#116) | kontakty | Tato šablona synchronizuje hlavní data odběratele pro spotřebitele a koncové uživatele.
+[Přípony názvu](mapping-reference.md#155) | msdyn_nameaffixes | Tato šablona synchronizuje referenční data přípon názvů pro odběratele a dodavatele.
+[Řádky dnů platby CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Tato šablona synchronizuje referenční data řádků dnů platby pro odběratele a dodavatele.
+[Dny platby CDS](mapping-reference.md#158) | msdyn_paymentdays | Tato šablona synchronizuje referenční data dnů platby pro odběratele a dodavatele.
+[Řádky platebního kalendáře](mapping-reference.md#159) | msdyn_paymentschedulelines | Synchronizuje referenční data řádků platebního kalendáře pro odběratele i dodavatele.
+[Platební kalendář](mapping-reference.md#160) | msdyn_paymentschedules | Tato šablona synchronizuje referenční data platebního kalendáře pro odběratele a dodavatele.
+[Platební podmínky](mapping-reference.md#161) | msdyn_paymentterms | Tato šablona synchronizuje referenční data platebních podmínek (podmínek platby) pro odběratele a dodavatele.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

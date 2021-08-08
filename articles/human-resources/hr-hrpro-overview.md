@@ -2,7 +2,7 @@
 title: Přehled
 description: Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nastavení aplikace Human Resources, nastavení kompenzace a zaměstnaneckých výhod pro zaměstnance a řízení zaměstnanců.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8595bbbce9ab39893b67ee142bcb71996ccd6994
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 8b03865c1e53f943989437ed4839474e37419f2e
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338047"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639503"
 ---
 # <a name="overview"></a>Přehled
 
@@ -100,8 +100,9 @@ Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nas
 [Časové rozlišení plánů pracovního volna a absence](hr-leave-and-absence-accrue.md)</br>
 [Zobrazení analýz pro pracovní volno a absenci](hr-leave-and-absence-analytics.md)</br>
 [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)</br>
-[Požádat o volno](hr-employee-self-service-request-time-off.md)</br>
+[Požádat o volno](hr-employee-self-service-request-time-off.md)</br>
 [Zobrazení kalendáře týmu a společnosti](hr-employee-self-service-calendar.md)</br>
+[Nakonfigurujte roli správce nepřítomnosti](hr-configure-absence-manager.md)</br>
 
 ## <a name="develop-employees"></a>Rozvoj zaměstnanců
 
