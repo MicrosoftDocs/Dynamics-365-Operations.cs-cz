@@ -92,8 +92,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: "Co je nového a\_co se změnilo v\_aplikaci Commerce"
                   items:
-                    - name: "Domovská stránka Co je nového a\_co se změnilo v Commerce"
+                    - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.21 (říjen 2021)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (srpen 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (červen 2021)
@@ -514,11 +516,19 @@
                       href: cash-denominations.md
                     - name: Konfigurace zpracování platební karty
                       href: tasks/configure-credit-card-processing.md
-                    - name: Přeskočení dialogového okna „vrátit částku“ v POS
+                    - name: Přeskočení dialogového okna „vrátit částku“ na pokladním místě
                       href: dev-itpro/skip-change-due.md
-                    - name: Konektor platby Adyen
-                      href: dev-itpro/adyen-connector.md
-                    - name: Úspora nástrojů online plateb s konektorem Adyen
+                    - name: Aplikace Dynamics 365 Payment Connector pro Adyen
+                      items:
+                        - name: Přehled aplikace Dynamics 365 Payment Connector pro Adyen
+                          href: dev-itpro/adyen-connector.md
+                        - name: Nastavení aplikace Dynamics 365 Payment Connector pro Adyen
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: "Časté otázky o\_aplikaci Dynamics 365 Payment Connector pro Adyen"
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: "Odstranit potíže s\_aplikací Dynamics 365 Payment Connector pro Adyen"
+                          href: dev-itpro/adyen-connector-troubleshoot.md
+                    - name: "Úspora online platebních nástrojů s\_konektorem Adyen"
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Silné ověření klienta (SCA) pomocí konektoru Adyen
                       href: adyen_redirect.md
@@ -1176,17 +1186,21 @@
               items:
                 - name: Přehled výchozí cílové stránky kategorie a stránky výsledků hledání
                   href: category-search-page-overview.md
-                - name: Přehled hledání využívajícího cloud
+                - name: Přehled vyhledávání využívajícího cloud
                   href: cloud-powered-search-overview.md
             - name: Vykazování
               items:
                 - name: Generování sestav online kanálu
                   href: generate-reports.md
+            - name: Cílení
+              items:
+                - name: "Cílení na zařízení, trh a\_geografickou polohu"
+                  href: targeting-overview.md
             - name: Experimentování
               items:
-                - name: Experimentování v Dynamics 365 Commerce
+                - name: "Experimentování v\_aplikaci Dynamics 365 Commerce"
                   href: experimentation-overview.md
-                - name: Identifikace hypotézy a určení metriky pro experiment
+                - name: "Identifikace hypotézy a\_určení metriky pro experiment"
                   href: experimentation-identify.md
                 - name: Nastavení experimentu
                   href: experimentation-setup.md
@@ -1330,12 +1344,16 @@
               items:
                 - name: Funkce registrační pokladny
                   href: localizations/emea-nor-cash-registers.md
-                - name: Pokyny k nasazení registračních pokladen
+                - name: "Pokyny k\_nasazení registračních pokladen"
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rusko
               items:
-                - name: Lokalizace Commerce pro Rusko
+                - name: Lokalizace aplikace Commerce pro Rusko
                   href: localizations/rus-commerce-localization.md
+                - name: Nastavení lokalizace aplikace Commerce pro Rusko
+                  href: localizations/rus-commerce-setup.md
+                - name: "Zálohy v\_aplikaci Commerce pro Rusko"
+                  href: localizations/rus-commerce-prepayments.md
             - name: Švédsko
               items:
                 - name: Funkce registrační pokladny

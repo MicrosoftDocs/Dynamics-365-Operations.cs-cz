@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8c88b742c1dccb169e47fe96a5c9d9aac35e605be685cc1a0f010826c959db5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823280"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712855"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umístění na zeď - umístění do obchodu
 
@@ -44,7 +44,7 @@ Funkci *Odchozí třídění* lze použít ve spojení s funkcí *Krokový kód 
 
 ## <a name="setup"></a>Nastavení
 
-Pro tuto ukázku jsou použita standardní data a sklad Contoso *62*. Používají se také některé dodatky, které jsou uvedeny později.
+Pro tuto ukázku jsou použita standardní data Contoso a sklad *62*. Používají se také některé dodatky, které jsou uvedeny později.
 
 ### <a name="location-type"></a>Typ umístění
 

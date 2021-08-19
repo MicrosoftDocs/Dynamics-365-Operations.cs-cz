@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 5b8a1beae80ad63f26cd1b532d1d6026a5b38a8701c9c1d0aadfee5da8965477
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716485"
 ---
 # <a name="rebate-management-deals"></a>Nabídky správy rabatu
 
@@ -102,6 +102,7 @@ Jakmile vytvoříte nabídku, jak je popsáno v předchozí části, můžete ji
         - *Vše* – Řádek nabídky platí pro všechny položky.
 
     - **Vztah položky** – Pokud jste vybrali *Tabulka* v poli **Kód položky**, vyberte položku, kterého se řádek nabídky týká. Pokud jste vybrali možnost *Skupina*, vyberte skupinu položek. Pokud jste vybrali možnost *Vše*, toto pole není dostupné.
+    - **Typ jednotky** – Vyberte typ jednotky, který se vztahuje na řádek nabídky (*Skladová jednotka* nebo *Jednotka skutečné hmotnosti*). U starších záznamů může být toto pole prázdné. V tomto případě se předpokládá hodnota *Skladová jednotka*.
     - **(Parametry správy zásob)** - Ve zbývajících polích na řádku nabídky zadejte hodnoty parametrů správy zásob, které se použijí k definování položek zahrnutých do nabídky (například velikost položky, barva, styl, pracoviště a sklad). Chcete-li přidat nebo odebrat dimenze, vyberte **Zobrazit dimenze** v podokně akcí.
 
 1. V podokně akcí vyberte **Uložit**.
