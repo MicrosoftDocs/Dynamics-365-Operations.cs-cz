@@ -2,7 +2,7 @@
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720077"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nové funkce, opravy a vylepšení ve verzi 2.0.7.0
+
+- Přidána část do stránky **O aplikaci**, která kontroluje nejnovější vydanou verzi aplikace.
+- Usnadňuje pohyb mezi stránkami.
+- Změněna ikona tlačítka řazení vzestupně/sestupně v pracovním seznamu.
+- Zkrácené marže na kartě **Podrobnosti**, aby se do ní vešlo více informací.
+- Byla použita různá vylepšení výkonu, aby se aplikace v průběhu času nezpomalovala.
+- Pokud je na obrazovce více ovládacích prvků, než kolik se tam vejde, což má za následek nutnost stránkování, ovládací prvek číselníku se již neposouvá stejným způsobem jako stránka.
+- Upřednostňuje se zobrazení poslední naskenované hodnoty před zobrazením názvu úkolu, takže pokud se překrývají, bude název úkolu zkrácen.
+- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
+- Text na různých místech již není v některých jazycích oříznut.
+- Aplikace nyní běží ve výchozím nastavení v režimu celé obrazovky.
+- Byl opraven problém, který občas způsoboval ignorování skenů na hlavní stránce u určitých zařízení.
+
+### <a name="known-issues-in-version-2070"></a>Známé problémy ve verzi 2.0.7.0
+
+- Na některých zařízeních se při spuštění aplikace nebo zahájení úkolu zobrazí následující chybová zpráva: „Nelze najít vhodné zobrazení pro zadanou velikost.“ Pokud se vám tato chybová zpráva zobrazí na kterémkoli z vašich zařízení, musíte na tomto zařízení downgradovat mobilní aplikaci Warehouse Management na verzi 2.0.6.0 a počkat na upgrade, dokud nebude vydána další verze aplikace.
 
 ## <a name="version-2060"></a>Verze 2.0.6.0
 

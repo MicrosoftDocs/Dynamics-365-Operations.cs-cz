@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720245"
 ---
 # <a name="rebate-management-module-overview"></a>Přehled modulu správy rabatu
 
@@ -91,10 +91,9 @@ Uživatelé již nemusí řešit nabídky nebo dodávky ve dvou krocích. Dodáv
 
 Když se vypočítají rabaty, proces vytvoří transakce, které lze zkontrolovat, než dojde k zaúčtování. Samostatný proces zaúčtuje transakce správy rabatů. Deník, dobropis nebo debetní transakci lze poté vytvořit během zaúčtování do navrhovaných transakcí. Pro zajištění souladu, účinnosti a transparentnosti lze získat výkazy a výpisy transakcí.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Zaručené platby autorských poplatků
 
-Ve správě rabatů umožňuje automatické generování plateb rychlé a snadné vypořádání autorských poplatků, i když platí garantovaná minima. 
+Ve správě rabatů umožňuje automatické generování plateb rychlé a snadné vypořádání autorských poplatků, i když platí garantovaná minima.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maximální útrata a rabaty
 
