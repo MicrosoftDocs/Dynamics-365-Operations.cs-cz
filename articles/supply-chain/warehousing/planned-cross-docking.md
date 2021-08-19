@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730003"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
@@ -117,6 +117,9 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **Pořadové číslo:** *1*
     - **Zdroj dodávky:** *Nákupní objednávka*
 
+> [!NOTE]
+> Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony cross dockingu. Dotaz na šablony cross dockingu má pouze tabulku *InventTable* (položky) a vnitřní spojení s tabulkou *WHSInventTable* (položky WHS). Pokud chcete do dotazu přidat další tabulky, můžete se k nim připojit pouze pomocí spojení *existuje* nebo *neexistuje*. Když filtrujete záznamy na spojených tabulkách, načte se záznam z hlavní tabulky pro každý odpovídající záznam ve spojené tabulce. Pokud je typ spojení *existuje*, hledání skončí po nalezení první shody. Pokud například připojíte tabulku řádku prodejní objednávky k tabulce položek, systém ověří a vrátí položky, pro které má definovanou podmínku alespoň jeden řádek prodejní objednávky. V zásadě jsou data načítána z nadřazené tabulky (položek), nikoli z podřízené tabulky (řádek prodejní objednávky). Filtrování podle zdrojových dokumentů, jako jsou řádky prodejní objednávky nebo zákazníci, proto nelze provést ihned bez úprav.
+
 ### <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Práce \> Pracovní třídy**.
@@ -151,6 +154,9 @@ Cross docking s plánováním se implementuje jako metoda účtování nákladu
     - **ID pracovní třídy:** *CrossDock*
 
 1. Vyberte **Uložit** a ujistěte se, že máte zaškrtnuté políčko **Platné** pro šablonu *51 Cross Dock*.
+1. Volitelné: Vyberte příkaz **Upravit dotaz** chcete-li nastavit kritéria pro řízení toho, kdy a kde se používá šablona práce.
+
+    Můžete určit dotaz pro řízení toho, kdy dojde k použití určité šablony práce. Můžete například určit, že šablonu lze použít pouze pro práci na konkrétním místě. Pokud chcete, aby se šablona práce cross dockingu použila na konkrétním místě, musíte filtrovat podle pole **Počáteční poloha**, nikoli **Umístění**, protože vytvoření práce pro příchozí procesy (nákup, cross docking a doplňování) začíná od řádku vložení. Když je vytvořena práce, direktiva umístění nastaví pole **Umístění** na umístění vložení. Místo vyzvednutí je však uloženo v poli **Počáteční poloha**.
 
 > [!NOTE]
 > ID třídy práce pro typy práce *Výdej* a *Zaskladnění* se musí shodovat.

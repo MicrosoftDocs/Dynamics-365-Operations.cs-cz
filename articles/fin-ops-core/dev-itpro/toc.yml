@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Co je nového a co se změnilo v aktualizacích Platform Update
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aktualizacích Platform Update"
+                - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Update"
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizace Platform Update pro verzi 10.0.20 (srpen 2021)
+                - name: Nástroj Platform Update pro verzi 10.0.21 (říjen 2021)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
+                - name: Nástroj Platform Update pro verzi 10.0.20 (srpen 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Aktualizace Platform Update pro verzi 10.0.19 (červen 2021)
+                - name: Nástroj Platform Update pro verzi 10.0.19 (červen 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Odstraněné nebo zastaralé funkce
               items:
@@ -444,13 +446,15 @@
                   items:
                     - name: Kompatibilita AD FS Microsoft 365
                       href: deployment/onprem-adfscompatibility.md
-                    - name: Předběžné nasazení místního agenta a skripty po nasazení
+                    - name: "Předběžné nasazení místního agenta a\_skripty po nasazení"
                       href: lifecycle-services/pre-post-scripts.md
+                    - name: Konfigurace nasazení pro místního agenta
+                      href: deployment/onprem-localagent-options.md
                     - name: Aktualizace místního agenta
                       href: lifecycle-services/update-local-agent.md
                 - name: Řešení potíží
                   items:
-                    - name: Řešení problémů s místním nasazením
+                    - name: "Řešení potíží s\_místním nasazením"
                       href: deployment/troubleshoot-on-prem.md
                     - name: Skripty pro řešení problémů v místních prostředích
                       href: deployment/onprem-tsg-implementations.md
