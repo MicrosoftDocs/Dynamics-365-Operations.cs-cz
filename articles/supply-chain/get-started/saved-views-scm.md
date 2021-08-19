@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728620"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
 
@@ -77,6 +77,18 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Zásobo
 | Podrobnosti nákupní objednávky | Správa financí | Toto zjednodušené zobrazení je optimalizováno pro provádění činností souvisejících s financemi, jako je fakturace a kontrola cen, součtů a poplatků. | Uložená zobrazení pro nákupní objednávky |
 | Podrobnosti nákupní objednávky | Schválení objednávky | Toto zjednodušené zobrazení je optimalizováno pro schvalování nákupních objednávek. | Uložená zobrazení pro nákupní objednávky |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Uložená zobrazení pro modul správy Informace o produktu
+
+Následující tabulka popisuje uložená zobrazení dostupná pro modul správy Informace o produktu.
+
+| Strana | Název zobrazení | Zobrazení popisu | Název funkce |
+|---|---|---|---|
+| Seznam uvolněných produktů | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty |
+| Podrobnosti o uvolněném produktu | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty |
+| Podrobnosti o uvolněném produktu | Správa logistických informací | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě logistických informací o produktech. | Uložená zobrazení pro uvolněné produkty |
+| Podrobnosti o uvolněném produktu | Správa informací o nákupu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o nákupech produktů. | Uložená zobrazení pro uvolněné produkty |
+| Podrobnosti o uvolněném produktu | Správa informací o prodeji | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o produktech souvisejících s prodejem. | Uložená zobrazení pro uvolněné produkty |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Uložená zobrazení pro modul řízení výroby
 
 Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízení výroby.
@@ -110,8 +122,8 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízen
 | Všechny dodávky | Příchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování příchozích zásilek. | Uložená zobrazení pro zpracování dodávky |
 | Všechny dodávky | Odchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování odchozích zásilek. | Uložená zobrazení pro zpracování dodávky |
 | Všechny vlny | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro zpracování vlny |
-| Pracovní plocha plánování vytížení | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro workbench plánování práce |
-| Podrobnosti o práci | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení stránky s podrobnostmi o práci |
+| Pracovní plocha plánování vytížení | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro pracovní plochu plánování vytížení |
+| Podrobnosti o práci | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení stránky s podrobnostmi o práci |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
