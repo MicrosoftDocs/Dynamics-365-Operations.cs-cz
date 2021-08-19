@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b8610c483fa42d91d5b346550aae5b874649c727
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed9aaca259bc81546045a1cddae368665d5b7e6c6335dccd769965e1c28dbf77
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458583"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735721"
 ---
 > [!IMPORTANT]
 > Tato funkce je k dispozici v aktualizaci Platform update 15 (7.0.4841) pro Finance and Operations nebo novější. Tato aktualizace je momentálně k dispozici pro vybrané zákazníky a všem uživatelům bude dostupná v červnu 2018.
