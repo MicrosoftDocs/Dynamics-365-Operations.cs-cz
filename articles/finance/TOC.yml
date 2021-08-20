@@ -72,6 +72,8 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (říjen 2021)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (srpen 2021)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (červen 2021)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: "Otevření šablon finančního deníku v\_aplikaci Office"
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Proč nemohu tuto transakci stornovat?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Finanční výkaznictví
           items:
             - name: "Začínáme s\_finančním výkaznictvím"
@@ -1494,28 +1498,36 @@
                       href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Začínáme
                       items:
-                        - name: Začněte se správou služby elektronické fakturace
+                        - name: Začínáme se správou služby elektronické fakturace
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: Začněte s elektronickou fakturací
+                        - name: "Začínáme s\_elektronickou fakturací"
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Začněte s elektronickou fakturací pro Brazílii
+                        - name: Vytvoření nové funkce elektronické fakturace
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
+                        - name: "Začínáme s\_elektronickou fakturací pro Brazílii"
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Začněte s elektronickou fakturací pro Egypt
+                        - name: "Začínáme s\_elektronickou fakturací pro Egypt"
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Začněte s elektronickou fakturací pro Mexiko
+                        - name: "Začínáme s\_elektronickou fakturací pro Mexiko"
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Použití služby elektronické fakturace k importu faktur dodavatele
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Nastavení elektronické fakturace
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                    - name: Nejčastější dotazy k elektronické fakturaci
+                    - name: "Časté otázky k\_elektronické fakturaci"
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Výpočet daně
                   items:
                     - name: Přehled výpočtu daně
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Začněte s výpočtem daně
+                    - name: Začínáme s výpočtem daně
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: Podpora daňových funkcí u převodních příkazů
+                    - name: "Použitelnost DPH a\_logika určování skupiny DPH"
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: "Podpora daňových funkcí u\_převodních příkazů"
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: "Výpočet daně navíc k\_ceně, když jsou povoleny ceny včetně daní"
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: "Přidání datových polí v\_daňových konfiguracích"
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Přidání datových polí do daňové integrace pomocí rozšíření
@@ -1528,15 +1540,19 @@
                       items:
                         - name: Vykazování pro více registrací DPH
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Vykazování pro Francii
+                          items:
+                            - name: "Přiznání k\_DPH"
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Vykazování pro Nizozemsko
                           items:
-                            - name: Přiznání k DPH
+                            - name: "Přiznání k\_DPH"
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Vykazování ve Spojeném království
+                        - name: Vykazování pro Spojené království
                           items:
-                            - name: Připravte se na integraci s MTD pro DPH
+                            - name: "Připravte se na integraci s\_digitalizací DPH"
                               href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
@@ -1544,19 +1560,23 @@
               items:
                 - name: "Austrálie\_–\_přehled"
                   href: localizations/australia.md
+                - name: Formáty bankovních souborů pro australské banky
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: Výkaz podnikatelské činnosti (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Přidání polí sestavy a generování BAS
                   href: localizations/tasks/add-bas-report-boxes.md
-                - name: Odpisy skupiny majetku s nízkou hodnotou
+                - name: "Odpisy majetkového fondu s\_nízkou hodnotou"
                   href: localizations/apac-aus-low-value-pool-depreciation.md
                 - name: Nastavení kódů důvodů pro BAS
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Schéma vykazování platebních dob
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Rakousko
               items:
-                - name: Rakousko - přehled
+                - name: "Rakousko\_–\_přehled"
                   href: localizations/austria.md
-                - name: Půlroční způsob odpisů u dodatečných pořízení
+                - name: "Půlroční způsob odpisů u\_dodatečných pořízení"
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Poplatky za obalový materiál
                   href: localizations/emea-aut-packing-material-fee-calculation.md
@@ -1794,14 +1814,16 @@
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
             - name: Kanada
               items:
-                - name: GST/HST - Přenos souborů po internetu
+                - name: "Daň GST/harmonizovaná prodejní daň\_–\_Přenos souborů po internetu"
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: Čína
               items:
-                - name: Čína - přehled
+                - name: "Čína\_–\_přehled"
                   href: localizations/china.md
-                - name: Finance and Operations provozované společností 21Vianet v Číně
+                - name: "Finance and Operations provozované společností 21Vianet v\_Číně"
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Výběr skupin účtů pro čínské typy dokladů
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Porovnání kusovníků
                   href: localizations/apac-chn-bom-comparison.md
                 - name: Čínská hierarchie účtové osnovy
@@ -1868,13 +1890,17 @@
                   href: localizations/emea-amount-printing-forms.md
                 - name: Výkaz DPH
                   href: localizations/emea-cze-vat-statement-details.md
-                - name: Přiznání k DPH (Česká republika)
+                - name: "Přiznání k\_DPH (Česká republika)"
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Symboly bank pro bankovní účty
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: DPH intrakomunitárního plnění
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Roční uzávěrka
                   href: localizations/emea-cze-hun-year-end.md
             - name: Dánsko
               items:
-                - name: Dánsko - přehled
+                - name: "Dánsko\_–\_přehled"
                   href: localizations/denmark.md
                 - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
                   href: localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Vygenerování prohlášení Intrastat EU
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Francouzský Intrastat
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Intrastat pro Itálii
-                      href: localizations/emea-ita-intrastat.md
                 - name: Sestavy deníku zásob
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Koncová data vystavení faktury
@@ -2120,9 +2142,11 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: "Francouzské cizí směnky a\_vlastní směnky"
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: Kódy NAF a čísla SIRET (Francie)
+                - name: Francouzský Intrastat
+                  href: localizations/emea-fra-intrastat.md
+                - name: "Kódy NAF a čísla\_SIRET (Francie)"
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: "Nastavení kódů NAF a\_čísel SIRET"
+                - name: "Nastavení kódů NAF a\_čísel SIRET (Francie)"
                   href: localizations/tasks/fr-00003-naf-codes-siret-numbers.md
                 - name: Pokuty za zpožděné platby zákazníka
                   href: localizations/emea-fra-apply-penalty-customer-payment-past-due.md
@@ -2134,15 +2158,17 @@
                   href: localizations/emea-fra-print-lump-sum-recovery-text.md
                 - name: Odpis RB/SL
                   href: localizations/emea-fra-rbsl-depreciation.md
-                - name: Nastavení metody platby
+                - name: Nastavení způsobu platby
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Aktualizace způsobu platby pro odběratele
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: "Přiznání k\_DPH"
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: Sestava DAS-2
                   href: localizations/emea-fra-das2-report.md
             - name: Německo
               items:
-                - name: Německo - přehled
+                - name: "Německo\_–\_přehled"
                   href: localizations/germany.md
                 - name: Další odpisy pořízení
                   href: localizations/emea-deu-additional-acquisition-depreciation.md
@@ -2158,11 +2184,13 @@
                       href: localizations/tasks/customize-german-audit-file-configuration.md
                     - name: Přidání filtrů do konfigurace souboru auditu
                       href: localizations/emea-deu-gdpdu-data-filtering.md
-                - name: "Opravy odpisů u\_dodatečných pořízení za druhý rok"
+                - name: "Vyrovnání odpisů u\_dodatečných pořízení za druhý rok"
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Přiznání k DPH pro Německo
+                - name: Německý Intrastat
+                  href: localizations/emea-deu-intrastat.md
+                - name: "Přiznání k\_DPH pro Německo"
                   href: localizations/emea-de-vat-declaration.md
                 - name: Sestava elektronických faktur zákazníka
                   href: localizations/emea-deu-e-invoices.md
@@ -2170,11 +2198,13 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Nastavit elektronická daňová přiznání
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: "Tisknout samostatný štítek pro dobropisy z\_prodejů"
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Maďarsko
               items:
-                - name: Maďarsko - přehled
+                - name: "Maďarsko\_–\_přehled"
                   href: localizations/hungary.md
-                - name: Výpočet průměrného a denního směnného kurzu
+                - name: "Výpočet průměrného a\_denního směnného kurzu"
                   href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: Metody odpisu dlouhodobého majetku
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
@@ -2612,11 +2642,13 @@
                   href: localizations/emea-ita-exil-separate-account-credit.md
                 - name: Seřadit řádky prodejní faktury podle dodacího listu
                   href: localizations/emea-ita-exil-invoicing-packing-slips.md
-                - name: Zaúčtování faktur s nulovými částkami
+                - name: "Zaúčtování faktur s\_nulovými částkami"
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Rozšíření použitelnosti bankovních dat
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Vedlejší náklady za kilogram v prohlášení Intrastat
+                - name: Italský Intrastat
+                  href: localizations/emea-ita-intrastat.md
+                - name: "Vedlejší náklady za kilogram v\_prohlášení Intrastat"
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Předběžné smlouvy – fakturace obvyklých vývozců
                   href: localizations/emea-ita-exil-intent-letter.md
@@ -2836,9 +2868,11 @@
                   href: localizations/emea-ltu-isaf.md
                 - name: Soubor standardního auditu pro daň (SAF-T) pro Litvu
                   href: localizations/emea-ltu-saf-t.md
+                - name: "Nastavení dokladů převodu pro pohyb zboží v\_rámci společnosti"
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malajsie
               items:
-                - name: Malajsie - přehled
+                - name: "Malajsie\_–\_přehled"
                   href: localizations/malaysia.md
                 - name: Vygenerování dobropisu odběratele pro prodeje projektu
                   href: localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Rozdělení kurzového rozdílu závazků/pohledávek
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-                - name: 'Přiznání k DPH s registry (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Příprava na vykazování JPK-V7M
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: Vykazování JPK-V7M
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: Podrobnosti o konkrétních obchodních scénářích v sestavě JPK-V7M
-                  href: localizations/emea-pol-vdek-scenarios.md
+                - name: "Nastavit a\_používat kódy PKWiU pro Polsko"
+                  href: localizations/emea-pol-pkwiu-code.md
+                - name: "Přiznání k\_DPH s\_registry (JPK_V7M, VDEK)"
+                  items:
+                    - name: "Přehled přiznání k\_DPH s\_registry (JPK_V7M, VDEK)"
+                      href: localizations/emea-pol-vdek.md
+                    - name: Příprava na vykazování JPK-V7M
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: Vykazování JPK-V7M
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: "Podrobnosti o\_konkrétních obchodních scénářích v\_sestavě JPK-V7M"
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Katar - přehled
@@ -3200,11 +3238,13 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: Daňové účetnictví
                   items:
-                    - name: Kódy výdajů a příjmů
+                    - name: "Vytvoření daňových registrů a\_deníku daňového registru"
+                      href: localizations/rus-profit-tax-registers.md
+                    - name: "Kódy výdajů a\_příjmů"
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Daňové registry majetku
                       href: localizations/rus-assets-tax-registers.md
-                    - name: Registr daní časově rozlišených položek
+                    - name: Daňový registr časově rozlišených položek
                       href: localizations/rus-deferred-expenses-register.md
                     - name: Daňové registry peněžních toků
                       href: localizations/rus-cash-flow-tax-registers.md
@@ -3212,13 +3252,17 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Daňové registry dluhů závazků a odpisy dluhů
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
-                    - name: Rezervy nedobytných pohledávek v pohledávkách
+                    - name: "Rezervy nedobytných pohledávek v\_pohledávkách"
                       href: localizations/rus-bad-debts.md
-                    - name: Výpočet registrů daňových povinností a daňového majetku
+                    - name: "Výpočet registrů daňových povinností a\_daňového majetku"
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
-            - name: Saúdská Arábie
+                    - name: "Registry daně z\_pohybu zboží"
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Ostatní daňové registry
+                      href: localizations/rus-other-tax-registers.md
+            - name: Saúdskoarabské království
               items:
-                - name: Saúdská Arábie - přehled
+                - name: "Saúdskoarabské království\_–\_přehled"
                   href: localizations/saudi-arabia.md
                 - name: DPH
                   href: localizations/apac-sau-sales-tax.md
@@ -3302,10 +3346,8 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Dimenze prodejní DPH
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Sestava DPH z prodeje
+                - name: "Sestava DPH z\_prodeje"
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Průměrná DPH pro nákupní transakce
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Srážková daň
                   href: localizations/apac-tha-withholding-tax.md
             - name: Spojené arabské emiráty (UAE)

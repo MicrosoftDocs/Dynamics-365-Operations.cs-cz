@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773506"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.20. (srpen 2021)
 
@@ -47,7 +47,6 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 
 | Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
-| Hlavní plánování | Dny zpoždění pro Optimalizaci plánování | Tato funkce umožňuje optimalizaci plánování zohlednit toleranci zpoždění na základě parametru **Negativní dny** definovaného ve skupinách pokrytí. |
 | Hlavní plánování | Paralelní autorizace upravené prognózy poptávky | Tato funkce umožňuje paralelní autorizaci upravené prognózy poptávky ze stránky **Upravená předpověď poptávky**. Záměrem této funkce je zvýšit výkon při autorizaci vysokého počtu prognóz. Při autorizaci může uživatel zadat **Počet vláken** v autorizačním dialogu. |
 | Hlavní plánování | (Preview) Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Tato funkce umožňuje používat dávkové úlohy k potvrzení a konsolidaci plánovaných hromadných a balíkových objednávek. |
 | Řízení výroby | Zkopírujte obecné postupy | Tato funkce vylepšuje funkci kopírování trasy a umožňuje uživatelům kopírovat trasy, které nejsou specifické pro jednotlivé položky. Umožňuje systému aktualizovat všechny relevantní informace (například web, skupinu tras, požadavky na zdroje a různé časy) poté, co byla funkce kopírování trasy použita k přepsání trasy, která ještě není přiřazena k položce. |

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773530"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -35,6 +35,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 | Oblast funkce | Funkce | Další informace |
 |---|---|---|
+| Zásoby&nbsp;a&nbsp;logistika | [Schválení a uložení bankovních údajů odeslaných dodavatelem](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Udržování informací o bankovním účtu dodavatele](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Zásoby a logistika | [Optimalizace exportu datové entity kontaktní osoby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Je-li tato funkce povolena, změny odkazovaných dat nezpůsobí zahrnutí souvisejících kontaktů do dalšího přírůstkového exportu. Je-li tato funkce zakázána, změny odkazovaných dat způsobí zahrnutí souvisejících kontaktů do dalšího přírůstkového exportu. |
 | Zásoby a logistika | [Přírůstková vylepšení možností provádění skladu s jednotkami škálování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Zprávy procesoru zpráv](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Úprava skladových zásob](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Zásoby a logistika | [Funkce vyhledávání pro pole Úvod do dokumentu a Závěr dokumentu na stránce Prodejní nabídka](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Funkce přidá funkci vyhledávání pro pole **Úvod do dokumentu** a **Závěr dokumentu** na stránce **Prodejní nabídka**.<br><br>Tato funkce je povolena ve výchozím nastavení. |
