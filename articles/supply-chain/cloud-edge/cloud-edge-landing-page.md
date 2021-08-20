@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780667"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
 
@@ -102,7 +102,7 @@ Vaše aktuální produkční prostředí musí být v LCS označeno jako **samoo
 > [!IMPORTANT]
 > Typy prostředí, které běží jako infrastruktura jako služba (IaaS), nejsou podporovány. Tato prostředí jsou obvykle označena typem **Spravováno Microsoftem** v LCS. Pokud máte prostředí tohoto typu, pokuste se s kontaktem společnosti Microsoft porozumět vaší časové ose migrace na **samoobslužný** typ.
 
-Microsoft je v procesu přechodu všech cloudových prostředí Supply Chain Management z modelu IaaS na topologii, která je hostována v Service Fabric. Tento krok přináší lepší škálovatelnost a usnadňuje správu služeb. Proto jsou operace nasazení a údržby rychlejší. Podobně komponenty služby migrují na koncept mikroslužeb a model hostování služby [přejde](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) z modelu virtuálního počítače (VM) do lehké kontejnerové architektury.
+Microsoft je v procesu přechodu všech cloudových prostředí Supply Chain Management z modelu IaaS na topologii, která je hostována v Service Fabric. Tento krok přináší lepší škálovatelnost a usnadňuje správu služeb. Proto jsou operace nasazení a údržby rychlejší. Podobně komponenty služby migrují na koncept mikroslužeb a model hostování služby [přejde](/virtualization/windowscontainers/about/containers-vs-vm) z modelu virtuálního počítače (VM) do lehké kontejnerové architektury.
 
 Nakonec bude stejná infrastruktura kontejnerových služeb založená na Service Fabric pohánět jak cloudové, tak hranové instance služby, bez ohledu na to, zda je instance centrum v cloudu nebo jednotka škálování v cloudu nebo na hraně.
 
