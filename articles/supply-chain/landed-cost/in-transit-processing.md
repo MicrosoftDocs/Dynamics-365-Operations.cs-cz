@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744791"
 ---
 # <a name="goods-in-transit-processing"></a>Zpracování přepravovaného zboží
 
@@ -104,6 +104,7 @@ Zboží můžete také přijímat vytvořením deníku doručení. Deník doruč
 1. Otevřete cestu, kontejner nebo folio.
 1. V podokně akcí na kartě **Spravovat** ve skupině **Funkce** vyberte **Vytvořit deník doručení**.
 1. V dialogovém okně **Vytvoření deníku doručení** nastavte následující hodnoty:
+
     - **Inicializovat množství** – Nastavte tuto možnost na *Ano*, když má být množství nastaveno z množství v přepravě. Pokud je tato možnost nastavena na *Ne*, není z řádků přepravovaného zboží nastaveno žádné výchozí množství.
     - **Vytvořit z přepravovaného zboží** – Nastavte tuto možnost na *Ano*, chcete-li přebírat množství z vybraných řádků v tranzitu pro vybranou cestu, kontejner nebo folio.
     - **Vytvořit z řádků objednávky** – Nastavte tuto možnost na *Ano*, chcete-li nastavit výchozí množství v deníku doručení z řádků nákupní objednávky. Tímto způsobem lze nastavit výchozí množství v deníku doručení pouze v případě, že množství na řádku nákupní objednávky odpovídá množství na objednávce přepravovaného zboží.
@@ -140,4 +141,21 @@ Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *
 
 ### <a name="work-templates"></a>Šablony práce
 
+Tato část popisuje funkce, které modul **Náklady za doručení** přidává do pracovních šablon.
+
+#### <a name="goods-in-transit-work-order-type"></a>Zboží v přepravním typu pracovního příkazu
+
 Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Šablony práce**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [šablony práce nákupní objednávky](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Zalomení záhlaví práce
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Pracovní šablony, které mají typ pracovního příkazu *Zboží na cestě*, lze konfigurovat tak, aby rozdělily záhlaví práce. Na stránce **Šablony práce** proveďte jeden z následujících kroků:
+
+- Na kartě **Všeobecné** šablony nastavte maxima záhlaví práce. Tato maxima fungují stejným způsobem jako u šablon práce nákupních objednávek. (Další informace viz [šablony práce nákupní objednávky](/dynamicsax-2012/appuser-itpro/create-a-work-template) .)
+- Použijte tlačítko **Přerušení pracovního záhlaví** k určení, kdy má systém vytvořit nové pracovní hlavičky, na základě polí použitých k třídění. Například k vytvoření pracovního záhlaví pro každé ID kontejneru vyberte **Upravit dotaz** v podokně akcí a poté přidejte pole **ID kontejneru** na kartu **Třídění** editoru dotazů. Pole přidaná na kartu **Třídění** jsou k dispozici pro výběr jako *seskupení polí*. Pokud chcete nastavit seskupení polí, vyberte v podokně akcí **Zalomení pracovních hlaviček** a u každého pole, které chcete použít jako seskupení, zaškrtněte políčko ve sloupci **Seskupit podle tohoto pole**.
+
+Náklady na doručení [vytvoří nadměrnou transakci](over-under-transactions.md), pokud registrované množství překročí množství původní objednávky. Když je záhlaví práce dokončeno, systém aktualizuje stav transakcí zásob pro množství hlavní objednávky. Po úplném nakoupení hlavní objednávky však nejprve aktualizuje množství, které je spojeno s nadměrnou transakcí.
+
+Pokud zrušíte záhlaví práce pro nadměrnou transakci, která již byla registrována, nadměrná transakce se nejprve sníží o zrušené množství. Poté, co se nadměrná transakce sníží na množství 0 (nula), záznam se odstraní a veškerá další množství se odregistrují vůči množství hlavní objednávky.
