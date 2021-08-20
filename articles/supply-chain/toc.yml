@@ -72,6 +72,8 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (říjen 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (srpen 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (červen 2021)
@@ -248,7 +250,7 @@
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Nastavení elektronické fakturace
                           href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Nejčastější dotazy k elektronické fakturaci
+                    - name: Časté otázky k elektronické fakturaci
                       href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Výpočet daně
                   items:
@@ -1599,8 +1601,10 @@
               items:
                 - name: Přehled optimalizace plánování
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Začínáme s optimalizací plánování
+                - name: "Začínáme s\_optimalizací plánování"
                   href: master-planning/planning-optimization/get-started.md
+                - name: "Proces vydání optimalizace plánování a\_historie vydání"
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Analýza přizpůsobení pro optimalizaci plánování
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: 'Parametry, které optimalizace plánování nepoužívá'
@@ -1627,11 +1631,13 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Vyloučení produktů s určitými stavy životního cyklu produktu
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: Metody doplnění a modifikace množství
+                - name: "Metody doplnění a\_modifikace množství"
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Ochranné doby disponibility
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: Schválení plánovaných objednávek
+                - name: "Čisté požadavky a\_informace o\_doložení u\_optimalizace plánování"
+                  href: master-planning/planning-optimization/net-requirements.md
+                - name: Schválit plánované objednávky
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Potvrdit plánované objednávky
                   href: master-planning/planning-optimization/planned-order-firming.md
@@ -1709,9 +1715,11 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: "Čisté požadavky a\_informace o\_doložení u\_integrovaného hlavního plánování"
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognózování
               items:
-                - name: Prognóza poptávky a nabídky
+                - name: "Prognóza poptávky a\_nabídky"
                   items:
                     - name: Prognózy zásob
                       href: master-planning/inventory-forecast.md
@@ -1967,9 +1975,11 @@
                   href: procurement/request-quotations.md
                 - name: Vytvoření požadavku na nabídku
                   href: procurement/tasks/create-request-quotation.md
+                - name: Zapečetěné nabídky pro požadavky na nabídku
+                  href: procurement/sealed-bidding.md
                 - name: Vytvoření žádanky používající požadavek na nabídku
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Vytvoření metody hodnocení pro požadavky na nabídku
+                - name: Vytvoření metody bodování pro požadavky na nabídku
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: "Vytvoření typů oslovení a\_kritérií hodnocení pro požadavky na nabídku"
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
@@ -2279,9 +2289,11 @@
               href: engineering-change-management/engineering-change-management.md
             - name: Připravenost produktu
               href: engineering-change-management/product-readiness.md
-            - name: Uvolnit strukturu produktu
+            - name: Struktura vydané verze produktu
               href: engineering-change-management/release-product-structure.md
-            - name: Nejčastější dotazy ke správě technických změn
+            - name: Generujte varianty pro technické produkty
+              href: engineering-change-management/engineering-variants.md
+            - name: Časté otázky ke správě technických změn
               href: engineering-change-management/change-management-faq.md
         - name: Řízení výroby
           items:
@@ -2601,8 +2613,10 @@
           items:
             - name: Přehled modulu správy rabatu
               href: rebate-management/rebate-management-overview.md
-            - name: Nastavení a konfigurace modulu správy rabatu
+            - name: "Nastavení a\_konfigurace modulu správy rabatu"
               items:
+                - name: Zapněte ve svém systému modul správy rabatu
+                  href: rebate-management/rebate-management-enable.md
                 - name: Parametry správy rabatu
                   href: rebate-management/rebate-management-parameters.md
                 - name: Pracovní postupy obchodů správy rabatu
@@ -2617,11 +2631,13 @@
                   href: rebate-management/rebate-management-posting.md
             - name: Obchody správy rabatu
               href: rebate-management/rebate-management-deals.md
-            - name: 'Zpracování, kontrola a zaúčtování rabatu'
+            - name: "Zpracování, kontrola a\_zaúčtování rabatu"
               href: rebate-management/process-review-post.md
+            - name: Spravujte srážky pomocí pracovní plochy odpočtu
+              href: rebate-management/deduction-workbench.md
         - name: "Prodej a\_marketing"
           items:
-            - name: Přehled prodeje a marketingu
+            - name: "Přehled prodeje a\_marketingu"
               href: sales-marketing/overview-sales-marketing.md
             - name: Prodejní objednávky
               items:
@@ -3051,12 +3067,14 @@
                   href: landed-cost/manage-folios.md
             - name: Sledování příchozích plaveb a cesty přepravních kontejnerů
               href: landed-cost/inbound-tracking.md
-            - name: Odhady a správa nákladů na doručení
+            - name: "Odhady a\_správa nákladů na doručení"
               href: landed-cost/estimate-manage-landed-costs.md
             - name: Zpracování během tranzitu
               href: landed-cost/in-transit-processing.md
             - name: Zpracování nadměrných/nedostatečných transakcí
               href: landed-cost/over-under-transactions.md
+            - name: Aktualizovat sledování pro odložení
+              href: landed-cost/update-tracking-putaway.md
             - name: Dotazy na náklady na doručení
               href: landed-cost/landed-cost-inquiries.md
             - name: Sestavy nákladů na doručení
@@ -3117,9 +3135,11 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systémem řízený výdej v seskupení
                       href: warehousing/system-directed-cluster-pick.md
-                    - name: Nastavení různých rozměrů pro balení a skladování
+                    - name: "Přebírání prodejních objednávek a\_převodních příkazů"
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
+                    - name: "Nastavení různých rozměrů pro balení a\_skladování"
                       href: warehousing/packing-vs-storage-dimensions.md
-                    - name: Potvrzení dávky a poznávací značky
+                    - name: "Potvrzení dávky a\_registrační značky"
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Povolení tisku popisku registrační značky
                       href: warehousing/tasks/license-plate-label-printing.md
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Řízení skladu
               items:
+                - name: 'Dodávku nemůžete potvrdit, protože je zákazník blokován'
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 'Dodávku nemůžete potvrdit, protože řádky vytížení mají nulové množství'
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'Nelze aktualizovat řádek vytížení, protože uvolněné množství by bylo záporné'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Zrušené příjemky produktu neaktualizují stav transakcí na registrované
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Desetinné zaokrouhlení fyzického aktualizovaného je nesprávné
