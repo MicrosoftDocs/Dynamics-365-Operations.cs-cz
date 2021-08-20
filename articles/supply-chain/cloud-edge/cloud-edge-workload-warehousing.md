@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740688"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -142,7 +142,7 @@ Následující pracovní příkazy jsou aktuálně podporovány pro pracovní z�
 
 - Prodejní objednávky
 - Vydání převodního příkazu
-- Doplnění
+- Doplnění (nezahrnuje suroviny pro výrobu)
 - Přesun zásob
 - Cyklická inventura
 - Nákupní objednávky (které jsou propojeny se skladovými objednávkami)
@@ -298,6 +298,7 @@ Následující tabulka shrnuje, které provozní scénáře správy skladu jsou 
 | Ohlásit jako dokončené a vyskladnit dokončené zboží | Ano | Ano |
 | Vyskladnění vedlejšího produktu | Ano | Ano |
 | <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Žádný |
+| Doplnění surovin | Žádný | Žádný |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Údržba jednotek škálování pro WES
 
