@@ -3,8 +3,10 @@
   items:
     - name: Co je nového
       items:
-        - name: "Co je nového a\_co se změnilo v\_Human Resources"
+        - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
           href: hr-admin-whats-new.md
+        - name: 26. července 2021
+          href: hr-whats-new-2021-07-26.md
         - name: 12. července 2021
           href: hr-whats-new-2021-07-12.md
         - name: 22. června 2021
@@ -27,38 +29,38 @@
           href: hr-whats-new-2021-01-28.md
         - name: 21. ledna 2021
           href: hr-whats-new-2021-01-21.md
-        - name: 2. prosince 2020
-          href: hr-whats-new-2020-12-02.md
-        - name: 22. října 2020
-          href: hr-whats-new-2020-10-22.md
-        - name: 6. října 2020
-          href: hr-whats-new-2020-10-06.md
-        - name: 26. září 2020
-          href: hr-whats-new-2020-09-26.md
-        - name: 16. září 2020
-          href: hr-whats-new-2020-09-16.md
-        - name: 3. září 2020
-          href: hr-whats-new-2020-09-03.md
-        - name: 20. srpna 2020
-          href: hr-whats-new-2020-08-20.md
-        - name: 6. srpna 2020
-          href: hr-whats-new-2020-08-06.md
-        - name: 23. července 2020
-          href: hr-whats-new-2020-07-23.md
-        - name: 8. července 2020
-          href: hr-whats-new-2020-07-08.md
-        - name: 25. června 2020
-          href: hr-whats-new-2020-06-23.md
-        - name: 11. června 2020
-          href: hr-whats-new-2020-06-11.md
-        - name: 28. května 2020
-          href: hr-whats-new-2020-05-28.md
-        - name: 14. května 2020
-          href: hr-whats-new-2020-05-14.md
-        - name: 1. května 2020
-          href: hr-whats-new-2020-05-01.md
         - name: Archivy novinek 2020
           items:
+            - name: 2. prosince 2020
+              href: hr-whats-new-2020-12-02.md
+            - name: 22. října 2020
+              href: hr-whats-new-2020-10-22.md
+            - name: 6. října 2020
+              href: hr-whats-new-2020-10-06.md
+            - name: 26. září 2020
+              href: hr-whats-new-2020-09-26.md
+            - name: 16. září 2020
+              href: hr-whats-new-2020-09-16.md
+            - name: 3. září 2020
+              href: hr-whats-new-2020-09-03.md
+            - name: 20. srpna 2020
+              href: hr-whats-new-2020-08-20.md
+            - name: 6. srpna 2020
+              href: hr-whats-new-2020-08-06.md
+            - name: 23. července 2020
+              href: hr-whats-new-2020-07-23.md
+            - name: 8. července 2020
+              href: hr-whats-new-2020-07-08.md
+            - name: 25. června 2020
+              href: hr-whats-new-2020-06-23.md
+            - name: 11. června 2020
+              href: hr-whats-new-2020-06-11.md
+            - name: 28. května 2020
+              href: hr-whats-new-2020-05-28.md
+            - name: 14. května 2020
+              href: hr-whats-new-2020-05-14.md
+            - name: 1. května 2020
+              href: hr-whats-new-2020-05-01.md
             - name: 13. dubna 2020
               href: hr-whats-new-2020-04-13.md
             - name: 3. dubna 2020
@@ -465,14 +467,18 @@
                   href: hr-admin-integration-payroll-api-payroll-position.md
                 - name: Práce pozice mzdy
                   href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Entity související s pracovním volnem a absencí
+            - name: "Entity související s\_pracovním volnem a\_absencí"
               items:
                 - name: Zůstatek pracovního volna
                   href: hr-admin-integration-payroll-api-leave-balance.md
                 - name: Typ pracovního volna
                   href: hr-admin-integration-payroll-api-leave-type.md
-                - name: Žádost o pracovní volno
+                - name: "Žádost o\_pracovní volno"
                   href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Entity související se zaměstnaneckými výhodami
+              items:
+                - name: Plán zaměstnaneckých výhod pracovníka na výplatní listině
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
             - name: Sady možností
               items:
                 - name: Pohlaví
@@ -483,13 +489,17 @@
                   href: hr-admin-integration-payroll-api-award-type.md
                 - name: Typ procesu
                   href: hr-admin-integration-payroll-api-process-type.md
+                - name: Pokrytí typu plánu zaměstnaneckých výhod
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: Stav plánu zaměstnaneckých výhod zaměstnance
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Uživatelská příručka
       items:
         - name: Přehled
           href: hr-hrpro-overview.md
-        - name: Nastavení Human Resources
+        - name: Nastavení aplikace Human Resources
           items:
-            - name: Konfigurace parametrů Human Resources
+            - name: Konfigurace parametrů aplikace Human Resources
               href: hr-setup-parameters.md
             - name: Konfigurace sdílených parametrů Human Resources
               href: hr-setup-shared-parameters.md
