@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 
@@ -52,6 +52,8 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 - [Náklady za doručení](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Další informace viz [Modul Náklady za doručení](../landed-cost/landed-cost-overview.md).
 
 - [Dimenze balení a uskladnění](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Další informace viz [Nastavení různých rozměrů pro balení a skladování](../warehousing/packing-vs-storage-dimensions.md).
+
+- [Paralelní přidělení vlny](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - Další informace získáte v části [Přidělení vlny](../warehousing/wave-allocation-method.md).
 
 - [Uložená zobrazení pro inventář a logistiku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
 
