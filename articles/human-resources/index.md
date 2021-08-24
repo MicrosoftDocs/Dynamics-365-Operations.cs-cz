@@ -1,8 +1,8 @@
 ---
-title: Vítejte ve společnosti Dynamics 365 Human Resources
+title: Domovská stránka Human Resources
 description: Dynamics 365 Human Resources poskytuje přehled o pracovních plochách, které potřebujete k vytváření pracovního prostředí zaměstnanců podle více oblastí.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.custom:
 - intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b294cbc8d73858aeb6ab358cad608c78c911b0a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 25b3a9271dd3a906c5077f2e509cacf37ce1eb9ccb37131bb7ea31fa72ddd57f
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339684"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7011972"
 ---
-# <a name="welcome-to-dynamics-365-human-resources"></a>Vítejte ve společnosti Dynamics 365 Human Resources
+# <a name="human-resources-home-page"></a>Domovská stránka Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -47,45 +47,54 @@ Aplikace Human Resources propojuje informace o lidech a operacích, které vám 
 
 ## <a name="administrator-guide"></a>Příručka pro správce
 
-[Přehled](hr-admin-overview.md)</br>
-[Systémové požadavky](hr-admin-system-requirements.md)</br>
-[Nastavení a správa instancí](hr-admin-setup-provision.md)</br>
-[Nastavení integrace dat](hr-admin-integration-choose-technology.md)</br>
-[Konfigurace správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Správa funkcí](hr-admin-manage-features.md)</br>
-[Prozkoumání uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Aplikace Human Resources v Teams](hr-admin-teams-leave-app.md)</br>
-[Příprava pro ostré nasazení](hr-admin-go-live-prepare.md)</br>
-[Často kladené dotazy týkající se ostrého nasazení](hr-admin-go-live-faq.md)</br>
-[Zdroje dokumentace](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Řešení problémů s Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+- [Přehled](hr-admin-overview.md)</br>
+- [Systémové požadavky](hr-admin-system-requirements.md)</br>
+- [Nastavení a správa instancí](hr-admin-setup-provision.md)</br>
+- [Nastavení integrace dat](hr-admin-integration-choose-technology.md)</br>
+- [Konfigurace správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Správa funkcí](hr-admin-manage-features.md)</br>
+- [Prozkoumání uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Aplikace Human Resources v Teams](hr-admin-teams-leave-app.md)</br>
+- [Příprava pro ostré nasazení](hr-admin-go-live-prepare.md)</br>
+- [Často kladené dotazy týkající se ostrého nasazení](hr-admin-go-live-faq.md)</br>
+- [Zdroje dokumentace](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Řešení problémů s Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
 
 ## <a name="developer-guide"></a>Průvodce vývojáře
 
-[Přehled](hr-developer-overview.md)</br>
-[Rozšíření pomocí Power Apps a Power Automate](hr-developer-power-apps.md)</br>
-[Entity aplikace Human Resources v Dataverse](hr-developer-entities.md)</br>
-[Vlastní pole](hr-developer-custom-fields.md)</br>
-[Tabulky Dataverse](hr-developer-entities.md)</br>
-[Nastavení integrace dat](hr-admin-integration-choose-technology.md)</br>
-[Řešení potíží s vývojem pomocí virtuálních tabulek Dataverse](hr-developer-optimize-virtual-table-queries.md)</br>
-[Odkaz na API rozhraní entity](hr-developer-api-authentication.md)</br>
-[Rozhraní API integrace ATS](hr-admin-integration-ats-api-introduction.md)</br>
-[Rozhraní API integrace mezd](hr-admin-integration-payroll-api-introduction.md)
+- [Přehled](hr-developer-overview.md)</br>
+- [Rozšíření pomocí Power Apps a Power Automate](hr-developer-power-apps.md)</br>
+- [Entity aplikace Human Resources v Dataverse](hr-developer-entities.md)</br>
+- [Vlastní pole](hr-developer-custom-fields.md)</br>
+- [Tabulky Dataverse](hr-developer-entities.md)</br>
+- [Nastavení integrace dat](hr-admin-integration-choose-technology.md)</br>
+- [Řešení potíží s vývojem pomocí virtuálních tabulek Dataverse](hr-developer-optimize-virtual-table-queries.md)</br>
+- [Odkaz na API rozhraní entity](hr-developer-api-authentication.md)</br>
+- [Rozhraní API integrace ATS](hr-admin-integration-ats-api-introduction.md)</br>
+- [Rozhraní API integrace mezd](hr-admin-integration-payroll-api-introduction.md)
 
 ## <a name="user-guide"></a>Uživatelská příručka
 
-[Přehled](hr-hrpro-overview.md)</br>
-[Prozkoumání uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Nastavení Human Resources](hr-setup-parameters.md)</br>
-[Konfigurace nastavení organizace](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Správa zaměstnanců](hr-personnel-departments-jobs-positions.md)</br>
-[Nastavení plánů kompenzace](hr-compensation-overview.md)</br>
-[Správa zaměstnaneckých výhod](hr-benefits-management-overview.md)</br>
-[Správa pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
-[Správa žádostí o dovolenou v aplikaci Teams](hr-teams-leave-app.md)</br>
-[Rozvoj zaměstnanců](hr-develop-performance-management-overview.md)</br>
-[Vytvořit kurzy](hr-learning-courses.md)</br>
-[Nastavení samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md)
+- [Přehled](hr-hrpro-overview.md)</br>
+- [Prozkoumání uživatelského rozhraní](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Nastavení Human Resources](hr-setup-parameters.md)</br>
+- [Konfigurace nastavení organizace](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Správa zaměstnanců](hr-personnel-departments-jobs-positions.md)</br>
+- [Nastavení plánů kompenzace](hr-compensation-overview.md)</br>
+- [Správa zaměstnaneckých výhod](hr-benefits-management-overview.md)</br>
+- [Správa pracovního volna a absencí](hr-leave-and-absence-overview.md)</br>
+- [Správa žádostí o dovolenou v aplikaci Teams](hr-teams-leave-app.md)</br>
+- [Rozvoj zaměstnanců](hr-develop-performance-management-overview.md)</br>
+- [Vytvořit kurzy](hr-learning-courses.md)</br>
+- [Nastavení samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md)
+
+## <a name="additional-resources"></a>Další prostředky
+
+### <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources na Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videa
+
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

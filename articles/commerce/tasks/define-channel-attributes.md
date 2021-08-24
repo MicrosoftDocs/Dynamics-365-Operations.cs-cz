@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7f70e20dfc2eb8608c5dfae027c87dc457eb842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726400"
 ---
 # <a name="define-channel-attributes"></a> Definování atributů kanálu
 
@@ -31,7 +31,7 @@ Obohaťte kanál přidáním atributů kanálu a produktu. Než budete moci defi
 ## <a name="define-channel-product-attribute"></a>Definujte atribut produktu kanálu.
 1. Přejděte na Retail and Commerce > Nastavení kanálu > Kategorie kanálu a atributy produktu.
 2. Ve stromovém zobrazení vyberte „Contoso Retail\Fashion\Houston“.
-3. Klikněte na položku Upravit.
+3. Klikněte na možnost Upravit.
 4. V poli Hierarchie kategorií zadejte nebo vyberte hodnotu.
     * Navigační hierarchie se použije pro navigaci v produktu uvnitř kanálů.  
 5. Rozbalte část Skupina atributů.

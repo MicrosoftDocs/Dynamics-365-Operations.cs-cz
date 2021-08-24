@@ -2,7 +2,7 @@
 title: Nakonfigurujte hodnoty dimenze produktu tak, aby se zobrazovaly jako vzorky
 description: Toto téma popisuje, jak konfigurovat hodnoty dimenze produktu jako vzorníky v centrále Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764607"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Nakonfigurujte hodnoty dimenze produktu tak, aby se zobrazovaly jako vzorky
 
@@ -46,7 +46,7 @@ Následující ilustrace ukazuje příklad, kdy se barvy objeví jako vzorky na 
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>V centrále Commerce povolte zobrazení rozměrů jako vzorků
 
-Chcete-li povolit rozměry zobrazení jako vzorky v centrále Commerce, přejděte na **Pracovní prostory \> Správa funkcí** a zapněte funkci **Povolit podporu obrázků pro hodnoty dimenzí produktu**. Když je tento příznak funkce povolen, přidají se tři nová pole pro každou dimenzi do příslušných tabulek v centrále Commerce: **Hexadecimální kód**, **URL** (pro obrázky) a **RefinerGroup**.
+Chcete-li povolit rozměry zobrazení jako vzorky v centrále Commerce, přejděte na **Pracovní prostory \> Správa funkcí** a zapněte funkci **Povolit mechanismus pro reprezentaci dimenzí jako vzorníku**. Když je tento příznak funkce povolen, přidají se tři nová pole pro každou dimenzi do příslušných tabulek v centrále Commerce: **Hexadecimální kód**, **URL** (pro obrázky) a **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Nakonfigurujte hodnoty dimenzí v centrále Commerce
 
@@ -125,9 +125,22 @@ Před zobrazením vzorků na stránkách webů elektronického obchodování, kt
 
 Kromě toho byste měli povolit **Zahrňte atributy produktu do výsledků vyhledávání** vlastnost pro moduly výsledků hledání. Pokud váš web používá přizpůsobené stránky kategorií, měli byste aktualizovat moduly výsledků vyhledávání, které se na těchto stránkách používají, aby byla povolena vlastnost **Zahrňte atributy produktu do výsledků vyhledávání**. Další informace naleznete v tématu [Modul výsledků vyhledávání](../search-result-module.md).
 
+## <a name="inventory-awareness-on-swatches"></a>Povědomí o zásobách ve vzornících
+
+Vzorníky mají volitelnou schopnost zobrazovat dostupnost zásob u barvy nebo dimenze varianty produktu. Produkt se například prodává ve více velikostech, ale některé velikosti nejsou na skladě. V tomto případě jsou vzorníky pro produkty, které nejsou na skladě, vykresleny odlišně, což znamená, že nejsou k dispozici. Tato schopnost pomáhá snížit počet kliknutí zákazníků, která jsou nutná k určení dostupnosti produktu.
+
+Funkci dostupnosti zásob vzorníku lze nakonfigurovat pro použití na PDP i na stránkách vyhledávání nebo seznamu kategorií, kde jsou vzorníky zobrazeny. Chcete-li ji aktivovat, musíte nastavit vlastnost **Aktualizace média při výběru dimenze** na **Pravda** v [modulu galerie médií](../media-gallery-module.md). Toto nastavení umožňuje aktualizaci obrázků galerie médií, když jsou vybrány dimenze. 
+
+> [!IMPORTANT]
+> Funkce dostupnosti zásob vzorníku je dostupná v aplikaci Commerce od verze 10.0.21. Vyžaduje instalaci balíčku knihovny modulů Commerce verze 9.31.
+
+Následující obrázek znázorňuje příklad povědomí o zásobách na vzornících velikostí na PDP.
+
+![Příklad povědomí o zásobách na vzornících velikostí na PDP](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Zobrazte vzorky v POS a dalších kanálech
 
-Commerce aktuálně nemá dodávanou implementaci, která podporuje zobrazení vzorků v Point of Sale (POS) a dalších kanálech. Funkci zobrazení vzorníku však můžete implementovat jako rozšíření, díky němuž rozhraní API kanálu vrátí hexadecimální kódy a adresy URL obrázků, které jsou nutné k vykreslení vzorníků.
+Commerce aktuálně nemá dodávanou implementaci, která podporuje zobrazení vzorníků v pokladním místě (POS) a dalších kanálech. Funkci zobrazení vzorníku však můžete implementovat jako rozšíření, protože rozhraní API kanálu vrátí hexadecimální kódy a adresy URL obrázků, které jsou nutné k vykreslení vzorníků.
 
 ## <a name="additional-resources"></a>Další prostředky
 

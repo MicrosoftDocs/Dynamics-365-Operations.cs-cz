@@ -1,8 +1,8 @@
 ---
 title: Nastavení duálního zápisu z Lifecycle Services
 description: Toto téma vysvětluje, jak nastavit připojení pro duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729036"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
@@ -66,5 +66,18 @@ Chcete-li nastavit duální zápis pro existující prostředí Dataverse, musí
 
 > [!NOTE]
 > Nelze zrušit propojení prostředí pomocí LCS. Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.
+
+## <a name="linking-mismatch"></a>Nesoulad propojení
+
+Je možné, že vaše prostředí LCS je propojeno s jednou instancí Dataverse, zatímco vaše prostředí duálního zápisu je propojeno s jinou instancí Dataverse. Tento nesoulad propojení může způsobit neočekávané chování a může dojít k odeslání dat do nesprávného prostředí. Doporučené prostředí pro duální zápis je prostředí, které je vytvořeno jako součást integrace Power Platform a dlouhodobě to bude jediný způsob, jak vytvořit propojení mezi prostředími.
+
+Pokud má vaše prostředí nesoulad propojení, LCS zobrazí na stránce s podrobnostmi o vašem prostředí varování „Microsoft zjistil, že je vaše prostředí propojeno pomocí duálního zápisu do jiného cíle, než je uvedeno v integraci Power Platform, což se nedoporučuje“:
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrace - neshoda propojení":::
+
+Pokud narazíte na tuto chybu, existují dvě možnosti podle vašich potřeb:
+
++ [Odpojit a znovu propojit prostředí duálního zápisu (obnovit nebo změnit propojení)](relink-environments.md#scenario-reset-or-change-linking), jak je uvedeno na stránce podrobností o vašem prostředí LCS. Toto je ideální volba, protože ji můžete spustit bez podpory společnosti Microsoft.  
++ Pokud chcete zachovat své propojení v duálním zápisu, můžete požádat o pomoc podporu společnosti Microsoft a změnit integraci Power Platform, abyste využili své stávající prostředí Dataverse, jak je dokumentováno v předchozí části.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

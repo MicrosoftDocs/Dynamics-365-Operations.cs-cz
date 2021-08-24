@@ -2,7 +2,7 @@
 title: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
 description: Toto téma popisuje, jak navrhnout konfiguraci elektronického výkaznictví (ER) a určit její závislost na ostatních softwarových komponentách.
 author: NickSelin
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4aef052a77428bb783a3a098754ca4dcc1b4296
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717587"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
 
@@ -138,5 +138,8 @@ Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiš
     * Všimněte si, že konfigurace modelu mapování 'Vzorové mapování' bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro aplikaci. Konfigurace 'Vzorové mapování (alternativní)' nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
     * Pokud jste přihlášeni k Finance and Operations, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace 'Ukázkové mapování (alternativní)' a konfigurace "Ukázkové mapování" bude přeskočena.  
 
+## <a name="additional-resources"></a>Další prostředky
+
+[Správa životního cyklu konfigurace elektronického vykazování](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

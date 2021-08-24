@@ -2,7 +2,7 @@
 title: Modul dárkového poukazu
 description: Tohle téma se zabývá moduly dárkového poukazu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728332"
 ---
 # <a name="gift-card-module"></a>Modul dárkového poukazu
 
@@ -48,11 +48,17 @@ Následující obrázek znázorňuje příklad modulu dárkového poukazu na str
 
 - **Zobrazit další pole** – Tato vlastnost určuje, která pole mají být zobrazena pro dárkové poukazy kromě čísla dárkového poukazu, který je ve výchozím nastavení vždy zobrazen. Některé dárkové poukazy například podporují zobrazení osobního identifikačního čísla (PIN) a další podporují zobrazování kódu PIN a data vypršení platnosti. Druhou možností může být nastavení této vlastnosti na "none", která by zobrazila pouze číslo dárkového poukazu a žádná další pole.
 
-Podporované hodnoty:
--   PIN
--   Datum konce platnosti
--   PIN a datum konce platnosti 
--   Žádní
+    Podporovány jsou následující hodnoty:
+
+    - PIN
+    - Datum konce platnosti
+    - PIN a datum konce platnosti 
+    - Neomezeno
+
+- **Povolit pro uživatele typu host** - Když je tato vlastnost povolena, mohou uživatelé typu host uplatnit nebo zkontrolovat zůstatky na dárkových kartách. Tato vlastnost vyžaduje, aby byl v Commerce Headquarters povolen anonymní přístup (hosta) pro dárkové karty. Další informace viz [Povolení plateb dárkovými kartami pro hosty na pokladně](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> Vlastnost **Povolit pro uživatele typu host** je k dispozici od verze Commerce 10.0.21. Vyžaduje instalaci balíčku knihovny modulů Commerce verze 9.31.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Nastavení webu pro moduly dárkových poukazů
 

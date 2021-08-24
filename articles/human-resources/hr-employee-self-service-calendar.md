@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744219"
 ---
 # <a name="view-team-and-company-calendars"></a>Zobrazení kalendáře týmu a společnosti
 
@@ -47,7 +47,7 @@ Manažeři také mohou přistupovat k týmovému kalendáři z **Nedokončených
 
 Uživatelé v roli Správce nepřítomnosti mohou ve svém kalendáři zobrazit žádosti o volno. Chcete-li získat přístup ke kalendáři dovolené, postupujte takto.
 
-1. V pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správce nepřítomnosti** a pak **Kalendář správce nepřítomnosti**.
+1. V pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
 
 2. Do pole **Datum** zadejte požadované datum.
 

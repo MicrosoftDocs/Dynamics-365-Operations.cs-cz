@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4ee68b691bba7f3314b5278b0bcc26504c1583335914a1e7c645abd5303f02c6
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358115"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012006"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -49,6 +49,9 @@ Na stránce **Regulatory Configuration Service** zkontrolujte a přijměte dopl�
 
 - **Zaregistrovat se**, pokud službu používáte poprvé a používáte pracovní e-mailovou adresu k zajištění prostředí služby vaší organizaci
 - **Přihlásit se**, pokud jste se již do služby zaregistrovali a chcete přistupovat k prostředí vaší organizace
+
+> [!NOTE] 
+> Jakmile se zaregistrujete, doporučujeme přidat do prostředí RCS dalšího uživatele SysAdmin. Tento uživatel bude zřízen jako spolusprávce pro prostředí. To pomůže zajistit stabilitu pro přístup k prostředí RCS, protože rolí SysAdmin je správa uživatelů pro toto prostředí. Uživatelé můžete přidávat pomocí **Pracovní prostor RCS > Správa systému**.
 
 ## <a name="regional-availability"></a>Regionální dostupnost
 
