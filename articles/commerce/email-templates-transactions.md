@@ -2,7 +2,7 @@
 title: Vytvoření e-mailových šablon pro transakční události
 description: Toto téma popisuje, jak vytvářet, odesílat a konfigurovat e-mailové šablony pro transakční události v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718700"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak vytvářet, odesílat a konfigurovat e-mailové šablony pro transakční události v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Dynamics 365 Commerce poskytuje vestavěné řešení pro odesílání e-mailů, které upozorňují zákazníky na transakční události (například při zadávání objednávky, když je objednávka připravená k vyzvednutí nebo když byla expedována). Toto téma popisuje kroky pro vytváření, odesílání a konfiguraci e-mailových šablon, které se používají k odesílání transakčních e-mailů.
 
@@ -79,26 +77,33 @@ Následující zástupné texty se načtou a zobrazí data, která jsou definov�
 | Název zástupného textu     | Hodnota zástupného textu                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Jméno zákazníka, který vystavil objednávku.               |
-| salesid              | ID prodejní objednávky.                                   |
-| deliveryaddress      | Dodací adresa pro expedované objednávky.                     |
 | customeraddress      | Adresa zákazníka.                                 |
 | customeremailaddress | E-mailová adresa, kterou zákazník zadal při placení.     |
+| salesid              | ID prodejní objednávky.                                   |
+| orderconfirmationid  | Mezikanálové ID, které bylo vygenerováno při vytváření objednávky. |
+| channelid            | ID maloobchodního nebo online kanálu, prostřednictvím kterého byla objednávka zadána. |
+| deliveryname         | Název, který je uveden pro doručovací adresu.        |
+| deliveryaddress      | Dodací adresa pro expedované objednávky.                     |
 | deliverydate         | Datum dodání.                                           |
 | shipdate             | Datum expedice.                                               |
 | modeofdelivery       | Způsob doručení objednávky.                              |
+| ordernetamount       | Celková částka objednávky snížená o celkovou daň.         |
+| sleva             | Celková sleva objednávky.                            |
 | náklady pro záhlaví              | Celkové poplatky za objednávku.                             |
 | daň                  | Celková daň objednávky.                                 |
 | celkem                | Celková částka objednávky.                              |
-| ordernetamount       | Celková částka objednávky snížená o celkovou daň.         |
-| sleva             | Celková sleva objednávky.                            |
 | storename            | Název obchodu, kde byla vystavena objednávka.            |
 | storeaddress         | Adresa obchodu, který vystavil objednávku.              |
 | storeopenfrom        | Otevírací čas obchodu, který vystavil objednávku.         |
 | storeopento          | Zavírací čas obchodu, který vystavil objednávku.         |
-| pickupstorename      | Název obchodu, kde bude objednávka vyzvednuta.     |
-| pickupstoreaddress   | Adresa obchodu, kde bude objednávka vyzvednuta.  |
-| pickupopenstorefrom  | Otevírací čas obchodu, kde bude objednávka vyzvednuta. |
-| pickupopenstoreto    | Zavírací čas obchodu, kde bude objednávka vyzvednuta. |
+| pickupstorename      | Název obchodu, kde bude objednávka vyzvednuta.\* |
+| pickupstoreaddress   | Adresa obchodu, kde bude objednávka vyzvednuta.\* |
+| pickupopenstorefrom  | Otevírací čas obchodu, kde bude objednávka vyzvednuta.\* |
+| pickupopenstoreto    | Zavírací čas obchodu, kde bude objednávka vyzvednuta.\* |
+| pickupchannelid      | ID kanálu obchodu, který je určen pro způsob vyzvednutí.\* |
+| packingslipid        | ID dodacího listu, který byl vygenerován při zabalení řádků v objednávce.\* |
+
+\* Tyto zástupné symboly vracejí data pouze v případě, že jsou použity pro typ oznámení **Objednávka připravena k vyzvednutí**. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Zástupné texty řádku objednávky (úroveň řádku prodeje)
 
@@ -106,7 +111,10 @@ Následující zástupné texty získávají a zobrazují data pro jednotlivé p
 
 | Název zástupného textu               | Hodnota zástupného textu |
 |--------------------------------|-------------------|
-| productid                      | ID produktu pro řádek. |
+| productid                      | <p>ID produktu. Toto ID odpovídá variantám.</p><p><strong>Poznámka:</strong> Tento zástupný symbol byl nahrazen za **lineproductrecid**.</p> |
+| lineproductrecid               | ID produktu. Toto ID odpovídá variantám. Jedinečně identifikuje položku na úrovni variant. |
+| lineitemid                     | ID úrovně produktu. (Toto ID neodpovídá variantám.) |
+| lineproductvariantid           | ID varianty produktu. |
 | lineproductname                | Název produktu. |
 | lineproductdescription         | Popis produktu. |
 | linequantity                   | Počet jednotek, které byly objednány pro řádek, plus měrná jednotka (například **ks**, nebo **pár**). |
@@ -125,6 +133,8 @@ Následující zástupné texty získávají a zobrazují data pro jednotlivé p
 | linedeliverydate               | Datum dodání pro řádek. |
 | linedeliverymode               | Způsob dodání pro řádek. |
 | linedeliveryaddress            | Adresa dodání pro řádek. |
+| linepickupdate                 | Datum vyzvednutí, které zákazník uvedl u objednávek, které používají způsob vyzvednutí. |
+| linepickuptimeslot             | Časový rozsah vyzvednutí, které zákazník uvedl u objednávek, které používají způsob vyzvednutí. |
 | giftcardnumber                 | Číslo dárkového poukazu pro výrobky typu dárkového poukazu. |
 | giftcardbalance                | Zůstatek dárkového poukazu pro výrobky typu dárkového poukazu. |
 | giftcardmessage                | Zpráva dárkového poukazu pro výrobky typu dárkového poukazu. |

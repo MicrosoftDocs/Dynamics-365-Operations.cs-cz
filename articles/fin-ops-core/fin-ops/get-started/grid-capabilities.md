@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775235"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -158,6 +158,13 @@ Pokud vaše organizace objeví stránku, která má nějaké problémy s využit
  ```this.forceLegacyGrid();```
 
 Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Pokud nějaké problémy vyžadují použití tohoto rozhraní API, nahlaste je společnosti Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Vynucení stránky k použití nové mřížky po předchozím odhlášení z mřížky
+Pokud jste se z používání nové mřížky odhlásili pro jednotlivou stránku, možná budete chtít později novou mřížku po vyřešení základních problémů znovu povolit. Chcete -li to provést, jednoduše odeberte volání na `forceLegacyGrid()`. Změna se neprojeví, dokud nenastane jedna z následujících situací:
+
+- **Opětovné nasazení prostředí**: Když je prostředí aktualizováno a znovu nasazeno, tabulka, která ukládá stránky, které se odhlásily z nové mřížky (FormControlReactGridState), se automaticky vymaže.
+
+- **Ruční čištění tabulky**: Pro scénáře vývoje budete muset použít SQL k vymazání tabulky FormControlReactGridState a restartování AOS. Tato kombinace akcí resetuje ukládání do mezipaměti stránek, které se odhlásily z nové mřížky.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Vývojář] Sloupce velikosti k dostupné šířce
 Pokud vývojář nastaví vlastnost **WidthMode** na **SizeToAvailable** pro sloupce uvnitř nové mřížky mají tyto sloupce zpočátku stejnou šířku, jakou by měli, kdyby byla vlastnost nastavena na **SizeToContent**. Roztahují se však, aby uvnitř mřížky využili jakoukoli další dostupnou šířku. Pokud je vlastnost nastavena na **SizeToAvailable** pro více sloupců sdílejí všechny tyto sloupce jakoukoli další dostupnou šířku uvnitř mřížky. Pokud však uživatel ručně změní velikost jednoho z těchto sloupců, sloupec se stane statickým. Zůstane na této šířce a již se nebude natahovat, aby zabírala další dostupnou šířku mřížky.  

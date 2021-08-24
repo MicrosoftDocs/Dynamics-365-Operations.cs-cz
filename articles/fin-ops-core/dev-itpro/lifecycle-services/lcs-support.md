@@ -2,7 +2,7 @@
 title: Získání podpory pro Finance and Operations nebo Lifecycle Services (LCS)
 description: Toto téma vysvětluje, jak získat nápovědu s aplikacemi Finance and Operations nebo Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713327"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Získání podpory pro Finance and Operations nebo Lifecycle Services (LCS)
 
@@ -48,7 +48,7 @@ Toto téma vysvětluje, jak získat nápovědu s aplikacemi Finance and Operatio
 <td>V <a href="https://lcs.dynamics.com/">LCS</a> použijte <strong>Hledání problémů</strong> k rychlému vyhledání článků ve znalostní bázi Microsoft, oprav hotfix a postupů pro hlášený problém s aplikací Retail. Lze zjistit, které nahlášené problémy pro konkrétní funkční oblast se právě opravují a které již byly opraveny. Další informace naleznete v tématu <a href="issue-search-lcs.md">IHledání problému (Lifecycle Services, LCS).</a>.</td>
 </tr>
 <tr>
-<td>Získejte podporu v aplikaci.</td>
+<td>Získejte podporu v rámci aplikace Finance and Operations.</td>
 <td>V pravém horním rohu aplikace vyberte tlačítko <strong>Nápověda</strong> (<strong>?</strong>) a poté vyberte možnost <strong>Podpora</strong>. Problémy jsou nahlášeny na kartě <strong>Aktivní problémy</strong> v LCS. Zde mohou správci určit, zda by měli poskytovat interní podporu nebo odesílat problémy společnosti Microsoft.</td>
 </tr>
 <tr>

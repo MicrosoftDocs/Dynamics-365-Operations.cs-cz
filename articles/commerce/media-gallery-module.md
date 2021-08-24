@@ -2,7 +2,7 @@
 title: Modul galerie médií
 description: Tohle téma se zabývá moduly galerie médií a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733190"
 ---
 # <a name="media-gallery-module"></a>Modul galerie médií
 
@@ -56,6 +56,10 @@ V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky p
 | Obrázky | Obrázky, které jsou vybrány z knihovny médií Tvůrce stránek | Kromě vykreslení z produktu lze obrázky upravovat také pro modul galerie médií. Tyto obrázky budou připojeny ke všem dostupným obrázkům produktu. Tato funkce je dostupná v Commerce verze 10.0.12. |
 | Orientace miniatury | **Vertikální** nebo **Horizontální** | Tato vlastnost určuje, zda se mají miniatury zobrazovat ve svislém nebo vodorovném pruhu. |
 | Skrýt obrázky hlavních produktů pro variantu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, je-li vybrána varianta, jsou obrázky hlavního produktu skryty, pokud varianta neobsahuje žádné obrázky. Tato vlastnost nemá vliv na produkty, které nemají žádné varianty. |
+| Aktualizace média při výběru dimenze | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, obrázky v knihovně médií budou aktualizovány, když je vybrána jakákoli dimenze (například barva, styl nebo velikost) a pokud je k dispozici obrázek. Tato vlastnost pomáhá zjednodušit procházení, protože ne každá dimenze varianty produktu musí být vybrána, aby byl aktualizován odpovídající obrázek. Tato vlastnost je k dispozici na kartě **Rozšířené**. |
+
+> [!IMPORTANT]
+> Vlastnost **Aktualizace média při výběru dimenze** je k dispozici od verze Commerce verze 10.0.21. Vyžaduje instalaci balíčku knihovny modulů Commerce verze 9.31.
 
 Následující obrázek ukazuje příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.
 

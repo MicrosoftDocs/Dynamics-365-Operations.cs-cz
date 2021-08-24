@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740832"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
@@ -52,9 +52,9 @@ Při kopírování databáze aplikace Human Resources dojde k následujícím ud
 
 - Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Ve výsledku nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
 
-- Všichni uživatelé, kromě správce a ostatních interních uživatelských účtů služby budou nedostupní. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
+- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, a dalších uživatelských účtů interní služby, nebudou k dispozici. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
 
-- Uživatel s oprávněními správce musí provést požadované změny konfigurace, například opětovné připojení koncových bodů integrace pro určité služby nebo adresy URL.
+- Každý uživatel s rolí zabezpečení „Správce systému“ musí provést požadované změny konfigurace, například znovu připojit koncové body integrace ke konkrétním službám nebo adresám URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopírování databáze aplikace Human Resources
 
@@ -75,7 +75,7 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
 5. Vyberte **Power Platform** a přihlaste se do centra pro správu Microsoft Power Platform.
 
-   ![[Vybrat Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Výběr Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vyberte prostředí Power Apps, ke zkopírování a pak vyberte **Kopírovat**.
 
@@ -111,7 +111,7 @@ Některé z těchto prvků nebyly zkopírovány, protože jsou specifické pro p
 
 Při kopírování instance se dále mění následující stavy:
 
-- Všichni uživatelé s výjimkou správce jsou nastaveni na **Zakázáno**.
+- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, jsou nastaveni na **Zakázáno**.
 
 - Všechny dávkové úlohy, s výjimkou některých systémových úloh, jsou nastaveny na **srážka**.
 

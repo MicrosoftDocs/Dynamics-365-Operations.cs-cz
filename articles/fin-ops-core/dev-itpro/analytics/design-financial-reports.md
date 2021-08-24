@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c1cccccd2b20626dba14d9b0cb97bef10732fd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724436"
 ---
 # <a name="view-and-design-financial-reports"></a>Zobrazení a navržení finančních sestav
 
@@ -151,7 +151,7 @@ V tomto cvičení budete upravovat existující výchozí sestavu. Budete přid�
 4. Vyberte nabídku **Soubor** &gt; **Uložit jako** a zadejte název sestavy **Konsolidovaná rozvaha a výkaz příjmů vedle sebe**.
 5. Změňte základní rok na 2012.
 6. Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Organizační hierarchie**.
-7. Klikněte šipku rozevíracího seznamu typ stromu a vyberte **Contoso Holdings**.
+7. Klikněte šipku stromového rozevíracího seznamu a vyberte **Contoso Holdings**.
 8. Uložte změny a generujte sestavu. Pokud se zobrazí dotaz, vyberte všechny jednotky sestavy. Po dokončení generování sestavy a jejím otevření můžete sestavu prohlížet.
 9. Vyberte volbu **Možnosti sestavy**.
 10. Vyberte možnost **Přidat filtr dimenze** a zvolte možnost **Oddělení**.

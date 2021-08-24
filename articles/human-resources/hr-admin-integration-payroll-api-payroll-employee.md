@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768184"
 ---
 # <a name="payroll-employee"></a>Zaměstnanec na výplatní listině
 
@@ -33,27 +33,25 @@ Fyzický název: mshr_payrollemployeeentity.
 Tato entita poskytuje informace o zaměstnanci. Musíte nastavit [parametry integrace mezd](hr-admin-integration-payroll-api-parameters.md) před použitím této entity.
 
 >[!IMPORTANT] 
->Pole **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** a **NameValidTo** v této entitě již nebudou dostupné. Tím je zajištěno, že tuto entitu podporuje pouze jeden datový zdroj dat s platností, a to **HcmEmployment** s polemi **EmploymentStartDate** a **EmploymentEndDate**.
-
->Tato pole budou k dispozici na **DirPersonNameHistoricalEntity**, která byla vydána v aktualizaci platformy 43. Existuje vztah OData z **PayrollEmployeeEntity** na **DirPersonNameHistoricalEntity** v poli **Osoba**. Případně lze entitu **DirPersonNameHistoricalEntity** přímo dotazovat prostřednictvím OData pomocí veřejného názvu **PersonHistoricalNames**.
-
+>Pole **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** a **NameValidTo** v této entitě již nejsou dostupná. Tím je zajištěno, že existuje pouze jeden datový zdroj data platnosti, který podporuje tuto entitu.
+>Tato pole budou k dispozici na **DirPersonNameHistoricalEntity**, která byla vydána v aktualizaci platformy 43. Existuje vztah OData z **PayrollEmployeeEntity** na **DirPersonNameHistoricalEntity** v poli **Osoba**. 
 
 ## <a name="properties"></a>Vlastnosti
 
 | Vlastnost<br>**Fyzický název**<br>**_Typ_** | Použít | popis |
 | --- | --- | --- |
-| **Číslo pracovníka**<br>mshr_personnelnumber<br>*Řetězec* | Jen pro čtení<br>Povinná | Jedinečné osobní číslo zaměstnance. |
-| **Primární pole**<br>mshr_primaryfield<br>*Řetězec* | Povinná<br>Generováno systémem |  |
-| **ID právnické osoby**<br>mshr_legalentityID<br>*Řetězec* | Jen pro čtení<br>Povinná | Určuje právnickou osobu (společnost). |
-| **Rod**<br>mshr_gender<br>[Sada možností mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Jen pro čtení<br>Povinná | Pohlaví zaměstnance. |
+| **Číslo pracovníka**<br>mshr_personnelnumber<br>*Řetězec* | Jen pro čtení | Jedinečné osobní číslo zaměstnance. |
+| **Primární pole**<br>mshr_primaryfield<br>*Řetězec* | Jen pro čtení<br>Generováno systémem |  |
+| **ID právnické osoby**<br>mshr_legalentityID<br>*Řetězec* | Jen pro čtení | Určuje právnickou osobu (společnost). |
+| **Rod**<br>mshr_gender<br>[Sada možností mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Jen pro čtení | Pohlaví zaměstnance. |
 | **ID entity zaměstnance na výplatní listině**<br>mshr_payrollemployeeentityid<br>*GUID* | Povinná<br>Generováno systémem | Systémem generovaná hodnota GUID pro jedinečnou identifikaci zaměstnance. |
-| **Počáteční datum zaměstnání**<br>mshr_employmentstartdate<br>*Posun data a času* | Jen pro čtení<br>Povinná | Počáteční datum zaměstnaneckého poměru zaměstnance. |
-| **ID typu identifikace**<br>mshr_identificationtypeid<br>*Řetězec* |Jen pro čtení<br>Povinná | Typ identifikace definovaný pro zaměstnance. |
-| **Koncové datum zaměstnání**<br>mshr_employmentenddate<br>*Posun data a času* | Jen pro čtení<br>Povinná |Koncové datum zaměstnaneckého poměru zaměstnance.  |
-| **ID datové oblasti**<br>mshr_dataareaid_id<br>*GUID* | Povinná <br>Generováno systémem | Systémem generovaná hodnota GUID identifikující právnickou osobu (společnost). |
-| **Platné do**<br>mshr_namevalidto<br>*Posun data a času* |  Jen pro čtení<br>Povinná | Datum konce platnosti informací o zaměstnanci. |
-| **Datum narození**<br>mshr_birthdate<br>*Posun data a času* | Jen pro čtení <br>Povinná | Datum narození zaměstnance |
-| **Identifikační číslo do**<br>mshr_identificationnumber<br>*Řetězec* | Jen pro čtení <br>Povinná |Identifikační číslo definované pro zaměstnance.  |
+| **Počáteční datum zaměstnání**<br>mshr_employmentstartdate<br>*Posun data a času* | Jen pro čtení | Počáteční datum zaměstnaneckého poměru zaměstnance. |
+| **ID typu identifikace**<br>mshr_identificationtypeid<br>*Řetězec* |Jen pro čtení | Typ identifikace definovaný pro zaměstnance. |
+| **Koncové datum zaměstnání**<br>mshr_employmentenddate<br>*Posun data a času* | Jen pro čtení |Koncové datum zaměstnaneckého poměru zaměstnance.  |
+| **ID datové oblasti**<br>mshr_dataareaid_id<br>*GUID* | Jen pro čtení <br>Generováno systémem | Systémem generovaná hodnota GUID identifikující právnickou osobu (společnost). |
+| **Platné do**<br>mshr_namevalidto<br>*Posun data a času* |  Jen pro čtení | Datum konce platnosti informací o zaměstnanci. |
+| **Datum narození**<br>mshr_birthdate<br>*Posun data a času* | Jen pro čtení | Datum narození zaměstnance |
+| **Identifikační číslo do**<br>mshr_identificationnumber<br>*Řetězec* | Jen pro čtení |Identifikační číslo definované pro zaměstnance.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Příklad dotazu pro zaměstnance na výplatní pásce
 

@@ -2,7 +2,7 @@
 title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748203"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s Financial reporting 
 
@@ -47,10 +47,10 @@ Chcete-li vytvořit a generovat finanční sestavy pro právnickou osobu, nastav
 -   Účtová osnova
 -   Měna
 -   Zaúčtování transakce alespoň do jednoho účtu
--   Hlavní účet je uveden ve sloupci Vybrané v umístění **Hlavní kniha > Nastavení hlavní knihy > Nastavení finančního výkaznictví**
+-   Hlavní účet je uveden ve sloupci **Vybrané** na stránce **Nastavení finančního výkaznictví** (**Hlavní kniha > Nastavení hlavní knihy > Nastavení finančního výkaznictví**)
 
-## <a name="granting-security-access-to-financial-reporting"></a>Poskytnutí bezpečnostního přístupu k Financial Reporting
-Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení. Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.
+## <a name="granting-security-access-to-financial-reporting"></a>Poskytnutí bezpečnostního přístupu k finančnímu výkaznictví
+Funkce finančního výkaznictví jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení. Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.
 
 ### <a name="duties"></a>Funkční oprávnění
 
@@ -160,15 +160,52 @@ Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upra
 Problém 2: Uživateli nebyla přidělena požadovaná oprávnění k používání Financial Reporting. 
 
 * Chcete-li ověřit, zda uživatel nemá oprávnění, vyberte **Ano** u chyby „Nelze se připojit k serveru Financial Reporting. Zvolte Ano, pokud chcete pokračovat a zadejte jinou adresu serveru." Pak vyberte **Test připojení**. Pokud nemáte povolení, zobrazí se zpráva „Pokus o připojení selhal. Uživatel nemá příslušná oprávnění pro připojení k serveru. Obraťte se na vašeho správce systému."
-* Požadovaná oprávnění jsou uvedena výše v [Poskytnutí bezpečnostního přístupu k Financial Reporting](#granting-security-access-to-financial-reporting). Zabezpečení ve Financial Reporting je založeno na těchto oprávněních. Nebudete mít přístup, dokud vám tato oprávnění (nebo jiná role zabezpečení, která tato oprávnění zahrnují) nebudou přiřazena. 
+* Požadovaná oprávnění jsou uvedena výše v [Poskytnutí bezpečnostního přístupu k finančnímu výkaznictví](#granting-security-access-to-financial-reporting). Zabezpečení ve finančním výkaznictví je založeno na těchto oprávněních. Nebudete mít přístup, dokud vám tato oprávnění (nebo jiná role zabezpečení, která tato oprávnění zahrnují) nebudou přiřazena. 
 * Integrační úloha **Poskytovatel uživatelských služeb společnosti** (která je také odpovědná a známá jako integrace uživatelů) běží v 5minutovém intervalu. Změny oprávnění se ve Financial Reporting projeví až po 10 minutách. 
   Pokud jiný uživatel může otevřít Návrháře sestav, vyberte **Nástroje** a poté vyberte **Stav integrace**. Ověřte, zda integrační mapa „Poskytovatel firemních uživatelů pro společnost“ úspěšně fungovala, protože vám bylo uděleno oprávnění k používání Financial Reporting. 
 * Je možné, že další chyba zabránila **Integrace uživatele Dynamics do Financial Reporting** v dokončení. Nebo je možné, že reset datamartu byl zahájen a ještě nebyl dokončen, nebo že došlo k jiné systémové chybě. Zkuste proces spustit znovu později. Pokud problém přetrvává, kontaktujte správce systému.
 
-Problém 3: Můžete pokračovat předs přihlašovací stránku ClickOnce Report Designer, ale nemůžete dokončit přihlášení v návrháři sestav. 
+Problém 3: Můžete pokračovat předs přihlašovací stránku **ClickOnce Report Designer**, ale nemůžete dokončit přihlášení v návrháři sestav. 
 
-* Čas nastavený v místním počítači po zadání přihlašovacích údajů musí být do pěti minut od času na serveru Financial Reporting. Pokud je rozdíl delší než pět minut, systém neumožní přihlášení. 
-* V tomto případě doporučujeme povolit možnost Windows pro automatické nastavení času vašeho počítače. 
+* Čas nastavený v místním počítači při vašem přihlášení do systému musí být do pěti minut od času na serveru finančního výkaznictví. Pokud je rozdíl delší než pět minut, systém neumožní přihlášení. 
+* Pokud se čas ve vašem počítači liší od času na serveru finančního výkaznictví, doporučujeme povolit možnost Windows, aby se čas vašeho počítače nastavoval automaticky. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>Odstranění problémů s návrhářem sestav pomocí prohlížeče událostí
+
+Prohlížeč událostí můžete použít k analýze některých problémů, které vznikají při používání finančního výkaznictví. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Co se stane, když máte problémy s připojením k finančnímu výkaznictví? 
+
+Zde je několik kroků, které můžete provést, aby byla vaše konverzace s podporou Microsoftu efektivnější a dovedla vás k rychlejšímu řešení. 
+ 
+Následující kroky provázejí procesem zapnutí zpráv prohlížeče událostí pro finanční výkaznictví. Protokoly, které prohlížeč událostí generuje, pomohou technikům podpory rychle identifikovat zdroj problému s připojením. Při kontaktování podpory odešlete kopie těchto protokolů společně s lístkem.
+
+> 1.    Zkopírujte soubor RegisterETW.zip na klientskou pracovní stanici (nejlépe na plochu) a extrahujte [RegistraceETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+
+> 2.    Ujistěte se, že je prohlížeč událostí systému Windows zavřený.
+
+> 3.    Otevřete příkazový řádek správce PowerShell a přejděte do adresáře, kde je umístěn RegisterETW.ps1.
+
+> 4.    Spusťte následující příkaz: .\RegisterETW.ps1
+   
+   Úspěšný výstup v prostředí PowerShell bude ověřen pomocí zprávy **Competed RegisterETW script**.
+Znovu otevřete prohlížeč událostí a nyní uvidíte tyto protokoly pod **Microsoft > Dynamics**: * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Reprodukujte problém v návrháři sestav.
+   
+> 6. Exportujte události MR-Loggeru pomocí prohlížeče událostí.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Odstraňování problémů s připojením k finančnímu výkaznictví
+
+Problém: Zobrazí se chyba „Nelze se připojit k serveru finančního výkaznictví“.
+
+* Zjistěte, zda k problému dochází v internetových prohlížečích Chrome a Edge.
+* Pokud k problému dochází pouze v jednom prohlížeči, může jít o problém ClickOnce. 
+* Když se zobrazí chybová zpráva o připojení, vyberte **Test** a otestujte připojení, abyste zjistili, jaká zpráva se zobrazí. 
+* Problém může být důsledkem toho, že jiný uživatel nemá přístup k finančnímu výkaznictví. Pokud uživatel nemá přístup, obdrží zprávu, že nemá oprávnění.
+* Pokud k problému dochází ve více prohlížečích, ujistěte se, že jsou hodiny na vaší pracovní stanici nastaveny na Auto.
+* Pracujte s uživatelem, který má práva správce zabezpečení v Dynamics 365 Finance a práva správce k síťové doméně, abyste se mohli přihlásit k pracovní stanici a zjistit, zda se mohou připojit. Pokud se mohou připojit, problém může souviset se síťovými oprávněními.
+* Na pracovní stanici dočasně deaktivujte bránu firewall. Pokud se poté můžete připojit k Report Designeru, problém je ve vaší bráně firewall. Při řešení problému spolupracujte s IT oddělením vaší organizace.
 
 ## <a name="additional-resources"></a>Další prostředky
 - [Zobrazit finanční sestavy](view-financial-reports.md)

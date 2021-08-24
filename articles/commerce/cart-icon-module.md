@@ -2,7 +2,7 @@
 title: Ikona modulu košíku
 description: Tohle téma se zabývá modulem ikony košiku a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6637994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735671"
 ---
 # <a name="cart-icon-module"></a>Modul ikony košíku
 
@@ -35,9 +35,14 @@ Následující obrázek znázorňuje příklad modulu ikony vozíku, který zobr
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
-- **Zobrazit Mini košík** – je-li nastavena hodnota true, umožňuje tato vlastnost zobrazit souhrn nákupního košíku (mini košík) při přechodu na ikonu košíku. Tato funkce je podporována pouze pro porty zobrazení na ploše.
+- **Zobrazit Mini košík** – je-li vlastnost nastavena na **true**, zobrazí se souhrn nákupního košíku (mini košík) při přechodu myší na ikonu košíku. Tato funkce je podporována pouze pro porty zobrazení na ploše.
+- **Povolit anonymní pokladnu** - Když je tato vlastnost nastavena na **True**, mini košík umožňuje uživatelům, kteří nejsou přihlášeni, provést pokladnu pro hosty. Tato vlastnost je k dispozici ve verzi Commerce verze 10.0.21 jako součást balíčku knihovny modulů Commerce.
+- **Pořadí položek** - Tato vlastnost určuje pořadí, ve kterém se položky zobrazují v mini košíku. Když je vybrána možnost **Nové položky přidány na začátek seznamu**, nové položky přidané do košíku se zobrazí v horní části seznamu položek mini košíku. Když je vybrána výchozí možnost **Nové položky přidány na konec seznamu**, nové položky přidané do košíku se zobrazí ve spodní části seznamu položek mini košíku. Tato vlastnost je k dispozici ve verzi Commerce verze 10.0.21 jako součást balíčku knihovny modulů Commerce.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Vlastnosti modulu v motivu Adventure Works
+> [!IMPORTANT]
+> Vlastnosti **Povolit anonymní pokladnu** a **Pořadí položek** jsou k dispozici od vydání Commerce verze 10.0.21. Vyžadují instalaci balíčku knihovny modulů Commerce verze 9.31.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Vlastnosti modulu a sloty v motivu Adventure Works
 
 V motivu Adventure Works obsahuje modul ikony košíku dvě další místa pro minikošík. Tato místa jsou zahrnuta jako rozšíření definice modulu.
 

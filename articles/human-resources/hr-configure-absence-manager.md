@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639599"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732338"
 ---
 # <a name="configure-the-absence-manager-role"></a>Nakonfigurujte roli správce nepřítomnosti
 
@@ -89,16 +89,21 @@ Role Správce nepřítomnosti musí být zaměstnancům přidělena, aby jim umo
 
 ## <a name="absence-manager-workspace"></a>Pracovní prostor manažera absencí
 
-V pracovním prostoru **Samoobsluha zaměstnanců** karta **Manažer nepřítomnosti** zobrazuje informace o nepřítomnosti zaměstnanců, kteří jsou v hierarchii Dovolená přiřazeni správci nepřítomnosti.
+V pracovním prostoru **Samoobsluha zaměstnanců** karta **Správa pracovního volna** zobrazuje informace o nepřítomnosti zaměstnanců, kteří jsou v hierarchii Dovolená přiřazeni správci nepřítomnosti. Správce nepřítomnosti má k dispozici několik možností: 
+ - Zkontrolovat žádosti o volno.</br>
+ - Odeslat žádost o volno jménem zaměstnance.</br>
+ - Zobrazit všechny zaměstnance, kteří jsou mu přiřazeni, jako součást hierarchie volna.</br>
+ - Zobrazit kalendář manažera nepřítomnosti.</br>
 
-Na kartě **Dovolená a nepřítomnost** jsou pro každého zaměstnance k dispozici následující možnosti:
-
-- **Volno** - Zobrazit zůstatky, schválené volno a žádosti o volno pro vybraného zaměstnance.
-- **Zůstatky dovolené** - Zobrazit seznam zůstatků pro různé plány dovolené pro vybraného zaměstnance.
+V pracovním prostoru **Správa pracovného volna** existují dvě karty:
+ - **Žádosti o volno**: Na této kartě bude uveden seznam všech nevyřízených žádostí o volno, které může správce nepřítomnosti schválit. Správce nepřítomnosti může vybrat více záznamů a současně s nimi provádět akce. Pokud je povoleno zobrazení volna napříč společnostmi, tento seznam zobrazí nevyřízené žádosti o volno u všech právnických osob, ke kterým mají přístup. V opačném případě zobrazí nevyřízené žádosti o volno aktuálně vybrané právnické osoby. </br>
+ - **Všichni zaměstnanci** : Tato karta zobrazí seznam všech zaměstnanců, kteří jsou v hierarchii volna přiřazeni správci nepřítomnosti. Pro každého zaměstnance je k dispozici několik možností:
+    - **Požádat o volno** - Odešlete vybranému zaměstnanci novou žádost o volno.</br>
+    - **Volno** - Zobrazit zůstatky, schválené volno a žádosti o volno pro vybraného zaměstnance.</br>
 
 ## <a name="approve-time-off-requests"></a>Schvalování žádostí o volno
 
-Manažeři nepřítomnosti mohou schválit nebo zamítnout žádosti o volno pro zaměstnance. Mohou také podle potřeby vytvářet žádosti jménem zaměstnanců.
+Manažeři nepřítomnosti mohou schválit nebo zamítnout žádosti o volno pro zaměstnance. 
 
 > [!IMPORTANT]
 > Než mohou manažeři nepřítomnosti schválit nebo zamítnout žádosti o volno, musí být nakonfigurován pracovní postup žádosti o dovolenou tak, aby jim bylo možné přiřadit pracovní položky žádosti o dovolenou ke kontrole.
@@ -109,15 +114,13 @@ Manažeři nepřítomnosti mohou schválit nebo zamítnout žádosti o volno pro
 >
 > Další informace o vytváření pracovního postupu žádosti o dovolenou najdete v tématu [Vytvoření pracovního postupu žádosti o dovolenou](hr-leave-and-absence-workflow.md).
 
-1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte kartu **Správce nepřítomnosti**.
+1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte kartu **Správa pracovního volna**.
 
-2. Na kartě **Správce nepřítomnosti** vyberte požadovaného zaměstnance.
+2. Na kartě **Žádosti o volno** vyberte žádosti o volno, se kterými chcete provést akci. V tomto seznamu můžete vybrat více záznamů.
 
-3. Vyberte **Podrobnosti** a pak **Volno**.
+3. Pomocí akčních tlačítek v horní části mřížky můžete žádost o volno schválit, zamítnout nebo delegovat. 
 
-4. Najděte žádost o volno a vyberte možnost **Schválení**. Poté můžete vybrat možnost schválení nebo zrušení žádosti o volno.
-
-Stav **Zrušení** označuje, že požadavek byl zamítnut. Stav **Dokončeno** označuje, že požadavek byl schválen.
+Alternativně může uživatel také použít dlaždici **Žádosti o volno** vlevo pro přechod na seznam všech pracovních položek žádostí o volno. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Zobrazit volno v kalendáři
 
@@ -126,7 +129,7 @@ Uživatelé v roli Správce nepřítomnosti mohou ve svém kalendáři zobrazit 
 > [!IMPORTANT]
 > Správce systému musí nakonfigurovat možnosti zobrazení pro kalendář správce nepřítomnosti. Na stránce **Parametry dovolené a nepřítomnosti** na kartě **Kalendář** jsou možnosti, jak skrýt nebo zobrazit narozeniny, absence bez podrobností, dovolené a nevyřízené žádosti o dovolenou. K dispozici je také možnost filtrovat možnost zobrazení kalendáře podle typu pracovníka.
 
-1. V pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správce nepřítomnosti** a pak **Kalendář správce nepřítomnosti**.
+1. V pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
 
 2. Do pole **Datum** zadejte požadované datum.
 

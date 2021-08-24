@@ -2,7 +2,7 @@
 title: Objednávky zákazníků v pokladním místě (POS)
 description: Toto téma obsahuje informace o objednávkách zákazníků v pokladním místě (POS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755076"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace, jak vytvořit a spravovat objednávky zákazníků v pokladním místě (POS). Objednávky zákazníků lze použít k zaznamenání prodejů, kdy si odběratelé chtějí vyzvednout produkty později, vyzvednout si produkty z jiného místa nebo si nechat zboží odeslat. 
+Toto téma obsahuje informace, jak vytvořit a spravovat objednávky zákazníků v aplikaci Pokladním místo (POS). Objednávky zákazníků lze použít k zaznamenání prodejů, kdy si odběratelé chtějí vyzvednout produkty později, vyzvednout si produkty z jiného místa nebo si nechat zboží odeslat. 
 
 Ve světě omni-channel commerce celá řada maloobchodních prodejců poskytuje možnost objednávek odběratele neboli speciálních objednávek, aby splnili různé požadavky týkající se produktu a plnění. Zde jsou některé typické scénáře:
 
@@ -132,6 +132,10 @@ Maloobchodní objednávky, které jsou vytvořeny v online kanálu nebo kanálu 
 > [!IMPORTANT]
 > Ne všechny maloobchodní objednávky lze upravovat prostřednictvím aplikace POS. Objednávky vytvořené v kanálu kontaktního střediska nelze upravovat prostřednictvím POS, pokud je pro kanál kontaktního střediska zapnuto nastavení [Povolit dokončení objednávky](./set-up-order-processing-options.md#enable-order-completion). Aby bylo zajištěno správné zpracování plateb, musí být objednávky, které pocházejí z kanálu kontaktního střediska a které používají funkci Povolit dokončení objednávky, upraveny prostřednictvím aplikace kontaktního střediska v centrále Commerce.
 
+> [!NOTE]
+> Doporučujeme, abyste neupravovali objednávky a nabídky v POS, které jsou vytvořeny uživatelem mimo call centrum v centrále Commerce. Tyto objednávky a nabídky nepoužívají cenový modul Commerce, takže pokud jsou upraveny v POS, cenový modul Commerce je přecení.
+
+
 Ve verzi 10.0.17 a novější mohou uživatelé upravovat způsobilé objednávky prostřednictvím aplikace POS, i když je objednávka částečně splněna. Objednávky, které jsou plně fakturovány, však stále nelze upravovat prostřednictvím POS. Chcete-li tuto funkci aktivovat, zapněte funkci **Upravit částečně splněné objednávky v pokladním místě** v pracovním prostoru **Správa funkcí**. Pokud tato funkce není povolena nebo pokud používáte verzi 10.0.16 nebo starší, uživatelé budou moci upravovat objednávky zákazníků v POS pouze v případě, že je objednávka plně otevřená. Dále, pokud je funkce povolena, můžete omezit, které obchody mohou upravovat částečně splněné objednávky. Možnost zakázat tuto funkci pro konkrétní obchody lze konfigurovat prostřednictvím **Funkční profil** a pevné kartě **Všeobecné**.
 
 
@@ -142,7 +146,23 @@ Ve verzi 10.0.17 a novější mohou uživatelé upravovat způsobilé objednáv
 5. Dokončete proces úprav výběrem platební operace.
 6. Chcete-li ukončit proces úprav bez uložení jakýchkoli změn, můžete použít operaci **Anulovat transakci**.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Vliv ceny na úpravu objednávek
 
+Při zadávání objednávek v POS nebo na webu e-commerce Commerce se zákazníci zavazují k určité částce. Tato částka zahrnuje cenu a může také zahrnovat slevu. Zákazník, který zadá objednávku a později kontaktuje call centrum, aby tuto objednávku změnil (například aby přidal další položku), bude mít konkrétní očekávání ohledně uplatnění slev. I když platnost propagačních akcí na stávajících řádcích objednávky vyprší, zákazník bude očekávat, že slevy, které byly na tyto řádky původně uplatněny, zůstanou v platnosti. Pokud však při původním zadání objednávky nebyla uplatněna žádná sleva, ale od té doby sleva vstoupila v platnost, zákazník bude očekávat, že nová sleva bude uplatněna na změněnou objednávku. V opačném případě může zákazník pouze zrušit stávající objednávku a poté vytvořit novou objednávku, kde bude uplatněna nová sleva. Jak ukazuje tento scénář, musí být zachovány ceny a slevy, ke kterým se zákazníci zavázali. Uživatelé POS a call centra musí mít zároveň flexibilitu k přepočtu cen a slev na řádky prodejní objednávky podle potřeby.
+
+Když jsou objednávky odvolávány a upravovány v POS, ceny a slevy stávajících řádků objednávek jsou považovány za „uzamčené“. Jinými slovy, nemění se, i když jsou některé řádky objednávky zrušeny nebo změněny nebo jsou přidány nové řádky objednávek. Chcete-li změnit ceny a slevy stávajících prodejních řádků, musí uživatel POS vybrat **Přepočítat**. Cenový zámek je poté odstraněn ze stávajících řádků objednávek. Před vydáním Commerce verze 10.0.21 však tato funkce nebyla v call centru k dispozici. Místo toho jakékoli změny řádků objednávek způsobily přepočítání cen a slev.
+
+Ve verzi Commerce verze 10.0.21, nová funkce, která je pojmenována **Zabraňte neúmyslnému výpočtu ceny pro obchodní objednávky** je k dispozici v pracovním prostoru **Správa funkcí**. Ve výchozím nastavení je tato funkce zapnutá. Když je zapnutá, nová vlastnost **Cena uzamčena** je k dispozici pro všechny objednávky elektronického obchodování. Po dokončení zachycení objednávky u objednávek, které jsou zadány z jakéhokoli kanálu, je tato vlastnost automaticky povolena (to znamená, že je zaškrtnuto políčko) pro všechny řádky objednávky. Cenový modul Commerce pak vylučuje tyto řádky objednávek ze všech cen a slev výpočtů. Pokud je tedy objednávka upravena, řádky objednávky budou ve výchozím nastavení vyloučeny z výpočtu cen a slev. Uživatelé call centra však mohou vlastnost zakázat (tj. zrušit zaškrtnutí políčka) pro libovolný řádek objednávky a poté vybrat **Přepočítat** a zahrnout tak stávající řádky objednávek do cenových kalkulací.
+
+I když na stávající prodejní řádek uplatňují manuální slevu, musí uživatelé call centra zakázat vlastnost **Cena uzamčena** prodejního řádku, než uplatní manuální slevu.
+
+Uživatelé call centra mohou také zakázat vlastnost **Cena uzamčena** pro řádky objednávek hromadně výběrem **Odstranit cenový zámek** ve skupině **Vypočítat** na kartě **Prodej** v podokně akcí na stránce **Prodejní objednávka**. V tomto případě je cenový zámek odstraněn ze všech řádků objednávky kromě řádků, které nelze upravit (jinými slovy řádky, které mají stav **Částečně fakturováno** nebo **Fakturováno**). Poté, co jsou změny objednávky dokončeny a odeslány, je cenový zámek znovu použit na všechny řádky objednávky.
+
+> [!IMPORTANT]
+> Pokud je zapnutá funkce **Zabraňte neúmyslnému výpočtu ceny pro obchodní objednávky**, bude nastavení vyhodnocení obchodní smlouvy v pracovních postupech cen ignorováno. Jinými slovy, dialogová okna pro vyhodnocení obchodní dohody nezobrazí sekci **Související s cenou**. K tomuto chování dochází, protože nastavení hodnocení obchodní dohody a funkce cenového zámku mají podobný účel: zabránit neúmyslným změnám cen. Uživatelské prostředí pro hodnocení obchodní dohody se však u velkých objednávek, kde uživatelé musí vybrat jeden nebo více řádků objednávky pro přecenění, špatně přizpůsobuje.
+
+> [!NOTE]
+> Vlastnost **Cena uzamčena** lze deaktivovat pro jeden nebo více vybraných řádků pouze tehdy, když je použit modul **Call centrum**. Chování POS zůstává nezměněno. Jinými slovy, uživatel POS nemůže odemknout ceny pro vybrané řádky objednávek. Mohou však vybrat **Přepočítat** k odstranění zámku cen ze všech stávajících řádků objednávek.
 
 ### <a name="cancel-a-customer-order"></a>Zrušení objednávky zákazníka
 

@@ -1,7 +1,7 @@
 ---
 title: Co je nového a co se změnilo v Human Resources
 description: Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedená témata podávají podrobné informace o změnách provedených v jednotlivých týdnech.
-author: andreabichsel
+author: twheeloc
 ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 584dcfacc7f376756bbc163efddac3ada82f73dc
-ms.sourcegitcommit: 71952e97774547230285026c6a3a6caea2512920
+ms.openlocfilehash: 278783cc0eb1677682236781fd5340607fc06b52d43a1897db1345008fef96e8
+ms.sourcegitcommit: f69d53f27061437d6e466645875283757a1eec45
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "6614776"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7016006"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
@@ -28,17 +28,9 @@ ms.locfileid: "6614776"
 
 Každé dva týdny poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedená témata podávají podrobné informace o změnách provedených v jednotlivých vydáních.
 
->[!NOTE]
->Kvůli svátkům je plán vydání pro listopad a prosinec 2020 následující:
->
->- Vydání v listopadu: 2. listopadu – 13. listopadu
->- Vydání v prosinci: 30. listopadu – 11. prosince
-> 
->Kadence dvoutýdenního vydání bude obnovena jako obvykle 11. ledna 2021.
-
 Další informace o nadcházejících funkcích a procesu aktualizace pro Human Resources naleznete v následujících článcích: 
 
-- [Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [Přehled produktu Dynamics 365 Human Resources vydání 2021 vlny 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)
 
 - [Aktualizace procesu](hr-admin-setup-update-process.md)
 
@@ -48,6 +40,7 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících tématech:
 
+[26. července 2021](hr-whats-new-2021-07-26.md)</br>
 [12. července 2021](hr-whats-new-2021-07-12.md)</br>
 [22. června 2021](hr-whats-new-2021-06-22.md)</br>
 [20. května 2021](hr-whats-new-2021-05-20.md)</br>
@@ -59,34 +52,12 @@ Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním v
 [22. února 2021](hr-whats-new-2021-02-22.md)</br>
 [28. ledna 2021](hr-whats-new-2021-01-28.md)</br>
 [21. ledna 2021](hr-whats-new-2021-01-21.md)</br>
-[2. prosince 2020](hr-whats-new-2020-12-02.md)</br>
-[22. října 2020](hr-whats-new-2020-10-22.md)</br>
-[16. září 2020](hr-whats-new-2020-09-16.md)</br>
-[3. září 2020](hr-whats-new-2020-09-03.md)</br>
-[20. srpna 2020](hr-whats-new-2020-08-20.md)</br>
-[6. srpna 2020](hr-whats-new-2020-08-06.md)</br>
-[23. července 2020](hr-whats-new-2020-07-23.md)</br>
-[8. července 2020](hr-whats-new-2020-07-08.md)</br>
-[23. června 2020](hr-whats-new-2020-06-23.md)</br>
-[11. června 2020](hr-whats-new-2020-06-11.md)</br>
-[28. května 2020](hr-whats-new-2020-05-28.md)</br>
-[14. května 2020](hr-whats-new-2020-05-14.md)</br>
-[1. května 2020](hr-whats-new-2020-05-01.md)</br>
-[13. dubna 2020](hr-whats-new-2020-04-13.md)</br>
-[3. dubna 2020](hr-whats-new-2020-04-03.md)</br>
-[24. března 2020](hr-whats-new-2020-03-24.md)</br>
-[19. března 2020](hr-whats-new-2020-03-19.md)</br>
-[10. března 2020](hr-whats-new-2020-03-10.md)</br>
-[3. března 2020](hr-whats-new-2020-03-03.md)</br>
-[25. února 2020](hr-whats-new-2020-02-25.md)</br>
-[18. února 2020](hr-whats-new-2020-02-18.md)</br>
-[12. února 2020](hr-whats-new-2020-02-12.md)</br>
-[7. února 2020](hr-whats-new-2020-02-07.md)</br>
-[3. února 2020](hr-whats-new-2020-02-03.md)
+
+
 
 ## <a name="see-also"></a>Viz také
 
-[Přehled produktu Dynamics 365 Human Resources vydání 2020 vlny 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2021 vlny 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
 

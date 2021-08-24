@@ -3,7 +3,6 @@ title: Seznam funkcí ER v logické kategorii
 description: Toto téma obsahuje informace o logických funkcích, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
 ms.date: 02/11/2021
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 452eae2b710429215939b712b12fe156943d2ac5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 43cbecf80ff70dac058977932c3a0bb03662cd98a88c68407051bdc584609d84
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767187"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Seznam funkcí ER v logické kategorii
 
