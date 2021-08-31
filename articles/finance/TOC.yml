@@ -1170,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: "Otevření šablon finančního deníku v\_aplikaci Office"
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Selhání zaúčtování deníku z důvodu nevyváženosti
+                  href: general-ledger/posting-fail-imbalance.md
                 - name: Proč nemohu tuto transakci stornovat?
                   href: general-ledger/cant-reverse-transctns.md
         - name: Finanční výkaznictví
@@ -1482,6 +1484,26 @@
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                    - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
+                      items:
+                        - name: Stažení konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Import konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globální úložiště
+                      items:
+                        - name: Import konfigurací z globálního úložiště
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Odeslání konfigurací do globálního úložiště
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Sdílení konfigurací v globálním úložišti
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Ukončení konfigurací v globálním úložišti RCS
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronická fakturace
                   items:
                     - name: Přehled elektronické fakturace
@@ -1520,40 +1542,56 @@
                   items:
                     - name: Přehled výpočtu daně
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Začínáme s výpočtem daně
-                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: "Použitelnost DPH a\_logika určování skupiny DPH"
-                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: "Podpora daňových funkcí u\_převodních příkazů"
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: "Výpočet daně navíc k\_ceně, když jsou povoleny ceny včetně daní"
-                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-                    - name: "Přidání datových polí v\_daňových konfiguracích"
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Přidání datových polí do daňové integrace pomocí rozšíření
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Nastavení prostředí pro vyhledávání hlavních dat
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: Více registračních čísel pro DPH
-                      href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: Vykazování pro více registrací DPH
+                    - name: Nastavení
                       items:
+                        - name: Začínáme s výpočtem daně
+                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Nastavení prostředí pro vyhledávání hlavních dat
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Určení
+                      items:
+                        - name: "Použitelnost DPH a\_logika určování skupiny DPH"
+                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: Výpočet
+                      items:
+                        - name: 'Výpočet daně u cen, když jsou povoleny ceny včetně daní'
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                        - name: Pravidla zaokrouhlování výpočtu daně
+                          href: localizations/tax-calculation-rounding-rules.md
+                    - name: Více registrací DPH
+                      items:
+                        - name: Více registračních čísel pro DPH
+                          href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Vykazování pro více registrací DPH
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: Vykazování pro Francii
                           items:
-                            - name: "Přiznání k\_DPH"
-                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                            - name: Přiznání k DPH
+                              href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Vykazování pro Nizozemsko
                           items:
-                            - name: "Přiznání k\_DPH"
+                            - name: Přiznání k DPH
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Vykazování pro Spojené království
+                        - name: Výkaznictví ve Švýcarsku
                           items:
-                            - name: "Připravte se na integraci s\_digitalizací DPH"
+                            - name: Přiznání k DPH
+                              href: localizations/emea-che-vat-declaration-switzerland.md
+                        - name: Výkaznictví ve Spojeném království
+                          items:
+                            - name: Příprava na integraci s MTD pro DPH
                               href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Povolení výpočtu daně pro převodní příkaz
+                      items:
+                        - name: "Podpora daňových funkcí u\_převodních příkazů"
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: Rozšíření
+                      items:
+                        - name: "Přidání datových polí v\_daňových konfiguracích"
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Přidání datových polí do daňové integrace pomocí rozšíření
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
             - name: Austrálie
@@ -1710,6 +1748,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Nastavení parametrů NF-e pro fiskální subjekt
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.005 – Aktualizace rozvržení a ověření v elektronickém fiskálním dokumentu (NF-e)
+                      href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 - Zprostředkující prodejní digitální platforma pro NF-e
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: "NT2019.001 – Pravidla daňových výhod a\_výjimek pro NF-e/NFC-e"
@@ -2334,8 +2374,6 @@
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Daňové transakce
                           items:
-                            - name: GST TDS na platbu za zboží a služby
-                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Nákupní transakce
                               items:
                                 - name: Nákupy od neregistrovaných dodavatelů
@@ -2370,6 +2408,10 @@
                                   href: localizations/apac-ind-GST-purchase-return-order.md
                                 - name: Zálohové platby dodavatele se stornovacími poplatky
                                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                                - name: GST TDS na platbu za zboží a služby
+                                  href: localizations/ind-gst-tds-payment-goods-services.md
+                                - name: GST TCS na platbu za zboží a služby
+                                  href: localizations/ind-gst-tcs-payment.md
                             - name: Prodejní transakce
                               items:
                                 - name: Prodej zboží podléhajícího dani spotřebitelům
@@ -3132,14 +3174,16 @@
                           href: localizations/rus-post-budget-fixed-asset-acquisition.md
                         - name: Převod dlouhodobého majetku
                           href: localizations/rus-fixed-asset-transfer.md
+                        - name: Sjednocené tiskové formuláře pro dlouhodobý majetek
+                          href: localizations/printing-forms-fixed-assets.md
+                        - name: "Dotazy a\_sestavy"
+                          href: localizations/rus-fa-inquiries-reports.md
                     - name: Nehodnotný dlouhodobý majetek a pracovní oděvy
                       items:
                         - name: Nehodnotný dlouhodobý majetek (NVFA) (Rusko)
                           href: localizations/rus-not-valuable-assets.md
                         - name: Účetnictví pracovních oděvů/zvláštního vybavení (Rusko)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                        - name: Sjednocené tiskové formuláře pro dlouhodobý majetek
-                          href: localizations/printing-forms-fixed-assets.md
                 - name: Pohledávky a závazky
                   items:
                     - name: Opravy dobropisu (Rusko)
@@ -3330,6 +3374,8 @@
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: Švýcarské QR-bills
                   href: localizations/emea-che-swiss-qr-bills.md
+                - name: Přiznání k DPH
+                  href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: Thajsko
               items:
                 - name: Thajsko - přehled
@@ -4101,30 +4147,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Import konfigurací (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Funkce globalizace v RCS
-                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
-                      items:
-                        - name: Stažení konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Import konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Globální úložiště
-                      items:
-                        - name: Import konfigurací z globálního úložiště
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Odeslání konfigurací do globálního úložiště
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                        - name: Sdílení konfigurací v globálním úložišti
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: Ukončení konfigurací v globálním úložišti RCS
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
@@ -4355,7 +4377,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Vytvoření zkušeností s otevíráním v Excelu
+            - name: Nejčastější dotazy prostředí otevření v Excelu
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Přidání šablon do otevřených řádků v nabídce Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json

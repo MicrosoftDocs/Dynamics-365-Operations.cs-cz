@@ -256,7 +256,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Architektura Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Publikování kanálu online obchodu
+                - name: Publikování katalogu online obchodu
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Obsah Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1268,6 +1268,26 @@
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Stažení konfigurací elektronického výkaznictví do Commerce
+                  items:
+                    - name: Stažení konfigurací z RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Import konfigurací z RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Globální úložiště
+                  items:
+                    - name: Import konfigurací z globálního úložiště
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
+                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Odeslání konfigurací do globálního úložiště
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                    - name: Sdílení konfigurací v globálním úložišti
+                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ukončení konfigurací v globálním úložišti RCS
+                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Rakousko
               items:
                 - name: Ukázka integrace fiskální služby pro Rakousko
@@ -1314,7 +1334,13 @@
               items:
                 - name: Funkce registrační pokladny
                   href: localizations/emea-fra-cash-registers.md
-                - name: Pokyny k nasazení registračních pokladen
+                - name: "Pokyny k\_nasazení registračních pokladen"
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: Fiskální archiv a ověření integrity dat
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: Migrace ze starších funkcí pro Francii
+                  href: localizations/emea-fra-fi-migration.md
+                - name: "Pokyny k\_nasazení registračních pokladen (staré)"
                   href: localizations/emea-fra-deployment.md
             - name: Německo
               items:
@@ -1350,6 +1376,8 @@
               items:
                 - name: Lokalizace aplikace Commerce pro Rusko
                   href: localizations/rus-commerce-localization.md
+                - name: Zjednodušený formát adresy zákazníka v Commerce POS pro Rusko
+                  href: localizations/rus-simplified-address.md
                 - name: Nastavení lokalizace aplikace Commerce pro Rusko
                   href: localizations/rus-commerce-setup.md
                 - name: "Zálohy v\_aplikaci Commerce pro Rusko"
@@ -1860,30 +1888,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: Import konfigurací (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Funkce globalizace v RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                    - name: Stažení konfigurací elektronického výkaznictví do Commerce
-                      items:
-                        - name: Stažení konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Import konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Globální úložiště
-                      items:
-                        - name: Import konfigurací z globálního úložiště
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Odeslání konfigurací do globálního úložiště
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: Sdílení konfigurací v globálním úložišti
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Ukončení konfigurací v globálním úložišti RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
@@ -2112,7 +2116,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Vytvoření zkušeností s otevíráním v Excelu
+            - name: Nejčastější dotazy prostředí otevření v Excelu
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Přidání šablon do otevřených řádků v nabídce Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2360,6 +2364,8 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Nastavení Azure Key Vault pro zabezpečenou správu klíčů
                       href: e-commerce-extensibility/set-up-key-vault.md
+                    - name: Vytvoření hooku modulu plug-in kanálu požadavku
+                      href: e-commerce-extensibility/request-pipeline-hook.md
                 - name: Vývoj datových akcí
                   items:
                     - name: Přehled datových akcí
@@ -2422,6 +2428,12 @@
                   items:
                     - name: Konfigurace a povolení konektorů
                       href: e-commerce-extensibility/connectors.md
+                - name: Výkonnost
+                  items:
+                    - name: Konfigurace ukládání do mezipaměti stránky
+                      href: e-commerce-extensibility/page-caching.md
+                    - name: Mezipaměť instance datových akcí
+                      href: e-commerce-extensibility/instance-cache.md
                 - name: Telemetrie a analýzy
                   items:
                     - name: Protokolovací nástroj telemetrie

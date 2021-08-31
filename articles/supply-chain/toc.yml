@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Stažení konfigurací elektronického výkaznictví do Supply Chain Management
+                      items:
+                        - name: Stažení konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Import konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globální úložiště
+                      items:
+                        - name: Import konfigurací z globálního úložiště
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Odeslání konfigurací do globálního úložiště
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Sdílení konfigurací v globálním úložišti
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Ukončení konfigurací v globálním úložišti RCS
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronická fakturace
                   items:
                     - name: Přehled elektronické fakturace
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Import konfigurací (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Funkce globalizace v RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Stažení konfigurací elektronického výkaznictví do Supply Chain Management
-                      items:
-                        - name: Stažení konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Import konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Globální úložiště
-                      items:
-                        - name: Import konfigurací z globálního úložiště
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Odeslání konfigurací do globálního úložiště
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Sdílení konfigurací v globálním úložišti
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Ukončení konfigurací v globálním úložišti RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
@@ -1574,7 +1570,19 @@
             - name: Archivace skladových transakcí
               href: inventory/archive-inventory-transactions.md
             - name: Doplněk viditelnosti zásob
-              href: inventory/inventory-visibility.md
+              items:
+                - name: Přehled doplňku viditelnosti zásob
+                  href: inventory/inventory-visibility.md
+                - name: Nastavení viditelnosti zásob
+                  href: inventory/inventory-visibility-setup.md
+                - name: Konfigurace viditelnosti zásob
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Rezervace viditelnosti zásob
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Power Apps viditelnosti zásob
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Veřejné rozhraní API viditelnosti zásob
+                  href: inventory/inventory-visibility-api.md
         - name: IoT Intelligence
           items:
             - name: Domovská stránka IoT Intelligence
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Analýza přizpůsobení pro optimalizaci plánování
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Rozdíly mezi integrovaným hlavním plánováním a optimalizací plánování
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametry, které optimalizace plánování nepoužívá'
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Použití filtrů na plán
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Vytvoření zkušeností s otevíráním v Excelu
+            - name: Nejčastější dotazy prostředí otevření v Excelu
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Přidání šablon do otevřených řádků v nabídce Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,11 +1985,9 @@
                   href: procurement/request-quotations.md
                 - name: Vytvoření požadavku na nabídku
                   href: procurement/tasks/create-request-quotation.md
-                - name: Zapečetěné nabídky pro požadavky na nabídku
-                  href: procurement/sealed-bidding.md
                 - name: Vytvoření žádanky používající požadavek na nabídku
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Vytvoření metody bodování pro požadavky na nabídku
+                - name: Vytvoření metody hodnocení pro požadavky na nabídku
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: "Vytvoření typů oslovení a\_kritérií hodnocení pro požadavky na nabídku"
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Instalace a připojení aplikace skladu
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Mobilní podpora čárového kódu
+                      href: warehousing/mobile-barcode-support.md
                     - name: Skenování čárových kódů pomocí fotoaparátu v mobilní aplikaci Warehouse Management
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Odstraňování problémů s připojením k mobilní aplikaci Warehouse Management
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Zpracování události aplikace skladu
                   href: warehousing/warehouse-app-events.md
-                - name: Přizpůsobení aplikace skladu
+                - name: Rozšíření mobilních procesů skladu
                   items:
                     - name: Architektura průvodce procesem
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Rozvržení směrování dokumentu pro popisky registrační značky
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Mobilní podpora čárového kódu
-                      href: warehousing/mobile-barcode-support.md
+                    - name: QR kódy a čárové kódy GS1
+                      href: warehousing/gs1-barcodes.md
                     - name: Nastavení skladu pro převodní příkazy
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Řešení potíží s konfigurací skladu
