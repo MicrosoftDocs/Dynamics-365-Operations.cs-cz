@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 053e73d9291ffce0d0a1d0b07b980f23d1b6f713f12ea38c22bdac9389c628bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e806be95947988f6a612ddbc1efb0b72cf971806
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724861"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402316"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Katalog školení pro prodej a marketing pro Microsoft Partnery Dynamics 365 Supply Chain Management
 
@@ -27,8 +27,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
-| Obsah  | popis  | Formát  | Délka    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 7 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
 | [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
@@ -37,8 +37,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 ## <a name="exam"></a>Zkouška<a name="exam"></a>
 
 | Obsah  | popis  | Formát |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+|----------|--------------|--------|
 | [Základy produktu Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prokažte, že rozumíte Microsoft Dynamics 365: Power Platform; cloudové pojmy, možnosti licencování a možnosti nasazení a vydání. | Zkouška; náklady se liší podle oblasti. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

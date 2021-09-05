@@ -1,8 +1,8 @@
 ---
 title: Konfigurace integrace s aplikací Dayforce
-description: Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto článku. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma popisuje požadované kroky konfigurace potřebné pro integraci mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 961d3bd61e85549f4124391389682bb24aceae3e16e52dc8111a44c365a8c081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782724"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414577"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto článku. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
+Integrace mezi aplikacemi Microsoft Dynamics 365 Human Resources a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto tématu. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Human Resources i Dayforce.
 
 Pokud používáte službu, jako je Dayforce, pro dokončení zpracování výplat, je nutné povolit integraci v aplikaci Human Resources. Integrace vyžaduje specifická data z aplikace Human Resources. Z tohoto důvodu musí ověřit, zda data, která jsou mapována do Dayforce, jsou v aplikaci Human Resources nakonfigurována tak, aby podporovala integraci. Integrace používá následující rozsáhlé kategorie dat:
 
@@ -35,7 +35,7 @@ Pokud používáte službu, jako je Dayforce, pro dokončení zpracování výpl
 - Mzdová data, jako například mzdové cykly, mzdová období a kódy příjmů
 - Data pracovníka
 
-Tento článek popisuje postup, který je třeba provést při povolení integrace. Vysvětluje také typy dat a podrobnosti konfigurace, které vyžaduje integrace.
+Toto téma popisuje kroky, které je třeba provést k povolení integrace, a vysvětluje typy dat a podrobnosti konfigurace, které integrace vyžaduje.
 
 ## <a name="enable-the-integration"></a>Povolení integrace
 
@@ -50,7 +50,7 @@ Pro zapnutí integrace v aplikaci Human Resources postupuje podle těchto kroků
 
 Když je integrace zapnutá, vytvoří se balíček exportu dat a soubory, a nastaví se frekvence. Tuto frekvenci lze změnit v případě potřeby.
 
-Další informace o účtech úložiště Azure a řetězcích připojení úložiště Azure Storage naleznete v následujících článcích o Azure:
+Další informace o účtech úložiště Azure a řetězcích připojení úložiště Azure Storage naleznete v následujících tématech Azure:
 
 - [O účtech úložiště Azure Storage](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Konfigurace řetězců připojení Azure Storage](/azure/storage/common/storage-configure-connection-string)
@@ -122,10 +122,10 @@ Dayforce vytvoří následující srážky, na základě dopadu mzdy, definovan�
 | Jen příspěvek          | Byla vytvořena srážka zaměstnavatele.             |
 | Odpočet a příspěvek | Jsou vytvořeny srážky zaměstnance a zaměstnavatele. |
 
-Další informace o tom, jak definovat a spravovat program zaměstnaneckých výhod naleznete v následujících článcích:
+Další informace o tom, jak definovat a spravovat program zaměstnaneckých výhod naleznete v následujících tématech:
 
 - [Definování programu zaměstnaneckých výhod](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Vytvořit novou zaměstnaneckou výhodu](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Vytvoření nové zaměstnanecké výhody](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
 - [Definování pravidel a zásad nároků na zaměstnanecké výhody](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
 - [Registrace a odebrání zaměstnaneckých výhod pracovníků](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
@@ -135,7 +135,7 @@ Správa kompenzací se používá k řízení doručení základní mzdy a odmě
 
 Dayforce používá informace o kompenzaci k výpočtu hodinové nebo roční sazby zaměstnance. Plány fixní kompenzace a převody mzdové sazby jsou povinné. Zaměstnanci musí být přiřazeni k plánu fixní kompenzace.
 
-Další informace o plánech kompenzace naleznete v následujících článcích:
+Další informace o plánech kompenzace naleznete v následujících tématech:
 
 - [Vytvoření plánů fixní kompenzace](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Vytvoření plánů variabilní kompenzace](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -147,10 +147,10 @@ Další informace o plánech kompenzace naleznete v následujících článcí
 
 #### <a name="jobs"></a>Práce 
 
-Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci. Další informace naleznete v následujících článcích:
+Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci. Další informace naleznete v následujících tématech:
 
 - [Nastavení komponent práce](/dynamics365/unified-operations/talent/create-job)
-- [Definování nových prací](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Definování nových pracovních míst](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Pozice
 
@@ -172,7 +172,7 @@ Mějte na paměti následující data a konfiguraci při vytváření pozic:
 
 Pokud je více pracovních pozic ve stejném oddělení přidruženo ke stejné práci, jsou sloučeny do jedné pozice v aplikaci Dayforce.
 
-Další informace naleznete v následujících článcích:
+Další informace naleznete v následujících tématech:
 
 - [Uspořádání zaměstnanců podle oddělení, prací a pozic](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Nastavení pozic](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -181,7 +181,7 @@ Další informace naleznete v následujících článcích:
 
 Oddělení je provozní jednotka, která představuje kategorie nebo funkční oblasti organizace. Oddělení je zodpovědný za určitou oblast organizace, jako například prodej, účtování nebo lidské zdroje. Oddělení můžete použít k sestavování funkčních oblastí. Oddělení mohou mít odpovědnost ze zisků a ztrát.
 
-Další informace naleznete v následujících článcích:
+Další informace naleznete v následujících tématech:
 
 - [Vytvoření oddělení a jeho přidružení k hierarchii oddělení](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Definování nových oddělení](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

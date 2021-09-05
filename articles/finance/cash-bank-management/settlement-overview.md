@@ -1,8 +1,8 @@
 ---
 title: Přehled vyrovnání
 description: V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
-author: kweekley
-ms.date: 04/10/2020
+author: panolte
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 30a96b377d70c74a29e9e90699ccb077c727b20758378b5336660c6c056c6022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755683"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344804"
 ---
 # <a name="settlement-overview"></a>Přehled vyrovnání
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje, které typy transakcí mohou být vypořádány, a načasování a proces jejich vypořádání. Popisuje také výsledky procesu vypořádání.
 
@@ -74,9 +76,25 @@ Vyrovnání může také vytvořit transakce. Vyrovnání faktury a platby můž
 
 Při pokusu o vypořádání transakce si můžete všimnout symbolu, který označuje, že transakce je označena na jiném místě. V tomto případě můžete vybrat transakci na stránce **Vypořádat transakce** a poté vybrat možnosti **Dotaz \> Vypořádání z okna vypořádání**. Zobrazení tohoto dotazu zobrazí deníky, prodejní objednávky, faktury, návrhy plateb a místa zákazníků, která by mohla blokovat vypořádání transakce. Chcete-li tento problém vyřešit, můžete vybrat odkaz, který přejde přímo z dotazu na blokované místo. Poté můžete dokument aktualizovat úpravami, které jsou potřebné k jeho vyřešení. Můžete také použít indikátor **Označeno** k identifikaci dalších dokumentů, které jsou obsaženy ve stejném místě blokování.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Vyřešte problémy s transakcemi, které nelze vypořádat
+
+Někdy nemůžete vypořádat transakce, protože dokument aktuálně zpracovává jiná aktivita. Pokud se pokusíte transakce vypořádat, dojde k chybě, protože se tyto transakce používají. Chcete-li tento problém vyřešit, můžete použít stránku **Označené podrobnosti transakce** a najít transakce, které jsou označeny pro vypořádání, a identifikovat všechny další procesy, které k nim přistupují.
+
+Transakce jsou označeny k vypořádání, buď když jsou placeny faktury dodavatele, nebo když zákazníci platí své otevřené faktury. Občas mohou být tyto faktury již označeny k vypořádání. Uživatelé je proto nemohou vybrat k platbě. Faktury mohou být označeny jiným deníkem plateb zákazníků, prodejní objednávkou, deníkem plateb dodavatele nebo nákupní objednávkou v současné právnické nebo jiné právnické osobě.
+
+Pokud je transakce blokována pro vypořádání při zadávání zákaznické platby, otevřete stránku **Podrobnosti transakce označené zákazníkem** (**Pohledávky \> Periodické úkoly \> Podrobnosti transakce označené zákazníkem**). Chcete-li rychle zjistit, kde je transakce blokována, můžete nastavit některý z následujících parametrů výběru: **Zákaznický účet**, **Doklad**, **Datum** nebo **Faktura**. Pokud nenastavíte žádné parametry výběru, systém zobrazí všechny blokované dokumenty od aktuální společnosti nebo jiné společnosti, kterou vyberete. Poté, co je identifikována transakce, která byla zablokována pro vypořádání, můžete ji vybrat a poté vybrat **Zrušit označení vybraných transakcí**. Vybraná transakce je poté odebrána z jakéhokoli deníku, který ji obsahuje. Dokument však není odstraněn z jiného umístění. Z tohoto deníku jsou odstraněny pouze informace o označení.
+
+Pokud je transakce blokována pro vypořádání při zadávání platby dodavatele, otevřete stránku **Podrobnosti transakce označené dodavatelem** (**Závazky \> Periodické úkoly \> Podrobnosti transakce označené dodavatelem**). Chcete-li rychle zjistit, kde je transakce blokována, můžete nastavit některý z následujících parametrů výběru: **Účet odběratele**, **Doklad**, **Datum** nebo **Faktura**. Pokud nenastavíte žádné parametry výběru, systém zobrazí všechny blokované dokumenty od aktuální společnosti nebo jiné společnosti, kterou vyberete. Poté, co je identifikována transakce, můžete ji vybrat a poté vybrat **Zrušit označení vybraných transakcí** pro opravu problému blokace. Vybraná transakce je poté odebrána z jakéhokoli dalšího deníku, kde je vybrána. Dokument však není odstraněn z jiného umístění. Z tohoto deníku jsou odstraněny pouze informace o označení.
+
+Chcete-li identifikovat všechny blokované dokumenty, otevřete stránku **Všechny označené podrobnosti transakce** (**Pohledávky \> Periodické úkoly \> Všechny označené podrobnosti transakce** nebo **Závazky \> Periodické úkoly \> Všechny označené podrobnosti transakce**). Chcete-li rychle zjistit, kde je transakce blokována, můžete nastavit některý z následujících parametrů výběru: **Zákaznický účet**, **Účet odběratele**, **Doklad**, **Datum** nebo **Faktura**. Pokud nenastavíte žádné parametry výběru, systém zobrazí všechny blokované dokumenty od aktuální společnosti nebo jiné společnosti, kterou vyberete. Poté, co je identifikována transakce, můžete ji vybrat a poté vybrat **Zrušit označení vybraných transakcí** pro opravu problému blokace. Vybraná transakce je poté odebrána z jakéhokoli dalšího deníku, kde je vybrána. Dokument však není odstraněn z jiného umístění. Z tohoto deníku jsou odstraněny pouze informace o označení.
+
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+
+- **Modul>** Pokladna a banka
+- **Název funkce:** Formulář podrobně označených transakcí
+
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Vyrovnání zůstatku](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

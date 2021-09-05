@@ -1,8 +1,8 @@
 ---
 title: Volba technologie integrace dat
-description: Tento článek poskytuje informace o integraci s daty spravovanými v Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Toto téma obsahuje informace o integraci s daty spravovanými v Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720461"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414707"
 ---
 # <a name="choose-a-data-integration-technology"></a>Volba technologie integrace dat
 
@@ -28,14 +28,13 @@ ms.locfileid: "6720461"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tento článek poskytuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
+Toto téma obsahuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
 
 ## <a name="data-integration-background"></a>Pozadí integrace dat
 
 Obchodní data představují klíčový prostředek, který činí vaši společnost jedinečnou. Data vašeho podniku jsou velice cenná. Vztahy mezi daty, která se shromažďují ve vaší společnosti, můžete použít ke zlepšení obchodních procesů a analytických nástrojů v rámci celé společnosti. Usilujeme o zajištění snadného, zabezpečeného a stabilního přístupu k obchodním datům, ať už se jedná o systém, ze kterého pochází.
 
-V minulosti byla integrace dat mezi více systémy obtížná.
-Společnost Microsoft činí kroky, které usnadňují integraci dat, a velkým krokem k uskutečnění tohoto cíle je použití služby [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+V minulosti byla integrace dat mezi více systémy obtížná. Společnost Microsoft činí kroky, které usnadňují integraci dat, a velkým krokem k uskutečnění tohoto cíle je použití služby [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources činí ze služby Dataverse upřednostňované veřejné rozhraní pro data aplikace Human Resources. Očekáváme, že všechna nejdůležitější data spravovaná aplikací Human Resources budou v průběhu času zpřístupněna ve službě Dataverse. Doporučujeme službu Dataverse jako preferovanou technologii pro většinu typů uplatnění v rámci integrace dat.
 
@@ -47,7 +46,7 @@ V následujících částech jsou popsány různé technologie integrace dat, k
 
 ### <a name="dataverse-tables"></a>Tabulky Dataverse
 
-Služba Dataverse je preferované veřejné datové rozhraní pro aplikaci Human Resources. Vyrostl z platformy Dynamics 365 XRM, která se používá řešeními [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps).
+Služba Dataverse je preferované veřejné datové rozhraní pro aplikaci Human Resources. Vyrostl z platformy Dynamics 365 XRM, kterou používají řešení [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps).
 
 Dataverse poskytuje platformu a rozhraní API pro datové tabulky. Při nasazení Human Resources se připojuje k instanci aplikace Dataverse. Entity pro data Human Resources, které se nasazují do této instance Dataverse. Tabulky a jejich data jsou k dispozici pro libovolnou aplikaci, která se může připojit k dané instanci Dataverse. Human Resources synchronizuje data do a z tabulke Dataverse.
 

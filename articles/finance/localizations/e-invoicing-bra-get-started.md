@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ccf2a78a5ffdb95b334f751944fdd010bf8cbf01
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345190"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Začínáme s Elektronickou fakturací pro Brazílii 
 
@@ -55,7 +55,7 @@ Před nasazením nastavení aplikace do aplikace připojené k Finance nebo Supp
 
 Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
 
-1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici *Elektronická fakturace*.
+1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
 2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Brazilský NF-e (BR)**.
 3. Na kartě **Verze** ověřte, že je vybrána verze **Koncept**.
 4. Na kartě **Nastavení** vyberte **Nastavení aplikace** a v poli **Připojená aplikace** vyberte aplikaci, kam chcete provést nasazení.

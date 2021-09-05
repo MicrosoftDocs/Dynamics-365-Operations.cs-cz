@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764877"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402218"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog kurzů pro správce Dynamics 365 Supply Chain Management
 
@@ -60,7 +60,15 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Upgrade aplikací Dynamics AX 2012 na Finance and Operations](/learn/paths/upgrade-ax-2012-finance-operations/) | Naučte se nejdůležitější prvky a osvědčené postupy pro úspěšnou aktualizaci vašeho řešení Dynamics AX 2012 na aplikace Finance and Operations. Od prvních kroků k objevování klíčových architektonických rozdílů, od zahájení procesu upgradu a nástrojů pro upgrade kódu a dat až po nejlepší způsoby redesignu vašich integrací, analytiky a sestav na základě nejnovějších schopností. | Libovolná online školení vlastním tempem | 7 hodin |
 | [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. | Bezplatný záznam webové konference | 61 min. |
 | [Jak upgradovat na verzi 7.2 (červenec 2017) z 7.0 (RTW)/7.1 (vydání 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | V této relaci si ukážeme, jak upgradovat aplikaci Dynamics 365 Finance and Operations v7.0 (RTW) a v7.1 (1611) na v7.2 (červenec 2017). Provedli jsme jasné rozlišení mezi aktivními zákaznickými a probíhajícími (dosud neaktivními) projekty. | Bezplatný záznam webové konference | 58 min. |
-| [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Bezplatný záznam webové konference | 45 minut |
+| [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Bezplatný záznam webové konference | 45 min. |
+| [Nástroje pro migraci AX2009 do Dynamics 365 for Operations (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Tato relace pokryje dostupné nástroje, které vám budou pomáhat při migraci z AX2009 na D365 for Operations. | Bezplatný záznam webové konference | 55 minut |
+| [AX2009 Nástroj pro migraci](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Tato relace pokryje dostupné nástroje, které vám budou pomáhat při migraci z AX2009 na D365 for Operations. | Bezplatný záznam webové konference | 55 minut |
+
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
+| [Nastavení správy technických změn pro Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dnešní výrobci vyžadují silnou správu dat produktu, řízení verzí a správu technických změn, aby uspěli ve světě neustále se snižujících životních cyklů produktů, zvýšených požadavků na kvalitu a spolehlivost a zvýšeného zaměření na bezpečnost produktů. Zjistěte, jak v tomto studijním programu nastavit správu technických změn. | Libovolná online školení vlastním tempem | 4 hodin |
 
 ## <a name="servicing"></a>Servis<a name="servicing"></a>
 
@@ -68,7 +76,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 |----------|---------------|---------|-----------|
 | [Finance and Operations: Správa funkcí (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Technická přednáška o správě funkcí. Poskytuje pracovní prostor pro zobrazení, povolení, zakázání a plánování funkcí, které byly dodány v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Na této schůzce zjistíte, co je součástí verze 10.0.3 a jaké jsou naše plány pro budoucí vydání. | Bezplatný záznam webové konference | 47 minut |
 | [Finance and Operations: Servis, podpora a údržba výroby (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Odborná komunikace, jak efektivně podporovat, spravovat a obsluhovat produkční prostředí Dynamics 365 for Finance and Operations. | Bezplatný záznam webové konference | 53 min. |
-| [Finance And Operations: Průběžné aktualizace spravované společností Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Byla zahájena průběžná aktualizace Cadence Finance and Operations! V této lekci se můžete zapojit do diskuse o průběžných aktualizacích spravovaných společností Microsoft, které jsou již k dispozici v Lifecycle Services a nadcházejících aktualizacích. | Bezplatný záznam webové konference | 61 minut |
+| [Finance And Operations: Průběžné aktualizace spravované společností Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Byla zahájena průběžná aktualizace Cadence Finance and Operations! V této lekci se můžete zapojit do diskuse o průběžných aktualizacích spravovaných společností Microsoft, které jsou již k dispozici v Lifecycle Services a nadcházejících aktualizacích. | Bezplatný záznam webové konference | 61 min. |
+| [Finance and Operations: Průběžné aktualizace spravované společností Microsoft: Novinky – 1. listopadu 2018 (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | Během této lekce budeme diskutovat o aktualizacích kadence průběžných aktualizací spravovaných společností Microsoft a také si prohlédněte uživatelské zkušenosti s Lifecycle Services. | Bezplatný záznam webové konference | 59 min. |
 | [Spravované průběžné aktualizace Microsoft: Co je nového (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | V této lekci vysvětlíme, co je nového od úvodních oznámení o průběžných spravovaných aktualizacích společnosti Microsoft. Budeme mluvit o kadenci aktualizací, jakým způsobem jsme reagovali na vaši cennou zpětnou vazbu na daný proces a zaměříme se na služby pro nadcházející zkušenosti uživatelů Lifecycle Services, pomocí které budete moci spravovat vaše aktualizace. | Bezplatný záznam webové konference | 56 min. |
 | [Spravované průběžné aktualizace Microsoft (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Budeme projednávat plány společnosti Microsoft, které zajistí aktuálnost vašeho systému s nejnovější verzí. Pokryjeme časové osy, kadenci pro hlavní a dílčí aktualizace, plánované postupy, dopady a co byste měli podniknout k dosažení optimálních výsledků. | Bezplatný záznam webové konference | 62 min. |
 | [Monitoring, poradce při optimalizaci a kritické články KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Budeme diskutovat o možnostech monitorování a o tom, co pro vás Microsoft sleduje ve vašem produkčním prostředí, poradci optimalizací a jeho možném rozšíření, zkušenosti s kritickými aktualizacemi X++ v LCS a osvědčených postupech pro možnost Nahlásit produkční výpadek v LCS. | Bezplatný záznam webové konference | 40 min |
@@ -86,6 +95,5 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah  | popis  | Formát  |
 |----------|--------------|---------|
 | [Základy produktu Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prokažte, že rozumíte Microsoft Dynamics 365, Power Platform, cloudové pojmy, možnosti licencování a možnosti nasazení a vydání. | Zkouška; náklady se liší podle oblasti. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

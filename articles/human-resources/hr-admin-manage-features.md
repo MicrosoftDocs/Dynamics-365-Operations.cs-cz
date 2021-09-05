@@ -1,8 +1,8 @@
 ---
 title: Správa funkcí v modulu Human Resources
-description: Seznamte se s postupy zapnutí a vypnutí nových funkcí v aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/06/2020
+description: V tomto tématu je popsána funkce správy funkcí a její použití.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a9c459b2b34164a9be3ed609a99deb4c5b710d340ef560e6f991e760375d6146
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61e40f7177a1c8cf3d60a9a991ecbb0ed4d93aa1
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738360"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414626"
 ---
 # <a name="manage-features-in-human-resources"></a>Správa funkcí v modulu Human Resources
 
@@ -69,7 +69,7 @@ Správa zaměstnaneckých výhod nahrazuje funkce v pracovním prostoru **Zaměs
 - **Zásady způsobilosti k zaměstnaneckým výhodám**
 - **Události nároku**
 
-Informace v těchto formulářích lze zobrazit v režimu jen pro čtení. Chcete-li upravit informace, je nejprve nutné zakázat funkci Preview správy zaměstnaneckých výhod (platí pouze pro prostředí **Sandbox**).
+Informace na těchto stránkách lze zobrazit v režimu jen pro čtení. Chcete-li upravit informace, je nejprve nutné zakázat funkci Preview správy zaměstnaneckých výhod (platí pouze pro prostředí **Sandbox**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Povolit nebo zakázat Pracovní volno a absence
 

@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723544"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415314"
 ---
 # <a name="product-readiness"></a>Připravenost produktu
 
 [!include [banner](../includes/banner.md)]
 
-Kontroly připravenosti můžete použít pro to, abyste zajistili, že pro produkt budou dokončena všechna požadovaná hlavní data před použitím v transakcích. Pokud se použijí kontroly připravenosti, je uživatel nebo tým odpovědný za ověření konkrétních předdefinovaných dat souvisejících s produktem. Pokud pro produkt existuje otevřená kontrola připravenosti, produkt nelze uvolnit ani použít v transakcích.
+Kontroly připravenosti můžete použít pro to, abyste zajistili, že pro produkt budou dokončena všechna požadovaná hlavní data před použitím v transakcích. Pokud se použijí kontroly připravenosti, je uživatel nebo tým odpovědný za ověření konkrétních předdefinovaných dat souvisejících s produktem. Pokud pro produkt existuje otevřená kontrola připravenosti, produkt nelze použít v transakcích.
 
-Zaškrtávací políčko **Aktivní** pro technický produkt, variantu nebo verzi je k dispozici až po zadání a ověření všech požadovaných dat a po zpracování všech kontrol připravenosti. V tomto okamžiku může být produkt, verze nebo varianta uvolněna do jiných společností a použita v transakcích. Můžete vytvořit kontroly připravenosti pro nové produkty, nové varianty a nové technické verze.
+Zaškrtávací políčko **Aktivní** pro technický produkt, variantu nebo verzi je k dispozici až po zadání a ověření všech požadovaných dat a po zpracování všech kontrol připravenosti. V tomto okamžiku může být produkt, verze nebo varianta může být použita v transakcích. Můžete vytvořit kontroly připravenosti pro nové produkty, nové varianty a nové technické verze.
 
 Můžete také použít kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.
 

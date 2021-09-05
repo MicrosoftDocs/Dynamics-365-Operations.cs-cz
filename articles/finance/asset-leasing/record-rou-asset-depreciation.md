@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778355"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345363"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Záznam odpisu používaného majetku (Preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 U leasingů, které jsou vykázány v rozvaze organizace, se používaný majetek (ROU) odepisuje měsíčně. Toto téma vysvětluje, jak vytvořit položku deníku pro amortizaci. Amortizace zaúčtuje na vrub účtu hlavní knihy výdajů a připíše na účet akumulovaných odpisů na základě nastavení vašeho profilu účtování a typu pronájmu. Tyto položky lze vytvořit pro každý leasing nebo je lze vytvořit pro více leasingů pomocí funkce dávkového deníku.
 
@@ -36,6 +38,9 @@ U leasingů, které jsou vykázány v rozvaze organizace, se používaný majete
 
 2. Vyberte období odpisování a poté vyberte **Vytvořit deník**. Zobrazí se zpráva s oznámením, že byl vytvořen deník, který bude použit k záznamu odpisů.
 3. Vyberte **Deníky \> Deníky leasingu majetku** k otevření stránky **Deník leasingu majetku**, kde si můžete zobrazit deníkovou položku výdajů, která byla vytvořena.
+
+   Systém zablokuje úpravu určitých finančních polí, aby se zabránilo jakýmkoli odchylkám mezi transakcemi a plány. Mezi zamčená pole patří: **Účet**, **Množství**, **Finanční dimenze**, **Měna** a **Typ transakce**. Kromě toho nebudete moci přidávat ani odstraňovat řádky záznamů deníku v žádných položkách deníku leasingu majektu, protože to může způsobit odchylky mezi plány a transakcemi.
+
 4. Vyberte položku deníku a poté vyberte **Zaúčtovat** k zaznamenání položky odpisu do hlavní knihy.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Výpočet nákladů na amortizaci používaného majetku u operativního leasingu

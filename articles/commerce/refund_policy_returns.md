@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763685"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388926"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Vytvoření a aktualizace zásady vrácení a refundace pro kanál
 
@@ -42,15 +42,6 @@ Chcete-li aktivovat funkci zásad vrácení kanálů v centrále Commerce, postu
 1. Vyhledejte v seznamu názvů funkcí funkci **Povolit zásady vracení kanálů**.
 1. Vyberte **Povolit**.
 1. Na stránce **Harmonogram distribuce** spusťte úlohu **1110** (Globální konfigurace) k distribuci změny funkce.
-
-## <a name="initialize-the-commerce-scheduler"></a>Inicializujte plánovač Commerce
-
-Po povolení funkce **Povolit zásady vrácení kanálu** musíte inicializovat plánovač Commerce, abyste zajistili přidání nových změn v databázi funkcí prostřednictvím synchronizace Commerce Data Exchange (CDX). 
-
-Chcete-li spustut plánovač Commerce v centrále Commerce, postupujte následovně.
-
-- Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Plánovač velkoobchodu \> Inicializovat plánovač velkoobchodu**. Případně vyhledejte "inicializovat plánovač Commerce."
-- V dialogovém okně **Inicializovat velkoobchodní plánovač** zkontrolujte, zda je možnost **Odstranit existující konfiguraci** nastavena na hodnotu **Ne**, a pak vyberte **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurace zásad vracení
 

@@ -1,8 +1,8 @@
 ---
 title: Systémové požadavky
-description: Tento článek popisuje požadavky pro Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma uvádí seznam systémových požadavků na Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ef0176926fd6c5c5d2bc852080dde5273d05d0f2edd20e091d97c71e503dce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15770595a0639c03df1138ec25010ca8168bd9a8
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761085"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393466"
 ---
 # <a name="system-requirements"></a>Systémové požadavky
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek popisuje požadavky pro Microsoft Dynamics 365 Human Resources. Dále jsou zde uvedeny země a oblasti, ve kterých je aplikace Human Resources k dispozici, a informace o jazycích a lokalizaci dat aplikace Human Resources.
+Toto téma uvádí seznam systémových požadavků na Microsoft Dynamics 365 Human Resources. Dále jsou zde uvedeny země a oblasti, ve kterých je aplikace Human Resources k dispozici, a informace o jazycích a lokalizaci dat aplikace Human Resources.
 
 ## <a name="supported-web-browsers"></a>Podporované webové prohlížeče
 
-Aplikace Human Resources může běžet v kterémkoli z následujících webových prohlížečů v určeném operačním systému: 
+Uživatelé mohou k aplikaci Microsoft Dynamics 365 Human Resources přistupovat v kterémkoli z následujících webových prohlížečů v určeném operačním systému: 
 
 *   Microsoft Edge (nejnovější veřejně dostupná verze) v systému Windows 10
 *   Internet Explorer 11 v systému Windows 10, Windows 8.1 nebo Windows 7
@@ -39,14 +39,17 @@ Aplikace Human Resources může běžet v kterémkoli z následujících webový
 
 Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru. 
 
-> [!NOTE]
-> * K zachycení bitových kopií, které jsou generovány ze Záznamníku úkolů a jejich zahrnutí do dokumentů aplikace Microsoft Word, musíte mít nainstalováno rozšíření Chrome. 
-> * Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Pouze Microsoft Edge a Internet Explorer (podporované verze Microsoft Windows) podporují aplikace ClickOnce. Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
-> * K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
->   Požadavky na síť
-> * Human Resources je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje aplikaci Human Resources. Doporučujeme otestovat čekací dobu v síti na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
-> * Požadavky na šířku pásma pro Human Resources závisí na daném scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
-> 
+## <a name="special-considerations"></a>Speciální předpoklady
+
+* Chcete-li umožnit záznamníku úloh pořídit snímky obrazovky a zahrnout je do generovaných dokumentů aplikace Microsoft Word, musíte nainstalovat předběžnou verzi doplňku Chrome.
+* Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Pouze Microsoft Edge a Internet Explorer (podporované verze Microsoft Windows) podporují aplikace ClickOnce. Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
+* K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
+
+## <a name="network-requirements"></a>Požadavky na síť
+
+* Human Resources je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje aplikaci Human Resources. Doporučujeme otestovat čekací dobu v síti na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
+* Požadavky na šířku pásma pro Human Resources závisí na daném scénáři. Běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
+ 
 > [!WARNING]
 > Nepočítejte požadavky na šířku pásma z klientského umístění tím, že vynásobíte počet uživatelů minimálními požadavky na šířku pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma, použijte zkušební verzi aplikace Human Resources.
 
@@ -63,6 +66,5 @@ Můžete si stáhnout PDF soubor se zeměmi, oblastmi a jazyky, které Human Res
 > Zatímco je uživatelské rozhraní lokalizováno do jiných jazyků, budou všechna uživatelská data uložena v jazyce, ve kterém byla zadána. E-maily a šablony můžete vytvářet v jiných jazycích, ale data jako informace o plánování budou v tomto okamžiku k dispozici pouze v angličtině.
 
 Pokud jste vývojáři a máte zájem o vytváření vlastních nastavení specifických pro zemi nebo oblast, nebo o vytváření řešení pro zemi nebo oblast, která není aktuálně podporována společností Microsoft, prohlédněte si část [Globalizace](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

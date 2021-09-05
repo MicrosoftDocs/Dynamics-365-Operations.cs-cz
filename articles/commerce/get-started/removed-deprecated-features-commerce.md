@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740400"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386734"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -32,6 +32,55 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.21
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Maloobchodní SDK distribuovaná pomocí Lifecycle Services
+
+Retail SDK se dodává ve službě Lifecycle Services (LCS). Tento způsob distribuce je ve verzi 10.0.21 zastaralý. Do budoucna budou referenční balíčky Retail SDK, knihovny a ukázky publikovány ve veřejných úložištích na GitHubu.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Retail SDK se dodává v LCS. Dokončení procesu LCS trvá několik hodin a tento postup je nutné opakovat pro každou aktualizaci. Do budoucna budou referenční balíčky Retail SDK, knihovny a ukázky publikovány ve veřejných úložištích na GitHubu. Ukázky rozšíření a referenční balíčky lze snadno spotřebovat a aktualizace se dokončí za několik minut. |
+| **Nahrazeno jinou funkcí?**   |  [Stažení ukázek Retail SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Ovlivněné oblasti produktu**         | Retail SDK |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od verze 10.0.21 bude sada SDK dodávaná prostřednictvím virtuálních počítačů LCS v říjnu 2022 odstraněna. |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Maloobchodně nasaditelný balíček a kombinované instalační programy POS, hardwarové stanice a cloudové škály
+
+Maloobchodní nasazitelné balíčky generované pomocí Retail SDK MSBuild jsou v 10.0.21 zastaralé. Do budoucna použijte balíček Cloud Scale Unit (CSU) pro rozšíření Cloud Scale Unit (Commerce Runtime, databáze kanálů, bezobslužné obchodní API, platby a cloudové prodejní místo (POS)). Použijte instalační programy pouze pro rozšíření pro POS, hardwarovou stanici a cloudovou jednotku, kterou hostujete sami.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Retail nasaditelný balíček je kombinovaný balíček, který obsahuje kompletní sadu rozšiřujících balíčků a instalačních programů. Tento kombinovaný balíček komplikuje nasazení, protože rozšíření CSU přecházejí na Cloud scale unit a instalátory jsou nasazeny v obchodech. Instalační programy obsahují rozšíření a základní produkt, což ztěžuje aktualizace. Při každém upgradu je zapotřebí sloučení kódu a generování balíčku. Aby se tento proces zjednodušil, balíčky rozšíření jsou nyní rozděleny na komponenty pro snadné nasazení a správu. S novým přístupem jsou rozšíření a instalační programy základních produktů odděleny a lze je nezávisle obsluhovat a upgradovat bez sloučení kódu nebo přebalování.|
+| **Nahrazeno jinou funkcí?**   | Rozšíření CSU, instalátory rozšíření POS, instalační programy rozšíření hardwarových stanic |
+| **Ovlivněné oblasti produktu**         | Rozšíření a nasazení Dynamics 365 Commerce |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od vydání 10.0.21 bude podpora pro nasazení RetailDeployablePackage v LCS v říjnu 2022 odstraněna. |
+
+Další informace naleznete zde:
+
++ [Vygenerujte samostatný balíček pro Commerce Cloud Scale Unit (CSU)](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Vytvoření balíčku rozšíření Modern POS](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [Integrace POS s novým hardwarovým zařízením](../dev-itpro/hardware-device-extension.md)
++ Vzorky kódu
+    + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [POS, CSU a Hardwarová stanice](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln a CloudPOs.sln v sadě Retail SDK
+
+Vývoj rozšíření POS pomocí ModernPos.sln, CloudPOs.sln, POS.Extension.csproj a složky POS je ve verzi 10.0.21 zastaralý. Do budoucna použijte pro rozšíření POS balíčky SDK nezávislé na POS.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | V dřívějších verzích sady Retail SDK, pokud existují rozšíření POS, je k aktualizaci na nejnovější verzi POS potřeba sloučení kódu a přebalení. Sloučení kódu byl časově náročný proces upgradu a museli jste v úložišti udržovat úplnou sadu Retail SDK. Také jste museli zkompilovat základní projekt POS.App. Použitím nezávislého modelu balení musíte udržovat pouze své rozšíření. Proces aktualizace na nejnovější verzi rozšíření POS je stejně snadný jako aktualizace verze balíčku NuGet, který váš projekt spotřebuje. Rozšíření lze nasadit nezávisle a služby používají instalační programy rozšíření. Základní POS lze nasadit a udržovat samostatně a není nutné sloučení kódu ani přebalení základního instalačního programu nebo kódu. |
+| **Nahrazeno jinou funkcí?**   | [Balení SDK nezávislé na POS](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Ovlivněné oblasti produktu**         | Rozšíření a nasazení Dynamics 365 Commerce POS |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od verze 10.0.21 bude v říjnu 2022 odebrána podpora pro kombinované POS balíčky a model rozšíření využívající ModernPos.Sln, CloudPOs.sln a POS.Extensons.csproj v Retail SDK. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.17
 

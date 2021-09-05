@@ -1,5 +1,5 @@
 ---
-title: Výsledky modelů strojového učení (Preview)
+title: Výsledky modelů strojového učení
 description: Toto téma pojednává o maticích zmatků, problémech s klasifikací a správnosti v modelech strojového učení (ML). Účelem je zlepšit vaše chápání správnosti ve výsledcích predikce ML.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: eef57c4515aecad83c1a7d74e9251c536e3671a7f1eec5a1ae3bbb62ec0fcb2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2545f7d043e139606c51bc559e3aacbe73abccfc
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764304"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386630"
 ---
-# <a name="results-of-machine-learning-models-preview"></a>Výsledky modelů strojového učení (Preview)
+# <a name="results-of-machine-learning-models"></a>Výsledky modelů strojového učení
 
 [!include [banner](../includes/banner.md)]
 

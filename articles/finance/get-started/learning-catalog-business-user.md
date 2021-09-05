@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75fbf177cd74739b35e72f2cae56a6c46fe69540145f16c80766b3ec260e8d0b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4067ff395042ec30bdb6a846d12509a1436256
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713749"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402537"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Katalog kurzů pro uživatele Dynamics 365 Finance
 
@@ -32,6 +32,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 8 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin   |
 | [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách.   Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
+| [Začínáme s aplikací Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | S Dynamics 365 Intelligent Order Management zákazníci mohou řídit orchestraci objednávek až do jejich splnění. Tyto funkce umožňují organizacím organizovat toky objednávek na různých platformách a aplikacích. | Bezplatný online výukový modul pro školení vlastním tempem | 30 min |
 | [Samozřejmě MB-900T01-A: Základy produktu Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Tento kurz se seznámí s funkcí a obchodní hodnotou Dynamics 365. Kurz bude zahrnovat aplikace Dynamics 365, Power Platform, koncepty cloudu, model zabezpečení a informace o licencích. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
 
 ## <a name="core-platform-knowledge"></a>Základní znalost platforem<a name="core-platform-knowledge"></a>

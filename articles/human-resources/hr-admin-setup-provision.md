@@ -1,8 +1,8 @@
 ---
 title: Zřízení Human Resources
-description: Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/14/2021
+description: Toto téma vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58ffce072c8b73f4907b18c6c60b022f9a3b55f26cb785238367254021afdc28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756141"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393516"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -28,9 +28,15 @@ ms.locfileid: "6756141"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Human Resources. Toto téma předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto článku, kontaktujte podporu.
+Toto téma vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources. 
 
-Pro začátek se musí globální správce přihlásit do služby [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) a vytvořit nový projekt aplikace Human Resources. Pokud vám v pořízení aplikace Human Resources nebrání problémy s licencí, není zapotřebí pomoc od zástupce služby Support or Dynamics Service Engineering (DSE).
+## <a name="prerequisites"></a>Předpoklady
+
+Aby bylo možné zřídit nové produkční prostředí, musí být splněny následující požadavky:
+
+- Zakoupili jste si aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Human Resources, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
+
+- Globální správce se přihlásil do služby [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) a vytvořil nový projekt aplikace Human Resources. 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Zřídit zkušební prostředí Human Resources
 
@@ -42,7 +48,7 @@ Zkušební prostředí nejsou určena k použití jako produkční prostředí. 
 
 Než vytvoříte své první prostředí Human Resources, měli byste pečlivě naplánovat potřeby prostředí pro váš projekt. Základní předplatné Human Resources zahrnuje dvě prostředí: produkční prostředí a prostředí karantény. V závislosti na složitosti vašeho projektu možná budete muset zakoupit další prostředí izolovaného prostoru pro podporu projektových aktivit. 
 
-Mezi aspekty pro další prostředí patří mimo jiné následující:
+Doporučení pro další prostředí:
 
 - **Migrace dat**: Možná budete muset zvážit další prostředí pro aktivity migrace dat, aby bylo možné vaše prostředí karantény použít pro účely testování v celém projektu. Mít další prostředí umožňuje, aby aktivity migrace dat pokračovaly, zatímco aktivity testování a konfigurace probíhají současně v jiném prostředí.
 - **Integrace**: Možná budete muset zvážit další prostředí pro konfiguraci a testování integrace. To by mohlo zahrnovat nativní integrace, jako jsou integrace Ceridian Dayforce LinkedIn Talent Hub, nebo vlastní integrace, jako jsou integrace pro mzdy, systémy sledování žadatelů nebo systémy a poskytovatele výhod.
@@ -50,10 +56,11 @@ Mezi aspekty pro další prostředí patří mimo jiné následující:
 - **Vícefázový projekt** : Možná budete potřebovat další prostředí pro podporu konfigurace, migrace dat, testování nebo jiných aktivit ve fázi projektu, která je plánována po počátečním uvedení projektu do provozu.
 
  > [!IMPORTANT]
- > Doporučujeme používat produkční prostředí v celém projektu jako prostředí konfigurace GOLD. To je důležité, protože nelze zkopírovat prostředí karantény do produkčního prostředí. Když tedy uvedete do provozu, vaše GOLD prostředí je vaše produkční prostředí, a v tomto prostředí dokončíte své činnosti přechodu.</br></br>
- > Doporučujeme, abyste před zahájením provozu provedli předstíraný odřezek pomocí sandboxu nebo jiného prostředí. Můžete to udělat obnovením produkčního prostředí s vaší konfigurací GOLD do prostředí karantény.</br></br>
- > Doporučujeme, abyste si nechali podrobný kontrolní seznam pro vystřihování, který zahrnuje každý z datových balíčků potřebných k migraci konečných dat do produkčního prostředí během zastávky.</br></br>
- > Také doporučujeme používat sandbox prostředí v celém projektu jako prostředí konfigurace TEST. Pokud potřebujete další prostředí, může si je vaše organizace za příplatek zakoupit.</br></br>
+ > Při návrhu vašeho prostředí doporučujeme:
+ > - Používat produkční prostředí v celém projektu jako prostředí konfigurace GOLD. To je důležité, protože nelze zkopírovat prostředí karantény do produkčního prostředí. Když tedy uvedete do provozu, vaše GOLD prostředí je vaše produkční prostředí, a v tomto prostředí dokončíte své činnosti přechodu.</br></br>
+ > - Před zahájením provozu proveďte předstíraný odřezek pomocí sandboxu nebo jiného prostředí. Můžete to udělat obnovením produkčního prostředí s vaší konfigurací GOLD do prostředí karantény.</br></br>
+ > - Ponechte si podrobný kontrolní seznam pro vystřihování, který zahrnuje každý z datových balíčků potřebných k migraci konečných dat do produkčního prostředí během zastávky.</br></br>
+ > - Používat prostředí sandbox v celém projektu jako prostředí konfigurace TEST. Pokud potřebujete další prostředí, může si je vaše organizace za příplatek zakoupit.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Vytvoření LCS projektu
 
@@ -86,7 +93,7 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
     > Typ instance Human Resources nelze po nastavení změnit. Před pokračováním ověřte, zda je vybrán správný typ instance.</br></br>
     > Typ instance aplikace Human Resources je oddělen od typu instance prostředí Microsoft Power Apps, který jste nastavili v centru správy Power Apps.
     
-3. Pokud chcete, aby prostředí obsahovalo stejnou demonstrační datovou sadu, jaká se používá v prostředí zkušební ukázky aplikace Human Resources, zaškrtněte políčko **Zahrnout ukázková data**. Ukázková data jsou vhodná pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemají používat pro výrobní prostředí. Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
+3. Pokud chcete, aby prostředí obsahovalo stejnou demonstrační datovou sadu, jaká se používá ve zkušebním prostředí Human Resources, zaškrtněte políčko **Zahrnout ukázková data**. Ukázková data jsou vhodná pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemají používat pro výrobní prostředí. Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
 
 4. Aplikace Human Resources bude vždy zařazena v prostředí Microsoft Power Apps, aby byla možná integrace a rozšiřitelnost Power Apps. Než budete pokračovat, přečtěte si část Výběr prostředí Power Apps v tomto článku. Pokud již nemáte prostředí Power Apps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu Power Apps. Poté postupujte podle kroků k [Vytvoření prostředí Power Apps](/powerapps/administrator/create-environment).
 
@@ -115,7 +122,7 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
 
 4. Měly být zohledněny strategie integrace dat a testování, například Sandbox, UAT nebo výroba. Pečlivě zvažte implikace pro vaše nasazení, protože není snadné později změnit, které prostředí aplikace Human Resources je namapováno na prostředí Power Apps.
 
-5. Pro Human Resources nelze použít následující prostředí Power Apps. Jsou filtrovány ze seznamu výběru v rámci LCS:
+5. V aplikaci Human Resources nelze použít následující prostředí Power Apps. Jsou filtrovány ze seznamu výběru v rámci LCS:
  
     - **Výchozí prostředí Power Apps** – zatímco každý klient je automaticky zřízen ve výchozím prostředí Power Apps, nedoporučujeme je používat s Human Resources. Všichni uživatelé klienta mají přístup k prostředí Power Apps a mohou neúmyslně poškodit výrobní data při testování a procházení pomocí integrací Power Apps nebo Power Automate.
    
@@ -147,7 +154,7 @@ Data pro prostředí Human Resources budou vždy obsažena v geografii Azure, ve
 
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
 
-Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musíte explicitně udělit přístup. Musíte přidat uživatele a přiřadit jim příslušné role v prostředí Human Resources. Globální správce, který nasadil aplikaci Human Resources, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta. Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu. Další informace naleznete v tématu [Vytvoření nových uživatelů](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musíte explicitně udělit přístup. Musíte přidat uživatele a přiřadit jim příslušné role v prostředí Human Resources. Další informace naleznete v tématu [Vytvoření nových uživatelů](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

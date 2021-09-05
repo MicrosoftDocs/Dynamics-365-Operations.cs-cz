@@ -1,8 +1,8 @@
 ---
 title: Nejčastější dotazy týkající se integrace s aplikací Finance
-description: Tento článek vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Human Resources a Finance.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Human Resources a Finance.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782137"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413361"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -158,8 +158,7 @@ Při vytváření připojení zvolte Dynamics 365 Finance a Dataverse.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
 
-Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Human Resources a Dataverse je dostupná také v aplikaci Finance.
-Dále také vyberte správné právnické osoby pro přidruženou sadu připojení.
+Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Human Resources a Dataverse je dostupná také v aplikaci Finance. Dále také vyberte správné právnické osoby pro přidruženou sadu připojení.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Po nastavení projektu se zdá mapování polí pro Finance prázdné. Co mám dělat?
 

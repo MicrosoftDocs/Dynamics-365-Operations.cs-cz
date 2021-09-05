@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720519"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344051"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Co je Jeden doklad?
@@ -81,7 +82,7 @@ Na základě rozhovorů s odběrateli společnost Microsoft zkompilovala násled
 
 Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu. Pokud vaše organizace má některý z uvedených scénářů, je nutné povolit více transakcí, které mají být zadány do dokladu změnou nastavení parametru **Povolit více transakcí v rámci jednoho dokladu** na stránce **Parametry hlavní knihy**. Tyto funkční mezery budou vyplněny pomocí dalších funkcí v novějších verzích.
 
-> [!Note]
+> [!NOTE]
 > [Pro každý z následujících scénářů musí být pole **Povolit více transakcí v rámci jednoho dokladu** musí být nastaveno na Ano na pevné záložce **Obecné** na stránce **Parametry hlavní knihy**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Zaúčtování plateb dodavatelů v souhrnné formě na bankovní účet
@@ -115,15 +116,7 @@ V tomto případě je zákazník na jednom dokladu stejný vzhledem k tomu, že 
 Pokud je periodická úloha refundace spuštěna z modulu pohledávek, vytváří transakci pro přesun zůstatku od zákazníka k dodavateli. V tomto scénáři musí být použit jeden doklad pro refundaci zákazníka.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Údržba dlouhodobého majetku: opravný odpis, rozdělení majetku, výpočet odpisu pro vyřazení
-Následujících transakce dlouhodobého majetku také vytvoří více transakcí v jedno dokladu:
-
-- Je provedeno další pořízení dlouhodobého majetku a je vypočten 'opravný' odpis.
-- Majetek je rozdělen.
-- Je zapnutý parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
-- Datum uvedení majetku do služby je před datem pořízení. Z tohoto důvodu je zaúčtována oprava odpisu.
-
-> [!Note]
-> Při zadávání transakcí zkontrolujte, zda se všechny transakce vztahují ke stejnému dlouhodobému majetku. Doklad nebude zaúčtován, pokud zahrnuje více než jeden dlouhodobý majetek, a to i v případě, že je pole **Nový doklad** nastaveno na jedno číslo dokladu pouze na stránce **Názvy deníku** v hlavní knize. Pokud do dokladu zahrnete více než jeden dlouhodobý majetek, může se zobrazit zpráva **Na doklad může existovat jen jedna transakce dlouhodobého majetku** a tento doklad nebude možné zaúčtovat.  
+Ve verzi 10.0.21 a novější budou transakce s dlouhodobým majetkem pro opravné odpisy, rozdělení majetku a výpočet odpisů pro vyřazení majetku vytvářeny pomocí různých čísel dokladů.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Cizí směnky a vlastní směnky
 Cizí směnky a vlastní směnky vyžadují, aby byl použit jeden doklad, protože transakce přesouvají zůstatek zákazníka nebo dodavatele z jednoho účtu hlavní knihy pohledávek/závazků na jiný, na základě stavu platby.

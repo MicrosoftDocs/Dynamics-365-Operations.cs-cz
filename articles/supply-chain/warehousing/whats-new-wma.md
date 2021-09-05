@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720077"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386092"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720077"
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>Verze 2.0.9.0
+
+Tato verze řeší problém, kdy aplikace mohla přestat reagovat, pokud se uživatelé dostanou na začátek seznamu.
+
+## <a name="version-2080"></a>Verze 2.0.8.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Přidána podpora pro [funkce krokových pokynů](mobile-app-titles-instructions.md), která byla představena v Supply Chain Management verze 10.0.21.
+- Přidána animace nápovědy, která uživatelům ukazuje, že překrytí mohou zavírat přejetím dolů.
+- Přidána podpora pro funkční klávesy v seznamech akcí a nabídkách. Uživatelé mohou podržením libovolné funkční klávesy po dobu tří sekund získat seznam dostupných příkazů.
+- Opravený problém, který způsoboval, že se na některých zařízeních zobrazovala následující chybová zpráva: „Nelze najít vhodné zobrazení pro zadanou velikost.“
+- Opraven problém, kdy režim celé obrazovky nefungoval vždy, když byla použita klávesnice na obrazovce.
+- Opravený problém, kdy přejíždění stránky nefungovalo na zařízeních Windows.
+- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
+
+## <a name="version-2070"></a>Verze 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nové funkce, opravy a vylepšení ve verzi 2.0.7.0
 

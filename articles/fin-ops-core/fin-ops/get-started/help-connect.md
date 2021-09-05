@@ -2,7 +2,7 @@
 title: Konfigurace prostředí nápovědy pro aplikace Finance and Operations
 description: Toto téma poskytuje informace o součástech systému nápovědy pro některé aplikace Microsoft Dynamics 365.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343805"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro aplikace Finance and Operations
 
@@ -54,7 +54,7 @@ Chcete-li nakonfigurovat průvodce záznamem úloh pro řešení, postupujte pod
 > [!IMPORTANT]
 > Při prvním otevření karty **Nápověda** je nutné se připojit k službě Lifecycle Services. Zvolte odkaz uprostřed formuláře, počkejte na připojení, zavřete dialogové okno a volbou tlačítka **OK** otevřete stránku **Parametry systému**.
 >
-> [![Připojení k LCS](./media/connect-to-lcs-crop-1024x365.png „Připojení k LCS.“](./media/connect-to-lcs-crop.png)
+> [![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png "Připojení k LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Vyberte projekt služby Lifecycle Services pro připojení.
 2. Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úkolů.

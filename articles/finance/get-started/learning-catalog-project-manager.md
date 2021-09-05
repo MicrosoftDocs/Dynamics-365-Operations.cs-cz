@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f9dfa54f0a2b849a38c71a041f6d72dd84c762edba3482575b0b7867b1e11a53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5055d18e57d36bc8218bb0423721056e33fc3018
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716614"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402169"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Finance
 
@@ -60,8 +60,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Přístup k testování výkonu (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | Připojte se k této technické přednášce, jak postupovat při testování výkonu. Poznejte základy, doporučené postupy pro testování, dostupné nástroje a techniky pro provádění testů a měření výkonu a pro použití výsledků optimalizace. | Technická přednáška (nahraný webinář) | 45 min. |
 | [Jak upgradovat na verzi 7.2 (červenec 2017) z 7.0 (RTW)/7.1 (vydání 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | V této relaci si ukážeme, jak upgradovat aplikaci Dynamics 365 Finance and Operations v7.0 (RTW) a v7.1 (1611) na v7.2 (červenec 2017). Provedli jsme jasné rozlišení mezi aktivními zákaznickými a probíhajícími (dosud neaktivními) projekty. | Technická přednáška (nahraný webinář) | 58 minut |
 | [Finance and Operations: Upgrade z verze 7.x na 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Přidejte se k nám na dalších technických přednáškách, kde se budeme věnovat procesu upgradu z 7.X na 8.X. Budeme projednávat různé scénáře a kroky, které je třeba provést při upgradu kódu a upgradu dat. Rovněž pokryjeme scénáře požadavků na rozšíření a postup, jak je v případě potřeby zvýšit. Část 1 ze 2. | Technická přednáška (nahraný webinář) | 61 min. |
-| [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Technická přednáška (nahraný webinář) | 45 min. |
-| [Možnosti vykazování v Dynamics 365 for Operations (VIR810PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reporting-options-in-dynamics-365-for-operations-february-23-2017) | Tato relace bude projednávat různé scénáře tisku v D365 for Operations, včetně tipů a rad pro směrovacího agenta dokumentu. | Technická přednáška (nahraný webinář) | 60 min |
+| [Upgrade AX2012 na Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tato technická přednáška vám poskytne přehled o tom, jak upgradovat kód a data z AX Dynamics 2012 na Dynamics 365 for Operations. | Technická přednáška (nahraný webinář) | 45 minut |
 | [Možnosti analytiky a vykazování: zástupce tisku a směrování dokumentů](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Přidejte se k nám na této technické přednášce na dvě související témata. Nejprve si probereme vzory a nástroje řešení analýzy a vykazování Dynamics 365 for Finance and Operations, Enterprise Edition. Za druhé, probereme tiskové scénáře a zástupce pro směrování dokumentů. | Technická přednáška (nahraný webinář) | 45 minut |
 | [Kurz MB-300T01-A: Základní běžné funkce Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Tento kurz popisuje základní běžné funkce aplikace Microsoft Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
 | [Kurz MB-300T02-A: Základní konfigurace v Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Tento kurz se zabývá základními konfiguračními úkoly aplikace Microsoft Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
@@ -93,6 +92,5 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. |
 | [Zkuška MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: nastavení a konfigurace finanční správy, správa a použití běžných procesů; implementace a správa závazků a pohledávek a správa rozpočtování a dlouhodobého majetku. | Zkouška; náklady se liší podle oblasti. |
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional sjednocuje globální finance a provozy a automatizuje úkoly a workflowy, zjednodušuje objednávky, prodej, fakturaci a výkaznictví pro zákazníky. | Certifikace; náklady se liší podle oblasti. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

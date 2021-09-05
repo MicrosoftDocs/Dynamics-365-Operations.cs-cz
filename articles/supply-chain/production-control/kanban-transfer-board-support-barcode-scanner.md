@@ -1,5 +1,5 @@
 ---
-title: Rozvrh převodů kanbanu podporuje skenery čárových kódů
+title: Podpora desky převodů kanbanu pro čtečky čárového kódu
 description: Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
 author: ChristianRytt
 ms.date: 06/20/2017
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973c9f4c6960d5e263ee06bd665c94f770696d0dd5a7cdfad8471687054d57f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1316c4f77cabf0184ec01b64d0c6a86830e2675d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736009"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343935"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Podpora desky převodů kanbanu pro čtečky čárového kódu
 
 [!include [banner](../includes/banner.md)]
 

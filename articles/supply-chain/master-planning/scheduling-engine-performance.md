@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343470"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -70,7 +70,7 @@ Jako příklad si představme trasu uvedenou v následující tabulce a na násl
 
 Při odesílání do modulu dojde k rozdělení do 8 úloh, jak je znázorněno na následujícím obrázku (vyberte obrázek pro jeho zvětšení).
 
-[![Plánování úloh modulu](media/scheduling-engine-jobs.png „Plánování úloh modulu.“](media/scheduling-engine-jobs-large.png)
+[![Úlohy plánovacího modulu](media/scheduling-engine-jobs.png "Úlohy plánovacího modulu.")](media/scheduling-engine-jobs-large.png)
 
 Standardní propojení mezi dvěma úlohami je `FinishStart`, což znamená, že čas ukončení jedné úlohy musí být před časem zahájení jiné úlohy. Protože nastavení musí být provedeno stejným zdrojem, který tento proces později provede, existují mezi nimi omezení `OnSameResource`. Mezi úlohami pro primární a sekundární operaci 10 existují propojení `StartStart` a `FinishFinish`, což znamená, že úlohy musí začínat i končit současně, a zároveň platí omezení `NotOnSameResource`, která zabrání spuštění stejného zdroje pro primární i sekundární operaci.
 

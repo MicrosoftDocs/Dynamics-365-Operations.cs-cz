@@ -2,19 +2,19 @@
 title: Strana a globální adresář
 description: Toto téma popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729769"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386678"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -139,7 +139,10 @@ Mřížka obsahuje následující sloupce:
 
 Můžete použít tlačítko **Nová elektronická adresa** nad mřížkou k vytvoření tolika elektronických adres, kolik chcete.
 
-Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verzích budou všechna pole elektronické a poštovní adresy odstraněna z jiných karet (například karet **Souhrn** a **Detaily**).
+Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verzích budou všechna pole elektronické a poštovní adresy odstraněna z jiných karet, například karet **Souhrn** a **Detaily**. Kontaktní údaje zobrazené na kartě **Podrobnosti** jsou kopie primární elektronické adresy pouze pro čtení, jako je primární telefon, primární e-mail, primární fax a primární Twitter ID. Během procesu kvalifikace zájemce můžete zadat obchodní telefonní číslo i číslo mobilního telefonu. Firemní telefonní číslo je považováno za primární telefon, pokud **IsMobile=No** a číslo mobilního telefonu je považováno za sekundární telefon, pokud **IsMobile=Yes**.
+
+> [!TIP]
+> Použití karet **Adresy** a **Elektronické adresy** ve formulářích **Obchodní vztah** a **Kontakt** pro správu poštovních a elektronických adres. Tím je zajištěno, že se data adres synchronizují s aplikací Finance and Operations.
 
 ## <a name="setup"></a>Nastavení
 
@@ -249,13 +252,11 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     [Záhlaví prodejní objednávky CDS](mapping-reference.md#217) | salesorders
     [Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury
 
-> [!Note]
+> [!NOTE]
 > Mapa `CDS Contacts V2 (contacts)` je mapa, kterou jste zastavili v kroku 1. Když se pokusíte spustit další mapy, mohou se tyto 2 mapy objevit v seznamu závislých osob. Nespouštějte tyto mapy.
-
-> [!Note]
+>
 > Pokud je nainstalováno řešení strany a globálního adresáře, musíte deaktivovat pojmenované připojení `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Pokud odinstalujete řešení strany a globálního adresáře, musíte znovu aktivovat plugin .
-
-> [!Note]
+>
 > Pole `msdyn_*partynumber` (jednořádkové textové pole), zahrnuté v tabulkách **Účet**, **Kontakt** a **Prodejce** by se neměly v budoucnosti používat. Název štítku má předponu **(Zastaralé)** pro přehlednost. Místo toho použijte pole **msdyn_partyid**. Pole je vyhledáváním pro tabulku **msdyn_party**.
 
 > Název tabulky | Staré pole | Nové pole
@@ -296,7 +297,6 @@ Další informace viz [Odkaz na mapování duálního zápisu ](mapping-referenc
 
 + v aplikacích Finance and Operations, když vytvoříte zákazníka spolu s adresou a uložíte jej, nemusí se adresa synchronizovat s tabulkou **Adresa**. Důvodem je problém se sekvenováním platformy pro dvojí zápis. Jako řešení nejprve vytvořte zákazníka a uložte ho. Poté přidejte adresu.
 + V aplikacích Finance and Operations, když má záznam zákazníka primární adresu a vytvoříte nový kontakt pro tohoto zákazníka, pak záznam kontaktu zdědí primární adresu z přidruženého záznamu zákazníka. K tomu dochází také u kontaktu prodejce. Dataverse aktuálně toto chování nepodporuje. Pokud je povolen duální zápis, kontakt na zákazníka zdědí primární adresu z aplikace Finance and Operations je synchronizována do Dataverse spolu s jeho adresou.
-+ Elektronické adresy z tabulky `msdyn_partyelectronicaddress` neproudí do polí elektronických adres v tabulkách **Účet** a **Kontakt**. Plánujeme tento problém vyřešit v přírůstkové verzi. Stávající údaje v polích elektronické adresy v tabulkách **Účet** a **Kontakt** nebudou přepsány.
 + Elektronické adresy nastavené v záložce elektronických adres tabulek **Účet**, **Kontakt** a **Dodavatel** pochází z tabulky `msdyn_partyelectronicaddress`. Tyto informace neplynou k souvisejícím transakcím, jako je prodejní objednávka, nabídka a nákupní objednávka. Plánujeme tento problém vyřešit v přírůstkové verzi. Existující data v polích elektronické adresy v záznamech účtu a kontaktů budou i nadále fungovat na transakcích, jako je prodejní objednávka, nabídka a nákupní objednávka.
 + V aplikacích Finance and Operations můžete vytvořit záznam kontaktu z formuláře **Přidat kontakt**. Když se pokusíte vytvořit nový kontakt z formuláře **Zobrazit kontakt**, akce selže. Toto je známý problém.
 

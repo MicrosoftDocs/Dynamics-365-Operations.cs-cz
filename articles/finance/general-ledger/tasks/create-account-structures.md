@@ -1,6 +1,6 @@
 ---
 title: Vytvoření účetních struktur
-description: Tento průvodce úkoly vás provede vytvořením účetní struktury.
+description: Tato procedura vás provede vytvořením účetní struktury.
 author: aprilolson
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93cc2e9ceb15070491bb3d0a790367e6d5bf8c4a30cd7efa690fd825963165b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779534"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394532"
 ---
 # <a name="create-account-structures"></a>Vytvoření účetních struktur
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce úkoly vás provede vytvořením účetní struktury. Kroky používají ukázková data společnosti USMF.
+Tato procedura vás provede vytvořením účetní struktury. Kroky používají ukázková data společnosti USMF.
 
 1. Přejděte na **navigační podokno > Moduly > Hlavní kniha > Účetní osnovy > Struktury > Konfigurovat účetní struktury**.
 2. V **podokně akcí** klikněte na **Nové** a otevřete rozbalovací dialogové okno.

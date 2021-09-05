@@ -2,7 +2,7 @@
 title: Preview verze Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012030"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391201"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -29,17 +29,18 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 - **Obecně dostupné vydání (automatická aktualizace):** Říjen 2021
 
 ## <a name="known-deployment-issue"></a>Známý problém s nasazením
+
 Při nasazení verze 10.0.21 na IaaS můžete obdržet následující upozornění nasazení:
 
 **Kód upozornění:** 95017
 
-**Zpráva s upozorněním:** Neúspěšné spuštění skriptu [SetupDiagnostics] proti VM
+**Zpráva s upozorněním:** Neúspěšné spuštění skriptu VM \[SetupDiagnostics\]
 
-Nasazení bude fungovat i přes toto upozornění, ale ve službě Lifecycle Services (LCS) mohou nastat následující známé problémy:
+Nasazení bude fungovat i přes varování. Ve službě Lifecycle Services (LCS) však mohou nastat následující známé problémy:
 
--   Na stránce **Sledování prostředí** se nezobrazí odkaz **Zobrazit podrobné informace o verzi**, takže neuvidíte konkrétní verze modulů nainstalovaných ve vašem prostředí. Bez těchto dat by následné opravy hotfix mohly selhat, protože proces, který používá opravy hotfix, používá tato data k ověření, že jsou splněny požadavky na verzi modulu. Protože sestavení PEAP/Preview není možné použít ve výrobě nebo v něm použít opravy hotfix, měl by být dopad minimální.
--   Karty **Měření výkonu** a **Analýza indexu** ve stránce **Sledování prostředí** nezobrazí v části SQL Insights žádná data. Všechny ostatní funkce **Sledování prostředí** budou fungovat podle očekávání.
--   Stránka **plná diagnostika systému** nebude přístupná. Přidružená data o stavu nočních běhů kolektorů dat a problémech zjištěných jeho pravidly se také nezobrazí.
+- Na stránce **Sledování prostředí** se nezobrazí odkaz **Zobrazit podrobné informace o verzi**, takže neuvidíte konkrétní verze modulů nainstalovaných ve vašem prostředí. Bez těchto dat by následné opravy hotfix mohly selhat, protože proces, který používá opravy hotfix, používá tato data k ověření, že jsou splněny požadavky na verzi modulu. Protože sestavení PEAP/Preview není možné použít ve výrobě nebo v něm použít opravy hotfix, měl by být dopad minimální.
+- Karty **Měření výkonu** a **Analýza indexu** ve stránce **Sledování prostředí** nezobrazí v části SQL Insights žádná data. Všechny ostatní funkce **Sledování prostředí** budou fungovat podle očekávání.
+- Stránka **plná diagnostika systému** nebude přístupná. Přidružená data o stavu nočních běhů kolektorů dat a problémech zjištěných jeho pravidly se také nezobrazí.
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
@@ -52,10 +53,10 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 | Zásoby&nbsp;a&nbsp;logistika | [Doplněk Globální účetnictví zásob pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Domovská stránka globálního skladového účetnictví](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kódy důvodů pro inventury zásob](../warehousing/reason-codes-for-counting-journals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zásady exportu dat odkazující na prodejní nabídku](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Určete, zda změny dat odkazovaných v nabídkách způsobí zahrnutí těchto nabídek (nebo řádků) do dalšího přírůstkového exportu. Pokud se rozhodnete nezahrnout tyto nabídky nebo řádky, vaše přírůstkové exporty poběží rychleji.<br><br>Tato funkce přidává nastavení s názvem **Vynechat data odkazovaná v prodejních nabídkách při sledování změn** do stránky **Parametry pohledávek**. |
-| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Již brzy*<!-- KFM: Add doc link when ready. --> |
-| Zásoby&nbsp;a&nbsp;logistika | Zapečetěné nabídky <!-- KFM: Add RP link when available --> | *Již brzy*<!-- KFM: Add doc link when ready. --> |
+| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) |
+| Zásoby&nbsp;a&nbsp;logistika | [Předběžná rezervace pro doplněk Viditelnost zásob](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezervace viditelnosti zásob](../inventory/inventory-visibility-reservations.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Vylepšení odpočtů a skutečné hmotnosti ve správě rabatu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Správa odpočtů pomocí pracovní plochy odpočtu](../rebate-management/deduction-workbench.md )<br><br>[Zpracování, kontrola a zaúčtování rabatu](../rebate-management/process-review-post.md)<br><br>[Obchody správy rabatu](../rebate-management/rebate-management-deals.md) |
-| Zásoby&nbsp;a&nbsp;logistika | [Pokyny ke kroku aplikace skladu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Již brzy*<!-- KFM: Add doc link when ready --> |
+| Zásoby&nbsp;a&nbsp;logistika | [Pokyny ke kroku aplikace skladu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Pracovní přestávky a sledování aktualizací u nákladů za doručení](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Aktualizovat sledování pro odložení](../landed-cost/update-tracking-putaway.md )<br><br>[Zpracování přepravovaného zboží](../landed-cost/in-transit-processing.md) |
 | Hlavní plánování | [Dny zpoždění pro Optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Tolerance zpoždění (záporné dny)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 | Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
 | Správa nákladů | Podrobnosti o průběhu uzávěrky zásob | Tato funkce preview umožňuje detailní zobrazení průběhu uzávěrky zásob. |
-| Hlavní plánování | (Preview) Podpora MRP řízená prioritou pro optimalizaci plánování | Tato funkce preview Optimalizace plánování umožňuje hlavní plánování řízené prioritou plánování s bodem přiobjednání. Mezi zvýrazněné změny patří: pole **Priorita plánování** na řádcích prodejní objednávky, řádcích nákupní objednávky, prognóze poptávky a plánovaných objednávkách; nová možnost kódu disponibility; pole **Disponibilita položky** pole pro bod přiobjednání; formuláře nastavení hlavního plánování pro řízení nastavení priority plánování; a logika výpočtu Optimalizace plánování k nastavení a respektování priority plánování. |
 | Zásobování a zdroje | Zabránit nadměrné spotřebě rezervací účelových položek rozpočtu, když je v pracovním postupu více nákupních žádanek | Tato funkce preview vylepšuje kontrolu chyb, když uživatelé odesílají a schvalují nákupní žádanky, které překračují zbývající zůstatek řádku rezervace účelových položek rozpočtu. To pomáhá předcházet nadměrné spotřebě rezervace účelových položek rozpočtu, když je v pracovním postupu více nákupních žádanek. |
 | Řízení výroby | Zobrazit celé sériové číslo, číslo dávky a registrační značku v rozhraní provádění výrobního provozu | Tato funkce poskytuje vylepšené prostředí k prohlížení seznamů sériových, dávkových a registračních čísel v rozhraní pro provádění výrobního provozu. Zobrazení se změní ze zobrazení karty s omezeným počtem znaků na zobrazení seznamu, ve kterém je dostatek prostoru pro zobrazení celých hodnot. Seznam také poskytuje možnost vyhledávat konkrétní čísla. |
+| Prodej a marketing | Omezit počet prodejních objednávek, které lze vybrat k zaúčtování | Tato funkce vám umožňuje definovat maximální počet prodejních objednávek, které lze vybrat při odesílání potvrzení, výdejek, dodacích listů a faktur ze stránky seznamu prodejních objednávek. Je povoleno automaticky. Funkce přidává nastavení s názvem **Max. počet prodejních objednávek k zaúčtování** na stránku **Parametry pohledávek**. Nové nastavení má výchozí hodnotu *100*. Tato funkce pomáhá zlepšit výkon stránky seznamu prodejních objednávek, když je vybrán značný počet prodejních objednávek. Nemá to žádný vliv na počet prodejních objednávek, které lze zpracovat periodickým úkolem. |
 | Řízení skladu | Odpojit odloženou práci od ASN | Tato funkce je vyžadována k odesílání a přijímání rozšířených oznámení expedice (ASN), když spouštíte úlohu správy skladu na jednotce škálování (jako součást distribuované hybridní topologie). Přidává novou databázovou tabulku určenou k ukládání informací o práci vyskladnění. Dříve byly tyto informace uloženy v tabulkách používaných také pro ASN. |
 | Řízení skladu | Umístit smíšené jednotky do slotu | Umožňuje systému vkládat položky na místa, která obsahují smíšené jednotky (například krabice a pouzdra). U každého řádky šablony slotingu vám tato funkce umožňuje zvolit, zda má řádek vkládat položky do umístění se smíšenou jednotkou nebo jednou jednotkou. |
 | Řízení skladu | Použijte rychlejší rozhraní API pro zavírání/opětovné otevírání kontejnerů na balicí stanici | Když je tato funkce preview povolena, transakce zásob související s kontejnery se vytvářejí pomocí nového zjednodušeného procesu, který zlepšuje výkon zavírání nebo opětovného otevírání kontejnerů během ručního zpracování ve stanici balení. |

@@ -1,8 +1,8 @@
 ---
 title: Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
-description: Tento článek vysvětluje, jak vyřešit problém, kdy jsou názvy osob a pozic zkráceny při odběratelově zobrazení hierarchie pozic v aplikaci Microsoft Dynamics 365 Human Resources. Zkrácení textu může ztížit pořízení snímku obrazovky nebo tisk hierarchie.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, jak vyřešit problém zkrácených jmen osob a pozic v hierarchii pozic v aplikaci Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779319"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413528"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zabránění zkrácení textu na hierarchii pozic a export do aplikace Visio
 
@@ -43,7 +43,7 @@ Tento postup slouží k exportu do aplikace Visio.
 
 1. V modulu Lidské zdroje otevřete stránku se seznamem **pozic**.
 
-    Chcete-li do diagramu struktury organizace zahrnout další informace, přidejte pole do seznamu **Pozice**, aby byly k dispozici při použití tohoto průvodce později v tomto postupu.
+    Chcete-li do diagramu struktury organizace zahrnout další informace, přidejte pole do seznamu **Pozice**, aby byly k dispozici při použití **Průvodce grafem organizace** později v tomto postupu.
 
 2. V podokně akcí, vyberte tlačítko **Otevřít v aplikaci Microsoft Office** a poté v nabídce **Exportovat do aplikace Excel** vyberte **Pozice**. Případně stiskněte Ctrl+T.
 

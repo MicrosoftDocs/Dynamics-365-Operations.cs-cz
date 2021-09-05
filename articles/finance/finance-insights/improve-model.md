@@ -1,5 +1,5 @@
 ---
-title: Vylepšit model předpovědi (preview)
+title: Vylepšit model předpovědi
 description: Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 0bf4dd0f7edc528393af628eb3776c32957c459d3eaa166b0bc54d9318b54916
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768788"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386431"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Vylepšit model předpovědi (preview)
+# <a name="improve-the-prediction-model"></a>Vylepšit model předpovědi
 
 [!include [banner](../includes/banner.md)]
 

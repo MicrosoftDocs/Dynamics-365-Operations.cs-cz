@@ -1,8 +1,8 @@
 ---
 title: Vytvářejte ve správě zaměstnaneckých výhod sestavy v rámci zákona Affordable Care Act
-description: Toto téma popisuje, jak vám správa zaměstnaneckých výhod pomáhá sledovat informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA).
-author: andreabichsel
-ms.date: 12/28/2020
+description: Toto téma popisuje, jak správa zaměstnaneckých výhod sleduje informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA).
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727058"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416247"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generujte zprávy ACA ve Správě zaměstnaneckých výhod
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Správa zaměstnaneckých výhod pomáhá sledovat informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA). Stejně jako možnost ACA hlášení v minulosti v pracovním prostoru **zaměstnanecké výhody**, tato funkce se vztahuje pouze na právnické osoby ve Spojených státech.
+Správa zaměstnaneckých výhod sleduje informace, které jsou hlášeny formuláři 1095-B a formuláři 1095-C pro mandát zaměstnavatele podle zákona Affordable Care Act (ACA). Stejně jako možnost ACA hlášení v minulosti v pracovním prostoru **zaměstnanecké výhody**, tato funkce se vztahuje pouze na právnické osoby ve Spojených státech.
 
 Abyste mohli tuto funkci používat, musíte nejprve zapnout **Pokročilou správu zaměstnaneckých výhod**. Další informace, včetně důležitých upozornění na správu zaměstnaneckých výhod, viz [Povolení nebo zákaz správy zaměstnaneckých výhod](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -145,7 +145,7 @@ ACA formuláře 1095-B and 1095-C můžete vygenerovat a poté rozeslat všem z
 2. Podle potřeby změňte parametry a poté vyberte **OK**.
 
     > [!NOTE]
-    > Při tisku formulářů 1095-C pro více než 500 zaměstnanců obdržíte více než jeden soubor PDF. Doporučujeme zvýšit hodnotu pole **Maximální velikost souboru v megabajtech** na stránce **Parametry správy dokumentů** na **150**. (Chcete-li tuto stránku rychle otevřít, můžete použít vyhledávací pole na navigační liště.)
+    > Při tisku formulářů 1095-C pro více než 500 zaměstnanců obdržíte více než jeden soubor PDF. Doporučujeme zvýšit hodnotu pole **Maximální velikost souboru v megabajtech** na stránce **Parametry správy dokumentů** na **150**. (Chcete-li tuto stránku rychle otevřít, použijte vyhledávací pole na navigační liště.)
     >
     > ![Změna maximální velikosti souboru.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

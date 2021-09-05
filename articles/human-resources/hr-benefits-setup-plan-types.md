@@ -1,8 +1,8 @@
 ---
 title: Přehled typů plánů
-description: Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Typ plánu v Microsoft Dynamics 365 Human Resources je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423337"
 ---
 # <a name="plan-type-overview"></a>Přehled typů plánů
 
@@ -32,10 +32,10 @@ Každý typ plánu určuje, zda může zaměstnanec zaregistrovat jeden nebo ví
 
 Pokud typ plánu zahrnuje kontakty, typ plánu indikuje, zda jsou kontakty příjemci nebo závislé osoby. Základní typ životního plánu by měl mít například oprávněné osoby, zatímco základní typ lékařského plánu by měl závislé osoby. V některých případech nesmí mít plán žádné osobní kontakty. Jedná se například o pružný účet výdajů nebo doplatek za parkování.
 
-Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definovány ve formuláři možnosti pokrytí. Možnost pokrytí může určovat výši zaměstnanecké výhody nebo kontakty, které mají nárok na typ plánu. Je-li například typem kontaktu příjemce, možnost pokrytí by měla definovat podmínky, které má příjemce nárokovat, pokud je výhoda využívána. Je-li typ kontaktu závislá osoba, možnost pokrytí by měla definovat vztah mezi závislou osobou a zaměstnancem. 
+Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definovány ve stránce **Možnosti pokrytí**. Možnost pokrytí může určovat výši zaměstnanecké výhody nebo kontakty, které mají nárok na typ plánu. Je-li například typem kontaktu příjemce, možnost pokrytí by měla definovat podmínky, které má příjemce nárokovat, pokud je výhoda využívána. Je-li typ kontaktu závislá osoba, možnost pokrytí by měla definovat vztah mezi závislou osobou a zaměstnancem. 
 
 > [!IMPORTANT]
-> Formulář obsahuje klíčová data, která ovlivňují možnosti, které jsou k dispozici při vytváření nového plánu výhod:
+> Stránka obsahuje klíčová data, která ovlivňují možnosti, které jsou k dispozici při vytváření nového plánu výhod:
 >
 > - **Kód typu plánu** - Toto pole ovlivňuje to, co je zobrazeno na kartě **Konfigurace**, když je nastavena skutečná výhoda.  
 > - **Souběžná registrace** - Toto pole určuje, zda je povoleno více registrací. (U lékařského plánu je toto pole obvykle nastaveno na **Jedna registrace**.)

@@ -2,26 +2,19 @@
 title: Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
 description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v aplikacích Finance and Operations.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720729"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380133"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
 
@@ -44,8 +37,7 @@ Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždic
 
 Při pokusu o konfiguraci nové tabulky pro dvojitého zápisu se může zobrazit následující chybová zpráva. Jediným uživatelem, který může vytvořit mapu, je uživatel, který má nastaveno připojení s dvojitým zápisem.
 
-*Stavový kód odpovědi neoznačuje úspěch: 401 (Neautorizováno)*
-
+*Stavový kód odpovědi neoznačuje úspěch: 401 (Neautorizováno).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Chyba při otevření uživatelského rozhraní s dvojím zapisováním
 
@@ -61,7 +53,11 @@ Chcete-li tento problém vyřešit, přihlaste se pomocí okna InPrivate v aplik
 
 Při připojování nebo vytváření map se může objevit následující chyba:
 
-*Stavový kód odpovědi neoznačuje úspěch: 403 (tokenexchange).<br> ID relace: \<your session id\><br> ID kořenové aktivity: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Dataverse bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v aplikacích Finance and Operations a prostředí Dataverse může obě prostředí propojit. Přidávat nové mapy tabulky může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
 
@@ -75,16 +71,29 @@ K této chybě dojde, pokud propojené prostředí Dataverse není k dispozici.
 
 Chcete-li tento problém vyřešit, vytvořte lístek pro tým pro integraci dat. Připojte sledování sítě, aby mohl tým pro integraci dat označit mapy jako **nespuštěný** na back endu.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Chyba při pokusu o spuštění mapování tabulky
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Chyby při pokusu o spuštění mapování tabulky
 
-Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit chybová zpráva podobná následující:
+### <a name="unable-to-complete-initial-data-sync"></a>Počáteční synchronizaci dat nelze dokončit
+
+Při pokusu o spuštění počáteční synchronizace dat se může zobrazit následující chybová zpráva:
 
 *Nelze dokončit počáteční synchronizaci dat. Chyba: selhání dvojitého zápisu – registrace modulu plug-in se nezdařila: nelze vytvořit metadata vyhledávání dvojitého zápisu. Odkaz na objekt chyby není nastaven na instanci objektu.*
 
-Oprava této chyby závisí na příčině chyby:
+Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit tato chybová zpráva. Oprava závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
 + Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Chyba nesouladu verzí a inovace řešení pro dvojí zápis
+
+Při pokusu o zastavení mapování tabulky se mohou zobrazit následující chybové zprávy:
+
++ *Skupiny zákazníků (msdyn_customergroups): Selhání duálního zápisu - řešení Dynamics 365 for Sales „Dynamics365Company“ má nesoulad verzí. Verze: '2.0.2.10' Požadovaná verze: '2.0.133'*
++ *Řešení Dynamics 365 for Sales „Dynamics365FinanceExtended“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.227'*
++ *Řešení Dynamics 365 for Sales „Dynamics365FinanceAndOperationsCommon“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.133'*
++ *Řešení Dynamics 365 for Sales „CurrencyExchangeRates“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.133'*
++ *Řešení Dynamics 365 for Sales „Dynamics365SupplyChainExtended“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.227'*
+
+Chcete-li problémy vyřešit, aktualizujte řešení dvojitého zápisu v Dataverse. Nezapomeňte upgradovat na nejnovější řešení, které odpovídá požadované verzi řešení.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

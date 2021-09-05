@@ -1,8 +1,8 @@
 ---
 title: Zpracování způsobilosti k registraci
-description: Tento článek vysvětluje, jak spustit proces nároku na přihlášení.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Toto téma vysvětluje, jak spustit proces nároku na přihlášení.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989b493af6e8386f9517737c582150470a4e226d161e63c3f7a6088dbd3df903
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782065"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417477"
 ---
 # <a name="process-enrollment-eligibility"></a>Zpracování způsobilosti k registraci
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek vysvětluje, jak spustit proces nároku na přihlášení.
+Toto téma vysvětluje, jak spustit proces nároku na přihlášení.
 
 1. V pracovním prostoru **Správa výhod** vyberte v části **Zpracování** možnost **Zpracování nároku na registraci**.
 
@@ -53,11 +53,11 @@ Tento článek vysvětluje, jak spustit proces nároku na přihlášení.
 
 ## <a name="view-process-results"></a>Zobrazit výsledky procesu
 
-Tento článek vysvětluje, jak zobrazit výsledky procesu nároku.
+Toto téma vysvětluje, jak zobrazit výsledky procesu nároku.
 
 1.  V pracovním prostoru **Správa výhod** vyberte v části **Zpracování** možnost **Zpracovat výsledky**.
 
-2.  Ve formuláři **Zpracovat výsledky** se specifikují následující pole:
+2.  Ve stránce **Zpracovat výsledky** jsou zadána následující pole:
 
    | Pole | popis |
    | --- | --- |

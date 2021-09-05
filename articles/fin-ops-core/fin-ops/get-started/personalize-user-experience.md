@@ -2,7 +2,7 @@
 title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344367"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -169,7 +169,7 @@ Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s č
 Jedinou jedinečnou možností personalizace, která je k dispozici na řídicím panelu, je možnost přidat dlaždice. 
 
 - Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání dlaždic, seznamů a odkazů do pracovního prostoru](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
-- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat aplikaci**. V dialogovém okně vyberte, zda chcete přidat dlaždici pro nový pracovní prostor nebo dlaždici, která má obsah z Power Apps nebo webu. Poté podle pokynů nakonfigurujte vybranou možnost. V dolní části řídicího panelu se vytvoří nová dlaždice. 
+- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat aplikaci**. V dialogovém okně vyberte, zda chcete přidat dlaždici pro nový pracovní prostor nebo dlaždici, která má obsah z Power Apps nebo webu. Poté podle pokynů nakonfigurujte vybranou možnost. V dolní části řídicího panelu se vytvoří nová dlaždice. Další informace o tom, jak tyto vložené aplikace přidávat, upravovat, mazat a sdílet, najdete v tématu [Vložit aplikace plátna z Power Apps](embed-power-apps.md) a [Vložit aplikace třetích stran](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Sdílení individuálních nastavení
 

@@ -2,7 +2,7 @@
 title: Operace vyhledání zásob v POS
 description: Toto téma popisuje, jak použít operaci vyhledávání zásob v pokladním místě (POS) Dynamics 365 Commerce pro zobrazení dostupnosti skladových zásob produktů v obchodech a skladech.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: b697583f2ebf9950ad805d4f415dafb2c891de8052d4a47563b048059475030f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343829"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Operace vyhledání zásob v POS
 
@@ -52,13 +52,15 @@ Zobrazení seznamu umístění zahrnuje všechny obchody a sklady, které jsou k
 
 Na panelu aplikací POS jsou k dispozici následující akce:
 
-- **Seřadit** - Tato akce umožňuje uživateli POS seřadit data v zobrazení seznamu na základě různých kritérií. Třídění podle umístění je výchozí možností řazení. 
-  - **Geografická poloha** (od nejbližšího místa po nejvzdálenější místo ve srovnání s aktuálním obchodem)
-  - **Název** (ve vzestupném nebo sestupném pořadí)
-  - **Číslo ve skladu** (ve vzestupném nebo sestupném pořadí)
-  - **Zásoby** (v sestupném pořadí)
-  - **Rezervované** (v sestupném pořadí)
-  - **Objednané** (v sestupném pořadí)
+- **Seřadit** - Tato akce umožňuje uživateli POS seřadit data v zobrazení seznamu na základě různých kritérií. Třídění podle umístění je výchozí možností řazení.
+
+    - **Geografická poloha** (od nejbližšího místa po nejvzdálenější místo na základě vzdálenosti k aktuálnímu obchodu)
+    - **Název** (ve vzestupném nebo sestupném pořadí)
+    - **Číslo ve skladu** (ve vzestupném nebo sestupném pořadí)
+    - **Zásoby** (v sestupném pořadí)
+    - **Rezervované** (v sestupném pořadí)
+    - **Objednané** (v sestupném pořadí)
+
 - **Filtr** - Tato akce umožňuje uživateli POS prohlížet filtrovaná data pro konkrétní umístění.
 - **Zobrazit dostupnost obchodu** - Tato akce umožňuje uživateli POS zobrazit dostupné množství (ATP) pro produkt ve vybraném obchodě.
 - **Zobrazit umístění obchodu** - Tato akce otevře samostatnou stránku pro zobrazení zobrazení mapy, adresy a otevírací doby vybraného obchodu.
@@ -68,9 +70,8 @@ Na panelu aplikací POS jsou k dispozici následující akce:
 - **Přidat k transakci** - Tato akce přidá produkt do košíku a přesměruje uživatele na obrazovku transakce.
 
 > [!NOTE]
-> U řazení založeného na umístění je vzdálenost mezi místem a aktuálním úložištěm určena souřadnicemi (zeměpisná šířka a délka) definované v obchodním ústředí. U úložiště jsou informace o poloze definovány na primární adrese provozní jednotky spojené s úložištěm. U skladu, který není skladem, jsou informace o umístění definovány v adrese skladu. Pokud aktuální úložiště nemá definované souřadnice, zobrazí možnost řazení podle umístění aktuální úložiště v horní části seznamu a poté seřadí další umístění podle názvu.
-
-> [!NOTE]
+> Druh založený na umístění, který byl zaveden ve verzi Commerce verze 10.0.17, zobrazuje v horní části aktuální úložiště. U dalších umístění je vzdálenost mezi místem a aktuálním obchodem určena souřadnicemi (zeměpisná šířka a délka) definované v obchodním ústředí. U úložiště jsou informace o poloze definovány na primární adrese provozní jednotky spojené s úložištěm. U skladu, který není skladem, jsou informace o umístění definovány v adrese skladu. Před verzí 10.0.17 zobrazení seznamu vždy zobrazuje aktuální úložiště v horní části a řadí další umístění podle abecedy.
+>
 > Akce **Zobrazit dostupnost obchodu**, **Zobrazit umístění obchodu**, **Vyzvednout v obchodě** a **Odeslat produkt** nejsou k dispozici pro umístění mimo prodejnu.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Zobrazení matice vyhledávání zásob pro varianty
@@ -124,7 +125,5 @@ Ve verzi Commerce 10.0.9 a dřívější se hodnota **dostupné fyzické** v op
 [Vizuální konfigurace uživatelského rozhraní POS](pos-screen-layouts.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

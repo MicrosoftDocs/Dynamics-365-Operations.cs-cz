@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753788"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384628"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalace a připojení aplikace skladu
 
@@ -136,7 +136,7 @@ Nastavení připojení můžete importovat ze souboru nebo z QR kódu. Pro oba 
 | ConnectionName | Zadejte název nastavení připojení. Maximální délka je 20 znaků. Protože je tato hodnota jedinečným identifikátorem nastavení připojení, ujistěte se, že je v seznamu jedinečná. Pokud v zařízení již existuje připojení se stejným názvem, bude toto nastavení přepsáno z importovaného souboru. |
 | ActiveDirectoryClientAppId | Určete ID klienta, které jste si poznamenali při nastavování Azure AD v části [Vytvoření aplikaci webové služby v Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Zadejte kořenovou adresu URL aplikace Supply Chain Management. |
-| ActiveDirectoryTenant | Určete klienta Azure AD, kterého používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Určete název domény Azure AD, kterou používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-domain-name>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. Další informace o tom, jak najít název domény Azure AD najdete v části [Vyhledání důležitých ID pro uživatele](/partner-center/find-ids-and-domain-names). |
 | Společnost | Zadejte právnickou osobu v aplikaci Supply Chain Management, ke které se má aplikace připojovat. |
 | Typ připojení | (Volitelné) Určete, zda by nastavení připojení mělo používat certifikát nebo tajný klíč klienta pro připojení k prostředí. Platné hodnoty jsou *"certificate"* a *"clientsecret"*. Výchozí hodnota je *"certificate"*.<p>**Poznámka:** Tajné klíče klienta nelze importovat.</p> |
 | IsEditable | (Volitelné) Určete, zda by měl mít uživatel aplikace možnost upravit nastavení připojení. Platné hodnoty jsou *"true"* a *"false"*. Výchozí hodnota je *"true"*. |
@@ -248,7 +248,7 @@ Aplikaci můžete nakonfigurovat na zařízení ručně, aby se připojovala k 
         > [!NOTE]
         > Neukončujte tuto hodnotu lomítkem (/).
 
-    - **Klient Active Directory** – Zadejte klienta Azure AD, kterého používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Tenant Active Directory** – Zadejte název domény Azure AD, kterou používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-domain-name>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. Další informace o tom, jak najít název domény Azure AD najdete v části [Vyhledání důležitých ID pro uživatele](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Neukončujte tuto hodnotu lomítkem (/).

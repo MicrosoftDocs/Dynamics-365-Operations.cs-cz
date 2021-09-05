@@ -2,7 +2,7 @@
 title: Vložení aplikací třetích stran
 description: Toto téma popisuje způsob vložení aplikací třetích stran pro zvýšení funkčnosti produktu.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345403"
 ---
 # <a name="embed-third-party-apps"></a>Vložení aplikací třetích stran
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Mnoho zákazníků používá k provozování svého podnikání celou řadu aplikací. Některé z těchto aplikací jsou webové aplikace třetích stran, které fungují ve spojení s aplikacemi Finance and Operations. Chcete-li zajistit plynulejší uživatelské prostředí, můžete použít funkci **(Preview) Celostránkové aplikace** pro vložení těchto aplikací třetích stran přímo do aplikací Finance and Operations (za předpokladu, že aplikace třetích stran umožňují vložení). Tímto způsobem mohou uživatelé přistupovat k webům a aplikacím, které požadují, aniž by museli přepínat karty nebo okna.
+Mnoho zákazníků používá k provozování svého podnikání celou řadu aplikací. Některé z těchto aplikací jsou webové aplikace třetích stran, které fungují ve spojení s aplikacemi Finance and Operations. Chcete-li zajistit plynulejší uživatelské prostředí, můžete použít funkci **Celostránkové aplikace** pro vložení těchto aplikací třetích stran přímo do aplikací Finance and Operations (za předpokladu, že aplikace třetích stran umožňují vložení). Tímto způsobem mohou uživatelé přistupovat k webům a aplikacím, které požadují, aniž by museli přepínat karty nebo okna.
 
-Než budete moci do produktu vložit aplikace třetích stran, musíte zapnout funkci **(Preview) Celostránkové aplikace** funkce ve Správě funkcí. Potom můžete použít jednu z následujících metod k vložení aplikace nebo webu třetí strany. Tyto metody jsou analogické s metodami, které se používají k vložení aplikací plátna z Microsoft Power Apps do aplikací Finance and Operations.
+Než budete moci do produktu vložit aplikace třetích stran, musíte zapnout funkci **Celostránkové aplikace** funkce ve Správě funkcí. Potom můžete použít jednu z následujících metod k vložení aplikace nebo webu třetí strany. Tyto metody jsou analogické s metodami, které se používají k vložení aplikací plátna z Microsoft Power Apps do aplikací Finance and Operations.
 
 - Vložte aplikaci nebo web na existující stránku jako stránku nové karty (kontingenční karta, rychlá karta, okno nebo část pracovního prostoru).
 - Vytvořte na řídicím panelu nové celostránkové prostředí pro aplikaci nebo web.
@@ -64,7 +64,7 @@ Tento postup použijte, pokud chcete doplnit existující stránku v systému o 
 Tento postup použijte, pokud aplikace, kterou chcete vložit, nesouvisí s existující stránkou nebo pokud chcete pouze celostránkové prostředí pro aplikaci uvnitř aplikace Finance and Operations.
 
 1. Otevřete řídicí panel.
-2. Vyberte a podržte (nebo klikněte pravým tlačítkem) stránku, vyberte **Přizpůsobit** a potom vyberte **Přidat stránku**.
+2. Vyberte a podržte (nebo klikněte pravým tlačítkem) na řídicím panelu, vyberte **Přizpůsobit** a potom vyberte **Přidat stránku**.
 3. V podokně **Přidat stránku** Vyberte **Web**.
 4. Konfigurace vložené aplikace:
 
@@ -82,9 +82,9 @@ Tento postup použijte, pokud aplikace, kterou chcete vložit, nesouvisí s exis
 
 Poté, co jste vložili aplikaci pomocí jedné z metod popsaných v předchozích částech, můžete chtít sdílet pohled s ostatními uživateli v systému. Chcete-li sdílet vloženou aplikaci, použijte jednu z následujících metod:
 
-- **Publikovat zobrazení (doporučeno):** Pokud byla vložená aplikace uložena do zobrazení, doporučeným a upřednostňovaným způsobem jejího sdílení je publikování pohledu uživatelům, kteří mají příslušné role zabezpečení. Poté aplikaci uvidí všichni uživatelé, kteří mají role zabezpečení, na které se cílí publikované zobrazení aplikace Finance and Operations. Další informace o tom, jak zveřejnit zobrazení, viz [Publikování zobrazení](saved-views.md#publishing-views).
+- **Publikovat zobrazení (doporučeno):** Pokud byla vložená aplikace uložena do zobrazení, doporučeným a upřednostňovaným způsobem jejího sdílení je publikování pohledu uživatelům, kteří mají -příslušné role zabezpečení v cílových právnických osobách. V takovém případě uvidí vloženou aplikaci na této stránce pouze požadovaní uživatelé. Další informace o tom, jak zveřejnit zobrazení, viz [Publikování zobrazení](saved-views.md#publishing-views).
 
-    Z řídicího panelu můžete také publikovat aplikaci, která byla vložena jako celostránkové prostředí. Na řídicím panelu vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici přidruženou k aplikaci, vyberte **Přizpůsobit** a potom vyberte **Publikovat stránku**. Momentálně lze publikovat pouze v rolích zabezpečení. Schopnost publikovat právnickým osobám však bude přidána dříve, než bude funkce obecně dostupná.
+    Z řídicího panelu můžete také publikovat aplikaci, která byla vložena jako celostránkové prostředí. Na řídicím panelu vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici přidruženou k aplikaci, vyberte **Přizpůsobit** a potom vyberte **Publikovat stránku**. Prostředí, které se podobá prostředí *Zobrazení publikování* je zobrazeno a můžete vybrat role zabezpečení, do kterých chcete publikovat. V aktualizaci 10.0.21 nebo novější, pokud je funkce **Vylepšená podpora právnických osob pro uložená zobrazení** zapnutá, můžete aplikaci také publikovat na požadované právnické osoby.
 
 - **Kopírovat přizpůsobení:** Pro stránky, které nepodporují zobrazení (například dialogová okna nebo pracovní prostory), nebo pro celostránkové aplikace můžete zkopírovat přizpůsobení příslušným uživatelům. Další informace viz [Sdílení přizpůsobení](personalize-user-experience.md#sharing-personalizations).
 

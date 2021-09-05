@@ -2,7 +2,7 @@
 title: Typ cílového umístění elektronického výkaznictví e-mailu
 description: Toto téma vysvětluje, jak nakonfigurovat cíl e-mailu pro každou SLOŽKU nebo SOUBOR ve formátu elektronického výkaznictví (ER).
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769312"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343853"
 ---
 # <a name="email-er-destination-type"></a>Typ cílového umístění elektronického výkaznictví e-mailu
 
@@ -53,9 +53,22 @@ Chcete -li odeslat jeden nebo více výstupních souborů e -mailem, postupujte 
 
 ## <a name="configure-an-email-destination"></a>Konfigurace e-mailového cíle
 
-Můžete zadat odesílatele a příjemce e-mailů a upravit předmět a text e-mailové zprávy. Můžete nastavit konstantní text pro předmět a tělo e-mailu nebo můžete použít [vzorce](er-formula-language.md) elektronického výkaznictví k dynamickému vytvoření textů e-mailů.
+### <a name="email-content"></a>Obsah e-mailu
 
-Ve výchozím nastavení je e-mail odeslán jménem aktuálního uživatele. Chcete-li zadat jiného odesílatele e -mailu, musíte nakonfigurovat pole **Odesílatel**.
+Předmět a text e-mailové zprávy můžete upravit.
+
+Do pole **Předmět** zadejte text předmětu e-mailu, který by se měl objevit v poli předmětu elektronické zprávy generované za běhu. Do pole **Text** zadejte text e-mailu, který by se měl objevit v poli text elektronické zprávy generované za běhu. Můžete nastavit konstantní text pro předmět a tělo e-mailu nebo můžete použít [vzorce](er-formula-language.md) elektronického výkaznictví k dynamickému vytvoření textů e-mailů za běhu. Konfigurovaný vzorec musí vrátit hodnotu typu [Řetězec](er-formula-supported-data-types-primitive.md#string).
+
+Text vašeho e-mailu je složeno ve formátu TEXT nebo HTML v závislosti na e-mailovém klientovi. Můžete použít libovolné rozvržení, styl a značky, které HTML a vložené šablony stylů CSS umožňují.
+
+> [!NOTE]
+> E-mailoví klienti mají omezení rozložení a stylu, která mohou vyžadovat úpravy HTML a CSS stylů, které používáte pro tělo zprávy. Doporučujeme vám seznámit se s osvědčenými postupy vytváření HTML, které budou podporovat nejoblíbenější e-mailoví klienti.
+>
+> Použijte správné kódování k implementaci návratu na začátek řádku v závislosti na formátování těla. Další informace najdete v definici datového typu [Řetězec](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-mailové adresy
+
+Můžete zadat odesílatele e-mailu a příjemce e-mailu. Ve výchozím nastavení je e-mail odeslán jménem aktuálního uživatele. Chcete-li zadat jiného odesílatele e -mailu, musíte nakonfigurovat pole **Odesílatel**.
 
 > [!NOTE]
 > Když je nakonfigurován cíl e-mailu, pole **Odesílatel** je viditelné pouze uživatelům, kteří mají bezpečnostní oprávnění `ERFormatDestinationSenderEmailConfigure` **Nakonfigurujte e-mailovou adresu odesílatele pro cíle formátu ER**.

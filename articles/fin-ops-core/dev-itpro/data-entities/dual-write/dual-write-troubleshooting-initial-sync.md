@@ -4,24 +4,17 @@ description: Toto téma obsahuje informace o řešení potíží, které vám po
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736367"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416974"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Poradce při potížích s počáteční synchronizací
 
@@ -46,7 +39,7 @@ Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Poku
 
 Při pokusu o spuštění mapování a počáteční synchronizace se může zobrazit následující chybová zpráva:
 
-*(\[Chybný požadavek\] Vzdálený server vrátil chybu: (400) chybný požadavek.), při exportu AX byla zjištěna chyba*
+*(\[Chybný požadavek\] Vzdálený server vrátil chybu: (400) chybný požadavek.), při exportu AX byla zjištěna chyba.*
 
 Následuje příklad úplné chybové zprávy.
 
@@ -198,7 +191,7 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
 
         ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId.](media/cust_selfref6.png)
 
-    2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly v aplikaci Finance and Operations aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly v aplikaci Finance and Operations aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [POZNÁMKA] Pokud tlačítko filtru není k dispozici, vytvořte podpůrný ticket a požádejte tým pro integraci dat o povolení filtrování u klienta.
 
@@ -210,5 +203,36 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
 
 8. V aplikaci Finance and Operations opět zapněte sledování změn pro tabulku **Customers V3**.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Počáteční selhání synchronizace na mapách s více než 10 vyhledávacími poli
+
+Může se zobrazit následující chybová zpráva při pokusu o spuštění počátečních selhání synchronizace v mapování **Zákazníci V3 - Účty**, **Prodejní objednávky** nebo jakékoliv mapě s více než 10 vyhledávacími poli:
+
+*CRMExport: Spuštění balíčku dokončeno. Chyba Popis 5 Pokusy o získání dat z https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=numbern account, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
+
+Z důvodu omezení vyhledávání v dotazu se počáteční synchronizace nezdaří, pokud mapování entit obsahuje více než 10 vyhledávání. Další informace viz [Načíst související záznamy tabulky pomocí dotazu](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Chcete-li opravit problém, postupujte následovně:
+
+1. Odeberte volitelná vyhledávací pole z mapy entit se dvěma zápisy, aby byl počet vyhledávání 10 nebo méně.
+2. Uložte mapu a proveďte počáteční synchronizaci.
+3. Když je počáteční synchronizace pro první krok úspěšná, přidejte zbývající vyhledávací pole a odeberte vyhledávací pole, která jste synchronizovali v prvním kroku. Ujistěte se, že počet vyhledávacích polí je 10 nebo méně. Uložte mapu a spusťte počáteční synchronizaci.
+4. Opakujte tyto kroky, dokud nebudou synchronizována všechna vyhledávací pole.
+5. Přidejte všechna vyhledávací pole zpět na mapu, mapu uložte a spusťte pomocí **Přeskočit počáteční synchronizaci**.
+
+Tento proces povoluje mapu pro režim živé synchronizace.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Známý problém při počáteční synchronizaci poštovních adres a elektronických elektronických adres
+
+Při pokusu o spuštění počáteční synchronizace poštovních adres strany a elektronických elektronických adres strany se může zobrazit následující chybová zpráva:
+
+*Číslo strany nebylo nalezeno v Dataverse.*
+
+Je nastaven rozsah **DirPartyCDSEntity** v aplikaci Finance and Operations, který filtruje strany typu **Osoba** a **Organizace**. V důsledku toho počáteční synchronizace mapování **Strany CDS - msdyn_parties** nesynchronizuje strany jiných typů, včetně **Právnická osoba** a **Provozní jednotka**. Když se spustí počáteční synchronizace pro **Poštovní adresy stran CDS (msdyn_partypostaladdresses)** nebo **Kontakty stran V3 (msdyn_partyelectronicaddresses)**, může se zobrazit chyba.
+
+Pracujeme na opravě, která by odstranila rozsah typů stran na entitě Finance and Operations, aby se strany všech typů mohly synchronizovat na Dataverse úspěšně.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Existují nějaké problémy s výkonem při spuštění počáteční synchronizace pro data zákazníků nebo kontaktů?
+
+Pokud jste spustili počáteční synchronizaci pro data **Odběratel** a máte mapy **Odběratel** spuštěné poté se spustí počáteční synchronizace pro data **Kontakty**, mohou nastat problémy s výkonem při vkládání a aktualizacích tabulek **LogisticsPostalAddress** a **LogisticsElectronicAddress** pro adresy **Kontaktů**. Jsou sledovány stejné globální poštovní adresy a tabulky elektronických adres pro **CustCustomerV3Entity** a **VendVendorV2Entity** a duální zápis se pokouší vytvořit více dotazů pro zápis dat na druhou stranu. Pokud jste již spustili počáteční synchronizaci pro **Odběratele**, zastavte odpovídající mapu při spuštění počáteční synchronizace pro data **Kontakty**. Udělejte to samé pro data **Dodavatelů**. Po dokončení počáteční synchronizace můžete spustit všechny mapy přeskočením počáteční synchronizace.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

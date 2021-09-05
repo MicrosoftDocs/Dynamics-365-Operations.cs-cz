@@ -2,7 +2,7 @@
 title: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742433"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416472"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
@@ -128,7 +128,7 @@ Chcete-li spustit úplnou synchronizaci dat v Commerce, postupujte takto v cent
 Chcete-li provést zkušební transakce na webu, můžete použít následující testovací kreditní kartu:
 
 - **Číslo karty:** 4111-1111-1111-1111
-- **Datum konce platnosti:** 10/20
+- **Datum konce platnosti:** 10/30
 - **Ověřovací hodnota platební karty (CVV):** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ Chcete-li provést zkušební transakce na webu, můžete použít následujíc�
 Po dokončení postupu zřizování a konfigurace můžete začít používat prostředí vyhodnocení. Pomocí adresy URL nástroje pro tvorbu webu Commerce můžete přejít na práci s vytvářením. Pomocí adresy URL webu Commerce přejděte do prostředí webu zákazníka maloobchodu.
 
 Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení Commerce, najdete informace v části [konfigurace volitelných funkcí prostředí vyhodnocení Commerce](cpe-optional-features.md).
+
+> [!NOTE]
+> Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure Active Directory (Azure AD) business-to-consumer (B2C) pro demonstrační účely. Konfiguace vlastního klienta Azure AD B2C není potřeba pro prostředí vyhodnocení. Pokud však konfigurujete zkušební prostředí tak, aby používalo vašeho vlastního klienta Azure AD B2C, nezapomeňte přidat ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako URL pro odpověď v aplikaci Azure AD B2C přes Azure Portal.
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -159,6 +162,8 @@ Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

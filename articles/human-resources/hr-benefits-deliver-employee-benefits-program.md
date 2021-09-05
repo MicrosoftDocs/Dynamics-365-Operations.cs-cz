@@ -1,8 +1,8 @@
 ---
 title: Využívání programu zaměstnaneckých výhod
-description: Tento článek uvádí, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: eba305a6a5e1b32636e17bba090047d6167ecebd4f0fe49b17b5267c71b98773
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3339464fb459461b1ad399868d9b1245263cef9
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757008"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416271"
 ---
 # <a name="deliver-employee-benefits-program"></a>Využívání programu zaměstnaneckých výhod
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek uvádí, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.
+Toto téma vysvětluje, jak vytvořit prvky zaměstnanecké výhody, které budou použity při vytváření nových zaměstnaneckých výhod. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro správce kompenzací a zaměstnaneckých výhod.
 
 
 ## <a name="create-benefit-elements"></a>Vytvoření prvků zaměstnanecké výhody

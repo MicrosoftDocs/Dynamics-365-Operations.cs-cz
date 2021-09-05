@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 757c8b9f2b57374e4b6d35c9be95b9e1dfe7f249c9ea903009cc26e16711bead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713797"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344707"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Přehled upgradu knihy odpisů
 
@@ -42,19 +42,19 @@ Možnost 1:  **číselné řady definované systémem** – výchozí možnost p
     -   Název konstanty: **NumberSequenceDefaultParameterPrefix**
     -   Výchozí hodnota: "FADBUpgr"
 -   **Délka alfanumerické řady** – délka alfanumerického segmentu číselné řady.
-    -   Název konstanty: **NumberSequenceDefaultParameterAlpanumericLength **
+    -   Název konstanty: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Výchozí hodnota: 9
 -   **Počáteční číslo** – první číslo pro použití v číselné řadě.
-    -   Název konstanty: **NumberSequenceDefaultParameterStartNumber  **
+    -   Název konstanty: **NumberSequenceDefaultParameterStartNumber**
     -   Výchozí hodnota: 1
 
 Možnost 2: **Existující uživatelem definovaná číselná řada** – tato možnost vám umožní definovat číselnou řadu, která má být použita pro upgrade. Zvažte použití této možnosti, pokud potřebujete pokročilou konfiguraci číselné řady. Pokud chcete použít číselnou řadu, je nutné změnit třídu pro upgrade ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans pomocí následujících informací
 
 -   **Kód číselné řady** – kód číselné řady.
-    -   Název konstanty: **NumberSequenceExistingCode **
+    -   Název konstanty: **NumberSequenceExistingCode**
     -   Výchozí hodnota: žádná výchozí hodnota, musíte aktualizovat na kód číselné řady.
 -   **Sdílená číselná řada** – logická hodnota k identifikaci v rámci číselné řady. Pro sdílené číselné řady ve všech společnostech použijte hodnotu true a pro rozsah specifický pro společnost hodnotu false. Použijete-li false, číselná řada se zadaným názvem musí existovat v každé společnosti, která obsahuje transakce knihy odpisů. Sdílené číselné řady existují v každém oddílu obsahujícím transakce knihy odpisů.
-    -   Název konstanty: **NumberSequenceExistingIsShared **
+    -   Název konstanty: **NumberSequenceExistingIsShared**
     -   Výchozí hodnota: true
 
 Parametry jsou umístěny na začátku třídy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 

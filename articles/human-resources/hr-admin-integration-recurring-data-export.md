@@ -1,8 +1,8 @@
 ---
 title: Vytvoření aplikace pro export opakujících se dat
-description: Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma popisuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources podle opakujícího se plánu.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cef9e7f78646a4a5794eb14a9f1ad355768480644504c548afbb32e23fff4cd5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ce9fe4e77fa968463052e037ca767ed38e72796
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744863"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414755"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Vytvoření aplikace pro export opakujících se dat
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu. Výukový kurz využívá pro export dat rozhraní API REST balíčku DMF aplikace Human Resources. Po exportu dat uloží logic app exportovaný balíček dat do složky Microsoft OneDrive pro firmy.
+Toto téma popisuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources podle opakujícího se plánu. Výukový kurz využívá pro export dat rozhraní API REST balíčku DMF aplikace Human Resources. Po exportu dat uloží logic app exportovaný balíček dat do složky Microsoft OneDrive pro firmy.
 
 ## <a name="business-scenario"></a>Scénáře obchodu
 

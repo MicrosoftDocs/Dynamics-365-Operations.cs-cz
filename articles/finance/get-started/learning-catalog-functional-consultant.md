@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763087"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402366"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Katalog kurzů pro funkční konzultanty Dynamics 365 Finance
 
@@ -34,6 +34,7 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 | [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 7 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
 | [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
+| [Začínáme s aplikací Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | S Dynamics 365 Intelligent Order Management zákazníci mohou řídit orchestraci objednávek až do jejich splnění. Tyto funkce umožňují organizacím organizovat toky objednávek na různých platformách a aplikacích. | Bezplatný online výukový modul pro školení vlastním tempem | 30 min |
 | [Před zakoupením](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup. | Dokumentace | |
 | [Plán vydání](/dynamics365/release-plans/) | Seznamte se s nejnovějšími funkcemi a vylepšeními v aplikaci Dynamics 365. | Dokumentace | |
 
@@ -41,6 +42,7 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 
 | Obsah  | popis | Formát  | Délka    |
 |----------|-------------|---------|-----------|
+| [Použití řešení Success by Design for Dynamics 365](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 je navržen tak, aby pomohl zákazníkům a partnerům dosáhnout úspěšného nasazení řešení Dynamics 365. K poskytování této služby by architekti řešení měli použít Success by Design. Tento studijní program diskutuje koncepty Success by Design. | Bezplatný online výukový modul pro školení vlastním tempem | 12 hodin |
 | [Pomocí Lifecycle Services navrhněte a naplánujte implementaci aplikací Finance and Operations](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) je pracovní prostor spolupráce, který zákazníci a jejich partneři používají ke správě projektů aplikací Finance and Operations z předběžného prodeje do fáze implementace a nakonec do provozního prostředí. Poskytuje kontrolní seznamy a nástroje, které vám pomohou spravovat projekt, včetně metodologií předběžného sestavení, které pomáhají při implementaci a pravidelně aktualizovaných službách. | Libovolná online školení vlastním tempem | 2 hodin |
 | [Konfigurace organizace v aplikacích Finance and Operations](/learn/paths/configure-your-organization-finance-ops/) | Jako funkční konzultant, který pracuje s aplikacemi Finance and Operations, musíte chápat, jak nastavit organizaci pro daného zákazníka. Tato vzdělávací cesta zobrazuje mimo jiné úkoly, jak nastavit právnické osoby, implementovat nastavení zabezpečení, přizpůsobit uživatelské rozhraní pro uživatele, navrhovat a vytvářet mobilní aplikace a implementovat společné integrace. | Libovolná online školení vlastním tempem | 12 hodin |
 | [Migrace dat a zahájení práce s aplikacemi Finance and Operations](/learn/paths/migrate-data-go-live-finance-operations/) | Jako funkční konzultant musíte chápat, jak připravit data odběratele na migraci, pracovat se správou dat a provádět testování přijetí uživatele s aplikacemi Finance and Operations. | Libovolná online školení vlastním tempem | 4 hodin |
@@ -102,6 +104,5 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, sdružení konzultantů Financials Functional sjednocuje globální finance a provozy a automatizuje úkoly a workflowy, zjednodušuje objednávky, prodej, fakturaci a výkaznictví pro zákazníky. | Certifikace; náklady se liší podle oblasti. |
 | [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. |
 | [Zkuška MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: nastavení a konfigurace finanční správy, správa a použití běžných procesů; implementace a správa závazků a pohledávek a správa rozpočtování a dlouhodobého majetku. | Zkouška; náklady se liší podle oblasti. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

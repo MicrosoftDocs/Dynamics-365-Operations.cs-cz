@@ -2,7 +2,7 @@
 title: Vložit aplikace plátna z Power Apps
 description: Toto téma popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
-ms.date: 04/23/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 4031be484c13136369803ad1c502c4998496143985d84835168a887bd474db0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344522"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
@@ -31,49 +31,79 @@ Další informace o začlenění aplikací plátna se dozvíte v krátkém videu
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Přidání vložené aplikace plátna Power Apps na stránku
 
-### <a name="overview"></a>Přehled
-
 Před vložením aplikace plátna z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Toto téma neobsahuje podrobný popis procesu vytváření aplikací. Pokud jsou pro vás Power Apps novinkou, přečtěte si [dokumentaci Power Apps](/powerapps/).
 
-Když jste připraveni aplikaci vložit, můžete se ke konkrétní aplikaci plátna na stránce dostat dvěma způsoby. Můžete si vybrat, který přístup lépe vyhovuje vašemu scénáři. První způsob je pomocí tlačítka **Power Apps**, které bylo přidáno do standardního podokna akcí. Aplikace, které přidáte pomocí tohoto postupu, se zobrazí jako položky na tlačítku nabídky **Power Apps**. Když vyberte jednu z těchto položek, objeví se postranní podokno obsahující vloženou aplikaci. Alternativně můžete vložit aplikaci přímo na stránce jako novou kartu, záložku s náhledem, list nebo nový oddíl v pracovním prostoru.
+Existují tři způsoby, jak vložit aplikaci plátna do aplikace Finance and Operations. Můžete použít přístup, který nejlépe odpovídá vašemu scénáři. 
+
+- Vložte aplikaci plátna do tlačítka **Power Apps** ve standardním podokně akcí stránky. Aplikace, které přidáte tímto způsobem, se zobrazí jako položky na tlačítku nabídky **Power Apps** a aplikace se otevírají v bočních podoknech. 
+- Vložte aplikaci plátna na existující stránku jako stránku nové karty (kontingenční karta, rychlá karta, okno nebo část pracovního prostoru).
+- Vytvořte na řídicím panelu nové celostránkové prostředí pro aplikaci plátna.
 
 Při konfiguraci vaší integrované aplikace plátna můžete vybrat jednoho pole, které má být odesláno jako kontext do aplikace. Tento krok umožňuje, aby aplikace reagovala na základě dat, které se aktuálně zobrazují.
 
 > [!NOTE]
-> Tento mechanismus aktuálně nemůžete použít k vložení modelem řízených aplikací.  
+> Tento mechanismus nemůžete použít k vložení modelem řízených aplikací.
 
-### <a name="details"></a>Podrobnosti
+### <a name="embedding-a-canvas-app-on-an-existing-page"></a>Vložení aplikace plátna na existující stránku
 
-Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps do webového klienta.
+Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps na existující stránku.
 
-1. Přejděte na stránku, kam chcete vložit aplikaci plátna. Bude se jednat o stránku, která obsahuje všechna data nutná k předání do aplikace jako vstup.
+1. Přejděte na stránku, kam chcete vložit aplikaci plátna. Tato stránka bude obsahovat všechna data nutná k předání do aplikace jako vstup.
 2. Otevřete podokno **Přidat aplikaci z Power Apps**:
 
-    - Klepněte na tlačítko **možnosti** a poté vyberte **Přizpůsobit tuto stránku**. V nabídce **Vložit** zvolte **Power Apps**. Nakonec vyberte oblast, kam chcete přidat aplikaci. Pokud se má vložit aplikace pod tlačítkem nabídky Power Apps, vyberte podokno akcí. Pokud se má vložit aplikace přímo na stránku, zvolte příslušnou kartu, pevnou záložku, list nebo oddíl (pokud jste v pracovním prostoru).
-    - Pokud bude do aplikace získán přístup pomocí tlačítka nabídky Power Apps, můžete rovněž kliknout na tlačítko nabídky **Power Apps** v podokně akcí a poté vybrat **Přidat aplikaci**.
+    - Pokud bude aplikace vložena přímo na stránku, vyberte **Možnosti** \> **Personalizujte tuto stránku** \> **Další** a poté proveďte jeden z těchto kroků:
 
-3. Konfigurace vložené aplikace:
+        - Pokud je zapnuta funkce **Celostránkové aplikace**, vyberte **Přidat stránku** a poté vyberte oblast, kam chcete aplikaci přidat. Chcete-li aplikaci vložit do tlačítka nabídky **Power Apps**, vyberte podokno akcí. Chcete-li vložit aplikace přímo na stránku, zvolte příslušnou kartu, pevnou záložku, list nebo oddíl (pokud jste v pracovním prostoru). Poté v podokně **Přidat aplikaci** vyberte **Power Apps**.
+        - Pokud je vypnuta funkce **Celostránkové aplikace**, vyberte **Přidat aplikaci z Power Apps** a poté vyberte oblast, kam chcete aplikaci přidat. Chcete-li aplikaci vložit do tlačítka nabídky **Power Apps**, vyberte podokno akcí. Chcete-li vložit aplikace přímo na stránku, zvolte příslušnou kartu, pevnou záložku, list nebo oddíl (pokud jste v pracovním prostoru).
 
-    - Pole **Název** označuje text zobrazený pro tlačítko nebo kartu, které budou obsahovat integrovanou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
-    - Pole **ID aplikace** označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na webu [make.powerapps.com](https://make.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
-    - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations naleznete v částí dále v tomto tématu s názvem [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
-        - Počínaje verzí 10.0.19 bude aktuální právnická osoba také předána jako kontext do aplikace plátna prostřednictvím parametru URL **cmp**. To nebude mít žádný dopad na aplikaci cílového plátna, dokud tato aplikace tyto informace nevyužije. 
-    - Zvolte **velikost aplikace** odpovídající typu aplikace, kterou vkládáte. Vyberte **Tenký** pro aplikace vytvořené pro mobilní zařízení a **Široký** pro aplikace vytvořené pro tablety. To zajišťuje, že je pro integrovanou aplikaci vyhrazeno dostatečné množství místa.
-    - Pevná záložka **Právnické osoby** poskytuje možnost zvolit, pro jaké právnické osoby je aplikace dostupná. Výchozí nastavení je učinit aplikaci přístupnou všem právnickým osobám. Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md). 
+    - Pokud bude do aplikace získán přístup pomocí tlačítka nabídky **Power Apps**, můžete vybrat tlačítko nabídky **Power Apps** v podokně akcí a poté vybrat **Přidat aplikaci**.
 
-4. Po potvrzení správnosti konfigurace klepněte na tlačítko **Vložit** pro vložení PowerApp na stránku. Budete vyzváni k obnovení prohlížeče, aby se zobrazila integrovaná aplikace.
+3. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto tématu.
+4. Poté, co potvrdíte, že je konfigurace správná, vyberte **Vložit**.
+
+    - Pokud je funkce **Uložená zobrazení** vypnutá, budete vyzváni k obnovení prohlížeče, aby se zobrazila vložená aplikace.
+    - Pokud je funkce **Uložená zobrazení** zapnutá, musíte zobrazení uložit, aby změna trvala.
+
+### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Vložení apliace plátna jako celostránkového prostředí z řídicího panelu
+
+Možná chcete vložit aplikaci plátna z řídicího panelu, pokud aplikace nesouvisí s existující stránkou nebo pokud pouze chcete, aby byla aplikace celostránkovým prostředím uvnitř aplikace Finance and Operations.
+
+> [!NOTE]
+> Chcete-li tuto možnost zpřístupnit, musíte zapnout funkci **Celostránkové aplikace** ve správě funkcí. 
+
+1. Otevřete řídicí panel.
+2. Vyberte a podržte (nebo klikněte pravým tlačítkem) stránku, vyberte **Přizpůsobit** a potom vyberte **Přidat stránku**.
+3. V podokně **Přidat stránku** Vyberte **Power Apps**.
+4. Konfigurace vložené aplikace. Více informací naleznete v části [Konfigurace aplikace plátna](#configuring-a-canvas-app) v dále v tomto tématu.
+5. Vyberte **Uložit** pro přidání aplikace na řídicí panel jako nové dlaždice.
+6. Vyberte novou dlaždici na řídicím panelu a potvrďte, že se aplikace plátna zobrazí podle očekávání.
+
+### <a name="configuring-a-canvas-app"></a>Konfigurace aplikace plátna
+
+Když vložíte aplikaci plátna, musíte nastavit následující parametry:
+
+- **Název** – Zadejte text, který by se měl zobrazit pro tlačítko nebo kartu, která bude obsahovat vloženou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
+- **ID aplikace** - označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na webu [make.powerapps.com](https://make.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
+- **Vstupní kontext pro aplikaci** - můžete volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations naleznete v částí dále v tomto tématu s názvem [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
+
+    Počínaje verzí 10.0.19 je aktuální právnická osoba také předána jako kontext do aplikace plátna prostřednictvím parametru URL **cmp**. Toto chování neovlivní cílovou aplikaci plátna, dokud tato aplikace tyto informace nepoužije.
+
+- **Velikost aplikace** - vyberte typ aplikace, kterou vkládáte. Vyberte **Tenký** pro aplikace vytvořené pro mobilní zařízení nebo **Široký** pro aplikace vytvořené pro tablety. Tento parametr zajišťuje, že je pro vloženou aplikaci vyhrazeno dostatečné množství místa.
+- **Právnické osoby** - Můžete vybrat právnické osoby, pro které by měla být aplikace k dispozici. Ve výchozím nastavení je aplikace k dispozici pro všechny právnické osoby. Tato možnost je k dispozici pouze v případě, že vložíte přímo na existující stránku a funkce **[Uložená zobrazení](saved-views.md)** je vypnutá.
 
 ## <a name="sharing-an-embedded-app"></a>Sdílení integrované aplikace
 
-Po vložení aplikace plátna na stránku a ověření, že pracuje správně v jakémkoli kontextu dat předaném ze stránky můžete sdílet tuto vloženou aplikaci s ostatními uživateli v systému. Chcete-li sdílet vloženou aplikaci plátna, postupujte takto.
+Po vložení aplikace plátna na stránku a ověření, že pracuje správně, můžete sdílet tuto vloženou aplikaci s ostatními uživateli v systému. Chcete-li sdílet vloženou aplikaci plátna, postupujte takto.
 
-1. [Sdílejte aplikaci plátna](/powerapps/maker/canvas-apps/share-app) s příslušnými uživateli, aby měli přístup k aplikaci v Power Apps. 
+1. [Sdílejte aplikaci plátna v Power Apps](/powerapps/maker/canvas-apps/share-app) s příslušnými uživateli, aby měli přístup k aplikaci přímo v Power Apps.
+2. Sdílejte personalizace, které jsou přidružené k integrované aplikaci, s požadovanými uživateli. Můžete použít některý z následujících způsobů.
 
-2. Ujistěte se, že cíloví uživatelé mají příslušná přizpůsobení, aby se vložená aplikace zobrazila, když tito uživatelé zobrazí stránku. Můžete použít některý z následujících způsobů.
+    - **Publikovat zobrazení (doporučeno):** Pokud je funkce **[Uložená zobrazení](saved-views.md)** zapnutá, doporučeným a upřednostňovaným přístupem je vytvořit zobrazení, které obsahuje vloženou aplikaci plátna, a poté toto zobrazení publikovat požadovaným uživatelům. Tento způsob zajišťuje, že aplikaci plátna na stránce uvidí všichni uživatelé, kteří mají role zabezpečení, na které se cílí publikované zobrazení.
 
-    - Doporučeno: Použijte funkci [Uložená zobrazení](saved-views.md) pro vytvoření a publikování zobrazení, které obsahuje vloženou aplikaci. Tento způsob zajišťuje, že aplikaci uvidí všichni uživatelé, kteří mají role zabezpečení, na které se cílí publikované zobrazení aplikace Finance and Operations. 
-    - Pokud nemáte zapnutou funkci Uložená zobrazení, můžete nechat správce systému odeslat personalizaci, která zahrnuje vloženou aplikaci všem uživatelům nebo podmnožině uživatelů. Případně můžete exportovat přizpůsobení své stránky a odeslat je jednomu nebo více uživatelům. Každý z těchto uživatelů pak může importovat personalizace. Panel nástrojů individuálního nastavení obsahuje akce, které vám umožní exportovat a importovat individuální nastavení. 
-    
+        Z řídicího panelu můžete také publikovat aplikaci plátna, která byla vložena jako celostránkové prostředí. Na řídicím panelu vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici přidruženou k aplikaci, vyberte **Přizpůsobit** a potom vyberte **Publikovat stránku**. Prostředí, které se podobá prostředí *Zobrazení publikování* je zobrazeno a můžete vybrat role zabezpečení, do kterých chcete publikovat. V aktualizaci 10.0.21 nebo novější, pokud je funkce **Vylepšená podpora právnických osob pro uložená zobrazení** zapnutá, můžete aplikaci také publikovat na požadované právnické osoby.
+
+    - Pokud je funkce **Uložená zobrazení** vypnutá, správce systému může poskytnout přizpůsobení, které zahrnuje aplikaci plátna, příslušné sadě uživatelů prostřednictvím stránky **Personalizace**. Případně můžete exportovat přizpůsobení své stránky a odeslat je jednomu nebo více uživatelům. Každý z těchto uživatelů pak může importovat personalizace. Panel nástrojů individuálního nastavení obsahuje tlačítka, které vám umožní exportovat a importovat individuální nastavení.
+
 > [!NOTE]
 > Pokud byla aplikace plátna sdílena s externími uživateli, nemohou tito uživatelé použít vloženou aplikaci uvnitř aplikace Finance and Operations. Mohou však přistupovat k aplikaci přímo uvnitř Power Apps. Externí uživatelé zahrnují hosty a uživatele, kteří nepatří do Microsoft 365 Azure Directory, kde je aplikace Finance and Operations nasazena.
 
@@ -103,16 +133,18 @@ Následovně můžete upravit konfiguraci vložených aplikací:
 
 1. Přejděte do podokna **Upravit aplikaci**.
 
-    - Je-li vložená aplikace otevírána přes tlačítko nabídky Power Apps, klikněte pravým tlačítkem myši na tlačítko Power Apps a vyberte **Přizpůsobit**. Vyberte aplikaci, kterou chcete konfigurovat z rozevírací nabídky **Zvolit aplikaci**.
+    - Je-li vložená aplikace otevírána přes tlačítko nabídky Power Apps, vyberte a podržte (případně klikněte pravým tlačítkem myši) tlačítko Power Apps a vyberte **Přizpůsobit**. Vyberte aplikaci, kterou chcete konfigurovat z rozevírací nabídky **Zvolit aplikaci**.
     - Pokud se vložená aplikace zobrazí přímo na stránce, vyberte **Možnosti** a potom **Přizpůsobit tuto stránku**. S použitím nástroje **Vybrat** klikněte na integrovanou aplikaci.
+    - Pokud byla integrovaná aplikace přidána z řídicího panelu, otevřete řídicí panel, vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici, která je přidružena k aplikaci plátna, vyberte **Přizpůsobit** a poté vyberte **Upravit stránku**.
 
 2. Proveďte potřebné změny konfigurace aplikace a klikněte na tlačítko **Uložit**.
 
 ## <a name="removing-an-app"></a>Odebírání aplikace
 
-Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji odebrat v případě potřeby:
+Poté, co byla vložena aplikace na stránku, existuje několik způsobů, jak ji odebrat v případě potřeby:
 
 - Přejděte do podokna **Upravit aplikaci** podle pokynů v části [Úpravy vložené aplikace](#editing-an-embedded-app) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené aplikaci, kterou chcete odebrat, a klepněte na tlačítko **Odstranit**.
+- Pokud byla integrovaná aplikace přidána z řídicího panelu, otevřete řídicí panel, vyberte a podržte (nebo klikněte pravým tlačítkem) dlaždici, která je přidružena k aplikaci plátna, vyberte **Přizpůsobit** a poté vyberte **Odebrat stránku**. 
 - Vzhledem k tomu, že vložená aplikace je uložena jako údaj o individuálním nastavení, clearing přizpůsobení stránky rovněž odstraní všechny aplikace vložené na této stránce. Poznámka: zrušení zaškrtnutí přizpůsobení stránky je trvalé a nelze je vrátit zpět. Chcete-li odebrat vaše individuální nastavení na stránce, vyberte **Možnosti** a klikněte na **Přizpůsobit tuto stránku** a nakonec na **Vymazat**. Po aktualizaci prohlížeče budou odebrána všechna předchozí individuální nastavení pro tuto stránku. Další informace o optimalizaci stránek pomocí individuálního nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Dodatek
@@ -120,7 +152,6 @@ Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji ode
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Vývojář] Modelování aplikace plátna na formuláři
 
 I když se toto téma zaměřuje na vkládání aplikací plátna pomocí personalizace, vývojáři mají také možnost přidat aplikaci plátna do formuláře pomocí vývojářského prostředí Visual Studio. Chcete-li to provést, jednoduše do formuláře přidejte PowerAppsHostControl. Vlastnosti metadat, které jsou k dispozici pro ovládací prvek, poskytují stejné možnosti jako prostředí přizpůsobení.
-
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Vývojář] specifikuje, kam lze aplikaci vložit.
 
@@ -149,6 +180,5 @@ public final class ClassTest_Extension
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

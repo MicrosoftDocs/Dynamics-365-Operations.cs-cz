@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726180"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423440"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -81,9 +81,9 @@ Vzhledem k tomu, že produkt je reprezentován jako skladová jednotka, koncepty
 
 ![Datový model pro produkty.](media/dual-write-product.png)
 
-V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Budou přidány do prvního ceníku se stejnou měnou. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt.
+V případě povolené funkce dvojího zápisu budou produkty z Finance and Operations synchronizovány v dalších produktech Dynamics 365 ve stavu **Koncept**. Jsou přidány do prvního ceníku se stejnou měnou, jaká byla použita v aplikaci pro zapojení zákazníků, a používají abecední řazení v názvu ceníku. Jinými slovy se přidají k prvnímu ceníku v aplikaci Dynamics 365, která odpovídá měně právnické osoby, kde je produkt uvolněn v aplikaci Finance and Operations. Pokud pro danou měnu neexistuje ceník, bude automaticky vytvořen a bude mu přiřazen produkt.
 
-Aktuální implementace pluginů pro duální zápis, které přidružují výchozí ceník k jednotce, vyhledá měnu přidruženou k aplikaci Finance and Operations a najde první ceník v aplikaci Customer Engagement pomocí abecedního řazení názvu ceníku. Chcete-li nastavit výchozí ceník pro konkrétní měnu, pokud máte pro tuto měnu více ceníků, musíte aktualizovat název ceníku na název, který je v abecedním pořadí dříve než jakékoli jiné ceníky pro stejnou měnu.
+Aktuální implementace pluginů pro duální zápis, které přidružují výchozí ceník k jednotce, vyhledá měnu přidruženou k aplikaci Finance and Operations a najde první ceník v aplikaci Customer Engagement pomocí abecedního řazení názvu ceníku. Chcete-li nastavit výchozí ceník pro konkrétní měnu, pokud máte pro tuto měnu více ceníků, musíte aktualizovat název ceníku na název, který je v abecedním pořadí dříve než jakékoli jiné ceníky pro stejnou měnu. Pokud pro danou měnu nemá žádný ceník, vytvoří se nový.
 
 Ve výchozím nastavení jsou produkty z aplikací Finance and Operations synchronizovány do ostatních aplikací Dynamics 365 ve stavu **Koncept**. Chcete-li synchronizovat produkt se stavem **Aktivní**, aby jej bylo možné přímo použít v nabídkách prodejních objednávek, je třeba vybrat následující nastavení: v části **Systém > Správa > Správa systému > Nastavení systému > karta Prodej** vyberte **Vytvořit produkty v aktivním stavu =Ano**.
 

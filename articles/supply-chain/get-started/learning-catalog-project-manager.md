@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 76e7c0be047decb40019be207a735be27f79d78b4cde9321e8c3728bdbd45e35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b337e80db6d47354dc187477832add370a164172
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760531"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402194"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Supply Chain Management
 
@@ -27,8 +27,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="get-started"></a>Začínáme<a name="get-started"></a>
 
-| Obsah | popis  | Formát  | Délka    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 7 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
 | [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
@@ -38,8 +38,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="core-platform-knowledge"></a>Základní znalost platforem<a name="core-platform-knowledge"></a>
 
-| Obsah  | popis  | Formát   | Délka    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Pomocí Lifecycle Services navrhněte a naplánujte implementaci aplikací Finance and Operations](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) je pracovní prostor spolupráce, který zákazníci a jejich partneři používají ke správě projektů aplikací Finance and Operations z předběžného prodeje do fáze implementace a nakonec do provozního prostředí. Poskytuje kontrolní seznamy a nástroje, které vám pomohou spravovat projekt, včetně metodologií předběžného sestavení, které pomáhají při implementaci a pravidelně aktualizovaných službách. | Libovolná online školení vlastním tempem | 2 hodin |
 | [Konfigurace organizace v aplikacích Finance and Operations](/learn/paths/configure-your-organization-finance-ops/) | Jako funkční konzultant, který pracuje s aplikacemi Finance and Operations, musíte chápat, jak nastavit organizaci pro daného zákazníka. Tato vzdělávací cesta zobrazuje mimo jiné úkoly, jak nastavit právnické osoby, implementovat nastavení zabezpečení, přizpůsobit uživatelské rozhraní pro uživatele, navrhovat a vytvářet mobilní aplikace a implementovat společné integrace. | Libovolná online školení vlastním tempem | 12 hodin |
 | [Migrace dat a zahájení práce s aplikacemi Finance and Operations](/learn/paths/migrate-data-go-live-finance-operations/) | Jako funkční konzultant musíte chápat, jak připravit data odběratele na migraci, pracovat se správou dat a provádět testování přijetí uživatele s aplikacemi Finance and Operations. | Libovolná online školení vlastním tempem | 4 hodin |
@@ -69,8 +69,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="supply-chain-management"></a>Správa dodavatelsko-odběratelského řetězce<a name="supply-chain-management"></a>
 
-| Obsah  | popis  | Formát | Délka    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Konfigurace a správa produktů a zásob v aplikaci Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Informace o produktu tvoří pilíř dodávek dodavatelsko-odběratelského řetězce a maloobchodních aplikací pro všechna odvětví. V různých modulech podnikového řešení jsou požadovány informace o produktu a konfigurace potřebné pro účely správy obchodních procesů, které souvisejí s produkty, skupinami produktů, kusovníky nebo kategoriemi produktu. V sestavách zásob se zobrazí, kolik zásob máte, různým způsobem, a bude vysvětlovat efektivnější finanční umístění zásob. | Libovolná online školení vlastním tempem | 6 hodin |
 | [Konfigurace a správa nákupu a dodavatelů v aplikaci Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Proces vyhledávání a práce s dodavateli, nákup produktů a zajištění kvality zboží a služeb představují všechny důležité faktory, které ovlivňují pověst a úspěšnost společnosti. | Libovolná online školení vlastním tempem | 6 hodin |
 | [Konfigurace a práce se správou skladu v Dynamics 365 for Finance and Operations](/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Řízení skladu v Dynamics 365 for Finance and Operations usnadňuje optimalizaci a zefektivnění procesů skladu podle individuálních potřeb a poskytuje přehled o vašich zásobách a nástrojích, které pomáhají zvýšit spokojenost zákazníků a snižovat náklady. | Libovolná online školení vlastním tempem | 5 hodin |
@@ -86,8 +86,8 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="manufacturing"></a>Výroba<a name="manufacturing"></a>
 
-| Obsah  | popis  | Formát    | Délka    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Obsah | popis | Formát | Délka |
+|---------|-------------|--------|--------|
 | [Konfigurace a použití samostatné výroby v Dynamics 365 Supply Chain Management](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Pokud společnost vyrábí pouze jednoduché produkty, může být výroba naplánována ručně pomocí správných dílů kusovníku přicházejících do výrobní dílny, ve správném čase a ve správném zdroji. Jako funkční konzultant pro výrobu musíte vědět, jak konfigurovat Dynamics 365 for Finance and Operations pro samostatnou výrobu, aby mohl zákazník provádět a řídit životní cyklus výroby. | Libovolná online školení vlastním tempem | 9 hodin |
 | [Konfigurace a použití lean manufacturingu v Dynamics 365 Supply Chain Management](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean manufacturing je cesta neustálého zlepšování. Cílem je vyrobit přesně to, co odběratel chce, když to odběratel požaduje, a udělat to hospodárně. Lean manufacturing můžete použít ve sjednoceném (smíšeném) výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy. Architektura lean manufacturing v aplikaci Dynamics 365 for Finance and Operations obsahuje výrobní toky, aktivity a kanbanová pravidla. | Libovolná online školení vlastním tempem | 6.5 hodin |
 | [Konfigurace a použití procesní výroby v Dynamics 365 Supply Chain Management](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Procesní výroba je přidružena ke vzorcům a postupům výroby, a to na rozdíl od samostatné výroby, která používá samostatné jednotky a kusovníky. Procesní výroba se používá ve výrobních prostředích, kde se výroba provádí v dávkových nebo polosouvislých procesech. | Libovolná online školení vlastním tempem | 6 hodin |
@@ -98,13 +98,12 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="exams"></a>Zkoušky<a name="exams"></a>
 
-| Obsah  | popis  | Formát   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|---------------------------------------------------------------------------|
+| Obsah | popis | Formát |
+|---------|-------------|--------|
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, funkční sdružení konzultantů Supply Chain Management](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Certifikováno pro společnost Microsoft: Dynamics 365 for Finance and Operations, funkční konzultanti pro Supply Chain Management usnadňují účtování nákladů, řízení skladů, hlavní plánování a řízení zásob pro své klienty. | Certifikace; náklady se liší podle oblasti. |
 | [Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, sdružení konzultantů Manufacturing Functional](https://www.microsoft.com/learning/d365-functional-consultant-manufacturing.aspx) | Certifikováno společností Microsoft: Dynamics 365 for Finance and Operations, konzultanti Manufacturing Functional integrují digitální a fyzické systémy; zlepšují viditelnost, efektivnost a flexibilitu výroby a snižují náklady pro své klienty. | Certifikace; náklady se liší podle oblasti. |
 | [Zkouška MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: používání běžných funkcí a implementačních nástrojů; konfigurace zabezpečení, procesy a možnosti; provedení migrace dat; a ověření a podpora řešení. | Zkouška; náklady se liší podle oblasti. |
 | [Zkouška MB-320: Microsoft Dynamics 365 for Finance and Operations, výroba](/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří schopnost plnit následující technické úkoly: nastavení a konfigurace výroby; vytvoření a správa výrobních a štíhlých objednávek; a vytváření, zpracování a správa výrobních dávkových objednávek. | Zkouška; náklady se liší podle oblasti. |
 | [Zkouška MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Tato zkouška měří vaši schopnost plnit následující technické úkoly: Implementace správy informací o produktu; implementace řízení zásob; implementace a správa procesů dodavatelských řetězců a implementace řízení skladu a přepravy a provádění obchodních procesů. | Zkouška; náklady se liší podle oblasti. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

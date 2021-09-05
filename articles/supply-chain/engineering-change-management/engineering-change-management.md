@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714323"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384578"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -113,16 +113,16 @@ Chcete-li zkontrolovat ovlivněné transakce, zablokovat vybrané transakce a od
     - **Zobrazit transakci** - Otevřete záznam vybrané transakce.
     - **Blokovat objednávku** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej, chcete-li blokovat vybranou prodejní objednávku.
     - **Blokovat řádek** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej, chcete-li blokovat vybraný řádek nákupní objednávky.
-    - **Upozornit odpovědného** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou zakázku odběratele.
-    - **Upozornit objednavatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako objednavatel vybrané nákupní objednávky.
-    - **Oznámit výrobu** - Toto tlačítko je k dispozici pouze na kartě **Výrobní zakázky**. Na rozdíl od prodejních objednávek a nákupních objednávek nemají výrobní objednávky jediného uživatele, který je nastaven jako odpovědný od začátku do konce. Místo toho obvykle přebírají vlastnictví různí vedoucí nebo plánovači pro konkrétní web nebo pro konkrétní část produkce (například pro konkrétní zdroje nebo skupiny prostředků). Proto když vyberete toto tlačítko, všichni uživatelé, kteří jsou zodpovědní za jakýkoli prostředek, který souvisí s vybranou výrobní zakázkou, obdrží oznámení o změně.
-    - **Upozornit pořizovatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní žádanka**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako pořizovatel vybrané nákupní žádanky.
-    - **Upozornit odpovědného za prodej** - Toto tlačítko je k dispozici pouze na kartě **Nabídky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou nabídku.
+    - **Upozornit odpovědného** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou zakázku odběratele. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit objednavatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako objednavatel vybrané nákupní objednávky. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Oznámit výrobu** - Toto tlačítko je k dispozici pouze na kartě **Výrobní zakázky**. Na rozdíl od prodejních objednávek a nákupních objednávek nemají výrobní objednávky jediného uživatele, který je nastaven jako odpovědný od začátku do konce. Místo toho obvykle přebírají vlastnictví různí vedoucí nebo plánovači pro konkrétní web nebo pro konkrétní část produkce (například pro konkrétní zdroje nebo skupiny prostředků). Proto když vyberete toto tlačítko, všichni uživatelé, kteří jsou zodpovědní za jakýkoli prostředek, který souvisí s vybranou výrobní zakázkou, obdrží oznámení o změně. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit pořizovatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní žádanka**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako pořizovatel vybrané nákupní žádanky. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit odpovědného za prodej** - Toto tlačítko je k dispozici pouze na kartě **Nabídky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou nabídku. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
     - **Likvidace** - Toto tlačítko je k dispozici pouze na kartě **Zásoby**. Vyberte jej, chcete-li vybrané zásoby zlikvidovat.
     - **Zobrazit historii** - Otevřete historii akcí, které byly provedeny u vybrané transakce pomocí dialogového okna **Obchodní dopad na otevřené transakce**. (Například historie ukazuje, zda byla zaslána oznámení nebo byly blokovány transakce.) 
     - **Zobrazit všechny transakce** - Otevřete úplný seznam všech transakcí, nejen otevřených transakcí.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Zkontrolujte a zpracovejte oznámení o změně transakcí
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Zkontrolujte a zpracovejte oznámení o změně transakcí
 
 Oznámení o změnách, která obdržíte, si můžete přečíst a zpracovat následujícími způsoby:
 

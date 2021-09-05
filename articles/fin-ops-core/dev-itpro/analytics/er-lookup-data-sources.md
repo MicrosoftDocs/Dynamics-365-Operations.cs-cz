@@ -2,7 +2,7 @@
 title: Konfigurace zdrojů dat vyhledávání pro použití parametrů specifických pro aplikace elektronického výkaznictví
 description: V tomto tématu je vysvětleno, jak lze konfigurovat zdroje dat vyhledávání ve formátech elektronického vykazování (ER) pro použití parametrů specifických pro aplikaci ER.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723182"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343422"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurace zdrojů dat vyhledávání pro použití parametrů specifických pro aplikace elektronického výkaznictví 
 
@@ -69,7 +69,7 @@ Pravidla vyhledávání pro vybraný formát ER můžete nastavit pomocí uživa
 Následující obrázek ukazuje, jak lze zdroj dat `Model.Data.Summary.LevelByLookup` typu **Vypočítané pole** nakonfigurovat tak, aby volal nakonfigurovaný zdroj dat **Vyhledávání** poskytující požadované parametry. Ke zpracování tohoto volání za běhu, ER prochází seznam nakonfigurovaných pravidel v definované sekvenci a vyhledá první pravidlo, které splňuje zadané podmínky. V tomto příkladu je to pravidlo, které obsahuje daňový kód, který odpovídá uvedenému. Výsledkem je nalezení nejvhodnějšího pravidla a tento zdroj dat vrátí hodnotu výčtu, která je nakonfigurována pro nalezené pravidlo.
 
 > [!NOTE]
-> Pokud není nalezeno žádné použitelné pravidlo, je vyvolána výjimka. Chcete-li těmto výjimkám zabránit, nakonfigurujte na konci seznamu pravidel další pravidla pro zpracování případů, kdy je zadána nekonfigurovaná hodnota nebo žádná hodnota. Podle potřeby použijte možnosti **\*Není prázdné\*** a **\*Prázdné\***.  
+> Pokud není nalezeno žádné použitelné pravidlo, je vyvolána výjimka. Chcete-li těmto výjimkám zabránit, nakonfigurujte na konci seznamu pravidel další pravidla pro zpracování případů, kdy je zadána nekonfigurovaná hodnota nebo žádná hodnota. Podle potřeby použijte možnosti **\*Není prázdné**\* a **\*Prázdné**\*.  
 >
 > ![Přidejte zdroj dat pro volání nakonfigurovaného zdroje dat vyhledávání.](./media/er-lookup-data-sources-img7.png)
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751091"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344971"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -51,6 +51,9 @@ Chcete-li si zobrazit výsledek analýzy přizpůsobení pro optimalizaci pláno
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Přehled možných výsledků analýzy přizpůsobení
 
 V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po analýze přizpůsobení. Symbol čísla (_\#_) bude nahrazen číslem označujícím počet záznamů s uvedeným problémem. Podporované funkce nebo funkce v náhledu jsou k dispozici od verze 10.0.9 nebo novější (pokud ve sloupci „Očekávaná dostupnost“ není uvedeno vyšší číslo verze).
+
+> [!NOTE]
+> Některé nesrovnalosti nelze identifikovat analýzou přizpůsobení optimalizace plánování. Další informace viz [Rozdíly mezi klasickým hlavním plánováním a optimalizací plánování](planning-optimization-differences-with-built-in.md).
 
 | Funkce | Uvedený problém | Vysvětlení | Očekávaná dostupnost |
 | --- | --- | --- | --- |
@@ -104,9 +107,13 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 
 [Přehled optimalizace plánování](planning-optimization-overview.md)
 
-[Začínáme s optimalizací plánování](get-started.md)
+[Začínáme s optimalizací plánování](get-started.md)
 
-[Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
+[Rozdíly mezi klasickým hlavním plánováním a optimalizací plánování](planning-optimization-differences-with-built-in.md)
+
+[Parametry, které optimalizace plánování nepoužívá](not-used-parameters.md)
+
+[Zobrazení historie pánů a plánovacích protokolů](plan-history-logs.md)
 
 [Použití filtrů v plánu](plan-filters.md)
 

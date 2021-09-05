@@ -2,7 +2,7 @@
 title: Finanční analýza
 description: Finanční analýza používá Microsoft Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767820"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416298"
 ---
 # <a name="financial-analysis"></a>Finanční analýza
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767820"
 > - **Stránka** – Karta v jednom .pbix souboru. Každá stránka může obsahovat jeden nebo více vizuálních prvků.
 > - **Vizuální prvek** – Jeden zdroj dat, například karta, indikátor KPI, diagram, graf, matice nebo finanční výkaz. Stránka s finančním výkazem jako vizuálním prvkem může neobsahovat jiné vizuální prvky z důvodu velikosti dat, která se vykazují.
 
-V současné době se **Finanční analýza** používá k zobrazení dat pro aktivní právnickou osobu nebo všechny právnické osoby. V příštích verzích se pracovní prostor vyvine do místa, kde můžete používat Power BI k úpravám a vytváření vizuálních prvků.
+Pracovní prostor **Finanční analýza** je zaměřen na to, aby vám umožnil prohlížet a filtrovat data ze stávajících sestav. Budete moci přidávat nové vizuální prvky do pracovního prostoru **Finanční analýza**. Pracovní prostor **Finanční analýza** je k dispozici pro aktuální společnost i pro všechny společnosti k zobrazení dat pro všechny právnické osoby bez ohledu na právnické osoby, ke kterým má role přístup.
 
-Pracovní prostor **Přehled CFO** zobrazuje stejné vizuální prvky jako **Finanční analýza**, ale zaměřuje na se poskytnutí zobrazení a filtrování dat stávajících sestav. V dalších verzích bude moct přidávat nové vizuální prvky do pracovního prostoru **Finanční analýza**. Nové vizuální prvky mohou být také k dispozici v pracovních prostorech, které se zaměřují na jiné role, jako jsou projektoví manažeři nebo manažeři závazků. Pracovní prostor **Přehled CFO** nadále zobrazuje data pro všechny právnické osoby, bez ohledu na právnické osoby, ke kterým má role přístup.
+- [Přidat nebo upravit vizualizace Power BI na vašem řídicím panelu](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Nastavení Dynamics 365 Finance
 **Hlavní kniha**

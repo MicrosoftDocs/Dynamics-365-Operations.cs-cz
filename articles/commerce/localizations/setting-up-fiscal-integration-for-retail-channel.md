@@ -2,7 +2,7 @@
 title: Nastavení fiskální integrace pro obchodní kanály
 description: Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
 author: josaw
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,28 +14,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fb48eb93d8cf4f26174441de65c0b105c5e8774c2030e844ec7bd1352bff64b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38ad2cc3dc7e511ac6e2ac9484d10ebd2d1d425d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343306"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Úvod
-
 Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály. Další informace o fiskální integraci naleznete v tématu [Přehled fiskální integrace pro velkoobchodní kanály](fiscal-integration-for-retail-channel.md).
 
 Proces nastavení fiskální integrace zahrnuje následující obecné úlohy:
 
-1. Konfigurace fiskálních konektorů, které reprezentují fiskální zařízení nebo služby používané pro účely fiskální registrace, jako jsou fiskální tiskárny.
-2. Nakonfigurujte poskytovatele dokumentů, kteří generují fiskální dokumenty k registraci ve fiskálních zařízeních nebo službách podle fiskálních konektorů.
-3. Nakonfigurujte proces fiskální registrace, který definuje pořadí kroků fiskální registrace a fiskálních konektorů a poskytovatelů fiskálních dokumentů používaných v jednotlivých krocích.
-4. Přiřaďte procesy fiskální registrace do funkčních profilů POS.
-5. Přiřadíte technické profily konektoru hardwarovým profilům.
+- Konfigurace fiskálních konektorů, které reprezentují fiskální zařízení nebo služby používané pro účely fiskální registrace, jako jsou fiskální tiskárny.
+- Nakonfigurujte poskytovatele dokumentů, kteří generují fiskální dokumenty k registraci ve fiskálních zařízeních nebo službách podle fiskálních konektorů.
+- Nakonfigurujte proces fiskální registrace, který definuje pořadí kroků fiskální registrace a fiskálních konektorů a poskytovatelů fiskálních dokumentů používaných v jednotlivých krocích.
+- Přiřaďte procesy fiskální registrace do funkčních profilů POS.
+- Přiřadíte technické profily konektoru hardwarovým profilům.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Nastavení procesu fiskální registrace
 
@@ -49,12 +47,12 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
         - Číslo skupiny fiskálních konektorů
         - Číslo procesu registrace
 
-    2. Na stránce **Parametry velkoobchodu** definujte číselné řady pro číslo fiskálního funkčního profilu.
+    1. Na stránce **Parametry velkoobchodu** definujte číselné řady pro číslo fiskálního funkčního profilu.
 
     > [!NOTE]
     > Číselné řady jsou volitelné. Čísla pro všechny entity fiskální integrace lze generovat z číselných řad nebo ručně.
 
-2. Nahrajte konfigurace fiskálních konektorů a poskytovatelů fiskálních dokumentů.
+1. Nahrajte konfigurace fiskálních konektorů a poskytovatelů fiskálních dokumentů.
 
     Zprostředkovatel fiskálního dokumentu je zodpovědný za generování fiskálních dokumentů, které představují velkoobchodní transakce a události, které jsou zaregistrovány na POS ve formátu, který se používá pro interakci s fiskálním zařízením nebo službou. Poskytovatel fiskálního dokumentu například může generovat vyjádření fiskálního příjmu ve formátu XML.
 
@@ -65,22 +63,22 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
         > [!TIP]
         > Výběrem možnosti **Zobrazit** můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu fiskálnímu konektoru.
 
-    2. Na stránce **Poskytovatelé fiskálního dokumentu** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálního dokumentu**), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fiskální integrace.
+    1. Na stránce **Poskytovatelé fiskálního dokumentu** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálního dokumentu**), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fiskální integrace.
 
         > [!TIP]
         > Výběrem možnosti **Zobrazit** můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu poskytovateli fiskálního dokumentu.
 
-    Příklady konfigurací fiskálních konektorů a poskytovatelů fiskálního dokumentu naleznete v tématu [Ukázky fiskální integrace v sadě Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
+    Příklady konfigurací fiskálních konektorů a poskytovatelů fiskálního dokumentu naleznete v tématu [Ukázky fiskální integrace v sadě Commerce SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
     > [!NOTE]
     > Mapování dat je považováno za součást poskytovatele fiskálního dokumentu. Chcete-li nastavit různá mapování dat pro stejný konektor (například pravidla pro konkrétní stav), měli byste vytvořit různé poskytovatele fiskálních dokumentů.
 
-3. Vytvořte funkční profily konektoru a technické profily konektoru.
+1. Vytvořte funkční profily konektoru a technické profily konektoru.
 
     1. Na stránce **Funkční profily konektoru** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Funkční profily konektoru**) vytvořte funkční profil konektoru pro každou kombinaci fiskálního konektoru a poskytovatele fiskálního dokumentu, který souvisí s fiskálním konektorem.
 
         1. Zvolte název konektoru.
-        2. Vyberte poskytovatele dokumentu.
+        1. Vyberte poskytovatele dokumentu.
 
         Parametry mapování dat konektoru můžete změnit ve funkčním profilu konektoru. Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci poskytovatele fiskálního dokumentu, vyberte **Aktualizovat**.
 
@@ -95,39 +93,39 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
         > [!NOTE]
         > Funkční profily konektoru jsou specifické pro společnost. Pokud chcete používat stejnou kombinaci fiskálního konektoru a poskytovatele fiskálních dokumentů v různých společnostech, měli byste vytvořit funkční profil konektoru pro každou společnost.
 
-    2. Na stránce **Technické profily konektoru** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily konektoru**) vytvořte technický profil konektoru pro každý fiskální konektor.
+    1. Na stránce **Technické profily konektoru** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily konektoru**) vytvořte technický profil konektoru pro každý fiskální konektor.
 
         1. Zvolte název konektoru.
-        2. Zvolte typ konektoru. Pro zařízení, která jsou připojena k hardwarové stanici, vyberte **místní**.
+        1. Zvolte typ konektoru. Pro zařízení, která jsou připojena k hardwarové stanici, vyberte **místní**.
 
             > [!NOTE]
             > Pouze místní konektory jsou aktuálně podporovány.
 
         Parametry na kartách **zařízení** a **nastavení** v technickém profilu konektoru lze změnit. Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci fiskálního konektoru, vyberte **Aktualizovat**. V době, kdy se načítá nová verze konfigurace XML, obdržíte zprávu, která uvádí, že se současný poskytovatel fiskálního konektoru nebo dokumentu již používá. Tento postup nepřepíše ruční změny, dříve provedené ve funkčních a technických profilech konektoru. Chcete-li použít výchozí sadu parametrů z nové konfigurace, klikněte na tlačítko **Aktualizovat** na stránce **Funkční profily konektoru** a na stránce **Technické profily konektoru**.
 
-4. Vytvořte skupiny fiskálních konektorů.
+1. Vytvořte skupiny fiskálních konektorů.
 
     Skupina fiskálních konektorů kombinuje fiskální konektory funkčních profilů, které provádí identické funkce a používají se ve stejné fázi v rámci procesu fiskální registrace. Například pokud lze v obchodě použít několik modelů fiskální tiskárny, lze fiskální konektory pro tyto tiskárny zkombinovat do skupiny fiskálního konektoru.
 
     1. Na stránce **Skupina fiskálních konektorů** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálních konektorů**) vytvořte novou skupinu fiskálních konektorů.
-    2. Přidání funkčních profilů do skupiny konektoru. Klikněte na **Přidat** na stránce **Funkční profily** a vyberte číslo profilu. Ve skupině konektoru může mít každý fiskální konektor pouze jeden funkční profil.
-    3. Pokud chcete pozastavit použití funkčního profilu, nastavte možnost **Zakázat** na **Ano**. Tato změna ovlivní pouze aktuální skupinu konektoru. Můžete pokračovat s použitím stejného funkčního profilu v jiných skupinách konektoru.
+    1. Přidání funkčních profilů do skupiny konektoru. Klikněte na **Přidat** na stránce **Funkční profily** a vyberte číslo profilu. Ve skupině konektoru může mít každý fiskální konektor pouze jeden funkční profil.
+    1. Pokud chcete pozastavit použití funkčního profilu, nastavte možnost **Zakázat** na **Ano**. Tato změna ovlivní pouze aktuální skupinu konektoru. Můžete pokračovat s použitím stejného funkčního profilu v jiných skupinách konektoru.
 
-5. Vytvořte proces fiskální registrace.
+1. Vytvořte proces fiskální registrace.
 
     Proces fiskální registrace je definován sledem registračních kroků a skupinou konektorů používaných v každém kroku.
 
     1. Na stránce **Proces fiskální registrace** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vytvořte nový záznam pro každý jedinečný proces fiskálních integrace.
-    2. Přidejte kroky registrace do procesu:
+    1. Přidejte kroky registrace do procesu:
 
         1. Vyberte **přidat**.
-        2. Zvolte typ fiskálního konektoru:
-        3. V poli **číslo skupiny** vyberte vhodnou skupinu fiskálního konektoru.
+        1. Zvolte typ fiskálního konektoru:
+        1. V poli **číslo skupiny** vyberte vhodnou skupinu fiskálního konektoru.
 
-6. Přiřaďte entity procesu fiskální registrace profilům POS.
+1. Přiřaďte entity procesu fiskální registrace profilům POS.
 
     1. Na stránce **Profily funkce POS** (**Retail and Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Funkční profily**) přidělte proces fiskální registrace funkčnímu profilu POS. Vyberte **Upravit** a poté na kartě **Fiskální registrace** v poli **Číslo procesu** vyberte proces.
-    2. Na stránce **Hardwarový profil POS** (**Retail and Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**) přiřaďte technické profily konektoru hardwarovému profilu. Vyberte **upravit**, přidejte řádek na kartu **Fiskální periferní zařízení** a potom v poli **číslo profilu** vyberte profil technického konektoru.
+    1. Na stránce **Hardwarový profil POS** (**Retail and Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**) přiřaďte technické profily konektoru hardwarovému profilu. Vyberte **upravit**, přidejte řádek na kartu **Fiskální periferní zařízení** a potom v poli **číslo profilu** vyberte profil technického konektoru.
 
     > [!NOTE]
     > Můžete přidat několik technických profilů ke stejnému hardwarovému profilu. Profil hardwaru nebo profil funkce POS, by však měl mít pouze jeden průsečík s libovolnou skupinou fiskálního konektoru.
@@ -139,7 +137,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
     - Poskytovatel fiskálního dokumentu používá nastavení mapování dat z konfigurace poskytovatele fiskálního dokumentu k transformaci dat transakce nebo události, například daně a plateb, zatímco je generován daňový doklad.
     - Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v programovacím rozhraní aplikace zařízení (API) v závislosti na tom, jak je komunikace zpracovávána.
 
-7. Na stránce **Proces fiskální registrace** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vyberte **Ověřit** k ověření procesu fiskální registrace.
+1. Na stránce **Proces fiskální registrace** (**Retail and Commerce \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vyberte **Ověřit** k ověření procesu fiskální registrace.
 
     Doporučujeme spustit tento typ ověření v následujících případech:
 
@@ -147,7 +145,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
     - Poté, co provedete změny v existujícím procesu daňové registrace a pokud tyto změny způsobí výběr jiného fiskálního konektoru v době běhu (například když změníte skupinu konektoru pro krok procesu fiskální registrace, povolte funkční profil konektoru ve skupině konektoru nebo přidejte nový funkční profil konektoru skupině konektoru).
     - Po provedení změn v přiřazení technických profilů konektoru hardwarovým profilům.
 
-8. Na stránce **Plán distribuce** spusťte úlohu **1070** a **1090** pro převod dat do databáze kanálů.
+1. Na stránce **Plán distribuce** spusťte úlohu **1070** a **1090** pro převod dat do databáze kanálů.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Nastavení fiskální textů pro slevy
 
@@ -156,11 +154,11 @@ V některých případech musí být vytištěn speciální text na fiskálním 
 - Pro ruční slevy, které jsou použity v POS, je třeba nastavit fiskální text pro informační kód nebo skupinu informačních kódů, která je určena jako informační kód **sleva na produkt** v profilu funkce POS.
 
     1. Na stránce **Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
-    2. Na kartě **Informační kódy** vyberte **Přidat** a vyberte informační kód nebo skupinu informačních kódů.
-    3. V poli **číslo informačního kódu** vyberte požadovanou hodnotu.
-    4. V poli **Číslo podkódu** vyberte hodnotu, pokud je vyžadován pro vybraný informační kód.
-    5. V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.
-    6. Nastavte možnost **Vytisknout vstup uživatele na fiskálním příjmu** na **ano**, aby se přepsal text na fiskálním příjmu informacemi, které uživatel ručně zadá v POS. Tato možnost se vztahuje pouze na informační kódy s typem vstupu **Text**.
+    1. Na kartě **Informační kódy** vyberte **Přidat** a vyberte informační kód nebo skupinu informačních kódů.
+    1. V poli **číslo informačního kódu** vyberte požadovanou hodnotu.
+    1. V poli **Číslo podkódu** vyberte hodnotu, pokud je vyžadován pro vybraný informační kód.
+    1. V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.
+    1. Nastavte možnost **Vytisknout vstup uživatele na fiskálním příjmu** na **ano**, aby se přepsal text na fiskálním příjmu informacemi, které uživatel ručně zadá v POS. Tato možnost se vztahuje pouze na informační kódy s typem vstupu **Text**.
 
     > [!NOTE]
     > Můžete zadat fiskální text pro několik informační kódy na podporu scénářů, kdy se používají skupiny informačních kódů, odkazované informační kódy a spuštěné informační kódy. V těchto situacích fiskální příjemka bude obsahovat fiskální texty ze všech informačních kódů, které jsou propojeny s řádkem transakce, kde byla aplikována sleva.
@@ -168,8 +166,8 @@ V některých případech musí být vytištěn speciální text na fiskálním 
 - Pro specifické slevy pro kanál byste měli definovat fiskální text pro ID slevy.
 
     1. Na stránce **Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.
-    2. Na kartě **Slevy** vyberte **Přidat** a vyberte ID slevy.
-    3. V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.
+    1. Na kartě **Slevy** vyberte **Přidat** a vyberte ID slevy.
+    1. V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.
 
     > [!NOTE]
     > Pokud je na jednom řádku transakce použito několik slev, bude fiskální příjemka obsahovat fiskální texty ze všech slev spojených s tímto řádkem transakce.
@@ -187,8 +185,8 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
     > [!NOTE]
     > Pokud je parametr **Pokračovat při chybě** povolen, parametry **Povolit přeskočení** a **Povolit označení za registrované** jsou automaticky zakázány.
 
-2. Možnosti **Přeskočit** a **Označit jako registrované** v dialogovém okně zpracování chyb vyžadují oprávnění **Povolit přeskočení nebo označit jako registrované**. Proto na stránce **Skupiny oprávnění** (**Retail and Commerce \> Zaměstnanci \> Skupiny oprávnění**) povolte oprávnění **Povolit přeskočení registrace nebo označit jako registrované**.
-3. Možnosti **Přeskočit** a **Označit jako registrované** umožňují operátorům zadat další informace v případě selhání fiskální registrace. Aby bylo možné tuto funkci zpřístupnit, měli byste určit informační kódy **přeskočit** a **označit jako registrované** ve fiskálním konektoru skupiny. Informace, které operátor zadá, jsou pak uloženy jako transakce informačního kódu spojené s fiskální transakcí. Další podrobnosti o informačních kódech naleznete v tématu [informační kódy a skupiny informačních kódů](../info-codes-retail.md).
+1. Možnosti **Přeskočit** a **Označit jako registrované** v dialogovém okně zpracování chyb vyžadují oprávnění **Povolit přeskočení nebo označit jako registrované**. Proto na stránce **Skupiny oprávnění** (**Retail and Commerce \> Zaměstnanci \> Skupiny oprávnění**) povolte oprávnění **Povolit přeskočení registrace nebo označit jako registrované**.
+1. Možnosti **Přeskočit** a **Označit jako registrované** umožňují operátorům zadat další informace v případě selhání fiskální registrace. Aby bylo možné tuto funkci zpřístupnit, měli byste určit informační kódy **přeskočit** a **označit jako registrované** ve fiskálním konektoru skupiny. Informace, které operátor zadá, jsou pak uloženy jako transakce informačního kódu spojené s fiskální transakcí. Další podrobnosti o informačních kódech naleznete v tématu [informační kódy a skupiny informačních kódů](../info-codes-retail.md).
 
     > [!NOTE]
     > Funkce spouštění **Produkt** není podporována pro informační kódy používané pro volby **Přeskočit** a **Označit jako registrované** ve skupinách fiskálního konektoru.
@@ -201,7 +199,7 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
     > - **Daňový doklad** – povinný dokument, který by měl být úspěšně registrován (například jako fiskální příjemka).
     > - **Nefiskální dokument** – doplňkový doklad pro transakci nebo událost (například dárkový poukaz).
 
-4. Pokud musí být provozovatel schopen pokračovat v zpracování aktuální operace (například vytvoření nebo dokončení transakce) po výskytu chyby při kontrole stavu, měli byste povolit oprávnění **Povolit přeskočení chyby při kontrole stavu** na stránce **Skupiny oprávnění** (**Retail and Commerce \> Zaměstnanci \> Skupiny oprávnění**). Další informace o postupu kontroly stavu naleznete v tématu [Kontrola stavu fiskální registrace](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+1. Pokud musí být provozovatel schopen pokračovat v zpracování aktuální operace (například vytvoření nebo dokončení transakce) po výskytu chyby při kontrole stavu, měli byste povolit oprávnění **Povolit přeskočení chyby při kontrole stavu** na stránce **Skupiny oprávnění** (**Retail and Commerce \> Zaměstnanci \> Skupiny oprávnění**). Další informace o postupu kontroly stavu naleznete v tématu [Kontrola stavu fiskální registrace](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Nastavení fiskálních sestav X/ Z z POS
 
@@ -210,9 +208,9 @@ Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozl
 - Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání operací POS do rozložení POS pomocí návrháře mřížky tlačítka](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci mřížky tlačítka a aktualizaci rozložení POS.
 
     1. Výběr rozložení k aktualizaci 
-    2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální X**.
-    3. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální Z**.
-    4. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod změn do databáze kanálů.
+    1. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální X**.
+    1. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální Z**.
+    1. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod změn do databáze kanálů.
 
 ## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Povolení ručního provedení odložené daňové registrace
 
@@ -221,8 +219,8 @@ Chcete-li povolit ruční provedení odložené fiskální registrace, měli bys
 - Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání operací POS do rozložení POS pomocí návrháře mřížky tlačítka](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci mřížky tlačítka a aktualizaci rozložení POS.
 
     1. Výběr rozložení k aktualizaci
-    2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.
-    3. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.
+    1. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.
+    1. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

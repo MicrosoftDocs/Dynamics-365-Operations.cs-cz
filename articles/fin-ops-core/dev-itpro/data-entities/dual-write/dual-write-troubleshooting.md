@@ -4,24 +4,17 @@ description: Toto téma obsahuje všeobecné informace o odstraňování potíž
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 779cc80d4cb510e79885919f1c705824ab6ad58b3e2fe1bab7bbec0511d08951
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4adc2d83667a05d14a26ace23e5bd8026df4b5f
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380205"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -29,31 +22,10 @@ ms.locfileid: "6736295"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
-
-## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Při pokusu o instalaci balíčku dvojího zapisování pomocí nástroje package deployer se nezobrazí žádná dostupná řešení
-
-Některé verze nástroje package deployer nejsou kompatibilní s balíčkem řešení dvojího zápisu. Chcete-li úspěšně nainstalovat balíček, je nutné použít [verzi 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) nebo novější z nástroje package deployer.
-
-Po instalaci nástroje package deployer nainstalujte balíček řešení pomocí následujících kroků.
-
-1. Stáhněte si nejnovější soubor balíčku řešení z Yammer.com. Po stažení souboru ZIP balíčku klepněte na něj pravým tlačítkem myši a vyberte **Vlastnosti**. Zaškrtněte políčko **odblokovat** a vyberte **Použít**. Není-li zaškrtávací políčko **Odblokovat** zobrazeno, je již zrušeno blokování souboru zip a tento krok můžete přeskočit.
-
-    ![Dialogové okno Vlastnosti.](media/unblock_option.png)
-
-2. Extrahujte soubor zip balíčku a zkopírujte všechny soubory ve složce **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.**
-
-    ![Obsah složky Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.](media/extract_package.png)
-
-3. Vložte všechny zkopírované soubory do složky **Nástroje** v nástroji Package Deployer. 
-4. Spuštěním **PackageDeployer.exe** vyberte prostředí Dataverse a nainstalujte řešení.
-
-    ![Obsah složky Nástroje.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Chcete-li zobrazit podrobnosti chyby, povolte a zobrazte protokol sledování modulů plug-in v Dataverse
 
@@ -74,18 +46,17 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v aplikacích Finance and Operations
 
-**Požadovaná role pro zobrazení chyb:** Chyby duálního zápisu správce systému, které vznikly v Dataverse, se mohou objevit v aplikaci Finance and Operations. V některých případech není úplný text chybové zprávy k dispozici, protože zpráva je příliš dlouhá nebo obsahuje osobní identifikační údaje (PII). Pomocí následujících kroků můžete zapnout podrobné protokolování chyb.
+**Požadovaná role pro zobrazení chyb:** správce systému
 
-1. Všechny konfigurace projektu v aplikacích Finance and Operations mají vlastnost **IsDebugMode** v tabulce **DualWriteProjectConfiguration**. Otevřete tabulku **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel.
+Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou objevit v aplikaci Finance and Operations. Pomocí následujících kroků můžete zapnout podrobné protokolování chyb:
 
-    > [!TIP]
-    > Snadným způsobem, jak tuto tabulku otevřít, je zapnout režim **Návrh** v doplňku aplikace Excel a poté přidat **DualWriteProjectConfigurationEntity** do listu. další informace získáte v tématu [Otevření dat tabulky v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel](../../office-integration/use-excel-add-in.md).
-
-2. Nastavte vlastnost **IsDebugMode** na **Ano** pro projekt.
-3. Spuštění scénáře generujících chyby.
-4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX**):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
+1. Všechny konfigurace projektu v aplikaci Finance and Operations mají příznak **IsDebugMode** v tabulce **DualWriteProjectConfiguration**.
+2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+3. Nastavte **IsDebugMode** na **Ano** v projektu.
+4. Spuštění scénáře generujících chyby.
+5. Podrobné protokoly jsou uloženy v tabulce **DualWriteErrorLog**.
+6. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující odkaz: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` nahraďte `999` podle potřeby.
+7. Aktualizujte znovu po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), který je k dispozici pro aktualizace platformy 37 a novější. Pokud máte tuto opravu nainstalovanou, režim ladění zachytí více protokolů.  
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro aplikaci Finance and Operations
 
@@ -116,10 +87,28 @@ Nyní můžete propojit nové prostředí.
 Po vytvoření prodejní objednávky v produktu Dynamics 365 Sales se můžete kliknutím na možnost **+ Přidat produkty** přesměrovat do formuláře řádku objednávky Dynamics 365 Project Operations. Neexistuje žádný způsob, jak z tohoto formuláře zobrazit formulář **Informace** pro řádek prodejní objednávky. Možnost pro **informace** není zobrazena v rozevírací nabídce pod položkou **Nový řádek objednávky**. K tomu dojde, protože operace projektu byly nainstalovány ve vašem prostředí.
 
 Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následujícím způsobem:
+
 1. Přejděte na entitu **Řádek** tabulky.
-2. Vyhledejte formulář **Informace** v uzlu formulářů. 
-3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 
+2. Vyhledejte formulář **Informace** v uzlu formulářů.
+3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**.
 4. Změňte nastavení zabezpečení na **Zobrazit všem**.
 
+## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Jak povolit a uložit trasování sítě, aby bylo možné připojit stopy k podpoře lístků
+
+Tým podpory možná bude muset zkontrolovat trasování sítě, aby vyřešil některé problémy. Chcete-li vytvořit sledování sítě, postupujte následujícím způsobem:
+
+### <a name="chrome"></a>Chrome
+
+1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
+2. Otevřete kartu **Síť** a zadejte **integ** v textovém poli filtru.
+3. Spusťte svůj scénář a sledujte protokolované požadavky.
+4. Klikněte pravým tlačítkem na položky a vyberte **Uložit vše jako HAR s obsahem**.
+
+### <a name="microsoft-edge"></a>Microsoft Edge
+
+1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
+2. Otevřete kartu **Síť**.
+3. Spusťte svůj scénář.
+4. Vyberte **Uložit**, chcete-li exportovat výsledky jako HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

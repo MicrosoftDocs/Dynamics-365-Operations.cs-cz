@@ -1,8 +1,8 @@
 ---
 title: Nastavení oceňovacích modelů
 description: Tento postup popisuje, jak vytvořit novou knihu dlouhodobého majetku a přidružit ji ke skupině dlouhodobého majetku.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741529"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344651"
 ---
 # <a name="set-up-value-models"></a>Nastavení oceňovacích modelů
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Tento postup popisuje, jak vytvořit novou knihu dlouhodobého majetku a přidružit ji ke skupině dlouhodobého majetku. Využívá účetní role a ukázková data pro právnické osoby USMF.
-
 
 ## <a name="create-a-book"></a>Vytvoření knihy
 1. Přejděte do části Dlouhodobý majetek > Nastavení > Knihy.
@@ -48,9 +49,10 @@ Tento postup popisuje, jak vytvořit novou knihu dlouhodobého majetku a přidru
 1. Klikněte na Skupiny dlouhodobého majetku.
 2. Zadejte nebo vyberte hodnotu v poli Skupina dlouhodobého majetku.
 3. Zadejte číslo do pole Doba životnosti.
-    * Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.  
-    * Způsob odpisu je možné nastavit podle potřeby pro daňové účely.  
 
+  - Období odpisu se vypočítají po vložení doby životnosti majetku.  
+  - Způsob odpisu je možné nastavit podle potřeby pro daňové účely.
+  - U dlouhodobého majetku, který je spojen s leasingem, bude hodnota v poli **Doba životnosti** přepsána buď nižší hodnotou buď doby trvání leasingu v knize majetku nebo očekávané doby použitelnosti majetku. Pokud je pole **Převod vlastnictví** nastaveno na **Ano** u leasingové knihy, hodnota v poli **Doba životnosti** bude vždy očekávanou dobou použitelnosti aktiva.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

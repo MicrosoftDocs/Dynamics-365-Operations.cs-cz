@@ -1,8 +1,8 @@
 ---
 title: Vytvoření možností pokrytí
-description: Možnosti pokrytí v Microsoft Dynamics 365 Human Resources představují úrovně pokrytí volby účastníka v plánu nebo programu zaměstnanecké výhody.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Toto téma popisuje možnosti pokrytí v Microsoft Dynamics 365 Human Resources v plánu nebo programu zaměstnanecké výhody účastníka.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 447317d0e9cb23bea21dae448048d05a3d989c89df17e4b8ea836201c20aefff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a553fa1aa4bac0d2fb11b87ee05e4e52c019411d
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741422"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423513"
 ---
 # <a name="create-coverage-options"></a>Vytvoření možností pokrytí
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Možnosti krytí určují, kdo by měl být krytý, nebo kolik krytí je k dispozici v pojistném plánu. Například pro lékařský plán můžete mít možnost **pouze zaměstnanec**, **zaměstnanec + 1** a **rodina**. U životního pojištění můžete nabídnout krytí pro **1 x plat** nebo **2 x plat**.
+Možnosti krytí určují, kdo by měl být krytý, nebo kolik krytí je k dispozici v pojistném plánu. Například pro lékařský plán můžete mít možnost **Pouze zaměstnanec**, **Zaměstnanec + 1** a **Rodina**. U životního pojištění můžete nabídnout krytí pro **1 x plat** nebo **2 x plat**.
 
 Po definování můžete znovu použít možnosti pokrytí zaměstnaneckých výhod. Můžete přidružit možnost k jednomu nebo více plánům.
 
@@ -46,7 +46,7 @@ Po definování můžete znovu použít možnosti pokrytí zaměstnaneckých vý
    | **Popis** | Popis možnosti pokrytí. |
    | **Kód pokrytí** | Kódy pokrytí přiřazují minimální a maximální částky každému typu osoby s nárokem na pokrytí. Kód pokrytí indikuje, kdo má pokrytí nebo jaká částka pokrytí je povolena pro daný typ plánu. Částku pokrytí lze vyjádřit jako částku v korunách nebo v procentech. Například:<ul><li>**Emp+1** – aby měl zaměstnanec nárok, musí mít vybranou jednu závislou osobu (pokud jich je vybráno více, nárok se ztrácí).</li><li>**Emp+family** – abyste mohl mít zaměstnanec nárok, musí mít vybrané nejméně dvě závislé osoby.</li></ul> |
    | **Maximální počet** | Maximální počet závislých osob |
-   | **Stav** | Stav možnosti pokrytí. Je-li stav možnosti pokrytí nastaven na hodnotu Neaktivní, nelze pro typy plánů vybrat možnost Pokrytí. |
+   | **Stav** | Stav možnosti pokrytí. Je-li stav možnosti pokrytí nastaven na hodnotu **Neaktivní**, nelze pro typy plánů vybrat možnost Pokrytí. |
    | **Procento** | Procentuální částka. Toto pole je aktivní pouze v případě, že v poli kód disponibility byla vybrána možnost % x mzdy. |
    | **Dělitel** | Dělitel, který má být použit ve výpočtu po výběru kódu pokrytí % x platu. |
    | **Minimální procento** | Minimální procento, když vyberete kód procentuálního pokrytí. |
@@ -58,7 +58,7 @@ Po definování můžete znovu použít možnosti pokrytí zaměstnaneckých vý
 
    | Pole | Popis |
    | --- | --- |
-   | **Povolit částku příspěvku zaměstnance** | Určuje, zda mají mít zaměstnanci při výběru zaměstnaneckých výhod v případě zaměstnaneckých výhod možnost upravovat částku příspěvku na samoobslužné služby. Pokud zaškrtnete toto políčko, systém vypočítá parametry plánu zaměstnaneckých výhod na základě částky příspěvku, kterou zaměstnanec zadá do samoobsluhy zaměstnaneckých výhod. |
+   | **Povolit částku příspěvku zaměstnance** | Určuje, zda mají mít zaměstnanci při výběru zaměstnaneckých výhod v případě zaměstnaneckých výhod možnost upravovat částku příspěvku na samoobslužné služby. Pokud zaškrtnete toto políčko, systém vypočítá parametry plánu zaměstnaneckých výhod na základě částky příspěvku, kterou zaměstnanec zadá v samoobsluze zaměstnaneckých výhod. |
    | **Povolit částku pokrytí zaměstnance** | Určuje, zda mají mít zaměstnanci při výběru zaměstnaneckých výhod v případě zaměstnaneckých výhod možnost upravovat částku pokrytí na samoobslužné služby. Pokud zaškrtnete toto políčko, systém vypočítá parametry plánu zaměstnaneckých výhod na základě částky pokrytí, kterou zaměstnanec zadá do samoobsluhy zaměstnance. |
 
 6. Zvolte **Uložit**. 

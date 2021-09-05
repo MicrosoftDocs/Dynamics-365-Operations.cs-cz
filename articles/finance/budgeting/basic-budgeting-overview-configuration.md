@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343649"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -38,7 +38,7 @@ Vytvoření položek registru rozpočtu lze několika způsoby:
 
 -   Ručně zadat informace o dokumentu na stránce **položky registru rozpočtu**.
 -   Použijte šablonu aplikace Microsoft Excel, kterou lze otevřít kliknutím na tlačítko **Otevřít v aplikaci Excel** na stránce **Položky registru rozpočtu**.
--   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí **zpracování** parametru **Založeno na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
+-   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí parametru **Zpracování založené na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
 -   Pokud společnost používá funkci plánování rozpočtu pro přípravu dat rozpočtu, můžete použít periodické zpracování **Generovat položku registru rozpočtu**.
 
 Položka registru rozpočtu je považována za dokončenou po aktualizaci rozpočtového zůstatku. Na stránce **Položky registru rozpočtu** klikněte na **Aktualizovat rozpočtové zůstatky** pro výběr položky registru rozpočtu nebo více položek. Po provedení aktualizace zůstatků rozpočtu se stav položky rozpočtu registru změní na **Dokončeno**. Dokončená položka registru rozpočtu nemůže být znovu otevřena pro úpravy. Proto, chcete-li upravit data rozpočtu, musíte vytvořit novou položku registru rozpočtu namísto opravy dat v dokončené položce registru rozpočtu.

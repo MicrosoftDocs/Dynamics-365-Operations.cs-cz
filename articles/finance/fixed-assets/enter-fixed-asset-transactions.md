@@ -1,8 +1,8 @@
 ---
 title: Možnosti transakce dlouhodobého majetku
 description: Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344683"
 ---
 # <a name="fixed-asset-transaction-options"></a>Možnosti transakce dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
 
@@ -58,14 +59,16 @@ Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hl
 | Odpisy                        | Dlouhodobý majetek             | Dlouhodobý majetek                              |
 |                                     | Hlavní kniha           | Hlavní deník                           |
 | Vyřazení                            | Dlouhodobý majetek             | Dlouhodobý majetek                              |
-| ** **                               | Hlavní kniha           | Hlavní deník                           |
-| ** **                               | Pohledávky      | Volné faktury                         |
+|                                     | Hlavní kniha           | Hlavní deník                           |
+|                                     | Pohledávky      | Volné faktury                         |
 
-Zbývající hodnota období odpisu dlouhodobého majetku se neaktualizuje, pokud je řádek deníku typu transakce odpisu vytvořený nebo importovaný prostřednictvím datové entity. Tato hodnota je aktualizována při použití procesu schválení odpisu pro vytvoření řádku deníku.
+Zbývající hodnota období odpisu dlouhodobého majetku se neaktualizuje, pokud je řádek deníku typu transakce odpisu vytvořený nebo importovaný prostřednictvím datové entity. Zbývající hodnota je aktualizována při použití procesu schválení odpisu pro vytvoření řádku deníku.
 
 Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Transakce, které vyžadují různá čísla dokladů
+Systém zabrání účtování odpisů dvakrát za stejné období. Pokud například dva uživatelé vytvoří návrhy odpisů samostatně za leden, odpisy od prvního uživatele budou zaúčtovány do prvního deníku. Když druhý uživatel zaúčtuje odpisy ve druhém deníku, systém zkontroluje datum, kdy došlo k poslednímu spuštění odpisu, a pro stejnou dobu nebude účtovat odpisy za stejné období.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Transakce, které vyžadují různá čísla dokladů
 
 Následující transakce s dlouhodobým majetkem budou používat různá čísla dokladů:
 

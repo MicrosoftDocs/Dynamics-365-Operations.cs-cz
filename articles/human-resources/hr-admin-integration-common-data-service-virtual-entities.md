@@ -1,8 +1,8 @@
 ---
 title: Konfigurace virtuálních tabulek Dataverse
-description: Toto téma ukazuje, jak konfigurovat virtuální tabulky pro Dynamics 365 Human Resources. Můžete generovat a aktualizovat existující virtuální tabulky a analyzovat vygenerované a dostupné tabulky.
-author: andreabichsel
-ms.date: 01/25/2021
+description: Toto téma ukazuje, jak konfigurovat, generovat, aktualizovat stávající virtuální tabulky a analyzovat generované a dostupné tabulky pro Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721600"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414657"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
@@ -140,6 +140,9 @@ Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Po
 
      >[!NOTE]
      >Nezapomeňte uvést znak „**/**“ na konci adresy URL, aby nedošlo k chybě.
+
+     >[!NOTE]
+     >Cílová adresa URL určuje prostředí Human Resources, na které budou virtuální tabulky ukazovat jako na zdroj dat. Pokud vytvoříte prostředí sandbox vytvořením kopie produkčního prostředí, aktualizujte tuto hodnotu na adresu URL oboru názvů nového prostředí sandbox. Tím je zajištěno, že virtuální tabulky budou připojeny k datům prostředí sandbox, místo aby nadále ukazovaly na produkční prostředí.
 
    - **ID tenanta**: ID tenanta Azure Active Directory (Azure AD).
 

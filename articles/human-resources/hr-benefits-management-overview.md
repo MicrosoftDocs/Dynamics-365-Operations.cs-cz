@@ -1,8 +1,8 @@
 ---
 title: Přehled správy zaměstnaneckých výhod
-description: Přehled funkce správy zaměstnaneckých výhod v Dynamics 365 Human Resources. Nabídněte svým zaměstnancům rozšířené možnosti zaměstnaneckých výhod pomocí snadno použitelného online prostředí.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Toto téma obsahuje přehled funkce správy zaměstnaneckých výhod v modulu Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719136"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417385"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -37,13 +37,13 @@ Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zam
 Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolované testovací prostředí (sandbox).
 
 > [!NOTE]
-> Nyní můžete přizpůsobit formuláře pro správu výhod. Nyní můžete přidat vlastní pole související s mírou pokrytí formuláře **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
+> Nyní můžete přizpůsobit stránky pro správu výhod. Vlastní pole související s mírou pokrytí lze přidat do stránky **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
 >
 > ![Vlastních pole správy výhod](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 
-Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také sděluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí nebo jsou zakázány po zapnutí správy zaměstnaneckých výhod.
+Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také vysvětluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí a které jsou zakázány po zapnutí správy zaměstnaneckých výhod.
 
 > [!IMPORTANT]
 > Po povolení Správy zaměstnaneckých výhod v **Produkčním** prostředí ji již nelze zakázat. Doporučujeme povolit a otestovat Správu zaměstnaneckých výhod v prostředí **Sandbox** před jejím povolením v **Produkčním** prostředí. Existují významné rozdíly mezi staršími funkcemi výhod a novými funkcemi pro správu výhod, které vyžadují další nastavení a měly by být testovány před uvedením do produkce.
