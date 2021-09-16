@@ -6,6 +6,8 @@
           href: index.md
         - name: Začínáme
           items:
+            - name: Popis služby
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrace ukázkového předplatného
@@ -72,6 +74,8 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.22 (listopad 2021)
+                      href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (říjen 2021)
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (srpen 2021)
@@ -1168,8 +1172,12 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Chybějící počáteční zůstatky roční uzávěrky
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Jak nastavím vyrovnávací finanční dimenze?
+                  href: general-ledger/set-up-balance-dimensions.md
                 - name: "Otevření šablon finančního deníku v\_aplikaci Office"
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Výchozí finanční dimenze ve finančních denících
+                  href: general-ledger/dimension-default-values.md
                 - name: Selhání zaúčtování deníku z důvodu nevyváženosti
                   href: general-ledger/posting-fail-imbalance.md
                 - name: Proč nemohu tuto transakci stornovat?
@@ -1472,17 +1480,17 @@
               items:
                 - name: Přehled globalizačních služeb
                   href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory Configuration Service
+                - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Přehled Regulatory Configuration Service
+                    - name: Přehled Regulatory Configuration Service (RCS)
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service - Globalizační funkce
+                    - name: Regulatory configuration service (RCS) – Globalizační funkce
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
+                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service (RCS) a odeslání do globálního úložiště
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service - Odstranění prostředí RCS
+                    - name: Regulatory Configuration Service (RCS) – Odstranění prostředí RCS
                       href: localizations/rcs-delete-environment.md
-                    - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
+                    - name: Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                     - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
                       items:
@@ -1550,6 +1558,8 @@
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Určení
                       items:
+                        - name: Datový model pro výpočet daně
+                          href: localizations/tax-calculation-data-model-overview.md
                         - name: "Použitelnost DPH a\_logika určování skupiny DPH"
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Výpočet
@@ -1568,12 +1578,16 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
-                        - name: Vykazování pro Nizozemsko
+                        - name: Výkaznictví v Nizozemsku
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Výkaznictví ve Švédsku
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-swe-VAT-declaration-Sweden.md
                         - name: Výkaznictví ve Švýcarsku
                           items:
                             - name: Přiznání k DPH
@@ -2690,7 +2704,9 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Italský Intrastat
                   href: localizations/emea-ita-intrastat.md
-                - name: "Vedlejší náklady za kilogram v\_prohlášení Intrastat"
+                - name: Zaúčtování příchozích a odchozích zásilek pro Intrastat
+                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: "Vedlejší náklady na kilogram v\_prohlášení Intrastat"
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Předběžné smlouvy – fakturace obvyklých vývozců
                   href: localizations/emea-ita-exil-intent-letter.md
@@ -2980,11 +2996,13 @@
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
             - name: Omán
               items:
-                - name: Omán - přehled
+                - name: Omán – přehled
                   href: localizations/oman.md
+                - name: "Přiznání k\_DPH pro Omán (OM-00003)"
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Nizozemsko
               items:
-                - name: Nizozemí - přehled
+                - name: Nizozemsko – přehled
                   href: localizations/netherlands.md
                 - name: Přiznání k DPH
                   href: localizations/emea-nl-VAT-declaration.md
@@ -3366,9 +3384,13 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Sestava platby DPH pro Švédsko
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
+                - name: Přiznání k DPH pro Švédsko
+                  href: localizations/emea-swe-VAT-declaration-Sweden.md
+                - name: Švédský Intrastat
+                  href: localizations/emea-swe-intrastat.md
             - name: Švýcarsko
               items:
-                - name: Švýcarsko - přehled
+                - name: Švýcarsko – přehled
                   href: localizations/switzerland.md
                 - name: Import plateb odběratelů v ESR
                   href: localizations/emea-che-esr-customer-payments-import.md
@@ -3420,11 +3442,33 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Nastavení skupin DPH pro přenesení daňové povinnosti DPH
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Výkaznictví ve Spojeném království
+                  items:
+                    - name: Digitalizování daní (MTD) pro DPH
+                      items:
+                        - name: Podání přiznání digitalizování daní (MTD) pro DPH ve Spojeném království
+                          href: localizations/emea-gbr-mtd-vat-integration.md
+                        - name: Příprava prostředí na součinnost s webovou službou DPH MTD společnosti HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                        - name: Autorizace prostředí aplikace Finance na součinnost s webovou službou DPH MTD společnosti HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: Zkouška součinnost se sandboxem DPH MTD
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: Odeslání vratky DPH webové službě MTD společnosti HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                        - name: Kontrolní seznam pro nastavení elektronických zpráv pro DPH MTD
+                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                        - name: Generování prohlášení k DPH v papírové podobě (hlášení 100 DPH)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                        - name: Podrobnosti o nastavení DPH pro přiznání k DPH ve Spojeném království
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Načtení informací o platbách DPH a závazcích z HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
                 - name: Sestava statistik způsobů plateb
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
-            - name: Spojené státy americké
+            - name: USA
               items:
-                - name: Spojené státy - přehled
+                - name: USA – přehled
                   href: localizations/united-states.md
                 - name: Vykazování 1099 pro USA ke konci roku
                   href: localizations/noam-usa-year-end-1099-reporting.md
@@ -4147,6 +4191,30 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Import konfigurací (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Přehled Regulatory Configuration Service (RCS)
+                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+                    - name: Stažení konfigurací elektronického výkaznictví do aplikace Finance
+                      items:
+                        - name: Stažení konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Import konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globální úložiště
+                      items:
+                        - name: Import konfigurací z globálního úložiště
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Odeslání konfigurací do globálního úložiště
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Sdílení konfigurací v globálním úložišti
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Ukončení konfigurací v globálním úložišti RCS
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Průvodci pro rychlé zahájení práce
               items:
                 - name: Úprava formátu elektronického výkaznictví pro vygenerování vlastního elektronického dokumentu
@@ -4207,11 +4275,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace zdrojů dat VYHLEDÁVÁNÍ pro použití parametrů specifických pro aplikace elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Použití zdrojů dat SHROMAŽĎOVÁNÍ DAT ve formátech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Ladění zdrojů dat
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace mapování modelu
                   items:
-                    - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
+                    - name: Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4275,6 +4345,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurace cílových míst závislých na akcích
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurace cílových míst elektronického výkaznictví pro záznamy pro správu tisku
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
                 - name: Nastavení odkazu na formát elektronického výkaznictví
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Automatické ověření generovaných sestav
@@ -4317,12 +4389,14 @@
                   items:
                     - name: Application Update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-                    - name: Application Update 10.0.11
+                    - name: Aktualizace aplikace 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Application Update 10.0.17
+                    - name: Aktualizace aplikace 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
-                    - name: Application Update 10.0.19
+                    - name: Aktualizace aplikace 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
+                    - name: Aktualizace aplikace 10.0.21
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
@@ -4333,7 +4407,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
-        - name: Aplikace pro mobilní zařízení
+                - name: 'Změna kódu, aby uživatelé mohli konfigurovat a používat pojmenované cíle elektronického výkaznictví'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+        - name: Mobilní aplikace
           items:
             - name: Domovská stránka mobilní aplikace
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/finance/toc.json

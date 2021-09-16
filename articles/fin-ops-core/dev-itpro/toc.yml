@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Co je nového a co se změnilo v aktualizacích Platform Update
               items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Update"
+                - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
-                - name: Nástroj Platform Update pro verzi 10.0.21 (říjen 2021)
+                - name: Nástroj Platform Updates pro verzi 10.0.22 (listopad 2021)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
+                - name: Nástroj Platform Updates pro verzi 10.0.21 (říjen 2021)
                   href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: Nástroj Platform Update pro verzi 10.0.20 (srpen 2021)
+                - name: Nástroj Platform Updates pro verzi 10.0.20 (srpen 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Nástroj Platform Update pro verzi 10.0.19 (červen 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -586,28 +588,26 @@
                   href: dev-tools/projects.md
                 - name: Doplňky nástrojů pro Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
-                - name: Aktualizace vývojových nástrojů Visual Studio
+                - name: Aktualizace vývojářských nástrojů Visual Studio
                   href: dev-tools/update-development-tools.md
             - name: Programovací jazyk X++
               items:
-                - name: X++ a funkce ladicího programu
-                  href: dev-tools/new-x-debugger-features.md
-                - name: Visual Studio 2017 požadavky pro X++
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: Ladění kódu X++
-                  href: dev-tools/debug-xpp.md
-                - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
-                  href: dev-tools/event-handler-result-class.md
-                - name: Psaní obchodní logiky pomocí zdrojového kódu C# a X++
-                  href: dev-tools/write-business-logic.md
-                - name: Změny v X++ a kompilátor X++
-                  href: dev-tools/programming-language-support.md
-                - name: Poskytovatel LINQ pro C#
-                  href: dev-tools/linq-provider-c.md
-                - name: Psaní pravidel osvědčených postupů
-                  href: dev-tools/author-best-practice-rules.md
-                - name: Vlastnosti průzkumníka aplikací
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: Podpora pro jazyk X++
+                  items:
+                    - name: Visual Studio 2017 požadavky pro X++
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: Ladění kódu X++
+                      href: dev-tools/debug-xpp.md
+                    - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
+                      href: dev-tools/event-handler-result-class.md
+                    - name: Psaní obchodní logiky pomocí zdrojového kódu C# a X++
+                      href: dev-tools/write-business-logic.md
+                    - name: Poskytovatel LINQ pro C#
+                      href: dev-tools/linq-provider-c.md
+                    - name: Psaní pravidel osvědčených postupů
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: Vlastnosti průzkumníka aplikací
+                      href: dev-ref/application-explorer-aot-properties.md
                 - name: Jazykové reference pro X++
                   items:
                     - name: Přehled jazykové reference pro X++
@@ -652,7 +652,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Knihovny
                           href: dev-ref/xpp-library-objects.md
-                        - name: Události
+                        - name: Události a delegáti
                           href: dev-ref/xpp-events.md
                     - name: X++ výběr dat a manipulace
                       items:
@@ -906,9 +906,11 @@
               href: dev-tools/date-effectivity.md
             - name: Vývoj pro nezávislé dodavatele softwaru
               items:
-                - name: Propojení modulů X++ s balíčky pomocí ISV Studio
+                - name: Domovská stránka nezávislého výrobce softwaru
+                  href: dev-tools/isv-dev-home-page.md
+                - name: Propojení modulů X++ s balíčky pomocí Studia nezávislého výrobce softwaru
                   href: dev-tools/isv-studio-solutions.md
-                - name: Licencování nezávislých výrobců softwaru
+                - name: Licencování nezávislého výrobce softwaru
                   href: dev-tools/isv-licensing.md
                 - name: Licencování nezávislých výrobců pro místní nasazení
                   href: dev-tools/isv-licensing-on-prem.md
@@ -1018,6 +1020,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Návod pro dotazy
               href: lifecycle-services/querycookbook.md
+            - name: Platnost předplatného a vymazání dat vypršela
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Přehled služby Dynamics 365 Translation Service
@@ -1048,6 +1052,8 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: Úvahy o počáteční synchronizaci
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Limity pro živou synchronizaci
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Nastavení duálního zápisu z Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
                     - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
