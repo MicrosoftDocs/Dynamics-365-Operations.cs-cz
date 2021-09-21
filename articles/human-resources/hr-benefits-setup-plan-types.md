@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423337"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431385"
 ---
 # <a name="plan-type-overview"></a>Přehled typů plánů
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423337"
 
 Typ plánu je skupina na vysoké úrovni pro specifické typy zaměstnaneckých výhod. Každý typ plánu má kód typu plánu, který určuje pravidla pro typ plánu. Například typ **základního životního** plánu bude mít kód typu plánu **Životní**, protože se jedná o typ plánu životního pojištění a musí vyhovovat pravidlům stanoveným pro kód typu plánu **životního** pojištění. Jiný typ plánu může být **Doplňkové životní**. Tento typ plánu bude mít také **Životní** kód typu plánu.
 
-Každý typ plánu určuje, zda může zaměstnanec zaregistrovat jeden nebo více plánů. Zaměstnanec by například mohl být schopen zaregistrovat se pro základní a doplňkové životní pojištění u typu plánu životní. Zaměstnanec by pravděpodobně mohl zaregistrovat pouze jednu pojistku typu Zdravotní.
+Každý typ plánu určuje, zda může zaměstnanec zaregistrovat jeden nebo více plánů. Zaměstnanec by například mohl být schopen zaregistrovat se pro **základní** a **doplňkové životní** pojištění u typu plánu životní. Zaměstnanec by pravděpodobně mohl zaregistrovat pouze jednu pojistku typu Zdravotní.
 
-Pokud typ plánu zahrnuje kontakty, typ plánu indikuje, zda jsou kontakty příjemci nebo závislé osoby. Základní typ životního plánu by měl mít například oprávněné osoby, zatímco základní typ lékařského plánu by měl závislé osoby. V některých případech nesmí mít plán žádné osobní kontakty. Jedná se například o pružný účet výdajů nebo doplatek za parkování.
+Pokud typ plánu zahrnuje kontakty, typ plánu indikuje, zda jsou kontakty příjemci nebo závislé osoby. **Základní typ životního plánu** by měl mít například oprávněné osoby, zatímco základní typ lékařského plánu by měl závislé osoby. V některých případech nesmí mít plán žádné osobní kontakty. Jedná se například o pružný účet výdajů nebo doplatek za parkování.
 
-Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definovány ve stránce **Možnosti pokrytí**. Možnost pokrytí může určovat výši zaměstnanecké výhody nebo kontakty, které mají nárok na typ plánu. Je-li například typem kontaktu příjemce, možnost pokrytí by měla definovat podmínky, které má příjemce nárokovat, pokud je výhoda využívána. Je-li typ kontaktu závislá osoba, možnost pokrytí by měla definovat vztah mezi závislou osobou a zaměstnancem. 
+
+Typ plánu může definovat možnosti pokrytí. Možnosti pokrytí jsou definovány ve stránce **Možnosti pokrytí**. Možnost pokrytí může určovat výši zaměstnanecké výhody nebo kontakty, které mají nárok na typ plánu. Je-li například typem kontaktu **příjemce**, možnost pokrytí by měla definovat podmínky, které má příjemce nárokovat, pokud je výhoda využívána. Je-li typ kontaktu **závislá osoba**, možnost pokrytí by měla definovat vztah mezi závislou osobou a zaměstnancem. 
 
 > [!IMPORTANT]
-> Stránka obsahuje klíčová data, která ovlivňují možnosti, které jsou k dispozici při vytváření nového plánu výhod:
+> Stránka **Typy plánu** obsahuje klíčová data, která ovlivňují možnosti, které jsou k dispozici při vytváření nového plánu výhod:
 >
 > - **Kód typu plánu** - Toto pole ovlivňuje to, co je zobrazeno na kartě **Konfigurace**, když je nastavena skutečná výhoda.  
 > - **Souběžná registrace** - Toto pole určuje, zda je povoleno více registrací. (U lékařského plánu je toto pole obvykle nastaveno na **Jedna registrace**.)

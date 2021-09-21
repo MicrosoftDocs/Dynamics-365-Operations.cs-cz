@@ -2,7 +2,7 @@
 title: Nastavení klienta B2C v Commerce
 description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344491"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466261"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacíc
 
 > [!TIP]
 > Můžete dále chránit uživatele svých stránek a zvýšit bezpečnost svých klientů Azure AD B2C pomocí Ochrany identity a podmíněný přístup k Azure AD. Chcete-li zkontrolovat možnosti, které mají k dispozici klienti Azure AD B2C Premium P1 a Premium P2, viz [Ochrana identity a podmíněný přístup k Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Předpoklady prostředí Dynamics
+
+Než začnete, ujistěte se, že vaše prostředí Dynamics 365 Commerce a kanál elektronického obchodování jsou odpovídajícím způsobem konfigurovány splněním následujících předpokladů.
+
+- Nastavte hodnotu operací POS **AllowAnonymousAccess** na "1" v centrále Commerce:
+    1. Jděte na **Operace POS**.
+    1. Klikněte pravým tlačítkem myši na mřížku a vyberte **Přizpůsobit**.
+    1. Vyberte **Přidat pole**.
+    1. V seznamu dostupných sloupců vyberte sloupec **AllowAnonymousAccess** pro přidání.
+    1. Vyberte **Aktualizovat**.
+    1. Pro operaci **612** „Přidání zákazníka“ změňte **AllowAnonymousAccess** na „1.“
+    1. Spusťte úlohu **1090 (Registry)**.
+- Nastavte atribut **Ruční** zákaznického účtu číselné sekvence na **Ne** v centrále Commerce:
+    1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Parametry závazků**.
+    1. Vyberte **číselné sekvence**.
+    1. Na řádku **Zákaznický účet** dvakrát klikněte na hodnotu **Kód číselné sekvence**.
+    1. Na záložce s náhledem **Obecné** číselné sekvence nastavte **Ruční** na **Ne**.
+
+Po nasazení vašeho prostředí Dynamics 365 Commerce se také doporučuje [inicializovat zdrojová data](enable-configure-retail-functionality.md) v prostředí.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Vytvoření nebo připojení ke stávajícími klientovi AAD B2C v portálu Azure
 

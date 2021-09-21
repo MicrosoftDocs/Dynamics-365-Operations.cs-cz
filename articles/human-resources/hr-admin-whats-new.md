@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 640a9bc9c0514d395b0fb216c0eb38bf8483242e
-ms.sourcegitcommit: fc19ee0aba2a6174fef305d151f1eb23ca6c0346
+ms.openlocfilehash: e59ef82551bc4dba444405c0ea63e1bdfa1f7b17
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7383226"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441306"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
@@ -40,6 +40,7 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém čtrnáctidenním vydání aplikace Human Resources, naleznete to v následujících tématech:
 
+[23. srpna 2021](hr-whats-new-2021-08-23.md)</br>
 [9. srpna 2021](hr-whats-new-2021-08-09.md)</br>
 [26. července 2021](hr-whats-new-2021-07-26.md)</br>
 [12. července 2021](hr-whats-new-2021-07-12.md)</br>

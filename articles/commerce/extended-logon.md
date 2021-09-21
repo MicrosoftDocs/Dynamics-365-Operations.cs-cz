@@ -1,8 +1,8 @@
 ---
 title: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
 description: Toto téma zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS).
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748539"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478664"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
 
@@ -58,6 +58,8 @@ Ve výchozím nastavení pouze manažeři mohou přiřadit rozšířené přihl�
 Pokud chcete odstranit rozšířené přihlášení přiřazené k pracovníkovi, vyhledejte pracovníka pomocí operace **Rozšířené přihlášení**. Vyberte pracovníka a klikněte na možnost **Zrušit přiřazení**. Budou odebrány všechny rozšířené přihlašovací údaje, které jsou přidruženy k danému pracovníkovi.
 
 ## <a name="extending-extended-logon"></a>Rozšíření rozšířeného přihlášení
+
+Rozšířené přihlášení umožňuje, aby implicitně bylo jako jedinečný identifikátor používáno pouze pět významných znaků. Pokud například nakonfigurujete dvě karty s ID „1234567“ a „1234578“, budou obě považovány za „12345“. Můžete vytvořit rozšíření pro podporu více znaků. Podrobný návod najdete v tématu [Rozšíření funkce Extended Logon pro MPOS a Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Službu pro přihlášení lze rozšířit o podporu dalších zařízení pro rozšířené přihlášení, jako jsou čtečky dlaní. Další informace naleznete v dokumentaci k rozšíření služby POS.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393516"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441158"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -43,6 +43,11 @@ Aby bylo možné zřídit nové produkční prostředí, musí být splněny ná
 Před zřízením prvního sandboxu nebo produkčního prostředí můžete zřídit [Zkušební prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) k ověření funkčnosti Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. 
 
 Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 60denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
+
+Při vytváření zkušebního prostředí pro lidské zdroje je v klientovi také vytvořeno zkušební prostředí Power Apps a je propojeno s prostředím lidských zdrojů. Prostředí Power Apps s názvem „TestDrive“ má stejné zkušební období jako prostředí lidských zdrojů.
+
+> [!NOTE]
+> Zřízení zkušebního prostředí lidských zdrojů se nezdaří, pokud ověřený uživatel nemá oprávnění k vytváření zkušebního prostředí Power Apps. Uživatel musí být zařazen do skupiny uživatelů, kteří mohou vytvářet zkušební prostředí v centru pro správu Power Platform. Další informace viz [Řízení, kdo může vytvářet a spravovat prostředí v centru pro správu Power Platform](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Plánování prostředí Human Resources
 
@@ -69,7 +74,7 @@ Pokud chcete použít ke správě svého prostředí aplikace Human Resources sl
 1. Přihlaste se do [LCS](https://lcs.dynamics.com/Logon/Index) pomocí účtu, který jste použili pro přihlášení se k odběru aplikace Human Resources.
 
    > [!NOTE]
-   > Aby bylo zajištěno úspěšné zřízení, účet, který používáte k zřízení prostředí Human Resources, musí být přiřazen buď roli **Správce systému**, nebo **Přizpůsobení systému** v prostředí Power Apps spojeném s prostředím Human Resources. Viz [Konfigurace zabezpečení uživatelů na prostředky](/power-platform/admin/database-security), kde najdete další informace o přiřazení rolí zabezpečení uživatelům v Power Platform.
+   > Aby bylo zajištěno úspěšné zřízení, účet, který používáte k zřízení prostředí Human Resources, musí být přiřazen buď roli **Správce systému**, nebo **Přizpůsobení systému** v prostředí Power Apps spojeném s prostředím Human Resources. Další informace o přiřazení rolí zabezpečení uživatelům v Power Platform získáte v části [Konfigurace zabezpečení uživatele u zdrojů](/power-platform/admin/database-security).
 
 2. Vyberte znaménko plus (**+**) a vytvořte projekt.
 

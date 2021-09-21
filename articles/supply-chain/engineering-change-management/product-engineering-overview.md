@@ -2,7 +2,7 @@
 title: Přehled správy technických změn
 description: Toto téma poskytuje přehled správy technických změn, která vám pomůže plánovat a spravovat verzování produktu a spravovat životní cykly produktu a technických změn.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714949"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467391"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -43,9 +43,11 @@ Správa technických změn vám pomáhá plánovat a spravovat verzování produ
 
 Předchozí video ([Možnosti správy změn v Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) je součástí [seznamu videí o Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), které jsou k dispozici na YouTube.
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Zapnutí funkcí správy technických změn a dimenze verzí pro systém
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Zapněte pro svůj systém funkce správy technických změn
 
-Než budete moci používat funkci správy technických změn, musíte povolit funkci *správy technických změn* a její konfigurační klíč. Pokud chcete také sledovat dimenzi verze produktů v transakcích (volitelně), musíte povolit také funkci *Dimenze verze produktu* a její konfigurační klíč.
+Než budete moci používat funkci správy technických změn, musíte povolit funkci *správy technických změn* a její konfigurační klíč. Pokud chcete také sledovat dimenzi verze produktů v transakcích (volitelně), musíte povolit také funkci *Dimenze verze produktu* a její konfigurační klíč. Po nastavení těchto předpokladů podle potřeby budete moci zapnout další volitelné funkce pro správu technických změn.
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>Zapněte pro svůj systém základní funkce správy technických změn
 
 Správci mohou funkce zapnout provedením následujících kroků.
 
@@ -53,6 +55,8 @@ Správci mohou funkce zapnout provedením následujících kroků.
 1. Zkontrolovat aktualizace.
 1. Zapněte funkci s názvem *Správa technických změn*.
 1. Chcete-li ji použít, zapněte také funkci s názvem *Verze dimenze produktu*.
+
+### <a name="turn-on-the-required-configuration-keys"></a>Zapněte požadované konfigurační klíče
 
 Správci mohou zapnout konfigurační klíče provedením následujících kroků.
 
@@ -70,5 +74,18 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 
 > [!IMPORTANT]
 > Od dubna 2022 budou licenční klíče pro jak **Správu technických změn**, tak pro **Rozměr produktu - verze** ve výchozím nastavení povoleny pro všechny nové instalace, ale v případě potřeby je stále budete moci deaktivovat.
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>Zapněte pro svůj systém další funkce správy technických změn
+
+Poté, co zapnete základní funkce správy technických změn a povolíte jejich konfigurační klíče, bude do správy funkcí přidáno několik dalších a volitelných funkcí správy technických změn. Každá z těchto funkcí je uvedena v modulu **Řízení technických změn**. Následující tabulka popisuje každou volitelnou funkci a poskytuje odkazy na další informace.
+
+| Název funkce ve správě funkcí | popis |
+|---|---|
+| Povolení správy změn u stávajících produktů | <p>Tato funkce vám umožňuje převést stávající produkty na technické produkty, abyste je mohli začít spravovat pomocí správy technických změn.</p><p>Další informace naleznete v tématu [Povolení změnového řízení u existujících produktů](change-management-existing-products.md).</p> |
+| Technická oznámení pro výrobu | <p>Když se produkt změní v technickém zpracování, může být důležité informovat výrobu o těchto změnách. Pracovníci ve výrobě tak mohou podniknout příslušná opatření, jako je náhrada součástí, výměna kusovníku nebo výměna trasy. Tato funkce vám umožňuje informovat produkci o změnách vyráběných produktů.</p><p>Další informace naleznete v tématu [Správa změn technických produktů](engineering-change-management.md).</p> |
+| Vylepšená dědičnost atributů pro Řízení technických změn | <p>Tato funkce zjednodušuje správu atributů pro hotové výrobky nebo meziprodukty. Když je tato funkce zapnutá, je snazší identifikovat všechny atributy, které patří k položce, a můžete vybrat atributy, které se mají šířit z této položky do její nadřazené položky. Tato funkce je užitečná, když je například jedna složka hotového zboží křehká, toxická nebo hořlavá, protože křehký, toxický nebo hořlavý atribut můžete snadno identifikovat a šířit do hotového zboží.</p><p>Další informace viz [Technické atributy a vyhledávání technických atributů](engineering-attributes-and-search.md).</p> |
+| Kontroly připravenosti produktu | <p>Tato funkce umožňuje nastavit kontroly připravenosti na standardní (netechnické) produkty. Pomocí kontroly připravenosti produktu zajistěte, aby byl každý produkt plně definován a aby byly nakonfigurovány všechny požadované zásady, než bude produkt zpřístupněn a použit v transakcích. Pokud tuto funkci po chvíli použijete, všechny stávající kontroly připravenosti standardních produktů budou odstraněny.</p><p>Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).</p> |
+| Spravujte změny v recepturách a jejich látkách | <p>Tato funkce vám umožní sledovat změny přísad, vedlejších produktů a doprovodných produktů.</p><p>Další informace viz [Spravujte změny v recepturách a jejich látkách](manage-formula-changes.md).</p> |
+| Generování varianty pro technické produkty | <p>Tato funkce vám umožňuje generovat varianty pro technické produkty na základě dostupných hodnot dimenzí.</p><p>Další informace viz [Generování variant pro strojírenské výrobky](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

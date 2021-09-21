@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774402"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463609"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -32,7 +32,29 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Oznámení o ukončení podpory funkce od května 2021
+## <a name="feature-deprecation-effective-august-2021"></a>Oznámení o ukončení podpory funkce od srpna 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Sestavy Microsoft Azure SQL ve službě Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých sestav SQL. Sestavy již nebudete muset sledovat, protože tato funkce byla nahrazena jinými službami. |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Sestavy SQL: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
+| **Stav**                         | Zastaralé: Plánované datum odstranění v říjnu 2021. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Akce Azure SQL v LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých akcí SQL.  |
+| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Ovlivněné oblasti produktu**         | Akce SQL: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
+| **Stav**                         | Zastaralé: Plánované datum odstranění v říjnu 2021. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Oznámení o ukončení podpory funkce od května 2021
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Portál globalizace Lifecycle Services (LCS)
 

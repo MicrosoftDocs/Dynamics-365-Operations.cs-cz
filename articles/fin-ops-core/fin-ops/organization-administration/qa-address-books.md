@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5809d4a29c4209d8fb42bdfd441a3a4fb201ca6c6318abc0315a02ead7c551de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759154"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463608"
 ---
 # <a name="address-books-faq"></a>Často kladené dotazy o adresáři
 
@@ -66,10 +66,12 @@ Můžete zadat záznamy strany buď v globálním adresáři nebo na stránce p�
 
 Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) ve vaší aplikaci, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
 
-## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Proč po importu adres nemohu upravovat importované adresy, když přistupuji k záznamům?
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Proč nemohu po importu adres upravit záznamy?
 
-Při importu adres je pole označené **IsLocationOwner**, což označuje, zda strana, která je přidružena k místu (adrese), je vlastníkem adresy. Pokud je strana vlastníkem adresy, lze adresu upravit při přístupu pomocí strany v globálním adresáři nebo z formuláře hlavního záznamu (například zákazník, prodejce nebo pracovník). Pokud strana není vlastníkem adresy, nelze záznam upravit z dříve uvedených formulářů. Při importu adres se musí **IsLocationOwner** nastavit na **Ano**, chcete-li adresu upravit pomocí přidružené strany. Existují však chvíle, kdy je toto pole importováno nesprávně. Chcete-li tento problém vyřešit, vlastníka místa lze aktualizovat v globálním adresáři ze záznamu strany nebo ze stránky **Potvrdit vlastníky umístění**. Chcete-li aktualizovat záznam jedné strany, přejděte na **Globální adresář > Adresa**. Vyberte **Upravit** ke spuštění stránky **Upravit adresu** ke změně vlastníka umístění. Vyberte **Změnit vlastníka umístění** k zobrazení předchozího vlastníka místa, přičemž novým vlastníkem místa je aktuálně vybraná strana. Pokud je předchozí vlastník místa prázdný, znamená to, že vlastník místa nebyl uveden. Výběr možnosti **Pokročilé** otevře stránku **Spravovat adresy**, kde lze také nastavit vlastníka umístění. Vyberte umístění, které chcete aktualizovat, a poté vyberte **Nastavit vlastníka umístění** z nabídky. Chcete-li aktualizovat vlastníka umístění pro více záznamů, přejděte na **Globální adresář > Umístění > Potvrzení vlastníků umístění**. Seznam obsahuje umístění, která jsou propojena s jednou stranou, ale tato strana není vlastníkem. Výběr **Potvrdit vlastníka** nastaví **Navrhované ID strany vlastníka** na vlastníka propojené adresy. Jakmile je strana nastavena jako vlastník, propojenou adresu lze upravit ze záznamu strany. Chcete-li změnit vlastníka umístění, musíte mít přidělené oprávnění **Nastavit vlastníka umístění** na straně **Konfigurace zabezpečení**.  Správci systému je toto oprávnění uděleno ve výchozím nastavení.
+Při importu adres je pole s názvem **IsLocationOwner**. Toto pole udává, zda strana, která je spojena s místem (adresou), je vlastníkem adresy. Pokud je strana vlastníkem adresy, lze adresu upravit při použití strany v globálním adresáři nebo z formuláře hlavního záznamu (například zákazník, prodejce nebo pracovník). Pokud strana není vlastníkem adresy, záznam nelze upravit. 
 
+Při importu adres by mělo pole **IsLocationOwner** být nastaveno na **Ano**, chcete-li adresu upravit pomocí přidružené strany. Pokud je toto pole importováno nesprávně, vlastníka umístění lze aktualizovat v globálním adresáři.
+
+Další informace o tom, jak změnit vlastníka umístění importované adresy, najdete v tématu [Správa vlastníků lokality](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

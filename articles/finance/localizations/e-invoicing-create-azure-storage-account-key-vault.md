@@ -2,7 +2,7 @@
 title: Vytvořte účet úložiště Azure a trezor klíčů
 description: Toto téma vysvětluje, jak vytvořit účet úložiště Azure a trezor klíčů.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a0fe265c75138f3ecfbf08de3c30b2c824463afc35414986e21c4a27bf84bb61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23fec7a00d800719e1a7d2c90f9d0977d56be038
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770529"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463835"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Vytvořte účet úložiště Azure a trezor klíčů
 
@@ -43,9 +43,9 @@ V tomto tématu provedete dva hlavní kroky:
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Nastavte účet úložiště Azure a získejte identifikátor URI účtu úložiště
 
 1. Otevřete účet úložiště, který plánujete použít s Elektronickou fakturací.
-2. Přejděte na **Služba Blob** \> **Kontejnery** a vytvořte nový kontejner.
+2. Přejděte na **Úložiště dat** > **Kontejnery** a vytvořte nový kontejner.
 3. Zadejte název kontejneru a nastavte pole **Úroveň veřejného přístupu** na **Soukromé (bez anonymního přístupu)**.
-4. Otevřete kontejner a přejděte na **Nastavení \> Zásady přístupu**.
+4. Otevřete kontejner a přejděte na **Nastavení** > **Zásady přístupu**.
 5. Vyberte **Přidat zásady**, chcete-li přidat uloženou zásadu přístupu.
 6. Nastavte pole **Identifikátor** a **Oprávnění** dle potřeby. V poli **Oprávnění** byste měli vybrat všechna oprávnění.
 
@@ -53,11 +53,11 @@ V tomto tématu provedete dva hlavní kroky:
 
 7. Zadejte data zahájení a ukončení platnosti. Doba použitelnosti by měla být v budoucnu.
 8. Vyberte **OK** pro uložení zásad a poté uložte změny do kontejneru.
-9. Vraťte se do účtu úložiště a otevřete **Průzkumník úložiště (náhled)**.
-10. Klikněte pravým tlačítkem na kontejner a poté vyberte **Získejte sdílený přístupový podpis**.
-11. V dialogovém okně **Sdílený přístupový podpis** zkopírujte a uložte hodnotu do pole **URI**. Tato hodnota bude použita v dalším postupu a bude označována jako *sdílený přístupový podpis URI*.
-
-    ![Výběr a kopírování hodnoty URI.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+9. Jděte na **Nastavení** > **Tokeny sdíleného přístupu** a nastavte hodnoty pole. 
+10. Zadejte počáteční a koncové datum. Koncové datum by mělo být v budoucnu.
+11. V poli **Oprávnění** vyberte následující oprávnění: **Číst**, **Přidat**, **Vytvořit**, **Napsat**, **Vymazat** a **Seznam**. 
+12. Vyberte **Vygenerovat token a URL SAS**.
+13. Zkopírujte a uložte hodnotu do pole **Adresa URL URL objektu blob**. Tato hodnota bude použita v dalším postupu a bude označována jako *sdílený přístupový podpis URI*.
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Nastavte trezor klíčů pro uložení URI účtu úložiště
 
@@ -65,7 +65,7 @@ V tomto tématu provedete dva hlavní kroky:
 2. Přejděte na **Nastavení** \> **Tajné kódy** a potom vyberte **Generovat / importovat** pro vytvoření nového tajného kódu.
 3. Na stránce **Vytvořte tajný kód** v poli **Možnosti nahrávání** vyberte **Manuální**.
 4. Zadat název tajného kódu. Tento název bude použit během instalace služby v Regulatory Configuration Service (RCS) a bude označován jako *tajný název trezoru klíčů*.
-5. V poli **Hodnota** vyberte **URI sdíleného přístupového podpisu** a potom vyberte **Vytvořit**.
+5. Do pole **Hodnota** zadejte identifikátor URI sdíleného přístupového podpisu, který jste zkopírovali v předchozím postupu, a poté vyberte **Vytvořit**.
 6. Nastavte zásady přístupu a udělte Elektronické fakturaci správnou úroveň zabezpečeného přístupu k tajnému kódu, který jste vytvořili. Přejděte na **Nastavení \> Zásady přístupu** a vyberte **Přidat zásady přístupu**.
 7. Nastavte tajná oprávnění pro operace **Získat** a **Seznam**.
 
@@ -77,7 +77,7 @@ V tomto tématu provedete dva hlavní kroky:
 
 9. V poli **Vybrat objekt zabezpečení** vyberte **Není vybrán žádný**.
 10. V dialogovém okně **Objekt zabezpečení** vyberte objekt zabezpečení přidáním **Služba elektronické fakturace**.
-11. Vyberte **Přidat** a potom vyberte **Uložit změny Trezoru klíčů**.
+11. Vyberte **Přidat** a potom **Uložit**.
 12. Na stránce **Přehled** zkopírujte hodnotu **Název DNS** pro trezor klíčů. Tato hodnota bude použita během instalace služby v RCS a bude označována jako *identifikátor URI trezoru klíčů*.
 
 > [!NOTE]

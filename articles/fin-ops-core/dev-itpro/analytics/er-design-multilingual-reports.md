@@ -2,7 +2,7 @@
 title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718398"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473398"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Přehled
 
@@ -229,10 +231,14 @@ Jak je popsáno výše v tomto tématu, atributy **Štítek** a **Popis** každ�
 - Hodnota štítku ER, který je spojen s atributy **Štítek** je uložena v poli **Štítek** vráceného záznamu.
 - Hodnota štítku ER, který je spojen s atributy **Popis** je uložena v poli **Popis** vráceného záznamu.
 
+## <a name="performance"></a><a name=performance></a>Výkonnost
+
+Když konfigurujete komponentu formátu ER pro generování sestavy podle vašich preferencí [jazyka](#language), nebo chcete-li importovat příchozí dokument, kde je obsah analyzován vámi preferovaným jazykem, doporučujeme povolit funkci **Ukládat do mezipaměti preferovaný jazyk aktuálního uživatele pro spuštění ER** v pracovním prostoru [Správa funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md). Tato funkce pomáhá zlepšit výkon, zejména pro součásti formátu ER, které obsahují více odkazů na popisky ve vzorcích a vazbách ER a mnoho dalších pravidel [ověřování](general-electronic-reporting-formula-designer.md#TestFormula) ke generování uživatelských zpráv ve vašem preferovaném jazyce.
+
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
-- [Funkce elektronického výkaznictví](er-formula-language.md#functions)
+- [Funkce elektronického výkaznictví](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

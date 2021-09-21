@@ -1,5 +1,5 @@
 ---
-title: Nastavení viditelnosti zásob
+title: Instalace doplňku Viditelnost zásob
 description: Toto téma popisuje, jak nainstalovat doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343577"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474813"
 ---
-# <a name="set-up-inventory-visibility"></a>Nastavení viditelnosti zásob
+# <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení viditelnosti zásob
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Před instalací doplňku Viditelnost zásob musíte provést následující úk
     - `Inventory Visibility Integration.zip` (pokud je spuštěná verze Supply Chain Management starší než verze 10.0.18)
 
 > [!NOTE]
-> Mezi země a regiony, které jsou v současné době podporovány, patří Kanada (CCA, ECA), Spojené státy (WUS, EUS), Evropská unie (NEU, WEU), Spojené království (SUK, WUK) a Austrálie (EAU, SEAU) .
+> Mezi státy a regiony, které jsou v současné době podporovány, patří Kanada (CCA, ECA), Spojené státy (WUS, EUS), Evropská unie (NEU, WEU), Spojené království (SUK, WUK), Austrálie (EAU, SEAU), Japonsko (EJP, WJP) a Brazílie (SBR, SCUS).
 
 Máte-li jakékoli dotazy týkající se těchto předpokladů, obraťte se prosím na produktový tým doplňku Viditelnost zásob.
 
@@ -119,6 +119,9 @@ Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalu
 1. Odsouhlaste smluvní podmínky výběrem zaškrtávacího políčka **Smluvní podmínky**.
 1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení instalace obnovte stránku. Stav by se měl změnit na **Nainstalováno**.
 
+> [!IMPORTANT]
+> Pokud máte více než jedno prostředí LCS, vytvořte jinou aplikaci Azure AD pro každé prostředí. Pokud k instalaci doplňku Viditelnost zásob pro různá prostředí použijete stejné ID aplikace a ID klienta, u starších prostředí dojde k problému s tokenem. Platný bude pouze ten poslední, který byl nainstalován.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalace doplňku Viditelnost zásob
 
 Chcete-li odinstalovat doplněk Viditelnost zásob, vyberte **Odinstalovat** na stránce LCS. Proces odinstalace ukončí doplněk Viditelnost zásob, zruší registraci doplňku z LCS a odstraní všechna dočasná data uložená v mezipaměti dat doplňku Viditelnost zásob. Primární data zádob, která jsou uložena ve vašem předplatném Dataverse však nejsou smazána.
@@ -133,7 +136,7 @@ Chcete-li odinstalovat data zásob, která jsou uložena ve vašem předplatném
 
 Po odstranění těchto řešení budou odstraněna také data uložená v tabulkách.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Nastavení Supply Chain Management
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Nastavení viditelnosti zásob v Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Nasaďte integrační balíček Viditelnost zásob
 
@@ -153,8 +156,23 @@ Zkontrolujte, zda jsou ve vašem prostředí Supply Chain Management zapnuty ná
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Nastavení integrace viditelnosti zásob
 
-1. V aplikaci Supply Chain Management otevřete pracovní prostor **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** a zapněte funkci *Integrace viditelnosti zásob*.
-1. Přejděte do uzlu **Řízení zásob \> Nastavení \> Parametry integrace viditelnosti zásob** a zadejte adresu URL prostředí, ve kterém je spuštěn doplněk Viditelnost zásob. Více informací najdete v části [Vyhledání koncového bodu služby](inventory-visibility-power-platform.md#get-service-endpoint).
+Jakmile si doplněk nainstalujete, připravte systém Supply Chain Management, aby s ním pracoval, a to následujícím způsobem.
+
+1. V aplikaci Supply Chain Management otevřete pracovní prostor **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** a zapněte následující funkce:
+    - *Nastavení integrace viditelnosti zásob* - povinné.
+    - *Integrace viditelnosti zásob s posunem rezervace* - Doporučeno, ale volitelně. Vyžaduje verzi 10.0.22 nebo novější. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md).
+
+1. Přejděte do nabídky **Řízení zásob \> Nastavení \> Parametry integrace Viditelnost zásob**.
+1. Otevřete kartu **Obecné** a vytvořte následující nastavení:
+    - **Koncový bod viditelnosti zásob** - Zadejte adresu URL prostředí, ve kterém používáte Viditelnost zásob. Více informací najdete v části [Vyhledání koncového bodu služby](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maximální počet záznamů v jednom požadavku** - Nastavte na maximální počet záznamů, které chcete zahrnout do jednoho požadavku. Musíte zadat kladné celé číslo menší nebo rovné 1000. Výchozí hodnota je 512. Důrazně doporučujeme ponechat výchozí hodnotu, pokud jste neobdrželi radu od podpory společnosti Microsoft nebo si nejste jisti, že ji potřebujete změnit.
+
+1. Pokud jste povolili volitelnou funkci *Integrace viditelnosti zásob s posunem rezervace*, otevřete kartu **Posun rezervace** a vytvořte následující nastavení:
+    - **Povolit posun rezervace** - Nastavením na *Ano* povolíte tuto funkci.
+    - **Modifikátor ofsetu rezervace** - Vyberte stav transakce zásob, který bude kompenzovat rezervace provedené ve službě Viditelnost zásob. Toto nastavení určuje fázi zpracování objednávky, která spouští offsety. Fáze je sledována podle stavu transakcí zásob objednávky. Vyberte jednu z následujících možností:
+        - *Při objednávce* - Pro stav *Při transakci* objednávka odešle po vytvoření požadavek na vyrovnání. Ofsetové množství bude množství vytvořené objednávky.
+        - *Rezervovat* - Pro stav *Rezervovat objednanou transakci* objednávka odešle požadavek na vyrovnání, pokud je rezervována, vyskladněna, zaúčtována dodacím listem nebo fakturována. Požadavek bude spuštěn pouze jednou, v prvním kroku, když nastane zmíněný proces. Ofsetové množství bude množství, ze kterého se změnil stav transakce zásob *V pořadí* na *Rezervováno objednáno* (nebo pozdější stav) na příslušném řádku objednávky.
+
 1. Přejděte do uzlu **Řízení zásob \> Periodické \> Integrace viditelnosti zásob** a povolte úlohu. Všechny události změny zásob z aplikace Supply Chain Management budou nyní odeslány do Viditelnosti zásob.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

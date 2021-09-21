@@ -1,5 +1,5 @@
 ---
-title: Konfigurace doplňku Viditelnost zásob
+title: Konfigurace viditelnosti zásob
 description: Toto téma popisuje, jak konfigurovat doplněk Viditelnost zásob.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345026"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474669"
 ---
-# <a name="inventory-visibility-configuration"></a>Konfigurace doplňku Viditelnost zásob
+# <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-Toto téma popisuje, jak konfigurovat doplněk Viditelnost zásob.
+Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Úvod
 
@@ -35,27 +35,58 @@ Než začnete pracovat s Viditelností zásob, musíte dokončit následující 
 - [Konfigurace rezervace (volitelná)](#reservation-configuration)
 - [Ukázka výchozí konfigurace](#default-configuration-sample)
 
-> [!NOTE]
-> Konfigurace doplňku Viditelnost zásob můžete prohlížet a upravovat v prostředí [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration). Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfiguraci**.
+## <a name="prerequisites"></a>Předpoklady
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfigurace zdroje dat
+Než začnete, nainstalujte a nastavte doplněk Viditelnost inventáře podle popisu v tématu [Instalace a nastavení doplňku Viditelnost zásob](inventory-visibility-setup.md).
 
-Zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady patří `fno` (což znamená „aplikace Dynamics 365 Finance and Operations“) a `pos` (což znamená „prodejní místo“).
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Povolení funkcí Viditelnost zásob ve správě funkcí Power Apps
 
-Konfigurace zdroje dat obsahuje následující části:
+Doplněk Viditelnost zásob přidává do vašeho systému několik nových funkcí instalace Power Apps. Ve výchozím nastavení jsou tyto funkce vypnuté. Chcete-li je použít, otevřete stránku **Konfigurace** v Power Apps a potom na kartě **Správa funkcí** zapněte následující funkce.
 
-- Dimenze (mapování dimenzí)
-- Fyzická míra
-- Vypočtená míra
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
+
+Pokud neznáte správný koncový bod služby Viditelnost zásob, otevřete stránku **Konfigurace** v Power Apps a poté vyberte v pravém horním rohu příkaz **Zobrazit koncový bod služby**. Na stránce se zobrazí správný koncový bod služby.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Stránka Konfigurace aplikace Viditelnost zásob
+
+V Power Apps stránka **Konfigurace** [aplikace Viditelnost zásob](inventory-visibility-power-platform.md) vám pomůže nastavit konfiguraci množství na skladě a konfiguraci předběžných rezervací. Po instalaci doplňku obsahuje výchozí konfigurace hodnotu ze softwaru Microsoft Dynamics 365 Supply Chain Management (zdroj dat `fno`). Výchozí nastavení můžete zkontrolovat. Navíc na základě vašich obchodních požadavků a požadavků na účtování zásob vašeho externího systému můžete upravit konfiguraci a standardizovat tak způsob, jakým mohou být změny v inventáři zaúčtovány, organizovány a dotazovány z různých systémů. Zbývající části tohoto tématu vysvětlují, jak používat každou část stránky **Konfigurace**.
+
+Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfiguraci**.
+
+## <a name="data-source-configuration"></a>Konfigurace zdroje dat
+
+Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „aplikace Dynamics 365 Finance and Operations“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
 
 > [!NOTE]
 > Zdroj dat `fno` je vyhrazen pro Dynamics 365 Supply Chain Management.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimenze (mapování dimenzí)
+Chcete-li přidat zdroj dat, postupujte takto:
 
-Účelem konfigurace dimenze je standardizovat integraci více systémů pro odesílání událostí a dotazů na základě kombinací dimenzí.
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Zdroj dat** vyberte příkaz **Nový zdroj dat** a přidejte zdroj dat.
 
-Viditelnost zásob podporuje následující obecné základní dimenze.
+> [!NOTE]
+> Když přidáte zdroj dat, ověřte si před aktualizací konfigurace služby Viditelnost zásob název zdroje dat, fyzické míry a mapování dimenzí. Po výběru příkazu **Aktualizovat konfiguraci** nebudete moci tato nastavení upravovat.
+
+Konfigurace zdroje dat obsahuje následující části:
+
+- Dimenze (mapování dimenzí)
+- Fyzické míry
+- Vypočtené míry
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimenze (mapování dimenzí)
+
+Účelem konfigurace dimenze je standardizovat integraci více systémů pro odesílání událostí a dotazů na základě kombinací dimenzí. Viditelnost inventáře poskytuje seznam základních dimenzí, které lze mapovat z dimenzí vašeho zdroje dat. Pro mapování je k dispozici celkem třicet tři dimenzí.
+
+- Ve výchozím nastavení, pokud jako jeden ze zdrojů dat používáte Supply Chain Management, je 13 dimenzí mapováno na standardní dimenze Supply Chain Management. Dvanáct dalších dimenzí (`inventDimension1` až `inventDimension12`) je mapováno na vlastní dimenze v Supply Chain Management. Zbývajících osm dimenzí jsou rozšířené dimenze, které můžete namapovat na externí zdroje dat.
+- Pokud jako jeden ze zdrojů dat nepoužíváte Supply Chain Management, můžete dimenze mapovat libovolně. Následující tabulka ukazuje úplný seznam dostupných dimenzí.
+
+> [!NOTE]
+> Pokud vaše dimenze není v seznamu výchozích dimenzí a používáte externí zdroj dat, doporučujeme v mapování použít dimenze `ExtendedDimension1` až `ExtendedDimension8`.
 
 | Typ dimenze | Základní dimenze |
 |---|---|
@@ -73,7 +104,8 @@ Viditelnost zásob podporuje následující obecné základní dimenze.
 | Specifické pro sklad | `LicensePlateId` |
 | Další | `VersionId` |
 | Zásoby (vlastní) | `InventDimension1` až `InventDimension12` |
-| Linka | `ExtendedDimension1` až `ExtendedDimension8` |
+| Rozšíření | `ExtendedDimension1` až `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Typy dimenzí uvedené v předchozí tabulce slouží pouze pro informaci. Ve Viditelnosti zásob je nemusíte definovat.
@@ -92,11 +124,24 @@ Externí systémy mají přístup k Viditelnosti zásob prostřednictvím svých
 
 Po konfiguraci mapování dimenzí můžete odeslat externí dimenze přímo do Viditelnosti zásob. Viditelnost zásob pak automaticky převede externí dimenze na základní.
 
+Chcete-li přidat mapování dimenzí, postupujte následujícím způsobem.
+
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Zdroj dat** v části **Mapování dimenzí** vyberte příkaz **Přidat**.
+    ![Přidání mapování dimenzí](media/inventory-visibility-dimension-mapping.png "Přidání mapování dimenzí")
+
+1. V poli **Název dimenze** zadejte zdrojovou dimenzi.
+1. V poli **Na základní dimenzi** vyberte dimenzi v aplikaci Viditelnost zásob, kterou chcete namapovat.
+1. Zvolte možnost **Uložit**.
+
+Pokud váš zdroj dat obsahuje například dimenzi barvy produktu, můžete ji namapovat na základní dimenzi `ColorId` a přidat tak vlastní dimenzi `ProductColor` ve zdroji dat `exterchannel`. Poté je dimenze mapována na základní dimenzi `ColorId`.
+
 ### <a name="physical-measures"></a>Fyzické míry
 
-Fyzické míry mění množství a odrážejí stav zásob. Na základě vašich požadavků můžete definovat své vlastní fyzické míry.
+Když zdroj dat odešle změnu zásob do Viditelnosti zásob, odešle tuto změnu pomocí *fyzických měr*. Fyzické míry mění množství a odrážejí stav zásob. Na základě vašich požadavků můžete definovat své vlastní fyzické míry. Dotazy mohou být založeny na fyzických mírách.
 
-Viditelnost zásob poskytuje seznam výchozích fyzických měr, které jsou propojeny s aplikací Supply Chain Management (zdroj dat `fno`). Následující tabulka uvádí příklad fyzických měr.
+Viditelnost zásob poskytuje seznam výchozích fyzických měr, které jsou propojeny s aplikací Supply Chain Management (zdroj dat `fno`). Tyto výchozí fyzická míry jsou převzaty ze stavů transakcí zásob na stránce **Seznam skladu** v Supply Chain Management (**Řízení zásob \> Dotazy a hlášení \> Seznam skladu**). Následující tabulka uvádí příklad fyzických měr.
 
 | Název fyzické míry | popis |
 |---|---|
@@ -117,11 +162,33 @@ Viditelnost zásob poskytuje seznam výchozích fyzických měr, které jsou pro
 | `ReservOrdered` | Rezervováno k objednání |
 | `ReservPhysical` | Fyzicky rezervováno |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Vypočtené míry
+Pokud je zdrojem dat Supply Chain Management, nemusíte znovu vytvářet výchozí fyzické míry. U externích zdrojů dat však můžete vytvořit nové fyzické míry podle následujících kroků.
 
-Vypočítané míry poskytují přizpůsobený výpočetní vzorec, který se skládá z kombinace fyzických měr. Tato funkce vám umožňuje definovat sadu fyzických měrných systémů, které budou přidány, anebo sadu fyzických měrných systémů, které budou odečteny, aby bylo možné vytvořit vlastní měrný systém.
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Zdroj dat** v části **Fyzické míry** vyberte **Přidat**, zadejte název zdrojové míry a uložte změny.
 
-Například máte následující výsledek dotazu:
+### <a name="calculated-measures"></a>Vypočtené míry
+
+Viditelnost zásob můžete použít k dotazování na fyzické míry zásob i na *vlastní vypočítané míry*. Vypočítané míry poskytují přizpůsobený výpočetní vzorec, který se skládá z kombinace fyzických měr. Tato funkce vám umožňuje definovat sadu fyzických měrných systémů, které budou přidány, anebo sadu fyzických měrných systémů, které budou odečteny, aby bylo možné vytvořit vlastní měrný systém.
+
+Konfigurace umožňuje definovat sadu modifikátorů, které se přidávají nebo odčítají, aby se získalo celkové agregované výstupní množství.
+
+Chcete-li nastavit vlastí vypočítanou míru, postupujte následovně.
+
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Vypočítaná míra** vyberte příkaz **Nová výpočetní míra** a přidejte vypočítanou míru. Poté nastavte pole, jak je popsáno v následující tabulce.
+
+    | Pole | Hodnota |
+    |---|---|
+    | Název nové vypočítané míry | Zadejte název vypočítané míry. |
+    | Zdroj dat | Dotazovací systém je zdrojem dat. |
+    | Zdroj dat modifikátoru | Zadejte zdroj dat modifikátoru. |
+    | Modifikátor | Zadejte název modifikátoru. |
+    | Typ modifikátoru | Vyberte typ modifikátoru (*Sčítání* nebo *Odčítání*). |
+
+Například byste mohli mít následující výsledek dotazu:
 
 ```json
 [
@@ -202,7 +269,7 @@ Když se použije tento výpočetní vzorec, výsledek nového dotazu bude zahrn
 ]
 ```
 
-Výstup `MyCustomAvailableforReservation`, založený na nastavení výpočtu ve vlastních měrných systémech, je 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+Výstup `MyCustomAvailableforReservation`, založený na nastavení výpočtu ve vlastních měrných systémech, je 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Konfigurace oddílu
 
@@ -230,23 +297,33 @@ Viditelnost zásob je dostatečně pružná, protože vám umožňuje nastavit _
 | Dimenze | Základní dimenze, na kterých je výsledek dotazu agregován. |
 | Hierarchie | Hierarchie se používá k definování podporovaných kombinací dimenzí, které lze dotazovat. Například nastavíte sadu dimenzí, která má hierarchickou posloupnost `(ColorId, SizeId, StyleId)`. V tomto případě systém podporuje dotazy na čtyři kombinace dimenzí. První kombinace je prázdná, druhá je `(ColorId)`, třetí je `(ColorId, SizeId)` a čtvrtá je `(ColorId, SizeId, StyleId)`. Ostatní kombinace nejsou podporovány. Další informace naleznete v následujícím příkladu. |
 
+Chcete-li nastavit index hierarchie produktů, postupujte následujícím způsobem.
+
+1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Index hierarchie produktů** v části **Mapování dimenzí** vyberte příkaz **Přidat**.
+1. Ve výchozím nastavení je k dispozici seznam indexů. Chcete-li upravit stávající index, vyberte **Upravit** nebo **Přidat** v části příslušného rejstříku. Chcete-li vytvořit novou sadu indexů, vyberte příkaz **Nová sada indexů**. Pro každý řádek v každé sadě indexů vyberte v poli **Dimenze** hodnotu ze seznamu základních dimenzí. Automaticky se generují hodnoty pro následující pole:
+
+    - **Číslo sady** – Dimenze, které patří do stejné skupiny (indexu), budou seskupeny a bude jim přiděleno stejné číslo sady.
+    - **Hierarchie** – Hierarchie se používá k definování podporovaných kombinací dimenzí, které lze dotazovat ve skupině dimenzí (indexu). Pokud například nastavíte skupinu dimenzí, která má hierarchickou posloupnost *Styl*, *Barva* a *Velikost*, systém umí vrátit výsledek na tři skupiny dotazů. První skupina je pouze styl. Druhá skupina je kombinace stylu a barvy. A třetí skupina je kombinace stylu, barvy a velikosti. Ostatní kombinace nejsou podporovány.
+
 ### <a name="example"></a>Příklad
 
 Tato část poskytuje příklad, který ukazuje, jak hierarchie funguje.
 
-Ve svém skladu máte následující položky.
+Následující tabulka obsahuje seznam dostupných zásob pro tento příklad.
 
 | Zboží | ColorId | SizeId | StyleId | Množství |
 |---|---|---|---|---|
-| Tričko | Černé | Malé | Široké | 1 |
+| Tričko | Černá | Malý | Široké | 1 |
 | Tričko | Černé | Malé | Normální | 2 |
 | Tričko | Černé | Velké | Široké | 3 |
 | Tričko | Černé | Velké | Normální | 4 |
-| Tričko | Červené | Malé | Široké | 5 |
-| Tričko | Červené | Malé | Normální | 6 |
-| Tričko | Červené | Velké | Normální | 7 |
+| Tričko | Červené | Malé | Široká | 5 |
+| Tričko | Červená | Malý | Pravidelný | 6 |
+| Tričko | Červená | Velký | Pravidelný | 7 |
 
-Zde je index.
+V následující tabulce jsou uvedena nastavení hierarchie indexů.
 
 | Číslo sady | Dimenze | Hierarchie |
 |---|---|---|
@@ -284,6 +361,8 @@ Index vám umožňuje dotazovat se na množství na skladě následujícími zp�
 
 > [!NOTE]
 > Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v konfiguracích indexu.
+> 
+> Pokud se musíte dotazovat pouze na inventář, který je agregován všemi kombinacemi dimenzí, můžete nastavit jeden index, který obsahuje základní dimenzi `Empty`.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfigurace rezervace (volitelná)
 
@@ -296,22 +375,37 @@ Konfigurace rezervace je vyžadována, pokud chcete používat funkci předběž
 
 ### <a name="soft-reservation-mapping"></a>Mapování předběžných rezervací
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Když provádíte rezervaci, asi budete chtít vědět, zda je požadované množství na skladě aktuálně k dispozici pro rezervaci. Ověření je spojeno s vypočítanou mírou, která představuje výpočetní vzorec kombinace fyzických měr.
 
-Rezervační míra je například založena na fyzické míře `SoftReservOrdered` ze zdroje dat `iv` (Viditelnost zásob). V takovém případě můžete nastavit vypočítanou míru `AvailableToReserve` zdroje dat `iv`, jak je uvedeno zde.
+Nastavením mapování z fyzické míry na vypočítanou míru povolíte službě Viditelnost zásob automaticky ověřovat dostupnost rezervace na základě fyzické míry.
 
-| Typ výpočtu | Zdroj dat | Fyzická míra |
-|---|---|---|
-| Dodatek | `fno` | `AvailPhysical` |
-| Dodatek | `pos` | `Inbound` |
-| Odčítání | `pos` | `Outbound` |
-| Odčítání | `iv` | `SoftReservOrdered` |
+Než nastavíte toto mapování, musí být na kartách **Zdroj dat** a **Vypočítaná míra** ve stránce **Konfigurace** v Power Apps definovány fyzické míry, vypočítané míry a jejich zdroje dat (jak je popsáno dříve v tomto tématu).
 
-Poté nastavte mapování předběžných rezervací, které poskytne mapování z rezervační míry `SoftReservOrdered` na vypočítanou míru `AvailableToReserve`.
+Chcete-li definovat mapování předběžných rezervací, postupujte takto.
 
-| Zdroj dat fyzické míry | Fyzická míra | K dispozici pro zdroj dat rezervace | K dispozici pro vypočítanou míru rezervace |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Definujte fyzickou míru, která slouží jako míra pro předběžnou rezervaci (např.`SoftReservOrdered`).
+1. Na kartě **Vypočítaná míra** ve stránce **Konfigurace** definujte vypočítanou míru *k dispozici pro rezervaci* (AFR), která obsahuje výpočetní vzorec AFR, který chcete namapovat na fyzickou míru. Můžete například nastavit `AvailableToReserve` (k dispozici pro rezervaci), takže je mapováno na dříve definovanou fyzickou míru `SoftReservOrdered`. Tímto způsobem můžete zjistit, která množství se stavem zásob `SoftReservOrdered` budou k dispozici pro rezervaci. Následující tabulka ukazuje výpočetní vzorec AFR.
+
+    | Typ výpočtu | Zdroj dat | Fyzická míra |
+    |---|---|---|
+    | Dodatek | `fno` | `AvailPhysical` |
+    | Dodatek | `pos` | `Inbound` |
+    | Odčítání | `pos` | `Outbound` |
+    | Odčítání | `iv` | `SoftReservOrdered` |
+
+    Doporučujeme nastavit vypočítanou míru tak, aby obsahovala fyzickou míru, ze které vychází rezervační míra. Tímto způsobem bude vypočtené množství opatření ovlivněno množstvím rezervovaného opatření. Proto by v tomto příkladu vypočítaná míra `AvailableToReserve` `iv` zdroje dat měla obsahovat fyzickou míru `SoftReservOrdered` u `iv` jako součást.
+
+1. Otevřete stránku **Konfigurace**.
+1. Na kartě **Mapování předběžné rezervace** nastavte mapování z fyzické míry na vypočítanou míru. V předchozím příkladu můžete následující nastavení použít k mapování `AvailableToReserve` na dříve definovanou fyzickou míru `SoftReservOrdered`.
+
+    | Zdroj dat fyzické míry | Fyzická míra | K dispozici pro zdroj dat rezervace | K dispozici pro vypočítanou míru rezervace |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Pokud se vám nepodaří upravit kartu **Mapování předběžné rezervace**, může být nutné zapnout funkci *OnHandReservation* na kartě **Správa funkcí**.
 
 Nyní, když provedete rezervaci zdroje `SoftReservOrdered`, Viditelnost zásob automaticky najde `AvailableToReserve` a s ním související výpočetní vzorec k provedení ověření rezervace.
 
@@ -348,11 +442,16 @@ V takovém případě se použije následující výpočet:
 
 Pokud se tedy pokusíte vytvořit rezervaci ze zdroje `iv.SoftReservOrdered` a množství je menší nebo rovno `AvailableToReserve` (10), můžete rezervaci provést.
 
+> [!NOTE]
+> Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Hierarchie předběžných rezervací
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hierarchie rezervací popisuje posloupnost dimenzí, které je třeba zadat při vytváření rezervace. Funguje stejným způsobem, jako funguje hierarchie indexu produktů pro dotazy na zásoby na skladě.
 
-Hierarchie rezervací je nezávislá na hierarchii indexu produktů. Tato nezávislost vám umožňuje implementovat správu kategorií, kde mohou uživatelé rozdělit dimenze na detaily a specifikovat požadavky, aby vytvářeli přesnější rezervace.
+Hierarchie rezervací je nezávislá na hierarchii indexu produktů. Tato nezávislost vám umožňuje implementovat správu kategorií, kde mohou uživatelé rozdělit dimenze na detaily a specifikovat požadavky, aby vytvářeli přesnější rezervace. Vaše hierarchie měkkých rezervací by měla obsahovat `SiteId` a `LocationId` jako součásti, protože vytvářejí konfiguraci oddílu. Při rezervaci musíte určit oddíl pro produkt.
 
 Následuje příklad hierarchie předběžné rezervace.
 
@@ -364,10 +463,8 @@ Následuje příklad hierarchie předběžné rezervace.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-V tomto příkladu můžete provést rezervaci v následujících posloupnostech dimenzí:
+V tomto příkladu můžete provést rezervaci v následujících posloupnostech dimenzí. Při rezervaci musíte určit oddíl pro produkt. Základní hierarchie, kterou můžete použít, je tedy `(SiteId, LocationId)`.
 
-- `()` – Není zadána žádná dimenze.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ V tomto příkladu můžete provést rezervaci v následujících posloupnostech
 
 Platná posloupnost dimenzí by měla striktně dodržovat hierarchii rezervací, dimenzi po dimenzi. Například hierarchická posloupnost`(SiteId, LocationId, SizeId)` není platná, protože chybí `ColorId`.
 
+## <a name="complete-and-update-the-configuration"></a>Dokončení a aktualizace konfigurace
+
+Po dokončení konfigurace musíte potvrdit všechny změny v doplňku Viditelnosti zásob. Chcete-li potvrdit změny, vyberte příkaz **Aktualizovat konfiguraci** v pravém horním rohu stránky **Konfigurace** v Power Apps.
+
+Při prvním výběru příkazu **Aktualizovat konfiguraci** systém požádá o vaše přihlašovací údaje.
+
+- **ID klienta** – ID aplikace Azure, které jste vytvořili pro Viditelnost zásob.
+- **ID tenanta** – ID vašeho tenanta Azure.
+- **Tajný klíč klienta** – Tajný klíč aplikace Azure, který jste vytvořili pro Viditelnost zásob.
+
+Po přihlášení se konfigurace aktualizuje ve službě Viditelnost zásob.
+
+> [!NOTE]
+> Ověřte si před aktualizací konfigurace služby Viditelnost zásob název zdroje dat, fyzické míry a mapování dimenzí. Po výběru příkazu **Aktualizovat konfiguraci** nebudete moci tato nastavení upravovat.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Ukázka výchozí konfigurace
 
-Během své fáze inicializace nastaví Viditelnost zásob výchozí konfiguraci. Konfiguraci můžete upravit podle potřeby.
+Během své fáze inicializace nastaví Viditelnost zásob výchozí konfiguraci, což je podrobně popsáno zde. Konfiguraci můžete upravit podle potřeby.
 
 ### <a name="data-source-configuration"></a>Konfigurace zdroje dat
 

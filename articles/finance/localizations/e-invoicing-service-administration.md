@@ -2,7 +2,7 @@
 title: Součásti pro správu Elektronické fakturace
 description: Toto téma poskytuje informace o součástech, které souvisejí se správou Elektronické fakturace.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721719"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463867"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Součásti pro správu Elektronické fakturace
 
@@ -31,14 +31,14 @@ Toto téma poskytuje informace o součástech, které souvisejí se správou Ele
 
 ## <a name="azure"></a>Azure
 
-Použijte Microsoft Azure k vytvoření tajných klíčů pro trezor klíčů a účet úložiště. Potom použijte tajné klíče v konfiguraci Elektronické fakturace.
+Použijte Microsoft Azure k vytvoření tajných klíčů pro trezor klíčů a účet úložiště. Potom v konfiguraci elektronické fakturace použijte tajná úložiště klíčů a token SAS účtu úložiště.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Pomocí Microsoft Dynamics Lifecycle Services (LCS) povolte mikroslužby pro váš projekt nasazení LCS.
+Pomocí Microsoft Dynamics Lifecycle Services (LCS) povolte doplněk elektronické fakturace pro váš projekt nasazení LCS.
 
 > [!NOTE]
-> Instalace mikroslužeb v LCS vyžaduje alespoň virtuální počítač úrovně 2. Další informace o plánování prostředí naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Instalace doplňků v LCS vyžaduje alespoň **prostředí vrstvy 2**. Další informace o plánování prostředí naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Pro více informací o RCS viz [Regulatory Configuration Services (RCS) – funk
 
 Než budete pomocí RCS moci konfigurovat elektronické faktury, musíte nakonfigurovat RCS tak, aby umožňovalo komunikaci s Elektronickou fakturací. Tuto konfiguraci provedete na kartě **Elektronická fakturace** na stránce **Parametry elektronického vykazování**.
 
-#### <a name="service-endpoint"></a>Koncový bod služby
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Koncový bod služby
 
 Elektronická fakturace je k dispozici v několika geografických oblastech datového centra Azure. Následující tabulka uvádí dostupnost podle oblastí.
 
-| Geografie datového centra Azure |
-|----------------------------|
-| Spojené státy americké              |
-| Evropa                     |
-| Spojené království             |
-| Asie                       |
+
+| Geografie datového centra Azure | URI adresa koncového bodu služby                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| Spojené státy americké              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Evropa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Spojené království             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Asie                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Prostředí služby
 
-Prostředí služeb jsou logické oddíly, které jsou vytvořeny na podporu provádění funkcí elektronické fakturace v Elektronické fakturaci. Tajné klíče zabezpečení a digitální certifikáty a správa (tj. přístupová oprávnění) musí být nakonfigurovány na úrovni prostředí služby.
+Prostředí služeb jsou logické oddíly, které jsou vytvořeny na podporu provádění funkcí globalizace v Elektronické fakturaci. Tajné klíče zabezpečení a digitální certifikáty a správa (tj. přístupová oprávnění) musí být nakonfigurovány na úrovni prostředí služby.
 
 Zákazníci mohou vytvořit tolik prostředí služeb, kolik chtějí. Všechna prostředí služeb, která zákazník vytvoří, jsou na sobě navzájem nezávislá.
 
@@ -84,8 +85,8 @@ Prostředí služeb lze spravovat prostřednictvím stavu. K dispozici jsou tyto
 
 Služba elektronické fakturace je zodpovědná za ukládání všech vašich obchodních údajů v prostředcích Azure, které vlastní vaše společnost. Abyste zajistili, že služba funguje správně a že ke všem obchodním datům, která jsou potřebná a generovaná Elektronickou fakturací, se přistupuje správným způsobem, musíte vytvořit dva hlavní zdroje Azure:
 
-- Účet úložiště Azure (úložiště Blob), které bude uchovávat elektronické faktury
-- Trezor klíčů Azure, který bude uchovávat certifikáty a identifikátor URI (Uniform Resource Identifier) účtu úložiště
+- Účet úložiště Azure (úložiště objektů BLOB), který bude ukládat elektronické dokumenty, včetně elektronických faktur, výsledků transformací dokumentů a odpovědí z externích webových služeb.
+- Trezor klíčů Azure, který bude uchovávat certifikáty a identifikátor URI (Uniform Resource Identifier) účtu úložiště (token SAS).
 
 
 Vyhrazený trezor klíčů a účet úložiště odběratele musí být výslovně přiděleny pro použití s Elektronickou fakturací. Další informace viz [Vytvoření účtu úložiště a trezoru klíčů Azure](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -122,13 +123,13 @@ Aby bylo možné povolit komunikaci mezi aplikacemi Finance a Supply Chain Manag
 
 Koncovým bodem služby je adresa URL, kde se nachází Elektronická fakturace. Než budete moci vystavovat elektronické faktury, v aplikacích Finance a Supply Chain Management musí být nakonfigurován koncový bod služby, aby byla možná komunikace se službou.
 
-Chcete-li nakonfigurovat koncový bod služby, přejděte na **Správa organizace \> Nastavení \> Parametr elektronického dokumentu** a poté na kartě **Služby odesílání** v poli **Adresa URL elektronické fakturace** zadejte adresu URL, jak je popsáno v tabulce v části **Koncový bod služby**.
+Chcete-li nakonfigurovat koncový bod služby, přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu** a poté na kartě **Elektronická fakturace** v poli **Adresa URL koncového bodu** zadejte příslušnou adresu URL, jak je popsáno v tabulce v části [Koncový bod služby](#svc-endpoint-uris) dříve v tomto tématu.
 
 #### <a name="environments"></a>Prostředí
 
 Název prostředí zadaný v aplikacích Finance a Supply Chain Management odkazuje na název prostředí vytvořeného v RCS a publikovaného v Elektronické fakturaci.
 
-Prostředí musí být nakonfigurováno na kartě **Služby odesílání** na stránce **Parametr elektronického dokumentu**, aby každý požadavek na vystavení elektronické faktury obsahoval prostředí, podle kterého může Elektronická fakturace určit, která funkce elektronické fakturace má požadavek zpracovat.
+Prostředí musí být nakonfigurováno na záložce **Elektronická fakturace** stránky **Parametry elektronického dokumentu**. Tímto způsobem každý požadavek na vystavení elektronických faktur obsahuje prostředí, kde elektronická fakturace může určit, která funkce elektronické fakturace musí požadavek zpracovat.
 
 ## <a name="additional-resources"></a>Další prostředky
 

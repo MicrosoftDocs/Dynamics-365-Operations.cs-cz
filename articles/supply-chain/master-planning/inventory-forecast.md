@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757799"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475077"
 ---
 # <a name="inventory-forecasts"></a>Prognózy zásob
 
@@ -94,7 +94,7 @@ V následující tabulce jsou popsány příkazy, které jsou k dispozici v pane
 
 | Příkaz | popis |
 |---|---|
-| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. |
+| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.) |
 | Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto tématu.) |
 | Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto tématu.) |
 | Vytvořit požadavek na položku | Otevřete dialogové okno, kde můžete vytvořit požadavky na položku a řádky prodejní objednávky nebo řádky deníku položky pro transakce prognózy související s projektem. I když je tento příkaz k dispozici jak pro řádky prognózy nabídky, tak pro řádky prognózy poptávky, není možné ho použít na stránce **Prognóza nabídky**. |
@@ -201,7 +201,7 @@ V následující tabulce jsou popsány příkazy, které jsou k dispozici v pane
 
 | Příkaz | popis |
 |---|---|
-| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. |
+| Přidělit prognózu | Pokud používáte metodu přidělování, vygenerujte jednotlivé řádky plánu pro transakci prognózy. Množství řádku je poté rozděleno podle data (na základě zvolených časových intervalů), množství a částky pro celý časový horizont. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.)|
 | Hromadná aktualizace | Otevřete stránku **Úprava transakcí prognóz**. (Viz část [Hromadná aktualizace transakcí prognózy](#bulk-update) dále v tomto tématu.) |
 | Prognóza zásob | Otevřete zobrazení stránky **Prognóza zásob**, která je filtrována pro vybranou kombinaci položky / modelu. (Viz část [Prognóza zásob](#inventory-forecast) dále v tomto tématu.) |
 | Vytvořit požadavek na položku | Otevřete dialogové okno, kde můžete vytvořit požadavky na položku a řádky prodejní objednávky nebo řádky deníku položky pro transakce prognózy související s projektem. |
@@ -296,7 +296,7 @@ Karta **Dimenze zásob** zobrazuje všechny hodnoty dimenze zásob pro řádek, 
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Mřížka Přidělení ve stránce Prognóza poptávky
 
-Pokud používáte alokační klíč položky nebo jste zadali prognózu položky pro jedno či více budoucích období, můžete prognózu přidělit výběrem položky **Přidělit prognózu** na panelu nástrojů na kartě **Přehled**. Množství se poté rozdělí způsobem, který je vyznačen řádky v mřížce **Přidělení**.
+Pokud používáte alokační klíč položky nebo jste zadali prognózu položky pro jedno či více budoucích období, můžete prognózu přidělit výběrem položky **Přidělit prognózu** na panelu nástrojů na kartě **Přehled**. Množství se poté rozdělí způsobem, který je vyznačen řádky v mřížce **Přidělení**. (Viz část [Prognóza přidělení](#allocate-forecast) dále v tomto tématu.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Prognóza zásob
 
@@ -328,6 +328,25 @@ Následující tabulka popisuje pole v mřížce na stránce **Prognóza zásob*
 | **Dílčí kusovník** | Číslo kusovníku dílčího kusovníku. |
 | **Dílčí postup** | Číslo postupu dílčího postupu. |
 | (Jiné dimenze) | Další dimenze lze zobrazit jako sloupce v mřížce. Chcete-li vybrat další zobrazené dimenze, vyberte **Zásoby \> Zobrazit dimenze** v podokně akcí. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Přidělit prognózu
+
+Následující postup slouží ke zpracování vybraných transakčních řádků prognózy. Když přidělíte prognózu, množství se poté rozdělí podle řádků v mřížce **Přidělení**.
+
+1. V závislosti na typu entity, pro kterou chcete vytvořit prognózu, a typu prognózy, kterou chcete vytvořit, otevřete stránku prognózy nabídky nebo poptávky, jak je popsáno v tématu [Zobrazení a ruční zadání řádek předpovědi](#manual-entry).
+1. Na stránce řádků prognózy nabídky nebo poptávky vyberte řádek prognózy a poté na kartě **Přehled** vyberte kartu **Přidělit předpověď** na panelu nástrojů.
+1. V dialogovém okně **Přidělit předpověď** nastavte pole, která jsou popsána v následující tabulce. (Hodnota, kterou vyberete v poli **Metoda** určuje, že ostatní pole jsou k dispozici.)
+
+    | Pole | popis |
+    |---|---|
+    | Metoda | <p>Vyberte metodu, která se používá k alokaci transakce prognózy:</p><ul><li>**Žádná** – Nebude provedeno žádné přidělení.</li><li>**Období** – Pro každé období se prognózuje stejné množství . Pokud vyberete tuto hodnotu, zadejte množství v poli **Za** a jednotka času v poli **Jednotka**.</li><li>**Klíč** – Přidělí prognózované množství podle alokačního klíče období, který je stanoven v poli **Klíč období**. Tuto metodu lze použít, když chcete brát do úvahy sezónní výchylky.</li><ul>|
+    | Za | <p>Zadejte počet časových intervalů do budoucnosti, které prognóza rozšiřuje. Toto pole je k dispozici pouze tehdy, pokud jste v poli **Metoda** vybrali volbu *Období*.</p><p>Například v poli **Metoda** vyberete *Období*, zadáte číslo *1* do pole **Za** a vyberete *Měsíce* v poli **Jednotka**. Pak v poli **Ukončení** zadejte koncové datum, které sahá jeden rok do budoucnosti. V tomto případě se vytvoří jeden řádek prognózy pro každý měsíc následujícího roku na základě položky a množství stanovených v řádku záhlaví. |
+    | Jednotka | Vyberte jednotku časového intervalu: *Dny*, *Měsíce* nebo *Roky*. Přidělení poté odpovídá počtu dnů, měsíců nebo roků uvedených v poli **Za**.|
+    | Klíč období | Zadejte alokační klíč období, který se používá k alokaci prognózy. Další informace naleznete v tématu [Přidělení dat pro plánování rozpočtu](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Konec | Zadejte koncové datum, které platí pro vaše nastavení, do pole **Pro** a **Jednotka**. |
+
+1. Výběrem **OK** své nastavení potvrďte.
+1. Výsledky si můžete prohlédnout na kartě **Přidělení** pro stejný řádek.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Hromadná aktualizace transakcí prognózy
 

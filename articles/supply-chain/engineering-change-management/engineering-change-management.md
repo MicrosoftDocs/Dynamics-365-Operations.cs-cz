@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384578"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467415"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -122,6 +122,9 @@ Chcete-li zkontrolovat ovlivněné transakce, zablokovat vybrané transakce a od
     - **Zobrazit historii** - Otevřete historii akcí, které byly provedeny u vybrané transakce pomocí dialogového okna **Obchodní dopad na otevřené transakce**. (Například historie ukazuje, zda byla zaslána oznámení nebo byly blokovány transakce.) 
     - **Zobrazit všechny transakce** - Otevřete úplný seznam všech transakcí, nejen otevřených transakcí.
 
+> [!IMPORTANT]
+> Tlačítko **Upozornit výrobu** je k dispozici pouze v případě, že je zapnutá funkce *Inženýrská oznámení pro výrobu* ve vašem systému zapnutá. Pokyny naleznete v tématu [Přehled správy technických změn](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Zkontrolujte a zpracovejte oznámení o změně transakcí
 
 Oznámení o změnách, která obdržíte, si můžete přečíst a zpracovat následujícími způsoby:
@@ -131,6 +134,9 @@ Oznámení o změnách, která obdržíte, si můžete přečíst a zpracovat n�
 - U výrobních zakázek můžete zkontrolovat pouze oznámení o změně, která se vztahují na produkční prostředky, které spravujete. V pracovním prostoru **Správa výrobního provozu**, v podokně akcí vyberte **Konfigurovat můj pracovní prostor**, chcete-li filtrovat stránku tak, aby zobrazovala pouze informace o výrobních jednotkách, skupinách nebo prostředcích, které spravujete. V sekci **Souhrn** dlaždice s názvem **Výrobní zakázky se změněnými produkty** zobrazuje počet oznámení, která odpovídají vašemu nastavení filtru. Vyberte tuto dlaždici a otevřete stránku **Technická oznámení**, která zobrazuje úplný seznam transakcí, které splňují kritéria vašeho filtru.
 
 Při kontrole oznámení výrobní zakázky na stránce **Technická oznámení** můžete sledovat odkazy na související objednávky změn nebo výrobní zakázky výběrem hodnot sloupců nebo pomocí souvisejících příkazů v podokně akcí. Po dokončení vyhodnocení změny a poté, co jste podle potřeby zrušili nebo upravili výrobní zakázky, můžete označit oznámení jako vyřešené. Vyberte oznámení a poté v podokně akcí vyberte **Vyřešit**. Oznámení je odebráno ze zobrazení všech uživatelů.
+
+> [!IMPORTANT]
+> Možnost zasílat upozornění na výrobní zakázky vyžaduje, aby funkce *Inženýrská oznámení pro výrobu* ve vašem systému byla zapnutá. Pokyny naleznete v tématu [Přehled správy technických změn](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Vytvoření změnového příkazu z požadavku na změnu
 

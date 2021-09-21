@@ -1,5 +1,5 @@
 ---
-title: Cloudové jednotky a hraniční jednotky škálování pro pracovní zatížení výroby a správy skladů
+title: Jednotky škálování v distribuované hybridní topologii
 description: Toto téma poskytuje informace o cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780667"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471733"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednotky škálování v distribuované hybridní topologii
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780667"
 >
 > Povolením cloudových a hraničních jednotek škálování potvrzujete, že chápete, že některá data související s konfigurací a zpracováním cloudových a hraničních jednotek škálování mohou být uložena v datovém centru umístěném v USA. Chcete-li se dozvědět více o zpracování dat pro jednotky škálování cloudu a edge, podívejte se na [Zpracování dat během správy jednotek škálování](#data-processing-management) dále v tomto tématu.
 
-## <a name="core-value-proposition-for-scale-units"></a>Návrh základní hodnoty pro jednotky škálování
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Návrh základní hodnoty pro distribuovanou hybridní topologii
 
-Společnosti, které pracují s výrobou a distribucí, musí být schopny provozovat klíčové obchodní procesy nepřetržitě, bez přerušení a v rámci škály. Cloudové a hraniční jednotky škálování umožňují společnostem bez přerušení spouštět zásadně důležité klíčové výrobní a skladové procesy, i když čelí příležitostným problémům s připojením k síti nebo latenci.
+Společnosti, které pracují s výrobou a distribucí, musí být schopny provozovat klíčové obchodní procesy nepřetržitě, bez přerušení a v rámci škály. Distribuovaná hybridní topologie umožňuje společnostem bez přerušení spouštět zásadně důležité klíčové výrobní a skladové procesy, i když čelí příležitostným problémům s připojením k síti nebo latenci.
 
-Jednotky v cloudu a hraniční jednotky škálování umožňují distribuci pracovních zátěží v dílně a ve skladech mezi různými prostředími. Tato funkce může pomoci zlepšit výkon, zabránit přerušení služeb a maximalizovat provozuschopnost. Jednotky škálování jsou poskytovány prostřednictvím následujících doplňků pro vaše předplatné Supply Chain Management:
+Distribuovaná hybridní topologie zavádí koncept *jednotky měřítka*, které umožňují distribuci zátěže výroby a skladu mezi různými prostředími. Tato funkce může pomoci zlepšit výkon, zabránit přerušení služeb a maximalizovat provozuschopnost. Jednotky škálování jsou poskytovány prostřednictvím následujících doplňků pro vaše předplatné Supply Chain Management:
 
 - Doplněk Cloud Scale Unit pro Dynamics 365 Supply Chain Management (*k dispozici v dubnu 2021*)
 - Doplněk Edge Scale Unit pro Dynamics 365 Supply Chain Management (*k dispozici brzy*)

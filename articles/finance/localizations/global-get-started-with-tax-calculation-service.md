@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394502"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465070"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
@@ -49,13 +49,9 @@ Pro produkční prostředí musí být splněny následující předpoklady:
 - Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí Finance nebo Supply Chain Management, na základě vašich obchodních potřeb:
 
-    - Výpočet daně
+    - Služba výpočtu daně
     - Podporovat více DIČ
     - Daň v převodním příkazu
-    - Převod souhrnného hlášení EU pouze na základě daňových transakcí
-    - Sestava Intrastat podle více DIČ
-    - Souhrnné hlášení EU podle více čísel DIČ
-    - Přiznání k DPH podle vícenásobného DIČ
 
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí RCS.
 
@@ -65,18 +61,14 @@ Pro produkční prostředí musí být splněny následující předpoklady:
 
 Pro testovací prostředí musí být splněny následující předpoklady:
 
-- Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.18 s KB4616360 nebo novější.
+- Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.21 nebo novější verze.
 - Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
 - Musíte kontaktovat společnost Microsoft e-mailem na adrese <taxcalc@microsoft.com>, aby povolila testování ve vašem nasazeném prostředí Finance nebo Supply Chain Management.
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí Finance nebo Supply Chain Management, na základě vašich obchodních potřeb:
 
-    - Výpočet daně
+    - Služba výpočtu daně
     - Podporovat více DIČ
     - Daň v převodním příkazu
-    - Převod souhrnného hlášení EU pouze na základě daňových transakcí
-    - Sestava Intrastat podle více DIČ
-    - Souhrnné hlášení EU podle více čísel DIČ
-    - Přiznání k DPH podle vícenásobného DIČ
 
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí RCS.
 
@@ -103,12 +95,12 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
 8. Vyberte správnou verzi konfigurace daně na základě vaší verze Finance a poté vyberte **Import**.
 
-    | Verze vydání | Konfigurace daní                       | Mapování modelu                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Konfigurace daně - Evropa 30.12.82     |                                 |
-    | 10.0.19         | Konfigurace výpočtu daně 36.38.193 |                                 |
-    | 10.0.20         | Konfigurace výpočtu daně 40.43.208 |                                 |
-    | 10.0.21         | Konfigurace výpočtu daně 40.46.212 | Mapování modelu Dataverse 40.46.9 |
+    | Verze vydání   | Konfigurace daní                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Konfigurace daně - Evropa 30.12.82     |
+    | 10.0.19         | Konfigurace výpočtu daně 36.38.193 |
+    | 10.0.20         | Konfigurace výpočtu daně 40.43.208 |
+    | 10.0.21         | Konfigurace výpočtu daně 40.46.212 |
 
 9. V pracovním prostoru **Funkce globalizace**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
 10. Vyberte jeden z následujících typů funkce:

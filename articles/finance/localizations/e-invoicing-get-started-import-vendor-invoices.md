@@ -2,7 +2,7 @@
 title: Použití služby elektronické fakturace k importu faktur dodavatele
 description: Toto téma poskytuje informace o tom, jak importovat faktury dodavatele pomocí služby elektronické fakturace.
 author: gionoder
-ms.date: 08/03/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 434bf1f6a5a727a71592493b85ab166cbeff2f0980c2c968c99973a03f4dc660
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751245"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473369"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Použití služby elektronické fakturace k importu faktur dodavatele
 
@@ -45,13 +45,21 @@ Pokud vámi vytvořená funkce elektronické fakturace importuje faktury elektro
 
 1. V RCS vyberte funkci elektronické fakturace, kterou jste vytvořili. Ujistěte se, že jste vybrali verzi se stavem **Koncept**.
 2. Na kartě **Nastavení** v mřížce vyberte nastavení funkce a poté vyberte **Upravit**.
-3. Na kartě **Datový kanál** ve skupině polí **Parametry** vyberte **Adresa serveru** a zadejte poskytovatele e -mailového účtu.
-4. Vyberte **Port serveru** a zadejte port používaný poskytovatelem e-mailového účtu.
-5. Vyberte **Tajný klíč jména uživatele** a zadejte název tajného klíče trezoru klíčů, který obsahuje ID uživatelského účtu e-mailu.
-6. Vyberte **Tajný klíč hesla uživatele** a zadejte název tajného klíče trezoru klíčů, který obsahuje heslo uživatelského účtu e-mailu.
-7. Vyberte **Filtr předmětu**. Zkontrolujte a aktualizujte řetězec, který obsahuje výchozí předmět e -mailu, abyste identifikovali e-mail obsahující elektronickou fakturu dodavatele k importu.
-8. Na kartě **Pravidla použitelnosti** v případě potřeby zkontrolujte a aktualizujte kritéria. Další informace naleznete v tématu [Pravidla použitelnosti](e-invoicing-configuration-rcs.md#applicability-rules).
-9. Zvolte **Uložit** a zavřete stránku.
+3. Na kartě **Datový kanál** ve skupině polí **Parametry** v poli **Datový kanál** zadejte název kanálu. Název kanálu by neměl mít více než deset znaků.
+4. Do pole **Adresa serveru** zadejte poskytovatele e-mailového účtu. Například adresa serveru pro **https://outlook.live.com/** je **imap-mail.outlook.com**.
+5. V poli **Port serveru** zadejte port používaný poskytovatelem e-mailového účtu. Například port serveru pro **https://outlook.live.com/** je **993**.
+6. V poli **Tajný kód jména uživatele** zadejte název tajného kódu trezoru klíčů, který obsahuje ID uživatelského účtu e-mailu. Tento tajný kód musí být vytvořen v trezoru klíčů Azure a nastaven v prostředí vaší služby. 
+7. V poli **Tajný kód hesla uživatele** zadejte název tajného kódu trezoru klíčů, který obsahuje heslo uživatelského účtu e-mailu.
+8. Volitelné - zadejte hodnoty do pole **Z filtru**, **Filtr předmětu** a **Datový filtr**.
+9. Zadejte názvy složek poštovní schránky, kde budou e -maily:
+
+    - Importováno z: **Hlavní složka**
+    - Po úspěšném zpracování uloženo: **Složka archivu**
+    - Uloženo po neúspěšném zpracování: **Složka s chybou** Tyto složky nemusíte vytvářet v poštovní schránce. Složky se vytvoří automaticky po prvním importu a zpracování elektronické faktury. 
+   
+10. Ve skupině polí **Filtr příloh** přidejte informace o filtrování souborů. Zpracují se pouze přílohy, které splňují definovaný filtr. Můžete například nastavit „\*.xml"pro přílohy s příponou xml. Název přílohy se používá v Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management během instalace. 
+11. Na kartě **Pravidla použitelnosti** v případě potřeby zkontrolujte a aktualizujte kritéria. Pole **Kanál** se musí rovnat **kanálu dat** poskytnutému předtím. Další informace naleznete v tématu [Pravidla použitelnosti](e-invoicing-configuration-rcs.md#applicability-rules).
+12. Zvolte **Uložit** a zavřete stránku.
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Konfigurace kanálu Microsoft SharePoint
 
@@ -71,10 +79,10 @@ Konfigurujte kanál Microsoft SharePoint, pokud funkce elektronické fakturace i
 
 Informace o nasazení funkce elektronické fakturace najdete v části [Nasazení funkce elektronické fakturace do prostředí služby](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## <a name="set-up-vendor-invoice-import-in-finance-and-supply-chain-management"></a>Nastavení importu faktury dodavatele ve Finance a Supply Chain Management
+## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Nastavení importu faktury dodavatele ve Finance a Supply Chain Management
 Dokončete kroky v následujících dvou částech a nastavte různé typy importu faktur dodavatele.
 
-### <a name="import-vendor-invoices-from-email"></a>Import faktur dodavatele z e-mailu
+### <a name="import-brazilian-nf-e-from-email"></a>Import brazilského NF-e z e-mailu
 
 1. Přihlaste se k prostředí Finance nebo Supply Chain Management a ověřte si, že jste ve správné právnické osobě.
 2. Přejděte na **Správa organizace** > **Nastavení** > **Parametry elektronického dokumentu**.
@@ -98,30 +106,43 @@ Dokončete kroky v následujících dvou částech a nastavte různé typy impor
 ### <a name="import-peppol-electronic-vendor-invoices"></a>Import elektronických faktur dodavatele PEPPOL
 
 1. Přejděte do pracovního prostoru **Elektronické výkaznictví** a vyberte **Konfigurace výkaznictví**.
-2. Vyberte **Kontextový model faktury zákazníka** a vytvořte odvozenou konfiguraci.
-3. Ve verzi **Koncept** vyberte **Návrhář**.
-4. Ve stromu **Datový model** vyberte **Faktura zákazníka** a poté vyberte **Mapovat model na zdroj dat**.
-5. Ve stromu **Definice** vyberte **Faktura zákazníka** a poté vyberte **Návrhář**.
-6. Ve stromě **Zdroje dat** vyberte **Kontext\_Kanál**. V poli **Hodnota** vyberte **PEPPOL**. Jedná se o název kanálu zadaný v konfiguraci datového kanálu pro funkci elektronického výkaznictví v RCS. 
+2. Vyberte **Kontextový model zákaznické faktury** a pak vyberte **Vytvořit konfiguraci** > **Odvozeno z názvu: kontextový model faktury zákazníka, Microsoft** k vytvoření odvozené konfigurace.
+3. Ve verzi **Koncept** vyberte **Návrhář** a ve stromu **Datový model** vyberte **Mapovat model na zdroj dat**.
+4. Ve stromu **Definice** vyberte **DataChannel** a poté vyberte **Návrhář**.
+5. Ve stromu **Zdroj dat** rozbalte kontejner **$Context\_Channel**. V poli **Hodnota** vyberte **Upravit** a zadejte název datového kanálu. Jedná se o název kanálu zadaný v konfiguraci datového kanálu pro funkci elektronického výkaznictví v RCS. 
 7. Zvolte **Uložit** a zavřete stránku.
 8. Zavřete stránku.
-9. Vyberte **Kontextový model faktury zákazníka** a na záložce s náhledem **Verze** vyberte **Změnit stav** > **Dokončeno**.
+9. Vyberte odvozenou konfiguraci, kterou jste právě vytvořili, z pole **Kontextový model zákaznické faktury** a na záložce s náhledem **Verze** vyberte **Změnit stav** > **Dokončeno**.
 10. Jděte na **Správa organizace** > **Nastavení** > **Parametry elektronického dokumentu** a na kartě **Funkce** se ujistěte, že je vybrána možnost **Globální elektronické faktury PEPPOL**. 
 11. Na kartě **Externí kanály** v poli **Kanály** vyberte **Přidat**.
-12. V poli **Kanál** zadejte **PEPPOL**. Zadejte popis do pole **Popis**.
-13. V poli **Společnost** zvolte právnickou osobu. V poli **Kontext dokumentu** vyberte **Kontext faktury zákazníka - Kontextový model faktury zákazníka**.
-14. Zvolte **Uložit** a pak zavřete stránku.
+12. Do pole **Kanál** zadejte název datového kanálu a do pole **Popis** zadejte popis.
+13. V poli **Společnost** zvolte právnickou osobu. 
+14. V poli **Kontext dokumentu** vyberte novou odvozenou konfiguraci **Kontextový model zákaznické faktury**. Popis mapování by měl být **Kontext datového kanálu**.
+15. Ve skupině polí **Importovat zdroje** vyberte **Přidat**.
+16. Do pole **název** zadejte pole **Název filtru příloh** a v poli **Název datové entity** vyberte **Záhlaví faktury dodavatele**.
+17. V poli **Mapování modelu** vyberte **Tisk faktury dodavatele - Import faktury dodavatele**.
+18. Klikněte na tlačítko **Uložit** a pak zavřete stránku.
 
 
 ## <a name="receive-electronic-invoices"></a>Přijetí elektronických faktur
+
+Služba elektronické fakturace provádí během importu faktur z datových kanálů dva kroky:
+
+1. Přistupuje k poštovní schránce a čte e-maily.
+2. Zpracovává e -maily. 
+    
+Chcete -li provést tyto dva kroky, klient by měl službu volat pro každý krok ručně. Doporučujeme však nastavit dávku pro příjem elektronických dokumentů.
+
 Chcete-li přijímat elektronické faktury, postupujte takto:
 
 1. Přejděte na **Správa organizace** > **Periodické** > **Elektronické dokumenty** > **Přijímat elektronické dokumenty**.
 2. Zvolte **KO** a pak zavřete stránku.
 
+
 ## <a name="view-receive-logs-for-electronic-invoices"></a>Zobrazení protokolů příjmu elektronických faktur
 
 Chcete-li zobrazit protokoly příjmu elektronických faktur, přejděte na **Správa organizace** > **Periodické** > **Elektronické dokumenty** > **Protokol o přijetí elektronického dokumentu**.
+Pokud nevidíte úspěšně zpracované faktury, odeberte filtr tabulky.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

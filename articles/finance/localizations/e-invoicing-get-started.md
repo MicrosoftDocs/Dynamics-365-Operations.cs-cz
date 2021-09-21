@@ -2,7 +2,7 @@
 title: Začínáme s Elektronickou fakturací
 description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732974"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463827"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Začínáme s Elektronickou fakturací
 
@@ -43,7 +43,7 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **Elektronická fakturace**.
 3. Vyberte **Import** a potom vyberte **Synchronizovat**.
 4. Filtrujte sloupec **Poskytovatel konfigurace** sloupec podle výrazu **Microsoft**.
-5. Vyberte název funkce elektronické fakturace z tabulky na začátku tohoto tématu a poté vyberte **Import**.
+5. V tabulce vyberte název funkce elektronické fakturace a poté vyberte **Import**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Vytvoření funkce elektronické fakturace u poskytovatele organizace
 
@@ -113,7 +113,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
 
-7. U každého vytvořeného názvu tabulky vyberte a zadejte kontext podle následující tabulky.
+6. U každého vytvořeného názvu tabulky vyberte a zadejte kontext podle následující tabulky.
 
     | Název funkce                         | Obchodní dokument | Kontext |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
 
-8. U každého názvu tabulky a kontextu vyberte a zadejte hodnotu mapování obchodního dokumentu podle následující tabulky.
+7. U každého názvu tabulky a kontextu vyberte a zadejte hodnotu mapování obchodního dokumentu podle následující tabulky.
 
     | Název funkce                         | Obchodní dokument | Mapování obchodního dokumentu |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Nasazení funkce elektronické fakturace do připojené aplikace
 
 1. Na kartě **Verze** vyberte verzi funkce elektronické fakturace, kterou chcete nasadit.
-4. Vyberte **Nasadit**.
-5. Nastavte možnost **Nasadit do připojené aplikace** na **Ano**.
-6. V poli **Připojit aplikaci** vyberte připojení, které je spojeno s vaší instancí Finance nebo Supply Chain Management.
-7. Nastavte možnost **Nasadit do prostředí služby** na **Ne**.
-10. Vyberte **OK**.
+2. Vyberte **Nasadit**.
+3. Nastavte možnost **Nasadit do připojené aplikace** na **Ano**.
+4. V poli **Připojit aplikaci** vyberte připojení, které je spojeno s vaší instancí Finance nebo Supply Chain Management.
+5. Nastavte možnost **Nasadit do prostředí služby** na **Ne**.
+6. Vyberte **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Zapnutí funkce elektronické fakturace ve Finance nebo Supply Chain Management
 
@@ -213,7 +213,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
 ## <a name="issue-electronic-invoices"></a>Vydávání elektronických faktur
 
 1. Přejděte na **Správa organizace** \> **Periodické** \> **Elektronické dokumenty** \> **Odesílat elektronické dokumenty**.
-2. Na pevné záložce **Záznam, který má být zahrnut** vyberte možnost **Filtr**.
+2. Na pevné záložce **záznamy, které mají být zahrnuty** vyberte možnost **Filtr**.
 3. Vybrat **Přidat** pro přidání názvu tabulky do filtru dotazu.
 4. Vyberte tabulku, která obsahuje faktury.
 

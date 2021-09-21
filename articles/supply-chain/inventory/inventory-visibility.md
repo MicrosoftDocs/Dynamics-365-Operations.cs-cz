@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344281"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474981"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Přehled doplňku Viditelnost zásob
 
@@ -31,22 +31,20 @@ Jako mikroslužba, jejímž základem je služba Microsoft Dataverse poskytuje V
 
 Viditelnost zásob můžete integrovat s různými systémy třetích stran nastavením možností konfigurace pro standardizované dimenze zásob a nastavením typů transakcí. Viditelnost zásob také podporuje přizpůsobitelnou rozšiřitelnost prostřednictvím konfigurovatelných vypočítaných množství.
 
-## <a name="supported-features"></a>Podporované funkce
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Nastavení integrace Viditelnosti zásob s aplikací Dynamics 365 Supply Chain Management
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Nastavení integrace Viditelnosti zásob s aplikací Dynamics 365 Supply Chain Management
+Integrované řešení čerpá skladová data z Dynamics 365 Supply Chain Management a průběžně sleduje změny zásob. Další informace viz [Instalace a nastavení viditelnosti zásob](inventory-visibility-setup.md) a [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
 
-Integrované řešení čerpá skladová data z Dynamics 365 Supply Chain Management a průběžně sleduje změny zásob. Další informace viz [Nastavení doplňku Viditelnost zásob](inventory-visibility-setup.md).
+## <a name="get-a-global-view-of-inventory"></a>Jak získat globální přehled o zásobách
 
-### <a name="get-a-global-view-of-inventory"></a>Jak získat globální přehled o zásobách
-
-Integrované řešení vám umožňuje definovat vlastní zdroje dat a centralizovat data zásob. Další informace viz [Konfigurace doplňku Viditelnost zásob](inventory-visibility-configuration.md).
+Integrované řešení vám umožňuje definovat vlastní zdroje dat a centralizovat data zásob. Další informace viz [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
 
 Existují dva přístupy k prohlížení vašich zásob:
 
 - Odešlete dotaz prostřednictvím vysoce výkonného rozhraní API. Toto rozhraní API může vracet data o zásobách téměř v reálném čase přímo z instance uložené v mezipaměti. Smlouvy a vzorky najdete v části [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
 - Zobrazte nezpracovaný seznam zásob na skladě. Tento seznam je pravidelně synchronizován z instance uložené v mezipaměti a je viditelný v Dataverse. Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Předběžné rezervace
+## <a name="soft-reservations"></a>Předběžné rezervace
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

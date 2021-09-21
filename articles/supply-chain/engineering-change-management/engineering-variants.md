@@ -10,18 +10,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e2133263f4bee09a3365236601e0d2fdd08a7ae
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766139"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471829"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generování variant pro technické produkty
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Toto téma popisuje, jak generovat varianty pro technické produkty.
+
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Zapnutí generování variant pro technické produkty
+
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+
+- **Modul:** *Správa technických změn*
+- **Název funkce:** *Zapnutí generování variant pro technické produkty*
+
+> [!IMPORTANT]
+> Funkce *Generování variant pro technické produkty* bude ve vašem systému viditelná až poté, co povolíte konfigurační klíč *Správa technických změn*. Pokyny naleznete v tématu [Přehled správy technických změn](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generování jedné nebo více nových variant technického produktu
 
@@ -38,10 +49,15 @@ Následující postup poskytuje příklad, jak vytvořit několik variant obsahu
 1. Podle potřeby k variantě přidejte kusovník (BOM) a trasu.
 1. V podokně akcí otevřete kartu **Produkt** a ve skupině **Základní produkt** zvolte **Dimenze produktu**.
 1. Otevře se stránka **Dimenze produktu**. Tato stránka obsahuje kartu pro každou dostupnou dimenzi. Na každé kartě přidejte řádek pro každou hodnotu, kterou budete podporovat u každé relevantní dimenze. (V tomto případě můžete přidat řádky do karty **Barva** s hodnotami *Bílá*, *Žlutá*, a *Zelená*).
-1. Zavřete stránku a vyberte **Uvolněné varianty produktu**. Všimněte si, že se objeví první vytvořená varianta (bílá V-1).
-1. Vyberte možnost **Návrhy variant**.
-1. Systém navrhuje varianty s vytvořenými hodnotami barev (například bílá V-1, žlutá V-1 a zelená V-1).
-1. Vyberte navrhované varianty a tlačítkem **OK** uvolněte varianty do technické společnosti. Platí následující podmínky: 
+1. Zavřete stránku a vyberte **Vydané varianty produktu**. Všimněte si, že se objeví první varianta, kterou jste vytvořili (modrá V-1).
+1. V podokně akcí na kartě **Varianta produktu** vyberte **Návrhy variant**.
+1. V dialogovém okně **Návrhy variant** proveďte některý z těchto kroků:
+
+    - V horní části dialogového okna je sekce pro každou dostupnou dimenzi. U každé dimenze zaškrtněte políčko u každé hodnoty, pro kterou chcete vygenerovat návrh varianty, a poté vyberte **Navrhnout** na panelu nástrojů. Příslušné návrhy jsou přidány do sekce **Navrhované varianty**.
+    - Vyberte **Navrhnout vše** na panelu nástrojů, aby se generovaly návrhy variant pro všechny dostupné kombinace hodnot dimenze. Návrhy jsou přidány do sekce **Navrhované varianty**.
+
+1. V sekci **Navrhované varianty** zaškrtněte políčko u každé varianty, kterou chcete vytvořit. Pak výběrem možnosti **Vytvořit** generujte a vydejte vybrané varianty pro technickou společnost. Platí následující podmínky:
+
     - Žádná z vytvořených variant nebude mít kusovník ani trasu.
     - Atributy pro tyto varianty budou mít výchozí hodnoty z technické kategorie a nebudou zkopírovány z předchozí varianty.
 

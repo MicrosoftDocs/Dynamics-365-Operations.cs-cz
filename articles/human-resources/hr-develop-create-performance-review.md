@@ -1,8 +1,8 @@
 ---
 title: Vytvoření kontrol výkonnosti
 description: Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732242"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431153"
 ---
 # <a name="create-performance-reviews"></a>Vytvoření kontrol výkonnosti
 
@@ -65,13 +65,13 @@ Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pr
 30. Vyberte kartu **Hodnocení**.  
 
     - Pevná záložka **Podrobnosti hodnocení** umožňuje zaměstnancům hodnotit sebe a manažerům hodnotit zaměstnance. Pokud jsou použity váhy, hodnota váhy skóre se vypočítá automaticky.  
-    - Pokud chcete tuto část zobrazit, povolte nastavení parametrů pro zobrazení hodnocení zaměstnance.  
+    - Chcete -li zobrazit tuto část, povolte nastavení parametrů pro zobrazování hodnocení zaměstnanců na stránce **Sdílené parametry lidských zdrojů**.  
 
-31. Zvolte kartu **Podpisy**. Používá-li recenze pracovní postup, podpisy se zobrazí pouze po dokončení pracovního postupu. Pokud není použit žádný pracovní postup, pracovník a manažer jsou zde uvedeni. Požadované zaškrtávací políčko je vybráno na základě nastavení typu recenze.  
+31. Zvolte kartu **Podpisy**. Používá-li recenze pracovní postup, podpisy se zobrazí pouze po dokončení pracovního postupu. Pokud není použit žádný pracovní postup, pracovník a manažer jsou zde uvedeni. **Požadované** zaškrtávací políčko pro **Odhlášení** je vybráno na základě nastavení typu recenze.  
 32. Zvolte kartu **Obecné**.
 
     - Doba výkonu vytvoří ve výchozím nastavení počáteční a koncové datum. Tato data lze upravovat.  
-    - Stavy řídí přístup k přezkoumání. Stav **Nespuštěno** umožňuje všem uživatelům upravit recenzi. Stav **Probíhající** umožňuje zobrazit a upravit recenze pouze zaměstnancům. **Připraveno ke kontrole** umožňuje zobrazovat a upravovat recenze pouze správcům. Stav **Konečná kontrola** umožňuje zobrazit recenzi zaměstnanci i manažerovi a upravit ji v případě, že je nastavená v typu recenze. Stavy **Dokončeno** a **Zrušeno** nastavují recenzi jen pro čtení. Pokud je recenze **odmítnuta** a odeslána zpět zaměstnanci, jak zaměstnanec, tak manažer mohou provést nezbytné úpravy, aby je zaměstnanec mohl znovu odeslat.
+    - Stavy řídí přístup k přezkoumání. Stav **Nespuštěno** umožňuje všem uživatelům upravit recenzi. Stav **Probíhající** umožňuje zobrazit a upravit recenze pouze zaměstnancům. **Připraveno ke kontrole** umožňuje zobrazovat a upravovat recenze pouze správcům. Stav **Závěrečná recenze** umožňuje zaměstnanci i vedoucímu prohlížet a upravovat recenzi, pokud je v typu recenze vybrána možnost **Povolit úpravy při závěrečné recenzi**. Stavy **Dokončeno** a **Zrušeno** nastavují recenzi jen pro čtení. Pokud je recenze **odmítnuta** a odeslána zpět zaměstnanci, jak zaměstnanec, tak manažer mohou provést nezbytné úpravy, aby je zaměstnanec mohl znovu odeslat.
 
 33. Zadejte hodnotu do pole **Přehled**.
 34. Zvolte kartu **Kontrola**. S tím, jak recenze prochází jednotlivými stavy, zaměstnanec a manažer můžou přidávat komentáře pro každý cíl nebo kompetenci.  

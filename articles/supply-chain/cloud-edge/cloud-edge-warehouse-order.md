@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731882"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471685"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731882"
 
 ## <a name="what-are-warehouse-orders"></a>Co jsou to skladové objednávky?
 
-*Skladové objednávky* jsou typem objednávky, která byla vytvořena k podpoře nasazení centra podpory a škálování jednotek skladu. Umožní vám přijímat zásoby, když pracujete se zatížením skladu na jednotce škálování. Aktuálně se používají pouze u objednávek.
+*Skladové objednávky* jsou typem objednávky používané k podpoře nasazení centra podpory a škálování jednotek skladu. Umožní vám přijímat a dodávat zásoby, když pracujete se zatížením skladu na jednotce škálování.
 
-Objednávky skladu se používají jako součást zpracování správy skladu, například když se mobilní aplikace Řízení skladu používá k registraci fyzických zásob na skladě během zpracování příchozí nákupní objednávky. Skladové objednávky jsou vytvářeny jako součást procesu *Vydání do skladu*, který je k dispozici pro nákupní objednávky, které určují sklad jednotek měřítka a položky, které mají povoleno používat procesy správy skladu.
+Skladové objednávky se používají jako součást zpracování správy příchozích i odchozích skladů. Jsou vytvořeny jako součást procesu *Uvolněte do skladu*, který se inicializuje na rozbočovači.
+Pro příchozí zpracování slouží mobilní aplikace skladu k registraci fyzického skladového inventáře během zpracování příchozích objednávek, což je k dispozici u nákupních a výrobních objednávek, které specifikují skladovou jednotku škálování a položky, u kterých je povoleno používat procesy správy skladu.
+Odchozí skladové objednávky se používají jako součást procesu mávání zásilky pro převodní a prodejní objednávky.
 
 > [!IMPORTANT]
 > Objednávky skladu jsou k dispozici pouze v nasazeních, která používají [úlohy správy skladu pro cloudové a okrajové jednotky škálování](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Vytvoření skladové objednávky
+## <a name="create-an-inbound-warehouse-order"></a>Vytvoření příchozího skladového příkazu
 
-Chcete-li vytvořit skladovou objednávku, postupujte následujícím způsobem.
+Chcete-li vytvořit příchozí skladovou objednávku pro proces nákupní objednávky, postupujte takto.
 
 1. Přihlaste se k instanci aplikace Microsoft Dynamics 365 Supply Chain Management, která běží v centru. (Musíte zahájit proces *Vydání do skladu*, když jste přihlášeni v centru.)
 1. Přejděte na **Zásobování a zdroje \> Nákupní objednávky \> Všechny nákupní objednávky**.

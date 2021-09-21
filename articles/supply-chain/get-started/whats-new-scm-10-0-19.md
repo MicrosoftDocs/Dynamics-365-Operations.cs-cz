@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384652"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474885"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -67,7 +67,6 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 | Řízení informací o produktech | [Správa měrných jednotek](../pim/tasks/manage-unit-measure.md)<br><br>[Výpočty modelu konfigurace produktu](../pim/config-model-calculations.md) |
 | Řízení výroby | [Sjednocená číselná řady pro ID úloh](../production-control/unified-job-ids.md) |
 | Správa přepravy | [Třídy LTL](../transportation/ltl-class.md)<br><br>[Kódy NMFC](../transportation/nmfc-codes.md) |
-| Řízení skladu | [Odstraňování problémů s hierarchiemi dávkových a sériových rezervací skladu](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
 | Řízení skladu, tvorba a zpracování vln | [Tvorba a zpracování vln](../warehousing/wave-processing.md)<br><br>[Parametry skladu pro zpracování vln](../warehousing/wave-warehouse-parameters.md)<br><br>[Šablony vlny](../warehousing/wave-templates.md)<br><br>[Přidělení vlny](../warehousing/wave-allocation-method.md)<br><br>[Plánování vytváření práce během vlny](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Vytváření kontejnerů](../warehousing/wave-containerization.md)<br><br>[Oznámení o provedení vlny](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Další prostředky

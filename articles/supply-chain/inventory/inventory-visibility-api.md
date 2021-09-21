@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 0aca5838ff6d7c9c4d881698be1e2da2e0e1c02e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343625"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474645"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejná rozhraní API Viditelnosti zásob
 
@@ -46,6 +46,9 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 
 Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
+> [!NOTE]
+> Součástí cesty {environmentId} je ID prostředí v Microsoft Dynamics Lifecycle Services (LCS).
+
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
 
 Mikroslužba Viditelnost zásob je nasazena v prostředí Microsoft Azure Service Fabric, ve více geografických oblastech a více regionech. V současné době neexistuje centrální koncový bod, který by mohl automaticky přesměrovat váš požadavek na odpovídající geografickou oblast a region. Proto musíte tyto informace sestavit do adresy URL pomocí následujícího vzorce:
@@ -54,22 +57,26 @@ Mikroslužba Viditelnost zásob je nasazena v prostředí Microsoft Azure Servic
 
 Krátký název regionu najdete v prostředí Microsoft Dynamics Lifecycle Services (LCS). V následující tabulce jsou uvedeny regiony, které jsou aktuálně k dispozici.
 
-| Oblast Azure | Krátký název oblasti |
-|---|---|
-| Austrálie – východ | eau |
-| Austrálie – jihovýchod | seau |
-| Střední Kanada | cca |
-| Kanada – východ | eca |
-| Evropa – sever | neu |
-| Evropa – západ | weu |
-| Východní USA | eus |
-| USA – západ | wus |
-| Velká Británie – jih | suk |
-| Velká Británie – západ | wuk |
+| Oblast Azure        | Krátký název oblasti |
+| ------------------- | ----------------- |
+| Austrálie – východ      | eau               |
+| Austrálie – jihovýchod | seau              |
+| Střední Kanada      | cca               |
+| Kanada – východ         | eca               |
+| Evropa – sever        | neu               |
+| Evropa – západ         | weu               |
+| Východní USA             | eus               |
+| USA – západ             | wus               |
+| Velká Británie – jih            | suk               |
+| Velká Británie – západ             | wuk               |
+| Východní Japonsko          | ejp               |
+| Západní Japonsko          | wjp               |
+| Jižní Brazílie        | sbr               |
+| Střed USA – jih    | scus              |
 
 Číslo ostrova je místo, kde je vaše prostředí LCS nasazeno v prostředí Service Fabric. V současné době neexistuje žádný způsob, jak tyto informace získat na straně uživatele.
 
-Společnost Microsoft vytvořila uživatelské rozhraní (UI) v Power Apps, abyste mohli získat úplný koncový bod mikroslužby. Více informací najdete v části [Vyhledání koncového bodu služby](inventory-visibility-power-platform.md#get-service-endpoint).
+Společnost Microsoft vytvořila uživatelské rozhraní (UI) v Power Apps, abyste mohli získat úplný koncový bod mikroslužby. Více informací najdete v části [Vyhledání koncového bodu služby](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Ověřování
 
@@ -80,66 +87,66 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
 1. Přihlaste se na portál Azure a použijte jej k vyhledání hodnot `clientId` a `clientSecret` pro vaši aplikaci Dynamics 365 Supply Chain Management.
 1. Načtěte token Azure AD (`aadToken`) odesláním požadavku HTTP s následujícími vlastnostmi:
 
-    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
-    - **Metoda:** `GET`
-    - **Obsah těla (údaje formuláře):**
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Metoda:** `GET`
+   - **Obsah těla (údaje formuláře):**
 
-        | Klíč | Hodnota |
-        |---|---|
-        | id klienta | ${aadAppId} |
-        | tajný klíč klienta | ${aadAppSecret} |
-        | typ grantu | client_credentials |
-        | prostředek | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Klíč           | Hodnota                                |
+     | ------------- | ------------------------------------ |
+     | id klienta     | ${aadAppId}                          |
+     | tajný klíč klienta | ${aadAppSecret}                      |
+     | typ grantu    | client_credentials                   |
+     | prostředek      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    V odpovědi byste měli obdržet token Azure AD (`aadToken`). Výsledek by měl vypadat podobně jako v následujícím příkladu.
+   V odpovědi byste měli obdržet token Azure AD (`aadToken`). Výsledek by měl vypadat podobně jako v následujícím příkladu.
 
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": "3599",
-        "ext_expires_in": "3599",
-        "expires_on": "1610466645",
-        "not_before": "1610462745",
-        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-        "access_token": "eyJ0eX...8WQ"
-    }
-    ```
+   ```json
+   {
+       "token_type": "Bearer",
+       "expires_in": "3599",
+       "ext_expires_in": "3599",
+       "expires_on": "1610466645",
+       "not_before": "1610462745",
+       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+       "access_token": "eyJ0eX...8WQ"
+   }
+   ```
 
 1. Formulujte požadavek JSON (JavaScript Object Notation), který se podobá následujícímu příkladu.
 
-    ```json
-    {
-        "grant_type": "client_credentials",
-        "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
-        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-        "context_type": "finops-env"
-    }
-    ```
+   ```json
+   {
+       "grant_type": "client_credentials",
+       "client_assertion_type": "aad_app",
+       "client_assertion": "{Your_AADToken}",
+       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context_type": "finops-env"
+   }
+   ```
 
-    Mějte na paměti následující body:
+   Mějte na paměti následující body:
 
-    - Hodnotou `client_assertion` musí být token Azure AD (`aadToken`), který jste obdrželi v předchozím kroku.
-    - Hodnota `context` musí být ID prostředí, do kterého chcete doplněk nasadit.
-    - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
+   - Hodnotou `client_assertion` musí být token Azure AD (`aadToken`), který jste obdrželi v předchozím kroku.
+   - Hodnota `context` musí být ID prostředí LCS, do kterého chcete doplněk nasadit.
+   - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
 
 1. Odešlete požadavek HTTP s následujícími vlastnostmi:
 
-    - **URL:** `https://securityservice.operations365.dynamics.com/token`
-    - **Metoda:** `POST`
-    - **Záhlaví HTTP:** Včetně verze API. (Klíč je`Api-Version` a hodnota je`1.0` .)
-    - **Obsah těla:** Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
+   - **URL:** `https://securityservice.operations365.dynamics.com/token`
+   - **Metoda:** `POST`
+   - **Záhlaví HTTP:** Včetně verze API. (Klíč je`Api-Version` a hodnota je`1.0` .)
+   - **Obsah těla:** Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
 
-    V odpovědi byste měli obdržet přístupový token (`access_token`). Tento token musíte použít jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
+   V odpovědi byste měli obdržet přístupový token (`access_token`). Tento token musíte použít jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
 
-    ```json
-    {
-        "access_token": "{Returned_Token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
+   ```json
+   {
+       "access_token": "{Returned_Token}",
+       "token_type": "bearer",
+       "expires_in": 3600
+   }
+   ```
 
 V dalších částech použijete `$access_token` jako token, který byl načten v posledním kroku.
 
@@ -160,6 +167,9 @@ Následující tabulka sumarizuje význam každého pole v těle JSON.
 | `quantities` | Množství, o které se musí změnit skladové množství. Pokud je například do police přidáno 10 nových knih, bude tato hodnota `quantities:{ shelf:{ received: 10 }}`. Pokud budou tři knihy odstraněny z police nebo prodány, bude tato hodnota `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | Zdroj dat dimenzí použitých v události změny publikování změny a dotazu. Pokud zadáte zdroj dat, můžete použít vlastní dimenze ze zadaného zdroje dat. Viditelnost zásob může konfiguraci dimenze použít k mapování vlastních dimenzí na obecné výchozí dimenze. Pokud není zadána hodnota `dimensionDataSource`, můžete ve svých dotazech použít pouze obecné [základní dimenze](inventory-visibility-configuration.md#data-source-configuration-dimension). |
 | `dimensions` | Dynamický pár klíč/hodnota. Hodnoty jsou namapovány na některé dimenze v Supply Chain Management. Můžete však také přidat vlastní dimenze (např ._Zdroj_) k označení, zda událost pochází ze Supply Chain Management nebo z externího systému. |
+
+> [!NOTE]
+> Parametry `SiteId` a `LocationId` tvoří [ konfiguraci oddílu](inventory-visibility-configuration.md#partition-configuration). Proto je musíte zadat v dimenzích, když vytváříte události změny zásob na skladě, nastavujete nebo přepisujete množství v ruce nebo vytváříte události rezervace.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Vytvoření jedné události změny ve skladu
 
@@ -201,6 +211,9 @@ Následující příklad ukazuje ukázkový obsah těla. V této ukázce odešle
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "PosMachineId": "0001",
         "ColorId": "Red"
     },
     "quantities": {
@@ -211,7 +224,7 @@ Následující příklad ukazuje ukázkový obsah těla. V této ukázce odešle
 }
 ```
 
-Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource`.
+Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource`. V tomto případě bude `dimensions` [základní dimenze](inventory-visibility-configuration.md#data-source-configuration-dimension). Pokud je nastavena hodnota `dimensionDataSource`, `dimensions` může být buď dimenze zdroje dat, nebo základní dimenze.
 
 ```json
 {
@@ -219,9 +232,9 @@ Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource
     "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensions": {
-        "ColorId": "Red",
         "SiteId": "1",
-        "LocationId": "11"
+        "LocationId": "11",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -275,6 +288,8 @@ Následující příklad ukazuje ukázkový obsah těla.
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+            "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId&quot;: &quot;0001"
         },
         "quantities": {
@@ -284,10 +299,11 @@ Následující příklad ukazuje ukázkový obsah těla.
     {
         "id": "654321",
         "organizationId": "usmf",
-        "productId": "@PRODUCT1",
-        "dimensionDataSource": "pos",
+        "productId": "Pants",
         "dimensions": {
-            "PosMachineId&quot;: &quot;0001"
+            "SiteId": "1",
+            "LocationId": "11",
+            "ColorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -341,6 +357,8 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+             "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId": "0001"
         },
         "quantities": {
@@ -359,6 +377,12 @@ Následující příklad ukazuje ukázkový obsah těla. Chování tohoto rozhra
 Chcete-li použít API *Reserve*, musíte otevřít funkci rezervace a dokončit konfiguraci rezervace. Další informace viz [Konfigurace rezervace (volitelná)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Vytvoření jedné rezervační události
+
+Je možné provést rezervaci proti různým nastavením zdroje dat. Chcete -li konfigurovat tento typ rezervace, nejprve zadejte zdroj dat v parametru `dimensionDataSource`. Poté v parametru `dimensions` zadejte kóty podle nastavení dimenzí v cílovém zdroji dat.
+
+Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
+
+Pokud chcete zrušit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření.
 
 ```txt
 Path:
@@ -467,14 +491,28 @@ ContentType:
     application/json
 Body:
     {
-        organizationId: string,
+        dimensionDataSource: string, # Optional
         filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
             [dimensionKey:string]: string[],
         },
         groupByValues: string[],
         returnNegative: boolean,
     }
 ```
+
+V těle této žádosti, `dimensionDataSource` je stále volitelný parametr. Pokud není nastaven, s parametrem `filters` bude zacházeno jako se *základními dimenzemi*. K dispozici jsou čtyři povinná pole pro `filters`: `organizationId`, `productId`, `siteId`, a `locationId`.
+
+- `organizationId` by měl obsahovat pouze jednu hodnotu, ale stále je to pole.
+- `productId` může obsahovat jednu nebo více hodnot. Pokud je prázdné pole, budou vráceny všechny produkty.
+- `siteId` a `locationId` se ve viditelnosti skladu používají k dělení.
+
+Parametr `groupByValues` by se měl řídit vaší konfigurací pro indexování. Další informace najdete v tématu [Konfigurace hierarchie indexu produktů](./inventory-visibility-configuration.md#index-configuration).
+
+Parametr `returnNegative` určuje, zda výsledky obsahují záporné položky.
 
 Následující příklad ukazuje ukázkový obsah těla.
 
@@ -484,7 +522,24 @@ Následující příklad ukazuje ukázkový obsah těla.
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "LocationId": ["11"],
         "ColorId": ["Red"]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
+}
+```
+
+Následující příklady ukazují, jak dotazovat všechny produkty na konkrétním pracovišti a umístění.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": [],
+        "siteId": ["1"],
+        "LocationId": ["11"],
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true
@@ -512,7 +567,7 @@ Query(Url Parameters):
 Zde je ukázka adresy URL pro metodu GET. Tento GET požadavek je přesně stejný jako ukázka POST, která byla uvedena dříve.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

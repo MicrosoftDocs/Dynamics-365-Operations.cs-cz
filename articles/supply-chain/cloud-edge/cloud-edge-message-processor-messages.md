@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748852"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471637"
 ---
 # <a name="message-processor-messages"></a>Zprávy procesoru zpráv
 
@@ -44,7 +44,7 @@ Můžete použít pole v horní části stránky **Zprávy procesoru zpráv** k 
   - *Ve frontě* – Zpráva je připravena ke zpracování procesorem zpráv.
   - *Zpracováno* – Zpráva byla úspěšně zpracována procesorem zpráv.
   - *Zrušeno* – Zpráva byla zpracována, ale zpracování se nezdařilo.
-- **Obsah zprávy** – Tento filtr provádí fulltextové vyhledávání obsahu zprávy. (Obsah zprávy se v mřížce nezobrazuje.) Filtr považuje většinu speciálních symbolů (například „-“) za mezery a všechny znaky mezery za logické operátory OR. T=Například toto znamená, pokud hledáte konkrétní hodnotu `journalid` rovnou „USMF-123456“, že systém najde všechny zprávy, které obsahují „USMF“ nebo „123456“, což bude pravděpodobně dlouhý seznam. Proto by bylo lepší zadat pouze „123456“ samostatně, protože to vrátí konkrétnější výsledky.
+- **Obsah zprávy** – Tento filtr provádí fulltextové vyhledávání obsahu zprávy. (Obsah zprávy se v mřížce nezobrazuje.) Filtr považuje většinu speciálních symbolů (například „-“) za mezery a všechny znaky mezery za logické operátory OR. Například toto znamená, pokud hledáte konkrétní hodnotu `journalid` rovnou „USMF-123456“, že systém najde všechny zprávy, které obsahují „USMF“ nebo „123456“, což bude pravděpodobně dlouhý seznam. Proto by bylo lepší zadat pouze „123456“ samostatně, protože to vrátí konkrétnější výsledky.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Příklad typu zprávy: Žádost o finanční aktualizaci zásob
 
@@ -65,7 +65,7 @@ Panel nástrojů na kartě **Protokol** obsahuje následující tlačítka:
 
 ## <a name="message-processor-batch-job"></a>Dávková úloha procesoru zpráv
 
-Při spuštění cloudového a hranového nasazení dávková úloh *Procesor zpráv* bude automaticky vyvolána, když je vytvořena nová zpráva ke zpracování, abyste tuto úlohu nemuseli plánovat ručně.
+Při spuštění distribuované hybridní topologie s jednotkami škály a hranového nasazení dávková úloh *Procesor zpráv* bude automaticky vyvolána, když je vytvořena nová zpráva ke zpracování, abyste tuto úlohu nemuseli plánovat ručně.
 
 V případě potřeby můžete k dávkové úloze přejít na **Správa systému > Procesor zpráv > Procesor zpráv**.
 

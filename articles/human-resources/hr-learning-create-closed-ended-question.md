@@ -1,8 +1,8 @@
 ---
 title: Vytvoření dotazu s uzavřeným koncem
 description: Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si respondent může vybírat.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b4daa277ba1b71238314de975c1e8a54f9ece408d6fc2a314828bc0592129af2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731954"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465166"
 ---
 # <a name="create-a-closed-ended-question"></a>Vytvoření dotazu s uzavřeným koncem
 
@@ -26,46 +26,46 @@ ms.locfileid: "6731954"
 
 
 
-Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si respondent může vybírat. Nejprve je nutné vytvořit skupinu odpovědí s odpověďmi, a následně vytvořit dotaz, který bude používat skupinu odpovědí. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si respondent může vybírat. Nejprve je nutné vytvořit skupinu odpovědí s odpověďmi, a následně vytvořit dotaz, který bude používat skupinu odpovědí. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 
 ## <a name="create-an-answer-group"></a>Vytvoření skupiny odpovědí
-1. Přejít na Dotazník > Návrh > Skupiny odpovědí.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Skupina odpovědí.
-4. Zadejte nějakou hodnotu do pole Popis.
+1. Jděte na **Dotazník** > **Návrh** > **Skupiny odpovědí**.
+2. Klepněte na možnost **Nový**.
+3. Zadejte hodnotu do pole **Skupina odpovědí**.
+4. Zadejte hodnotu do pole **Popis**.
     * Pomocí funkci Náhodně můžete náhodně umístit odpovědi v jiném pořadí pokaždé, když je pro otázku použita skupina odpovědí.  
-5. Klepněte na tlačítko Odpověď.
-6. Klikněte na položku Nová.
+5. Klikněte na tlačítko **Odpověď**.
+6. Klepněte na možnost **Nový**.
     * Číselná řada určuje pořadí, v němž se zobrazují odpovědí, pokud není pro skupinu odpovědí vybrána možnost Náhodně.  
     * Body můžete přidělit k odpovědím a použít je pro hodnocení dotazníku.  
-7. Do pole Body zadejte číslo.
+7. Do pole **Body** zadejte číslo.
     * Správnou odpověď můžete nechat označit a určit tak, že vybraná odpověď je správná. Tento údaj lze použít pro hodnocení dotazníku.  
-8. Zadejte hodnotu do pole Odpověď.
+8. Zadejte hodnotu do pole **Odpověď**.
     * Pokračujte ve vytváření možností výběru odpovědí pro skupinu odpovědí.  
-9. Klikněte na položku Nová.
-10. Do pole Body zadejte číslo.
-11. Zadejte hodnotu do pole Odpověď.
-12. Klepněte na možnost Nový.
-13. Do pole Body zadejte číslo.
-14. Zadejte hodnotu do pole Odpověď.
-15. Klepněte na možnost Nový.
-16. Do pole Body zadejte číslo.
-17. Zadejte hodnotu do pole Odpověď.
-18. Klepněte na možnost Nový.
-19. Do pole Body zadejte číslo.
-20. Zadejte hodnotu do pole Odpověď.
+9. Klepněte na možnost **Nový**.
+10. Do pole **Body** zadejte číslo.
+11. Zadejte hodnotu do pole **Odpověď**.
+12. Klepněte na možnost **Nový**.
+13. Do pole **Body** zadejte číslo.
+14. Zadejte hodnotu do pole **Odpověď**.
+15. Klepněte na možnost **Nový**.
+16. Do pole **Body** zadejte číslo.
+17. Zadejte hodnotu do pole **Odpověď**.
+18. Klepněte na možnost **Nový**.
+19. Do pole **Body** zadejte číslo.
+20. Zadejte hodnotu do pole **Odpověď**.
 21. Zavřete stránku.
 22. Zavřete stránku.
 
 ## <a name="create-the-question"></a>Vytvoření dotazu
-1. Přejít na Dotazník > Návrh > Otázky.
-2. Klikněte na položku Nová.
+1. Jděte na **Dotazník** > **Návrh** > **Otázky**.
+2. Klepněte na možnost **Nový**.
 3. Pole Typ slouží k seskupení příbuzných dotazů.
     * Pro dotazy s uzavřeným koncem můžete použít typy vstupu, jako např. Zaškrtávací políčko, Alternativní tlačítko nebo Pole se seznamem.  
-4. Vyberte možnost v poli Typ vstupu.
-5. V poli Skupina odpovědí zadejte nebo vyberte hodnotu.
-6. Zadejte hodnotu do pole Text.
+4. Vyberte možnost v poli **Typ vstupu**.
+5. V poli **Skupina odpovědí** zadejte nebo vyberte hodnotu.
+6. Zadejte hodnotu do pole **Text**.
 
 
 

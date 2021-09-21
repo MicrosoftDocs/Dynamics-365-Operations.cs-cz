@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345142"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475029"
 ---
 # <a name="inventory-visibility-reservations"></a>Rezervace viditelnosti zásob
 
@@ -32,19 +32,20 @@ Volitelně můžete nastavit Microsoft Dynamics 365 Supply Chain Management (a d
 
 Když zapnete funkci rezervace, Supply Chain Management se automaticky připraví na vyrovnání rezervací provedených pomocí Viditelnosti zásob.
 
-> [!NOTE]
-> Funkce vyrovnání vyžaduje Supply Chain Management verze 10.0.22 nebo novější. Pokud chcete používat rezervace viditelnosti zásob, doporučujeme počkat, až upgradujete Supply Chain Management na verzi 10.0.22 nebo novější.
-
-## <a name="turn-on-the-reservation-feature"></a>Zapněte funkci rezervace
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Zapnutí a nastavení funkce rezervace
 
 Chcete-li funkci rezervace zapnout, postupujte následujícím způsobem.
 
-1. V Power Apps otevřete **Viditelnost zásob**.
+1. přihlaste se do Power Apps a otevřete **Viditelnost zásob**.
 1. Otevřete stránku **Konfigurace**.
 1. Na kartě **Správa funkcí** zapněte funkci *OnHandReservation*.
 1. Přihlaste se k aplikaci Supply Chain Management.
-1. Přejděte do nabídky **Řízení zásob \> Nastavení \> Parametry integrace Viditelnosti zásob**.
-1. Ve **Vyrovnání rezervace** nastavte možnost **Povolit vyrovnání rezervace** na *Ano*.
+1. Jděte na **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** pracovního prostoru a povolte funkci *Integrace viditelnosti zásob s posunem rezervace* (vyžaduje verzi 10.0.22 nebo novější).
+1. Jděte na **Řízení zásob \> Nastavení \> Parametry integrace viditelnosti zásob**, otevřete kartu **Ofset rezervace** a vytvořte následující nastavení:
+    - **Povolit posun rezervace** - Nastavením na *Ano* povolíte tuto funkci.
+    - **Modifikátor ofsetu rezervace** - Vyberte stav transakce zásob, který bude kompenzovat rezervace provedené ve službě Viditelnost zásob. Toto nastavení určuje fázi zpracování objednávky, která spouští offsety. Fáze je sledována podle stavu transakcí zásob objednávky. Vyberte jednu z následujících možností:
+        - *Při objednávce* - Pro stav *Při transakci* objednávka odešle po vytvoření požadavek na vyrovnání. Ofsetové množství bude množství vytvořené objednávky.
+        - *Rezervovat* - Pro stav *Rezervovat objednanou transakci* objednávka odešle požadavek na vyrovnání, pokud je rezervována, vyskladněna, zaúčtována dodacím listem nebo fakturována. Požadavek bude spuštěn pouze jednou, v prvním kroku, když nastane zmíněný proces. Ofsetové množství bude množství, ze kterého se změnil stav transakce zásob *V pořadí* na *Rezervováno objednáno* (nebo pozdější stav) na příslušném řádku objednávky.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Použijte funkci rezervace ve Viditelnosti zásob
 
@@ -56,13 +57,21 @@ Hierarchie rezervací popisuje posloupnost dimenzí, které je třeba zadat při
 
 Hierarchie rezervací se může lišit od hierarchie indexu. Tato nezávislost vám umožňuje implementovat správu kategorií, kde mohou uživatelé rozdělit dimenze na detaily a specifikovat požadavky, aby vytvářeli přesnější rezervace.
 
-Konfigurace hierarchie měkkých rezervací v Power Apps otevřete stránku **Konfigurace** a poté na kartě **Měkké mapování rezervací** nastavte hierarchii rezervací přidáním a/nebo úpravou dimenzí a jejich úrovní hierarchie.
+Konfigurace hierarchie měkkých rezervací v Power Apps otevřete stránku **Konfigurace** a poté na kartě **Měkká hierarchie rezervací** nastavte hierarchii rezervací přidáním a/nebo úpravou dimenzí a jejich úrovní hierarchie.
+
+Vaše hierarchie měkkých rezervací by měla obsahovat `SiteId` a `LocationId` jako součásti, protože vytvářejí konfiguraci oddílu.
+
+Další informace o způsobu konfigurace rezervací naleznete v tématu [Konfigurace rezervací](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Zavolejte rezervační rozhraní API
 
 Rezervace se provádějí ve službě Viditelnost zásob odesláním požadavku POST na adresu URL služby, jako je například `/api/environment/{environment-ID}/onhand/reserve`.
 
 U rezervace musí orgán žádosti obsahovat ID organizace, ID produktu, rezervovaná množství a rozměry. Požadavek generuje jedinečné ID rezervace pro každý záznam rezervace. Záznam rezervace obsahuje jedinečnou kombinaci ID produktu a dimenzí.
+
+Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
+
+Pokud chcete zrušit rezervaci nebo zrušit rezervaci zadaného množství zásob, nastavte množství na zápornou hodnotu a nastavte parametr `ifCheckAvailForReserv` na `False` pro přeskočení ověření.
 
 Zde je příklad textu požadavku pro referenci.
 
@@ -108,18 +117,9 @@ U stavů transakcí zásob, které obsahují zadaný modifikátor vyrpvnání re
 
 Množství vyrovnání následuje po množství zásob, které je uvedeno v transakcích zásob. Vyrovnání se neprojeví, pokud ve službě Viditelnost zásob nezůstane žádné rezervované množství.
 
-> [!NOTE]
-> Funkce vyrovnání je k dispozici od verze 10.0.22
+### <a name="set-up-the-reservation-offset-modifier"></a>Nastavte modifikátor vyrovnání rezervace
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Nastavte modifikátor vyrovnání rezervací
-
-Modifikátor vyrovnání rezervací určuje fázi zpracování objednávky, která spouští vyrovnání. Fáze je sledována podle stavu transakcí zásob objednávky. Chcete-li nastavit modifikátor vyrovnání rezervací, postupujte následujícím způsobem.
-
-1. Přejděte do nabídky **Řízení zásob \> Nastavení \> Parametry integrace Viditelnosti zásob \> Vyrovnání rezervací**.
-1. Nastavte pole **Modifikátor vyrovnání zásob** na jednu z následujících hodnot:
-
-    - *Při objednávce* - Pro stav *Při transakci* objednávka odešle po vytvoření požadavek na vyrovnání.
-    - *Rezervovat* - Pro stav *Rezervovat objednanou transakci* objednávka odešle požadavek na vyrovnání, pokud je rezervována, vyskladněna, zaúčtována dodacím listem nebo fakturována. Požadavek bude spuštěn pouze jednou, v prvním kroku, když nastane zmíněný proces.
+Pokud jste to ještě neudělali, nastavte modifikátor rezervace podle popisu v tématu [Zapnutí a nastavení funkce rezervace](#turn-on).
 
 ### <a name="set-up-reservation-ids"></a>Nastavení ID rezervací
 

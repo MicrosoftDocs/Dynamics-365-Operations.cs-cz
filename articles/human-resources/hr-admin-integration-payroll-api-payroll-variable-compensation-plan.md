@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 96a644bf129de6dd3f78098bcb6415d17058d6decbd7d904a99bb6f050d3a9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c30df23debed9e2ab90745e6ea9d0e6b8a05b6d5
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730435"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429260"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Mzdový plán variabilní kompenzace
 
@@ -36,44 +36,51 @@ Fyzický název: mshr_payrollvariablecompensationawardentity.
 
 | Vlastnost</br>**Fyzický název**</br>**_Typ_** | Použít | popis |
 | --- | --- | --- |
-| **Číslo pracovníka**</br>mshr_personnelnumber</br>*Řetězec* | Jen pro čtení</br>Povinná |Jedinečné osobní číslo zaměstnance.  |
-| **Datum odměny**</br>mshr_awarddate</br>*Posun data a času* | Jen pro čtení</br>Povinná | Datum odměny. |
-| **Typ odměny**</br>mshr_awardtype</br>*[Nastavení možnosti mshr_HrmCompVarAwardEmplType](hr-admin-integration-payroll-api-award-type.md)* | Jen pro čtení</br>Povinná | Typ odměny, který je definován pro plán variabilní kompenzace. |
-| **Měna**</br>mshr_unitcurrencycode</br>*Řetězec* | Jen pro čtení </br>Povinná |Měna definovaná pro plán variabilní kompenzace.   |
+| **Číslo pracovníka**</br>mshr_personnelnumber</br>*Řetězec* | Jen pro čtení | Jedinečné osobní číslo zaměstnance.  |
+| **Datum odměny**</br>mshr_awarddate</br>*Posun data a času* | Jen pro čtení | Datum odměny. |
+| **Typ odměny**</br>mshr_awardtype</br>*[Nastavení možnosti mshr_HrmCompVarAwardEmplType](hr-admin-integration-payroll-api-award-type.md)* | Jen pro čtení | Typ odměny, který je definován pro plán variabilní kompenzace. |
+| **Měna**</br>mshr_unitcurrencycode</br>*Řetězec* | Jen pro čtení |Měna definovaná pro plán variabilní kompenzace.   |
 | **ID plánu fixní kompenzace**</br>mshr_fixedplanid</br>*Řetězec* | Jen pro čtení | Plán fixní kompenzace, který má být použit jako základ pro výpočet dané odměny. |
 | **Hodnota jednotky**</br>mshr_awardamount</br>*Des. místo* | Jen pro čtení | Hodnota jednotky |
 | **Typ procesu**</br>mshr_processtype</br>*[Nastavení možnosti mshr_hrmCompProcessType](hr-admin-integration-payroll-api-process-type.md)* | Jen pro čtení | Typ procesu. |
 | **Typ plánu variabilní kompenzace**</br>Řetězec</br>*mshr_typeid* | Jen pro čtení | Typ plánu variabilní kompenzace. |
 | **ID plánu variabilní kompenzace**</br>Řetězec</br>*mshr_planid* | Jen pro čtení | ID plánu variabilní kompenzace. |
+| **Počet jednotek**</br>Desetinné</br>*mshr_numberofunits* | Jen pro čtení | Počet jednotek ocenění. |
 | **Primární pole**</br>mshr_primaryfield</br>*GUID* | Jen pro čtení</br>Generováno systémem. | |
-| **ID zaměstnance**</br>mshr_fk_employee_id_value</br>*GUID* | Jen pro čtení</br>Povinná</br>Cizí klíč: mshr_Employee_id z entity mshr_payrollemployeeentity  | ID zaměstnance. |
-| **Entita mzdového plánu variabilní kompenzace**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Povinná</br>Generováno systémem | Systémem generovaná hodnota GUID pro jedinečnou identifikaci plánu kompenzace. |
+| **Entita mzdového plánu variabilní kompenzace**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Generováno systémem | Systémem generovaná hodnota GUID pro jedinečnou identifikaci plánu kompenzace. |
 
+## <a name="relations"></a>Vztahy 
+
+|Hodnota vlastnosti | Související entita | Navigační vlastnost | Typ kolekce |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_VariableCompAward |
+| _mshr_fk_fixedcomp_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedComp_id | mshr_FK_PayrollFixedCompensationPlanEntity_VariableCompAward |
 
 ## <a name="example-query"></a>Ukázkový dotaz
 
 **Žádost**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000001'
+GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
 ```
 
 **Odezva**
 
 ```json
 {
-    "mshr_personnelnumber": "000001",
+    "mshr_personnelnumber": "000046",
     "mshr_awarddate": "2015-01-15T00:00:00Z",
     "mshr_awardtype": 200000000,
     "mshr_unitcurrencycode": "USD",
     "mshr_fixedplanid": "",
-    "mshr_awardamount": 1,
+    "mshr_unitvalue": 1,
     "mshr_processtype": 200000003,
     "mshr_typeid": "Bonus",
     "mshr_planid": "MgBonus",
-    "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
-    "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
-    "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
+    "mshr_numberofunits": 1500,
+    "mshr_primaryfield": "000046 | MgBonus | Bonus | 1/15/2015",
+    "_mshr_fk_employee_id_value": "00000666-0000-0000-daff-004105000000",
+    "mshr_payrollvariablecompensationawardentityid": "000001a4-0000-0000-0d00-005001000000",
     "_mshr_fk_fixedcomp_id_value": null
 }
 ```

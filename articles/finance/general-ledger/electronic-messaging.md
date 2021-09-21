@@ -2,7 +2,7 @@
 title: Elektronické zprávy
 description: Toto téma poskytuje přehled a informace o nastavení pro elektronické zprávy v Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768332"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478716"
 ---
 # <a name="electronic-messaging"></a>Elektronické zprávy
 
@@ -57,6 +57,16 @@ Funkce elektronických zpráv podporuje následující situace:
 - Uložení a kontrola všech sestav, které jsou generovány.
 - Uložení a kontrola všech informací o protokolu, souvisejících s akcemi, které jsou spuštěny pro zprávy nebo položky zprávy.
 - Kontrola zpracování pomocí různých stavů zpráv a položek zpráv.
+
+## <a name="security-privileges"></a>Oprávnění zabezpečení
+
+Pro elektronické zprávy jsou k dispozici následující bezpečnostní oprávnění.
+
+| Bezpečnostní oprávnění           | Úroveň přístupu | Přidružení |
+|------------------------------|--------------|-------------|
+| Udržovat elektronické zprávy | Toto oprávnění poskytuje plný přístup k funkcím EM. Pokud máte toto oprávnění, můžete nastavit elektronické zasílání zpráv a spustit veškeré zpracování. | Toto oprávnění je součástí povinnosti zabezpečení **Udržovat transakce DPH**. Tato povinnost je zase zahrnuta v roli zabezpečení **Účetní**. |
+| Zobrazit elektronické zprávy     | Toto oprávnění poskytuje přístup k funkcím EM jen pro čtení. Pokud máte toto oprávnění, můžete zobrazit nastavení a zprávy pro elektronické zasílání zpráv. Nic však nemůžete nastavit ani spustit. | Toto oprávnění je součástí povinnosti zabezpečení **Dotaz na stav transakce DPH**. Tato povinnost je zase zahrnuta v následujících rolích zabezpečení:<ul><li>Manažer inkasa</li><li>Úředník pohledávek</li><li>Manažer pohledávek</li><li>Daňový účetní</li><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Manažer prodeje</li><li>Úředník závazků</li></ul> |
+| Provozování elektronických zpráv  | Toto oprávnění poskytuje přístup pouze na stránky **Elektronické zprávy** a **Položky elektronických zpráv**. Pokud máte toto oprávnění, můžete z těchto stránek spustit veškeré zpracování, které je voláno. | Toto oprávnění je součástí povinnosti zabezpečení **Provozovat elektronické zprávy**. Tato povinnost je zase zahrnuta v roli zabezpečení **Provozovatel elektronických zpráv**. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Regulační funkce specifické pro zemi podporované funkcí EM
 

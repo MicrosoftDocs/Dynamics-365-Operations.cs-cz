@@ -1,8 +1,8 @@
 ---
 title: Konfigurace období čekání
 description: Dny čekání v aplikaci Microsoft Dynamics 365 Human Resources představují milník, který se používá pro plány zaměstnaneckých výhod.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8e928987a8e25de9c0c5429af1a305ad20b9892d9d3617482ea209af181e3227
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 537ca48e819f047f2095bd5d9337ac7d80e49c5f
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732578"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431058"
 ---
 # <a name="configure-waiting-periods"></a>Konfigurace období čekání
 
@@ -38,7 +38,7 @@ Dny čekání v aplikaci Microsoft Dynamics 365 Human Resources představují mi
    | --- | --- |
    | **Čekací kód** | Jedinečný identifikátor pro období čekání. |
    | **Popis** | Stručný popis období čekání. |
-   | **Metoda čekání** | Vyberte odpovídající metodu čekání z rozevíracího seznamu hodnot. Možnosti jsou netto, aktuální měsíc, aktuální čtvrtletí, aktuální rok a aktuální týden. |
+   | **Metoda čekání** | Vyberte odpovídající metodu čekání z rozevíracího seznamu hodnot. Možnosti jsou **netto**, **aktuální měsíc**, **aktuální čtvrtletí**, **aktuální rok** a **aktuální týden**. |
    | **Měsíce** | Zadejte počet měsíců do způsobu čekání pro výpočet data čekání. |
    | **Dny** | Zadejte počet dní do způsobu čekání pro výpočet data čekání. |
    | **Den čekání** | Zvolte datum čekání pro výpočet data čekání. |

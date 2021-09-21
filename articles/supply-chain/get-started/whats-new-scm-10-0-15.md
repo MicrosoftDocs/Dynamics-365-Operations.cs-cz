@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: da097f99eda239377b56e9ad35f658b3b408b5d588d82e0ec2759e6fbe72b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751139"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471805"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 
@@ -35,7 +35,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-- Správa jednotek škálování pro cloud a hraniční zařízení s prováděcími úlohami pro výrobu a skladování<br> - Další informace naleznete v [Cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu](../cloud-edge/cloud-edge-landing-page.md).
+- Správa jednotek škálování pro cloud a hraniční zařízení s prováděcími úlohami pro výrobu a skladování<br> - Další informace viz [Jednotky škálování v distribuované hybridní topologii](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Vytvářet a zpracovat převodní příkazy z aplikace skladu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](../warehousing/create-transfer-order-from-warehouse-app.md).
 

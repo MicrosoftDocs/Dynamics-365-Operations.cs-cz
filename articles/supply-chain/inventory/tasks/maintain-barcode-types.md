@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345643"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441282"
 ---
 # <a name="maintain-bar-code-types"></a>Udržování typů čárových kódů
 
@@ -32,7 +32,8 @@ Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze
 1. Zadejte hodnotu do pole **Nastavení čárového kódu**.
 1. Zadejte hodnotu do pole **Popis**.
 1. Vyberte možnost v poli **Typ čárového kódu**.
-    * Pokud používáte data USMF, můžete vybrat „Kód 39“.  
+    * Pokud používáte data USMF, můžete vybrat „Kód 39“.
+1. V poli **ID masky** zadejte ID masky čárového kódu. Masky čárových kódů se používají k vytvoření čárových kódů a rychlé identifikaci čárových kódů, které jsou skenovány do systému pokladního místa (POS). Podrobnosti viz [Nastavení masek čárových kódů](../../../commerce/set-up-bar-code-masks.md).
 1. Do pole **Velikost** zadejte číslo.
 1. Zadejte číslo do pole **Maximální délka**.
 1. Zvolte možnost **Uložit**.

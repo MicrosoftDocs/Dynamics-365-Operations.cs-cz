@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778669"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474837"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
 
@@ -137,32 +137,85 @@ V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky 
 
 #### <a name="transactions--reduction-key"></a>Transakce – redukční klíč
 
-Pokud zvolíte **Transakce – redukční klíč**, požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
+Pokud nastavíte pole **Metoda používaná ke snížení požadavků na prognózy** do *Transakce - redukční klíč*, požadavky na prognózu jsou sníženy o transakce kvalifikované poptávky, ke kterým dochází během období definovaných redukčním klíčem.
+
+Kvalifikovaná poptávka je definována polem **Snížit předpověď o** na stránce **Skupiny pokrytí**. Pokud nastavíte pole **Snížit předpověď o** na *Objednávky*, pouze transakce prodejní objednávky jsou považovány za kvalifikovanou poptávku. Pokud ho nastavíte na *Všechny transakce*, všechny transakce se zásobami nesouvisející s mezipodnikovými emisemi jsou považovány za kvalifikovanou poptávku. Nastavte možnost **Zahrnout mezipodnikové objednávky** na *Ano*, pokud by měly být zahrnuty mezipodnikové objednávky, když je prognóza snížena.
+
+Snížení prognózy začíná prvním (nejranějším) záznamem prognózy poptávky v klíčovém období redukce. Pokud je množství kvalifikovaných skladových transakcí větší než množství řádků prognózy poptávky ve stejném klíčovém období redukce, použije se zůstatek množství transakcí zásob ke snížení množství prognózy poptávky v předchozím období (pokud existuje nespotřebovaná prognóza).
+
+Pokud v předchozím klíčovém období redukce nezůstane žádná nespotřebovaná prognóza, bude v následujícím měsíci použito množství inventárních transakcí ke snížení množství prognózy (pokud existuje nespotřebovaná prognóza).
+
+Hodnota pole **Procento** na řádcích redukčních klíčů se nepoužívá, když je pole **Metoda používaná ke snížení požadavků na prognózy** nastaveno na *Transakce - redukční klíč*. K definování období redukčního klíče se používají pouze data.
+
+> [!NOTE]
+> Jakákoli prognóza zveřejněná k dnešnímu datu nebo před ním bude ignorována a nebude použita k vytváření plánovaných objednávek. Pokud je například vaše prognóza poptávky na měsíc vygenerována 1. ledna a spustíte hlavní plánování, které zahrnuje prognózy poptávky na 2. ledna, výpočet bude ignorovat řádek prognózy poptávky s datem 1. ledna.
 
 ##### <a name="example-transactions--reduction-key"></a>Příklad: Transakce – redukční klíč
 
 Tento příklad ukazuje, jak jsou skutečné objednávky prováděné v období definovány podle redukčního klíče pro snížení požadavků prognózy poptávky.
 
-V tomto příkladu zvolte **Transakce - redukční klíč** v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány**.
+[![Skutečné objednávky a prognóza před spuštěním hlavního plánování.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Následující prodejní objednávky existují k 1. lednu.
+V tomto příkladu zvolte *Transakce - redukční klíč* v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány**.
 
-| Měsíc    | Počet objednaných kusů |
-|----------|--------------------------|
-| Leden  | 956                      |
-| Únor | 1 176                    |
-| Březen    | 451                      |
-| Duben    | 119                      |
+Následující řádky prognózy poptávky existují 1. dubna.
 
-Pokud použijete stejnou prognózu poptávky pro 1000 kusů za měsíc, která byla použita v předchozím příkladu, následující požadované objemy se přenesou do hlavního plánu.
+| Datum     | Počet prognózovaných kusů |
+|----------|-----------------------------|
+| 5. duben  | 100                         |
+| 12. duben | 100                         |
+| 19. duben | 100                         |
+| 26. duben | 100                         |
+| 3. květen    | 100                         |
+| 10. květen   | 100                         |
+| 17. květen   | 100                         |
 
-| Měsíc                | Počet požadovaných kusů |
-|----------------------|---------------------------|
-| Leden              | 44                        |
-| Únor             | 0                         |
-| Březen                | 549                       |
-| Duben                | 881                       |
-| Květen až prosinec | 1 000                     |
+V dubnu existují následující řádky prodejní objednávky.
+
+| Datum     | Počet požadovaných kusů |
+|----------|----------------------------|
+| 27. duben | 240                        |
+
+[![Plánované dodávky generované na základě dubnových objednávek.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Když je hlavní plánování spuštěno 1. dubna, do hlavního plánu se přenesou následující požadované množství. Jak vidíte, dubnové prognózované transakce byly sníženy o poptávané množství 240 v pořadí, počínaje první z těchto transakcí.
+
+| Datum     | Počet požadovaných kusů |
+|----------|---------------------------|
+| 5. duben  | 0                         |
+| 12. duben | 0                         |
+| 19. duben | 60                        |
+| 26. duben | 100                       |
+| 27. duben | 240                       |
+| 3. květen    | 100                       |
+| 10. květen   | 100                       |
+| 17. květen   | 100                       |
+
+Předpokládejme, že nové objednávky byly importovány pro období květen.
+
+V květnu existují následující řádky prodejní objednávky.
+
+| Datum   | Počet požadovaných kusů |
+|--------|----------------------------|
+| 4. květen  | 80                         |
+| 11. květen | 130                        |
+
+[![Plánované dodávky generované na základě dubnových a květnových objednávek.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Když je hlavní plánování spuštěno 1. dubna, do hlavního plánu se přenesou následující požadované množství. Jak vidíte, dubnové prognózované transakce byly sníženy o poptávané množství 240 v pořadí, počínaje první z těchto transakcí. Počínaje první transakcí předpovídající poptávku v květnu se však květnové prognózované transakce snížily celkem o 210. Celkové částky za období jsou však zachovány (400 v dubnu a 300 v květnu).
+
+| Datum     | Počet požadovaných kusů |
+|----------|---------------------------|
+| 5. duben  | 0                         |
+| 12. duben | 0                         |
+| 19. duben | 60                        |
+| 26. duben | 100                       |
+| 27. duben | 240                       |
+| 3. květen    | 0                         |
+| 4. květen    | 80                        |
+| 10. květen   | 0                         |
+| 11. květen   | 130                       |
+| 17. květen   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transakce – dynamické období
 

@@ -2,7 +2,7 @@
 title: Výpočet dostupnosti zásob pro maloobchodní kanály
 description: V tomto tématu je popsán způsob, jakým společnost může pomocí Microsoft Dynamics 365 Commerce zobrazit odhadovanou dostupnost na skladě pro produkty v online a obchodních kanálech.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741805"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472164"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Výpočet dostupnosti zásob pro maloobchodní kanály
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 V tomto tématu je popsán způsob, jakým společnost může pomocí Microsoft Dynamics 365 Commerce zobrazit odhadovanou dostupnost na skladě pro produkty v online a obchodních kanálech.
 
@@ -43,6 +44,21 @@ V logice výpočtu zásob na straně kanálu jsou aktuálně zohledněny násled
 - Zásoby prodávané prostřednictvím objednávek zákazníků v obchodě nebo online kanálu
 - Zásoby vrácené do skladu
 - Zásoby vydané (výběr, zabalení, odeslání) ze skladu
+
+Chcete-li použít výpočet zásob na straně kanálu, musíte povolit funkci **Optimalizovaný výpočet dostupnosti produktu**.
+
+Pokud je vaše obchodní prostředí verze **10.0.8 až 10.0.11**, postupujte následovně.
+
+1. V centrále obchodování jděte na možnost **Retail a Commerce** \> **Sdílené parametry obchodu**.
+1. Na kartě **Zásoby** v poli **Úloha dostupnosti produktu** vyberte **Použít optimalizovaný proces pro úlohu dostupnosti produktu**.
+
+Pokud je vaše obchodní prostředí verze **10.0.12 nebo pozdější**, postupujte následovně.
+
+1. V centrále obchodu jděte na **Pracovní prostory \> Správa funkcí** a povolte funkci **Výpočet optimalizované dostupnosti produktu**.
+1. Pokud vaše online a prodejní kanály používají stejné sklady plnění, musíte také povolit funkci **Vylepšená logika výpočtu inventáře na straně kanálu**. Tímto způsobem logika výpočtu na straně kanálu vezme v úvahu neodeslané transakce, které jsou vytvořeny v kanálu úložiště. (Těmito transakcemi mohou být transakce cash-and-carry, objednávky zákazníků a vrácení.)
+1. Spusťte úlohu **1070** (**konfigurace kanálu**).
+
+Pokud bylo vaše prostředí Commerce upgradováno z verze, která je starší než verze Commerce 10.0.8, po povolení funkce **Optimalizovaný výpočet dostupnosti produktu**, musíte také spustit **inicializaci plánovače obchodu**, aby se funkce projevila. Pokud chcete spustit inicializaci, jděte na **Retail a Commerce** \> **Nastavení centrály** \> **Plánovač obchodu**.
 
 Chcete-li použít výpočet zásob na straně kanálu, je nezbytným předpokladem odeslání pravidelného snímku údajů o zásobách z centrály vytvořeného úlohou **Dostupnost produktu** do databází kanálu. Snímek představuje informace, které má ústředí k dispozici o zásobách pro určitou kombinaci produktu nebo varianty produktu a skladu. Zahrnuje pouze transakce zásob, které byly zpracovány a zaúčtovány v centrále v době, kdy byl snímek pořízen, a nemusí být 100% přesný v reálném čase kvůli neustálému zpracování prodeje, ke kterému dochází na distribuovaných serverech.
 
@@ -74,8 +90,6 @@ Commerce poskytuje následující rozhraní API pro scénáře elektronického o
 Obě API interně používají logiku výpočtu na straně kanálu a vrací odhadované **fyzicky dostupné** množství, množství **celkem k dispozici**, **měrná jednotka (UoM)** a **úroveň zásob** pro požadovaný produkt a sklad. Vrácené hodnoty lze v případě potřeby zobrazit na webu elektronického obchodu nebo je lze použít k aktivaci jiné obchodní logiky na vašem webu elektronického obchodu. Můžete například zabránit nákupu produktů s úrovní zásob „není skladem“.
 
 Přestože jiná rozhraní API, která jsou k dispozici v Commerce, mohou přejít přímo do centrály a načíst množství na skladě pro produkty, nedoporučujeme, aby se používaly v prostředí elektronického obchodování z důvodu potenciálních problémů s výkonem a souvisejícího dopadu, který mohou tyto časté požadavky mít na serverech centrály. Navíc s výpočtem na straně kanálu mohou dvě výše uvedená rozhraní API poskytnout přesnější odhad dostupnosti produktu zohledněním transakcí vytvořených v kanálech, které ústředí dosud nejsou známy.
-
-Chcete-li obě rozhraní API použít, musíte povolit funkci **Výpočet optimalizované dostupnosti produktu** prostřednictvím pracovního prostoru **Správa funkcí** v centrále. Pokud vaše kanály online a obchodu používají stejné sklady plnění, musíte také povolit funkci **Vylepšená logika výpočtu zásob na straně kanálu elektronického obchodu**, která má logiku výpočtu na straně kanálu v rámci dvou rozhraní API pro zohlednění neodeslaných transakcí (cash-and-carry, objednávky zákazníků, vrácení) vytvořených v kanálu obchodu. Budete muset spustit úlohu **1070** (**Konfigurace kanálu**) po povolení těchto funkcí.
 
 Chcete-li definovat, jak má být ve výstupu API vráceno množství produktu, postupujte takto.
 
@@ -136,6 +150,5 @@ Chcete-li zajistit nejlepší možný odhad zásob, je důležité, abyste použ
 > - Z důvodů výkonnosti je při výpočtu dostupnosti zásob na straně kanálu použit k vytvoření požadavku na dostupnost zásob pomocí rozhraní API e-Commerce nebo nové logiky zásob na straně POS v případě, že uplynul dostatečný čas pro opětovné spuštění výpočetní logiky. Výchozí mezipaměť je nastavena na 60 sekund. Zapnuli jste například výpočet na straně kanálu pro váš obchod a zobrazili jste množství na skladě pro produkt na stránce pro **Vyhledávání zásob**. Je-li poté prodána jedna jednotka produktu, nebude stránka **Vyhledávání zásob** ukazovat snížený stav zásob, dokud nebude mezipaměť vymazána. Jakmile uživatelé zaúčtují transakce v POS, měli by počkat 60 sekund, než se ověří, že množství na skladě bylo sníženo.
 
 Pokud váš obchodní scénář vyžaduje menší čas v mezipaměti, požádejte o pomoc pracovníka technické podpory.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

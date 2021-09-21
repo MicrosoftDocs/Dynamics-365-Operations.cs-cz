@@ -15,21 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8b8d8e838b3c42f7dd02ce4adabcb1f412a3834006ad913e8f40191da751c08d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3c5db01b00390179c2dffcbec50343d7b7101d96
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765228"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473470"
 ---
 # <a name="ratings-and-reviews-overview"></a>Přehled hodnocení a recenzí
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma se týká hodnocení a recenzí v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Hodnocení a recenze jsou rozhodující pro zákazníky v elektronickém obchodu, kteří chtějí vědět, jak ostatní zákazníci vnímali produkt. Mohou také pomoci spotřebitelům provádět nákupní rozhodnutí. V Dynamics 365 Commerce řešení hodnocení a recenzí umožňuje prodejcům zachytit recenze a hodnocení produktů od zákazníků. Maloobchodní prodejci pak mohou zobrazit průměrné hodnocení a zkontrolovat informace na webu e-Commerce.
 

@@ -1,8 +1,8 @@
 ---
 title: Omezení úpravy osobních údajů
 description: U zaměstnanců můžete omezit jejich upravování kontaktních údajů v aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87977ff004e0785ec1d31fe3abac2728f87e7083348895b58e58f46cd3e79925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4a13818103434df5005ad2805ac2ea7495bb767
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748876"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431398"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Omezení úpravy osobních údajů
 
@@ -54,7 +54,7 @@ Toto téma popisuje, jak omezit zaměstnance v úpravách kontaktních údajů v
 
 Poté, co jste omezili zaměstnance v přidávání nebo úpravách kontaktních údajů, mohou tyto informace zobrazit, ale nemohou je změnit.
 
-V tomto příkladu, kde jsou zaměstnanci omezeni v úpravách **Obchodních** kontaktních údajů, mohou i nadále vidět informace v Samoobsluze pro zaměstnance:
+V tomto příkladu, kde jsou zaměstnanci omezeni v úpravách **Obchodních** kontaktních údajů, mohou i nadále vidět informace v **Samoobsluze pro zaměstnance**:
 
 ![Zobrazení obchodních kontaktních údajů.](./media/hr-employee-self-service-restrict-view.png)
 
