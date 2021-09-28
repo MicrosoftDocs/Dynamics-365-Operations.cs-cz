@@ -1004,13 +1004,17 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Odeslání požadavků na službu týmu Dynamics Service Engineering
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: Často kladené dotazy k oknu plánované údržby
+                - name: Časté otázky k oknu plánované údržby
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Monitorování a diagnostika
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Nástroje monitorování a diagnostika
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: K dotazu o protokolech nezpracovaných dat použijte Azure Data Explorer
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Restart služeb prostředí
               href: lifecycle-services/restart-environment-services.md
-            - name: Nahlásit výpadek výroby
+            - name: Sestava výpadku výroby
               href: lifecycle-services/report-production-outage.md
             - name: Sledování přihlášení uživatelů
               href: lifecycle-services/user-logins.md

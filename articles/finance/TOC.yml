@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (srpen 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (červen 2021)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -446,10 +444,12 @@
                   href: accounts-receivable/accounts-receivables-set-up-overview.md
                 - name: Nastavení kreditu a inkas
                   href: accounts-receivable/set-up-collections.md
-                - name: Kontrola inkasních informací
+                - name: Kontrola informací o inkasech
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: Automatizace procesů inkasa
                   href: accounts-receivable/collections-process-automate.md
+                - name: Konfigurace parametrů pro automatizaci procesů inkasa
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Nastavení správy úvěrů
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Informace o nastavení správy kreditu
@@ -1635,12 +1635,14 @@
                 - name: Výkaz DPH
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Sestava Intrastats
+                  href: localizations/emea-aut-intrastat.md
                 - name: Nákupní cla
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrajn
               items:
-                - name: Bahrajn - přehled
+                - name: Bahrajn – přehled
                   href: localizations/bahrain.md
                 - name: Konfigurace rozložení faktur pro Bahrajn
                   href: localizations/emea-bhr-invoice-layout.md
@@ -1666,11 +1668,13 @@
                   href: localizations/emea-bel-journal-reports.md
                 - name: Nastavení vykazování zůstatku platby
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
-                - name: Vytvoření a údržba PRODCOM
+                - name: Nastavení a údržba PRODCOM
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Roční výpis DPH z tuzemského prodeje
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brazílie
               items:
-                - name: Brazílie - přehled
+                - name: Brazílie – přehled
                   href: localizations/brazil.md
                 - name: Rozsah lokalizace
                   href: localizations/latam-bra-scope.md
@@ -2974,7 +2978,9 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Elektronické faktury
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
-                - name: Výpisy účtování elektronické knihy
+                - name: Doplněk nákladního listu (Carta de Porte) (verze 1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
+                - name: Výpisy účtování hlavní elektronické knihy
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: Zadání ID registrace daně pro mexické právnické osoby
                   href: localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
@@ -2994,15 +3000,9 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: ID registrace dodavatele
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Omán
-              items:
-                - name: Omán – přehled
-                  href: localizations/oman.md
-                - name: "Přiznání k\_DPH pro Omán (OM-00003)"
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Nizozemsko
               items:
-                - name: Nizozemsko – přehled
+                - name: Nizozemí - přehled
                   href: localizations/netherlands.md
                 - name: Přiznání k DPH
                   href: localizations/emea-nl-VAT-declaration.md
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: Souhrnné hlášení (EU)
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Nový Zéland
+              items:
+                - name: Formulář prohlášení daně GST GST101A pro Nový Zéland (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norsko
               items:
                 - name: "Norsko\_–\_přehled"
@@ -3032,9 +3036,15 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronické faktury zákazníka v Norsku
                   href: localizations/emea-nor-e-invoices.md
+            - name: Omán
+              items:
+                - name: Omán – přehled
+                  href: localizations/oman.md
+                - name: "Přiznání k\_DPH pro Omán (OM-00003)"
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Polsko
               items:
-                - name: Polsko - přehled
+                - name: Polsko – přehled
                   href: localizations/poland.md
                 - name: Aktivace záporného storna
                   href: localizations/emea-pol-red-storno.md
@@ -3448,25 +3458,25 @@
                       items:
                         - name: Podání přiznání digitalizování daní (MTD) pro DPH ve Spojeném království
                           href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: Příprava prostředí na součinnost s webovou službou DPH MTD společnosti HMRC
+                        - name: Příprava prostředí na součinnost s webovou službou digitalizace DPH společnosti HMRC
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Autorizace prostředí aplikace Finance na součinnost s webovou službou DPH MTD společnosti HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Zkouška součinnost se sandboxem DPH MTD
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Odeslání vratky DPH webové službě MTD společnosti HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Kontrolní seznam pro nastavení elektronických zpráv pro DPH MTD
+                        - name: Kontrolní seznam pro nastavení elektronických zpráv pro digitalizaci DPH
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Generování prohlášení k DPH v papírové podobě (hlášení 100 DPH)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: Podrobnosti o nastavení DPH pro přiznání k DPH ve Spojeném království
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Zkouška součinnost se sandboxem digitalizace DPH
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: Autorizace prostředí aplikace Finance na součinnost s webovou službou digitalizace DPH společnosti HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: Odeslání vratky DPH webové službě digitalizace daní společnosti HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Načtení informací o platbách DPH a závazcích z HMRC
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: Podrobnosti o nastavení DPH pro přiznání k DPH ve Spojeném království
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Generování prohlášení k DPH v papírové podobě (hlášení 100 DPH)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Sestava statistik způsobů plateb
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
-            - name: USA
+            - name: Spojené státy
               items:
                 - name: USA – přehled
                   href: localizations/united-states.md
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Spuštění formátů pro dynamické přidávání sloupců do sestav aplikace Excel
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: Navrhněte formát ER pro stránkování generovaných dokumentů v aplikaci Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Návrh konfigurací pro generování sestav ve formátu Word
                   items:
                     - name: Návrh nové konfigurace elektronického výkaznictví pro generování sestav ve formátu Word

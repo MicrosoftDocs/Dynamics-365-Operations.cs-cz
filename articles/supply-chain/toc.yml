@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (srpen 2021)
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: Supply Chain Management 10.0.19 (červen 2021)
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Plánování s nekonečnou kapacitou
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Plánování s výběrem prostředků na základě schopností
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Značení zásob s optimalizací plánování
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
@@ -2017,9 +2017,11 @@
                   href: procurement/request-quotations.md
                 - name: Vytvoření požadavku na nabídku
                   href: procurement/tasks/create-request-quotation.md
+                - name: Zapečetěné nabídky pro požadavky na nabídku
+                  href: procurement/sealed-bidding.md
                 - name: Vytvoření žádanky používající požadavek na nabídku
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Vytvoření metody hodnocení pro požadavky na nabídku
+                - name: Vytvoření metody bodování pro požadavky na nabídku
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: "Vytvoření typů oslovení a\_kritérií hodnocení pro požadavky na nabídku"
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md

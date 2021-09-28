@@ -2,7 +2,7 @@
 title: Opětovné přidělení uznání výnosů
 description: Toto téma popisuje opětovné přidělení, které organizacím umožňuje přepočítat výnosové ceny při změně podmínek smluvního prodeje. Téma obsahuje odkazy na další témata, která popisují, jak uznat výnosy v různých situacích.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745030"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487011"
 ---
 # <a name="revenue-recognition-reallocation"></a>Opětovné přidělení uznání výnosů
 
@@ -35,10 +35,22 @@ Vaše organizace se musí rozhodnout, zda je opětovné přidělení nutné. Př
 Proces opětovného přidělení má několik důležitých omezení:
 
 - Lze jej spustit pouze jednou. Proto je důležité, abyste jej spustili až po dokončení všech změn.
+
+    - Toto omezení je odstraněno ve vydané verzi 10.0.17 a novější.
+
 - Proces nelze spustit pro prodejní objednávky projektu.
+
+    - Toto omezení je odstraněno ve vydané verzi 10.0.17 a novější.
+
 - Pokud se jedná o více prodejních objednávek, musí být pro stejný účet odběratele.
 - Všechny opětovně přidělené prodejní objednávky musí mít stejnou měnu transakce.
 - Proces nelze po jeho spuštění stornovat, ani vrátit zpět.
+
+    - Toto omezení je odstraněno ve vydané verzi 10.0.17 a novější.
+
+- Opětovné přidělení lze provést pouze u prodejních objednávek nebo projektových prodejních objednávek. Nelze jej provést u kombinace prodejních objednávek a projektových prodejních objednávek.
+
+    - Toto omezení je odstraněno ve vydané verzi 10.0.17 a novější.
 
 ## <a name="set-up-reallocation"></a>Nastavení opětovného přidělení
 
@@ -78,7 +90,7 @@ Proces opětovného přidělení spustíte tlačítkem **Opětovné přidělení
 
 [![Opětovné přidělení ceny k novým řádkům objednávky](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Horní mřížka na stránce **Opětovné přidělení ceny k novým řádkům objednávky** je pojmenována **Prodej**. Tato mřížka obsahuje seznam prodejních objednávek odběratele. Vyberte prodejní objednávky, které je třeba opětovně přiřadit. Nelze však vybrat prodejní objednávky projektu, protože ty nelze znovu přidělit. Nemůžete vybrat ani prodejní objednávky, které již mají ID opětovného přidělení, protože prodejní objednávky mimo projekt lze opětovně přidělit pouze jednou. Pokud má prodejní objednávka ID opětovného přidělení, už byla označena pro opětovné přidělení jiným uživatelem.
+Horní mřížka na stránce **Opětovné přidělení ceny k novým řádkům objednávky** je pojmenována **Prodej**. Tato mřížka obsahuje seznam prodejních objednávek odběratele. Vyberte prodejní objednávky, které je třeba opětovně přidělit. Pokud má prodejní objednávka ID opětovného přidělení, už byla označena pro opětovné přidělení jiným uživatelem. Pokud byly jedna nebo více prodejních objednávek dříve opětovně přiděleny a musí být zahrnuty do jiného opětovného přidělení, musí být opětovné přidělení těchto prodejních objednávek nejprve zrušeno. Poté mohou být zahrnuty do nového opětovného přidělení. Podrobnější informace najdete v částech [Vrátit zpět opětovné přidělení](#undo-a-reallocation) a [Opakovaně provést opětovné přidělení](#reallocate-multiple-times) dále v tomto tématu.
 
 Dolní mřížka na stránce je pojmenována **Řádky**. Když v mřížce **Prodej** vyberete jednu nebo více prodejních objednávek, mřížka **Řádky** zobrazí řádky prodejní objednávky. Vyberte řádky prodejní objednávky, které je třeba opětovně přiřadit. Pokud jste vybrali pouze jednu prodejní objednávku, řádky na totožné prodejní objednávce musejí být znovu přiděleny. K této situaci může dojít, když byl jeden z řádků prodejní objednávky dříve fakturován a poté byl přidán nový řádek, nebo byl odebrán či zrušen existující řádek. Pokud byl řádek odebrán, v mřížce se nezobrazí, a proto jej nelze vybrat. Po spuštění procesu opětovného přidělení však bude stále brán v potaz.
 
@@ -104,6 +116,26 @@ Jakmile vyberete požadované řádky prodejní objednávky, použijte tlačítk
 
 - **Obnovit data pro vybraného odběratele** – Pokud byl proces opětovného přidělení spuštěn, ale nebyl dokončen, vymažou se data v tabulce opětovného přidělení pouze pro vybraného odběratele. Příklad: Označíte několik řádků prodejní objednávky, které chcete opětovně přidělit, stránku necháte otevřenou, aniž byste stiskli tlačítko **Zpracovat**, a poté vyprší časový limit stránky. V takovém případě řádky prodejní objednávky zůstanou označeny a nebudou k dispozici jinému uživateli, který by chtěl dokončit proces opětovného přidělení. Stránka může být po otevření dokonce prázdná. V této situaci lze tlačítkem **Obnovit data pro vybraného odběratele** vymazat nezpracované prodejní objednávky, aby mohl proces opětovného přidělení dokončit další uživatel.
 
+## <a name="undo-a-reallocation"></a>Vrátit zpět opětovné přidělení
+
+Opětovné přidělení lze vrátit spuštěním jiného. Opětovné přidělení se provede znovu a uživatel vybere různé řádky prodejní objednávky, které zahrne do druhého procesu opětovného přidělení.
+
+Pokud bylo opětovné přidělení provedeno u dvou nebo více samostatných prodejních objednávek, lze jej vrátit výběrem **Opětovně přidělit cenu pomocí nových řádků objednávky** z jakékoli prodejní objednávky, která je součástí opětovného přidělení. Nemůžete přejít do **Uznání výnosů \> Periodické úkoly \> Opětovně přidělit cenu pomocí nových řádků objednávky** a vrátit zpět opětovné přidělení, protože takto otevřená stránka zobrazuje pouze prodejní objednávky, které nemají žádné ID opětovného přidělení. ID opětovného přidělení je přiřazeno po opětovném přidělení dokumentu.
+
+Na stránce **Opětovně přidělit cenu pomocí nových řádků objednávky** zrušte označení všech prodejních objednávek, které by měly být vyloučeny ze smluvního ujednání. Použijte příslušná tlačítka v podokně Akce, například **Aktualizovat opětovné přidělení** a **Proces** pro zpracování opětovného přidělení. Pokud všechny prodejní objednávky kromě aktivní prodejní objednávky nejsou označeny, ID opětovného přidělení bude při zpracování změny odstraněno.
+
+Pokud bylo opětovné přidělení provedeno přidáním nového řádku k plně nebo částečně fakturované prodejní objednávce, lze jej vrátit zpět pouze odebráním tohoto řádku z prodejní objednávky a dalším spuštěním opětovného přidělení. Řádek prodejní objednávky musí být odstraněn, protože všechny řádky prodejní objednávky jsou považovány za součást stejné smlouvy. Nelze zrušit označení řádku prodejní objednávky, když jste na stránce **Opětovně přidělit cenu pomocí nových řádků objednávky**.
+
+## <a name="reallocate-multiple-times"></a>Opakovaně provést opětovné přidělení
+
+Opakovaná opětovná přidělení proti stejné prodejní objednávce, pokud bylo ve smlouvě provedeno více změn. Každé opětovné přidělení spustí přiřazení ID opětovného přidělení prodejní objednávce nebo skupině prodejních objednávek, aby seskupilo změny. Pokud je provedeno opakované opětovné přidělení, každé další opakované přidělení použije stejné ID opakovaného přidělení jako to první.
+
+Například je zadána prodejní objednávka 00045 a má více řádků. Jakmile je prodejní objednávka plně fakturována, je k ní přidán nový řádek prodejní objednávky. Opětovné přidělení pak spustíte otevřením stránky **Opětovně přidělit cenu pomocí nových řádků objednávky** buď z prodejní objednávky 00045, nebo přechodem na **Uznání výnosů \> Periodické úkoly \> Opětovně přidělit cenu pomocí nových řádků objednávky**. ID opětovného přidělení **Reall000001** je přiřazeno k prodejní objednávce.
+
+Druhá prodejní objednávka, 00052, je vytvořena pro stejnou smlouvu. Opětovné přidělení lze znovu spustit otevřením stránky **Opětovně přidělit cenu pomocí nových řádků objednávky** z prodejní objednávky 00045, ale ne z prodejní objednávky 00052. Pokud otevřete stránku **Opětovně přidělit cenu pomocí nových řádků objednávky** z prodejní objednávky 00052, prodejní objednávka 00045 se nezobrazí, protože jí bylo přiřazeno ID opětovného přidělení. Stránka zobrazuje pouze prodejní objednávky, které nemají žádné ID opětovného přidělení.
+
+Druhé opětovné přidělení lze provést dvěma způsoby. Opětovné přidělení prodejní objednávky 00045 můžete vrátit zpět. V tomto případě bude ID opětovného přidělení odstraněno a poté můžete opětovné přidělení provést buď z prodejní objednávky 00045 nebo z prodejní objednávky 00052. Případně můžete otevřít stránku **Opětovně přidělit cenu pomocí nových řádků objednávky** z prodejní objednávky 00045 a přidat druhou prodejní objednávku. Při zpracování opětovného přidělení bude ID opětovného přidělení **Reall000001** přiřazeno k prodejní objednávce 00045 i k prodejní objednávce 00052.
+
 ## <a name="scenarios-for-reallocation"></a>Scénáře, kdy lze použít opětovné přidělení
 
 Následující témata popisují různé scénáře, kdy lze použít uznání výnosů:
@@ -112,6 +144,5 @@ Následující témata popisují různé scénáře, kdy lze použít uznání v
 - [Opětovné přidělení uznání výnosů – scénář 2](rev-rec-reallocation-scenario-2.md) – Jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy.
 - [Opětovné přidělení uznání výnosů – scénář 3](rev-rec-reallocation-scenario-3.md) – Do existující fakturované prodejní objednávky je přidán nový řádek.
 - [Opětovné přidělení uznání výnosů – scénář 4](rev-rec-reallocation-scenario-4.md) – Z existující, částečně fakturované prodejní objednávky je odebrán řádek.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
