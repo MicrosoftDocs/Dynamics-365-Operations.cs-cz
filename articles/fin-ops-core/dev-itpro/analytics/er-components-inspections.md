@@ -2,7 +2,7 @@
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 description: Toto téma vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718616"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488107"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
@@ -229,6 +229,12 @@ Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Dalš�
 <p>Záhlaví/zápatí (&lt;typ součásti: Záhlaví nebo zápatí&gt;) jsou nekonzistentní</p>
 <p><b>Runtime:</b> Poslední nakonfigurovaná komponenta se používá za běhu, pokud je spuštěna konceptová verze nakonfigurovaného formátu ER.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Nekonzistentní nastavení komponenty Stránka</a></td>
+<td>Integrita dat</td>
+<td>Chyba</td>
+<td>Existují více než dvě komponenty rozsahu bez replikace. Odstraňte nepotřebné součásti.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Upravte nakonfigurovaný formát odstraněním jednoho z nekonzistentních kompo
 #### <a name="option-2"></a>Možnost 2
 
 Upravte vlastnost **Vzhled záhlaví/zápatí** pro jeden z nekonzistentních komponent **Excel\\Záhlaví** nebo **Excel\\Zápatí**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Nekonzistentní nastavení komponenty Stránka
+
+Když [konfigurujete](er-fillable-excel.md) komponentu formátu ER, abyste použili šablonu aplikace Excel ke generování odchozího dokumentu, můžete přidat komponentu **Excel\\Strana** ke stránkování generovaného dokumentu pomocí vzorců ER. U každé komponenty **Excel\\Strana**, kterou přidáte, můžete přidat mnoho vnořených komponent [Rozsah](er-fillable-excel.md#range-component) a dodržet soulad s následující [strukturou](er-fillable-excel.md#page-component-structure):
+
+- První vnořenou komponentu **Rozsah** lze konfigurovat tak, že vlastnost **Směr replikace** nastavíte na **Žádná replikace**. Tento rozsah se používá k vytváření záhlaví stránek ve vygenerovaných dokumentech.
+- Můžete přidat mnoho dalších vnořených komponent **Rozsah**, kde bude vlastnost **Směr replikace** nastavena na **Vertikální**. Tyto rozsahy se používají k vyplňování generovaných dokumentů.
+- Poslední vnořenou komponentu **Rozsah** lze konfigurovat tak, že vlastnost **Směr replikace** nastavíte na **Žádná replikace**. Tento rozsah se používá k vytváření zápatí stránky ve vygenerovaných dokumentech a k přidání požadovaných zlomů stránek.
+
+Pokud tuto strukturu při návrhu formátu ER v návrháři formátu ER nedodržíte, dojde k chybě ověření a zobrazí se následující chybová zpráva: „Existuje více než dvě součásti rozsahu bez replikace. Odstraňte nepotřebné součásti.“
+
+### <a name="automatic-resolution"></a>Automatické řešení
+
+Není k dispozici žádná možnost automatického řešení tohoto problému.
+
+### <a name="manual-resolution"></a>Ruční řešení
+
+#### <a name="option-1"></a>Možnost 1
+
+Upravte konfigurovaný formát změnou vlastnosti **Směr replikace** u všech nekonzistentních komponent **Excel\\Rozsah**.
 
 ## <a name="additional-resources"></a>Další prostředky
 

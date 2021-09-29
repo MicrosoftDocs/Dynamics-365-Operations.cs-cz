@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345259"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500583"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kódy důvodů pro inventury zásob
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Kódy důvodů umožňují analyzovat výsledky procesu inventury a jakýkoli nesoulad, který se vyskytne během tohoto procesu. Můžete určit důvod pro provádění inventury, například rozbitou paletu nebo úpravu zásob, založenou na vzorku zásob. Současně můžete použít funkci úprav k zaúčtování hodnoty úprav množství na skladě na příslušný protiúčet na základě důvodu každé úpravy zásob.
 
@@ -42,8 +41,6 @@ Před nastavením systému doporučujeme nejprve definovat strategii pro práci 
 - Měly by kódy důvodu řídit zaúčtování finančních protiúčtů?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Zapnutí funkce kódu důvodu v systému
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Pokud ve svém systému nevidíte všechny funkce popsané v tomto tématu, pravděpodobně budete muset zapnout funkci *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 

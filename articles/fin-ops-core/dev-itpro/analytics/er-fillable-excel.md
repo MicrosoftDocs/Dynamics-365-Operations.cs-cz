@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748465"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488131"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -138,6 +138,55 @@ Chcete-li se dozvědět více o tom, jak vkládat obrázky a tvary, nahlédněte
 
 Součást **Konec stránky** vynutí, aby Excel začal na nové stránce. Tato součást není vyžadována, pokud chcete použít výchozí stránkování aplikace Excel, ale měli byste ji použít, pokud chcete, aby aplikace Excel postupovala podle formátu elektronického výkaznictví pro vytvoření stránkování.
 
+## <a name="page-component"></a><a name="page-component"></a>Komponenta Strana
+
+### <a name="overview"></a>Přehled
+
+Komponentu **Strana** použijte, když chcete, aby Excel ve vygenerovaném odchozím dokumentu dodržoval formát ER a stránkování struktury. Když formát ER spouští komponenty, které jsou podřazeny komponentě **Strana**, automaticky se přidají požadované konce stránek. Během tohoto procesu se bere do úvahy velikost generovaného obsahu, nastavení stránky šablony aplikace Excel a velikost papíru vybraná v šabloně aplikace Excel.
+
+Pokud musíte vygenerovaný dokument rozdělit do různých sekcí, z nichž každá má jiné stránkování, můžete konfigurovat několik komponent **Strana** v každé komponentě [List](er-fillable-excel.md#sheet-component).
+
+### <a name="structure"></a><a name="page-component-structure"></a>Struktura
+
+Pokud je první komponentou podřazenou komponentě **Strana** komponenta typu [Rozsah](er-fillable-excel.md#range-component), která má **Směr replikace** nastaven na **Žádná replikace**, tento rozsah je považován za záhlaví stránky pro stránkování založené na nastavení aktuální komponenty **Strana**. Rozsah aplikace Excel, který je přidružen k této komponentě formátu, se opakuje v horní části každé stránky, která je generována pomocí nastavení aktuální komponenty **Strana**.
+
+> [!NOTE]
+> Aby bylo zajištěno správné stránkování, když je ve vaší šabloně aplikace Excel konfigurován rozsah [Řádky, které se mají nahoře opakovat](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409), musí se adresa tohoto rozsahu aplikace Excel rovnat adrese rozsahu, který je přidružen k dříve popsané komponentě **Rozsah**.
+
+Pokud je poslední komponentou podřazenou komponentě **Strana** komponenta typu **Rozsah**, která má **Směr replikace** nastaven na **Žádná replikace**, tento rozsah je považován za zápatí stránky pro stránkování založené na nastavení aktuální komponenty **Strana**. Rozsah aplikace Excel, který je přidružen k této komponentě formátu, se opakuje v dolní části každé stránky, která je generována pomocí nastavení aktuální komponenty **Strana**.
+
+> [!NOTE]
+> Aby bylo zajištěno správné stránkování, neměly by se rozsahy aplikace Excel, které jsou přidruženy ke komponentě **Rozsah**, za běhu měnit. Nedoporučujeme formátovat buňky tohoto rozsahu pomocí [možností](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) **Zalamovat text v buňce** a **Přizpůsobit výšku řádků** aplikace Excel.
+
+Můžete přidat několik dalších komponent **Rozsah** mezi volitelné komponenty **Rozsah**, které určí způsob vyplňování generovaného dokumentu.
+
+Pokud sada vnořených komponent **Rozsah** podřazených komponentě **Strana** nevyhovuje dříve popsané struktuře, dojde k [chybě](er-components-inspections.md#i17) ověření v režimu návrhu v návrháři formátu ER. Chybová zpráva vás informuje, že problém může způsobit problémy za běhu.
+
+> [!NOTE]
+> Chcete-li generovat správný výstup, nezadávejte vazbu pro žádnou komponentu **Rozsah** podřazenou komponentě **Strana**, pokud je vlastnost **Směr replikace** pro tuto komponentu **Rozsah** nastavena na **Žádná replikace** a rozsah je konfigurován tak, aby generoval záhlaví stránky nebo zápatí stránky.
+
+Pokud chcete, aby počítání a sčítání související se stránkováním vypočítalo průběžné součty a součty za stránku, doporučujeme konfigurovat požadované zdroje dat pro [shromažďování dat](er-data-collection-data-sources.md). Chcete-li se naučit používat komponentu **Strana** ke stránkování generovaného sešitu aplikace Excel, dokončete postupy uvedené v článku [Návrh formátu ER pro stránkování generovaného dokumentu ve formátu aplikace Excel](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Omezení
+
+Když použijete komponentu **Strana** ke stránkování v Excelu, nebudete znát konečný počet stránek ve vygenerovaném dokumentu, dokud nebude stránkování dokončeno. Proto nemůžete vypočítat celkový počet stránek pomocí vzorců ER a vytisknout správný počet stránek generovaného dokumentu na libovolnou stránku před poslední stránkou.
+
+> [!TIP]
+> Chcete-li tato čísla uvést v záhlaví nebo zápatí aplikace Excel, použijte speciální [formátování](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) Excelu pro záhlaví a zápatí.
+
+Konfigurované komponenty **Strana** nejsou brány do úvahy při aktualizaci šablony aplikace Excel v upravitelném formátu v Dynamics 365 Finance verze 10.0.22. Tato funkce je zvažována pro další vydání aplikace Finance.
+
+Pokud konfigurujete šablonu aplikace Excel tak, aby používala [podmíněné formátování](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), v některých případech toto nemusí fungovat podle očekávání.
+
+### <a name="applicability"></a>Použitelnost
+
+Komponenta **Strana** funguje u komponenty formátu [souboru aplikace Excel](er-fillable-excel.md#excel-file-component) pouze v případě, že je tato komponenta nakonfigurována pro použití šablony v aplikaci Excel. Jestliže [nahradíte](tasks/er-design-configuration-word-2016-11.md) šablonu aplikace Excel šablonou aplikace Word a poté spustíte upravitelný formát ER, komponenta **Strana** bude ignorována.
+
+Komponenta **Strana** funguje pouze tehdy, když je povolena možnost **Povolit používání knihovny EPPlus v rámci elektronického vykazování**. Je vyvolána výjimka za běhu, pokud se ER pokusí zpracovat komponentu **Strana**, když je tato funkce deaktivována.
+
+> [!NOTE]
+> Je vyvolána výjimka za běhu, pokud formát ER zpracovává komponentu **Strana** šablony aplikace Excel, která obsahuje alespoň jeden vzorec, který odkazuje na neplatnou buňku. Chcete-li zabránit chybám za běhu, opravte šablonu aplikace Excel podle popisu v článku [Jak opravit chybu #ODKAZ!](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Komponenta zápatí
 
 Komponenta **Zápatí** se používá k vyplnění zápatí v dolní části vygenerovaného listu v sešitu aplikace Excel.
@@ -197,9 +246,12 @@ Při ověření formátu elektronického výkaznictví, který lze upravit, se p
 Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, některé buňky tohoto dokumentu mohou obsahovat vzorce aplikace Excel. Když je aktivována funkce **Povolit použití knihovny EPPlus v rámci elektronického výkaznictví**, můžete určit, kdy přesně se vzorce vypočítají, změnou hodnoty [parametru](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Možnosti výpočtu** v šabloně aplikace Excel, která se používá:
 
 - Když vyberete hodnotu **Automaticky**, přepočítají se všechny závislé vzorce pokaždé, když je generovaný dokument připojen novými rozsahy, buňkami atd.
+
     >[!NOTE]
     > To může způsobit problém s výkonem šablon aplikace Excel, které obsahují více souvisejících vzorců.
+
 - Když vyberete hodnotu **Ručně**, nebudou vzorce přepočítány při generování dokumentu.
+
     >[!NOTE]
     > Přepočet vzorce je vynucen ručně, když je generovaný dokument otevřen k náhledu v aplikaci Excel.
     > Tuto možnost nepoužívejte, pokud konfigurujete cíl ER, který předpokládá použití vygenerovaného dokumentu bez jeho náhledu v aplikaci Excel (pro převod PDF, odeslání e-mailem atd.), protože generovaný dokument nemusí obsahovat hodnoty v buňkách obsahujících vzorce.

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99248a1bc231cfe58270b043827cde00a520f872658217b85dffd810bed391c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984669d5e4bde4bd967bf0a181d1b45df16ee569
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736664"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484042"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -34,7 +34,9 @@ Pomocí prognózy poptávky lze odhadnout nezávislé poptávky z prodejních ob
 Pro generování základní prognózy je souhrn historických transakcí předán strojovému učení Microsoft Azure hostovanému na platformě Azure. Vzhledem k tomu, že tato služba není sdílena mezi uživateli, lze ji snadno upravit pro splnění průmyslově specifických požadavků. Pomocí aplikace Supply Chain Management můžete zobrazit a upravovat prognózy a zobrazit klíčové indikátory výkonnosti popisující přesnost prognózy.
 
 > [!NOTE]
-> Pro generování předpovědi pomocí strojového učení je vyžadováno Microsoft Azure Machine Learning Studio (klasické). Od ledna 2021 je k dispozici pro západní Japonsko, jižní a střední USA, jihovýchodní Asii, středozápad USA a západní Evropu. Aktualizované informace o aktuální dostupnosti najdete v části [Produkty Azure podle oblasti.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+> Pro generování předpovědi pomocí strojového učení je vyžadováno Microsoft Azure Machine Learning Studio (klasické). Od 1. prosince 2021 nebudete moci vytvářet nové (klasické) zdroje Machine Learning Studio. Do 31. srpna 2024 však budete moci i nadále používat své stávající (klasické) zdroje Machine Learning Studio. Aktualizované informace viz [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> 
+> Dynamics 365 Supply Chain Management verze 10.0.23 a novější podporují nové Azure Machine Learning Studio.
 
 ## <a name="key-features-of-demand-forecasting"></a>Klíčové funkce prognózy poptávky
 

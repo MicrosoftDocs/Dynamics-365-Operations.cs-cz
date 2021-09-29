@@ -2,7 +2,7 @@
 title: Proces a historie vydání modulu Optimalizace plánování
 description: Toto téma poskytuje informace o procesu vydání a historii vydání Optimalizace plánování.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474693"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506776"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces a historie vydání modulu Optimalizace plánování
 
@@ -33,6 +33,7 @@ Protože se při aktualizaci Optimalizace plánování ve vašem prostředí nez
 
 | Změny | Podrobnosti správy funkcí | Data vydání |
 |---|---|---|
+| <p>Přidána podpora pro hlavní plány s **Metodou plánování** nastavenou na *Plánování operací*.</p><p>Na stránce **Skupiny postupu** respektujte nastavení zaškrtávacích políček **Aktivace**, **Pracovní čas** a **Kapacita** u řádků, jejichž **Postup/typ práce** má hodnotu *Nastavení* nebo *Zpracování*. </p><p>Vylepšení obecného výkonu, kvality a stability. | <p>Plánování operací je k dispozici ve správě funkcí od verze 10.0.20.</p><p>Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování*</p>  | 9.–17. září 2021 |
 | Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 25.–30. srpna 2021 |
 | <p>Přidáno pole **Doba realizace** k plánovaným zakázkám.</p><p>Vylepšení obecného výkonu, kvality a stability.</p> | Není vyžadována žádná správa funkcí. | 12.–17. srpna 2021 |
 | <p>Přidány požadavky na typ zdroje pro plánování s nekonečnou kapacitou.</p><p>Vylepšená účinnost zdrojů a efektivita kalendáře pro plánování s nekonečnou kapacitou.</p><p>Další informace viz [Plánování s nekonečnou kapacitou](infinite-capacity-planning.md). | <p>K dispozici ve správě funkcí od verze 10.0.20.</p><p>Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování*</p> | 6.–12. července 2021 |

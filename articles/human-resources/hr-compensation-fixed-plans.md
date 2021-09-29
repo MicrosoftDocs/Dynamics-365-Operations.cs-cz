@@ -1,8 +1,8 @@
 ---
 title: Vytvoření plánů fixní kompenzace
-description: Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Tento článek popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ae6f31db40c792c9b65a6f21395e05528a053acbc4b9dc8b56978675c635e0f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 141666963ca70e320f6acd02a0344f00c780dcac
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732482"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484114"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Vytvoření plánů fixní kompenzace
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Tento článek popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
+Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
 
 Částky fixní kompenzace lze vypočítat pro zaměstnance na základě faktorů, jako je výkon, oblast a zvýšení rozpočtu. Dynamics 365 Human Resources podporuje typy kompenzace kroku, stupně a pásma.
 
@@ -60,9 +60,9 @@ Nastavení **Pravidlo zařazení** umožňuje určit, zda mají všichni zaměst
 
 Po definování základů plánu fixní kompenzace můžete nastavit kompenzační strukturu plánu. Klikněte na **Nastavit kompenzaci**. Otevře se dialogové okno posuvníku obsahující tři možnosti:
 
--   Vytvoření nové kompenzační mřížky výběrem nastavení referenčního bodu a pojmenování mřížky.
--   Vytvoření nové kompenzační mřížky zkopírováním existující mřížky, kterou lze použít jako výchozí bod.
--   Použití existující kompenzační mřížky, která již byla definována. Všechny plány kompenzace, které používají stejnou mřížku, se při změně v této mřížce aktualizují.
+-   **Vytvoření nové kompenzační mřížky** výběrem nastavení referenčního bodu a pojmenováním mřížky.
+-   **Vytvoření nové kompenzační mřížky** zkopírováním existující mřížky, kterou lze použít jako výchozí bod.
+-   **Použití existující kompenzační mřížky**, která již byla definována. Všechny plány kompenzace, které používají stejnou mřížku, se při změně v této mřížce aktualizují.
 
 Po výběru možnosti se otevře stránka **Struktura kompenzací**, na které můžete provést změny v nové nebo existující kompenzační mřížce.
 
@@ -73,7 +73,7 @@ Prvním krokem při přihlašování zaměstnanců do plánu fixní kompenzace j
 
 **Poznámka:** Pravidla způsobilosti se používají pro určení způsobilosti u fixních i variabilních kompenzačních plánů. 
 
-Pravidlo způsobilosti se bere v úvahu hodnoty polí v záznamech Práce, Pozice a Zaměstnanec a určí, zda je zaměstnanec způsobilý pro kompenzační plán.
+Pravidlo způsobilosti se bere v úvahu hodnoty polí v záznamech **Práce**, **Pozice** a **Zaměstnanec** a určí, zda je zaměstnanec způsobilý pro kompenzační plán.
 
 -   Na stránce **Práce** bere pravidlo způsobilosti v úvahu následující pole:
     -   Pole **Práce**
@@ -93,9 +93,9 @@ Například při nastavení fixní kompenzace pro určitého zaměstnance lze po
 
 Nyní můžete přiřadit zaměstnance k plánu fixní kompenzace. Otevřete stránku **Zaměstnanci** a vyberte zaměstnance, kterého chcete zařadit do plánu kompenzace. V podokně akcí klikněte na možnost **Kompenzace** &gt; **Fixní plán**. Nyní můžete vytvořit novou akci fixní kompenzace pro zaměstnance. 
 
-**Poznámka:** pole plánu kompenzace zobrazí jen plány, pro které je zaměstnanec způsobilý podle pravidel způsobilosti nastavených pro každý plán. Není-li pro plán nastaveno žádné pravidlo způsobilosti, nebude pro něj způsobilý žádný zaměstnanec. 
+**Poznámka**: pole **Plán kompenzace** zobrazí jen plány, pro které je zaměstnanec způsobilý podle pravidel způsobilosti nastavených pro každý plán. Není-li pro plán nastaveno žádné pravidlo způsobilosti, nebude pro něj způsobilý žádný zaměstnanec. 
 
-Systém ověří, zda je zadaná částka kompenzace uvedená pro plán kompenzace typu stupeň nebo pásmo mezi minimálním a maximálním referenčním bodem úrovně kompenzace v dané pozici zaměstnance. Pokud je částka kompenzace mimo povolený rozsah, zobrazí se upozornění nebo chybová zpráva v závislosti na úrovni tolerance, která je nastavena v plánu fixní kompenzace.
+Dojde k ověření, zda je zadaná částka kompenzace uvedená pro plán kompenzace typu stupeň nebo pásmo mezi minimálním a maximálním referenčním bodem úrovně kompenzace v dané pozici zaměstnance. Pokud je částka kompenzace mimo povolený rozsah, zobrazí se upozornění nebo chybová zpráva v závislosti na úrovni tolerance, která je nastavena v plánu fixní kompenzace.
 
 
 

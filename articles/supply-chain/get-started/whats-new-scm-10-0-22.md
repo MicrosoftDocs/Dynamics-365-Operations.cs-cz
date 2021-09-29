@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6fc4b9d0a0f5319c8a75e7d687ee82ea81497844
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471853"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484065"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Verze Preview Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021)
 
@@ -34,7 +34,7 @@ V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* 
 
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
-| Plánování | [Podpora optimalizace plánování pro přidělování zdrojů na základě schopností](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Plánování s nekonečnou kapacitou](../master-planning/planning-optimization/infinite-capacity-planning.md) | Správa funkce: (*Plánování s nekonečnou kapacitou pro Optimalizaci plánování*) |
+| Plánování | [Podpora optimalizace plánování pro přidělování zdrojů na základě schopností](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Plánování s výběrem zdrojů na základě schopností](../master-planning/planning-optimization/capability-based-scheduling.md) | Správa funkce: (*Plánování s nekonečnou kapacitou pro Optimalizaci plánování*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze
 

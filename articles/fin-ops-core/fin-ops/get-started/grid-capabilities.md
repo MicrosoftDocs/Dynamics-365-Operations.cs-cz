@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775235"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483847"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -30,7 +30,7 @@ Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných 
 -  Vypočet součtů
 -  Zadávání před systémem
 -  Vyhodnocování matematických výrazů 
--  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **(Preview) Seskupení do mřížek**)
+-  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **Seskupení do mřížek**)
 -  Zmrazení sloupců
 
 ## <a name="calculating-totals"></a>Vypočet součtů
@@ -93,7 +93,7 @@ Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat 
 Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Seskupení tabulkových dat
-Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **Seskupení do mřížek**, která je obecně dostupná ve verzi 10.0.16/Platform update 40 a je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
+Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **Seskupení do mřížek**, která je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
 
 Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle kterého chcete provést seskupení, a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá nový sloupec **Seskupit podle** na začátek mřížky a vloží „řádky záhlaví“ na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
 -  Hodnota dat pro skupinu 
@@ -108,9 +108,6 @@ Poté, co seskupíte data podle jednoho sloupce, můžete data seskupit podle ji
 
 Seskupení podle libovolného sloupce můžete kdykoli odebrat kliknutím pravým tlačítkem na daný sloupec a výběrem příkazu **Zrušit seskupení**. Seskupení můžete také odebrat ze všech sloupců výběrem **Možností mřížky** a následně příkazu **Oddělit vše**.   
 
-Před verzí 10.0.16/Platform update 40 je podporována pouze jedna úroveň seskupení. V těchto verzích, pokud jsou data seskupena a vyberete možnost **Seskupit podle tohoto sloupce** pro jiný sloupec, se původní seskupení nahradí.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Rozbalení a sbalení skupin
 V počátečním seskupení dat budou všechny skupiny rozbaleny. Můžete vytvořit souhrnná zobrazení dat sbalením jednotlivých skupin, nebo si můžete rozbalením a sbalením skupiny usnadnit navigaci v datech. Chcete-li skupinu rozbalit nebo sbalit, vyberte tlačítko se znakem > v příslušném řádku záhlaví skupiny. Všimněte si, že stav rozbalení/sbalení jednotlivých skupin **není** uložen v individuálním nastavení.
 
@@ -118,10 +115,10 @@ V počátečním seskupení dat budou všechny skupiny rozbaleny. Můžete vytvo
 Stejně jako můžete vybrat (nebo zrušit výběr) všech řádků v mřížce zaškrtnutím políčka v horní části prvního sloupce v mřížce, můžete také rychle vybrat (nebo zrušit výběr) všechny řádky ve skupině výběrem zaškrtávacího políčka v příslušném řádku záhlaví skupiny. Zaškrtávací políčko v řádku záhlaví skupiny bude vždy odrážet aktuální stav výběru řádků v této skupině, bez ohledu na to, zda jsou vybrány všechny řádky, nejsou vybrány žádné řádky nebo jsou vybrány pouze některé řádky.
 
 ### <a name="hiding-column-names"></a>Skrytí názvů sloupců
-Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Počínaje verzí 10.0.14 / Platform Update 38 můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
+Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
 
 ## <a name="freezing-columns"></a>Zmrazení sloupců
-Některé sloupce v mřížce mohou být dostatečně důležité pro kontext, který se nemá rolovat mimo zobrazení. Místo toho chcete, aby byly hodnoty v těchto sloupcích vždy viditelné. Ve verzi 10.0.17 poskytuje funkce **Ukotvit sloupce v mřížce** tuto flexibilitu uživatelům. 
+Některé sloupce v mřížce mohou být dostatečně důležité pro kontext, který se nemá rolovat mimo zobrazení. Místo toho můžete chtít, aby byly hodnoty v těchto sloupcích vždy viditelné. Funkce **Ukotvit sloupce v mřížce** poskytuje tuto flexibilitu uživatelům. 
 
 Chcete-li sloupec ukotvit, klikněte pravým tlačítkem do záhlaví sloupce a poté vyberte **Ukotvit sloupec**. Při prvním provedení tohoto kroku se vybraný sloupec stane prvním sloupcem a již se nebude posouvat mimo zobrazení. Jakýkoli následující sloupec, který zmrazíte, bude přidán napravo od posledního zmrazeného sloupce. Pomocí standardní funkce Přesunout můžete změnit pořadí zmrazených sloupců podle potřeby. Ukotvené sloupce však nelze přesunout, aby se zobrazily mezi množinou nezmrazených sloupců. Ukotvené sloupce podobně nelze přesunout, aby se zobrazily mezi množinou zmrazených sloupců.
 
@@ -132,32 +129,16 @@ Všimněte si, že výběr řádků a sloupce stavu řádků v nové mřížce j
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 
 
-**10.0.9 / Platform update 33 a novější**
+Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Po povolení funkce ve správě funkcí budou všechny následující relace uživatelů využívat nové ovládání mřížky. 
 
-Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Podobně jako jiné veřejné funkce náhledu je povolení této funkce v produkčním prostředí podmíněno [dodatečnou smlouvou o použití](public-preview-terms.md).  
-
-**10.0.8 / Platform update 32 a 10.0.7 / Platform update 31**
-
-Funkci **Nový ovládací prvek mřížky** lze povolit v prostředí úrovně 1 (Dev/Test) a úrovně 2 (Sandbox), aby bylo možné poskytnout další změny testování a návrhu pomocí následujících kroků.
-
-1.  **Povolit let**: spustit následující příkaz SQL: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Obnovit IIS** pro vyprázdnění statickou mezipaměť testovací verze. 
-
-3.  **Najít funkci**: přejděte do pracovního prostoru **Správa funkcí**. Pokud se **Nový ovládací prvek mřížky** neobjeví v seznamu všech funkcí, vyberte **Vyhledat aktualizace**.   
-
-4.  **Povolit funkci**: vyhledejte funkci **Nový ovládací prvek mřížky** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**. Uvědomte si, že je požadována aktualizace prohlížeče. 
-
-Všechny následující uživatelské relace budou povoleným Novým ovládacím prvkem mřížky.
+Tato funkce je ve výchozím nastavení povolena od verze 10.0.21 a ve verzi 10.0.25 se stává povinnou. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
-Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, od verze 10.0.13/Platform update 37 je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
+Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.
 
  ```this.forceLegacyGrid();```
 
-Toto rozhraní API bude respektováno až do vydání října 2021, kdy bude nový ovládací prvek mřížky povinný. Pokud nějaké problémy vyžadují použití tohoto rozhraní API, nahlaste je společnosti Microsoft.
+Toto API bude dodržováno, dokud se nový ovládací prvek mřížky nestane povinným, což je aktuálně cílené na duben 2022. Pokud nějaké problémy vyžadují použití tohoto rozhraní API, nahlaste je společnosti Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Vynucení stránky k použití nové mřížky po předchozím odhlášení z mřížky
 Pokud jste se z používání nové mřížky odhlásili pro jednotlivou stránku, možná budete chtít později novou mřížku po vyřešení základních problémů znovu povolit. Chcete -li to provést, jednoduše odeberte volání na `forceLegacyGrid()`. Změna se neprojeví, dokud nenastane jedna z následujících situací:

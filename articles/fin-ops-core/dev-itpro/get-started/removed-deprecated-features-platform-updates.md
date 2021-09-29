@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463609"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500102"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -38,8 +38,8 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých sestav SQL. Sestavy již nebudete muset sledovat, protože tato funkce byla nahrazena jinými službami. |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Důvod pro zrušení/odstranění** |   Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah.|
+| **Nahrazeno jinou funkcí?**   | Žádná |
 | **Ovlivněné oblasti produktu**         | Sestavy SQL: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
 | **Stav**                         | Zastaralé: Plánované datum odstranění v říjnu 2021. |
@@ -181,7 +181,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Nahrazeno jinou funkcí?**   | [Nový ovládací prvek mřížky](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Ve verzi 10.0.13 je nový ovládací prvek mřížky obecně k dispozici a zákazníci mohou tuto funkci volitelně zapnout. Nový ovládací prvek mřížky začne být povinný od vydání z října 2021. Jakmile bude nový ovládací prvek mřížky povinný, rozhraní API **forceLegacyGrid()** přestane být respektováno. |
+| **Stav**                         | Ve verzi 10.0.13 je nový ovládací prvek mřížky obecně k dispozici a zákazníci mohou tuto funkci volitelně zapnout. Nové řízení mřížky bude ve výchozím nastavení zapnuto ve vydáním z října 2021 a v současné době je cílené tak, aby bylo povinné v dubnu 2022. Jakmile bude nový ovládací prvek mřížky povinný, rozhraní API **forceLegacyGrid()** přestane být respektováno. |
 
 ### <a name="personalization-without-saved-views"></a>Přizpůsobení bez uložených pohledů 
 

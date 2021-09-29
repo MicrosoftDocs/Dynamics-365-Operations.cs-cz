@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744171"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488195"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Povolit správu změn u stávajících produktů
 
@@ -47,7 +47,9 @@ Pokud tedy máte odlišný produkt, můžete jej změnit pouze na technický pro
 
 *Kategorie technických výrobků* musí být přiřazena ke každému technickému produktu. Toto přiřazení provedete při spuštění průvodce **Převést na technický produkt**. Pro všechny příslušné standardní produkty musejí existovat kategorie technických produktů *předtím*, než tyto produkty převedete.
 
-Kategorie technického produktu poskytuje základ pro vytvoření technického produktu a zavádí sadu výchozích hodnot a zásad. Kategorie technického produktu musí odpovídat produktu, ke kterému ji přiřadíte. Například typ produktu a skupina dimenzí musí odpovídat produktu i jeho kategorii technického produktu. Více informací naleznete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
+Kategorie technického produktu poskytuje základ pro vytvoření technického produktu a zavádí sadu výchozích hodnot a zásad. Technické atributy a jejich výchozí hodnoty (jak jsou definovány pro technickou kategorii) jsou také použity na výsledný technický produkt. Hodnoty atributů můžete podle potřeby upravit nebo přidat do výsledného produktu další technické atributy.
+
+Kategorie technického produktu musí odpovídat produktu, ke kterému ji přiřadíte. Například typ produktu a skupina dimenzí musí odpovídat produktu i jeho kategorii technického produktu. Více informací naleznete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Průvodce **Převést na technický produkt** může převést produkt pouze na technické produkty, u kterých není verze sledována v transakcích. Proto musí být možnost **Sledovat verzi v transakcích** nastavena na *Ne* u kategorií technických produktů, které vytvoříte pro převod existujících produktů.

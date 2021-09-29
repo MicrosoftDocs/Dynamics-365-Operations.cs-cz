@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471709"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500420"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -157,6 +157,7 @@ Následující funkce správy skladu nejsou aktuálně podporovány v úlohách 
 
 - Příchozí zpracování řádků nákupní objednávky přiřazených k vytížení.
 - Příchozí zpracování nákupních objednávek projektu.
+- Správa nákladů na doručení, používání cest a sledování zboží při přepravě.
 - Příchozí a odchozí zpracování pro položky, které mají jakékoli aktivní sledovacích dimenzí **Vlastník** a/nebo **Sériové číslo**.
 - Zpracování zásob, které mají hodnotu stavu blokování.
 - Změna stavu zásob během jakéhokoli procesu pracovního pohybu.
@@ -186,9 +187,10 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Zpracovat                                                      | Centrum | Pracovní zatížení provedení skladu na jednotce škálování |
 |--------------------------------------------------------------|-----|------------------------------|
 | Zpracování zdrojového dokumentu                                   | Ano | Žádný |
-| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Žádný |
-| Uvolnit do skladu                                         | Ano | Žádný |
-| Plánovaný cross docking                                        | Žádný  | Žádný |
+| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Žádná |
+| Náklady na doručení a příjem přepravovaného zboží                                         | Ano | Žádná |
+| Uvolnění do skladu                                         | Ano | Žádná |
+| Plánovaný cross docking                                        | Žádná  | Žádná |
 | Konsolidace dodávky                                       | Ano, při použití plánování vytížení | Ano |
 | Zpracování vlny dodávky                                     | Žádný  |Ano, kromě **Stavba a třídění nákladu** |
 | Udržování zásilek pro vlnu                                  | Žádný  | Ano|

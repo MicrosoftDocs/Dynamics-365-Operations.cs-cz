@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744791"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500272"
 ---
 # <a name="goods-in-transit-processing"></a>Zpracování přepravovaného zboží
 
@@ -148,8 +148,6 @@ Tato část popisuje funkce, které modul **Náklady za doručení** přidává 
 Modul Náklady za doručení přidá nový typ pracovního příkazu s názvem *Přepravované zboží* do stránky **Šablony práce**. Tento typ pracovního příkazu by měl být konfigurován stejným způsobem jako [šablony práce nákupní objednávky](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### <a name="work-header-breaks"></a>Zalomení záhlaví práce
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Pracovní šablony, které mají typ pracovního příkazu *Zboží na cestě*, lze konfigurovat tak, aby rozdělily záhlaví práce. Na stránce **Šablony práce** proveďte jeden z následujících kroků:
 

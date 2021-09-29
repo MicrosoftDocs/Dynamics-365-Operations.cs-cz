@@ -2,7 +2,7 @@
 title: Přehled správy funkcí
 description: V tomto tématu je popsána funkce správy funkcí a její použití.
 author: Peakerbl
-ms.date: 07/30/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,17 +16,16 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 9b51e848a965589ef0a14e5b880f213d18abc53097c18eed51320d7443a3b5f0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741601"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488171"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 Funkce se přidávají a aktualizují v každém vydání. Rozhraní Správa funkcí poskytuje pracovní prostor, ve kterém si můžete prohlédnout seznam funkcí, které byly dodány v jednotlivých vydáních. Pracovní prostor pak můžete použít k zobrazení dokumentace funkcí a k povolení nebo zakázání funkcí.
 

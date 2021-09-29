@@ -2,7 +2,7 @@
 title: Vložení aplikací třetích stran
 description: Toto téma popisuje způsob vložení aplikací třetích stran pro zvýšení funkčnosti produktu.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345403"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488227"
 ---
 # <a name="embed-third-party-apps"></a>Vložení aplikací třetích stran
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mnoho zákazníků používá k provozování svého podnikání celou řadu aplikací. Některé z těchto aplikací jsou webové aplikace třetích stran, které fungují ve spojení s aplikacemi Finance and Operations. Chcete-li zajistit plynulejší uživatelské prostředí, můžete použít funkci **Celostránkové aplikace** pro vložení těchto aplikací třetích stran přímo do aplikací Finance and Operations (za předpokladu, že aplikace třetích stran umožňují vložení). Tímto způsobem mohou uživatelé přistupovat k webům a aplikacím, které požadují, aniž by museli přepínat karty nebo okna.
 

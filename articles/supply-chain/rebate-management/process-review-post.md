@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729400"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500468"
 ---
 # <a name="process-review-and-post-rebates"></a>Zpracování, kontrola a zaúčtování rabatu
 
@@ -43,8 +43,6 @@ Periodická úloha **Vypočítat nákupní cenu FIFO** pro výpočet rabatů mus
 Přejděte na **Správa rabatu \> Periodické úkoly \> Vypočítat nákupní cenu FIFO**. V zobrazeném dialogovém okně vyberte **OK** a spusťte výpočet.
 
 ## <a name="create-source-transactions"></a>Vytváření zdrojových transakcí
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Prodejní nebo nákupní objednávky, které mají zdrojové transakce, můžete vytvořit před nebo po vytvoření příslušné nabídky správy rabatu.
 
@@ -158,8 +156,6 @@ Místo zpracování konkrétních nabídek nebo řádků nabídek můžete spust
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Zpracování nabídek pomocí pracovní plochy pro rabat
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Místo zpracování konkrétních nabídek nebo řádků nabídek můžete použít *pracovní plochu pro rabat* a zpracovat několik nabídek současně. Můžete volitelně použít filtry záznamů anebo nastavit opakující se plán. Nemusíte vybrat žádné řádky. Systém zpracuje všechny řádky, které splňují požadavky kalendářního data a filtru, které jste nastavili.
 
 Chcete-li zpracovat nabídky pomocí pracovní plochy pro rabat, postupujte takto.
@@ -213,8 +209,6 @@ Chcete-li prohlížet a upravovat transakce správy rabatu pomocí stránky sezn
 > Pokud používáte proces nároků , když zpracováváte další období, seznam transakcí bude zahrnovat všechny nenárokované transakce z předchozího zaúčtování, plus všechny nové transakce za vybrané období.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Prohlížení a úprava transakcí správy rabatu pomocí pracovní plochy pro rabat
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Chcete-li prohlížet a upravovat transakce správy rabatu pomocí pracovní plochy pro rabat, postupujte následujícím způsobem.
 
@@ -295,8 +289,6 @@ Místo zaúčtování transakcí pro konkrétní nabídky nebo řádků nabídek
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Zaúčtování transakcí pomocí pracovní plochy pro rabat
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Poté, co jste zpracovali transakce zřízení, rabatu nebo odpisu, podle dále uvedených kroků použijte pracovní plochu pro rabat ke kontrole a zaúčtování vygenerovaných transakcí pro jeden nebo více konkrétních řádků transakcí u všech nabídek.
 
 1. Přejděte do nabídky **Správa rabatu \> Nabídky správy rabatu \> Pracovní plocha pro rabat**.
@@ -332,8 +324,6 @@ Chcete-li zkontrolovat položky deníku, které jsou přidruženy k nabídce spr
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Kontrola deníků pomocí pracovní plochy pro rabat
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Chcete-li zkontrolovat deníky pomocí pracovní plochy pro rabat, postupujte takto.
 
 1. Přejděte do nabídky **Správa rabatu \> Nabídky správy rabatu \> Pracovní plocha pro rabat**.
@@ -342,8 +332,6 @@ Chcete-li zkontrolovat deníky pomocí pracovní plochy pro rabat, postupujte ta
 1. Zobrazí se seznam příslušných deníků, dokumentů nebo položek. Chcete-li zobrazit více informací o jakémkoli deníku, dokumentu nebo položce, vyberte jeho řádek a poté v podokně akcí vyberte **Zobrazit podrobnosti**.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transakce správy rabatu na pracovní ploše odpočtu
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Když zaúčtujete transakci správy rabatu, která má jednu z následujících hodnot **Způsob platby**, systém vytvoří deník pro odpočty zákazníků nebo fakturu s volným textem pro příslušný zákaznický účet:
 
@@ -358,8 +346,6 @@ Další informace viz [Správa odpočtů pomocí pracovní plochy odpočtu](dedu
 
 ## <a name="purge-unposted-transactions"></a>Vyčištění nezaúčtovaných transakcí
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Poté, co zpracujete transakce zřízení, rabatu nebo odpisu, vymažte vybrané nezaúčtované transakce podle těchto pokynů.
 
 1. Přejděte do nabídky **Správa rabatu \> Nabídky správy rabatu \> Pracovní plocha pro rabat**.
@@ -368,8 +354,6 @@ Poté, co zpracujete transakce zřízení, rabatu nebo odpisu, vymažte vybrané
 4. Výběrem tlačítka **OK** se nezaúčtované transakce odstraní.
 
 ## <a name="cancel-a-posted-provision"></a>Zrušení zaúčtovaného zřízení
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Poté, co zpracujete a zaúčtujete zřízení, zrušíte transakce zaúčtovaného zřízení následujícím způsobem.
 

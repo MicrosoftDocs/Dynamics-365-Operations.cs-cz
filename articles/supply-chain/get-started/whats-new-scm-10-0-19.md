@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474885"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506848"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -40,8 +40,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 | Zásoby a logistika | [Přírůstková vylepšení možností provádění skladu s jednotkami škálování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Zprávy procesoru zpráv](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Úprava skladových zásob](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Zásoby a logistika | [Funkce vyhledávání pro pole Úvod do dokumentu a Závěr dokumentu na stránce Prodejní nabídka](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Funkce přidá funkci vyhledávání pro pole **Úvod do dokumentu** a **Závěr dokumentu** na stránce **Prodejní nabídka**.<br><br>Tato funkce je povolena ve výchozím nastavení. |
 | Zásoby a logistika | [Provádění skladu s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Výroba | [Provádění výroby s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraničního zařízení na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Plánování | [Plánování nekonečné kapacity pro optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Plánování s nekonečnou kapacitou](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Výroba | [Provádění výroby s jednotkami škálování hraniční sítě na vašem vlastním hardwaru](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Plánování | Plánované potvrzení objednávek založené na dotazech | [Potvrdit plánované objednávky](../master-planning/planning-optimization/planned-order-firming.md) |
 | Řízení informací o produktech | [Vylepšení stránky návrhů variant](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Vytváření předdefinovaných variant produktů](../pim/tasks/create-predefined-product-variants.md) |
 

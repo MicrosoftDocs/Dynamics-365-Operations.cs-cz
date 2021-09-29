@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415314"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500576"
 ---
 # <a name="product-readiness"></a>Připravenost produktu
 
 [!include [banner](../includes/banner.md)]
 
-Kontroly připravenosti můžete použít pro to, abyste zajistili, že pro produkt budou dokončena všechna požadovaná hlavní data před použitím v transakcích. Pokud se použijí kontroly připravenosti, je uživatel nebo tým odpovědný za ověření konkrétních předdefinovaných dat souvisejících s produktem. Pokud pro produkt existuje otevřená kontrola připravenosti, produkt nelze použít v transakcích.
+Kontroly připravenosti můžete použít pro to, aby vám pomohli zajistit, že pro produkt budou dokončena všechna požadovaná hlavní data před použitím v transakcích. Pokud se použijí kontroly připravenosti, je uživatel nebo tým odpovědný za ověření konkrétních předdefinovaných dat souvisejících s produktem.
 
-Zaškrtávací políčko **Aktivní** pro technický produkt, variantu nebo verzi je k dispozici až po zadání a ověření všech požadovaných dat a po zpracování všech kontrol připravenosti. V tomto okamžiku může být produkt, verze nebo varianta může být použita v transakcích. Můžete vytvořit kontroly připravenosti pro nové produkty, nové varianty a nové technické verze.
+Zaškrtávací políčko **Aktivní** pro technický produkt, variantu nebo verzi můžete zapnout až po zadání a ověření všech požadovaných dat a po zpracování všech kontrol připravenosti. Pokud pro produkt, verzi nebo variantu nebyla provedena jedna nebo více kontrol, pak se při pokusu o zapnutí políčka **Aktivní** zobrazí výzva s upozorněním, že nebyly dokončeny všechny kontroly.
 
-Můžete také použít kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.
+Můžete vytvořit kontroly připravenosti pro nové technické produkty, varianty a verze. Kontroly připravenosti můžete také použít na standardní (netechnické) produkty (viz také [Kontroly připravenosti standardních produktů](#standard-products)). 
+
+Standardní produkty můžete použít v transakcích, i když nebyly dokončeny všechny kontroly připravenosti. Pokud potřebujete zablokovat používání produktu v transakcích, použijte jeho stav životního cyklu. Můžete přiřadit stav životního cyklu, který blokuje používání produktu v transakcích, a následně po dokončení všech kontrol připravenosti přiřadit nový stav životního cyklu, který umožňuje požadované transakce.
 
 ## <a name="types-of-readiness-checks"></a>Typy kontrol připravenosti
 

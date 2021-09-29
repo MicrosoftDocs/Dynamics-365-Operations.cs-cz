@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 596324b4bf6f342439e44d21e8b770ca35be0425
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: f7178d78c1862f8098a9ad849b17423cc7f63156
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471757"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500042"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Co je nového a co se změnilo v Dynamics 365 Supply Chain Management
 
@@ -32,7 +32,7 @@ Chcete-li zjistit, co je nového nebo změněno v jednotlivých vydáních aplik
 | Verze | Číslo sestavení | Dostupnost automatické aktualizace | Další informace |
 |---|---|---|---|
 | 10.0.22 | 10.0.995 | Listopad 2021 | [Preview verze Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
-| 10.0.21 | 10.0.960 | 2021. říjen | [Preview verze Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
+| 10.0.21 | 10.0.960 | 2021. říjen | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
 | 10.0.20 | 10.0.886 | Srpen 2021 | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.20](whats-new-scm-10-0-20.md) |
 | 10.0.19 | 10.0.837 | 2021. června | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19](whats-new-scm-10-0-19.md) |
 | 10.0.18 | 10.0.793 | 2021. květen | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.18](whats-new-scm-10-0-18.md) |

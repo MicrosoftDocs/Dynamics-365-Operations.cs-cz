@@ -2,7 +2,7 @@
 title: Nakonfigurujte roli správce nepřítomnosti
 description: Toto téma vysvětluje, jak nastavit roli manažera nepřítomnosti pro správu dovolené zaměstnanců.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f2a2fd0a1ad1cca19625ff1029962f608251f1d
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732338"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485747"
 ---
 # <a name="configure-the-absence-manager-role"></a>Nakonfigurujte roli správce nepřítomnosti
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 V některých organizacích nemusí manažeři lidí spravovat dovolenou pro svůj tým. Místo toho může správce nepřítomnosti tento proces zpracovat pro členy týmu napříč více odděleními a týmy. Manažeři nepřítomnosti mají pro správu dovolené následující funkce:
 
@@ -38,7 +36,7 @@ V některých organizacích nemusí manažeři lidí spravovat dovolenou pro sv�
 
 1. V pracovním prostoru **Správa systému** vyberte **Správa funkcí**.
 
-2. Na kartě **Správa funkcí** povolte funkci **(Náhled) Správce nepřítomnosti pro správu dovolené**.
+2. Na kartě **Správa funkcí** povolte funkci **Správce nepřítomnosti pro správu dovolené**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definujte vlastní hierarchii
 
@@ -129,7 +127,7 @@ Uživatelé v roli Správce nepřítomnosti mohou ve svém kalendáři zobrazit 
 > [!IMPORTANT]
 > Správce systému musí nakonfigurovat možnosti zobrazení pro kalendář správce nepřítomnosti. Na stránce **Parametry dovolené a nepřítomnosti** na kartě **Kalendář** jsou možnosti, jak skrýt nebo zobrazit narozeniny, absence bez podrobností, dovolené a nevyřízené žádosti o dovolenou. K dispozici je také možnost filtrovat možnost zobrazení kalendáře podle typu pracovníka.
 
-1. V pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
+1. V samoobslužném pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
 
 2. Do pole **Datum** zadejte požadované datum.
 

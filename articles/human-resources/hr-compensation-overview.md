@@ -1,8 +1,8 @@
 ---
 title: Plány kompenzace
-description: Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Toto téma popisuje, jak pomocí správy kompenzací spravovat a zpracovávat plány kompenzací.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732434"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483798"
 ---
 # <a name="compensation-plans"></a>Plány kompenzace
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
+Manažeři kompenzací a výhod mohou pomocí **Správy kompenzací** udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
 
 ### <a name="introduction"></a>Úvod
 
@@ -42,8 +42,8 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 <table>
 <thead>
 <tr class="header">
-<th>Součást</th>
-<th>Více informací…</th>
+<th>Komponenta</th>
+<th>Další informace</th>
 </tr>
 </thead>
 <tbody>
@@ -89,7 +89,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 </tr>
 <tr class="even">
 <td>Kontrolní bod</td>
-<td>Kontrolní bod určuje to, co považujete za ideální sazbu pro všechny zaměstnance na úrovni kompenzace. U struktur plánů tříd jsou kontrolní body obvykle středním bodem rozsahu. Struktury pásma kontrolní body používají jen zřídka. Kontrolní bod pro plán fixní kompenzace můžete určit ve formuláři Plány fixní kompenzace.</td>
+<td>Kontrolní bod určuje to, co považujete za ideální sazbu pro všechny zaměstnance na úrovni kompenzace. U struktur plánů tříd jsou kontrolní body obvykle středním bodem rozsahu. Struktury pásma kontrolní body používají jen zřídka. Kontrolní bod pro plán fixní kompenzace můžete určit ve stránce **Plány fixní kompenzace**.</td>
 </tr>
 <tr class="odd">
 <td>Pracovní funkce</td>

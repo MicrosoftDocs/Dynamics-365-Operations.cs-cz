@@ -2,7 +2,7 @@
 title: Funkce el. výkaznictví DATETIMEFORMAT
 description: Toto téma obsahuje obecné informace o použití funkce DATETIMEFORMAT elektronického výkaznictví.
 author: NickSelin
-ms.date: 01/04/2021
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e141c445a81f3b436d540265533836b8c775deadbf2a85e47127bb28674a3ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1add2ccb348a9b518e0121be1184fbf6a684a0df
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767161"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485539"
 ---
 # <a name="datetimeformat-er-function"></a>Funkce el. výkaznictví DATETIMEFORMAT
 
 [!include [banner](../includes/banner.md)]
 
-Funkce `DATETIMEFORMAT` vrátí hodnotu typu *řetězec*, která představuje zadanou hodnotu data/času jako text v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkce `DATETIMEFORMAT` vrátí hodnotu typu *[řetězec](er-formula-supported-data-types-primitive.md#string)*, která představuje zadanou hodnotu data/času jako text v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaxe 1
 
@@ -41,20 +41,20 @@ DATETIMEFORMAT (datetime, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`datetime`: *datum a čas*
+`datetime`: *[Datum/čas](er-formula-supported-data-types-primitive.md#datetime)*
 
 Hodnota data/času, která představuje datum a čas pro zformátování.
 
 `format`: *řetězec*
 
-Formát výstupního řetězce.
+Formát výstupního řetězce. Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 > [!NOTE]
 > Ve formátu řetězce se rozlišují velká a malá písmena, pokud používáte standardní formát nebo vlastní formát. Například [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) specifikátor formátu „d“ vrací datum pomocí vzoru krátkého data, zatímco standardní specifikátor formátu „D“ vrací datum pomocí vzoru dlouhého data. Navíc [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings) specifikátor formátu „M“ vrací měsíc od 1 do 12, zatímco specifikátor formátu „m“ vrací minutu od 0 do 59.
 
 `culture`: *řetězec*
 
-Jazyková verze, která má být použita pro formátování.
+Jazyková verze, která má být použita pro formátování. Informace o podporovaných jazykových verzích viz [jazyková verze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Vrácené hodnoty
 

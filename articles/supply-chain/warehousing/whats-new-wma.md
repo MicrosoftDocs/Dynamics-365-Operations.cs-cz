@@ -1,27 +1,39 @@
 ---
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386092"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485615"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20100"></a>Verze 2.0.10.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Přidána animace při přejetí prstem v seznamech a stránkách.
+- Text se nyní na stránce s chybou připojení zalomí správně.
+- Kombinovaná pole bez výchozích hodnot se nyní zobrazují správně.
+- Informace v oblasti podnadpisů se nyní zobrazují pouze na stránce s úplnými podrobnostmi.
+- Prázdná vstupní pole se již na kartě podrobností nezobrazují.
+- Hodnoty potvrzení se již na kartě podrobností neduplikují.
+- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
 
 ## <a name="version-2090"></a>Verze 2.0.9.0
 

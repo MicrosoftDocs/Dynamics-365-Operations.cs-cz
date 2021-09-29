@@ -1,20 +1,20 @@
 ---
 title: Intrastat pro Itálii
 description: Toto téma obsahuje informace o sestavě Intrastat v Itálii.
-author: andosip
-ms.date: 7/9/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: f80a82f4c3c00ee263cc0bf31b0dc5fc69a05dea324fe96e3e0db9a13a488fac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779361"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488252"
 ---
 # <a name="italian-intrastat"></a>Intrastat pro Itálii
 
@@ -597,13 +597,10 @@ V následující tabulce jsou uvedena pole, která se zobrazují v italské dekl
 
 - **Titulní strana**
 
-- **Oddíl 1. Zboží** - Tato část obsahuje informace o běžných transakcích a dobropisech, které se vztahují k fakturám za zboží ve stejném vykazovaném období jako vykazovací období Intrastat.
-
-- **Oddíl 2. Oprava zboží** - Tato část obsahuje informace o opravách a dobropisech, které se vztahují k fakturám za zboží v předchozím vykazovaném období Intrastat.
-
-- **Oddíl 3. Služby** - Tato část obsahuje informace o běžných transakcích a dobropisech, které se vztahují k fakturám za služby ve stejném vykazovaném období jako vykazovací období Intrastat.
-
-- **Oddíl 4. Oprava služeb** - Tato část obsahuje informace o opravách a dobropisech, které se vztahují k fakturám za služby v předchozím vykazovaném období Intrastat.
+- **Oddíl 1. Zboží**: Tato část obsahuje informace o běžných transakcích a dobropisech, které se vztahují k fakturám za zboží ve stejném vykazovaném období jako vykazovací období Intrastat.
+- **Oddíl 2. Oprava zboží**: Tato část obsahuje informace o opravách a dobropisech, které se vztahují k fakturám za zboží v předchozím vykazovaném období Intrastat.
+- **Oddíl 3. Služby**: Tato část obsahuje informace o běžných transakcích a dobropisech, které se vztahují k fakturám za služby ve stejném vykazovaném období jako vykazovací období Intrastat.
+- **Oddíl 4. Oprava služeb**: Tato část obsahuje informace o opravách a dobropisech, které se vztahují k fakturám za služby v předchozím vykazovaném období Intrastat.
 
 ## <a name="set-up-intrastat"></a>Vytvořit Intrastat
 
@@ -611,21 +608,14 @@ V následující tabulce jsou uvedena pole, která se zobrazují v italské dekl
 
 Než začnete pracovat s Intrastatem, měli byste si nastavit následující obecné informace:
 
--   Kódy komodit. Pro služby byste měli definovat šestimístné kódy komodit.
-
--   Kódy transakcí. Upozorňujeme, že Itálie používá jednociferné kódy transakcí.
-
--   Způsoby přepravy.
-
--   Statistické procedury.
-
--   Parametry zahraničního obchodu.
-
--   Sklady.
-
--   Podrobnosti o uvolněném produktu.
-
--   Kontaktní informace o zástupci.
+   - Kódy komodit. Pro služby byste měli definovat šestimístné kódy komodit.
+   - Kódy transakcí. Upozorňujeme, že Itálie používá jednociferné kódy transakcí.
+   - Způsoby přepravy.
+   - Statistické procedury.
+   - Parametry zahraničního obchodu.
+   - Sklady.
+   - Podrobnosti o uvolněném produktu.
+   - Kontaktní informace o zástupci.
 
 Další informace naleznete v [Přehledu Intrastat](emea-intrastat.md).
 
@@ -633,97 +623,68 @@ Další informace naleznete v [Přehledu Intrastat](emea-intrastat.md).
 
 Pomocí těchto kroků můžete nastavit možnosti specifické pro Itálii, abyste mohli pracovat s Intrastatem.
 
-1.  V [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) v knihovně Sdílený majetek si stáhněte nejnovější verzi následujících konfigurací elektronického výkaznictví (ER) pro přiznání Intrasat:
+1. V [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) v knihovně Sdílený majetek si stáhněte nejnovější verzi následujících konfigurací elektronického výkaznictví (ER) pro přiznání Intrasat:
 
-    -   Modul Intrastat
+    - Modul Intrastat
+    - Sestava Intrastat
+    - Intrastat (IT)
 
-    -   Sestava Intrastat
+    Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-    -   Intrastat (IT)
+2. V Dynamics 365 Finance přejděte na **Daň** > **Nastavení** > **Parametry zahraničního obchodu**.
+3. Na kartě **Intrastat** na pevné záložce **Všeobecné** nastavte následující pole:
 
-Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    - **Kraj původu / určení**: Vyberte kraj vaší společnosti. Tento kraj bude použit na odeslání.
+    - **Kód transakce**: Vyberte kód transakce pro převody majetku. Tento kód se použije pro transakce, které způsobí skutečný nebo plánovaný převod majetku za náhradu, a také pro opravy.
 
-2.  V Dynamics 365 Finance přejděte na **Daň** &gt; **Nastavení** &gt; **Parametry zahraničního obchodu**.
+    - **Dobropis**: Vyberte kód transakce pro vrácení zboží.
+    - **Období vykazování prodeje**: Vyberte vykazované období pro vývozní prohlášení: **Měsíc** nebo **Čtvrtletí**. Čtvrtletní prohlášení se exportují ve zjednodušeném formátu.
+    - **Období vykazování nákupu**: Vyberte vykazované období pro dovozní prohlášení: **Měsíc** nebo **Čtvrtletí**. Čtvrtletní prohlášení se exportují ve zjednodušeném formátu.
 
-3.  Na kartě **Intrastat** na pevné záložce **Všeobecné** nastavte následující pole:
+4. Na záložce s náhledem **Elektronické hlášení** zadejte následující pole:
 
-    - **Kraj původu / určení** - Vyberte kraj vaší společnosti. Tento kraj bude použit na odeslání.
+    - **Mapování formátu souboru**: Vyberte **Intrastat (IT)**.
+    - **Mapování formátu sestavy**: Vyberte **Sestava Intrastat**.
 
-    <!-- -->
+5. Na pevné záložce **Hierarchie komoditních kódů** v poli **Hierarchie kategorií** vyberte **Intrastat**.
+6. Na pevné záložce **Statistická hodnota** nastavte možnost **Tiskněte a exportujte statistické údaje** na **Ano**, pokud je třeba. Toto nastavení aktivuje přenos statistické sekce. Statistická část se skládá z údajů o hmotnosti, dalších jednotkách, statistických hodnotách, dodacích podmínkách, dodacích plánech, druzích dopravy a regionech původu.
 
-    - **Kód transakce** - Vyberte kód transakce pro převody majetku. Tento kód se použije pro transakce, které způsobí skutečný nebo plánovaný převod majetku za náhradu, a také pro opravy.
+    > [!NOTE]
+    > U čtvrtletní deklarace nebude sestava Intrastat obsahovat statistickou část ani informace o dodacích podmínkách a způsobech dopravy. Více informací naleznete v tabulce v sekci [Přehled](#overview) v tomto tématu.
 
-    - **Dobropis** - Vyberte kód transakce pro vrácení zboží. Tento kód bude použit pro vrácení zboží po zaznamenání původní transakce pod kódem transakce.
+7. Na kartě **Vlastnosti země / regionu** jsou uvedeny všechny země nebo oblasti, se kterými vaše organizace obchoduje. U každé země nebo regionu je třeba nastavit tato pole:
 
-    - **Období vykazování prodeje** - Vyberte vykazované období pro vývozní prohlášení: **Měsíc** nebo **Čvtrletí**. Čtvrtletní prohlášení se exportují ve zjednodušeném formátu.
+    - **Země / oblast strany**: Vyberte kód země/oblasti.
+    - **Kód Intrastat**: Zadejte dvoumístný kód Intrastat.
+    - **Měna**: Určete národní měnu země nebo regionu. Pokud má dodavatel sídlo v zemi EU, která nepoužívá euro, budou částky fakturovány v měně dodavatele i v eurech. Například pokud má prodejce sídlo v Dánsku, vykazované částky pro dovozní prohlášení budou v dánských korunách (DKK) i eurech (EUR).
+    - **Typ země / regionu**: Vyberte typ země nebo regionu ve vztahu k vaší organizaci. U deníku Intrastat budou přeneseny pouze země nebo regiony typu **EU** a **Speciální domácí**.
 
-    - **Období vykazování nákupu** - Vyberte vykazované období pro dovozní prohlášení: **Měsíc** nebo **Čvtrletí**. Čtvrtletní prohlášení se exportují ve zjednodušeném formátu.
+    > [!NOTE]
+    > Pro země nebo regiony typu **Speciální domácí** jsou ze souboru sestavy Intrastat vynechána následující pole: **Hmotnost**, **Další jednotky**, **Statistická hodnota**, **Podmínky doručení**, **Kód dopravy**, **Země / region původu / určení** a **Kraj původu / určení**. Například v poli **Země / region strany** vyberte **SMR (San Marino)** a poté v poli **Typ země / regionu** vyberte **Speciální domácí**.
 
-4.  Na záložce s náhledem **Elektronické hlášení** zadejte následující pole:
-
-    - **Mapování formátu souboru** - Vyberte **Intrastat (IT)**.
-
-    <!-- -->
-
-    - **Mapování formátu sestavy** - vyberte **Sestava Intrastat**.
-
-5.  Na pevné záložce **Hierarchie komoditních kódů** v poli **Hierarchie kategorií** vyberte **Intrastat**.
-
-6.  Na pevné záložce **Statistická hodnota** nastavte možnost **Tiskněte a exportujte statistické údaje** na **Ano**, pokud je třeba. Toto nastavení aktivuje přenos statistické sekce. Statistická část se skládá z údajů o hmotnosti, dalších jednotkách, statistických hodnotách, dodacích podmínkách, dodacích plánech, druzích dopravy a regionech původu.
-
->[!NOTE]
->
->U čtvrtletní deklarace nebude sestava Intrastat obsahovat statistickou část ani informace o dodacích podmínkách a způsobech dopravy. Více informací naleznete v tabulce v sekci [Přehled](#overview) v tomto tématu.
-
-7.  Na kartě **Vlastnosti země / regionu** jsou uvedeny všechny země nebo oblasti, se kterými vaše organizace obchoduje. U každé země nebo regionu je třeba nastavit tato pole:
-
-- **Země / oblast strany** - vyberte kód země/oblasti.
-
-- **Kód Intrastat** - Zadejte dvoumístný kód Intrastat.
-
-- **Měna** - Určete národní měnu země nebo regionu. Pokud má dodavatel sídlo v zemi EU, která nepoužívá euro, budou částky fakturovány v měně dodavatele i v eurech. Například pokud má prodejce sídlo v Dánsku, vykazované částky pro dovozní prohlášení budou v dánských korunách (DKK) i eurech (EUR).
-
-- **Typ země / regionu** - Vyberte typ země nebo regionu ve vztahu k vaší organizaci. U deníku Intrastat budou přeneseny pouze země nebo regiony typu **EU** a **Speciální domácí**.
-
->[!NOTE]
->
->Pro země nebo regiony typu **Speciální domácí** jsou ze souboru sestavy Intrastat vynechána následující pole: **Hmotnost**, **Další jednotky**, **Statistická hodnota**, **Podmínky doručení**, **Kód dopravy**, **Země / region původu / určení** a **Kraj původu / určení**. Například v poli **Země / region strany** vyberte **SMR (San Marino)** a poté v poli **Typ země / regionu** vyberte **Speciální domácí**.
-
-8.  Přejděte na **Závazky** &gt; **Nastavení** &gt; **Podmínky doručení**.
-
-9.  V mřížce vyberte dodací podmínky.
-
+8. Přejděte na **Závazky** > **Nastavení** > **Podmínky doručení**.
+9. V mřížce vyberte dodací podmínky.
 10. Na pevné záložce **Všeobecné** do pole **Kód Intrastat** zadejte jednomístný kód, který bude použit ve výkazu Intrastat.
-
 11. Podle těchto kroků můžete zákazníkům a prodejcům přiřadit čísla osvobozená od daně. Tato čísla se objeví v sestavě Intrastat.
+12. Přejděte na **Daň** > **Nastavení** > **DPH** > **Čísla osvobození od daně** a uveďte všechna čísla osvobození od daně pro vaše zákazníky a dodavatele. Pro každého partnera je třeba nastavit tato pole:
 
--   Přejděte na **Daň** &gt; **Nastavení** &gt; **DPH** &gt; **Čísla osvobozená od daně** a uveďte všechna čísla osvobozená od daně pro vaše zákazníky a dodavatele. Pro každého partnera je třeba nastavit tato pole:
+    - **Země / oblast**: vyberte kód země/oblasti partnera.
+    - **Číslo osvobození od daně**: Zadejte číslo osvobození od daně partnera.
+    - **Název společnosti**: Zadejte název partnera.
 
-    - **Země / oblast** - vyberte kód země/oblasti partnera.
+13. Přejděte na **Pohledávky** > **Zákazníci** > **Všichni zákazníci** a postupujte podle těchto kroků u každého zákazníka:
 
-    - **Číslo osvobození od daně** – zadejte číslo osvobození od daně partnera.
+    1. Vyberte odběratele.
+    2. Na pevné záložce **Faktura a dodávky** v sekci **DPH** v poli **Číslo osvobození od daně** vyberte **Vše**.
+    3. Vyberte číslo osvobození od daně odběratele.
 
-    - **Název společnosti** - Zadejte název partnera.
+14. Přejděte na **Závazky** > **Dodavatelé** > **Všichni dodavatelé** a postupujte podle těchto kroků u každého dodavatele:
 
-<!-- -->
+    1. Vyberte dodavatele.
+    2. Na pevné záložce **Faktura a dodávky** v sekci **DPH** v poli **Číslo osvobození od daně** vyberte **Vše**.
+    3. Vyberte číslo osvobození od daně dodavatele.
 
--   Přejděte na **Pohledávky** &gt; **Zákazníci** &gt; **Všichni zákazníci** a postupujte podle těchto kroků pro každého zákazníka:
-
-    1.  Vyberte odběratele.
-
-    2.  Na pevné záložce **Faktura a dodávky** v sekci **DPH** v poli **Číslo osvobození od daně** vyberte **Vše**.
-
-    3.  Vyberte číslo osvobození od daně odběratele.
-
--   Přejděte na **Závazky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé** a postupujte podle těchto kroků pro každého dodavatele:
-
-    1.  Vyberte dodavatele.
-
-    2.  Na pevné záložce **Faktura a dodávky** v sekci **DPH** v poli **Číslo osvobození od daně** vyberte **Vše**.
-
-    3.  Vyberte číslo osvobození od daně dodavatele.
-
-12. Přejděte na **Daň** &gt; **Nastavení** &gt; **Zahraniční obchod** &gt; **Komprese Intrastatu** a vyberte pole, která mají být porovnána, když jsou shrnuty informace Intrastat. U Itálie vyberte **Číslo osvobozené od daně**, **Kód transakce**, **Zboží**, **Podmínky doručení**, **Doprava**, **Země / region**, **Země / region původu**, **Kraj původu**, **Kraj původu / určení**, **Měna**, **Měsíc**, **Čtvrtletí** a **Rok opravy**.
+15. Přejděte na **Daň** > **Nastavení** > **Zahraniční obchod** > **Komprese Intrastatu** a vyberte pole, která mají být porovnána po shrnutí informací Intrastat. U Itálie vyberte **Číslo osvobozené od daně**, **Kód transakce**, **Zboží**, **Podmínky doručení**, **Doprava**, **Země / region**, **Země / region původu**, **Kraj původu**, **Kraj původu / určení**, **Měna**, **Měsíc**, **Čtvrtletí** a **Rok opravy**.
 
 ## <a name="italian-vendor-invoice-journal-for-foreign-trade"></a>Deník faktur italského dodavatele pro zahraniční obchod
 
@@ -762,10 +723,10 @@ Chcete-li otevřít deník Intrastat, přejděte na **Daň** &gt; **Prohlášen�
 >
 >Pokud obdržíte zápornou opravu (dobropis) ve stejném období jako vykazované období, musíte ručně změnit deník Intrastat podle těchto kroků.
 >
->1.  Přejděte na **Daň** &gt; **Deklarace** &gt; **Zahraniční obchod** &gt; **Intrastat**.
->2.  Najděte a odstraňte transakci, která je označena jako oprava.
->3.  Najděte původní transakci a změňte hodnotu pole **Částka faktury** podle potřeby.
->Například máte fakturu za 10 000 a obdržíte dobropis na -2 000. V tomto případě musíte otevřít deník Intrastat a najít a odstranit transakci pro -2 000. Poté najděte původní transakci za 10 000 a nastavte částku faktury na 8 000 (= 10 000 - 2 000).
+> 1. Přejděte na **Daň** > **Deklarace** > **Zahraniční obchod** > **Intrastat**.
+> 2. Najděte a odstraňte transakci, která je označena jako oprava.
+> 3. Najděte původní transakci a změňte hodnotu pole **Částka faktury** podle potřeby.
+> Například máte fakturu za 10 000 a obdržíte dobropis na -2 000. V tomto případě musíte otevřít deník Intrastat a najít a odstranit transakci pro -2 000. Poté najděte původní transakci za 10 000 a nastavte částku faktury na 8 000 (= 10 000 - 2 000).
 
 ### <a name="intrastat-transfer"></a>Přenos Intrastat
 
@@ -773,235 +734,30 @@ V podokně akcí můžete vybrat **Přenos** k automatickému přenosu informac�
 
 Alternativně můžete ručně zadat transakce výběrem **Nový** v podokně akcí.
 
-U každé transakce můžete na serveru nastavit několik parametrů specifických pro Itálii na kartě **Všeobecné**.
+U každé transakce můžete na kartě **Všeobecné** nastavit několik parametrů specifických pro Itálii. Následující tabulka poskytuje další informace o polích.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Pole</strong></p>
-</td>
-<td>
-<p><strong>Popis</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;">Sekce <strong>Všeobecné</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Typ položky</p>
-</td>
-<td>
-<p>Toto pole lze nastavit na <strong>Zboží</strong> nebo <strong>Služby</strong>.</p>
-<p>Aby mohla být transakce považována za službu, měl by být řádek faktury nastaven jedním z následujících způsobů:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nemá žádný kód zboží.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Má šestimístný kód zboží</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;">Sekce <strong>Země/oblast původu</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Země/oblast původu</p>
-</td>
-<td>
-<p>Okres místa původu produktu nebo služby. Tato hodnota je určena na stránce <strong>Uvolněné produkty</strong>.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;">Sekce <strong>Kódy</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Způsob dodání</p>
-</td>
-<td>
-<p>Způsob dodání. Chcete-li určit režim doručení, přejděte na <strong>Prodej a marketing</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Rozdělení</strong> &gt; <strong>Způsoby dodání</strong>.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;">Sekce <strong>Opravy</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Měsíc</p>
-</td>
-<td>
-<p>Měsíc původní transakce.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Čtvrtletí</p>
-</td>
-<td>
-<p>Čtvrtletí původní transakce.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Rok opravy</p>
-</td>
-<td>
-<p>Rok původní transakce.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Původní záznam Intrastat</p>
-</td>
-<td>
-<p>Pro servisní opravy zadejte číslo původního záznamu Intrastat.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;">Sekce <strong>Hodnota faktury</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Měna</p>
-</td>
-<td>
-<p>Národní měna partnera.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Částka faktury v měně transakce</p>
-</td>
-<td>
-<p>Částka faktury v národní měně partnera.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Částka nákladů faktury v měně transakce</p>
-</td>
-<td>
-<p>Poplatky faktury v národní měně partnera.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Hodnota faktury v měně transakce</p>
-</td>
-<td>
-<p>Hodnota faktury v národní měně partnera.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Pole | popis |
+|-------|-------------|
+| Typ položky | Toto pole lze nastavit na **Zboží** nebo **Služby**.<br> Aby mohla být transakce považována za službu, měl by být řádek faktury nastaven jedním z následujících způsobů:<br>- Nemá žádný kód zboží<br>- Má šestimístný kód zboží  |
+| Země/oblast původu | Okres místa původu produktu nebo služby. Tato hodnota je určena na stránce **Uvolněné produkty**. |
+| Způsob dodání | Způsob dodání. <br>Chcete-li určit režim doručení, přejděte na **Prodej a marketing** > **Nastavení** > **Rozdělení** > **Způsoby dodání**. |
+| Měsíc | Měsíc původní transakce. |
+| Čtvrtletí | Čtvrtletí původní transakce. |
+| Rok opravy | Rok původní transakce. |
+| Původní záznam Intrastat | Pro servisní opravy zadejte číslo původního záznamu Intrastat. |
+| Měna | Národní měna partnera. |
+| Částka faktury v měně transakce | Částka faktury v národní měně partnera. |
+| Částka nákladů faktury v měně transakce | Poplatky faktury v národní měně partnera. |
+| Hodnota faktury v měně transakce | Hodnota faktury v národní měně partnera. |
 
 Další informace o poplatcích za faktury v národní měně partnera viz [Předpoklady pro přehled Intrastat (různé poplatky)](emea-intrastat.md).
 
 ### <a name="generate-an-intrastat-report"></a>Vygenerovat sestavu Intrastat
 
-1.  Chcete-li vygenerovat sestavu Intrastat, přejděte na **Daň** &gt; **Prohlášení** &gt; **Zahraniční obchod** &gt; **Intrastat**.
-
-2.  V podokně akcí vyberte **Výstup** &gt; **Sestava**.
-
-3.  V dialogovém okně **Sestava Intrastat** nastavte následující pole.
-
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Pole</strong></p>
-</td>
-<td>
-<p><strong>Popis</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>Sekce <strong>Datum</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Od data</p>
-</td>
-<td>
-<p>Vyberte počáteční datum sestavy.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Do data</p>
-</td>
-<td>
-<p>Vyberte koncové datum sestavy.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>Sekce <strong>Možnosti exportu</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Generovat soubor</p>
-</td>
-<td>
-<p>Tuto možnost nastavte na <strong>Ano</strong>, chcete-li generovat soubor .txt.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Název souboru</p>
-</td>
-<td>
-<p>Zadejte název souboru .txt pro sestavu Intrastat.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Generovat sestavu</p>
-</td>
-<td>
-<p>Tuto možnost nastavte na <strong>Ano</strong>, chcete-li generovat soubor .xlsx.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Název souboru sestavy</p>
-</td>
-<td>
-<p>Zadejte název souboru .xlsx pro sestavu Intrastat.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Směr</p>
-</td>
-<td>
-<p>Vyberte <strong>Příchozí zásilky</strong> pro zprávu o příchozích zásilkách do společenství. Vyberte <strong>Odeslání</strong> pro zprávu o odeslání v rámci společenství.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p>Sekce <strong>Mapování formátu souboru</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Odkaz na číslo</p>
-</td>
-<td>
-<p>Zadejte číslo dokumentu. Tato hodnota ovlivní kód <strong>Číslo souboru</strong> v sestavě souboru Intrastat. Další informace naleznete ve Formátu souboru.</p>
-</td>
-</tr>
-</tbody>
-</table>
+1. Chcete-li vygenerovat sestavu Intrastat, přejděte na **Daň** > **Prohlášení** > **Zahraniční obchod** > **Intrastat**.
+2. V podokně akcí vyberte **Výstup** > **Sestava**.
+3. V dialogovém okně **Zpráva Intrastat** vyberte počáteční a koncové datum sestavy.
+4. V poli **Generovat soubor** vyberte **Ano** a vygenerujte soubor .txt, jehož název zadáte.
+5. V poli **Generovat sestavu** vyberte **Ano** a vygenerujte soubor .xlsx, jehož název sestavy poté zadáte.
+6. Vyberte možnost **Dovoz** nebo **Expedice** podle toho, čeho se sestava týká.
+7. V poli **Referenční číslo** zadejte číslo dokladu. Tato hodnota ovlivní kód čísla souboru v souboru sestavy Intrastat. 

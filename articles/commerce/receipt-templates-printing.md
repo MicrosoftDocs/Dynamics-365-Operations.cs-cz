@@ -2,7 +2,7 @@
 title: Nastavení a návrh formátů příjemek
 description: Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Dynamics 365 Commerce obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715351"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500162"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Nastavení a návrh formátů příjemek
 
@@ -46,7 +46,12 @@ Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určo
 
 ## <a name="print-images"></a>Tisk obrázků
 
-Návrhář účtenek obsahuje proměnnou  **Logo**, kterou lze použít k určení obrázků, které se mají vytisknout na účtenku. Obrázky, které jsou zahrnuty na účtenkách pomocí proměnné **Logo**, by měly být monochromatické bitmapové (.bmp) typy souborů. Pokud je v návrháři účtenky zadán obrázek .bmp, ale netiskne se při odeslání do tiskárny, může být velikost souboru příliš velká nebo rozměry pixelů v obrázku nejsou kompatibilní s tiskárnou. Pokud k tomu dojde, zkuste snížit rozlišení obrazového souboru.   
+Návrhář účtenky obsahuje proměnnou **Logo**. Tuto proměnnou můžete použít k určení obrázku, který by měl být vytištěn na účtenkách. Obrázky, které jsou vytištěny na účtenkách pomocí proměnné **Logo**, by měly být uloženy jako monochromatické bitmapové (.bmp) soubory. Pokud je v návrháři účtenky určen bitmapový obrázek, ale není vytištěn při odeslání účtenky do tiskárny, může být příčinou jeden z následujících problémů:
+
+- Velikost souboru je příliš velká nebo rozměry obrázku v pixelech nejsou kompatibilní s tiskárnou. V takovém případě zkuste snížit rozlišení nebo rozměry obrazového souboru.
+- Některé ovladače tiskárny Object Linking and Embedding for Point of Sale (OPOS) neimplementují metodu **PrintMemoryBitmap**, kterou hardwarové stanice používají k tisku obrázků s logem. V takovém případě zkuste do souboru **HardwareStation.Extension.config** vaší vyhrazené nebo sdílené hardwarové stanice přidat následujíc příznak:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Navrhnout formát příjemky
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730411"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485800"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
 
@@ -65,9 +65,9 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 1. Nastavte možnosti zaokrouhlení pro typ pracovního volna. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
 
-2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, aplikace Human Resources použije počet svátků, které spadají do pracovního dne k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
+2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, počet svátků, které spadají do pracovního dne, bude použit k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
 
-   Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
+   Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md).
    
  3. Nastavte **Typ převodu pracovního volna** pro typ volna. Pokud vyberete tuto možnost, veškeré zůstatky k převodu budou převedeny na zadaný typ volna. Do plánu volna a nepřítomnosti musí být rovněž zahrnut typ převodu volna. 
  
@@ -76,7 +76,7 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Nakonfigurujte požadovanou přílohu podle typu dovolené
 
 > [!NOTE]
-> Chcete-li použít pole **Je vyžadována přiloha**, musíte nejprve zapnout funkci **(Náhled) Nakonfigurujte požadovanou přílohu pro žádosti o dovolenou** ve Správě funkcí. Další informace o zapnutí funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+> Chcete-li použít pole **Je vyžadována příloha**, musíte nejprve zapnout funkci **Nakonfigurujte požadovanou přílohu pro žádosti o dovolenou** ve Správě funkcí. Další informace o zapnutí funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
 1. Na stránce **Dovolená a nepřítomnost** na kartě **Odkazy** v **Nastavení** vyberte **Typy dovolené a nepřítomnosti**.
 
@@ -87,7 +87,7 @@ Zaměstnanci budou povinni nahrát přílohu, když předloží novou žádost o
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Nakonfigurovat jednotky dovolené (hodiny/dny) podle typu pracovního volna
 
 > [!NOTE]
-> Chcete-li použít funkci jednotek dovolené na typ dovolené, musíte nejprve zapnout funkci **(Náhled) Nakonfigurujte jednotky dovolené pro každý typ dovolené** ve Správě funkcí. Další informace o zapnutí funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+> Chcete-li použít funkci jednotek dovolené na typ dovolené, musíte nejprve zapnout funkci **Nakonfigurujte jednotky dovolené pro každý typ dovolené** ve Správě funkcí. Další informace o zapnutí funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Ve výchozím nastavení typy dovolené v právnické osobě používají jednotky dovolené z konfigurace parametrů dovolené na úrovni právnické osoby.

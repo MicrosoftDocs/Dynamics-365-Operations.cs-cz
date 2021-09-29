@@ -1,8 +1,8 @@
 ---
 title: Podpora daňové funkce u převodních příkazů
 description: Toto téma vysvětluje novou podporu daňové funkce u převodních příkazů, která využívá službu výpočtu daně.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c47c327841b8c712220e440e2aa6b4fe2b31b4a1ccd03dc0a200dbeb7394071
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721682"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500069"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Podpora daňové funkce u převodních příkazů
 
@@ -53,7 +53,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         4. Vyberte příkaz **Přidat** v tabulce **Sazba**.
         5. Přepněte pole **Je osvobozeno** na **Ano** v části **Všeobecné**.
 
-        ![Daňový kód NL-Exempt.](../media/tax-feature-support-02.png)
+           ![Daňový kód NL-Exempt.](../media/tax-feature-support-02.png)
 
     - Když je v belgickém skladu přijat převodní příkaz, použije se mechanismus přenesení daňové povinnosti pomocí daňových kódů **BE-RC-21** a **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         6. Přepněte pole **Je přenesení daňové povinnosti** na **Ano** v části **Všeobecné**.
         7. Zvolte možnost **Uložit**.
 
-        ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-03.png)
+           ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-03.png)
         
         Vytvořte daňový kód **BE-RC+21**.
         1. Vyberte příkaz **Přidat** a zapište **BE-RC-21** do pole **Daňový kód**.
@@ -76,7 +76,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         5. Zapište **21** do pole **Sazba daně**.
         6. Zvolte možnost **Uložit**.
 
-        ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-04.png)
+           ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-04.png)
 
 3. Definujte použitelnost daňových kódů.
 
@@ -97,6 +97,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         7. V polích **Daňová skupina** a **Daňová skupina zboží** zadejte související skupinu DPH a skupinu DPH zboží, které jsou definovány ve vašem systému Finance.
         
         Přidejte další pravidlo pro příjemku převodního příkazu.
+        
         1. Vyberte příkaz **Přidat** v tabulce **Pravidla použitelnosti**.
         2. V poli **Obchodní proces** vyberte **Zásoby**, aby bylo pravidlo použitelné na převodní příkaz.
         3. V poli **Odeslat ze země / oblasti** zadejte **NLD**.
@@ -105,7 +106,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         6. V poli **Daňové kódy** vyberte **BE-RC+21** a **BE-RC-21**.
         7. V polích **Daňová skupina** a **Daňová skupina zboží** zadejte související skupinu DPH a skupinu DPH zboží, které jsou definovány ve vašem systému Finance.
 
-        ![Pravidla použitelnosti.](../media/image5.png)
+           ![Pravidla použitelnosti.](../media/image5.png)
 
 4. Dokončete a publikujte novou verzi daňové funkce.
 
@@ -115,7 +116,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
 
 Chcete-li povolit a nastavit daně pro převodní příkazy, postupujte takto:
 
-1. Ve Finance přejděte na **Pracovní prostory** \> **Správa funkcí**.
+1. Ve Finance přejděte na **Pracovní prostory** > **Správa funkcí**.
 2. V seznamu najděte a vyberte funkci **Daň v převodním příkazu** a poté ji zapněte výběrem možnosti **Povolit**.
 
     > [!IMPORTANT]
@@ -128,10 +129,10 @@ Chcete-li povolit a nastavit daně pro převodní příkazy, postupujte takto:
     > [!IMPORTANT]
     > Tento krok musíte dokončit pro každou právnickou osobu ve Finance, kde chcete mít k dispozici daňovou službu a funkce daně v převodních příkazech.
 
-    1. Přejděte do nabídky **Daň** \> **Nastavení** \> **Daňová konfigurace** \> **Nastavení daňové služby**.
+    1. Přejděte do nabídky **Daň** > **Nastavení** > **Daňová konfigurace** > **Nastavení daňové služby**.
     2. V poli **Obchodní proces** vyberte **Zásoby**.
 
-    ![Nastavení pole Obchodní proces.](../media/image8.png)
+      ![Nastavení pole Obchodní proces.](../media/image8.png)
 
 4. Zkontrolujte, zda je nastaven mechanismus přenesení daňové povinnosti. Přejděte do nabídky **Hlavní kniha** \> **Nastavení** \> **Parametry** a poté na kartě **Přenesená daňová povinnost** ověřte, že je možnost **Povolit přenesenou daňovou povinnost** nastavena na **Ano**.
 
@@ -140,10 +141,10 @@ Chcete-li povolit a nastavit daně pro převodní příkazy, postupujte takto:
 5. Ověřte, že související daňové kódy, daňové skupiny, daňové skupiny zboží a DIČ byly v aplikaci Finance nastaveny podle pokynů daňové služby.
 6. Nastavte účet prozatímního tranzitu. Tento krok je vyžadován pouze v případě, že se daň, která se vztahuje na převodní příkaz, nevztahuje na mechanismus osvobození od daně nebo přenesení daňové povinnosti.
 
-    1. Přejděte na **Daň** \> **Nastavení** \> **DPH** \> **Účetní skupiny**.
+    1. Přejděte na **Daň** > **Nastavení** > **DPH** \ **Účetní skupiny**.
     2. V poli **Prozatímní tranzit** vyberte účet hlavní knihy.
 
-    ![Výběr účtu prozatímního tranzitu.](../media/image10.png)
+       ![Výběr účtu prozatímního tranzitu.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Nastavte základní sklad pro transakce převodních příkazů
 
@@ -151,7 +152,7 @@ Podle těchto pokynů nastavte základní sklad, který umožní transakce přev
 
 1. Vytvořte pro své sklady v různých zemích nebo regionech místa odeslání a příjmu a pro každý web přidejte primární adresu.
 
-    1. Přejděte do nabídky **Řízení skladu** \> **Nastavení** \> **Sklad** \> **Pracoviště**.
+    1. Přejděte do nabídky **Warehouse Management** > **Nastavení** > **Sklad** > **Pracoviště**.
     2. Výběrem položky **Nový** vytvoříte pracoviště, které později přiřadíte ke skladu.
     3. Opakujte krok 2 pro všechna ostatní pracoviště, které musíte vytvořit.
 
@@ -162,11 +163,11 @@ Podle těchto pokynů nastavte základní sklad, který umožní transakce přev
 
 2. Vytvářejte expediční, tranzitní a dodací sklady. Veškeré informace o adrese uchovávané ve skladu přepíšou adresu pracoviště během výpočtu daně.
 
-    1. Přejděte na **Řízení skladu** \> **Nastavení** \> **Sklad** \> **Sklady**.
+    1. Přejděte na **Řízení skladu** > **Nastavení** > **Sklad** > **Sklady**.
     2. Výběrem položky **Nový** vytvoříte sklad a přiřadíte ho k odpovídajícímu pracovišti.
     3. Opakujte krok 2 a podle potřeby vytvořte sklad pro každé pracoviště.
 
-    ![Nastavení skladů.](../media/image12.png)
+       ![Nastavení skladů.](../media/image12.png)
 
     > [!NOTE]
     > U expedičního skladu musí být pro transakce převodních příkazů vybrán tranzitní sklad v poli **Tranzitní sklad**.
@@ -175,7 +176,7 @@ Podle těchto pokynů nastavte základní sklad, který umožní transakce přev
 
 3. Zkontrolujte, že je pro transakce převodních příkazů nastavena konfigurace zaúčtování zásob.
 
-    1. Přejděte na **Řízení zásob** \> **Nastavení** \> **Zaúčtování** \> **Zaúčtování**.
+    1. Přejděte na **Řízení zásob** > **Nastavení** > **Zaúčtování** > **Zaúčtování**.
     2. Na kartě **Zásoby** ověřte, zda je nastaven účet hlavní knihy pro oba typy zaúčtování **Skladový výdej** a **Příjem na sklad**.
 
         ![Nastavení zaúčtování výdeje a příjmu zásob.](../media/image14.png)
@@ -187,3 +188,6 @@ Podle těchto pokynů nastavte základní sklad, který umožní transakce přev
     4. Ověřte, že je nastaven účet hlavní knihy pro zaúčtování **Mezijednotkové pohledávky**.
 
         ![Nastavení účtování mezijednotkových pohledávek.](../media/image16.png)
+        
+        
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

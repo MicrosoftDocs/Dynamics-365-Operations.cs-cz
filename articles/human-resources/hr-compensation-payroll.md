@@ -2,7 +2,7 @@
 title: Připraveno k platbě
 description: Toto téma ukazuje, jak označit zaměstnance jako připraveného k výplatě v Dynamics 365 Human Resources.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732410"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483775"
 ---
 # <a name="ready-to-pay"></a>Připraveno k platbě
 
@@ -39,7 +39,7 @@ Shromažďování a ověřování informací o zaměstnancích může být časo
 
 Onačení zaměstnance jako připraveného k výplatě:
 
-1. Otevřete **Správu kompenzací**. V pracovním prostoru jsou dvě dlaždice 
+1. Otevřete **Správu kompenzací**. V pracovním prostoru jsou dvě dlaždice: 
     - **Zaměstnanci, kteří jsou připraveni pro výplatu**
     - **Zaměstnanci nejsou připraveni k výplatě**
     ![Pracovní prostor pro správu kompenzací.](./media/hr-ready-to-pay-1-workspace.png)
@@ -53,22 +53,20 @@ Onačení zaměstnance jako připraveného k výplatě:
 
 ## <a name="validation"></a>Ověření
 
-Před označením zaměstnance jako připraveného k platbě provede systém základní ověření úplnosti profilu.
+Před označením zaměstnance jako připraveného k platbě bude ověřena úplnost profilu zaměstnance.
 
 ![Ověření výsledků.](./media/hr-ready-to-pay-3-results.png)
 
-Následující tabulka uvádí více informací o všech provedených ověřeních. 
-
 | Ověření | Podrobnosti |
 | --- | --- |
-| Parametr účelu adresy | Ověřuje, zda je parametr **Použijte účel výplatní adresy** je zapnutý. |
-| Adresa mzdy | Ověřuje, zda má profil pracovníka alespoň jednu adresu s účelem „Místo bydliště“ nebo „Místo práce mzdy“, a pro každý účel existuje pouze jedna adresa. |
-| Zaměstnání | Ověřte, zda má pracovník alespoň jedno zaměstnání (současné, předchozí nebo budoucí). |
-| Identifikační číslo | Ověřuje, zda je parametr „Použít typy identifikace při zpracování mezd“ nastaven na ano a zda je typ identifikace uvedený v parametru vyplněn v pracovním profilu. |
-| Jméno a příjmení | Ověřuje, zda je profil pracovníka platný, a kontroluje, zda jsou pole **Jméno** a **Příjmení** vyplněny.|
-| Pracovní pozice | Ověřte, zda má pracovník přiřazenou pozici. |
-| Datum narození | Ověřuje, zda je profil pracovníka platný, a kontroluje, zda je vyplněno pole **Narozeniny**. |
-| Kompenzace | Ověřte, zda je pracovník zapsán do plánu pevné kompenzace. |
+| **Parametr účelu adresy** | Potvrdí, zda je parametr **Použijte účel výplatní adresy** vybrán. |
+| **Adresa mzdy** | Potvrdí, zda má profil pracovníka alespoň jednu adresu s účelem **Místo bydliště** nebo **Místo práce mzdy**, a pro každý účel existuje pouze jedna adresa. |
+| **Zaměstnání** | Potvrdí, zda má pracovník alespoň jedno zaměstnání (současné, předchozí nebo budoucí). |
+| **Identifikační číslo** | Potvrdí, zda je parametr **Použít typy identifikace při zpracování mezd** na stránce **Parametry lidských zdrojů** nastaven na **Ano** a zda je typ identifikace uvedený v parametru vyplněn v pracovním profilu. |
+| **Jméno a příjmení** | Potvrzuje vyplnění polí **Jméno** a **Příjmení**.|
+| **Pracovní pozice** | Potvrdí, že má pracovník přiřazenou pozici. |
+| **Datum narození** | Potvrdí vyplnění pole **Narozeniny**. |
+| **Kompenzace** | Potvrdí, že je pracovník zapsán do plánu pevné kompenzace. |
 
 Pokud jedno z těchto ověření selže, nemůžete zaměstnance označit jako připraveného k platbě.
 
@@ -77,7 +75,7 @@ Pokud je pole **Připraveno k výplatě** nastaveno na **Ne**, je to indikace, �
 ## <a name="known-issues"></a>Známé problémy
 
 - Musíte deaktivovat funkci **Efektivnější vstup zaměstnanců** ve správě funkcí. Pokud použijete tuto funkci, dlaždice v pracovním prostoru správy kompenzací nebudou fungovat správně.
-- Ve formuláři pracovníka **Karta Mzdy** je skupina **Připraveno k výplatě** k dispozici jakékoli uživatelské roli. 
+- Na stránce **Pracovník** na kartě **Mzdy** je skupina **Připraveno k výplatě** k dispozici jakékoli uživatelské roli. 
 
 ## <a name="see-also"></a>Viz také
 

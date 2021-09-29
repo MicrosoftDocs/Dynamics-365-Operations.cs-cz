@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715327"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500296"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -562,7 +562,7 @@ Tato konfigurace může být použita pro všechny moderní POS klienty, které 
 > Pokud zařízení často používají různé hardwarové stanice, doporučujeme, abyste nakonfigurovali moderní POS tak, aby vyzvaly pokladníky k výběru hardwarové stanice při zahájení úhradového procesu. Klikněte na **Retail a Commerce** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Registry**. Vyberte pokladu a poté nastavte možnost **Vybrat při úhradě** na **Ano**. Použijte plán distribuce **1090** k synchronizování změn do databáze kanálů.
 
 ## <a name="extensibility"></a>Rozšiřitelnost
-Pro více informací o scénářích rozšiřitelnosti hardwarových stanic, viz [Rozšíření hardwarových stanic](dev-itpro/hardware-station-extensibility.md).
+Informace o scénářích rozšiřitelnosti pro hardwarovou stanici najdete v tématu [Integrace POS s novým hardwarovým zařízením a generování instalačního programu rozšíření](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Zabezpečení
 Podle aktuálních standardů zabezpečení by mělo být v provozním prostředí použito následující nastavení: 

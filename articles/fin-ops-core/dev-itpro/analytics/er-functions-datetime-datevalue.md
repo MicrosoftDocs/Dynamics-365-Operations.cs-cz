@@ -2,7 +2,7 @@
 title: Funkce el. výkaznictví DATEVALUE
 description: Toto téma obsahuje obecné informace o použití funkce DATEVALUE elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/04/2019
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c2db02e95c0e744c863381cff779b92679e7a396d7edb7bf90d3bffc0229619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 446f1357e54342073e73f86ef36e6467e029ebc4
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747586"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485567"
 ---
 # <a name="datevalue-er-function"></a>Funkce el. výkaznictví DATEVALUE
 
 [!include [banner](../includes/banner.md)]
 
-Funkce `DATEVALUE` vrátí hodnotu typu *datum*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkce `DATEVALUE` vrátí hodnotu typu *[datum](er-formula-supported-data-types-primitive.md#date)*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaxe 1
 
@@ -41,17 +41,17 @@ DATEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`text`: *řetězec*
+`text`: *[Řetězec](er-formula-supported-data-types-primitive.md#string)*
 
 Text, který představuje hodnotu pro zformátování.
 
 `format`: *řetězec*
 
-Formát zadaného textu.
+Formát zadaného textu. Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *řetězec*
 
-Jazyková verze, která se používá pro formátování zadaného textu.
+Jazyková verze, která se používá pro formátování zadaného textu. Informace o podporovaných jazykových verzích viz [jazyková verze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Vrácené hodnoty
 

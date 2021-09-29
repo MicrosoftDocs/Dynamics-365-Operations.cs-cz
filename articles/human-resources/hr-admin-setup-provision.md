@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441158"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488076"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -41,6 +41,8 @@ Aby bylo možné zřídit nové produkční prostředí, musí být splněny ná
 ## <a name="provision-a-human-resources-trial-environment"></a>Zřídit zkušební prostředí Human Resources
 
 Před zřízením prvního sandboxu nebo produkčního prostředí můžete zřídit [Zkušební prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) k ověření funkčnosti Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. 
+
+Zkušební prostředí poskytují možnost vyhodnotit funkce lidských zdrojů u jednotlivců, kteří ještě nemají přístup k prostředí lidských zdrojů. Pokud zřizujete zkušební prostředí a ověřený uživatel již má přístup k jednomu nebo více existujícím prostředím lidských zdrojů, bude uživatel přesměrován do stávajícího prostředí nebo seznamu prostředí.
 
 Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 60denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
@@ -135,7 +137,12 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
    
     - **Nepodporované zeměpisné oblasti** – Prostředí musí být v podporované geografii. Další informace viz [Podporované zeměpisné oblasti](hr-admin-setup-provision.md#supported-geographies).
 
-6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
+6. Možnosti duálního zápisu pro integraci dat lidských zdrojů s prostředím Power Apps lze použít pouze v případě, kdy je vybrána možnost **Povolit aplikace Dynamics 365** pro prostředí. V tématu [Domovská stránka pro duální zápis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) získáte více informací o duálním zápisu.
+
+    > [!NOTE]
+    > Možnost **Povolit aplikace Dynamics 365** musí být vybrána během vytváření prostředí Power Apps. Pokud tato možnost není v době zřízení vybrána, nebudete moci používat duální zápis k integraci dat mezi Dynamics 365 Human Resources a prostředím Power Apps ani instalovat do prostředí aplikace Dynamics 365, jako je Dynamics 365 Sales a Field Service. Tato možnost není reverzibilní. Další informace viz [Některé důležité úvahy při vytváření nového prostředí](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) na webu dokumentace Power Platform.
+
+7. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
 
 ### <a name="supported-geographies"></a>Podporované zeměpisné oblasti
 

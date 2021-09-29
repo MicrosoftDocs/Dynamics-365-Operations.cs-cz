@@ -2,7 +2,7 @@
 title: Vložit aplikace plátna z Power Apps
 description: Toto téma popisuje způsob vložení aplikací plátna z Microsoft Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344522"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488047"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps je službou umožňující vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web bez psaní kódu. Aplikace Finance and Operations podporují integraci s Power Apps. Aplikace plátna, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze vložit do aplikací Finance and Operations, aby bylo možné vylepšit funkce produktu. Například můžete vytvořit aplikaci plátna z Power Apps pro doplnění aplikace Finance and Operations o informace získané z jiného systému.
 

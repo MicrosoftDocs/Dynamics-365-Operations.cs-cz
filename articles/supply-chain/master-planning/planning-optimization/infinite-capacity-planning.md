@@ -2,7 +2,7 @@
 title: Plánování s nekonečnou kapacitou
 description: Toto téma poskytuje informace o plánování nekonečné kapacity pro optimalizaci plánování. Také popisuje aktuální omezení funkcí.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9e1e423aaed06f6bb2b42e27d41c2aef46ffe104
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471661"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506800"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Plánování s nekonečnou kapacitou
 
@@ -27,7 +27,12 @@ Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* zavád�
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Zapnutí funkci plánování s nekonečnou kapacitou
 
-Pokud váš systém ještě neobsahuje funkci popsanou v tomto tématu, otevřete pracovní prostor [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Plánování s neomezenou kapacitou pro optimalizaci plánování*.
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+
+- **Modul:** *Hlavní plánování*
+- **Název funkce**: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování*
+
+Další informace o této funkci naleznete v části [Plánování s výběrem zdrojů na základě schopností](capability-based-scheduling.md).
 
 ## <a name="added-functionality"></a>Přidaná funkce
 
@@ -42,7 +47,7 @@ Během procesu plánování systém rovněž zohledňuje *požadavky na zdroje*,
 - Typ zdroje
 - Prostředek
 - Skupina prostředků
-- Schopnost
+- Schopnost (Další informace viz [Plánování s výběrem zdrojů na základě schopností](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Požadavky týkající se lidských zdrojů, jako jsou dovednosti nebo požadavky na certifikát, ještě nejsou podporovány.
@@ -55,7 +60,6 @@ Stručně řečeno, plánování optimalizace plánování podporuje nejčastěj
 
 Následující omezení platí, když používáte plánování pro optimalizaci plánování:
 
-- Tato funkce podporuje pouze plánování úloh. Nastavení související s plánováním operací se během plánování nezohledňují bez ohledu na metodu plánování v hlavních plánech.
 - Tato funkce podporuje pouze nekonečnou kapacitu.
 - Funkce nepodporuje funkci načítání prostředků.
 - Funkce nezohledňuje odpad trasy.

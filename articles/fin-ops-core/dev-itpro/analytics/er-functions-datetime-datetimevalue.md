@@ -2,7 +2,7 @@
 title: Funkce el. výkaznictví DATETIMEVALUE
 description: Toto téma obsahuje obecné informace o použití funkce DATETIMEVALUE elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/03/2019
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 711889e23e85b05c5e4c5ab904ec12ceb0bbb4da1f17d1c994adda1eec8ccb74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a9da0b9461926b1033d6a97b37d4b43a86d8dad
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776163"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485515"
 ---
 # <a name="datetimevalue-er-function"></a>Funkce el. výkaznictví DATETIMEVALUE
 
 [!include [banner](../includes/banner.md)]
 
-Funkce `DATETIMEVALUE` vrátí hodnotu typu *datum a čas*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkce `DATETIMEVALUE` vrátí hodnotu typu *[datum/čas](er-formula-supported-data-types-primitive.md#datetime)*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané [jazykové verzi](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaxe 1
 
@@ -41,21 +41,21 @@ DATETIMEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`text`: *řetězec*
+`text`: *[Řetězec](er-formula-supported-data-types-primitive.md#string)*
 
 Text, který představuje hodnotu pro zformátování.
 
 `format`: *řetězec*
 
-Formát zadaného textu.
+Formát zadaného textu. Informace o podporovaných formátech: [standardní](/dotnet/standard/base-types/standard-date-and-time-format-strings) a [vlastní](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *řetězec*
 
-Jazyková verze, která se používá pro formátování zadaného textu.
+Jazyková verze, která se používá pro formátování zadaného textu. Informace o podporovaných jazykových verzích viz [jazyková verze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Vrácené hodnoty
 
-*Datum a čas*
+*Datum/čas*
 
 Výsledná hodnota data a času.
 

@@ -1,5 +1,5 @@
 ---
-title: Preview verze Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
-ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
+ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7391201"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500548"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.21. Tato verze má číslo sestavení 10.0.960 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.21. Tato verze má číslo sestavení 10.0.960 a je k dispozici následujícím způsobem:
 
 - **Preview verze:** Srpen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Září 2021
@@ -46,13 +45,14 @@ Nasazení bude fungovat i přes varování. Ve službě Lifecycle Services (LCS)
 
 V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci.
 
-Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné.
+Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 | Oblast funkce | Funkce | Další informace |
 |---|---|---|
-| Zásoby&nbsp;a&nbsp;logistika | [Doplněk Globální účetnictví zásob pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Domovská stránka globálního skladového účetnictví](../global-inventory-accounting/global-inventory-accounting-home.md) |
+| Zásoby&nbsp;a&nbsp;logistika | [Doplněk Globální účetnictví zásob pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Domovská stránka globálního skladového účetnictví](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kódy důvodů pro inventury zásob](../warehousing/reason-codes-for-counting-journals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zásady exportu dat odkazující na prodejní nabídku](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Určete, zda změny dat odkazovaných v nabídkách způsobí zahrnutí těchto nabídek (nebo řádků) do dalšího přírůstkového exportu. Pokud se rozhodnete nezahrnout tyto nabídky nebo řádky, vaše přírůstkové exporty poběží rychleji.<br><br>Tato funkce přidává nastavení s názvem **Vynechat data odkazovaná v prodejních nabídkách při sledování změn** do stránky **Parametry pohledávek**. |
+| Zásoby&nbsp;a&nbsp;logistika | Zapečetěné nabídky <!-- KFM: Add RP link when available --> | [Zapečetěné nabídky pro požadavky na nabídku](../procurement/sealed-bidding.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Předběžná rezervace pro doplněk Viditelnost zásob](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezervace viditelnosti zásob](../inventory/inventory-visibility-reservations.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Vylepšení odpočtů a skutečné hmotnosti ve správě rabatu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Správa odpočtů pomocí pracovní plochy odpočtu](../rebate-management/deduction-workbench.md )<br><br>[Zpracování, kontrola a zaúčtování rabatu](../rebate-management/process-review-post.md)<br><br>[Obchody správy rabatu](../rebate-management/rebate-management-deals.md) |
