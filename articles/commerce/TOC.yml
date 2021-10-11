@@ -1398,12 +1398,16 @@
               items:
                 - name: Lokalizace aplikace Commerce pro Rusko
                   href: localizations/rus-commerce-localization.md
-                - name: Zjednodušený formát adresy zákazníka v Commerce POS pro Rusko
-                  href: localizations/rus-simplified-address.md
                 - name: Nastavení lokalizace aplikace Commerce pro Rusko
                   href: localizations/rus-commerce-setup.md
                 - name: "Zálohy v\_aplikaci Commerce pro Rusko"
                   href: localizations/rus-commerce-prepayments.md
+                - name: Zjednodušený formát adresy zákazníka v Commerce POS pro Rusko
+                  href: localizations/rus-simplified-address.md
+                - name: Vzor integrace fiskální tiskárny pro Rusko
+                  href: localizations/rus-fpi-sample.md
+                - name: Správa informací o zákazníkovi pro Rusko
+                  href: localizations/rus-customer-information.md
             - name: Švédsko
               items:
                 - name: Funkce registrační pokladny
@@ -2220,11 +2224,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace globálního adresáře
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Nastavení adresy
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Často kladené dotazy o adresáři
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace adresářů
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
-            - name: Systém workflow
+            - name: Systém pracovního postupu
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
@@ -2329,7 +2335,11 @@
         - name: Rozšiřitelnost
           items:
             - name: Vývoj a rozšiřitelnost Commerce
-              href: dev-itpro/dev-retail-home-page.md
+              items:
+                - name: "Commerce pro IT odborníky a\_vývojáře"
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Nastavení místního vývojové prostředí
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Rozšiřitelnost online kanálu
               items:
                 - name: Přehled rozšiřitelnosti online kanálu

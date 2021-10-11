@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametry, které optimalizace plánování nepoužívá'
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Plán dodávek
+                  href: master-planning/supply-schedule.md
                 - name: Použití filtrů na plán
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hlavní plánování s prognózou poptávky
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Zobrazení výstupní plánované mezipodnikové poptávky
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: "Čisté požadavky a\_informace o\_doložení u\_integrovaného hlavního plánování"
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognózování
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobilní pracovní prostor schvalování nákupních objednávek
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Vytvoření a fakturace mezipodnikové nákupní objednávky pro interní použití
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Zkontrolovat nesrovnalosti v cenách v mezipodnikových objednávkách
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Zaznamenání příjmu zboží na nákupní objednávce
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Vytvoření nákupní objednávky
               items:
                 - name: Ruční vytvoření nákupních objednávek
@@ -2725,15 +2729,71 @@
               items:
                 - name: Simulace ceny
                   href: sales-marketing/price-simulation.md
-                - name: Hromadné vytváření prodejních nabídek
+                - name: Hromadné vytvoření prodejních nabídek
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: "Vytváření a\_úpravy prodejních nabídek"
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Vratky
+            - name: Mezipodnikový obchod
+              items:
+                - name: Nastavení mezipodnikového obchodu
+                  items:
+                    - name: Nastavení mezipodnikového obchodu
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Mezipodnikové parametry
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Nastavení dodavatelů, zákazníků a položek pro mezipodnikový obchod'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Nastavení poplatků u mezipodnikových objednávek
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Nastavení parametrů pro účtování mezipodnikové objednávky
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Synchronizace mezipodnikových informací
+                  items:
+                    - name: Synchronizace mezipodnikových cen a slev
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Synchronizace mezipodnikových poplatků
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Synchronizace mezipodnikových zákaznických informací
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Synchronizace mezipodnikových dispozičních kódů
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Mezipodnikové prodejní objednávky a faktury
+                  items:
+                    - name: Vytvoření mezipodnikových nákupních a prodejních objednávek v několika podnicích
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Mezipodnikové objednávky a vratky
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Vytvoření mezipodnikové prodejní objednávky pro interní použití
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Vytvoření faktury a mezipodnikové prodejní objednávky pro externího zákazníka
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Mezipodnikové rezervace
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Změna nebo odstranění původní mezipodnikové prodejní objednávky
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Změna mezipodnikových objednávek
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Mezipodniková dávka a sériová čísla
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Mezipodnikové dodací listy
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Automatická registrace plateb pro faktury za mezipodnikové zákaznické faktury
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Mezipodnikové nákupní objednávky
+                  items:
+                    - name: Vytvoření a fakturace mezipodnikové nákupní objednávky pro interní použití
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Zkontrolovat nesrovnalosti v cenách v mezipodnikových objednávkách
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Mezipodnikové převody měny
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Mezipodnikové hlavní plánování
+                  href: sales-marketing/intercompany-master-scheduling.md
+            - name: Vrácení
               items:
                 - name: Prodejní vratky
                   href: warehousing/sales-returns.md
-            - name: Provize
+            - name: Komise
               items:
                 - name: Registrace prodejních provizí
                   href: sales-marketing/tasks/register-sales-commissions.md
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Nastavení a konfigurace modulu nákladů na doručení
               items:
+                - name: Zapnutí modulu nákladů na doručení pro váš systém
+                  href: landed-cost/landed-cost-enable.md
                 - name: Parametry nákladů za doručení
                   href: landed-cost/landed-cost-parameters.md
                 - name: Parametry zásobování a zdrojů nákladů na doručení
@@ -3185,11 +3247,13 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Prodlení výdeje zásob směrnice místa
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Ukotvení
+                      href: warehousing/anchoring.md
                     - name: Odchozí třídění
                       href: warehousing/outbound-sorting.md
                     - name: Umístění na zeď – umístění do obchodu
                       href: warehousing/put-to-wall-put-to-store.md
-                    - name: Vizualizace odchozího úlohy
+                    - name: Vizualizace odchozí úlohy
                       href: warehousing/outbound-workload-visualization.md
                 - name: Doplnění
                   items:
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Vyskladnění nejstarší dávky na mobilním zařízení
                       href: warehousing/pick-oldest-batch.md
+                - name: Globální parametry mobilního zařízení
+                  href: warehousing/mobile-device-parameters.md
                 - name: Uživatelská nastavení mobilního zařízení
                   href: warehousing/mobile-device-user-settings.md
                 - name: Zpracování události aplikace skladu

@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: "Správa smlouvy o\_licenčním poplatku"
               href: accounts-payable/royalty-contract.md
+            - name: Referenční původní faktury v dobropisech (faktury dodavatele)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: "Platby a\_vyrovnání"
               items:
                 - name: Centralizované platby pro Závazky
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Přehled snímků
                   href: finance-insights/payment-snapshots.md
+            - name: Časté dotazy k řešení potíží s Finance Insights
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: "Řízení projektů a\_účetnictví"
           items:
             - name: Přehled řízení a účetnictví projektu
@@ -1574,11 +1578,15 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Vykazování pro více registrací DPH
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Vykazování v Rakousku
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Vykazování pro Francii
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
-                        - name: Výkaznictví v Nizozemsku
+                        - name: Vykazování v Nizozemsku
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-nl-vat-declaration-netherlands.md
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Sestava Intrastats
+                - name: Rakouský Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Nákupní cla
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Přiznání k DPH
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrajn
               items:
                 - name: Bahrajn – přehled
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Čtvrtletní komunikační výkaz DPH
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Sestava černé listiny
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Datum kompetence a fiskální deník
                   href: localizations/emea-ita-competence-date.md
                 - name: Odpisování dlouhodobého majetku
@@ -3801,6 +3809,8 @@
           items:
             - name: Přehled elektronického výkaznictví
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Komponenty elektronického výkaznictví
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurace
               items:
                 - name: Vytvoření konfigurací
@@ -4509,11 +4519,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace globálního adresáře
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení adresy
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Často kladené dotazy o adresáři
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace adresářů
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
-            - name: Systém workflow
+            - name: Systém pracovního postupu
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/finance/toc.json

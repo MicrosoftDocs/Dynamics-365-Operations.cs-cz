@@ -5,6 +5,8 @@
       items:
         - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
           href: hr-admin-whats-new.md
+        - name: 20. září 2021
+          href: hr-whats-new-2021-09-20.md
         - name: 6. září 2021
           href: hr-whats-new-2021-09-06.md
         - name: 23. srpna 2021
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: Reset zablokovaných dávkových úloh
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Resetování synchronizace Dataverse
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analytické sestavy nejsou aktualizovány
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Nelze vytvořit prostředí v centru pro správu Power Apps
@@ -479,12 +483,18 @@
                   href: hr-admin-integration-payroll-api-leave-balance.md
                 - name: Typ pracovního volna
                   href: hr-admin-integration-payroll-api-leave-type.md
-                - name: "Žádost o\_pracovní volno"
+                - name: Žádost o pracovní volno
                   href: hr-admin-integration-payroll-api-leave-request.md
             - name: Entity související se zaměstnaneckými výhodami
               items:
                 - name: Plán zaměstnaneckých výhod pracovníka na výplatní listině
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Jiné entity
+              items:
+                - name: Historie jména osoby
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Míra konverze
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Sady možností
               items:
                 - name: Pohlaví
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurace globálního adresáře
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Nastavení adresy
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Často kladené dotazy o adresáři
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurace adresářů
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: Vykazování ACA
                   href: hr-benefits-management-aca-reports.md
+                - name: Výkaz zaměstnaneckých výhod
+                  href: hr-benefits-statement.md
             - name: Definování a správa programu zaměstnaneckých výhod
               href: hr-benefits-manage-program.md
             - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
