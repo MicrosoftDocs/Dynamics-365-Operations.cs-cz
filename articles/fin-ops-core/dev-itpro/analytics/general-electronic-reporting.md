@@ -2,7 +2,7 @@
 title: Přehled elektronického výkaznictví
 description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví. Popisuje klíčové koncepty, podporované scénáře a formáty, které jsou součástí řešení.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9bb0b427f4fe30ab95efabf8ab9871b681e35d51c0fbaf5a162235640d2f376
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723158"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562169"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -50,7 +50,14 @@ Modul EV má následující možnosti:
 
 ### <a name="components"></a>Komponenty
 
-EV podporuje dva typy komponentů: **Datový model** a **Formát**.
+Elektronické výkaznictví podporuje následující typy komponent:
+
+- Datový model
+- Mapování modelu
+- Formát
+- Metadata
+
+Další informace získáte v tématu [Komponenty elektronického výkaznictví](er-overview-components.md).
 
 #### <a name="data-model-and-model-mapping-components"></a>Součásti datového modelu a mapování modelu
 

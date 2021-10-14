@@ -2,7 +2,7 @@
 title: Zobrazení a aktualizace dat entity v aplikaci Excel
 description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761347"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592658"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
@@ -60,9 +60,9 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 
 6. Zvolte **OK** a potom zvolením **Ano** potvrďte změnu. Doplněk aplikace Excel se restartuje a načte metadata.
 
-    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části e [Poradce při potížích](../office-integration/use-excel-add-in.md#troubleshooting) tohoto tématu.
+    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel odkaz **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace o řešení tohoto problému naleznete v tématu [Načíst aplety](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane), věnovaném řešení problémů.
 
-7. Zvolte **Návrh**. Doplněk aplikace Excel načte metadata entity.
+7. Vyberte **Návrh**. Doplněk aplikace Excel načte metadata entity.
 8. Zvolte **Přidat tabulku**. Zobrazí se seznam entit. Entity jsou uvedeny ve formátu "Název – popisek".
 9. Vyberte entitu v seznamu, jako například **Zákazník - zákazníci** a potom zvolte **Další**.
 10. Chcete-li přidat pole ze seznamu **Dostupná pole** do seznamu **Vybraná pole**, zvolte pole a potom zvolte **Přidat**. Případně dvakrát klikněte na pole v seznamu **Dostupná pole**.
@@ -136,7 +136,7 @@ Data načtená do sešitu z jednoho prostředí lze zkopírovat do jiného prost
 ## <a name="troubleshooting"></a>Řešení potíží
 Existuje několik problémů, které lze vyřešit pomocí některé jednoduchých kroků.
 
-- **Je zobrazeno tlačítko Načíst aplety** – Pokud má doplněk aplikace Excel po přihlášení tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
+- **Tlačítko „Načíst aplety“ se zobrazuje** – Další informace o řešení tohoto problému naleznete v tématu [Načíst aplety](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane), věnovaném řešení problémů. 
 - **Dostanete zprávu "Zakázáno"** – Pokud se při načítání metadat doplňkem aplikace Excel zobrazí zpráva "Zakázáno", účet, který je přihlášení k doplňku aplikace Excel, nemá oprávnění používat cílené služby, instance nebo databázi. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **V aplikaci Excel se zobrazí prázdná webová stránka** – Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](/deployoffice/overview-office-deployment-tool) pro [přesunutí z vyřazeného kanálu do stávajícího](/deployoffice/overview-update-channels).
 - **Při publikování změn dat obdržíte časový limit** - Pokud obdržíte zprávy o vypršení časového limitu, když se pokoušíte publikovat změny dat v entitě, zvažte zmenšení velikosti dávky publikování pro ovlivněný sešit. Entity, které aktivují větší množství logiky při změnách záznamu, mohou vyžadovat zasílání aktualizací v menších dávkách, aby se zabránilo vypršení časového limitu.

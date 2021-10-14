@@ -1,7 +1,7 @@
 ---
 title: Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752675"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568368"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 
@@ -245,31 +245,31 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 Filtr: (msdyn_systemstatus ne 690970005) a (msdyn_systemstatus ne 690970000) a (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mapování šablony v integraci dat.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004)
 
-[![Mapování šablony v integraci dat.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004))
 
-[![Mapování šablony v integraci dat.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004) a (msdyn_allocated eq true)
 
-[![Mapování šablony v integraci dat.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004) nebo (msdyn_allocated ne true))
 
-[![Mapování šablony v integraci dat.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,22 +1,22 @@
 ---
 title: Zapečetěné nabídky pro požadavky na nabídku
 description: Toto téma popisuje, jak nastavit zapečetěné nabídky tak, aby byly odpovědi dodavatelů na nabídky utajeny, dokud nebudou odpečetěny pracovníky nákupu.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500627"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578073"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Zapečetěné nabídky pro požadavky na nabídku
 
@@ -53,7 +53,11 @@ Než začnete tuto funkci nastavovat nebo používat, musíte se ujistit, že je
 Supply Chain Management používá šifrovací klíče k ochraně všech zapečetěných nabídek a jejich utajení až do příslušné doby. Využívá schopností trezoru klíčů generovat a udržovat požadované klíče. Chcete-li aktivovat tento systém, musíte proto nastavit připojení ze Supply Chain Management k trezoru klíčů.
 
 > [!IMPORTANT]
-> Trezor klíčů musí být vytvořen v předplatném Azure, které je ve vlastnictví vaší organizace (nikoli v předplatném, kde používáte Supply Chain Management).
+> Trezory klíčů, které používáte pro zapečetěné nabídky, musejí splňovat následující požadavky:
+>
+> - Pokud používáte sandbox pro vývoj a testování, musíte mít jeden vyhrazený trezor klíčů pro sandbox a samostatný trezor pro produkční prostředí.
+> - Každý trezor klíčů musí být vytvořen v předplatném Azure, které je ve vlastnictví vaší organizace (nikoli v předplatném, kde používáte Supply Chain Management).
+> - Každý trezor klíčů musí být použit výhradně pro zapečetěné nabídky. Trezory klíčů se zapečetěnými nabídkami nesmíte používat k žádnému jinému účelu.
 
 Každá nabídka načte svůj vlastní tajný klíč. Tento klíč se používá pokaždé, když uživatel nabídku zobrazí, aktualizuje nebo ji odpečetí.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386431"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595030"
 ---
 # <a name="improve-the-prediction-model"></a>Vylepšit model předpovědi
 
@@ -75,6 +75,6 @@ Následující pole by pro cvičení nemělo být vybráno:
 
 Faktury, které se používají ke trénování, můžete filtrovat nastavením kritérií filtru pro pole na faktuře nebo v tabulkách zákazníků. Můžete například nastavit prahovou hodnotu tak, aby zahrnovala pouze faktury, jejichž součet se rovná určité částce nebo ji překračuje. Alternativně můžete vyloučit faktury spojené se zákazníky v konkrétní skupině zákazníků.
 
-Další informace o filtrování dat najdete v části [Vytvoření predikčního modelu](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Další informace o filtrování dat najdete v části [Vytvoření predikčního modelu](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

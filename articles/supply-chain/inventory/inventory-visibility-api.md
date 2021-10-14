@@ -2,7 +2,7 @@
 title: Veřejná rozhraní API Viditelnosti zásob
 description: Toto téma popisuje veřejná API, která jsou poskytována doplňkem Viditelnost zásob.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474645"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592481"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejná rozhraní API Viditelnosti zásob
 
@@ -82,6 +82,8 @@ Společnost Microsoft vytvořila uživatelské rozhraní (UI) v Power Apps, abys
 
 Token zabezpečení platformy se používá k volání veřejného API Viditelnosti zásob. Proto musíte _token Azure Active Directory (Azure AD)_ vygenerovat pomocí vaší aplikace Azure AD. Poté musíte token Azure AD použít k získání _přístupového tokenu_ od služby zabezpečení.
 
+Společnost Microsoft poskytuje integrovanou kolekci pro získání tokenů *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+
 Chcete-li získat token služby zabezpečení, postupujte takto:
 
 1. Přihlaste se na portál Azure a použijte jej k vyhledání hodnot `clientId` a `clientSecret` pro vaši aplikaci Dynamics 365 Supply Chain Management.
@@ -131,7 +133,7 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
    - Hodnota `context` musí být ID prostředí LCS, do kterého chcete doplněk nasadit.
    - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
 
-1. Odešlete požadavek HTTP s následujícími vlastnostmi:
+1. Načtěte přístupový token (`access_token`) odesláním požadavku HTTP s následujícími vlastnostmi:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Metoda:** `POST`
@@ -148,7 +150,8 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
    }
    ```
 
-V dalších částech použijete `$access_token` jako token, který byl načten v posledním kroku.
+> [!IMPORTANT]
+> Když použijete kolekci požadavků *Postman* k volání veřejných rozhraní API viditelnosti zásob, musíte pro každý požadavek přidat token nositele. Token nositele najdete takto: vyberte kartu **Autorizace** pod adresou URL požadavku, vyberte typ **Token nositele** a zkopírujte přístupový token, který byl načten v posledním kroku. V dalších částech tohoto tématu použijete `$access_token` jako token, který byl načten v posledním kroku.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Vytvoření událostí změn ve skladu
 
@@ -508,7 +511,7 @@ V těle této žádosti, `dimensionDataSource` je stále volitelný parametr. Po
 
 - `organizationId` by měl obsahovat pouze jednu hodnotu, ale stále je to pole.
 - `productId` může obsahovat jednu nebo více hodnot. Pokud je prázdné pole, budou vráceny všechny produkty.
-- `siteId` a `locationId` se ve viditelnosti skladu používají k dělení.
+- `siteId` a `locationId` se ve viditelnosti skladu používají k dělení. V požadavku *Dotaz na zásoby na skladě* můžete zadat více než jednu hodnotu `siteId` a `locationId`. V aktuálním vydání musíte zadat obě hodnoty `siteId` i `locationId`.
 
 Parametr `groupByValues` by se měl řídit vaší konfigurací pro indexování. Další informace najdete v tématu [Konfigurace hierarchie indexu produktů](./inventory-visibility-configuration.md#index-configuration).
 

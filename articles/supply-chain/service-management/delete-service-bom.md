@@ -1,7 +1,7 @@
 ---
 title: Odstranění servisního kusovníku
-description: Servisní zakázka představuje návštěvu servisního technika u zákazníka ve stanovený den.
-author: ShylaThompson
+description: Toto téma obsahuje proceduru ukazující odstranění servisního kusovníku.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,29 +15,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77b4b26e74979a1d603b8e6537603203a2e1f03ec45818aada4f78eb1b4136d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0b1ea4bd8c035db39763b3c1da9ccfc14030c24
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764709"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569064"
 ---
-# <a name="delete-a-service-bom"></a>Odstranění servisního kusovníku 
+# <a name="delete-a-service-bom"></a>Odstranění servisního kusovníku
 
 [!include [banner](../includes/banner.md)]
 
-
-1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).
-
-2.  V **podokně akcí** klikněte na položku **předměty servisu**.
-
-3.  Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník. Klepněte na tlačítko **funkce** a poté vyberte **odstranit servisní Kusovník**.
-
-4.  Klepněte na tlačítko **Ano**.
+1. Přejděte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**. Vyberte servisní smlouvu, ze které chcete odstranit servisní kusovník (BOM).
+1. V **podokně akcí** vyberte **Předměty servisu**.
+1. Ve formuláři **předměty servisu** vyberte předmět servisu, ze kterého chcete odstranit servisní kusovník. Vyberte **Funkce** a poté vyberte **Odstranit servisní kusovník**.
+1. Vyberte **Ano**.
 
 
 > [!NOTE]
-> <P>Pokud jste nepoužili kusovník šablon, lze servisní kusovník odstranit z formuláře <STRONG>Kusovníky šablony</STRONG>. Pokud jste pro servisní kusovník šablonu použili, nebude možné jej tímto způsobem odstranit.</P>
+> Pokud jste nepoužili kusovník šablon, lze servisní kusovník odstranit na stránce **Kusovníky šablony**. Pokud jste pro servisní kusovník šablonu použili, nebude možné jej tímto způsobem odstranit.
 
 
 

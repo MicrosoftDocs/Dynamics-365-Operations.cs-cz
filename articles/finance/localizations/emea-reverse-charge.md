@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9996b4d6ab84070cc3e9863a454c4fd8ed14091490273cde0eec1ea2bc508fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756219"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594712"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 
@@ -45,7 +45,6 @@ Abyste mohli mechanismus reverse charge použít, je třeba provést následují
 Doporučujeme používat pro nákupní a prodejní operace samostatné kódy DPH.
 
 <table>
-<body>
 <tr>
 <td><strong>Kód DPH u prodeje</strong></td>
 <td>Vytvořte kód daně z prodeje pro operace prodeje zpětného účtování (<strong>Daň</strong> &gt; <strong>Nepřímé daně</strong> &gt; <strong>Daň z prodeje</strong> &gt; <strong>Kódy daně z prodeje</strong>).
@@ -62,7 +61,6 @@ Skupině DPH položek je třeba přiřadit tento záporný kód DPH a pak při�
 <p>Další informace najdete v následující části &quot;Nastavení skupin DPH a skupin DPH položek.&quot;</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Nastavení skupin DPH a skupin DPH položky

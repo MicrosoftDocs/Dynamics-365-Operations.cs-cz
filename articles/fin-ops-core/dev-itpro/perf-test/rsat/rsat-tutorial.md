@@ -1,24 +1,21 @@
 ---
 title: Kurz pro nástroj Regression Suite Automation Tool
 description: Toto téma ukazuje, jak používat Regression Suite Automation Tool (RSAT). Popisuje různé funkce a poskytuje příklady, které používají pokročilé skriptování.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 21761
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714542"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556758"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Kurz pro nástroj Regression Suite Automation Tool
 
@@ -82,13 +79,19 @@ Po spuštění testovacího případu se zpráva v souboru parametrů aplikace E
 
 Tato funkce pořídí snímky obrazovek kroků, které byly provedeny při záznamu úloh. Je užitečný pro účely auditu nebo ladění.
 
-- Chcete-li použít tuto funkci, otevřete soubor **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu následujícího prvku z **false** na **true**.
+- Chcete-li použít tuto funkci v době, kdy je spuštěno RSAT s uživatelským rozhraním, otevřete soubor **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu v následujícím prvku z **false** na **true**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Když spustíte testovací případ, RSAT bude generovat snímky (obrázky) kroků ve složce přehrávání v testovacích případech v pracovním adresáři. Používáte-li starší verzi nástroje RSAT, jsou obrázky uloženy do **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** a pro každý spuštěný testovací případ je vytvořena samostatná složka.
+- Chcete-li použít tuto funkci v době, kdy je spuštěno RSAT prostřednictvím příkazového řádku (například Azure DevOps), otevřete soubor **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** v instalační složce sady RSAT (například **C:\\Program Files (x86)\\Regression Suite Automation Tool**) a změňte hodnotu v následujícím prvku z **false** na **true**.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Když spustíte testovací případy, RSAT generuje snímky (obrázky) kroků a uloží je ve složce přehrávání v testovacích případech v pracovním adresáři. Ve složce pro přehrávání je vytvořena samostatná podsložka s názvem **StepSnapshots**. Tato složka obsahuje snímky pro spuštěné testovací případy.
 
 ## <a name="assignment"></a>Přiřazení
 
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 V následujícím příkladu je pomocí volání OData (Open Data Protocol) nalezen stav nákupní objednávky. Pokud není stav **fakturován**, můžete například volat testovací případ RSAT, který zaúčtuje fakturu.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

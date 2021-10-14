@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472218"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563054"
 ---
 # <a name="customer-management-in-stores"></a>Správa zákazníků v obchodech
 
@@ -45,7 +45,8 @@ Prodejní spolupracovníci mohou pro zákazníka zachytit více adres. Jméno a 
 
 ## <a name="sync-customers-and-async-customers"></a>Synchronní zákazníci a asynchronní zákazníci
 
-> [Důležité] Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto bez ohledu na váš výběr mezi synchronním a asynchronním vytvářením zákazníků musí správci centrály Commerce vytvořit a naplánovat opakující se dávkovou úlohu pro **P-práci**, úlohy **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** dříve nazvanou **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu**) a úlohu **1010**, aby byli všichni asynchronní zákazníci převedeni na synchronní zákazníky v centrále Commerce.
+> [!IMPORTANT]
+> Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto bez ohledu na váš výběr mezi synchronním a asynchronním vytvářením zákazníků musí správci centrály Commerce vytvořit a naplánovat opakující se dávkovou úlohu pro **P-práci**, úlohy **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** (dříve nazvanou **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu**) a úlohu **1010**, aby byli všichni asynchronní zákazníci převedeni na synchronní zákazníky v centrále Commerce.
 
 V Commerce existují dva režimy vytváření zákazníků: Synchronní (nebo Sync) a Asynchronní (nebo Async). Ve výchozím nastavení jsou zákazníci vytvářeni synchronně. Jinými slovy jsou vytvářeni v ústředí Commerce v reálném čase. Režim vytváření zákazníků Sync je výhodný, protože noví zákazníci jsou okamžitě prohledatelní napříč kanály. Má to však také nevýhodu. Protože to generuje volání [Commerce Data Exchange: služba v reálném čase](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) volání do centrály Commerce, výkon může být ovlivněn, pokud se uskuteční mnoho souběžných volání vytváření zákazníků.
 

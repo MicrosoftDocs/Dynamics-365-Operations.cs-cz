@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414577"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559454"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
 
@@ -64,7 +64,6 @@ Zapnutí integrace mezd má dva primární efekty:
 
 > [!NOTE]
 > Datový balík převedený na koncový bod SFTP je šifrován pomocí klíče, který je pro daný balík jedinečný. Klíč je v úložišti klíčů Azure, který je přístupný pouze společnosti Ceridian. Není možné dešifrovat a prověřit obsah balíčku dat. Potřebujete-li zkontrolovat obsah balíčku dat, je třeba exportovat datový projekt integrace mezd ručně, stáhnout jej a poté jej otevřít. Ruční export nebude používat šifrování nebo nepřenese balíček.
-> Pro případy, kdy jsou integrační soubory odesílány z prostředí Dynamics 365 Human Resources UAT nebo Sandbox do testovacího prostředí Ceridian Dayforce můžete použít následující adresu URL trezoru klíčů: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurace vašich dat 
 

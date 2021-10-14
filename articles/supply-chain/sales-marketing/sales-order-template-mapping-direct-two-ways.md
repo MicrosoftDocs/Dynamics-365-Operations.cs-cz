@@ -1,7 +1,7 @@
 ---
 title: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management
 description: Toto téma se věnuje šablonám a základním úlohám, které se používají ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Dynamics 365 Sales a Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9e95ba361bddf4e43b205fe580bb6f4a91dd88248a0c059ad65e66ef07de83c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad23190433b2843ec5063b5fa5b30351fcd86390
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753221"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566424"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management
 
@@ -189,19 +189,19 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Prodejní objednávky (Supply Chain Management do Sales): OrderHeader
 
-[![Mapování šablony v integraci dat.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Mapování šablon v integraci dat, Prodejní objednávky (Supply Chain Management do Sales) - Přímo: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Prodejní objednávky (Supply Chain Management do Sales): OrderLine
 
-[![Mapování šablony v integraci dat.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Mapování šablon v integraci dat, Prodejní objednávky (Supply Chain Management do Sales) - Přímo: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Prodejní objednávky (Sales do Supply Chain Management): OrderHeader
 
-[![Mapování šablony v integraci dat.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Mapování šablon v integraci dat, Prodejní objednávky (Sales do Supply Chain Management) - Přímo: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Prodejní objednávky (Sales do Supply Chain Management) - přímé: OrderLine
 
-[![Mapování šablony v integraci dat.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Mapování šablon v integraci dat, Prodejní objednávky (Sales do Supply Chain Management) - Přímo: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Související témata
 

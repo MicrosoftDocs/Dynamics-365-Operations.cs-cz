@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05e9d6441cf99dce3f4663b9d5ba57e2b386e8c2f3060f75550270083f3b98b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76131b6cc7ee58d4a095da4ac56cd97124e42587
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741446"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559355"
 ---
 # <a name="payroll-position"></a>Pozice mzdy
 
@@ -32,22 +32,29 @@ Fyzický název: mshr_payrollpositionentity.
 
 Tato entita poskytuje informace týkající se pozice pro daného zaměstnance.
 
-Fyzický název: 
+Fyzický název: mshr_payrollpositionentity.
 
 ## <a name="properties"></a>Vlastnosti
 
-| Vlastnost<br>**Fyzický název**<br>**_Typ_** | Použít | popis |
+| Vlastnost</br>**Fyzický název**</br>**_Typ_** | Použít | Popis |
 | --- | --- | --- |
-| **Roční normální hodiny**<br>annualregularhours<br>*Des. místo* | Jen pro čtení<br>Povinná | Roční řádné hodiny definované na pozici.  |
-| **ID entity detailů pozice na výplatní listině**<br>payrollpositiondetailsentityid<br>*Guid* | Povinná<br>Generováno systémem. | Systémem generovaná hodnota GUID pro jedinečnou identifikaci pozice.  |
-| **Primární pole**<br>mshr_primaryfield<br>*Řetězec* | Povinná<br>Generováno systémem |  |
-| **Hodnota ID pracovní pozice**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Jen pro čtení<br>Povinná<br>Cizí klíč: mshr_PayrollPositionJobEntity mshr_payrollpositionjobentity |ID práce přidružené k pozici.|
-| **Hodnota ID pevného plánu kompenzace**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Jen pro čtení<br>Povinná<br>Cizí klíč: mshr_FixedCompPlan_id z mshr_payrollfixedcompensationplanentity  | ID plánu pevné kompenzace přidruženého k pozici. |
-| **ID platebního cyklu**<br>mshr_primaryfield<br>*Řetězec* | Jen pro čtení<br>Povinná | Platební cyklus definovaný na pozici. |
-| **Placené právnickou osobu**<br>paidbylegalentity<br>*Řetězec* | Jen pro čtení<br>Povinná | Právnická osoba definovaná na pozici odpovědné za vystavení platby. |
-| **ID pozice**<br>mshr_positionid<br>*Řetězec* | Jen pro čtení<br>Povinná | Identifikace pozice. |
-| **Platné do**<br>validto<br>*Posun data a času* | Jen pro čtení<br>Povinná |Datum, od kterého jsou údaje o poloze platné.  |
-| **Platné od**<br>validfrom<br>*Posun data a času* | Jen pro čtení<br>Povinná |Datum, do kterého jsou údaje o poloze platné.  |
+| **ID pozice**</br>mshr_positionid</br>*Řetězec* | Jen pro čtení | Identifikace pozice. |
+| **ID platebního cyklu**</br>mshr_paycycleid</br>*Řetězec* | Jen pro čtení | Platební cyklus definovaný na pozici. |
+| **Roční normální hodiny**</br>annualregularhours</br>*Desetinné* | Jen pro čtení | Roční řádné hodiny definované na pozici. |
+| **Placené právnickou osobu**</br>paidbylegalentity</br>*Řetězec* | Jen pro čtení | Právnická osoba definovaná na pozici a odpovědná za vystavení platby. |
+| **Platné do**</br>validto</br>*Posun data a času* | Jen pro čtení | Datum, do kterého jsou údaje o poloze platné. |
+| **Platné od**</br>validfrom</br>*Posun data a času* | Jen pro čtení | Datum, od kterého jsou údaje o poloze platné. |
+| **Primární pole**</br>mshr_primaryfield</br>*Řetězec* | Generováno systémem | Primární pole. |
+| **ID entity detailů pozice na výplatní listině**</br>payrollpositiondetailsentityid</br>*Guid* | Požadováno</br>Generováno systémem. | Systémem generovaná hodnota globálně jedinečného identifikátoru (GUID) pro jedinečnou identifikaci pozice. |
+
+## <a name="relations"></a>Vztahy
+
+| Hodnota vlastnosti | Související entita | Navigační vlastnost | Typ kolekce |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_PayrollPosition |
+| _mshr_fk_hcmpositionhierarchy_id_value | mshr_hcmpositionhierarchyentity | mshr_FK_HcmPositionHierarchy_id | Nelze použít |
+| _mshr_fk_job_id_value | mshr_payrollpositionjobentity | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_Payroll |
+| _mshr_fk_positionassignmentv2_id_value | mshr_hcmpositionworkerassignmentv2entity | mshr_FK_PositionAssignmentV2_id | Nelze použít |
 
 ## <a name="example-query"></a>Ukázkový dotaz
 

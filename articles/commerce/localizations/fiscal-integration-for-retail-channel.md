@@ -3,7 +3,7 @@ title: Přehled fiskální integrace pro kanály Commerce
 description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343280"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512573"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
@@ -141,6 +141,7 @@ Následující ukázky fiskální integrace jsou v současné době k dispozici 
 - [Ukázka integrace fiskální služby pro Českou republiku](./emea-cze-fi-sample.md)
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Německo](./emea-deu-fi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Rusko](./rus-fpi-sample.md)
 
 Následující funkce fiskální integrace je také implementována pomocí rámce fiskální integrace, ale je k dispozici ihned a není součástí Commerce SDK:
 
