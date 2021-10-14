@@ -1,7 +1,7 @@
 ---
 title: Nebyla nalezena dostatečná kapacita.
 description: Toto téma poskytuje odkaz, který vám pomůže řešit „Výrobní zakázku %1 nebylo možné naplánovat. Chyba modulu plánování „Nebyla nalezena dostatečná kapacita“
-author: crytt
+author: ChristianRytt
 ms.date: 7/29/2021
 ms.topic: article
 ms.search.form: ProdTable
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a67cdef07a8aa93e78049786f49d3714d189cf2
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: eb494cab08453a548a0ac862cbe89dfd9f17fbcd
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428913"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574754"
 ---
 # <a name="not-enough-capacity-could-be-found"></a>Nebyla nalezena dostatečná kapacita.
 

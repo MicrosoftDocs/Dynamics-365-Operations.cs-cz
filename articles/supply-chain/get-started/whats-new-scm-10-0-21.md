@@ -4,18 +4,18 @@ description: Toto téma popisuje funkce, které jsou nové nebo se změnily v a
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500548"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579729"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -26,20 +26,6 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 - **Preview verze:** Srpen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Září 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Říjen 2021
-
-## <a name="known-deployment-issue"></a>Známý problém s nasazením
-
-Při nasazení verze 10.0.21 na IaaS můžete obdržet následující upozornění nasazení:
-
-**Kód upozornění:** 95017
-
-**Zpráva s upozorněním:** Neúspěšné spuštění skriptu VM \[SetupDiagnostics\]
-
-Nasazení bude fungovat i přes varování. Ve službě Lifecycle Services (LCS) však mohou nastat následující známé problémy:
-
-- Na stránce **Sledování prostředí** se nezobrazí odkaz **Zobrazit podrobné informace o verzi**, takže neuvidíte konkrétní verze modulů nainstalovaných ve vašem prostředí. Bez těchto dat by následné opravy hotfix mohly selhat, protože proces, který používá opravy hotfix, používá tato data k ověření, že jsou splněny požadavky na verzi modulu. Protože sestavení PEAP/Preview není možné použít ve výrobě nebo v něm použít opravy hotfix, měl by být dopad minimální.
-- Karty **Měření výkonu** a **Analýza indexu** ve stránce **Sledování prostředí** nezobrazí v části SQL Insights žádná data. Všechny ostatní funkce **Sledování prostředí** budou fungovat podle očekávání.
-- Stránka **plná diagnostika systému** nebude přístupná. Přidružená data o stavu nočních běhů kolektorů dat a problémech zjištěných jeho pravidly se také nezobrazí.
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 

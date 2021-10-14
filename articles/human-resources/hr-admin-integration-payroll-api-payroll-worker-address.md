@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761967"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559502"
 ---
 # <a name="payroll-worker-address"></a>Adresa pracovníka na výplatní listině
 
@@ -34,22 +34,28 @@ Tato entita poskytuje místo bydliště a místo práce mzdy pro daného zaměst
 
 ## <a name="properties"></a>Vlastnosti
 
-| Vlastnost</br>**Fyzický název**</br>**_Typ_** | Použít | popis |
+| Vlastnost</br>**Fyzický název**</br>**_Typ_** | Použít | Popis |
 | --- | --- | --- |
-| **Město**</br>mshr_city</br>*Řetězec* | Jen pro čtení</br>Povinná | Město definované pro adresu.   |
-| **Číslo pracovníka**</br>mshr_personnelnumber</br>*Řetězec* | Jen pro čtení</br>Povinná | Jedinečné osobní číslo zaměstnance.  |
-| **Oblast země**</br>mshr_countryregionid</br>*Řetězec* | Jen pro čtení</br>Povinná | Oblast země definovaná pro adresu.  |
-| **Platné od**</br>mshr_postaladdressvalidfrom</br>*Posun data a času* | Jen pro čtení </br>Povinná | Datum, odkdy je adresa platná. |
-| **Pracoval(a) na adrese** </br> mshr_isworkedinaddressbr </br>*[Nastavená možnost mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Jen pro čtení</br>Povinná | Označuje, zda je adresa tam, kde zaměstnanec pracuje. |
-| **Okres**</br>mshr_county</br>*Řetězec* | Jen pro čtení</br>Povinná | Kraj definovaný pro adresu.  |
-| **ID adresy pracovníka na výplatní listině**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Povinná</br>Generováno systémem | Systémem generovaná hodnota GUID pro jedinečnou identifikaci adresy.  |
-| **Primární pole**</br>mshr_primaryfield</br>*Řetězec* | Jen pro čtení</br>Povinná |  |
-| **Ulice**</br>mshr_street</br>*Řetězec* | Jen pro čtení</br>Povinná | Ulice definovaná pro adresu. |
-| **Platné do**</br>mshr_postaladdressvalidto</br>*Posun data a času* | Jen pro čtení </br>Povinná | Datum, dokdy je adresa platná.  |
-| **ID umístění**</br>mshr_locationidbr>*Řetězec* | Jen pro čtení <br>Povinná | ID adresy.  |
-| **PSČ**</br>mshr_zipcode<br>*Řetězec* | Jen pro čtení <br>Povinná |Identifikační číslo definované pro zaměstnance.  |
-| **Bydlel(a) na adrese**</br>mshr_islivedinaddressbr </br> *[Nastavená možnost mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Jen pro čtení</br>Povinná | Označuje, zda je adresa tam, kde zaměstnanec bydlí. |
-| **Kraj**</br>mshr_state</br>*Řetězec* | Jen pro čtení</br>Povinná | Stát definovaná pro adresu.  |
+| **Číslo pracovníka**</br>mshr_personnelnumber</br>*Řetězec* | Jen pro čtení | Jedinečné osobní číslo zaměstnance. |
+| **ID umístění**</br>mshr_locationidbr>*Řetězec* | Jen pro čtení | ID adresy. |
+| **Bydlel(a) na adrese**</br>mshr_islivedinaddressbr </br> *[Nastavená možnost mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Jen pro čtení | Hodnota, která udává, zda je adresa místem, kde zaměstnanec žije. |
+| **Pracoval(a) na adrese** </br> mshr_isworkedinaddressbr </br>*[Nastavená možnost mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Jen pro čtení | Hodnota, která udává, zda je adresa místem, kde zaměstnanec pracuje. |
+| **Oblast země**</br>mshr_countryregionid</br>*Řetězec* | Jen pro čtení</br>Požadováno | Země nebo oblast definovaná pro adresu. |
+| **PSČ**</br>mshr_zipcode<br>*Řetězec* | Jen pro čtení | Identifikační číslo definované pro zaměstnance. |
+| **Ulice**</br>mshr_street</br>*Řetězec* | Jen pro čtení | Ulice definovaná pro adresu. |
+| **Město**</br>mshr_city</br>*Řetězec* | Jen pro čtení | Město definované pro adresu. |
+| **Kraj**</br>mshr_state</br>*Řetězec* | Jen pro čtení | Stát nebo provincie definovaná pro adresu. |
+| **Okres**</br>mshr_county</br>*Řetězec* | Jen pro čtení | Okres definovaný pro adresu. |
+| **Platné od**</br>mshr_postaladdressvalidfrom</br>*Posun data a času* | Jen pro čtení | Datum, odkdy je adresa platná. |
+| **Platné do**</br>mshr_postaladdressvalidto</br>*Posun data a času* | Jen pro čtení | Datum, dokdy je adresa platná. |
+| **Primární pole**</br>mshr_primaryfield</br>*Řetězec* | Jen pro čtení | Primární pole. |
+| **ID adresy pracovníka na výplatní listině**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Generováno systémem | Systémem generovaná hodnota globálně jedinečného identifikátoru (GUID) pro jedinečnou identifikaci adresy. |
+
+## <a name="relations"></a>Vztahy
+
+| Hodnota vlastnosti | Související entita | Navigační vlastnost | Typ kolekce |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Ukázkový dotaz
 

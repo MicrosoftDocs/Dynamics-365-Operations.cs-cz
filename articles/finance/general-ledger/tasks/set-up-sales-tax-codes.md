@@ -2,7 +2,7 @@
 title: Nastavit kódy DPH
 description: Toto téma vysvětluje, jak nastavit kódy DPH v aplikaci Dynamics 365 Finance.
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 09/27/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5ce2c8d9a117871191dd1c2d32d822bcc72d76fabaec146d9b8c27fc85dc058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719191"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562095"
 ---
 # <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
 
@@ -38,11 +38,19 @@ Tento úkol využívá ukázkovou společnost USMF.
 8. V **Podokně akcí** v horní části rozhraní vyberte **Kód DPH**.
 9. Vyberte **Hodnoty**.
 10. Zadejte hodnotu tohoto daňového kódu do sloupce **hodnota**.
-    - Pokud je vybrána možnost Částka za jednotku, hodnota na pevné záložce **Výpočet** v poli Zdroj se vynásobí množstvím v transakci a vypočítá se částka DPH.  Pokud kód daně není daní na základě jednotky, hodnota je procentuální a použije se pro Původ pro tento kód daně k výpočtu částky DPH.     
-11. Zvolte **Uložit**.
+
+    Pokud je vybrána hodnota **Částka za jednotku** v poli **Původ** na pevné **Výpočet**, vynásobí se množstvím v transakci a vypočítá se částka DPH.  Pokud kód daně není daní na základě jednotky, hodnota je procentuální a použije se pro Původ pro tento kód daně k výpočtu částky DPH.     
+
+11. Zvolte možnost **Uložit**.
 12. Zavřete stránku.
-13. Zvolte **Uložit**.
+13. Zvolte možnost **Uložit**.
 
+Počínaje verzí 10.0.22 aplikace Microsoft Dynamics 365 Finance platí toto: pokud používáte [Daňovou službu](../../localizations/global-tax-calcuation-service-overview.md) a funkce [**Podporovat více DIČ**](../../localizations/emea-multiple-vat-registration-numbers.md) je povolena v pracovním prostoru **Správa funkcí**, můžete pole **Typ daně** použít k zadání typu daňového kódu. K dispozici jsou následující hodnoty:
 
+- Standardní DPH
+- Snížená DPH
+- DPH 0 %
+- Spotřební daň
+- Jiné
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

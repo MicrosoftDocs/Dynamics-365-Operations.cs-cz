@@ -1,7 +1,7 @@
 ---
 title: Integrace Dynamics 365 Supply Chain Management (správa majetku) s Dynamics 365 Guides
 description: Toto téma vysvětluje, jak integrovat modul správy majetku do produktu Microsoft Dynamics 365 Supply Chain Management s Dynamics 365 Guides, aby bylo možné využít příručky smíšené reality ve vašich každodenních pracovních a servisních pracovních postupech.
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 94d98aa011d0db3991c14596f5d6bdecc0fb6c831915ae124f623fa57277fcfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721528"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568248"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrace Dynamics 365 Supply Chain Management (správa majetku) s Dynamics 365 Guides
+
+[!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak integrovat modul **Správa majetku** do produktu Microsoft Dynamics 365 Supply Chain Management s Dynamics 365 Guides, aby bylo možné využít příručky smíšené reality ve vašich každodenních pracovních a servisních pracovních postupech. Pokud je průvodce přiřazen k pracovnímu příkazu Správa majetku, pracovník, který otevře kontrolní seznam údržby objednávky v mobilní aplikaci Supply Chain Management (Dynamics 365), uvidí, že je průvodce k dispozici. Pracovník pak může průvodce najít a otevřít v aplikaci Dynamics 365 Guides HoloLens.
 

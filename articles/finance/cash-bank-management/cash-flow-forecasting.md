@@ -1,8 +1,8 @@
 ---
 title: Prognóza cashflow
 description: Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779439"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547948"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
@@ -83,7 +83,10 @@ Můžete přepsat výchozí nastavení pro pole **Účet likvidity** pro konkré
 
 ### <a name="budgeting"></a>Rozpočtování
 
-V prognózách cashflow je možné zahrnout rozpočty, které jsou vytvořeny z rozpočtových modelů. Na kartě **Rozpočtování** stránky **Nastavení prognózy cashflow** vyberte rozpočtové modely, které mají být zahrnuty do prognózy. Ve výchozím nastavení jsou nové položky registru rozpočtu zahrnuty do prognóz poté, co byl povolen rozpočtový model pro prognózu cashflow. Zahrnutí do prognózy cashflow lze u jednotlivých položek registru rozpočtu přepsat.
+V prognózách cashflow je možné zahrnout rozpočty, které jsou vytvořeny z rozpočtových modelů. Ve stránce **Nastavení prognózy cashflow** vyberte na kartě **Rozpočtování** rozpočtové modely, které mají být zahrnuty do prognózy. Ve výchozím nastavení jsou nové položky registru rozpočtu zahrnuty do prognóz poté, co byl povolen rozpočtový model pro prognózu cashflow.
+
+Položky registru rozpočtu lze do prognózy cashflow zahrnout individuálně prostřednictvím personalizace. Když přidáte sloupec „Zahrnout do prognóz cashflow“ do stránky **Položka registru rozpočtu**, systém přepíše nastavení na stránce **Nastavení prognózy cashflow** tak, aby zahrnulo do prognózy záznam individuálního registru rozpočtu.
+
 
 ### <a name="inventory-management"></a>Řízení zásob
 
@@ -144,7 +147,7 @@ Pracovní prostor **Přehled hotovosti – všechny společnosti** zobrazuje ana
 
 Pracovní prostor **Přehled hotovosti – aktuální společnost** zobrazuje analýzu prognózy cashflow v definované zúčtovací měně společnosti. Zúčtovací měna, která se používá pro analýzu, se definuje na stránce **Hlavní kniha**. Tento pracovní prostor zobrazuje přehled prognóz cashflow a zůstatky bankovního účtu pro aktuální společnost. Graf přírůstků a úbytků hotovosti poskytuje přehled pohybů budoucí hotovosti a zůstatky v zúčtovací měně, včetně podrobných informací o předpokládaných transakcích. Také můžete zobrazit předpokládané zůstatky měny.
 
-Další informace týkající se analýzy prognózy cashflow naleznete v tématu [Obsah přehledu hotovosti Power BI](./cash-overview-power-bi-content.md).
+Další informace týkající se analýzy prognózy cashflow naleznete v tématu [Obsah přehledu hotovosti Power BI](Cash-Overview-Power-BI-content.md).
 
 Dále můžete zobrazit data prognózy cashflow pro konkrétní účty, objednávky a položky na následujících stránkách:
 

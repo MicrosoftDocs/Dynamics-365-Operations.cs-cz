@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386734"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559552"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -36,6 +36,18 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.21
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Nastavení zpracování překrývajících se slev v parametrech Commerce
+
+Nastavení **Zpracování překrývajících se slev** na stránce **Parametry Commerce** je ve verzi Commerce 10.0.21 označeno jako zastaralé. Do budoucna bude cenový modul Commerce používat jeden algoritmus k určení optimální kombinace překrývajících se slev.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | <p>Nastavení **Zpracování překrývajících se slev** v parametrech Commerce řídí, jak cenový modul Commerce vyhledává a určuje optimální kombinaci překrývajících se slev. Aktuálně nabízí tři možnosti:<p><ul><li> **Nejlepší výkon** – Tato možnost používá pokročilý heuristický algoritmus a metodu [mezní hodnota pořadí](../optimal-combination-overlapping-discounts.md) k včasnému určení priorit, vyhodnocení a stanovení nejlepší kombinace slev.</li><li>**Vyvážený výpočet** – V aktuálním kódu tato možnost funguje stejně jako možnost **Nejlepší výkon**. Je to tedy v podstatě duplicitní možnost.</li><li>**Vyčerpávající výpočet** – Tato možnost používá starý algoritmus, který během výpočtu ceny prochází všemi možnými kombinacemi slev. U objednávek, které mají velký počet řádků a rozsáhlá množství, může tato možnost způsobit zpomalení výpočtu.</li></ul><p>Abychom zjednodušili konfiguraci, zlepšili výkon a omezili incidenty způsobené starým algoritmem, nastavení **Zpracování překrývajících se slev** zcela odstraníme a aktualizujeme interní logiku cenového modulu Commerce tak, aby nyní používal pouze pokročilý algoritmus (tj. algoritmus možnosti **Nejlepší výkon**).</p> |
+| **Nahrazeno jinou funkcí?**   | Ne. Doporučujeme organizacím, které používají možnost **Vyvážený výpočet** nebo **Vyčerpávající výpočet**, přepnout před odstraněním této funkce na **Nejlepší výkon**. |
+| **Ovlivněné oblasti produktu**         | Tvorba cen a slevy |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Od vydání 10.0.21 bude nastavení **Zpracování překrývajících se slev** z parametrů Commerce odstraněno v říjnu 2022. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Maloobchodní SDK distribuovaná pomocí Lifecycle Services
 
@@ -100,11 +112,11 @@ Vývoj rozšíření POS pomocí ModernPos.sln, CloudPOs.sln, POS.Extension.cspr
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
+| **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je aplikace Microsoft Internet Explorer 11 označena jako zastaralá u všech produktů Dynamics 365 a Internet Explorer 11 nebude po srpnu 2021 podporován.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
 | **Ovlivněné oblasti produktu**         | Všechny produkty Dynamics 365 |
 | **Možnost nasazení**              | Vše|
-| **Stav**                         | Zastaralé. Internet Explorer 11 nebude podporován po srpnu 2021.|
+| **Stav**                         | Zastaralé. Internet Explorer 11 nebude po srpnu 2021 podporován.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.11
 ### <a name="data-action-hooks"></a>Zavěšení datových akcí

@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483775"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559600"
 ---
 # <a name="ready-to-pay"></a>Připraveno k platbě
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Pokud chcete označit zaměstnance jako připraveného k výplatě, musíte nejprve povolit funkci **(Náhled) integrace mezd** ve správě funkcí. Další informace o povolení funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Pokud jedno z těchto ověření selže, nemůžete zaměstnance označit jako p
 
 Pokud je pole **Připraveno k výplatě** nastaveno na **Ne**, je to indikace, že musíte provést akci, abyste se ujistili, že je profil pracovníka kompletní. To nezastaví data, která mají být vystavena v jakékoli datové entitě. 
 
-## <a name="known-issues"></a>Známé problémy
+## <a name="process-automation"></a>Automatizace procesů
 
-- Musíte deaktivovat funkci **Efektivnější vstup zaměstnanců** ve správě funkcí. Pokud použijete tuto funkci, dlaždice v pracovním prostoru správy kompenzací nebudou fungovat správně.
-- Na stránce **Pracovník** na kartě **Mzdy** je skupina **Připraveno k výplatě** k dispozici jakékoli uživatelské roli. 
+Ověření všech zaměstnanců můžete automatizovat pomocí [Automatizace procesů](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation). V pracovním prostoru **Správa kompenzací** přejděte na **Odkazy** \> **Parametry** \> **Automatizace procesů**.
 
 ## <a name="see-also"></a>Viz také
 

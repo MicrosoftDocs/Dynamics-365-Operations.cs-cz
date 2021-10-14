@@ -1,8 +1,8 @@
 ---
 title: Pracovní prostor správy zaměstnaneckých výhod
 description: Toto téma popisuje pracovní prostor správy zaměstnaneckých výhod v aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/24/2021
+author: twheeloc
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49393ab65c2f0020af5b246f7c18a152d613725f5b31be89cb57f244b28003f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719085"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512466"
 ---
 # <a name="benefits-management-workspace"></a>Pracovní prostor správy zaměstnaneckých výhod
 
@@ -64,7 +64,7 @@ Výběrem dlaždice **Aktivní životní události** nebo **Budoucí životní u
 
 ![Životní události.](./media/hr-benefits-management-workspace-life-events.png)
 
-## <a name="processing"></a>Zpracovává se
+## <a name="processing"></a>Zpracování
 
 Chcete-li zpracovat způsobilost k registraci, životní události nebo aktualizace změn sazeb, vyberte příslušnou položku na navigačním panelu.
 
@@ -88,9 +88,42 @@ Chcete-li zobrazit jiné období výhod, vyberte jej z rozbalovací nabídky **O
 
 ![Změna období.](./media/hr-benefits-management-workspace-period.png)
 
+
+## <a name="open-enrollment-tab"></a>Karta Otevřená registrace
+
+Položky akcí můžete zobrazit výběrem dlaždice nebo karty. Pokud vyberete kartu, můžete zobrazit a vybrat pracovníky přímo na stránce pracovního prostoru.
+Karta **Otevřená registrace** poskytuje klíčové metriky pro proces otevřené registrace. 
+
+Informace týkající se otevřené registrace se zobrazí 30 dní před **Počátečním datem přihlášení**. To je definováno v nastavení **Období** v dialogu **Správa výhod** > **Odkazy** > **Období** v poli **Počáteční datum přihlášení**.  Chcete-li toto nastavení změnit, přejděte na **Sdílené parametry lidských zdrojů** > **Správa výhod** > **Možnosti otevřené registrace** a aktualizujte pole **Počet**.  
+
+Na kartě **Otevřená registrace** jsou k dispozici následující informace:
+ - Zaměstnanci, kteří nezačali proces otevřené registrace
+ - Zaměstnanci, kteří jsou v procesu voleb
+ - Zaměstnanci, kteří dokončili proces voleb
+ - Nepotvrzené výběry
+
+**Dlaždice souhrnu**
+
+- **Nezahájeno** – Dlaždice **Nezahájeno** zobrazuje počet zaměstnanců, kteří nezačali proces registrace. Dlaždice **Nezahájeno** je filtrovaný seznam, který zobrazuje pouze ty zaměstnance, kteří nemají pro období plánu otevřené registrace žádné plány vybrané, opuštěné ani rezervované. Povinné plány jsou ignorovány a nejsou zahrnuty, protože jsou ve výchozím nastavení pro zaměstnance vybrány.  Na této dlaždici můžete přejít zpět a zobrazit seznam zaměstnanců, kteří nezačali proces otevřené registrace na stránce **Plán zaměstnaneckých výhod**.
+
+  > [!NOTE]
+  > Pokud nechcete sledovat průběh otevřené registrace pro **Typ plánu**, můžete ho vyloučit tím, že přejdete na dialog **Správa výhod** > **Odkazy** > **Parametry samoobsluhy zaměstnance** > **Nastavení dlaždice plánu zaměstnaneckých výhod** a aktualizujete pole **Sledovat průběh otevřené registrace**.  Například můžete mít vytvořené plány, kde **Typ plánu** = **Jiný**. Tyto plány mohou být volitelnými plány, u kterých nechcete sledovat průběh registrace. Pokud tento typ plánu nevyberete, budou plány těchto typů na kartě **Otevřená registrace** ignorovány při sledování průběhu registrace nebo dokončení. Toto nastavení platí pro typ plánu, který je vybrán pro všechna období a právnické osoby.
+
+- **Probíhá** – Dlaždice **Probíhá** udává počet zaměstnanců, u kterých probíhají volby. Dlaždice **Probíhá** je filtrovaný seznam, který zobrazuje pouze zaměstnance, kteří mají alespoň jeden opuštěný nebo vybraný plán. Povinné plány jsou ignorovány a nejsou zahrnuty, protože jsou ve výchozím nastavení pro zaměstnance vybrány. Z této dlaždice můžete přejít zpět a zobrazit vybrané a opuštěné plány na stránce **Hromadná aktualizace plánů zaměstnaneckých výhod**.
+
+- **Zaregistrováno k zaměstnaneckým výhodám** – Dlaždice **Zaregistrováno k zaměstnaneckým výhodám** obsahuje počet zaměstnanců, kteří jsou plně registrováni k odběru výhod. Dlaždice **Zaregistrováno k zaměstnaneckým výhodám** je filtrovaný seznam, který zobrazuje zaměstnance, kteří buď vybrali všechny plány, nebo se všech plánů vzdali. Dotaz vyloučí plány, které nejsou sledovány kvůli otevřené registraci na stránce **Parametry samoobsluhy zaměstnance**. Z této dlaždice můžete přejít zpět a zobrazit seznam zaměstnanců na stránce **Plány zaměstnaneckých výhod**.
+
+- **Nepotvrzené výběry** – Dlaždice **Nepotvrzené výběry** zobrazuje počet zaměstnanců, kteří mají plány, které jsou vybrány nebo se jich vzdali a je třeba je potvrdit. Z této dlaždice můžete přejít zpět a zobrazit stránku **Hromadná aktualizace plánů zaměstnaneckých výhod**.
+
+**Aktivita**
+
+- **Nezahájeno** – Dlaždice **Nezahájeno** zobrazuje seznam zaměstnanců, kteří nezačali proces registrace. Dlaždice **Nezahájeno** je filtrovaný seznam, který zobrazuje zaměstnance, kteří nemají pro období plánu otevřené registrace žádné plány vybrané, opuštěné ani rezervované. Povinné plány jsou ignorovány a nejsou zahrnuty, protože jsou ve výchozím nastavení pro zaměstnance vybrány. Můžete přejít na konkrétního pracovníka a zobrazit stránku **Podrobnosti plánů zaměstnaneckých výhod**.
+
+- **Probíhající volby** – Karta **Probíhající volby** zobrazuje seznam zaměstnanců, u kterých probíhají volby. Dlaždice **Probíhající volby** je filtrovaný seznam, který zobrazuje pouze zaměstnance, kteří mají alespoň jeden opuštěný nebo vybraný plán. Povinné plány jsou ignorovány a nejsou zahrnuty, protože jsou ve výchozím nastavení pro zaměstnance vybrány. Můžete přejít na konkrétního pracovníka a zobrazit stránku **Podrobnosti plánů zaměstnaneckých výhod**.
+
 ## <a name="view-more-options"></a>Zobrazení dalších možností
 
-Chcete-li zobrazit další informace a akce, které můžete podniknout, vyberte možnost **Odkazy**.
+Chcete-li zobrazit další informace anebo další akce, vyberte možnost **Odkazy**.
 
 ![Odkazy.](./media/hr-benefits-management-workspace-links.png)
 

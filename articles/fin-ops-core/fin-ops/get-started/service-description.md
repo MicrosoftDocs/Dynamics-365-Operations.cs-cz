@@ -2,19 +2,19 @@
 title: Popis služby pro aplikace Finance and Operations
 description: Toto téma poskytuje popis služby pro aplikace Finance and Operations.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472498"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581809"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro aplikace Finance and Operations
 
@@ -28,7 +28,7 @@ Aplikace Finance and Operations jsou nabídky softwaru jako služby (SaaS) pro p
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Společně s [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastrukturou](https://azure.microsoft.com/global-infrastructure/), [výpočtem](/azure/service-fabric/service-fabric-overview), a [databázovými službami](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) tyto aplikace umožňují organizacím spouštět podnikové procesy specifické pro dané odvětví a provozovat je. Zákazníci s podporou svého implementačního partnera určují konfiguraci logiky podnikových aplikací, která nejlépe vyhovuje jejich jedinečným obchodním procesům. Funkčnost a obchodní procesy lze zvětšit nebo rozšířit pomocí jednoho nebo kombinace následujících řešení:
+Společně s [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastrukturou](https://azure.microsoft.com/global-infrastructure/), [výpočtem](/azure/service-fabric/service-fabric-overview), a [databázovými službami](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) tyto aplikace umožňují organizacím spouštět podnikové procesy specifické pro dané odvětví a provozovat je. Zákazníci s podporou svého implementačního partnera určují konfiguraci logiky podnikových aplikací, která nejlépe vyhovuje jejich jedinečným obchodním procesům. Funkčnost a obchodní procesy lze zvětšit nebo rozšířit pomocí jednoho nebo kombinace následujících řešení:
 
 - Integrovaná [personalizační zkušenost](personalize-user-experience.md)
 - Nástroje [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)
@@ -197,17 +197,17 @@ Následující tabulka popisuje některé typické scénáře a aktivity pro slu
 | Zřiďte všechny provozní a neprovozní instance. | X | |
 | Ověřte nasazené provozní a neprovozní instance. | | X |
 | **Aktualizace služby** | |
-| Společnost Microsoft aplikuje aktualizace služeb na určené neprovozní a provozní instance. | X | X |
-| Stáhněte si aktualizaci z LCS, definujte, vyvíjejte a testujte aktualizaci a poskytněte balíček aktualizace kódu zpět do LCS. | | X |
-| Požádejte, aby byly aktualizace rozšíření aplikovány na provozní instanci. | | X |
+| Aplikujte aktualizace služeb na určené neprovozní a provozní instance. | X | |
+| Ručně aplikujte aktualizace služeb z LCS na instance sandboxu. Definujte, vyvíjejte, testujte aktualizaci a poskytněte balíček aktualizace kódu zpět do LCS. | | X |
+| Požádejte, aby byly aktualizace rozšíření aplikovány na provozní instanci, a naplánujte jejich aplikaci. | | X |
 | Před použitím aktualizací vytvořte zálohu kódu a dat pro provozní instanci. | X | |
 | V případě jakéhokoli selhání vraťte provozní instanci zpět do zálohy kódu a dat. | X | |
 | **Správa dat (zálohování, obnovení a aktualizace)** | | |
 | Zálohujte databázi. | X | |
 | Určete vysokou dostupnost a plán zotavení po havárii. | X | |
-| Monitorujte výkon provozní instanční databáze. | X | X |
-| Vylaďte výkon provozní instanční databáze. | X | X |
-| Začněte kopírování provozní instanční databáze do neprovozní instance. | | X |
+| Monitorujte výkon provozní instanční databáze. | X | |
+| Vylaďte výkon provozní instanční databáze. | X | |
+| Proveďte aktualizaci databáze produkčních instancí k určitému bodu v čase do neproduktivní instance. | | X |
 | **Aktualizace infrastruktury** | | |
 | Naplánujte pravidelné aktualizace infrastruktury. | X | |
 | **Škálování nahoru a dolů (uživatelé, úložiště a instance)** | | |
@@ -215,7 +215,7 @@ Následující tabulka popisuje některé typické scénáře a aktivity pro slu
 | Aktualizujte změny využití v nástroji LCS Subscription Estimator. | | X |
 | Nahlaste všechny závažné problémy s výkonem, které ovlivňují používání služby. | | X |
 | Proaktivně spravujte prostředky, které jsou pro příslušnou službu vyžadovány. | X | |
-| Vyšetřujte a řešte incidenty. | X | X |
+| Vyšetřujte a řešte incidenty. | X | |
 | **Zabezpečení (přístup uživatele)** | | |
 | Poskytněte uživateli přístup ke službě. | | X |
 | Zajistěte přístup k projektu LCS pro správu a provoz instancí, které byly nasazeny prostřednictvím LCS. | | X |

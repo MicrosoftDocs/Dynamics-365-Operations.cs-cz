@@ -1,0 +1,98 @@
+---
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (20. září 2021)
+description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 20. září 2021.
+author: marcelbf
+ms.date: 09/20/2021
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.search.scope: Human Resources
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: marcelbf
+ms.search.validFrom: 2021-09-20
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 3f4fc4768f8c96678b216709f78af6d3ddfd4132
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556926"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (20. září 2021)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Microsoft Dynamics 365 Human Resources.
+
+Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
+
+Další informace o nových funkcích a jejich očekávaných obecných datech dostupnosti najdete v tématu [Přehled 2. vlny vydání Dynamics 365 Human Resources v roce 2021](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+
+## <a name="in-this-release"></a>V této vydané verzi
+
+Tato verze obsahuje následující nové funkce a opravené chyby. Změny se vztahují na sestavení číslo 8.1.4464.
+
+### <a name="new-features"></a>Nové funkce
+
+V této verzi jsou všeobecně dostupné následující funkce.
+
+| Funkce | Plán vydání | Dokumentace |
+|---|---|---|
+| Povolit zjednodušenou integraci mezd (API pro integraci mezd) | [Povolení zjednodušených integrací s poskytovateli mezd](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Rozhraní API integrace mezd](hr-admin-integration-payroll-api-introduction.md) |
+| Umožněte zaměstnancům, aby byli označeni jako připraveni k výplatě | [Umožněte zaměstnancům, aby byli označeni jako připraveni k výplatě](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) | [Připraveno k platbě](/dynamics365/human-resources/hr-compensation-payroll) |
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+Tato verze obsahuje následující opravy chyb.
+
+> [!NOTE]
+> Naším cílem dostat k vám tyto informace co nejdříve. Tohle téma můžeme aktualizovat, aby obsahovalo opravy chyb, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+
+| Číslo problému | Problém | Popis |
+|---|---|---|
+| 619774 | Úprava popisu adresy se nesynchronizuje do Dataverse v reálném čase. | Při úpravách popisu adresy pracovníka se aktualizovaný popis nesynchronizuje v reálném čase do Dataverse. Předplatné v tabulce **Umístění logistiky** byla aktualizována pro odeslání aktualizace. |
+| 614603| Chyba na stránce **Pracovník**, když není vybrán parametr **Akce pracovníků**. | Při přijímání nového pracovníka nebo při přechodu na stránku **Pracovník** se zobrazí následující chyba: „Pole **Typ akce personálu** musí být vyplněno, i když jsou **Akce personálu** vypnuty“. |
+| 615367 | Karta **Schválené volno** zobrazuje varování a zobrazuje se nesprávně. | Pokud je jednotka volna nastavena na **Dny** před povolením funkce **Nakonfigurovat jednotky pracovního volna podle typu pracovního volna**, karta **Schválené volno** zobrazuje neplatné varování a nesprávné sloupce. |
+
+
+## <a name="in-preview"></a>Náhled
+
+Verze Preview obsahuje následující nové funkce. Další informace o zapnutí a vypnutí funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+
+| Funkce | Plán vydání | Dokumentace |
+|---|---|---|
+| Pracovní prostor správy zaměstnaneckých výhod | [Pracovní prostor správy zaměstnaneckých výhod (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Pracovní prostor správy zaměstnaneckých výhod](hr-benefits-management-workspace.md) |
+| Vlastní pole ve Způsobilosti |[Podpora vlastních polí ve zpracování způsobilosti](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management) | [Použití vlastních polí ve zpracování způsobilosti](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules) |
+| Výkaz zaměstnaneckých výhod |[Výkaz zaměstnaneckých výhod](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) | [Výkaz zaměstnaneckých výhod](hr-benefits-statement.md) |
+
+### <a name="benefits-statement-known-issues"></a>Známé problémy u výkazu zaměstnaneckých výhod
+
+| Problém | Popis |
+|---|---|
+| Stránka **Parametry hlášení** v **Samoobsluze zaměstnanců** pro výkaz výhod je nesprávná. | Při přechodu na **Výkaz výhod** v **Samoobsluze zaměstnanců** stránka **Parametry sestavy** zobrazí záložky **Záznamy k zahrnutí** a **Spustit na pozadí**.  Tyto záložky je třeba odstranit. |
+| Uzavřená a budoucí období jsou zobrazena na stránce **Parametry sestavy** výkazu výhod. | Při přechodu na cílovou stránku **Sestava výkazu výhod** si uživatel může vybrat období plánů výhod, které jsou uzavřeny nebo jsou datovány do budoucna, což má za následek zobrazení prázdné stránky. V seznamu by se mělo zobrazit pouze aktuální období plánu výhod. |
+|Chyba při odesílání sestavy e-mailem pomocí cíle sestavy GER. | Výkaz výhod lze nastavit tak, aby používal parametry e-mailu v rámci stránky **Cíle sestavy GER**. Po dokončení nastavení a tisku sestavy se uživateli zobrazí chyba formátování a výkaz výhod nebude odeslán.|
+
+
+## <a name="coming-soon"></a>Již brzy
+
+Úplný seznam plánovaných funkcí a plánovaných verzí najdete v části [Přehled o 2. vlně vydání Dynamics 365 Human Resources v roce 2021](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+
+| Funkce | Podrobnosti |
+|---|---|
+| Platform update 10.0.21 (45) | Vydání aktualizace platformy 10.0.21 je naplánováno spolu se servisním vydáním 4. října 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.21 aplikací Finance and Operations (říjen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+|Zobrazení rozšířených sestav deníků výkonu | Tato funkce bude v příštím vydání ve výchozím nastavení povolena. |
+
+
+## <a name="see-also"></a>Viz také
+
+[Co je nového a co se změnilo v aplikaci Human Resources](hr-admin-whats-new.md)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2021 vlny 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
+[Aktualizace procesu](hr-admin-setup-update-process.md)</br>
+[Správa funkcí](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

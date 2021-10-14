@@ -1,7 +1,7 @@
 ---
 title: Přehled zásad nákupu
 description: V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy.
-author: kamaybac
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fd090f6e8b91c6a75eced17fadd76f686c5441f1526736534ad1a947d80cea0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761775"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575481"
 ---
 # <a name="purchasing-policies-overview"></a>Přehled zásad nákupu
 
@@ -57,7 +57,7 @@ Pokud zaměstnanec v právnické osobě 2222 vytvoří nákupní žádanku, prav
 V předchozím příkladě byla definována všechna pravidla nákupu v jedné organizační hierarchii, organizační hierarchií společnosti. Komplexní organizace však může definovat zásady pro více organizačních hierarchií.  
 
 
-Contoso je velká společnost, která vyžaduje komplexní pravidla nákupu k řízení zpracování žádanek. Contoso definovala pravidla pro dvě různé organizační hierarchie: Řízení oddělení a globální kontroly.  
+Společnost Contoso je velká společnost, která vyžaduje komplexní pravidla nákupu k řízení zpracování žádanek. Společnost Contoso definovala pravidla pro dvě různé organizační hierarchie: Řízení oddělení a globální kontroly.  
 
 Zásada 123 je definována pro oddělení organizační hierarchie pro prodejní oddělení pro prodej ve Velké Británii. V zásadách 123 pravidlo kontroly nákupní žádanky určuje, že musí být vynucena omezení pro minimální objednané množství. V tomto pravidle je vybrána možnost **Vynutit omezení minimálního množství objednávky**.  
 

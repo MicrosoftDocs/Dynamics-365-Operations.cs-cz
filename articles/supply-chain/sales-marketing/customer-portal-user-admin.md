@@ -1,7 +1,7 @@
 ---
 title: Vytváření a správa uživatelů zákaznického portálu
 description: Toto téma vysvětluje, jak vytvořit uživatelské účty zákaznického portálu a nastavit pro ně oprávnění.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
@@ -9,18 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 38b479a72ce6d9446e04b14ed939b63d41d3b94b299f195974a84ca7c8ad0d65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 448f315b888b63eba74dcb8b47a9b238e371bb2b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763980"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573482"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 V dodávané implementaci neexistuje žádný způsob, jak uživatele zaregistrovat pro weby vytvořené pomocí zákaznického portálu. Chcete-li se přihlásit a používat web, musí být uživatelé pozváni správcem. Microsoft úmyslně zablokoval možnost uživatelů se zaregistrovat.

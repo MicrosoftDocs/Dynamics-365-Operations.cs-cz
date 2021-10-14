@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722624"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559576"
 ---
 # <a name="payroll-position-job"></a>Práce pozice mzdy
 
@@ -34,16 +34,22 @@ Fyzický název: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Vlastnosti
 
-| Vlastnost<br>**Fyzický název**<br>**_Typ_** | Použít | popis |
+| Vlastnost</br>**Fyzický název**</br>**_Typ_** | Použít | Popis |
 | --- | --- | --- |
-| **ID úlohy**<br>mshr_jobid<br>*Řetězec* | Jen pro čtení<br>Povinná |ID úlohy. |
-| **Platné od**<br>mshr_validto<br>*Posun data a času* | Jen pro čtení <br>Povinná | Datum, od kterého je pozice a pracovní vztah platné. |
-| **Platné do**<br>mshr_validto<br>*Posun data a času* | Jen pro čtení <br>Povinná | Datum, do kterého je pozice a pracovní vztah platné.  |
-| **ID pozice**<br>mshr_positionid<br>*Řetězec* | Jen pro čtení<br>Povinná | Identifikace pozice. |
-| **Primární pole**<br>mshr_primaryfield<br>*Řetězec* | Povinná<br>Generováno systémem |  |
-| **Hodnota ID pracovní pozice**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Jen pro čtení<br>Povinná<br>Cizí klíč: mshr_PayrollPositionJobEntity mshr_payrollpositionjobentity |ID práce přidružené k pozici.|
-| **Hodnota ID pevného plánu kompenzace**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Jen pro čtení<br>Povinná<br>Cizí klíč: mshr_FixedCompPlan_id z mshr_payrollfixedcompensationplanentity  | ID plánu pevné kompenzace přidruženého k pozici. |
-| **ID entity pracovní pozice na výplatní listině**<br>mshr_payrollpositionjobentityid<br>*Guid* | Povinná<br>Generováno systémem. | Systémem generovaná hodnota GUID pro jedinečnou identifikaci pracovní pozice.  |
+| **ID pozice**</br>mshr_positionid</br>*Řetězec* | Jen pro čtení | Identifikace pozice. |
+| **Platné od**</br>mshr_validto</br>*Posun data a času* | Jen pro čtení | Datum, od kterého je pozice a pracovní vztah platné. |
+| **Platné do**</br>mshr_validto</br>*Posun data a času* | Jen pro čtení | Datum, do kterého je pozice a pracovní vztah platné. |
+| **ID úlohy**</br>mshr_jobid</br>*Řetězec* | Jen pro čtení | ID úlohy. |
+| **Primární pole**</br>mshr_primaryfield</br>*Řetězec* | Generováno systémem | Primární pole. |
+| **ID entity pracovní pozice na výplatní listině**</br>mshr_payrollpositionjobentityid</br>*Guid* | Generováno systémem. | Systémem generovaná hodnota globálně jedinečného identifikátoru (GUID) pro jedinečnou identifikaci práce. |
+
+## <a name="relations"></a>Vztahy
+
+| Hodnota vlastnosti | Související entita | Navigační vlastnost | Typ kolekce |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Nelze použít |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Ukázkový dotaz
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772271"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581130"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Operace odchozích zásob v POS
 
@@ -116,7 +116,7 @@ V zobrazení **Úplný seznam objednávek** můžete ručně vybrat řádek v se
 
 ### <a name="over-delivery-shipping-validations"></a>Ověření nadměrné dodávky
 
-Během procesu příjmu pro řádky dokumentu dochází k jejich ověření. To zahrnuje ověření pro navýšení dodávky. Pokud se uživatel pokusí přijmout více zásob, než bylo objednáno na nákupní objednávce, ale buď není konfigurována nadměrná dodávka, nebo přijaté množství překračuje toleranci nadměrné dodávky, která je konfigurována pro řádek nákupní objednávky, obdrží uživatel chybu a není povoleno obdržet nadměrné množství.
+Během procesu plnění pro řádky dokumentu dochází k jejich ověření. To zahrnuje ověření pro navýšení dodávky. Pokud se uživatel pokusí expedovat více zásob, než bylo objednáno na převodním příkazu, ale buď není konfigurována nadměrná dodávka, nebo expedované množství překračuje toleranci nadměrné dodávky, která je konfigurována pro řádek převodního příkazu, obdrží uživatel chybu a není povoleno expedovat nadměrné množství.
 
 ### <a name="underdelivery-close-lines"></a>Snížení dodávky pro uzavřené řádky
 
