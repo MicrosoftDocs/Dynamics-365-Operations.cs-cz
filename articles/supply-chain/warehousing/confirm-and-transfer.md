@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767944"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592621"
 ---
 # <a name="confirm-and-transfer"></a>Potvrdit a převést
 
@@ -45,8 +45,8 @@ Můžete rozdělit pouze náklady, jež splňují všechna následující krité
 
 - V jednom nebo více řádcích nákladu jsou vydaná množství.
 - Stav nákladu je nižší než naložen.
-- Neexistují data řádku nákladu. (Tato data se vytvářejí konsolidací registračních značek na přechodném skladovém místě, funkce *Potvrdit a převést* konsolidaci registračních značek nepodporuje.)
-- Žádné zásoby aktuálně nečekají na balení v balicím místě. (Funkce *Potvrdit a převést* nepodporuje zásoby, které byly vydány do balicí stanice, ale ještě nebyl zabaleny.)
+- Neexistují data řádku nákladu. (Tato data se vytvářejí konsolidací registračních značek na přechodném skladovém místě, funkce Potvrdit a převést konsolidaci registračních značek nepodporuje.)
+- Žádné zásoby aktuálně nečekají na balení v balicím místě. (Funkce *Potvrdit a převést* nepodporuje zásoby, které byly vydány do balicí stanice, ale ještě nebyl zabaleny, pokud nejsou kontejnery pro zabalení umístěny na přechodná skladová místa, kde byla vytvořena práce nakládky.)
 
 > [!NOTE]
 > Tato funkce se liší od funkce nákladu přepravy, kterou je vhodné použít ve skladech, které nikdy nemohou plánovat a vytvářet náklady před výdejem ale místo toho nakládají do dostupného přepravního prostoru po dokončení výdeje.

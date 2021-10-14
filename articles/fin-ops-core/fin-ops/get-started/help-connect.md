@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343805"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594850"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurace prostředí nápovědy pro aplikace Finance and Operations
 
@@ -30,7 +30,7 @@ V tomto tématu najdete přehled součástí systému nápovědy pro aplikace Fi
 
 ## <a name="help-architecture"></a>Architektura nápovědy
 
-Aplikace Finance and Operations zahrnují koncepční přehledy a další témata, která jsou publikována na web internetu [https://docs.microsoft.com/dynamics365](/dynamics365/). K tomuto obsahu lze poté přistupovat z podokna **Nápověda** v produktu. Následující obrázek znázorňuje části systému nápovědy.
+Aplikace Finance and Operations zahrnují koncepční přehledy a další témata, která jsou publikována na webu [dokumentace Microsoft Dynamics 365](/dynamics365/). K tomuto obsahu lze poté přistupovat z podokna **Nápověda** v produktu. Následující obrázek znázorňuje části systému nápovědy.
 
 [![Architektura nápovědy.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Systém nápovědy v produktu stahuje články z docs.microsoft.com a dalších 
 ## <a name="adding-task-guides"></a>Přidání průvodců záznamem úloh
 
 > [!NOTE]
-> Karta **Průvodci záznamem úloh** není k dispozici v aplikacích Human Resources či Commerce. <!--We are currently working to enable this functionality in a future release.--> Nicméně průvodci záznamem úloh v prostředí Začínáme v aplikaci Human Resources jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu [https://docs.microsoft.com/dynamics365](/dynamics365/) pro Human Resources a Commerce.
+> Karta **Průvodci záznamem úloh** není k dispozici v aplikacích Human Resources či Commerce. <!--We are currently working to enable this functionality in a future release.--> Nicméně průvodci záznamem úloh v prostředí Začínáme v aplikaci Human Resources jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu [dokumentace Microsoft Dynamics 365](/dynamics365/) pro Human Resources a Commerce.
 
 Na stránce **Parametry systému** mohou správci systému nakonfigurovat přístup k příslušným knihovnám průvodců záznamem úloh pro implementaci.
 

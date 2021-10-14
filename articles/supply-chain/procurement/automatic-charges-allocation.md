@@ -1,23 +1,23 @@
 ---
 title: Automatické přidělování poplatků
 description: Funkce poplatků v Microsoft Dynamics 365 Supply Chain Management pomáhá vám automaticky přidělit poplatky nákupním objednávkám nebo prodejním objednávkám.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753932"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592533"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatické přidělování poplatků
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753932"
 Na základě zákazníka, se kterým pracujete, nebo položky, kterou prodáváte, možná budete chtít uplatnit konkrétní dodatečné poplatky. Funkce *poplatků* v Microsoft Dynamics 365 Supply Chain Management pomáhá vám automaticky přidělit poplatky nákupním objednávkám nebo prodejním objednávkám.
 
 Automatické náklady, které se nazývají automatické náklady, se používají automaticky při vytváření prodejní nebo nákupní objednávky. Automatické poplatky lze definovat pro konkrétní dodavatele, odběratele, skupiny dodavatelů nebo položek. Můžete také definovat automatické poplatky, které platí pro všechny dodavatele, odběratele nebo položky.
+
+## <a name="set-up-parameters"></a>Nastavit parametry
+
+Stránka **Parametry modulu Zásobování a zdroje** obsahuje několik nastavení, která jsou zvláště důležitá, když chcete přidělit poplatky automaticky. Abyste dokončili toto nastavení, postupujte takto.
+
+1. Přejděte na **Zásobování a zdroje \> Nastavení \> Parametry modulu Zásobování a zdroje**.
+1. Otevřete kartu **Ceny**.
+1. Na záložce **Ceny** proveďte následující nastavení:
+    - **Vyhledat automatické náklady pro záhlaví** - Určuje, zda poplatky pro záhlaví nákupních objednávek mají být automaticky přidělovány. Nastavte na *Ano*, chcete-li používat automatické přidělování poplatků.
+    - **Vyhledat automatické náklady pro řádek** - Určuje, zda poplatky pro řádky nákupních objednávek mají být automaticky přidělovány. Nastavte na *Ano*, chcete-li používat automatické přidělování poplatků.
 
 ## <a name="set-up-charges-codes"></a>Nastavení kódů poplatků
 
