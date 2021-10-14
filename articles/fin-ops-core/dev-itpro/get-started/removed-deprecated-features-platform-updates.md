@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500102"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595138"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -32,14 +32,26 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.21 aplikací Finance and Operations
+
+### <a name="skype-for-business-online-support"></a>Podpora aplikace Online Skype pro firmy
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Online Skype pro firmy byl vyřazen. Další informace najdete v tématu [Služba Online Skype pro firmy byla vyřazena](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Nahrazeno jinou funkcí?**   | Aktuálně ne, i když v budoucnu můžeme zvážit přidání přítomnosti z Teams.|
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Nastavení **Skype povolen** bylo od vydání 10.0.21 vypnuto. Odstranění tohoto nastavení je naplánováno na duben 2022; tato funkce však přestane fungovat poté, co tým Skype službu vypne. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Oznámení o ukončení podpory funkce od srpna 2021
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Sestavy Microsoft Azure SQL ve službě Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** |   Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah.|
-| **Nahrazeno jinou funkcí?**   | Žádná |
+| **Důvod pro zrušení/odstranění** | Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah.|
+| **Nahrazeno jinou funkcí?**   | Ano, nyní existuje automatizovaný systém, který činí tyto funkce zastaralými. |
 | **Ovlivněné oblasti produktu**         | Sestavy SQL: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
 | **Stav**                         | Zastaralé: Plánované datum odstranění v říjnu 2021. |
@@ -48,8 +60,8 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých akcí SQL.  |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých akcí SQL. Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah. |
+| **Nahrazeno jinou funkcí?**   | Ano, nyní existuje automatizovaný systém, který činí tyto funkce zastaralými. |
 | **Ovlivněné oblasti produktu**         | Akce SQL: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
 | **Stav**                         | Zastaralé: Plánované datum odstranění v říjnu 2021. |
@@ -158,7 +170,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Obecně lze říci, že vlastní kód nabízí omezené výhody a zároveň vyžaduje značné zdroje a podporu pro výpočet. Vlastní kód je primárně používán autory sestav k volání veřejných metod z vlastní sestavy kódu. Služba hostovaná v cloudu však nepodporuje odkazy na vlastní sestavení pro zprávy SSRS. |
-| **Nahrazeno jinou funkcí?**   | Autoři sestav se mohou rozhodnout pokračovat v odkazování na veřejná rozhraní .NET API pro operace Math, Převod a Formát z libovolného výrazu textového pole. Další informace naleznete v tématu [Přidání kódu do sestavy (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Nahrazeno jinou funkcí?**   | Autoři sestav se mohou rozhodnout pokračovat v odkazování na veřejná rozhraní .NET API pro operace Math, Převod a Formát z libovolného výrazu textového pole. Další informace naleznete v tématu [Přidání kódu do sestavy (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Ovlivněné oblasti produktu**         | Podmnožina návrhů sestav aplikací definovaných v RDL, kterě obsahují vlastní kód. |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | U verzí novějších než 10.0.13 kompilátor začne vydávat varování pro případy, kdy je v definici sestavy SSRS detekován vlastní kód. Chcete-li problém vyřešit, otevřete definici návrhu sestavy a odeberte všechny artefakty vlastního kódu. Toto varování bude v budoucí aktualizaci nahrazeno chybou kompilátoru.   |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718350"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595255"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Návrh nové konfigurace ER pro generování sestav ve formátu Word
 
@@ -46,7 +46,7 @@ Můžete přidat vnořené prvky **Excel\\Rozsah** a **Excel\\Buňka** pro prvek
 
 ![Přidání vnořených prvků a polí na stránce Návrhář formátu.](./media/er-design-configuration-word-image4.gif)
 
-Když uložíte změny do formátu ER v době návrhu, hierarchická struktura formátu se uloží v přiložené šabloně Word jako [vlastní část XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), která má název **Sestava**. Musíte mít přístup k upravené šabloně, stáhnout ji z aplikace Finance, uložit ji místně a otevřít ji v desktopové aplikaci Word. Následující obrázek ukazuje lokálně uloženou ukázkovou šablonu pro kontrolní sestavu, která obsahuje vlastní část XML **Sestava**.
+Když uložíte změny do formátu ER v době návrhu, hierarchická struktura formátu se uloží v přiložené šabloně Word jako [vlastní část XML](/visualstudio/vsto/custom-xml-parts-overview), která má název **Sestava**. Musíte mít přístup k upravené šabloně, stáhnout ji z aplikace Finance, uložit ji místně a otevřít ji v desktopové aplikaci Word. Následující obrázek ukazuje lokálně uloženou ukázkovou šablonu pro kontrolní sestavu, která obsahuje vlastní část XML **Sestava**.
 
 ![Náhled ukázkové šablony sestavy v desktopové aplikaci Word.](./media/er-design-configuration-word-image5.gif)
 

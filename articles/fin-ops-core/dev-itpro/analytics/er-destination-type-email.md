@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343853"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595196"
 ---
 # <a name="email-er-destination-type"></a>Typ cílového umístění elektronického výkaznictví e-mailu
 
@@ -75,7 +75,7 @@ Můžete zadat odesílatele e-mailu a příjemce e-mailu. Ve výchozím nastaven
 >
 > Když je cíl e-mailu nabídnut k úpravám za [běhu](electronic-reporting-destinations.md#security-considerations), pole **Odesílatel** je viditelné pouze uživatelům, kteří mají bezpečnostní oprávnění  `ERFormatDestinationSenderEmailMaintain` **Nakonfigurujte e-mailovou adresu odesílatele pro cíl formátu ER**.
 >
-> Když je pole **Odesílatel** nakonfigurováno tak, aby používalo jinou e-mailovou adresu, než je adresa aktuálního uživatele, musí být oprávnění **Odeslat jako** nebo **Odeslat jménem** správně [nastaveno](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) dopředu. Jinak je za běhu vyvolána následující výjimka: „Nelze odeslat e-mail jako \<from email account\> z účtu \<current user account\>, zkontrolujte prosím oprávnění „Odeslat jako“ na \<from email account\>."
+> Když je pole **Odesílatel** nakonfigurováno tak, aby používalo jinou e-mailovou adresu, než je adresa aktuálního uživatele, musí být oprávnění **Odeslat jako** nebo **Odeslat jménem** správně [nastaveno](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) dopředu. Jinak je za běhu vyvolána následující výjimka: „Nelze odeslat e-mail jako \<from email account\> z účtu \<current user account\>, zkontrolujte prosím oprávnění „Odeslat jako“ na \<from email account\>."
 
 Můžete nakonfigurovat pole **Odesílatel** pro vrácení více než jedné e-mailové adresy. V tomto případě se jako adresa odesílatele e-mailu použije první adresa v seznamu.
 
