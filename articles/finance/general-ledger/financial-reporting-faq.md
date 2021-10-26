@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605272"
 ---
 # <a name="financial-reporting-faq"></a>Nejčastější dotazy k finančnímu výkaznictví
 
@@ -101,5 +101,28 @@ U převodů historických měn lze místo podrobností jednotlivých transakcí
 Při aktualizaci dat uvedených v sestavách může dojít ke zpoždění, protože částky je třeba přepočítat kontrolou podrobností transakce. Toto zpoždění se spustí pokaždé, když se aktualizují kurzy nebo když se zaúčtuje více transakcí. Pokud jsou například několikrát denně nastavovány tisíce účtů pro historický převod, aktualizace údajů v sestavě může trvat až hodinu. Na druhou stranu, pokud existuje menší počet konkrétních účtů, lze doby zpracování aktualizací dat sestavy zkrátit na minuty nebo méně.
 
 Podobně platí, že když se generují sestavy pomocí převodu měny pro účty historického typu, budou provedeny další výpočty na transakci. V závislosti na počtu účtů se doba generování sestavy může více než zdvojnásobit.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Jaké jsou odhadované intervaly integrace datového tržiště?
+
+Financial Reporter používá 16 úloh ke kopírování dat z Dynamics 365 Finance do databáze Financial Reporter. Následující tabulka uvádí těchto 16 úkolů a ukazuje interval, který určuje, jak často se jednotlivé úlohy spouští. Intervaly nelze změnit.
+
+| Název                                                       | Interval | Časové intervaly |
+|------------------------------------------------------------|----------|-----------------|
+| AX Kategorie účtů 2012 na Kategorii účtů            | 41       | Minut         |
+| AX Účet 2012 na Účet                                | 7        | Minut         |
+| AX Společnosti 2012 na Společnost                               | 300      | Sekund         |
+| AX Společnosti 2012 na Organizaci                          | 23       | Minut         |
+| AX Kombinace dimenzí 2012 na Kombinaci dimenzí    | 1        | Minut         |
+| AX Hodnoty dimenzí 2012 na Hodnotu dimenzí                | 11       | Minut         |
+| AX Dimenze 2012 na Dimenzi                            | 31       | Minut         |
+| AX Směnné kurzy 2012 na Směnný kurz                    | 17       | Minut         |
+| AX Fiskální roky 2012 na Fiskální rok                        | 13       | Minut         |
+| AX Transakce hlavní knihy 2012 na Fakta                | 1        | Minut         |
+| AX Organizační hierarchie 2012 na Stromové zobrazení                   | 3 600    | Sekund         |
+| AX Scénáře 2012 na Scénář                              | 29       | Minut         |
+| AX Kvalifikátor typu transakce 2012 na Kvalifikátor typu faktu | 19       | Minut         |
+| Úkol údržby                                           | 1        | Minut         |
+| Definice sestavy MR na Finanční sestavy AX7             | 45       | Sekund         |
+| Verze sestavy MR na AX Verze finanční sestavy         | 45       | Sekund         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

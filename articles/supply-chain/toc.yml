@@ -2813,11 +2813,13 @@
               href: sales-marketing/trade-allowance.md
             - name: Vytvoření nové obchodní smlouvy
               href: sales-marketing/tasks/create-new-trade-agreement.md
-        - name: Správa servisu
+            - name: Vylepšení výkonu čištění historie prodeje
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
+        - name: Správa služeb
           items:
-            - name: Přehled správy servisu
+            - name: Přehled správy služeb
               href: service-management/service-management-home-page.md
-            - name: Nastavení služby pro odběratele
+            - name: Nastavení služby zákazníkům
               items:
                 - name: Nastavení servisní smlouvy
                   items:
@@ -3711,6 +3713,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: "Prodej a\_marketing"
               items:
+                - name: Úloha čištění historie prodejů selhává nebo má problémy s výkonem
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: V mezipodnikovém procesu není položka sady podporována
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: 'Nelze zrušit mezipodnikovou nákupní objednávku, která je propojena s prodejní objednávkou'

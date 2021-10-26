@@ -1192,11 +1192,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Součásti finančních sestav
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-            - name: Možnosti měny ve finančním výkaznictví
+            - name: Možnosti měny ve Financial reporting
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Výpočet nerozděleného zisku ve Financial reporting
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Finanční sestavy rozvah
               href: general-ledger/balance-sheet-financial-reports.md
-            - name: Generování finančních sestav
+            - name: Generovat finanční sestavy
               href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
             - name: Finanční sestava výpisu příjmů
               href: general-ledger/income-statement-financial-report.md

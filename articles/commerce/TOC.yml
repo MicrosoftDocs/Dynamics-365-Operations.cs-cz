@@ -802,6 +802,8 @@
                   href: POS-serial-returns.md
                 - name: Propojené refundace
                   href: dev-itpro/linked-refunds.md
+                - name: Zpracujte nepropojené refundace pomocí Dynamics 365 Commerce Payment Connector pro Adyen
+                  href: dev-itpro/unlinked-refunds.md
                 - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
                   href: sell-return-outside-assortments.md
                 - name: Konfigurace a zpracování výměny u vratek
