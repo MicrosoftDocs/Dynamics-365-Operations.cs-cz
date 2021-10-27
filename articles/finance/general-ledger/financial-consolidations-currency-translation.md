@@ -1,8 +1,8 @@
 ---
 title: Přehled finančních konsolidací a převodu měny
 description: Toto téma popisuje finanční konsolidace a převod měny v hlavní knize.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748973"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615928"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -182,5 +182,17 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční v
 ## <a name="generating-consolidated-financial-statements"></a>Generování konsolidovaných finančních výkazů
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Vylepšení výkonu pro velké konsolidace
+
+Prostředí, která mají mnoho transakcí hlavní knihy, mohou běžet pomaleji, než je optimální. Chcete-li tento problém vyřešit, můžete nastavit paralelní zpracování dávek, které používá uživatelem definovaný počet dat. Chcete-li zajistit, aby řešení fungovalo, jak bylo zamýšleno, přidejte do konsolidace bod rozšíření, abyste vrátili kontejner časových období. Základní implementace by měla obsahovat jedno časové období pro počáteční stav a konečné datum konsolidace. Období v základní implementaci budou ověřena, aby se zajistilo, že nebudou obsahovat mezery ani překryvy. Období budou použita k vytvoření paralelních dávkových balíčků pro každou společnost.
+
+Počet období můžete přizpůsobit tak, aby splňovaly požadavky vaší organizace. Přizpůsobením počtu rozsahů dat můžete pomoci zjednodušit testování a minimalizovat dopad na stávající kód, protože neexistuje žádná alokační logika. Jediné nové testy, které jsou vyžadovány, ověřují vytváření dávkových balíčků, ověřují rozsahy dat a testují podmnožinu časových období, aby ověřily, že lze dávky spojit dohromady pro konečný dávkový úkol. 
+
+Tato funkce vylepšuje proces konsolidace v hlavní knize, když je proces spuštěn v dávce. Vylepšení zlepšuje výkon procesu konsolidace hlavní knihy rozdělením konsolidace na více úkolů, které lze zpracovávat souběžně. Ve výchozím způsobu spouštění konsolidace každý úkol zpracovává aktivitu hlavní knihy za osm dní. Byl však přidán bod rozšíření, který vám umožňuje přizpůsobit počet vytvořených úloh.
+
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+
+- **Modul:** Hlavní kniha
+- **Název funkce**: Vylepšení výkonu pro velké konsolidace
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

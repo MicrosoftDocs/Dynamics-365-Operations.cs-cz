@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 28fea4a09d7c105096859495d9b4a43f4c86c834184809827fe77ce1bbff5b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa3cab78574ac3779aaea000f0b2b88ff625c37
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605248"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Nastavení parametrů formátu ER podle právnické osoby
 
@@ -58,8 +58,6 @@ Pomocí systému ER můžete nastavit specifické parametry aplikace pro formát
 1.  Vyberte právnickou osobu **DEMF**.
 2.  Ve stromu konfigurace vyberte formát **Formát pro ověření, jak vyhledat data LE**.
 3.  V podokně akcí na kartě **Konfigurace** ve skupině **Parametry specifické pro aplikaci** vyberte **Nastavení**.
-
-    ![Stránka specifické parametry aplikace ER.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Na stránce **Parametry specifické pro aplikaci** můžete konfigurovat pravidla pro zdroj dat **Selektor** formátu **Formát pro učení se, jak vyhledávat data ER**.
     
@@ -75,14 +73,14 @@ Pomocí systému ER můžete nastavit specifické parametry aplikace pro formát
 
     Vyhledávání představuje seznam kódů daní pro výběr. Tento seznam je vrácen zdrojem dat **Model.Data.Tax**, který byl nakonfigurován v základním formátu ER. Vzhledem k tomu, že tento zdroj dat obsahuje pole **Název**, zobrazí se názvy jednotlivých kódů daní ve vyhledávání.
 
-    ![Stránka specifické parametry aplikace ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Stránka specifické parametry aplikace ER, vyhledání pole kódu.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Vyberte kód daně **VAT19**.
 8.  V poli **Výsledek vyhledávání** nového záznamu výběrem šipky rozevíracího seznamu otevřete vyhledávání. Vyhledávání představuje seznam hodnot pro formát výčtu TaxationLevel pro výběr.
 
     Všimněte si, že pokud je jako preferovaný jazyk uživatele, jako který jste přihlášeni, vybrána němčina, budou popisky hodnot ve vyhledávání v němčině, pokud byly přeloženy do formátu Base ER. Kromě toho, pokud byl přeložen popisek vyhledávacího zdroje dat, bude tento popisek zobrazen na kartě **vyhledávání** v preferovaném jazyce uživatele.
 
-    ![Stránka specifické parametry aplikace ER.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Stránka specifických parametrů aplikace ER, výsledky vyhledávání se zobrazují v preferovaném jazyce, tedy němčině.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Vyberte hodnotu **Běžné zdanění**.
 
@@ -120,7 +118,7 @@ Pomocí systému ER můžete nastavit specifické parametry aplikace pro formát
     
     Přidáte-li tento poslední záznam, definujete následující pravidlo: vždy, když kód daně předaný jako argument nesplňuje žádné z předchozích pravidel, vrátí zdroj dat vyhledávání jako požadovanou úroveň zdanění **Jiné**.
 
-    ![Stránka specifické parametry aplikace ER.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Stránka parametrů specifických pro aplikaci ER, záložka Podmínky s posledním záznamem Jiné.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. V poli **Stav** vyberte možnost **Dokončeno**.
 
@@ -160,7 +158,7 @@ Pomocí systému ER můžete nastavit specifické parametry aplikace pro formát
 
     Vyhledávání nyní představuje seznam kódů daní pro daň **USMF** společnosti pro výběr.
 
-    ![Stránka specifické parametry aplikace ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Stránka specifických parametrů aplikace ER, vyhledávání v poli kódu zobrazující seznam daňových kódů pro společnost USMF.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Vyberte kód daně **EXEMPT**.
 9.  V poli **výsledek vyhledávání** nového záznamu vyberte hodnotu **žádné zdanění**.
@@ -225,13 +223,13 @@ V předchozím příkladu jste získali přístup k parametrům formátu ER, kte
 
 1.  Znovu použijte existující položku nabídky **ERSolutionAppSpecificParametersDesigner** nebo implementujte vlastní položku nabídky **ERSolutionAppSpecificParametersDesigner**.
 
-    ![Stránka Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Stránka Visual Studio, podokno vlastností.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Proveďte jeden z následujících kroků:
 
     1.  Vytvořte tlačítko položky nové nabídky a propojte ho s příslušným záznamem z tabulky **ERSolutionTable** nastavením jeho vlastnosti **Data Source** na **ERSolutionTable**.
     
-        ![Stránka Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Stránka Visual Studio, návrhové tabulky.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Vytvořte jednoduché tlačítko a přepište metodu **Kliknuto**, jak je znázorněno v následujícím příkladu.
     

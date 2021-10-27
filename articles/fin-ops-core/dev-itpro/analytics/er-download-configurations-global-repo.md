@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724410"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605324"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby
 
@@ -63,7 +63,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
     > [!NOTE]
     > Tlačítko **Import** nebude k dispozici u verzí konfigurace ER, které jsou již v aktuální instanci Finance přítomny.
 
-    ![Stránka úložiště konfigurace.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Stránka úložiště konfigurace, záložka Konfigurace.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Import filtrovaných konfigurací
 
@@ -77,7 +77,7 @@ Toto téma vysvětluje, jak stahovat [konfigurace elektronického vykazování (
 4. Na pevné záložce **Konfigurace** vyberte **Import**, chcete-li stáhnout filtrované konfigurace z globálního úložiště do aktuální instance.
 5. Na pevné záložce **Konfigurace** vyberte **Reset filtru** k vyčištění stanovených podmínek výběru.
 
-    ![Stránka úložiště konfigurace.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Stránka úložiště konfigurace, záložka Verze, tlačítko Importovat.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > V závislosti na nastavení ER jsou konfigurace ověřeny po jejich importu. Můžete být upozorněni na potíže se zjištěnou nekonzistencí. Tyto potíže je nutné před importováním verze konfigurace odstranit. Další informace naleznete v seznam souvisejících zdrojů pro toto téma.

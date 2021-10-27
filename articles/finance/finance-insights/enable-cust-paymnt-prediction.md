@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b324891b38f851f8cce9210e3d09a26d567a291
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b1a40db34d42c3f25e910309a9e5ef7b0e7e0361
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386580"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599367"
 ---
 # <a name="enable-customer-payment-predictions"></a>Povolit předpovědi plateb od zákazníka
 
@@ -41,7 +41,7 @@ Toto téma vysvětluje, jak zapnout a nakonfigurovat funkci předpovědi plateb 
 2. Zapněte funkci přehledy plateb zákazníků:
 
     1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
-    2. Najděte funkci, která je pojmenována **Přehledy plateb zákazníků (náhled)**.
+    2. Najděte funkci, která je pojmenována **(Preview) Přehledy plateb zákazníků**.
     3. Vyberte **Povolit**.
 
     Funkce Přehledy plateb zákazníků je nyní zapnutá a připravená ke konfiguraci.

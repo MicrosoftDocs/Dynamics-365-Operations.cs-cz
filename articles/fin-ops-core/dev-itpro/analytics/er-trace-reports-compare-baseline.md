@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: ecca65508c048e2946d912f2bf0292d811fb4eabac9602a35f1ce26f4ebe1da6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769917"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605175"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
 
@@ -76,7 +76,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 3. V rozevíracím dialogovém okně v poli **Název** zadejte **Model pro učení směrných plánů ER**.
 4. Vyberte **Vytvořit konfiguraci** pro potvrzení vytvoření nové položky datového modelu ER.
 
-![Dialogové okno Vytvořit konfiguraci – rozevírací seznam.](media/GER-BaselineSample-ModelAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
+![Vytvoření konfiguračního dialogového okna, přidání nové konfigurace modelu ER.](media/GER-BaselineSample-ModelAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
 
 ### <a name="design-a-data-model"></a>Navržení datového modelu
 
@@ -99,7 +99,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 3. Do pole **Název** zadejte **Formát pro učení směrných plánů ER**.
 4. Vyberte **Vytvořit konfiguraci** pro potvrzení vytvoření nové položky formátu ER.
 
-![Dialogové okno Vytvořit konfiguraci – rozevírací seznam.](media/GER-BaselineSample-FormatAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
+![Vytvoření konfiguračního dialogového okna, přidání nové konfigurace formátu ER.](media/GER-BaselineSample-FormatAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
 
 ### <a name="design-a-format"></a>Návrh formátu
 
@@ -107,41 +107,41 @@ V tomto příkladu vytvoříte jednoduchý formát ER pro generování dokument�
 
 1. Na stránce **Konfigurace** v podokně akcí vyberte možnost **Návrhář**.
 2. Vyberte **Přidat kořen**.
-2. V rozevíracím dialogovém okně proveďte následující kroky:
+3. V rozevíracím dialogovém okně proveďte následující kroky:
 
     1. Ve stromovém zobrazení vyberte **Společné\\Soubor**.
     2. Do pole **Název** zadejte **Výstup**.
     3. Vyberte **OK**.
 
-3. Vyberte **přidat**.
-4. V rozevíracím dialogovém okně proveďte následující kroky:
+4. Vyberte **přidat**.
+5. V rozevíracím dialogovém okně proveďte následující kroky:
 
     1. Ve stromovém zobrazení vyberte **XML\\Element**.
     2. Do pole **Název** zadejte **Dokument**.
     3. Vyberte **OK**.
 
-5. Ve stromovém zobrazení vyberte **Výstup\\Dokument**.
-6. Vyberte **přidat**.
-7. V rozevíracím dialogovém okně proveďte následující kroky:
+6. Ve stromovém zobrazení vyberte **Výstup\\Dokument**.
+7. Vyberte **přidat**.
+8. V rozevíracím dialogovém okně proveďte následující kroky:
 
     1. Ve stromovém zobrazení vyberte **XML\\Attribute**.
     2. Do pole **Název** zadejte **ID**.
     3. Vyberte **OK**.
 
-    ![Stránka návrháře formátu.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
+    ![Stránka návrháře formátu, atribut XML vybraný ve stromu.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
 
-8. Na kartě **Mapování** vyberte **Odstranit**.
-9. Vyberte **Přidat kořen**.
-10. V rozevíracím dialogovém okně ve stromové struktuře vyberte možnost **Obecný\\vstupní parametr uživatele** a potom postupujte následujícím způsobem:
+9. Na kartě **Mapování** vyberte **Odstranit**.
+10. Vyberte **Přidat kořen**.
+11. V rozevíracím dialogovém okně ve stromové struktuře vyberte možnost **Obecný\\vstupní parametr uživatele** a potom postupujte následujícím způsobem:
 
     1. Do pole **Název** zadejte **ID**.
     2. Do pole **Popisek** zadejte **Zadat ID**.
     3. Vyberte **OK**.
 
-11. Ve stromovém zobrazení vyberte **Výstup\\Dokument\\Id**.
-12. Vyberte **Vazba** a potom **Uložit**.
+12. Ve stromovém zobrazení vyberte **Výstup\\Dokument\\Id**.
+13. Vyberte **Vazba** a potom **Uložit**.
 
-![Stránka návrháře formátu.](media/GER-BaselineSample-FormatMappingDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
+![Stránka návrháře formátu, karta Mapování.](media/GER-BaselineSample-FormatMappingDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
 
 Na základě navržené struktury vygeneruje konfigurovaný formát soubor XML. Tento sobor XML obsahuje prvek **Kořen** s atributem **ID** nastaveným na hodnotu, kterou uživatel zadá do dialogového okna ER runtime.
 
@@ -201,7 +201,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 10. V poli **Směrný plán** zadejte nebo vyberte přílohu **out.Admin**.
 11. Zvolte možnost **Uložit**.
 
-![Stránka směrného plánu elektronického výkaznictví.](media/GER-BaselineSample-SetupBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka se směrným plánem formátu elektronického výkaznictví, karta základní plány s vybraným základním plánem.](media/GER-BaselineSample-SetupBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Spuštění navrženého formát ER a kontrola protokolu pro analýzu výsledků
 
@@ -212,7 +212,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 5. Vyberte **OK**.
 6. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurovat protokoly ladění**.
 
-    ![Stránka protokolů spouštění elektronického výkaznictví.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
+    ![Stránka protokolů spuštění elektronického hlášení se stejnými základními hodnotami.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
 
     > [!NOTE]
     > Protokol spuštění obsahuje informace o výsledcích porovnání generovaného souboru s nakonfigurovaným směrným plánem. V tomto příkladu protokol udává, že vygenerovaný soubor a směrný plán jsou stejné.
@@ -228,7 +228,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 5. Vyberte **OK**.
 6. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurovat protokoly ladění**.
 
-    ![Stránka protokolů spouštění elektronického výkaznictví.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
+    ![Stránka protokolů spuštění elektronického hlášení s různými základními hodnotami.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
 
     > [!NOTE]
     > Protokol spuštění obsahuje informace o výsledcích porovnání generovaného souboru s nakonfigurovaným směrným plánem. V tomto příkladu protokol udává, že vygenerovaný soubor a směrný plán nejsou stejné.

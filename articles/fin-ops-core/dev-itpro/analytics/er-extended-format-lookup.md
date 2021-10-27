@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767211"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605150"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Umožňuje uživatelům nastavit odkaz formátu elektronického výkaznictví s dotazem na formát z globálního úložiště.
 
@@ -34,27 +34,27 @@ Pokud například konfigurujete [parametry zahraničního obchodu](../../../fina
 
 Pokud aktuální instance aplikace Finance neobsahuje žádné formáty elektronického výkaznictví související s obchodním procesem systému Intrastat, bude toto vyhledávací pole prázdné.
 
-[![Stránka Parametry zahraničního obchodu.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Stránka parametrů zahraničního obchodu, prázdné pole mapování formátu zprávy.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Pokud aktuální instance aplikace Finance neobsahuje žádné formáty elektronického výkaznictví související s obchodním procesem systému Intrastat, toto vyhledávací pole nabídne formáty elektronického výkaznictví.
 
-[![Stránka Parametry zahraničního obchodu.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Stránka parametrů zahraničního obchodu, pole mapování formátu zprávy s možnostmi.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Toto vyhledávání nabízí pouze formáty elektronického výkaznictví, které již byly importovány do aktuální instance Finance. Chcete-li [importovat](./tasks/er-import-configuration-lifecycle-services.md) řešení elektronického výkaznictví do aktuální instance Finance, musíte mít oprávnění ke spuštění příslušné funkce rámce elektronického výkaznictví, která podporuje [životní cyklus](general-electronic-reporting-manage-configuration-lifecycle.md) řešení elektronického výkaznictví obsahující formáty elektronického výkaznictví.
 
 Při spuštění verze Finance 10.0.9 (vydání z dubna 2020) bylo rozšířeno uživatelské rozhraní vyhledávání formátu elektronického výkaznictví, které je implementováno pomocí rozhraní API rámce elektronického výkaznictví. Stále je možné vybrat existující formáty elektronického výkaznictví, které jsou na záložce s náhledem **Vybrat konfiguraci formátu**. Kromě toho nabízí rozšířené vyhledávání novou možnost vyhledávání v globálním úložišti za účelem vyhledání konkrétních formátů elektronického výkaznictví. Všechny formáty elektronického výkaznictví globálního úložiště jsou nabízeny na záložce s náhledem **Import z globálního úložiště**.
 
-[![Stránka Parametry zahraničního obchodu.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Stránka parametrů zahraničního obchodu, import z FastTab z globálního úložiště.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Podobně jako u záložky s náhledem **Vybrat formát konfigurace** zobrazuje záložka s náhledem **Import z globálního úložiště** zobrazuje pouze formáty elektronického výkaznictví, které se vztahují k obchodnímu procesu, pro který je vybrán formát elektronického výkaznictví v tomto vyhledávacím poli. V tomto příkladu se jedná o generování prohlášení systému Intrastat. Formát elektronického výkaznictví je použitelný pro společnost, k níž je uživatel aktuálně přihlášen, v závislosti na kontextu země společnosti.
 
 Při výběru formátu elektronického výkaznictví na záložce s náhledem **Import z globálního úložiště** je vybraná [konfigurace](general-electronic-reporting.md#Configuration) formátu elektronického výkaznictví importována z globálního úložiště do aktuální instance Finance.
 
-[![Stránka Parametry zahraničního obchodu.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Stránka parametrů zahraničního obchodu, poznámka ke zpracování operace.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Po úspěšném dokončení importu bude v tomto vyhledávacím poli uložen odkaz na importovaný formát elektronického výkaznictví. Při prvním přístupu ke globálnímu úložišti je nutné použít poskytnutý odkaz pro registraci k [Regulatory Configuration Service](https://aka.ms/rcs), která se používá pro správu přístupu ke globálnímu úložišti.
 
-[![Stránka Parametry zahraničního obchodu.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Stránka parametrů zahraničního obchodu, odkaz na registraci do RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Ve výchozím nastavení záložka s náhledem **Import z globálního úložiště** zobrazí seznam formátů elektronického výkaznictví z dočasného úložiště, které je automaticky vytvořeno na základě obsahu globálního úložiště pro zlepšení výkonu. K tomu dojde při prvním otevření záložky s náhledem **Import globálního úložiště**, což může trvat několik sekund.
 

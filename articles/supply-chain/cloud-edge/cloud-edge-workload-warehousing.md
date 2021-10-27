@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500420"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641153"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -171,7 +171,8 @@ Následující funkce správy skladu nejsou aktuálně podporovány v úlohách 
 - Zpracování s negativními zásobami na skladě.
 - Zpracování skladové práce s dodacími listy.
 - Zpracování skladové práce s manipulací s materiálem / automatizací skladu.
-- Použití obrazu hlavních dat produktu (například v mobilní aplikaci Řízení skladu).
+- Obrázky hlavních dat produktu (například v mobilní aplikaci Warehouse Management).
+- Sdílení dat mezi společnostmi pro produkty.
 
 > [!WARNING]
 > Některé funkce skladu nebudou k dispozici pro sklady se spuštěnými úlohami správy skladu na jednotce škálování a také nejsou podporovány na rozbočovači nebo na úlohách jednotky škálování.
@@ -187,10 +188,9 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Zpracovat                                                      | Centrum | Pracovní zatížení provedení skladu na jednotce škálování |
 |--------------------------------------------------------------|-----|------------------------------|
 | Zpracování zdrojového dokumentu                                   | Ano | Žádný |
-| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Žádná |
-| Náklady na doručení a příjem přepravovaného zboží                                         | Ano | Žádná |
-| Uvolnění do skladu                                         | Ano | Žádná |
-| Plánovaný cross docking                                        | Žádná  | Žádná |
+| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Žádný |
+| Uvolnit do skladu                                         | Ano | Žádný |
+| Plánovaný cross docking                                        | Žádný  | Žádný |
 | Konsolidace dodávky                                       | Ano, při použití plánování vytížení | Ano |
 | Zpracování vlny dodávky                                     | Žádný  |Ano, kromě **Stavba a třídění nákladu** |
 | Udržování zásilek pro vlnu                                  | Žádný  | Ano|
@@ -222,9 +222,10 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 
 | Zpracovat                                                          | Centrum | Pracovní zatížení provedení skladu na jednotce škálování<BR>*(Položky označené „Ano“ platí pouze pro skladové objednávky)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Zpracování&nbsp;zdrojového&nbsp;dokumentu                             | Ano | Žádný |
-| Zpracování správy nakládky a přepravy                    | Ano | Žádný |
-| Potvrzení příchozí dodávky                                    | Ano | Žádný |
+| Zpracování&nbsp;zdrojového&nbsp;dokumentu                             | Ano | Žádná |
+| Zpracování správy nakládky a přepravy                    | Ano | Žádná |
+| Náklady na doručení a příjem přepravovaného zboží                       | Ano | Žádná |
+| Potvrzení příchozí dodávky                                    | Ano | Žádná |
 | Uvolnění nákupní objednávky do skladu (zpracování objednávky skladu) | Ano | Žádný |
 | Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p> | Ano | Žádný |
 | Přijetí zboží nákupní objednávky a odložení                       | <p>Ano,&nbsp;když&nbsp;tam&nbsp;není skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p> |

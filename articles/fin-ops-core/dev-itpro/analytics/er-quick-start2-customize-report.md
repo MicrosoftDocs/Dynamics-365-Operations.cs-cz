@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770013"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605223"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Úprava formátu elektronického výkaznictví a vytvoření vlastního elektronického dokladu
 
@@ -160,7 +160,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance systému Mic
     - **Mapování modelu platby 1611** – Tato konfigurace obsahuje komponentu ER [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components), jež popisuje, jak se datový model vyplněn za chodu daty z aplikace.
     - **BACS (Velká Británie)** - Tato konfigurace obsahuje komponenty ER [formát](general-electronic-reporting.md#FormatComponentOutbound) a mapování formátu. Komponenta formát určuje rozvržení sestavy. Komponenta mapování formátu obsahuje zdroj dat modelu a určuje, jak se vyplněno rozvržení sestavy pomocí tohoto zdroje dat za chodu vyplňuje.
 
-![Stránka konfigurace.](./media/er-quick-start2-imported-solution1.png)
+![Ve stromové struktuře je k dispozici stránka s konfiguracemi se specifikovanými konfiguracemi ER.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Příprava platby dodavateli ke zpracování
 
@@ -222,7 +222,7 @@ Musíte nakonfigurovat elektronický způsob platby tak, aby využíval importov
 4. Na záložce s náhledem **Formáty souborů** nastavte u možnosti **Obecný formát elektronického exportu** hodnotu **Ano**.
 5. V poli **Exportovat konfiguraci formátu** vyberte konfiguraci formátu **BACS (Velká Británie)**.
 
-    ![Stránka Způsob platby – dodavatelé.](./media/er-quick-start2-method-of-payment1.png)
+    ![Způsoby platby – stránka prodejců pro nastavení elektronické platební metody pro zpracování plateb dodavatele ve standardním formátu.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Zvolte možnost **Uložit**.
 
@@ -273,7 +273,7 @@ V tomto případě musíte jako zástupce společnosti Litware, Inc. vytvořit 
 
 Vytvoří se verze 1.1.1 **BACS (Velká Británie – vlastní)** konfigurace formátu ER. Tato verze je ve [stavu](general-electronic-reporting.md#component-versioning) **Konceptu** a je editovatelná. Aktuální obsah vašeho vlastního formátu ER odpovídá obsahu formátu poskytnutého společností Microsoft.
 
-![Stránka konfigurace.](./media/er-quick-start2-derived-format-configuration1.png)
+![Stránka konfigurace s verzi 1.1.1 BACS (Spojené království – vlastní) konfigurace formátu ER.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Úprava vlastního formátu
 
@@ -349,7 +349,7 @@ Elektronický způsob platby musíte nakonfigurovat tak, aby byl při zpracován
 4. Na záložce s náhledem **Formát souboru** nastavte u možnosti **Obecný formát elektronického exportu** hodnotu **Ano**.
 5. V poli **Exportovat konfiguraci formátu** vyberte konfiguraci formátu **BACS (Velká Británie – vlastní)**.
 
-    ![Stránka Způsob platby – dodavatelé.](./media/er-quick-start2-method-of-payment2.png)
+    ![Způsoby platby – stránka prodejců pro nastavení elektronické platební metody pro zpracování plateb dodavatele ve vlastním formátu.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Zvolte možnost **Uložit**.
 
@@ -378,7 +378,7 @@ Elektronický způsob platby musíte nakonfigurovat tak, aby byl při zpracován
 
         Všimněte si, že v souladu se strukturou vlastního formátu ER platební řádek ve vygenerovaném souboru nyní [začíná](#PositionSWIFTCode) kódem SWIFT, který byl [zadán](#DefineSWIFTCode) pro bankovní účet dodavatele, jehož platba se zpracovává.
 
-        ![Platební soubor ve formátu TXT.](./media/er-quick-start2-payment-file2.png)
+        ![Platební soubor ve formátu TXT používaný ke zpracování platby dodavatele.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Import nových verzí standardních konfigurací formátu ER
 
@@ -395,7 +395,7 @@ Chcete-li přidat nové verze konfigurace ER do aktuální instance systému Fin
 5. Na záložce s náhledem **Verze** vyberte jako požadovanou verzi formátu vybrané konfigurace ER **3.3**.
 6. Vyberte **Importovat**. Vybraná verze se stáhne z globálního úložiště do aktuální instance aplikace Finance.
 
-![Stránka úložiště konfigurace.](./media/er-quick-start2-import-solution2.png)
+![Stránka úložiště konfigurace, záložka Verze, tlačítko Importovat.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Pokud máte potíže s přístupem na [globální úložiště](er-download-configurations-global-repo.md), můžete si místo toho [stáhnout konfigurace](download-electronic-reporting-configuration-lcs.md) ze služby Lifecycle Services (LCS).
@@ -507,7 +507,7 @@ Chcete-li začít používat novou funkčnost verze 3.3 formátu **BACS (Velká 
 
         Všimněte si, že platební řádek ve vygenerovaném souboru začíná kódem SWIFT, který byl zadán pro bankovní účet dodavatele, jehož platba se zpracovává.
 
-        ![Platební soubor ve formátu TXT.](./media/er-quick-start2-payment-file3.png)
+        ![Platební soubor ve formátu TXT používaný ke zpracování platby dodavatele pomocí nově vytvořeného formátu ER.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Další prostředky
 

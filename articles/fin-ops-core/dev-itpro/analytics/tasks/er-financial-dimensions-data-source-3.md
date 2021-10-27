@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548eec45739a52d4eb168a80660540196225b2ed482d2104a4cd0d00503109dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773781"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605178"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 3 - návrh sestavy)
 
@@ -92,7 +92,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 59. Klikněte na možnost Přidat atributy.
 60. Do pole Název zadejte Popis.
 61. Klepněte na tlačítko OK.
-![Stránka návrháře operací ER.](../media/er-financial-dimensions-guides-format1.png)
+![Strom stránky návrháře formátu.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mapování prvků sestavy na zdroje dat
 1. Klikněte na kartu Mapování.
@@ -141,7 +141,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 44. Klikněte na možnost Vazba.
 45. Klikněte na tlačítko Uložit.
 46. Zavřete stránku.
-![Stránka návrháře operací ER.](../media/er-financial-dimensions-guides-format2.png)
+![Stránka návrháře formátu, prvky sestavy mapované na zdroje dat.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

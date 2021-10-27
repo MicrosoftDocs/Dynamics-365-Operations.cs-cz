@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773338"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641104"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Povolit Power BI pro globální účetnictví zásob
 
@@ -49,7 +49,10 @@ Pro nastavení integrace Power BI postupujte následujícím způsobem.
 1. Nakonfigurujte sestavu **Globální účtování zásob** Power BI podle těchto kroků:
 
     1. Přejděte do **Můj pracovní prostor**, vyhledejte datovou sadu pro Globální účetnictví zásob a poté v nabídce **Možnosti** vyberte **Nastavení**.
-    1. V **Nastavení pro globální účtování zásob** rozbalte **Parametry** a podle potřeby aktualizujte všechny parametry.
+    1. V **Nastavení pro globální účtování zásob** rozbalte **Parametry** a podle potřeby aktualizujte všechny parametry. Zkontrolujte zejména následující nastavení:
+        1. Přepište výchozí hodnoty **Dataverse Url** a **ID prostředí** za hodnoty nalezené na stránce **Podrobnosti o prostředí** v LCS (v části **Integrace Power Platform**).
+        1. Vyberte odkaz **Upravit přihlašovací údaje** vedle štítku **CD** v části **Přihlašovací údaje ke zdroji dat**. Poté se přihlaste do svého účtu Dataverse pomocí metody ověřování **OAuth2**.
+    1. Ověřte, že zprávy Power BI nalezené v části **Můj pracovní prostor \> Zprávy \> Globální účetnictví zásob** nyní fungují správně a zobrazují obsah z vašeho systému.
 
 1. Zaregistrujte aplikaci podle popisu v [Konfigurace integrace PowerBI.com](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Integrujte soubor sestavy **Globální účtování zásob** Power BI do Dynamics 365 Supply Chain Management podle těchto kroků:

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8994a11c9d1d90fd8b66b17900248f941e307b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579777"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7638463"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -50,7 +50,7 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 
 | Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
-| Prodej a marketing | Vylepšení výkonu čištění historie prodeje | Vyčištění historie prodeje může trvat dlouho, pokud se zřídka spouští v prostředích s velkým objemem aktualizací prodeje. Chcete-li zkrátit dobu trvání a zlepšit spolehlivost, tato funkce rozděluje vyčištění na dávky, které běží po omezenou dobu. Kde je to možné, využijí se možnosti databáze, aby se minimalizovalo zamykání a zabránilo se spojování transakčních tabulek během čištění. |
+| Prodej a marketing | Vylepšení výkonu čištění historie prodeje | Vyčištění historie prodeje může trvat dlouho, pokud se zřídka spouští v prostředích s velkým objemem aktualizací prodeje. Chcete-li zkrátit dobu trvání a zlepšit spolehlivost, tato funkce rozděluje vyčištění na dávky, které běží po omezenou dobu. Kde je to možné, využijí se možnosti databáze, aby se minimalizovalo zamykání a zabránilo se spojování transakčních tabulek během čištění. Další informace viz [Vylepšení výkonu čištění historie prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Prodej a marketing | Aktualizovat požadované datum přijetí o datum potvrzení pro mezipodnikové objednávky | Tato funkce vám umožňuje řídit, co se stane s hodnotami pole data prodeje a nákupu při použití mezipodnikového přímého doručení. Můžete si vybrat, zda bude systém požadovaná data aktualizovat, nebo jejich aktualizaci přeskočit. Pokud aktualizaci přeskočíte, budou požadovaná data představovat to, co zákazník požadoval. Pokud povolíte aktualizaci, požadovaná data (při použití kontroly data dodání) představují pouze zpočátku to, co zákazník požadoval. Kontrola data dodání, pokud se liší od *Žádný*, zruší to, co bylo původně požadováno. Tuto možnost můžete nastavit pomocí nového nastavení **Aktualizovat požadované datum přijetí o potvrzené datum** mezipodnikového dodavatele nebo nastavení zákazníka.<br><br>Pokud je funkce deaktivována, systém přepíše požadované datum přijetí u původních prodejních objednávek na základě pravidla kontroly data dodání, ale požadované datum odeslání zůstane tak, jak je. |
 | Řízení skladu | Zaokrouhlit množství dolů na nejbližší prodejní jednotku při uvolnění do skladu | Tato funkce přidává možnost, která může omezit množství objednávek při propuštění do skladu. Pokud je tato možnost povolena, množství objednávek bude zaokrouhleno dolů na nejbližší celou prodejní jednotku a objednávky obsahující množství pro méně než jednu prodejní jednotku budou pro vydání odmítnuty. |
 | Řízení skladu | Metoda vlny „plánované vytvoření práce“ v celé organizaci | Po povolení této funkce bude metoda vlny *Plánování vytvoření práce* přidána a nakonfigurována pro paralelní běh napříč všemi právnickými osobami. Bude také ovlivněno několik dalších nastavení. Úplné informace viz [Plánování vytváření práce během vlny](../warehousing/configure-wave-schedule-work-creation.md). |
