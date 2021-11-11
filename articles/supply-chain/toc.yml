@@ -74,12 +74,12 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (listopad 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (říjen 2021)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (srpen 2021)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -260,15 +260,15 @@
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Začínáme
                       items:
-                        - name: Začněte se správou služby elektronické fakturace
+                        - name: Začínáme se správou služby elektronické fakturace
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začněte s elektronickou fakturací
+                        - name: Začínáme s elektronickou fakturací
                           href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začněte s elektronickou fakturací pro Brazílii
+                        - name: Začínáme s elektronickou fakturací pro Brazílii
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začněte s elektronickou fakturací pro Egypt
+                        - name: Začínáme s elektronickou fakturací pro Egypt
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začněte s elektronickou fakturací pro Mexiko
+                        - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Nastavení elektronické fakturace
                           href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
@@ -278,7 +278,7 @@
                   items:
                     - name: Přehled výpočtu daně
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Začněte s výpočtem daně
+                    - name: Začínáme s výpočtem daně
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Podpora daňových funkcí u převodních příkazů
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Hlavní plánování s obchodními smlouvami nákupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Parametry data a času používané optimalizací plánování
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Tolerance zpoždění (záporné dny)
@@ -1885,11 +1887,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace globálního adresáře
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nastavení adresy
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Často kladené dotazy o adresáři
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace adresářů
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Systém workflow
+            - name: Systém pracovního postupu
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
@@ -2427,19 +2431,7 @@
                       href: production-control/release-production-orders.md
                     - name: Vykázání výrobních zakázek jako dokončených
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Nastavení a použití rozhraní pro provádění výrobního provozu
-                      items:
-                        - name: Konfigurace rozhraní pro provádění výrobního provozu
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Návrh rozhraní pro provádění výrobního provozu
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Nastavení zařízení ke spuštění rozhraní pro provádění výrobního provozu
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
-                          href: production-control/production-floor-execution-use.md
-                        - name: Vytvoření rozhraní pro provádění výrobního provozu
-                          href: production-control/production-floor-execution-styles.md
-                    - name: Konfigurace úkolového lístku pro zařízení
+                    - name: Konfigurovat úkolový lístek pro zařízení
                       href: production-control/config-job-card-device.md
                     - name: Ohlášení jako dokončené ze zařízení úkolového lístku
                       href: production-control/report-finished-job-device.md
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Zaúčtování výroby
                       href: cost-management/production-posting.md
+            - name: Nastavení a použití rozhraní pro provádění výrobního provozu
+              items:
+                - name: Konfigurace rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-configure.md
+                - name: Návrh rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Nastavení zařízení ke spuštění rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-setup.md
+                - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-use.md
+                - name: Vytvoření rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-styles.md
         - name: Správa rabatu
           items:
             - name: Přehled modulu správy rabatu
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Konfigurace propagovaných polí pro kroky v mobilním zařízení
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Konfigurace náhradního procesu pro kroky v položkách nabídky mobilního zařízení
+                      href: warehousing/warehouse-app-detours.md
                     - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globální parametry mobilního zařízení
                   href: warehousing/mobile-device-parameters.md
+                - name: Uživatelské účty mobilního zařízení
+                  href: warehousing/mobile-device-work-users.md
                 - name: Uživatelská nastavení mobilního zařízení
                   href: warehousing/mobile-device-user-settings.md
                 - name: Zpracování události aplikace skladu
@@ -3737,6 +3747,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Řízení skladu
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Při nastavování připojení aplikace nebyla nalezena důvěryhodná kotva pro certifikační cestu
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Výzva k automatické rezervaci čísla dávky se zobrazuje i u dostupných zásob
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Práce vyzvedávání nelze odblokovat kvůli nedokončeným doplňovacím pracím
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: 'Nelze přesunout zásoby na místo, kde se kontrolují registrační značky'
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Při nastavování připojení aplikace nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: Profil seskupení nebyl nalezen
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: Opravu poznámky k dodání nelze zpracovat
@@ -3819,8 +3833,6 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Nelze zrušit rezervaci zásob na řádku prodejní objednávky
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 'Dodávku nemůžete potvrdit, protože je zákazník blokován'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Dodávku nemůžete potvrdit, protože řádky vytížení mají nulové množství'

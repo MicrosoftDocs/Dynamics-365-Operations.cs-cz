@@ -14,12 +14,12 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizace Platform Update pro verzi 10.0.23
+                  href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Nástroj Platform Updates pro verzi 10.0.22 (listopad 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: Nástroj Platform Updates pro verzi 10.0.21 (říjen 2021)
                   href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: Nástroj Platform Updates pro verzi 10.0.20 (srpen 2021)
-                  href: get-started/whats-new-platform-updates-10-0-20.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -32,42 +32,6 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-        - name: Obchodní události
-          items:
-            - name: Přehled obchodních událostí
-              href: business-events/home-page.md
-            - name: Obchodní události aplikace
-              href: business-events/app-business-events.md
-            - name: Obchodní události workflow
-              href: business-events/business-events-workflow.md
-            - name: Obchodní události dávky
-              href: business-events/system-business-events.md
-            - name: Výstrahy jako obchodní události
-              href: business-events/alerts-business-events.md
-            - name: Obchodní události v Microsoft Flow
-              href: business-events/business-events-flow.md
-            - name: Dokumentace pro vývojáře obchodních událostí
-              href: business-events/business-events-dev-doc.md
-            - name: Řešení problémů obchodních událostí
-              href: business-events/troubleshooting.md
-            - name: Případy použití pro obchodní události
-              href: business-events/potential-use-cases.md
-            - name: Kurzy
-              items:
-                - name: Obchodní události a Microsoft Flow
-                  href: business-events/how-to/how-to-flow.md
-                - name: Obchodní události a Azure Event Grid
-                  href: business-events/how-to/how-to-eventgrid.md
-                - name: Obchodní události a Azure Service Bus
-                  href: business-events/how-to/how-to-servicebus.md
-                - name: Obchodní události a schválení workflow
-                  href: business-events/how-to/how-to-workflow.md
-                - name: Obchodní události a Microsoft Forms Pro
-                  href: business-events/how-to/FormsPro.md
-                - name: Obchodní události a Azure Event Hubs
-                  href: business-events/how-to/event-hub.md
-                - name: Obchodní události v uzávěrce finančního období
-                  href: business-events/how-to/period-close.md
         - name: Průběžné doručování
           items:
             - name: Domovská stránka Průběžné doručování
@@ -592,7 +556,7 @@
               items:
                 - name: Podpora pro jazyk X++
                   items:
-                    - name: Visual Studio 2017 požadavky pro X++
+                    - name: Visual Studio požadavky pro X++
                       href: dev-tools/developer-tools-vs2017.md
                     - name: Ladění kódu X++
                       href: dev-tools/debug-xpp.md
@@ -606,6 +570,8 @@
                       href: dev-tools/author-best-practice-rules.md
                     - name: Vlastnosti průzkumníka aplikací
                       href: dev-ref/application-explorer-aot-properties.md
+                    - name: Atribut SysSetupConfigAttribute
+                      href: dev-tools/syssetupconfigattribute.md
                 - name: Jazykové reference pro X++
                   items:
                     - name: Přehled jazykové reference pro X++
@@ -1038,6 +1004,10 @@
           items:
             - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
               href: power-platform/overview.md
+            - name: Povolení integrace Power Platform
+              href: power-platform/enable-power-platform-integration.md
+            - name: Ověřování a autorizace
+              href: power-platform/authentication-and-authorization.md
             - name: Duální zápis
               items:
                 - name: Domovská stránka duálního zápisu
@@ -1084,6 +1054,8 @@
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Úprava právnické osoby po nastavení duálního zápisu
                       href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Pozastavení duálního zápisu kvůli údržbě
+                      href: data-entities/dual-write/pause-for-maintenance.md
                     - name: "Správa chyb a\_oznámení výstrah"
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Správa životního cyklu aplikace
@@ -1176,6 +1148,8 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                         - name: Ověření konfigurace duálního zápisu v aplikacích Finance and Operations a Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Kódy chyb pro kontrolu stavu mapy tabulky
+                          href: data-entities/dual-write/table-map-health-check.md
                 - name: "Časté dotazy k\_duálnímu zápisu"
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuální entity
@@ -1186,12 +1160,52 @@
                   href: power-platform/entity-modeling.md
                 - name: Správa životního cyklu aplikace
                   href: power-platform/application-lifecycle-management.md
-                - name: Reference správce Finance and Operations a Dataverse
+                - name: Konfigurace virtuálních entit Dataverse
                   href: power-platform/admin-reference.md
-                - name: "Portály Power Apps s\_Finance and Operations"
+                - name: Povolení virtuálních entit Dataverse
+                  href: power-platform/enable-virtual-entities.md
+                - name: Portály Power Apps s Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: "Často dotazy k\_virtuálním entitám Finance and Operations"
+                - name: "Časté dotazy k\_virtuálním entitám Finance and Operations"
                   href: power-platform/faq.md
+            - name: Obchodní události
+              items:
+                - name: Přehled obchodních událostí
+                  href: business-events/home-page.md
+                - name: Obchodní události aplikace
+                  href: business-events/app-business-events.md
+                - name: Obchodní události workflow
+                  href: business-events/business-events-workflow.md
+                - name: Obchodní události dávky
+                  href: business-events/system-business-events.md
+                - name: Výstrahy jako obchodní události
+                  href: business-events/alerts-business-events.md
+                - name: Datové události
+                  href: business-events/data-events.md
+                - name: Obchodní události v Power Automate
+                  href: business-events/business-events-flow.md
+                - name: Dokumentace pro vývojáře obchodních událostí
+                  href: business-events/business-events-dev-doc.md
+                - name: Řešení problémů obchodních událostí
+                  href: business-events/troubleshooting.md
+                - name: Případy použití pro obchodní události
+                  href: business-events/potential-use-cases.md
+                - name: Kurzy
+                  items:
+                    - name: Obchodní události a Power Automate
+                      href: business-events/how-to/how-to-flow.md
+                    - name: Obchodní události a Azure Event Grid
+                      href: business-events/how-to/how-to-eventgrid.md
+                    - name: Obchodní události a Azure Service Bus
+                      href: business-events/how-to/how-to-servicebus.md
+                    - name: Obchodní události a schválení workflow
+                      href: business-events/how-to/how-to-workflow.md
+                    - name: Obchodní události a Microsoft Forms Pro
+                      href: business-events/how-to/FormsPro.md
+                    - name: Obchodní události a Azure Event Hubs
+                      href: business-events/how-to/event-hub.md
+                    - name: Obchodní události v uzávěrce finančního období
+                      href: business-events/how-to/period-close.md
             - name: Doplňky
               items:
                 - name: Přehled doplňků
@@ -1582,6 +1596,8 @@
                   href: sysadmin/batch-history-cleanup.md
                 - name: Zrušení provádění dávkové úlohy
                   href: sysadmin/batch-abort.md
+                - name: Dávkové OData API
+                  href: sysadmin/batch-odata-api.md
             - name: Poradce při optimalizaci
               items:
                 - name: Přehled poradce při optimalizaci

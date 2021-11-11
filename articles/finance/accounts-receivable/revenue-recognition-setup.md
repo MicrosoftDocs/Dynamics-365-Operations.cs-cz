@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759010"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675171"
 ---
 # <a name="revenue-recognition-setup"></a>Nastavení uznání výnosů
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "6759010"
 Byl přidán nový modul **Uznání výnosů**, který obsahuje položky nabídky pro veškerá požadovaná nastavení. Toto téma popisuje možnosti nastavení a jejich dopady.
 
 > [!NOTE]
-> Funkci uznání výnosů nelze zapnout prostřednictvím správy funkcí. V současné době ji aktivujete pomocí konfiguračních klíčů.
-
-> Uznání výnosů (včetně funkce sady) nelze použít v kanálech Commerce (elektronické obchodování, POS, kontaktní středisko). Položky konfigurované s uznáním výnosů nesmí být přidány na objednávky nebo do transakcí vytvořených v kanálech Commerce.
+> Funkci uznání výnosů je nyní povolena ve výchozím nastavení pomocí správy funkcí. Pokud vaše organizace tuto funkci nepoužívá, můžete ji vypnout v pracovním prostoru **Správa funkcí**.
+>
+> Uznání výnosů, včetně funkce sady, není podporováno pro kanály Commerce (elektronické obchodování, POS a kontaktní středisko). Položky nakonfigurované pro uznání výnosů nesmí být přidány na objednávky nebo do transakcí vytvořených v kanálech Commerce.
 
 Modul **Uznání výnosů** má následující možnosti nastavení:
 
@@ -40,12 +40,16 @@ Modul **Uznání výnosů** má následující možnosti nastavení:
     - Skupiny položek a uvolněné produkty
     - Definování plánu výnosů
     - Definování výnosové ceny
+    - Nastavení zásob
 
-        - Účetní profily
-        - Sady
+        - Definování plánu výnosů
+        - Definování výnosové ceny
 
-    - Komponenty sady
-    - Položka sady
+    - Účetní profily
+    - Sady
+
+        - Komponenty sady
+        - Položka sady
 
 - Nastavení projektu
 
@@ -91,20 +95,27 @@ Zadejte popisné hodnoty do polí **Plán výnosů** a **Popis**. Následující
 - **Automatické smluvní podmínky** – Toto políčko zaškrtněte, pokud mají být automaticky nastavena data zahájení a ukončení smlouvy. Tato data jsou automaticky nastavena pouze pro uvolněné produkty typu výnosů **Podpora po uzavření smlouvy**. Datum zahájení smlouvy je automaticky nastaveno na požadované datum expedice řádku prodejní objednávky a datum ukončení smlouvy je automaticky nastaveno na datum zahájení plus počet měsíců nebo výskytů, který je definován v nastavení plánu výnosů. Například produkt na řádku prodejní objednávky je pro jednoletou záruku. Pro tento plán výnosů je zaškrtnuto pole výchozího plánu výnosů **12M** (12 měsíců) a **Automatické smluvní podmínky**. Pokud řádek prodejní objednávky má požadované datum expedice 16. prosince 2019, výchozí datum zahájení smlouvy je 16. prosince 2019 a výchozí datum ukončení smlouvy je 15. prosince 2020.
 - **Základ pro uznání** – Základ pro uznání určuje, jak je výnosová cena přidělena mezi výskyty.
 
-    - **Měsíčně podle dat** – Částka je přidělena na základě skutečných dnů v každém měsíci.
+    - **Měsíčně podle dnů** – Částka je přidělena na základě skutečných dnů v každém kalendářním měsíci.
     - **Měsíčně** – Částka je přidělena rovnoměrně mezi počet měsíců, který je definován ve výskytech.
     - **Výskyty** – Částka je přidělena rovnoměrně mezi výskyty, ale může zahrnovat období navíc, pokud jako způsob uznání vyberete **Skutečné počáteční datum**.
+    - **Fiskální období podle dnů** – Částka je přidělena na základě skutečných dnů v každém fiskálním období. 
 
-- **Způsob odpisu** – Způsob uznání určuje výchozí data, která jsou nastavena v plánu výnosů pro fakturu.
+    Výsledky možností **Měsíčně podle dnů** a **Fiskální období podle dnů** budou stejné, když fiskální období odpovídají kalendářním měsícům. Jedinou výjimkou je, když je způsob uznání nastaven na **Konec měsíce/období** a pole **Počáteční datum smlouvy** a **Koncové datum** pole jsou na řádku prodejní objednávky prázdná.
+
+- **Způsob uznání** – Způsob uznání určuje data, která jsou nastavena v plánu výnosů pro fakturu.
 
     - **Skutečné počáteční datum** – Plán je vytvořen buď pomocí data zahájení smlouvy (u položek podpory po uzavření smlouvy \[PCS\]), nebo podle data fakturace (u základních a nezákladních položek).
-    - **Prvního v měsíci** – Datum v prvním řádku plánu je datum zahájení smlouvy (nebo datum fakturace). Všechny následující řádky plánů jsou však vytvořeny pro prvního v měsíci.
+    - **Prvního v měsíci/období** – Datum v prvním řádku plánu je datum zahájení smlouvy (nebo datum fakturace). Všechny následující řádky plánů jsou však vytvořeny pro prvního v měsíci nebo fiskálním období.
     - **Rozdělení v polovině měsíce** – Datum v prvním řádku plánu závisí na datu fakturace. Pokud je faktura zaúčtována mezi prvním až patnáctým dnem v měsíci, vytvoří se plán výnosů pomocí prvního dne v měsíci. Pokud je faktura zaúčtována šestnáctého a později, vytvoří se plán výnosů pomocí prvního dne v následujícím měsíci.
-    - **Prvního v následujícím měsíci** – Datum v plánu je první den následujícího měsíce.
 
-Volbou tlačítka **Podrobnosti plánu výnosů** zobrazíte obecná období a procenta, která jsou v každém období uznána. Ve výchozím nastavení je hodnota **Procento uznání** rovnoměrně rozdělena mezi počet období. Pokud je základ uznání nastaven buď na **Měsíčně** nebo **Výskyty**, procento uznání lze změnit. Když změníte procento uznání, varovná zpráva vás upozorní, že celková hodnota se nerovná 100 procentům. Pokud obdržíte zprávu, můžete pokračovat v úpravách řádků. Před zavřením stránky se však musí celkové procento rovnat 100.
+        **Rozdělení v polovině měsíce** nelze vybrat, pokud je základ uznání nastaven na **Fiskální období podle dnů**.
 
-[![Podrobnosti plánu výnosů](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **První den v následujícím měsíci/období** – Datum začátku plánu je první den následujícího měsíce nebo fiskálního období.
+    - **Konec měsíce/období** – Datum v prvním řádku plánu je datum zahájení smlouvy (nebo datum fakturace). Všechny následující řádky plánu jsou však vytvořeny pro poslední den měsíce nebo fiskálního období. 
+
+Volbou tlačítka **Podrobnosti plánu výnosů** zobrazíte obecná období a procenta, která jsou v každém období uznána. Ve výchozím nastavení je hodnota **Procento uznání** rovnoměrně rozdělena mezi počet období. Pokud je základ uznání nastaven na **Měsíčně**, procento uznání lze změnit. Když změníte procento uznání, varovná zpráva vás upozorní, že celková hodnota se nerovná 100 procentům. Pokud obdržíte tuto zprávu, můžete pokračovat v úpravách řádků. Před zavřením stránky se však musí celkové procento rovnat 100.
+
+[![Podrobnosti plánu výnosů](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Nastavení zásob
 

@@ -74,12 +74,12 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (listopad 2021)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (říjen 2021)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (srpen 2021)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -240,6 +240,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Možnosti nastavení pro automatizaci faktur dodavatele
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Automatické použití záloh na přehled faktur dodavatele
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Generování řádků faktur při importu faktur dodavatele
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Odesílání faktur do systému pracovních postupů a spárování řádků příjemek produktů
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Zobrazení výsledků automatizace faktur dodavatele
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Účetní profil dodavatele
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Data faktur dodavatele
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Přecenění cizí měny pro závazky a pohledávky
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobilní schvalování faktur
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Plánování účetní osnovy
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Plánování místní účetní osnovy
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Vyrovnání transakcí mezi účty hlavní knihy
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Nastavení aliasu účtu hlavní knihy
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Vytvoření platby DPH
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Zaokrouhlování vyrovnání daně na základě vlastních desetinných míst měny
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: "Vytváření transakcí DPH v\_dokladech"
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Nastavení účetních skupin hlavní knihy pro DPH
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: "Začínáme s\_elektronickou fakturací pro Mexiko"
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: Použití služby elektronické fakturace k importu faktur dodavatele
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Nastavení elektronické fakturace
@@ -1568,6 +1580,8 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: "Použitelnost DPH a\_logika určování skupiny DPH"
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: Použití parametrů daňové jurisdikce pro nastavení výpočtu platební slevy
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Výpočet
                       items:
                         - name: 'Výpočet daně u cen, když jsou povoleny ceny včetně daní'
@@ -1594,6 +1608,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Výkaznictví ve Španělsku
+                          items:
+                            - name: 'Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: Výkaznictví ve Švédsku
                           items:
                             - name: Přiznání k DPH
@@ -1604,18 +1622,24 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Výkaznictví ve Spojeném království
                           items:
-                            - name: Příprava na integraci s MTD pro DPH
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: Přiznání k DPH
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Povolení výpočtu daně pro převodní příkaz
                       items:
                         - name: "Podpora daňových funkcí u\_převodních příkazů"
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Tisk informací o dani na dokumentech převodního příkazu
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Rozšíření
                       items:
                         - name: "Přidání datových polí v\_daňových konfiguracích"
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Přidání datových polí do daňové integrace pomocí rozšíření
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Přizpůsobení konfigurací daní pro vyhledávání hlavních dat
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Časté dotazy k výpočtu daně
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
             - name: Austrálie
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Roční výpis DPH z tuzemského prodeje
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Belgický Intrastat
+                  href: localizations/emea-bel-intrastat.md
             - name: Brazílie
               items:
                 - name: Brazílie – přehled
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Co je nového a co se změnilo v lokalizaci pro Indii
                   items:
+                    - name: Co je nového a co se změnilo ve verzích 10.0.20 - 10.0.22
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Co je nového a co se změnilo ve verzích 10.0.15 - 10.0.19
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.14
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: "Aktualizace čísel a\_dat certifikátů pro transakce TDS"
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonésie
+              items:
+                - name: Indonésie - přehled
+                  href: localizations/indonesia.md
+                - name: "Přiznání k\_DPH pro Indonésii"
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Itálie
               items:
                 - name: Itálie – přehled
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: "Přiznání k\_DPH (Nizozemsko)"
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Nizozemský Intrastat
+                  href: localizations/emea-nl-intrastat.md
                 - name: Souhrnné hlášení (EU)
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Nový Zéland
@@ -3352,6 +3388,8 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Přiřazení poplatků za bankovní doklady k dodávce
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektronické faktury zákazníka v Saúdské Arábii
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapur
               items:
                 - name: Singapur - přehled
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: DPH intrakomunitárního plnění
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Intrastat – Španělsko
+                  href: localizations/emea-esp-intrastat.md
                 - name: Jednorázoví odběratelé
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Tisk šeků se španělským rozvržením
@@ -3458,32 +3498,30 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: Nastavení skupin DPH položky pro stornovací poplatek DPH
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: "Nastavení skupin položek, pravidel a\_parametrů přenesení daňové povinnosti DPH"
+                    - name: "Nastavení skupin položek, pravidel a\_parametrů stornovacího poplatku DPH"
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Nastavení skupin DPH pro přenesení daňové povinnosti DPH
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Výkaznictví ve Spojeném království
+                - name: Digitalizování daní (MTD) pro DPH
                   items:
-                    - name: Digitalizování daní (MTD) pro DPH
-                      items:
-                        - name: Podání přiznání digitalizování daní (MTD) pro DPH ve Spojeném království
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: Příprava prostředí na součinnost s webovou službou digitalizace DPH společnosti HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Kontrolní seznam pro nastavení elektronických zpráv pro digitalizaci DPH
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Zkouška součinnost se sandboxem digitalizace DPH
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Autorizace prostředí aplikace Finance na součinnost s webovou službou digitalizace DPH společnosti HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Odeslání vratky DPH webové službě digitalizace daní společnosti HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Načtení informací o platbách DPH a závazcích z HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Podrobnosti o nastavení DPH pro přiznání k DPH ve Spojeném království
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: Generování prohlášení k DPH v papírové podobě (hlášení 100 DPH)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Podání přiznání digitalizování daní (MTD) pro DPH ve Spojeném království
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Příprava prostředí na součinnost s webovou službou digitalizace DPH společnosti HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Kontrolní seznam pro nastavení elektronických zpráv pro digitalizaci DPH
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Zkouška součinnost se sandboxem digitalizace DPH
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: Autorizace prostředí aplikace Finance na součinnost s webovou službou digitalizace DPH společnosti HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: Odeslání vratky DPH webové službě digitalizace daní společnosti HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Načtení informací o platbách DPH a závazcích z HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Podrobnosti o nastavení DPH pro přiznání k DPH ve Spojeném království
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: Generování prohlášení k DPH v papírové podobě (hlášení 100 DPH)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Sestava statistik způsobů plateb
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Spojené státy
@@ -3871,12 +3909,14 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
                         - name: Base64StringToContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
-                    - name: "Datum a\_čas"
+                    - name: Datum a čas
                       items:
                         - name: Funkce data a času
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,6 +4463,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: Aktualizace aplikace 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: Aktualizace aplikace 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
@@ -4433,6 +4477,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'Změna kódu, aby uživatelé mohli konfigurovat a používat pojmenované cíle elektronického výkaznictví'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Implementace vlastního zdroje elektronického výkaznictví příchozích dokumentů
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilní aplikace
           items:
             - name: Domovská stránka mobilní aplikace
