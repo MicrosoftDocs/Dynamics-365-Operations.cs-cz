@@ -2,7 +2,7 @@
 title: Odkazy na původní faktury v dobropisech
 description: Toto téma vysvětluje, jak nastavit a vytisknout původní čísla faktur v souvisejících dobropisech.
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6a5ac50c996f92f5cfa569ad00fa4b911827fd4ec8bddb2442bbd6ac67d1f33f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7147c5bea5273f385b004effe0844b5f4541a881
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723840"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700348"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odkazy na původní faktury v dobropisech
 
@@ -95,5 +95,10 @@ Když vytisknete deobropisy s volným textem, dobropisy zákazníků a projektů
 > [!NOTE]
 > Ujistěte se, že jsou tiskové formáty dokumentů správně nakonfigurovány za předpokladu, že budou vytištěny odkazy na původní faktury.
 
+## <a name="references-to-original-invoices-in-debit-notes"></a>Odkazy na původní faktury v dluhopisech
+
+Ve výchozím nastavení lze do dobropisů zadat odkazy na původní faktury. Můžete například zadat reference, když provádíte negativní (sestupné) opravy původních faktur.
+
+Chcete-li zadat reference, když provádíte kladné (narůstající) opravy původních faktur, musíte povolit funkci **Odkazy na původní faktury v vrubopisech** v pracovním prostoru **Správa funkcí**.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

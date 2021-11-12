@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 131d88c51755a433a874ac0fe086b3eaa48f161c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3e0840944b7619f870194f6c16e15672bb888546
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572786"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678536"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Vyvolání toků automatizace procesů k vytvoření objednávek kvality
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 12/1/2021 -->
 
 Organizace mají rostoucí poptávku po automatizaci standardních obchodních procesů, poskytování pohodlnějších interakcí zaměstnancům a využívání různých datových signálů a systémů k automatickému řízení obchodních procesů. S automatizací robotických procesů (RPA) a Microsoft Power Automate mohou podniky využívat prostředí bez kódu k automatizaci opakujících se procesů, čímž získají efektivitu a přesnost.
 

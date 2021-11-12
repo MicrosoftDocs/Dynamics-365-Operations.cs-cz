@@ -2,7 +2,7 @@
 title: Přehled výpočtu daně
 description: Toto téma vysvětluje celkový rozsah a funkce výpočtu daně.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394579"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647050"
 ---
 # <a name="tax-calculation-overview"></a>Přehled výpočtu daně
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Výpočet daně je hyperškálovatelná multiklientová služba, která umožňuje globálnímu daňovému modulu automatizovat a zjednodušit proces stanovení a výpočtu daně. Daňový modul je plně konfigurovatelný. Mezi prvky, které lze konfigurovat, patří mimo jiné model zdanitelných dat, daňový kód, matice použitelnosti daně a vzorec výpočtu daně. Daňový modul běží na platformě základních služeb Microsoft Azure a nabízí moderní technologie a exponenciální škálovatelnost.
 
@@ -120,6 +118,10 @@ Ve verzi 10.0.21 jsou podporovány následující transakce:
     - Převodní příkaz – expedice
     - Převodní příkaz – příjem
 
+Ve verzi 10.0.23 jsou podporovány následující transakce: 
+
+- Volná faktura
+
 ## <a name="supported-countriesregions"></a>Podporované země/oblasti
 
 Výpočet daně lze povolit dle právnické osoby. 
@@ -144,7 +146,29 @@ Ve verzi 10.0.21 jsou podporovány následující země/oblasti pro primární a
 - Švédsko
 - Švýcarsko
 - Spojené království
-- Spojené státy americké
+- USA
+
+Ve verzi 10.0.22 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+
+- Austrálie
+- Bahrajn
+- Kanada
+- Egypt
+- Hongkong
+- Kuvajt
+- Nový Zéland
+- Omán
+- Katar
+- Saúdská Arábie
+- Jižní Afrika
+- Spojené arabské emiráty
+
+Ve verzi 10.0.23 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+
+- Thajsko
+- Japonsko
+- Malajsie
+- Singapur
 
 ## <a name="related-resources"></a>Související prostředky
 

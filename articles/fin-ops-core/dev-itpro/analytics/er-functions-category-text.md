@@ -2,7 +2,7 @@
 title: Seznam funkcí elektronického výkaznictví textové kategorie
 description: Toto téma obsahuje informace o textových funkcích, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51fc00ba512677ccac9fcfbd26d2b0650f36f3b42eb81fc07d37417fb6d4d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741007"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647553"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Seznam funkcí elektronického výkaznictví textové kategorie
 
@@ -40,7 +40,8 @@ Textové funkce elektronického výkaznictví (ER) lze použít k provádění o
 | [Vlevo](er-functions-text-left.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků od počátku zadaného řetězce. |
 | [Len](er-functions-text-len.md) | Tato funkce vrací hodnotu *Celé číslo*, která představuje počet znaků v zadaném řetězci. |
 | [Lower](er-functions-text-lower.md) | Tato funkce vrací zadaný textový řetězec jako hodnotu *řetězec* poté, co byl převeden na malá písmena. |
-| [Mid](er-functions-text-mid.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků ze zadaného řetězce počínaje zadanou pozicí. |
+| [Mid](er-functions-text-mid.md) | Tato funkce vrací hodnotu typu *[řetězec](er-formula-supported-data-types-primitive.md#string)*, která představuje zadaný počet znaků ze zadaného řetězce počínaje zadanou pozicí. |
+| [NewGUID](er-functions-text-newguid.md) | Tato funkce vrací nově vygenerovaná hodnota *[GUID](er-formula-supported-data-types-primitive.md#guid)*. |
 | [NumberFormat](er-functions-text-numberformat.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadané číslo jako text v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | Tato funkce vrací zadané číslo jako hodnotu typu *řetězec* poté, co byla napsána (tedy převedena na textové řetězce) v zadaném jazyce. |
 | [PadLeft](er-functions-text-padleft.md) | Tato funkce vrací hodnotu typu *řetězec* určené délky, ve kterém je začátek určeného řetězce odsazen jednou nebo více instancemi zadaných znaků. |

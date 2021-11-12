@@ -1,7 +1,7 @@
 ---
 title: Přehled upgradu knihy odpisů
-description: V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek, oceňovací modely a knihy odpisů.
-author: ShylaThompson
+description: Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344707"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675145"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Přehled upgradu knihy odpisů
 
 [!include [banner](../includes/banner.md)]
 
-V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. V aplikaci Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho koncept, který je označován jako kniha. Toto téma obsahuje informace, které je třeba zvážit pro upgrade. 
+Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. Funkce modelu hodnoty a knihy odpisů byly sloučeny do jednoho konceptu, který je označován jako kniha. Funkce knihy vám umožňuje používat jedinou sadu stránek, dotazů a sestav pro všechny procesy dlouhodobého majetku vaší organizace. Toto téma obsahuje některé věci, které byste měli zvážit před upgradem. 
 
-Proces upgradu přesune vaše existující nastavení a všechny existující transakce na novou účetní strukturu. Oceňovací modely zůstanou, jaké momentálně jsou, tedy jako knihy, které se účtují do hlavní knihy. Knihy odpisů budou přesunuty do knihy, která má možnost **Zaúčtovat do hlavní knihy** nastavenu na **Ne**. Názvy deníku knihy odpisů budou přesunuty do názvu deníku hlavní knihy s účtovací vrstvou nastavenou na **Žádná**. Transakce knihy odpisů budou přesunuty na transakce dlouhodobého majetku. 
+Proces upgradu přesune vaše existující nastavení a všechny existující transakce na novou účetní strukturu. Oceňovací modely zůstanou, jaké momentálně jsou, tedy jako knihy, které se účtují do hlavní knihy. Knihy odpisů budou přesunuty do knihy, která má možnost Zaúčtovat do hlavní knihy nastavenu na Ne. Názvy deníku knihy odpisů budou přesunuty do názvu deníku hlavní knihy s účtovací vrstvou nastavenou na Žádná. Transakce knihy odpisů budou přesunuty na transakce dlouhodobého majetku.
 
-Před spuštěním upgradu dat byste se měli seznámit se dvěma možnostmi dostupnými pro upgradování řádku deníků knihy odpisů na transakční doklady a s číselnou řadou, která se bude používat pro řadu dokladů. 
+Před spuštěním upgradu dat byste se měli seznámit se dvěma možnostmi dostupnými pro upgradování řádku deníků knihy odpisů na transakční doklady a s číselnou řadou, která se bude používat pro řadu dokladů.
 
 Možnost 1:  **číselné řady definované systémem** – výchozí možnost pro optimalizaci výkonu upgradu. Upgrade nebude používat systém číselných řad, ale namísto toho bude přidělovat doklady podle sad. Po upgradu bude vytvořena nová číselná řada s **další sadou čísel** odpovídajícím způsobem na základě upgradovaných transakcí. Použitá číselná řada bude ve výchozím nastavení ve formátu FADBUpgr\#\#\#\#\#\#\#\#\#. Při použití tohoto přístupu je k dispozici několik parametrů pro úpravu formátu:
 

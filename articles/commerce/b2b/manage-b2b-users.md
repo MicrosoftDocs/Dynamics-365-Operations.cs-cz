@@ -2,7 +2,7 @@
 title: Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování
 description: Toto téma popisuje, jak mohou správci přidávat, upravovat a mazat uživatele - obchodní partnery - na webech elektronického obchodování typu business-to-business (B2B).
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734936"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713686"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Spravujte uživatele - obchodní partnery - na webech B2B elektronického obchodování
 
@@ -68,6 +68,18 @@ Chcete-li schválit a nastavit uživatele - správce obchodního partnera - v ce
 1. Přejděte na **IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu **1010** (**Zákazníci**), chcete-li poslat nově vytvořené záznamy zákazníků a hierarchie zákazníků do databáze kanálů.
 
 Po schválení požadavku a po synchronizaci záznamů zákazníka a hierarchie zákazníků do databáze kanálů se může žadatel přihlásit na web elektronického obchodování B2B pomocí e-mailové adresy, kterou zadal při odeslání žádosti. Uživatelé mohou pomocí postupu registrace definovat heslo pro svůj účet. Pro povolení záznamu poskytovatele identity (Azure AD B2C), který má být propojen se záznamem zákazníka B2B, který byl vytvořen při registraci nebo přihlášení, postupujte podle pokynů v [Povolit automatické propojení záznamů totožnosti s účty zákazníků](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Informujte B2B potenciální zákazníky, když jsou schváleni nebo zamítnuti
+
+Když schválíte nebo odmítnete žádost o registraci B2B potenciálního zákazníka, můžete potenciálnímu zákazníkovi automaticky odeslat e-mailové upozornění. 
+
+Chcete-li nastavit e-mailová upozornění v centrále obchodu pro události typu oznámení schválený potenciálním zákazníkem nebo odmítnutý potenciální zákazník, postupujte takto.
+
+1. Vytvořte e-mailové šablony pro e-maily, které budou zaslány potenciálním zákazníkům, když se spustí typ oznámení o schválení typu B2B potenciální zákazník nebo odmítnutí potenciálního zákazníka B2B.
+
+    Informace o zástupných textech, které typy oznámení „potenciální zákazník B2B byl schválen“ a „zamítnut“ podporují, naleznete v části [Typy oznámení](../email-templates-transactions.md#notification-types). Informace o způsobu vytvoření e-mailových šablon naleznete v tématu [Vytvoření e-mailové šablony](../email-templates-transactions.md#create-an-email-template). 
+
+1. Přidejte typy oznámení schválený potenciální zákazník B2B a odmítnutý potenciální zákazník B2B do svého profilu e-mailových oznámení a namapujte je na šablony e-mailů, které jste vytvořili. Další nformace o profilech oznámení viz [Nastavení profilu e-mailových oznámení](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Zapojte další uživatele obchodních partnerů
 

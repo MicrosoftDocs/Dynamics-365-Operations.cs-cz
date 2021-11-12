@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7638463"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647208"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Co je nového nebo se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19 (červen 2021)
 
@@ -48,7 +48,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 V následující tabulce je uveden seznam vylepšených funkcí této verze. Každý z nich poskytuje přírůstkové vylepšení stávající funkce. Protože se jedná pouze o vylepšení, nejsou uvedeny v seznamu [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Aby se však zajistilo, že tato vylepšení nebudou v rozporu s vašimi stávajícími přizpůsobeními nebo předvolbami, je každé z nich ve výchozím nastavení vypnuto (pokud není uvedeno jinak). Pokud chcete použít některou z těchto funkcí, musíte ji výslovně povolit ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
+| Modul | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
 | Prodej a marketing | Vylepšení výkonu čištění historie prodeje | Vyčištění historie prodeje může trvat dlouho, pokud se zřídka spouští v prostředích s velkým objemem aktualizací prodeje. Chcete-li zkrátit dobu trvání a zlepšit spolehlivost, tato funkce rozděluje vyčištění na dávky, které běží po omezenou dobu. Kde je to možné, využijí se možnosti databáze, aby se minimalizovalo zamykání a zabránilo se spojování transakčních tabulek během čištění. Další informace viz [Vylepšení výkonu čištění historie prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Prodej a marketing | Aktualizovat požadované datum přijetí o datum potvrzení pro mezipodnikové objednávky | Tato funkce vám umožňuje řídit, co se stane s hodnotami pole data prodeje a nákupu při použití mezipodnikového přímého doručení. Můžete si vybrat, zda bude systém požadovaná data aktualizovat, nebo jejich aktualizaci přeskočit. Pokud aktualizaci přeskočíte, budou požadovaná data představovat to, co zákazník požadoval. Pokud povolíte aktualizaci, požadovaná data (při použití kontroly data dodání) představují pouze zpočátku to, co zákazník požadoval. Kontrola data dodání, pokud se liší od *Žádný*, zruší to, co bylo původně požadováno. Tuto možnost můžete nastavit pomocí nového nastavení **Aktualizovat požadované datum přijetí o potvrzené datum** mezipodnikového dodavatele nebo nastavení zákazníka.<br><br>Pokud je funkce deaktivována, systém přepíše požadované datum přijetí u původních prodejních objednávek na základě pravidla kontroly data dodání, ale požadované datum odeslání zůstane tak, jak je. |

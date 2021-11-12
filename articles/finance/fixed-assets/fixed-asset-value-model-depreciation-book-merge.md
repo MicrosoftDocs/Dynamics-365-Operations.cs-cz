@@ -1,8 +1,8 @@
 ---
 title: Oceňovací model dlouhodobého majetku a slučování knih odpisů
 description: V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. Ve vydání Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho konceptu, který je označován jako kniha.
-author: ShylaThompson
-ms.date: 06/20/2017
+author: moaamer
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,32 +11,33 @@ ms.reviewer: roschlom
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a8e04f89673b3e0eb07e19aa1e14276f1f22c25b9aaabc91e2919892f74ed985
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b11edcbf03b0917e35d9cef03834629b7b67fad
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727976"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674919"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Oceňovací model dlouhodobého majetku a slučování knih odpisů
 
 [!include [banner](../includes/banner.md)]
 
-V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. Ve vydání Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho konceptu, který je označován jako kniha.
+Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů.
 
-Funkce nová kniha je založena na dřívější funkcí oceňovacího modelu, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. [![Kniha jako sloučení funkcí oceňovacího modelu a knih odpisů.](./media/fixed-assets.png)](./media/fixed-assets.png) Díky tomuto sloučení nyní můžete používat jedinou sadu stránek, dotazů a sestav pro všechny procesy pro dlouhodobý majetek. Tabulky v tomto tématu popisují dřívější funkci pro knihy odpisů a oceňovací modely, spolu s novou funkcí knih.
+Funkce knihy vám umožňuje používat jedinou sadu stránek, dotazů a sestav pro všechny procesy dlouhodobého majetku vaší organizace. Tabulky v tomto tématu popisují dřívější funkci pro knihy odpisů a oceňovací modely, spolu s aktuálních funkcí knih.
 
 ## <a name="setup"></a>Nastavení
-Podle výchozího nastavení se z knih účtuje jak do hlavní knihy (GL), tak do hlavní knihy dlouhodobého majetku. Knihy mají novou možnost **účtovat do hlavní knihy**, která vám umožňuje zakázat zaúčtování do hlavní Knihy a povolit jen zaúčtování do hlavní knihy pro dlouhodobý majetek. Tato funkce se podobá dřívějšímu chování zaúčtování pro knihy odpisů. Nastavení názvů deníků má novou účtovací vrstvu s názvem Žádná. Tato účtovací vrstva byla přidána zejména pro transakce dlouhodobého majetku. K zaúčtování transakcí pro knihy, které nechcete zaúčtovat do hlavní Knihy, je nutné použít název deníku s účtovací vrstvou nastavenou na **Žádná**.
+Podle výchozího nastavení se z knih účtuje jak do hlavní knihy (GL), tak do hlavní knihy dlouhodobého majetku. Knihy mají novou možnost **Účtovat do hlavní knihy**, která vám umožňuje zakázat zaúčtování do hlavní Knihy a povolit jen zaúčtování do hlavní knihy pro dlouhodobý majetek. Tato funkce se podobá dřívějšímu chování zaúčtování pro knihy odpisů. Nastavení názvů deníků má novou účtovací vrstvu s názvem Žádná. Tato účtovací vrstva byla přidána zejména pro transakce dlouhodobého majetku. K zaúčtování transakcí pro knihy, které nechcete zaúčtovat do hlavní Knihy, je nutné použít název deníku s účtovací vrstvou nastavenou na **Žádná**.
 
-| &nbsp;                                           | Daňové odpisy               | Účetní odpisy                     | (Nová) Kniha                                              |
+
+| &nbsp;                                           | Daňové odpisy               | Oceňovací model                     | (Nová) Kniha                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-| Zaúčtovat do hlavní knihy                                   | Nikdy                           | Vždy                          | Možnost pro zaúčtování hlavní Knihy                                |
+| Zaúčtovat do hlavní knihy                                   | Nikdy                           | Vždy                          | Možnost zaúčtovat do hlavní knihy                                |
 | Účtovací vrstvy                                   | Nelze použít                  | 3: Stávající, operace a daň | 11: Stávající, operace, daň, 7 vlastních vrstev a Žádná |
-| Názvy deníků                                    | Názvy deníku daňových odpisů | Hlavní kniha - Názvy deníků              | Hlavní kniha - Názvy deníků                                      |
+| Názvy deníků                                    | Názvy deníku daňových odpisů | Hlavní kniha – názvy deníků              | Hlavní kniha – názvy deníků                                      |
 | Odvozené knihy                                    | Nepovoleno                     | Povoleno                         | Povoleno                                                 |
 | Odpisový plán se přepisuje na úrovni majetku | Povoleno                         | Nepovoleno                     | Povoleno                                                 |
 

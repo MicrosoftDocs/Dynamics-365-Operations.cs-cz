@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474669"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678464"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
@@ -366,16 +366,12 @@ Index vám umožňuje dotazovat se na množství na skladě následujícími zp�
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfigurace rezervace (volitelná)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Konfigurace rezervace je vyžadována, pokud chcete používat funkci předběžné rezervace. Konfigurace se skládá ze dvou základních částí:
 
 - Mapování předběžných rezervací
 - Hierarchie předběžných rezervací
 
 ### <a name="soft-reservation-mapping"></a>Mapování předběžných rezervací
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Když provádíte rezervaci, asi budete chtít vědět, zda je požadované množství na skladě aktuálně k dispozici pro rezervaci. Ověření je spojeno s vypočítanou mírou, která představuje výpočetní vzorec kombinace fyzických měr.
 
@@ -446,8 +442,6 @@ Pokud se tedy pokusíte vytvořit rezervaci ze zdroje `iv.SoftReservOrdered` a m
 > Když zavoláte rezervační rozhraní API, můžete řídit ověření rezervace zadáním logické hodnoty parametru `ifCheckAvailForReserv` v těle požadavku. Hodnota `True` znamená, že je vyžadováno ověření, zatímco hodnota `False` znamená, že ověření není vyžadováno. Výchozí hodnota je typu `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarchie předběžných rezervací
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hierarchie rezervací popisuje posloupnost dimenzí, které je třeba zadat při vytváření rezervace. Funguje stejným způsobem, jako funguje hierarchie indexu produktů pro dotazy na zásoby na skladě.
 
@@ -747,8 +741,6 @@ Následující tabulka ukazuje výchozí konfiguraci indexu.
 Tato část popisuje výchozí konfiguraci rezervace.
 
 #### <a name="reservation-mapping"></a>Mapování rezervace
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Následující tabulka ukazuje výchozí mapování rezervace.
 

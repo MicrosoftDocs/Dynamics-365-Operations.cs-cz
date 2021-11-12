@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483847"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700130"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
@@ -32,6 +33,8 @@ Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných 
 -  Vyhodnocování matematických výrazů 
 -  Seskupení tabulkových dat (povoleno samostatně pomocí funkce **Seskupení do mřížek**)
 -  Zmrazení sloupců
+-  Automaticky přizpůsobit šířku sloupce
+-  Roztažitelné sloupce
 
 ## <a name="calculating-totals"></a>Vypočet součtů
 V aplikacích Finance and Operations mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
@@ -43,7 +46,7 @@ Aplikace Finance and Operations obsahují oblast zápatí v dolní části každ
 - Celkové součty v dolní části konfigurovaných číselných sloupců
 - Počet řádků v sadě dat 
 
-Toto zápatí je ve výchozím nastavení skryto, ale lze je zapnout. Chcete-li zobrazit zápatí pro mřížku, klikněte pravým tlačítkem na záhlaví sloupce v mřížce a vyberte možnost **Zobrazit zápatí**. Po zapnutí zápatí pro konkrétní mřížku bude toto nastavení zapamatováno, dokud se uživatel nerozhodne zápatí skrýt. Chcete-li zápatí skrýt, klikněte pravým tlačítkem na záhlaví sloupce a vyberte **Skrýt zápatí**.  (Provedení akce **Zobrazit zápatí / Skrýt zápatí** bude v budoucí aktualizaci přemístěno na nové místo. 
+Toto zápatí je ve výchozím nastavení skryto, ale lze je zapnout. Chcete-li zobrazit zápatí pro mřížku, vyberte tlačítko **Možnost mřížky** v záhlaví mřížky a vyberte možnost **Zobrazit zápatí**. Po zapnutí zápatí pro konkrétní mřížku bude toto nastavení zapamatováno, dokud se uživatel nerozhodne zápatí skrýt. Chcete-li zápatí skrýt, vyberte **Skrýt zápatí** v nabídce **Možnosti mřížky**.  
 
 ### <a name="specifying-columns-with-totals"></a>Určení sloupců se součty
 V současné době ve výchozím nastavení žádné sloupce nezobrazují součty. Namísto toho je tato činnost považována za jednorázovou, podobně jako nastavení šířky sloupců v mřížce. Jakmile určíte, že chcete zobrazit součty pro sloupec, toto nastavení se při další návštěvě stránky zapamatuje.  
@@ -82,7 +85,7 @@ Kvůli tomuto novému chování byl do levé části sloupce výběru řádku p�
 Když uživatelé zadávají data v místě, kam zatím nedošlo zpracování serveru, mohou očekávat několik omezení při zadávání dat, jako je například nemožnost vyhledávání, ověřování na úrovni ovládacích prvků a zadávání výchozích hodnot. Uživatelé, kteří potřebují rozevírací seznam pro vyhledání hodnoty, by měli počkat, až server dojde k aktuálnímu řádku. Ověření na úrovni ovládacích prvků a zadání výchozích hodnot také proběhnou, když server zpracuje daný řádek.   
 
 ### <a name="pasting-from-excel"></a>Vkládání z aplikace Excel
-Uživatelé vždy mohou exportovat data z mřížek v aplikacích Finance and Operations do aplikace Excel pomocí mechanismu **Exportu do aplikace Excel**. Nicméně možnost zadávání dat před systémem umožňuje, aby nová mřížka podporovala kopírování tabulek z aplikace Excel a jejich vložení přímo do mřížek v aplikacích Finance and Operations. Buňka mřížky, z níž je zahájena operace vložení, určuje, kde bude zkopírovaná tabulka vložena. Obsah mřížky je přepsán obsahem zkopírované tabulky s výjimkou dvou případů:
+Uživatelé vždy mohou exportovat data z mřížek v aplikacích Finance and Operations do aplikace Microsoft Excel pomocí mechanismu **Export do aplikace Excel**. Nicméně možnost zadávání dat před systémem umožňuje, aby nová mřížka podporovala kopírování tabulek z aplikace Excel a jejich vložení přímo do mřížek v aplikacích Finance and Operations. Buňka mřížky, z níž je zahájena operace vložení, určuje, kde bude zkopírovaná tabulka vložena. Obsah mřížky je přepsán obsahem zkopírované tabulky s výjimkou dvou případů:
 
 - Pokud počet sloupců ve zkopírované tabulce překračuje počet sloupců, které zůstanou v mřížce, počínaje místem vložení, uživatel bude upozorněn, že nadbytečné sloupce byly ignorovány. 
 - Pokud počet řádků ve zkopírované tabulce překračuje počet řádků v mřížce, počínaje místem vložení, budou existující buňky přepsány vloženým obsahem a všechny další řádky z kopírované tabulky budou vloženy jako nové řádky v dolní části mřížky. 
@@ -125,6 +128,9 @@ Chcete-li sloupec ukotvit, klikněte pravým tlačítkem do záhlaví sloupce a 
 Chcete-li sloupec odmrazit, klikněte pravým tlačítkem do záhlaví zmrazeného sloupce a poté vyberte **Odmrazit sloupec**. 
 
 Všimněte si, že výběr řádků a sloupce stavu řádků v nové mřížce jsou vždy zmrazeny jako první dva sloupce. Proto, když jsou tyto sloupce zahrnuty do mřížky, budou vždy viditelné pro uživatele, bez ohledu na polohu vodorovného posouvání v mřížce. U těchto dvou sloupců nelze změnit pořadí.
+
+## <a name="autofit-column-width"></a>Automaticky přizpůsobit šířku sloupce
+Podobně jako v Excelu mohou uživatelé automaticky vynutit změnu velikosti sloupce na základě obsahu aktuálně zobrazeného v tomto sloupci. Chcete-li to provést, poklepejte na úchyty pro změnu velikosti ve sloupci nebo přesuňte kurzor do záhlaví sloupce a stiskněte **A** (pro automatické přizpůsobení). Tato funkce je dostupná od verze 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak povolím novému ovládacímu prvku mřížky ve svém prostředí? 

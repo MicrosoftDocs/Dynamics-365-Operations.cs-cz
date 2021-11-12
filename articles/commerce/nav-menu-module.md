@@ -2,7 +2,7 @@
 title: Modul navigační nabídky
 description: Tohle téma se zabývá moduly navigační nabídky a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761579"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713845"
 ---
 # <a name="navigation-menu-module"></a>Modul navigační nabídky
 
@@ -41,8 +41,8 @@ Následující obrázek ukazuje příklad navigační nabídky pro web Fabrikam 
 |---------------------------|-----------------------|-------------|
 | Zdroj                  | **Maloobchod**, **Ruční vytváření**, **Maloobchod a ruční vytváření** | Hodnota **Maloobchod** umožňuje v navigační nabídce zobrazit hierarchii navigace sítě z centrály Commerce. Hodnota **Ruční vytváření** umožňuje doporučovat statické položky nabídky. Hodnota **Maloobchod a ruční vyváření** umožňuje kombinaci obou. |
 | Zobrazení obrázků kategorií | **Pravda** nebo **nepravda**    | Je-li povolena, tato vlastnost zobrazuje obrázky kategorií v navigační nabídce, jak je definováno v centrále Commerce pro každou kategorii. Přidáno v Comerce verze 10.0.14. |
-| Zobrazit propagační akce | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, lze propagační akce konfigurovat pomocí obrázků, odkazů a textu. Tato vlastnost byla přidána ve verzi Commerce verze 10.0.17. |
-| Přidejte propagační akce | Text, obrázek nebo odkaz | Když je povolena vlastnost **Zobrazit propagační akce**, můžete v navigační nabídce přidat text, obrázek nebo odkaz jako propagační obsah. |
+| Zobrazit propagační obrázky | **Pravda** nebo **Nepravda** | Když je tato vlastnost povolena, lze propagační akce konfigurovat pomocí obrázků, odkazů a textu. Tato vlastnost byla přidána ve verzi Commerce verze 10.0.17. |
+|Přidání propagačního obsahu kategorie | Text, obrázek nebo odkaz | Když je povolena vlastnost **Zobrazit propagační obrázky**, můžete v navigační nabídce přidat text, obrázek nebo odkaz jako propagační obsah. |
 | Povolení navigační nabídky s více úrovněmi | **Pravda** nebo **nepravda** | Když je tato vlastnost povolena, navigační nabídka může zobrazit více úrovní navigační hierarchie. Tato funkce je k dispozici v aplikaci Commerce verze 10.0.15. |
 | Počet úrovní | Celé číslo | Tato vlastnost definuje počet úrovní, které se mají zobrazit, pokud je vlastnost **Povolit navigační nabídku s více úrovněmi** je nastavena na **Pravda**. |
 | Statická položka nabídky| Pole hodnot| Statické položky nabídky, které přidružují název položky nabídky s odkazem na stránku statického webu. Položky nabídky můžete vytvořit pod dalšími položkami nabídky. Ve výchozím nastavení se statické nabídky zobrazují na kořenové úrovni a budou přidány do hierarchie navigace sítě, pokud existuje. |

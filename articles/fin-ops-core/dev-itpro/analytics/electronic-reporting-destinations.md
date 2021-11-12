@@ -2,7 +2,7 @@
 title: Místa určení elektronického výkaznictví
 description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných cílech a o možnostech zabezpečení.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743304"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647086"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -164,12 +164,12 @@ Chcete-li, aby byla v aktuální instanci modulu Finance k dispozici možnost p�
 
 ### <a name="applicability"></a>Použitelnost
 
-Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se používají ke generování výstupu ve formátu Office (Excel nebo Word) (**Soubor Excel**). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF. Ve verzích Finance **před verzí 10.0.18** tuto možnost můžete zapnout pouze pro komponenty typu **Excel\\Soubor**, které se používají ke generování výstupu ve formátu [Excel](er-fillable-excel.md) nebo [Word](er-design-configuration-word.md). Nicméně ve **verzi 10.0.18 a novější** můžete také zapnout tuto možnost pro komponenty typu **Běžný\\Soubor**.
+Ve verzích Finance **před verzí 10.0.18** možnost převodu PDF lze zapnout pouze pro komponenty **Excel\\Soubor**, které se používají ke generování výstupu ve formátu Office (Excel nebo Word). Je-li tato možnost zapnuta, bude výstup vygenerovaný ve formátu Office automaticky převeden do formátu PDF. Nicméně ve **verzi 10.0.18 a novější** můžete také zapnout tuto možnost pro komponenty typu **Běžný\\Soubor**.
 
 > [!NOTE]
 > Věnujte pozornost varovné zprávě, kterou obdržíte při zapnutí možnosti převodu PDF pro komponentu ER typu **Běžný\\Soubor**. Tato zpráva vás informuje, že neexistuje způsob, jak v době návrhu zaručit, že vybraná komponenta souboru za běhu vystaví obsah ve formátu PDF nebo obsah převáděný do formátu PDF. Tuto možnost byste proto měli zapnout, pouze pokud jste si jisti, že vybraná komponenta souboru byla nakonfigurována tak, aby za běhu vystavovala obsah ve formátu PDF nebo obsah převáděný do formátu PDF.
 > 
-> Pokud zapnete možnost převodu PDF pro komponentu typu **Excel\\Soubor**, pokud tato komponenta vystavuje obsah v jiném formátu než PDF a pokud vystavený obsah nelze převést do formátu PDF, dojde za běhu k výjimce. Zpráva, kterou obdržíte, vás informuje, že vygenerovaný obsah nelze převést do formátu PDF.
+> Pokud zapnete možnost převodu PDF pro komponentu formátu, pokud tato komponenta vystavuje obsah v jiném formátu než PDF a pokud vystavený obsah nelze převést do formátu PDF, dojde za běhu k výjimce. Zpráva, kterou obdržíte, vás informuje, že vygenerovaný obsah nelze převést do formátu PDF.
 
 ### <a name="limitations"></a>Omezení
 
@@ -189,16 +189,26 @@ Chcete-li zapnout převod do PDF pro cíl souboru, zaškrtněte políčko **Pře
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Výběr orientace stránky pro převod do PDF</a>
 
-Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete určit orientaci stránky v dokumentu PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
+Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete explicitně určit orientaci stránky v dokumentu PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
 
 [![Výběr orientace stránky pro převod do PDF.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Chcete-li mít možnost vybrat orientaci stránky PDF, je nutné nainstalovat Finance verze 10.0.10 nebo novější.
->
-> Vybraná orientace stránky se použije pro všechny konfigurace ER, které jsou generovány ve formátu aplikace Excel a následně převedeny do formátu PDF.
->
-> Pokud je konfigurace ER ve formátu aplikace Word převedena na PDF, bude orientace dokumentu PDF provedena z dokumentu aplikace Word.
+Chcete-li mít možnost vybrat orientaci stránky PDF, musíte nainstalovat Finance verze 10.0.10 nebo novější. Ve verzích Finance **před verzí 10.0.23** tato možnost nabízí následující možnosti orientace stránky:
+
+- Na výšku
+- Na šířku
+
+Vybraná orientace stránky se použije pro všechny stránky odchozího dokumentu, který jsou generován ve formátu aplikace Excel a následně převedeny do formátu PDF.
+
+Nicméně ve **verzi 10.0.23 a novější** byl seznam možností orientace stránky rozšířen takto:
+
+- Na výšku
+- Na šířku
+- Specifické pro list
+
+Když vyberete možnost **Specifické pro pracovní list**, je každý list vygenerovaného excelového sešitu převeden do PDF pomocí orientace stránky, která byla pro tento list nakonfigurována v použité šabloně Excelu. Můžete tedy mít konečný dokument PDF obsahující stránky na výšku a na šířku. 
+
+Pokud je konfigurace ER ve formátu aplikace Word převedena na PDF, bude orientace dokumentu PDF vždy vzata z dokumentu aplikace Word.
 
 ## <a name="output-unfolding"></a>Rozbalení výstupu
 

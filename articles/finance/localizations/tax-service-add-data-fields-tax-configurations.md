@@ -2,7 +2,7 @@
 title: Přidání datových polí do daňových konfigurací
 description: Toto téma vysvětluje, jak přizpůsobit daňové konfigurace přidáním datových polí.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 590c2d62995f260ba4277e1031349b0dc43f1417
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500137"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674893"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Přidání datových polí do daňových konfigurací
 
@@ -31,8 +31,12 @@ Toto téma vysvětluje, jak přizpůsobit daňové konfigurace pomocí [datovýc
 ## <a name="customize-the-tax-data-model"></a>Přizpůsobení datového modelu daně
 
 1. V Microsoft Dynamics 365 Finance přejděte do **Elektronické výkaznictví** > **Konfigurace daní**.
-2. Ve stromu konfigurace vyberte položku **Daňový datový model - Evropa**. Poté v podokně akcí vyberte příkaz **Vytvořit konfiguraci**.
-3. V rozevíracím dialogovém okně vyberte **Model zdanitelného dokladu odvozený z názvu: Daňový datový model – Evropa, Microsoft**, zadejte název nového daňového datového modelu a poté vyberte příkaz **Vytvořit konfiguraci**.
+2. Ve stromu konfigurace vyberte položku **Datový model výpočtu daně**. Poté v podokně akcí vyberte příkaz **Vytvořit konfiguraci**. 
+
+  > [!NOTE] 
+  > Pokud není k dispozici žádný poskytovatel konfigurace, vytvořte jej a aktivujte jej pro vaši konfiguraci daně. Další informace naleznete ve [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+  
+3. V rozevíracím dialogovém okně vyberte **Model zdanitelného dokladu odvozený z názvu: Datový model výpočtu daně, Microsoft**, zadejte název nového daňového datového modelu a poté vyberte příkaz **Vytvořit konfiguraci**.
 4. Vyberte daňový datový model, který jste právě vytvořili, a poté v podokně akcí vyberte **Návrhář**.
 5. Rozbalte strom datového modelu, vyberte **Řádky** a potom vyberte příkaz **Nový**.
 6. V dialogovém okně **Vytvořit uzel** zadejte název, zadejte typ položky a poté vyberte **Přidat**.
@@ -43,8 +47,8 @@ Toto téma vysvětluje, jak přizpůsobit daňové konfigurace pomocí [datovýc
 ## <a name="customize-the-tax-configuration"></a>Přizpůsobení konfigurace daně
 
 1. Ve Finance přejděte do nabídky **Elektronické výkaznictví** > **Konfigurace daní**.
-2. Ve stromu konfigurace vyberte položku **Konfigurace daně – Evropa**. Poté v podokně akcí vyberte příkaz **Vytvořit konfiguraci**.
-3. V rozevíracím dialogovém okně vyberte **Konfiguraci daňové služby odvozená z názvu: Konfigurace dně – Evropa, Microsoft**, zadejte název nové daňové konfigurace a poté vyberte příkaz **Vytvořit konfiguraci**.
+2. Ve stromu konfigurace vyberte položku **Konfigurace výpočtu daně**. Poté v podokně akcí vyberte příkaz **Vytvořit konfiguraci**.
+3. V rozevíracím dialogovém okně vyberte **Konfiguraci daňové služby odvozená z názvu: Konfigurace výpočtu daně, Microsoft**, zadejte název nové daňové konfigurace a poté vyberte příkaz **Vytvořit konfiguraci**.
 4. Vyberte konfiguraci daně, kterou jste právě vytvořili, a poté v podokně akcí vyberte **Návrhář**.
 5. V části **Vlastnosti** v poli **Datový model** vyberte přizpůsobený daňový datový model, který jste vytvořili dříve.
 6. V poli **Verze datového modelu** vyberte dokončenou verzi daňového datového modelu.

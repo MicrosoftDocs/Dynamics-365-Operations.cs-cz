@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 9c1eef91bcf7d1ce6379e87417be5a8b3be069e5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5f3ecfa388eac42a817d751b882f365a51fc57cf
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575625"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678950"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Plánování s nekonečnou kapacitou
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)] <!--KFM: Until 1/14/2022 -->
 
 Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* zavádí plánování založené na informacích o trase. Umožňuje vám naplánovat úlohy na základě široké škály nastavení tras. Plánování pro optimalizaci plánování pokrývá často používané nastavení trasy, včetně sekvence provozu trasy nebo požadavků na prostředky operace trasy.
 

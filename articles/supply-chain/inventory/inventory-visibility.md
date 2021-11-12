@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575164"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678902"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Přehled doplňku Viditelnost zásob
 
@@ -45,8 +45,6 @@ Existují dva přístupy k prohlížení vašich zásob:
 - Zobrazte nezpracovaný seznam zásob na skladě. Tento seznam je pravidelně synchronizován z instance uložené v mezipaměti a je viditelný v Dataverse. Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Předběžné rezervace
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Předběžná rezervace se použije v případě, kdy si podnik musí rezervovat konkrétní množství produktů, aby podpořil například plnění prodejní objednávky, které zamezí nadměrnému prodeji. Když je prodejní objednávka vytvořena a potvrzena v Supply Chain Management nebo jiných systémech pro správu objednávek, je požadavek na rezervaci množství odeslán do Viditelnosti zásob. Viditelnost zásob vám umožňuje rezervovat produkty s podrobnostmi o dimenzi a konkrétními typy transakcí zásob. (Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md) .) Poté, co je množství úspěšně rezervováno, je vráceno ID rezervace. Toto ID rezervace můžete použít ke zpětnému propojení na původní objednávku v Supply Chain Management nebo v jiných systémech správy objednávek.
 

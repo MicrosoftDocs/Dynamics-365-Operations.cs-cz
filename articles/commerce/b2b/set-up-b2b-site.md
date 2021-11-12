@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721000"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713741"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Vytvoření webu elektronického obchodu B2B
 
@@ -37,7 +37,7 @@ Weby elektronického obchodování typu business-to-business (B2B) poskytují n�
 
 Nastavení na úrovni webu najdete v konfigurátoru webů na adrese **Nastavení webu \> Rozšíření**. Pro scénáře B2B platí následující dvě nastavení na úrovni webu:
 
-- **Povolit platby zákaznickým účtem** - Tato vlastnost umožňuje uživatelům platit za objednávky pomocí zákaznických účtů. Dostupné hodnoty jsou **Povoleno pro zákazníky B2B**, **Povoleno pro zákazníky B2C**, **Povoleno pro všechny zákazníky** a **Zakázáno pro všechny zákazníky**. Pokud váš web B2B podporuje zákaznické účty, měli byste vybrat **Povoleno pro zákazníky B2C**.
+- **Povolit platby zákaznickým účtem** - Tato vlastnost umožňuje uživatelům platit za objednávky pomocí zákaznických účtů. Dostupné hodnoty jsou **Povoleno pro zákazníky B2B**, **Povoleno pro zákazníky B2C**, **Povoleno pro všechny zákazníky** a **Zakázáno pro všechny zákazníky**. Pokud váš web B2B podporuje zákaznické účty, měli byste vybrat **Povoleno pro zákazníky B2B**.
 - **Povolit limity množství objednávky** - Tato vlastnost umožňuje nastavit limity počtu položek, které lze objednat pro každý produkt nebo kategorii. Dostupné hodnoty jsou **Povoleno pro zákazníky B2B**, **Povoleno pro zákazníky B2C**, **Povoleno pro všechny zákazníky** a **Zakázáno pro všechny zákazníky**.
 
 > [!NOTE]

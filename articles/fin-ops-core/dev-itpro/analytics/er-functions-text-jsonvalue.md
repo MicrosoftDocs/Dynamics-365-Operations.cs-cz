@@ -2,7 +2,7 @@
 title: Funkce el. výkaznictví JSONVALUE
 description: Toto téma obsahuje obecné informace o použití funkce JSONVALUE elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/11/2019
+ms.date: 10/25/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b034755602a2f999892d2b976c80550b7a3d7f3cd179816dd7aa1edefe6a0270
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff33098e5be4dd9748d01d45b596360617305724
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733766"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700056"
 ---
 # <a name="jsonvalue-er-function"></a>Funkce el. výkaznictví JSONVALUE
 
@@ -41,7 +41,7 @@ Platná cesta ke zdroji dat typu *řetězec* obsahujícímu data JSON.
 
 `path`: *řetězec*
 
-Identifikátor skalární hodnoty dat JSON.
+Identifikátor skalární hodnoty dat JSON. K oddělení názvů souvisejících uzlů JSON použijte lomítko (/). Použijte zápis hranatých uvozovek (\[\]) k určení indexu konkrétní hodnoty v poli JSON. Všimněte si, že pro tento index se používá číslování založené na nule.
 
 ## <a name="return-values"></a>Vrácené hodnoty
 
@@ -49,13 +49,37 @@ Identifikátor skalární hodnoty dat JSON.
 
 Výsledná textová hodnota.
 
-## <a name="example"></a>Příklad
+## <a name="example-1"></a>Příklad 1
 
 Zdroj dat **JsonField** obsahuje následující data ve formátu JSON: **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**. V tomto případě výraz `JSONVALUE (JsonField, "BuildNumber")` vrátí následující hodnotu datového typu *řetězec*: **"7.3.1234.1"**.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="example-2"></a>Příklad 2
+
+Zdroj dat **JsonField** typu *vypočítané pole* obsahuje následující výraz: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
+
+Tento výraz je nakonfigurován tak, aby vrátil hodnotu [*Řetězec*](er-formula-supported-data-types-primitive.md#string), která představuje následující data ve formátu JSON.
+
+```json
+{
+    "workers": [
+        {
+            "name": "Adam",
+            "age": 30,
+            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
+        },
+        {
+            "name": "John",
+            "age": 21,
+            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
+        }
+    ]
+}
+```
+
+V tomto případě výraz `JSONVALUE(json, "workers/[1]/emails/[0]")` vrátí následující hodnotu datového typu *řetězec*: `JohnS@Contoso.com`.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Textové funkce](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

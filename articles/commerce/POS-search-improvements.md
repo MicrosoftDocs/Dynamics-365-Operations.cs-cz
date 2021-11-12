@@ -2,7 +2,7 @@
 title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
 description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 Commerce ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716385"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700082"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -45,9 +45,9 @@ Vyhledávání místních produktů vyhledává v rámci následujících vlastn
 - popis
 - Dimenze
 - Čárový kód
-- Vyhledat jméno
+- Vyhledat název
 
-### <a name="additional-local-product-search-capabilities"></a>Další možnosti vyhledávání místních produktů
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Další možnosti místního vyhledávání produktů (běžné fulltextové vyhledávání SQL) 
 
 - U vyhledávání s více klíčovými slovy (to znamená u vyhledávání, které používají hledané termíny) mohou prodejci nakonfigurovat, zda výsledky vyhledávání mají obsahovat výsledky, které odpovídají *libovolnému* hledanému termínu, nebo pouze výsledky, které odpovídají *všem* hledaným termínům. Nastavení této funkce je k dispozici v profilu funkce POS pod novou skupinou s názvem **Vyhledávání produktu**. Ve výchozím nastavení je **Spárovat jakékoli hledané termíny**. Toto nastavení je rovněž doporučené nastavení. Pokud je použito nastavení **Spárovat jakýkoli zadaný termín**, jsou vráceny všechny produkty, které plně nebo částečně odpovídají jednomu nebo více hledaným termínům. Výsledky se automaticky seřadí vzestupně podle produktů, které mají nejvíce shod klíčových slov (úplných nebo částečných).
 
@@ -55,6 +55,8 @@ Vyhledávání místních produktů vyhledává v rámci následujících vlastn
 
     - Hledání se provádí na základě jednotlivých vlastností produktu. Jsou například vráceny pouze produkty, které mají všechna vyhledaná klíčová slova v alespoň jedné vlastnosti produktu.
     - Neprohledávají se dimenze.
+> [!NOTE]
+> Následující konfigurace **Spárovat jakýkoli zadaný termín**/**Spárovat všechny zadané termíny** ve funkčních profilech POS jsou použitelné pouze pro **místní** prostředí vyhledávání produktů (konvenční fulltextové vyhledávání SQL). Tato konfigurace nemá žádný vliv na cloudové vyhledávání. Nový vyhledávač má svůj vlastní pokročilý algoritmus, který zvyšuje relevanci vyhledávání pro výsledky vyhledávání produktů. 
 
 - Maloobchodníci mohou nakonfigurovat vyhledávání produktů pro zobrazení návrhů vyhledávání, když uživatelé zadávají názvy produktů. Nové nastavení této funkce je k dispozici v profilu funkce POS pod skupinu s názvem **Vyhledávání produktu**. Toto nastavení se nazývá **Zobrazit návrhy vyhledávání při zadávání**. Tato funkce pomůže zaměstnancům rychle najít produkt, který hledají, protože nemusí ručně zadávat celé jméno.
 - Algoritmus vyhledávání produktu nyní hledá vyhledávané termíny ve vlastnosti produktu **Vyhledávání jména**.
@@ -147,7 +149,5 @@ Následující seznam ukazuje, jak se funkce cloudového vyhledávání zákazn�
 > Funkce vyhledávání zákazníků pomocí služby Azure Cognitive Search je k dispozici v omezených oblastech jako náhled. Možnost vyhledávání zákazníků *není* k dispozici v následujících oblastech:
 > - Brazílie
 > - Indie
-> - Kanada
-> - Spojené království
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595138"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725042"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -31,6 +31,64 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="feature-removal-effective-october-2021"></a>Odstranění funkce platné od října 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Sestavy Microsoft Azure SQL ve službě Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah.|
+| **Nahrazeno jinou funkcí?**   | Ano, nyní existuje automatizovaný systém, který činí tyto funkce zastaralými. |
+| **Ovlivněné oblasti produktu**         | Sestavy SQL: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
+| **Stav**                         | Odebráno |
+
+### <a name="azure-sql-actions-in-lcs"></a>Akce Azure SQL v LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | V LCS ukončujeme podporu některých akcí SQL. Všechny aktivity a monitorování budou prováděny interně, podle platformy a prostřednictvím automatizace. Nebude vyžadován žádný ruční zásah. |
+| **Nahrazeno jinou funkcí?**   | Ano, nyní existuje automatizovaný systém, který činí tyto funkce zastaralými. |
+| **Ovlivněné oblasti produktu**         | Akce SQL: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Možnost nasazení**              | Nasazení v cloudu: Ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
+| **Stav**                         | Odebráno |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Oznámení o ukončení podpory funkce od října 2021
+
+### <a name="show-related-document-attachments-feature"></a>Funkce „Zobrazit přílohy souvisejících dokumentů“
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Funkce vracela neočekávané výsledky. |
+| **Nahrazeno jinou funkcí?**   | Ne. Jakékoli další plány týkající se této funkce budou sděleny prostřednictvím našeho standardního procesu zveřejnění vlny vydání. |
+| **Ovlivněné oblasti produktu**         | Webový klient – prostředí s přílohami dokumentů |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.23 aplikací Finance and Operations
+
+### <a name="ondbsynchronize-event"></a>Událost OnDBSynchronize
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Neexistuje žádný ovládací prvek pro provedení této události. |
+| **Nahrazeno jinou funkcí?**   | Ano, přesuňte stávající přihlášené metody událostí **OnDBSynchronzie** do rozšířené třídy SysSetup. |
+| **Ovlivněné oblasti produktu**         | Synchronizace databáze |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Plánované datum odstranění je říjen 2022. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Microsoft vyžaduje další parametry při přidávání oznámení. |
+| **Nahrazeno jinou funkcí?**   | Ano, API **SystemNotificationsManager.AddSystemNotification()**. Toto rozhraní API vyžaduje, abyste pro generovaná oznámení explicitně nastavili ExpirationDateTime a RuleID. |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Plánované datum odstranění je duben 2023. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.21 aplikací Finance and Operations
 

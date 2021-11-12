@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743164"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647529"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data v aplikacích Finance and Operations.
 
@@ -147,15 +148,16 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
-| Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Zadat                           |
+| Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Enter                           |
+| Změnit velikost aktuálního sloupce tak, aby odpovídal obsahu (se zaměřením v řádku záhlaví)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
 
-| Akce                                                                   | Stisknout                         |
+| Akce                                                                   | Stiskněte tlačítko .                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otevření hypertextového odkazu                                                           | Ctrl+Enter                    |
-| Zadání data relace do pole kalendářních dat                                       | D                         |
-| Zadání aktuálního data do pole kalendářních dat                                       | bil.                         |
+| Zadání data relace do pole kalendářních dat                                       | D                             |
+| Zadání aktuálního data do pole kalendářních dat                                       | bil.                             |
 | Otevření vyhledávání, pole se seznamem, výběru data a dialogového okna                         | ALT+Šipka dolů                |
 | Zavření vyhledávání, pole se seznamem, výběru data a dialogového okna                        | Esc                           |
 | Změna zaměření na vyhledání (pokud je vyhledávání již otevřeno)                   | ALT+Šipka dolů                |
@@ -202,8 +204,8 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Použití nástroje Přesun (v režimu přizpůsobení)                                                                       | M                                   |
 | Vyberte aktuální ovládací prvek, který chcete přesunout (při použití nástroje Přesun a bez prozatímního výběru ovládacího prvku k přesunu)  | Mezerník nebo Enter                      |
 | Vymazat ovládací prvek k přesunutí (při použití nástroje Přesun)                                                                   | Esc                                 |
-| Přesunout na další pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                          | Tabulátor nebo šipka doprava nebo šipka dolů    |
-| Přesunout na předchozí pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                      | Shift+Tabulátor nebo šipka doleva nebo šipka nahoru |
+| Přesunout vybraný ovládací prvek na další pozici (při použití nástroje Přesun)                                              | Tabulátor nebo šipka doprava nebo šipka dolů    |
+| Přesunout vybraný ovládací prvek na předchozí pozici (při použití nástroje Přesun)                                          | Shift+Tabulátor nebo šipka doleva nebo šipka nahoru |
 | Použití nástroje Skrytí (v režimu přizpůsobení)                                                                       | H.                                   |
 | Přepnout mezi zobrazením a skrytím aktuálního ovládacího prvku (při použití nástroje Skrytí)                                     | Mezerník nebo Enter                      |
 | Použití nástroje Přeskočení (v režimu přizpůsobení)                                                                       | K                                   |

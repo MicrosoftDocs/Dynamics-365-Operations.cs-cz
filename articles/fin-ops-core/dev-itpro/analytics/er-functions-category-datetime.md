@@ -2,7 +2,7 @@
 title: Seznam funkcí ER v kategorii Datum a čas
 description: Toto téma obsahuje informace o funkcích data a času, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f0f421afcaf720366c76c2728721598540a37f0b627123b3386a3174c039a96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760043"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647256"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Seznam funkcí ER v kategorii Datum a čas
 
@@ -31,8 +31,9 @@ Funkce data a času elektronického výkaznictví lze používat k extrahování
 
 | Funkce | Popis |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | Tato funkce vrací hodnotu *DateTime*, která představuje zadaný počet dní před nebo po zadaném počátečním datu. |
-| [DateFormat](er-functions-datetime-dateformat.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadanou hodnotu data jako text v určeném formátu a ve volitelně zadané jazykové verzi. |
+| [AddDays](er-functions-datetime-adddays.md) | Tato funkce vrací hodnotu *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*, která představuje zadaný počet dní před nebo po zadaném počátečním datu. |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | Tato funkce vrací hodnotu *DateTime*, která je převedena ze zadané hodnoty kalendářního data/času v jednom časovém pásmu na hodnotu data a času v jiném časovém pásmu. |
+| [DateFormat](er-functions-datetime-dateformat.md) | Tato funkce vrací hodnotu typu *[řetězec](er-formula-supported-data-types-primitive.md#string)*, která představuje zadanou hodnotu data jako text v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadanou hodnotu data/času jako text v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Tato funkce vrací hodnotu *DateTime*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Tato funkce vrací hodnotu *DateTime*, která je převedena ze zadané hodnoty kalendářního data na hodnotu data a času v koordinovaném světovém čase (Greenwich Mean Time \[GMT\]). |

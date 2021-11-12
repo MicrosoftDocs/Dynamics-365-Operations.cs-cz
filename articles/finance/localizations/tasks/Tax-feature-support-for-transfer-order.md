@@ -2,7 +2,7 @@
 title: Podpora daňové funkce u převodních příkazů
 description: Toto téma vysvětluje novou podporu daňové funkce u převodních příkazů, která využívá službu výpočtu daně.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500069"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647706"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Podpora daňové funkce u převodních příkazů
 
@@ -31,7 +31,7 @@ Toto téma poskytuje informace o výpočtu daně a integraci účtování v pře
 Chcete-li konfigurovat a používat tuto funkci, musíte provést tři hlavní kroky:
 
 1. **Nastavení RCS:** Ve službě Regulatory Configuration Service nastavte daňovou funkci, daňové kódy a použitelnost daňových kódů pro určení daňového kódu v převodních příkazech.
-2. **Nastavení aplikace Finance:** V Microsoft Dynamics 365 Finance zapněte funkci **Daň v převodním příkazu**, nastavte parametry daňové služby pro zásoby a nastavte základní parametry daně.
+2. **Nastavení Dynamics 365 Finance:** Ve Finance zapněte funkci **Daň v převodním příkazu**, nastavte parametry služby výpočtu daně pro zásoby a nastavte základní parametry daně.
 3. **Nastavení zásob:** Nastavte konfiguraci zásob pro transakce převodních příkazů.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Nastavte ve službě RCS daně a transakce převodních příkazů
@@ -40,8 +40,6 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
 
 1. Na stránce **Daňové funkce** na kartě **Verze** vyberte verzi konceptu funkce a poté vyberte možnost **Upravit**.
 
-    ![Výběr možnosti Upravit.](../media/tax-feature-support-01.png)
-
 2. Na stránce **Nastavení daňových funkcí** na kartě **Daňové kódy** vyberte příkaz **Přidat** a vytvořte nové daňové kódy. V tomto příkladu jsou vytvořeny tři daňové kódy: **NL-Exempt**, **BE-RC-21** a **BE-RC+21**.
 
     - Když je převodní příkaz odeslán ze skladu v Nizozemsku, je použito nizozemský daňový kód osvobození od DPH (**NL-Exempt**) .
@@ -49,11 +47,10 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         Vytvořte daňový kód **NL-Exempt**.
         1. Vyberte příkaz **Přidat** a zapište **NL-Exempt** do pole **Daňový kód**.
         2. Vyberte hodnotu **Podle čisté částky** v poli **Daňová komponenta**.
-        3. Zvolte **Uložit**.
+        3. Zvolte možnost **Uložit**.
         4. Vyberte příkaz **Přidat** v tabulce **Sazba**.
-        5. Přepněte pole **Je osvobozeno** na **Ano** v části **Všeobecné**.
-
-           ![Daňový kód NL-Exempt.](../media/tax-feature-support-02.png)
+        5. Nastavte pole **Je osvobozeno** na **Ano** v části **Všeobecné**.
+        6. Do pole **Kód osvobození** zadejte **EC**.
 
     - Když je v belgickém skladu přijat převodní příkaz, použije se mechanismus přenesení daňové povinnosti pomocí daňových kódů **BE-RC-21** a **BE-RC+21**.
         
@@ -63,10 +60,8 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         3. Zvolte **Uložit**.
         4. Vyberte příkaz **Přidat** v tabulce **Sazba**.
         5. Zapište **-21** do pole **Sazba daně**.
-        6. Přepněte pole **Je přenesení daňové povinnosti** na **Ano** v části **Všeobecné**.
+        6. Nastavte pole **Je přenesení daňové povinnosti** na **Ano** v části **Všeobecné**.
         7. Zvolte možnost **Uložit**.
-
-           ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-03.png)
         
         Vytvořte daňový kód **BE-RC+21**.
         1. Vyberte příkaz **Přidat** a zapište **BE-RC-21** do pole **Daňový kód**.
@@ -76,16 +71,26 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         5. Zapište **21** do pole **Sazba daně**.
         6. Zvolte možnost **Uložit**.
 
-           ![Daňový kód BE-RC-21 pro přenesení daňové povinnosti.](../media/tax-feature-support-04.png)
-
-3. Definujte použitelnost daňových kódů.
+3. Definujte daňovou skupinu.
+    1. Vyberte **Správa sloupců** a poté vyberte řádkové pole **Daňová skupina**.
+    2. Vyberte **->** a pak vyberte **OK**.
+    3. Volbou **Přidat** přidejte daňovou skupinu.
+    4. Do sloupce **Daňová skupina** zadejte **AR-EU** a poté vyberte daňový kód **NL-Exempt**.
+    5. Volbou **Přidat** přidejte daňovou skupinu.
+    6. Ve sloupci **Daňová skupina** zadejte **RC-VAT** a poté vyberte daňové kódy **BE-RC-21** a **BE-RC+21**.
+4. Definujte daňovou skupinu položky.
+    1. Vyberte **Správa sloupců** a poté vyberte řádkové pole **Daňová skupina položky**.
+    2. Vyberte **->** a pak vyberte **OK**.
+    3. Volbou **Přidat** přidejte daňovou skupinu položky.
+    4. Zadejte **FULL** do sloupce **Daňová skupina položky**. Vyberte daňové kódy **BE-RC-21**, **BE-RC+21** a **NL-Exempt**.
+5. Definujte použitelnost daňové skupiny.
 
     1. Vyberte příkaz **Spravovat sloupce** a poté vyberte sloupce, které budou použity k sestavení tabulky použitelnosti.
 
         > [!NOTE]
         > Nezapomeňte do tabulky přidat sloupce **Obchodní proces** a **Daňové pokyny**. Oba sloupce jsou nezbytné pro funkčnost daně v převodních příkazech.
 
-    2. Přidejte pravidla použitelnosti. Pole **Daňové kódy**, **Daňová skupina** a **Daňová skupina zboží** nenechávejte prázdná.
+    2. Přidejte pravidla použitelnosti. Pole **Daňová skupina** nenechávejte prázdné.
         
         Přidejte nové pravidlo pro dodávku převodního příkazu.
         1. Vyberte příkaz **Přidat** v tabulce **Pravidla použitelnosti**.
@@ -93,8 +98,7 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         3. V poli **Odeslat ze země / oblasti** zadejte **NLD**.
         4. V poli **Odeslat do země / oblasti** zadejte **BEL**.
         5. V poli **Směr daně** vyberte **Výstup**, aby bylo pravidlo použitelné na dodávku převodního příkazu.
-        6. V poli **Daňové kódy** vyberte **NL-Exempt**.
-        7. V polích **Daňová skupina** a **Daňová skupina zboží** zadejte související skupinu DPH a skupinu DPH zboží, které jsou definovány ve vašem systému Finance.
+        6. V poli **Daňová skupina** vyberte položku **AR-EU**.
         
         Přidejte další pravidlo pro příjemku převodního příkazu.
         
@@ -103,14 +107,19 @@ Podle těchto pokynů nastavíte daň, která je zahrnuta v převodním příkaz
         3. V poli **Odeslat ze země / oblasti** zadejte **NLD**.
         4. V poli **Odeslat do země / oblasti** zadejte **BEL**.
         5. V poli **Směr daně** vyberte **Vstup**, aby bylo pravidlo použitelné na příjemku převodního příkazu.
-        6. V poli **Daňové kódy** vyberte **BE-RC+21** a **BE-RC-21**.
-        7. V polích **Daňová skupina** a **Daňová skupina zboží** zadejte související skupinu DPH a skupinu DPH zboží, které jsou definovány ve vašem systému Finance.
+        6. V poli **Daňová skupina** vyberte položku **RC-VAT**.
 
-           ![Pravidla použitelnosti.](../media/image5.png)
+6. Definujte použitelnost daňové skupiny položky.
 
-4. Dokončete a publikujte novou verzi daňové funkce.
+    1. Vyberte příkaz **Spravovat sloupce** a poté vyberte sloupce, které budou použity k sestavení tabulky použitelnosti.
+    2. Přidejte pravidla použitelnosti. Pole **Daňová skupina položky** nenechávejte prázdné.
+        
+        Přidejte nové pravidlo pro dodávku a příjem převodního příkazu.
+        1. Na stránce **Pravidla použitelnosti** vyberte **Přidat**.
+        2. V poli **Obchodní proces** vyberte **Zásoby**, aby bylo pravidlo použitelné na převodní příkaz.
+        3. V poli **Daňová skupina položky** vyberte položku **FULL**.
+7. Dokončete a publikujte novou verzi daňové funkce.
 
-    [![Změna stavu nové verze.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Nastavte v aplikaci Finance daně a transakce převodních příkazů
 
@@ -120,28 +129,26 @@ Chcete-li povolit a nastavit daně pro převodní příkazy, postupujte takto:
 2. V seznamu najděte a vyberte funkci **Daň v převodním příkazu** a poté ji zapněte výběrem možnosti **Povolit**.
 
     > [!IMPORTANT]
-    > Funkce **Daň v převodním příkazu** plně závisí na daňové službě. Lze ji tedy zapnout až po instalaci daňové služby.
+    > Funkce **Daň v převodním příkazu** plně závisí na službě výpočtu daně. Lze ji tedy zapnout až po instalaci služby výpočtu daně.
 
     ![Daň ve funkci převodního příkazu.](../media/image7.png)
 
-3. Povolte daňovou službu a vyberte obchodní proces **Zásoby**.
+3. Povolte službu výpočtu daně a vyberte obchodní proces **Zásoby**.
 
     > [!IMPORTANT]
-    > Tento krok musíte dokončit pro každou právnickou osobu ve Finance, kde chcete mít k dispozici daňovou službu a funkce daně v převodních příkazech.
+    > Tento krok musíte dokončit pro každou právnickou osobu ve Finance, kde chcete mít k dispozici službu výpočtu daně a funkce daně v převodních příkazech.
 
-    1. Přejděte do nabídky **Daň** > **Nastavení** > **Daňová konfigurace** > **Nastavení daňové služby**.
+    1. Přejděte do nabídky **Daň** > **Nastavení** > **Daňová konfigurace** > **Parametry výpočtu daně**.
     2. V poli **Obchodní proces** vyberte **Zásoby**.
-
-      ![Nastavení pole Obchodní proces.](../media/image8.png)
 
 4. Zkontrolujte, zda je nastaven mechanismus přenesení daňové povinnosti. Přejděte do nabídky **Hlavní kniha** \> **Nastavení** \> **Parametry** a poté na kartě **Přenesená daňová povinnost** ověřte, že je možnost **Povolit přenesenou daňovou povinnost** nastavena na **Ano**.
 
     ![Povolení přenesené daňové povinnosti.](../media/image9.png)
 
-5. Ověřte, že související daňové kódy, daňové skupiny, daňové skupiny zboží a DIČ byly v aplikaci Finance nastaveny podle pokynů daňové služby.
+5. Ověřte, že související daňové kódy, daňové skupiny, daňové skupiny zboží a DIČ byly v aplikaci Finance nastaveny podle pokynů služby výpočtu daně.
 6. Nastavte účet prozatímního tranzitu. Tento krok je vyžadován pouze v případě, že se daň, která se vztahuje na převodní příkaz, nevztahuje na mechanismus osvobození od daně nebo přenesení daňové povinnosti.
 
-    1. Přejděte na **Daň** > **Nastavení** > **DPH** \ **Účetní skupiny**.
+    1. Přejděte na **Daň** > **Nastavení** > **DPH** > **Účetní skupiny**.
     2. V poli **Prozatímní tranzit** vyberte účet hlavní knihy.
 
        ![Výběr účtu prozatímního tranzitu.](../media/image10.png)

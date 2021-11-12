@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569330"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678682"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -93,7 +93,6 @@ Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům 
 1. **Registrovat prostoje** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete zaregistrovat prostoje stroje. Budete moci vybrat kód důvodu a zadat časové rozpětí data a času prostoje. Registrace výpadku stroje se používá pro výpočet efektivity majetku stroje.
 1. **Zobrazit nebo upravit** - Toto tlačítko vyberte, chcete-li otevřít dialogové okno, kde můžete upravit nebo zobrazit stávající záznamy o prostojích.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Zahájení a dokončení výrobních úloh
 
 Pracovníci zahájí výrobní úlohu výběrem úlohy na kartě **Všechny úlohy** a poté výběrem možnosti **Zahájit úlohu** otevřou dialogové okno **Zahájení úlohy**.
@@ -109,6 +108,32 @@ Pracovníci mohou zahájit úlohu v jakémkoli stavu. Když pracovník zahájí 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat množství zboží, které bylo vyprodukováno, výběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit průběh**. Pak v dialogovém okně **Hlášení průběhu** pracovník zadá množství zboží pomocí numerické klávesnice. Ve výchozím nastavení je množství prázdné. Po zadání množství může pracovník aktualizovat stav úlohy na *Probíhá*, *Zastaveno* nebo *Dokončeno*.
 
 ![Dialogové okno Hlášení průběhu.](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Hlášení dobrých množství u dávkových objednávek, které mají koprodukty a vedlejší produkty
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech.
+
+Někteří výrobci, zejména ve zpracovatelském průmyslu, používají k řízení svých výrobních procesů dávkové objednávky. Dávkové příkazy se vytvářejí ze vzorců a tyto vzorce lze definovat tak, že mají jako výstup koprodukty a vedlejší produkty. Když je hlášena zpětná vazba o těchto dávkových objednávkách, musí být množství výstupu registrováno na položce receptury a také na koprodukty a vedlejší produkty.
+
+Když pracovník dokončí nebo částečně dokončí úlohu na dávkové zakázce, může vykázat množství zboží nebo odpadu pro každý produkt, který je definován jako výstup pro objednávku. Produkty, které jsou definovány jako výstup pro dávkovou objednávku, mohou být typu *Vzorec*, *Koprodukt* nebo *Vedlejší produkt*.
+
+Chce-li pracovník nahlásit dobré množství produktů, vybere úlohu na kartě **Aktivní úlohy** a poté vybere **Hlásit pokrok**.
+
+Poté v dialogovém okně **Hlásit pokrok** si může pracovník vybrat mezi produkty, které jsou definovány jako výstup pro dávkovou objednávku, o kterých bude reportovat. Pracovník může vybrat jeden nebo více produktů v seznamu a poté vybrat **Hlásit pokrok**. U každého produktu je ve výchozím nastavení množství prázdné a pracovník může množství zadat pomocí numerické klávesnice. Pracovník může využít tlačítka **Předchozí** a **Další** pro pohyb mezi vybranými produkty. Po zadání množství pro každý produkt může pracovník aktualizovat stav úlohy na *Probíhá*, *Zastaveno* nebo *Dokončeno*.
+
+![Hlášení koproduktů a vedlejších produktů.](media/report-co-by-products.png "Hlášení koproduktů a vedlejších produktů")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Hlášení o dávkových objednávkách pro plánování položek
+
+Když pracovník dokončí zakázku na dávkové zakázce pro položku plánování, vykáže množství pouze u koproduktů a vedlejších produktů, protože položky plánování neobsahují položku typ *Vzorec*.
+
+### <a name="reporting-co-product-variation"></a>Hlášení variace koproduktu
+
+Pokud je dávkový příkaz vytvořen z verze vzorce, kde je možnost **Variace koproduktů** je nastavena na *Ano*, pracovník může hlásit koprodukty, které nejsou součástí definice pro dávkové objednávky. Tato funkce se používá ve scénářích, kde může ve výrobním procesu dojít k neočekávanému výstupu produktu.
+
+V tomto případě může pracovník specifikovat koprodukt a množství, které se má hlásit, výběrem **Variace koproduktů** v dialogovém okně hlášení pokroku. Pracovník si pak může vybrat ze všech uvolněných produktů, které jsou definovány jako koprodukty.
 
 ## <a name="reporting-scrap"></a>Hlášení odpadu
 

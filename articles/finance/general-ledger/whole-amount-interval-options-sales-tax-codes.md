@@ -1,7 +1,7 @@
 ---
-title: Možnost Celková částka a Interval výpočtu pro kódy DPH
-description: Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
-author: ShylaThompson
+title: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+description: Toto téma vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3d622f8a81c0eabc84fb165203aa193f5e7dd6ad148ff50a9f55c87453be9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731469"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726816"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+Toto téma vysvětluje možnosti pro pole **Metoda výpočtu** pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 
-Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce Kódy DPH pomocí pole Metoda výpočtu na pevné záložce Výpočet vyberte způsob výpočtu kódu DPH.
+Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce **Kódy DPH** pomocí pole **Metoda výpočtu** na pevné záložce **Výpočet** vyberte způsob výpočtu kódu DPH.
 - Celá částka – Sazba daně se použije na celou zdanitelnou částku.
 - Interval – základ daně je rozdělen do částí, kde každá část spadá do rozsahu, který má konkrétní kurz DPH. Část částky, která spadá do příslušného intervalu, je zdaněna podle sazby daně pro tento interval. Prodejní daň je součtem částek daně, které byly vypočteny pro každou částku intervalu.
   > [!NOTE]                                                                                                                              

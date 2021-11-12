@@ -2,7 +2,7 @@
 title: Použití nastavení zásob
 description: Toto téma se týká nastavení zásob a popisuje, jak je použít v Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765259"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647577"
 ---
 # <a name="apply-inventory-settings"></a>Použití nastavení zásob
 
@@ -39,7 +39,7 @@ V tvůrci webů Commerce lze definovat prahové hodnoty a rozsahy zásob pro pro
 
 ## <a name="inventory-settings"></a>Nastavení zásob
 
-V Commerce jsou nastavení zásob definována v **Nastavení webu \> Rozšíření \> Řízení zásob** ve tvůrci webu. Existuje pět nastavení zásob, z nichž jedno je zastaralé:
+V Commerce jsou nastavení zásob definována v **Nastavení webu \> Rozšíření \> Řízení zásob** ve tvůrci webu. Existuje šest nastavení zásob, z nichž jedno je zastaralé:
 
 - **Povolit kontrolu skladu v aplikaci** – Toto nastavení zapne kontrolu zásob produktu. Buy box, nákupní košík a vyzvednutí v modulech obchod pak zkontrolují zásoby produktu a umožní přidání produktu do košíku, pouze pokud je k dispozici.
 - **Úroveň zásob na základě** - Toto nastavení definuje způsob výpočtu úrovní zásob. Dostupné hodnoty jsou **Celkem k dispozici**, **Fyzicky k dispozici** a **Prahová hodnota pro vyprodáno**. V Commerce lze definovat prahové hodnoty a rozsahy zásob pro každý produkt a kategorii. Rozhraní API zásob vracejí informace o zásobách produktů pro majetek **Celkem k dispozici** a **Fyzicky k dispozici**. Prodejce rozhodne, zda hodnota **Celkem k dispozici** nebo **Fyzicky k dispozici** by měla být použita k určení počtu zásob a odpovídajících rozsahů pro stavy na skladě a vyprodáno.
@@ -48,8 +48,13 @@ V Commerce jsou nastavení zásob definována v **Nastavení webu \> Rozšířen
 
 - **Úroveň zásob pro více skladů** – Toto nastavení umožňuje výpočet úrovně zásob oproti výchozímu skladu nebo více skladům. Možnost **Na základě individuálního skladu** vypočítá úrovně zásob na základě výchozího skladu. Alternativně může web elektronického obchodu odkazovat na více skladů, aby se usnadnilo plnění. V takovém případě se možnost **Na základě agregátu pro sklady pro přepravu a vyzvednutí** používá k označení dostupnosti zboží. Když si například zákazník zakoupí položku a jako způsob dodání zvolí „dodání“, může být položka odeslána z jakéhokoli skladu ve skupině plnění, která má k dispozici zásoby. Na stránce s podrobnostmi o produktu (PDP) se zobrazí zpráva „Skladem“ pro odeslání, pokud má jakýkoli dostupný přepravní sklad ve skupině plnění zásoby. 
 
-> [!IMPORTANT] 
-> Nastavení **Úroveň zásob pro více skladů** je k dispozici od verze Commerce verze 10.0.19. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > Nastavení **Úroveň zásob pro více skladů** je k dispozici od verze Commerce verze 10.0.19. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Nastavení zásob pro stránky se seznamem produktů** – Toto nastavení definuje, jak se produkty, které nejsou skladem, zobrazí v seznamech produktů, které jsou vykreslovány pomocí modulů kolekce produktů a výsledků vyhledávání. Dostupné hodnoty jsou **Zobrazit v pořadí s ostatními produkty**, **Skrýt ze seznamu produkty, které nejsou na skladě** a **Zobrazit produkty, které nejsou skladem, na konci seznamu**. Chcete-li použít toto nastavení, musíte nejprve nakonfigurovat některá nezbytná nastavení v centrále Commerce. Více informací viz [Aktivace povědomí o zásobách pro modul výsledků vyhledávání](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > **Nastavení zásob pro stránky seznamu produktů** je k dispozici od verze Commerce verze 10.0.20. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Rozsahy zásob** - Toto nastavení definuje rozsahy zásob, pro které se zpráva zobrazuje na modulech webu. Je to použitelné, pouze pokud je vybrána hodnota **Celkem k dispozici** nebo **Fyzicky k dispozici** pro nastavení **Úroveň zásob na základě**. Dostupné hodnoty jsou **Všechno**, **Nízké a vyprodané** a **Vyprodáno**.
 

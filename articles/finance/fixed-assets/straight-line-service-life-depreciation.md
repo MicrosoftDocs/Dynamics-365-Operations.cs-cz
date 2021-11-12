@@ -1,7 +1,7 @@
 ---
 title: Lineární odpisování
-description: Tento článek poskytuje přehled o metodě odpisování Lineární.
-author: ShylaThompson
+description: Toto téma poskytuje přehled o metodě lineárního odpisování.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985a1a23510a2cc698eb496cf9f3db2427d21119c1586ed69cf7e5ffd3d08867
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752192"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675264"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineární odpisování
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled o metodě odpisování Lineární.
+Toto téma poskytuje přehled o metodě lineárního odpisování.
 
 Když nastavíte profil odpisu dlouhodobého majetku a vyberete na stránce Odpisové profily možnost Lineární životnost v poli Metoda, majetek, který má přiřazený tento odpisový profil, bude odepsán na základě celkové době životnosti tohoto majetku. Obvykle bude tato částka ve všech obdobích odpisu stejná. 
 
@@ -44,11 +44,11 @@ Pokud vyberete Kalendář, bude použit rok od 1. ledna do 31. prosince, a to i 
 Možnost Kalendář aktualizuje odpisový základ (což je obvykle čistá účetní hodnota minus konečná zůstatková hodnota) 1. ledna každého roku. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. 
 
 Jestliže vyberete možnost Kalendářní, v poli Frekvence období jsou k dispozici následující možnosti, které definují časové rozdělení zaúčtování odpisů a částky během kalendářního roku:
--   Možnost Ročně provede zaúčtování 31 prosince.
--   Měsíčně provádí zaúčtování měsíčně na konci každého kalendářního měsíce.
--   Čtvrtletně provádí zaúčtování čtvrtletní částky na konci každého kalendářního čtvrtletí (31. března, 30. června, 30. září a 31. prosince).
--   Možnost Pololetně provádí zaúčtování pololetní částky na konci poloviny kalendářního roku (30. června a 31. prosince).
--   Denně zaúčtuje částku odpisu pro metodu denních odpisů s použitím jedné transakce pro každý den.
+- Možnost Ročně provede zaúčtování 31 prosince.
+- Měsíčně provádí zaúčtování měsíčně na konci každého kalendářního měsíce.
+- Čtvrtletně provádí zaúčtování čtvrtletní částky na konci každého kalendářního čtvrtletí (31. března, 30. června, 30. září a 31. prosince).
+- Možnost Pololetně provádí zaúčtování pololetní částky na konci poloviny kalendářního roku (30. června a 31. prosince).
+- Denně zaúčtuje částku odpisu pro metodu denních odpisů s použitím jedné transakce pro každý den.
 
 Když například zvolíte Ročně, roční odpisy se zaúčtují pouze jednou – 31. prosince každého roku. Pokud vyberete Měsíčně, měsíční odpis se zaúčtuje každý měsíc jako 1/12 ročního odpisu.
 
@@ -59,14 +59,14 @@ Pokud vyberete možnost Fiskální v poli Odpisový rok, bude použita metoda li
 Například pro fiskální rok od 1. července do 30. června začíná výpočet odpisů datem 1. července. Fiskální rok může být delší nebo kratší než 12 měsíců. Odpisy se automaticky upravují pro jednotlivá fiskální období. Délka dalšího fiskálního roku vychází z fiskálních období nastavených při vytváření nového fiskálního roku ve formuláři Fiskální kalendáře. 
 
 Vyberete-li Fiskální, v poli Frekvence období jsou k dispozici následující možnosti:
--   Možnost Ročně zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
--   Možnost Fiskální období vypočítá celkovou částku odpisu pro fiskální rok, který se rozloží do období definovaných na formuláři Fiskální kalendáře pro daný fiskální rok.
+- Možnost Ročně zaúčtuje celkovou částku odpisu vypočteného pro fiskální rok jako jednu částku poslední den fiskálního roku.
+- Možnost Fiskální období vypočítá celkovou částku odpisu pro fiskální rok, který se rozloží do období definovaných na formuláři Fiskální kalendáře pro daný fiskální rok.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Příklad: Lineární odpis nezměněného dlouhodobého majetku
 Předpokládejme, že má dlouhodobý majetek následující charakteristiky.
 
 | Charakteristika      | Hodnota  |
-|---------------------|--------|
+|:---------------------|--------:|
 | Pořizovací náklady    | 11,000 |
 | Zůstatková hodnota       | 1 000  |
 | Odpisová základna   | 10 000 |
@@ -76,7 +76,7 @@ Předpokládejme, že má dlouhodobý majetek následující charakteristiky.
 Odpisovaná částka bude každý rok stejná. (Pořizovací náklady - Zůstatková hodnota) / Počet roků provozní životnosti
 
 | Období | Výpočet částky ročního odpisu | Čistá účetní hodnota na konci roku |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | Rok 1 | (11 000 - 1 000) / 5 = 2 000              | 9 000                                 |
 | Rok 2 | (11 000 - 1 000) / 5 = 2 000              | 7 000                                 |
 | Rok 3 | (11 000 - 1 000) / 5 = 2 000              | 5 000                                 |
@@ -90,7 +90,7 @@ Předpokládejme, že v roce 2 přidáme ke stejnému dlouhodobému majetku opra
 Doba životnosti opravy pořizovací ceny je stejná jako u dlouhodobého majetku a začíná okamžikem jeho pořízení. Na konci roku 5 zůstává zůstatková účetní hodnota odpovídající zůstatkové účetní hodnotě opravy pořizovací ceny. Odpisy podle období se vypočtou způsobem znázorněným v následující tabulce.
 
 | Období | Výpočet částky ročního odpisu | Čistá účetní hodnota na konci roku |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | Rok 1 | 10 000 / 5 = 2 000                        | 11 000 - 2 000 = 9 000                |
 | Rok 2 | 4 000 (oprava pořizovací ceny)            | 9 000 + 4 000 =13 000                 |
 | Rok 2 | 14 000 / 5 = 2 800                        | 13 000 - 2 800 = 10 200               |

@@ -2,7 +2,7 @@
 title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612357"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675362"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -68,6 +68,9 @@ Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo
 | Excel                  | Excel                                      | \-Není k dispozici-                     |
 | XML                    | \-Není k dispozici-                                      | XML-Element XML-Attribute |
 | Oddělené, Pevná šířka | Čárka, středník, tabulátor, svislá čára, dvojtečka | \-Není k dispozici-                     |
+
+> [!NOTE]
+> Je důležité vybrat správnou hodnotu pro **Oddělovač řádků**, **Oddělovač sloupců** a **Textový kvalifikátor**, pokud je možnost **Formát souboru** nastavena na **Oddělené**. Ujistěte se, že vaše data neobsahují znak použitý jako oddělovač nebo kvalifikátor, protože to může způsobit chyby při importu a exportu.
 
 ### <a name="sequence-the-entities"></a>Seřazení entit
 Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export.

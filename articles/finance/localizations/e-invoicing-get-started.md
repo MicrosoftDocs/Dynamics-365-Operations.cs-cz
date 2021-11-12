@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463827"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700372"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Začínáme s Elektronickou fakturací
 
@@ -84,6 +84,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
 | Norská elektronická faktura (NO)    | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
 | Španělská elektronická faktura (ES)      | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
 | Elektronická faktura PEPPOL            | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Saúdskoarabská elektronická faktura (SA)| <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Konfigurace nastavení aplikace
@@ -112,6 +113,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
 
 6. U každého vytvořeného názvu tabulky vyberte a zadejte kontext podle následující tabulky.
 
@@ -133,6 +135,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
 
 7. U každého názvu tabulky a kontextu vyberte a zadejte hodnotu mapování obchodního dokumentu podle následující tabulky.
 
@@ -154,6 +157,7 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
     | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Konfigurace nastavení aplikace pro určitou zemi
@@ -207,8 +211,10 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
     | Norská elektronická faktura (NO)                     | Norsko          |
     | Elektronická faktura PEPPOL                             | Globální          |
     | Španělská elektronická faktura (ES)                       | Španělsko           |
+    | Saúdskoarabská elektronická faktura (SA)                 | Saúdskoarabské království    |
+    
 
-4. Zvolte **Uložit**.
+4. Zvolte možnost **Uložit**.
 
 ## <a name="issue-electronic-invoices"></a>Vydávání elektronických faktur
 
@@ -242,8 +248,9 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
 - [Začínáme se správou služby Elektronické fakturace](e-invoicing-get-started-service-administration.md)
 - [Začínáme s Elektronickou fakturací pro Brazílii](e-invoicing-bra-get-started.md)
 - [Začínáme s Elektronickou fakturací pro Mexiko](e-invoicing-mex-get-started.md)
-- [Začínáme s Elektronickou fakturací pro Itálii](e-invoicing-ita-get-started.md)
+- [Začněte s elektronickou fakturací pro Itálii](e-invoicing-ita-get-started.md)
 - [Elektronické faktury zákazníka v Egyptě](emea-egy-e-invoices.md)
+- [Elektronické faktury zákazníka v Saúdské Arábii](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

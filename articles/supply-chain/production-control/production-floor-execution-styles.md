@@ -1,0 +1,256 @@
+---
+title: Vytvoření rozhraní pro provádění výrobního provozu
+description: Toto téma vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
+author: johanhoffmann
+ms.date: 02/22/2021
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: johanho
+ms.search.validFrom: 2021-02-22
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 32e49458f6ea7c484bc4200e414d930381b31891
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651943"
+---
+# <a name="style-the-production-floor-execution-interface"></a>Vytvoření rozhraní pro provádění výrobního provozu
+
+[!include [banner](../includes/banner.md)]
+
+Toto téma vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
+
+## <a name="forms-and-dialogs"></a>Formuláře a dialogy
+
+Styly lze na formulář nebo dialog použít pouze v případě, že jsou splněny následující požadavky:
+
+- Pokud by se formulář měl podobat existujícímu formuláři průběhu sestavy, musí název vašeho formuláře nebo dialogu začínat **JmgProductionFloorExecutionCustomInputDialog**.
+- Formulář nebo dialog může obsahovat podrobnou část formuláře. Chcete-li na něj použít styly, musí název části podrobného formuláře začínat **JmgProductionFloorExecutionCustomDetailsDialog**.
+- Pokud má mít formulář nebo dialogové okno jednoduché zobrazení, musí název jednoduchého zobrazení začínat **JmgProductionFloorExecutionCustomDialog**. Příklady formulářů, které mají jednoduché zobrazení, zahrnují počáteční formulář a formulář nepřímé aktivity.
+- Všechny ovládací prvky v dialogu musí být nakonfigurovány tak, jak je popsáno v tomto tématu.
+
+> [!IMPORTANT]
+> Funkce uvedené v prvních dvou odrážkách tohoto seznamu vyžadují Supply Chain Management verze 10.0.19 nebo novější.
+
+Styly lze na tlačítko **OK** v dialogu použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **OkButtonGroup**.
+
+Styly lze na tlačítko **Zrušit** v dialogovém okně použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **CancelButtonGroup**.
+
+## <a name="grid"></a>Mřížka
+
+Styly se použijí automaticky. Není vyžadována žádná konkrétní konfigurace.
+
+## <a name="card-view"></a>Zobrazení karet
+
+Styly lze na ovládací prvky zobrazení karty použít pouze v případě, že jsou splněny následující požadavky:
+
+- Každé zobrazení karty je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **CardGroup** (například **CardGroupJobsView**).
+
+Následující obrázek ukazuje pohled na kartu, která neobsahuje žádné ovládací prvky.
+
+![Pohled na kartu bez prvků.](media/pfe-styles-empty-card.png)
+
+Následující ilustrace ukazují zobrazení karty, která neobsahují žádné ovládací prvky.
+
+![Karta s prvky, které ukazují Hz.](media/pfe-styles-elements.png)
+
+![Karta s prvky pro požadavek na údržbu.](media/pfe-styles-elements-maintenance.png)
+
+## <a name="business-card"></a>Vizitka
+
+Styly lze na ovládací prvky vizitky použít pouze v případě, že jsou splněny následující požadavky:
+
+- Každá vizitka je obsažena ve skupině formulářů.
+- Název skupiny začíná na **BusinessCardGroup** (například **BusinessCardGroupJobsList**).
+
+Nastavte na vizitce následující vlastnosti:
+
+- **Style**: **list**
+- **Extended style**: **cardList**
+- **Multi Select**: **No**
+- **Show Col Labels**: **No**
+
+![Vizitka.](media/pfe-styles-business-card.png)
+
+## <a name="radio-button"></a>Přepínač
+
+Styly lze na přepínače použít pouze v případě, že jsou splněny následující požadavky:
+
+- Každý přepínač je obsažen ve skupině formulářů.
+- Název skupiny začíná na **RadioTextBelow** nebo **RadioTextRight**, podle toho, kde chcete text zobrazit.
+
+Nastavte na přepínači následující vlastnosti:
+
+- **Toggle button**: **Check**
+- **Toggle value**: **On**, pokud má být přepínač vybraný, jinak **Off**
+
+Následující obrázek ukazuje příklad, kde se text zobrazuje pod přepínači.
+
+![Přepínače s textem pod sebou.](media/pfe-styles-radio-text-below.png)
+
+Následující obrázek ukazuje příklad, kde se text zobrazuje napravo od přepínačů.
+
+![Přepínače s textem vpravo.](media/pfe-styles-radio-text-right.png)
+
+### <a name="radio-buttons-in-internet-explorer"></a>Přepínače v Internet Explorer
+
+Styly přepínačů nejsou v Internet Explorer podporovány. Následující obrázek znázorňuje, jak přepínače vypadají v Internet Explorer.
+
+![Přepínače v Internet Explorer.](media/pfe-styles-browser.png)
+
+## <a name="buttons"></a>Tlačítka
+
+Styly lze na tlačítka použít pouze v případě, že jsou splněny následující požadavky:
+
+- Každá skupina tlačítek je obsažena ve skupině formulářů. Všechna tlačítka ve skupině budou mít stejný styl.
+- Neexistují žádné požadavky na název skupiny.
+
+Nastavte na tlačítkách následující vlastnosti:
+
+- **Button Display**: **TextWithImageLeft**.
+- **Normal Image**: Tato vlastnost nemůže být prázdná. Na příklad použijte **CoffeeScript**.
+- **Text**: Tato vlastnost nemůže být prázdná. Na příklad použijte **Začátek přestávky**.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
+
+### <a name="primary-button"></a>Primární tlačítko
+
+Styly lze na primární tlačítko použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **DefaultButtonGroup** nebo **PrimaryButtonGroup** (například **DefaultButtonGroup10**).
+
+![Primární tlačítko.](media/pfe-styles-first.png)
+
+### <a name="secondary-button"></a>Sekundární tlačítko
+
+Styly lze na sekundární tlačítko použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Skupina se jmenuje **Pravý panel** nebo název skupiny začíná na **SecondaryButtonGroup**.
+
+![Sekundární tlačítko.](media/pfe-styles-second.png)
+
+### <a name="third-group-button"></a>Tlačítko třetí skupiny
+
+Styly lze na tlačítko třetí skupiny použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Skupina se jmenuje **Levý panel** nebo název skupiny začíná na **ThirdButtonGroup**.
+
+![Tlačítko třetí skupiny.](media/pfe-styles-third.png)
+
+### <a name="fourth-group-button"></a>Tlačítko čtvrté skupiny
+
+Styly lze na tlačítko čtvrté skupiny použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **FourthButtonGroup**.
+
+Nastavte na tlačítku následující vlastnosti:
+
+- **Button Display**: **TextOnly**.
+- **Normal Image**: Tato vlastnost musí být prázdná.
+- **Text**: Tato vlastnost nemůže být prázdná. Například použijte **Pohled** nebo **Upravit**.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
+
+![Tlačítko čtvrté skupiny.](media/pfe-styles-fourth.png)
+
+### <a name="flat-button"></a>Ploché tlačítko
+
+Styly lze na ploché tlačítko použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **FlatButtonGroup**.
+
+Nastavte na tlačítku následující vlastnosti:
+
+- **Button Display**: **ImageOnly**.
+- **Normal Image**: Tato vlastnost nemůže být prázdná. Na příklad použijte **CoffeeScript**.
+- **Text**: Tato vlastnost musí být prázdná.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
+
+![Ploché tlačítko.](media/pfe-styles-flat-button.png)
+
+## <a name="combo-box"></a>Pole se seznamem
+
+Pole se seznamem je kombinací tří ovládacích prvků: ovládacího prvku vstupu, tlačítka, které vymaže ovládací prvek vstupu, a tlačítka, které spouští vyhledávání.
+
+Styly lze na pole se seznamem použít pouze v případě, že jsou splněny následující požadavky:
+
+- Tlačítko se seznamem je obsaženo ve skupině formulářů.
+- Název skupiny začíná na **Combobox**.
+- Uvnitř skupiny je první ovládací prvek **AxFormStringControl**. Tento ovládací prvek zobrazuje aktuální hodnotu a je to místo, kde uživatel zadá požadovanou hodnotu.
+- Druhý ovládací prvek je ovládací prvek **CommonButton** a jeho název začíná na **ClearButton**. Toto tlačítko musí obsahovat kód, který používá vlastnost **enable** pro zobrazení nebo skrytí tlačítka. Chcete-li například k zobrazení nebo skrytí tlačítka **Vymazat**, zatímco uživatel zadává informace do vstupního ovládacího prvku, můžete použít následující kód.
+
+    ```xpp
+    public void textChange()
+    {
+        super();
+        ClearButtonSerial.enabled(this.text()? true : false);
+    }
+    ```
+
+    Měli byste mít jednu metodu, kde jsou data nastavena ve vstupním ovládacím prvku. Aktivujte tlačítko **Vymazat** v této metodě. Následuje příklad.
+
+    ```xpp
+    public void setSerialId(str _serialId)
+    {
+        JmgTmpJobBundleProdFeedback.InventSerial = _serialId;
+        ClearButtonSerial.enabled(_serialId? true : false);
+
+        if (_serialId)
+        {
+            this.addSerialNumber();
+        }
+    }
+    ```
+
+    Použijte následující kód pro metodu **kliknuto** tlačítka **Vymazat**.
+
+    ```xpp
+    public void clicked()
+    {
+        element.setSerialId('');
+        InventSerialId.setFocus(); // set focus back to the input box
+    }
+    ```
+
+    Nastavte hodnotu ovládacího prvku vstupu **AxFormStringControl**, když je formulář inicializován pomocí metody **init**. Pokud hodnota není prázdná, aktivovat tlačítko **Vymazat**. Pokud hodnota je prázdná, deaktivovat tlačítko **Vymazat**.
+
+- Třetí ovládací prvek je ovládací prvek **CommonButton** a jeho název začíná na **SearchButton**.
+
+Následující obrázek ukazuje dva ovládací prvky pole se seznamem. Pole se seznamem vlevo obsahuje prázdné textové pole a tlačítko **Vymazat** je deaktivováno. Pole se seznamem vpravo obsahuje text v textovém poli a tlačítko **Vymazat** je aktivováno.
+
+![Pole se seznamem s tlačítkem Vymazat a bez něj.](media/pfe-styles-combo.png)
+
+## <a name="quick-filter"></a>Rychlý filtr
+
+Ovládací prvek rychlého filtru přidá na stránku vyhledávací pole. Styly můžete použít na rychlý filtr, pokud jsou splněny následující požadavky:
+
+- Rychlý filtr je obsažen ve skupině formulářů.
+- Název skupiny začíná na **SearchInputGroup**.
+- Uvnitř skupiny je první ovládací prvek **QuickFilter**. (To je místo, kde uživatel zadá hledaný řetězec.)
+- Druhý ovládací prvek je **FormStaticTextControl** s názvem **NumberOfResults**. (Toto je volitelné a zobrazuje počet nalezených položek, pokud jsou zahrnuty.)
+- Třetí ovládací prvek je ovládací prvek **CommonButton** s názvem, který začíná na **ClearButton**.
+
+Následující obrázek ukazuje dva ovládací prvky rychlého filtru. Rychlý filtr vlevo má prázdný rychlý filtr a počet výsledků není vidět. Rychlý filtr vpravo obsahuje vyhledávací řetězec a zobrazuje počet výsledků.
+
+![Příklady rychlého ovládání filtru s vyhledávacím řetězcem a bez něj.](media/pfe-styles-quick-filter.png "Příklady rychlého ovládání filtru s vyhledávacím řetězcem a bez něj")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

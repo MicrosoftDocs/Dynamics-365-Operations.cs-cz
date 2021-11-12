@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769412"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647478"
 ---
 # <a name="mobile-device-user-settings"></a>Uživatelská nastavení mobilního zařízení
 
@@ -54,7 +54,7 @@ Můžete také definovat profil nastavení, který platí pro všechny značky z
 
 Podle těchto pokynů můžete vytvořit a spravovat uživatelské nastavení svých mobilních zařízení.
 
-1. Přejděte na **Řízení skladu \> Mobilní zařízení \> Nabídka mobilního zařízení**.
+1. Přejděte na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Nabídka mobilního zařízení**.
 1. Vyberte existující profil nastavení uživatele v podokně seznamu a otevřete jeho záznam. Případně vyberte **Nový** v podokně akcí a vytvořte nový profil.
 
     Každý profil v podokně seznamu je označen, aby indikoval značku, model nebo ID uživatele, kterého se profil týká. Obecnější profily mají pro některé nebo všechny tyto vlastnosti hodnotu *Všechno*.
@@ -83,7 +83,7 @@ Použijte stránku **Značky mobilních zařízení** k zobrazení, vytvoření 
 
 Podle těchto pokynů můžete vytvořit a spravovat značky a modely svých mobilních zařízení.
 
-1. Přejděte do nabídky **Řízení skladu \> Mobilní zařízení \> Nabídka mobilního zařízení**.
+1. Přejděte do **Warehouse Management \> Nastavení \> Mobilní zařízení \> Značky mobilního zařízení**.
 1. V podokně seznamu vyberte značku mobilního zařízení pro otevření jejího záznamu. Případně vyberte **Nový** v podokně akcí a vytvořte novou značku.
 1. V části záhlaví záznamu pro novou nebo vybranou značku zařízení nastavte následující pole:
 

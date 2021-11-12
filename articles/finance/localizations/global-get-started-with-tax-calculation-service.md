@@ -2,7 +2,7 @@
 title: Začněte s výpočtem daně
 description: Toto téma vysvětluje, jak nastavit výpočet daně.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562119"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647427"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Toto téma poskytuje informace o tom, jak začít pracovat s výpočtem daně. Provede vás kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Poté představí běžný proces používání možností výpočtu daně v transakcích Finance a Supply Chain Management.
 
@@ -41,29 +39,10 @@ Nastavení se skládá ze čtyř hlavních kroků:
 
 Než budete moci dokončit postupy uvedené v tomto tématu, musí být splněny předpoklady pro každý typ prostředí.
 
-### <a name="for-a-production-environment"></a>Pro produkční prostředí
-
-Pro produkční prostředí musí být splněny následující předpoklady:
+Musí být splněny následující předpoklady:
 
 - Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.21 nebo novější.
 - Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
-- Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí Finance nebo Supply Chain Management, na základě vašich obchodních potřeb:
-
-    - Služba výpočtu daně
-    - Podporovat více DIČ
-    - Daň v převodním příkazu
-
-- Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí RCS.
-
-    - Globalizační funkce
-
-### <a name="for-a-test-environment-public-preview"></a>Pro testovací prostředí (Public Preview)
-
-Pro testovací prostředí musí být splněny následující předpoklady:
-
-- Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.21 nebo novější verze.
-- Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
-- Musíte kontaktovat společnost Microsoft e-mailem na adrese <taxcalc@microsoft.com>, aby povolila testování ve vašem nasazeném prostředí Finance nebo Supply Chain Management.
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí Finance nebo Supply Chain Management, na základě vašich obchodních potřeb:
 
     - Služba výpočtu daně

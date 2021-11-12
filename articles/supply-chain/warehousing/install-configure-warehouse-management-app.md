@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384604"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647613"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -109,7 +109,7 @@ Další informace o nastavení aplikací webových služeb v Azure AD naleznete
     - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
 
 Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD, postupujte takto.
 
@@ -117,17 +117,24 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
 
     1. V aplikaci Supply Chain Management přejděte na **Správa systému \> Uživatelé \> Uživatelé**.
     1. Vytvořte uživatele.
-    1. Přiřaďte uživatele skladového mobilního zařízení.
+    1. Přiřaďte uživateli roli *Uživatel skladového mobilního zařízení*.
 
     ![Přiřaďte uživatele skladového mobilního zařízení.](media/app-connect-app-users.png "Přiřazení uživatele skladového mobilního zařízení")
 
 1. Přidružte aplikaci Azure AD k uživateli Warehouse Management mobile app:
 
     1. Přejděte na **Správa systému \> Nastavení \> Aplikace Azure Active Directory**.
-    1. Vytvořte řádek.
-    1. Zadejte ID klienta, které jste si poznamenali v předchozí části, pojmenujte ho a vyberte právě vytvořeného uživatele. Doporučujeme označit všechna vaše zařízení. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management.
+    1. V podokně Akce vyberte možnost **Nový** a vytvořte řádek.
+    1. V poli **ID klienta** zadejte ID klienta, které jste si poznamenali v předchozí části.
+    1. Do pole **Název** zadejte název.
+    1. V poli **ID uživatele** vyberte ID uživatele, kterého jste právě vytvořili.
 
     ![Aplikace Azure Active Directory.](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
+
+> [!TIP]
+> Jedním ze způsobů, jak tato nastavení použít, je vytvořit ID klienta v Azure pro každé vaše fyzické zařízení a poté každé ID klienta přidat na stránku **Aplikace Azure Active Directory**. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management odstraněním ID klienta. (Tento přístup funguje, protože přihlašovací údaje pro připojení, které jsou uloženy na každém zařízení, také určují ID klienta, jak je popsáno dále v tomto tématu.)
+>
+> Kromě toho je výchozí jazyk, formát čísla a nastavení časového pásma pro každé ID klienta určeno předvolbami nastavenými pro hodnotu **ID uživatele**, která je zde mapována. Proto můžete tyto předvolby použít k vytvoření výchozího nastavení pro každé zařízení nebo kolekci zařízení na základě ID klienta. Tato výchozí nastavení však budou přepsána, pokud jsou také definována pro *uživatelský účet aplikace skladu* který pracovník používá k přihlášení do zařízení. (Další informace naleznete v tématu [Nastavení uživatelských účtů mobilních zařízení](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Ověření pomocí certifikátu nebo tajného klíče klienta
 

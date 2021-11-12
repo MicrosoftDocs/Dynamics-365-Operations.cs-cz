@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580977"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647307"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.20. (srpen 2021)
 
@@ -46,7 +46,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 V následující tabulce je uveden seznam vylepšených funkcí této verze. Každý z nich poskytuje přírůstkové vylepšení stávající funkce. Protože se jedná pouze o vylepšení, nejsou uvedeny v seznamu [plán vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Aby se však zajistilo, že tato vylepšení nebudou v rozporu s vašimi stávajícími přizpůsobeními nebo předvolbami, je každé z nich ve výchozím nastavení vypnuto (pokud není uvedeno jinak). Pokud chcete použít některou z těchto funkcí, musíte ji výslovně povolit ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
+| Modul | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
 | Hlavní plánování | Paralelní autorizace upravené prognózy poptávky | Tato funkce umožňuje paralelní autorizaci upravené prognózy poptávky ze stránky **Upravená předpověď poptávky**. Záměrem této funkce je zvýšit výkon při autorizaci vysokého počtu prognóz. Při autorizaci může uživatel zadat **Počet vláken** v autorizačním dialogu. |
 | Hlavní plánování | (Preview) Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Tato funkce umožňuje používat dávkové úlohy k potvrzení a konsolidaci plánovaných hromadných a balíkových objednávek. |

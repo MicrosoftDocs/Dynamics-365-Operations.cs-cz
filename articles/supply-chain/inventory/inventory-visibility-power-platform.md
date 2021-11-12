@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a60fc00642a77d3dc595a6222727637f0d7cd588
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 0457190f2fc8cd0ed39e109e6720509b77b83566
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475053"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678512"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Použití aplikace viditelnosti zásob
 
@@ -63,8 +63,6 @@ Chcete-li odeslat dotaz na skladové množství, zadejte dotaz do těla požadav
 ![Nastavení dotazu na zásoby na skladě](media/inventory-visibility-query-settings.png "Nastavení dotazu na zásoby na skladě")
 
 ### <a name="reservation-posting"></a>Odeslání rezervace
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 K odeslání požadavku na rezervaci použijte kartu **Odeslání rezervace**. Než budete moci odeslat požadavek na rezervaci, musíte zapnout funkci *OnHandReservation*. Další informace o této funkci naleznete v části [Rezervace Viditelnosti zásob](inventory-visibility-reservations.md).
 
