@@ -1172,6 +1172,8 @@
               items:
                 - name: Přehled obchodních událostí
                   href: business-events/home-page.md
+                - name: Správa koncových bodů obchodních událostí
+                  href: business-events/managing-business-event-endpoints.md
                 - name: Obchodní události aplikace
                   href: business-events/app-business-events.md
                 - name: Obchodní události workflow
@@ -1198,12 +1200,16 @@
                       href: business-events/how-to/how-to-eventgrid.md
                     - name: Obchodní události a Azure Service Bus
                       href: business-events/how-to/how-to-servicebus.md
+                    - name: Obchodní události a fronta Azure Service Bus
+                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: Obchodní události a schválení workflow
                       href: business-events/how-to/how-to-workflow.md
                     - name: Obchodní události a Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
                     - name: Obchodní události a Azure Event Hubs
                       href: business-events/how-to/event-hub.md
+                    - name: Přihlášení k odběru událostí v Dataverse
+                      href: business-events/how-to/how-to-dataverse-events.md
                     - name: Obchodní události v uzávěrce finančního období
                       href: business-events/how-to/period-close.md
             - name: Doplňky
@@ -1654,11 +1660,9 @@
                   items:
                     - name: Jak vytvořit jedinečný oddělovač účtové osnovy
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Upgrade deníků jednoho dokladu a přecenění měny
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datový model plánování projektových zdrojů
                       href: migration-upgrade/data-model-changes-resource-management.md
-                    - name: Změny podsystému workflowu
+                    - name: Změny podsystému pracovního postupu
                       href: migration-upgrade/workflow-subsystem.md
                     - name: Agregace modelů použitých namísto krychlí pro analýzu
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md

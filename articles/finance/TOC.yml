@@ -708,48 +708,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Volání jednoduchého formátu exportu elektronického výkaznictví k vygenerování sestavy v aplikaci Excel
               href: general-ledger/electronic-messaging-example.md
-        - name: Správa výdajů
-          items:
-            - name: Přehled správy výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Sestavy výdajů v nové podobě
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Plánování správy výdajů
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Parametry správy výdajů
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Pracovnímu prostor správy výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Nastavit workflowy pro správu výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Workflow správy výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Správa delegování výdajů
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Zpracování příjemek výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Import a udržování transakce platební karty
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Distribuce na sestavě výdajů
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Mezipodnikové výdaje
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Definice zásad výdajů
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Zobrazení sestavy výdajů
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Zaúčtování sestavy výdajů
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Sestavy výdajů a více schvalovatelů
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Vratka DPH ve správě výdajů
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Pravidla denních diet
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Cestovní žádanky
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Osobní výdaje v sestavě výdajů
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Dlouhodobý majetek
           items:
             - name: Domovská stránka Dlouhodobý majetek
@@ -1248,9 +1206,7 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Nastavení a správa
               items:
-                - name: Konfigurace Finance Insights pro Public Preview
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurace Finance Insights pro Private Preview
+                - name: Konfigurace Finance insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Povolení předpovědí plateb zákazníka
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1288,88 +1244,6 @@
                   href: finance-insights/payment-snapshots.md
             - name: Časté dotazy k řešení potíží s Finance Insights
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: "Řízení projektů a\_účetnictví"
-          items:
-            - name: Přehled řízení a účetnictví projektu
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Mezipodnikové fakturování
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Konfigurace fakturování mezipodnikového projektu
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: "Konfigurace standardních nákladů pro práci a\_výdaje"
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Vytvoření a použití podmínek zadržení plateb dodavatele
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Nastavení a používání plateb dodavatelům způsobem „zaplatit při uhrazení“
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Časové rozlišení nákladů projektu na nákupních příjemkách
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Fakturace projektu
-              href: accounts-payable/project-invoicing.md
-            - name: Projektové smlouvy
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Vytvoření rozšířených smluv pro účtování na základě průběhu
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: "Prognózy projektu a\_rozpočty"
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Vytvoření modelů prognózy pro rozpočty projektu
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Převod rozpočtů projektu na konci fiskálního roku
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Prodejní objednávky projektu
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Nákupní objednávky pro projekt
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Nabídky projektu
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Potvrzení, aktualizace a odeslání nabídky projektu'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Převod nabídky do projektu
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Zdroje projektu
-              items:
-                - name: Přehled zdrojů projektu
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Nastavení zdrojů projektu
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Správa kompetencí zdrojů
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Vytvoření nového projektu
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Nastavení cen na základě role
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Vytvoření projektového týmu
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Synchronizace kapacity zdrojů
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Výkonnost plánování projektových zdrojů
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Nastavení rolí v šablonách strukturovaného rozpisu práce
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Plnění zdrojů pro plánované zdroje
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: "Přijetí položek na nákupní objednávce z\_požadavku na položku"
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Strukturované rozpisy prací
-              items:
-                - name: Přehled struktur rozpisu prací
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Integrace Microsoft Project Client
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Přehled mobilních aplikací projektu
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Mobilní pracovní prostor zadání času projektu
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Mobilní aplikace Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Časové rozvrhy na mobilním zařízení
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Implementace vlastních polí pro mobilní aplikaci Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Granty projektu
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Eliminace odhadu projektu
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Veřejný sektor
           items:
             - name: Domovská stránka veřejného sektoru
@@ -1804,6 +1678,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Nastavení parametrů NF-e pro fiskální subjekt
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: Přesunutí souborů NF-e XML jako příloh
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Aktualizace rozvržení a ověření v elektronickém fiskálním dokumentu (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 - Zprostředkující prodejní digitální platforma pro NF-e
@@ -2190,6 +2066,8 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Zobrazení transakcí u vyrovnání
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Finanční důvod
+                  href: localizations/emea-financial-reason.md
             - name: Finsko
               items:
                 - name: Finsko - přehled
@@ -2750,10 +2628,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Rozšíření použitelnosti bankovních dat
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Italský Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Zaúčtování příchozích a odchozích zásilek pro Intrastat
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Italský Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Zaúčtování příchozích a odchozích zásilek pro Intrastat
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Formát souboru Intrastat (IT)
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: "Vedlejší náklady na kilogram v\_prohlášení Intrastat"
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Předběžné smlouvy – fakturace obvyklých vývozců
@@ -3110,6 +2992,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Sestavy DPH
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Polský Intrastat
+                  href: localizations/emea-pol-intrastat.md
                 - name: Nastavení číselných řad podle skladu
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standardní soubor auditu
@@ -4375,6 +4259,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Relativní cesta v datových vazbách
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh výrazů pro volání metod třídy aplikace
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: "Použití řešení elektronického výkaznictví v\_aplikaci Finance"
               items:
                 - name: Konfigurace architektury

@@ -1,7 +1,7 @@
 ---
 title: Kopírování odběratelů pomocí sdílených číselných řad
 description: Toto téma vysvětluje, jak používat sdílené číselné řady pro kopírování odběratele do jiné právnické osoby při zachování stejného ID odběratele.
-author: mikefalkner
+author: abruer
 ms.date: 08/31/2018
 ms.topic: index-page
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d906ed3cb7af0af9e0137f878c39d5ad47616a783688ad70b1465bd0b2d470aa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a93f0519b292c12ea31a8faf3bff051fc111216
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763327"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753482"
 ---
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopírování odběratelů pomocí sdílených číselných řad
 

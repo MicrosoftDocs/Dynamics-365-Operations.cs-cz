@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: Úprava nákladové ceny množství na skladě
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Sestava úložiště hodnot zásob
+                - name: Sestavy hodnot zásob
                   href: cost-management/inventory-value-report-storage.md
+                - name: Příklady a logika sestavy hodnot zásob
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Uložení sestavy stáří zásob
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Příklady a logika sestavy stáří zásob
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Plánování s výběrem prostředků na základě schopností
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Plánování založené na prioritách
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Značení zásob s optimalizací plánování
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
@@ -1719,6 +1723,8 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Splnění rezervních zásob položek
                   href: master-planning/safety-stock-replenishment.md
+                - name: Použití deníku pojistných zásob pro aktualizaci minimální disponibility pro položky
+                  href: master-planning/safety-stock-journal.md
                 - name: Zpoždění
                   href: master-planning/delays.md
                 - name: Zrušení hlavní plánovací úlohy
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: "Vyvolání toků automatizace procesů k\_vytvoření objednávek kvality"
               href: production-control/process-automation-quality-orders.md
+            - name: Integrace se systémy realizace výroby třetích stran
+              href: production-control/mes-integration.md
             - name: Diskrétní výroba
               items:
                 - name: Správa hlavních dat výroby
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Vytvoření rozhraní pro provádění výrobního provozu
                   href: production-control/production-floor-execution-styles.md
+                - name: Vlastní nastavení rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-customize.md
         - name: Správa rabatu
           items:
             - name: Přehled modulu správy rabatu

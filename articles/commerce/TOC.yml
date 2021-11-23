@@ -2538,9 +2538,11 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Retail SDK
               items:
+                - name: Migrace do sady Commerce SDK
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Architektura Retail SDK
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Nastavení kanálu buildu pro sadu SDK nezávislého balení
+                - name: Nastavení kanálu sestavení pro sadu SDK nezávislého balení
                   href: dev-itpro/build-pipeline.md
                 - name: "Migrace Retail SDK z\_Visual Studio 2015 do Visual Studio 2017"
                   href: dev-itpro/retail-sdk/migrate-sdk.md
