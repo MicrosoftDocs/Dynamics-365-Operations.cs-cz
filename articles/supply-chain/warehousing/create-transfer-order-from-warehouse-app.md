@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746812"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777808"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Vytvoření převodních příkazů z aplikace skladu
 
@@ -36,7 +36,7 @@ Než budete moct tuto funkci používat, musíte funkci a její předpoklady pov
 1. Pak povolte funkci *Vytvářet převodní příkazy z aplikace skladu*, která je uvedena jako:
     - **Modul** - Řízení skladu
     - **Název funkce** – Vytvářet a zpracovávat převodní příkazy z aplikace skladu
-1. Pokud chcete automatizovat zpracování odchozích dodávek, musíte také povolit funkci [Potvrdit odchozí dodávky z dávkových úloh](confirm-outbound-shipments-from-batch-jobs.md). Tato funkce je uvedena jako:
+1. Pokud chcete automatizovat zpracování odchozích dodávek, musíte také povolit funkci [Potvrdit odchozí dodávky z dávkových úloh](confirm-outbound-shipments-from-batch-jobs.md). Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
     - **Modul** - Řízení skladu
     - **Název funkce** – Potvrdit odchozí dodávky z dávkových úloh
 

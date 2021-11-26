@@ -90,7 +90,7 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <td>Ano</td>
 <td>Ano</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
 </tr>
 <tr class="even">
@@ -100,61 +100,61 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <li>Doložené úlohy nejsou dokončeny</li>
 </ul></td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převést</td>
 <td>Probíhá</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
 <td>Ano</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Převést</td>
 <td>Dokončeno</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převod nebo průběh</td>
 <td>Prázdné</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Převod nebo průběh</td>
 <td>Kanbanová karta nebyla nalezena</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převod nebo průběh</td>
 <td>Kanbanová karta je nalezena, ale není přiřazena ke kanbanu</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Proces</td>
@@ -163,22 +163,22 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <li>Připraveno</li>
 <li>Probíhá</li>
 </ul></td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Proces</td>
 <td>Dokončeno</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 </tbody>
 </table>

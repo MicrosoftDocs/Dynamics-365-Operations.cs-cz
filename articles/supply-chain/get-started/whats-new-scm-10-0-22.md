@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678828"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778150"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22. (listopad 2021)
 
@@ -41,7 +41,6 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 
 | Modul | Název funkce ve správě funkcí | Další informace |
 |---|---|---|
-| Správa nákladů | Vytvoření souvisejících poukazů pro standardní zaokrouhlování nákladů | <p>Když je provedeno finanční zaúčtování zásob (například faktura prodejní objednávky nebo transakce zásob), tato funkce způsobí, že systém vytvoří samostatný doklad pro jakékoli související přecenění zaokrouhlování standardních nákladů a připojí jej k dokladu o finančním účtování jako související doklad.</p><p>Bez této funkce systém zaznamenává standardní přecenění zaokrouhlení nákladů na stejné zaúčtování poukázky. Toto chování může někdy způsobit konfliktní informace o datu, protože přecenění používají relaci nebo systémové datum, zatímco finanční účtování používá datum účtování.</p> |
 | Distribuovaná hybridní topologie | *(Není vyžadována žádná správa funkcí.)* | <p>Tato verze rozšiřuje možnosti plánování odchozího zatížení úlohy správy skladu pro cloudové a hraniční škálovací jednotky.</p><p>Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Správa technických změn | Generování varianty pro technické produkty | <p>Tato funkce vám umožňuje generovat několik variant pro technický produkt na základě jeho barvy, velikosti, stylu nebo rozměrů konfigurace.</p><p>Další informace viz [Generování variant pro strojírenské výrobky](../engineering-change-management/engineering-variants.md).</p> |
 | Řízení zásob a skladu | Integrace viditelnosti zásob s posunem rezervace | <p>Tuto funkci lze povolit až po povolení funkce *Integrace viditelnosti zásob*. Poskytuje funkce pro kompenzaci rezervací, které jsou provedeny na viditelnosti zásob.</p><p>Další informace viz [Rezervace ve Viditelnosti zásob](../inventory/inventory-visibility-reservations.md).</p> |

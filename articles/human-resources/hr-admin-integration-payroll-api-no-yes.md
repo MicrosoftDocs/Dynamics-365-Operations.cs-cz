@@ -34,7 +34,7 @@ Tento výčet poskytuje sadu možností pro typické logické vlastnosti ve virt
 
 | Hodnota | Štítek | popis |
 | --- | --- | --- |
-| 200000000 | Žádný | Ne. |
+| 200000000 | Ne | Ne. |
 | 200000001 | Ano | Ano. |
 
 ## <a name="see-also"></a>Viz také

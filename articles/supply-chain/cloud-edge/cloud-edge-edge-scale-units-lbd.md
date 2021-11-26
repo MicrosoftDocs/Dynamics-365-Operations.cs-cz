@@ -1,5 +1,5 @@
 ---
-title: Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD (Preview)
+title: Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
 description: Toto téma vysvětluje, jak zřídit místní jednotky škálování hrany pomocí vlastního hardwaru a nasazení, které je založeno na místních obchodních datech (LBD).
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678974"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729068"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD (Preview)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Jednotky škálování hrany hrají důležitou roli v distribuované hybridní topologii pro správu dodavatelského řetězce. V hybridní topologii můžete rozdělit pracovní zátěže mezi vaše cloudové centrum Supply Chain Management a další jednotky škálování v cloudu nebo na hraně.
 
 Jednotky škálování hrany lze nasadit vytvořením [místního prostředí](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) místních obchodních dat (LBD) a poté je nakonfigurovat tak, aby fungovaly jako jednotka škálování ve vaší distribuované hybridní topologii pro správu dodavatelského řetězce. Toho je dosaženo propojením místního prostředí LBD s prostředím Supply Chain Management v cloudu, které bylo nakonfigurováno tak, aby fungovalo jako centrum.  
-
-Jednotky škálování hrany jsou aktuálně ve verzi Preview. Prostředí tohoto typu tedy smíte používat pouze podle [podmínek Preview](https://aka.ms/scmcnepreviewterms).
 
 Toto téma popisuje, jak nastavit místní prostředí LBD jako jednotku škálování hrany a pak ji přidružit k centru.
 
@@ -36,11 +33,9 @@ Zde je přehled kroků nasazení.
 
 1. **Povolte slot LBD ve svém projektu LBD v Microsoft Dynamics Lifecycle Services (LCS).**
 
-    Během verze Preview se jednotky škálování hrany LBD zaměřují na stávající zákazníky LBD. Další 60denní omezený slot LBD sandbox bude poskytován pouze ve specifických situacích zákazníků.
-
 1. **Nastavte a nasaďte prostředí LBD s *prázdnou* databází.**
 
-    Použijte LCS k nasazení prostředí LBD s nejnovější topologií a prázdnou databází. Pro více informací viz část [Nastavení a nasazení prostředí LBD s prázdnou databází](#set-up-deploy) dále v tomto tématu. Musíte používat Supply Chain Management verze 10.0.19 s aktualizací platformy 43 nebo vyšší v prostředích center a jednotek škálování.
+    Použijte LCS k nasazení prostředí LBD s nejnovější topologií a prázdnou databází. Pro více informací viz část [Nastavení a nasazení prostředí LBD s prázdnou databází](#set-up-deploy) dále v tomto tématu. Musíte používat Supply Chain Management verze 10.0.21 s nebo vyšší v prostředích center a jednotek škálování.
 
 1. **Nahrajte cílové balíčky do prostředků projektu LBD v LCS.**
 
@@ -60,7 +55,7 @@ Zbývající části tohoto tématu poskytují podrobnější informace o tom, j
 
 Tento krok vytvoří funkční prostředí LBD. Prostředí však nemusí mít nutně stejnou verzi aplikace a platformy jako prostředí centra. Kromě toho stále chybí přizpůsobení a ještě nebylo povoleno, aby fungovalo jako jednotka škálování.
 
-1. Postupujte podle pokynů v části [Nastavení a nasazení místních prostředí (Platform Update 41 a novější)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musíte používat Supply Chain Management verze 10.0.19 s aktualizací platformy 43 nebo vyšší v prostředích center a jednotek škálování
+1. Postupujte podle pokynů v části [Nastavení a nasazení místních prostředí (Platform Update 41 a novější)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musíte používat Supply Chain Management verze 10.0.21 s nebo vyšší v prostředích center a jednotek škálování. Kromě toho musíte použít skripty infrastruktury verze 2.12.0 nebo novější. 
 
     > [!IMPORTANT]
     > Přečtěte si zbytek této části **před** provedením kroků v tomto tématu.
@@ -75,9 +70,50 @@ Tento krok vytvoří funkční prostředí LBD. Prostředí však nemusí mít n
     > Tento skript odstraní veškerou konfiguraci, která není potřeba pro nasazení jednotek škálování hrany.
 
 1. Nastavte databázi, která obsahuje prázdná data, jak je popsáno v části [Konfigurace databází](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Pro tento krok použijte prázdný soubor data.bak.
-1. Nastavte skript před nasazením. Další informace viz [Předběžné nasazení místního agenta a skripty po nasazení](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. Poté, co dokončíte [Konfiguraci databází](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb), spusťte následující skript pro konfiguraci databáze Scale Unit Alm Orchestrator.
 
-    1. Zkopírujte obsah ze složky **Jednotka škálování** v **Skripty infrastruktury** do složky **Skripty** ve sdílené složce úložiště souborů agenta, která byla nastavena v prostředí. Typická cesta je \\\\lbdiscsi01\\agent\\Scripts.
+    > [!NOTE]
+    > Nekonfigurujte databázi Financial Reporting během [Konfigurace databází](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb).
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Skript Initialize-Database.ps1 provádí následující akce:
+
+    1. Vytvořte prázdnou databázi s názvem **ScaleUnitAlmDb**.
+    2. Mapujte uživatele na databázové role na základě následující tabulky.
+
+        | Uživatel            | Typ | Role databáze |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_owner     |
+
+1. Dále postupujte podle pokynů v části [Nastavení a nasazení místních prostředí (Platform Update 41 a novější)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Poté, co dokončíte krok [Nakonfigurujte AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb), postupujte takto:
+
+    1. Vytvořte novou aplikaci Active Directory Federation Services (AD FS), která umožní službě Alm Orchestration komunikovat s vaším aplikačním objektovým serverem (AOS).
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Vytvořte novou aplikaci Azure Active Directory (Azure AD), která umožní službě Alm Orchestration komunikovat se službou Scale Unit Management.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Dále postupujte podle pokynů v části [Nastavení a nasazení místních prostředí (Platform Update 41 a novější)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Když musíte zadat konfiguraci pro místního agenta, ujistěte se, že jste povolili funkce Edge Scale Unit a poskytli všechny požadované parametry.
+
+    ![Povolení funkcí Edge Scale Unit.](media/EnableEdgeScaleUnitFeatures.png "Povolení funkcí Edge Scale Unit.")
+
+1. Před nasazením prostředí z LCS nastavte skript před nasazením. Další informace viz [Předběžné nasazení místního agenta a skripty po nasazení](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Zkopírujte skript Configure-CloudAndEdge.ps1 ze složky **Jednotka škálování** v **Skripty infrastruktury** do složky **Skripty** ve sdílené složce úložiště souborů agenta, která byla nastavena v prostředí. Typická cesta je \\\\lbdiscsi01\\agent\\Scripts.
     2. Vytvořte skript **PreDeployment.ps1**, který bude volat skripty pomocí požadovaných parametrů. Skript před nasazením musí být vložen do služky **Skripty** ve sdílené složce úložiště souborů agenta. Jinak nelze spustit. Typická cesta je \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
 
         Obsah skriptu PreDeployment.ps1 bude připomínat následující příklad.
@@ -86,7 +122,7 @@ Tento krok vytvoří funkční prostředí LBD. Prostředí však nemusí mít n
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,6 +137,75 @@ Tento krok vytvoří funkční prostředí LBD. Prostředí však nemusí mít n
         >   - @#
 
 1. Nasaďte prostředí pomocí nejnovější základní topologie, která je k dispozici.
+1. Po nasazení prostředí svého postupujte takto:
+
+    1. Spusťte následující příkazy SQL ve vaší obchodní databázi (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Zvyšte souběžnou maximální dávkovou relaci na hodnotu vyšší než 4.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Ověřte, že ve vaší obchodní databázi (AXDB) bylo povoleno sledování změn.
+
+        1. Spusťte aplikaci SQL Server Management Studio (SSMS).
+        1. Vyberte a podržte svoji obchodní databázi (AXDB) (nebo klikněte pravým tlačítkem) a vyberte možnost **Vlastnosti**.
+        1. V okně, které se objeví, vyberte **Sledování změn** a pak nastavte následující hodnoty:
+
+            - **Change Tracking:** *True*
+            - **Retention Period:** *7*
+            - **Retention Units:** *Days*
+            - **Auto Cleanup:** *True*
+
+    1. Přidejte ID aplikace AD FS, které jste vytvořili dříve (pomocí skriptu Create-ADFSServerApplicationForEdgeScaleUnits.ps1) do tabulky aplikací Azure AD ve vaší jednotce škálování. Tento krok můžete dokončit ručně prostřednictvím uživatelského rozhraní (UI). Případně jej můžete dokončit prostřednictvím databáze pomocí následujícího skriptu.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Nastavte trezor klíčů Azure a aplikaci Azure AD pro umožnění komunikace mezi jednotkami škálování
+
+1. Po nasazení prostředí vytvořte další aplikaci Azure AD umožňující důvěryhodnou komunikaci mezi vaším centrem a jednotkou škálování.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. Po vytvoření aplikace musíte vytvořit tajný kód klienta a uložit informace do trezoru klíčů Azure. Kromě toho musíte udělit přístup k aplikaci Azure AD, která byla vytvořena, aby mohla získat tajné kódy, které jsou uloženy v trezoru klíčů. Pro vaše pohodlí následující skript automaticky provede všechny požadované akce.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > Pokud žádný trezor klíčů nemá zadanou hodnotu **KeyVaultName**, skript ji automaticky vytvoří.
+
+1. Přidejte ID aplikace Azure AD, kterou jste právě vytvořili (při použití skriptu Create-SpokeToHubAADApplication.ps1) do tabulky aplikací Azure AD ve vašem centru. Tento krok můžete dokončit ručně prostřednictvím uživatelského rozhraní.
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Nahrajte cílové balíčky do prostředků projektu LBD v LCS
 
@@ -116,122 +221,13 @@ Tento krok uvede do souladu verzi aplikace, verzi platformy a přizpůsobení v 
 1. Vybavte prostředí LBD pomocí kombinovaného balíčku aplikace/platformy, který jste nahráli v předchozím kroku.
 1. Vybavte prostředí LBD pomocí vlastního nasaditelného balíčku, jste nahráli v předchozím kroku.
 
-    ![Výběr možnosti Údržba > Použít aktualizace v LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Výběr možnosti Údržba > Použít aktualizace v LCS")
+    ![Použití aktualizací v LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Použití aktualizací v LCS")
 
     ![Výběr balíčku přizpůsobení.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Výběr balíčku přizpůsobení")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Přiřaďte jednotku škálování hrany LBD k centru
 
-Zatímco jednotky škálování hrany jsou stále v Preview, musíte použít [nástroje pro nasazení a konfiguraci jednotek škálování](https://github.com/microsoft/SCMScaleUnitDevTools), které jsou dostupné na GitHubu, pro přiřazení jednotky škálování hrany LBD k centru. Proces umožňuje, aby konfigurace LBD fungovala jako jednotka škálování hrany a přidružila ji k centru. Proces je podobný konfiguraci samostatného vývojového prostředí.
-
-1. Stáhněte si nejnovější verzi [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) a rozbalte obsah souboru.
-1. Vytvořte kopii souboru `UserConfig.sample.xml` a pojmenujte ji `UserConfig.xml`.
-1. Vytvořte aplikaci Microsoft Azure Active Directory (Azure AD) ve klientovi Azure AD, jak je uvedeno v části [Průvodce nasazením pro jednotku škálování a pracovní zátěže](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations).
-    1. Po vytvoření přejděte na formulář žádosti Azure AD (SysAADClientTable) v centru.
-    1. Vytvořte nový záznam a nastavte **ID klienta** na ID aplikace, kterou jste vytvořili. Nastavte **Název** na *ScaleUnits* a **Uživatelské ID** na *Admin*.
-
-1. Vytvořte aplikaci Active Directory Federation Service (AD FS), jak je uvedeno v části [Průvodce nasazením pro jednotku škálování a pracovní zátěže](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations).
-    1. Po vytvoření přejděte na formulář žádosti Azure AD (SysAADClientTable) v jednotce škálování hrany.
-    1. Vytvořte nový záznam a nastavte **ID klienta** na ID aplikace, kterou jste vytvořili. Nastavte **uživatelské ID** na *Admin*.
-
-1. Upravte soubor `UserConfig.xml`.
-    1. V části `InterAOSAADConfiguration` zadejte informace z aplikace Azure AD, kterou jste vytvořili dříve.
-        - V prvku `AppId` zadejte ID aplikace Azure.
-        - V prvku `AppSecret` zadejte ID tajný kód aplikace Azure.
-        - Prvek `Authority` musí obsahovat adresu URL určující bezpečnostní oprávnění pro vašeho klienta.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. V části `ScaleUnitConfiguration` u první `ScaleUnitInstance` upravte část `AuthConfiguration`.
-        - V prvku `AppId` zadejte ID aplikace Azure.
-        - V prvku `AppSecret` zadejte ID tajný kód aplikace Azure.
-        - Prvek `Authority` musí obsahovat adresu URL určující bezpečnostní oprávnění pro vašeho klienta.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Pro stejnou `ScaleUnitInstance` navíc nastavte následující hodnoty:
-        - V prvku `Domain` zadejte adresu URL centra. Například: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - V prvku `EnvironmentType` zkontrolujte, že je nastavena hodnota `LCSHosted`.
-
-    1. V části `ScaleUnitConfiguration` u druhé `ScaleUnitInstance` upravte část `AuthConfiguration`.
-        - V prvku `AppId` zadejte ID aplikace AD FS.
-        - V prvku `AppSecret` zadejte ID tajný kód aplikace ADFS.
-        - Prvek `Authority` musí obsahovat adresu URL vaší instance služby AD FS.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Pro stejnou `ScaleUnitInstance` navíc nastavte následující hodnoty:
-        - V prvku `Domain` zadejte adresu URL jednotky škálování hrany. Například: https://ax.contoso.com/
-        - V prvku `EnvironmentType` zkontrolujte, že je nastavena hodnota LBD.
-        - V prvku `ScaleUnitId` zadejte stejnou hodnotu, jakou jste zadali pro prvek `InstanceId` při konfiguraci skriptu před nasazením `Configure-CloudandEdge.ps1`.
-
-        > [!NOTE]
-        > Pokud nepoužíváte výchozí Id (@A), ujistěte se, že aktualizujete ScaleUnitId pro každý ConfiguredWorkload v části Workloads.
-
-1. Otevřete PowerShell a přejděte do složky obsahující soubor `UserConfig.xml`.
-
-1. Spusťte nástroj tímto příkazem.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > Po každé akci budete muset nástroj znovu spustit.
-
-1. V nástroji vyberte **2. Připravit prostředí pro instalaci pracovní zátěže**. Poté spusťte následující kroky:
-    1. Vyberte **1. Připravit centrum**.
-    1. Vyberte **2. Připravit jednotku škálování**.
-
-    > [!NOTE]
-    > Pokud tento příkaz nespouštíte z čisté instalace a selže, proveďte následující akce:
-    >
-    > - Odstraňte všechny složky ze složky `aos-storage` (kromě `GACAssemblies`).
-    > - Spusťte následující příkaz SQL ve vaší obchodní databázi (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Spusťte následující příkazy SQL ve vaší obchodní databázi (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Ověřte, že ve vaší obchodní databázi (AXDB) bylo povoleno sledování změn
-    1. Spusťte aplikaci SQL Server Management Studio (SSMS).
-    1. Klikněte pravým tlačítkem na svou obchodní databázi (AXDB) a vyberte vlastnosti.
-    1. V okně, které se otevře, vyberte **Sledování změn** a proveďte následující nastavení:
-
-        - **Change Tracking:** *True*
-        - **Retention Period:** *7*
-        - **Retention Units:** *Days*
-        - **Auto Cleanup:** *True*
-
-1. V nástroji vyberte **3. Nainstalovat úlohy**. Poté spusťte následující kroky:
-    1. Vyberte **1. Nainstalovat na centrum**.
-    1. Vyberte **2. Nainstalovat na jednotku škálování**.
+Konfiguraci a správu jednotky škálování hrany provádíte prostřednictvím portálu pro správu jednotek škálování. Další informace naleznete v [Správa cloudových jednotek škálování a úkolů pomocí portálu správce jednotky škálování](./cloud-edge-landing-page.md#scale-unit-manager-portal).
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

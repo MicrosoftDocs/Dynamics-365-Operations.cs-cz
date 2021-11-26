@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: eb7e1b4e6df2c514b55ec101c0edf22590041628
-ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
+ms.openlocfilehash: 55b174b426b02e59f75d58e9a6cf32991089ca22
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645751"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728948"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
@@ -60,7 +60,7 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
 
 - Pevná záložka **Obecné**:
 
-  - **Pozitivní dny** – Čekající podpora *Pozitivní dny*.
+  - **Kladné dny** – Hodnota *Kladné dny* se nepoužívá. V Optimalizací plánování jsou kladné dny považovány za nekonečné.
   - **Spotřebovat zásob na skladě** – Čekající podpora *Spotřeba zásob na skladě*.
   - **Použijte zadaný kusovník nebo verzi vzorce** – Čekající podpora *Verze receptury s vedlejším/souběžným produktem*.
   - **Použijte zadanou verzi trasy** – Čekající podpora *Poptávka se specifickými požadavky na kusovník nebo trasu*.

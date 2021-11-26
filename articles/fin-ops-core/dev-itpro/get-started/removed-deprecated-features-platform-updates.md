@@ -178,7 +178,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Artefakty metadat spojené s Dynamics AX 2012 Enterprise Portal (EP) byly vyřazeny, protože aplikace Finance and Operations nikdy nepodporovaly EP. |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Ve vydání z října 2021 je naplánováno odstranění všech kódů EP. |
@@ -335,7 +335,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Adresy URL pro navigaci vložené do dokumentů vykreslených službou mohou obsahovat citlivé obchodní údaje. Odebíráme podporu vložených odkazů na procházení k podrobnostem coby bezpečnostní opatření pro další ochranu dat zákazníka. V důsledku této změny si uživatelé také užijí lepšího výkonu při interaktivním vytváření dokumentů.  |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Vykazování |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Tato funkce je aktivně odebírána ze služby.<br><br>Moderní klient nabízí řadu možností pro vytváření zobrazení s automaticky generovanými odkazy, které pomáhají při navigaci v aplikaci. Stránkované dokumenty vykreslené službou jsou doporučeny pro externí sdělení, které jsou zasílány e-mailem, archivovány a vytištěny pro příjemce. Zlepšili jsme prostředí pro zobrazení náhledu dokumentů přímo v prohlížeči, které nabízí přímý přístup k místním tiskárnám. Další informace naleznete v tématu [Náhled dokumentů PDF pomocí integrovaného prohlížeče](../analytics/preview-pdf-documents.md). |

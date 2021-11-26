@@ -2,7 +2,7 @@
 title: Předpovědi plateb zákazníka
 description: Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také mpže pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkasa dříve, než byste to zahájili v ostatních případech.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386654"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752729"
 ---
 # <a name="customer-payment-predictions"></a>Předpovědi plateb zákazníka
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také může pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkas dříve, než byste to zahájili v ostatních případech.
 
@@ -67,11 +68,5 @@ V mnoha podnicích je proces inkasa reaktivní činností. Jinými slovy, proces
 ## <a name="methodology"></a>Metodologie
 
 V minulosti bylo obvykle obtížné vyvinout a nasadit řešení umělé inteligence (AI). Proces vyžaduje tým, který obsahuje datové vědce, odborníky na dané záležitosti a techniky, kteří pracují dlouhou dobu na formulování, vývoji, nasazení a udržování použitelného řešení AI. Předpovědi plateb zákazníků usnadňují nasazení a používání řešení umělé inteligence v Microsoft Dynamics 365 Finance. Společnost Microsoft dodává řešení AI vybudovaná na aplikaci Microsoft AI Builder. Uživatelé proto mohou nasadit řešení AI jediným kliknutím myši a využít výhod inteligentních předpovědí. Pokud nejste spokojeni s přesností předpovědi, může uživatel power user (znovu jedním kliknutím myši) spustit prostředí rozšíření aplikace AI Builder a poté vybrat nebo zrušit výběr polí používaných k vygenerování předpovědi. Až budete připraveni, můžete model „vytrénovat“ a publikovat změny. Nově trénovaný model se automaticky spustí a vygeneruje předpovědi v Dynamics 365 Finance.
-
-## <a name="release-details"></a>Podrobnosti uvolnění
-
-Veřejný náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
-
-Funkce veřejného náhledu by měly být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a AI vytvořené v prostředí sandboxu není nutné migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

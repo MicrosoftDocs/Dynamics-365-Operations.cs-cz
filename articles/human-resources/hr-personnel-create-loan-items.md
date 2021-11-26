@@ -1,8 +1,8 @@
 ---
 title: Vytvořit položky výpůjček
 description: Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické položky, jako například telefony nebo počítače, které vaše společnost poskytuje pro zaměstnance.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, Hcm
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5fb303015c3616bd2d033517bc21fda0834e9135b92e16374df26a98188c75ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a812887f20a8ae5ae3b677ac452a498230c244a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718076"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731729"
 ---
 # <a name="create-loan-items"></a>Vytvořit položky výpůjček
 
@@ -26,36 +26,36 @@ ms.locfileid: "6718076"
 
 
 
-Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické položky, jako například telefony nebo počítače, které vaše společnost poskytuje pro zaměstnance. Každá fyzická položka musí mít odpovídající položku výpůjčky. Každý záznam zapůjčené položky by měl obsahovat popis zapůjčené věci, kdo je za zapůjčení odpovědný a počet dní, které jsou pro půjčku stanoveny. Můžete vytvořit více položek výpůjčky, například klíčů, přístupových karet nebo stejnokrojů současně. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Položky výpůjčky jsou záznamy, které vám pomohou sledovat fyzické položky, jako například telefony nebo počítače, které vaše společnost poskytuje pro zaměstnance. Každá fyzická položka musí mít odpovídající položku výpůjčky. Každý záznam zapůjčené položky by měl obsahovat popis zapůjčené věci, kdo je za zapůjčení odpovědný a počet dní, které jsou pro půjčku stanoveny. Můžete vytvořit více položek výpůjčky, například klíčů, přístupových karet nebo stejnokrojů současně. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 
 ## <a name="create-loan-types"></a>Vytvoření typů výpůjčky
-1. Přejděte na Lidské zdroje > Pracovníci > Položky výpůjčky > Typy výpůjčky.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Typ výpůjčky.
-4. Zadejte nějakou hodnotu do pole Popis.
+1. Přejděte na **Lidské zdroje** > **Pracovníci** > **Položky výpůjčky** > **Typy výpůjčky**.
+2. Klepněte na možnost **Nový**.
+3. Zadejte hodnotu do pole **Typ výpůjčky**.
+4. Zadejte hodnotu do pole **Popis**.
 5. Zadejte počet dní, který mohou být zapůjčené položky podle tohoto typu půjčky po splatnosti. 
-6. Klikněte na položku Uložit.
+6. Klikněte na tlačítko **Uložit**.
 7. Zavřete stránku.
 8. Aktualizujte stránku.
 
 ## <a name="create-loan-items"></a>Vytvoření položek výpůjčky
-1. Přejděte na Lidské zdroje > Pracovníci > Položky výpůjčky > Položky výpůjčky.
-2. Klikněte na Vytvořit položky výpůjček.
-3. Do pole Množství zadejte číslo.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Typ výpůjčky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+1. Přejděte na **Lidské zdroje** > **Pracovníci** > **Položky výpůjčky** > **Položky výpůjčky**.
+2. Klikněte na **Vytvořit položky výpůjček**.
+3. Do pole **Množství** zadejte číslo.
+4. Zadejte hodnotu do pole **Popis**.
+5. V poli **Typ výpůjčky** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 7. Klikněte na odkaz na vybraném řádku v seznamu.
 8. Zadejte počet dnů, po které může být položka zapůjčena.
     * Výchozí hodnota pole Plánovaný návrat na stránce Vypůjčené vybavení se vypočítá jako součet aktuálního data a tohoto čísla.  
-9. V poli Zodpovědná osoba kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-10. Klepněte na tlačítko Vybrat.
-11. Zadejte číslo do pole Počáteční hodnota.
-12. V poli Interval zadejte požadované číslo.
-13. Zadejte hodnotu do pole Formát.
-    * Pokud má například počáteční číslo položky výpůjčky hodnotu 10, zadejte do pole Formát dva číselné symboly.  
-14. Klikněte na tlačítko OK.
+9. V poli **Zodpovědná osoba** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+10. Klepněte na tlačítko **Vybrat**.
+11. Zadejte číslo do pole **Počáteční hodnota**.
+12. V poli **Interval** zadejte požadované číslo.
+13. Zadejte hodnotu do pole **Formát**.
+    * Pokud má například počáteční číslo položky výpůjčky hodnotu 10, zadejte do pole **Formát** dva číselné symboly.  
+14. Klikněte na tlačítko **OK**.
 15. Aktualizujte stránku.
 
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745169"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753019"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
@@ -84,7 +84,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Do 1. října 2020 plánujeme ukončit podporu metody **setUtcString()**. Vývojáři by měli místo toho používat metodu **setUtcDateTime()**. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Sestava černé listiny (IT) – odkaz na funkci IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Sestava černé listiny (IT) – odkaz na funkci IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -360,7 +360,7 @@ Funkce pro vytvoření šablony pro nové registry daně ze zisku. Tato funkce v
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce není kompatibilní s modelem rozšiřitelnosti Finance and Operations. |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Daň |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
@@ -371,7 +371,7 @@ Modul specifický pro Rusko pro správu informací o správě zaměstnanců, pod
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Mzdy nejsou zahrnuty do globálního strategického zaměření portfolia Dynamics 365. Partneři a nezávislí tvůrci softwaru mají nejlepší pozici pro poskytování funkcí mezd, která je v souladu s místními předpisy a aktualizacemi daní.|
-| **Nahrazeno jinou funkcí?**   | Žádný|
+| **Nahrazeno jinou funkcí?**   | Ne|
 | **Ovlivněné oblasti produktu**         | Správa aplikace Mzdy a Lidské zdroje pro Rusko |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je jednou z aktualizací funkcí verze 10.0. |
@@ -455,7 +455,7 @@ Tyto daně byly zahrnuty do indické GST.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Důvod pro zrušení nebo odstranění**       | Nepoužíváno odběrateli.                                                  |
-| **Nahrazeno jinou funkcí?**            | Žádný                                                                      |
+| **Nahrazeno jinou funkcí?**            | Ne                                                                      |
 | **Ovlivněné oblasti produktu**                  | Srážková daň pro Indii                                                  |
 | **Možnost nasazení**                       | Všechny moduly                                                                    |
 | **Stav**                                  | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.   |        
@@ -467,7 +467,7 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Důvod pro zrušení nebo odstranění**       | Nepoužíváno odběrateli.                                                  |
-| **Nahrazeno jinou funkcí?**            | Žádný                                                                      |
+| **Nahrazeno jinou funkcí?**            | Ne                                                                      |
 | **Ovlivněné oblasti produktu**                  | Srážková daň pro Indii                                                  |
 | **Možnost nasazení**                       | Všechny moduly                                                                   |
 | **Stav**                                  | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.     |    
@@ -478,7 +478,7 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Důvod pro zrušení nebo odstranění**       | Nepoužíváno odběrateli.                                                  |
-| **Nahrazeno jinou funkcí?**            | Žádný                                                                      |
+| **Nahrazeno jinou funkcí?**            | Ne                                                                      |
 | **Ovlivněné oblasti produktu**                  | Import a export                                                       |
 | **Možnost nasazení**                       | Všechny moduly                                                                    |
 | **Stav**                                  | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.  |    
@@ -578,7 +578,7 @@ Tento nástroj se používá, když účtová osnova ve Španělsku vyžaduje z�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Omezené použití                                                  |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                             |
+| **Nahrazeno jinou funkcí?**   | Ne                                                             |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha                                                 |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
@@ -622,7 +622,7 @@ EDIVAT je starý standard pro elektronické prohlášení prostřednictvím zabe
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Tato funkce se již nepoužívá.                           |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                             |
+| **Nahrazeno jinou funkcí?**   | Ne                                                             |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha                                                 |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
@@ -699,7 +699,7 @@ Tato funkce se používá pro změny v účtové osnově a účetních pravidle
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Omezené použití                                                  |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                             |
+| **Nahrazeno jinou funkcí?**   | Ne                                                             |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha                                                 |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
@@ -787,7 +787,7 @@ Radiofrekvenční identifikace (RFID) představuje technologii shromažďování
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Málo používáno odběrateli a omezená sada funkcí.   |
-| **Nahrazeno jinou funkcí?**   | Žádný                                              |
+| **Nahrazeno jinou funkcí?**   | Ne                                              |
 | **Ovlivněné oblasti produktu**         | Řízení zásob                            |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611. |
 
@@ -798,7 +798,7 @@ Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslován
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Není už nutné zachovávat číslování státních faktur. Hlášení o použitých číslech faktur již není požadováno. |
-| **Nahrazeno jinou funkcí?**   | Žádný       |
+| **Nahrazeno jinou funkcí?**   | Ne       |
 | **Ovlivněné oblasti produktu**         | Pohledávky    |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.  |
 
@@ -860,7 +860,7 @@ Mzdové informace lidských zdrojů
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Malé využití                                                           |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                                  |
+| **Nahrazeno jinou funkcí?**   | Ne                                                                  |
 | **Ovlivněné oblasti produktu**         | Lidské zdroje                                                     |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611 |
 
@@ -883,7 +883,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflo
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Zvýšení výkonnosti        |
-| **Nahrazeno jinou funkcí?**   | Žádný                             |
+| **Nahrazeno jinou funkcí?**   | Ne                             |
 | **Ovlivněné oblasti produktu**         | Závazky               |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0. |
 
@@ -916,7 +916,7 @@ Pokud byl konfigurační klíč **Verze kusovníku** zakázán, byly ve všech f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Řízení verzí kusovníku pomocí konfiguračního klíče nelze škálovat v cloudovém prostředí. |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                                                      |
+| **Nahrazeno jinou funkcí?**   | Ne                                                                                      |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech, Řízení zásob                                    |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                                                          |
 
@@ -927,7 +927,7 @@ Specifická metoda platby pro brazilské společnosti
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Podpora pro brazilskou metodu platby Bordero již není k dispozici v brazilské lokalizaci |
-| **Nahrazeno jinou funkcí?**   | Žádný   |
+| **Nahrazeno jinou funkcí?**   | Ne   |
 | **Ovlivněné oblasti produktu**         | Závazky   |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
@@ -949,7 +949,7 @@ Pohotovostní prostředí (SCAN) slouží k vygenerování, exportování a imp
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Tato záložní metoda už nebude k dispozici v žádném brazilském státě |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                                          |
+| **Nahrazeno jinou funkcí?**   | Ne                                                                          |
 | **Ovlivněné oblasti produktu**         | Pohledávky                                                         |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.              |
 
@@ -1000,7 +1000,7 @@ Centrum kompatibility byly stránky podnikového portálu pro správu požadavk�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Nepoužíváno odběrateli. Služba Microsoft SharePoint zahrnuje stejné možnosti, jaké byly k dispozici v centru kompatibility. |
-| **Nahrazeno jinou funkcí?**   | Žádný   |
+| **Nahrazeno jinou funkcí?**   | Ne   |
 | **Ovlivněné oblasti produktu**         | Dodržování předpisů a vnitřní kontroly  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.    |
 
@@ -1029,7 +1029,7 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft D
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Skupiny hromádek byly použity k zobrazení jedné nebo více hromádek v oblasti okna s fakty. Byl omezený příjem a došlo k také k potížím s výkonem kvůli změně záznamu v nadřazeném formuláři, což způsobilo jeden dotaz na každou hromádku ve skupině hromádek. |
-| **Nahrazeno jinou funkcí?**   | Žádný      |
+| **Nahrazeno jinou funkcí?**   | Ne      |
 | **Ovlivněné oblasti produktu**         | Všechny moduly    |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.  |
 
@@ -1047,7 +1047,7 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft D
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Byla zrušena podpora pro rozvržení dánského formátu šeku a sestava byla odebrána z dánské lokalizace. |
-| **Nahrazeno jinou funkcí?**   | Žádný    |
+| **Nahrazeno jinou funkcí?**   | Ne    |
 | **Ovlivněné oblasti produktu**         | Všechny moduly    |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.  |
 
@@ -1079,7 +1079,7 @@ Povolené úložiště příloh v databázi a sdílených složkách souborů p
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce nebyla shledána potřebnou. |
-| **Nahrazeno jinou funkcí?**   | Žádný                                     |
+| **Nahrazeno jinou funkcí?**   | Ne                                     |
 | **Ovlivněné oblasti produktu**         | Čas a docházka                    |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.         |
 
@@ -1137,7 +1137,7 @@ Tato funkce poskytuje výstup v jazyce eXtensible Business Reporting Language (
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Málo používáno odběrateli a omezená sada funkcí.  |
-| **Nahrazeno jinou funkcí?**   | Žádný              |
+| **Nahrazeno jinou funkcí?**   | Ne              |
 | **Ovlivněné oblasti produktu**         | Dodržování předpisů a vnitřní kontroly, Závazky  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0. |
 
@@ -1193,7 +1193,7 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Formát XML pro německé souhrnné hlášení již není podporován. K odeslání německého souhrnného hlášení německému daňovému úřadu lze použít pouze formát textového souboru ELMA5. |
-| **Nahrazeno jinou funkcí?**   | Žádný         |
+| **Nahrazeno jinou funkcí?**   | Ne         |
 | **Ovlivněné oblasti produktu**         | Daň        |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.   |
 
@@ -1246,7 +1246,7 @@ Tato funkce povolovala generování mexické elektronické faktury pomocí metod
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Metoda již není použitelná. Generování elektronických faktur metodou CFD bylo zrušeno ze strany finančního úřadu a nahrazeno metodou Comprobante Fiscal Digital a través de Internet (CFDI), u které je podepisování delegováno na poskytovatele třetí strany (PAC). Měsíční sestava byla odebrána, uživatelé mohou prostřednictvím dotazu získat informace o historických transakcích. |
-| **Nahrazeno jinou funkcí?**   | Žádný    |
+| **Nahrazeno jinou funkcí?**   | Ne    |
 | **Ovlivněné oblasti produktu**         | Pohledávky, Projekt   |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
@@ -1278,7 +1278,7 @@ Deníky skladů a zásob již nepodporují možnost označení deníku jako souk
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce nebyla shledána potřebnou. |
-| **Nahrazeno jinou funkcí?**   | Žádný                                     |
+| **Nahrazeno jinou funkcí?**   | Ne                                     |
 | **Ovlivněné oblasti produktu**         | Řízení zásob                   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.         |
 
@@ -1311,7 +1311,7 @@ Touto funkcí lze měnit název jedné ze tří standardních dimenzí produktu 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Aktuální verze aplikace Dynamics AX nepodporuje změny popisků v době běhu. |
-| **Nahrazeno jinou funkcí?**   | Žádný                                                                            |
+| **Nahrazeno jinou funkcí?**   | Ne                                                                            |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech                                                |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                                                |
 
@@ -1340,7 +1340,7 @@ V aplikaci Dynamics AX 2012 R3 může Retail Server fungovat pomocí komunikace
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Málo používáno odběrateli a omezená sada funkcí. |
-| **Nahrazeno jinou funkcí?**   | Žádný                                           |
+| **Nahrazeno jinou funkcí?**   | Ne                                           |
 | **Ovlivněné oblasti produktu**         | DPH v USA                                 |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.               |
 
@@ -1351,7 +1351,7 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například weby Azure). |
-| **Nahrazeno jinou funkcí?**   | Žádný   |
+| **Nahrazeno jinou funkcí?**   | Ne   |
 | **Ovlivněné oblasti produktu**         | Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele, pracovní prostory pro spolupráci pro příležitosti a kampaně  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.    |
 

@@ -128,7 +128,7 @@ Většina zdrojových systémů může poskytovat data, která odpovídají jedn
 |---|---|---|---|
 | Členy dimenze prvku nákladů  |  Ano | Ano  | Ano  |
 |  Členy dimenze objektu nákladů |  Ano | Ano  | Ano  |
-|  Členy statistické dimenze | Ano  | Žádný  | Žádný  |
+|  Členy statistické dimenze | Ano  | Ne  | Ne  |
 |  Hlavní kniha | Ano  | Ano  | Ano  |
 |  Položky rozpočtu  | Ano  | Ano  | Ano  |
 |  Statistická měření | Ano  | Ano  | Ano  |

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715247"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777930"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -70,10 +70,10 @@ V následující tabulce je uveden seznam funkcí, které jsou ve verzi 10.0.21 
 | Zrušení převodního příkazu | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Odemknout deník zásob | 1. 9. 2021 | 17. 8. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Uložená zobrazení pro řízení zásob | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
-| Navigace do verze kusovníku z řádků kusovníku. | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
-| Použití měrné jednotky a jednotkového množství v denících zásob. | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Navigace do verze kusovníku z řádků kusovníku | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Použití měrné jednotky a jednotkového množství v denících zásob | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Povolit prázdné hodnoty atributů dávky | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
-| Automaticky navyšovat čísla řádků převodních příkazů zásob | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Automatické navyšování čísel řádků převodních příkazů zásob | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Workflow schválení deníku zásob | 1. 9. 2021 | 6. 1. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Povolit funkci upozornění na parametry správy kvality zásob | 1. 9. 2021 | 7. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
 | Vytvořit převodní příkaz z řádku prodeje | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
@@ -93,12 +93,12 @@ V následující tabulce je uveden seznam funkcí, které jsou ve verzi 10.0.21 
 | Uložená zobrazení pro uvolněné produkty | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Správa informací o produktech |
 | Vylepšení dialogových oken Úlohy schválení a Úlohy převodu | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
-| Na stránku terminálu úkolových lístků bylo přidáno nové tlačítko Ukončit přestávku. | 1. 9. 2021 | 19. 2. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Na stránku terminálu úkolových lístků bylo přidáno nové tlačítko Ukončit přestávku | 1. 9. 2021 | 19. 2. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Povolte částečný příjem subdodavatelských položek a opravte problém s výpočtem odpadu pro řádky kusovníku typu dodavatele. | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Uložená zobrazení pro řízení výroby | 1. 9. 2021 | 17. 8. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Dynamics 365 Guides pro výrobu | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Provádění výrobního provozu | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
-| Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce. | 1. 9. 2021 | 10. 5. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce | 1. 9. 2021 | 10. 5. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
 | Přidělení poplatků na prodejní objednávce | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Prodej a marketing |
 | Omezit počet prodejních objednávek, které lze vybrat k zaúčtování | 1. 9. 2021 | 1. 9. 2021 | Zapnuto ve výchozím nastavení | Prodej a marketing |
 | Vyčistit historii aktualizace prodejní objednávky | 1. 9. 2021 | 1. 9. 2021 | Zapnuto ve výchozím nastavení | Prodej a marketing |

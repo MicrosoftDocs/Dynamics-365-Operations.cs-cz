@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78be9c67eeac1307d67d70ef75751adebbc246ee69e093b1b9dbc8f408d63258
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726326"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752633"
 ---
 # <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
@@ -30,11 +30,6 @@ ms.locfileid: "6726326"
 ## <a name="overview"></a>Přehled
 
 Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové účetní nebo osoby v rámci organizace, které zodpovídají za nebo se zabývají stavem zásob nebo nedokončenou výrobu (NV) nebo které jsou zodpovědné za nebo se zabývají analýzou odchylek standardních nákladů.
-
-> [!NOTE]
-> Obsah **Řízení nákladů** v Power BI popsaný v tomto tématu se vztahuje na Dynamics 365 Finance and Operations 8.0.
-> 
-> Sada obsahu **Řízení nákladů** v Power BI, dostupná na webu AppSource se již nepoužívá. Další informace o tomto zastarání naleznete v tématu [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 

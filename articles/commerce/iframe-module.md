@@ -2,7 +2,7 @@
 title: Modul iframe
 description: Tohle téma se zabývá modulem iframe a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767283"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754007"
 ---
 # <a name="iframe-module"></a>Modul iFrame
 
@@ -66,7 +66,10 @@ Chcete-li na stránku přidat modul iframe a zobrazit externí video, postupujte
 1. Nastavte další vlastnosti, například **Nadpis** a **Výška**, dle potřeby.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na marketingovou stránku svého webu. Měli byste vidět, že video je vykresleno v modulu iframe.
- 
+
+> [!NOTE]
+> Protože modul iframe hostí externí obsah, musí autoři stránek zajistit, aby obsah hostovaný v modulu iframe neporušoval zásady omezení obsahu na příslušném trhu. Pokud dojde k porušení obsahu na stránce, která používá modul iframe, může autor webu odebrat modul iframe tak, že stránku otevře v nástroji pro tvorbu webu a vybere **Odebrat modul** ve slotu modulu iframe a poté stránku uložit a znovu publikovat.
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled knihovny modulů](starter-kit-overview.md)

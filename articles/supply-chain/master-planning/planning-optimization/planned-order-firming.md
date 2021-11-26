@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764829"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778514"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -39,7 +39,7 @@ Většina funkcí plánované objednávky je k dispozici ve všech standardních
 
 Paralelizované potvrzování pomáhá urychlit proces zpevnění tím, že jej paralelizuje napříč více vlákny. Tento přístup může být užitečný, když je spuštěno mnoho plánovaných objednávek.
 
-Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Paralelní potvrzení plánovaných objednávek*.
+Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Paralelní potvrzení plánovaných objednávek*. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Povolte plánované potvrzení objednávky pomocí filtrování
 
@@ -51,7 +51,7 @@ Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu fu
 
 Automatické potvrzení umožňuje potvrdit plánované objednávky v rámci procesu hlavního plánování během ochranné doby pro potvrzení. Automatické plánování je vždy podporováno pro plánovací modul zabudovaný do Supply Chain Management. Chcete-li ji však použít také s optimalizací plánování, musíte tuto funkci zapnout.
 
-Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Automatické potvrzení pro optimalizaci plánování*.
+Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Automatické potvrzení pro optimalizaci plánování*. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 
 ## <a name="manually-firm-planned-orders"></a>Manuálně potvrďte plánované objednávky
 

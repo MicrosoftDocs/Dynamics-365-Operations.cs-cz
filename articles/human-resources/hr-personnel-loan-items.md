@@ -1,8 +1,8 @@
 ---
 title: Správa položek zapůjčených zaměstnancům
 description: Položky výpůjčky jsou záznamy, které pomáhají manažerům se sledováním fyzických položek, které vaše společnost půjčuje zaměstnancům.
-author: andreabichsel
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2399cd1c00f2c1f301b2d514c20cca00017465c90436cd01d44eb584f1b66ce6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9f9404ebbcbc7359ee9927d7a92e31808a478a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760579"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728752"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Správa položek zapůjčených zaměstnancům
 
@@ -28,7 +28,8 @@ ms.locfileid: "6760579"
 
 Položky výpůjčky jsou záznamy, které pomáhají manažerům se sledováním fyzických položek, které vaše společnost půjčuje zaměstnancům. 
 
-V následujícím seznamu jsou příklady položek, které může společnost půjčit pracovníkům:
+Následují příklady položek, které může společnost půjčit pracovníkům:
+
 -   mobilní telefony;
 -   automobily;
 -   počítačové vybavení.
@@ -37,7 +38,7 @@ Každá fyzická položka musí mít odpovídající položku výpůjčky. Každ
 
 Při zapůjčení položky zadejte datum zapůjčení a plánované datum vrácení. Při vrácení položky zadejte skutečné datum vrácení.
 
-Zaměstnanci si mohou prohlížet záznamy položek, které mají vypůjčeny z pracovního prostoru Samoobsluha pro zaměstnance. Mohou také upravit existující záznamy nebo zadat nové položky výpůjčky, pokud obdrželi další fyzické položky.  Pracovní postup je možné nastavit tak, aby směroval změny do nových nebo existujících položek pomocí schvalovacího procesu. 
+Zaměstnanci mohou použít pracovní prostor **Samoobsluha pro zaměstnance** a prohlížet záznamy položek, které mají vypůjčeny. Mohou také upravit existující záznamy nebo zadat nové položky výpůjčky, pokud obdrželi další fyzické položky. Pracovní postup je možné nastavit tak, aby směroval změny do nových nebo existujících položek pomocí schvalovacího procesu. 
 
 Manažeři si mohou zobrazit položky zapůjčené jejich přímým podřízeným. Také mohou mít oprávnění k přidání nových položek výpůjčky jménem svých zaměstnanců.
 

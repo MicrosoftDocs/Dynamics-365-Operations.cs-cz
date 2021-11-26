@@ -43,7 +43,7 @@ Například typický televizní produkt může mít následující atributy.
 |            | Kompozitní vstupy         | 0–10                        | 2             |
 |            | Komponentní vstupy         | 0–10                        | 1             |
 | LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
-|            | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
+|            | 3D k dispozici               | Ano nebo Ne                   | Ne            |
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
 |            | Provozní teplota do        | 0–43 °C              | 100           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |

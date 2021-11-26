@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575457"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777760"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML rozšíření nákupu
 
@@ -28,7 +28,7 @@ Funkce _cXML rozšíření nákupu_ vychází z [existující funkce externího 
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Zapnout funkci cXML rozšíření nákupu
 
-Funkci zapnete otevřením stránky **[správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** a vyhledáním funkce s názvem *cXML rozšíření nákupu*. Vyberte funkci a zapněte ji volbou **Povolit nyní**.
+Funkci zapnete otevřením stránky **[správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** a vyhledáním funkce s názvem *cXML rozšíření nákupu*. Vyberte funkci a zapněte ji volbou **Povolit nyní**. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 
 Po zapnutí této funkce byste měli nakonfigurovat nastavení v následujících třech oblastech:
 

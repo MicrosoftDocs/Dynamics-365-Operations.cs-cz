@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec1683554e389948a64aee68e4d069be1e93cc1a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
+ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567336"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7727425"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces a historie vydání modulu Optimalizace plánování
 
@@ -33,6 +33,9 @@ Protože se při aktualizaci Optimalizace plánování ve vašem prostředí nez
 
 | Změny | Podrobnosti správy funkcí | Data vydání |
 |---|---|---|
+| <p>Přidána podpora vzorců pro výpočet doby procesu, výrobního postupu s překrýváním a čísla výrobní operace u transakcí požadavků.</p><p>Vylepšené chybové zprávy pro plánování výroby související s časovým limitem, nenalezenou kapacitou a cyklickým postupem.</p><p>Vylepšená konzistence při výpočtu dat příjmu a data vydání u plánovaných objednávek i pevných objednávek.</p><p>Vylepšení obecného výkonu, kvality a stability. | Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování* | 22. – 27. října 2021 |
+| <p>Přidána podpora pro zohlednění procenta zmetkovitosti při výpočtu doby zpracování.</p><p>Přidána podpora pro číslo operace a použití materiálů během plánování. | Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování* | 5. – 7. října 2021 |
+| <p>Přidána podpora pro typy úloh výrobního postupu: **Fronta předtím**, **Fronta po** a **Doba přepravy**.</p><p>Vylepšení obecného výkonu, kvality a stability. | Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování* | 25. – 30. září 2021 |
 | <p>Přidána podpora pro hlavní plány s **Metodou plánování** nastavenou na *Plánování operací*.</p><p>Na stránce **Skupiny postupu** respektujte nastavení zaškrtávacích políček **Aktivace**, **Pracovní čas** a **Kapacita** u řádků, jejichž **Postup/typ práce** má hodnotu *Nastavení* nebo *Zpracování*. </p><p>Vylepšení obecného výkonu, kvality a stability. | <p>Plánování operací je k dispozici ve správě funkcí od verze 10.0.20.</p><p>Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování*</p>  | 9.–17. září 2021 |
 | Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 25.–30. srpna 2021 |
 | <p>Přidáno pole **Doba realizace** k plánovaným zakázkám.</p><p>Vylepšení obecného výkonu, kvality a stability.</p> | Není vyžadována žádná správa funkcí. | 12.–17. srpna 2021 |

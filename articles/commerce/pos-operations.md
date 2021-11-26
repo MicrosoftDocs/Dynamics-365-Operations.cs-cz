@@ -45,9 +45,9 @@ Následující sloupce určují, kde lze operace vyvolat:
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
 | 707 | Aktivovat zařízení | Aktivujte aktuální zařízení tím, že umožníte ověřenému uživateli poskytnout informace o připojení a přiřadit ID zařízení a pokladny. | Ne | Ne | Ne | Ne | Ne |
 | 134 | Přidat umístění | Přidání předem vybraného umístění k transakci. Umístění vyberte na stránce **Vlastnosti tlačítka**. | Ano | Ano | Ne | Ano | Ne |
-| 135 | Přidat umístění ze seznamu | Přidejte umístění k transakci tak, že ji vyberete ze seznamu. | Ano | Ano | Ano | Ano | Žádný |
-| 137 | Přidat umístění k odběrateli | Přidejte umístění k odběrateli na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
-| 138 | Odstranit umístění od odběratele | Odstraňte umístění na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
+| 135 | Přidat umístění ze seznamu | Přidejte umístění k transakci tak, že ji vyberete ze seznamu. | Ano | Ano | Ano | Ano | Ne |
+| 137 | Přidat umístění k odběrateli | Přidejte umístění k odběrateli na stránce **Podrobnosti odběratele**. | Ne | Ne | Ne | Ano | Ne |
+| 138 | Odstranit umístění od odběratele | Odstraňte umístění na stránce **Podrobnosti odběratele**. | Ne | Ne | Ne | Ano | Ne |
 | 643 | Přidat kód kupónu | Přidejte kupón zadáním jeho kódu do POS. | Ano | Ano | Ne | Ano | Ne |
 | 141 | Přidat náklady záhlaví | Přidá vedlejší náklady do záhlaví objednávky. | Ano | Ano | Ne | Ne| Ne |
 | 141 | Přidat náklady řádku | Přidá vedlejší náklady do vybraného řádku prodeje. | Ano | Ano | Ne | Ne| Ne |
@@ -64,7 +64,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 642 | Vyvézt všechny produkty | Nastavte způsob dodání pro všechny řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
 | 641 | Vyvézt vybrané produkty | Nastavte způsob dodání pro zvolené řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
 | 647 | Změnit způsob dodávky | Změní způsob dodání pro předem konfigurované řádky prodeje týkající se expedice. | Ano | Ano | Ne | Ne| Ne |
-| 1215 | Změnit heslo | Tato operace umožňuje uživateli POS změnit heslo. | Ano | Ano | Ano | Žádný | Žádný |
+| 1215 | Změnit heslo | Tato operace umožňuje uživateli POS změnit heslo. | Ano | Ano | Ano | Ne | Ne |
 | 123 | Změnit měrnou jednotku | Změňte měrnou jednotku pro vybranou položku řádku. | Ano | Ano | Ne | Ano | Ne |
 | 639 | Vymazat výchozího prodejního zástupce u transakce | Odstraňte skupinu prodejní provize (obchodního zástupce) z transakce. | Ano | Ano | Ne | Ano | Ne |
 | 106 | Vymazat množství | Resetujte množství na aktuálně vybraném řádku na **1**. | Ano | Ano | Ne | Ano | Ne |
@@ -113,9 +113,9 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 701 | Odhlásit | Odhlaste aktuálního uživatele z pokladny. | Ano | Ano | Ano | Ano | Ne |
 | 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Ne | Ne | Ne |
 | 142 | Správa nákladů | Zobrazení a správa vedlejších nákladů použitých pro transakci. | Ano | Ano | Ne | Ne| Ne |
-| 918 | Spravovat směny | Zobrazí seznam aktivních, pozastavených a bez zadání částky uzavřených směn. | Ano | Ano | Ano | Žádný | Žádný |
+| 918 | Spravovat směny | Zobrazí seznam aktivních, pozastavených a bez zadání částky uzavřených směn. | Ano | Ano | Ano | Ne | Ne |
 | 914 | Minimalizovat okno POS | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
-| 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Žádný |
+| 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Ne |
 | 928 | Plnění objednávek | Tato operace umožňuje uživatelům vydat, zabalit, expedovat nebo odvolat objednávky pro vyzvednutí v obchodě. | Ano | Ano | Ano | Ne | Ne |
 | 805 | Odchozí operace | Funkce přístupu pro správu dodávek odchozích převodních příkazů. | Ano | Ne | Ano | Ne| Ne |
 | 129 | Přepsat daň řádkového produktu | Přepište daň u vybrané položky řádku a použijte jinou konkrétní daň. | Ano | Ano | Ne | Ano | Ne |
@@ -157,7 +157,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 635 | Refundovat dopravné | Tato operace umožňuje uživateli refunovat dopravné u zrušené objednávky. | Ne | Ne | Ne | Ne | Ne |
 | 644 | Odebrat kód kupónu | Vyzvěte uživatele k odstranění kupónů jejich výběrem v seznamu kupónů, které jsou aktuálně přidruženy k transakci. | Ano | Ano | Ne | Ano | Ne |
 | 1057 | Znovu vytisknout Z | Znovu vytiskněte sestavu Z pro předchozí směnu nebo vybranou směnu. | Ano | Ano | Ano | Ne | Ne |
-| 1216 | Zadejte nové heslo | Tato operace umožní uživateli, který má oprávnění k obnovení hesla, resetovat heslo jiného zaměstnance pomocí dočasného hesla. | Ano | Ano | Ano | Žádný | Žádný |
+| 1216 | Zadejte nové heslo | Tato operace umožní uživateli, který má oprávnění k obnovení hesla, resetovat heslo jiného zaměstnance pomocí dočasného hesla. | Ano | Ano | Ano | Ne | Ne |
 | 1219 | Otevření URL adresy v POS | Tato operace umožňuje uživateli otevření adresy URL konfigurované správcem v pokladním místě. | Ano | Ano | Ano | Ano | Ne | 
 | 109 | Vrátit produkt | Provede vrácení jednotlivých produktů. Další naskenovaný produkt se zobrazí jako vracený produkt, který má záporné množství a cenu. | Ano | Ano | Ne | Ano | Ne |
 | 114 | Transakce vracení | Stornujte předchozí transakci podle jejího čísla příjemky pro vrácení některého nebo všech produktů. | Ano | Ano | Ano | Ano§ | Ne |
@@ -173,7 +173,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 105 | Nastavit množství | Změní množství řádkové položky v transakci. | Ano | Ano | Ne | Ano | Ne |
 | 638 | Nastavit prodejního zástupce na řádku | Tato operace umožňuje uživateli vybrat jednu z možných skupin prodejní provize (obchodní zástupce) pro aktuálně zvolený řádek. | Ano | Ano | Ne | Ano | Ne |
 | 630 | Expedovat všechny produkty | Nastavte režim plnění na **Expedice** pro všechny položky řádku. | Ano | Ano | Ne | Ano\* | Ne |
-| 629 | Expedovat vybrané produkty | Nastavte způsob plnění pro zvolené řádky na **Expedice**. | Ano | Ano | Žádný | Ano\* | Žádný |
+| 629 | Expedovat vybrané produkty | Nastavte způsob plnění pro zvolené řádky na **Expedice**. | Ano | Ano | Ne | Ano\* | Ne |
 | 115 | Zobrazit deník | Zobrazte deník obchodu. Můžete zobrazit transakce, znovu vytisknout příjemky a dárkové příjemky a stornovat k vrácení. | Ano | Ano | Ano | Ano\*\* | Ne |
 | 802 | Počet na skladě | Tato operace umožňuje uživateli vytvořit nebo upravit deníky inventur skladu pro fyzické zásoby nebo cyklické inventury. | Ano | Ano | Ano | Ne | Ne |
 | 401 | Podnabídka | Tato operace zavede uživatele k jiné propojené mřížce tlačítek. | Ano | Ano | Ano | Ano | Ne |
@@ -194,8 +194,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 500 | Anulovat transakci | Anulujte aktuální transakci. | Ano | Ano | Ne | Ano | Ne |
 | 916 | Programovací model Windows Workflow Foundation | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 924 | Sestava X pro bankovní karty | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ano |
-| 311 | Odebrání systémové slevy z transakcí | Odeberte z transakce všechny slevy uplatněné systémem, včetně slev založených na kupónech. Tím se neodstraní ruční slevy. | Ano | Ano | Ano | Ano | Žádný |
-| 312 | Opětovné použití systémových slev | Opětovné použití systémových slev na transakci, pokud byly odstraněny pomocí operace **Odebrání systémové slevy z transakcí**. | Ano | Ano | Ano | Ano | Žádný |
+| 311 | Odebrání systémové slevy z transakcí | Odeberte z transakce všechny slevy uplatněné systémem, včetně slev založených na kupónech. Tím se neodstraní ruční slevy. | Ano | Ano | Ano | Ano | Ne |
+| 312 | Opětovné použití systémových slev | Opětovné použití systémových slev na transakci, pokud byly odstraněny pomocí operace **Odebrání systémové slevy z transakcí**. | Ano | Ano | Ano | Ano | Ne |
 
 \* Operace je k dispozici v offline režimu pouze v případě, že vytváříte objednávku odběratele nebo prodejní nabídku, a pouze v případě, že v profilu funkce POS je nakonfigurováno offline vytvoření objednávky odběratele a prodejní nabídky. Operaci nelze provést při vytváření objednávek pomocí služby Real-time Service, nebo pokud jsou objednávky stronovány nebo upravovány.
 

@@ -1,26 +1,26 @@
 ---
 title: Nastavení komponent práce
-description: Tento článek popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci.
-author: andreabichsel
-ms.date: 06/24/2021
+description: Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754769"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731533"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Nastavení komponent práce
 
@@ -60,7 +60,7 @@ Křižovatky prací popisují funkční kategorie vysoké úrovně a vztahují s
 Pracovní funkce udržujte pomocí stránky **Pracovní funkce**. Zadejte identifikační kód a stručný popis pro pracovní funkci **Pracovní funkce**.
 
 ## <a name="compensation"></a>Kompenzace
-Chcete-li přiřadit plán pevné kompenzace zaměstnanci, který má pozici v práci, musíte v práci nastavit úrovně odměny. Úroveň kompenzace se používá, když jsou ve struktuře kompenzace (mřížka kompenzace) nastaveny minimální, střední a maximální částky. Když je vytvořen plán pevné kompenzace, je vybrána struktura kompenzace. Struktura kompenzace také zahrnuje úroveň kompenzace. Když vybíráte plán pevné kompenzace pro zaměstnance, úrovně kompenzace, které jsou k dispozici pro výběr, závisí na úloze, se kterou je pozice zaměstnance spojena. Další informace o nastavení kompenzací naleznete v tématu [Plány kompenzace](hr-compensation-overview.md).
+Chcete-li přiřadit plán pevné kompenzace zaměstnanci, který má pozici v práci, musíte v práci nastavit úrovně odměny. **Úroveň kompenzace** se používá, když jsou ve struktuře kompenzace (mřížka kompenzace) nastaveny minimální, střední a maximální částky. Když je vytvořen plán pevné kompenzace, je vybrána struktura kompenzace. Struktura kompenzace také zahrnuje úroveň kompenzace. Když vybíráte plán pevné kompenzace pro zaměstnance, úrovně kompenzace, které jsou k dispozici pro výběr, závisí na úloze, se kterou je pozice zaměstnance spojena. Další informace o nastavení kompenzací naleznete v tématu [Plány kompenzace](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Pracovní dovednosti
 Pracovní dovednosti popisují dovednosti, které jsou vyžadovány k výkonu práce. S každou pracovní dovedností musí být spojena úroveň dovednosti. Úrovně dovedností jsou definovány uživatelem. Označují úroveň znalostí nebo dovedností, která je pro danou dovednost požadována. Společnosti mohou například nastavit číselné úrovně, například 1 až 5, kde **1** označuje začátečníka a **5** označuje odborníka. Alternativně mohou společnosti nastavit úrovně, které jsou označeny **Začátečník**, **Středně pokročilí** nebo **Expert**. Po nastavení úrovně dovedností lze také nastavit důležitost dovednosti. Například pokud má účetní mít silné znalosti Microsoft Excel, lze vytvořit dovednost, která je pojmenována **Znalosti aplikace Excel**. Úroveň dovednosti pak může být nastavena na **Středně pokročilý** a lze nastavit důležitost na **Většina**.

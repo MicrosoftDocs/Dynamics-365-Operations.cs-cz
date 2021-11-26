@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576945"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777733"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
@@ -34,19 +34,19 @@ Než budou k dispozici, musí být ve vašem systému povoleno několik nastaven
 
 Chcete-li tuto funkci zpřístupnit, povolte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
+1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
 1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
 
 ### <a name="print-label"></a>Tisk etikety
 
 Chcete-li tuto funkci zpřístupnit, povolte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
+1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
 1. Vytisknout štítek ze zařízení úkolového lístku
 
 ### <a name="allow-locking-of-touch-screen"></a>Povolení uzamčení dotykové obrazovky
 
-Chcete-li tuto funkci zpřístupnit, povolte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Chcete-li ji použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
 

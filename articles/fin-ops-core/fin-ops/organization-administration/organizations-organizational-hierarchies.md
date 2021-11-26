@@ -2,7 +2,7 @@
 title: Přehled organizací a organizačních hierarchií
 description: Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik.
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74aa2736b4cfb11039ea1cee3f62e74cf4928a1b27cea16e7e0e86f66bdddd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715982"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798339"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Přehled organizací a organizačních hierarchií
 
@@ -64,9 +64,19 @@ Tým představuje organizaci, jejíž členové sdílejí společnou odpovědnos
 
 Nastavení organizační hierarchie pro zobrazení a tvorbu sestav vašeho podnikání z různých perspektiv. Můžete například nastavit hierarchii pro právnické osoby pro daňové, právní nebo statutární vykazování. Nastavte hierarchii vycházející z provozní jednotky tak, aby vykazovala finanční informace, které nejsou vyžadovány zákonem, ale které se používají pro interní správu. Například můžete vytvořit hierarchii nákupu a řídit tak zásady nákupu, pravidla a obchodní procesy.
 
+> [!NOTE]
+> Po přidání provozní jednotky do hierarchie nelze provozní jednotku odstranit. 
+
 Každé hierarchii je přiřazen účel. Účel hierarchie určuje typy organizací, které mohou být zahrnuty v hierarchii. Účel také určuje, v jakých scénářích aplikace lze hierarchii použít.
 
 Organizace v hierarchii mohou sdílet parametry, zásady a transakce. Organizace může dědit nebo přepsat parametry její nadřazené organizace. Sdílené hlavní data, například výrobky a adresáře, však platí pro celou organizaci, a nelze je přepsat pro jednotlivé organizace. Vytváření organizace a hierarchie vyžaduje pečlivé plánování. Další informace viz [Plánování organizační hierarchie](plan-organizational-hierarchy.md).
+
+## <a name="additional-resources"></a>Další prostředky
+- [Plánování organizační hierarchie](plan-organizational-hierarchy.md)
+- [Vytvoření organizační hierarchie](tasks/create-organization-hierarchy.md)
+- [Vytvoření právnické osoby](tasks/create-legal-entity.md)
+- [Vytvoření provozní jednotky](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

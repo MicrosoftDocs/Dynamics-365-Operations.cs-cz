@@ -2,7 +2,7 @@
 title: Použití externích dat v prognózách cashflow
 description: Toto téma popisuje kroky nastavení, které musíte provést, aby bylo možné do prognóz peněžních toků zadávat nebo importovat externí data.
 author: rcarlson
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,30 +15,35 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 855f428ae8ce79f2b7ce9a6f3347cd454bad9566
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: dbfa04228cf63c0874a7d69af4e2b932544c0d7f
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386455"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752995"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts"></a>Použití externích dat v prognózách cashflow
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Externí data lze zadávat nebo importovat do prognóz peněžních toků. Toto téma popisuje kroky nastavení, které jsou specifické pro použití externích dat a které umožňují zahrnutí externích dat do prognózy peněžních toků.
 
 ## <a name="external-data-setup"></a>Nastavení externích dat
 
-Použijte kartu **Vnější zdroj** na stránce **Nastavení předpovědi peněžních toků** (**Pokladna a banka \> Prognóza peněžních toků**) a zadejte nastavení, která podporují použití externích dat v předpovědích peněžních toků.
+Použijte kartu **Vnější zdroj** na stránce **Nastavení předpovědi cashflo** (**Pokladna a banka \> Prognóza cashflow \> Nastavení prognózy cashflow**) a zadejte nastavení, která podporují použití externích dat v předpovědích cashflow.
 
-Další informace o nastavení čítačů naleznete v tématu [Prognóza cashflow](../cash-bank-management/cash-flow-forecasting.md).
+Externí data lze zadávat nebo importovat do prognóz peněžních toků. Před zadáním nebo importem externích dat je třeba nastavit externí zdroje. Na kartě **Vnější zdroj** nastavte externí kategorie peněžních toků. Kategorie může být buď **Odchozí** nebo **Příchozí**. **Likvidita** by měla být vybrána jako typ účtování. V mřížce **Nastavení právnické osoby** vyberte právnické osoby a odpovídající hlavní účty, na které se vztahují kategorie externích peněžních toků.
 
-Chcete-li zadat externí data pro prognózy peněžních toků, můžete k zadávání a úpravě externích dat použít prostředí Otevřít v aplikaci Excel. Vyberte tlačítko **Externí data** a poté vyberte **Přidat externí data** nebo **Upravit existující externí data**. Když je soubor Microsoft Excel otevřen, můžete zadat informace do následujících polí:
+Další informace o nastavení prognóz cashflow naleznete v tématu [Prognóza cashflow](../cash-bank-management/cash-flow-forecasting.md).
 
-- **ID položky**
+## <a name="enter-external-data"></a>Vložte externí data
+
+Chcete-li zadat a upravovat externí data pro prognózy peněžních toků, můžete použít prostředí **Otevřít v aplikaci Excel**. Vyberte tlačítko **Externí data** na stránce **Nastavení prognózy cashflow** a poté vyberte **Přidat externí data** nebo **Upravit existující externí data**. Když je soubor Microsoft Excel otevřen, můžete zadat informace do následujících polí:
+
+- **ID položky** (jedinečné)
 - **Popis** (nepovinné)
-- **Název externího zdroje** - Vyberte jednu z hodnot v seznamu, který jste definovali při nastavování nástroje Finanční přehledy.
+- **Název externího zdroje** - Vyberte jednu z hodnot v seznamu, který jste definovali při nastavování nástroje Finance Insights.
 - **Právnická osoba**
 - **Datum**
 - **Částka v měně transakce**

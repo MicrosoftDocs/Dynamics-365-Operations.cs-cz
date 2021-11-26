@@ -1,8 +1,8 @@
 ---
-title: Vytvořte projekt integrátora dat
-description: Toto téma vysvětluje, jak vytvořit projekt integrátoru dat.
+title: Vytvořte projekt integrace dat
+description: Toto téma vysvětluje, jak vytvořit projekt integrace dat.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,25 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b08af906c18f6c0790ca56c69a833733f48cd88c
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386355"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752657"
 ---
-# <a name="create-a-data-integrator-project"></a>Vytvořte projekt integrátora dat
+# <a name="create-a-data-integration-project"></a>Vytvořte projekt integrace dat
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma vysvětluje, jak vytvořit projekt integrátoru dat.
+Toto téma vysvětluje, jak vytvořit projekt integrace dat.
 
 1. Přihlaste se do aplikace Microsoft Dynamics 365 Finance.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Datové entity**. Než přejdete k dalšímu kroku, počkejte, dokud se neobnoví všechny datové entity.
 3. Otevřete [portál Power Apps](https://make.powerapps.com/) a postupujte takto:
 
     1. Vyberte příslušné prostředí.
-    2. V levém navigačním podokně nalevo vyberte **Data \> Připojení**.
+    2. V levém navigačním podokně nalevo vyberte **Dataverse \> Připojení**.
     3. Připojte se k příslušným instancím následujících položek:
 
         - Dynamics 365
@@ -41,7 +42,7 @@ Toto téma vysvětluje, jak vytvořit projekt integrátoru dat.
 
 4. Otevřete [prostředí Power Apps](https://admin.powerapps.com/environments) a postupujte takto:
 
-    1. Vyberte **Integrátor dat**.
+    1. Vyberte **Integraci dat**.
     2. Vyberte **Sady připojení**.
     3. Vyberte **Nová sada připojení**.
     4. Zadejte název připojení.
@@ -57,8 +58,7 @@ Toto téma vysvětluje, jak vytvořit projekt integrátoru dat.
 
     1. Vytvořte projekty integrace dat pro následující šablony pomocí sady připojení, kterou jste právě vytvořili:
 
-        - Výsledky přehledu plateb zákazníka (CDS do Fin and Ops)
-            - Pokud používáte verzi 10.0.17 nebo novější, musíte použít šablonu s názvem Výsledek platebních údajů zákazníka (CDS to Fin a Ops 10.0.17 +).
+        - Výsledek přehledu plateb zákazníka (CDS do Fin and Ops 10.0.17+)
         - Výsledky časové řady cashflow (CDS do Fin and Ops)
         - Výsledky časové řady rozpočtu (CDS do Fin and Ops)
 

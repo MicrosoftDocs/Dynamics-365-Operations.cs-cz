@@ -47,11 +47,11 @@ V následující tabulce jsou uvedeny některé typické příklady nastavení z
 
 | Zásady snižování rabatu | popis | Použít snížení | Základ snížení | Vyloučení ze snížení |
 |---|---|---|---|---|
-| Odloženo | Snížit rabat | Ano | Oboje | Žádný |
+| Odloženo | Snížit rabat | Ano | Oboje | Ne |
 | Exclreb | Vyloučit rabat | Ano | Rabat | Ano |
 | Více | Vícenásobné rabaty | Ano | Oboje | Ano |
-| Není | Pouze dodávky a rabaty | Žádný | Oboje | Ano |
-| Zřízení | Pouze dodávka | Ano | Zřízení | Žádný |
+| Není | Pouze dodávky a rabaty | Ne | Oboje | Ano |
+| Zřízení | Pouze dodávka | Ano | Zřízení | Ne |
 | Rabat | Pouze rabat | Ano | Rabat | Ano |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Příklady výpočtů zásad snížení rabatu

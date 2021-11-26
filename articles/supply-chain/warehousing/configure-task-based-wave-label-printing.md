@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735889"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777858"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Naplánujte tisk vlnových štítků během vlny
 
@@ -33,7 +33,7 @@ Když používáte funkci *Tisk štítků vln na základě úkolů*, systém nej
 Chcete-li používat funkce popsané v tomto tématu, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkce v následujícím pořadí:
 
 1. *Tisk štítků vln* - Tato funkce je vyžadována k povolení metody vlnového procesu pro tisk štítků vln.
-1. *Blokování práce v celé organizaci* - Tato funkce se vyžaduje pro ruční i automatickou konfiguraci plánovaného vytváření práce.
+1. *Blokování práce v celé organizaci* - Tato funkce se vyžaduje pro ruční i automatickou konfiguraci plánovaného vytváření práce. (Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
 1. *Tisk štítků vln na základě úlohy* - Tato funkce je nutná k rozdělení tisku štítků vln na samostatný rozsah transakcí.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Ručně povolte novou metodu kroku vlny

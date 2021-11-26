@@ -1,8 +1,8 @@
 ---
 title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725859"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771524"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -41,7 +41,7 @@ Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams.
 Pokud vás aplikace nepřihlásí automaticky, vyberte kartu **Nastavení** pro přihlášení.
 
 > [!NOTE]
-> Pokud nevidíte přihlašovací dialogové okno, zkontrolujte nastavení prohlížeče a povolte automaticky otevíraná okna. 
+> Pokud nevidíte přihlašovací dialogové okno, aktualizujte nastavení prohlížeče a povolte automaticky otevíraná okna. 
 
 Pokud máte přístup k více než jedné instanci aplikace Human Resources, můžete vybrat prostředí, ke kterému se chcete připojit, na kartě **Nastavení**.
 
@@ -53,7 +53,7 @@ Pokud máte přístup k více než jedné instanci aplikace Human Resources, mů
 Po instalaci aplikace se zobrazí uvítací zpráva, která vás informuje o typech akcí, které může robot provést vaším jménem.
 
 > [!NOTE]
-> Při první interakci s robotem se možná budete muset přihlásit. Pokud nevidíte přihlašovací dialogové okno, zkontrolujte nastavení prohlížeče a povolte automaticky otevíraná okna.
+> Při první interakci s robotem se možná budete muset přihlásit. Pokud nevidíte přihlašovací dialogové okno, aktualizujte nastavení prohlížeče a povolte automaticky otevíraná okna.
 
 Můžete požádat robota a následující akce:
 
@@ -113,7 +113,7 @@ Karta **Volno** umožňuje zobrazit:
    
 ### <a name="respond-to-teams-notifications"></a>Odpovídejte na oznámení týmů
 
-Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li oznámení zobrazit, vyberte jej. Oznámení se také zobrazují v oblasti **Chat**.
+Když vy nebo pracovník, jehož jste schvalovatelem, odešlete žádost o pracovní volno, obdržíte oznámení v aplikaci Human Resources v Teams. Chcete-li zobrazit žádost o pracovní volno, vyberte oznámení. Oznámení se také zobrazují v oblasti **Chat**.
 
 Pokud jste schvalovatel, můžete v oznámení zvolit možnosti **Schválit** nebo **Odmítnout**. Můžete také zadat volitelnou zprávu.
 
@@ -199,7 +199,7 @@ Pokud se vám při pokusu o schválení žádostí o dovolenou v aplikaci Teams 
 
 2. Ujistěte se, že jsou uživatelé přihlášeni ke kartě **Chaty** se stejnými přihlašovacími údaji, které používají pro schvalování žádostí o dovolenou. Pomocí zpráv „odhlásit se“ a poté „přihlásit“ se přihlaste se správnými přihlašovacími údaji.
 
-3. Pokud problém přetrvává, zkontrolujte stav dávkové úlohy systému Business Events jako správce systému. Pokud je ve fázi čekání nebo provádění, zkuste to znovu za několik minut. Pokud se stav nezmění, přihlaste se na lístek podpory, aby náš tým mohl problém vyřešit.
+3. Pokud problém přetrvává, zkontrolujte stav dávkové úlohy **systému Business Events** jako správce systému. Pokud je ve fázi **čekání** nebo **provádění**, zkuste to znovu za několik minut. Pokud se stav nezmění, přihlaste se na lístek podpory, aby náš tým mohl problém vyřešit.
 
 ## <a name="known-accessibility-issues"></a>Známé problémy s usnadněním
 
@@ -208,7 +208,7 @@ Aplikace Human Resources v Teams má následující problémy s usnadněním, na
 | Výdej | Řešení nebo vysvětlení |
 | --- | --- |
 | Zvětšení plochy o 400 % skryje některá tlačítka akcí. | Doporučujeme místo toho používat lupu, dokud nebudeme moci tuto úroveň zvětšení podporovat. |
-| Na kartě **Volno** hlasový komentář oznamuje akci tlačítka při čtení záhlaví mřížky volna. | Záhlaví a prvky v mřížce jsou seskupeny podle roku a jsou sbalitelné. Komentář to interpretuje jako položku s akcemi, kterou ale není. |
+| Na kartě **Volno** hlasový komentář oznamuje akci tlačítka při čtení záhlaví mřížky volna. | Záhlaví a prvky v mřížce jsou seskupeny podle roku a jsou sbalitelné. Komentář tuto prezentaci interpretuje jako položku s akcemi, kterou ale není. |
 | Na kartě **Volno** je při přechodu na **Kód důvodu** v nové žádosti potřeba potáhnutí prstem navíc. | Neexistuje žádný skrytý ovládací prvek, ke kterému se potáhnutí prstem pokouší dostat. |
 | Na kartě **Volno**, pokud potáhnete prstem, když je kalendář otevřený, skončíte mimo ovládací prvek namísto horní části v nové žádosti nebo během úpravy požadavku. | Když dosáhnete položky **Přejít na dnešek**, považujte to za konec ovládacího prvku a potáhnutím prstem opačným směrem se dostanete zpět nahoru. |
 | Na kartě **Chat**, když zadáte datum při používání asistenčního nástroje nebo navigace pomocí klávesnice, přeskočí fokus zpět na začátek. | Stiskněte klávesu Tab, dokud se znovu nedostanete do oblasti zadávání. |
@@ -219,7 +219,7 @@ Aplikace Human Resources v Teams má následující problémy s usnadněním, na
 
 S robotem Dynamics 365 Human Resources v aplikaci Microsoft Teams jsou textové vstupy uživatele analyzovány pro porozumění základním dotazům/záměrům. Vstup uživatele, například „Vyhledat účet Contoso“, je přesměrován na jednu ze služeb Cognitive Services společnosti Microsoft nazvanou Language Understanding Intelligent Service (LUIS). Přečtěte si více o LUIS  [zde](https://www.luis.ai/). Služba LUIS ujasňuje nebo chápe záměr vstupu uživatele (v tomto případě je záměrem najít informace) a cílovou entitu (v tomto případě je zamýšlenou entitou účet s názvem Contoso). Tyto informace jsou poté předány do řešení  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) společnosti Microsoft, které interaguje s daty z Dynamics 365 Human Resources a načte požadované informace pro uživatelský dotaz. 
 
-Instalací a umožněním přístupu k používání robota souhlasíte s tím, že umožníte službě LUIS a rámci robota Azure zpracovat záměr za vstupem, což má za následek vylepšenou konverzační uživatelskou zkušenost. Služba LUIS a rámec robota Azure mohou mít ve srovnání s Dynamics 365 Human Resources různé úrovně shody. Zatímco služba LUIS má přístup pouze k uživatelským dotazům a není určena k připojení k datům nebo účtu uživatele Dynamics 365 Human Resources, uživatel robota Dynamics 365 Human Resources může dobrovolně zadat dotaz obsahující zákaznická data, osobní údaje nebo jiná data a takový obsah dotazu by mohl být zaslán do služby LUIS a do rámce robota Azure. 
+Instalací a umožněním přístupu k používání robota souhlasíte s tím, že umožníte službě LUIS a rámci robota Azure zpracovat záměr za vstupem, což má za následek vylepšenou konverzační uživatelskou zkušenost. Služba LUIS a rámec robota Azure mohou mít ve srovnání s Dynamics 365 Human Resources různé úrovně shody. Zatímco služba LUIS má přístup pouze k uživatelským dotazům a není určena k připojení k datům nebo účtu uživatele Dynamics 365 Human Resources, uživatel robota Dynamics 365 Human Resources může dobrovolně zadat dotaz obsahující zákaznická data, osobní údaje nebo jiná data a takový obsah dotazu by mohl být zaslán do služby LUIS a do Azure Bot Framework. 
 
 Obsah dotazů a zpráv uživatele je v systému LUIS uchováván maximálně 30 dní, je šifrován a nepoužívá se pro školení ani zlepšení služeb. Přečtěte si více o Cognitive Services  [zde](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471733"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733432"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednotky škálování v distribuované hybridní topologii
 
@@ -32,8 +32,8 @@ Společnosti, které pracují s výrobou a distribucí, musí být schopny provo
 
 Distribuovaná hybridní topologie zavádí koncept *jednotky měřítka*, které umožňují distribuci zátěže výroby a skladu mezi různými prostředími. Tato funkce může pomoci zlepšit výkon, zabránit přerušení služeb a maximalizovat provozuschopnost. Jednotky škálování jsou poskytovány prostřednictvím následujících doplňků pro vaše předplatné Supply Chain Management:
 
-- Doplněk Cloud Scale Unit pro Dynamics 365 Supply Chain Management (*k dispozici v dubnu 2021*)
-- Doplněk Edge Scale Unit pro Dynamics 365 Supply Chain Management (*k dispozici brzy*)
+- Doplněk cloudové jednotky škálování pro Dynamics 365 Supply Chain Management
+- Doplněk hraniční jednotky škálování pro Dynamics 365 Supply Chain Management
 
 Schopnosti pracovního zatížení jsou vydávány nepřetržitě prostřednictvím přírůstkových vylepšení.
 
@@ -51,21 +51,12 @@ Můžete nakonfigurovat prostředí centra a jednotky škálování cloudu pro v
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Možnosti úlohy vyhrazené správy skladu v jednotce škálování
 
-Úloha správy skladu je první distribuovaná úloha pro jednotky škálování, která byla vydána pro obecnou dostupnost.
-
-Pro správu skladu poskytují jednotky škálování následující funkce:
-
-- Systém dokáže zpracovat vybrané vlnové metody pro prodejní objednávky a doplnění poptávky.
-- Pracovníci skladu mohou pomocí mobilní aplikace Řízení skladu spouštět práci ve skladu a poptávku doplnění.
-- Pracovníci skladu se mohou dotazovat na vlastní sklad pomocí mobilní aplikace Řízení skladu.
-- Pracovníci skladu mohou vytvářet a spouštět pohyby ve skladu pomocí mobilní aplikace Řízení skladu.
-- Pracovníci skladu mohou registrovat nákupní objednávky a provádět vyskladnění pomocí mobilní aplikace Řízení skladu.
-
+Úloha správy skladu vám umožňuje spouštět procesy správy skladu v izolovaném nasazení.
 Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Funkce vyhrazeného pracovního vytížení v jednotce škálování
 
-První vydání úlohy výroby je aktuálně v preview a přináší následující funkce:
+Výrobní úloha poskytuje následující možnosti:
 
 - Obsluha strojů a vedoucí výroby mají přístup k operačnímu výrobnímu plánu.
 - Operátoři strojů mohou udržovat aktuální plán spuštěním samostatných a procesních výrobních úloh.
@@ -191,17 +182,33 @@ Microsoft zkontroluje váš požadavek a bude vás informovat o dalších krocí
 
 Po dokončení zprovoznění můžete port použít ke konfiguraci jednotek měřítka a úloh.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Správa cloudových jednotek škálování a úkolů pomocí portálu správce jednotky škálování
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Správa jednotek škálování a úkolů pomocí portálu správce jednotky škálování
 
 Přejděte na [portál správce jednotky škálování](https://aka.ms/SCMSUM) a přihlaste se pomocí účtu klienta. Na stránce **Konfigurovat jednotky škálování** můžete přidat prostředí centra, pokud ještě není uvedeno. Poté můžete vybrat centrum, které chcete konfigurovat pomocí jednotek škálování a úloh.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Zkušenosti se správou jednotky škálování a úlohy.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Portál pro správu jednotek škálování, stránka Konfigurace jednotek škálování.":::
 
 Chcete-li přidat jednu nebo více jednotek škálování, které jsou k dispozici ve vašem předplatném, vyberte **Přidat jednotky škálování**.
 
 Na kartě **Definované úlohy** pomocí tlačítka **Vytvořit úlohu** přidejte správu skladu do některé z jednotek škálování. U každé úlohy musíte určit kontext procesů, které bude úloha vlastnit. Pro úlohy správy skladu je kontextem konkrétní sklad na konkrétním místě a právnické osobě.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Vytvoření úlohy.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Dialog Definice úloh.":::
+
+#### <a name="manage-workloads"></a>Správa úloh
+
+Když je povolena jedna nebo více úloh, použijte možnost **Správa úloh**, chcete-li iniciovat a spravovat procesy, jako jsou ty, které jsou uvedeny v následující tabulce.
+
+| Zpracovat | Popis |
+|---|---|
+| Pozastavte komunikaci s jednotkou škálování | Pozastavte zprávy kanálu mezi centrem a jednotkou škálování. Tento proces zastaví komunikaci a vyčerpá datový kanál mezi centrem a jednotkami škálování. Tento proces musíte spustit před spuštěním servisní operace Supply Chain Management buď v centru n ebo jednotce škálování, ale můžete jej použít i v jiných situacích. |
+| Obnovte komunikaci s jednotkou škálování | Obnovte zprávy kanálu mezi centrem a jednotkou škálování. Tento proces může být nutné použít například poté, co spustíte servisní operaci Supply Chain Management v centru nebo jednotce škálování. |
+| Upgrade úloh | Synchronizujte nové funkce mezi úlohami centra a škálovací jednotky. Tento proces může být nutné použít například tehdy, když servis způsobil změnu dotazů na výměnu dat a/nebo přidal k úloze nové tabulky nebo pole. |
+| Přeneste úlohy na jednotku škálování | Naplánujte přesunutí úlohy, která aktuálně běží v centru, na jednotku škálování. Když je tento proces spuštěn, bude probíhat synchronizace dat a jak centrum, tak škálovací jednotka budou nastaveny tak, aby změnily vlastnictví úlohy. |
+| Převeďte jednotku škálování na centrum | Naplánujte přesunutí úlohy, která aktuálně běží v jednotce škálování, na centrum. Když je tento proces spuštěn, bude probíhat synchronizace dat a jak centrum, tak škálovací jednotka budou nastaveny tak, aby změnily vlastnictví úlohy.
+| Nouzový převod na centrum | <p>Okamžitě přeneste stávající úlohu do centra. *Tento proces změní vlastnictví pouze dat, která jsou aktuálně dostupná v centru.*</p><p><strong>Varování:</strong> Tento proces může způsobit ztrátu dat u nesynchronizovaných dat a selhání obchodního zpracování. Proto by se měl používat pouze v nouzových situacích, kdy musí být obchodní procesy zpracovány v centru, protože škálovací jednotka má výpadek, který nelze v přiměřené době zmírnit.</p> |
+| Topologie distribuovaná vyřazením | Odstraňte nasazení škálovací jednotky a spusťte ji pouze v centru, bez zpracování úlohy. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Zkušenosti se správou jednotky škálování a úlohy.":::
 
 > [!TIP]
 > Postupem času budou do prostředí správce jednotky škálování přidávána přírůstková vylepšení, která usnadní operace správy životního cyklu. Specifické funkce pro aktuální verzi jsou zdokumentovány v příručce pro zprovoznění, která je k dispozici zákazníkům, kteří jsou v procesu zprovoznění distribuované hybridní topologie pro Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

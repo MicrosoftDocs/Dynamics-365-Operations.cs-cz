@@ -1,8 +1,8 @@
 ---
 title: Vytvoření oddělení a jejich přidružení k hierarchii oddělení
-description: Oddělení je provozní jednotka, která představuje kategorie nebo funkční oblasti organizace. Oddělení je zodpovědný za určitou oblast organizace, jako například prodej, účtování nebo lidské zdroje. Oddělení můžete použít k sestavování funkčních oblastí. Oddělení mohou mít odpovědnost ze zisků a ztrát.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Oddělení je provozní jednotka, která představuje kategorie nebo funkční oblasti organizace. Oddělení je zodpovědný za určitou oblast organizace, jako například prodej, účtování nebo lidské zdroje.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1fa6d2b18a1b92236a153e453560430cc0d4c1c6e2cde0431c1e1cc68128bd0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2caa4f1e7be4be54766921a9e38c97d22b8200c7
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727010"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731605"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Vytvoření oddělení a jejich přidružení k hierarchii oddělení
 
@@ -32,15 +32,15 @@ Oddělení mohou obsahovat i skupinu nákladových středisek. Pozice lze přiř
 
 | Pole               | Popis                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Název                | Zadejte název oddělení.                                                                                                                                                                                  |
-| Číslo oddělení   | výchozí hodnota může být generována automaticky, pokud je přiřazen kód číselné řady k odkazu **Číslo organizace** na stránce **Číselné řady**.                                                 |
-| Vyhledávací název         | Zadejte název nebo zkratku, které lze použít pro rychlé hledání oddělení.                                                                                                                                            |
-| Poznámka                | Sem zadejte případné doplňkové informace.                                                                                                                                                                            |
-| V hierarchii        | Zaškrtnuté políčko označuje, že oddělení je součástí hierarchie oddělení. Informace o přidávání oddělení do hierarchie oddělení naleznete níže v tomto článku. |
-| Číslo DUNS         | Zkratka DUNS znamená systém čísel univerzálních dat. Toto je devíticiferné číslo vydané organizací Dun & Bradstreet.                                                                                                     |
-| Manažer             | Zadejte osobu, které řídí oddělení.                                                                                                                                                                    |
-| Adresy           | Přidejte informace o adrese pro oddělení Například můžete přidat poštovní adresu budovy, ve které se oddělení nachází.                                                                          |
-| Kontaktní informace | Přidejte kontaktní informace pro oddělení. Například můžete přidat telefonní číslo na oddělení služeb v oddělení.                                                                                           |
+| **Název**                | Zadejte název oddělení.                                                                                                                                                                                  |
+| **Číslo oddělení**   | výchozí hodnota může být generována automaticky, pokud je přiřazen kód číselné řady k odkazu **Číslo organizace** na stránce **Číselné řady**.                                                 |
+| **Vyhledávací název**         | Zadejte název nebo zkratku, které lze použít pro rychlé hledání oddělení.                                                                                                                                            |
+| **Poznámka**                | Sem zadejte případné doplňkové informace.                                                                                                                                                                            |
+| **V hierarchii**        | Zaškrtnuté políčko označuje, že oddělení je součástí hierarchie oddělení. Informace o přidávání oddělení do hierarchie oddělení naleznete níže v tomto článku. |
+| **Číslo DUNS**         | Zkratka DUNS znamená systém čísel univerzálních dat. Toto je devíticiferné číslo vydané organizací Dun & Bradstreet.                                                                                                     |
+| **Manažer**             | Zadejte osobu, které řídí oddělení.                                                                                                                                                                    |
+| **Adresy**           | Přidejte informace o adrese pro oddělení Například můžete přidat poštovní adresu budovy, ve které se oddělení nachází.                                                                          |
+| **Kontaktní informace** | Přidejte kontaktní informace pro oddělení. Například můžete přidat telefonní číslo na oddělení služeb v oddělení.                                                                                           |
 
 Pro přidání oddělení do hierarchie oddělení postupujte takto:
 

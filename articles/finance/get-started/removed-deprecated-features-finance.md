@@ -40,7 +40,7 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Vyloučeno ze zpracování elektronických zpráv o spolupráci s maďarským online fakturačním systémem |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Přihláška |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Do 15. dubna 2022 plánujeme, že již nebudeme podporovat konfiguraci formátu „požadavek na data faktur dotazu RTIR (HU)“. |

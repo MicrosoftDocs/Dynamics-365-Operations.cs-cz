@@ -2,7 +2,7 @@
 title: Pozice hotovosti
 description: Toto téma popisuje, jak funkce prognózování cashflow predikuje pozici hotovosti organizace pro konkrétní časy. Také popisuje možnosti, které jsou k dispozici pro zobrazování prognóz pro různá období.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386307"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752873"
 ---
 # <a name="cash-position"></a>Pozice hotovosti
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Pozice hotovosti je projekce cashflow, která se předpovídá na nejbližší období. Je založena na projekci hotovostních příjmů od zákazníků, kteří platí neuhrazené faktury a objednávky, a také na projekci hotovostních výdajů, které jsou vypláceny prodejcům za nákupní faktury a objednávky.
 
@@ -44,8 +45,5 @@ Spodní část karty **Pozice hotovosti** zobrazuje podrobnosti o pozici, cashfl
 - Mřížka **Bankovní účet** ukazuje dopad očekávaných přílivů a odtoků hotovosti na bankovní zůstatek.
 
 Chcete-li uložit a upravit pozici hotovosti, vytvořte snímek. Další informace o práci se snímky najdete v části [Přehled snímků](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

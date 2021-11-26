@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-oldolg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 28f902c589cd80f1c34dc2758232548309db9aca
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474621"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790931"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Splnění rezervních zásob položek
 
@@ -189,5 +189,9 @@ Plnění transakce požadavku na rezervní zásoby se sníží priorita, pokud s
 Ve fázi disponibility hlavního plánování již doplnění rezervních zásob nemá sníženou prioritu. Zásoby na skladě lze použít před jakýmikoliv jinými typy poptávky. Během výpočtu zpoždění se přidá nová logika k procházení opožděnými prodejními řádky, požadavky na řádek kusovníku a všemi ostatními typy poptávky, za účelem určení, zda mohou být doručeny včas, za předpokladu použití rezervních zásob. Pokud systém identifikuje, že použití rezervních zásob může minimalizovat zpoždění, řádky prodeje nebo řádky kusovníku nahradí jejich počáteční disponibilitu rezervními zásobami a systém místo toho spustí doplnění rezervních zásob.
 
 Pokud pro výpočet zpoždění není nastaven plán nebo položka, bude mít omezení rezervních zásob stejnou prioritu jako ostatní typy poptávky. To znamená, že existuje rezerva zásob na skladě a dalších dostupných zásob před jinými typy poptávky.
+
+## <a name="additional-resources"></a>Další prostředky
+
+- [Použití deníku pojistných zásob pro aktualizaci minimální disponibility položek](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

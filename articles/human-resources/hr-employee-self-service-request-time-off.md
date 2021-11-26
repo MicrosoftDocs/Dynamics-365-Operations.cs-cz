@@ -1,8 +1,8 @@
 ---
 title: Požádat o volno
 description: Žádost o volno v Dynamics 365 Human Resources
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756093"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771405"
 ---
 # <a name="request-time-off"></a>Požádat o volno
 
@@ -42,7 +42,7 @@ V aplikaci Dynamics 365 Human Resources Můžete odesílat žádosti volno, zobr
 
 6. Jakmile budete připravení žádost odeslat, vyberte **Odeslat**. Jinak vyberte **Uložit koncept**.
 
-Zaměstnanci, kteří podají novou žádost o dovolenou, si mohou pro sestavení žádosti o dovolenou vybrat různé typy dovolené. Všechny typy dovolené, které jsou vybrány jako součást jednoho požadavku na dovolenou, by však měly mít stejnou jednotku dovolené. Zaměstnanci mohou zobrazit jednotku dovolené pro každý typ dovolené ve formuláři **Žádost o volno**.
+Zaměstnanci, kteří podají novou žádost o dovolenou, si mohou pro sestavení žádosti o dovolenou vybrat různé typy dovolené. Všechny typy dovolené, které jsou vybrány jako součást jednoho požadavku na dovolenou, by však měly mít stejnou jednotku dovolené. Zaměstnanci mohou zobrazit jednotku dovolené pro každý typ dovolené na stránce **Žádost o volno**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Přidání přílohy do existující žádosti
 
@@ -64,7 +64,7 @@ Při aktualizaci existujícího požadavku o volno můžete přidat přílohu. M
 
 1. V pracovním prostoru **Samoobsluha pro zaměstnance** vyberte **Zobrazit volno** v dlaždici **Zůstatky volna**.
 
-2. Na formuláři **Volno** vyberte jednu nebo více žádostí o volno, které chcete zrušit.
+2. Na stránce **Volno** vyberte jednu nebo více žádostí o volno, které chcete zrušit.
 
 3. Zvolte tlačítko **Zrušit**.
 

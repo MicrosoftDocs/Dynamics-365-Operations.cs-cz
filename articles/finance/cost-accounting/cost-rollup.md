@@ -69,7 +69,7 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 | Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Žádný                    |
+| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Ne                    |
 
 **Hierarchie dimenzí**
 

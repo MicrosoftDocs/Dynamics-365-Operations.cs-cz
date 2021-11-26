@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3a932e4443521d67edb5c08c2d8eb563c6feb555
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568272"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778274"
 ---
 # <a name="work-line-details"></a>Podrobnosti řádku práce
 
@@ -28,7 +28,7 @@ Stránka **Podrobnosti řádku práce** zobrazuje kompletní, řaditelný a filt
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Zapnutí funkce podrobností řádku práce
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Podrobností řádku práce*

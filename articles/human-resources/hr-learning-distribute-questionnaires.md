@@ -1,8 +1,8 @@
 ---
 title: Distribuce a plánování dotazníků
-description: Tento článek vysvětluje, jak distribuovat dotazníky, které navrhnete, aby byly k dispozici osobě nebo skupině osob, které je mají vyplnit.
-author: andreabichsel
-ms.date: 04/04/2017
+description: Toto téma vysvětluje, jak distribuovat dotazníky, které navrhnete, aby byly k dispozici osobě nebo skupině osob, které je mají vyplnit.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755508"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728996"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Distribuce a plánování dotazníků
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek vysvětluje, jak distribuovat dotazníky, které navrhnete, aby byly k dispozici osobě nebo skupině osob, které je mají vyplnit. 
+Toto téma vysvětluje, jak distribuovat dotazníky, které navrhnete, aby byly k dispozici osobě nebo skupině osob, které je mají vyplnit. 
 
 Existuje několik způsobů distribuce dotazníků:
 
--   Nastavte dotazník jako aktivní. Dotazník bude poté dostupný všem zaměstnancům, potom není skupina dotazníku nastavena na omezení přístupu k ní.
+-   Nastavte dotazník jako **Aktivní**. Dotazník bude poté dostupný všem zaměstnancům, potom není skupina dotazníku nastavena na omezení přístupu k ní.
 -   Přiřaďte práva ke skupině dotazníku. Dotazník bude poté dostupný všem členům vybrané skupiny.
 -   Vytvořte plánované relace odpovědí. Dotazník bude poté dostupný pouze vybrané osobě.
 -   Vytvořte plán. Dotazník bude poté k dispozici více osobám.

@@ -75,14 +75,14 @@ Následující tabulka uvádí příklady, které ukazují, jak různá nastaven
 
 | Vydaný produkt: dodavatel | Výchozí nastavení objednávky: doba realizace | Pokrytí položky: Přepsat dodavatele | Pokrytí položky: Přepsat dobu realizace | Obchodní smlouva: dodavatel | Obchodní smlouva: doba realizace | Obchodní smlouva: Ignorovat dobu realizace | Výsledný dodavatel | Výsledná doba realizace |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Žádný | Žádný | US003 | 3 | Žádný | _ *US001** | **1** |
-| US001 | 1 | ***Ano: US002** _ | _*_Ano: 2_*_ | US003 | 3 | Žádný | _ *US002** | **2** |
-| *(Prázdné)* | 1 | Žádný | Žádný | ***US003** _ | _*_3_*_ | Žádný | _ *US003** | **3** |
-| *(Prázdné)* | ***1** _ | Žádný | Žádný | _*_US003_*_ | 3 | Ano | _ *US003** | **1** |
-| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Žádný | US003 | 3 | Žádný | _ *US002** | **1** |
-| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Žádný | US003 | 3 | Žádný | _ *US002** | **1** |
-| *(Prázdné)* | 1 | Žádný | Ano: 2 | ***US003** _ | _*_3_*_ | Žádný | _ *US003** | **3** |
-| *(Prázdné)* | 1 | Žádný | ***Ano: 2** _ | _*_US003_*_ | 3 | Ano | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Ne | Ne | US003 | 3 | Ne | _ *US001** | **1** |
+| US001 | 1 | ***Ano: US002** _ | _*_Ano: 2_*_ | US003 | 3 | Ne | _ *US002** | **2** |
+| *(Prázdné)* | 1 | Ne | Ne | ***US003** _ | _*_3_*_ | Ne | _ *US003** | **3** |
+| *(Prázdné)* | ***1** _ | Ne | Ne | _*_US003_*_ | 3 | Ano | _ *US003** | **1** |
+| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Ne | US003 | 3 | Ne | _ *US002** | **1** |
+| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Ne | US003 | 3 | Ne | _ *US002** | **1** |
+| *(Prázdné)* | 1 | Ne | Ano: 2 | ***US003** _ | _*_3_*_ | Ne | _ *US003** | **3** |
+| *(Prázdné)* | 1 | Ne | ***Ano: 2** _ | _*_US003_*_ | 3 | Ano | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Další prostředky
 

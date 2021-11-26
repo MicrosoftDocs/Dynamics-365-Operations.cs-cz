@@ -92,8 +92,8 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
     | Datum transakce       | 1/1/2022 |
     | Zbývající období      | 84       |
     | Zaúčtovat                   | Ano      |
-    | Náhled před zaúčtováním | Žádný       |
-    | Uzavřít knihu             | Žádný       |
+    | Náhled před zaúčtováním | Ne       |
+    | Uzavřít knihu             | Ne       |
 
 6. Byla vytvořena a zaúčtována položka deníku výdajů na snížení hodnoty. Chcete-li ji zobrazit, přejděte do deníku leasingu majetku v leasingové knize. Všimněte si, že částka snížení hodnoty byla odepsána z účtu zaúčtování nákladů na snížení hodnoty a byla připsán na účet zaúčtování používaného majetku.
 7. Čistý dopad snížení hodnoty zobrazíte v tabulkách transakcí s aktivy a pasivy. Všimněte si, že snížení hodnoty snížilo používaný majetek, ale účetní hodnota leasingového závazku se nezměnila.

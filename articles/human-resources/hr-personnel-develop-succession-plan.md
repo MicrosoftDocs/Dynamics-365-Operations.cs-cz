@@ -1,8 +1,8 @@
 ---
 title: Vypracování plánu kariérního postupu
 description: Jak vaše organizace roste, musíte začít s plánováním kariérního postupu.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768208"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731509"
 ---
 # <a name="develop-a-succession-plan"></a>Vypracování plánu kariérního postupu
 
@@ -35,8 +35,8 @@ Jak vaše organizace roste, musíte začít s plánováním kariérního postupu
 7. Vyberte **Osobu**.
 8. V poli **Osoba** zadejte jméno, nebo ji vyberte z rozevíracího seznamu.
 9. Vyberte **OK**.
-10. Rozbalte pevnou záložku **Certifikáty** a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
-11. Rozbalte pevnou záložku **Dovedností** pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
+10. Rozbalte záložku s náhledem **Certifikáty** a prohlédněte si nebo upravte certifikáty, které jsou zahrnuty do mapování dovedností.
+11. Rozbalte záložku s náhledem **Dovedností** pro zobrazení nebo úpravu dovedností, které chcete zahrnout.
 12. Označte na seznamu první řádek. Příklad: Účetnictví.
 13. Zaškrtněte políčko **Volitelné**.
 14. Vyberte volbu v poli **Důležitost**. Pokud označíte dovednost jako volitelnou, je nutné vybrat úroveň důležitosti dané dovednosti.  
@@ -48,8 +48,8 @@ Jak vaše organizace roste, musíte začít s plánováním kariérního postupu
 20. Vyberte volbu v poli **Důležitost**.
 21. Vyberte ze seznamu řádek 4.
 22. Zaškrtněte políčko **Volitelné**.
-23. Vyberte volbu v poli Důležitost.
-24. Rozbalte pevnou záložku **Vzdělání** umožňující zobrazení nebo úpravu kompetencí vzdělání, které mají být zahrnuty do mapování dovednosti.
+23. Vyberte volbu v poli **Důležitost**.
+24. Rozbalte záložku s náhledem **Vzdělání** umožňující zobrazení nebo úpravu kompetencí vzdělání, které mají být zahrnuty do mapování dovednosti.
 25. Vyberte **Provést**.
 26. Vyberte **OK**.
 27. Vyberte **Výsledek**

@@ -55,14 +55,14 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | ER: Integrace s LCS                                                                  | Ano       | Ne              |
 |                                      | ER: Integrace se službou SharePoint                                                           | Ano       | Ne              |
 |                                      | ER: Integrace se službou Regulatory Configuration Services (RCS)                              | Ano       | Ne              |
-|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Žádný        | Ano             |
-|                                      | Integrace s PowerBI.com                                                              | Ano       | Žádný              |
-|                                      | Integrace s PowerBI Desktop                                                          | Žádný        | Ano             |
-|                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
-|                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
-|                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
+|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Ne        | Ano             |
+|                                      | Integrace s PowerBI.com                                                              | Ano       | Ne              |
+|                                      | Integrace s PowerBI Desktop                                                          | Ne        | Ano             |
+|                                      | Analytické pracovní prostory                                                                     | Ano       | Ne              |
+|                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Ne              |
+|                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Ne              |
 |                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ano             |
-|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Žádný              |
+|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Ne              |
 | Lifecycle Services                   |                                                                                           | Ano       | Ano             |
 |                                      | Konfigurovatelné obchodní procesy                                                           | Ano       | Ne              |
 | Lokalizace                        |                                                                                           | Ano       | Ano             |
@@ -86,14 +86,14 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |-------------------------|-------------------|-----------|-----------------|
 | Správa majetku                     |                                                                                           | Ano       | Ano             |
 | Dodržování předpisů a certifikáty        |                                                                                           | Ano       | Ano             |
-|                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Žádný              |
+|                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Ne              |
 | Nákladové účetnictví                      |                                                                                           | Ano       | Ano             |
-|                                      | Balíček obsahu Nákladové účetnictví pro Power BI                                                 | Ano       | Žádný              |
-|                                      | Pracovní prostor nákladového účetnictví pro mobilní aplikaci                                                  | Ano       | Žádný              |
+|                                      | Balíček obsahu Nákladové účetnictví pro Power BI                                                 | Ano       | Ne              |
+|                                      | Pracovní prostor nákladového účetnictví pro mobilní aplikaci                                                  | Ano       | Ne              |
 | Správa nákladů                      |                                                                                           | Ano       | Ano             |
-|                                      | Balíček obsahu správy nákladů pro Power BI                                                 | Ano       | Žádný              |
+|                                      | Balíček obsahu správy nákladů pro Power BI                                                 | Ano       | Ne              |
 | Integrace a správa dat      |                                                                                           | Ano       | Ano             |
-|                                      | Rozšíření na základě konfigurace                                                            | Ano       | Žádný              |
+|                                      | Rozšíření na základě konfigurace                                                            | Ano       | Ne              |
 |                                      | Export dat do svého vlastního datového skladu                                                    | Ano       | Ano             |
 |                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano             |
 |                                      | Integrace dat                                                                         | Ano       | Ano             |
@@ -104,42 +104,42 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |                                      | ER: Integrace s LCS                                                                  | Ano       | Ne              |
 |                                      | ER: Integrace se službou SharePoint                                                           | Ano       | Ne              |
 |                                      | ER: Integrace se službou Regulatory Configuration Services (RCS)                              | Ano       | Ne              |
-|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Žádný        | Ano             |
-|                                      | Integrace s PowerBI.com                                                              | Ano       | Žádný              |
-|                                      | Integrace s PowerBI Desktop                                                          | Žádný        | Ano             |
-|                                      | Analytické pracovní prostory                                                                     | Ano       | Žádný              |
-|                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Žádný              |
-|                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Žádný              |
+|                                      | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Ne        | Ano             |
+|                                      | Integrace s PowerBI.com                                                              | Ano       | Ne              |
+|                                      | Integrace s PowerBI Desktop                                                          | Ne        | Ano             |
+|                                      | Analytické pracovní prostory                                                                     | Ano       | Ne              |
+|                                      | Inteligentní obchodní proces: doporučení                                             | Ano       | Ne              |
+|                                      | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel    | Ano       | Ne              |
 |                                      | Služba SQL Server Reporting Services podporuje rozšiřování                                 | Ano       | Ano             |
-|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Žádný              |
+|                                      | Telemetrie je přenesena do cloudu                                                   | Ano       | Ne              |
 | Řízení zásob                 |                                                                                           | Ano       | Ano             |
 | Lifecycle Services                   |                                                                                           | Ano       | Ano             |
 |                                      | Konfigurovatelné obchodní procesy                                                           | Ano       | Ne              |
 | Lokalizace                        |                                                                                           | Ano       | Ano             |
 | Výroba                        |                                                                                           | Ano       | Ano             |
 | Hlavní plánování a prognóza      |                                                                                           | Ano       | Ano             |
-| Optimalizace plánování                |                                                                                           | Ano       | Žádný              |
+| Optimalizace plánování                |                                                                                           | Ano       | Ne              |
 | Mobilní aplikace, pracovní prostory a platformy |                                                                                           | Ano       | Ano             |
 | Integrace s Office                   |                                                                                           | Ano       | Ano             |
 | Správa organizace          |                                                                                           | Ano       | Ano             |
 | Zásobování a zdroje             |                                                                                           | Ano       | Ano             |
-|                                      | Funkce punch-out pro externí katalog z nákupní žádanky                                   | Ano       | Žádný              |
-|                                      | Sestavy Power BI analýzy nákupu a výdajů                                                  | Ano       | Žádný              |
+|                                      | Funkce punch-out pro externí katalog z nákupní žádanky                                   | Ano       | Ne              |
+|                                      | Sestavy Power BI analýzy nákupu a výdajů                                                  | Ano       | Ne              |
 | Řízení informací o produktech       |                                                                                           | Ano       | Ano             |
 | Data základního produktu                  |                                                                                           | Ano       | Ano             |
 | Výroba                           |                                                                                           | Ano       | Ano             |
-|                                      | Sestavy výkonnosti výroby v Power BI                                                   | Ano       | Žádný              |
+|                                      | Sestavy výkonnosti výroby v Power BI                                                   | Ano       | Ne              |
 | Řízení a účetnictví projektů    |                                                                                           | Ano       | Ano             |
 | Prodej.                                |                                                                                           | Ano       | Ano             |
-|                                      | Sestavy výkonu prodeje a ziskovosti v Power BI                                      | Ano       | Žádný              |
+|                                      | Sestavy výkonu prodeje a ziskovosti v Power BI                                      | Ano       | Ne              |
 | Zabezpečení                             |                                                                                           | Ano       | Ano             |
 | Správa servisu                   |                                                                                           | Ano       | Ano             |
 | Správa dodavatelsko-odběratelského řetězce              |                                                                                           | Ano       | Ano             |
 | Správa přepravy            |                                                                                           | Ano       | Ano             |
-| Dodavatelská spolupráce                 |                                                                                           | Ano       | Žádný              |
+| Dodavatelská spolupráce                 |                                                                                           | Ano       | Ne              |
 | Řízení skladu                 |                                                                                           | Ano       | Ano             |
 |                                      | Mobilní aplikace skladu                                                                      | Ano       | Ano             |
-|                                      | Sestavy skladu v Power BI                                                              | Ano       | Žádný              |
+|                                      | Sestavy skladu v Power BI                                                              | Ano       | Ne              |
 | Webový klient                           |                                                                                           | Ano       | Ano             |
 |                                      | Záznamník úloh - Uložení nebo načtení záznamu úloh z knihovny BPM                         | Ano       | Ne              |
 | Podpora                              |                                                                                           | Ano       | Ano             |
@@ -164,12 +164,12 @@ Pokud chcete zobrazit seznam možností, které jsou k dispozici v místním nas
 | Monitorování a telemetrie   |                                           | Ano       | Ano             |
 | Kompatibilita platformy     |                                           | Ano       | Ano             |
 | Servis                  |                                           | Ano       | Ano             |
-|                            | Upgrade v různých prostředích                    | Ano       | Žádný              |
+|                            | Upgrade v různých prostředích                    | Ano       | Ne              |
 | Trace Parser               |                                           | Ano       | Ano             |
 | PerfTimer                  |                                           | Ano       | Ano\*           |
 | Upgrade                    |                                           | Ano       | Ano             |
-|                            | Upgrade                                   | Ano       | Žádný              |
-|                            | Upgrade a podpora předchozích verzí | Ano       | Žádný              |
+|                            | Upgrade                                   | Ano       | Ne              |
+|                            | Upgrade a podpora předchozích verzí | Ano       | Ne              |
 | Vývoj Visual Studio  |                                           | Ano       | Ano             |
 
 \* V místních prostředích zobrazuje PerfTimer pouze výsledky pro klienta.

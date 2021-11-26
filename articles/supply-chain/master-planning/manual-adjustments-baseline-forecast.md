@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579633"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778026"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Ruční úpravy základní prognózy
 
@@ -67,7 +67,7 @@ Stránka **Podrobnosti prognózy poptávky** popisuje následující informace v
 
 **Poznámky:**
 
--   Pokud povolíte **Výběr modelu prognózy v Podrobnostech prognózy poptávky** ve Správě fukcí, budete moci vybrat modely prognóz, které budou pro historickou prognózu zahrnuty na stránce **Podrobnosti prognózy poptávky**.
+-   Pokud povolíte **Výběr modelu prognózy v Podrobnostech prognózy poptávky** ve Správě fukcí, budete moci vybrat modely prognóz, které budou pro historickou prognózu zahrnuty na stránce **Podrobnosti prognózy poptávky**. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 -   Interval jistoty, který se zobrazí v části **Prognóza** na stránce, představuje rozdíl mezi horním limitem intervalu jistoty a dolním limitem intervalu jistoty. Pokud chcete zobrazit hodnoty pro dolní a horní limit, umístěte ukazatel myši do grafu v části **Historická poptávka a prognóza – graficky**.
 -   Pokud používáte prognózu poptávky strojového učení Microsoft Azure, můžete určit podíl úrovně jistoty, který by měla mít generovaná prognóza. Interval jistoty obsahuje určitý úsek hodnot, které fungují jako vhodné odhady pro prognózu poptávky. 95% úroveň jistoty například označuje existenci 5% riziko, že prognóza poptávky se bude nacházet mimo rozsah intervalu jistoty.
 

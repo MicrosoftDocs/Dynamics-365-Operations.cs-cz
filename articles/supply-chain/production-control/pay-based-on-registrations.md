@@ -170,7 +170,7 @@ Na stránce **Parametry výpočtu** vyberte **Přesčas** jako typ specifikace p
 
 | Reg. určení | Typ specifikace profilu | Výpočet   | Nastavení | Placeno         | Nastavení |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Prac. doba       | Přesčas                   | Standardní čas | Ano | Placený čas     | Žádný  |
+| Prac. doba       | Přesčas                   | Standardní čas | Ano | Placený čas     | Ne  |
 |                    |                            | Placený čas      | Ano | Placený přesčas | Ano |
 
 Po úpravě parametrů výpočtu jsou generovány následující položky mzdy.

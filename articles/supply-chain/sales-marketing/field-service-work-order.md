@@ -88,21 +88,21 @@ Následující tabulka poskytuje přehled různých kombinací řádků produktu
 | Stav systému <br>(Field Service) | Stav řádku <br>(Field Service) | Přiděleno <br>(Field Service) |Synchronizovaná hodnota <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Otevřeno - Plánováno   | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Plánováno   | Odhadnuto   | Žádný        | Použito                            |
+| Otevřeno - Plánováno   | Odhadnuto   | Ne        | Použito                            |
 | Otevřeno - Plánováno   | Použito        | Ano       | Použito                            |
-| Otevřeno - Plánováno   | Použito        | Žádný        | Použito                            |
+| Otevřeno - Plánováno   | Použito        | Ne        | Použito                            |
 | Otevřeno - Probíhá | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Probíhá | Odhadnuto   | Žádný        | Použito                            |
+| Otevřeno - Probíhá | Odhadnuto   | Ne        | Použito                            |
 | Otevřeno - Probíhá | Použito        | Ano       | Použito                            |
-| Otevřeno - Probíhá | Použito        | Žádný        | Použito                            |
+| Otevřeno - Probíhá | Použito        | Ne        | Použito                            |
 | Otevřeno - Dokončeno   | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Dokončeno   | Odhadnuto   | Žádný        | Použito                            |
+| Otevřeno - Dokončeno   | Odhadnuto   | Ne        | Použito                            |
 | Otevřeno - Dokončeno   | Použito        | Ano       | Použito                            |
-| Otevřeno - Dokončeno   | Použito        | Žádný        | Použito                            |
+| Otevřeno - Dokončeno   | Použito        | Ne        | Použito                            |
 | Zavřeno - Zaúčtováno    | Odhadnuto   | Ano       | Použito                            |
-| Zavřeno - Zaúčtováno    | Odhadnuto   | Žádný        | Použito                            |
+| Zavřeno - Zaúčtováno    | Odhadnuto   | Ne        | Použito                            |
 | Zavřeno - Zaúčtováno    | Použito        | Ano       | Použito                            |
-| Zavřeno - Zaúčtováno    | Použito        | Žádný        | Použito                            |
+| Zavřeno - Zaúčtováno    | Použito        | Ne        | Použito                            |
 
 Následující tabulka poskytuje přehled různých kombinací řádků servisu.
 

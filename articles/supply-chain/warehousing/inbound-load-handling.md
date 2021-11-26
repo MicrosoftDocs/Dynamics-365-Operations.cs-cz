@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577833"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778052"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
@@ -205,7 +205,7 @@ V následující tabulce jsou shrnuty účinky nastavení **Povolit více pří
 | Povolit více příjemek produktů na jeden náklad | Množství nákladu | Stav nákladu | Poznámka |
 |---|---|---|---|
 | Pokud toto pole není k dispozici (verze před 10.0.10) | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství.</p><p>Pokud je množství nákladu aktualizováno na 0 (nula), což znamená, že nebyla provedena žádná registrace, řádek nákladu bude odstraněn.</p><p>Pokud pro náklad nejsou k dispozici žádné řádky pro čtení, dojde k jeho odstranění.</p> | _Přijato_ | Existuje-li pro zaregistrované množství řádku objednávky více nákladů, aktualizuje se na _přijato_ pouze stav nákladu, ze kterého byla zaúčtována příjemka. |
-| Žádný | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství, které je přidruženo k ID nákladu.</p><p>Pokud není pro skladovou transakci zaznamenáno ID nákladu, chování odpovídá chování ve verzích před 10.0.10.</p> | _Přijato_ | |
+| Ne | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství, které je přidruženo k ID nákladu.</p><p>Pokud není pro skladovou transakci zaznamenáno ID nákladu, chování odpovídá chování ve verzích před 10.0.10.</p> | _Přijato_ | |
 | Ano | Žádné aktualizace | _Přijato_, pokud je celkové zaregistrované množství nákladu rovno nebo větší než množství nákladu | |
 | Ano | Žádné aktualizace | _Odesláno_ nebo _Zpracovává se_, pokud je celkové zaregistrované množství nákladu menší než množství nákladu | |
 
@@ -267,7 +267,7 @@ Tyto scénáře vyžadují funkci _Více zaúčtování příjemek produktů na 
 
 1. Otevřete pracovní prostor **Správa funkcí**. (Podrobné informace o tom, jak najít a použít tento pracovní prostor naleznete v tématu [Správa funkcí – přehled](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)funkcí – přehled.)
 
-1. Zapněte funkci _Přiřazení skladových transakcí nákupní objednávky k nákladu_, která je uvedena následujícím způsobem:
+1. Ujistěte se, že je zapnutá funkce _Přiřazení skladových transakcí nákupní objednávky k nákladu_. Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout. Ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) je však tato funkce uvedena následovně:
 
     - **Modul:** _Řízení skladu_
     - **Název funkce:** _Přiřazení skladových transakcí nákupní objednávky k nákladu_

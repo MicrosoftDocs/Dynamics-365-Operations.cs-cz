@@ -89,16 +89,16 @@ Následující graf s porovnáním vám pomůže rozlišit tyto dvě možnosti:
 
 | Funkce                                                   | Financial Reporting                                               | Finanční analýza |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Upravit výchozí sestavy**                                 | Ano                                                               | Žádný |
-| **Vytvořit nové sestavy**                                   | Ano                                                               | Žádný |
-| **Tisk sestav**                                        | Ano                                                               | Žádný |
+| **Upravit výchozí sestavy**                                 | Ano                                                               | Ne |
+| **Vytvořit nové sestavy**                                   | Ano                                                               | Ne |
+| **Tisk sestav**                                        | Ano                                                               | Ne |
 | **Export do aplikace Excel**                                      | Ano                                                               | Omezené exporty nezpracovaných dat do aplikace Excel, ne formátovaná sestava |
-| **Podpora hierarchie vykazování/organizační hierarchie**   | Ano                                                               | Žádný |
+| **Podpora hierarchie vykazování/organizační hierarchie**   | Ano                                                               | Ne |
 | **Vykázat data dílčí knihy**                             | Ano omezeno pouze na dodavatele, zákazníka                              | Ano dodavatel, odběratel, skupiny odběratelů nebo dodavatelů, adresy odběratele nebo dodavatele, atd. |
 | **Měna vykazování**                                   | Ano Zúčtovací měna a Převést na měnu vykazování       | Ne Pouze v zúčtovací měně |
 | **Zabezpečení**                                             | Ano odpovídá Finance a vykazování stromového zabezpečení | Omezené zobrazení sestav pro všechny společnosti (bez ohledu na zabezpečení Finance and Operations) nebo jen aktivní společnost |
-| **Podporuje různé účtové osnovy a fiskální roky** | Ano                                                               | Žádný |
-| **vykázat externí data**                              | Žádný                                                                | Žádný |
+| **Podporuje různé účtové osnovy a fiskální roky** | Ano                                                               | Ne |
+| **vykázat externí data**                              | Ne                                                                | Ne |
 | **Podpora konsolidací**                               | Ano                                                               | Omezené Lze vykázat více společností, ale používat pouze zúčtovací měnu |
 
 K dispozici jsou následující finanční výkazy:

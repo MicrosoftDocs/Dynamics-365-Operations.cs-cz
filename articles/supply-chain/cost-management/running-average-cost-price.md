@@ -38,9 +38,9 @@ Následující tabulka uvádí případy, kdy systém účtuje skladové transak
 
 | Podmínka                                               | Systém používá odhadovanou průběžnou průměrnou nákladovou cenu | Systém používá nákladovou cenu, která je definovaná v hlavním záznamu položky |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Dělenec\* i dělitel\*\* jsou kladné.  | Ano                                                      | Žádný                                                                |
-| Dělenec\*, dělitel\*\*, nebo oba jsou záporné. | Žádný                                                       | Ano                                                               |
-| Dělenec\*\* má hodnotu 0 (nula).                        | Žádný                                                       | Ano                                                               |
+| Dělenec\* i dělitel\*\* jsou kladné.  | Ano                                                      | Ne                                                                |
+| Dělenec\*, dělitel\*\*, nebo oba jsou záporné. | Ne                                                       | Ano                                                               |
+| Dělenec\*\* má hodnotu 0 (nula).                        | Ne                                                       | Ano                                                               |
 
 \* Dělenec = (fyzická částka + finanční částka) \*\* Dělitel = (fyzické množství + finanční množství) 
 

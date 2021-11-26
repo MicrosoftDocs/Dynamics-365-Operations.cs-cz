@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488131"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731631"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -85,6 +85,8 @@ Na kartě **Mapování** návrháře operací elektronického výkaznictví mů�
 
 Součást **Rozsah** označuje rozsah Excelu, který musí být ovládán touto součástí elektronického výkaznictví. Název rozsahu je definován ve vlastnosti **Rozsah aplikace Excel** této komponenty.
 
+### <a name="replication"></a>Replikace
+
 Vlastnost **Směr replikace** určuje, zda a jak bude rozsah opakován v generovaném dokumentu:
 
 - Pokud je vlastnost **Směr replikace** nastavena na **Žádná replikace**, příslušný rozsah aplikace Excel nebude ve vygenerovaném dokumentu opakován.
@@ -92,6 +94,8 @@ Vlastnost **Směr replikace** určuje, zda a jak bude rozsah opakován v generov
 - Pokud je vlastnost **Směr replikace** nastavena na **Horizontální**, příslušný rozsah aplikace Excel bude ve vygenerovaném dokumentu opakován. Každý replikovaný rozsah je umístěn napravo od původního rozsahu v šabloně Excel. Počet opakování je definován počtem záznamů ve zdroji dat typu **Seznam záznamů**, který je vázán na tuto součást elektronického výkaznictví.
 
 Chcete-li se dozvědět více o horizontální replikaci, postupujte podle kroků v části [Použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v tabulkách aplikace Excel](tasks/er-horizontal-1.md).
+
+### <a name="nested-components"></a>Vnořené komponenty
 
 Součást **Rozsah** může mít další vnořené součásti elektronického výkaznictví, které se používají k zadávání hodnot do příslušných pojmenovaných rozsahů aplikace Excel.
 
@@ -105,11 +109,40 @@ Součást **Rozsah** může mít další vnořené součásti elektronického v�
     > [!NOTE]
     > Tento vzor použijte k povolení aplikace Excel pro formátování zadané hodnoty na základě národního prostředí místního počítače, které otevírá odchozí dokument.
 
+### <a name="enabling"></a>Povoluje se
+
 Na kartě **Mapování** návrháře operací elektronického výkaznictví můžete nakonfigurovat vlastnost **Povoleno** pro součást **Rozsah** k určení, zda musí být komponenta vložena do vygenerovaného dokumentu:
 
 - Pokud je výraz vlastnosti **Povoleno** nakonfigurován pro vrácení hodnoty **True** za běhu, nebo pokud není vůbec nakonfigurován žádný výraz, bude do vygenerovaného dokumentu vyplněn příslušný rozsah.
 - Pokud je výraz vlastnosti **Povoleno** nakonfigurován pro vrácení hodnoty **False** za běhu a pokud tento rozsah nepředstavuje celé řádky nebo sloupce, nebude do vygenerovaného dokumentu vyplněn příslušný rozsah.
 - Pokud je výraz vlastnosti **Povoleno** nakonfigurován pro vrácení hodnoty **False** za běhu a pokud tento rozsah představuje celé řádky nebo sloupce, vygenerovaný dokument bude obsahovat tyto řádky a sloupce jako skryté.
+
+### <a name="resizing"></a>Změna velikosti
+
+Šablonu aplikace Excel můžete nakonfigurovat tak, aby používala buňky k prezentaci textových dat. Chcete-li zajistit, aby byl ve vygenerovaném dokumentu viditelný celý text v buňce, můžete tuto buňku nakonfigurovat tak, aby do ní text automaticky zalamovala. Můžete také nakonfigurovat řádek obsahující tuto buňku tak, aby automaticky upravil svou výšku, pokud není zalomený text zcela viditelný. Další informace naleznete v části „Zalamování textu v buňce“ v [Opravte data, která jsou v buňkách oříznutá](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> Kvůli známému [Omezení Excelu](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), i když nakonfigurujete buňky pro zalamování textu a nakonfigurujete řádky obsahující tyto buňky tak, aby automaticky upravovaly svou výšku tak, aby odpovídaly zalamovanému textu, možná nebudete moci použít funkce aplikace Excel **Automatické přizpůsobení** a **Obtékání textu** pro sloučené buňky a řádky, které je obsahují. 
+
+V Dynamics 365 Finance verze 10.0.23 můžete přinutit ER, aby ve vygenerovaném dokumentu vypočítal výšku každého řádku, který byl nakonfigurován tak, aby se jeho výška automaticky přizpůsobila obsahu vnořených buněk, kdykoli tento řádek obsahuje alespoň jednu sloučenou buňku, která byla nakonfigurována tak, aby obtékala text uvnitř. Vypočítaná výška se pak použije ke změně velikosti řádku, aby bylo zajištěno, že ve vygenerovaném dokumentu budou viditelné všechny buňky v řádku. Chcete-li začít používat tuto funkci při spuštění jakýchkoli formátů ER, které byly nakonfigurovány pro použití šablon aplikace Excel ke generování odchozích dokumentů, postupujte takto.
+
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+2. Na stránce **Konfigurace lokalizace** vyberte v části **Související odkazy** možnost **Parametry elektronického výkaznictví**.
+3. Na stránce **Parametry elektronického výkaznictví** nastavte na kartě **Modul runtime** u možnosti **Zalamovat text v buňce** hodnotu **Ano**.
+
+Pokud chcete změnit toto pravidlo pro jeden formát ER, aktualizujte verzi konceptu tohoto formátu podle následujících kroků.
+
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+2. Na stránce **Konfigurace lokalizace** v části **Konfigurace** vyberte **Konfigurace výkaznictví**.
+3. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně vyberte konfiguraci ER, která je navržena pro použití šablony Excel pro generování odchozích dokumentů.
+4. Na pevné záložce **Verze** vyberte verzi konfigurace se stavem **Koncept**.
+5. V podokně akcí zvolte **Návrhář**.
+6. Na stránce **Návrhář formátu** ve stromu formátu v levém podokně vyberte komponentu Excel, která je propojena s šablonou Excel.
+7. Na kartě **Formát** v poli **Upravte výšku řádku** vyberte hodnotu, která určí, zda má být ER vynuceno za běhu změnit výšku řádků v odchozím dokumentu, který je generován upraveným formátem ER:
+
+    - **Výchozí** – Použijte obecné nastavení, které je nakonfigurováno v poli **Automaticky přizpůsobit výšku řádku** na stránce **Parametry elektronického výkaznictví**.
+    - **Ano** – Přepište obecné nastavení a změňte výšku řádku za běhu.
+    - **Ne** – Přepište obecné nastavení a neměňte výšku řádku za běhu.
 
 ## <a name="cell-component"></a>Součást buňky
 

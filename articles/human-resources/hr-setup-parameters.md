@@ -1,8 +1,8 @@
 ---
 title: Konfigurace parametrů Human Resources
 description: Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost v aplikaci Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739244"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771428"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurace parametrů Human Resources
 
@@ -65,7 +65,7 @@ Nastavení kartě **Obecné** určuje vzhled informací o absencích, zraněníc
 
 Nastavení na kartě **Nábor** definují typy dokumentů používané pro korespondenci automaticky zasílanou uchazečům. Můžete také uvést náborový projekt používaný pro nevyžádané přihlášky.
 
-Období definované pro náborový projekt časově určuje náborové projekty, které jsou zahrnuty na dlaždici **Časové projekty** v pracovním prostoru **Řízení náboru**. Období, které je definováno pro upozornění na termín přihlášky, slouží k zobrazení náborových projektů, kterým se blíží jejich konečný termín přihlášky na dlaždici **Blíží se termín přihlášky** v pracovním prostoru **Nábor**.
+Období definované pro **Náborový projekt časově určuje**, které náborové projekty jsou zahrnuty na dlaždici **Časové projekty** v pracovním prostoru **Řízení náboru**. Období, které je definováno pro upozornění na termín přihlášky slouží k zobrazení náborových projektů, kterým se blíží jejich konečný termín přihlášky na dlaždici **Blíží se termín přihlášky** v pracovním prostoru **Nábor**.
 
 Další informace o náboru najdete na stránce [Nábor uchazečů o práci](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ Na kartě Pracovní volno nastavíte požadavky na způsobilost a hodiny nárok�
 
 ## <a name="employee-self-service"></a>Samoobsluha pro zaměstnance
 
-Nastavení na kartě **Samoobsluha pro zaměstnance** ovlivňuje, jak se zaměstnancům zobrazuje jejich samoobsluha. Na této kartě můžete:
+Nastavení na kartě **Samoobsluha pro zaměstnance** ovlivňuje, jak se zaměstnancům zobrazuje jejich **samoobsluha**. Na této kartě můžete provést následující úkoly:
 
-- Zapsat název samoobslužného pracovního prostoru zaměstnance
+- Zapsat název pracovního prostoru **Samoobsluha pro zaměstnance**
 - Vybrat, jaké informace může manažer pro zaměstnance zadat
 - Přidat užitečné odkazy pro zaměstnance
 - U zaměstnanců můžete omezit jejich schopnost přidávat nebo upravovat detaily kontaktních údajů. Další informace najdete v tématu [Omezení úpravy osobních údajů](hr-employee-self-service-restrict-editing.md).
 
-Další informace o nastavení samoobsluhy pro zaměstnance najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
+Další informace o nastavení **samoobsluhy pro zaměstnance** najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
 
 ![Karta Samoobsluha pro zaměstnance.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Samoobsluha pro manažery
 
-Nastavení na kartě **Samoobsluha pro manažery** ovlivní to, co manažeři uvidí ve své samoobsluze. Na této kartě můžete konfigurovat následující možnosti:
+Nastavení na kartě **Samoobsluha pro manažery** ovlivní to, co manažeři uvidí ve své **samoobsluze**. Na této kartě můžete konfigurovat následující možnosti:
 
 - Rozsah pro vypršení platnosti záznamů
 - Zda mohou manažeři informací prohlížet záznamy, jejichž platnost vyprší
@@ -128,13 +128,13 @@ Nastavení na kartě **Samoobsluha pro manažery** ovlivní to, co manažeři uv
 - Pohledy na odcházející pracovníky
 - Užitečné odkazy pro manažery
 
-Další informace o nastavení samoobsluhy pro manažery najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
+Další informace o nastavení **samoobsluhy pro manažery** najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
 
 ![Karta Samoobsluha pro manažery.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Správa zaměstnaneckých výhod
 
-Na kartě Správa výhod můžete konfigurovat e-mailové možnosti pro správu výhod. Další informace o nastavení a použití správy zaměstnaneckých výhod naleznete v tématu [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md).
+Na kartě **Správa výhod** můžete konfigurovat e-mailové možnosti pro správu výhod. Další informace o nastavení a použití správy zaměstnaneckých výhod naleznete v tématu [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md).
 
 ![Karta Správa zaměstnaneckých výhod.](./media/hr-setup-parameters-benefits-management.png)
 

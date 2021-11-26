@@ -1,8 +1,8 @@
 ---
 title: Projekty hromadného zařazení
-description: Projekty hromadného zařazení umožňují odborníkům z oblasti lidských zdrojů vytvářet více pozic a efektivně zařazovat zaměstnance na tyto pozice.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Toto téma popisuje projekty hromadného zařazení, které umožňují odborníkům z oblasti lidských zdrojů vytvářet více pozic a efektivně zařazovat zaměstnance na tyto pozice.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3e6c2addcf3f43c843692013489afcc1912b9baac1dbdfa6b4d4a1afc4398cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e0a8bba2227136995542d08f4b3f1e9d6d48ad5
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754793"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728649"
 ---
 # <a name="mass-hire-projects"></a>Projekty hromadného zařazení
 
@@ -43,9 +43,9 @@ Projekty hromadného zařazení používejte pokud zařazujete několik zaměstn
 
 V létě obvykle probíhá nábor na 15-20 studentů na částečný úvazek pro vyplnění stáží ve vaší společnosti. Tento rok chcete najmout pět účetních, pět osob pro zpracování objednávek a pět pokladníků. Namísto vytváření jednotlivých pozic a pracovních záznamů samostatně vytvoříte jeden projekt hromadného zařazení s názvem "LetníVýpomoc". Počáteční a koncové datum projektu koreluje s počátečním a koncovým datem trvání pozice pro pozice, které jste vytvořili pro projekt hromadného náboru.
 
-Na stránce **Projekty hromadného zařazení** vyberte "LetníVýpomoc" a klepněte na tlačítko **Otevřít projekt**. V části Otevřít projekt masového zařazení klikněte na možnost **Vytváření pozic** a zadejte informace o pozici účetního. Můžete určit, že pět účetních pozic by mělo být vytvořeno s využitím vždy stejných informací, a klepněte na tlačítko OK. Tento postup opakujte pro osoby vyřizující objednávky a pozice pokladníka.
+Na stránce **Projekty hromadného zařazení** vyberte projekt **LetníVýpomoc** a vyberte **Otevřít projekt**. V části Otevřít projekt masového zařazení vyberte **Vytváření pozic** a zadejte informace o pozici účetního. Můžete určit, že pět účetních pozic by mělo být vytvořeno s využitím vždy stejných informací. Pak vyberte **OK**. Tento postup opakujte pro osoby vyřizující objednávky a pozice pokladníka.
 
-Po výběru studentů, které chcete zařadit kvůli stáži zadejte informace o každém studentovi do pole **Podrobnosti pozice** u pozice, pro kterou je zařazujete. Po zadání všech podrobností o pozici vyberte pozici na stránce Projekty hromadného zařazení a klepněte na **Zařazení**. Záznam pozice bude vytvořen pro jednotlivé pozice, a bude vytvořen záznam pracovníka a přiřazen ke správné pozici pro každou osobu, kterou zařazujete.
+Po výběru studentů, které chcete zařadit kvůli stáži zadejte informace o každém studentovi do pole Podrobnosti pozice u pozice, pro kterou je zařazujete. Po zadání všech podrobností o pozici vyberte pozici na stránce **Projekty hromadného zařazení** a klepněte na **Zařazení**. Záznam pozice bude vytvořen pro jednotlivé pozice, a bude vytvořen záznam pracovníka a přiřazen ke správné pozici pro každou osobu, kterou zařazujete.
 
 ## <a name="mass-hire-project-statuses"></a>Stavy projektu hromadného zařazení
 
@@ -53,9 +53,9 @@ Projekt masového zařazení může mít jeden z následujících stavů.
 
 - Vytvořeno
 - Otevřené
-- Uzavřené
+- Zavřeno
 
-Na stránce **Projekt hromadného zařazení** klepněte na **Otevřít projekt** nebo **Zavřít projekt** a změňte tak stav projektu hromadného zařazování zaměstnanců. Následující tabulka uvádí, co lze s projektem provádět podle toho, v jakém stavu se nachází.
+Na stránce **Projekt hromadného zařazení** vyberte **Otevřít projekt** nebo **Zavřít projekt** a změňte tak stav projektu hromadného zařazování zaměstnanců. Následující tabulka uvádí, co lze s projektem provádět podle toho, v jakém stavu se nachází.
 
 <table>
 <thead>
@@ -75,8 +75,8 @@ Na stránce **Projekt hromadného zařazení** klepněte na **Otevřít projekt*
 </tr>
 <tr>
 <td>Uzavřené</td>
-<td>Nelze přidat pozice do projektu. Otevřete projekt hromadného zařazování, kde můžete přiřadit další pozice. Jedná se o stav dokončených projektů.
-<blockquote>[!NOTE] Před uzavřením projektu hromadného zařazování je nutné, aby všechny pozice v projektu měly stav Vytvořeno nebo Uzavřeno.</blockquote>
+<td><p>Nelze přidat pozice do projektu. Otevřete projekt hromadného zařazování, kde můžete přiřadit další pozice. Jedná se o stav dokončených projektů.</p>
+<p><strong>Poznámka:</strong> Před uzavřením projektu hromadného zařazování je nutné, aby všechny pozice v projektu měly stav <b>Vytvořeno</b> nebo <b>Uzavřeno</b>.</p>
 </td>
 </tr>
 </tbody>

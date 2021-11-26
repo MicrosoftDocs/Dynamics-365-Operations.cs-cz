@@ -101,7 +101,7 @@ Vývoj rozšíření POS pomocí ModernPos.sln, CloudPOs.sln, POS.Extension.cspr
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Počínaje tímto vydáním, ve formuláři **Parametry plánovače obchodu** v centrále Dynamics 365 bude pole **Celý interval generování datové sady ve dnech** zastaralé. Počínaje touto verzí bude pole vizuálně odstraněno, takže hodnotu nebude možné upravit. Zůstane jako hodnota **0**. |
-| **Nahrazeno jinou funkcí?**   | Žádný |
+| **Nahrazeno jinou funkcí?**   | Ne |
 | **Ovlivněné oblasti produktu**         | Dynamics 365 Commerce |
 | **Možnost nasazení**              | Vše|
 | **Stav**                         | Zastaralé. Toto pole nepoužívejte ani v něm neměňte hodnotu.|

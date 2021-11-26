@@ -88,9 +88,9 @@ Následující tabulka ukazuje, které prodejní objednávky uživatelé v každ
 
 | Prodejní objednávka | Správce | Zástupce zákazníka pro zákazníka&nbsp;X | Oprávněný uživatel: Jane | Oprávněný uživatel: Sam | Neprávněný uživatel: May |
 |---|---|---|---|---|---|
-| Zákazník&nbsp;X Objednatel:&nbsp;Jane | Ano | Ano | Ano | Žádný | Žádný |
-| Zákazník&nbsp;X Objednatel:&nbsp;Sam | Ano | Ano | Žádný | Ano | Žádný |
-| Zákazník&nbsp;Y Objednatel:&nbsp;May | Ano | Žádný | Žádný | Žádný | Žádný |
+| Zákazník&nbsp;X Objednatel:&nbsp;Jane | Ano | Ano | Ano | Ne | Ne |
+| Zákazník&nbsp;X Objednatel:&nbsp;Sam | Ano | Ano | Ne | Ano | Ne |
+| Zákazník&nbsp;Y Objednatel:&nbsp;May | Ano | Ne | Ne | Ne | Ne |
 
 > [!NOTE]
 > I když Sam a Jane jsou kontakty, které pracují pro zákazníka X, vidí pouze objednávky, které sami zadali, a nic jiného. Ačkoli May má v systému objednávku, nemůže ji vidět na zákaznickém portálu, protože je neoprávněným uživatelem. (Dále musí zadat objednávku prostřednictvím jiného kanálu, než je zákaznický portál.)

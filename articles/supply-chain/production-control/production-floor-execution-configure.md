@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647182"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777954"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -39,7 +39,7 @@ Samotné rozhraní pro provádění výrobního provozu a několik volitelných 
 
 ### <a name="the-production-floor-execution-interface"></a>Rozhraní pro provádění výrobního provozu
 
-Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Toto je primární funkce popsaná v tomto tématu. Od verze Supply Chain Management 10.0.21 je ve výchozím nastavení zapnuta. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Provádění výrobního provozu
 
@@ -47,19 +47,19 @@ Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro pro
 
 Tyto funkce zpřístupňují funkčnost registrační značky pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
+1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
 1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
 
 ### <a name="print-labels"></a>Tisknout štítky
 
 Tyto funkce zpřístupňují funkčnost tisku štítku pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
+1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
 1. Vytisknout štítek ze zařízení úkolového lístku
 
 ### <a name="allow-locking-the-touch-screen"></a>Povolení uzamčení dotykové obrazovky
 
-Tato funkce přidává tlačítko do rozhraní provádění výrobního provozu, které umožňuje pracovníkům dezinfikovat dotykovou obrazovku. Chcete-li ho použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Přidává tlačítko do rozhraní provádění výrobního provozu, které umožňuje pracovníkům dezinfikovat dotykovou obrazovku. Chcete-li ji použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
 

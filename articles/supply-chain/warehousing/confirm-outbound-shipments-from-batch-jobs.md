@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d47b88fcc5e25fc85377b52fa9832916a4bb2217
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572378"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778466"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potvrdit odchozí dodávky z dávkových úloh
 
@@ -27,7 +27,7 @@ Toto téma popisuje, jak nastavit dávkovou úlohu, která automaticky potvrzuje
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Povolte funkci Potvrdit odchozí zásilky z dávkových úloh
 
-Než budete moci použít tuto funkci, musíte ji povolit ve svém systému. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul** - *Řízení skladu*
 - **Název funkce** - *Potvrdit odchozí zásilky z dávkových úloh*

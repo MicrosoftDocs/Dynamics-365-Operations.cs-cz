@@ -421,7 +421,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 <td>Nelze použít</td>
 </tr>
 <tr>
-<td>Žádný</td>
+<td>Ne</td>
 <td>
 <ol>
 <li>Vyberte položku nabídky <strong>Přepsat umístění</strong> v mobilní aplikaci Řízení skladu při zahájení práce výdeje.</li>
@@ -719,7 +719,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 </tr>
 <tr>
 <td>Je nastavena výjimka práce typu <strong>krátkodobý výdej</strong>, kde <strong>Opakované přidělení zboží</strong> = <strong>Ruční</strong>, <strong>Úprava zásob</strong> = <strong>Ano</strong>, a <strong>Odstranit rezervace</strong> = <strong>Ne</strong>. Kromě toho je povolena možnost <strong>Povolit ruční opakované přidělení zboží</strong> u pracovníka.</td>
-<td>Žádný</td>
+<td>Ne</td>
 <td>
 <ol>
 <li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>
@@ -732,7 +732,7 @@ V následujících tabulkách je uveden přehled, který zobrazuje způsob, jak
 </tr>
 <tr>
 <td>Je nastavena výjimka práce typu <strong>krátkodobý výdej</strong>, kde <strong>Opakované přidělení zboží</strong> = <strong>Ruční</strong>, <strong>Úprava zásob</strong> = <strong>Ano</strong>, a <strong>Odstranit rezervace</strong> = <strong>Ano</strong>. Kromě toho je povolena možnost <strong>Povolit ruční opakované přidělení zboží</strong> u pracovníka.</td>
-<td>Žádný</td>
+<td>Ne</td>
 <td>
 <ol>
 <li>Vyberte položku nabídky <strong>Krátkodobý výdej</strong> v mobilní aplikaci Řízení skladu při spuštění práce výdeje.</li>

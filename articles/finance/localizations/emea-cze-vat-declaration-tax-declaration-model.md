@@ -421,7 +421,7 @@ Prodejní transakci lze automaticky klasifikovat, že splňuje podmínku, že ne
 
     | Výsledek vyhledávání | Skupina DPH (TaxGroup) | Kód daně (kód) |
     |---------------|----------------------------|-----------------|
-    | Žádný            | \*Neprázdné\*              | \*Neprázdné\*   |
+    | Ne            | \*Neprázdné\*              | \*Neprázdné\*   |
 
 6. Zkontrolujte parametry.
 

@@ -47,7 +47,7 @@ Kniha IFRS 16 je vytvořena v souladu s účetním standardem IFRS 16. Všechny 
 | Nastavení současné hodnoty / reálné hodnoty majetku | 0,00           |
 | Krátkodobá prahová hodnota                    | 12             |
 | Nízká prahová hodnota                     | 5,000.00       |
-| Platba dodavateli                           | Žádný             |
+| Platba dodavateli                           | Ne             |
 
 **Statutární kniha**
 
@@ -64,7 +64,7 @@ Statutární kniha je hotovostní kniha, kde společnost bude účtovat výdaje 
 | Nastavení současné hodnoty / reálné hodnoty majetku | 0,00        |
 | Krátkodobá prahová hodnota                    | 0           |
 | Nízká prahová hodnota                     | 0           |
-| Platba dodavateli                           | Žádný          |
+| Platba dodavateli                           | Ne          |
 
 **Statutární stornovací kniha**
 
@@ -81,7 +81,7 @@ Statutární stornovací kniha je sestavena stejným způsobem jako statutární
 | Nastavení současné hodnoty / reálné hodnoty majetku | 0,00                           |
 | Krátkodobá prahová hodnota                    | 0                              |
 | Nízká prahová hodnota                     | 0                              |
-| Platba dodavateli                           | Žádný                             |
+| Platba dodavateli                           | Ne                             |
 
 V tomto příkladu byl vytvořen leasing, který má následující nastavení na kartách **Obecné** a **Řádky platebního kalendáře**.
 

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386678"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781337"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -26,12 +26,12 @@ ms.locfileid: "7386678"
 
 ## <a name="party"></a>Strana
 
-Strana je osoba nebo organizace zapojená do podnikání. Použitím konceptu strany může osoba nebo organizace hrát v podniku více než jednu roli (pracovník, zákazník, dodavatel nebo kontakt). Role je založena na kontextu a účelu. Zde je několik příkladů rolí pro dvě fiktivní společnosti Contoso a Fabrikam.
+Strana je osoba nebo organizace zapojená do podnikání. Použitím konceptu strany může osoba nebo organizace hrát v podniku více než jednu roli (pracovník, zákazník, dodavatel nebo kontakt). Role je založena na kontextu a účelu. Zde je několik příkladů rolí pro dvě fiktivní společnosti Contoso a Fabrikam:
 
 + **Pracovník** - Zaměstnanec. Příkladem je zaměstnanec společnosti Contoso.
-+ **Dodavatel** - Dodavatelská organizace nebo jediný majitel, který dodává zboží či služby nějakému podniku. Například pokud Fabrikam prodává zásoby Contoso, Fabrikam je pro Contoso prodejcem.
-+ **Kontakt** - Osoba, kterou je třeba kontaktovat. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, zaměstnanci společnosti Contoso by se spojil s kontaktem ve společnosti Fabrikam.
-+ **Zákazník** - Zákazník je osoba nebo společnost, která nakupuje věci od společnosti. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, pak je společnost Contoso zákazníkem společnosti Fabrikam.
++ **Dodavatel** - Dodavatelská organizace nebo jediný majitel, který dodává zboží či služby nějakému podniku. Například pokud Fabrikam prodává zásoby společnosti Contoso, Fabrikam je pro Contoso prodejcem.
++ **Kontakt** - Osoba, kterou je třeba kontaktovat. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, zaměstnanci společnosti Contoso by se spojili s kontaktem ve společnosti Fabrikam.
++ **Zákazník** - Zákazník je osoba nebo společnost, která nakupuje věci od společnosti. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, společnost Contoso je zákazníkem společnosti Fabrikam.
 
 Model strany se často používá k reprezentaci středních až složitých vztahů mezi organizacemi a lidmi, zvláště když strana hraje více než jednu roli. Několik běžných příkladů:
 

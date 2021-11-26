@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647529"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800186"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -128,8 +128,10 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="grid-shortcuts"></a>Zkratky mřížky
 
-| Akce                                                                                                             | Stisknout                           |
+| Akce                                                                                                             | Stiskněte tlačítko .                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertikální posouvání                                                                                                     | Kolečko myši                     |
+| Horizontální posouvání                                                                                                   | Shift + kolečko myši             |
 | Přechod na další nebo předchozí sloupec                                                                                       | Tab / Shift+Tab                 |
 | Přechod na další nebo předchozí řádek                                                                                          | Šipka nahoru nebo šipka dolů           |
 | Přesunout na další/předchozí řádek bez výběru<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote> | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
@@ -141,15 +143,15 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přejít k prvnímu záznamu                                                                                               | CTRL+HOME                       |
 | Přejít k poslednímu záznamu                                                                                                | CTRL+END                        |
 | Vybrat nebo vymazat všechny řádky                                                                                               | Ctrl+Shift+M                    |
-| Přejít k prvnímu označenému řádku                                                                                           | Alt+Shift+M, F                    |
-| Přejít na další označený řádek                                                                                            | Alt+Shift+M, L                    |
-| Přejít na předchozí označený řádek                                                                                        | Alt+Shift+M, P                    |
-| Přesunuto k poslednímu označenému řádku                                                                                           | Alt+Shift+M, N                    |
+| Přejít k prvnímu označenému řádku                                                                                           | Alt+Shift+M, F                  |
+| Přejít na další označený řádek                                                                                            | Alt+Shift+M, L                  |
+| Přejít na předchozí označený řádek                                                                                        | Alt+Shift+M, P                  |
+| Přesunuto k poslednímu označenému řádku                                                                                           | Alt+Shift+M, N                  |
 | Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
 | Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Enter                           |
-| Změnit velikost aktuálního sloupce tak, aby odpovídal obsahu (se zaměřením v řádku záhlaví)                                           | A                               |
+| Změnit velikost aktuálního sloupce tak, aby odpovídal obsahu (se zaměřením v řádku záhlaví)                                           | A (nebo dvakrát klikněte na úchyt pro nastavení velikosti sloupce) |
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
 

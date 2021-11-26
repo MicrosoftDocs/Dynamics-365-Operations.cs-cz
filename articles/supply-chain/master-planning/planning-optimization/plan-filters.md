@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c2fbaa6945cf46b7ef09232e6004f09b487ea7c822e72225dc00d3d28ecb008e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780191"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729020"
 ---
 # <a name="apply-filters-to-a-plan"></a>Použití filtrů v plánu
 
@@ -43,7 +43,7 @@ Je nastaven filtr plánu, který zahrnuje položky A, B a C. Běhy hlavního pl�
 - **Běhový filtr, který zahrnuje všechny položky (prázdný filtr):** položky a, B a C jsou zahrnuty do spuštění plánování a předchozí výstup plánování pro položky A a B bude přepsán.
 
 > [!NOTE]
-> Neměli byste nastavovat filtr plánu v plánu, který je vybrán jako **Aktuální dynamický hlavní plán** na stránce **parametry hlavního plánování**. V opačném případě bude funkce dynamického hlavního plánu omezena na filtrované položky. Jsou-li například aktualizovány požadavky netto pro položku, která není součástí filtru plánu, nebudou vygenerovány žádné výsledky.
+> Pokud nastavíte filtr plánu na plán, který je vybrán jako **Aktuální dynamický hlavní plán** na stránce **Parametry hlavního plánování**, pak bude funkce dynamického hlavního plánu omezena na filtrované položky. Jsou-li například aktualizovány požadavky netto pro položku, která není součástí filtru plánu, nebudou vygenerovány žádné výsledky.
 
 ## <a name="related-resources"></a>Související prostředky
 

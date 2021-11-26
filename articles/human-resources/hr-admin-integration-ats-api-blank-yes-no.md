@@ -34,7 +34,7 @@ Tento výčet poskytuje sadu možností pro vlastnosti ano/ne, která povoluje i
 | --- | --- | --- |
 | 200000000 | Bianko | Nebyla vybrána žádná hodnota. |
 | 200000001 | Ano | Ano. |
-| 200000002 | Žádný | Č. |
+| 200000002 | Ne | Ne |
 
 ## <a name="see-also"></a>Viz také
 

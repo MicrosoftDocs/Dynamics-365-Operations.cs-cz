@@ -2,7 +2,7 @@
 title: Začínáme s Elektronickou fakturací
 description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700372"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779687"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Začínáme s Elektronickou fakturací
 
@@ -57,7 +57,12 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 
 V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat specifickou konfiguraci. 
 
-Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
+> [!NOTE]
+> Když povolíte funkci elektronické fakturace pro Finsko, parametry specifické pro aplikaci ve vyhledávání nebudou podporovány. Chcete-li tento problém vyřešit, v modulu **Elektronické hlášení** zkontrolujte konfigurace formátu prodejní faktury a projektové faktury. Ručně nastavte vypočítané pole pro mapování **$PaymentMethodSubstitution** a poté svážte toto pole s polem **EpiPaymentMeansCode** z formátů prodejní faktury a projektové faktury.
+>
+> Když povolíte funkci elektronické fakturace pro Itálii, parametry specifické pro aplikaci ve vyhledávání nebudou podporovány. Chcete-li tento problém vyřešit, v modulu **Elektronické hlášení** ručně nastavte počítané pole pro mapování **$NaturaReverseCharge**.
+>
+> Konkrétní kroky, které se týkají jiných umístění, najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Import konfigurací mapování modelu z elektronického výkaznictví
 
@@ -241,6 +246,14 @@ Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici
 
 3. Vyberte fakturu v mřížce a poté vyberte **Dotaz** \> **Podrobnosti o podání**.
 
+## <a name="download-an-electronic-document-file"></a>Stáhněte si soubor elektronického dokumentu
+
+1. Přejděte na **Správa organizace** \> **Periodické** \> **Elektronické dokumenty** \> **Protokol o odeslání elektronických dokumentů**.
+2. V poli **Typ dokumentu** vyberte tabulku, která obsahuje faktury.
+3. Vyberte dokument v mřížce a poté vyberte **Elektronický dokument** \> **Stáhnout soubor**. Archiv, který obsahuje soubor elektronického dokumentu, bude navržen ke stažení.
+
+> [!NOTE]
+> Než budete moci stahovat soubory, možnost **Exportovat výsledek** musí být zapnuta pro související akci v nastavení funkce elektronické fakturace v RCS.
 
 ## <a name="related-topics"></a>Související témata
 

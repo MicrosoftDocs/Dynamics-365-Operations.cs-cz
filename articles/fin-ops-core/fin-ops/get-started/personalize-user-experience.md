@@ -2,7 +2,7 @@
 title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581058"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777978"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -219,6 +219,9 @@ Pokud jsou uložená zobrazení zakázána, zkopírujte personalizace podle těc
 ### <a name="export-and-import-views-or-personalizations"></a>Exportujte a importujte pohledy nebo individuální nastavení
 
 Dalším způsobem, jak sdílet personalizace, je export a import. Jednotliví uživatelé nebo správce, který jedná jejich jménem, mohou pomocí této metody exportovat svá přizpůsobení nebo zobrazení a poté exportovaný soubor předat dalším uživatelům k importu. Alternativně mohou uživatelé dát své exportované individuální nastavení uživateli, který má oprávnění správce, a ten pak může použít stránku pro správu **Personalizace**, kde lze použít soubor individuální nastavení pro více uživatelů současně.
+
+> [!IMPORTANT]
+> Protože personalizace přetrvávají i po provedených aktualizacích, je opětovné importování všech přizpůsobení po aktualizaci služby nebo kdykoli jindy zbytečné a důrazně se nedoporučuje.   
 
 #### <a name="export"></a>Export
 

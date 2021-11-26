@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 503ba8ae95119f3ce9533f81cdd16c34cf3a9223
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574538"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752825"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
 
@@ -28,9 +28,9 @@ Rozhraní pro provádění výrobního provozu je nastaveno pro každé zaříze
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Nastavení konfigurace a filtrů pro konkrétní zařízení
 
-Chcete-li nastavit konfiguraci a filtry úloh pro zařízení, přihlaste se na stránce **Provádění výrobního provozu** pomocí účtu, který má roli zabezpečení zahrnující funkční oprávnění *Supervizor doby údržby*. (Mezi dodávanými rolemi zabezpečení má tohle funkční oprávnění pouze *Vedoucí dílny*.) Poté postupujte podle těchto kroků.
+Chcete-li nastavit konfiguraci a filtry úloh pro zařízení, přihlaste se na stránce **Provádění výrobního provozu** pomocí účtu, který má roli zabezpečení zahrnující funkční oprávnění *Spravovat časový dohled*. (Mezi dodávanými rolemi zabezpečení má tohle funkční oprávnění pouze *Vedoucí dílny*.) Poté postupujte podle těchto kroků.
 
-1. Přejděte na zařízení, které chcete nastavit, a přihlaste se k Microsoft Dynamics 365 Supply Chain Management jako vedoucí dílny. (Použijte účet, který obsahuje funkční oprávnění *Supervizor doby údržby*.)
+1. Přejděte na zařízení, které chcete nastavit, a přihlaste se k Microsoft Dynamics 365 Supply Chain Management jako vedoucí dílny. (Použijte účet, který obsahuje funkční oprávnění *Spravovat časový dohled*.)
 1. Ujistěte se, že je k dispozici konfigurace pro zařízení, které nastavujete. Pokud ještě žádná konfigurace neexistuje, je k dispozici výchozí konfigurace. Další informace o nastavení konfigurace najdete v části [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).
 1. Přejděte do nabídky **Řízení výroby \> Provádění výroby \> Provádění výrobního provozu**.
 

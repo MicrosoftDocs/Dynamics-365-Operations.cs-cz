@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 024bbaad45f320b8c82b20a52ced05322371e337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575380"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777587"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
@@ -102,7 +102,7 @@ Osoby pracující ve veřejném sektoru mohou zobrazit otevřené a vypršené p
 
     Pokud jste byli přizváni k nabídce, můžete vyhledat stejný požadavek na nabídku na stránce **Pozvánky k nové nabídce**. V některých případech může být zapotřebí vytvořit nabídku k otevřenému požadavku na nabídku, ke kterému jste nebyli přizváni. V takovém případě se můžete přizvat sami, za předpokladu, že odběratel povolil možnost přizvat se sám k případu požadavku na nabídku.
 
-    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce **Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici**. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít.
+    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce **Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici**. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 
 - Zvolte odkaz **Uzavřené publikované požadavky na nabídky** pro zobrazení seznamu uzavřených požadavků na nabídku, které jsou k dispozici veřejně. Uzavřený požadavek na nabídku je požadavek, který vypršel. Čas a datum vypršení platnosti naleznete v záhlaví požadavku na nabídku.
 

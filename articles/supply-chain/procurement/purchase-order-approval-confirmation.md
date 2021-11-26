@@ -41,8 +41,8 @@ Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy s
 | Stav schválení | Popis                                                                      | Požadavek na změnu je povolen. |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Koncept           | Nákupní objednávka je ve stavu Návrh a nebyla odeslána ke schválení v pracovním postupu nákupní objednávky.     | Ne                        |
-| Probíhá kontrola       | Nákupní objednávka byla předložena ke schválení v pracovním postupu nákupní objednávky. Čeká se na schválení.       | Č.                        |
-| Odmítnuto        | Nákupní objednávka byla odmítnuta během procesu schvalování.                                 | Č.                        |
+| Probíhá kontrola       | Nákupní objednávka byla předložena ke schválení v pracovním postupu nákupní objednávky. Čeká se na schválení.       | Ne                        |
+| Odmítnuto        | Nákupní objednávka byla odmítnuta během procesu schvalování.                                 | Ne                        |
 | Schváleno        | Nákupní objednávka byla schválena.                                                             | Ano                       |
 | Potvrzeno       | Nákupní objednávka byla potvrzena. Nákupní objednávky nelze potvrdit, dokud nedojde k jejich schválení.        | Ano                       |
 | Finalizováno       | Nákupní objednávka byla dokončena. Nyní je finančně uzavřena a nemůže již být změněna. | Ne                        |

@@ -1,8 +1,8 @@
 ---
 title: Vytvoření dotazníků
-description: Tento článek popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Toto téma popisuje postup vytváření dotazníku.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755554"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729044"
 ---
 # <a name="create-questionnaires"></a>Vytvoření dotazníků
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
+Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 
 Pečlivě navržený dotazník pomáhá zvyšovat kvalitu dat, která shromažďujete. Díky promyšlenému návrhu můžete lépe a ve vhodný okamžik vybrat požadované otázky k dotazníku. Následující body vám pomohou naplánovat efektivní dotazník:
 
@@ -63,7 +63,7 @@ Některé předpoklady musí být stanoveny před vytvořením dotazníků, odpo
 
 ### <a name="questionnaire-types"></a>Typy dotazníku
 
-Typy dotazníků jsou povinné a musí být přiřazeny při vytváření dotazníku. Typy dotazníku umožňují snadněji spravovat a klasifikovat dotazníky. Typy dotazníků slouží ke klasifikaci dotazníků a jejich odlišení od sebe navzájem. Pokud máte například několik dotazníků, ze kterých můžete vybírat, můžete je filtrovat podle typu a usnadnit tak hledání specifického dotazníku. Následuje několik příkladů typů dotazníku:
+**Typy dotazníků** jsou povinné a musí být přiřazeny při vytváření dotazníku. **Typy dotazníků** umožňují snadněji spravovat a klasifikovat dotazníky. Typy dotazníků slouží ke klasifikaci dotazníků a jejich odlišení od sebe navzájem. Pokud máte například několik dotazníků, ze kterých můžete vybírat, můžete je filtrovat podle typu a usnadnit tak hledání specifického dotazníku. Následuje několik příkladů typů dotazníku:
 
 -   Rozvoj lidských zdrojů
 -   Průzkumy odběratelů
@@ -71,9 +71,9 @@ Typy dotazníků jsou povinné a musí být přiřazeny při vytváření dotazn
 
 ### <a name="question-types"></a>Typy otázek
 
-Typy otázek jsou povinné a musí být přiřazeny při vytváření otázky. 
+**Typy otázek** jsou povinné a musí být přiřazeny při vytváření otázky. 
 
-Typy otázek se používají k rozdělení otázek do kategorií pro účely vykazování. Typy otázek také usnadňují hledání otázek, protože typy slouží jako filtry na stránce **Otázky**. Následuje několik příkladů typů otázek:
+**Typy otázek** se používají k rozdělení otázek do kategorií pro účely vykazování. **Typy otázek** také usnadňují hledání otázek, protože typy slouží jako filtry na stránce **Otázky**. Následuje několik příkladů typů otázek:
 
 -   Lidské zdroje
 -   Řízení podniku
@@ -105,7 +105,7 @@ Chcete-li poskytnout seznam možných odpovědí pro uzavřené otázky, můžet
 
 Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí** na stránce **Otázky**. 
 
-Skupinu odpovědí lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
+**Skupinu odpovědí** lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
 
 > [!NOTE]
 > Pokud změníte textu odpovědi ve skupinách odpovědí, které již byly použity u vyplněných dotazníků, data může být obtížné vyhodnotit a výsledky dotazníku mohou být neplatné. Pokud musíte změnit skupinu odpovědí, zvažte vytvoření nové skupiny odpovědí namísto změny již existující skupiny. Skupiny odpovědí, které byly přiřazeny k určité otázce či odpovědi, nebo které byly zodpovězeny, není možné odstranit.
@@ -171,7 +171,7 @@ V dotazníku nelze odstranit následujících typy otázek:
 
 ### <a name="result-groups"></a>Skupiny výsledků
 
-Při připojování otázek k dotazníku jsou skupiny výsledků volitelné. 
+Při připojování otázek k dotazníku jsou **Skupiny výsledků** volitelné. 
 
 Skupiny výsledků se používají pro výpočet bodů a kategorizaci výsledků dotazníku. Při použití skupin výsledků můžete provádět následující úkoly:
 

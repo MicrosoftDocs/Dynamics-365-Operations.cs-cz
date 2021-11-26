@@ -1,8 +1,8 @@
 ---
-title: Metody platby
+title: Způsoby platby
 description: Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení.
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,14 +16,14 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713959"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779563"
 ---
-# <a name="payment-methods"></a>Metody platby
+# <a name="payment-methods"></a>Způsoby platby
 
 [!include [banner](includes/banner.md)]
 
@@ -42,10 +42,15 @@ Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služb
 
 K nastavení způsobů platby je třeba dokončit následující úlohy.
 
-1. Nastavte platební metody pro organizaci. Vytvořte metody platby, které jsou přijímány v rámci celé organizace.
+1. Nastavte způsoby platby pro organizaci. Vytvořte způsoby platby, které jsou přijímány v rámci celé organizace.
 2. Vytvoření celoorganizačních typů karet a čísel karet. Budou-li přijímány kreditní nebo debetní karty, je třeba vytvořit jeden typ úhrady pro karty a poté vytvořit celoorganizační typy karet a čísla karet.
-3. Nastavte platební metody obchodu. Přiřaďte způsoby plateb ke každému obchodu a poté zadejte konkrétní nastavení pro každý způsob platby.
-4. Nastavte karetní platební metody pro obchody. Pro jakékoli metody platby kartou, které obchod přijímá, dokončete nastavení karty.
+3. Nastavte způsoby platby obchodu. Přiřaďte způsoby plateb ke každému obchodu a poté zadejte konkrétní nastavení pro každý způsob platby.
+4. Nastavte karetní způsoby platby pro obchody. U jakýchkoli způsobů plateb kartou, které obchod přijímá, dokončete nastavení karty.
 
+## <a name="handle-change-tendering-for-payment-methods"></a>Zpracování úhrady vrácení hotovosti u platebních metod
+
+Některé způsoby platby nepodporují přímou úhradu vrácení hotovosti, pokud jsou finanční prostředky splatné zpět zákazníkům během transakcí pokladního místa. K úhradě vrácení hotovosti lze použít pouze způsoby platby **Hotovost** a **Měna**. 
+
+Chcete-li zpracovat případy, kdy je během transakce vyžadována úhrada vrácení hotovosti, ale platební metoda ji nepodporuje, můžete definovat způsob platby **Úhrada vrácení hotovosti**. Když pro obchod nastavujete způsoby platby obchodu, vyberte způsob, kterou chcete použít. Poté v oddíle **Změna** v poli **Úhrada vrácení hotovosti** zadejte způsob platby Úhrada vrácení hotovosti. Můžete například zadat **1** a tak vyjádřit, že hotovost lze použít jako možnost platby při úhradě vrácení hotovosti.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

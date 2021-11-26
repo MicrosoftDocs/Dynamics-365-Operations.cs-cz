@@ -2,7 +2,7 @@
 title: Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 description: Toto téma vysvětluje, jak konfigurovat Elektronickou fakturaci v Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757967"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779663"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 
@@ -73,6 +73,7 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace, které jso
 | Španělsko          | Španělská elektronická faktura (ES)      | Prodejní a projektové faktury |
 | Evropa         | Elektronická faktura PEPPOL            | Prodejní a projektové faktury PEPPOL |
 | Evropa         | Faktura dodavatele PEPPOL                | Import faktur dodavatele PEPPOL |
+| Saúdskoarabské království   | Saúdskoarabská elektronická faktura (SA)| Prodejní a projektové faktury |
 
 ### <a name="preview-features"></a>Funkce náhledu
 
@@ -197,6 +198,11 @@ Následující seznamy ukazují konfigurace formátu ER, které jsou k dispozici
 - Prodejní faktura (ES)
 - Projektová faktura (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudskoarabská (AT) elektronická faktura: Prodejní a projektové faktury pro Saudskou Arábii
+
+- Prodejní e-faktura (SA)
+- Projektová e-faktura (SA)
+
 Kromě konfigurací formátu ER, které jsou k dispozici ihned pro použití ve službě elektronické fakturace, můžete také vytvořit své vlastní konfigurace formátu ER. Konfigurace formátu, které jsou vytvořeny pro použití s funkcemi elektronické fakturace, však nepodporují přímý odkaz na tabulky Finance nebo Supply Chain Management nebo žádným z odpovídajících metadat. Podporovány jsou pouze odkazy na mapování modelu ER.
 
 ### <a name="actions"></a>Akce
@@ -274,7 +280,7 @@ Logické operátory:
 - A
 - nebo
 
-Typy operátorů:
+Typy operátoru:
 - Equal
 - Not equal
 - Greater than

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568848"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778298"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Pracovní postupy schválení deníku zásob
 
@@ -31,7 +31,7 @@ Toto téma popisuje, jak nastavit a používat pracovní postupy schválení den
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Zapnutí funkce pracovních postupů schválení deníku zásob
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul:** *Řízení zásob a skladu*
 - **Název funkce:** *Pracovní postup schválení deníku zásob*

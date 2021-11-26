@@ -333,9 +333,9 @@ Microsoft nabízí zákazníkům Finance and Operations tři plány podpory: Pre
 | Neomezené odesílání incidentů přestávky/opravy | Ano | Ano | Ano |
 | Nepřetržitý přístup přes LCS | Ano | Ano | Ano |
 | Doba odezvy na incident | Méně než jednu hodinu | Méně než jednu hodinu | Následující pracovní den |
-| Konzultační hodiny | Fondy se získávají na základě dohody. | Žádný | Žádný |
-| Specializovaný správce účtu podpory | Ano | Žádný | Žádný |
-| Specializovaný technik podpory | Zapojeno na základě samostatné dohody | Žádný | Žádný |
+| Konzultační hodiny | Fondy se získávají na základě dohody. | Ne | Ne |
+| Specializovaný správce účtu podpory | Ano | Ne | Ne |
+| Specializovaný technik podpory | Zapojeno na základě samostatné dohody | Ne | Ne |
 
 Další informace naleznete v [Přehled podpory](/power-platform/admin/support-overview).
 

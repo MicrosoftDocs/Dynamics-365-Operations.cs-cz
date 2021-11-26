@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569280"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778224"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ohlášení jako dokončené ze zařízení úkolového lístku
 
@@ -218,7 +218,7 @@ Pokročilé skladové procesy mohou pomocí rozměru registrační značky sledo
 
 Chcete-li používat funkce popsané v této části, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí následujících funkcí (v tomto pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
+1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
 1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
 1. Vytisknout štítek ze zařízení úkolového lístku
 

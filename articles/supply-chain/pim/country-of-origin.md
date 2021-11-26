@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e3b4a9dc25dc8130df7fa4799430c8358edcfe8e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567120"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777614"
 ---
 # <a name="country-of-origin"></a>Země/oblast původu
 
@@ -28,7 +28,7 @@ Mnoho organizací vydává certifikáty svým dodavatelům, aby zajistily, že p
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>Zapnutí funkci země původu
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul**: *Řízení informací o produktech*
 - **Název funkce:** *Funkce správy země původu*

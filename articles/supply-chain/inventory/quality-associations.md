@@ -344,7 +344,7 @@ Pokud ve výrobě nastavíte pole **Typ události** na hodnotu *Vykázat jako do
 </tr>
 <tr>
 <td>Fixní množství: 1</td>
-<td>Žádný</td>
+<td>Ne</td>
 <td>
 <p>Číslo dávky: Ne</p>
 <p>Sériové číslo: Ne</p>
@@ -399,7 +399,7 @@ Pokud ve výrobě nastavíte pole **Typ události** na hodnotu *Vykázat jako do
 </tr>
 <tr>
 <td>Fixní množství: 2</td>
-<td>Žádný</td>
+<td>Ne</td>
 <td>
 <p>Číslo dávky: Ano</p>
 <p>Sériové číslo: Ano</p>

@@ -32,9 +32,9 @@ Fyzický název: mshr_noyes
 
 Tento výčet poskytuje sadu možností pro typické booleovské vlastnosti ve virtuálních entitách Human Resources.
 
-| Hodnota | Štítek | popis |
+| Hodnota | Štítek | Popis |
 | --- | --- | --- |
-| 200000000 | Žádný | Č. |
+| 200000000 | Ne | Ne |
 | 200000001 | Ano | Ano. |
 
 ## <a name="see-also"></a>Viz také

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576033"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777582"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
 
@@ -77,7 +77,7 @@ Je-li tato funkce zapnuta, položky nabídky mobilního zařízení pro příjem
 - **Zobrazit podrobný souhrn** – během příjmu registrační značky se zaměstnanci zobrazí další stránka s úplnými informacemi o ASN.
 - **Přeskočit souhrn** – pracovníci nebudou moci zobrazit úplné informace o ASN. Pracovníci skladu také nebudou moci v průběhu procesu příjmu nastavovat dispoziční kód ani přidávat výjimky.
 
-Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Určete, zda se má zobrazit souhrnná stránka příjmu na mobilních zařízeních* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Abyste tuto funkci zpřístupnili ve svém systému, musí být zapnuta funkce *Určete, zda se má zobrazit souhrnná stránka příjmu na mobilních zařízeních* v okně [správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zabránit použití převodním příkazem expedovaných registračních značek v jiných skladech než je cílový Sklad
 

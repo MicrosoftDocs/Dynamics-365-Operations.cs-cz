@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ac6a9b4316fa260a86c124f86d04645625e9b808
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577425"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778002"
 ---
 # <a name="set-up-hazardous-materials"></a>Příprava nebezpečných materiálů
 
@@ -27,7 +27,7 @@ Chcete-li používat funkce nebezpečných materiálů, musíte nejprve nastavit
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Zapnutí funkce nebezpečných materiálů v systému
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul**: *Řízení informací o produktech*
 - **Název funkce** *Informace o produktu s nebezpečnými materiály a dokumentace expedice*

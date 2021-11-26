@@ -201,7 +201,7 @@ Nastavení v této části provádí právnická osoba. Musíte jej konfigurovat
 3. Na kartě **Výpočet** definujte očekávané pravidlo zaokrouhlování pro právnickou osobu. Další informace o logice zaokrouhlení viz [Pravidla zaokrouhlování výpočtu daně](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Na kartě **Zpracování chyb** definujte očekávanou metodu zpracování chyb pro právnickou osobu. K dispozici jsou tři možnosti:
 
-    - Žádný
+    - Ne
     - Upozornění
     - Chyba
 

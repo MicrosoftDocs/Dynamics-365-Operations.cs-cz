@@ -2,7 +2,7 @@
 title: Odstraňování problémů s nastavením Finance Insights
 description: Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512883"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752610"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Odstraňování problémů s nastavením Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 
@@ -53,6 +54,12 @@ Postupujte podle těchto kroků a v [centru pro správu Power Platform](https://
 
 1. Pokud používáte preview verzi Finance Insights, odeberte projekt DI, který je přidružen k šabloně **Výsledky přehledu plateb odběratele (CDS do Fin and Ops)**.
 2. Postupujte podle pokynů v části [Vytvoření projektu integrátoru dat](create-data-integrate-project.md). Použijte šablonu **Výsledky přehledu plateb odběratele (CDS na Fin a Ops 10.0.17 a novější)**.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Příznak: Když se pokusím otevřít AI Builder pomocí odkazů na stránce nastavení Předpovědi plateb zákazníka, proč se mi zobrazuje následující chybová zpráva: „Je nám líto, ale došlo k odpojení“?
+
+### <a name="resolution"></a>Řešení
+
+Uživatelé Dynamics 365 Finance musí mít uživatelský účet Microsoft Power Apps pro dané prostředí a tento uživatelský účet musí mít roli přizpůsobení systému. Správce systému Microsoft Power Apps může vytvořit uživatelský účet a přiřadit roli. Poté můžete přejít na <https://make.preview.powerapps.com/>, přihlásit se pomocí tohoto uživatelského účtu a zkusit odkazy znovu.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Příznak: Proč karta Předpověď hotovosti v pracovním prostoru Prognóza cashflow nezobrazuje žádná data?
 

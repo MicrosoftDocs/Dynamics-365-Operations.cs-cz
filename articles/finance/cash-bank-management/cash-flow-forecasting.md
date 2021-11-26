@@ -2,7 +2,7 @@
 title: Prognóza cashflow
 description: Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547948"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752897"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Nástroje prognózy cashflow můžete používat k analýze nadcházejících měnových a cashflow požadavků, abyste mohli dobře odhadovat nastávající potřeby společnosti na hotovost. K získání prognózy cashflow je nutné dokončit následující kroky:
 
@@ -93,9 +94,12 @@ Položky registru rozpočtu lze do prognózy cashflow zahrnout individuálně pr
 Prognózy nabídky a poptávky zásob lze zahrnout do prognóz cashflow. Na kartě **Řízení zásob** stránky **Nastavení prognózy cashflow** vyberte model prognózy, který má být zahrnut do prognózy cashflow. Zahrnutí do prognózy cashflow lze u jednotlivých řádků prognózy nabídky a poptávky přepsat.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Nastavení dimenzí pro prognózu cashflow
-Nová karta na stránce **Nastavení prognózy cashflow** umožňuje řídit, jaké finanční dimenze se mají použít pro filtrování v pracovním prostoru **Prognóza cashflow**. Tato karta se zobrazí, pouze pokud je povolena funkce prognózy cashflow. 
+Nová karta na stránce **Nastavení prognózy cashflow** umožňuje řídit, které finanční dimenze se používají pro filtrování v pracovním prostoru **Prognóza cashflow**. Tato karta se zobrazí, pouze pokud je povolena funkce prognózy cashflow ve Finance Insights. 
 
 Na kartě **Dimenze** vyberte ze seznamu dimenze, které se mají použít pro filtrování, a pomocí kláves se šipkami je přesuňte do pravého sloupce. Pro filtrování dat prognózy cashflow lze vybrat pouze dvě dimenze. 
+
+### <a name="setting-up-external-source"></a>Nastavení externího zdroje
+Externí data lze zadávat nebo importovat do prognóz peněžních toků. Před zadáním nebo importem externích dat je třeba nastavit externí zdroje. Na kartě **Vnější zdroj** nastavte externí kategorie peněžních toků. Kategorie může být buď **Odchozí** nebo **Příchozí**. **Likvidita** by měla být vybrána jako typ účtování. V mřížce **Nastavení právnické osoby** vyberte právnické osoby a odpovídající hlavní účty, na které se vztahují kategorie externích peněžních toků.
 
 ### <a name="project-management-and-accounting"></a>Řízení projektů a účetnictví
 

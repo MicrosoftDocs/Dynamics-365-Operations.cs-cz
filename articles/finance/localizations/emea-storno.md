@@ -119,7 +119,7 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Má Dáti</td>
-<td class="column-2">Žádný</td>
+<td class="column-2">Ne</td>
 <td class="column-3">0. &gt;</td>
 <td class="column-4" align="right">Množství</td>
 <td class="column-5" align="right">Množství</td>
@@ -128,8 +128,8 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 <td class="column-8">Zvýšení</td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Kreditní</td>
-<td class="column-2">Žádný</td>
+<td class="column-1"> Kredit</td>
+<td class="column-2">Ne</td>
 <td class="column-3">0. &lt;</td>
 <td class="column-4" align="right">-Částka</td>
 <td class="column-5" align="right">Množství</td>

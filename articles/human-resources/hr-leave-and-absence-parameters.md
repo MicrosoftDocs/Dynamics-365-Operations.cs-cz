@@ -1,8 +1,8 @@
 ---
 title: Konfigurace parametrů pracovního volna a absence
-description: Definujte parametry lidských zdrojů pro pracovní volno a absenci v Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: Toto téma popisuje, jak definovat parametry lidských zdrojů pro dovolenou a nepřítomnost v Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777952"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728850"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurace parametrů pracovního volna a absence
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Resourcesje vhodné ověřit nastavení všech souvisejících parametrů lidských zdrojů, včetně následujících:
+Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Resources je vhodné ověřit nastavení všech souvisejících **Parametrů lidských zdrojů**, včetně následujících:
 
 - Číselná řada pro požadavky na pracovní volno
 - Nastavení zákona Opuštění z rodinných a lékařských důvodu (FMLA)
@@ -74,7 +74,7 @@ Před nastavením plánů pracovního volna a absencí v Dynamics 365 Human Reso
 
     - Vyberte **Výpočet zůstatku**, chcete-li zobrazit zůstatky k dnešnímu dni nebo k období časového rozlišení. Vyberete-li **Zůstatek k dnešnímu dni**, zůstatek zobrazí součet všech časově rozlišených položek, úprav a požadavků k dnešnímu dni. Pokud vyberete možnost **Zůstatek k období časového rozlišení**, zůstatek zobrazí součet všech časově rozlišených položek, úprav a požadavků k období časového rozlišení, které je definováno frekvencí plánu volna. 
 
-    - Nastavte čas zahájení dávkové úlohy vypršení platnosti převodu do dalšího období.  
+    - Nastavte **Čas zahájení** dávkové úlohy **Vypršení platnosti převodu do dalšího období**.  
     
     - Vyberte **Ano** pro **Umožnit zaměstnancům koupi pracovního volna** a **Umožnit zaměstnancům prodej pracovního volna**. Pokud vyberete **Ano** pro tyto možnosti, můžete vytvořit zásady koupi a prodeje pracovního volna a umožnit zaměstnancům odesílat žádosti o koupi a prodej pracovního volna.
 

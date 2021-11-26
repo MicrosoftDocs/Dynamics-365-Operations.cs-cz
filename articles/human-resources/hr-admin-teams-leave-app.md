@@ -1,8 +1,8 @@
 ---
 title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
-author: andreabichsel
-ms.date: 02/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3b717cf2fb8663ed8e4981981d563672c9e645c4f9b592ee1896cfef4236396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772710"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771499"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Aplikace Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžou lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
+Aplikace Microsoft Dynamics 365 Human Resources v Microsoft Teams umožňuje zaměstnancům rychle požádat o volno a zobrazit informace o jejich zůstatku volna v Microsoft Teams. Zaměstnanci mohou komunikovat s robotem a vyžádat si informace. Karta **Volno** poskytuje podrobnější informace. Kromě toho můžou lidem posílat informace o svém nadcházejícím volnu v týmech a chatech mimo aplikaci Human Resources.
 
 ![Robot aplikace pracovního volna Human Resources Teams.](./media/hr-teams-leave-app-bot.png)
 
@@ -106,7 +106,7 @@ Následující pracovní položky jsou určeny pro budoucí vydání:
 | --- | --- |
 | Zůstatek je nesprávný při zadávání volna pro budoucí datum. | Prognózy ještě nejsou k dispozici. Zůstatek se zobrazuje pro aktuální datum. |
 | Nelze zrušit požadavek ve stavu **Probíhá kontrola**. | Tato funkce není momentálně podporována a bude přidána v budoucím vydání. |
-| Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno v parametrech pracovního volna a absence. |
+| Informace o zůstatku se počítají od dnešního dne. | Systém aktuálně nezobrazuje zůstatky od období časového rozlišení, i když je nakonfigurováno na astránce **Parametry pracovního volna a absence**. |
 
 ## <a name="troubleshooting"></a>Řešení potíží
 
@@ -130,7 +130,7 @@ Pokud se uživateli při pokusu o schválení žádostí o dovolenou v aplikaci 
 
 2. Ujistěte se, že jsou uživatelé přihlášeni ke kartě **Chaty** se stejnými přihlašovacími údaji, které používají pro schvalování žádostí o dovolenou. Pomocí zpráv „odhlásit se“ a poté „přihlásit“ se přihlaste se správnými přihlašovacími údaji.
 
-3. Pokud problém přetrvává, zkontrolujte stav dávkové úlohy systému Business Events jako správce systému. Pokud je ve fázi čekání nebo provádění, zkuste to znovu za několik minut. Pokud se stav nezmění, přihlaste se na lístek podpory, aby náš tým mohl problém vyřešit.
+3. Pokud problém přetrvává, zkontrolujte stav dávkové úlohy **systému Business Events** jako správce systému. Pokud je ve fázi **čekání** nebo **provádění**, zkuste to znovu za několik minut. Pokud se stav nezmění, přihlaste se na lístek podpory, aby náš tým mohl problém vyřešit.
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
@@ -138,7 +138,7 @@ Pokud se uživateli při pokusu o schválení žádostí o dovolenou v aplikaci 
 
 S robotem Dynamics 365 Human Resources v aplikaci Microsoft Teams jsou textové vstupy uživatele analyzovány pro porozumění základním dotazům/záměrům. Vstup uživatele, například „Vyhledat účet Contoso“, je přesměrován na jednu ze služeb Cognitive Services společnosti Microsoft nazvanou Language Understanding Intelligent Service (LUIS). Přečtěte si více o LUIS  [zde](https://www.luis.ai/). Služba LUIS ujasňuje nebo chápe záměr vstupu uživatele (v tomto případě je záměrem najít informace) a cílovou entitu (v tomto případě je zamýšlenou entitou účet s názvem Contoso). Tyto informace jsou poté předány do řešení  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) společnosti Microsoft, které interaguje s daty z Dynamics 365 Human Resources a načte požadované informace pro uživatelský dotaz.
 
-Instalací a umožněním přístupu k používání robota souhlasíte s tím, že umožníte službě LUIS a rámci robota Azure zpracovat záměr za vstupem, což má za následek vylepšenou konverzační uživatelskou zkušenost. Služba LUIS a rámec robota Azure mohou mít ve srovnání s Dynamics 365 Human Resources různé úrovně shody. Zatímco služba LUIS má přístup pouze k uživatelským dotazům a není určena k připojení k datům nebo účtu uživatele Dynamics 365 Human Resources, uživatel robota Dynamics 365 Human Resources může dobrovolně zadat dotaz obsahující zákaznická data, osobní údaje nebo jiná data a takový obsah dotazu by mohl být zaslán do služby LUIS a do rámce robota Azure. 
+Instalací a umožněním přístupu k používání robota souhlasíte s tím, že umožníte službě LUIS a rámci robota Azure zpracovat záměr za vstupem, což má za následek vylepšenou konverzační uživatelskou zkušenost. Služba LUIS a rámec robota Azure mohou mít ve srovnání s Dynamics 365 Human Resources různé úrovně shody. Zatímco služba LUIS má přístup pouze k uživatelským dotazům a není určena k připojení k datům nebo účtu uživatele Dynamics 365 Human Resources, uživatel robota Dynamics 365 Human Resources může dobrovolně zadat dotaz obsahující zákaznická data, osobní údaje nebo jiná data a takový obsah dotazu by mohl být zaslán do služby LUIS a do Azure Bot Framework. 
 
 Obsah dotazů a zpráv uživatele je v systému LUIS uchováván maximálně 30 dní, je šifrován a nepoužívá se pro školení ani zlepšení služeb. Přečtěte si více o Cognitive Services  [zde](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 

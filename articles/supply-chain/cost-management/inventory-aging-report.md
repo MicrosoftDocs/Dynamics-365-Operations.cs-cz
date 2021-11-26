@@ -42,7 +42,7 @@ Příklad systému obsahuje následující nastavení dimenzí úložiště.
 | Jméno      | Aktivní | Fyzické zásoby | Finanční zásoby |
 |-----------|--------|--------------------|---------------------|
 | Lokalita      | Ano    | Ano                | Ano                 |
-| Sklad | Ano    | Ano                | Žádný                  |
+| Sklad | Ano    | Ano                | Ne                  |
 
 ### <a name="inventory-model"></a>Model zásob
 

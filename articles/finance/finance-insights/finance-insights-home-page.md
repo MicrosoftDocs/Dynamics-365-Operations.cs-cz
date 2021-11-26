@@ -2,7 +2,7 @@
 title: Domovská stránka Finance Insights
 description: Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,24 +17,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386379"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752849"
 ---
 # <a name="finance-insights-home-page"></a>Domovská stránka Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení. Když jsou tyto nové funkce kombinovány s automatizací plateb a inkas od dodavatelů, poskytují bohatý a inteligentní finanční systém, který řídí rozhodování a pomáhá vám podniknout kroky k efektivní reakci na aktuální a očekávané obchodní výzvy.
-
-> [!NOTE]
-> Preview finančních přehledů je k dispozici pro nasazení v USA, Kanadě, Spojeném království, Evropě, Asii a Tichomoří, Austrálii a Novém Zélandu. Microsoft postupně přidává podporu pro další regiony. Chcete-li povolit Finance Insights na produkčním prostředí, je třeba nejprve aktivovat funkce [Export do Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) v produkčním prostředí.
+Finance Insights poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení. Když jsou tyto nové funkce kombinovány s automatizací plateb a inkas od dodavatelů, poskytují bohatý a inteligentní finanční systém, který řídí rozhodování a pomáhá vám podniknout kroky k efektivní reakci na aktuální a očekávané obchodní výzvy.
 
 > [!NOTE]
-> Tato funkce je nabízena jako sada funkcí náhledu. Jako funkci náhledu byste neměli používat výsledné modely strojového učení k řízení nebo ovlivňování vašich obchodních rozhodnutí nebo návrhů rozpočtu. Vaše používání této funkce se řídí [Doplňkovými podmínkami použití](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Preview Finance Insights je k dispozici pro nasazení v USA, Kanadě, Spojeném království, Evropě, Asii a Tichomoří, Japonsku, Austrálii a Novém Zélandu. Microsoft postupně přidává podporu pro další regiony.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -50,28 +48,15 @@ Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí úro
 
 ### <a name="version-requirements"></a>Požadavky verzí
 
-Tento dokument se vztahuje na verzi 10.0.11 aplikace Finance and Operations (aktualizace platformy 35) a novější verze.
+Toto téma se týká Microsoft Dynamics 365 Finance verze 10.0.21 a novější.
 
 ### <a name="historical-data-requirements"></a>Požadavky na historické údaje
 
-K správnému trénování modelu strojového učení, který se používá pro funkci předpovědi plateb zákazníka, je zapotřebí alespoň jeden rok faktur zákazníka.
+K správnému trénování modelu strojového učení, který se používá pro funkci předpovědi plateb zákazníka, je zapotřebí alespoň jeden rok faktur zákazníka. Pro prognózy peněžních toků se doporučují tři roky historických dat. Pro inteligentní návrhy rozpočtu se doporučují tři roky historického rozpočtu a/nebo skutečnosti.
 
-### <a name="role-and-permission-requirements"></a>Role a požadavky na povolení
+## <a name="configure-finance-insights"></a>Konfigurace Finance insights
 
-Budou provedeny změny Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps a Azure. V těchto prostředích jsou vyžadována správná oprávnění. Zde jsou uvedeny některé příklady změn, které budou provedeny:
-
-- Bude vytvořeno nové prostředí v Microsoft Power Platform.
-- Účet úložiště, trezor klíčů a aplikace se vytvoří v Azure.
-- Správce klienta Active Directory bude muset autorizovat aplikaci AI Builder pro přístup k datovému jezeru.
-- Tato funkce bude zapnuta v Dynamics 365.
-
-Znalost procesu vytváření a správy prostředků v Azure, Microsoft Dataverse a LCS vám budou nápomocny při dokončení tohoto procesu.
-
-## <a name="configure-finance-insights"></a>Nakonfigurujte Finanční přehledy
-
-Než budete moci používat Finanční přehledy, musíte dokončit některé konfigurační kroky. Další informace o postupu konfigurace Finance Insights najdete v:
-  - Pro verze do 10.0.19: [Konfigurace pro Finance Insights (Preview) – verze až 10.0.19](configure-for-fin-insites.md).
-  - Pro verze 10.0.20 a vyšší: [Konfigurace pro Finance Insights (náhled) - verze 10.0.20 a vyšší](configure-for-fin-insites-PubPrvw.md).
+Než budete moci používat Finance Insights, musíte dokončit některé konfigurační kroky. Pro další informace o tom, jak konfigurovat Finanční přehledy, viz [Konfigurace pro Finanční přehledy](configure-for-fin-insites.md).
 
 ## <a name="create-a-data-integrator-project"></a>Vytvořte projekt integrátora dat
 
@@ -97,17 +82,14 @@ Funkce Rozpočtové návrhy používá k vygenerování návrhu rozpočtu model 
 
 ### <a name="using-customer-payment-predictions"></a>Používání předpovědí plateb od zákazníka
 
-Inteligentní předpovídání peněžních toků je postaveno na existující funkčnosti předpovídání peněžních toků v Dynamics 365 Finance. Chcete-li zkontrolovat stávající možnosti, přečtěte si [Prognózu peněžních toků](../cash-bank-management/cash-flow-forecasting.md).
-
-- Pokud se chcete dozvědět, jak předpovědi plateb od zákazníka mohou poskytnout informace potřebné k proaktivnímu shromažďování, přečtěte si téma [Použijte předpovědi plateb zákazníka](use-customer-payment-predictions.md).
+- Pokud se chcete dozvědět, jak předpovědi plateb od zákazníka mohou poskytnout informace potřebné k proaktivnímu začátku shromažďování, přečtěte si téma [Použijte předpovědi plateb zákazníka](use-customer-payment-predictions.md).
 - Informace, které vám pomohou vyhodnotit účinnost predikčního modelu po zahájení používání této funkce, najdete v tématu [Vyhodnoťte model predikce počátečních plateb zákazníka](evaluate-payment-prediction.md).
 - Informace, které vám mohou pomoci upravit data, která se používají k sestavení predikce, a tím zlepšit její účinnost, najdete v části [Vylepšete predikční model](improve-model.md).
-
-Informace o výsledcích predikčních modelů AI naleznete ve [Výsledcích modelů strojového učení](confusion-matrix.md).
+- Informace o výsledcích predikčních modelů AI naleznete ve [Výsledcích modelů strojového učení](confusion-matrix.md).
 
 ### <a name="using-cash-flow-forecasts"></a>Použití prognóz cashflow
 
-Možnost předpovědi peněžních toků vám pomůže přesněji odhadnout vaši peněžní pozici. 
+Možnost předpovědi peněžních toků vám pomůže přesněji odhadnout vaši peněžní pozici. Inteligentní předpovídání peněžních toků je postaveno na existující funkčnosti předpovídání peněžních toků v Dynamics 365 Finance. Chcete-li zkontrolovat stávající možnosti, přečtěte si [Prognózu peněžních toků](../cash-bank-management/cash-flow-forecasting.md).
 
 - Informace o nových funkcích v předpovědích peněžních toků najdete v části [Předpověď peněžních toků](cash-flow-forecast-intro.md).
 - Informace o importu externích dat, která chcete zahrnout do prognózy peněžních toků, naleznete v tématu [V předpovědích peněžních toků použijte externí data](external-data-in-cash-flow.md). 
@@ -120,6 +102,6 @@ Informace o urychlení tvorby rozpočtu viz [Návrhy rozpočtu](budget-proposals
 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 
-Zašlete prosím e-mail na [Přehledy plateb zákazníka (Preview)](mailto:fiap@microsoft.com), pokud máte zájem o poskytnutí názoru nebo potřebujete podporu.
+Pokud máte zájem o poskytnutí zpětné vazby nebo pokud vyžadujete technickou podporu, zašlete prosím e-mail na [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

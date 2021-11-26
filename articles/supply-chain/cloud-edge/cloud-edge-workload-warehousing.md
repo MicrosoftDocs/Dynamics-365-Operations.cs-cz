@@ -187,34 +187,34 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 
 | Zpracovat                                                      | Centrum | Pracovní zatížení provedení skladu na jednotce škálování |
 |--------------------------------------------------------------|-----|------------------------------|
-| Zpracování zdrojového dokumentu                                   | Ano | Žádný |
-| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Žádný |
-| Uvolnit do skladu                                         | Ano | Žádný |
-| Plánovaný cross docking                                        | Žádný  | Žádný |
+| Zpracování zdrojového dokumentu                                   | Ano | Ne |
+| Zpracování správy nakládky a přepravy                | Ano, ale pouze procesy plánování vytížení. Zpracování správy dopravy není podporováno  | Ne |
+| Uvolnit do skladu                                         | Ano | Ne |
+| Plánovaný cross docking                                        | Ne  | Ne |
 | Konsolidace dodávky                                       | Ano, při použití plánování vytížení | Ano |
-| Zpracování vlny dodávky                                     | Žádný  |Ano, kromě **Stavba a třídění nákladu** |
-| Udržování zásilek pro vlnu                                  | Žádný  | Ano|
-| Zpracování skladových prací (vč. tisku registrační značky)        | Žádný  | Ano, ale pouze pro dříve uvedené podporované funkce |
-| Výdej seskupení                                              | Žádný  | Ano|
-| Ruční zpracování balení, vč. „Zpracování vychystávání zabaleného kontejneru“ | Žádný <P>Některé zpracování lze provést po počátečním procesu vychystávání zpracovaném jednotkou škálování, ale nedoporučuje se to kvůli následujícím blokovaným operacím.</p>  | Žádný |
-| Odebrat kontejner ze skupiny                                  | Žádný  | Žádný |
-| Zpracování odchozího třídění                                  | Žádný  | Žádný |
+| Zpracování vlny dodávky                                     | Ne  |Ano, kromě **Stavba a třídění nákladu** |
+| Udržování zásilek pro vlnu                                  | Ne  | Ano|
+| Zpracování skladových prací (vč. tisku registrační značky)        | Ne  | Ano, ale pouze pro dříve uvedené podporované funkce |
+| Výdej seskupení                                              | Ne  | Ano|
+| Ruční zpracování balení, vč. „Zpracování vychystávání zabaleného kontejneru“ | Ne <P>Některé zpracování lze provést po počátečním procesu vychystávání zpracovaném jednotkou škálování, ale nedoporučuje se to kvůli následujícím blokovaným operacím.</p>  | Ne |
+| Odebrat kontejner ze skupiny                                  | Ne  | Ne |
+| Zpracování odchozího třídění                                  | Ne  | Ne |
 | Tisk dokumentů souvisejících se zátěží                           | Ano | Ano|
-| Přepravní doklad a generování ASN                            | Žádný  | Ano|
-| Potvrzení zásilky                                             | Žádný  | Ano|
-| Potvrzení zásilky s příkazem „Potvrdit a převést“            | Žádný  | Žádný |
-| Zpracování dodacího listu a fakturace                        | Ano | Žádný |
-| Krátký výběr (prodejní a převodové objednávky)                    | Žádný  | Ano, bez odstranění rezervací zdrojových dokumentů|
-| Výběr nadměrného množství (prodejní a převodové objednávky)                     | Žádný  | Ano|
-| Změna pracovních míst (prodejní a převodní objednávky)         | Žádný  | Ano|
-| Kompletní práce (prodejní a převodní objednávky)                    | Žádný  | Ano|
+| Přepravní doklad a generování ASN                            | Ne  | Ano|
+| Potvrzení zásilky                                             | Ne  | Ano|
+| Potvrzení zásilky s příkazem „Potvrdit a převést“            | Ne  | Ne |
+| Zpracování dodacího listu a fakturace                        | Ano | Ne |
+| Krátký výběr (prodejní a převodové objednávky)                    | Ne  | Ano, bez odstranění rezervací zdrojových dokumentů|
+| Výběr nadměrného množství (prodejní a převodové objednávky)                     | Ne  | Ano|
+| Změna pracovních míst (prodejní a převodní objednávky)         | Ne  | Ano|
+| Kompletní práce (prodejní a převodní objednávky)                    | Ne  | Ano|
 | Vytisknout sestavu práce                                            | Ano | Ano|
-| Štítek vlny                                                   | Žádný  | Ano|
-| Rozdělení práce                                                   | Žádný  | Ano|
-| Zpracování práce - režie 'Naložení přenosu'            | Žádný  | Žádný |
-| Snížit vyskladněné množství                                       | Žádný  | Žádný |
-| Stornovat práci                                                 | Žádný  | Žádný |
-| Zrušit potvrzení expedice                                | Žádný  | Ano|
+| Štítek vlny                                                   | Ne  | Ano|
+| Rozdělení práce                                                   | Ne  | Ano|
+| Zpracování práce - režie 'Naložení přenosu'            | Ne  | Ne |
+| Snížit vyskladněné množství                                       | Ne  | Ne |
+| Stornovat práci                                                 | Ne  | Ne |
+| Zrušit potvrzení expedice                                | Ne  | Ano|
 
 ### <a name="inbound"></a>Příchozí
 
@@ -222,31 +222,31 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 
 | Zpracovat                                                          | Centrum | Pracovní zatížení provedení skladu na jednotce škálování<BR>*(Položky označené „Ano“ platí pouze pro skladové objednávky)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Zpracování&nbsp;zdrojového&nbsp;dokumentu                             | Ano | Žádná |
-| Zpracování správy nakládky a přepravy                    | Ano | Žádná |
-| Náklady na doručení a příjem přepravovaného zboží                       | Ano | Žádná |
-| Potvrzení příchozí dodávky                                    | Ano | Žádná |
-| Uvolnění nákupní objednávky do skladu (zpracování objednávky skladu) | Ano | Žádný |
-| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p> | Ano | Žádný |
+| Zpracování&nbsp;zdrojového&nbsp;dokumentu                             | Ano | Ne |
+| Zpracování správy nakládky a přepravy                    | Ano | Ne |
+| Náklady na doručení a příjem přepravovaného zboží                       | Ano | Ne |
+| Potvrzení příchozí dodávky                                    | Ano | Ne |
+| Uvolnění nákupní objednávky do skladu (zpracování objednávky skladu) | Ano | Ne |
+| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p> | Ano | Ne |
 | Přijetí zboží nákupní objednávky a odložení                       | <p>Ano,&nbsp;když&nbsp;tam&nbsp;není skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p> |
 | Přijetí řádku nákupní objednávky a odložení                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p></p> |
-| Přijatá a odložená vratka                              | Ano | Žádný |
+| Přijatá a odložená vratka                              | Ano | Ne |
 | Přijetí a odložení smíšené registrační značky                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano |
-| Přijetí položky nákladu                                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Přijetí a odložení registrační značky                             | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Přijetí a odložení zboží převodního příkazu                       | Ano | Žádný |
-| Převést řádek nákupní objednávky a odložení                       | Ano | Žádný |
+| Přijetí položky nákladu                                              | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Přijetí a odložení registrační značky                             | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Přijetí a odložení zboží převodního příkazu                       | Ano | Ne |
+| Převést řádek nákupní objednávky a odložení                       | Ano | Ne |
 | Zrušení práce (příchozí)                                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, ale pouze, když možnost <b>Zrušit registraci potvrzení při rušení práce</b> (na stránce <b>Parametry správy skladu</b>) není podporována.</p> |
-| Zpracování příjmu produktu z nákupní objednávky                        | Ano | Žádný |
+| Zpracování příjmu produktu z nákupní objednávky                        | Ano | Ne |
 | Příjem nákupní objednávky s nedostatečným doručením                      | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano, ale pouze podáním žádosti o zrušení z centra |
 | Příjem nákupní objednávky s nadměrným doručením                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ano  |
-| Příjem s vytvořením práce *Cross docking*                 | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Příjem s vytvořením práce *Objednávka kvality*                  | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Příjem s vytvořením práce *Vzorek položky kvality*          | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Příjem s vytvořením práce *Kvalita v kontrole kvality*       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Příjem s vytvořením objednávky kvality                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Žádný |
-| Zpracování práce - Režie *Cluster putaway*                 | Ano | Žádný |
-| Zpracování práce s *Krátký výběr*                               | Ano | Žádný |
+| Příjem s vytvořením práce *Cross docking*                 | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Příjem s vytvořením práce *Objednávka kvality*                  | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Příjem s vytvořením práce *Vzorek položky kvality*          | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Příjem s vytvořením práce *Kvalita v kontrole kvality*       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Příjem s vytvořením objednávky kvality                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
+| Zpracování práce - Režie *Cluster putaway*                 | Ano | Ne |
+| Zpracování práce s *Krátký výběr*                               | Ano | Ne |
 | Načtení registrační značky                                           | Ano | Ano |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Skladové operace a zpracování výjimek
@@ -261,20 +261,20 @@ Následující tabulka ukazuje, které funkce skladových operací a zpracován�
 | Změnit sklad                                   | Ano | Ano                          |
 | Přesun                                           | Ano | Ano                          |
 | Pohyb podle šablony                               | Ano | Ano                          |
-| Převod skladu                                 | Ano | Žádný                           |
-| Vytvoření převodního příkazu z aplikace skladu           | Ano | Žádný                           |
+| Převod skladu                                 | Ano | Ne                           |
+| Vytvoření převodního příkazu z aplikace skladu           | Ano | Ne                           |
 | Úprava (příchozí/odchozí)                                | Ano | Ano, ale ne pro scénář úpravy, kdy je třeba rezervaci inventáře odstranit pomocí nastavení **Odebrat rezervace** na typech úprav zásob</p>                           |
-| Změna stavu zásob                            | Ano | Žádný                           |
+| Změna stavu zásob                            | Ano | Ne                           |
 | Zpracování nesrovnalostí cyklické inventury a počítání | Ano | Ano                           |
 | Opakovaný tisk štítku (tisk registrační značky)             | Ano | Ano                          |
-| Sestavení registrační značky vozidla                                | Ano | Žádný                           |
-| Seskupení registračních značek                                | Ano | Žádný                           |
-| Zabalit do vnořených registračních značek                                | Ano | Žádný                           |
-| Přihlášení řidiče                                    | Ano | Žádný                           |
-| Odhlášení řidiče                                   | Ano | Žádný                           |
+| Sestavení registrační značky vozidla                                | Ano | Ne                           |
+| Seskupení registračních značek                                | Ano | Ne                           |
+| Zabalit do vnořených registračních značek                                | Ano | Ne                           |
+| Přihlášení řidiče                                    | Ano | Ne                           |
+| Odhlášení řidiče                                   | Ano | Ne                           |
 | Změnit kód dispozice dávky                      | Ano | Ano                          |
 | Zobrazit otevřený seznam úkolů                             | Ano | Ano                          |
-| Konsolidovat registrační značky                         | Ano | Žádný                           |
+| Konsolidovat registrační značky                         | Ano | Ne                           |
 | Zpracování doplnění min./max. a prahové hodnoty zóny| Ano <p>Nedoporučuje se zahrnout stejná umístění jako součást dotazů</p>| Ano                          |
 | Slotting procesu doplnění                  | Ano  | Ano<p>Pamatujte, že nastavení musí být provedeno na jednotce škálování</p>                           |
 | Práce blokování a odblokování                             | Ano | Ano                          |
@@ -290,8 +290,8 @@ Následující tabulka shrnuje, které provozní scénáře správy skladu jsou 
 |---------|-----|------------------------------|
 | Ohlásit jako dokončené a vyskladnit dokončené zboží | Ano | Ano |
 | Vyskladnění vedlejšího produktu | Ano | Ano |
-| <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Žádný |
-| Doplnění surovin | Žádný | Žádný |
+| <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Ne |
+| Doplnění surovin | Ne | Ne |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Udržování jednotek škálování pro provedení skladu
 

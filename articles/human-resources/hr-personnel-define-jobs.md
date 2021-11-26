@@ -1,8 +1,8 @@
 ---
 title: Definování nových pracovních míst
 description: Tato úloha se zaměřuje na vytváření nové úlohy.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 088f49d7887616300b4a9ea07f91598d65afbf6899e678b2c5c51797b4966ef0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 844661db4798c23b0b25d4ce7c2cc1862893a5dc
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770449"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771355"
 ---
 # <a name="define-new-jobs"></a>Definování nových pracovních míst
 
@@ -28,48 +28,54 @@ ms.locfileid: "6770449"
 
 Tato úloha se zaměřuje na vytváření nové úlohy. Ta bude dokončena pomocí manuálního zadávání a kopírování z funkce šablony. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tato úloha je určena pro odborníka na lidské zdroje.
 
-1. Přejděte k nabídce Lidské zdroje > Úlohy > Úlohy.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Úloha.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. Vyberte standardní název, který se použije pro úlohu. 
-    * Zadaný název se použije jako výchozí pro nové pozice přiřazené k úloze.  
+1. Přejděte k nabídce **Lidské zdroje \> Úlohy \> Úlohy**.
+2. Zvolte **Nové**.
+3. Zadejte hodnotu do pole **Úloha**.
+4. V poli **Popis** zadejte hodnotu.
+5. Vyberte standardní název, který se použije pro úlohu.
+
+    Tento název se použije jako výchozí hodnota pro nové pozice, které jsou přiřazené k úloze.
+
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-7. Klikněte na odkaz na vybraném řádku v seznamu.
-8. Ve skupině Maximální počet pozic vyberte Maximální pozice.
+7. Vyberte odkaz na vybraném řádku v seznamu.
+8. Ve skupině **Maximální počet pozic** vyberte **Maximální pozice**.
 9. Zadejte maximální počet pozic. 
-    * Přiřazení pozic nebude možné nad maximální hodnotu zadanou v tomto poli.  
-10. Přepněte rozšíření oddílu Popis.
-11. Do pole Poznámka zadejte standardní popis úlohy.
-    * Popis se použije pro všechny pozice přiřazené ke zde definované úloze.  
-12. Přepněte rozšíření oddílu Klasifikace úlohy.
-13. Vyberte pracovní funkci, která bude použita ve standardním vykazování v rámci modulu Lidské zdroje.
-14. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-15. Klikněte na odkaz na vybraném řádku v seznamu.
-16. Vyberte typ úlohy pro další klasifikaci úlohy ve vaší organizaci. 
-    * Typy úloh lze použít při vytváření sestav v celém modulu Lidské zdroje.  
-17. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-18. Klikněte na odkaz na vybraném řádku v seznamu.
-19. Přepněte rozšíření oddílu Kompenzace.
-20. Vyberte úroveň kompenzace.
-    * Úroveň kompenzace bude definovat minimální a maximální kompenzaci, které může zaměstnanec u úlohy dosáhnout. Pravidla kompenzace určí, zda mohou být kompenzace zaměstnance mimo rozsah.  
-21. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-22. Klikněte na odkaz na vybraném řádku v seznamu.
-23. Přepněte rozšíření oddílu Kvalifikace.
-    * Všimněte si, že pole na pevné záložce Kvalifikace, Vzdělání a Certifikáty jsou prázdná. Po zkopírování informací ze šablony pozice budou informace v těchto polích zadány v jediném kroku.   
-24. Klikněte na položku Uložit.
-25. Klikněte na tlačítko Kopírovat z.
-26. Klikněte na Kopírovat ze šablony.
-27. V poli Šablona práce kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-28. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-29. Klikněte na odkaz na vybraném řádku v seznamu.
-30. Klikněte na možnost Poznámka.
-    * Do vybrané úlohy budou zkopírovány pouze ty položky, které vyberete.    
-31. Klikněte na tlačítko OK.
-32. Přepněte rozšíření oddílu Certifikáty.
-33. Přepněte rozšíření oddílu Vzdělání.
-34. Klikněte na položku Uložit.
 
+    Přiřazení pozic, které překročí tento počet, nebudou povoleny.
 
+10. V sekci **Popis**, v poli **Poznámka** vložte **Zadejte standardní popis úlohy**.
+
+    Tento popis se použije pro všechny pozice, které jsou přiřazené ke zde definované úloze.
+
+11. V sekci **Klasifikace úloh** vyberte pracovní funkci, která bude použita ve standardním vykazování v rámci modulu Lidské zdroje.
+12. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+13. Vyberte odkaz na vybraném řádku v seznamu.
+14. V poli **Typ úlohy** vyberte typ úlohy pro další klasifikaci úlohy ve vaší organizaci.
+
+    Typy úloh lze použít při vytváření sestav v celém modulu Lidské zdroje.
+
+15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+16. Vyberte odkaz na vybraném řádku v seznamu.
+17. V sekci **Kompenzace** vyberte úroveň kompenzace.
+
+    Úroveň kompenzace definuje minimální a maximální kompenzaci, které může zaměstnanec u úlohy dosáhnout. Pravidla kompenzace určí, zda mohou být kompenzace zaměstnance mimo rozsah.
+
+18. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+19. Vyberte odkaz na vybraném řádku v seznamu.
+20. V sekci **Dovednosti** si všimněte, že pole na záložce s náhledem **Dovednosti**, **Vzdělání** a **Certifikáty** jsou prázdná. Po zkopírování informací ze šablony pozice budou informace v těchto polích zadány v jediném kroku.
+21. Zvolte možnost **Uložit**.
+22. Vyberte **Kopírovat z**.
+23. Vyberte **Kopírovat ze šablony**.
+24. V poli **Šablona nákladu** vyberte šipku rozevíracího seznamu a otevřete vyhledávání.
+25. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+26. Vyberte odkaz na vybraném řádku v seznamu.
+27. Vyberte možnost **Poznámka**.
+
+    Do vybrané úlohy budou zkopírovány pouze ty položky, které vyberete.
+
+28. Vyberte **OK**.
+29. Rozbalte část **Certifikáty**.
+30. Rozbalte část **Vzdělání**.
+31. Zvolte možnost **Uložit**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

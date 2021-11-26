@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2681a2a13754e240dcc4c99792dc47ae734f6e9e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579417"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778100"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -188,7 +188,7 @@ Platí přísná validace na hodnoty **Množství standardní objednávky** uved
 
 ### <a name="enable-the-strict-validation-option"></a>Povolte možnost přísného ověření
 
-Než můžete použít možnost přísné validace, musíte ji zapnout ve svém systému. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul** - *Řízení informací o produktech*
 - **Název funkce** - *Přísná validace na výchozí množství objednávek*

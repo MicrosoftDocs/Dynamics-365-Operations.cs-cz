@@ -1,8 +1,8 @@
 ---
 title: Vytvoření a otevření požadavku na pozici
 description: Náborové projekty vám umožňují spravovat proces náboru.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778765"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731554"
 ---
 # <a name="create-and-open-job-requisition"></a>Vytvoření a otevření požadavku na pozici
 
@@ -39,7 +39,7 @@ Náborové projekty vám umožňují spravovat proces náboru. Po vytvoření n�
 6. Vyhledejte na seznamu svůj záznam a vyberte ho.
 7. Vyberte odkaz na vybraném řádku v seznamu.
 8. Zvolte **Vybrat**.
-9. V poli Oddělení vyberte tlačítko rozevíracího seznamu a otevřete vyhledávání.
+9. V poli **Oddělení** vyberte tlačítko rozevíracího seznamu a otevřete vyhledávání.
 10. Vyberte odkaz na vybraném řádku v seznamu.
 11. V poli **Pozice** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 12. Vyhledejte na seznamu svůj záznam a vyberte ho.
@@ -58,10 +58,10 @@ Náborové projekty vám umožňují spravovat proces náboru. Po vytvoření n�
 25. Zadejte datum do pole **Koncové datum**.
 26. Zvolte **Uložit**.
 27. Zavřete stránku.
-28. Vyberte pracovní inzeráty.
-29. Zvolte **Uložit**.
+28. Vyberte **Pracovní inzeráty**.
+29. Zvolte možnost **Uložit**.
 30. Zavřete stránku.
-31. Označte nebo odznačte pole **Zobrazit v samoobsluze pro zaměstnance**. Zaškrtněte políčko **Zobrazit v samoobsluze pro zaměstnance**. Tento výběr zviditelní náborový projekt pro zaměstnance na jejich samoobslužných stránkách zaměstnance.
+31. Označte nebo odznačte pole **Zobrazit v samoobsluze pro zaměstnance**. Zaškrtněte políčko **Zobrazit v samoobsluze pro zaměstnance**. Tento výběr zviditelní náborový projekt pro zaměstnance na jejich **Samoobslužných stránkách zaměstnance**.
 32. Vyberte **Stav náborového projektu**.
 33. Vyberte **Spustit**. Stav **Zahájeno** znamená, že je projekt připraven přijímat žádosti.  
 34. Vyberte **OK**.
