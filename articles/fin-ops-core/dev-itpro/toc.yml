@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Rozšíření, přizpůsobení a spolupráce na nápovědě'
                   href: help/contributor-guide.md
+            - name: Zvažování nasazení
+              items:
+                - name: Možnosti nasazení suverénního a místního cloudu pro Dynamics 365 Finance a Dynamics 365 Supply Chain Management
+                  href: deployment/deployment-options-geo.md
+                - name: Finance a Supply Chain Management v US Government Community Cloud (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: Finance a Supply Chain Management provozované prostřednictvím 21Vianet v Číně
+                  href: deployment/china-local-deployment.md
+                - name: Aplikace Finance and Operations ve Francii
+                  href: deployment/france-local-deployment.md
         - name: Vývoj a přizpůsobení
           items:
             - name: Domovská stránka Vývoj a přizpůsobení
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Upgrade na model strany a globálního adresáře
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Zobrazení dat strany
+                      href: data-entities/dual-write/view-party.md
                     - name: Integrace poznámek
                       href: data-entities/dual-write/notes-integration.md
                     - name: Odkaz na mapování
@@ -1582,9 +1594,9 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: "Dávkové zpracování a\_dávkové servery"
                   href: sysadmin/batch-server-overview.md
-                - name: Vytvoření dávkových úloh
+                - name: Vytvoření dávkové úlohy
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Povolení automatického opakování u dávkových úloh
+                - name: Povolení opakovaných pokusů o dávku
                   href: sysadmin/retryable-batch.md
                 - name: Kopírování dávkové úlohy
                   href: sysadmin/copy-batch-job.md

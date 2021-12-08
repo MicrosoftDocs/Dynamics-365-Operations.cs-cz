@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Průvodce implementací Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Aplikace Finance and Operations provozované společností 21Vianet v Číně
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Aplikace Finance and Operations ve Francii
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Získání podpory
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Upgrade a N-1 podpora
@@ -1274,6 +1270,8 @@
               href: set-up-rfm-analysis.md
             - name: "Nastavení Microsoft Clarity v\_aplikaci Dynamics 365 Commerce"
               href: set-up-clarity.md
+            - name: Analytické nástroje Commerce (Preview)
+              href: commerce-analytics.md
         - name: Globalizace
           items:
             - name: Přehled fiskální integrace pro kanál Commerce
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Správa informací o zákazníkovi pro Rusko
                   href: localizations/rus-customer-information.md
+            - name: Saúdská Arábie
+              items:
+                - name: Generování QR kódů a jejich tisk na příjemkách pro Saúdskou Arábii
+                  href: localizations/emea-sau-qr-code.md
             - name: Švédsko
               items:
                 - name: Funkce registrační pokladny
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Ladění osvědčených postupů pro vývoj Dynamics 365 Commerce
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Testování stránek elektronického obchodování ohledně úniků paměti
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Retail SDK
               items:
                 - name: Migrace do sady Commerce SDK

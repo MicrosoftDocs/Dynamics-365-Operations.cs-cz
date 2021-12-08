@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Aplikace Finance and Operations provozované společností 21Vianet v Číně
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Aplikace Finance and Operations ve Francii
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Co je nového a co se změnilo
               items:
                 - name: Co je nového a co se změnilo v aplikacích Finance and Operations
@@ -500,6 +496,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Sestava sledování splatnosti odběratele
               href: accounts-receivable/customer-aging.md
+            - name: Úložiště dat sledování splatnosti zákazníků
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Vytvoření odpisového deníku pro odběratele
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Správa rozšířených poznámek
@@ -1470,15 +1468,19 @@
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: Vykazování v Rakousku
                           items:
-                            - name: Přiznání k DPH
+                            - name: "Přiznání k\_DPH"
                               href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Vykazování pro Francii
                           items:
-                            - name: Přiznání k DPH
+                            - name: "Přiznání k\_DPH"
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Vykazování pro Německo
+                          items:
+                            - name: "Přiznání k\_DPH"
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Vykazování v Nizozemsku
                           items:
-                            - name: Přiznání k DPH
+                            - name: "Přiznání k\_DPH"
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: "Vyrovnání odpisů u\_dodatečných pořízení za druhý rok"
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: "Přiznání k\_DPH"
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Německý Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: "Přiznání k\_DPH pro Německo"
+                - name: Výkaz DPH
                   href: localizations/emea-de-vat-declaration.md
                 - name: Sestava elektronických faktur zákazníka
                   href: localizations/emea-deu-e-invoices.md
@@ -3262,7 +3266,7 @@
                       href: localizations/rus-goods-movement-tax-registers.md
                     - name: Ostatní daňové registry
                       href: localizations/rus-other-tax-registers.md
-            - name: Saúdskoarabské království
+            - name: Saúdská Arábie
               items:
                 - name: "Saúdskoarabské království\_–\_přehled"
                   href: localizations/saudi-arabia.md
