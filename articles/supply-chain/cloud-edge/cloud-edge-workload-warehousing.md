@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641153"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813716"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -290,7 +290,8 @@ Následující tabulka shrnuje, které provozní scénáře správy skladu jsou 
 |---------|-----|------------------------------|
 | Ohlásit jako dokončené a vyskladnit dokončené zboží | Ano | Ano |
 | Vyskladnění vedlejšího produktu | Ano | Ano |
-| <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Spustit výrobní zakázku</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Ne |
+| Spustit výrobní zakázku | Ano | Ano |
+| <p>Všechny ostatní procesy správy skladu, které souvisí s výrobou, včetně:</p><li>Uvolnit do skladu</li><li>Vlnové zpracování výroby</li><li>Výdej suroviny</li><li>Kanban – odložení</li><li>Kanban – výdej</li><li>Výrobní odpad</li><li>Poslední paleta výroby</li><li>Zaregistrovat spotřebu materiálu</li><li>Prázdný kanban</li></ul> | Ano | Ne |
 | Doplnění surovin | Ne | Ne |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Udržování jednotek škálování pro provedení skladu

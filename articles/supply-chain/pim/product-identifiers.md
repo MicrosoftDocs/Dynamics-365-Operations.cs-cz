@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569666"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825347"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu
 
@@ -39,7 +39,7 @@ V aplikaci Dynamics 365 Supply Chain Management je primárním identifikátorem 
 
 V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamics 365 Supply Chain Management. Namísto toho je přidružen k produktu v systému správy (PLM) životního cyklu produktu nebo systém pro správu dat produktu (PDM). V takovém případě používáte data entity k importu produktů a variant produktu. Aplikace Supply Chain Management pak tato čísla použije ve všech operacích.
 
-Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je zvláštní název představující klasifikaci produktu.
+Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu by měl mít obvykle 20 znaků nebo méně, ale obecně doporučujeme používat méně než 10 znaků a nezahrnout více než 5 klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je zvláštní název představující klasifikaci produktu.
 
 Pokud použijete Microsoft Dataverse, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Microsoft Dataverse. Varianty produktu jsou synchronizovány do Dataverse jako odlišné produkty.
 

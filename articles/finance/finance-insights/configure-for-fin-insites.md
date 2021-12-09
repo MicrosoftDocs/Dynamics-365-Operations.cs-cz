@@ -2,7 +2,7 @@
 title: Konfigurace Finance Insights
 description: Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752971"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827021"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurace Finance Insights
 
@@ -43,14 +43,34 @@ Pro nasazení prostředí postupujte takto.
 
 2. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Demo data Contoso neobsahují dostatek historických dat pro adekvátní trénink predikčního modelu. 
 
+## <a name="configure-your-azure-ad-tenant"></a>Konfigurujte svého klienta Azure AD
+
+Azure Active Directory (Azure AD) musí být nakonfigurován tak, aby jej bylo možné používat s Dataverse a aplikacemi Microsoft Power Platform. Tato konfigurace vyžaduje buď roli **Vlastník projektu** nebo **Manažer prostředí** přiřazenou uživateli v poli **Role zabezpečení projektu** v LCS.
+
+Ověřte, že je dokončeno následující nastavení:
+
+- Máte přístup **Správce systému** a **Kustomizer systému** v centru pro správu Power Portal.
+- Licence Dynamics 365 Finance nebo ekvivalentní licence je použita na uživatele, který instaluje doplněk Finance insights.
+
+Následující aplikace Azure AD jsou registrovány v Azure AD.
+
+|  Přihláška                             | ID aplikace                               |
+|------------------------------------------|--------------------------------------|
+| Mikroslužby CDS Microsoft Dynamics ERP | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Konfigurace služby Dataverse
 
 Ke konfiguraci Dataverse pro Finance Insights proveďte následující kroky.
 
 - Otevřete stránku prostředí v LCS a ověřte, že část **Integrace Power Platform** je již nastavena.
 
-    - Pokud je již nastavena, název prostředí Dataverse spojený s prostředím Finance by měl být uveden.
-    - Pokud ještě není nastavena, vyberte **Nastavit**. Nastavení prostředí Dataverse může trvat až hodinu. Až bude nastavení úspěšně dokončeno, název prostředí Dataverse spojený s prostředím Finance by měl být uveden.
+    - Pokud je již nastaven Dataverse, název prostředí Dataverse spojený s prostředím Finance by měl být uveden.
+    - Pokud Dataverse ještě není nastaven, vyberte **Nastavit**. Nastavení prostředí Dataverse může trvat až hodinu. Až bude nastavení úspěšně dokončeno, název prostředí Dataverse spojený s prostředím Finance by měl být uveden.
+    - Pokud byla tato integrace nastavena s existujícím prostředím Microsoft Power Platform, obraťte se na svého správce, aby se ujistil, že propojené prostředí není v deaktivovaném stavu.
+
+        Další informace naleznete v tématu [Povolení integrace Power Platform](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+
+        Pro přístup k webu správce Microsoft Power Platform přejděte na <https://admin.powerplatform.microsoft.com/environments>.
 
 ## <a name="configure-the-finance-insights-add-in"></a>Konfigurace doplňku Finance Insights
 

@@ -2,7 +2,7 @@
 title: Domovská stránka Finance Insights
 description: Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752849"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813740"
 ---
 # <a name="finance-insights-home-page"></a>Domovská stránka Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení. Když jsou tyto nové funkce kombinovány s automatizací plateb a inkas od dodavatelů, poskytují bohatý a inteligentní finanční systém, který řídí rozhodování a pomáhá vám podniknout kroky k efektivní reakci na aktuální a očekávané obchodní výzvy.
+Finance Insights poskytují konfigurovatelná a rozšiřitelná řešení, která vám pomohou inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který pomůže urychlit váš proces rozpočtování. Tyto funkce využívají inteligentní šablony strojového učení k vytváření modelů pomocí dat, která poskytnete (včetně dat od třetí strany, jako jsou informace o spotřebitelských zprávách ze střediska). Tyto inteligentní schopnosti informují o rozhodování a pomáhají vám podnikat kroky k efektivní reakci na aktuální a očekávané obchodní výzvy. Jste odpovědní za jakákoli data, která se používají s Finance Insights nebo z nich vychází.
 
 > [!NOTE]
 > Preview Finance Insights je k dispozici pro nasazení v USA, Kanadě, Spojeném království, Evropě, Asii a Tichomoří, Japonsku, Austrálii a Novém Zélandu. Microsoft postupně přidává podporu pro další regiony.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567216"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860606"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definování pravidel disponibility pro položky
 
@@ -113,6 +113,7 @@ Pravidla disponibility položky vytvoříte následujícím způsobem:
 1. Do pole **Čas nákupu** zadejte hodnotu 5.
 1. Zvolte možnost **Uložit**.
 
-
+> [!NOTE]
+> U vyrobených položek se **Doba realizace výroby** se používá, pokud pro položku neexistuje žádná trasa. Pokud byla k položce přidružena aktivní trasa, hlavní plánování naplánuje objednávku a vypočítá její data podle časů trasy a kapacity zdrojů (pokud je to možné).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

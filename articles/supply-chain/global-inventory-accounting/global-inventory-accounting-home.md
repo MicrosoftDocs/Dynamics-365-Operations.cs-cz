@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 268ee58583306bdd99e5d5cd5bb436a328a5648b
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678488"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860476"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Domovská stránka Globálního účetnictví zásob
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Mezinárodní organizace jsou pod rostoucím tlakem úřadů, aby dodržovaly místní a globální účetní standardy. Při zajišťování souladu hraje významnou roli ocenění zásob. Doplněk Globální účtetnictví zásob pro Microsoft Dynamics 365 Supply Chain Management poskytuje komplexní řešení, které umožňuje organizacím (zejména mezinárodním organizacím) používat k účtování zásob více účtů nákladů. Tyto organizace proto mohou dodržovat více účetních standardů a interní manažerské účetnictví současně.
 

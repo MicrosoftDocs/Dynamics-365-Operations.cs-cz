@@ -2,7 +2,7 @@
 title: Nastavení elektronických zpráv
 description: Toto téma poskytuje informace o tom, jak nastavit funkce elektronických zpráv (EM).
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752168"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860551"
 ---
 # <a name="set-up-electronic-messages"></a>Nastavení elektronických zpráv
 
@@ -34,6 +34,7 @@ Pokud neimportujete balíček datových entit, můžete ručně nastavit funkčn
 - [Dodatečná pole](#additional)
 - [Nastavení spustitelné třídy](#executable)
 - [Akce naplnění záznamů](#populate)
+- [Vyplňte záznamy od více společností](#multiple-companies-populate)
 - [Webové aplikace](#applications)
 - [Nastavení webové služby](#settings)
 - [Akce zpracování zprávy](#actions)
@@ -139,6 +140,38 @@ Na záložce s náhledem **Nastavení datových zdrojů** přidejte řádek pro 
 | Společnost                | Toto pole je dostupné, když je funkce **Dotazy mezi více společnostmi pro akce naplnění záznamů** zapnutá v pracovním prostoru **Správa funkcí**. Tuto funkci použijte k nastavení zdrojů dat mezi společnostmi pro akce naplnění záznamů. Data lze načíst od několika společností. |
 | Dotaz uživatele             | <p>Pokud nastavíte dotaz výběrem **Upravit dotaz** nad mřížkou a určíte kritéria, která musí být použita na vybranou hlavní tabulku, ze které jsou vyplňována data, je toto políčko automaticky zaškrtnuto. V opačném případě budou všechny záznamy vyplněny z vybraného zdroje hlavní tabulky.</p><p>Když je funkce **Dotazy mezi více společnostmi pro akce naplnění záznamů** zapnutá v pracovním prostoru **Správa funkcí** a záznamy musí být shromážděny od několika společností, přidejte řádek pro každou další právnickou osobu, která musí být zahrnuta do vykazování. U každého nového řádku vyberte **Upravit dotaz** a zadejte související kritérium specifické pro právnickou osobu, která je uvedena v poli **Společnost** na řádku. Po dokončení, mřížka **Nastavení zdrojů dat** bude obsahovat řádky pro všechny právnické osoby, které musí být zahrnuty do výkaznictví.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Vyplňte záznamy od více společností
+
+Pokud vaše společnost musí podávat zprávy od více právnických osob ve stejné finanční databázi, nastavte [vyplnit záznamy akcí](#populate) pro všechny právnické osoby, od kterých musí být údaje zahrnuty do hlášení.
+
+Chcete-li povolit tuto schopnost ve vašem prostředí Finance, postupujte následovně. 
+
+1. Přejděte na **Pracovní prostory** \> **Správa funkcí**.
+2. Najděte a vyberte funkci **Mezipodnikové dotazy pro akce vyplnění záznamů** v seznamu.
+3. Vyberte **Povolit**. 
+
+Chcete-li nastavit [vyplnit záznamy akcí](#populate) pro více společností, od kterých musí být údaje zahrnuty do výkazů, postupujte takto.
+
+1. Přejděte na **Daň** \> **Nastavení** \> **Elektronické zprávy** \> **Akce vyplnění záznamů**.
+
+    Když je povolena funkce **Mezipodnikové dotazy pro akce vyplnění záznamů**, mřížka **Nastavení datových zdrojů** na stránce **Akce vyplnění záznamů** obsahuje pole **Společnost**. Pro existující záznamy, které byly vytvořeny během obecného nastavení [akcí vyplnění záznamů](#populate), toto pole zobrazuje identifikátor aktuální právnické osoby.
+
+2. V mřížce **Nastavení zdrojů dat** přidejte řádek pro každou dceřinou právnickou osobu, která musí být zahrnuta do vykazování, a nastavte následující pole.
+
+    | Název pole             | Hodnota |
+    |------------------------|-------|
+    | Název                   | Zadejte textovou hodnotu, která vám pomůže pochopit, odkud tento záznam pochází. Například zadejte **Název datového zdroje - Dceřiná společnost 1**. |
+    | Typ položky zprávy      | Vyberte typ položky zprávy, který je vyžadován pro vaše zpracování EM. |
+    | Typ účtu           | Určete typ účtu, který je vyžadován pro vaše zpracování EM. Pokud vaše zpracování EM nemá žádné konkrétní typy účtů, vyberte **Všechny**. |
+    | Název hlavní tabulky      | Zadejte název hlavní tabulky, která je vyžadována pro vaše EM zpracování. |
+    | Pole čísla dokumentu  | Zadejte pole, které obsahuje číslo dokumentu v záznamech vašeho zpracování EM. |
+    | Pole data dokumentu    | Zadejte pole, které obsahuje datum dokumentu v záznamech vašeho zpracování EM. |
+    | Pole účtu dokumentu | Zadejte pole, které obsahuje účet dokumentu v záznamech vašeho zpracování EM. |
+    | Společnost                | Vyberte ID dceřiné právnické osoby. |
+    | Dotaz uživatele             | Toto zaškrtávací políčko je automaticky zaškrtnuto, když definujete kritéria volbou **Upravit dotaz**. |
+
+3. U každého nového řádku vyberte **Upravit dotaz** a zadejte související kritéria pro právnickou osobu, která je uvedena v poli **Společnost** na řádku.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webové aplikace
 
 Nastavení webové aplikace použijte tak, aby podporovala otevřené autorizace (OAuth) 2.0. OAuth je otevřený standard, který umožňuje uživatelům udělit zabezpečeného delegovaného přístupu k aplikaci jejich jménem bez sdílení pověření pro přístup. Z této stránky můžete také projít procesem autorizace získáním autorizačního kódu a přístupového tokenu. Můžete provést nastavení webové aplikace přechodem na **Daň** \> **Nastavení** \> **Elektronické zprávy** \> **Webové aplikace**.
@@ -214,6 +247,7 @@ Následující tabulky popisují pole na stránce **Akce zpracování zpráv**.
 | Spustitelná třída                          | Vyberte existující nastavení spustitelné třídy. Toto pole je k dispozici pouze pro akce typu **Úroveň spuštění zprávy** a **Úroveň spuštění položky zprávy**. |
 | Akce naplnění záznamů                   | Vyberte existující akci naplnění záznamů. Toto pole je k dispozici pouze pro akce typu **Naplnit záznamy**. |
 | Webová služba                               | Vyberte existující webovou službu. Toto pole je k dispozici pouze pro akce typu **Webová služba**. |
+| Název souboru k odeslání                         | Zadejte název přílohy elektronické zprávy, kterou je nutné touto akcí odeslat. Pokud má více příloh stejný původní název souboru, bude odeslána nejnovější. Pokud není nalezena žádná příloha se zadaným původním názvem souboru, bude žádost odeslána bez obsahu. Toto pole je k dispozici pouze pro akce typu **Webová služba**. |
 | Název souboru                                 | Zadejte název souboru, který bude výsledkem akce. Tento soubor může být odezva na webový server nebo sestava, která je generována. Toto pole je k dispozici pouze pro akce typu **Webová služba** a **Zpráva exportu elektronického výkaznictví**. |
 | Připojit soubory do zdrojových dokumentů          | Zaškrtnutím tohoto políčka připojíte vygenerované soubory k záznamům v odkazované hlavní tabulce pro položky EM. Toto pole je k dispozici pouze pro akce typu **Export elektronického výkaznictví** a **Webová služba**. |
 | Připojit soubory z výstupního archivu k položkám | Zaškrtnutím tohoto políčka extrahujete samostatné soubory XML z výstupního archivního souboru a připojíte je k odpovídajícím položkám elektronických zpráv. Toto pole je k dispozici pouze pro akce typu **Export elektronického výkaznictví**. |

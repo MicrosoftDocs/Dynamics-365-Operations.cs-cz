@@ -2,19 +2,19 @@
 title: Popis služby pro aplikace Finance and Operations
 description: Toto téma poskytuje popis služby pro aplikace Finance and Operations.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581809"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825393"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro aplikace Finance and Operations
 
@@ -50,7 +50,7 @@ Provozní model aplikací Finance and Operations definuje konkrétní role a odp
 
 ### <a name="customer-activities"></a>Aktivity zákazníka
 
-Zákazníci pracují se svým partnerem a [Microsoft FastTrack](/dynamics365/fasttrack/) v návaznosti na rámec [Success by Design](/dynamics365/fasttrack/success-by-design-overview) a používání nástrojů a šablon osvědčených postupů uvedených v [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) na implementaci jejich řešení. Mezi běžné činnosti patří:
+Zákazníci pracují se svým partnerem a [Microsoft FastTrack](/dynamics365/fasttrack/) podle [Průvodce implementací Dynamics 365](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), rámce [Success by Design](/dynamics365/fasttrack/success-by-design-overview) a nástrojů a šablon osvědčených postupů uvedených v [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) na implementaci jejich řešení. Mezi běžné činnosti patří:
 
 - Správa identity a zabezpečení uživatele
 - Definice, vývoj a provoz obchodních procesů

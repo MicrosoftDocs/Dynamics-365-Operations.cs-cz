@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 95a57e30dd8ff4e177ab2958c1d2a19a90c3894e
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678610"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860660"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Povolit Power BI pro globální účetnictví zásob
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Můžete připnout dlaždice, řídicí panely a zprávy ze svého účtu [PowerBI.com](https://powerbi.com/) do pracovního prostoru aplikace Microsoft Dynamics 365.
 

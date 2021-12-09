@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752610"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827046"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Odstraňování problémů s nastavením Finance Insights
 
@@ -70,3 +70,26 @@ Aby bylo možné správně zobrazovat data v pracovním prostoru **Prognóza cas
 Nejprve nastavte a povolte prognózu cashflow a účty likvidity. Více informací získáte v části [Prognóza cashflow](../cash-bank-management/cash-flow-forecasting.md). Pokud bylo toto nastavení dokončeno, ale nevidíte očekávané výsledky, pročtěte si další informace v tématu [Řešení potíží s nastavením předpovědi cashflow](../cash-bank-management/cash-flow-forecasting-tsg.md).
 
 Dále potvrďte, že funkce prognózy cashflow ve Finance Insights (**Správa pokladny a banky \> Nastavení \> Finance Insights \> Prognózy cashflow**) byla povolena a trénování modelu AI bylo dokončeno. Pokud trénování nebylo dokončeno, vyberte **Prognóza teď** a zahajte proces trénování modelu.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Příznak: Proč není tlačítko Instalovat nový doplněk vidět v Microsoft Dynamics Lifecycle Services?
+
+### <a name="resolution"></a>Řešení
+
+Nejprve ověřte, že jsou role **Manažer prostředí** nebo **Vlastník projektu** přiřazeny přihlášenéu uživateli v poli **Role zabezpečení projektu** v Microsoft Dynamics Lifecycle Services (LCS). Instalace nových doplňků vyžaduje jednu z těchto rolí zabezpečení projektu.
+
+Pokud je vám přiřazena správná role zabezpečení projektu, možná budete muset obnovit okno prohlížeče, abyste viděli tlačítko **Nainstalovat nový doplněk**.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Příznak: Zdá se, že doplněk Finance insights se neinstaluje. Proč?
+
+### <a name="resolution"></a>Řešení
+
+Následující kroky by měly být dokončeny.
+
+- Ověřte, že máte přístup **Správce systému** a **Kustomizer systému** v centru pro správu Power Portal.
+- Ověřte, že je použita licence Dynamics 365 Finance nebo ekvivalentní licence na uživatele, který instaluje doplněk.
+- Ověřte, že následující aplikace Azure AD je registrována v Azure AD: 
+
+  | Přihláška                  | ID aplikace           |
+  | ---------------------------- | ---------------- |
+  | Mikroslužby CDS Microsoft Dynamics ERP | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
