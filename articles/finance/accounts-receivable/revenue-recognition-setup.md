@@ -2,7 +2,7 @@
 title: Nastavení uznání výnosů
 description: Toto téma popisuje možnosti nastavení pro uznání výnosů a jejich dopady.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675171"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867213"
 ---
 # <a name="revenue-recognition-setup"></a>Nastavení uznání výnosů
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ První scénář nastane poté, co jsou splněny všechny smluvní závazky, kdy
 
 Druhý scénář nastane, když je deník vytvořen poté, co dojde k opakovanému přidělení. K opětovnému přidělení dochází, když je řádek prodejní objednávky přidán k dříve fakturované prodejní objednávce, nebo když je vytvořena nová prodejní objednávka obsahující řádek, který je součástí původní smlouvy. Pokud byla faktura zaúčtována před přidáním nového řádku prodejní objednávky, musí být pro zaúčtovanou fakturu zákazníka vytvořena účetní opravná položka.
 
-Deník se nastavuje na stránce **Názvy deníku** (**Uznání výnosů \> Nastavení \> Názvy deníku**). Typ deníku musí být nastaven na **Uznání výnosů**. Deník uznání výnosů vám umožňuje vybrat účtovací vrstvu, do které se má provést zaúčtování.
+Deník se nastavuje na stránce **Názvy deníku** (**Uznání výnosů \> Nastavení \> Názvy deníku**). Typ deníku musí být nastaven na **Uznání výnosů**. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametry pro uznání výnosů
 

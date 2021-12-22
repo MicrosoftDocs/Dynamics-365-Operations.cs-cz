@@ -70,12 +70,12 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (únor)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (leden)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (listopad 2021)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (říjen 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -518,6 +518,8 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Přehled rozpočtování
               href: budgeting/basic-budgeting-overview-configuration.md
+            - name: Dostupné rozpočtové prostředky
+              href: budgeting/budget-funds-available.md
             - name: Prognóza pozice
               href: budgeting/position-forecasting.md
             - name: Dokumenty odůvodnění plánování rozpočtu
@@ -1434,6 +1436,8 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Nastavení elektronické fakturace
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Reference správce modulu plug-in Power Platform
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: "Časté otázky k\_elektronické fakturaci"
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Výpočet daně
@@ -1444,6 +1448,14 @@
                       items:
                         - name: Začínáme s výpočtem daně
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Nastavení daňových kódů
+                          href: localizations/set-up-tax-codes.md
+                        - name: Nastavení daňových skupin
+                          href: localizations/set-up-tax-groups.md
+                        - name: Nastavení skupin daně položky
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Výpočty dovozních a vývozních daní
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Nastavení prostředí pro vyhledávání hlavních dat
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Určení
@@ -2594,6 +2606,8 @@
               items:
                 - name: Indonésie - přehled
                   href: localizations/indonesia.md
+                - name: Číslování daňových faktur a fakturace
+                  href: localizations/apac-idn-invoicing.md
                 - name: "Přiznání k\_DPH pro Indonésii"
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Itálie
@@ -2662,6 +2676,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronické faktury zákazníka
                   href: localizations/emea-ita-e-invoices.md
+                - name: Elektronické faktury dodavatele
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Roční daňová komunikace
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Sledovatelnost plateb
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Výkaz DPH
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Vratka DPH s přímým odesláním do Altinn
+                  items:
+                    - name: Přehled vratky DPH s přímým odesláním do Altinn
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Registrace integračního bodu na webovém portálu ID-porten
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: Příprava prostředí na spolupráci s webovými službami ID-porten a Altinn
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Kontrolní seznam pro nastavení elektronických zpráv pro vratku DPH
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: Autorizace prostředí Finance na spolupráci s webovými službami ID-porten a Altinn
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Odeslání vratky DPH do webové služby Altinn
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Soubor standardního auditu pro daň (SAF-T) pro Norsko
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronické faktury zákazníka v Norsku
@@ -3829,9 +3859,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                        - name: Dnes
+                        - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Seznam
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Funkce seznamu
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json

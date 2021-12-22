@@ -92,7 +92,9 @@
                   items:
                     - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: Commerce 10.0.24 (únor 2022)
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: Commerce 10.0.23 (leden 2022)
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (listopad 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -544,6 +546,8 @@
                       href: duplicate-payment-protection.md
                     - name: Přehled omnikanálových plateb
                       href: omni-channel-payments.md
+                    - name: Několik dostupných způsobů platby pro vyzvednutí na prodejně
+                      href: dev-itpro/multiple-payments-pickup.md
                     - name: Omnikanálové platby objednávek Commerce
                       href: dev-itpro/commerce-payments.md
                     - name: Archivovat data transakcí platební karty
@@ -814,11 +818,15 @@
           items:
             - name: Správa zákazníků v obchodech
               href: customer-mgmt-stores.md
+            - name: Režim vytváření asynchronních zákazníků
+              href: async-customer-mode.md
+            - name: Převod asynchronních zákazníků na synchronní zákazníky
+              href: convert-async-to-sync.md
             - name: Clienteling
               items:
                 - name: Přehled clientelingu
                   href: clienteling-overview.md
-            - name: Věrnostní program
+            - name: Loajalita
               items:
                 - name: Přehled věrnostního programu
                   href: set-up-customer-loyalty-program.md
@@ -1330,6 +1338,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Zaúčtování brazilských fiskálních dokumentů prostřednictvím maloobchodních příkazů v Commerce Headquarters
                   href: localizations/latam-bra-retail-statements.md
+                - name: Funkce fiskálních dokumentů CF-e a integrace se SAT v Commerce POS pro Brazílii
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: Dynamics 365 Payment Connector pro Adyen v Commerce POS pro Brazílii
                   href: localizations/latam-bra-adyen.md
             - name: Východní Evropa
@@ -1378,8 +1388,10 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Podpora pro upgrade a N-1 pro Indii
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: Generování QR kódů a jejich tisk na příjemkách
+                - name: Generování QR kódů a jejich tisk na příjemkách pro Indii
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: Integrace daně ze zboží a služeb (GST) pro weby elektronického obchodování
+                  href: localizations/apac-ind-e-commerce.md
             - name: Itálie
               items:
                 - name: Vzor integrace fiskální tiskárny pro Itálii
@@ -1614,9 +1626,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/fcommerce/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
-                        - name: Dnes
+                        - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: Seznam
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: Funkce seznamu
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json

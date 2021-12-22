@@ -4,6 +4,8 @@
     - name: Co je nového
       items:
         - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
+          href: hr-whats-new-2021-11-29.md
+        - name: 29. listopadu 2021
           href: hr-admin-whats-new.md
         - name: 5. října 2021
           href: hr-whats-new-2021-10-04.md
@@ -793,6 +795,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Zpracování změn sazby
                       href: hr-benefits-process-rate-changes.md
+                - name: Výběr zaměstnaneckých výhod
+                  href: employee-select-benefits-ess.md
                 - name: Vykazování ACA
                   href: hr-benefits-management-aca-reports.md
                 - name: Výkaz zaměstnaneckých výhod

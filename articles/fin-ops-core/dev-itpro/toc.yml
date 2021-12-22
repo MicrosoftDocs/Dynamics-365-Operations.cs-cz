@@ -14,12 +14,12 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizace Platform Update pro verzi 10.0.23
+                - name: Nástroj Platform Updates pro verzi 10.0.24 (únor 2022)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Nástroj Platform Updates pro verzi 10.0.23 (leden 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Nástroj Platform Updates pro verzi 10.0.22 (listopad 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: Nástroj Platform Updates pro verzi 10.0.21 (říjen 2021)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Přehled Azure Data Lake
-              href: data-entities/azure-data-lake-overview.md
-            - name: Konfigurace exportu do Azure Data Lake
+            - name: Přehled doplňku Export do Azure Data Lake
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Instalace doplňku Export do Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Aplikace Finance and Operations v Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md
+                    - name: Upgrade instance SQL Serveru prostředí Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Místní agent
                   items:
                     - name: Kompatibilita AD FS Microsoft 365
@@ -1012,7 +1014,7 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integrace Microsoft Power Platform
           items:
-            - name: Integrace Microsoft Power Platform s aplikací Finance and Operations
+            - name: Přehled
               href: power-platform/overview.md
             - name: Povolení integrace Power Platform
               href: power-platform/enable-power-platform-integration.md
