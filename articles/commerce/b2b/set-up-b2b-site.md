@@ -2,7 +2,7 @@
 title: Nastavení webu elektronického obchodování B2B
 description: Toto téma popisuje, jak nastavit web elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713741"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891378"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Vytvoření webu elektronického obchodu B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Weby elektronického obchodování typu business-to-business (B2B) poskytují některé klíčové funkce, které optimalizují pracovní postup pro uživatele B2B. Toto téma popisuje, jak nastavit web elektronického obchodování typu B2B v Microsoft Dynamics 365 Commerce. Prochází moduly a nastavením webů, které je nutné nakonfigurovat, aby se umožnily scénáře specifické pro B2B.
 
@@ -306,6 +307,30 @@ Chcete-li přidat modul rychlého přidání na stránku košíku v konfiguráto
 
 > [!NOTE] 
 > Modul rychlého přidání je k dispozici od verze Commerce 10.0.17. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Přidání modulu hromadného nákupu na stránku podrobností o produktu
+
+Modul hromadného nákupu na stránce s podrobnostmi o produktu poskytuje maticové prostředí, které kupujícímu umožňuje rychle přidat do košíku více variant produktu. Když uživatel webu musí objednat více variant stejného produktu, toto prostředí eliminuje potřebu vybrat kombinaci rozměrů produktu, definovat množství, přidat variantu do košíku a poté opakovat proces pro další kombinace rozměrů produktu.
+
+Modul hromadného nákupu přidáte na stránku s podrobnostmi o produktu v konfigurátoru webů Commerce tímto postupem.
+
+1. Přejděte k možnosti **Šablony** a vyberte šablonu stránky s podrobnostmi o produktu na vašem webu.
+1. Vyberte možnost **Upravit**.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Hromadný nákup** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+1. Přejděte k možnosti **Stránky** a vyberte stránku s podrobnostmi o produktu na vašem webu.
+1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností modulu **Kontejner** nastavte vlastnost **Šířka** na hodnotu **Vyplnit kontejner**.
+1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte modul **Hromadný nákup** a poté klikněte na tlačítko **OK**.
+1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
+
+> [!NOTE] 
+> Modul hromadného nákupu je k dispozici od verze Commerce verze 10.0.24. Pokud provádíte aktualizaci ze starší verze Commerce, musíte ručně aktualizovat soubor appsettings.json. Další pokyny viz [SDK a aktualizace knihovny modulů](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Další prostředky
 

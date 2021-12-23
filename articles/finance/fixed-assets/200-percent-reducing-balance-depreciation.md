@@ -1,7 +1,7 @@
 ---
 title: Degresivní odpis 200 procent
-description: Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.
-author: saraschi2
+description: Toto téma poskytuje přehled metody degresivního odpisu 200 %.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f7d821dbd6603eba7a228e5caa6def6d783e4774c72687839bd198f4e228633
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766997"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883486"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Degresivní odpis 200 procent
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.
+Toto téma poskytuje přehled metody degresivního odpisu 200 %.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 200 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 40 procent (200 % ÷ 5). 
 

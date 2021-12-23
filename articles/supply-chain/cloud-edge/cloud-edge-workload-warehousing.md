@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813716"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891744"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -50,6 +50,11 @@ V závislosti na obchodních procesech může stejný datový záznam změnit vl
 > Některá data lze vytvořit v centru i na jednotce měřítka. Příklady zahrnují **Registrační značky** a **Čísla šarží**. Vyhrazené zvládání konfliktů je k dispozici v případě scénáře, kdy se ve stejném cyklu synchronizace vytvoří stejný jedinečný záznam v centru i na jednotce měřítka. Když k tomu dojde, další synchronizace se nezdaří a budete muset přejít na **Správa systému > Dotazy > Dotazy na zátěž > Duplicitní záznamy**, kde můžete data zobrazit a sloučit.
 
 ## <a name="outbound-process-flow"></a>Odchozí tok procesu
+
+Před nasazením úlohy správy skladu do cloudové nebo hranové jednotky se ujistěte, že máte funkci *Podpora jednotek škálování pro uvolnění odchozích objednávek do skladu* aktivní ve vašem centru Enterprise. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+
+- **Modul:** *Řízení skladu*
+- **Název funkce** *Podpora jednoty škálování pro uvolnění odchozích objednávek do skladu*
 
 Proces vlastnictví odchozích dat závisí na tom, zda používáte proces plánování zatížení. Ve všech případech centrum vlastní *zdrojové dokumenty*, jako jsou prodejní objednávky a převodní objednávky, jakož i proces přidělování objednávek a související údaje o transakcích objednávky. Když ale použijete proces plánování vytížení, vytížení budou vytvořena v centru, a proto budou původně ve vlastnictví centra. V rámci procesu *Uvolnit do skladu* se vlastnictví dat o zatížení přenese na vyhrazené nasazení jednotky měřítka, které se stane vlastníkem následného *zpracování vlny dodávky* (jako je přidělení práce, doplňovací práce a tvorba práce na vyžádání). Pracovníci skladu proto mohou zpracovávat odchozí prodeje a práci s objednávkami pouze pomocí mobilní aplikace Warehouse Management, která je připojena k nasazení, na němž běží konkrétní pracovní zátěž jednotky škálování.
 
@@ -202,7 +207,7 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Tisk dokumentů souvisejících se zátěží                           | Ano | Ano|
 | Přepravní doklad a generování ASN                            | Ne  | Ano|
 | Potvrzení zásilky                                             | Ne  | Ano|
-| Potvrzení zásilky s příkazem „Potvrdit a převést“            | Ne  | Ne |
+| Potvrzení zásilky s příkazem „Potvrdit a převést“            | Ne  | Ano|
 | Zpracování dodacího listu a fakturace                        | Ano | Ne |
 | Krátký výběr (prodejní a převodové objednávky)                    | Ne  | Ano, bez odstranění rezervací zdrojových dokumentů|
 | Výběr nadměrného množství (prodejní a převodové objednávky)                     | Ne  | Ano|
@@ -212,8 +217,8 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Štítek vlny                                                   | Ne  | Ano|
 | Rozdělení práce                                                   | Ne  | Ano|
 | Zpracování práce - režie 'Naložení přenosu'            | Ne  | Ne |
-| Snížit vyskladněné množství                                       | Ne  | Ne |
-| Stornovat práci                                                 | Ne  | Ne |
+| Snížit vyskladněné množství                                       | Ne  | Ano|
+| Stornovat práci                                                 | Ne  | Ano|
 | Zrušit potvrzení expedice                                | Ne  | Ano|
 
 ### <a name="inbound"></a>Příchozí
@@ -227,7 +232,7 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 | Náklady na doručení a příjem přepravovaného zboží                       | Ano | Ne |
 | Potvrzení příchozí dodávky                                    | Ano | Ne |
 | Uvolnění nákupní objednávky do skladu (zpracování objednávky skladu) | Ano | Ne |
-| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku</p> | Ano | Ne |
+| Zrušení řádků skladových objednávek<p>Upozorňujeme, že toto je podporováno pouze v případě, že nedošlo k žádné registraci proti řádku při zpracování operace *žádost o zrušení*</p> | Ano | Ne |
 | Přijetí zboží nákupní objednávky a odložení                       | <p>Ano,&nbsp;když&nbsp;tam&nbsp;není skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p> |
 | Přijetí řádku nákupní objednávky a odložení                       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | <p>Ano, když nákupní objednávka není součástí <i>vytížení</i></p></p> |
 | Přijatá a odložená vratka                              | Ano | Ne |
@@ -246,7 +251,7 @@ Následující tabulka ukazuje, které příchozí funkce jsou podporovány a kd
 | Příjem s vytvořením práce *Kvalita v kontrole kvality*       | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
 | Příjem s vytvořením objednávky kvality                            | <p>Ano, pokud neexistuje skladová objednávka</p><p>Ne, pokud existuje skladová objednávka</p> | Ne |
 | Zpracování práce - Režie *Cluster putaway*                 | Ano | Ne |
-| Zpracování práce s *Krátký výběr*                               | Ano | Ne |
+| Zpracování práce s *Krátký výběr*                               | Ano | Ano |
 | Načtení registrační značky                                           | Ano | Ano |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Skladové operace a zpracování výjimek

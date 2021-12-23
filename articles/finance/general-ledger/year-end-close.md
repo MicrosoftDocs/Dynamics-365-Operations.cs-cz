@@ -2,7 +2,7 @@
 title: Roční uzávěrka
 description: Toto téma popisuje požadované nastavení a postup pro spuštění procesu roční uzávěrky hlavní knihy.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778259"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892470"
 ---
 # <a name="year-end-close"></a>Roční uzávěrka
 
@@ -44,7 +44,7 @@ Na stránce **Hlavní účet** proveďte toto:
 Na stránce **Parametry hlavní knihy** pod položkou **Uzávěrka fiskálního roku**:
 
 - Možnost **Odstranit stávající položky roční uzávěrky při opakování roční uzávěrky** se používá k určení, zda počáteční transakce generovaná systémem z předchozí roční uzávěrky má být odstraněna, když je roční uzávěrka spuštěna znovu. Pokud je tato možnost nastavena na hodnotu **Ano**, předchozí počáteční a volitelné uzávěrkové transakce jsou odstraněny a nová počáteční nebo uzávěrková transakce se vytvoří na základě aktuálních zůstatků. Pokud je tato možnost nastavena na hodnotu **Ne**, předchozí počáteční a volitelné uzávěrkové transakce jsou zachovány a vytvoří se další počáteční nebo uzávěrkové transakce k přesunutí zůstatků dopředu z transakcí úprav zaúčtovaných po předchozí roční uzávěrce.
-- Možnost **Vytvořit uzávěrkové transakce při převodu** se používá k vytvoření uzávěrkových transakcí ve fiskálním roku, který je uzavírán, aby zůstatky účtů zisků a ztrát mohly vykazovat 0 (nulu). Pokud je tato možnost nastavena na **Ano**, je vytvořena jak počáteční transakce, tak i uzávěrková transakce. Pokud je tato možnost nastavena na **Ne**, je vytvořena pouze počáteční transakce v dalším fiskálním roku k převodu zůstatků. Zůstatky účtu zisků a ztrát zůstávají na konci fiskálního roku.
+- Možnost **Vytvořit uzávěrkové transakce při převodu** se používá k vytvoření uzávěrkových transakcí ve fiskálním roku, který je uzavírán, aby zůstatky všech hlavních účtů mohly vykazovat 0 (nulu). Pokud je tato možnost nastavena na **Ano**, je vytvořena jak počáteční transakce, tak i uzávěrková transakce. Pokud je tato možnost nastavena na **Ne**, je vytvořena pouze počáteční transakce v dalším fiskálním roku k převodu zůstatků. Zůstatky hlavního účtu zůstávají na konci fiskálního roku.
 - Možnost **Nastavit stav fiskálního roku na trvale uzavřený** slouží k nastavení stavu fiskálního roku „trvale uzavřený“. Tuto možnost používejte opatrně, protože období, která mají trvale uzavřený stav, nelze znovu otevřít. Proto úpravy nelze zaúčtovat do fiskálního roku. Je doporučeno tuto možnost nastavit na hodnotu **Ne**.
 - Možnost **Je nutné vyplnit číslo dokladu** byla odstraněna. Když je spuštěn proces roční uzávěrky, je nyní vyžadován doklad. V té době se číslo dokladu zadává ručně.
 

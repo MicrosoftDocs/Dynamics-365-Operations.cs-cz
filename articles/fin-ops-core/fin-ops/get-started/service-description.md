@@ -2,19 +2,19 @@
 title: Popis služby pro aplikace Finance and Operations
 description: Toto téma poskytuje popis služby pro aplikace Finance and Operations.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825393"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898382"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro aplikace Finance and Operations
 
@@ -314,7 +314,7 @@ Plány a postupy zotavení po havárii společnosti Microsoft jsou pravidelně p
 | Společnost Microsoft zřizuje sekundární prostředí ve spárovaném datovém centru Azure, když je nasazena primární provozní instance. Další informace viz [provozní kontinuita a zotavení po havárii (BCDR): spárované regiony Azure](/azure/best-practices-availability-paired-regions). | Neomezeno |
 | Microsoft povoluje geografickou redundanci Azure SQL a Azure Blob Storage, když je nasazena primární provozní instance. | Neomezeno |
 | Microsoft povoluje automatické zálohování v databázích Azure SQL. | Neomezeno |
-| <p>Když dojde k výpadku, Microsoft určí, zda musí být pro zákazníka provedeno převzetí služeb při selhání a zda dojde ke ztrátě dat. Ztráta dat může být až pět sekund. Další informace viz [Geo obnovení Azure SQL Database](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>V případě ztráty dat společnost Microsoft požádá zákazníka o odhlášení za převzetí služeb při selhání.</p> | V případě ztráty dat může zákazník pro spuštění převzetí služeb při selhání poskytnout písemné odhlášení. |
+| <p>Když dojde k výpadku, Microsoft určí, zda musí být pro zákazníka provedeno převzetí služeb při selhání a zda dojde ke ztrátě dat. Zákazníci mohou zaznamenat ztrátu dat až do 15 minut v závislosti na povaze a načasování výpadku. | V případě ztráty dat může zákazník pro spuštění převzetí služeb při selhání poskytnout písemné odhlášení. |
 | Když dojde k převzetí služeb při selhání, příslušná služba funguje v omezeném režimu. Údržbu aktualizací nelze spustit v režimu převzetí služeb při selhání. | Zákazník nemůže v režimu převzetí služeb při selhání požadovat nasazení balíčku nebo jiné požadavky na pravidelnou údržbu. |
 | Když datové centrum začne fungovat, Microsoft převezme služby při selhání zpět do provozní instance v primární oblasti Azure. Obnoví se normální provoz. | Zákazník se možná bude muset odhlásit při vrácení služeb při selhání do provozní instance v primární oblasti Azure. |
 

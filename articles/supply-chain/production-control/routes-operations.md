@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b31f949304dfc9cf8723c29c1354c35ff41dbe17
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566688"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891946"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -223,7 +223,7 @@ Při použití tohoto přístupu budete operační časy a další vlastnosti s
 Pokud v rámci požadavků na prostředky u operace nezadáte provozní prostředek nebo skupinu prostředků, mohou použitelné prostředky pracovat při různých rychlostech. Čas nutný ke zpracování operace se tedy může lišit. Tento problém můžete vyřešit tak, že způsob výpočtu času zpracování určíte pomocí pole **Vzorec** ve vztahu operace. Existují tyto možnosti:
 
 - **Standardní** – (výchozí možnost) výpočet použije pouze pole ze vztahu operace a vynásobí zadaný operační čas objednaným množstvím.
-- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita**.
+- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita**. Hodnota kapacity není specifická pro konkrétní měrnou jednotku, a proto se nepřevádí na základě pole **Jednotka kapacity**, což je pouze popisné pole, které se nepoužívá ve výpočtech.
 - **Dávka** – kapacita dávky se počítá s využitím informací ze vztahu operace. Počet dávek (a tím i čas zpracování) lze pak vypočítat na základě objednaného množství.
 - **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka**. Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
 

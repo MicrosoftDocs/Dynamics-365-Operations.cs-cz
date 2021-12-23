@@ -2,7 +2,7 @@
 title: Před zakoupením
 description: Podrobné pokyny k použití, pokud zvažujete zakoupit Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce.
 author: ShellyBakke
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757188"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874577"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
@@ -42,7 +42,7 @@ Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvah
 - [Systémové požadavky pro místní nasazení](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Místní nasazení nejsou podporována na žádném veřejném cloudu, včetně Microsoft Azure.
+> Místní nasazení nejsou podporována na žádném veřejném cloudu, včetně Microsoft Azure. Jsou však podporovány, aby mohly běžet na [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) a [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 Další informace získáte v tématu [Možnosti nasazení](../../dev-itpro/deployment/choose-deployment-type.md).
 

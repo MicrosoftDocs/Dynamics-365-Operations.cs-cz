@@ -1,7 +1,7 @@
 ---
 title: Rozdělení dlouhodobého majetku
 description: Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku.
-author: saraschi2
+author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJourna
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ac7bc9ae9040f9668c36c570be795ebeb7c6970049ff911b1caeadd06f31d0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2fbca50342196dd9f5acb53027fb9c0052a81de
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778983"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883536"
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku. Používá účetní roli a vzorová data USMF.
+Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku. 
 
 ## <a name="create-a-new-fixed-asset"></a>Vytvořit nový dlouhodobý majetek
 

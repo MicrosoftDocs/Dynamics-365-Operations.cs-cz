@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700130"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890849"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -119,6 +119,9 @@ Stejně jako můžete vybrat (nebo zrušit výběr) všech řádků v mřížce 
 
 ### <a name="hiding-column-names"></a>Skrytí názvů sloupců
 Při seskupení dat je výchozím chováním zobrazení názvu sloupce v řádku záhlaví skupiny. Můžete zvolit potlačení názvu sloupce v řádcích záhlaví skupiny výběrem **Možnosti mřížky** > **Skrýt název sloupce skupiny**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Seskupování podle sloupců data a času
+Počínaje verzí 10.0.24 byla pro pole Datum nebo DateTime přidána možnost pro seskupení podle roku, měsíce nebo dne. „Hodnota“ skupiny v odpovídajícím řádku záhlaví bude odpovídat formátu z tohoto pole. Navíc pro pole DateTime a Čas budete moci seskupovat podle hodin, minut nebo sekund.    
 
 ## <a name="freezing-columns"></a>Zmrazení sloupců
 Některé sloupce v mřížce mohou být dostatečně důležité pro kontext, který se nemá rolovat mimo zobrazení. Místo toho můžete chtít, aby byly hodnoty v těchto sloupcích vždy viditelné. Funkce **Ukotvit sloupce v mřížce** poskytuje tuto flexibilitu uživatelům. 

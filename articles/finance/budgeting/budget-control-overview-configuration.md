@@ -2,7 +2,7 @@
 title: Přehled kontroly rozpočtu
 description: Toto téma představuje funkci kontroly rozpočtu a poskytuje informace, které vám pomohou nakonfigurovat kontrolu rozpočtu tak, aby optimalizovala správu finančních zdrojů vaší organizace.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772872"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890693"
 ---
 # <a name="budget-control-overview"></a>Přehled kontroly rozpočtu
 
@@ -78,9 +78,7 @@ Na kartě **Oprávnění překročit rozpočet** můžete určit skupiny uživat
 Na kartě **Dostupné rozpočtové prostředky** můžete definovat vzorec, který se použije k výpočtu dostupných rozpočtových prostředků. V závislosti na tom, jak konzervativně organizace spravuje své finanční prostředky, nebo v závislosti na předpisech a oborových požadavcích může výpočet zahrnovat rozpracované nebo nezaúčtované dokumenty. 
 
 > [!NOTE]
-> Pokud je tento výpočet po upraven během rozpočtového cyklu, tyto změny neovlivní žádné dokumenty, které dříve prošly kontrolami rozpočtu a které byly zaúčtovány či dokončeny. Ve verzi aplikace 10.0.17 je k dispozici nová funkce **Sledujte pouze částky ve výpočtu dostupných rozpočtových prostředků** pro omezené zákazníky. Tato funkce umožňuje změnit, jaké údaje jsou sledovány v tabulkách BudgetSourceTracking. Když je tato funkce zapnutá, částky se ukládají, pouze pokud jsou vybrány pro použití ve výpočtu dostupných rozpočtových prostředků. Chcete-li požádat, aby byla funkce **Sledujte pouze částky ve výpočtu dostupných rozpočtových prostředků** povolena, kontaktujte technickou podporu. 
-
-### <a name="documents-and-journals"></a>Dokumenty a deníky
+> Pokud je tento výpočet po upraven během rozpočtového cyklu, tyto změny neovlivní žádné dokumenty, které dříve prošly kontrolami rozpočtu a které byly zaúčtovány či dokončeny. Funkce, která je pojmenována **Sledovat pouze částky ve výpočtu dostupných rozpočtových prostředků** umožňuje změnit, která data jsou sledována v tabulkách BudgetSourceTracking. Když je tato funkce zapnutá, částky se ukládají, pouze pokud jsou vybrány pro použití ve výpočtu dostupných rozpočtových prostředků. Další informace naleznete v tématu [Dostupné rozpočtové prostředky](budget-funds-available.md).
 
 Na kartě **Dokumenty a deníky** můžete vybrat, které zdrojové dokumenty a deníky budou podrobeny kontrole rozpočtu a zda ke kontrole dojde na úrovni položky řádku nebo celého dokumentu. 
 

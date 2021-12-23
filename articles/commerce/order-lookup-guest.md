@@ -2,7 +2,7 @@
 title: Povolit vyhledávání objednávek pro hostující pokladny
 description: Toto téma popisuje, jak povolit vyhledávání objednávek pro hostující pokladny v Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674969"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891491"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Povolit vyhledávání objednávek pro hostující pokladny
 
@@ -58,11 +58,21 @@ Záložka s náhledem **Hledání objednávek** na stránce **Objednávky zákaz
 > [!NOTE]
 > Tyto možnosti určují, kdy se anonymní hostující uživatelé zobrazí osobní údaje, jako je adresa zákazníka a poslední čtyři číslice čísla kreditní karty zákazníka. V zájmu ochrany soukromí registrovaných zákazníků doporučujeme vybrat volbu **Pouze objednávky hostů**. Nejbezpečnější možností však je **Nikdy**.
 
-Poté, co změníte hodnotu pole **Zahrnout osobní údaje do vyhledávání objednávek hostů**, musíte spustit úlohu 1070 (**Konfigurace kanálu**) v centrále Commerce tím, že přejdete na **Maloobchod a obchod \> Maloobchod a obchod IT \> Distribuční plán**.
+Poté, co změníte hodnotu pole **Zahrnout osobní údaje do vyhledávání objednávek hostů**, musíte spustit úlohu 1070 (**Konfigurace kanálu**) v centrále Commerce tím, že přejdete na **Retail a Commerce \> Retail a Commerce IT \> Plán distribuce**.
 
 ## <a name="configure-the-order-lookup-module"></a>Konfigurace modulu pro vyhledávání objednávek
 
 Modul vyhledávání objednávek v knihovně modulů Commerce se používá k vykreslení formuláře, který hostující uživatelé používají k vyhledávání objednávek. Modul pro vyhledávání objednávek lze zahrnout do hlavního slotu jakékoli stránky, která nevyžaduje přihlášení zákazníka. Informace o konfiguraci modulu najdete v části [Vyhledávací modul objednávky](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>Konfigurace stránky s podrobnostmi objednávky
+
+Než si uživatelé typu host budou moci zobrazit podrobnosti o své objednávce, musí být stránka s podrobnostmi objednávky na vašem webu elektronického obchodu nakonfigurována tak, aby nevyžadovala přihlášení. Chcete-li vypnout požadavek na přihlášení pro stránku s podrobnostmi o objednávce, otevřete stránku v konfigurátoru webů Commerce a vyberte slot **Výchozí stránka (povinné)** ve stromovém zobrazení a vymažte zaškrtávací políčko **Vyžaduje přihlášení?** ve spodní části podokna vlastností vpravo.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Přidání odkazu na podrobnosti objednávky v transakčních e-mailech
+
+V e-mailech souvisejících s objednávkou můžete uvést odkaz nebo tlačítko, které zákazníky přesměruje na stránku s podrobnostmi o objednávce. Chcete-li přidat tento odkaz nebo tlačítko, vytvořte hypertextový odkaz HTML, který odkazuje na stránku s podrobnostmi objednávky na vašem webu elektronického obchodu, a předejte ID potvrzení objednávky a e-mailovou adresu zákazníka jako parametry adresy URL, jak je znázorněno v následujícím příkladu.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Další prostředky
 

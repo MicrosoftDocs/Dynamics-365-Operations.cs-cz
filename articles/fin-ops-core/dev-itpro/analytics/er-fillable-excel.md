@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731631"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890858"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
 [!include[banner](../includes/banner.md)]
 
-Můžete navrhnout konfiguraci formátu [elektronického výkaznictví](general-electronic-reporting.md), která má [součást formátu](general-electronic-reporting.md#FormatComponentOutbound) elektronického výkaznictví, kterou můžete nakonfigurovat tak, aby generovala odchozí dokument ve formátu Microsoft Excel. K tomuto účelu musí být použity specifické komponenty formátu elektronického výkaznictví.
+Můžete navrhnout konfiguraci formátu [elektronického výkaznictví](general-electronic-reporting.md) s komponentou formátu elektronického výkaznictví, kterou můžete nakonfigurovat tak, aby generovala odchozí dokument ve formátu sešitu Microsoft Excel. K tomuto účelu musí být použity specifické komponenty formátu elektronického výkaznictví.
 
 Chcete-li se o této funkci dozvědět více, postupujte podle kroků v tématu [Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -124,21 +124,21 @@ Na kartě **Mapování** návrháře operací elektronického výkaznictví mů�
 > [!NOTE]
 > Kvůli známému [Omezení Excelu](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), i když nakonfigurujete buňky pro zalamování textu a nakonfigurujete řádky obsahující tyto buňky tak, aby automaticky upravovaly svou výšku tak, aby odpovídaly zalamovanému textu, možná nebudete moci použít funkce aplikace Excel **Automatické přizpůsobení** a **Obtékání textu** pro sloučené buňky a řádky, které je obsahují. 
 
-V Dynamics 365 Finance verze 10.0.23 můžete přinutit ER, aby ve vygenerovaném dokumentu vypočítal výšku každého řádku, který byl nakonfigurován tak, aby se jeho výška automaticky přizpůsobila obsahu vnořených buněk, kdykoli tento řádek obsahuje alespoň jednu sloučenou buňku, která byla nakonfigurována tak, aby obtékala text uvnitř. Vypočítaná výška se pak použije ke změně velikosti řádku, aby bylo zajištěno, že ve vygenerovaném dokumentu budou viditelné všechny buňky v řádku. Chcete-li začít používat tuto funkci při spuštění jakýchkoli formátů ER, které byly nakonfigurovány pro použití šablon aplikace Excel ke generování odchozích dokumentů, postupujte takto.
+V Dynamics 365 Finance verze 10.0.23 můžete přinutit elektronické výkaznictví, aby ve vygenerovaném dokumentu vypočítal výšku každého řádku, který byl nakonfigurován tak, aby se jeho výška automaticky přizpůsobila obsahu vnořených buněk, kdykoli tento řádek obsahuje alespoň jednu sloučenou buňku, která byla nakonfigurována tak, aby obtékala text uvnitř. Vypočítaná výška se pak použije ke změně velikosti řádku, aby bylo zajištěno, že ve vygenerovaném dokumentu budou viditelné všechny buňky v řádku. Chcete-li začít používat tuto funkci při spuštění jakýchkoli formátů elektronického výkaznictví, které byly nakonfigurovány pro použití šablon aplikace Excel ke generování odchozích dokumentů, postupujte takto.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** vyberte v části **Související odkazy** možnost **Parametry elektronického výkaznictví**.
 3. Na stránce **Parametry elektronického výkaznictví** nastavte na kartě **Modul runtime** u možnosti **Zalamovat text v buňce** hodnotu **Ano**.
 
-Pokud chcete změnit toto pravidlo pro jeden formát ER, aktualizujte verzi konceptu tohoto formátu podle následujících kroků.
+Pokud chcete změnit toto pravidlo pro jeden formát elektronického výkaznictví, aktualizujte verzi konceptu tohoto formátu podle následujících kroků.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Konfigurace** vyberte **Konfigurace výkaznictví**.
-3. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně vyberte konfiguraci ER, která je navržena pro použití šablony Excel pro generování odchozích dokumentů.
+3. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně vyberte konfiguraci elektronického výkaznictví, která je navržena pro použití šablony Excel pro generování odchozích dokumentů.
 4. Na pevné záložce **Verze** vyberte verzi konfigurace se stavem **Koncept**.
 5. V podokně akcí zvolte **Návrhář**.
 6. Na stránce **Návrhář formátu** ve stromu formátu v levém podokně vyberte komponentu Excel, která je propojena s šablonou Excel.
-7. Na kartě **Formát** v poli **Upravte výšku řádku** vyberte hodnotu, která určí, zda má být ER vynuceno za běhu změnit výšku řádků v odchozím dokumentu, který je generován upraveným formátem ER:
+7. Na kartě **Formát** v poli **Upravte výšku řádku** vyberte hodnotu, která určí, zda má být elektronické výkaznictví vynuceno za běhu změnit výšku řádků v odchozím dokumentu, který je generován upraveným formátem elektronického výkaznictví:
 
     - **Výchozí** – Použijte obecné nastavení, které je nakonfigurováno v poli **Automaticky přizpůsobit výšku řádku** na stránce **Parametry elektronického výkaznictví**.
     - **Ano** – Přepište obecné nastavení a změňte výšku řádku za běhu.
@@ -175,7 +175,7 @@ Součást **Konec stránky** vynutí, aby Excel začal na nové stránce. Tato s
 
 ### <a name="overview"></a>Přehled
 
-Komponentu **Strana** použijte, když chcete, aby Excel ve vygenerovaném odchozím dokumentu dodržoval formát ER a stránkování struktury. Když formát ER spouští komponenty, které jsou podřazeny komponentě **Strana**, automaticky se přidají požadované konce stránek. Během tohoto procesu se bere do úvahy velikost generovaného obsahu, nastavení stránky šablony aplikace Excel a velikost papíru vybraná v šabloně aplikace Excel.
+Komponentu **Strana** použijte, když chcete, aby Excel ve vygenerovaném odchozím dokumentu dodržoval formát elektronického výkaznictví a stránkování struktury. Když formát elektronického výkaznictví spouští komponenty, které jsou podřazeny komponentě **Strana**, automaticky se přidají požadované konce stránek. Během tohoto procesu se bere do úvahy velikost generovaného obsahu, nastavení stránky šablony aplikace Excel a velikost papíru vybraná v šabloně aplikace Excel.
 
 Pokud musíte vygenerovaný dokument rozdělit do různých sekcí, z nichž každá má jiné stránkování, můžete konfigurovat několik komponent **Strana** v každé komponentě [List](er-fillable-excel.md#sheet-component).
 
@@ -193,16 +193,16 @@ Pokud je poslední komponentou podřazenou komponentě **Strana** komponenta typ
 
 Můžete přidat několik dalších komponent **Rozsah** mezi volitelné komponenty **Rozsah**, které určí způsob vyplňování generovaného dokumentu.
 
-Pokud sada vnořených komponent **Rozsah** podřazených komponentě **Strana** nevyhovuje dříve popsané struktuře, dojde k [chybě](er-components-inspections.md#i17) ověření v režimu návrhu v návrháři formátu ER. Chybová zpráva vás informuje, že problém může způsobit problémy za běhu.
+Pokud sada vnořených komponent **Rozsah** podřazených komponentě **Strana** nevyhovuje dříve popsané struktuře, dojde k [chybě](er-components-inspections.md#i17) ověření v režimu návrhu v návrháři formátu elektronického výkaznictví. Chybová zpráva vás informuje, že problém může způsobit problémy za běhu.
 
 > [!NOTE]
 > Chcete-li generovat správný výstup, nezadávejte vazbu pro žádnou komponentu **Rozsah** podřazenou komponentě **Strana**, pokud je vlastnost **Směr replikace** pro tuto komponentu **Rozsah** nastavena na **Žádná replikace** a rozsah je konfigurován tak, aby generoval záhlaví stránky nebo zápatí stránky.
 
-Pokud chcete, aby počítání a sčítání související se stránkováním vypočítalo průběžné součty a součty za stránku, doporučujeme konfigurovat požadované zdroje dat pro [shromažďování dat](er-data-collection-data-sources.md). Chcete-li se naučit používat komponentu **Strana** ke stránkování generovaného sešitu aplikace Excel, dokončete postupy uvedené v článku [Návrh formátu ER pro stránkování generovaného dokumentu ve formátu aplikace Excel](er-paginate-excel-reports.md).
+Pokud chcete, aby počítání a sčítání související se stránkováním vypočítalo průběžné součty a součty za stránku, doporučujeme konfigurovat požadované zdroje dat pro [shromažďování dat](er-data-collection-data-sources.md). Chcete-li se naučit používat komponentu **Strana** ke stránkování generovaného sešitu aplikace Excel, dokončete postupy uvedené v článku [Návrh formátu elektronického výkaznictví pro stránkování generovaného dokumentu ve formátu aplikace Excel](er-paginate-excel-reports.md).
 
 ### <a name="limitations"></a><a name="page-component-limitations"></a>Omezení
 
-Když použijete komponentu **Strana** ke stránkování v Excelu, nebudete znát konečný počet stránek ve vygenerovaném dokumentu, dokud nebude stránkování dokončeno. Proto nemůžete vypočítat celkový počet stránek pomocí vzorců ER a vytisknout správný počet stránek generovaného dokumentu na libovolnou stránku před poslední stránkou.
+Když použijete komponentu **Strana** ke stránkování v Excelu, nebudete znát konečný počet stránek ve vygenerovaném dokumentu, dokud nebude stránkování dokončeno. Proto nemůžete vypočítat celkový počet stránek pomocí vzorců elektronického výkaznictví a vytisknout správný počet stránek generovaného dokumentu na libovolnou stránku před poslední stránkou.
 
 > [!TIP]
 > Chcete-li tato čísla uvést v záhlaví nebo zápatí aplikace Excel, použijte speciální [formátování](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) Excelu pro záhlaví a zápatí.
@@ -213,12 +213,12 @@ Pokud konfigurujete šablonu aplikace Excel tak, aby používala [podmíněné f
 
 ### <a name="applicability"></a>Použitelnost
 
-Komponenta **Strana** funguje u komponenty formátu [souboru aplikace Excel](er-fillable-excel.md#excel-file-component) pouze v případě, že je tato komponenta nakonfigurována pro použití šablony v aplikaci Excel. Jestliže [nahradíte](tasks/er-design-configuration-word-2016-11.md) šablonu aplikace Excel šablonou aplikace Word a poté spustíte upravitelný formát ER, komponenta **Strana** bude ignorována.
+Komponenta **Strana** funguje u komponenty formátu [souboru aplikace Excel](er-fillable-excel.md#excel-file-component) pouze v případě, že je tato komponenta nakonfigurována pro použití šablony v aplikaci Excel. Jestliže [nahradíte](tasks/er-design-configuration-word-2016-11.md) šablonu aplikace Excel šablonou aplikace Word a poté spustíte upravitelný formát elektronického výkaznictví, komponenta **Strana** bude ignorována.
 
-Komponenta **Strana** funguje pouze tehdy, když je povolena možnost **Povolit používání knihovny EPPlus v rámci elektronického vykazování**. Je vyvolána výjimka za běhu, pokud se ER pokusí zpracovat komponentu **Strana**, když je tato funkce deaktivována.
+Komponenta **Strana** funguje pouze tehdy, když je povolena možnost **Povolit používání knihovny EPPlus v rámci elektronického vykazování**. Je vyvolána výjimka za běhu, pokud se elektronické výkaznictví pokusí zpracovat komponentu **Strana**, když je tato funkce deaktivována.
 
 > [!NOTE]
-> Je vyvolána výjimka za běhu, pokud formát ER zpracovává komponentu **Strana** šablony aplikace Excel, která obsahuje alespoň jeden vzorec, který odkazuje na neplatnou buňku. Chcete-li zabránit chybám za běhu, opravte šablonu aplikace Excel podle popisu v článku [Jak opravit chybu #ODKAZ!](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+> Je vyvolána výjimka za běhu, pokud formát elektronického výkaznictví zpracovává komponentu **Strana** šablony aplikace Excel, která obsahuje alespoň jeden vzorec, který odkazuje na neplatnou buňku. Chcete-li zabránit chybám za běhu, opravte šablonu aplikace Excel podle popisu v článku [Jak opravit chybu #ODKAZ!](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
 
 ## <a name="footer-component"></a>Komponenta zápatí
 
@@ -244,7 +244,7 @@ Pod přidanou komponentu **Zápatí** přidejte požadované vnořené komponent
 Můžete také použít speciální [formátovací kódy](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) ke správnému formátování obsahu vygenerovaného zápatí. Chcete-li se naučit používat tento přístup, postupujte podle pokynů v [příkladu 1](#example-1) dále v tomto tématu.
 
 > [!NOTE]
-> Při konfiguraci formátů ER nezapomeňte vzít v úvahu [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) Excel a maximální počet znaků pro jedno záhlaví nebo zápatí.
+> Při konfiguraci formátů elektronického výkaznictví nezapomeňte vzít v úvahu [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) Excel a maximální počet znaků pro jedno záhlaví nebo zápatí.
 
 ## <a name="header-component"></a>Komponenta záhlaví
 
@@ -287,16 +287,16 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 
     >[!NOTE]
     > Přepočet vzorce je vynucen ručně, když je generovaný dokument otevřen k náhledu v aplikaci Excel.
-    > Tuto možnost nepoužívejte, pokud konfigurujete cíl ER, který předpokládá použití vygenerovaného dokumentu bez jeho náhledu v aplikaci Excel (pro převod PDF, odeslání e-mailem atd.), protože generovaný dokument nemusí obsahovat hodnoty v buňkách obsahujících vzorce.
+    > Tuto možnost nepoužívejte, pokud konfigurujete cíl elektronického výkaznictví, který předpokládá použití vygenerovaného dokumentu bez jeho náhledu v aplikaci Excel (pro převod PDF, odeslání e-mailem atd.), protože generovaný dokument nemusí obsahovat hodnoty v buňkách obsahujících vzorce.
 
 ## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Příklad 1: Formátování obsahu zápatí
 
-1. Použijte poskytnuté konfigurace ER ke [generování](er-generate-printable-fti-forms.md) dokumentu s volnou textovou fakturou (FTI), který lze tisknout.
+1. Použijte poskytnuté konfigurace elektronického výkaznictví ke [generování](er-generate-printable-fti-forms.md) dokumentu s volnou textovou fakturou (FTI), který lze tisknout.
 2. Zkontrolujte zápatí vygenerovaného dokumentu. Všimněte si, že obsahuje informace o aktuálním čísle stránky a celkovém počtu stránek v dokumentu.
 
     ![Zkontrolujte zápatí vygenerovaného dokumentu ve formátu Excel.](./media/er-fillable-excel-footer-1.gif)
 
-3. V návrháři formátu ER [otevřete](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ukázkový formát ER pro kontrolu.
+3. V návrháři formátu elektronického výkaznictví [otevřete](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ukázkový formát elektronického výkaznictví pro kontrolu.
 
     Zápatí listu **faktury** je generováno na základě nastavení dvou komponent **Řetězec**, které jsou umístěny pod komponentou **Zápatí**.
 
@@ -307,11 +307,11 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 
     - Druhý komponent **Řetězec** vyplní text, který obsahuje aktuální číslo stránky a celkový počet stránek v aktuálním dokumentu.
 
-    ![Zkontrolujte formát ER zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-2.png)
+    ![Zkontrolujte formát elektronického výkaznictví zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-2.png)
 
-4. Přizpůsobte ukázkový formát ER a upravte aktuální zápatí stránky:
+4. Přizpůsobte ukázkový formát elektronického výkaznictví a upravte aktuální zápatí stránky:
 
-    1. [Vytvořit](er-quick-start2-customize-report.md#DeriveProvidedFormat) odvozený formát **Faktura s volným textem (Excel) vlastní**, který je založen na vzorovém formátu ER.
+    1. [Vytvořit](er-quick-start2-customize-report.md#DeriveProvidedFormat) odvozený formát **Faktura s volným textem (Excel) vlastní**, který je založen na vzorovém formátu elektronického výkaznictví.
     2. Přidejte první nový pár komponent **Řetězec** pro komponentu **Zápatí** listu **Faktura**:
 
         1. Přidejte komponentu **Řetězec**, která zarovná název společnosti vlevo a zobrazí jej v 8bodovém písmu "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**).
@@ -322,14 +322,48 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
         1. Přidejte komponentu **Řetězec**, která zarovná datum zpracování vpravo a zobrazí jej v 8bodovém písmu "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
         2. Přidejte komponentu **Řetězec**, která vyplní datum zpracování ve vlastním formátu (**"&nbsp;&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Kontrola formátu ER zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-3.png)
+        ![Kontrola formátu elektronického výkaznictví zápatí na stránce Návrhář formátů.](./media/er-fillable-excel-footer-3.png)
 
-    4. [Vyplňte](er-quick-start2-customize-report.md#CompleteDerivedFormat) verzi konceptu odvozeného formátu ER **Faktura s volným textem (Excel) vlastní**.
+    4. [Vyplňte](er-quick-start2-customize-report.md#CompleteDerivedFormat) verzi konceptu odvozeného formátu elektronického výkaznictví **Faktura s volným textem (Excel) vlastní**.
 
-5. [Nakonfigurujte](er-generate-printable-fti-forms.md#configure-print-management) správu tisku pro použití odvozeného formátu ER **Faktura s volným textem (Excel) vlastní** namísto ukázkového formátu ER.
+5. [Nakonfigurujte](er-generate-printable-fti-forms.md#configure-print-management) správu tisku pro použití odvozeného formátu elektronického výkaznictví **Faktura s volným textem (Excel) vlastní** namísto ukázkového formátu elektronického výkaznictví.
 6. Vygenerujte tisknutelný dokument FTI a zkontrolujte zápatí vygenerovaného dokumentu.
 
     ![Kontrola zápatí vygenerovaného dokumentu ve formátu Excel.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Příklad 2: Oprava problému EPPlus se sloučenými buňkami
+
+Můžete spustit formát elektronického výkaznictví a tím vygenerovat odchozí dokument ve formátu sešitu aplikace Excel. Když je povolena funkce **Povolit používání knihovny EPPlus v rámci elektronického vykazování** v pracovním prostoru **Správa funkcí**, [knihovna EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) se použije k vytvoření výstupu ve formátu sešitu Excel. Nicméně kvůli známému [chování aplikace Excel](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) a omezení knihovny EPPlus se můžete setkat s následující výjimkou: „Nelze odstranit/přepsat sloučené buňky. Rozsah je částečně sloučen s jiným sloučeným rozsahem.“ Chcete-li zjistit, jaké šablony aplikace Excel mohou způsobit tuto výjimku a jak můžete problém vyřešit, postupujte dle následujícího příkladu.
+
+1. V desktopové aplikaci Excel vytvořte nový sešit Excel.
+2. V listu **List1** přidejte název **ReportTitle** pro buňku **A2**.
+3. Slučte buňky **A1** a **A2**.
+
+    ![Kontrola výsledků sloučení buněk A1 a A2 v navrženém sešitu Excel v desktopové aplikaci Excel.](./media/er-fillable-excel-example2-1.png)
+
+3. Na stránce **Konfigurace** [přidejte nový formát elektronického výkaznictví](er-fillable-excel.md#add-a-new-er-format), abyste vygenerovali odchozí dokument ve formátu sešitu Excel.
+4. Na stránce **Návrhář formátů** [importujte](er-fillable-excel.md#template-import) navržený sešit Excel do přidaného formátu elektronického výkaznictví jako novou šablonu pro odchozí dokumenty.
+5. Na kartě **Mapování** nakonfigurujte vazbu pro komponentu **ReportTitle** typu [Buňka](er-fillable-excel.md#cell-component).
+6. Spusťte konfigurovaný formát elektronického výkaznictví. Všimněte si, že je vyvolána následující výjimka: „Nelze odstranit/přepsat sloučené buňky. Rozsah je částečně sloučen s jiným sloučeným rozsahem.“
+
+    ![Kontrola výsledků spuštění nakonfigurovaného formátu elektronického výkaznictví na stránce Návrhář formátů.](./media/er-fillable-excel-example2-2.png)
+
+Problém opravíte některým z následujících způsobů:
+
+- **Jednodušší, ale nedoporučuje se:** V pracovním prostoru **Správa funkcí** vypněte funkci **Povolit používání knihovny EPPlus v rámci elektronického vykazování**. Ačkoli je tento přístup snazší, můžete se při jeho použití setkat s jinými problémy, protože některé funkce elektronického vykazování jsou podporovány pouze v případě, že je povolena funkce **Povolit používání knihovny EPPlus v rámci elektronického vykazování**.
+- **Doporučeno:** Postupujte následovně:
+
+    1. V desktopové aplikaci Excel upravte sešit aplikace Excel jedním z následujících způsobů:
+
+        - Na listu **List1** zrušte sloučení buněk **A1** a **A2**.
+        - Změňte odkaz pro název **ReportTitle** z **=List1!$A$2** na **=List1!$A$1**.
+
+        ![Kontrola výsledků změny odkazu v navrženém sešitu Excel v desktopové aplikaci Excel.](./media/er-fillable-excel-example2-3.png)
+
+    2. Na stránce **Návrhář formátů** [importujte](er-fillable-excel.md#template-import) upravený sešit aplikace Excel do upravitelného formátu elektronického výkaznictví, aby se aktualizovala stávající šablona.
+    3. Spusťte upravený formát elektronického výkaznictví.
+
+        ![Kontrola vygenerovaného dokumentu v desktopové aplikaci Excel.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 

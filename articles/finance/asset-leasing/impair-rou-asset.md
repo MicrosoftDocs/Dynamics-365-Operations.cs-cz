@@ -2,7 +2,7 @@
 title: Snížení hodnoty používaného majetku
 description: Toto téma popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů majetku u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842).
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723816"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890823"
 ---
 # <a name="impair-right-of-use-assets"></a>Snížení hodnoty používaného majetku
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Pokud není zůstatková hodnota používaného majetku (ROU) zpětně získatelná, možná budete muset otestovat, zda je snížena hodnota daného majetku. Pokud zjistíte, že došlo ke snížení hodnoty aktiva, může leasing aktiv zaznamenat snížení hodnoty a odpovídajícím způsobem upravit odpisový plán. Toto téma popisuje funkci, která zaznamenává snížení hodnoty a upravuje plán odpisů u operativního leasingu s tématem Kodifikace účetních standardů 842 (ASC 842). Stejná metoda platí i pro leasingy podle mezinárodního standardu Financial Reporting 16 (IFRS 16).
 
@@ -37,13 +38,16 @@ Zbývající zůstatek používaného majetku bude odepisován rovnoměrně po d
 3. V dialogovém okně, které se zobrazí, do pole **Snížení hodnoty** zadejte částku snížení hodnoty majetku. Chcete-li snížit hodnotu používaného majetku, měli byste zadat kladnou hodnotu.
 4. Do pole **Datum transakce** zadejte datum, kdy má být položka snížení hodnoty zaúčtována.
 5. Do pole **Zbývající období** zadejte zbývající počet měsíců k amortizaci.
-6. Zapněte parametr **Zaúčtovat**, pokud chcete, aby systém automaticky zaúčtoval položku deníku výdajů pro snížení hodnoty. Pokud necháte tento parametr vypnutý, systém vytvoří záznam, ale nezaúčtuje jej. Poté můžete příspěvek zaúčtovat na straně **Deníky o pronájmu majetku**.
-7. Nastavte možnost **Náhled před zaúčtováním** na **Ano**, chcete-li zobrazit navrhovanou položku před jejím vytvořením nebo zaúčtováním.
-8. Nastavte možnost **Zavřít knihu** na **Ano**, chcete-li uzavřít knihu pronájmu. Tuto akci nelze vrátit zpět. Záznamy nelze zaúčtovat proti uzavřeným leasingům a uzavřené leasingy nelze upravovat.
-9. Vyberte **OK**, chcete-li vytvořit nebo zaúčtovat položku snížení hodnoty.
-10. Chcete-li zobrazit plán odpisů aktiv se sníženou hodnotou, otevřete plán odpisů aktiv pro danou leasingovou knihu. Majetek bude nyní odepisován rovnoměrně po dobu měsíců, které jste zadali v poli **Zbývající období**.
-11. Chcete-li zobrazit položku deníku výdajů na snížení hodnoty, vyberte **Deník leasingu majetku** v podokně akcí knihy pronájmu se sníženou hodnotou. Systém vytvoří zápis do deníku, který debituje účet zaúčtování výdajů na snížení hodnoty a kredituje účet zaúčtování majetku leasingu.
-12. Chcete-li zobrazit novou účetní hodnotu používaného majetku, vyberte **Transakce majetku** v podokně akcí knihy pronájmu.
+6. Nastavte možnost **Preview**, aby se zobrazoval navrhovaný zůstatek majetku a finanční položka před jejich vytvořením nebo zaúčtováním.
+7. Nastavte možnost **Zavřít knihu** na **Ano**, chcete-li uzavřít knihu pronájmu. Tuto akci můžete vrátit zpět použitím stavu **Znovu otevřít leasing**. Záznamy nelze zaúčtovat proti uzavřeným leasingům a uzavřené leasingy nelze upravovat. 
+8. Vyberte **Zaúčtovat**, chcete-li vytvořit nebo zaúčtovat položku snížení hodnoty.
+
+    > [!NOTE]
+    > Po zaúčtování transakce snížení hodnoty se vytvoří nová verze knihy.
+
+9. Chcete-li zobrazit plán odpisů aktiv se sníženou hodnotou, otevřete plán odpisů aktiv pro danou leasingovou knihu. Majetek bude nyní odepisován rovnoměrně po dobu měsíců, které jste zadali v poli **Zbývající období**.
+10. Chcete-li zobrazit položku deníku výdajů na snížení hodnoty, vyberte **Deník leasingu majetku** v podokně akcí knihy pronájmu se sníženou hodnotou. Systém vytvoří zápis do deníku, který debituje účet zaúčtování výdajů na snížení hodnoty a kredituje účet zaúčtování majetku leasingu. 
+11. Chcete-li zobrazit novou účetní hodnotu používaného majetku, vyberte **Transakce majetku** v podokně akcí knihy pronájmu.
 
 ## <a name="example-of-rou-asset-impairment"></a>Příklad snížení hodnoty používaného majetku
 

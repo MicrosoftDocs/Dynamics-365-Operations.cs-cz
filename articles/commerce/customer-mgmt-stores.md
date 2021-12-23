@@ -1,8 +1,8 @@
 ---
 title: Správa zákazníků v obchodech
 description: Toto téma vysvětluje, jak mohou maloobchodníci povolit funkce správy zákazníků v místě prodeje (POS) v Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/01/2021
+author: gvrmohanreddy
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 395bc7049ba32c1e572730e482b81613a4873c59
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 29e45419f712e25092b473e34144ac1146e4ed9b
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675218"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913619"
 ---
 # <a name="customer-management-in-stores"></a>Správa zákazníků v obchodech
 
@@ -42,38 +42,13 @@ Maloobchodníci mohou použít stránku **Všechny obchody** v ústředí Commer
 
 Prodejní spolupracovníci mohou pro zákazníka zachytit více adres. Jméno a telefonní číslo zákazníka se dědí z kontaktních informací, které jsou spojeny s každou adresou. Karta s náhledem **Adresy** záznamu zákazníka obsahuje pole **Účel**, které mohou prodejní spolupracovníci upravit. Pokud je typ zákazníka **Osoba**, výchozí hodnota je **Domov**. Pokud je typ zákazníka **Organizace**, výchozí hodnota je **Sídlo**. Mezi další hodnoty, které toto pole podporuje, patří **Domov**, **Kancelář** a **Poštovní schránka**. Hodnota pole **Země** pro adresu je zděděna z primární adresy, která je uvedena na stránce **Provozní jednotka** stránka v centrále Commerce v nabídce **Správa organizace \> Organizace \> Provozní jednotky**.
 
-## <a name="sync-customers-and-async-customers"></a>Synchronní zákazníci a asynchronní zákazníci
 
-> [!IMPORTANT]
-> Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto bez ohledu na váš výběr mezi synchronním a asynchronním vytvářením zákazníků musí správci centrály Commerce vytvořit a naplánovat opakující se dávkovou úlohu pro **P-práci**, úlohy **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** (dříve nazvanou **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu**) a úlohu **1010**, aby byli všichni asynchronní zákazníci převedeni na synchronní zákazníky v centrále Commerce.
-
-V Commerce existují dva režimy vytváření zákazníků: Synchronní (nebo Sync) a Asynchronní (nebo Async). Ve výchozím nastavení jsou zákazníci vytvářeni synchronně. Jinými slovy jsou vytvářeni v ústředí Commerce v reálném čase. Režim vytváření zákazníků Sync je výhodný, protože noví zákazníci jsou okamžitě prohledatelní napříč kanály. Má to však také nevýhodu. Protože to generuje volání [Commerce Data Exchange: služba v reálném čase](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) volání do centrály Commerce, výkon může být ovlivněn, pokud se uskuteční mnoho souběžných volání vytváření zákazníků.
-
-Pokud je možnost **Vytvořit zákazníka v asynchronním režimu** je nastavena na **Ano** v profilu funkce obchodu (**Retail a Commerce \> Nastavení kanálu \> Nastavení internetového obchodu \> Profily funkčnosti**), volání služby v reálném čase se nepoužívají k vytváření záznamů o zákaznících v databázi kanálů. Režim vytváření asynchronních zákazníků nemá vliv na výkon centrály Commerce. Každému novému záznamu zákazníka Async je přiřazen dočasný globálně jedinečný identifikátor (GUID), který se použije jako ID zákaznického účtu. Tento identifikátor GUID se uživatelům POS nezobrazuje. Místo toho se těmto uživatelům zobrazí **Čeká se na synchronizaci** jako ID zákaznického účtu. 
-
-### <a name="convert-async-customers-to-sync-customers"></a>Převedení asynchronních zákazníků na synchronní zákazníky
-
-Chcete-li převést zákazníky Async na zákazníky Sync, musíte nejprve spustit **P-úlohu** a odeslat zákazníky Async do centrály Commerce. Potom spusťte úlohu **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** (dříve nazvanou **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu**) k vytvoření ID zákaznického účtu. Nakonec spusťte úlohu **1010** k synchronizaci nových ID zákaznických účtů s kanály.
-
-### <a name="async-customer-limitations"></a>Omezení asynchronních zákazníků
-
-Funkce asynchronních zákazníků má v současné době následující omezení:
-
-- Asynchronní záznamy o zákaznících nelze upravovat, pokud nebyl zákazník vytvořen v ústředí Commerce a nové ID zákaznického účtu nebylo synchronizováno zpět do kanálu. Adresu proto nelze uložit pro asynchronního zákazníka, dokud nebude tento zákazník synchronizován s centrálou Commerce, protože přidání adresy zákazníka je interně implementováno jako operace úprav v profilu zákazníka. Pokud je však povolena funkce **Povolit asynchronní vytváření adres zákazníků**, adresy zákazníků lze také uložit pro asynchronní zákazníky.
-- Přidružení nelze spojit se zákazníky Async. Proto noví zákazníci Async nezdědí přidružení od výchozího zákazníka.
-- Věrnostní karty nelze vydat zákazníkům Async, pokud nebylo nové ID zákaznického účtu synchronizováno zpět do kanálu.
-- Sekundární e-mailové adresy a telefonní čísla nelze pro zákazníky Async zachytit.
-
-Ačkoli některá z výše uvedených omezení mohou vést k tomu, že byste se rozhodli pro volbu Synchronizace zákazníka pro vaši firmu, tým Commerce pracuje na tom, aby možnosti asynchronních zákazníků více odpovídaly možnostem synchronizace zákazníků. Například od vydání Commerce verze 10.0.22 nová funkce **Povolte asynchronní vytváření adres zákazníků**, kterou můžete povolit v pracovním prostoru **Správa funkcí**, asynchronně ukládá nově vytvořené adresy zákazníků pro synchronní i asynchronní zákazníky. Pokud chcete uložit tyto adresy v profilu zákazníka v centrále Commerce, musíte naplánovat opakovanou dávkovou úlohu pro **P-úlohu** **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** a úlohu **1010**, aby byli všichni zákazníci Async převedeni na zákazníky Sync v centrále Commerce.
-
-### <a name="customer-creation-in-pos-offline-mode"></a>Vytváření zákazníka v offline režimu POS
-
-Kdykoli POS přejde do režimu offline, systém automaticky asynchronně vytvoří zákazníky, a to i v případě, že je zakázán režim asynchronního vytváření zákazníků. Proto, jak bylo uvedeno dříve, musí správci centrály Commerce vytvořit a naplánovat opakovanou dávkovou úlohu pro **P-úlohu** **Synchronizovat zákazníky a obchodní partnery z asynchronního režimu** a úlohu **1010**, aby byli všichni zákazníci Async převedeni na zákazníky Sync v centrále Commerce.
-
-> [!NOTE]
-> Pokud je možnost **Filtrovat sdílené tabulky údajů o zákaznících** nastavena na **Ano** na stránce **Schéma obchodního kanálu** (**Retail a Commerce \> Nastavení Commerce \> Plánovač Commerce \> Skupina databáze kanálů**), záznamy zákazníků se nevytvářejí v režimu offline POS. Další informace viz [Vyloučení dat offline](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## <a name="additional-resources"></a>Další prostředky
+
+[Asynchronní režim vytváření zákazníka](async-customer-mode.md)
+
+[Převedení asynchronních zákazníků na synchronní zákazníky](convert-async-to-sync.md)
 
 [Atributy odběratele](dev-itpro/customer-attributes.md)
 

@@ -2,7 +2,7 @@
 title: Přehled výpočtu daně
 description: Toto téma vysvětluje celkový rozsah a funkce výpočtu daně.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647050"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892417"
 ---
 # <a name="tax-calculation-overview"></a>Přehled výpočtu daně
 
@@ -65,9 +65,23 @@ Výpočet daně je nasazen v následujících geografických oblastech Azure. Bu
 > [!NOTE]
 > Výpočet daně nepodporuje dřívější verzi Dynamics 365, například Dynamics AX 2012 nebo místní nasazení Dynamics 365.
 
+## <a name="versions"></a>Verze
+Doporučujeme importovat a nastavit konfiguraci výpočtu daně s verzí, která odpovídá vaší verzi Finance nebo Supply Chain Management.
+
+| Verze Finance nebo Supply Chain Management | Verze konfigurace daně               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Konfigurace daně - Evropa 30.12.82     |
+| 10.0.19         | Konfigurace výpočtu daně 36.38.193 |
+| 10.0.20         | Konfigurace výpočtu daně 40.43.208 |
+| 10.0.21         | Konfigurace výpočtu daně 40.48.215 |
+| 10.0.22         | Konfigurace výpočtu daně 40.48.215 |
+| 10.0.23         | Konfigurace výpočtu daně 40.50.221 |
+| 10.0.24         | Konfigurace výpočtu daně 40.50.225 |
+
+
 ## <a name="data-flow"></a>Tok dat
 
-Zde je přehled procesu toku dat pro výpočet tTax. 
+Zde je přehled procesu toku dat pro výpočet daně. 
 
 1. V RCS zobrazujte a importujte konfigurace modelu zdanitelných dokumentů a konfigurace mapování modelu. Pokud musíte rozšířit konfigurace pro pokročilý scénář, viz [Přidejte datová pole do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).
 2. V RCS můžete vytvářet nebo udržovat daňové funkce. Pomocí daňových funkcí můžete zachovat daňové sazby a pravidla daňové použitelnosti.
@@ -169,6 +183,10 @@ Ve verzi 10.0.23 jsou podporovány následující země/oblasti pro primární a
 - Japonsko
 - Malajsie
 - Singapur
+
+Ve verzi 10.0.24 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+
+- Mexiko
 
 ## <a name="related-resources"></a>Související prostředky
 

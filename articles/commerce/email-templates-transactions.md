@@ -2,7 +2,7 @@
 title: Vytvoření e-mailových šablon pro transakční události
 description: Toto téma popisuje, jak vytvářet, odesílat a konfigurovat e-mailové šablony pro transakční události v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713790"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913745"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -136,7 +136,7 @@ Typ oznámení o schválení potenciálního zákazníka B2B podporuje následuj
 | `storename`        | Název kanálu, kde byl potenciální zákazník vytvořen. |
 | `storeurl`         | Ve výchozím nastavení prázdné. K použití tohoto zástupného symbolu je nutné vytvořit vlastní rozšíření. |
 
-### <a name="b2b-prospect-approved"></a>Potenciální zákazník B2B schválen
+### <a name="b2b-prospect-rejected"></a>Potenciální zákazník B2B zamítnut
 
 Typ oznámení *Potenciální zákazníka B2B zamítnut* se spustí, když je žádost potenciálního zákazníka o registraci zamítnuta v ústředí Commerce. Další informace o tom, jak schválit nebo zamítnout potenciální zákazníky B2B, viz [Nastavení uživatele správce pro nového obchodního partnera](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 

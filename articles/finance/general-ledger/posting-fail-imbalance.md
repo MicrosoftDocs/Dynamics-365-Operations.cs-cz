@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605422"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903243"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Selhání zaúčtování deníku z důvodu nevyváženosti
 
@@ -52,13 +52,13 @@ V jednom podporovaném scénáři může mít doklad více než jednu měnu tran
 
 Pokud mají všechny řádky poukázky stejnou měnu transakce a jsou-li částky měny transakce vyvážené, systém ověří, zda jsou částky účetní měny vyrovnané. Pokud je doklad zadán v cizí měně, použije se k převodu částek měny transakce na účetní měnu směnný kurz na řádcích dokladu. Každý řádek dokladu je nejprve přeložen a zaokrouhlen na dvě desetinná místa. Poté se sečtou řádky, aby se určily celkové debety a celkové kredity. Protože je přeložen každý řádek, nemusí být celkový debet a celkový kredit vyvážený. Pokud je však absolutní hodnota rozdílu v rámci hodnoty **Maximální haléřový rozdíl**, která je definována na stránce **Parametry hlavní knihy**, doklad bude zaúčtován a rozdíl bude automaticky zaúčtován na rozdílový účet.
 
-Pokud má doklad více než jednu měnu transakce, je každý řádek dokladu přeložen do účetní měny a zaokrouhlen na dvě desetinná místa a poté jsou řádky sečteny, aby se určily celkové debety a celkové kredity. Aby byly debety a kredity považovány za vyrovnané, musí být vyrovnané, buď v přepočtu, nebo když je zahrnut rozdíl v zaokrouhlování účetní měny.
+Pokud má doklad více než jednu měnu transakce, je každý řádek dokladu přeložen do účetní měny a zaokrouhlen na dvě desetinná místa a poté jsou řádky sečteny, aby se určily celkové debety a celkové kredity. Aby byly debety a kredity považovány za vyrovnané, musí být vyrovnány v účetní měně.  Účet haléřových rozdílů není nikdy přidán na poukázku v účetní měně, aby se vyrovnaly debety a kredity. 
 
 ### <a name="reporting-currency"></a>Měna pro vykazování
 
 Pokud mají všechny řádky poukázky stejnou měnu transakce a jsou-li částky měny transakce vyvážené, systém ověří, zda jsou částky měny vykazování vyrovnané. Pokud je doklad zadán v cizí měně, použije se k převodu částek měny transakce na měnu vykazování směnný kurz na řádcích dokladu. Každý řádek dokladu je nejprve přeložen a zaokrouhlen na dvě desetinná místa. Poté se sečtou řádky, aby se určily celkové debety a celkové kredity. Protože je přeložen každý řádek, nemusí být celkový debet a celkový kredit vyvážený. Pokud je však rozdíl v rámci hodnoty **Maximální haléřové zaokrouhlení v měně vykazování**, která je definována na stránce **Parametry hlavní knihy**, doklad bude zaúčtován a rozdíl bude automaticky zaúčtován na rozdílový účet.
 
-Pokud má doklad více než jednu měnu transakce, je každý řádek dokladu přeložen do měny vykazování a zaokrouhlen na dvě desetinná místa a poté jsou řádky sečteny, aby se určily celkové debety a celkové kredity. Aby byly debety a kredity považovány za vyrovnané, musí být vyrovnané, buď v přepočtu, nebo když je zahrnut rozdíl v zaokrouhlování měny vykazování.
+Pokud má doklad více než jednu měnu transakce, je každý řádek dokladu přeložen do měny vykazování a zaokrouhlen na dvě desetinná místa a poté jsou řádky sečteny, aby se určily celkové debety a celkové kredity. Aby byly debety a kredity považovány za vyrovnané, musí být vyrovnány v měně vykazování.  Účet haléřových rozdílů není nikdy přidán na poukázku v měně vykazování, aby se vyrovnaly debety a kredity.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Příklad nerovnováhy účetní měny
 

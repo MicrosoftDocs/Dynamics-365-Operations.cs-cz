@@ -2,7 +2,7 @@
 title: Odeslání obrázků
 description: Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423248"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891515"
 ---
 # <a name="upload-images"></a>Odeslání obrázků
 
@@ -41,7 +41,8 @@ Při odesílání obrázku lze zadat následující informace.
 - **Publikovat majetek po odeslání**: Pokud je toto políčko zaškrtnuto, bude obrázek nebo obrázky publikovány ihned po odeslání.
 
 > [!NOTE]
-> Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
+> - Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
+> - Stránky s podrobnostmi o produktu dynamicky generují **Alternativní text** pomocí názvu produktu, takže změna hodnoty **Alternativní text** pro obrázek produktu nebude mít žádný vliv na vykreslený obrázek.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Zásady vytváření názvů pro multikanálové obrázky 
 

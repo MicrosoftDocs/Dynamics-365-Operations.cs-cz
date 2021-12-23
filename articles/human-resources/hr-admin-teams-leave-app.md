@@ -2,7 +2,7 @@
 title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771499"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913482"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -111,6 +111,9 @@ Následující pracovní položky jsou určeny pro budoucí vydání:
 ## <a name="troubleshooting"></a>Řešení potíží
 
 Pokud má uživatel potíže s přihlášením nebo používáním aplikace Human Resources Teams, zkuste problémy vyřešit podle těchto pokynů. Pokud problémy přetrvávají i po pokusu o vyřešení, obraťte se na podporu. Pro další informace si přečtěte [Získání podpory](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Ujistěte se, že je aplikace Teams Human Resources aktuální
+Pokud narazíte na problémy s aplikací Teams Human Resources, musíte se ujistit, že používáte nejnovější verzi. Minimální podporovaná verze je 1.1.5. Pokyny k aktualizaci aplikace Teams naleznete v části [Dokumentace k aplikaci Teams](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nelze se přihlásit do aplikace Human Resources v Teams
 

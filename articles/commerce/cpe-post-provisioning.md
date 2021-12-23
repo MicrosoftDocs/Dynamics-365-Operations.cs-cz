@@ -2,7 +2,7 @@
 title: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416472"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913720"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
@@ -39,6 +39,7 @@ Po kompletním zřízení prostředí vyhodnocení Commerce je nutné dokončit 
 1. V seznamu vyberte své prostředí.
 1. V informacích o prostředí vpravo vyberte **Přihlášení k prostředí**. Budete posláni do centrály Commerce.
 1. Ujistěte se, že je v pravém horním rohu vybrána právnická osoba **USRT**.
+2. Přejděte na **Parametry Commerce > Konfigurační parametry** a zkontrolujte, že záznam u položky **ProductSearch.UseAzureSearch** je nastaven na **true**. Pokud tato položka chybí, můžete ji přidat a spustit **Databáze kanálů > Úplná synchronizace** pro Commerce Scale Unit spojenou s vaším webem elektronického obchodu.
 
 Během činností po zřízení v centrále Commerce se ujistěte, že právnická osoba **USRT** je vždy vybrána.
 
@@ -105,6 +106,12 @@ Pokud chcete povolit úlohy v Commerce, postupujte takto:
     1. Vybrat záznam.
     1. V podokně akcí na kartě **Dávková úloha** vyberte **Změnit stav**.
     1. Vyberte **Ruší se** a poté vyberte **OK**.
+
+1. Je-li stav úlohy nastaven na **Sraženo**, postupujte následovně:
+
+    1. Vybrat záznam.
+    1. V podokně akcí na kartě **Dávková úloha** vyberte **Změnit stav**.
+    1. Vyberte možnost **Čekání** a potom **OK**.
 
 Volitelně můžete také nastavit interval opakování na jednu (1) minutu pro následující úlohy:
 

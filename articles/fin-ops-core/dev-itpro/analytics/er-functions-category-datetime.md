@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647256"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890770"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Seznam funkcí ER v kategorii Datum a čas
 
@@ -37,8 +37,8 @@ Funkce data a času elektronického výkaznictví lze používat k extrahování
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadanou hodnotu data/času jako text v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Tato funkce vrací hodnotu *DateTime*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané jazykové verzi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Tato funkce vrací hodnotu *DateTime*, která je převedena ze zadané hodnoty kalendářního data na hodnotu data a času v koordinovaném světovém čase (Greenwich Mean Time \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Tato funkce vrací hodnotu typu *Datum*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané jazykové verzi. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Tato funkce vrací hodnotu typu *celé číslo*, která představuje počet dní mezi 1. lednem a zadaným datem. |
+| [DateValue](er-functions-datetime-datevalue.md) | Tato funkce vrací hodnotu typu *[datum](er-formula-supported-data-types-primitive.md#date)*, která je převedena ze zadané textové hodnoty v určeném formátu a ve volitelně zadané jazykové verzi. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Tato funkce vrací hodnotu typu *[celé číslo](er-formula-supported-data-types-primitive.md#integer)*, která představuje počet dní mezi 1. lednem a zadaným datem. |
 | [Dny](er-functions-datetime-days.md) | Tato funkce vrací hodnotu typu *celé číslo*, která představuje počet dní mezi jedním a druhým zadaným datem. |
 | [Now](er-functions-datetime-now.md) | Tato funkce vrací hodnotu *DateTime*, která představuje aktuální datum a čas aplikačního serveru. |
 | [NullDate](er-functions-datetime-nulldate.md) | Tato funkce vrací hodnotu typu *datum*, která představuje datum typu **null** (1. leden 1900). |
@@ -46,8 +46,9 @@ Funkce data a času elektronického výkaznictví lze používat k extrahování
 | [SessionNow](er-functions-datetime-sessionnow.md) | Tato funkce vrací hodnotu *DateTime*, která představuje aktuální datum a čas relace aplikace. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Tato funkce vrací hodnotu typu *datum*, která představuje aktuální datum relace aplikace. |
 | [Dnes](er-functions-datetime-today.md) | Tato funkce vrací hodnotu typu *datum*, která představuje aktuální datum aplikačního serveru. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Tato funkce vrací hodnotu typu *celé číslo*, která představuje týden v roce. |
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Degresivní odpis 125 procent
-description: Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 125 procent“.
-author: saraschi2
+description: Toto téma poskytuje přehled metody degresivního odpisu 125 %.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68afee1840707a74ca3a0ac9643c2a23761da8da6d2e85e6b79d48bee4aad27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744982"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883511"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>Degresivní odpis 125 procent
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 125 procent“.
+Toto téma poskytuje přehled metody degresivního odpisu 125 %.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 125 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Tato procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 25 procent (125 % ÷ 5).
 

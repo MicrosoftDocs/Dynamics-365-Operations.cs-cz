@@ -2,7 +2,7 @@
 title: Převod dílčí hlavní knihy do hlavní knihy
 description: Toto téma popisuje funkce související s procesem převodu dílčí hlavní knihy do hlavní knihy.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716638"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900715"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Převod dílčí hlavní knihy do hlavní knihy
 
@@ -39,7 +39,7 @@ Ve verzi 10.0.8 byla provedena vylepšení pro zvýšení výkonu možnosti **As
 
 Funkce pro asynchronní přenos dávek podřízené knihy pomáhá zlepšit přenos dat z podřízené knihy do hlavní knihy. Díky seskupení sad menších transakcí a přenosu transakcí ve skupinách funkčnost zpracovává transakce efektivněji. Když jsou transakce seskupeny, prostředky dávkového serveru jsou využívány efektivněji.
 
-Asynchronní přenos dávek podřízené knihy vyžaduje, aby byl dávkový server nastaven, online a funkční. Jinak nebude možnost přenosu **Asynchronní** fungovat.
+Asynchronní přenos dávek dílčí knihy vyžaduje, aby byl dávkový server nastaven, online a funkční, protože dávkové úlohy jsou vytvářeny pro okamžité spuštění na dávkovém serveru. Když je povolena funkce **Optimalizace výkonu převodu z dílčí knihy do hlavní knihy**, dávková úloha systému **Automatizace procesů** s názvem **Úloha systému dotazování na automatizaci procesů** musí být také povolena. Další informace naleznete v tématu [Automatizace procesu](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Změna efektivity na dávkové úrovni používá jednu opakovanou dávkovou úlohu pro všechny právnické osoby v systému. Za běhu je vytvořena nová dávková úloha ke zpracování požadovaných záznamů, které ještě nebyly přeneseny. Další nastavení lze ovládat ze stránky **Automatizace procesů** ve správě systému. Na této stránce můžete upravit proces na pozadí, změnit frekvenci a definovat období spánku.
 

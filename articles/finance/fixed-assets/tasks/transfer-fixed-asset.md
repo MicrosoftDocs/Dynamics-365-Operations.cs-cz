@@ -1,7 +1,7 @@
 ---
 title: Převedení dlouhodobého majetku
 description: Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.
-author: saraschi2
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirm
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c307568ab1cc064c27fa8d3e24756f564947e4716aaed1c280019c1283da1c93
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e573386ddbb97bf60e2e501ba92b225f8716c73a
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765685"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883355"
 ---
 # <a name="transfer-a-fixed-asset"></a>Převedení dlouhodobého majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.  Využívá účetní role a ukázková data pro právnické osoby USMF.
+Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.  
 
 1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
 2. V seznamu najděte a vyberte dlouhodobý majetek, který chcete přenést.

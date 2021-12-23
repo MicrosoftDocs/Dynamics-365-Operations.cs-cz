@@ -2,7 +2,7 @@
 title: Povolit oznámení o přihlášení zákazníka v místě prodeje (POS)
 description: Toto téma popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774576"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891405"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Povolit oznámení o přihlášení zákazníka v místě prodeje (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje, jak povolit oznámení o přihlášení zákazníka v místě prodeje Microsoft Dynamics 365 Commerce (POS).
 
@@ -50,17 +51,48 @@ Na svém webu elektronického obchodu musíte vytvořit novou stránku, která b
 
 Musíte přidat odkaz nebo tlačítko **Jsem tady** na šablonu pro transakční e-mail, který zákazníci obdrží, když je jejich objednávka připravena k vyzvednutí. Tímto odkazem nebo tlačítkem zákazníci upozorní obchod, že dorazili, aby si vyzvedli objednávku. 
 
-Přidejte odkaz nebo tlačítko na šablonu, která je namapována na typ oznámení **Balení dokončeno** a způsob doručení, který používáte k plnění objednávky. V šabloně vytvořte odkaz nebo tlačítko HTML, které odkazuje na adresu URL stránky s potvrzením přihlášení, kterou jste vytvořili. Následuje příklad.
+Přidejte odkaz nebo tlačítko na šablonu, která je namapována na typ oznámení **Balení dokončeno** a způsob doručení, který používáte k plnění objednávky. V šabloně vytvořte odkaz nebo tlačítko HTML, které odkazuje na adresu URL stránky s potvrzením přihlášení, kterou jste vytvořili, a které obsahuje názvy a hodnoty parametrů, jak je znázorněno v následujícím příkladu.
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 Další informace o konfiguraci e-mailových šablon najdete v tématu [Přizpůsobení transakčních e-mailů podle způsobu doručení](customize-email-delivery-mode.md). 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>V POS je vytvořena úloha potvrzení odbavení
 
-Poté, co zákazník upozorní obchod, že je přítomen k vyzvednutí, obdrží oznámení o potvrzení přihlášení a v seznamu úkolů v POS pro obchod, kde si zákazník vyzvedává objednávku, se vytvoří úkol. Úkol obsahuje všechny informace o zákazníkovi a objednávce, které jsou nutné pro splnění objednávky. V poli úkolu se v poli s pokyny zobrazují všechny informace, které byly od zákazníka shromážděny prostřednictvím formuláře s doplňujícími informacemi. 
+Poté, co zákazník oznámí prodejně, že je přítomen k vyzvednutí, na stránce odbavení se zobrazí potvrzovací zpráva a volitelný QR kód, který obsahuje ID potvrzení objednávky zákazníka. Zároveň je vytvořen úkol v seznamu úkolů v POS pro prodejnu, kde si zákazník objednávku vyzvedává. Tento úkol obsahuje všechny informace o zákazníkovi a objednávce, které jsou nutné pro splnění objednávky. V poli s pokyny úkolu zobrazují všechny informace, které byly od zákazníka shromážděny prostřednictvím formuláře s doplňujícími informacemi.
+
+## <a name="end-to-end-testing"></a>Komplexní testování
+
+Přihlášení zákazníka vyžaduje, aby byly konkrétní parametry a hodnoty předány přihlašovací stránce a poté rozhraní API pro přihlášení zákazníka. Nejjednodušší přístup je proto otestovat funkci v prostředí, kde lze vytvořit a zabalit testovací objednávku. Tímto způsobem lze vygenerovat e-mail s „objednávkou připravenou k vyzvednutí“, který má adresu URL obsahující požadované názvy a hodnoty parametrů.
+
+Chcete-li otestovat funkci přihlášení zákazníka, postupujte takto.
+
+1. Vytvořte stránku pro přihlášení zákazníka a poté přidejte a nakonfigurujte modul pro přihlášení zákazníka. Více informací viz [Odbavení pro modul vyzvednutí](check-in-pickup-module.md). 
+1. Vraťte stránku se změnami, ale nepublikujte ji.
+1. Přidejte následující odkaz na šablonu e-mailu, která je vyvolána typem oznámení o dokončení balení pro způsob doručení vyzvednutí. Další informace viz [Vytvoření e-mailových šablon pro transakční události](email-templates-transactions.md).
+
+    - **Pro předprodukční (UAT) prostředí:** Přidejte fragment kódu z části [Nakonfigurujte šablonu transakčního e-mailu](#configure-the-transactional-email-template) výše v tomto tématu.
+    - **Pro produkční prostředí:** Přidejte následující komentovaný kód, aby to neovlivnilo stávající zákazníky.
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. Vytvořte objednávku, kde je specifikován způsob doručení vyzvednutí.
+1. Když obdržíte e-mail, který se spouští typem oznámení o dokončení balení, otestujte tok přihlášení otevřením stránky pro přihlášení s adresou URL, kterou jste přidali dříve. Protože adresa URL obsahuje příznak `&preview=inprogress`, před zobrazením stránky budete vyzváni k ověření.
+1. Zadejte jakékoli další požadované informace ke konfigurace modulu.
+1. Ověřte, že se zobrazení potvrzení přihlášení zobrazuje správně.
+1. Otevřete terminál POS obchodu, kde bude objednávka vyzvednuta.
+1. Vyberte dlaždici **Objednávky k vyzvednutí** a ověřte, že se objednávka zobrazuje.
+1. Ověřte, že se v podokně podrobností zobrazují všechny další informace, které byly nakonfigurovány v modulu přihlášení.
+
+Poté, co ověříte, že funkce přihlášení zákazníka funguje od začátku do konce, postupujte takto.
+
+1. Publikujte stránku přihlášení.
+1. Pokud testujete v produkčním prostředí, odkomentujte adresu URL v e-mailové šabloně „objednávka připravena k vyzvednutí“, aby se zobrazil odkaz nebo tlačítko **Jsem tady**. Poté šablonu znovu nahrajte.
 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přihlášení k modulu vyzvednutí](check-in-pickup-module.md)
+
+[Přizpůsobení transakčních e-mailů podle způsobu doručení](customize-email-delivery-mode.md)
+
+[Vytvoření e-mailových šablon pro transakční události](email-templates-transactions.md)

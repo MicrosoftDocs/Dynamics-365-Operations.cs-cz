@@ -2,7 +2,7 @@
 title: Začínáme s Elektronickou fakturací pro Mexiko
 description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Mexiko.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742146"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881584"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Začínáme s Elektronickou fakturací pro Mexiko
 
@@ -35,7 +35,15 @@ Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakt
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Než dokončíte kroky v tomto tématu, musíte provést kroky v [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Než dokončíte kroky v tomto tématu, musíte provést kroky v [Začínáme se správou služby Elektronická fakturace](e-invoicing-get-started-service-administration.md) a [Začínáme s elektronickou fakturací](e-invoicing-get-started.md).
+
+## <a name="set-up-the-cadena-xslt"></a>Nastavte Cadena XSLT
+
+Chcete-li přidat schéma Cadena XSLT do funkce globalizace pro zpracování CFDI, proveďte následující kroky.
+
+1. Stáhněte schéma z [webu SAT](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Komprimujte schéma do souboru ZIP.
+3. Uložte soubor xslt do účtu Azure Storage nastaveného v prostředí služby pro nový kontejner.
 
 ## <a name="rcs-setup"></a>Nastavení RCS
 
@@ -127,6 +135,17 @@ Chcete-li odeslat zrušení faktury CFDI, jsou vyžadována nastavení funkcí *
 
 > [!NOTE]
 > Stejným způsobem aktualizujte adresu URL pro akci **Volat mexickou službu PAC** pro nastavení funkcí **Zrušit** a **Žádost o zrušení**.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Nastavte cestu pro schéma Cadena XLST
+
+1. Na stránce **Nastavení verze funkce** na kartě **Proměnné** vyberte název proměnné **DigitalSignatureXSLT**.
+2. V poli **Hodnoty** zadejte: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    kde: <RelativePath> = složka\\složka\\název_souboru s dvojitými zpětnými lomítky, ContainerName musí označovat kontejner, který se používá pro službu.
+   
+    Příklad proměnné by byl:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Přiřaďte verzi konceptu do prostředí elektronické fakturace
 

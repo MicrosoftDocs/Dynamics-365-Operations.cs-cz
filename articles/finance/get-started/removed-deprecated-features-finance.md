@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781194"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890946"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -32,6 +32,58 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.24
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Sestava DPH pro Švédsko (design založený na kódech vykazování)
+
+[Sestava DPH pro Švédsko](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Švédsko](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat sestavu DPH pro Švédsko (rozložení sestavy pro Švédsko). Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (SE**) a **Přiznání k DPH pro Excel (SE)**. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Výkaz DPH pro Rakousko (design založený na kódech vykazování)
+
+[Podrobnosti výkazu DPH pro Rakousko](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Rakousko](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formát elektronického výkaznictví **Přiznání k DPH (AT)** v sekci **Model přiznání k DPH**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (AT)** a **Přiznání k DPH pro Excel (AT)**. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Přiznání ELSTER pro Německo (design založený na kódech vykazování)
+
+[Výkaz DPH](../localizations/emea-de-vat-declaration.md)</br>
+[Nastavení elektronického daňového přiznání pro Německo](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektronický přenos přiznání k DPH (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Německo](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formát elektronického výkaznictví **Elster (DE)** a **Model Elster**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (DE)** a **Přiznání k DPH pro Excel (DE)**. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Přiznání OB pro Nizozemsko (design založený na kódech vykazování)
+
+[Přiznání OB](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Nizozemsko](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. prosince 2022 plánujeme přestat podporovat formáty elektronického výkaznictví **Přiznání OB (NL)** a **Model přiznání OB**. Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (NL)** a **Přiznání k DPH pro Excel (NL)**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.20
 

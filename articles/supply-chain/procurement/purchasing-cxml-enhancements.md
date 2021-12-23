@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777760"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900698"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML rozšíření nákupu
 
@@ -141,7 +141,7 @@ Po dokončení nastavení všech vlastností a konfiguraci dalších nastavení 
 
 Jak bylo uvedeno v části [Nastavení vlastností objednávky](#set-order-properties), pokud chcete, aby vaše poskytnuté cXML obsahovalo text z poznámek připojených k příslušné nákupní objednávce nebo k záznamům dodavatele, můžete nastavit vlastnosti **POCOMMENTS** anebo **VENDCOMMENTS** na _TRUE_ v nastavení externího katalogu. Tato část poskytuje více podrobností o tom, jak systém vybírá a zpracovává tyto přílohy, pokud je používáte.
 
-Chcete-li nastavit typy poznámek, které bude systém hledat, přejděte na **Zásobování a zdroje \> Nastavit \> Formuláře \> Z nastavení**. Pak na kartě **Nákupní objednávka** nastavte pole **Zahrnout dokumenty typu** na typ poznámky, kterou chcete zahrnout. Zahrnuty budou pouze textové poznámky, nikoli přílohy v podobě dokumentů.
+Chcete-li nastavit typy poznámek, které bude systém hledat, přejděte na **Zásobování a zdroje \> Nastavit \> Formuláře \> Nastavení formuláře**. Pak na kartě **Nákupní objednávka** nastavte pole **Zahrnout dokumenty typu** na typ poznámky, kterou chcete zahrnout. Zahrnuty budou pouze textové poznámky, nikoli přílohy v podobě dokumentů.
 
 ![Stránka nastavení formuláře.](media/cxml-form-setup.png "Stránka nastavení formuláře")
 

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: d55767ef47e01edd11099f644134cfa48ea70e18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 174cbd85139db5cee75481041fb721dc7646ab66
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675714"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913595"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Tisk informací o dani na dokumentech převodního příkazu
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak vytisknout informace o dani na dokumentech převodního příkazu. Můžete vytisknout doklad proforma faktury převodního příkazu pro skladové převody, které jsou považovány za dodání uvnitř Společenství a pořízení uvnitř Společenství podle předpisů Evropské unie (EU) o dani z přidané hodnoty (DPH). 
 

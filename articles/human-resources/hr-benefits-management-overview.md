@@ -2,7 +2,7 @@
 title: Přehled správy zaměstnaneckých výhod
 description: Toto téma obsahuje přehled funkce správy zaměstnaneckých výhod v modulu Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417385"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892495"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
 
@@ -109,21 +109,29 @@ Programy pružného kreditu umožňují registrovat zaměstnance k zaměstnaneck
 
 ## <a name="configure-required-employee-information"></a>Nakonfigurujte požadované informace o zaměstnancích
 
-Před zapojením zaměstnanců do zaměstnaneckých výhod je nutné zadat požadované informace. Každý zaměstnanec musí mít pozici. Musíte zaregistrovat zaměstnance do plánu pevných odměn v den zahájení, nebo musí mít roční výplatu zaměstnaneckých výhod. Navíc v sekci **Podrobnosti o zaměstnání** na stránce **Pracovník** musíte vybrat hodnotu v poli **Frekvence vyplácení výhod**.
+Před zapojením zaměstnanců do zaměstnaneckých výhod je nutné zadat požadované informace. 
 
-Pokud máte zaměstnance, který dostává dodatečné odměny, jako jsou provize, můžete přidat částku **Roční výplata benefitů** ze záznamu zaměstnance. Human Resources budou využívat částku **Roční výplata benefitů** při určování částek krytí, namísto pevné roční náhrady. **Roční výplata benefitů** musí platit od počátečního data zaměstnance nebo od začátku období zaměstnaneckých výhod, podle toho, co nastane dříve. Pokud je pro zaměstnance zaznamenána jak pevná odměna, tak roční částka zamšstnaneckých výhod, použije se při stanovení výše krytí roční plat zaměstnaneckých výhod.
+Zaměstnanec musí mít přiřazenu **Pozici**. **Pozici** lze přiřadit zaměstnanci na stránce **Pracovník** nebo **Pozice** aktualizací hodnoty **Přiřazení pracovníka**. 
+
+Dále musí být zaměstnanci registrování v plánu fixních odměn v den zahájení, nebo musí mít částku **Roční výše zaměstnaneckých výhod dle platu**. Před přidělením **Fixní kompenzace** k zaměstnanci musí být přiřazena **Pozice**. 
+
+> [!NOTE] 
+> **Počáteční datum fixní kompenzace** nesmí být před **Datem přiřazení pozice**.
+
+Alternativně, pokud máte zaměstnance, který dostává dodatečné odměny, jako jsou provize, můžete přidat částku **Roční výplata zaměstnaneckých výhod** ze záznamu zaměstnance. Human Resources budou využívat částku **Roční výplata zaměstnaneckých výhod** při určování částek krytí, namísto částky **Fixní roční kompenzace**. **Roční výplata benefitů** musí platit od počátečního data zaměstnance nebo od začátku období zaměstnaneckých výhod, podle toho, co nastane dříve. K přiřazení **Roční výplaty zaměstnaneckých výhod** nicméně není vyžadována pozice. Chcete-li povolit funkci **Roční výplata zaměstnaneckých výhod**, přejděte na stránku **Sdílené parametry Human Resources** na kartě **Správa zaměstnaneckých výhod**. Tato funkce je ve výchozím nastavení vypnutá.
+
+> [!IMPORTANT]
+> Pokud jsou pro zaměstnance zadány obě částky **Fixní kompenzace** a **Roční výplata zaměstnaneckých výhod**, **Roční výplata zaměstnaneckých výhod** se použije při určování částky krytí. V sekci **Podrobnosti o zaměstnání** na stránce **Pracovník** musíte vybrat hodnotu v poli **Frekvence vyplácení zaměstnaneckých výhod**.
 
 ## <a name="configure-optional-employee-information"></a>Nakonfigurujte volitelné informace o zaměstnancích
-
 Při vytvoření plánu zaměstnaneckých výhod, který používá sazby založené na pohlaví nebo věku, je nutné zadat datum narození a pohlaví zaměstnance pro výpočet nákladů na zaměstnanecké výhody.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Zpracovat zaměstnance k určení způsobilosti
+Předtím, než se zaměstnanci mohou zaregistrovat do plánů, je spuštěno zpracování způsobilosti, aby se zjistilo, pro které plány mají nárok. Výsledky procesu způsobilosti si můžete prohlédnout v **Prohlížeči výsledků procesu**. Další informace naleznete v tématu [Zpracování způsobilosti k registraci](hr-benefits-process-enrollment-eligibility.md).
 
-Předtím, než se zaměstnanci mohou zaregistrovat do plánů, je spuštěno zpracování způsobilosti, aby se zjistilo, pro které plány mají nárok. Výsledky procesu způsobilosti si můžete prohlédnout v prohlížeči výsledků procesu. Další informace naleznete v tématu [Zpracování způsobilosti k registraci](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Zaměstnanci si vybírají plány prostřednictvím **samoobsluhy pro zaměstnance** (volitelně)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Zaměstnanci si vybírají plány prostřednictvím samoobsluhy zaměstnanců (volitelně)
-
-Když dojde k otevřené registraci, zaměstnanci jsou nově najati nebo dojde k životní události, zaměstnanci si mohou vybrat nebo aktualizovat své výhody prostřednictvím samoobslužné služby zaměstnanců. Další informace viz [Konfigurace samoobsluhy pro zaměstnance](hr-benefits-setup-employee-self-service.md).
+Když dojde k otevřené registraci, zaměstnanci jsou nově najati nebo dojde k životní události, zaměstnanci si mohou vybrat nebo aktualizovat své zaměstnanecké výhody prostřednictvím **samoobsluhy pro zaměstnance**. Další informace viz [Konfigurace samoobsluhy pro zaměstnance](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Potvrďte výběr plánu zaměstnanců
 

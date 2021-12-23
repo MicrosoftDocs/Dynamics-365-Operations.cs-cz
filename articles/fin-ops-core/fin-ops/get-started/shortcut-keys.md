@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800186"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913511"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data v aplikacích Finance and Operations.
 
@@ -150,6 +149,7 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
+| Přesunutí aktuálního sloupce do další/předchozí pozice (se zaměřením v řádku záhlaví)                                   | Ctrl+Shift+Šipka vpravo / Ctrl+Shift+Šipka vlevo |
 | Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Enter                           |
 | Změnit velikost aktuálního sloupce tak, aby odpovídal obsahu (se zaměřením v řádku záhlaví)                                           | A (nebo dvakrát klikněte na úchyt pro nastavení velikosti sloupce) |
 

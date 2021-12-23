@@ -2,7 +2,7 @@
 title: Instalace motivu Adventure Works
 description: Toto téma popisuje, jak nainstalovat motiv Adventure Works do Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763829"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913695"
 ---
 # <a name="install-the-adventure-works-theme"></a>Instalace motivu Adventure Works
 
@@ -32,7 +32,7 @@ Toto téma popisuje, jak nainstalovat motiv Adventure Works do Microsoft Dynamic
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Před instalací motivu Adventure Works musíte mít prostředí Dynamics 365 Commerce (Commerce verze 10.0.20 nebo novější), které zahrnuje Retail Cloud Scale Unit (RCSU), Commerce online software development kit (SDK) a knihovnu modulů Commerce. Informace o tom, jak nainstalovat sadu Commerce SDK a knihovnu modulů, najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md). 
+Před instalací motivu Adventure Works musíte mít prostředí Dynamics 365 Commerce (Commerce verze 10.0.20 nebo novější), které zahrnuje Retail Cloud Scale Unit (RCSU), Commerce online software development kit (SDK) a knihovnu modulů Commerce. Informace o tom, jak nainstalovat sadu Commerce SDK a knihovnu modulů, najdete v části [Nastavení vývojového prostředí](e-commerce-extensibility/setup-dev-environment.md). 
 
 ## <a name="installation-steps"></a>Instalační kroky
 
@@ -48,11 +48,19 @@ Balíček motivů Adventure Works je k dispozici v kanálu **dynamics365-commerc
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Chcete-li nainstalovat balíček do místního prostředí, spusťte z příkazového řádku následující příkaz. Tento příkaz automaticky aktualizuje soubor package.json tak, aby obsahoval závislost.
+Chcete-li nainstalovat balíček ve vašem místním prostředí, z příkazového řádku spusťte příkaz `yarn add THEME_PACKAGE@VERSION`, kde **THEME_PACKAGE** je balíček témat (@msdyn365-commerce-theme/adventureworks-theme-kit) a **VERSION** je číslo verze používané knihovny modulů. Je důležité, aby se verze balíčku témat a knihovny modulů shodovaly. Chcete-li najít správné číslo verze knihovny modulů, kterou chcete použít, otevřete soubor package.json a vyhledejte hodnotu **starter-pack** v sekci **dependencies**. V následujícím příkladu používá soubor package.json knihovnu modulů verze 9.32, která se mapuje na vydání Dynamics 365 Commerce verze 10.0.22.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-V souboru **package.json** byste měli aktualizovat verzi motivu na konkrétní verzi.
+Následující příklad ukazuje, jak spustit příkaz `yarn add` pro přidání verze 9.32 tématu Adventure Works. Příkaz automaticky aktualizuje soubor package.json tak, aby obsahoval závislost.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+Další Informace o aktualizaci verze knihovny modulů najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md). 
 
 > [!IMPORTANT]
 > - Verze motivu by měla odpovídat verzi knihovny modulů, aby bylo zajištěno, že všechny funkce fungují podle očekávání. 

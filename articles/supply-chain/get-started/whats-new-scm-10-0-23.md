@@ -1,5 +1,5 @@
 ---
-title: Preview verze Dynamics 365 Supply Chain Management 10.0.23
+title: Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777784"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891786"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Preview verze Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 - **Verze Preview:** Říjen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Prosinec 2021
+- **Obecně dostupné vydání (automatická aktualizace):** Leden 2022
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
@@ -53,6 +54,7 @@ Pokud chcete některou z těchto funkcí zapnout nebo vypnout, musíte tak učin
 | Řízení zásob a skladu | \[Rusko\] Zaúčtovat transakce stornování finančních zásob podle opravného příznaku ve finančním dokladu pro prodejní objednávky | Tato funkce má vliv na funkci oprav dobropisů pro Rusko. Umožňuje zaúčtování inventurních transakcí pro prodejní faktury v souladu s možností opravy v hlavní knize. Když je tato funkce povolena, již nejsou žádné nesrovnalosti mezi příznakem **Oprava** na finanční doklad transakce zásob a příznakem **Storno** na skladových transakcích. |
 | Řízení zásob a skladu | (Rusko) Spustit hromadný výpočet sestavy obratu salda zásob | V ruských lokalizacích Supply Chain Management tato funkce umožňuje hromadně spouštět sestavu *obratu salda zásob*, uložit ji a prohlížet zprávy vygenerované dříve. |
 | Řízení zásob a skladu | (Rusko) Použít překlady do místního jazyka v primárních formulářích specifických pro danou zemi nebo oblast v řízení zásob | V ruských lokalizacích Supply Chain Management tato funkce umožňuje použití ruských překladů pro názvy produktů či položek a měrných jednotek v následujících výtiscích zásob specifických pro Rusko:Inventurní seznam (INV-3),Inventurní seznam (INV-5),Inventurní seznam (INV-6). |
+| Hlavní plánování | Služba Azure Machine Learning Service pro prognózy poptávky | Tato funkce umožňuje službě Azure Machine Learning Service generovat prognózy poptávky na základě historických dat. Další informace viz [Nastavení prognózy poptávky](../master-planning/demand-forecasting-setup.md). |
 | Zásobování a zdroje | Vyčistit historii aktualizace nákupní objednávky | Tato funkce vám umožňuje vyčistit dočasné historické záznamy související s aktualizacemi nákupních objednávek. Přidává nové tlačítko s názvem **Vyčistit historii aktualizací nákupů** do podokna akcí na stránce **Všechny nákupní objednávky**. Tato funkce je povolena ve výchozím nastavení. |
 | Řízení výroby | (Preview) Automatické vyskladňování materiálů s povoleným skladem pro automaticky účtované výdejky | Tato funkce vám umožňuje automaticky vydávat a řešit dimenze zásob pro automaticky zaúčtované, odvozené a zpětně účtované deníky výdejek. |
 | Řízení výroby | Potvrdit expiraci surovin oproti plánovanému datu spotřeby | Tato funkce mění způsob, jakým se ověřují data expirace šarže při rezervaci šarže suroviny, která má být použita během výroby. Když je tato funkce povolena, datum vypršení šarže se ověřuje proti datu plánované spotřeby (datum suroviny), jak je stanoveno na řádku výrobního kusovníku nebo řádku vzorce dávkové objednávky. Když je tato funkce zakázána, je datum vypršení šarže ověřeno oproti plánovanému datu dodání výrobní nebo dávkové zakázky (jako dříve). |

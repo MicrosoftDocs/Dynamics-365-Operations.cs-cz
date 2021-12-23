@@ -1,8 +1,8 @@
 ---
 title: Vylepšení funkcionality zaúčtování výkazů
 description: Toto téma popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772197"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891434"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Toto téma popisuje první sadu vylepšení, která byla provedena u funkce zaúčtování výkazu. Tato zlepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -116,9 +117,17 @@ Výkaz prochází různými operacemi (například vytvořit, vypočítat, vymaz
 
 ### <a name="aggregated-transactions"></a>Agregované transakce
 
-Během procesu zaúčtování jsou prodejní transakce seskupeny podle konfigurace. Tyto souhrnné transakce jsou v systému uloženy a slouží k vytváření prodejních objednávek. Každá souhrnná transakce agregační vytvoří jednu odpovídajících prodejní objednávky v systému. Souhrnné transakce můžete zobrazit pomocí tlačítka **Souhrnné transakce** ve skupině **Podrobnosti o spuštění** ve výkazu.
+Během procesu zaúčtování jsou transakce cash-and-carry agregovány podle zákazníka a produktu. Proto se sníží počet prodejních objednávek a vytvořených řádků. Tyto souhrnné transakce jsou v systému uloženy a slouží k vytváření prodejních objednávek. Každá souhrnná transakce agregační vytvoří jednu odpovídajících prodejní objednávky v systému. 
 
-Karta **Prodejní objednávky** souhrnné transakce uvádí následující informace:
+Pokud výkaz není úplně zaúčtován, můžete si ve výkazu prohlédnout agregované transakce. V podokně akcí na kartě **Výkaz** ve skupině **Podrobnosti o spuštění** vyberte **Agregované transakce**.
+
+![Tlačítko agregovaných transakcí pro výkaz, který není zcela zaúčtován.](media/aggregated-transactions.png)
+
+Pro zaúčtované výkazy můžete zobrazit agregované transakce na stránce **Zaúčtované výkazy**. V podokně akcí vyberte **Dotazy** a pak vyberte **Agregované transakce**.
+
+![Příkaz agregovaných transakcí pro zaúčtované výkazy.](media/aggregated-transactions-posted-statements.png)
+
+Záložka s náhledem **Podrobnosti prodejní objednávky** agregované transakce uvádí následující informace:
 
 - **ID záznamu** – ID záznamu souhrnné transakce.
 - **Číslo výkazu** – výkaz, ke kterému souhrnná transakce patří.
@@ -127,12 +136,28 @@ Karta **Prodejní objednávky** souhrnné transakce uvádí následující infor
 - **Počet souhrnných řádků** – celkový počet řádků pro souhrnnou transakci a prodejní objednávku.
 - **Stav** – stav poslední souhrnné transakce.
 - **ID faktury** – při fakturaci souhrnné prodejní objednávky pro souhrnnou transakci, ID prodejní faktury. Pokud je toto pole prázdné, faktura pro prodejní objednávku nebyla zaúčtována.
+- **Chybový kód** – Toto pole je nastaveno, pokud je agregace v chybovém stavu.
+- **Chybová zpráva** – Toto pole je nastaveno, pokud je agregace v chybovém stavu. Udává podrobnosti o tom, co způsobilo selhání procesu. K vyřešení problému můžete použít informace v chybovém kódu a poté proces ručně restartovat. V závislosti na typu řešení může být nutné agregované prodeje odstranit a zpracovat na novém výkazu.
 
-Karta **Podrobnosti o transakcích** agregované transakce zobrazuje všechny transakce, které byly převedeny do souhrnné transakce. Agregované řádky agregované transakce zobrazují všechny agregované záznamy z transakce. Agregované řádky také zobrazují podrobné informace, jako je položka, varianta, množství, cena, čistá částka, jednotka a sklad. Každý agregovaný řádek v zásadě odpovídá jednomu řádku prodejní objednávky.
+![Pole na záložce s náhledem Podrobnosti prodejní objednávky pro agregovanou transakci.](media/aggregated-transactions-error-message-view.png)
 
-Ze stránky **Souhrnné transakce** si můžete stáhnout soubor XML pro určitou souhrnnou transakci pomocí tlačítka **Exportovat XML prodejní objednávky**. Kód XML slouží k ladění problémů, které se týkají vytvoření prodejní objednávky a zaúčtování. Stačí stáhnout si soubor XML, nahrát ho do testovacího prostředí a vyladit výdej v testovacím prostředí. Funkce pro stažení souboru XML pro agregované transakce není k dispozici pro výkazy, které byly zaúčtovány.
+Záložka s náhledem **Podrobnosti o transakcích** agregované transakce zobrazuje všechny transakce, které byly převedeny do agregované transakce. Agregované řádky agregované transakce zobrazují všechny agregované záznamy z transakce. Agregované řádky také zobrazují podrobné informace, jako je položka, varianta, množství, cena, čistá částka, jednotka a sklad. Každý agregovaný řádek v zásadě odpovídá jednomu řádku prodejní objednávky.
 
-Zobrazení souhrnné transakce poskytuje následující výhody:
+![Podrobnosti o transakci na záložce s náhledem agregované transakce.](media/aggregated-transactions-sales-details.png)
+
+V některých situacích mohou agregované transakce selhat při zaúčtování jejich konsolidované prodejní objednávky. V těchto situacích bude ke stavu výkazu přidružen chybový kód. Chcete-li zobrazit pouze agregované transakce, které obsahují chyby, zaškrtnutím příslušného políčka v zobrazení agregovaných transakcí můžete povolit filtr **Zobrazit pouze selhání**. Povolením tohoto filtru omezíte výsledky na agregované transakce, které obsahují chyby vyžadující řešení. Informace, jak opravit tyto chyby, najdete v části [Úprava a audit online objednávky a asynchronních transakcí objednávek zákazníků](edit-order-trans.md).
+
+![Zaškrtávací políčko pro filtr Zobrazit pouze selhání v zobrazení agregovaných transakcí.](media/aggregated-transactions-failure-view.png)
+
+Na stránce **Agregované transakce** si můžete stáhnout soubor XML pro určitou agregovanou transakci výběrem možnosti **Exportovat agregovaná data**. Soubor XML si můžete prohlédnout v libovolné aplikaci pro soubory XML, abyste viděli samotné podrobnosti dat, které zahrnují vytvoření a zaúčtování prodejní objednávky. Funkce pro stažení souboru XML pro agregované transakce není k dispozici pro výkazy, které byly zaúčtovány.
+
+![Tlačítko Exportovat agregovaná data na stránce Agregované transakce.](media/aggregated-transactions-export.png)
+
+V případě, že nemůžete chybu opravit opravou dat na prodejní objednávce nebo dat, která podporují prodejní objednávku, k dispozici je tlačítko **Odstranit objednávku odběratele**. Chcete-li odstranit objednávku, vyberte agregovanou transakci, která selhala, a poté vyberte **Odstranit objednávku odběratele**. Bude odstraněna jak agregovaná transakce, tak odpovídajících prodejní objednávka. Nyní můžete transakce zkontrolovat pomocí funkce pro úpravy a auditování. Případně je lze znovu zpracovat prostřednictvím nového výkazu. Po odstranění všech selhání můžete pokračovat v účtování výkazu spuštěním funkce pro zaúčtování příslušného výkazu.
+
+![Tlačítko Odstranit objednávku odběratele v zobrazení agregovaných transakcí.](media/aggregated-transactions-delete-cust-order.png)
+
+Zobrazení agregovaných transakcí poskytuje následující výhody:
 
 - Uživatel má vhled do souhrnných transakcí, které selhaly při vytváření prodejní objednávky, a prodejních objednávek, které selhaly při fakturaci.
 - Uživatel má přehled o způsobu, jakým budou transakce agregovány.
