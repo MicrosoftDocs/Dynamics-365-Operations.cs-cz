@@ -2,7 +2,7 @@
 title: Konfigurace viditelnosti zásob
 description: Toto téma popisuje, jak konfigurovat doplněk Viditelnost zásob.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678464"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920291"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
@@ -61,7 +61,7 @@ Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfigurac
 Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „aplikace Dynamics 365 Finance and Operations“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
 
 > [!NOTE]
-> Zdroj dat `fno` je vyhrazen pro Dynamics 365 Supply Chain Management.
+> Zdroj dat `fno` je vyhrazen pro Supply Chain Management. Pokud je váš doplněk Viditelnost zásob integrován s prostředím Supply Chain Management, doporučujeme neodstraňovat konfigurace související s `fno` ve zdroji dat.
 
 Chcete-li přidat zdroj dat, postupujte takto:
 
@@ -273,17 +273,17 @@ Výstup `MyCustomAvailableforReservation`, založený na nastavení výpočtu ve
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Konfigurace oddílu
 
-Konfigurace oddílu se skládá z kombinace základních dimenzí. Definuje vzor distribuce dat. Datové operace ve stejném oddílu podporují vysoký výkon a nestojí příliš mnoho. Dobré vzory oddílů proto mohou přinést značné výhody.
-
-Viditelnost zásob poskytuje následující výchozí konfiguraci oddílu.
+V současné době se konfigurace oddílu skládá ze dvou základních dimenzí (`SiteId` a `LocationId`), které ukazují, jak jsou data distribuována. Operace ve stejném oddílu mohou poskytovat vyšší výkon za nižší náklady. Následující tabulka ukazuje výchozí konfiguraci oddílu, kterou poskytuje doplněk Viditelnost zásob.
 
 | Základní dimenze | Hierarchie |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Výchozí konfigurace oddílu je pouze orientační. Ve Viditelnosti zásob ji nemusíte definovat. Aktualizace konfigurace oddílu není aktuálně podporována.
+Ve výchozím nastavení obsahuje řešení tuto konfiguraci oddílu. Z tohoto důvodu ji *nemusíte sami definovat*.
+
+> [!IMPORTANT]
+> Nepřizpůsobujte výchozí konfiguraci oddílu. Pokud ji odstraníte nebo změníte, pravděpodobně způsobíte neočekávanou chybu.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfigurace hierarchie indexu produktů
 

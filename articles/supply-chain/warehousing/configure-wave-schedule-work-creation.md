@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778370"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920106"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Naplánování vytvoření práce během vlny
 
@@ -65,7 +65,7 @@ Pokud jste nepovolili [funkci *Metoda vlny „Plánování vytvoření práce“
 
 Chcete-li využít výhod paralelní asynchronní metody k vytvoření skladové práce, musí být váš vlnový proces spuštěn dávkově. Nastavení:
 
-1. Přejděte do nabídky  **Řízení skladu \> Nastavení \> Parametry řízení skladu**.
+1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Parametry řízení skladu**.
 1. Na kartě **Obecné** nastavte **Zpracovat vlny v dávce** na *ano*. Volitelně můžete také vybrat vyhrazenou **skupinu dávek pro zpracování ve vlnách**, abyste zabránili tomu, aby vaše dávkové zpracování fronty běželo souběžně s jinými procesy.
 1. Nastavte **Doba čekání na zámek (ms)**, což platí, když systém zpracovává několik vln současně. U většiny větších procesů mávání doporučujeme hodnotu *60000*.
 
@@ -73,8 +73,8 @@ Chcete-li využít výhod paralelní asynchronní metody k vytvoření skladové
 
 Začněte tím, že vytvoříte novou metodu kroku vlny a povolíte ji pro paralelní asynchronní zpracování úloh.
 
-1. Přejděte na  **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování ve vlnách**.
-1. Vyberte  **Znovu generovat metodu** a všimněte si, že krok *WHSScheduleWorkCreationWaveStepMethod* byl přidán do seznamu metod zpracování ve vlnách, které můžete použít ve svých šablonách přepravních vln.
+1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny**.
+1. Vyberte **Znovu generovat metodu** a všimněte si, že krok *WHSScheduleWorkCreationWaveStepMethod* byl přidán do seznamu metod zpracování ve vlnách, které můžete použít ve svých šablonách přepravních vln.
 1. Vyberte záznam pomocí **názvu metody** *WHSScheduleWorkCreationWaveStepMethod* a vyberte **Konfigurace úlohy**.
 1. Pokud chcete do mřížky přidat nový řádek, vyberte **Nový** v podokně úloh a použijte následující nastavení:
 
@@ -84,7 +84,7 @@ Začněte tím, že vytvoříte novou metodu kroku vlny a povolíte ji pro paral
 
 Nyní jste připraveni aktualizovat stávající šablonu vln (nebo vytvořit novou), abyste mohli použít metodu zpracování ve vlnách *Naplánovat vytvoření práce*.
 
-1. Přejděte na  **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
 1. V podokně úlohy vyberte **Upravit**.
 1. V podokně seznamu vyberte šablonu vln, kterou chcete aktualizovat (pokud testujete pomocí ukázkových dat, můžete použít *Výchozí nastavení 24*).
 1. Rozbalte kartu s náhledem **Metody** a vyberte řádek s mřížkou **Název** *naplánovat vytvoření práce* v mřížce **Zbývající metody**.

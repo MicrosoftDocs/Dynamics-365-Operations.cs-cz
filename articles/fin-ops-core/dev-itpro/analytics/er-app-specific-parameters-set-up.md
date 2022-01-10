@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 130487c41d8021692968141eca1a16d298a809e1
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913644"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927447"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Nastavení parametrů formátu ER podle právnické osoby
 
@@ -224,6 +224,16 @@ Tento přístup exportu a importu lze také použít k převodu formátu ER, kte
 Pokud nakonfigurujete parametry specifické pro aplikaci pro jednu verzi formátu ER a poté importujete novější verzi stejného formátu do aktuální instance Finance, stávající parametry specifické pro aplikaci se na importovanou verzi nepoužijí, pokud nepoužijete funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER**. Více informací naleznete v části [Opětovné použití stávajících parametrů](#reuse-existing-parameters) dále v tomto tématu.
 
 Při výběru souboru pro import bude porovnána struktura parametrů specifických pro aplikaci v tomto souboru se strukturou odpovídajících zdrojů dat typu **vyhledávání** ve formátu ER, který je vybrán pro import. Ve výchozím nastavení je import proveden pouze v případě, že struktura jednotlivých parametrů specifických pro aplikaci odpovídá struktuře odpovídajícího zdroje dat ve formátu ER vybraném pro import. Pokud se struktury neshodují, zobrazí se varovná zpráva oznamující, že import nelze provést. Pokud import vynutíte, budou vymazány stávající parametry specifické pro vybraný formát ER a bude nutné je nastavit až od začátku.
+
+
+Od Dynamics 365 Finance verze 10.0.24 můžete změnit výchozí chování a vyhnout se přijímání varovné zprávy aktivací funkce **Při importu zarovnejte parametry specifické pro aplikaci elektronického výkaznictví** v pracovním prostoru **Správa funkcí**. Když je tato funkce aktivní a struktura parametrů specifických pro aplikaci, které importujete se liší od struktury odpovídajících zdrojů dat v cílovém formátu ER, který je vybrán pro import, import se podaří v následujících případech:
+
+- Struktura cílového formátu ER byla změněna přidáním nových sloupců podmínek do libovolných existujících zdrojů dat typu **Vyhledat**. Po dokončení importu se aktualizují parametry specifické pro aplikaci. Ve všech importovaných záznamech parametrů specifických pro aplikaci jsou hodnoty v každém přidaném sloupci podmínky inicializovány s výchozí hodnotou pro [datový typ](er-formula-supported-data-types-primitive.md) toho sloupce.
+- Struktura cílového formátu ER byla změněna odstraněním některých sloupců podmínek z libovolných existujících zdrojů dat typu **Vyhledat**. Po dokončení importu se aktualizují parametry specifické pro aplikaci. Ve všech importovaných záznamech parametrů specifických pro aplikaci jsou odstraněny hodnoty v každém sloupci odstraněných podmínek.
+- Struktura cílového formátu ER byla změněna přidáním nových zdrojů dat typu **Vyhledat**. Po dokončení importu se přidaná vyhledávání připojí k parametrům specifickým pro aplikaci.
+- Struktura cílového formátu ER byla změněna odstraněním některých existujících zdrojů dat typu **Vyhledat**. Po dokončení importu všechny artefakty, které souvisejí se zdroji dat typu **Vyhledat**, které byly odstraněny z cílového formátu ER, jsou odstraněny z importovaných parametrů specifických pro aplikaci.
+
+Po dokončení importu se kromě změn, které byly právě popsány, změní stav importovaných parametrů specifických pro aplikaci na **Probíhá**. Varovné hlášení vás informuje, že automaticky nastavené parametry specifické pro aplikaci je nutné upravit ručně.
 
 ### <a name="reuse-existing-parameters"></a>Opakované použití existujících parametrů
 

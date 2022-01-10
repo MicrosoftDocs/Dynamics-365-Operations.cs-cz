@@ -2,7 +2,7 @@
 title: Nastavení parametrů správy úvěru
 description: V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753458"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921208"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
@@ -31,7 +31,7 @@ Existují čtyři pevné záložky v sekci **Úvěry**, na kterých můžete mě
 
 ### <a name="credit-holds"></a>Blokování úvěru
 
-- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne**. .
+- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne**.
 - V poli **Důvody zrušených objednávek** vyberte důvod uvolnění, který bude standardně použit, dojde-li ke zrušení prodejní objednávky, která byla blokována správou úvěru.
 - Chcete-li kontrolovat limit úvěru skupiny odběratelů podle limitu úvěru, když odběratel na prodejní objednávce náleží ke skupině odběratelů podle limitu úvěru, nastavte možnost **Kontrolovat limit úvěru skupin odběratelů podle limitu úvěru** na **Ano**. Bude zkontrolován limit úvěru pro danou skupinu a v případě, že je dostatečný, bude zkontrolován limit úvěru pro odběratele.
 - Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od výchozích platebních podmínek daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano**. Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
@@ -72,6 +72,10 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 
 - Ve správě úvěru je limit úvěru odběratele zobrazen v měně odběratele. Je nutné definovat typ směnného kurzu pro limit úvěru v měně odběratele. V poli **Typ směnného kurzu limitu úvěru** vyberte typ směnného kurzu, který má být použit k převodu primárního limitu úvěru na limit úvěru odběratele.
 - Chcete-li uživatelům zabránit v úpravách limitů úvěru na stránce **Odběratel**, nastavte možnost **Povolit ruční úpravy limitů úvěru** na **Ne**. Je-li tato možnost nastavena na **Ne**, změny limitu úvěru odběratele lze provést pouze zaúčtováním transakcí úprav limitu úvěru.
+- Nastavte možnost **Obejít rezervace zásob** na **Ano**, aby byly ignorovány rezervace zásob při kontrole pravidel blokování správy kreditu. V tomto případě systém zkontroluje kompletní množství řádku a povolí období odkladu kontrolních bodů bez ohledu na rezervované množství zásob.
+- Když je povolena správa kreditu, nastavení pole **Zpráva při překročení limitu úvěru** se použije pouze pro zpracování volných faktur. Přestože se zprávy nadále přidávají do prodejních objednávek, když zákazníci překročí svůj limit úvěru, přítomnost těchto zpráv neblokuje potvrzení, tisk výdejek a dodacích listů, ani zaúčtování faktur.
+
+    Správa kreditu je ve výchozím nastavení povolena, ale můžete ji zakázat. Pokud je povolena, pomocí pravidel blokování správy kreditu a kontrolních bodů můžete zjistit, kdy zákazníci překročí svůj limit úvěru. Pokud je zakázána, zprávy přidávané do prodejních objednávek na základě nastavení pole **Zpráva při překročení limitu úvěru** vám pomohou zjistit, kdy zákazníci překročí svůj limit úvěru.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Číselné řady a sdílené parametry číselných řad
 

@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731024"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944706"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Zpracování refundace platby v kontaktních střediscích
 
@@ -33,11 +33,14 @@ Logika call centra určuje platební metodu pro řádek platby refundace na zák
 
 Call centrum používá platební metodu původní objednávky k určení platební metody, která má být použita na návratovou objednávku. Takto funguje tento proces u následujících původních platebních metod:
 
-- **Normální** (hotovost) nebo **Šek** – Když vytvořená vrácená objednávka odkazuje na původní objednávku, která byla zaplacena pomocí běžného (hotovostního) nebo šekového typu platby, aplikace call centra odkazuje na konfigurace na stránce **Způsoby refundace v call centru**. Tato stránka umožňuje organizacím definovat podle měny objednávek, jak budou vráceny platby zákazníkům za objednávky, které byly původně zaplaceny pomocí běžného typu platby nebo šeku. Stránka **Metody refundace v call centru** také umožňuje organizacím vybrat, zda se zákazníkovi odešle šek pro vrácení peněz vygenerovaný systémem, nebo zda se na interním zůstatku zákaznického účtu vytvoří kredit na účet zákazníka. V těchto scénářích logika call centra odkazuje na měnu objednávky vrácení a poté použije hodnotu **Maloobchodní platební metoda** pro tuto měnu k vytvoření řádku vrácení platby na prodejní objednávce vrácení. Později je k měně propojen deník plateb pohledávek zákazníků (AR), který používá mapovanou platební metodu AR.
+- **Normální** (hotovost) nebo **Šek** – Když vytvořená vrácená objednávka odkazuje na původní objednávku, která byla zaplacena pomocí běžného (hotovostního) nebo šekového typu platby, aplikace call centra odkazuje na konfigurace na stránce **Způsoby refundace v call centru**. Tato stránka umožňuje organizacím definovat podle měny objednávek, jak budou vráceny platby zákazníkům za objednávky, které byly původně zaplaceny pomocí běžného typu platby nebo šeku. Stránka **Metody refundace kontaktního střediska** také umožňuje organizacím vybrat, zda má být zákazníkovi zaslán systémem generovaný šek regundace. V těchto scénářích logika call centra odkazuje na měnu objednávky vrácení a poté použije hodnotu **Maloobchodní platební metoda** pro tuto měnu k vytvoření řádku vrácení platby na prodejní objednávce vrácení. Později je k měně propojen deník plateb pohledávek zákazníků (AR), který používá mapovanou platební metodu AR.
 
     Následující obrázek ukazuje konfiguraci pro scénář, kdy zákazník vrátí produkty z prodejní objednávky, která je propojena s měnou USD a která byla původně zaplacena pomocí běžného nebo šekového typu platby. V tomto scénáři bude zákazníkovi vrácena refundace prostřednictvím šeku refundace generovaného systémem. Způsob platby AR **REF-CHK** byl nakonfigurován jako typ platby šeku pro refundaci.
 
     ![Konfigurace metod refundace call centra pro normální a šekové původní platby.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Zákaznický účet není podporovanou metodou refundace pro platby v hotovosti nebo šekem.
 
 - **Kreditní karta** – Když vytvořená návratová objednávka odkazuje na původní objednávku, která byla zaplacena pomocí kreditní karty, použije logika call centra pro platby vrácení stejnou původní kreditní kartu na objednávku vrácení.
 - **Věrnostní karta** – Když vytvořená návratová objednávka odkazuje na původní objednávku, která byla zaplacena pomocí zákaznické věrnostní karty, použije logika call centra pro platby vrácení stejnou věrnostní kartu.

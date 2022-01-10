@@ -1,5 +1,5 @@
 ---
-title: Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891786"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920193"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.23. Tato verze má číslo sestavení 10.0.1037 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.23. Tato verze má číslo sestavení 10.0.1037 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** Říjen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Prosinec 2021

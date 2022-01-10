@@ -1,8 +1,8 @@
 ---
 title: Postupné vytváření objednávek pro maloobchodní transakce
 description: V tomto tématu je popsáno postupné vytváření objednávek pro transakce obchodu v Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/04/2020
+author: analpert
+ms.date: 12/14/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,43 +15,49 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 900480c926df58cc1eaca052903384ceeadcccbdc3a0ede8a35f4b2a8ff87556
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719434"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921231"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Postupné vytváření objednávek pro maloobchodní transakce
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Dynamics 365 Retail verze 10.0.4 a starších je zaúčtování výkazů operací na konci dne a všechny transakce jsou zaúčtovány do knih až na konci dne. Rozsáhlé transakce tak musí být zpracovány v omezeném časovém úseku, což má někdy za následek vytížení a uzamčení a selhání zaúčtování výkazů. Maloobchodní prodejci také nemohou uznat výnosy a platby ve svých knihách v průběhu dne.
+V Microsoft Dynamics 365 Commerce verzi 10.0.5 a novější doporučujeme, abyste převedli všechny procesy účtování výkazů na procesy postupného účtování výkazů. S používáním funkce postupného účtování jsou spojeny významný výkon a obchodní výhody. Prodejní transakce jsou zpracovávány po celý den. Transakce odvodu úhrad a řízení hotovosti jsou zpracovány ve finančním výkazu na konci dne. Funkce postupného účtování umožňuje nepřetržité zpracování prodejních objednávek, faktur a plateb. Proto lze zásoby, výnosy a platby aktualizovat a rozpoznat téměř v reálném čase.
 
-Díky postupnému vytváření objednávek, funkci představené ve verzi 10.0.5 aplikace Retail, transakce zpracovávají po celý den a na konci dne se zpracovávají pouze finanční odsouhlasení úhrad a jiné transakce řízení hotovosti. Tato funkce rozdělí vytížení vytváření prodejních objednávek, faktur a plateb na celý den a poskytuje lepší vnímaný výkon a schopnost uznat výnosy a platby v knihách v téměř reálném čase. 
+## <a name="use-trickle-feed-based-posting"></a>Používání postupného účtování
 
+> [!IMPORTANT]
+> Než povolíte postupné účtování, musíte se ujistit, že neexistují žádné vypočítané a nezaúčtované výkazy. Před aktivací funkce zaúčtujte všechny výkazy. Otevřené výkazy můžete zkontrolovat v pracovním prostoru **Finance obchodu**.
 
-## <a name="how-to-use-trickle-feed-based-posting"></a>Jak používat postupné účtování
-  
-1. Chcete-li povolit postupné účtování maloobchodních transakcí, povolte funkci s názvem **Výkazy maloobchodu – Postupné** pomocí správy funkcí.
+Chcete-li povolit postupné účtování maloobchodních transakcí, povolte funkci s názvem **Maloobchodní výkazy – Postupné účtování** v pracovním prostoru **Správa funkce**. Výkazy budou rozděleny na dva typy: transakční a finanční.
 
-    > [!IMPORTANT]
-    > Než povolíte tuto funkci, ujistěte se, že na zaúčtování nečekají žádné nevyřízené výkazy.
+### <a name="transactional-statements"></a>Transakční výkazy
 
-2. Aktuální dokument výkazu bude rozdělen na dva typy: transakční výkaz a finanční výkaz.
+Zpracování transakčního výkazu by mělo být během dne spouštěno v časté frekvenci, aby dokumenty byly vytvářeny při načítání transakcí do centrály aplikace Commerce. Transakce se načítají z obchodů do centrály Commerce při spuštění **úlohy P**. Musíte také spustit úlohu **Ověřit transakce obchodu** a ověřit transakce, aby je transakční výkaz vyzvedl.
 
-      - Transakční výkaz vybere všechny nezaúčtované a ověřené transakce a bude vytvářet prodejní objednávky, prodejní faktury, deníky slev a plateb a transakce příjmů a výdajů ve frekvenci, kterou nakonfigurujete. Tento proces byste měli nakonfigurovat ke spouštění v časté frekvenci, aby dokumenty byly vytvářeny při odesílání transakcí do centrály prostřednictvím úlohy P. U transakčního výkazu, který již vytváří prodejní objednávky a prodejní faktury, není třeba konfigurovat dávkovou úlohu **Zaúčtovat zásoby**. Lze ji však stále použít k uspokojení specifických obchodních požadavků, které můžete mít.  
-      
-     - Finanční výkaz je určen k tomu, aby byl vytvořen na konci dne, a podporuje pouze metodu uzávěrky **Směna**. Tento výkaz bude omezen na finanční odsouhlasení a bude vytvářet pouze deníky pro rozdílné částky mezi spočtenou částkou a částkou transakce pro různé úhrady, společně s deníky pro ostatní transakce řízení hotovosti.   
+Naplánujte spouštění následujících úloh s vysokou frekvencí:
 
-3. Chcete-li vypočítat transakční výkaz, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat transakční výkazy v dávce**. Chcete-li zaúčtovat transakční výkazy v dávce, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat transakční výkazy v dávce**.
+- Chcete-li vypočítat transakční výkaz, spusťte úlohu **Vypočítat transakční výkazy v dávce** (**Retail a Commerce \> Retail a Commerce IT \> Zaúčtování POS \> Vypočítat transakční výkazy v dávce**). Tato úloha vyzvedne všechny nezaúčtované a ověřené transakce a přidá je do nového transakčního výkazu.
+- Chcete-li zaúčtovat transakční výkazy v dávce, spusťte úlohu **Zaúčtovat transakční výkazy v dávce** (**Retail a Commerce \> Retail a Commerce IT \> Zaúčtování POS \> Zaúčtovat transakční výkazy v dávce**). Tato úloha spustí proces účtování a vytvoří prodejní objednávky, prodejní faktury, deníky plateb, deníky slev a transakce příjmů a výdajů pro nezaúčtované výkazy, které neobsahují žádné chyby. 
 
-4. Chcete-li vypočítat finanční výkaz, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat finanční výkazy v dávce**. Chcete-li zaúčtovat finanční výkazy v dávce, přejděte na **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat finanční výkazy v dávce**.
+### <a name="financial-statements"></a>Finanční výkazy
 
-> [!NOTE]
-> Položky nabídky **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Vypočítat výkazy v dávce** a **Retail a Commerce > IT pro Retail a Commerce > Zaúčtování POS > Zaúčtovat výkazy v dávce** jsou s touto novou funkcí odebrány.
+Zpracování finančního výkazu má být konečným procesem. Tento typ zpracování výkazů podporuje pouze způsob Uzavírání **směn** a vyzvedne pouze uzavřené směny. Výkazy jsou omezeny na finanční odsouhlasení. Vytvoří pouze deníky pro rozdílné částky mezi spočtenou částkou a částkou transakce pro různé úhrady, společně s deníky pro ostatní transakce řízení hotovosti.
 
-Typy transakčních a finančních výkazů lze alternativně vytvořit ručně. Přejděte na **Retail a Commerce > Kanály > Obchody** a klikněte na **Výkazy**. Klikněte na **Nový** a pak zvolte typ výkazu, který chcete vytvořit. Pole na stránce **Výkazy** a akce pod položkou **Skupina výkazů** této stránky zobrazí relevantní data a akce založené na vybraném typu výkazu.
+Naplánujte čas zahájení a ukončení následujících úloh finančního výkazu na základě očekávaného konce dne:
 
+- Chcete-li vypočítat finanční výkaz, spusťte úlohu **Vypočítat finanční výkazy v dávce** (**Retail a Commerce \> Retail a Commerce IT \> Zaúčtování POS \> Vypočítat finanční výkazy v dávce**). Tato úloha shromáždí všechny nezaúčtované finanční transakce a přidá je do nového finančního výkazu.
+- Chcete-li zaúčtovat finanční výkazy v dávce, spusťte úlohu **Zaúčtovat finanční výkazy v dávce** (**Retail a Commerce \> Retail a Commerce IT \> Zaúčtování POS \> Zaúčtovat finanční výkazy v dávce**).
+
+### <a name="manually-create-statements"></a>Ruční vytváření výkazů
+
+Typy transakčních a finančních výkazů lze také vytvořit ručně. 
+
+1. Přejděte na **Retail a Commerce \> Kanály \> Obchody**, a vyberte **Výkazy**. 
+2. Vyberte **Nový** a poté vyberte typ výkazu, který chcete vytvořit. Pole na stránce **Výkazy** zobrazí data relevantní k vybranému typu výkazu a akce pod položkou **Skupina výkazů** zobrazí relevantní akce.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
