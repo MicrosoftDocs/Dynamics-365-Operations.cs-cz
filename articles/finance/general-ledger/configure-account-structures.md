@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3632f115b1ef4cd3a41a483270fb5f6bb6c73526ce9322f16a6533265302937c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc9219009991cce3f4df9c6f7e04903f5625dd80
+ms.sourcegitcommit: b2fe67e2fe6a99a35decb04c8d62efd1e94fe1b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719709"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945534"
 ---
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
@@ -79,7 +79,7 @@ Při zadávání deníku a výběru účtu v rozsahu zisků a ztrát způsobí v
 
 ## <a name="more-than-7-criteria-needed"></a>Je potřeba více než 7 kritérií.
 
-Pokud máte více než 7 kritérií, která jsou potřeba, můžete pokračovat v jejich přidávání na dalším řádku. Při práci v oddílu **podrobnosti povolené hodnoty** si všimnete, že kritérium **+ přidat nový** již není aktivní pro zadání sedmého kritéria. Je to způsobeno mnoha faktory jako: 
+Pokud máte více než 7 kritérií, která jsou potřeba, můžete pokračovat v jejich přidávání na dalším řádku. Při práci v oddílu **Podrobnosti povolené hodnoty** si všimnete, že už není dostupná možnost **+ Přidat nové** kritérium pro zadání sedmého kritéria. Je to způsobeno mnoha faktory jako: 
  - Šířka sloupce 
  - Způsob uložení dat 
  - Výkon ovládacího prvku **povolená hodnota podrobnosti**
@@ -101,7 +101,7 @@ Při nastavování účetních struktur existují doporučené postupy, které m
 - Nestačí napsat hvězdičku pro každý segment účetní struktury a spoléhat na pokročilá pravidla. To může být obtížné pro správu a často vede k chybám uživatelů během údržby, což může způsobit neschopnost systému účtovat.
 
 ## <a name="account-structure-activation"></a>Aktivace účetní struktury
-Jakmile jste s novým nastavením nebo změnou účetní struktury spokojení, musíte ji aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny.
+Jakmile jste s novým nastavením nebo změnou účetní struktury spokojeni, musíte je aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny.
 
 Další informace naleznete v tématu [Plánování účtových osnov](plan-chart-of-accounts.md), [finanční dimenze](financial-dimensions.md) a [Zadání kombinací účtů a dimenzí (segmentovaná kontrola položek)](enter-account-dimension-combinations-segmented-entry-control.md).
 

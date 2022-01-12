@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
 author: sericks007
-ms.date: 10/28/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
-ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
+ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7725042"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927472"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
 
@@ -74,7 +74,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Neexistuje žádný ovládací prvek pro provedení této události. |
-| **Nahrazeno jinou funkcí?**   | Ano, přesuňte stávající přihlášené metody událostí **OnDBSynchronzie** do rozšířené třídy SysSetup. |
+| **Nahrazeno jinou funkcí?**   | Ano, přesuňte stávající přihlášené metody událostí **OnDBSynchronize** do rozšířené třídy SysSetup. |
 | **Ovlivněné oblasti produktu**         | Synchronizace databáze |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé. Plánované datum odstranění je říjen 2022. |

@@ -1,8 +1,8 @@
 ---
 title: Vytvoření posloupnosti upomínek
 description: Tato procedura slouží k vytvoření posloupnosti upomínek.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753579"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921192"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Vytvoření posloupnosti upomínek
 
@@ -31,10 +31,10 @@ Tato procedura slouží k vytvoření posloupnosti upomínek. Tento úkol využ�
 3. V poli **Posloupnost upomínek** zadejte ID posloupnosti, které bude představovat číselnou řadu. Použije se při nastavování profilu zaúčtování.
 4. Zadejte hodnotu do pole **Popis**.  Platební podmínky jsou volitelné. Pokud zde zadáte hodnotu, faktura upomínky na poplatek bude používat platební podmínky namísto podmínek platby, které jsou uloženy pro odběratele.  
 5. V poli **Kód upomínky inkasa** vyberte kód pro první upomínku, kterou chcete odeslat. První upomínka se vytvoří podle data splatnosti na faktuře, hodnoty zadané pro období odkladu v poli Dny na tomto řádku a dalších informací, které zadáte do tohoto řádku.  
-6. Zadejte hodnotu do pole **Popis**. Měna poplatku je výchozí měnou odběratele. Kód měny může být jiný, než jaká je měna faktury.  
-7. Kliknutím na tlačítko **Přidat** přidejte následující upomínku, která se odešle v řadě V mnoha případech první upomínka je pouze upozornění. V případě potřeby můžete přidat poplatky.  
-8. V poli s kódem kolekce upomínky vyberte další upomínku, kterou chcete odeslat v posloupnosti.
-9. Zadejte hodnotu do pole **Popis**.
+6. Zadejte hodnotu do pole **Popis**. 
+7. Výchozí měnou poplatku je měna právnické osoby. Kód měny může být jiný, než jaká je měna faktury.   
+8. Kliknutím na tlačítko **Přidat** přidejte následující upomínku, která se odešle v řadě V mnoha případech první upomínka je pouze upozornění. V případě potřeby můžete přidat poplatky.  
+9. V poli **Kód upomínky kolekce** vyberte další upomínku, kterou chcete odeslat v posloupnosti.
 10. V poli **Hlavní účet** vyberte účet výnosů, který bude použit pro poplatky.
 11. Zadejte poplatek, který bude účtován po zaúčtování této upomínky.
 12. V poli **Skupina DPH zboží** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání. Vyberte skupinu DPH položky, pokud DPH musí být vypočítáno u poplatku.  

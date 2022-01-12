@@ -1,8 +1,8 @@
 ---
-title: Zákaz pravidel v kontrole konzistence maloobchodních transakcí
-description: Toto téma popisuje funkci pro zákaz pravidel kontroly konzistence transakcí v aplikaci Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/15/2019
+title: Zakázat pravidla používaná v procesu ověřování transakcí
+description: Toto téma popisuje funkci pro zákaz pravidel ověřování transakcí v aplikaci Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 12/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 381bc8534d4b0a06a50c8c18b3f78aba9d43a1f497bfd271361216ed1dee9197
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746654"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919518"
 ---
-# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Zákaz pravidel v kontrole konzistence maloobchodních transakcí 
+# <a name="disable-rules-used-in-the-transaction-validation-process"></a>Zakázat pravidla používaná v procesu ověřování transakcí
 
 [!include [banner](../includes/banner.md)]
 
-Maloobchodní prodejci mohou mít obchodní scénáře a procesy, které jsou pro ně jedinečné. Proto ne všechna pravidla, která jsou zahrnuta ve výchozím nastavení v kontrole konzistence obchodních transakcí, platí pro všechny maloobchodní prodejce. Pro přizpůsobení rozdílů poskytuje aplikace Microsoft Dynamics 365 Commerce funkci, kterou lze použít k zakázání pravidel, která nelze použít.
+Maloobchodní prodejci mohou mít obchodní scénáře a procesy, které jsou pro ně jedinečné. Proto ne všechna pravidla, která jsou zahrnuta v nastavení procesu ověřování transakcí, platí pro všechny maloobchodní prodejce. Pro přizpůsobení rozdílů poskytuje aplikace Microsoft Dynamics 365 Commerce funkci, kterou lze použít k zakázání pravidel, která není třeba použít.
 
-Chcete-li zobrazit seznam pravidel, která jsou k dispozici v kontrole konzistence transakcí maloobchodu ve vašem prostředí, a zobrazit stav jednotlivých pravidel, přejděte na **Retail a Commerce \> Nastavení centrály \> Parametry \> Parametry Commerce** a pak zvolte kartu **Ověření transakce**
+Chcete-li zobrazit seznam pravidel, která jsou k dispozici v procesu ověřování transakcí ve vašem prostředí, a zobrazit stav každého pravidla, přejděte na **Retail a Commerce \> Nastavení centrály \> Parametry \> Parametry Commerce** a vyberte kartu **Ověření transakce**. Všechna povolená pravidla se používají k ověření transakcí během procesu **Ověřit transakce obchodu** a musí proběhnout, aby se transakce mohly shromáždit a zaúčtovat na výkazu transakcí.
 
-Ve výchozím nastavení je stav každého pravidla nastaven na **Povoleno**. Proto se všechna pravidla používají k ověření transakcí předtím, než jsou načtena do obchodních výkazů. Chcete-li pravidlo zakázat, změňte jeho stav na **Zakázáno**. Zakázaná pravidla nejsou zvažována při ověřování transakcí během procesu výpočtu výkazu.
-
-Chcete-li obejít celý proces ověření bez ohledu na povolená pravidla, přejděte na **Retail a Commerce \> Nastavení centrály \> Parametry \> Parametry Commerce** a pak na kartě **Ověření transakcí** nastavte možnost **Zakázat kontrolu konzistence pro obchodní transakce** na **Ano**. Po nastavení této možnosti na **Ne** ji nelze z uživatelského rozhraní nastavit zpět na možnost **Ano**.
-
+Ve výchozím nastavení je stav každého pravidla nastaven na **Povoleno**. Proto se všechna pravidla používají k ověření transakcí předtím, než je lze načíst do výkazu transakcí. Chcete-li pravidlo zakázat, změňte jeho stav na **Zakázáno**. Zakázaná pravidla nejsou zvažována při ověřování transakcí během procesu **Ověřit transakce obchodu**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

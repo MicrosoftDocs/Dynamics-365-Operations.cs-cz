@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893638"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931974"
 ---
 # <a name="add-or-copy-leases-preview"></a>Přidání nebo kopírování leasingů (Preview)
 
@@ -50,6 +50,9 @@ Po dokončení zadávání informací o leasingu postupujte podle těchto kroků
     Stránka **Podrobnosti o knize** ukazuje, jak je leasing zaúčtován v knihách, které k němu byly přiděleny. Odtud můžete zobrazit plány leasingu.
 
     Harmonogram plateb obsahuje vstupy z karty **Řádky platebního kalendáře** na stránce **Přidání leasingu**. Stále můžete změnit každou částku platby a variabilní platbu. Leasingový závazek se počítá na základě upraveného platebního kalendáře.
+    
+> [!NOTE]
+> Počáteční datum leasingové splátky musí být stejné nebo pozdější než datum zahájení leasingu. Pokud zadáte počáteční datum platby, které je dřívější než počáteční datum leasingu, zobrazí se chybová zpráva. 
 
 4. Po dokončení kontroly platebního kalendáře vyberte **Potvrdit kalendář**. Po potvrzení kalendáře již není leasing k dispozici pro úpravy.
 

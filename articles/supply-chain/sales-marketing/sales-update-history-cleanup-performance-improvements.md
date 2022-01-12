@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891761"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920266"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Vylepšení výkonu čištění historie prodeje
+# <a name="sales-history-cleanup-performance-improvements"></a>Vylepšení výkonu čištění historie prodeje
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Tato funkce zlepšuje stávající úlohu vyčištění následujícími způsob
 
 Po aktivaci funkce dávková úloha **Vyčištění historie aktualizace prodeje** (**Prodej a marketing \> Pravidelné úkoly \> Čištění \> Vyčištění historie aktualizace prodeje**) poběží jako předtím, ale s lepším výkonem a maximálně 2 hodiny. To znamená, že může být nutné několikrát spustit, abyste vyčistili všechna data pro konkrétní časový rámec uchování.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Zapnutí funkce vylepšení výkonu čištění historie prodeje
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Zapnutí funkce vylepšení výkonu čištění historie prodeje
 
 Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 

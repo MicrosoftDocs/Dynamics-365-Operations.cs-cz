@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711680"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920391"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>Množství, které se pokoušíte aktualizovat, překračuje přijaté / doručené množství
 
@@ -62,8 +62,8 @@ Následujícím postupem upravte množství řádku nákladu.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
 1. Vyberte náklad, pro který nelze vygenerovat dodací list.
-1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
-1. Na kartě  **Řádky nákladu** vyberte řádek nákladu položky, která způsobuje problém.
+1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
+1. Na kartě **Řádky nákladu** vyberte řádek nákladu položky, která způsobuje problém.
 1. Vyberte **Snížit vydané množství** a upravte vydané množství.
 1. Nastavte pole **Snížit řádek nákladu** tak, aby odráželo úpravy na řádku nákladu.
 
@@ -75,5 +75,5 @@ Chcete-li registraci vyskladnění zrušit, použijte následující postup.
 
 1. Přejděte na **Pohledávky \> Objednávky \> Všechny objednávky**.
 1. Vyberte prodejní objednávku, u které nemůžete zaúčtovat dodací list pro náklad.
-1. Na kartě  **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, pro kterou byla provedena registrace vyskladnění.
+1. Na kartě **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, pro kterou byla provedena registrace vyskladnění.
 1. Vyberte **Aktualizovat řádek \> Vyskladnit** ke zrušení vyskladnění položek.

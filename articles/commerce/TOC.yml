@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (listopad 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (říjen 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -842,7 +840,7 @@
           items:
             - name: Přehled výkazů
               href: retail-statements.md
-            - name: Kontrola konzistence transakcí
+            - name: Ověření transakcí obchodu pro výpočet výkazu
               href: valid-checker.md
             - name: Zákaz pravidel v kontrole konzistence maloobchodních transakcí
               href: disable-consistency-check-rule.md
@@ -1096,7 +1094,7 @@
                       href: add-accordion.md
                     - name: Modul karty
                       href: add-tab.md
-                    - name: Modul iFrame
+                    - name: Modul Iframe
                       href: iframe-module.md
                 - name: Marketingové moduly
                   items:
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Nastavení fiskální integrace pro kanál Commerce
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Nastavení kanálu buildu pro vzorek fiskální integrace
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Profily certifikátů definovaných uživatelem pro maloobchodní prodejny
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1320,8 +1320,10 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Rakousko
               items:
-                - name: Ukázka integrace fiskální služby pro Rakousko
+                - name: Ukázka registrace fiskální služby pro Rakousko
                   href: localizations/emea-aut-fi-sample.md
+                - name: Pokyny k nasazení vzorku fiskální integrace pro Rakousko (starší verze)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazílie
               items:
                 - name: Lokalizace Commerce pro Brazílii
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Ukázka integrace fiskální služby pro Českou republiku
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Pokyny k nasazení vzorku fiskální integrace pro Českou republiku (starší verze)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polsko
                   items:
                     - name: Vzor integrace fiskální tiskárny pro Polsko
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Správa informací o zákazníkovi pro Polsko
                       href: localizations/emea-pol-customer-information.md
+                    - name: Pokyny k nasazení vzorku fiskální integrace pro Polsko (starší verze)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Francie
               items:
                 - name: Funkce registrační pokladny
@@ -1378,8 +1384,10 @@
                   href: localizations/emea-fra-deployment.md
             - name: Německo
               items:
-                - name: Ukázka integrace fiskální služby pro Německo
+                - name: Ukázka registrace fiskální služby pro Německo
                   href: localizations/emea-deu-fi-sample.md
+                - name: Pokyny k nasazení vzorku fiskální integrace pro Německo (starší verze)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indie
               items:
                 - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Správa informací o zákazníkovi pro Itálii
                   href: localizations/emea-ita-customer-information.md
+                - name: Pokyny k nasazení vzorku fiskální integrace pro Itálii (starší verze)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexiko
               items:
                 - name: Globální elektronické faktury CFDI pro Mexiko
@@ -1407,6 +1417,8 @@
                 - name: Funkce registrační pokladny
                   href: localizations/emea-nor-cash-registers.md
                 - name: "Pokyny k\_nasazení registračních pokladen"
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: "Pokyny k\_nasazení registračních pokladen (starší verze)"
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rusko
               items:
@@ -1432,7 +1444,9 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Ukázka integrace kontrolní jednotky pro Švédsko
                   href: localizations/emea-swe-fi-sample.md
-                - name: Ukázka integrace Retail POS s kontrolními jednotkami (starší)
+                - name: Pokyny k nasazení vzorku integrace kontrolní jednotky pro Švédsko (starší verze)
+                  href: localizations/emea-swe-fi-sample-sdk.md
+                - name: Ukázka integrace Retail POS s kontrolními jednotkami (starší verze)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Vykazování a integrace Power BI
           items:
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Vytvoření hooku modulu plug-in kanálu požadavku
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Komponenta obrázku
+                      href: e-commerce-extensibility/image-component.md
                 - name: Vývoj datových akcí
                   items:
                     - name: Přehled datových akcí
@@ -2574,7 +2590,9 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Stažení ukázek a balíčků z GitHub a NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
-                - name: "Časté dotazy k\_Retail SDK"
+                - name: Nastavení build agenta Visual Studio 2017 pro vytvoření Modern POS
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
+                - name: "Časté otázky k\_Retail SDK"
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Rozšiřitelnost pokladních míst (POS)
               items:

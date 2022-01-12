@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 58b23058582c949a757ec5c141e218b36833ec21e72c35db89762017dc26ae19
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752935"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927397"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfigurace Finance Insights pro public review (náhled) - verze 10.0.20 a novější
 
@@ -39,7 +40,7 @@ Pro nasazení prostředí postupujte takto.
 
 1. V Microsoft Dynamics Lifecycle Services (LCS) vytvořte nebo aktualizujte prostředí Finance. Prostředí vyžaduje verzi aplikace 10.0.20 nebo novější aplikací Finance and Operations.
 2. Prostředí musí mít vysokou dostupnost (HA) v prostředí Sandbox. (Tento typ prostředí se také nazývá prostředí 2. úrovně.) Další informace najdete v tématu [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Contoso demo data neobsahují dostatek historických dat pro adekvátní trénink predikčního modelu. 
+3. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Ukázková data Contoso neobsahují dostatek historických dat pro adekvátní trénink modelu predikce. 
 
 ## <a name="configure-dataverse"></a>Konfigurace služby Dataverse
 

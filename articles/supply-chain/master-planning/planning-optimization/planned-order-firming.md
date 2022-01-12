@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778514"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920716"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -80,6 +80,9 @@ Chcete-li ručně zpracovat plánované objednávky, vyhledejte a vyberte pláno
     - **Seskupit podle kupní smlouvy** - Nastavte tuto možnost na *Ano*, chcete-li seskupit plánované nákupní objednávky, které mají stejného dodavatele jako stávající nákupní smlouvy, a vytvořit jednu nákupní objednávku na každou smlouvu. Tato možnost je automaticky povolena, když je povolena možnost **Seskupit podle dodavatele**. Chcete-li použít **Seskupit podle kupní smlouvy**, možnost **Najděte kupní smlouvu** musí být nastavena na *Ano* na stránce **Hlavní plánovací parametry**.
     - **Seskupit podle období** (v části **Nákupní objednávky**) - Vyberte období, do kterého chcete seskupit plánované nákupní objednávky. Pro použití této možnosti je také nutné vybrat možnost **Seskupit podle dodavatele**.
     - **Seskupit podle období** (v části **Převody**) - Vyberte období, do kterého chcete seskupit plánované převodní příkazy. Objednávky budou seskupeny podle hodnot **Ze skladu** a **Do skladu**.
+
+    > [!NOTE]
+    > Každá z možností „Seskupit podle“ způsobí, že systém převede každou plánovanou objednávku na řádek v jediné nákupní objednávce, která je výsledkem seskupení.
 
     ![Záložka s náhledem Parametry v dialogovém okně Potvrzení.](./media/manual-firming.png "Záložka s náhledem Parametry v dialogovém okně Potvrzení")
 

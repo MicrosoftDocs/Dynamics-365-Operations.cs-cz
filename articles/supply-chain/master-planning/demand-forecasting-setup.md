@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3abe82bb888b7501b00af44b48bfb40fbe8e2ee3
-ms.sourcegitcommit: 6ef4906621fbb4e3afaf2b0d6697536288365bb1
+ms.openlocfilehash: 4f53171361b655ab4ae05894d098203df0af8d60
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7868630"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920766"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -195,9 +195,6 @@ Hodnoty pro tyto parametry můžete přepsat tak, že přejdete na **Hlavní pl�
 ## <a name="set-up-the-azure-machine-learning-service"></a><a name="setup-amls"></a>Nastavení služby Azure Machine Learning Service
 
 Supply Chain Management vypočítává prognózy poptávky pomocí Azure Machine Learning Service, kterou musíte nastavit a spustit ve svém vlastním předplatném Azure. Tato část popisuje, jak nastavit Azure Machine Learning Service v Azure a pak ji připojit k prostředí Supply Chain Management.
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.23 GA -->
 
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>Povolte službu Azure Machine Learning Service ve správě funkcí
 

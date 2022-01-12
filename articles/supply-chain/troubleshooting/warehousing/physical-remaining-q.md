@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744647"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920217"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Zbývající fyzické množství v jednotce nesmí být nula
 
@@ -63,10 +63,10 @@ Pomocí následujícího postupu zkontrolujte řádky nákladu a proveďte úpra
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
 1. Vyberte náklad, pro který nelze vygenerovat dodací list.
-1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
-1. Na kartě  **Řádky nákladu** vyberte řádek nákladu, který přesahuje navýšení dodávky.
+1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
+1. Na kartě **Řádky nákladu** vyberte řádek nákladu, který přesahuje navýšení dodávky.
 1. Vyberte **Snížit vydané množství** a upravte vydané množství.
-1. Na kartě  **Detaily řádku** vyberte možnost **Objednat**.
+1. Na kartě **Podrobnosti řádku** vyberte možnost **Objednat**.
 1. Nastavte pole **Množství** na vyskladněné množství (tj. na hodnotu pole **Množství vytvořené prací**), aby mohlo dojít k vygenerování dodacího listu.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Zkontrolujte řádky nákladu a proveďte úpravy, abyste se ujistili, že jednotka a množství jsou zarovnány s desetinnou přesností jednotky

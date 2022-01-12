@@ -2,7 +2,7 @@
 title: Správa žádostí o dovolenou v aplikaci Teams
 description: Toto téma ukazuje, jak požádat o volno v aplikaci Dynamics 365 Human Resources v Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771524"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924740"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Správa žádostí o dovolenou v aplikaci Teams
 
@@ -35,6 +35,9 @@ Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams.
 1. V Microsoft Teams přejděte do seznamu aplikací.
  
 2. Vyhledejte Dynamics 365 Human Resources a poté vyberte dlaždici **Human Resources**.
+
+> [!NOTE]
+> Počínaje 20. prosincem 2021 budou služby robotů Human Resources App (verze 1.1.4) hostované v klientovi Microsoft vyřazeny z provozu. Nejaktuálnější rozšíření (verze 1.1.5) je k dispozici pro instalaci. Další informace naleznete v tématu [Správa žádostí o dovolenou v aplikaci Teams](hr-admin-teams-leave-app.md#update-app).
 
 3. Vyberte tlačítko **Přidat** pro instalaci aplikace.
 

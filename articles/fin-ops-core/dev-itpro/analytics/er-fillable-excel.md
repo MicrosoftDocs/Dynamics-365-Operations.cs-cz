@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890858"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943605"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -364,6 +364,22 @@ Problém opravíte některým z následujících způsobů:
     3. Spusťte upravený formát elektronického výkaznictví.
 
         ![Kontrola vygenerovaného dokumentu v desktopové aplikaci Excel.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Omezení
+
+### <a name="known-epplus-library-limitations"></a>Známá omezení knihovny EPPlus
+
+#### <a name="external-data-sources"></a>Externí zdroje dat
+
+Pokud jedna z vašich šablon obsahuje kontingenční tabulku, která je založena na modelu PowerPivot, který odkazuje na [externí zdroj dat](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), a je povolena funkce **Povolit použití knihovny EPPlus v rámci elektronického vykazování**, při spuštění formátu elektronického výkaznictví, který používá tuto šablonu ke generování odchozího dokumentu ve formátu Excel, se zobrazí následující chybová zpráva: „Zdroj mezipaměti není list.“ Chcete-li problém opravit, máte následující možnosti:
+
+- **Doporučeno:** Přepracujte řešení Excel, které používáte:
+
+    1. Izolujte část, která obsahuje kontingeční body, v samostatném sešitu aplikace Excel (sešit A). 
+    2. Pomocí elektronického výkaznictví vygenerujte druhý sešit aplikace Excel (sešit B) z Finance, který obsahuje požadované podrobnosti. 
+    3. V sešitu A se odkažte na sešit B, jakmile se sešit B vygeneruje.
+
+- Tuto funkci vypněte použitím jiné možnosti než EPPlus. 
 
 ## <a name="additional-resources"></a>Další prostředky
 

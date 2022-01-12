@@ -360,7 +360,7 @@
                       href: deployment/on-premises-overview.md
                     - name: Plán a příprava pro místní nasazení
                       href: deployment/plan-onprem-deployment.md
-                    - name: Software podporovaný aplikací Microsoft Dynamics 365 Finance and Operations (on-premises)
+                    - name: Software podporovaný společností Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-compatibility.md
                     - name: Požadavky na rozsah hardwaru
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
@@ -1012,6 +1012,8 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Soubory překladové paměti
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Rozšíření Azure DevOps (Public Preview)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Integrace Microsoft Power Platform
           items:
             - name: Přehled
@@ -1456,15 +1458,15 @@
               href: process-automation/log-results.md
             - name: Přizpůsobení uživatelského rozhraní
               href: process-automation/ui-customization.md
-        - name: Regression Suite Automation Tool
+        - name: Nástroj Regression suite automation tool
           items:
-            - name: Přehled nástroje Regression Suite Automation Tool
+            - name: Přehled nástroje Regression suite automation tool
               href: perf-test/rsat/rsat-overview.md
             - name: Instalace a konfigurace
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Použití nástroje Regression Suite Automation Tool
+            - name: Použití nástroje Regression suite automation tool
               href: perf-test/rsat/rsat-run.md
-            - name: Udržování testovacích případů v nástroji Regression Suite Automation Tool
+            - name: Udržování testovacích případů v nástroji Regression suite automation tool
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Ověření očekávaných hodnot
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1474,7 +1476,7 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Upgrade souborů parametrů
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Kurz pro nástroj Regression Suite Automation Tool
+            - name: Kurz pro nástroj Regression suite automation tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurace uživatelů bez oprávnění správce
               href: perf-test/rsat/rsat-configure-nonadmin.md
@@ -1596,12 +1598,14 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: "Dávkové zpracování a\_dávkové servery"
                   href: sysadmin/batch-server-overview.md
-                - name: Vytvoření dávkové úlohy
+                - name: Vytvoření dávkových úloh
                   href: sysadmin/tasks/create-batch-job.md
                 - name: Povolení opakovaných pokusů o dávku
                   href: sysadmin/retryable-batch.md
                 - name: Kopírování dávkové úlohy
                   href: sysadmin/copy-batch-job.md
+                - name: Plánování dávky na základě priority
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktivní období dávky
                   href: sysadmin/activeperiod.md
                 - name: Podpora letního času pro aktivní období dávek

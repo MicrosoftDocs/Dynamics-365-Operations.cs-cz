@@ -2,7 +2,7 @@
 title: Aplikace Human Resources v Teams
 description: V tomto tématu se seznámíte s aplikací Microsoft Dynamics 365 Human Resources v aplikaci Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913482"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924715"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikace Human Resources v Teams
 
@@ -41,6 +41,21 @@ Aplikaci Dynamics 365 Human Resources najdete v obchodě Teams. Informace o inst
 Informace o správě oprávnění k aplikaci v Teams naleznete v části [Správa zásad povolení k aplikaci v Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
 
 Pokud chcete, aby si uživatelé v aplikaci prohlíželi kalendář dovolené a nepřítomnosti, musíte povolit funkci **Kalendář dovolené a nepřítomnosti v Teams** ve Správě funkcí. Další informace o povolení funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>Aktualizace aplikace
+>[!NOTE]
+> Počínaje 20. prosincem 2021 budou služby robotů Human Resources App hostované v klientovi Microsoft vyřazeny z provozu. Aktualizované rozšíření (verze 1.1.5), které je k dispozici k instalaci, nebude mít žádný vliv. Hlavní dopad bude na zastaralé rozšíření (verze 1.1.4). Chatovací robot v této verzi přestane fungovat. Karta **Volno** bude nadále fungovat v obou rozšířeních.
+
+U verze 1.1.4 přestane chatovací robot reagovat na jakoukoli zprávu. Například **Přihlásit se**, **Zobrazit zůstatky** a **Zobrazit volno**. Aplikace musí být ručně aktualizována na nejnovější verzi. Další informace naleznete v tématu [Aktualizace aplikací v Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+Chcete-li aktualizovat na verzi 1.1.5, postupujte takto:
+1. V Microsoft Teams jděte na **Aplikace**.
+2. Vyhledejte aplikaci **Human Resources**.
+3. Vyberte **Upgradovat**.
+
+Verzi aplikace Human Resources můžete zkontrolovat buď na kartě **O aplikaci** nebo přechodem do sekce **Osobní aplikace**. 
+
+![Karta **O aplikaci** v aplikaci Human Resources.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Povolení oznámení pro aplikaci Human Resources v Teams
 

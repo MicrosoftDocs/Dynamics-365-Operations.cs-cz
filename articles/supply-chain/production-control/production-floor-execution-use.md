@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e84df8aa4f3e4079cf97d35b0d67a75d68dbb4b2
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860526"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920641"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -110,9 +110,6 @@ Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat m
 ![Dialogové okno Hlášení průběhu.](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
 
 ## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Hlášení dobrých množství u dávkových objednávek, které mají koprodukty a vedlejší produkty
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] 
-<!--KFM: Preview until GA with 10.0.23 -->
 
 Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech.
 

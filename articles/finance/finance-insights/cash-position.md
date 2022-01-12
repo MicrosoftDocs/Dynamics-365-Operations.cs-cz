@@ -2,7 +2,7 @@
 title: Pozice hotovosti
 description: Toto téma popisuje, jak funkce prognózování cashflow predikuje pozici hotovosti organizace pro konkrétní časy. Také popisuje možnosti, které jsou k dispozici pro zobrazování prognóz pro různá období.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752873"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945782"
 ---
 # <a name="cash-position"></a>Pozice hotovosti
 
@@ -45,5 +45,17 @@ Spodní část karty **Pozice hotovosti** zobrazuje podrobnosti o pozici, cashfl
 - Mřížka **Bankovní účet** ukazuje dopad očekávaných přílivů a odtoků hotovosti na bankovní zůstatek.
 
 Chcete-li uložit a upravit pozici hotovosti, vytvořte snímek. Další informace o práci se snímky najdete v části [Přehled snímků](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Podrobnosti o funkci Pozice hotovosti 
+
+Funkce Pozice hotovosti zahrnuje následující funkce. 
+
+- Funkce Pozice hotovosti zobrazuje cashflow na základě existujících dokladů v systému a řádků přírůstku a úbytku hotovosti importovaných z externích systémů.
+- Usnadňuje integraci dat cashflow z externích systémů do Dynamics 365 Finance. Pozice cashflow může využívat také rámec importu a exportu dat. Tento rámec usnadňuje integraci s Excel OData. Můžete také kombinovat data z více zdrojů a vytvořit komplexní řešení pozice cashflow.
+- Představuje inteligentní pozici hotovosti. Pozice hotovosti se vytváří na základě chování platby zákazníka, aby bylo možné predikovat, kdy může společnost očekávat, že na její účty dorazí hotovost.
+- U zákaznických objednávek a faktur se funkce AI predikce plateb zákazníků používá k určení historického platebního chování zákazníků, kdy bude objednávka nebo faktura zaplacena.
+- U objednávek a faktur dodavatelů používáme průměrnou dobu mezi odesláním a zaplacením faktury podle dodavatele, abychom určili, kdy bude objednávka nebo faktura dodavatele zaplacena, čímž se zpřesní úbytek hotovosti.
+
+To vytváří přesnější pohled na cashflow založený na historickém platebním chování pokladníka. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

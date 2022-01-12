@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 7d462992816a5a2dee73979ed4cb1521ca4ce4f7
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752897"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945747"
 ---
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
@@ -37,6 +37,7 @@ Po dokončení těchto úloh lze vypočítat a analyzovat prognózy cashflow a n
 Prognózu cashflow lze integrovat s moduly Hlavní kniha, Závazky, Pohledávky, Rozpočtování a Řízení zásob. Proces prognózy používá informace o transakcích zadaných do systému a procesu výpočtu prognózuje očekávaný vliv každé transakce na hotovost. Následující typy transakcí jsou zvažovány při výpočtu cashflow:
 
 - **Prodejní objednávky** – Prodejní objednávky, které ještě nebyly fakturovány a jejichž výsledkem jsou fyzické nebo finanční prodeje.
+- **Volné faktury** – Volné faktury, které ještě nejsou zaúčtovány a jejichž výsledkem jsou finanční prodeje. 
 - **Nákupní objednávky** – Nákupní objednávky, které ještě nebyly fakturovány a jejichž výsledkem jsou fyzické nebo finanční nákupy.
 - **Pohledávky** – Otevřené transakce odběratele (faktury, které ještě nebyly zaplaceny).
 - **Závazky** – Otevřené transakce dodavatele (faktury, které ještě nebyly zaplaceny).
@@ -44,7 +45,9 @@ Prognózu cashflow lze integrovat s moduly Hlavní kniha, Závazky, Pohledávky,
 - **Položky registru rozpočtu** – Položky registru rozpočtu, které jsou vybrány pro prognózy cashflow.
 - **Prognózy poptávky** – Řádky modelu prognózy zásob, které jsou vybrány pro prognózy cashflow.
 - **Prognózy dodávek** – Řádky modelu prognózy zásob, které jsou vybrány pro prognózy cashflow.
+- **Externí zdroj dat** – Externí data, která jsou zadána nebo importována do prognóz peněžních toků pomocí šablon tabulek.
 - **Prognózy projektu** - Řízení projektů a prognózy účetnictví využívající model prognózy.
+- **Cashflow – platby z prodeje finančnímu úřadu** – Předpokládané částky plateb daňovému úřadu z prodeje a načasování, jejichž výsledkem jsou finanční platby. Povolte funkci Cashflow – platby z prodeje finančnímu úřadu.
 
 ## <a name="configuration"></a>Konfigurace
 
@@ -94,7 +97,7 @@ Položky registru rozpočtu lze do prognózy cashflow zahrnout individuálně pr
 Prognózy nabídky a poptávky zásob lze zahrnout do prognóz cashflow. Na kartě **Řízení zásob** stránky **Nastavení prognózy cashflow** vyberte model prognózy, který má být zahrnut do prognózy cashflow. Zahrnutí do prognózy cashflow lze u jednotlivých řádků prognózy nabídky a poptávky přepsat.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Nastavení dimenzí pro prognózu cashflow
-Nová karta na stránce **Nastavení prognózy cashflow** umožňuje řídit, které finanční dimenze se používají pro filtrování v pracovním prostoru **Prognóza cashflow**. Tato karta se zobrazí, pouze pokud je povolena funkce prognózy cashflow ve Finance Insights. 
+Nová karta na stránce  **Nastavení prognózy cashflow** umožňuje řídit, které finanční dimenze se používají pro filtrování v pracovním prostoru  **Prognóza cashflow**. Tato karta se zobrazí, pouze pokud je povolena funkce prognózy cashflow.
 
 Na kartě **Dimenze** vyberte ze seznamu dimenze, které se mají použít pro filtrování, a pomocí kláves se šipkami je přesuňte do pravého sloupce. Pro filtrování dat prognózy cashflow lze vybrat pouze dvě dimenze. 
 
@@ -108,6 +111,10 @@ Ve verzi 10.0.17 umožňuje nová funkce integraci s projektovým řízením a �
 Po zapnutí funkce projektové prognózy cashflow lze prognózu cashflow zobrazit pro každý projekt na stránce **Všechny projekty**. V podokně akcí na kartě **Plán** ve skupině **Prognóza** vyberte možnost **Prognóza cashflow**. V pracovním prostoru **Přehled hotovosti** (viz část [Vykazování](#reporting) dále v tomto tématu), zobrazuje typ transakce projektové prognózy přírůstky (výnos projektové prognózy) a úbytky (náklady projektové prognózy). Částky lze zahrnout, pouze pokud **Fáze projektu** v pracovních prostorech **Přehled hotovosti** na nastavena na hodnotu **Zpracovává se**.
 
 Projektové transakce jsou stále několika způsoby zahrnuty do prognózy cashflow, bez ohledu na to, zda je zapnutá funkce **Projektová prognóza cashflow**. Zaúčtované projektové faktury jsou zahrnuty do prognózy jako součást otevřených transakcí odběratele. Prodejní a nákupní objednávky iniciované projektem jsou zahrnuty do prognózy jako otevřené objednávky po jejich zadání do systému. Můžete také přenést prognózy projektu do rozpočtového modelu hlavní knihy. Tento rozpočtový model hlavní knihy je poté zahrnut do prognózy cashflow jako součást položek registru rozpočtu. Pokud jste zapnuli funkci **Projektová prognóza cashflow**, nepřenášejte projektové prognózy do rozpočtového modelu hlavní knihy, protože tato akce způsobí, že se prognózy projektu započítají dvakrát.
+
+### <a name="sales-tax-authority-payments"></a>Platby z prodeje finančnímu úřadu 
+
+Funkce Cashflow – platby z prodeje finančnímu úřadu předpovídá dopad plateb daně z obratu na cashflow. K predikci data a výše plateb cashflow používá nezaplacené transakce DPH, období pro vypořádání daně a platební období zdaňovacího období. 
 
 ### <a name="calculation"></a>Výpočet
 

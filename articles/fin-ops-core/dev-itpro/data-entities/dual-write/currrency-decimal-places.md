@@ -2,19 +2,19 @@
 title: Migrace datového typu měny pro dvojitý zápis
 description: Toto téma popisuje, jak změnit počet desetinných míst, která pro měnu podporuje duální zápis.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782800"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917723"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrace datového typu měny pro dvojitý zápis
 
@@ -83,9 +83,20 @@ Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přes
 
 ![Nastavení měny pro konkrétní národní prostředí.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabulky: Sloupec Měna
+### <a name="tables-currency-column"></a>Tabulky: Sloupec Měna
 
 Počet desetinných míst, která lze konfigurovat pro konkrétní sloupce měny, je omezen na čtyři.
 
+### <a name="default-currency-decimal-precision"></a>Výchozí měna s desetinnou přesností
+Očekávané chování pro výchozí desetinnou přesnost měny ve scénářích migrace a bez migrace naleznete v následující tabulce. 
+
+| Datum vytvoření  | Desetinné pole Měna    | Existující organizace (pole Měna nebylo migrováno) | Existující organizace (pole Měna migrováno) | Nová organizace vytvořená po sestavení 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Pole Měna vytvořené před sestavením 9.2.21111.00146  |     |  |       |
+|    | Maximální přesnost viditelná v uživatelském rozhraní   | 4 číslice    | 10 číslic    | Není k dispozici    |
+| | Maximální přesnost viditelná v databázi a uživatelském rozhraní výsledků dotazů na databázi         | 4 číslice   | 10 číslic   | Není k dispozici    |
+| Pole Měna vytvořené po sestavení 9.2.21111.00146 |    |  |     |   |
+|   | Maximální desetinná přesnost viditelná v uživatelském rozhraní     | 4 číslice   | 10 číslic   | 10 číslic     |
+|          | Maximální desetinná přesnost viditelná v databázi a uživatelském rozhraní výsledků dotazů na databázi | 10 číslic. Pouze 4 číslice jsou však významné se všemi nulami za 4 desetinnými číslicemi. To v případě potřeby umožňuje jednodušší a rychlejší migraci organizace. | 10 číslic      | 10 číslic     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

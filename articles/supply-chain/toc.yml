@@ -4,13 +4,41 @@
       items:
         - name: Domovská stránka Dynamics 365 Supply Chain Management
           href: index.md
+        - name: Co je nového a co se změnilo
+          items:
+            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Co je nového a co se změnilo v aplikaci Supply Chain Management
+              items:
+                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (únor 2022)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (leden 2022)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (listopad 2021)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (říjen 2021)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Odstraněné nebo zastaralé funkce
+              items:
+                - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Odložené funkce AX 2012
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Začínáme
           items:
             - name: Popis služby
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Registrace ukázkového předplatného
+            - name: Registrace k verzi preview předplatného
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Aktualizace služby One Version
               items:
@@ -62,34 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Co je nového a co se změnilo
-              items:
-                - name: Co je nového a co se změnilo v aplikacích Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Co je nového a co se změnilo v aplikaci Supply Chain Management
-                  items:
-                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (únor 2022)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (leden 2022)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (listopad 2021)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (říjen 2021)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Odstraněné nebo zastaralé funkce
-                  items:
-                    - name: Domovská stránka odstraněných nebo zastaralých funkcí
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Odebrané nebo zastaralé funkce v předchozích verzích
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Odložené funkce AX 2012
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -1617,11 +1617,13 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Veřejné rozhraní API viditelnosti zásob
                   href: inventory/inventory-visibility-api.md
-        - name: IoT Intelligence
+                - name: Tipy k viditelnosti zásob
+                  href: inventory/inventory-visibility-tips.md
+        - name: Inteligence IoT
           items:
-            - name: Domovská stránka IoT Intelligence
+            - name: Domovská stránka Inteligence IoT
               href: iot/iot-intelligence-home-page.md
-            - name: Nastavení zdrojů Azure
+            - name: Nastavení prostředků Azure
               href: iot/iot-azure-setup.md
             - name: Formáty schémat zpráv pro centrum IoT
               href: iot/iot-schema-format.md
@@ -3573,6 +3575,8 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Hlavní plánování
               items:
+                - name: 'Systém nemůže najít plánovanou objednávku, když pracuje na více objednávkách'
+                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: U pevných a odhadovaných výrobních zakázek se rozpad kusovníku chová odlišně
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: 'Hodnota zpoždění se neaktualizuje, když přeplánujete plánovanou objednávku'

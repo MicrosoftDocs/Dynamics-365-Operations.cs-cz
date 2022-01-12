@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 00e3da7767b80e16f9351f59b109765bffc0128fe149cefafc1edda3a6cbcb96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc74c5748950b1f0f001fd89acb2e023640065ee
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781338"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920043"
 ---
 # <a name="quantity-exceeds-over-delivery-percentage-during-packing-slip-generation"></a>Množství překračuje procento nadměrné dodávky během generování dodacího listu
 
@@ -50,10 +50,10 @@ Následujícím postupem upravte množství řádku nákladu.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
 1. Vyberte náklad, pro který nelze vygenerovat dodací list.
-1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
-1. Na kartě  **Řádky nákladu** vyberte řádek nákladu, který přesahuje procento navýšení dodávky.
+1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
+1. Na kartě **Řádky nákladu** vyberte řádek nákladu, který přesahuje procento navýšení dodávky.
 1. Vyberte **Snížit vydané množství** a upravte vydané množství.
-1. Na kartě  **Detaily řádku** vyberte možnost **Objednat**.
+1. Na kartě **Podrobnosti řádku** vyberte možnost **Objednat**.
 1. Nastavte pole **Množství** na vyskladněné množství (tj. na hodnotu pole **Množství vytvořené prací**), aby mohlo dojít k vygenerování dodacího listu.
 
 ### <a name="adjust-the-over-delivery-percentage"></a>Upravte procento navýšení dodávky
@@ -62,8 +62,8 @@ Následujícím postupem upravte procento navýšení dodávky.
 
 1. Přejděte na **Pohledávky \> Objednávky \> Všechny objednávky**.
 1. Vyberte prodejní objednávku, u které nemůžete zaúčtovat dodací list pro náklad.
-1. Na kartě  **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, který přesahuje procento navýšení dodávky.
-1. Na kartě  **Detaily řádku** vyberte možnost **Doručení**.
+1. Na kartě **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, který přesahuje procento navýšení dodávky.
+1. Na kartě **Podrobnosti řádku** vyberte možnost **Doručení**.
 1. Nastavte pole **Navýšení dodávky** na větší procento, které odpovídá množství, které bylo vyskladněno oproti množství naložení, aby mohlo pokračovat generování dodacího listu.
 
 ### <a name="reverse-and-make-adjustments"></a>Proveďte storno a úpravy
@@ -73,14 +73,14 @@ Stornujte vše, co bylo zaúčtováno pro náklad (například dodací list, pot
 Následujícím postupem zrušíte dodací list.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno dodacích listů**.
+1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno dodacích listů**.
 
 Následujícím postupem stornujete potvrzení zásilky.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
+1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
 
 Storno práce můžete provést následujícím postupem.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně Akce na kartě  **Náklady** ve skupině  **Práce** vyberte  **Stornovat práci**.
+1. V podokně Akce na kartě **Náklady** ve skupině **Práce** vyberte **Stornovat práci**.
