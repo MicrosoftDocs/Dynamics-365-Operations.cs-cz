@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581858"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952489"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalace a nastavení viditelnosti zásob
 
@@ -71,6 +71,9 @@ Po registraci aplikace a přidání tajného kódu klienta do Azure AD nainstalu
 1. Odsouhlaste smluvní podmínky výběrem zaškrtávacího políčka **Smluvní podmínky**.
 1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení instalace obnovte stránku. Stav by se měl změnit na **Nainstalováno**.
 1. V Dataverse vyberte oblast **Aplikace** v levém navigačním panelu a ověřte, že doplněk **Viditelnost zásob** Power Apps je úspěšně nainstalován. Pokud oblast **Aplikace** neexistuje, kontaktujte produktový tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Doporučujeme, abyste se připojili k uživatelské skupině doplňku Viditelnost zásob, kde můžete najít užitečné průvodce, získat nejnovější aktualizace a zveřejnit jakékoli dotazy týkající se používání Viditelnost zásob. Chcete-li se připojit, pošlete e-mail produktovému týmu Viditelnosti zásob na adresu [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a zahrňte své ID prostředí Supply Chain Management.
 
 > [!IMPORTANT]
 > Pokud máte více než jedno prostředí LCS, vytvořte jinou aplikaci Azure AD pro každé prostředí. Pokud k instalaci doplňku Viditelnost zásob pro různá prostředí použijete stejné ID aplikace a ID klienta, u starších prostředí dojde k problému s tokenem. Platný bude pouze ten poslední, který byl nainstalován.

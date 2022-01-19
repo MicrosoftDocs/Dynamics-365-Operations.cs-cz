@@ -2,7 +2,7 @@
 title: Začněte s výpočtem daně
 description: Toto téma vysvětluje, jak nastavit výpočet daně.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647427"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952514"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o tom, jak začít pracovat s výpočtem daně. Provede vás kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Poté představí běžný proces používání možností výpočtu daně v transakcích Finance a Supply Chain Management.
+Toto téma poskytuje informace o tom, jak začít pracovat s výpočtem daně. Části v tomto tématu vás provedou návrhem na vysoké úrovni a kroky konfigurace ve službách Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance a Dynamics 365 Supply Chain Management. 
 
-Nastavení se skládá ze čtyř hlavních kroků:
+Nastavení se skládá ze tří hlavních kroků.
 
 1. V LCS nainstalujte doplněk pro výpočet daně.
 2. V RCS nastavte funkci výpočtu daně. Toto nastavení není specifické pro určitou právnickou osobu. Lze jej sdílet mezi právnickými osobami v aplikacích Finance a Supply Chain Management.
 3. Ve Finance a Supply Chain Management nastavte parametry výpočtu daně podle právnické osoby.
-4. Ve Finance a Supply Chain Management vytvářejte transakce, jako jsou prodejní objednávky, a pomocí výpočtu daně určujte a vypočítávejte daně.
+
+## <a name="high-level-design"></a>Návrh na vysoké úrovni
+
+### <a name="runtime-design"></a>Návrh runtime
+
+Následující obrázek znázorňuje návrh runtime na vysoké úrovni Tax Calculation. Protože Tax Calculation lze integrovat s více aplikacemi Dynamics 365, na obrázku je jako příklad použita integrace s Finance.
+
+1. Transakce, jako je prodejní objednávka nebo nákupní objednávka, se vytvoří ve Finance.
+2. Finance automaticky použije výchozí hodnoty skupiny DPH a skupiny DPH zboží.
+3. Když je v transakci zvoleno tlačítko **DPH**, spustí se výpočet daně. Finance poté odešle datovou část do služby Tax Calculation.
+4. Služba Tax Calculation porovnává datovou část s předdefinovanými pravidly ve funkci daně, aby bylo možné najít přesnější skupinu DPH a skupinu DPH zboží současně.
+
+    - Pokud lze datovou část porovnat s maticí **Použitelnost daňové skupiny**, přepíše hodnotu skupiny DPH odpovídající hodnotou daňové skupiny v pravidle použitelnosti. V opačném případě bude nadále používat hodnotu skupiny DPH z Finance.
+    - Pokud lze datovou část porovnat s maticí **Použitelnost daňové skupiny zboží**, přepíše hodnotu skupiny DPH zboží odpovídající hodnotou daňové skupiny zboží v pravidle použitelnosti. V opačném případě bude nadále používat hodnotu skupiny DPH zboží z Finance.
+
+5. Služba Tax Calculation určí konečný daňový kód průnikem skupiny DPH a skupiny DPH zboží.
+6. Služba Tax Calculation vypočítá daň na základě konečných daňových kódů, které určila.
+7. Služba Tax Calculation vrátí výsledek výpočtu daně do Finance.
+
+![Návrh runtime Tax Calculation.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Konfigurace na vysoké úrovni
+
+Následující kroky poskytují základní přehled procesu konfigurace pro službu Tax Calculation.
+
+1. V LCS nainstalujte doplněk **Tax Calculation** do projektu LCS.
+2. V RCS vytvořte funkci **Tax Calculation**.
+3. V RCS nastavte funkci **Tax Calculation**:
+
+    1. Vyberte verzi daňové konfigurace.
+    2. Vytvořte daňové kódy.
+    3. Vytvořte daňovou skupinu.
+    4. Vytvořte daňovou skupinu zboží.
+    5. Volitelné: Vytvořte použitelnost daňové skupiny, pokud chcete přepsat výchozí skupinu DPH, která je zadána z hlavních dat zákazníka nebo dodavatele.
+    6. Volitelné: Vytvořte použitelnost skupiny zboží, pokud chcete přepsat výchozí skupinu DPH zboží, která je zadána z hlavních dat zboží.
+
+4. V RCS dokončete a publikujte funkci **Tax Calculation**.
+5. Ve Finance vyberte zveřejněnou funkci **Tax Calculation**.
+
+Po provedení těchto kroků se následující nastavení automaticky synchronizují z RCS do Finance.
+
+- Kódy DPH
+- Skupiny DPH
+- Skupiny DPH položky
+
+Zbývající části tohoto tématu poskytují podrobnější informace krocích konfigurace.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Než budete moci dokončit postupy uvedené v tomto tématu, musí být splněny předpoklady pro každý typ prostředí.
-
-Musí být splněny následující předpoklady:
+Než budete moci provést zbývající postupy uvedené v tomto tématu, musí být splněny následující předpoklady:<!--TO HERE-->
 
 - Musíte mít přístup ke svému účtu LCS a nasadit projekt LCS s prostředím úrovně 2 (nebo vyšším), ve kterém běží Dynamics 365 verze 10.0.21 nebo novější.
 - Pro svou organizaci musíte vytvořit prostředí RCS a musíte mít přístup ke svému účtu. Další informace o tom, jak vytvořit prostředí RCS, najdete v tématu [Přehled Regulatory Configuration Service](rcs-overview.md).
@@ -72,15 +115,7 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
 5. V poli **Typ** vyberte **Globální**.
 6. Zvolte **Otevřít**.
 7. Přejděte do části **Model daňových dat**, rozbalte strom souborů a poté vyberte možnost **Konfigurace daní**.
-8. Vyberte správnou verzi konfigurace daně na základě vaší verze Finance a poté vyberte **Import**.
-
-    | Verze vydání   | Konfigurace daní                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Konfigurace daně - Evropa 30.12.82     |
-    | 10.0.19         | Konfigurace výpočtu daně 36.38.193 |
-    | 10.0.20         | Konfigurace výpočtu daně 40.43.208 |
-    | 10.0.21         | Konfigurace výpočtu daně 40.48.215 |
-
+8. Vyberte správnou [verzi konfigurace daně](global-tax-calcuation-service-overview.md#versions) na základě vaší verze Finance a poté vyberte **Import**.
 9. V pracovním prostoru **Funkce globalizace**, vyberte **Funkce**, vyberte dlaždici **Výpočet daně** a poté vyberte příkaz **Přidat**.
 10. Vyberte jeden z následujících typů funkce:
 
@@ -209,42 +244,3 @@ Nastavení v této části provádí právnická osoba. Musíte jej konfigurovat
 
 5. Na kartě **Vícenásobná registrace DPH** můžete samostatně zapnout přiznání DPH, seznam prodejů v EU a Intrastat, aby fungovaly podle scénáře vícenásobné registrace DPH. Další informace o vykazování daní pro více registrací DPH naleznete v části [Hlášení pro více registrací DPH](emea-reporting-for-multiple-vat-registrations.md).
 6. Uložte nastavení a opakujte předchozí kroky pro každou další právnickou osobu. Když je publikována nová verze a chcete, aby byla použita, nastavte pole **Nastavení funkcí** na kartě **Všeobecné** na stránce **Parametry výpočtu daně** (viz krok 2).
-
-## <a name="transaction-processing"></a>Zpracování transakcí
-
-Po dokončení všech postupů nastavení můžete pomocí výpočtu daně určit a vypočítat daň ve službě Finance. Kroky při zpracování transakcí zůstávají stejné. Ve službě Finance verze 10.0.21 jsou podporovány následující transakce:
-
-- Proces prodeje
-
-    - Prodejní nabídka
-    - Prodejní objednávka
-    - Potvrzení
-    - Výdejka
-    - Dodací list
-    - Prodejní faktura
-    - Dobropis
-    - Vratka
-    - Náklady v záhlaví
-    - Náklady řádku
-
-- Proces nákupu
-
-    - Nákupní objednávka
-    - Potvrzení
-    - Příjemka
-    - Příjemka produktu
-    - Nákupní faktura
-    - Náklady v záhlaví
-    - Náklady řádku
-    - Dobropis
-    - Vratka
-    - Nákupní žádanka
-    - Poplatky řádku nákupní žádanky
-    - Požadavek na nabídku
-    - Náklady záhlaví požadavku na nabídku
-    - Poplatky řádku požadavku na nabídku
-
-- Proces zásob
-
-    - Převodní příkaz – expedice
-    - Převodní příkaz – příjem

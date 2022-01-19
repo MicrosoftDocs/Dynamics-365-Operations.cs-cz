@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920093"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952620"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejná rozhraní API Viditelnosti zásob
 
@@ -48,6 +48,8 @@ Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto 
 
 > [!NOTE]
 > Součástí cesty {environmentId} je ID prostředí v Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> Hromadné API může vrátit maximálně 512 záznamů pro každý požadavek.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
 
@@ -249,7 +251,7 @@ Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Vytvoření více změnových událostí
 
-Toto API může vytvářet více záznamů současně. Jediné rozdíly mezi tímto API a [API pro jednu událost](#create-one-onhand-change-event) jsou hodnoty `Path` a `Body`. U tohoto API obsahuje `Body` pole záznamů.
+Toto API může vytvářet více záznamů současně. Jediné rozdíly mezi tímto API a [API pro jednu událost](#create-one-onhand-change-event) jsou hodnoty `Path` a `Body`. U tohoto API obsahuje `Body` pole záznamů. Maximální počet záznamů je 512, což znamená, že rozhraní API pro hromadné změny může podporovat až 512 událostí změn najednou.
 
 ```txt
 Path:

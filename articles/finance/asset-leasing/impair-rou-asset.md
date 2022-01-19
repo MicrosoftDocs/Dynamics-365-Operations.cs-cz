@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890823"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947333"
 ---
 # <a name="impair-right-of-use-assets"></a>Snížení hodnoty používaného majetku
 
@@ -44,6 +44,8 @@ Zbývající zůstatek používaného majetku bude odepisován rovnoměrně po d
 
     > [!NOTE]
     > Po zaúčtování transakce snížení hodnoty se vytvoří nová verze knihy.
+
+    > Pokud je leasing klasifikován jako operativní leasing, bude měsíční odpis po snížení hodnoty vypočten pomocí rovnoměrných odpisů.
 
 9. Chcete-li zobrazit plán odpisů aktiv se sníženou hodnotou, otevřete plán odpisů aktiv pro danou leasingovou knihu. Majetek bude nyní odepisován rovnoměrně po dobu měsíců, které jste zadali v poli **Zbývající období**.
 10. Chcete-li zobrazit položku deníku výdajů na snížení hodnoty, vyberte **Deník leasingu majetku** v podokně akcí knihy pronájmu se sníženou hodnotou. Systém vytvoří zápis do deníku, který debituje účet zaúčtování výdajů na snížení hodnoty a kredituje účet zaúčtování majetku leasingu. 
@@ -100,6 +102,7 @@ Následující tabulky ukazují hodnoty, které jsou nastaveny na kasrtách **V�
     | Uzavřít knihu             | Ne       |
 
 6. Byla vytvořena a zaúčtována položka deníku výdajů na snížení hodnoty. Chcete-li ji zobrazit, přejděte do deníku leasingu majetku v leasingové knize. Všimněte si, že částka snížení hodnoty byla odepsána z účtu zaúčtování nákladů na snížení hodnoty a byla připsán na účet zaúčtování používaného majetku.
+
 7. Čistý dopad snížení hodnoty zobrazíte v tabulkách transakcí s aktivy a pasivy. Všimněte si, že snížení hodnoty snížilo používaný majetek, ale účetní hodnota leasingového závazku se nezměnila.
 
 Snížení hodnoty má ještě jeden další účinek, který byste měli zvážit. Protože částka používaného majetku je nyní mnohem menší než závazek z leasingu, částka musí být odepsána jinak, než tomu bylo dříve. Konkrétně je majetek nyní odepisován rovnoměrně po zbývajících 84 měsíců leasingu, počínaje dnem transakce.

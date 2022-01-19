@@ -13,12 +13,12 @@ ms.search.region: Czech Republic
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ec5de399b8436ca5d0b77e7e4f4ff9a121a67e34beb4a2415e1b38fc5d50b8d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e6abb9197173f13bc2ddfe0be13aa4d2bcf37dc
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771596"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952429"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -87,7 +87,6 @@ Existují jedinečné aspekty procesu roční uzávěrky a počátečních trans
 Další informace naleznete v tématu [roční uzávěrka pro Českou republiku a Maďarsko](emea-cze-hun-year-end.md).
 
 ## <a name="additional-resources"></a>Další prostředky
-- [Portál lokalizace Microsoft Dynamics: Sestava České republiky](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

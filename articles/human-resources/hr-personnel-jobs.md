@@ -15,18 +15,18 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: a4aa7369c84836154b8217a5b70267021f4028b1
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731533"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948468"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Nastavení komponent práce
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci. 
+Toto téma popisuje rámcové prvky, které může práce obsahovat, a poskytuje příklady použití těchto prvků v organizaci. 
 
 Než budete moci vytvořit práce, musíte nastavit některé referenční informace. Můžete vytvořit práci, která má pouze název. Když však zahrnete další informace, například název pracovní pozice, poskytnete výchozí hodnoty pozice, které jsou přiřazeny k práci. Navíc některé informace, které zadáte, mohou být použity k filtrování plánů kompenzací pro konkrétní práce. Pokud chcete nastavit nárok, který slouží k filtrování plánů kompenzace pro konkrétní práci, měli byste nastavit pracovní funkce a typy prací předtím, než nastavíte práce. Tím, že tyto výchozí hodnoty budete mít k dispozici, ušetříte čas při přidávání pozic k práci. 
 

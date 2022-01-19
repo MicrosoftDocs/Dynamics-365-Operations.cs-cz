@@ -2,7 +2,7 @@
 title: Zřízení Human Resources
 description: Toto téma vysvětluje proces zřízení nového produkčního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644520"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952695"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -44,7 +44,7 @@ Před zřízením prvního sandboxu nebo produkčního prostředí můžete zř�
 
 Zkušební prostředí poskytují možnost vyhodnotit funkce lidských zdrojů u jednotlivců, kteří ještě nemají přístup k prostředí lidských zdrojů. Pokud zřizujete zkušební prostředí a ověřený uživatel již má přístup k jednomu nebo více existujícím prostředím lidských zdrojů, bude uživatel přesměrován do stávajícího prostředí nebo seznamu prostředí.
 
-Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 60denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
+Zkušební prostředí nejsou určena k použití jako produkční prostředí. Jsou omezeny na 30denní zkušební dobu. Po vypršení zkušebního prostředí bude prostředí a všechna data v něm smazána a nelze je obnovit. Prostředí nelze převést na sandbox nebo produkční prostředí. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 Při vytváření zkušebního prostředí pro lidské zdroje je v klientovi také vytvořeno zkušební prostředí Power Apps a je propojeno s prostředím lidských zdrojů. Prostředí Power Apps s názvem „TestDrive“ má stejné zkušební období jako prostředí lidských zdrojů.
 

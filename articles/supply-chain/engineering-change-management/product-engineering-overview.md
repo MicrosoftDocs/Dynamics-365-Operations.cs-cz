@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937653"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952591"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -71,6 +71,7 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 
 1. Chcete-li také použít dimenzi verze, zaškrtněte také políčko **Dimenze produktu - verze**. (Toto zaškrtávací políčko je dále v seznamu, není vnořeno pod uzlem **Správa technických změn**.)
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Spusťte synchronizaci databáze a ujistěte se, že jsou konfigurační klíče správně povoleny.
 
 > [!IMPORTANT]
 > Od dubna 2022 budou licenční klíče pro jak **Správu technických změn**, tak pro **Rozměr produktu - verze** ve výchozím nastavení povoleny pro všechny nové instalace, ale v případě potřeby je stále budete moci deaktivovat.

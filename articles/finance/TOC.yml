@@ -1212,6 +1212,8 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Povolení prognózy cashflow
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Externích data v prognózách cashflow
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Povolení návrhů rozpočtu
                   href: finance-insights/enable-budget-proposal.md
                 - name: Vytvoření projektu integrátoru dat
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Pozice hotovosti
                   href: finance-insights/cash-position.md
-                - name: Prognóza cashflow
+                - name: Prognóza hotovosti
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Použití externích dat v prognózách cashflow
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Předpovědi plateb zákazníka
                   href: finance-insights/payment-insights-overview.md
                 - name: Použití předpovědí plateb zákazníka
@@ -1428,10 +1428,12 @@
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: "Začínáme s\_elektronickou fakturací pro Egypt"
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: "Začínáme s\_elektronickou fakturací pro Mexiko"
+                        - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Nastavení přímé integrace italské FatturaPA s SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Použití služby elektronické fakturace k importu faktur dodavatele
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Nastavení elektronické fakturace
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Výkaznictví pro Norsko
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Povolení výpočtu daně pro převodní příkaz
                       items:
                         - name: "Podpora daňových funkcí u\_převodních příkazů"
@@ -1557,7 +1563,7 @@
                 - name: Výkaz DPH
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Rakouský Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Nákupní cla
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Metody odpisu dlouhodobého majetku
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Import čínské daňové entity Chinese Golden
+                - name: Import souborů čínského systému Golden Tax
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Průměrní měsíční model nákladů
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2084,13 +2090,15 @@
                   href: localizations/emea-financial-reason.md
             - name: Finsko
               items:
-                - name: Finsko - přehled
+                - name: Finsko – přehled
                   href: localizations/finland.md
                 - name: Sestava platby DPH pro Finsko
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Intrastat pro Finsko
+                  href: localizations/emea-fin-intrastat.md
             - name: Francie
               items:
-                - name: Francie - přehled
+                - name: Francie – přehled
                   href: localizations/france.md
                 - name: Veřejný sektor
                   items:
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: "Přiznání k\_DPH pro Indonésii"
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Sestava o srážkové dani pro Indonésii
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Itálie
               items:
                 - name: Itálie – přehled

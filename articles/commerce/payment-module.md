@@ -2,7 +2,7 @@
 title: Modul platby
 description: Toto téma popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 303b5f0bdfdb00accab2598acc2545bca69660412e170202152303c8ed81314e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774550"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952462"
 ---
 # <a name="payment-module"></a>Platební modul
 
@@ -90,7 +90,24 @@ Podobně jako u platebních modulů byla přidána vlastnost **Podporované typy
 
 Modul platby lze přidat pouze do modulu pokladny. Další informace o tom, jak nakonfigurovat modul platby pro stránku pokladny, naleznete v tématu [Modul platby](add-checkout-module.md).
 
-Pokud jsou zapotřebí konektory platby Adyen i PayPal, přidejte oba moduly do sekce platby. Zajistěte, aby hodnota vlastnosti **Podporované typy úhrady** byla nakonfigurována pro PayPal a ponechte ji prázdnou pro Adyen. Také nastavte vlastnost **Je primární platba** na **Pravda** pro Adyen.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurace platebních konektorů Adyen a PayPal, když jsou oba použity
+
+Pokud pro váš web budou použity platební konektory Adyen i PayPal, postupujte podle těchto kroků v konfigurátoru webů Commerce a přidejte platební moduly pro každý konektor do modulu pokladny a poté nakonfigurujte vlastnosti každého modulu.
+
+1. V podokně vlastností pro platební modul PayPal postupujte takto:
+
+    1. V poli pro vlastnost **Supported tender types** zadejte **PayPal**.
+    1. Zrušte zaškrtnutí políčka pro vlastnost **Is primary payment**.
+    1. Zaškrtněte políčko pro vlastnost **Use connector ID** vlastnictví.
+
+1. V podokně vlastností pro platební modul Adyen postupujte takto:
+
+    1. Nechte pole pro vlastnost **Supported tender types** prázdné.
+    1. Zaškrtněte políčko pro vlastnost **Is primary payment**.
+    1. Zaškrtněte políčko pro vlastnost **Use connector ID** vlastnictví.
+
+> [!NOTE]
+> Když nakonfigurujete konektory Adyen a PayPal pro společné použití, konfigurace **Dynamics 365 Payment Connector pro Adyen** musí být na první pozici v konfiguraci konektoru **Platební účty** online kanálu v centrále Commerce. Chcete-li potvrdit nebo změnit pořadí konektorů, přejděte na **Internetové obchody** a vyberte kanál pro svůj web. Poté na kartě **Nastavení** kartu, na rychlé záložce **Platební účty** v části **Konektor** zkontrolujte, že konfigurace **Dynamics 365 Payment Connector pro Adyen** je na první pozici (tj. na horním řádku) a že konfigurace **Dynamics 365 Payment Connector pro PayPal** je na druhém řádku. Přidejte nebo odeberte konektory podle potřeby a změňte jejich pořadí.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -1,8 +1,8 @@
 ---
 title: Účetní profily odběratele
-description: Účetní profily odběratele řídí zaúčtování transakcí odběratelů do hlavní knihy
-author: ShivamPandey-msft
-ms.date: 08/22/2017
+description: Toto téma popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
+author: JodiChristiansen
+ms.date: 12/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,124 +12,125 @@ ms.reviewer: roschlom
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a42e26464a35ef72b416aaff7a410f2318602aea38767dbe5e06b4f032dc08be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 91432a401a8f8a499e9f5e2bbe7157408faac822
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769004"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952564"
 ---
 # <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
 [!include [banner](../includes/banner.md)]
 
-Účetní profily odběratele řídí zaúčtování transakcí odběratelů do hlavní knihy
+Toto téma popisuje účetní profily odběratele, které účtování řídí účtování transakcí odběratelů do hlavní knihy.
 
 ## <a name="customer-posting-profiles"></a>Účetní profily odběratele
 
-Účetní profily odběratelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem odběratelům, skupině odběratelů nebo jednomu odběrateli. Toto nastavení se použije při vytváření prodejních objednávek, volných faktur, hotovostních plateb, upomínek a oznámení úroků. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. 
+Účetní profily odběratelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem odběratelům, skupině odběratelů nebo jednomu odběrateli. Toto nastavení se použije při vytváření faktur prodejních objednávek, volných faktur, faktur projektu, platebních deníků, upomínek a oznámení úroků. 
 
-Výchozí účetní profil je definován v pevné záložce Hlavní kniha a DPH na straně Parametry pohledávek. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
+Výchozí účetní profil je definován v kartě **Hlavní kniha a DPH** na straně **Parametry pohledávek**. Poté je automaticky zahrnut do záhlaví nových dokumentů. Zde jej můžete změnit, pokud je vyžadován jiný účetní profil. 
 
-Můžete také přiřadit definice účtování k typům účtování transakcí na stránce Definice účtování transakce. Definice účtování řídí účtování transakcí odběratelů do hlavní knihy místo účetních profilů.
+Organizace, které přijímají platby předem od zákazníků, často konfigurují druhý účetní profil pro platby předem a propojí ho v parametrech jako výchozí profil pro platby předem. Další informace naleznete v tématu [Platby odběratelů předem](customer-prepayments.md).
+
+Můžete také přiřadit definice účtování k typům účtování transakcí na stránce **Definice účtování transakce**. Definice účtování se používají místo účetních profilů k řízení účtování transakcí odběratelů do hlavní knihy. Další informace získáte v části [Definice účtování](../general-ledger/posting-definitions.md).
 
 ## <a name="creating-a-posting-profile"></a>Vytvoření účetního profilu
 Určete účty hlavní knihy, které jsou použity při zaúčtování transakcí s vybraným účetním profilem. Vyberte kód účtu a je-li to možné, i číslo účtu nebo skupiny vybraného účetního profilu. V procesu zaúčtování bude nejvhodnější účetní profil pro každou transakci nalezen vyhledáním nejspecifičtější kombinace kódu účtu, čísla účtu nebo kombinace skupiny a čísla s následující prioritou:
 
-| Hodnota pole **Kód účtu** | Hodnota pole **Číslo účtu/skupiny**            | Priorita hledání |
-|------------------------------|-------------------------------------------------|-----------------|
-| **Tabulka**                    | Specifický účet odběratele                       | 1               |
-| **Skupina**                    | Skupina odběratelů, která je přiřazena odběrateli | 2               |
-| **Vše**                      | Prázdné                                           | 3               |
+| Hodnota pole Kód účtu | Hodnota pole Číslo účtu/skupiny                | Priorita hledání |
+|--------------------------|-------------------------------------------------|-----------------|
+| Tabulka                    | Specifický účet odběratele                       | 1               |
+| Seskupit                    | Skupina odběratelů, která je přiřazena odběrateli | 2               |
+| Vše                      | Prázdné                                           | 3               |
 
-Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil, nastavte pouze jeden účetní profil s hodnotou Vše v poli Kód účtu. Zadejte následující hodnoty pro nastavení účetního profilu:
+Pokud chcete, aby všechny transakce odběratele měly shodný účetní profil, nastavte pouze jeden účetní profil s hodnotou **Vše** v poli **Kód účtu**. Zadejte následující hodnoty pro nastavení účetního profilu.
 
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Pole</th>
 <th>Popis</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><strong>Účetní profil</strong></td>
+<tr>
+<td>Účetní profil</td>
 <td>Zadejte kód účetního profilu. Můžete například vytvořit dva účetní profily a získat jeden účet pro rozvahy odběratele v národní měně a jiný účet pro rozvahy v měně cizí. Jeden účet byste měli nazvat "národní" a druhý "cizí".</td>
 </tr>
-<tr class="even">
-<td><strong>Popis</strong></td>
+<tr>
+<td>Popis</td>
 <td>Zadejte popis účetního profilu. Používá se jen k lepší identifikace účetního profilu při jeho zobrazení na této stránce.</td>
 </tr>
-<tr class="odd">
-<td><strong>Kód účtu</strong></td>
+<tr>
+<td>Kód účtu</td>
 <td>Uveďte, zda účetní profil platí pro jednotlivého odběratele, skupinu odběratelů nebo všechny odběratele:
 <ul>
-<li><strong>Tabulka</strong> – Účetní profil platí pro jednoho odběratele. Vyberte účet odběratele v poli Číslo účtu/skupiny.</li>
-<li><strong>Skupina</strong> – Účetní profil platí pro skupinu odběratelů. Vyberte skupinu odběratelů v poli Číslo účtu/skupiny.</li>
-<li><strong>Vše</strong> – Účetní profil platí pro všechny odběratele. Pole Číslo účtu/skupiny ponechejte prázdné.</li>
-</ul></td>
+<li><b>Tabulka</b> – Účetní profil platí pro jednoho odběratele. Vyberte účet odběratele v poli <b>Číslo účtu/skupiny</b>.</li>
+<li><b>Skupina</b> – Účetní profil platí pro skupinu odběratelů. Vyberte skupinu odběratelů v poli <b>Číslo účtu/skupiny</b>.</li>
+<li><b>Vše</b> – Účetní profil platí pro všechny odběratele. Pole <b>Číslo účtu/skupiny</b> ponechejte prázdné.</li>
+</ul>
+</td>
 </tr>
-<tr class="even">
-<td><strong>Číslo účtu/skupiny</strong></td>
-<td>Pokud vyberete možnost Tabulka v poli Kód účtu, zvolte číslo účtu odběratele přiřazeného k účetnímu profilu. Pokud je vybrána možnost Skupina, vyberte skupinu odběratelů. Pokud je vybrána možnost Vše, ponechte toto pole prázdné.</td>
+<tr>
+<td>Číslo účtu/skupiny</td>
+<td>Pokud vyberete možnost <b>Tabulka</b> v poli <b>Kód účtu</b>, zvolte číslo účtu odběratele přiřazeného k účetnímu profilu. Pokud je vybrána možnost <b>Skupina</b>, vyberte skupinu odběratelů. Pokud je vybrána možnost <b>Vše</b>, ponechte toto pole prázdné.</td>
 </tr>
-<tr class="odd">
-<td><strong>Součtový účet</strong></td>
-<td>Vyberte účet hlavní knihy, který se má použít jako součtový účet odběratele přiřazených k danému účetnímu profilu.</td>
+<tr>
+<td>Součtový účet</td>
+<td>Vyberte účet hlavní knihy, který se má použít jako obchodní účet pohledávek odběratelů přiřazených k danému účetnímu profilu. Tento účet je účtem pro typ účtování <b>Rovnováha odběratele</b>.</td>
 </tr>
-<tr class="even">
-<td><strong>Účet vyrovnání</strong></td>
+<tr>
+<td>Účet likvidity pro platby</td>
 <td>Vyberte účet hlavní knihy likvidity použitý pro prognózy cash-flow. Toto pole se zobrazí pouze v případě, že jsou prognózy cashflow povoleny.</td>
 </tr>
-<tr class="odd">
-<td><strong>Zálohy DPH</strong></td>
-<td>Vyberte účet pro zálohové platby daně z prodeje.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Poznámka" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Poznámka</strong></th>
+<tr>
+<td>Zálohy DPH</td>
+<td><p>Vyberte účet pro zálohové platby daně z prodeje.</p>
+<p><strong>Poznámka:</strong> Na stránce <b>Parametry pohledávek</b> určete účetní profil, který má být použit při označení platby jako zálohy.</p>
+</td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Na stránce Parametry pohledávek určete účetní profil, který má být použit při označení platby jako zálohy.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
-</tr>
-<tr class="even">
-<td><strong>Závazky pro účet slevy</strong></td>
+<tr>
+<td>Závazky pro účet slevy</td>
 <td>Vyberte účet hlavní knihy pro závazky slevy.</td>
 </tr>
-<tr class="odd">
-<td><strong>Posloupnost upomínek</strong></td>
+<tr>
+<td>Posloupnost upomínek</td>
 <td>Vyberte identifikátor posloupnosti upomínek, který má být použit pro odběratele, kterým je přiřazen účetní profil.</td>
 </tr>
-<tr class="even">
-<td><strong>Kód úroku</strong></td>
+<tr>
+<td>Kód úroku</td>
 <td>Vyberte kód úroku, který má být použit pro výpočet úroku pro odběratele, kterým je přiřazen účetní profil.</td>
 </tr>
 </tbody>
 </table>
 
+## <a name="posting-examples"></a>Příklady účtování
 
-### <a name="table-restrictions"></a>**Tabulka omezení**
+Následující tabulka ukazuje příklady výchozích typů účtování s ukázkovými hlavními účty a popisy. Sloupec **Má dáti / dal** označuje, zda lze účtovat transakce obvykle Má dáti nebo Dal nebo v některých případech obojí. Sloupec **Clearingový účet** označuje, že typ účtování je clearingový účet. To znamená, že částka zaúčtovaná na tomto účtu je automaticky stornována při zaúčtování pozdější transakce. 
+
+| Typ zaúčtování | Příklad hlavního účtu | Příklad názvu hlavního účtu | Typ účtu | Má dáti/Dal | Clearingový účet | Popis |
+|--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|
+| Zůstatek odběratele | 130100 | Obchod s pohledávkou | Materiál | Oboje | Ne | Zadejte účet do pole **Součtový účet**.|
+| Žádné | 110110 | Bankovní účet | Materiál | Oboje | Ne | Zadejte hlavní účet do pole **Účet likvidity pro platby**. Tento účet se nepoužívá k účtování. Používá se pouze pro předpovídání peněžních toků. |
+| Zálohy DPH | 202900 | Vyúčtování DPH | Pasiva | Oboje | Ano | Vyberte účet pro zálohové platby daně z prodeje. |
+| Závazky pro účet slevy | 250600 | Odložené výnosy a slevy | Pasiva | Oboje | Ano | Vyberte účet hlavní knihy pro závazky slev.|     
+
+### <a name="table-restrictions"></a>Tabulka omezení
 
 Pro transakce s vybraným účetním profilem určete, zda transakce budou vyrovnány automaticky, zda bude vypočten úrok a zda budou vydány upomínky. Můžete také vybrat účet, který se použije při uzavření transakcí s vybraným účetním profilem.
 
 Zadejte následující hodnoty pro nastavení účetního profilu:
 
-| Pole                 | Popis                                                                                                                                                                                                                                        |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Vyrovnání**        | Tento přepínač vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li tento přepínač zaškrtnutý, je nutné vyrovnat transakce ručně s použitím stránky Vyrovnat otevřené transakce nebo Zadat platby odběratele. |
-| **Zájmy**          | Tento přepínač vyberte, pokud by měl být úrok vypočítán z neuhrazených zůstatků pro účty odběratele s tímto profilem. Pokud není tento přepínač zaškrtnut, úrok se u těchto odběratelů nevypočítá.                                           |
-| **Upomínka** | Tento přepínač vyberte, pokud by měly být upomínky generovány pro účty odběratele s tímto profilem. Pokud není tento přepínač zaškrtnut, upomínky nebudou u těchto odběratelů generovány.                                                 |
-| **Zavřít**             | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.                                                                           |
+| Pole                 | Popis                                           |
+|-----------------------|-------------------------------------------------------|
+| Vyrovnání        | Tento přepínač vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li tento přepínač zaškrtnutý, je nutné vyrovnat transakce ručně s použitím stránky **Vyrovnat otevřené transakce** nebo **Zadat platby odběratele**. |
+| Zájmy          | Tento přepínač vyberte, pokud by měl být úrok vypočítán z neuhrazených zůstatků pro účty odběratele s tímto profilem. Pokud není tento přepínač zaškrtnut, úrok se u těchto odběratelů nevypočítá.                                           |
+| Upomínka | Tento přepínač vyberte, pokud by měly být upomínky generovány pro účty odběratele s tímto profilem. Pokud není tento přepínač zaškrtnut, upomínky nebudou u těchto odběratelů generovány.                                                 |
+| Zavřít             | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.             |
 
 
 

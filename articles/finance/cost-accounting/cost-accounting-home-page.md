@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741577"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952539"
 ---
 # <a name="cost-accounting-home-page"></a>Domovská stránka nákladového účetnictví
 
@@ -38,7 +38,7 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)  |[Dimenze prvku nákladů](cost-elements.md)  |
+|  [Začínáme s nákladovým účetnictvím (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Dimenze prvku nákladů](cost-elements.md)  |
 |  [Hierarchie dimenzí](dimension-hierarchy.md)  |[Definování jednotek řízení nákladů](./tasks/define-cost-control-units.md)| 
 | [Základy přidělení](allocation-bases.md)|[Vytvoření zásad přidělování nákladů a jejich přiřazení jednotce řízení nákladů](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Správa datového zdroje pro hlavní knihu nákladového účetnictví](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Zpracování a sledování zdrojových dat](./tasks/process-trace-source-data.md)     | 

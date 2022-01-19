@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f5fb4c7cb941b352bbc6e2fcf5347244e1c8a40c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920794"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952408"
 ---
 # <a name="inventory-visibility-tips"></a>Tipy ohledně doplňku Viditelnost zásob
 
@@ -28,7 +28,10 @@ Zde je několik tipů, které byste měli zvážit při nastavení a použití d
 - Pokud máte více než jedno prostředí LCS, vytvořte jinou aplikaci Azure Active Directory (Azure AD) pro každé prostředí. Pokud k instalaci doplňku Viditelnost zásob pro různá prostředí použijete stejné ID aplikace a ID klienta, u starších prostředí dojde k problému s tokenem. Platná bude pouze poslední instance doplňku Viditelnost zásob, která byla nainstalována.
 - Doplněk Viditelnost zásob není aktuálně podporován v cloudových prostředích. Je podporován pouze pro prostředí úrovně 2+.
 - Aplikační programovací rozhraní (API) aktuálně podporuje dotazování až 100 jednotlivých položek podle hodnoty `ProductID`. V každém dotazu také může být zadáno více hodnot `SiteID` a `LocationID`. Maximální limit je definován jako `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+- Hromadné API může vrátit maximálně 512 záznamů pro každý požadavek.
 - Zdroj dat `fno` je vyhrazen pro Supply Chain Management. Pokud je váš doplněk Viditelnost zásob integrován s prostředím Supply Chain Management, doporučujeme neodstraňovat konfigurace související s `fno` ve [zdroji dat](inventory-visibility-configuration.md#data-source-configuration).
+- Viditelnost inventáře nemůže změnit žádná data pro zdroj dat `fno`. Tok dat je jednosměrný, což znamená, že veškeré změny množství pro zdroj dat `fno` musí pocházet z vašeho prostředí Supply Chain Management. Proto nemůžete použít API k odesílání žádostí o změnu nebo rezervaci dostupného množství pro zdroj dat `fno`.
+- Pokud do svého prostředí Supply Chain Management přidáte jedno nebo více nových opatření, měli byste je přidat také do Viditelnosti zásob. Všechny změny množství pro nová opatření však musí pocházet z vašeho prostředí Supply Chain Management.
 - V současné době se [konfigurace oddílu](inventory-visibility-configuration.md#partition-configuration) skládá ze dvou základních dimenzí (`SiteId` a `LocationId`), které ukazují, jak jsou data distribuována. Operace ve stejném oddílu mohou poskytovat vyšší výkon za nižší náklady. Ve výchozím nastavení obsahuje řešení tuto konfiguraci oddílu. Z tohoto důvodu ji *nemusíte sami definovat*. Nepřizpůsobujte výchozí konfiguraci oddílu. Pokud ji odstraníte nebo změníte, pravděpodobně způsobíte neočekávanou chybu.
 - Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v [konfiguraci hierarchie indexu produktu](inventory-visibility-configuration.md#index-configuration).
 
