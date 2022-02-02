@@ -16,10 +16,6 @@
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (leden 2022)
                   href: get-started/whats-new-scm-10-0-23.md
-                - name: Supply Chain Management 10.0.22 (listopad 2021)
-                  href: get-started/whats-new-scm-10-0-22.md
-                - name: Supply Chain Management 10.0.21 (říjen 2021)
-                  href: get-started/whats-new-scm-10-0-21.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -617,7 +613,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Použití balíčku obsahu pro výkaznictví v Microsoft Power BI
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Použití pracovního prostoru řízení pro mobilní aplikaci Finance and Operations
+            - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globální účetnictví zásob
           items:
@@ -3513,7 +3509,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                 - name: "Upgrade a\_migrace"
                   items:
-                    - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
+                    - name: "Upgrade procesů řízení skladu z\_aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations"
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Vývoj aplikace Supply Chain Management
           items:

@@ -4,13 +4,37 @@
       items:
         - name: Domovská stránka Dynamics 365 Finance
           href: index.md
+        - name: Co je nového a co se změnilo
+          items:
+            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: "Co je nového a\_co se změnilo v\_aplikaci Finance"
+              items:
+                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
+                  href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.24 (únor)
+                  href: get-started/whats-new-changed-10-0-24.md
+                - name: Finance 10.0.23 (leden)
+                  href: get-started/whats-new-changed-10-0-23.md
+            - name: Odstraněné nebo zastaralé funkce
+              items:
+                - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: Odložené funkce AX 2012
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
         - name: Začínáme
           items:
             - name: Popis služby
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Registrace ukázkového předplatného
+            - name: Registrace k verzi preview předplatného
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace služby One Version
               items:
@@ -62,32 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-            - name: Co je nového a co se změnilo
-              items:
-                - name: Co je nového a co se změnilo v aplikacích Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: "Co je nového a\_co se změnilo v\_aplikaci Finance"
-                  items:
-                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
-                      href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.24 (únor)
-                      href: get-started/whats-new-changed-10-0-24.md
-                    - name: Finance 10.0.23 (leden)
-                      href: get-started/whats-new-changed-10-0-23.md
-                    - name: Finance 10.0.22 (listopad 2021)
-                      href: get-started/whats-new-changed-10-0-22.md
-            - name: Odstraněné nebo zastaralé funkce
-              items:
-                - name: Domovská stránka odstraněných nebo zastaralých funkcí
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: Odebrané nebo zastaralé funkce v předchozích verzích
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: Odložené funkce AX 2012
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -836,6 +834,8 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: Vytvoření skupiny leasingu
                   href: asset-leasing/create-lease-group.md
+                - name: Typ částky platby
+                  href: asset-leasing/Payment-amount-type.md
                 - name: Nastavení indexových sazeb
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: Nastavení typů výdajů
@@ -1460,6 +1460,8 @@
                           href: localizations/tax-calculation-import-export-feature.md
                         - name: Nastavení prostředí pro vyhledávání hlavních dat
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                        - name: Synchronizujte nastavení daně ze služby pro výpočet daně do aplikace Finance
+                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Určení
                       items:
                         - name: Datový model pro výpočet daně
@@ -1491,7 +1493,7 @@
                         - name: Vykazování pro Německo
                           items:
                             - name: "Přiznání k\_DPH"
-                              href: /localizations/emea-deu-vat-declaration-germany.md
+                              href: localizations/emea-deu-vat-declaration-germany.md
                         - name: Vykazování v Nizozemsku
                           items:
                             - name: "Přiznání k\_DPH"
@@ -1502,6 +1504,8 @@
                           items:
                             - name: 'Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
+                            - name: Přiznání k DPH
+                              href: localizations/emea-esp-vat-declaration-spain.md
                         - name: Výkaznictví ve Švédsku
                           items:
                             - name: Přiznání k DPH
@@ -1536,6 +1540,8 @@
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
+            - name: Hledání aktualizací předpisů
+              href: localizations/search-for-regulatory-updates.md
             - name: Austrálie
               items:
                 - name: "Austrálie\_–\_přehled"
@@ -1754,6 +1760,8 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: "Výpočet úroků a\_pokut pro platby odběratelů"
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+                - name: Nastavení čísel bankovního účtu pro Brazílii
+                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: Daně
                   items:
                     - name: Přehled brazilských daní
@@ -1782,6 +1790,8 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: 'ICMS-ST doplněk, proces restituce a deklarace pro státy RS, SC a SP'
                       href: localizations/latam-bra-complement-restitution.md
+                    - name: Změna základu ve výpočtech daně ICMS-DIF pro produkty od dodavatelů z jiných států
+                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: Nastavení kódů oprav pro daně IPI
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: "Daně PIS a\_COFINS z\_dlouhodobého majetku"
@@ -1806,13 +1816,13 @@
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
             - name: Kanada
               items:
-                - name: "Daň GST/harmonizovaná prodejní daň\_–\_Přenos souborů po internetu"
+                - name: GST/HST - Přenos souborů po internetu
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: Čína
               items:
                 - name: "Čína\_–\_přehled"
                   href: localizations/china.md
-                - name: "Finance and Operations provozované společností 21Vianet v\_Číně"
+                - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Výběr skupin účtů pro čínské typy dokladů
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1884,6 +1894,8 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: "Přiznání k\_DPH (Česká republika)"
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Český Intrastat
+                  href: localizations/emea-cze-intrastat.md
                 - name: Symboly bank pro bankovní účty
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: DPH intrakomunitárního plnění
@@ -1916,6 +1928,8 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Nastavení formátu platebního dokladu
                   href: localizations/tasks/set-up-payment-slip-format.md
+                - name: Dánský Intrastat
+                  href: localizations/emea-dnk-intrastat.md
             - name: Egypt
               items:
                 - name: Egypt - přehled
@@ -1938,6 +1952,8 @@
                   href: localizations/emea-est-personal-info.md
                 - name: Výkaz DPH
                   href: localizations/emea-est-vat-statement-details.md
+                - name: Estonský Intrastat
+                  href: localizations/emea-est-intrastat.md
             - name: Evropa
               items:
                 - name: Evropa - přehled
@@ -2084,6 +2100,8 @@
                       href: localizations/emea-vat-reporting.md
                     - name: "Vytvoření a\_odeslání sestavy DPH"
                       href: localizations/tasks/create-submit-vat-report.md
+                    - name: Datum registru DPH dodavatele
+                      href: localizations/emea-date-vendor-vat-register.md
                 - name: Zobrazení transakcí u vyrovnání
                   href: localizations/emea-transactions-settlement-form.md
                 - name: Finanční důvod
@@ -2872,6 +2890,8 @@
                   href: localizations/emea-lva-tax-natural-resources.md
                 - name: Podrobnosti výpisu DPH
                   href: localizations/emea-lva-vat-statement-details.md
+                - name: Lotyšský Intrastat
+                  href: localizations/emea-lva-intrastat.md
             - name: Litva
               items:
                 - name: Litva - přehled
@@ -3060,13 +3080,15 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: "Podrobnosti o\_konkrétních obchodních scénářích v\_sestavě JPK-V7M"
                       href: localizations/emea-pol-vdek-scenarios.md
+                - name: Platební podmínky v sestavě obchodních transakcí
+                  href: localizations/emea-pol-payment-terms-report.md
             - name: Katar
               items:
                 - name: Katar - přehled
                   href: localizations/qatar.md
             - name: Rusko
               items:
-                - name: Rusko - přehled
+                - name: Rusko – přehled
                   href: localizations/russia.md
                 - name: Hlavní kniha
                   items:
@@ -3356,6 +3378,8 @@
                   href: localizations/emea-esp-report-340.md
                 - name: Sestava prohlášení 347
                   href: localizations/emea-esp-declaration-347-report.md
+                - name: "Přiznání k\_DPH 303"
+                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: Prodejní a nákupní cykly
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Speciální záznamy a počáteční stavy
@@ -3466,14 +3490,16 @@
           items:
             - name: Přehled Human Resources
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+            - name: Vydání infrastruktury 10.0.25
+              href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
             - name: Nastavení Human Resources
               items:
-                - name: Konfigurace parametrů Human Resources
+                - name: Konfigurace parametrů aplikace Human Resources
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace sdílených parametrů Human Resources
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Nastavení workflow Human Resources
-                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
                 - name: Pochopení polí data a času
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
             - name: Správa zaměstnanců
@@ -4723,7 +4749,7 @@
               items:
                 - name: Vytvoření poskytovatelů směnných kurzů
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Vytvoření poskytovatelů směnných kurzů v aplikaci Finance and Operations verze 8.0
+                - name: 'Vytvoření poskytovatele směnných kurzů v aplikaci Finance and Operations, verze 8.0'
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Vyrovnání transakcí pomocí CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md

@@ -1,10 +1,10 @@
-- name: Vývoj a správa pro aplikace Finance and Operations
+- name: Vývoj a správa aplikací Finance and Operations
   items:
-    - name: Vývoj a správa pro aplikace Finance and Operations
+    - name: Vývoj a správa aplikací Finance and Operations
       items:
-        - name: Dokumentaci k aplikaci Finance and Operations
+        - name: Dokumentace pro aplikaci Finance and Operations
           href: ../fin-ops/index.md
-        - name: Vývoj a správa pro aplikace Finance and Operations
+        - name: Vývoj a správa aplikací Finance and Operations
           href: index.md
         - name: Co je nového a co se změnilo
           items:
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Nástroj Platform Updates pro verzi 10.0.23 (leden 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
-                - name: Nástroj Platform Updates pro verzi 10.0.22 (listopad 2021)
-                  href: get-started/whats-new-platform-updates-10-0-22.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -48,7 +46,7 @@
               href: dev-tools/version-models-build.md
         - name: Integrace dat
           items:
-            - name: "Integrace mezi aplikacemi Finance and Operations a\_službami třetích stran"
+            - name: Integrace mezi aplikacemi Finance and Operations a službami třetích stran
               href: data-entities/integration-overview.md
             - name: Omezování na základě priority
               hreF: data-entities/priority-based-throttling.md
@@ -98,7 +96,7 @@
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
+                        - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations na produkty v\_aplikaci Sales"
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
                         - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
@@ -106,7 +104,7 @@
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                         - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
+                        - name: "Synchronizace hlaviček a\_řádků prodejní faktury přímo z\_aplikace Finance and Operations do aplikace Sales"
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurace integrace se službou Field Service
                       items:
@@ -114,9 +112,9 @@
                           href: ../../supply-chain/sales-marketing/field-service.md
                         - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v\_aplikaci Finance and Operations"
+                        - name: "Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci\_Finance and Operations"
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v\_aplikaci Finance and Operations"
+                        - name: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci\_Finance and Operations"
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
                         - name: Synchronizace převodů a úprav zásob ze služby Field Service do Finance and Operations
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
@@ -128,7 +126,7 @@
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
                         - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
+                        - name: Synchronizace pracovních příkazů s projektem z aplikace Field Service do Finance and Operations
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Konfigurace integrace Project Service Automation
                       items:
@@ -360,11 +358,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Plán a příprava pro místní nasazení
                       href: deployment/plan-onprem-deployment.md
-                    - name: Software podporovaný společností Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Podporovaný software Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-compatibility.md
                     - name: Požadavky na rozsah hardwaru
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Ověření v Dynamics 365 Finance + Operations (on-premises)
+                    - name: Ověřování v Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/authentication-onprem.md
                 - name: Nastavení a nasazení místních prostředí
                   items:
@@ -406,7 +404,7 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md
-                    - name: Upgrade instance SQL Serveru prostředí Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Upgrade instance systému SQL Server prostředí Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Místní agent
                   items:
@@ -1044,9 +1042,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Nastavení duálního zápisu z Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                    - name: Povolení duálního zápisu pro stávající aplikace Finance and Operations
                       items:
-                        - name: Povolení duálního zápisu pro existující aplikace Finance and Operations
+                        - name: Povolení duálního zápisu pro stávající aplikace Finance and Operations
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systémové požadavky a předpoklady
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1054,6 +1052,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Povolení mapování entit pro duální zápis
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Oddělený balíček pro orchestraci aplikace s duálním zápisem
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: Migrace datového typu měny pro duální zápis
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Nastavení mapování pro pole stavu prodejní objednávky
@@ -1156,15 +1156,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Poradce při potížích se synchronizací v ostrém provozu
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Poradce při potížích s duálním zápisem v aplikacích Finance and Operations
+                        - name: Řešení problémů s duálním zápisem v aplikacích Finance and Operations
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Řešení problémů se stranou a globálním adresářem
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Poradce při potížích souvisejících s připraveností řešení
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Poradce při potížích s upgrady aplikací Finance and Operations
+                        - name: Řešení problémů s upgrady v aplikacích Finance and Operations
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Ověření konfigurace duálního zápisu v aplikacích Finance and Operations a Dataverse
+                        - name: Ověření konfigurace duálního zápisu ve Finance and Operations a Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Kódy chyb pro kontrolu stavu mapy tabulky
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1182,9 +1182,9 @@
                   href: power-platform/admin-reference.md
                 - name: Povolení virtuálních entit Dataverse
                   href: power-platform/enable-virtual-entities.md
-                - name: Portály Power Apps s Finance and Operations
+                - name: Portály Power Apps s aplikací Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: "Časté dotazy k\_virtuálním entitám Finance and Operations"
+                - name: Nejčastější dotazy k virtuálním entitám Finance and Operations
                   href: power-platform/faq.md
             - name: Obchodní události
               items:
@@ -1526,11 +1526,11 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Podpora
           items:
-            - name: Získání podpory pro Finance and Operations a Lifecycle Services
+            - name: Získání podpory pro aplikace Finance and Operations a Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Přehled podpory Dynamics 365
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
+            - name: Získání podpory pro aplikaci Finance and Operations provozovanou prostřednictvím 21Vianet v Číně
               href: lifecycle-services/21vianet-support.md
             - name: Nastavení technické podpory pro aplikace Finance and Operations
               href: lifecycle-services/support-experience.md
@@ -1648,7 +1648,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Upgrade z AX 2012
               items:
-                - name: Upgrade z AX 2012 na Finance and Operations
+                - name: Upgrade z aplikace AX 2012 na aplikaci Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: Upgrade AX 2012 – Plánování pomocí nástroje Upgrade Analyzer
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1694,7 +1694,7 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Migrace dat z AX 2009
               items:
-                - name: Migrace dat z AX 2009 do Finance and Operations
+                - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
                   href: migration-upgrade/install-dmt.md

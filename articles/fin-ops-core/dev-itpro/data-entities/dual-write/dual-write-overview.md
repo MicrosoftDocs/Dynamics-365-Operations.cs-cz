@@ -1,23 +1,22 @@
 ---
 title: Přehled dvojitého zápisu
-description: Toto téma poskytuje přehled dvojího zapisování, které poskytuje interakci prakticky v reálném čase mezi aplikacemi Customer Engagement a aplikacemi Finance and Operations.
+description: Toto téma poskytuje přehled dvojího zapisování, které poskytuje interakci prakticky v reálném čase mezi aplikacemi Customer Engagement a aplikacemi Finance a Operace.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817354"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984134"
 ---
-# <a name="dual-write-overview"></a>Přehled dvojitého zápisu
+# <a name="dual-write-overview"></a>Přehled duálního zápisu
 
 [!include [banner](../../includes/banner.md)]
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817354"
 
 ## <a name="what-is-dual-write"></a>Co je dvojí zapisování?
 
-Dvojí zapisování je předpřipravená infrastruktura poskytující prakticky v reálném čase mezi aplikacemi pro zapojení zákazníků a aplikacemi Finance and Operations. Při zpracování dat o zákaznících, produktech, osobách a operacích mimo hranice aplikací jsou všechna oddělení v organizaci oprávněna.
+Dvojí zapisování je předpřipravená infrastruktura poskytující prakticky v reálném čase mezi aplikacemi pro zapojení zákazníků a aplikacemi Finance a Operace. Při zpracování dat o zákaznících, produktech, osobách a operacích mimo hranice aplikací jsou všechna oddělení v organizaci oprávněna.
 
-Dvojí zapisování poskytuje pevně spojenou obousměrnou integraci mezi aplikacemi Finance and Operations a Dataverse. Jakákoli změna dat v aplikacích Finance and Operations způsobí zápis do aplikace Dataverse a jakákoli změna dat v Dataverse způsobí zápis do aplikací Finance and Operations. Tento automatizovaný tok dat poskytuje integrované uživatelské prostředí pro celé aplikace.
+Dvojí zapisování poskytuje pevně spojenou obousměrnou integraci mezi aplikacemi Finance a Operace a Dataverse. Jakákoli změna dat v aplikacích Finance and Operations způsobí zápis do aplikace Dataverse a jakákoli změna dat v Dataverse způsobí zápis do aplikací Finance a Operace. Tento automatizovaný tok dat poskytuje integrované uživatelské prostředí pro celé aplikace.
 
 ![Datový vztah mezi aplikacemi.](media/dual-write-overview.jpg)
 
@@ -52,7 +51,7 @@ Infrastruktura dvojího zapisování je rozšiřitelná a spolehlivá a obsahuje
 
 ### <a name="application"></a>Přihláška
 
-Duální zápis vytvoří mapování mezi koncepty v aplikacích Finance and Operations a koncepty v aplikacích pro zapojení zákazníků. Tato integrace podporuje následující scénáře:
+Duální zápis vytvoří mapování mezi koncepty v aplikacích Finance a Operace a koncepty v aplikacích pro zapojení zákazníků. Tato integrace podporuje následující scénáře:
 
 + Integrovaná hlavní data odběratelů
 + Přístup k věrnostním kartám odběratelů a k bodům odměny
@@ -81,11 +80,11 @@ Dvojí zapisování poskytuje integraci dat mezi aplikacemi Microsoft Dynamics 3
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co znamená duální zápis pro vývojáře a architekty aplikací pro zapojení zákazníků?
 
-Duální zápis automatizuje tok dat mezi aplikacemi Finance and Operations a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Dataverse. Tato řešení rozšiřují schéma tabulky, moduly plugin a pracovní postupy v Dataverse, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance and Operations.
+Duální zápis automatizuje tok dat mezi aplikacemi Finance a Operace a aplikacemi pro zapojení zákazníků. Duální zápis se skládá ze dvou řešení AppSource, která jsou nainstalována na Dataverse. Tato řešení rozšiřují schéma tabulky, moduly plugin a pracovní postupy v Dataverse, aby mohly škálovat na velikost ERP. Pro úspěšnou implementaci musí vývojáři a architekti aplikací pro zapojení zákazníků tyto změny pochopit a spolupracovat se svými protějšky v aplikacích Finance a Operace.
 
-Kvůli vytvoření parity s aplikacemi Finance and Operations provádí duální zápis některé zásadní změny ve schématu Dataverse. Pokud plánu rozumíte, můžete se v budoucnu vyhnout úpravám návrhu a vývoje.
+Kvůli vytvoření parity s aplikacemi Finance a Operace provádí duální zápis některé zásadní změny ve schématu Dataverse. Pokud plánu rozumíte, můžete se v budoucnu vyhnout úpravám návrhu a vývoje.
 
-+ Když je instalován balíček duálního zápisu AppSource, Dataverse bude mít nové koncety, jako je společnost nebo zainteresovaná strana. Tyto koncepty pomáhají aplikacím postaveným na Dataverse, včetně Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service a Dynamics 365 Field Service, bezproblémově komunikovat s aplikacemi Finance and Operations.
++ Když je instalován balíček duálního zápisu AppSource, Dataverse bude mít nové koncety, jako je společnost nebo zainteresovaná strana. Tyto koncepty pomáhají aplikacím postaveným na Dataverse, včetně Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service a Dynamics 365 Field Service, bezproblémově komunikovat s aplikacemi Finance a Operace.
 
 + Aktivity a poznámky jsou sjednoceny a rozšířeny tak, aby podporovaly C1 (uživatelé systému) i C2 (zákazníci v systému).
 

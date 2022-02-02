@@ -1,5 +1,5 @@
 ---
-title: Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.24 (únor 2022)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.24. (únor 2022)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.24.
 author: kamaybac
 ms.date: 12/03/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f6402d7f9f433ca621c475bd62553529943dbe62
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920541"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986296"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10024-february-2022"></a>Verze Preview aplikace Dynamics 365 Supply Chain Management 10.0.24 (únor 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.24. (únor 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.24. Tato verze má číslo sestavení 10.0.1084 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.24. Tato verze má číslo sestavení 10.0.1084 a je k dispozici následujícím způsobem:
 
 - **Vydání verze Preview:** prosinec 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Leden 2022
@@ -69,9 +68,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy for aplikace Finance a Operace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.24 aplikací Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.24 aplikací Finance a Operace (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

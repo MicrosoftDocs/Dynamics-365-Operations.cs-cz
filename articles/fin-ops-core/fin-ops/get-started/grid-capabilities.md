@@ -13,18 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37484ce022085dfac66edba31b7adf9af4095df8
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890849"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974374"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných funkcí, které lze použít k vylepšení produktivity uživatelů, vytvoření zajímavějších zobrazení dat a získání smysluplných přehledů dat. Tento článek se týká následujících možností: 
 
@@ -37,10 +35,10 @@ Nový ovládací prvek mřížky poskytuje několik užitečných a výkonných 
 -  Roztažitelné sloupce
 
 ## <a name="calculating-totals"></a>Vypočet součtů
-V aplikacích Finance and Operations mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
+V aplikacích Finance a Operace mají uživatelé možnost zobrazit součty v dolní části číselných sloupců v mřížkách. Tyto součty se zobrazí v části zápatí v dolní části mřížky. 
 
 ### <a name="showing-the-grid-footer"></a>Zobrazení zápatí mřížky
-Aplikace Finance and Operations obsahují oblast zápatí v dolní části každé tabulkové mřížky. V zápatí je možné zobrazit cenné informace související s daty, která se zobrazí v mřížce. Následuje několik příkladů těchto informací:
+Aplikace Finance a Operace obsahují oblast zápatí v dolní části každé tabulkové mřížky. V zápatí je možné zobrazit cenné informace související s daty, která se zobrazí v mřížce. Následuje několik příkladů těchto informací:
 
 - Počet vybraných řádků v tabulce (při výběru více než jednoho záznamu)
 - Celkové součty v dolní části konfigurovaných číselných sloupců
@@ -85,7 +83,7 @@ Kvůli tomuto novému chování byl do levé části sloupce výběru řádku p�
 Když uživatelé zadávají data v místě, kam zatím nedošlo zpracování serveru, mohou očekávat několik omezení při zadávání dat, jako je například nemožnost vyhledávání, ověřování na úrovni ovládacích prvků a zadávání výchozích hodnot. Uživatelé, kteří potřebují rozevírací seznam pro vyhledání hodnoty, by měli počkat, až server dojde k aktuálnímu řádku. Ověření na úrovni ovládacích prvků a zadání výchozích hodnot také proběhnou, když server zpracuje daný řádek.   
 
 ### <a name="pasting-from-excel"></a>Vkládání z aplikace Excel
-Uživatelé vždy mohou exportovat data z mřížek v aplikacích Finance and Operations do aplikace Microsoft Excel pomocí mechanismu **Export do aplikace Excel**. Nicméně možnost zadávání dat před systémem umožňuje, aby nová mřížka podporovala kopírování tabulek z aplikace Excel a jejich vložení přímo do mřížek v aplikacích Finance and Operations. Buňka mřížky, z níž je zahájena operace vložení, určuje, kde bude zkopírovaná tabulka vložena. Obsah mřížky je přepsán obsahem zkopírované tabulky s výjimkou dvou případů:
+Uživatelé vždy mohou exportovat data z mřížek v aplikacích Finance a Operace do aplikace Microsoft Excel pomocí mechanismu **Exportu do aplikace Excel**. Nicméně možnost zadávání dat před systémem umožňuje, aby nová mřížka podporovala kopírování tabulek z aplikace Excel a jejich vložení přímo do mřížek v aplikacích Finance a Operace. Buňka mřížky, z níž je zahájena operace vložení, určuje, kde bude zkopírovaná tabulka vložena. Obsah mřížky je přepsán obsahem zkopírované tabulky s výjimkou dvou případů:
 
 - Pokud počet sloupců ve zkopírované tabulce překračuje počet sloupců, které zůstanou v mřížce, počínaje místem vložení, uživatel bude upozorněn, že nadbytečné sloupce byly ignorovány. 
 - Pokud počet řádků ve zkopírované tabulce překračuje počet řádků v mřížce, počínaje místem vložení, budou existující buňky přepsány vloženým obsahem a všechny další řádky z kopírované tabulky budou vloženy jako nové řádky v dolní části mřížky. 
@@ -96,7 +94,7 @@ Jedná se o prostředek pro zvýšení produktivity, uživatelé mohou zadávat 
 Chcete-li, aby systém rozpoznal hodnotu jako výraz, zahajte tuto hodnotu znaménkem rovná se (**=**). Další informace o podporovaných operátorech a syntaxi naleznete v tématu [Podporované matematické symboly](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Seskupení tabulkových dat
-Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce **Seskupení do mřížek**, která je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance and Operations. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
+Obchodní uživatelé často potřebují provádět ad hoc analýzu dat. I když to lze provést exportem dat do aplikace Microsoft Excel a použitím kontingenčních tabulek, funkce (Preview) **Seskupení do mřížek**, která je závislá na nové funkci řízení mřížky, umožňuje uživatelům organizovat tabulková data v rámci aplikací Finance a Operace. Protože tato funkce rozšiřuje funkci **součtů**, **seskupení** umožňuje získat smysluplné přehledy o datech poskytnutím mezisoučtů na úrovni skupiny.
 
 Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle kterého chcete provést seskupení, a zvolte **Seskupit tento sloupec**. Tato akce seřadí data podle vybraného sloupce, přidá nový sloupec **Seskupit podle** na začátek mřížky a vloží „řádky záhlaví“ na začátek každé skupiny. Tyto řádky záhlaví obsahují následující informace o každé skupině: 
 -  Hodnota dat pro skupinu 

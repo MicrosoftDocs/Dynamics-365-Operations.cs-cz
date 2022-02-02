@@ -2,7 +2,7 @@
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901881"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007567"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20140"></a>Verze 2.0.14.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Opraven problém, který deaktivoval výchozí tlačítko Odeslat.
+
+## <a name="version-20130"></a>Verze 2.0.13.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+ 
+- Vylepšené posouvání mezi stránkami s plynulejší animací.
+- Opraveny neintuitivní reakce na pohyby přejetím a občasné zamrzání obrazovky.
+- Vylepšené kombinace textu a pozadí v tmavém režimu pro lepší čitelnost.
+- Opraven problém, kdy se některý text mohl při změně velikosti okna aplikace velmi zmenšit.
+- Opraven problém, který mohl někdy způsobit pád aplikace při skenování čárových kódů.
+- Přidána možnost nahradit posuvník tlačítkem.
+- Opraven problém, který mohl způsobit, že aplikace zobrazila chybovou zprávu „AADSTS7000215: Je poskytnut neplatný tajný klíč klienta“.
+- Opravena animace nápovědy ukazující, jak zavřít stránku pomocí gesta přejetím dolů.
+- Přidána možnost zavřít stránku pomocí krátkého potažení prstem dolů.
+- Opraven problém, kdy se nezobrazovaly názvy rozevíracího seznamu na stránce **Uživatelské nastavení**.
+- Opraven problém s lokalizací, kdy aplikace nerozpoznala čárku (,) jako oddělovač desetinných míst.
+- Vylepšená přístupnost.
+- Opravena navigace na stránce **Nové připojení** pro lepší přístupnost.
+- Opraven problém, kdy se při výběru vstupního pole nezobrazovala softwarová klávesnice (na obrazovce).
+- Opraven problém, který mohl způsobit selhání aplikace, pokud uživatelé rychle změnili velikost okna.
+- Opraven problém, kdy bylo rychlé stisknutí klávesy někdy interpretováno jako dlouhé stisknutí.
+- Opraven problém, kdy mohlo dojít k poškození rozvržení aplikace v důsledku přizpůsobení pole provedeného v Supply Chain Management.
+- Opraven problém, kdy se umístění položek nezobrazovalo správně.
+- Opraven problém související s krátkým výběrem pro pracovní postup variant produktu.
+- Odstraněno zbytečné ověřování polí obsahujících přednastavené výchozí hodnoty.
+- Zlepšení výkonu.
+- Přidáno nové nastavení, které uživatelům umožňuje zvolit způsob filtrování a řazení polí na stránce karty.
 
 ## <a name="version-20110"></a>Verze 2.0.11.0
 

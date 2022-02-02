@@ -1,6 +1,6 @@
 ---
-title: Konfigurace Finance Insights pro public review (náhled) - verze 10.0.20 a novější
-description: Toto téma vysvětluje, jak nakonfigurovat svůj systém, aby používal funkce, které jsou k dispozici ve Finance Insights pro public preview pro verze do 10.0.20.
+title: Konfigurace Finance Insights – verze 10.0.20 a pozdější
+description: Toto téma vysvětluje, jak nakonfigurovat svůj systém, aby používal funkce, které jsou k dispozici ve Finance Insights pro verze 10.0.20 a pozdější.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927397"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968955"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfigurace Finance Insights pro public review (náhled) - verze 10.0.20 a novější
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfigurace Finance Insights – verze 10.0.20 a pozdější
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finanční přehledy kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights pro public preview.
+Finance Insights kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights.
 
 > [!NOTE]
 > Kroky konfigurace, které jsou popsány v tomto tématu, se vztahují pouze na verzi Finance 10.0.20 a novější. Informace o nastavení Finance Insights ve verzi 10.0.19 a starší najdete v tématu [Konfigurace Finance Insights - do verze 10.0.19](configure-for-fin-insites.md).
@@ -38,7 +38,7 @@ Finanční přehledy kombinují funkčnost Microsoft Dynamics 365 Finance s Data
 
 Pro nasazení prostředí postupujte takto.
 
-1. V Microsoft Dynamics Lifecycle Services (LCS) vytvořte nebo aktualizujte prostředí Finance. Prostředí vyžaduje verzi aplikace 10.0.20 nebo novější aplikací Finance and Operations.
+1. V Microsoft Dynamics Lifecycle Services (LCS) vytvořte nebo aktualizujte prostředí Finance. Prostředí vyžaduje aplikaci Finance a Operace verze 10.0.20 nebo novější.
 2. Prostředí musí mít vysokou dostupnost (HA) v prostředí Sandbox. (Tento typ prostředí se také nazývá prostředí 2. úrovně.) Další informace najdete v tématu [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Ukázková data Contoso neobsahují dostatek historických dat pro adekvátní trénink modelu predikce. 
 
@@ -126,7 +126,7 @@ Pokud nemůžete najít žádnou z předchozích aplikací, vyzkoušejte násled
         - **Výkon** – Doporučujeme, abyste vybrali **Standard**.
         - **Druh účtu** – Musíte vybrat **StorageV2**.
 
-    3. V dialogovém okně **Rozšířené možnosti** pro **Data Lake Storage Gen2** vyberte možnost **Povolit** pro funkci **Hierarchický obor názvů**. Pokud tuto funkci nepovolíte, nebudete moci spotřebovat data, která aplikace Finance and Operations zapíše při použití služeb, jako jsou toky dat Power BI.
+    3. V dialogovém okně **Rozšířené možnosti** pro **Data Lake Storage Gen2** vyberte možnost **Povolit** pro funkci **Hierarchický obor názvů**. Pokud tuto funkci nepovolíte, nebudete moci spotřebovat data, která aplikace Finance a Operace zapíše při použití služeb, jako jsou toky dat Power BI.
     4. Vyberte **Zkontrolovat a vytvořit**. Po dokončení nasazení se nový prostředek zobrazí v portálu Azure.
     5. Přejděte na účet úložiště, který jste vytvořili.
     6. V levé nabídce vyberte možnost **Přístupové klíče**.
@@ -752,6 +752,6 @@ Instalace doplňku může trvat několik minut.
 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 
-Pokud máte zájem o poskytnutí zpětné vazby nebo pokud vyžadujete technickou podporu, zašlete prosím e-mail na [Finance Insights (Preview)](mailto:fiap@microsoft.com).
+Pokud máte zájem o poskytnutí zpětné vazby nebo pokud vyžadujete technickou podporu, zašlete prosím e-mail na [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,13 +96,11 @@
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (leden 2022)
                       href: get-started/whats-new-commerce-10-0-23.md
-                    - name: Commerce 10.0.22 (listopad 2021)
-                      href: get-started/whats-new-commerce-10-0-22.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Domovská stránka odstraněných nebo zastaralých funkcí
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                    - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
+                    - name: "Odstraněné nebo zastaralé funkce v\_aplikaci Finance and Operations"
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
                       href: get-started/removed-deprecated-features-commerce.md
@@ -222,7 +220,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementace projektů Finance and Operations Commerce
+                - name: Implementace projektů v aplikaci Finance and Operations Commerce
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
                 - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty'
                   href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -712,6 +710,10 @@
                   href: sync-product-ratings.md
                 - name: Povolit ruční publikování hodnocení a recenzí moderátorem
                   href: manual-publish-rating-reviews.md
+                - name: Import a export hodnocení a recenzí
+                  href: import-export-reviews.md
+                - name: Konfigurace ověřování Service-to-Service
+                  href: service-to-service-auth.md
                 - name: Nejčastější dotazy k hodnocení a recenzím
                   href: ratings-reviews-faq.md
             - name: Správa zásob
@@ -998,8 +1000,6 @@
                       href: style-presets.md
                     - name: Přidání ikony oblíbené položky
                       href: add-favicon.md
-                    - name: Přidání uvítací zprávy
-                      href: add-welcome-message.md
                     - name: Přidání oznámení o vlastnických právech
                       href: add-copyright-notice.md
                     - name: Přidání jazyků

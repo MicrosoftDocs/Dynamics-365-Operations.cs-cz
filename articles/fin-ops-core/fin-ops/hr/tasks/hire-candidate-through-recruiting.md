@@ -1,48 +1,47 @@
 ---
 title: Přijetí kandidáta prostřednictvím náboru
 description: Tento postup umožňuje náborovým pracovníkům přijmout uchazeče, který podal přihlášku pomocí konkrétního náborového projektu.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1edee858b0b37b497b6b5b006185315c2f9d074e46de1aca80b20b2685a2c837
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 07f89a41cca7b3ff66404305d31cf1b8a67bfe47
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743884"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964954"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Přijetí kandidáta prostřednictvím náboru
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup umožňuje náborovým pracovníkům přijmout uchazeče, který podal přihlášku pomocí konkrétního náborového projektu. Pokud přijímáte uchazeče skrze náborový projekt, bude vytvořen nový záznam pracovníka a záznam uchazeče bude mít stav Zaměstnán. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup dokončíte tak, že přejděte na Lidské zdroje > Nábor > Přihlášky > Přihlášky 
+Tento postup umožňuje náborovým pracovníkům přijmout uchazeče, který podal přihlášku pomocí konkrétního náborového projektu. Pokud přijímáte uchazeče skrze náborový projekt, bude vytvořen nový záznam pracovníka a záznam uchazeče bude mít stav **Zaměstnán**. K vytvoření této procedury jsou použita ukázková data společnosti **USMF**.
 
-1. Výběr přihlášky pro externího uchazeče
-2. Klikněte na odkaz na vybraném řádku v seznamu.
-3. Klikněte na Stav uzamčení aplikace.
-4. Klikněte na Přijmout nového pracovníka.
-5. Zadejte zadejte datum a čas do pole Počáteční datum zaměstnání.
-6. V poli Pozice kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-7. Klikněte na odkaz na vybraném řádku v seznamu.
-8. Do pole Zahájení přiřazování zadejte datum a čas.
-9. Klikněte na Přijmout nového pracovníka.
-10. Rozbalte okno s fakty Historie zaměstnance.
-11. Rozbalte okno s fakty Aktuální pozice.
-12. Rozbalte okno s fakty Historie zaměstnance.
-13. Rozbalte okno s fakty Aktuální pozice.
-14. Rozbalte nebo sbalte oddíl Adresy.
-15. Rozbalte nebo sbalte oddíl Kontaktní informace.
-16. Rozbalte nebo sbalte oddíl Osobní údaje.
-
-
+1. Přejděte na **Human Resources \> Nábor \> Přihlášky \> Přihlášky**. 
+2. Vyberte přihlášku pro externího uchazeče.
+3. Vyberte odkaz na vybraném řádku v seznamu.
+4. Vyberte **Stav přihlášky**.
+5. Vyberte **Zaměstnat nového pracovníka**.
+6. Zadejte datum a čas do pole **Počáteční datum zaměstnání**.
+7. V poli **Pozice** vyberte šipku rozevíracího seznamu a otevřete vyhledávání.
+8. Vyberte odkaz na vybraném řádku v seznamu.
+9. Do pole **Zahájení práce** zadejte datum a čas.
+10. Vyberte **Zaměstnat nového pracovníka**.
+11. Rozbalte okno s fakty **Historie zaměstnance**.
+12. Rozbalte okno s fakty **Aktuální pozice**.
+13. Rozbalte okno s fakty **Historie zaměstnance**.
+14. Rozbalte okno s fakty **Aktuální pozice**.
+15. Rozbalte nebo sbalte oddíl **Adresy**.
+16. Rozbalte nebo sbalte oddíl **Kontaktní údaje**.
+17. Rozbalte nebo sbalte oddíl **Osobní údaje**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
