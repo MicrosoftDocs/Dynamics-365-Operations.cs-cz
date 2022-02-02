@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b0ccbd1781ccb5aa7f5f62ea86888e1673cb77653af57f6c49319a2b5089ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782436"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968789"
 ---
 # <a name="production-setup-requirements"></a>Požadavky na nastavení výroby
 
@@ -39,7 +39,7 @@ Před prací s modulem Řízení výroby je nutné nastavit informace v jiných 
 -   Definování skupin položek
 -   Nastavení účtů hlavní knihy pro skupiny položek
 -   Nastavení tabulky položek zásob v modulu Řízení zásob.
--   V modulu Řízení zásob vytvořte kusovníky (BOM) a verze kusovníku.
+-   V modulu Řízení informací o produktech vytvořte kusovníky (BOM) a verze kusovníku.
 
 ## <a name="required-calendar-and-resource-setup"></a>Potřebné nastavení kalendáře a prostředků
 Před použitím modulu Řízení výroby otevřete modul Správa organizace a v následujícím pořadí vytvořte a definujte kalendář a provozní prostředky:

@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f460ab6ae90b5daa9bee3c2954727a7bcf79321d661f8ce88f5108fd019fbb3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724573"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964597"
 ---
 # <a name="work-with-css-override-files"></a>Práce s CSS soubory přepisující výchozí styl
 
@@ -100,8 +100,6 @@ Chcete-li deaktivovat soubor přepisu CSS na vašem webu, postupujte následovn�
 [Práce s předvolbami stylu](style-presets.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
-
-[Přidání uvítací zprávy](add-welcome-message.md)
 
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 

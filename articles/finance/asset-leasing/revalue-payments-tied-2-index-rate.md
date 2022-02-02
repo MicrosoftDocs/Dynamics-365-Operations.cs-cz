@@ -2,25 +2,25 @@
 title: Přecenění leasingových splátek vázaných na indexovou sazbu
 description: Toto téma popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734579"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968045"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Přecenění leasingových splátek vázaných na indexovou sazbu
 
@@ -43,7 +43,7 @@ Podle těchto kroků proveďte přecenění leasingových splátek vázaných na
 4. Vyberte filtry pro výběr leasingů, které by měly být zahrnuty do zpracování na pozadí, a poté vyberte **OK**.
 
     Objeví se dialogové okno **Náhled přehodnocení indexu** s nájemními smlouvami, které budou přeceněny. Ukazuje také úpravy aktiv a pasiv nebo úpravy variabilních plateb.
-    
+
 5. Chcete-li zabránit přeceňování leasingů, vyberte leasingy, které **by měly** být přeceněny. Pokud nevyberete žádné leasingy, budou všechny leasingy přeceněny. Po dokončení vyberte **OK** k přecenění leasingových splátek.
 6. Chcete-li zobrazit transakce, které byly vytvořeny pro konkrétní proces přecenění indexu, vyberte ID procesu a poté vyberte **Transakce**.
 
@@ -66,5 +66,7 @@ Můžete si prohlédnout nově vygenerovaný plán plateb, který začíná date
 
 Položka deníku automaticky zaúčtovala položku deníku úprav na účet kvůli změnám v leasingových splátkách, které souvisejí s přeceněním indexu.
 
+> [!NOTE]
+> Pokud je možnost **Částka splátky** aktivní na pevné záložce **Všeobecné** stránky **Údaje leasingu** a související kniha je IFRS 16, proces přecenění indexu automaticky přidá záznam do dialogového okna **Rozdělení částky platby**. Částka bude odrážet změnu, která byla provedena v platbě z důvodu přecenění indexu. Záznam bude označen jako **Používá se pro přecenění indexu IRFS 16**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

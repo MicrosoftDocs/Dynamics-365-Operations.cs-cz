@@ -2,8 +2,8 @@
 title: Přehled organizací a organizačních hierarchií
 description: Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798339"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992075"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Přehled organizací a organizačních hierarchií
 
@@ -54,7 +54,7 @@ K typům provozních jednotek patří nákladová střediska, obchodní jednotky
 | Obchodní jednotka       | Částečně samostatná provozní jednotka vytvořená tak, aby naplňovala strategické obchodní cíle. | Používá se pro finanční vykazování podle průmyslových odvětví nebo produktových řad, které organizace nabízí nezávisle na právnických osobách. |
 | Hodnotový proud        | Provozní jednotka, která řídí jeden nebo více výrobních toků. | Používané běžně v rámci lean manufacturing pro řízení aktivit a toků, které jsou požadovány pro dodávky produktu nebo služby spotřebitelům. |
 | Oddělení          | Provozní jednotka, která představuje kategorii nebo funkční část organizace, která provádí určitý úkol, například prodej nebo účetnictví. | Používané k vykazování ve funkční oblastech. Oddělení mohou mít odpovědnosti za zisk a ztráty a mohou obsahovat skupinu nákladových středisek. |
-| Kanál pro velkoobchod      | Provozní jednotka, která představuje kamenný obchod, online obchod nebo online tržiště. | Slouží pro správu a provozní kontrolu jednoho nebo více obchodů v rámci nebo napříč právnickými osobami. |
+| Maloobchodní síť      | Provozní jednotka, která představuje kamenný obchod, online obchod nebo call centrum. | Slouží pro správu a provozní kontrolu jednoho nebo více obchodů v rámci nebo napříč právnickými osobami. |
 
 ### <a name="teams"></a>Týmy
 

@@ -3,7 +3,7 @@ title: Předpovědi plateb zákazníka
 description: Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také mpže pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkasa dříve, než byste to zahájili v ostatních případech.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752729"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982030"
 ---
 # <a name="customer-payment-predictions"></a>Předpovědi plateb zákazníka
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také může pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkas dříve, než byste to zahájili v ostatních případech.
 
@@ -39,7 +38,7 @@ Organizace často považují za náročné předvídat, kdy zákazník zaplatí 
 - Procesy inkasa, které začínají příliš pozdě
 - Objednávky, které jsou vydávány zákazníkům, u nichž může dojít k selhání platby
 
-Předpovědi plateb zákazníka (preview) pomáhá organizacím předpovědět, kdy dojde k zaplacení faktury zákazníkem. Proto mohou vytvářet strategie sbírek, které pomáhají zvyšovat pravděpodobnost, že budou zaplaceny včas.
+Předpovědi plateb zákazníka pomáhá organizacím předpovědět, kdy dojde k zaplacení faktury zákazníkem. Proto mohou vytvářet strategie sbírek, které pomáhají zvyšovat pravděpodobnost, že budou zaplaceny včas.
 
 ## <a name="predictions"></a>Předpovědi
 

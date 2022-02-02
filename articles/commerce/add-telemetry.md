@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724597"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964522"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Přidání kódu skriptu na webové stránky pro podporu telemetrie
 
@@ -111,8 +111,6 @@ Chcete-li přidat externí skript přímo do šablony v rámci konfigurátoru we
 [Práce se soubory přepisu šablon CSS](css-override-files.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
-
-[Přidání uvítací zprávy](add-welcome-message.md)
 
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 

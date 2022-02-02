@@ -3,24 +3,23 @@ title: Přehled
 description: Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nastavení aplikace Human Resources, nastavení kompenzace a zaměstnaneckých výhod pro zaměstnance a řízení zaměstnanců.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1aa1299277e4c96d2fe7a4c3bd03b907a5cc0b5
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: b0069393518d0dd5655f72d4bd09aa7444fa3cd8
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465094"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984338"
 ---
 # <a name="overview"></a>Přehled
 

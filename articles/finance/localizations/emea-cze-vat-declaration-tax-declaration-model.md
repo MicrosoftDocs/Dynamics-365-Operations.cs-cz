@@ -2,7 +2,7 @@
 title: Přiznání k DPH (Česká republika)
 description: Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku.
 author: anasyash
-ms.date: 09/18/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a13c19e28cafe245fc45eb8b6dd7a26c630728d2243e4b7e6db4db9d86c730d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54cc526cc8f8220fd8297d5fd3858ca2a55147bf
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747066"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985069"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -138,7 +138,7 @@ Oddíl A1 zobrazuje dokumenty, které generují částku v řádku 25 přiznán�
 |------------------------------------------------|---------------|
 | Číslo daňového dokladu                            | c\_evid\_dd   |
 | DIČ zákazníka (pouze číselná část) | ic\_odb       |
-| Datum (což je datum registrace k DPH)       | duzp          |
+| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | duzp          |
 | Kód předmětu                                   | kod\_pred\_pl |
 | Základ daně                                       | zakl\_dane1   |
 
@@ -172,7 +172,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 |-----------------------------------------------------|---------------|
 | Číslo daňového dokladu                                 | c\_evid\_dd   |
 | DIČ dodavatele (pouze číselná část)        | dic\_dod      |
-| Datum (což je datum příchozí faktury dodavatele) | duzp          |
+| <p>Datum</p><p>(Toto pole určuje datum registrace DPH dodavatele nebo příchozí faktury dodavatele.)</p> | duzp          |
 | Kód předmětu                                        | kod\_pred\_pl |
 | Základ daně se standardní sazbou                           | zakl\_dane1   |
 | Částka daně se standardní sazbou                         | dan1          |
@@ -182,6 +182,8 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Částka daně s druhou sníženou sazbou                   | dan3          |
 
 Chcete-li automaticky určit kód subjektu pro dokument, musíte použít stejná nastavení, která byla popsána v oddílu A1.
+
+Další informace o tom, jak definovat datum registrace dodavatele DPH, viz [Datum registrace dodavatele k DPH](emea-date-vendor-vat-register.md).
 
 ### <a name="section-a2-purchases-with-reverse-charge-excluding-domestic-reverse-charge-with-an-obligation-to-pay-vat"></a>Oddíl A2: Nákupy s přenesením daňové povinnosti, s výjimkou tuzemského přenesení daňové povinnosti, s povinností platit DPH
 
@@ -194,7 +196,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Číslo daňového dokladu                                                    | c\_evid\_dd |
 | DIČ dodavatele z jiného členského státu (pouze číselná část) | vatid\_dod  |
 | Země, která dodavateli přidělila DIČ                    | k\_stat     |
-| Datum (což je datum registrace k DPH)                               | Dppd        |
+| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | Dppd        |
 | Základ daně se standardní sazbou                                              | zakl\_dane1 |
 | Částka daně se standardní sazbou                                            | dan1        |
 | Základ daně s první sníženou sazbou                                         | zakl\_dane2 |
@@ -215,7 +217,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Číslo daňového dokladu                                           | c\_evid\_dd      |
 | DIČ zákazníka (pouze číselná část), pokud existuje   | vatid\_odb       |
 | Země, která zákazníkovi přidělila DIČ         | k\_stat          |
-| Datum (rejstřík DPH)                                           | dup              |
+| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | dup              |
 | Hodnota prodeje                                        | osv\_plneni      |
 | Místo bydliště zákazníka, pokud nemá DIČ  | m\_pobytu\_sidlo |
 | Jméno a příjmení zákazníka, pokud nemá DIČ | jm\_prijm\_obch  |
@@ -269,7 +271,7 @@ Oddíl B2 poskytuje o každém dokumentu následující informace.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Číslo daňového dokladu                                                                                                                                 | c\_evid\_dd |
 | DIČ dodavatele                                                                                                                            | dic\_dod    |
-| Datum (datum příchozí faktury dodavatele)                                                                                                          | Dppd        |
+| <p>Datum</p><p>(Toto pole určuje datum registrace DPH dodavatele nebo příchozí faktury dodavatele.)</p>                                                              | Dppd        |
 | Základ daně se standardní sazbou                                                                                                                           | zakl\_dane1 |
 | Částka daně se standardní sazbou                                                                                                                         | dan1        |
 | Základ daně s první sníženou sazbou                                                                                                                      | zakl\_dane2 |

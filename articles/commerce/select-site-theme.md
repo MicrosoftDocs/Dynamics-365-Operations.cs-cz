@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cd110a94991659036ac5cee1cd5f77e0cd3ba7356be902bdae37e957247535ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737523"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964774"
 ---
 # <a name="select-a-site-theme"></a>Volba motivu webu
 
@@ -43,15 +43,13 @@ Chcete-li vybrat motiv, který je pro web použit, postupujte podle následujíc
 > [!NOTE]
 > Vybraný motiv se publikuje na vašem webu, jakmile vyberete **Uložit a publikovat** na stránce **Rozšiřitelnost**. Chcete-li si prohlédnout motiv na vašem webu před jeho použitím, můžete použít vývojové prostředí nebo prostředí sandbox.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přidání loga](add-logo.md)
 
 [Práce se soubory přepisu šablon CSS](css-override-files.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
-
-[Přidání uvítací zprávy](add-welcome-message.md)
 
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 

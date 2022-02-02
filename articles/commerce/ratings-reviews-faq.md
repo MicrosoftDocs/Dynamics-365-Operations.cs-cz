@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674567"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968170"
 ---
 # <a name="ratings-and-reviews-faq"></a>Nejčastější dotazy k hodnocení a recenzím
 
@@ -41,5 +41,17 @@ Pokyny, jak povolit a vynutit ruční publikování hodnocení a recenzí, aby s
 [Připojení k používání hodnocení a recenzí](opt-in-ratings-reviews.md)
 
 [Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
+
+[Správa hodnocení a recenzí](manage-reviews.md)
+
+[Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
+
+[Synchronizace hodnocení produktů](sync-product-ratings.md)
+
+[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
+
+[Import a export hodnocení a recenzí](import-export-reviews.md)
+
+[Konfigurace ověřování mezi službami](service-to-service-auth.md)
 
 [Upřesnění hodnocení se zobrazí ve výsledcích vyhledávání a na stránkách kategorií, pokud není povoleno řešení pro hodnocení a recenze](troubleshoot/hide-ratings-refiner.md)

@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920167"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982143"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Plánování s nekonečnou kapacitou
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 Funkce *Plánování nekonečné kapacity pro optimalizaci plánování* zavádí plánování založené na informacích o trase. Umožňuje vám naplánovat úlohy na základě široké škály nastavení tras. Plánování pro optimalizaci plánování pokrývá často používané nastavení trasy, včetně sekvence provozu trasy nebo požadavků na prostředky operace trasy.
 
@@ -51,7 +49,9 @@ Během procesu plánování systém rovněž zohledňuje *požadavky na zdroje*,
 - Schopnost (Další informace viz [Plánování s výběrem zdrojů na základě schopností](capability-based-scheduling.md).)
 
 > [!NOTE]
-> Požadavky týkající se lidských zdrojů, jako jsou dovednosti nebo požadavky na certifikát, ještě nejsou podporovány.
+>
+> - Pokud je prostředků nebo skupina prostředků nastavena na nekonečnou kapacitu, hlavní plánování je bude považovat za nekonečnou kapacitu.
+> - Požadavky týkající se lidských zdrojů, jako jsou dovednosti nebo požadavky na certifikát, ještě nejsou podporovány.
 
 Tato funkce také podporuje provozní vlastnosti **Čas nastavení** a **Čas běhu**. Když nastavíte tyto vlastnosti na operaci trasy, proces plánování vytvoří příslušné úlohy nastavení a zpracování.
 

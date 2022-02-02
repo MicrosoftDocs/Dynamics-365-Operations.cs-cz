@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752767"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968905"
 ---
 # <a name="use-customer-payment-predictions"></a>Použití předpovědí plateb zákazníka
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak používat předpovědi plateb zákazníka. Než použijete tuto funkci, musí pro ni být dokončené kroky instalace. Další informace naleznete v tématu [Povolit předpovědi odběratelů](enable-cust-paymnt-prediction.md).
 
@@ -91,6 +90,6 @@ Přesnost předpovědí plateb můžete zobrazit na stránce **Úvěr a inkasa \
 
 Pokud nejste spokojeni s přesností, vyberte odkaz **Zlepšit přesnost modelu** pro otevření rozšíření AI Builder. V prostředí rozšíření AI Builder můžete vybrat nebo zrušit výběr polí, dokud nevyberete pole, která jsou podle vás nejdůležitější pro přesnou předpověď pravděpodobnosti platby. Po dokončení můžete snadno proškolit model předpovědi a publikovat změny. Nově trénovaný model předpovědi se automaticky spustí a vygeneruje předpovědi v Dynamics 365 Finance.
 
-[![Zkušenosti s rozšířením AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
+[![Prostředí rozšíření AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Přehled upgradu knihy odpisů
 description: Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů.
 author: moaamer
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: eaa47b47a93deda24a6c76572881d1e5bba29c52
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675145"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985076"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Přehled upgradu knihy odpisů
 

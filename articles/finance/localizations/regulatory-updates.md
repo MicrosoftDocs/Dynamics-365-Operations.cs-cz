@@ -2,22 +2,22 @@
 title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 07/15/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 16d4b9b31f213218fa5eb79c9808e5139db2dbd2239e7bb29c62af15aa372a9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4c9d82d882771c2b7131169615504613836def9
+ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772738"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "8016093"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -25,7 +25,7 @@ ms.locfileid: "6772738"
 
 V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v podporovaných lokalizacích Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace viz [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
+Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje: [Plány vydání Dynamics 365 a Power Platform](/business-applications-release-notes/index).
 
 Microsoft se snaží implementovat nové legislativní požadavky co nejdříve. Skutečný termín dodání závisí na datu oznámení zákona, dostupnosti podrobností o požadavcích od místních úřadů, dostupnosti validačních nástrojů a na velikosti a složitosti změny.
 
@@ -71,7 +71,7 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 
 ## <a name="additional-resources"></a>Další prostředky
-- Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (vyžaduje se přihlášení).
+- Další informace o všech plánovaných a vydaných regulačních aktualizacích pro jednotlivé země naleznete v části [Vyhledejte aktualizace předpisů pro jednotlivé země](search-for-regulatory-updates.md). (Je vyžadováno přihlášení.)
 - Seznam lokalizací, které jsou podporovány, uvádí [Příručka mezinárodní dostupnosti](https://aka.ms/dynamics_365_international_availability_deck).
 
 

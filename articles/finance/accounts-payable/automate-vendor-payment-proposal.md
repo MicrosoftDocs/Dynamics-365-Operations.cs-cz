@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 483621a5de2980212926ac1011c16f1b82e4a3d075bbe9bcbbe6a0e35f06e5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749095"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966708"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatizace návrhů plateb dodavatelům
 
@@ -32,6 +32,9 @@ Organizace, které platí dodavatelům podle opakujícího se plánu, nyní moho
 - V jakém deníku plateb dodavateli jsou výsledné platby uloženy
 
 Automatizace návrhů plateb neúčtuje platby automaticky. Proto můžete i nadále používat jakékoli procesy ověřování a pracovních postupů, které aktuálně používáte ke schvalování vytvořených plateb.
+
+> [!NOTE]
+> Funkce **Automatizace návrhů plateb dodavatele** musí být povolena ve správě funkcí. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Definování výskyt návrhů plateb dodavatelům
 

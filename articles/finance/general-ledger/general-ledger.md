@@ -3,7 +3,7 @@ title: Přehled hlavní knihy a finančního výkaznictví
 description: Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby.
 author: ShylaThompson
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143807b6076d2b798de26d2ebd2cf7a40a8fdf89fdc8387acfbb79cecb44e3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715111"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985230"
 ---
 # <a name="general-ledger-home-page"></a>Domovská stránka hlavní knihy
 
@@ -61,7 +61,7 @@ Přejděte na [Přehled Financial reporting](../../fin-ops-core/dev-itpro/analyt
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [Microsoft Dynamics 365 Finance and Operations - Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a blogu [Microsoft Dynamics 365 Finance a Operations – Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 

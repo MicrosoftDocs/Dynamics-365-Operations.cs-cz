@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860660"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013827"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Povolit Power BI pro globální účetnictví zásob
 
@@ -51,8 +51,9 @@ Pro nastavení integrace Power BI postupujte následujícím způsobem.
 
     1. Přejděte do **Můj pracovní prostor**, vyhledejte datovou sadu pro Globální účetnictví zásob a poté v nabídce **Možnosti** vyberte **Nastavení**.
     1. V **Nastavení pro globální účtování zásob** rozbalte **Parametry** a podle potřeby aktualizujte všechny parametry. Zkontrolujte zejména následující nastavení:
-        1. Přepište výchozí hodnoty **Dataverse Url** a **ID prostředí** za hodnoty nalezené na stránce **Podrobnosti o prostředí** v LCS (v části **Integrace Power Platform**).
-        1. Vyberte odkaz **Upravit přihlašovací údaje** vedle štítku **CD** v části **Přihlašovací údaje ke zdroji dat**. Poté se přihlaste do svého účtu Dataverse pomocí metody ověřování **OAuth2**.
+        1. Přepište výchozí hodnoty **Adresa URL Dataverse** za hodnoty nalezené v části **Údaje pro prostředí Power Platform** v LCS (v části **Integrace Power Platform**).
+        1. Přepište výchozí hodnoty **ID prostředí** za hodnoty nalezené v části **Údaje o prostředí** v LCS (v části **Správa prostředí**).
+        1. Vyberte odkaz **Upravit přihlašovací údaje** vedle štítku **CDS** v části **Přihlašovací údaje ke zdroji dat**. Poté se přihlaste do svého účtu Dataverse pomocí metody ověřování **OAuth2**.
     1. Ověřte, že zprávy Power BI nalezené v části **Můj pracovní prostor \> Zprávy \> Globální účetnictví zásob** nyní fungují správně a zobrazují obsah z vašeho systému.
 
 1. Zaregistrujte aplikaci podle popisu v [Konfigurace integrace PowerBI.com](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).

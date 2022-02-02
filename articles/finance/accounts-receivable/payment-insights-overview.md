@@ -3,7 +3,7 @@ title: Přehledy plateb odběratele (Preview)
 description: Toto téma popisuje funkci přehledů plateb, která pomáhá lépe porozumět typickým platebním praktikám jednotlivých zákazníků. Tato funkce vám pomůže identifikovat okolnosti, které ospravedlňují zahájení procesu inkasa dříve, než byste to udělali v ostatních případech.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737766"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983995"
 ---
 # <a name="customer-payment-insights-preview"></a>Přehledy plateb odběratele (Preview)
 
@@ -69,7 +69,7 @@ Pokud chcete vyzkoušet Přehledy plateb zákazníka (Preview), pošlete e-mail 
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance a Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
 
 
 

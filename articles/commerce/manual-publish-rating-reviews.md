@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675042"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968196"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Povolit ruční publikování hodnocení a recenzí moderátorem
 
@@ -68,3 +68,17 @@ Následující ilustrace ukazuje příklad, kde jsou na stránce **Moderování*
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
+
+[Připojení k používání hodnocení a recenzí](opt-in-ratings-reviews.md)
+
+[Správa hodnocení a recenzí](manage-reviews.md)
+
+[Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
+
+[Synchronizace hodnocení produktů](sync-product-ratings.md)
+
+[Import a export hodnocení a recenzí](import-export-reviews.md)
+
+[Konfigurace ověřování mezi službami](service-to-service-auth.md)
+
+[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)

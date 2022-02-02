@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a50c09dc9fd8a4c18bbd01c70338279ac0ad9ae6
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473518"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967943"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizace hodnocení produktů v Dynamics 365 Commerce
 
@@ -130,6 +130,16 @@ Následující obrázek znázorňuje příklad hodnocení produktů v kanálech 
 [Správa hodnocení a recenzí](manage-reviews.md)
 
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
+
+[Synchronizace hodnocení produktů](sync-product-ratings.md)
+
+[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
+
+[Import a export hodnocení a recenzí](import-export-reviews.md)
+
+[Konfigurace ověřování mezi službami](service-to-service-auth.md)
+
+[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

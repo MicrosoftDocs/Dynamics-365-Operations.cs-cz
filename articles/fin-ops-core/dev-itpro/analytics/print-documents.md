@@ -3,7 +3,7 @@ title: Přehled tisku dokumentu
 description: Dokumenty můžete tisknout buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Tento článek poskytuje přehled způsobu tisku dokumentů.
 author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5a0d26836043ea225b9a6d3e62980ada2dc49b0a01a6dacec739b50f28e17bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728231"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984901"
 ---
 # <a name="document-printing-overview"></a>Přehled tisku dokumentu
 
@@ -54,7 +54,7 @@ Protože se řešení liší, v závislosti na scénáři poskytují aplikace ve
 - **Scénář 2** používá aplikace klienta a služeb Microsoft 365.
 - **Scénář 3** vyžaduje podporu od aplikací klienta a služeb, které jsou hostovány v Microsoft Azure.
 
-Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance and Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
+Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance a Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
 
 ## <a name="service-overview"></a>Přehled služby
 Zatímco dokumenty vytvořené hostovanými aplikacemi čekají na tisk na zařízení připojeném k síti, jsou uloženy v úložišti objektu blob Azure. [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](install-document-routing-agent.md) používá ověřování Azure k vytvoření zabezpečeného kanálu do služeb Azure.

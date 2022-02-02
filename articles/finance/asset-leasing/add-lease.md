@@ -2,25 +2,25 @@
 title: Přidání nebo kopírování leasingů (Preview)
 description: Toto téma popisuje, jak vytvořit nový leasing zadáním informací o něm do leasingu majetku nebo zkopírováním informací z existujícího leasingu.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931974"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967919"
 ---
 # <a name="add-or-copy-leases-preview"></a>Přidání nebo kopírování leasingů (Preview)
 
@@ -35,8 +35,19 @@ Pomocí těchto kroků vytvoříte leasing v leasingu majetku.
 1. Na stránce **Shrnutí leasingu** v podokně Akce vyberte **Nový**.
 2. Zadejte informace o leasingu. Pole, která jsou povinná, mají červené ohraničení.
 
-> Počáteční datum leasingové splátky nemůže být dřívější než datum zahájení leasingu. Pokud zadáte počáteční datum leasingové platby, které je dřívější než počáteční datum leasingu, zobrazí se chybová zpráva.
-  
+Počáteční datum leasingové splátky nemůže být dřívější než datum zahájení leasingu. Pokud zadáte počáteční datum leasingové platby, které je dřívější než počáteční datum leasingu, zobrazí se chybová zpráva.
+
+Ve výchozím nastavení je možnost **Částka splátky** možnost na pevné záložce **Obecné** stránky **Údaje o leasingu** stránka je nastavena na **Ne**, pokud je možnost **Povolit splátky** na stránce **Parametry leasingu majetku** nastavena na **Ano**. 
+
+Pokud je možnost **Částka splátky** nastavena na **Ano**, pole **Částka platby** na pevné záložce **Řádky splátkového kalendáře** je uzamčena. Bude nastavena na součet částek plateb, které jsou zadány později v katalogu **Rozpis částky platby**.
+
+Vyberte **Rozpis splátek** k otevření stránky, kde můžete přidat jednotlivé typy plateb. Tlačítko **Přidat součty k částce platby** přesune součty na pole **Částka platby**.
+
+> [!NOTE]
+> Pokud přidáte položkovou částku platby a poté vyberete klávesu **Esc**, zadané částky nebudou přidány do pole **Částka platby** pole na pevné záložce **Řádky splátkového kalendáře**. Místo toho budou uloženy v dialogovém okně **Rozpis částky platby**. Pokud chcete, aby dialogové okno zobrazovalo celkovou částku, vyberte sloupec **Množství**, vyberte a podržte (nebo klikněte pravým tlačítkem) a poté vyberte **Celkem tento sloupec**. 
+
+Tlačítko **Kopírovat řádek** zkopíruje podrobný rozpis plateb.
+
 ## <a name="create-a-lease-schedule"></a>Vytvoření plánu leasingu
 
 Po dokončení zadávání informací o leasingu postupujte podle těchto kroků a vytvořte plán leasingu.
@@ -50,9 +61,9 @@ Po dokončení zadávání informací o leasingu postupujte podle těchto kroků
     Stránka **Podrobnosti o knize** ukazuje, jak je leasing zaúčtován v knihách, které k němu byly přiděleny. Odtud můžete zobrazit plány leasingu.
 
     Harmonogram plateb obsahuje vstupy z karty **Řádky platebního kalendáře** na stránce **Přidání leasingu**. Stále můžete změnit každou částku platby a variabilní platbu. Leasingový závazek se počítá na základě upraveného platebního kalendáře.
-    
-> [!NOTE]
-> Počáteční datum leasingové splátky musí být stejné nebo pozdější než datum zahájení leasingu. Pokud zadáte počáteční datum platby, které je dřívější než počáteční datum leasingu, zobrazí se chybová zpráva. 
+
+    > [!NOTE]
+    > Počáteční datum leasingové splátky musí být stejné nebo pozdější než datum zahájení leasingu. Pokud zadáte počáteční datum platby, které je dřívější než počáteční datum leasingu, zobrazí se chybová zpráva. 
 
 4. Po dokončení kontroly platebního kalendáře vyberte **Potvrdit kalendář**. Po potvrzení kalendáře již není leasing k dispozici pro úpravy.
 

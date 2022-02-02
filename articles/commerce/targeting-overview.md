@@ -3,7 +3,7 @@ title: Cílení na zařízení, trh a geografickou polohu
 description: Toto téma popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
 author: sushma-rao
 ms.date: 07/30/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 3ecc04c97b42b17f257aa40f665136c70de398748b9bda0da860c7000c062807
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b17c394105d4bb878c8375989924d3c3da079c78
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730844"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985130"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Cílení na zařízení, trh a geografickou polohu
 

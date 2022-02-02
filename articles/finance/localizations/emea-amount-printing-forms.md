@@ -2,7 +2,7 @@
 title: Aktualizovat zobrazení částek v sestavách a dokumentech
 description: Toto téma obsahuje informace o tom, jak aktualizovat zobrazení částek v sestavách a jiných dokumentech pro Estonsko, Lotyšsko, Litvu, Polsko, Českou republiku, Maďarsko a Rusko.
 author: anasyash
-ms.date: 08/13/2019
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1cc9effcf685efac84fb4a3a1eea00a5d524a7992599e8b01ed08dc2403f3dfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 678c7ac288e7754809ad51cc609e1aaa011776ee
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719694"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007588"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizovat zobrazení částek v sestavách a dokumentech
 
@@ -49,7 +49,7 @@ Pro nastavení úplného a krátkého názvu měnových jednotek a podjednotek p
    |       <strong>Spojka 'a' mezi jednotkami a podjednotkami</strong>       |                                     Zvolte tuto možnost, chcete-li vytisknout spojku „a“ mezi jednotkami a podjednotkami. Například částka LTL 100,20 se zobrazí na fakturách nebo v sestavách jako 100 litas and 20 centas.                                      |
    |       <strong>Rod</strong>       |  Vyberte **Mužský**, **Ženský** nebo **Střední**. Tento parametr může ovlivnit text skloňování částky, který se zobrazuje v textu místního jazyka na pokladním dokladu. Pokud například nastavíte **Rod** pro měnu EUR jako **Střední**, bude částka 1,01 EUR zapsána v českém jazyce na pokladním dokladu jako *Jedno euro 01 cent*.  |
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
 
 

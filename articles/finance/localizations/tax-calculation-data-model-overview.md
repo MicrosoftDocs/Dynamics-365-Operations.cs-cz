@@ -3,7 +3,7 @@ title: Datový model pro výpočet daně
 description: Toto téma poskytuje informace o daňovém datovém modelu a o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864253"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985959"
 ---
 # <a name="tax-calculation-data-model"></a>Datový model pro výpočet daně
 
 Toto téma poskytuje informace o tom, jak jsou hodnoty polí každého datového modelu určeny kontextem transakcí výpočtu daně.
 
-*Daňový datový model* se skládá z polí, která jsou vyžadována pro daňové výpočty. Společnost Microsoft poskytuje soubor *datový model výpočtu daně*, který zahrnuje pole záhlaví a řádková pole transakčních dokumentů v aplikaci Finance and Operations. Pole, která jsou definována v datovém modelu výpočtu daně, jsou dostupné sloupce tabulek pravidel použitelnosti v konfiguraci konfigurace funkce výpočtu daně.
+*Daňový datový model* se skládá z polí, která jsou vyžadována pro daňové výpočty. Společnost Microsoft poskytuje soubor *datový model výpočtu daně*, který zahrnuje pole záhlaví a řádková pole transakčních dokumentů v aplikaci Finance a Operace. Pole, která jsou definována v datovém modelu výpočtu daně, jsou dostupné sloupce tabulek pravidel použitelnosti v konfiguraci konfigurace funkce výpočtu daně.
 
 > [!NOTE] 
 > Některé uzly, které jsou definovány v datovém modelu, jako například **ID záznamu** a **ID tabulky**, slouží pro technické účely. Nejsou k dispozici sloupce v konfiguraci funkce výpočtu daně.
@@ -55,7 +55,7 @@ Můžete si také zobrazit datový model výpočtu daně a dostupné sloupce v t
 
     [![Správa sloupců.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datový model výpočtu daně je integrován s aplikacemi Finance and Operations. Při každé transakci, která souvisí s výpočtem daně, se shromažďují hodnoty polí definovaných v tabulkách pravidel použitelnosti a odesílají se službě výpočtu daně k výpočtu. Ve verzi 40.46 je k dispozici 57 předdefinovaných datových modelů pro následující typy transakcí: nákupní objednávky, prodejní objednávky, převodní objednávky, nákupní požadavky, žádosti o cenové nabídky a prodejní nabídky.
+Datový model výpočtu daně je integrován s aplikacemi Finance a Operace. Při každé transakci, která souvisí s výpočtem daně, se shromažďují hodnoty polí definovaných v tabulkách pravidel použitelnosti a odesílají se službě výpočtu daně k výpočtu. Ve verzi 40.46 je k dispozici 57 předdefinovaných datových modelů pro následující typy transakcí: nákupní objednávky, prodejní objednávky, převodní objednávky, nákupní požadavky, žádosti o cenové nabídky a prodejní nabídky.
 
 Do polí v záhlaví transakce lze zahrnout třicet jedna datových modelů. Ne všechna pole jsou však použitelná pro všechny typy transakcí. Následující tabulka ukazuje, která pole záhlaví jsou k dispozici pro konkrétní typy transakcí. V některých případech musí být mapování polí určeno předdefinovanou logikou. Logika je případně k dispozici.
 

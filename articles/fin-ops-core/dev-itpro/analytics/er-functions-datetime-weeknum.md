@@ -2,7 +2,7 @@
 title: Funkce el. výkaznictví WEEKNUM
 description: Toto téma obsahuje obecné informace o použití funkce WEEKNUM elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 01/15/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: fe36d4142b6e4922e2cbca09bb0ca9f68f6680a0
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37e62b32896e2030b3322a89ac4acdd6c18d5e3c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891337"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982170"
 ---
 # <a name="weeknum-er-function"></a>Funkce el. výkaznictví WEEKNUM
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Funkce `WEEKNUM` vrátí hodnotu typu *[celé číslo](er-formula-supported-data-types-primitive.md#integer)*, která představuje týden v roce a zahrnuje zadanou hodnotu *[Datum](er-formula-supported-data-types-primitive.md#date)*. Výpočet je založen na pravidlech závislých na jazykové verzi, která definují kalendářní týden a první den v týdnu.
 

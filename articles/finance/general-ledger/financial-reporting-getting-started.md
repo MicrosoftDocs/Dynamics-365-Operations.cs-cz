@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486963"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983970"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s finančním výkaznictvím 
 
@@ -148,7 +146,7 @@ Můžete vytvořit neomezený počet stromů výkaznictví k zobrazování dat v
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Aktualizujte verzi Finančního výkaznictví prostřednictvím slipstreamingu
 
-Aplikace Finance and Operations se aktualizují každý měsíc. Finanční výkaznictví však nemusí být takto často aktualizováno. Zákazníci mají navíc více možností, jak implementovat aktualizace aplikací Finance and Operations. Automaticky se nainstalují aktualizace Finančního výkaznictví. Finanční výkaznictví má určenou verzi, která se otvírá v zákaznickém prostředí při implementaci aktualizace služby, při zahájení odstávky nebo když je prostředí zákazníka v režimu Údržba. Tento proces je známý jako *slipstreaming* nebo *true-up*, protože všechny zákaznické implementace jsou nastaveny na stejnou verzi Finančního výkaznictví.
+Aplikace Finance a Operace jsou aktualizovány každý měsíc. Finanční výkaznictví však nemusí být takto často aktualizováno. Zákazníci mají navíc více možností, jak implementovat aktualizace aplikací Finance a Operace. Automaticky se nainstalují aktualizace Finančního výkaznictví. Finanční výkaznictví má určenou verzi, která se otvírá v zákaznickém prostředí při implementaci aktualizace služby, při zahájení odstávky nebo když je prostředí zákazníka v režimu Údržba. Tento proces je známý jako *slipstreaming* nebo *true-up*, protože všechny zákaznické implementace jsou nastaveny na stejnou verzi Finančního výkaznictví.
 
 Změny, které jsou vydány v každé verzi, najdete v tématu [Co je nového nebo co se změnilo v Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Seznam aktualizací platformy a oprav chyb najdete u každé verze v sekci „Další zdroje“ v dolní části stránky.
 

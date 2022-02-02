@@ -1,24 +1,23 @@
 ---
 title: Přehled – Česká republika
 description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
-author: ShylaThompson
-ms.date: 09/02/2020
-ms.topic: article
+author: kfend
+ms.date: 01/18/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Czech Republic
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5e6abb9197173f13bc2ddfe0be13aa4d2bcf37dc
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 7900adae2ae0c011d63ffaff6c3154b1cbbbe05a
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952429"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007561"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -56,7 +55,10 @@ Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automat
 
 Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účtovány ve stejnou dobu. V případě kladných transakcí daně z prodeje je datum registru DPH nastaveno na datum registru DPH ze stránky zaúčtování faktury a směrování daně z prodeje je **DPH na vstupu**. V případě záporných transakcí daně z prodeje je datum registru DPH nastaveno na datum dokumentu a směrování daně z prodeje je **DPH na výstupu**.
 
-## <a name="credit-note-on-cash-discount"></a>Dobropis na platební slevu
+## <a name="intrastat-declaration"></a>Prohlášení Intrastat
+Informace o českém hlášení Intrastat viz [Český intrastat](emea-cze-intrastat.md).
+
+## <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Dobropis na platební slevu](emea-cze-credit-note-cash-discount.md).
 
 ## <a name="split-periods-in-periodic-journals"></a>Rozdělení období v periodických denících

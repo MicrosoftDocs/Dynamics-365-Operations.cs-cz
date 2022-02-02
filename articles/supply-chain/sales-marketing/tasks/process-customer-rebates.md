@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 355ca6b8a06b15b68e0fd6236999b4e64a83bf2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573338"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969080"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generování a zpracování rabatů odběratelů
 
@@ -69,7 +69,7 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
 2. Klikněte na možnost **Kumulovat**.
 3. V poli **Odběratel** zadejte nebo vyberte hodnotu.
 4. V poli **Počáteční datum** vyberte aktuální datum.
-5. Klikněte na tlačítko **OK**. Po spuštění funkce **Kumulovat** se provede úprava odhadu částky nároku zohledňující skutečnost, že je celkový objem prodeje odběratele za příslušné období vyšší než při prvním generování rabatu. Vzhledem k tomu, že celkové nakoupené množství dosáhlo počtu 100 jednotek, odběratel nyní má nárok na 40 USD za jednotku (podle druhé množstevní kategorie smlouvy) nebo 400 USD celkového rabatu. Rozdíl je zaznamenán jako nová "úprava" nároku pro dalších 800 USD. Stav nároků na rabat, které byly zahrnuty v kumulované aktualizaci, je nyní nastaven na hodnotu Vypočteno. 
+5. Klikněte na tlačítko **OK**. Po spuštění funkce **Kumulovat** se provede úprava odhadu částky nároku zohledňující skutečnost, že je celkový objem prodeje odběratele za příslušné období vyšší než při prvním generování rabatu. Vzhledem k tomu, že celkové nakoupené množství dosáhlo počtu 100 jednotek, odběratel nyní má nárok na 40 USD za jednotku (podle druhé množstevní kategorie smlouvy) nebo 4,000 USD celkového rabatu. Rozdíl je zaznamenán jako nová "úprava" nároku pro dalších 800 USD. Stav nároků na rabat, které byly zahrnuty v kumulované aktualizaci, je nyní nastaven na hodnotu Vypočteno. 
 6. V seznamu označte všechny řádky.
 7. Klikněte na **Schválit**.
 8. Klikněte na možnost **Zpracovat**.

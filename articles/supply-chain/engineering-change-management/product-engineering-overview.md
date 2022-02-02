@@ -2,23 +2,22 @@
 title: Přehled správy technických změn (obsahuje video)
 description: Toto téma poskytuje přehled správy technických změn, která vám pomůže plánovat a spravovat verzování produktu a spravovat životní cykly produktu a technických změn.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952591"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985205"
 ---
 # <a name="engineering-change-management-overview"></a>Přehled správy technických změn
 
@@ -39,9 +38,9 @@ Správa technických změn vám pomáhá plánovat a spravovat verzování produ
 - Požadavky na technické změny, které jsou podporovány pracovními postupy
 - Příkazy k technickým změnám, které jsou podporovány pracovními postupy
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Předchozí video ([Možnosti správy změn v Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) je součástí [seznamu videí o Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), které jsou k dispozici na YouTube.
+Předchozí video ([Možnosti správy změn v Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) je součástí seznamu videí o [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), které jsou k dispozici na YouTube.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Zapněte pro svůj systém funkce správy technických změn
 
@@ -71,7 +70,9 @@ Správci mohou zapnout konfigurační klíče provedením následujících krok�
 
 1. Chcete-li také použít dimenzi verze, zaškrtněte také políčko **Dimenze produktu - verze**. (Toto zaškrtávací políčko je dále v seznamu, není vnořeno pod uzlem **Správa technických změn**.)
 1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Spusťte synchronizaci databáze a ujistěte se, že jsou konfigurační klíče správně povoleny.
+1. Databáze musí být synchronizována, aby bylo zajištěno, že jsou konfigurační klíče správně povoleny. Proveďte jeden z následujících kroků v závislosti na typu prostředí, na kterém pracujete:
+    - **Pro prostředí úrovně 1 (vývoj)**: Otevřete svůj projekt v Microsoft Visual Studio a poté vyberte **Dynamics 365 \> Synchronizovat databázi \> Synchronizovat**.
+    - **Pro prostředí úrovně 2 (a vyšší)**: Databáze se automaticky synchronizuje poté, co prostředí přepnete do režimu údržby a odejdete z něj, takže tento krok můžete přeskočit.
 
 > [!IMPORTANT]
 > Od dubna 2022 budou licenční klíče pro jak **Správu technických změn**, tak pro **Rozměr produktu - verze** ve výchozím nastavení povoleny pro všechny nové instalace, ale v případě potřeby je stále budete moci deaktivovat.
