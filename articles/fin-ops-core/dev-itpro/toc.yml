@@ -14,6 +14,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
+                - name: Nástroj Platform Updates pro verzi 10.0.25 (duben 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Nástroj Platform Updates pro verzi 10.0.24 (únor 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Nástroj Platform Updates pro verzi 10.0.23 (leden 2022)
@@ -430,6 +432,8 @@
                   href: deployment/install-deployable-package.md
                 - name: Odinstalace balíčku
                   href: deployment/uninstall-deployable-package.md
+                - name: Spouštění vlastních X++ skriptů s nulovými prostoji
+                  href: deployment/run-custom-scripts.md
                 - name: Řešení potíží s použitím balíčku
                   href: deployment/deployable-package-troubleshooting.md
             - name: Nasazení vlastní nápovědy
@@ -854,6 +858,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: Filtrování SysTest pomocí třídy a atributů metody
                   href: perf-test/systest-filtering.md
+                - name: Atribut SysTestRow pro testování více hodnot
+                  href: perf-test/systest-row.md
                 - name: Knihovna akceptačních testů
                   items:
                     - name: Zdroje knihovny akceptačních testů

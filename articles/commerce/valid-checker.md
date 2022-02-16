@@ -2,7 +2,7 @@
 title: Ověření transakcí obchodu pro výpočet výkazu
 description: V tomto tématu je popsána funkce pro ověření transakcí obchodu v Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924764"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087442"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Ověření transakcí obchodu pro výpočet výkazu
 
@@ -51,7 +51,7 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 
 V následující tabulce jsou uvedena pravidla ověření hlavičky transakcí, která jsou kontrolována oproti hlavičce maloobchodních transakcí před předáním těchto transakcí do zaúčtování výkazu.
 
-| Název | Popis |
+| Pravidlo | Popis |
 |-------|-------------|
 | Obchodní datum | Toto pravidlo ověřuje, že obchodní datum transakce je spojeno s otevřeným fiskálním obdobím v hlavní knize. |
 | Zaokrouhlování měn | Toto pravidlo ověřuje, že částky transakce jsou zaokrouhleny podle pravidla pro zaokrouhlování měn. |
@@ -72,7 +72,7 @@ V následující tabulce jsou uvedena pravidla ověření hlavičky transakcí, 
 
 V následující tabulce jsou uvedena pravidla ověření řádku transakcí, která jsou kontrolována oproti podrobnostem řádku maloobchodních transakcí před předáním těchto transakcí do zaúčtování výkazu.
 
-| Název | Popis |
+| Pravidlo | Popis |
 |-------|-------------|
 | Čárový kód | Toto pravidlo ověřuje, že v databázi existují všechny čárové kódy položek, které jsou použity na řádcích transakce. |
 | Řádky poplatku | Toto pravidlo ověřuje, že součet vypočtené částky a částky osvobozené od daně v řádcích poplatků se rovná původní vypočítané částce. |

@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (duben 2022)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (únor 2022)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (leden 2022)
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videa
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Glosář
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Výukový katalog
               items:
                 - name: Domovská stránka Výukový katalog
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Konfigurace mobilní aplikace Warehouse Management mobile pro cloudové a hraniční jednotky škálování
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Úprava skladových zásob
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Vytvoření konfigurací pro import dat z externího XML souboru
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Import dat z ručně vybraných souborů v režimu dávky
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace importu dat v režimu dávky ze souborů umístěných na platformě SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Import souborů v XML formátu
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Aktualizace aplikace 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aktualizace aplikace 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aktualizace aplikace 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
@@ -1687,16 +1695,20 @@
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: "Čisté požadavky a\_informace o\_doložení u\_optimalizace plánování"
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: Schválit plánované objednávky
+                - name: Schválení plánovaných objednávek
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Potvrdit plánované objednávky
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Zjednodušené plánované objednávky
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Plánování se záporným množstvím na skladě
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Zobrazení historie pánů a plánovacích protokolů
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Zrušení plánovací úlohy
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Zprávy akce
+                  href: master-planning/action-messages.md
                 - name: Řešení potíží s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Rozšiřitelnost optimalizace plánování
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Použití sledování pro rozpad
                   href: master-planning/trace-explosion.md
-                - name: Zprávy akce
-                  href: master-planning/action-messages.md
                 - name: Sledování běhu hlavního plánování
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Vytvoření rozvrhu pro pracoviště
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: K problémům se zpracováním dochází po instalaci úlohy skladu škálovacích jednotek
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Výzva k automatické rezervaci čísla dávky se zobrazuje i u dostupných zásob
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Práce vyzvedávání nelze odblokovat kvůli nedokončeným doplňovacím pracím
@@ -3907,3 +3919,5 @@
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
