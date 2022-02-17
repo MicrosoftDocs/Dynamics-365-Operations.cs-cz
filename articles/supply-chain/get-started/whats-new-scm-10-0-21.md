@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777930"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075292"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -39,7 +39,6 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 | Zásoby&nbsp;a&nbsp;logistika | [Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kódy důvodů pro inventury zásob](../warehousing/reason-codes-for-counting-journals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zásady exportu dat odkazující na prodejní nabídku](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Určete, zda změny dat odkazovaných v nabídkách způsobí zahrnutí těchto nabídek (nebo řádků) do dalšího přírůstkového exportu. Pokud se rozhodnete nezahrnout tyto nabídky nebo řádky, vaše přírůstkové exporty poběží rychleji.<br><br>Tato funkce přidává nastavení s názvem **Vynechat data odkazovaná v prodejních nabídkách při sledování změn** do stránky **Parametry pohledávek**. |
 | Zásoby&nbsp;a&nbsp;logistika | [Zapečetěné nabídky](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Zapečetěné nabídky pro požadavky na nabídku](../procurement/sealed-bidding.md) |
-| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Předběžná rezervace pro doplněk Viditelnost zásob](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezervace viditelnosti zásob](../inventory/inventory-visibility-reservations.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Vylepšení odpočtů a skutečné hmotnosti ve správě rabatu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Správa odpočtů pomocí pracovní plochy odpočtu](../rebate-management/deduction-workbench.md )<br><br>[Zpracování, kontrola a zaúčtování rabatu](../rebate-management/process-review-post.md)<br><br>[Obchody správy rabatu](../rebate-management/rebate-management-deals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Pokyny ke kroku aplikace skladu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
@@ -138,9 +137,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.21 aplikací Finance and Operations (říjen 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.21 finančních a provozních aplikací (říjen 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

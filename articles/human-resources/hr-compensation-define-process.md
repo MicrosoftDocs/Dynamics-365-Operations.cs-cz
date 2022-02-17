@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431086"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071415"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definovat proces kompenzací a vypočítat výsledky
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro za
     * Aktivní datum transakce je datum, kdy mají být uplatněny nové míry kompenzací. Mnoho společností zahrnuje několik měsíců mezi jejich koncem cyklu a časem uplatnění nových kurzů kompenzací. Zpracování a kontrola nové kompenzace vyžaduje další čas.  
 8. Zadejte datum do pole **Aktivní datum transakce**.
     * Datum časového okamžiku slouží pro plány variabilní kompenzace, které určují částku odměny zaměstnance na základě jeho míry kompenzace v daném okamžiku.  
-    * Fixní mzda v poměru k datu zařazení je použita s plány fixní kompenzace s procentním pravidlem zařazení.  Zaměstnanci, kteří jsou přijati mezi počátkem cyklu a fixní mzda v poměru k datu zařazení obdrží 100 % svého vypočteného zvýšení kompenzace namísto procenta navýšení.  
+    * Fixní mzda v poměru k datu zařazení je použita s plány fixní kompenzace s pravidlem zařazení **Procento**. Zaměstnanci, kteří jsou přijati mezi počátkem cyklu a fixní mzda v poměru k datu zařazení obdrží 100 % svého vypočteného zvýšení kompenzace namísto procenta navýšení.  
 9. Do pole **Fixní mzda v poměru k datu zařazení** zadejte datum.
     * Termín kontroly je datum, dokdy musí zkontrolovat všechny výsledky procesu tak, aby mohly být načteny do záznam kompenzace zaměstnance před aktivním datem transakce. Toto pole slouží pouze k informačním účelům.  
 10. Zadejte datum do pole **Zkontrolovat termín**.
 11. Klikněte na tlačítko **Uložit**.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Nastavte plány kompenzace a akce pro proces kompenzace
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Nastavení plánů kompenzace a akcí pro proces kompenzace
 1. Klikněte na možnost **Nastavení**.
     * Stránku **Nastavení** lze použít k výběru, které plány mají být zpracovány jako součást tohoto procesu kompenzace a které akce se mají provést pro každý plán.  
 2. V poli **Plán** zadejte nebo vyberte hodnotu.
@@ -56,7 +59,7 @@ Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro za
 6. Klikněte na tlačítko **Přidat**.
 7. V poli **Akce** vyberte typ **významu** akce.
     * Akce kompenzace může být „svázána“ dohromady pomocí pole **Použít předchozí výsledek** k označení, zda vybraná akce má použít základní mzdy zaměstnanců nebo výsledek předchozí akce jako výchozí bod pro výpočet této akce.  
-8. Vyberte možnost **Ano** v poli Použít předchozí výsledek.
+8. Vyberte možnost **Ano** v poli **Použít předchozí výsledek**.
 9. Klikněte na tlačítko **Přidat**.
 10. V poli **Akce** vyberte pro akci typ **Obecné**.
     * Různé typy akcí kompenzací umožňují povolit různá pole. Pro hlavní typ akce kompenzace lze zadat procento zvýšení nebo částku zvýšení.  
@@ -85,7 +88,7 @@ Procesy kompenzace slouží k určení částek nové kompenzace a odměn pro za
 1. Klikněte na **výsledky zpracování**.
 2. Klikněte na **Výsledky zaměstnance**.
 3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-4. Rozbalte část Fixní kompenzace.
+4. Rozbalte část **Fixní kompenzace**.
     * Chcete-li zobrazit výsledky v procesu, rozbalte pevné záložky. Pokud byla označena možnost **Povolení doporučení** pro akci kompenzace, budou pro tuto akci povolena pole **Doporučení**.  
 5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Výsledky lze pro jednoho zaměstnance zobrazit kliknutím na tlačítko **Zobrazit výsledky**.  

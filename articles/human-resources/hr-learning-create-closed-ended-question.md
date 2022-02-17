@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465166"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071427"
 ---
 # <a name="create-a-closed-ended-question"></a>Vytvoření dotazu s uzavřeným koncem
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,10 +37,10 @@ Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si res
 2. Klepněte na možnost **Nový**.
 3. Zadejte hodnotu do pole **Skupina odpovědí**.
 4. Zadejte hodnotu do pole **Popis**.
-    * Pomocí funkci Náhodně můžete náhodně umístit odpovědi v jiném pořadí pokaždé, když je pro otázku použita skupina odpovědí.  
+    * Pomocí funkci **Náhodně** můžete náhodně umístit odpovědi v jiném pořadí pokaždé, když je pro otázku použita skupina odpovědí.  
 5. Klikněte na tlačítko **Odpověď**.
 6. Klepněte na možnost **Nový**.
-    * Číselná řada určuje pořadí, v němž se zobrazují odpovědí, pokud není pro skupinu odpovědí vybrána možnost Náhodně.  
+    * Číselná řada určuje pořadí, v němž se zobrazují odpovědí, pokud není pro **skupinu odpovědí** vybrána možnost **Náhodně**.  
     * Body můžete přidělit k odpovědím a použít je pro hodnocení dotazníku.  
 7. Do pole **Body** zadejte číslo.
     * Správnou odpověď můžete nechat označit a určit tak, že vybraná odpověď je správná. Tento údaj lze použít pro hodnocení dotazníku.  
@@ -61,8 +64,8 @@ Dotazy s uzavřeným koncem umožňují poskytovat možnosti, ze kterých si res
 ## <a name="create-the-question"></a>Vytvoření dotazu
 1. Jděte na **Dotazník** > **Návrh** > **Otázky**.
 2. Klepněte na možnost **Nový**.
-3. Pole Typ slouží k seskupení příbuzných dotazů.
-    * Pro dotazy s uzavřeným koncem můžete použít typy vstupu, jako např. Zaškrtávací políčko, Alternativní tlačítko nebo Pole se seznamem.  
+3. Pole **Typ** slouží k seskupení příbuzných dotazů.
+    * Pro dotazy s uzavřeným koncem můžete použít typy vstupu, jako např. **Zaškrtávací políčko**, **Alternativní tlačítko** nebo **Pole se seznamem**.  
 4. Vyberte možnost v poli **Typ vstupu**.
 5. V poli **Skupina odpovědí** zadejte nebo vyberte hodnotu.
 6. Zadejte hodnotu do pole **Text**.

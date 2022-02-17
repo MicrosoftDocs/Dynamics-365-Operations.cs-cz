@@ -2,7 +2,7 @@
 title: Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 description: Toto téma vysvětluje, jak zkontrolovat konfigurované komponenty elektronického výkaznictví (ER), aby se předešlo problémům za běhu, ke kterým může dojít.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488107"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074784"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrola konfigurované komponenty ER zabraňující problémům za běhu
 
 [!include[banner](../includes/banner.md)]
 
-Každá konfigurovaná komponenta pro [formátování](general-electronic-reporting.md#FormatComponentOutbound) a [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) [elektronického výkaznictví (ER)](general-electronic-reporting.md) může projít [ověřením platnosti](er-fillable-excel.md#validate-an-er-format) v době návrhu. Během tohoto ověřování se provádí kontrola konzistence, která pomáhá předcházet výskytu problémů za běhu, jako jsou chyby spuštění a snížení výkonu. U každého nalezeného problému poskytuje kontrola cestu k problematickému prvku. U některých problémů je k dispozici automatická oprava.
+Každá konfigurovaná komponenta pro [formátování](er-overview-components.md#format-components-for-outgoing-electronic-documents) a [mapování modelu](er-overview-components.md#model-mapping-component) [elektronického výkaznictví (ER)](general-electronic-reporting.md) může projít [ověřením platnosti](er-fillable-excel.md#validate-an-er-format) v době návrhu. Během tohoto ověřování se provádí kontrola konzistence, která pomáhá předcházet výskytu problémů za běhu, jako jsou chyby spuštění a snížení výkonu. U každého nalezeného problému poskytuje kontrola cestu k problematickému prvku. U některých problémů je k dispozici automatická oprava.
 
 Ve výchozím nastavení se v následujících případech ověření automaticky použije u konfigurace ER, která obsahuje dříve zmíněné komponenty ER:
 
@@ -236,6 +236,15 @@ Následující tabulka poskytuje přehled inspekcí, které ER poskytuje. Dalš�
 <td>Chyba</td>
 <td>Existují více než dvě komponenty rozsahu bez replikace. Odstraňte nepotřebné součásti.</td>
 </tr>
+<tr>
+<td><a href='#i18'>Spustitelnost výrazu s funkcí ORDERBY</a></td>
+<td>Proveditelnost</td>
+<td>Chyba</td>
+<td>
+<p>Výraz seznamu funkce ORDERBY není dotazovatelný.</p>
+<p><b>Chyba za běhu:</b> Řazení není podporováno. Chcete-li získat další podrobnosti o chybě, ověřte konfiguraci.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ Následující kroky ukazují, jak může k tomuto problému dojít.
 8. Pojmenujte nové vnořené pole jako **$AccNumber** a konfigurujte jej tak, aby obsahovalo výraz `TRIM(Vendor.AccountNum)`.
 9. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** stránku a ověřte, zda výraz `FILTER(Vendor, Vendor.AccountNum="US-101")` ve zdroji dat **Vendor** lze používat v dotazech.
 
-    ![Ověření výrazu lze zkontrolovat dotazem na stránce Návrhář mapování modelů.](./media/er-components-inspections-04.gif)
+    ![Ověření výrazu, který má funkci FILTER, lze zkontrolovat dotazem na stránce Návrhář mapování modelů.](./media/er-components-inspections-04.gif)
 
 10. Všimněte si, že dojde k chybě ověření, protože zdroj dat **Vendor** obsahuje vnořené pole typu **Vypočítané pole**, které neumožňuje přeložit výraz **FilteredVendor** zdroje dat na přímý příkaz SQL.
 
@@ -671,19 +680,19 @@ Následující obrázek ukazuje chybu za běhu, která nastane, pokud ignorujete
 
 ![Chyba za běhu, ke které dojde během provádění mapování formátu na stránce Návrhář formátů.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>Automatické řešení
+### <a name="automatic-resolution"></a>Automatické řešení
 
 Není k dispozici žádná možnost automatického řešení tohoto problému.
 
-### <a name=&quot;manual-resolution&quot;></a>Ruční řešení
+### <a name="manual-resolution"></a>Ruční řešení
 
-#### <a name=&quot;option-1&quot;></a>Možnost 1
+#### <a name="option-1"></a>Možnost 1
 
 Odstraňte příznak **Mezipaměť** ze zdroje dat **Vendor**. Zdroj dat **FilteredVendor** zdroj dat se poté stane spustitelným, ale zdroj dat **Vendor**, na který se odkazuje v tabulce VendTable, bude přístupný pokaždé, když je volán zdroj dat **FilteredVendor**.
 
-#### <a name=&quot;option-2&quot;></a>Možnost 2
+#### <a name="option-2"></a>Možnost 2
 
-Změňte výraz zdroje dat **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. V tomto případě bude ke zdroji dat **Vendor**, na který se odkazuje v tabulce VendTable, přistupováno pouze během prvního volání zdroje dat **Vendor**. Výběr záznamů se však provede v paměti. Tento přístup proto může způsobit špatný výkon.
+Změňte výraz zdroje dat **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum="US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. V tomto případě bude ke zdroji dat **Vendor**, na který se odkazuje v tabulce VendTable, přistupováno pouze během prvního volání zdroje dat **Vendor**. Výběr záznamů se však provede v paměti. Tento přístup proto může způsobit špatný výkon.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Chybějící vazba
 
@@ -892,6 +901,47 @@ Není k dispozici žádná možnost automatického řešení tohoto problému.
 #### <a name="option-1"></a>Možnost 1
 
 Upravte konfigurovaný formát změnou vlastnosti **Směr replikace** u všech nekonzistentních komponent **Excel\\Rozsah**.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Spustitelnost výrazu s funkcí ORDERBY
+
+Integrovaná funkce ER [ORDERBY](er-functions-list-orderby.md) se používá k řazení záznamů zdroje dat ER typu **[Seznam záznamů](er-formula-supported-data-types-composite.md#record-list)**, který je zadán jako argument funkce.
+
+Argumenty funkce `ORDERBY` lze [zadat](er-functions-list-orderby.md#syntax-2) k řazení záznamů tabulek aplikace, pohledů nebo datových entit umístěním jediného volání databáze, které získá seřazená data jako seznam záznamů. Zdroj dat typu **Seznam záznamů** se používá jako argument této funkce a určuje zdroj aplikace pro volání.
+
+ER kontroluje, zda lze navázat přímý dotaz databáze do zdroje dat, na který se odkazuje ve funkci `ORDERBY`. Pokud nelze navázat přímý dotaz, dojde v návrháři mapování modelu ER k chybě ověření. Zpráva, kterou obdržíte, uvádí, že výraz ER obsahující funkci `ORDERBY` nelze spustit za běhu programu.
+
+Následující kroky ukazují, jak může k tomuto problému dojít.
+
+1. Začněte konfigurací komponenty mapování modelu ER.
+2. Přidejte zdroj dat typu **Záznamy tabulky \\ Dynamics 365 for Operations**.
+3. Pojmenujte nový zdroj dat jako **Vendor**. V poli **Tabulka** vyberte **VendTable**, a určete tak, že tento zdroj dat bude požadovat tabulku **VendTable**.
+4. Přidejte zdroj dat typu **Vypočítané pole**.
+5. Pojmenujte nový zdroj dat jako **OrderedVendors** a konfigurujte jej tak, aby obsahoval výraz `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Konfigurace zdrojů dat na stránce návrháře mapování modelů.](./media/er-components-inspections-18-1.png)
+
+6. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** a ověřte, že výraz ve zdroji dat **OrderedVendors** lze používat v dotazech.
+7. Upravte zdroj dat **Vendor** přidáním vnořeného pole typu **Vypočítané pole** a získejte oříznuté číslo účtu dodavatele.
+8. Pojmenujte nové vnořené pole jako **$AccNumber** a konfigurujte jej tak, aby obsahovalo výraz `TRIM(Vendor.AccountNum)`.
+9. Výběrem příkazu **Ověřit** zkontrolujte upravitelnou komponentu mapování modelu na stránce **návrháře mapování modelů** stránku a ověřte, že výraz ve zdroji dat **Vendor** lze používat v dotazech.
+
+    ![Ověření výrazu ve zdroji dat Vendor lze zkontrolovat dotazem na stránce Návrhář mapování modelů.](./media/er-components-inspections-18-2.png)
+
+10. Všimněte si, že dojde k chybě ověření, protože zdroj dat **Vendor** obsahuje vnořené pole typu **Počítané pole**, které neumožňuje přeložit výraz **OrderedVendors** zdroje dat na přímý příkaz databáze. Ke stejné chybě dojde za běhu, pokud chybu ověření ignorujete a vyberete **Spustit** ke spuštění tohoto mapování modelu.
+
+### <a name="automatic-resolution"></a>Automatické řešení
+
+Není k dispozici žádná možnost automatického řešení tohoto problému.
+
+### <a name="manual-resolution"></a>Ruční řešení
+
+#### <a name="option-1"></a>Možnost 1
+
+Místo přidání vnořeného pole typu **Počítané pole** do zdroje dat **Vendor** přidejte vnořené pole **$AccNumber** do zdroje dat **FilteredVendors** a konfigurujte ho tak, aby obsahovalo výraz `TRIM(FilteredVendor.AccountNum)`. Tímto způsobem lze výraz `ORDERBY("Query", Vendor, Vendor.AccountNum)` spustit na úrovni databáze a vypočítat vnořené pole **$AccNumber** později.
+
+#### <a name="option-2"></a>Možnost 2
+
+Změňte výraz zdroje dat **FilteredVendors** z `ORDERBY("Query", Vendor, Vendor.AccountNum)` na `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Nedoporučujeme měnit výraz pro tabulku, která obsahuje velké množství dat (transakční tabulka), protože budou načteny všechny záznamy a řazení požadovaných záznamů bude provedeno v paměti. Tento přístup proto může způsobit špatný výkon.
 
 ## <a name="additional-resources"></a>Další prostředky
 

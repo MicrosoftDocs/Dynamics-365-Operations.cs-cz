@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
-ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "7917723"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061829"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrace datového typu měny pro dvojitý zápis
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Můžete zvýšit počet desetinných míst, která jsou podporována pro hodnoty měny, maximálně na 10. Výchozí limit jsou čtyři desetinná místa. Zvýšením počtu desetinných míst pomáháte zabránit ztrátě dat při synchronizaci dat pomocí duálního zápisu. Zvýšení počtu desetinných míst je změna typu opt-in. Chcete-li jej implementovat, musíte požádat o pomoc společnost Microsoft.
 
@@ -29,7 +29,7 @@ Proces změny počtu desetinných míst má dva kroky:
 1. Žádost o migraci od společnosti Microsoft.
 2. Změna počtu desetinných míst v Dataverse.
 
-Aplikace Finance and Operations a Dataverse musí podporovat stejný počet desetinných míst v hodnotách měny. Jinak může dojít ke ztrátě dat, když jsou tyto informace synchronizovány mezi aplikacemi. Proces migrace překonfiguruje způsob uložení hodnot měny a směnného kurzu, ale nezmění žádná data. Po dokončení migrace lze zvýšit počet desetinných míst pro měnové kódy a ceny a data, která uživatelé zadávají a zobrazují, mohou mít větší desetinnou přesnost.
+Finanční a provozní aplikace a Dataverse musí podporovat stejný počet desetinných míst v hodnotách měny. Jinak může dojít ke ztrátě dat, když jsou tyto informace synchronizovány mezi aplikacemi. Proces migrace překonfiguruje způsob uložení hodnot měny a směnného kurzu, ale nezmění žádná data. Po dokončení migrace lze zvýšit počet desetinných míst pro měnové kódy a ceny a data, která uživatelé zadávají a zobrazují, mohou mít větší desetinnou přesnost.
 
 Migrace je volitelná. Pokud byste mohli mít podporu pro více desetinných míst, doporučujeme zvážit migraci. Organizace, které nevyžadují hodnoty, které mají více než čtyři desetinná místa, nemusí migrovat.
 
@@ -37,7 +37,7 @@ Migrace je volitelná. Pokud byste mohli mít podporu pro více desetinných mí
 
 Úložiště pro existující měnové sloupce v Dataverse nemůže podporovat více než čtyři desetinná místa. Proto během procesu migrace jsou hodnoty měny zkopírovány do nových interních sloupců v databázi. Tento proces probíhá nepřetržitě, dokud nebudou migrována všechna data. Interně na konci migrace nové typy úložišť nahrazují staré typy úložišť, ale hodnoty dat se nezmění. Sloupce měny pak mohou podporovat až 10 desetinných míst. Během procesu migrace lze Dataverse nadále používat bez přerušení.
 
-Současně jsou měnové kurzy upravovány tak, aby podporovaly až 12 desetinných míst místo současného limitu 10. Tato změna je nutná, aby počet desetinných míst byl stejný v aplikaci Finance and Operations a Dataverse.
+Současně jsou měnové kurzy upravovány tak, aby podporovaly až 12 desetinných míst místo současného limitu 10. Tato změna je nutná, aby počet desetinných míst byl stejný ve finanční a provozní aplikaci a Dataverse.
 
 Migrace nezmění žádná data. Po převodu sloupců měny a směnného kurzu mohou správci nakonfigurovat systém tak, aby používal až 10 desetinných míst pro měnové sloupce zadáním počtu desetinných míst pro každou měnu transakce a pro stanovení ceny.
 

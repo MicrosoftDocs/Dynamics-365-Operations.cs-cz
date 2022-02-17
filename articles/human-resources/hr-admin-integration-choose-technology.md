@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414707"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065034"
 ---
 # <a name="choose-a-data-integration-technology"></a>Volba technologie integrace dat
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Toto téma obsahuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
 
@@ -68,7 +71,7 @@ Tabulky služby Dataverse a přidružená rozhraní API jsou nejlepší možnos
 
 ### <a name="dmfdixf-entities"></a>Entity DMF/DIXF
 
-Human Resources, postavené převážně na stejné platformě jako aplikace Finance and Operations, poskytují [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF je také znám jako Data Import Export Framework (DIXF). Modul Human Resources poskytuje sadu datových entit, které lze použít pro import a export dat Human Resources. Zatímco tabulky služby Dataverse jsou preferovaným rozhraním integrace dat pro aplikaci Human Resources, entity DMF jsou nadále za určitých okolností užitečné. Jedná se například o tyto případy:
+Human Resources, postavené převážně na stejné platformě jako finanční a provozní aplikace, poskytují [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF je také znám jako Data Import Export Framework (DIXF). Modul Human Resources poskytuje sadu datových entit, které lze použít pro import a export dat Human Resources. Zatímco tabulky služby Dataverse jsou preferovaným rozhraním integrace dat pro aplikaci Human Resources, entity DMF jsou nadále za určitých okolností užitečné. Jedná se například o tyto případy:
 
 - Tabulky služby Dataverse dosud nejsou k dispozici.
 
@@ -111,7 +114,7 @@ BYOD je vhodné pro řešení vykazování, integraci dat a kombinace více dato
 
 ### <a name="odata-enabled-entities"></a>Entity s povolenou službou OData
 
-Většina entit DMF je také povolena pro přístup prostřednictvím datové služby (OData) aplikací Human Resources. Dokumentace, která je poskytována pro [službu OData Finance and Operations](/dynamics365/unified-operations/dev-itpro/data-entities/odata), se vztahuje na Human Resources s výjimkou vytváření vlastních entit vystavených OData.
+Většina entit DMF je také povolena pro přístup prostřednictvím datové služby (OData) aplikací Human Resources. Dokumentace, která je poskytována pro [službu OData Finance a Operace](/dynamics365/unified-operations/dev-itpro/data-entities/odata), se vztahuje na Human Resources s výjimkou vytváření vlastních entit vystavených OData.
 
 I když je služba Dataverse a implementace služby OData poskytovaná službou Dataverse (prostřednictvím [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) preferována před datovou službou aplikace Human Resources, datová služba aplikace Human Resources má momentálně úplnější pokrytí entit pro data aplikace Human Resources.
 
@@ -129,7 +132,7 @@ Projekty Data Integrator jsou vhodné pro dávkové integrace Dataverse. Jedná 
 
 ### <a name="power-query"></a>Power Query
 
-Služba Data Integrator podporuje [nástroj Power Query](/power-query/power-query-what-is-power-query) prostřednictvím své [funkce Advanced Query](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query poskytuje výkonné, flexibilní filtrování a transformaci dat včetně bohatého jazyka M formula language. Power Query bude pravděpodobně dobře znám v případě, že jste vytvořili sestavy Power BI.
+Služba Data Integrator podporuje nástroj [Power Query](/power-query/power-query-what-is-power-query) prostřednictvím své [funkce Advanced Query](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query poskytuje výkonné, flexibilní filtrování a transformaci dat včetně bohatého jazyka M formula language. Power Query bude pravděpodobně dobře znám v případě, že jste vytvořili sestavy Power BI.
 
 ## <a name="deciding-on-an-integration-technology"></a>Rozhodování o technologii integrace
 

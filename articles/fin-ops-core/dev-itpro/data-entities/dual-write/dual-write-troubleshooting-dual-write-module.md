@@ -1,6 +1,6 @@
 ---
-title: Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v aplikacích Finance and Operations.
+title: Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
+description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v finančních a provozních aplikacích.
 author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 3caf3f18718fd6bee20232a0200d421b9c9ef22c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781191"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061801"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení potíží s modulem duálního zápisu v aplikacích Finance and Operations
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v aplikacích Finance and Operations.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>V aplikaci Finance and Operations nelze načíst modul dvojitého zápisu
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Ve finanční a provozní aplikaci nelze modul dvojího zápisu načíst
 
 Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždice **Dvojího zapisování** v pracovním prostoru **Správa dat**, služba integrace dat je pravděpodobně mimo provoz. Vytvořte lístek podpory pro vyžádání restartu služby Data Integration Service.
 
@@ -49,7 +49,7 @@ Chcete-li tento problém vyřešit, přihlaste se pomocí okna InPrivate v aplik
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Chyba při propojení prostředí pro dvojí zapisování nebo přidání nového mapování tabulky
 
-**Požadovaná role pro opravu problému:** Správce systému v obou aplikacích Finance and Operations a Dataverse.
+**Požadovaná role pro opravu problému**: Správce systému v finančních a provozních aplikacích i prostředí Dataverse.
 
 Při připojování nebo vytváření map se může objevit následující chyba:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Dataverse bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v aplikacích Finance and Operations a prostředí Dataverse může obě prostředí propojit. Přidávat nové mapy tabulky může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
+K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Dataverse bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v finančních a provozních aplikacích a prostředí Dataverse může obě prostředí propojit. Přidávat nové mapy tabulky může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Chyba při zastavení mapování tabulky
 
@@ -82,7 +82,7 @@ Při pokusu o spuštění počáteční synchronizace dat se může zobrazit ná
 Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit tato chybová zpráva. Oprava závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
-+ Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.
++ Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci ve finanční a provozní aplikaci chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Chyba nesouladu verzí a inovace řešení pro dvojí zápis
 

@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782572"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062356"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Poradce při potížích se synchronizací v ostrém provozu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Microsoft Dataverse. Toto téma obsahuje informace, které vám pomohou vyřešit problémy se synchronizací v ostrém provozu.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Azure Active Directory (Azure AD). Každý oddíl vysvětluje, zda jsou vyžadovány určité role nebo konkrétní pověření.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Živá synchronizace ukazuje chybu při vytváření řádku
 
-Může se zobrazit následující chybová zpráva při vytváření řádku v aplikaci Finance and Operations:
+Může se zobrazit následující chybová zpráva při vytváření řádku ve finanční a provozní aplikaci:
 
 *\[{\\"chyba\\":{\\"kód\\":\\"0x80072560\\",\\"zpráva\\":\\"Uživatel není členem organizace.\\"}}\], Vzdálený server vrátil chybu: (403) zakázáno."}}".*
 
@@ -39,27 +39,27 @@ Chcete-li tento problém vyřešit, postupujte podle kroků v [Požadavcích na 
 
 **Požadovaná role pro opravu problému:** správce systému
 
-Může se zobrazit následující chybová zpráva při pokusu o uložení dat v aplikaci Finance and Operations:
+Může se zobrazit následující chybová zpráva při pokusu o uložení dat ve finanční a provozní aplikaci:
 
 *Nelze uložit změny do databáze. Jednotka práce nemůže potvrdit transakci. Nelze zapsat data do entity uoms. Zápisy do UnitOfMeasureEntity se nezdařily. Chybová zpráva Nelze synchronizovat s entitou uoms.*
 
-Chcete-li tento problém vyřešit, musíte zajistit, aby v aplikaci Finance and Operations i Dataverse existovala potřebná referenční data. Pokud například záznam zákazníka, který je součástí aplikace , patří do určité skupiny odběratelů, ujistěte se, že v Dataverse existuje daný záznam skupiny zákazníků.
+Chcete-li tento problém vyřešit, je nutné zajistit, aby ve finanční a provozní aplikaci i Dataverse existovala potřebná referenční data. Pokud například záznam zákazníka, který je součástí aplikace , patří do určité skupiny odběratelů, ujistěte se, že v Dataverse existuje daný záznam skupiny zákazníků.
 
 Pokud existují data na obou místech a potvrdili jste, že problém není související s daty, postupujte následujícím způsobem.
 
-1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
 3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Zpracování chyb oprávnění ke čtení nebo zapisování při vytváření dat v aplikaci Finance and Operations
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Zpracování chyb oprávnění ke čtení nebo zapisování při vytváření dat ve finanční a provozní aplikaci
 
-Může se zobrazit chybová zpráva "špatný požadavek" při vytváření dat v aplikaci Finance and Operations.
+Může se zobrazit chybová zpráva "špatný požadavek" při vytváření dat ve finanční a provozní aplikaci.
 
 ![Příklad chybové zprávy o chybném požadavku.](media/error_record_id_source.png)
 
 Chcete-li tento problém opravit, musíte povolit chybějící oprávnění přiřazením správné role zabezpečení týmu mapované obchodní jednotky Dynamics 365 Sales nebo Dynamics 365 Customer Service, aby bylo možné chybějící oprávnění povolit.
 
-1. V aplikaci Finance and Operations vyhledejte organizační jednotku, která je mapována v sadě Data Integration Connection.
+1. Ve finanční a provozní aplikaci vyhledejte organizační jednotku, která je mapována v sadě Data Integration Connection.
 
     ![Mapování organizace.](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ Chcete-li tento problém opravit, musíte povolit chybějící oprávnění při
 
 **Požadovaná role pro opravu problému:** správce systému
 
-Může se zobrazit následující chybová zpráva při vytváření dat v aplikaci Finance and Operations:
+Může se zobrazit následující chybová zpráva při vytváření dat ve finanční a provozní aplikaci:
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Nelze generovat datovou část pro entitu CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Vytvoření zatížení se nezdařilo s chybou Neplatný identifikátor URI: Identifikátor URI je prázdný."}\],"isErrorCountUpdated":true}*
 
@@ -85,19 +85,19 @@ Takto vypadá chybová zpráva v aplikaci customer engagement:
 
 > V kódu ISV došlo k neočekávané chybě. (ErrorType = ClientError) Neočekávaná výjimka z modulu plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: Nepodařilo se zpracovat účet entity. (Pokus o připojení se nezdařil, protože připojená strana nereagovala správně po určitém časovém období, nebo navázané připojení se nezdařilo, protože připojený hostitel neodpověděl.
 
-K této chybě dojde, pokud je prostředí Dataverse nesprávně resetováno, když se pokusíte vytvořit data v aplikaci Finance and Operations.
+K této chybě dojde, pokud je prostředí Dataverse nesprávně resetováno, když se pokusíte vytvořit data ve finanční a provozní aplikaci.
 
 > [!IMPORTANT]
 > Pokud jste prostředí znovu propojili, musíte zastavit všechny mapy entit, než budete pokračovat kroky zmírnění.
 
-Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i Finance and Operations.
+Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i Finance a Operace.
 
-1. V aplikaci Finance and Operations postupujte podle těchto kroků:
+1. Ve finanční a provozní aplikaci postupujte takto:
 
-    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
     2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
     3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
-    4. Abyste předešli chybám při opětovném propojení prostředí Finance and Operations nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
+    4. Abyste předešli chybám při opětovném propojení prostředí Finance a Operace nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
 
 2. V Dataverse postupujte následovně:
 
@@ -108,12 +108,12 @@ Chcete-li problém vyřešit, musíte provést kroky v aplikaci Dataverse i Fina
     5. Vyberte **Výsledky** pro zobrazení konfigurací.
     6. Odstraňte všechny instance.
 
-3. V aplikaci Finance and Operations postupujte podle těchto kroků:
+3. Ve finanční a provozní aplikaci postupujte takto:
 
-    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+    1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
     2. Vyberte a odstraňte záznamy, které mají problémy v mapě a projektu duálního zápisu. Pro každé mapování dvou zápisů budou dva záznamy.
     3. Změny publikujte pomocí doplňku aplikace Excel. Tento krok je důležitý, protože odstraní záznamy z entity a podkladových tabulek.
-    4. Abyste předešli chybám při opětovném propojení prostředí Finance and Operations nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
+    4. Abyste předešli chybám při opětovném propojení prostředí Finance a Operace nebo Dataverse, ujistěte se, že nezůstanou žádné konfigurace duálního zápisu.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Chyba živé synchronizace po provedení úplné kopie databáze
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Data z aplikace Finance and Operations nejsou synchronizována s Dataverse
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Data z finančních a provozních aplikací se nesynchronizují do Dataverse
 
-Během živé synchronizace můžete narazit na problém, kdy je synchronizována pouze část dat aplikace Finance and Operations do Dataverse nebo data nejsou synchronizována vůbec.
+Během živé synchronizace můžete narazit na problém, kdy je synchronizována pouze část dat finanční a provozní aplikace do Dataverse nebo data nejsou synchronizována vůbec.
 
 > [!NOTE]
 > Tento problém musíte vyřešit během vývoje.
@@ -200,13 +200,13 @@ Než začnete problém řešit, přečtěte si následující předpoklady:
 
 + Ujistěte se, že vaše vlastní změny jsou zapsány v jediném rozsahu transakce.
 + Obchodní události a rámec pro dvojí zápis nezvládají operace `doinsert()`, `doUpdate()` a `recordset()` nebo záznamy, kde je označeno `skipBusinessEvents(true)`. Pokud je váš kód uvnitř těchto funkcí, nebude spuštěn duální zápis.
-+ Obchodní události musí být registrovány pro mapovaný zdroj dat. Některé zdroje dat mohou používat vnější spojení a mohou být označeny jako pouze pro čtení v aplikacích Finance and Operations. Tyto zdroje dat nejsou sledovány.
++ Obchodní události musí být registrovány pro mapovaný zdroj dat. Některé zdroje dat mohou používat vnější spojení a mohou být označeny jako pouze pro čtení v finančních a provozních aplikacích. Tyto zdroje dat nejsou sledovány.
 + Změny budou spuštěny pouze v případě, že jsou úpravy na mapovaných polích. Nemapované úpravy pole nespustí duální zápis.
 + Ujistěte se, že vyhodnocení filtrů poskytuje platný výsledek.
 
 ### <a name="troubleshooting-steps"></a>Kroky řešení potíží
 
-1. Zkontrolujte mapování polí na stránce správy s duálním zápisem. Pokud pole není mapováno z aplikace Finance and Operations do Dataverse, nebude sledováno. Například na následujícím obrázku je pole **Popis** sledováno z Dataverse, ale ne z aplikace Finance and Operations. Žádné změny v tomto poli uvnitř aplikace Finance and Operations nebudou sledovány.
+1. Zkontrolujte mapování polí na stránce správy s duálním zápisem. Pokud pole není mapováno z finanční a provozní aplikace do Dataverse, nebude sledováno. Například na následujícím obrázku je pole **Popis** sledováno z Dataverse, ale ne z finanční a provozní aplikace. Žádné změny v tomto poli uvnitř finanční a provozní aplikace nebudou sledovány.
 
     ![Sledované pole.](media/live-sync-troubleshooting-1.png)
 
@@ -220,9 +220,9 @@ Než začnete problém řešit, přečtěte si následující předpoklady:
 
 ### <a name="sample-scenario"></a>Ukázkový scénář
 
-V aplikacích Finance and Operations existuje aktualizace adresy pro záznam kontaktu, ale změna adresy není synchronizována s Dataverse. K tomuto scénáři dochází, protože žádný záznam v tabulce **BusinessEventsDefinice** neobsahuje kombinaci ovlivněné tabulky a entity. Konkrétně tabulka **LogistikaPostalAddress** není přímým zdrojem dat pro entitu **smmContactpersonCDSV2Entity**. Entita **smmContactpersonCDSV2Entity** má **smmContactPersonV2Entity** jako zdroj dat a entita **smmContactPersonV2Entity** zase má jako zdroj dat **LogisticsPostalAddressBaseEntity**. Tabulka **LogistikaPostalAddress** je zdrojem dat pro **LogisticsPostalAddressBaseEntity**.
+V finančních a provozních aplikacích existuje aktualizace adresy pro záznam kontaktu, ale změna adresy není synchronizována s Dataverse. K tomuto scénáři dochází, protože žádný záznam v tabulce **BusinessEventsDefinice** neobsahuje kombinaci ovlivněné tabulky a entity. Konkrétně tabulka **LogistikaPostalAddress** není přímým zdrojem dat pro entitu **smmContactpersonCDSV2Entity**. Entita **smmContactpersonCDSV2Entity** má **smmContactPersonV2Entity** jako zdroj dat a entita **smmContactPersonV2Entity** zase má jako zdroj dat **LogisticsPostalAddressBaseEntity**. Tabulka **LogistikaPostalAddress** je zdrojem dat pro **LogisticsPostalAddressBaseEntity**.
 
-Podobná situace může nastat u některých nestandardních vzorů, například v případech, kdy tabulka upravovaná ve Finance and Operations není zjevně propojena s entitou, která ji obsahuje. Například data primární adresy se vypočítají v entitě **smmContactPersonCDSV2Entity**. Rámec duálního zápisu se pokouší určit, jak je změna podkladové tabulky mapována zpět na entity. Obvykle je tento přístup dostačující. V některých případech je však odkaz tak složitý, že musíte být konkrétní. Musíte se ujistit, že **RecId** související tabulky je přímo k dispozici v účetní jednotce. Poté přidejte statickou metodu ke sledování změn v tabulce.
+Podobná situace může nastat u některých nestandardních vzorů, například v případech, kdy tabulka upravovaná ve Finance a Operace není zjevně propojena s entitou, která ji obsahuje. Například data primární adresy se vypočítají v entitě **smmContactPersonCDSV2Entity**. Rámec duálního zápisu se pokouší určit, jak je změna podkladové tabulky mapována zpět na entity. Obvykle je tento přístup dostačující. V některých případech je však odkaz tak složitý, že musíte být konkrétní. Musíte se ujistit, že **RecId** související tabulky je přímo k dispozici v účetní jednotce. Poté přidejte statickou metodu ke sledování změn v tabulce.
 
 Například si prohlédněte metodu **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping ()**. **CustCustomerV3entity** a **VendVendorV2Entity** byly upraveny tak, aby tuto situaci zvládly.
 
@@ -250,19 +250,19 @@ Chcete-li opravit problém, postupujte následovně.
 5. Zastavte všechny mapy s dvojitým zápisem, které jsou vytvořeny v entitě **smmContactPersonCDSV2Entity**.
 6. Spusťte mapu. Měli byste vidět novou tabulku (**LogisticsPostalAddress** v tomto případě), které jste začali sledovat pomocí sloupce **RefTableName** pro řádek, kde hodnota **refentityname** rovná se **smmContactPersonCDSV2Entity** v tabulce **BusinessEventsDefinice**.
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Chyba při vytváření záznamu, kam je odesláno více záznamů z aplikace Finance and Operations do Dataverse ve stejné dávce
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Chyba při vytváření záznamu, kam je odesláno více záznamů z finanční a provozní aplikace do Dataverse ve stejné dávce
 
-U jakékoli transakce aplikace Finance and Operations vytváří data v dávce a odešle je jako dávku do Dataverse. Pokud jsou v rámci stejné transakce vytvořeny dva záznamy a navzájem na sebe odkazují, může se zobrazit chybová zpráva podobná následujícímu příkladu v aplikaci Finance and Operations:
+U jakékoli transakce finanční a provozní aplikace vytváří data v dávce a odešle je jako dávku do Dataverse. Pokud jsou v rámci stejné transakce vytvořeny dva záznamy a navzájem na sebe odkazují, může se zobrazit chybová zpráva podobná následujícímu příkladu ve finanční a provozní aplikaci:
 
 *Nelze zapisovat data do entity aaa_fundingsources. Nelze vyhledat ebecsfs_contracts s hodnotami {PC00...}. Nelze vyhledat aaa_fundingsources s hodnotami {PC00...}. Zápisy do aaa_fundingsources se nezdařily s chybovou zprávou Zpráva o výjimce: Vzdálený server vrátil chybu: (400) Chybný požadavek.*
 
-Chcete -li problém vyřešit, vytvořte vztahy entit v aplikaci Finance and Operations k označení, že tyto dvě entity spolu souvisejí a že související záznamy jsou zpracovávány ve stejné transakci.
+Chcete -li problém vyřešit, vytvořte vztahy entit ve finanční a provozní aplikaci k označení, že tyto dvě entity spolu souvisejí a že související záznamy jsou zpracovávány ve stejné transakci.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Povolit podrobné protokolování chybových zpráv
 
-V aplikaci Finance and Operations můžete narazit na chyby související s prostředím Dataverse. Chybová zpráva nemusí obsahovat plný text zprávy nebo jiná relevantní data. Chcete -li získat další informace, můžete povolit podrobné protokolování nastavením příznaku **IsDebugMode**, který je přítomen v entitě **DualWriteProjectConfigurationEntity** ve všech konfiguracích projektu v aplikaci Finance and Operations.
+Ve finanční a provozní aplikaci můžete narazit na chyby související s prostředím Dataverse. Chybová zpráva nemusí obsahovat plný text zprávy nebo jiná relevantní data. Chcete -li získat další informace, můžete povolit podrobné protokolování nastavením příznaku **IsDebugMode**, který je přítomen v entitě **DualWriteProjectConfigurationEntity** ve všech konfiguracích projektu ve finanční a provozní aplikaci.
 
-1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+1. Otevřete entitu **DualWriteProjectConfigurationEntity** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfigurationEntity** do listu. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 2. Nastavte příznak **IsDebugMode** na **Ano** v projektu.
 3. Spusťte scénář.
 4. Podrobné protokoly jsou k dispozici v tabulce **DualWriteErrorLog**. Chcete -li vyhledat data pomocí prohlížeče tabulek, použijte následující adresu URL: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`.
@@ -270,7 +270,7 @@ V aplikaci Finance and Operations můžete narazit na chyby související s pros
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>Chyba při přidání adresy pro zákazníka nebo kontakt
 
-Při pokusu o přidání adresy pro zákazníka nebo kontakt se může zobrazit následující chybová zpráva aplikací Finance and Operations nebo Dataverse:
+Při pokusu o přidání adresy pro zákazníka nebo kontakt se může zobrazit následující chybová zpráva finančních a provozních aplikací nebo Dataverse:
 
 *Nelze zapsat data do entity msdyn_partypostaladdresses. Zápisy do entity DirPartyPostalAddressLocationCDSEntity se nezdařily s následující chybovou zprávou Žádost selhala s kódem stavu Kód chyby BadRequest a CDS: Zpráva odpovědi: 0x80040265: Došlo k chybě v pluginu. Záznam, který má hodnoty atributů Umístění ID již existuje. Klíč entity Umístění ID klíče vyžaduje, aby tato sada atributů obsahovala jedinečné hodnoty. Vyberte jedinečné hodnoty a zkuste to znovu.*
 
@@ -290,7 +290,7 @@ Může se zobrazit následující chybová zpráva při pokusu o přidání zák
 
 *"RecordError0":"Zápis se nezdařil pro entitu Customers V3 s neznámou výjimkou - pro typ strany 'Organizace' nebyl nalezen záznam strany}.*
 
-Když je zákazník vytvořen v Dataverse, vygeneruje se nové číslo strany. Chybová zpráva se zobrazí, když je záznam zákazníka synchronizován s aplikacemi Finance and Operations, ale již existuje záznam zákazníka, který má jiné číslo strany.
+Když je zákazník vytvořen v Dataverse, vygeneruje se nové číslo strany. Chybová zpráva se zobrazí, když je záznam zákazníka synchronizován s finančními a provozními aplikacemi, ale již existuje záznam zákazníka, který má jiné číslo strany.
 
 Chcete -li problém vyřešit, najděte zákazníka vyhledáním strany. Pokud zákazník neexistuje, vytvořte nový záznam zákazníka. Pokud zákazník existuje, použijte stávající stranu k vytvoření nového záznamu o zákazníkovi.
 
@@ -300,7 +300,7 @@ Při pokusu o vytvoření nového zákazníka, dodavatele nebo kontakt v Dataver
 
 *Nelze aktualizovat typ strany z 'DirOrganization' na 'DirPerson', místo toho by mělo být provedeno odstranění stávající strany následované vložením s novým typem.*
 
-V Dataverse je číselná sekvence v tabulce **msdyn_party**. Když je účet vytvořen v Dataverse, vytvoří se nová strana (např. **Party-001** typu **Organizace**). Tato data jsou odesílána do aplikace Finance and Operations. Pokud se prostředí Dataverse resetuje nebo je prostředí Finance and Operations spojeno s jiným prostředím Dataverse a poté se vytvoří nový záznam kontaktu v Dataverse, vytvoří se nová hodnota strany, která začíná **Party-001**. Tentokrát bude vytvořen záznam strany **Party-001** typu **Osoba**. Když jsou tato data synchronizována, aplikace Finance and Operations zobrazují předchozí chybovou zprávu, protože záznam **Party-001** typu **Organizace** již existuje.
+V Dataverse je číselná sekvence v tabulce **msdyn_party**. Když je účet vytvořen v Dataverse, vytvoří se nová strana (např. **Party-001** typu **Organizace**). Tato data se odesílají do finanční a provozní aplikace. Pokud se prostředí Dataverse resetuje nebo je prostředí Finance a Operace spojeno s jiným prostředím Dataverse a poté se vytvoří nový záznam kontaktu v Dataverse, vytvoří se nová hodnota strany, která začíná **Party-001**. Tentokrát bude vytvořen záznam strany **Party-001** typu **Osoba**. Když jsou tato data synchronizována, finanční a provozní aplikace zobrazují předchozí chybovou zprávu, protože záznam **Party-001** typu **Organizace** již existuje.
 
 Chcete -li problém vyřešit, změňte automatickou sekvenci čísel pro pole **msdyn_partynumber** tabulky **msdyn_party** v Dataverse na jinou automatickou číselnou sekvenci.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901982"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069372"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -143,6 +143,10 @@ Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilní
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je Warehouse Management mobile app nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 
 Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte Warehouse Management mobile app. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě
+
+Pokud plánujete provozovat mobilní aplikaci Warehouse Management v kombinaci s jednotkou škálování cloudu a hraniční sítě, je potřeba provést několik dalších kroků. Pokyny naleznete v části [Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurace aplikace importem nastavení připojení
 
@@ -306,5 +310,6 @@ Ztraceným nebo narušeným zařízením je nutné odebrat přístup k aplikaci
 
 - [Uživatelská nastavení mobilního zařízení](mobile-device-user-settings.md)
 - [Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management](step-icons-titles.md)
+- [Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471637"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069422"
 ---
 # <a name="message-processor-messages"></a>Zprávy procesoru zpráv
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471637"
 
 Zprávy procesoru zpráv se používají při spuštění cloudových a hranových jednotek pro [výrobní úlohy](cloud-edge-workload-manufacturing.md) a [úlohy správy skladu](cloud-edge-workload-warehousing.md).
 
-Mezi prostředím nasazení centra a jednotky škálování se vyměňuje velké množství dat, aby byla synchronizována, ale pouze několik z těchto výměn dat bude zpracováno *procesorem zpráv*. Zprávy zpracované procesorem zpráv můžete zobrazit přechodem na **Správa systému >Procesor zpráv > Zprávy procesoru zpráv**.
+Prostředí nasazení centra a jednotky škálování si vyměňují velké množství dat, aby byla synchronizována. Některá tato vyměněná data spustí další logiku v *procesoru zpráv*. Zprávy zpracované procesorem zpráv můžete zobrazit přechodem na **Správa systému >Procesor zpráv > Zprávy procesoru zpráv**.
 
 ## <a name="message-grid-columns-and-filters"></a>Sloupce a filtry mřížky zpráv
 

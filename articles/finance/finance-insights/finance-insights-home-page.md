@@ -2,7 +2,7 @@
 title: Domovská stránka Finance Insights
 description: Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení.
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968779"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087286"
 ---
 # <a name="finance-insights-home-page"></a>Domovská stránka Finance Insights
 
@@ -37,10 +37,6 @@ Finance Insights poskytují konfigurovatelná a rozšiřitelná řešení, kter�
 
 V této části jsou uvedeny požadavky na používání Finančních přehledů. Kdekoli je to možné, jsou poskytovány odkazy na zdroje dalších informací.
 
-### <a name="legal-requirements"></a>Právní požadavky
-
-Chcete-li požádat o program náhledu, vyplňte [Náhled finančních přehledů pro smlouvu Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
-
 ### <a name="system-requirements"></a>Systémové požadavky
 
 Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -48,6 +44,10 @@ Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí úro
 ### <a name="version-requirements"></a>Požadavky verzí
 
 Toto téma se týká Microsoft Dynamics 365 Finance verze 10.0.21 a novější.
+
+### <a name="license-requirements"></a>Požadavky na licence
+
+Finance Insights využívá kredity AI Builder pro vytváření finančních předpovědí. Všechny potřebné licence k tomu jsou součástí licence tenanta. Každý tenant Dynamics 365 Finance má 20 000 kreditů AI Builder každý měsíc. Pokud jsou pro obchodní potřeby vyžadovány další kredity, lze je zakoupit přímo od AI Builder.
 
 ### <a name="historical-data-requirements"></a>Požadavky na historické údaje
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592658"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068785"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592658"
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo Finance and Operations.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo finančních a provozních aplikacích.
 
 Otevřením dat entity v aplikaci Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016 nebo novější.
 
@@ -37,15 +40,15 @@ Otevřením dat entity v aplikaci Excel můžete rychle a snadno zobrazit a upra
 
 Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Otevření dat entity v aplikaci Excel při spuštění z aplikace Finance and Operations
-1. Na stránce v aplikaci Finance and Operations vyberte příkaz **Otevřít v Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Otevření dat entity v Excelu při spuštění z finanční a provozní aplikace
+1. Na stránce ve finanční a provozní aplikaci zvolte **Otevřít v Microsoft Office**.
 
     Pokud je kořenový zdroj dat (tabulka) pro stránku stejný jako kořenový zdroj dat kořenové pro libovolnou entitu, jsou pro stránku generovány výchozí možnosti **Otevřít v aplikaci Excel**. Možnosti **Otevřít v aplikaci Excel** možnosti najdete na často používaných stránkách jako **Všichni dodavatelé** a **Všichni zákazníci**.
  
 2. Zvolte možnost **Otevřít v aplikaci Excel** a otevřete sešit, který je generován. Tento sešit obsahuje závazné informace pro entitu, ukazatel pro vaše prostředí a ukazatel na doplněk aplikace Excel.
 3. V aplikaci Excel zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
-5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k aplikaci Finance and Operations. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
+5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k finanční a provozní aplikaci. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
 
 Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Všimněte si, že v sešitu nebudou žádná data, dokud ho doplněk aplikace Excel nenačte.
 
@@ -54,7 +57,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 2. V Office Storu vyhledejte klíčové slovo **Dynamics** a zvolte **Přidat** vedle položky **Doplněk Microsoft Dynamics Office** (doplněk aplikace Excel).
 3. Pokud používáte doplněk aplikace Excel poprvé, zvolte **Důvěřovat tomuto doplňku** pro povolení spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Zvolte **Přidat informace o serveru** k otevření podokna **Možnosti**.
-5. Ve vašem prohlížeči zkopírujte adresu URL cílové instance aplikace Finance and Operations, vložte ji do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
+5. Ve vašem prohlížeči zkopírujte adresu URL cílové instance finanční a provozní aplikace, vložte ji do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
 
     Například pokud je adresa URL `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, odstraňte všechno s výjimkou `https://xxx.dynamics.com`.
 
@@ -73,7 +76,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 Poté, co doplněk aplikace Excel načte data entity do sešitu, můžete data kdykoli aktualizovat volbou možnosti **Aktualizovat** v doplňku aplikace Excel.
 
 ## <a name="edit-entity-data-in-excel"></a>Úprava dat entity v aplikaci Excel
-Můžete změnit data entity podle požadavku a pak je publikovat zpět do Finance and Operations volbou možnosti **Publikovat** v doplňku aplikace Excel. Chcete-li upravit záznam, vyberte buňku v listu a potom změňte hodnotu buňky. Chcete-li přidat nový záznam, proveďte jeden z následujících kroků:
+Můžete změnit data entity podle požadavku a pak je publikovat zpět do finančních a provozních aplikací volbou možnosti **Publikovat** v doplňku aplikace Excel. Chcete-li upravit záznam, vyberte buňku v listu a potom změňte hodnotu buňky. Chcete-li přidat nový záznam, proveďte jeden z následujících kroků:
 
 - Klikněte na libovolné místo v tabulce zdrojů dat a potom zvolte **Nový** v doplňku aplikace Excel.
 - Klikněte kdekoliv v posledním řádku v tabulce zdrojů dat a potom stiskněte klávesu Tab, dokud se kurzor nepřesune z posledního sloupce řádku a dokud není vytvořen nový řádek.

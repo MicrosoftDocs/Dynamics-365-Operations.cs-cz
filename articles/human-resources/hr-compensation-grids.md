@@ -2,7 +2,7 @@
 title: Nastavit kompenzační mřížky
 description: Kompenzační mřížky umožňují definovat a spravovat struktury plateb pro plány fixní kompenzace.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483806"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071411"
 ---
 # <a name="set-up-compensation-grids"></a>Nastavit kompenzační mřížky
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -66,29 +69,17 @@ Kompenzační mřížky umožňují definovat a spravovat struktury plateb pro p
     * Nyní použijeme funkci hromadné změny ke zvýšení částek v jednotlivých úrovních určitým procentem nebo částkou. V tomto příkladu bude mít každá třída rozšíření 12,5 % mezi jejich středními body.  
 7. V poli **Typ úprav** vyberte možnost.
 8. Zadejte číslo do pole **Částka úpravy**.
-9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-10. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-12. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-13. Klikněte na **Použít na mřížku**.
-14. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-15. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-16. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-17. Klikněte na **Použít na mřížku**.
-18. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-19. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-20. Klikněte na **Použít na mřížku**.
-21. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-22. Klikněte na Použít na mřížku.
+9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+10. Klikněte na **Použít na mřížku**.
     * Nyní použijeme funkci hromadné změny pro úpravu minimálních a maximálních referenčních bodů pro každou úroveň. V tomto příkladu použijeme 50% rozložení, takže minimální referenční bod bude upraven na hodnotou -20 % a maximum bude upraveno na +20 %.  
-23. Zadejte číslo do pole **Částka úpravy**.
-24. V poli **Referenční bod** zadejte nebo vyberte hodnotu.
-25. V seznamu označte všechny řádky nebo jejich označení zrušte.
-26. Klikněte na **Použít na mřížku**.
-27. Zadejte číslo do pole **Částka úpravy**.
-28. V poli **Referenční bod** zadejte nebo vyberte hodnotu.
-29. V seznamu označte všechny řádky nebo jejich označení zrušte.
-30. Klikněte na **Použít na mřížku**.
+11. Zadejte číslo do pole **Částka úpravy**.
+12. V poli **Referenční bod** zadejte nebo vyberte hodnotu.
+13. V seznamu označte všechny řádky nebo jejich označení zrušte.
+14. Klikněte na **Použít na mřížku**.
+15. Zadejte číslo do pole **Částka úpravy**.
+16. V poli **Referenční bod** zadejte nebo vyberte hodnotu.
+17. V seznamu označte všechny řádky nebo jejich označení zrušte.
+18. Klikněte na **Použít na mřížku**.
 
 
 

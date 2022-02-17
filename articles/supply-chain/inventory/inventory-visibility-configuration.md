@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920291"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060994"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Power Apps.
 
@@ -58,7 +58,7 @@ Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfigurac
 
 ## <a name="data-source-configuration"></a>Konfigurace zdroje dat
 
-Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „aplikace Dynamics 365 Finance and Operations“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
+Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „aplikace Dynamics 365 Finance a Operations“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
 
 > [!NOTE]
 > Zdroj dat `fno` je vyhrazen pro Supply Chain Management. Pokud je váš doplněk Viditelnost zásob integrován s prostředím Supply Chain Management, doporučujeme neodstraňovat konfigurace související s `fno` ve zdroji dat.

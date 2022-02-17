@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: a7b5f4f042aa5457ff33e9762f0902c5c72f5921
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944833"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076879"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Itálii (starší verze)
 
@@ -126,7 +126,7 @@ Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují k
 
 Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
 
-Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení a služby](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 

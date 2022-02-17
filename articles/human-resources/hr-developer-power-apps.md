@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a466ef2d2002ebc9d35b33571009727626cd5c678e995d42a00dbe64a2806729
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fedf9b35e5dc8372fd82c6308ec5b1452eab7e8f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778048"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070293"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Rozšíření o Power Apps a Power Automate
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tento článek popisuje několik příkladů scénářů rozšíření pro aplikaci Microsoft Dynamics 365 Human Resources používající Microsoft Power Apps a Microsoft Power Automate. Můžete importovat balíček řešení přidružený ke každému příkladu do prostředí Power Apps. Poté můžete tyto balíčky použít pokyny jako návod nebo jako počáteční body pro implementaci scénářů, které jsou použitelné pro vaši organizaci.
 
@@ -38,13 +41,13 @@ Tento článek popisuje několik příkladů scénářů rozšíření pro aplik
 - Pro import balíčků, musí mít uživatelé oprávnění **Tvůrce prostředí**.
 - Pro export nebo import aplikací musí mít uživatelé licenci Power Apps Plan 2 nebo zkušební licenci Power Apps Plan 2.
 
-## <a name="integration-with-microsoft-365-power-automate"></a>Integrace s Microsoft 365, Power Automate
+## <a name="integration-with-microsoft-365-power-automate"></a>Integrace s aplikací Microsoft 365, Power Automate
 
 Aplikaci **Integrace s Microsoft 365** lze použít k extrakci informací o týmu pro přihlášené uživatele z Microsoft 365. Uvádí zaměstnance v aplikaci Human Resources pro zjištění typů identifikace zaměstnanců. Manažeři mohou kontrolovat data vypršení platnosti typů ID zaměstnanců. Mohou také odeslat připomenutí e-mailem v případě, že končí platnost typu ID zaměstnance. Power Automate se integruje s Power Apps pro odeslání tohoto připomenutí. Po odeslání připomenutí bude odesláno potvrzení zpět do Power Apps z Power Automate. Typy identifikace zahrnují řidičský průkaz, cestovní pas a jiné přijatelné formy průkazů totožnosti.
 
 Tuto aplikaci můžete rozšířit na další scénáře. Lze ji použít například pro zobrazení informací o dovolené týmu, událostech kalendáře a jakýchkoliv událostech specifických pro tým.
 
-Chcete-li stáhnout aplikací **Integrace s Microsoft 365, Power Automate**, přejděte na stránku [Integrace s Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) na stránce Microsoft Download Center.
+Chcete-li stáhnout **Integraci s aplikací Microsoft 365, Power Automate**, přejděte na stránku [Integrace s Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) na stránce Microsoft Download Center.
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – připojení k SQL a provedení
 

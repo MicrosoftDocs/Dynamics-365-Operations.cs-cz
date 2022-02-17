@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948788"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087210"
 ---
 # <a name="task-management"></a>Správa úkolů
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Správa úkolů vám umožňuje vytvářet úkoly, které je třeba splnit, abyste mohli najmout (nasadit), propustit (rušit) a převádět (přechod) zaměstnance. Řízení úkolů využívá koncept kontrolních seznamů. Kontrolní seznam je seznam úloh nasazování, rušení a přechodu. Správa úkolů používá kontrolní seznamy k seskupování úkolů a k jejich přiřazení jednotlivcům nebo skupinám. Funkce kontrolního seznamu pro nasazování, rušení a přechody jsou podobné.
 

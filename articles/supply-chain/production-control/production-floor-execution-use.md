@@ -2,7 +2,7 @@
 title: Jak pracovníci používají rozhraní pro provádění výrobního provozu
 description: Tohle téma popisuje, jak používat rozhraní pro provádění výrobního provozu z pohledu pracovníka.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920641"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075012"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -138,6 +138,65 @@ V tomto případě může pracovník specifikovat koprodukt a množství, které
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod (*Žádný*, *Stroj*, *Operátor* nebo *Materiál*).
 
 ![Dialogové okno Hlášení odpadu.](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Úprava spotřeby materiálu a rezervace materiálů
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracovníci mohou upravit spotřebu materiálu pro každou výrobní úlohu. Tato funkce se používá ve scénářích, kde skutečné množství materiálů, které bylo spotřebováno výrobní úlohou, bylo větší nebo menší než plánované množství. Proto musí být upraveno tak, aby vyjadřovalo aktuální stav zásob.
+
+Pracovníci mohou také provádět rezervace podle šarže a sériového čísla materiálů. Tato funkce se používá ve scénářích, kdy pracovník musí ručně určit, které šarže materiálu nebo sériová čísla byly spotřebovány, aby byly splněny požadavky na sledovatelnost materiálu.
+
+Pracovníci mohou určit množství, které se má upravit, výběrem možnosti **Upravit materiál**. Tato tlačítko je dostupné v následujících místech:
+
+- V dialogovém okně **Hlášení odpadu**
+- V dialogovém okně **Hlášení průběhu**
+- Na pravém panelu nástrojů
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Úprava spotřeby materiálu v dialogových oknech Hlášení odpadu a Hlášení průběhu
+
+Poté, co pracovník zadá nahlašované množství v dialogovém okně **Hlášení odpadu** nebo **Hlášení průběhu**, zpřístupní se tlačítko **Upravit materiál**. Když uživatel vybere toto tlačítko, objeví se dialogové okno **Upravit materiál**. V tomto dialogovém okně jsou uvedeny položky naplánované ke spotřebě, když je pro úlohu nahlášeno množství dobrého nebo vyřazeného zboží.
+
+Seznam v dialogovém okně obsahuje následující informace:
+
+- **Číslo produktu** – Základní produkt a varianta produktu.
+- **Název produktu** – Název produktu.
+- **Návrh** – Odhadované množství materiálu, které bude spotřebováno při vykazování postupu nebo odpadu pro zadané množství u úlohy.
+- **Spotřeba** – Skutečné množství materiálu, které bude spotřebováno při vykazování postupu nebo odpadu pro zadané množství u úlohy.
+- **Rezervováno** – Množství materiálu, které bylo fyzicky rezervováno ve skladu.
+- **Jednotka** – Jednotka kusovníku.
+
+Pravá strana dialogu obsahuje následující informace:
+
+- **Číslo produktu** – Základní produkt a varianta produktu.
+- **Odhadováno** – Odhadované množství, které má být spotřebováno.
+- **Zahájeno** – Množství, které bylo zahájeno v rámci výrobní úlohy.
+- **Zbývající množství** – Ta část odhadovaného množství, která zbývá ke spotřebě.
+- **Uvolněné množství** – Množství, které bylo spiotřebováno.
+
+Provádět můžete následující akce:
+
+- Pracovník může určit množství materiálu k úpravě výběrem možnosti **Upravit spotřebu**. Po potvrzení množství se množství ve sloupci **Spotřeba** aktualizuje o upravené množství.
+- Když pracovník vybere příkaz **Upravit materiál**, je vytvořen deník výrobních výdejek. Tento deník obsahuje stejné položky a množství jako seznam **Upravit materiál**.
+- Když pracovník upraví množství v dialogovém okně **Upravit materiál**, pole **Návrh** na odpovídajícím řádku deníku se aktualizuje stejným množstvím. Pokud pracovník vybere tlačítko **Storno** v dialogovém okně **Upravit materiál**, seznam výdejek se odstraní.
+- Když pracovník vybere **OK**, seznam výdejek odstraněn není. Bude zaúčtován při nahlášení úlohy v dialogovém okně **Hlášení odpadu** nebo **Hlášení průběhu**.
+- Pokud pracovník vybere tlačítko **Storno** v dialogovém okně **Hlášení odpadu** nebo **Hlášení průběhu**, seznam výdejek se odstraní.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Úprava materiálu v pravém panelu nástrojů
+
+Tlačítko **Upravit materiál** lze nakonfigurovat tak, aby se zobrazovalo na panelu nástrojů vpravo. (Další informace viz téma [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).) Pracovník může vybrat příkaz **Upravit materiál** pro probíhající výrobní úlohu. V tomto případě se zobrazí dialogové okno **Upravit materiál**, kde pracovník může provést požadované úpravy. Po otevření dialogového okna se pro výrobní úlohu vytvoří výrobní výdejka, která obsahuje řádky pro upravená množství. Když pracovník vybere příkaz **Zaúčtovat**, úprava je potvrzena a seznam k odběru je zaúčtován. Když pracovník vybere **Storno**, výdejka je odstraněna a není provedena žádná změna.
+
+### <a name="reserve-materials"></a>Rezervace materiálů
+
+V dialogu **Upravit materiál** může pracovník provádět a upravovat rezervace materiálů výběrem příkazu **Rezervovat materiál**. Dialogové okno **Rezervovat materiál**, které se objeví, ukazuje fyzicky dostupné zásoby položky pro každou skladovací a sledovací dimenzi.
+
+Pokud je materiál možné používat v rozšířených skladových procesech, seznam zobrazuje pouze fyzicky dostupné zásoby pro umístění výrobního vstupu pro materiál. Umístění výrobního vstupu je definováno u zdroje, kde je plánována výrobní úloha. Pokud je číslo položky řízeno šarží nebo sériovým číslem, zobrazí se úplný seznam fyzicky dostupných čísel šarží a sériových čísel. Chce-li pracovník zadat množství k rezervaci, vybere příkaz **Rezervovat materiál**. Chce-li pracovník odstranit existující rezervaci, vybere příkaz **Odebrat rezervaci**.
+
+Další informace o tom, jak nastavit umístění výrobního vstupu, najdete v následujícím příspěvku na blogu: [Nastavení umístění výrobního vstupu](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Rezervace, které pracovník provádí v dialogovém okně **Rezervovat materiál**, zůstanou zachovány, když pracovník vybere **Storno** v dialogu **Hlášení průběhu** nebo **Hlášení odpadu**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Dokončení a zahájení nové úlohy
 

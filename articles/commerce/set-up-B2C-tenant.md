@@ -2,7 +2,7 @@
 title: Nastavení klienta B2C v Commerce
 description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952437"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092452"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -109,7 +109,7 @@ Chcete-li vytvořit aplikaci B2C, postupujte následovně.
 1. Jako **Identifikátor URI přesměrování** zadejte své vyhrazené adresy URL odpovědí jako typ **Web**. Viz [Adresy URL pro odpovědi](#reply-urls) níže, kde najdete informace o adresách URL odpovědí a jak je naformátovat. Chcete-li povolit přesměrování, je nutné zadat URI pro přesměrování / adresu URL odpovědi z Azure AD B2C zpět na váš web, když se uživatel autentizuje. Adresu URL odpovědi lze přidat během procesu registrace nebo ji lze přidat později výběrem odkazu **Přidat URI přesměrování** z nabídky **Přehled** v části **Přehled** aplikace B2C.
 1. Pro **Oprávnění** vyberte **Udělit souhlas správce oprávněním openid a offline_access**.
 1. Vyberte **Registrovat**.
-1. Vyberte nově vytvořenou aplikaci a přejděte do nabídky **Oprávnění API**. 
+1. Vyberte nově vytvořenou aplikaci a přejděte do nabídky **Ověřování**. 
 1. Pokud je zadána adresa URL odpovědi, v části **Toky implicitního udělení oprávnění a hybridní toky** vyberte možnost **Přístupové tokeny** i **Tokeny ID** pro jejich povolení pro aplikaci a poté vyberte **Uložit**. Pokud nebyla při registraci zadána adresa URL odpovědi, lze ji také přidat na tuto stránku výběrem **Přidat platformu**, výběrem **Web** a poté zadáním URI přesměrování aplikace. Část **Toky implicitního udělení oprávnění a hybridní toky** pak bude k dispozici pro výběr možnosti **Přístupové tokeny** i **Tokeny ID**.
 1. Přejděte do nabídky **Přehled** portálu Azure Portal a zkopírujte **ID aplikace (klienta)**. Poznamenejte si toto ID pro pozdější kroky instalace (později zmiňováno jako **GUID klienta**).
 
@@ -309,19 +309,15 @@ Po dokončení nastavení klienta Azure AD B2C musíte nakonfigurovat klienta B2
 
 Chcete-li získat požadované informace o aplikaci, postupujte podle následujících kroků.
 
-1. V portálu Azure přejděte na **Domovská stránka \> Azure AD B2C – aplikace**.
-1. Pro získání podrobností o aplikaci vyberte svou aplikaci a v levém navigačním podokně vyberte **Vlastnosti**.
-1. Z pole **ID aplikace** získejte ID aplikace B2C vytvořené ve vašem klientovi B2C. Později bude zadáno jako **GUID klienta** v konfigurátoru webů.
-1. V poli **AdresaURL odpovědi** získejte adresu URL odpovědi.
-1. Přejděte na **Domovská stránka \> Azure AD B2C – toky uživatelů (zásady)** a získejte názvy jednotlivých zásad toku uživatelů.
+1. V portálu Azure přejděte na **Domovská stránka \> Azure AD B2C – Registrace aplikací**.
+1. Pro získání podrobností o aplikaci vyberte svou aplikaci a v levém navigačním podokně vyberte **Přehled**.
+1. Z reference **ID aplikace (klienta)** získejte ID aplikace B2C vytvořené ve vašem klientovi B2C. Později bude zadáno jako **GUID klienta** v konfigurátoru webů.
+1. Vyberte **Identifikátory URI přesměrování** a shromážděte adresu URL odpovědi zobrazenou pro váš web (adresu URL odpovědi zadanou při nastavení).
+1. Přejděte na **Domovská stránka \> Azure AD B2C – toky uživatelů (zásady)** a shromážděte celé názvy jednotlivých zásad toku uživatelů.
 
-Na následujícím obrázku je znázorněn příklad stránky **Azure AD B2C – aplikace**.
+Na následujícím obrázku je znázorněn příklad stránky přehledu **Azure AD B2C – Registrace aplikací**.
 
-![Přechod k aplikaci B2C ve vašem klientovi.](./media/B2CImage_19.png)
-
-Na následujícím obrázku je znázorněn příklad stránky **Vlastnosti** aplikace v Azure AD B2C. 
-
-![Kopírování ID aplikace z vlastností aplikace B2C.](./media/B2CImage_21.png)
+![Azure AD B2C – Stránka s přehledem registrací aplikací se zvýrazněným ID aplikace (klienta)](./media/ClientGUID_Application_AzurePortal.png)
 
 Následující obrázek znázorňuje příklad zásad toku uživatelů na stránce **Azure AD B2C – toky uživatelů (zásady)**.
 

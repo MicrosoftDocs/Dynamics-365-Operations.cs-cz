@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414657"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069139"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurace virtuálních tabulek Dataverse
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources je virtuální zdroj dat v Microsoft Dataverse. Poskytuje úplné operací vytváření, čtení, aktualizace a mazání (CRUD) z Dataverse a Microsoft Power Platform. Data pro virtuální tabulky nejsou uloženy v Dataverse, ale v databázi aplikace.
 
@@ -119,10 +122,10 @@ Dalším krokem je konfigurace zdroje dat virtuálních tabulek v prostředí Po
 
 4. V **Centru stavu řešení** vyberte ikonu **Rozšířené hledání** v pravém horním rohu stránky aplikace.
 
-5. Na stránce **Rozšířené hledání** vyberte v rozevíracím seznamu **Hledat** položku **Konfigurace zdrojů virtuálních dat ve Finance and Operations**.
+5. Na stránce **Rozšířené hledání** vyberte v rozevíracím seznamu **Hledat** položku **Konfigurace zdrojů virtuálních dat ve Finance a Operace**.
 
    > [!NOTE]
-   > Instalace aplikace virtuální tabulky z předchozího kroku instalace může trvat několik minut. Pokud **Konfigurace virtuálního datového zdroje Finance and Operations** nejsou k dispozici v seznamu, počkejte minutu a obnovte seznam.
+   > Instalace aplikace virtuální tabulky z předchozího kroku instalace může trvat několik minut. Pokud **Konfigurace virtuálního datového zdroje Finance a Operace** nejsou k dispozici v seznamu, počkejte minutu a obnovte seznam.
 
 6. Vyberte **Výsledky**
 

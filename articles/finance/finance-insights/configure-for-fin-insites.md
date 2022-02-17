@@ -2,7 +2,7 @@
 title: Konfigurace Finance Insights
 description: Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech.
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827021"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051363"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurace Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finanční přehledy kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech. Chcete-li úspěšně dokončit postupy v tomto tématu, musíte mít přístup správce systému a úpravce systému v [Centru pro správu Power Portal](https://admin.powerplatform.microsoft.com/), přístup správce systému v Dynamics 365 Finance a přístup k vytváření prostředí v Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech. Chcete-li úspěšně dokončit postupy v tomto tématu, musíte mít přístup správce systému a úpravce systému v [Centru pro správu Power Portal](https://admin.powerplatform.microsoft.com/), přístup správce systému v Dynamics 365 Finance a přístup k vytváření prostředí v Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
 > Následující postupy pro nastavení Finance Insights jsou platné pro verze Dynamics 365 Finance 10.0.21 a vyšší.
@@ -100,6 +100,9 @@ Po úspěšné instalaci doplňku může trvat až hodinu, než budete moci akti
 
    Po úspěšném dokončení procesu **Kontrola stavu poskytování přehledů** můžete povolit funkce Finance Insights v pracovním prostoru **Správa funkcí**.
 
+> [!NOTE]
+> Pokud se proces **Kontrola stavu poskytování statistik** nespustí, přejděte do **Správa systému** > **Dotazy** > **Dávkové úlohy**. V poli **Systém dotazování automatizace procesu** změňte hodnotu na **Čekání** k zahájení procesu. 
+> 
 ## <a name="feedback-and-support"></a>Zpětná vazba a podpora
 
 Pokud máte zájem o poskytnutí zpětné vazby nebo pokud vyžadujete technickou podporu, zašlete prosím e-mail na [Finance Insights (Preview)](mailto:fiap@microsoft.com).

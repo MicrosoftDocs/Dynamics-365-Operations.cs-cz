@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732002"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067447"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimalizace dotazů virtuálních tabulek Dataverse
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="issue"></a>Výdej
 
@@ -47,12 +50,12 @@ Jednou z příčin pomalého výkonu s virtuálními tabulkami Dataverse pro lid
 Příklad, kde můžete vidět tento dopad, je v dotazech proti entitě pracovník (**mshr_hcmworkerentity**) nebo základní pracovník (**mshr_hcmworkerbaseentity**). Problém s výkonem se může projevit několika různými způsoby:
 
 - **Pomalé provádění dotazu**: Dotaz na virtuální tabulku může vrátit očekávané výsledky, ale provedení dotazu trvá déle, než se očekávalo.
-- **Časový limit dotazu**: Dotaz může vypršet a vrátit následující chybu: „Byl získán token pro volání Finance and Operations, ale Finance and Operations vrátil chybu typu InternalServerError.“
+- **Časový limit dotazu**: Dotaz může vypršet a vrátit následující chybu: „Byl získán token pro volání finanční a provozní aplikace, ale ta vrátila chybu typu InternalServerError.“
 - **Neočekávaná chyba** : Dotaz může vrátit chybu typu 400 s následující zprávou: „Došlo k neočekávané chybě.“
 
   ![Typ chyby 400 na HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Omezování**: Dotaz může nadužívat prostředky serveru a podléhat omezením. V tomto případě dotaz vrátí následující chybu: „Byl získán token pro volání Finance and Operations, ale Finance and Operations vrátil chybu typu 429.“ Další informace o omezení v v Human Resources najdete v tématu [Časté otázky k omezování](./hr-admin-integration-throttling-faq.md).
+- **Omezování**: Dotaz může nadužívat prostředky serveru a podléhat omezením. V tomto případě dotaz vrátí následující chybu: „Byl získán token pro volání finanční a provozní aplikace, ale ta vrátila chybu typu 429.“ Další informace o omezení v v Human Resources najdete v tématu [Časté otázky k omezování](./hr-admin-integration-throttling-faq.md).
 
   ![Typ chyby 429 na HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -101,7 +104,7 @@ Pokud narazíte na některý z výše uvedených náznaků pomalého výkonu př
 4. V okně Navigátor rozbalte uzel **Entity**.
 5. Do vyhledávacího pole zadejte **mshr_hcmworkerbaseentity** a vyberte entitu.
 6. Vyberte možnost **Transformovat data**.
-7. V okně Editoru Power Query vyberte **Rozšířený editor**.
+7. V okně editoru Power Query vyberte **Rozšířený editor**.
 8. V okně **Rozšířený editor** aktualizujte dotaz tak, aby vypadal jako dotaz níže, podle potřeby přidejte nebo odeberte sloupce v poli.
 
    ```
@@ -120,7 +123,7 @@ Pokud narazíte na některý z výše uvedených náznaků pomalého výkonu př
    > [!NOTE]
    > Pokud jste předtím obdrželi chybu typu 429 z dotazu před aktualizací, možná budete muset počkat na období opakování před obnovením dotazu, aby se úspěšně dokončil.
 
-10. Klikněte na **Zavřít a použít** na pásu karet akcí Power Query Editor.
+10. Klikněte na **Zavřít a použít** na pásu karet akcí editoru Power Query.
 
 Pak můžete začít budovat sestavu Power BI proti sloupcům vybraným z virtuální tabulky.
 

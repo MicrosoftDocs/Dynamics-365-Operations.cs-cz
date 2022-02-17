@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e4a120dd4199b143c3103392515c85e7b887194b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4c37a91a00aa6b7896bfbf9b57567a25c30d8b35
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982708"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075117"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Co je nového a co se změnilo v Dynamics 365 Supply Chain Management
 
@@ -29,8 +29,9 @@ ms.locfileid: "7982708"
 
 Chcete-li zjistit, co je nového nebo změněno v jednotlivých vydáních aplikace Dynamics 365 Supply Chain Management, naleznete to v následujících tématech.
 
-| Verze | Číslo sestavení | Dostupnost automatické aktualizace | Více informací |
+| Verze | Číslo sestavení | Dostupnost automatické aktualizace | Další informace |
 |---|---|---|---|
+| 10.0.25 | 10.0.1149 | 2022. duben | [Preview verze Dynamics 365 Supply Chain Management 10.0.25](whats-new-scm-10-0-25.md) |
 | 10.0.24 | 10.0.1084 | 2022. únor | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.24](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | 2022. leden | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.23](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | Listopad 2021 | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
@@ -62,7 +63,7 @@ Chcete-li zjistit, co je nového nebo co se změnilo ve vydáních před listopa
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019. června        | [Co je nového nebo změněného v aplikaci Dynamics Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.2      | 10.0.80          | 2019. květen         | [Co je nového nebo změněného v aplikaci Dynamics Dynamics 365 for Finance and Operations verze 10.0.2 (květen 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.1      | 10.0.51          | 2019. duben       | [Co je nového nebo změněného v aplikaci Dynamics Dynamics 365 for Finance and Operations verze 10.0.1 (duben 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | 2019. duben       | [Co je nového nebo co se změnilo v aplikaci Finance and Operations, verze 10.0 (duben 2019) ](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
+| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | 2019. duben       | [Co je nového nebo co se změnilo ve finanční a provozní aplikaci, verze 10.0 (duben 2019) ](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.3       | 8.1.227          | leden 2019     | [Co je nového nebo upraveného v aplikaci Dynamics 365 for Finance and Operations verze 8.1.3 (leden 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.2       | 8.1.195          | 2018. prosince    | [Co je nového nebo upraveného v aplikaci Dynamics 365 for Finance and Operations verze 8.1.2 (prosinec 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.1       | 8.1.170          | 2018. říjen     | [Co je nového nebo změněného v aplikaci Dynamics 365 for Finance and Operations verze 8.1.1 (říjen 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |

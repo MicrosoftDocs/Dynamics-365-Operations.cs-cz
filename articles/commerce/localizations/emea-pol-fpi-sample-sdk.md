@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944808"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076981"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)
 
@@ -116,7 +116,7 @@ V přechozím postupu jste povolili rozšíření, která jsou součástí ukáz
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 
-Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu
 
@@ -124,7 +124,7 @@ Ukázka integrace fiskální tiskárny pro Polsko je založena na [funkci fiská
 
 Rozšíření CRT je **Runtime.Extensions.DocumentProvider.PosnetSample**. Toto rozšíření generuje sadu příkazů specifických pro tiskárnu ve formátu JavaScript Object Notation (JSON), které jsou definovány specifikací POSNET 19-3678.
 
-Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení a služby](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 

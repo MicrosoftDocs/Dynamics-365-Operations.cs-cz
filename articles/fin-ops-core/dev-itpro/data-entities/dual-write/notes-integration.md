@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782349"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062768"
 ---
 # <a name="note-integration"></a>Integrace poznámek
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Během obchodních procesů Microsoft Dynamics 365 uživatelé často shromažďují informace o svých zákaznících. Tyto informace se zaznamenávají jako aktivity a poznámky. Toto téma popisuje integraci dat poznámek v duálním zápisu.
 
@@ -30,7 +30,7 @@ Informace o zákaznících lze klasifikovat následujícími způsoby:
 + **Akční informace pro uživatele Dynamics 365** – Například zákazník, který kupuje jednotku Surface, zadá speciální pokyny, které označují, že by zařízení mělo být před dodáním zabaleno v dárkovém balení. Tyto pokyny jsou akční informace, s nimiž by měl zacházet zaměstnanec společnosti Contoso odpovědný za balení.
 + **Neakční informace** – Například zákazník navštíví obchod Contoso a během rozhovoru se spolupracovníkem obchodu projeví zájem o hry a herní příslušenství *Halo*. Obchodník si tyto informace poznamená. Nástroj pro doporučení produktu jej poté použije k doporučení zákazníkovi.
 
-Obecně jsou akční informace zachyceny jako *činnosti* v aplikacích Finance and Operations a aplikacích Customer Engagement. Neakční jsou informace zachyceny jako *poznámky* v aplikacích Finance and Operations a *anotace* v aplikacích Customer Engagement.
+Obecně jsou akční informace zachyceny jako *činnosti* ve finančních a provozních aplikacích a aplikacích Customer Engagement. Neakční jsou informace zachyceny jako *poznámky* ve finančních a provozních aplikacích a *anotace* v aplikacích Customer Engagement.
 
 > [!TIP]
 > Ačkoli poznámky jsou určeny pro neaktivní informace, aplikace vám nebudou bránit v jejich použití k ukládání a zpracovávání akčních informací, pokud je chcete použít tímto způsobem.
@@ -39,7 +39,7 @@ Společnost Microsoft v současné době vydává funkce pro integraci poznámek
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Vytvoření poznámky v aplikaci Customer Engagement
 
-Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchronizovat do aplikace Finance and Operations, postupujte podle těchto kroků.
+Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchronizovat do finanční a provozní aplikace, postupujte podle těchto kroků.
 
 1. V aplikaci Customer Engagement otevřete záznam účtu pro zákazníka.
 2. V podokně **Časová osa** vyberte znaménko plus (**+**) a poté vyberte **Poznámka** k vytvoření poznámky.
@@ -54,7 +54,7 @@ Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchron
 
     ![Nová poznámka na časové ose zákazníka.](media/notes-ce-3.png)
 
-4. Přihlaste se do aplikace Finance and Operations a otevřete stejný záznam zákazníka. Všimněte si, že tlačítko **Přílohy** (symbol kancelářské sponky) v pravém horním rohu označuje, že záznam má přílohu.
+4. Přihlaste se do finanční a provozní aplikace a otevřete stejný záznam zákazníka. Všimněte si, že tlačítko **Přílohy** (symbol kancelářské sponky) v pravém horním rohu označuje, že záznam má přílohu.
 
     ![Oznámení o příloze.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Chcete-li vytvořit poznámku v aplikaci Customer Engagement a poté ji synchron
 
     ![Poznámka z aplikace Customer Engagement.](media/notes-ce-5.png)
 
-Všechny aktualizace poznámky se synchronizují tam a zpět mezi aplikací Finance and Operations a aplikací Customer Engagement.
+Všechny aktualizace poznámky se synchronizují tam a zpět mezi finanční a provozní aplikací a aplikací Customer Engagement.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Vytvoření poznámky v aplikaci Finance and Operations
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Vytvořte poznámku ve finanční a provozní aplikaci.
 
-Poznámku můžete vytvořit také v aplikaci Finance and Operations a poté ji synchronizovat do aplikace Customer Engagement.
+Poznámku můžete vytvořit také ve finanční a provozní aplikaci a poté ji synchronizovat do aplikace pro zapojení zákazníků.
 
-Chcete-li vytvořit poznámku v aplikaci Finance and Operations a poté ji synchronizovat do aplikace Customer Engagement, postupujte podle těchto kroků.
+Chcete-li vytvořit poznámku ve finanční a provozní aplikaci a poté ji synchronizovat do aplikace pro zapojení zákazníků, postupujte podle těchto kroků.
 
-1. V aplikaci Finance and Operations na stránce **Přílohy** vyberte **Nový** \> **Poznámka**.
+1. Ve finanční a provozní aplikaci na stránce **Přílohy** vyberte **Nová** \> **Poznámka**.
 
-    ![Vytvoření poznámky v aplikaci Finance and Operations.](media/notes-fo-1.png)
+    ![Vytvoření poznámky ve finanční a provozní aplikaci.](media/notes-fo-1.png)
 
 2. Zadejte název a krátkou sadu pokynů a poté vyberte **Uložit**.
 
@@ -84,17 +84,17 @@ Chcete-li vytvořit poznámku v aplikaci Finance and Operations a poté ji synch
 
 Poznámku můžete klasifikovat jako interní nebo externí.
 
-- V aplikaci Finance and Operations na stránce **Přílohy** otevřete poznámku a poté v poli **Omezení** vyberte **Interní**, nebo **Externí**.
+- Ve finanční a provozní aplikaci na stránce **Přílohy** otevřete poznámku a poté v poli **Omezení** vyberte **Interní**, nebo **Externí**.
 
     ![Pole omezení.](media/notes-fo-4.png)
 
 Můžete také vytvořit adresu URL.
 
-1. V aplikaci Finance and Operations na stránce **Přílohy** vyberte **Nový** \> **Adresa URL**.
+1. Ve finanční a provozní aplikaci na stránce **Přílohy** vyberte **Nová** \> **Adresa URL**.
 2. Zadejte nadpis a adresu URL.
 3. V poli **Omezení** pole, vyberte **Interní**, nebo **Externí**.
 
-    ![Vytvoření adresy URL v aplikaci Finance and Operations.](media/notes-fo-5.png)
+    ![Vytvoření adresy URL ve finanční a provozní aplikaci.](media/notes-fo-5.png)
 
 4. Zvolte možnost **Uložit**.
 
@@ -109,7 +109,7 @@ Můžete také vytvořit adresu URL.
 
 Integrace poznámek zahrnuje mapy kolekce tabulek, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
-| Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
+| Finanční a provozní aplikace | Aplikace Customer Engagement | Popis |
 |----------------------------|-------------------------|-------------|
 | [Přílohy zákazníků](mapping-reference.md#230) | Poznámky | Firmy, které používají prostý text a adresy URL k zachycení specifických informací o zákazníkovi (pro organizace i osoby). |
 | [Přílohy dokumentu dodavatele](mapping-reference.md#231) | Poznámky | Firmy, které používají prostý text a adresy URL k zachycení specifických informací o dodavateli (pro organizace i osoby). |

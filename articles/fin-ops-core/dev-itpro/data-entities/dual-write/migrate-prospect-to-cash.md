@@ -2,27 +2,37 @@
 title: Migrace potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu
 description: Toto téma popisuje, jak migrovat potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 01/04/2021
+ms.date: 02/01/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d119a9e5874f73e024cedc4cdb581f947e5bf1a0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.search.validFrom: 2020-01-26
+ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782498"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087261"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Migrace potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu
 
 [!include [banner](../../includes/banner.md)]
 
+Řešení Zpeněžení potenciálního zákazníka dostupné pro Integrátor dat není kompatibilní s duálním zápisem. Důvodem je index msdynce_AccountNumber v tabulce účtů, který byl součástí řešení Zpeněžení potenciálního zákazníka. Pokud tento index existuje, nemůžete vytvořit stejné číslo zákaznického účtu ve dvou různých právnických osobách. Můžete buď začít znovu s duálním zápisem migrací dat Zpeněžení potenciálního zákazníka na hotovostní data z Integrátoru dat na duální zápis, nebo můžete nainstalovat poslední „dorman“ verzi řešení Zpeněžení potenciálního zákazníka. Toto téma popisuje oba tyto scénáře.
+
+## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Nainstalujte poslední „dorman“ verzi řešení Integrátor dat - Zpeněžení potenciálního zákazníka
+
+Za poslední „dorman“ verzi řešení Integrátor dat - Zpeněžení potenciálního zákazníka je považována verze **P2C 15.0.0.2**. Můžete si ji stáhnout z webu [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C).
+
+Musíte ji nainstalovat ručně. Po instalaci zůstává vše úplně stejné, kromě toho, že je odstraněn index msdynce_AccountNumber.
+
+## <a name="steps-to-migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Kroky při migraci dat řešení Zpeněžení ze služby Integrátor dat na duální zápis
+
 Pokud chcete migrovat potenciálního zákazníka na hotovostní data ze služby Data Integrator do duálního zápisu, postupujte následovně.
 
-1. Spusťte program Potenciální zákazník na úlohy integrátoru dat a proveďte jednu konečnou úplnou synchronizaci. Tímto způsobem zajistíte, aby oba systémy (aplikace Finance and Operations a aplikace Customer Engagement) měly všechna data.
+1. Spusťte program Potenciální zákazník na úlohy integrátoru dat a proveďte jednu konečnou úplnou synchronizaci. Tímto způsobem zajistíte, aby oba systémy (finanční a provozní aplikace a aplikace Customer Engagement) měly všechna data.
 2. Chcete-li zabránit možné ztrátě dat, exportujte data Potenciální zákazník pro hotovost z Microsoft Dynamics 365 Sales do souboru Excel nebo do souboru hodnot oddělených čárkami (CSV). Exportujte data z následujících entit:
 
     - [Účet](#account-table)
@@ -37,25 +47,25 @@ Pokud chcete migrovat potenciálního zákazníka na hotovostní data ze služby
 
 3. Odinstalujte řešení Potenciální zákazník pro hotovost z prodejního prostředí. Tento krok odstraní sloupce a odpovídající data, která zavedlo řešení Potenciální zákazník pro hotovost.
 4. Nainstalujte řešení pro duální zápis.
-5. Vytvořte spojení s duálním zápisem mezi aplikací Finance and Operations a aplikací Customer Engagement pro jednu nebo více právnických osob.
+5. Vytvořte spojení s duálním zápisem mezi finanční a provozní aplikací a aplikací Customer Engagement pro jednu nebo více právnických osob.
 6. Povolte mapy tabulek s duálním zápisem a spusťte počáteční synchronizaci pro požadovaná referenční data. (Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).) Příklady požadovaných údajů zahrnují skupiny zákazníků, platební podmínky a platební plány. Nepovolujte mapy duálního zápisu pro tabulky, které vyžadují inicializaci, jako je například účet, nabídka, řádek nabídky, objednávka a tabulky řádků objednávky.
 7. V aplikaci Customer Engagement přejděte na **Pokročilé nastavení \> Nastavení systému \> správa dat \> Pravidla pro detekci duplicit** a zakažte všechna pravidla.
 8. Inicializujte tabulky uvedené v kroku 2. Pokyny najdete ve zbývajících částech tohoto tématu.
-9. Otevřete aplikaci Finance and Operations a povolte mapy tabulek, jako je účet, nabídka, řádek nabídky, objednávka a mapy tabulky řádků objednávky. Pak spusťte počáteční synchronizaci. (Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).) Tento proces bude synchronizovat další informace z aplikace Finance and Operations, jako je stav zpracování, dodací a fakturační adresy, weby a sklady.
+9. Otevřete finanční a provozní aplikaci a povolte mapy tabulek, jako je účet, nabídka, řádek nabídky, objednávka a mapy tabulky řádků objednávky. Pak spusťte počáteční synchronizaci. (Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).) Tento proces bude synchronizovat další informace z finanční a provozní aplikace, jako je stav zpracování, dodací a fakturační adresy, weby a sklady.
 
 ## <a name="account-table"></a>Tabulka účtu
 
 1. Ve sloupci **Společnost** zadejte název společnosti jako **USMF**.
 2. Ve sloupci **Typ vztahu** zadejte jako statickou hodnotu **Zákazník**. Možná nebudete chtít ve své obchodní logice klasifikovat každý záznam účtu jako zákazníka.
-3. Ve sloupci **ID skupiny zákazníků** zadejte číslo skupiny zákazníků z aplikace Finance and Operations. Výchozí hodnota z řešení Zpeněžení potenciálního zákazníka je **10**.
-4. Pokud používáte řešení Zpeněžení potenciálního zákazníka bez jakéhokoli přizpůsobení **Čísla účtu**, zadejte hodnotu **Číslo účtu** do sloupce **Číslo strany**. Pokud existují přizpůsobení a neznáte číslo strany, vytáhněte tyto informace z aplikace Finance and Operations.
+3. Ve sloupci **ID skupiny zákazníků** zadejte číslo skupiny zákazníků z finanční a provozní aplikace. Výchozí hodnota z řešení Zpeněžení potenciálního zákazníka je **10**.
+4. Pokud používáte řešení Zpeněžení potenciálního zákazníka bez jakéhokoli přizpůsobení **Čísla účtu**, zadejte hodnotu **Číslo účtu** do sloupce **Číslo strany**. Pokud existují přizpůsobení a neznáte číslo strany, vytáhněte tyto informace z finanční a provozní aplikace.
 
 ## <a name="contact-table"></a>Kontaktní tabulka
 
 1. Ve sloupci **Společnost** zadejte název společnosti jako **USMF**.
 2. Nastavte následující sloupce na základě hodnoty **IsActiveCustomer** v souboru CSV:
 
-    - Pokud je volba **IsActiveCustomer** nastaven na **Ano** v souboru CSV, nastavte sloupec **Prodejný** na **Ano**. Ve sloupci **ID skupiny zákazníků** zadejte číslo skupiny zákazníků z aplikace Finance and Operations. Výchozí hodnota z řešení Zpeněžení potenciálního zákazníka je **10**.
+    - Pokud je volba **IsActiveCustomer** nastaven na **Ano** v souboru CSV, nastavte sloupec **Prodejný** na **Ano**. Ve sloupci **ID skupiny zákazníků** zadejte číslo skupiny zákazníků z finanční a provozní aplikace. Výchozí hodnota z řešení Zpeněžení potenciálního zákazníka je **10**.
     - Pokud je **IsActiveCustomer** nastaven na **Ne** v souboru CSV, nastavte sloupec **Prodejný** na **Ne** a pak nastavte sloupec **Kontakt pro** na **Zákazník**.
 
 3. Pokud používáte řešení Zpeněžení potenciálního zákazníka bez jakéhokoli přizpůsobení **Kontaktního čísla**, nastavte následující sloupce:
@@ -66,7 +76,7 @@ Pokud chcete migrovat potenciálního zákazníka na hotovostní data ze služby
 
 ## <a name="invoice-table"></a>Tabulka faktury
 
-Protože data z tabulky **Faktura** jsou navržena tak, aby plynula jedním směrem, z aplikace Finance and Operations do aplikace Customer Engagement, inicializace není nutná. Spusťte počáteční synchronizaci a migrujte všechna požadovaná data z aplikace Finance and Operations pro interakci se zákazníkem. Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).
+Protože data z tabulky **Faktura** jsou navržena tak, aby plynula jedním směrem, z finanční a provozní aplikace do aplikace Customer Engagement, inicializace není nutná. Spusťte počáteční synchronizaci a migrujte všechna požadovaná data z finanční a provozní aplikace pro interakci se zákazníkem. Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Tabulka objednávek
 
@@ -84,7 +94,7 @@ Protože data z tabulky **Faktura** jsou navržena tak, aby plynula jedním smě
 
 ## <a name="products-table"></a>Tabulka produktů
 
-Protože data z tabulky **Produkty** jsou navržena tak, aby plynula jedním směrem, z aplikace Finance and Operations do aplikace Customer Engagement, inicializace není nutná. Spusťte počáteční synchronizaci a migrujte všechna požadovaná data z aplikace Finance and Operations pro interakci se zákazníkem. Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).
+Protože data z tabulky **Produkty** jsou navržena tak, aby plynula jedním směrem, z finanční a provozní aplikace do aplikace Customer Engagement, inicializace není nutná. Spusťte počáteční synchronizaci a migrujte všechna požadovaná data z finanční a provozní aplikace pro interakci se zákazníkem. Další informace viz [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Nabídka a tabulky produktu Nabídka
 

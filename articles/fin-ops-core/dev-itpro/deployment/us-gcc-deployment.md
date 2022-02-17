@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817438"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062279"
 ---
 # <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance a Dynamics 365 Supply Chain Management v službě US Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Vyberte produkty United States (US) Government Microsoft Dynamics 365, které jsou k dispozici kvalifikovaným státním a soukromým entitám. Tyto entity jsou omezeny na následující typy:
 
@@ -38,9 +38,9 @@ Po dokončení počátečního onboardingu postupujte podle pokynů v [Onboardin
 
 ## <a name="environment-deployment"></a>Nasazení prostředí
 
-Po dokončení onboardingu projektu si můžete prohlédnout další možnosti LCS, které jsou popsány v [Lifecycle Services (LCS) pro zákazníky aplikací Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Poté přejděte k nasazení prostředí.
+Po dokončení onboardingu projektu si můžete prohlédnout další možnosti LCS, které jsou popsány v [Lifecycle Services (LCS) pro zákazníky finančních a provozních aplikací](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Poté přejděte k nasazení prostředí.
 
-- Chcete-li nasadit prostředí spravovaná společností Microsoft prostřednictvím LCS, postupujte podle pokynů v [Lifecycle Services (LCS) pro zákazníky aplikací Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Chcete-li nasadit prostředí spravovaná společností Microsoft prostřednictvím LCS, postupujte podle pokynů v [Lifecycle Services (LCS) pro zákazníky finančních a provozních aplikací](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - Pro prostředí hostovaná v cloudu viz [Nasazení a přístup k vývojovým prostředím](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Musíte také dokončit proces onboardingu rámce Resource Manager pro vaše konektory, jak je popsáno v [Dokončit proces onboardingu Azure Resource Manager pro projekty US government Lifecycle Services](arm-onbarding-us-goverment.md).
 
 > [!NOTE]

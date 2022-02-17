@@ -9,22 +9,22 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: eaafe8d98049cb8838317396f28e9d6ca720a677
-ms.sourcegitcommit: 08dcbc85e372d4e4fb3ba64389f6d5051212c212
+ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "8015708"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060472"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [Šablony Microsoft Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) vám pomůžoz upgradovat následující stávající data v duálním zápisu na model strany a globálního adresáře: **Účet**, **Kontakt** a **Prodejce**.
 
-K dispozici jsou následující tři šablony Data Factory. Pomáhají odsouhlasit data z aplikací Finance a Operace i aplikací Customer Engagement.
+K dispozici jsou následující tři šablony Data Factory. Pomáhají odsouhlasit data z finančních a provozních aplikací i aplikací Customer Engagement.
 
 - **[Šablona strany](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Upgradujte data na schéma s dvojím zápisem Party-GAB/arm_template.json)** – Tato šablona pomáhá upgradovat data **Strana** a **Kontakt**, která jsou spojena s daty **Účet**, **Kontakt** a **Prodejce**.
 - **[Šablona poštovní adresy strany](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Upgradujte data na schéma Party-GAB s duálním zápisem/Upgradujte na poštovní adresu strany – GAB/arm_template.json)** – Tato šablona pomáhá upgradovat poštovní adresy, které jsou přidruženy k datům **Účet**, **Kontakt** a **Prodejce**.
@@ -34,11 +34,11 @@ Na konci procesu se vygenerují následující soubory s hodnotami oddělenými 
 
 | Název souboru | Účel |
 |---|---|
-| FONewParty.csv | Tento soubor pomáhá vytvářet nové záznamy **Strana** uvnitř aplikace Finance a Operace. |
-| ImportFONewPostalAddressLocation.csv | Tento soubor pomáhá vytvářet nové záznamy **Umístění poštovní adresy** v aplikaci Finance a Operace. |
-| ImportFONewPartyPostalAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Poštovní adresa strany** v aplikaci Finance a Operace. |
-| ImportFONewPostalAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Poštovní adresa** v aplikaci Finance a Operace. |
-| ImportFONewElectronicAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Elektronická adresa** v aplikaci Finance a Operace. |
+| FONewParty.csv | Tento soubor pomáhá vytvářet nové záznamy **Strana** uvnitř finanční a provozní aplikace. |
+| ImportFONewPostalAddressLocation.csv | Tento soubor pomáhá vytvářet nové záznamy **Umístění poštovní adresy** ve finanční a provozní aplikaci. |
+| ImportFONewPartyPostalAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Poštovní adresa strany** ve finanční a provozní aplikaci. |
+| ImportFONewPostalAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Poštovní adresa** ve finanční a provozní aplikaci. |
+| ImportFONewElectronicAddress.csv | Tento soubor pomáhá vytvářet nové záznamy **Elektronická adresa** ve finanční a provozní aplikaci. |
 
 Toto téma vysvětluje, jak používat šablony Data Factory a upgradovat data. Pokud nemáte žádná přizpůsobení, můžete použít šablony tak, jak jsou. Pokud máte přizpůsobení pro data **Účet**, **Kontakt** a **Prodejce**, pak musíte šablonu upravit pomocí pokynů v tomto tématu.
 
@@ -61,7 +61,7 @@ Upgrade vyžaduje následující přípravu:
 + **Integrační klíče**: Tabulky **Účet (zákazník)**, **Kontakt** a **Prodejce** v aplikacích Customer Engagement používají integrační klíče, které byly dodány ihned po vybalení. Pokud jste přizpůsobili integrační klíče, musíte přizpůsobit šablonu.
 + **Číslo strany:** Všechny záznamy **Účet (zákazník)**, **Kontakt** a **Prodejce**, které budou upgradovány, mají číslo strany. Záznamy, které nemají číslo strany, budou ignorovány. Chcete-li tyto záznamy upgradovat, přidejte k nim číslo strany, než zahájíte proces upgradu.
 + **Výpadek systému**: Během procesu upgradu budete muset přepnout prostředí Finance and Operations a Customer Engagement offline.
-+ **Snímek**: Pořiďte snímek aplikací Finance a Operace i Customer Engagement. Potom, pokud potřebujete, můžete použít snímky k obnovení předchozího stavu.
++ **Snímek**: Pořiďte snímek finančních a provozních aplikací i Customer Engagement. Potom, pokud potřebujete, můžete použít snímky k obnovení předchozího stavu.
 
 ## <a name="deployment"></a>Nasazení
 
@@ -120,7 +120,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Nastavení pro spuštění šablony Poštovní adresy strany
 
-1. Přihlaste se do aplikací pro zapojení zákazníků a přejděte na **Nastavení** \> **Nastavení přizpůsobení**. Poté na kartě **Všeobecné** nakonfigurujte nastavení časového pásma pro účet správce systému. Časové pásmo musí být v koordinovaném světovém čase (UTC), aby se aktualizovala data „platí od“ a „platí do“ poštovních adres z aplikací Finance a Operace.
+1. Přihlaste se do aplikací pro zapojení zákazníků a přejděte na **Nastavení** \> **Nastavení přizpůsobení**. Poté na kartě **Všeobecné** nakonfigurujte nastavení časového pásma pro účet správce systému. Časové pásmo musí být v koordinovaném světovém čase (UTC), aby se aktualizovala data „platí od“ a „platí do“ poštovních adres z finančních a provozních aplikací.
 
     ![Nastavení časového pásma pro účet správce systému.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
     | Číslo | Název | Typ | Hodnota |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | řetězec | Tento parametr připojuje sériové číslo k nově vytvořeným poštovním adresám jako předponu. Nezapomeňte zadat řetězec, který není v konfliktu s poštovními adresami v aplikacích Finance a Operace a aplikacích Customer Engagement. Na příklad použijte **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | řetězec | Tento parametr připojuje sériové číslo k nově vytvořeným poštovním adresám jako předponu. Nezapomeňte zadat řetězec, který není v konfliktu s poštovními adresami ve finančních a provozních aplikacích a aplikacích Customer Engagement. Na příklad použijte **ADF-PAD-**. |
 
     ![Globální parametr PostalAddressIdPrefix vytvořený na kartě Spravovat.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
     | Číslo | Název | Typ | Hodnota |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Tento parametr určuje, které primární systémové adresy budou nahrazeny v případě konfliktů. Pokud je hodnota **true**, primární adresy v aplikacích Finance a Operace nahradí primární adresy v aplikacích Customer Engagement. Pokud je hodnota **false**, primární adresy v aplikacích Customer Engagement nahradí primární adresy v aplikacích Finance a Operace. |
-    | 2 | ElectronicAddressIdPrefix | řetězec | Tento parametr připojuje sériové číslo k nově vytvořeným elektronickým adresám jako předponu. Nezapomeňte zadat řetězec, který není v konfliktu s elektronickými adresami v aplikacích Finance a Operace a aplikacích Customer Engagement. Na příklad použijte **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Tento parametr určuje, které primární systémové adresy budou nahrazeny v případě konfliktů. Pokud je hodnota **true**, primární adresy ve finančních a provozních aplikacích nahradí primární adresy v aplikacích Customer Engagement. Pokud je hodnota **false**, primární adresy v aplikacích Customer Engagement nahradí primární adresy ve finančních a provozních aplikacích. |
+    | 2 | ElectronicAddressIdPrefix | řetězec | Tento parametr připojuje sériové číslo k nově vytvořeným elektronickým adresám jako předponu. Nezapomeňte zadat řetězec, který není v konfliktu s elektronickými adresami ve finančních a provozních aplikacích a aplikacích Customer Engagement. Na příklad použijte **ADF-EAD-**. |
 
     ![Globální parametry IsFOSource a ElectronicAddressIdPrefix vytvořené na kartě Spravovat.](media/ADF-4.png)
 
@@ -151,7 +151,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
 ## <a name="run-the-templates"></a>Spusťte šablony
 
-1. Zastavte následující mapy dvojitého zápisu **Účet**, **Kontakt** a **Prodejce**, které využívají aplikaci Finance a Operace:
+1. Zastavte následující mapy dvojitého zápisu **Účet**, **Kontakt** a **Prodejce**, které využívají finanční a provozní aplikaci:
 
     + Zákazníci V3 (accounts)
     + Zákazníci V3(kontakty)
@@ -161,7 +161,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
 2. Ujistěte se, že jsou mapy odstraněny z tabulky **msdy_dualwriteruntimeconfig** v Dataverse.
 3. Nainstalujte [řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab) z AppSource.
-4. V aplikaci Finance a Operace spusťte **Počáteční synchronizaci** pro následující tabulky, pokud obsahují data.
+4. Ve finanční a provozní aplikaci spusťte **Počáteční synchronizaci** pro následující tabulky, pokud obsahují data.
 
     + Oslovení
     + Typy osobní charakteristiky
@@ -261,10 +261,10 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
     > [!NOTE]
     > Pokud máte přizpůsobení pro **Účet**, **Kontakt** a **Prodejce**, musíte šablonu upravit.
 
-8. Importujte nové záznamy **Strana** do aplikace Finance a Operace.
+8. Importujte nové záznamy **Strana** do finanční a provozní aplikace.
 
     1. Stáhněte si soubor **FONewParty.csv** z úložiště Azure Blob. Cesta je **partybootstrapping/output/FONewParty.csv**.
-    2. Převeďte soubor **FONewParty.csv** do souboru Excel a importujte soubor Excel do aplikace Finance a Operace. Případně, pokud vám CSV import vyhovuje, můžete soubor .csv importovat přímo. V závislosti na objemu dat může tento krok trvat několik hodin. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
+    2. Převeďte soubor **FONewParty.csv** do souboru Excel a importujte soubor Excel do finanční a provozní aplikace. Případně, pokud vám CSV import vyhovuje, můžete soubor .csv importovat přímo. V závislosti na objemu dat může tento krok trvat několik hodin. Další informace naleznete v tématu [Přehled úloh importu a exportu dat](../data-import-export-job.md).
 
     ![Import záznamů Strany Dataverse.](media/data-factory-import-party.png)
 
@@ -275,7 +275,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
     ![Spouštění šablon Poštovní adresy strany a Elektronické adresy strany.](media/ADF-7.png)
 
-10. Chcete-li aktualizovat aplikace Finance a Operace s těmito daty, musíte převést soubory .csv do sešitu aplikace Excel a [importovat jej do aplikace Finance and Operations](/data-entities/data-import-export-job). Případně, pokud vám CSV import vyhovuje, můžete soubory .csv importovat přímo. V závislosti na objemu může tento krok trvat několik hodin.
+10. Chcete-li aktualizovat finanční a provozní aplikace s těmito daty, musíte převést soubory .csv do sešitu aplikace Excel a [importovat jej do finanční a provozní aplikace](/data-entities/data-import-export-job). Případně, pokud vám CSV import vyhovuje, můžete soubory .csv importovat přímo. V závislosti na objemu může tento krok trvat několik hodin.
 
     ![Úspěšný import.](media/ADF-8.png)
 
@@ -358,9 +358,9 @@ Tato část vás provede kroky v každé šabloně Data Factory.
 ### <a name="steps-in-the-party-template"></a>Kroky v šabloně Strany
 
 1. Kroky 1 až 6 identifikují společnosti, které mají povolený dvojí zápis, a vytvoří pro ně klauzuli filtru.
-2. Kroky 7-1 až 7-9 načítají data z aplikace Finance a Operace a aplikace Customer Engagement a připraví tato data pro upgrade.
-3. Kroky 8 až 9 porovnají číslo strany pro záznamy **Účet**, **Kontakt** a **Prodejce** mezi aplikacemi Finance a Operace a aplikacemi Customer Engagement. Všechny záznamy, které nemají číslo strany, budou přeskočeny.
-4. Krok 10 vygeneruje dva soubory .csv pro záznamy strany, které je třeba vytvořit v aplikaci Customer Engagement a v aplikaci Finance a Operace.
+2. Kroky 7-1 až 7-9 načítají data z finanční a provozní aplikace a aplikace Customer Engagement a připraví tato data pro upgrade.
+3. Kroky 8 až 9 porovnají číslo strany pro záznamy **Účet**, **Kontakt** a **Prodejce** mezi finančními a provozními aplikacemi a aplikacemi Customer Engagement. Všechny záznamy, které nemají číslo strany, budou přeskočeny.
+4. Krok 10 vygeneruje dva soubory .csv pro záznamy strany, které je třeba vytvořit v aplikaci Customer Engagement a ve finanční a provozní aplikaci.
 
     - **FOCDSparty.csv** – Tento soubor obsahuje všechny záznamy stran obou systémů bez ohledu na to, zda má společnost povolen duální zápis.
     - **FONewParty.csv** – Tento soubor obsahuje dílčí sadu záznamů strany, kterých si je Dataverse vědom (například účty typu **Potenciální zákazník**).
@@ -376,11 +376,11 @@ Tato část vás provede kroky v každé šabloně Data Factory.
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Kroky v šabloně Poštovní adresa strany
 
-1. Kroky 1-1 až 1-10 načítají data z aplikace Finance a Operace a aplikace Customer Engagement a připraví tato data pro upgrade.
-2. Krok 2 denormalizuje data poštovní adresy v aplikaci Finance a Operace spojením poštovní adresy a poštovní adresy strany.
+1. Kroky 1-1 až 1-10 načítají data z finanční a provozní aplikace a aplikace Customer Engagement a připraví tato data pro upgrade.
+2. Krok 2 denormalizuje data poštovní adresy ve finanční a provozní aplikaci spojením poštovní adresy a poštovní adresy strany.
 3. Krok 3 odstraní duplicitu a sloučí údaje o adrese účtu, kontaktu a dodavatele z aplikace pro zapojení zákazníků.
-4. Krok 4 vytvoří soubory .csv pro aplikaci Finance a Operace k vytvoření nových údajů o adrese založených na adresách účtu, kontaktu a prodejce.
-5. Krok 5-1 vytvoří soubory .csv pro aplikaci pro zapojení zákazníků, aby se vytvořila všechna data adres na základě aplikace Finance a Operace a aplikace pro zapojení zákazníků.
+4. Krok 4 vytvoří soubory .csv pro finanční a provozní aplikaci k vytvoření nových údajů o adrese založených na adresách účtu, kontaktu a prodejce.
+5. Krok 5-1 vytvoří soubory .csv pro aplikaci pro zapojení zákazníků, aby se vytvořila všechna data adres na základě finanční a provozní aplikace a aplikace pro zapojení zákazníků.
 6. Krok 5-2 převede soubory .csv na formát importu Finance and Operations pro ruční import.
 
     - ImportFONewPostalAddressLocation.csv
@@ -395,13 +395,13 @@ Tato část vás provede kroky v každé šabloně Data Factory.
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Kroky v šabloně Elektronická adresa strany
 
-1. Kroky 1-1 až 1-5 načítají data z aplikace Finance a Operace a aplikace Customer Engagement a připraví tato data pro upgrade.
+1. Kroky 1-1 až 1-5 načítají data z finanční a provozní aplikace a aplikace Customer Engagement a připraví tato data pro upgrade.
 2. Krok 2 konsoliduje elektronické adresy v aplikaci pro zapojení zákazníků z entit účet, kontakt a dodavatel.
-3. Krok 3 sloučí data primární elektronické adresy z aplikace pro zapojení zákazníků a aplikace Finance a Operace.
+3. Krok 3 sloučí data primární elektronické adresy z aplikace pro zapojení zákazníků a finanční a provozní aplikace.
 4. Krok 4 vytvoří soubory .csv.
 
-    - Vytvořte nové údaje elektronické adresy pro aplikaci Finance a Operace na základě adres účet, kontakt a dodavatel.
-    - Vytvořte nová data elektronické adresy pro aplikaci pro zapojení zákazníků na základě elektronické adresy, účtu, kontaktních adres a adres prodejců a aplikaci Finance a Operace.
+    - Vytvořte nové údaje elektronické adresy pro finanční a provozní aplikaci na základě adres účet, kontakt a dodavatel.
+    - Vytvořte nová data elektronické adresy pro aplikaci pro zapojení zákazníků na základě elektronické adresy, účtu, kontaktních adres a adres prodejců a finanční a provozní aplikaci.
 
 5. Krok 5-1 importuje elektronické adresy do aplikace pro zapojení zákazníků.
 6. Krok 5-2 vytvoří soubory .csv pro aktualizaci primárních adres pro účty a kontakty v aplikaci pro zapojení zákazníků.

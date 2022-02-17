@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647553"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075493"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Seznam funkcí elektronického výkaznictví textové kategorie
 
@@ -35,6 +35,7 @@ Textové funkce elektronického výkaznictví (ER) lze použít k provádění o
 | [Sloučit](er-functions-text-concatenate.md) | Tato funkce vrací všechny zadané textové řetězce jako hodnotu typu *řetězec* poté, co byly spojeny do jednoho řetězce. |
 | [Formát](er-functions-text-format.md) | Tato funkce vrací zadaný řetězec jako hodnotu typu *řetězec* po zformátování nahrazením všech výskytů hodnoty **%N** argumentem *N* tý. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Tato funkce vyhledá určitou hodnotu typu *výčet* v zadaném zdroji dat výčtu pomocí názvu výčtu, který je zadán jako hodnota typu *řetězec*. Pokud je nalezena hodnota *výčet*, funkce ji vrátí. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Tato funkce hledá konkrétní štítek, aby vrátila a hodnotu *[Řetězec](er-formula-supported-data-types-primitive.md#string)*, která představuje překlad zadaného štítku do zadaného jazyka. |
 | [GuidValue](er-functions-text-guidvalue.md) | Tato funkce převede zadaný vstup datového typu *String* na datovou položku datového typu *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Tato funkce analyzuje data ve formátu notace objektu JavaScript (JSON), který je přístupný ze zadané cesty, a extrahuje skalární hodnotu založenou na zadaném ID. Poté vrátí extrahovanou skalární hodnotu jako *řetězcovou* hodnotu. |
 | [Vlevo](er-functions-text-left.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků od počátku zadaného řetězce. |

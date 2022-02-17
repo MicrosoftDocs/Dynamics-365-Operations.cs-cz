@@ -1,6 +1,6 @@
 ---
 title: Obecné řešení potíží
-description: Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
+description: Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: bcedb9f6e8fb15210512ed6a376d4329759593e4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781167"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062331"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
+
+Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -44,37 +44,37 @@ Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 2. Najděte protokoly sledování, kde sloupec **Název typu** je nastaven na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Chcete-li zobrazit úplný protokol, klikněte dvakrát na položku, a potom na pevné záložce **Spuštění** zkontrolujte text **Message Block**.
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v aplikacích Finance and Operations
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v finančních a provozních aplikacích
 
 **Požadovaná role pro zobrazení chyb:** správce systému
 
-Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou objevit v aplikaci Finance and Operations. Pomocí následujících kroků můžete zapnout podrobné protokolování chyb:
+Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou objevit ve finanční a provozní aplikaci. Pomocí následujících kroků můžete zapnout podrobné protokolování chyb:
 
-1. Všechny konfigurace projektu v aplikaci Finance and Operations mají příznak **IsDebugMode** v tabulce **DualWriteProjectConfiguration**.
-2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance and Operations pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+1. Všechny konfigurace projektu ve finanční a provozní aplikaci mají příznak **IsDebugMode** v tabulce **DualWriteProjectConfiguration**.
+2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
 3. Nastavte **IsDebugMode** na **Ano** v projektu.
 4. Spuštění scénáře generujících chyby.
 5. Podrobné protokoly jsou uloženy v tabulce **DualWriteErrorLog**.
 6. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující odkaz: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` nahraďte `999` podle potřeby.
 7. Aktualizujte znovu po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), který je k dispozici pro aktualizace platformy 37 a novější. Pokud máte tuto opravu nainstalovanou, režim ladění zachytí více protokolů.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro aplikaci Finance and Operations
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro finanční a provozní aplikaci
 
 **Požadovaná role pro zobrazení chyb:** Správce systému
 
 1. Přihlaste se do Microsoft Dynamics Lifecycle Services (LCS).
 2. Otevřete projekt LCS, který jste zvolili pro testování dvojího zápisu.
 3. Zvolte dlaždici **Prostředí hostovaná v cloudu**.
-4. Pomocí vzdálené plochy se přihlaste k virtuálnímu počítači (VM) pro aplikaci Finance and Operations. Použijte místní účet, který je zobrazen v poli LCS.
+4. Pomocí vzdálené plochy se přihlaste k virtuálnímu počítači (VM) pro finanční a provozní aplikaci. Použijte místní účet, který je zobrazen v poli LCS.
 5. Otevřete prohlížeč událostí.
 6. Vyberte **Protokoly aplikací a služeb \> Microsoft \> Dynamics \> AX -DualWriteSync \> Provozní**.
 7. Prohlédněte si seznam posledních chyb.
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Zrušte propojení a propjte jiné prostředí Dataverse z aplikace Finance and Operations
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Odpojení a propojení jiného prostředí Dataverse z finanční a provozní aplikace
 
-**Požadovaná role pro zrušení propojení prostředí:** Správce systému buď pro aplikaci Finance and Operations nebo Dataverse.
+**Požadovaná role pro zrušení propojení prostředí**: Správce systému buď pro finanční a provozní aplikaci nebo Dataverse.
 
-1. Přihlášení do aplikace Finance and Operations.
+1. Přihlášení do finanční a provozní aplikace.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**.
 3. Vyberte všechna spuštěná mapování a pak vyberte **Zastavit**.
 4. Zvolte **Odpojit prostředí**.

@@ -2,7 +2,7 @@
 title: Odstraňování problémů s nastavením Finance Insights
 description: Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968829"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064859"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Odstraňování problémů s nastavením Finance Insights
 
@@ -92,3 +92,25 @@ Následující kroky by měly být dokončeny.
   | ---------------------------- | ---------------- |
   | Mikroslužby CDS Microsoft Dynamics ERP | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Příznak: Chyba: „Nenalezli jsme žádná data pro vybraný rozsah filtru. Vyberte jiný rozsah filtru a zkuste to znovu.“ 
+
+### <a name="resolution"></a>Řešení
+
+Zkontrolujte nastavení integrátoru dat, abyste ověřili, že funguje podle očekávání, a odesílá data z AI Builder zpět do Finance.  
+Další informace naleznete v tématu [Vytvoření projektu integrace dat](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Příznak: Trénování předpovědi plateb zákazníka se nezdařilo a chyba AI Builder uvádí : „Předpověď musí mít pouze dvě různé výsledné hodnoty pro trénování modelu. Mapujte na dva výsledky a znovu natrénujte“, „Problém se zprávou o trénování: IsNotMinRequiredDistinctNonNullValues“.
+
+### <a name="resolution"></a>Řešení
+
+Tato chyba znamená, že v posledním roce není dostatek historických transakcí, které představují každou kategorii popsanou v kategoriích **Včas**, **Pozdě** a **Velmi pozdě**. Chcete-li tuto chybu vyřešit, upravte období transakce **Velmi pozdě**. Pokud úprava období transakce **Velmi pozdě** chybu neopraví, **Předpovědi plateb zákazníků** není nejlepším řešením, protože potřebuje data v každé kategorii pro účely trénování.
+
+Další informace o tom, jak upravit kategorie **Včas**, **Pozdě** a **Velmi pozdě** viz [Aktivace předpovědí plateb zákazníků](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Příznak: Trénink modelu selhal
+
+### <a name="resolution"></a>Řešení
+
+Trénink modelu **Předpověď peněžních toků** vyžaduje data, která pokrývají více než jeden rok a obsahují více než 100 transakcí. Tyto transakce musí ovlivnit účty likvidity, které jsou zahrnuty v nastavení prognózy peněžních toků.
+
+**Předpovědi plateb zákazníků** vyžaduje alespoň 100 zákaznických faktur a platebních transakcí za posledních šest až devět měsíců k vytvoření předpovědí.  

@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd9c39bb3b5e221694fe20a8085c9099040cb422
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: b7c2423faa4a0c50d9d319a9e6f489e2946c36a7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431081"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071437"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Přihlášení zaměstnance k plánu fixní kompenzace
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -31,8 +34,8 @@ Manažer kompenzací a zaměstnaneckých výhod může přiřadit zaměstnance k
 3. Klikněte na odkaz na vybraném řádku v seznamu.
 4. V poli **Pozice** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 5. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Uvedená úroveň pochází z úrovně kompenzace pro úlohu na dané pozici. Úroveň musí být nastavena na stav Úloha předtím, než ji bude možné přiřadit zaměstnanci.  
-6. V poli **Plán** vyberte plán fixní kompenzace pro zaměstnance. Vyhledávání plánu je filtrováno a zobrazí pouze plány, pro které je zaměstnanec způsobilý podle pravidel způsobilosti.
+    * Zobrazená úroveň pochází z pole **Úroveň** na záložce **Kompenzace** z **úlohy**, která je přiřazena k **Pracovní pozici**. Úroveň musí být nastavena na stav Úloha předtím, než ji bude možné přiřadit zaměstnanci.  
+6. V poli **Plán** vyberte plán fixní kompenzace pro zaměstnance. Vyhledávání **plánu** je filtrováno a zobrazí pouze plány, pro které je zaměstnanec způsobilý podle **pravidel způsobilosti**.
 7. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Výchozí nastavení pro **Datum zahájení platnosti** a **Datum konce platnosti** vychází z počátečního a koncového data pro přiřazení pozice pracovníka. Tato data lze změnit podle potřeby.  
     * Je-li Plán fixní kompenzace plánem kroku, vyberte krok obsahující správné mzdové sazby pro zaměstnance. Je-li Plán fixní kompenzace plánem stupně nebo pásma, zadejte mzdovou sazbu pro zaměstnance. Mzdová sazba bude ověřena podle nastavení tolerance pro plán a minimálních a maximálních referenčních bodů pro úroveň kompenzace pozice.  

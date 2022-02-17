@@ -2,7 +2,7 @@
 title: Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
 description: Toto téma vysvětluje, jak zřídit místní jednotky škálování hrany pomocí vlastního hardwaru a nasazení, které je založeno na místních obchodních datech (LBD).
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920666"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024535"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
 
@@ -26,6 +26,13 @@ Jednotky škálování hrany hrají důležitou roli v distribuované hybridní 
 Jednotky škálování hrany lze nasadit vytvořením [místního prostředí](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) místních obchodních dat (LBD) a poté je nakonfigurovat tak, aby fungovaly jako jednotka škálování ve vaší distribuované hybridní topologii pro správu dodavatelského řetězce. Toho je dosaženo propojením místního prostředí LBD s prostředím Supply Chain Management v cloudu, které bylo nakonfigurováno tak, aby fungovalo jako centrum.  
 
 Toto téma popisuje, jak nastavit místní prostředí LBD jako jednotku škálování hrany a pak ji přidružit k centru.
+
+## <a name="infrastructure-considerations"></a>Úvahy o infrastruktuře
+
+Hranové jednotky škálování běží v místních prostředích, takže požadavky na infrastrukturu jsou dost podobné. Existují však určité rozdíly, které je třeba poznamenat:
+
+- Hranové jednotky škálování nepoužívají Financial Reporting, takže nevyžadují uzly Financial Reporting.
+- Výrobní a skladovací úlohy není náročné na výpočetní výkon, proto zvažte odpovídající velikost výpočetního výkonu pro uzly AOS.
 
 ## <a name="deployment-overview"></a>Přehled nasazení
 

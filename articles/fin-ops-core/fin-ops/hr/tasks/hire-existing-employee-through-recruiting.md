@@ -9,19 +9,23 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49bb7bea167674eb81fd6d1144c6c302a7c29391
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964901"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074906"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Najmutí existujících zaměstnanců prostřednictvím náboru
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funkce uvedené v tomto tématu jsou aktuálně dostupné pro zákazníky Human Resources v samostatné infrastruktuře Finance.  
+
 
 Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci. Tento postup vás provede kroky zařazení existujícího zaměstnance prostřednictvím procesu náboru. V tomto postupu je již nastaven náborový projekt a existující zaměstnanec již odeslal přihlášku týkající se daného náborového projektu. K vytvoření této procedury jsou použita ukázková data společnosti **USMF**.
 

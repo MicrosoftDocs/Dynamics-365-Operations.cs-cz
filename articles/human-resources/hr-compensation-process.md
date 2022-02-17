@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484089"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071433"
 ---
 # <a name="process-compensation"></a>Proces kompenzace
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Po uložení parametrů procesní události můžete klepnutím na tlačítko **
 
 Kliknutím na tlačítko **Přidat** na kartě **Plány** přidejte plán kompenzace do procesní události. Sloupce **Použít jiný účinek**, **Koeficient účinku** a **Popis účinku** slouží pouze pro variabilní plány kompenzace a nejsou uvedené v tomto tématu.
 
-Uložte záznam a kliknutím na tlačítko **Přidat** na kartě **Akce** přidejte akce fixní kompenzace pro vybraný plán. Použijte volbu **Povolit doporučení**, pokud chcete zadat jiné množství než vypočtené zvýšení směrnice pro akci. Chcete-li vypočítat akci, která vychází z výsledku předchozí akce a propojit více akcí kompenzace, zapněte možnost **Použít předchozí výsledek**. Akce fixní kompenzace jsou typy logiky kompenzace, kterým můžete dát popisná jména. Pro plány Platová třída a Pásmo můžete přidat pouze akce fixní kompenzace následujících typů:
+Uložte záznam a kliknutím na tlačítko **Přidat** na kartě **Akce** přidejte akce fixní kompenzace pro vybraný plán. Použijte volbu **Povolit doporučení**, pokud chcete zadat jiné množství než vypočtené zvýšení směrnice pro akci. Chcete-li vypočítat akci, která vychází z výsledku předchozí akce a propojit více akcí kompenzace, zapněte možnost **Použít předchozí výsledek**. Akce fixní kompenzace jsou typy logiky kompenzace, kterým můžete dát popisná jména. Pro plány **Platová třída** a **Pásmo** můžete přidat pouze akce fixní kompenzace následujících typů:
 
-| Typ akce fixní kompenzace | Funkce                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ akce fixní kompenzace | Funkce                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Jmění                        | Akce jmění porovnají mzdovou sazbu zaměstnance mezd ke koncovému datu cyklu s nejnižším referenčním bodem pro úroveň určenou v úloze zaměstnance. Pokud je mzdová sazba zaměstnance menší než minimální referenční bod, bude vypočítáno zvýšení potřebné k získání zaměstnance na minimální bod v rozsahu.                                                                                |
 | Zásluha                         | Akce zásluh vypočítá zvýšení založen na mzdové sazbě zaměstnance ke koncovému datu cyklu a procento zvýšení uvedené v rozpočtu fixního navýšení pro oddělení, odbor a umístění zaměstnance.                                                                                                                                                                                         |
 | Obecné                       | Hlavní akce vypočítají navýšení na základě procenta nebo přidělí zaměstnanci paušální částku. To závisí na nastavení **fixní kompenzace** na kartě **Obecné**.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Uložte záznam a kliknutím na tlačítko **Přidat** na kartě **Akce** přide
 
 Do plánu Krok je možné přidat pouze akce **Fixní kompenzace** typu Krok.
 
-| Typ akce fixní kompenzace | Funkce                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Typ akce fixní kompenzace | Funkce                |
+|--------------------------------|------------------------------|
 | Krok                           | Na kartě **Všeobecné** určete, zda má tato akce kroku převést zaměstnance dopředu o 0 kroků, 1 krok nebo dva kroky.                                                                                  |
 |                                | **0 kroků** – zaměstnanec obdrží dojde mzdovou sazbu pro aktuální krok, na kterém jsou.                                                                                                                      |
 |                                | **1 krok** – systém nejprve zkontroluje, zda zaměstnanec již je na posledním referenční bodě pro svou úroveň.                                                                                             |
-|                                | **2 kroky** -systém přesune zaměstnance o dva kroky na jejich aktuální úrovni. Systém může přesouvat zaměstnance pouze o jeden nebo nula kroků, pokud dosáhnou posledního referenčního bodu pro svou úroveň. |
+|                                | **2 kroky** – zaměstnanec se přesune o dva kroky na své aktuální úrovni. Zaměstnanec se může přesouvat pouze o jeden nebo nula kroků, pokud dosáhne posledního referenčního bodu pro svou úroveň. |
 
 ## <a name="run-the-compensation-process"></a>Spustit proces kompenzace
 Po nastavení procesní události s nezbytnými datovými poli, plány a akcemi klikněte na **Spustit proces** na stránce **Událost procesu** a otevřete tak dialog **Spustit události procesu kompenzace**. Klikněte na možnost **Zobrazit výsledky zpracování** a podívejte se, jak velké částky kompenzace byly vypočteny pro jednotlivé zaměstnance. Klepnutím na tlačítko **OK** se spustí proces kompenzace pro všechny zaměstnance, kteří jsou ve vybraných plánech kompenzací ke koncovému datu.

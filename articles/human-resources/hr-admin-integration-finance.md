@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba984d26c5c0b1376c0ad85e5c0665da004a46a5
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414681"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065009"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurace integrace s aplikací Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Chcete-li integrovat Dynamics 365 Human Resources s Dynamics 365 Finance, můžete použít šablonu Human Resources do Finance v [Integrátoru dat](/powerapps/administrator/data-integrator). Šablona Human Resources do Finance umožňuje tok dat pro úlohy, pozice a pracovníky. Šablona umožňuje tok dat z Human Resources do Finance, ale neumožňuje data tok z Finance do Human Resources.
 

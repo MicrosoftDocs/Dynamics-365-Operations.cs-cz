@@ -10,18 +10,25 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007567"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067244"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20150"></a>Verze 2.0.15.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Zlepšení výkonu opravou problému s únikem paměti.
+- Opraven problém, kdy se některé hodnoty polí neaktualizovaly správně, když byly vybrány na stránce podrobností.
 
 ## <a name="version-20140"></a>Verze 2.0.14.0
 

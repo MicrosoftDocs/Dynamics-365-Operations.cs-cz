@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4b9f09db8465cc55c9b0c4dc403c2c7a3647d7e
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 67682b6ea949183c2697b658bb77925a791e7da1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728705"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071438"
 ---
 # <a name="set-up-positions"></a>Nastavit pozice
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -35,48 +38,47 @@ Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice 
 
     Pole **Popis úlohy**, **Název** a **Faktor zaměstnání ekvivalentní pro plný úvazek** se automaticky zkopírují z vybrané úlohy na pozici.
 
-5. Vyřešit změny úlohy.
-6. Zvolte **Vytvořit pozici**.
-7. V poli **Oddělení** zadejte nebo vyberte hodnotu.
-8. V poli **Typ pozice** zadejte nebo vyberte hodnotu.
-9. V poli **Oblast kompenzace** zadejte nebo vyberte hodnotu.
+5. Zvolte **Vytvořit pozici**.
+6. V poli **Oddělení** zadejte nebo vyberte hodnotu.
+7. V poli **Typ pozice** zadejte nebo vyberte hodnotu.
+8. V poli **Oblast kompenzace** zadejte nebo vyberte hodnotu.
 
     Pole **Oblast kompenzace** určuje pravidla způsobilosti kompenzace a rozpočty fixního zvýšení platné pro zaměstnance na této pozici.
 
-10. Do pole **K dispozici pro přiřazení** zadejte datum a čas.
-11. Rozbalte oddíl **Doba trvání pozice**.
+9. Do pole **K dispozici pro přiřazení** zadejte datum a čas.
+10. Rozbalte oddíl **Doba trvání pozice**.
 
     Ve výchozím nastavení se zadává trvání pozice na základě dříve zadaného data aktivace a vyřazení.
 
-12. Rozbalte sekci **Sestavy pro umístění**.
+11. Rozbalte sekci **Sestavy pro umístění**.
 
     Po přiřazení pracovníka k pozici, která je podřízena jiné pozici, můžete vytvořit vztah přímého vykazování mezi zaměstnanci, kteří jsou přiřazeni do dvou pozic.
 
-13. Výběrem možnosti **Nové** otevřete rozevírací dialogové okno.
-14. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu.
-15. Vyberte **Vytvořit**.
-16. Rozbalte oddíl **Přiřazení pracovníka**.
-17. Rozbalte oddíl **Vztahy**.
+12. Výběrem možnosti **Nové** otevřete rozevírací dialogové okno.
+13. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu.
+14. Vyberte **Vytvořit**.
+15. Rozbalte oddíl **Přiřazení pracovníka**.
+16. Rozbalte oddíl **Vztahy**.
 
     Pokud vaše společnost používá hierarchii matice nebo jinou vlastní hierarchii, můžete nastavit typy hierarchií pozic a přidat vztahy podřízenosti k pozicím pro každý nastavený typ hierarchie.
 
-18. Vyberte **přidat**.
-19. Označte na seznamu vybraný řádek.
-20. V poli **Název hierarchie** zadejte nebo vyberte hodnotu.
-21. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu.
-22. Rozbalte sekci **Mzdy**.
-23. V poli **Platební cyklus** zadejte nebo vyberte hodnotu.
-24. V poli **Zaplatil(a)** zadejte nebo vyberte hodnotu.
-25. Do pole **Roční normální hodiny** zadejte číslo.
+17. Vyberte **přidat**.
+18. Označte na seznamu vybraný řádek.
+19. V poli **Název hierarchie** zadejte nebo vyberte hodnotu.
+20. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu.
+21. Rozbalte sekci **Mzdy**.
+22. V poli **Platební cyklus** zadejte nebo vyberte hodnotu.
+23. V poli **Zaplatil(a)** zadejte nebo vyberte hodnotu.
+24. Do pole **Roční normální hodiny** zadejte číslo.
 
     Zadaná hodnota představuje počet pravidelně placených hodin, které jsou od pracovníka na této pozici každý rok očekávány.
 
-26. Rozbalte část **Odbory**.
-27. Sbalte část **Odbory**.
-28. Rozbalte část **Finanční dimenze**.
-29. V poli **Šablona distribuce** zadejte nebo vyberte hodnotu.
-30. V poli **Oddělení** zadejte nebo vyberte hodnotu.
-31. Zvolte možnost **Uložit**.
+25. Rozbalte část **Odbory**.
+26. Sbalte část **Odbory**.
+27. Rozbalte část **Finanční dimenze**.
+28. V poli **Šablona distribuce** zadejte nebo vyberte hodnotu.
+29. V poli **Oddělení** zadejte nebo vyberte hodnotu.
+30. Zvolte možnost **Uložit**.
 
 
 

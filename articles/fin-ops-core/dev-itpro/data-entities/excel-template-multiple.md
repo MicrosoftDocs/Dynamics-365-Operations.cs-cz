@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 343767d056eb164a7da70fb983fe37569a12986c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: cf3c423bdf06685a3c4025551927123773ae818a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403993"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070054"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Šablony dat s více listy
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Správa dat v aplikaci podporuje šablony založené na aplikaci Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
 

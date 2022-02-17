@@ -13,14 +13,17 @@ ms.search.industry: Service industries
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e33b9216838313e8f294f4f0f196b07a3d5cc9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c57ba991de366b4a0e1aa02971a107bed488f914
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964927"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070468"
 ---
 # <a name="enter-project-timesheets"></a>Zadávání časových rozvrhů projektů
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Tato procedura vám umožní vytvořit časový rozvrh pomocí prázdné stránky časového rozvrhu. Nový časový rozvrh můžete založit na informacích z dřívějšího časového rozvrhu nebo na přiřazení projektů a aktivit na stránce **Oblíbené položky**. Standardně stránka seznamu **Všechny časové rozvrhy** zobrazí všechny časové rozvrhy pro aktuální období. Můžete použít pole **Zobrazit** na stránce **Moje časové rozvrhy** pro filtrování seznamu časových rozvrhů podle období nebo projektu nebo k zobrazení časových rozvrhů, které byly vytvořeny jménem ostatních pracovníků. K vytvoření této procedury jsou použita ukázková data společnosti **USSI**.
 

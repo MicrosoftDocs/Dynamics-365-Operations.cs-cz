@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431455"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071408"
 ---
 # <a name="edit-personal-information"></a>Upravit osobní informace
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Parametry nastavené na stránce **Parametry globálního adresáře** určují 
     - Chcete-li přidat identifikační číslo, vyberte možnost **Nové**. Podle potřeby vyplňte pole a vyberte **Uložit**.
     - Chcete-li upravit číslo, vyberte možnost **Upravit**. Podle potřeby upravte pole a vyberte **Uložit**.
 
-7. Chcete-li změnit metody, kterým jste placeni, vyberte kartu **Moje informace o platbě**. Tato karta je k dispozici pouze v případě, že ve formuláři **Parametry lidských zdrojů** jsou povoleny způsoby platby. Oddělení lidských zdrojů může povolit způsoby platby **Bankovní směnka**, **Hotovost**, **Šek**, **Elektronická platba** nebo **Ostatní**. Oddělení lidských zdrojů může také zakázat elektronické ověření plateb (používá se pro mzdy v USA) a ověření bankovního účtu směrového čísla.
+7. Chcete-li změnit metody, kterým jste placeni, vyberte kartu **Moje informace o platbě**. Tato karta je k dispozici pouze v případě, že na stránce **Parametry lidských zdrojů** jsou povoleny způsoby platby. Oddělení lidských zdrojů může povolit způsoby platby **Bankovní směnka**, **Hotovost**, **Šek**, **Elektronická platba** nebo **Ostatní**. Oddělení lidských zdrojů může také zakázat elektronické ověření plateb (používá se pro mzdy v USA) a ověření bankovního účtu směrového čísla.
 
 8. Chcete-li změnit obrázek, který se zobrazuje v Human Resources ve vašem profilu, vyberte kartu **Obrázek**. V závislosti na nastavení organizace mohou být obrázky směrovány ke schválení.
 

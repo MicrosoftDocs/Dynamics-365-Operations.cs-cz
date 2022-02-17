@@ -1,6 +1,6 @@
 ---
 title: Koncept společnosti v Dataverse
-description: Toto téma popisuje integraci dat společností mezi aplikacemi Finance and Operations a Dataverse.
+description: Toto téma popisuje integraci dat společnosti mezi finančními a provozními aplikacemi a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25bd2cc0df4940f02313b3a61f69b2273e835639
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782078"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061019"
 ---
 # <a name="company-concept-in-dataverse"></a>Koncept společnosti v Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Koncept *společnosti* v Finance and Operations je právní i obchodní konstrukt. Je to také hranice pro zabezpečení a viditelnost dat. Uživatelé pracují vždy v kontextu jedné společnosti a většina dat je rozdělena podle společnosti.
+
+Ve finanční a provozní aplikaci je koncept *společnosti* právní i obchodní konstrukt. Je to také hranice pro zabezpečení a viditelnost dat. Uživatelé pracují vždy v kontextu jedné společnosti a většina dat je rozdělena podle společnosti.
 
 Dataverse nemá ekvivalentní koncepci. Nejbližší koncept je *organizační jednotka*, která je primárně hranicí zabezpečení a viditelnosti pro uživatelská data. Tento koncept nemá stejné právní nebo obchodní důsledky jako koncepce společnosti.
 
 Vzhledem k tomu, že organizační jednotka a společnost nejsou rovnocennými koncepty, není možné vynutit mapování mezi nimi (1:1) pro účely integrace Dataverse. Protože však uživatelé musí mít ve výchozím nastavení možnost zobrazit stejné řádky v aplikaci a Dataverse, společnost Microsoft zavedla novou tabulku v aplikaci Dataverse s názvem cdm\_Company. Tato tabulku je ekvivalentní s tabulkou společnosti v aplikaci. Chcete-li zajistit, aby viditelnost řádků byla ekvivalentní mezi aplikací a Dataverse, doporučujeme následující nastavení dat v aplikaci Dataverse:
 
-+ Pro každý řádek společnosti Finance and Operations, který je povolen pro duální zápis, je vytvořen přidružený řádek cdm\_Company.
++ Pro každý řádek společnosti Finance a Operace, který je povolen pro duální zápis, je vytvořen přidružený řádek cdm\_Company.
 + Když je vytvořen řádek cdm\_Company a je povolen pro duální zápis, je vytvořena výchozí organizační jednotka se stejným názvem. Přestože je pro tuto organizační jednotku automaticky vytvořen výchozí tým, není tato organizační jednotka použita.
 + Je vytvořen samostatný tým vlastníků se stejným názvem. Je také spojen s organizační jednotkou.
 + Ve výchozím nastavení je vlastník libovolného řádku vytvořeného a dvojitě zapsaného do Dataverse nastaven na tým "DW Owner", který je propojen s přidruženou organizační jednotkou.
@@ -43,7 +43,7 @@ Z důvodu této konfigurace bude každý řádek, který se týká společnosti 
 + Role Manažer prodeje je přidělena členům týmu USMF Sales.
 + Uživatelé, kteří mají roli manažer prodeje, mohou přistupovat ke všem řádkům obchodních vztahů, které jsou členy stejné organizační jednotky, v níž jsou členy.
 + Tým USMF Sales je propojen s dříve uvedenou organizační jednotkou USMF.
-+ Proto mohou členové týmu USMF Sales zobrazit jakýkoli obchodní vztah, který je vlastněn uživatelem USMF DW, který by pocházel z tabulky společnosti USMF v aplikaci Finance and Operations.
++ Proto mohou členové týmu „USMF Sales“ zobrazit jakýkoli obchodní vztah, který je vlastněn uživatelem USMF DW, který by pocházel z tabulky společnosti USMF ve finanční a provozní aplikaci.
 
 ![Jak lze použít týmy.](media/dual-write-company-2.png)
 

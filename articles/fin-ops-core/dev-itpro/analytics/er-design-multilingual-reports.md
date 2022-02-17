@@ -2,7 +2,7 @@
 title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02e8f90fb83acd8448339f411489851742af18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e5c6b28dc115719922e418cb7a6156032d994d39
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674422"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074935"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
@@ -28,9 +28,9 @@ ms.locfileid: "7674422"
 
 ## <a name="overview"></a>Přehled
 
-Jako podnikový uživatel můžete používat [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty, které musí být generovány v souladu s právními požadavky různých zemí či oblastí. Pokud tyto požadavky vyžadují, aby odchozí dokumenty byly generovány v různých jazycích pro různé země nebo regiony, můžete nakonfigurovat jeden [formát](general-electronic-reporting.md#FormatComponentOutbound) ER, který obsahuje zdroje závislé na jazyce. Tímto způsobem můžete znovu použít formát ke generování odchozích dokumentů pro různé země nebo regiony. Možná budete také chtít použít jediný formát ER k vygenerování odchozího dokumentu v různých jazycích pro odpovídající zákazníky, prodejce, dceřiné společnosti nebo jiné strany.
+Jako podnikový uživatel můžete používat [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty, které musí být generovány v souladu s právními požadavky různých zemí či oblastí. Pokud tyto požadavky vyžadují, aby odchozí dokumenty byly generovány v různých jazycích pro různé země nebo regiony, můžete nakonfigurovat jeden formát ER, který obsahuje zdroje závislé na jazyce. Tímto způsobem můžete znovu použít formát ke generování odchozích dokumentů pro různé země nebo regiony. Možná budete také chtít použít jediný formát ER k vygenerování odchozího dokumentu v různých jazycích pro odpovídající zákazníky, prodejce, dceřiné společnosti nebo jiné strany.
 
-Datové modely a mapování modelů ER můžete nakonfigurovat jako zdroje dat konfigurovaných formátů ER a definovat tok dat, který určuje, jaká aplikační data se vkládají do generovaných dokumentů. Jako [poskytovatel](general-electronic-reporting.md#Provider) konfigurace ER můžete [publikovat](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) nakonfigurované [datové modely](general-electronic-reporting.md#data-model-and-model-mapping-components), [modelování map](general-electronic-reporting.md#data-model-and-model-mapping-components) a [formáty](general-electronic-reporting.md#FormatComponentOutbound) jako komponenty řešení ER pro generování specifických odchozích dokumentů. Můžete také dovolit zákazníkům [nahrát](general-electronic-reporting-manage-configuration-lifecycle.md) publikované řešení ER tak, aby mohlo být použito a přizpůsobeno. Pokud očekáváte, že zákazníci budou mluvit jinými jazyky, můžete nakonfigurovat komponenty ER tak, aby obsahovaly prostředky závislé na jazyce. Tímto způsobem může být obsah editovatelné komponenty ER prezentován v uživatelsky preferovaném jazyce zákazníka v době návrhu.
+Datové modely a mapování modelů ER můžete nakonfigurovat jako zdroje dat konfigurovaných formátů ER a definovat tok dat, který určuje, jaká aplikační data se vkládají do generovaných dokumentů. Jako [poskytovatel](general-electronic-reporting.md#Provider) konfigurace ER můžete [publikovat](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) nakonfigurované [datové modely](general-electronic-reporting.md#data-model-and-model-mapping-components), [mapování modelů](general-electronic-reporting.md#data-model-and-model-mapping-components) a formáty jako komponenty řešení ER pro generování specifických odchozích dokumentů. Můžete také dovolit zákazníkům [nahrát](general-electronic-reporting-manage-configuration-lifecycle.md) publikované řešení ER tak, aby mohlo být použito a přizpůsobeno. Pokud očekáváte, že zákazníci budou mluvit jinými jazyky, můžete nakonfigurovat komponenty ER tak, aby obsahovaly prostředky závislé na jazyce. Tímto způsobem může být obsah editovatelné komponenty ER prezentován v uživatelsky preferovaném jazyce zákazníka v době návrhu.
 
 Zdroje závislé na jazyce můžete nakonfigurovat jako štítky ER. Tyto štítky pak můžete použít ke konfiguraci součástí ER pro následující účely:
 
@@ -232,6 +232,19 @@ Jak je popsáno výše v tomto tématu, atributy **Štítek** a **Popis** každ�
 ## <a name="performance"></a><a name=performance></a>Výkonnost
 
 Když konfigurujete komponentu formátu ER pro generování sestavy podle vašich preferencí [jazyka](#language), nebo chcete-li importovat příchozí dokument, kde je obsah analyzován vámi preferovaným jazykem, doporučujeme povolit funkci **Ukládat do mezipaměti preferovaný jazyk aktuálního uživatele pro spuštění ER** v pracovním prostoru [Správa funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md). Tato funkce pomáhá zlepšit výkon, zejména pro součásti formátu ER, které obsahují více odkazů na popisky ve vzorcích a vazbách ER a mnoho dalších pravidel [ověřování](general-electronic-reporting-formula-designer.md#TestFormula) ke generování uživatelských zpráv ve vašem preferovaném jazyce.
+
+Když změníte stav verze konfigurace ER z **Koncept** na **Dokončeno**, pokud verze konfigurace obsahuje štítky ER, jsou tyto štítky uloženy v databázi aplikace. Schéma úložiště závisí na stavu funkce **Urychlení ukládání štítků ER**:
+
+- Pokud tato funkce není povolena, všechny štítky jsou uloženy v poli **LABELXML** tabulky **ERSOLUTIONVERSIONTABLE** jako jeden fragment XML.
+- Pokud je funkce povolena, vytvoří se samostatný záznam pro každý jazyk v tabulce **ERSOLUTIONVERSIONLABELSTABLE**. Pole **CONTENTS** této tabulky ukládá štítky podle jazyka jako komprimovaný fragment XML.
+
+Doporučujeme povolit funkci **Urychlení ukládání štítků ER** v pracovním prostoru **Správa funkcí**. Tato funkce pomáhá zlepšit využití šířky pásma sítě a celkový výkon systému, protože ve většině případů se při práci s jedinou konfigurací ER používají štítky ER jednoho jazyka.
+
+Chcete-li použít vybrané schéma úložiště pro uchování štítků všech konfigurací ER v aktuální instanci Finance, proveďte následující kroky.
+
+1. Přejděte na **Správa organizace** > **Pravidelné** > **Použít vybrané schéma ukládání štítků pro všechny konfigurace ER**.
+2. Vyberte **OK**.
+
 
 ## <a name="additional-resources"></a>Další prostředky
 

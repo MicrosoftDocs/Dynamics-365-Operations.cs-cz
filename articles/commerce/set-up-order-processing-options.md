@@ -2,7 +2,7 @@
 title: Nastavení kanálů kontaktního střediska
 description: Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750641"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092425"
 ---
 # <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
@@ -56,6 +56,9 @@ Pokud je nastavení **Povolit dokončení objednávky** zapnuté pro kanál kont
 Kromě toho, pokud je nastavení **Povolit dokončení objednávky** zapnuté, když uživatelé vytváří prodejní objednávky a jsou v režimu zadávání položky řádku, pole **Zdroj** bude k dispozici na hlavním záhlaví prodejní objednávky. Pole **Zdroj** slouží k zachycení [kódu zdroje katalogu](/dynamics365/unified-operations/retail/call-center-catalogs) ve scénáři přímého marketingového prodeje. Tento kód pak může řídit zvláštní ceny a promoakce.
 
 I v případě, že je nastavení **Povolit dokončení objednávky** vypnuté, uživatelé mohou i nadále použít zdrojový kód na prodejní objednávku. Je však nutné nejprve otevřít podrobnosti záhlaví prodejní objednávky pro přístup k poli **Zdroj**. Jinými slovy, je zapotřebí několika dalších kliknutí. Stejné chování se vztahuje na funkce, jako je dokončení expedice a urychleně zpracované objednávky. Tyto funkce jsou k dispozici pro všechny objednávky vytvořené v kontaktním středisku. Pokud je však nastavení **Povolit dokončení objednávky** zapnuté, uživatelé mohou nalézt konfiguraci těchto funkcí v záhlaví prodeje, když jsou v zobrazení zadávání řádku. Není nutné přejít k podrobnostem záhlaví prodejní objednávky k nalezení odpovídajících nastavení a polí.
+
+> [!NOTE]
+> Když je povolena funkce **Omnikanálové platby objednávek Commerce**, bude tlačítko kontaktního střediska **Povolit dokončení objednávky** skryté v centrále na záložce **Všeobecné** vašeho kanálu v nabídce **Maloobchod a obchodování \> Kanály \> Kontaktní střediska**.
 
 ### <a name="enable-direct-selling"></a>Povolit přímý prodej
 
