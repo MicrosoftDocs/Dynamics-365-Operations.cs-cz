@@ -1,6 +1,6 @@
 ---
 title: Integrovaná hlavní kniha
-description: Toto téma popisuje integraci dat hlavní knihy mezi aplikacemi Finance and Operations a ostatními aplikacemi Dynamics 365 používajícími Dataverse.
+description: Toto téma popisuje integraci dat hlavní knihy mezi finančními a provozními aplikacemi a ostatními aplikacemi Dynamics 365 používajícími Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782373"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063640"
 ---
 # <a name="integrated-ledger"></a>Integrovaná hlavní kniha
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 V obchodní aplikaci definují data hlavní knihy základní nastavení pro to, jak společnost podniká. Data hlavní knihy například popisují fiskální rok, podle kterého se společnost řídí, měny, ve kterých provádí transakce, a účty, které používá. Toto téma popisuje integraci těchto základních finančních dat.
 
@@ -28,7 +28,7 @@ V obchodní aplikaci definují data hlavní knihy základní nastavení pro to, 
 
 Data hlavní knihy zahrnují mapy kolekce tabulek základních financí, které pracují společně během interakce s daty odběratele, jak je uvedeno v následující tabulce.
 
-Aplikace Finance and Operations | Aplikace Customer Engagement     | popis
+Finanční a provozní aplikace | Aplikace Customer Engagement     | popis
 ---------------------------------|----------------------------------|------------
 [Směnné kurzy CDS](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Účtová osnova](mapping-reference.md#121) | msdyn_chartofaccountses |

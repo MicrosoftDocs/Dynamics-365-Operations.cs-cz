@@ -12,16 +12,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e867b2815920a68e3cd79843ba7b15ed6bb635
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7981978"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071078"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Použijte pracovní prostor **Správa dat** k vytvoření a správě úloh importu a exportu dat v aplikaci . Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
@@ -203,7 +206,7 @@ Při plánování procesu čištění je nutné zadat následující parametry d
 ## <a name="job-history-clean-up-and-archival"></a>Úklid historie a archivace 
 Funkce vyčištění a archivace historie úloh nahradí předchozí verze funkce vyčištění. Tato část vysvětluje tyto nové funkce.
 
-Jednou z hlavních změn ve funkci čištění je použití dávkové úlohy systému k vyčištění historie. Použití dávkové úlohy systému umožňuje aplikacím Finance and Operations mít automaticky naplánovanou a spouštěnou dávkovou úlohu vyčištění, jakmile je systém připraven. Dávkové úlohy již není nutné ručně plánovat. V tomto výchozím režimu provádění bude dávková úloha spuštěna každou hodinu počínaje půlnocí a zachová si historii provádění za posledních 7 dní. Vymazaná historie je archivována pro budoucí načtení. Počínaje verzí 10.0.20 je tato funkce vždy zapnutá.
+Jednou z hlavních změn ve funkci čištění je použití dávkové úlohy systému k vyčištění historie. Použití dávkové úlohy systému umožňuje finančním a provozním aplikacím mít automaticky naplánovanou a spouštěnou dávkovou úlohu vyčištění, jakmile je systém připraven. Dávkové úlohy již není nutné ručně plánovat. V tomto výchozím režimu provádění bude dávková úloha spuštěna každou hodinu počínaje půlnocí a zachová si historii provádění za posledních 7 dní. Vymazaná historie je archivována pro budoucí načtení. Počínaje verzí 10.0.20 je tato funkce vždy zapnutá.
 
 Druhou změnou v procesu čištění je archivace vymazané historie provádění. Úloha vyčištění archivuje odstraněné záznamy do úložiště objektů blob, které DIXF používá pro běžné integrace. Archivovaný soubor bude ve formátu balíčku DIXF a bude k dispozici po dobu 7 dnů v objektu blob, během kterého bude možné jej stáhnout. Výchozí životnost archivovaného souboru 7 dní lze v parametrech změnit na maximálně 90 dní.
 

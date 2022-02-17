@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a01e172f5c62b746f4733e03d25ea43f0247790003ea1a1470bc28e98db12deb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741398"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061377"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (26. září 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tohle téma popisuje funkce, které jsou nové, byly změněny nebo se brzy objeví v aplikaci Dynamics 365 Human Resources. Další informace o našem procesu aktualizaci a plánu najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
@@ -39,7 +39,7 @@ Tato verze obsahuje následující nové funkce a opravené chyby. Změny se vzt
 
 V této verzi je všeobecně dostupná následující funkce:
 
-- **Aktualizace platformy 10.0.13 je nyní k dispozici**: Další informace o aktualizaci viz [Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations (říjen 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+- **Aktualizace platformy 10.0.13 je nyní k dispozici**: Další informace o aktualizaci viz [Aktualizace platformy pro verzi 10.0.13 finančních a provozních aplikací (říjen 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

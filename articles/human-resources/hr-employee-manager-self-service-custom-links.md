@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431177"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071412"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Vytváření vlastních odkazů v samoobsluze pro manažery
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ Chcete-li použít tuto funkci, povolte **Vlastní odkazy v samoobsluze pro mana
 
 1. V části **Parametry lidských zdrojů** vyberte možnost **Samoobsluha pro manažery**.
 
-2. V části **Zřízení odkazů pro manažery** můžete přidat, upravit nebo odebrat odkaz. Můžete také seskupit odkazy dohromady, aby se zobrazily ve skupině v samoobsluze pro manažery.
+2. V části **Zřízení odkazů pro manažery** můžete přidat, upravit nebo odebrat odkaz. Můžete také seskupit odkazy dohromady, aby se zobrazily ve skupině v **samoobsluze pro manažery**.
 
    ![Zřízení vlastních odkazů v samoobsluze pro manažery.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. Chcete-li zobrazit odkazy, přejděte na kartu **Můj tým** v samoobsluze pro zaměstnance.
+3. Chcete-li zobrazit odkazy, přejděte na kartu **Můj tým** v **samoobsluze pro zaměstnance**.
 
    ![Zobrazení vlastních odkazů v samoobsluze pro manažery.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

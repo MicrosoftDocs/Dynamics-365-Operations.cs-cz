@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423464"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069623"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace možností a pravidel způsobilosti 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -74,7 +77,7 @@ Během otevřené registrace mohou zaměstnanci vybírat plány zaměstnaneckýc
    | **Způsobilá pracovní funkce** | Určuje pracovní funkci nebo funkce, které splňují pravidlo způsobilosti. Například pracovníci prodeje nebo technici. |
    | **Typ způsobilé práce** | Určuje typ nebo typy úlohy, které splňují pravidlo způsobilosti. Například administrativní nebo vedoucí. |
    | **Způsobilá právnická osoba** | Určuje právnickou osobu nebo právnické osoby, které jsou platné pro pravidlo způsobilosti. Například Contoso Entertainment System USA. |
-   | **Způsobilá oblast kompenzace** | Určuje umístění zaměstnance, které splňuje pravidlo způsobilosti. Například zadejte central US. |
+   | **Oblast způsobilá ke kompenzaci** | Určuje umístění zaměstnance, které splňuje pravidlo způsobilosti. Například zadejte central US. |
    | **Způsobilá pozice** | Určuje pozici nebo pozice, které splňují pravidlo způsobilosti. Například personální asistent nebo manažer HR |
    | **Způsobilý typ pozice** | Určuje typ nebo typy pozice, které splňují pravidlo způsobilosti. Například celý úvazek. |
    | **Způsobilý stav** | Určuje státy nebo provincie, které splňují pravidlo způsobilosti. Například Severní Dakota USA nebo Britská Kolumbie, Kanada. |

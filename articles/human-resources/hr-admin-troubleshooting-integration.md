@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413361"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071103"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Human Resources s Dynamics 365 Finance.
 
@@ -86,7 +89,7 @@ Není potřeba žádné speciální nastavení pro zpracování výjimek. Integr
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Můžu nastavit integraci obousměrně?
 
-Ne, integrace je nyní jednosměrná (Human Resources do Finance and Operations). Je však k dispozici výchozí šablona pro odeslání dat z aplikace Human Resources do Finance.
+Ne, integrace je v současné době jednosměrná (z aplikace Human Resources do finanční a provozní aplikace). Je však k dispozici výchozí šablona pro odeslání dat z aplikace Human Resources do Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Můžu povolit odstranění záznamu v rámci Moje integrace?
 
@@ -116,7 +119,7 @@ Důvody této chyby mohou zahrnovat:
 
 - Převod dat měl za následek extrahování duplicitních záznamů ve zdroji (Dataverse).
 
-- Přenos dat má hodnoty null pro pole, která jsou v aplikaci Finance and Operations povinná. Ověřte data, která se jsou v Dataverse a splňují požadavky aplikace Finance and Operations.
+- Přenos dat má hodnoty null pro pole, která jsou ve finanční a provozní aplikaci povinná. Ověřte data, která se jsou v Dataverse a splňují požadavky finanční a provozní aplikace.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Pokud došlo k chybám provedení a neproběhla synchronizace ID zaměstnance, jak lze najít úlohu historie s neúspěšným záznamem zaměstnance?
 

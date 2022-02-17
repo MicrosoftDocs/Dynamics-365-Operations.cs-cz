@@ -2,7 +2,7 @@
 title: Uspořádání zaměstnanců pomocí oddělení, prací a pozic
 description: Toto téma popisuje koncepční informace o odděleních, úlohách a pozicích, které jsou organizační prvky evidovány v rámci modulu Lidské zdroje.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731801"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071421"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců pomocí oddělení, prací a pozic
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,30 +51,16 @@ Oddělení je provozní jednotka, která představuje kategorii nebo funkční o
 
 ## <a name="jobs-and-positions"></a> Úlohy a pozice
 Úloha je kolekce úkolů a odpovědností, které jsou vyžadovány od osoby, která provádí práci. Pozice je individuální instance práce. Oblasti odpovědnosti, pracovní úkoly, pracovní funkce, dovednosti, informace o vzdělání a certifikáty, které jsou požadovány pro úlohu, jsou nutné také pro pozice, které jsou asociovány s určitou pozicí.
+
 ### <a name="job-tasks"></a>Pracovní úkoly
+
 Můžete vytvořit pracovní úkoly, které popisují základní úlohy, které musí pracovník na pozici této úlohy dokončit. Stejnou úlohu lze přidat do více úloh a pozice pro tyto úlohy zdědí tyto úlohy. Příklady pracovních úloh jsou uvedeny v následující tabulce.
 
-<table>
-<thead>
-<tr class="header">
-<th>Úloha</th>
-<th>Pracovní úkol</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Manažer prodeje</td>
-<td><ul>
-<li><span class="input">Zkontrolovat výkon</span> – zkontrolování výkonu práce jednotlivých prodejců.</li>
-<li><span class="input">Kontrola absence</span> – schválení nebo odmítnutí požadavků nebo registrace absence jednotlivých prodejců.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Účetní</td>
-<td><span class="input">Finanční sestava</span> – předložení týdenních finančních sestav vedoucímu finančního oddělení.</td>
-</tr>
-</tbody>
-</table>
+| Úloha           | Pracovní úkol                                                |
+|---------------|-------------------------------------------------------------|
+| Manažer prodeje | Zkontrolovat výkon – zkontrolování výkonu práce jednotlivých prodejců.    |
+| Účetní    | Kontrola absence – schválení nebo odmítnutí požadavků nebo registrace absence jednotlivých prodejců. |
+
 
 ### <a name="job-functions"></a>Pracovní funkce
 

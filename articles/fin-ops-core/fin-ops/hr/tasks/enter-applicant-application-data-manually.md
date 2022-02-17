@@ -8,21 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964699"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075443"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ruční zadávání dat o přihlášce a uchazeči
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> Funkce uvedené v tomto tématu jsou aktuálně dostupné pro zákazníky Human Resources v samostatné infrastruktuře Finance.  
+
 
 Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich přihláškách. Můžete zadat a spravovat osobní údaje, data a časy pohovoru, odkazy, kompetence a požadavky na ubytování pro uchazeče. Také můžete aktualizovat stav uchazečových žádostí o zaměstnání a vytváření dopisů nebo e-mailových zpráv ke komunikaci s uchazeči. Při vytvoření záznamu žadatele se vytvoří osobní záznam tohoto uchazeče v globálním adresáři. K vytvoření této procedury jsou použita ukázková data společnosti **USMF**.
 

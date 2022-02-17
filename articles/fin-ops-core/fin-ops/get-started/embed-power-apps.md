@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488047"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065094"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vložit aplikace plátna z Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps je službou umožňující vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web bez psaní kódu. Aplikace Finance and Operations podporují integraci s Power Apps. Aplikace plátna, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze vložit do aplikací Finance and Operations, aby bylo možné vylepšit funkce produktu. Například můžete vytvořit aplikaci plátna z Power Apps pro doplnění aplikace Finance and Operations o informace získané z jiného systému.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Microsoft Power Apps je službou umožňující vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web bez psaní kódu. Finanční a provozní aplikace podporují integraci s Power Apps. Aplikace plátna, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze vložit do finančních a provozních aplikací, aby bylo možné vylepšit funkce produktu. Například můžete vytvořit aplikaci plátna z Power Apps pro doplnění finanční a provozní aplikace o informace získané z jiného systému.
 
 Další informace o začlenění aplikací plátna se dozvíte v krátkém videu [Jak začlenit aplikace plátna](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -32,7 +35,7 @@ Další informace o začlenění aplikací plátna se dozvíte v krátkém videu
 
 Před vložením aplikace plátna z Power Apps do klienta je nejdříve nutné najít nebo vytvořit aplikaci s požadovanými vizuály nebo funkcemi. Toto téma neobsahuje podrobný popis procesu vytváření aplikací. Pokud jsou pro vás Power Apps novinkou, přečtěte si [dokumentaci Power Apps](/powerapps/).
 
-Existují tři způsoby, jak vložit aplikaci plátna do aplikace Finance and Operations. Můžete použít přístup, který nejlépe odpovídá vašemu scénáři. 
+Existují tři způsoby, jak vložit aplikaci plátna do finanční a provozní aplikace. Můžete použít přístup, který nejlépe odpovídá vašemu scénáři. 
 
 - Vložte aplikaci plátna do tlačítka **Power Apps** ve standardním podokně akcí stránky. Aplikace, které přidáte tímto způsobem, se zobrazí jako položky na tlačítku nabídky **Power Apps** a aplikace se otevírají v bočních podoknech. 
 - Vložte aplikaci plátna na existující stránku jako stránku nové karty (kontingenční karta, rychlá karta, okno nebo část pracovního prostoru).
@@ -65,7 +68,7 @@ Následující postup ukazuje, jak vložit aplikaci plátna z Power Apps na exis
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Vložení apliace plátna jako celostránkového prostředí z řídicího panelu
 
-Možná chcete vložit aplikaci plátna z řídicího panelu, pokud aplikace nesouvisí s existující stránkou nebo pokud pouze chcete, aby byla aplikace celostránkovým prostředím uvnitř aplikace Finance and Operations.
+Možná chcete vložit aplikaci plátna z řídicího panelu, pokud aplikace nesouvisí s existující stránkou nebo pokud pouze chcete, aby byla aplikace celostránkovým prostředím uvnitř finanční a provozní aplikace.
 
 > [!NOTE]
 > Chcete-li tuto možnost zpřístupnit, musíte zapnout funkci **Celostránkové aplikace** ve správě funkcí. 
@@ -83,7 +86,7 @@ Když vložíte aplikaci plátna, musíte nastavit následující parametry:
 
 - **Název** – Zadejte text, který by se měl zobrazit pro tlačítko nebo kartu, která bude obsahovat vloženou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
 - **ID aplikace** - označuje globálně jedinečný identifikátor (GUID) pro aplikaci plátna, kterou chcete vložit. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na webu [make.powerapps.com](https://make.powerapps.com) a pak se podívejte do pole **ID aplikace** pod položkou **Podrobnosti**.
-- **Vstupní kontext pro aplikaci** - můžete volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations naleznete v částí dále v tomto tématu s názvem [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
+- **Vstupní kontext pro aplikaci** - můžete volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Informace o přístupu aplikace k datům odeslaným z finančních a provozních aplikací naleznete v části tohoto tématu nazvané [Vytvoření aplikace, která využívá data z finančních a provozních aplikací](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
 
     Počínaje verzí 10.0.19 je aktuální právnická osoba také předána jako kontext do aplikace plátna prostřednictvím parametru URL **cmp**. Toto chování neovlivní cílovou aplikaci plátna, dokud tato aplikace tyto informace nepoužije.
 
@@ -104,15 +107,15 @@ Po vložení aplikace plátna na stránku a ověření, že pracuje správně, m
     - Pokud je funkce **Uložená zobrazení** vypnutá, správce systému může poskytnout přizpůsobení, které zahrnuje aplikaci plátna, příslušné sadě uživatelů prostřednictvím stránky **Personalizace**. Případně můžete exportovat přizpůsobení své stránky a odeslat je jednomu nebo více uživatelům. Každý z těchto uživatelů pak může importovat personalizace. Panel nástrojů individuálního nastavení obsahuje tlačítka, které vám umožní exportovat a importovat individuální nastavení.
 
 > [!NOTE]
-> Pokud byla aplikace plátna sdílena s externími uživateli, nemohou tito uživatelé použít vloženou aplikaci uvnitř aplikace Finance and Operations. Mohou však přistupovat k aplikaci přímo uvnitř Power Apps. Externí uživatelé zahrnují hosty a uživatele, kteří nepatří do Microsoft 365 Azure Directory, kde je aplikace Finance and Operations nasazena.
+> Pokud byla aplikace plátna sdílena s externími uživateli, nemohou tito uživatelé použít vloženou aplikaci uvnitř finanční a provozní aplikace. Mohou však přistupovat k aplikaci přímo uvnitř Power Apps. Externí uživatelé zahrnují hosty a uživatele, kteří nepatří do Microsoft 365 Azure Directory, kde je finanční a provozní aplikace nasazena.
 
 Podrobnější informace o možnostech přizpůsobení v produktu a jejich použití naleznete v tématu [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Vytváření aplikace plátna, která používá data odesílaná z aplikací Finance and Operations
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Vytváření aplikace plátna, která používá data odesílaná z finančních a provozních aplikací
 
-Když vytvoříte aplikaci plátna, která bude vložena do aplikace Finance and Operations, jednou důležitou součástí procesu je použití vstupních dat z této aplikace Finance and Operations. Z vývojového prostředí Power Apps lze vstupní data předaná z Finance and Operations otevřít pomocí proměnné **Param("EntityId")**. Díle počínaje verzí 10.0.19 bude aktuální právnická osoba také předána do aplikace plátna prostřednictvím proměnné **Param("cmp")**. 
+Když vytvoříte aplikaci plátna, která bude vložena do finanční a provozní aplikace, jednou důležitou součástí procesu je použití vstupních dat z této finanční a provozní aplikace. Z vývojového prostředí Power Apps lze vstupní data předaná z finanční a provozní aplikace otevřít pomocí proměnné **Param("EntityId")**. Díle počínaje verzí 10.0.19 bude aktuální právnická osoba také předána do aplikace plátna prostřednictvím proměnné **Param("cmp")**. 
 
-Například ve funkci Při spuštění aplikace můžete nastavit vstupní data z aplikací Finance and Operations do proměnné následujícím způsobem:
+Například ve funkci Při spuštění aplikace můžete nastavit vstupní data z finančních a provozních aplikací následujícím způsobem:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -122,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Prohlížení aplikace plátna
 
-Chcete-li zobrazit vloženou aplikaci plátna na stránce v aplikacích Finance and Operations, jednoduše přejděte na stránku s vloženou aplikací. Nezapomeňte, že k aplikacím lze přistupovat pomocí tlačítka **Power Apps** ve standardním podokně akcí. Alternativně se mohou objevit přímo na stránce jako nová karta, záložku s náhledem, okno nebo nový oddíl v pracovním prostoru. Když se uživatelé poprvé pokusí načíst aplikaci na stránku, budou vyzváni k přihlášení. Tento krok zajišťuje, že uživatelé mají příslušná oprávnění k používání aplikace.
+Chcete-li zobrazit vloženou aplikaci plátna na stránce v finančních a provozních aplikacích, jednoduše přejděte na stránku s vloženou aplikací. Nezapomeňte, že k aplikacím lze přistupovat pomocí tlačítka **Power Apps** ve standardním podokně akcí. Alternativně se mohou objevit přímo na stránce jako nová karta, záložku s náhledem, okno nebo nový oddíl v pracovním prostoru. Když se uživatelé poprvé pokusí načíst aplikaci na stránku, budou vyzváni k přihlášení. Tento krok zajišťuje, že uživatelé mají příslušná oprávnění k používání aplikace.
 
 ## <a name="editing-an-embedded-app"></a>Úprava integrované aplikace
 

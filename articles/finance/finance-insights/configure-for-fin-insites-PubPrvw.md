@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968955"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061747"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfigurace Finance Insights – verze 10.0.20 a pozdější
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Finance Insights kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje, jak nakonfigurovat Dynamics 365 Finance verze 10.0.20, aby váš systém dokázal používat funkce, které jsou k dispozici ve Finance Insights.
 
@@ -38,7 +38,7 @@ Finance Insights kombinují funkčnost Microsoft Dynamics 365 Finance s Datavers
 
 Pro nasazení prostředí postupujte takto.
 
-1. V Microsoft Dynamics Lifecycle Services (LCS) vytvořte nebo aktualizujte prostředí Finance. Prostředí vyžaduje aplikaci Finance a Operace verze 10.0.20 nebo novější.
+1. V Microsoft Dynamics Lifecycle Services (LCS) vytvořte nebo aktualizujte prostředí Finance. Prostředí vyžaduje finanční a provozní aplikaci verze 10.0.20 nebo novější.
 2. Prostředí musí mít vysokou dostupnost (HA) v prostředí Sandbox. (Tento typ prostředí se také nazývá prostředí 2. úrovně.) Další informace najdete v tématu [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Pokud konfigurujete Finance Insights v prostředí Sandbox, možná budete muset zkopírovat produkční data do tohoto prostředí, aby předpovědi fungovaly. Predikční model využívá k sestavování předpovědí několik let dat. Ukázková data Contoso neobsahují dostatek historických dat pro adekvátní trénink modelu predikce. 
 
@@ -126,7 +126,7 @@ Pokud nemůžete najít žádnou z předchozích aplikací, vyzkoušejte násled
         - **Výkon** – Doporučujeme, abyste vybrali **Standard**.
         - **Druh účtu** – Musíte vybrat **StorageV2**.
 
-    3. V dialogovém okně **Rozšířené možnosti** pro **Data Lake Storage Gen2** vyberte možnost **Povolit** pro funkci **Hierarchický obor názvů**. Pokud tuto funkci nepovolíte, nebudete moci spotřebovat data, která aplikace Finance a Operace zapíše při použití služeb, jako jsou toky dat Power BI.
+    3. V dialogovém okně **Rozšířené možnosti** pro **Data Lake Storage Gen2** vyberte možnost **Povolit** pro funkci **Hierarchický obor názvů**. Pokud tuto funkci nepovolíte, nebudete moci spotřebovat data, která finanční a provozní aplikace zapíše při použití služeb, jako jsou toky dat Power BI.
     4. Vyberte **Zkontrolovat a vytvořit**. Po dokončení nasazení se nový prostředek zobrazí v portálu Azure.
     5. Přejděte na účet úložiště, který jste vytvořili.
     6. V levé nabídce vyberte možnost **Přístupové klíče**.

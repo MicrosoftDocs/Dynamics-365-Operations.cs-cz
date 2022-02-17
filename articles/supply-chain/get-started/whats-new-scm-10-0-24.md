@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986296"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087543"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.24. (únor 2022)
 
@@ -34,6 +34,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tohle téma můž
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
 | Distribuovaná hybridní topologie | [Vylepšení prováděcích úloh skladu na jednotkách škálování](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md) | Ve výchozím nastavení povoleno. |
+| Distribuovaná hybridní topologie | [Zahájení výrobní zakázky v úlohách správy skladu pro jednotky škálování cloudu a hraniční sítě](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-manufacturing.md) | Správa funkcí (*Zahájení výrobní zakázky v úlohách správy skladu pro jednotky škálování cloudu a hraniční sítě*)  |
 | Plánování | [Podpora optimalizace plánování pro rezervu a rezervu výdeje](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Pojistné doby](../master-planning/planning-optimization/safety-margins.md) | Ve výchozím nastavení povoleno. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Vylepšení funkcí zahrnutých do této verze
@@ -47,7 +48,6 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 | Řízení výroby | Kontrola dostupnosti materiálu na vyžádání pro výrobní zakázky | Tato funkce umožňuje rychlejší otevření stránky **Výrobní zakázky pro uvolnění**, která je dostupná v pracovním prostoru **Správa výrobního provozu**. Bez této funkce systém automaticky zkontroluje, zda jsou dostupné materiály pro všechny uvedené výrobní zakázky, jakmile stránku otevřete, což může trvat velice dlouho, pokud máte velký počet zakázek. Pokud je tato funkce povolena, systém místo toho poskytuje tlačítko na panelu nástrojů, které můžete použít ke spuštění kontroly materiálu pouze u vybraných zakázek a v případě potřeby. |
 | Řízení výroby | (Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS) | Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Tato funkce podporuje pouze položky, které nemají povoleno používat pokročilé skladové procesy (WMS). Podpora pro položky s podporou WMS je naplánována na budoucí vydání.<p>Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, musí tyto organizace také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu. |
 | Řízení výroby | Vykázání jako dokončeno v úlohách správy skladu pro jednotky škálování cloudu a hraniční sítě | Tato funkce umožňuje pracovníkům používat mobilní aplikaci Warehouse Management k nahlášení výrobní nebo dávkové zakázky jako dokončené, když aplikace běží spolu s úlohou pro správu skladu v jednotce škálování cloudu a hraniční sítě. Další informace viz [Vykázání jako dokončené a odložené na jednotce škálování](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Řízení výroby | Zahájení výrobní zakázky v úlohách správy skladu pro jednotky škálování cloudu a hraniční sítě | Tato funkce umožňuje pracovníkům používat mobilní aplikaci Warehouse Management k zahájení výrobní nebo dávkové zakázky, když aplikace běží spolu s úlohou pro správu skladu v jednotce škálování cloudu a hraniční sítě. |
 | Řízení skladu | Nové stránky pracovní plochy plánování vytížení | Aktivuje dvě nové stránky pracovní plochy pro plánování vytížení: **Pracovní plocha pro plánování příchozího vytížení** a **Pracovní plocha pro plánování odchozího vytížení**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
@@ -68,9 +68,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy for aplikace Finance a Operace
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.24 aplikací Finance a Operace (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.24 finančních a provozních aplikací (únor 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

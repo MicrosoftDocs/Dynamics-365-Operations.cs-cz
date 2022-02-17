@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559454"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067069"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurace integrace s aplikací Dayforce
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -39,7 +42,7 @@ Toto téma popisuje kroky, které je třeba provést k povolení integrace, a vy
 
 ## <a name="enable-the-integration"></a>Povolení integrace
 
-V aplikaci Human Resources musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 Finance, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage v aplikaci Finance and Operations.
+V aplikaci Human Resources musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 Finance, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage ve finanční a provozní aplikaci.
 
 Pro zapnutí integrace v aplikaci Human Resources postupuje podle těchto kroků.
 

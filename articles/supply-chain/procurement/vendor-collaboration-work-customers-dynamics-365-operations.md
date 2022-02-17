@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777587"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022967"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
@@ -78,7 +78,7 @@ Pokud používáte zásoby dodávek, můžete zobrazit rozhraní spolupráce dod
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Práce s požadavky na nabídku v pracovním prostoru Nabídky dodavatele
 
-Pracovní prostor **Nabídky dodavatele** umožňuje zobrazení požadavků na nabídku (RFQ), k jejichž odpovědi byla vaše společnost přizvána. Je možné také odpovědět na požadavky na nabídku. 
+Pracovní prostor **Nabídky dodavatele** umožňuje zobrazení požadavků na nabídku (RFQ), k jejichž odpovědi byla vaše společnost přizvána. Je možné také odpovědět na požadavky na nabídku.
 
 Pracovní prostor rovněž zobrazuje všechny požadavky na nabídku, které jste nezískali, nebo naopak získali. Kromě toho, pokud je systém nakonfigurován pro veřejný sektor, pracovní prostor zobrazuje veřejně dostupné požadavky na nabídku.
 
@@ -100,9 +100,17 @@ Osoby pracující ve veřejném sektoru mohou zobrazit otevřené a vypršené p
 
 - Zvolte odkaz **Otevřené publikované požadavky na nabídky** pro zobrazení seznamu otevřených požadavků na nabídku, které jsou k dispozici veřejně. Otevřený požadavek na nabídku je požadavek, který ještě nevypršel. Čas a datum vypršení platnosti naleznete v záhlaví požadavku na nabídku.
 
-    Pokud jste byli přizváni k nabídce, můžete vyhledat stejný požadavek na nabídku na stránce **Pozvánky k nové nabídce**. V některých případech může být zapotřebí vytvořit nabídku k otevřenému požadavku na nabídku, ke kterému jste nebyli přizváni. V takovém případě se můžete přizvat sami, za předpokladu, že odběratel povolil možnost přizvat se sám k případu požadavku na nabídku.
+    Pokud jste byli přizváni k nabídce, můžete vyhledat stejný požadavek na nabídku na stránce **Pozvánky k nové nabídce**. V některých případech může být zapotřebí vytvořit nabídku k otevřenému požadavku na nabídku, ke kterému jste nebyli přizváni. V takovém případě se můžete přizvat sami, za předpokladu, že odběratel povolil možnost přizvat se sám k případu požadavku na nabídku. 
 
-    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce **Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici**. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
+    Stránka **Pozvánky k nové nabídce** obsahuje filtr, který vám umožní zobrazit otevřené požadavky na nabídku a identifikovat ty, které obsahují řádky odpovídající vašim schváleným kategoriím nákupu. Chcete-li tento filtr zpřístupnit, musíte ve vašem systému zapnout funkci *Umožnit dodavateli hledat požadavky na nabídku podle kategorie nákupu*. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav této funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+
+    - **Modul:** *Závazky*
+    - **Název funkce:** *Umožnit dodavateli hledat požadavky na nabídku podle kategorie nákupu* <!-- KFM: I don't see this here, is this right? -->
+
+    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce *Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici*. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav této funkce a zapnout ji, pokud je třeba. (Od vydání Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnutá.) Zde je funkce uvedena následujícím způsobem:
+
+    - **Modul:** *Zásobování a zdroje*
+    - **Název funkce:** *Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici*
 
 - Zvolte odkaz **Uzavřené publikované požadavky na nabídky** pro zobrazení seznamu uzavřených požadavků na nabídku, které jsou k dispozici veřejně. Uzavřený požadavek na nabídku je požadavek, který vypršel. Čas a datum vypršení platnosti naleznete v záhlaví požadavku na nabídku.
 

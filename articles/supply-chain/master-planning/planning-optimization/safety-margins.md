@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774842"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074960"
 ---
 # <a name="safety-margins"></a>Pojistné doby
 
@@ -61,9 +61,6 @@ Všimněte si, že rezerva příjmu se nepoužije, když se jako dodávka použi
 
 ### <a name="reorder-margin"></a>Rezerva
 
-> [!NOTE]
-> **Již brzy:** Tato funkce zatím není optimalizací plánování podporována. Dokud není podporována, všechny hodnoty, které jsou zadány v poli **Rezerva přidaná k době realizace položky** budou považovány za *0* (nula).
-
 Následující obrázek znázorňuje rezervu.
 
 ![Rezerva.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ Následující obrázek znázorňuje rezervu.
 Rezerva je přidána před dobu realizace položky pro všechny plánované objednávky během hlavního plánování. Proto zajišťuje dodatečný čas pro vystavení objednávky dodávky. Tato pojistná doba se obvykle používá jako časová rezerva k zajištění času pro schvalovací procesy nebo jiné interní procesy, které jsou vyžadovány během vytváření objednávek dodávky. Rezerva se vloží mezi *datum objednávky* nabídky a *počáteční datum*.
 
 ### <a name="issue-margin"></a>Rezerva výdeje
-
-> [!NOTE]
-> **Již brzy:** Tato funkce zatím není optimalizací plánování podporována. Dokud není podporována, všechny hodnoty, které jsou zadány v poli **Rezerva výdeje odečtená od požadovaného data** budou považovány za *0* (nula).
 
 Následující obrázek znázorňuje rezervu výdeje.
 

@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345291"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068837"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Úloha provádění výroby je v tomto okamžiku k dispozici v preview.
+> [!IMPORTANT]
+> Úloha provádění výroby je v tomto okamžiku k dispozici pouze v Preview.
+>
 > Některé obchodní funkce nejsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže.
+>
+> Nemůžete na jednotce škálování spustit úlohu provádění výroby Preview, pokud je nainstalována také úloha provádění skladu.
 
 Při provádění výroby poskytují jednotky škálování následující funkce:
 
@@ -128,6 +131,22 @@ V aktuální verzi jsou zprávy o dokončení a operace vyskladnění (u hotový
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivace a použití operaci spuštění na jednotce škálování
+
+V aktuální verzi je operace spuštění pro výrobní a dávkové objednávky podporována [prováděcími úlohami skladování](cloud-edge-workload-warehousing.md) (nikoli prováděcími úlohami výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující úkoly:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Aktivujte funkci *Zahájení výrobní zakázky v úlohách správy skladu pro jednotky škálování cloudu a hrany* ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Pomocí mobilní aplikace Warehouse Management spusťte produkční nebo dávkovou objednávku.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktivace a používání spotřeby materiálu na jednotce škálování
+
+V aktuální verzi je tok v mobilní aplikaci Warehouse Management pro evidenci spotřeby materiálu podporován [úlohou provádění skladu](cloud-edge-workload-warehousing.md) (nikoli úlohou provádění výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující úkoly:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Aktivujte funkci *Registrovat spotřebu materiálu v mobilní aplikaci na jednotce škálování* ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Použijte mobilní aplikaci Warehouse Management k registraci spotřeby materiálu.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

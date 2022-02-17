@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738142"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087363"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -138,7 +138,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 - Produkty se skutečnou hmotností, které mají povolenou variantu, nelze použít společně s funkcí pro převod měrných jednotek variant.
 - Produkty se skutečnou hmotností nelze označit jako obchodní sadu produktů.
 - Produkty se skutečnou hmotností lze použít pouze se skupinou klasifikace jednotky, která má manipulační jednotky skutečné hmotnosti a která má jednotku skutečné hmotnosti jako nejnižší sekvenci.
-- U produktů se skutečnou hmotností lze převést skladovou jednotku na jednotku skutečné hmotnosti pouze tehdy, pokud převod vyprodukuje nominální množství větší než 1.
 - Nastavení čárových kódů pro produkty se skutečnou hmotností nepodporuje nastavení proměnné hmotnosti.
 
 ### <a name="order-processing"></a>Zpracování objednávky

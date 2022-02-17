@@ -2,7 +2,7 @@
 title: Konfigurace importu dat z aplikace SharePoint
 description: Toto téma vysvětluje postup při importu dat z aplikace Microsoft SharePoint.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675338"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074759"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurace importu dat z aplikace SharePoint
 
@@ -192,11 +192,11 @@ Lze rovněž otevřít stránku **stavy souboru pro zdroje** výběrem možnosti
 
 ## <a name=""></a><a name="limitations">Omezení</a>
 
-Architektura ER nenabízí schopnost iniciovat novou dávkovou úlohu, která provede mapování modelu v bezobslužném režimu pro import dat. Chcete-li to provést, musíte sestavit novou logiku, aby bylo možné volat konfigurované mapování modelu ER z uživatelského rozhraní aplikace (UI) a importovat data z příchozích souborů. Proto je nutné provést určité inženýrské práce. 
+Ve verzích Dynamics 365 Finance před verzí 10.0.25 uživatelské rozhraní architektury ER nenabízí schopnost iniciovat novou dávkovou úlohu, která provede mapování modelu v bezobslužném režimu pro import dat. Musíte sestavit novou logiku, aby bylo možné volat konfigurované mapování modelu ER z uživatelského rozhraní aplikace a importovat data z příchozích souborů. K vývoji této logiky je nutná určitá inženýrská práce. 
 
-Další informace o příslušném rozhraní ER API najdete v části [Kód ke spuštění mapování formátu pro import dat](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) hesla [Změny rozhraní API architektury ER pro aktualizaci aplikace 7.3](er-apis-app73.md) téma.
+Další informace o příslušném rozhraní API ER najdete v části [Kód ke spuštění mapování formátu pro import dat](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) v tématu [Změny rozhraní API architektury ER pro aktualizaci aplikace 7.3](er-apis-app73.md). Prostudujte kód ve třídě `BankImport_RU` modelu `Application Suite` a podívejte se, jak lze implementovat vaši vlastní logiku. Třída `BankImport_RU` rozšiřuje třídu `RunBaseBatch`. Zejména prostudujte metodu `runER()`, kde je vytvořen objekt `ERIModelMappingDestinationRun` jako provádění modul mapování modelu ER.
 
-Prostudujte kód ve třídě `BankImport_RU` modelu `Application Suite` a podívejte se, jak lze implementovat vaši vlastní logiku. Tato třída rozšiřuje třídu `RunBaseBatch`. Zejména prostudujte metodu `runER()`, kde je vytvořen objekt `ERIModelMappingDestinationRun` jako provádění modul mapování modelu ER.
+Ve verzi Finance 10.0.25 a pozdější uživatelské rozhraní architektury ER nenabízí schopnost iniciovat novou dávkovou úlohu, která provede mapování modelu v bezobslužném režimu pro import dat. Další informace o tomto procesu viz [Import dat v dávkovém režimu z ručně vybraných souborů](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -205,6 +205,8 @@ Prostudujte kód ve třídě `BankImport_RU` modelu `Application Suite` a podív
 [Změny rozhraní API architektury ER pro aktualizaci aplikace 7.3](er-apis-app73.md)
 
 [Změny rozhraní API architektury ER pro aktualizaci aplikace 10.0.23](er-apis-app10-0-23.md)
+
+[Změny rozhraní API architektury ER pro aktualizaci aplikace 10.0.25](er-apis-app10-0-25.md)
 
 
 

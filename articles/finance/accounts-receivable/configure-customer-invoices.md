@@ -1,26 +1,26 @@
 ---
 title: Vytvoření faktury odběratele
-description: '**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli.'
+description: Faktura odběratele pro prodejní objednávku je účet, který se vztahuje k prodeji a který organizace předává odběrateli.
 author: ShivamPandey-msft
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723864"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087416"
 ---
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
@@ -42,6 +42,23 @@ Další informace naleznete zde:
 
 
 **Proforma faktura** je faktura připravená jako odhad skutečných částek faktury před zaúčtováním faktury. Proforma fakturu lze vytisknout buď pro fakturu odběratele pro prodejní objednávku, nebo pro volnou fakturu.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Použití entit dat zákaznické faktury prodejní objednávky
+Datové entity můžete použít k importu a exportu informací o zákaznické faktuře pro prodejní objednávku. Existují různé entity pro informace v záhlaví prodejní faktury a řádcích prodejní faktury.
+
+Pro informace v záhlaví prodejní faktury jsou k dispozici následující entity:
+
+- Entita **Záhlaví deníku prodejní faktury** (SalesInvoiceJournalHeaderEntity)
+- Entita **Záhlaví prodejních faktur V2** (SalesInvoiceHeaderV2Entity)
+
+Doporučujeme vám použít entitu **Záhlaví deníku prodejní faktury**, protože poskytuje výkonnější prostředí pro import a export prodejních hlaviček. Tato entita neobsahuje sloupec **Částka DPH** (INVOICEHEADERTAXAMOUNT), který představuje hodnotu DPH v záhlaví prodejní faktury. Pokud váš obchodní scénář vyžaduje tyto údaje, použijte entitu **Záhlaví prodejních faktur V2** pro import a export informací hlavičky prodejní faktury.
+
+Pro informace v řádcích prodejní faktury jsou k dispozici následující entity:
+
+- Entita **Řádky zákaznických faktur** (BusinessDocumentSalesInvoiceLineItemEntity)
+- Entita **Řádky prodejní faktury V3** (SalesInvoiceLineV3Entity)
+
+Když určujete, kterou entitu řádku použít pro exporty, zvažte, zda bude použito úplné nebo přírůstkové odeslání. Kromě toho zvažte složení dat. Entita **Řádky prodejní faktury V3** podporuje složitější scénáře (například mapování na pole inventáře). Podporuje také scénáře full-push exportu. Pro inkrementální odesílání doporučujeme použít entitu **Řádky zákaznických faktur**. Tato entita obsahuje mnohem jednodušší složení dat než entita **Řádky prodejní faktury V3** a je preferována, zejména pokud není vyžadována integrace pole inventáře. Vzhledem k rozdílům v podpoře mapování mezi entitami řádku entita **Řádky zákaznických faktur** má obvykle lepší výkon než entita **Řádky prodejní faktury V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Zaúčtování a tisk jednotlivých faktur odběratele založených na prodejních objednávkách
 Pomocí tohoto procesu můžete vytvořit fakturu založenou na prodejní objednávce. Můžete tak učinit, pokud chcete odeslat fakturu odběrateli před dodáním zboží nebo služeb. 
