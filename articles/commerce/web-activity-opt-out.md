@@ -2,29 +2,34 @@
 title: Odhlášení z kolekce událostí webové aktivity
 description: Toto téma vysvětluje, jak můžete dovolit návštěvníkům vašeho webu odhlásit se ze sbírání událostí webové aktivity v Microsoft Dynamics 365 Commerce.
 author: aamiral
+manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: sericks
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d71a184b541f243ccc23914ac2e7c663e5ba61be0a27cf8d41e368fe6a384b9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729823"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410802"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Odhlášení z kolekce událostí webové aktivity
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak můžete zákazníkům dovolit odhlásit se ze sbírání událostí webové aktivity v Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Dynamics 365 Commerce dovoluje správcům webu analyzovat webovou aktivitu uživatelů svých e-commerce webů. Tímto způsobem mohou lépe porozumět tomu, jak jsou jejich stránky používány, a mohou je optimalizovat tak, aby poskytovaly lepší uživatelský dojem a splňovaly obchodní cíle.
 
@@ -40,7 +45,7 @@ V modulu Správa účtu v centrále obchodu se správci mohou odhlašovat jméne
 1. V klientovi centrály obchodu na stránce **Všichni zákazníci** vyhledejte a vyberte zákazníka.
 1. Na stránce s podrobnostmi zákazníka, na pevné záložce **Maloobchod**, v sekci **Soukromí**, nastavte možnost **Nesledujte aktivitu na webu** na **Ano**.
 
-    ![Nastavení ochrany osobních údajů.](media/Disablepersonalizationpart2.png)
+    ![Nastavení ochrany osobních údajů](media/Disablepersonalizationpart2.png)
 
 1. Zvolte **Uložit** a pak zavřete stránku.
 
@@ -51,6 +56,3 @@ Správci mohou nechat ověřené uživatele, aby se sami odhlásili ze sběru ud
 ### <a name="custom-extensions"></a>Vlastní rozšíření
 
 Správci mohou vytvářet svá vlastní rozšíření pro správu možnosti odhlášení pro uživatele. Další informace naleznete v tématu [Volání rozhraní API serveru](e-commerce-extensibility/call-retail-server-apis.md) a [Rozšiřitelnost online kanálu](e-commerce-extensibility/overview.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

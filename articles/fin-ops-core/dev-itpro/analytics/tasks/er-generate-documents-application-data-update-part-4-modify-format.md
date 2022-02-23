@@ -1,10 +1,12 @@
 ---
 title: Úprava formátů pro generování dokumentů s daty aplikace
-description: Toto téma popisuje, jak navrhnout konfigurace vykazování k vygenerování elektronického dokumentu a aktualizaci dat aplikace.
+description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 3 - úprava modelu a mapování).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 312a49fc524cc7359d2c1815597214656df11c018034da384d30bfb9d9efee4b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752404"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684540"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Úprava formátů pro generování dokumentů s daty aplikace
 
@@ -147,6 +149,3 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 46. Zavřete stránku.
 47. Zavřete stránku.
 48. Zavřete stránku.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

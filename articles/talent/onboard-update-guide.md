@@ -52,6 +52,3 @@ Aplikace Onboard automaticky nově přijatému zaměstnanci odešle e-mail s vyz
     ![[Rozeslání změn v šabloně zaškolení do všech průvodců, kteří z ní byli vytvořeni](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Tyto změny budou viditelné novým zaměstnancům, kteří otevřou průvodce zaškolením. Aplikace Onboard však nebude odesílat e-mailová oznámení nově přijatým zaměstnancům, aby jim oznámila, že se jejich průvodce zaškolením změnil. Pro snadnější identifikaci se vedle každé změny zobrazí červená značka **Nová**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

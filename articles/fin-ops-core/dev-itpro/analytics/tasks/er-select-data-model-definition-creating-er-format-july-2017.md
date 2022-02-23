@@ -2,9 +2,11 @@
 title: Výběr definic datového modelu při vytváření formátů
 description: K provedení kroků v tomto postupu musíte nejprve dokončit postup "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e6c8df735976ca0f7805fe3e06f141d38abf12faf02ff66195339147aa5405
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720825"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684204"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Výběr definic datového modelu při vytváření formátů
 
@@ -96,6 +98,3 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Nyní je tak k dispozici k mapování zdrojů dat aplikace pouze jedna kořenová položka. Po uvedení alespoň jednoho modelu mapování jsou mapovány ke zdrojům dat aplikace pouze kořenové položky modelu, které lze vybrat jako definici modelu po přidání formátu ER.   
 5. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

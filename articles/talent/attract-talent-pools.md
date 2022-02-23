@@ -149,6 +149,3 @@ Z výsledků hledání nebo fondu talentů můžete vybrat uchazeče pro jakéko
 1. Na stránce žádosti vyberte **přidat do fondu talentů**. Zobrazí se fondy talentů, do kterých máte přístup.
 
 1. Vyberte nebo vyhledejte fond talentů a vyberte **Přidat** pro přidání uchazeče do tohoto fondu talentů.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

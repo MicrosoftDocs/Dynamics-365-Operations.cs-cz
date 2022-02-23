@@ -2,29 +2,32 @@
 title: Obsah přehledu hotovosti v Power BI
 description: Toto téma popisuje obsah přehledu hotovosti v Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 author: saraschi2
+manager: AnnBe
 ms.date: 07/16/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986401"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441195"
 ---
 # <a name="cash-overview-power-bi-content"></a>Obsah přehledu hotovosti v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **přehledu hotovosti** Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
+Toto téma popisuje obsah **Přehled hotovosti** v Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 
 ## <a name="overview"></a>Přehled
 
@@ -38,7 +41,7 @@ Následující nastavení musí být dokončeno, aby bylo možné zobrazit data 
 2. Přejděte na **Hlavní kniha > Kalendáře > Fiskální kalendáře** k ověření dat fiskálního kalendáře přiřazených k aktivnímu časovému období.
 3. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**.
 4. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou a zúčtovací měnou a bankovními měnami. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
-5. Nakonfigurujte a spusťte prognózu cashflow. Další informace o nastavení prognózy cashflow naleznete v tématu [Prognóza cashflow](./cash-flow-forecasting.md). 
+5. Nakonfigurujte a spusťte prognózu cashflow. Další informace o nastavení prognózy cashflow naleznete v tématu [Prognóza cashflow](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 6. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
@@ -76,6 +79,3 @@ Následující tabulka zobrazuje entity, na kterých je obsah **Přehled hotovos
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Souhrnné přírůstky, úbytky a zůstatek hotovosti s použitím zúčtovací měny každé společnosti |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Souhrnné přírůstky, úbytky a zůstatek hotovosti s použitím systémové měny pro všechny společnosti |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Souhrnná čistá částka transakce a zůstatek měn pomocí měny transakce |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

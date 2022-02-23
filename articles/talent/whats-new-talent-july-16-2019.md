@@ -142,6 +142,3 @@ Organizace mohou nabízet mnoho různých typů volna svým zaměstnancům. Pro 
 ### <a name="view-performance-information-for-direct-and-extended-reports-in-manager-self-service"></a>Zobrazení informací o výkonu pro přímé a rozšířené podřízené v samoobsluze pro manažery
 
 Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podřízených i jejich rozšířených podřízených. V současné době mohou linioví manažeři přiřazovat a aktualizovat cíle výkonnosti a vydávat nové revize. Kromě toho mohou přímí manažeři a jejich zaměstnanci udržovat a aktualizovat deníky výkonnosti, aby byl zajištěn plynulý proces kontroly výkonu. Při implementaci této změny budou mít manažeři možnost zobrazit a udržovat informace související s výkonem pro své rozšířené podřízené spolu se svými přímými podřízenými.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

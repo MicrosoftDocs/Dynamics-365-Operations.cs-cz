@@ -2,9 +2,11 @@
 title: Vytvoření právnické osoby
 description: Právnická osoba je organizace, která je identifikována prostřednictvím registrace u právního orgánu.
 author: sericks007
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d665c5e6f359ad51b2e247ac487c9e4cf23a85e90e91aae2bc9d3bb5cbb9e091
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759034"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796747"
 ---
 # <a name="create-a-legal-entity"></a>Vytvoření právnické osoby
 
@@ -43,6 +45,3 @@ Právnická osoba je organizace, která je identifikována prostřednictvím reg
 15. Rozbalte položku **Daňová registrace**. V části **Daňová registrace** zadejte registrační čísla, která se používají při styku s finančními úřady.
 16. Rozbalte sekci **Daň 1099**. V části **Daň 1099** zadejte informace 1099 pro právní subjekt.  
 17. Klikněte na možnost **Uložit**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

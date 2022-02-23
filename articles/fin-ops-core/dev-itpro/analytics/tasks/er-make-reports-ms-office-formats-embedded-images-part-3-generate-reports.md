@@ -1,10 +1,12 @@
 ---
 title: Generování sestav ve formátech Office s integrovanými obrázky
-description: Toto téma popisuje proces navrhování konfigurací elektronického výkaznictví (ER) ke generování elektronických dokumentů ve formátu Excel a Word obsahujících vložené obrázky.
+description: Následující postup popisuje, jak uživatel s rolí 'Správce systému' nebo 'Návrhář elektronického výkaznictví' může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec9f3013c1e365a3ca1a4c6cabe71a22e3e8b730eac38155ef023fe68107524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735519"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684372"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generování sestav ve formátech Office s integrovanými obrázky
 
@@ -117,6 +119,3 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 23. Klepněte na tlačítko OK.
     * Prohlédněte si vytvořený výstup. Výstup byl vygenerován jako dokument aplikace Word s vloženými obrázky loga společnosti, podpisem oprávněné osoby a vybraným textem vodoznaku.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Odchozí skladová operace v POS
 description: Toto téma popisuje možnosti odchozí skladové operace v pokladním místě (POS).
 author: hhaines
+manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410669"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Operace odchozích zásob v POS
+# <a name="outbound-inventory-operation-in-pos"></a>Odchozí skladová operace v POS
 
 [!include [banner](includes/banner.md)]
 
@@ -71,7 +74,7 @@ Dávkové úlohy, které vytvoříte, budou použity ke zpracování dokumentů,
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Předpoklad: Přidání odchozí operace do rozvržení obrazovky POS
 
-Aby mohla vaše organizace používat funkci odchozí operace, musí v POS konfigurovat **odchozí operaci** v jednom nebo více [rozloženích obrazovky POS](/dynamics365/unified-operations/retail/pos-screen-layouts). Před nasazením nové operace v provozním prostředí se ujistěte, že jste ji důkladně otestovali a svoje uživatele vyškolili k jejímu používání.
+Aby mohla vaše organizace používat funkci odchozí operace, musí v POS konfigurovat **odchozí operaci** v jednom nebo více [rozloženích obrazovky POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Před nasazením nové operace v provozním prostředí se ujistěte, že jste ji důkladně otestovali a svoje uživatele vyškolili k jejímu používání.
 
 ## <a name="overview"></a>Přehled
 
@@ -116,7 +119,7 @@ V zobrazení **Úplný seznam objednávek** můžete ručně vybrat řádek v se
 
 ### <a name="over-delivery-shipping-validations"></a>Ověření nadměrné dodávky
 
-Během procesu plnění pro řádky dokumentu dochází k jejich ověření. To zahrnuje ověření pro navýšení dodávky. Pokud se uživatel pokusí expedovat více zásob, než bylo objednáno na převodním příkazu, ale buď není konfigurována nadměrná dodávka, nebo expedované množství překračuje toleranci nadměrné dodávky, která je konfigurována pro řádek převodního příkazu, obdrží uživatel chybu a není povoleno expedovat nadměrné množství.
+Během procesu příjmu pro řádky dokumentu dochází k jejich ověření. To zahrnuje ověření pro navýšení dodávky. Pokud se uživatel pokusí přijmout více zásob, než bylo objednáno na nákupní objednávce, ale buď není konfigurována nadměrná dodávka, nebo přijaté množství překračuje toleranci nadměrné dodávky, která je konfigurována pro řádek nákupní objednávky, obdrží uživatel chybu a není povoleno obdržet nadměrné množství.
 
 ### <a name="underdelivery-close-lines"></a>Snížení dodávky pro uzavřené řádky
 
@@ -190,6 +193,3 @@ Plně expedované převodní příkazy jsou přesunuty na kartu **Dokončeno** v
 ## <a name="related-topics"></a>Související témata
 
 [Operace příchozích zásob v POS](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

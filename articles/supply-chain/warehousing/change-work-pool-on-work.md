@@ -2,23 +2,26 @@
 title: Změnit fond práce u práce
 description: Toto téma vysvětluje, jak můžete pomocí tlačítka Změnit fond práce pro pracovní položky změnit fond práce stávající práce.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 066655b58d4676bafb6e8ed8d80a95636c047444
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566016"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423851"
 ---
 # <a name="change-work-pool-on-work"></a>Změnit fond práce u práce
 
@@ -146,6 +149,3 @@ Můžete použít stránku **Podrobnosti o práci** pro zobrazení vytvořené p
 > Když se objeví dialogové okno **Změna fondu práce**, pole **ID fondu práce** může být ve výchozím nastavení prázdné. Pokud je pole prázdné, když vyberete **OK** pro použití změn, odeberete fond práce úplně z práce.
 >
 > Kromě přepínání fondů práce můžete pomocí tohoto postupu přidat fond práce do jakékoli pracovní položky, která ji nemá, nebo odebrat fond práce z jakékoli pracovní položky, která jej nemá.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

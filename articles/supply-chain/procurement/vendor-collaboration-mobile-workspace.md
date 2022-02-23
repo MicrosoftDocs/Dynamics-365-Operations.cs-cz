@@ -1,25 +1,27 @@
 ---
 title: Mobilní pracovní prostor dodavatelské spolupráce
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577017"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020829"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
@@ -57,7 +59,7 @@ Mobilní pracovní prostor **Spolupráce dodavatele** umožňuje dodavateli prov
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Předpoklady při použití aplikace Supply Chain Management
-Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Dodavatelská spolupráce**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Dodavatelská spolupráce**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform update 3 nebo novější, správce systému musí dokončit následující předpoklady. 
@@ -77,7 +79,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 <td>KB 3216943 je binární aktualizace, která je vyžadována, pokud používáte aktualizaci platformy 3. Pro implementaci tohoto KB musí správce systému provést tyto kroky:
 <ol>
 <li>Stáhněte si KB 3216943 ze služby Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Nainstalovat binární aktualizaci, která je dodána jako balíček s možností nasazení. Informace o použití nasaditelného balíčku naleznete v tématu <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a>.</li>
+<li>Nainstalovat binární aktualizaci, která je dodána jako balíček s možností nasazení. Informace o použití nasaditelného balíčku naleznete v tématu <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 <td>Správce systému</td>
 <td>KB 4013633 je aktualizace X++ nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Zásoby na skladě</strong>. Pro implementaci KB 4013633 musí správce systému provést tyto kroky:
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Stáhnout opravu hotfix pro metadata z LCS</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stáhnout opravu hotfix pro metadata z LCS</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Nainstalujte opravu hotfix metadat</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a></li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Mobilní pracovní prostor <strong>Spolupráce dodavatele</strong> musí být publikován.</td><td>Správce systému</td>
-<td>Viz téma <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</td>
+<td>Viz téma <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publikování mobilního pracovního prostoru</a>.</td>
 </tr>
 <tr class="even">
 <td>Dodavatelský uživatel musí mít přístup k webovému rozhraní dodavatelské spolupráce ve webovém klientovi a musí mít nastaveného uživatele pro dodavatelskou spolupráci.</td><td>Nákupní profesionálové a správce systému</td>
@@ -120,12 +122,12 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 4.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 5.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-    [![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Použití mobilního pracovního prostoru dodavatelské spolupráce
 Když vyberete pracovní prostor **Dodavatele spolupráce**, zobrazí se následující možnosti.
 
-![Mobilní pracovní prostor dodavatelské spolupráce.](./media/vendor-collaboration-mobile-app.png)
+![Mobilní pracovní prostor dodavatelské spolupráce](./media/vendor-collaboration-mobile-app.png)
 
 Pracovní prostor **Dodavatele spolupráce** má následující stránky.
 
@@ -167,6 +169,3 @@ Jsou zobrazeny všechny změny, které byly provedeny v odpovědi na řádku obj
 
 ### <a name="open-confirmed-orders"></a>Otevřít potvrzené objednávky
 Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na **Potvrzeno**), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

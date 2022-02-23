@@ -1,28 +1,29 @@
 ---
 title: Přehled párování faktur závazků
 description: Párování faktur závazků je procesem párování informací na faktuře dodavatele, nákupní objednávce a příjemce produktu.
-author: sunfzam
+author: abruer
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "27361"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 27361
 ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984070"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441244"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Přehled párování faktur závazků
 
@@ -48,7 +49,7 @@ Můžete použít následující typy párování faktur závazků:
 
 Dvoucestné s třícestné párování vždy páruje informace o ceně podle jednotkové ceny. Tyto zásady párování můžete nakonfigurovat rovněž tak, aby párovaly informace o ceně podle celkové ceny.
 -   Párování čisté jednotkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté jednotkové ceny pro jednotlivé řádky na faktuře s odpovídající čistou jednotkovou cenou na nákupní objednávce. Čistá jednotková cena je určována podle tohoto vzorce: čistá částka na řádku / množství na řádku.
--   Párování celkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka je určována podle tohoto vzorce: *(jednotková cena \* množství na řádku) + náklady na řádku − slevy na řádku*. Při párování celkové ceny podle procent, systém porovnává hodnoty pomocí měny transakce. Při párování celkové ceny podle částky, systém porovnává hodnoty pomocí zúčtovací měny. Když částečně fakturujete řádek nákupní objednávky, dojde k ověření párování celkové ceny na poslední faktuře pro daný řádek. 
+-   Párování celkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka je určována podle tohoto vzorce: *(jednotková cena \* množství na řádku) + náklady na řádku − slevy na řádku*. Při párování celkové ceny podle procent, systém porovnává hodnoty pomocí měny transakce. Při párování celkové ceny podle částky, systém porovnává hodnoty pomocí zúčtovací měny.
 
 Výpočet párování faktur se obvykle provádí automaticky při úpravě faktur dodavatele na stránce Faktura dodavatele. Případně lze párování faktur provést podle potřeby. Párování faktur na vyžádání je pro právnickou osobu řízeno parametrem Automaticky aktualizovat stav záhlaví faktury na kartě Ověření faktury na stránce Parametry závazků. Párování faktur lze provést také v rámci proces kontroly faktury. Výsledky párování faktur si můžete zobrazit na stránce Faktura dodavatele a na stránkách souvisejících s párováním faktur.
 
@@ -193,6 +194,3 @@ Další informace naleznete v tématu [Zásady třícestného párování](three
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

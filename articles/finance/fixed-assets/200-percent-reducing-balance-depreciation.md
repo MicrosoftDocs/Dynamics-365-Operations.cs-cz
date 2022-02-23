@@ -1,32 +1,35 @@
 ---
 title: Degresivní odpis 200 procent
-description: Toto téma poskytuje přehled metody degresivního odpisu 200 %.
-author: moaamer
+description: Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.
+author: saraschi2
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883486"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441203"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Degresivní odpis 200 procent
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled metody degresivního odpisu 200 %.
+Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 200 procent“.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 200 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 40 procent (200 % ÷ 5). 
 
@@ -66,7 +69,7 @@ Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence obdob
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Příklad 200% degresivního odpisování
 
-| &nbsp;                         | &nbsp; |
+|                                |        |
 |--------------------------------|--------|
 | Pořizovací náklady               | 11 000 |
 | Zůstatková hodnota                  | 1 000 |
@@ -78,15 +81,12 @@ Metoda degresivního odepisování 200 % vydělí 200 procent počtem roků živ
 
 | Období | Výpočet částky ročního odpisu | Účetní hodnota             | Čistá účetní hodnota na konci roku |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Rok 1 | (11 000 − 1000) × 40 % = 4000                | 11 000 − 4000 = 7000 | 11 000 – 1000 – 4000 = 6000        |
-| Rok 2 | 6000 × 40 % = 2400                           | 7000 – 2400 = 4600  | 6000 – 2400 = 3600                 |
-| Rok 3 | 3600 × 40 % = 1440                           | 4600 – 1440 = 3160  | 3600 – 1440 = 2160                 |
+| Rok 1 | (11 000 – 1 000) × 40% = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
+| Rok 2 | 6 000 × 40% = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
+| Rok 3 | 3 600 × 40% = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
 > Když částka vypočtená s použitím metody 200% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

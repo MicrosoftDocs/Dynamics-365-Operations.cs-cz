@@ -2,25 +2,28 @@
 title: Typy zaúčtování leasingu
 description: Toto téma popisuje typy účtování, které se používají pro transakce leasingu aktiv.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 721463000c05eb1774335ccce1af39468c2aed9f179e5e88d8725f4d265d6870
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceb4fbeb4dbf2f535e05a9d46c84169435d2803b
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718240"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441366"
 ---
 # <a name="lease-posting-types"></a>Typy zaúčtování leasingu
 
@@ -89,6 +92,15 @@ Například leasing má aktuální účetní hodnotu závazku z leasingu ve vý�
 **Debet:** výdej za odpis XXX<br>
 **Kredit:** Akumulovaný odpis XXX
 
+## <a name="retained-earnings"></a>Pozdržené příjmy
+
+Účet přidružený k pozdrženým příjmům. Tento účet může být debitován nebo kreditován v položce deníku vyrovnání přechodu pomocí úplné retrospektivní metody nebo metody A kumulativní možnosti oprav. Rozdíl mezi počátečním používaného majetku a leasingovým závazkem se zaúčtuje do pozdržených příjmů. Ve vzácných případech může dojít k ovlivnění pozdržených příjmů během úpravy leasingu, pokud se klasifikace leasingu změní z finanční na operativní tak, aby se hodnota používaného majetku zvyšovala nebo snižovala tak, aby se rovnala leasingovému závazku.
+
+**Příklad záznamů v deníku:** Přechodové vyrovnání (metoda s možností A plně retrospektivní nebo kumulativní opravy)<br>
+**Debet:** leasingový závazek XXX<br>
+**Kredit** leasing majetku XXX<br>
+**Kredit:** pozdržené příjmy XXX
+
 ## <a name="variable-payment"></a>Variabilní splátka
 
 Účet je spojen s variabilními leasingovými splátkami, které vznikají přeceněním indexu podle leasingů dle ASC 842, ASC 840 a IAS 17. V harmonogramu splátek leasingu jsou variabilní splátky zahrnuty ve sloupci **Variabilní splátka**. Z tohoto účtu je odečtena částka, když je faktura vytvořena na řádku plánu splátek, který obsahuje variabilní splátku.
@@ -142,6 +154,3 @@ Proti účtu se provede účetní zápis, pokud je vypnutý parametr **Platba do
 
 > [!NOTE]
 > Ofsetový účet je vybrán na úrovni leasingu na řádcích pro plán plateb zachraňovacích nákladů. Tento offsetový účet lze přidružit k dodavateli nebo k účtu hlavní knihy.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

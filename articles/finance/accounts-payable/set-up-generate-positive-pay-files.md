@@ -2,25 +2,28 @@
 title: Nastavení a generování souborů kladné platby
 description: Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
 author: panolte
+manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 992c73b1ba1f461542873a7df97f1539b99fc015c3e6ef090993e90212993851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82f7c8947bcc2dab394ea24e28a3631cc8682e5a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737178"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441105"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a generování souborů kladné platby
 
@@ -139,9 +142,6 @@ Soubory kladných plateb jsou vytvořeny pomocí datových entit. Aby bylo možn
 </xsl:stylesheet>
 ```
 
-> [!NOTE]
-> Názvy XML v kódu XSLT musí odpovídat velikosti písmen uzlů v XML. Soubory XSLT i XML rozlišují velká a malá písmena. 
-
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Přiřazení formátu kladné platby k bankovnímu účtu
 Pro každý bankovní účet, pro který chcete generovat informace o souborech kladných plateb, musíte přiřadit formát kladných plateb, který byl zadán v předchozím kroku. Na stránce **Bankovní účty** vyberte formát kladných plateb, který odpovídá bankovního účtu. V poli **Počáteční datum kladné platby** zadejte první datum generování souborů kladných plateb. Je důležité zadat datum do tohoto pole. V opačném případě první soubor kladných plateb, který vygenerujete, bude obsahovat všechny šeky, které kdy byly vytvořeny pro tento bankovní účet.
 
@@ -165,6 +165,3 @@ Pokud je nutné změnit soubor kladných plateb, můžete jej odvolat. Na strán
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

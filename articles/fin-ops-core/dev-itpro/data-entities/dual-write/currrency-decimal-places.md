@@ -2,25 +2,34 @@
 title: Migrace datového typu měny pro dvojitý zápis
 description: Toto téma popisuje, jak změnit počet desetinných míst, která pro měnu podporuje duální zápis.
 author: RamaKrishnamoorthy
-ms.date: 12/08/2021
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061829"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744368"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrace datového typu měny pro dvojitý zápis
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Můžete zvýšit počet desetinných míst, která jsou podporována pro hodnoty měny, maximálně na 10. Výchozí limit jsou čtyři desetinná místa. Zvýšením počtu desetinných míst pomáháte zabránit ztrátě dat při synchronizaci dat pomocí duálního zápisu. Zvýšení počtu desetinných míst je změna typu opt-in. Chcete-li jej implementovat, musíte požádat o pomoc společnost Microsoft.
 
@@ -29,7 +38,7 @@ Proces změny počtu desetinných míst má dva kroky:
 1. Žádost o migraci od společnosti Microsoft.
 2. Změna počtu desetinných míst v Dataverse.
 
-Finanční a provozní aplikace a Dataverse musí podporovat stejný počet desetinných míst v hodnotách měny. Jinak může dojít ke ztrátě dat, když jsou tyto informace synchronizovány mezi aplikacemi. Proces migrace překonfiguruje způsob uložení hodnot měny a směnného kurzu, ale nezmění žádná data. Po dokončení migrace lze zvýšit počet desetinných míst pro měnové kódy a ceny a data, která uživatelé zadávají a zobrazují, mohou mít větší desetinnou přesnost.
+Aplikace Finance and Operations a Dataverse musí podporovat stejný počet desetinných míst v hodnotách měny. Jinak může dojít ke ztrátě dat, když jsou tyto informace synchronizovány mezi aplikacemi. Proces migrace překonfiguruje způsob uložení hodnot měny a směnného kurzu, ale nezmění žádná data. Po dokončení migrace lze zvýšit počet desetinných míst pro měnové kódy a ceny a data, která uživatelé zadávají a zobrazují, mohou mít větší desetinnou přesnost.
 
 Migrace je volitelná. Pokud byste mohli mít podporu pro více desetinných míst, doporučujeme zvážit migraci. Organizace, které nevyžadují hodnoty, které mají více než čtyři desetinná místa, nemusí migrovat.
 
@@ -37,7 +46,7 @@ Migrace je volitelná. Pokud byste mohli mít podporu pro více desetinných mí
 
 Úložiště pro existující měnové sloupce v Dataverse nemůže podporovat více než čtyři desetinná místa. Proto během procesu migrace jsou hodnoty měny zkopírovány do nových interních sloupců v databázi. Tento proces probíhá nepřetržitě, dokud nebudou migrována všechna data. Interně na konci migrace nové typy úložišť nahrazují staré typy úložišť, ale hodnoty dat se nezmění. Sloupce měny pak mohou podporovat až 10 desetinných míst. Během procesu migrace lze Dataverse nadále používat bez přerušení.
 
-Současně jsou měnové kurzy upravovány tak, aby podporovaly až 12 desetinných míst místo současného limitu 10. Tato změna je nutná, aby počet desetinných míst byl stejný ve finanční a provozní aplikaci a Dataverse.
+Současně jsou měnové kurzy upravovány tak, aby podporovaly až 12 desetinných míst místo současného limitu 10. Tato změna je nutná, aby počet desetinných míst byl stejný v aplikaci Finance and Operations a Dataverse.
 
 Migrace nezmění žádná data. Po převodu sloupců měny a směnného kurzu mohou správci nakonfigurovat systém tak, aby používal až 10 desetinných míst pro měnové sloupce zadáním počtu desetinných míst pro každou měnu transakce a pro stanovení ceny.
 
@@ -75,28 +84,14 @@ Existují některá omezení:
 
 Po dokončení migrace mohou správci nastavit přesnost měny. Přejděte na **Nastavení \> Správa** a vyberte **Nastavení systému**. Pak na kartě **Obecné** změňte hodnotu sloupce **Nastavit přesnost měny, který se používá pro stanovení cen v celém systému**, jak je znázorněno na následujícím obrázku.
 
-![Systémová nastavení měny.](media/currency-system-settings.png)
+![Systémová nastavení měny](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Řízení podniku: měny
 
 Pokud požadujete, aby se přesnost měny pro konkrétní měnu lišila od přesnosti měny použité pro stanovení ceny, můžete ji změnit. Přejděte na **Nastavení \> Řízení podniku**, vyberte **Měny** a vyberte měnu, kterou chcete změnit. Pak nastavte sloupec **Přesnost měny** a zadejte požadovaný počet desetinných míst, jak je znázorněno na následujícím obrázku.
 
-![Nastavení měny pro konkrétní národní prostředí.](media/specific-currency.png)
+![Nastavení měny pro konkrétní národní prostředí](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>Tabulky: Sloupec Měna
+### <a name="tables-currency-column"></a>tabulky: Sloupec Měna
 
 Počet desetinných míst, která lze konfigurovat pro konkrétní sloupce měny, je omezen na čtyři.
-
-### <a name="default-currency-decimal-precision"></a>Výchozí měna s desetinnou přesností
-Očekávané chování pro výchozí desetinnou přesnost měny ve scénářích migrace a bez migrace naleznete v následující tabulce. 
-
-| Datum vytvoření  | Desetinné pole Měna    | Existující organizace (pole Měna nebylo migrováno) | Existující organizace (pole Měna migrováno) | Nová organizace vytvořená po sestavení 9.2.21062.00134 |
-|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
-| Pole Měna vytvořené před sestavením 9.2.21111.00146  |     |  |       |
-|    | Maximální přesnost viditelná v uživatelském rozhraní   | 4 číslice    | 10 číslic    | Není k dispozici    |
-| | Maximální přesnost viditelná v databázi a uživatelském rozhraní výsledků dotazů na databázi         | 4 číslice   | 10 číslic   | Není k dispozici    |
-| Pole Měna vytvořené po sestavení 9.2.21111.00146 |    |  |     |   |
-|   | Maximální desetinná přesnost viditelná v uživatelském rozhraní     | 4 číslice   | 10 číslic   | 10 číslic     |
-|          | Maximální desetinná přesnost viditelná v databázi a uživatelském rozhraní výsledků dotazů na databázi | 10 číslic. Pouze 4 číslice jsou však významné se všemi nulami za 4 desetinnými číslicemi. To v případě potřeby umožňuje jednodušší a rychlejší migraci organizace. | 10 číslic      | 10 číslic     |
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

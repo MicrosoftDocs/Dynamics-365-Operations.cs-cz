@@ -1,24 +1,27 @@
 ---
 title: Sledování běhu hlavního plánování
 description: Toto téma vysvětluje, jak může plánovač provozu sledovat, zda probíhá hlavní spuštění plánování.
-author: ChristianRytt
+author: josaw1
+manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778124"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423589"
 ---
 # <a name="monitor-a-master-planning-run"></a>Sledování běhu hlavního plánování
 
@@ -33,7 +36,7 @@ Na stránce **Zobrazit průběh hlavního plánování** můžete zobrazit podro
 Pokud chcete tuto funkci používat, postupujte takto:
 
 1. V pracovním prostoru **Správa funkcí** na kartě **Nová** vyberte v seznamu **Vizualizace pokroku optimalizace plánování**. Pokud se tato funkce nezobrazí na kartě **Nová**, podívejte se na karty **Není povoleno** a **Vše**.
-1. Vyberte **Povolit**. Můžete také vybrat možnost **Plán** a vybrat čas, kdy má být funkce zapnuta. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
+1. Vyberte **Povolit**. Můžete také vybrat možnost **Plán** a vybrat čas, kdy má být funkce zapnuta.
 
 Na stránce **Zobrazit průběh hlavního plánování** lze zobrazit historické úlohy plánování i aktivní úlohy plánování. 
 
@@ -124,6 +127,3 @@ Barva se zobrazí pouze na nejnižší úrovni v Ganttově diagramu. Výběrem m
 1. V mřížce vyberte řádek, ve kterém je pole **Pole** nastaveno na **číslo položky**.
 1. Zadejte hodnotu do pole **Kritéria**.
 1. Vyberte **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

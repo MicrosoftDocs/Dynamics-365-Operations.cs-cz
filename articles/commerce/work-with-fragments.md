@@ -2,30 +2,35 @@
 title: Práce s fragmenty
 description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090737"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4410911"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Fragmenty umožňují centralizované prostředí pro vytváření konfigurací modulu, které je nutné znovu použít v celém webu. Například záhlaví, zápatí a nápisy jsou často konfigurovány jako fragmenty, protože jsou sdíleny na více stránkách. Fragmenty lze považovat za miniaturní webové stránky, které lze vložit do jiných stránek na vašem webu. Fragmenty mají vlastní životní cyklus. Jinými slovy, jsou vytvořeny, odkazovány, aktualizovány a odstraněny jako nezávislé entity ve vývojových nástrojích.
 
@@ -45,7 +50,7 @@ Všechna místa, kde je fragment přidán, jsou odkazy na vytvořený centráln�
 
 Na následujícím obrázku je znázorněno, jak lze fragmenty použít k centralizaci vytváření konfigurací sdílených modulů v rámci webu e-Commerce.
 
-![Na obrázku je znázorněno, jak lze fragmenty použít k centralizaci vytváření konfigurací sdílených modulů v rámci webu e-Commerce..](./media/fragment-figure1.png)
+![Na obrázku je znázorněno, jak lze fragmenty použít k centralizaci vytváření konfigurací sdílených modulů v rámci webu e-Commerce.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Vytvořit fragment
 
@@ -62,7 +67,7 @@ Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný frag
 1. V dialogovém okně **Uložit jako fragment** zadejte název fragmentu.
 1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Vytvořit nový fragment
 
@@ -73,7 +78,7 @@ Nový fragment vytvoříte v konfigurátoru webů Commerce tímto postupem.
 1. Vyberte typ modulu pro váš fragment.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Výběrem generického typu kontejnerového modulu získáte maximální pružnost při aktualizaci a konfiguraci fragmentu později.
 
@@ -88,14 +93,14 @@ Fragment přidáte na stránku v konfigurátoru webů Commerce tímto postupem.
 1. V podokně osnovy vlevo nebo přímo ve vizuálním tvůrci stránek vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
 1. Vyberte tři tečky (**...**) vedle názvu kontejneru nebo slotu.  Případně, pokud používáte vizuální tvůrce stránek, vyberte symbol plus (**+**).  
 1. Vyberte **Přidat fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Pokud kontejner nebo slot nepodporuje nové podřízené moduly, nebude možnost **Přidat fragment** k dispozici.
     
 1. V dialogovém okně **Vybrat fragment** vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
 1. Výběrem přidáte požadovaný fragment do vybraného kontejneru nebo slotu na stránce.
-<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Moduly, které jsou povoleny v kontejneru nebo slotu, jsou definovány šablonou stránky nebo vlastními definicemi modulů.
@@ -122,21 +127,7 @@ Fragment upravíte v konfigurátoru webů Commerce tímto postupem.
 
 Fragment můžete také upravit tak, že jej vyberete na stránce, v šabloně nebo v nadřazeném fragmentu a poté vyberete **Upravit fragment** v podokně vlastností vpravo.
 
-### <a name="rename-a-fragment"></a>Přejmenování fragmentu
-
-Stávající fragment přejmenujete v konfigurátoru webů tímto postupem.
-
-1. V levém navigačním podokně vyberte položku **Fragmenty**.
-1. Vyberte název fragmentu, který chcete změnit.
-1. Výběrem příkazu **Upravit** začněte úpravu fragmentu. Upozorňujeme, že fragment nelze upravit, pokud jej již upravuje někdo jiný.
-1. V podokně vlastností fragmentu vyberte symbol pera vedle názvu fragmentu.
-1. Podle potřeby upravte název fragmentu.
-1. Zaškrtnutím políčka potvrďte změnu názvu.
-1. Vyberte **Dokončit úpravy**.
-
-Fragment můžete po jeho vytvoření přejmenovat tak, že jej upravíte a poté vyberete symbol pera vedle názvu fragmentu v panelu vlastností.
-
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
@@ -145,6 +136,3 @@ Fragment můžete po jeho vytvoření přejmenovat tak, že jej upravíte a pot�
 [Práce s přednastavenými rozloženími](work-with-layouts.md)
 
 [Práce se skupinami publikování](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

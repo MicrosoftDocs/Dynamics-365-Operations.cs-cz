@@ -1,10 +1,12 @@
 ---
 title: Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-description: Toto téma popisuje proces navrhování konfigurací elektronického výkaznictví ke generování elektronických dokumentů obsahujících vložené obrázky. (část 1 - Nastavení parametrů).
+description: K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh "Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1 - nastavení parametrů)".
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f209fcbac310dffb654f7830a4d4b12fa95d7a461b681864b8c9b547f4a4986c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717563"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684348"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
@@ -89,6 +91,3 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Některé popisky, které jsou uvedeny v předtištěném formuláři šeků, budou zahrnuty do sestavy při jejím vytvoření pro účely testování. Tyto štítky se však nevytisknou během skutečného tisku, protože předtištěný formulář je již obsahuje.  
 15. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

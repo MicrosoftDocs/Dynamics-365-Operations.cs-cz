@@ -2,30 +2,32 @@
 title: Jeden doklad
 description: Jedno číslo dokladu pro finanční deníky (deník hlavní knihy, deník dlouhodobého majetku, deník platby dodavatele a tak dále) slouží k zadání více transakcí hlavní knihy v rámci jednoho dokladu.
 author: kweekley
+manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344051"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441212"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Co je Jeden doklad?
@@ -34,45 +36,44 @@ Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhod
 
 - Nastavte název deníku (**Hlavní kniha** \> **Nastavení deníku** \> **Názvy deníků**) tak, aby pole **Nový doklad** bylo nastaveno na **Pouze číslo jednoho dokladu**. Všechny řádky, které přidáte do deníku, jsou nyní zahrnuty ve stejném dokladu. Proto lze doklad zadat jako doklad s více řádky, jako účet nebo protiúčet na stejném řádku nebo jako kombinaci.
 
-    [![Jeden řádek.](./media/same-line.png)](./media/same-line.png)
+    [![Jeden řádek](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definice jednoho dokladu **nepokrývá** případy, kde jsou názvy deníků nastaveny jako **Pouze číslo jednoho dokladu**, ale uživatel poté zadá doklad, který obsahuje pouze typy účtů hlavní knihy. V tomto tématu 'Jeden doklad' znamená, že existuje jediný doklad, který obsahuje více než jednoho dodavatele, odběratele, banku, dlouhodobý majetek nebo projekt.
 
 - Zadejte víceřádkový doklad, když neexistuje protiúčet.
 
-    [![Víceřádkový doklad.](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Víceřádkový doklad](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Zadejte doklad, kde účet i protiúčet obsahují typ účtu dílčí knihy, jako například **Dodavatel**/**Dodavatel**, **Odběratel**/**Odběratel**, **Dodavatel**/**Odběratel**, nebo **Banka**/**Banka**.
 
-    [![Doklad dílčí hlavní knihy.](./media/subledger.png)](./media/subledger.png)
+    [![Doklad dílčí hlavní knihy](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Potíže s jedním číslem dokladu
 
-Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stornu tranakce, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte například v části [Jeden doklad s více záznamy odběratele nebo dodavatele](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, v závislosti na nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
+Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stornu tranakce, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte například v části [Jeden doklad s více záznamy odběratele nebo dodavatele](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, v závislosti na nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
 
 Předpokládejme například, že zaúčtujete následující víceřádkový doklad:
 
-[![Příklad víceřádkového dokladu.](./media/example.png)](./media/example.png)
+[![Příklad](./media/example.png)](./media/example.png)
 
 Poté vygenerujete sestavu **Výdaje podle dodavatele** v pracovním prostoru **Finanční přehledy**. V této sestavě jsou zůstatky výdajových účtů seskupeny podle skupiny dodavatelů a poté dodavatele. Když je sestava vygenerována, systém nedokáže určit, kterým skupinám dodavatelů/dodavatelům vznikly výdaje 250,00. Vzhledem k tomu, že nebyly nalezeny podrobnosti o transakcích, systém bude předpokládat, že celé výdaje 250,00 jdou na vrub prvnímu dodavateli nalezenému v dokladu. Proto je výdaj 250,00, který je zahrnut do zůstatku na hlavním účtu 600120, uveden pod touto skupinou dodavatelů/dodavatelem. Je však velmi pravděpodobné, že první dodavatel v dokladu není správný dodavatel. Sestava je tedy pravděpodobně nesprávná.
 
-[![Výdaje podle sestavy dodavatele.](./media/expenses.png)](./media/expenses.png)
+[![Výdaj](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Budoucnost funkce Jeden doklad
 
-Z důvodu problémů, které mohou nastat při použití jednoho dokladu, bude tato funkce nakonec zastaralá. Protože však existují funkční mezery závislé na této funkci, zastarání se nestane najednou. Místo toho se použije následující plán:
+Z důvodu problémů, které byly zmíněny dříve, je funkce jednoho dokladu zastaralá. Protože však existují funkční mezery závislé na této funkci, funkce nezastarají všechny najednou. Místo toho se použije následující plán:
 
-- **Verze Spring 2018** – ve výchozím stavu byla tato funkce vypnuta pomocí parametru **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Parametry hlavní knihy**. Tuto funkci však můžete opět zapnout, pokud vaše organizace používá scénář, který spadá do jedné z funkčních mezer, které jsou uvedeny dále v tomto tématu.
+- **Verze Spring 2018** – Ve výchozím nastavení bude funkce vypnuta pomocí parametru **Povolit více transakcí v rámci jednoho dokladu** na kartě **Obecné** stránky **Parametry hlavní knihy**. Tuto funkci však můžete zapnout, pokud vaše organizace používá scénář, který spadá do jedné z funkčních mezer, které jsou uvedeny dále v tomto tématu.
 
-    - Pokud váš obchodní scénář nevyžaduje jeden doklad, doporučujeme nechat tuto funkci vypnutou. Microsoft nebude opravovat chyby v oblastech, které jsou identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
-    - Doporučujeme vám přestat používat Jeden doklad pro integrace, pokud nevyžadujete funkci pro jednu z dokumentovaných funkčních mezer.
+    - Pokud mají zákazníci obchodní scénář, který nevyžaduje jeden doklad, neměli by zapínat tuto funkci. Microsoft nebude opravovat chyby v oblastech, které jsou identifikovány dále v tomto tématu, je-li tato funkce použita i v případě, že existuje jiné řešení.
+    - Přestaňte používat Jeden doklad pro integrace, pokud funkcionalitu nepotřebujete pro jednu z funkčních mezer.
 
-- **Pozdější verze**- Některé z obchodních požadavků lze splnit pouze pomocí jednoho dokladu. Microsoft musí zajistit, aby všechny identifikované obchodní požadavky mohly být v systému stále plněny i po ukončení podpory této funkce. Proto bude pravděpodobně nutné přidat nové funkce k vyplnění funkčních mezer. Microsoft nemůže poskytnout konkrétní řešení, protože každá mezera mezi funkcemi je jiná a musí být hodnocena na základě obchodních požadavků. Některé funkční mezery budou pravděpodobně nahrazeny funkcemi, které pomohou splnit konkrétní obchodní požadavky. Jiné mezery však mohou být vyplněny pokračováním v povolení zápisu do deníku, jako když je použit Jeden doklad, ale vylepšením systému lze podle potřeby sledovat více podrobností.
+- **Nejnovější verze** – Všechny funkční mezery budou doplněny. **Po zaplnění funkčních mezer a doručení nových funkcí bude trvat ještě minimálně rok, než bude funkce jednoho dokladu trvale vypnuta**, protože zákazníci a nezávislí dodavatelé softwaru (ISV) musí mít dostatek času reagovat na novou funkci. Musí například aktualizovat své obchodní procesy, entity a integrace.
 
-Po vyplnění všech funkčních mezer společnost Microsoft sdělí, že funkce bude zastaralá. Zastarání však nebude účinné po dobu nejméně jednoho roku po tomto oznámení. Ačkoli společnost Microsoft nemůže poskytnout odhad o tom, kdy bude funkce Jeden doklad zastaralá, bude pravděpodobně trvat nejméně dva roky, než dojde k ukončení podpory. Zásadou společnosti Microsoft je ponechat mezi oznámením zastaralé funkce a skutečným ukončením podpory minimálně 12 měsíců, aby zákazníci a nezávislí dodavatelé softwaru (ISV) měli čas na změnu reagovat. Organizace možná bude muset aktualizovat své obchodní procesy, entity a integrace.
-
-Ukončení podpory Jednoho dokladu je významnou změnou, která bude široce komunikována. V rámci této komunikace společnost Microsoft bude aktualizovat toto téma a zveřejní příspěvek na blogu Microsoft Dynamics 365 Finance, aktualizuje téma „Odebrané nebo zastaralé funkce“, bude informovat o změně na příslušných konferencích společnosti Microsoft atd.
+> [!IMPORTANT]
+> Všimněte si, že možnost **pouze jedno číslo dokladu** **nebyla** odebrána z nastavení názvu deníku. Tato možnost je stále podporována, pokud doklad zahrnuje pouze typy účtů hlavní knihy. Odběratelé musí být opatrní, když toto nastavení používají, protože doklad se nezaúčtuje v případě, že používají **pouze jedno číslo dokladu**, ale poté zadají více než jednoho odběratele, dodavatele, banku, dlouhodobý majetek nebo projekt. Dále odběratelé také mohou zadat kombinaci typů účtů dílčí knihy, například platby v jednom dokladu, který obsahuje typy účtů **Dodavatel**/**Banka** .
 
 ## <a name="why-use-one-voucher"></a>Proč používat Jeden doklad?
 
@@ -82,7 +83,7 @@ Na základě rozhovorů s odběrateli společnost Microsoft zkompilovala násled
 
 Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu. Pokud vaše organizace má některý z uvedených scénářů, je nutné povolit více transakcí, které mají být zadány do dokladu změnou nastavení parametru **Povolit více transakcí v rámci jednoho dokladu** na stránce **Parametry hlavní knihy**. Tyto funkční mezery budou vyplněny pomocí dalších funkcí v novějších verzích.
 
-> [!NOTE]
+> [!Note]
 > [Pro každý z následujících scénářů musí být pole **Povolit více transakcí v rámci jednoho dokladu** musí být nastaveno na Ano na pevné záložce **Obecné** na stránce **Parametry hlavní knihy**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Zaúčtování plateb dodavatelů v souhrnné formě na bankovní účet
@@ -116,7 +117,15 @@ V tomto případě je zákazník na jednom dokladu stejný vzhledem k tomu, že 
 Pokud je periodická úloha refundace spuštěna z modulu pohledávek, vytváří transakci pro přesun zůstatku od zákazníka k dodavateli. V tomto scénáři musí být použit jeden doklad pro refundaci zákazníka.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Údržba dlouhodobého majetku: opravný odpis, rozdělení majetku, výpočet odpisu pro vyřazení
-Ve verzi 10.0.21 a novější budou transakce s dlouhodobým majetkem pro opravné odpisy, rozdělení majetku a výpočet odpisů pro vyřazení majetku vytvářeny pomocí různých čísel dokladů.
+Následujících transakce dlouhodobého majetku také vytvoří více transakcí v jedno dokladu:
+
+- Je provedeno další pořízení dlouhodobého majetku a je vypočten 'opravný' odpis.
+- Majetek je rozdělen.
+- Je zapnutý parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
+- Datum uvedení majetku do služby je před datem pořízení. Z tohoto důvodu je zaúčtována oprava odpisu.
+
+> [!Note]
+> Při zadávání transakcí zkontrolujte, zda se všechny transakce vztahují ke stejnému dlouhodobému majetku. Doklad nebude zaúčtován, pokud zahrnuje více než jeden dlouhodobý majetek, a to i v případě, že je pole **Nový doklad** nastaveno na jedno číslo dokladu pouze na stránce **Názvy deníku** v hlavní knize. Pokud do dokladu zahrnete více než jeden dlouhodobý majetek, může se zobrazit zpráva **Na doklad může existovat jen jedna transakce dlouhodobého majetku** a tento doklad nebude možné zaúčtovat.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Cizí směnky a vlastní směnky
 Cizí směnky a vlastní směnky vyžadují, aby byl použit jeden doklad, protože transakce přesouvají zůstatek zákazníka nebo dodavatele z jednoho účtu hlavní knihy pohledávek/závazků na jiný, na základě stavu platby.
@@ -177,6 +186,3 @@ Je-li nutné u pohledávek pro vybrané účty hlavní knihy splatných účtů 
 ### <a name="the-system-allows-it"></a>Systém to umožňuje"
 
 Organizace často používají funkci jednoho dokladu pouze proto, že jim systém umožňuje používat je bez pochopení důsledků.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

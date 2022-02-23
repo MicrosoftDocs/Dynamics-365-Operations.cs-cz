@@ -1,23 +1,25 @@
 ---
 title: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 description: Toto téma popisuje, jak vložit sestavu Power BI na kartě Analýzy v pracovním prostoru.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760145"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680929"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
@@ -54,11 +56,11 @@ Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual
 3. V dialogovém okně **Přidat novou položku**, v části **Operační artefakty**, vyberte šablonu **Prostředek**.
 4. Zadejte název, který se použije k odkazování na sestavu v metadatech X ++ a klepněte na tlačítko **přidat**.
 
-    ![Dialogové okno Přidat novou položku.](media/analytical-workspace-add.png)
+    ![Dialogové okno Přidat novou položku](media/analytical-workspace-add.png)
 
 5. Najděte soubor .pbix, který obsahuje definici analytické sestavy, a klepněte na tlačítko **Otevřít**.
 
-    ![Dialogové okno Vybrat soubor zdrojů.](media/analytical-workspace-select-resource.png)
+    ![Dialogové okno Vybrat soubor zdrojů](media/analytical-workspace-select-resource.png)
 
 Poté, co jako prostředek Dynamics 365 nepřidáte .pbix soubor, můžete vložit sestavy pracovní prostory a přidat přímé odkazy pomocí položky nabídky.
 
@@ -67,7 +69,7 @@ V tomto příkladu doporučujeme rozšířit pracovní prostor **řízení rezer
 
 Následující obrázek znázorňuje, jak formulář **FMClerkWorkspace** vypadá v Návrháři v aplikaci Microsoft Visual Studio.
 
-![Formulář FMClerkWorkspace před změnami.](media/analytical-workspace-definition-before.png)
+![Formulář FMClerkWorkspace před změnami](media/analytical-workspace-definition-before.png)
 
 Pomocí následujícího postupu rozšířit definici formuláře pracovního prostoru **Řízení rezervací**.
 
@@ -92,7 +94,7 @@ Pomocí následujícího postupu rozšířit definici formuláře pracovního pr
 
 Následující obrázek znázorňuje, jak návrh vypadá poté, co tyto změny se projeví.
 
-![FMClerkWorkspace po provedení změn.](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace po provedení změn](media/analytical-workspace-definition-after.png)
 
 Poté, co jste přidali ovládací prvky formuláře, které budou použity pro sestavu pracovního prostoru, je nutné definovat velikost nadřazenému ovládacímu prvku tak, aby se přizpůsobilo rozvržení. Ve výchozím bude v sestavě viditelná stránka **Podokno Filtry** a **Karta**. Můžete však změnit viditelnost zobrazení těchto ovládacích prvků v závislosti na příjemci cílové sestavy.
 
@@ -142,7 +144,7 @@ Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládac�
 
 Nyní jste dokončili úkol přidání obchodní logiky v ovládacím prvku prohlížeče sestavy. Následující obrázek znázorňuje, jak pracovní prostor vypadá poté, co se tyto změny projeví.
 
-![Sestava vložená do pracovního prostoru.](media/analytical-workspace-final.png)
+![Sestava vložená do pracovního prostoru](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Můžete zobrazit stávající operační zobrazení pomocí záložek pracovního prostor pod nadpisem stránky.
@@ -173,6 +175,3 @@ public static void initializeReportControl(
 | showFilterPane   | Logická hodnota, která určuje, zda má být podokno filtru zobrazené (**true**) nebo skryté (**false**).     |
 | showNavPane      | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (**true**) nebo skryté (**false**). |
 | defaultFilters   | Výchozí filtry pro sestavu Power BI.                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

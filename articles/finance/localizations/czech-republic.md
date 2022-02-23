@@ -1,23 +1,26 @@
 ---
 title: Přehled – Česká republika
 description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 Finance, která je specifická pro Českou republiku.
-author: kfend
-ms.date: 01/18/2022
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 09/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: Czech Republic
-ms.author: kfend
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7900adae2ae0c011d63ffaff6c3154b1cbbbe05a
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: 87ad5b8f6a0daabcd3fd44c966ef0b56186fa1f7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007561"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407600"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -55,10 +58,7 @@ Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automat
 
 Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účtovány ve stejnou dobu. V případě kladných transakcí daně z prodeje je datum registru DPH nastaveno na datum registru DPH ze stránky zaúčtování faktury a směrování daně z prodeje je **DPH na vstupu**. V případě záporných transakcí daně z prodeje je datum registru DPH nastaveno na datum dokumentu a směrování daně z prodeje je **DPH na výstupu**.
 
-## <a name="intrastat-declaration"></a>Prohlášení Intrastat
-Informace o českém hlášení Intrastat viz [Český intrastat](emea-cze-intrastat.md).
-
-## <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
+## <a name="credit-note-on-cash-discount"></a>Dobropis na platební slevu
 Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Dobropis na platební slevu](emea-cze-credit-note-cash-discount.md).
 
 ## <a name="split-periods-in-periodic-journals"></a>Rozdělení období v periodických denících
@@ -89,8 +89,6 @@ Existují jedinečné aspekty procesu roční uzávěrky a počátečních trans
 Další informace naleznete v tématu [roční uzávěrka pro Českou republiku a Maďarsko](emea-cze-hun-year-end.md).
 
 ## <a name="additional-resources"></a>Další prostředky
-- [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Portál lokalizace Microsoft Dynamics: Sestava České republiky](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
+- [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

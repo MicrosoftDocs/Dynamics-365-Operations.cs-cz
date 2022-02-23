@@ -2,9 +2,11 @@
 title: Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně
 description: Tento článek vysvětluje způsob zobrazení stránek vedle sebe.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068052"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798396"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tento článek vysvětluje způsob zobrazení stránek vedle sebe.
 
@@ -49,6 +48,3 @@ Před použitím funkce **Otevřít v novém okně** je třeba nakonfigurovat fu
 Funkce **Otevřít v novém okně** je k dispozici pouze, pokud existuje více než jedna stránka otevřená v okně. Dále se místní okno automaticky zavře, pokud nejsou žádné další stránky otevřeny (tj. když je zavřena poslední stránka v tomto okně). Systém také zavře otevřené stránky, když přejdete do jiné oblasti aplikace. Z toho vyplývá, že pokud máte otevřená místní okna a přejdete do jiné oblasti v aplikaci, místní okna budou automaticky uzavřena, protože stránky v těchto oknech byly zavřeny systémem.
 
 Horní panel v místních oknech zobrazuje informace o společnosti, ve které byla stránka otevřena a je určena jen ke čtení. Místní podokna jsou závislá na hlavním okně prohlížeče. Je-li hlavní okno zavřeno nebo aktualizováno, všechna otevřená místní okna se stanou jen pro čtení. Pokud k tomu dojde, můžete stále prohlížet údaje v těchto oknech, ale nebudete moci s nimi spolupracovat.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,29 +2,36 @@
 title: Přehled hledání využívajícího cloud
 description: Toto téma poskytuje přehled o cloudovém vyhledávání v řešení Microsoft Dynamics 365 Commerce.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983662"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410660"
 ---
 # <a name="cloud-powered-search-overview"></a>Přehled hledání využívajícího cloud
+
 
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled o cloudovém vyhledávání v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Možnost vyhledání produktu pomáhá zajistit, že zákazníci mohou snadno a rychle vyhledávat produkty pomocí procházení kategorií, vyhledávání a filtrování. Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech.
 
@@ -40,7 +47,7 @@ Relevance a výkonnost vyhledávání jsou klíčovými faktory v prostředí o
 
 Na následujícím obrázku je znázorněn příklad typických funkcí procházení a vyhledávání.
 
-![Cílová stránka vyhledávání.](./media/SearchLanding.png)
+![Cílová stránka vyhledávání](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Souhrn fasetové navigace a voleb 
 
@@ -50,7 +57,7 @@ Použitím fasetové navigace můžete nakonfigurovat různá zpřesnění pro r
 
 Na následujícím obrázku je znázorněn příklad, ve kterém je při hledání použita fasetová navigace.
 
-![Souhrn voleb.](./media/ChoiceSummary.png)
+![Souhrn voleb](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Moderní automatické návrhy
 
@@ -60,7 +67,7 @@ Aktuální funkce automatických návrhů pouze zobrazují klíčová slova, kte
 
 Na následujícím obrázku je znázorněn příklad použití moderního automatického návrhu.
 
-![moderní automatické návrhy.](./media/ImmersiveAutoSuggestUX.png)
+![moderní automatické návrhy](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Seřadit
 
@@ -68,13 +75,10 @@ Rozšířené třídění v řešení Dynamics 365 Commerce umožňujě zákazn
 
 >[!NOTE]
 >Tyto vyhledávací funkce využívající cloud jsou k dispozici od verze 10.0.8. Ujistěte se, že v části **Parametry velkoobchodu> Konfigurační parametry** je u položky ProductSearch.UseAzureSearch nastavena hodnota „true“. 
-![Konfigurační parametry pro cloudové vyhledávání.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurační parametry pro cloudové vyhledávání](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
-[Přehled výchozí cílové stránky kategorie a stránky výsledků hledání](category-search-page-overview.md)
+[Přehled výchozí cílové stránky kategorie a stránky s výsledky hledání](category-search-page-overview.md)
 
 [Správa metadat SEO](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

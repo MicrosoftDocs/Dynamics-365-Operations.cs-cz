@@ -1,10 +1,12 @@
 ---
 title: Expedice pracovního příkazu
 description: Toto téma vysvětluje, jak expedovat pracovní příkaz v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778717"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016849"
 ---
 # <a name="dispatch-work-order"></a>Expedice pracovního příkazu
 
@@ -52,11 +54,8 @@ Pomocí funkce **Expedovat** můžete naplánovat jeden pracovní příkaz nebo 
 
 Na následujícím obrázku je uveden příklad výběru expedice v dialogovém okně **Naplánovat pracovní příkaz**.
 
-![Obrázek č. 1.](media/04-work-order-scheduling.png)
+![Obrázek č. 1](media/04-work-order-scheduling.png)
 
 [!NOTE]
 Pokud chcete odstranit plán v pracovním příkazu, vyberte pracovní příkaz v možnosti **Všechny pracovní příkazy** a kliknutím možnost **Odstranit plán** na kartě **Obecné** . Nezapomeňte ručně aktualizovat stav životního cyklu pracovního příkazu, pokud jste plán odstranili.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

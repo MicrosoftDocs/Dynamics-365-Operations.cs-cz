@@ -2,22 +2,25 @@
 title: Potvrdit odchozí dodávky z dávkových úloh
 description: Toto téma popisuje, jak nastavit dávkovou úlohu, která automaticky potvrzuje odchozí zásilky převodu objednávek pro zatížení připravená k odeslání.
 author: perlynne
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778466"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423578"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potvrdit odchozí dodávky z dávkových úloh
 
@@ -27,7 +30,7 @@ Toto téma popisuje, jak nastavit dávkovou úlohu, která automaticky potvrzuje
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Povolte funkci Potvrdit odchozí zásilky z dávkových úloh
 
-Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
+Než budete moci použít tuto funkci, musíte ji povolit ve svém systému. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul** - *Řízení skladu*
 - **Název funkce** - *Potvrdit odchozí zásilky z dávkových úloh*
@@ -51,6 +54,3 @@ Chcete-li nastavit naplánovanou dávkovou úlohu pro spuštění potvrzení odc
 1. Vyberte **OK** v dialogovém okně **Potvrďte odeslání** pro přidání dávkové úlohy do dávkové fronty.
 
 Další informace viz [Přehled dávkového zpracování](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

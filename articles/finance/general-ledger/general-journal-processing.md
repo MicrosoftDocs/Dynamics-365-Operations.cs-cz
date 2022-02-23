@@ -1,26 +1,29 @@
 ---
 title: Zpracování hlavního deníku
 description: Toto téma popisuje možnosti v aplikaci Microsoft Dynamics 365 Finance, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726770"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441270"
 ---
 # <a name="general-journal-processing"></a>Zpracování hlavního deníku
 
@@ -42,14 +45,14 @@ Na stránce **Názvy deníků** můžete nastavit následující prvky:
 
 Název deníku lze použít pouze pro úpravy. V tomto případě můžete určit, že pouze typ účtu **Hlavní kniha** je platný napříč všemi společnostmi. 
 
-[![Typy účtů kontroly deníku.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Typy účtů kontroly deníku](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Název deníku lze použít pouze pro konkrétní segment nebo pro rozsah u hlavních účtů. 
 
-[![Segment kontroly deníku.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Segment kontroly deníku](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Možnost **Automatické storno** je k dispozici v hlavních denících. Například máte úpravu časového rozlišení, u které skutečný dokument dosud nebyl zpracován, jak je uvedeno v následujícím obrázku.
-[![Stornování hlavního deníku.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Stornování hlavního deníku](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Doplněk Microsoft Excel pro položku deníku poskytuje další úroveň automatizace a usnadňuje zadávání dat. Akce **Otevřít řádky v aplikaci Excel** je k dispozici na stránkách **Hlavní deník** a **Doklad deníku**. 
 
@@ -102,6 +105,3 @@ Možnost odvolat deník v workflowu, který má stav "bez možnosti obnovy", je 
 
 ## <a name="delete-journal-lines"></a>Odstranit řádky deníku
 Možnost rychlé odstranění všech řádků deníku je povolena v deníku v části **Funkce** > **Odstranit řádky deníku**. Chcete-li tuto funkci povolit, vyberte ve **Správě funkcí** možnost **Odstranit optimalizace výkonu deníku**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

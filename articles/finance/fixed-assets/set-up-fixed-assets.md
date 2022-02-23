@@ -1,38 +1,45 @@
 ---
 title: Nastavení dlouhodobého majetku
 description: Toto téma poskytuje přehled nastavení modulu Dlouhodobý majetek.
-author: moaamer
-ms.date: 06/08/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 572d104bbc7024da1ea4b219fd3f544f36a88ccddcf1aa5d18065e2e08b93bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754211"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441309"
 ---
 # <a name="set-up-fixed-assets"></a>Nastavení dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled nastavení modulu **Dlouhodobý majetek**. 
+Toto téma poskytuje přehled nastavení modulu **Dlouhodobý majetek**.
 
-Parametry řídí obecné chování v modulu Dlouhodobý majetek. Skupiny dlouhodobého majetku umožňují seskupování majetku a zadat výchozí atributy pro každý jednotlivý majetek, který je přiřazen ke skupině. Knihy jsou přiřazeny skupinám dlouhodobého majetku Knihy sledují finanční hodnotu dlouhodobého majetku v čase pomocí konfigurace odpisů definované profilu odpisů.
+## <a name="overview"></a>Přehled
+
+Parametry řídí obecné chování v modulu Dlouhodobý majetek.
+
+Skupiny dlouhodobého majetku umožňují seskupování majetku a zadat výchozí atributy pro každý jednotlivý majetek, který je přiřazen ke skupině. Knihy jsou přiřazeny skupinám dlouhodobého majetku Knihy sledují finanční hodnotu dlouhodobého majetku v čase pomocí konfigurace odpisů definované profilu odpisů.
 
 Dlouhodobý majetek je při vytvoření zařazen do určité skupiny položek. Ve výchozím nastavení jsou knihy, které jsou přiřazeny ke skupině dlouhodobého majetku, následně přiřazeny dlouhodobému majetku. Knihy, které jsou konfigurovány pro zaúčtování do hlavní knihy, souvisejí s účetním profilem. Účty hlavní knihy jsou definovány pro každou knihu v účetním profilu a jsou použity při zaúčtování transakcí dlouhodobého majetku.
 
-![Komponenty dlouhodobého majetku.](./media/FAComponents_Updated.png)
+![Komponenty dlouhodobého majetku](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Odpisové plány
 
@@ -45,8 +52,6 @@ Po nastavení odpisových plánů je nutné vytvořit požadované knihy majetku
 Každá kniha má přiřazen primární odpisový plán. Knihy také mají alternativní nebo náhradní odpisový plán, pokud tento typ profilu je možné použít. Pokud chcete automaticky zahrnout knihu dlouhodobého majetku do spuštění odpisů, musíte povolit možnost **Vypočítat odpis**. Pokud tato možnost není povolena pro majetek, bude majetek při návrhu odpisu vynechán.
 
 Lze také nastavit odvozené knihy. Určené odvozené transakce jsou zaúčtovány oproti odvozeným knihám jako přesná kopie primární transakce. Z toho vyplývá, že odvozené transakce jsou obvykle nastaveny pro pořízení a likvidace, ne pro transakce odpisů. Další informace naleznete v tématu [Nastavení modelů ocenění](tasks/set-up-value-models.md).
-
-Možnost na stránce **Parametry dlouhodobého majetku** umožňuje zapnout nebo vypnout funkci uzamčení. Tato funkce je povolena v **pracovním prostoru Správa funkcí**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Účetní profily dlouhodobého majetku
 
@@ -72,8 +77,6 @@ Pole **Prahová hodnota kapitalizace** určuje majetek, který je odepsán. Jest
 
 Jedna z důležitých možností se nazývá **Automaticky vytvořit částky úprav odpisů s vyřazením**. Pokud tuto možnost nastavíte na **Ano**, odpis majetku je automaticky upraven na základě nastavení odpisů při likvidaci aktiva. Další možnost umožńuje odečíst slevy z částky pořízení při pořízení dlouhodobého majetku pomocí faktury dodavatele.
 
-Parametr **Uzamknout knihy majetku v deníku odpisů** umožňuje uzamknout knihy majetku v deníku odpisů. Při zaúčtování odpisových transakcí systém ověří, že stejná kniha majetku nebyla přidána do více než jednoho deníku odpisů. Pokud ano, bude tato kniha majetku uzamčena a zaúčtování bude zastaveno. Pokud je ID knihy majetku v uzamčeném deníku, odemkne se automaticky po dokončení zaúčtování pro původní deník. Deník lze odemknout také ručně. 
-
 Na pevné záložce **Nákupní objednávky** můžete nakonfigurovat způsob, jakým bude majetek vytvářen jako součást procesu nakupování. První možnost se nazývá **Povolit pořízení majetku v části Nakupování**. Pokud tuto možnost nastavíte na **Ano**, při zaúčtování faktury dojde k pořízení majetku. Pokud tuto možnost nastavíte na hodnotu **Ne**, i nadále můžete vkládat dlouhodobý majetek na nákupní objednávky a faktury, ale nezaúčtují se pořízení. Zaúčtování je nutné provést jako samostatný krok v deníku dlouhodobého majetku. Možnost **Vytvořit majetek při zaúčtování příjemky produktu nebo faktury** umožňuje vytvořit nový majetek "průběžně" během zaúčtování. Majetek tedy nemusí být nastaven jako dlouhodobý majetek před transakcí. Poslední možnost **Kontrola vytvoření dlouhodobého majetku při zadání řádku** platí pouze pro nákupní požadavky.
 
 Je možné nakonfigurovat kódy důvodu tak, aby byly vyžadovány pro změny dlouhodobého majetku nebo pro konkrétní transakce dlouhodobého majetku.
@@ -81,6 +84,3 @@ Je možné nakonfigurovat kódy důvodu tak, aby byly vyžadovány pro změny dl
 Nakonec na kartě **Číselné řady** můžete definovat číselné řady pro dlouhodobý majetek. Číselná řada **Dlouhodobého majetku** může být přepsána číselnou řadou číslo **skupiny dlouhodobého majetku**, pokud byla zadána.
 
 Další informace naleznete v tématu [Vytvoření dlouhodobého majetku](tasks/create-fixed-asset.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

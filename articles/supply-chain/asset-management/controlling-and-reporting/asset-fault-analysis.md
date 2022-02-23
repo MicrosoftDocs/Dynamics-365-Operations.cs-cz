@@ -1,10 +1,12 @@
 ---
 title: Analýza závady majetku
 description: V tomto tématu je vysvětlena analýza závady majetku v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 880ed35a9780185836218a5c2a7addb2a47eabd737d6bec99794ecb7a0959791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779271"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022366"
 ---
 # <a name="asset-fault-analysis"></a>Analýza závady majetku
 
@@ -60,7 +62,7 @@ Na níže uvedeném snímku obrazovky je vybráno pouze tlačítko **Příznak**
 - Registrace závad byly provedeny se třemi příznaky poruch: únik vzduchu, vyhořelá pojistka a ucpané zařízení.  
 - Ve sloupci **Pravděpodobnost %** se všechny procentuální hodnoty sčítají až do 100%. Pravděpodobnost je založena na všech registracích **příznaku** v této analýze závad.
 
-![Obrázek č. 1.](media/06-controlling-and-reporting.png)
+![Obrázek č. 1](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Seskupit podle příznaků a časového období
 
@@ -69,7 +71,7 @@ Na níže uvedeném snímku obrazovky se přidají **Rok** a **Měsíc**, aby se
 - Příznaky závad jsou nyní zobrazeny jako registrace za rok/měsíc.  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro každý měsíc, přidá se až 100%. Pravděpodobnost je založena na registracích **příznaku** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací příznaku závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tento příznak závady.
 
-![Obrázek č. 2.](media/07-controlling-and-reporting.png)
+![Obrázek č. 2](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Seskupit podle více příznaků a majetku
 
@@ -84,7 +86,7 @@ Na níže uvedeném snímku obrazovky byl přidán **Majetek** a **Typ majetku**
 - Příznaky závad jsou nyní rozděleny do kombinací **Majetek** / **Typ majetku** / **Příznak**.  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak**, každá dosáhne 100%. Pravděpodobnost je založena na registracích **příznaku** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací příznaku závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tento příznak závady.
 
-![Obrázek č. 3.](media/08-controlling-and-reporting.png)
+![Obrázek č. 3](media/08-controlling-and-reporting.png)
 
 **Seskupit podle dvou příznaků, majetku a typu majetku**
 
@@ -92,7 +94,7 @@ Na níže uvedeném snímku obrazovky byla přidána **Oblast** k možnostem **P
 
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak** na majetku, každá dosáhne 100%. Pravděpodobnost je založena na kombinaci **příznaku** a **oblasti** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací oblasti závady, kterou je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tuto oblast závady.  
 
-![Obrázek č. 4.](media/09-controlling-and-reporting.png)
+![Obrázek č. 4](media/09-controlling-and-reporting.png)
 
 **Seskupit podle tří příznaků, majetku a typu majetku**
 
@@ -100,12 +102,9 @@ Na snímku obrazovky níže byl přidán **Typ** a v tomto příkladu je zobraze
  
 - Pokud do sloupce **Pravděpodobnost %** přidáte všechna procenta pro kombinaci **Majetek** / **Typ majetku** / **Příznak** na majetku, každá dosáhne 100%. Pravděpodobnost je založena na kombinaci **příznaku**, **oblasti** a **typu** v této analýze závad. Máte-li v majetku velký počet řádků, ale velké procento vyčnívá na řádku, bude to indikací typu závady, který je třeba blíže prozkoumat a nalézt způsob, jak omezit počet registrací pro tenti typ závady.
 
-![Obrázek č. 5.](media/10-controlling-and-reporting.png)
+![Obrázek č. 5](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
 >Pro získání přehledu všech registrací závad vytvořených v pracovních příkazech a požadavcích na údržbu klikněte na **Správa majetku** > **Dotazy** > **Závada majetku** > **Závady majetku**. Na stránce **Závady majetku** vyberte registraci závad majetku a rozbalte podokno **Související informace**, abyste viděli informace týkající se souvisejícího pracovního příkazu nebo požadavku na údržbu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

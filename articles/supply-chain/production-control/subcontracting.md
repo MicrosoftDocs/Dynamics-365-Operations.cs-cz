@@ -1,23 +1,26 @@
 ---
 title: Subdodávka
 description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Dynamics 365 Supply Chain Management.
-author: johanhoffmann
+author: christophernread
+manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423549"
 ---
 # <a name="subcontracting"></a>Subdodávka
 
@@ -39,7 +42,7 @@ V právnické osobě HQUS jsou vyráběny špičkové reproduktory. Během výr
 
 Následující obrázek znázorňuje tři operace a materiály, které tyto operace spotřebovávají.
 
-![Předběžné sestavení, lakování a operace dokončení, spolu se spotřebovávanými materiály.](./media/subcontract01_operations-materials.png)
+![Předběžné sestavení lakování a operace dokončení, spolu se spotřebovávanými materiály.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Nastavení
 
@@ -52,41 +55,41 @@ Tento postup vás provede nastavením uvolněného produktu D8100, „Nalakovan�
 1. Vyberte **Řízení informací o produktech \> Produkty \> Uvolněné produkty** pro otevření stránky **Podrobnosti uvolněného produktu**.
 2. V poli rychlého filtru zadejte **D8100** pro vyhledání existujícího uvolněného produktu.
 
-    ![Filtrování uvolněného produktu D8100 na stránce Podrobnosti uvolněného produktu.](./media/subcontract02_filtering-released-products.png)
+    ![Filtrování uvolněného produktu D8100 na stránce Podrobnosti uvolněného produktu](./media/subcontract02_filtering-released-products.png)
 
 3. V podokně akcí na kartě **Analýza** zvolte **Postup** k otevření stránky **Postup**.
 
     Stránka **Postup** zobrazuje osm verzí postupu pro uvolněný produkt D8100. Osm verzí postupu je rozděleno mezi čtyři postupy na pracovišti 1 a pracovišti 5. Postup 000400 se používá pro výpočet nákladů, postup 00041 se používá, když je lakování interní operací a postup 00042 se používá tehdy, když je lakování externí operací.
 
-    ![Osm verzí postupu na stránce Postup.](./media/subcontract03_route-page.png)
+    ![Osm verzí postupu na stránce Postup](./media/subcontract03_route-page.png)
 
 4. V horním podokně v mřížce **Verze** zvolte verzi postupu **00042** pro pracoviště **5**.
 5. V dolním podokně na **Přehled** zvolte operaci **20** (**Cbnt CtSc**) v mřížce.
 
-    ![Je zvolena operace 20 pro verzi postupu 00042 pro pracoviště 5.](./media/subcontract04_route-version-operation.png)
+    ![Je zvolena operace 20 pro verzi postupu 00042 pro pracoviště 5](./media/subcontract04_route-version-operation.png)
 
 6. Zvolte kartu **Obecné**.
 
     Všimněte si, že pole **Typ postupu** je nastaveno na **Dodavatel**. Tato hodnota označuje, že operace 20 (Cbnt CtSc) je subdodavatelskou operací.
 
-    ![Pole typ postupu nastavené na Dodavatel na kartě Obecné.](./media/subcontract05_general-tab.png)
+    ![Pole typ postupu nastavené na Dodavatel na kartě Obecné](./media/subcontract05_general-tab.png)
 
 7. Zvolte kartu **Požadavky na zdroj**.
 
     Možnosti budou použity pro vyhledání použitelného zdroje během plánování výroby. U operace 20 (Cbnt CtSc) 20 si všimněte, že je nutný zdroj s dvěma možnostmi **Lakování** a **Lakované skříňky**.
 
-    ![Možnosti Lakování a Lakované skříňky na kartě požadavků na zdroj.](./media/subcontract06_resource-requirements-tab.png)
+    ![Možnosti Lakování a Lakované skříňky na kartě požadavků na zdroj](./media/subcontract06_resource-requirements-tab.png)
 
 8. Zvolte **Použitelné prostředky** a otevřete dialogové okno **Použitelné prostředky**.
 
     Byly nalezeny tři zdroje, které splňují požadavky na zdroje pro operaci. Všimněte si, že zdroje 8851 a 8852 jsou typem **Dodavatel**.
 
-    ![Tři vhodné zdroje v dialogovém okně Použitelné prostředky.](./media/subcontract07_applicable-resources-dialog.png)
+    ![Tři vhodné zdroje v dialogovém okně Použitelné prostředky](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Vyberte **OK**, zavřete dialogové okno **Použitelné prostředky** a vraťte se na stránku **Postup**.
 10. Zavřete stránku **Postup** a vraťte se na stránku **Podrobnosti uvolněného produktu**.
 
-    ![Stránka podrobností o uvolněném produktu.](./media/subcontract08_released-product-details-page.png)
+    ![Stránka podrobností o uvolněném produktu](./media/subcontract08_released-product-details-page.png)
 
 11. V podokně akcí na kartě **Analýza** zvolte **Verze kusovníku** k otevření stránky **Verze kusovníku**.
 
@@ -94,7 +97,7 @@ Tento postup vás provede nastavením uvolněného produktu D8100, „Nalakovan�
 
     Všimněte si, že položka S8050 je produktem typu položky **Služba**. Tato položka reprezentuje práci subdodavatele.
 
-    ![Čtyři verze kusovníku na stránce verzí kusovníku.](./media/subcontract09_bom-versions-page.png)
+    ![Čtyři verze kusovníku na stránce verzí kusovníku](./media/subcontract09_bom-versions-page.png)
 
 12. Na pevné záložce **Řádky kusovníku** zvolte **Upravit** a otevřete dialogové okno **Upravit řádek kusovníku**.
 
@@ -102,7 +105,7 @@ Tento postup vás provede nastavením uvolněného produktu D8100, „Nalakovan�
 
     Všimněte si, že řádek kusovníku je připojen k operaci lakování prostřednictvím čísla operace (v tomto případě 20).
 
-    ![Úprava dialogové okna řádku kusovníku.](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Úprava dialogové okna řádku kusovníku](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Vytvoření hesla pro pracovníky skladu
 
@@ -111,7 +114,7 @@ Musíte definovat heslo pro pracovníky skladu, kteří používají ruční za�
 1. Vyberte **Řízení skladu \> Nastavení \> Pracovník** a otevřete stránku **Uživatelé práce**.
 2. Na pevné záložce **Uživatelé** vyberte řádek pro uživatele **51**.
 
-    ![Stránka uživatelů práce.](./media/subcontract11_work-users-page.png)
+    ![Stránka uživatelů práce](./media/subcontract11_work-users-page.png)
 
 3. Zvolte **Resetovat heslo**.
 4. V polích **Heslo** a **Potvrdit heslo** zadejte **1**.
@@ -126,14 +129,14 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
 1. Vyberte **Řízení výroby \> Výrobní zakázky \> Všechny výrobní zakázky** a otevřete stránku **Všechny výrobní zakázky**.
 2. V podokně akcí zvolte **Nová výrobní zakázka** a otevřete dialogové okno **Vytvořit výrobní zakázku**.
 
-    ![Vytvoření dialogového okna výrobní zakázky.](./media/subcontract12_create-production-order-dialog.png)
+    ![Vytvoření dialogového okna výrobní zakázky](./media/subcontract12_create-production-order-dialog.png)
 
 3. V poli **Číslo položky** zvolte **D8100**.
 4. Pole dimenzí zásob se zobrazí po výběru čísla položky. V poli **Barva** vyberte **Chromovaná**.
 
     Objeví se okno s dotazem, zda se mají vložit aktivní verze kusovníku a postupu.
 
-    ![Okno se zprávou.](./media/subcontract13_message-box.png)
+    ![Okno se zprávou](./media/subcontract13_message-box.png)
 
 5. Vyberte **Ano**. 
 
@@ -149,15 +152,15 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     > [!NOTE]
     > Pro kusovník a postup se použije verze 000042 pro postoupení subdodávky lakování skříňky dodavateli US-801.
 
-    ![Hodnoty nastavené v dialogovém okně Vytvořit výrobní zakázku.](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Hodnoty nastavené v dialogovém okně Vytvořit výrobní zakázku](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Vyberte **Vytvořit** pro vytvoření výrobní zakázky a přejdete zpět na stránku **Všechny výrobní zakázky**.
 
-    ![Nová výrobní zakázka na stránce Všechny výrobní zakázky.](./media/subcontract15_new-production-order.png)
+    ![Nová výrobní zakázka na stránce Všechny výrobní zakázky](./media/subcontract15_new-production-order.png)
 
 10. V podokně akcí na kartě **Výrobní zakázka** zvolte **Odhad** pro otevření dialogového okna **Odhad**.
 
-    ![Dialogové okno Odhad.](./media/subcontract16_estimate-dialog.png)
+    ![Dialogové okno Odhad](./media/subcontract16_estimate-dialog.png)
 
 11. Vyberte **OK** pro potvrzení odhadu a přejdete zpět na stránku **Všechny výrobní zakázky**.
 
@@ -168,7 +171,7 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
 
     U servisní položky S8050 si všimněte, že existuje odkaz na nákupní objednávku, která byla vygenerována při ocenění výrobní zakázky.
 
-    ![Řádky kusovníku výrobní zakázky na stránce kusovníku.](./media/subcontract17_production-order-bom-lines.png)
+    ![Řádky kusovníku výrobní zakázky na stránce kusovníku](./media/subcontract17_production-order-bom-lines.png)
 
 13. Zavřete stránku **Kusovník** a vraťte se na stránku **Všechny výrobní zakázky**.
 14. V podokně akcí na kartě **Plán** zvolte **Plánovat úlohy** pro otevření dialogového okna **Plánování úlohy**.
@@ -177,24 +180,24 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     - V poli **Způsob plánování** vyberte **Vpřed od zítřka**.
     - Nastavte možnost **Omezená kapacita** na **Ano**.
 
-    ![Dialogové okno plánování úlohy.](./media/subcontract18_job-scheduling-dialog.png)
+    ![Dialogové okno plánování úlohy](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Vyberte **OK**, zavřete dialogové okno **Plánování úlohy** a vraťte se na stránku **Všechny výrobní zakázky**.
 17. V podokně akcí na kartě **Plán** zvolte **Ganttův diagram** a otevřete stránku **Ganttův diagram – Zobrazení zdrojů**.
 
     Ganttův diagram obsahuje grafické znázornění plánování výrobních úloh na prostředcích. Všimněte si, že externí operace nátěru se skládá ze tří úloh: úloha zpracování, úloha přepravy a úloha času čekání.
 
-    ![Ganttův diagram na stránce Ganttův diagram – Zobrazení zdrojů.](./media/subcontract19_gantt-chart.png)
+    ![Ganttův diagram na stránce Ganttův diagram - Zobrazení zdrojů](./media/subcontract19_gantt-chart.png)
 
 18. Zavřete stránku **Ganttův diagram - Zobrazení zdrojů** a vraťte se na stránku **Všechny výrobní zakázky**.
 19. V podokně akcí na kartě **Výrobní zakázka** zvolte **Uvolnění** pro otevření dialogového okna **Uvolnění**.
 
-    ![Dialogové okno uvolnění.](./media/subcontract20_release-dialog.png)
+    ![Dialogové okno uvolnění](./media/subcontract20_release-dialog.png)
 
 20. Zvolte **OK** a zavřete dialogové okno **Uvolnění**.
 21. Vyberte **Řízení výroby \> Pravidelné úlohy \> Uvolnění do skladu \> Automaticky uvolnit řádky kusovníku a receptury** a otevřete dialogové okno **Automaticky uvolnit řádky kusovníku a receptury**.
 
-    ![Dialogové okno Automaticky uvolnit řádky kusovníku a receptury.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Dialogové okno Automaticky uvolnit řádky kusovníku a receptury](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Vyberte **OK** a spusťte úlohu Automaticky uvolnit řádky kusovníku a receptury.
 
@@ -206,9 +209,9 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
 
     Všimněte si, že stránka zobrazuje dvě sady práce pro výdej suroviny. První práce je pro materiály M8100 a M8101. Tyto materiály jsou spotřebovány operací 10. Druhá práce je pro materiály M8202 a M8250. Tyto materiály spotřebovává operace 20, což je operace subdodavatele.
 
-    ![Dvě sady práce pro výdej suroviny na stránce Práce.](./media/subcontract22_work-page.png)
+    ![Dvě sady práce pro výdej suroviny na stránce Práce](./media/subcontract22_work-page.png)
 
-26. Spusťte mobilní aplikaci Řízení skladu ke zpracování práce skladu pro operaci 10.
+26. Spusťte aplikaci skladu ke zpracování práce skladu pro operaci 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -220,13 +223,13 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     - V poli **Od operace č.** zvolte **10**.
     - V poli **Do operace č.** zvolte **10**.
 
-    ![Hodnoty nastavené na kartě Obecné 1.](./media/subcontract23_start-dialog.png)
+    ![Hodnoty nastavené na kartě Obecné](./media/subcontract23_start-dialog.png)
 
 31. Vyberte **OK**, zavřete dialogové okno **Spustit** a vraťte se na stránku **Všechny výrobní zakázky**.
 
     Všimněte si, že stav výrobní zakázky je nyní **Spuštěno**. Materiály pro operaci 10 se spotřebují automatickým zaúčtováním deníku výdejek. Spotřeba času pro operaci 10 je zaúčtována automatických zaúčtováním deníku karet postupů.
 
-32. Spusťte mobilní aplikaci Řízení skladu ke zpracování práce skladu pro operaci 20.
+32. Spusťte aplikaci skladu ke zpracování práce skladu pro operaci 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -238,7 +241,7 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     - Do pole **Množství** zadejte **10**.
     - Nastavte možnost **Zaúčtovat výdejku** na **Ne**.
 
-    ![Hodnoty nastavené na kartě Obecné 2.](./media/subcontract24_general-tab.png)
+    ![Hodnoty nastavené na kartě Obecné](./media/subcontract24_general-tab.png)
 
 35. Vyberte **OK**, zavřete dialogové okno **Spustit** a vraťte se na stránku **Všechny výrobní zakázky**.
 
@@ -247,59 +250,56 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
 36. V podokně akcí na kartě **Zobrazení** zvolte **Výdejka** a otevřete stránku **Výdejka**.
 37. Vyberte výdejku, která není zaúčtována, a poté vyberte číslo deníku pro zobrazení řádků deníku.
 
-    ![Řádky deníku na stránce Výdejka.](./media/subcontract25_picking-list.png)
+    ![Řádky deníku na stránce Výdejka](./media/subcontract25_picking-list.png)
 
 38. V podokně akcí zvolte **Tisk** \> **Sestava výdejky** a otevřete dialogové okno **Sestava výdejky**.
 39. Nastavte možnost **Použít rozvržení poznámky k dodání** na **Ano**.
 
-    ![Dialogové okno sestavy výdejky.](./media/subcontract26_picking-list-report-dialog.png)
+    ![Dialogové okno sestavy výdejky](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Zvolte **OK** pro vygenerování sestavy **Výdejka**.
 
     V takovém případě se vytiskne poznámka k dodání od dodavatele z deníku výrobních výdejek. Poznámka k dodání určuje materiály expedované dodavateli, který provede operaci lakování.
 
-    ![Sestava výdejky.](./media/subcontract27_picking-list-report.png)
+    ![Sestava výdejky](./media/subcontract27_picking-list-report.png)
 
 41. Zavřete sestavu **Výdejka** a vraťte se na stránku **Výdejka**.
 42. V podokně akcí zvolte **Zaúčtovat** a otevřete dialogové okno **Zaúčtovat deník**.
 
-    ![Dialogové okno Zaúčtování deník.](./media/subcontract28_post-journal-dialog.png)
+    ![Dialogové okno Zaúčtování deník](./media/subcontract28_post-journal-dialog.png)
 
 43. Zvolte **OK** a zavřete dialogové okno **Zaúčtování deník**.
 44. Otevřené nákupní objednávku.
 
-    ![Stránka nákupní objednávky.](./media/subcontract29_purchase-order-page.png)
+    ![Stránka nákupní objednávky](./media/subcontract29_purchase-order-page.png)
 
 45. V podokně akcí na kartě **Nákup** zvolte **Potvrdit**.
 46. Zvolte **Zaúčtovat** a otevřete dialogové okno **Zaúčtování deník**.
 47. Vyberte **OK**, zavřete dialogové okno **Zaúčtovat deník** a vraťte se na stránku **Nákupní objednávka**.
 48. Změňte jednotkovou cenu z **33** na **40**.
 
-    ![Změněná jednotková cena na stránce Nákupní objednávka.](./media/subcontract30_unit-price.png)
+    ![Změněná jednotková cena na stránce Nákupní objednávka](./media/subcontract30_unit-price.png)
 
 49. Potvrďte znovu nákupní objednávku.
 50. Příjemka produktu.
 
-    ![Dialogové okno Zaúčtování příjemky produktu.](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Dialogové okno Zaúčtování příjemky produktu](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Nákupní faktura.
 52. Aktualizujte stav párování.
 
-    ![Stránka faktury dodavatele.](./media/subcontract32_vendor-invoice-page.png)
+    ![Stránka faktury dodavatele](./media/subcontract32_vendor-invoice-page.png)
 
 53. Hlášení jako dokončené.
 
-    ![Dialogové okno Hlášení jako dokončené.](./media/subcontract33_report-as-finished-dialog.png)
+    ![Dialogové okno Hlášení jako dokončené](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Ukončit.
 
-    ![Dialogové okno Ukončit.](./media/subcontract34_end-dialog.png)
+    ![Dialogové okno Ukončit](./media/subcontract34_end-dialog.png)
 
 55. Porovnání nákladů.
 
-    ![Graf porovnání nákladů.](./media/subcontract35_cost-comparison-charts.png)
+    ![Graf porovnání nákladů](./media/subcontract35_cost-comparison-charts.png)
 
 Chybí nastavení v datech.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

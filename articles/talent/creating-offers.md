@@ -153,6 +153,3 @@ Nabídku lze uchazeči kdykoli odmítnout z různých důvodů.
 ## <a name="closing-an-offer"></a>Uzavření nabídky 
 
 Po přijetí, odmítnutí nebo odebrání nabídky nebudou potřeba žádné další akce. Nabídku můžete zavřít, aby nebylo možné provádět žádné další úpravy tohoto balíčku nabídky.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

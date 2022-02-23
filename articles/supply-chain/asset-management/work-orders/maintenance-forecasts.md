@@ -1,10 +1,12 @@
 ---
 title: Prognózy údržby
 description: Toto téma popisuje prognózy údržby v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c60834a1f818b142a0f2f022d66fe1f42edeb536
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761847"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020854"
 ---
 # <a name="maintenance-forecasts"></a>Prognózy údržby
 
@@ -102,7 +104,7 @@ Chcete-li získat přehled o tom, kde se ve správě majetku používá položka
 
 Na následujícím obrázku je uveden příklad stránky **Prognóza údržby pracovního příkazu**.
 
-![Obrázek č. 1.](media/06-work-orders.png)
+![Obrázek č. 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatická aktualizace prognóz pracovních příkazů
@@ -120,7 +122,4 @@ Pokud jsou hodinové náklad,y náklady na položku a výdaje aktualizovány v o
 
 Na následujícím obrázku je uveden příklad stránky **Aktualizovat prognózu údržby pracovního příkazu**.
 
-![Obrázek č. 2.](media/07-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Obrázek č. 2](media/07-work-orders.png)

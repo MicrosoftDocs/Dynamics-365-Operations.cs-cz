@@ -2,24 +2,27 @@
 title: Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku
 description: Toto téma vysvětluje, jak nastavit pololetní odpisy, tak abyste mohli použít pololetní odpisy dlouhodobého majetku, který je prodaný nebo jinak vyřazený.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 264554
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1c339fa99e7c24b0f13aad9e1b97ec144c2c46a86a26ca0cc5ccfe1a69def69
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8dff41042f15a32d265fb6239a07e6af8d149960
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747064"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407626"
 ---
 # <a name="half-year-depreciation-on-fixed-asset-disposal-for-the-czech-republic"></a>Pololetní odpisy vyřazení dlouhodobého majetku pro Českou republiku
 
@@ -55,6 +58,3 @@ Po nastavení metod odpisů lze použít pololetní odpisy majetku pro vyřazen�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

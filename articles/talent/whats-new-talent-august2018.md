@@ -85,6 +85,3 @@ Další informace o této funkce jsou k dispozici v části [Kurz integrace s Of
 ## <a name="other-fixes"></a>Další opravy
 
 Tato verze také obsahuje řadu oprav chyb, přidání nových entit, opravy existujících entit a změny lokalizovaných popisků.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

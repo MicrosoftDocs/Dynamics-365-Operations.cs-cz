@@ -1,24 +1,27 @@
 ---
 title: Registrace prodejních provizí
 description: V tomto tématu je vysvětleno, jak se počítají a registrují prodejní provize.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CommissionTrans, LedgerTransVoucher, CustClassificationGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 57e3b95cb1f4a13b49ddcd336efaeabb12e5defc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575356"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423640"
 ---
 # <a name="register-sales-commissions"></a>Registrace prodejních provizí
 
@@ -68,6 +71,3 @@ Poznamenejte si čísla odběratele a zboží, které jste zvolili pro proces pr
 3. Zavřete stránku.
 4. Vyberte **Doklad**. Transakce dokladu můžete zkontrolovat pro částky provize, které byly zaúčtované do předdefinovaných výdajů a účtů vyplacené provize.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

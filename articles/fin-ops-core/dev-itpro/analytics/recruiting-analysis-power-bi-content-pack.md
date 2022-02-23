@@ -1,10 +1,12 @@
 ---
 title: Obsah náboru v Power BI
-description: Toto téma popisuje obsah náboru v Power BI.
+description: Toto téma popisuje obsah náboru v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765115"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680555"
 ---
 # <a name="recruiting-power-bi-content"></a>Obsah náboru v Power BI
 
@@ -62,6 +64,3 @@ Následující tabulka zobrazuje entity, na kterých je balíček obsahu **Nábo
 | Výkonnost          | Ohodnocení, popis a model ohodnocení                            | Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí |
 | Náborový projekt  | Popis projektu, stavu projektu a volných míst                | Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí |
 | Uchazeč po výpovědi | Vyřazení uchazeči, důvod, výkon a datum vyřazení | Společnost, Posun v kalendáři, Datum, Zeměpisná poloha, Demografické údaje, Pracovní místo, Média, Projekt náboru, Jméno uchazeče |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

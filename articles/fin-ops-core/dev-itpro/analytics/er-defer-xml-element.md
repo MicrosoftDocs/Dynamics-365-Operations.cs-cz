@@ -2,9 +2,11 @@
 title: Odložení provádění prvků XML ve formátech elektronického výkaznictví
 description: V tomto tématu je vysvětleno, jak odložit provádění prvku XML ve formátu elektronického výkaznictví.
 author: NickSelin
-ms.date: 04/23/2021
+manager: kfend
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: afe0f9945d86c0c7da88b427f582483ed38a54db837818c3e63c5ae2cc60cfbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6dce3768c886403f789063d516e0e696fc829f81
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718374"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680703"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Odložení provádění prvků XML ve formátech elektronického výkaznictví
 
@@ -44,7 +46,7 @@ Možnost **odloženého provedení** není podporována u prvků XML, které se 
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Příklad: Odložení provádění prvku XML ve formátu elektronického výkaznictví
 
-Následující postup vysvětluje, jak může uživatel v [roli](../sysadmin/tasks/assign-users-security-roles.md) správce systému nebo funkčního konzultanta elektronického výkaznictví konfigurovat formát elektronického výkaznictví, který obsahuje prvek XML, kde se pořadí provádění liší od pořadí v hierarchii formátu.
+Následující postup vysvětluje, jak může uživatel v [roli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) správce systému nebo funkčního konzultanta elektronického výkaznictví konfigurovat formát elektronického výkaznictví, který obsahuje prvek XML, kde se pořadí provádění liší od pořadí v hierarchii formátu.
 
 Tyto kroky lze provést ve společnosti **USMF** v aplikaci Microsoft Dynamics 365 Finance.
 
@@ -59,14 +61,14 @@ Pokud jste ještě nedokončili příklad v části [Odložení provádění prv
 
 | Popis obsahu            | Název souboru |
 |--------------------------------|-----------|
-| Konfigurace datového modelu elektronického výkaznictví    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
-| Konfigurace mapování modelu elektronického výkaznictví | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
+| Konfigurace datového modelu elektronického výkaznictví    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfigurace mapování modelu elektronického výkaznictví | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Než začnete, musíte také stáhnout a uložit následující konfiguraci ukázkového řešení elektronického výkaznictví do svého místního počítače.
 
 | Popis obsahu     | Název souboru |
 |-------------------------|-----------|
-| Konfigurace formátu elektronického výkaznictví | [Format to learn deferred XML elements.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
+| Konfigurace formátu elektronického výkaznictví | [Format to learn deferred XML elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ### <a name="import-the-sample-er-configurations"></a>Import ukázkových konfigurací elektronického výkaznictví
 
@@ -90,14 +92,14 @@ Než začnete, musíte také stáhnout a uložit následující konfiguraci uká
 6. Ve stromu konfigurace rozbalte **Model to learn deferred elements**.
 7. Zkontrolujte seznam importovaných konfigurací elektronického výkaznictví ve stromu konfigurace.
 
-    ![Importované konfigurace elektronického výkaznictví na stránce konfigurace.](./media/ER-DeferredXml-Configurations.png)
+    ![Importované konfigurace elektronického výkaznictví na stránce konfigurace](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivace poskytovatele konfigurace
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden [poskytovatel konfigurace](general-electronic-reporting.md#Provider) ukázkové společnosti Litware, Inc. (`http://www.litware.com`) a že je označen jako aktivní. Není-li tento poskytovatel konfigurace uveden v seznamu nebo není-li označen jako aktivní, postupujte podle kroků v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Ukázková společnost Litware, Inc. na stránce konfigurace lokalizace.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Ukázková společnost Litware, Inc. na stránce konfigurace lokalizace](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Kontrola importovaného mapování modelu
 
@@ -119,7 +121,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Datový zdroj **Seskupený** typu *Seskupit podle* je nakonfigurován tak, aby seskupoval filtrované daňové transakce datového zdroje **Filtrované**.
     - Pole agregace **TotalSum** datového zdroje **Seskupený** je nakonfigurováno tak, aby shrnoval hodnoty pole **\$TaxAmount** datového zdroje **Filtrované** pro všechny filtrované daňové transakce zdroje dat.
 
-        ![Pole agregace TotalSum na stránce Úpravy parametrů GroupBy.](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Pole agregace TotalSum na stránce Úpravy parametrů GroupBy](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Zkontrolujte, jakým způsobem jsou nakonfigurované zdroje dat navázány na datový model a jakým způsobem vystavují data přístupu k jejich zpřístupnění ve formátu elektronického výkaznictví:
 
@@ -127,7 +129,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Pole **\$TaxAmount** datového zdroje **Filtrovaný** je navázán na pole **Data.List.Value** datového modelu.
     - Pole **TotalSum** datového zdroje **Seskupený** je navázán na pole **Data.Summary.Total** datového modelu.
 
-    ![Stránka návrháře mapování modelu.](./media/ER-DeferredXml-ModelMapping.png)
+    ![Stránka návrháře mapování modelu](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Zavřete stránky **Návrhář mapování modelu** a **Mapování modelu**.
 
@@ -143,7 +145,7 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Prvek XML **Report \\Message\\Record** je nakonfigurován tak, aby vyplnil odchozí dokument jedním uzlem záznamu, který zobrazuje podrobnosti jednotlivé daňové transakce.
     - Prvek XML **Report\\Message\\Summary** je nakonfigurován tak, aby vyplnil odchozí dokument jedním uzlem souhrnu, který zahrnuje souhrn hodnot daně ze zpracovaných daňových transakcí.
 
-    ![Prvek XML zprávy a vnořené prvky XML na stránce Návrhář formátu.](./media/ER-DeferredXml-Format.png)
+    ![Prvek XML zprávy a vnořené prvky XML na stránce Návrhář formátu](./media/ER-DeferredXml-Format.png)
 
 5. Na kartě **Mapování** zkontrolujte následující podrobnosti:
 
@@ -157,14 +159,14 @@ Zkontrolujte nastavení součásti mapování modelu elektronického výkaznictv
     - Atribut **TotalTaxAmount** je vázán na **model. Data.Summary.Total** pro vygenerování součtu hodnot daně zpracovaných daňových transakcí.
     - Atribut **ExecutionDateTime** generuje datum a čas (včetně milisekund), kdy je přidán uzel souhrnu.
 
-    ![Karta mapování na stránce Návrhář formátu.](./media/ER-DeferredXml-Format2.png)
+    ![Karta mapování na stránce Návrhář formátu](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Spuštění importovaného formátu
 
 1. Na stránce **Návrhář formátu** zvolte **Spustit**.
 2. Stáhněte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor importovaného formátu.](./media/ER-DeferredXml-Run.png)
+    ![Stažený soubor](./media/ER-DeferredXml-Run.png)
 
 Povšimněte si, že souhrnný uzel představuje součet hodnot daně pro zpracované transakce. Vzhledem k tomu, že formát je konfigurován pro použití vazby **model.Data.Summary.Total** pro vrácení tohoto souhrnu, vypočte se součet voláním agregace **TotalSum** datového zdroje **Seskupený** typu *GroupBy* v mapování modelu. Pro výpočet této agregace prochází mapování modelů všechny transakce, které byly vybrány ve zdroji dat **Filtrované**. Porovnáním dob provádění na souhrnném uzlu a v posledním uzlu záznamu můžete určit, že výpočet součtu trvá 12 milisekund (MS). Porovnáním dob provádění prvního a posledního uzlu záznamu můžete určit, že generování všech uzlů záznamu trvalo 9 ms. Z tohoto důvodu je nutné celkem 21 ms.
 
@@ -178,25 +180,25 @@ Pokud je objem transakce mnohem větší než objem v aktuálním příkladu, m�
 4. Konfigurujte výraz **Název klíče shromážděných dat** jako `WsColumn`.
 5. Konfigurujte výraz **Hodnota klíče shromážděných dat** jako `WsRow`.
 
-    ![Prvek XML záznamu na stránce Návrhář formátu.](./media/ER-DeferredXml-Format3.png)
+    ![Prvek XML záznamu na stránce Návrhář formátu](./media/ER-DeferredXml-Format3.png)
 
 6. Vyberte atribut **Report\\Message\\Record\\TaxAmount**.
 7. Konfigurujte výraz **Název klíče shromážděných dat** jako `SummingAmountKey`.
 
-    ![Atribut TaxAmount na stránce Návrhář formátu.](./media/ER-DeferredXml-Format4.png)
+    ![Atribut TaxAmount na stránce Návrhář formátu](./media/ER-DeferredXml-Format4.png)
 
     Toto nastavení je možné vzít v úvahu při plnění virtuálního listu, kde je hodnota buňky A1 připojena k hodnotě částky daně z každé zpracované daňové transakce.
 
 8. Vyberte atribut **Report\\Message\\Record\\RunningTotal** a poté zvolte **Upravit vzorec**.
 9. Nakonfigurujte výraz `SUMIF(SummingAmountKey, WsColumn, WsRow)` pomocí vestavěné funkce elektronického výkaznictví [SUMIF](er-functions-datacollection-sumif.md) a poté zvolte **Uložit**.
 
-    ![Výraz SUMIF.](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![Výraz SUMIF](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Zavřete stránku **Návrhář vzorce**.
 11. Vyberte **Uložit** a potom **Spustit**.
 12. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Generovaný seznam hodnoty daně s průběžným součtem.](./media/ER-DeferredXml-Run1.png)
+    ![Stažený soubor](./media/ER-DeferredXml-Run1.png)
 
     Poslední uzel záznamu obsahuje mezisoučet hodnot daně, který se vypočítává pro všechny zpracované transakce s použitím generovaného výstupu jako zdroje dat. Tento zdroj dat začíná od začátku sestavy a pokračuje k poslední daňové transakci. Uzel souhrnu obsahuje součet hodnot daně ze všech zpracovaných transakcí, které jsou vypočteny v mapování modelu pomocí zdroje dat typu *GroupBy*. Všimněte si, že tyto hodnoty jsou stejné. Z tohoto důvodu lze použít souhrn založený na výstupu namísto **GroupBy**. Porovnáním dob provádění prvního uzlu záznamu a uzlu souhrnu můžete určit, že generování všech uzlů záznamu a součtu trvalo 11 ms. Proto, pokud jde o generování uzlů řádku a sčítání daňových hodnot, je upravený formát přibližně dvakrát rychlejší než původní formát.
 
@@ -205,7 +207,7 @@ Pokud je objem transakce mnohem větší než objem v aktuálním příkladu, m�
 15. Vyberte **Uložit** a potom **Spustit**.
 16. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Generovaný seznam daňových hodnot pomocí upraveného vzorce.](./media/ER-DeferredXml-Run2.png)
+    ![Stažený soubor](./media/ER-DeferredXml-Run2.png)
 
     Povšimněte si, že mezisoučet daňových hodnot v posledním uzlu záznamu se nyní rovná součtu v uzlu souhrnu.
 
@@ -218,7 +220,7 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor daňových hodnot pro záhlaví sestavy.](./media/ER-DeferredXml-Run3.png)
+    ![Stažený soubor](./media/ER-DeferredXml-Run3.png)
 
     Všimněte si, že součet hodnot daně v uzlu souhrnu se nyní rovná 0 (nula), protože tento součet je nyní vypočten na základě generovaného výstupu. Je-li generován první uzel záznamu, vygenerovaný výstup dosud neobsahuje uzly záznamu s podrobnostmi transakce. Tento formát lze nakonfigurovat tak, aby odložil provádění prvku **Report\\Message\\Summary**, dokud prvek **Report\\Message\\Record** nebyl spuštěn pro všechny daňové transakce.
 
@@ -227,12 +229,12 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 1. Na stránce **Návrhář formátu** na kartě **Formát** vyberte prvek XML **Report\\Message\\Summary**.
 2. Nastavte možnost **Odložené provedení** na **Ano**.
 
-    ![Možnost odloženého provedení prvku XML souhrnu na stránce Návrhář formátu.](./media/ER-DeferredXml-Format5.png)
+    ![Možnost odloženého provedení prvku XML souhrnu na stránce Návrhář formátu](./media/ER-DeferredXml-Format5.png)
 
 3. Vyberte **Uložit** a potom **Spustit**.
 4. Stáhněte a zkontrolujte soubor, který webový prohlížeč nabízí, a otevřete jej k revizi.
 
-    ![Stažený soubor odloženého provedení.](./media/ER-DeferredXml-Run4.png)
+    ![Stažený soubor](./media/ER-DeferredXml-Run4.png)
 
     Prvek **Report\\Message\\Summary** je nyní spuštěn pouze po spuštění všech ostatních položek, které jsou vnořeny pod svým nadřazeným prvkem **Report\\Message**. Proto je spuštěn po spuštění prvku **Report\\Message\\Record** pro všechny daňové transakce datového zdroje **model.Data.List**. Doba provádění prvního a posledního uzlu záznamu a uzlů záhlaví a souhrnu, odhalí tuto skutečnost.
 
@@ -241,6 +243,3 @@ Je-li například nutné v záhlaví sestavy zobrazit součet daňových hodnot,
 - [Konfigurace formátu počítání a sčítání](./tasks/er-format-counting-summing-1.md)
 - [Sledování provádění formátu elektronického výkaznictví za účelem řešení potíží s výkonem](trace-execution-er-troubleshoot-perf.md)
 - [Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví](er-defer-sequence-element.md#Example)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

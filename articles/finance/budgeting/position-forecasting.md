@@ -1,26 +1,29 @@
 ---
 title: Prognóza pozice
 description: Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů organizace. Prognózy pozic vám umožní plánovat výdaje a zahrnut je do plánování rozpočtů.
-author: panolte
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d43d0f92e666dd512fc6f2681aa8c7b6446edd5c
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595479"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441196"
 ---
 # <a name="position-forecasting"></a>Prognóza pozice
 
@@ -30,7 +33,7 @@ Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů
 
 ## <a name="position-forecasting-in-budget-planning"></a>Prognóza pozic v plánování rozpočtu
 
-[![Součásti prognózy pozic.](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Součásti prognózy pozic](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Prognóza pozic používá tři hlavní složky pro zajištění přesných rozpočtových částek pro výdaje na pozice. Tyto částky mohou být potom přeneseny do plánu rozpočtu pro výpočty rozpočtu. 
 
@@ -42,14 +45,14 @@ Primární komponenta je **prognóza pozice**, která představuje všechna data
 
 ### <a name="position-forecasting-processes"></a>Zpracování prognózy pozic
 
-[![Ilustrace procesů prognózy pozice.](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Ilustrace procesů prognózy pozice](./media/graphic1b.png)](./media/graphic1b.png) 
 
 V typickém procesu prognózy pozic nejprve vytvoříte součásti nastavení (prvky rozpočtových nákladů a skupiny kompenzací). Pozice prognóz, které se pak vytvoří, jsou založené na existujících pozicích. Poté můžete provést úpravy. Můžete například přidat nebo ukončit pozice, změnit mzdové sazby a náklady na zaměstnanecké výhody a přidat zvyšování mzdy. Můžete vytvořit více verzí prognózy pozic a usnadnit tak porovnání různých scénářů rozpočtování. Dále lze zahrnout pozice prognózy do plánů rozpočtu a přinést náklady z pozic prognózy jako řádky plánu rozpočtu.
 
 Můžete vytvořit další verze pozic prognózy v rámci revize plánů rozpočtu. Tyto nové verze poskytují základ pro revize.
 
 ## <a name="position-forecasting-setup"></a>Nastavení prognózy pozic
-[![Ilustrace zvýrazňující nastavení.](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Ilustrace zvýrazňující nastavení](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Prvky rozpočtových nákladů
 
@@ -86,7 +89,7 @@ Pole **Plán zvýšení** a **Datum zvýšení** ve skupině kompenzací se pou�
 Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při vytváření příjmů pro pozice prognózy ve skupině, včetně základní mzdy a jakéhokoli zvýšení kroku. Pole **Plán fixní kompenzace** odkazuje skupinu kompenzací na plán fixních kompenzací v modulu Lidské zdroje. Tento odkaz umožňuje přiřadit informace o fixní kompenzaci pracovníka k pozici prognózy a proto umožňuje provádět plánování rozpočtu přesněji. Mějte na paměti, že struktura kompenzační mřížky (úrovně a kroky) pro skupinu kompenzací musí odpovídat struktuře plánu fixní kompenzace. V opačném případě systém nemůže správně propojit skupinu kompenzací s plánem fixní kompenzace.
 
 ## <a name="creating-forecast-positions"></a>Vytváření pozic prognózy
-[![Ilustrace zvýrazňující „vytvoření pozic prognózy“.](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Ilustrace zvýrazňující "vytvoření pozic prognózy"](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Vytváření pozic prognózy pro existující pozice
 
@@ -115,7 +118,7 @@ Pokud je vybrána pozice prognózy, výběrem možnosti **Kopírovat vybranou po
 Také můžete vytvořit zcela novou pozici prognózy. Vyberte existující úlohu a dále vyberte proces plánování rozpočtu a scénář plánu rozpočtu. Poté můžete přidat další podrobnosti, které chcete přidat. Zároveň se znovu vytvoří nová pozice v modulu Lidské zdroje.
 
 ## <a name="working-with-forecast-positions"></a>Práce s pozicemi prognózy
-[![Ilustrace zvýrazňující „modifikace pozic prognózy“.](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Ilustrace zvýrazňující "modifikace pozic prognózy"](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Více verzí pozice prognózy
 
@@ -171,7 +174,7 @@ Proces přepočtu je automaticky použit pro všechny pozice prognózy, které s
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Uvedení pozic prognózy do plánů rozpočtu
 
-[![Ilustrace zvýraznění „přidání do plánu rozpočtu“.](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Ilustrace zvýraznění "přidání do plánu rozpočtu"](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Účelem vytváření a úpravy pozic prognózy je jejich přidání k plánům rozpočtu tak, aby plány rozpočtu zahrnovaly nejaktuálnější částky rozpočtu. Existují dvě metody přidání pozic prognózy k plánům rozpočtu. Můžete použít proces generování nebo proces výběru pro plán rozpočtu.
 
@@ -215,6 +218,3 @@ Pokud chcete zobrazit, do kterých plánů rozpočtu byly zahrnuty pozice progn�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

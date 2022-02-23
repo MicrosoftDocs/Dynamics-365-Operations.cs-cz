@@ -1,24 +1,27 @@
 ---
 title: Pracovní prostor správy banky
-description: Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje informace, které se vztahují k bankovním účtům společnosti.
-author: roschlom
+description: Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje Informace, které se vztahují k bankovním účtům společnosti a obsahují souhrnné zobrazení a stránku analýzy. Souhrnné zobrazení ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Na stránce analýzy se používají funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
+author: saraschi2
+manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: roschlom
+ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f12f907e6135af60e092a2c20ebfd4d196b2d861
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883330"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4441341"
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 
@@ -61,6 +64,3 @@ Stránka **Analýza** poskytuje důležité metriky o bankovních účtech v akt
 -   Zůstatek podle měny
 
 Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

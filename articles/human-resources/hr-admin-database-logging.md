@@ -1,33 +1,31 @@
 ---
 title: Konfigurace a správa protokolování databáze
 description: Můžete sledovat změny tabulek a polí v Dynamics 365 Human Resources s protokolováním databáze.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066433"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417630"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurace a správa protokolování databáze
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Můžete sledovat změny tabulek a polí v Dynamics 365 Human Resources s protokolováním databáze. Toto téma popisuje následující postupy:
 
@@ -68,22 +66,7 @@ Chcete-li vylepšit výkon, omezte položky protokolu výběrem konkrétních po
 Můžete použít průvodce **Protokolováním změn databáze** k nastavení protokolování databáze. Průvodce poskytuje flexibilní způsob nastavení protokolování tabulek nebo polí.
 
 1. Přejděte na **Správa systému > Odkazy > Databáze > Nastavení protokolu databáze**. Výběrem tlačítka **Nový** spusťte průvodce **změnami protokolování databáze**.
-2. Zvolte **Další**. 
-3. Na stránce **Tabulky a pole** průvodce vyberte tabulky a pole, u kterých chcete povolit protokolování databáze, a vyberte možnost **Další**.
-
-   > [!Note]
-   > Protokolování databáze není k dispozici u všech tabulek v databázi aplikace Human Resources. Výběrem možnosti **Zobrazit všechny tabulky** pod seznamem rozbalíte seznam tabulek a polí, aby se zobrazily všechny databázové tabulky, u kterých je k dispozici protokolování databáze, ale toto bude jen podmnožina úplného seznamu databázových tabulek.
-
-4. Na stránce **Typy změn** průvodce vyberte datové operace, u kterých chcete sledovat změny pro každou z tabulek a polí, a vyberte možnost **Další**. V následující tabulce najdete popis datových operací, které jsou k dispozici u protokolování.
-5. Na stránce **Dokončit** zkontrolujte provedené změny a vyberte možnost **Dokončit**.
-
-| Operace | popis |
-| -- | -- |
-| Sledovat nové transakce | Vytvořte protokol pro nové záznamy, které jsou vytvořeny v tabulce. |
-| Aktualizace | Vytvořte protokol pro aktualizace záznamů tabulky nebo aktualizace jednotlivě vybraných polí v tabulce. Pokud se rozhodnete protokolovat aktualizace pro tabulku, vytvoří se záznam protokolu pokaždé, když se provede aktualizace jakéhokoli pole libovolného záznamu v tabulce. Pokud se rozhodnete protokolovat aktualizace pro konkrétní pole, záznam protokolu se vytvoří, pouze když se provedou aktualizace těchto polí záznamů tabulky. |
-| Odstranit | Vytvořte protokol pro záznamy odstraněné z tabulky. |
-| Přejmenovat klíč | Vytvořte záznam protokolu při přejmenování klíče tabulky. |
-
+2. Průvodce dokončete.
 
 ## <a name="clean-up-database-logs"></a>Vyčištění protokolů databáze
 
@@ -96,14 +79,11 @@ Můžete odstranit všechny nebo část protokolů databáze pomocí následují
 Chcete-li nastavit čištění protokolu databáze, postupujte následujícím způsobem: 
 
 1. Přejděte na **Správa systému > Odkazy > Databáze > Protokol databáze**. Vyberte **Vyčistit protokol**.
-2. V záhlaví **Záznamy k zahrnutí** vyberte **Filtr**.
-3. Vyberte metodu, která bude použita pro výběr protokolů k odstranění. Zadejte některou z následujících možností:
+
+2. Vyberte metodu výběru protokolů k odstranění zadáním jedné z následujících možností:
 
    - ID tabulky
    - Typ protokolu
-   - Datum a čas vytvoření
+   - Datum a čas vytvoření
 
-4. Pomocí karty **Vyčištění protokolu databáze** zjistěte, kdy spustit úlohu vyčištění protokolu. Ve výchozím nastavení jsou protokoly databáze k dispozici po dobu 30 dnů.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Pomocí karty **Vyčištění protokolu databáze** zjistěte, kdy spustit úlohu vyčištění protokolu. Ve výchozím nastavení jsou protokoly databáze k dispozici po dobu 30 dnů.

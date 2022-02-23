@@ -2,12 +2,15 @@
 title: Sledování provizí v pokladním místě (POS) pomocí prodejních skupin
 description: Je běžnou praxí pro maloobchodní prodej sledovat podle zaměstnanců, kdo pracoval se zákazníkem – poskytoval pomoc, křížový prodej a zpracování transakce.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770902"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410668"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Sledování provizí v pokladním místě (POS) pomocí prodejních skupin
 
@@ -69,7 +72,7 @@ Existuje několik nastavení profilu funkce pro obchod, která určují tok a pr
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Zobrazení informací o prodejním zástupci na obrazovce Transakce POS
 
-Rozvržení obrazovky Transakce POS a její obsah jsou konfigurovatelné pomocí návrháře rozložení obrazovky a přiřazených rozložení obrazovky obchodům, registrům nebo pracovníkům. Pole **Prodejní zástupce** lze přidat na kartě řádky v podokně Příjem.  Zobrazí se ID zadané skupiny prodeje pro každý řádek v okně transakce.
+Rozvržení obrazovky Transakce POS a její obsah jsou konfigurovatelné pomocí návrháře rozložení obrazovky a přiřazených rozložení obrazovky obchodům, registrům nebo pracovníkům.Pole **Prodejní zástupce** lze přidat na kartě řádky v podokně Příjem.Zobrazí se ID zadané skupiny prodeje pro každý řádek v okně transakce.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Přidání operací prodejního zástupce mřížkám tlačítka operace POS
 
@@ -77,14 +80,11 @@ POS umožňuje uživatelům konfigurovat mříž tlačítek, které jsou součá
 
 | Operace                                 | popis |
 |-------------------------------------------|-------------|
-| Nastavit prodejního zástupce na řádku          | Tato operace POS zobrazí seznam oprávněných prodejních skupin (ID: název) pro úložiště. Výběr prodejní skupiny z tohoto seznamu nastaví hodnotu na aktuálním řádku transakce. |
+| Nastavit prodejního zástupce na řádku          | Tato operace POS zobrazí seznam oprávněných prodejních skupin (ID: název) pro úložiště.Výběr prodejní skupiny z tohoto seznamu nastaví hodnotu na aktuálním řádku transakce. |
 | Vymazat prodejního zástupce na řádku        | Tato operace POS odstraní aktuální hodnotu prodejní skupiny z aktuálního řádku transakce. |
-| Nastavení výchozího prodejního zástupce u transakce   | Tato operace POS zobrazí seznam oprávněných prodejních skupin (ID: název) pro úložiště. Výběr prodejní skupiny z tohoto seznamu nastaví výchozí hodnotu na aktuálním řádku transakce. Jakékoli existující řádky bez přiřazené prodejní skupiny řádky budou nastaveny, jakož i všechny později přidané řádky. |
+| Nastavení výchozího prodejního zástupce u transakce   | Tato operace POS zobrazí seznam oprávněných prodejních skupin (ID: název) pro úložiště.Výběr prodejní skupiny z tohoto seznamu nastaví výchozí hodnotu na aktuálním řádku transakce. Jakékoli existující řádky bez přiřazené prodejní skupiny řádky budou nastaveny, jakož i všechny později přidané řádky. |
 | Vymazat prodejního zástupce u transakce | Tato operace POS odstraní aktuální hodnotu výchozí prodejní skupiny z aktuálního řádku transakce. To nemá vliv na žádné řádky, které již existují v transakci. |
 
 ## <a name="calculating-commissions"></a>Výpočet provizí
 
-Provize se vypočítávají pro pracovníky v určených prodejních skupinách v době zaúčtování výkazu nebo zaúčtování prodejní objednávky. Částka provize je určena podle podílu zaměstnance na provizi, jak je definováno v prodejní skupině a nastavení výpočtu přidružené provize pro odběratele a produkty v transakci.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Provize se vypočítávají pro pracovníky v určených prodejních skupinách v době zaúčtování výkazu nebo zaúčtování prodejní objednávky.Částka provize je určena podle podílu zaměstnance na provizi, jak je definováno v prodejní skupině a nastavení výpočtu přidružené provize pro odběratele a produkty v transakci.

@@ -2,25 +2,28 @@
 title: Refundace odběratelům
 description: Tento článek vysvětluje, jak lze vytvořit transakce refundace pro skupinu odběratelů. Jestliže u odběratele figuruje kreditní zůstatek, můžete refundovat kladné zůstatky množství zůstatku odběratele.
 author: JodiChristiansen
+manager: AnnBe
 ms.date: 09/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c313c03c6f3504f132a836eb6a67207e5f3c5636d43124c5f16d13992b9b604
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770754"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644530"
 ---
 # <a name="reimburse-customers"></a>Refundace odběratelům
 
@@ -46,6 +49,3 @@ Při vytváření transakcí refundace bude vytvořena faktura dodavatele s čá
 
 5. Chcete-li zobrazit transakce úhrad, které byly vytvořeny, použijte sestavu **Úhrada** (**Pohledávky \> Dotazy a sestavy \> Sestava úhrady**).
 6. V části Závazky vytvořte platbu pro faktury dodavatele, které byly vytvořeny procesem refundace. Informace o tom, jak platit dodavatelům, najdete na stránce [Přehled plateb dodavatele](../accounts-payable/Vendor-payments-workspace.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

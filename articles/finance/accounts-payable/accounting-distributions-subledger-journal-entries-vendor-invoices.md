@@ -1,34 +1,38 @@
 ---
-title: Rozúčtování a položky deníku pro faktury dodavatele
+title: Rozúčtování a položky dílčích hlavních knih deníku pro faktury dodavatele
 description: Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele. Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
-author: sunfzam
+author: abruer
+manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f8e38e6a571bb7f08b32548bcb4af823807a4340
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594684"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441301"
 ---
-# <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Rozúčtování a položky deníku pro faktury dodavatele
+# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Rozúčtování a položky dílčích hlavních knih deníku pro faktury dodavatele
 
 [!include [banner](../includes/banner.md)]
 
 Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele. Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování. 
 
-## <a name="accounting-distributions"></a>Rozúčtování 
+<a name="accounting-distributions"></a>Rozúčtování 
+-------------------------
 
 Můžete použít následující tlačítka na stránce Faktura dodavatele pro zobrazení a případnou úpravu rozúčtování pro každou částku na faktuře dodavatele.
 -   **Rozúčtovat částky** – zobrazení a úprava rozúčtování pro každý řádek a také všechny podřízené řádky, jako jsou například daně a poplatky. Lze také zobrazit a změnit rozúčtování pro podřízený řádek přímo na stránce Transakcí DPH nebo na stránce Transakce nákladů.
@@ -226,7 +230,8 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 </table>
 
 
-## <a name="distributing-taxes"></a>Distribuce daní
+<a name="distributing-taxes"></a>Distribuce daní
+------------------
 
 Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování. Při výpočtu DPH je třeba na stránce Faktura dodavatele provést jeden z následujících úkolů:
 -   Zobrazit celkový součet faktury.
@@ -245,6 +250,3 @@ Pokud není položka dílčí hlavní knihy správná při zobrazení náhledu n
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

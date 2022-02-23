@@ -1,26 +1,29 @@
 ---
 title: Stornování zaúčtování deníků
 description: V tomto tématu jsou popsány funkce, které umožňují stornovat doklady ze seznamu transakcí dokladu nebo z finančních deníků.
-author: kweekley
+author: MikeFalkner
+manager: AnnBe
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschloma
+ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb1615312e9fd1786a5a0050dda3e9e9b20fe710
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: e3244d857a9135249130672501f8b766ff9a0680
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753771"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441166"
 ---
 # <a name="reverse-journal-posting"></a>Stornování zaúčtování deníků
 
@@ -28,15 +31,11 @@ ms.locfileid: "7753771"
 
 Toto téma popisuje funkce schopnosti Microsoft Dynamics 365 Finance, které umožňují stornovat celý deník nebo jeden nebo více dokladů ze seznamu transakcí dokladu bez ohledu na jejich původ. 
 
-Než budete moci použít některou z funkcí popsaných v tomto tématu, je třeba je v systému zapnout. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
- - Modul: Hlavní kniha
- - Název funkce: **Hromadné vracení více dokumentů**
-
 ## <a name="reversing-journals"></a>Storno deníků
 
 Řádky deníku můžete stornovat jednotlivě. Při zaúčtování storna deníku můžete také stornovat celý finanční deník. Postup stornování deníku: 
 
-- Filtrujte zaúčtované deníky a otevřete zobrazení **Řádky** deníku.
+- Otevřete finanční deník a filtrujte podle zaúčtovaných deníků.
 - Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
 - Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
@@ -56,7 +55,7 @@ Můžete také stornovat doklady ze **seznamu transakcí dokladu** ve všech dí
 
 Chcete-li stornovat jeden nebo více dokladů, postupujte takto: 
 
-- Vyberte na nabídku **Stornovat celou rozevírací nabídku deníku** v horní části stránky.
+- Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
 - Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
 - Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 
@@ -69,8 +68,5 @@ Pokud počet řádků dokladu obsahuje více než 100 řádků dokladu, bude pro
 
 Pokud je počet řádků dokladu 100 nebo méně, bude proces storna spuštěn okamžitě. Výsledky se zobrazí v dialogovém okně, ve kterém je zobrazen libovolný doklad, který nelze vrátit, a důvod, proč jej nelze stornovat. Zvolte **OK** a zavřete dialogové okno.
 
-Transakce lze stornovat pouze v případě, že vyhovují obchodním pravidlům pro jejich stornování. Platby dodavatele nelze stornovat pomocí možnosti popsané v tomto tématu. Platby dodavatelů je nutné stornovat podle kroků uvedených v části [Stornování platby dodavatele](../accounts-payable/reverse-vendor-payment.md).
+Transakce lze stornovat pouze v případě, že vyhovují obchodním pravidlům pro jejich stornování. Platby dodavatele nelze stornovat pomocí možnosti popsané v tomto tématu. Platby dodavatelů je nutné stornovat podle kroků uvedených v části [Stornování platby dodavatele](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

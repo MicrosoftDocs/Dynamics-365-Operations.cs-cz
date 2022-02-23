@@ -1,24 +1,26 @@
 ---
 title: Odebrání kanbanové úlohy z plánu
 description: Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové úlohy z plánu pomocí změny stavu úlohy na Neplánováno.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 838270189e08065f791c9e58888351025e0a6df8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fcd9247e24323ba606377d7e51bd4447ab51c905
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573626"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961608"
 ---
 # <a name="remove-a-kanban-job-from-the-schedule"></a>Odebrání kanbanové úlohy z plánu
 
@@ -43,6 +45,3 @@ Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové �
 4. Klikněte na tlačítko OK.
     * Tím vrátíte aktuální stav úlohy ze stavu Plánováno na Neplánováno a odeberete ji z panelu procesů.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

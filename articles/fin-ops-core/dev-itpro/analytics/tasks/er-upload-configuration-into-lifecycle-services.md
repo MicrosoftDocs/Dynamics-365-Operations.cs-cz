@@ -1,10 +1,12 @@
 ---
 title: Odeslání konfigurace do služby Lifecycle Services
-description: Toto téma popisuje, jak vytvořit novou konfiguraci elektronického výkaznictví (ER) a nahrát ji do Microsoft Dynamics Lifecycle Services (LCS).
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci elektronického výkaznictví a odeslat ji do služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-ms.date: 06/17/2021
+manager: AnnBe
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
@@ -13,21 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b480351875c7d300db790a68d61a402218f8ee36d8247188b912762f21d035b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720753"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684156"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Odeslání konfigurace do služby Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou [konfiguraci elektronického výkaznictví](../general-electronic-reporting.md#Configuration) a odeslat ji do [knihovny majetku na úrovni projektu](../../lifecycle-services/asset-library.md) ve službě Microsoft Dynamics Lifecycle Services (LCS).
-
-> [!IMPORTANT]
-> Používání služby LCS jako úložiště pro konfigurace elektronického výkaznictví (ER) je označeno jako [zastaralé](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Další informace viz [Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Litware, Inc a odešlete ji do služby LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace elektronického výkaznictví se sdílí mezi společnostmi. K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Je rovněž vyžadován přístup k LCS.
 
@@ -146,6 +145,3 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost s názvem Li
     V seznamu by měla být uvedena konfigurace elektronického výkaznictví, kterou jste nahráli.
 
     Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

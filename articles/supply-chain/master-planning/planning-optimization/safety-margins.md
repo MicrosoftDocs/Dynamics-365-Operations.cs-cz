@@ -2,13 +2,16 @@
 title: Pojistné doby
 description: Toto téma popisuje, jak lze použít pojistné doby s doplňkem optimalizace plánování pro Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
+manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074960"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423686"
 ---
 # <a name="safety-margins"></a>Pojistné doby
 
@@ -41,7 +44,7 @@ Existují tři typy pojistných dob:
 
 Následující obrázek ukazuje, jak tyto pojistné doby platí v průběhu času.
 
-![Pojistné doby.](media/safety-margins-1.png)
+![Pojistné doby](media/safety-margins-1.png)
 
 Všechny pojistné doby jsou definovány ve dnech. Výchozí hodnota *0* (nula) označuje, že není použita žádná pojistná doba. Pokud nastavíte více pojistných dob, přidají se všechny k celkovému času od *data objednávky* dodávky po *datum požadavku* poptávky. Například nastavení nemá žádnou dobu realizace a všechny tři typy pojistných dob jsou nastaveny na jeden den. V takovém případě budou mezi datem objednávky dodávky a datem požadavku poptávky tři dny, takže pokud je datum objednávky 1. července, datem požadavku bude 4. července.
 
@@ -51,7 +54,7 @@ Rezerva příjmu je pravděpodobně nejpoužívanější ze tří pojistných do
 
 Následující obrázek znázorňuje rezervu příjmu.
 
-![Rezerva příjmu.](media/safety-margins-2.png)
+![Rezerva příjmu](media/safety-margins-2.png)
 
 Rezerva příjmu se obvykle používá jako časová rezerva, aby se zajistil čas pro registraci skladu nebo jiné časově náročné procesy, které nejsou zachyceny jako součást obecné doby realizace v systému. Jednou z výhod pro nákupy je, že *datum doručení* nákupní objednávky se odpovídajícím způsobem posune dopředu. Pokud místo použití rezervy příjmu zvýšíte dobu realizace, bude dodavatel i nadále vyzván k dodání na poslední chvíli.
 
@@ -61,17 +64,23 @@ Všimněte si, že rezerva příjmu se nepoužije, když se jako dodávka použi
 
 ### <a name="reorder-margin"></a>Rezerva
 
+> [!NOTE]
+> **Již brzy:** Tato funkce zatím není optimalizací plánování podporována. Dokud není podporována, všechny hodnoty, které jsou zadány v poli **Rezerva přidaná k době realizace položky** budou považovány za *0* (nula).
+
 Následující obrázek znázorňuje rezervu.
 
-![Rezerva.](media/safety-margins-3.png)
+![Rezerva](media/safety-margins-3.png)
 
 Rezerva je přidána před dobu realizace položky pro všechny plánované objednávky během hlavního plánování. Proto zajišťuje dodatečný čas pro vystavení objednávky dodávky. Tato pojistná doba se obvykle používá jako časová rezerva k zajištění času pro schvalovací procesy nebo jiné interní procesy, které jsou vyžadovány během vytváření objednávek dodávky. Rezerva se vloží mezi *datum objednávky* nabídky a *počáteční datum*.
 
 ### <a name="issue-margin"></a>Rezerva výdeje
 
+> [!NOTE]
+> **Již brzy:** Tato funkce zatím není optimalizací plánování podporována. Dokud není podporována, všechny hodnoty, které jsou zadány v poli **Rezerva výdeje odečtená od požadovaného data** budou považovány za *0* (nula).
+
 Následující obrázek znázorňuje rezervu výdeje.
 
-![Rezerva výdeje.](media/safety-margins-4.png)
+![Rezerva výdeje](media/safety-margins-4.png)
 
 Rezerva výdeje se odečte od data požadavku poptávky během hlavního plánování. Pomáhá zajistit, abyste měli čas reagovat a odeslat příchozí objednávky nabídky. Tato pojistná doba se obvykle používá jako časová rezerva k zajištění času pro expedici a související odchozí procesy skladu.
 
@@ -81,7 +90,7 @@ Všimněte si, že když se použije rezerva výdeje, neodpovídají souvisejíc
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Zapnutí pojistných dob ve správě funkcí
 
-Než můžete použít tuto funkci s optimalizací plánování, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
+Než můžete použít tuto funkci s optimalizací plánování, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru [Správa funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
 
 - **Modul:** _Hlavní plánování_
 - **Název funkce:** _Pojistné doby pro optimalizaci plánování_
@@ -159,7 +168,7 @@ Následující obrázek představuje matici, která shrnuje, které kalendáře 
 - **Sklad (WH):** Žlutá
 - **Dodavatel (V):** Modrá
 
-[![Matice přehledu nastavení kalendáře.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Matice přehledu nastavení kalendáře](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Výpočet zpoždění
 
@@ -167,13 +176,10 @@ Všechny tři typy pojistných dob jsou zahrnuty, když systém určuje, zda je 
 
 Například položka má dobu realizace jeden den a rezervu příjmu tři dny. Nákupní objednávka pro tuto položku je nastavena tak, že je dnes vyžadována. V tomto případě se zpoždění počítá jako *doba realizace* + *rezerva příjmu* = čtyři dny. Proto pokud je dnes 14. srpna, čtyři dny zpoždění způsobí doručení 18. srpna. Následující obrázek znázorňuje tento příklad.
 
-![Příklad výpočtu zpoždění.](media/safety-margins-delays.png)
+![Příklad výpočtu zpoždění](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Začínáme s optimalizací plánování](get-started.md)
 
 [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

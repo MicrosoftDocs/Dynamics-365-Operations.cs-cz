@@ -2,30 +2,35 @@
 title: Modul galerie médií
 description: Tohle téma se zabývá moduly galerie médií a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733190"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410879"
 ---
 # <a name="media-gallery-module"></a>Modul galerie médií
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly galerie médií a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Moduly galerie médií zobrazují jeden nebo více obrázků v zobrazení galerie. Moduly galerie médií podporují miniatury, které lze uspořádat vodorovně (jako řádek pod obrázkem) nebo svisle (jako sloupec vedle obrázku). Moduly galerie médií také poskytují funkce, které umožňují přiblížení (zvětšení) obrázků nebo zobrazení v režimu celé obrazovky. Aby bylo možné vykreslit obrázek v modulu galerie médií, musí být k dispozici v knihovně médií v knihovně médií v tvůrci webu Commerce. V současné době moduly galerie médií podporují pouze obrázky.
 
@@ -41,7 +46,7 @@ Zde je několik příkladů použití modulů galerie médií:
 
 V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky produktů pomocí modulu galerie médií.
 
-![Příklad nákupního boxu na stránce s podrobnostmi o produktu, který hostuje obrázky produktů pomocí modulu galerie médií.](./media/ecommerce-pdp-buybox.PNG)
+![Příklad nákupního boxu na stránce s podrobnostmi o produktu, který hostuje obrázky produktů pomocí modulu galerie médií](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Vlastnosti galerie médií
 
@@ -49,25 +54,19 @@ V příkladu na následujícím obrázku hostuje nákupní box na PDP obrázky p
 |---------------|--------|-------------|
 | Zdroj obrázku | **Kontext stránky** nebo **ID produktu** | Výchozí hodnota je **Kontext stránky**. Pokud je vybrán **Kontext stránky**, modul očekává, že stránka poskytne informace o ID produktu. Je-li vybráno **ID produktu**, musí být jako hodnota názvu produktu uvedeno ID produktu vlastnosti **ID produktu**. Tato funkce je dostupná v Commerce verze 10.0.12. |
 | ID produktu | ID produktu | Tato vlastnost je použitelná, pouze pokud je hodnota vlastnosti **Zdroj obrázku** **ID produktu**. |
-| Zvětšení obrázku | **Vložený** nebo **Kontejner** | Tato vlastnost umožňuje uživateli přibližovat obrázky v modulu galerie médií. Obrázek lze přiblížit buď jako vložený, nebo v samostatném kontejneru vedle obrázku. Tato schopnost je dostupná ve verzi 10.0.12. |
-| Faktor zvětšení | Desetinné číslo | Tato vlastnost určuje faktor měřítka pro zvětšení obrázků. Například pokud je hodnota nastavena na **2,5**, jsou obrázky 2,5krát zvětšeny. |
-| Celá obrazovka | **Pravda** nebo **nepravda** | Tato vlastnost určuje, zda lze obrázky prohlížet v režimu celé obrazovky. V režimu celé obrazovky lze obrázky dále zvětšovat, pokud je zapnuta funkce zoomu. Tato schopnost je k dispozici v aplikaci Commerce verze 10.0.13. |
-| Kvalita zvětšeného obrázku | Číslo od 1 do 100, které představuje procento a které je vybráno pomocí ovládacího prvku trackbar | Tato vlastnost definuje kvalitu obrazu pro zvětšené obrázky. Lze ji nastavit na 100 procent, aby bylo zajištěno, že zvětšený obrázek vždy používá nejvyšší možné rozlišení. Tato vlastnost není použitelná pro soubory PNG, protože používají bezztrátový formát. Tato schopnost je k dispozici v aplikaci Commerce verze 10.0.19. |
+| Zvětšení obrázku | **Vložený** nebo **Kontejner** | Tato vlastnost umožňuje uživateli přibližovat obrázky v modulu galerie médií. Obrázek lze přiblížit buď jako vložený, nebo v samostatném kontejneru vedle obrázku. Tato schopnost je dostupná ve verzi 10.0.12 |
+| Měřítko zoomu | Desetinné číslo | Tato vlastnost určuje faktor měřítka pro zvětšení obrázků. Například pokud je hodnota nastavena na **2,5**, jsou obrázky 2,5krát zvětšeny.|
+| Celá obrazovka | **Pravda** nebo **nepravda** | Tato vlastnost určuje, zda lze obrázky prohlížet v režimu celé obrazovky. V režimu celé obrazovky lze obrázky dále zvětšovat, pokud je zapnuta funkce zoomu. Tato funkce je dostupná v Commerce verze 10.0.13. |
 | Obrázky | Obrázky, které jsou vybrány z knihovny médií Tvůrce stránek | Kromě vykreslení z produktu lze obrázky upravovat také pro modul galerie médií. Tyto obrázky budou připojeny ke všem dostupným obrázkům produktu. Tato funkce je dostupná v Commerce verze 10.0.12. |
 | Orientace miniatury | **Vertikální** nebo **Horizontální** | Tato vlastnost určuje, zda se mají miniatury zobrazovat ve svislém nebo vodorovném pruhu. |
-| Skrýt obrázky hlavních produktů pro variantu | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, je-li vybrána varianta, jsou obrázky hlavního produktu skryty, pokud varianta neobsahuje žádné obrázky. Tato vlastnost nemá vliv na produkty, které nemají žádné varianty. |
-| Aktualizace média při výběru dimenze | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **True**, obrázky v knihovně médií budou aktualizovány, když je vybrána jakákoli dimenze (například barva, styl nebo velikost) a pokud je k dispozici obrázek. Tato vlastnost pomáhá zjednodušit procházení, protože ne každá dimenze varianty produktu musí být vybrána, aby byl aktualizován odpovídající obrázek. Tato vlastnost je k dispozici na kartě **Rozšířené**. |
-
-> [!IMPORTANT]
-> Vlastnost **Aktualizace média při výběru dimenze** je k dispozici od verze Commerce verze 10.0.21. Vyžaduje instalaci balíčku knihovny modulů Commerce verze 9.31.
 
 Následující obrázek ukazuje příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.
 
-![Příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení.](./media/ecommerce-media-zoom.png)
+![Příklad modulu galerie médií, kde jsou k dispozici možnosti celé obrazovky a přiblížení](./media/ecommerce-media-zoom.png)
 
 Následující obrázek ukazuje příklad modulu galerie médií, který obsahuje uspořádané obrázky (tj. učené obrázky nezávisí na ID produktu nebo kontextu stránky).
 
-![Příklad modulu galerie médií, který má uspořádané obrázky.](./media/ecommerce-media-curated.PNG)
+![Příklad modulu galerie médií, který má uspořádané obrázky](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 
@@ -105,6 +104,3 @@ Chcete-li přidat modul galerie médií na marketingovou stránku, postupujte po
 [Modul kontejneru](add-container-module.md)
 
 [Odeslání obrázků](dam-upload-images.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

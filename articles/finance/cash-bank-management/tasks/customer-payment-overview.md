@@ -1,31 +1,33 @@
 ---
 title: Přehled plateb odběratele
-description: Tato procedura vás provede různými metodami zadání plateb odběratele.
+description: Tento průvodce záznamem úloh vás provede různými metodami zadání plateb odběratele.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3782c1dd5e326bfc8ae5c005b58d4039f32b021
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394482"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441141"
 ---
 # <a name="customer-payment-overview"></a>Přehled plateb odběratele
 
 [!include [banner](../../includes/banner.md)]
 
-Tato procedura vás provede různými metodami zadání plateb odběratele. Tento úkol využívá ukázkovou společnost USMF.
+Tento průvodce záznamem úloh vás provede různými metodami zadání plateb odběratele. Tento úkol využívá ukázkovou společnost USMF.
 
 1. Přejděte na **Podokno navigace Moduly > Pohledávky > Platby > Deník plateb**.
 2. Klepněte na možnost **Nový**.
@@ -50,6 +52,3 @@ Tato procedura vás provede různými metodami zadání plateb odběratele. Tent
 21. Do pole **Platební reference** zadejte platební referenci. Platební reference je vyžadována, pouze pokud vyberete zahrnutí platby na vkladové složence.  
 22. V **Podokně akcí** klikněte na **Zaúčtovat** pro zaúčtování plateb odběratelů. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

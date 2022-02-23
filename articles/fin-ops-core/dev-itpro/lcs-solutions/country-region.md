@@ -1,32 +1,34 @@
 ---
 title: Zdroje globalizace
 description: Toto téma obsahuje seznam zdrojů, které vám pomohou dozvědět se více o funkci a nabídkách specifických pro zemi/oblast.
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747508"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685046"
 ---
 # <a name="globalization-resources"></a>Zdroje globalizace
 
 ## <a name="local-and-regional-deployments"></a>Místní a oblastní nasazení
 Pokud vaše vládní předpisy vyžadují, aby byla data uložena odlišně nebo servisována jiným způsobem, než je požadováno pro jiné země/oblasti, mohou při nasazení existovat požadavky země/oblasti, které musíte zvážit. Zvažte následující zdroje, které pro vás mohou být relevantní:
 
-[Aplikace Finance and Operations provozované společností 21Vianet v Číně](../deployment/china-local-deployment.md)
+[Aplikace Finance and Operations provozované společností 21Vianet v Číně](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalizace a funkce týkající se předpisů
 
@@ -53,6 +55,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 
 #### <a name="regulatory-updates"></a>Povinné aktualizace
 -   [Povinné aktualizace](../../../finance/localizations/regulatory-updates.md)
+-   [Lokalizační portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizováno týdně)
 -   [Hledání problémů v Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Aktualizováno denně)
 
 #### <a name="communication-and-alerts"></a>Komunikace a výstrahy
@@ -60,7 +63,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 -   [Odeslání výstrah o funkcích týkajících se předpisů specifických pro zemi nebo oblast](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Plány vydání verzí Dynamics 365
-[Plány vydání verzí Dynamics 365](/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
+[Plány vydání verzí Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co je nového v aplikacích Finance and Operations
 [Domovská stránka Co je nového nebo co se změnilo v Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních aplikací Finance and Operations.
@@ -130,6 +133,3 @@ Další informace naleznete v tématu [Systém nápovědy](../../fin-ops/get-sta
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

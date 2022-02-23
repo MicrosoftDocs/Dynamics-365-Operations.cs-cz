@@ -2,13 +2,16 @@
 title: Základy přidělení
 description: Toto téma poskytuje informace o základech přidělení. Základy přidělení jsou klíčové komponenty v nákladovém účetnictví a používají se většinou pro přidělení režijních nákladů.
 author: AndersGirke
+manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 223174
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2e51d0320d66a2ae094573735df96bc9bc3f93d359f3bbeab2e5cec3081dddbe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743042"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441047"
 ---
 # <a name="allocation-bases"></a>Základy přidělení 
 
@@ -212,7 +215,7 @@ Po zpracování zdrojových dat statistického měření budou v nákladovém ú
 
 **Statistické položky**
 
-| Objekt nákladů | Jméno   | Datum účtování | Člen statistické dimenze |    popis          | Hodnota |
+| Objekt nákladů |    | Datum účtování | Člen statistické dimenze |    popis          | Hodnota |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | HR | 31. 01. 2017      | Elektrické energie                  | Spotřeba elektřiny | 2,450.00  |
 | CC002       | FI | 31. 01. 2017      | Elektrické energie                  | Spotřeba elektřiny | 4,100.00  |
@@ -404,7 +407,7 @@ Funkce náhledu vám umožňuje ověřit základ přidělení vzorce, který je 
 
 **Podrobnosti základu přidělení**
 
-| Objekt nákladů |  Jméno  | Receptura                                                                                                                             | Hodnota |
+| Objekt nákladů |    | Vzorec                                                                                                                             | Hodnota |
 |-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | CC001       | HR | ((2 450 \> 10 000) × ((10 000 × 0,75) + (2 450 – 10 000) × 1,15)) + ((2 450 \<= 10 000) × 2 450 × 0,75)     | 1,837.50  |
 | CC002       | FI | ((4 100 \> 10 000) × ((10 000 × 0,75) + (4 100 – 10 000) × 1,15)) + ((4 100 \<= 10 000) × 4 100 × 0,75)     | 3,075.00  |
@@ -427,6 +430,3 @@ Následuje příklad pravidla pro rozdělení nákladů, pokud je v něm jako z�
 |    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × částka  |
 |    CC003    |     IT      | 13,250.00 | (13 250 ÷ 18 162,50) × částka |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

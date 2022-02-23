@@ -2,29 +2,32 @@
 title: Automatizace faktur u naskenovaných dokumentů
 description: Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
 author: abruer
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722760"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441099"
 ---
-# <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur pro naskenované dokumenty
+# <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur u naskenovaných dokumentů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje datové entity, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, včetně faktur obsahujících přílohy.
+Toto téma popisuje funkce, které jsou k dispozici pro celkovou automatizaci dodavatelských faktur, a to dokonce i faktur, které obsahují přílohy.
 
 Organizace, které chtějí usnadnit své procesy v oblasti závazků (AP), často identifikují zpracování faktury jako jeden z hlavních procesních oblastí, které by měly být efektivnější. V mnoha případech organizace svěřují zpracování papírových faktur nezávislým poskytovatelům služeb optického rozpoznávání znaků (OCR). Poté obdrží strojově čitelná metadata faktury spolu s naskenovaným obrázkem jednotlivých faktur. Na pomoc s automatizací je pak k dispozici řešení na poslední chvíli, které umožňuje spotřebu těchto artefaktů ve fakturačním systému. Nyní je možné vydání této automatizace na poslední chvíli prostřednictvím řešení automatizace faktury.
 
@@ -34,7 +37,7 @@ Automatické řešení faktur má standardní rozhraní, které přijímá metad
 
 Následující obrázek znázorňuje scénář integrace vzorku, kde se společnost Contoso stala partnerem poskytovatele služeb OCR ke zpracování faktur dodavatele. Dodavatelé společnosti Contoso odesílají faktury poskytovateli služeb e-mailem. Prostřednictvím zpracování OCR poskytovatel služby generuje metadata faktury (záhlaví a řádky) a naskenovanou kopii faktury. Vrstva integrace pak transformuje tyto artefakty tak, aby je bylo možné používat.
 
-![Vzorový scénář integrace.](media/vendor_invoice_automation_01.png)
+![Vzorový scénář integrace](media/vendor_invoice_automation_01.png)
 
 Předchozí scénář umožňuje několik variant v případě, že je nutná integrace faktury. Migrace dat představuje jiný příklad použití tohoto rozhraní k vytvoření faktur a příloh faktur.
 
@@ -88,11 +91,11 @@ Faktury importované pomocí datových balíčků lze přidružit k právnické 
 
 V situacích, kdy faktury dodavatele přecházejí do aplikace Finance and Operations prostřednictvím integrace, musí existovat jednoduchý způsob zpracování výjimek nebo neúspěšných faktur členem týmu modulu Závazky a k vytvoření čekajících faktur mimo neúspěšné faktury. Toto zpracování výjimek pro faktury dodavatele je nyní součástí modulu Finance and Operations.
 
-### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Stránka se seznamem faktur dodavatele, které se nepodařilo importovat
+### <a name="exceptions-list-page"></a>Stránka seznamu výjimek
 
-Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**. Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**. Můžete provést také stejné akce , které jsou k dispozici ve funkci zpracování výjimek z pracovního prostoru **Správa dat**. Funkce zpracování výjimek byla optimalizována pro funkčního uživatele, což usnadňuje její používání.
+Stránka s novým seznamem výjimek faktur je k dispozici zde: **Závazky** > **Faktury** > **Selhání importu** > **Dodavatelské faktury, které se nepodařilo importovat**. Na této stránce se zobrazují všechny záznamy v záhlaví dodavatelské faktury z tabulky fázování entity dat záhlaví faktury dodavatele. Všimněte si, že můžete zobrazit stejné záznamy z pracovního prostoru **Správa dat**, kde můžete provést stejné akce, které jsou k dispozici ve funkci zpracování výjimky. Uživatelské rozhraní, které funkce zpracování výjimek poskytuje, je však optimalizováno pro funkčního uživatele.
 
-![Stránka seznamu výjimek.](media/vendor_invoice_automation_02.png)
+![Stránka seznamu výjimek](media/vendor_invoice_automation_02.png)
 
 Tato stránka seznamu zahrnuje následující pole, která se dodávají prostřednictvím kanálu:
 
@@ -116,17 +119,24 @@ Tato stránka seznamu zahrnuje následující pole, která se dodávají prostř
 Tato stránka seznamu dále obsahuje podokno náhledu, které lze použít následujícími způsoby:
 
 + Zobrazte celou chybovou zprávu, abyste nemuseli rozbalovat sloupec **Chybová zpráva** v mřížce.
++ Zobrazte celý seznam příloh faktury, pokud existují.
 
 Stránka seznamu podporuje následující akce:
 
 + **Upravit** – otevřete záznam o výjimce v režimu úprav, abyste mohli opravit problémy.
 + **Možnosti** – přejděte ke standardním možnostem, které jsou k dispozici na stránkách seznamů. Můžete použít možnost **Přidat do pracovního prostoru** pro připnutí stránky se seznamem výjimek jako seznamu nebo dlaždice.
 
-### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Stránka s detaily o fakturách dodavatele, které se nepodařilo importovat
+### <a name="exception-details-page"></a>Stránka podrobností o výjimce
 
-Při spuštění režimu úprav se zobrazí stránka **Detaily o fakturách dodavatele, které se nepodařilo importovat** pro fakturu, která obsahuje problémy. Pokud došlo k problémům u faktury, která má přílohu, příloha se nezobrazí. Přílohu je třeba k faktuře znovu připojit.
+Při spuštění režimu úprav se zobrazí stránka podrobností výjimky pro fakturu s problémy. Pokud existují nějaké přílohy, faktura a výchozí příloha se zobrazí vedle sebe na stránce Podrobnosti o výjimce.
 
-Stránka **Detaily o fakturách dodavatele, které se nepodařilo importovat** umožňuje vytvořit čekající fakturu. Po opravě problémů na faktuře v rámci zpracování výjimky můžete výběrem tlačítka **Vytvořit čekající fakturu** vytvořit čekající fakturu. Čekající faktura bude vytvořena na pozadí. 
+![Stránka podrobností o výjimce](media/vendor_invoice_automation_03.png)
+
+V předcházejícím ilustračním příkladu nebyly žádné řádky pro záhlaví faktury dodavatele, která byla dodána. Oddíl pro řádky je tedy prázdný.
+
+Stránka podrobností o výjimce podporuje následující operace:
+
++ **Vytvořit čekající fakturu** – po opravě problémů na faktuře v rámci zpracování výjimky můžete klepnutím na toto tlačítko vytvořit čekající fakturu. Dojde k vytvoření čekajících faktur na pozadí (jako asynchronní operace).
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Sdílené služby vs. zpracování výjimek organizace
 
@@ -136,7 +146,7 @@ Stránka seznamu výjimek podporuje standardní konstrukty zabezpečení, které
 + Podle uživatelů
 + Podle právnické osoby
 
-![Úloha importu, která je zabezpečena pomocí role uživatele a právnické osoby.](media/vendor_invoice_automation_04.png)
+![Úloha importu, která je zabezpečena pomocí role uživatele a právnické osoby](media/vendor_invoice_automation_04.png)
 
 Pokud je pro úlohu importu faktury nakonfigurované zabezpečení, stránka seznamu výjimek toto nastavení ocení. Uživatelé budou moci zobrazit pouze záznamy výjimky faktury, které jim toto nastavení umožňuje zobrazit.
 
@@ -178,7 +188,7 @@ Jako výchozí přílohu lze nastavit pouze jeden dokument. Po nastavení dokume
 
 Na stránkách **Zpracování výjimek**, **Čekající faktura** a **Deník faktur** je k dispozici nové tlačítko, které umožňuje zobrazit nebo skrýt prohlížeč příloh.
 
-## <a name="security"></a>Zabezpečení
+### <a name="security"></a>Zabezpečení
 
 Pomocí rolí zabezpečení jsou v rámci zabezpečení založeného na rolích řízeny následující akce:
 
@@ -203,7 +213,7 @@ Následující role poskytují přístup jen pro čtení a zápis k prohlížeč
 + **Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.
 + **Úředník závazků**, **Manažer závazků**, **Úředník centralizovaných plateb závazků** a **Úředník plateb závazků** – Těmto rolím je přiřazeno funkční oprávnění Dotázat se na stav faktury dodavatele.
 
-### <a name="vendor-invoice-attachment"></a>Příloha faktury dodavatele
+### <a name="invoice-exception-details-page"></a>Stránka podrobností o výjimce faktury
 
 Následující oprávnění poskytují přístup jen ke čtení nebo přístup pro čtení a zápis k prohlížeči příloh pro zvýrazněný blok a akce anotací.
 
@@ -222,6 +232,3 @@ Následující role poskytují přístup jen pro čtení k prohlížeči přílo
 + **Úředník závazků** a **Manažer závazků** – Těmto rolím je přiřazeno funkční oprávnění Spravovat faktury dodavatele.
 
 Pokud role uživatele poskytuje práva pro úpravy na jakékoli stránce, bude mít ve výchozím nastavení uživatel také oprávnění pro úpravy v prohlížeči úprav pro akce zvýraznění, blokování a poznámky. Pokud však existují scénáře, ve kterých by měla mít konkrétní role oprávnění pro úpravy na stránce, ale ne v prohlížeči příloh, příslušná oprávnění v předchozím seznamu lze použít k vyřešení případu použití.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

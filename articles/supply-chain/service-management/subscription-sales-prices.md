@@ -1,30 +1,34 @@
 ---
 title: Prodejní cena předplatného
 description: Při vytváření předplatného je prodejní cena odvozena od nastavení prodejní ceny vytvořené ve formuláři Prodejní cena (předplatné).
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASalespriceSubscription
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd63fc290263babafabd6e29441f008d0cf10e13
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569978"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423737"
 ---
-# <a name="subscription-sales-prices"></a>Prodejní cena předplatného
+# <a name="subscription-sales-prices"></a>Prodejní cena předplatného   
 
 [!include [banner](../includes/banner.md)]
+
 
 Při vytváření předplatného je prodejní cena odvozena od nastavení prodejní ceny vytvořené ve formuláři **Prodejní cena (předplatné)**.
 
@@ -32,14 +36,14 @@ Ve formuláři **Prodejní cena (předplatné)** můžete vytvořit prodejní ce
 
 Jestliže jsou kód období a měna pro předplatné i pro prodejní cenu identické, jsou prodejní ceny předplatného vybírány na základě priorit uvedených v následující tabulce. Prázdná buňka v tabulce označuje prázdné pole a X označuje, že je hodnota rovna hodnotě předplatného, ze které je transakce generována.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -119,6 +123,7 @@ Jestliže jsou kód období a měna pro předplatné i pro prodejní cenu identi
 </tbody>
 </table>
 
+
 Pokud je vytvořen poplatek předplatného, je jako prodejní cena předplatného vybrána prodejní cena s nejvyšší úrovní podrobností, jak je uvedeno v předchozí tabulce.
 
 ## <a name="update-and-index-subscription-sales-prices"></a>Aktualizace a indexování prodejních cen předplatného
@@ -133,15 +138,15 @@ Při vytváření poplatku odběru je prodejní cena založena na nastavení pro
 
 Chcete nastavit prodejní ceny předplatného na 500 EUR pro nový projekt 9030. Ve formuláři **prodejní cena (předplatné)** vytvoříte řádek prodejní ceny předplatného podle návodu v následující tabulce.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,14 +177,14 @@ Pole **Kategorie** a **Předplatné** jsou prázdná.
 
 Potom vytvoříte následující předplatná.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -224,14 +229,14 @@ Pro obě předplatná jsou vytvořeny poplatky předplatného s prodejní cenou 
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -272,15 +277,15 @@ Pro obě předplatná jsou vytvořeny poplatky předplatného s prodejní cenou 
 
 Později se rozhodnete, že budete chtít zadat prodejní ceny pro kategorii Kateg.předpl.1 pro projekt 9030. Proto vytvoříte nový řádek prodejní ceny s prodejní cenou 550 EUR pro kombinaci projektu 9030 a kategorie poplatků Kateg.předpl.1. Pro projekt 9030 nyní existují dva řádky prodejní ceny předplatného, jak ukazuje následující tabulka.
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -315,18 +320,19 @@ Později se rozhodnete, že budete chtít zadat prodejní ceny pro kategorii Kat
 </tbody>
 </table>
 
+
 Opakováním výše uvedeného postupu vytvoříte poplatky předplatného pro obě předplatné ve skupině předplatného Předpl.1. Následující tabulka ukazuje transakce, které jsou vytvořeny pro každé předplatné připojené ke skupině předplatného:
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -364,10 +370,13 @@ Opakováním výše uvedeného postupu vytvoříte poplatky předplatného pro o
 </tbody>
 </table>
 
+
 V první transakci pro předplatné 00020\_13 je prodejní cena 550 EUR odvozena od prodejní ceny předplatného nastavené pro kombinaci konkrétního projektu a kategorie. Ve druhé transakci pro předplatné 00021\_135 se jako prodejní cena předplatného projektu používá prodejní cena 500 EUR, protože není nastavena cena pro kombinaci projektu 9030 a kategorie Kateg.předpl.2.
 
 ## <a name="see-also"></a>Viz také
 
 [Aktualizace a indexování prodejních cen předplatného](update-and-index-subscription-sales-prices.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  
+
+

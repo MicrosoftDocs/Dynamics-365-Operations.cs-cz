@@ -2,24 +2,27 @@
 title: Nastavení kanálu kontaktního střediska
 description: Toto téma popisuje, jak vytvořit kanálu kontaktního střediska v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744527"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4410935"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -54,11 +57,11 @@ Chcete-li vytvořit a konfigurovat nový kanál kontaktního střediska, postupu
 
 V následujícím obrázku je znázorněno vytvoření nového kanálu kontaktního střediska.
 
-![Nový kanál kontaktního střediska.](media/channel-setup-callcenter-1.png)
+![Nový kanál kontaktního střediska](media/channel-setup-callcenter-1.png)
 
 Následující obrázek znázorňuje příklad kanálu kontaktního centra.
 
-![Příklad kanálu kontaktního střediska.](media/channel-setup-callcenter-2.png)
+![Příklad kanálu kontaktního střediska](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Nastavení dodatečného kanálu
 
@@ -66,7 +69,7 @@ Další úkoly požadované pro nastavení kanálu kontaktního střediska zahrn
 
 Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek** a **Způsobů platby** na kartě **Nastavení**.
 
-![Další akce nastavení kanálu kontaktního střediska.](media/channel-setup-callcenter-3.png)
+![Další akce nastavení kanálu kontaktního střediska](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
@@ -81,11 +84,11 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kan
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby.](media/channel-setup-callcenter-payments.png)
+![Příklad způsobů platby](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
-Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
+Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
 
 Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k kanálu kontaktního střediska, postupujte podle následujících kroků.
 
@@ -97,7 +100,7 @@ Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k k
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
-![Nastavit způsoby dodání.](media/channel-setup-retail-7.png)
+![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Nastavení uživatele kanálu
 
@@ -133,6 +136,3 @@ Chcete-li nastavit cenovou skupinu, postupujte podle následujících pokynů.
 [Nastavení a práce s výstrahami u podvodů](set-up-fraud-alerts.md)
 
 [Nastavení programů kontinuity pro kontaktní střediska](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

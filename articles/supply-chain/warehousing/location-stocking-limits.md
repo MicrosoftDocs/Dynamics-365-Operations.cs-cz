@@ -2,23 +2,26 @@
 title: Limity pro místo uskladnění
 description: Toto téma popisuje funkčnost limitů pro místo uskladnění.
 author: perlynne
+manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
+ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714155"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "4607272"
 ---
 # <a name="location-stocking-limits"></a>Limity pro místo uskladnění
 
@@ -81,7 +84,7 @@ V tomto příkladu spustíte tok přijímání nákupní objednávky pro dva ř�
 
 Nejprve obdržíte množství *4* jednotky *PL* ve velikosti *S* a zkontrolujte umístění řádku vložení pro vytvořenou práci. Pak obdržíte množství *4* jednotky *PL* ve velikosti *L* a zkontrolujte umístění řádku vložení pro vytvořenou práci.
 
-1. V mobilní aplikaci Řízení skladu se přihlaste pomocí čísla *24* ID uživatele a *1* jako heslo.
+1. Ve skladovací aplikaci se přihlaste pomocí čísla *24* ID uživatele a *1* jako heslo.
 1. Vyberte **Příchozí** \> **Příjem nákupu**..
 1. Přijměte *4* *PL* čísla položky *D0013* ve velikosti *S*.
 1. Zkontrolujte vytvořenou práci založení. Měl by se vám zobrazit následující výsledek:
@@ -101,6 +104,3 @@ Chcete-li vysvětlit toto zjevné selhání, musíte porozumět kritériím výb
 
 > [!NOTE]
 > Limity pro místo uskladnění nemůžete použít například ke kontrole doplnění položek, které mají ve stejném umístění různá množství. V takovém případě použijte *šablonu doplnění*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

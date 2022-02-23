@@ -1,10 +1,12 @@
 ---
 title: Registrace spotřeby
 description: Toto téma vysvětluje, jak registrovat spotřebu v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765567"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020773"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
@@ -54,7 +56,7 @@ Když byla úloha údržby dokončena na pracovním příkazu, následující kr
 
 Snímek obrazovky níže ukazuje příklad registrace hodin a položek na pracovním příkazu v **Denících pracovních příkazů**.
 
-![Obrázek č. 1.](media/01-consumption.png)
+![Obrázek č. 1](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Rozdělit hodiny na pracovní objednávky s několika úlohami pracovních příkazů
@@ -73,13 +75,13 @@ Obsahuje-li pracovní příkaz několik úloh pracovního příkazu, můžete za
 
 6. Zadejte počet odpracovaných hodin, které mají být rozděleny v poli **Hodiny**.
 
-    ![Obrázek č. 2.](media/02-consumption.png)
+    ![Obrázek č. 2](media/02-consumption.png)
 
 7. Klikněte na tlačítko **OK**.
 
 *Příklad:* v dolní části obrazovky se zobrazí řádky deníku pro pracovní příkaz, které obsahují tři úlohy pracovního příkazu. První řádek, který obsahuje tři pracovní hodiny, byl rozdělen a pro každou úlohu pracovního příkazu je registrována jedna pracovní hodina. Po vytvoření tří řádků pro registraci hodin se rozhodnete, co dělat s původním řádkem registrace hodin (první řádek v příkladu). Můžete ji ponechat tak, jak je, nebo ji odstranit. 
 
-![Obrázek č. 3.](media/03-consumption.png)
+![Obrázek č. 3](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finanční dimenze pro registrace spotřeby
 
@@ -92,6 +94,3 @@ Při provádění registrace spotřeby se do registrací v určitém pořadí p�
 >[!NOTE]
 >Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení u dalších aplikací Finance and Operations.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

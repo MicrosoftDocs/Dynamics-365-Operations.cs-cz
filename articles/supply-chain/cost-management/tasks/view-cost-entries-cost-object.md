@@ -2,24 +2,27 @@
 title: Zobrazení nákladových položek pro objekt nákladů
 description: Tento postup popisuje způsob zobrazení záznamů nákladů pro objekt nákladů.
 author: AndersGirke
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventValueTrans
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e99d350abd810045b6b5b4c840f67d21c9d5e39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b809c66243d3274bd06b72173ecf4f8a6c04ad4a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569858"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423574"
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Zobrazení nákladových položek pro objekt nákladů
 
@@ -36,6 +39,3 @@ Tento postup popisuje způsob zobrazení záznamů nákladů pro objekt náklad�
 7. Použijte rychlý filtr k filtrování v poli Číslo s hodnotou „p000031“.
     * Pokud jsou položky nákladů prázdné, nastavte počáteční datum na 31. leden 2012 a koncové datum na 31. prosinec 2012.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

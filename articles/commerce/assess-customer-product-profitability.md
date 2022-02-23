@@ -2,13 +2,16 @@
 title: Posouzení ziskovosti z hlediska odběratelů a produktů
 description: Tento článek vysvětluje použití analýzy v paměti a v reálném čase pro přístup, prohlížení a získání přehledu o ziskovosti z hlediska odběratelů a produktů na základě vašich dat z aplikace Dynamics 365 Commerce.
 author: ashishmsft
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d7b51ffb3613800033d817b1e911ba22cb978c0cdb21a256693ba52674ad5885
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3218a29995791ce0d9a42d5b6d898d6e548f0f1d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728308"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410760"
 ---
 # <a name="assess-customer-and-product-profitability"></a>Vyhodnocení ziskovosti odběratelů a produktů
 
@@ -53,6 +56,3 @@ Pro toto hodnocení lze použít sestavu **Nejlepší produkty**, která je ihne
 - Pracovní prostor **Řízení obchodu** &gt; **Retail and Commerce** &gt; **Kanály** &gt; **Řízení obchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
 - Pracovní prostor **Správa kategorií a produktů** &gt; **Retail and Commerce** &gt; **Produkty a kategorie** &gt; **Řízení obchodu** &gt; **Sestavy** &gt; **Sestava nejlepších produktů**
 - Sekce **Dotazy a sestavy** &gt; **Retail and Commerce** &gt; **Dotazy a sestavy** &gt; **Prodejní sestavy** &gt; **Sestava nejlepších produktů**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

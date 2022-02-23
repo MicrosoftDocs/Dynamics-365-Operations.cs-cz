@@ -1,10 +1,12 @@
 ---
 title: Ruční úpravy základní prognózy
 description: Toto téma vysvětluje, jak lze provádět ruční úpravy v základní prognóze, a jak zobrazit podrobnosti o prognóze.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778026"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967023"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Ruční úpravy základní prognózy
 
@@ -67,13 +69,14 @@ Stránka **Podrobnosti prognózy poptávky** popisuje následující informace v
 
 **Poznámky:**
 
--   Pokud povolíte **Výběr modelu prognózy v Podrobnostech prognózy poptávky** ve Správě fukcí, budete moci vybrat modely prognóz, které budou pro historickou prognózu zahrnuty na stránce **Podrobnosti prognózy poptávky**. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
+-   Pokud povolíte **Výběr modelu prognózy v Podrobnostech prognózy poptávky** ve Správě fukcí, budete moci vybrat modely prognóz, které budou pro historickou prognózu zahrnuty na stránce **Podrobnosti prognózy poptávky**.
 -   Interval jistoty, který se zobrazí v části **Prognóza** na stránce, představuje rozdíl mezi horním limitem intervalu jistoty a dolním limitem intervalu jistoty. Pokud chcete zobrazit hodnoty pro dolní a horní limit, umístěte ukazatel myši do grafu v části **Historická poptávka a prognóza – graficky**.
 -   Pokud používáte prognózu poptávky strojového učení Microsoft Azure, můžete určit podíl úrovně jistoty, který by měla mít generovaná prognóza. Interval jistoty obsahuje určitý úsek hodnot, které fungují jako vhodné odhady pro prognózu poptávky. 95% úroveň jistoty například označuje existenci 5% riziko, že prognóza poptávky se bude nacházet mimo rozsah intervalu jistoty.
 
 Musíte také provést ruční úpravy prognózy na stránce **Podrobnosti prognózy poptávky** tím, že změníte hodnoty na řádku **Prognóza** v části **Prognóza**.
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Monitorování přesnosti prognózy](monitor-forecast-accuracy.md)
 
@@ -81,6 +84,3 @@ Musíte také provést ruční úpravy prognózy na stránce **Podrobnosti progn
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
-description: Toto téma popisuje, jak nakonfigurovat model elektronického výkaznictví (ER) tak, aby používal finanční dimenze jako zdroj dat pro zprávy ER. (část 2)
+description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605398"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681678"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
 
@@ -56,14 +58,14 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 21. Vyberte možnost Ano v poli Zeptat se na hlavní účet.
     * Nastavte v poli 'Zeptat se na hlavní účet' hodnotu Ano, chcete-li umožnit uživatelům vybrat hlavní účet jako součást seznamu dimenzí.   Je-li nastavena na hodnotu Ne, hlavní účet nebude zahrnut do seznamu dimenzí a je povolena možnost "Je hlavní účet povinný". Pokud je možnost 'Je hlavní účet povinný' nastavena na hodnotu Ano, zahrňte hlavní účet do seznamu dimenzí nezávisle na výběru uživatele.  
 22. Klepněte na tlačítko OK.
-![Vysouvají se vlastnosti zdroje údajů o finančních dimenzích.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 24. Klikněte na možnost Přidat kořen.
 25. Do pole Název zadejte 'LedgerJournal'.
 26. Vyberte možnost Ano v poli Zeptat se na dotaz.
 27. Do pole Tabulka zadejte hodnotu 'LedgerJournalTable'.
 28. Klepněte na tlačítko OK.
-![<stránka návrháře mapování odel, tabulka zaznamenává typ zdroje dat.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Namapování prvků datového modelu na přidané zdroje dat
 1. Ve stromovém zobrazení rozbalte 'Deník'.
@@ -94,7 +96,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 25. Ve stromovém zobrazení vyberte LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions.
 26. Ve stromové struktuře vyberte 'Deník\Transakce\Data dimenzí'.
 27. Klikněte na možnost Vazba.
-!Stránka návrháře mapování modelu, karta Mapování, Strom zdrojů dat.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Ve stromovém zobrazení vyberte LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit).
 29. Ve stromovém zobrazení vyberte možnost 'Deník\Transakce\Má dáti'.
 30. Klikněte na možnost Vazba.
@@ -132,10 +134,10 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 62. Klikněte na položku Upravit.
 63. V poli expressionAsStringText zadejte 'Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
-64. Klikněte na tlačítko Uložit.
-![Stránka Návrhář mapování modelu ER.](../media/er-financial-dimensions-guides-model-mapping4.png)
+64. Klepněte na tlačítko Uložit.
+![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Zavřete stránku.
-66. Klikněte na tlačítko Uložit.
+66. Klepněte na tlačítko Uložit.
 67. Zavřete stránku.
 
 ## <a name="complete-this-draft-models-version"></a>Dokončení tohoto konceptu verze modelu
@@ -144,7 +146,4 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 3. Klikněte na položku Změnit stav.
 4. Klikněte na tlačítko Dokončit.
 5. Klepněte na tlačítko OK.
-![Stránka konfigurací ER.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Stránka Návrhář mapování modelu ER](../media/er-financial-dimensions-guides-model-mapping5.png)

@@ -2,23 +2,26 @@
 title: Import akreditivu
 description: Tato procedura vás provede procesem importu akreditivu.
 author: kweekley
+manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f9c73ec1347e72f8cd4ae8eec580bb8fe3df8ed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441225"
 ---
 # <a name="import-letter-of-credit"></a>Import akreditivu
 
@@ -128,8 +131,7 @@ Tato procedura používá ukázkovou společnost USMF.
 12. Zavřete stránku.
 13. Zavřete stránku.
 
-## <a name="verify-import-letter-of-credit-status-and-printing"></a>Ověřte stav a tisk importního akreditivu.
-
+## <a name="verify-import-letter-of-credit-status"></a>Ověření stavu importního akreditivu
 1. Přejděte na Pokladna a banka > Akreditivy > Importovat akreditiv a kolekci importu.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
@@ -183,6 +185,3 @@ Tato procedura používá ukázkovou společnost USMF.
     * Ověřte že sestava obsahuje seznam transakcí s číslem bankovního dokladu, limitem zařízení, využitou částkou a částkou zůstatku zařízení.  
 8. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

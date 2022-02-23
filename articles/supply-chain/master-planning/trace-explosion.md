@@ -1,27 +1,30 @@
 ---
 title: Použití sledování pro rozpad
 description: V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c42eaf4c9218a186bca30848bc7b09c634f9a69e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 88e777d69c9da8a19c186bca3ca591e59af232f0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567168"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423587"
 ---
 # <a name="use-tracing-for-explosion"></a>Použití sledování pro rozpad
 
@@ -38,12 +41,10 @@ Po povolení sledování můžete zobrazit informace o činitelích, které tvo�
 
 Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku. Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování. K sledování dochází, když rozložíte objednávku. Sledování objednávky zahájíte kliknutím na možnost **Aktualizace** a následným označením zaškrtávacího políčka **Povolit sledování**. Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**. Výsledky hledání jsou zvýrazněny ve stromové struktuře.
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Přehled hlavních plánů](master-plans.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

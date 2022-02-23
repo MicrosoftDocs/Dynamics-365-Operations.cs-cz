@@ -1,10 +1,12 @@
 ---
-title: Odeslání obrázků
-description: Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+title: Odeslat obrázky
+description: Toto téma popisuje, jak odeslat obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 12/03/2021
+manager: annbe
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,18 +17,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891515"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963003"
 ---
-# <a name="upload-images"></a>Odeslání obrázků
+# <a name="upload-images"></a>Odeslat obrázky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+Toto téma popisuje, jak odeslat obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Knihovna médií pro konfigurátor webu Commerce umožňuje odesílat obrázky buď jednotlivě, nebo hromadně pomocí složek. Vždy byste měli odeslat verzi obrázku s nejvyšším rozlišením a kvalitou, protože komponenta pro změně velikosti obrázku automaticky optimalizuje obrázek pro různá zobrazení a jejich zarážky.
 
@@ -41,8 +45,7 @@ Při odesílání obrázku lze zadat následující informace.
 - **Publikovat majetek po odeslání**: Pokud je toto políčko zaškrtnuto, bude obrázek nebo obrázky publikovány ihned po odeslání.
 
 > [!NOTE]
-> - Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
-> - Stránky s podrobnostmi o produktu dynamicky generují **Alternativní text** pomocí názvu produktu, takže změna hodnoty **Alternativní text** pro obrázek produktu nebude mít žádný vliv na vykreslený obrázek.
+> Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Zásady vytváření názvů pro multikanálové obrázky 
 
@@ -53,17 +56,9 @@ Výchozí zásady vytváření názvů se liší podle kategorie:
 - Obrázky kategorií by měly být pojmenované **"\{/Kategorie/\}CategoryName.** png"
 - Obrázky zákazníků by měly mít název **"\{/Zákazníci/\}CustomerNumber.** jpg"
 - Obrázky zaměstnanců by měly mít název **"\{/Pracovníci/\}WorkerNumber.** jpg"
-- Obrázky produktu by měly mít název "**/Products/\{ProductNumber\}\_000_001.png**"
+- Obrázky produktu by měly mít název **"\{/Produkty/\}ProductNumber _000_001.** png"
     - 001 je posloupnost obrázku a může být 001, 002, 003, 004 nebo 005
-- Obrázky variant produktu by měly mít název "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - Například: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
-- Obrázky variant produktu s dimenzí konfigurace by měly mít název "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
-    - Například: 93039 \^ LB8017_000_001.png
-
-> [!NOTE]
-> U obrázků variant produktu, pokud je hodnota dimenze prázdná, musí mezi mezerami v názvu souboru existovat dvě mezery.
-
-Výše uvedené příklady používají výchozí konfiguraci. Oddělovací znak a rozměry jsou konfigurovatelné a přesné pojmenování se může mezi nasazeními lišit. Jednou z metod identifikace požadované konvence přesného pojmenování je použití konzoly pro vývojáře v prohlížeči ke kontrole požadavků na obrázek varianty produktu při změně rozměrů produktu na stránce s podrobnostmi o produktu (PDP).
+- Obrázky variant produktu by měly mít název "**/Produkty/\{ProductNumber\}\_\{Velikost\}\_\{Barva\}\_\{Styl\}\_000_001.png**"
 
 ## <a name="upload-an-image"></a>Odeslat obrázek
 
@@ -101,6 +96,3 @@ Chcete-li hromadně odeslat složku obrázků v rámci konfigurátoru webu, post
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

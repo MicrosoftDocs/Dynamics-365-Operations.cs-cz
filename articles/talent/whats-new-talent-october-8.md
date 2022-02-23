@@ -41,6 +41,3 @@ V této verzi jsou obsaženy také různé opravy.
 ## <a name="known-issue"></a>Známý problém
 
 **Problém:** Při přidání nové přílohy k pracovníkovi jsou zašedlá tlačítka **Nová** a **Upravit**. **Řešení:** Než otevřete stránku přílohy, ujistěte se, že jsou zavřena okna s fakty na stránce **Pracovník**. Jsou-li okna s fakty uzavřena při načítání stránky **Pracovník**, budou tlačítka přílohy k dispozici. (Tento problém bude opraven v další aktualizaci Platform Update.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

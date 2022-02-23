@@ -2,25 +2,28 @@
 title: Finanční dimenze a zaúčtování
 description: Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778959"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441119"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
@@ -71,29 +74,29 @@ Uživatelé mají často dotazy ohledně pořadí, ve kterém se různé kompone
 
 Následující obrázek znázorňuje pevnou výchozí dimenzi, která je nastavena na hlavním účtu 401100.
 
-[![Výchozí finanční dimenze.](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Výchozí finanční dimenze](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 V tomto velmi základním příkladu zadáme hlavní deník, kde je dimenze oddělení nastavena na použití výchozí hodnoty **023** (Operace). Zadáme a zaúčtujeme účet hlavní knihy. Následující obrázek znázorňuje výchozí finanční dimenze v hlavičce hlavní knihy.
 
-[![Hlavní deníky.](./media/general-journal.png)](./media/general-journal.png)
+[![Hlavní deníky](./media/general-journal.png)](./media/general-journal.png)
 
 Výchozí dimenze v hlavičce deníku způsobí, že oddělení 023 se použije ve výchozím nastavení na řádku účtu prodeje. Následující obrázek znázorňuje řádek hlavního deníku, kde se použije výchozí hodnota dimenze **023** ze záhlaví.
 
-[![Doklad deníku.](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Doklad deníku](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Nicméně při zaúčtování řádku se použije pevná dimenze a řádek se zaúčtuje do oddělení 022. Následující obrázek znázorňuje zaúčtovaný doklad, kde je použita pevná dimenze pro účet prodeje.
 
-[![Poukazové transakce s pevnou dimenzí.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Transakce dokladu](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Příklad 2
 
 Tento příklad používá stejné nastavení jako první příklad. Přidáme však druhou komponentu a použijeme dimenzi oddělení jako vyrovnávací dimenzi. Na následujícím obrázku je nastaveno **Oddělení** jako vyrovnávací finanční dimenze pro hlavní knihu USMF.
 
-[![Ilustrace znázorňující oddělení jako vyrovnávající finanční dimenzi.](./media/ledger.png)](./media/ledger.png)
+[![Hlavní kniha](./media/ledger.png)](./media/ledger.png)
 
 Když se použije stejné nastavení hlavičky deníku a zaúčtuje se stejná transakce, použije se nejdříve pevná dimenze. Poté se použije logika vyrovnání, aby se zajistilo, že má každé oddělení vyrovnanou položku. Následující obrázek znázorňuje transakce dokladu, které zahrnují položku vyrovnání po použití pevné dimenze.
 
-[![Poukazové transakce po uplatnění vyrovnávacího záznamu.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Transakce dokladu](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Příklad 3
 
@@ -101,11 +104,11 @@ V tomto příkladu přidáme rozšířené pravidlo. Rozšířené pravidlo urč
 
 Tento příklad je důležitý z důvodu pořadí. Účetní struktura je určena po zadání hlavního účtu. Pokud odkazujete na nastavení účetní struktury, systém může určit, že hlavní účet, obchodní jednotka, oddělení a nákladové středisko jsou relevantní. V tomto okamžiku nebylo rozšířené pravidlo spuštěno, protože pevné dimenze nejsou použity, dokud nebyly použity výchozí dimenze pro doklad deníku při zaúčtování. Na následujícím obrázku není segment Odběratel přítomen, protože nebyla splněna kritéria pro rozšířené pravidlo.
 
-[![Účet hlavní knihy.](./media/drop-down.png)](./media/drop-down.png)
+[![Účet hlavní knihy](./media/drop-down.png)](./media/drop-down.png)
 
 Zaúčtování nebude úspěšné, protože pevná dimenze byla použita na konci procesu. Ověření dimenzí určuje, zda je segment Odběratel vyžadován, pokud je hlavní účet 401100 a oddělení 022. Zaúčtování nelze provést, protože došlo k chybě ověření. Následující obrázek znázorňuje zprávu, která se zobrazí poté, co ověření dimenze určí, že Odběratel je požadovaný segment.
 
-[![Podrobnosti zprávy.](./media/message.png)](./media/message.png)
+[![Podrobnosti zprávy](./media/message.png)](./media/message.png)
 
 V tomto příkladu musíte přepsat výchozí hodnotu, aby se spustilo rozšířené pravidlo, můžete zadat segment Odběratel. Toto řešení však není možné dispozici vždy a někteří uživatelé dokonce ani neznají pravidla účtování. Proto je důležité pochopit pořadí, ve kterém se výchozích dimenze používají při nastavení účtové osnovy.
 
@@ -119,11 +122,8 @@ Některé z následujících zdrojů se vztahují k předchozí verzi aplikace n
 
 [Plánování účetní osnovy](plan-chart-of-accounts.md) 
 
-[Blog plánování účtové osnovy v aplikaci AX 2012](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Tento odkaz se vztahuje na část 1 řady skládající se ze sedmi částí.
+[Blog plánování účtové osnovy v aplikaci AX 2012](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Tento odkaz se vztahuje na část 1 řady skládající se ze sedmi částí.
 
-[Výchozí nastavení dimenze v rozúčtování](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[Výchozí nastavení dimenze v rozúčtování](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimenze výchozí v architektuře dimenzí](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Dimenze výchozí v architektuře dimenzí](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)

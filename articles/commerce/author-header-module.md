@@ -2,24 +2,27 @@
 title: Modul záhlaví
 description: Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712783"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4410918"
 ---
 # <a name="header-module"></a>Modul záhlaví
 
@@ -27,13 +30,15 @@ ms.locfileid: "6712783"
 
 Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Přehled
+
 V Dynamics 365 Commerce je záhlaví stránky nakonfigurováno jako fragment stránky, který obsahuje moduly záhlaví, propagačního banneru a souhlasu se soubory cookie. 
 
 Modul záhlaví obsahuje logo webu, odkazy na navigační hierarchii, odkazy na další stránky na webu, modul ikony košíku, symbol požadovaných položek, přihlašovací možnosti a vyhledávací panel. Modul záhlaví je automaticky optimalizován pro zařízení, na kterém je stránka prohlížena (jinými slovy desktopové nebo mobilní zařízení). Například v mobilním zařízení je navigační panel sbalen do tlačítka **Nabídka** (což je někdy nazýváno *hamburgerová nabídka*).
 
 Následující obrázek znázorňuje příklad modulu záhlaví na domovské stránce.
 
-![Příklad modulu záhlaví.](./media/ecommerce-header.png)
+![Příklad modulu záhlaví](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Vlastnosti modulu záhlaví
 
@@ -58,16 +63,9 @@ Následující moduly lze použít v modulu záhlaví:
 - **Výběr obchodu** - Modul pro výběr obchodu lze zahrnout do slotu pro výběr obchodu v modulu záhlaví. Umožňuje uživatelům procházet a vyhledávat obchody v okolí. Uživatelé mohou také určit preferovaný obchod. Tento obchod se poté zobrazí v záhlaví. Když je modul pro výběr obchodu zahrnut v modulu záhlaví, jeho vlastnost **Režim** musí být nastavena na **Najít obchody**. Další informace naleznete v tématu [Modul pro výběr obchodu](store-selector.md).
 
 > [!NOTE]
-> - Podpora pro použití modulu ikony košíku v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.11.
-> - Podpora pro použití modulu voliče webu v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.14.
-> - Podpora pro použití modulu voliče obchodu v modulech záhlaví je k dispozici od Dynamics 365 Commerce verze 10.0.15.
-
-## <a name="header-module-in-the-adventure-works-theme"></a>Modul záhlaví v motivu Adventure Works
-
-V motivu Adventure Works podporuje modul záhlaví vlastnost **Mobilní logo**. Tato vlastnost umožňuje zadat logo pro mobilní zobrazení. Vlastnost **Mobilní logo** je k dispozici jako rozšíření definice modulu.
-
-> [!IMPORTANT]
-> Motiv Adventure Works je k dispozici od Dynamics 365 Commerce verze 10.0.20.
+> - Podpora pro použití modulu ikony košíku v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.11.
+> - Podpora pro použití modulu výběru webu v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.14.
+> - Podpora pro použití modulu výběru obchodu v modulech záhlaví je k dispozici v Dynamics 365 Commerce vydání 10.0.15.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Vytvoření fragmentu záhlaví stránky
 
@@ -121,6 +119,3 @@ Chcete-li zajistit, aby se záhlaví zobrazilo na každé stránce, postupujte p
 [Modul volby webu](site-selector.md)
 
 [Modul volby obchodu](store-selector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

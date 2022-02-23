@@ -1,24 +1,26 @@
 ---
 title: Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 description: Toto téma vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579465"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016671"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
@@ -32,7 +34,7 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Zadání odpovědi jako dodavatel
 
-1. Přejděte do **Spolupráce s dodavateli \> Pracovní prostory \> Nabídky dodavatelů**.
+1. Na řídicím panelu vyberte **Nabídky dodavatele**.
 2. V seznamu **Pozvánky k nové nabídce** vyhledejte požadavek na nabídku, který byl právě odeslán. Vyberte požadavek na nabídku, u nějž chcete zkontrolovat, co bylo požadováno.
 3. Vyberte **Přílohy požadavku na nabídku** pro kontrolu všech přidaných příloh.
 4. Chcete-li vytvořit upravitelná pole, vyberte **Nabídka**. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Odběratel aktualizuje**.
@@ -104,6 +106,3 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Zobrazení generované nákupní objednávky
 
 V podokně akcí na kartě **Obecné** zvolte **Nákupní objednávka**. Zobrazená stránka ukáže nákupní objednávku, která byla vygenerována po přijetí nabídky.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

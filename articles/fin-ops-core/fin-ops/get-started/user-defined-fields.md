@@ -2,9 +2,11 @@
 title: Vytvoření vlastních polí a práce s nimi
 description: Toto téma popisuje, jak v uživatelském rozhraní vytvářet vlastní pole pro přizpůsobení aplikace vašemu podnikání.
 author: jasongre
-ms.date: 05/24/2021
+manager: AnnBe
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
@@ -13,23 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 2ab1c402d99c1d9b7d7dc06e64c93fe43c5a1e9f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: eee5b072f999aab7d4a5e72888abad3915e03d5b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071178"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798110"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Vytvoření vlastních polí a práce s nimi
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Aplikace sice poskytuje rozsáhlou škálu standardních polí pro správu širokého rozsahu obchodních procesů. Někdy však společnost potřebuje sledovat ve svém systému i další informace. Zatímco programátoři mohou tato pole přidat jako rozšíření ve vývojářských nástrojích, funkce vlastních polí umožňuje přidávat pole přímo z uživatelského rozhraní, což vám umožní přizpůsobit aplikaci tak, aby vyhovovala vašemu podniku pomocí webového prohlížeče.
 
-*K této funkci mají přístup pouze uživatelé se zvláštními oprávněními.*
+Možnost přidat vlastní pole je k dispozici v aktualizaci platform update 13 a novější. K této funkci mají přístup pouze uživatelé se zvláštními oprávněními.
 
 Toto video ukazuje, jak je snadné přidat na stránku vlastní pole: [Přidávání vlastních polí](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -49,9 +48,8 @@ Proces vytváření vlastního pole a umístění daného pole ve formuláři je
     Pokud se nezobrazí tlačítko **Vytvořit nové pole**, nemáte potřebná oprávnění k použití této funkce.
 
 7. V dialogovém okně **Vytvořit nové pole** zadejte následující informace.
-   
-    1. Vyberte databázovou tabulku, do které chcete přidat toto pole. Všimněte si, že v rozevíracím seznamu se zobrazí pouze tabulky, které podporují vlastní pole. Technické podrobnosti týkající se podporovaných tabulek jsou uvedený v následující části.
 
+    1. Vyberte databázovou tabulku, do které chcete přidat toto pole. Všimněte si, že v rozevíracím seznamu se zobrazí pouze tabulky, které podporují vlastní pole. Technické podrobnosti týkající se podporovaných tabulek jsou uvedený v následující části.
     2. Zvolte zyp dat pro nové pole. Dostupné datové typy jsou zaškrtávací políčko, datum, datum a čas, desetinné číslo, číslo, rozevírací seznam a text.
 
         - Pokud vyberet datový typ text, můžete také určit maximální délka textu, který lze zadat do tohoto pole.
@@ -64,15 +62,11 @@ Proces vytváření vlastního pole a umístění daného pole ve formuláři je
 10. Klikněte na tlačítko **Vložit** a vložíte označená pole do vybrané oblasti formuláře.
 11. **Volitelné:** Povolte režim **Přesunout** z panelu nástrojů individuálního nastavení a přesuňte nová pole na požadované místo ve vybrané oblasti. Další informace o použití různých funkcí individuálního nastavení za účelem optimalizace formuláře pro vaše osobní použití naleznete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
-> [!WARNING]
-> Možnost zadávat hodnoty do vlastního pole přidaného na stránku závisí na tom, zda je tabulka přidružená k vlastnímu poli upravitelná nebo pouze pro čtení. Když je přidružená tabulka pouze pro čtení, všechna pole spojená s touto tabulkou, včetně jakýchkoli vlastních polí, budou také pouze pro čtení.
-
-
 ## <a name="sharing-custom-fields-with-other-users"></a>Sdílení vlastních polí s dalšími uživateli
 
-Po vytvoření vlastního pole a jeho vystavení na stránce můžete chtít poskytnout toto aktualizované zobrazení stránky s novým polem jiným uživatelům v systému. Toho lze dosáhnout dvěma různými způsoby pomocí možností individuálního nastavení produktu:
+Po vytvoření vlastního pole a jeho vystavení ve formuláři můžete chtít poskytnout toto aktualizované zobrazení stránky s novým polem jiným uživatelům v systému. Toho lze dosáhnout dvěma různými způsoby pomocí možností individuálního nastavení produktu:
 
-- Doporučená cesta je **publikovat [uložené zobrazení](saved-views.md)** s vlastním polem přidaným na stránku k příslušné sadě uživatelů. Pokud není funkce uložených pohledů povolena, může správce systému použít personalizaci na požadované uživatele z přizpůsobovacího formuláře. Další informace najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
+- Doporučený postup je prostřednictvím správce systému, který může individuální nastavení předat všem uživatelům nebo podmnožině uživatelů. Další informace najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 - Případně můžete exportovat své změny (nazývané *individuální nastavení*), zaslat je jednomu nebo více uživatelům a nechat tyto jednotlivé uživatelé importovat vaše změny. Možnost **Spravovat** na panelu nástrojů induviduálního nastavení vám umožní exportovat a importovat individuální nastavení.
 
 ## <a name="managing-custom-fields"></a>Správa vlastních polí
@@ -143,10 +137,6 @@ Ve výjimečných případech se můžete rozhodnout, že vlastní pole již nen
 
 ## <a name="appendix"></a>Dodatek
 
-### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Proč nemohu zadat hodnotu do svého vlastního pole? 
-
-Pokud nemůžete zadat hodnotu do vlastního pole, když je stránka v režimu úprav, může to být proto, že tabulka, do které bylo pole přidáno, je aktuálně pouze pro čtení. Všechna pole v tabulce se stanou pouze pro čtení, pokud je záložní tabulka aktuálně nakonfigurována jako jen pro čtení na stránce.   
-
 ### <a name="who-can-create-custom-fields"></a>Kdo může vytvářet vlastní pole?
 
 Jako ochranné opatření je ve výchozím nastavení umožněno vytváření vlastních polí pouze správcům systému. Nicméně uživatelům typu power user, které určí organizace, mohou být přidělena práva k vytváření vlastních polí od správce systému pomocí role zabezpečení **Uživatel power user přizpůsobení runtime**. Uživatelé bez této role zabezpečení nebudete moci vytvářet vlastní pole, ale stále budou moci zobrazit nebo používat vlastní pole přidaná ostatními uživateli v systému.
@@ -172,6 +162,3 @@ Z důvodů výkonnosti a z technických důvodů momentálně podporují přidá
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Lze odkazovat na vlastní pole z nástrojů pro vývojáře?  
 
 Vlastní pole lze spravovat pouze prostřednictvím uživatelského rozhraní a nelze na ně odkazovat pomocí kódu. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

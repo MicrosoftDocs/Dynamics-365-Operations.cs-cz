@@ -1,10 +1,12 @@
 ---
 title: Příchozí a odchozí majetek
 description: Toto téma vysvětluje, jak registrovat příchozí a odchozí majetek v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759616"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018064"
 ---
 # <a name="inbound-and-outbound-assets"></a>Příchozí a odchozí majetek
 
@@ -42,7 +44,7 @@ Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo od
 3. Zvolte **Aktualizovat stav požadavku na údržbu**.
 4. Vyberte **Příchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro příchozí majetek) a pak zvolte **OK**.
 
-![Registrace majetku jako příchozího.](media/07-manage-maintenance-requests.png)
+![Registrace majetku jako příchozího](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrace příchozího majetku jako přijatého
 
@@ -51,7 +53,7 @@ Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo od
 3. Zvolte **Přijmout majetek**.
 4. V poli **Přijato** zadejte datum a čas. Pak vyberte **OK**. Záznam bude odebrán ze stránky se seznamem **Příchozí majetek**.
 
-![Registrace příchozího majetku jako přijatého.](media/08-manage-maintenance-requests.png)
+![Registrace příchozího majetku jako přijatého](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrace majetku jako odchozího
 
@@ -68,6 +70,3 @@ Po dokončení úlohy údržby nebo opravy můžete majetek zaregistrovat jako v
 2. Zvolte majetek nebo požadavek na údržbu.
 3. Vyberte **Doručit majetek**.
 4. V poli **Doručeno** zadejte datum a čas. Pak vyberte **OK**. Záznam bude odebrán ze stránky se seznamem **Odchozí majetek**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Vizuální plánování pro lean manufacturing
 description: Toto téma obsahuje informace o desce plánování kanbanu, kterou Plánovač výroby může používat k řízení a optimalizaci výrobního plánu pro kanbanové úlohy.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764805"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423568"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuální plánování pro lean manufacturing
 
@@ -47,7 +50,7 @@ Je možné plánovat pouze úlohy typu **Proces**. Kanbanová úloha a její vla
 ## <a name="kanban-schedule-board"></a>Rozvrh plánování kanbanu
 Stránka **Deska plánování kanbanu** stránka obsahuje sedm hlavních prvků, jak je uvedeno na následujícím obrázku. 
 
-![Rozvrh plánování kanbanu.](./media/kanban-schedule-board-1024x554.png)
+![Rozvrh plánování kanbanu](./media/kanban-schedule-board-1024x554.png)
 1.  Podokno akcí
 2.  Filtrovat pole
 3.  Tlačítko pro neplánované úlohy
@@ -71,7 +74,7 @@ K vylepšení přehledu, který deska plánování kanbanu poskytuje, můžete p
 ## <a name="plan-unplanned-jobs"></a>Naplánovat neplánované úlohy
 Můžete naplánovat neplánované kanbanové úlohy z dialogového okna **Naplánovat neplánované úlohy**. Toto dialogové okno otevřete kliknutím na tlačítko **Neplánované úlohy**, na kterém je zobrazeno číslo neplánovaných úloh. Případně klikněte na tlačítko **Naplánovat neplánované úlohy** na kartě **deska** podokna akcí. V dialogovém okně se zobrazuje seznam neplánovaných kanbanových úloh pro pracovní buňku. K filtrování všech polí v mřížce lze použít pole **Filtr**. Můžete například filtrovat kanbanové úlohy pro konkrétní produkt. Poté, co máte filtrovaný seznam úloh, které chcete naplánovat, vyberte je v seznamu a klepněte na tlačítko **OK**. Pokud chcete k plánování úloh použít automatické plánování, nastavte možnost **Automatické plánování** na **Ano**. V takovém případě jsou úlohy plánovány na období podle data splatnosti. Úlohy je možné plánovat také podle období. Stačí vybrat období v poli **Období**. Následující obrázek znázorňuje příklad dialogového okna **Naplánovat neplánované úlohy**. 
 
-![Dialogové okno Naplánovat neplánované úlohy.](./media/plan-unplanned-jobs-1024x564.png)
+![Dialogové okno Naplánovat neplánované úlohy](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Pořadí kanbanových úloh ve stejném období
 V rámci období můžete změnit pořadí jeden nebo více vybraných úloh. Tato možnost může být užitečná, pokud chcete určit prioritu některých úloh v rámci období. Případně můžete vytvořit sekvenci úloh, které mají stejné atributy produktu, k optimalizaci provádění úloh. Sekvenci můžete změnit přetažením nebo pomocí číselné řady **zpět** a **dopředu** a položek nabídky na kartě **Deska** podokna akcí.
@@ -87,10 +90,8 @@ Desku plánování kanbanu můžete otevřít pomocí položky nabídky na násl
 -   Stránka **Vizualizace výrobního toku**
 
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Plánování kanbanové úlohy pro lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

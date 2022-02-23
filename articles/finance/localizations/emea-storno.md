@@ -2,9 +2,11 @@
 title: Záporné storno
 description: Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -13,12 +15,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8bea5d5ec8069e78f3ed5e7d1d6a74ee28ce2dea1891ad71e410d4c309a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764210"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968319"
 ---
 # <a name="storno-accounting"></a>Záporné storno
 
@@ -119,7 +121,7 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Má Dáti</td>
-<td class="column-2">Ne</td>
+<td class="column-2">Žádný</td>
 <td class="column-3">0. &gt;</td>
 <td class="column-4" align="right">Množství</td>
 <td class="column-5" align="right">Množství</td>
@@ -128,8 +130,8 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 <td class="column-8">Zvýšení</td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Kredit</td>
-<td class="column-2">Ne</td>
+<td class="column-1"> Kreditní</td>
+<td class="column-2">Žádný</td>
 <td class="column-3">0. &lt;</td>
 <td class="column-4" align="right">-Částka</td>
 <td class="column-5" align="right">Množství</td>
@@ -162,11 +164,8 @@ Finance zpracovává záporné částky deníku speciálním způsobem. Položka
 
 Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole. Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky. Můžete také použít pole **oprava** se všemi nastaveními zobrazení, pokud má pole **Oprava** zadanou hodnotu „Ano“, po které následuje položka Storno.
 
-![Částky storna položky deníku.](./media/journal-storno.png)
+![Částky storna položky deníku](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Jak dokumenty vytvářejí storno
 Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Další informace naleznete v tématu [přecenění cizí měny v hlavní knize](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [přecenění cizí měny pro závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

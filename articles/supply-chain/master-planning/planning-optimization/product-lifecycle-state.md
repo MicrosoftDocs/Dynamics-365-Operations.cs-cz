@@ -2,13 +2,16 @@
 title: Vyloučení produktů s konkrétními stavy životního cyklu produktu
 description: Toto téma vysvětluje, jak vyloučit produkty na základě jejich stavu životního cyklu při použití funkce Optimalizace plánování.
 author: ChristianRytt
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 030bdea7c03dd5eb3347c1d43acd1aeabdf566602872dd8ef5aab6d16b06f503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 371d98eefa482fc3e430f2f0977ddffb9dd0d30e
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739028"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645084"
 ---
 # <a name="exclude-products-that-have-specific-product-lifecycle-states"></a>Vyloučení produktů s konkrétními stavy životního cyklu produktu
 
@@ -39,6 +42,3 @@ S vydanými produkty a variantami, kde pole **Stav životního cyklu produktu** 
 Další informace o stavech životního cyklu produktu najdete v části [Přehled stavu životního cyklu produktu](../../pim/product-lifecycle.md).
 
 Podrobné informace, které zahrnují kroky pro použití stavů životního cyklu produktu k vyloučení produktů z hlavního plánování a výpočtů na úrovni kusovníku, najdete v části [Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování](../../pim/tasks/exclude-products-master-planning.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Hromadně vytvořit prodejní nabídky
 description: Tento postup ukazuje, jak účinně vytvářet prodejní nabídky nabízející sadu produktů nebo služeb, které mají být zaslány více zákazníkům.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm, SalesQuickQuote
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acb2b49c7cb2024aec1140d04150bd1ab9d75c14
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 227ff0dd03f8917f4551ce08067ef26c6204b059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573362"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423613"
 ---
 # <a name="mass-create-sales-quotations"></a>Hromadně vytvořit prodejní nabídky
 
@@ -98,6 +101,3 @@ Tento postup ukazuje, jak účinně vytvářet prodejní nabídky nabízející 
 11. Přejděte na Prodej a marketing > Prodejní nabídky > Všechny nabídky.
     * Ověřte, zda nabídky byly vytvořeny pro všechny odběratele určené v rutinní hromadné aktualizaci, jak bylo nastaveno ve vybrané šabloně.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,33 @@
 title: Potvrzení dávky a poznávací značky
 description: Toto téma popisuje, jak nastavit a použít potvrzení dávky a registrační značky z mobilního zařízení.
 author: Mirzaab
+manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13e246f9a496dcc38829eef788d09c50300c99fb95daffad134012733341e4af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a953b677b1188750241772d7ae966a1dba77b92e
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726530"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514295"
 ---
 # <a name="batch-and-license-plate-confirmation"></a>Potvrzení dávky a poznávací značky
 
 [!include [banner](../includes/banner.md)]
 
-Potvrzení dávky vám umožňuje potvrdit z mobilního zařízení, že byla vydána správná dávka. Při počátečním vyskladnění práce pouze pro položky *Batch-above\[location\]*, kde batch-above označuje že dávka je umístěna výše než umístění v hierarchii vyhledávání, musíte ověřit, že vyskladněná dávka se shoduje dávkou na řádku práce.
+Potvrzení dávky vám umožňuje potvrdit z mobilního zařízení, že byla vydána správná dávka. Při počátečním vyskladnění práce pro dávku pouze nad položkami, kde dávka nad označuje rozsah dávek vyšší než umístění v hierarchii vyhledávání, musíte ověřit, že vyskladněná dávka se shoduje dávkou na řádku práce.
 
 Potvrzení registrační značky vám umožňuje potvrdit z mobilního zařízení, že byla vydána správná registrační značka. Při vyskladnění práce ze skladového místa fáze musíte ověřit, že vyskladněná registrační značka odpovídá registrační značce, která je přidružena k práci. Pokud práce začala naskenováním poznávací značky, tento krok potvrzení bude přeskočen.
 
@@ -45,6 +48,3 @@ Můžete nakonfigurovat potvrzení dávky a poznávací značky z položek nabí
 
 1. Z položek nabídky mobilního zařízení vstupte do nastavení potvrzení práce.  
 1. Vyberte možnost pro potvrzení dávky nebo registrační značky. Obě možnosti jsou k dispozici pro vyskladnění typu práce, které nemají povolené automatické potvrzení.  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

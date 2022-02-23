@@ -2,12 +2,15 @@
 title: Synchronizace hodnocení produktů v Dynamics 365 Commerce
 description: Toto téma popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967943"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410850"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizace hodnocení produktů v Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Chcete-li využívat hodnocení produktů v omnikanálech, jako je například na pokladním místě (POS) a v kontaktních střediscích, musí být hodnocení produktů ze služby hodnocení a recenzí importována do databáze velkoobchodní sítě. Pokud jsou hodnocení produktů k dispozici v omnikanálech, mohou zákazníkům pomoci při jejich interakci s prodejcem.
 
@@ -57,7 +62,7 @@ Chcete-li ověřit, zda existuje dílčí úloha **RetailProductRating**, postup
 
 Následující ilustrace znázorňuje příklad stránky odrobnosti dílčích úloh v Commerce.
 
-![Podrobnosti o dílčí úloze RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
+![Podrobnosti o dílčí úloze RetailProductRating](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Pokud nenajdete dílčí úlohu **RetailProductRating**, je možné, že jste již před inicializací velkoobchodního plánovače spustili úlohu **Synchronizace hodnocení produktů** a **1040 CDX**. V takovém případě spusťte úlohu **Úplná synchronizace dat** provedením následujících kroků.
@@ -81,7 +86,7 @@ Chcete-li importovat hodnocení produktů do velkoobchodu ze služby hodnocení 
 
 Následující ilustrace znázorňuje příklad konfigurace dílčích úloh v Commerce.
 
-![Konfigurace dávkové úlohy hodnocení produktů pro synchronizaci.](media/rnr-hq-batchjob-recurrence.png)
+![Konfigurace dávkové úlohy hodnocení produktů pro synchronizaci](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Ověřte, že dávková úloha synchronizace hodnocení produktu proběhla úspěšně
 
@@ -93,7 +98,7 @@ Chcete-li ověřit, zda byla dávková úloha **Synchronizace hodnocení produkt
 
 Na následujícím obrázku je znázorněn příklad podrobností dávkové úlohy v Commerce, když je dávková úloha naplánována na spuštění v intervalech dvou hodin.
 
-![Podrobnosti dávkové úlohy Synchronizace hodnocení produktů.](media/rnr-hq-batchjob-status-checking.png)
+![Podrobnosti dávkové úlohy Synchronizace hodnocení produktů](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Zajistěte dostupnost hodnocení produktu na POS
 
@@ -111,17 +116,17 @@ Chcete-li zapnout hodnocení produktů v POS, postupujte podle následujících 
 
 Na následujícím obrázku je znázorněn příklad konfigurace parametrů velkoobchodu, které zapínají hodnocení produktů na POS.
 
-![Konfigurace parametrů velkoobchodu pro hodnocení produktů v POS.](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfigurace parametrů velkoobchodu pro hodnocení produktů v POS](media/rnr-hq-enable-ratings-in-pos.png)
 
 Následující obrázek znázorňuje příklad hodnocení produktů na POS.
 
-![Hodnocení produktů na POS.](media/rnr-pos-catalog-ratings.png)
+![Hodnocení produktů na POS](media/rnr-pos-catalog-ratings.png)
 
 Následující obrázek znázorňuje příklad hodnocení produktů v kanálech kontaktního střediska.
 
-![Hodnocení produktu v kanálu kontaktního střediska.](media/rnr-call-center-ratings.png)
+![Hodnocení produktu v kanálu kontaktního střediska](media/rnr-call-center-ratings.png)
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
 
@@ -130,16 +135,3 @@ Následující obrázek znázorňuje příklad hodnocení produktů v kanálech 
 [Správa hodnocení a recenzí](manage-reviews.md)
 
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
-
-[Synchronizace hodnocení produktů](sync-product-ratings.md)
-
-[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
-
-[Import a export hodnocení a recenzí](import-export-reviews.md)
-
-[Konfigurace ověřování mezi službami](service-to-service-auth.md)
-
-[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

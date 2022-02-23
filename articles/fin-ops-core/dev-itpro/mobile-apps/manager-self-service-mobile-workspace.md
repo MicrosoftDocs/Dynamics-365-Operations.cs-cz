@@ -1,10 +1,12 @@
 ---
 title: Mobilní pracovní prostor Můj tým
-description: Toto téma obsahuje informace o mobilním pracovním prostoru Můj tým, ve kterém si manažeři mohou zobrazovat informace o přímých podřízených a dalších zaměstnancích.
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Můj tým, ve kterém si manažeři mohou zobrazovat informace o přímých podřízených a dalších zaměstnancích. Kromě toho mohou podřízeným také poslat pochvalu.
 author: ShielaSogge
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767105"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680963"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilní pracovní prostor Můj tým
 
@@ -78,7 +80,7 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-[![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Zobrazení členů týmu pomocí mobilního pracovního prostoru Můj tým
 1.  V mobilní aplikaci zvolte pracovní prostor **Můj tým**. Zobrazí se seznam členů týmu. Zobrazí se také tituly jednotlivých členů týmu a jejich případní přímí podřízení.
@@ -95,6 +97,3 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 1.  Vyberte možnost **Udělit pochvalu**. 
 1. Zadejte text pochvaly, kterou chcete odeslat. 
 1. Vyberte **Hotovo**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Vytvoření účetních struktur
-description: Tato procedura vás provede vytvořením účetní struktury.
+description: Tento průvodce úkoly vás provede vytvořením účetní struktury.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968572"
 ---
 # <a name="create-account-structures"></a>Vytvoření účetních struktur
 
 [!include [banner](../../includes/banner.md)]
 
-Tato procedura vás provede vytvořením účetní struktury. Kroky používají ukázková data společnosti USMF.
+Tento průvodce úkoly vás provede vytvořením účetní struktury. Kroky používají ukázková data společnosti USMF.
 
 1. Přejděte na **navigační podokno > Moduly > Hlavní kniha > Účetní osnovy > Struktury > Konfigurovat účetní struktury**.
 2. V **podokně akcí** klikněte na **Nové** a otevřete rozbalovací dialogové okno.
@@ -58,6 +60,3 @@ Tato procedura vás provede vytvořením účetní struktury. Kroky používají
 29. V **podokně akcí** klikněte na možnost **Aktivovat**.
 30. Klepněte na tlačítko **Aktivovat**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

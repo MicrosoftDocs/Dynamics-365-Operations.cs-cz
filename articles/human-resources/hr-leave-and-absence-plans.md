@@ -1,33 +1,31 @@
 ---
 title: Vytvoření plánu volna a absence
-description: Toto téma popisuje, jak vytvořit plány dovolené v Dynamics 365 Human Resources pro různé druhy dovolené.
-author: twheeloc
-ms.date: 10/28/2021
+description: Vytvářejte plány volna v Dynamics 365 Human Resources pro různé typy volna.
+author: andreabichsel
+manager: AnnBe
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9267b4d4025ef0e5cec2d3e995785a6291c850e5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070243"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417683"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definujte plány volna a absence v aplikaci Dynamics 365 Human Resources pro každý typ nabízeného volna. Plány volna a absence lze časově rozlišit v různých intervalech, například ročně, měsíčně nebo jednou za čtrnáct dní. Plán lze také definovat jako grant, kde dochází k jednomu časovému rozlišení v konkrétní datum. Můžete například vytvořit plán, který bude každoročně přidělovat pohyblivé svátky.
 
@@ -385,6 +383,3 @@ Předpokládaný zůstatek (30) = časově rozlišené množství (10 × 1) + ak
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Konfigurace typů pracovního volna a absence](hr-leave-and-absence-types.md)
 - [Časové rozlišení plánů pracovního volna a absence](hr-leave-and-absence-accrue.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Nastavení postdatovaných šeků
 description: Toto téma vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc1798836d9b905d991adb4c87d55ddce41d260bdbfdad6bf0c4b4feb846ee57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743066"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441222"
 ---
 # <a name="set-up-postdated-checks"></a>Nastavení postdatovaných šeků
 
@@ -51,14 +54,6 @@ Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společn
     * Pole pro protiúčet způsobu platby bude prázdné.  
 17. Zadejte požadované hodnoty do pole Platební účet.
     * Vyberte bankovní účet, který se používá k odečtu částky faktury.  
-18. Klikněte na tlačítko Uložit.
+18. Klepněte na tlačítko Uložit.
 19. Zavřete stránku.
-> [!NOTE]
-> Abyste mohli odeslat šek po datu splatnosti na bankovní účet, když je datum relace větší nebo rovno datu splatnosti, musíte povolit funkci **Ověření data splatnosti zaúčtování deníku plateb s postdatovanými šeky na bankovní účet**. Tato funkce umožňuje účtovat deníky plateb pro dodavatele nebo zákazníky s postdatovanými šeky, když je datum relace větší nebo rovno datu splatnosti.
-> 
-> Při nastavování **Způsobu platby** (**Závazky> Nastavení platby > Způsoby platby**) nevyplňujte **Překlenovací účet**. V tomto případě je offsetový účet vyplněn bankovním účtem, který je nastaven ve **Způsobu platby**.
->  
-> Pokud je funkce povolena a datum relace je menší než datum splatnosti, zobrazí se při zaúčtování deníku plateb následující chybová zpráva: „Datum splatnosti musí být menší nebo rovno datu relace, pokud je typ offsetového účtu Banka“. Pokud tato funkce není povolena, můžete zaúčtovat deník plateb s postdatovaným šekem, když je datum relace menší než datum splatnosti.
-> Tato funkce je k dispozici ve verzi 10.0.21 a novější.    
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

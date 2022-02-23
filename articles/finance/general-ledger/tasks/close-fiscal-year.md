@@ -2,23 +2,26 @@
 title: Uzavření fiskálního roku
 description: Tato procedura vás provede procesem roční uzávěrky, která zůstatky převádí do nového fiskálního roku.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902500"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441236"
 ---
 # <a name="close-the-fiscal-year"></a>Uzavření fiskálního roku
 
@@ -36,7 +39,7 @@ Tato procedura vás provede procesem roční uzávěrky, která zůstatky přev�
 
 4. Vyberte Ano nebo Ne jako odpověď na dotaz, zda **vytvořit transakce uzávěrky během převodu**.
 
-    Pokud je nastavena na hodnotu Ano, budou vytvořeny dvě transakce. Jeden doklad byl vytvořen v uzavíraném fiskálním roce, aby byly vynulovány zůstatky všech účtů hlavní knihy a druhý je vytvořen v dalším fiskálním roce pro počáteční zůstatky. Pokud je nastavena hodnota Ne, jediný doklad je vytvořen pro počáteční zůstatky dalšího fiskálního roku.  
+    Pokud je nastavena na hodnotu Ano, budou vytvořeny dvě transakce. Jeden doklad byl vytvořen v uzavíraném fiskálním roce, aby byly vynulovány zůstatky účtů hlavní knihy zisků a ztrát a druhý je vytvořen v dalším fiskálním roce pro počáteční zůstatky. Pokud je nastavena hodnota Ne, jediný doklad je vytvořen pro počáteční zůstatky dalšího fiskálního roku.  
 
 5. Vyberte Ano nebo Ne jako odpověď na dotaz, zda **nastavit stav fiskálního roku na trvale uzavřený**.
 
@@ -80,6 +83,3 @@ Tato procedura vás provede procesem roční uzávěrky, která zůstatky přev�
 23. Roční uzávěrka se nastaví na výchozí dávková spouštění. Pro dlouhodobé procesy platí pravidlo doporučeného postupu spouštět je v dávkovém režimu. To je obvykle jeden z těchto procesů, což je důvod pro použití v dávkovém režimu ve výchozím nastavení.  
 24. Klikněte na tlačítko **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

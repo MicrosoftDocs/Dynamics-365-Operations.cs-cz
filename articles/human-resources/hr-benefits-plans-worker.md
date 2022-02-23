@@ -1,30 +1,31 @@
 ---
 title: Vytvoření plánů zaměstnaneckých výhod pracovníka
-description: Toto téma popisuje, jak vytvořit, vybrat a potvrdit plány zaměstnaneckých výhod v aplikaci Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+description: Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Human Resources vytvořit pro výběr plánů zaměstnaneckých výhod pro zaměstnance a potvrzení výběrů plánu zaměstnaneckých výhod.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417397"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417583"
 ---
 # <a name="create-worker-benefit-plans"></a>Vytvoření plánů zaměstnaneckých výhod pracovníka
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Human Resources vytvořit pro výběr plánů zaměstnaneckých výhod pro zaměstnance a potvrzení výběrů plánu zaměstnaneckých výhod. Zaměstnanci obvykle vybírají plány zaměstnaneckých výhod sami pomocí samoobsluhy zaměstnanců a potom výběr potvrdí správce zaměstnaneckých výhod. 
 
@@ -48,6 +49,3 @@ Plány zaměstnaneckých výhod pracovníka můžete v Microsoft Dynamics 365 Hu
    | Plány | Pevná záložka plány obsahuje plány, které vyhovují zadanému kritériu filtru. Na každém řádku jsou zahrnuty odpovídající možnosti konfigurace, které byly nastaveny zaměstnancem HR a vybranými zaměstnanci. Pole Oprávněný určuje, zda existuje konflikt ověření s výběrem plánu. |
 
 4. Zvolte **Uložit**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

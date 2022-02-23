@@ -2,9 +2,11 @@
 title: Určení umístění vlastního úložiště pro vygenerované dokumenty
 description: Toto téma vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty, které generují formáty elektronického výkaznictví.
 author: NickSelin
+manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718494"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680799"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
@@ -27,7 +29,7 @@ Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictv�
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Je nutné nasadit topologii, která podporuje průběžné sestavování. (Další informace naleznete v tématu [Nasazení topologií podporujících průběžné sestavování a automatizaci testování](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Pro tuto topologii musíte mít přístup do topologie pro jednu z následujících rolí:
+Je nutné nasadit topologii, která podporuje průběžné sestavování. (Další informace naleznete v tématu [Nasazení topologií podporujících průběžné sestavování a automatizaci testování](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Pro tuto topologii musíte mít přístup do topologie pro jednu z následujících rolí:
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -39,7 +41,7 @@ Také musí mít přístup k vývojovému prostředí pro tuto topologii.
 
 V aktuální topologii [vytvořte nový formát elektronického výkaznictví](tasks/er-format-configuration-2016-11.md) ke generování dokumentů, pro které chcete přidat vlastní umístění úložiště. Alternativně [importujte stávající formát elektronického výkaznictví do této topologie](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Stránka návrháře formátu.](media/er-extend-file-storages-format.png)
+![Stránka návrháře formátu](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Formát elektronického výkaznictví, který vytvoříte nebo importujete, musí obsahovat alespoň jednu z následujících prvků formátu:
@@ -53,12 +55,12 @@ V aktuální topologii [vytvořte nový formát elektronického výkaznictví](t
 
 Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elektronického výkaznictví, musíte nakonfigurovat [místa určení elektronického výkaznictví](electronic-reporting-destinations.md). V každém cílovém umístění elektronického výkaznictví, které je nakonfigurováno pro ukládání generovaných dokumentů jako souborů, musíte zadat typ dokumentu v rámci architektury správy dokumentů. Různé typy dokumentů mohou být použity pro směrování dokumentů, které různé formáty elektronického výkaznictví generují.
 
-1. Přidejte nový [typ dokumentu](../../fin-ops/organization-administration/configure-document-management.md) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
+1. Přidejte nový [typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
 2. Chcete-li tento typ dokumentu odlišit od jiných typů dokumentů, zahrňte do jeho názvu konkrétní klíčové slovo. Například v následujícím příkladu je název **složka (LOCAL)**.
 3. V poli **Třída** určete **Připojit soubor**.
 4. V poli **Skupina** určete **Soubor**.
 
-![Stránka typu dokumentu.](media/er-extend-file-storages-document-type.png)
+![Stránka typu dokumentu](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Typy dokumentů jsou specifické pro společnost. Chcete-li použít formát elektronického výkaznictví s nakonfigurovaným umístěním ve více společnostech, musíte v každé společnosti nakonfigurovat samostatný typ dokumentu.
@@ -113,18 +115,18 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 - **Archiv** – Při použití tohoto umístění je v tabulce ERFormatMappingRunJobTable vytvořen nový záznam pro formát elektronického výkaznictví, který je spuštěn. Pole **Archivované** v tomto záznamu je nastaveno na **False**. Je-li formát elektronického výkaznictví spuštěn úspěšně, generovaný dokument je připojen k tomuto záznamu a je vyvolána událost **AttachingFile()**. Typ dokumentu, který je vybrán v tomto umístění elektronického výkaznictví, určuje umístění úložiště pro připojený soubor (Microsoft Azure Storage nebo složka Microsoft SharePoint).
 - **Archiv úloh** – Při použití tohoto umístění je v tabulce ERFormatMappingRunJobTable vytvořen nový záznam pro formulář elektronického výkaznictví, který je spuštěn. Pole **Archivované** v tomto záznamu je nastaveno na **True**. Je-li formát elektronického výkaznictví spuštěn úspěšně, generovaný dokument je připojen k tomuto záznamu a je vyvolána událost **AttachingFile()**. Typ dokumentu, který je nakonfigurován v parametrech elektronického výkaznictví, určuje umístění úložiště pro připojený soubor (Azure Storage nebo složka Microsoft SharePoint).
 
-![Stránka parametrů elektronického výkaznictví.](media/er-extend-file-storages-parameters.png)
+![Stránka parametrů elektronického výkaznictví](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurace umístění elektronického výkaznictví
 
-1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Nakonfigurujte archivovaný cíl pro jeden z dříve uvedených prvků (soubor, složka, sloučení nebo příloha) formátu ER, který jste vytvořili nebo naimportovali. Pokyny jsou uvedeny v části [Konfigurace cílů ER](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Použijte typ dokumentu, který jste přidali dříve pro nakonfigurované umístění. (Například v tomto tématu je typ dokumentu **FileX**.)
 
-![Dialogové okno nastavení cíle.](media/er-extend-file-storages-destination.png)
+![Dialogové okno nastavení cíle](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Úprava zdrojového kódu
 
-1. Přidejte novou třídu do vašeho projektu Microsoft Visual Studio a napište kód, který se přihlásí k odběru k události **AttachingFile()**, která byla uvedena výše. (Další informace o použitém vzorci rozšiřitelnost naleznete v tématu [Odpověď pomocí EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Například v nové třídě napište kód, který provede následující akce:
+1. Přidejte novou třídu do vašeho projektu Microsoft Visual Studio a napište kód, který se přihlásí k odběru k události **AttachingFile()**, která byla uvedena výše. (Další informace o použitém vzorci rozšiřitelnost naleznete v tématu [Odpověď pomocí EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Například v nové třídě napište kód, který provede následující akce:
 
     1. Uložte generované soubory do složky místního systému souborů serveru, který spouští službu Aplikační objektový server (AOS).
     2. Tyto generované soubory ukládejte pouze tehdy, když se používá nový typ dokumentu (například **FileX**, který má klíčové slovo "(LOCAL)" ve svém názvu), zatímco soubor je připojen k záznamu v protokolu úlohy provedení elektronického výkaznictví.
@@ -173,6 +175,3 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
 
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Domovská stránka pro rozšiřitelnost](../extensibility/extensibility-home-page.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

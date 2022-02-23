@@ -1,10 +1,12 @@
 ---
 title: Dodavatelská spolupráce s externími dodavateli
 description: Toto téma vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576969"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016746"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -33,7 +35,7 @@ Další informace o tom, co mohou externí dodavatelé provádět v rozhraní sp
 > [!NOTE]
 > Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Supply Chain Management. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
 
-Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
+Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definování informací zobrazených dodavatelům při odpovědi na nákupní objednávky
 
@@ -256,6 +258,3 @@ Uživatel, který nastavuje parametry pro proces požadavku na nabídku, může 
 - %createddate%
 
 Pokud je požadován dodatek a je odeslán po odeslání požadavku na nabídku, požadavek na nabídku bude odeslán znovu všem pozvaným dodavatelům. Publikovaný dokument bude také aktualizován na stránce **Otevřené publikované požadavky na nabídky**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

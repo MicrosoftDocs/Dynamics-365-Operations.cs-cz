@@ -1,10 +1,12 @@
 ---
 title: Naplánovat pracovní příkazy
 description: Toto téma vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718052"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020222"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -56,7 +58,7 @@ Je možné naplánovat pouze pracovní příkazy se stavem životního cyklu pra
 
 *Příklad:* v níže uvedeném obrázku bude vzorec vložený do pole **Očekávaný začátek** generovat pracovní příkaz pro všechny pracovní příkazy s očekávaným počátečním datem týdne od nynějška a později. Tento vzorec může být užitečný, když provádíte plánování pracovních příkazů průběžně, ale chcete mít jistotu, že pracovní příkazy naplánované pro následující 5-6 dnů nebudou přeplánovány.
 
-![Obrázek č. 1.](media/03-work-order-scheduling.png)
+![Obrázek č. 1](media/03-work-order-scheduling.png)
 
 Typ pracovního příkazu vztahující se k pracovním objednávkám může nastavovat plánování jednoho pracovníka údržby (**Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Typ pracovních příkazů** >  přepínací tlačítko **Jeden pracovník údržby** nastavené na hodnotu „Ano“). To znamená, že pokud je typ pracovního příkazu použit v rámci pracovního příkazu, bude přepínací tlačítko **Jeden pracovník údržby** nastaveno na „Ano“ na stránce s podrobnostmi **Všechny pracovní příkazy** > zobrazení **Záhlaví** > pevná záložka **Plánovat**. Při plánování pracovních příkazů budou všechny úlohy pracovních příkazů vytvořené v daném pracovním příkazu následně naplánovány na stejného pracovníka údržby. V případě potřeby můžete upravit výběr pomocí přepínacího tlačítka **Jeden pracovník údržby** ve volbě **Všechny pracovní příkazy** tak, aby bylo možné plánovat několik pracovníků nebo jednoho pracovníka na úlohy pracovních příkazů.
 
@@ -135,6 +137,3 @@ Postup při zobrazení a práci s Ganttovým grafem:
     - Chcete-li přeplánovat zobrazenou pracovní objednávku, vyberte položku a přetáhněte ji do příslušného nového data a času.
 
 1. Pokud jste provedli změny, vyberte **Uložit** v podokně akcí a uložte je.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

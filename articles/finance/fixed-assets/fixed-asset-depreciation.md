@@ -1,10 +1,12 @@
 ---
 title: Odpisy dlouhodobého majetku
 description: Toto téma podává přehled odpisu pro dlouhodobý majetek.
-author: moaamer
-ms.date: 12/03/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -12,26 +14,23 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 9b399ab3df9bddbce8b96752ef344bf93cb2563c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890973"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969096"
 ---
 # <a name="fixed-asset-depreciation"></a>Odpisy dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma podává přehled odpisu pro dlouhodobý majetek.
 
 Odpis představuje periodickou transakci, která obvykle snižuje hodnotu dlouhodobého majetku v rozvaze a v knize zisků a ztrát účtována jako výdaj. Proto se hlavní účet obvykle použije pro odepsání pravidelného odpisu do rozvahy. Protiúčet je účtem v části zisků a ztrát účtové osnovy.
-
-Od verze 10.0.24 volba konfigurace knihy majetku **Počítat kladné odpisy** na stránce **Knihy** umožňuje odpisu připsat na vrub dlouhodobého majetku, který je pořízen se zápornou účetní hodnotou (kredit).
 
 ## <a name="depreciation-adjustment"></a>Oprava odpisu
 Obvykle je pouze oprava již zaúčtované transakce odpisu zaúčtována jako oprava odpisu. Proto se hlavní účet a protiúčet nastaví stejně jako účty pro odpis. Opravy odpisu lze provést u kladné i záporné částky, avšak funkce hlavního účtu (jako účet rozvahy) a protiúčtu (obvykle jako účet zisků a ztrát) zůstane stejná.
@@ -57,6 +56,3 @@ Další informace naleznete v tématu [Odpisové metody a způsoby odpisu](depre
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

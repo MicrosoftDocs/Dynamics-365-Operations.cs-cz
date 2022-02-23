@@ -1,25 +1,28 @@
 ---
 title: Definování skupin štíhlého plánu
 description: Skupiny štíhlého plánu jsou definovány pro rozdělení do skupin a rozlišení produkty v plánování kanbanu.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d16c0d3192773c32c8dcc57a430607c6b60f97
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a9ad470d81d94a0af1c4c4dc6c5072354cfd96d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574442"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423515"
 ---
 # <a name="define-lean-schedule-groups"></a>Definování skupin štíhlého plánu
 
@@ -53,6 +56,3 @@ Skupiny štíhlého plánu jsou definovány pro rozdělení do skupin a rozliše
 3. V poli Alokační klíč položky klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 4. Klikněte na odkaz na vybraném řádku v seznamu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

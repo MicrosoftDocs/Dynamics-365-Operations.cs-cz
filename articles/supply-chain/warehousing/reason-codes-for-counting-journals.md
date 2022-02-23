@@ -1,32 +1,35 @@
 ---
 title: Kódy důvodů pro inventury zásob
 description: Toto téma popisuje, jak nastavit a použít kódy důvodů pro úlohy účtování.
-author: perlynne
-ms.date: 08/02/2021
+author: Mirzaab
+manager: tfehr
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 1025dd00db2e8b87e3c76e3047a7cf470a2d6641
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423608"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kódy důvodů pro inventury zásob
 
 [!include [banner](../includes/banner.md)]
 
-Kódy důvodů umožňují analyzovat výsledky procesu inventury a jakýkoli nesoulad, který se vyskytne během tohoto procesu. Můžete určit důvod pro provádění inventury, například rozbitou paletu nebo úpravu zásob, založenou na vzorku zásob. Současně můžete použít funkci úprav k zaúčtování hodnoty úprav množství na skladě na příslušný protiúčet na základě důvodu každé úpravy zásob.
+Kódy důvodů umožňují analyzovat výsledky procesu inventury a jakýkoli nesoulad, který se vyskytne během tohoto procesu. Můžete určit důvod pro provádění inventury, například rozbitou paletu nebo úpravu zásob, založenou na vzorku zásob.
 
 ## <a name="recommendation"></a>Doporučení
 
@@ -35,30 +38,17 @@ Před nastavením systému doporučujeme nejprve definovat strategii pro práci 
 - Měly by být kódy důvodů povinné na skladech?
 - Měly by být kódy důvodů povinné nebo volitelné na některých položkách?
 - Kolik kódů důvodů vyžadujete?
-- Musíte předem vybrat omezený seznam kódů důvodů pro úpravy?
 - Jak by měli uživatelé čteček čárových kódů používat kódy důvodů? Měly by být kódy důvodů předvybrané, povinné nebo bez možnosti úpravy?
 - Vyžadují pracovníci skladu různé chování kódů důvodů na mobilních čtečkách? Je-li odpověď ano, můžete vytvořit další položky nabídky a přiřadit je k různým osobám.
-- Měly by kódy důvodu řídit zaúčtování finančních protiúčtů?
 
-## <a name="turn-on-reason-code-features-in-your-system"></a>Zapnutí funkce kódu důvodu v systému
+## <a name="where-reason-codes-apply"></a>Kde se kódy důvodů používají
 
-Pokud ve svém systému nevidíte všechny funkce popsané v tomto tématu, pravděpodobně budete muset zapnout funkci *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Můžete vytvořit více zásad kódů důvodů a každá zásady kódů důvodů může mít dvě zásady kódů důvodu inventury. Zásady kódů důvodů inventury lze použít na úrovni skladu nebo na úrovni položky.
 
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*
+## <a name="set-up-reason-code-policies"></a>Nastavení zásad kódů důvodů
 
-## <a name="set-up-reason-codes"></a>Nastavení kódů důvodů
-
-### <a name="set-up-reason-code-policies"></a>Nastavení zásad kódů důvodů
-
-Můžete vytvořit více zásad kódů důvodů, které budou řídit, kdy a jak se kódy důvodů inventury použijí. Každá zásada kódu příčiny může mít jeden ze dvou typů kódu důvodu inventury (*Volitelný* nebo *Povinný*). Zásady kódů důvodů inventury lze použít na úrovni skladu nebo na úrovni položky.
-
-Chcete-li vytvořit zásadu kódu důvodu, postupujte takto.
-
-1. Přejděte do nabídky **Řízení zásob** \> **Nastavení** \> **Zásoby** \> **Zásady kódů důvodů inventury**.
-1. V podokně Akce vyberte možnost **Nový**. Tím se přidá zásada do mřížky.
-1. Nastavte **Název** pro novou zásadu.
-1. V poli **Typ kódu důvodů inventury** vyberte buď *Povinné* nebo *volitelné* a určete, zda výběr kódu důvodů má být volitelná nebo povinná akce v jednom z následujících procesů úpravy zásob:
+1. Vyberte **Řízení zásob** \> **Nastavení** \> **Zásoby** \> **Zásady kódů důvodů inventury** a vytvořte novou zásadu kódů důvodů.
+2. V poli **Typ kódu důvodů inventury** vyberte buď **Povinné** nebo **volitelné** a určete, zda výběr kódu důvodů má být volitelná nebo povinná akce v jednom z následujících deníků inventur:
 
     - Cyklická inventura (mobilní zařízení)
     - Místní inventura (mobilní zařízení)
@@ -66,63 +56,34 @@ Chcete-li vytvořit zásadu kódu důvodu, postupujte takto.
     - Příchozí úprava (mobilní zařízení)
     - Odchozí úprava (mobilní zařízení)
     - Deník inventur (plně funkční klient)
-    - Úprava množství/online sčítání (bohatý klient)
 
-Zásady kódů důvodů můžete nastavit pro jednotlivé sklady i pro produkty. Nastavení kódu důvodu pro produkt může přepsat nastavení pro sklad produktu.
+Můžete také nastavit kódy důvodů pro jednotlivé sklady a produkty. Nastavení kódů důvodů pro produkty může nebrat v úvahu nastavení skladů.
 
-> [!NOTE]
-> U skladů a položek, kde je nastaveno pole **Zásada kódu důvodů inventury** na *Povinné*, nelze deník inventur dokončit a uzavřít, dokud není zadán kód důvodu. Další informace naleznete v následující části.
+## <a name="mandatory-reason-codes"></a>Povinné kódy důvodů
 
-### <a name="assign-counting-reason-code-policies-to-warehouses"></a>Přiřazení zásad kódu důvodu inventury ke skladům
+Pokud je nastaven parametr **Povinné** v konfiguraci kódů důvodů pro sklady pro nebo položky, deník inventur nelze dokončit a uzavřít, dokud neí zadán kód důvodu.
 
-Chcete li ke skladu přiřadit zásady kódu důvodu inventury, postupujte takto.
+### <a name="set-up-reason-codes-for-warehouses"></a>Nastavení kódů důvodů pro sklady
 
-1. Přejděte do části **Řízení zásob** \> **Nastavení** \> **Rozdělení zásob** \> **Sklady**.
-1. V podokně seznamu vyberte sklad.
-1. V podokně Akce na kartě **Sklad** ve skupině **Nastavení** vyberte **Zásada kódu důvodů inventury**. Poté v rozevíracím dialogovém okně **Přiřadit zásadu kódu důvodu inventury** proveďte jeden z těchto kroků:
+1. Zvolte postupně možnosti **Řízení zásob** \> **Nastavení** \> **Rozdělení zásob** \> **Sklady**.
+2. Na kartě **Sklad** v poli **Zásady kódu důvodů inventry** vyberte některou z následujících možností:
 
-    - Chcete-li pomocí nastavení zásady u každé položky určit, zda jsou pro ni deníky inventury povinné, nezadávejte žádnou hodnotu (nebo odstraňte stávající hodnotu).
-    - Chcete-li v denících inventury pro sklad vyžadovat kód důvodu, vyberte zásadu důvodu, kde je pole **Typ kódu důvodů inventury** nastaveno na *Povinný*.
-    - Když je kód důvodu v denících inventury pro sklad nepovinný, vyberte zásadu důvodu, kde je pole **Typ kódu důvodů inventury** nastaveno na *Volitelný*.
+    - **Prázdné** – Parametr, který je nastaven pro položku, se používá k určení, zda deníky inventur jsou pro produkt povinné.
+    - **Povinné** – Kód důvodu je vyžadován vždy na denících inventury pro sklad.
+    - **Volitelné** – Kód důvodu není vyžadován na denících inventury pro sklad.
 
-### <a name="assign-counting-reason-code-policies-to-products"></a>Přiřazení zásad kódu důvodu inventury k produktům
+### <a name="set-up-reason-codes-for-products"></a>Nastavení kódů důvodů pro produkty
 
-Chcete li k produktu přiřadit zásady kódu důvodu inventury, postupujte takto.
+1. Zvolte **Řízení informací o produktech** \> **Produkty** \> **Uvolněné produkty**.
+2. Na kartě **Produkt** vyberte **Zásady kódu důvodů inventry** a poté vyberte některou z následujících možností:
 
-1. Přejděte na **Řízení informací o produktech** \> **Produkty** \> **Uvolněné produkty**.
-1. V mřížce vyberte produkt.
-1. V podokně Akce na kartě **Produkt** ve skupině **Nastavení** vyberte **Zásada kódu důvodů inventury**. Poté v rozevíracím dialogovém okně **Přiřadit zásadu kódu důvodu inventury** proveďte jeden z těchto kroků:
+    - **Prázdné** – Parametr, který je nastaven pro sklad, se používá k určení, zda deníky inventur jsou pro produkt povinné.
+    - **Povinné** – Kód důvodu je vyžadován vždy na denících inventury pro produkt. Toto nastavení přepíše všechna nastavení kódu důvodu na úrovni skladu.
+    - **Volitelné** – Kód důvodu není vyžadován na denících inventury pro produkt. Toto nastavení přepíše všechna nastavení kódu důvodu na úrovni skladu.
 
-    - Chcete-li pomocí nastavení zásady u každého skladu určit, zda jsou deníky inventury pro produkt povinné, nezadávejte žádnou hodnotu (nebo odstraňte stávající hodnotu).
-    - Chcete-li v denících inventury pro produkt vyžadovat kód důvodu, vyberte zásadu důvodu, kde je pole **Typ kódu důvodů inventury** nastaveno na *Povinný*. Toto nastavení přepíše všechna nastavení kódu důvodu na úrovni skladu.
-    - Když je kód důvodu v denících inventury pro produkt nepovinný, vyberte zásadu důvodu, kde je pole **Typ kódu důvodů inventury** nastaveno na *Volitelný*. Toto nastavení přepíše všechna nastavení kódu důvodu na úrovni skladu.
+### <a name="use-reason-codes-in-counting-journals"></a>Použití kódů důvodů v deníku inventury
 
-### <a name="set-up-counting-reason-codes"></a>Nastavení kódů důvodu inventury
-
-Chcete-li nastavit kódy důvodu inventury, postupujte následujícím způsobem.
-
-1. Přejděte do nabídky **Řízení zásob** \> **Nastavení** \> **Zásoby** \> **Kódy důvodů inventury**.
-1. V podokně Akce vyberte možnost **Nový**. Tím se přidá řádek do mřížky.
-1. Nastavte pole **Kód důvodu inventury** a **Popis** pro nový řádek.
-1. Chcete-li přiřadit protiúčet, zadejte nebo vyberte hodnotu v poli **Protiúčet**.
-
-    > [!NOTE]
-    > Pokud je ke kódu důvodu inventury přiřazen protiúčet, je při zaúčtování do deníku inventury pod tímto kódem důvodu hodnota zaúčtována na přiřazený protiúčet namísto na výchozí profilový účet účtování inventáře.
-
-### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Nastavení skupin kódů důvodů inventury
-
-*Skupiny kódů důvodu inventury* lze použít jako součást položek nabídky *Příchozí úprava* a *Odchozí úprava* v mobilní aplikaci Warehouse Management pro omezení seznamu kódů důvodů inventury. (Další informace o skupinách kódů důvodu inventury najdete v článku [Nastavení položek nabídky mobilního zařízení pro příchozí a odchozí úpravu](#setup-adjustment-in-out) dále v tomto tématu.)
-
-1. Přejděte do nabídky **Řízení zásob** \> **Nastavení** \> **Zásoby** \> **Skupiny kódů důvodů inventury**.
-1. V podokně Akce vyberte možnost **Nový** a přidejte skupinu.
-1. Nastavte pole **Skupina důvodu inventury** a **Popis skupiny** pro novou skupinu.
-1. V podokně akcí vyberte **Uložit**.
-1. V části **Detaily** vyberte **Nový** na panelu nástrojů pro přidání řádku do mřížky. Poté nastavte pole **Kód důvodu inventury** pro nový řádek. 
-1. Opakováním předchozího kroku přiřadíte podle potřeby více kódů. Pokud musíte odebrat kód ze skupiny, vyberte ho a pak vyberte příkaz **Odstranit** na panelu nástrojů.
-
-### <a name="set-up-reason-codes-for-mobile-device-menu-items"></a>Nastavení kódů důvodu pro položky nabídky mobilního zařízení
-
-Kódy důvodu můžete konfigurovat pro následující typy úprav množství na skladě:
+V deníku inventur můžete přidat kódy důvodů pro inventury následujících typů:
 
 - Cyklická inventura
 - Místní inventura
@@ -130,92 +91,56 @@ Kódy důvodu můžete konfigurovat pro následující typy úprav množství na
 - Příchozí úprava
 - Odchozí úprava
 
-Ve většině případů můžete pro každou příslušnou položku nabídky mobilního zařízení definovat následující informace:
+Kódy důvodů jsou přidány do řádků deníku v denících inventur tyou **Deník inventur**.
+
+1. Zvolte **Řízení zásob** \> **Položky deníku** \> **Inventura zboží** \> **Inventura**.
+2. V podrobnostech řádku deníku inventury v poli **Kód důvodů inventury** vyberte možnost.
+
+### <a name="view-the-counting-history-as-its-recorded-by-reason-codes"></a>Zobrazení historie inventur, jak ji zanamenaly kódy důvodů
+
+- Vyberte **Řízení zásob** \> **Dotazy a sestavy** \> **Historie inventury** a pak v poli **Kód důvodů inventury** zobrazte historii inventury, která byla zaznamenána pomocí kódu důvodu.
+
+### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Použití kódu důvodů pro úpravu množství
+
+1. Na stránce **Zásoby na skladě** vyberte **Upravit množství**. Můžete otevřít stránku **Zásoby na skladě** několika způsoby. Například zvolte **Řízení zásob** \> **Dotazy a sestavy** \> **Zásoby na skladě**.
+2. Zvolte **Upravit množství** a pak v poli **Kód důvodů inventury** vyberte kód důvodu.
+
+### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Konfigurace kódů důvodů pro položky nabídky mobilního zařízení
+
+Můžete konfigurovat kódy důvodů pro jakýkoliv typ inventury na položce nabídky mobilního zařízení. Konfigurace položky nabídky mobilního zařízení obsahuje následující informace:
 
 - Zda je kód důvodu zobrazen pro pracovníka na mobilním zařízení při inventuře.
 - Výchozí kód důvodu, který se zobrazí na položce nabídky mobilního zařízení.
 - Zda uživatel může upravit kód důvodu.
 
-#### <a name="set-up-mobile-device-menu-items-for-a-counting-process"></a>Nastavení položek nabídky mobilního zařízení pro inventuru
+### <a name="set-up-reason-codes-on-a-mobile-device"></a>Nastavení kódů důvodů na mobilním zařízení
 
-Chcete-li nastavit položku nabídky mobilního zařízení pro inventuru, postupujte následujícím způsobem.
-
-1. Přejděte do **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
-1. V podokně seznamu vyberte příslušnou položku nabídky nebo vytvořte novou položku.
-1. V podokně Akce klikněte na možnost **Cyklická inventura**.
-1. V poli **Výchozí kód důvodů inventury** nastavte výchozí kód důvodu, který má být zaznamenán při provádění inventury pomocí položky nabídky mobilního zařízení.
-1. V poli **Zobrazit kód důvodů inventury** vyberte některou z následujících hodnot:
-
-    - *Řádek* – Po zaznamenání každé odchylky ukázat kód důvodu.
-    - *Skrýt* - Nezobrazit kód důvodu.
-
-1. Nastavením možnosti **Upravit kód důvodů inventury** na *Ano* umožníte pracovníkovi upravovat kód důvodu, když se zobrazí během inventury na mobilním zařízení. Nastavte možnost na *Ne*, když pracovník nesmí kód upravit.
+1. Přejděte do nabídky **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
+2. Na kartě **Cyklická inventura** zvolte **Cyklická inventura**.
+3. V poli **Výchozí kód důvodů inventury** nastavte výchozí kód důvodu, který má být zaznamenán po provedení inventury pomocí položky nabídky mobilního zařízení.
+4. V poli **Zobrazit kód důvodů inventury** vyberte **Řádek** pro zobrazení kódu důvodu poté, co je zaznamenána každá odchylka. Popřípadě zvolte **Skrýt**, pokud nemá být kód důvodu zobrazen.
+5. Nastavte možnost **Upravit kód důvodů inventury** buď na možnost **Ano** nebo **Ne**. Pokud tuto možnost nastavíte na **Ano**, pracovník může upravovat kód důvodu, když se zobrazí během inventury na mobilním zařízení.
 
 > [!NOTE]
-> Tlačítko **Cyklická inventura** může být povoleno na jakékoliv položce nabídky mobilního zařízení, na kterém lze provést inventuru. Příklady zahrnují položky nabídky pro místní inventury, práci řízenou uživatelem a práci řízenou systémem.
+> Tlačítko **Cyklická inventura** může být povoleno na jakékoliv položce nabídky mobilního zařízení, na kterém lze provést inventuru. Příklad zahrnuje položky nabídky pro místní inventury, práci řízenou uživatelem a práci řízenou systémem.
 
-#### <a name="set-up-mobile-device-menu-items-for-adjustment-in-and-adjustment-out"></a><a name="setup-adjustment-in-out"></a>Nastavení položek nabídky mobilního zařízení pro příchozí a odchozí úpravu
+## <a name="cycle-count-approvals"></a>Schválení cyklické inventury
 
-Chcete-li nastavit položku nabídky mobilního zařízení pro příchozí a odchozí úpravy, postupujte následujícím způsobem.
+Před schválením inventury uživatel může změnit kód důvodu, který je přidružen k inventuře. Po schválení inventury se zadává kód důvodu do řádků deníku inventur.
 
-1. Přejděte do **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení**.
-1. V podokně Akce vyberte možnost **Nová** a vytvořte novou položku nabídky.
-1. Nastavte pole **Název mobilní položky** a **Nadpis** pro novou položku nabídky.
-1. Nastavte pole **Režim** na *Práce*.
-1. Nastavte hodnotu možnosti **Použít stávající práci** na *Ne*.
-1. V poli **Proces pro vytvoření práce** vyberte *Příchozí úprava* nebo *Odchozí úprava*.
-1. Na záložce **Obecné** zadejte následující pole. (Všechna tato pole se přidají, když vyberete hodnotu *Příchozí úprava* nebo *Odchozí úprava* v poli **Proces tvorby práce**.)
+### <a name="modify-cycle-count-approvals"></a>Úprava schválení cyklické inventury
 
-    - **Použít průvodce procesem** – Když vytváříte proces *Odchozí úprava*, nezapomeňte tuto možnost nastavit na *Ano*. Pokud vytváříte proces *Odchozí úprava*, je tato možnost vždy nastavena na *Ano*.
-    - **Výchozí kód důvodů inventury** – Nastavte výchozí kód důvodu, který má být zaznamenán při provádění inventury pomocí položky nabídky mobilního zařízení.
-    - **Zobrazit kód důvodů inventury** – Vyberte některou z následujících hodnot:
+1. Vyberte **Řízení skladu** \> **Cyklická inventura** \> **Cyklická inventura práce čeká na kontrolu**.
+2. Zvolte **Cyklická inventura** a pak v poli **Kód důvodu** vyberte nový kód důvodu.
 
-        - *Řádek* – Po zaznamenání každé odchylky ukázat kód důvodu.
-        - *Skrýt* - Nezobrazit kód důvodu.
+### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Úprava položky nabídky mobilního zařízení pro příchozí a odchozí úpravu
 
-    - **Upravit kód důvodů inventury** – Nastavením této možnosti na *Ano* umožníte pracovníkovi upravovat kód důvodu, když se zobrazí během inventury na mobilním zařízení. Nastavte možnost na *Ne*, když pracovník nesmí kód upravit.
-    - **Skupina kódů důvodu inventury** – Chcete -li omezit seznam možností, který se zobrazí pracovníkům, vyberte skupinu kódů důvodu. Informace o tom, jak nastavit skupiny kódů důvodu, najdete v části [Nastavení skupin kódů důvodů inventury](#reason-groups) dříve v tomto tématu. 
+1. Vyberte **Řízení skladu** \> **Nastavení** \> **Mobilní zařízení** \> **Položky nabídky mobilního zařízení** a poté vyberte **Příchozí a odchozí úpravy**.
+2. Nastavte hodnotu možnosti **Použít stávající práci** na **Ne**.
+3. V poli **Proces pro vytvoření práce** vyberte **Příchozí úprava**.
 
-> [!NOTE]
-> Když přiřadíte skupinu kódů důvodu inventury k položkám nabídky *Příchozí úprava* a *Odchozí úprava* a možnost **Použít průvodce procesem** je nastavena na *Ano*, získáte omezený seznam kódů důvodu inventury jako součást zpracování v mobilní aplikaci Warehouse Management.
->
-> Možnost **Použít průvodce procesem** může také pomoci zabránit tomu, aby k velkému množství úprav došlo omylem. (Pracovník může například omylem naskenovat čárový kód čísla položky namísto hodnoty množství.) Chcete -li nastavit tuto funkci, nastavte možnost **Použít průvodce procesem** na *Ano* pro každou příslušnou položku nabídky. Pak přejděte na nabídku **Správa skladu \> Nastavení \> Pracovník** a nastavte pole **Limit množství úpravy** pro každého příslušného skladníka, a určete tak maximální množství úpravy, které může pracovník zaregistrovat.
+Následující pole budou přidána do položky nabídky mobilního zařízení, když je během procesu vytváření práce vybrána **Příchozí úprava** nebo **Odchozí úprava**:
 
-## <a name="processing-that-uses-counting-reason-codes"></a>Zpracování, které používá kódů důvodu inventury
-
-Když pracovníci používají mobilní aplikaci Warehouse Management, kódy důvodu se zaznamenávají. Pokud nebyl definován proces schvalování inventury, zaznamenané kódy důvodu jsou okamžitě použity jako součást účtování deníku inventury, které následuje.
-
-### <a name="cycle-count-approvals"></a>Schválení cyklické inventury
-
-Před schválením inventury může pracovník změnit kód důvodu, který je přidružen k inventuře. Po schválení inventury se zadává kód důvodu do řádků deníku inventur.
-
-#### <a name="modify-reason-codes-for-cycle-count-approvals"></a>Úprava kódů důvodu pro schválení cyklické inventury
-
-Chcete-li změnit schválení cyklické inventury, postupujte podle následujících pokynů.
-
-1. Přejděte do nabídky **Řízení skladu** \> **Cyklická inventura** \> **Cyklická inventura práce čeká na kontrolu**.
-1. V mřížce vyberte cyklickou inventuru.
-1. V podokně akcí na kartě **Práce** zvolte **Cyklická inventura**. Poté v poli **Kód důvodu** vyberte nový kód důvodu.
-
-Kódy důvodů jsou přidány do řádků deníku v denících inventur tyou *Deník inventur*.
-
-1. Přejděte do nabídky **Řízení zásob** \> **Položky deníku** \> **Inventura zboží** \> **Inventura**.
-2. V podrobnostech řádku deníku inventury vyberte v poli **Kód důvodu inventury** kód důvodu, který odpovídá vaší aktuální situaci.
-
-### <a name="view-the-reason-codes-recorded-in-the-counting-history"></a>Zobrazení zaznamenaných kódů důvodu v historii inventury
-
-Chcete-li zobrazit kódy důvodu, které byly zaznamenány v historii inventury, postupujte takto.
-
-1. Přejděte na **Řízení zásob** \> **Dotazy a sestavy** \> **Historie inventury**.
-1. Vyberte záznam počtu položek v podokně seznamu.
-1. V poli **Kód důvodu inventury** uvidíte historii inventury, která byla zaznamenána prostřednictvím kódu důvodu.
-
-### <a name="use-reason-codes-for-quantity-adjustment-or-online-counting"></a>Použití kódů důvodu k úpravě množství nebo online inventuře
-
-Chcete-li použít kód důvodu pro úpravu množství nebo online inventuru, postupujte takto.
-
-1. Přejděte na **Řízení zásob \> Dotazy a sestavy \> Zásoby na skladě**.
-1. V podokně akcí zvolte **Úprava množství**.
-1. Vyberte možnost **Úprava množství** a pak v poli **Kód důvodů inventury** vyberte kód důvodu.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- Výchozí kód důvodů inventury
+- Zobrazit kód důvodů inventury
+- Upravit kód důvodů inventury

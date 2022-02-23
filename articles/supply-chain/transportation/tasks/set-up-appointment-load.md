@@ -1,25 +1,28 @@
 ---
 title: Naplánování události pro vytížení
 description: Tato procedura ukazuje, jak nastavit a naplánovat událostí překladiště pro vytížení.
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ad9002f540d79a2c5a6e3054bda4ed71119ce5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: eaf3acda7e56df1af41e91809387644778d2cf3f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571202"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423598"
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>Naplánování události pro vytížení
 
@@ -44,6 +47,3 @@ Tato procedura ukazuje, jak nastavit a naplánovat událostí překladiště pro
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

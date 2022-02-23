@@ -2,23 +2,26 @@
 title: Vygenerování dokladu převodu pro interní převod zásob
 description: Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d59521f9647025fb794cd2098782f524f5e1e1c47b98d4c7fca6ff7c50e525f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cb0d3d51bf30717f05a4daf1a098565d5d48621
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780314"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441181"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Vygenerování dokladu převodu pro interní převod zásob
 
@@ -71,6 +74,3 @@ Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zbož
 10. Klepněte na Dodací list.
 11. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

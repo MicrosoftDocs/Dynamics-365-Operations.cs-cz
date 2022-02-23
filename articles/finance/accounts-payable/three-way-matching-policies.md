@@ -2,25 +2,28 @@
 title: Zásady třícestného párování
 description: Toto téma obsahuje příklady třícestného párování.
 author: abruer
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722832"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441102"
 ---
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
@@ -28,7 +31,8 @@ ms.locfileid: "6722832"
 
 Toto téma obsahuje příklady třícestného párování.
 
-## <a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
+<a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
+-------------------------------------
 
 **Souhrn:** Ken bude kontrolor v sídle společnosti právnické osoby Fabrikam. Ken se rozhodne, že všechny faktury dodavatele, které jsou založeny na nákupních objednávkách, budou párovány s řádky nákupní objednávky (dvoucestné párování). Pro nákupy položek, které budou použity jako dlouhodobý majetek, by faktury měly být spárovány s řádky nákupní objednávky i řádky příjemky produktu (třícestné párování).
 
@@ -38,7 +42,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 -   Ken bude kontrolor pro společnost Fabrikam. Pomáhá osobám v organizaci při identifikaci a nápravě problémů s objednáváním, příjem a placením položek (zboží a služby) od dodavatelů.
 -   Phyllis a April jsou účetní vedoucí v oddělení závazků pro USA divizi společnosti Fabrikam. Mohou vynutit zásady společnosti a ujistit se, že faktury jsou zaplaceny až poté, co jsou faktury porovnávány s nákupní objednávkou a příjmem zboží a služeb (kde je to vhodné).
--   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. Spolu s ostatními výrobními pracovníky může zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
+-   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. On a ostatní výrobní pracovníci mohou zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
 
 ### <a name="prerequisites"></a>Předpoklady
 
@@ -48,9 +52,9 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 -   Ken nastaví zásady párování na úrovni položky pro položku 1500 – zařízení CNC Milicron na třícestné párování. Tato položka je položkou majetku použitou pro výrobu ve společnosti Fabrikam. Faktury pro tuto položku jsou pak spárovány s řádky nákupní objednávky s ohledem na ceny a příjemky produktů na množství.
 -   Tony zadá požadavek pro pět zařízení CNC Milicron. Alicia, úředník pro nákupní objednávky ve společnosti Fabrikam, vystaví nákupní objednávku právnické osobě s názvem Contoso s cílem zadat položky.
 
-    | Č. položky                 | Množství | Jedn. cena | Čistá částka | Kód nákladů        | Hodnota nákladů |
+    | Číslo zboží                 | Množství | Jednotková cena | Čistá částka | Kód nákladů        | Hodnota nákladů |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – zařízení CNC Milicron | 5        | 8 000,00   | 40 000,00  | Expedice a zpracování | 3,000.00      |
+    | 1500 – zařízení CNC Milicron | 5        | 8 000,00   | 40 000,00  | Expedice a zpracování | 3 000,00      |
 
 -   Arnie, úředník pohledávek ve společnosti Contoso, prověří dodávky pro daný týden. Arnie vybere transakce dodávky pro fakturaci společnosti Fabrikam v rámci dodání zařízení CNC Milicron. Arnie zahrne náklady na expedici a zpracování. Společnost Fabrikam zváží přidání poplatků jako součást nákladů na majetek.
 
@@ -65,7 +69,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 Papírová faktura ze společnosti Contoso obsahuje následující informace.
 
-| Zboží                        | Množství | Jedn. cena | Čistá částka |
+| Položka                        | Množství | Jednotková cena | Čistá částka |
 |-----------------------------|----------|------------|------------|
 | 1500 – zařízení CNC Milicron | 5        | 8 100,00   | 40,500.00  |
 | Expedice a zpracování       |          |            | 4,000.00   |
@@ -114,7 +118,7 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 Papírová faktura ze společnosti Contoso obsahuje následující informace.
 
-| Zboží                  | Množství | Jedn. cena | Čistá částka |
+| Položka                  | Množství | Jednotková cena | Čistá částka |
 |-----------------------|----------|------------|------------|
 | PH2500 – Počítač     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – bezdrátová myš | 2        | 41.00      | 82.00      |
@@ -141,6 +145,3 @@ Další informace naleznete v tématu [Přehled párování faktur závazků](ac
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

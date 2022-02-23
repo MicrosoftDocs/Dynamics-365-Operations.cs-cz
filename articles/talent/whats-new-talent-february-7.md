@@ -58,6 +58,3 @@ Při změně práce na pozici bude nyní ve výchozím nastavení **Skupina prac
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Zlepšení výkonu při vykreslování pracovního prostoru
 Karta analýzy na pracovních prostorech se nyní načte pouze pří přístupu na tyto stránky. Během úvodního vykreslování stránky v levém horním rohu stránky se zobrazí indikátor.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

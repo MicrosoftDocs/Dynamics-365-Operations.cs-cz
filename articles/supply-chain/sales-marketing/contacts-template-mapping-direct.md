@@ -1,50 +1,53 @@
 ---
 title: Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakty (Odběratelé) z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528942"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci tabulek Kontakt (Kontakty) a Kontakty (Odběratelé) přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
+Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci entit Kontakt (Kontakty) a Kontakty (Odběratelé) přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
 Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty** a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
-K synchronizaci tabulek Kontakt (Kontakty) v aplikaci Sales a Kontakt (Odběratelé) v aplikaci Supply Chain Management slouží následující šablony a základní úkoly:
+K synchronizaci entit Kontakt (Kontakty) v aplikaci Sales a Kontakt (Odběratelé) v aplikaci Supply Chain Management slouží následující šablony a základní úkoly:
 
 - **Názvy šablon v integraci dat**
 
@@ -62,7 +65,7 @@ Následující úkol synchronizace je požadován před tím, než může dojít
 
 | Prodej.    | Správa dodavatelsko-odběratelského řetězce |
 |----------|------------------------|
-| Kontakty | Dataverse kontakty           |
+| Kontakty | CDS kontakty           |
 | Kontakty | Zákazníci V2           |
 
 ## <a name="entity-flow"></a>Tok entity
@@ -76,13 +79,13 @@ Kontakt v aplikaci Sales se může stát buď kontaktem nebo odběratelem v apli
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Řešení Potenciální zákazník pro hotovost v aplikaci Sales
 
-Do kontaktu byl přidán nový sloupec **Je aktivní odběratel**. Tento sloupec slouží k rozlišení kontaktů, které mají prodejní aktivitu, a kontaktů, které nemají prodejní aktivitu. Hodnota **Je aktivní odběratel** je nastavena na **Ano** pouze pro kontakty, které obsahují odpovídající nabídky, objednávky nebo faktury. V aplikaci Supply Chain Management jsou jako odběratelé synchronizováni pouze tyto kontakty.
+Do kontaktu bylo přidáno nové pole **Je aktivní odběratel**. Toto pole slouží k rozlišení kontaktů, které mají prodejní aktivitu, a kontaktů, které nemají prodejní aktivitu. Hodnota **Je aktivní odběratel** je nastavena na **Ano** pouze pro kontakty, které obsahují odpovídající nabídky, objednávky nebo faktury. V aplikaci Supply Chain Management jsou jako odběratelé synchronizováni pouze tyto kontakty.
 
-Do kontaktu byl přidán nový sloupec **IsCompanyAnAccount**. Tento sloupec označuje, zda je kontakt propojen se společností (nadřazený účet/kontakt) typu **Účet**. Tyto informace slouží k identifikaci kontaktů, které mají být synchronizovány s aplikací Supply Chain Management jako kontakty.
+Do kontaktu bylo přidáno nové pole **IsCompanyAnAccount**. Toto pole označuje, zda je kontakt propojen se společností (nadřazený účet/kontakt) typu **Účet**. Tyto informace slouží k identifikaci kontaktů, které mají být synchronizovány s aplikací Supply Chain Management jako kontakty.
 
-Do kontaktu byl přidán nový sloupec **Číslo kontaktu** pro pomoc se zaručením přirozeného a jedinečného klíče pro integraci. Po vytvoření nového kontaktu je automaticky generována hodnota **Číslo kontaktu** pomocí číselné řady. Hodnota se skládá z údaje **CON** a následně dalšího čísla číselné řady, a pak přípony šest znaků. Tady je příklad: **CON-01000-BVRCPS**
+Do kontaktu bylo přidáno nové pole **Číslo kontaktu** pro pomoc se zaručením přirozeného a jedinečného klíče pro integraci. Po vytvoření nového kontaktu je automaticky generována hodnota **Číslo kontaktu** pomocí číselné řady. Hodnota se skládá z údaje **CON** a následně dalšího čísla číselné řady, a pak přípony šest znaků. Tady je příklad: **CON-01000-BVRCPS**
 
-Když je pro aplikaci Sales použito integrační řešení, skript pro upgrade nastaví sloupec **Číslo kontaktu** pro existující kontakty pomocí číselné řady, o které jsme mluvili dříve. Skript pro upgrade nastaví také hodnotu ve sloupci **Je aktivní zákazník** na **Ano** u všech kontaktů, které mají aktivitu prodeje.
+Když je pro aplikaci Sales použito integrační řešení, skript pro upgrade nastaví pole **Číslo kontaktu** pro existující kontakty pomocí číselné řady, o které jsme mluvili dříve. Skript pro upgrade nastaví také hodnotu v poli **Je aktivní zákazník** na **Ano** u všech kontaktů, které mají aktivitu prodeje.
 
 ## <a name="in-supply-chain-management"></a>V Supply Chain Management
 
@@ -92,7 +95,7 @@ Kontakty jsou označeny pomocí vlastnosti **IsContactPersonExternallyMaintained
 
 ### <a name="contact-to-customer"></a>Kontakt na odběratele
 
-- **Skupina odběratelů** je požadována v Supply Chain Management. Aby nedocházelo k chybám synchronizace, můžete zadat výchozí hodnotu v mapování. Tato výchozí hodnota se pak použije, pokud sloupec v aplikaci Sales zůstane prázdný.
+- **Skupina odběratelů** je požadována v Supply Chain Management. Aby nedocházelo k chybám synchronizace, můžete zadat výchozí hodnotu v mapování. Tato výchozí hodnota se pak použije, pokud pole v aplikaci Sales zůstane prázdné.
 
     Výchozí hodnota šablony je **10**.
 
@@ -115,15 +118,15 @@ Kontakty jsou označeny pomocí vlastnosti **IsContactPersonExternallyMaintained
 Na následujícím obrázku je příklad mapování šablony v integraci dat. 
 
 > [!NOTE]
-> Mapování ukazuje, jaké informace o sloupci budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
+> Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
 
-### <a name="contact-to-contact-example"></a>Příklad kontaktu na kontakt
+### <a name="contact-to-contact"></a>Kontakt na kontakt
 
-![Mapování šablony kontaktu na kontakt v integrátoru dat.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integrátoru dat](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer-example"></a>Příklad kontaktu na odběratele
+### <a name="contact-to-customer"></a>Kontakt na odběratele
 
-![Mapování šablony kontaktu na odběratele v integrátoru dat.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Mapování šablony v integrátoru dat](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Související témata
@@ -139,6 +142,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

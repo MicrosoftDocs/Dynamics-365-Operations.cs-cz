@@ -2,23 +2,26 @@
 title: Vylepšení pokladního místa (POS) pro serializované produkty
 description: Toto téma uvádí seznam vylepšení, která byla provedena pro serializované produkty, abyste ušetřili čas a byli produktivnější.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b988e8046fadad4579a12966a5031929202e7411f00ca8e0de149380ddb34fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3a6a2b713e5fe1fe22ae886080945e7a87c9b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741749"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410900"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Vylepšení pokladního místa (POS) pro serializované produkty
 
@@ -39,6 +42,3 @@ Na základě nastavení v centrále velkoobchodu lze produkty klasifikovat jako 
 - **Sériová čísla nejsou povinná pro zadání objednávek odběratelů** – Objednávky odběratelů lze zadat do jednoho obchodu a provést jejich plnění z jiného obchodu. Pokladník, který zadává objednávku odběratele, nemusí zadat sériové číslo. Sériové číslo bude zadáno v průběhu kroku výdeje nebo vyskladnění. Sériové číslo však musí být zadáno pro všechny položky řádku, pro které je zvolen typ doručení **Provedení**. V opačném případě transakci nelze dokončit.
 - **Serializované produkty nejsou agregovány na obrazovce transakce** – Nastavení **Agregovat produkty** ve skupině polí **Terminál** na stránce **Funkční profil** umožňuje seskupovat stejné neserializované výrobky na obrazovce transakce. Při seskupení stejných produktů jsou lépe viditelné v mřížce transakcí. Nicméně vzhledem k tomu, že sériová čísla jsou zpravidla jedinečná a zaměstnanci obchodu nemusí zadávat sériová čísla až do okamžiku přechodu k pokladně, nastavení **Agregovat produkty** se nepoužívá pro serializované produkty. Proto serializované produkty nebude agregovány na obrazovce transakce, pokud zvolíte nastavení **Agregovat produkty**.
 - **Možnosti vyhledávání v denících podle sériového čísla** – deníky lze nyní prohledávat podle sériových čísel. Otevřete operaci Deníky a stiskněte tlačítko Rozšířené vyhledávání na panelu aplikací. Pomocí tlačítka Přidat filtr lze použít filtr také na vyhledávání sériových čísel.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

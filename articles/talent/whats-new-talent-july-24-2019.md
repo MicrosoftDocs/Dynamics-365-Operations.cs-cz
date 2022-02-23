@@ -78,6 +78,3 @@ Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podř
 S radostí oznamujeme, že od 1. srpna 2019 bude Talent k dispozici pro Kanadu a jihovýchodní Asii. Tato změna umožňuje vytvářet prostředí v kanadských a asijských oblastech a všechna data aplikace Talent budou zachována pouze v těchto umístěních. Prostředí v těchto nových oblastech můžete vytvořit výběrem umístění v dialogovém okně Nové prostředí a použitím tohoto prostředí ke zřizování aplikace v rámci LCS, jak je popsáno zde: [Zřizování aplikace Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Migrace dat existujících projektů z jiných oblastí do kanadských a asijských oblastí není podporována. Pro tyto nové podporované oblasti lze zřizovat pouze nové projekty.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

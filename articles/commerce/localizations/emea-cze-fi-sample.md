@@ -1,27 +1,35 @@
 ---
 title: Ukázka integrace fiskální služby pro Českou republiku
-description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
-author: EvgenyPopovMBS
-ms.date: 12/20/2021
+description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku.
+author: josaw
+manager: annbe
+ms.date: 05/16/2019
 ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: epopov
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.search.region: Czech Republic
+ms.search.industry: Retail
+ms.author: josaw
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 990de96f57f4a22b4d58da5f970b1b96f5fc21f5
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 4a6a9f182c28e6f256d4cd8629bcada0d60f5140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077083"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407610"
 ---
-# <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
+# <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
+
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
+## <a name="introduction"></a>Úvod
 
 Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Dynamics 365 Commerce pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) od [EFSTA](https://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
 
@@ -54,6 +62,22 @@ Následující scénáře uvádějí vzorek integrace fiskální registrační s
     - Přeskočte daňovou registraci nebo označte transakci jako registrovanou a zahrňte informační kódy pro zaznamenání důvodu chyby a dalších informací.
     - Zkontrolujte dostupnost služby daňové registrace, dříve než otevřete novou transakci prodeje nebo ji dokončíte.
 
+### <a name="default-data-mapping"></a>Výchozí mapování dat
+
+Následující výchozí mapování dat je součástí konfigurace poskytovatele fiskálního dokumentu, který je poskytován jako fiskální vzorek integrace.
+
+- Mapování sazeb daně z přidané hodnoty (DPH):
+
+    *A: 21,00; B: 15,00; C: 10,00; Z: 0,00*
+
+- Výchozí mapování skupiny DPH. Jakékoli částky DPH, které nelze mapovat na některou z předem určených skupin DPH, budou připsány výchozí (základní) skupině DPH:
+
+    *O*
+
+- Vložte zálohu mapování skupiny DPH. Částky zálohy odběratele a zálohy objednávky odběratele budou připsány skupině DPH zálohy:
+
+    *Z*
+
 ### <a name="gift-cards"></a>Dárkové poukazy
 
 Ukázka integrace daňové registrační služby implementuje následující pravidla související s dárkovými poukazy.
@@ -78,7 +102,7 @@ Pokud se nezdaří službě daňové registrace přenášet data transakce fisk�
 
 Služba daňové registrace podporuje pouze scénáře, kde je součástí ceny daň z prodeje. Proto musí být možnost **Ceny zahrnují DPH** nastavena na **Ano** pro obchody a odběratele.
 
-## <a name="set-up-commerce-for-the-czech-republic"></a>Natavení aplikace Commerce pro Českou republiku
+## <a name="set-up-commerce-for-czech-republic"></a>Natavení aplikace Commerce pro Českou republiku
 
 Tato část popisuje nastavení Commerce, která jsou specifická a doporučená pro Českou republiku. Další informace naleznete v tématu [Domovská stránka Commerce](../index.md).
 
@@ -89,10 +113,11 @@ Chcete-li použít funkci specifickou pro Českou republiku, je nutné zadat ná
 
 Zadejte také následující nastavení pro Českou republiku. Po dokončení instalace musíte spustit příslušné distribuční úlohy.
 
-### <a name="set-up-vat-per-czech-republic-requirements"></a>Nastavení DPH dle požadavků pro Českou republiku
+### <a name="set-up-vat-per-czech-republic"></a>Nastavení DPH pro Českou republiku
 
 
-Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití funkcí DPH získáte v části [Přehled DPH](../../finance/general-ledger/indirect-taxes-overview.md).
+Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití funkcí DPH získáte v části [Přehled DPH](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 ### <a name="set-up-stores"></a>Nastavení obchodů
 
@@ -131,8 +156,8 @@ Přidejte následující štítky POS do oddílu **POS** v poli **Jazykový text
 |-------------|---------|------------------------|
 | cs       | 900001  | ID provozovny/pokladny |
 | cs       | 900002  | BKP                    |
-| cs       | 900003  | PKP                    |
-| cs       | 900004  | FIK                    |
+| cs       | 900003  | FIK                    |
+| cs       | 900004  | PKP                    |
 | cs       | 900005  | Informace                   |
 | cs       | 900006  | Pořadové číslo        |
 
@@ -144,11 +169,8 @@ Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastn�
 | SEC                  | Účtenka | 900002          |
 | SIGN                 | Účtenka | 900003          |
 | FISCAL               | Účtenka | 900004          |
-| INFO                 | Příjemka | 900005          |
-| CONTINUOUSNUMBER     | Příjemka | 900006          |
-
-> [!NOTE]
-> Je důležité, abyste zadali správné názvy vlastních polí, jak jsou uvedeny v předcházející tabulce. Nesprávný název vlastního pole způsobí chybějící data v příjemkách.
+| INFO                 | Účtenka | 900005          |
+| CONTINUOUSNUMBER     | Účtenka | 900006          |
 
 ### <a name="configure-receipt-formats"></a>Konfigurace formátů příjemky
 
@@ -179,147 +201,177 @@ V Návrháři formátu příjemky přidejte následující vlastní pole do př�
 
 Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu [Nastavení a návrh formátů příjmu](../receipt-templates-printing.md).
 
-## <a name="set-up-fiscal-integration-for-the-czech-republic"></a>Nastavení fiskální integrace pro Českou republiku
+### <a name="configure-fiscal-integration"></a>Konfigurace fiskální integrace
 
-Ukázka integrace služby fiskální registrace pro Českou republiku je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení Commerce Runtime (CRT) a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
+Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro kanály Commerce](setting-up-fiscal-integration-for-retail-channel.md).
 
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Českou republiku (starší verze)](emea-cze-fi-sample-sdk.md).
->
-> Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+- [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Všimněte si také nastavení pro proces fiskální registrace, který je [specifický pro tuto ukázku služby fiskální registrace](#set-up-the-registration-process).
+- [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Povolit ruční provedení zápisu odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
-Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro kanály Commerce](setting-up-fiscal-integration-for-retail-channel.md):
+## <a name="deployment-guidelines-for-cash-registers-for-czech-republic"></a>Pokyny k nasazení registračních pokladen pro Českou republiku
 
-1. [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Kromě toho si všimněte nastavení pro proces fiskální registrace, který je [specifický pro tuto ukázku služby fiskální registrace](#set-up-the-registration-process).
-1. [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Povolit ruční provedení zápisu odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-1. [Konfigurace komponent kanálu](#configure-channel-components).
+Ukázka integrace fiskální služby pro Českou republiku je součástí sady Retail SDK. Informace o instalaci a použití sady Retail SDK naleznete v tématu [Architektura sady Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+
+Tento příklad sestává z rozšíření pro CRT a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Azure DevOps, kde žádné soubory nebyly dosud změněny.
+
+Tento postup slouží k nastavení vývojového prostředí, abyste mohli testovat a rozšířit vzorek.
+
+### <a name="enable-commerce-runtime-extensions"></a>Povolit rozšíření služby Commerce runtime
+
+Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení následujících postupů otevřete řešení CRT, **CommerceRuntimeSamples.sln**, v části **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+
+#### <a name="documentproviderefrsample-component"></a>Komponenta DocumentProvider.EFRSample
+
+1. Najděte projekt **Runtime.Extensions.DocumentProvider.EFRSample** a vytvořte ho.
+2. Ve složce **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll**.
+3. Zkopírujte soubor sestavení do složky rozšíření CRT:
+
+    - **Commerce Scale Unit::** Zkopírujte sestavení do složky **\\bin\\ext** v umístění serveru Microsoft Internet Information Services (IIS) Commerce Scale Unit.
+    - **Místní CRT v Modern POS:** Zkopírujte sestavení do složky **\\ext** v umístění místního makléře klienta CRT.
+
+4. Najděte konfigurační soubor rozšíření pro CRT:
+
+    - **Commerce Scale Unit:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Commerce Scale Unit:.
+    - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
+
+5. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
+    ```
+
+#### <a name="documentproviderdatamodelefr-component"></a>Komponenta DocumentProvider.DataModelEFR
+
+1. Najděte projekt **Runtime.Extensions.DocumentProvider.DataModelEFR** a vytvořte ho.
+2. Ve složce **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** vyhledejte soubor sestavení **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**.
+3. Zkopírujte soubor sestavení do složky rozšíření CRT:
+
+    - **Commerce Scale Unit::** Zkopírujte sestavení do složky **\\bin\\ext** v umístění serveru Commerce Scale Unit.
+    - **Místní CRT v Modern POS:** Zkopírujte sestavení do složky **\\ext** v umístění místního makléře klienta CRT.
+
+4. Najděte konfigurační soubor rozšíření pro CRT:
+
+    - **Commerce Scale Unit:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Commerce Scale Unit:.
+    - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
+
+5. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+    ```
+
+#### <a name="update-extension-configuration-file"></a>Aktualizace konfiguračního souboru rozšíření
+
+1. Najděte konfigurační soubor rozšíření pro CRT:
+
+    - **Commerce Scale Unit:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Commerce Scale Unit:.
+    - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
+
+2. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
+    ```
+
+### <a name="enable-hardware-station-extensions"></a>Povolení rozšíření hardwarové stanice
+
+Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarové stanice. Pro dokončení následujících postupů otevřete řešení CRT, **HardwareStationSamples.sln** v části **RetailSdk\\SampleExtensions\\HardwareStation**.
+
+#### <a name="efrsample-component"></a>Komponenta EFRSample
+
+1. Najděte projekt **HardwareStation.Extension.EFRSample** a vytvořte ho.
+2. Ve složce **Extension.EFRSample\\bin\\Debug** vyhledejte následující soubory:
+
+    - Sestavení **Contoso.Commerce.HardwareStation.EFRSample.dll**
+    - Sestavení **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**
+
+3. Zkopírujte soubory sestavení do složky rozšíření hardwarové stanice:
+
+    - **Sdílená hardwarové stanice:** Zkopírujte složku **bin** pod umístění webu hardwarové stanice IIS.
+    - **Vyhrazená hardwarová stanice pro Modern POS:** Zkopírujte soubory do stanice zprostředkovatele klienta Modern POS.
+
+4. Najděte konfigurační soubor rozšíření hardwarová stanice. Název souboru je **HardwareStation.Extension.config**.
+
+    - **Sdílená hardwarové stanice:** Soubor se nachází pod umístěním webu hardwarové stanice IIS.
+    - **Vyhrazená hardwarová stanice pro Modern POS:** Soubor se nachází ve stanici zprostředkovatele klienta Modern POS.
+
+5. Přidejte následující řádek do oddílu **composition** konfiguračního souboru.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
+    ```
 
 ### <a name="set-up-the-registration-process"></a>Nastavení procesu registrace
 
-Pokud chcete povolit registrační proces, postupujte pomocí následujících kroků pro nastavení centrály Commerce. Další informace viz [Nastavení fiskální integrace pro obchodní kanály](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
-
-1. Stáhněte si konfigurační soubory pro poskytovatele fiskálních dokumentů a fiskální konektor:
-
-    1. Otevřete úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace (například **[vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
-    1. Otevřete **src \> FiscalIntegration \> Efr**.
-    1. Stáhněte si konfigurační soubor poskytovatele fiskálních dokumentů v umístění **Configurations \> DocumentProviders \> DocumentProviderFiscalEFRSampleCzech.xml** (například [soubor k vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleCzech.xml)).
-    1. Stáhněte si konfigurační soubor fiskálního konektoru v umístění **Configurations \> Connectors \> ConnectorEFRSample.xml** (například [soubor k vydání/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
-
-    > [!WARNING]
-    > Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Konfigurační soubory pro tuto ukázku fiskální integrace jsou umístěny v následujících složkách Retail SDK na vývojářském virtuálním počítači v LCS:
-    >
-    > - **Konfigurační soubor poskytovatele fiskálních dokkumentů:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml
-    > - **Konfigurační soubor fiskálního konektoru:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml
-    > 
-    > Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
+Pokud chcete povolit registrační proces, postupujte pomocí následujících kroků pro nastavení Headquarters. Další informace naleznete v tématu [Nastavení fiskálního registračního procesu](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Sdílené parametry obchodu**. Na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a načtěte konfigurační soubor poskytovatele fiskálního dokumentu, který jste stáhli dříve.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory** a načtěte konfigurační soubor fiskálního konektoru, který jste stáhli dříve.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Funkční profily Connector**. Vytvořte nový funkční profil konektoru. Vyberte poskytovatele dokumentu a dříve načtený konektor. Podle potřeby aktualizujte [nastavení mapování dat](#default-data-mapping).
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily Connector**. Vytvořte nový technický profil konektoru a vyberte fiskální konektor, který jste načetli předtím. Podle potřeby aktualizujte [nastavení konektoru](#fiscal-connector-settings).
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálního konektoru**. Vytvořte novou skupinu fiskálního konektoru pro funkční profil konektoru, který jste vytvořili předtím.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace**. Vytvořte nový procesu daňové registrace a krok procesu fiskální registrace a vyberte skupinu fiskálního konektoru, kterou jste předtím vytvořili.
-1. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**. Vyberte funkční profil, který je připojena k obchodu, kde by měl být aktivován proces registrace. Na pevné záložce **Proces fiskální registrace** vyberte proces fiskální registrace, který jste předtím vytvořili.
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**. Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální tiskárna. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
-1. Spusťte plán distribuce (**Retail a Commerce \> IT Retail a Commerce \> plán distribuce**) a vyberte úlohy **1070** a **1090** k přenosu dat do databáze kanálů.
+2. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory** a vyhledejte konfiguraci konektoru. Umístění souboru je **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
+3. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálních dokumentů** a vyhledejte konfiguraci poskytovatele dokumentu. Konfigurační soubor je **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml**.
+4. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Funkční profily Connector**. Vytvořte nový funkční profil konektoru. Vyberte poskytovatele dokumentu a dříve načtený konektor. Aktualizujte nastavení mapování dat podle potřeby.
+5. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Technické profily Connector**. Vytvořte nový technický profil konektoru a vyberte konektor, který jste načetli předtím. Aktualizujte nastavení připojení podle potřeby.
+6. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálního konektoru**. Vytvořte novou skupinu fiskálního konektoru pro funkční profil konektoru, který jste vytvořili předtím.
+7. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace**. Vytvořte nový procesu daňové registrace, krok procesu fiskální registrace a vyberte skupinu fiskálního konektoru, kterou jste předtím vytvořili.
+8. Přejděte na **Maloobchodní a velkoobchodní prodej \> Instalace kanálu \> Nastavení POS \> Profily POS \> Funkční profily**. Vyberte funkční profil, který je připojena k obchodu, kde by měl být aktivován proces registrace. Na pevné záložce **Proces fiskální registrace** vyberte proces fiskální registrace, který jste předtím vytvořili.
+9. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**. Vyberte hardwarový profil spojený s hardwarovou stanicí, ke které bude připojena fiskální tiskárna. Na pevné záložce **Fiskální příslušenství** vyberte technický profil konektoru, který jste vytvořili dříve.
+10. Spusťte plán distribuce (**Retail a Commerce \> IT Retail a Commerce \> plán distribuce**) a vyberte úlohy **1070** a **1090** k přenosu dat do databáze kanálů.
 
-#### <a name="default-data-mapping"></a>Výchozí mapování dat
+### <a name="production-environment"></a>Produkční prostředí
 
-Následující výchozí mapování dat je součástí konfigurace poskytovatele fiskálního dokumentu, který je poskytován jako ukázka fiskální integrace:
+Předchozí postup umožňuje rozšíření, která jsou součástí ukázky integraci vzorku služby daňové registrace. Kromě toho musíte provést následující postup k vytvoření balíčků pro nasazení, které obsahují komponenty Commerce a použití těchto balíčků v produkčním prostředí.
 
-- **Mapování sazeb daně z přidané hodnoty (DPH).** – Mapování procentních hodnot daně, které jsou nastaveny pro kódy daně z prodeje, na atribut **TaxG** (daňová skupina) v požadavcích zasílaných fiskální službě. Zde je výchozí mapování:
+1. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets**.
 
-    ```
-    A: 21.00; B: 15.00; C: 10.00; Z: 0.00
-    ```
+    - V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádky do části **composition**.
 
-    První složka v každém páru představuje daňovou skupinu DPH, která je podporována službou fiskální registrace EFR. Druhá složka představuje odpovídající sazbu DPH. Další informace o skupinách DPH, které EFR podporuje pro Českou republiku, viz [Reference k EFR](https://public.efsta.net/efr/).
-
-- **Výchozí mapování skupiny DPH** – Jakékoli částky DPH, které nelze mapovat na některou z předem určených skupin DPH, budou připsány výchozí (základní) skupině DPH. Zde je výchozí mapování:
-
-    ```
-    A
-    ```
-
-- **Mapování skupiny DPH vkladu** – Částky zálohy odběratele a zálohy objednávky odběratele budou připsány skupině DPH zálohy. Zde je výchozí mapování:
-
-    ```
-    Z
-    ```
-
-#### <a name="fiscal-connector-settings"></a>Nastavení fiskálního konektoru
-
-Následující nastavení jsou součástí konfigurace fiskálního konektoru, který je poskytován jako ukázka fiskální integrace:
-
-- **Adresa koncového bodu** – adresa URL služby daňové registrace.
-- **Časový limit** – doba v milisekundách, po kterou bude fiskální konektor čekat na odpověď ze služby fiskální registrace.
-
-### <a name="configure-channel-components"></a>Konfigurace komponent kanálu
-
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Českou republiku (starší verze)](emea-cze-fi-sample-sdk.md).
->
-> Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
-
-#### <a name="set-up-the-development-environment"></a>Nastavení vývojového prostředí
-
-Tento postup slouží k nastavení vývojového prostředí, abyste mohli testovat a rozšířit ukázku.
-
-1. Naklonujte nebo stáhněte úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vyberte správnou verzi větve vydání podle vaší verze SDK/aplikace. Další informace viz [Stažení ukázek Retail SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Otevřete řešení EFR v umístění **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln** a sestavte jej.
-1. Nainstalujte rozšíření CRT:
-
-    1. Vyhledejte instalační program rozšíření CRT:
-
-        - **Commerce Scale Unit:** Ve složce **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** vyhledejte instalační program **ScaleUnit.EFR.Installer**.
-        - **Místní CRT v Modern POS:** Ve složce **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** vyhledejte instalační program **ModernPOS.EFR.Installer**.
-
-    1. Spusťte instalační program rozšíření CRT z příkazového řádku:
-
-        - **Commerce Scale Unit:**
-
-            ```Console
-            ScaleUnit.EFR.Installer.exe install --verbosity 0
-            ```
-
-        - **Místní CRT v Modern POS:**
-
-            ```Console
-            ModernPOS.EFR.Installer.exe install --verbosity 0
-            ```
-
-1. Instalace rozšíření hardwarové stanice:
-
-    1. Ve složce **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** vyhledejte instalační program **HardwareStation.EFR.Installer**.
-    1. Spusťte instalační program rozšíření z příkazového řádku:
-
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
+        ``` xml 
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
         ```
 
-#### <a name="production-environment"></a>Produkční prostředí
+    - V konfiguračním souboru **HardwareStation.Extension.config** přidejte následující řádek do oddílu **composition**.
 
-Postupujte podle kroků v části [Nastavení kanálu buildu pro ukázku fiskální integrace](fiscal-integration-sample-build-pipeline.md), kterými vygenerujete a uvolníte nasaditelné balíčky Cloud Scale Unit a samoobslužné nasaditelné balíčky pro ukázku fiskální integrace. Soubor YAML šablony **EFR build-pipeline.yml** se nachází ve složce **Pipeline\\YAML_Files** úložiště [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
+        ```
+
+2. Proveďte následující změny v konfiguračním souboru balíčku přizpůsobení **BuildTools\\Customization.settings**.
+
+    - Přidejte následující řádky pro zahrnutí rozšíření CRT do nasaditelných balíčků.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        ```
+
+    - Přidáte následující řádek pro zahrnutí rozšíření hardwarové stanice do balíčků pro nasazení.
+
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+        ```
+
+3. Spuste příkazový řádek MSBuild pro program Visual Studio a spusťte **msbuild** ve složce Retail SDK pro vytvoření balíčků k nasazení.
+4. Balíčky použijte pomocí služby Microsoft Dynamics Lifecycle Services (LCS) nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Proveďte všechny požadované úkoly nastavení, které jsou popsány v části [Nastavení Commerce pro Českou republiku](#set-up-commerce-for-czech-republic).
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
-
-Ukázka integrace služby fiskální registrace pro Českou republiku je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md) a je součástí řešení Retail SDK. Ukázka se nachází ve složce **src\\FiscalIntegration\\Efr** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (například [ukázka ve verzi/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Ukázka [se skládá](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) ze zprostředkovatele fiskálního dokumentu, což je rozšíření řešení CRT a fiskálního konektoru, který je rozšířením hardwarové stanice Commerce. Další informace o použití sady Retail SDK naleznete v části [Architektura Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md) a [Nastavení kanálu sestavení pro sadu SDK nezávislého balení](../dev-itpro/build-pipeline.md).
-
-> [!WARNING]
-> Kvůli omezením [nového modelu nezávislého balíčku a rozšíření](../dev-itpro/build-pipeline.md) jej v současné době nelze pro tuto ukázku fiskální integrace použít. Musíte použít předchozí verzi Retail SDK na vývojářském virtuálním počítači v LCS. Další informace viz [Pokyny k nasazení ukázkové fiskální integrace pro Českou republiku (starší verze)](emea-cze-fi-sample-sdk.md). Podpora nového modelu nezávislého balení a rozšíření pro vzorky fiskální integrace je plánována pro pozdější verze.
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu
 
 Účelem rozšíření je, ab poskytovatel daňového dokumentu generoval dokumenty specifické pro službu a zpracovával odpovědi z daňové registrační služby.
 
-#### <a name="request-handler"></a>Obslužná rutina požadavku
+Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EFRSample**.
 
+Podrobnější informace o návrhu řešení fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+
+#### <a name="request-handler"></a>Obslužná rutina požadavku
+    
 Existuje jedna obslužná rutina požadavku **DocumentProviderEFRFiscalCZE** pro zprostředkovatele dokumentu, která slouží ke generování fiskálních dokumentů pro službu daňové registrace.
 
-Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu zprostředkovatele zadanému v centrále Commerce.
+Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu zprostředkovatele, zadanému v Headquarters.
 
 Konektor podporuje následující požadavky.
 
@@ -329,17 +381,24 @@ Konektor podporuje následující požadavky.
 
 #### <a name="configuration"></a>Konfigurace
 
-Konfigurační soubor pro poskytovatele fiskálních dokumentů se nachází v umístění **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleCzech.xml** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Tento soubor slouží k povolení konfigurace nastavení zprostředkovatele fiskálního dokumentu z centrály Commerce. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace.
+Konfigurační soubor **DocumentProviderFiscalEFRSampleCzech** se nachází ve složce **Konfigurace** procesu rozšíření.
+Tento soubor slouží k povolení nastavení pro zprostředkovatele dokumentu ke konfiguraci z Headquarters. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace. Jsou přidána následující nastavení.
+
+- Mapování sazeb DPH
+- Výchozí skupina DPH
+- Skupina DPH zálohy
 
 ### <a name="hardware-station-extension-design"></a>Design rozšíření hardwarové stanice
 
-Účelem rozšíření je fiskální konektor určený ke komunikaci se službou daňové registrace. Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření  CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
+Účelem rozšíření je fiskální konektor určený ke komunikaci se službou daňové registrace.
+
+Rozšíření hardwarové stanice je **HardwareStation.Extension.EFRSample**. Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření  CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 
 Obslužná rutina požadavku **EFRHandler** je vstupní bod pro práci s požadavky služby daňové registrace.
 
-Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v centrále Commerce.
+Tato rutina je zděděna z rozhraní **INamedRequestHandler**. Metoda **HandlerName** je odpovědná za vrácení názvu obslužné rutiny. Název obslužné rutiny by měl odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v Headquarters.
 
 Konektor podporuje následující požadavky.
 
@@ -349,6 +408,7 @@ Konektor podporuje následující požadavky.
 
 #### <a name="configuration"></a>Konfigurace
 
-Konfigurační soubor pro fiskální konektor se nachází v umístění **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. Tento soubor slouží k povolení nastavení pro fiskální konektor ke konfiguraci z centrály Commerce. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace.
+Konfigurační soubor se nachází ve složce **Konfigurace** projektu rozšíření. Tento soubor slouží k povolení nastavení pro fiskální konektor ke konfiguraci z Headquarters. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace. Jsou přidána následující nastavení.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- **Adresa koncového bodu** – adresa URL služby daňové registrace.
+- **Časový limit** – doba v milisekundách, po kterou bude čekat ovladač na odpověď od služby daňové registrace.

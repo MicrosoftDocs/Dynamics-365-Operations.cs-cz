@@ -1,26 +1,28 @@
 ---
 title: Úvod do pracovních příkazů
 description: Toto téma obsahuje přehled pracovních příkazů v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3891ea08a484950d8fef57d6229117e90ed93a92ab800f9de3ad82db3aff956d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 378fc6d55deada95e94f91ed3f73f2518efbeb1f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754697"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021873"
 ---
 # <a name="introduction-to-work-orders"></a>Úvod do pracovních příkazů
 
@@ -51,7 +53,7 @@ Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všec
 
 Na následujícím obrázku je uveden stránky se seznamem **Všechny pracovní příkazy**.
 
-![Obrázek č. 1.](media/01-work-orders.png)
+![Obrázek č. 1](media/01-work-orders.png)
 
 Chcete-li zobrazit seznam pouze aktivních pracovních příkazů, vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Aktivní pracovní příkazy**. 
 
@@ -69,7 +71,7 @@ Zde je několik způsobů, jak můžete použít stránku **Všechny pracovní p
 
 Na následujícím obrázku je uveden příklad podrobného zobrazení **Všechny pracovní příkazy**.
 
-![Obrázek č. 2.](media/02-work-orders.png)
+![Obrázek č. 2](media/02-work-orders.png)
 
 
 Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabulka stručně popisuje tlačítka, která souvisejí se správou majetku:
@@ -116,6 +118,3 @@ Tlačítka ve skupině **Projekt** na kartě **Pracovní příkaz** v podokně a
 >[!NOTE]
 >Pokud chcete zahrnout prognózy vytvořené v pracovním příkazu při spuštění hlavního plánování pomocí modelu prognózy vybraného na stránce **Parametry správy majetku**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

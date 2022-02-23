@@ -1,30 +1,33 @@
 ---
 title: Převedení dlouhodobého majetku
 description: Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e573386ddbb97bf60e2e501ba92b225f8716c73a
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: eb38483d3ac61acb4513e87d8c36ddd0f8863a10
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883355"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441169"
 ---
 # <a name="transfer-a-fixed-asset"></a>Převedení dlouhodobého majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.  
+Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodobého majetku z jedné sady finančních dimenzí do nové sady finančních dimenzí.  Využívá účetní role a ukázková data pro právnické osoby USMF.
 
 1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
 2. V seznamu najděte a vyberte dlouhodobý majetek, který chcete přenést.
@@ -45,6 +48,3 @@ Tento průvodce záznamem úloh převede finanční informace pro knihu dlouhodo
     * Zkontrolujte výsledky před přenesením knih dlouhodobého majetku.  
 10. Klikněte na položku **Převod**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

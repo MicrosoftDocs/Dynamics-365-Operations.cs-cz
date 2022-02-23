@@ -66,6 +66,3 @@ Můžete si stáhnout PDF soubor se zeměmi, oblastmi a jazyky, které Talent po
 
 Pokud jste vývojáři a máte zájem o vytváření vlastních nastavení specifických pro zemi nebo oblast, nebo o vytváření řešení pro zemi nebo oblast, která není aktuálně podporována společností Microsoft, prohlédněte si část [Globalizace](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

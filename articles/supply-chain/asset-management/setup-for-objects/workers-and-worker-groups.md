@@ -1,10 +1,12 @@
 ---
 title: Pracovníci údržby a skupiny pracovníků
 description: Toto téma vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750117"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017385"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Pracovníci údržby a skupiny pracovníků
 
@@ -61,6 +63,3 @@ Můžete také vytvořit skupiny pracovníků údržby a přidružit k nim praco
 6. Pokud má skupina prostředků souviset s vybranou skupinou údržbářských pracovníků, vyberte možnost **Kopírovat ze skupiny prostředků**. V poli **Skupina** vyberte skupinu zdrojů, ze které chcete kopírovat nastavení kalendáře. Potom v poli **Skupina pracovníků** vyberte skupinu pracovníků, ke které chcete zkopírovat nastavení kalendáře skupiny prostředků. Tento krok je relevantní pouze v případě, že chcete, aby pracovníci údržby používali kalendář, který se vztahuje k prostředku (pracovnímu středisku) během plánování pracovního příkazu.
 
     Pole na pevné záložce **Podrobnosti** zobrazí počet pracovníků údržby a funkčních míst, které byly vytvořeny ve zvolené skupině pracovníků údržby.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

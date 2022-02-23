@@ -2,13 +2,16 @@
 title: Povolení doporučení přizpůsobeného produktu
 description: V tomto tématu je popsán způsob vytváření individuálních doporučení produktu pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74bf2c96d744b8101151be9288a956d46ce3b6885f0cb593dc1b78728b018fb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410754"
 ---
 # <a name="enable-personalized-recommendations"></a>Povolení přizpůsobených doporučení
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán způsob vytváření individuálních doporučení produktu pro zákazníky Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 V aplikaci Dynamics 365 Commerce mohou maloobchodní prodejci vytvářet přizpůsobená doporučení k produktu (označované také jako individuální nastavení). Tímto způsobem lze přičlenit individuální doporučení do online prostředí zákazníků a na pokladním místě (POS). Je-li funkce přizpůsobení zapnuta, může systém přidružit nákup a informace o produktu uživatele ke generování doporučení pro jednotlivé produkty.
 
@@ -50,7 +55,7 @@ Chcete-li zapnout přizpůsobení, postupujte následujícím způsobem.
 1. Vyberte funkci **Přizpůsobená doporučení produktu**.
 1. V podokně vlastností **Přizpůsobená doporučení produktu** vyberte **Ihned povolit**.
 
-![Zapnutí individuálního nastavení.](./media/FeatureManagement_Personalized.PNG)
+![Zapnutí individuálního nastavení](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Po zapnutí přizpůsobení se spustí proces generování seznamu doporučení pro individuální produkt. Je možné, že tyto seznamy budou k dispozici a budou viditelné online a v POS.
@@ -73,7 +78,7 @@ Dříve než může být seznam výběrů pro vás zobrazen na libovolné strán
 
 Na následujícím obrázku je znázorněn příklad seznamu výběrů pro vás na stránce online obchodu.
 
-![Seznam Online výběry pro vás.](./media/picksforyou.png)
+![Seznam Online výběry pro vás](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>Seznamy Doporučeno pro zákazníka v POS
 
@@ -81,7 +86,7 @@ Pokud maloobchodní prodejci chtějí vylepšit své zkušenosti se získáván�
 
 Na následujícím obrázku je znázorněn příklad seznamu Doporučeno pro zákazníka na terminálu POS.
 
-![Seznamy Doporučeno pro zákazníka v POS.](./media/picksonpos.png)
+![Seznamy Doporučeno pro zákazníka v POS](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Použít přizpůsobení u existujících seznamů doporučení
 
@@ -89,7 +94,7 @@ Maloobchodní prodejci mohou použít přizpůsobení pro stávající seznamy d
 
 Například přihlášený uživatel již nakoupil černé hodinky a hnědé pracovní boty, které se zobrazují v seznamu Trendy - výchozí na následujícím obrázku. Z toho vyplývá, že se uživateli zobrazí nové produkty místo těchto produktů, jak je uvedeno v seznamu "trendy-přizpůsobení".
 
-![Použití individuálního nastavení.](./media/applypersonalization.png)
+![Použití individuálního nastavení](./media/applypersonalization.png)
 
 Chcete-li použít přizpůsobení pro existující seznam doporučení v modulu Commerce Site Builder, postupujte podle následujících kroků.
 
@@ -99,7 +104,7 @@ Chcete-li použít přizpůsobení pro existující seznam doporučení v modulu
 1. V dialogovém okně **Vybrat konfiguraci seznamu produktů** vyberte v části **Typ** typ seznamu.
 1. Zaškrtněte políčko **Použít přizpůsobení** a vyberte **OK**.
 
-    ![Aplikace přizpůsobení na seznam trendů.](./media/ApplyPersonalizationToTrending.PNG)
+    ![Aplikace přizpůsobení na seznam trendů](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Uložte fragment stránky, dokončete úpravy a publikujte ji. Po publikování stránky budou přihlášeným uživatelům zobrazeny přizpůsobené seznamy trendů.
 
@@ -126,6 +131,3 @@ Chcete-li použít přizpůsobení pro existující seznam doporučení v modulu
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

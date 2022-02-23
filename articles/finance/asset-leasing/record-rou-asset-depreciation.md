@@ -2,31 +2,32 @@
 title: Záznam odpisu používaného majetku (Preview)
 description: Toto téma vysvětluje, jak vytvořit položku deníku pro amortizaci požadovanou pro leasingy, které jsou uznány v rozvaze organizace.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseAssetSchedule
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
-ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
+ms.openlocfilehash: 0dd8308acb875affc96ca6d9ed856d74d4b2eb37
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/29/2021
-ms.locfileid: "7947308"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441349"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Záznam odpisu používaného majetku (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 U leasingů, které jsou vykázány v rozvaze organizace, se používaný majetek (ROU) odepisuje měsíčně. Toto téma vysvětluje, jak vytvořit položku deníku pro amortizaci. Amortizace zaúčtuje na vrub účtu hlavní knihy výdajů a připíše na účet akumulovaných odpisů na základě nastavení vašeho profilu účtování a typu pronájmu. Tyto položky lze vytvořit pro každý leasing nebo je lze vytvořit pro více leasingů pomocí funkce dávkového deníku.
 
@@ -35,12 +36,9 @@ U leasingů, které jsou vykázány v rozvaze organizace, se používaný majete
 1. Na stránce **Souhrn leasingu** vyberte leasing. Pak vyberte **Knihy \> Plán odpisu majetku** k otevření stránky **Plán odpisu majetku**.
 
     Položka deníku výdajů na odpisy používaného majetku je založena na částce ve sloupci **Náklady na odpisy**. Příklad pokynů pro dodržování účetních standardů získáte v části [Výpočet nákladů na amortizaci používaného majetku u finančního leasingu](#calculation-of-rou-asset-amortization-expense-for-finance-leases) dále v tomto tématu.
-    
+
 2. Vyberte období odpisování a poté vyberte **Vytvořit deník**. Zobrazí se zpráva s oznámením, že byl vytvořen deník, který bude použit k záznamu odpisů.
 3. Vyberte **Deníky \> Deníky leasingu majetku** k otevření stránky **Deník leasingu majetku**, kde si můžete zobrazit deníkovou položku výdajů, která byla vytvořena.
-
-   Systém zablokuje úpravu určitých finančních polí, aby se zabránilo jakýmkoli odchylkám mezi transakcemi a plány. Mezi zamčená pole patří: **Účet**, **Množství**, **Finanční dimenze**, **Měna** a **Typ transakce**. Kromě toho nebudete moci přidávat ani odstraňovat řádky záznamů deníku v žádných položkách deníku leasingu majektu, protože to může způsobit odchylky mezi plány a transakcemi.
-
 4. Vyberte položku deníku a poté vyberte **Zaúčtovat** k zaznamenání položky odpisu do hlavní knihy.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Výpočet nákladů na amortizaci používaného majetku u operativního leasingu
@@ -71,8 +69,6 @@ Jak bylo uvedeno dříve, přímý náklad na leasing se počítá jako součet 
 > [!NOTE]
 > Podle ASC 842 je odpis používaného majetku u operativního leasingu ve výkazu zisku a ztráty klasifikován jako leasingový náklad. Pro přehlednost leasing majetku popisuje položku jako odpis používaného majetku. Debetní položka by však měla být přiřazena k účtu nákladů na operativní leasing a kreditní položka by měla být přiřazena přímo k používaného majetku pro operativní leasing. V parametrech leasingu však můžete určit, že by se měly kreditní položky provádět na akumulovaném účtu odpisů pro provozní používaný majetek.
 
-Pokud je leasing klasifikován jako operativní leasing, bude měsíční odpis po snížení hodnoty vypočten pomocí rovnoměrných odpisů.
-
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Výpočet nákladů na amortizaci používaného majetku u finančního leasingu
 
 U leasingů, které mají finanční klasifikaci, systém vypočítává amortizaci používaného majetku rovnoměrně. Proto budou náklady na odpisy pro každý měsíc stejné.
@@ -90,6 +86,3 @@ V souladu s Mezinárodní normou pro finanční výkaznictví 16 (IFRS 16) a ASC
 | 1                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 2                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 3                                    | 22,889.87 ÷ 24 = 953.74                 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

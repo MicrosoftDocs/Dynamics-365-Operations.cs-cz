@@ -2,23 +2,26 @@
 title: Obsah správy úvěru a inkasa v Power BI
 description: Toto téma popisuje, co je součástí obsahu správy úvěru a inkasa v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 65423f49ba106a152f58c92533c4f1a16d47a318982cfe69bb23f9091fa09846
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763207"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4441340"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
@@ -74,6 +77,3 @@ Obsah **CustCollectionsBICrossCompany** v Power BI obsahuje sestavu, která sest
 | Upomínky         | <ul><li>Částky kódu výběru</li><li>Podrobnosti částky kódu inkasa</li><li>Částka upomínky podle společnosti</li><li>Částka upomínky podle skupiny odběratelů</li><li>Částka upomínky podle oblasti</li></ul> |
 
 Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden na vizualizaci.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

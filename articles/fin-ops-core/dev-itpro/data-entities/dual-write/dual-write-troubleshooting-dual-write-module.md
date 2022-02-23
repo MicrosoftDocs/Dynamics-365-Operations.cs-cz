@@ -1,33 +1,42 @@
 ---
-title: Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v finančních a provozních aplikacích.
+title: Poradce při potížích s modulem dvojitého zápisu v aplikacích Finance and Operations
+description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v aplikacích Finance and Operations.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061801"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683616"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
+# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Poradce při potížích s modulem dvojitého zápisu v aplikacích Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v finančních a provozních aplikacích.
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem **Dvojího zapisování** v aplikacích Finance and Operations.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Ve finanční a provozní aplikaci nelze modul dvojího zápisu načíst
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>V aplikaci Finance and Operations nelze načíst modul dvojitého zápisu
 
 Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždice **Dvojího zapisování** v pracovním prostoru **Správa dat**, služba integrace dat je pravděpodobně mimo provoz. Vytvořte lístek podpory pro vyžádání restartu služby Data Integration Service.
 
@@ -35,9 +44,10 @@ Pokud nemůžete otevřít stránku **Dvojího zapisování** výběrem dlaždic
 
 **Požadovaná pověření pro opravu problému:** Stejný uživatel, který má nastaven dvojitý zápis.
 
-Při pokusu o konfiguraci nové tabulky pro dvojitého zápisu se může zobrazit následující chybová zpráva. Jediným uživatelem, který může vytvořit mapu, je uživatel, který má nastaveno připojení s dvojitým zápisem.
+Při pokusu o konfiguraci nové entity pro dvojitého zápisu se může zobrazit následující chybová zpráva. Jediným uživatelem, který může vytvořit mapu, je uživatel, který má nastaveno připojení s dvojitým zápisem.
 
-*Stavový kód odpovědi neoznačuje úspěch: 401 (Neautorizováno).*
+*Stavový kód odpovědi neoznačuje úspěch: 401 (Neautorizováno)*
+
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Chyba při otevření uživatelského rozhraní s dvojím zapisováním
 
@@ -49,17 +59,13 @@ Chcete-li tento problém vyřešit, přihlaste se pomocí okna InPrivate v aplik
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Chyba při propojení prostředí pro dvojí zapisování nebo přidání nového mapování tabulky
 
-**Požadovaná role pro opravu problému**: Správce systému v finančních a provozních aplikacích i prostředí Dataverse.
+**Požadovaná role pro opravu problému:** Správce systému v obou aplikacích Finance and Operations a Dataverse.
 
 Při připojování nebo vytváření map se může objevit následující chyba:
 
-```dos
-Response status code does not indicate success: 403 (tokenexchange).
-Session ID: \<your session id\>
-Root activity ID: \<your root activity\> id
-```
+*Stavový kód odpovědi neoznačuje úspěch: 403 (tokenexchange).<br> ID relace: \<your session id\><br> ID kořenové aktivity: \<your root activity id\>*
 
-K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Dataverse bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v finančních a provozních aplikacích a prostředí Dataverse může obě prostředí propojit. Přidávat nové mapy tabulky může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
+K této chybě může dojít, pokud nemáte dostatečná oprávnění k propojení s dvojím zápisem nebo vytvářením map. K této chybě může také dojít, pokud prostředí Dataverse bylo resetováno bez zrušení propojení dvojitého zápisu. Libovolný uživatel s rolí správce systému v aplikacích Finance and Operations a prostředí Dataverse může obě prostředí propojit. Přidávat nové mapy tabulky může pouze uživatel, který nastavuje připojení s dvojitým zápisem. Po dokončení nastavení může libovolný uživatel s rolí správce systému sledovat stav a upravit mapování.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Chyba při zastavení mapování tabulky
 
@@ -71,29 +77,13 @@ K této chybě dojde, pokud propojené prostředí Dataverse není k dispozici.
 
 Chcete-li tento problém vyřešit, vytvořte lístek pro tým pro integraci dat. Připojte sledování sítě, aby mohl tým pro integraci dat označit mapy jako **nespuštěný** na back endu.
 
-## <a name="errors-while-trying-to-start-a-table-mapping"></a>Chyby při pokusu o spuštění mapování tabulky
+## <a name="error-while-trying-to-start-an-table-mapping"></a>Chyba při pokusu o spuštění mapování tabulky
 
-### <a name="unable-to-complete-initial-data-sync"></a>Počáteční synchronizaci dat nelze dokončit
-
-Při pokusu o spuštění počáteční synchronizace dat se může zobrazit následující chybová zpráva:
+Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit chybová zpráva podobná následující:
 
 *Nelze dokončit počáteční synchronizaci dat. Chyba: selhání dvojitého zápisu – registrace modulu plug-in se nezdařila: nelze vytvořit metadata vyhledávání dvojitého zápisu. Odkaz na objekt chyby není nastaven na instanci objektu.*
 
-Při pokusu o nastavení tohoto stavu mapování na **Spuštěno** se může zobrazit tato chybová zpráva. Oprava závisí na příčině chyby:
+Oprava této chyby závisí na příčině chyby:
 
 + Pokud mapování obsahuje závislá mapování, ujistěte se, že je povoleno mapování závislých položek tohoto mapování tabulky.
-+ Mapování pravděpodobně neobsahuje zdrojové nebo cílové sloupce. Pokud ve sloupci ve finanční a provozní aplikaci chybí pole, postupujte podle kroků v oddílu [Problém chybějících sloupců tabulky při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Pokud v prostředí Dataverse chybí sloupec, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byly sloupce automaticky vloženy zpět do mapování.
-
-### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Chyba nesouladu verzí a inovace řešení pro dvojí zápis
-
-Při pokusu o zastavení mapování tabulky se mohou zobrazit následující chybové zprávy:
-
-+ *Skupiny zákazníků (msdyn_customergroups): Selhání duálního zápisu - řešení Dynamics 365 for Sales „Dynamics365Company“ má nesoulad verzí. Verze: '2.0.2.10' Požadovaná verze: '2.0.133'*
-+ *Řešení Dynamics 365 for Sales „Dynamics365FinanceExtended“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.227'*
-+ *Řešení Dynamics 365 for Sales „Dynamics365FinanceAndOperationsCommon“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.133'*
-+ *Řešení Dynamics 365 for Sales „CurrencyExchangeRates“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.133'*
-+ *Řešení Dynamics 365 for Sales „Dynamics365SupplyChainExtended“ má nesoulad verzí. Verze: '1.0.0.0' Požadovaná verze: '2.0.227'*
-
-Chcete-li problémy vyřešit, aktualizujte řešení dvojitého zápisu v Dataverse. Nezapomeňte upgradovat na nejnovější řešení, které odpovídá požadované verzi řešení.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Mapování pravděpodobně neobsahuje zdrojová nebo cílová pole. Pokud v aplikaci Finance and Operations chybí pole, postupujte podle kroků v oddílu [Problém chybějících polí entity při mapování](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Pokud v prostředí Dataverse chybí pole, klikněte na tlačítko **Aktualizovat tabulky** u mapování, aby byla pole automaticky vložena zpět do mapování.

@@ -1,27 +1,30 @@
 ---
 title: Postupy a operace
 description: Toto téma obsahuje obecné informace o postupech a operacích.
-author: johanhoffmann
+author: sorenva
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: johanho
+ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891946"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423624"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -29,7 +32,8 @@ ms.locfileid: "7891946"
 
 Toto téma obsahuje obecné informace o postupech a operacích. Postup definuje proces pro výrobu produktu nebo varianty produktu. Popisuje jednotlivé kroky (operace) ve výrobním procesu a pořadí, ve kterém je nutné je provádět. U každého kroku postup také definuje požadované provozní prostředky, čas, který je nutný k přípravě a provedení operace, a způsob výpočtu nákladů.
 
-## <a name="overview"></a>Přehled
+<a name="overview"></a>Přehled
+--------
 
 Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Supply Chain Management se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 
@@ -45,7 +49,7 @@ Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu.
 
 Jednoduchý postup je sekvenční a existuje u něj pouze jeden počáteční bod.  
 
-[![Jednoduchý postup.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Jednoduchý postup](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduché postupy, aplikace Supply Chain Management při definování postupu automaticky vygeneruje čísla operací (10, 20, 30 a tak dále).
 
@@ -53,7 +57,7 @@ Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduc
 
 Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější síťové postupy, můžete definovat postupy, které mají více počátečních bodů, a operace, které lze spustit současně.  
 
-[![Síťový postup.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Síťový postup](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Každá operace může mít pouze jednu následnou operaci a celý postup musí končit jednou operací.
@@ -64,7 +68,7 @@ Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější
 
 Někdy je k provedení operace třeba kombinace několika provozních prostředků s odlišnými vlastnostmi. Operace montáže může například vyžadovat stroj, nástroj a jednoho dohlížejícího pracovníka u každých dvou strojů. Tento příklad lze modelovat pomocí paralelních operací, kde je jedna operace určena jako primární operace a ostatní jsou sekundární.  
 
-[![Postup s primární operací a sekundárními operacemi.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Postup s primární operací a sekundárními operacemi](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Primární operace obvykle představuje kritický prostředek a určuje dobu nutnou k provedení sekundárních operací. Při plánování s omezenou kapacitou však musí být k dispozici prostředky, které jsou naplánovány pro primární i sekundární operace, a současně musí mít volnou kapacitu.  
 
@@ -78,7 +82,7 @@ Každý postup je před použitím v plánovacím nebo výrobním procesu nutn�
 
 Každý postup lze schválit nebo zamítnout samostatně. Při zamítnutí postupu však budou zamítnuty i všechny související verze postupu. Ve formuláři Parametry modulu Řízení výroby lze určit, zda je možné postupy zamítnout a zda je možné měnit schválené postupy.  
 
-Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) potvrzovat svou identitu.
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](../../fin-and-ops/organization-administration/electronic-signature-overview.md) potvrzovat svou identitu.
 
 ## <a name="operations"></a>Operations
 Operace představuje krok ve výrobním procesu. Každá operace má ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací ze strojní dílny.
@@ -184,7 +188,7 @@ Aktivací verze postupu ji označíte jako výchozí verzi, kterou bude použív
 
 ### <a name="electronic-signatures"></a>Elektronické podpisy
 
-Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé verze postupů schvaluje a aktivuje, můžete si u těchto úkonů vyžádat elektronické podpisy. Uživatelé, kteří schvalují a aktivují verze postupů, pak budou muset potvrzovat svou identitu pomocí [elektronického podpisu](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
+Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé verze postupů schvaluje a aktivuje, můžete si u těchto úkonů vyžádat elektronické podpisy. Uživatelé, kteří schvalují a aktivují verze postupů, pak budou muset potvrzovat svou identitu pomocí [elektronického podpisu](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Změna produktu s využitím správy případu
 
@@ -223,7 +227,7 @@ Při použití tohoto přístupu budete operační časy a další vlastnosti s
 Pokud v rámci požadavků na prostředky u operace nezadáte provozní prostředek nebo skupinu prostředků, mohou použitelné prostředky pracovat při různých rychlostech. Čas nutný ke zpracování operace se tedy může lišit. Tento problém můžete vyřešit tak, že způsob výpočtu času zpracování určíte pomocí pole **Vzorec** ve vztahu operace. Existují tyto možnosti:
 
 - **Standardní** – (výchozí možnost) výpočet použije pouze pole ze vztahu operace a vynásobí zadaný operační čas objednaným množstvím.
-- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita**. Hodnota kapacity není specifická pro konkrétní měrnou jednotku, a proto se nepřevádí na základě pole **Jednotka kapacity**, což je pouze popisné pole, které se nepoužívá ve výpočtech.
+- **Kapacita** – při výpočtu se bere v úvahu pole **Kapacita** u provozního prostředku. Čas tedy závisí na prostředku. Hodnota uvedená u provozního prostředku je kapacita za hodinu. **Doba zpracování** se vypočítává jako **Objednané množství** děleno **Kapacita**.
 - **Dávka** – kapacita dávky se počítá s využitím informací ze vztahu operace. Počet dávek (a tím i čas zpracování) lze pak vypočítat na základě objednaného množství.
 - **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka**. Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
 
@@ -252,10 +256,7 @@ Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa
 
 - [Schopnosti prostředku](resource-capabilities.md)
 
-- [Přehled elektronických podpisů](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
+- [Přehled elektronických podpisů](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

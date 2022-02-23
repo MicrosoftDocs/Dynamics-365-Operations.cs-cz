@@ -1,33 +1,37 @@
 ---
 title: Přehled nebezpečných materiálů
 description: Toto téma poskytuje přehled funkcí, které souvisejí s manipulací a dokumentací nebezpečných materiálů během správy informací o produktu a správy skladu.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986269"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423566"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Aby organizace, které přepravují materiály klasifikované jako nebezpečné zboží, dodržovaly přepravní předpisy, musí ke svým zásilkám přiložit dodatečné doklady. Funkce nebezpečných materiálů umožňuje zákazníkům ukládat informace související s uvolněnými položkami. Tyto informace lze poté použít k přípravě dokumentace o dodávce. Organizace, která přepravuje nebezpečné zboží, musí mít vlastní procesy a postupy pro správu přepravního procesu. Microsoft Dynamics 365 Supply Chain Management je jen nástroj, který může pomoci vygenerovat požadované dokumenty.
 
 Následující diagram znázorňuje kroky potřebné k nastavení a používání funkce nebezpečných materiálů.
 
-![Nastavení a použití funkce nebezpečných materiálů.](media/hazmat-overview.png "Nastavení a použití funkce nebezpečných materiálů")
+![Nastavení a použití funkce nebezpečných materiálů](media/hazmat-overview.png "Nastavení a použití funkce nebezpečných materiálů")
 
 Funkce nebezpečných materiálů je nastavena ve správě informací o produktu a poskytuje dokumenty, které lze vytisknout prostřednictvím správy skladu. Obecně řečeno, tyto oblasti jsou dvě hlavní oblasti, kde budete kontrolovat, nastavovat a používat tuto funkci:
 
@@ -58,6 +62,3 @@ Další informace, jak nastavit předpisy a hodnoty pro nebezpečné materiály 
 ## <a name="warehouse-management"></a>Řízení skladu
 
 Když připravujete dodávku v Řízení skladu, můžete vytisknout několik nových sestav, které používají informace, které jste nastavili v Řízení informací o produktech. Další informace o dostupných sestavách a jejich použití najdete v části [Nebezpečné materiály – dotazy a sestavy](hazmat-reports.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

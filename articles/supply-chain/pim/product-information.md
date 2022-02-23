@@ -2,31 +2,35 @@
 title: Přehled informací o produktech
 description: Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy.
 author: t-benebo
+manager: tfehr
 ms.date: 06/01/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063309"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527379"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy. 
 
@@ -55,7 +59,7 @@ Produkt je definován především číslem, názvem a popisem. Jsou však poža
 
 Definici výrobků lze vytvořit v aplikaci Supply Chain Management. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Supply Chain Management se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
 
-Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Supply Chain Management použití služby Microsoft Dataverse. Definice produktů lze exportovat službu běžné dat z instance aplikace Supply Chain Management do služby Microsoft Dataverse. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například Dynamics 365 Sales, s daty produktu.
+Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Supply Chain Management použití služby Common Data Service. Definice produktů lze exportovat službu běžné dat z instance aplikace Supply Chain Management do služby Common Data Service. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například Dynamics 365 Sales, s daty produktu.
 
 Všimněte si, že v dynamických a pružných organizacích se informace o produktech mění denně. Údržba přesných a skutečných dat je tedy důležitý obchodní proces sám o sobě.
 
@@ -92,6 +96,3 @@ Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevř
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 
 Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: EUR-00002 Generování prohlášení Intrastat EU
 description: Tento postup vás provede kroky nutnými k exportu prohlášení systému Intrastat ve formátu elektronického souboru a náhledu dat výkazu ve formátu aplikace Excel.
 author: Anasyash
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57d7fcfeed3b630b2fa1f8ada4e116c230ba5bf0d8a94deeb5f59b6514d8a3c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760604"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407619"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 Generování prohlášení Intrastat EU
 
@@ -111,6 +114,3 @@ Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.
     * V tomto příkladu vyberte Expedice.  
 27. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

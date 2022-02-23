@@ -2,23 +2,26 @@
 title: Definování platebních poplatků dodavatelů
 description: Nastavte poplatky pro platby dodavatelů.
 author: abruer
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a53124d021e35b05ce720c75924e136acdfadde8ddbad0d544d36662f45cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 404bd1e22caa8098f114a2dcc67dd420509cce2b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777307"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440996"
 ---
 # <a name="define-vendor-payment-fees"></a>Definování platebních poplatků dodavatelů
 
@@ -56,6 +59,3 @@ Nastavte poplatky pro platby dodavatelů. Tento úkol používá ukázkovou spol
     * Tato měna je pro poplatek. Měna platby slouží k definování toho, kdy se pravidla poplatku musí vyhodnotit na základě měny platby. Například vaše banka může účtovat poplatek, když je provedena platba v EUR, ale pro všechny ostatní platby není určen poplatek.  
 18. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

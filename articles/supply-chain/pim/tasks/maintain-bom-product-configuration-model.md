@@ -1,24 +1,26 @@
 ---
 title: Udržování kusovníku pro model konfigurace produktu
 description: Spuštění této procedury vyžaduje stávající model konfigurace produktu.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCBOMLineDetails, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd78b06f10d0c9b1df57dacdd824b06ebe414b3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 267ac5447d36f63094fdb57c0d450e4d79cf138b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577281"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966848"
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a>Udržování kusovníku pro model konfigurace produktu
 
@@ -26,34 +28,32 @@ ms.locfileid: "7577281"
 
 Spuštění této procedury vyžaduje stávající model konfigurace produktu. Model špičkového reproduktoru v ukázkové společnosti USMF slouží k vytváření tohoto postupu.
 
-## <a name="add-a-bom-line"></a>Přidání řádku kusovníku
 
-1. Přejděte na **Řízení informací o produktech \> Produkty \> Modely konfigurace produktu**.
-1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+## <a name="add-a-bom-line"></a>Přidání řádku kusovníku
+1. Klepněte na Definice modelu varianty produktu.
+2. Klepněte na Modely konfigurace produktu.
+3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Pro tuto proceduru vyberte špičkový reproduktor.  
-1. Vyberte odkaz na vybraném řádku v seznamu.
-1. Rozbalte sekci **Řádky kusovníku**.
-1. Vyberte **přidat**.
-1. Zadejte hodnotu do pole **Název**.
-1. Zadejte hodnotu do pole **Popis**.
-1. Zvolte **Uložit**.
+4. Klikněte na odkaz na vybraném řádku v seznamu.
+5. Rozbalte sekci Řádky kusovníku.
+6. Klepněte na možnost Přidat.
+7. Zadejte hodnotu do pole Název.
+8. Zadejte nějakou hodnotu do pole Popis.
+9. Klikněte na položku Uložit.
 
 ## <a name="add-bom-line-details"></a>Přidání podrobností řádku kusovníku
-
-1. Vyberte **Podrobnosti řádku kusovníku**.
-2. V poli **Číslo položky** zadejte nebo vyberte hodnotu.
+1. Klepněte na podrobnosti řádku kusovníku.
+2. V poli Číslo zboží zadejte nebo vyberte hodnotu.
     * Můžete vybrat zboží M0055.  
     * Pro každou vlastnost řádku kusovníku můžete vybrat, zda to je pevná hodnota, nebo je mapována k atributu.  
-3. Zaškrtněte políčko položky **Nastavit**.
-4. Vyberte možnost *Ano* v poli **Výpočet**.
-    * Nastavení vlastností **Výpočet** na hodnotu *Ano* zajišťuje, že řádek kusovníku bude součástí výpočtu nákladů.  
-5. Vyberte kartu **Nastavení**.
-6. Zaškrtněte políčko položky **Nastavit**.
-7. Zadejte číslo do pole **Množství**.
+3. Zaškrtněte políčko položky Nastavit.
+4. Vyberte možnost Ano v poli Výpočet.
+    * Nastavení vlastností výpočtu na hodnotu Ano zajišťuje, že řádek kusovníku bude součástí výpočtu nákladů.  
+5. Klikněte na záložku Nastavení.
+6. Zaškrtněte políčko položky Nastavit.
+7. Zadejte číslo do pole Množství.
     * Pole množství určuje množství zboží, které bude zahrnuto v kusovníku. Může se jednat o zřejmého uchazeče pro mapování atributů.  
-8. Vyberte karu **Dimenze**.
+8. Klepněte na kartu Dimenze.
     * Ověřte, zda některá z dimenzí produktu je aktivní, a proto se hodnota nebo atribut musí přiřadit.  
-9. Vyberte **OK**.
+9. Klikněte na tlačítko OK.
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

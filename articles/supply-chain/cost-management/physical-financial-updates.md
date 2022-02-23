@@ -2,9 +2,11 @@
 title: Fyzické a finanční aktualizace
 description: Toto téma poskytuje přehled typů transakcí, které zvyšují nebo snižují skladové množství.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c7b354a7524a6e96da8e2a9eeca0d4f21b9fb0a6d515620ab3fe446425af17c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b29c1c0727487992a478552d94b5bbe8684d0550
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734372"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967451"
 ---
 # <a name="physical-and-financial-updates"></a>Fyzické a finanční aktualizace
 
@@ -71,6 +73,3 @@ Při zaúčtování finanční transakce se záznam transakce nachází ve stavu
 -   skladové deníky se záporným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 Transakce snižující množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Proces uzávěrky skladu je tedy vyžadován pro vyrovnání výdejových transakcí příjmovými transakcemi podle modelu zásob, která je přiřazen jednotlivým položkám.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

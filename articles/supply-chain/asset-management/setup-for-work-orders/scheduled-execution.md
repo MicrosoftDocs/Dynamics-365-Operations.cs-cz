@@ -1,26 +1,29 @@
 ---
 title: Plánované provedení
 description: Tohle téma popisuje plánované provedení v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ace2da2c4bc3d5cc404301fc4ecef5ceeef240dae6569a4d28f621b02637930
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 976155b685498456952f7d715779d20191712103
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779659"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423843"
 ---
 # <a name="scheduled-execution"></a>Plánované provedení
 
@@ -37,9 +40,6 @@ Plánovaná úloha nastavení, která souvisí s pracovními příkazy, může b
 3. V polích **Funkční umístění**, **Typ pracovního příkazu**, **Typ majetku**, **Výrobce**, **Model**, **Kategorie typu úlohy údržby**, **Typ úlohy údržby**, **Varianta typu úlohy údržby** a **Obchod** vyberte hodnoty podle potřeby.
 4. V vyberte úroveň služeb pracovního příkazu v poli **Úroveň služeb**. Pokud toto pole ponecháte prázdné, provedete nejobecnější typ řádku plánovaného provedení. Příklad obecného řádku naleznete v prvním záznamu na následujícím obrázku. Tento řádek umožňuje naplánovat všechny pracovní příkazy, které nemají žádnou úroveň služby pracovního příkazu pro určité datum a čas.
 5. V poli **Plánované provedení** vyberte časový interval.
-6. Zvolte možnost **Uložit**.
+6. Zvolte **Uložit**.
 
-![Plánované provedení.](media/20-setup-for-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Plánované provedení](media/20-setup-for-work-orders.png)

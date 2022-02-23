@@ -2,25 +2,28 @@
 title: Importovat směnné kurzy měn
 description: Toto téma obsahuje informace o požadavcích na import směnných kurzů pro cizí měnu, které jsou publikovány poskytovatelům směnného kurzu.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74acfab28d45fc75c4ecd595aeba1fb1e13bbcff
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727317"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441239"
 ---
 # <a name="import-currency-exchange-rates"></a>Importovat směnné kurzy měn
 
@@ -33,8 +36,9 @@ V následujících částech je popsán celkový tok informací, které se použ
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurace poskytovatele směnných kurzů
 Než bude možné importovat směnné kurzy, musíte nastavit informace vyžadované zprostředkovateli, kteří nabízejí směnné kurzy. Pomocí stránky **Konfigurace zprostředkovatelů směnného kurzu** vyberte poskytovatele směnných kurzů. Někteří poskytovatelé směnných kurzů jsou zahrnuti v demo datech aplikace Dynamics 365 Finance. Ovládací prvky tohoto formuláře jsou popsány na následující stránce.
 
-| Pole | popis                   |
-|-----------|-----------------------------------|
+|           |                                                                                                                                                                                                                             |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Pole** | **Popis**                                                                                                                                                                                                             |
 | **Název**  | Název poskytovatele směnného kurzu.                                                                                                                                                                                     |
 | **Klíč**   | Jedinečný identifikátor součásti všech konfiguračních informací požadovaný poskytovatelem. Tyto údaje jsou automaticky přidány pro každého poskytovatele směnného kurzu, kterého přidáte. |
 | **Value** | Informace pro každý klíč. Tyto údaje jsou přidány pro každého poskytovatele směnného kurzu, kterého přidáte.                                                                                         |
@@ -42,8 +46,9 @@ Než bude možné importovat směnné kurzy, musíte nastavit informace vyžadov
 ## <a name="import-currency-exchange-rates"></a>Importovat směnné kurzy měn
 Směnné kurzy můžete importovat ze zdroje poskytovatelů směnných kurzů a přidat je na stránce **Směnné kurzy měn**. Použijte stránku **Importovat směnné kurzy měn**, chcete-li importovat směnné kurzy. Následující tabulka obsahuje popis polí požadovaných k dokončení procesu importu.
 
-| Pole | popis                   |
-|-----------|-----------------------------------|
+|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Pole**                              | **Popis**                                                                                                                                                                                                                                                                                                                                                             |
 | **Typ směnného kurzu**                 | Typ směnného kurzu.                                                                                                                                                                                                                                                                                                                                                      |
 | **Poskytovatel směnného kurzu**             | Poskytovatel směnného kurzu.                                                                                                                                                                                                                                                                                                                                                  |
 | **Importovat jako**                       | Tento parametr řídí, zda mají být importovány k aktuálnímu datu nebo zadanému období. Pokud chcete použít rozsah dat, zadejte nebo vyberte počáteční a koncové datum.                                                                                                                                                                                                                |
@@ -51,6 +56,3 @@ Směnné kurzy můžete importovat ze zdroje poskytovatelů směnných kurzů a 
 | **Přepsat existující směnné kurzy**   | Toto zaškrtávací políčko spravuje aktualizace stávajícího směnného kurzu pro dvojici měn, když směnný kurz k určitému datu již existuje. Pokud toto políčko nezaškrtnete, směnný kurz pro konkrétní data není importován, pokud již existuje jiný směnný kurz.                                                                                       |
 | **Zabránit importu v den státního svátku** | Toto zaškrtávací políčko řídí import směnného kurzu k datu, které připadá na státní svátek. Například pokud vyberte toto zaškrtávací políčko a použijete jako poskytovatele směnného kurzu Evropské centrální banky, systém nebude aktualizovat směnný kurz ve svátek vztahující se k aktuální právnické osobě. Tato možnost nemusí být k dispozici pro některé poskytovatele. |
 | **Kurz z předchozího dne** | Toto zaškrtávací políčko je k dispozici, pokud povolíte funkci **Import ECB k aktuálnímu nebo předchozímu datu** na stránce **Správa funkcí**. Toto zaškrtávací políčko je k dispozici pouze pro poskytovatele *Central Bank of Europe*. Zaškrtněte toto políčko, chcete-li importovat směnný kurz měny, který zveřejňuje Evropská centrální banka předchozí pracovní den přibližně v 16:00 CET. Ve výchozím nastavení není toto políčko zaškrtnuto. Chcete-li importovat směnný kurz, který je publikován ve stejný pracovní den, zrušte zaškrtnutí tohoto políčka.  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

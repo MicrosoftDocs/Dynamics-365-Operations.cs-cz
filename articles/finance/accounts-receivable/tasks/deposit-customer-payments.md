@@ -2,23 +2,26 @@
 title: Vklad platby odběratele
 description: Vložení platby odběratele.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 776871aad417d26486ec109f8b0b7f51db32d065d801e51459584c82269f9ac7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d903f557fbaeb720dd4a34dc1c772be0dcb56eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441150"
 ---
 # <a name="deposit-customer-payments"></a>Vklad platby odběratele
 
@@ -45,6 +48,3 @@ Vložení platby odběratele. Tento úkol využívá ukázkovou společnost USMF
 17. Vyberte **OK**. První stránka slouží k vytvoření vkladové složenky.  
 18. Vyberte **OK**. Druhý krok je tisk vkladové složenky, ale tento krok není nutný.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Použití filtrů v plánu
 description: Toto téma vysvětluje způsob použití filtrů v plánu při použití funkce Optimalizace plánování.
 author: ChristianRytt
+manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 0e65d04b7b5261ffe72e67ef5321967f7af0ca20
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729020"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970374"
 ---
 # <a name="apply-filters-to-a-plan"></a>Použití filtrů v plánu
 
@@ -43,7 +45,7 @@ Je nastaven filtr plánu, který zahrnuje položky A, B a C. Běhy hlavního pl�
 - **Běhový filtr, který zahrnuje všechny položky (prázdný filtr):** položky a, B a C jsou zahrnuty do spuštění plánování a předchozí výstup plánování pro položky A a B bude přepsán.
 
 > [!NOTE]
-> Pokud nastavíte filtr plánu na plán, který je vybrán jako **Aktuální dynamický hlavní plán** na stránce **Parametry hlavního plánování**, pak bude funkce dynamického hlavního plánu omezena na filtrované položky. Jsou-li například aktualizovány požadavky netto pro položku, která není součástí filtru plánu, nebudou vygenerovány žádné výsledky.
+> Neměli byste nastavovat filtr plánu v plánu, který je vybrán jako **Aktuální dynamický hlavní plán** na stránce **parametry hlavního plánování**. V opačném případě bude funkce dynamického hlavního plánu omezena na filtrované položky. Jsou-li například aktualizovány požadavky netto pro položku, která není součástí filtru plánu, nebudou vygenerovány žádné výsledky.
 
 ## <a name="related-resources"></a>Související prostředky
 
@@ -56,6 +58,3 @@ Je nastaven filtr plánu, který zahrnuje položky A, B a C. Běhy hlavního pl�
 [Zobrazení historie plánu a protokolů plánování](plan-history-logs.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

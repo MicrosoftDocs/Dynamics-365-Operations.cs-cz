@@ -2,13 +2,16 @@
 title: Migrace na optimalizaci plánování pro hlavní plánování
 description: Toto téma poskytuje informace o novém modulu hlavního plánovací, optimalizaci plánování, a o migraci ze stávajícího modulu.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728572"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645989"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrace na optimalizaci plánování pro hlavní plánování
 
@@ -63,12 +66,8 @@ V současné době jsou výjimky pro migraci optimalizace plánování relevantn
 
 Poté, co budou k dispozici požadované funkce, poskytne Microsoft období odkladu do vypršení platnosti výjimky. Správce prostředí bude informován, až budou k dispozici požadované funkce a začne období odkladu.
 
-Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962).
-
-![Vývojový diagram výjimek.](media/exception-diagram.png "Vývojový diagram výjimek")
-
 > [!NOTE]
-> Výjimku můžete požadovat pouze pro klienty, kteří aktuálně zahrnují nebo budou zahrnovat provozní prostředí, nikoli pouze pro klienty s izolovanými prostředími. Pokud potřebujete zakázat chybu výjimky optimalizace plánování v sandboxovém prostředí infrastruktury jako služby (IaaS), spusťte dotaz SQL uvedený v části [Sandboxová prostředí](#faq-sandbox).
+> Výjimku můžete požadovat pouze pro produkční prostředí, nikoli pro sandboxová prostředí. Pokud potřebujete zakázat chybu výjimky optimalizace plánování v sandboxovém prostředí infrastruktury jako služby (IaaS), spusťte dotaz SQL uvedený v části [Sandboxová prostředí](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 
@@ -117,6 +116,3 @@ Používám verzi 10.0.16 nebo novější a při spuštění hlavního plánová
 > Chcete-li začít, vyplňte prosím následující dotazník a případně požádejte o výjimku z migrace na optimalizaci plánování.
 
 **Odpověď:** Ne, hlavní plánování není blokováno. Vaše spuštění hlavního plánování bylo úspěšně dokončeno a výsledek můžete použít obvyklým způsobem. Chcete-li se však vyhnout dostávání této chybové zprávy během budoucích spuštění hlavního plánování, musíte buď migrovat na optimalizaci plánování okamžitě, nebo požádat o výjimku pomocí odkazu v chybové zprávě.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

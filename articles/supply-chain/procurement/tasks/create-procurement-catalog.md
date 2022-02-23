@@ -1,24 +1,26 @@
 ---
 title: Vytvoření zásobovacího katalogu
 description: Toto téma vysvětluje postup při vytváření zásobovacího katalogu.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef3747874d43143925bd08dbecc2d60f4e38701a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: eaf8b8d8b369aa704344d6984a0f111af6e4285b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565416"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016470"
 ---
 # <a name="create-a-procurement-catalog"></a>Vytvoření zásobovacího katalogu
 
@@ -63,6 +65,3 @@ Toto téma vysvětluje postup při vytváření zásobovacího katalogu. Tento �
 7. Vyberte **Přidat na řádky**.
 8. Vyberte **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

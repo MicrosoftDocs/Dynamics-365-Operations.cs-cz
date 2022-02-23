@@ -1,37 +1,38 @@
 ---
 title: Synchronizace informací o úrovni zásob z aplikace Supply Chain Management do služby Field Service
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci informací na úrovni zásob z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1228339c12d26f7b91875d15f0daa8da2869cba0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060938"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423696"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synchronizace informací o úrovni zásob z aplikace Supply Chain Management do služby Field Service 
 
 [!include[banner](../includes/banner.md)]
 
-
-
 Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci informací na úrovni zásob z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 Následující šablona a základní úlohy se používají k synchronizaci praktických úrovní skladů ze Supply Chain Management do Field Service.
@@ -50,10 +51,10 @@ Následující úlohy synchronizace jsou vyžadovány před zobrazením synchron
 
 | Field Service                      | Správa dodavatelsko-odběratelského řetězce                |
 |------------------------------------|----------------------------------------|
-| msdynce_externalproductinventories | Dataverse zásoby na skladě podle skladu     |
+| msdynce_externalproductinventories | CDS zásoby na skladě podle skladu     |
 
 ## <a name="entity-flow"></a>Tok entity
-Informace o množství zásob z finanční a provozní aplikace jsou pro vybrané produkty odeslány do služby Field Service. Informace na úrovni zásob zahrnují: 
+Informace o množství zásob z aplikace Finance and Operations jsou pro vybrané produkty odeslány do služby Field Service. Informace na úrovni zásob zahrnují: 
 - Množství na skladě (aktuální evidované fyzické množství, které se nachází ve skladu)
 - Množství objednávky (celkové zaznamenané množství na objednávce, jako jsou prodejní objednávky)
 - Objednané množství (celkové zaznamenané objednané množství, jako jsou prodejní objednávky)
@@ -67,7 +68,7 @@ Aplikace Supply Chain Management bude sloužit jako hlavní zdroj pro úroveň z
 Produkty a sklady, kde jsou zásoby řízení z aplikace Supply Chain Management lze ovládat pomocí Rozšířeného dotazu a filtrování (Power Query).
 
 > [!NOTE]
-> Poznámka: Je možné vytvořit více skladů ve službě Field Services (pomocí **Je externě spravován = Ne**) a poté je namapovat do jediného skladu v aplikaci Supply Chain Management pomocí funkce filtrování a pokročilých dotazů. Používá se v situacích, kdy si přejete, aby služba Field Service spravovala podrobné informace o zásobách a jen odesílala aktuální informace do aplikace Supply Chain Management. V tomto případě neobdrží služba Field Service aktualizace úrovně zásob z aplikace Supply Chain Management. Další informace získáte v části [Synchronizace skladových úprav z aplikace Field Service do Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) and [Synchronizace pracovních příkazů z Field Service na prodejní objednávky navázané na projekt v Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Poznámka: Je možné vytvořit více skladů ve službě Field Services (pomocí **Je externě spravován = Ne**) a poté je namapovat do jediného skladu v aplikaci Supply Chain Management pomocí funkce filtrování a pokročilých dotazů. Používá se v situacích, kdy si přejete, aby služba Field Service spravovala podrobné informace o zásobách a jen odesílala aktuální informace do aplikace Supply Chain Management. V tomto případě neobdrží služba Field Service aktualizace úrovně zásob z aplikace Supply Chain Management. Další informace získáte v části [Synchronizace skladových úprav z aplikace Field Service do Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) and [Synchronizace pracovních příkazů z Field Service na prodejní objednávky navázané na projekt v Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Řešení Field Service CRM
 Entita **zásoby externího produktu** je nová entita, která se používá pouze pro jištění při integraci. Tato entita přijme integrované hodnoty úrovně zásob z aplikace Supply Chain Management a potom tyto hodnoty transformuje do deníků ručních zásob, které poté změní produkty zásob skladu.
@@ -89,7 +90,4 @@ Můžete použít filtry s pokročilým dotazováním a filtrování, pomocí kt
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Zásoby produktu (Supply Chain Management do Field Service): Zásoby produktu
 
-[![Mapování šablony v integraci dat.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Mapování šablony v integraci dat](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

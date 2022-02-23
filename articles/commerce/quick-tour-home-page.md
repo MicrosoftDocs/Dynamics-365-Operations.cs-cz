@@ -1,37 +1,42 @@
 ---
 title: Přehled domovské stránky
-description: Toto téma poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
+description: Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984487"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410890"
 ---
 # <a name="home-page-overview"></a>Přehled domovské stránky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
+Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Domovská stránka je výchozí stránka, na kterou kupující přichází při návštěvě webu e-Commerce. Tato stránka obvykle předběžně obsahuje produkty a promoakce pomocí kombinace marketingových modulů. Domovská stránka by měla být bohatá s obrázky a textem, aby kupující zaujala.
 
 Následující ilustrace znázorňuje příklad domovské stránky, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
-![Příklad domovské stránky.](./media/Homepage2.PNG)
+![Příklad domovské stránky](./media/Homepage2.PNG)
 
 Horní okraj domovské stránky obsahuje záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů a další stránky, které chtějí odběratelé vyhledávat. Dolní okraj domovské stránky má zápatí, které obsahuje rychlé odkazy na různá témata, která mohou být zajímavá.
 
@@ -41,13 +46,13 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 
     Následující ilustrace znázorňuje příklad domovské stránky, kde první položka v hlavním oddílu je rozvržení Hero modulu bloku obsahu s názvem "nově dorazilo".
 
-    ![Příklad hlavního modulu.](./media/Hero.PNG)
+    ![Příklad hlavního modulu](./media/Hero.PNG)
 
 - **Propagační** – Propagační modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Propagační rozvržení lze používat nezávisle nebo je lze hostovat v modulu karusel.
 
     Na následujícím obrázku je znázorněn příklad rozvržení modulu bloku obsahu s propagačním rozvržením.
 
-    ![Příklady propagačních modulů.](./media/Feature.PNG)
+    ![Příklady propagačních modulů](./media/Feature.PNG)
 
 - **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
 - **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto tématu, zahrnuje modul přehrávače videa.
@@ -56,7 +61,7 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 
     Následující obrázek znázorňuje příklad modulu doporučení produktu na domovské stránce.
 
-    ![Příklady modulů doporučení produktu.](./media/Recommendations.PNG)
+    ![Příklady modulů doporučení produktu](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Všechny moduly, které jsou zde uvedeny, lze použít na libovolné stránce webu. Jejich umístění na domovské stránce je však důležité, protože tato stránka nejprve komunikuje s vaším webem.
@@ -68,6 +73,3 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 [Přehled stránek košíku a pokladny](quick-tour-cart-checkout.md)
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

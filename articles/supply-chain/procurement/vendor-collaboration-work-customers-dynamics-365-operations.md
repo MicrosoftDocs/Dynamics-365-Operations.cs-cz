@@ -2,36 +2,40 @@
 title: Dodavatelská spolupráce se zákazníky
 description: Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami ke sledování zásob na skladě.
 author: TaylorVH
+manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
-ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
+ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8022967"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654333"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 Supply Chain Management. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
 
 - **Potvrzení nákupní objednávky** – sledování nákupních objednávek a odpovídání na ně.
 - **Nabídky dodavatele** – zobrazení požadavků na nabídku a odpovídání na ně zadáním nabídky.
 - **Informace o dodavateli** – zobrazení a aktualizace hlavních dat dodavatele.
-- **Fakturace** – práce s fakturami. Toto téma nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturace** – práce s fakturami. Toto téma nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Dodavatele mohou také monitorovat informace o zásobách dodávky.
 
@@ -78,7 +82,7 @@ Pokud používáte zásoby dodávek, můžete zobrazit rozhraní spolupráce dod
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Práce s požadavky na nabídku v pracovním prostoru Nabídky dodavatele
 
-Pracovní prostor **Nabídky dodavatele** umožňuje zobrazení požadavků na nabídku (RFQ), k jejichž odpovědi byla vaše společnost přizvána. Je možné také odpovědět na požadavky na nabídku.
+Pracovní prostor **Nabídky dodavatele** umožňuje zobrazení požadavků na nabídku (RFQ), k jejichž odpovědi byla vaše společnost přizvána. Je možné také odpovědět na požadavky na nabídku. 
 
 Pracovní prostor rovněž zobrazuje všechny požadavky na nabídku, které jste nezískali, nebo naopak získali. Kromě toho, pokud je systém nakonfigurován pro veřejný sektor, pracovní prostor zobrazuje veřejně dostupné požadavky na nabídku.
 
@@ -100,17 +104,9 @@ Osoby pracující ve veřejném sektoru mohou zobrazit otevřené a vypršené p
 
 - Zvolte odkaz **Otevřené publikované požadavky na nabídky** pro zobrazení seznamu otevřených požadavků na nabídku, které jsou k dispozici veřejně. Otevřený požadavek na nabídku je požadavek, který ještě nevypršel. Čas a datum vypršení platnosti naleznete v záhlaví požadavku na nabídku.
 
-    Pokud jste byli přizváni k nabídce, můžete vyhledat stejný požadavek na nabídku na stránce **Pozvánky k nové nabídce**. V některých případech může být zapotřebí vytvořit nabídku k otevřenému požadavku na nabídku, ke kterému jste nebyli přizváni. V takovém případě se můžete přizvat sami, za předpokladu, že odběratel povolil možnost přizvat se sám k případu požadavku na nabídku. 
+    Pokud jste byli přizváni k nabídce, můžete vyhledat stejný požadavek na nabídku na stránce **Pozvánky k nové nabídce**. V některých případech může být zapotřebí vytvořit nabídku k otevřenému požadavku na nabídku, ke kterému jste nebyli přizváni. V takovém případě se můžete přizvat sami, za předpokladu, že odběratel povolil možnost přizvat se sám k případu požadavku na nabídku.
 
-    Stránka **Pozvánky k nové nabídce** obsahuje filtr, který vám umožní zobrazit otevřené požadavky na nabídku a identifikovat ty, které obsahují řádky odpovídající vašim schváleným kategoriím nákupu. Chcete-li tento filtr zpřístupnit, musíte ve vašem systému zapnout funkci *Umožnit dodavateli hledat požadavky na nabídku podle kategorie nákupu*. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav této funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-    - **Modul:** *Závazky*
-    - **Název funkce:** *Umožnit dodavateli hledat požadavky na nabídku podle kategorie nákupu* <!-- KFM: I don't see this here, is this right? -->
-
-    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce *Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici*. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav této funkce a zapnout ji, pokud je třeba. (Od vydání Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnutá.) Zde je funkce uvedena následujícím způsobem:
-
-    - **Modul:** *Zásobování a zdroje*
-    - **Název funkce:** *Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici*
+    Zlepšete přístupnost odkazu **Otevřete zveřejněné požadavky na nabídky** zapnutím funkce **Zobrazit odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici**. Tato funkce převede odkaz na dlaždici a přesune ji na prominentní místo, takže je snadné ji najít.
 
 - Zvolte odkaz **Uzavřené publikované požadavky na nabídky** pro zobrazení seznamu uzavřených požadavků na nabídku, které jsou k dispozici veřejně. Uzavřený požadavek na nabídku je požadavek, který vypršel. Čas a datum vypršení platnosti naleznete v záhlaví požadavku na nabídku.
 
@@ -151,6 +147,3 @@ Dostupné informace jsou název dodavatele, adresy, kontaktní informace, kontak
 ## <a name="additional-resources"></a>Další zdroje
 
 [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,6 +61,3 @@ Další podrobnosti o aktualizaci Platform 29 pro Finance and Operations získá
 Změny v záznamech o zaměstnancích se zřídka projeví okamžitě. Je nutné aktualizovat data k počátečnímu datu zaměstnance, které je často v budoucnu, a také je nutné aktualizovat informace v minulosti. Díky tomuto modernímu navigačnímu modelu budete moci aktualizovat budoucí i minulá data, aniž by bylo nutné přecházet do více formulářů nebo měnit kontext dat. Tato změna také dynamicky propaguje a zobrazí klíčové informace v horní části hlavičky záznamu zaměstnance.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

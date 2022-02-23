@@ -66,6 +66,3 @@ Názory, novinky a jiné informace o modulu Závazky a jiných řešeních nalez
 ### <a name="videos"></a>Videa
 Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

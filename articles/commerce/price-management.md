@@ -2,24 +2,27 @@
 title: Správa prodejní ceny v aplikaci Retail
 description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 07/28/2021
+manager: AnnBe
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759278"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410659"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -46,7 +49,7 @@ Cenová skupina je sama o sobě pouze název, popis, popřípadě priorita cenov
 
 Následující obrázek znázorňuje, jak se cenové skupiny používají. Na tomto obrázku si všimněte, že „Cenová skupina“ je doslova centrem správy cen a slev. Enity Commerce, které můžete použít ke správě rozdílových cen a slev, jsou vlevo, a záznamy skutečné ceny a slevy se nacházejí napravo.
 
-![Cenové skupiny.](./media/PriceGroups.png "Cenové skupiny")
+![Cenové skupiny](./media/PriceGroups.png "Cenové skupiny")
 
 Při vytvoření cenových skupin nepoužívejte jednu cenovou skupinu pro více typů entit Commerce. V opačném případě může být obtížné určit, proč se konkrétní cena nebo sleva použije na transakci.
 
@@ -214,21 +217,20 @@ Při nastavení prodejních cen v aplikaci Dynamics 365 nezadáváte, zda hodnot
 
 Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležité správné nastavení ceny, vzhledem k tomu, že celková částka, kterou zákazník platí, se změní, pokud se změní nastavení **Cena včetně DPH** na kanálu.
 
-## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Rozdíly mezi cenami Commerce a cenami jinými než Commerce
+## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Rozdíly mezi maloobchodní cenou a cenou mimo maloobchod
 
-Jediný cenový modul se používá k výpočtu cen ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře Commerce.
+Jediný cenový modul se používá k výpočtu cen ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře obchodování.
 
-Cenová kalkulace je určena k práci s entitami Commerce namísto entit mimo Commerce. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
+Cenová kalkulace je určena k práci s maloobchodními entitami namísto entit mimo maloobchod. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
 
-Cenový modul Commerce **nepodporuje** následující cenové funkce:
+Cenový modul **nepodporuje** následující cenové funkce:
 
 - Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, bude cenový modul ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
 - Ocenění založené na atributech není podporováno.
 - Předávání slev dodavatelů není podporováno.
-- Funkce obecné měny není podporována, tj. i když obchodní smlouva má zapnutý přepínač **Zahrnout obecnou měnu**, přesto bude tato obchodní smlouva považována za platnou pouze pro měnu definovanou v obchodní smlouvě.
 - Standardní cenový modul Supply Chain Management podporuje výpočet ceny na základě požadovaného data expedice a požadovaného data příjmu spolu s aktuálním datem. Maloobchodní ceny však v současné době tyto hodnoty nepodporují. Důvodem je to, že u scénářů B2C zákazníci neočekávají, že požadované datum dodání ovlivní cenu položky. V některých případech mají maloobchodníci provoz B2B i B2C. U operací B2B je běžné měnit ceny na základě dodacích termínů. Tito maloobchodníci mohou pro svou firmu B2B použít ceny Supply Chain Management a maloobchodní cenu pro svou firmu B2C. Maloobchodní ceny se na začátku použití, pouze pokud je uživatel aplikace přidán jako uživatel call centra, takže maloobchodníci mohou přiřadit určité uživatele, kteří budou pracovat s cenou Supply Chain Management, a přiřadit několik uživatelů, kteří budou pracovat s maloobchodními cenami, tj. by tito uživatelé měli být přidáni jako uživatelé call centra. Dále platí, že musí být zapnutá vlastnost **Použít k výpočtu cen dnešní datum** v části **Parametry obchodu > ceny a slevy > Různé**. Tímto způsobem mohou udržovat použitou hodnotu parametru účtů pohledávek pro Požadované datum dodání nebo Požadované datum přijetí pro stanovení ceny Supply Chain Management, ale maloobchodní ceny budou pro výpočet ceny nadále používat dnešní datum.
 
-**Pouze** cenový modul Commerce podporuje následující cenové funkce:
+**Pouze** cenový modul podporuje následující cenové funkce:
 
 - Cena je založena na dimenzích produktu, v pořadí od nejkonkrétnější ceny varianty přes nejméně konkrétní cenu varianty, po cenu základního produktu. Cena, která je nastavena pomocí dvou dimenzí produktu (například barva a velikost), se používá před cenou, která je nastavena pomocí pouze jedné dimenze produktu (například velikost).
 - Stejnou cenovou skupinu lze použít ke kontrole cen a slev.
@@ -237,7 +239,4 @@ Cenový modul Commerce **nepodporuje** následující cenové funkce:
 
 Cena je jedním z nejdůležitějších faktorů, které kontrolují nákupní rozhodnutí mnoha odběratelů, a mnoho zákazníků porovnává ceny na různých webech, než něco nakoupí. Aby se zajistilo, že budou poskytovat konkurenční ceny, maloobchodníci pozorně sledují své konkurenty a často pořádají promoakce. Chcete-li tedy pomoci těmto prodejcům přilákat zákazníky, je velmi důležité, aby vyhledávání produktů, funkce procházení, seznamy a stránka podrobností o produktu zobrazovalo nejpřesnější ceny.
 
-Rozhraní API **GetActivePrices** v Commerce vrátí ceny, které zahrnují jednoduché slevy (například jednořádkové slevy, které nezávisejí na jiných položkách nákupního košíku). Tímto způsobem jsou zobrazené ceny blízké skutečné částce, kterou odběratelé za položky zaplatí. Toto rozhraní API zahrnuje všechny typy jednoduchých slev: založené na místu, věrnostní, katalogové a založené na kanálu. Rozhraní API navíc vrací názvy a informace o platnosti pro použité slevy, takže maloobchodní prodejci mohou poskytnout podrobnější popis ceny a vytvořit pocit naléhavosti, pokud platnost slevy brzy vyprší.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+V nadcházejícím vydání aplikace Commerce bude rozhraní API **GetActivePrices** vracet ceny, které zahrnují jednoduché slevy (například jednořádkové slevy, které nezávisejí na jiných položkách nákupního košíku). Tímto způsobem jsou zobrazené ceny blízké skutečné částce, kterou odběratelé za položky zaplatí. Toto rozhraní API bude zahrnovat všechny typy jednoduchých slev: založené na místu, věrnostní, katalogové a založené na kanálu. Rozhraní API navíc vrátí názvy a informace o platnosti pro použité slevy, takže maloobchodní prodejci mohou poskytnout podrobnější popis ceny a vytvořit pocit naléhavosti, pokud platnost slevy brzy vyprší.

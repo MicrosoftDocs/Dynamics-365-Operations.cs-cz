@@ -1,32 +1,30 @@
 ---
 title: Odpojení klienta
-description: Toto téma vysvětluje, jak postupovat při odpojení zákazníka od jeho prostředí.
-author: twheeloc
-ms.date: 08/19/2021
+description: Tento článek vysvětluje, jak postupovat při bezdůvodném odpojení odběratele od jeho prostředí.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071128"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4417717"
 ---
 # <a name="client-disconnects"></a>Odpojení klienta
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Podrobnosti o prostředí** 
 
@@ -54,6 +52,3 @@ Microsoft Dynamics 365 Human Resources odpojuje uživatele, když jsou současn�
 Ujistěte se, že pro daný typ prohlížeče je současně otevřeno pouze jedno prostředí. Uživatelé mohou otevřít více relací do stejného prostředí (více záložek ve stejném prohlížeči).
 
 Uživatelé, kteří chtějí přeskakovat mezi dvěma prostředími současně, by měli otevřít každé prostředí v jiném typu prohlížeče. (Například uživatel A může zobrazit prostředí 1 v Chrome a prostředí 2 v Microsoft Edge.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

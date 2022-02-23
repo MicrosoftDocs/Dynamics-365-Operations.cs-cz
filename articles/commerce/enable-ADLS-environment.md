@@ -1,14 +1,17 @@
 ---
 title: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
-description: Toto téma obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
+description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 author: bebeale
-ms.date: 08/31/2020
+manager: AnnBe
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,41 +19,44 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 27e4f1c751ee865b0df536f3c1912cb1d8946032
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466285"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410694"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
+V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 
-V řešení Dynamics 365 Commerce jsou data nezbytná k výpočtu doporučení, produktů a transakcí agregována v úložišti Entity prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 vlastněnému zákazníkem.
+## <a name="overview"></a>Přehled
 
-Po dokončení výše uvedených kroků se všechna zákaznická data v úložišti entit prostředí automaticky zrcadlí do řešení Azure Data Lake Storage Gen 2 zákazníka. Když jsou funkce doporučení povoleny prostřednictvím pracovního prostoru správy funkcí v centrále Commerce, bude zásobníku doporučení udělen přístup ke stejnému řešení Azure Data Lake Storage Gen2.
+V řešení Dynamics 365 Commerce jsou všechny informace o produktech a transakcích sledovány v úložišti entit prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 vlastněnému zákazníkem.
 
-Během celého procesu zůstávají data zákazníků chráněna a pod jejich kontrolou.
+Protože Azure Data Lake Storage je nakonfigurováno v prostředí, jsou všechna potřebná data zrcadlena z úložiště entit a přitom jsou stále chráněna a pod kontrolou odběratele.
+
+Pokud jsou v prostředí také povolena doporučení produktu nebo přizpůsobená doporučení, bude mít zásobník doporučení produktu přístup k vyhrazené složce v Azure Data Lake Storage, aby bylo možné načíst data odběratele a vypočítávat doporučení na jejich základě.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Úložiště entit prostředí Dynamics 365 Commerce musí být připojeno k účtu Azure Data Lake Gen Storage Gen2 a doprovodným službám.
+Zákazníci musí mít Azure Data Lake Storage nakonfigurované v předplatném Azure, které vlastní. Toto téma nezahrnuje nákup předplatného Azure nebo nastavení účtu úložiště s podporou Azure Data Lake Storage.
 
-Další informace o Azure Data Lake Storage Gen2 a o tom, jak ho nastavit, naleznete v [oficiální dokumentaci Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Další informace o Azure Data Lake Storage naleznete v [oficiální dokumentaci Azure Data Lake Storage Gen2](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Kroky konfigurace
 
-V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení Azure Data Lake Storage Gen2 v prostředí ve vztahu k doporučením produktu.
-Podrobnější přehled kroků potřebných k povolení Azure Data Lake Storage Gen2 naleznete v tématu [Nastavení úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+V této části jsou popsány konfigurační kroky, které jsou nezbytné pro povolení Azure Data Lake Storage v prostředí ve vztahu k doporučením produktu.
+Podrobnější přehled kroků potřebných k povolení Azure Data Lake Storage naleznete v tématu [Nastavení úložiště entit jako Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Povolení Azure Data Lake Storage v prostředí
 
 1. Přihlaste se k portálu administrativního systému prostředí.
 1. Vyhledejte **Systémové parametry** a přejděte na kartu **Datová připojení**. 
 1. Nastavte možnost **Povolit integraci s Data Lake** na **Ano**.
+1. Nastavte možnost **Postupná aktualizace Data Lake** na **Ano**.
 1. Dále zadejte následující požadované informace:
     1. **ID aplikace** // **Tajný klíč aplikace** // **Název DNS** - Je třeba se připojit ke KeyVault, kde je uložen tajný klíč Azure Data Lake Storage.
     1. **Název tajného klíče** - Název tajného klíče uloženého v KeyVault a použitého k ověření s Azure Data Lake Storage.
@@ -58,7 +64,7 @@ Podrobnější přehled kroků potřebných k povolení Azure Data Lake Storage 
 
 Následující obrázek znázorňuje příklad konfigurace Azure Data Lake Storage.
 
-![Příklad konfigurace Azure Data Lake Storage.](./media/exampleADLSConfig1.png)
+![Příklad konfigurace Azure Data Lake Storage](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Test připojení Azure Data Lake Storage
 
@@ -66,7 +72,7 @@ Následující obrázek znázorňuje příklad konfigurace Azure Data Lake Stora
 1. Otestujte připojení k Azure Data Lake Storage pomocí odkazu **Testovat úložiště Azure**.
 
 > [!NOTE]
-> Pokud se některý z testů nezdaří, ověřte správnost všech výše popsaných informací o KeyVault a potom to zkuste znovu.
+> Pokud se testy nezdaří, zkontrolujte správnost výše popsaných informací o KeyVault a potom to zkuste znovu.
 
 Jakmile jsou testy připojení úspěšné, je nutné povolit automatickou aktualizaci úložiště entit.
 
@@ -78,7 +84,7 @@ Chcete-li povolit automatickou aktualizaci pro úložiště entit, postupujte n�
 
 Následující obrázek znázorňuje příklad úložiště entit s povolenou automatickou aktualizací.
 
-![Příklad úložiště entit s povolenou automatickou aktualizací.](./media/exampleADLSConfig2.png)
+![Příklad úložiště entit s povolenou automatickou aktualizací](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage je nyní nakonfigurováno pro prostředí. 
 
@@ -109,6 +115,3 @@ Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporuč
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

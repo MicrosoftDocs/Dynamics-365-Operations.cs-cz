@@ -2,9 +2,11 @@
 title: Rozdělení práce
 description: Toto téma obsahuje informace o funkci rozdělení práce. Tato funkce umožňuje rozdělit velké pracovní příkazy na několik menších pracovních příkazů, které pak můžete přiřadit několika pracovníkům skladu. Tímto způsobem může stejnou práci vydat současně několika pracovníky skladu.
 author: mirzaab
+manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -12,17 +14,15 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778250"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965520"
 ---
 # <a name="work-split"></a>Rozdělení práce
-
-[!include [banner](../includes/banner.md)]
 
 Funkce rozdělení práce umožňuje rozdělit velké pracovní ID (tzn. pracovní příkazy obsahující několik řídků) na několik menších pracovních ID, které pak můžete přiřadit několika pracovníkům skladu. Tímto způsobem může stejné číslo vytvoření práce vydat současně několik pracovníků skladu.
 
@@ -33,7 +33,7 @@ Funkce rozdělení práce umožňuje rozdělit velké pracovní ID (tzn. pracovn
 
 Než budete moci použít funkci rozdělení práce, musíte zapnout funkci a její nezbytnou funkci ve vašem systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkcí a zapnout ji dle potřeby.
 
-Nejprve zapnout požadovanou funkci *Blokování práce v celé organizaci*, pokud již není zapnutá. Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout. Ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) je však tato funkce uvedena následovně:
+Nejprve zapnout požadovanou funkci *Blokování práce v celé organizaci*, pokud již není zapnutá. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Blokování práce napříč organizací*
@@ -53,7 +53,7 @@ Funkce *Rozdělení práce* přidá následující dvě tlačítka na kartu **Pr
 - **Rozdělení práce** - Rozdělte ID aktuální práce do několika menších ID práce, která lze zpracovat samostatnými pracovníky.
 - **Zrušte relaci rozdělení práce** - Zrušte relaci rozdělení práce a zpřístupněte práci ke zpracování.
 
-![Tlačítka relace Rozdělit práci a Zrušit rozdělení práce.](media/Work_split_buttons.png "Tlačítka relace Rozdělit práci a Zrušit rozdělení práce")
+![Tlačítka relace Rozdělit práci a Zrušit rozdělení práce](media/Work_split_buttons.png "Tlačítka relace Rozdělit práci a Zrušit rozdělení práce")
 
 > [!IMPORTANT]
 > Tlačítko **Rozdělit práci** nebude k dispozici, pokud bude splněna některá z následujících podmínek:
@@ -69,7 +69,7 @@ Funkce *Rozdělení práce* přidá následující dvě tlačítka na kartu **Pr
 >
 > - Práce je aktuálně rozdělena jiným uživatelem. Pokud se pokusíte otevřít rozdělovací stránku pro práci, která je již rozdělena jiným uživatelem, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělena. Zkuste to znovu za několik minut. Pokud budete nadále dostávat tuto zprávu, obraťte se na nadřízeného.“
 
-Nový důvod blokování práce *Rozdělení práce* označuje, kdy je ID práce v procesu rozdělení. Je to zobrazeno jak na stránce **Rozdělit práci** a v mobilní aplikaci Řízení skladu, pokud se uživatel pokusí spustit práci. Pokud jsou použity důvody blokování, název pole **Blokovaná vlna** z ID práce se změní na **Blokováno**.
+Nový důvod blokování práce *Rozdělení práce* označuje, kdy je ID práce v procesu rozdělení. Je to zobrazeno jak na stránce **Rozdělit práci** a v aplikaci skladu, pokud se uživatel pokusí spustit práci. Pokud jsou použity důvody blokování, název pole **Blokovaná vlna** z ID práce se změní na **Blokováno**.
 
 ## <a name="initiate-a-work-split"></a>Zahajte rozdělení práce
 
@@ -96,7 +96,7 @@ Chcete-li rozdělit práci, postupujte takto.
 
     Pole **Důvod blokování práce** pro aktuální práci bude nastaveno na *Rozdělit práci* a práce bude zablokována.
 
-    ![Důvod blokování.](media/Blocking_reason.png "Důvod blokování")
+    ![Důvod blokování](media/Blocking_reason.png "Důvod blokování")
 
 1. Vyberte řádky, které chcete odebrat z aktuálního ID práce a přidat do nového ID práce. Dojde k následujícím událostem:
 
@@ -147,13 +147,10 @@ Chcete-li dokončit rozdělení práce, důvod blokování *Rozdělit práci* mu
 
 Po odstranění důvodu blokování *Rozdělit práci* lze práci spustit na mobilním zařízení, pokud je stav **Blokováno** nastaven na *Ne* na ID práce.
 
-## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Blokování uživatelů v mobilní aplikaci Řízení skladu
+## <a name="user-blocking-on-the-warehouse-app"></a>Blokování uživatelů v aplikaci Sklad
 
-Pokud se pokusíte použít mobilní aplikaci Řízení skladu pro spuštění práce výdeje proti ID práce, která je rozdělována, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělována." Pokud se se vám zobrazí tato zpráva, vyberte **Storno**. Poté můžete pokračovat ve zpracování dalších prací.
+Pokud se pokusíte použít apliaci skladu pro spuštění práce výdeje proti ID práce, která je rozdělována, zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je v současné době rozdělována." Pokud se se vám zobrazí tato zpráva, vyberte **Storno**. Poté můžete pokračovat ve zpracování dalších prací.
 
 ## <a name="other-blocked-operations"></a>Další blokované operace
 
 Veškeré operace, které upravují pracovní řádky, transakce zásob práce nebo odkazy doplňování, které souvisejí s prací, která je rozdělována, se nezdaří a zobrazí se následující chybová zpráva: „Práce s ID \#\#\#\# je právě rozdělována.“
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

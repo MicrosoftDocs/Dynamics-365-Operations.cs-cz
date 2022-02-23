@@ -2,24 +2,27 @@
 title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717788"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517081"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -27,7 +30,9 @@ ms.locfileid: "6717788"
 
 Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
-Termín *buy box* se obvykle vztahuje k oblasti stránky s podrobnostmi o produktu (PDP), která se nachází „above the fold“ a která je hostitelem nejdůležitějších informací vyžadovaných k provedení nákupu produktu. (Oblast „above the fold“ je viditelná po prvním načtení stránky, takže uživatelé nemusejí posouvat zobrazení směrem dolů, aby ji viděli.)
+## <a name="overview"></a>Přehled
+
+Termín *buy box* se obvykle vztahuje k oblasti stránky s podrobnostmi o produktu, která se nachází „above the fold“ a která je hostitelem nejdůležitějších informací vyžadovaných k provedení nákupu produktu. (Oblast „above the fold“ je viditelná po prvním načtení stránky, takže uživatelé nemusejí posouvat zobrazení směrem dolů, aby ji viděli.)
 
 Modul buy boxu je speciální kontejner, který slouží k hostování všech modulů, které jsou zobrazeny v oblasti buy boxu na stránce podrobností produktu.
 
@@ -35,7 +40,7 @@ Adresa URL stránky s podrobnostmi o produktu obsahuje ID produktu. Všechny inf
 
 Následující obrázek ukazuje příklad modulu buy boxu na stránce s podrobnostmi o produktu.
 
-![Příklad modulu buy boxu.](./media/ecommerce-pdp-buybox.PNG)
+![Příklad modulu buy boxu](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Vlastnosti a pozice modulu buy boxu 
 
@@ -67,16 +72,14 @@ Následující nastavení modulu buy boxu lze konfigurovat na **Nastavení webu 
 
 - **Limit množství na řádku košíku** – Tato vlastnost se používá k určení maximálního počtu jednotlivých položek, které lze přidat do nákupního košíku. Maloobchodní prodejce může například rozhodnout, že v jedné transakci lze prodávat pouze 10 jednotlivých produktů.
 - **Zásoby** – Informace, jak použít nastavení zásob, naleznete v části [Použití nastavení zásob](inventory-settings.md).
-- **Přidat produkt do košíku** – Informace o tom, jak použít nastavení **Přidat produkt do košíku**, viz [Nastavení přidání produktu do košíku](add-cart-settings.md).
-
-## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Rozšíření definice modulu buy boxu v motivu Adventure Works
-
-Modul buy boxu, který poskytuje motiv Adventure Works, má rozšíření definice modulu, které podporuje implementaci modulu specifikací produktu v modulu Accordion v buy boxu PDP. Chcete-li předvést atributy specifikace produktu v buy boxu PDP, přidejte modul specifikace produktu do slotu modulu Accordion ve slotu buy boxu.
-
+- **Přidat produkt do nákupního košíku** – Tato vlastnost se používá ke specifikaci chování po přidání položky do košíku. Možné hodnoty jsou **Přejít na stránku nákupního košíku**, **Nepřecházet na stránku nákupního košíku** a **Zobrazit oznámení**. Když je tato hodnota nastavena na **Přejít na stránku nákupního košíku**, uživatelé jsou po přidání položky přesměrováni na stránku nákupního košíku. Když je tato hodnota nastavena na **Nepřecházet na stránku nákupního košíku**, uživatelé nejsou po přidání položky přesměrováni na stránku nákupního košíku. Když je hodnota nastavena na **Zobrazit oznámení**, uživatelům se zobrazí potvrzovací oznámení a poté mohou nadále procházet stránku podrobností o produktu. 
 
 > [!IMPORTANT]
-> Motiv Adventure Works je k dispozici od Dynamics 365 Commerce verze 10.0.20.
+> Nastavení webu **Přidat produkt do nákupního košíku** jsou k dispozici ve vydání Dynamics 365 Commerce 10.0.11. Pokud provádíte aktualizaci ze starší verze Dynamics 365 Commerce, musíte ručně aktualizovat soubor appsettings.json. Pokyny k aktualizaci souboru appsettings.json najdete v části [Aktualizace SDK a knihoven modulů](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
+Následující obrázek ukazuje příklad potvrzovacího oznámení „přidáno do košíku“ na webu Fabrikam.
+
+![Příklad modulu oznámení](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 
@@ -130,11 +133,6 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 
 [Modul sdílení na sociálních sítích](social-share-module.md)
 
-[Přidání produktu do nastavení košíku](add-cart-settings.md)
-
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
 
 [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

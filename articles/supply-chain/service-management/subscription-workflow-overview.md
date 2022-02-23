@@ -1,25 +1,29 @@
 ---
 title: Přehled workflowu odběru
 description: Toto téma poskytuje přehled workflowu předplatného.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd1484563e9650b9ddae543e3440eec2a3ed075c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f023ddd8d6f9350702f687763b53b057baa9aed8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983037"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423765"
 ---
 # <a name="subscription-workflow-overview"></a>Přehled workflowu odběru 
 
@@ -53,6 +57,3 @@ Na konci každého měsíce připíšete časově rozlišené výnosy z předpla
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

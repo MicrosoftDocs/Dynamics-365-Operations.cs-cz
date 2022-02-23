@@ -1,25 +1,28 @@
 ---
 title: Vytvoření receptury kopírováním z existující receptury
 description: Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury.
-author: johanhoffmann
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable, BOMRouteCopyDialog, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d430d1f02789566d136a0e0f0d8dde80934dad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3a553add531da9a8117af0830efb2d1b68e9b2e3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579177"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423539"
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Vytvoření receptury kopírováním z existující receptury
 
@@ -54,6 +57,3 @@ Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z ně
 3. Klikněte na tlačítko OK.
 4. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

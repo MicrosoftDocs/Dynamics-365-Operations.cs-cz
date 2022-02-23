@@ -2,30 +2,35 @@
 title: Konfigurace hodnocení a recenzí
 description: V tomto tématu je popsán postup při konfiguraci webu elektronického obchodování pro zobrazení hodnocení a recenzí zákazníků v řešení Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968095"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410685"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurace hodnocení a recenzí
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán postup při konfiguraci webu elektronického obchodování pro zobrazení hodnocení a recenzí zákazníků v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Hodnocení a recenze na webech elektronických obchodů pomáhají zákazníkům lépe se seznámit s produkty před tím, než se je rozhodnou zakoupit, a to zobrazením, co si ostatní zákazníci o těchto produktech myslí. U webů elektronického obchodování jsou hodnocení a recenze také mechanismem pro shromažďování názorů o produktech od zákazníků. 
 
@@ -44,7 +49,7 @@ Chcete-li nakonfigurovat web tak, aby zobrazoval hodnocení a recenze, postupujt
 
 Následující obrázek znázorňuje, jak vypadá tato konfigurace v řešení Dynamics 365 Commerce.
 
-![Konfigurace webu pro zobrazení hodnocení a recenzí.](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurace webu pro zobrazení hodnocení a recenzí](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Propojení hodnocení produktu se sekcí Recenze na stránce s podrobnostmi o produktu
 
@@ -58,7 +63,7 @@ Chcete-li propojit hodnocení produktu se sekcí **Recenze** na stránce s podro
 
 Následující obrázek znázorňuje, jak vypadá tato konfigurace v řešení Dynamics 365 Commerce.
 
-![Propojení hodnocení produktu se sekcí Recenze na stránce s podrobnostmi o produktu.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Propojení hodnocení produktu se sekcí Recenze na stránce s podrobnostmi o produktu](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurace odkazu na stránku ochrany osobních údajů a zásad
 
@@ -73,7 +78,7 @@ Chcete-li konfigurovat odkaz na stránku ochrany osobních údajů a zásad, pos
 
 Následující obrázek znázorňuje, jak vypadá tato konfigurace v řešení Dynamics 365 Commerce.
 
-![Konfigurace odkazu na stránku ochrany osobních údajů a zásad.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurace odkazu na stránku ochrany osobních údajů a zásad](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurovat moduly hodnocení a recenzí na stránkách s podrobnostmi o produktu
 
@@ -87,17 +92,6 @@ Informace týkající se konfigurace hodnocení a recenzí na stránkách s podr
 
 [Správa hodnocení a recenzí](manage-reviews.md)
 
+[Konfigurovat moduly hodnocení a recenzí na stránkách s podrobnostmi o produktu](ratings-reviews-modules.md)
+
 [Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
-
-[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
-
-[Import a export hodnocení a recenzí](import-export-reviews.md)
-
-[Konfigurace ověřování mezi službami](service-to-service-auth.md)
-
-[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
-
-[Moduly hodnocení a recenzí](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

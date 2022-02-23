@@ -2,23 +2,26 @@
 title: Definování platebních podmínek dodavatelů
 description: Toto téma vysvětluje, jak nastavit platební podmínky pro faktury dodavatele.
 author: abruer
+manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e70a68ab5e14e8dadfd8d61f696f5971c8e60262d0fd55c5de1589e572ff8085
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e6778f61a9367399e4b71d5b2bb2459c09ba508
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722976"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440995"
 ---
 # <a name="define-vendor-payment-terms"></a>Definování platebních podmínek dodavatelů
 
@@ -44,6 +47,3 @@ Toto téma vysvětluje, jak nastavit platební podmínky pro faktury dodavatele.
 16. Zadejte hlavní účet, na který budou platební slevy zaúčtovány pro faktury odběratelů, a poté zadejte hlavní účet, na který budou platební slevy zaúčtovány pro faktury dodavatelů. Je-li hodnota **Slevové protiúčty** nastavena na **Použít hlavní účet pro slevu dodavatele**, použije se Hlavní účet. Pokud je možnost nastavena na **Účty na řádcích faktury**, platební sleva se zaúčtuje do účtů majetku / nákladů na řádky faktury.  
 17. Zvolte **Uložit**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

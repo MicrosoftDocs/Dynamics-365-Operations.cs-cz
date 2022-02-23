@@ -1,23 +1,26 @@
 ---
 title: Vytvoření nového stavu životního cyklu produktu
 description: Tento postup popisuje, jak vytvořit nový stav cyklu životnosti produktu.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c8087bcf6697407cabcd1a35437f222b500dec3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ab5624423c3e463d673e91bd056e5e80d9bb9944
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568344"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423668"
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Vytvoření nového stavu životního cyklu produktu
 
@@ -32,6 +35,3 @@ Tento postup popisuje, jak vytvořit nový stav cyklu životnosti produktu. Stav
 3. Zadejte hodnotu do pole Stav.
 4. Zadejte nějakou hodnotu do pole Popis.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

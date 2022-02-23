@@ -80,6 +80,3 @@ Pokud máte potíže s publikováním prací na LinkedIn, nahlédněte do část
 [Zazdrojování kandidátů s využitím LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Odstraňování potíží s integrací s řešením LinkedIn](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

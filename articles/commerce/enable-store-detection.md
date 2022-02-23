@@ -2,30 +2,36 @@
 title: Povolení zjišťování obchodu na základě polohy
 description: Tohle téma popisuje, jak zapnout zjišťování obchodu na základě polohy pro web Dynamics 365 Commerce.
 author: brianshook
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98aa781a42b1c82cc00c8a680007b7200e9c7413fb8e3a67b0c723ff62c1d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749869"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517299"
 ---
 # <a name="enable-location-based-store-detection"></a>Povolení zjišťování obchodu na základě polohy
+
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma popisuje, jak zapnout zjišťování obchodu na základě polohy pro web Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Zjišťování obchodu na základě polohy umožňuje poskytovat zákazníkům relevantní obsah webu na základě jejich umístění. Je-li zapnuto zjišťování obchodu na základě polohy, služba vykreslování Commerce používá informace o zemi nebo oblasti z IP adresy webového prohlížeče zákazníka k nasměrování zákazníka na nejvhodnější geografickou konfiguraci webu, která je k dispozici.
 
@@ -63,6 +69,3 @@ Chcete-li zapnout zjišťování obchodu na základě polohy, postupujte podle n
 [Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

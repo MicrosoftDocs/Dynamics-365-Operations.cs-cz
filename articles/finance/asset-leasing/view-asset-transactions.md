@@ -2,25 +2,28 @@
 title: Zobrazení transakcí závazků, majetku a nákladů
 description: Toto téma vysvětluje, jak zobrazit transakce s pronajatým majetkem. Tyto transakce zahrnují transakce odpovědnosti za leasing a transakce prováděcích výdajů, které byly zaúčtovány.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysQueryForm
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 58a57b2a1237b41c99e44cf40c57d80257fc9b5b77188586aab6735a8a3f4984
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7008891d194dc990d13a9f56db155c6990aae0c0
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765733"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441370"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Zobrazení transakcí závazků, majetku a nákladů
 
@@ -45,6 +48,3 @@ Na stránce **Majetkové transakce** se zobrazují transakce, které buď zvyšu
 Chcete-li zobrazit výdajové leasingové transakce, vyberte leasing na stránce **Souhrn pronájmu** a poté vyberte **Knihy** k otevření leasingových knih, které jsou připojeny k záznamu o leasingu. Pak vyberte **Výdajové transakce**.
 
 Na stránce **Výdajové transakce** se zobrazují všechny výdaje, které byly zaúčtovány oproti leasingu, jako jsou úrokové náklady, výdaje na odpisy a jakékoli zachraňovací náklady.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

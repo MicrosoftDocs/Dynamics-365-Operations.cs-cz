@@ -2,13 +2,16 @@
 title: Vytvoření doporučení s ukázkovými daty
 description: Toto téma poskytuje pokyny, jak využívat doporučení Omni kanálu v prostředích s jedním polem na úrovni 1, pomocí předem naplněných a přizpůsobitelných ukázkových dat.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1a9592ee5cae88c6277115ed495b15ec09945e56cad0634fd246b6ee7e5dd048
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741031"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410655"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Vytvoření doporučení s ukázkovými daty
 
@@ -87,6 +90,3 @@ Přípona obsahuje datový objekt s názvem 'RecoMockDataset.csv', který vám u
 [Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Nastavení dokladů převodu pro pohyb zboží v rámci společnosti
-description: Tato procedura ukazuje postup nastavení přepravních dokladů pro pohyb zboží v rámci společnosti.
+description: Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti.
 author: v-oloski
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 80805bf30b4be753d7543ed4c6de30401d36e981
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: e85bd359ce1053629ad4217cf623e57b2976463a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601443"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441199"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Nastavení dokladů převodu pro pohyb zboží v rámci společnosti
 
@@ -71,6 +74,3 @@ Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zbož
 10. Klepněte na Dodací list.
 11. Klikněte na tlačítko OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

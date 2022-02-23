@@ -2,35 +2,37 @@
 title: Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
 description: Rozhraní pro provádění výrobního provozu je nastaveno pro každé zařízení ve výrobním provozu. Společnosti obvykle nastavují každé zařízení odlišně v závislosti na účelu, kterému zařízení slouží. Společnost může mít například jedno zařízení v recepci, kde pracovníci registrují příchod a odchod, a další v dílně, kde pracovníci spravují stanovené úkoly.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752825"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966265"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Nastavení zařízení pro spuštění rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Rozhraní pro provádění výrobního provozu je nastaveno pro každé zařízení ve výrobním provozu. Společnosti obvykle nastavují každé zařízení odlišně v závislosti na účelu, kterému zařízení slouží. Společnost může mít například jedno zařízení v recepci, kde pracovníci registrují příchod a odchod, a další v dílně, kde pracovníci spravují stanovené úkoly.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Nastavení konfigurace a filtrů pro konkrétní zařízení
 
-Chcete-li nastavit konfiguraci a filtry úloh pro zařízení, přihlaste se na stránce **Provádění výrobního provozu** pomocí účtu, který má roli zabezpečení zahrnující funkční oprávnění *Spravovat časový dohled*. (Mezi dodávanými rolemi zabezpečení má tohle funkční oprávnění pouze *Vedoucí dílny*.) Poté postupujte podle těchto kroků.
+Chcete-li nastavit konfiguraci a filtry úloh pro zařízení, přihlaste se na stránce **Provádění výrobního provozu** pomocí účtu, který má roli zabezpečení zahrnující funkční oprávnění *Supervizor doby údržby*. (Mezi dodávanými rolemi zabezpečení má tohle funkční oprávnění pouze *Vedoucí dílny*.) Poté postupujte podle těchto kroků.
 
-1. Přejděte na zařízení, které chcete nastavit, a přihlaste se k Microsoft Dynamics 365 Supply Chain Management jako vedoucí dílny. (Použijte účet, který obsahuje funkční oprávnění *Spravovat časový dohled*.)
+1. Přejděte na zařízení, které chcete nastavit, a přihlaste se k Microsoft Dynamics 365 Supply Chain Management jako vedoucí dílny. (Použijte účet, který obsahuje funkční oprávnění *Supervizor doby údržby*.)
 1. Ujistěte se, že je k dispozici konfigurace pro zařízení, které nastavujete. Pokud ještě žádná konfigurace neexistuje, je k dispozici výchozí konfigurace. Další informace o nastavení konfigurace najdete v části [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).
 1. Přejděte do nabídky **Řízení výroby \> Provádění výroby \> Provádění výrobního provozu**.
 
@@ -70,13 +72,10 @@ Chcete-li pracovníkovi umožnit přepsat výchozí filtry úloh, které byly pr
 
 Horní část následujícího obrázku ukazuje, jak rozhraní ve výchozím nastavení vypadá. Spodní část ukazuje, jak to vypadá v režimu celé obrazovky, když je skrytý navigační panel.
 
-![Standardní rozhraní vs. rozhraní na celou obrazovku.](media/pfei-full-screen.png "Standardní rozhraní vs. rozhraní na celou obrazovku")
+![Standardní rozhraní vs. rozhraní na celou obrazovku](media/pfei-full-screen.png "Standardní rozhraní vs. rozhraní na celou obrazovku")
 
 ## <a name="extend-the-session-past-12-hours"></a>Prodloužení relace na více než 12 hodin
 
 Ve výchozím nastavení se rozhraní pro provádění výrobního provozu automaticky odhlásí, pokud ho nikdo po dobu 12 hodin nepoužívá. Uživatel Supply Chain Management se poté musí znovu přihlásit. Časový limit však můžete prodloužit až na 90 dní.
 
 Chcete-li prodloužit časový limit, přihlaste se k Supply Chain Management a přejděte na **Správa systému \> Uživatelé \> Rozšíření relace**. Zadejte uživatelský účet Supply Chain Management, který se používá pro přihlášení k zařízení, a počet hodin, po které by relace měla zůstat aktivní.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

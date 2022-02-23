@@ -2,24 +2,27 @@
 title: Rozdělení období do periodických deníků
 description: Toto téma poskytuje informace o funkci rozdělení období do periodických deníků nebo opakujících se deníků pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšku, Polsku a Rusku.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 261354
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 91ae972203c7dab6df06a02a3024336a5b8f54376448005ea4fe033bb2159f2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ea11e94c188c04c6d3d8ab0173fcc2ba56335c3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407615"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
 
@@ -45,6 +48,3 @@ Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

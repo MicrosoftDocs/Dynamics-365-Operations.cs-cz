@@ -79,6 +79,3 @@ Chcete-li stáhnout **Referenční aplikaci**, přejděte na [Řešení rozšiř
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migrace aplikace mezi klienty a prostředími](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

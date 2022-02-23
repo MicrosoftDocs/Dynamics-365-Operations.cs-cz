@@ -1,23 +1,26 @@
 ---
 title: Vytvoření šablony volné faktury
 description: Tento postup ukazuje, jak vytvořit šablonu volné faktury.
-author: abruer
+author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1477227228ae9f79314d1e3b6da73446d660d108
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 8281de3cb336d9392a6a97f98e51a2a139a384c5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753685"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441023"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Vytvoření šablony volné faktury
 
@@ -65,6 +68,3 @@ Pro tuto ukázku použijte ukázkovou společnost USMF. Tento postup je určen p
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Uložení volné faktury jako šablony
 Můžete také uložit existující volnou fakturu jako šablonu. Když zvolíte na kartě Faktura možnost Uložit jako šablonu, zadejte název a popis šablony. Když šablona s názvem již existuje, zobrazí se upozornění, že šablona s tímto názvem již existuje. Můžete ji stále nahradit kliknutím na OK. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

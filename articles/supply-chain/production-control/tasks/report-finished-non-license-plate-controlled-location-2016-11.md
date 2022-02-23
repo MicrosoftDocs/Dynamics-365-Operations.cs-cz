@@ -1,25 +1,28 @@
 ---
 title: Ohlášení za dokončené pro umístění bez řízení na základě registračních značek (aplikace, květen 2016)
 description: Tento průvodce úkolem obsahuje ukázku dokončeného hlášení do skladového místa, které není řízeno registrační značkou.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f891b2e3b20993a08138dfac1aed4f4bab33c6b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a9010b95cfd0528cd3b532627d19a3b340bdca4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576705"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423507"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>Ohlášení za dokončené pro umístění bez řízení na základě registračních značek (aplikace, květen 2016)
 
@@ -59,6 +62,3 @@ Tento průvodce úkolem obsahuje ukázku dokončeného hlášení do skladového
 18. Klepněte na tlačítko Podrobnosti práce.
     * Pokud byla výrobní zakázka ohlášena jako dokončená, žádná práce nebyla pro vyskladnění vytvořena. K tomu dochází, protože jsou definovány zásady práce, které brání generování práce, když je produkt L0101 ohlášen za dokončený v umístění 001.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

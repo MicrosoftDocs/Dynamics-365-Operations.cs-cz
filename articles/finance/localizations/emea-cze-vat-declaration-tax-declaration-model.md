@@ -2,9 +2,11 @@
 title: Přiznání k DPH (Česká republika)
 description: Toto téma poskytuje informace o přiznání k dani z přidané hodnoty (DPH) pro Českou republiku.
 author: anasyash
-ms.date: 01/04/2022
+manager: AnnBe
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Czech Republic
 ms.author: anasyash
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 54cc526cc8f8220fd8297d5fd3858ca2a55147bf
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8bae6814c1cac06c4c1528a79903b5348338dffc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985069"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962878"
 ---
 # <a name="vat-declaration-czech-republic"></a>Přiznání k DPH (Česká republika)
 
@@ -94,13 +96,13 @@ Formát přiznání k DPH v České republice obsahuje následující oddíly:
 | Řádek | Oddíl kontrolního prohlášení | popis                                                         | Sazba     | Základ daně (prvek XML) | Plný odpočet daně (prvek XML) | Úprava odpočtu daně (prvek XML) | Pole sestavy (výsledek vyhledávání) |
 |-----|---------------------------|---------------------------------------------------------------------|----------|------------------------|----------------------------------|------------------------------------------|------------------------------|
 | 40  | B2/B3                     | Ze zdanitelných nákupů                                              | Standardní | pln23                  | odp\_taz23\_nar                  | odp\_tuz23                                | <p>**Plný odpočet:**</p><ul><li>PurchaseVATDeductionStandard</li><li>AcquiredAssetsStandard – VATAdjustmentVendorBadDebtsStandard</li></ul><p>**Úprava odpočtu:**</p><ul><li>PurchaseVATDeductionAdjustStandard</li><li>AcquiredAssetsAdjustStandard – VATAdjustmentVendorBadDebtsAdjustStandard</li></ul> |
-| 41  | B2/B3                     | Ze zdanitelných nákupů                                              | Snížená  | pln5                   | odp\_tuz5\_nar                   | odp\_tuz5                                 | <p>**Plný odpočet:**</p><ul><li>PurchaseVATDeductionReduced</li><li>PurchaseVATDeductionReduced2</li><li>AcquiredAssetsReduced – VATAdjustmentVendorBadDebtsReduced – VATAdjustmentVendorBadDebtsReduced2</li></ul><p>**Úprava odpočtu:**</p><ul><li>PurchaseVATDeductionAdjustReduced</li><li>PurchaseVATDeductionAdjustReduced2 – VATAdjustmentVendorBadDebtsAdjustReduced – VATAdjustmentVendorBadDebtsAdjustReduced2</li><li>AcquiredAssetsAdjustReduced</li></ul> |
+| 41  | B2/B3                     | Ze zdanitelných nákupů                                              | Snížená  | pln5                   | odp\_tuz5\_nar                   | odp\_tuz5                                 | <p>**Plný odpočet:**</p><ul><li>PurchaseVATDeductionReduced</li><li>PurchaseVATDeductionReduced2</li><li>AxquiredAssetsREduced – VATAdjustmentVendorBadDebtsReduced – VATAdjustmentVendorBadDebtsReduced2</li></ul><p>**Úprava odpočtu:**</p><ul><li>PurchaseVATDeductionAdjustReduced</li><li>PurchaseVATDeductionAdjustReduced2 – VATAdjustmentVendorBadDebtsAdjustReduced – VATAdjustmentVendorBadDebtsAdjustReduced2</li><li>AcquiredAssetsAdjustReduced</li></ul> |
 | 42  | Nelze použít            | Z dovozu zboží, když je finančním úřadem celní úřad | Nelze použít      | dov\_cu                 | odp\_cu\_nar                       | odp\_cu                                   | <p>**Plný odpočet:**</p><ul><li>ImportVATDeductionTaxAdminCustomsOffice</li></ul><p>**Úprava odpočtu:**</p><ul><li>ImportVATDeductionAdjustTaxAdminCustomsOffice</li></ul> |
 | 43  | Nelze použít            | Ze zdanitelných transakcí vykázaných v řádcích 3 až 13                 | Standardní | nar\_zdp23              | od\_zdp23                         | odkr\_zdp23                               | <p>**Plný odpočet:**</p><ul><li>VATDeductionFromPurchasesWithBATPayableStandard</li><li>EUPurchaseGoodsUseTaxStandard (řádek 3)</li><li>EUPurchaseServicesUseTaxStandard (řádek 5)</li><li>ImportGoodsUseTaxStandard (řádek 7)</li><li>EUPurchaseNewTransportUseTax (řádek 9)</li><li>DomesticPurchaseReverseChargeUseTaxStandard (řádek 10)</li><li>OtherPurchasesUseTaxStandard (řádek 12)</li></ul><p>**Úprava odpočtu:**</p><ul><li>VATDeductionAdjustFromPurchasesWithVATPayableStandard</li></ul> |
 | 44  | Nelze použít            | Ze zdanitelných transakcí vykázaných v řádcích 3 až 13                | Snížená  | nar\_zdp5               | od\_zdp5                          | odkr\_zdp5                                | <p>**Plný odpočet:**</p><ul><li>VATDeductionFromPurchasesWithVATPayableReduced</li><li>EUPurchaseGoodsUseTaxReduced (řádek 4)</li><li>EUPurchaseGoodsUseTaxReduced2 (řádek 4)</li><li>EUPurchaseServicesUseTaxReduced (řádek 6)</li><li>EUPrchaseServicesUseTaxReduced2 (řádek 6)</li><li>ImportGoodsUseTaxReduced (řádek 8)</li><li>DomesticPurchaseReverseChargeUseTaxReduced (řádek 11)</li><li>DomesticPurchaseReverseChargeUseTaxReduced (řádek 11)</li><li>OtherPurchasesUseTaxReduced (řádek 13)</li><li>OtherPurchasesUseTaxReduced2 (řádek 13)</li></ul><p>**Úprava odpočtu:**</p><ul><li>VATDeductionAdjustFromPurchasesWithVATPayableReduced</li></ul> |
 | 45  | Nelze použít            | Oprava odpočtů daně                                        | Nelze použít      | Nelze použít                    | odp\_rez\_nar                      | odp\_rezim                                | <p>**Plný odpočet:**</p><ul><li>VATDeductionCorrection</li></ul><p>**Úprava odpočtu:**</p><ul><li>VATDeductionAdjustCorrection</li></ul> |
 | 46  | Nelze použít            | Celkový odpočet<br>(40 + 41 + 42 + 43 + 44 + 45)                 | Nelze použít      | Nelze použít                    | odp\_sum\_nar                      | odp\_sum\_kr                               | |
-| 47  | Nelze použít            | Hodnota nabytého majetku definovaná v \§4 odst. d) ae)        | x        | nar\_maj                | od\_maj                           | odkr\_maj                                 | <p>Informační hodnota zahrnutá v řádcích 40 a 41.</p><p>**Plný odpočet:**</p><ul><li>AcquiredAssetsStandard</li><li>AcquiredAssetsReduced</li></ul><p>**Úprava odpočtu:**</p><ul><li>AcquiredAssetsAdjustStandard</li><li>AcquiredAssetsAdjustReduced</li></ul> |
+| 47  | Nelze použít            | Hodnota nabytého majetku definovaná v \§4 odst. d) ae)        | x        | nar\_maj                | od\_maj                           | odkr\_maj                                 | <p>Informační hodnota zahrnutá v řádcích 40 a 41.</p><p>**Plný odpočet:**</p><ul><li>AcquiredAssetsSTandard</li><li>AcquiredAssetsREduced</li></ul><p>**Úprava odpočtu:**</p><ul><li>AcquiredAssetsAdjustStandard</li><li>AxquiredAssetsAdjustReduced</li></ul> |
 
 ### <a name="section-5-reduction-of-the-right-to-deduct"></a><a name="righttodeduct"></a>Oddíl 5: Omezení nároku na odpočet
 
@@ -138,7 +140,7 @@ Oddíl A1 zobrazuje dokumenty, které generují částku v řádku 25 přiznán�
 |------------------------------------------------|---------------|
 | Číslo daňového dokladu                            | c\_evid\_dd   |
 | DIČ zákazníka (pouze číselná část) | ic\_odb       |
-| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | duzp          |
+| Datum (což je datum registrace k DPH)       | duzp          |
 | Kód předmětu                                   | kod\_pred\_pl |
 | Základ daně                                       | zakl\_dane1   |
 
@@ -172,7 +174,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 |-----------------------------------------------------|---------------|
 | Číslo daňového dokladu                                 | c\_evid\_dd   |
 | DIČ dodavatele (pouze číselná část)        | dic\_dod      |
-| <p>Datum</p><p>(Toto pole určuje datum registrace DPH dodavatele nebo příchozí faktury dodavatele.)</p> | duzp          |
+| Datum (což je datum příchozí faktury dodavatele) | duzp          |
 | Kód předmětu                                        | kod\_pred\_pl |
 | Základ daně se standardní sazbou                           | zakl\_dane1   |
 | Částka daně se standardní sazbou                         | dan1          |
@@ -182,8 +184,6 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Částka daně s druhou sníženou sazbou                   | dan3          |
 
 Chcete-li automaticky určit kód subjektu pro dokument, musíte použít stejná nastavení, která byla popsána v oddílu A1.
-
-Další informace o tom, jak definovat datum registrace dodavatele DPH, viz [Datum registrace dodavatele k DPH](emea-date-vendor-vat-register.md).
 
 ### <a name="section-a2-purchases-with-reverse-charge-excluding-domestic-reverse-charge-with-an-obligation-to-pay-vat"></a>Oddíl A2: Nákupy s přenesením daňové povinnosti, s výjimkou tuzemského přenesení daňové povinnosti, s povinností platit DPH
 
@@ -196,7 +196,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Číslo daňového dokladu                                                    | c\_evid\_dd |
 | DIČ dodavatele z jiného členského státu (pouze číselná část) | vatid\_dod  |
 | Země, která dodavateli přidělila DIČ                    | k\_stat     |
-| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | Dppd        |
+| Datum (což je datum registrace k DPH)                               | Dppd        |
 | Základ daně se standardní sazbou                                              | zakl\_dane1 |
 | Částka daně se standardní sazbou                                            | dan1        |
 | Základ daně s první sníženou sazbou                                         | zakl\_dane2 |
@@ -217,7 +217,7 @@ Tento oddíl poskytuje o každém dokumentu následující informace.
 | Číslo daňového dokladu                                           | c\_evid\_dd      |
 | DIČ zákazníka (pouze číselná část), pokud existuje   | vatid\_odb       |
 | Země, která zákazníkovi přidělila DIČ         | k\_stat          |
-| <p>Datum</p><p>(Toto pole určuje datum registrace plátce DPH.)</p> | dup              |
+| Datum (rejstřík DPH)                                           | dup              |
 | Hodnota prodeje                                        | osv\_plneni      |
 | Místo bydliště zákazníka, pokud nemá DIČ  | m\_pobytu\_sidlo |
 | Jméno a příjmení zákazníka, pokud nemá DIČ | jm\_prijm\_obch  |
@@ -271,7 +271,7 @@ Oddíl B2 poskytuje o každém dokumentu následující informace.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Číslo daňového dokladu                                                                                                                                 | c\_evid\_dd |
 | DIČ dodavatele                                                                                                                            | dic\_dod    |
-| <p>Datum</p><p>(Toto pole určuje datum registrace DPH dodavatele nebo příchozí faktury dodavatele.)</p>                                                              | Dppd        |
+| Datum (datum příchozí faktury dodavatele)                                                                                                          | Dppd        |
 | Základ daně se standardní sazbou                                                                                                                           | zakl\_dane1 |
 | Částka daně se standardní sazbou                                                                                                                         | dan1        |
 | Základ daně s první sníženou sazbou                                                                                                                      | zakl\_dane2 |
@@ -321,7 +321,7 @@ Chcete-li začít pracovat s přiznáním k DPH, měli byste si stáhnout formá
 - **Přiznání k DPH pro Excel (CZ)** – Tuto konfiguraci lze použít k náhledu částek přiznání k DPH v Microsoft Excel. Šablona aplikace Excel je k dispozici pouze v angličtině. Pokud musí být zpráva vytištěna v jiném jazyce, musíte provést malé přizpůsobení překladu šablony aplikace Excel do jiného jazyka a toto přizpůsobení musíte připojit k odvozené konfiguraci.
 - **Kontrolní hlášení DPH (CZ)** – Tato konfigurace je ve formátu XML DPHKH1.
 
-Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Další informace viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## <a name="set-up-application-specific-parameters-for-formats"></a>Nastavení parametrů specifických pro přihlášení pro dané formáty
 
@@ -353,7 +353,7 @@ Chcete-li automaticky generovat přiznání k DPH, musíte přidružit kódy DPH
 
 6. V poli **Stát** vyberte **Dokončeno** a zkontrolujte parametry.
 
-    [![Záložka s náhledem Podmínky na stránce s parametry specifickými pro aplikaci.](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+    [![Záložka s náhledem Podmínky na stránce s parametry specifickými pro aplikaci](media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
 
 7. V podokně Akce volbou **Export** exportujte parametry do souboru XML.
 8. Vyberte konfiguraci **Přiznání k DPH pro Excel (CZ**) a poté v podokně Akce volbou **Import** importujte parametry, pro které jste nakonfigurovali **Přiznání k DPH v XML (CZ)**. 
@@ -382,7 +382,7 @@ Chcete-li automaticky klasifikovat transakci podle kódu subjektu přenesení da
     |---------------|----------------------------|-------------------------------------|---------|
     | Ostatní         | \*Bianko\*                  | \*Neprázdné\*                       | Tento řádek musí být vytvořen, aby se zabránilo generování chybové zprávy u transakcí, které nemají kód přenesení daňové povinnosti. |
 
-[![Vyhledání kódu subjektu.](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[![Vyhledání kódu subjektu](media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
 
 ### <a name="set-up-parameters-for-fulfillment-mode-codes"></a>Nastavení parametrů pro kódy režimu plnění
 
@@ -423,11 +423,11 @@ Prodejní transakci lze automaticky klasifikovat, že splňuje podmínku, že ne
 
     | Výsledek vyhledávání | Skupina DPH (TaxGroup) | Kód daně (kód) |
     |---------------|----------------------------|-----------------|
-    | Ne            | \*Neprázdné\*              | \*Neprázdné\*   |
+    | Žádný            | \*Neprázdné\*              | \*Neprázdné\*   |
 
 6. Zkontrolujte parametry.
 
-    [![Vyhledání podmínky, že neexistuje povinnost vystavit daňový doklad.](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+    [![Vyhledání podmínky, že neexistuje povinnost vystavit daňový doklad](media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
 
 7. Aktualizujte pole **Stav** pro všechny parametry na **Dokončeno**.
 
@@ -545,7 +545,7 @@ Chcete-li generovat soubor XML pro přiznání k DPH, postupujte takto.
 
 15. Vyberte **OK**. Po vygenerování přiznání ve formátu XML se stav zprávy změní na **Vygenerováno**.
 
-    [![Elektronická zpráva, která má stav Vygenerováno.](media/PicEM.jpg)](media/PicEM.jpg)
+    [![Elektronická zpráva, která má stav Vygenerováno](media/PicEM.jpg)](media/PicEM.jpg)
 
     Pokud během generování sestavy dojde k chybě, stav zprávy se změní na **Technická chyba**.
 
@@ -752,6 +752,3 @@ Následující postup představuje příklad, jak zaúčtovat opravu odpočtu DP
     |------------------------|-----------------|----------------------|
     | VATDeductionCorrection | CORR            | Nákup             |
     | VATDeductionCorrection | CORR            | Nákupní dobropis |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

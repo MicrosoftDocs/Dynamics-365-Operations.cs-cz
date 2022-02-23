@@ -1,114 +1,64 @@
 ---
-title: Nakonfigurujte dovednosti
-description: Můžete sledovat dovednosti svého pracovníka v Dynamics 365 Human Resources. Můžete také určit dovednosti, které jsou požadovány pro určitou práci.
-author: twheeloc
-manager: tfehr
-ms.date: 03/23/2021
+title: Sladění dovedností zaměstnanců s potřebami společnosti
+description: Můžete sledovat dovednosti, které zaměstnanci, uchazeči nebo kontaktní osoby mají (nebo které by měli mít) k účinnému plnění svých rolí. Můžete také určit dovednosti, které jsou požadovány pro určitou práci.
+author: andreabichsel
+manager: AnnBe
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 13206bb3c961f001620e8b65a8b1bb39bf95ee49
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 7abaa99bdec5fcf20a63bfeb716ebb63dd3712df
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075064"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417640"
 ---
-# <a name="configure-skills"></a>Nakonfigurujte dovednosti
+# <a name="align-workforce-skills-with-business-needs"></a>Sladění dovedností zaměstnanců s potřebami společnosti
 
-> [!IMPORTANT]
-> Funkce uvedené v tomto tématu jsou aktuálně dostupné pro zákazníky Human Resources v samostatné infrastruktuře Finance.  
-
-
-Můžete sledovat dovednosti svého pracovníka v Dynamics 365 Human Resources. Můžete také určit dovednosti, které jsou požadovány pro určitou práci.
+Můžete sledovat dovednosti, které zaměstnanci, uchazeči nebo kontaktní osoby mají (nebo které by měli mít) k účinnému plnění svých rolí. Můžete také určit dovednosti, které jsou požadovány pro určitou práci.
 
 Zde jsou příklady dovedností, které lze sledovat:
+-   Dozorčí - schopnost dohlížet na práci ostatních.
+-   Vůdčí - schopnost vést zaměstnance a obchodní domény.
+-   Plánování - schopnost dívat se dopředu, formulovat vize a schopnost tyto vize definovat.
+-   HTML – schopnost psát v kódu HTML.
 
-- Dozorčí - schopnost dohlížet na práci ostatních.
-- Vůdčí - schopnost vést zaměstnance a obchodní domény.
-- Plánování - schopnost dívat se dopředu, formulovat vize a schopnost tyto vize definovat.
-- HTML – schopnost psát v kódu HTML.
+Před přiřazením dovednosti k osobě nebo pracovní pozici, vytvořením vyhledávání s mapováním dovedností nebo vytvořením profilu dovedností je nutné zadat informace o dovednostech na stránce **Dovednosti**. Pro každou dovednost můžete vybrat typ dovednosti a model hodnocení.
 
-Pokud jste ještě nenastavili typy dovedností a modely hodnocení, budete je muset před vytvořením dovedností přidat.
+## <a name="rating-models"></a>Modely hodnocení
+Modely hodnocení pomáhají ve vyhodnocení skutečné úrovně dovedností osoby, úrovně, které mají dosáhnout, nebo úrovně dovednosti, která je požadována pro úlohu. Můžete zadat až 10 úrovní pro model hodnocení.  Každé úrovni v modelu hodnocení je přiřazen koeficient.  Hodnota koeficientu se použije k normalizaci výsledků dovedností, které používají různé modely hodnocení.  Koeficient musí být číslo mezi 0 a 9 a každá úroveň musí mít jedinečný koeficient.  Úrovně s vyšší hodnotou koeficientu nesou v modelu hodnocení větší váhu.
 
-Dovednosti pro pracovníka mohou zadat následující lidé:
+## <a name="specify-job-skills"></a>Určení dovedností pro úlohu
+Při zadání informací o pracovní pozici můžete zadat dovednosti, které má daná osoba mít k provedení práce v rámci pracovní pozice.  Dále je možné určit požadovanou úroveň pro každou dovednost a také úroveň důležitosti dané dovednosti. Různé pracovní pozice mohou vyžadovat různé úrovně důležitosti pro stejné dovednosti.
 
-- Pracovníci mohou sami zadat dovednosti do samoobsluhy zaměstnanců. Tyto dovednosti vyžadují souhlas manažera.
-- Manažeři mohou zadat dovednosti pro své pracovníky. Můžete vytvořit pracovní postup, který tyto dovednosti automaticky schválí.
+## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Zadejte dovedností zaměstnanců, uchazečů nebo kontaktů
+Můžete zadat cílové dovednosti, nebo skutečné dovedností zaměstnanců, uchazečů nebo kontaktů. Cílové dovednosti jsou dovednosti, kterých se osoba chystá dosáhnout. Skutečná dovednost je dovednost, kterou pracovník aktuálně disponuje.
 
-## <a name="create-a-skill-type"></a>Vytvoření typu dovednosti
+## <a name="skill-mapping-and-skill-mapping-profiles"></a> Mapování dovedností a profily mapování dovedností
+Lze vytvořit hledání v rámci mapování dovedností k vyhledání pracovníka, uchazeče nebo kontaktní osoby, která je kvalifikována k provádění určitého úkolu. Při hledání v rámci mapování dovedností se prohledávají dovednosti, certifikáty vzdělání, pozice důvěry a zkušenosti s projektem a jsou vráceny výsledky, které odpovídají zadaným kritériím.  Například může být užitečné vědět, kteří pracovníci ve vaší organizaci získali CPA.
 
-Typy dovedností jsou kategorie, do kterých jednotlivé dovednosti spadají, například administrativa nebo prodej.
+Profily mapování dovedností umožňují vyhledání aktuálního zaměstnance nebo kandidáta s kvalifikací, která přímo odpovídá obchodním potřebám.  Můžete například vytvořit profil mapování dovedností pro otevřenou pozici ve vaší organizaci. Vytvořením profilu pro určitou pozici a zkopírováním dovedností, vzdělání a certifikátů z této pracovní pozice do profilu lze rychle vyhledat pracovníky, uchazeče a kontaktní osoby, které odpovídají jednomu nebo více kritériím zadaným v profilu, a zobrazit seznam uchazečů, jejichž dovednosti nejlépe odpovídají požadovaným dovednostem pro pracovní pozici.
 
-1. V pracovním prostoru **Rozvoj zaměstnanců** vyberte **Odkazy**.
+> **Poznámka** V seznamu s výsledky mapování dovednosti mohou být zobrazeni nebo zahrnuti v profilu dovedností pouze zaměstnanci, uchazeči a kontaktní osoby, které jsou vybrány k zahrnutí do hledání v rámci mapování dovedností. Chcete-li zahrnout pracovníka, uchazeče nebo kontaktní osobu do vyhledávání v rámci mapování dovedností, nastavte možnost **Zahrnout do mapování dovedností** na hodnotu Ano na následujících stránkách:
+> 
+> + Pracovní podproces
+> + Zaměstnanec
+> + Uchazeč
+> + Kontakty
 
-2. V **Nastavení kompetence** vyberte **Typy dovedností**.
+## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Analýza mezer v dovednostech a analýza profilu dovedností
+Můžete vytvořit analýzu profilu dovedností, a zobrazit tak seznam kompetencí pro pracovníka, uchazeče nebo kontaktní osobu k určitému datu. Můžete vytvořit analýzu dovednostních mezer k porovnání dovedností dané osoby s dovednostmi požadovanými pro určitou úlohu.  
 
-3. Zvolte **Nové**.
 
-4. Vyplňte následující pole:
-
-   - **Typ dovednosti**: Zadejte název typu dovednosti.
-   - **Popis**: Zadejte popis typu dovednosti.
-
-5. Zvolte možnost **Uložit**.
-
-## <a name="create-a-rating-model"></a>Vytvoření nového modelu hodnocení
-
-Modely hodnocení pomáhají ve vyhodnocení skutečné úrovně dovedností osoby, úrovně, které mají dosáhnout, nebo úrovně dovednosti, která je požadována pro úlohu. Každé úrovni v modelu hodnocení je přiřazen koeficient.
-
-1. V pracovním prostoru **Rozvoj zaměstnanců** vyberte **Odkazy**.
-
-2. V **Nastavení kompetence** vyberte **Modely hodnocení**.
-
-3. Zvolte **Nové**.
-
-4. Vyplňte následující pole:
-
-   - **Hodnocení**: Zadejte název modelu hodnocení, například **Dovednosti**.
-   - **Popis**: Zadejte popis modelu hodnocení, například **Hodnocení dovedností**.
-
-5. V sekci **Úrovně** vyberte **Nový**. Pro každou úroveň, kterou chcete přidat, vyplňte následující pole:
-
-   - **Ǔroveň**: Zadejte název úrovně.
-   - **Popis**: Zadejte popis úrovně.
-   - **Faktor**: Zadejte hodnotu faktoru od 0-9. Faktor pomáhá normalizovat výsledky dovedností, které používají různé modely hodnocení. Každá úroveň musí mít jedinečný faktor. Úrovně s vyšší hodnotou koeficientu nesou v modelu hodnocení větší váhu.
-
-   Podle potřeby pokračujte v přidávání úrovní. Můžete zadat až 10 úrovní pro každý model hodnocení.
-
-6. Zvolte možnost **Uložit**.
-
-## <a name="create-a-skill"></a>Vytvoření dovednosti
-
-Před přiřazením dovednosti nebo vytvořením vyhledávání s mapováním dovedností nebo vytvořením profilu dovedností je nutné zadat informace o dovednostech na stránce **Dovednosti**. Pro každou dovednost můžete vybrat typ dovednosti a model hodnocení.
-
-1. V pracovním prostoru **Rozvoj zaměstnanců** vyberte **Odkazy**.
-
-2. V **Nastavení kompetence** vyberte **Dovednosti**.
-
-3. Zvolte **Nové**.
-
-4. Vyplňte následující pole:
-
-   - **Dovednost**: Zadejte název typu dovednosti.
-   - **Popis**: Zadejte popis dovednosti.
-   - **Hodnocení**: Vyberte model hodnocení, který chcete pro tuto dovednost použít.
-   - **Typ dovednosti**: Vyberte ze seznamu typů dovedností.
-
-5. Zvolte možnost **Uložit**.
-
-## <a name="see-also"></a>Viz také
-
-[Zadejte dovednosti](hr-develop-enter-skills.md)<br>
-[Mapové dovednosti](hr-develop-map-skills.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

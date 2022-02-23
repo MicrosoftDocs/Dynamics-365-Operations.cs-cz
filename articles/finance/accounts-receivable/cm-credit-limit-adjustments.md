@@ -1,23 +1,26 @@
 ---
 title: Úpravy limitu úvěru
 description: Toto téma vysvětluje, jak nastavit a přidat úpravy limitu úvěru.
-author: JodiChristiansen
+author: mikefalkner
+manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753891"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441124"
 ---
 # <a name="credit-limit-adjustments"></a>Úpravy limitu úvěru 
 
@@ -121,6 +124,3 @@ Workflow **Úpravy limitu úvěru** lze použít k odeslání úprav limitu úv
 
 > [!NOTE]
 > Při vytvoření workflow **Úpravy limitu úvěru** můžete workflow nastavit tak, aby se úpravy automaticky zaúčtovávaly po schválení řádků. Pouze do workflow zahrňte úlohu **Automaticky zaúčtovat deník**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

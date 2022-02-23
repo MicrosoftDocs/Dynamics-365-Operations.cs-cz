@@ -2,9 +2,11 @@
 title: Konfigurace schvalovacích kroků ve workflowu
 description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070770"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797089"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurace schvalovacích kroků ve workflowu
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku.
 
@@ -159,7 +158,7 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
 
     - **Jednotlivý schvalovatel** – akce použitá pro dokument je určena první reagující osobou. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Pokud je Sue první osobou reagující na dokument, je akce, kterou provede, použita pro dokument. Jestliže ho Sue odmítne, je dokument zamítnut a odeslán zpět Samovi. Jakmile Sue dokument schválí, je odeslán Anně ke schválení.
 
-        ![Workflow se schvalovacím procesem.](./media/workflow_multipleusersinstep.gif)
+        ![Workflow se schvalovacím procesem](./media/workflow_multipleusersinstep.gif)
 
     - **Většina schvalovatelů** – akce použitá pro dokument je určena, když reaguje většina schvalujících. Například Sam odeslal vyúčtování výdajů ve výši 15 000 USD. Vyúčtování výdajů je aktuálně přiřazeno uživatelům Sue, Jo a Bill. Akci použitou pro dokument určují první dva schvalující, kteří reagují, tedy Sue a Jo.
 
@@ -277,6 +276,3 @@ Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude 
 
 5. Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
 6. Pokud uživatelé v eskalační cestě nereagují v určeném čase, systém automaticky provede akci vhodnou pro daný dokument. Akci, kterou systém provede, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte akci.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

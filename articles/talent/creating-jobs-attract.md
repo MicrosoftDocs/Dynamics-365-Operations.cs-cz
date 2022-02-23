@@ -157,6 +157,3 @@ Podle následujícího postupu vytvořte pracovní místo.
 
 13. Chcete-li pracovní pozici aktivovat, zaškrtněte políčko **Aktivovat**.
 14. Pokud chcete pracovní pozici zveřejnit, přejděte na **Zveřejnit** a vyberte **Zveřejint** na webu Talent Careers nebo LinkedIn.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

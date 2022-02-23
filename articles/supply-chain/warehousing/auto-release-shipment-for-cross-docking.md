@@ -1,24 +1,27 @@
 ---
 title: Automatická dodávka prodejní dodávky pro cross docking
 description: Toto téma popisuje strategii cross dockingu, která umožňuje automaticky uvolnit objednávku do skladu v případě, že výrobní zakázka, která dodává množství poptávky, je vykázána jako dokončená, aby bylo množství přesunuto přímo z místa výstupu výroby do odchozího umístění.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577929"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423612"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatická dodávka prodejní dodávky pro cross docking
 
@@ -161,7 +164,7 @@ Chcete-li cross dock množství dokončeného zboží do výstupního místa sou
 8. Na stránce **Výrobní zakázka** v podokně akcí na kartě **Výrobní zakázka** ve skupině **Zpracování** vyberte **Odhad** a pak vyberte **OK**. Objednávka je odhadnuta a množství suroviny je rezervováno pro výrobu.
 9. V podokně akcí na kartě **Výrobní zakázka** ve skupině **Proces** vyberte **Uvolnit** a pak vyberte **OK**. Pro suroviny je vytvořena práce s vyskladněním.
 10. Otevřete a zkontrolujte práci. V podokně akcí na kartě **Sklad** ve skupině **Obecné** vyberte **Podrobnosti práce**. Poznamenejte si ID práce.
-11. Přihlaste se k mobilní aplikaci Řízení skladu a spusťte práci ve skladu 51.
+11. Přihlaste se ke skladové aplikaci a spusťte práci ve skladu 51.
 12. Přejděte na **Výroba** \> **Výběr výroby**.
 13. Zadejte ID práce pro zahájení a dokončení výběru surovin. 
 
@@ -176,6 +179,3 @@ Všimněte si, že dojde k následujícím událostem:
 - Uvolnění do skladu je aktivováno pro propojenou prodejní objednávku.
 - Na základě uvolnění, dodávky a cross dockingu je vytvořena práce. Tato práce instruuje operátora skladu a vybírá množství potřebná ke splnění řádku prodejní objednávky a umístí je do výstupního umístění, které je zadáno ve směrnici umístění pro cross docking.
 - Pokud je množství výrobní zakázky vyšší než množství vyžadované prodejní objednávkou, bude vytvořena běžná práce při zaskladnění. Tato práce instruuje operátora skladu k vyskladnění množství dokončeného zboží, které zbývá po přeložení a jeho přesunutí do běžného skladu podle směrnice o skladovém místě.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

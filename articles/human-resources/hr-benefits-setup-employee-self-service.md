@@ -1,35 +1,33 @@
 ---
 title: Konfigurace samoobsluhy pro zaměstnance
 description: V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro navigaci nejvyšší úrovní v samoobsluze pro zaměstnance.
-author: twheeloc
-ms.date: 12/06/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d1534e37e83e22dd9860de54165c062935db3798
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417682"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurace samoobsluhy pro zaměstnance
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro navigaci nejvyšší úrovní v **samoobsluze pro zaměstnance**. Dlaždice Plán zaměstnaneckých výhod směruje uživatele na plány zaměstnaneckých výhod, na něž mají nárok.
+V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro navigaci nejvyšší úrovní v samoobsluze pro zaměstnance. Dlaždice Plán zaměstnaneckých výhod směruje uživatele na plány zaměstnaneckých výhod, na něž mají nárok.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Nastavení dlaždice plánů zaměstnaneckých výhod
 
@@ -37,18 +35,21 @@ V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro nav
 
 2. Vyberte kartu **Nastavení dlaždice plánu zaměstnaneckých výhod** a poté vyberte možnost **Nový**.
 
-3. Zadejte hodnoty pro zbývající pole.
+3. Zadejte hodnoty pro zbývající pole:
 
    | Pole | Popis |
    | --- | --- |
-   | **Kód typu plánu** | Typ plánu, který se zobrazí, když je tato dlaždice vybrána v **samoobsluze zaměstnaneckých výhod**. |
    | **ID dlaždice** | Jedinečný identifikátor pro dlaždici. |
-   | **Text popisku dlaždice** | Text, který se zobrazí v dlaždici **samoobsluhy zaměstnaneckých výhod**. |
-   | **popis** | Popis dlaždice. |
+   | **Text popisku dlaždice** | Text, který se zobrazí v samoobsluze dlaždice. |
+   | **Popis** | Popis dlaždice. |
+   | **Internetová adresa** | Zadejte adresu URL samoobsluhy zaměstnance. |
+   | **Velikost dlaždice** | Velikost dlaždice: malá, střední nebo velká. |
+   | **Cíl** | Určuje, zda se má stránka otevřít v novém okně nebo v aktuálním okně. |
    | **Obrázek pozadí dlaždice** | Adresa URL obrázku, který má být použit pro dlaždici (volitelné) |
-   | **Sledování otevřené registrace** | Tuto možnost vyberte, chcete-li sledovat průběh otevřené registrace pro tento typ plánu. Například můžete mít vytvořené plány, kde **Typ plánu = Jiný**. Tyto plány mohou být volitelnými plány, u kterých nechcete sledovat průběh registrace. Pokud tento typ plánu nevyberete, na kartě **Otevřená registrace** bude ignorován při sledování průběhu registrace nebo při dokončení registrace. Toto nastavení platí pro typ plánu, který je vybrán pro všechna období a právnické osoby. |
+   | **Spuštění** | Počáteční datum a čas, kdy má být dlaždice k dispozici. |
+   | **End** | Koncové datum a čas, kdy má být dlaždice k dispozici. |
 
-4. Zvolte možnost **Uložit**.
+4. Zvolte **Uložit**.
 
 ## <a name="set-up-a-flex-credit-plan-tile"></a>Nastavení dlaždice plánu flexibilního kreditu
 
@@ -56,18 +57,18 @@ V Microsoft Dynamics 365 Human Resources můžete konfigurovat dlaždice pro nav
 
 2. Vyberte kartu **Nastavení dlaždice plánu flexibilního kreditu** a poté vyberte možnost **Nový**.
 
-3. Zadejte hodnoty pro zbývající pole.
+3. Zadejte hodnoty pro zbývající pole:
 
    | Pole | Popis |
    | --- | --- |
-   | **ID kreditu zaměstnaneckých výhod** | Plány programů flexibilních kreditů, které se zobrazí, když je tato dlaždice vybrána v **samoobsluze zaměstnaneckých výhod**. |
    | **ID dlaždice** | Jedinečný identifikátor pro dlaždici. |
-   | **Text popisku dlaždice** | Text, který se zobrazí v dlaždici **samoobsluhy zaměstnaneckých výhod**. |
-   | **popis** | Popis dlaždice. |
+   | **Text popisku dlaždice** | Text, který se zobrazí v samoobsluze dlaždice. |
+   | **Popis** | Popis dlaždice. |
+   | **Internetová adresa** | Zadejte adresu URL samoobsluhy zaměstnance. |
+   | **Velikost dlaždice** | Velikost dlaždice: malá, střední nebo velká. |
+   | **Cíl** | Určuje, zda se má stránka otevřít v novém okně nebo v aktuálním okně. |
    | **Obrázek pozadí dlaždice** | Adresa URL obrázku, který má být použit pro dlaždici (volitelné) |
-   | **Sledování otevřené registrace** | Tuto možnost vyberte, chcete-li sledovat průběh otevřené registrace pro tento typ plánu. Například můžete mít vytvořené plány, kde **Typ plánu = Jiný**. Tyto plány mohou být volitelnými plány, u kterých nechcete sledovat průběh registrace. Pokud tento typ plánu nevyberete, na kartě **Otevřená registrace** bude ignorován při sledování průběhu registrace nebo při dokončení registrace. Toto nastavení platí pro typ plánu, který je vybrán pro všechna období a právnické osoby. |
+   | **Spuštění** | Počáteční datum a čas, kdy má být dlaždice k dispozici. |
+   | **End** | Koncové datum a čas, kdy má být dlaždice k dispozici. |
 
-4. Zvolte možnost **Uložit**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+4. Zvolte **Uložit**.

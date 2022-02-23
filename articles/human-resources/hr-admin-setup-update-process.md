@@ -2,12 +2,15 @@
 title: Aktualizace procesu
 description: Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace při změnách aplikací a platforem.
 author: andreabichsel
+manager: AnnBe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2af1f710ca010041bd684bca8ecfa6f20ac30d46
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063103"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527793"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace. Tyto aktualizace zahrnují změny aplikace i platformy, které často poskytují klíčová vylepšení služby, včetně pravidelných aktualizací.
 
@@ -38,11 +39,11 @@ Aktualizace jsou vydávány v pravidelných intervalech pro všechna prostředí
 
 Aktualizace aplikace Human Resources se automaticky použijí na všechna prostředí. Aplikace Human Resources poskytuje dva typy vydání:
 
-- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Čtrnáctidenní intervaly aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o čtrnáctidenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Čtrnáctidenní intervaly aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o čtrnáctidenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Všechna podporovaná datacentra se aktualizují každé dva týdny, není-li uvedeno jinak. Do čtrnáctidenních aktualizací jsou zahrnuty USA, Austrálie, Evropa, Spojené království, Asie a Kanada. 
 
-- **Aktualizace řešení Dataverse**: Tyto aktualizace se uskutečňují podle potřeby, přibližně jednou za šest týdnů. Zahrnují nové entity a změny existujících entit ve službě Dataverse. Tyto aktualizace jsou vydávány pro stejné regiony jako čtrnáctidenní aktualizace a jejich replikace do všech datacenter trvá přibližně šest týdnů. Aktualizace řešení mohou nebo nemusí být vydávány současně s čtrnáctidenními aktualizacemi služeb.
+- **Aktualizace řešení Common Data Service**: Tyto aktualizace se uskutečňují podle potřeby, přibližně jednou za šest týdnů. Zahrnují nové entity a změny existujících entit ve službě Common Data Service. Tyto aktualizace jsou vydávány pro stejné regiony jako čtrnáctidenní aktualizace a jejich replikace do všech datacenter trvá přibližně šest týdnů. Aktualizace řešení mohou nebo nemusí být vydávány současně s čtrnáctidenními aktualizacemi služeb.
 
 > [!NOTE]
 > Aktualizace řešení jsou po vydání k dispozici ve všech datacentrech. Pokud nechcete čekat na automatickou replikaci aktualizací, můžete tyto aktualizace provést ručně v jakémkoli prostředí, v libovolném datacentru.
@@ -55,14 +56,14 @@ V případě potřeby poskytuje aplikace Human Resources také následující t
 
 Vydání jsou kontrolována, testována a ověřována v interním prostředí. Po schválení jsou sestavení nasazena do výroby.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Uvolnit výjimky frekvence v 2021
+## <a name="release-cadence-exceptions-in-2020"></a>Uvolnit výjimky frekvence v 2020
 
-Kvůli svátkům je plán vydání pro listopad a prosinec 2021 následující:
+Kvůli svátkům je plán vydání pro listopad a prosinec 2020 následující:
 
-- Vydání v listopadu: 1. listopadu – 14. listopadu
-- Vydání v prosinci: 29. listopadu – 12. prosince
+- Vydání v listopadu: 2. listopadu – 13. listopadu
+- Vydání v prosinci: 30. listopadu – 11. prosince
  
-Kadence dvoutýdenního vydání bude obnovena jako obvykle 10. ledna 2022.
+Kadence dvoutýdenního vydání bude obnovena jako obvykle 11. ledna 2021.
 
 ## <a name="communications"></a>Sdělení
 
@@ -70,11 +71,11 @@ Zde uvádíme, co bylo provedeno v případě aplikace Human Resources a co js
 
 - [Dynamics 365 Human Resources plán](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Plány vydání Dynamics 365](/dynamics365/release-plans/)
+- [Plány vydání Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
 
 - [Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Hledání problémů ve službě Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (pouze chyby týkající se platformy)
+- [Hledání problémů ve službě Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (pouze chyby týkající se platformy)
 
 - [Blog aplikace Human Resources](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -82,7 +83,7 @@ Zde uvádíme, co bylo provedeno v případě aplikace Human Resources a co js
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Ověření předběžných verzí funkcí v izolovaném testovacím prostředí (sandbox)
 
-Předběžnou verzi funkcí můžete ověřit v izolovaném testovacím prostředí předtím, než ji povolíte ve svém produkčním prostředí. Další informace o povolování funkcí naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Předběžnou verzi funkcí můžete ověřit v izolovaném testovacím prostředí předtím, než ji povolíte ve svém produkčním prostředí. Další informace o povolování funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Všechny nové funkce zůstanou v náhledu nejméně 30 dnů a obvykle jsou zde 30-60 dní. Hlavní funkce jsou obvykle k dispozici v říjnu a dubnu každého roku po období náhledu. Jakmile se v pracovním prostoru Správa funkcí zobrazí nové funkce, můžete je zapnout. Některé funkce mohou být ve výchozím nastavení zapnuty.
 
@@ -100,10 +101,7 @@ Při testování předběžných verzí funkcí nebo při zkoušení nových fun
 
 ## <a name="see-also"></a>Viz také
 
-[Služba Dynamics 365 a plány vydání Power Platform](/dynamics365/release-plans)</br>
+[Služba Dynamics 365 a plány vydání Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
 [Co je nového nebo co se změnilo v aplikaci Human Resource služby Dynamics 365](hr-admin-whats-new.md)</br>
-[Zásady životního cyklu softwaru](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+[Zásady životního cyklu softwaru](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

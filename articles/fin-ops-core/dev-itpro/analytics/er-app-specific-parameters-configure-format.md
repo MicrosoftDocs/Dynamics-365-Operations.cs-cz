@@ -2,9 +2,11 @@
 title: Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu
 description: V tomto tématu je vysvětleno, jak lze konfigurovat formáty elektronického vykazování (ER) pro použití parametrů zadaných pro právnickou osobu.
 author: NickSelin
-ms.date: 04/02/2021
+manager: AnnBe
+ms.date: 10/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ed1442403ae82dfc820212e3e235737f37f21a4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765825"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679719"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurace formátů ER pro použití parametrů zadaných pro právnickou osobu
 
@@ -28,7 +30,7 @@ ms.locfileid: "6765825"
 
 ## <a name="overview"></a>Přehled
 
-V mnoha formátech elektronického výkaznictví (ER), které budete navrhovat, je nutné filtrovat data pomocí sady hodnot, které jsou specifické pro jednotlivé právnické osoby vaší instance (například sada kódů daní k filtrování daňových transakcí). V současné době, když je filtrování tohoto typu konfigurováno ve formátu ER, jsou hodnoty, které jsou závislé na právnické osobě (například kódy daně), použity ve výrazech formátu ER pro určení pravidel filtrování dat. Proto je formát ER vytvořen tak, aby byl specifický pro právnickou osobu a aby generoval požadované sestavy, musíte vytvořit odvozené kopie původního formátu ER pro každou právnickou osobu, kde je nutné spustit formát ER. Každý odvozený formát ER je nutné upravit tak, aby do něj bylo možné převést specifické hodnoty právnické osoby, a to podle toho, zda byla aktualizována původní (základní) verze, exportována z testovacího prostředí a importována do provozního prostředí v okamžiku, kdy musí být nasazena k použití v produkci atd. Proto je údržba tohoto typu konfigurovaného řešení ER složitá a časově náročná z několika důvodů:
+V mnoha formátech elektronického výkaznictví (ER), které budete navrhovat, je nutné filtrovat data pomocí sady hodnot, které jsou specifické pro jednotlivé právnické osoby vaší instance (například sada kódů daní k filtrování daňových transakcí). V současné době, když je filtrování tohoto typu konfigurováno ve formátu ER, jsou hodnoty, které jsou závislé na právnické osobě (například kódy daně), použity ve výrazech formátu ER pro určení pravidel filtrování dat. Proto je formát ER vytvořen tak, aby byl specifický pro právnickou osobu a aby generoval požadované sestavy, musíte vytvořit odvozené kopie původního formátu ER pro každou právnickou osobu, kde je nutné spustit formát ER. Každý odvozený formát ER je nutné upravit tak, aby do něj bylo možné převést specifické hodnoty právnické osoby, a to podle toho, zda byla aktualizována původní (základní) verze, exportována z testovacího prostředí a importována do provozního prostředí v okamžiku, kdy musí být nasazena k použití v produkci atd. Proto je údržba tohoto typu konfigurovaného řešení ER poměrně složitá a časově náročná z několika důvodů:
 
 -   Čím více je právnických osob, tím více konfigurací ER je nutné spravovat.
 -   Údržba konfigurací ER vyžaduje, aby měli uživatelé společnosti znalost elektronického výkaznictví.
@@ -47,14 +49,14 @@ Doporučujeme dokončit kroky v tématu [Podpora parametrizovaných volání zdr
 
 ## <a name="import-er-configurations-into-rcs"></a>Import konfigurací ER do RSC
 
-Stáhněte a lokálně uložte následující konfigurace ER.
+Ze [služby Stažení softwaru](https://go.microsoft.com/fwlink/?linkid=851448) si můžete stáhnout soubor **Podpora parametrizovaných volání zdrojů dat ER typu VYPOčíTANéHO POLE**. Tento soubor zip obsahuje následující konfigurace ER, které je nutné extrahovat a uložit místně.
 
 | **Popis obsahu**                        | **Název souboru**                                        |
 |------------------------------------------------|------------------------------------------------------|
-| Ukázkový soubor konfigurace **Model dat elektronického výkaznictví**    | [Model pro informace o volání s parametry calls.version.1.xml](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
-| Ukázkový soubor konfigurace **Metadata ER**      | [Metadata pro informace o volání s parametry calls.version.1.xml](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
-| Ukázkový soubor konfigurace **Mapování modelu ER** | [Mapování pro informace o volání s parametry calls.version.1.1.xml](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
-| Ukázková konfigurace **Formát ER**             | [Formát pro informace o volání s parametry calls.version.1.1.xml](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
+| Ukázkový soubor konfigurace **Model dat elektronického výkaznictví**    | Model pro informace o volání s parametry calls.version.1.xml     |
+| Ukázkový soubor konfigurace **Metadata ER**      | Metadata pro informace o volání s parametry calls.version.1.xml  |
+| Ukázkový soubor konfigurace **Mapování modelu ER** | Mapování pro informace o volání s parametry calls.version.1.1.xml |
+| Ukázková konfigurace **Formát ER**             | Formát pro informace o volání s parametry calls.version.1.1.xml  |
 
 Dále se přihlaste k instanci RCS.
 
@@ -78,17 +80,17 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 
     Formát ER **Formát pro učení parametrizovaných volání** je navržen tak, aby vygeneroval daňový výkaz ve formátu XML, který představuje několik úrovní zdanění (pravidelná, redukovaná a žádná). Každá úroveň má různý počet podrobností.
 
-    ![Více úrovní formátu ER, formát pro učení parametrizovaných volání.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Na kartě **Mapování** rozbalte položky **Model**, **Data** a **Souhrn**.
 
     Zdroj dat **Model.Data.Summary** vrátí seznam daňových transakcí. Tyto transakce jsou sumarizovány v seznamu podle kódu DPH. Pro tento zdroj dat bylo nakonfigurováno vypočítané pole **Model.Data.Summary.Level**, které vrací kód úrovně zdanění jednotlivých souhrnných záznamů. Pro jakýkoli kód zdanění, který lze načíst ze zdroje dat **Model.Data.Summary** v době běhu, vrátí vypočtené pole kód úrovně zdanění (**Běžný**, **Redukovaný**, **Žádný** nebo **Ostatní**) jako textovou hodnotu. Vypočtené pole **Model.Data.Summary.Level** se použije k filtrování záznamů zdroje dat **Model.Data.Summary** a zadání filtrovaných dat do každého prvku XML, který představuje úroveň zdanění pomocí polí **Model.Data2.Level1**, **Model.Data2.Level2** a **Model.Data2.Level3**.
 
-    ![Seznam datových zdrojů daňových transakcí Model.Data.Summary.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    Vypočítané pole **Model.Data.Summary.Level** je nakonfigurováno tak, aby obsahovalo výraz ER. Do této konfigurace jsou zakódovány kódy daní (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** a **InVAT0**). Tento formát ER je závislý na právnické osobě, kde byly tyto kódy daně nakonfigurovány.
+    Vypočítané pole **Model.Data.Summary.Level** je nakonfigurováno tak, aby obsahovalo výraz ER. Všimněte si, že do této konfigurace jsou zakódovány kódy daní (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** a **InVAT0**). Tento formát ER je závislý na právnické osobě, kde byly tyto kódy daně nakonfigurovány.
 
-    ![Vypočítané pole Model.Data.Summary.Level s pevně zakódovanými daňovými kódy.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Chcete-li podporovat jinou sadu kódů daní pro každou právnickou osobu, je nutné provést následující kroky:
 
@@ -128,7 +130,7 @@ Dále přidáte nový výčet formátu ER. Hodnoty tohoto formátu budou prezent
 12. Znovu vyberte **Přidat**.
 13. Do pole **Název** zadejte **Jiné**.
 
-    ![Nový záznam na stránce Vyčíslení formátu.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů daní závislé na právnické osobě, doporučujeme překládat hodnoty tohoto výčtu do jazyků konfigurovaných jako preferované jazyky pro tyto uživatele v modulu finance.
 
@@ -141,9 +143,9 @@ Dále přidáte nový výčet formátu ER. Hodnoty tohoto formátu budou prezent
 20. Do pole **přeložený text** napište **keine Besteuerung**.
 21. Vyberte **Přeložit**.
 
-    ![Vysunutí překladu textu.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
-22. Zvolte možnost **Uložit**.
+22. Zvolte **Uložit**.
 23. Zavřete stránku **Vyčíslení formátu**.
 
 ### <a name="add-a-new-lookup-data-source"></a>Přidání nového zdroje dat vyhledávání
@@ -153,12 +155,12 @@ Dále přidáte nový zdroj dat, který určuje, jakým způsobem budou obchodn�
 1.  Na kartě **Mapování** vyberte **Přidat**.
 2.  Vyberte **Vyčíslení formátu\Lookup**.
 
-    Právě jste zjistili, že každé pravidlo, které obchodní uživatelé zadá za účelem uznání úrovně zdanění, vrátí hodnotu výčtu formátu ER. Všimněte si, že k typu zdroje dat **Vyhledávání** lze přejít v části **Datový model** a z bloků **Dynamics 365 for Operations** navíc k bloku **Vyčíslení formátu**. Proto výčty datových modelů ER a výčty aplikací lze použít k určení typu hodnot, které jsou vraceny pro zdroje dat tohoto typu. Chcete-li se dozvědět více o zdrojích dat **Vyhledávání**, viz [Konfigurace zdrojů dat vyhledávání pro použití funkce parametrů specifických pro aplikaci ER](er-lookup-data-sources.md).
+    Právě jste zjistili, že každé pravidlo, které obchodní uživatelé zadá za účelem uznání úrovně zdanění, vrátí hodnotu výčtu formátu ER. Všimněte si, že k typu zdroje dat **Vyhledávání** lze přejít v části **Datový model** a z bloků **Dynamics 365 for Operations** navíc k bloku **Vyčíslení formátu**. Proto výčty datových modelů ER a výčty aplikací lze použít k určení typu hodnot, které jsou vraceny pro zdroje dat tohoto typu.
     
 3.  Do pole **Název** zadejte **Selektor**.
 4.  Do pole **Vyčíslení formátu** zadejte **Seznam úrovní zdanění**.
 
-    Zadali jste, že pro každé pravidlo, které je zadáno v tomto zdroji dat, musí obchodní uživatel vybrat jednu z hodnot **seznamu výčtů formátu daňové úrovně** jako vrácenou hodnotu.
+    Právě jste zadali, že pro každé pravidlo, které je zadáno v tomto zdroji dat, musí obchodní uživatel vybrat jednu z hodnot **seznamu výčtů formátu daňové úrovně** jako vrácenou hodnotu.
     
 5.  Vyberte **upravit vyhledávání**.
 6.  Vyberte **Sloupce**.
@@ -168,13 +170,13 @@ Dále přidáte nový zdroj dat, který určuje, jakým způsobem budou obchodn�
 10. Vyberte položku **Model.Data.Tax.Code**.
 11. Klepněte na tlačítko **přidat** (šipka vpravo).
 
-    ![Vysunuté sloupce.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Právě jste zadali, že pro každé pravidlo, které je zadáno v tomto zdroji dat pro rozpoznání úrovně zdanění, musí obchodní uživatel vybrat jeden z daňových kódů jako podmínku. Seznam kódů daní, které může obchodní uživatel vybrat, bude vrácen zdrojem dat **Model.Data.Tax**. Vzhledem k tomu, že tento zdroj dat obsahuje pole **Název**, zobrazí se název kódu daně pro každou hodnotu kódu daně ve vyhledávání, které je prezentováno obchodnímu uživateli.
     
 12. Vyberte **OK**.
 
-    ![Stránka návrháře vyhledávání.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Obchodní uživatelé mohou přidat více pravidel jako záznamy tohoto datového zdroje. Každý záznam bude očíslován kódem řádku. Pravidla budou vyhodnocována v pořadí podle rostoucího čísla řádku.
 
@@ -188,13 +190,13 @@ Dále přidáte nový zdroj dat, který určuje, jakým způsobem budou obchodn�
 
     Všimněte si, že jste přidali nový zdroj dat, který vrátí úroveň zdanění jako hodnotu **seznamu úrovní zdanění** pro jakýkoliv daňový kód, který je předán zdroji dat, jako argument parametru **kód** datového typu **řetězec**.
     
-    ![Stránka návrháře formátů s novým zdrojem dat.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Vyhodnocení konfigurovaných pravidel závisí na datovém typu polí, která byla vybrána pro definování podmínek těchto pravidel. Pokud vyberete pole, které je konfigurováno jako pole datového typu **Číselný** nebo **Datum**, kritéria se budou lišit od kritérií, která byla popsána dříve pro datový typ **řetězec**. U **číselného** a **datového** pole musí být pravidlo specifikováno jako rozsah hodnot. Pokud je hodnota předaná zdroji dat v nakonfigurovaném rozsahu, bude podmínka pravidla považována za splněnou.
+    Všimněte si, že vyhodnocení konfigurovaných pravidel závisí na datovém typu polí, která byla vybrána pro definování podmínek těchto pravidel. Pokud vyberete pole, které je konfigurováno jako pole datového typu **Číselný** nebo **Datum**, kritéria se budou lišit od kritérií, která byla popsána dříve pro datový typ **řetězec**. U **číselného** a **datového** pole musí být pravidlo specifikováno jako rozsah hodnot. Pokud je hodnota předaná zdroji dat v nakonfigurovaném rozsahu, bude podmínka pravidla považována za splněnou.
     
     Následující obrázek znázorňuje příklad tohoto typu nastavení. Kromě pole **Model.Data.Tax.Code** datového typu **ŘEtězec** je použito pole **Model.Tax.Summary.Base** datového typu **Real** k určení podmínek pro zdroj dat vyhledávání.
     
-    ![Stránka návrháře vyhledávání s dalšími sloupci.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Protože jsou pro tento zdroj dat vyhledávání vybraná pole **Model.Data.Tax.Code** a **Model.Tax.Summary.Base**, každé pravidlo tohoto zdroje dat bude konfigurováno následovně:
     
@@ -223,7 +225,7 @@ Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů 
 9.  Vyberte **Přeložit**.
 10. Vyberte **OK**.
 
-    ![Vysunuté vlastnosti zdroje dat.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Přidání nového pole ke spotřebování nakonfigurovaného vyhledávání
 
@@ -236,16 +238,16 @@ Vzhledem k tomu, že obchodní uživatelé mohou používat různé sady kódů 
 7.  Do **pole Receptura** zadejte **Model.Selector(Model.Data.Summary.Code)**.
 8.  Zvolte **Uložit**.
 
-    ![Přidání části Model.Selector (Model.Data.Summary.Code) na stránku návrháře vzorců.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Zavřete stránku **Editor vzorců**.
 10. Vyberte **OK**.
 
-    ![Stránka návrháře formátů s novým přidaným vzorcem.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Všimněte si, že vypočtené pole **LevelByLookup**, které jste přidali, vrátí daňovou úroveň jako hodnotu **seznamu úrovní zdanění** pro každý záznam sumarizovaných daňových transakcí. Kód daně záznamu bude předán do zdroje dat vyhledávání **Model.Selector** a sada pravidel pro tento zdroj dat bude použita při výběru správné úrovně zdanění.
 
-### <a name="add-a-new-format-enumeration-based-data-source&quot;></a>Přidání nového zdroje dat na základě vyčíslení formátu
+### <a name="add-a-new-format-enumeration-based-data-source"></a>Přidání nového zdroje dat na základě vyčíslení formátu
 
 Dále přidáte nový zdroj dat, který odkazuje na vyčíslení formát, který jste přidali dříve. Hodnoty tohoto zdroje dat budou později použity ve výrazu formátu ER.
 
@@ -255,7 +257,7 @@ Dále přidáte nový zdroj dat, který odkazuje na vyčíslení formát, který
 4.  Do pole **Vyčíslení formátu** zadejte **Seznam úrovní zdanění**.
 5.  Zvolte **Uložit**.
 
-### <a name=&quot;modify-an-existing-field-to-start-to-use-the-lookup&quot;></a>Úprava existujícího pole, aby bylo možné začít používat vyhledávání
+### <a name="modify-an-existing-field-to-start-to-use-the-lookup"></a>Úprava existujícího pole, aby bylo možné začít používat vyhledávání
 
 Dále upravíte existující vypočtené pole tak, aby používalo konfigurovaný vyhledávací zdroj dat k vrácení správné hodnoty úrovně zdanění v závislosti na kódu daně.
 
@@ -265,11 +267,11 @@ Dále upravíte existující vypočtené pole tak, aby používalo konfigurovan�
 
     Všimněte si, že aktuální výraz pole **Model.Data.Summary.Level** obsahuje následující kódy pevně zakódovaných daní:
     
-    CASE (@.Code, &quot;VAT19&quot;, &quot;Regular&quot;, &quot;InVAT19&quot;, &quot;Regular&quot;, &quot;VAT7&quot;, &quot;Reduced&quot;, &quot;InVAT7&quot;, &quot;Reduced&quot;, &quot;THIRD&quot;, &quot;None&quot;, &quot;InVAT0&quot;, &quot;None&quot;, &quot;Other")
+    CASE (@.Code, "VAT19", "Regular", "InVAT19", "Regular", "VAT7", "Reduced", "InVAT7", "Reduced", "THIRD", "None", "InVAT0", "None", "Other")
 
 4.  Do pole **Formula** Receptura zadejte **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 
-    ![Stránka návrháře operace ER.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![Stránka návrháře operace ER](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Všimněte si, že výraz v poli **Model.Data.Summary.Level** bude nyní vracet úroveň zdanění na základě kódu daně aktuálního záznamu a sady pravidel, které uživatel obchodního pravidla konfiguruje ve zdroji dat vyhledávání **Model.Data.Summary.Level**.
     
@@ -281,18 +283,18 @@ Dále upravíte existující vypočtené pole tak, aby používalo konfigurovan�
 
 ## <a name="complete-the-draft-version-of-a-derived-format"></a>Dokončete koncept odvozeného formátu
 
-1.  Na záložce **Verze** vyberte možnost **Změnit stav**.
+1.  Na pevné záložce **Verze** vyberte možnost **Stav změny**.
 2.  Zvolte **Dokončit**.
 3.  Vyberte **OK**.
 
 ## <a name="export-completed-version-of-modified-format"></a>Exportujte dokončenou verzi modifikovaného formátu
 
 1.  Ve stromu konfigurace vyberte položku **Formát pro ověření, jak vyhledat data LE**.
-2.  Na záložce **Verze** vyberte záznam se stavem **Dokončeno**.
+2.  Na pevné záložce **Verze** vyberte záznam se stavem **Dokončeno**.
 3.  Vyberte **Exchange**.
 4.  Vyberte **Exportovat jako soubor XML**.
 5.  Vyberte **OK**.
-6.  Webový prohlížeč stáhne soubor **Formát k zjištění, jak vyhledat data LE.xml**. Tento soubor si uložte místně.
+6.  Webový prohlížeč stáhne soubor **Formát k zjištění, jak vyhledat data LE**. Tento soubor si uložte místně.
 
 Chcete-li se dozvědět, jak vyhledat formát **Formát k zjištění, jak vyhledat data LE**, zopakujte kroky v tomto oddílu a uložte si místně následující soubory.
 
@@ -306,9 +308,4 @@ Pokud chcete zjistit, jak používat konfigurovaný formát ER **Formát k zjiš
 
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 
-[Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby](er-app-specific-parameters-set-up.md)
-
-[Konfigurace zdrojů dat vyhledávání pro použití funkce parametrů specifických pro aplikace elektronického výkaznictví](er-lookup-data-sources.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Nastavení parametrů formátu ER podle právnické osoby](er-app-specific-parameters-set-up.md)

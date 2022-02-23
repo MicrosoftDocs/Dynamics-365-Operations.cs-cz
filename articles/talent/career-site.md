@@ -142,6 +142,3 @@ Poté, co uchazeči zažádají o jedno nebo více pracovních míst, mohou na n
 ## <a name="internal-jobs"></a>Interní pracovní pozice
 
 V současné době se pracovní pozice, které jsou označeny jako interní a publikované na kariérním webu Attract, na kariérním webu nezobrazují. Jsou přístupné pouze prostřednictvím přímé adresy URL **Požádat**, kterou lze kopírovat z aplikace Attract.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

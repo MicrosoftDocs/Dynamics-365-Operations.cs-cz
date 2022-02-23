@@ -2,23 +2,26 @@
 title: Vytvoření konsolidačních skupin a dalších konsolidačních účtů
 description: Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do skupiny přidat účty.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f146eca39ef3aa690eb69283371d40c5c6d439bd868f1aa4763ffa76c8f682
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 826a65af563207fbfbc7391b176aa0e65b3363f9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757042"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441232"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Vytvoření konsolidačních skupin a dalších konsolidačních účtů
 
@@ -44,6 +47,3 @@ Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do
 8. Zadejte hodnotu do pole Konsolidační účet.
 9. Zadejte hodnotu do pole Název konsolidačního účtu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

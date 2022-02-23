@@ -2,13 +2,16 @@
 title: Hierarchie dimenzí
 description: V tomto tématu jsou informace o hierarchiích dimenzí. Hierarchie dimenzí se používá k definování struktury sestav, zásad nákladů a nastavení zabezpečení v nákladovém účetnictví.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441074"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchie dimenzí
 
@@ -39,7 +42,7 @@ Hierarchie dimenzí se používají na různých místech v nákladovém účetn
 
 Následuje příklad hierarchie dimenzí.
 
-![Příklad hierarchie dimenzí.](./media/dimension-hierarchy.png)
+![Příklad hierarchie dimenzí](./media/dimension-hierarchy.png)
 
 Hierarchii dimenzí lze vytvořit pro následující typy dimenzí:
 
@@ -80,7 +83,7 @@ Hierarchie dimenzí je vytvořena jako stromové struktura, která má vztahy uz
 
 Malá společnost má následující strukturu organizace, kde finance a lidské zdroje jsou oddělení pod správou a montáž a balení jsou oddělení v rámci výroby.
 
-![Příklad organizační struktury.](./media/dimension-hierarchy-org.png)
+![Příklad organizační struktury](./media/dimension-hierarchy-org.png)
 
 Dimenze objektu nákladů představuje všechna nákladová střediska v organizaci.
 
@@ -118,17 +121,16 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 | Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Ne                    |
+| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Žádný                    |
 
 Hierarchii dimenzí pro vykazování lze nastavit tak, jak je uvedeno zde.
 
-**Rozsahy členu dimenze**
-
-|   Uzly           |   Od členu dimenze   |   Po člen dimenze   |
+|                   | Rozsahy členu dimenze   |                         |
 |-------------------|---------------------------|-------------------------|
+| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace      |                           |                         |
 | &nbsp;&nbsp;Správce         |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
+|&nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Výroba    |                           |                         |
@@ -145,13 +147,12 @@ Hierarchii dimenzí, která splňuje požadavky zásad, lze nastavit zde uveden�
 
 Hierarchii dimenzí pro zásady lze nastavit tak, jak je uvedeno zde.
 
-**Rozsahy členu dimenze**
-
-|   Uzly           |   Od členu dimenze   |   Po člen dimenze   |
+|                   | Rozsahy členu dimenze   |                         |
 |-------------------|---------------------------|-------------------------|
+| **Uzly**         | **Od členu dimenze** | **Po člen dimenze** |
 | Chování nákladů     |                           |                         |
 | &nbsp;&nbsp;Pevné náklady    | 10001                     | 10011                   |
-| &nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
+|&nbsp;&nbsp;Variabilní náklady | 40001                     | 40010                   |
 
 > [!NOTE]
 > Pod možností **Rozsahy členu dimenze** může uzel obsahovat rozsahy členu dimenze 1:_n_. Můžete vložit ID členů dimenze, která ještě neexistují jako členy dimenze. Tento postup dělá hierarchii odolnou do budoucna.  
@@ -297,10 +298,9 @@ Všichni manažeři budou potenciálně mít přístup k vysoce citlivým obchod
 
 V návrháři hierarchie je k dispozici nová pevná záložka **Uživatelé**. Zde můžete vložit jedno nebo více ID uživatelů na každém uzlu v hierarchii.
 
-**Rozsahy členu uživatelů a dimenze**
-
-|   Uzly         |   ID uživatele        |   Z členu dimenze   |   Po člen dimenze   |
+|                 | Uživatelé            | Rozsahy členu dimenze   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
+| **Uzly**       | **ID uživatele**      | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Správce         | Duben            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
@@ -331,8 +331,5 @@ Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zo
     - Vizualizace dat Power BI, které jsou vloženy do klienta Dynamics 365 Finance
 
 > [!NOTE] 
-> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarchie seznamu přístupu nepomáhá zabezpečit export dat do aplikace Excel. Z toho vyplývá, že nástroj pro vytváření sestav by měl být použit pouze nákladovými účetními a vedoucími pracovníky, kteří mají úplný přístup k zobrazení dat.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,50 +1,46 @@
 ---
 title: Úprava vztahů podřízenosti pro určitou pozici
 description: Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnance.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d7996733575c2d3a23971d08eb101962c1f6bbd9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ae8ca5b20f331709e9fc1d9ae3b5f350e5c19ab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066618"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417647"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Úprava vztahů podřízenosti pro určitou pozici
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnance. Vztah sestav lze použít pro směrování dokumentů prostřednictvím workflowu. Procedura také ukazuje postup přiřazení zaměstnance k dalším hierarchiím. Například zaměstnanec může být součástí projektového týmu s neformálním vykazováním vztahů k vedoucímu projektu. Další vztahy vykazování lze definovat na pozici pro různé scénáře projektu nebo matice. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
-
-
-Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnance. Vztah sestav lze použít pro směrování dokumentů prostřednictvím workflowu. Procedura také ukazuje postup přiřazení zaměstnance k dalším hierarchiím. Například zaměstnanec může být součástí projektového týmu s neformálním vykazováním vztahů k vedoucímu projektu. Další vztahy vykazování lze definovat na pozici pro různé scénáře projektu nebo matice. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
-
-1. Přejděte k nabídce **Lidské zdroje** \> **Pozice** \> **Pozice**.
-2. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat na hodnotě **000091** pro pole **Pozice**.
-3. Vyberte odkaz na vybraném řádku v seznamu.
-4. Rozbalte sekci **Sestavy pro umístění**.
-5. Výběrem možnosti **Nové** otevřete rozevírací dialogové okno.
-6. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu.
-7. Vyberte **Vytvořit**.
-8. Rozbalte oddíl **Vztahy**.
-9. Vyberte **přidat**.
+1. Přejděte k nabídce Lidské zdroje > Pozice > Pozice.
+2. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli Pozice pomocí hodnoty „000091“.
+3. Klikněte na odkaz na vybraném řádku v seznamu.
+4. Rozbalte pole Sestavy pro umístění oddílu.
+5. Kliknutím na možnost Nový otevřete dialogové okno.
+6. V poli Nadřízená pozice zadejte nebo vyberte hodnotu.
+7. Klikněte na položku Vytvořit.
+8. Rozbalte nebo sbalte oddíl Vztahy.
+9. Klepněte na možnost Přidat.
 10. Zaškrtněte políčko po levé straně mřížky.
-11. V poli **Název hierarchie** zadejte nebo vyberte hodnotu (např. **Projekt**).
-12. V poli **Nadřízená pozice** zadejte nebo vyberte hodnotu. (Příklad: **000437**).
-13. Zvolte možnost **Uložit**.
+11. V poli Název hierarchie zadejte nebo vyberte hodnotu.
+    * Příklad: Projekt  
+12. V poli Nadřízená pozice zadejte nebo vyberte hodnotu.  Příklad: 000437
+13. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

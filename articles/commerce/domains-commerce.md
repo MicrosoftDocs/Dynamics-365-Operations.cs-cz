@@ -2,24 +2,27 @@
 title: Domény v Dynamics 365 Commerce
 description: Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733984"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517348"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -38,7 +41,7 @@ Při zřizování prostředí elektronického obchodu v [Microsoft Dynamics Life
 
 Následující obrázek ukazuje obrazovku pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**. 
 
-![Obrazovka pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![Obrazovka pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Pokud již došlo ke zřízení, můžete vytvořit požadavek na službu a přidat do prostředí další domény. Chcete-li vytvořit požadavek na službu v LCS, přejděte ve svém prostředí na **Podpora \> Problémy s podporou** a vyberte **Odeslat incident**.
 
@@ -56,7 +59,7 @@ Při prvním nastavení webu v konfigurátoru webů se zobrazí dialogové okno 
 
 Následující obrázek ukazuje dialogové okno **Nastavte svůj web** pro web s názvem „výchozí“ při prvním přístupu na web v konfigurátoru webů.
 
-![Dialogové okno **Nastavte svůj web**.](./media/Domains_SetupyoursiteScreen.png)
+![Dialogové okno **Nastavte svůj web**](./media/Domains_SetupyoursiteScreen.png)
 
 Pole **Vyberte doménu** umožňuje přidružit jeden z podporovaných názvů hostitelů poskytnutých pro váš web v LCS k vašemu webu v konfigurátoru webů.
 
@@ -79,11 +82,11 @@ Jakmile má váš web nastavenu cestu, všechny adresy URL přidružené ke str�
 
 Následující obrázek ukazuje dialogové okno **Nová adresa URL** v konfigurátoru webů se zvýrazněnou ukázkovou adresou URL. 
 
-![Dialogové okno **Nová adresa URL** v konfigurátoru webů.](./media/Domains_PageSetup2a.png)
+![Dialogové okno **Nová adresa URL** v konfigurátoru webů](./media/Domains_PageSetup2a.png)
 
 Následující obrázek ukazuje stránku **Adresy URL** v konfigurátoru webů se zvýrazněnou adresou URL v seznamu.
 
-![Možnost Spustit tok uživatele v toku zásady.](./media/Domains_URLsInSiteBuilder2a.png)
+![Možnost Spustit tok uživatele v toku zásady](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domény v konfigurátoru webů
 
@@ -151,7 +154,7 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
 
   [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
-  [Nastavení kanálu online obchodu](./channel-setup-online.md)
+  [Nastavení kanálu online obchodu](online-stores.md)
 
   [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
   [Přidání podpory pro síť CDN](add-cdn-support.md)
 
   [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

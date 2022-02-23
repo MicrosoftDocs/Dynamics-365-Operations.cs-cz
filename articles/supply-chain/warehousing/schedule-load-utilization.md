@@ -1,25 +1,28 @@
 ---
 title: Naplánovat využití vytížení
 description: Toto téma vysvětluje postup při nastavení a plánování vytížení v určitém skladu.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 728cf6e0b1bce660328f970176c218f66646ec8a
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 87455077c69834c9ace6409f4cc611ae6e14beb4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902064"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423604"
 ---
 # <a name="schedule-load-utilization"></a>Naplánovat využití vytížení
 
@@ -69,6 +72,3 @@ Využití místa lze projektovat generováním sestavy **využití vytížení s
 
 4. V poli **Typ vytížení** vyberte **Objem** nebo **Hmotnost** pro označení provozní jednotky skladu, pro který se má projektovat prostor.
 5. V poli **Nastavení využití prostoru** vyberte nastavení využití prostoru, na kterém by mělo být projektování založeno.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

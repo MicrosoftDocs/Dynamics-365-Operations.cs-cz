@@ -1,33 +1,31 @@
 ---
 title: Vývoj struktury kompenzace
-description: Toto téma vysvětluje proces vytváření plánu fixní kompenzace a přihlašování zaměstnanců do plánu pomocí pravidel způsobilosti.
-author: twheeloc
-ms.date: 08/25/2021
+description: Tento článek vás provede procesem vytváření plánu fixní kompenzace a přihlašování zaměstnanců do plánu pomocí pravidel způsobilosti.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417660"
 ---
 # <a name="develop-a-compensation-structure"></a>Vývoj struktury kompenzace
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Toto téma popisuje vytváření plánu fixní kompenzace a přihlašování zaměstnanců do plánu pomocí pravidel způsobilosti. Toto téma používá ukázková data USMF a je určeno pro manažery kompenzace a výhod.
+Tento článek vás provede procesem vytváření plánu fixní kompenzace a přihlašování zaměstnanců do plánu pomocí pravidel způsobilosti. Tento článek používá ukázková data USMF a je určen pro manažery kompenzace a výhod.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Vytvoření plánu fixní kompenzace
 
@@ -45,7 +43,7 @@ Toto téma popisuje vytváření plánu fixní kompenzace a přihlašování zam
 
 7. V poli **Typ** určete, zda je plánem fixní kompenzace **Pásmo**, **Stupeň** nebo **Krok**.
 
-8. Zaškrtávací políčko **Doporučení povoleno** bude výchozí hodnotou pro všechny akce přidané do tohoto plánu v události zpracování. Povolením doporučení lze při zpracování kompenzace přepsat vypočítanou částku směrnice.
+8. Pole **Doporučení povoleno** se chová jako výchozí hodnota pro všechny akce přidané do tohoto plánu v události zpracování. Povolením doporučení lze při zpracování kompenzace přepsat vypočítanou částku směrnice.
 
 9. Pole **Tolerance mimo rozsah** umožňuje určit, jakým způsobem chcete zpracovat částky kompenzace, které se nacházejí mimo určený rozsah struktury kompenzace na dané úrovni. Nastavení pole **Tolerance mimo rozsah** na **Žádný** umožňuje použít jakoukoli částku kompenzace. **Předběžná tolerance** upozorní uživatele, pokud je kompenzace menší než minimální nebo větší než maximální výše referenčního bodu této úrovně. Uživatelé mohou výstrahu ignorovat a pokračovat. **Pevná tolerance** vytvoří chybu, pokud je kompenzace zaměstnance nastavena mimo minimální a maximální referenční body pro úroveň, a automaticky upraví kompenzaci zaměstnance tak, aby spadala do rozsahu.
 
@@ -115,6 +113,3 @@ Nový plán fixní kompenzace nelze přiřadit zaměstnanci, dokud nebudou defin
 
 8. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

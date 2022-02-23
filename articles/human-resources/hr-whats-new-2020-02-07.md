@@ -1,32 +1,33 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (7. února 2020)
 description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 7. únoru 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70acaaf2218c8b5c0239b968a29a927ac23080f0
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 42fac6e34db10efb047b4cb0fc3c7752330e5bcf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060807"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526827"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (7. února 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.2835. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -54,11 +55,11 @@ Od 3. února 2020 jsou k dispozici následující funkce náhledu:
 
 ### <a name="platform-update-32"></a>Aktualizace platformy 32 
 
-Brzy bude k dispozici aktualizace platformy č. 32. [Další informace o aktualizaci platformy číslo 32 naleznete zde](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Brzy bude k dispozici aktualizace platformy č. 32. [Další informace o aktualizaci platformy číslo 32 naleznete zde](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### <a name="updated-dataverse-solution"></a>Aktualizované řešení služby Dataverse
+### <a name="updated-common-data-service-solution"></a>Aktualizované řešení služby Common Data Service
 
-Nové řešení Dataverse bude brzy k dispozici po provedení následujících změn:
+Nové řešení Common Data Service bude brzy k dispozici po provedení následujících změn:
 
 | Popis | Změna |
 | ----------------------------------------- | --- |
@@ -69,13 +70,11 @@ Nové řešení Dataverse bude brzy k dispozici po provedení následujících z
 | Nové entity nastavení s nastavením variabilní kompenzace | **Typ plánu variabilní kompenzace**</br>**Plán variabilní kompenzace**</br>**Pravidla připsání**</br>**Úroveň plánu variabilní kompenzace** |
 | Nová entita **Zaměstnání dle kalendáře pracovníka** | Byla přidána **entita pracovního kalendáře** |
 | Nová entita **Mzdové podrobnosti o pozici** | Byla přidána položka **Mzdové podrobnosti o pozici**. |
-| Nová entita **Pozice** | Byla přidána položka **Pozice**. Nová entita **Nadpis** bude zahrnuta do procesu synchronizace mezi lidskými zdroji a Dataverse. Na počátku nebude odkazovat z entit **Pracovní pozice** nebo **Úloha**. |
+| Nová entita **Pozice** | Byla přidána položka **Pozice**. Nová entita **Nadpis** bude zahrnuta do procesu synchronizace mezi lidskými zdroji a Common Data Service. Na počátku nebude odkazovat z entit **Pracovní pozice** nebo **Úloha**. |
 
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -60,6 +60,3 @@ Všechny nové funkce zůstanou v náhledu nejméně 30 dnů a obvykle jsou zde 
 V některých případech bude ve výchozím nastavení zapnuta integrální funkce a nelze ji vypnout (například pracovní prostor **Správa funkcí**).
  
 Jakmile je funkce obecně k dispozici, může být zapnuta nebo vypnuta v provozních prostředích. Pracovní prostor **Správa funkcí** označuje, kdy bude funkce náhledu povinná. Toto datum je obvykle 1. října nebo 1. ledna, aby bylo možné vyrovnat je s pololetními plány vydávání. Nemůžete zapínat a vypínat povinné funkce. Dokud nebude povinná, můžete funkci zapnout nebo vypnout ve všech prostředích.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

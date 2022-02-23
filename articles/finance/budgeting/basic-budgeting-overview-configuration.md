@@ -1,28 +1,29 @@
 ---
 title: Přehled rozpočtování
 description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/11/2018
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "60113"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: panolte
+ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986503"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441168"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -30,7 +31,8 @@ ms.locfileid: "7986503"
 
 Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 
-## <a name="overview"></a>Přehled
+<a name="overview"></a>Přehled
+--------
 
 Schválený rozpočet pro právnickou osobu je udržován v dokumentu, který je označován jako *položka registru rozpočtu*. Řádky v dokumentu položek registru rozpočtu se označují jako položky *rozpočtového účtu* a obsahují informace o finančních dimenzích, datech a částkách schváleného rozpočtu. Dokument s položkami registru rozpočtu je integrován se základními finančními sestavami a stránkami s dotazy, kde se skutečné částky hlavní knihy porovnávají s částkami rozpočtu. 
 
@@ -38,7 +40,7 @@ Vytvoření položek registru rozpočtu lze několika způsoby:
 
 -   Ručně zadat informace o dokumentu na stránce **položky registru rozpočtu**.
 -   Použijte šablonu aplikace Microsoft Excel, kterou lze otevřít kliknutím na tlačítko **Otevřít v aplikaci Excel** na stránce **Položky registru rozpočtu**.
--   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí parametru **Zpracování založené na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
+-   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí **zpracování** parametru **Založeno na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
 -   Pokud společnost používá funkci plánování rozpočtu pro přípravu dat rozpočtu, můžete použít periodické zpracování **Generovat položku registru rozpočtu**.
 
 Položka registru rozpočtu je považována za dokončenou po aktualizaci rozpočtového zůstatku. Na stránce **Položky registru rozpočtu** klikněte na **Aktualizovat rozpočtové zůstatky** pro výběr položky registru rozpočtu nebo více položek. Po provedení aktualizace zůstatků rozpočtu se stav položky rozpočtu registru změní na **Dokončeno**. Dokončená položka registru rozpočtu nemůže být znovu otevřena pro úpravy. Proto, chcete-li upravit data rozpočtu, musíte vytvořit novou položku registru rozpočtu namísto opravy dat v dokončené položce registru rozpočtu.
@@ -72,7 +74,7 @@ Funkce, která byla představena v aplikaci Microsoft Dynamics 365 Finance verze
 
 Funkce **Položky registru rozpočtu pro pouze množství** umožňuje zaúčtovat položku registru rozpočtu s částkami pouze množství. Můžete například zaúčtovat položku rozpočtu s množstvím 32 a s nulovou cenou, což vede k nulovému množství. Toto množství pak můžete použít v kontextu finanční sestavy k určení ceny za množství. Všimněte si, že v rámci této funkce nebyly aktualizovány žádné dotazy ani sestavy, funkce pouze umožňuje zaúčtovat nulovou částku.
 
-Funkce **Položky registru rozpočtu pro výchozí typ částky** umožňuje, aby výchozí typ částky v rámci položky registru rozpočtu byl jiný než výdaj. Řádek položky registru rozpočtu bude ve výchozím nastavení vyúčtování výdajů v případě, že typ hlavního účtu je výdaje, výchozí nastavení je výnos, pokud je typem hlavního účtu výnos a výchozí nastavení výdajů pro všechny ostatní typy účtů.
+Funkce **Položky registru rozpočtu pro výchozí typ částky** umožňuje, aby výchozí typ částky v rámci položky registru rozpočtu byl jiný než výdaj. Řádek položky registru rozpočtu bude ve výchozím nastavení vyúčtování výdajů v případě, že typ hlavního účtu je výdaje, výchozí nastavení je výnos, pokud je typem hlavního účtu výdaj a výchozí nastavení výdajů pro všechny ostatní typy účtů.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Použití pracovní plochy a stránek s dotazy ke sledování rozpočtu a skutečných hodnot
 Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním prostoru **Rozpočty hlavní knihy a prognózy**. Karty **Výdaje nad rozpočet** a **Výnosy pod rozpočtem** poskytují rychlý přehled o kombinacích finančních dimenzí, kde cíle rozpočtu nedosáhly nebo se blížily prahové hodnotě. Prahovou procentuální hodnotu rozpočtu a sady finančních dimenzí, které se používají na těchto kartách, můžete přizpůsobit klepnutím na možnost **Konfigurovat můj pracovní prostor**. Můžete klepnout na možnost **Manažeři jednotky** a zobrazíte pracovníky, kteří odpovídají za kombinace specifických finančních dimenzí, které jsou na těchto kartách vybrány. Například pokud vidíte, že rozpočet výdajů oddělení Operace překročí rozpočtový práh, lze snadno najít a kontaktovat správce oddělení operací a problém probrat. 
@@ -86,6 +88,3 @@ Společnost, která používá funkci plánování rozpočtu může vytvořit a 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,6 +62,3 @@ Práci lze v Attract kdykoli zrušit.
    > Úlohu lze uzavřít jako **Pozice obsazena** až poté, co alespoň jeden potenciální uchazeč dokončil fázi nabídky. Pokud v aplikaci není vybrána možnost **Nabídka přijata** nebo pokud aplikace nezobrazí stav **Přijato** v nabídce, možnost **Pozice obsazena** se nezobrazí v rozevíracím seznamu **Důvod**.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

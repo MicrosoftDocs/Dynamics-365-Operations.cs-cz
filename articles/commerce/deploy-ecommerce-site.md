@@ -2,40 +2,46 @@
 title: Nasazení nového klienta elektronického obchodu
 description: V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu Dynamics 365 Commerce pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4b54e10cb4bd897b4c0706a13eeaf32f8892a05f7a09f3b27dbdd3dcdad1606
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750707"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517275"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
+
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu Dynamics 365 Commerce pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 
+## <a name="overview"></a>Přehled
+
 Microsoft Dynamics Lifecycle Services (LCS) je cloudový pracovní prostor vhodný pro spolupráci, který mohou partneři a zákazníci používat ke správě projektů a prostředí, zobrazování nejnovějších informací o produktech a funkcích Microsoft Dynamics a vytváření, sledování a procházení incidentů podpory. Funkce správy elektronického obchodu jsou integrovány do LCS.
 
-Další informace o LCS naleznete v části [Uživatelská příručka Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
+Další informace o LCS naleznete v části [Uživatelská příručka Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
 ## <a name="get-started"></a>Začínáme
 
 Před inicializací elektronického obchodu je nutné inicializovat projekt, prostředí a Retail Cloud Scale Unit (RCSU). Chcete-li provést inicializaci v LCS, musíte mít oprávnění role vlastníka projektu nebo správce prostředí. Jsou podporovány topologie provozních a sandboxovýchprostředí.
 
-Další informace o prostředích naleznete v části [Plánování prostředí](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Další informace o RCSU naleznete v tématu [Inicializace Retail Cloud Scale Unit](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
+Další informace o prostředích naleznete v části [Plánování prostředí](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Další informace o RCSU naleznete v tématu [Inicializace Retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
 ## <a name="initialize-e-commerce"></a>Inicializace elektronického obchodu
 
@@ -106,6 +112,3 @@ Chcete-li získat přístup k konfigurátoru webů Commerce, přejděte na kart
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

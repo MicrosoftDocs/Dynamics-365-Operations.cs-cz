@@ -1,97 +1,77 @@
 ---
 title: Vyrovnání hlavní knihy
 description: Toto téma vysvětluje, jak používat stránku Vyrovnání hlavní knihy k vyrovnání transakcí hlavní knihy a stornování vyrovnání.
-author: kweekley
-ms.date: 01/31/2022
+author: mikefalkner
+manager: aolson
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kweekley
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075317"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441069"
 ---
 # <a name="ledger-settlements"></a>Vyrovnání hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
-Vyrovnání hlavní knihy je proces spárování transakce Má dáti a Dal v hlavní knize. Vyrovnání částek Má dáti a Dal se používá k odsouhlasení zůstatku účtu hlavní knihy s podrobnými transakcemi, které tvoří tento zůstatek.
+Vyrovnání hlavní knihy vám umožňují spárovat transakce Má dáti a Dal v hlavní knize, a označit je jako vyrovnané. Tímto způsobem můžete zajistit, že související transakce budou vyrovnány. Pokud byla provedena omylem, můžete také vyrovnání stornovat.
 
-Vypořádané transakce mohou být vyloučeny z dotazů a sestav. Tímto způsobem je snazší analýza transakcí otevřené knihy, které tvoří zůstatek účtu hlavní knihy.
+## <a name="enable-advanced-ledger-settlements"></a>Povolit pokročilá vyrovnání hlavní knihy
 
-> [!IMPORTANT] 
-> Moduly Závazky (AP) a Pohledávky (AR) mají také vyrovnání faktur a plateb. Když dojde k vypořádání v dílčích knihách AR a AP, odpovídající položky hlavní knihy se automaticky nevypořádají.
+Stránka pokročilých vyrovnání hlavní knihy poskytuje další možnosti filtrování a výběru transakcí. Chcete-li povolit pokročilá vyrovnání hlavní knihy, postupujte takto.
 
-## <a name="ledger-settlement-features"></a>Funkce vyrovnání hlavní knihy
-V Microsoft Dynamics 365 Finance verze 10.0.21 byla možnost **Povolit pokročilá vyrovnání hlavní knihy** ze stránky **Parametry hlavní knihy** odstraněna. Pokročilé vyrovnání hlavní knihy je nyní vždy povoleno.
-Ve verzi Finance 10.0.25 byla představena funkce **Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku**. Tato funkce mění základní funkčnost vyrovnání hlavní knihy i uzavření hlavní knihy na konci roku. Před povolením této funkce v pracovním prostoru **Správa funkcí** si pročtěte téma [Sledování mezi vyrovnáním hlavní knihy a uzávěrkou na konci roku](awareness-between-ledger-settlement-year-end-close.md).
+1. Zvolte **Hlavní kniha** \> **Nastavení hlavní knihy** \> **Parametry hlavní knihy**. 
+2. Na kartě **Vyrovnání hlavní knihy** nastavte možnost **Rozšířené vyrovnání hlavní knihy** na **Ano**, čímž zapnete funkci rozšířeného vyrovnání hlavní knihy Stránka **Pokročilé vyrovnání hlavní knihy** se použije tehdy, když zvolíte **Vyrovnání hlavní knihy** v možnosti **Periodické úlohy**. 
+3. Je nutné zadat seznam účtů, které se použijí pro vyrovnání hlavní knihy pro každou účtovou osnovu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**. V seznamu **Účtové osnovy** vyberte účtovou osnovu a poté vyberte **Nový** pro přidání nových účtů do seznamu.
 
-## <a name="set-up-ledger-settlement"></a>Nastavení vypořádání hlavní knihy
-Musíte vybrat hlavní účty, pro které chcete provést vyrovnání hlavní knihy. Tyto hlavní účty lze vybrat dvěma způsoby.
+## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Vyrovnání transakcí pomocí stránky pokročilého vyrovnání hlavní knihy
 
-1. Přejděte do nabídky **Hlavní kniha** > **Nastavení hlavní knihy** > **Parametry hlavní knihy**.
-2. Na kartě **Účetní vypořádání** vyberte účtové osnovy, ze kterých chcete vybrat hlavní účty.
-3. Vyberte hlavní účty pro vyrovnání hlavní knihy. Protože účtové osnovy jsou globální, všechny společnosti, kterým jsou vybrané účtové osnovy přiřazeny, budou mít pro vyrovnání hlavní knihy vybrané stejné hlavní účty.
-
-  - nebo -
-
-1. Přejděte do nabídky **Hlavní kniha** > **Periodické úkoly** > **Vyrovnání hlavní knihy**.
-2. Vyberte **Účty vypořádání hlavní knihy**.
-3. V dialogovém okně vyberte účtové osnovy a hlavní účty, pro které chcete provést vyrovnání hlavní knihy. Toto dialogové okno je zkratka. Všechny hlavní účty, které sem přidáte, se projeví také na stránce **Parametry hlavní knihy**.
-
-K odstranění hlavních účtů z vyrovnání hlavní knihy můžete kdykoli použít stejné základní postupy. Odstranění hlavního účtu nemá žádný vliv na předchozí vyrovnání hlavní knihy. Hlavní účet a transakce se však již nebudou zobrazovat na stránce **Vyrovnání hlavní knihy**.
-
-## <a name="settle-transactions"></a><a name="settle-transactions"></a>Vyrovnat transakce
 Chcete-li vyrovnat transakce, postupujte takto.
 
-1. Přejděte do nabídky **Hlavní kniha** > **Periodické úkoly** > **Vyrovnání hlavní knihy**.
+1. Zvolte **Hlavní kniha** \> **Periodické úlohy** \> **Vyrovnání hlavní knihy**.
 2. Nastavte filtry v horní části stránky:
 
-    - Vybrat rozsah dat Nebo můžete vybrat kód časového intervalu pro automatické vyplnění časového rozsahu. Nedoporučujeme provádět vyrovnání hlavní knihy u transakcí, které zasahují do více fiskálních roků.
-    - Změňte účtovací vrstvu podle potřeby. Nemůžete vypořádat transakce, které jsou v různých účtovacích vrstvách.
-    - Chcete-li zobrazit hlavní účet a dimenze zvlášť, vyberte sadu finančních dimenzí.
+    - Vyberte rozsah dat nebo zvolte **Kód časového intervalu** pro automatické vyplnění časového rozsahu.
+    - Změňte účtovací vrstvu podle potřeby.
+    - Chcete-li zobrazit hlavní knihu a dimenze zvlášť, vyberte sadu finančních dimenzí.
 
-3. Vyberte **Zobrazit transakce** k zobrazení všech transakcí, které odpovídají nastaveným filtrům a seznamu účtů, které jste uvedli při nastavení účtové osnovy v předchozí části.
-
-    - Pokud změníte jakýkoliv z filtrů nebo sad dimenzí, je nutné vybrat možnost **Zobrazit transakce** znovu.
-    - Chcete-li vyfiltrovat transakce pro individuální hlavní účet, použijte filtr v poli **Účet hlavní knihy**. Nedoporučujeme provádět vyrovnání hlavní knihy pro transakce, které jsou zaúčtovány na různé hlavní účty.
-
-4. Vyberte řádky pro vyrovnání. Hodnota v poli **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.
+3. Vyberte **Zobrazit transakce** k zobrazení všech transakcí, které odpovídají nastaveným filtrům a seznamu účtů, které jste uvedli při nastavení účtové osnovy v předchozí části. Pokud změníte jakýkoliv z filtrů nebo sad dimenzí, je nutné vybrat možnost **Zobrazit transakce** znovu.
+4. Vyberte jeden nebo více řádků, které máte v plánu vyrovnat. Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.
 5. Po dokončení výběru transakcí vyberte **Označit vybrané**. Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** nad mřížkou zvyšuje nebo snižuje o celkovou částku na označených řádcích.
-6. Když je hodnota v poli **Označená částka** rovna **0** (nule), vyberte **Vyrovnat označené transakce**. Stav označených transakcí je aktualizován na **Vyrovnáno**.
-
-    > [!IMPORTANT]
-    > Všechny transakce, které jste označili k vyrovnání pro aktivní právnickou osobu, budou vyrovnány, i když nejsou aktuálně zobrazeny na stránce vypořádání hlavní knihy kvůli tomu, že jste použili filtr.
+6. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Vyrovnat označené transakce**. Stav označených transakcí je aktualizován na **Vyrovnáno**.
 
 ## <a name="make-transactions-easier-to-find"></a>Snadnější vyhledání transakcí
+
 Stránka **Vyrovnání hlavní knihy** obsahuje možnosti, které usnadňují zobrazení transakcí, které potřebujete pro vyrovnání.
 
-- Filtr **Označené** použijte k filtrování transakcí podle toho, zda je zaškrtávací políčko **Označené** pro danou položku zapnuto.
-- Filtr **Stav** použijte k filtrování transakcí na základě jejich stavu.
-- Vyberte možnost **Seřadit podle absolutní částky**, chcete-li seřadit částky podle absolutní hodnoty. Tímto způsobem můžete seskupit debety a kredity, které mají stejnou částku.
+- Tlačítko **Zrušit označení vybraných** vymaže pole **Označené** pro všechny řádky, které jsou vybrány.
+- Filtr **Označené** vám umožňuje filtrovat transakce podle toho, zda je pole **Označené** pro danou položku vybráno nebo odznačeno.
+- Filtr **Stav** vám umožňuje filtrovat transakce podle toho, zda je jejich stav **Vyrovnáno** nebo **Nevyrovnáno**.
+- Tlačítko **Třídit podle absolutní částky** umožňuje seřadit částky podle absolutní hodnoty, abyste mohli seskupit dohromady položky Má dáti a Dal, které mají stejnou částku.
 
 ## <a name="reverse-a-settlement"></a>Stornování vyrovnání
+
 Omylem provedené vyrovnání lze stornovat.
 
-1. Postupujte podle kroků 1 až 3 v části [Vypořádat transakce](#settle-transactions) pro zobrazení transakcí, které vás zajímají.
+1. Proveďte kroky 1 až 3 v části „Vyrovnání transakcí pomocí stránky pokročilých vyrovnání hlavní knihy“ k zobrazení transakcí, které hledáte.
 2. Ve filtru **Stav** vyberte možnost **Vyrovnáno**.
-3. Vyberte řádky pro stornování.
-4. Vyberte **Stornovat označené transakce**. Stav všech transakcí, které mají stejné ID vypořádání, se aktualizuje na **Není vyřízeno**.
+3. Vyberte jeden nebo více řádků, které máte v plánu stornovat. Hodnota pole **Vybraná částka** v horní části stránky se zvyšuje nebo snižuje o celkovou částku na vybraných řádcích.
+4. Po dokončení výběru transakcí vyberte **Označit vybrané**. Ve sloupci **Označené** se zobrazí zaškrtnutí pro každou vybranou transakci. Kromě toho se hodnota pole **Označená částka** v horní části stránky zvyšuje nebo snižuje o celkovou částku na označených řádcích.
+5. Když je hodnota **Označené částka** rovna **0** (nule), vyberte **Stornovat označené transakce**. Stav označených transakcí je aktualizován na **Nevyrovnáno**.
 
-    > [!IMPORTANT]
-    > Všechny transakce, které mají stejné ID vypořádání, budou stornovány, i když nejsou označeny. Například byly označeny a vypořádány čtyři řádky. Všechny čtyři řádky mají stejné ID vypořádání. Pokud označíte jeden z těchto čtyř řádků a poté vyberete **Stornovat označené transakce**, všechny čtyři řádky budou stornovány.
+## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualizace seznamů účtů, které jsou zahrnuty v seznamu transakcí
 
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Vyberte **Účty vyrovnání hlavní knihy** pro otevření dialogového okna, ve kterém můžete upravit účty zahrnuté v seznamu transakcí. Zvolte **Nový** pro přidání nových účtů do seznamu. Tento seznam slouží k filtrování seznamu transakcí, které se zobrazí na stránce **Vyrovnání hlavní knihy**.

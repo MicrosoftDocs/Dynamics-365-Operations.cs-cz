@@ -2,23 +2,26 @@
 title: Konfigurace hlavních knih
 description: Toto téma poskytuje informace o tom, jak konfigurovat hlavní knihy pro každou právnickou osobu. Zahrnuje informace o tom, jak vybrat měny, fiskální kalendáře, účtovou osnovu a účetní struktury, které by se měly používat u každé právnické osoby.
 author: kweekley
+manager: ''
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
+ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712212"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4441374"
 ---
 # <a name="configure-ledgers"></a>Konfigurace hlavních knih
 
@@ -79,6 +82,3 @@ Pokud používáte dvě měny nebo používáte jednu měnu, ale transakce jsou 
 Realizované zisky a ztráty jsou zisky a ztráty z dokončených transakcí. Zaznamenávají se do výkazu zisků a ztrát. Nerealizované zisky a ztráty jsou zisky a ztráty, které se uskutečnily, ale transakce není dokončena. Jinými slovy, zaúčtovali jste například fakturu, ale faktura ještě není vyrovnána a zaplacena. Nerealizované zisky a ztráty se zaznamenávají do rozvahy.
 
 Další informace, jak použít dvě měny, naleznete v části [Duální měna](dual-currency.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

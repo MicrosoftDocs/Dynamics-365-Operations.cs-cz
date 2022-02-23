@@ -1,27 +1,30 @@
 ---
 title: Nastavení a návrh formátů příjemek
 description: Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Dynamics 365 Commerce obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
-author: BrianShook
-ms.date: 09/16/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779394"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410887"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Nastavení a návrh formátů příjemek
 
@@ -43,15 +46,6 @@ Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určo
     - **Netisknout** – účtenky se nebudou tisknout.
     - **Vyzvat uživatele** – uživatel je vyzván k vytisknutí účtenky.
     - **Podle potřeby** – tato možnost slouží pouze pro dárkové příjemky. Pokud je vybrána tato možnost, uživatel může vytisknout dárkovou příjemku ze stránky **Změny**, je-li požadována příjemka k dárku.
-
-## <a name="print-images"></a>Tisk obrázků
-
-Návrhář účtenky obsahuje proměnnou **Logo**. Tuto proměnnou můžete použít k určení obrázku, který by měl být vytištěn na účtenkách. Obrázky, které jsou vytištěny na účtenkách pomocí proměnné **Logo**, by měly být uloženy jako monochromatické bitmapové (.bmp) soubory. Pokud je v návrháři účtenky určen bitmapový obrázek, ale není vytištěn při odeslání účtenky do tiskárny, může být příčinou jeden z následujících problémů:
-
-- Velikost souboru je příliš velká nebo rozměry obrázku v pixelech nejsou kompatibilní s tiskárnou. V takovém případě zkuste snížit rozlišení nebo rozměry obrazového souboru.
-- Některé ovladače tiskárny Object Linking and Embedding for Point of Sale (OPOS) neimplementují metodu **PrintMemoryBitmap**, kterou hardwarové stanice používají k tisku obrázků s logem. V takovém případě zkuste do souboru **HardwareStation.Extension.config** vaší vyhrazené nebo sdílené hardwarové stanice přidat následujíc příznak:
-
-    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Navrhnout formát příjemky
 
@@ -88,6 +82,3 @@ Profily účtenky jsou přiřazeny přímo k tiskárnám prostřednictvím profi
 
 > [!NOTE]
 > Pokud jsou použity dvě tiskárny, jednu tiskárnu lze nastavit na tisk standardních termálních účtenek se 40 sloupci. Druhá tiskárna se obvykle používá pro tisk účtenek na celou stránku, které vyžadují další informace. Tyto typy účtenky zahrnují účtenky za objednávky odběratelů a faktury odběratelům.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Sestava dopředného posunutí dlouhodobého majetku
 description: Toto téma vysvětluje postup při použití sestavy dopředného posunutí dlouhodobého majetku.
-author: moaamer
+author: saraschi2
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b0c0c8b1a33041e266ce266dc79b29c8a7dbfa14
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: b91da4679a23ba0a70c18e2bcae1b7f757f661ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883586"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969146"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Sestava dopředného posunutí dlouhodobého majetku
 
@@ -28,7 +30,7 @@ ms.locfileid: "7883586"
 
 **Sestava dopředného posunutí dlouhodobého majetku** poskytuje ve snadno čitelném formátu aplikace Microsoft Excel podrobná data dlouhodobého majetku, která vyžadujete pro uzávěrku období, finanční výkazy a vykazování daní. Tato sestava zahrnuje počáteční a koncové zůstatky dlouhodobého majetku, spolu s pohyby ocenění pro dané období, a jakákoliv pořízení nového majetku a vyřazení, ke kterým došlo během tohoto období. Data se vykazujuí pro jednotlivý dlouhodobý majetek a hodnoty jsou dále shrnuty pro skupiny dlouhodobého majetku a právnickou osobu.
 
-Setava **dopředného posunutí dlouhodobého majetku** používá architekturu elektronického výkaznictví. Před spuštěním sestavy je nutné importovat model dlouhodobého majetku a konfigurace dopředného posunutí dlouhodobého majetku ze služby Microsoft Dynamics Lifecycle Services. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+Setava **dopředného posunutí dlouhodobého majetku** používá architekturu elektronického výkaznictví. Před spuštěním sestavy je nutné importovat model dlouhodobého majetku a konfigurace dopředného posunutí dlouhodobého majetku ze služby Microsoft Dynamics Lifecycle Services. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 Tato sestava je k dispozici v Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, nebo jako oprava hotfix pro Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017). Pro prostředí verze z července 2017 musí být aplikovány tři opravy hotfix:
 
@@ -64,6 +66,3 @@ V následující tabulce jsou popsána pole, která jsou k dispozici v sestavě.
 |           Vyřazení: Likvidační hodnota            |                                                                                               Likvidační hodnota prodeje pro knihu dlouhodobého majetku s vyřazením – likvidační transakce.                                                                                               |
 |           Vyřazení: Zisk/ztráta            |                                                                                 Hodnota zisku nebo ztráty, která je vypočtena jako součást transakce vyřazení pro knihu dlouhodobého majetku.                                                                                 |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

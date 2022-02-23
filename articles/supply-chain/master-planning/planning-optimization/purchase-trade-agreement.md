@@ -2,13 +2,16 @@
 title: Hlavní plánování s obchodními smlouvami nákupu
 description: Toto téma popisuje, jak může optimalizace plánování najít dodavatele a / nebo doby realizace pro plánovanou objednávku na základě nejlepší ceny nebo doby realizace, které se nacházejí ve smlouvách o nákupu.
 author: ChristianRytt
+manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423591"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hlavní plánování s obchodními smlouvami nákupu
 
@@ -67,26 +70,23 @@ Poté, co je systém připraven, jak je popsáno v předchozí části, byste m�
 1. Tento postup opakujte pro každý relevantní produkt.
 
 > [!NOTE]
-> Podpora optimalizace plánování pro nákupní obchodní smlouvy ve více měnách. Při hledání obchodní dohody pomocí možnosti **Nejnižší jednotková cena** zváží systém řádky nákup obchodních dohod s různými měnami za předpokladu, že byl definován směnný kurz mezi měnou linií obchodních dohod a účetní měnou právnické osoby. Jinak bude řádek obchodní dohody ignorován a během hlavního plánování uvidíte chybu. Proto hlavní plánování bude zahrnovat informace ze všech příslušných řádků dohod o nákupu a nákupu, kde lze ceny převést na účetní měnu. Je důležité si uvědomit, že pravidla zaokrouhlování nebudou při přepočtu ceny obchodní dohody zohledněna.
+> Měna na řádku obchodní smlouvy se musí shodovat s měnou vybraného dodavatele. Hlavní plánování bude zahrnovat pouze informace z řádků obchodních smluv, kde se měna shoduje s měnou u dodavatele.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Příklady toho, jak Optimalizace plánování vyhledává dodavatele a doby realizace
 
-Následující tabulka uvádí příklady, které ukazují, jak různá nastavení vydaného produktu a souvisejících nákupních obchodních smluv ovlivňují hodnoty, které jsou nalezeny pro výslednou plánovanou objednávku. Hodnoty zobrazené **tučně** ve dvou sloupcích zcela vpravo jsou hodnoty, které jsou vybrány pomocí Optimalizace plánování. Hodnoty uvedené **_tučně a kurzívou_** v ostatních sloupcích jsou nastavení, která vytvořila tyto výsledné hodnoty pro každý řádek.
+Následující tabulka uvádí příklady, které ukazují, jak různá nastavení vydaného produktu a souvisejících nákupních obchodních smluv ovlivňují hodnoty, které jsou nalezeny pro výslednou plánovanou objednávku. Hodnoty zobrazené **tučně** ve dvou sloupcích zcela vpravo jsou hodnoty, které jsou vybrány pomocí Optimalizace plánování. Hodnoty uvedené ***tučně a kurzívou*** v ostatních sloupcích jsou nastavení, která vytvořila tyto výsledné hodnoty pro každý řádek.
 
 | Vydaný produkt: dodavatel | Výchozí nastavení objednávky: doba realizace | Pokrytí položky: Přepsat dodavatele | Pokrytí položky: Přepsat dobu realizace | Obchodní smlouva: dodavatel | Obchodní smlouva: doba realizace | Obchodní smlouva: Ignorovat dobu realizace | Výsledný dodavatel | Výsledná doba realizace |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Ne | Ne | US003 | 3 | Ne | _ *US001** | **1** |
-| US001 | 1 | ***Ano: US002** _ | _*_Ano: 2_*_ | US003 | 3 | Ne | _ *US002** | **2** |
-| *(Prázdné)* | 1 | Ne | Ne | ***US003** _ | _*_3_*_ | Ne | _ *US003** | **3** |
-| *(Prázdné)* | ***1** _ | Ne | Ne | _*_US003_*_ | 3 | Ano | _ *US003** | **1** |
-| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Ne | US003 | 3 | Ne | _ *US002** | **1** |
-| *(Prázdné)* | ***1** _ | _*_Ano: US002_*_ | Ne | US003 | 3 | Ne | _ *US002** | **1** |
-| *(Prázdné)* | 1 | Ne | Ano: 2 | ***US003** _ | _*_3_*_ | Ne | _ *US003** | **3** |
-| *(Prázdné)* | 1 | Ne | ***Ano: 2** _ | _*_US003_*_ | 3 | Ano | _ *US003** | **2** |
+| ***US001*** | ***1*** | Žádný | Žádný | US003 | 3 | Žádný | **US001** | **1** |
+| US001 | 1 | ***Ano: US002*** | ***Ano: 2*** | US003 | 3 | Žádný | **US002** | **2** |
+| *(Prázdné)* | 1 | Žádný | Žádný | ***US003*** | ***3*** | Žádný | **US003** | **3** |
+| *(Prázdné)* | ***1*** | Žádný | Žádný | ***US003*** | 3 | Ano | **US003** | **1** |
+| *(Prázdné)* | ***1*** | ***Ano: US002*** | Žádný | US003 | 3 | Žádný | **US002** | **1** |
+| *(Prázdné)* | ***1*** | ***Ano: US002*** | Žádný | US003 | 3 | Žádný | **US002** | **1** |
+| *(Prázdné)* | 1 | Žádný | Ano: 2 | ***US003*** | ***3*** | Žádný | **US003** | **3** |
+| *(Prázdné)* | 1 | Žádný | ***Ano: 2*** | ***US003*** | 3 | Ano | **US003** | **2** |
 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Nákupní smlouvy](../../procurement/purchase-agreements.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

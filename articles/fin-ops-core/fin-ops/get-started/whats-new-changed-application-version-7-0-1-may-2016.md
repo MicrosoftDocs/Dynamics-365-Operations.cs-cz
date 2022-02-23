@@ -2,9 +2,11 @@
 title: Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)
 description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics AX verze 7.0.1. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014.
 author: sericks007
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748257"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797156"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)
 
@@ -76,7 +78,7 @@ Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Mi
 </tr>
 <tr>
 <td>Podpora kusovníků, která obsahuje položky s různými dimenzemi produktů pro stejnou položku.</td>
-<td>Používáte-li jednu nebo více dimenzí produktu ve výrobě, mohou nastat situace, kde chcete vytvořit položku na základě na různých variant téhož zboží. Další informace naleznete v <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">tomto blogu</a>.</td>
+<td>Používáte-li jednu nebo více dimenzí produktu ve výrobě, mohou nastat situace, kde chcete vytvořit položku na základě na různých variant téhož zboží. Další informace naleznete v <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">tomto blogu</a>.</td>
 </tr>
 <tr>
 <td>Výrobní zakázky s cyklickými strukturami na první úrovni jejich kusovníků jsou vyloučeny z výpočtu kusovníku pro plánování materiálových zdrojů.</td>
@@ -104,6 +106,3 @@ Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Mi
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

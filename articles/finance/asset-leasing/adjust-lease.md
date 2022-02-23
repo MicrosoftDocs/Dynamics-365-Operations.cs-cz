@@ -2,124 +2,73 @@
 title: Úprava leasingů
 description: Toto téma vysvětluje, jak upravit leasing. Může být vyžadována úprava, pokud dojde ke změně podmínek leasingu, prodloužení leasingu nebo změně jiných okolností.
 author: moaamer
+manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d1c6e20e72fb2816c32e71e8921a94724ae5656
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729647"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441369"
 ---
 # <a name="adjust-leases"></a>Úprava leasingů
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak upravit leasing. Může být vyžadována úprava, pokud dojde ke změně podmínek leasingu, prodloužení leasingu nebo změně jiných okolností. Leasing majetku je v souladu s pokyny, které o změnách leasingu poskytuje téma Kodifikace účetních standardů 842 (ASC 842) a Mezinárodní standard finančního výkaznictví 16 (IFRS 16). ASC 842-20-15-1 definuje změnu leasingu jako jakoukoli změnu podmínek smlouvy, která způsobí změnu rozsahu nebo protiplnění leasingu. Odstavec 39 IFRS 16 stanovuje, že nájemce musí přehodnotit leasingový závazek tak, aby odpovídal změnám leasingových splátek.
 
-U organizací, které dodržují standardy ASC 842 nebo IFRS 16, je leasing přeceňován tak, aby odpovídal drážel změnám současné hodnoty budoucích minimálních leasingových plateb (PVFMLP). Pokud se PVFMLP zvýší, bude vytvořená položka deníku debetem pro účet používaného majetku (ROU) a kreditem pro účet leasingového závazku vzhledem k rozdílu mezi novým PVFMLP a předchozím PVFMLP. Pokud PVFMLP poklesne, položka deníku bude debetem pro účet leasingového závazku a kreditem pro účet používaného majetku vzhledem k danému rozdílu.
+U organizací, které dodržují standardy ASC 842 nebo IFRS 16, je leasing přeceňován tak, aby odpovídal drážel změnám současné hodnoty budoucích minimálních leasingových plateb (PVFMLP). Pokud se PVFMLP zvýší, bude vytvořená položka deníku debetem pro používaný majetek (ROU) a kreditem pro leasingový závazek vzhledem k rozdílu mezi novým PVFMLP a předchozím PVFMLP. Pokud PVFMLP poklesne, položka deníku bude debetem pro leasingový závazek a kreditem pro používaný majetek vzhledem k danému rozdílu.
 
 Pokud úprava sníží používaný majetek na hodnotu menší 0 (nula), zbytek bude připsán k zisku na účet pro zaúčtování změny leasingu, který je uveden na stránce **Účty pro zaúčtování leasingu**. Systém účtuje tyto transakce a další položky úprav, jako jsou změny klasifikace, počáteční přímé náklady, pobídky k uzavření leasingové smlouvy, zálohy a náklady na demontáž, které vyplývají ze změn leasingu.
 
 Konkrétní pokyny týkající se transakcí úpravy leasingu vám doporučujeme přečíst v IFRS 16 a ASC 842.
 
-## <a name="lease-adjustment-wizard"></a>Průvodce úpravami leasingu
+Chcete-li upravit leasing, postupujte následovně. Změněná data aktualizují plány leasingu, jakmile je spuštěn proces plánu vytvoření.
 
-Pomocí následujících kroků upravíte leasing. Upravená data aktualizují plány leasingu poté, co provedete zaúčtování z průvodce **Úprava leasingu**. Svou práci můžete uložit a průvodce kdykoli zavřít a poté se vrátit zpět a pokračovat v práci.
+1. Přejděte na **Leasing majetku \> Leasingy \> Shrnutí leasingu**.
+2. Na stránce **Shrnutí leasingu** vyberte leasing, který chcete upravit, a poté vyberte **Upravit leasing**.
+3. Na stránce **Úprava leasingu** zadejte nové informace o upraveném leasingu.
 
-Chcete-li otevřít průvodce **Úprava leasingu** ze shrnutí leasingu, postupujte podle těchto kroků.
-
-1. Přejděte na **Leasing majetku \> Leasingy \> Shrnutí leasingu**. 
-2. Vyberte leasing, který chcete upravit, a poté vyberte **Průvodce nastavením**.
-3. Postupujte podle pokynů průvodce a zadejte požadované změny.
-
-Chcete-li otevřít průvodce **Úprava leasingu** ze stránky **Úpravy leasingu**, u úpravy, která již probíhá, postupujte podle těchto kroků.
-
-1.  Přejděte na **Leasing \> Leasingy \> Úpravy leasingu**.
-2.  Vyberte leasing, který má stav úpravy **Probíhá** a potom vyberte **Průvodce nastavením**.
-3.  Do polí **Datum zahájení úpravy** a **Datum zaúčtování** zadejte příslušná data.
-4.  Zvolte **Další**.
-
-    Leasing je nyní přidán na stránku **Úpravy leasingu**, kde můžete zadat nové informace.
-
-    Po úpravě leasingu se na něj vztahují pole s ohledem na právo na užívání. Pokud se změněným leasingem nejsou spojeny žádné počáteční přímé náklady, pobídky k uzavření leasingové smlouvy, platby předem nebo náklady na demontáž, nechte příslušná pole prázdná. Původní částky se na aktualizovaný leasing nevztahují. 
-
-    Pronajímatel například poskytuje pobídku 1000 USD za souhlas s prodloužením leasingu. V tomto případě, když upravíte leasing, aby se účtoval pro rozšíření, zadáte **1000** v poli **Pobídky k uzavření leasingové smlouvy na základě úpravy**.
-
-    Řádky platebního plánu nyní zobrazují všechny platby z měsíce a pozdějších měsíců v poli **Datum zahájení úpravy**. Protože jsou úpravy prospektivní, řádky časového plánu plateb nelze spustit před zahájením úprav. Chcete-li zobrazit řádky časového plánu plateb před datem zahájení úpravy, přejděte na stránku **Historie verzí leasingu**.
-
-8.  Zvolte **Další**.
-
-    Na následující stránce jsou uvedeny klíčové informace o očekávané úpravě leasingu, například účetní hodnoty závazku z leasingu před úpravou a nový očekávaný závazek z leasingu po úpravě. Stránka také zobrazuje náhled položky deníku pro očekávanou úpravu leasingu.
-
-9.  Možností **Odeslat do pracovního postupu** odešlete úpravu leasing do systému pracovního postupu, pokud je pracovní postup úpravy leasingu aktivní a úprava ještě nebyla schválena. Další informace o tom, jak používat pracovní postup úpravy leasingu, najdete v části [Použití pracovních postupů úpravy leasingu](use-create-lease-wrkflw.md).
+    Všimněte si, že stránka **Úprava leasingu** se podobá stránce **Přidání leasingu**. Kromě toho, stejně jako datum zahájení, které zadáte při přidání leasingu, určuje zahájení leasingu, pole **Datum změny** na stránce **Úprava leasingu** určuje zahájení změněného leasingu. Toto datum nesmí být po počátečním datu v řádcích platebního kalendáře.
 
     > [!NOTE]
-    > V tomto okamžiku systém přepočítá proměnné úprav, aby ověřil, že proti leasingu nebyly zaúčtovány žádné transakce od doby, kdy byl poprvé vypočítán přehled úprav a položka deníku úprav. Pokud se některé hodnoty změní, aktualizuje se mřížka přehledu úprav a před opětovným odesláním úprav leasingu do systému pracovního postupu můžete tyto informace zkontrolovat.
+    > Pole **Protihodnota používaného majetku** se vztahují na úpravu nájmu. Pokud se změněným leasingem nejsou spojeny žádné počáteční přímé náklady, pobídky k uzavření leasingové smlouvy, platby předem nebo náklady na demontáž, měli byste tato pole nechat prázdná. Původní částky se na aktualizovaný leasing nevztahují. Veškeré dodatečné náklady, které vzniknou při změně leasingu, by měly být uvedeny na stránce **Úprava leasingu**.
+    > 
+    > Pronajímatel například poskytuje pobídku 1000 USD za souhlas s prodloužením leasingu. V tomto případě, když upravíte leasing, aby se účtoval pro rozšíření, zadáte **1000** v poli **Pobídky k uzavření leasingové smlouvy**. Pokud s úpravou leasingu nejsou spojeny žádné pobídky, měli byste vymazat hodnotu, kterou jste dříve zadali do tohoto pole. Stejná logika platí pro další protihodnoty používaného majetku.
 
-10. Pokud pracovní postup není aktivní nebo pokud byla úprava leasingu schválena, vyberte **Dokončit**, aby se zpracovaly změny a zaúčtoval záznam deníku úprav.
+    Řádky platebního kalendáře upraveného leasingu by měly být vytvořeny přeběžně. Řádky platebního kalendáře, které jsou vytvořeny předběžně, nemohou být zahájeny, než se projeví úpravy leasingu.
 
-    > [!NOTE] 
-    > V tomto okamžiku systém přepočítá proměnné úprav, aby ověřil, že proti leasingu nebyly zaúčtovány žádné transakce od doby, kdy byl poprvé vypočítán přehled úprav a položka deníku úprav. Pokud se některé hodnoty změní, aktualizuje se mřížka přehledu úprav a před výběrem možnosti **Dokončit** můžete změny zkontrolovat. Pokud je pracovní postup aktivní a úprava leasingu byla schválena, jakékoli změny v přehledu úprav způsobí, že stav schválení bude nastaven zpět na **Neodesláno**. V takovém případě byste měli znovu odeslat úpravu leasing do systému pracovního postupu.
+    Následující kroky jsou téměř identické s kroky pro počáteční uznání leasingu.
 
-    Na stránce **Úpravy leasingu** je nyní stav úpravy nastaven na **Dokončeno**.
+4. Vyberte **Vytvořit plány** pro vygenerování upraveného platebního kalendáře. Zobrazí se zpráva s oznámením, že byl vytvořen platební kalendář pro leasing.
 
-    Na stránce **Úpravy leasingu** stále můžete zobrazit pevné záložky **Přehled úprav** a **Náhled záznamu úpravy**. Podrobnosti o leasingu a datum jsou uvedeny v historii verzí daného pronájmu.
+    > [!IMPORTANT]
+    > Než vyberete **Vytvořit plány**, ujistěte se, že řádky data změny a platebního kalendáře jsou přesné. Také se ujistěte, že všechny počáteční přímé náklady, pobídky k uzavření leasingové smlouvy, zálohy nebo náklady na demontáž odpovídají pouze těm nákladům, které vzniknou z úpravy.
 
-    Nová verze leasingu a nová sada plánů jsou nyní vytvořeny pomocí upravených informací. 
+5. Chcete-li zobrazit nově vytvořený platební kalendář, vyberte **Knihy** a otevřete stránku **Platební kalendář**.
+6. Na stránce **Platební kalendář** můžete upravit upravené částky plateb, než potvrdíte platební kalendář. Pro potvrzení kalendáře vyberte **Potvrdit kalendář**.
 
-13. Chcete-li zobrazit nové plány, přejděte na leasing a poté vyberte **Knihy**.
-14. Chcete-li zobrazit nově vygenerovaný plán plateb, vyberte **Platební plán**.
-15. Chcete-li zobrazit nový plán amortizace leasingového závazku, který je generován z nových informací, zavřete stránku **Platební kalendář** a otevřete stránku **Plán amortizace závazku**.
-16. Chcete-li zobrazit nově vygenerovaný plán odpisů aktiv, otevřete stránku **Plán odpisu majetku** ze stránky **Podrobnosti o knize**.
-17. Chcete-li zobrazit položku deníku úpravy, vyberte **Deníky \> Deník leasingu majetku**.
+    Po potvrzení platebního kalendáře se vytvoří nové odpisy majetku a nové plány leasingových závazků.
 
-## <a name="cancel-a-lease-adjustment"></a>Zrušení úpravy leasingu
-
-Chcete-li odstranit probíhající úpravu leasingu, postupujte takto.
-
-1.  Přejděte na **Leasing \> Leasingy \> Úpravy leasingu**.
-2.  Vyberte probíhající úpravu leasingu, kterou chcete zrušit.
-3.  Vyberte **Zrušit úpravu**. 
-4.  Vyberte **OK**.
-
-    > [!NOTE] 
-    > Pokud vyberete **Zrušit** v průvodci **Úprava leasingu**, vrátíte zpět poslední změnu, kterou jste v průvodci provedli, ale neodstraníte probíhající úpravu.
-
-## <a name="use-the-lease-adjustment-workflow"></a>Použití pracovního postupu úpravy leasingu
-
-Tato část vysvětluje, jak používat pracovní postup úpravy leasingu. Pracovní postup úpravy leasingu vám pomůže spravovat úpravy leasingu konzistentním způsobem tím, že poskytne sadu kroků schválení a přiřadí je konkrétním uživatelům, kteří schválí úpravu leasingu dříve, než se stane konečnou. Po schválení úpravy leasingu v pracovním postupu můžete použít průvodce **Úprava leasingu** k provedení úpravy nájmu.
-
-1.  Chcete-li odeslat úpravu leasingu ke schválení, přejděte na **Leasing \> Leasingy \> Úpravy leasingu**.
-2.  Vyberte ID leasingu úpravy leasingu a poté vyberte **Průvodce nastavením**.
-3.  Na poslední stránce průvodce vyberte **Odeslat ke schválení**.
-4.  Zadejte komentář k úpravě a poté vyberte **OK**.
-
-    Stav pracovního postupu se změní na **Čeká na schválení** a všechna pole v průvodci jsou uzamčena pro úpravy.
-
-5.  Chcete-li úpravu leasingu schválit, přejděte na **Leasing \> Leasingy \> Úpravy leasingu**.
-6.  Vyberte ID leasingu úpravy leasingu a zkontrolujte pevné záložky **Přehled úprav** a **Náhled záznamu úpravy**.
-7.  Vyberte **Pracovní postup \> Schváleno**.
-
-    Na stránce **Úpravy leasingu** je nyní stav pracovního postupu nastaven na **Schváleno**. V tomto okamžiku je úprava leasingu připravena k zaúčtování prostřednictvím položky deníku úprav.
-
-8.  Chcete-li pokračovat ve zpracování úpravy leasingu a zaúčtování položky úpravy, přejděte na **Leasing \> Leasingy \> Úpravy leasingu**.
-9.  Vyberte ID leasingu úpravy leasingu a poté vyberte **Průvodce nastavením**.
-10. Vyberte **Další**, dokud se nedostanete na poslední stránku průvodce, a poté vyberte **Dokončit**.
-
-Systém přepočítá účetní hodnoty leasingu, aby zajistil, že schválené proměnné úpravy jsou aktuální. Pokud dojde ke změnám, stav schválení se nastaví zpět na **Koncept** a musíte znovu odeslat úpravu leasingu do systému pracovního postupu.
+7. Chcete-li zobrazit nový plán amortizace leasingového závazku, který je generován z nových vstupů, zavřete stránku **Platební kalendář** a otevřete stránku **Plán amortizace závazku**.
+8. Chcete-li zobrazit nově vygenerovaný plán odpisů aktiv, otevřete stránku **Plán odpisu majetku** ze stránky **Podrobnosti o knize**.
+9. Chcete-li vygenerovat položku deníku úpravy, vyberte **Funkce \> Úprava leasingu**. Zobrazí se zpráva, že byla vytvořena položka deníku úpravy. 
+10. Chcete-li zobrazit položku deníku, vyberte **Deníky \> Deník leasingu majetku**.
+11. Chcete-li zaúčtovat položku deníku, vyberte řádek a poté vyberte **Zaúčtovat**.
 
 ## <a name="view-lease-versions"></a>Zobrazení verzí leasingu
 
@@ -132,7 +81,4 @@ Pokud byl leasing upraven, můžete zobrazit jeho různé verze. Můžete si tak
     U vybrané verze leasingu si můžete prohlédnout řádky finanční dimenze, podrobností smlouvy, umístění a platebního kalendáře.
 
 2. Chcete-li zobrazit historické plány, otevřete upravený leasingu ze stránky **Souhrn leasingu**, vyberte požadovanou knihu a poté v podokně akcí vyberte **Historie verzí knihy**.
-3. Na stránce **Verze knihy** vyberte verzi a plán, které chcete zobrazit.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+3. Na stránce **Verze knihy** vyberte požadovanou verzi a požadovaný plán, které chcete zobrazit.

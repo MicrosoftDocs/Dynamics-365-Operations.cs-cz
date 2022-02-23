@@ -2,30 +2,36 @@
 title: Přehled knihovny modulů
 description: Toto téma poskytuje přehled o knihovně modulů Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94ff18fc34fbfbaee434db12f0d0bc8bb7042c2f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410855"
 ---
 # <a name="module-library-overview"></a>Přehled knihovny modulů
 
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled o knihovně modulů Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Knihovna modulů Dynamics 365 Commerce je kolekce modulů, které lze použít k vytvoření webu e-Commerce. Moduly mají aspekty uživatelského rozhraní (UI) a aspekty funkčního chování.
 
@@ -60,6 +66,3 @@ V knihovně modulů jsou uvedeny následující typy modulů:
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

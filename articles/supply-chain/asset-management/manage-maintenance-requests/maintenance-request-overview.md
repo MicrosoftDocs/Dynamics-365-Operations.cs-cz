@@ -1,29 +1,34 @@
 ---
 title: Požadavky na údržbu
 description: Toto téma obsahuje přehled správy požadavků na údržbu v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985246"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019622"
 ---
 # <a name="maintenance-requests"></a>Požadavky na údržbu
 
 [!include [banner](../../includes/banner.md)]
+
+ 
 
 Požadavky na údržbu jsou poznámky nebo prohlášení, které jsou vytvořeny za účelem upozornění manažera nebo plánovače, že majetek může vyžadovat úlohu údržby nebo opravy, ale bez vytvoření pracovního příkazu. Pokud je obsah požadavku na údržbu považován za platný, lze na základě požadavku na údržbu vytvořit pracovní příkaz.
 
@@ -39,7 +44,7 @@ Požadavky na údržbu mohou být vytvořeny pro libovolný majetek v modulu Spr
 
 Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu**, **Aktivní požadavky na údržbu** nebo **Moje požadavky na údržbu funkčního místa**. Na každé stránce se seznamem jsou uvedeny některé informace související s požadavkem na údržbu.
 
-![Zobrazit požadavky na údržbu.](media/01-manage-maintenance-requests.png)
+![Zobrazit požadavky na údržbu](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Použijte stránku se seznamem **Moje požadavky na údržbu funkčního místa** pro zobrazení seznamu požadavků na údržbu, které obsahují buď funkční místa, se kterými jste spojen jako pracovník, nebo majetek nainstalovaný ve funkčních místech, místěních, se kterým jste spojen jako pracovník (Informace o tom, jak nastavit funkční místa nebo pracovníky údržby, naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).)
@@ -48,7 +53,7 @@ Chcete-li zobrazit požadavky na údržbu, vyberte **Správa majetku** \> **Spol
 
 Chcete-li otevřít zobrazení podrobností záznamu, na stránce se seznamem **Všechny požadavky na údržbu** v zobrazení mřížky vyberte odkaz ve sloupci **Požadavek na údržbu**.
 
-![Zobrazení podrobností o požadavku na údržbu.](media/02-manage-maintenance-requests.png)
+![Zobrazení podrobností o požadavku na údržbu](media/02-manage-maintenance-requests.png)
 
 Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabulka stručně popisuje tlačítka, která souvisejí se správou majetku.
 
@@ -67,6 +72,3 @@ Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabul
 | Odeslání zapůjčeného majetku                  | Vyberte zapůjčený majetek, který by měl být dočasnou náhradou majetku vybraného na zvoleném požadavku na údržbu. |
 | Vrácení vypůjčeného majetku                | Zaregistrujte zapůjčený majetek jako vrácený. |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

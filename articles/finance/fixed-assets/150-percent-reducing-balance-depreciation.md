@@ -1,32 +1,35 @@
 ---
 title: Degresivní odpis 150 procent
-description: Toto téma poskytuje přehled metody degresivního odpisu 150 %.
-author: moaamer
+description: Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 150 procent“.
+author: saraschi2
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: a132a8d6e5eaf0dad54133fc9d0c12dcf5866c7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883305"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441133"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Degresivní odpis 150 procent
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled metody degresivního odpisu 150 %.
+Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 150 procent“.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 150 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Tato procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 30 procent (150 % ÷ 5). 
 
@@ -64,7 +67,7 @@ Vyberete-li jako odpisový rok možnost **Fiskální**, v poli **Frekvence obdob
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Příklad 150% degresivního odpisování
 
-| &nbsp;                         | &nbsp; |
+|                                |        |
 |--------------------------------|--------|
 | Pořizovací náklady               | 11 000 |
 | Zůstatková hodnota                  | 1 000  |
@@ -85,6 +88,3 @@ Metoda degresivního odepisování 150 % vydělí 150 procent počtem roků živ
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Profily certifikátů definované uživatelem pro maloobchodní prodejny
 description: Toto téma poskytuje přehled o tom, jak se certifikáty používají v maloobchodních prodejnách.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719923"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018861"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profily certifikátů definované uživatelem pro maloobchodní prodejny
 
@@ -79,7 +81,7 @@ Když přidáte nový řádek na stránku **Nastavení profilu certifikátu**, n
 - **Certifikát Key Vault** – Toto pole je povinné, pokud nastavíte pole **Typ umístění** na **Key Vault**. Slouží k určení tajného kódu certifikátu Key Vault.
 
     > [!NOTE]
-    > Před použitím certifikátu Key Vault v profilech certifikátů nahrajte certifikát do úložiště trezoru klíčů a postupujte podle pokynů v článku [Nastavení klienta Azure Key Vault](../../finance/localizations/setting-up-azure-key-vault-client.md).
+    > Před použitím certifikátu Key Vault v profilech certifikátů nahrajte certifikát do úložiště trezoru klíčů a postupujte podle pokynů v článku [Nastavení klienta Azure Key Vault](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
 - **Název obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího názvu obchodu, který by se měl použít k hledání v místních certifikátech.
 - **Umístění obchodu** – Toto pole je volitelné a je k dispozici, pouze pokud nastavíte pole **Typ umístění** na **Místní certifikát**. Slouží k určení výchozího místa obchodu, který by se měl použít k hledání v místních certifikátech.
@@ -119,6 +121,3 @@ Pokud je zavedena nová verze certifikátu, ale nelze ho aktualizovat ve všech 
 
 > [!NOTE]
 > V modulu Commerce Runtime bude nejprve volána nová verze certifikátu. Pokud certifikát ještě nebyl aktualizován v konkrétním obchodě nebo na konkrétním terminálu, bude volána předchozí verze.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Platby částečných částek dodavatelem
 description: Někdy provedete platbu dodavateli, která je nižší než částka faktury. Tento článek popisuje různé možnosti pro zvládnutí této situace.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14321
 ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd7b7092e0d0baf48a805bbb0cefb0eb77e49946c6dbc44c9f954781ca1259e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89e025977a0dcd40e35f17448a7b0ebde08cb6c8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777233"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440991"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Platby částečných částek dodavatelem
 
@@ -28,7 +31,8 @@ ms.locfileid: "6777233"
 
 Někdy provedete platbu dodavateli, která je nižší než částka faktury. Tento článek popisuje různé možnosti pro zvládnutí této situace. Dostupné možnosti závisí na daných obchodních požadavcích a konfiguraci. 
 
-## <a name="cash-discount-amounts"></a>Částka platebních slev
+<a name="cash-discount-amounts"></a>Částka platebních slev
+---------------------
 
 Dodavatel vám může nabídnout platební slevu za úhradu faktury před datem splatnosti. Například zadáte fakturu na částku 100,00, která určuje 2% platební slevu, pokud bude faktura zaplacena do 10 dní. Doba splatnosti dle podmínek je 30 dnů. Pokud návrh platby používá jako kritérium pro výběr faktury platební slevu a k aktivaci návrhu dojde v den platební slevy nebo dříve, faktura se vybere k platbě a vytvoří se platba v částce 98,00. Platební slevy lze také uplatnit jako ručně vytvořenou jednorázovou platbu.
 
@@ -50,6 +54,3 @@ Můžete provést částečnou úhradu, když je částka, která musí být vyr
 
 
 Další informace naleznete v tématu [Přehled plateb dodavatele](../cash-bank-management/tasks/vendor-payment-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

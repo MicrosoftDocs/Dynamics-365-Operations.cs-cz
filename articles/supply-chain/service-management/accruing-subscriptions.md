@@ -1,10 +1,12 @@
 ---
 title: Časové rozlišení předplatného
 description: U předplatného servisu ručně rozlišujete výnosy do období následujících po datu, kdy jste fakturovali transakci poplatku.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580473"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966073"
 ---
 # <a name="accruing-subscriptions"></a>Časové rozlišení předplatného 
 
@@ -41,7 +43,7 @@ Při připsání fakturovaných částek předplatného na stranu Dal můžete p
 
   - Můžete časově rozlišené částky stornovat k datu zaúčtování dobropisu nebo k původnímu datu zaúčtování časového rozlišení.
 
-Další informace naleznete v tématu [Parametry předplatného (formulář)](/dynamicsax-2012//subscription-parameters-form).
+Další informace naleznete v tématu [Parametry předplatného (formulář)](https://technet.microsoft.com/library/aa619615.aspx).
 
 ## <a name="setup-requirements"></a>Nastavit požadavky
 
@@ -65,7 +67,7 @@ Aby bylo možné časově rozlišovat výnosy předplatného, musí být zaškrt
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Povolení časového rozlišení výnosů u skupiny předplatného
 
-Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
+1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
 
 ## <a name="periods"></a>Období
 
@@ -75,8 +77,8 @@ V následující tabulce získáte přehled o možných obdobích časového roz
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -149,6 +151,3 @@ Můžete určit počet transakcí hlavní knihy, které jsou vytvořeny při za�
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

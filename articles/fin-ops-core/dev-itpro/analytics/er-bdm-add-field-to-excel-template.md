@@ -2,9 +2,11 @@
 title: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
 description: Toto téma obsahuje informace o tom, jak přidávat nová pole do šablony obchodního dokumentu v aplikaci Microsoft Excel pomocí funkce správy obchodních dokumentů.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767235"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681368"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
 
@@ -50,14 +52,14 @@ Konfigurace formátu ER **Volná textová faktura (Excel)** tohoto řešení obs
 
 Další informace o tom, jak importovat konfigurace elektronického výkaznictví naleznete v tématu [Správa životního cyklu konfigurace elektronického výkaznictví](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Stránka Knihovna sdíleného majetku LCS.](./media/BDM-AddFldExcel-LCS.png)
+![Stránka Knihovna sdíleného majetku LCS](./media/BDM-AddFldExcel-LCS.png)
 
 ### <a name="edit-the-er-solution-template"></a>Úprava šablony řešení ER
 
 1.  Přihlaste se jako uživatel s přístupem do pracovního prostoru **Řízení obchodního dokumentu**.
 2.  Otevřete pracovní prostor **Správa obchodních dokumentů**.
 
-    ![Pracovní prostor správy obchodních dokumentů.](./media/BDM-AddFldExcel-Workspace.png)
+    ![Pracovní prostor správy obchodních dokumentů](./media/BDM-AddFldExcel-Workspace.png)
 
 3.  V mřížce vyberte šablonu **Volná textová faktura (Excel)**.
 4.  V pravém podokně vyberte možnost **Nová šablona** a vytvořte novou šablonu, která bude založena na vybrané šabloně.
@@ -66,20 +68,20 @@ Další informace o tom, jak importovat konfigurace elektronického výkaznictv�
 
 Otevře se stránka Editor šablony BDM. V rámci vloženého ovládacího prvku můžete použít Microsoft 365 pro úpravu vybrané šablony online.
 
-![Stránka Editor šablony BDM.](./media/BDM-AddFldExcel-EditableTemplate.png)
+![Stránka Editor šablony BDM](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### <a name="add-the-label-for-a-new-field-to-the-template"></a>Přidání popisku nového pole do šablony
 
 1.  Na stránce editor šablon BDM na pásu karet aplikace Excel zaškrtněte na kartě **Zobrazení** políčka **Záhlaví a mřížky** pro upravitelnou šablonu aplikace Excel.
 
-    ![Zaškrtnutá políčka záhlaví a mřížky.](./media/BDM-AddFldExcel-EditableTemplate2.png)
+    ![Zaškrtnutá políčka záhlaví a mřížky](./media/BDM-AddFldExcel-EditableTemplate2.png)
 
 2.  Vyberte buňky **E8:F8**.
 3.  Na pásu karet aplikace Excel vyberte na kartě **Domů** položky **Sloučit a vycentrovat** ke sloučení vybraných buněk do nově sloučené buňky **E8:F8**.
 4.  Ve sloučené **buňce E8:F8** zadejte **adresu URL**.
 5.  Vyberte sloučenou buňku **E7:F7**, vyberte **Kopírovat formát**, pak vyberte sloučenou buňku **E8:F8**, chcete-li ji naformátovat stejným způsobem jako sloučená buňka **E7:F7**.
 
-    ![Popisek nového pole přidaný do šablony.](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![Popisek nového pole přidaný do šablony](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>Formátování šablony do vyhrazení místa pro nové pole
 
@@ -87,13 +89,13 @@ Otevře se stránka Editor šablony BDM. V rámci vloženého ovládacího prvku
 2.  Na pásu karet aplikace Excel vyberte na kartě **Domů** položky **Sloučit a vycentrovat** ke sloučení vybraných buněk do nově sloučené buňky **G8:H8**.
 3.  Vyberte sloučenou buňku **G7:H7**, vyberte **Kopírovat formát**, pak vyberte sloučenou buňku **G8:H8**, chcete-li ji naformátovat stejným způsobem jako sloučená buňka **G7:H7**.
 
-    ![Místo rezervované pro nové pole.](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Místo rezervované pro nové pole](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.  V poli **Název** vyberte **CompanyInfo**.
 
     Rozsah **CompanyInfo** aktuální šablony aplikace Excel obsahuje všechna pole, která se používají k vyplnění záhlaví vygenerované sestavy informacemi o aktuální společnosti jako prodávající strany.
 
-    ![Vybraný rozsah CompanyInfo.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![Vybraný rozsah CompanyInfo](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### <a name="add-a-new-field-to-the-template"></a>Přidání nového pole do šablony
 
@@ -103,7 +105,7 @@ Otevře se stránka Editor šablony BDM. V rámci vloženého ovládacího prvku
     > [!NOTE]
     > Je nutné upravit část šablony, kterou chcete použít jako nové pole. Tuto úpravu jste již provedli formátováním sloučené buňky **G8: H8**.
 
-    ![Přidání nového pole do šablony.](./media/BDM-AddFldExcel-AddCell.png)
+    ![Přidání nového pole do šablony](./media/BDM-AddFldExcel-AddCell.png)
 
 3.  Pokud chcete přidat nové pole jako buňku v šabloně, vyberte **Excel\Buňka**.
 
@@ -114,11 +116,11 @@ Otevře se stránka Editor šablony BDM. V rámci vloženého ovládacího prvku
 4.  Do pole **rozsah aplikace Excel** zadejte **CompanyURL_Value**.
 5.  Vyberte **OK**.
 
-    ![Pole CompanyURL_Value přidané do struktury šablony.](./media/BDM-AddFldExcel-EditableTemplate5.png)
+    ![Pole CompanyURL_Value přidané do struktury šablony](./media/BDM-AddFldExcel-EditableTemplate5.png)
 
 6.  V podokně **Struktura šablony** vyberte tlačítko se třemi tečkami (...) a pak vyberte **Zobrazit vazby**.
 
-    ![Zobrazit vybrané vazby.](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Zobrazit vybrané vazby](./media/BDM-AddFldExcel-ShowBindings.png)
 
     V podokně **struktura šablony** se nyní zobrazují zdroje dat, které jsou k dispozici ve formátu základního ER.
 
@@ -126,21 +128,21 @@ Otevře se stránka Editor šablony BDM. V rámci vloženého ovládacího prvku
 8.  V části **Zdroje dat** podokna **Struktura šablony** rozbalte **Model \> InvoiceBase \> CompanyInfo**.
 9.  V části **CompanyInfo** vyberte položku **WebsiteURI**.
 
-    ![Vybraná položka WebsiteURI.](./media/BDM-AddFldExcel-BindURL.png)
+    ![Vybraná položka WebsiteURI](./media/BDM-AddFldExcel-BindURL.png)
 
 10. Vyberte možnost **vazba**.
 11. V podokně **struktura šablony** vyberte možnost **Uložit** a poté zavřete stránku Editor šablon BDM.
 
 V pracovním prostoru **Správa obchodních dokumentů** se na kartě **šablona** v pravém podokně zobrazí aktualizovaná šablona. V mřížce si povšimněte, že pole **Stav** pro upravenou šablonu bylo změněno na **koncept** a pole **Revize** již není prázdné. Tyto změny označují, že byl zahájen proces úpravy této šablony.
 
-![Upravená šablona v pracovním prostoru Správa obchodních dokumentů.](./media/BDM-AddFldExcel-Workspace2.png)
+![Upravená šablona v pracovním prostoru Správa obchodních dokumentů](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## <a name="review-company-settings"></a>Kontrola nastavení společnosti
 
 1.  Přejděte do části **Správa organizace \> Organizace \> Právnické osoby**.
 2.  Na pevné záložce **Kontaktní informace** zkontrolujte, zda je zadána adresa URL společnosti.
 
-![Adresa URL společnosti zadaná na stránce právnické osoby.](./media/BDM-AddFldExcel-CompanyInfo.png)
+![Adresa URL společnosti zadaná na stránce právnické osoby](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Generování obchodních dokumentů pro otestování aktualizované šablony
 
@@ -148,15 +150,15 @@ V pracovním prostoru **Správa obchodních dokumentů** se na kartě **šablona
 2.  Vyberte fakturu **FTI-00000002** a poté vyberte možnost **Správa tisku**.
 3.  V levém podokně rozbalte položky **Modul – pohledávky \> Dokumenty \> Volné faktury**.
 4.  V části **Volná textová faktura** vyberte úroveň **Původní dokument** k určení rozsahu faktur pro zpracování.
-5.  V pravém podokně v poli **Formát sestavy** vyberte pro určenou úroveň dokumentu **volnou textovou fakturu (Excel) Contoso**.
+5.  V pravém podokně v poli **Formát sestavy** vyberte pro určenou úroveň dokumentu **volnou textovou fakturu (Excel)**.
 
-    ![Vybraná volná textová šablona (Excel) Contoso.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Vybraná volná textová šablona (Excel) Contoso](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Stisknutím klávesy **Esc** zavřete aktuální stránku.
 7.  Vyberte **Tisk \> Vybrané**.
 8.  Stáhněte vygenerovaný dokument a otevřete jej v aplikaci Excel.
 
-    ![Volná textová faktura v aplikaci Excel.](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Volná textová faktura v aplikaci Excel](./media/BDM-AddFldExcel-PreviewReport.png)
 
 Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou položku. Chcete-li analyzovat, jak je tato sestava ovlivněna změnami, které jste provedli v šabloně, můžete tuto sestavu spustit v jedné relaci aplikace bezprostředně po změně šablony v jiné relaci aplikace.
 
@@ -167,6 +169,3 @@ Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou
 [Přehled správy obchodních dokumentů](er-business-document-management.md)
 
 [Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

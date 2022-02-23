@@ -1,53 +1,502 @@
 ---
-title: Přehled doplňku Viditelnost zásob
-description: Toto téma vysvětluje, co je Viditelnost zásob a popisuje funkce doplňku.
-author: yufeihuang
+title: Doplněk Viditelnost zásob
+description: Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management.
+author: chuzheng
+manager: tfehr
 ms.date: 10/26/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8871d10dac9103f17780989bc547b6c20ba79b76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
+ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985538"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "4625058"
 ---
-# <a name="inventory-visibility-add-in-overview"></a>Přehled doplňku Viditelnost zásob
+# <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Doplněk Viditelnost zásob (označovaný také jako *Viditelnost zásob*) je nezávislá a vysoce škálovatelná mikroslužba, která umožňuje sledování zásob na skladě v reálném čase. Poskytuje tedy globální pohled na zásoby.
+Doplněk Viditelnost zásob je nezávislá a vysoce škálovatelná mikroslužba, která umožňuje sledování zásob na skladě v reálném čase, a tím poskytuje globální pohled na viditelnost zásob.
 
-Externí systémy přistupují ke službě prostřednictvím RESTful rozhraní API. Tímto způsobem se mohou buď přímo dotazovat na informace o daných sadách dimenzí, nebo provádět změny ve vašem inventáři v různých přizpůsobených zdrojích dat.
+Všechny informace, které se vztahují k zásobám na skladě, se do služby exportují téměř v reálném čase prostřednictvím nízkoúrovňové integrace SQL. Externí systémy přistupují ke službě prostřednictvím rozhraní API RESTful a dotazují se na praktické informace o daných sadách dimenzí, čímž získávají seznam dostupných pozic.
 
-Jako mikroslužba, jejímž základem je služba Microsoft Dataverse poskytuje Viditelnost zásob určitou rozšiřitelnost. K vytváření aplikací můžete použít Power Apps. Power BI můžete také použít k poskytování přizpůsobených funkcí, které splňují vaše obchodní požadavky.
+Viditelnost zásob je mikroslužba postavená na Common Data Service, což znamená, že ji můžete rozšířit pomocí vytváření Power Apps a použitím Power BI, a poskytovat přizpůsobené funkce pro splnění vašich obchodních požadavků. Je také možné upgradovat index za účelem provádění dotazů na zásoby.
 
-Viditelnost zásob můžete integrovat s různými systémy třetích stran nastavením možností konfigurace pro standardizované dimenze zásob a nastavením typů transakcí. Viditelnost zásob také podporuje přizpůsobitelnou rozšiřitelnost prostřednictvím konfigurovatelných vypočítaných množství.
+Viditelnost zásob poskytuje možnosti konfigurace, které umožňují její integraci s více systémy třetích stran. Podporuje standardizovanou dimenzi zásob, přizpůsobitelnou rozšiřitelnost a standardizované, konfigurovatelné vypočítané množství.
 
-## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Nastavení integrace Viditelnosti zásob s aplikací Dynamics 365 Supply Chain Management
+Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management a jak používat jeho aplikační programovací rozhraní (API).
 
-Integrované řešení čerpá skladová data z Dynamics 365 Supply Chain Management a průběžně sleduje změny zásob. Další informace viz [Instalace a nastavení viditelnosti zásob](inventory-visibility-setup.md) a [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
+## <a name="install-the-inventory-visibility-add-in"></a>Instalace doplňku Viditelnost zásob
 
-## <a name="get-a-global-view-of-inventory"></a>Jak získat globální přehled o zásobách
+Musíte nainstalovat doplněk Viditelnost zásob pomocí Microsoft Dynamics Lifecycle Services (LCS). LCS je portál pro spolupráci, který poskytuje prostředí a sadu pravidelně aktualizovaných služeb, které vám pomohou spravovat životní cyklus aplikace vašich aplikací Dynamics 365 Finance and Operations.
 
-Integrované řešení vám umožňuje definovat vlastní zdroje dat a centralizovat data zásob. Další informace viz [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
+Další informace naleznete v tématu [Zdroje Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
 
-Existují dva přístupy k prohlížení vašich zásob:
+### <a name="prerequisites"></a>Předpoklady
 
-- Odešlete dotaz prostřednictvím vysoce výkonného rozhraní API. Toto rozhraní API může vracet data o zásobách téměř v reálném čase přímo z instance uložené v mezipaměti. Smlouvy a vzorky najdete v části [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
-- Zobrazte nezpracovaný seznam zásob na skladě. Tento seznam je pravidelně synchronizován z instance uložené v mezipaměti a je viditelný v Dataverse. Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md).
+Před instalací doplňku Viditelnost zásob musíte provést následující:
 
-## <a name="soft-reservations"></a>Předběžné rezervace
+- Získejte implementační projekt LCS s alespoň jedním nasazeným prostředím.
+- Vygenerujte beta klíče pro vaši nabídku v LCS.
+- Povolte beta klíče pro vaši nabídku pro uživatele v LCS.
+- Kontaktujte produktový tým doplňku Viditelnost zásob společnosti Microsoft a sdělte jim ID prostředí, kam chcete nasadit doplněk Viditelnost zásob.
 
-Předběžná rezervace se použije v případě, kdy si podnik musí rezervovat konkrétní množství produktů, aby podpořil například plnění prodejní objednávky, které zamezí nadměrnému prodeji. Když je prodejní objednávka vytvořena a potvrzena v Supply Chain Management nebo jiných systémech pro správu objednávek, je požadavek na rezervaci množství odeslán do Viditelnosti zásob. Viditelnost zásob vám umožňuje rezervovat produkty s podrobnostmi o dimenzi a konkrétními typy transakcí zásob. (Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md) .) Poté, co je množství úspěšně rezervováno, je vráceno ID rezervace. Toto ID rezervace můžete použít ke zpětnému propojení na původní objednávku v Supply Chain Management nebo v jiných systémech správy objednávek.
+Máte-li jakékoli dotazy týkající se těchto předpokladů, obraťte se na produktový tým doplňku Viditelnost zásob.
 
-Funkce je navržena tak, aby rezervace v doplňku Viditelnost zásob nezměnila celkové množství. Místo toho pouze označí vyhrazené množství. (Z tohoto důvodu se pro ni používá označení *předběžná rezervace*.) Množství s předběžnou rezervací lze kompenzovat, když jsou produkty spotřebovány v Supply Chain Management nebo v systému třetí strany, opětovným zavoláním API k provedení odpočtu množství a aktualizaci celkového množství ve Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md).
+### <a name="install-the-add-in"></a><a name="install-add-in"></a>Instalace doplňku
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Pro instalaci doplňku Viditelnost zásob proveďte následující:
+
+1. Přihlaste se k portálu [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
+1. Na domovské stránce vyberte projekt, kde je nasazeno vaše prostředí.
+1. Na stránce projektu vyberte prostředí, do kterého chcete doplněk nainstalovat.
+1. Na stránce prostředí přejděte dolů, dokud neuvidíte sekci **Doplňky prostředí**. Pokud sekce není viditelná, ujistěte se, že byly plně zpracovány nezbytné beta klíče.
+1. V sekci **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
+    ![Stránka prostředí v LCS](media/inventory-visibility-environment.png "Stránka prostředí v LCS")
+1. Vyberte odkaz **Nainstalovat nový doplněk**. Otevře se seznam dostupných doplňků.
+1. Vyberte ze seznamu **Služba zásob**. (Upozorňujeme, že toto může být nyní uvedeno jako **Doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management**.)
+1. Zadejte hodnoty pro následující pole pro vaše prostředí:
+
+    - **ID aplikace AAD**
+    - **ID klienta AAD**
+
+    ![Stránka nastavení doplňku](media/inventory-visibility-setup.png "Stránka nastavení doplňku")
+
+1. Odsouhlaste smluvní podmínky výběrem zaškrtávacího políčka **Smluvní podmínky**.
+1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení obnovte stránku, aby se zobrazila změna stavu **Nainstalováno**.
+
+### <a name="get-a-security-service-token"></a>Získání tokenu služby zabezpečení
+
+Chcete-li získat token služby zabezpečení, postupujte takto:
+
+1. Získejte `aadToken` a zavolejte koncový bod: https://securityservice.operations365.dynamics.com/token.
+1. Nahraďte `client_assertion` v textu za `aadToken`.
+1. Nahraďte kontext v textu prostředím, ve kterém chcete doplněk nasadit.
+1. Nahraďte obor v textu následovně:
+
+    - Rozsah pro MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
+    (ID aplikace Azure Active Directory ID tenanta pro MCK naleznete v `appsettings.mck.json`.)
+    - Rozsah pro PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
+    (ID aplikace Azure Active Directory ID tenanta pro PROD naleznete v `appsettings.prod.json`.)
+
+    Výsledek by měl vypadat podobně jako v následujícím příkladu.
+
+    ```json
+    {
+        "grant_type": "client_credentials",
+        "client_assertion_type":"aad_app",
+        "client_assertion": "{**Your_AADToken**}",
+        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
+        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "context_type": "finops-env"
+    }
+    ```
+
+1. V odpovědi získáte `access_token`. To je to, co potřebujete jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
+
+    ```json
+    {
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 1200
+    }
+    ```
+
+### <a name="uninstall-the-add-in"></a>Odinstalace doplňku
+
+Chcete-li doplněk odinstalovat, vyberte **Odinstalovat**. Obnovte LCS a doplněk Viditelnost zásob bude odebrán. Proces odinstalace odebere registraci doplňku a také spustí úlohu k vyčištění všech obchodních dat uložených ve službě.
+
+## <a name="inventory-visibility-add-in-public-api"></a>Veřejné rozhraní API doplňku Viditelnosti zásob
+
+Veřejné rozhraní REST API doplňku Viditelnost zásob představuje několik konkrétních koncových bodů integrace. Podporuje tři hlavní typy interakce:
+
+- Odesílání změn zásob na skladě do doplňku z externího systému.
+- Dotazování na aktuální množství zásob na skladě z externího systému.
+- Automatická synchronizace se zásobami na skladě v Supply Chain Management.
+
+Automatická synchronizace není součástí veřejného API, ale místo toho se zpracovává na pozadí pro prostředí, která mají povolený doplněk Viditelnost zásob.
+
+### <a name="authentication"></a>Ověřování
+
+Token zabezpečení platformy se používá k volání doplňku Viditelnost zásob, takže musíte vygenerovat token Azure Active Directory pomocí vaší aplikace Azure Active Directory.
+
+Další informace o tom, jak získat token zabezpečení, najdete v části [Instalace doplňku Viditelnost zásob](#install-add-in).
+
+### <a name="configure-the-inventory-visibility-api"></a>Konfigurace rozhraní API doplňku Viditelnost zásob
+
+Před použitím služby musíte dokončit konfigurace popsané v následujících pododdílech. Konfigurace se může lišit v závislosti na podrobnostech vašeho prostředí. Obsahuje primárně čtyři části:
+
+- [Rozdělení](#partitioning)
+- [Konfigurace dimenzí](#dimension-configurations)
+- [Indexace](#indexing)
+- [Vlastní měrné systémy](#custom-measurement)
+
+#### <a name="partitioning"></a>Rozdělení
+
+Rozdělení může významně ovlivnit výkonnost rozhraní API doplňku Viditelnost zásob. Je vhodné definovat schéma, které umožňuje malá seskupení dat a přitom umožňuje smysluplné dotazy na data.
+
+`organizationId` (`dataAreaId` v Supply Chain Management) bude vždy součástí rozdělení a ve výchozím nastavení je Viditelnost zásob nastavena na rozdělení podle dimenzí jako *Pracoviště + skladové místo*. To znamená, že služba musí být vždy dotazována s těmito dimenzemi definovanými na filtrech.
+
+> [!NOTE]
+> *Pracoviště* a *Skladové místo* jsou dvě obecné výchozí dimenze ve Viditelnosti zásob. V aplikaci Supply Chain Management se tyto dimenze nazývají *Pracoviště* (`InventSiteId`) a *Sklad* (`InventLocationId`).
+
+### <a name="dimension-configurations"></a>Konfigurace dimenzí
+
+Viditelnost zásob poskytne seznam obecných výchozích dimenzí umožňujících integraci více zdrojových systémů.
+
+V následující tabulce jsou uvedeny dimenze zásob, které budou výchozími názvy dimenzí v doplňku Viditelnost zásob.
+
+| Typ dimenze | Název dimenze |
+|---|---|
+| Produkt | `ColorId` |
+| Produkt | `SizeId` |
+| Produkt | `StyleId` |
+| Produkt | `ConfigId` |
+| Sledování | `BatchId` |
+| Sledování | `SerialId` |
+| Skladové místo | `LocationId` |
+| Skladové místo | `SiteId` |
+| Stav zásob | `StatusId` |
+| Specifické pro sklad | `WMSLocationId` |
+| Specifické pro sklad | `WMSPalletId` |
+| Specifické pro sklad | `LicensePlateId` |
+
+> [!NOTE]
+> Typ dimenze uvedený v předchozí tabulce slouží pouze pro informaci. V doplňku Viditelnost zásob není nutné definovat typ dimenze.
+
+Pokud vlastní dimenze existuje a je třeba ji přepnout na výchozí hodnotu, když je spotřebována doplňkem Viditelnost zásob, můžete nakonfigurovat název **Vlastní dimenze** v doplňku Viditelnost zásob.
+
+Externí systémy přistupují k doplňku Viditelnost zásob prostřednictvím rozhraní RESTful API, která umožňují dotazování na informace o dostupnosti na skladě u daných sad dimenzí. Pro integraci vám doplněk Viditelnost zásob umožňuje konfigurovat *externí zdroj dat kanálu* a zdrojovou dimenzi do *cílových dimenzí* v doplňku Viditelnost zásob.
+
+Cílové dimenze by měly být jednou z následujících:
+
+- Výchozí dimenze v doplňku Viditelnost zásob
+- Vlastní dimenze
+
+Účelem konfigurace dimenze je standardizovat integraci více systémů pro dotazování na dimenzích a publikování události s dimenzemi.
+
+#### <a name="indexing"></a>Indexace
+
+Po většinu času bude dotaz na zásoby na skladě nejen na nejvyšší „celkové“ úrovni, ale možná budete chtít vidět výsledky agregované na základě dimenzí zásob.
+
+Viditelnost zásob poskytuje flexibilitu tím, že umožňuje nastavit indexy, které jsou založeny na dimenzi nebo kombinaci dimenzí.
+
+> [!NOTE]
+> V současné době můžete indexy nakonfigurovat pouze na maximálně pět. Před implementací musíte pečlivě zvážit, kterou dimenzi nebo kombinaci dimenzí použijete, abyste zajistili, že bude vyhovovat vašim obchodním potřebám. Chcete-li se například dotazovat na produkty následujícím způsobem:
+
+- Dotazujte se na agregované zásoby na skladě produktu podle dimenzí *Barva* a *Velikost*.
+- V některých případech se chcete pouze dotazovat na produkt celkem.
+
+Měli byste dva indexy definované následovně:
+
+- `["ColorId", "SizeId"]`
+- `[]`
+
+Prázdná závorka se agreguje na základě ID produktu v oddílu.
+
+Indexování definuje, jak můžete seskupit výsledky na základě nastavení dotazu `groupBy`. V tomto případě, pokud nedefinujete žádné hodnoty `groupBy`, získáte součty `productid`. Jinak pokud definujete `groupBy` jako `groupBy=ColorId&groupBy=SizeId`, vrátí se vám více řádků na základě různých kombinací barev a velikostí v systému.
+
+Kritéria dotazu můžete zadat do textu požadavku.
+
+Zde je ukázkový dotaz na produkt s kombinací barev a velikostí.
+
+```json
+{
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "LocationId": ["21"],
+        "SiteId": ["2"],
+        "ColorId": ["Red"]
+    },
+    "groupByValues": [
+        "SizeId",
+        "ColorId"
+    ],
+    "returnNegative": true
+}
+```
+
+#### <a name="custom-measurement"></a>Vlastní měrné systémy
+
+Výchozí množství měrného systému jsou propojena se Supply Chain Management, můžete však chtít mít množství, které je tvořeno kombinací výchozích měrných systémů. Chcete-li to provést, můžete mít konfiguraci vlastních množství, která budou přidána k výstupu dotazů na zásoby na skladě.
+
+Funkce jednoduše umožňuje definovat sadu měrných systémů, které budou přidány, anebo sadu měrných systémů, které budou odečteny, aby bylo možné vytvořit vlastní měrný systém.
+
+Například s následující podmínkou dotazu nakonfigurujete vlastní množství měrné jednotky jako `MyCustomAvailableforReservation`, která má být spotřebována systémem spotřeby.
+
+```json
+[
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0
+            },
+            "fno": {
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
+                "reserved": 40.0
+            }
+        }
+    }
+]
+
+```
+
+
+
+| Systém spotřeby | Vypočtené měrné jednotky | Zdroj dat | Modifikátor | Typ výpočtu modifikátoru |
+|---|---|---|---|---|
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | Sčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | Sčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | Odčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `mypos` | `inbound` | Sčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `mypos` | `outbound` | Odčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `received` | Sčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `scheduled` | Sčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `issued` | Odčítání |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `reserved` | Odčítání |
+
+Takto dotaz na vlastní množství měrnou jednotku vrátí následující výstup.
+
+```json
+[
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0
+            },
+            "fno": {
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
+                "reserved": 40.0
+            },
+            "CustomChannel": {
+                "MyCustomAvailableforReservation": 220.0
+            }
+        }
+    }
+]
+```
+
+Výstup `MyCustomAvailableforReservation` je založen na nastavení výpočtu ve vlastních měrných systémech jako:  
+ *100 + 50 + 80 + 90 + 30 &ndash; 10 &ndash; 20 &ndash; 60 &ndash; 40 = 220*
+
+### <a name="posting-on-hand-changes"></a>Publikování změn množství na skladě
+
+Přesná adresa URL, na kterou bude událost publikována, bude záviset na vaší zeměpisné oblasti. Bude mít formu:
+
+`https://{serviceURL}/api/environment/{environmentId}/onhand`
+
+Po ověření lze tuto adresu URL použít společně s metodou HTTP `POST` pro odesílání událostí změny zásob na skladě do služby.
+
+Pro komunikaci se službami Dynamics 365 prostřednictvím požadavků HTTP se používá speciální záhlaví, které označuje ID prostředí instance Supply Chain Management, ke které jsou data propojena. Například:
+
+`x-ms-environment-id: 2db79622-f97a-4d64-9844-d12efed41796`
+
+#### <a name="posting-on-hand-changes-query-example-1"></a>Zveřejnění dotazu na změny zásob na skladě - příklad 1
+
+Tento příklad ukazuje scénář, ve kterém nastavíte konfiguraci dimenze v Power Apps.
+
+Pomocí následujícího dotazu nakonfigurujte mapování dimenzí v Power Apps:
+
+```json
+{
+    "PosSizeId": "SizeId",
+    "PosColorId": "ColorId",
+    "PosSiteId": "SiteId",
+    "PosLocationId": "LocationId"
+}
+```
+
+Nyní můžete určit `dimensionDataSource` a ve svých dotazech použít vlastní dimenze. Systém automaticky převede vlastní dimenze na základní dimenze.
+
+```json
+{
+    "id": "demo-test-00007",
+    "organizationId": "usmf",
+    "productId": "MyProduct",
+    "quantities": {
+        "pos": {
+            "Outbound": 1
+        }
+    },
+    "dimensionDataSource": "pos",
+    "dimensions": {
+        "PosSizeId": "Large",
+        "PosColorId": "Red",
+        "PosSiteId": "2",
+        "PosLocationId": "21"
+    }
+}
+```
+
+#### <a name="posting-on-hand-changes-query-example-2"></a>Zveřejnění dotazu na změny zásob na skladě - příklad 2
+
+Tento příklad ukazuje scénář, kde pro konfiguraci dimenze v nejsou nastavena žádná mapování v Power Apps, takže publikování by mělo také použít základní dimenze. Všechny dimenze musí být základními dimenzemi, když má pole `dimensionDataSource` hodnotu null, je prázdné nebo má mezeru.
+
+```json
+{
+    "id": "demo-test-00007",
+    "organizationId": "usmf",
+    "productId": "MyProduct",
+    "quantities": {
+        "pos": {
+            "Outbound": 1
+        }
+    },
+    "dimensions": {
+        "SizeId": "Large",
+        "ColorId": "Red",
+        "SiteId": "2",
+        "LocationId": "21"
+    }
+}
+```
+
+#### <a name="json-document-field-properties"></a>Vlastnosti pole dokumentu JSON
+
+Pole z dříve poskytnutých příkladů dotazů JSON mají vlastnosti uvedené v následující tabulce.
+
+| ID pole | popis |
+|---|---|
+| `id` | Jedinečné ID pro konkrétní událost změny. Toto ID se používá k zajištění toho, že pokud komunikace se službou během publikování selže, opětovné odeslání události nebude mít za následek, že se v systému dvakrát započítá stejná událost. |
+| `organizationId` | Identifikátor organizace spojené s událostí. To se mapuje na organizace Supply Chain Management nebo ID datové oblasti. |
+| `productId` | Identifikátor daného produktu. |
+| `quantity` | Množství, o které je třeba změnit zásoby na skladě. Pokud by bylo například na polici přidáno 10 nových housek, byla by tato hodnota 10. Pokud by pak byly 3 housky odebrány z police nebo prodány, byla by tato hodnota -3. |
+| `dimensionDataSource` | Zdroj dat dimenzí použitých v události změny publikování změny a dotazu. Pokud zadáte zdroj dat, můžete použít vlastní dimenze ze zadaného zdroje dat. S konfigurací dimenzí může Viditelnost dat mapovat vlastní dimenze na obecné výchozí dimenze. Pokud není zadán `dimensionDataSource`, můžete ve svých dotazech použít pouze obecné výchozí dimenze.   |
+| `dimensions` | Dynamická sada párů klíč/hodnota. Budou mapovány na některé dimenze v Supply Chain Management, ale můžete také přidat vlastní dimenze (jako *Zdroj*), což může naznačovat, že událost pocházela ze Supply Chain Managementu nebo externího systému. |
+
+### <a name="querying-current-on-hand"></a>Dotaz na aktuální zásoby na skladě
+
+Koncový bod pro dotazování na aktuální zásoby na skladě bude mít podobnou adresu URL:
+
+`https://{serviceURL}/api/environment/{environmentId}/onhand/indexquery`
+
+Bude dotazován pomocí metody HTTP `POST`.
+
+#### <a name="current-on-hand-query-example-1"></a>Dotaz na aktuální zásoby na skladě - příklad 1
+
+Tento příklad ukazuje scénář, ve kterém jste dokončili konfiguraci dimenze v Power Apps.
+
+Pomocí následujícího dotazu nakonfigurujte mapování dimenzí v Power Apps:
+
+```json
+{
+    "PosSizeId": "SizeId",
+    "PosColorId": "ColorId",
+    "PosSiteId": "SiteId",
+    "PosLocationId": "LocationId"
+}
+```
+
+Nyní můžete určit `dimensionDataSource` a ve svých dotazech použít vlastní dimenze. Systém automaticky převede vlastní dimenze na základní dimenze. Můžete určit `DimensionDataSource` v `filters` a zadat vlastní dimenze v `filters` i `groupByValues`. Systém automaticky převede vlastní dimenze na základní dimenze.
+
+```json
+{
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "DimensionDataSource": ["Pos"],
+        "PosLocationId": ["21"],
+        "PosSiteId": ["2"],
+        "PosColorId": ["Red"]
+    },
+    "groupByValues": [
+        "PosSizeId",
+        "PosColorId"
+    ],
+    "returnNegative": true
+}
+```
+
+#### <a name="current-on-hand-query-example-2"></a>Dotaz na aktuální zásoby na skladě - příklad 2
+
+Tento příklad ukazuje scénář, kde pro konfiguraci dimenze v nejsou nastavena žádná mapování v Power Apps, takže publikování by mělo také použít základní dimenze. Všechny dimenze musí být základními dimenzemi, když má pole `dimensionDataSource` pod `filters` hodnotu null nebo mezeru.
+
+```json
+{
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "LocationId": ["21"],
+        "SiteId": ["2"],
+        "ColorId": ["Red"]
+    },
+    "groupByValues": [
+        "SizeId",
+        "ColorId"
+    ],
+    "returnNegative": true
+}
+```
+
+#### <a name="example-return-result"></a>Příklad výsledku vrácení
+
+Dotazy zobrazené v předchozích příkladech by mohly vrátit takový výsledek.
+
+```json
+[
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0
+            },
+            "fno": {
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
+                "reserved": 40.0
+            },
+            "CustomChannel": {
+                "MyCustomAvailableforReservation": 220.0
+            }
+        }
+    }
+]
+```
+
+Všimněte si, že pole množství jsou strukturována jako slovník měrných jednotek a jejich přidružených hodnot.

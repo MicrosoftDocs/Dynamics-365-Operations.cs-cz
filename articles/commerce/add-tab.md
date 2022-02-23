@@ -2,12 +2,15 @@
 title: Modul karty
 description: Tohle téma se zabývá moduly karty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9062e584d159e0f1986c46140d535f06f5d2817af048f30e812f9049bd52d4f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723280"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410727"
 ---
 # <a name="tab-module"></a>Modul karty
 
@@ -28,19 +31,21 @@ ms.locfileid: "6723280"
 
 Tohle téma se zabývá moduly karty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Přehled
+
 Moduly karet podobně jako moduly kontejnerů slouží k uspořádání informací na stránce webu pomocí karet. Lze je použít na jakékoli stránce, kde je třeba informace prezentovat na kartách.
 
 Do každého modulu karty lze přidat jeden nebo více modulů položek karty. Každý modul položky karty představuje jednu kartu. Do každého modulu položky karty lze přidat jeden nebo více modulů. Neexistují žádná omezení pro typy modulů, které mohou být přidány do modulu položky karty.
 
 Následující obrázek znázorňuje příklad modulu karty na stránce webu. V tomto příkladu je vybrána karta **Expedice**.
 
-![Příklad modulu karty.](./media/ecommerce-tab.PNG)
+![Příklad modulu karty](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Vlastnosti modulu karty
 
 | Název vlastnosti | Hodnoty | popis |
 |---------------|--------|-------------|
-| Záhlaví | Text | Tato vlastnost určuje volitelný textový nadpis pro modul karty. |
+| Nadpis | Text | Tato vlastnost určuje volitelný textový nadpis pro modul karty. |
 | Index aktivních karet | Počet | Tato vlastnost určuje kartu, která by měla být při načítání stránky ve výchozím nastavení aktivní. Pokud není zadána žádná hodnota, je první položka ve výchozím nastavení aktivní. |
 
 ## <a name="tab-item-module-properties"></a>Vlastnosti modulu položky karty
@@ -79,6 +84,3 @@ Chcete-li přidat modul karty na stránku a nastavit vlastnosti, postupujte nás
 [Modul ovládacího prvku Accordion](add-accordion.md)
 
 [Modul textového bloku](add-content-rich-block.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

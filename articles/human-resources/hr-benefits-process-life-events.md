@@ -1,35 +1,33 @@
 ---
 title: Zpracování životních událostí
 description: Během životního cyklu zaměstnance v aplikaci Microsoft Dynamics 365 Human Resources se může každý zaměstnanec setkat s různými změnami životních událostí.
-author: twheeloc
-ms.date: 08/23/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9155795edf657d6589539e58d4c1536f7e9d64c3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069648"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417581"
 ---
 # <a name="process-life-events"></a>Zpracování životních událostí
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Během životního cyklu zaměstnance v aplikaci Microsoft Dynamics 365 Human Resources se může každý zaměstnanec setkat s různými změnami životních událostí. Například sňatek, změna zaměstnání nebo změna závislé osoby / příjemce. Chcete-li používat životní události, je nutné povolit životní události ve stránce **Parametry zaměstnaneckých výhod**, nastavit typy životních událostí a nastavit možnosti životních událostí pro typy plánu.
+Během životního cyklu zaměstnance v aplikaci Microsoft Dynamics 365 Human Resources se může každý zaměstnanec setkat s různými změnami životních událostí. Například sňatek, změna zaměstnání nebo změna závislé osoby / příjemce. Chcete-li používat životní události, je nutné povolit životní události ve formuláři Parametry zaměstnaneckých výhod, nastavit typy životních událostí a nastavit možnosti životních událostí pro typy plánu.
 
 Než bude možné zpracovat životní události, musí být v průběhu doby náboru již alespoň jednou spuštěna možnost otevřít registraci. V USA je otevření registrace obvykle jednou za rok. Mimo USA může být otevření registrace spuštěno v době nástupu do zaměstnání. Pracovník nemusí vybírat plán zaměstnaneckých výhod, aby mohl zpracovat životní události, ale musí být zahrnuty v procesu otevřené registrace. 
 
@@ -59,6 +57,3 @@ Pokud je například dnes 1. února a na 14. února je naplánována změna prá
    4. Vyberte **OK**. Proces bude spuštěn s nastavenými parametry.
 
 4. Vyberte **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

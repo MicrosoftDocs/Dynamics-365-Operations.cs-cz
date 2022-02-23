@@ -1,37 +1,40 @@
 ---
 title: Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528916"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v Dynamics 365 Field Service do prodejních objednávek v Dynamics 365 Supply Chain Management.
 
-[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
@@ -59,13 +62,13 @@ Následující úlohy synchronizace jsou vyžadovány před synchronizací záhl
 
 | **Field Service** | **Správa dodavatelsko-odběratelského řetězce** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | Záhlaví prodejní objednávky Dataverse |
-| msdyn_workorderservices | Řádky prodejní objednávky Dataverse   |
-| msdyn_workorderproducts | Řádky prodejní objednávky Dataverse   |
+| msdyn_workorders        | Záhlaví prodejní objednávky CDS |
+| msdyn_workorderservices | Řádky prodejní objednávky CDS   |
+| msdyn_workorderproducts | Řádky prodejní objednávky CDS   |
 
 ## <a name="entity-flow"></a>Tok entity
 
-Objednávky práce se vytvářejí v aplikaci Field Service. V případě, že objednávky práce zahrnují pouze externě spravované produkty a hodnota **Stav pracovní objednávky** se liší od hodnoty **Neplánované otevřené** a **Uzavřené – zrušené**, lze objednávky práce synchronizovat s Supply Chain Management přes projekt Integrace dat Microsoft Dataverse. Aktualizace u pracovních příkazů budou synchronizovány jako prodejní objednávky v modulu Supply Chain Management. Mezi tyto aktualizace patří informace o typu původu a stavu.
+Objednávky práce se vytvářejí v aplikaci Field Service. V případě, že objednávky práce zahrnují pouze externě spravované produkty a hodnota **Stav pracovní objednávky** se liší od hodnoty **Neplánované otevřené** a **Uzavřené – zrušené**, lze objednávky práce synchronizovat s Supply Chain Management přes projekt Integrace dat Common Data Service. Aktualizace u pracovních příkazů budou synchronizovány jako prodejní objednávky v modulu Supply Chain Management. Mezi tyto aktualizace patří informace o typu původu a stavu.
 
 ## <a name="estimated-versus-used"></a>Odhadované versus používané
 
@@ -88,21 +91,21 @@ Následující tabulka poskytuje přehled různých kombinací řádků produktu
 | Stav systému <br>(Field Service) | Stav řádku <br>(Field Service) | Přiděleno <br>(Field Service) |Synchronizovaná hodnota <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Otevřeno - Plánováno   | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Plánováno   | Odhadnuto   | Ne        | Použito                            |
+| Otevřeno - Plánováno   | Odhadnuto   | Žádný        | Použito                            |
 | Otevřeno - Plánováno   | Použito        | Ano       | Použito                            |
-| Otevřeno - Plánováno   | Použito        | Ne        | Použito                            |
+| Otevřeno - Plánováno   | Použito        | Žádný        | Použito                            |
 | Otevřeno - Probíhá | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Probíhá | Odhadnuto   | Ne        | Použito                            |
+| Otevřeno - Probíhá | Odhadnuto   | Žádný        | Použito                            |
 | Otevřeno - Probíhá | Použito        | Ano       | Použito                            |
-| Otevřeno - Probíhá | Použito        | Ne        | Použito                            |
+| Otevřeno - Probíhá | Použito        | Žádný        | Použito                            |
 | Otevřeno - Dokončeno   | Odhadnuto   | Ano       | Odhadnuto                       |
-| Otevřeno - Dokončeno   | Odhadnuto   | Ne        | Použito                            |
+| Otevřeno - Dokončeno   | Odhadnuto   | Žádný        | Použito                            |
 | Otevřeno - Dokončeno   | Použito        | Ano       | Použito                            |
-| Otevřeno - Dokončeno   | Použito        | Ne        | Použito                            |
+| Otevřeno - Dokončeno   | Použito        | Žádný        | Použito                            |
 | Zavřeno - Zaúčtováno    | Odhadnuto   | Ano       | Použito                            |
-| Zavřeno - Zaúčtováno    | Odhadnuto   | Ne        | Použito                            |
+| Zavřeno - Zaúčtováno    | Odhadnuto   | Žádný        | Použito                            |
 | Zavřeno - Zaúčtováno    | Použito        | Ano       | Použito                            |
-| Zavřeno - Zaúčtováno    | Použito        | Ne        | Použito                            |
+| Zavřeno - Zaúčtováno    | Použito        | Žádný        | Použito                            |
 
 Následující tabulka poskytuje přehled různých kombinací řádků servisu.
 
@@ -245,31 +248,28 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 Filtr: (msdyn_systemstatus ne 690970005) a (msdyn_systemstatus ne 690970000) a (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mapování šablony v integraci dat](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004)
 
-[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mapování šablony v integraci dat](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderServiceLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004))
 
-[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mapování šablony v integraci dat](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineEstimate
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a (msdyn_linestatus eq 690970000) a (msdynce_headersystemstatus ne 690970004) a (msdyn_allocated eq true)
 
-[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mapování šablony v integraci dat](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Pracovní příkazy so prodejních objednávek (Field Service do Supply Chain Management): WorkOrderProductLineUsed
 
 Filtr: (msdynce_headersystemstatus ne 690970005) a (msdynce_headersystemstatus ne 690970000) a (msdynce_orderhasexternalmaintainedproductsonly eq true) a ((msdyn_linestatus eq 690970001) nebo (msdynce_headersystemstatus eq 690970004) nebo (msdyn_allocated ne true))
 
-[![Mapování šablon v datové integraci pro pracovní objednávky na prodejní objednávky (Field Service na Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Mapování šablony v integraci dat](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)

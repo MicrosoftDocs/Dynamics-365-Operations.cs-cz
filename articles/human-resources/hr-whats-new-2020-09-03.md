@@ -1,36 +1,37 @@
 ---
 title: Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (03. září 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 3. září 2020.
-author: andreabichsel
-ms.date: 09/03/2020
+author: Darinkramer
+manager: tfehr
+ms.date: 9/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d1cc3a64e6c345df7727f5ca7336821388c9dbcf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063536"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527451"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources (3. září 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3504. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
 
-Další informace o připravovaných funkcích v aplikaci Human Resources najdete v tématu [Přehled o 2. vlně vydání Dynamics 365 Human Resources v roce 2019](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Další informace o procesu aktualizaci aplikace Human Resource najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
+Další informace o připravovaných funkcích v aplikaci Human Resources najdete v tématu [Přehled o 2. vlně vydání Dynamics 365 Human Resources v roce 2019](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Další informace o procesu aktualizaci aplikace Human Resource najdete v tématu [Proces aktualizace](hr-admin-setup-update-process.md).
 
 ## <a name="in-this-release"></a>V této vydané verzi
 
@@ -75,21 +76,21 @@ Sestava analýzy nyní zobrazuje správné informace pro **Mzdovou sazbu**.
 
 Zaměstnanci mohou prohlížet a požadovat pracovní volno v rámci Microsoft Teams. Mohou interagovat s robotem a vytvářet žádosti o dovolenou. Další informace naleznete zde:
 
-- [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 1. vlny vydání v Dynamics 365 2020
-- [Aplikace Human Resources v Teams](./hr-admin-teams-leave-app.md) v dokumentaci k Human Resources
+- [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 1. vlny vydání v Dynamics 365 2020
+- [Aplikace Human Resources v Teams](https://go.microsoft.com/fwlink/?linkid=2127841) v dokumentaci k Human Resources
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Funkce preview aplikace Human Resources v Teams
  
 -  **Oznámení**: Odesílatelé a schvalovatelé žádostí o volno budou upozorněni v aplikaci Human Resources v Teams. Schvalovatelé budou moci schválit nebo zamítnout žádosti o volno. Odesílatelé budou upozorněni, pokud byl požadavek schválen nebo zamítnut. Další informace naleznete zde:
-   - [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 2. vlny vydání v Dynamics 365 2020
-   - [Povolení oznámení pro aplikaci Human Resources v Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) v dokumentaci k Human Resources
-   - [Zapnutí nebo vypnutí oznámení aplikace Teams pro jednotlivé uživatele](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) v dokumentaci k Human Resources
-   - [Oznámení aplikace Teams](./hr-teams-leave-app.md#respond-to-teams-notifications) v dokumentaci k Human Resources
-   - [Zobrazení kalendáře pracovního volna vašeho týmu](./hr-teams-leave-app.md#view-your-teams-leave-calendar) v dokumentaci k Human Resources
+   - [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 2. vlny vydání v Dynamics 365 2020
+   - [Povolení oznámení pro aplikaci Human Resources v Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) v dokumentaci k Human Resources
+   - [Zapnutí nebo vypnutí oznámení aplikace Teams pro jednotlivé uživatele](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) v dokumentaci k Human Resources
+   - [Oznámení aplikace Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) v dokumentaci k Human Resources
+   - [Zobrazení kalendáře pracovního volna vašeho týmu](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) v dokumentaci k Human Resources
  
 - **Kalendář volna manažera**: Manažeři budou moci vidět schválené a nevyřízené volno pro jejich přímé podřízené v zobrazení kalendáře. Tohle zobrazení umožňuje snadné pochopení, kdy jsou členové jejich týmu mimo práci. Další informace naleznete zde:
-   - [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 2. vlny vydání v Dynamics 365 2020
-   - [Zobrazení kalendáře pracovního volna vašeho týmu](./hr-teams-leave-app.md#view-your-teams-leave-calendar) v dokumentaci k Human Resources
+   - [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 2. vlny vydání v Dynamics 365 2020
+   - [Zobrazení kalendáře pracovního volna vašeho týmu](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) v dokumentaci k Human Resources
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Možnost konfigurace pro umístění seznamu Pracovní položky přiřazené mně (477004)
 
@@ -97,17 +98,17 @@ Nyní je k dispozici nová možnost umístění seznamu **Pracovní položky př
 
 Tato funkce také podporuje možnosti pracovního postupu, které se zobrazují ve formulářích akcí personálu. Možnosti pracovního postupu se také zobrazují nad pevnou záložkou akce pro rychlý přístup. Další informace naleznete zde: 
 
-- [Vylepšení prostředí pracovního postupu pro správu organizace a personálu](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) v plánu Dynamics 365 2020 2. vlna vydání
+- [Vylepšení prostředí pracovního postupu pro správu organizace a personálu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) v plánu Dynamics 365 2020 2. vlna vydání
 
-![Pracovní položky přiřazené mně.](./media/hr-workflow-work-items-assigned-to-me.png)
+![Pracovní položky přiřazené mně](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Rychlý přístup k položkám pracovního postupu.](./media/hr-workflow-quick-access.png)
+![Rychlý přístup k položkám pracovního postupu](./media/hr-workflow-quick-access.png)
 
 ## <a name="coming-soon"></a>Již brzy
 
-### <a name="checklist-entities-included-in-dataverse"></a>Položky kontrolního seznamu zahrnuté do Dataverse
+### <a name="checklist-entities-included-in-common-data-service"></a>Položky kontrolního seznamu zahrnuté do Common Data Service
 
-Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Dataverse k dispozici již brzy.
+Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Common Data Service k dispozici již brzy.
 
 ### <a name="benefits-management-reason-codes"></a>Kódy důvodů správy zaměstnaneckých výhod
 
@@ -116,9 +117,6 @@ Kódy důvodů správy zaměstnaneckých výhod budou brzy kombinovány se stáv
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

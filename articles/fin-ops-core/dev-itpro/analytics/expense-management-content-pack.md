@@ -2,9 +2,11 @@
 title: Obsah správy výdajů v Power BI
 description: Toto téma popisuje, co je součástí balíčku obsahu správy výdajů v Power BI.
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769891"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016445"
 ---
 # <a name="expense-management-power-bi-content"></a>Obsah správy výdajů v Power BI
 
@@ -41,7 +43,7 @@ Dva balíčky obashu Power BI jsou k dispozici pro použití s modulem Správa v
 Všechny částky jsou zobrazeny v měně společnosti. Jsou zobrazeny údaje pro všechny společnosti, ale podle potřeby můžete přidat filtr společnosti. 
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Expense Admin Dashboard.pbix a Expense Personal Dashboard.pbix Power BI můžete vyhledat v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI LCS od společnosti Microsoft a vašich partnerů](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Obsah Expense Admin Dashboard.pbix a Expense Personal Dashboard.pbix Power BI můžete vyhledat v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI LCS od společnosti Microsoft a vašich partnerů](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 Obsah je k dispozici z pracovního prostoru Správa výdajů jako vložený obsah Power BI. Libovolný vlastník výdaje může přistupovat k osobním výdajů pro sebe, ale pouze úředníci a manažeři závazků mají přístup k obsahu pro správu, aby mohli prohlížet výdajová data všech uživatelů.
 
 ## <a name="refreshing-the-power-bi-content"></a>Aktualizace obsahu Power BI
@@ -91,6 +93,3 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 | Statistika zaměstnance | Vyúčtování výdajů podle typu nákladů            |
 |                     | Osobní výdaje                       |
 |                     | Vyúčtování výdajů podle skupin statistiky     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

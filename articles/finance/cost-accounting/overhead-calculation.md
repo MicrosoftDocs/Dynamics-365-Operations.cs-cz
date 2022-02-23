@@ -2,13 +2,16 @@
 title: Výpočet režijních nákladů
 description: Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.
 author: AndersGirke
+manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551797"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441267"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
@@ -29,7 +32,8 @@ ms.locfileid: "7551797"
 
 Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.
 
-## <a name="term-definition"></a>Definice termínu
+<a name="term-definition"></a>Definice termínu
+---------------
 
 Režijní náklady jsou náklady, které nutně vznikají při chodu podnikání, ale nelze je připsat přímo k žádné konkrétní podnikatelské aktivitě, produktu nebo službě. Režijní náklady poskytují důležitou podporu pro generování aktivity přinášejících zisk. Následuje několik příkladů režijních nákladů:
 
@@ -48,7 +52,7 @@ Výpočet režijních nákladů spustí zásady účtování nákladů ve správ
 
 Výpočet režijních nákladů se spustí bez ohledu na verzi. Proto lze vypočítat rozpočtovou verzi před skutečnou verzí. Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku. V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku. Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu. Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup. Máte tedy vždy plnou sledovatelnost. 
 
-[![Výpočet režijních nákladů.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Výpočet a přidělení režijních nákladů za elektřinu
 Ve finančním účetnictví se některé náklady, jako je například elektřina, registrují jako paušální. Podrobný přehled pro vedoucí není tedy pro nákladové účetnictví k dispozici. V nákladovém účetnictví musí náklady procházet organizačními jednotkami, aby byl získán správný přehled pro vedoucí napříč všemi jednotkami a úrovněmi organizace. Tento tok musí být založen buď na přesném záznamu spotřeby nebo na objektivním hodnocení. V hlavní knize mohou být zaúčtovány náklady na elektřinu způsobem znázorněným v následující tabulce.
@@ -618,7 +622,7 @@ Další informace naleznete v tématu [Provedení výpočtu režijních náklad�
 
 Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení. Aplikace Finance podporuje reciproční metodu přidělování. V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů. Systém automaticky určí provádění přidělení ve správném pořadí. Zůstatek objektu nákladů je přidělen jedním základem přidělení. Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů. Pořadí přidělení je řízeno jednotkou řízení nákladů. 
 
-[![Reciproční metoda.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciproční metoda](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definice přidělení nákladů
 
@@ -1328,18 +1332,86 @@ V následující tabulce je uveden výsledek při použití Služeb balení jako
 ## <a name="conclusion"></a>Závěr
 Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtují na ID fiktivního nákladového střediska. Účetní tak budou vědět, že tento náklad musí být přidělen. V nákladovém účetnictví náklady procházejí napříč organizačními jednotkami a úrovněmi, na základě použitých zásad a pravidel. Každý náklad byl přidružen k základu přidělení, který poskytuje nejlepší hodnocení pro přidělení nákladů.
 
-Prvek nákladů | Objekt nákladů<br>CC099 | Objekt nákladů<br>CC001 | Objekt nákladů<br>CC002 | Objekt nákladů<br>CC003 | Objekt nákladů<br>CC004 | Objekt nákladů<br>Proj 1 | Objekt nákladů<br>Proj 2 | Objekt nákladů<br>Prod 1 | Objekt nákladů<br>Prod 2 | Celkem
----|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
-10001 Elektřina | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
-Neklasifikované | 0,00 |  |  |  |  |  |  |  |  |  |
-Pevné náklady | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variabilní náklady | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Prvek nákladů</th>
+<th colspan="9">Objekt nákladů</th>
+<th rowspan="2">Celkem</th>
+</tr>
+<tr>
+<th>CC099</th>
+<th>CC001</th>
+<th>CC002</th>
+<th>CC003</th>
+<th>CC004</th>
+<th>Proj 1</th>
+<th>Proj 2</th>
+<th>Prod 1</th>
+<th>Prod 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">10001 Elektřina</td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>30,00</strong></td>
+<td style="text-align: right;"><strong>10,00</strong></td>
+<td style="text-align: right;"><strong>7.770,57</strong></td>
+<td style="text-align: right;"><strong>2.189,43</strong></td>
+<td style="text-align: right;"><strong>10.000,00</strong></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;">Neklasifikované</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Pevné náklady</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">776.36</td>
+<td style="text-align: right;">223.64</td>
+<td style="text-align: right;"><strong>1.000,00</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Variabilní náklady</td>
+<td style="text-align: right;">000</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">10,00</td>
+<td style="text-align: right;">6,994.21</td>
+<td style="text-align: right;">1,965.79</td>
+<td style="text-align: right;"><strong>9.000,00</strong></td>
+</tr>
+</tbody>
+</table>
 
 > [!NOTE]
 > Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Další informace naleznete v tématu [Zásady shrnutí nákladů a výpočet režijních nákladů](cost-rollup.md).
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

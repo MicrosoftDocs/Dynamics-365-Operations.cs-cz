@@ -1,29 +1,33 @@
 ---
 title: Nastavení plnění objednávek pro obchody
 description: Toto téma poskytuje přehled nastavení plnění obchodu.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779589"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965302"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Nastavení plnění objednávek pro obchody
 
 [!include [banner](includes/banner.md)]
+
+## <a name="overview"></a>Přehled
 
 Mnoho maloobchodních prodejců by chtělo optimalizovat plnění objednávky tak, že povolí plnění objednávky obchodům. Plnění objednávek na úrovni obchodu může pomoci zmírnit scénáře přeplnění pro konkrétní obchod, nebo může být zapotřebí z logistického hlediska v případech, kdy má obchod dodatečnou kapacitu nebo je umístěn v těsnější vzdálenosti od zákazníka. Aby se vyhovělo této potřebě, je na pokladním místě k dispozici sjednocená operace plnění objednávky.
 
@@ -33,9 +37,9 @@ Operace plnění objednávky na pokladním místě poskytuje jediný pracovní p
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Nastavení operace plnění objednávky
 
-Plnění objednávky [ID operace 928](pos-operations.md) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
+Plnění objednávky [ID operace 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
 
-Postupujte podle kroků v části [Přidat operaci do mřížky tlačítek](pos-screen-layouts.md) a určete, který parametr má být použit při vyvolání plnění objednávky na pokladním místě. Ve výchozím nastavení se zvolí **Všechny objednávky** po určení operací plnění objednávky. Když je nakonfigurována s tímto parametrem, operace uvede seznam všech řádků objednávky pro plnění v aktuálním obchodě. Je k dispozici také možnost **Objednávky k expedici**, kterou lze přiřadit k tlačítku a využít v případě, že uživatel pouze chce zobrazit objednávky, které budou expedovány z obchodu. Nakonec je tu možnost **Objednávky k výdeji**. Při vyvolání na pokladním místě se uvede pouze seznam objednávek, které mají být vyzvednuty v obchodě. Různé parametry lze přiřadit různým tlačítkům, aby měl uživatel k dispozici různé způsoby zobrazení plnění objednávek.
+Postupujte podle kroků v části [Přidat operaci do mřížky tlačítek](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) a určete, který parametr má být použit při vyvolání plnění objednávky na pokladním místě. Ve výchozím nastavení se zvolí **Všechny objednávky** po určení operací plnění objednávky. Když je nakonfigurována s tímto parametrem, operace uvede seznam všech řádků objednávky pro plnění v aktuálním obchodě. Je k dispozici také možnost **Objednávky k expedici**, kterou lze přiřadit k tlačítku a využít v případě, že uživatel pouze chce zobrazit objednávky, které budou expedovány z obchodu. Nakonec je tu možnost **Objednávky k výdeji**. Při vyvolání na pokladním místě se uvede pouze seznam objednávek, které mají být vyzvednuty v obchodě. Různé parametry lze přiřadit různým tlačítkům, aby měl uživatel k dispozici různé způsoby zobrazení plnění objednávek.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Povolte uživatelům přístup k plnění objednávek na pokladním místě.
 
@@ -104,9 +108,9 @@ Ve výchozím nastavení objednávky budou mít stav **Přijato**. Stav objedná
 
 - **Upravit** - pokud je stav objednávky čekající, lze ho upravit na pokladním místě. Objednávky, které již byly částečně vyskladněné, zabalené nebo fakturované, nemohou být upraveny ze zobrazení plnění objednávky.
 - **Přijmout** - pokud je položka **Ruční přijetí** nakonfigurována na úrovni kanálu, řádky musí být nejprve přijaty, dříve než mohou procházet proces plnění objednávky.
-- **Vyskladnit** -možnost vyskladnění podporuje několik akcí. Nejprve **Výdej** aktualizuje stav řádku objednávky, aby se ostatní v obchodě nepokusili vyskladnit stejný řádek. Dále **Tisk výdejky** vytiskne výdejku pro vybraný řádek nebo řádky a aktualizuje jejich stav na **Výdej**. Formáty výdejek jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md). Nakonec možnost **Označit jako vyskladněno** označuje, že řádek byl vyskladněn. **Označit jako vyskladněno** zahájí odpovídající skladové transakce v účetním systému. Akce výdeje lze provést zároveň současně pro několik řádků objednávky napříč objednávkami a pro všechny způsoby dodání.
+- **Vyskladnit** -možnost vyskladnění podporuje několik akcí. Nejprve **Výdej** aktualizuje stav řádku objednávky, aby se ostatní v obchodě nepokusili vyskladnit stejný řádek. Dále **Tisk výdejky** vytiskne výdejku pro vybraný řádek nebo řádky a aktualizuje jejich stav na **Výdej**. Formáty výdejek jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Nakonec možnost **Označit jako vyskladněno** označuje, že řádek byl vyskladněn. **Označit jako vyskladněno** zahájí odpovídající skladové transakce v účetním systému. Akce výdeje lze provést zároveň současně pro několik řádků objednávky napříč objednávkami a pro všechny způsoby dodání.
 - **Zamítnout** - Řádky nebo částečné řádky lze odmítnout. To umožňuje jejich opětovné přiřazení z účetního systému do jiného obchodu nebo skladu. Řádky lze zamítnout pouze tehdy, pokud nebyly ještě vyskladněny či zabaleny. Chcete-li odmítnout řádek, který byl vyskladněn nebo zabalen, musí být u toho řádku zrušeno vydání nebo zabalení z účetního systému.
-- **Balení** - možnost balení podporuje dvě akce: **Tisk dodacího listu** vytiskne dodací list pro vybrané řádky a položka **Označit jako zabaleno** označí řádky jako zabalené a označit řádky jako dodané v účetním systému. Současně lze zabalit pouze řádky objednávky, které patří ke stejné objednávce a se stejným způsobem dodání. Formáty dodacích listů jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md).
+- **Balení** - možnost balení podporuje dvě akce: **Tisk dodacího listu** vytiskne dodací list pro vybrané řádky a položka **Označit jako zabaleno** označí řádky jako zabalené a označit řádky jako dodané v účetním systému. Současně lze zabalit pouze řádky objednávky, které patří ke stejné objednávce a se stejným způsobem dodání. Formáty dodacích listů jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 - **Expedovat** - akce expedice označí vybrané řádky jako **Dodáno** v účetním systému. Poté, co byl řádek plně expedován, se již nezobrazí v zobrazení plnění objednávky.
 - **Výdej** - akce vyskladnění přidá řádky k zobrazení transakcí pro výdej. Pokud neexistují další řádky na objednávce, které nejsou aktuálně vydávány, budou přidány k zobrazení transakcí s nulovým množstvím. Poté, co byl řádek plně vydán, se již nezobrazí v zobrazení plnění objednávky.
 
@@ -126,6 +130,3 @@ Plnění objednávky na pokladním místě obsahuje filtrování umožňující 
 - Vytvořeno
 - Datum dodání
 - Datum příjmu
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,32 +1,34 @@
 ---
-title: Předpovědi plateb zákazníka
+title: Předpovědi plateb odběratelů (Preview)
 description: Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také mpže pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkasa dříve, než byste to zahájili v ostatních případech.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 05/26/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "14151"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b321fdc185e175d9fe2673c9f1e16486efd8e798
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982030"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645666"
 ---
-# <a name="customer-payment-predictions"></a>Předpovědi plateb zákazníka
+# <a name="customer-payment-predictions-preview"></a>Předpovědi plateb odběratelů (Preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také může pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkas dříve, než byste to zahájili v ostatních případech.
 
@@ -38,7 +40,7 @@ Organizace často považují za náročné předvídat, kdy zákazník zaplatí 
 - Procesy inkasa, které začínají příliš pozdě
 - Objednávky, které jsou vydávány zákazníkům, u nichž může dojít k selhání platby
 
-Předpovědi plateb zákazníka pomáhá organizacím předpovědět, kdy dojde k zaplacení faktury zákazníkem. Proto mohou vytvářet strategie sbírek, které pomáhají zvyšovat pravděpodobnost, že budou zaplaceny včas.
+Předpovědi plateb zákazníka (preview) pomáhá organizacím předpovědět, kdy dojde k zaplacení faktury zákazníkem. Proto mohou vytvářet strategie sbírek, které pomáhají zvyšovat pravděpodobnost, že budou zaplaceny včas.
 
 ## <a name="predictions"></a>Předpovědi
 
@@ -54,11 +56,11 @@ Pro každou otevřenou fakturu funkce přiřadí tři pravděpodobnosti platby:
 
 Tato funkce také poskytuje souhrnný pohled na očekávané platby.
 
-[![Agregované zobrazení předpovědí platby.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Agregované zobrazení předpovědí platby](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Každá faktura má přiřazenou pravděpodobnost platby včas. Faktury, jejichž pravděpodobnost včasné úhrady je nižší než 50 %, budou označeny červeným kroužkem, což znamená, že mohou vyžadovat pozornost inkasního agenta.
 
-[![Seznam pravděpodobností platby.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Seznam pravděpodobností platby](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Funkce Zákaznické předpovědi plateb také poskytuje kontextové informace vysvětlující předpovědi. Tyto informace zahrnují hlavní faktory, které ovlivnily predikci, aktuální stav obchodu se zákazníkem a podrobnosti o historickém platebním chování zákazníka.
 
@@ -68,4 +70,12 @@ V mnoha podnicích je proces inkasa reaktivní činností. Jinými slovy, proces
 
 V minulosti bylo obvykle obtížné vyvinout a nasadit řešení umělé inteligence (AI). Proces vyžaduje tým, který obsahuje datové vědce, odborníky na dané záležitosti a techniky, kteří pracují dlouhou dobu na formulování, vývoji, nasazení a udržování použitelného řešení AI. Předpovědi plateb zákazníků usnadňují nasazení a používání řešení umělé inteligence v Microsoft Dynamics 365 Finance. Společnost Microsoft dodává řešení AI vybudovaná na aplikaci Microsoft AI Builder. Uživatelé proto mohou nasadit řešení AI jediným kliknutím myši a využít výhod inteligentních předpovědí. Pokud nejste spokojeni s přesností předpovědi, může uživatel power user (znovu jedním kliknutím myši) spustit prostředí rozšíření aplikace AI Builder a poté vybrat nebo zrušit výběr polí používaných k vygenerování předpovědi. Až budete připraveni, můžete model „vytrénovat“ a publikovat změny. Nově trénovaný model se automaticky spustí a vygeneruje předpovědi v Dynamics 365 Finance.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## <a name="release-details"></a>Podrobnosti uvolnění
+
+Veřejný náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
+
+Funkce veřejného náhledu by měly být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a AI vytvořené v prostředí sandboxu není nutné migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+
+## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
+
+Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.

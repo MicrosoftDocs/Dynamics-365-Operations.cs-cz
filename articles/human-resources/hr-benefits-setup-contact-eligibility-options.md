@@ -1,35 +1,33 @@
 ---
 title: Konfigurace možností způsobilosti osobních kontaktů
-description: Toto téma vysvětluje, jak konfigurovat možnosti způsobilosti osobních kontaktů v Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/24/2021
+description: Nakonfigurujte možnosti způsobilosti osobních kontaktů v Microsoft Dynamics 365 Human Resources. Osobními kontakty mohou být osoby, které jsou příjemci nebo závislé osoby.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad9dc9d12bcc419c3925b0f78566d9f3eb0a1e35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070343"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417653"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurace možností způsobilosti osobních kontaktů
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ttoto téma vysvětluje, jak konfigurovat typy osobních kontaktů, které mají být použity ve výhodách v aplikaci Microsoft Dynamics 365 Human Resources. Osobní kontakty jsou jednotlivci, na které se budou vztahovat vaše plány (závislé osoby) nebo kteří budou mít prospěch z vašich plánů (příjemci). Závislými osobami jsou obvykle manželé nebo děti. Příjemci mohou být manželé, děti, svěřenské fondy nebo rodiče.
+Tento článek vysvětluje, jak konfigurovat typy osobních kontaktů, které mají být použity ve výhodách v aplikaci Microsoft Dynamics 365 Human Resources. Osobními kontakty mohou být osoby, které jsou příjemci nebo závislé osoby. 
 
 1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Možnosti nároků na osobní kontakty**.
 
@@ -47,6 +45,3 @@ Ttoto téma vysvětluje, jak konfigurovat typy osobních kontaktů, které mají
    | **Věk** | Maximální stáří vhodného osobního kontaktu pro plán zaměstnaneckých výhod. Toto pole je aktivní pouze v případě, že vyberete vztah. Tento věk se porovnává s vypočítaným stářím osobního kontaktu. Vypočítaný věk je: (datum disponibility – datum narození osobního kontaktu / 365). Toto číslo je vždy celé číslo. |
 
 4. Zvolte **Uložit**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

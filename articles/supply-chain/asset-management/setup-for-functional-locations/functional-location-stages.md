@@ -1,10 +1,12 @@
 ---
 title: Stavy životního cyklu funkčních míst
 description: Toto téma popisuje, jak nastavit stavy funkčních míst a modely životního cyklu v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16fbef7b390fd7a6c00bc5e4bdac28aee458613e4dc69941f26c7f7732e58de0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739172"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021261"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stavy životního cyklu funkčních míst
 
@@ -56,10 +58,7 @@ Pokud jste vytvořili stavy životního cyklu vyžadované pro vaše funkční m
 1. Zvolte **Správa majetku** > **Nastavení** > **Funkční místa** > **Modely životního cyklu**.
 2. Zvolte **Nový** pro vytvoření nového modelu životního cyklu.
 3. Vložte ID modelu životního cyklu do pole **Model životního cyklu** a název modelu životního cyklu v poli **Název**. V polích **Typy funkčních míst** a **Stavy životního cyklu** se zobrazí počet typů funkčních míst, které používají model životního cyklu, a počet stavů vybraných v modelu životního cyklu.
-4. Na záložce s náhledem **Stavy životního cyklu** vyberte stavy, které si přejete zahrnout v modelu. To se provádí kliknutím na stav v části **Zbývající stavy životního cyklu** a kliknutím na tlačítko se ![šipkou vpřed.](media/02-setup-for-functional-locations.png) .
-5. Chcete-li pro model vybrat všechny dostupné stavy, klikněte na tlačítko ![vybrat všechny dostupné fáze](media/03-setup-for-functional-locations.png) . Všechny stavy jsou převedeny do části **Vybrané stavy životního cyklu**.
-6. Chcete-li z modelu odebrat vybraný stav, vyberte stav v části **Vybrané stavy životního cyklu** a poté zvolte tlačítko se ![šipkou zpět](media/04-setup-for-functional-locations.png) .
+4. Na záložce s náhledem **Stavy životního cyklu** vyberte stavy, které si přejete zahrnout v modelu. To se provádí kliknutím na stav v části **Zbývající stavy životního cyklu** a kliknutím na tlačítko se ![šipkou vpřed](media/02-setup-for-functional-locations.png).
+5. Chcete-li pro model vybrat všechny dostupné stavy, klikněte na tlačítko ![vybrat všechny dostupné fáze](media/03-setup-for-functional-locations.png). Všechny stavy jsou převedeny do části **Vybrané stavy životního cyklu**.
+6. Chcete-li z modelu odebrat vybraný stav, vyberte stav v části **Vybrané stavy životního cyklu** a poté zvolte tlačítko se ![šipkou zpět](media/04-setup-for-functional-locations.png).
 7. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu, které mohou následovat po vybraném stavu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,35 @@
 title: Modul kontejneru
 description: Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715433"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410719"
 ---
 # <a name="container-module"></a>Modul kontejneru
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Modul kontejneru je takový modul, který uvnitř hostuje jiné moduly. Primárním účelem modulu kontejneru je definovat pomocí vlastností, které jsou pro něj nastaveny, rozložení modulů, které obsahuje. Tyto moduly mohou být například umístěny vedle sebe ve dvou sloupcích, ve třech sloupcích, ve čtyřech sloupcích nebo v šesti sloupcích. Mohou být také omezeny na šířku kontejneru nebo mohou vyplnit obrazovku. Do každého modulu kontejneru lze také přidat nadpis.
 
@@ -42,7 +47,7 @@ Podporovány jsou tři moduly kontejneru: kontejner, kontejner se 2 pozicemi a k
 
 Následující obrázek ukazuje příklad modulu kontejneru, který obsahuje karuselový modul ve tvůrci webů Commerce. V tomto příkladu je vlastnost **Šířka** modulu kontejneru nastavena na **Vyplnit obrazovku**.
 
-![Příklad modulu kontejneru.](./media/ecommerce-container.PNG)
+![Příklad modulu kontejneru](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Vlastnosti modulu kontejneru
 
@@ -137,6 +142,3 @@ Chcete-li přidat modul kontejneru na novou stránku a nastavit požadované vla
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

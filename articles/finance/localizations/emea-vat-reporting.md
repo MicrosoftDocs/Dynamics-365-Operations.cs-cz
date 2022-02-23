@@ -2,24 +2,27 @@
 title: Vykazování DPH pro Evropu
 description: Toto téma obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741483"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407588"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 
@@ -45,7 +48,7 @@ Výkaz DPH je založený na částkách daňových transakcí. Proces generován
 
 Pro každý kód vykazování by mělo být určeno konkrétní rozložení sestavy. Ve stejnou dobu jsou kódy DPH propojeny s konkrétním finančním úřadem prostřednictvím období vyrovnání DPH. Pro každý finanční úřad pro vykazování DPH by mělo být určeno konkrétní rozložení sestavy. Tedy pouze kódy vykazování DPH se stejným rozložením sestavy, která je nastavena pro finanční úřad k odvedení DPH v období vyrovnání DPH pro kód DPH lze vybrat v nastavení sestavy kódu DPH. Transakce DPH generované při účtování objednávky nebo deníku obsahují kód DPH, zdroj DPH, směr DPH a částky transakcí (částka základu daně a výše daně v zúčtovací měně, měně DPH a měně transakce). V závislosti na kombinaci atributů transakce DPH, částky transakce tvoří celkové částky určené pro kódy vykazování DPH určené pro kódy DPH. Následující obrázek znázorňuje vztah mezi daty.
 
-![diagram.](./media/diagram4.jpg)
+![diagram](./media/diagram4.jpg)
 
 ## <a name="vat-statement-setup"></a>Nastavení výkazu DPH
 Chcete-li generovat výkazy DPH, je nutné vytvořit následující nastavení:
@@ -248,9 +251,9 @@ d<li>Transakce <strong>částka základu daně</strong> nebo <strong>částka da
 
 Elektronické hlášení (ER) můžete použít ke konfiguraci výkazů a sestav a k exportu různých formátů elektronických dat bez nutnosti změny kódu X ++. Další informace:
 
--   [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
--   [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Požadavky na lokalizaci – vytvoření konfigurace GER](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
+-   [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Požadavky na lokalizaci – vytvoření konfigurace GER](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>Prostředky pro výkazy DPH specifické podle zemí
 Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů této země. Existují předdefinované obecné modely a formáty výkazů DPH pro země uvedené v následující tabulce.
@@ -274,6 +277,3 @@ Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů té
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

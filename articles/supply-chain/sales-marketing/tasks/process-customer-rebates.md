@@ -1,24 +1,27 @@
 ---
 title: Generování a zpracování rabatů odběratelů
 description: Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969080"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423940"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generování a zpracování rabatů odběratelů
 
@@ -69,7 +72,7 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
 2. Klikněte na možnost **Kumulovat**.
 3. V poli **Odběratel** zadejte nebo vyberte hodnotu.
 4. V poli **Počáteční datum** vyberte aktuální datum.
-5. Klikněte na tlačítko **OK**. Po spuštění funkce **Kumulovat** se provede úprava odhadu částky nároku zohledňující skutečnost, že je celkový objem prodeje odběratele za příslušné období vyšší než při prvním generování rabatu. Vzhledem k tomu, že celkové nakoupené množství dosáhlo počtu 100 jednotek, odběratel nyní má nárok na 40 USD za jednotku (podle druhé množstevní kategorie smlouvy) nebo 4,000 USD celkového rabatu. Rozdíl je zaznamenán jako nová "úprava" nároku pro dalších 800 USD. Stav nároků na rabat, které byly zahrnuty v kumulované aktualizaci, je nyní nastaven na hodnotu Vypočteno. 
+5. Klikněte na tlačítko **OK**. Po spuštění funkce **Kumulovat** se provede úprava odhadu částky nároku zohledňující skutečnost, že je celkový objem prodeje odběratele za příslušné období vyšší než při prvním generování rabatu. Vzhledem k tomu, že celkové nakoupené množství dosáhlo počtu 100 jednotek, odběratel nyní má nárok na 40 USD za jednotku (podle druhé množstevní kategorie smlouvy) nebo 400 USD celkového rabatu. Rozdíl je zaznamenán jako nová "úprava" nároku pro dalších 800 USD. Stav nároků na rabat, které byly zahrnuty v kumulované aktualizaci, je nyní nastaven na hodnotu Vypočteno. 
 6. V seznamu označte všechny řádky.
 7. Klikněte na **Schválit**.
 8. Klikněte na možnost **Zpracovat**.
@@ -79,6 +82,3 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
     - Na účet časového rozlišení rabatu bylo provedeno připsání představující budoucí odpovědnost směrem k odběrateli.
     - Z výdajového účtu rabatu byl proveden odpis v rámci uznání vzniklých nákladů v souvislosti s prodejem.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

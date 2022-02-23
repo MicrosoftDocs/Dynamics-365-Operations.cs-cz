@@ -1,24 +1,27 @@
 ---
 title: Vytvoření nové obchodní smlouvy
 description: Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novou prodejní cenu produktu odsouhlasenou se specifickým odběratelem.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a39d95605900be0fa1e339b8cd0755ba85189
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573410"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423618"
 ---
 # <a name="create-a-new-trade-agreement"></a>Vytvoření nové obchodní smlouvy
 
@@ -26,8 +29,8 @@ ms.locfileid: "7573410"
 
 Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novou prodejní cenu produktu odsouhlasenou se specifickým odběratelem. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Při použití vlastních dat před zahájením tohoto průvodce ověřte, že existuje název deníku obchodních smluv, kde je výchozí vztah je nastaven na „Cena (prodej)“.
 
-## <a name="create-and-post-a-new-trade-agreement-journal"></a>Vytvoření a zaúčtování nového deníku obchodní smlouvy
 
+## <a name="create-and-post-a-new-trade-agreement-journal"></a>Vytvoření a zaúčtování nového deníku obchodní smlouvy
 1. Přejděte do **navigačního podokna > Moduly > Prodej a marketing > Ceny a slevy > Deníky smluv o obchodu**.
 2. Klepněte na možnost **Nový**.
 3. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
@@ -58,27 +61,15 @@ Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novo
 20. Klikněte na tlačítko **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Zobrazení obchodních smluv pro produkt
-
 1. Klikněte na **Navigační podokno > Moduly > Řízení informací o produktech > Produkty > Vydané produkty**.
 2. V seznamu najděte a vyberte produkt, jehož cenu jste právě aktualizovali.
 3. V **podokně akcí** klikněte na možnost **Prodej**.
 4. Klikněte na možnost **Zobrazit obchodní smlouvy**.
     
-    Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.
+    Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.    
 
 5. Zavřete stránku.
 
 ## <a name="additional-resources"></a>Další prostředky
-
-### <a name="whitepaper"></a>Dokument Whitepaper
-
-Chcete-li získat další informace, stáhněte si následující dokument whitepaper (napsaný na podporu AX2012, ale stále platí pro Dynamics 365 Supply Chain Management)
-
-- [Obchod. smlouvy](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
-
 ### <a name="community-blogs"></a>Blogy komunity
-
 - [Prodejní ceny v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

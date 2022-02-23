@@ -2,9 +2,11 @@
 title: Mobilní pracovní prostor adresáře společnosti
 description: Toto téma obsahuje informace o pracovním prostoru adresáře společnosti, který uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance v organizaci.
 author: jcart1106
+manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720641"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683424"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
@@ -77,7 +79,7 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-[![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Zobrazení adresáře společnosti pomocí mobilního pracovního prostoru
 1.  V mobilní aplikaci zvolte pracovní prostor **Adresář společnosti**. Zobrazí se seznam zaměstnanců.
@@ -87,6 +89,3 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 1.  V mobilní aplikaci zvolte pracovní prostor **Adresář společnosti**.
 2.  V poli **Vyhledat** zadejte křestní jméno, příjmení, titul nebo oddělení zaměstnance pro zahájení hledání.
 3.  Vyberte zaměstnance. Zobrazí se stránka **Profil zaměstnance**. Informace na této stránce zahrnují křestní jméno, příjmení, titul a oddělení zaměstnance.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

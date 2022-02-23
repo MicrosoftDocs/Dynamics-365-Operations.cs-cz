@@ -1,10 +1,12 @@
 ---
 title: Správa uživatelů dodavatelské spolupráce
 description: Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ff0d11bf2c42f7ae63e3db5f31f3ffea2c28f693
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6356c1d11ba507c0eaa42087bdebe982ef091dbd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578121"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019922"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Správa uživatelů dodavatelské spolupráce
 
@@ -62,7 +64,7 @@ Předtím, než můžete požadovat zřízení nového uživatele, musí být te
 4. V oddílu **Přiřazení rolí uživatelů** zaškrtněte políčko **Přiřadit** pro role zabezpečení, které by měl mít nový uživatel.
 5. Klepněte na tlačítko **Odeslat**.
 
-Při odeslání požadavku dodavatelského uživatele je pole **Povolen přístup dodavatelské spolupráce** nastaveno na hodnotu **Ano** pro vybraný účet dodavatele a je zahájen workflow požadavku uživatele. V rámci tohoto workflowu je vytvořen nový uživatel a přirazeny role zabezpečení. Kromě toho se aktivuje služba Azure B2B, která iniciuje interakci s portálem Azure a přidruží nový nebo existující účet AAD k uživatelskému účtu aplikace Supply Chain Management. Další informace naleznete v tématu [Co je spolupráce Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Při odeslání požadavku dodavatelského uživatele je pole **Povolen přístup dodavatelské spolupráce** nastaveno na hodnotu **Ano** pro vybraný účet dodavatele a je zahájen workflow požadavku uživatele. V rámci tohoto workflowu je vytvořen nový uživatel a přirazeny role zabezpečení. Kromě toho se aktivuje služba Azure B2B, která iniciuje interakci s portálem Azure a přidruží nový nebo existující účet AAD k uživatelskému účtu aplikace Supply Chain Management. Další informace naleznete v tématu [Co je spolupráce Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Deaktivace uživatele
 
@@ -91,6 +93,3 @@ Zadání požadavku, aby byly upraveny role zabezpečení pro uživatele:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

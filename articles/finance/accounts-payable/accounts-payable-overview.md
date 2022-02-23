@@ -2,27 +2,28 @@
 title: Přehled konfigurace závazků
 description: Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
 author: abruer
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "24671"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4981f317697998298ba0c1ea84d50698f135474f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5eed11cbe73ede71cabf83655fc1d37b1a979a4c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984873"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441243"
 ---
 # <a name="configure-accounts-payable-overview"></a>Přehled konfigurace závazků
 
@@ -30,7 +31,8 @@ ms.locfileid: "7984873"
 
 Tento článek popisuje stránky, které slouží k nastavení základních a volitelných funkcí pro modul Závazky. Dále popisuje postup nastavení, který musíte dokončit dříve, než začnete nastavovat modul Závazky.
 
-## <a name="prerequisites-for-accounts-payable-setup"></a>Předpoklady k nastavení modulu Závazky
+<a name="prerequisites-for-accounts-payable-setup"></a>Předpoklady k nastavení modulu Závazky
+----------------------------------------
 
 Před nastavením modulu Závazky je nutné provést tyto úkoly:
 
@@ -146,6 +148,3 @@ Další stránky pro nastavení jsou uspořádány podle funkcí.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,6 +56,3 @@ Doporučení budou zobrazeny jako karty na záložce **Potenciální uchazeči**
 > Pokud jste v nedávné době začali používat Attract, budete muset počkat, až budete mít 10 nebo více uchazečů, kteří mají úplné profily nebo životopisy, než tuto funkci použijete.
 
 Aby se předešlo případnému zkreslení doporučení, Attract pouze vyhledá profily kandidátů pro dovednosti, kvalifikace a další klíčová slova, která odpovídají popisu práce. Attract navíc před hodnocením odstraní osobní identifikaci informací z profilů kandidátů.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

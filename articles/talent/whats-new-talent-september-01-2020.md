@@ -44,5 +44,3 @@ Toto vydání obsahuje následující změny integrace LinkedIn Recruiter v apli
 - Aktualizace podpory prohlížeče (LinkedIn již nepodporuje Internet Explorer 11 k 1. červenci 2020)
 
 Další informace naleznete v tématu [Zazdrojování kandidátů s využitím LinkedIn Recruiter v aplikaci Attract](attract-linkedin-recruiter.md).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

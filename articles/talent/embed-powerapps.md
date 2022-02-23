@@ -66,6 +66,3 @@ Popřípadě postupujte následovně.
 2. Na panelu nástrojů vyberte možnost **Přidat aplikaci z Power Apps**.
 
     ![Přidání aplikace z Power Apps pomocí panelu nástrojů individuálního nastavení](media/powerapp-bar.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

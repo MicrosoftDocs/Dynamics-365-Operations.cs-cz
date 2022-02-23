@@ -1,14 +1,17 @@
 ---
-title: Zobrazení slev v POS
+title: Zobrazit slevy v POS
 description: Toto téma vysvětluje, jak Microsoft Dynamics 365 Commerce pomáhá prodejcům získat informace o promoakcích a způsobu jejich použití pro křížové a návazné pohyby.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731660"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410787"
 ---
 # <a name="show-discounts-in-pos"></a>Zobrazit slevy v POS
 
@@ -33,7 +36,7 @@ Promoakce hrají důležitou roli při motivaci zákazníků, kteří prováděj
 
 Commerce obsahuje operaci nazvanou "Zobrazit všechny slevy". Tato operace zobrazí všechny slevy, které jsou aktuálně spuštěny v obchodě. Operaci "Zobrazit všechny slevy" lze mapovat na tlačítko na pokladním místě (POS) a toto tlačítko lze přidat na stránku **Vítejte** nebo na stránku **Transakce**. Následující ilustrace znázorňuje příklad otevřené stránky **Všechny slevy**.
 
-![Stránka Všechny slevy.](./media/View_all_discounts.png "Stránka Všechny slevy")
+![Stránka Všechny slevy](./media/View_all_discounts.png "Stránka Všechny slevy")
 
 Chcete-li zobrazit slevy, systém vyhledá všechny slevy, které odpovídají jedné nebo více z následujících podmínek:
 
@@ -61,11 +64,8 @@ Následující ilustrace znázorňují logiku, která určuje, které slevy se z
 
 Na následujícím obrázku je znázorněna logika, která se používá v případě, že je řízení souběžnosti nastaveno na **Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami**.
 
-![Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami.](./media/Model_1.png "Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami").
+![Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami](./media/Model_1.png "Logika pro Nejlepší cena a složená v prioritě, nikdy neskládat napříč prioritami").
 
 Na následujícím obrázku je znázorněna logika, která se používá v případě, že je řízení souběžnosti nastaveno na **Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou**.
 
-![Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou.](./media/Model_2.png "Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou").
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou](./media/Model_2.png "Logika pro Nejlepší cena pouze v rámci priority, vždy skládat napříč prioritou").

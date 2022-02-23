@@ -2,12 +2,15 @@
 title: Vylepšení v řízení hotovosti
 description: Toto téma popisuje vylepšení řízení hotovosti v POS pro Dynamics 365 Commerce.
 author: anpurush
+manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735647"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410748"
 ---
 # <a name="cash-management-improvements"></a>Vylepšení v řízení hotovosti
 
@@ -59,6 +62,3 @@ Ve verzi 10.0.3 aplikace Retail a novějších jsou rovněž poskytnuty následu
 - Pokud se při odsouhlasení nevyrovnává vybraná transakce, uživatel musí zadat popis důvodu nevyrovnaného odsouhlasení. Uživatelé mohou vybrat jednu transakci a odsouhlasit ji s odpovídajícím popisem důvodu podle potřeby.
 - Uživatelé mohou pokračovat v odsouhlasení a zrušení odsouhlasení transakcí, dokud není směna uzavřena. Po uzavření směny nelze zrušit odsouhlasení transakcí.
 - Když se uživatel rozhodne uzavřít směnu, aplikace Commerce ověří, zda ve směně neexistují žádné neodsouhlasené transakce řízení hotovosti. Uživatelé nemohou uzavřít směnu, pokud existují transakce, u nichž bylo zrušeno odsouhlasení.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

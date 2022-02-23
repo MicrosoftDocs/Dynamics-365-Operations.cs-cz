@@ -48,6 +48,3 @@ Chcete-li získat podporu pro samostatnou aplikaci Onboard, použijte zdroje v n
 | Nahlaste problém. | V pravém horním rohu stránky vyberte tlačítko **Nápověda** (**?**) a poté vyberte možnost **Nahlásit problém**. Zadejte popis problému a přidejte svou e-mailovou adresu, pokud chcete dále reagovat na ohlášený problém. |
 | Získejte nápovědu k dotazům týkajících se licencí aplikace Talent. | Obraťte na partnera nebo prodejce společnosti Microsoft. |
 | Požadavek na nové funkce a funkcionality v aplikaci Onboard. | Vyberte tlačítko **Nápověda** (**?**) a pak vyberte **Nápady.** Můžete také navštívit [Nápad k aplikaci Dynamics 365 Talent: Onboard](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard), které vám pomohou zobrazit, vyhledat nebo hlasovat pro existující nápady nebo přidat nové nápady. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

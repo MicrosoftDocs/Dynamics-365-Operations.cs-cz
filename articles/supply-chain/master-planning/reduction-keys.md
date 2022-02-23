@@ -1,27 +1,30 @@
 ---
 title: Redukční klíče prognózy
 description: Toto téma obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570818"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423685"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
@@ -86,18 +89,7 @@ V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky 
 
 ### <a name="transactions--reduction-key"></a>Transakce – redukční klíč
 
-Pokud nastavíte pole **Metoda používaná ke snížení požadavků na prognózy** do *Transakce - redukční klíč*, požadavky na prognózu jsou sníženy o transakce kvalifikované poptávky, ke kterým dochází během období definovaných redukčním klíčem.
-
-Kvalifikovaná poptávka je definována polem **Snížit předpověď o** na stránce **Skupiny pokrytí**. Pokud nastavíte pole **Snížit předpověď o** na *Objednávky*, pouze transakce prodejní objednávky jsou považovány za kvalifikovanou poptávku. Pokud ho nastavíte na *Všechny transakce*, všechny transakce se zásobami nesouvisející s mezipodnikovými emisemi jsou považovány za kvalifikovanou poptávku. Nastavte možnost **Zahrnout mezipodnikové objednávky** na *Ano*, pokud by měly být zahrnuty mezipodnikové objednávky, když je prognóza snížena.
-
-Snížení prognózy začíná prvním (nejranějším) záznamem prognózy poptávky v klíčovém období redukce. Pokud je množství kvalifikovaných skladových transakcí větší než množství řádků prognózy poptávky ve stejném klíčovém období redukce, použije se zůstatek množství transakcí zásob ke snížení množství prognózy poptávky v předchozím období (pokud existuje nespotřebovaná prognóza).
-
-Pokud v předchozím klíčovém období redukce nezůstane žádná nespotřebovaná prognóza, bude v následujícím měsíci použito množství inventárních transakcí ke snížení množství prognózy (pokud existuje nespotřebovaná prognóza).
-
-Hodnota pole **Procento** na řádcích redukčních klíčů se nepoužívá, když je pole **Metoda používaná ke snížení požadavků na prognózy** nastaveno na *Transakce - redukční klíč*. K definování období redukčního klíče se používají pouze data.
-
-> [!NOTE]
-> Jakákoli prognóza zveřejněná k dnešnímu datu nebo před ním bude ignorována a nebude použita k vytváření plánovaných objednávek. Pokud je například vaše prognóza poptávky na měsíc vygenerována 1. ledna a spustíte hlavní plánování, které zahrnuje prognózy poptávky na 2. ledna, výpočet bude ignorovat řádek prognózy poptávky s datem 1. ledna.
+Pokud zvolíte **Transakce – redukční klíč**, požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
 
 #### <a name="example-transactions--reduction-key"></a>Příklad: Transakce – redukční klíč
 
@@ -207,7 +199,7 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
 1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
-2. Zvolte **Nový** pro vytvoření redukčního klíče.
+2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 
@@ -235,6 +227,3 @@ Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamick
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

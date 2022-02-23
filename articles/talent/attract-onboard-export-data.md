@@ -113,5 +113,3 @@ Stahování je soubor zip, který obsahuje:
 ## <a name="see-also"></a>Viz také
 
 [Vyřazení aplikací Dynamics 365 Talent: Attract a Dynamics 365 Talent: Onboard](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

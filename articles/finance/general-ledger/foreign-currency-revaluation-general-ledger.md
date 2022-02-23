@@ -2,25 +2,28 @@
 title: Přecenění cizí měny pro hlavní knihu
 description: Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
 author: kweekley
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49f724eb31904c7fd745864c9d71f401a4d539e29b5ff01814334adf6f0ebc37
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771649"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4441323"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
@@ -81,7 +84,7 @@ Hlavní účet je přeceněn dne 31. ledna  Nerealizovaný zisk nebo ztráta se 
 
 | Aktuální zůsatek v měně transakce | Aktuální zůstatek v zúčtovací měně | Směnný kurz při přecenění | Nová částka v zúčtovací měně | Nerealizovaný zisk/ztráta    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 ztráta (833,33 – 1000) |
 
 Bude vytvořena následující účetní položka.
 
@@ -110,6 +113,3 @@ Výsledek přecenění mimo pořadí dat lze zrušit, ale může být nutné zm�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

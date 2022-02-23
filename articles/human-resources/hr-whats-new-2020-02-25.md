@@ -1,32 +1,33 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (25. února 2020)
 description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 25. únoru 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f8a8795b1af59339e920281ffc46139fb9c45e2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1302686aeba52de484ad520efe292fafefc39ebf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061194"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526803"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (25. února 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.2927. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Lifecycle Services (LCS) pro referenci.
 
@@ -54,15 +55,15 @@ S touto změnou se zobrazí upozornění, pokud se pokusíte odstranit pozici a 
 
 Tato změna opravuje problém, kdy se do hodnocení výkonu přidávali další odhlášení účastníci.
 
-## <a name="worker-position-assignment-not-created-in-dataverse-when-selected-on-the-new-worker-dialog-413479"></a>Přiřazení pozice pracovníka není vytvořeno v Dataverse, když je tato možnost vybrána v dialogovém okně Nový pracovník (413479)
+## <a name="worker-position-assignment-not-created-in-common-data-service-when-selected-on-the-new-worker-dialog-413479"></a>Přiřazení pozice pracovníka není vytvořeno v Common Data Service, když je tato možnost vybrána v dialogovém okně Nový pracovník (413479)
 
-Tato změna opravuje problém při zařazení nového pracovníka a jeho přiřazení k pozici prostřednictvím dialogového okna **Nový pracovník**. Nyní se přiřazení pozice projeví v Dataverse.
+Tato změna opravuje problém při zařazení nového pracovníka a jeho přiřazení k pozici prostřednictvím dialogového okna **Nový pracovník**. Nyní se přiřazení pozice projeví v Common Data Service.
 
 ## <a name="coming-soon"></a>Již brzy
 
-### <a name="updated-dataverse-solution"></a>Aktualizované řešení služby Dataverse
+### <a name="updated-common-data-service-solution"></a>Aktualizované řešení služby Common Data Service
 
-Nové řešení Dataverse bude brzy k dispozici po provedení následujících změn:
+Nové řešení Common Data Service bude brzy k dispozici po provedení následujících změn:
 
 | Popis | Změna |
 | ----------------------------------------- | --- |
@@ -73,9 +74,9 @@ Nové řešení Dataverse bude brzy k dispozici po provedení následujících z
 | Nové entity nastavení s nastavením variabilní kompenzace | **Typ plánu variabilní kompenzace**</br>**Plán variabilní kompenzace**</br>**Pravidla připsání**</br>**Úroveň plánu variabilní kompenzace** |
 | Nová entita **Zaměstnání dle kalendáře pracovníka** | Byla přidána **entita pracovního kalendáře** |
 | Nová entita **Mzdové podrobnosti o pozici** | Byla přidána položka **Mzdové podrobnosti o pozici**. |
-| Nová entita **Pozice** | Byla přidána položka **Pozice**. Nová entita **Nadpis** bude zahrnuta do procesu synchronizace mezi lidskými zdroji a Dataverse. Na počátku nebude odkazovat z entit **Pracovní pozice** nebo **Úloha**. |
+| Nová entita **Pozice** | Byla přidána položka **Pozice**. Nová entita **Nadpis** bude zahrnuta do procesu synchronizace mezi lidskými zdroji a Common Data Service. Na počátku nebude odkazovat z entit **Pracovní pozice** nebo **Úloha**. |
 
-Během příštích několika týdnů budou tyto změny entit k dispozici ve všech prostředích. Postup při ruční instalaci nejnovějšího řešení Dataverse pro Human Resources:
+Během příštích několika týdnů budou tyto změny entit k dispozici ve všech prostředích. Postup při ruční instalaci nejnovějšího řešení Common Data Service pro Human Resources:
 
 1.  Přejděte do [Centra pro správu Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -102,8 +103,6 @@ Od 3. února 2020 budou k dispozici následující ukázkové funkce:
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

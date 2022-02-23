@@ -2,27 +2,30 @@
 title: Konfigurace rozhraní pro provádění výrobního provozu
 description: Toto téma popisuje, jak vytvořit jednu nebo více konfigurací rozhraní pro provádění výrobního provozu. Když otevřete rozhraní pro provádění výrobního provozu, automaticky načte vybranou konfiguraci a filtr úloh, které jsou specifické pro prohlížeč a zařízení. V konfiguraci nastavíte zásady, které musí být použitelné pro konkrétní použití.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777954"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664289"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Pracovníci v dílně používají rozhraní pro provádění výrobního provozu pro registraci denní práce, například když zahajují práci, poskytnutí zpětné vazby k úlohám, registraci nepřímých aktivit a hlášení nepřítomnosti. Tyto registrace jsou základem pro sledování průběhu a nákladů výrobních zakázek a pro výpočet základu pro odměny pracovníků.
 
@@ -39,47 +42,28 @@ Samotné rozhraní pro provádění výrobního provozu a několik volitelných 
 
 ### <a name="the-production-floor-execution-interface"></a>Rozhraní pro provádění výrobního provozu
 
-Toto je primární funkce popsaná v tomto tématu. Od verze Supply Chain Management 10.0.21 je ve výchozím nastavení zapnuta. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+Toto je primární funkce popsaná v tomto tématu. Přidává rozhraní pro provádění výrobního provozu do vašeho systému. Chcete-li ji povolit, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
 - Provádění výrobního provozu
 
 ### <a name="generate-license-plates"></a>Generování registračních značek
 
 Tyto funkce zpřístupňují funkčnost registrační značky pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
-1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
+1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
 1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
 
 ### <a name="print-labels"></a>Tisknout štítky
 
 Tyto funkce zpřístupňují funkčnost tisku štítku pro rozhraní provádění výrobního provozu. Chcete-li tyto funkce použít, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
-1. Do zařízení úkolového lístku byla přidána registrační značka pro hlášení o dokončení (od verze Supply Chain Management verze 10.0.21 je tato funkce ve výchozím nastavení zapnuta).
+1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
 1. Vytisknout štítek ze zařízení úkolového lístku
 
 ### <a name="allow-locking-the-touch-screen"></a>Povolení uzamčení dotykové obrazovky
 
-Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Přidává tlačítko do rozhraní provádění výrobního provozu, které umožňuje pracovníkům dezinfikovat dotykovou obrazovku. Chcete-li ji použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tato funkce přidává tlačítko do rozhraní provádění výrobního provozu, které umožňuje pracovníkům dezinfikovat dotykovou obrazovku. Chcete-li ho použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
-
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkce správy majetku pro rozhraní provádění výrobního provozu
-
-Tato funkce přidává kartu správy majetku do rozhraní pro spuštění výrobního provozu. Pracovníci mohou na této kartě vybrat majetek, který je připojen ke zdroji stroje, který je ve vybraném filtru seznamu úloh. U vybraného majetku stroje může pracovník zobrazit stav a stav majetek z hodnot čítače až pro čtyři vybrané čítače. Chcete-li tuto funkci použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Funkce správy majetku pro rozhraní provádění výrobního provozu
-
-### <a name="enable-job-search"></a>Povolit hledání úloh
-
-Tato funkce umožňuje přidat vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu. Chcete-li ho použít, zapněte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Vyhledávání práce pro rozhraní ke spuštění výrobního provozu
-
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivace hlášení koproduktů a vedlejších produktů
-
-Tato funkce umožňuje pracovníkům používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech. Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Zpráva o vedlejších a souběžných produktech z rozhraní pro provádění výrobního provozu
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 
@@ -90,8 +74,6 @@ Chcete-li vytvořit a udržovat konfigurace zařízení, přejděte na **Řízen
 
 Dále nakonfigurujte různá nastavení pro vybranou konfiguraci zařízení. K dispozici jsou následující pole:
 
-- **Pouze označení příchodu a odchodu** - Nastavte tuto možnost na *Ano* k vytvoření zjednodušeného rozhraní, které poskytuje pouze funkci označení příchodu a odchodu. Tím se deaktivuje většina ostatních možností na této stránce. Než tuto možnost povolíte, musíte odstranit všechny řádky ze záložky s náhledem **Výběr karty**.
-- **Povolit vyhledávání** - Nastavte tuto možnost na *Ano*. chcete-li zahrnout vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu.
 - **Hlášení množství při odchodu** – Nastavením možnosti na *Ano* vyzvete pracovníky, aby nahlásili zpětnou vazbu o probíhajících úlohách při odchodu. Při nastavení na *Ne* k tomu pracovníci nebudou vyzváni.
 - **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne*, pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Zařízení se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano*, pracovníci zůstanou přihlášení k zařízení úkolového lístku. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco zařízení úkolového lístku nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
 - **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne*, místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano*, pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano*, kde pracovníci často zůstávají přihlášeni delší dobu.
@@ -112,6 +94,3 @@ Dávková úloha pravidelně čistí položky v referenční tabulce pro zaříz
 1. V podokně Akce vyberte **Vyčištění konfigurací klienta**.
 1. V dialogovém okně **Vyčištění konfigurace klienta** nastavte pole **Počet dní** na počet dní (zpětně), které je třeba zvážit. Odeberete všechny konfigurace a záznamy přihlášení pro zařízení, která nebyla během této doby aktivní.
 1. Volbou **OK** vyčistíte příslušné konfigurace na základě nastavení **Počet dní**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

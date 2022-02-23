@@ -2,25 +2,28 @@
 title: Konfigurace parametrů leasingu (Preview)
 description: Toto téma popisuje nastavení konfigurace pro leasing majetku, například informace o zabezpečení a nastavení účetnictví.
 author: moaamer
-ms.date: 01/11/2022
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a644b3c9d9ed4fc86a816af1ab338b96b1aa7ad
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: f71006570cd8f2bdc0385388eae0800cd29d3ec8
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968070"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441358"
 ---
 # <a name="configure-lease-parameters"></a>Konfigurace parametrů leasingu
 
@@ -39,11 +42,7 @@ Chování leasingu majetku ovlivňuje několik nastavení konfigurace. Tato nast
 
     Pokud nastavíte tuto možnost na **Ano** a typ přechodu knihy je **Možnost kumulativní opravy A nebo B**, systém nastaví pole **Přírůstková výpůjční úroková sazba** na hodnotu **Přírůstková výpůjční úroková sazba při přechodu** na stránce **Nastavení knihy**. Pokud je tato možnost nastavena na **Ne**, sazba předního leasingu je nastavena na hodnotu **Přírůstková výpůjční proková sazba** na stránce **Podrobnosti o knize** bez ohledu na typ přechodu knihy.
 
-4. Nastavte možnost **Povolit stornování odpisů v uzavřené knize** na **Ano**, aby bylo možné stornovat transakce odpisových výdajů. Transakce výdajů lze stornovat, i když je kniha uzavřena.
+4. Nastavte možnost **Povolit stornování odpisů ve verzi uzavřené knihy** možnost **Ano**, aby bylo možné stornovat transakce odpisových výdajů. Transakce výdajů lze stornovat, i když je kniha uzavřena.
 
     > [!NOTE]
     > Doporučujeme ponechat tuto možnost nastavenou na **Ne**. Nastavení této možnosti se používá jako ověření a kontrola, aby se zabránilo náhodnému odepsání verze uzavřené knihy. Ponecháním možnosti nastavenou na **Ne** pomůžete udržet přesnou zůstatkovou účetní hodnotu a přesné výpočty budoucích odpisů.
-
-5. Nastavte možnost **Povolit rozdělení částky platby** na **Ano**, aby byl možný rozpis částek plateb na pevné záložce **Řádky splátkového kalendáře** ze stránky **Leasing**. Typy členění plateb jsou definovány v části **Nastavení** na stránce **Typy plateb částek**. 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

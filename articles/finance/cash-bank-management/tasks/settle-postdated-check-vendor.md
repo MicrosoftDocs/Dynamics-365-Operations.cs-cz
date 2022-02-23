@@ -2,23 +2,26 @@
 title: Vyrovnání postdatovaného šeku pro dodavatele
 description: Vyrovnejte postdatovaný šek vydaný dodavateli, když banka provedla transakci šeku poté, co byl šek v prodlení a vyřízen bankou.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6b7755c3c3d092692dde6582a8d4ba74f00b10a95ba82a2782e3dad34d28e7b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee66bdb93d1252486efc7be25adeb6ee7cc6ce05
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728048"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441219"
 ---
 # <a name="settle-a-postdated-check-for-a-vendor"></a>Vyrovnání postdatovaného šeku pro dodavatele
 
@@ -49,6 +52,3 @@ Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společn
 10. Klikněte na možnost Doklad.
 11. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,30 +1,33 @@
 ---
 title: Nastavení účetních profilů dlouhodobého majetku
-description: Tento postup ukazuje, jak nastavit účetní profily dlouhodobého majetku.
-author: moaamer
+description: Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.
+author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883761"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441220"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Nastavení účetních profilů dlouhodobého majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup ukazuje, jak nastavit účetní profily dlouhodobého majetku. Příklady uvedené v tématu jsou určeny pro základní účetní profil, i když účetní profily je nutné vytvořit pro vaši konkrétní účtovou osnovu a požadavky na finanční výkazy.
+Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Využívá účetní role a ukázková data pro právnické osoby USMF.  Příklady uvedené v průvodci úkolem jsou určeny pro základní účetní profil, i když účetní profily je nutné vytvořit pro vaši konkrétní účtovou osnovu a požadavky na finanční výkazy.
 
 1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Nastavení > Účetní profily dlouhodobého majetku**.
 2. Klepněte na možnost **Nový**.
@@ -120,6 +123,3 @@ Tento postup ukazuje, jak nastavit účetní profily dlouhodobého majetku. Př�
 88. Zadejte požadované hodnoty do pole **Hlavní účet**.
 89. Zadejte požadované hodnoty do pole **Protiúčet**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

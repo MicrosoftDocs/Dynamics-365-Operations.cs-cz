@@ -1,33 +1,31 @@
 ---
 title: Konfigurace typů pracovního volna a absence
 description: Nastavte typy volna, které mohou zaměstnanci provést v aplikaci Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 09/09/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76b8661c4c6d8fe6cf0568be966f1652b95b5442
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417605"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurace typů pracovního volna a absence
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Typy pracovního volna v Dynamics 365 Human Resources definují různé typy absence, které může zaměstnanec ohlásit. Typy pracovního volna můžete přizpůsobit podle potřeb dané organizace. Příklady popisů typů pracovního volna:
 
@@ -68,53 +66,19 @@ Typy pracovního volna v Dynamics 365 Human Resources definují různé typy abs
 
 1. Nastavte možnosti zaokrouhlení pro typ pracovního volna. Možnosti zahrnují **Žádný** **Nahoru**, **Dolů** a **Nejbližší**. Můžete také nastavit přesnost zaokrouhlení pro typ pracovního volna.
 
-2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, počet svátků, které spadají do pracovního dne, bude použit k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
+2. Nastavte **Oprava volna** pro typ pracovního volna. Pokud vyberete tuto možnost, aplikace Human Resources použije počet svátků, které spadají do pracovního dne k určení, jakým způsobem má být rozlišen volný čas u tohoto typu pracovního volna. Pokud například 1. svátek vánoční připadá na pondělí, odečte aplikace Human Resources při zpracování časového rozlišení od typu pracovního volna jeden den.
 
-   Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md).
+   Svátky nastavujete v kalendáři pracovní doby. Další informace naleznete v tématu [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
    
  3. Nastavte **Typ převodu pracovního volna** pro typ volna. Pokud vyberete tuto možnost, veškeré zůstatky k převodu budou převedeny na zadaný typ volna. Do plánu volna a nepřítomnosti musí být rovněž zahrnut typ převodu volna. 
  
-4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Datum účinnosti oravidla ukončení platnosti se používá k určení, kdy se má spustit dávková úloha, která zpracovává vypršení platnosti volna, nebo datum, kdy se pravidlo projeví. Samotné vypršení platnosti nastane vždy k datu zahájení období časového rozlišení. Například pokud je datem zahájení období časového rozlišení 3. srpna 2021 a pravidlo vypršení platnosti bylo nastaveno na 6 měsíců, bude pravidlo zpracováno na základě offsetu vypršení platnosti od data zahájení období časového rozlišení, takže by bylo provedeno 3. února 2022. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené.
+ 4. Definujte **Pravidla vypršení platnosti** pro typ volna. Když nakonfigurujete tuto možnost, můžete vybrat jednotku dní nebo měsíců a nastavit dobu trvání. Můžete také nastavit datum účinnosti pravidla vypršení platnosti. Jakékoli zůstatky dovolené, které existují v době vypršení platnosti, budou odečteny od typu dovolené a budou zohledněny v zůstatku dovolené. 
  
-## <a name="configure-the-required-attachment-per-leave-type"></a>Nakonfigurujte požadovanou přílohu podle typu dovolené
-
-> [!NOTE]
-> Chcete-li použít pole **Je vyžadována příloha**, musíte nejprve zapnout funkci **Nakonfigurujte požadovanou přílohu pro žádosti o dovolenou** ve Správě funkcí. Další informace o zapnutí funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
-
-1. Na stránce **Dovolená a nepřítomnost** na kartě **Odkazy** v **Nastavení** vyberte **Typy dovolené a nepřítomnosti**.
-
-2. V seznamu vyberte typ dovolené a nepřítomnosti. Pak v sekci **Všeobecné** použijte pole **Je vyžadována příloha** pro určení, zda musí být příloha nahrána, když zaměstnanec odešle nový požadavek na dovolenou pro vybraný typ dovolené. 
-
-Zaměstnanci budou povinni nahrát přílohu, když předloží novou žádost o dovolenou, která má typ dovolené, kde je povoleno pole **Je vyžadována příloha**. Chcete-li zobrazit přílohu, která byla nahrána jako součást žádosti o dovolenou, mohou schvalovatelé žádosti o dovolenou použít možnost **Přílohy** pro pracovní položky, které jsou jim přiřazeny. Pokud k žádosti o dovolenou přistupujete pomocí aplikace Human Resources v Microsoft Teams, možnost **Zobrazit podrobnosti** pro žádost o dovolenou lze použít k zobrazení jejích podrobností a všech příloh.
-
-## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Nakonfigurovat jednotky dovolené (hodiny/dny) podle typu pracovního volna
-
-> [!NOTE]
-> Chcete-li použít funkci jednotek dovolené na typ dovolené, musíte nejprve zapnout funkci **Nakonfigurujte jednotky dovolené pro každý typ dovolené** ve Správě funkcí. Další informace o zapnutí funkcí naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
-
-> [!IMPORTANT]
-> Ve výchozím nastavení typy dovolené v právnické osobě používají jednotky dovolené z konfigurace parametrů dovolené na úrovni právnické osoby.
-> 
-> Jednotku dovolené typu dovolené a nepřítomnosti lze upravit pouze v případě, že pro daný typ dovolené neexistují žádné dovolené.
-> 
-> Poté, co funkci zapnete, ji nelze vypnout.
-
-1. Na stránce **Dovolená a nepřítomnost** na kartě **Odkazy** v **Nastavení** vyberte **Typy dovolené a nepřítomnosti**.
-
-2. V seznamu vyberte typ dovolené a nepřítomnosti. Pak v sekci **Všeobecné** v poli **Jednotka** vyberte jednotku dovolené. Můžete vybrat **Hodiny** nebo **Dny**.
-
-3. Volitelné: Pokud jste vybrali **Hodiny** v poli **Jednotka**, můžete použít pole **Povolit půldenní definici** a určete, zda si zaměstnanci mohou vybrat první půlden nebo druhý půlden volna, pokud žádají o půldenní volno.
-
-Zaměstnanci, kteří podají novou žádost o dovolenou, si mohou pro sestavení žádosti o dovolenou vybrat různé typy dovolené. Všechny typy dovolené, které jsou vybrány jako součást jednoho požadavku na dovolenou, by však měly mít stejnou jednotku dovolené. Zaměstnanci mohou zobrazit jednotku dovolené pro každý typ dovolené ve formuláři **Žádost o volno**.
-
+ 
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Vytvoření plánu pracovního volna a absence](hr-leave-and-absence-plans.md)
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
 - [Přerušit pracovní volno](hr-leave-and-absence-suspend-leave.md)
-- [Vytvoření pracovního postupu žádosti o koupi a prodej pracovního volna](hr-leave-and-absence-buy-sell-workflow.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

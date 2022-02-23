@@ -1,10 +1,12 @@
 ---
 title: Nákupní smlouvy
 description: V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570476"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017180"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -102,13 +104,12 @@ Když vytvoříte mezipodnikovou nákupní objednávku používající mezipodni
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Finanční dimenze nákupních smluv
 Můžete kopírovat finanční dimenze do záhlaví dokladů nebo jednotlivých řádků nákupní smlouvy. Pokud změníte dimenze v záhlaví smlouvy nebo na řádku smlouvy, neovlivní tato změna žádnou z již uvolněných objednávek, ale projeví se u nových objednávek.
 
-## <a name="additional-resources"></a>Další prostředky
+<a name="additional-resources"></a>Další zdroje
+--------
 
-- [Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
-- [Použití nákupní smlouvy při tvorbě nákupní objednávky](tasks/create-purchase-release-order-purchase-agreement.md)
+[Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
+
+[Vytvoření dílčí nákupní objednávky z nákupní smlouvy](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

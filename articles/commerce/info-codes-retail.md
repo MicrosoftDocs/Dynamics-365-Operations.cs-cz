@@ -2,13 +2,16 @@
 title: Informační kódy a skupiny informačních kódů
 description: Tento článek podává přehled o informačních kódech, skupinách informačních kódů a jejich použití.
 author: mugunthanm
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2f905fda2224da8fd15a287f20339a9bfd1cab992024c195ca040ce2c1c671d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 046204d36e2fc7a69129aaf7fe027b2abc7e8dd9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410773"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Informační kódy a skupiny informačních kódů
 
@@ -53,6 +56,3 @@ Můžete propojit informační kódy tak, aby při spuštění jednoho informač
 **Příklad 2: Propojení informačních kódů se skupinami informačních kódů**
 
 Při prodeji některých produktů, např. mobilních zařízení, chcete vždy shromáždit sadu konkrétních informací, například telefonní číslo, identifikátor mobilního zařízení (MEID) a sériové číslo. Také však chcete získat jiné informace pro tablet a pro mobilní telefon. Lze nastavit skupinu informačních kódů, která zahrnuje výzvy na telefonní číslo, MEID a sériové číslo, a poté propojit skupinu informačních kódů s jednotlivým informačním kódem. Při spuštění informačního kódu specifického pro produkt lze skupinu informačních kódů spustit následně, abyste mohli shromažďovat společná data, aniž by bylo nutné definovat více sad propojených informačních kódů pro každé zařízení.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,29 @@
 ---
 title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
-author: peakerbl
-ms.date: 10/21/2021
-ms.topic: overview
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 11/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071078"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684053"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Použijte pracovní prostor **Správa dat** k vytvoření a správě úloh importu a exportu dat v aplikaci . Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
@@ -71,9 +70,6 @@ Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo
 | XML                    | \-Není k dispozici-                                      | XML-Element XML-Attribute |
 | Oddělené, Pevná šířka | Čárka, středník, tabulátor, svislá čára, dvojtečka | \-Není k dispozici-                     |
 
-> [!NOTE]
-> Je důležité vybrat správnou hodnotu pro **Oddělovač řádků**, **Oddělovač sloupců** a **Textový kvalifikátor**, pokud je možnost **Formát souboru** nastavena na **Oddělené**. Ujistěte se, že vaše data neobsahují znak použitý jako oddělovač nebo kvalifikátor, protože to může způsobit chyby při importu a exportu.
-
 ### <a name="sequence-the-entities"></a>Seřazení entit
 Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export.
 
@@ -112,7 +108,7 @@ Existují dvě zobrazení mapování: **Vizualizace mapování**, což je výcho
 
 Mapování na stránce můžete vygenerovat výběrem možnosti **Generovat mapování zdroje**. Vygenerované mapování se chová jako automatické mapování. Proto je nutné ručně namapovat všechna nenamapovaná pole.
 
-![Mapování dat.](./media/dixf-map.png)
+![Mapování dat](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Ověření zabezpečení pro úlohu import nebo exportu
 Přístup k pracovnímu prostoru **Správa dat** lze omezit, tak, aby uživatelé bez oprávnění správce měli přístup pouze k určitým datovým úlohám. Přístup k úloze dat zahrnuje úplný přístup ke spuštění historie této úlohy a přístup k tabulkám fázování. Proto je třeba se ujistit, že existují příslušný ovládací prvky přístupu při vytváření datové úlohy na místě.
@@ -138,11 +134,11 @@ Spustit úlohu můžete jednou výběrem tlačítka **Importovat** nebo **Export
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ověření, zda byla úloha spuštěna podle očekávání
 Historie úloh je dostupná pro řešení potíží a analýzu na úlohách importu i exportu. Historie spuštění úloh je organizována podle časových rozsahů.
 
-![Rozsahy historie úloh.](./media/dixf-job-history.md.png)
+![Rozsahy historie úloh](./media/dixf-job-history.md.png)
 
 Spuštění každé úlohy poskytuje následující podrobnosti:
 
-- Podrobnosti o provádění
+- Podrobnosti o spuštění
 - Protokol provádění
 
 Podrobnosti o spuštění zobrazují stav každé datové entity, kterou úloha zpracovala. Díky tomu můžete rychle vyhledat následující informace:
@@ -167,7 +163,19 @@ Chcete-li urychlit import dat, lze souběžné zpracování importu povolit, pok
     - Do pole **Počet záznamů prahové hodnoty pro import** zadejte počet záznamů prahové hodnoty pro import. Určuje počet záznamů, které mají být zpracovány podprocesem. Má-li soubor 10 000 záznamů, bude počet záznamů 2500 s počtem úkolů 4 znamenat, že v každém podprocesu bude zpracováno 2500 záznamů.
     - Do pole **Počet úkolů importu** zadejte počet úkolů importu. Tato hodnota nesmí přesáhnout maximální počet dávkových podprocesů přidělených pro dávkové zpracování v **Správa systému \> Konfigurace serveru**.
 
-## <a name="job-history-clean-up"></a>Čištění historie úloh 
+## <a name="clean-up-the-staging-tables"></a>Vyčištění tabulek fázování
+Od aktualizace platformy 29 se tato funkce již nepoužívá. Je nahrazena novou verzí funkce Vyčištění historie úloh, která je vysvětlena níže.
+
+Můžete vyčistit tabulky fázování pomocí funkce **Vyčištění fázování** v pracovním prostoru **Správa dat**. Chcete-li zvolit, jaké záznamy by měly být odstraněny z konkrétní tabulky fázování, můžete použít následující možnosti:
+
+- **Entita** – Pokud je zadaná pouze entita, všechny záznamy z této tabulky fázování se odstraní. Zvolte tuto možnost, abyste vyčistili všechna data z entity napříč všemi datovými projekty a všemi úlohami.
+- **ID úlohy** – Je-li zadáno pouze ID úlohy, všechny záznamy pro všechny entity ve zvolené úloze se odstraní z příslušných tabulek fázování.
+- **Datové projekty** – Pokud je vybrán datový projekt, budou odstraněny všechny záznamy pro všechny entity a napříč všemi úlohami pro zvolený datový projekt.
+
+Také můžete kombinovat možnosti pro další omezení sady záznamů, která je odstraněna.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Vyčištění historie úloh (k dispozici v aktualizaci platformy 29 a novější)
+
 Funkce vyčištění historie úlohy ve správě dat musí být použita k naplánování pravidelného mazání historie provedení. Tato funkce nahrazuje předchozí funkci Vyčištění pracovní tabulky, která je nyní zastaralá. Následující tabulky budou vyčištěny procesem vyčištění.
 
 -   Všechny tabulky fází
@@ -203,10 +211,16 @@ Při plánování procesu čištění je nutné zadat následující parametry d
 > [!NOTE]
 > Nejsou-li záznamy v pracovních tabulkách zcela vyčištěny, zkontrolujte, zda je naplánováno spuštění úlohy čištění. Jak bylo vysvětleno výše, při jakékoli čisté realizaci bude úloha čistit pouze tolik ID spuštění, kolik je možné v zadaných maximálních hodinách. Chcete-li pokračovat v čištění všech zbývajících záznamů fázování, je nutné naplánovat pravidelné spouštění úlohy.
 
-## <a name="job-history-clean-up-and-archival"></a>Úklid historie a archivace 
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Vyčištění a archivace historie úloh (k dispozici jako preview v aktualizaci platformy 39 nebo verzi 10.0.15)
 Funkce vyčištění a archivace historie úloh nahradí předchozí verze funkce vyčištění. Tato část vysvětluje tyto nové funkce.
 
-Jednou z hlavních změn ve funkci čištění je použití dávkové úlohy systému k vyčištění historie. Použití dávkové úlohy systému umožňuje finančním a provozním aplikacím mít automaticky naplánovanou a spouštěnou dávkovou úlohu vyčištění, jakmile je systém připraven. Dávkové úlohy již není nutné ručně plánovat. V tomto výchozím režimu provádění bude dávková úloha spuštěna každou hodinu počínaje půlnocí a zachová si historii provádění za posledních 7 dní. Vymazaná historie je archivována pro budoucí načtení. Počínaje verzí 10.0.20 je tato funkce vždy zapnutá.
+Jednou z hlavních změn ve funkci čištění je použití dávkové úlohy systému k vyčištění historie. Použití dávkové úlohy systému umožňuje aplikacím Finance and Operations mít automaticky naplánovanou a spouštěnou dávkovou úlohu vyčištění, jakmile je systém připraven. Dávkové úlohy již není nutné ručně plánovat. V tomto výchozím režimu provádění bude dávková úloha spuštěna každou hodinu počínaje půlnocí a zachová si historii provádění za posledních 7 dní. Vymazaná historie je archivována pro budoucí načtení.
+
+> [!NOTE]
+> Protože je tato funkce zatím v preview, dávková úloha systému neodstraní žádnou historii provádění, dokud nebude povolena prostřednictvím testovací verze úlohy DMFEnableExecutionHistoryCleanupSystemJob. Až bude funkce obecně k dispozici v budoucím vydání, nebude testo testovací verze vyžadována a dávková úloha systému začne čistit a archivovat na základě definovaného plánu, až bude systém připraven, jak je vysvětleno výše. 
+
+> [!NOTE]
+> V budoucím vydání budou předchozí verze funkce vyčištění odebrány z aplikací Finance and Operations.
 
 Druhou změnou v procesu čištění je archivace vymazané historie provádění. Úloha vyčištění archivuje odstraněné záznamy do úložiště objektů blob, které DIXF používá pro běžné integrace. Archivovaný soubor bude ve formátu balíčku DIXF a bude k dispozici po dobu 7 dnů v objektu blob, během kterého bude možné jej stáhnout. Výchozí životnost archivovaného souboru 7 dní lze v parametrech změnit na maximálně 90 dní.
 
@@ -229,6 +243,3 @@ Chcete-li stáhnout archivovanou historii spuštění, přejděte do pracovního
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

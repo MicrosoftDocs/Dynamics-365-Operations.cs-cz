@@ -2,13 +2,16 @@
 title: Rozložení obrazovky ukázkových dat Modern POS (MPOS) a Cloud POS
 description: Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761655"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4410939"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Rozložení obrazovky ukázkových dat Modern POS (MPOS) a Cloud POS
 
@@ -33,13 +36,13 @@ Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta s
 
 Vzorová rozvržení obrazovky zahrnutá v ukázkových datech Commerce poskytují obsah, který je optimalizován pro různé maloobchodní segmenty, role pracovníků skladu a zařízení. Jedno rozvržení může obsahovat několik velikostí rozvržení a kombinací mřížek tlačítek, aby se zajistilo pokrytí pro případy, kdy se zaměstnanci obchodu pohybují mezi zařízeními a stanicemi. Toto téma zdůrazňuje rozdíly mezi těmito rozloženími, operace, které tato rozložení poskytují, a celkovou uživatelskou zkušenost.
 
-![Rozvržení ukázkových dat mezi zařízeními.](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Rozvržení ukázkových dat mezi zařízeními](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Podrobný rozbor ID rozvržení obrazovky
 
 Chcete-li nalézt rozvržení obrazovky, přejděte na **Retail a Commerce** \> **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
 
-![Stránka rozložení obrazovky.](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Stránka rozložení obrazovky](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 ID rozložení obrazovky může obsahovat maximálně 10 znaků. ID je řetězec, který se skládá ze tří částí informací, v tomto pořadí:
 
@@ -53,7 +56,7 @@ ID rozložení obrazovky může obsahovat maximálně 10 znaků. ID je řetězec
 |--------|-----------------|
 | A      | Adventure Works |
 | F      | Fabrikam        |
-| K      | Contoso         |
+| o      | Contoso         |
 
 ### <a name="layout-version"></a>Verze rozvržení
 
@@ -79,7 +82,7 @@ F4MGR
 
 Následující obrázek znázorňuje příklad uvítací obrazovky manažera obchodu Fabrikam.
 
-![Uvítací obrazovka pro manažera obchodu Fabrikam.](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Uvítací obrazovka pro manažera obchodu Fabrikam](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Velikosti rozvržení
 
@@ -108,7 +111,7 @@ Následující tabulka zobrazuje velikosti rozvržení, které jsou k dispozici 
 > [!TIP]
 > POS automaticky vybere velikost rozvržení, v závislosti na nejbližší velikosti, která je k dispozici pro rozlišení obrazovky aktuálního okna aplikace. Pokud chcete nalézt ID rozvržení obrazovky a rozlišení rozvržení, která jsou aktuálně používána v Modern POS (MPOS) nebo v Retail Cloud POS (CPOS), otevřete stránku **Nastavení** a nahlédněte do části **Informace o relaci**. Můžete také vidět skutečné rozlišení okna vaší aktuální aplikace nebo rámce prohlížeče. Jakmile máte tyto informace, lze vyhledat zdroj obsahu rozvržení přechodem na **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
 
-![Rozvržení obrazovky a rozlišení rozvržení/velikosti v aplikaci Commerce a v POS.](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Rozvržení obrazovky a rozlišení rozvržení/velikosti v aplikaci Commerce a v POS](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Společnosti a značky
 
@@ -129,19 +132,19 @@ Následující obrázky ukazují příklady uvítací stránky a stránky transa
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Uvítací stránka ukázkových dat pro Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Uvítací stránka ukázkových dat pro společnost Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Stránka transakcí ukázkových dat pro Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Stránka transakcí ukázkových dat pro společnost Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Uvítací stránka ukázkových dat pro Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Uvítací stránka ukázkových dat pro společnost Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Stránka transakcí ukázkových dat pro Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Stránka transakcí ukázkových dat pro společnost Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Rozvržení ukázkových dat pro společnost Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Rozvržení ukázkových dat pro společnost Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Matice přihlášení uživatele
 
@@ -168,11 +171,8 @@ Pro různá rozvržení obrazovky byli zadáni uživatelé. Pomocí následujíc
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Nastavení srážkové daně
 description: Toto téma vysvětluje, jak nastavit srážkovou daň.
 author: twheeloc
+manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2fbe2343a56210bfbed01c7d39ebb8c98829e32952fa1037a3ae0845776be064
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfa1b9e43a5745eb5b5c442998597319f196f23f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768260"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441066"
 ---
 # <a name="set-up-withholding-tax"></a>Nastavení srážkové daně
 
@@ -46,6 +49,3 @@ Toto téma vysvětluje, jak nastavit srážkovou daň. *Srážková daň* je da�
 18. Zvolte **Uložit**.
 19. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

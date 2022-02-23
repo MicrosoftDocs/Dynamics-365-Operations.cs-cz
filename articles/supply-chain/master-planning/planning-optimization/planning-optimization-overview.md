@@ -2,25 +2,29 @@
 title: Přehled optimalizace plánování
 description: Toto téma obsahuje přehled optimalizace plánování.
 author: ChristianRytt
+manager: tfehr
 ms.date: 10/31/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983435"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423594"
 ---
 # <a name="planning-optimization-overview"></a>Přehled optimalizace plánování
 
@@ -32,7 +36,7 @@ Chcete-li použít optimalizaci plánování, je nutné nainstalovat doplněk pr
 
 Na následujícím obrázku je znázorněna výhoda spuštění optimalizace plánování během pracovní doby.
 
-![Výhoda spuštění optimalizace plánování během pracovní doby.](media/PlanningOptimization1.png)
+![Výhoda spuštění optimalizace plánování během pracovní doby](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Zlepšení výkonu
 
@@ -61,7 +65,7 @@ Pokud dojde k odinstalaci doplňku optimalizace plánování, budou všechna sou
 
 Následující obrázek znázorňuje tok dat.
 
-![Tok dat pro spuštění regenerace.](media/PlanningOptimization2.png)
+![Tok dat pro spuštění regenerace](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>Související prostředky
 
@@ -74,6 +78,3 @@ Následující obrázek znázorňuje tok dat.
 [Použití filtrů v plánu](plan-filters.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

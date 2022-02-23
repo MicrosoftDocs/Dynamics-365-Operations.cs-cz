@@ -93,6 +93,3 @@ Možnost sledování volna zaměstnanců a pochopení toho, jak se počítá vol
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Označení typu instance při zřizování aplikace Talent
 
 Při zřizování nové instance aplikace Talent budete moci označit, zda je typem instance **Produkční** nebo **Sandbox**, což umožňuje včasné testování nových funkcí. Všechny existující instance aplikace Talent budou aktualizovány na typ produkční instance. Chcete-li, aby byla jedna z existujících instancí aktualizována na typu instance sandbox, obraťte se na podporu a inicializujte požadavek na změnu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

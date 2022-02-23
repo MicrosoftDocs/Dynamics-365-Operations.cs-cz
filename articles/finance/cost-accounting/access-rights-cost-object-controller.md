@@ -2,13 +2,16 @@
 title: Přístupová práva kontrolorů objektu nákladů
 description: Toto téma poskytuje informace o přístupových právech pro kontrolory objektů nákladů.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c30a7c2765647aad17a475ba8705b8e688d166593adf242fcd15d90e49334189
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd1ed875e5c6e3f8ada3b13ea8cc05f98526691d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441190"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Přístupová práva kontrolorů objektu nákladů
 
@@ -62,8 +65,9 @@ Následující příklad ukazuje, jak může vypadat hierarchie dimenzí.
 
 Můžete použít pevnou záložku **Uživatelé** v návrháři hierarchie, abyste vložili jedno nebo více ID uživatele na každém uzlu.
 
-|             Uzly                 | Uživatelé            | Z členu dimenze     |   Člen do dimenze   |
+|                                   | Uživatelé            | Rozsahy členu dimenze   |                         |
 |-----------------------------------|------------------|---------------------------|-------------------------|
+| **Uzly**                         | **ID uživatele**      | **Od členu dimenze** | **Po člen dimenze** |
 | Organizace                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Správce                 | Duben            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
@@ -94,14 +98,11 @@ Nastavení pro hierarchii přístupového seznamu se používají ke kontrole da
     - Vizualizace dat Power BI, které jsou vloženy do klienta Dynamics 365 Finance
 
 > [!IMPORTANT]
-> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Toto téma popisuje požadavky, které musí být splněny před použitím pracovního prostoru **Řízení nákladů**.
 
 Další zdroje
 
 - [Pracovní prostor kontroly nákladů](cost-control-workspace.md)
 - [Hierarchie dimenzí](dimension-hierarchy.md)
-- [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)

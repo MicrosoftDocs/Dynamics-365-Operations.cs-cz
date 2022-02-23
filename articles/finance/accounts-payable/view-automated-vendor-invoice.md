@@ -2,9 +2,11 @@
 title: Zobrazení výsledků automatizace faktur dodavatelů (náhled)
 description: Toto téma vysvětluje, jak zobrazit stav dodavatelských faktur, které jsou v automatizovaném procesu odesílání do pracovního postupu.
 author: abruer
+manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e7ec69177cdb4f6304b75016963f4111bbfde6ed975d66ffa702426a68dce640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728954"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969719"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Zobrazení výsledků automatizace faktur dodavatele
 
@@ -35,6 +37,3 @@ Pokud importovaná faktura podléhá procesu odeslání do pracovního postupu, 
 - **Pozastaveno** – Automatizované procesy definované na stránce **Parametry závazků** proběhly, ale nejméně jeden krok procesu selhal. Stav **Pozastaveno** se použije také v případě, že je pole **Zahrnout do automatizovaného zpracování** nastaveno na **Ne**. Selhání si můžete prohlédnout výběrem volby **Zobrazit poslední výsledky**.
 - **V pracovním postupu** – Importovaná faktura byla odeslána do systému pracovního postupu, a to buď automatizovaným procesem odeslání do pracovního postupu, nebo ručně.
 - **Pracovní postup dokončen** – Proces u importované faktury byl dokončen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

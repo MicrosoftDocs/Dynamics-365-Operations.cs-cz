@@ -2,13 +2,16 @@
 title: Pracovní prostor řízení nákladů
 description: Toto téma obsahuje informace o pracovním prostoru řízení nákladů. Tento pracovní prostor je centrálním místem, kde vedoucí pracovníci, kteří jsou zodpovědní za kontrolu objektu nákladů nebo sady objektů nákladů v rámci dimenze nebo napříč dimenzemi, mohou přistupovat k sestavám.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763183"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441380"
 ---
 # <a name="cost-control-workspace"></a>Pracovní prostor řízení nákladů 
 
@@ -116,7 +119,7 @@ Pracovní prostor **Řízení nákladů** je navržen jako webová sestava. Prot
 
 Seznam sestav, které jsou k dispozici pro uživatele, jako jsou například vedoucí pracovníci, je řízen nastavením možnosti **Publikováno** na stránce **Konfigurace pracovního prostoru řízení nákladů**.
 
-![Sestava, kterou uživatelé mohou zobrazit v pracovním prostoru řízení nákladů.](./media/report-cost-control.png)
+![Sestava, kterou uživatelé mohou zobrazit v pracovním prostoru řízení nákladů](./media/report-cost-control.png)
 
 Manažer může vybrat období fiskálního kalendáře, které chcete zobrazit. K určení výchozího aktuálního období se používá datum relace.
 
@@ -140,7 +143,7 @@ Dva grafy zobrazují souhrn skutečných a rozpočtových hodnot a odchylku rozp
 
 Uživatelé mohou kliknout na **Položky nákladů** a procházet podrobnosti položek podle potřeby.
 
-![Položky nákladů.](./media/cost-entries.png)
+![Položky nákladů](./media/cost-entries.png)
 
 Například nájemné je výdaj rozdělený do nákladových středisek. Uživatel, který chce porozumět nákladům na nájemné, které musí nést jeho nákladové středisko, může procházet podrobnosti a vidět, jak bylo nájemné vypočítáno.
 
@@ -148,13 +151,10 @@ Pokud uživatelé kliknou na volbu **Základ přidělení** na stránce **Polož
 
 V následujícím příkladu je základ přidělení typu **Základ přidělení vzorce** a je zobrazen vzorec. Jsou uvedeny koeficienty, které definují vzorec. Kromě toho mřížka zobrazí výpočet, který se provádí podle objektu nákladů.
 
-![Výpočty podle objektu nákladů.](./media/cost-entries-allocation-base.png)
+![Výpočty podle objektu nákladů](./media/cost-entries-allocation-base.png)
 
-Další prostředky 
+Další zdroje 
 
 [Definování přístupových práv pro kontrolory objektů nákladů](access-rights-cost-object-controller.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

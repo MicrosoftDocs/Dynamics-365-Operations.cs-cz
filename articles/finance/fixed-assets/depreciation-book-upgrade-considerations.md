@@ -1,37 +1,38 @@
 ---
 title: Přehled upgradu knihy odpisů
-description: Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů.
-author: moaamer
+description: V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek, oceňovací modely a knihy odpisů.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.custom:
-- "221624"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eaa47b47a93deda24a6c76572881d1e5bba29c52
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: efa1b492fec085cc8bac5a786af4aaba854899e5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985076"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441075"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Přehled upgradu knihy odpisů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje aktuální funkce knihy v dlouhodobém majetku. Tato funkce je založena na dřívější funkcí oceňovacího modelu, která byla k dispozici ve starších verzích, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. Funkce modelu hodnoty a knihy odpisů byly sloučeny do jednoho konceptu, který je označován jako kniha. Funkce knihy vám umožňuje používat jedinou sadu stránek, dotazů a sestav pro všechny procesy dlouhodobého majetku vaší organizace. Toto téma obsahuje některé věci, které byste měli zvážit před upgradem. 
+V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. V aplikaci Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho koncept, který je označován jako kniha. Toto téma obsahuje informace, které je třeba zvážit pro upgrade. 
 
-Proces upgradu přesune vaše existující nastavení a všechny existující transakce na novou účetní strukturu. Oceňovací modely zůstanou, jaké momentálně jsou, tedy jako knihy, které se účtují do hlavní knihy. Knihy odpisů budou přesunuty do knihy, která má možnost Zaúčtovat do hlavní knihy nastavenu na Ne. Názvy deníku knihy odpisů budou přesunuty do názvu deníku hlavní knihy s účtovací vrstvou nastavenou na Žádná. Transakce knihy odpisů budou přesunuty na transakce dlouhodobého majetku.
+Proces upgradu přesune vaše existující nastavení a všechny existující transakce na novou účetní strukturu. Oceňovací modely zůstanou, jaké momentálně jsou, tedy jako knihy, které se účtují do hlavní knihy. Knihy odpisů budou přesunuty do knihy, která má možnost **Zaúčtovat do hlavní knihy** nastavenu na **Ne**. Názvy deníku knihy odpisů budou přesunuty do názvu deníku hlavní knihy s účtovací vrstvou nastavenou na **Žádná**. Transakce knihy odpisů budou přesunuty na transakce dlouhodobého majetku. 
 
-Před spuštěním upgradu dat byste se měli seznámit se dvěma možnostmi dostupnými pro upgradování řádku deníků knihy odpisů na transakční doklady a s číselnou řadou, která se bude používat pro řadu dokladů.
+Před spuštěním upgradu dat byste se měli seznámit se dvěma možnostmi dostupnými pro upgradování řádku deníků knihy odpisů na transakční doklady a s číselnou řadou, která se bude používat pro řadu dokladů. 
 
 Možnost 1:  **číselné řady definované systémem** – výchozí možnost pro optimalizaci výkonu upgradu. Upgrade nebude používat systém číselných řad, ale namísto toho bude přidělovat doklady podle sad. Po upgradu bude vytvořena nová číselná řada s **další sadou čísel** odpovídajícím způsobem na základě upgradovaných transakcí. Použitá číselná řada bude ve výchozím nastavení ve formátu FADBUpgr\#\#\#\#\#\#\#\#\#. Při použití tohoto přístupu je k dispozici několik parametrů pro úpravu formátu:
 
@@ -42,19 +43,19 @@ Možnost 1:  **číselné řady definované systémem** – výchozí možnost p
     -   Název konstanty: **NumberSequenceDefaultParameterPrefix**
     -   Výchozí hodnota: "FADBUpgr"
 -   **Délka alfanumerické řady** – délka alfanumerického segmentu číselné řady.
-    -   Název konstanty: **NumberSequenceDefaultParameterAlpanumericLength**
+    -   Název konstanty: **NumberSequenceDefaultParameterAlpanumericLength **
     -   Výchozí hodnota: 9
 -   **Počáteční číslo** – první číslo pro použití v číselné řadě.
-    -   Název konstanty: **NumberSequenceDefaultParameterStartNumber**
+    -   Název konstanty: **NumberSequenceDefaultParameterStartNumber  **
     -   Výchozí hodnota: 1
 
 Možnost 2: **Existující uživatelem definovaná číselná řada** – tato možnost vám umožní definovat číselnou řadu, která má být použita pro upgrade. Zvažte použití této možnosti, pokud potřebujete pokročilou konfiguraci číselné řady. Pokud chcete použít číselnou řadu, je nutné změnit třídu pro upgrade ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans pomocí následujících informací
 
 -   **Kód číselné řady** – kód číselné řady.
-    -   Název konstanty: **NumberSequenceExistingCode**
+    -   Název konstanty: **NumberSequenceExistingCode **
     -   Výchozí hodnota: žádná výchozí hodnota, musíte aktualizovat na kód číselné řady.
 -   **Sdílená číselná řada** – logická hodnota k identifikaci v rámci číselné řady. Pro sdílené číselné řady ve všech společnostech použijte hodnotu true a pro rozsah specifický pro společnost hodnotu false. Použijete-li false, číselná řada se zadaným názvem musí existovat v každé společnosti, která obsahuje transakce knihy odpisů. Sdílené číselné řady existují v každém oddílu obsahujícím transakce knihy odpisů.
-    -   Název konstanty: **NumberSequenceExistingIsShared**
+    -   Název konstanty: **NumberSequenceExistingIsShared **
     -   Výchozí hodnota: true
 
 Parametry jsou umístěny na začátku třídy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
@@ -82,6 +83,3 @@ S každým přístupem bude skript pro upgrade dat používat také číselnou �
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

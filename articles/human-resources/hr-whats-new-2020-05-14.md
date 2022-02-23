@@ -1,42 +1,43 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (14. května 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 14. květnu 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063740"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528490"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (14. května 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3244. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory pro referenci v Lifecycle Services (LCS).
 
 ## <a name="platform-changes"></a>Změny platformy
 
-Změny platformy jsou součástí vydání tohoto týdne. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.10 finančních a provozních aplikací (květen 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Tato verze obsahuje opravy chyb a změny uložených zobrazení.
+Změny platformy jsou součástí vydání tohoto týdne. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.10 aplikací Finance and Operations (květen 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Tato verze obsahuje opravy chyb a změny uložených zobrazení.
  
-## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Zajistěte, že rozevírací seznamy Dataverse jsou shodné s výčty volna (436343)
+## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Zajistěte, že rozevírací seznamy Common Data Service jsou shodné s výčty volna (436343)
 
-Rozevírací seznamy Dataverse jsou nyní shodné s výčty volna.
+Rozevírací seznamy Common Data Service jsou nyní shodné s výčty volna.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Umožněte uživatelům konfigurovat pracovní postup žádosti o volno na základě požadované délky (300044)
 
@@ -74,7 +75,7 @@ Tato změna opravuje chybu, pokud má plán pracovního volna přiřazené dva t
 
 Při této změně je banner Začínáme skryt pro uživatele, kteří nejsou správci systému nebo správci dat. 
 
-## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Entita adresy pracovníka v Dataverse pracuje odlišně, pokud jde o data účinnosti data v Human Resources (425071)
+## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Entita adresy pracovníka v Common Data Service pracuje odlišně, pokud jde o data účinnosti data v Human Resources (425071)
 
 Tato změna udržuje informace o adrese v souladu v určitých scénářích na základě údajů adresy.
 
@@ -115,8 +116,6 @@ Můžete určit typ převodu pracovního volna do dalšího období pro převod 
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

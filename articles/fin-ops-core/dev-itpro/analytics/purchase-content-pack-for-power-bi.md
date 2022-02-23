@@ -1,10 +1,12 @@
 ---
 title: Analýza obsahu výdajů na nákup v Power BI
-description: Toto téma popisuje, co je součástí obsahu analýzy nákupu a výdajů v Power BI.
+description: Toto téma popisuje, co je součástí obsahu analýzy nákupu a výdajů v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 author: FrankDahl
+manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716105"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680607"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu výdajů na nákup v Power BI
 
@@ -152,6 +154,3 @@ Následující klíčové dimenze v obsahu se používají jako filtry k rozděl
 | Data                  | Data, Posun o rok                                    |
 
 Ve výchozím nastavení obsah zobrazuje data pro aktuální kalendářní rok. Můžete však změnit filtr dat v části filtrů sestavy. Můžete také změnit filtr společnosti.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

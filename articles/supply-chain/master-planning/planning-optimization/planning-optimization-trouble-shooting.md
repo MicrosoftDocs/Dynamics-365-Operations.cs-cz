@@ -2,13 +2,16 @@
 title: Řešení potíží s optimalizací plánování
 description: Toto téma popisuje, jak vyřešit problémy, s nimiž se můžete při práci s optimalizací plánování setkat.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: bbf21abae60d4adee5a23a8405d14907b91724fa2cbf31c901bb46c589b2ea49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768088"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423593"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Řešení potíží s optimalizací plánování 
 
@@ -47,6 +50,12 @@ Optimalizace plánování se v některých oblastech liší od vestavěného hla
 
 **Oprava**: Spusťte analýzu přizpůsobení optimalizace plánování a poté analyzujte výsledky a porozumění dopadu s odkazem na související dokumentaci. Další informace naleznete v tématu [Analýza shody optimalizace plánování](planning-optimization-fit-analysis.md)
 
+## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Hlavní plánování nerespektuje ochrannou dobu pokrytí
+
+To je způsobeno čekající funkcí pro optimalizaci plánování.
+
+**Oprava**: Dokud nebude k dispozici čekající funkce, filtrujte nebo odstraňte plánované objednávky a odstraňte návrhy dodávek mimo ochrannou dobu pokrytí.
+
 ## <a name="cant-enable-planning-optimization"></a>Nelze povolit optimalizaci plánování
 
 **Stav připojení** musí být **Připojeno** před nastavením možnosti **Použít optimalizaci plánování** na **Ano**. Další informace naleznete v tématu [Začínáme s optimalizací plánování](get-started.md)
@@ -66,6 +75,3 @@ Souvisí to s čekající funkcí, která je plánována jako součást podpory 
 [Začínáme s optimalizací plánování](get-started.md)
 
 [Analýza přizpůsobení pro optimalizaci plánování](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,45 +1,78 @@
 ---
 title: Interní majetek pro údržbu
-description: Toto téma popisuje, jak můžete použít Microsoft Dynamics 365 Field Service k obsluze aktiv zákazníků i interních aktiv.
+description: V tomto tématu je popsán způsob použití služby Microsoft Dynamics 365 Field Service k poskytnutí servisu pro majetek zákazníka i interního majetku.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781409"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683998"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interní majetek pro údržbu
 
 [!include [banner](../../includes/banner.md)]
 
+
+
 Aplikace Microsoft Dynamics 365 Field Service je navržena pro poskytnutí servisu majetku zákazníků. Správa majetku pro Dynamics 365 Supply Chain Management je navržena pro údržbu interního majetku. Integrace těchto dvou aplikací umožňuje používat službu Field Service k poskytnutí servisu pro majetek zákazníků i interního majetku. Můžete také klasifikovat majetek na základě funkčního umístění nebo hierarchie a sledovat servis na podrobné úrovni.
 
-Další informace naleznete v tématu [Integrace řešení Dynamics 365 Field Service a Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
+Další informace naleznete v tématu [Integrace řešení Dynamics 365 Field Service a Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Šablony
 
 Interní majetek zahrnuje kolekci základních map tabulek, které pracují společně během interakce s daty zákazníka, jak je uvedeno v následující tabulce.
 
-| Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
+| Aplikace Finance and Operations | Modelem řízené aplikace v Dynamics 365 | popis |
 |-----------------------------|-----------------------------------|-------------|
-[Správa majetku – modely životního cyklu majetku](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
-[Správa majetku – stavy životního cyklu majetku](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
-[Správa majetku – typy majetku](mapping-reference.md#124) | msdyn_customerassetcategories | |
-[Správa majetku – majetek](mapping-reference.md#125) | msdyn_customerassets | |
-[Správa majetku – funkční místa – modely životního cyklu](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
-[Správa majetku – funkční místa – stavy životního cyklu](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
-[Správa majetku – typy funkčních míst](mapping-reference.md#137) | msdyn_functionallocationtypes | |
-[Správa majetku – funkční místa](mapping-reference.md#136) | msdyn_functionallocations | |
-[Správa majetku – výrobci](mapping-reference.md#153) | msdyn_manufacturers | |
-[Správa majetku – modely](mapping-reference.md#154) | msdyn_models | |
-[Správa majetku – záruka](mapping-reference.md#209) | msdyn_warranties | |
+| Správa majetku – modely životního cyklu majetku | msdyn\_assetlifecyclemodels | |
+| Správa majetku – stavy životního cyklu majetku | msdyn\_assetlifecyclestates | |
+| Správa majetku – majetek | msdyn\_customerassets | |
+| Správa majetku – typy majetku | msdyn\_customerassetcategories | |
+| Správa majetku – funkční místa – modely životního cyklu | msdyn\_functionallocationlifecyclemodels | |
+| Správa majetku – funkční místa – stavy životního cyklu | msdyn\_functionallocationlifecyclestates | |
+| Správa majetku – funkční místa | msdyn\_functionallocations | |
+| Správa majetku – typy funkčních míst | msdyn\_functionallocationtypes | |
+| Správa majetku – výrobci | msdyn\_manufacturers | |
+| Správa majetku – modely | msdyn\_models | |
+| Správa majetku – záruka | msdyn\_warranties | |
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
+
+[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
+
+[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
+
+[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
+
+[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
+
+[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
+
+[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
+
+[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
+
+[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
+
+[!include [models](includes/AssetManagementModels-msdyn-models.md)]
+
+[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]

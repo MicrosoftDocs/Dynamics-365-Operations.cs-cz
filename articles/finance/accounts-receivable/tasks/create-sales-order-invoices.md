@@ -1,36 +1,39 @@
 ---
 title: Vytváření faktur prodejních objednávek
-description: Toto téma popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování.
+description: Tento průvodce úkolem popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: c504ef36f61613c7aa7db5a1e5ddba6e69cd7285
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394603"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441285"
 ---
 # <a name="create-sales-order-invoices"></a>Vytváření faktur prodejních objednávek
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování. Tato procedura používá ukázkovou společnost USMF.
+Tento průvodce úkolem popisuje zásady fakturace prodejní objednávky, včetně sloučení faktur a dávkového zpracování. Tato procedura používá ukázkovou společnost USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Vytvoření faktury z prodejní objednávky
 1. Přejděte na **Navigační podokno > Moduly > Pohledávky > Objednávky > Dodáno ale bez vyfakturovaných prodejních objednávek**.
 2. Vyberte ze seznamu prodejní objednávku. 
-3. V **Podokně akcí** klikněte na **Faktura > Generovat > Faktura**. Všimněte si, že tato prodejní objednávka má přidruženo více dodacích listů. Zde se zobrazí pouze slovo *více* namísto čísla dodacího listu.  
+3. V **Podokně akcí** klikněte na **Faktura > Generovat > Faktura**. Všimněte si, že tato prodejní objednávka má přidruženo více dodacích listů. Zde se zobrazí pouze slovo <multiple> namísto čísla dodacího listu.  
 4. Rozbalte sekci **Parametry**.
     - Zaúčtování musí být pro zaúčtování faktury nastaveno na hodnotu Ano. Lze také vypnout zaúčtování fakturu pouze vytisknout. Stejného výsledku však lze dosáhnout pomocí vytvoření faktury proforma namísto faktury.  
     - Tato možnost se využívá pro dávkové úlohy. Dotaz se spustí při spuštění dávkové úlohy.
@@ -65,6 +68,3 @@ Toto téma popisuje zásady fakturace prodejní objednávky, včetně sloučení
 10. Klepněte na možnost **Zrušit**.
 11. Klepněte na tlačítko **Ano**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

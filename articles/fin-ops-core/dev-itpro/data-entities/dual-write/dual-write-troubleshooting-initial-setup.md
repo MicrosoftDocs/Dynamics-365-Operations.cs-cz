@@ -1,91 +1,90 @@
 ---
 title: Poradce při potížích s počáteční instalací
-description: Toto téma obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
+description: Toto téma obsahuje informace o řešení potíží, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061460"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685579"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Poradce při potížích s počáteční instalací
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně obsahuje informace, které vám mohou pomoci vyřešit problémy, které mohou nastat při počátečním nastavení integrace dvojího zápisu.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nemůžete propojit finanční a provozní aplikaci do Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Nemůžete propojit aplikaci Finance and Operations s Dataverse
 
-**Požadovaná role pro nastavení dvojitého zápisu**: Správce systému v finančních a provozních aplikacích a prostředí Dataverse.
+**Požadovaná role pro nastavení dvojitého zápisu:** Správce systému v aplikacích Finance and Operations a prostředí Dataverse.
 
 Chyby na stránce **Nastavení odkazu na Dataverse** jsou obvykle způsobeny neúplnými problémy s nastavením nebo oprávněními. Zajistěte, aby celá kontrola stavu prošla na stránce **Nastavení odkazu na Dataverse**, jak je znázorněno na následujícím obrázku. Nemůžete propojit dvojí zapisování, pokud celý stav nepřechází na kontrolu stavu.
 
-![Úspěšná kontrola stavu.](media/health_check.png)
+![Úspěšná kontrola stavu](media/health_check.png)
 
-Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance a Operace a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
+Musíte mít pověření správce klienta Azure AD, chcete-li propojit prostředí Finance and Operations a Dataverse. Po propojení prostředí se uživatelé mohou přihlásit pomocí svých pověření účtu a aktualizovat existující mapu tabulek.
+
+## <a name="error-when-you-open-the-link-to-dataverse-page"></a>Chyba při otevření odkazu na stránku Dataverse
+
+**Požadovaná pověření pro opravu problému:** Správce klienta Azure AD
+
+Může se zobrazit následující chybová zpráva při otevření stránky **Odkaz na Dataverse** v aplikaci Finance and Operations:
+
+*Stavový kód odpovědi neoznačuje úspěch: 404 (Nenalezeno).*
+
+K této chybě dojde v případě, že nedojde k dokončení kroku souhlasu. Chcete-li ověřit, zda byl krok souhlasu vyplněn, přihlaste se k portal.Azure.com pomocí účtu správce klienta Azure AD a zjistěte, zda se aplikace třetí strany s ID **33976c19-1db5-4c02-810e-c243db79efde** zobrazí v seznamu Azure AD **Podnikové aplikace**. Pokud tomu tak není, musíte zadat souhlas s aplikací.
+
+Chcete-li poskytnout souhlas s aplikací, postupujte podle následujících kroků.
+
+1. Otevřete následující adresu URL pomocí vašich pověření správce. Měli byste být vyzváni k zadání souhlasu.
+
+    <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
+
+2. Výběrem **Přijmout** označíte, že udělujete souhlas s instalací aplikace, která má ID **33976c19-1db5-4c02-810e-c243db79efde** ve vašem klientovi.
+
+    > [!TIP]
+    > Tato aplikace je požadována pro propojení aplikací Dataverse a Finance and Operations. Pokud máte s tímto krokem potíže, otevřete prohlížeč v anonymním režimu (v aplikaci Google Chrome) nebo v režimu InPrivate (v Microsoft Edge).
+
+## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Ověřte, zda jsou při propojování správně nastaveny data společnosti a týmy s duálním zápisem
+
+Chcete-li zajistit správnou funkci dvojího zapisování, budou v prostředí Dataverse vytvořeny společnosti, které vyberete během konfigurace. Ve výchozím nastavení jsou tyto společnosti určeny jen pro čtení a vlastnost **IsDualWriteEnable** je nastavena na **True**. Kromě toho se vytvoří výchozí vlastník organizační jednotky a tým, který obsahuje název společnosti. Před povolením map se ujistěte, zda je zadán výchozí vlastník týmu. Chcete-li najít entitu **Společnosti (CDM\_Společnost)**, postupujte podle následujících kroků.
+
+1. V aplikaci řízené modelem v produktu Dynamics 365 vyberte filtr v pravém horním rohu.
+2. V rozevíracím seznamu vyberte **Společnost**.
+3. Výsledky zobrazíte výběrem možnosti **Spustit**.
+4. Vyberte společnost, která byla propojena při konfiguraci dvojího přepisu.
+5. Ověřte, zda má pole **Výchozí vlastnící tým** hodnotu. Na následujícím obrázku je pole **Výchozí vlastnící tým** nastaveno na **USMF dvojí zápis**.
+
+    ![Ověřování výchozího vlastnícího týmu](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Najít limit počtu právnických osob nebo společností, které lze propojit s dvojím zapisováním
 
 Při pokusu o povolení map se může zobrazit následující chybová zpráva:
 
-*Chyba dvojího zápisu – registrace modulu plug-in se nezdařila: [(nelze získat mapu oddílu pro projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Chyba překračuje maximální počet povolených oddílů pro mapování DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)]. Došlo k jedné nebo více chybám.*
+*Chyba dvojího zápisu – registrace modulu plug-in se nezdařila: \[(nelze získat mapu oddílu pro projekt DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Chyba překračuje maximální počet povolených oddílů pro mapování DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. došlo k jedné nebo více chybám.*
 
 Aktuální limit při propojení prostředí je přibližně 40 právnických osob. K této chybě dojde, pokud se pokusíte povolit mapy a mezi prostředími je propojeno více než 40 právnických osob.
-
-## <a name="connection-set-failed-while-linking-environment"></a>Při propojování prostředí se sada připojení nezdařila
-
-Při propojení prostředí se duálním zápisem se akce nezdaří s chybovou zprávou:
-
-*Uložení sady připojení se nezdařilo! Položka se stejným klíčem již byla přidána.*
-
-Duální zápis nepodporuje více právnických osob/společností se stejným názvem. Pokud máte například dvě společnosti s názvem „DAT“ v Dataverse, pak se zobrazí tato chybová zpráva.
-
-Chcete-li zákazníka odblokovat, odeberte duplicitní záznamy z tabulky **cdm_company** v Dataverse. Také, pokud tabulka **cdm_company** obsahuje záznamy s prázdným názvem, odeberte nebo opravte tyto záznamy.
-
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Chyba při otevírání stránky dvojitého zápisu v finančních a provozních aplikacích
-
-Při pokusu o propojení prostředí Dataverse pro duální zápis se může zobrazit následující chybová zpráva:
-
-*Stavový kód odpovědi neoznačuje úspěch: 404 (Nenalezeno).*
-
-K této chybě dojde v případě, že nedojde k dokončení kroku souhlasu aplikace. Pokud byl souhlas poskytnut, můžete ověřit přihlášením k `portal.azure.com` pomocí účtu správce klienta a kontrolou, zda se aplikace třetí strany s ID `33976c19-1db5-4c02-810e-c243db79efde` zobrazí v seznamu podnikových aplikací AAD. Pokud ne, spusťte znovu krok souhlasu, jak je popsáno v další části.
-
-### <a name="providing-app-consent"></a>Poskytnutí souhlasu aplikace
-
-+ Spusťte následující adresu URL pomocí vašich pověření správce.
-
-    `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
-
-+ Vyberte **Přijmout** pro souhlas. Poskytujete souhlas s instalací aplikace (s `id=33976c19-1db5-4c02-810e-c243db79efde`) ve vašem klientovi.
-+ Tato aplikace je vyžadována pro komunikaci Dataverse s finančními a provozními aplikacemi.
-
-    ![Poradce při potížích s počáteční instalací](media/Initial-sync-setup-troubleshooting-1.png)
-
-> [!NOTE]
-> Pokud to nefunguje, spusťte URL v soukromém režimu Microsoft Edge nebo inkognito režimu Chrome.
-
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Prostředí Finance a Operace není zjistitelné
-
-Může se zobrazit následující chybová zpráva:
-
-*Prostředí finančních a provozních aplikací \*\*\*.cloudax.dynamics.com nelze zjistit.*
-
-Existují dvě věci, které mohou způsobit problém s tím, že prostředí nelze zjistit:
-
-+ Uživatel použitý pro přihlášení není ve stejném klientovi jako instance Finance a Operace.
-+ Existují určité starší instance Finance a Operace hostované společností Microsoft, které měly problém se zjišťováním. Chcete-li to opravit, aktualizujte instanci Finance a Operace. Prostředí se stane zjistitelným po každé aktualizaci.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

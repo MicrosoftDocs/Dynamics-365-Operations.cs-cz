@@ -2,27 +2,30 @@
 title: Návrh rozhraní pro provádění výrobního provozu
 description: Toto téma popisuje, jak navrhnout obsah uživatelského rozhraní pro každou konfiguraci.
 author: johanhoffmann
+manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
+ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790859"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664265"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Návrh rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Můžete navrhnout obsah uživatelského rozhraní pro každou konfiguraci používanou rozhraním pro provádění výrobního provozu. Například pracovníci v jedné pracovní buňce možná budou muset být schopni otevřít pracovní pokyny ve výrobním provozu, zatímco v jiné pracovní buňce nejsou pokyny potřeba. V takovém případě by měly být vytvořeny dvě konfigurace, jedna s tlačítkem pro otevírání příloh dokumentů a druhá bez tohoto tlačítka.
 
@@ -32,7 +35,7 @@ Na stránce **Konfigurace provádění výrobního provozu** můžete vytvářet
 
 Každá karta je rozdělena do čtyř částí, jak je znázorněno na následujícím obrázku.
 
-![Rozložení karty.](media/pfe-tab-layout.png "Rozložení karty")
+![Rozložení karty](media/pfe-tab-layout.png "Rozložení karty")
 
 Na obrázku jsou zobrazeny následující prvky:
 
@@ -43,31 +46,31 @@ Na obrázku jsou zobrazeny následující prvky:
 
 Chcete-li vytvořit a konfigurovat novou kartu, postupujte dle těchto kroků:
 
-1. Přejděte do nabídky **Řízení výroby \> Nastavení \> Provádění výroby \> Konfigurace provádění výrobního provozu**.
+1. Přejděte na **Řízení výroby &gt; Nastavení &gt; Provádění výroby**.
 
 1. Vyberte **Návrh karet** na panelu akcí a otevřete stránku **Návrh karet**.
 
-    ![Stránka Návrh karet.](media/pfe-design-tabs.png "Stránka Návrh karet")
+    ![Stránka Návrh karet](media/pfe-design-tabs.png "Stránka Návrh karet")
 
 1. V podokně akcí zvolte **Nový**.
 
 1. V záhlaví stránky proveďte následující nastavení:
 
-    - **Název karty** – Zadejte název karty.
-    - **Hlavní zobrazení** – Vyberte z předdefinovaných seznamů úloh (*Aktivní úlohy*, *Všechny úlohy* a *Můj počítač*).
-    - **Zobrazení podrobností** – Vyberte mezi prázdnou hodnotou nebo **Podrobnosti o úloze**. Pokud vyberete prázdnou hodnotu, na kartě nebude žádné podrobné zobrazení. Pokud vyberete **Podrobnosti o úloze**, podrobné zobrazení bude obsahovat podrobný popis úlohy vybrané v seznamu úloh v hlavním zobrazení.
+    - **Název karty** - Zadejte název karty.
+    - **Hlavní zobrazení** - Vyberte mezi dvěma předdefinovanými seznamy úloh (*Aktivní úlohy* nebo *Všechny úlohy*).
+    - **Zobrazení podrobností** - Vyberte mezi prázdnou hodnotou nebo **Podrobnosti o úloze**. Pokud vyberete prázdnou hodnotu, na kartě nebude žádné podrobné zobrazení. Pokud vyberete **Podrobnosti o úloze**, podrobné zobrazení bude obsahovat podrobný popis úlohy vybrané v seznamu úloh v hlavním zobrazení.
 
 1. V části **Primární panel nástrojů** vyberte, která tlačítka by měla být k dispozici na primárním panelu nástrojů. Sloupec **Dostupné akce** zobrazuje seznam všech tlačítek, která lze přidat. Sloupec **Vybrané akce** zobrazuje seznam všech tlačítek, která jsou součástí aktuální konfigurace. Pomocí tlačítek mezi sloupci můžete podle potřeby přesouvat vybrané položky mezi sloupci. Použijte tlačítka nahoru a dolů vedle sloupce **Vybrané akce** pro ovládání pořadí, v jakém jsou tlačítka zobrazena v uživatelském rozhraní.
 
-1. V části **Sekundární panel nástrojů** vyberte, která tlačítka by měla být k dispozici na sekundárním panelu nástrojů. Sloupec **Dostupné akce** zobrazuje seznam všech tlačítek, která lze přidat. Sloupec **Vybrané akce** zobrazuje seznam všech tlačítek, která jsou součástí aktuální konfigurace. Pomocí tlačítek mezi sloupci můžete podle potřeby přesouvat vybrané položky mezi sloupci. Použijte tlačítka nahoru a dolů vedle sloupce **Vybrané akce** pro ovládání pořadí, v jakém jsou tlačítka zobrazena v uživatelském rozhraní.
+1. V části **Sekundární** **panel nástrojů** vyberte, která tlačítka by měla být k dispozici na sekundárním panelu nástrojů. Sloupec **Dostupné akce** zobrazuje seznam všech tlačítek, která lze přidat. Sloupec **Vybrané akce** zobrazuje seznam všech tlačítek, která jsou součástí aktuální konfigurace. Pomocí tlačítek mezi sloupci můžete podle potřeby přesouvat vybrané položky mezi sloupci. Použijte tlačítka nahoru a dolů vedle sloupce **Vybrané akce** pro ovládání pořadí, v jakém jsou tlačítka zobrazena v uživatelském rozhraní.
 
 ## <a name="associate-a-tab-with-a-configuration"></a>Přiřazení karty ke konfiguraci
 
 Poté, co jste navrhli všechny karty, které potřebujete, můžete je přidružit ke konfiguraci.
 
-1. Přejděte do nabídky **Řízení výroby \> Nastavení \> Provádění výroby \> Konfigurace provádění výrobního provozu**.
+1. Přejděte do nabídky **Řízení výroby &gt; Nastavení &gt; Konfigurace provádění výrobního provozu**.
 
-    ![Konfigurovat provedení výrobního provozu.](media/pfe-config-prod-floor-execution.png "Konfigurovat provedení výrobního provozu")
+    ![Konfigurovat provedení výrobního provozu](media/pfe-config-prod-floor-execution.png "Konfigurovat provedení výrobního provozu")
 
 1. Na záložce s náhledem **Volba karty** vyberte **Přidat**.
 
@@ -76,6 +79,3 @@ Poté, co jste navrhli všechny karty, které potřebujete, můžete je přidru�
 1. Podle potřeby pokračujte v přidávání dalších karet.
 
 1. Použijte tlačítka **Nahoru** a **Dolů** na panelu nástrojů a uspořádejte karty podle potřeby. Karty se budou zobrazovat zleva doprava v pořadí uvedeném na výše uvedeném snímku obrazovky (karta nahoře je zobrazena vlevo).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Zásady shrnutí nákladů a výpočet režijních nákladů
 description: Toto téma obsahuje informace o tom, jak určit správnou úroveň sekundárních prvků nákladů a vytvořit pravidla shrnutí nákladů, které spadají do výkaznictví organizace a sledovatelnosti nákladů.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779949"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4441321"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -44,7 +47,7 @@ Abyste zabránili těmto důsledkům, nákladové účetnictví vám umožní na
 
 Představte si, že organizace má následující strukturu se čtyřmi nákladovými středisky.
 
-![Příklad organizační struktury.](./media/dimension-hierarchy-org.png)
+![Příklad organizační struktury](./media/dimension-hierarchy-org.png)
 
 **Dimenze objektu nákladů**
 
@@ -69,7 +72,7 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 | Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Ne                    |
+| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Žádný                    |
 
 **Hierarchie dimenzí**
 
@@ -149,7 +152,8 @@ Pravidla přidělení nákladů můžete nastavit následujícím způsobem.
 | CC001                                | Celkem         | **Služby HR**        |
 | CC002                                | Celkem         | **Finanční služby** |
 
-## <a name="brhow-cost-flows-between-cost-centers"></a><br>Tok nákladů mezi nákladovými středisky 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Tok nákladů mezi nákladovými středisky 
+---------------------------------------------------
 
 Pokud chcete zjistit, jaký je tok nákladů mezi nákladovými středisky v organizaci, můžete vytvořit prvky nákladů typu **Sekundární** pro každé nákladové středisko. Tyto prvky nákladů budou poté použity k přenosu zůstatků mezi nákladovými středisky během výpočtu režijních nákladů.
 
@@ -297,6 +301,3 @@ Smazání oddělení mezi **přidělením nákladů** a **zásadami shrnutí ná
 -  [Dimenze prvku nákladů](cost-elements.md)
 -  [Hierarchie dimenzí](dimension-hierarchy.md)
 -  [Výpočet režijních nákladů](overhead-calculation.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

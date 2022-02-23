@@ -2,23 +2,26 @@
 title: Zadání dat faktury do závazků s použitím deníku schválení
 description: Tohle téma popisuje použití registru faktur k vytvoření faktur a použití deníku schválení pro aktualizaci účtů výdajů.
 author: abruer
+manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72b2d7a5a554f46813fb31991ffb3df30742d01bf168b4180a1096970f60998f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 788397b5c9a3f42e373f7cdad256c1ee3d058e57
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722928"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440993"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Zadání dat faktury do závazků s použitím deníku schválení
 
@@ -51,6 +54,3 @@ Tohle téma popisuje použití registru faktur k vytvoření faktur a použití 
 10. Zvolte **Zaúčtovat**.
 11. Výběrem možnosti **Doklad** zobrazte položky, které byly zaúčtovány. Účet Faktury čekající na schválení bude stornován a nahrazen údaji skutečného účtu výdajů.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

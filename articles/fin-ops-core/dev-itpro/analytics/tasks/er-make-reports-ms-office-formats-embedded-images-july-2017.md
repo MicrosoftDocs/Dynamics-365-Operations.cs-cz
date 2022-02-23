@@ -1,10 +1,12 @@
 ---
 title: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-description: Toto téma popisuje proces navrhování konfigurací, které generují elektronické dokumenty ve formátech Excel a Word, které obsahují vestavěné obrázky.
+description: Kroky v tomto tématu popisují informace o navrhování konfigurací elektronického výkaznictví, které generují elektronické dokumenty ve formátech Microsoft Office (Excel a Word) obsahující vložené obrázky.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,27 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a514c5b616d761ef3eb6347e67e645b23eaa1794911775835e77cded4500ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719338"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684395"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
 [!include [banner](../../includes/banner.md)]
 
-K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronické výkaznictví - Vytvoření poskytovatele konfigurace a jeho označení jako aktivního." Tento postup vysvětluje proces navrhování konfigurací elektronického výkaznictví pro generování dokumentů v aplikacích Microsoft Excel nebo Word obsahujících vložené obrázky. V tomto postupu vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tyto kroky lze dokončit pomocí sady dat USMF. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Před přihlášením je také nutné stáhnout a uložit následující soubory: 
-
-| popis                                          | Název souboru                   |
-|------------------------------------------------------|-----------------------------|
-| Konfigurace datového modelu elektronického výkaznictví                          | [Model pro cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)       |
-| Konfigurace formátu elektronického výkaznictví                              | [format.xml pro tisk šeků](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
-| Obrázek loga společnosti                                   | [Company logo.png](https://download.microsoft.com/download/8/2/e/82e6bd81-caac-4e9a-bfce-1392ce7c8616/Companylogo.png)            |
-| Podpisový obrázek                                      | [Signature image.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
-| Alternativní podpisový obrázek                          | [Signature image 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
-| Šablona Microsoft Word pro tisk platebních šeků  | [Cheque template Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
+K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronické výkaznictví - Vytvoření poskytovatele konfigurace a jeho označení jako aktivního." Tento postup vysvětluje proces navrhování konfigurací elektronického výkaznictví pro generování dokumentů v aplikacích Microsoft Excel nebo Word obsahujících vložené obrázky. V tomto postupu vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tyto kroky lze dokončit pomocí sady dat USMF. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Dříve než začnete, stáhněte a uložte soubory uvedené v tématu nápovědy [Vložení obrázků a tvarů v obchodních dokumentech generovaných pomocí elektronického výkaznictví](../electronic-reporting-embed-images-shapes.md). Soubory jsou: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png a Cheque template Word.docx.
 
 ## <a name="verify-prerequisites"></a>Kontrola předpokladů  
  1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.  
@@ -97,6 +90,3 @@ K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronic
  30. Vyberte možnost Ano v poli Povolit vytváření verifikačních transakcí v neaktivních bankovních účtech:.  
  31. Klikněte na položku Uložit.  
  32. Zavřete stránku.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

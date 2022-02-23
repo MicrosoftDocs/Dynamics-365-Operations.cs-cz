@@ -1,36 +1,39 @@
 ---
 title: Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.
 description: Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů z Dynamics 365 Sales do Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063078"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529203"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
@@ -38,7 +41,7 @@ Toto téma se věnuje šablonám a základní úloze, které se používají k s
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales.  Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -63,11 +66,11 @@ Nejsou požadovány žádné úkoly synchronizace, než může dojít k synchron
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Řešení Potenciální zákazník pro hotovost v aplikaci Sales
 
-Sloupec **Číslo účtu** je dostupný na stránce **Účet**. Slouží jako fyzický a jedinečný klíč k podpoře integrace. Přirozená klíčová funkce řešení řízení vztahů se zákazníky (CRM) může mít vliv na zákazníky, kteří již používají sloupec **číslo účtu**, které však nepoužívá jedinečné hodnoty **Číslo účtu** na účet. V současné době nepodporuje řešení integrace tento případ.
+Pole **Číslo účtu** je k dispozici na stránce **Účet**. Slouží jako fyzický a jedinečný klíč k podpoře integrace. Přirozená klíčová funkce řešení řízení vztahů se zákazníky (CRM) může mít vliv na zákazníky, kteří již používají pole **číslo účtu**, které však nepoužívá jedinečné hodnoty **Číslo účtu** na účet. V současné době nepodporuje řešení integrace tento případ.
 
 Když je vytvořen nový účet a pokud hodnota **Číslo účtu** ještě neexistuje, je automaticky generováno pomocí číselné řady. Hodnota se skládá z údaje **ACC** a následně dalšího čísla číselné řady, a pak přípony šest znaků. Tady je příklad: **ACC-01000-BVRCPS**
 
-Při použití řešení integrace prodeje nastaví skript pro upgrade sloupec **číslo účtu** pro existující účty v aplikaci Sales. Pokud neexistují žádné hodnoty pro **Číslo účtu**, použije se číselná řada, která byla zmíněna dříve.
+Při použití řešení integrace prodeje nastaví skript pro upgrade pole **číslo účtu** pole existující účty v aplikaci Sales. Pokud neexistují žádné hodnoty pro **Číslo účtu**, použije se číselná řada, která byla zmíněna dříve.
 
 ## <a name="preconditions-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
@@ -92,14 +95,14 @@ Při použití řešení integrace prodeje nastaví skript pro upgrade sloupec *
 ## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 
 > [!NOTE]
-> Sloupce **Platební podmínky**, **Dopravní podmínky**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou zahrnuty do výchozího mapování. Pokud chcete tyto sloupce mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je tabulka synchronizována.
+> Pole **Platební podmínky**, **Dopravní podmínky**, **Dodací podmínky**, **způsob dopravy** a **způsob dodání** nejsou zahrnuta do výchozího mapování. Pokud chcete tato pole mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je entita synchronizována.
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat. 
 
 > [!NOTE]
-> Mapování ukazuje, jaké informace o sloupci budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
+> Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
 
-![Mapování šablony v integraci dat.](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integraci dat](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Související témata
 
@@ -114,6 +117,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

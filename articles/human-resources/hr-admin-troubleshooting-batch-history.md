@@ -1,32 +1,30 @@
 ---
 title: Optimalizace výkonu pomocí úloh automatického vyčištění
-description: V tomto tématu je vysvětleno, jak zvýšit výkon aplikací Microsoft Dynamics 365 Human Resources vyčištěním historie dávkových úloh.
-author: twheeloc
-ms.date: 08/21/2021
+description: V tomto článku je vysvětleno, jak vyřešit některé problémy s aplikací Microsoft Dynamics 365 Human Resources vyčištěním historie dávkových úloh.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a293b128364b8b0b293da03495d55e46f6b01fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066086"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417578"
 ---
-# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalizace výkonu pomocí úloh automatického vyčištění
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalizace výkonu pomocí úkolů automatického čištění
 
 **Vydání**
 
@@ -44,28 +42,25 @@ Naplánování automatického úkolu vyčištění historie dávkových úloh Do
 
 2. Na panelu **Hledat** zadejte **Vyčištění historie dávkových úloh**.
 
-   ![Vyhledejte vymazání historie dávkové úlohy.](media/talent-batch-history-cleanup-search-bar.png)
+   ![Vyhledejte vymazání historie dávkové úlohy](media/talent-batch-history-cleanup-search-bar.png)
 
 3. V části **Limit historie (dny)** zadejte **30**.
 
-   ![Nastavení limitu historie na 30.](media/talent-batch-history-cleanup-history-limit.png)
+   ![Nastavení limitu historie na 30](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Vyberte možnost **Spustit na pozadí** a vyberte **Opakování**.
 
-   ![Nastavení opakování.](media/talent-batch-history-cleanup-recurrence.png)
+   ![Nastavení opakování](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Ve skupinovém rámečku **definovat opakování** nastavte **Počáteční datum** a **Počáteční čas** mimo pracovní dobu nebo víkend a vyberte možnost **žáDNé DATUM UKONčENí**. 
 
-   ![Definování počátečního data a času opakování.](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definování počátečního data a času opakování](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Ve skupinovém rámečku **VZOREC OPAKOVáNí** vyberte **Dny** a nastavte **OPAKOVAT PO ZADANéM INTERVALU** na **7**.
 
-   ![Nastavení čištění na týdenní opakování.](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Nastavení čištění na týdenní opakování](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Vyberte **OK**.
 
 8. V případě potřeby změňte všechny ostatní parametry v podnabídce **Spustit na pozadí** a pak vyberte **OK**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

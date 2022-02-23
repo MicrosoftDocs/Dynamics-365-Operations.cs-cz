@@ -2,30 +2,35 @@
 title: Práce s předvolbami stylu
 description: Toto téma popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964846"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410851"
 ---
 # <a name="work-with-style-presets"></a>Práce s předvolbami stylu
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak pracovat s předvolbami stylu pracoviště v aplikaci Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Předvolba stylu je uložená sada všech hodnot stylu, které lze tvořit napříč motivem webu. Může být použit k okamžité změně vzhledu webu od tvůrce webu. Předvolby stylů umožňují tvůrcům obchodního webu rychle měnit, zobrazovat náhledy a aktivovat sadu hodnot stylů na svém webu, aniž by museli používat Cascading Style Sheets (CSS) nebo nasazovat motivy. Styly písem, styly tlačítek a barvy webu jsou typickými příklady proměnných stylů, které lze spravovat pomocí předvoleb stylů.
 
@@ -116,11 +121,10 @@ Hodnoty stylu předvolby se aktivují na vašem veřejně přístupném webu.
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 
+[Přidání uvítací zprávy](add-welcome-message.md)
+
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

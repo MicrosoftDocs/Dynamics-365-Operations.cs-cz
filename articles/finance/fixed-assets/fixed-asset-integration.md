@@ -1,26 +1,29 @@
 ---
 title: Integrace dlouhodobého majetku
 description: Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674768"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441140"
 ---
 # <a name="fixed-assets-integration"></a>Integrace dlouhodobého majetku
 
@@ -28,7 +31,8 @@ ms.locfileid: "7674768"
 
 Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
 
-## <a name="general-ledger"></a>Hlavní kniha
+<a name="general-ledger"></a>Hlavní kniha
+--------------
 
 V hlavní knize je obvykle hodnota veškerého dlouhodobého majetku shrnuta do několika hlavních účtů, které jsou nutné pro finanční vykazování. Avšak na stránce **Dlouhodobý majetek** můžete vytvořit mnoho záznamů dlouhodobého majetku. Tyto záznamy mohou zahrnovat informace, jako je například pořizovací cena, odpisy a oceněni. Při každém zaúčtování transakce s dlouhodobým majetkem se aktualizují příslušné hlavní účty. Hlavní účty vždy ukazují aktualizovanou hodnotu dlouhodobého majetku.
 
@@ -91,6 +95,3 @@ Další informace naleznete v tématu [Pořízení majetku pomocí zásobování
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

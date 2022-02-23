@@ -1,79 +1,78 @@
 ---
 title: Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
-description: Tohle téma popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
-author: Mirzaab
-ms.date: 03/24/2021
+description: Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ea8b5e03282aa21aa9dfa486b1deaced6af4601c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565248"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423961"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník.
+Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník. 
 
-## <a name="enable-sample-data"></a>Povolit ukázková data
+Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Před zahájením tohoto průvodce musíte mít potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky. Položky na řádku musí být na skladě a nesmí používat varianty produktu a nesmí obsahovat sledovací dimenze. Položka zároveň musí být přidružena ke skupině dimenzí úložiště, kde jsou aktivní postupy řízení skladu. Sklad, který se používá, musí být povolen pro procesy správy skladu a umístění, které používáte pro příjem, musí být řízeno registrační značkou. V případě, že používáte USMF, můžete k vytvoření nákupní objednávky použít účet společnosti 1001, sklad 51 a položku M9200. 
 
-Chcete-li projít tímto scénářem pomocí ukázkových záznamů a hodnot uvedených v tomto tématu, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data, a než začnete, musíte vybrat právnickou osobu *USMF*.
-
-Místo toho můžete projít tímto scénářem nahrazením hodnot ze svých vlastních dat za předpokladu, že máte k dispozici následující data:
-
-- Musíte mít potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky.
-- Položka na řádku musí být na skladě. Nesmí používat varianty produktu a nesmí mít sledovací dimenze.
-- Položka musí být přidružena ke skupině dimenzí úložiště, která má povolen proces řízení skladu.
-- Sklad, který se používá, musí být povolen pro procesy správy skladu a umístění, které používáte pro příjem, musí být řízeno registrační značkou.
-
-## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Vytvoření záhlaví deníku pro doručení položky, které používá řízení skladu
-
-Následující scénář ukazuje, jak vytvořit záhlaví deníku pro doručení položky, která používá řízení skladu:
-
-1. Ujistěte se, že váš systém obsahuje potvrzenou nákupní objednávku, která splňuje požadavky uvedené v předchozí části. Tento scénář používá nákupní objednávku pro společnost *USMF*, účet dodavatele *1001*, sklad *51* s řádkem objednávky pro *10 PL* (10 palet) čísla položky *M9200*.
-1. Poznamenejte si číslo nákupní objednávky, které ještě použijete.
-1. Přejděte na **Řízení zásob \> Položky deníku \> Doručení položky \> Doručení položky**.
-1. V podokně akcí zvolte **Nový**.
-1. Otevře se dialogové okno **Vytvoření deníku řízení skladu**. V poli **Název** vyberte název deníku.
-    - Používáte-li ukázková data *USMF* vyberte hodnotu *WHS*.
-    - Pokud používáte svá vlastní data, deník, který vyberete, musí mít parametr **Zkontrolovat výdejní skl. místo** nastaven na *Ne* a **Řízení karantény** na *Ne*.
-1. Nastavte **Odkaz** na *Nákupní objednávka*.
-1. Nastavte **Číslo účtu** na *1001*.
-1. Nastavte **Číslo** na číslo nákupní objednávky, které jste identifikovali pro toto cvičení.
-
-    ![Deník doručení položky.](../media/item-arrival-journal-header.png "Deník doručení položky")
-
-1. Vyberte **OK** k vytvoření záhlaví deníku.
-1. V sekci **Řádky deníku** vyberte **Přidat řádek** a zadejte následující údaje:
-    - **Číslo položky** – nastavte na *M9200*. **Lokalita**, **Sklad** a **Množství** se nastaví na základě údajů o transakcích zásob pro 10 palet (1000 kusů).
-    - **Umístění** – Nastavte na *001*. Toto konkrétní umístění nesleduje registrační značky.
-
-    ![Řádek deníku pro doručení položky.](../media/item-arrival-journal-line.png "Řádek deníku pro doručení položky")
-
-    > [!NOTE]
-    > Pole **Datum** určuje datum, kdy bude na skladě registrováno množství této položky.  
-    >
-    > **ID šarže** bude vyplněno systémem, pokud může být jedinečně identifikováno z uvedených informací. V opačném případě bude nutné jej zadat ručně. Toto je povinné pole, které propojí tuto registraci k řádku konkrétního zdrojového dokumentu.  
-
-1. V podokně Akce klikněte na možnost **Ověřit**. To kontroluje, zda je deník připraven k zaúčtování. Jestliže se ověření nezdaří, které bude nutné před zaúčtováním deníku opravit chyby.  
-1. Otevře se dialogové okno **Kontrola deníku**. Vyberte **OK**.
-1. Prohlédněte si panel zpráv. Měla by se na něm nacházet zpráva že operace byla dokončena.  
-1. V podokně akcí zvolte **Zaúčtovat**.
-1. Otevře se dialogové okno **Zaúčtování deníku**. Vyberte **OK**.
-1. Prohlédněte si panel zpráv. Měli byste vidět zprávu, že operace byla dokončena.
-1. Vyberte **Funkce > Příjem produktu** v podokně akcí, čímž aktualizujete řádek nákupní objednávky a zaúčtujte příjemku produktu.
+Poznamenejte si číslo nákupní objednávky, kterou vytvoříte, a také si poznamenejte číslo položky a pracoviště, které se používá pro váš řádek nákupní objednávky.
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## <a name="create-an-item-arrival-journal-header"></a>Vytvoření záhlaví deníku pro doručení položky
+1. Přejděte na Doručení položky.
+2. Klikněte na položku Nová.
+3. Zadejte hodnotu do pole Název.
+    * Pokud používáte data USMF, můžete zadat „WHS“. Pokud používáte jiná data, deník s názvem, který zvolíte, musí mít následující vlastnosti: u možnosti Zkontrolovat výdejní skl. místo musí být nastavena hodnota Ne a u Řízení karantény musí být nastavena hodnota Ne.  
+4. Zadejte hodnotu do pole Číslo.
+5. Zadejte hodnotu do pole Pracoviště.
+    * Vyberte pracoviště, které jste používali pro na řádek nákupní objednávky. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Pokud jste použili sklad 51 USMF, zvolte pracoviště 5.  
+6. Zadejte hodnotu do pole Sklad.
+    * Vyberte platný sklad pro pracoviště, které jste vybrali. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Používáte-li například hodnoty v USMF, vyberte 51.  
+7. Zadejte hodnotu do pole Místo konání.
+    * Vyberte platné umístění ve skladu, který jste vybrali. Skladové místo musí být přiděleno k profilu skladového místa, které je řízeno registrační značkou. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku. Používáte-li například hodnoty v USMF, vyberte Bulk-008.  
+8. Klepněte pravým tlačítkem myši na šipku rozevíracího seznamu v poli Registrační značka, a pak vyberte možnost Zobrazit podrobnosti.
+9. Klikněte na položku Nová.
+10. V poli Registrační značka zadejte hodnotu.
+    * Poznamenejte si hodnoty.  
+11. Klikněte na položku Uložit.
+12. Zavřete stránku.
+13. V poli Registrační značka zadejte hodnotu.
+    * Zadejte hodnotu registrační značky, kterou jste právě vytvořili. To bude sloužit jako výchozí hodnota, která bude výchozí pro všechny řádky v deníku.  
+14. Klikněte na tlačítko OK.
+
+## <a name="add-a-line"></a>Přidání řádku
+1. Klikněte na položku Přidat řádek.
+2. Zadejte hodnotu do pole Číslo zboží.
+    * Zadejte číslo položky, která je použita na řádku nákupní objednávky.  
+3. Zadejte číslo do pole Množství.
+    * Zadejte množství, které chcete registrovat.  
+    * Pole Datum určuje datum, kdy bude na skladě registrováno množství této položky.  
+    * ID šarže bude vyplněno systémem, pokud může být jedinečně identifikováno z uvedených informací. V opačném případě bude nutné ho přidat ručně. Toto je povinné pole, které propojí tuto registraci k řádku konkrétního zdrojového dokumentu.  
+
+## <a name="complete-the-registration"></a>Dokončení registrace
+1. Klikněte na tlačítko Ověřit.
+    * To kontroluje, zda je deník připraven k zaúčtování. Jestliže se ověření nezdaří, které bude nutné před zaúčtováním deníku opravit chyby.  
+2. Klikněte na tlačítko OK.
+    * Poté, co jste klepnuli na tlačítko OK, zkontrolujte zprávu. Musí existovat zpráva o tom, že deník je v pořádku.  
+3. Klikněte na položku Zaúčtovat.
+4. Klikněte na tlačítko OK.
+    * Poté, co jste kliknuli na tlačítko OK, zkontrolujte pruh zpráv. Musí existovat zpráva o tom, že operace byla dokončena.  
+5. Zavřete stránku.
+

@@ -80,6 +80,3 @@ V mnoha organizacích mohou manažeři kompenzací a zaměstnaneckých výhod z�
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Aktualizace Platform 24 pro Finance and Operations
 Další podrobnosti o aktualizaci Platform Update 24 pro Finance and Operationsnaleznete v tématu [Co je nového a co se změnilo v aplikaci Finance and Operations, Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: " Konfigurace obchodů pro maloobchodní výkazy"
 description: Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způsob, jakým se vytvářejí a účtují výkazy obchodu.
 author: jashanno
+manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bebe5d6732e6f8156e0271000a0b6caa24ba432491adc0370850109f19b7e4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770926"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4410936"
 ---
 # <a name="store-configurations-for-retail-statements"></a> Konfigurace obchodů pro maloobchodní výkazy
 
@@ -46,6 +49,3 @@ Tato procedura vás provede konfiguracemi pro maloobchod, které ovlivní způso
 17. Vyberte možnost „Ano“ v možnosti **Metoda rozdělení podle výpisu**, chcete-li získat výkazy vytvořené pro každou definovanou metodu výkazu. Tato akce je užitečná v případě, že výkon při účtování je třeba zlepšit pro obchody s vysokými objemy transakcí, protože vytvoří mnoho menších výkazů, které lze zpracovat současně.  
 18. Na pevné záložce **Obecné**, v poli **Výchozí odběratel** můžete vybrat účet odběratele, který se má použít pro prodeje příchozím odběratelům.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

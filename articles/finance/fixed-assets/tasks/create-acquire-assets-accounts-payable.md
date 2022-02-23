@@ -1,30 +1,33 @@
 ---
 title: Vytvoření a získání majetku z modulu Závazky
-description: Tato procedura vás provede vytvořením a pořízením dlouhodobého majetku s procesem nákupu.
+description: Tento průvodce úkolem vás provede vytvořením a pořízením dlouhodobého majetku s procesem nákupu.
 author: saraschi2
+manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394651"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441188"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Vytvoření a získání majetku z modulu Závazky
 
 [!include [banner](../../includes/banner.md)]
 
-Tato procedura vás provede vytvořením a pořízením dlouhodobého majetku s procesem nákupu.  Používá účetní a úředníky závazků a vzorovou společnost USMF.
+Tento průvodce úkolem vás provede vytvořením a pořízením dlouhodobého majetku s procesem nákupu.  Používá účetní a úředníky závazků a vzorovou společnost USMF.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Nastavení parametrů dlouhodobého majetku
@@ -53,6 +56,3 @@ Tato procedura vás provede vytvořením a pořízením dlouhodobého majetku s 
 17. Klikněte na odkaz na vybraném řádku v seznamu.
 18. Klikněte na možnost **Zaúčtovat**. Dlouhodobý majetek se vytvoří a pořídí při zaúčtování faktury.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

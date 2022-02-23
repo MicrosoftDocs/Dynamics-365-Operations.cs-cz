@@ -1,28 +1,31 @@
 ---
-title: Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
+title: Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy
 description: Tento článek vás provede scénářem, kde je provedeno více částečných plateb, některé v rámci období platební slevy a jiné mimo období platební slevy.
 author: abruer
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 693339929bbdbc960afc2a5e63b3a3864bfd3ca19cd2dbc992de776836b17e50
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441002"
 ---
-# <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Vyrovnání částečné platby před datem slevy a konečné platby po datu slevy
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,9 +49,9 @@ Tato společnost nakupuje zboží od dodavatele 3057. Fabrikam přijme platební
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/09/2015 |
+| Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | -10,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -71,9 +74,9 @@ Potom Anežka zaúčtuje platbu. Faktura má nyní zůstatek 700,00. Na stránce
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**. Anežka může vidět, že již dostala slevu 3,00.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/09/2015 |
+| Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 0,00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | –3,00     |
@@ -97,10 +100,10 @@ Pokud dodavatel Anežce umožní uplatnit slevu, i když splácí po datu slevy,
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/09/2015 |
-| Částka platební slevy         | 7.00      |
+| Datum platební slevy           | 7/09/2015 |
+| Částka platební slevy         | 7:00      |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | –3,00     |
 | Částka platební slevy k přijetí | –7,00     |
@@ -119,6 +122,3 @@ Potom Anežka zaúčtuje platbu. Jakmile otevře stránku **Transakce dodavatele
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

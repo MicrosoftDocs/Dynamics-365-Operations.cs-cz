@@ -1,33 +1,31 @@
 ---
 title: Konfigurace srážek
 description: Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak často má být provedena srážka z výplaty zaměstnance u každé výhody.
-author: twheeloc
-ms.date: 08/24/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf7ddbfb8717c0311fab7388f346f03618a7b43d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7c59fa09e83ca91e0ad866e5875ff06370b7491d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417549"
 ---
 # <a name="configure-deductions"></a>Konfigurace srážek
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak často má být provedena srážka z výplaty zaměstnance u každé výhody. Srážky jsou efektivní podle data, takže je možné uchovat historický záznam informací o srážce. 
 
@@ -48,12 +46,9 @@ Srážky v Microsoft Dynamics 365 Human Resources slouží k určení toho, jak 
    | **Záhlaví částky** | Kód záhlaví ze systému mezd, který bude použit pro část srážky pro zaměstnance při zpracování zaměstnaneckých výhod. Běžně se používá v případě, že používáte poskytovatele mezd od třetí strany. |
    | **Lze odstranit** | Určuje, zda může exportovaná hodnota z Dynamics 365 for Finance and Operations způsobit odstranění hodnoty v systému mezd. |
    | **Spárované sloupce** | Určuje, zda má být exportována částka záhlaví a srážky ve spárováných sousedících sloupcích do mzdového systému. |
-   | **Datum platnosti změny** | Datum, kdy změna srážky zaměstnanecké výhody vstoupí v platnost. K tomuto datu se srážka zaměstnanecké výhody změní a aktualizují se všechny plány zaměstnaneckých výhod spojené s touto srážkou, pokud spustíte zpracování **Aktualizace změny srážky**. |
+   | **Datum platnosti změny** | Datum, kdy změna srážky zaměstnanecké výhody vstoupí v platnost. K tomuto datu systém automaticky změní srážku zaměstnanecké výhody a aktualizuje všechny plány zaměstnaneckých výhod spojené s touto srážkou, pokud spustíte zpracování **Aktualizace změny srážky**. |
    | **Změna srážek dokončena** | Jakmile budou dokončeny změny srážky v procesu aktualizace změny srážky, bude automaticky zaškrtnuto políčko **Změna srážky dokončena**. |
    
 4. Chcete-li sledovat a spravovat změny v nastavení sazby zaměstnaneckých výhod, vyberte **Akce** a potom vyberte **Spravovat verze**.
 
 5. Zvolte **Uložit**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

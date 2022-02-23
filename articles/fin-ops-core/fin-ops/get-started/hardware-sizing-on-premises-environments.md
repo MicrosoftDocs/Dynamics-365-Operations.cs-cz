@@ -2,9 +2,11 @@
 title: Požadavky nastavení velikosti hardwaru pro místní prostředí
 description: Toto téma uvádí požadavky nastavení velikosti hardwaru pro místní prostředí.
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763427"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798297"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -36,7 +38,7 @@ Po kontrole dokumentace můžete zahájit proces odhadu transakčních a soubě�
 
 Všechny faktory na následujícím obrázku přispívají k nastavení velikosti. Čím podrobnější informace jsou shromážděny tím přesnější nastavení velikosti můžete určit. Nastavení velikosti hardwaru bez podpůrných dat bude pravděpodobně nepřesné. Minimální absolutní požadavek na potřebná data nejvyšší vytížení řádku transakce za hodinu.
 
-[![Nastavení velikosti hardwaru pro místní prostředí.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Nastavení velikosti hardwaru pro místní prostředí](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Při pohledu zleva doprava je prvním a nejdůležitějším faktorem potřebným pro přesný odhad nastavení velikosti profil transakce nebo charakteristika transakce. Je důležité vždy najít maximální objem transakcí za hodinu. Pokud existuje více vrcholných období, je nutné tato období přesně definovat.
 
@@ -132,15 +134,10 @@ Ve většině případů, pokud se často nepoužívají by měly doporučené m
 
 Pro všeobecnou dostupnost lze nasadit pouze jeden uzel SSRS. Při testování sledujte uzel SSRS a zvyšte počet jader k dispozici pro SSRS podle potřeby. Ujistěte se, že máte k dispozici předem konfigurovaný sekundární uzel dostupný na virtuálním hostiteli, než je na virtuálním počítači SSRS. To je důležité, pokud se jedná o problém s virtuálním počítačem, který je hostitelem SSRS nebo virtuálním hostitelem. V takovém případě je nutné je vyměnit.
 
-Počínaje verzí 10.0.17 je možné nakonfigurovat další uzly SSRS pro dosažení vysoké dostupnosti. Další informace viz [Konfigurace vysoké dostupnosti pro uzly SQL Server Reporting Services (SSRS)](../../dev-itpro/deployment/onprem-ssrsha.md).
-
 ## <a name="environment-orchestrator"></a>Orchestrátor prostředí
 
-Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace najdete v části [Naplánujte a připravte nasazení svého samostatného clusteru Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace najdete v části [Naplánujte a připravte nasazení svého samostatného clusteru Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualizace a předplatné
 
 Důležité služby jako server AOS by měly být hostované ve virtuálních hostitelích s vyhrazenými prostředky – jádra, paměť a disk.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

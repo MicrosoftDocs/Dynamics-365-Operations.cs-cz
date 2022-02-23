@@ -2,25 +2,28 @@
 title: Nastavení a zpracování opakovaných faktur
 description: Tento článek vysvětluje, jak lze nastavit a zpracovat opakované faktury. Opakované faktury lze použít, pokud musíte pravidelně fakturovat odběrateli stejnou částku.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustInvoiceTemplate
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14011
 ms.assetid: 9cc37003-adf1-413d-b2b2-2badcf512e3b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53b667b8a5aef0a788abd6a9d5d4a3b4d8d890e2a18bb5f74e58bb198fab5fa8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b443630d1612b5095fefa74b5ed6d057be534b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743860"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441055"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Nastavení a zpracování opakovaných faktur
 
@@ -28,7 +31,8 @@ ms.locfileid: "6743860"
 
 Tento článek vysvětluje, jak lze nastavit a zpracovat opakované faktury. Opakované faktury lze použít, pokud musíte pravidelně fakturovat odběrateli stejnou částku.
 
-## <a name="create-a-recurring-free-text-invoice-template"></a>Vytvoření šablony pro opakovanou volnou fakturu
+<a name="create-a-recurring-free-text-invoice-template"></a>Vytvoření šablony pro opakovanou volnou fakturu
+---------------------------------------------
 
 Pro fakturaci odběratelů za stejné služby v pravidelných intervalech je nutné definovat šablonu volné faktury, kterou lze opakovaně použít k vytvoření faktur. V šabloně jsou uvedeny následující informace:
 
@@ -51,16 +55,15 @@ Zákazník může mít více šablon, které mají různé intervaly.
 ## <a name="generate-the-recurring-invoices"></a>Generování opakovaných faktur
 Na stránce **Opakované faktury** je úkol, který zpracovává šablony opakovaných faktur. Určete datum faktury a šablonu, ze které se mají faktury generovat. Faktury budou generovány a každé skupině zpracovaných faktur se přiřadí jedno ID opakování.
 
-## <a name="post-recurring-free-text-invoices"></a>Zaúčtování opakovaných volných faktur
+<a name="post-recurring-free-text-invoices"></a>Zaúčtování opakovaných volných faktur
+---------------------------------
 
 Po vygenerování opakovaných faktur se ID opakování faktury objeví v zaúčtování úloh stránce **Opakované faktury**. Všechny faktury se stejným ID opakování si můžete prohlédnout kliknutím na odkaz. Během kontroly faktur podle ID opakování lze jednotlivé faktury odstranit. Nastavení opakování se u šablony odběratele obnoví, aby se mohla znovu generovat později. Zaúčtovat můžete jednu, více nebo všechny faktury pro ID opakování. Jsou-li workflowy povolené, je nutné před zaúčtováním faktury kliknout na tlačítko **Odeslat**.
 
-## <a name="print-recurring-free-text-invoices"></a>Tisk opakovaných volných faktur
+<a name="print-recurring-free-text-invoices"></a>Tisk opakovaných volných faktur
+----------------------------------
 
 Po zaúčtování opakované faktury můžete faktury vytisknout ze stránky se seznamem volných faktur. Lze vytisknout vybrané faktury nebo vybrat rozsah faktur k tisku.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

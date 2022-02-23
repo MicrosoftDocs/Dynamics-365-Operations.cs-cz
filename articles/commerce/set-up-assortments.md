@@ -2,9 +2,11 @@
 title: Nastavení sortimentu
 description: Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Dynamics 365 Commerce.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774478"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969819"
 ---
 # <a name="set-up-assortments"></a>Nastavení sortimentu
 
@@ -31,7 +33,7 @@ Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty
 
 Sortiment je sada souvisejících produktů, které přiřadíte do velkoobchodní sítě, jako například kamenný obchod nebo online obchod. Sortimenty slouží k určení výrobků, které jsou k dispozici v každém obchodě. Sortiment může obsahovat kategorie produktů. Proto jsou v sortimentu zahrnuty všechny produkty, které jsou přiřazeny k vybrané kategorii. Sortiment může obsahovat také konkrétní produkty a varianty produktů. Nastavením sortimentu lze přiřadit tisíce produktů ke kanálům najednou, v libovolné kombinaci vyžadované obchodem. Lze nastavit tolik sortimentů produktů, kolik potřebujete. Každý výrobek může být zahrnut do jednoho nebo více sortimentů, a každý sortiment může být přiřazen jednomu nebo více kanálům. Například můžete definovat jeden sortiment zahrnující základní sadu produktů. Všechny obchody obdrží tento sortiment. Dále určíte jiný sortiment obsahující pouze velké sportovní zařízení. Pouze vyšší obchody obdrží tento sortiment. Následující diagram znázorňuje, jak mohou být výrobky přiřazeny k sortimentům, a jak lze tyto sortimenty přiřadit k prodejním kanálům.
 
-![Vztahy sortimentů produktů.](./media/assortments_relationship.gif)
+![Vztahy sortimentů produktů](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -52,6 +54,3 @@ Po dokončení požadavků lze vytvořit sortiment a přiřadit jej do vašich p
 2. Vyberte prodejní kanály nebo skupiny vysoké úrovně v prodejních kanálech, na které se sortiment vztahuje.
 3. Přidejte do sortimentu kategorie produktů, jednotlivé produkty nebo varianty produktu. Všechny produkty lze zahrnout do konkrétní kategorie, nebo vyjmout vybrané produkty z kategorie, která je zahrnuta do sortimentu.
 4. Publikujte sortiment. Při publikování sortimentu je automaticky spuštěn plánovač sortimentu. Tento proces generuje seznam produktů. Po dokončení tohoto procesu budou produkty k dispozici pro prodejní kanály, ke kterým je sortiment produktu přiřazen. Pokud jsou provedeny změny v publikovaném sortimentu nebo v prodejních kanálech, ke kterým je sortiment přiřazen, musí být sortiment aktualizován. Pokud chcete aktualizovat sortiment po provedení změn, můžete spustit plánovač sortimentu jako dávkovou úlohu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

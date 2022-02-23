@@ -1,28 +1,28 @@
 ---
 title: Úvod do majetku
 description: Toto téma obsahuje přehled majetku v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2214"
-- intro-internal
+ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f629ebdf7423ca75fe215b0a3223478685fe95c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767501"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018563"
 ---
 # <a name="introduction-to-assets"></a>Úvod do majetku
 
@@ -77,6 +77,3 @@ Tlačítka v podokně akcí jsou uspořádána na kartách. Následující tabul
 | Náhradní díly          | Zobrazte seznam schválených a alternativních náhradních dílů, které lze na majetku použít.                                                                               |
 | Spotřeba majetku    | Vytiskněte sestavu zobrazující registrace spotřeby u majetku                                                                                                |
 | Závada majetku          | Vytiskněte sestavu zobrazující registrace závad u majetku                                                                                                      |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

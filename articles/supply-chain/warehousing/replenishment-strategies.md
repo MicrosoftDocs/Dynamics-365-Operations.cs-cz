@@ -2,22 +2,25 @@
 title: Strategie doplňování
 description: Toto téma poskytuje informace o strategiích doplňování a vysvětluje, jak můžete pomocí pole Strategie doplňování na řádcích šablon doplňování poptávky vlny vybrat, jak se doplnění provádí.
 author: mirzaab
+manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574154"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646126"
 ---
 # <a name="replenishment-strategies"></a>Strategie doplňování
 
@@ -45,7 +48,7 @@ Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správ
 
 Pro přístup k šablonám přejděte na **Řízení skladu \> Nastavení \> Doplnění \> Šablony doplnění**. V části **Přehled** vyberte nebo vytvořte šablonu doplňování poptávky vlny, kde pole **Typ doplňování** je nastaveno na *Poptávka vlny*. Poté nastavte řádky šablony doplňování v části **Podrobnosti šablony doplňování**. Pro každý řádek v poli **Strategie doplňování** vyberte strategii doplňování, kterou chcete použít.
 
-![Stránka Šablony doplnění.](media/ReplenTempWaveDmdMaxLocCap.png "Stránka Šablony doplnění")
+![Stránka Šablony doplnění](media/ReplenTempWaveDmdMaxLocCap.png "Stránka Šablony doplnění")
 
 Pokud se sloupec **Strategie doplňování** nezobrazí v mřížce v sekci **Podrobnosti šablony doplňování**, ujistěte se, že byla funkce zapnuta a že vybraná šablona doplňování má typ doplňování *Poptávka vlny*.
 
@@ -85,7 +88,7 @@ Pokud nastavíte strategii doplňování místo toho na *Maximální kapacita sk
 - **Práce doplnění 1:** Vyberte 4 krabice z hromadného umístění a umístěte je do místa pick-001.
 - **Práce doplnění 2:** Vyberte 5 krabice z hromadného umístění a umístěte je do místa pick-002.
 
-[![Příklad 1.](media/ReplenTemp_example_1.png "Příklad 1")](media/ReplenTemp_example_1_large.png)
+[![Příklad 1](media/ReplenTemp_example_1.png "Příklad 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Příklad 2
 
@@ -109,9 +112,6 @@ V závislosti na nastavení možnost **Povolit rozdělení** ve směrnicích skl
 
 Výsledky se liší kvůli informacím, které jsou k dispozici při vytváření práce. Když je možnost **Povolit rozdělení** nastavena na *Ano* ve směrnicích skladového místa pro výdej doplňování víte, že se vám podařilo najít 160 ks. Proto pro toto množství můžete vytvořit práci. Když je však možnost **Povolit rozdělení** nastavena na *Ne*, nevíte o existenci 160 ks. Protože extra množství, které jste se rozhodli doplnit, byly 3 krabice, odečtete toto extra množství a zkusíte původní množství znovu.
 
-[![Příklad 2.](media/ReplenTemp_example_2.png "Příklad 2")](media/ReplenTemp_example_2_large.png)
+[![Příklad 2](media/ReplenTemp_example_2.png "Příklad 2")](media/ReplenTemp_example_2_large.png)
 
 Chcete-li tedy získat maximální množství na doplněná místa, měli byste nastavit možnost **Povolit rozdělení** na *Ano* na směrnicích skladového místa pro výdej doplňování.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Odpisové metody a způsoby odpisu
 description: Tento článek poskytuje přehled odpisových zásad a metod, které jsou podporovány v aplikaci Microsoft Dynamics 365 Finance.
-author: moaamer
-ms.date: 12/16/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f3b8be86225fd68df9b099e5c8e13a220a213
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: c3370db28f551b5ce4a9b49342cb0c0b2f3945c0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927422"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441264"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Odpisové metody a způsoby odpisu
 
@@ -32,7 +35,7 @@ K dispozici máte několik metod a způsobů odpisu. Metody slouží k přiděle
 
 Používáte-li určitý způsob odpisu a změníte poslední datum zahájení odpisu určitého majetku, které přeskočí některé odpisy, bude odpis za poslední rok pravděpodobně vyšší nebo nižší, než bylo očekáváno. Odpis je nastaven podle počtu období ovlivněných změnou posledního data zahájení odpisu.
 
-Pokud například používáte půlroční způsob odpisu déle než tři roky, trvá odpis běžně přes tři a půl roku. Změníte-li během tohoto období poslední datum spuštění odpisu, nebude v posledním roce odpisu zahrnut počet ovlivněných období. Posunete-li toto datum o tři měsíce, bude pro odpis v posledním roce důležitých devět měsíců, přičemž za normálních okolností by to bylo šest.
+Pokud například používáte půlroční způsob odpisu déle než tři roky, trvá odpis běžně přes 3 a půl roku. Změníte-li během tohoto období poslední datum spuštění odpisu, nebude v posledním roce odpisu zahrnut počet ovlivněných období. Posunete-li toto datum o tři měsíce, bude pro odpis v posledním roce důležitých devět měsíců, přičemž za normálních okolností by to bylo šest.
 
 K dispozici máte následující způsoby odpisu.
 
@@ -46,9 +49,9 @@ K dispozici máte následující způsoby odpisu.
 -   Pololetí (příští rok)
 
 Můžete vybírat z následujících metod odpisování:
--   Lineární doba životnosti
--   Degresivní
--   Ruční
+-   Lineární
+-   Zrychleně
+-   Ručně
 -   Koeficient
 -   Spotřeba
 -   Lineární s vyrovnáním na konci životnosti
@@ -61,7 +64,8 @@ Můžete vybírat z následujících metod odpisování:
 
 
 
-## <a name="additional-resources"></a>Další prostředky
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Odpisy dlouhodobého majetku](fixed-asset-depreciation.md)
 
@@ -77,7 +81,7 @@ Můžete vybírat z následujících metod odpisování:
 
 [Lineární odpis s vyrovnáním na konci životnosti](straight-line-life-remaining-depreciation.md)
 
-[Degresivní odpis 125 %](125-percent-reducing-balance-depreciation.md)
+[Degresivní odpis 125 procent](125-percent-reducing-balance-depreciation.md)
 
 [Degresivní odpis 150 procent](150-percent-reducing-balance-depreciation.md)
 
@@ -87,6 +91,3 @@ Můžete vybírat z následujících metod odpisování:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

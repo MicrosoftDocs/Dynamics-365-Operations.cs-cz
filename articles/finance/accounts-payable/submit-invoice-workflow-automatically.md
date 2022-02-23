@@ -1,29 +1,33 @@
 ---
-title: Odesílání faktur do systému pracovních postupů a spárování řádků příjemek produktů
+title: Odesílání faktur do systému workflow a porovnávání řádků příjemek produktů (preview)
 description: Toto téma vysvětluje proces odesílání importovaných faktur dodavatelů do systému workflow a párování zaúčtovaných řádků příjemek produktů s fakturami dodavatelů.
 author: abruer
+manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd7ec9f4f30c444fd6442c9a2f1333fcaba4246520de3997f3bb9064a8ee16e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440999"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Odesílání faktur do systému pracovních postupů a spárování řádků příjemek produktů
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Odesílání faktur do systému workflow a porovnávání řádků příjemek produktů (preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje proces odesílání importovaných faktur dodavatelů do systému workflow a párování zaúčtovaných řádků příjemek produktů s fakturami dodavatelů.
 
@@ -39,19 +43,14 @@ Hodnota **Odeslal** v pracovním postupu je ID uživatele, které bylo zadáno p
 
 V rámci bezdotykových procesů fakturace závazků může systém automaticky přiřazovat zaúčtované příjemky produktům k řádkům faktur. Pro tento úkol je třeba definovat zásadu třícestného párování. Tato funkce je k dispozici, pokud funkce **Automatizace faktur dodavatele** byla povolena na stránce **Správa funkcí**.
 
-Proces párování poběží tak dlouho, dokud se spárované množství na příjemce produktu nebude rovnat množství na faktuře. Pokud však existuje více příjemek produktu pro jeden řádek faktury, budete muset spustit proces několikrát, abyste dosáhli úplného spárování množství. Můžete určit maximální počet pokusů, které má systém na spárování příjemky produktu s řádkem faktury, než se tento proces označí jako neúspěšný. Tento proces poběží na pozadí každou hodinu nebo každý den. 
-
-Proces automatizovaného párování můžete spustit jako součást procesu odesílání faktur do systému workflowu. Můžete ho rovněž spustit jako samostatný proces. Nastavení procesu přiřazení příjemek produktů řádkám faktur se konfiguruje na kartě **Automatizace faktur dodavatele** stránky **Parametry závazků** (**Závazky \> Nastavení \> Parametry závazků**).
+Proces poběží tak dlouho, dokud se spárované množství na příjemce produktu nebude rovnat množství na faktuře. U tohoto procesu můžete určit maximální počet pokusů, které má systém na spárování příjemky produktu s řádkem faktury, než se tento proces označí jako neúspěšný. Tento proces poběží na pozadí každou hodinu nebo každý den. Proces automatizovaného párování můžete spustit jako součást procesu odesílání faktur do systému workflowu. Můžete ho rovněž spustit jako samostatný proces. Nastavení procesu přiřazení příjemek produktů řádkám faktur se konfiguruje na kartě **Automatizace faktur dodavatele** stránky **Parametry závazků** (**Závazky \> Nastavení \> Parametry závazků**).
 
 Řádky faktur, které mají zásadu třícestného párování, kde je spárované množství příjemky menší než množství faktury, budou zahrnuty do automatizovaného procesu párování s příjemkami produktů.
 
-Chcete-li zobrazit stav **Poslední shoda** u faktur, které nejsou součástí procesu automatického odesílání do pracovního postupu, otevřete fakturu ze stránky **Faktury dodavatele**. Při zobrazení faktury se aktualizují informace pro ověření spárování. Stav **Poslední shody** lze automaticky aktualizovat pomocí úkolu na pozadí **Ověření shody faktur**. Můžete nakonfigurovat proces automatické aktualizace stavu **Poslední shoda** na kartě **Procesy na pozadí** na stránce **Procesní automatizace** (**Správa systému \> Nastavení \> Procesní automatizace**).
+Chcete-li zobrazit stav **Poslední shoda** u faktur, které nejsou součástí procesu automatického odesílání do pracovního postupu, otevřete fakturu ze stránky **Faktury dodavatele**. Při zobrazení faktury se aktualizují informace pro ověření spárování.
 
 Řádek faktury bude vyloučen z automatizovaného zpracování, pokud bude splněna některá z následujících podmínek:
 
 - Hodnota **Stav shody automatického potvrzení** řádku faktury je **Selhalo**.
 - Faktura se používá.
 - Faktura je v systému workflow.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

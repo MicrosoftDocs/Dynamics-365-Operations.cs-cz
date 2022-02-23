@@ -1,25 +1,28 @@
 ---
 title: Kalendáře a hlavní plánování
 description: Toto téma obsahuje přehled kalendáře dodavatelsko-odběratelského řetězce dodávek a jejich vliv na hlavní plánování.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568608"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423836"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendáře a hlavní plánování
 
@@ -90,7 +93,7 @@ K označení dat, kdy může odběratel přijímat dodávky, můžete odběratel
 
 Všimněte si, že je možné zahrnout pouze jeden kalendář na odběratele. Pokud potřebujete zahrnout kalendář pro každou jinou adresu pro odběratele, můžete vytvořit jednoho odběratele na adresu a přiřadit jeho odpovídající kalendář. 
 
-Požadované datum příjmu v řádcích prodejní objednávky je ovlivněno kalendářem odběratele a způsobem kontroly data doručení. Více informací o výpočtu nejstaršího data doručení získáte v části [Příslib objednávky.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Požadované datum příjmu v řádcích prodejní objednávky je ovlivněno kalendářem odběratele a způsobem kontroly data doručení. Více informací o výpočtu nejstaršího data doručení získáte v části [Příslib objednávky.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Kalendář expedice pro právnickou osobu
 Pokud chcete označit data, ve kterých může právnická osoba expedovat zboží, můžete nastavit kalendář expedice v části **Správa organizace > Organizace > Právnické osoby**. Vyberte právnickou osobu a přidejte kalendář na kartě **Zahraniční obchod a logistika** v poli **Expediční kalendář**. Expediční kalendář bude sloužit jako zdroj výchozích hodnot pro všechny kalendáře skladu v právnické osobě. 
@@ -140,6 +143,3 @@ Pokud jde o kalendář skupiny disponibility, je třeba uvážit, že existuje c
 
 ### <a name="updating-scm-related-calendars"></a>Aktualizace kalendářů souvisejících se SCM
 I když je důležité, aby všechny relevantní kalendáře měly přiřazené odpovídajících místo (dodavatele, odběratele, sklad, způsob dodání nebo skupinu disponibility), jejich aktualizace je stejně důležitá, aby odrážely změnu. Systém definuje datum výroby, převodu, nákupu a prodejní objednávky podle kombinace přiřazené kalendáře. Osvědčilo se objasnit, kdo nese odpovědnost za přiřazování a aktualizaci kalendářů v příslušných oblastech. V případě rozdělení či jiných neobvyklých změn pracovních dnů je nutné aktualizovat kalendáře příslušným způsobem. Všechny úkoly, které závisí na kalendářích, jako je hlavní plánování a plánování výroby, je nutné při aktualizaci kalendářů provést znovu. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

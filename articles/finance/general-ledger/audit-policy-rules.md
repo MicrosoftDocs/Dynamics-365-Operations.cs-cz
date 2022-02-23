@@ -2,9 +2,11 @@
 title: Pravidla zásad auditu
 description: Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili. Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.  Každé pravidlo zásad je instancí typu pravidla zásad. Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně.
 author: panolte
+manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744299"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021234"
 ---
 # <a name="audit-policy-rules"></a>Pravidla zásad auditu
 
@@ -28,7 +30,8 @@ ms.locfileid: "6744299"
 
 Zásady auditu můžete použit pro vyhodnocení sestav výdajů, faktur dodavatele a nákupních objednávek, abyste se ujistili, že jsou v souladu s pravidly zásad, které jste vytvořili. Všechna pravidla, která jsou přidružena k zásadě auditu, jsou spouštěna v dávkovém režimu podle určeného plánu.  Každé pravidlo zásad je instancí typu pravidla zásad. Pro každý typ pravidla zásad může být aktivní pouze jedno pravidlo zásad současně. 
 
-## <a name="queries-and-query-types"></a>Dotazy a typy dotazů
+<a name="queries-and-query-types"></a>Dotazy a typy dotazů
+-----------------------
 
 Když vytvoříte pravidlo zásad auditu, nejprve vyberte typ pravidla zásad. Typ pravidla zásad určuje dotaz pro strom aplikačních objektů (AOT), který bude použit jako výchozí bod při vytvoření pravidla zásad. Určuje také typ dotazu pro pravidla zásad. Dotaz určuje zdrojový dokument, pro který je pravidlo zásad vyhodnoceno. Určuje také pole ve zdrojovém dokumentu, který určuje právnickou osobu a data použité při výběru dokumentů pro audit. Typ dotazu řídí výchozí pole na stránce s dotazy a na stránce pravidel zásad auditu. V následující tabulce jsou uvedeny typy dotazů dostupné pro pravidla zásad auditu.
 
@@ -90,12 +93,10 @@ Všechna pravidla zásad pro určitou zásadu auditu sdílí stejné parametry d
 
 
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Porušení a případy zásad auditu](audit-policy-violations-cases.md)
 [Definování zásad auditu pro zdrojové dokumenty](tasks/define-audit-policies-source-documents.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

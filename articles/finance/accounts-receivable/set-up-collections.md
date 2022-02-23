@@ -2,25 +2,28 @@
 title: Nastavit kolekcí
 description: Tento článek popisuje postup nastavení funkce inkasa.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e06da265271e2148804c51abc7cd9ffc29a3e20e73dda3a1a23966f0e6586e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f8e066b1df3eb3a26d488e1c014f4ae3f31395a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769811"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4441377"
 ---
 # <a name="set-up-collections"></a>Nastavit kolekcí
 
@@ -40,7 +43,8 @@ Tento článek popisuje postup nastavení funkce inkasa. Při použití možnost
 
 Tyto body jsou podrobněji popsány ve zbývající části tohoto tématu. 
 
-## <a name="set-up-aging-period-definitions"></a>Nastavit definice období pro sledování splatnosti
+<a name="set-up-aging-period-definitions"></a>Nastavit definice období pro sledování splatnosti
+-------------------------------
 
 Nastavte definici období pro sledování splatnosti. Definice období pro sledování splatnosti určuje sloupce, které se zobrazují na stránkách se seznamem **Splatné zůstatky**, **Inkasní aktivity** a **Případy inkasa**. Také definuje období, které se zobrazuje na stránce **Inkasa**. Pokud je nastaven fond zákazníků, je použita jeho definice období pro sledování splatnosti. Pokud nejsou nastaveny žádné fondy, použije se výchozí definice období pro sledování splatnosti, která je určena na stránce **Parametry pohledávek**. Pokud není určena žádná výchozí definice období pro sledování splatnosti, použije se první definice období pro sledování splatnosti na stránce **Definice období pro sledování splatnosti**.
 
@@ -111,6 +115,3 @@ Další informace naleznete v následujících tématech:
 
  - [Kontrola inkasních informací](tasks/review-collections-information.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

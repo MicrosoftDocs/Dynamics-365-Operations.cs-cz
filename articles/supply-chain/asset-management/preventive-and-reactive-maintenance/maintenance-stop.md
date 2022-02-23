@@ -1,10 +1,12 @@
 ---
 title: Aktivity prostoje údržby
 description: Tohle téma popisuje, jak se používá prostoj údržby k získání přehledu o kapacitě potřebné k provádění prací údržby určitých položek majetku během určitého období.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727911"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017938"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktivity prostoje údržby
 
@@ -40,7 +42,7 @@ Pokud byly při registraci prostojů údržby vybrány položky majetku, do regi
 
 Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** otevřete seznam všech aktivit prostojů údržby a prohlédněte si některé informace související s aktivitami. Kliknutím na odkaz ve sloupci **Aktivity prostojů údržby** otevřete podrobné zobrazení. Následující ilustrace znázorňuje příklad stránky **Aktivity prostoje údržby**.
 
-![Obrázek č. 1.](media/19-preventive-maintenance.png)
+![Obrázek č. 1](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Vytvoření aktivity prostoje údržby
@@ -61,7 +63,7 @@ Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostoj
 
 Následující ilustrace znázorňuje zobrazení podrobností okna **Aktivity prostoje údržby**.
 
-![Obrázek č. 2.](media/20-preventive-maintenance.png)
+![Obrázek č. 2](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Práce údržby pracovních příkazů a řádky rozvrhu údržby související s vybraným majetkem se automaticky aktualizují, pokud jsou po vytvořeny nové pracovní příkazy nebo řádky rozvrhu údržby poté, co jste vytvořili aktivitu prostoje údržby. Pokud například naplánujete plány údržby nebo pořadí údržby pro související položky majetku dva dny po vytvoření aktivity prostoje údržby, budou nové řádky rozvrhu údržby automaticky přidány do prostoje údržby.
@@ -72,7 +74,7 @@ Následující ilustrace znázorňuje zobrazení podrobností okna **Aktivity pr
 
 10. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet hodin je zobrazen v přehledu **Vytížení kapacity**. Na kartě **Vytížení kapacity** > ve skupinách podokna akce **Seskupit podle...** klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných hodin. Na následujícím obrázku jsou uvedeny výsledky výpočtu nákladů **vytížení kapacity**.
 
-![Obrázek č. 3.](media/21-preventive-maintenance.png)
+![Obrázek č. 3](media/21-preventive-maintenance.png)
 
 11. Po získání přehledu vytížení kapacity, pokud chcete upravit práce údržby pracovních příkazů nebo řádky plánu údržby, vraťte se do podrobného zobrazení **Aktivity prostoje údržby** a vyberte řádky, které chcete upravit na pevných záložkách **Výsledné práce údržby pracovních příkazů** a **Řádky rozvrhu údržby**.
 
@@ -89,11 +91,8 @@ Následující ilustrace znázorňuje zobrazení podrobností okna **Aktivity pr
 
 16. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet prognóz položky je zobrazen v přehledu **Prognóza položky**. Na kartě **Prognóza položky** > ve skupinách podokna akce **Seskupit podle**... klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných položek. Následující obrázek ukazuje výsledky výpočtu **Prognóza položky**.
 
-![Obrázek č. 4.](media/22-preventive-maintenance.png)
+![Obrázek č. 4](media/22-preventive-maintenance.png)
 
 - Položky majetku lze kopírovat z jedné aktivity prostoje údržby do jiné. V části **Všechny aktivity prostojů údržby** vyberte tlačítko **Kopírovat aktivity prostoje údržby** a vyberte požadované položky v polích **Z aktivit prostoje údržby** a **Do aktivit prostoje údržby** prostoje a klikněte na tlačítko **OK**.
 - V části **Všechny aktivity prostoje údržby** kliknutím na tlačítko **Řádky rozvrhu údržby** nebo **Aktivní pracovní příkazy** otevřete související seznamy a zobrazíte řádky související s vybranou aktivitou prostoje údržby.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

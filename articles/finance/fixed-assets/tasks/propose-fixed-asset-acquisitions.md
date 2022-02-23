@@ -1,24 +1,27 @@
 ---
 title: Nabídka pořízení dlouhodobého majetku
 description: Toto téma popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku.
-author: moaamer
-ms.date: 03/17/2021
+author: saraschi2
+manager: AnnBe
+ms.date: 07/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 70347009ede494760cd7f51b46db04b434b9fbcc
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883813"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441012"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Nabídka pořízení dlouhodobého majetku
 
@@ -26,17 +29,13 @@ ms.locfileid: "7883813"
 
 Toto téma popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku. Využívá účetní role a ukázková data pro právnické osoby USMF. Chcete-li získat dlouhodobý majetek prostřednictvím deníku návrhu dlouhodobého majetku, musíte nejprve vytvořit záznam dlouhodobého majetku a poté definovat pořizovací cenu v majetkové knize.
 
-## <a name="create-an-asset-acquisition-proposal"></a>Vytvoření návrhu na pořízení majetku
-
-Chcete-li vytvořit návrh na pořízení majetku, proveďte následující kroky. 
-
 1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku**.
 2. Zvolte **Nové**.
 3. V poli **Název** zadejte nebo vyberte hodnotu.
 4. V podokně akcí zvolte **Řádky**.
 5. Vyberte **Návrhy**.
 6. Vyberte **Návrh pořízení**.
-7. Vyberte **Filtr**. Kliknutím na tlačítko **Vynulovat** vymažete předchozí hodnoty.
+7. Vyberte **Filtr**. Kliknutím na tlačítko **Vynulovat** vymažte předchozí hodnoty.
 8. Vyberte řádek **Číslo dlouhodobého majetku**.
 9. V poli **Kritéria** zadejte nebo vyberte hodnotu. Nastavte zbývající kritéria pro dlouhodobý majetek, který chcete získat s tímto návrhem.  
 10. Chcete-li ukončit podokno, klepněte dvakrát na tlačítko **OK**.
@@ -44,12 +43,3 @@ Chcete-li vytvořit návrh na pořízení majetku, proveďte následující krok
 - V návrhu pořízení bude zahrnut pouze dlouhodobý majetek s datem pořízení a pořizovací cenou nastavenou v knize.  
 11. Na stránce vyberte kartu **Knihy**.
 12. Zvolte **Zaúčtovat**.
-
-## <a name="include-default-financial-dimensions-in-an-acquisition-proposal"></a>Zahrnutí výchozích finančních dimenzí do návrhu pořízení majetku
-
-Transakci pořízení majetku lze vytvořit pomocí doplňků aplikace Excel v části **Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku**. Vytvořte nový deník a přejděte do sekce **Řádky** na stránce. Vyberte ikonu Excelu a poté vyberte řádek deníku dlouhodobého majetku. Systém vytvoří a otevře šablonu aplikace Excel představující řádky deníku. Můžete přidat data pro řádky deníku, které přidáváte do šablony, a poté tyto informace publikovat zpět do systému. 
-
-Pokud byly nastaveny výchozí dimenze pro vybranou knihu majetku a odpovídající dlouhodobý majetek, který byl zadán v šabloně aplikace Excel, budou výchozí finanční dimenze volány z hlavních dat knihy majetku, když je deník publikován z aplikace Excel do systému. Chcete-li finanční dimenze do knihy majetku zahrnout automaticky při publikování deníku dlouhodobého majetku z doplňku Excelu, je třeba předem nastavit výchozí dimenze.  
-
-
-[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

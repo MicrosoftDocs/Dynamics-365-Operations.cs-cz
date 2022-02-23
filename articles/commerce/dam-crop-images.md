@@ -1,13 +1,16 @@
 ---
-title: Oříznutí obrázků
+title: Oříznout obrázky
 description: Toto téma popisuje, jak oříznout obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cb6049a1d98b7286658403b15a071f6f1389f725a9a7a146aab55d43796be60b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744503"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594471"
 ---
-# <a name="crop-images"></a>Oříznutí obrázků
+# <a name="crop-images"></a>Oříznout obrázky
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak oříznout obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Knihovna médií konfigurátoru webu Commerce umožňuje oříznout obrázky a optimalizovat je pro různé typy a zobrazení modulů.
 
@@ -61,6 +66,3 @@ Po dokončení vlastního oříznutí se úpravy obrazu projeví téměř okamž
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

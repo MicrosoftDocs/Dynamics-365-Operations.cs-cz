@@ -1,30 +1,34 @@
 ---
 title: Určení způsobu nakládání s vrácenými položkami
 description: Určení způsobu nakládání s vrácenými položkami
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQuarantineOrder
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e609c1c285b34a5416a2058809b2fc4fafb73fca
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423482"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a>Určení způsobu nakládání s vrácenými položkami
+# <a name="specify-how-to-dispose-of-returned-items"></a>Určení způsobu nakládání s vrácenými položkami 
 
 [!include [banner](../includes/banner.md)]
+
 
 Při zpracování vratky je třeba zadáním kódu důvodu vrácení identifikovat příčinu vrácení produktu. Také je nutné zadáním dispozičního kódu a dispoziční akce určit, jak má být naloženo s vráceným produktem.
 
@@ -34,9 +38,9 @@ Můžete definovat libovolné dispoziční kódy, které si vyžaduje podpora ob
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,8 +128,8 @@ Pro každý kód dispozice, který definujete, je nutné vybrat dispoziční akc
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -161,15 +165,21 @@ Pro každý kód dispozice, který definujete, je nutné vybrat dispoziční akc
 </tbody>
 </table>
 
+
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>Vyberte dispoziční kód pro karanténní příkaz.
 
-1. Přejděte na **Řízení zásob** \> **Periodicky** \> **Správa kvality** \> **Karanténní příkazy**.
-1. Pro stávající karanténní příkaz vyberte akci v poli **Dispoziční kód** na kartě **Přehled**.
+1.  Klikněte na **Řízení zásob** \> **Periodicky** \> **Správa kvality** \> **Karanténní příkazy**.
+
+2.  Pro stávající karanténní příkaz vyberte akci v poli **Dispoziční kód** na kartě **Přehled**.
+
+
 
 ## <a name="see-also"></a>Viz také
 
-[Karanténní příkaz (formulář)](/dynamicsax-2012//quarantine-order-form)
+[Karanténní příkaz (formulář)](https://technet.microsoft.com/library/aa554073(v=ax.60))
 
 [Dispoziční kódy (formulář)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  
+
+

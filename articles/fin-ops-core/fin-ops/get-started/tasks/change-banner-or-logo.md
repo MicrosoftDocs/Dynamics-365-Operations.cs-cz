@@ -2,9 +2,11 @@
 title: Změna nápisu nebo loga
 description: V následující proceduře je uveden postup, pomocí kterého mohou správci systému aktualizovat proužkovou reklamu nebo obrázek loga, které se zobrazí pro právnickou osobu.
 author: aneesmsft
+manager: AnnBe
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User
@@ -13,19 +15,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee62376da24adbbe09cb039c095197067f2db59c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069341"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798063"
 ---
 # <a name="change-the-banner-or-logo"></a>Změna nápisu nebo loga
 
 [!include [banner](../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 V následující proceduře je uveden postup, pomocí kterého mohou správci systému aktualizovat proužkovou reklamu nebo obrázek loga, které se zobrazí pro právnickou osobu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
@@ -40,6 +39,3 @@ V následující proceduře je uveden postup, pomocí kterého mohou správci sy
 6. Přejděte na **Navigační podokno > Moduly > Běžné > Běžné > Výchozí řídicí panel**. Měli byste na řídícím panelu vidět novou proužkovou reklamu nebo obrázek loga.  
     
     Může být nutné změnit vaší společnost pomocí pole pro výběr společnosti na tu, pro kterou jste odeslali proužkovou reklamu.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

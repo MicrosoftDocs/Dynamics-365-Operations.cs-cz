@@ -2,23 +2,26 @@
 title: Prozkoumání nebo vyřešení výjimek
 description: Zásady faktur dodavatele se spouští při zaúčtování faktury dodavatele na stránce Faktura dodavatele, a při otevření stránky s porušením zásad faktury dodavatele.
 author: abruer
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d35504ab2fe6b8143d040bda505a904ab179b6137472073d788515f392faaef9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 995d68f6224b6dfbb1928c907ad991b86fc47668
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722880"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441100"
 ---
 # <a name="research-or-resolve-exceptions"></a>Prozkoumání nebo vyřešení výjimek
 
@@ -83,6 +86,3 @@ Tento záznam používá ukázkovou společnost USMF. Manažer závazků nebo os
 24. Zavřete stránku.
 25. Zavřete stránku.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,26 @@
 ---
 title: Nastavení oprávnění pro objednávání produktů jménem jiného uživatele
 description: Toto téma vysvětluje, jak udělit zaměstnancům oprávnění k přípravě nákupních žádanek jménem ostatních pracovníků.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577113"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017285"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Nastavení oprávnění pro objednávání produktů jménem jiného uživatele
 
@@ -42,6 +44,3 @@ Toto téma vysvětluje, jak udělit zaměstnancům oprávnění k přípravě n�
 2. Pomocí rychlého filtru vyhledejte pracovníka, kterého jste právě vytvořili jako žadatele.
 3. Vyberte žadatele. Seznam Pořizovatel popisuje uživatele, kteří mají oprávnění k objednání položek jménem žadatele, který je vybrán v levém podokně.  Zde můžete přidat další zpracovatele. Toto zobrazení umožňuje také udělit oprávnění žadatelům pro vytvoření žádanek u právnických osob a provozních jednotek, které nejsou primární právnickou osobou nebo provozní jednotkou daného uživatele.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

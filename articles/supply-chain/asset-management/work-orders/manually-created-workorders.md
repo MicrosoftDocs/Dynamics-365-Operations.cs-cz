@@ -1,10 +1,12 @@
 ---
 title: Ručně vytvořené pracovní příkazy
 description: Toto téma vysvětluje, jak vytvořit pracovní příkazy ručně v modulu Správa majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750093"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017861"
 ---
 # <a name="manually-created-work-orders"></a>Ručně vytvořené pracovní příkazy
 
@@ -111,7 +113,7 @@ Můžete vytvořit pracovní příkaz na základě stávajícího pracovního p�
 
 Na následujícím obrázku je uveden příklad dialogu **Vytvořit související pracovní příkaz**.
 
-![Obrázek č. 1.](media/03-work-orders.png)
+![Obrázek č. 1](media/03-work-orders.png)
 
 >[!NOTE]
 >Pokud jste nastavili související masku pracovního příkazu na kartě **Parametry správy majetku** > **Pracovní příkazy** > **Související maska pracovního příkazu**, budou v souladu s nastavením masky vytvořena ID pracovních příkazů. Není-li nastavena žádná související maska pracovního příkazu, bude pro související pracovní příkazy použito další dostupné ID pracovního příkazu.
@@ -137,7 +139,7 @@ Nový pracovní příkaz lze rychle vytvořit z existujícího pracovního pří
 
 Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat pracovní příkaz**.
 
-![Obrázek č. 2.](media/04-work-orders.png)
+![Obrázek č. 2](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Vytvoření pracovního příkazu na základě požadavku na údržbu
@@ -157,12 +159,9 @@ Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat p
 
 Na následujícím obrázku je uveden příklad dialogového okna **Vytvořit pracovní příkaz**.
 
-![Obrázek č. 3.](media/05-work-orders.png)
+![Obrázek č. 3](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Pokud chcete, aby se pracovní příkazy vytvářely automaticky, můžete naplánovat úlohy plánu údržby nebo nastavit automatické vytvoření [plánů údržby](../preventive-and-reactive-maintenance/maintenance-plans.md) nebo [pořadí údržby](../preventive-and-reactive-maintenance/maintenance-rounds.md) u majetku. Pracovní příkazy vytvořené z požadavků na údržbu na stránce se seznamem **Rozvrh veškeré údržby** jsou vytvořeny s typy úloh údržby vybranými v požadavcích na údržbu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

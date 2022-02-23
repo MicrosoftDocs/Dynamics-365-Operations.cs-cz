@@ -2,9 +2,11 @@
 title: Konfigurace mapování modelu ER závislého na kontextu podle země
 description: V tomto tématu je vysvětleno, jak můžete nastavit mapování modelu ER tak, aby závisela na kontextu země/oblasti právnické osoby, která řídí jejich použití.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605350"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680868"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurace mapování modelu ER závislého na kontextu podle země
 
@@ -48,7 +50,7 @@ Některé kroky v tomto tématu vyžadují spuštění formátu ER. V některýc
 
 Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 1](#appendix1) tohoto tématu. Nyní máte konfiguraci mapování modelu **mapování (obecná)**, která obsahuje mapování modelu pro definici **vstupního bodu 1**.
 
-![Stránka konfigurací ER, formát pro naučení konfigurace mapování.](./media/RCS-Context-specific-mapping-Tree.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Spuštění konfigurovaného formátu
 
@@ -61,7 +63,7 @@ Všimněte si, že webový prohlížeč nabízí stažení textového souboru, k
 
 Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [příloze 2](#appendix2) tohoto tématu. Nyní máte konfigurace mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)**, z nichž každá obsahuje mapování modelu pro definici **Vstupní bod 1**.
 
-![Stránka konfigurací ER, mapování obecné vlastní konfigurace.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Spuštění konfigurovaného formátu
 
@@ -71,7 +73,7 @@ Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [pří
 
 Povšimněte si, že provedení vybraného formátu ER je neúspěšné. Chybová zpráva vás informuje o tom, že existuje více mapování modelu pro definici modelu **Model k učení se mapování** a **Vstupní bod 1** v konfiguracích mapování modelu **Mapování (obecné)** a **Vlastní mapování (obecné)**. Tato zpráva také doporučuje, abyste jako výchozí konfiguraci vybrali některou z těchto konfigurací.
 
-![Stránka konfigurací ER s chybovou zprávou.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definování výchozí konfigurace mapování
 
@@ -80,9 +82,9 @@ Pomocí následujícího postupu definujte konfiguraci mapování modelu **Vlast
 1.  Na stránce **Konfigurace** ve stromové struktuře konfigurací vyberte položku **Vlastní mapování (obecné)**.
 2.  Podle potřeby vyberte možnost **Upravit**, aby byla aktuální stránka připravena pro úpravy.
 3.  Nastavte možnost **Výchozí pro mapování modelu’** na **Ano**.
-4.  Zvolte možnost **Uložit**.
+4.  Zvolte **Uložit**.
 
-![Stránka konfigurací ER, výchozí jezdec mapování modelu nastaven na Ano.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Spuštění konfigurovaného formátu
 
@@ -101,7 +103,7 @@ Chcete-li navrhnout požadované součásti ER, postupujte podle kroků v [pří
 
 Všimněte si, že verze 1 konfigurace mapování modelu **Mapování (FR)** platí pouze pro formáty ER modelu **Model k učení mapování**, které jsou spuštěny ve společnostech Finance, které mají kontext francouzské země/oblasti.
 
-![Stránka konfigurací ER, konfigurace mapování modelu (FR).](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Spuštění konfigurovaného formátu
 
@@ -119,9 +121,9 @@ Pomocí následujících kroků definujte vlastní konfiguraci mapování modelu
 1.  Na stránce **Konfigurace** ve stromové struktuře konfigurací vyberte položku **Mapování (FR)**.
 2.  Podle potřeby vyberte možnost **Upravit**, aby byla aktuální stránka připravena pro úpravy.
 3.  Nastavte možnost **Výchozí pro mapování modelu’** na **Ano**.
-4.  Zvolte možnost **Uložit**.
+4.  Zvolte **Uložit**.
 
-![Stránka konfigurací ER, konfigurace mapování (FR), výchozí jezdec mapování modelu nastaven na Ano.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![Stránka konfigurací elektronického výkaznictví](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Spuštění konfigurovaného formátu
 
@@ -195,7 +197,7 @@ V tabulce znaménko plus (+) označuje přítomnost konfigurace mapování model
 1.  V navigačním podokně přejděte na **Moduly \> Správa organizace \> Elektronické vykazování \> Protokol konfigurace ladění**.
 2.  Vyberte tlačítko **Znovu načíst tuto stránku**.
 
-![Stránka spuštění protokolů ER.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![Stránka spuštění protokolů ER](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Všimněte si, že do protokolu ladění ER byl přidán nový záznam pro spuštěný formát ER. Vzhledem k **tomu**, že pole úrovně tohoto záznamu je nastaveno na **Informace**, záznam je informativní. Vzhledem k tomu, že pole součásti Formát je nastaveno na **Konfigurace mapování**, záznam vás informuje o mapování modelu, které bylo použito při spuštění formátu ER **Formát k učení se mapování** (vybraný v poli **Název konfigurace**). Obsah pole **Generovaný text** vás informuje, že komponenta mapování **Mapování (FR)**, která je umístěna v konfiguraci **Mapování (FR)** byla použita ke spuštění této sestavy.p
 
@@ -236,9 +238,9 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám. Tato
 14. V rozevíracím dialogovém okně v poli **Název** zadejte **Popis funkce**.
 15. Vyberte **přidat**.
 
-    ![Stránka Návrhář modelu dat ER.](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![Stránka Návrhář modelu dat ER](./media/RCS-Context-specific-mapping-Model.PNG)
 
-16. Zvolte možnost **Uložit**.
+16. Zvolte **Uložit**.
 17. Zavřete stránku.
 
 #### <a name="complete-the-modified-version-of-the-model-configuration"></a>Dokončení upravené verze konfigurace modelu
@@ -276,9 +278,9 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám. Tato
 5.  Zvolte **Uložit**.
 6.  Zavřete stránku **Návrhář vzorce**.
 
-    ![Stránka návrháře mapování modelu ER, definice vstupního bodu 1.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
-7.  Zvolte možnost **Uložit**.
+7.  Zvolte **Uložit**.
 8.  Zavřete stránku **Návrhář mapování modelu**.
 9.  Zvolte **Nové**.
 10. V poli **Definice** vyberte **Vstupní bod 2**.
@@ -289,12 +291,12 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám. Tato
 15. Zvolte **Uložit**.
 16. Zavřete stránku **Návrhář vzorce**.
 
-    ![Stránka návrháře mapování modelu ER, definice vstupního bodu 2.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
-17. Zvolte možnost **Uložit**.
+17. Zvolte **Uložit**.
 18. Zavřete stránku **Návrhář mapování modelu**.
 
-    ![Stránka mapování modelu ER s definicemi vstupního bodu.](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![Stránka Mapování modelu ER](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Zavřete stránku **Mapování modelu**.
 
@@ -335,9 +337,9 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám. Tato
 2.  Vyberte pole **Popis** funkčnosti.
 3.  Vyberte možnost **vazba**.
 
-    ![Stránka návrháře formátu ER.](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![Stránka návrháře formátu ER](./media/RCS-Context-specific-mapping-Format.PNG)
 
-4.  Zvolte možnost **Uložit**.
+4.  Zvolte **Uložit**.
 5.  Zavřete stránku.
 
 ## <a name="appendix-2"></a><a name="appendix2"></a>Dodatek 2
@@ -366,26 +368,26 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám.
 3.  Vyberte možnost **Návrhář**.
 4.  V části **Datový model** vyberte **Upravit**.
 5.  Do pole **Vzorec** zadejte **Vlastní obecná funkce 1**.
-6.  Zvolte možnost **Uložit**.
+6.  Zvolte **Uložit**.
 7.  Zavřete stránku.
 
-    ![Stránka návrháře mapování modelu ER, obecná funkčnost 1 vlastní vzorec.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
-8.  Zvolte možnost **Uložit**.
+8.  Zvolte **Uložit**.
 9.  Zavřete stránku.
 10. Vyberte mapování **Kopie mapování (obecné) 2**.
 11. Vyberte možnost **Návrhář**.
 12. V části **Datový model** vyberte **Upravit**.
 13. Do pole **Vzorec** zadejte **Vlastní obecná funkce 2**.
-14. Zvolte možnost **Uložit**.
+14. Zvolte **Uložit**.
 15. Zavřete stránku.
 
-    ![Stránka návrháře mapování modelu ER, obecná funkčnost 2 vlastní vzorec.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
-16. Zvolte možnost **Uložit**.
+16. Zvolte **Uložit**.
 17. Zavřete stránku.
 
-    ![Stránka mapování modelu ER na zdroj dat pro mapování kopie mapování (obecné).](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![Stránka Mapování modelu ER](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Zavřete stránku.
 
@@ -429,27 +431,27 @@ Všimněte si, že verze 1 této konfigurace ER je připravena k úpravám.
 4.  Vyberte možnost **Návrhář**.
 5.  V části **Datový model** vyberte **Upravit**.
 6.  Do pole **Vzorec** zadejte **Funkce FR 1**.
-7.  Zvolte možnost **Uložit**.
+7.  Zvolte **Uložit**.
 8.  Zavřete stránku.
 
-    ![Stránka návrháře mapování modelu FR, funkčnost 1 vzorec.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
-9.  Zvolte možnost **Uložit**.
+9.  Zvolte **Uložit**.
 10. Zavřete stránku.
 11. Vyberte mapování **Kopie mapování 2 (obecné)**.
 12. Přejmenujte mapování na **Mapování (FR) 2**.
 13. Vyberte možnost **Návrhář**.
 14. V části **Datový model** vyberte **Upravit**.
 15. Do pole **Vzorec** zadejte **Funkce FR 2**.
-16. Zvolte možnost **Uložit**.
+16. Zvolte **Uložit**.
 17. Zavřete stránku.
 
-    ![Stránka návrháře mapování modelu FR, funkčnost 2 vzorec.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![Stránka Návrhář mapování modelu ER](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
-18. Zvolte možnost **Uložit**.
+18. Zvolte **Uložit**.
 19. Zavřete stránku.
 
-    ![Stránka mapování modelu ER na zdroj dat.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Stránka Mapování modelu ER](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Zavřete stránku.
 
@@ -494,6 +496,3 @@ Zkontrolujte, zda není jako výchozí konfigurace mapování modelu označena k
 - Nejméně jedna verze konfigurace mapování modelu ER má stav **Dokončeno** nebo **Sdíleno**. V tomto případě bude pro provádění formátu ER použita verze s nejvyšším číslem verze.
 - Možnost **Spuštění konceptu** pro konfiguraci mapování modelu ER je zapnuta. V tomto případě bude pro provádění formátu ER použita verze se stavem **Koncept**.
 > Možnost **Spustit koncept** bude dostupná na stránce **Konfigurace** pro každou konfiguraci mapování modelu ER, když je zapnutý parametr uživatele ER **Spustit nastavení**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

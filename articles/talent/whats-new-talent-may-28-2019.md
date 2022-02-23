@@ -74,6 +74,3 @@ Organizace mohou vyžadovat kódy důvodu pro konkrétní typy pracovního volna
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Poskytnutí seznamu transakcí pracovního volna a absencí pro oddělení lidských zdrojů
 
 Možnost sledování volna zaměstnanců a pochopení toho, jak se počítá volno, nejenže pomáhá oddělení lidských zdrojů odpovídat na otázky zaměstnanců, ale také zajišťuje přesné odměny za volno pro zaměstnance. Oddělení lidských zdrojů má nyní nový pohled na transakce (granty, časové rozlišení, úpravy a požadavky), aby jeho členové viděli příčiny zůstatků volna.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Účtování předpořízení dlouhodobého majetku
 description: Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa7e1dd743790d494a4b80e656ce5732c81b08bfea4da70750cd92f67b8618f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 26eaf0b1cfb504e241f2f171fb79cbe6aed794c9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752903"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407623"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Účtování předpořízení dlouhodobého majetku
 
@@ -46,9 +49,6 @@ Předtím, než budete moci zaúčtovat předpořízení, je třeba dokončit to
 9.  Kliknutím na tlačítko **OK** zavřete stránku **Návrh předpořízení**.
 10. Kliknutím na **Zaúčtovat** &gt; **Zaúčtovat** zaúčtujte transakci předpořízení. Stav dlouhodobého majetku na stránce **Knihy** by teď měl být **Pořízené**.
 
-  > [!NOTE]
-  > V parametrech návrhu akvizice / úpravy akvizice můžete nastavit datum v poli **Do data** až do data, kdy jsou vybrány transakce před akvizicí.
-  > Tato funkce je k dispozici ve verzi 10.0.17 nebo novější.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

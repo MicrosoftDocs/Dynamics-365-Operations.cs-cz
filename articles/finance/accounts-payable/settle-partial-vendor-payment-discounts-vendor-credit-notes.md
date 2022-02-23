@@ -1,28 +1,31 @@
 ---
-title: Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy
+title: Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele
 description: V tomto článku budete provedeni scénářem vyrovnání dobropisu pro fakturu.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 553150a59d132bb1d8b563e03456995cbc8d2be5f36bab0c1fe6b8bbbf77dce1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737106"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441001"
 ---
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,10 +43,10 @@ Dodavatelé společnosti Fabrikam poskytují platební slevy pro dobropisy. Doda
 
 Informace o slevě dobropisu se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/13/2015 |
-| Částka platební slevy         | 2.00      |
+| Datum platební slevy           | 7/13/2015 |
+| Částka platební slevy         | 2,00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 2,00      |
@@ -68,6 +71,3 @@ April může zkontrolovat transakce dodavatelů na stránce **Transakce dodavate
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

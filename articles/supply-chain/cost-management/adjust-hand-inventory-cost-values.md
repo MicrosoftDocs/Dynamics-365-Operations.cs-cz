@@ -2,9 +2,11 @@
 title: Úprava nákladové ceny množství na skladě
 description: Stránku Úprava zásob na skladě použijte pro úpravu hodnoty nákladů na množství zásob na skladě po spuštění procesu uzávěrky skladu.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAdjInventOnHand
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe79369fe4a85f34f7648699e90b726356ce6122594e60f21b27180982b7b149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a702a083d60bdb289712027fbaee5c0a72e60cb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770305"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963831"
 ---
 # <a name="adjust-on-hand-inventory-cost-values"></a>Úprava nákladové ceny množství na skladě
 
@@ -41,6 +43,3 @@ Pro tuto položku byl nastaven skladový model podle metody FIFO a uzávěrka sk
 -   5. února: Množství 1 s náklady 13,00 USD
 
 Chcete-li nastavit náklady těchto dvou položek na 15,00 USD, upravte pomocí možnosti úpravy množství na skladě k poslední uzávěrce skladu otevřené množství na skladě. **Poznámka:** Datem zaúčtování transakce úpravy množství na skladě bude datum poslední uzávěrky skladu. Toto datum nelze změnit.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

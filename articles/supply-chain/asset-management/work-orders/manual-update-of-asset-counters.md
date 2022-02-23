@@ -1,10 +1,12 @@
 ---
 title: Ruční aktualizace čítačů majetku
 description: Toto téma popisuje manuální aktualizaci čítačů majetku ve správě majetku.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5318bac961682f88e192ac70c4993c62b69b399c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776427"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020869"
 ---
 # <a name="manual-update-of-asset-counters"></a>Ruční aktualizace čítačů majetku
 
@@ -54,13 +56,10 @@ Mějte na paměti následující body:
 
 Následující ilustrace znázorňuje příklad stránky **Čítače majetku**.
 
-![Obrázek č. 1.](media/11-work-orders.png)
+![Obrázek č. 1](media/11-work-orders.png)
 
 Na stránce **Čítače majetku** (**Správa majetku** > **Dotazy** > **Majetek** > **Čítače majetku**) můžete zaregistrovat čítače u několika majetků najednou.
 
 >[!NOTE]
 >Rozsah lze nastavit tak, aby definoval odchylky v ručních registracích čítačů. Můžete také určit typ zprávy, která se zobrazí v případě, že se registrace nacházejí mimo definovaný rozsah. Další informace o nastavení čítačů naleznete v tématu [Čítače](../setup-for-objects/counters.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

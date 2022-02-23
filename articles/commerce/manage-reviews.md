@@ -2,12 +2,15 @@
 title: Správa hodnocení a recenzí
 description: V tomto tématu je vysvětleno, jak spravovat hodnocení a recenze v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968220"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410805"
 ---
 # <a name="manage-ratings-and-reviews"></a>Správa hodnocení a recenzí
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak spravovat hodnocení a recenze v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Dynamics 365 Commerce použije Microsoft Azure Cognitive Service k automatickému moderování recenzí pomocí redigování slov. Kromě toho mohou moderátoři použít konfigurátor webu Dynamics 365 Commerce k implementaci následujících ručních úkolů:
 
@@ -43,7 +48,7 @@ Pokud si chcete přečíst recenzi v konfigurátoru webu v Commerce, postupujte 
 
 Další filtry umožňují omezit recenze podle období, hodnocení, kanálu nebo stavu sledování (přijaté, zodpovězené nebo nahlášené).
 
-![Domovská stránka moderování.](media/rnr-moderation-home.png) 
+![Domovská stránka moderování](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Odpověď na recenzi 
 
@@ -57,7 +62,7 @@ Pokud chcete odpovědět na recenzi v konfigurátoru webu v Commerce, postupujte
 1. Zadejte text odpovědi a název, který má být zobrazen pro respondenta. Výchozí název respondenta je **Moderátor**.
 1. Po dokončení zvolte **Odeslat odpověď**.
 
-![Odpověď na recenzi.](media/rnr-moderation-response.png) 
+![Odpověď na recenzi](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Odstranění recenze 
 
@@ -80,7 +85,7 @@ Chcete-li vyhledat a odstranit data o odběrateli v konfigurátoru webu v Commer
 1. Pokud má zákazník nějakou aktivitu týkající se recenzí (např. podání recenze, hlasování o užitečnosti recenzí jiného zákazníka nebo komentáře o recenzi jiného zákazníka), zobrazí se výsledky. Pro každou položku existuje tlačítko **odstranit.**
 1. Pro každou položku, kterou je třeba odstranit, vyberte možnost **Odstranit**. Po zobrazení výzvy k potvrzení vyberte možnost **Ano.** 
     
-![Odstranění dat zákazníků.](media/rnr-moderation-delete-reviews.png) 
+![Odstranění dat zákazníků](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Může trvat až sedm dní, než budou data zcela odstraněna ze systému. Moderátoři by měli informovat zákazníky o této prodlevě.
@@ -104,21 +109,21 @@ Chcete-li si zobrazit trendy hodnocení a recenzí v konfigurátoru webu v Comme
 1. Přejděte na **Domů \> Recenze \> Vykazování**.
 1. Vyberte **Šablonu PowerBI** ke stažení šablony.
 
-    ![Stáhnout šablonu Power BI.](media/rnr-moderation-reports.png) 
+    ![Stáhnout šablonu Power BI](media/rnr-moderation-reports.png) 
 
 1. Otevře staženou šablonu pomocí aplikace Power BI. Zavřete dialogové okno **Přístup k webovému obsahu**, které se zobrazí, a poté zavřete zobrazenou chybovou zprávu "Obnovit".
 1. Přejděte na **Domovskou stránku**, vberte **Upravit dotazy** a pak vyberte **Nastavení zdroje dat**.
 1. V dialogovém okně **Nastavení zdroje dat** vyberte možnost **Změnit zdroj**.
 1. V poli **Adresa URL** zadejte cestu k datům recenzí, která jste stáhli v předchozím postupu (například **c:\\reviews\\ReviewsData.csv**).
 
-    ![Pole Adresa URL v dialogovém okně hodnot oddělených čárkou.](media/rnr-powerbi-datasource-settings.png) 
+    ![Pole Adresa URL v dialogovém okně hodnot oddělených čárkou](media/rnr-powerbi-datasource-settings.png) 
 
 1. Vyberte možnost **OK** a pak zvolte **Použít změny**. Použijete-li změny ve zdroji dat, bude provedena za jednu až dvě minuty.
 1. Chcete-li zobrazit hodnocení a recenze trendů, vyberte volbu **List trendů**.
 
-    ![Trendy hodnocení a recenzí.](media/rnr-powerbi-dashboard-template.png) 
+    ![Trendy hodnocení a recenzí](media/rnr-powerbi-dashboard-template.png) 
     
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
 
@@ -127,14 +132,3 @@ Chcete-li si zobrazit trendy hodnocení a recenzí v konfigurátoru webu v Comme
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
-
-[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
-
-[Import a export hodnocení a recenzí](import-export-reviews.md)
-
-[Konfigurace ověřování mezi službami](service-to-service-auth.md)
-
-[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

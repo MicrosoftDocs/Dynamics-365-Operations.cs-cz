@@ -2,13 +2,16 @@
 title: Úpravy ceny a slevy
 description: Tento článek obsahuje informace o úpravách cen a slev v aplikaci Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 06/11/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 96a695df250cda514b7bd8b9716c0f03fb2bfd28d3af4daedaf1335c3099fbb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748491"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584308"
 ---
 # <a name="price-adjustments-and-discounts"></a>Úpravy ceny a slevy
 
@@ -48,13 +51,3 @@ Existují mnoho typů slev:
 - **Přepravní sleva** – Sleva, která se použije, když celková částka transakce přesáhne zadanou částku a na objednávku se použije určitý způsob doručení (například dvoudenní nebo noční přeprava).
 
 Úpravy ceny i slevy lze propojit s cenovými skupinami. Skupiny cen lze pak přidružit s kanály, katalogy, umístěním a věrnostními programy.
-
-> [!NOTE]
-> Kombinační sleva a mezní sleva mají vlastnosti s názvem „Započítat produkty bez slevy“ a „Započítat produkty bez slevy do mezní hodnoty“. Pokud jsou tyto vlastnosti povoleny, položka, která nemá nárok na žádnou slevu, může stále pomoci kvalifikovat transakci k udělení slevy, ale nezpůsobilá položka slevu nezíská. 
-> 
-> Například pokud vytvoříte kombinační slevu se dvěma řádky A a B, kde by měl zákazník získat slevu 10% na obě položky, ale položka A má zaškrtnutou konfiguraci „Zabránit všem slevám“, pak by obvykle položka A do slevy zahrnuta nebyla. Pokud je však povolena vlastnost „Započítat produkty bez slevy“, lze položku A použít k získání kombinační slevy, ale 10% sleva se použije pouze na položku B. Podobná logika platí i pro mezní slevu. 
->
-> Vlastnost „Započítat produkty bez slevy do mezní hodnoty“ má však ve srovnání s vlastností „Započítat produkty bez slevy“ kombinační slevy další schopnost. Pokud je povolena mezní sleva a pokud existuje položka, která má existující slevu, která by bránila položce v jakýchkoli jiných slevách, pak by cena zaplacená za tuto položku způsobila splnění mezní hodnoty, ale tato položka nedostane další slevu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

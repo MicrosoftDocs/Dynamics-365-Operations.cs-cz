@@ -2,30 +2,35 @@
 title: Vytvoření seznamů úkolů a přidání úkolů
 description: Tohle téma popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756518"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410846"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Vytvoření seznamů úkolů a přidání úkolů
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 *Úkol* definuje určitou část práce nebo akci, kterou musí dokončit v určitém termínu splnění nebo před ním. V Dynamics 365 Commerce může úkol obsahovat podrobné pokyny a informace o kontaktní osobě. Může rovněž zahrnovat odkazy na operace administrativy, operace pokladního místa (POS) nebo stránky webu, aby se zvýšila produktivita a byl poskytnut kontext, který vlastník úkolu potřebuje k efektivnímu dokončení úkolu.
 
@@ -70,7 +75,7 @@ Chcete-li při vytváření úlohy přidat odkazy na úkoly, postupujte podle n�
 
 Na následujícím obrázku je znázorněn výběr propojení úkolů v dialogovém okně **Upravit úkol**.
 
-![Výběr odkazů na úkoly v dialogovém okně Upravit úkol.](media/HQ-POS-Tasks-Linking.png)
+![Výběr odkazů na úkoly v dialogovém okně Upravit úkol](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>Konfigurace operace POS, aby ji bylo možné propojit s úkolem
 
@@ -88,6 +93,3 @@ Chcete-li nakonfigurovat operaci POS, aby ji bylo možné propojit s úkolem, po
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

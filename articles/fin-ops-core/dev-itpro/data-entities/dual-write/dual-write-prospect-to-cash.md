@@ -2,29 +2,40 @@
 title: Zpeněžení potenciálního zákazníka ve dvojím připisování
 description: Toto téma obsahuje informace o Zpeněžení potenciálního zákazníka ve dvojím zapisování.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781784"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959594"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Zpeněžení potenciálního zákazníka ve dvojím připisování
 
 [!include [banner](../../includes/banner.md)]
 
+
+
 Důležitým cílem většiny společností je převod potenciálních zákazníků na odběratele a následný obchodní vztah s těmito odběrateli. V aplikacích Microsoft Dynamics 365 se proces zpeněžení potenciálního zákazníka uskutečňuje prostřednictvím nabídek nebo workflowů zpracování objednávek a finanční záznamy jsou odsouhlaseny a uznány. Integrace zpeněžení potenciálního zákazníka s dvojím zapisováním vytvoří workflow, který přebírá nabídku a objednávku, která pochází z produktu Dynamics 365 Sales nebo Dynamics 365 Supply Chain Management a zpřístupňuje nabídku a objednávku v obou aplikacích.
 
 V rozhraní aplikace můžete přistupovat ke stavům zpracování a informacím o fakturách v reálném čase. Z tohoto důvodu je možné snadněji spravovat funkce, jako je například výdeje produktu, zpracování zásob a splnění v modulu Supply Chain Management, aniž by bylo nutné znovu vytvářet nabídky a objednávky.
 
-![Datový tok s dvojím zápisem ve zpeněžení potenciálního zákazníka.](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Datový tok s dvojím zápisem ve zpeněžení potenciálního zákazníka](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Informace o integraci zákazníků a kontaktů najdete v části [Integrovaný kmenový soubor zákazníka](customer-mapping.md). Informace o integraci produktu najdete v části [Jednotná zkušenost s produktem](product-mapping.md).
 
@@ -39,7 +50,7 @@ Než bude možné synchronizovat prodejní nabídky, je nutné aktualizovat nás
 
 V Sales přejděte na **Nastavení \> Správa \> Nastavení systému \> Prodej** a ujistěte se, že se používají následující nastavení:
 
-- Možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
+- Systémová možnost **Použít systém výpočtu ceny** je nastavena na **Ano**.
 - Sloupec **Metoda výpočtu slevy** je nastaven na **Položka řádku**.
 
 ### <a name="sites-and-warehouses"></a>Pracoviště a sklady
@@ -61,7 +72,6 @@ Prodejní nabídky mohou být vytvořeny v aplikaci Sales nebo Supply Chain Mana
 + Sloupce **Podmínky přepravy**, **Dodací podmínky**, **Způsob dopravy** a **Způsob dodání** nejsou součástí výchozího mapování. Pokud chcete tyto sloupce mapovat, je nutné nastavit mapování hodnoty, které je specifické pro data v organizacích, mezi nimiž je tabulka synchronizována.
 
 Používáte-li také řešení Field Service, ujistěte se, že jste znovu povolili parametr **Rychlé vytvoření řádky nabídky**. Opětovná aktivace parametru umožňuje pokračovat ve vytváření řádků nabídky pomocí funkce rychlého vytvoření.
-
 1. Přejděte k aplikaci Dynamics 365 Sales.
 2. V horním navigačním pruhu vyberte ikonu nastavení.
 3. Vyberte možnost **Rozšířená nastavení**.
@@ -113,25 +123,40 @@ Zpeněžení potenciálního zákazníka zahrnují kolekce map základních tabu
 
 | Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
 |-----------------------------|-----------------------------------|-------------|
-[Všechny výrobky](mapping-reference.md#138) | msdyn_globalproducts | |
-[Zákazníci V3](mapping-reference.md#101) | účty | |
-[Zákazníci V3](mapping-reference.md#116) | kontakty | |
-[Kontakty V2](mapping-reference.md#221) | msdyn_contactforparties | |
-[Záhlaví prodejní objednávky CDS](mapping-reference.md#217) | salesorders | |
-[Řádky prodejní objednávky CDS](mapping-reference.md#216) | salesorderdetails | |
-[Záhlaví prodejní nabídky CDS](mapping-reference.md#215) | nabídky | |
-[Řádky prodejní nabídky CDS](mapping-reference.md#214) | quotedetails | |
-[Uvolněné produkty V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury | Tabulka záhlaví prodejní faktury V2 v aplikaci Finance and Operations obsahuje faktury za prodejní objednávky a faktury s volným textem. Je použit filtr v Dataverse pro duální zápis, který odfiltruje veškeré dokumenty s volným textem na faktuře. |
-[Řádky prodejní faktury V2](mapping-reference.md#117) | invoicedetails | |
-[Kódy původu prodejních objednávek](mapping-reference.md#186) | msdyn_salesorderorigins | |
+| Záhlaví prodejní faktury V2    | faktury                          | Tabulka záhlaví prodejní faktury V2 v aplikaci Finance and Operations obsahuje faktury za prodejní objednávky a faktury s volným textem. Je použit filtr v Dataverse pro duální zápis, který odfiltruje veškeré dokumenty s volným textem na faktuře. |
+| Řádky prodejní faktury V2      | invoicedetails                    |             |
+| Záhlaví prodejní objednávky CDS     | salesorders                       |             |
+| Řádky prodejní objednávky CDS       | salesorderdetails                 |             |
+| Kódy původu prodejních objednávek    | msdyn\_salesorderorigins          |             |
+| Záhlaví prodejní nabídky CDS  | nabídky                            |             |
+| Řádky prodejní nabídky CDS   | quotedetails                      |             |
 
-Informace o cenících najdete v části [Jednotná zkušenost s produktem](product-mapping.md).
+Zde jsou přidružená mapování základních tabulek pro zpeněžení potenciálního zákazníka:
+
++ [Zákazníci V3 do accounts](customer-mapping.md#customers-v3-to-accounts)
++ [CDS kontakty V2 do contacts](customer-mapping.md#cds-contacts-v2-to-contacts)
++ [Zákazníci V3 do contacts](customer-mapping.md#customers-v3-to-contacts)
++ [Uvolněné produkty V2 do msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
++ [Všechny produkty do msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
++ [Ceník](product-mapping.md)
 
 ## <a name="limitations"></a>Omezení
-
 - Vrácené objednávky nejsou podporovány.
 - Dobropisy nejsou podporovány.
-- Je třeba nastavit finanční dimenze pro kmenová data, například zákazníka a dodavatele. Když je zákazník přidán do nabídky nebo prodejní objednávky, finanční dimenze přidružené k záznamu zákazníka se automaticky dostanou do objednávky. V současné době duální zápis nezahrnuje data finančních dimenzí pro kmenová data.
+- Je třeba nastavit finanční dimenze pro kmenová data, například zákazníka a dodavatele. Když je zákazník přidán do nabídky nebo prodejní objednávky, finanční dimenze přidružené k záznamu zákazníka se automaticky dostanou do objednávky. V současné době duální zápis nezahrnuje data finančních dimenzí pro kmenová data. 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
+
+[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
+
+[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
+
+[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
+
+[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
+
+[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
+
+[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]

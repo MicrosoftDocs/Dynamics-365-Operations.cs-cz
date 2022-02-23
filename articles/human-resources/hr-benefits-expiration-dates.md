@@ -1,33 +1,31 @@
 ---
 title: Správa dat vypršení platnosti zaměstnaneckých výhod
-description: Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců.
-author: twheeloc
-ms.date: 08/23/2021
+description: Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 04751718e22f7339a032ce4a94e919a653876e4b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417556"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Správa dat vypršení platnosti zaměstnaneckých výhod
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstnaneckých výhod a spravovat data přihlášení zaměstnanců, které jsou registrovaní pro zaměstnanecké výhody. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 ## <a name="benefit-expiration-dates"></a>Data vypršení platnosti zaměstnaneckých výhod
 
@@ -48,6 +46,3 @@ Tento postup popisuje, jak můžete ukončit nebo prodloužit platnost zaměstna
 15. Klikněte na možnost Zaměstnanecké výhody.
 16. V seznamu vyhledejte výhodu a vyberte záznam. Všimněte si nového koncového data pokrytí.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

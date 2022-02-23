@@ -2,23 +2,26 @@
 title: Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022
 description: Tato úloha vás provede nastavením informací o bankovním účtu společnosti potřebném pro generování souborů platby dodavatele.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a0f8ac369bb6b9a7a0f21c23aaddab2601ae3f8f37e2427cbb10b5509a7a2f23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 652d8aa8f78d9a12ee390d23904f2c94d9bcf684
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768710"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441078"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022
 
@@ -57,6 +60,3 @@ Toto je druhý z pěti postupů, které společně popisují proces platby odbě
     * Příklad: vyberte bankovní účet DEMF OPER.  
 6. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

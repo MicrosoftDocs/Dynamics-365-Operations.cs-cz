@@ -1,10 +1,12 @@
 ---
 title: Plánování operací
 description: Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574562"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966398"
 ---
 # <a name="operations-scheduling"></a>Plánování operací
 
@@ -74,12 +76,10 @@ Když spustíte plánování operací, můžete zrušit konkrétní částí pos
 ## <a name="finite-materials"></a>Omezený materiál
 Pokud pracujete s hotovými materiály, plánování je závislé také na dostupnosti materiálů potřebných k výrobě. Pokud není k dispozici dostatek součástí pro výrobu, může být výroba zpožděna. Plánování můžete založit na použití materiálů zadáním materiálů, které musí být k dispozici pro výrobu. Při optimalizaci kapacity prostředků a dostupnosti materiálů je výroba vypočtena podle těchto omezení. Zahájení výrobní zakázky nelze naplánovat, dokud nebude k dispozici veškerá kapacita a materiály současně a v požadovaných množstvích.
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Možnosti plánování v aplikaci Operations](operation-scheduling-options.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1 - návrh datového modelu)
-description: Toto téma popisuje, jak nakonfigurovat model elektronického výkaznictví (ER) tak, aby používal finanční dimenze jako zdroj dat pro zprávy ER. (část 1)
+description: Následující postup popisuje, jak správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e165901fdbaf723ea0122f00f79c2ab2050e33db2fcad8e6d6a8d0ba53e41b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35c4a05fb15a7e3166c6d075569debcf9cbc3cc3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734689"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681702"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1 - návrh datového modelu)
 
@@ -101,11 +103,8 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 66. Kliknutím na možnost Nový otevřete dialogové okno.
 67. Do pole Název zadejte název.
 68. Klepněte na možnost Přidat.
-69. Klikněte na tlačítko Uložit.
+69. Klepněte na tlačítko Uložit.
 70. Zavřete stránku.
 
-![Stránka Návrhář modelu dat ER.](../media/er-financial-dimensions-guides-data-model.png)
+![Stránka Návrhář modelu dat ER](../media/er-financial-dimensions-guides-data-model.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

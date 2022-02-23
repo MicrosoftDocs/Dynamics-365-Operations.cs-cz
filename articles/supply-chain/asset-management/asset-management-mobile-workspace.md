@@ -1,31 +1,36 @@
 ---
-title: Použití mobilního pracovního prostoru správy majetku
+title: Pracovnímu prostor správy majetku
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Správa majetku.
-author: johanhoffmann
-ms.date: 01/15/2021
+author: josaw1
+manager: tfehr
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: mkirknel
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 62bb178e714611367c825c87044a31275f5540accc9363137c7cecbcec1bec65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 525f21d076027f1bf339e59fd0e346706044839c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771532"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423641"
 ---
-# <a name="use-the-asset-management-mobile-workspace"></a>Použití mobilního pracovního prostoru správy majetku
+# <a name="asset-management-mobile-workspace"></a>Pracovnímu prostor správy majetku
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma obsahuje informace o mobilním pracovním prostoru **Správa majetku**. Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat.
+
+Toto téma obsahuje informace o mobilním pracovním prostoru Správa majetku. Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat.
+
 
 ## <a name="overview"></a>Přehled
 
@@ -39,204 +44,212 @@ Konkrétně mobilní pracovní prostor **Správa majetku** uživatelům umožňu
 - Vytvořit, zobrazit a upravit úlohu pracovního příkazu, aktualizovat čítače majetku, zobrazit kontrolní seznam údržby, zobrazit a upravit poznámky k úloze pracovního příkazu, zobrazit nástroje vyžadované pro úlohu pracovního příkazu.
 - Zobrazení nebo vyhledání konkrétního majetku nebo funkčního místa.
 
+
 ## <a name="prerequisites"></a>Předpoklady
 
-Než budete moci použít mobilní pracovní prostor **Správa majetku**, musí váš správce nastavit požadované uživatelské a pracovní účty a pracovní prostor publikovat. Další informace viz [Nastavení mobilního pracovního prostoru pro správu majetku](set-up-asset-management-mobile.md).
+Předpoklady se liší podle verze aplikace Dynamics 365 Supply Chain Management, která byla nasazena ve vaší organizaci.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-supply-chain-management"></a>Předpoklady při použití Microsoft Dynamics 365 Supply Chain Management 
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 Supply Chain Management , správce systému musí publikovat mobilní pracovní prostor **Správamajetku**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-
 Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 - [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
-
 1. Spusťte aplikaci na svém mobilním zařízení.
 
-1. Zadejte adresu URL aplikace Dynamics 365.
+2. Zadejte adresu URL aplikace Dynamics 365.
 
-1. Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
+3. Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 
-1. Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
+4. Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-    ![Výběr pracovního prostoru.](media/am-mobile-01.png "Výběr pracovního prostoru")
+![Obrázek č. 1](media/am-mobile-01.png)
+
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Kalendář mých úloh pracovního příkazu**.
+2. Vyberte **Kalendář mých úloh pracovního příkazu**.
 
-1. Vyberte datum, pro které chcete zobrazit úlohy pracovních příkazů. V seznamu uvidíte ID majetku a ID funkčního místa pro každou úlohu pracovního příkazu.
+3. Vyberte datum, pro které chcete zobrazit úlohy pracovních příkazů. V seznamu uvidíte ID majetku a ID funkčního místa pro každou úlohu pracovního příkazu.
 
-1. V seznamu vyberte úlohu pracovního příkazu, v níž se zobrazí podrobnosti o úloze: informace o majetku a funkčním umístění a další navigační odkazy pro zobrazení možností **Přílohy**, **Kontrolní seznamy**, **Nástroje**, **Čítače majetku**, **Poznámky**, **Deníky**.
+4. V seznamu vyberte úlohu pracovního příkazu, v níž se zobrazí podrobnosti o úloze: informace o majetku a funkčním umístění a další navigační odkazy pro zobrazení možností **Přílohy**, **Kontrolní seznamy**, **Nástroje**, **Čítače majetku**, **Poznámky**, **Deníky**.
 
-    ![Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře.](media/am-mobile-02.png "Zobrazení přiřazených úloh pracovního příkazu v zobrazení kalendáře")
+![Obrázek č. 2](media/am-mobile-02.png)
+
 
 ## <a name="create-a-work-order-job"></a>Vytvoření úlohy pracovního příkazu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pacovní příkazu, pro něhož chcete vytvořit novou úlohu pracovního příkazu.
+3. Vyberte pacovní příkazu, pro něhož chcete vytvořit novou úlohu pracovního příkazu.
 
-1. Vyberte tlačítko **Přidat řádek**.
+4. Vyberte tlačítko **Přidat řádek**.
 
-1. Vyberte **Majetek**, pro něhož chcete vytvořit novou úlohu pracovního příkazu.
+5. Vyberte **Majetek**, pro něhož chcete vytvořit novou úlohu pracovního příkazu.
 
-1. Vyberte **Typ práce údržby**, **Variantu typu práce údržby** a **Obchod**.
+6. Vyberte **Typ práce údržby**, **Variantu typu práce údržby** a **Obchod**.
 
-1. Vyberte **Hotovo**.
+7. Vyberte **Hotovo**.
 
-    ![Obrazovka Přidat řádek.](media/am-mobile-03.png "Obrazovka Přidat řádek")
+![Obrázek č. 3](media/am-mobile-03.png)
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Přidejte přílohu k úloze pracovního příkazu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pacovní příkaz > úlohu pracovního příkazu, ke které chcete přidat příllohu.
+3. Vyberte pacovní příkaz > úlohu pracovního příkazu, ke které chcete přidat příllohu.
     - Případně na domovské stránce vyberete **Kalendář mých úloh pracovního příkaz** nebo **Seznam mých úloh pracovního příkazu** a přejděte na stránku **Podrobnosti úlohy pracovního příkazu**.
 
-1. Vyberte **Přílohy** na stránce **Podrobnosti úlohy pracovního příkazu**.
+4. Vyberte **Přílohy** na stránce **Podrobnosti úlohy pracovního příkazu**.
 
-1. Na úloze pracovního příkazu uvidíte existující přílohy. Vyberte **Přidat přílohu**.
+5. Na úloze pracovního příkazu uvidíte existující přílohy. Vyberte **Přidat přílohu**.
 
-1. Zadejte **Název** a **Poznámky** k příloze.
+6. Zadejte **Název** a **Poznámky** k příloze.
 
-1. Vyberte **Zvolit obrázek**, chcete-li vybrat fotografii z mobilní galerie nebo **Pořídit fotografii**, pokud chete pořídit fotografii.
+7. Vyberte **Zvolit obrázek**, chcete-li vybrat fotografii z mobilní galerie nebo **Pořídit fotografii**, pokud chete pořídit fotografii.
 
-1. Vyberte **Hotovo**.
+8. Vyberte **Hotovo**.
 
-    ![Zobrazení a přidání příloh k úloze pracovního příkazu.](media/am-mobile-04.png "Zobrazení a přidání příloh k úloze pracovního příkazu")
+![Obrázek č. 4](media/am-mobile-04.png)
+
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Zobrazit kontrolní seznam údržby pro úlohu pracovního příkazu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete zobrazit kontrolní seznam.
+3. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete zobrazit kontrolní seznam.
     - Případně na domovské stránce vyberete **Kalendář mých úloh pracovního příkaz** nebo **Seznam mých úloh pracovního příkazu** a přejděte na stránku **Podrobnosti úlohy pracovního příkazu**.
 
-1. Vyberte **Kontrolní seznamy** na stránce **Podrobnosti úlohy pracovního příkazu**.
+4. Vyberte **Kontrolní seznamy** na stránce **Podrobnosti úlohy pracovního příkazu**.
 
-1. Zobrazí se seznam řádků kontrolního seznamu, které souvisejí s úlohou pracovního příkazu. Chcete-li zobrazit **Pokyny** a přidat **Poznámky**, vyberte řádek kontrolního seznamu.
+5. Zobrazí se seznam řádků kontrolního seznamu, které souvisejí s úlohou pracovního příkazu. Chcete-li zobrazit **Pokyny** a přidat **Poznámky**, vyberte řádek kontrolního seznamu.
 
-1. Chcete-li se vrátit k na předchozí stránku, klikněte na tlačítko Zpět (**<**).
+6. Chcete-li se vrátit k na předchozí stránku, klikněte na tlačítko Zpět (**<**).
 
-    ![Kontrolní seznam údržby a podrobnosti o řádku.](media/am-mobile-05.png "Kontrolní seznam údržby a podrobnosti o řádku")
+![Obrázek č. 5](media/am-mobile-05.png)
+
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Zobrazit a aktualizovat čítače majetku na úloze pracovního příkazu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete zobrazit čítače majetku.
+3. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete zobrazit čítače majetku.
     - Případně na domovské stránce vyberete **Kalendář mých úloh pracovního příkaz** nebo **Seznam mých úloh pracovního příkazu** a přejděte na stránku **Podrobnosti úlohy pracovního příkazu**.
 
-1. Vyberte **Čítače majetku** na stránce **Podrobnosti úlohy pracovního příkazu**.
+4. Vyberte **Čítače majetku** na stránce **Podrobnosti úlohy pracovního příkazu**.
 
-1. Zobrazí se seznam čítačů majetku, které souvisejí s úlohou pracovního příkazu. Chcete-li aktualizovat hodnotu čítače, vyberte ikonu tužky na řádku čítače majetku.
+5. Zobrazí se seznam čítačů majetku, které souvisejí s úlohou pracovního příkazu. Chcete-li aktualizovat hodnotu čítače, vyberte ikonu tužky na řádku čítače majetku.
 
-1. Zadejte novou hodnotu čítače a vyberte tlačítko **Hotovo**.
+6. Zadejte novou hodnotu čítače a vyberte tlačítko **Hotovo**.
 
-    ![Zobrazení a aktualizace počítadel majetku.](media/am-mobile-06.png "Zobrazení a aktualizace počítadel majetku")
+![Obrázek č. 6](media/am-mobile-06.png)
+
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Registrovat spotřebu pro úlohu pracovního příkazu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete přidat registraci spotřeby.
+3. Vyberte pacovní příkaz > úloha pracovního příkazu, pro kterou chcete přidat registraci spotřeby.
     - Případně na domovské stránce vyberete **Kalendář mých úloh pracovního příkaz** nebo **Seznam mých úloh pracovního příkazu** a přejděte na stránku **Podrobnosti úlohy pracovního příkazu**.
 
-1. Vyberte **Deníky** na stránce **Podrobnosti úlohy pracovního příkazu**.
+4. Vyberte **Deníky** na stránce **Podrobnosti úlohy pracovního příkazu**.
 
-1. Chcete-li vytvořit registrace pracovní doby, vyberte možnost **Přidat hodiny**.
+5. Chcete-li vytvořit registrace pracovní doby, vyberte možnost **Přidat hodiny**.
     1. Vyberte **Kategorii** z vyhledávání.
-    1. V poli **Hodiny** zadejte počet pracovních hodin strávených úlohou pracovního příkazu.
-    1. Zvolte patřičnou **Vlastnost řádku**.
-    1. Vyberte **Hotovo**.
+    2. V poli **Hodiny** zadejte počet pracovních hodin strávených úlohou pracovního příkazu.
+    3. Zvolte patřičnou **Vlastnost řádku**.
+    4. Vyberte **Hotovo**.
 
-1. Chcete-li vytvořit registrace položek, vyberte možnost **Přidat položky**.
+6. Chcete-li vytvořit registrace položek, vyberte možnost **Přidat položky**.
     1. Vyberte **Číslo položky** z vyhledávání.
-    1. Vyberte **Pracoviště** z vyhledávání.
-    1. Zadejte **Množství** spotřebovaných položek.
-    1. Vyberte **Hotovo**.
+    2. Vyberte **Pracoviště** z vyhledávání.
+    3. Zadejte **Množství** spotřebovaných položek.
+    4. Vyberte **Hotovo**.
 
-1. Chcete-li vytvořit registrace výdajů, vyberte možnost **Přidat výdaj**.
+7. Chcete-li vytvořit registrace výdajů, vyberte možnost **Přidat výdaj**.
     1. Vyberte **Kategorii** z vyhledávání.
-    1. Zadejte množství pro registraci výdaje.
-    1. Vybrat **Měnu prodeje** z vyhledávání.
-    1. Zadejte **Nákladovou cenu** pro registraci výdaje.
-    1. Vyberte **Hotovo**.
+    2. Zadejte množství pro registraci výdaje.
+    3. Vybrat **Měnu prodeje** z vyhledávání.
+    4. Zadejte **Nákladovou cenu** pro registraci výdaje.
+    5. Vyberte **Hotovo**.
 
-    ![Aktualizace deníku pracovních příkazů.](media/am-mobile-07.png "Aktualizace deníku pracovních příkazů")
+![Obrázek č. 7](media/am-mobile-07.png)
+
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Aktualizace stavu životního na pracovním příkazu.
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Vyberte **Všechny pracovní příkazy údržby**.
+2. Vyberte **Všechny pracovní příkazy údržby**.
 
-1. Vyberte pracovní příkaz, pro něhož chcete aktualizovat stav životního cyklu.
+3. Vyberte pracovní příkaz, pro něhož chcete aktualizovat stav životního cyklu.
 
-1. V dolní části obrazovky vyberte tlačítko **Ktualizovat stav**.
+4. V dolní části obrazovky vyberte tlačítko **Ktualizovat stav**.
 
-1. Vyberte ze seznamu nový stav životního cyklu.
+5. Vyberte ze seznamu nový stav životního cyklu.
 
-1. Vyberte **Hotovo**.
+6. Vyberte **Hotovo**.
 
-    ![Aktualizace stavu životního na pracovním příkazu..](media/am-mobile-08.png "Aktualizace stavu životního na pracovním příkazu.")
+![Obrázek č. 8](media/am-mobile-08.png)
+
 
 ## <a name="create-a-maintenance-request"></a>Vytvoření požadavku na údržbu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Zvolte **Všechny žádosti údržby**.
+2. Zvolte **Všechny žádosti údržby**.
 
-1. V části obrazovky vyberte **Akce** a vyberte **Vytvořit požadavek na údržbu**.
+3. V části obrazovky vyberte **Akce** a vyberte **Vytvořit požadavek na údržbu**.
 
-1. Je-li povolena číselná řada pro požadavky na údržbu v modulu **Správa majetku**, pole **Požadavek na údržbu** je skryté, protože je automaticky vyplněno. Pokud je pole **Požadavek na údržbu** viditelné, vložte ID požadavku na údržbu.
+4. Je-li povolena číselná řada pro požadavky na údržbu v modulu **Správa majetku**, pole **Požadavek na údržbu** je skryté, protože je automaticky vyplněno. Pokud je pole **Požadavek na údržbu** viditelné, vložte ID požadavku na údržbu.
 
-1. Zvolte **Typ požadavku na údržbu**.
+5. Zvolte **Typ požadavku na údržbu**.
 
-1. Zadejte **Description** pro požadavek na údržbu.
+6. Zadejte **Description** pro požadavek na údržbu.
 
-1. Vyberte **Majetek**, pro který chcete vytvořit požadavek.
+7. Vyberte **Majetek**, pro který chcete vytvořit požadavek.
 
-1. Vyberte **Úroveň služeb** pro požadavek na údržbu.
+8. Vyberte **Úroveň služeb** pro požadavek na údržbu.
 
-1. Vyberte **Hotovo**.
+9. Vyberte **Hotovo**.
 
-    ![Vytvoření požadavku na údržbu.](media/am-mobile-09.png "Vytvoření požadavku na údržbu")
+![Obrázek č. 9](media/am-mobile-09.png)
+
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Přidat přílohu k požadavku na údržbu
 
 1. Na svém mobilním zařízení otevřete pracovní prostor **Správa majetku**.
 
-1. Zvolte **Všechny žádosti údržby**.
+2. Zvolte **Všechny žádosti údržby**.
 
-1. Vyberte požadavek na údržbu, ke kterému chcete přidat přílohu.
+3. Vyberte požadavek na údržbu, ke kterému chcete přidat přílohu.
 
-1. Výberte **Přílohy** v dolní části obrazovky.
+4. Výberte **Přílohy** v dolní části obrazovky.
 
-1. Vyberte **Přidat přílohy**.
+5. Vyberte **Přidat přílohy**.
 
-1. Zadejte **Název** a **Poznámky** k příloze.
+6. Zadejte **Název** a **Poznámky** k příloze.
 
-1. Vyberte **Zvolit obrázek**, chcete-li vybrat fotografii z mobilní galerie nebo **Pořídit fotografii**, pokud chete pořídit fotografii.
+7. Vyberte **Zvolit obrázek**, chcete-li vybrat fotografii z mobilní galerie nebo **Pořídit fotografii**, pokud chete pořídit fotografii.
 
-1. Vyberte **Hotovo**.
+8. Vyberte **Hotovo**.
 
-    ![Přidat přílohu k požadavku na údržbu.](media/am-mobile-10.png "Přidat přílohu k požadavku na údržbu")
+![Obrázek č. 10](media/am-mobile-10.png)
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

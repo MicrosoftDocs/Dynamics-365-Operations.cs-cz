@@ -1,39 +1,37 @@
 ---
-title: Správa funkcí v modulu Human Resources
-description: V tomto tématu je popsána funkce správy funkcí a její použití.
-author: twheeloc
-ms.date: 08/19/2021
+title: Správa funkcí
+description: Seznamte se s postupy zapnutí a vypnutí nových funkcí v aplikaci Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069700"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417671"
 ---
-# <a name="manage-features-in-human-resources"></a>Správa funkcí v modulu Human Resources
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="manage-features"></a>Správa funkcí
 
 V rámci našeho průběžného přidávání nových funkcí pro aplikaci Microsoft Dynamics 365 Human Resources chceme, aby zákazníci co nejdříve měli k dispozici nové funkce. Poskytujeme funkce Preview, které jsou téměř připraveny k obecné dostupnosti a prošly rozsáhlým testováním. Právě hledáme další z zpětnou vazbu od zákazníků a ověření před tím, než budou dostupné široké veřejnosti.
 
-Další informace o nových funkcích v Human Resources naleznete v části [Co je nového v Human Resources](hr-admin-whats-new.md) a [plán vydání Dynamics 365 a Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products).
+Další informace o nových funkcích v Human Resources naleznete v části [Co je nového v Human Resources](hr-admin-whats-new.md) a [plán vydání Dynamics 365 a Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
-Pracovní prostor **Správa funkcí** uvádí seznam funkcí dodaných v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Pracovní prostor **Správa funkcí** uvádí seznam funkcí dodaných v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Všechny nové funkce zůstanou v náhledu nejméně 30 dnů a obvykle jsou zde 30-60 dní. Hlavní funkce jsou obvykle k dispozici v říjnu a dubnu každého roku po období náhledu. Jakmile se v pracovním prostoru **Správa funkcí** zobrazí nové funkce, můžete je zapnout. Některé funkce mohou být ve výchozím nastavení zapnuty.
 
@@ -72,7 +70,7 @@ Správa zaměstnaneckých výhod nahrazuje funkce v pracovním prostoru **Zaměs
 - **Zásady způsobilosti k zaměstnaneckým výhodám**
 - **Události nároku**
 
-Informace na těchto stránkách lze zobrazit v režimu jen pro čtení. Chcete-li upravit informace, je nejprve nutné zakázat funkci Preview správy zaměstnaneckých výhod (platí pouze pro prostředí **Sandbox**).
+Informace v těchto formulářích lze zobrazit v režimu jen pro čtení. Chcete-li upravit informace, je nejprve nutné zakázat funkci Preview správy zaměstnaneckých výhod (platí pouze pro prostředí **Sandbox**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Povolit nebo zakázat Pracovní volno a absence
 
@@ -95,6 +93,4 @@ Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje 
 ## <a name="see-also"></a>Viz také
 
 - [Co je nového v Human Resources](hr-admin-whats-new.md)
-- [Plán vydání Dynamics 365 a Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Plán vydání Dynamics 365 a Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)

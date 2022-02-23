@@ -1,34 +1,32 @@
 ---
 title: Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
-description: Toto téma vysvětluje, co dělat, pokud Microsoft Dynamics 365 Human Resources není uveden v seznamu aplikací Microsoft Dynamics 365.
-author: twheeloc
-ms.date: 08/19/2021
+description: Tento článek vysvětluje, jak postupovat v případech, kdy zákazník nevidí aplikaci Microsoft Dynamics 365 Human Resources for Talent mezi aplikacemi Microsoft Dynamics 365.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069673"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417610"
 ---
-# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Aplikace Human Resources se nezobrazuje v aplikacích Microsoft Dynamics 365
+# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-**Problém**
+**Vydání**
 
 Zákazník nevidí Dynamics 365 Human Resources mezi aplikacemi Microsoft Dynamics 365.
 
@@ -42,21 +40,18 @@ Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Micr
 
 3. Na kartě **Zabezpečení** na kartě **Role prostředí** zvolte **Tvůrce prostředí**.
 
-    ![Karta Role prostředí.](media/environment-roles.png)
+    ![Karta Role prostředí](media/environment-roles.png)
 
 4. Na kartě **Uživatelé** přidejte uživatele nebo organizaci.
 
-    ![Karta Uživatelé.](media/environment-maker.png)
+    ![Karta Uživatelé](media/environment-maker.png)
 
-5. Zvolte možnost **Uložit**.
+5. Zvolte **Uložit**.
 
 6. Uživatel se musí nyní přihlásit do [Microsoft Dynamics 365](https://home.dynamics.com/).
 
 7. Vyberte **Synchronizovat** pro aktualizaci uživatelských aplikací.
 
-    ![Tlačítko Synchronizovat.](media/get-more.png)
+    ![Tlačítko Synchronizovat](media/get-more.png)
 
     Po dokončení synchronizace se Human Resources se objeví na domovské stránce.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

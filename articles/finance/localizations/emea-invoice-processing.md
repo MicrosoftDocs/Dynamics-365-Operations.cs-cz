@@ -2,9 +2,11 @@
 title: Zpracování fakturace
 description: Toto téma obsahuje informace o zpracování faktur pro východní Evropu.
 author: EvgenyPopovMBS
-ms.date: 02/02/2022
+manager: AnnBe
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, VendParameters
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9eb4f3ace8c6295e82ba9ab44ef49baa0d10e96b
-ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
+ms.openlocfilehash: 9dcc6c4d886f34429b48a9beec458ff341e43db4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8087814"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018642"
 ---
 # <a name="invoice-processing"></a>Zpracování fakturace
 
@@ -69,8 +71,7 @@ Toto téma stručně popisuje některé scénáře specifické pro určité zem�
 <td>
 <p>Legislativa obsahuje různá pravidla pro výběr platných směnných kurzů pro obchodní transakce. V poli <strong>Datum směnného kurzu</strong> na stránkách <strong>Parametry pohledávek</strong> a <strong>Parametry závazků</strong> můžete vybrat datum, které má být použito pro částky ve výpočtu zúčtovací měny na nákupních a prodejních dokumentech. Při zadávání dat systém načte směnný kurz pro transakci na základě tohoto parametru.</p>
 <blockquote>[!NOTE]<br>V Itálii je tato funkce použitelná pouze v modulu Závazky. V parametrech Závazků může uživatel vybrat <strong>Datum zaúčtování</strong> nebo <strong>Datum dokumentu</strong> v poli <strong>Datum směnného kurzu</strong>.   </blockquote>
-<blockquote><br>Když nastavíte pole <strong>Datum směnného kurzu</strong> na <strong>Datum dokumentu (pouze pro obchod EU)</strong>, systém použije skupinu DPH. Pro skupinu DPH existuje parametr <strong>Obchod EU</strong> na kartě <strong>Hlavní</strong>. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ano</strong> pro skupinu DPH a pokud je tato skupina DPH v záhlaví dokumentu, systém načte směnný kurz, který je založený na datu dokumentu. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ne</strong> pro tuto skupinu DPH, systém načte směnný kurz podle data zaúčtování dokladu.</blockquote>
-  <blockquote><br>Pro Polsko v modulu <strong>Pohledávky</strong> je k dispozici navíc hodnota <strong>Automatické určení data</strong> tohoto parametru. Je-li tato možnost vybrána, systém automaticky vybere nejstarší datum z data zaúčtování faktury, data prodeje a data platby.</blockquote>
+<blockquote>[!NOTE]<br>Když nastavíte pole <strong>Datum směnného kurzu</strong> na <strong>Datum dokumentu (pouze pro obchod EU)</strong>, systém použije skupinu DPH. Pro skupinu DPH existuje parametr <strong>Obchod EU</strong> na kartě <strong>Hlavní</strong>. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ano</strong> pro skupinu DPH a pokud je tato skupina DPH v záhlaví dokumentu, systém načte směnný kurz, který je založený na datu dokumentu. Pokud je možnost <strong>Obchod EU</strong> nastavena na <strong>Ne</strong> pro tuto skupinu DPH, systém načte směnný kurz podle data zaúčtování dokladu.</blockquote>
 </td>
 </tr>
 <tr>
@@ -120,6 +121,3 @@ Toto téma stručně popisuje některé scénáře specifické pro určité zem�
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

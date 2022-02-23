@@ -2,30 +2,36 @@
 title: Nastavení organizačních hierarchií
 description: Toto téma popisuje, jak nastavit orhanizační hierarchie v aplikaci Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746009"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410744"
 ---
 # <a name="set-up-organization-hierarchies"></a>Nastavení organizačních hierarchií
+
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak nastavit orhanizační hierarchie v aplikaci Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Před vytvořením kanálů je nutné zajistit, že byly nastaveny organizační hierarchie.
 
@@ -54,7 +60,7 @@ Následující postup použijte k vytvoření organizační hierarchie.
 
 Následující obrázek znázorňuje ukázkovou organizační hierarchii vytvořenou pro fiktivní sadu obchodů "Adventure Works".
 
-![Příklad organizační hierarchie.](media/organizational-hierarchies.png)
+![Příklad organizační hierarchie](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Přidání organizací do hierarchie
 
@@ -67,9 +73,9 @@ Chcete-li přidat organizace do hierachie, postupujte takto.
 
 Na následujícím obrázku je znázorněna právnická osoba přidaná v kořenové složce hierarchie se čtyřmi nákladovými středisky přidanými pro kanály "Obchodní centrum", "Outlet", "Online" a "Kontaktní středisko". Do každé z nich lze přidat různé maloobchodní a online kanály.
 
-![Příklad návrháře hierarchie.](media/hierarchy-designer.png)
+![Příklad návrháře hierarchie](media/hierarchy-designer.png)
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled organizací a organizačních hierarchií](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
@@ -82,6 +88,3 @@ Na následujícím obrázku je znázorněna právnická osoba přidaná v kořen
 [Přehled kanálů](channels-overview.md)
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

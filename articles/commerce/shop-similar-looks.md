@@ -2,13 +2,16 @@
 title: Povolit doporučení typu „podobný vzhled“
 description: Toto téma popisuje, jak povolit v doporučení typu „podobný vzhled“ v produktu Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721993"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410856"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Povolení doporučení „nákupu podobného vzhledu“
+# <a name="enable-shop-similar-looks-recommendations"></a>Povolit doporučení typu „podobný vzhled“
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak povolit v doporučení typu „podobný vzhled“ v produktu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Doporučení typu "podobný vzhled" v produktu Dynamics 365 Commerce využívá sílu umělé inteligence a strojového učení (AI-ML) k poskytování doporučení pro vizuálně podobné produkty zákazníkům. Poskytnutím doporučení typu „podobný vzhled“ pro všechny maloobchodní kanály v obchodě mohou maloobchodníci zvýšit spokojenost zákazníků tím, že zákazníkům pomohou snadno najít to, co chtějí.
 
@@ -111,6 +116,3 @@ Následující obrázek ukazuje zaškrtávací políčko **Povolit odkaz na str�
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

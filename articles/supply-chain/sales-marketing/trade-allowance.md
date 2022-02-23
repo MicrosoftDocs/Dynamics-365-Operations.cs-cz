@@ -2,23 +2,26 @@
 title: Správa obchodních náhrad
 description: Toto téma popisuje správu obchodních náhrad pro Dynamics 365 Supply Chain Management.
 author: t-benebo
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 15c003109814d9b4dc2857910e69754e5927ec11138d215056be64424998bf00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771268"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423769"
 ---
 # <a name="trade-allowance-management"></a>Správa obchodních náhrad
 
@@ -59,7 +62,7 @@ Smlouva o obchodních náhradách je motivační program, kdy jsou za výkonnost
 
 Finanční prostředky přiřazené ke smlouvám o obchodních náhradách se zaznamenávají na stránce **Finanční prostředky**. Otevřete stránku **Finanční prostředky**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Finanční prostředky** \> **Finanční prostředky**.
 
-![Stránka Finanční prostředky.](./media/trade-allowance-management-funds-page.png "Stránka Finanční prostředky")
+![Stránka Finanční prostředky](./media/trade-allowance-management-funds-page.png "Stránka Finanční prostředky")
 
 Na stránce **Finanční prostředky** můžete zobrazit podrobnosti o finančních prostředcích na promoakce.
 
@@ -75,7 +78,7 @@ Jakmile je hotova definici finančních prostředků, dalším krokem v plánov�
 
 Smlouvy o obchodních náhradách se zaznamenávají na stránce **Smlouvy o obchodních náhradách**. Chcete-li otevřít stránku **Smlouvy o obchodních náhradách**, vyberte **Prodej a marketing** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**.
 
-![Stránka Smlouvy o obchodních náhradách.](./media/trade-allowance-management-agreements-page.png "Stránka Smlouvy o obchodních náhradách")
+![Stránka Smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-page.png "Stránka Smlouvy o obchodních náhradách")
 
 #### <a name="header"></a>Záhlaví
 
@@ -103,7 +106,7 @@ Karta **Výrobní události** zobrazují typy událostí pokrytých smlouvou. Ex
 
 Pokud vyberete výrobní událost a poté kartu **Částky**, vyhledají se podrobnosti události.
 
-![Řádky smlouvy o obchodních náhradách.](./media/trade-allowance-management-agreements-lines.png "Řádky smlouvy o obchodních náhradách")
+![Řádky smlouvy o obchodních náhradách](./media/trade-allowance-management-agreements-lines.png "Řádky smlouvy o obchodních náhradách")
 
 V části **řádky obchodních náhrad** určíte rozsahy množství nebo částky, kterých musí odběratel dosáhnout pro získání odměny.
 
@@ -197,6 +200,3 @@ Analytičtější přehled různých měření výkonu promoakcí najdete v zobr
 
 Analytičtější přehled různých měření výkonu promoakcí najdete v zobrazení Analýza. Do zobrazení Analýza přejdete kliknutím na položky **Prodej a marketingu** \> **Obchodní náhrady** \> **Smlouvy o obchodních náhradách**. V podokně akcí klikněte na položku **Analýza**. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

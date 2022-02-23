@@ -1,10 +1,12 @@
 ---
 title: Vytvoření vztahů předmětů servisu
 description: Toto téma popisuje postup vytvoření vztahů předmětů servisu pro servisní smlouvu a zakázku.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a558d513ba97d7df72ee785704b84dd38a5929b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 380514b6e95292597d3eb52ce191d1e282e154ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569112"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965898"
 ---
 # <a name="create-service-object-relations"></a>Vytvoření vztahů předmětů servisu 
 
@@ -69,6 +71,3 @@ Pomocí následujících kroků můžete vytvořit vztah předmětu servisu pro 
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

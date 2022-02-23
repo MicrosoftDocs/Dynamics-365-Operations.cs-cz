@@ -2,23 +2,26 @@
 title: Zadání dat faktur do systému závazků pomocí faktury dodavatele
 description: Tento průvodce záznamem úloh vám pomůže vytvořit fakturu dodavatele z nákupní objednávky a zobrazit si výsledky párování nákupní objednávky, příjemky a faktury (třícestné párování).
 author: abruer
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines, VendEditInvoice, InventItemIdLookupSimple, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3e27ed41ff1fa44d5e8779cb5e81e45d02110eb3b37be3a3b9938cabfc395bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f80c88b7fb3542f624d233f670cd7cd6ccd48b94
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777281"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440994"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Zadání dat faktur do systému závazků pomocí faktury dodavatele
 
@@ -70,6 +73,3 @@ Tento průvodce záznamem úloh vám pomůže vytvořit fakturu dodavatele z n�
 19. Klikněte na možnost **Zaúčtovat**.
 20. Zavřete formulář. Všimněte si, že nákupní objednávka již není uvedena jako přijatá a nefakturovaná.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

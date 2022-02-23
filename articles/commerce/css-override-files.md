@@ -2,30 +2,36 @@
 title: Práce se soubory přepisu CSS
 description: Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964597"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410786"
 ---
-# <a name="work-with-css-override-files"></a>Práce s CSS soubory přepisující výchozí styl
+# <a name="work-with-css-override-files"></a>Práce se soubory přepisu CSS
+
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje proč, kdy a jak používat soubory přepisu šablon Cascading Style Sheets (CSS) v produktu Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Trvalé styly webu by obvykle měly být zpracovávány prostřednictvím motivu webu. Motivy poskytují základní nastavení šablon CSS a stylu pro moduly na libovolné stránce webu. Motivy jsou vytvářeny pomocí sady SDK Dynamics 365 Commerce (Software Development Kit) online a jsou nasazeny na vaše weby prostřednictvím aplikace Microsoft Dynamics Lifecycle Services (LCS). Možnosti ladění motivu a konfigurace rozhraní modulu v sadě SDK usnadňují vývojářům webu vytváření upravitelných a kohezivních balíčků návrhu webu. Pokud jsou tyto balíčky návrhu nasazeny na web, mohou se autoři webu zaměřit na vytváření, úpravy a publikování obsahu namísto vývoje webu.
 
@@ -101,11 +107,10 @@ Chcete-li deaktivovat soubor přepisu CSS na vašem webu, postupujte následovn�
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 
+[Přidání uvítací zprávy](add-welcome-message.md)
+
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

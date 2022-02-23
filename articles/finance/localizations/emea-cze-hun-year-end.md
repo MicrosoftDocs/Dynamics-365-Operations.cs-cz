@@ -2,23 +2,26 @@
 title: Roční uzávěrka pro Českou republiku a Maďarsko
 description: Toto téma obsahuje informace o procesu roční uzávěrky a počátečních transakcích pro Maďarsko a Českou republiku.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062bbf03e802657f5e98174a6bd3410000d34b35011918f590ccf5d0ca3e4ec4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4393931dd68a919b1c123a37bea4be82a068a2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752900"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407625"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Roční uzávěrka pro Českou republiku a Maďarsko
 [!include[banner](../includes/banner.md)]
@@ -29,7 +32,7 @@ Toto téma obsahuje informace o procesu roční uzávěrky a počátečních tra
 -    Převod ročního výsledku zisků nebo ztrát do nově otevřeného roku na jiný účet.
 
 ## <a name="year-end-closing-setup"></a>Nastavení roční uzávěrky
-Na stránce **Účty pro automatické transakce** můžete určit účty hlavní knihy, které se budou používat v průběhu procesu roční uzávěrky.
+Na stránce **Účty pro automatické transakce**  můžete určit účty hlavní knihy, které se budou používat v průběhu procesu roční uzávěrky:
 
 -   Výsledek roční uzávěrky – tento účet bude použit pro převod koncových zůstatků transakcí zisků a ztrát.
 -   Převod koncových a počátečních transakcí – Tento účet se použije pro převod konečných zůstatků rozvahových účtů.
@@ -39,6 +42,3 @@ Před zaúčtováním otevřených transakcí na různé účty pro každý hlav
 
 ## <a name="additional-resources"></a>Další zdroje
 [Roční uzávěrka](../general-ledger/year-end-close.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

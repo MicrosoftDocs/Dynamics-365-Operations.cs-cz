@@ -1,10 +1,12 @@
 ---
 title: Mobilní pracovní prostor pro schválení faktur
-description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení faktur.
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení faktur. Tento pracovní prostor obsahuje seznam faktur, které vám byly přiřazeny v procesu workflowu záhlaví faktury dodavatele.
 author: abruer
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759973"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683401"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilní pracovní prostor pro schválení faktur
 
@@ -72,7 +74,7 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-    [![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Schválení faktur pomocí mobilního pracovního prostoru Schválení faktur
 1.  Ve svém mobilním zařízení vyberte pracovní prostor **Schválení faktur**.
@@ -84,6 +86,3 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 7.  Výběrem možnosti **Přílohy** zobrazíte další poznámky nebo soubory, které jsou připojeny k faktuře.
 8.  Na stránce **Podrobnosti faktury** vyberte požadovanou akci workflowu a dokončete tak proces kontroly.
 9.  Vyberte **Hotovo**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

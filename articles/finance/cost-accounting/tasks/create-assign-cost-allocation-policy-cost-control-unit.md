@@ -2,9 +2,11 @@
 title: Vytvoření zásad přidělování nákladů a jejich přiřazení jednotce řízení nákladů
 description: Tento postup slouží k vytváření a přiřazení zásady přidělení nákladů a odpovídajících pravidel k jednotce pro řízení nákladů.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerPolicyAssignment
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de50191a7be30364236ee82b99d207e6f131cce26097a39728fea25e3ef7df9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 006310d07dfa5b75941ca248736800bbb9e8e7b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712454"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969321"
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Vytvoření zásad přidělování nákladů a jejich přiřazení jednotce řízení nákladů
 
@@ -64,6 +66,3 @@ Tento postup slouží k vytváření a přiřazení zásady přidělení náklad
 5. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
 6. Klikněte na položku Uložit.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

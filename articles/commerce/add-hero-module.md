@@ -2,12 +2,15 @@
 title: Modul bloku obsahu
 description: Tohle téma se zabývá moduly bloků s obsahem a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726432"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410721"
 ---
 # <a name="content-block-module"></a>Modul bloku obsahu
+
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly bloků s obsahem a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Maloobchodní prodejce může například přidat modul bloku obsahu na domovskou stránku webu elektronického obchodu a propagovat tak nový produkt a upoutat pozornost zákazníků.
 
@@ -46,15 +52,15 @@ Kromě toho může motiv vystavovat různé vlastnosti pro každé rozvržení. 
 
 Na následujícím obrázku je znázorněn příklad modulu blok obsahu s rozvržením Hero.
 
-![Příklad hlavního modulu.](./media/Hero.PNG)
+![Příklad hlavního modulu](./media/Hero.PNG)
 
 Na následujícím obrázku je znázorněn příklad modulu blok obsahu s rozvržením funkce.
 
-![Příklady propagačních modulů.](./media/Feature.PNG)
+![Příklady propagačních modulů](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Vlastnosti modulu bloku obsahu
 
-| Název vlastnosti  | Hodnoty | popis |
+| Název vlastnosti  | Hodnoty | Popis |
 |----------------|--------|-------------|
 | Obrázek          | Soubor obrázku | Obrázek lze použít pro prezentaci produktu nebo promoakce. Obrázek lze odeslat do galerie obrázků nebo lze použít existující obrázek. |
 | Záhlaví        | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Každý modul hlavního banneru může mít nadpis. Standardně se pro značku nadpisu používá označení **H2**. Značku však lze změnit tak, aby vyhovovala požadavkům na usnadnění. |
@@ -101,6 +107,3 @@ Chcete-li přidat modul hlavního banneru na novou stránku a nastavit požadova
 [Modul textového bloku](add-content-rich-block.md)
 
 [Modul videopřehrávače](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

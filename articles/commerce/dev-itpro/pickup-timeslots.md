@@ -2,9 +2,11 @@
 title: Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem
 description: V tomto tématu je popsán postup při vytváření, konfiguraci a aktualizaci časových úseků vyzvednutí zákazníkem v centrále Commerce.
 author: anupamar-ms
+manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713414"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828204"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Vytváření a aktualizace časových úseků pro vyzvednutí zákazníkem
 
@@ -34,7 +36,7 @@ Funkce časového úseku poskytuje maloobchodníkům způsob, jak definovat čas
 
 Následující obrázek ukazuje příklad výběru časového úseku na pokladně elektronického obchodu.
 
-![Příklad výběru časového úseku v pokladně elektronického obchodu.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Příklad výběru časového úseku v pokladně elektronického obchodu](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Vlastnosti časového úseku
 
@@ -60,7 +62,7 @@ Následující obrázek ukazuje příklad výběru časového úseku na pokladn�
 - **Aktivní dny** – Zadejte dny v týdnu, kdy jsou aktivní časové úseky vyzvednutí. Tato vlastnost umožňuje maloobchodníkovi definovat dny, kdy chce podporovat vyzvednutí objednávek.
 - **Maloobchodní kanály** – Zadejte maloobchodní kanály. Každý časový úsek může být přidružen k jednomu nebo více maloobchodním obchodům. V závislosti na provozních hodinách každého obchodu lze vytvořit jeden nebo více položek časových úseků a přidružit je ke kanálu. 
 
-<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Pro každý kanál lze nakonfigurovat pouze jednu šablonu časového úseku. Tyto kanály zahrnují kamenné obchody, kontaktní střediska, mobilní zařízení a weby s elektronickým obchodováním.
 
@@ -85,14 +87,14 @@ Konfiguraci funkce časového úseku v centrále Commerce provedete následovně
     > [!NOTE]
     > Můžete vytvořit více šablon, ale k jednomu kanálu nebo obchodu lze přidružit pouze jednu šablonu.
 
-    ![Dialogové okno Vyzvednutí objednávky – nastavení času.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Dialogové okno Vyzvednutí objednávky – nastavení času](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Po dokončení zvolte **OK**.
 1. Pokud se časové úseky v některém dni budou lišit, vytvořte další položky na záložce s náhledem **Vyzvednutí objednávky – nastavení času**, abyste zajistili, že se data a časy nepřekrývají.
 1. Na záložce s náhledem **Maloobchodní kanály** volbou **Přidat** přidružíte šablonu časového úseku k obchodům nebo kanálům, kde bude použita.
 1. V dialogovém okně **Výběr uzlů organizace** pomocí šipek vyberte (nebo zrušte výběr) obchody, oblasti a organizace, ke kterým má být daná šablona přidružena.
 
-    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Po dokončení zvolte **OK**.
 1. Na stránce **Plán distribuce** spusťte úlohu **1070** a **1135** pro synchronizaci dat s kanály.
@@ -103,7 +105,7 @@ Když je na POS identifikována objednávka nebo řádek objednávky pro vyzvedn
 
 Následující obrázek ukazuje příklad výběru časového úseku pro objednávku POS.
 
-![Příklad výběru časového úseku pro objednávku POS.](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Příklad výběru časového úseku pro objednávku POS](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Výběr časového úseku pro objednávky elektronického obchodu
 
@@ -114,17 +116,14 @@ Informace, jak zpřístupnit výběr časového úseku pro objednávky elektroni
 
 Následující obrázek ukazuje příklad objednávky elektronického obchodu, kde byl vybrán časový úsek vyzvednutí.
 
-![Příklad objednávky elektronického obchodu, kde byl vybrán časový úsek vyzvednutí.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Příklad objednávky elektronického obchodu, kde byl vybrán časový úsek vyzvednutí](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Výběr časového úseku pro objednávky kontaktního střediska
 
 V aplikaci kontaktního střediska mohou agenti kontaktního střediska vybrat obchod nebo umístění pro vyzvednutí, stejně jako datum a časový úsek, jak je zvýrazněno na následujícím obrázku.
 
-![Příklad objednávky kontaktního střediska, kde byl vybrán časový úsek vyzvednutí.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Příklad objednávky kontaktního střediska, kde byl vybrán časový úsek vyzvednutí](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Modul informací o vyzvednutí](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

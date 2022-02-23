@@ -2,25 +2,28 @@
 title: Akreditivy a kolekce importu
 description: V tomto článku jsou obecné informace o akreditivu a kolekcích importu. Oba typy bankovního dokumentu jsou často používané pro nákup a prodej zboží v zahraničí.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47309612ea7cbd0bb1047bec9c18f976e7063ce95f1708f27beae540cc3194ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751319"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441172"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Akreditivy a kolekce importu
 
@@ -28,7 +31,8 @@ ms.locfileid: "6751319"
 
 V tomto článku jsou obecné informace o akreditivu a kolekcích importu. Oba typy bankovního dokumentu jsou často používané pro nákup a prodej zboží v zahraničí.
 
-## <a name="letters-of-credit"></a>Akreditivy
+<a name="letters-of-credit"></a>Akreditivy
+-----------------
 
 Akreditivy se používají pro mezinárodní transakce a pomáhají zajistit, že se platby uskuteční. Pojem akreditiv označuje bankovní smlouvu vydanou bankou, ve které banka souhlasí se zajištěním platby jménem kupujícího za předpokladu, že jsou splněny podmínky mezi kupujícím a prodávajícím. Všimněte si, že akreditiv se také nazývá dokumentární akreditiv (DC).
 
@@ -50,6 +54,3 @@ Kolekce importu pomáhá zajistit, že prodejci je zaplaceno v případě, že o
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

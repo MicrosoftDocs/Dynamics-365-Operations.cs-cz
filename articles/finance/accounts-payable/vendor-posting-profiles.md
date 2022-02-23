@@ -2,25 +2,28 @@
 title: Účetní profil dodavatele
 description: Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 author: abruer
+manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8ebb67bddf6fa9aae8ba6c6ed290c94bb2e0a047ca6157aa1325f4cf21f148f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43450c5f7ab8295b896b591880da9d0bddd955cf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777209"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440989"
 ---
 # <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
@@ -28,7 +31,8 @@ ms.locfileid: "6777209"
 
 Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 
-## <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
+<a name="vendor-posting-profiles"></a>Účetní profil dodavatele
+-----------------------
 
 Účetní profily dodavatelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem dodavatelům, skupině dodavatelů nebo jednomu dodavateli. Toto nastavení se použije při vytváření nákupních objednávek, faktur dodavatele a plateb v hotovosti. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. Výchozí účetní profil je definován na záložce s náhledem **Hlavní kniha a DPH** na stránce **Parametry závazků**. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
 
@@ -115,6 +119,3 @@ Zadání následujících hodnot pro nastavení účetního profilu
 | **Vyrovnání** | Tuto možnost vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li toto políčko zaškrtnuto, je nutné vyrovnat transakce ručně s použitím stránky **Vyrovnat otevřené transakce**. |
 | Tlačítko **Zrušit**     | Tuto možnost vyberte, chcete-li mít možnost zrušit transakce, které mají tento účetní profil.                                                                                                               |
 | **Zavřít**      | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

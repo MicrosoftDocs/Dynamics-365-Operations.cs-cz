@@ -2,24 +2,26 @@
 title: Domovská stránka mobilní aplikace
 description: Toto téma popisuje mobilní aplikaci Finance and Operations (Dynamics 365) a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729701"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683451"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 
@@ -27,7 +29,8 @@ ms.locfileid: "6729701"
 
 Toto téma popisuje mobilní aplikaci **Finance and Operations (Dynamics 365)** a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 
-## <a name="overview"></a>Přehled
+<a name="overview"></a>Přehled
+--------
 
 Mobilní aplikace umožňuje vaší organizaci zpřístupnit své obchodní procesy na mobilních zařízeních. Jakmile váš správce IT povolí mobilní pracovní prostory pro vaši organizaci, mohou se uživatelé přihlásit k aplikaci a okamžitě začít pracovat s obchodními procesy ze svých mobilních zařízení. Mobilní aplikace obsahuje následující funkce, které vám mohou pomoci zvýšit produktivitu:
 
@@ -39,7 +42,7 @@ Mobilní aplikace umožňuje vaší organizaci zpřístupnit své obchodní proc
 ## <a name="elements-of-the-mobile-app"></a>Prvky mobilní aplikace
 Navigace v mobilní aplikaci se skládá ze čtyř základních konceptů: řídicího panelu, pracovních prostorů, stránek a akcí. 
 
-[![Navigační koncepty v mobilní aplikaci.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigační koncepty v mobilní aplikaci](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Při spuštění aplikace přejděte do **řídicího panelu**.
 2. Na řídicím panelu můžete zobrazit seznam **pracovních prostorů**, které jsou publikované.
@@ -53,7 +56,7 @@ Navigace v mobilní aplikaci se skládá ze čtyř základních konceptů: říd
 ## <a name="implementation-process"></a>Proces implementace
 Následující obrázek znázorňuje proces implementace mobilních pracovních prostorů, které poskytuje společnost Microsoft, a vlastních mobilních pracovních prostorů. 
 
-[![Proces implementace mobilní aplikace.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Proces implementace mobilní aplikace](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při implementaci mobilních pracovních prostorů poskytovaných společností Microsoft a vlastních mobilních pracovních prostorů Čísla v prvním sloupci odpovídají číslovaným krokům na předchozím obrázku.
 
@@ -90,8 +93,8 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilní pracovní prostor zásob na skladě</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilní pracovní prostory prodejních objednávek</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
-<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Mobilní pracovní prostor zadání času projektu</a></li>
-<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Pracovnímu prostor správy výdajů</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilní pracovní prostor zadání času projektu</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Pracovnímu prostor správy výdajů</a></li>
 
 </ul></td>
 </tr>
@@ -148,6 +151,3 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 
 ## <a name="troubleshooting"></a>Řešení potíží
 [Zdroje mobilní platformy](platform/mobile-platform-home-page.md#troubleshooting-the-app)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

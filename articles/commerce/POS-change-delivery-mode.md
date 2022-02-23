@@ -2,9 +2,11 @@
 title: Změna způsobu dodání v POS
 description: Toto téma popisuje, jak konfigurovat a používat operaci změny způsobu dodání v POS.
 author: hhainesms
+manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: ''
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bfe27a7b4a768da00c67e307a0bd7e57b333d11
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714033"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965420"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Změna způsobu dodání v POS
 
@@ -31,7 +33,7 @@ V Dynamics 365 Commerce verze 10.0.10 a novějších je k dispozici operace **Z
 
 Funkce změny způsobu dodání umožňuje změnit způsob dodání pro jeden nebo více prodejních řádků konfigurovaných pro dodávku v transakci POS. V předchozích verzích Commerce bylo nutné projít celé toky konfigurace **Odeslat vše** nebo **Odeslat vybrané**, pokud jste chtěli změnit způsob dodání na existujícím řádku nakonfigurovaném pro expedici. Tento proces byl časově náročný a mohl vést k neúmyslným změnám původu dodávky nebo dat dodání pro daný řádek. Nová funkce poskytuje alternativní metodu pro efektivní aktualizaci způsobu dodání na těchto řádcích prodeje.
 
-Další informace, jak přidat operaci k tlačítku v mřížce tlačítek POS, viz [Rozložení obrazovky pokladního místa](pos-screen-layouts.md).
+Další informace, jak přidat operaci k tlačítku v mřížce tlačítek POS, viz [Rozložení obrazovky pokladního místa](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
 
 Po konfiguraci této funkce v aplikaci POS se při výběru možnosti **Změnit způsob dodání** zobrazí stránka se seznamem, která vám umožní vybrat řádky transakce, pro které chcete změnit způsob dodání. Můžete vybrat některé nebo všechny řádky nebo ukončit aplikaci bez provedení změn. Řádky prodeje, které byly dříve konfigurovány pro dodávku, jsou jediné řádky v seznamu, které lze změnit. Chcete-li změnit řádek určený k výdeji nebo převzetí a předání k expedici, je nutné použít operace **Odeslat vše** nebo **Odeslat vybrané**. Chcete-li naopak změnit řádek určený jako dodávka k vyzvednutí nebo převzetí, musíte použít operace **Vyzvednout vše**, **Vyzvednout vybrané**, **Převzít vše** nebo **Převzít vybrané**.
 
@@ -44,6 +46,3 @@ Po výběru nového způsobu dodání se zobrazí stránka transakce. Chcete-li 
 [Vytváření objednávek v kontaktním středisku](tasks/create-call-center-orders.md)
 
 [Přizpůsobení transakčních e-mailů podle způsobu doručení](customize-email-delivery-mode.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

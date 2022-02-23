@@ -2,25 +2,28 @@
 title: Sestavy leasingu majetku
 description: Toto téma uvádí a stručně popisuje sestavy, které jsou k dispozici pro leasing majetku.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7044378a66ed9ff952f4579d375d59576fe09294fc158c000ab28a93f4173421
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bab2b0b2b021266e50d6f4a1fad1cc4a1c1ae56e
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739400"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441360"
 ---
 # <a name="asset-leasing-reports"></a>Sestavy leasingu majetku
 
@@ -162,6 +165,3 @@ Sestava sazby slevy váženého průměru splňuje požadavek na zveřejnění d
 |     Měna                          |     Zkratka použité měny transakce. Všechny sestavy převedou měnu transakce na měnu vykazování.  |
 |     Zbývající leasingové splátky          |     Celková částka nezaplacených leasingových splátek ze splátkového kalendáře zbývajících od data v poli **K datu**.            |
 |     Zbývající vážené platby       |     Zbývající leasingové splátky vynásobené použitou sazbou slevy.   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

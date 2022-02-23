@@ -2,13 +2,16 @@
 title: Nastavení pokladního místa (POS) a uživatelského jazyka
 description: Toto téma popisuje, jak změnit nastavení jazyka v Modern POS (MPOS) a Cloud POS.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 099d16f63e03ecbc8bf911fe4385b35fac7c67f763c17379cdc6b6229abdea16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 49bfcaa4c05ea8e6cc6bf0a8f855f2474cea35bc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410895"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Nastavení pokladního místa (POS) a uživatelského jazyka
 
@@ -57,11 +60,8 @@ Nastavení jazyka uživatele POS určuje překlady používané v uživatelském
 
 Nastavení jazyka uživatele POS pochází z nabídky **Všichni pracovníci** na stránce **Pracovník** v části **Maloobchod a velkoobchod &gt; Jazyk**. Není nastaveno na hlavní kartě Profil. Toto nastavení není použito v programu POS. Pokud není jazyk uživatele nastaven, nebo pokud je nastaven na jazyk, pro který nejsou k dispozici překlady, POS obnoví používání jazyka obchodu.
 
-| &nbsp;      | Jazyk UR                  | Jazyk dat (produkty, formáty příjemky, řádkový displej atd.) |
+|             | Jazyk UR                  | Jazyk dat (produkty, formáty příjemky, řádkový displej atd.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Company (Společnost)** | Výchozí                    | Výchozí                                                       |
 | **Obchod**   | Přepsání společnosti          | Přepsání společnosti                                             |
 | **Uživatel**    | Přepsání obchodu nebo společnosti | Nikdy                                                         |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

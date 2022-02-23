@@ -1,10 +1,12 @@
 ---
-title: Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
-description: Toto téma popisuje vylepšení funkce základní úrovně ER v Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019).
+title: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
+description: Toto téma obsahuje informace o tom, jak byla vylepšena funkce směrného plánu ER v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.3 (červen 2019) vylepšena.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760743"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682840"
 ---
-# <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Vylepšení sledování výsledků vygenerovaných sestav elektronického výkaznictví pro porovnání se základními hodnotami
+# <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,7 +59,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 
 Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných plánů**, ale pravidla směrného plánu pro tento směrný plán ještě nebyla přidána.
 
-![Stránka směrného plánu elektronického výkaznictví, zatím žádná pravidla.](media/GER-BaselineSample-AddBaseline2.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline2.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="make-a-new-baseline-rule"></a>Vtvoření nového pravidla směrného plánu
 
@@ -70,7 +72,7 @@ Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných 
 7. Vyberte **OK**.
 8. Vyberte **Směrné plány**.
 
-    ![Stránka se směrným plánem formátu elektronického výkaznictví, vybrané základní plány.](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+    ![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
     Generovaný výstupní soubor byl automaticky připojen ke směrnému plánu provedeného formátu ER. Do tohoto směrného plánu bylo automaticky přidáno pravidlo směrného plánu, které obsahuje také odkaz na připojený soubor.
 
@@ -110,14 +112,14 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 13. Vyberte **Uložit** a potom **Test**.
 14. Pokud chcete znovu otestovat konfigurovaný výraz, znovu vyberte **Test**.
 
-    ![Stránka Návrhář receptur.](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Snímek obrazovky stránky Návrhář receptur")
+    ![Stránka Návrhář receptur](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Snímek obrazovky stránky Návrhář receptur")
 
     > [!NOTE]
     > Na kartě **Výsledek** testu se zobrazuje, že konfigurovaný výraz vrací při každém volání jinou hodnotu data a času.
 
 15. Vyberte stránku **Návrhář vzorců** a potom **Uložit**.
 
-    ![Stránka návrháře formátu.](media/GER-BaselineSample-FormatMappingDesign2.PNG "Snímek obrazovky stránky Návrhář formátu")
+    ![Stránka návrháře formátu](media/GER-BaselineSample-FormatMappingDesign2.PNG "Snímek obrazovky stránky Návrhář formátu")
 
 16. Zavřete stránku **Návrhář formátu**.
 
@@ -128,7 +130,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 3. V seznamu směrných plánů vyberte směrný plán, který je nakonfigurován pro **Formát pro učení směrných plánů**.
 4. Na pevné záložce **Směrné plány** vyberte **Odstranit** k odebrání dříve vytvořeného pravidla směrného plánu.
 
-![Stránka směrného plánu elektronického výkaznictví, odstraněná.](media/GER-BaselineSample-AddBaseline3.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline3.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definování náhrad pro vazby navrženého formátu ER
 
@@ -136,7 +138,7 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 2. Ve stromu komponent formátu rozbalte **Výstup**, rozbalte **Výstup\\Dokument** a zaškrtněte políčko **Výstup\\Dokument\\ProcessingDateTime**.
 3. Vyberte **OK**.
 
-![Stránka směrného plánu elektronického výkaznictví, komponenty.](media/GER-BaselineSample-AddBaseline4.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline4.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 Vybraná koponenta formátu ER byla přidána do seznamu komponent na pevné záložce **Náhrady**. Při spuštění základního formátu ER v režimu ladění bude vazba formátu pro každou součást nahrazena vazbou, která je zobrazena ve sloupci **vazba**. Chcete-li změnit výchozí vazbu pro komponentu, která je uvedena na pevné záložce **Náhrady**, vyberte **Upravit**.
 
@@ -144,7 +146,7 @@ Vybraná koponenta formátu ER byla přidána do seznamu komponent na pevné zá
 
 Postupujte podle kroků v části Příklad: automatizace nastavení pravidel směrného plánu dříve v tomto tématu. Zobrazí se upozornění, že výstupní soubor byl vygenerován pomocí nastavení směrného plánu a že došlo k vynucenému nahrazení vazeb formátu.
 
-![Oznámení na stránce Konfigurace.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Snímek obrazovky oznámení na stránce Konfigurace")
+![Oznámení na stránce Konfigurace](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Snímek obrazovky oznámení na stránce Konfigurace")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>Potlačení upozornění na náhradní vazby formátu
 
@@ -192,11 +194,11 @@ Exportované nastavení směrného plánu lze importovat do prostředí. Prostř
 
 Pokud chcete importovat nastavení směrného plánu z lokálně uloženého souboru XML, na stránce **Směrné plány formátu elektronického výkaznictví** vyberte **Import** a potom po kliknutí na **Procházet** vyberte soubor XML.
 
-![Dialogové okno Importovat základní nastavení.](media/GER-BaselineSample-ImportBaseline1.PNG "Snímek obrazovky dialogového okna Import nastavení směrného plánu")
+![Dialogové okno Importovat základní nastavení](media/GER-BaselineSample-ImportBaseline1.PNG "Snímek obrazovky dialogového okna Import nastavení směrného plánu")
 
 Chcete-li importovat nastavení směrného plánu ze souboru XML, který je uložen na serveru SharePoint společnosti Microsoft na základě aktuálního nastavení správy dokumentů a vybraného typu dokumentu, na stránce **Směrné plány formátu elektronického výkaznictví** vyberte možnost **Importovat ze zdroje**. Pak vyberte typ dokumentu a soubor XML. Požadovaný typ dokumentu pro přístup do složky SharePoint musí být nakonfigurován předem.
 
-![Dialogové okno Importovat ze zdroje.](media/GER-BaselineSample-ImportBaseline2.PNG "Snímek obrazovky dialogového okna Import ze zdroje")
+![Dialogové okno Importovat ze zdroje](media/GER-BaselineSample-ImportBaseline2.PNG "Snímek obrazovky dialogového okna Import ze zdroje")
 
 > [!NOTE]
 > Pomocí záznamníku úkolů můžete zaznamenat postup pro výběr požadovaného typu dokumentu a název souboru v dialogovém okně **Importovat ze zdroje**. Tímto způsobem můžete ponechat požadované nastavení směrného plánu na serveru SharePoint a poté je automaticky importovat přehráním záznamu úkolu při spuštění automatizovaných testů pomocí nástroje Regression Suite Automation Tool.
@@ -205,6 +207,3 @@ Chcete-li importovat nastavení směrného plánu ze souboru XML, který je ulo�
 
 - [Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami](er-trace-reports-compare-baseline.md)
 - [Zdroje záznamníku úloh](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,35 @@
 title: Modul košíku
 description: Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 12/15/2020
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716877"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4410940"
 ---
 # <a name="cart-module"></a>Modul košíku
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly košíku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Modul košíku zobrazuje položky, které byly přidány do košíku, než odběratel pokračuje v rezervaci. Modul také zobrazuje souhrn objednávky a umožňuje odběrateli použití nebo odebrání propagačních kódů.
 
@@ -35,11 +40,11 @@ Modul košíku vykresluje data založená na ID košíku, což je soubor cookie 
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam.
 
-![Příklad modulu nákupního košíku na webu Fabrikam.](./media/cart2.PNG)
+![Příklad modulu nákupního košíku na webu Fabrikam](./media/cart2.PNG)
 
 Následující obrázek ukazuje příklad stránky nákupního košíku na webu Fabrikam. V tomto příkladu je za řádkovou položku účtován manipulační poplatek.
 
-![Příklad modulu nákupního košíku s manipulačním poplatkem za řádkovou položku.](./media/ecommerce-handling-fee.png)
+![Příklad modulu nákupního košíku s manipulačním poplatkem za řádkovou položku](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Vlastnosti a pozice modulu košíku
 
@@ -48,7 +53,6 @@ Následující obrázek ukazuje příklad stránky nákupního košíku na webu 
 | Záhlaví | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Nadpis košíku, jako "Nákupní taška" nebo "Položky v nákupním košíku". |
 | Zobrazit chybu vyprodanosti | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, na stránce košíku se zobrazí chyby související s akciemi. Doporučujeme nastavit tuto vlastnost na **Pravda** pokud jsou na webu prováděny kontroly zásob. |
 | Zobrazit přepravní poplatky u řádkových položek | **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, řádkové položky košíku zobrazí přepravné, jsou-li tyto informace k dispozici. Tato funkce není v motivu Fabrikam podporována, protože uživatelé vyberou dopravu pouze v pokladně. Tuto funkci však lze zapnout v jiných workflowech, pokud je to možné. |
-| Zobrazit dostupné propagační akce| **Pravda** nebo **nepravda** | Pokud je tato vlastnost nastavena na **Pravda**, košík zobrazuje dostupné propagační akce na základě položek v košíku. Tato funkce je k dispozici ve vydání Dynamics 365 Commerce 10.0.16. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduly, které lze použít v modulu košíku
 
@@ -113,6 +117,3 @@ Chcete-li přidat modul košíku na novou stránku a nastavit požadované vlast
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
 
 [Vytvoření online funkčního profilu](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

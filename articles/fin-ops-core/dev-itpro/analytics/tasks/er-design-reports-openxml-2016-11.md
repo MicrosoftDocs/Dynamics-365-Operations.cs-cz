@@ -1,10 +1,12 @@
 ---
 title: Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
-description: Toto téma popisuje, jak vytvořit novou konfiguraci elektronického výkaznictví, která obsahuje šablonu pro generování elektronických dokumentů ve formátu OPENXML.
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753021"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681894"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
 
@@ -28,7 +30,7 @@ Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář el
 
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést ve společnosti GBSI.
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Je třeba mít k dispozici soubor aplikace Excel, který bude importován při vytváření šablony. K tomuto souboru lze přistoupit ze [šablony sestavy platby](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
+K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Je třeba mít k dispozici soubor aplikace Excel, který bude importován při vytváření šablony. K tomuto souboru lze přistoupit ze [šablony sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Odeslání konfigurace modelu platebních dat
@@ -148,6 +150,3 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 17. V poli **Bankovní účet** zadejte `GBSI OPER`.
 18. Vyberte **OK** a potom znovu **OK**. Zkontrolujte vytvořený list, včetně podrobností na řádcích platby, stejně tak jako součty pro každý kód měny používaný v této platební zprávě.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

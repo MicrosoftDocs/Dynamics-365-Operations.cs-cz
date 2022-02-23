@@ -2,12 +2,15 @@
 title: Správa pracovního volna zaměstnanců
 description: Správa pracovního volna zaměstnanců v Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 07/16/2021
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccdf2346e3fdecf4f27fc9f34f0641d3b1fb5b55
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067370"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4417720"
 ---
 # <a name="manage-employee-leave"></a>Správa pracovního volna zaměstnanců
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dovolenou zaměstnance můžete spravovat podle typu. Patří sem vypršení registrace dovolené a úprava zůstatků typu dovolené. 
 
@@ -47,16 +45,14 @@ Dovolenou zaměstnance můžete spravovat podle typu. Patří sem vypršení reg
 
 Při úpravě zůstatku dovolené zaměstnance můžete uvést kód příčiny a komentář. 
 
-Když nyní umístíte ukazatel myši na jakýkoli zůstatek dovolené, zobrazí se následující informace:
-
-- **Dostupný** - hodnota **Letos celkem** minus hodnota **Vyčerpáno letos**.
-- **Celkem tento rok** - Veškerá časové rozlišení, úpravy a převod do dalšího období pro tento rok.
-- **Vybráno tento rok** - Veškeré schválené volno.
+>[!IMPORTANT]
+>Zobrazení dalších informací o zůstatcích pracovního volna je ve verzi Preview. Budete to muset povolit ve svém prostředí **Sandbox**. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br>
+>Když umístíte ukazatel myši nad jakýkoli zůstatek pracovního volna, zobrazí se:<br>
+>- **K dispozici**: Celkem tento rok – pro výběr tento rok
+>- **Celkem tento rok**: Veškeré časové rozlišení, úpravy a převod do dalšího období pro tento rok
+>- **Vybráno tento rok**: Veškeré schválené volno
 
 ## <a name="see-also"></a>Viz také
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

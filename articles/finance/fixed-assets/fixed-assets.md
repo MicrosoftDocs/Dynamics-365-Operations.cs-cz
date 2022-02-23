@@ -1,34 +1,34 @@
 ---
 title: Domovská stránka Dlouhodobý majetek
-description: Toto téma poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance.
-author: moaamer
+description: Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21481"
-- intro-internal
+ms.custom: 21481
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: moaamer
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: cf6f0bc27121e6c1a0b4bba2ad1ca31909423c92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969063"
 ---
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance. Dlouhodobý majetek jsou položky s hodnotou, které vlastní jednotlivec nebo organizace. Položky zahrnují budovy, vozidla, pozemky a vybavení. 
+Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost. 
 
 Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení. Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
 
@@ -40,7 +40,7 @@ Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a 
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 
@@ -60,6 +60,3 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

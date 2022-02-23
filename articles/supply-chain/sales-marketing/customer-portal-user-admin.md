@@ -1,28 +1,30 @@
 ---
-title: Vytváření a správa uživatelů zákaznického portálu (obsahuje video)
+title: Vytváření a správa uživatelů zákaznického portálu
 description: Toto téma vysvětluje, jak vytvořit uživatelské účty zákaznického portálu a nastavit pro ně oprávnění.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062483"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528286"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Vytváření a správa uživatelů zákaznického portálu
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 V dodávané implementaci neexistuje žádný způsob, jak uživatele zaregistrovat pro weby vytvořené pomocí zákaznického portálu. Chcete-li se přihlásit a používat web, musí být uživatelé pozváni správcem. Microsoft úmyslně zablokoval možnost uživatelů se zaregistrovat.
 
@@ -33,38 +35,38 @@ Když se uživatelé zaregistrují, automaticky se pro ně vytvoří záznamy ko
 ## <a name="video"></a>Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Video [Pozvěte zákazníky k registraci a používání vašeho zákaznického portálu](https://youtu.be/drGUYHX9QIQ) (zobrazené výše) je zahrnuto do [seznamu stop Finance a Operace](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupného na YouTube.
+Video [POzvěte zákazníky k registraci a používání vašeho zákaznického portálu](https://youtu.be/drGUYHX9QIQ) (zobrazené výše) je zahrnuto do playlistu [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupného na YouTube.
 
 ## <a name="prerequisite-setup"></a>Nastavení předpokladů
 
-Kontakty v portálech Power Apps jsou uloženy jako záznamy v tabulce **Kontakty** v Microsoft Dataverse. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
+Kontakty v portálech Power Apps jsou uloženy jako záznamy v entitě **Kontakty** v Common Data Service. Dvojitý zápis pak tyto záznamy synchronizuje s Microsoft Dynamics 365 Supply Chain Management podle potřeby.
 
-![Systémový diagram pro kontakty zákaznického portálu.](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
+![Systémový diagram pro kontakty zákaznického portálu](media/customer-portal-contacts.png "Systémový diagram pro kontakty zákaznického portálu")
 
-Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování tabulky **Kontakt** dvojitým zápisem.
+Než začnete zvát nové zákazníky, ujistěte se, že jste povolili mapování entit **Kontakt** dvojitým zápisem.
 
 ## <a name="the-invitation-process"></a>Proces pozvání
 
-Chcete-li pozvat stávající kontakt na zákaznický portál, postupujte podle kroků v [Pozvěte kontakty na své portály](/powerapps/maker/portals/configure/invite-contacts) v dokumentaci portálů Power Apps.
+Chcete-li pozvat stávající kontakt na zákaznický portál, postupujte podle kroků v [Pozvěte kontakty na své portály](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) v dokumentaci portálů Power Apps.
 
-Než pozvete zákazníka, aby se připojil k zákaznickému portálu, ujistěte se, že [záznam kontaktu](/powerapps/maker/portals/configure/configure-contacts) zákazníka je k dispozici a nastaven následujícím způsobem:
+Než pozvete zákazníka, aby se připojil k zákaznickému portálu, ujistěte se, že [záznam kontaktu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) zákazníka je k dispozici a nastaven následujícím způsobem:
 
 1. Nastavte pole **Společnost** na právnickou osobu, do které má zázkazník patřit, v aplikaci Supply Chain Management.
 2. Nastavte pole **Číslo účtu** na číslo účtu zákazníka, které má uživatel mít v aplikaci Supply Chain Management.
 
 Po vytvoření kontaktu byste jej měli vidět v Supply Chain Management.
 
-Další informace viz [Nakonfigurujte kontakt pro použití na portálu](/powerapps/maker/portals/configure/configure-contacts) v dokumentaci portálů Power Apps.
+Další informace viz [Nakonfigurujte kontakt pro použití na portálu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) v dokumentaci portálů Power Apps.
 
-## <a name="out-of-box-web-roles-and-table-permissions"></a>Dodávané webové role a oprávnění tabulky
+## <a name="out-of-box-web-roles-and-entity-permissions"></a>Dodávané webové role a oprávnění entit
 
-Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](/powerapps/maker/portals/configure/create-web-roles) a [oprávněními tabulky](/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
+Uživatelské role v portálech Power Apps jsou definovány [webovými rolemi](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [oprávněními entit](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). V zákaznickém portálu je definováno ihned několik rolí. Můžete vytvořit nové role a můžete upravit nebo odstranit stávající role.
 
 ### <a name="out-of-box-web-roles"></a>Dodávané webové role
 
 Tato část popisuje webové role dodávané se zákaznickým portálem.
 
-Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění tabulky pro portály](/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
+Další informace o tom, jak upravit dodávané uživatelské role, viz [Vytvářejte webové role pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) a [Přidejte zabezpečení založené na záznamu pomocí oprávnění entity pro portály](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) v dokumentaci portálů Power Apps.
 
 #### <a name="administrator"></a>Správce
 
@@ -88,12 +90,9 @@ Následující tabulka ukazuje, které prodejní objednávky uživatelé v každ
 
 | Prodejní objednávka | Správce | Zástupce zákazníka pro zákazníka&nbsp;X | Oprávněný uživatel: Jane | Oprávněný uživatel: Sam | Neprávněný uživatel: May |
 |---|---|---|---|---|---|
-| Zákazník&nbsp;X Objednatel:&nbsp;Jane | Ano | Ano | Ano | Ne | Ne |
-| Zákazník&nbsp;X Objednatel:&nbsp;Sam | Ano | Ano | Ne | Ano | Ne |
-| Zákazník&nbsp;Y Objednatel:&nbsp;May | Ano | Ne | Ne | Ne | Ne |
+| Zákazník&nbsp;X Objednatel:&nbsp;Jane | Ano | Ano | Ano | Žádný | Žádný |
+| Zákazník&nbsp;X Objednatel:&nbsp;Sam | Ano | Ano | Žádný | Ano | Žádný |
+| Zákazník&nbsp;Y Objednatel:&nbsp;May | Ano | Žádný | Žádný | Žádný | Žádný |
 
 > [!NOTE]
 > I když Sam a Jane jsou kontakty, které pracují pro zákazníka X, vidí pouze objednávky, které sami zadali, a nic jiného. Ačkoli May má v systému objednávku, nemůže ji vidět na zákaznickém portálu, protože je neoprávněným uživatelem. (Dále musí zadat objednávku prostřednictvím jiného kanálu, než je zákaznický portál.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Vytváření skupin oprávnění POS
 description: Toto téma vysvětluje, jak vytvořit skupinu oprávnění POS.
 author: scott-tucker
+manager: AnnBe
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, HcmJob
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 362fbfb5f0cae7cc8583754b53a198eae90bc67f24a871523374c4b7997826eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac03e1bfb7a2463b31feca0a4303c182a00ad259
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762289"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964813"
 ---
 # <a name="create-pos-permission-groups"></a>Vytváření skupin oprávnění POS
 
@@ -45,6 +47,3 @@ Toto téma vysvětluje, jak vytvořit skupinu oprávnění POS. Tento úkol byl 
 16. V poli Skupina oprávnění POS zadejte nebo vyberte hodnotu. Pozice všech pracovníků pro tuto úlohu budou používat toto nastavení skupiny oprávnění POS, pokud oprávnění POS pracovníků nebylo přepsáno na úrovni jejich pozice.  
 17. Zvolte **Uložit**. Po uložení změn bude nutné spustit plán Distribuce pracovníků a uplatnit tak změny v kanálech.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Vytvoření relací servisních úloh
 description: Servisní úlohy lze přidružit servisním smlouvám nebo servisním zakázkám pro popis servisní úlohy pro dokončení pro smlouvu nebo zakázku.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423936"
 ---
 # <a name="create-service-task-relations"></a>Vytvoření relací servisních úloh    
 
@@ -30,13 +33,13 @@ Servisní úlohy lze přidružit servisním smlouvám nebo servisním zakázkám
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Vytvoření relace se servisní smlouvou
 
-1.  Přejděte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
+1.  Klikněte na **Správa servisu** \> **Obecné** \> **Servisní smlouvy** \> **Servisní smlouvy**.
 
 2.  Vyberte existující servisní smlouvu nebo vytvořte novou smlouvu.
 
-3.  V podokně akcí vyberte tlačítko **Servisní úlohy**.
+3.  V podokně akcí klikněte na tlačítko **Servisní úlohy**.
 
-4.  Ve formuláři **Servisní úlohy** vytvořte nový řádek výběrem možnosti **Nový** a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisní úlohy k servisní smlouvě.
+4.  Ve formuláři **Servisní úloh** stisknutím CTRL+N vytvořte nový řádek a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisní úlohy k servisní smlouvě.
 
 5.  Na kartě **Popis** zadejte jakékoli interní nebo externí popisy.
 
@@ -48,13 +51,13 @@ Relace servisní úlohy vytvořená na servisní smlouvě je k dispozici ve vše
 
 ## <a name="create-a-relation-with-a-service-order"></a>Vytvoření relace se servisní zakázkou
 
-1.  Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Vyberte existující servisní zakázku nebo vytvořte novou zakázku.
 
-3.  V podokně akcí vyberte tlačítko **Servisní úlohy**.
+3.  V podokně akcí klikněte na tlačítko **Servisní úlohy**.
 
-4.  Ve formuláři **Servisní úlohy** vytvořte nový řádek výběrem možnosti **Nový** a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisních úloh k servisní zakázce.
+4.  Ve formuláři **Servisní úloh** stisknutím CTRL+N vytvořte nový řádek a pak vyberte servisní úlohu v seznamu **Servisní úloha** pro připojení servisní úlohy k servisnímu příkazu.
 
 5.  Na kartě **Popis** zadejte jakékoli interní nebo externí popisy.
 
@@ -72,6 +75,3 @@ Relace servisní úlohy vytvořená na servisní zakázce je k dispozici na konk
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

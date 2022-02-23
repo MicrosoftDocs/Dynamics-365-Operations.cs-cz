@@ -1,28 +1,31 @@
 ---
-title: Vyrovnání částečné platby před datem slevy s konečnou platbou po datu slevy
+title: Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
 description: Tento článek popisuje účinek plateb pro vyrovnání faktur pro odběratele. Scénáře se zaměřují na dopad v dílčí hlavní knize, není v hlavní knize.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14584
 ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10ba8d59855b60b3d05b4c6b44c98905e10487ecdcf7bc459acca73c12bc72d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a71d0931445f3501f1b74f26c5eef583ab598b3c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740163"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441054"
 ---
-# <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Vyrovnání částečné platby před datem slevy s konečnou platbou po datu slevy
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,10 +49,10 @@ Fabrikam prodává zboží zákazníkovi 4027. Fabrikam nabízí platební slevu
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu 297,00, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 3,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání** za vás.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
 | Dat. plat. slevy           | 7/09/2015 |
-| Částka platební slevy         | 10.00     |
+| Částka platební slevy         | 10,00     |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 3,00      |
@@ -71,9 +74,9 @@ Arnold zaúčtuje tuto platbu. Faktura má nyní zůstatek 700,00. Následujíc�
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/09/2015 |
+| Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 0,00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 3,00      |
@@ -87,15 +90,15 @@ Pokud Arnold změní hodnotu v poli **Použít platební slevu** na **Vždy**, n
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 7/09/2015 |
-| Částka platební slevy         | 7.00      |
+| Datum platební slevy           | 7/09/2015 |
+| Částka platební slevy         | 7:00      |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | 3,00      |
 | Částka platební slevy k přijetí | 7:00      |
 
-Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**, protože neumožní tomuto odběrateli získat zbývající platební slevu 7,00. Arnold potom zaúčtuje tuto platbu. Po otevření stránky **Transakce odběratele** Arnold zjistí, že faktura má zůstatek 0,00. K dispozici jsou dvě platby. Jedna platba pro 297,00 s platební slevou 3,00 příkaz a druhá platba je pro 700,00.
+Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**, protože neumožní tomuto odběrateli získat zbývající platební slevu 7,00. Arnold potom zaúčtuje tuto platbu. Po otevření stránky **Transakce odběratele** Arnold zjistí, že faktura má zůstatek 0,00. Také vidí, že zde jsou dvě platby. Jedna platba pro 297,00 s platební slevou 3,00 příkaz a druhá platba je pro 700,00.
 
 | Doklad    | Typ transakce | Datum      | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Zůstatek | Měna |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -108,6 +111,3 @@ Arnold změní hodnotu pole **Použít platební slevu** zpět na **Normální**
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

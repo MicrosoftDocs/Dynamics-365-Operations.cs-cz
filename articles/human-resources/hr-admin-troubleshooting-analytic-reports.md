@@ -1,32 +1,30 @@
 ---
 title: Řešení potíží u analytických sestav
-description: Toto téma vysvětluje, jak řešit a diagnostikovat problémy, když se nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
-author: twheeloc
-ms.date: 08/19/2021
+description: Tento článek vysvětluje, jak postupovat, když e nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6ea04c06858cc98b0e233b9133d9dfbebfe59fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067722"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4417663"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Řešení potíží u analytických sestav
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Vydání**
 
@@ -44,7 +42,4 @@ Tento problém může být pouze záležitostí časování. Tento postup slouž
 1. Vyhledejte úlohu **Nasadit měrný systém** v seznamu.
 1. Vyberte **Upravit** v horní části stránky a nastavte naplánované počáteční datum a čas na hodnotu, která bude aktualizovat analytiku blíže aktuálnímu času.
 
-![Dávkové úlohy.](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Dávkové úlohy](media/batch-jobs.png)

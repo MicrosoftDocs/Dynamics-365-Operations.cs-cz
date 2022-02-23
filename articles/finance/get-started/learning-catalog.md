@@ -6,28 +6,30 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
+ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0a96307109674321ebc81aab7d77502a434dd994163232d012627f52d7b409
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a29520d75a63499581232feecc13d64c547392ca
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758020"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441034"
 ---
 # <a name="dynamics-365-finance-learning-catalog"></a>Dynamics 365 Finance výukový katalog
 
 Vyberte si potřebné online školení, osobní workshopy a události pro vaši roli uživatele aplikace Dynamics 365 Finance.
 
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
     ### <a name="business-and-technical-decision-makers"></a>Osoby rozhodující v obchodní a technické oblasti
 
@@ -177,6 +179,3 @@ Vyberte si potřebné online školení, osobní workshopy a události pro vaši 
 
     :::column-end:::
 :::row-end:::
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

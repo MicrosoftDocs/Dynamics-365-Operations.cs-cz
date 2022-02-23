@@ -2,30 +2,35 @@
 title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+manager: annbe
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747690"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410683"
 ---
-# <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
+# <a name="cookie-compliance"></a>Shoda souborů cookie
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Ochrana osobních údajů je důležitým faktorem při použití všech technologií sledování, které ovlivňují zákazníky elektronického obchodu. Z důvodu norem dodržování ochrany osobních údajů, jako je obecné nařízení o ochraně osobních údajů (GDPR) v Evropské unii (EU), je třeba zvážit elektronické zásady ochrany osobních údajů pro všechny weby, které jsou v současné době aktivní. Vzhledem k tomu, že je většina webů elektronického obchodování ve výchozím nastavení globálně přístupná, je důležité prostudovat standardy kompatibility pro web elektronického obchodování.
 
@@ -33,78 +38,23 @@ Chcete-li získat další informace o základních principech, které společnos
 
 Následující tabulka ukazuje aktuální referenční seznam souborů cookie, které vkládají weby Dynamics 365 Commerce.
 
-| Název souboru cookie                               | Použití                                                        | Životnost |
-| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
-| .AspNet.Cookies                             | Uložit ověřovací soubory cookie Microsoft Azure Active Directory (Azure AD) pro jednotné přihlašovaní (SSO). Ukládá šifrované základní informace o uživateli (jméno, příjmení, e-mail). | Relace |
-| \_msdyn365___cart_                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance košíku. | Relace |
-| \_msdyn365___checkout_cart_                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance nákupního košíku. | Relace |
-| \_msdyn365___ucc_                            | Sledování souhlasu se soubory cookies.                          | 1 rok |
-| ai_session                                  | Zjistí, kolik relací uživatelské aktivity zahrnovalo určité stránky a funkce aplikace. | 30 min |
-| ai_user                                     | Zjistí, kolik lidí použilo aplikaci a její funkce. Uživatelé se počítají pomocí anonymních ID. | 1 rok |
-| b2cru                                       | Dynamicky ukládá adresu URL přesměrování.                              | Relace |
-| JSESSIONID                                  | Používá platební konektor Adyen k uložení relace uživatele.       | Relace |
-| OpenIdConnect.nonce.&#42;                       | Ověřování                                               | 11 minut |
-| x-ms-cpim-cache:.&#42;                          | Používá se pro udržování stavu žádosti.                      | Relace |
-| x-ms-cpim-csrf                              | Token CRSF používaný k ochraně před CRSF.     | Relace |
-| x-ms-cpim-dc                                | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
-| x-ms-cpim-rc.&#42;                              | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
-| x-ms-cpim-slice                             | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. | Relace |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        | Relace |
-| x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. | Relace |
-| \_msdyn365___muid_                            | Používá se, pokud je pro prostředí aktivováno experimentování; využíváno jako ID uživatele pro experimentální účely. | 1 rok |
-| \_msdyn365___exp_                             | Používá se, pokud je pro prostředí aktivováno experimentování; slouží k měření vyvažování zatížení výkonu.         | 1 hodina |
-| d365mkt                                       | Používá se, pokud je v nástroji pro tvorbu webu Commerce povolena detekce založená na poloze ke sledování adresy IP uživatele pro návrhy umístění obchodu **Nastavení webu \> Obecné \> Povolit zjišťování obchodů na základě polohy**.      | 1 hodina |
-| \_msdyn365___tuid_                           | Používá se pouze v případě, že je pro prostředí aktivováno experimentování; generuje GUID, který má sloužit jako identifikátor uživatele. Hodnota se změní, pokud se změní stav přihlášení uživatele.      | 1 rok |
-| \_msdyn365___aud_0                          | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
-| \_msdyn365___aud_1                           | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
-| \_msdyn365___aud_2                           | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
-
-Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, soubory cookie v následující tabulce budou sledovány také v jeho prohlížeči.
-
-
-| Doména                      | Cookie               | popis                                                  | Zdroj                                          |
-| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| .linkedin.com                | UserMatchHistory         | Synchronizace ID reklam LinkedIn                                      | Značka LinkedIn Feed a Insight                                |
-| .linkedin.com               | li_sugr                  | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
-| .linkedin.com               | BizographicsOptOut       | Určuje stav odhlášení ze sledování třetích stran.              | Ovládací prvky pro hosty LinkedIn a oborová odhlášení           |
-| .linkedin.com               | \_guid                    | Identifikátor prohlížeče pro Google Ads.                            | Kanál LinkedIn                                                |
-| .linkedin.com               | li_oatml                 | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
-| Různé domény první strany | li_fat_id                | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
-| .adsymptotic.com            | U                        | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
-| .linkedin.com                | bcookie                  | Soubor cookie s ID prohlížeče                                            | Žádosti na LinkedIn                                         |
-| .linkedin.com                | bscookie                 | Zabezpečený soubor cookie prohlížeče                                        | Žádosti na LinkedIn                                         |
-| .linkedin.com               | lang                     | Nastaví výchozí národní prostředí a jazyk.                                 | Žádosti na LinkedIn                                         |
-| .linkedin.com                | lidc                     | Používá se pro směrování.                                             | Žádosti na LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Soubor cookie správce cílové skupiny Adobe                                                     | Nastaveno pro synchronizaci ID                                              |
-| .linkedin.com               | \_ga                      | Soubor cookie Google Analytics                                            | Google Analytics                                             |
-| .linkedin.com               | \_gat                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |
-| .linkedin.com               | liap                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |
-| .linkedin.com               | lissc                    |                                                              |                                                              |
-| .facebook.com               | c_user                   | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |   Facebook                                                           |
-| .facebook.com               | datr                     | Slouží k identifikaci webového prohlížeče, který se používá k připojení k Facebooku nezávisle na přihlášeném uživateli. | Facebook                                                             |
-| .facebook.com               | wd                       | Ukládá rozměry okna prohlížeče a používá ho Facebook k optimalizaci vykreslení stránky. | Facebook                                                             |
-| .facebook.com               | xs                       | Dvouciferné číslo představující číslo relace. Druhá část hodnoty je tajný klíč relace. |  Facebook                                                            |
-| .facebook.com               | fr                       | Obsahuje jedinečné ID prohlížeče a uživatele, které se používají pro cílenou reklamu. |  Facebook                                                            |
-| .facebook.com               | sb                       | Používá se ke zlepšení návrhů přátel Facebook.                                |  Facebook                                                            |
-| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
-| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
-| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
-| .twitter.com                | personalization_id       | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |  Twitter                                                             |
-| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
-| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
-| .pinterest.com              | \_auth                    | Cookie obsahuje ID uživatele aktuálně přihlášeného uživatele.  |   Pinterest                                                           |
-| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
-| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
-| .pinterest.com              | \_pinterest_referrer      | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      |  Pinterest                                                            |
-| .pinterest.com              | \_pinterest_sess          | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      |  Pinterest                                                            |
-| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
-| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
-| .pinterest.com              | cm_sub                   | Obsahuje ID uživatele a časové razítko, když byl soubor cookie vytvořen. |  Pinterest                                                            |
-| .pinterest.com              | csrftoken                | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      | Pinterest                                                             |
-| .pinterest.com              | sessionFunnelEventLogged | Cookie obsahuje stránky, když uživatel vybere tlačítko Pinterest.      | Pinterest                                                             |
-| .pinterest.com              | Místní úložiště            |                                                              |  Pinterest                                                            |
-| .pinterest.com              | Servisní pracovníci          |                                                              |  Pinterest                                                            |
-
+| Název souboru cookie                               | Použití                                                        |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| .AspNet.Cookies                             | Uložit ověřovací soubory cookie Microsoft Azure Active Directory (Azure AD) pro jednotné přihlašovaní (SSO). Ukládá šifrované základní informace o uživateli (jméno, příjmení, e-mail). |
+| &#95;msdyn365___cart&#95;                           | ID nákupního košíku použitého k získání seznamu produktů přidaných do instance košíku. |
+| &#95;msdyn365___ucc&#95;                            | Sledování souhlasu se soubory cookies.                          |
+| ai_session                                  | Zjistí, kolik relací uživatelské aktivity zahrnovalo určité stránky a funkce aplikace. |
+| ai_user                                     | Zjistí, kolik lidí použilo aplikaci a její funkce. Uživatelé se počítají pomocí anonymních ID. |
+| b2cru                                       | Dynamicky ukládá adresu URL přesměrování.                              |
+| JSESSIONID                                  | Používá platební konektor Adyen k uložení relace uživatele.       |
+| OpenIdConnect.nonce.&#42;                       | Ověřování                                               |
+| x-ms-cpim-cache:.&#42;                          | Používá se pro udržování stavu žádosti.                      |
+| x-ms-cpim-csrf                              | Token CRSF používaný k ochraně před CRSF.     |
+| x-ms-cpim-dc                                | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
+| x-ms-cpim-rc.&#42;                              | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
+| x-ms-cpim-slice                             | Používá se k směrování požadavků do příslušné instance serveru pro ověřování produkce. |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Používá se k udržování relace SSO.                        |
+| x-ms-cpim-trans                             | Používá se pro sledování transakcí (počet otevřených karet, které se autentizují proti webu typu B2C), včetně aktuální transakce. |
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Souhlas uživatele webu se soubory cookie na webu elektronického obchodu 
 
@@ -123,6 +73,3 @@ Pokud funkce nebo modul webu elektronického obchodu používá nepodstatný sou
 [Modul souhlasu se soubory cookie](cookie-consent-module.md) 
  
 [Modul záhlaví](author-header-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

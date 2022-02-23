@@ -2,30 +2,35 @@
 title: Přehled stránek košíku a pokladny
 description: Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410889"
 ---
-# <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
+# <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
 
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Stránka košík na webu e-Commerce zobrazuje všechny položky, které odběratel přidal do nákupního košíku. Stránka vozíku je sestavena pomocí modulu košík. Modul košíku je kontejner, který hostuje všech modulů, které jsou nutné k prezentaci položek v nákupním košíku. Modul vozík může rovněž použít jiné moduly, které zobrazují souhrn objednávek a všechny kódy speciální nabídky, které byly použity pro objednávku odběratele.
 
@@ -37,7 +42,7 @@ Stránka košíku slouží jako nákupní sáček a zahrnuje všechny položky, 
 
 Následující ilustrace znázorňuje příklad stránky košíku, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
-![Příklad stránky košíku.](./media/cart2.PNG)
+![Příklad stránky košíku](./media/cart2.PNG)
 
 HLavní část stránky košíku zobrazuje všechny položky, které odběratel přidal do nákupního košíku. Přednastaveny všechny použitelné slevy. Tyto slevy zahrnují složité slevy. Příklady zahrnují "nákup 3 položky a získej 10% slevu" nebo "kup láhev a batoh a získej slevu 10%." V modulu souhrn objednávek je zobrazena částka, která je splatná po použití slev, expedice, daní atd. Existuje také modul propagačního kódu, který umožňuje odběrateli použití nebo odebrání propagačních kódů.
 
@@ -53,7 +58,7 @@ Na stránce pokladny jsou umístěny informace vyžadované k zadání objedná
 
 Následující ilustrace znázorňuje příklad stránky pokladny, která byla sestavena pomocí knihovny modulů.
 
-![Příklad stránky pokladny.](./media/Checkout.PNG)
+![Příklad stránky pokladny](./media/Checkout.PNG)
 
 Hlavní část stránky pokladny, v níž jsou shromážděny všechny informace o objednávce. Tyto informace zahrnují dodací adresu, možnosti dodání a informace o platbě. Pokladna má tok krok za krokem, protože informace musí být zadány v určitém pořadí, které má být zpracováno. Před vypočítáním nákladů na dodání je například nutné zadat dodací adresu a autorizovat platbu.
 
@@ -102,6 +107,3 @@ Další informace o tom, jak vytvořit stránku pokladny, naleznete v tématu [
 [Přehled stránek s podrobnostmi o produktu](quick-tour-pdp.md)
 
 [Přehled stránek správy účtů](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Správa atributů a skupin atributů
 description: Toto téma popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727647"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410764"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Správa atributů a skupin atributů
 
@@ -43,7 +46,7 @@ Například typický televizní produkt může mít následující atributy.
 |            | Kompozitní vstupy         | 0–10                        | 2             |
 |            | Komponentní vstupy         | 0–10                        | 1             |
 | LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
-|            | 3D k dispozici               | Ano nebo Ne                   | Ne            |
+|            | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
 |            | Provozní teplota do        | 0–43 °C              | 100           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
@@ -70,7 +73,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
     - Pojmenujte typ atributu **Tvar čočky** a přidejte následující hodnoty: **Ovál**, **Čtverec** a **Obdélník**.
     - Pojmenujte druhý typ atributu **Značka slunečních brýlí** a přidejte následující hodnoty: **Ray ban**, **Aviator** a **Oakley**.
 
-![Typy atributů.](media/AttributeType.png)
+![Typy atributů](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Nastavit atribut
 
@@ -79,7 +82,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 3. Vytvořte atribut s názvem **Čočky**.
 4. Nastavte pole **Typ atributu** na **Tvar čočky**.
 
-![Atributy.](media/Attribute.png)
+![Atributy](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Metadata atributu
 
@@ -101,7 +104,7 @@ Zde jsou uvedeny zbývající možnosti metadat atributů na stárnce **Atributy
 
 Tyto možnosti byly původně určené k vylepšení funkce vyhledávání pro online poutače. Ačkoli aplikace Commerce neobsahuje online poutače, obsahuje eCommerce Publishing Software Development Kit (SDK). Odběratele mohou použít tuto sadu SDK pro vložení produktů do libovolných vyhledávacích indexů. I když jsou data produktu importována, odběratelé by stále měli mít možnost rozlišit prohledávatelná dat, data, na která se lze dotazovat atd. Tímto způsobem mohou vytvářet optimální index, aby zajistili, že na indexu budou pouze atributy, které by tam měly *podle jejich názoru* být.
 
-Informace o účelu těchto zbývajících možností naleznete v tématu [Přehled schématu vyhledávání ve službě SharePoint Server 2013](/SharePoint/search/search-schema-overview).
+Informace o účelu těchto zbývajících možností naleznete v tématu [Přehled schématu vyhledávání ve službě SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Nastavení filtrů pro atributy
 
@@ -134,7 +137,7 @@ Stránka **Předvolby zobrazení filtru** obsahuje následující pole:
     - 200 – 500
     - 500 a více
 
-![Nastavení filtru atributů.](media/AttributeFilterSettings.PNG)
+![Nastavení filtru atributů](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Skupiny atributů
 
@@ -142,7 +145,7 @@ Po definování atributů je lze přiřadit do skupin atributů. *Skupina atribu
 
 Můžete také nastavit výchozí hodnoty atributů, které jsou součástí skupiny atributů. Například přidáte atribut barvy do skupiny atributů a zvolíte výchozí hodnotu atributu **Modrá**. V takovém případě po přidání skupiny atributů k produktu, který zahrnuje barvu jako jeden z jeho atributů, zobrazí se pro tento produkt výchozí barva **Modrá**.
 
-![Skupiny atributů.](media/AttributeGroup.png)
+![Skupiny atributů](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Tvorba skupiny atributů
 
@@ -155,7 +158,7 @@ Můžete také nastavit výchozí hodnoty atributů, které jsou součástí sku
 
 Jednu nebo více skupin atributů lze přiřadit k uzlům kategorií v následujících typech hierarchií kategorií: Hierarchie produktů Commerce, hierarchie kategorie navigace kanálu a Doplňková hierarchie kategorií produktu. Poté po zařazení produktů do kategorií zdědí produkty atributy, které jsou zahrnuty ve skupinách atributů.
 
-![Hierarchie produktů – Skupiny atributů produktů.](media/AGRetailProdHierarchy.PNG)
+![Hierarchie produktů – Skupiny atributů produktů](media/AGRetailProdHierarchy.PNG)
 
 Chcete-li přiřadit skupiny atributů ke kategoriím v hierarchii produktů Commerce, postupujte podle následujících kroků.
 
@@ -200,7 +203,7 @@ Jednu nebo více skupin atributů lze přiřadit k jedné nebo více prodejnám 
     3. Vyberte uzel kategorie **Módní doplňky**, zvolte **Módní sluneční brýle** a poté na pevné záložce **Atributy produktu kanálu** vyberte **Zahrnout atribut** pro každý atribut.
     4. Vyberte uzel kategorie **Pánské oděvy**, zvolte **Kalhoty** a poté na pevné záložce **Atributy produktu kanálu** vyberte **Zahrnout atribut** pro každý atribut.
 
-![Kategorie kanálu a atributy produktu - Skupiny atributů.](media/CCPAttrGrp.png)
+![Kategorie kanálu a atributy produktu - Skupiny atributů](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Přepsání hodnot atributů
 
@@ -214,7 +217,7 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 4. Vyberte požadovaný produkt v mřížce. Poté v podokně akcí na kartě **Produkt** ve skupině **Nastavení** zvolte **Atributy produktu**.
 5. V levém podokně vyberte atribut a aktualizujte jeho hodnotu v pravém podokně.
 
-![Stránka podrobností produktu – Skupiny atributů produktů.](media/ProdDetailsProdAttrValues.png)
+![Stránka podrobností produktu – Skupiny atributů produktů](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Přepsání hodnot atributu produktů v katalogu
 
@@ -233,7 +236,7 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
     > [!NOTE]
     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny produkty.
 
-![Skupiny atributu produktu katalogu.](media/CatalogProdAttrValues.png)
+![Skupiny atributu produktu katalogu](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Přepsání hodnot atributu produktů v kanálu
 
@@ -254,6 +257,3 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 
     > [!NOTE]
     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny produkty.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

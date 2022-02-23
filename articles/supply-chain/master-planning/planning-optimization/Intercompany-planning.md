@@ -2,13 +2,16 @@
 title: Mezipodnikové plánování
 description: Toto téma popisuje mezipodnikové plánování a vysvětluje, jak nakonfigurovat mezipodnikové plánování pomocí optimalizace plánování v Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
+ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777904"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672174"
 ---
 # <a name="intercompany-planning"></a>Mezipodnikové plánování
 
@@ -45,8 +48,8 @@ Pokud spustíte hlavní plánování z hlavního plánu, který zahrnuje plánov
 
 Chcete-li použít mezipodnikové plánování, musíte svůj systém připravit následujícím způsobem:
 
-1. Příslušné produkty musí být uvolněny ve všech příslušných společnostech. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
-1. Následná poptávka musí být pokryta nákupy od dodavatele, který má mezipodnikový vztah k předcházející společnosti a relevantní výchozí dimenze zásob (pracoviště a sklad) na zákazníkovi. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
+1. Příslušné produkty musí být uvolněny ve všech příslušných společnostech. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
+1. Následná poptávka musí být pokryta nákupy od dodavatele, který má mezipodnikový vztah k předcházející společnosti a relevantní výchozí dimenze zásob (pracoviště a sklad) na zákazníkovi. Další informace naleznete v tématu [Konfigurace a použití mezipodnikového obchodu v Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) na Microsoft Learn.
 1. Hlavní plán v předcházející společnosti musí zahrnovat plánovanou následnou poptávku a příslušná společnost a hlavní plán musí být specifikovány v následných plánech.
 
 ## <a name="include-planned-downstream-demand"></a>Zahrnout podřízenou plánovanou poptávku
@@ -76,7 +79,7 @@ V tomto příkladu je ve společnosti USMF vytvořena plánovaná výrobní zak�
 
 Následující ilustrace ukazuje, jak by se tento příklad mohl objevit na stránce **Víceúrovňové zakotvení** pro plánovanou výrobní zakázku.
 
-![Mezipodnikový příklad, který zahrnuje dvě společnosti.](media/IntercompanyPlanning1.png)
+![Mezipodnikový příklad, který zahrnuje dvě společnosti](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Mezipodnikový příklad, který zahrnuje tři společnosti
 
@@ -84,7 +87,4 @@ V tomto příkladu je ve společnosti USMF vytvořena plánovaná nákupní obje
 
 Následující ilustrace ukazuje, jak by se tento příklad mohl objevit na stránce **Víceúrovňové zakotvení** pro plánovanou výrobní zakázku.
 
-![Mezipodnikový příklad, který zahrnuje tři společnosti.](media/IntercompanyPlanning2.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Mezipodnikový příklad, který zahrnuje tři společnosti](media/IntercompanyPlanning2.png)

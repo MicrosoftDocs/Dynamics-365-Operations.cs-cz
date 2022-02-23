@@ -67,6 +67,3 @@ Když je jako počáteční stránka pro spuštění uživatele vybrán pracovn�
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Kód důvodu výpovědi aktualizuje záznam o přiřazení pozice
 Kód důvodu výpovědi bude nyní aktualizovat přiřazení pozice při výpovědi pro zaměstnance a ukončení pozice. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

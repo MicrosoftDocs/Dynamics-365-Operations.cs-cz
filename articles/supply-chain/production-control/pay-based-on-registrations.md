@@ -2,9 +2,11 @@
 title: Plat na základě registrace
 description: Toto téma popisuje způsob výpočtu mzdy na základě registrací pracovníka.
 author: johanhoffmann
+manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966373"
 ---
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
@@ -168,9 +170,9 @@ Chcete-li nakonfigurovat systém tak, aby jasně rozlišoval standardní pracovn
 
 Na stránce **Parametry výpočtu** vyberte **Přesčas** jako typ specifikace profilu a nastavte možnost **Placený čas** na **Ne**, jak je uvedeno v tomto poli.
 
-| Reg. určení | Typ specifikace profilu | Výpočet   | Nastavení | Placeno         | Nastavení |
+| Reg. určení | Typ specifikace profilu | Výpočet   |     | Placeno         |     |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Prac. doba       | Přesčas                   | Standardní čas | Ano | Placený čas     | Ne  |
+| Prac. doba       | Přesčas                   | Standardní čas | Ano | Placený čas     | Žádný  |
 |                    |                            | Placený čas      | Ano | Placený přesčas | Ano |
 
 Po úpravě parametrů výpočtu jsou generovány následující položky mzdy.
@@ -559,7 +561,7 @@ Naopak pokud není zaškrtnuto zaškrtávací políčko **Odečíst přesčas** 
 
 Následující příklad ukazuje, jak lze snížit účet pružné pracovní doby pracovníka převodem doby absence na dobu Flex-.
 
-Pracovník označí čas příchodu v 7:00 a čas odchodu v 13:00. Pracovník má dohodu, že může jít na víkend domů, pokud si tyto hodiny odečte z účtu flex. Když pracovník označí odchod v 13:00, bude vyzván k výběru kódu absence, protože doba absence pro zbývající část pracovního dne, která je ovlivněna, není plánovanou pružnou pracovní dobou Flex-. Pokud chcete převést zbývající část pracovního dne na pružnou pracovní dobu Flex-, pracovník může vybrat kód absence, nastavený ke snížení účtu pružné pracovní doby.
+Pracovník označí čas příchodu v 7:00 a čas odchodu v 13:00. Dohodla se se svým vedoucím, že může jít domů na víkend, pokud odečte tyto hodiny ze svého účtu pružné pracovní doby. Když pracovník označí odchod v 13:00, bude vyzván k výběru kódu absence, protože doba absence pro zbývající část pracovního dne, která je ovlivněna, není plánovanou pružnou pracovní dobou Flex-. Pokud chcete převést zbývající část pracovního dne na pružnou pracovní dobu Flex-, pracovník může vybrat kód absence, nastavený ke snížení účtu pružné pracovní doby.
 
 Chcete-li snížit zůstatek pružné pracovní doby pro pracovníky, kteří budou registrovat absenci v pracovní den, vyberte **Čas a docházka** &gt; **Nastavení** &gt; **Skupiny** &gt; **Skupiny absencí** a zvolte zaškrtávací políčko **Snížit pružnou pracovní dobu**.
 
@@ -596,6 +598,3 @@ Pokud se pracovník nedostaví na práci v pracovní den a nemá na ten den plá
 - Automaticky vložit absenci
 
 Při výpočtu denních registrací pro pracovníka, který má oprávnění k pružné pracovní době, se použije jako kód absence kód, který je určený v poli **Automaticky vložit flex-**. Pokud pracovník není aktivován pro pružnou pracovní dobu, bude použit kód absence zadaný v poli **Automaticky vložit absenci**. Pokud má společnost kombinaci pracovníků, kteří mají povolenu pružnou pracovní dobu, a pracovníky, kteří nemají povolenu pružnou pracovní dobu, musíte nastavit oba parametry.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022
 description: Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.
 author: mrolecki
+manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7bd5308e7589cb280244ea85e184422cbe2aa09f1cb548a81445defbd082e42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752091"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964534"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022
 
@@ -47,6 +49,3 @@ Toto je pátý z pěti úkolů, které společně popisují proces platby dodava
     3.    Zadejte hodnotu do pole **Název souboru**. Z důvodu platby v EUR bude v tomto příkladu vygenerovaný soubor kompatibilní se SEPA. Převod kreditu ISO20022, jakož i jiné formáty plateb dodavatelů, lze také použít k vytváření plateb v jiných měnách.
     4.    V poli **Bankovní účet** zadejte nebo vyberte hodnotu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

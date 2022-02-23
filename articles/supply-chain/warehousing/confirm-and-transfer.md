@@ -2,23 +2,26 @@
 title: Potvrdit a převést
 description: V tomto tématu se vysvětluje, jak používat funkci Potvrdit a převést, která uživatelům umožňuje expedovat náklady ze skladu dříve, než je dokončena veškerá práce s těmito náklady spojená.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592621"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423580"
 ---
 # <a name="confirm-and-transfer"></a>Potvrdit a převést
 
@@ -45,8 +48,8 @@ Můžete rozdělit pouze náklady, jež splňují všechna následující krité
 
 - V jednom nebo více řádcích nákladu jsou vydaná množství.
 - Stav nákladu je nižší než naložen.
-- Neexistují data řádku nákladu. (Tato data se vytvářejí konsolidací registračních značek na přechodném skladovém místě, funkce Potvrdit a převést konsolidaci registračních značek nepodporuje.)
-- Žádné zásoby aktuálně nečekají na balení v balicím místě. (Funkce *Potvrdit a převést* nepodporuje zásoby, které byly vydány do balicí stanice, ale ještě nebyl zabaleny, pokud nejsou kontejnery pro zabalení umístěny na přechodná skladová místa, kde byla vytvořena práce nakládky.)
+- Neexistují data řádku nákladu. (Tato data se vytvářejí konsolidací registračních značek na přechodném skladovém místě, funkce *Potvrdit a převést* konsolidaci registračních značek nepodporuje.)
+- Žádné zásoby aktuálně nečekají na balení v balicím místě. (Funkce *Potvrdit a převést* nepodporuje zásoby, které byly vydány do balicí stanice, ale ještě nebyl zabaleny.)
 
 > [!NOTE]
 > Tato funkce se liší od funkce nákladu přepravy, kterou je vhodné použít ve skladech, které nikdy nemohou plánovat a vytvářet náklady před výdejem ale místo toho nakládají do dostupného přepravního prostoru po dokončení výdeje.
@@ -227,6 +230,3 @@ O aktualizaci transakčních vztahů se můžete ujistit také takto:
 - Možnost **Rozdělit množství do nového nákladu** funguje také tehdy, když jsou některá ze zbývajících záhlaví ve stavu *V procesu*. Funkci proto můžete používat, i když pracovníci již provádějí příkazy k výdeji.
 - Pokud vyberete možnost **Stornovat nedodané množství**, zatímco ještě existuje práce ve stavu *Otevřená* nebo *Probíhající*, zobrazí se následující chybová zpráva: „Nelze stornovat zbývající množství pro naložení. Existuje práce pro nakládání.“
 - Pokud vyberete možnost **Stornovat nedodané množství**, když již nezbývá žádná práce, ale existují neexpedované řádky nákladu, zobrazí se následující chybová zpráva: „Zásilku nelze načíst, protože množství u položky překračuje procento definované pro dodávku.“ Chcete-li se této chybě vyhnout, můžete nastavit procentuální hodnotu **V dodávce** na nerealizovaném řádku nákladu na 100 procent. Nerealizované řádky nebudou přesunuty do nového nákladu, ale aktuální náklad bude potvrzen jako „v dodávce“. V takovém případě nebudete moci původní objednávku znovu uvolnit. Proto bude třeba věc vyřešit jiným postupem.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

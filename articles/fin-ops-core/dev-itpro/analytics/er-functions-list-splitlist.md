@@ -2,8 +2,11 @@
 title: Funkce elektronického výkaznictví SPLITLIST
 description: Toto téma obsahuje obecné informace o použití funkce SPLITLIST elektronického výkaznictví.
 author: NickSelin
-ms.date: 03/15/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776115"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680331"
 ---
 # <a name="splitlist-er-function"></a>Funkce elektronického výkaznictví SPLITLIST
 
@@ -27,16 +30,10 @@ ms.locfileid: "6776115"
 
 Funkce `SPLITLIST` rozdělí zadaný seznam na podseznamy (neboli dávky), přičemž každá z nich obsahuje zadaný počet záznamů. Funkce potom vrátí výsledek jako novou hodnotu typu *seznam záznamů*, která se skládá z dávek.
 
-## <a name="syntax-1"></a>Syntaxe 1
+## <a name="syntax"></a>Syntaxe
 
 ```vb
 SPLITLIST (list, number)
-```
-
-## <a name="syntax-2"></a>Syntaxe 2
-
-```vb
-SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenty
@@ -48,10 +45,6 @@ Platná cesta ke zdroji dat typu *seznam záznamů*.
 `number`: *celé číslo*
 
 Maximální počet zobrazených záznamů na dávku.
-
-`on-demand reading flag`: *logická hodnota*
-
-*Booleovská* hodnota určující, zda mají být prvky dílčích seznamů generovány na vyžádání.
 
 ## <a name="return-values"></a>Vrácené hodnoty
 
@@ -71,8 +64,6 @@ Vrácený seznam dávek obsahuje následující prvky:
 
     Číslo aktuální dávky ve vráceném seznamu.
 
-Když je příznak čtení na vyžádání nastaven na **Pravda**, dílčí seznamy jsou generovány na vyžádání, což umožňuje snížit spotřebu paměti, ale může dojít k pomalejšímu zpracování, pokud se prvky nepoužívají postupně.
-
 ## <a name="example"></a>Příklad
 
 V následujícím příkladu je datový zdroj **Řádky** vytvořen jako seznam záznamů se třemi záznamy. Tento seznam je rozdělen do dávek, z nichž každá obsahuje až dva záznamy.
@@ -90,6 +81,3 @@ Následující obrázek znázorňuje výsledek při spuštění navrženého for
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce seznamu](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

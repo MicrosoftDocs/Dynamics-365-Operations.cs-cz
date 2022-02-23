@@ -61,6 +61,3 @@ V rámci auditu procesu jsou k dispozici následující data.
 |Historie žádosti o práci | Žádost o práci (msdyn_JobapplicatonId)<br></br>Stav (msdyn_status) <br></br>Důvod stavu (msdyn_statusreason) <br></br>Důvod zamítnutí (msdyn_rejectionreason) |
 | Historie otevřené pracovní pozice | Otevřená pracovní pozice (msdyn_JobopeningId) <br></br>Stav (msdyn_jobopeningstatus) <br></br>Důvod stavu (msdyn_jobopeningstatusreason) |
 | Historie kandidáta | Kandidát (msdyn_CandidateId) |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

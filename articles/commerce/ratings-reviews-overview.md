@@ -2,30 +2,37 @@
 title: Přehled hodnocení a recenzí
 description: Toto téma se týká hodnocení a recenzí v aplikaci Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/01/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1248ce660d765ddade1df7d79786202235019990
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982245"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410885"
 ---
 # <a name="ratings-and-reviews-overview"></a>Přehled hodnocení a recenzí
+
 
 [!include [banner](includes/banner.md)]
 
 Toto téma se týká hodnocení a recenzí v aplikaci Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Hodnocení a recenze jsou rozhodující pro zákazníky v elektronickém obchodu, kteří chtějí vědět, jak ostatní zákazníci vnímali produkt. Mohou také pomoci spotřebitelům provádět nákupní rozhodnutí. V Dynamics 365 Commerce řešení hodnocení a recenzí umožňuje prodejcům zachytit recenze a hodnocení produktů od zákazníků. Maloobchodní prodejci pak mohou zobrazit průměrné hodnocení a zkontrolovat informace na webu e-Commerce.
 
@@ -35,7 +42,7 @@ Funkce hodnocení a recenzí v aplikaci Dynamics 365 Commerce je omnikanálovým
 
 Následující ilustrace znázorňuje, jak funguje řešení hodnocení a recenzí v Dynamics 365 Commerce.
 
-![Hodnocení a recenze v Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Hodnocení a recenze v Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Řešení hodnocení a recenzí v Dynamics 365 Commerce používá služby Azure Cognitive Services, které nabízí automatické moderování slov ve 40 jazycích. Vzhledem k tomu, že lidské schválení není vyžadováno, dojde ke snížení nákladů moderování. Systém také nabízí nástroje moderátorů, které lze použít k odpovědi na požadavky zákazníků, zpětnou vazbu a vyhlášení, a k adresování datových požadavků od uživatelů.
 
@@ -52,14 +59,3 @@ Následující ilustrace znázorňuje, jak funguje řešení hodnocení a recenz
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Commerce](sync-product-ratings.md)
-
-[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
-
-[Import a export hodnocení a recenzí](import-export-reviews.md)
-
-[Konfigurace ověřování mezi službami](service-to-service-auth.md)
-
-[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

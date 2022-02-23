@@ -2,9 +2,11 @@
 title: Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Operations verze 1611.
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752801"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797188"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
 
@@ -496,7 +498,7 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynami
 <li>Specificky italský formát inkasní platby ISO20022.</li>
 <li>Formát vymáhání úhrady RIBA pro Itálii</li>
 <li>Sestava transakcí domácí daně pro Itálii</li>
-<li>Sestava černé listiny pro Itálii</li>
+<li>Sestavy černé listiny pro Itálii</li>
 <li>Sestava Modello770 pro Itálii</li>
 <li>Roční daňový komunikační výkaz pro Itálii</li>
 </ul>
@@ -943,6 +945,3 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 ## <a name="additional-resources"></a>Další prostředky
 
 [Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

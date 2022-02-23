@@ -2,30 +2,36 @@
 title: Vytvořit právnické osoby
 description: Toto téma popisuje, jak vytvořit právnické osoby v Microsoft Dynamics 365 Commerce, které je nutné před vytvořením kanálů vytvořit a nakonfigurovat.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740424"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410747"
 ---
 # <a name="create-legal-entities"></a>Vytvořit právnické osoby
+
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit právnické osoby v Microsoft Dynamics 365 Commerce, které je nutné před vytvořením kanálů vytvořit a nakonfigurovat.
+
+## <a name="overview"></a>Přehled
 
 Právnická osoba je organizace, která má registrovanou nebo uzákoněnou právní strukturu. Právnické osoby mohou uzavírat právní smlouvy a je po nich vyžadována příprava výkazů s informacemi o jejich výkonu.
 
@@ -44,7 +50,7 @@ Chcete-li vytvořit novou právnickou osobu v Dynamics 365 Commerce, postupujte 
 1. V poli **Země/oblast** zadejte nebo vyberte hodnotu.
 1. Vyberte **OK**. 
 
-   ![Vytvoření právnické osoby.](media/legal-entities.png)
+   ![Vytvoření právnické osoby](media/legal-entities.png)
 
 1. V sekci **Obecné** zadejte následující obecné informace o právnické odobě: 
    1. Pokud je požadován vyhledávací název, zadejte vyhledávací název. Vyhledávací název je alternativní název, který lze použít k hledání tohoto právního subjektu. 
@@ -67,9 +73,9 @@ Chcete-li vytvořit novou právnickou osobu v Dynamics 365 Commerce, postupujte 
 
 Na následujícím obrázku je podrobný příklad právnické osoby.
 
-![Obecná část právnické osoby.](media/legal-entities-general.png)
+![Obecná část právnické osoby](media/legal-entities-general.png)
    
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled organizací a organizačních hierarchií](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
@@ -80,6 +86,3 @@ Na následujícím obrázku je podrobný příklad právnické osoby.
 [Přehled kanálů](channels-overview.md)
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

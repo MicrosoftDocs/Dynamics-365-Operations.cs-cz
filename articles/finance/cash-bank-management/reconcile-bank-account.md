@@ -2,24 +2,27 @@
 title: Odsouhlasení bankovního účtu
 description: Toto téma popisuje způsob odsouhlasení bankovního účtu.
 author: panolte
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e06a38a19a16a07d77d0c9aceaa4e3206646dd0561996681b417b785058f3938
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739352"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441230"
 ---
 # <a name="reconcile-a-bank-account"></a>Odsouhlasení bankovního účtu
 
@@ -68,6 +71,3 @@ Funkce Zrušení odsouhlasení bankovního výpisu vám umožňuje zrušit odsou
 Odsouhlasení bankovního výpisu lze zrušit pouze v chronologickém pořadí, ve kterém byly zadány. Když je odsouhlasení bankovního výpisu zrušeno, nové transakce a opravy budou stornovány a všechny ostatní transakce budou označeny jako Neodsouhlasené.
  
 Chcete-li zrušit odsouhlasení bankovního výpisu, vyberte bankovní výpis a vyberte **Bankovní výpis > Zrušení odsouhlasení banky**. Na stránce **Storno odsouhlasení banky** zadejte **Kód důvodu**, **Komentář k důvodu** a **Datum zrušení**. Výběrem tlačítka **OK** zahajte zrušení. Poznámka: datum zrušení bankovního výpisu musí být v nebo po datu výpisu z banky. Po zrušení odsouhlasení bankovního výpisu bude pole **Datum zrušení** bankovního výpisu aktualizováno dle **Data zrušení**. Chcete-li zobrazit transakce, pro které bylo odsouhlasení zrušeno, vyberte tlačítko **Transakce**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

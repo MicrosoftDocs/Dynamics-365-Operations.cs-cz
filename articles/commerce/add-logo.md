@@ -2,13 +2,16 @@
 title: Přidání loga
 description: Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410731"
 ---
 # <a name="add-a-logo"></a>Přidání loga
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Když vytváříte web, jedna z prvních věcí, kterou pravděpodobně uděláte, je přidání loga vaší společnosti nebo značky do záhlaví webu. Online knihovna modulů Dynamics 365 Commerce poskytuje modul, který tuto úlohu usnadňuje.
 
@@ -61,12 +66,11 @@ Po publikování aktualizovaného fragmentu záhlaví budou všechny stránky we
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 
+[Přidání uvítací zprávy](add-welcome-message.md)
+
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -102,6 +102,3 @@ Pokud zvolíte pole **Zdědit účastníky zpětné od náborového týmu**, bud
 Aktivita pohovoru je volitelnou aktivitou s třemi složkami: **Požadavek na dostupnost kandidáta**, **Plán** a **zpětná vazba**. Použijte aktivitu pohovoru v šabloně práce, pokud chcete zahrnout požadavek na dostupnost kandidáta, plán a zpětnou vazbu jako součást procesu, namísto jejich individuálního použití .
 
 Chcete-li zahrnout nebo omezit kandidáty, se kterými má být veden pohovor, vyberte hodnotu v poli **S kým vedete pohovor**. K dispozici jsou možnosti **Všichni kandidáti**, **Externí kandidáti** a **Interní kandidáti**. Například pokud chcete přeskočit interní kandidáty v prvním kole pohovoru, nastavte **S kým vedete pohovor** na **Externí kandidáti**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

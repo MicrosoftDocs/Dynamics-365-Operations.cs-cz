@@ -1,26 +1,29 @@
 ---
 title: Správa oprav
 description: Systematicky seskupujte problémy s cílem usnadnit nalezení návrhů řešení, která byla úspěšná v minulosti.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567912"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423555"
 ---
 # <a name="repair-management"></a>Správa oprav       
 
@@ -35,11 +38,15 @@ Můžete nastavit příznaky, diagnózu a řešení. Všechny můžete později 
 
 Formuláře pro nastavení slouží k zadávání informací, které budou použity k zadání symptomů, diagnózy a rozhodnutí opravy.
 
-- **Správa servisu** \> **Nastavení** \> **Opravy** \> **Podmínky**.
-- **Správa servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků**.
--  **Správa servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy**.
-- **Správa servisu** \> **nastavení** \> **opravy** \> **Řešení**.
-- **Správa servisu** \> **nastavení** \> **opravy** \> **Fáze oprav**.
+1.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **podmínky**.
+
+2.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti příznaků**.
+
+3.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Oblasti diagnózy**.
+
+4.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Řešení**.
+
+5.  Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **opravy** \> **Fáze oprav**.
 
 ## <a name="symptoms-and-conditions"></a>Příznaky a podmínky
 
@@ -75,19 +82,19 @@ Chcete-li pro určitou položku použít správu oprav, musí být tato položka
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Vytvoření řádku opravy pro servisní zakázku
 
-1.  Přejděte na **Správa servisu** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
+1.  Klikněte na uzel **Řízení služeb** \> **Společné** \> **Servisní zakázky** \> **Servisní zakázky**.
 
 2.  Vyberte servisní zakázku s předmětem servisu, který vyžaduje opravu.
 
-3.  Vyberte formulář **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav**.
+3.  Klepněte na tlačítko **Oprava** \> **Řádky opravy** k otevření formuláře **řádky oprav**.
 
-4.  Zvolte **Nový** pro vytvoření nového řádku.
+4.  Stisknutím kombinace kláves CTRL+N vytvořte nový řádek.
 
 5.  Vyberte předmět servisu. Můžete vybrat libovolný předmět servisu, který byl konfigurován prostřednictvím relace předmětu v servisní zakázce.
 
-6.  Vyberte libovolné přednastavené symptomy, diagnózy či hodnoty zpracování, které jsou relevantní pro daný řádek opravy, a v případě potřeby vyberte **Poznámka** a vytvořte na řádku opravy poznámku.
+6.  Vyberte libovolné přednastavené symptomy, diagnózy či hodnoty zpracování, které jsou relevantní pro daný řádek opravy, a v případě potřeby klepněte na kartu **Poznámka** a vytvořte na řádku opravy poznámku.
 
-7.  Kliknutím na tlačítko **Uložit** uložte nový řádek opravy. Pole **Vytvořené datum a čas** na kartě **hlavní** ve formuláři **řádky oprav** se aktualizuje s použitím času uložení.
+7.  Stisknutím kombinace kláves CTRL+S nový řádek opravy uložte. Pole **Vytvořené datum a čas** na kartě **hlavní** ve formuláři **řádky oprav** se aktualizuje s použitím času uložení.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Sledování průběhu a vyřešení opravy problému
 
@@ -106,6 +113,3 @@ Po vyřešení problému s opravou můžete řádek opravy zavřít. Nastavte f�
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

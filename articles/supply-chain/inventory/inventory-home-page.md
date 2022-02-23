@@ -1,29 +1,30 @@
 ---
 title: Přehled řízení zásob
 description: Toto téma poskytuje přehled Řízení zásob.
-author: yufeihuang
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2094"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dee04677858228b66d64bb0a217206b5557cc30
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce9d22fa9a3a08b08f65943ba027ace8204d4443
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982657"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423573"
 ---
 # <a name="inventory-management-overview"></a>Přehled řízení zásob
 
@@ -42,7 +43,7 @@ ms.locfileid: "7982657"
 Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří rámec modulu Řízení zásob. Klikněte níže na mapu výuky a rozbalte ji. Tato mapa výuky vám pomůže začít.
 
 
-[![Mapa výuky pro zásoby.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Mapa výuky pro zásoby](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -53,10 +54,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 Další informace naleznete v tématu [Uzávěrka zásob](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Blogy k výrobě a Supply Chain Management
-Názory, novinky a další informace o řízení zásob a jiných řešeních naleznete na blogu [Tým výzkumu a vývoje pro výrobu v Dynamics AX](/archive/blogs/axmfg/) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Názory, novinky a další informace o řízení zásob a jiných řešeních naleznete na blogu [Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Průvodci záznamem úloh
 K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko **Nápověda** na kterékoliv stránce
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

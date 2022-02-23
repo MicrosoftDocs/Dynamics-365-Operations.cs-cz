@@ -1,28 +1,29 @@
 ---
 title: Přehled DPH
 description: Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
-author: kailiang
+author: ShylaThompson
+manager: AnnBe
 ms.date: 10/28/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "13111"
-- intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: kailiang
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021692e0b599731db1d991405fcb4632080582bf
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983921"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441209"
 ---
 # <a name="sales-tax-overview"></a>Přehled DPH
 
@@ -30,13 +31,14 @@ ms.locfileid: "7983921"
 
 Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
 
-## <a name="overview"></a>Přehled
+<a name="overview"></a>Přehled
+--------
 
 Systém DPH podporuje spoustu typů nepřímých daní, jako daň z prodeje, daň z přidané hodnoty (DPH), daň ze zboží a služeb tax (GST), poplatky jednotkové poplatky a srážková daň. Tyto daně jsou vypočítány a zdokumentovány během transakcí nákupu a prodeje. Musí být pravidelně vykazována a zaplacena finančnímu úřadu. 
 
 Následující diagram znázorňuje entity nastavení daně a jejich propojení.
 
-[![Diagram znázorňující přehled entit nastavení daně.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram znázorňující přehled entit nastavení daně](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Pro každou daň z prodeje, kterou společnost musí vykazovat, je třeba definovat kód daně z prodeje. Kód daně z prodeje ukládá sazby daně a pravidla pro výpočet daně z prodeje. 
 
@@ -95,6 +97,3 @@ Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finanční
 Pokud použijete postdatovaný šek jako způsob platby, dojde při vytvoření platby k vymazání bankovního účtu. V některých zemích se DPH stane "realizovanou" odpovědností, když se platba zúčtuje v bance, což znamená, že postdatovaný šek je vyrovnán. Můžete ho povolit výběrem možnosti **Realizovat podmíněnou DPH při zaúčtování postdatovaných šeků** v části **Správa hotovosti a banky > Nastavení > Parametry správy hotovosti a banky > Postdatované šeky**.
 
 Další informace naleznete v tématu [Nastavení srážkové daně](tasks/set-up-withholding-tax.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

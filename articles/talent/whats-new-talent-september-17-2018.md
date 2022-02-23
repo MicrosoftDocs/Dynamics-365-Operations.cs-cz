@@ -54,6 +54,3 @@ Aktualizace Platform 18 pro Finance and Operations je nyní součástí vydání
 ## <a name="bug-fixes"></a>Opravy chyb
 
 Tato verze obsahuje několik dalších oprav chyb, včetně toho, že odkazy na ACA ADA a I9 budou nyní povoleny pouze pro americké společnosti.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

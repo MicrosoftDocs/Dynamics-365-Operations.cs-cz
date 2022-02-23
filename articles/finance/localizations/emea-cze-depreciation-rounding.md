@@ -2,24 +2,27 @@
 title: " Zaokrouhlení odpisu"
 description: Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého majetku nahoru nebo dolů na nejbližší celé číslo.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 265204
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bad8053d00cf9afe19964b129624a0406e93a4c3238e7349574953a4d70e474e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b0c0dbaa10c83a5479de0cd01455f7aaa0a8eb1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729565"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407605"
 ---
 # <a name="depreciation-rounding"></a> Zaokrouhlení odpisu
 
@@ -36,6 +39,3 @@ Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého m
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

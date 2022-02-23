@@ -2,25 +2,28 @@
 title: Přiřadit role uživatele leasingu
 description: Toto téma popisuje role zabezpečení, které se používají pro leasing majetku. Vysvětluje také, jak těmto rolím přiřadit uživatele.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a3443cf9fa5b14ac0b3c4560ed45874939aa50cd665f4db46290f5af04bf6ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b31d0880d4f2cd2b8ad2dffcfe279421f935ed35
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771745"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4441365"
 ---
 # <a name="assign-lease-user-roles"></a>Přiřadit role uživatele leasingu
 
@@ -41,6 +44,3 @@ Podle těchto pokynů můžete uživatelům přiřadit role, které se používa
 1. Přejděte na **Správa systému \> Zabezpečení \> Přiřadit uživatele k rolím**.
 2. Vyberte role **Údržba leasingu**, **Referent leasingu** nebo **Zobrazit leasing** a poté vyberte **Ručně přiřadit / vyloučit uživatele**.
 3. Vyberte uživatele, kterému chcete roli přiřadit, a poté vyberte **Přiřait k roli**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,33 @@
 title: Konfigurace rezervních zásob a úrovní zásob
 description: Toto téma vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
 author: boycezhu
+manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410811"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurace rezervních zásob a úrovní zásob
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Přehled
 
 Centrála Dynamics 365 Commerce uchovává údaje o zásobách a různé kanály, jako jsou aplikace v místě prodeje (POS), poutače e-Commerce a další vlastní integrované aplikace, které řídí oběh zásob asynchronním způsobem. Dostupné hodnoty inventáře, které se získají prostřednictvím stránky inventáře v centrále Commerte, prostřednictvím uživatelského rozhraní POS (UI) a prostřednictvím rozhraní API pro dostupnost zásob elektronického obchodování, tedy nejsou vždy v reálném čase vždy stoprocentně přesné.
 
@@ -144,6 +149,3 @@ Chcete-li nakonfigurovat odpověď API dostupnosti produktu, postupujte takto.
 [Použití nastavení zásob](inventory-settings.md)
 
 [Výpočet dostupnosti zásob pro maloobchodní kanály](calculated-inventory-retail-channels.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

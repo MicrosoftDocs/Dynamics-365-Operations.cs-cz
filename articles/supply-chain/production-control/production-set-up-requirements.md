@@ -2,13 +2,16 @@
 title: Požadavky na nastavení výroby
 description: V tomto článku jsou informace o požadavcích na nastavení předtím, než bude možné pracovat s modulem řízení výroby.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968789"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423565"
 ---
 # <a name="production-setup-requirements"></a>Požadavky na nastavení výroby
 
@@ -39,7 +42,7 @@ Před prací s modulem Řízení výroby je nutné nastavit informace v jiných 
 -   Definování skupin položek
 -   Nastavení účtů hlavní knihy pro skupiny položek
 -   Nastavení tabulky položek zásob v modulu Řízení zásob.
--   V modulu Řízení informací o produktech vytvořte kusovníky (BOM) a verze kusovníku.
+-   V modulu Řízení zásob vytvořte kusovníky (BOM) a verze kusovníku.
 
 ## <a name="required-calendar-and-resource-setup"></a>Potřebné nastavení kalendáře a prostředků
 Před použitím modulu Řízení výroby otevřete modul Správa organizace a v následujícím pořadí vytvořte a definujte kalendář a provozní prostředky:
@@ -78,6 +81,3 @@ Pokud pracujete s postupy, je nutné definovat operaci pro každý nastavený v�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

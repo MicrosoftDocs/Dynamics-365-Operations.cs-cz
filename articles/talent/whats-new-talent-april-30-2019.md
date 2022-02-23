@@ -101,6 +101,3 @@ Možnost sledování volna zaměstnanců a pochopení toho, jak se počítá vol
 ### <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
 
 V aktualizaci Platform Update 26 pro Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

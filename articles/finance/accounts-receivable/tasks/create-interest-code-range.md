@@ -2,23 +2,26 @@
 title: Vytvoření kódu úroků s rozsahem
 description: Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b20870ade99dd48e72c8aa63f563bc51dc93bd9601d309c474af93cee6eddedb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0c5b20ff6fff2bc62daca68c46e949a38df8d92
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771841"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441049"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Vytvoření kódu úroků s rozsahem
 
@@ -48,6 +51,3 @@ Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsah
 21. Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 7. měsícem. V tomto příkladu to je 2,5.
 22. Chcete-li dokončit nastavení, klikněte na tlačítko Zavřít.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

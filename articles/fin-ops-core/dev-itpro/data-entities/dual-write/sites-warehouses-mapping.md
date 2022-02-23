@@ -1,36 +1,52 @@
 ---
 title: Integrované sklady a pracoviště
-description: Toto téma popisuje integraci dat pracoviště a skladu mezi finančními a provozními aplikacemi a Dataverse.
+description: Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Dataverse.
 author: t-benebo
+manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: benebotg
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d192343d78f9248e4d1232d6aee1a1f800383805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063205"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679313"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrované sklady a pracoviště
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Toto téma popisuje integraci dat pracoviště a skladu mezi finančními a provozními aplikacemi a Dataverse. Provozní pracoviště a sklady jsou obecnými koncepty v aplikaci Supply Chain Management. Používají se k modelování dodavatelského řetězce vaší společnosti.
+
+Toto téma popisuje integraci dat pracoviště a skladu mezi aplikacemi Finance and Operations a Dataverse. Provozní pracoviště a sklady jsou obecnými koncepty v aplikaci Supply Chain Management. Používají se k modelování dodavatelského řetězce vaší společnosti.
 
 ## <a name="templates"></a>Šablony
 
 Při integraci s aplikací Dataverse jsou tyto koncepcy a všechny jeich souvisejíc informace k dispozic v Dataverse pomocí datových tabulek pracovišť a skladů v následující tabulce.
 
-Finanční a provozní aplikace | Aplikace Customer Engagement     | popis
+Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
 --------------------------|---------------------------|---
-[Weby](mapping-reference.md#156) | msdyn_operationalsites | |
-[Sklady](mapping-reference.md#204) | msdyn_warehouses | |
+Weby | msdyn_operationalsites | 
+Sklady | msdyn_warehouses | 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [operational sites](includes/InventOperationalSiteEntity-msdyn-operationalsite.md)]
+
+[!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
+

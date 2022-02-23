@@ -2,25 +2,28 @@
 title: Zobrazení finančních sestav
 description: Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 Finance. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 author: kweekley
+manager: AnnBe
 ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 485d8f0aee791aa577432947d74b08caf484da0a3056d8119579e9d659ca3d57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c368259af9454af94da217585b2a1d01ea75d834
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730499"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441158"
 ---
 # <a name="view-financial-reports"></a>Zobrazení finančních sestav
 
@@ -28,7 +31,8 @@ ms.locfileid: "6730499"
 
 Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 
-## <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
+<a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
+----------------------------
 
 ## <a name="open-a-financial-report"></a>Otevření finanční sestavy
 Chcete-li otevřít sestavu, vyberte název sestavy. Při prvním otevření se sestava automaticky generuje pro předchozí měsíc. Například pokud otevřete sestavu poprvé v srpnu 2015, je sestava generována pro 31. července 2015. Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.
@@ -75,13 +79,11 @@ Po dokončení nastavení možností tisku klikněte na **Tisk** a budete vyzvá
 ## <a name="export-a-financial-report"></a>Exportování finanční sestavy
 Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítko **Exportovat**. Sestava se exportuje do aplikace Microsoft Excel a prohlížeč zobrazí výzvu k otevření nebo uložení exportovaného souboru. V exportované sestavě se použijí nastavení exportu definovaná v návrhu sestavy.    
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
-[Finanční výkaznictví](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
-
-
-
+[Finanční výkaznictví](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

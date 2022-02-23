@@ -2,25 +2,28 @@
 title: Provedení platební slevy mimo období platební slevy
 description: Tento článek obsahuje dva scénáře, které zobrazují způsob využití platební slevy i v případě, že bude platba provedena mimo období platební slevy.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14301
 ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9ba9c8176571a8b97b43565c89f8614bd828b3d9e1498a248fd896069d5d5c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a166e9a0d43da80986dd63d6739b104745b115
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736979"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4440998"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Provedení platební slevy mimo období platební slevy
 
@@ -41,9 +44,9 @@ April označí fakturu k platbě. Není možná žádná platební sleva, proto�
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat transakce**.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 12. 7. 2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Vždy    |
 | Přijatá platební sleva          | 0,00      |
@@ -59,9 +62,9 @@ Pokud byla zaúčtována faktura a platba, platební sleva stále se stále mů�
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Částka slevy, která je přijatá, je 20,00, protože částka k vyrovnání faktury je výchozí částka, 1 980,00.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 12. 7. 2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -76,9 +79,9 @@ April aktualizuje hodnoty v poli **Částka k vyrovnání** na **500,00**. Hodno
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Hodnota v poli **Částka platební slevy k přijetí** je **5,05**, protože částka k vyrovnání faktury byla změněna na částku platby 500,00.
 
-| Pole                        | Hodnota     |
+|                              |           |
 |------------------------------|-----------|
-| Dat. plat. slevy           | 12. 7. 2015 |
+| Datum platební slevy           | 12. 7. 2015 |
 | Částka platební slevy         | -20,00    |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
@@ -88,6 +91,3 @@ Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené t
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Průzkumník zdroje účetnictví
 description: Tento článek obsahuje informace o nástroji Průzkumník zdroje účetnictví, který slouží pro podrobnou analýzu informace zdroje za účetními položkami hlavní knihy.
-author: rcarlson
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingSourceExplorer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 15391
 ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab098aa36d6fa6c34beaaa31ecfbb1eb47840e343d7dee3d9cd3034d6ff8f9c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 904f1f9fb139248205b426aec5a0372f2edb1e59
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749191"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441313"
 ---
 # <a name="accounting-source-explorer"></a>Průzkumník zdroje účetnictví
 
@@ -46,10 +49,5 @@ Pro zdrojové dokumenty, které používají koncept identit odkazu na zdrojový
 
 Pro tyto dokumenty můžete také z Průzkumníka zdroje účetnictví přejít na samotný zdrojový dokument.
 
-> [!NOTE]
-> Od verze 10.0.20 tlačítko **Aktualizace** poskytuje dva další rozsahy k omezení počátečního dotazu, který je spuštěn pro zadávání dat na stránce. Tyto další rozsahy jsou také k dispozici ve verzi 10.0.19 jako aktualizace služby. Byla přidána následující pole:
->
-> - Od dokladu, Po doklad
-> - Z hlavního účtu, Na hlavní účet
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

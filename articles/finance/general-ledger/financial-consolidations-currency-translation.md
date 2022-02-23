@@ -1,24 +1,27 @@
 ---
 title: Přehled finančních konsolidací a převodu měny
 description: Toto téma popisuje finanční konsolidace a převod měny v hlavní knize.
-author: jiwo
-ms.date: 10/07/2021
-ms.topic: overview
+author: aprilolson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a77fe5e1970c617203706d9d629ac65e3a47909b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982398"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441274"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -66,13 +69,13 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje konsolidace 
 ## <a name="legal-entity-setup"></a>Nastavení právnické osoby
 Před zpracováním konsolidace je nutné nakonfigurovat právnickou osobu. Konsolidaci lze spustit tolikrát, kolikrát budete potřebovat, a všechna data budou převedena z měny účetnictví zdrojové společnosti na měnu, která je definována pro konsolidační společnost. Proto pro následující organizační strukturu, pokud musíte převést všechny severoamerické společnosti nejprve na americké dolary (USD) a poté na eura (EUR), měnu mateřské společnosti, musíte mít alespoň dvě konsolidační společnosti.
 
-![Organizační struktura.](./media/organizational-structure.png "Organizační struktura")
+![Organizační struktura](./media/organizational-structure.png "Organizační struktura")
 
 V předchozí organizační struktuře musíte mít pro konsolidaci v Severní Americe právnickou osobu, protože konsolidace vždy konsolidují z účetní měny zdrojové společnosti na měnu konsolidační společnosti. V příkladu, pokud jsou všechny společnosti zahrnuty do jediné konsolidace, bude mexická dceřiná společnost převedena z mexických pesos (MXN) na EUR, nikoliv z MXN na USD na EUR.
 
 Když vytvoříte právnickou osobu, můžete specifikovat, zda je společnost použita jak pro konsolidační proces, tak pro proces eliminace, nebo pouze pro jeden z těchto procesů. Na následujícím obrázku se společnost používá pro oba tyto procesy. Všimněte si, že nelze zaúčtovat denní deníky v konsolidované společnosti, ale lze je zaúčtovat ve společnosti eliminace. Proto můžete chtít samostatnou společnost eliminace.
 
-![Právnická osoba, která je použita pro konsolidaci i eliminaci.](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci i eliminaci")
+![Právnická osoba, která je použita pro konsolidaci i eliminaci](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci i eliminaci")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hlavní účty a skupiny konsolidačních účtů
 Jednu volbu, kterou musíte provést, je to, jak chcete konsolidovat svou účtovou osnovu. Během procesu konsolidace existují tři možnosti pro konsolidaci hlavních účtů.
@@ -81,11 +84,11 @@ První možností je použití hlavních účtů ze zdrojové společnosti. V ta
 
 Druhou možností je zadat výchozí konsolidační účet na stránce **Hlavní účty**. Účet bude poté namapován na konsolidační účet. Tato možnost může být užitečná, pokud máte různé účtové osnovy nebo musíte mapovat na osnovu, která je definována ústředím.
 
-![Na stránce hlavního účtu byl zadán výchozí konsolidační účet.](./media/main-accounts.png "Na stránce hlavního účtu byl zadán výchozí konsolidační účet")
+![Na stránce hlavního účtu byl zadán výchozí konsolidační účet](./media/main-accounts.png "Na stránce hlavního účtu byl zadán výchozí konsolidační účet")
 
 Třetí možností je použití skupiny konsolidačních účtů. Můžete definovat tolik skupin konsolidačních účtů, kolik potřebujete. Poté na stránce **Další konsolidační účty** jen namapujete hlavní účet z účetní osnovy na účet, který pro tuto skupinu vyžadujete.
 
-![Mapování na stránce Další konsolidační účty.](./media/additional-consolidation-accounts.png "Mapování na stránce Další konsolidační účty")
+![Mapování na stránce Další konsolidační účty](./media/additional-consolidation-accounts.png "Mapování na stránce Další konsolidační účty")
 
 ## <a name="consolidating-online"></a>Online konsolidace
 Chcete-li získat informace o zadání podrobností online konsolidace, přečtěte si téma [Online finanční konsolidace](./consolidate-online.md).
@@ -97,7 +100,7 @@ Chcete-li zobrazit výsledky konsolidace, máte několik možností:
 - Zkontrolujte stránku se seznamem **Předvaha** v konsolidační společnosti.
 - V seznamu transakcí konsolidace na stránce **Konsolidace** zobrazte zůstatky vytvořené podle data pro každou zdrojovou společnost pro každé období.
 
-    ![Transakce konsolidace na stránce konsolidace.](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
+    ![Transakce konsolidace na stránce konsolidace](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
 
 Pokud chcete spustit konsolidaci znovu, můžete zpracovat pouze konsolidaci. Případně vyberte nejprve **Odebrat transakce** na stránce **Konsolidace**.
 V případě, že zůstatky na vašem konsolidovaném účtu nejsou přesné, lze tyto zůstatky opravit pomocí stránky **Úpravy v dpbě uzávěrky**.
@@ -118,15 +121,15 @@ Nastavení pro eliminace naleznete v části **Nastavení** modulu **Konsolidace
 
 Můžete podle potřeby nastavit datum, kdy pravidlo eliminace nabude platnosti, a datum jeho vypršení. Musíte nastavit volbu **Aktivní** na **Ano**, pokud chcete, aby bylo pravidlo eliminace k dispozici v procesu návrhu eliminace. Vyberte název deníku typu **Eliminace**.
 
-![Základní vlastnosti pravidla eliminace.](./media/ledger-elimination-rule-journal.png "Základní vlastnosti pravidla eliminace")
+![Základní vlastnosti pravidla eliminace](./media/ledger-elimination-rule-journal.png "Základní vlastnosti pravidla eliminace")
 
 Po definování základních vlastností zvolte **Řádky** pro definování skutečných pravidel zpracování. Existují dvě možnosti pro eliminace: eliminace změny čisté částky nebo určení pevné částky.
 
-Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*). Například hodnota **1\**_ zvolí jako zdroj dat pro přidělení všechny účty začínající číslem _* 1**.
+Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*). Například hodnota **1\*** zvolí jako zdroj dat pro přidělení všechny účty začínající číslem **1**.
 
 Po výběru zdrojových účtů použijte pole **Specifikace účtu** pro určení účtu, který se používá z cílové společnosti. Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný ve zdrojovém účtu. Vyberete-li možnost **Definováno uživatelem**, je nutné zadat cílový účet.
 
-![Stránka řádku pravidla eliminace hlavní knihy.](./media/ledger-elimination-rule-line.png "Stránka řádku pravidla eliminace hlavní knihy")
+![Stránka řádku pravidla eliminace hlavní knihy](./media/ledger-elimination-rule-line.png "Stránka řádku pravidla eliminace hlavní knihy")
 
 Pole **Specifikace dimenze** funguje jako pole **Specifikace účtu**. Vyberte **Zdroj** pro použití stejné dimenze v cílové společnosti a ve zdrojové společnosti. Vyberete-li **Definováno uživatelem**, je třeba určit dimenze v cílové společnosti volbou **Cílové dimenze**. Pak vyberte zdrojové dimenze, finanční dimenze a hodnoty, které slouží jako zdroj eliminace.
 
@@ -165,8 +168,7 @@ Zákazníci, kteří používají finanční výkaznictví pro finanční konsol
 - **Efektivní převod měny** – Po minimální nastavení v aplikaci Finance můžete převést všechny sestavy finančního výkaznictví na jakoukoli měnu vykazování, která byla nastavena. Kromě toho můžete nastavit neomezený počet měn vykazování.
 - **Zaúčtování eliminací u zdroje** –Lze vytvořit a vytisknout sestavu eliminace pro ověření transakcí eliminace. Potom můžete zaúčtovat všechny nové eliminace jako standardní mezipodnikové transakce. Můžete také použít právnickou osobu eliminace pro jakoukoliv transakci, kterou ve svých právnických osobách nechcete.
 
-## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Podporované scénáře konsolidace pro Financial Reporting
-
+## <a name="supported-consolidation-scenarios"></a>Podporované scénáře konsolidace
 Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční výkaznictví:
 
 - Jednoúrovňové a mnohoúrovňové konsolidace mezi právnickými osobami
@@ -180,18 +182,3 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční v
 
 ## <a name="generating-consolidated-financial-statements"></a>Generování konsolidovaných finančních výkazů
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
-
-## <a name="performance-enhancement-for-large-consolidations"></a>Vylepšení výkonu pro velké konsolidace
-
-Prostředí, která mají mnoho transakcí hlavní knihy, mohou běžet pomaleji, než je optimální. Chcete-li tento problém vyřešit, můžete nastavit paralelní zpracování dávek, které používá uživatelem definovaný počet dat. Chcete-li zajistit, aby řešení fungovalo, jak bylo zamýšleno, přidejte do konsolidace bod rozšíření, abyste vrátili kontejner časových období. Základní implementace by měla obsahovat jedno časové období pro počáteční stav a konečné datum konsolidace. Období v základní implementaci budou ověřena, aby se zajistilo, že nebudou obsahovat mezery ani překryvy. Období budou použita k vytvoření paralelních dávkových balíčků pro každou společnost.
-
-Počet období můžete přizpůsobit tak, aby splňovaly požadavky vaší organizace. Přizpůsobením počtu rozsahů dat můžete pomoci zjednodušit testování a minimalizovat dopad na stávající kód, protože neexistuje žádná alokační logika. Jediné nové testy, které jsou vyžadovány, ověřují vytváření dávkových balíčků, ověřují rozsahy dat a testují podmnožinu časových období, aby ověřily, že lze dávky spojit dohromady pro konečný dávkový úkol. 
-
-Tato funkce vylepšuje proces konsolidace v hlavní knize, když je proces spuštěn v dávce. Vylepšení zlepšuje výkon procesu konsolidace hlavní knihy rozdělením konsolidace na více úkolů, které lze zpracovávat souběžně. Ve výchozím způsobu spouštění konsolidace každý úkol zpracovává aktivitu hlavní knihy za osm dní. Byl však přidán bod rozšíření, který vám umožňuje přizpůsobit počet vytvořených úloh.
-
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** Hlavní kniha
-- **Název funkce**: Vylepšení výkonu pro velké konsolidace
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

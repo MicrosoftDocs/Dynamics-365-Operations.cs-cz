@@ -2,22 +2,25 @@
 title: Práce se serializovanými položkami v POS
 description: Toto téma vysvětluje, jak spravovat serializované položky v aplikaci pokladního místa (POS).
 author: boycezhu
-ms.date: 01/08/2021
+manager: annbe
+ms.date: 08/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737571"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410896"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Práce se serializovanými položkami v POS
 
@@ -87,52 +90,8 @@ Aby bylo možné takové ověření povolit, je třeba naplánovat, aby se násl
 - **Retail a Commerce** > **IT pro Retail a Commerce** > **Produkty a zásoby** > **Dostupnost produktu se sledovacími dimenzemi**
 - **Retail a Commerce** > **Plány distribuce** > **1130** (**Dostupnost produktu**)
 
-## <a name="sell-serialized-items-in-pos"></a>Prodej serializovaných položek v POS
-
-Zatímco aplikace POS vždy podporovala prodej serializovaných položek, v Commerce verze 10.0.17 a novější mohou organizace povolit funkce, které vylepšují obchodní logiku, která se aktivuje při prodeji produktů, které jsou nakonfigurovány pro sledování sériového čísla.
-
-Když je povolena funkce **Vylepšená validace sériového čísla při snímání a plnění objednávek POS**, při prodeji serializovaných produktů v POS se vyhodnotí následující konfigurace produktu:
-
-- Nastavení **Typ sériového čísla** produktu (**aktivní** nebo **aktivní v prodeji**).
-- Nastavení **Povolen prázdný výdej** produktu.
-- Nastavení **Záporný fyzický sklad** produktu a / nebo prodejního skladu.
-
-### <a name="active-serial-configurations"></a>Konfigurace aktivního sériového čísla
-
-Když se v POS prosávají položky, které jsou konfigurovány s **Aktivní** sledovací dimenzí sériového čísla, POS inicializuje logiku ověřování, která uživatelům brání v dokončení prodeje serializované položky se sériovým číslem, které nelze najít v aktuálních zásobách prodejního skladu. Z tohoto ověřovacího pravidla existují dvě výjimky:
-
-- Pokud je položka také nakonfigurována s povolenou funkcí **Povolen prázdný výdej**, uživatelé mohou přeskočit zadání sériového čísla a prodat položku bez označení sériového čísla.
-- Pokud je položka a / nebo prodejní sklad nakonfigurován s povolenou možností **Záporný fyzický sklad**, aplikace přijímá a prodává sériové číslo, u kterého nelze potvrdit, že je v inventáři ve skladu, proti kterému se prodává. Tato konfigurace umožňuje, aby transakce inventáře pro tuto konkrétní položku / sériové číslo byla záporná, a proto systém umožní prodej neznámých sériových čísel.
-
-> [!IMPORTANT]
-> Chcete-li zajistit, aby aplikace POS mohla správně ověřit, zda se prodávaná sériová čísla položek s **Aktivním** typem sériového číska nacházejí v zásobách prodejního skladu, je nutné, aby organizace často spouštěly úlohu **Dostupnost produktu se sledovacími dimenzemi** v centrále Commerce a doprovodnou úlohu **1130** distribuce dostupnosti produktů prostřednictvím centrály Commerce. Aby mohla POS ověřit dostupnost zásob prodávaných sériových čísel, když je do prodejních skladů přijímán nový serializovaný inventář, hlavní server zásob často aktualizovat databázi kanálů pomocí nejaktuálnějších údajů o dostupnosti zásob. Úloha **Dostupnost produktu se sledovacími dimenzemi** pořizuje aktuální snímek hlavního inventáře, včetně sériových čísel, pro všechny sklady společnosti. Distribuční úloha **1130** pořídí tento snímek inventáře a sdílí ho se všemi nakonfigurovanými databázemi kanálů.
-
-### <a name="active-in-sales-process-serial-configurations"></a>Aktivní konfigurace sériových čísel v prodejním procesu
-
-Položky konfigurované se sériovou dimenzí jako **Aktivní v procesu prodeje** neprocházejí žádnou logikou ověření zásob, protože tato konfigurace znamená, že sériová čísla zásob nejsou předregistrována do skladu a sériová čísla jsou zachycena pouze v době prodeje.  
-
-Pokud je **Povolen prázdný výdej** také nakonfigurován pro položky **Aktivní v prodejním procesu**, zadání sériového čísla lze přeskočit. Pokud **Povolen prázdný výdej** není nakonfigurován, aplikace vyžaduje, aby uživatel zadal sériové číslo, i když nebude ověřeno podle dostupného inventáře.
-
-### <a name="apply-serial-numbers-during-creation-of-pos-transactions"></a>Při vytváření POS transakcí použijte sériová čísla
-
-Aplikace POS okamžitě vyzve uživatele k zachycení sériového čísla při prodeji serializované položky, ale aplikace umožňuje uživatelům přeskočit zadávání sériových čísel až do určitého bodu procesu prodeje. Když uživatel začne přijímat platby, aplikace vynutí zadání sériového čísla pro všechny položky, které nejsou nakonfigurovány tak, aby byly splněny prostřednictvím budoucích zásilek nebo vyzvednutí. Jakékoli serializované položky nakonfigurované jako cash and carry nebo carryout vyžadují, aby uživatel před dokončením prodeje zadal sériové číslo (nebo souhlasil s tím, že ponechá prázdné, pokud to konfigurace položky umožňuje).
-
-U serializovaných položek prodaných pro budoucí vyzvednutí nebo odeslání mohou uživatelé POS přeskočit zadávání sériového čísla na začátku a přesto dokončit vytvoření objednávky zákazníka.   
-
-> [!NOTE]
-> Při prodeji nebo plnění serializovaných produktů prostřednictvím aplikace POS je pro serializované položky v prodejní transakci vynuceno množství „1“. To je výsledek toho, jak jsou informace o sériovém čísle sledovány na prodejní lince. Při prodeji nebo plnění transakce u více serializovaných položek prostřednictvím POS musí být každá prodejní linka nakonfigurována pouze s množstvím „1“. 
-
-### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Použijte sériová čísla během plnění nebo vyzvednutí objednávky zákazníka
-
-Při plnění řádků objednávek zákazníků pro serializované produkty pomocí operace **Plnění objednávek** v POS, POS vynucuje zachycení sériového čísla před konečným plněním. Pokud tedy sériové číslo nebylo poskytnuto během počátečního zachycení objednávky, musí být zachyceno během procesu vyzvednutí, zabalení nebo odeslání v POS. Ověření se provádí v každém kroku a uživatel bude požádán o údaje o sériovém čísle, pouze pokud chybí nebo již neplatí. Například pokud uživatel přeskočí kroky vyzvednutí nebo zabalení a okamžitě zahájí dodávku a sériové číslo nebylo pro linku zaregistrováno, POS bude vyžadovat zadání sériového čísla před dokončením posledního kroku faktury. Při vynucování zachycení sériového čísla během operací plnění objednávek v POS stále platí všechna pravidla uvedená dříve v tomto tématu. Pouze serializované položky nakonfigurované jako **Aktivní** projdou ověřením sériového čísla zásob. Položky nakonfigurované jako **Aktivní v procesu prodeje** nebudou ověřeny. Je-li **Záporný fyzický sklad** povolen pro **Aktivní** produkty, bude přijato jakékoli sériové číslo bez ohledu na dostupnost na skladu. Pro **Aktivní** i **Aktivní v procesu prodeje** položky, pokud je nakonfigurován **Povolen prázdný výdej**, může uživatel ponechat sériová čísla prázdná, pokud je to požadováno během kroků vyzvednutí, zabalení a dodání.
-
-Ověření sériových čísel také nastane, když uživatel provede operace vyzvednutí u objednávek zákazníků v POS. Aplikace POS neumožňuje finalizaci vyzvednutí na serializovaném produktu, pokud neprojde validacemi, jak bylo uvedeno výše. Ověření vždy vychází z dimenze sledování produktu a konfigurací prodejního skladu. 
-
 ## <a name="additional-resources"></a>Další prostředky
 
-[Operace příchozích zásob v POS](./pos-inbound-inventory-operation.md)
+[Operace příchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
-[Operace odchozích zásob v POS](./pos-outbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Operace odchozích zásob v POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)

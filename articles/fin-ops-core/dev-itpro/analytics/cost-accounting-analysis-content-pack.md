@@ -1,10 +1,12 @@
 ---
 title: Obsah analýzy nákladového účetnictví v Power BI
-description: Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI.
+description: Toto téma popisuje, co je součástí obsahu analýzy nákladového účetnictví v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: AndersGirke
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747362"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683864"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Obsah Power BI analýzy nákladového účetnictví
+# <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **analýzy nákladového účetnictví** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **analýzy nákladového účetnictví** v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
@@ -40,7 +42,7 @@ Další informace o nákladovém účetnictví naleznete v tématu [Domovská st
 Definováním zabezpečení na úrovni přístupu v nákladovém účetnictví a jejím zkombinováním se zabezpečením na úrovni řádků v Power BI můžete povolit všem vlastníkům objektů nákladů přístup k obsahu **analýzy nákladového účetnictví** v Power BI. Všechna data ve vizualizaci budou poté vyfiltrována na základě úroveň přístupu, který je řízen v nákladovém účetnictví. Další informace o zabezpečení na úrovni přístupu a zabezpečení na úrovni řádku, naleznete v [Nastavení zabezpečení pro obsah nákladového účetnictví v Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI LCS od společnosti Microsoft a vašich partnerů](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Obsah **analýzy nákladového účetnictví** v Power BI naleznete v knihovně sdíleného majetku ve službě Microsoft Dynamics Lifecycle Services (LCS). Další informace o stažení obsahu a jeho implementaci ve vaší organizaci naleznete v tématu [Obsah Power BI LCS od společnosti Microsoft a vašich partnerů](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 Nezapomeňte si stáhnout obsah **Analýza nákladového účetnictví**, který se vztahuje k vámi používané verzi aplikace Microsoft Dynamics 365.
 
@@ -121,6 +123,3 @@ Následující klíčové dimenze se používají jako filtry k řezu měrných 
 | Fiskální kalendáře                   | Kalendář, Popis kalendáře                                                                                       |
 | Fiskální roky                       | Kalendářní rok                                                                                                        |
 | Fiskální období                     | Kalendářní roční období                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

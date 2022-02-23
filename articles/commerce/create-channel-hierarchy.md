@@ -2,24 +2,27 @@
 title: Vytvoření hierarchie navigace sítě
 description: Toto téma popisuje, jak vytvořit hierarchie navigace kanálu v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/27/2021
+manager: annbe
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749948"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4410679"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace sítě
 
@@ -49,7 +52,7 @@ Chcete-li vytvořit hierarchii navigace kanálu, postupujte následovně.
 
 Následující obrázek znázorňuje příklad kořenového uzlu.
 
-![Ukázkový kořenový uzel.](media/create-channel-hierarchy-1.png)
+![Ukázkový kořenový uzel](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Vytvoření uzlů navigačních kategorií
 
@@ -65,7 +68,7 @@ Chcete-li vytvořit další uzly navigační kategorie, které budou představov
 
 Následující obrázek znázorňuje příklad dokončené navigační hierarchie kanálů.
 
-![Vzorová hierarchie kanálu.](media/create-channel-hierarchy-2.png)
+![Vzorová hierarchie kanálu](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Přidat produkty do uzlů kategorií
 
@@ -77,11 +80,11 @@ Chcete-li přidat produkty do uzlů kategorií, postupujte podle následujícíc
 1. V podokně akcí vyberte **Uložit**.
 
 > [!NOTE]
-> Přidání produktů do uzlu v hierarchii navigace kanálu není dostatečné, aby se produkty na vybraném kanálu zobrazily, ale tyto produkty musí být také roztříděny do kanálu. Další informace o sortimentech naleznete v [Správa sortimentu](assortments.md).
+> Přidání produktů do uzlu v hierarchii navigace kanálu není dostatečné, aby se produkty na vybraném kanálu zobrazily, ale tyto produkty musí být také roztříděny do produktu.
 
 Následující obrázek znázorňuje příklad uzlu s přidanými produkty.
 
-![Produkty přidané do uzlu kategorií.](media/create-channel-hierarchy-3.png)
+![Produkty přidané do uzlu kategorií](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Přidat skupiny atributů produktů do uzlů kategorií
 
@@ -97,13 +100,10 @@ Přidání produktu skupiny atributů do uzlu kategorií provedete následovně.
 
 Následující obrázek znázorňuje příklad uzlu s přidanými skupinami atributů produktů.
 
-![Skupiny atributů produktu v uzlu.](media/create-channel-hierarchy-4.png)
+![Skupiny atributů produktu v uzlu](media/create-channel-hierarchy-4.png)
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Správa atributů a skupin atributů](attribute-attributegroups-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
