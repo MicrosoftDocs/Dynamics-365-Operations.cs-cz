@@ -1,10 +1,12 @@
 ---
-title: Uspořádání součástí sestavy v návrháři sestav
-description: Toto téma popisuje způsob uspořádání existujících sestav, stavebních bloků a objektů v návrháři sestav.
+title: Uspořádání součástí zprávy v návrháři sestavy
+description: Poté, co jste navrhli stavební bloky a vygenerovali sestavy, je užitečné uspořádat tyto objekty a usnadnit uživatelům jejich vyhledání. Tento článek popisuje způsob uspořádání existujících sestav, stavebních bloků a objektů v návrháři sestav.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6b30e7e480edb50bb9509e270806224755f98e38111cda0c1cae86a0f56eb193
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763517"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685804"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Uspořádání součástí zprávy v návrháři sestavy
 
@@ -60,7 +62,7 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 3. Klikněte na kartu **Skupina sestav** a proveďte požadované změny.
 4. V nabídce **Soubor** klikněte na příkaz **Uložit** pro uložení změněné skupiny sestav. Případně klikněte na tlačítko **Uložit** ![Uložit](media/save.gif "Uložit") na panelu nástrojů.
 
-> Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
+> [POZNÁMKA] Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
 
 ### <a name="generate-a-report-group-report"></a>Vygenerování sestavy skupiny sestav
 
@@ -146,6 +148,3 @@ Pouze výchozí nastavení základního období se uloží s definicí sestavy.<
 ## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,32 +2,35 @@
 title: Začínáme s optimalizací plánování
 description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
 author: ChristianRytt
-ms.date: 05/20/2021
+manager: tfehr
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902552"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4424259"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Tak jak bylo [dříve oznámeno](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), optimalizace plánování nahradí stávající integrovaný hlavní plánovací modul.
+Tak jak bylo [dříve oznámeno](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), optimalizace plánování nahradí stávající integrovaný hlavní plánovací modul.
 
 Pokud aktuálně používáte integrovaný hlavní plánovací modul, měli byste nyní začít plánovat migraci na optimalizaci plánování. Je důležité zahájit proces migrace co nejdříve, protože při vynucení ukončení podpory může dojít k ovlivnění vašich operací. Abyste se vyhnuli problémům na poslední chvíli při vynuceném ukončení podpory, důrazně doporučujeme dokončit migraci před 1. prosincem 2020. 
 
@@ -38,42 +41,21 @@ Funkce Optimalizace plánování aktuálně nepodporuje všechny funkce, které 
 
 Než zapnete optimalizaci plánování, důrazně doporučujeme, abyste vyhodnotili výsledky analýzy podle optimalizace plánování. Další informace naleznete v tématu [Analýza shody optimalizace plánování](planning-optimization-fit-analysis.md)
 
-## <a name="availability"></a>Dostupnost
-
-Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Evropa, Spojené království, Austrálie, Asie a Tichomoří, Japonsko a Indie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována. Další informace o geografických oblastech Azure a souvisejících oblastech najdete v tématu [Geografické oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+### <a name="availability"></a>Dostupnost
+Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Evropa, Velká Británie a Austrálie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována.
 
 Všimněte si, že optimalizace plánování nepodporuje místní nasazení Dynamics 365 Supply Chain Management.
 
-## <a name="licensing"></a>Licence
+### <a name="licensing"></a>Licence
 
 Pokud lze spustit hlavní plánování pomocí aktuální licence, nemusíte kupovat další licenci, aby bylo možné začít používat optimalizaci plánování.
 
-## <a name="install-and-enable-planning-optimization"></a>Instalace a povolení optimalizace plánování
+### <a name="install-the-add-in"></a>Instalace doplňku
 
-Chcete-li použít optimalizaci plánování, musí mít systém zavedené všechny předpoklady a poté povolit svůj licenční klíč a nainstalovat doplněk Optimalizace plánování pro Dynamics 365 Supply Chain Management.
+Chcete-li použít optimalizaci plánování, nainstalujte doplněk Optimalizace plánování pro aplikaci Dynamics 365 Supply Chain Management. Můžete získat přístup k doplňku z projektu LCS a zapnout funkci optimalizace plánování z uživatelského rozhraní (UI) Supply Chain Management.
 
-### <a name="prerequisites"></a>Předpoklady
-
-Před instalací doplňku Optimalizace plánování musí být splněny následující předpoklady:
-
-- Musíte používat Supply Chain Management v LCS aktivovaném prostředí s vysokou dostupností, vrstvy 2 nebo vyšší (ne prostředí OneBox) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější. Pokud se pokusíte nainstalovat doplněk v prostředí OneBox, instalace se nedokončí a budete ji muset zrušit.
-
-- Váš systém musí být nastaven na integraci Power Platform. Další informace naleznete v tématu [Integrace Microsoft Power Platform s aplikacemi Finance and Operations](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
-
-### <a name="enable-the-planning-optimization-license"></a>Povolení licence Optimalizace plánování
-
-Chcete-li použít optimalizaci plánování, musíte povolit její konfigurační klíč. Postup je následující:
-
-1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
-1. Na kartě **Konfigurační klíče** zaškrtněte políčko **Optimalizace plánování**.
-1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
-### <a name="install-the-planning-optimization-add-in"></a>Instalace doplňku optimalizace plánování
-
-Musíte instalovat doplněk z projektu LCS a zapnout funkci optimalizace plánování z uživatelského rozhraní (UI) Supply Chain Management.
-
-Instalace doplňku optimalizace plánování:
+> [!NOTE]
+> Požadavek optimalizace plánování je LCS aktivované prostředí s vysokou dostupností, vrstvy 2 nebo vyšší (ne prostředí OneBox) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější. Pokud se pokusíte nainstalovat doplněk v prostředí OneBox, instalace se nedokončí a budete ji muset zrušit.
 
 1. Přihlaste se k LCS a otevřete požadované prostředí.
 1. Přejděte na **Úplné podrobnosti**.
@@ -87,11 +69,11 @@ Instalace doplňku optimalizace plánování:
 
 Hlavním účelem instalace doplňku Optimalizace plánování je propojení služby a prostředí. Proto musíte doplněk nainstalovat samostatně do každého prostředí, kde budete používat optimalizaci plánování, bez ohledu na jakýkoli kód přesunutý mezi prostředími.
 
-## <a name="integrate-planning-optimization-with-your-system"></a>Integrace optimalizace plánování do systému
+### <a name="planning-optimization-integration"></a>Integrace optimalizace plánování
 
 Chcete-li nakonfigurovat, zda by měl být pro hlavní plánování použit doplněk Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Parametry optimalizace plánování**.
 
-### <a name="connection-status"></a>Stav připojení
+#### <a name="connection-status"></a>Stav připojení
 
 Stav připojení označuje aktuální stav spojení mezi Supply Chain Management a službou optimalizace plánování. Následující tabulka zobrazuje možné hodnoty.
 
@@ -103,14 +85,12 @@ Stav připojení označuje aktuální stav spojení mezi Supply Chain Management
 | Zakazování připojení | Požadavek na vypnutí připojení ke službě optimalizace plánování právě probíhá. | Ne |
 | Načítání stavu | Systém čeká na informace o stavu ze služby optimalizace plánování. | Ne |
 
-### <a name="the-use-planning-optimization-option"></a>Možnost použití optimalizace plánování
+#### <a name="the-use-planning-optimization-option"></a>Možnost použití optimalizace plánování
 
 Nastavení možnosti **Použít optimalizaci plánování** určuje, který plánovací modul se použije pro hlavní plánování:
 
 - **Ano** – optimalizace plánování se používá pro hlavní plánování.
 - **Ne** – pro hlavní plánování se používá integrovaný modul Supply Chain Management
-
-Toto nastavení platí pro všechny právnické osoby (společnosti). Optimalizaci plánování není možné použít u některých právnických osob a integrované hlavní plánování u jiných právnických osob.
 
 > [!NOTE]
 > Pokud jsou aktivovány stávající dávkové úlohy plánování, které byly vytvořeny pro předdefinovaný modul plánování Supply Chain Management, zatímco možnost **Použít optimalizaci plánování** je nastavena na hodnotu **Ano**, tyto úlohy se nezdaří.
@@ -132,6 +112,3 @@ Je-li zapnuta optimalizace plánování, hlavní plánování se provede pomocí
 [Použití filtrů v plánu](plan-filters.md)
 
 [Zrušení úlohy plánování](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

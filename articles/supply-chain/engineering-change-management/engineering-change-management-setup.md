@@ -2,23 +2,26 @@
 title: Stanovení společných hodnot pro správu technických změn
 description: Toto téma popisuje, jak stanovit běžné hodnoty, které se používají pro parametry v různých částech správy technických změn.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductParameters, EngChgEcmSeverityTable, EngChgEcmSeverityRuleSet, EngChgEcmSeverityLookup,EngChgEcmSeverityChart,EngChgEcmRequestSeverityChart,EngChgEcmPriorityTable, EngChgEcmPriorityLookup, EngChgEcmPriorityChart, EngChgEcmMaterialDisposition, EngChgEcmEH
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 86de050ef4110e3485a77099440f3402e46cc498
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565920"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4424267"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Stanovení společných hodnot pro správu technických změn
 
@@ -88,6 +91,3 @@ U každé sady pravidel je třeba nastavit následující pole:
 - **Závažnost** - Vyberte úroveň závažnosti pro nastavení pravidel. Stránku **Závažnosti technických změn** použijete k vytvoření a pojmenování úrovní. (Další informace naleznete v předchozí části.)
 
 Použijte tlačítka na pevné záložce **Pravidla** pro přidání nebo odebrání pravidla pro aktuální nastavení závažnosti. Každé pravidlo má pole **Pravidlo** a pole **Název**. Pravidla stanoví systém a označují typy změn, které produkt může mít. Název indikuje typ změny.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

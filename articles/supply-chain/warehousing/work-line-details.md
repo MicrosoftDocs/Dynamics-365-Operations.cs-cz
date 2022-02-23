@@ -2,23 +2,26 @@
 title: Podrobnosti řádku práce
 description: Toto téma uvádí informace o stránce Podrobnosti řádku práce, která zobrazuje kompletní, řaditelný a filtrovatelný seznam jednotlivých řádků práce v systému.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778274"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424191"
 ---
 # <a name="work-line-details"></a>Podrobnosti řádku práce
 
@@ -28,7 +31,7 @@ Stránka **Podrobnosti řádku práce** zobrazuje kompletní, řaditelný a filt
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Zapnutí funkce podrobností řádku práce
 
-Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Podrobností řádku práce*
@@ -125,6 +128,3 @@ Při vytváření práce výdeje postupujte takto:
 
 > [!IMPORTANT]
 > Pokud zrušíte jen část množství řádku práce, musíte také odstranit již neplatné množství z řádku nákladu. V opačném případě, pokud nebude dodávka nastavena správně, nebude možné potvrdit řádek nákladu k odeslání.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

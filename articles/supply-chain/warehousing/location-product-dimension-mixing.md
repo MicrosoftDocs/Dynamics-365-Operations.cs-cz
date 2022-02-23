@@ -2,23 +2,26 @@
 title: Směšování dimenzí produktu na skladovém místě
 description: Toto téma poskytuje informace o míchání dimenzí produktů na skladovém místě. Tato funkce profilu skladového místa pomáhá zlepšit správu skladového místa, pokud se používají varianty produktu nebo produkty, které mají různé dimenze, jako například v módním průmyslu. Funkce umožní rozhodnout, zda je možné konfigurace, barvy, styly a velikosti pro konkrétní profil skladového místa míchat, nebo zda lze na jedno skladové místo umístit pouze jednu dimenzi nebo kombinaci.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578553"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424136"
 ---
 # <a name="location-product-dimension-mixing"></a>Směšování dimenzí produktu na skladovém místě
 
@@ -204,9 +207,9 @@ Vytvoříte nákupní objednávku, která má tři řádky: dva řádky pro stej
 
 1.Zvolte **Uložit**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Přijetí řádků objednávky v mobilní aplikaci Řízení skladu
+### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Přijetí řádků objednávky ve skladové aplikaci
 
-1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který má povolen sklad *24*.
+1. Přihlaste se do skladové aplikace jako uživatel, který má povolen sklad *24*.
 1. Vyberte nabídku **Vstupní**.
 1. Vyberte **Příjem řádku PO**.
 1. Vyberte pole **ČÍSLOPO** a zadejte číslo nákupní objednávky.
@@ -236,5 +239,3 @@ Vytvoříte nákupní objednávku, která má tři řádky: dva řádky pro stej
 
 > [!TIP]
 > Tento scénář můžete opakovat, ale tentokrát nastavte **Velikost** - *Ne* na záložce s náhledem **Povolit míchání dimenzí produktu** v **profilu skladového místa** *BULK*. V takovém případě nebude možné dimenze produktů míchat. V tomto případě bude po obdržení nákupní objednávky každá varianta produktu umístěna na nové skladové místo.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

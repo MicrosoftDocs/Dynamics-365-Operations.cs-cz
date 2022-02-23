@@ -1,29 +1,30 @@
 ---
 title: Lean manufacturing - přehled
 description: Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Dynamics 365 Supply Chain Management.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "19371"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c8b5ec4d4a391773e32a61a321c28868678baa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985929"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424159"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – přehled
 
@@ -50,9 +51,9 @@ Základ pro lean manufacturing lze vytvořit modelováním výroby a logistický
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Použití kanbanů k signalizaci požadavků poptávky
 U poptávkového systému se zboží vyrobí jen tehdy, když je potřeba. Tento postup zkracuje dodací lhůtu a omezuje nadbytečné množství zásob. Kanbany můžete použít k plánování, sledování a zpracování požadavků, které jsou založeny na výrobních tocích. Kanbanové prostředí vytvoříte tak, že vytvoříte kanbanová pravidla, která definují, kdy se kanbany vytváří a jak jsou splněny požadavky. Můžete vytvářet dva typy kanbanových pravidel. Výrobní pravidla vytváří kanbanové úlohy procesu a odvolací kanbanová pravidla vytváří kanbanové úlohy převodu. Můžete nastavit následující strategie doplnění:
--   Kanbanová pravidla **Pevné množství** se vztahují k pevnému počtu manipulačních jednotek, což znamená, že počet aktivních kanbanů je konstantní. Vždy, když jsou spotřebovány všechny výrobky z Kanban a manipulační jednotky jsou ručně vyprázdněny, je vytvořen nový kanban stejného typu. Při vytváření pravidel pevného množství kanban můžete vypočítat optimální kanbanová množství a množství produktů, které jsou používány. Výpočet zohledňuje prognózy, skutečnou poptávku z otevřených objednávek, dobu realizace doplňování položek a historické požadavky.
+-   Kanbanová pravidla **Pevné množství** se vztahují k pevnému počtu manipulačních jednotek, což znamená, že počet aktivních kanbanů je konstantní. Vždy, když jsou spotřebovány všechny výrobky z Kanban a manipulační jednotky jsou ručně vyprázdněny, je vytvořen nový kanban stejného typu.Při vytváření pravidel pevného množství kanban můžete vypočítat optimální kanbanová množství a množství produktů, které jsou používány. Výpočet zohledňuje prognózy, skutečnou poptávku z otevřených objednávek, dobu realizace doplňování položek a historické požadavky.
 -   Kanbanová pravidla **Plánováno** doplňují požadavky, které jsou vypočítány hlavním plánováním. Hlavní plánování generuje plánované kanbany, které mohou být potvrzeny na kanbany.
--   Kanbanová pravidla **Událost** doplňují požadavky, které pocházejí z řádků prodejní objednávky, řádků výrobního kusovníku, řádků kanbanu nebo nastaveného skladového minima. Při vygenerování se kanbany události propojí s požadavky na zdroj.
+-   Kanbanová pravidla **Událost** doplňují požadavky, které pocházejí z řádků prodejní objednávky, řádků výrobního kusovníku, řádků kanbanu nebo nastaveného skladového minima. Při vygenerování se kanbany události propojí s požadavky na zdroj.
 
 Po vytvoření kanbanů je na základě aktivit kanbanového toku, které jsou definovány v kanbanových pravidlech, vygenerována jedna nebo více kanbanových úloh.
 
@@ -64,7 +65,7 @@ Lean manufacturing dává přehled o aktuálním stavu aktivit výroby a logisti
 -   Sledování a registrace stavu kanbanových úloh.
 
 V následujícím seznamu jsou popsány speciální kanbanové desky:
--   Plánování kanbanové úlohy – dává přehled o kanbanových úlohách. Deska zobrazuje kanbanové úlohy a jejich stav pro jednu nebo více pracovních buněk. Úlohy jsou uvedeny podle období plánování (dny nebo týdny), které jsou definovány v modelu výrobního toku. Na desce se zobrazuje také spotřeba kapacity pro každé období plánování, takže můžete sledovat naplánované vytížení. Můžete měnit stav kanbanových úloh, přeplánovat kanbanové úlohy na různá období plánování a provádět další úlohy.
+-   Plánování kanbanové úlohy – dává přehled o kanbanových úlohách. Deska zobrazuje kanbanové úlohy a jejich stav pro jednu nebo více pracovních buněk. Úlohy jsou uvedeny podle období plánování (dny nebo týdny), které jsou definovány v modelu výrobního toku. Na desce se zobrazuje také spotřeba kapacity pro každé období plánování, takže můžete sledovat naplánované vytížení. Můžete měnit stav kanbanových úloh, přeplánovat kanbanové úlohy na různá období plánování a provádět další úlohy.
 -   Kanbanová deska pro úlohy převodu – dává přehled o aktuálních úlohách převodu. Můžete aktualizovat a registrovat výdejky, zahajovat a dokončovat úlohy převodu a provádět další úlohy.
 -   Kanbanová deska pro úlohy procesu – tato deska slouží k podpoře normálního výrobního toku a dává přehled o aktuální situaci v jedné nebo více pracovních buňkách. Na této desce lze kanbanům určit prioritu, vyskladnit je nebo vyrobit. Správní slouží také k podpoře snímání čárových kódů pro potřeby vykazování kanbanů.
 
@@ -82,6 +83,3 @@ Lean manufacturing kromě toho podporuje procesy nákupů a fakturování služe
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

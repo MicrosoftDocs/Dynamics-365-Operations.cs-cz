@@ -2,23 +2,26 @@
 title: Kontrola kvality
 description: Toto téma obsahuje informace o funkci Kontrola kvality. Tato funkce umožňuje pracovníkům skladu provádět rychlé namátkové kontroly kvality, zatímco přijímají položky do oblasti příchozího doku.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3a565ea566dd2bf4d8c793b3340c78c9f4ed0a2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565296"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424211"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -299,7 +302,7 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 
 #### <a name="receive-pallet-1"></a>Příjem palety 1
 
-1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *51*. (Zadejte *51* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do skladové aplikace jako uživatel skladu *51*. (Zadejte *51* jako ID uživatele a *1* jako heslo.)
 1. Jděte na **Příchozí \> Příjem řádku PO**.
 1. V poli **PONUM** zadejte číslo nákupní objednávky.
 1. Potvrďte znovu číslo nákupní objednávky.
@@ -310,7 +313,7 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 
     Stránka **Kontrola kvality**, která se objeví, nemá žádná vstupní pole. Ve spodní části je pouze potvrzovací tlačítko (znak zaškrtnutí) a tlačítko Nabídka (**≡**) nahoře. (Tlačítko Nabídka se někdy označuje jako hamburger nebo hamburgerové tlačítko.) Pro urychlení procesu kontroly kvality, když paleta projde kontrolou kvality, uživatel pouze potvrdí stránku **Kontrola kvality**.
 
-    ![Stránka Kontrola kvality.](media/quality-check.png "Stránka Kontrola kvality")
+    ![Stránka Kontrola kvality](media/quality-check.png "Stránka Kontrola kvality")
 
 1. Vyberte potvrzovací tlačítko a předejte kontrolu kvality palety 1 z řádku 1.
 
@@ -394,6 +397,3 @@ U tohoto scénáře bude paleta 3 přijata.
 1. Vyberte tlačítko Nabídka (**≡**) v horní části stránky a poté v nabídce vyberte možnost **Zrušit** pro návrat do nabídky.
 
 Nyní můžete mobilní aplikaci zavřít.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

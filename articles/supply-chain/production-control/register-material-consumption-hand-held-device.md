@@ -2,25 +2,28 @@
 title: Registrace spotřeby materiálu pomocí mobilního zařízení
 description: Toto téma popisuje workflow, který umožňuje registraci spotřeby surovin ve výrobě pomocí ručního zařízení.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777856"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424094"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrace spotřeby materiálu pomocí mobilního zařízení
 
@@ -28,15 +31,16 @@ ms.locfileid: "6777856"
 
 Toto téma popisuje workflow, který umožňuje registraci spotřeby surovin ve výrobě pomocí ručního zařízení.
 
-## <a name="introduction"></a>Úvod
+<a name="introduction"></a>Úvod
+------------
 
-Tento workflow platí v případě, že existují přísné požadavky na sledování materiálu. V těchto případech musí být vykázán přesný stav spotřeby pro účely zachování sledovatelnosti materiálů. Na tento proces lze nazírat jako na opačný proces, než jsou operace vyprázdnění předem nebo následně, kdy existuje posun mezi časem registrace a časem, kdy proběhne skutečná spotřeba. To vysvětluje, proč nelze pro některé materiály použít strategii sledování automatické spotřeby. Podívejme se na jednoduchý scénář, který vysvětluje postup při nastavování workflowu s povolením registrace spotřeby surovin ve výrobě pomocí ručního zařízení. [![nastavení workflowu pro povolení registrace spotřeby suroviny s použitím ručního zařízení.](./media/scenario3.png)](./media/scenario3.png)
+Tento workflow platí v případě, že existují přísné požadavky na sledování materiálu. V těchto případech musí být vykázán přesný stav spotřeby pro účely zachování sledovatelnosti materiálů. Na tento proces lze nazírat jako na opačný proces, než jsou operace vyprázdnění předem nebo následně, kdy existuje posun mezi časem registrace a časem, kdy proběhne skutečná spotřeba. To vysvětluje, proč nelze pro některé materiály použít strategii sledování automatické spotřeby. Podívejme se na jednoduchý scénář, který vysvětluje postup při nastavování workflowu s povolením registrace spotřeby surovin ve výrobě pomocí ručního zařízení. [![nastavení workflowu pro povolení registrace spotřeby suroviny s použitím ručního zařízení](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Podrobnosti scénáře
 
 Proces souvislé výroby (5) spotřebovává surovinu RM-100 řízenou dávkou. Materiál je k dispozici v umístění Bulk-001 (1) pro registrační značku vozidla PL-1 se dvěma dávkami, B1 a B2, z nichž obě mají množství 100 kg. Práce ve skladu (2) je uvolněna a zpracována pro RM-100 a materiál je vyzvednut ze skladu Bulk-001 do vstupního místa výroby PIL-01 (3), které je definováno jako místo neřízené registrační značkou. Obsluha stroje zváží materiál ze vstupního místa výroby (3) a registruje hmotnost a číslo dávky jako spotřebované (4). Ze vstupního místa výroby je část materiálu ručně vložena do výrobního procesu v definovaných časových intervalech. Když obsluha stroje přidá materiál, je zvážen na váze a zaregistruje se číslo dávky.
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Nastavení workflowu při registraci spotřeby pomocí ručního zařízení
+## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Nastavení workflowu při registraci spotřeby pomocí ručního zařízení
 Vytvořte produkt dokončené výroby FG-100 s kusovníkem, kde je surovina řízenou dávkou RM-100. Přidejte dvě dávky B1 a B2 RM-100 v množství 100 do umístění: Bulk-001 s registrační značkou: PL-1. Princip vyprazdňování na řádku kusovníku pro RM-100 kusovníku je nastaven na **ruční**. Nastavte výchozí umístění výrobního vstupu na PIL-01. To můžete provést výběrem tohoto skladového místa jako vstupního místa výroby ve skladu 51.
 
 1.  Vytvoření nové položky nabídky mobilních zařízení: 
@@ -64,7 +68,7 @@ To přenese materiál z velkoskladu do vstupního místa výroby PIL 01. Po doko
 
 Po spuštění výrobní zakázky můžete zaregistrovat spotřeby materiálu s workflowem pro ručním zařízení. Začněme registrací spotřeby 25 kg dávky B1.
 
-6.  Vyberte položku nabídky **Zaregistrovat materiál** **spotřeba** pro ruční zařízení a zadejte následující informace: 
+6.  Vyberte položku nabídky  **Zaregistrovat materiál** **spotřeba** pro ruční zařízení a zadejte následující informace: 
 
 -    Číslo výrobní zakázky  
 -    Skladové místo, ve kterém se bude materiál spotřebovávat, je v tomto případě PIL-01. 
@@ -88,6 +92,3 @@ Po dokončení registrace vyberte možnost **Hotovo** k zaúčtování deníku a
 -   Může dojít k vyčerpání materiálu. Například pokud má být spotřebováno množství 100 kg materiálu, poté ji může být vyčerpán, pokud je množství například 105 kg.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

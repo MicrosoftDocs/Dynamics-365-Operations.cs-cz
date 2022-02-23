@@ -1,30 +1,33 @@
 ---
-title: Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
-description: V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
+title: Přijetí registrační značky prostřednictvím aplikace skladu
+description: V tomto tématu je vysvětleno, jak nastavit aplikaci skladu na podporu použití procesu příjmu registračních značek pro příjem fyzických zásob.
 author: perlynne
+manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424196"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Příjem registračních značek prostřednictvím mobilní aplikaci Řízení skladu
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Přijetí registrační značky prostřednictvím aplikace skladu
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak nastavit mobilní aplikaci Řízení skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
+V tomto tématu je vysvětleno, jak nastavit aplikaci skladu, aby podporovala použití procesu příjmu registračních značek pro příjem fyzických zásob.
 
 Pomocí této funkce můžete rychle zaznamenat příjem příchozích zásob, který souvisí s avízem expedice zboží (ASN). Systém při expedici převodního příkazu procesy správy skladu automaticky vytvoří avízo expedice zboží. U procesu nákupní objednávky lze ASN zaznamenat ručně nebo je lze automaticky importovat pomocí procesu příchozí datové entity ASN.
 
@@ -70,14 +73,14 @@ Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Vyl
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zobrazit nebo přeskočit stránku Souhrn přijetí
 
-Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok mobilní aplikace Řízení skladu v rámci procesu získávání registrační značky.
+Můžete použít funkci *Určit, zda zobrazit stránku souhn upříjmu na mobilních zařízeních*, chcete-li využít další detailní tok aplikací Warehouse v rámci procesu získávání registrační značky.
 
 Je-li tato funkce zapnuta, položky nabídky mobilního zařízení pro příjem registračních značek nebo příjem a zaskladnění registračních značek poskytnou nastavení **Zobrazit stránku souhnu příjmu**. Toto nastavení má následující možnosti:
 
 - **Zobrazit podrobný souhrn** – během příjmu registrační značky se zaměstnanci zobrazí další stránka s úplnými informacemi o ASN.
 - **Přeskočit souhrn** – pracovníci nebudou moci zobrazit úplné informace o ASN. Pracovníci skladu také nebudou moci v průběhu procesu příjmu nastavovat dispoziční kód ani přidávat výjimky.
 
-Abyste tuto funkci zpřístupnili ve svém systému, musí být zapnuta funkce *Určete, zda se má zobrazit souhrnná stránka příjmu na mobilních zařízeních* v okně [správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
+Abyste tuto funkci zpřístupnili ve svém systému, musíte zapnout funkci *Určete, zda se má zobrazit souhrnná stránka příjmu na mobilních zařízeních* v okně [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Zabránit použití převodním příkazem expedovaných registračních značek v jiných skladech než je cílový Sklad
 
@@ -102,6 +105,3 @@ Další informace o položkách nabídky mobilního zařízení naleznete v té
 Více informací o scénáři výroby *Nahlásit jako hotovo* získáte v tématu [Přehled pracovních zásad skladu](warehouse-work-policies.md).
 
 Další informace o správě příchozího vytížení získáte v části [Skladová manipulace s příchozím zatížením pro nákupní objednávky](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

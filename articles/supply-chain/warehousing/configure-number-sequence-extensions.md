@@ -2,23 +2,26 @@
 title: Nakonfigurujte sekvence čísel pro toky skladu
 description: Toto téma poskytuje přehled funkcí, které poskytují rozšíření číselných sekvencí pro ID poznávacích značek, ID popisků vlny, ID kontejnerů a ID přepravních dokladů.
 author: GarmMSFT
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e9ba06908b9e82763557e98715e495cfaf649753
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574706"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4424255"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Nakonfigurujte sekvence čísel pro toky skladu
 
@@ -89,6 +92,3 @@ Chcete-li vytvořit a upravit posloupnosti čísel, postupujte takto.
     | Kontrolní číslice | Tento typ segmentu přidá kontrolní číslici, což je výpočet modulo 10. (Toto chování odpovídá existující logice pro ID poznávacích značek.) Pro tento typ segmentu je pole **Hodnota** vždy nastaveno na stříšku (*^*) a pole **Délka** na *1*. |
 
 1. Chcete-li zobrazit příklad konečného formátu čísla, prohlédněte si pole **Formát** ve spodní části pevné záložky **Segmenty**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

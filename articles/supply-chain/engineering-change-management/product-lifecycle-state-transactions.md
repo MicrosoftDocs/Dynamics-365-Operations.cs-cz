@@ -2,23 +2,26 @@
 title: Stavy životního cyklu produktu a transakce
 description: Toto téma vysvětluje, jak můžete ovládat, které transakce jsou povoleny pro každý stav životního cyklu, když technický produkt prochází svým životním cyklem.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574634"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4424265"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stavy životního cyklu produktu a transakce
 
@@ -73,25 +76,3 @@ Následující pole jsou k dispozici pro každý proces, který je uveden na zá
 | Zásada | Vyberte jednu z následujících hodnot, abyste určili, zda a jak bude povolen aktuální proces pro produkty, které jsou v tomto stavu životního cyklu:<ul><li>**Povoleno** - Obchodní proces je povolen.</li><li>**Blokováno** - Proces není povolen. Pokud se uživatel pokusí použít proces na produktu, který je v tomto stavu životního cyklu, systém pokus zablokuje a místo toho zobrazí chybu. Můžete například blokovat nákup produktů na konci životnosti.</li><li>**Povoleno s varováním** - Proces je povolen, ale zobrazí se varování. Můžete například chtít nasadit prototypový produkt do výrobní zakázky vytvořené oddělením výzkumu a vývoje. Ostatní oddělení by si však měla být vědoma toho, že by produkt ještě neměla vyrábět.</li></ul> |
 
 Pokud přidáváte další pravidla stavu životního cyklu jako přizpůsobení, můžete tato pravidla zobrazit v uživatelském rozhraní výběrem možnosti **Obnovit procesy** v horním panelu. Tlačítko **Obnovit procesy** je k dispozici pouze správcům.
-
-## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Stavy životního cyklu pro vydané produkty a varianty produktů
-
-U produktu, který má varianty (hlavní a varianty), bude mít produkt (hlavní) stav životního cyklu a každá z variant může mít také jiný stav životního cyklu.
-
-U konkrétních procesů, pokud je blokována buď varianta, nebo produkt, bude blokován také proces. Konkrétně pro určení, zda je proces blokován, provede systém následující kontroly:
-
-- Produkty kontrolované techniky:
-  - Pokud je aktuální technická verze blokována, zablokujte proces.
-  - Pokud je aktuální varianta blokována, zablokujte proces.
-  - Pokud je blokován vydaný produkt, zablokujte proces.
-- Pro standardní produkty:
-  - Pokud je aktuální varianta blokována, zablokujte proces.
-  - Pokud je blokován vydaný produkt, zablokujte proces.
-
-Předpokládejme například, že chcete prodat pouze jednu variantu (červenou) daného produktu (tričko) a zatím blokovat prodej všech ostatních variant. Toto můžete implementovat pomocí následujícího nastavení:
-
-- Přiřaďte produktu stav životního cyklu, který umožňuje proces. Například přiřaďte produktu trička stav životního cyklu *Prodejný*, který umožňuje obchodní proces *Zakázka odběratele*.
-- Přiřaďte prodejné variantě stav životního cyklu, který umožňuje proces. Přiřaďte například také červené variantě stav životního cyklu *Prodejný*.
-- Všem ostatním variantám je přiřazen jiný stav životního cyklu, kde je proces blokován. Například přiřaďte bílé variantě (a všem ostatním variantám) stav životního cyklu *Není prodejný*, který blokuje obchodní proces *Zakázka odběratele*.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

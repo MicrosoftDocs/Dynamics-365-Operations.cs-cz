@@ -1,26 +1,29 @@
 ---
 title: Rezervace skladových množství
 description: V tomto tématu jsou popsány různé možnosti, které jsou k dispozici pro rezervaci zásob.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424085"
 ---
 # <a name="reserve-inventory-quantities"></a>Rezervace skladových množství
 
@@ -46,7 +49,7 @@ Zásady rezervace zásob, které jsou nastaveny na stránce **Skupiny modelů po
 
 Část **Zásady zásob** obsahuje následující zásady rezervace.
 
-| &nbsp;                  | &nbsp;                                                                                                                                     |
+|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zásada rezervace**  | **Popis**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Řízení FIFO podle data    | Pokud jste vybrali možnost **Řízení FIFO podle data**, rezervace zásob se řídí podle data třídění podle principu FIFO. Dávky jsou rezervovány na základě nejbližšího data příjmu položek podle principu první do skladu, první ze skladu (FIFO).                                                                                                                                                                                                                                                                       |
@@ -80,6 +83,3 @@ Existují dvě možnosti související s rezervacemi na stránce **Parametry ř�
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Zásady rezervace zásob na stránce Parametry výroby
 
 Hodnota pole **Rezervace** na kartě **Obecné** na stránce **Parametry výroby** určuje výchozí místo ve výrobním procesu, kdy se mají rezervovat zásoby. Například zásoby je možné rezervovat při plánování práce nebo při zahájení práce.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

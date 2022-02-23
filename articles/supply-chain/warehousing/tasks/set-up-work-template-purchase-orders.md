@@ -1,25 +1,28 @@
 ---
 title: Nastavení šablony práce pro nákupní objednávky
 description: Toto téma popisuje nastavení jednoduché pracovní šablony pro použití při odložení doručených položek.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6628936a56619de255ca7dc7b332b5819918c310
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572282"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424024"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Nastavení šablony práce pro nákupní objednávky
 
@@ -58,6 +61,3 @@ Toto téma popisuje nastavení jednoduché pracovní šablony pro použití při
 6. Do pole **ID pracovní třídy** zadejte hodnotu. Jsou nastaveny pokyny pro výdej a příjem. Každá sada výdej/příjmu musí mít stejnou pracovní třídu. Používejte stejnou pracovní třídu, kterou jste zadali pro instrukci výdeje.  
 7. Zvolte **Uložit**. Všimněte si, že je nyní zaškrtnuto zaškrtávací políčko **Platné**.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

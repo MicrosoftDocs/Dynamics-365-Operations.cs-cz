@@ -2,26 +2,29 @@
 title: Porovnat sestavu úložiště cen položek
 description: Naučte se generovat sestavu porovnávacího úložiště cen položek a poté procházet a exportovat výsledek.
 author: AndersGirke
+manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 76a4ba07d191f79b4033fc78acff62d4909c7d32
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565992"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424013"
 ---
 # <a name="compare-item-prices-storage-report"></a>Porovnat sestavu úložiště cen položek
 
@@ -118,6 +121,3 @@ Následuje příklad exportu sestavy **Porovnání úložiště cen položek**:
 1. Otevře se stránka **Souhrn spuštění**, v níž se zobrazí stav úlohy exportu a seznam exportovaných entit. Vyberte entitu **Porovnat ceny zboží**, která je uvedena v oblasti **Stav zpracování entity** a poté vyberte **Stáhnout soubor** pro stažení dat exportovaných z této entity.
 
 Další informace o tom, jak používat správu dat k exportu dat, naleznete v tématu [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

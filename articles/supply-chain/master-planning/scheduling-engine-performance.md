@@ -2,26 +2,29 @@
 title: Zlepšení výkonu plánovacího modulu
 description: Toto téma poskytuje informace o plánovacím modulu a o tom, jak zlepšit výkon.
 author: ChristianRytt
+manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578433"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424126"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Zlepšení výkonu plánovacího modulu
 
@@ -66,11 +69,11 @@ Jako příklad si představme trasu uvedenou v následující tabulce a na násl
 | 10 | Sekundární&nbsp;1 | | | | 1 | 20 |
 | 20 | Primární | | 3.00 | 1.00 | 3 | 0 |
 
-![Příklad schématu trasy.](media/scheduling-engine-route.png "Příklad schématu trasy")
+![Příklad schématu trasy](media/scheduling-engine-route.png "Příklad schématu trasy")
 
 Při odesílání do modulu dojde k rozdělení do 8 úloh, jak je znázorněno na následujícím obrázku (vyberte obrázek pro jeho zvětšení).
 
-[![Úlohy plánovacího modulu](media/scheduling-engine-jobs.png "Úlohy plánovacího modulu.")](media/scheduling-engine-jobs-large.png)
+[![Úlohy plánovacího modulu](media/scheduling-engine-jobs.png "Úlohy plánovacího modulu")](media/scheduling-engine-jobs-large.png)
 
 Standardní propojení mezi dvěma úlohami je `FinishStart`, což znamená, že čas ukončení jedné úlohy musí být před časem zahájení jiné úlohy. Protože nastavení musí být provedeno stejným zdrojem, který tento proces později provede, existují mezi nimi omezení `OnSameResource`. Mezi úlohami pro primární a sekundární operaci 10 existují propojení `StartStart` a `FinishFinish`, což znamená, že úlohy musí začínat i končit současně, a zároveň platí omezení `NotOnSameResource`, která zabrání spuštění stejného zdroje pro primární i sekundární operaci.
 
@@ -326,6 +329,3 @@ Hodnota **Časový limit pokusů o optimalizaci** určuje, kolik sekund lze maxi
 
 > [!NOTE]
 > Hodnoty nastavené pro časové limity budou použity jak pro plánování vydaných výrobních zakázek, tak plánovaných zakázek v rámci MRP. Výsledkem je, že nastavení velmi vysokých hodnot by mohlo výrazně zvýšit dobu běhu MRP při spuštění plánu s mnoha naplánovanými výrobními zakázkami.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

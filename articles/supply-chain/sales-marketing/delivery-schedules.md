@@ -1,26 +1,29 @@
 ---
 title: Plány dodávek
 description: Plány dodávek vám umožňují sledovat množství na řádku objednávky, když pracujete s více dodávkami na jedné prodejní objednávce, prodejní nabídce nebo nákupní objednávce.
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule, SalesQuotationDeliverySchedule
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50558c5da71351082d36276a3185e1f91543f2b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bc25ff113291b2a8a0a7ba15637e4d094feb9aae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573458"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423976"
 ---
 # <a name="delivery-schedules"></a>Plány dodávek
 
@@ -28,11 +31,11 @@ ms.locfileid: "7573458"
 
 Plány dodávek vám umožňují sledovat množství na řádku objednávky, když pracujete s více dodávkami na jedné prodejní objednávce, prodejní nabídce nebo nákupní objednávce.
 
-Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku nabídky musí být dodáno v podobě vícenásobné expedice. Řádky dodávky představují jednotlivé dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze uskladnění, jako například pracoviště a sklad.  
+Použijte plán dodávek, pokud celkové množství na objednávce nebo řádku nabídky musí být dodáno v podobě vícenásobné expedice. Řádky dodávky představují jednotlivé dodávky. Dva nebo více řádků dodávek tvoří jeden plán dodávek. Řádky dodávky mohou mít jiná data dodání, množství, způsoby dodání a dimenze úložiště, jako například pracoviště a sklad.  
 
 **Příklad plánu dodávek**
 
-| Zboží                              | Hodnota                                    |
+|                                   |                                          |
 |-----------------------------------|------------------------------------------|
 | Celková objednávka (původní řádek objednávky) | 600 židlí                               |
 | Plán požadovaných dodávek       | 100 židlí měsíčně                     |
@@ -54,6 +57,3 @@ Při potvrzení prodejní nabídky se na výsledných prodejních objednávkách
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

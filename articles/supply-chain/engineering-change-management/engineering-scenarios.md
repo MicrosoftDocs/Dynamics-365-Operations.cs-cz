@@ -2,22 +2,25 @@
 title: Ukázka funkce správy technických změn
 description: Toto téma poskytuje podrobný návod, který ukazuje, jak pracovat se správou technických změn.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b6270bbb6780786ed4535ca2987ed44448bd81ad
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573986"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4424273"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Ukázka funkce správy technických změn
 
@@ -57,7 +60,7 @@ Technická organizace vlastní technická data a odpovídá za design produktu a
     - **Technická organizace:** *DEMF*
     - **Název organizace:** *Contoso Entertainment System Germany*
 
-    ![Přidání technické organizace.](media/engineering-org.png "Přidání technické organizace")
+    ![Přidání technické organizace](media/engineering-org.png "Přidání technické organizace")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Nastavení skupiny dimenzí produktu verze
 
@@ -67,7 +70,7 @@ Technická organizace vlastní technická data a odpovídá za design produktu a
 1. Vyberte **Uložit** pro uložení nové dimenze a načtení hodnot na pevné záložce **Dimenze produktu**.
 1. Na pevné záložce **Dimenze produktu** nastavte jako aktivní dimenzi produktu **Verze**.
 
-    ![Přidání skupiny sledovací dimenze produktů.](media/product-dimension-groups.png "Přidání skupiny sledovací dimenze produktů")
+    ![Přidání skupiny sledovací dimenze produktů](media/product-dimension-groups.png "Přidání skupiny sledovací dimenze produktů")
 
 ### <a name="set-up-product-lifecycle-states"></a>Nastavení stavů životního cyklu produktu
 
@@ -82,7 +85,7 @@ Protože technický produkt prochází svým životním cyklem, je důležité, 
 1. Vyberte **Uložit** pro uložení nového stavu životního cyklu a načtení hodnot na pevné záložce **Povolené obchodní procesy**.
 1. Na pevné záložce **Povolené obchodní procesy** vyberte obchodní procesy, které by měly být k dispozici. U tohoto příkladu ponechte pole **Zásady** nastavené na *Povoleno* pro všechny obchodní procesy.
 
-    ![Povolení obchodních procesů pro stav životního cyklu.](media/product-lifecycle-states-1.png "Povolení obchodních procesů pro stav životního cyklu")
+    ![Povolení obchodních procesů pro stav životního cyklu](media/product-lifecycle-states-1.png "Povolení obchodních procesů pro stav životního cyklu")
 
 1. Vyberte **Nový** pro přidání dalšího stavu životního cyklu a pak pro něho nastavte tyto hodnoty:
 
@@ -92,7 +95,7 @@ Protože technický produkt prochází svým životním cyklem, je důležité, 
 1. Vyberte **Uložit** pro uložení nového stavu životního cyklu a načtení hodnot na pevné záložce **Povolené obchodní procesy**.
 1. Na pevné záložce **Povolené obchodní procesy** vyberte obchodní procesy, které by měly být k dispozici. U tohoto příkladu nastavte pole **Zásady** nastavené na *Povoleno s varováním* pro všechny obchodní procesy.
 
-    ![Povolení (s varováním) obchodních procesů pro stav životního cyklu.](media/product-lifecycle-states-2.png "Povolení (s varováním) obchodních procesů pro stav životního cyklu")
+    ![Povolení (s varováním) obchodních procesů pro stav životního cyklu](media/product-lifecycle-states-2.png "Povolení (s varováním) obchodních procesů pro stav životního cyklu")
 
 ### <a name="set-up-a-version-number-rule"></a>Nastavení pravidla čísla verze
 
@@ -103,7 +106,7 @@ Protože technický produkt prochází svým životním cyklem, je důležité, 
     - **Číslo pravidla:** *Auto*
     - **Formát:** *V-\#\#*
 
-    ![Přidání pravidla pro číslo verze produktu.](media/version-number-rule.png "Přidání pravidla pro číslo verze produktu")
+    ![Přidání pravidla pro číslo verze produktu](media/version-number-rule.png "Přidání pravidla pro číslo verze produktu")
 
 ### <a name="set-up-a-product-release-policy"></a>Nastavení zásad vydání produktu
 
@@ -135,7 +138,7 @@ Protože technický produkt prochází svým životním cyklem, je důležité, 
     - **Kopírovat schválení trasy:** Zaškrtněte toto políčko.
     - **Aktivace schválení trasy:** Zaškrtněte toto políčko.
 
-    ![Přidání zásad vydání produktu.](media/product-release-policy.png "Přidání zásad vydání produktu")
+    ![Přidání zásad vydání produktu](media/product-release-policy.png "Přidání zásad vydání produktu")
 
 ### <a name="set-up-an-engineering-product-category"></a>Nastavení kategorií technického produktu 
 
@@ -158,9 +161,9 @@ Kategorie technických produktů poskytují základ pro vytváření technickýc
     - **Použít nomenklaturu pravidla popisu:** *Ne*
 
 1. Na pevné záložce **Zásady vydání** nastavte hodnotu v poli **Zásady vydání produktu** na *Komponenty*.
-1. Zvolte možnost **Uložit**.
+1. Zvolte **Uložit**.
 
-    ![Přidání kategorií technického produktu.](media/product-category-details.png "Přidání kategorií technického produktu")
+    ![Přidání kategorií technického produktu](media/product-category-details.png "Přidání kategorií technického produktu")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Nastavení podmínek přijetí produktu
 
@@ -168,7 +171,7 @@ Kategorie technických produktů poskytují základ pro vytváření technickýc
 1. Jděte na **Správa technických změn &gt; Nastavení &gt; Parametry správy technické změny**.
 1. Na kartě **Kontrola vydání** v části **Přijetí produktu** nastavte pole **Přijetí produktu** na *Ruční*.
 
-    ![Nastavení podmínek přijetí produktu.](media/engineering-change-management-parameters.png "Nastavení podmínek přijetí produktu")
+    ![Nastavení podmínek přijetí produktu](media/engineering-change-management-parameters.png "Nastavení podmínek přijetí produktu")
 
 ## <a name="create-a-new-engineering-product"></a>Vytvoření nového technického produktu
 
@@ -187,23 +190,23 @@ Technický produkt je produkt, který má verzi a je řízen prostřednictvím �
     - **Číslo produktu:** *Z0001*
     - **Název produktu:** *Sada reproduktorů*
 
-    ![Přidání technického produktu.](media/new-product-dialog.png "Přidání technického produktu")
+    ![Přidání technického produktu](media/new-product-dialog.png "Přidání technického produktu")
 
     Všimněte si, že pole **Verze** se automaticky nastavuje pomocí pravidla čísla produktu, které jste nastavili dříve.
 
 1. Vyberte **OK**, produkt se vytvoří a dialogové okno se zavře.
 1. Otevře se stránka s podrobnostmi o novém produktu. Všimněte si, že hodnoty jsou již vyplněny pro některá pole, například **Skupina dimenzí úložiště**, **Sledování skupiny dimenzí** a/nebo **Skupina modelů položek**. Tato pole byla nastavena automaticky, protože produkt je vydáván v právnické osobě *DEMF* a používá zásady uvolnění produktu *Komponenty*, která je spojena s kategorií technických produktů *Komponenty*. Protože jste dříve používali položku *D0006* jako šablonu pro nastavení řádku pro právnickou osobu *DEMF*, hodnoty, které byly vyplněny, byly převzaty z položky *D0006*.
 
-    ![Podrobnosti o uvolněném produktu.](media/product-details.png "Podrobnosti o uvolněném produktu")
+    ![Podrobnosti o uvolněném produktu](media/product-details.png "Podrobnosti o uvolněném produktu")
 
 1. V podokně akcí na kartě **Technik** ve skupině **Správa technických změn** vyberte **Technické verze** k zobrazení verzí produktu.
 
-    ![Technické verze.](media/engineering-versions-list.png "Technické verze")
+    ![Technické verze](media/engineering-versions-list.png "Technické verze")
 
 1. Na stránce **Technické** si všimněte si, že pro produkt existuje pouze jedna verze a je aktivní.
 1. Vyberte verzi, jejíž podrobnosti chcete zobrazit.
 
-    ![Podrobnosti o technické verzi.](media/engineering-version-details.png "Podrobnosti o technické verzi")
+    ![Podrobnosti o technické verzi](media/engineering-version-details.png "Podrobnosti o technické verzi")
 
 1. Na stránce **Technická verze** na pevné záložce **Kusovník** vyberte **Vytvořit kusovník**.
 1. V dialogovém okně **Vytvořit kusovník** nastavte následující hodnoty:
@@ -212,25 +215,25 @@ Technický produkt je produkt, který má verzi a je řízen prostřednictvím �
     - **Název:** Sada reproduktorů
     - **Lokalita:** 1
 
-    ![Vytváření BOM.](media/create-bom.png "Vytváření BOM")
+    ![Vytváření BOM](media/create-bom.png "Vytváření BOM")
 
 1. Vyberte **OK** pro přidání kusovníku a zavření dialogového okna.
 1. Na pevné záložce **Kusovník** vyberte **Kusovník**.
 1. Na stránce **Kusovník** na pevné záložce **Řádky kusovníku** přidejte tři řádky pro čísla položek *D0001*, *D0003*, a *D0006*.
 
-    ![Přidávání řádků kusovníku.](media/bom.png "Přidávání řádků kusovníku")
+    ![Přidávání řádků kusovníku](media/bom.png "Přidávání řádků kusovníku")
 
-1. Zvolte možnost **Uložit**.
+1. Zvolte **Uložit**.
 1. Zavřete stránku.
 1. Na stránce **Technická verze** na pevné záložce **Kusovník** vyberte **Schválit**.
 1. V zobrazeném dialogovém okně vyberte **OK**.
 
-    ![Schvalování kusovníku.](media/approve-dialog.png "Schvalování kusovníku")
+    ![Schvalování kusovníku](media/approve-dialog.png "Schvalování kusovníku")
 
 1. Na stránce **Technická verze** na pevné záložce **Kusovník** vyberte **Aktivovat**.
 1. Všimněte si, že jsou pro kusovník zaškrtnutá políčka **Aktivní** a **Schválený**.
 
-    ![Aktivní a schválený kusovník.](media/approved-bom.png "Aktivní a schválený kusovník")
+    ![Aktivní a schválený kusovník](media/approved-bom.png "Aktivní a schválený kusovník")
 
 1. Zavřete stránku.
 
@@ -244,25 +247,25 @@ Produkt nyní navrhlo technické oddělení. V tomto příkladu je produkt proto
 1. V podokně akcí na kartě **Produkt** ve skupině **Správa** vyberte **Struktura vydání produktu** k otevření průvodce **Vydání produktů**.
 1. Na stránce **Vyberte technické produkty, které chcete vydat** zaškrtněte políčko **Vybrat** u produktu *Z0001*.
 
-    ![Výběr technických produktů k vydání.](media/select-eng-product-to-release.png "Výběr technických produktů k vydání")
+    ![Výběr technických produktů k vydání](media/select-eng-product-to-release.png "Výběr technických produktů k vydání")
 
 1. Vyberte **Podrobnosti o vydání**.
 1. Zobrazí se stránka **Podrobnosti o vydání produktu**, kde si můžete prohlédnout podrobnosti o produktu, který bude vydán, a jeho strukturu produktu. Všimněte si, že je možnost **Odeslat kusovník** nastavena na hodnotu *Ano*. Proto budou vydány jak produkt *Z0001*, tak všechny jeho podřízené položky z kusovníku.
 
     V levém podokně můžete vybrat libovolnou podřízenou položku a zkontrolovat její podrobnosti. Pokud má některá podřízená položka kusovník, můžete také vybrat vydání kusovníku této podřízené položky.
 
-    ![Kontrola podrobností o vydání produktu.](media/product-release-details.png "Kontrola podrobností o vydání produktu")
+    ![Kontrola podrobností o vydání produktu](media/product-release-details.png "Kontrola podrobností o vydání produktu")
 
 1. Zavřete stránku a vraťte se do průvodce **Vydané produkty**.
 1. Výběrem **Další** otevřete stránku **Vybrat produkty k vydání**. Pokud jste vybrali nějaké standardní (netechnické) produkty, zobrazí se na této stránce. Upozorňujeme, že když vydáte standardní produkt výběrem **Vydat strukturu produktu**, vydá se také jeho kusovník a trasa.
 
-    ![Výběr standardních produktů k vydání.](media/select-std-product-to-release.png "Výběr standardních produktů k vydání")
+    ![Výběr standardních produktů k vydání](media/select-std-product-to-release.png "Výběr standardních produktů k vydání")
 
 1. Výběrem **Další** otevřete stránku **Vybrat varianty produktu k vydání**. V tomto příkladu nejsou žádné varianty.
 1. Výběrem **Další** otevřete stránku **Vybrat společnosti**.
 1. Vyberte společnosti, kterým by měl být produkt vydán. V tomto příkladu zaškrtněte políčko **USMF**.
 
-    ![Výběr společností, kterým se má produkt vydat.](media/select-release-companies.png "Výběr společností, kterým se má produkt vydat")
+    ![Výběr společností, kterým se má produkt vydat](media/select-release-companies.png "Výběr společností, kterým se má produkt vydat")
 
 1. Výběrem **Další** otevřete stránku **Potvrdit výběr**.
 1. Vyberte **Dokončit**.
@@ -280,7 +283,7 @@ Pokud chcete produkt zkontrolovat a vydat společnosti *USMF*, postupujte podle 
 
     Na stránce **Otevřít vydání produktu** se zobrazuje produkt *Z0001*, který má stav *Čeká na přijetí*.
 
-    ![Otevřená uvolnění produktů.](media/open-product-releases.png "Otevřená uvolnění produktů")
+    ![Otevřená uvolnění produktů](media/open-product-releases.png "Otevřená uvolnění produktů")
 
 1. Vyberte hodnotu ve sloupci **Číslo produktu** k otevření stránky **Podrobnosti o vydání produktu**. Všímejte si následujících podrobností:
 
@@ -288,7 +291,7 @@ Pokud chcete produkt zkontrolovat a vydat společnosti *USMF*, postupujte podle 
     - Na pevné záložce **Podrobnosti o vydání** se zobrazují informace o produktu a verzi, které byly vydány. Zde můžete upravit nastavení, například data účinnosti.
     - Na pevné záložce **Trasa** se zobrazuje trasa produktu. V tomto příkladu jste však nevydali žádné trasy.
 
-    ![Podrobnosti o uvolnění produktu.](media/product-release-details-2.png "Podrobnosti o uvolnění produktu")
+    ![Podrobnosti o uvolnění produktu](media/product-release-details-2.png "Podrobnosti o uvolnění produktu")
 
 1. Po dokončení kontroly informací jste připraveni produkt přijmout a tímto způsobem jej vydat společnosti *USMF*. V podokně akcí klikněte na **Akce &gt; Přijmout**.
 1. Produkt je nyní vydán společnosti *USMF*. Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**. Měli byste vidět položku *Z0001*.
@@ -304,7 +307,7 @@ Správce kmenových dat pro společnost *USMF* chce zajistit, aby byl produkt ve
 1. V podokně akcí na kartě **Produkt** ve skupině **Stav životního cyklu** vyberte **Změnit stav životního cyklu**.
 1. V rozevíracím dialogovém okně **Změnit stav životního cyklu** nastavte pole **Stav** na *Prototyp* a potom vyberte **OK**.
 
-    ![Změna stavu životního cyklu.](media/change-lifecycle-state.png "Změna stavu životního cyklu")
+    ![Změna stavu životního cyklu](media/change-lifecycle-state.png "Změna stavu životního cyklu")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Přidání technického produktu k prodejní objednávce
 
@@ -318,7 +321,7 @@ Produkt lze nyní prodat zákazníkovi. Pro přidání produktu do prodejní obj
 
     Zobrazí se varovná zpráva, která vás informuje, že položka má stav *Prototyp*. Protože je však zpráva pouze upozorněním, byla prodejní objednávka přesto vytvořena.
 
-    ![Prodejní objednávka pro technický produkt.](media/sales-order-eng-product.png "Prodejní objednávka pro technický produkt")
+    ![Prodejní objednávka pro technický produkt](media/sales-order-eng-product.png "Prodejní objednávka pro technický produkt")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Vyžádání změn v technickém produktu
 
@@ -328,7 +331,7 @@ Produkt byl odeslán zákazníkovi, ale zákazník nebyl zcela spokojen a poskyt
 1. Najděte a otevřete prodejní objednávku, kterou jste vytvořili v předchozím cvičení.
 1. Na pevné záložce **Řádky prodejní objednávky** vyberte **Správa technických změn &gt; Nová žádost o technickou změnu**.
 
-    ![Vytvoření požadavku na technickou změnu z prodejní objednávky.](media/sales-order-eng-change-request.png "Vytvoření požadavku na technickou změnu z prodejní objednávky")
+    ![Vytvoření požadavku na technickou změnu z prodejní objednávky](media/sales-order-eng-change-request.png "Vytvoření požadavku na technickou změnu z prodejní objednávky")
 
 1. Vyplňte požadavek na technickou změnu na základě zpětné vazby od zákazníka. Pro tento příklad nastavte následující hodnoty:
 
@@ -341,7 +344,7 @@ Produkt byl odeslán zákazníkovi, ale zákazník nebyl zcela spokojen a poskyt
 1. Na pevné záložce **Informace** vyberte **Nová &gt; Poznámka** pro přidání poznámky do mřížky.
 1. V poli **Popis** pro novou poznámku označte, že by položka *D0003* měla být z kusovníku odstraněna. Pokud k poznámce musíte přidat další informace, můžete zadat text do pole **Poznámky**.
 
-    ![Požadavek na technickou změnu.](media/eng-change-request.png "Požadavek na technickou změnu")
+    ![Požadavek na technickou změnu](media/eng-change-request.png "Požadavek na technickou změnu")
 
 1. V podokně akcí vyberte **Uložit**.
 1. Všimněte si, že položka byla automaticky přidána na pevnou záložku **Produkty** a že zdroj požadavku na technickou změnu (prodejní objednávka) byl přidán na pevnou záložku **Zdroj**.
@@ -370,31 +373,32 @@ Technik nyní zkontroluje požadavek od zákazníka a vytvoří objednávku změ
     - **Produkt:** *Z0001*
     - **Dopad:** *Nová verze*
 
-    ![Vytvoření objednávky technických změn.](media/eng-change-order.png "Vytvoření objednávky technických změn")
+    ![Vytvoření objednávky technických změn](media/eng-change-order.png "Vytvoření objednávky technických změn")
 
 1. Všimněte si toho, protože jste nastavili pole **Dopad** na *Nová verze*, pole **Nová verze** na kartě **Detaily** na pevné záložce **Detaily produktu** ukazuje, jaké bude nové číslo verze (*V-02* pro tento příklad).
 
-    ![Podrobnosti o produktu pro technický změnový příkaz.](media/eng-change-order-product-details.png "Podrobnosti o produktu pro technický změnový příkaz")
+    ![Podrobnosti o produktu pro technický změnový příkaz](media/eng-change-order-product-details.png "Podrobnosti o produktu pro technický změnový příkaz")
 
 1. V podokně akcí vyberte **Uložit**.
 1. Na pevné záložce **Podrobnosti o produktu** na kartě **Kusovník** vyberte **Řádky** k otevření verze kusovníku *V-01* produktu *Z0001*.
 
-    ![Řádky kusovníku technického produktu.](media/eng-product-bom-lines.png "Řádky kusovníku technického produktu")
+    ![Řádky kusovníku technického produktu](media/eng-product-bom-lines.png "Řádky kusovníku technického produktu")
 
 1. Vyberte řádek s číslem položky *D0003* a poté v podokně akcí vyberte **Odstranit**. Hodnota pole **Změnit typ** pro tento řádek se změní na *Smazáno*.
 1. V podokně akcí vyberte **Uložit**.
 
-    ![Změněné řádky kusovníku technického produktu.](media/eng-product-bom-lines-modified.png "Změněné řádky kusovníku technického produktu")
+    ![Změněné řádky kusovníku technického produktu](media/eng-product-bom-lines-modified.png "Změněné řádky kusovníku technického produktu")
 
 1. Zavřete stránku **Řádek kusovníku** pro návrat na stránku **Pořadí technických změn**.
 1. Na pevné záložce **Podrobnosti o produktu** na kartě **Kusovník** si všimněte, že hodnota pole **Typ změny** pro kusovník *Z0001* je nyní *Změněno*.
 
-    ![Pořadí technických změn, které obsahuje změněný kusovník.](media/eng-change-order-changed-bom.png "Pořadí technických změn, které obsahuje změněný kusovník")
+    ![Pořadí technických změn, které obsahuje změněný kusovník](media/eng-change-order-changed-bom.png "Pořadí technických změn, které obsahuje změněný kusovník")
 
     Nákupní objednávka musí být nyní schválena, než bude možné zpracovat změny. Když jsou změny zpracovány, produkty se aktualizují o změny, které jsou zahrnuty v pořadí technických změn. V tomto příkladu byla osoba, která vytvoří objednávku technické změny, zadána jako schvalovatel.
 
 1. V podokně akcí na kartě **Příkaz ke změně** ve skupině **Změnit stav** vyberte **Schválit**.
 1. Vyberte **Proces** k aktualizaci informací o produktu.
+1. Vyberte **Kompletní** k označení objednávky změn jako dokončené.
 
 ## <a name="release-the-changed-product"></a>Vydání změněného produktu
 
@@ -407,9 +411,3 @@ Produkt lze nyní znovu vydat do společnosti *USMF* a poté odeslat zákazníko
 1. Vyberte každou společnost, které chcete vydat produkty.
 1. Vyberte **OK** pro zavření dialogového okna **Vydání** a návrat do pracovní plochy.
 1. V podokně akcí na kartě **Změnový příkaz** ve skupině **Vydání produktu** vyberte **Proces** k vydání dotčených produktů vybraným společnostem. Případně vyberte **Uvolnit strukturu produktu** k zahájení procesu vydání.
-
-## <a name="complete-the-change-order"></a>Dokončení změnového příkazu
-
-Chcete-li označit změnový příkaz jako dokončený, což znamená, že nezbývají žádné další akce, vyberte možnost **Dokončit** v podokně akcí.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

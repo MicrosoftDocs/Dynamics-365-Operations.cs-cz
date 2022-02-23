@@ -2,23 +2,26 @@
 title: Stáří vyskladnění zásob směrnice skladového místa
 description: Toto téma vysvětluje, jak během vyskladňování používat strategie direktivy umisťování první do skladu, první ze skladu (FIFO) a poslední do skladu, první ze skladu (LIFO).
 author: mirzaab
+manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 83f73052d1d9d8a29a80ce3cf1035a259cd92c17
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578577"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424134"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Stáří vyskladnění zásob směrnice skladového místa
 
@@ -117,7 +120,7 @@ Strategie FIFO najde místo, které obsahuje nejstarší datum stárnutí, a př
 1. Na stránce **Prodejní objednávka** v pododokně akcí na kartě **Sklad** ve skupině **Akce** vyberte **Uvolnit do skladu**. Zobrazí se informační zprávy. Systém vytvoří dodávku, přidá ji k novému nákladu a vytvoří požadovanou práci.
 1. Na pevné záložce **Řádky prodejní objednávky** v nabídce **Sklad** vyberte **Podrobnosti o práci**, chcete-li otevřít práci, která byla vytvořena pro tuto prodejní objednávku. Všimněte si, že řádek, kde je hodnota **Typ práce** *Výdej*, ukazuje hodnotu **Skadové místo** *FL-002*. Toto místo obsahuje registrační značku, která má nejstarší datum stárnutí (FIFO).
 1. Vyberte **Sklad \> Podrobnosti o zásilce**.
-1. Na záložce **Obecné** si poznamenejte si ID vlny, abyste jej mohli použít ve scénáři 2.
+1. Na pevné záložce ***Všeobecné** si poznamenejte si ID vlny, abyste jej mohli použít ve scénáři 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scénář 2: Nastavení a použití stárnutí místa LIFO
 
@@ -137,6 +140,3 @@ Strategie LIFO najde místo, které obsahuje nejnovéjší datum stárnutí, a p
 1. Všimněte si, že řádek, kde je hodnota **Typ práce** *Výdej*, ukazuje hodnotu **Skadové místo** *FL-001*. Toto místo obsahuje registrační značku, která má nejnovější datum stárnutí (LIFO).
 
 V těchto scénářích jste viděli, jak strategie stárnutí místa směřuje práci k místu zísob, které má nejstarší nebo nejnovější zásoby, v závislosti na vybrané strategii.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

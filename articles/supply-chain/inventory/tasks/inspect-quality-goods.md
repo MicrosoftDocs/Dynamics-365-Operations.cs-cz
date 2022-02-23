@@ -1,60 +1,53 @@
 ---
 title: Kontrola kvality zboží
-description: Toto téma popisuje, jak zpracovat objednávky kvality.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Toto téma vysvětluje, jak zpracovat objednávku kvality.
+author: perlynne
+manager: tfehr
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ee5f83b2dad60567341f33a73ce63d01e9da8289
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575841"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424074"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Kontrola kvality zboží
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak zpracovat objednávky kvality. Kontroly kvality obvykle provádějí pracovníci pro kontrolu kvality.
+Toto téma vysvětluje, jak zpracovat objednávku kvality. Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Před zahájením tohoto vzorového postupu je nutné potvrdit nákupní objednávku „000016“ a zaúčtovat příjemku produktu. To způsobí automatické vytvoření objednávky kvality. Kontroly kvality obvykle provádějí pracovníci pro kontrolu kvality.
 
-Pokud jsou nainstalována standardní ukázková data, můžete je použít k provedení postupů v tomto tématu. K použití ukázkových dat vyberte právnickou osobu *USMF*. Poté musíte potvrdit nákupní objednávku *000016* a zaúčtovat příjemku produktu. Objednávka kvality je generována automaticky.
 
-## <a name="step-1-select-a-quality-order"></a>Krok 1: Vyberte objednávku kvality
+## <a name="select-a-quality-order"></a>Vyberte objednávku kvality
+1. V podokně navigace přejděte na **Moduly > Řízení zásob > Periodické úlohy > Správa kvality > Objednávky kvality**.
+2. Vyberte objednávku kvality, která byla vytvořena před zahájením tohoto postupu.  
 
-Pokud chcete vybrat objednávku kvality, postupujte takto.
-
-1. Přejděte na **Řízení zásob \> Periodické úlohy \> Správa kvality \> Objednávky kvality**.
-1. Vyberte objednávku kvality, která byla vygenerována před zahájením tohoto postupu.
-
-## <a name="step-2-record-test-results"></a>Krok 2: Záznam výsledků testu
-
-Chcete-li zaznamenat výsledky testu, postupujte takto.
-
+## <a name="record-test-results"></a>Záznam výsledků testu
 1. Vyberte **Výsledky**
-1. Vyberte možnost **Upravit**.
-1. V poli **Výsledné množství** zadejte číslo.
-1. V poli **Výsledek** zvolte požadovaný záznam. V tomto příkladu vychází výsledek z předem definovaného výsledku. Obvykle vytvoříte záznam s mnohem přesnějšími výsledky, jako například s velikostí nebo jinou dimenzí.
-1. Zvolte **Uložit**.
-1. Zavřete stránku.
+2. Vyberte možnost **Upravit**.
+3. V poli **Výsledné množství** zadejte číslo.
+4. V poli **Výsledek** vyberte požadovaný záznam v rozevírací nabídce.  
+- V tomto příkladu vychází výsledek z předem definovaného výsledku. Běžně byste vytvořili záznam s mnohem přesnějšími výsledky, jako například s velikostí nebo jinou dimenzí.  
+5. Zvolte **Uložit**.
+6. Zavřete stránku.
 
-## <a name="step-3-validate-the-quality-order"></a>Krok 3: Ověřit objednávku kvality
-
-Pokud chcete objednávku kvality ověřit, postupujte takto.
-
+## <a name="validate-the-quality-order"></a>Ověřit objednávku kvality
 1. Vyberte **Ověřit**.
-1. V poli **Potvrdil(a)** vyberte uživatele, který provádí kontrolu.
-1. Zvolte **Zvolit**.
-1. Vyberte **OK**.
-1. Zavřete stránku.
+2. V poli **Ověřil/a** vyberte uživatele provádějícího kontrolu z rozevírací nabídky.  
+3. Klepněte na tlačítko **Vybrat**.
+4. Vyberte **OK**.
+5. Zavřete stránku.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

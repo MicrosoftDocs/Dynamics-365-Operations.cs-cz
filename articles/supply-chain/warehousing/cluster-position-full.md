@@ -2,23 +2,26 @@
 title: Plná pozice seskupení
 description: Tohle téma obsahuje informace o funkci Plná pozice seskupení. Tato funkce nabízí alternativu k přísnějšímu vynucování pravidel pracovní přestávky při použití výdejů v seskupení, protože umožňuje větší toleranci chyb ve volumetrických omezeních kontejnerů nebo břemen.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574250"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424173"
 ---
 # <a name="cluster-position-full"></a>Plná pozice seskupení
 
@@ -211,7 +214,7 @@ Měla by být vytvořena dvě ID práce, z nichž každé má dva řádky výdej
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Spuštění toku mobilního zařízení – nastavení potvrzení práce pro produkt
 
-1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*.
+1. Přihlaste se do skladové aplikace jako uživatel skladu *61*.
 1. Jděte na **Odchozí \> Vytvoření výdeje v seskupení**.
 
     Zobrazí se stránka **ÚKOL: Přiřadit práci seskupení**.
@@ -273,6 +276,3 @@ V tomto scénáři byl proveden výdej v seskupení a uživatel je nasměrován 
     Zobrazí se zpráva „Seskupení dokončeno“.
 
 Nyní můžete pomocí položky nabídky **Prodejní výdej** vyskladnit zbývající množství. Poté můžete pomocí položky nabídky **Nakládání prodeje** přesunout položky z přechodného skladového místa do překladišť.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

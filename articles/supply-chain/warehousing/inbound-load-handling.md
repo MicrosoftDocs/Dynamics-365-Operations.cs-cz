@@ -1,38 +1,39 @@
 ---
 title: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 description: Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778052"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424139"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
-[!include [banner](../includes/banner.md)]
-
 Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
 
-Pro každý příchozí náklad by váš systém již měl obsahovat související prodejní objednávku a může také obsahovat související specifikaci nákladu a/nebo plán přepravy. Další informace o vytváření a správě příchozích nákladů naleznete v tématu [Obchodní proces: plánování přepravy pro příchozí náklady](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Pro každý příchozí náklad by váš systém již měl obsahovat související prodejní objednávku a může také obsahovat související specifikaci nákladu a/nebo plán přepravy. Další informace o vytváření a správě příchozích nákladů naleznete v tématu [Obchodní proces: plánování přepravy pro příchozí náklady](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Přehled: jak jsou vytvářeny, registrovány a přijímány příchozí náklady
 
 Následující ilustrace znázorňuje typický tok pro zpracování příchozích nákladů s množstvím nákupních objednávek při jejich dochodu do skladu.
 
-![Proces zpracování příchozího nákladu.](media/inbound-process.png "Proces zpracování příchozího nákladu")
+![Proces zpracování příchozího nákladu](media/inbound-process.png "Proces zpracování příchozího nákladu")
 
 1. **Dodavatel potvrdí nákupní objednávku.**
 
@@ -40,11 +41,11 @@ Následující ilustrace znázorňuje typický tok pro zpracování příchozíc
 
 1. **Vytvoří se záznam o příchozím nákladu za účelem plánování doručení a jeho obsahu.**
 
-    Záznam o příchozím nákladu představuje dodávku dodavatele jedné nebo více nákupních objednávek. Je očekáváno, že se náklad dorazí do skladu jako jedna fyzická jednotka přepravy (například nákladní vůz). Záznam o příchozím nákladu se používá pro účely plánování a umožňuje koordinátora logistiky sledovat průběh nákladu od dodavatele. Používá se také k zaznamenání množství řádků objednávky a ke správě postupu prostřednictvím skladových operací, jako je například práce na příchod a zaskladnění. Vytížení lze vytvořit automaticky nebo ručně a mohou být založena buď na nákupní objednávce, nebo na rozšířeném oznámení o dodávce (ASN) od dodavatele. Další informace naleznete v tématu [Vytvoření nebo úprava příchozího nákladu](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Záznam o příchozím nákladu představuje dodávku dodavatele jedné nebo více nákupních objednávek. Je očekáváno, že se náklad dorazí do skladu jako jedna fyzická jednotka přepravy (například nákladní vůz). Záznam o příchozím nákladu se používá pro účely plánování a umožňuje koordinátora logistiky sledovat průběh nákladu od dodavatele. Používá se také k zaznamenání množství řádků objednávky a ke správě postupu prostřednictvím skladových operací, jako je například práce na příchod a zaskladnění. Vytížení lze vytvořit automaticky nebo ručně a mohou být založena buď na nákupní objednávce, nebo na rozšířeném oznámení o dodávce (ASN) od dodavatele. Další informace naleznete v tématu [Vytvoření nebo úprava příchozího nákladu](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Dodavatel potvrdí expedici nákladu.**
 
-    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy**, potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Když dodavatel odešle břemeno, koordinátor logistiky v přijímajícím skladu potvrdí expedici dodávky. Pokud přijímající společnost používá modul **Správa přepravy**, potvrzení příchozího nákladu spustí další procesy správy nákladu, které jsou přidruženy ke vstupním nákladům. Další informace naleznete v tématu [Potvrzení nákladu pro expedici](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **K zaznamenání do skladu a pracovníci registrují množství.**
 
@@ -66,7 +67,7 @@ Při prvním doručení příchozího břemene do skladu musí pracovníci sklad
 
 - **Nabídka mobilního zařízení konfigurovaná pro podporu příjmu nákladů**
 
-    [Mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md) pro mobilní zařízení podporuje následující procesy vytváření práce:
+    [Aplikace skladu](install-configure-warehousing-app.md) pro mobilní zařízení podporuje následující procesy vytváření práce:
 
     - Přijetí položky nákladu
     - Přijetí a odložení položky nákladu
@@ -205,7 +206,7 @@ V následující tabulce jsou shrnuty účinky nastavení **Povolit více pří
 | Povolit více příjemek produktů na jeden náklad | Množství nákladu | Stav nákladu | Poznámka |
 |---|---|---|---|
 | Pokud toto pole není k dispozici (verze před 10.0.10) | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství.</p><p>Pokud je množství nákladu aktualizováno na 0 (nula), což znamená, že nebyla provedena žádná registrace, řádek nákladu bude odstraněn.</p><p>Pokud pro náklad nejsou k dispozici žádné řádky pro čtení, dojde k jeho odstranění.</p> | _Přijato_ | Existuje-li pro zaregistrované množství řádku objednávky více nákladů, aktualizuje se na _přijato_ pouze stav nákladu, ze kterého byla zaúčtována příjemka. |
-| Ne | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství, které je přidruženo k ID nákladu.</p><p>Pokud není pro skladovou transakci zaznamenáno ID nákladu, chování odpovídá chování ve verzích před 10.0.10.</p> | _Přijato_ | |
+| Žádný | <p>Množství nákladu je nastaveno tak, aby se rovnalo zaregistrovanému množství, které je přidruženo k ID nákladu.</p><p>Pokud není pro skladovou transakci zaznamenáno ID nákladu, chování odpovídá chování ve verzích před 10.0.10.</p> | _Přijato_ | |
 | Ano | Žádné aktualizace | _Přijato_, pokud je celkové zaregistrované množství nákladu rovno nebo větší než množství nákladu | |
 | Ano | Žádné aktualizace | _Odesláno_ nebo _Zpracovává se_, pokud je celkové zaregistrované množství nákladu menší než množství nákladu | |
 
@@ -267,7 +268,7 @@ Tyto scénáře vyžadují funkci _Více zaúčtování příjemek produktů na 
 
 1. Otevřete pracovní prostor **Správa funkcí**. (Podrobné informace o tom, jak najít a použít tento pracovní prostor naleznete v tématu [Správa funkcí – přehled](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)funkcí – přehled.)
 
-1. Ujistěte se, že je zapnutá funkce _Přiřazení skladových transakcí nákupní objednávky k nákladu_. Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout. Ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) je však tato funkce uvedena následovně:
+1. Zapněte funkci _Přiřazení skladových transakcí nákupní objednávky k nákladu_, která je uvedena následujícím způsobem:
 
     - **Modul:** _Řízení skladu_
     - **Název funkce:** _Přiřazení skladových transakcí nákupní objednávky k nákladu_
@@ -285,7 +286,7 @@ Chcete-li s těmito scénáři pracovat pomocí zadaných ukázkových záznam�
 
 Před tím, než pracovníci příjmu skladu mohou použít mobilní zařízení k registraci příchozích zásob, které jsou spojeny s nákladem, je nutné pro tento účel vytvořit položku nabídky mobilního zařízení.
 
-V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidáte ji do existující nabídky. Pracovník skladu pak může vybrat položku nabídky v mobilní aplikaci Řízení skladu.
+V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidáte ji do existující nabídky. Pracovník skladu pak může vybrat položku nabídky v aplikaci skladu.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Mobilní zařízení \> Položky nabídky mobilního zařízení** a ujistěte se, že nabídka mobilního zařízení obsahuje položku nabídky s následujícími nastaveními:
 
@@ -295,7 +296,7 @@ V tomto oddílu vytvoříte položku nabídky pro mobilní zařízení a přidá
 
     Všechna ostatní nastavení lze ponechat ve výchozích hodnotách.
 
-    ![Nastavení položky nabídky mobilních zařízení.](media/inbound-mobile-menu-items.png "Nastavení položky nabídky mobilních zařízení")
+    ![Nastavení položky nabídky mobilních zařízení](media/inbound-mobile-menu-items.png "Nastavení položky nabídky mobilních zařízení")
 
     Další informace o nastavení položek nabídky mobilního zařízení naleznete v tématu [Nastavení mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md).
 
@@ -330,7 +331,7 @@ V tomto postupu můžete ručně vytvořit nákupní objednávku a souvisejíc�
     - Na pevné záložce **Náklad** je pole **Stav nákladu** nastaveno na _Otevřeno_.
     - V části **Řádky nákladu** je k dispozici jediný řádek, ve kterém je pole **Množství** nastaveno na _10_ a pole **Množství vytvořené práce** je nastaveno _0_ (nula).
 
-    ![Podrobnosti o nákladu.](media/inbound-load-details.png "Podrobnosti o nákladu")
+    ![Podrobnosti o nákladu](media/inbound-load-details.png "Podrobnosti o nákladu")
 
 1. V podokně akcí na kartě **Expedovat a přijmout** vyberte **Potvrdit \> Příchozí dodávka**. Povšimněte si, že **Stav nákladu** se změnil na _Expedováno_.
 1. Poznamenejte si hodnotu **ID nákladu**, aby jej bylo možné použít v dalším postupu.
@@ -477,6 +478,3 @@ V tomto scénáři pracovník příjmu připíše množství, které je větš�
     - **Množství** – zadejte hodnotu _7_, což je zbývající množství, pro které má dodavatel oprávnění dodat jako součást celkového množství nákupní objednávky 12 (kde 10 je původní množství objednávky a 2 je povolené navýšení dodávky o 20 procent). Nezapomeňte, že 5 kusů již bylo v rámci prvního nákladu registrováno.
 
 Druhý náklad byl nyní aktualizován o množství 7 a lze aktualizovat příjemku produktu na základě tohoto množství.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
 title: Modelování úsporné organizace
 description: Tento článek obsahuje informace o klíčových konceptech pro modelování úsporné organizace.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3958d21188163fe95e36ba4b8117ae8314b0fd1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 960ba8851810ff528581144ad863772f18f9fa79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570194"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424038"
 ---
 # <a name="modeling-a-lean-organization"></a>Modelování úsporné organizace
 
@@ -51,7 +54,7 @@ Hodnotový proud budoucího stavu může být modelován v aplikaci Dynamics AX 
 
 Samotný hodnotový proud je modelován jako provozní jednotka. Proto lze hodnotový proud použít jako finanční dimenzi.
 
-Další informace o provozních jednotkách naleznete v tématu [Vytvoření provozní jednotky](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
+Další informace o provozních jednotkách naleznete v tématu [Vytvoření provozní jednotky](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Výpočet nákladů pro lean manufacturing podle výrobního toku
 Periodická konsolidace nákladů pro výrobní tok vyrovnává související účet NV a umožňuje určení odchylky pro produkty poskytnuté výrobním tokem.
@@ -64,6 +67,3 @@ K nasazení Lean Manufacturingu jsme zvolili přístup k výrobnímu toku a akti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

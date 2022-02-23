@@ -2,24 +2,27 @@
 title: Přehled výjimek materiálu
 description: Toto téma popisuje, jak získat lepší přehled výjimek surovin pro výrobní zakázky a dávkové objednávky.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3ea260535e76d7ac3d73d4bca930b7b4b2d22b2b2c076d4d1346785eaed85b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726794"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424160"
 ---
 # <a name="visibility-into-material-exceptions"></a>Přehled výjimek materiálu
 
@@ -37,7 +40,7 @@ Nevydaný řádek kusovníku nebo receptury vyžaduje pozornost, pokud datum sur
 
 Na následujícím obrázku představuje modrý panel výrobní úlohu, která je naplánována na zdroji. Počátek úlohy je naplánován na 1. května 2017. Toto datum je datem surovin. Jinými slovy, materiály, které jsou přiřazeny k úloze na řádcích kusovníku a receptury musí být připraveny k tomuto datu. Jiné datum na obrázku, 6. května 2017, představuje datum pracovního prostoru. V tomto příkladu je datum materiálu dřívější než datum pracovního prostoru. Z toho vyplývá, že datum předpokládaného začátku spotřeby materiálu již uplynulo, a řádky kusovníku a řádky receptury splňují kritéria pro vyžadování pozornosti.
 
-![Příklad výrobní úlohy, kde je datum materiálu dřívější než datum pracovního prostoru.](./media/improved-visibility.png)
+![Příklad výrobní úlohy, kde je datum materiálu dřívější než datum pracovního prostoru](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Neuvolněné řádky materiálu vyžadující pozornost
 
@@ -57,17 +60,10 @@ Vyberete-li tuto dlaždici, otevře se stránka **Uvolnit do skladu**. Tato str�
 
 Pokud byl uvolněn řádek kusovníku nebo receptury, je přidán do nové vlny výroby nebo do stávající otevřené vlny, v závislosti na konfiguraci šablony vlny výroby. Při konfiguraci šablony vlny je lze také nastavit vlnu tak, aby se automaticky zpracovala při uvolnění řádku kusovníku nebo receptury. Při zpracování vlny se vytvoří skladová práce vyskladnění surovin. Pokud je šablona vlny nakonfigurována tak, aby nebyly vlny zpracovány v době uvolnění, vlna zůstává v nezpracovaném stavu. Dlaždice **Nezpracované vlny vyžadující pozornost** zobrazuje počet řádků kusovníku a receptury, které byly uvolněny do skladu na nezpracovaných vlnách a které mají datum surovin dřívější nebo stejné jako datum pracovního prostoru. Řádky musí být spotřebovány provozním prostředkem, který se použije na filtrování pracovního prostoru.
 
-Když vyberete tuto dlaždici, otevře se stránka **Všechny vlny výroby**. Tato stránka je filtrována podle počtu otevřených vln, které obsahují řádky z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice.
-
-### <a name="manually-maintain-production-waves"></a>Ruční udržování vln výroby
-
-Na stránce **Všechny vlny výroby** můžete použít tlačítka na kartě **Vlna** podokna akcí pro ruční **Zpracování** a **Uvolnění** vlny. Můžete také použít možnost **Spravovat výroby** k prohlížení a údržbě dat **Fond kusovníku výroby**, která se používají ke zpracování procesu vln.
+Když vyberete tuto dlaždici, otevře se stránka **Všechny vlny výroby**. Tato stránka je filtrována podle počtu otevřených vln, které obsahují řádky z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice. Ze stránky **Všechny vlny výroby** můžete vlnu zpracovat ručně.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Otevřená skladová práce vyžadující pozornost
 
 Dlaždice **Otevřená skladová práce vyžadující pozornost** zobrazuje počet řádků kusovníku a receptury, které byly uvolněny do skladu, mají nezpracovanou práci a které mají datum surovin dřívější nebo stejné jako datum pracovního prostoru. Řádky musí být spotřebovány provozním prostředkem, který se použije na filtrování pracovního prostoru.
 
 Když vyberete tuto dlaždici, otevře se stránka **Veškerá práce**. Tato stránka je filtrována podle počtu otevřených záhlaví práce, které obsahují řádky práce z uvolněných řádků kusovníku a receptury splňujících kritéria dlaždice. Ze stránky **Veškerá práce** můžete práci zpracovat ručně.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

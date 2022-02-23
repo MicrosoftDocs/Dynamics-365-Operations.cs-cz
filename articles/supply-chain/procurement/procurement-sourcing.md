@@ -1,27 +1,28 @@
 ---
 title: Domovská stránka modulu Zásobování a zdroje
 description: V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
-author: Henrikan
+author: mkirknel
+manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "50651"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565488"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424095"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -76,20 +77,21 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Vytvoření opakované nákupní objednávky](tasks/create-repeat-purchase-order.md)
 -   [Vytvoření nákupní objednávky z prodejní objednávky](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Vytvoření nákupní objednávky pro jednorázového dodavatele](tasks/create-purchase-order-one-time-supplier.md)
--   [Vytvoření nákupní objednávky s plánem dodávek](tasks/create-purchase-order-delivery-schedule.md)
+-   [Vytvoření nákupní objednávky s plánem dodávek](tasks/create-purchase-order-delivery-schedule.md)
 -   [Vytvoření nákupní vratky](tasks/create-purchase-return-order.md)
--   [Použití nákupní smlouvy při tvorbě nákupní objednávky](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Vytvoření dílčí nákupní objednávky z nákupní smlouvy](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky](tasks/create-purchase-release-order-creating-purchase-order.md)
 -   [Vytvoření nové zakázky na doplnění stavu zásob dodávky](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Ceny a slevy
 -   [Nákupní smlouvy](purchase-agreements.md)
 -   [Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
--   [Rabaty dodavatele](/dynamics/s-e/) (dokumentace)
+-   [Rabaty dodavatele](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (dokumentace)
 
 ## <a name="product-receipt-and-invoicing"></a>Příjem produktu a fakturace
 -   [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
--   [Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
--   [Účetní profily dodavatele](../../finance/accounts-payable/vendor-posting-profiles.md)
+-   [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Účetní profily dodavatele](../../financials/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 -   [Přehled zásobování a zdrojů](procurement-sourcing-overview.md)
@@ -102,6 +104,3 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

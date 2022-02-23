@@ -2,24 +2,27 @@
 title: Výstupní místo výroby
 description: Toto téma popisuje hierarchii, která se používá k identifikaci výstupního místa výroby.
 author: johanhoffmann
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4c8086e9179ff51f62ce77620af96360c6123060372dfd1c0e06dad79998b75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4002bf7dddb196edf306268ecc16e1bfa5d6d1e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720269"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423994"
 ---
 # <a name="production-output-location"></a>Výstupní místo výroby
 
@@ -37,6 +40,3 @@ Výchozí výstupní místo výroby je nastaveno, když je dokončené vykázán
 4. Pokud zde není nalezeno žádné místo, použijte výstupní místo, které je definováno pro sklad, který je definován pro výrobní zakázku.
 
 Výchozí výstupní místo výroby je nastaveno pouze pro produkty, které se nastavují pomocí rozšířených skladových procesů. Když je tento typ zboží nahlášen jako dokončený, vytvoří se skladová práce typu **Odložení hotového zboží** nebo **Odložení společných a vedlejších produktů**. Tento typ práce používá výstupní místo výroby jako místo pro výdej. Místo pro odložení je určeno směrnicemi místa.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,23 +1,26 @@
 ---
 title: Automatické přidělování poplatků
 description: Funkce poplatků v Microsoft Dynamics 365 Supply Chain Management pomáhá vám automaticky přidělit poplatky nákupním objednávkám nebo prodejním objednávkám.
-author: Henrikan
-ms.date: 09/30/2021
+author: dasani-madipalli
+manager: tfehr
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424113"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatické přidělování poplatků
 
@@ -26,16 +29,6 @@ ms.locfileid: "7592533"
 Na základě zákazníka, se kterým pracujete, nebo položky, kterou prodáváte, možná budete chtít uplatnit konkrétní dodatečné poplatky. Funkce *poplatků* v Microsoft Dynamics 365 Supply Chain Management pomáhá vám automaticky přidělit poplatky nákupním objednávkám nebo prodejním objednávkám.
 
 Automatické náklady, které se nazývají automatické náklady, se používají automaticky při vytváření prodejní nebo nákupní objednávky. Automatické poplatky lze definovat pro konkrétní dodavatele, odběratele, skupiny dodavatelů nebo položek. Můžete také definovat automatické poplatky, které platí pro všechny dodavatele, odběratele nebo položky.
-
-## <a name="set-up-parameters"></a>Nastavit parametry
-
-Stránka **Parametry modulu Zásobování a zdroje** obsahuje několik nastavení, která jsou zvláště důležitá, když chcete přidělit poplatky automaticky. Abyste dokončili toto nastavení, postupujte takto.
-
-1. Přejděte na **Zásobování a zdroje \> Nastavení \> Parametry modulu Zásobování a zdroje**.
-1. Otevřete kartu **Ceny**.
-1. Na záložce **Ceny** proveďte následující nastavení:
-    - **Vyhledat automatické náklady pro záhlaví** - Určuje, zda poplatky pro záhlaví nákupních objednávek mají být automaticky přidělovány. Nastavte na *Ano*, chcete-li používat automatické přidělování poplatků.
-    - **Vyhledat automatické náklady pro řádek** - Určuje, zda poplatky pro řádky nákupních objednávek mají být automaticky přidělovány. Nastavte na *Ano*, chcete-li používat automatické přidělování poplatků.
 
 ## <a name="set-up-charges-codes"></a>Nastavení kódů poplatků
 
@@ -154,7 +147,7 @@ Po nastavení kódů poplatků definujte automatické poplatky podle těchto kro
     - **Web** a **Sklad** - Určete web a sklad, pokud by měly být poplatky účtovány pouze za konkrétní web a sklad.
     - **Ponechat** - zaškrtněte toto pole, chcete-li ponechat transakce poplatků po dokončení fakturace, aby se náklady použily pokaždé, když vytvoříte novou fakturu pro vybraný účet odběratele.
 
-1. **Pouze pro prodejní objednávky:** Pokud chcete vypočítat vrstvené poplatky, viz [Vrstvené poplatky za prodejní objednávky](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) pro informaci.
+1. **Pouze pro prodejní objednávky:** Pokud chcete vypočítat vrstvené poplatky, viz [Vrstvené poplatky za prodejní objednávky](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) pro informaci.
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Přiřaďte poplatky ze záhlaví k řádku
 
@@ -184,6 +177,3 @@ Následující postup ukazuje, jak alokovat poplatky na úrovni záhlaví řádk
         > Když pracujete s mřížkou **Vyberte řádky, které chcete vyloučit z alokace**, ponechte mřížku otevřenou, dokud nevyberete **Přidělit**. Pokud zavřete mřížku před výběrem **Přidělit**, vaše nastavení v mřížce budou ztracena. Proto budou poplatky přidělovány na základě kritérií, která jste dříve definovali.
 
 1. Vyberte **Přidělit**, pokud chcete použít své nastavení a zavřete dialogové okno.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

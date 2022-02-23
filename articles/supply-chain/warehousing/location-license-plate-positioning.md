@@ -2,23 +2,26 @@
 title: Umístění registrační značky místa
 description: Určení pozice registrační značky na skladovém místě umožňuje zjistit, kde se registrační značka nachází na skladovém místě pro více palet, například na skladovém místě využívajícím regály o hloubce na dvě palety.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567600"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424135"
 ---
 # <a name="location-license-plate-positioning"></a>Umístění registrační značky místa
 
@@ -88,7 +91,7 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
 1. Dokud ještě máte vybranou **Registrační značku**, vyberte možnost **Přidat spojení tabulek**.
 1. V zobrazeném seznamu tabulek vyberte ve sloupci **Vztah** hodnotu **Určení pozice registrační značky (registrační značka)**. Poté vyberte možnost **Vybrat** a přidejte **Určení pozice registrační značky** do spojení tabulek **Dimenze zásob**.
 
-    ![Spojení tabulek.](media/LpTableJoin.png "Spojení tabulek")
+    ![Spojení tabulek](media/LpTableJoin.png "Spojení tabulek")
 
 1. Potvrďte aktualizované spojené tabulky kliknutím na **OK** a zavřete editor dotazů.
 1. Na pevné záložce **Akce směrnice skladového místa** znovu vyberte **Upravit dotaz** a znovu otevřete editor dotazů.
@@ -100,7 +103,7 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
     - **Pole:** *Pozice LP*
     - **Kritéria:** *1*
 
-    ![Nová oblast.](media/LpPositionCriteria.png "Nová oblast")
+    ![Nová oblast](media/LpPositionCriteria.png "Nová oblast")
 
 1. Výběrem **OK** potvrďte změny a zavřete editor dotazů.
 
@@ -275,9 +278,6 @@ Po nastavení funkce *Určení pozice registrační značky na skladovém míst�
 1. Na stránce **Naskenujte ID práce / ID registrační značky** vyberte pole **ID** a zadejte ID práce z řádku prodeje.
 1. Všimněte si, že výdejová práce vás nasměruje k výdeji položky *A0002* z místa *01A01R1S2B*. Tuto instrukci obdržíte, protože položka *A0002* je na registrační značce, jež je na daném skladovém místě v pozici *1*.
 
-    ![Pozice 1 skladového místa.](media/LocationLicensePlatePositioning.png "Pozice 1 skladového místa")
+    ![Pozice 1 skladového místa](media/LocationLicensePlatePositioning.png "Pozice 1 skladového místa")
 
 1. Zadejte ID registrační značky vtvořené pro dané skladové místo a poté podle pokynů proveďte výdej prodejní objednávky.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

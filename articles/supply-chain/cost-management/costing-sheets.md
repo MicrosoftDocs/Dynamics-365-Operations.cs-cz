@@ -2,22 +2,29 @@
 title: Nákladové formuláře
 description: Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře.
 author: AndersGirke
-ms.date: 11/18/2021
+manager: tfehr
+ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53201
-ms.search.region: Global
-ms.author: aevengir
+ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64b8a9b8b29193f25e706e52424de2af3454aec8
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825351"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424099"
 ---
 # <a name="costing-sheets"></a>Nákladové formuláře
 
@@ -25,18 +32,9 @@ ms.locfileid: "7825351"
 
 Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře. 
 
-Následující tabulka uvádí předem připravené role zabezpečení, které mají přístup k kalkulacím, včetně úrovně přístupu uděleného každé roli podle výchozího nastavení.
-
-| Role | Přístup
-|---|---|
-| Účetní manažer | Upravit |
-| Úředník na pozici skladového účetního | Zobrazení |
-| Skladový účetní | Zobrazení |
-
 Nákladový formulář představuje způsob formátovaného zobrazení informací o nákladech na prodané zboží pro vyrobenou položku nebo výrobní zakázku. Při nastavení nákladového formuláře definujete formát informací a také základ pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců použitých pro výpočet nepřímých nákladů. Zde jsou další informace o dvou cílech nastavení nákladového formuláře:
-
-- **Definujte formát nákladového formuláře.** Uživatelem definovaný formát nákladového formuláře identifikují segmentaci nákladů, které zahrnují náklady na prodané zboží pro vyráběnou položku. Například informace o nákladech prodaného zboží položky mohou být rozděleny na materiál, práci a režii na základě skupin nákladů. Tyto nákladových skupiny jsou přiřazeny položkám, nákladovým kategoriím pro operace postupu a vzorcům pro výpočet nepřímých nákladů. Formát nákladového formuláře obvykle vyžaduje průběžné součty, pokud bylo definováno více nákladových skupin. Například lze agregovat více nákladových skupin, které se vztahují k materiálu. I když definice formátu nákladového formuláře není povinná, musí být tento formát definován, pokud se budou počítat nepřímé náklady.
-- **Definovat základnu pro výpočet nepřímých nákladů.** Nepřímé náklady odrážejí výrobní režii spojenou se zhotovením výrobku. Vzorec pro výpočet nepřímých nákladů lze vyjádřit jako přirážku nebo jako sazbu. Přirážka představuje procento hodnoty a sazba představuje hodinovou částku pro operaci technologického postupu. Nákladová skupina definuje základnu vzorce pro výpočet, jako je 100% přirážka pro mzdovou nákladovou skupinu nebo hodinovou sazbu ve výši 50,00 USD pro strojovou nákladovou skupinu. Chcete-li definovat vzorec pro výpočet a základ nákladové skupiny, je nutné při nastavení nákladového formuláře určit nákladovou skupinu, která představuje režii, a vybrat, zda se použije přirážka nebo sazba.
+-   **Definujte formát nákladového formuláře.** Uživatelem definovaný formát nákladového formuláře identifikují segmentaci nákladů, které zahrnují náklady na prodané zboží pro vyráběnou položku. Například informace o nákladech prodaného zboží položky mohou být rozděleny na materiál, práci a režii na základě skupin nákladů. Tyto nákladových skupiny jsou přiřazeny položkám, nákladovým kategoriím pro operace postupu a vzorcům pro výpočet nepřímých nákladů. Formát nákladového formuláře obvykle vyžaduje průběžné součty, pokud bylo definováno více nákladových skupin. Například lze agregovat více nákladových skupin, které se vztahují k materiálu. I když definice formátu nákladového formuláře není povinná, musí být tento formát definován, pokud se budou počítat nepřímé náklady.
+-   **Definovat základnu pro výpočet nepřímých nákladů.** Nepřímé náklady odrážejí výrobní režii spojenou se zhotovením výrobku. Vzorec pro výpočet nepřímých nákladů lze vyjádřit jako přirážku nebo jako sazbu. Přirážka představuje procento hodnoty a sazba představuje hodinovou částku pro operaci technologického postupu. Nákladová skupina definuje základnu vzorce pro výpočet, jako je 100% přirážka pro mzdovou nákladovou skupinu nebo hodinovou sazbu ve výši 50,00 USD pro strojovou nákladovou skupinu. Chcete-li definovat vzorec pro výpočet a základ nákladové skupiny, je nutné při nastavení nákladového formuláře určit nákladovou skupinu, která představuje režii, a vybrat, zda se použije přirážka nebo sazba.
 
 Každý vzorec pro výpočet musí být zadán jako záznam o nákladech. Záznam o nákladech je složen z určité nákladové verze, procenta přirážky nebo výše sazby, základu nákladové skupiny, stavu a data platnosti. Při prvním zadání záznamu o nákladech má záznam stav **Čeká na zpracování** a datum platnosti. Pokud záznam nákladů aktivujete, stav se aktualizuje tak, že záznam bude aktuálním aktivním záznamem a datum platnosti se aktualizuje na datum aktivace. Záznam nákladů může také uvádět pracoviště pro výpočetní vzorec specifický pro určitá pracoviště. Případně můžete ponechat pole **Pracoviště** prázdné, což bude značit, že výpočetní vzorec je vzorcem pro celý podnik. Záznam o nákladech se může volitelně skládat ze zadané položky nebo skupiny položek, pokud byl vzorec výpočtu označen jako vzorec pro položku. 
 
@@ -48,4 +46,7 @@ Po definování formátu nákladového formuláře a výpočtu nepřímých nák
 
 Nákladový formulář je zobrazen jako součást stránky **Vypočítat náklady na zboží**. Nákladový formulář lze zobrazit pro záznam o vypočtených nákladech na vyrobenou položku na stránce **Cena položky** nebo pro záznam o výpočtu pro určitou zakázku na stránce **Výsledky výpočtu kusovníku**. Lze jej také zobrazit jako součást stránky **Kalkulace ceny** pro výrobní zakázku.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+

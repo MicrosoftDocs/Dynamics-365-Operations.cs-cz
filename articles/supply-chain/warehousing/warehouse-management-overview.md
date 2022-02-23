@@ -1,24 +1,26 @@
 ---
 title: Řízení skladu – přehled
 description: Pomocí správy skladu můžete sledovat a automatizovat procesy skladu.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/20/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 432004a7389434248ddde242b153dfb3cd955055
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970121"
 ---
 # <a name="warehouse-management-overview"></a>Přehled řízení skladu
 
@@ -71,6 +73,3 @@ Názory, novinky a jiné informace o modulu Řízení skladů a jiných řešen�
 
  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

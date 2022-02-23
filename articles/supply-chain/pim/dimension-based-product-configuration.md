@@ -1,29 +1,30 @@
 ---
 title: Přehled konfigurace produktu založeného na dimenzích
 description: Konfigurace produktu založená na dimenzích představuje jednoduché řešení pro vytváření mnoho variant produktu z jednoho hlavního produktu a příslušných kusovníků.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "19821"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 19821
 ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8811d4a43dba05e63b270893600a622527834901
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 45688f1882d2711cd43b9b7c199f1fca7ff089ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982920"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424014"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Přehled konfigurace produktu založeného na dimenzích
 
@@ -68,7 +69,7 @@ Konfigurační postup určuje pořadí skupin konfigurace, ve kterém se uživat
 Konfigurační pravidla představují mechanismus, který zajišťuje, že produkt zahrnutý v jedné konfigurační skupině v kusovníku vynutí buď zahrnutí, nebo vyloučení produktu v jiné konfigurační skupině ve stejném kusovníku.
 
 ## <a name="product-modeling-process"></a>Proces modelování produktu
-Přirozená sekvence vytváření modelu produktu začíná pro produkty založené na dimenzích určením odpovídajících konfiguračních skupin. Je důležité zajistit, aby se všechny produkty, které se použijí v kusovníku, uvolnily společnosti, pro kterou se model produktu vytváří. Pomocí těchto stavebních bloků může uživatel vytvořit kusovník a přiřadit konfigurační skupiny všem odpovídajícím řádkům kusovníku. Po dokončení kusovníku lze definovat konfigurační postup pro řazení konfiguračních skupin ve správném pořadí. [![Proces modelování produktů na základě dimenzí.](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Pokud existují určité produkty z různých konfiguračních skupin, které musí nebo naopak nemusí být použité společně, můžete vytvořit konfigurační pravidla, která vynutí vztahy mezi těmito výrobky. Poté, co se kusovník provázal se základním produktem založeným na dimenzích pomocí verze kusovníku a oba jsou schválené a aktivované, lze vytvořit konfiguraci produktu zadat název pro každou konfigurace. Konfigurace lze definovat předtím, než se vygenerují transakce, nebo to lze provést, jakmile dojde k potřebě určité konfigurace.
+Přirozená sekvence vytváření modelu produktu začíná pro produkty založené na dimenzích určením odpovídajících konfiguračních skupin. Je důležité zajistit, aby se všechny produkty, které se použijí v kusovníku, uvolnily společnosti, pro kterou se model produktu vytváří. Pomocí těchto stavebních bloků může uživatel vytvořit kusovník a přiřadit konfigurační skupiny všem odpovídajícím řádkům kusovníku. Po dokončení kusovníku lze definovat konfigurační postup pro řazení konfiguračních skupin ve správném pořadí. [![Proces modelování produktu založeného na dimenzích](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Pokud existují určité produkty z různých konfiguračních skupin, které musí nebo naopak nemusí být použité společně, můžete vytvořit konfigurační pravidla, která vynutí vztahy mezi těmito výrobky. Poté, co se kusovník provázal se základním produktem založeným na dimenzích pomocí verze kusovníku a oba jsou schválené a aktivované, lze vytvořit konfiguraci produktu zadat název pro každou konfigurace. Konfigurace lze definovat předtím, než se vygenerují transakce, nebo to lze provést, jakmile dojde k potřebě určité konfigurace.
 
 ### <a name="suggested-use"></a>Předpokládané použití
 
@@ -87,6 +88,3 @@ Následujících osm průvodců záznamem úloh by mělo být dokončeno v pořa
 7.  [Vytváření konfiguračních pravidel](tasks/create-configuration-rules.md)
 8.  [Vytváření konfigurací založených na dimenzích](tasks/create-dimension-based-configurations.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

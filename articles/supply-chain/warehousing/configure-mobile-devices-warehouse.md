@@ -1,26 +1,29 @@
 ---
 title: Nastavení mobilních zařízení pro práci ve skladu
 description: Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902172"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424178"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -41,7 +44,6 @@ Pokud chcete vytvořit položku nabídky pro aktivitu nebo dotaz, nastavte pole 
 > Další pole mohou být k dispozici pro položky nabídky v závislosti na režimu, který vyberete pro položku nabídky a v závislosti na tom, zda položka nabídky slouží k provádění existující práce. Informace o výběru dalších polí naleznete v části „Další možnosti pro položky nabídky“ později v tomto tématu.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurace položek nabídky pro aktivity a dotazy
-
 Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé**, můžete vytvořit položku nabídky pro provádění hlavní aktivity nebo dotazu, který nevytváří práci. Příklady zahrnují opakovaný tisk popisků registrační značky vozidel a dotaz na položky ve skladovém místě. V následující tabulce jsou uvedeny možnosti, které jsou k dispozici.
 
 | Možnost | Popis |
@@ -63,11 +65,12 @@ Pokud pole **Režim** pro položku nabídky je nastaveno na **Nepřímé**, mů�
 | Vymazat mezipaměť číselných řad | Odstraňte čísla z číselné řady z mezipaměti pro pořadová čísla. Tuto aktivitu většinou provádí správce systému a řeší tak potíže při ukládání do mezipaměti během používání mobilních zařízení. |
 | Změnit dispozici dávky | Pracovníkovi povolte zadat dispoziční kód dávky pro položky a dávky. Tato volba aktualizuje dispoziční kód, který je určen pro dávku. |
 | Zobrazit otevřený seznam úkolů | Zobrazení seznamu dostupných prací pro určitého uživatele. Uživatel může vybrat práci, která se má provést, a bude do ní směrován. Tento seznam je určen pro tablety velikost obrazovky 7 palců nebo vyšší. Když vyberete tuto možnost, položky nabídky **Upravit dotaz** a **Seznam polí** budou povoleny. Stránka **Upravit dotaz** vám umožňuje nastavit kritéria pro práci, která se zobrazí v seznamu. Na stránce **Seznam polí** můžete vybrat pole, které se zobrazí v pracovním seznamu. Můžete například snížit počet polí, které jsou zobrazeny a urychlit tak uživateli výběr nejvhodnější pracovní položky. Na pevné záložce **Obecné** v poli **Záznamy na stránku** můžete také vybrat, kolik pracovních záznamů na stránce se zobrazí. Pokud je vybrána možnost **Povolit uživatelům filtrovat práci podle typu transakce**, bude pracovní seznam zahrnovat ovládací prvek **Filtr práce**, který uživatel může použít pro filtrování podle typu transakce. Uživateli se zobrazí jen práce v pracovním seznamu, u které mají oprávnění k přístupu. Je nutné zkontrolovat, zda mají oprávnění pro jednu nebo více uživatelem směrovaných položek v nabídce, které podporují konkrétní typy pracovních tříd, ke kterým by měli mít přístup. Oprávnění se také ověřují při pokusu uživatele o provedení práce ze seznamu.|
-| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z mobilní aplikace Řízení skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
+| Vytvořit převodní příkaz z registrační značky | Umožnuje pracovníkům skladu vytvářet a zpracovávat převodní příkazy přímo z aplikace skladu. Pracovníci skladu začnou výběrem cílového skladu a pak můžou pomocí aplikace naskenovat jednu nebo více registračních značek. Když pracovník skladu vybere **Dokončit objednávku**, vytvoří dávková úloha požadovaný převodní příkaz a řádky příkazu na základě zásob na skladě registrovaných pro tyto registrační značky. Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](create-transfer-order-from-warehouse-app.md).
+
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurace položek nastavení k vytvoření práce pro jiného pracovníka nebo proces
-
 Po provedení počáteční akce pro mobilním zařízení můžete nastavit položku nabídky, která vytvoří práci pro jiného pracovníka. Pokud například jeden pracovník používá mobilního zařízení pro příjem položky, pro jiného zaměstnance se vytvoří pracovní vyskladnění. K nastavení položky nabídky, která vytvoří práci, vyberte na stránce **Položky nabídky mobilního zařízení** v poli **Režim** možnost **Práce**. V následující tabulce jsou možnosti v poli **Proces vytvoření práce** uspořádány podle typu pořadí pracovních činností.
+
 
 <table>
 <tbody>
@@ -249,7 +252,7 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 <li><strong>Pole Ověřený uživatel přesměrován</strong> – vyberte pole, které pracovník naskenuje pro seskupení práce.</li>
 <li><strong>Štítek Ověřený uživatel přesměrován</strong> – zadejte text, který informuje o tom, jakou práci naskenovat při seskupení práce výdeje podle systému.</li>
 </ul>
-Tato možnost je užitečná například po připravení více palet k nákladu. Pokud jste označili <strong>LoadId</strong> v poli <strong>Ověřený uživatel přesměrován</strong>, pracovník může vybrat libovolnou paletu, která je přidružena k nákladu. Pracovník obdrží chybovou zprávu, pokud naskenuje položku, která není&#39; přidružena k nákladu.</td>
+Tato možnost je užitečná například po připravení více palet k nákladu. Pokud jste označili <strong>LoadId</strong> v poli <strong>Ověřený uživatel přesměrován</strong>, pracovník může vybrat libovolnou paletu, která je přidružena k nákladu. Pracovník obdrží chybovou zprávu, pokud naskenuje položku, která není přidružena k nákladu.</td>
 </tr>
 <tr class="odd">
 <td>Výdej seskupení</td>
@@ -368,7 +371,7 @@ Následující tabulka obsahuje popis těchto možností.
 <td>Označte, pokud pracovník musí ve skladovém místě vyskladnit nejprve nejstarší dávku. Existují tyto možnosti:
 <ul>
 <li><strong>Poznámka</strong> – Pracovník může ve skladovém místě vyskladnit jakoukoli dávku. Pracovník neobdrží žádnou zprávu.</li>
-<li><strong>Varovat</strong> – Pracovník můžete ve skladovém místě vyskladnit jakoukoli dávku, ale pokud není&#39; dávka nejstarší, zobrazí se mu varovná zpráva.</li>
+<li><strong>Varovat</strong> – Pracovník můžete ve skladovém místě vyskladnit jakoukoli dávku, ale pokud není dávka nejstarší, zobrazí se mu varovná zpráva.</li>
 <li><strong>Vynutit</strong> – Pracovník musí ve skladovém místě vyskladnit nejstarší dávku. Pracovník obdrží chybovou zprávu, pokud dávka není nejstarší dávkou. <strong>Poznámka:</strong> Tato možnost je relevantní pouze v případě, kdy je v hierarchii rezervace přiřazené k položce <strong>Číslo dávky</strong> nižší než <strong>Umístění</strong>.</li>
 </ul></td>
 </tr>
@@ -407,7 +410,6 @@ Následující tabulka obsahuje popis těchto možností.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Požadovat po zaměstnancích potvrzení výrobku, umístění a množství při vyskladňování zboží
-
 Můžete nastavit potvrzení práce vyžadující po pracovníkovi, aby při práci ve skladu pomocí mobilního zařízení zaregistroval skladové místo nebo množství. Potvrzení práce pomáhá zajistit, aby byl pracovník na správném skladovém místě, nebo aby zpracoval správné množství položek. Můžete také povolit aplikaci Supply Chain Management automaticky potvrdit registraci pracovníka. Pokud zapnete automatické potvrzení, nelze současně požadovat potvrzení skladového místa nebo množství. Pracovní potvrzení bude také zahrnovat produkty a varianty produktů. Kromě toho můžete zaregistrovat potvrzení naskenováním čárového kódu. Pro potvrzení produktů a variant produktů je nutné zadat ID produktu nebo varianty produktu. Může se jednat o ID produktu, ID vyhledávání produktu, externí ID, GTIN nebo čárový kód. Po zadání ID nebo naskenování čárového kódu se v mobilním zařízení zobrazí dimenze pro varianty produktu. 
 
 Následující tabulka popisuje různé typy práce, se kterým můžete použít potvrzení práce.
@@ -427,13 +429,13 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 > [!NOTE]
 > Můžete požádat o potvrzení produktu pouze pro výdej a vložení typů práce.
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
-- [Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka](tasks/set-up-mobile-device-menu.md)
-- [Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-- [Stavy zásob](../inventory/inventory-statuses.md)
+[Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka](tasks/set-up-mobile-device-menu.md)
+
+[Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+
+[Stavy zásob](../inventory/inventory-statuses.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

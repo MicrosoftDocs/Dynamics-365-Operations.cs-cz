@@ -1,32 +1,35 @@
 ---
 title: Řízení pracovníků skladu
-description: Tento článek popisuje, jak mobilní aplikace Řízení skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+description: Tento článek popisuje, jak aplikace skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a3261571f7ba43a79ee42afd8cdfe9b69cb83c01de3e4b2b89d2b0aae668ea2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757511"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424130"
 ---
 # <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak mobilní aplikace Řízení skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+Tento článek popisuje, jak aplikace skladu pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 
 Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
 
@@ -54,6 +57,3 @@ Analýza času který se používá ke zpracování pracovních položek může 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

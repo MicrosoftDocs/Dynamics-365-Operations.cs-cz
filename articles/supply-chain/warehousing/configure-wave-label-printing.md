@@ -1,26 +1,29 @@
 ---
-title: Tisk štítků vlny
+title: Nastavte a použijte tisk popisků vlny
 description: Toto téma popisuje tisk popisků vlny a vysvětluje, jak je nastavit.
-author: perlynne
+author: GarmMSFT
+manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: perlynne
+ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778076"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4424254"
 ---
-# <a name="wave-label-printing"></a>Tisk štítků vlny
+# <a name="set-up-and-use-wave-label-printing"></a>Nastavte a použijte tisk popisků vlny
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +56,7 @@ Tato vylepšení zefektivňují označování kartonů před paletizací. Výhod
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Zapnutí funkce tisku popisků vlny
 
-Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout. Ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) je však tato funkce uvedena následovně:
+Než můžete použít funkci *Tisk popisků vlny*, musíte ji v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Tisk popisků vlny*
@@ -929,10 +932,3 @@ Rozšíření číselných sekvencí řídí dodržování specifických čísel
 - Historie popisků vlny
 
 U většiny těchto stránek najdete příslušnou funkci výběrem **Vlnové štítky** ve skupině **Související informace** na kartě **Zásilky** v podokně akcí.
-
-## <a name="additional-resources"></a>Další prostředky
-
-- [Opakovaný tisk a anulování štítků vlny](reprint-and-void-wave-labels.md)
-- [Naplánujte tisk vlnových štítků během vlny](configure-task-based-wave-label-printing.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

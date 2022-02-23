@@ -2,13 +2,16 @@
 title: Doplnění s kanbany odběru
 description: Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b90e4699c440d0dd753cd16ff17cf958507e7872138a7f2c2c84f645f713d3db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742577"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424129"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
@@ -30,12 +33,13 @@ ms.locfileid: "6742577"
 Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Workflow pro doplnění materiálu používající kanban odběru
+-------------------------------------------------------------------
 
 Kanban odběru lze použít k přesunutí kanbanu jedné položky mezi sklady a výrobními lokalitami, kde se spotřebovává materiál. Kanban odběru podporuje řešení založené na vyžádání doplnění materiálu, kdy je požadována signály vyžádání za účelem aktivace dodávky pro konkrétní poptávky. 
 
 Následující scénář zobrazuje systém doplňování na vyžádání, kde signál vyžádání vyvolá vytvoření kanbanu k doplnění materiálu pro výrobní proces. 
 
-[![Signál vyžádání vyvolá událost vytvoření kanbanu k doplnění materiálu pro výrobní proces.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Signál vyžádání vyvolá událost vytvoření kanbanu k doplnění materiálu pro výrobní proces](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Kanban odběru
 2.  Kanban z místa a umístění pro příjem skladu práce
@@ -72,7 +76,7 @@ Při malé vzdálenost mezi skladovými místy a vstupním místem výroby můž
 
 V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na převod mezi dvěma místy ve stejném skladu. Aktivita převodu kanbanu odběru je nastavena tak, aby se doplnila automaticky. 
 
-[![Automatické doplnění aktivity převodu při zpracování práce výdeje kanbanu.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Automatické doplnění aktivity převodu při zpracování práce výdeje kanbanu](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Sdílený sklad pro suroviny a výrobu
 2.  Skladová místa pro suroviny
@@ -83,6 +87,3 @@ V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na p�
 
 Když se kanban spotřebovává ve vstupním místě výroby, je vykazován jako prázdný signál a do toku je přidán nový kanban stejného typu. Po vytvoření kanbanu se do vlny kanbanu přidá řádek vlny. Při zpracování vlny kanbanu se vytvoří skladová práce vyskladnění kanbanu. Pracovník skladu zpracuje práci pro výdej kanbanu a je nasměrován na výdej materiálu pro kanban ve skladovém místě. Když tento pracovník skladu potvrdí vyskladnění, kanban bude automaticky doplněn a pracovník skladu dostane pokyn k vložení materiálu do vstupního skladového místa.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

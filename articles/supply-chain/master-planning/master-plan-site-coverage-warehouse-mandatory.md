@@ -1,27 +1,30 @@
 ---
 title: Hlavní plánování pro disponibilitu pracoviště, povinný sklad
 description: Toto téma popisuje, jak je plánována položka, která má pracoviště jako dimenzi disponibility. Sklad je povinná dimenze.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 2454
 ms.assetid: aa135030-f98c-48bf-902c-e52f680dc247
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbc73911fcb3e0b0515f490f9f1236b4a12c648
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b1890f14351734c26952511f6245efe4cce5f3e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573708"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424048"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Hlavní plánování pro disponibilitu pracoviště, povinný sklad
 
@@ -41,11 +44,12 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 -   Pro sklad jsou definovány vztahy doplnění. Klikněte postupně na možnosti **Řízení zásob &gt; Nastavení &gt; Rozdělení zásob &gt; Sklady**. Na kartě **Hlavní plánování** se podívejte do skupiny polí **Hlavní sklad**.
 -   Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Vyberte položku a poté klikněte na volbu **Plán &gt; Výchozí nastavení objednávky**. Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.
 
-![Požadavek na disponibilitu skladu pracoviště je povinný.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
+![Požadavek na disponibilitu skladu pracoviště je povinný](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
 
 
-## <a name="additional-resources"></a>Další prostředky
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Přehled hlavního plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 
@@ -59,6 +63,3 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

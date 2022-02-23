@@ -2,9 +2,11 @@
 title: Úprava buněk definice řádku
 description: Toto téma popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 author: ShylaThompson
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344878"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685852"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
@@ -174,7 +176,7 @@ Ve sloupci **Kód formátu** v definici řádku kódy formátu **DES**, **LFT**,
 
 V následujícím příkladu chce uživatel zabránit vytištění záhlaví a podtržení v řádku **Hotovost celkem** ve své sestavě, protože nebyla zaznamenána žádná aktivita v žádném z pokladních účtů. Proto uživatel v řádku 220 (který je podle kódu formátu **---** řádkem formátování) v buňce **Související vzorce/řádky/jednotky** zadá **250**, což je kód řádku s částkou, který chce potlačit.
 
-[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Výběr základního řádku pro výpočet sloupce
 V relačním vykazování přiřadíte jeden nebo více základních řádků v definici řádku pomocí kódu formátu **CBR** (změna základního řádku). Na základní řádek se pak odkazují výpočty v definicích sloupců. Zde jsou některé typické příklady výpočtů CBR:
@@ -399,7 +401,7 @@ Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, kter�
 2. Dvakrát klikněte na některou buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V dialogovém okně **Dimenze** dvakrát klikněte na buňku pod názvem dimenze.
 4. V dialogovém okně pro dimenzi vyberte položku **Jednotlivec nebo rozsah**.
-5. Do pole **Od** zadejte počáteční dimenzi nebo klikněte na ![Procházet.](media/browse.gif "Procházet") pro vyhledání dostupných dimenzí. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
+5. V poli **Od** zadejte počáteční dimenzi nebo klikněte na tlačítko ![Procházet](media/browse.gif "Procházet") a vyhledejte dostupné dimenze. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
 6. Kliknutím na tlačítko **OK** zavřete dialogové okno pro dimenzi. Dialogové okno **Dimenze** zobrazuje aktualizovanou dimenzi nebo rozsah.
 7. Kliknutím na tlačítko **OK** zavřete dialogové okno **Dimenze**.
 
@@ -527,6 +529,3 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 ## <a name="additional-resources"></a>Další prostředky
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

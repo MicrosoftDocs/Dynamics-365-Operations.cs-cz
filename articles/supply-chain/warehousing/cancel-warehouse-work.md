@@ -1,24 +1,27 @@
 ---
 title: Zrušení práce skladu pro zpracování výjimek
 description: V tomto tématu je popsána funkce zrušení práce, která vedoucímu skladu umožňuje blokovat práci.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af0c147eefbfe22cb6b6d531f514e6f293d66689
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572402"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424175"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Zrušení práce skladu pro zpracování výjimek
 
@@ -42,6 +45,3 @@ Pomocí funkce Zrušit práci lze zrušit pouze práci typu **Prodej**, **Probl�
 Chcete-li odblokovat práci, systém zruší všechny zbývající řádky práce a opraví data skladu přidružená k ID práce, kterou daný uživatel určil. Všechny běžné operace zpracování skladu, které zahrnují ovlivněné množství zboží, mohou být opět obnoveny.
 
 Chcete-li po zrušení práce vložit ovlivněnou položku do určitého umístění, musí uživatel použít operaci pohybu zásob nebo úpravy množství v mobilním zařízení.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

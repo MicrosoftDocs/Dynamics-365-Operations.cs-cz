@@ -2,28 +2,30 @@
 title: Rozvržení směrování dokumentu pro popisky poznávací značky
 description: V tomto tématu je popsán způsob použití metod formátování k tisku hodnot na štítcích.
 author: perlynne
+manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 5311c13154baafdc7225ee869b3ef524eecc0d00
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778346"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424150"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rozvržení směrování dokumentu pro popisky poznávací značky
 
 [!include [banner](../includes/banner.md)]
-
 
 Rozvržení směrování dokumentu definuje rozvržení popisků řidičských průkazů a dat, která jsou na nich vytištěna. Body aktivace tisku se nastavují při nastavení položek nabídky mobilního zařízení a pracovních šablon.
 
@@ -51,10 +53,6 @@ Chcete-li zobrazit hodnoty, které budou vytištěny, přejděte na **Řízení 
 
 Několik široce dostupných nástrojů pro generování štítků vám může pomoci formátovat text pro rozvržení štítků. Mnohé z těchto nástrojů podporují `$FieldName$` formát. Kromě toho Microsoft Dynamics 365 Supply Chain Management používá speciální logiku formátování jako součást mapování polí pro rozložení směrování dokumentu.
 
-## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
-
-Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Vylepšené rozvržení popisků poznávacích značek*. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
-
 ## <a name="custom-number-formats"></a>Vlastní formáty čísel
 
 Formátování hodnot číselných polí, které jsou vytištěny pomocí kódů s následujícím formátem, lze přizpůsobit.
@@ -73,7 +71,7 @@ Následující příklady ukazují, jak lze upravit pole pracovní množství (*
 - Chcete-li vždy zobrazit čtyři číslice (pomocí nul jako zástupné symboly), použijte `$Qty:0000$`. Pokud je například množství 10, štítek zobrazí "0010".
 - Chcete-li vždy zobrazit dvě desetinná místa, použijte možnost `$Qty:0.00$`. Pokud je například množství 10, štítek zobrazí "10.00".
 
-Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](/dotnet/standard/base-types/custom-numeric-format-strings).
+Úplný seznam dostupných formátovacích řetězců čísel naleznete v tématu [Vlastní číselné formátovací řetězce](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Formáty vlastních řetězců
 
@@ -95,7 +93,7 @@ $PrintedDate:dd-MM-yyyy$
 
 V tomto příkladu bude datum 30. dubna 2020 vytisknuto jako "30-04-2020".
 
-Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Úplný seznam dostupných formátů data/času naleznete v tématu [Vlastní formátovací řetězce data/času](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Tisk jednotlivých řádků z víceřádkových dat
 
@@ -138,6 +136,3 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Další informace o tisku štítků
 
 Další informace o nastavení a tisku štítků naleznete v tématu [Povolení tisku štítků registračních značek](tasks/license-plate-label-printing.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

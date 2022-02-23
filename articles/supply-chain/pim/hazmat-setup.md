@@ -1,33 +1,37 @@
 ---
 title: Příprava nebezpečných materiálů
 description: Toto téma vysvětluje, jak nastavit data potřebná ke klasifikaci položek jako nebezpečných materiálů. Když vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4423998"
 ---
 # <a name="set-up-hazardous-materials"></a>Příprava nebezpečných materiálů
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Chcete-li používat funkce nebezpečných materiálů, musíte nejprve nastavit data, která jsou požadována ke klasifikaci položek jako nebezpečných materiálů. Poté, dyž vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Zapnutí funkce nebezpečných materiálů v systému
 
-Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul**: *Řízení informací o produktech*
 - **Název funkce** *Informace o produktu s nebezpečnými materiály a dokumentace expedice*
@@ -280,6 +284,3 @@ Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení infor
 Specifikace *Tunel pro nebezpečný materiál* omezuje typy tunelů, kterými lze přepravovat nebezpečný materiál, určením typů tunelů, které musí být použity. Kategorie tunelů jsou stanoveny příslušnými předpisy pro přepravu nebezpečných materiálů. Tato specifikace se obvykle vztahuje pouze na silniční dopravu.
 
 Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení informací o produktech \> Nastavení \> Dokumentace expedice nebezpečného materiálu \> Tunel pro nebezpečný materiál**. Na stránce **Tunel pro nebezpečný materiál** můžete vytvořit libovolný počet identifikátorů tunelů a každý nakonfigurovat s identifikačním kódem a krátkým popisem.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

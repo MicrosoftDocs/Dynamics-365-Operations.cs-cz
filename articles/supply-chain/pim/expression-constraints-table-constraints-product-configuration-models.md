@@ -1,27 +1,30 @@
 ---
 title: Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 description: Toto téma popisuje použití omezení výrazu a omezení tabulky. Omezení řídí hodnoty atributů, které jsou k dispozici při konfiguraci produktů pro prodejní nabídku, nákupní objednávku nebo výrobní zakázku. Můžete použít omezení výrazu nebo omezení tabulky v závislosti na tom, jak chcete vytvářet omezení.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8775a9225313c0f5a132dbccbe583470fe23beab
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570722"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424011"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
@@ -123,7 +126,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nebo</td>
+<td>nebo</td>
 <td>To platí při splnění libovolné podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nepravda</strong>.</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
@@ -132,7 +135,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kladný</td>
+<td>Plus</td>
 <td>Sečte podmínky. Pokud je počet podmínek 0 (nula), výsledkem je <strong>0</strong>.</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
@@ -141,7 +144,7 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Záporný</td>
+<td>Minus</td>
 <td>Argumenty se negují. Musí mít právě jednu podmínku.</td>
 <td>Minus[expr], infix: -expr</td>
 <td><ul>
@@ -150,47 +153,47 @@ V následujících tabulkách jsou uvedeny operátory a infixový zápis, které
 </ul></td>
 </tr>
 <tr class="even">
-<td>Funkce ABS</td>
+<td>Abs</td>
 <td>Vezme absolutní hodnotu podmínky. Musí mít právě jednu podmínku.</td>
-<td>ABS [výraz]</td>
+<td>Abs[expr]</td>
 <td><strong>Operátor:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>Časy</td>
 <td>Vezme násobek podmínek. Pokud je počet podmínek 0 (nula), výsledkem je <strong>1</strong>.</td>
-<td>Krát[args], infix: a * b * ... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Doby[x, y, 2] == z</li>
+<li><strong>Operátor:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infixový zápis:</strong> x * y * 2 == z</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Výkon</td>
-<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
+<td>Vezme mocninu. Umocňuje se zprava doleva. (Jinými slovy je zprava asociativní.) Proto je <strong>Power[a, b, c]</strong> ekvivalentní k <strong>Power[a, Power[b, c]]</strong>. <strong>Výkon</strong> lze použít pouze s exponentem jako kladnou konstantou.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
-<li><strong>Operátor:</strong> Výkon[x, 2] == y</li>
+<li><strong>Operátor:</strong> Power[x, 2] == y</li>
 <li><strong>Infixový zápis:</strong> x ^ 2 == y</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Maximum</td>
 <td>Výsledkem je největší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Max[argumenty]</td>
+<td>Max[args]</td>
 <td><strong>Operátor:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>Minimum</td>
 <td>Výsledkem je nejmenší podmínka. Pokud je počet podmínek 0 (nula), výsledkem je <strong>nekonečno</strong>.</td>
-<td>Min[argumenty]</td>
+<td>Min[args]</td>
 <td><strong>Operátor:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>Ne</td>
 <td>Výsledkem logický opak podmínky. Musí mít právě jednu podmínku.</td>
-<td>Ne[expr], infix: !expr</td>
+<td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operátor:</strong> Ne[x] &amp; Ne[y == 3]</li>
+<li><strong>Operátor:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixový zápis:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -219,7 +222,7 @@ V následující tabulce jsou uvedeny příklady, jak zapsat infixový zápis.
 |        (x)        |                           Závorky ruší výchozí priority.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Proč nejsou má omezení výrazu vyhodnocena správně?
-Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Tento seznam obsahuje rezervovaná klíčová slova, která nelze použít:
+Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu.Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:
 
 -   Horní mez
 -   Prvek
@@ -242,7 +245,8 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 -   Cíl
 
 
-## <a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další zdroje
+--------
 
 [Vytvoření omezení výrazu](tasks/add-expression-constraint-product-configuration-model.md)
 
@@ -250,6 +254,3 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
