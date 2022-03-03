@@ -1,12 +1,10 @@
 ---
 title: Typ cílového umístění elektronického výkaznictví e-mailu
-description: Toto téma vysvětluje, jak konfigurovat e-mailový cíl pro každou komponentu SLOŽKA nebo SOUBOR formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů.
+description: Toto téma vysvětluje, jak nakonfigurovat cíl e-mailu pro každou SLOŽKU nebo SOUBOR ve formátu elektronického výkaznictví (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690119"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324001"
 ---
 # <a name="email-er-destination-type"></a>Typ cílového umístění elektronického výkaznictví e-mailu
 
@@ -44,28 +42,59 @@ Můžete také [seskupit](#grouping) několik komponent typu **Složka** nebo **
 
 Pro jednu konfiguraci formátu ER lze konfigurovat více skupin komponent. Tímto způsobem můžete konfigurovat e-mailový cíl pro každou skupinu komponent a e-mailový cíl pro každou komponentu.
 
+## <a name="enable-an-email-destination"></a>Povolení cílového místa e-mailu
+
+Chcete -li odeslat jeden nebo více výstupních souborů e -mailem, postupujte takto.
+
+1. Na stránce **Místo určení elektronického výkaznictví** na pevné záložce **Cíl souboru** vyberte komponent nebo skupinu komponentů v mřížce.
+2. Vyberte **Nastavení** a pak v dialogovém okně **Nastavení cíle** na kartě **E-mail** nastavte možnost **Povoleno** možnost na **Ano**.
+
+[![Nastavení možnosti Povoleno na Ano pro e-mailový cíl.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+
 ## <a name="configure-an-email-destination"></a>Konfigurace e-mailového cíle
 
-Chcete-li odeslat výstupní soubor nebo několik výstupních souborů e-mailem, vyberte na stránce **Místo určení elektronického výkaznictví** na rychlé záložce **Cíl souboru** komponentu nebo skupinu komponent v mřížce, a poté vyberte **Nastavení**. V zobrazeném dialogovém okně **Nastavení cíle** na kartě **E-mail** nastavte možnost **Povoleno** možnost na **Ano**. Poté můžete zadat příjemce e-mailů a upravit předmět a tělo e-mailové zprávy. Můžete nastavit buď konstantní text pro předmět a tělo e-mailu, nebo můžete použít [vzorce](er-formula-language.md) elektronického výkaznictví k dynamickému vytvoření textů e-mailů.
+### <a name="email-content"></a>Obsah e-mailu
 
-E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem, jakým ji dokončí funkce správy tisku, nebo můžete e-mailovou adresu vyřešit přímým odkazem na konfiguraci elektronického výkaznictví pomocí vzorce.
+Předmět a text e-mailové zprávy můžete upravit.
 
-[![Nastavení možnosti Povoleno na Ano pro e-mailový cíl](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+Do pole **Předmět** zadejte text předmětu e-mailu, který by se měl objevit v poli předmětu elektronické zprávy generované za běhu. Do pole **Text** zadejte text e-mailu, který by se měl objevit v poli text elektronické zprávy generované za běhu. Můžete nastavit konstantní text pro předmět a tělo e-mailu nebo můžete použít [vzorce](er-formula-language.md) elektronického výkaznictví k dynamickému vytvoření textů e-mailů za běhu. Konfigurovaný vzorec musí vrátit hodnotu typu [Řetězec](er-formula-supported-data-types-primitive.md#string).
+
+Text vašeho e-mailu je složeno ve formátu TEXT nebo HTML v závislosti na e-mailovém klientovi. Můžete použít libovolné rozvržení, styl a značky, které HTML a vložené šablony stylů CSS umožňují.
+
+> [!NOTE]
+> E-mailoví klienti mají omezení rozložení a stylu, která mohou vyžadovat úpravy HTML a CSS stylů, které používáte pro tělo zprávy. Doporučujeme vám seznámit se s osvědčenými postupy vytváření HTML, které budou podporovat nejoblíbenější e-mailoví klienti.
+>
+> Použijte správné kódování k implementaci návratu na začátek řádku v závislosti na formátování těla. Další informace najdete v definici datového typu [Řetězec](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-mailové adresy
+
+Můžete zadat odesílatele e-mailu a příjemce e-mailu. Ve výchozím nastavení je e-mail odeslán jménem aktuálního uživatele. Chcete-li zadat jiného odesílatele e -mailu, musíte nakonfigurovat pole **Odesílatel**.
+
+> [!NOTE]
+> Když je nakonfigurován cíl e-mailu, pole **Odesílatel** je viditelné pouze uživatelům, kteří mají bezpečnostní oprávnění `ERFormatDestinationSenderEmailConfigure` **Nakonfigurujte e-mailovou adresu odesílatele pro cíle formátu ER**.
+>
+> Když je cíl e-mailu nabídnut k úpravám za [běhu](electronic-reporting-destinations.md#security-considerations), pole **Odesílatel** je viditelné pouze uživatelům, kteří mají bezpečnostní oprávnění  `ERFormatDestinationSenderEmailMaintain` **Nakonfigurujte e-mailovou adresu odesílatele pro cíl formátu ER**.
+>
+> Když je pole **Odesílatel** nakonfigurováno tak, aby používalo jinou e-mailovou adresu, než je adresa aktuálního uživatele, musí být oprávnění **Odeslat jako** nebo **Odeslat jménem** správně [nastaveno](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) dopředu. Jinak je za běhu vyvolána následující výjimka: „Nelze odeslat e-mail jako \<from email account\> z účtu \<current user account\>, zkontrolujte prosím oprávnění „Odeslat jako“ na \<from email account\>."
+
+Můžete nakonfigurovat pole **Odesílatel** pro vrácení více než jedné e-mailové adresy. V tomto případě se jako adresa odesílatele e-mailu použije první adresa v seznamu.
+
+Chcete-li určit příjemce e-mailu, musíte nakonfigurovat pole **Příjemce** a **Kopie** (nepovinné).
+
+E-mailové adresy pro ER lze konfigurovat dvěma způsoby. Konfiguraci lze dokončit stejným způsobem jako funkce správy tisku, nebo můžete e-mailovou adresu vyřešit přímým odkazem na konfiguraci elektronického výkaznictví pomocí vzorce.
 
 ## <a name="email-address-types"></a>Typy e-mailových adres
 
-Pokud vyberete možnost **Upravit** vedle pole **Komu** nebo **Kopie** v dialogovém okně **Nastavení cíle**, zobrazí se dialogové okno **E-mail – komu**. Vyberte možnost **Přidat** a poté zvolte typ e-mailové adresy, který použijete. Aktuálně jsou podporovány dva typy: **Správa tisku – e-mail** a **Konfigurační e-mail**.
+Pokud vyberete možnost **Upravit** vedle pole **Odesílatel**, **Příjemce** nebo **Kopie** v dialogovém okně **Nastavení cíle**, zobrazí se příslušné dialogové okno **Odesílatel e-mailu**, **Příjemce e-mailu** nebo **Kopie e-mailu**. Zde můžete nakonfigurovat odesílatele e-mailu a příjemce e-mailu. Vyberte možnost **Přidat** a poté zvolte typ e-mailové adresy, který použijete. Aktuálně jsou podporovány dva typy: **Správa tisku – e-mail** a **Konfigurační e-mail**.
 
-[![Výběr typu e-mailové adresy](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Výběr typu e-mailové adresy.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Správa tisku – e-mail
 
-Pokud vyberete jako typ e-mailové adresy možnost **Správa tisku – e-mail**, můžete zadat pevné e-mailové adresy v dialogovém okně **E-mail – komu** nastavením následujících polí:
+Pokud vyberete jako typ e-mailové adresy možnost **Správa tisku – e-mail**, můžete zadat pevné e-mailové adresy v dialogovém okně **Odesílatel e-mailu**, **Příjemce e-mailu** nebo **Kopie e-mailu** nastavením následujících polí:
 
 - V poli **Zdroj e-mailu** vyberte možnost **Žádný**.
 - V poli **Další e-mailové adresy oddělené znakem „;“** zadejte pevné e-mailové adresy.
-
-![Konfigurace pevné e-mailové adresy](./media/er_destinations-emailfixedaddress.png)
 
 Alternativně můžete e-mailové adresy získat z kontaktních údajů strany, pro kterou generujete odchozí dokument. Pro použití jiných než pevných e-mailových adres je nutné vybrat v poli **Zdroj e-mailu** [roli](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) strany pro cíl souboru. Podporovány jsou následující role:
 
@@ -78,6 +107,7 @@ Alternativně můžete e-mailové adresy získat z kontaktních údajů strany, 
 - Uchazeč
 - Potenciální dodavatel
 - Zakázaný dodavatel
+- Právnická osoba
 
 Chcete-li například konfigurovat e-mailový cíl pro formát ER, který se používá ke zpracování plateb dodavatele, vyberte roli **Dodavatel**.
 
@@ -88,11 +118,9 @@ Po výběru požadované role vyberte tlačítko **Vazba** (symbol řetězu) ved
 
 Na stránce **Návrhář vzorců** zadejte v poli **Vzorec** odkaz na podporovanou roli pro konkrétní dokument. Namísto psaní odkazu v podokně **Zdroj dat** vyhledejte a vyberte uzel zdroje dat, který představuje účet nakonfigurované role, a poté výběrem položky **Přidat zdroj dat** aktualizujte vzorec. Například pokud konfigurujete e-mailový cíl pro konfiguraci **Platební převod ISO 20022**, která se používá ke zpracování plateb dodavatele, je uzlem představujícím účet dodavatele uzel `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Konfigurace účtu zdroje e-mailu](./media/er_destinations-emaildefineaddresssource.gif)
+![Konfigurace účtu zdroje e-mailu.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Pokud jsou čísla účtů konfigurované role jedinečná pro celou instanci Microsoftu Dynamics 365 Finance, může pole **Společnost zdroje e-mailu** v dialogovém okně **E-mail – komu** zůstat prázdné.
-
-![Prázdné pole Společnost zdroje e-mailu](./media/er_destinations-emaildefineaddresssourceformula.png)
 
 Případně může dojít k situaci, kdy různé strany v [Globálním adresáři](../../fin-ops/organization-administration/overview-global-address-book.md) byly registrovány v různých společnostech ([právnických osobách](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) takovým způsobem, že všichni používají stejné číslo účtu k vyplnění konfigurované role. V tomto případě nejsou čísla účtů pro konfigurovanou roli jedinečná pro celou instanci Finance. Chcete-li tedy explicitně vybrat stranu, nemůžete zadat pouze číslo účtu. Musíte také zadat společnost, ve které byla strana zaregistrována, abyste mohli naplnit konfigurovanou roli. Vyberte tlačítko **Vazba** (symbol řetězu) vedle pole **Společnost zdroje e-mailu** v dialogovém okně **E-mail – komu** a otevřete tak stránku [Návrhář vzorců](general-electronic-reporting-formula-designer.md). Na této stránce pak můžete konfigurovat vzorec, který za běhu vrátí kód společnosti, jejíž požadovaný zdroj musí být nalezen v rozsahu.
 
@@ -110,13 +138,11 @@ Chcete-li určit typ e-mailových adres, které musí být použity za běhu, vy
 > [!NOTE]
 > Pokud jsou v poli **Účel** vybrány účely a současně je možnost **Primární kontakt** nastavena na **Ano**, bude za běhu použit každá e-mailová adresa, která splňuje alespoň jedno konfigurované kritérium.
 
-![Konfigurace účtu atributů zdroje e-mailu](./media/er_destinations-emaildefineaddresssourceattributes.png)
-
 ### <a name="configuration-email"></a>Konfigurační e-mail
 
-Vyberte **Konfigurační e-mail** jako typ e-mailové adresy, pokud má vámi používaná konfigurace uzel ve zdrojích dat, který vrací buď jednu e-mailovou adresu, nebo více e-mailových adres oddělených středníkem (;). V návrháři vzorců můžete použít [zdroje dat](general-electronic-reporting.md#FormatComponentOutbound) a [funkce](er-formula-language.md#functions), abyste získali správně naformátovanou e-mailovou adresu nebo správně naformátované e-mailové adresy, které jsou odděleny středníky. Například pokud používáte konfiguraci **Platební převod ISO 20022**, měl by se uzel představující primární e-mailovou adresu dodavatele z kontaktních údajů dodavatele, na který by měl být zaslán průvodní dopis, jmenovat `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Vyberte **Konfigurační e-mail** jako typ e-mailové adresy, pokud má vámi používaná konfigurace uzel ve zdrojích dat, který vrací buď jednu e-mailovou adresu, nebo více e-mailových adres oddělených středníkem (;). V návrháři vzorců můžete použít zdroje dat a [funkce](er-formula-language.md#Functions), abyste získali správně naformátovanou e-mailovou adresu nebo správně naformátované e-mailové adresy, které jsou odděleny středníky. Například pokud používáte konfiguraci **Platební převod ISO 20022**, měl by se uzel představující primární e-mailovou adresu dodavatele z kontaktních údajů dodavatele, na který by měl být zaslán průvodní dopis, jmenovat `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Konfigurace zdroje e-mailové adresy](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Konfigurace zdroje e-mailové adresy.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Seskupení komponent formátu
 
@@ -134,14 +160,17 @@ Chcete-li zrušit seskupení komponent formátu, vyberte na rychlé záložce **
 
 Následující obrázek ukazuje strukturu formátu ER, který byl konfigurován tak, aby vytvářel odchozí komprimovaný soubor, který obsahuje upomínku a příslušné faktury odběratele ve formátu PDF.
 
-[![Struktura formátu ER, který generuje odchozí dokumenty](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktura formátu ER, který generuje odchozí dokumenty.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Následující obrázek ukazuje proces seskupování jednotlivých komponent, popsaný v tomto tématu, a povolení cíle typu **E-mail** pro novou skupinu, aby byl dopis s upomínkou odeslán společně s příslušnými fakturami odběratelem, které jsou ke zprávě přiloženy.
 
-[![Seskupení jednotlivých komponent a povolení e-mailového cíle](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Seskupení jednotlivých komponent a povolení e-mailového cíle.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

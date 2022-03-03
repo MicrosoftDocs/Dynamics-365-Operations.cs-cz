@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571706"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103088"
 ---
 # <a name="category-requests-from-vendors"></a>Požadavky kategorií od dodavatelů
 
@@ -26,11 +26,11 @@ Proces žádosti o kategorii umožňuje, aby prodejci požadovali přidružení 
 
 Žádosti o kategorii iniciují prodejci v pracovním prostoru **Informace o prodejci**. Poté jsou odeslány vaší agentuře ke kontrole a schválení. Schválené kategorie se přidají do seznamu kategorií zásobování pro účet dodavatele.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce požadavků na kategorie od dodavatelů
 
-Pokud váš systém ještě neobsahuje funkci popsanou v tomto tématu, přejděte na [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Umožnit dodavatelům žádat o kategorie zásobování prostřednictvím spolupráce s dodavateli*.
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Umožnit dodavatelům žádat o kategorie zásobování prostřednictvím spolupráce s dodavateli* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Po zapnutí této funkce můžete do účtů dodavatelů stále ručně přidávat kategorie zásobování. Pro informace viz [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
+Pokud je funkce zapnuta, můžete do účtů dodavatelů stále ručně přidávat kategorie zásobování. Pro informace viz [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## <a name="vendor-collaboration-requirements"></a>Požadavky na schválení dodavatele
 

@@ -2,26 +2,23 @@
 title: Umístění registrační značky místa
 description: Určení pozice registrační značky na skladovém místě umožňuje zjistit, kde se registrační značka nachází na skladovém místě pro více palet, například na skladovém místě využívajícím regály o hloubce na dvě palety.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424135"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102782"
 ---
 # <a name="location-license-plate-positioning"></a>Umístění registrační značky místa
 
@@ -33,12 +30,9 @@ Tato funkce přidá pořadové číslo ke každé registrační značce vložen�
 
 Toto téma představuje scénář, který ukazuje, jak tuto funkci nastavit a používat.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Zapnutí funkce Určení pozice registrační značky na skladovém místě
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Určení pozice registrační značky na skladovém místě
 
-Než můžete použít funkci Určení pozice registrační značky na skladovém místě, musíte ji v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Určení pozice registrační značky na skladovém místě*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Umístění registrační značky místa*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Umístění registrační značky místa* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Příklad
 
@@ -91,7 +85,7 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
 1. Dokud ještě máte vybranou **Registrační značku**, vyberte možnost **Přidat spojení tabulek**.
 1. V zobrazeném seznamu tabulek vyberte ve sloupci **Vztah** hodnotu **Určení pozice registrační značky (registrační značka)**. Poté vyberte možnost **Vybrat** a přidejte **Určení pozice registrační značky** do spojení tabulek **Dimenze zásob**.
 
-    ![Spojení tabulek](media/LpTableJoin.png "Spojení tabulek")
+    ![Spojení tabulek.](media/LpTableJoin.png "Spojení tabulek")
 
 1. Potvrďte aktualizované spojené tabulky kliknutím na **OK** a zavřete editor dotazů.
 1. Na pevné záložce **Akce směrnice skladového místa** znovu vyberte **Upravit dotaz** a znovu otevřete editor dotazů.
@@ -103,7 +97,7 @@ Funkci je nutné zapnout v profilu skladového místa pro každé skladové mí
     - **Pole:** *Pozice LP*
     - **Kritéria:** *1*
 
-    ![Nová oblast](media/LpPositionCriteria.png "Nová oblast")
+    ![Nová oblast.](media/LpPositionCriteria.png "Nová oblast")
 
 1. Výběrem **OK** potvrďte změny a zavřete editor dotazů.
 
@@ -278,6 +272,9 @@ Po nastavení funkce *Určení pozice registrační značky na skladovém míst�
 1. Na stránce **Naskenujte ID práce / ID registrační značky** vyberte pole **ID** a zadejte ID práce z řádku prodeje.
 1. Všimněte si, že výdejová práce vás nasměruje k výdeji položky *A0002* z místa *01A01R1S2B*. Tuto instrukci obdržíte, protože položka *A0002* je na registrační značce, jež je na daném skladovém místě v pozici *1*.
 
-    ![Pozice 1 skladového místa](media/LocationLicensePlatePositioning.png "Pozice 1 skladového místa")
+    ![Pozice 1 skladového místa.](media/LocationLicensePlatePositioning.png "Pozice 1 skladového místa")
 
 1. Zadejte ID registrační značky vtvořené pro dané skladové místo a poté podle pokynů proveďte výdej prodejní objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,22 @@
 title: Potvrdit odchozí dodávky z dávkových úloh
 description: Toto téma popisuje, jak nastavit dávkovou úlohu, která automaticky potvrzuje odchozí zásilky převodu objednávek pro zatížení připravená k odeslání.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423578"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103908"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Potvrdit odchozí dodávky z dávkových úloh
 
@@ -28,12 +25,9 @@ ms.locfileid: "4423578"
 
 Toto téma popisuje, jak nastavit dávkovou úlohu, která automaticky potvrzuje odchozí zásilky převodu objednávek pro zatížení připravená k odeslání. Zde popsaná dávková úloha se vztahuje pouze na přepravu objednávek, nikoli na prodejní objednávky.
 
-## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Povolte funkci Potvrdit odchozí zásilky z dávkových úloh
+## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Potvrdit odchozí zásilky z dávkových úloh
 
-Než budete moci použít tuto funkci, musíte ji povolit ve svém systému. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
-
-- **Modul** - *Řízení skladu*
-- **Název funkce** - *Potvrdit odchozí zásilky z dávkových úloh*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Potvrdit odchozí zásilky z dávkových úloh*. Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Potvrdit odchozí zásilky z dávkových úloh* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Zpracovat odchozí dodávky
 
@@ -54,3 +48,6 @@ Chcete-li nastavit naplánovanou dávkovou úlohu pro spuštění potvrzení odc
 1. Vyberte **OK** v dialogovém okně **Potvrďte odeslání** pro přidání dávkové úlohy do dávkové fronty.
 
 Další informace viz [Přehled dávkového zpracování](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

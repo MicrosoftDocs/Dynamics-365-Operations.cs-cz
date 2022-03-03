@@ -1,27 +1,24 @@
 ---
 title: Vyrovnání zůstatku
 description: Částku zbývající z aktivity vyrovnání můžete vyrovnat použitím částky na účet hlavní knihy.
-author: mikefalkner
-manager: aolson
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441147"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182397"
 ---
 # <a name="settle-remainder"></a>Vyrovnání zůstatku
 
@@ -30,13 +27,13 @@ ms.locfileid: "4441147"
 Částku zbývající z aktivity vyrovnání můžete vyrovnat použitím částky na účet hlavní knihy nebo jiného zákazníka. Zůstatek můžete vyrovnat, když vyrvnáváte částky zadané do deníku nebo když vyrovnáváte pouze otevřené transakce.
 
 ## <a name="setting-up-defaults"></a>Nastavení výchozího nastavení 
-Musíte povolit funkci Vyrovnat zůstatek a zadat výchozí nastavení, než použijete funkci Vyrovnat zůstatek
+Musíte povolit funkci **Vyrovnat zůstatek** a zadat výchozí nastavení, než použijete funkci **Vyrovnat zůstatek**.
 
 1)  Klepněte na tlačítko **Pohledávky > Parametry > vyrovnání** nebo **Závazky > Parametry > vyrovnání**
-2)  Vyberte záložku **Vyrovnání** a klepněte na tlačítko **Povolit vyrovnání zůstatku**
+2)  Vyberte záložku **Vyrovnání** a klepněte na tlačítko **Povolit vyrovnání zůstatku**.
 3)  V části **Výchozí kód důvodu** vyberte výchozí kód důvodu. Kódy důvodu musí být již nastaveny v umístění **Pohledávky > Nastavení > Kódy důvodu odpisu odběratele** nebo **Závazky > Nastavení > Kódy důvodu odpisu odběratele**. **Výchozí účet pro vyrovnání zůstatku** bude přednastaven na účet přiřazený k tomuto kódu důvodu odpisu.
 3)  Aktualizujte **Výchozí účet pro vyrovnání zůstatku** podle potřeby.
-4)  V poli **Výchozí název deníku** vyberte deník platby, který bude použit, pokud chcete vytvořit deník plateb, když nastavujete pouze otevřené transakce. Pokud aktivujete funkci vyrovnat zůstatek, je nutné přidat výchozí název deníku.
+4)  V poli **Výchozí název deníku** vyberte deník platby, který bude použit, pokud chcete vytvořit deník plateb, když vyrovnáváte pouze otevřené transakce. Pokud aktivujete funkci vyrovnat zůstatek, je nutné přidat výchozí název deníku.
 
 ## <a name="settle-remainder-from-a-journal"></a>Vyrovnat zůstatek z deníku
 Pokud nepovolíte funkci **Vyrovnat zůstatek**, můžete stále zadávat transakce do deníku a poté proti němu vyrovnat transakce, jak jste to dělali v minulosti. Po klepnutí na tlačítko **OK** bude otevřený zůstatek na faktuře snížen o peněžní částku. Pokud hotovost zcela nevyrovná fakturu, faktura je ponechána se zbývající částkou k vyrovnání později.
@@ -70,3 +67,6 @@ Pro vyrovnání zbývající částky proveďte následující kroky:
 7)  Můžete také vytvořit deník plateb se zbývající částkou vyrovnání nebo ji zaúčtovat bez deníku. Vyberte **Ano** pro **Upravit v deníku** pro vytvoření deníku plateb. Budete moci upravit deník plateb, který vytvoříte.
 8)  Klikněte na **Vyrovnat zůstatek**. Pokud chcete vytvořit deník, tlačítko se změní na **Vytvořit deník**. Namísto toho klikněte na **Vytvořit deník**.
 9)  Jestliže jste vytvořili deník plateb, stránka deníku se otevře po klepnutí na tlačítko **Vyrovnání zůstatku**. Do deníku bude přidán řádek deníku se zbývající částkou vyrovnání a s účtem vyrovnání zůstatku jako protiúčtem. Pokud jste přidali odběratele nebo dodavatele, abyste mohli přesunout částku vyrovnání na jiného odběratele nebo dodavatele, do deníku bude přidán další řádek pro přesun částky vyrovnání danému odběrateli nebo dodavateli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

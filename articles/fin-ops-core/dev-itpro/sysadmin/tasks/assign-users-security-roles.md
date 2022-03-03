@@ -1,12 +1,10 @@
 ---
 title: Přiřazení uživatelů k rolím zabezpečení
-description: Pro přístup k aplikacím Finance and Operations musí být uživateli přiřazeni k rolím zabezpečení.
+description: Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikacím Finance and Operations.
 author: Peakerbl
-manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679857"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105531"
 ---
-# <a name="assign-users-to-security-roles"></a>Přiřazení uživatelů k rolím zabezpečení
+# <a name="manage-users-and-security-roles"></a>Správa uživatelů a rolí zabezpečení
 
 [!include [banner](../../includes/banner.md)]
 
-Chcete-li v aplikacích Finance and Operations použít cokoli jiného než společné funkce, musí být uživatelům přiřazeny k role zabezpečení. Uživatele můžete k rolím přiřadit automaticky, na základě pravidel a obchodních údajů, vyloučit uživatele z automatického přiřazování rolí nebo přidat uživatele do rolí ručně.
+Chcete-li ve finančních a provozních aplikacích použít cokoli jiného než společné funkce, musejí být uživatelé přiřazeni k rolím zabezpečení. Uživatele můžete k rolím přiřadit automaticky, na základě pravidel a obchodních údajů, vyloučit uživatele z automatického přiřazování rolí nebo přidat uživatele do rolí ručně.
 
 ## <a name="automatically-assign-users-to-roles"></a>Automatické přiřazení uživatelů k rolím
 Tento postup vysvětluje způsob, jakým správce systému může automaticky přiřadit uživatele k rolím automaticky na základě obchodních dat. 
@@ -42,6 +40,8 @@ Tento postup vysvětluje způsob, jakým správce systému může automaticky p�
 10. Zkontrolujte role přiřazené různým uživatelům a potvrďte, že dotaz na přiřazení role byl správný. V případě potřeby je upravte a spusťte znovu.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Vyloučení uživatelů z automatického přiřazení k roli
+Tento postup vysvětluje, jak vyloučit uživatele z automatického přidělování rolí.
+
 1. Zavřete stránku.
 2. Přejděte do **Navigačního podokna > Moduly > Správa systému > Zabezpečení > Přiřadit uživatele k rolím**.
 3. Ve stromovém zobrazení vyberte „Vedoucí účetní“. Vyberte požadovanou roli. V tomto příkladu vyberte vedoucí účetní.  
@@ -57,3 +57,19 @@ Uživatelé, kteří jsou ručně přiřazeni k rolím zabezpečení, musí být
 2. Ve stromu vyberte roli a v nabídce **Role přiřazené uživatelům** vyberte možnost **Ručně přiřadit nebo vyloučit uživatele.**
 4. V poli **Přiřadit uživatele k roli nebo je vyloučit z role** jsou uvedeni uživatelé, jimž nebyla role přiřazena, s **režimem přiřazení** nastaveným na **Žádný**. Vyberte jednoho nebo více uživatelů, kterým má být role přiřazena.
 5. V **podokně akcí** vyberte možnost **Přiřadit k roli**. **Režim přiřazení** se aktualizuje na **Ruční** a uživatelům je nyní přiřazena nová role.
+
+## <a name="manually-remove-users-from-roles"></a>Ruční odebrání uživatele z rolí
+Uživatelé, kteří jsou ručně přiřazeni k rolím zabezpečení, musí být také ručně odebráni správcem. Tito uživatelé nejsou z rolí odstraněni pravidly pro automatické přiřazování rolí.
+
+1. Přejděte do **Navigačního podokna > Moduly > Správa systému > Zabezpečení > Přiřadit uživatele k rolím**.
+2. Chcete-li odebrat jednoho uživatele, postupujte takto:
+   1. Ve stromu vyberte roli. 
+   2. V oblasti **Uživatelé přiřazení k roli** vyberte uživatele, který má být odebrán.
+   3. Vyberte položku **Odstranit** a uživatel je poté odebrán z role.
+3. Chcete-li odebrat více uživatelů, postupujte takto:
+   1. Ve stromu vyberte roli. 
+   2. V oblasti **Uživatelé přiřazení k roli** vyberte možnost **Ručně přiřadit nebo vyloučit uživatele**.
+   3. Na stránce **Přiřadit uživatele k roli nebo je vyloučit z role** mají uživatelé, jimž nebyla žádná role přiřazena, ve sloupci **Režim přiřazení** hodnotu **Žádný**. Vyberte uživatele, kteří mají být vyloučeni z role.
+   4. V **podokně akcí** vyberte možnost **Vyloučit z role**. Sloupec **Režim přiřazení** se nyní aktualizuje na **Ruční** a uživatelé jsou odebráni z role.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

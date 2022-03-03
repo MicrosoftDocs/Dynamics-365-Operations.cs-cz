@@ -2,11 +2,9 @@
 title: Technické atributy a vyhledávání technických atributů
 description: Toto téma vysvětluje, jak můžete pomocí technických atributů určit všechny nestandardní vlastnosti, abyste zajistili, že v systému budou zaregistrována všechna kmenová data produktu. Vysvětluje také, jak můžete pomocí vyhledávání technických atributů snadno najít produkty na základě těchto registrovaných vlastností.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963681"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103206"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Technické atributy a vyhledávání technických atributů
 
@@ -28,15 +26,13 @@ ms.locfileid: "4963681"
 
 K zajištění, jak lze v systému registrovat hlavní data produktu, můžete pomocí technických atributů určit všechny nestandardní vlastnosti. Následně můžete pomocí vyhledávání technických atributů snadno najít produkty na základě těchto registrovaných vlastností.
 
-## <a name="engineering-attributes"></a>Technické atributy
+## <a name="create-engineering-attributes-and-attribute-types"></a>Vytvoření technických atributů a typů atributů
 
 Strojírenské produkty mají obvykle mnoho charakteristik a vlastností, které musíte zachytit. Ačkoli můžete zaregistrovat některé vlastnosti pomocí standardních polí produktu, můžete podle potřeby vytvořit také nové technické vlastnosti. Můžete definovat vlastní *technické atributy* a nastavit je jako součást definice produktu.
 
-### <a name="create-engineering-attributes-and-attribute-types"></a>Vytvoření technických atributů a typů atributů
-
 Každý technický atribut musí patřit k *typu atributu*. Tento požadavek existuje, protože každý technický atribut musí mít *datový typ*, který definuje typy hodnot, které může obsahovat. Typ technického atributu může být standardní typ (například volný text, celé číslo nebo desetinné číslo) nebo vlastní typ (například text, který má na výběr konkrétní sadu hodnot). Každý typ atributu můžete znovu použít s libovolným počtem technických atributů.
 
-#### <a name="set-up-engineering-attribute-types"></a>Nastavení typů technických atributů
+### <a name="set-up-engineering-attribute-types"></a>Nastavení typů technických atributů
 
 Chcete-li zobrazit, vytvořit nebo upravit typ technického atributu, postupujte takto.
 
@@ -50,7 +46,7 @@ Chcete-li zobrazit, vytvořit nebo upravit typ technického atributu, postupujte
     - **Rozsah hodnot** - Tato možnost je k dispozici, pouze pokud nastavíte pole **Typ** na *Celé číslo*, *Desetinný* nebo *Měna*. Nastavte ji na *Ano*, pokud chcete stanovit minimální a maximální hodnoty, které budou přijaty pro atributy tohoto typu. Používáte pevnou záložku **Rozsah** ke stanovení minimální a maximální hodnoty a (pro měnu) měny, která platí pro limity, které jste zadali. Tuto možnost nastavte na *Ne*, abyste mohli přijmout jakoukoli hodnotu. 
     - **Měrná jednotka** – Toto pole je dostupné, pouze pokud nastavíte pole **Typ** na *Celé číslo* nebo *Desetinná hodnota*. Vyberte měrnou jednotku, která platí pro tento typ atributu. Pokud není vyžadována žádná jednotka, ponechte toto pole prázdné.
 
-#### <a name="set-up-engineering-attributes"></a>Nastavení technických atributů
+### <a name="set-up-engineering-attributes"></a>Nastavení technických atributů
 
 Chcete-li zobrazit, vytvořit nebo upravit technický atribut, postupujte takto.
 
@@ -72,17 +68,43 @@ Chcete-li zobrazit, vytvořit nebo upravit technický atribut, postupujte takto.
     - **Minimální** - Zadejte minimální doporučenou nebo akceptovanou hodnotu.
     - **Maximální** - Zadejte maximální doporučenou nebo akceptovanou hodnotu.
 
-### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Připojte technické atributy ke kategorii strojírenských produktů
+### <a name="engineering-attribute-inheritance"></a>Dědičnost technických atributů
+
+U struktur produktů, jako jsou kusovníky (BOM) nebo vzorce, lze vybrané atributy předávat od podřízených položek až po nadřazené položky. Tento proces můžete považovat za „reverzní dědičnost“.
+
+#### <a name="turn-engineering-attribute-inheritance-on-or-off"></a>Zapnutí nebo vypnutí dědičnosti technických atributů
+
+Tato funkce vyžaduje, aby byly na vašem systému zapnuty funkce *Správa technických změn* a *Vylepšená dědičnost atributů pro Řízení technických změn*. Podrobnosti o tom, jak tyto funkce zapnout nebo vypnout, najdete v tématu [Přehled správy technických změn](product-engineering-overview.md).
+
+#### <a name="attribute-inheritance-example"></a>Příklad dědičnosti atributů
+
+U potravinářského výrobku, jako je mrkvový koláč, musí systém zaznamenat každý alergen, který výrobek obsahuje. Mrkvový dort lze v systému modelovat jako technický výrobek, který má vzorec. Tento vzorec obsahuje ingredience mrkvového koláče, jako je mouka, mléko, mrkev a ořechy. V tomto případě společnost poskytuje dva modely pro mrkvový dort: jeden, který obsahuje laktózu a druhý, který neobsahuje.
+
+Dort, který obsahuje laktózu, má na úrovni přísad následující atributy:
+
+- Ingredience „mouka“: atribut „lepek“ = ano
+- Ingredience „mléko“: atribut „laktóza“ = ano
+- Ingredience „ořechy“: atribut „ořechy“ = ano
+
+Dort, který neobsahuje laktózu, používá mléko bez laktózy a má na úrovni ingrediencí následující atributy:
+
+- Ingredience „mouka“: atribut „lepek“ = ano
+- Ingredience „mléko“: atribut „laktóza“ = ne
+- Ingredience „ořechy“: atribut „ořechy“ = ano
+
+Protože jsou tyto produkty většinou podobné, mohlo by být vhodné předat tyto atributy z podřízených položek (dvě varianty) do nadřazeného produktu (základní mrkvový dort). K implementaci této „reverzní dědičnosti“ můžete použít funkci *Přiřadit dědičnost*. Tato funkce je definována pro každou [technickou verzi](engineering-versions-product-category.md).
+
+## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Připojte technické atributy ke kategorii strojírenských produktů
 
 Některé technické atributy platí pro všechny produkty, zatímco jiné jsou specifické pro jednotlivé produkty nebo kategorie produktů. Například elektrické atributy nejsou pro mechanické výrobky vyžadovány. Proto můžete nastavit *kategorie technických výrobků*. Kategorie technického produktu zavádí soubor technických atributů, které musí být součástí definice produktů, které do této kategorie patří. Můžete také určit, které technické atributy jsou povinné a zda existuje výchozí hodnota.
 
 Další informace o tom, jak pracovat s kategoriemi technických produktů, včetně informací o tom, jak připojit atributy ke kategoriím, najdete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
 
-### <a name="set-values-for-engineering-attributes"></a>Nastavte hodnoty pro technické atributy
+## <a name="set-attribute-values-for-engineering-attributes"></a>Nastavení hodnot atributů pro technické atributy
 
 Technické atributy, které jsou spojeny s kategorií technického produktu, se zobrazí, když vytvoříte nový technický produkt založený na dané kategorii. V té době můžete nastavit hodnoty pro atributy. Později lze tyto hodnoty změnit na stránce **Technická verze** nebo v rámci správy technických změn v pořadí technických změn. Další informace naleznete v tématu [Správa změn technických produktů](engineering-change-management.md).
 
-### <a name="create-an-engineering-product"></a>Vytvoření technického produktu
+## <a name="create-an-engineering-product"></a>Vytvoření technického produktu
 
 Chcete-li vytvořit technický produkt, otevřete stránku **Vydané produkty**. Poté v podokně akcí na kartě **Produkt** ve skupině **Nový** zvolte **Technický produkt**.
 
@@ -93,3 +115,6 @@ Musíte určit technickou kategorii, do které produkt patří. Kategorie nastav
 Můžete použít vyhledávání technických atributů k vyhledání produktů hledáním jejich hodnot technických atributů. Proto můžete snadno najít technické produkty na základě jejich vlastností. Můžete vyhledávat v produktech, které patří do kategorie technických produktů nebo prohledat všechny technické produkty.
 
 Hledání je k dispozici na stránkách hlavních dat produktu a z transakčních položek v systému, například prodejních objednávek. U transakční položky můžete použít stránku **Hledání technických atributů** pro vyhledání produktu. Poté můžete použít tlačítko **Přidat jako nový řádek** pro přidání produktu na řádky prodejní objednávky. Produkty ve výsledcích vyhledávání lze také přidat přímo do objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

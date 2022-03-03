@@ -2,11 +2,9 @@
 title: Správa několika odvozených mapování pro jeden kořen modelu
 description: Toto téma vysvětluje, jak spravovat několik odvozených mapování, která byla nakonfigurována pro jeden kořen modelu.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4826102"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324105"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Správa několika odvozených mapování pro jeden kořen modelu
 
 [!include [banner](../includes/banner.md)]
 
-Komponenta [Elektronické výkaznictví (ER)](general-electronic-reporting.md) datového [modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) se používá v každé konfigurované komponentě ER [formát](general-electronic-reporting.md#FormatComponentOutbound) jako zdroj dat ke generování odchozích dokumentů. Chcete-li popsat jednu obchodní doménu, nakonfigurujte komponentu datového modelu, který má mnoho kořenových definic. 
+Komponenta datového modelu [Elektronického výkaznictví (ER)](general-electronic-reporting.md) se používá v každé konfigurované komponentě formátu ER jako zdroj dat ke generování odchozích dokumentů. Chcete-li popsat jednu obchodní doménu, nakonfigurujte komponentu datového modelu, který má mnoho kořenových definic. 
 
-Každá definice kořenového adresáře umožňuje reprezentovat data dané domény způsobem, který se nejlépe hodí pro konkrétní účely vytváření sestav. Pro každou definici kořene můžete nakonfigurovat ER [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) komponenta jako implementaci specifickou pro Microsoft Dynamics 365 Finance – vašeho datového modelu. Tímto způsobem popisujete, jak bude váš datový model vyplněn za běhu.
+Každá definice kořenového adresáře umožňuje reprezentovat data dané domény způsobem, který se nejlépe hodí pro konkrétní účely vytváření sestav. U každé kořenové definice můžete konfigurovat komponentu mapování modelu ER jako implementaci vašeho datového modelu specifickou pro Microsoft Dynamics 365 Finance. Tímto způsobem popisujete, jak bude váš datový model vyplněn za běhu.
 
 Součásti mapování modelu ER mohou být umístěny v datovém modelu ER [konfigurace](general-electronic-reporting.md#Configuration) a konfigurace mapování modelu ER. Jedna konfigurace ER může obsahovat mnoho mapovacích komponent, z nichž každá je nakonfigurována pro definici jednoho kořene. Případně jedna konfigurace ER může obsahovat jen jednu mapovací komponentu, která je nakonfigurována pro definici jednoho kořene.
 
@@ -57,7 +55,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance, musíte je 
 2. Na stránce **Konfigurace lokalizace** v části **Konfigurace** vyberte dlaždici **Konfigurace výkaznictví**.
 3. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně rozbalte **Model faktury**.
 
-    ![Kontrola importovaných konfigurací na stránce Konfigurace](./media/er-multiple-model-mappings-image1.png)
+    ![Kontrola importovaných konfigurací na stránce Konfigurace.](./media/er-multiple-model-mappings-image1.png)
 
 4. Zkontrolujte formát **Volná textová faktura (Excel)**:
 
@@ -68,7 +66,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance, musíte je 
     
        Aktuální formát ER je nakonfigurován pro použití kořenové definice **Zákazníka faktury** **Modelu faktury**. Když je tento formát spuštěn, a je volán zdroj dat **Model**, mapování modelu, které je nakonfigurováno pro kořenovou definici **Zákazníka faktury** se používá pro přístup k datům aplikace a vyplnění datového modelu.
 
-        ![Kontrola modelového zdroje dat na stránce návrháře mapování formátu](./media/er-multiple-model-mappings-image2.png)
+        ![Kontrola modelového zdroje dat na stránce návrháře mapování formátu.](./media/er-multiple-model-mappings-image2.png)
 
     6. Zavřete stránku **Návrhář formátu**.
 
@@ -81,7 +79,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance, musíte je 
         + Mapování modelu **Zákaznická faktura** je nakonfigurováno pro kořenovou definici **Zákaznická faktura** **Modelu faktury**. Proto, když je spuštěn formát **Volná textová faktura (Excel)** ER, mapování modelu **Zákaznická faktura** lze zvolit pro přístup k datům aplikace a vyplnění datového modelu této konfigurace ER.
         + Mapování modelu **Projektová faktura** je nakonfigurováno pro kořenovou definici **InvoiceProject** **Modelu faktury**. Proto, když je spuštěn formát **Projektová faktura (Excel)** ER, lze mapování modelu **Projektová faktura** zvolit pro přístup k datům aplikace a vyplnění datového modelu této konfigurace ER.
 
-        ![Mapování modelu faktury na model na stránce mapování zdroje dat](./media/er-multiple-model-mappings-image3.png)
+        ![Mapování modelu faktury na model na stránce mapování zdroje dat.](./media/er-multiple-model-mappings-image3.png)
 
     4. Zavřete stránku **Mapování modelu na zdroj dat**.
     5. Na pevné záložce **Verze** vyberte **Vymazat** pro odstranění všech verzí této konfigurace ER, které jsou novější než verze 240.175.
@@ -92,7 +90,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance, musíte je 
     2. V podokně akcí zvolte **Návrhář**.
     3. Na stránce **Mapování modelu na zdroj dat** si všimněte, že aktuální konfigurace mapování modelu ER obsahuje mapování modelu **InvoiceProject** a že toto mapování modelu je nakonfigurováno pro kořenovou definici **InvoiceProject** **Modelu faktury**. Když je spuštěn formát ER **Projektová faktura (Excel)**, vyberte mapování modelu **InvoiceProject** této konfigurace ER pro přístup k datům aplikace a vyplnění datového modelu.
 
-        ![Mapování modelu projektové faktury na model na stránce mapování zdroje dat](./media/er-multiple-model-mappings-image4.png)
+        ![Mapování modelu projektové faktury na model na stránce mapování zdroje dat.](./media/er-multiple-model-mappings-image4.png)
 
     4. Zavřete stránku **Mapování modelu na zdroj dat**.
     5. Na pevné záložce **Verze** vyberte **Vymazat** pro odstranění všech verzí této konfigurace ER, které jsou novější než verze 226.35.
@@ -117,7 +115,7 @@ Tato část vysvětluje, jak [přizpůsobit](er-quick-start3-customize-report.md
 
 7. V podokně akcí vyberte **Návrhář** ke kontrole mapování modelů této konfigurace.
 
-    ![Kontrola mapování modelu faktury na model na stránce mapování zdroje dat](./media/er-multiple-model-mappings-image5.png)
+    ![Kontrola mapování modelu faktury na model na stránce mapování zdroje dat.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Nyní můžete v návrháři otevřít kteroukoli z komponent mapování modelu ER této konfigurace ER a nakonfigurovat vlastní logiku. Další informace viz [Přizpůsobení konfigurace mapování modelu](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -128,7 +126,7 @@ Nyní máte konfigurace **Mapování modelu faktury** a **Mapování modelu fakt
  
 > Existuje více než jedno mapování modelu pro datový model '\<model name\> (\<root descriptor\>)' v konfiguracích \<configuration names separated by commas\>. Nastavte jednu z konfigurací jako výchozí.
 
-![Otevření formátu pro úpravy na stránce Konfigurace](./media/er-multiple-model-mappings-image6.gif)
+![Otevření formátu pro úpravy na stránce Konfigurace.](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Přizpůsobení konfigurace mapování modelu projektu (RDP)
 
@@ -140,7 +138,7 @@ Nyní máte konfigurace **Mapování modelu faktury** a **Mapování modelu fakt
 6. Pro konfiguraci **Mapování modelu projektové faktury**, která je aktuálně vybrána ve stromu konfigurace, nastavte možnost **Spustit koncept** na **Ano**.
 7. V podokně akcí vyberte **Návrhář** ke kontrole mapování modelů této konfigurace.
 
-    ![Kontrola mapování modelu faktury přizpůsobeného projektu na stránce mapování zdroje dat](./media/er-multiple-model-mappings-image7.png)
+    ![Kontrola mapování modelu faktury přizpůsobeného projektu na stránce mapování zdroje dat.](./media/er-multiple-model-mappings-image7.png)
 
 8. Zavřete stránku **Mapování modelu na zdroj dat**.
 
@@ -151,7 +149,7 @@ Nyní máte konfigurace **Mapování modelu faktury**, **Mapování modelu faktu
 1. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně vyberte **Mapování modelu faktury Litware**.
 2. Nastavte možnost **Výchozí pro mapování modelu’** na **Ano**.
 
-    ![Nastavení mapování modelu jako výchozího mapování modelu na stránce Konfigurace](./media/er-multiple-model-mappings-image8.png)
+    ![Nastavení mapování modelu jako výchozího mapování modelu na stránce Konfigurace.](./media/er-multiple-model-mappings-image8.png)
 
     Z tohoto důvodu se mapování modelu **Kopie faktury zákazníka** používá při spuštění **volné textové faktury (Excel)**, nebo když jej upravíte nebo ověříte. Mapování modelu **Zákaznická faktura** z konfigurace **mapování modelu faktury** je ignorováno.
 
@@ -169,7 +167,7 @@ Nyní máte konfigurace **Mapování modelu faktury**, **Mapování modelu faktu
 5. Na stránce **Mapování modelu na zdroj dat** vyberte **Upravit**, aby byla stránka podle potřeby upravitelná.
 6. Vyberte mapování modelu **Kopie faktury projektu** a poté zaškrtněte zaškrtávací políčko **Je odstraněno**.
 
-    ![Nastavení mapování modelu jako virtuálně odstraněného na stránce Mapování modelu na zdroj dat](./media/er-multiple-model-mappings-image9.png)
+    ![Nastavení mapování modelu jako virtuálně odstraněného na stránce Mapování modelu na zdroj dat.](./media/er-multiple-model-mappings-image9.png)
 
     Z tohoto důvodu se konfigurace **Mapování modelu faktury Litware** chová, jako by pro model neměla žádné mapování modelu kořenové definice **InvoiceProject**. Mapování modelu **Kopie projektové faktury** vydané ve výchozím nastavení. Konfigurace **mapování modelu projektu Litware** která obsahuje toto mapování modelu, je označená jako výchozí. Protože je označen jako výchozí, má vyšší prioritu než mapování modelu **InvoiceProject** z konfigurace **Mapování modelu faktury projektu (RDP)**.
 
@@ -182,3 +180,6 @@ Mapování modelu **Kopie InvoiceProject** konfigurace **Mapování modelu faktu
 - [Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země](er-country-dependent-model-mapping.md)
 - [Změny API rámce architektury elektronického výkaznictví](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

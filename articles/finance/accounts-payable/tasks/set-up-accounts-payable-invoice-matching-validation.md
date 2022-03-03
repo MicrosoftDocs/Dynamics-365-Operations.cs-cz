@@ -2,26 +2,23 @@
 title: Nastavení ověřování párování faktur závazků
 description: Toto téma obsahuje informace o způsobu nastavení ověření párování faktur závazků.
 author: abruer
-manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441098"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182548"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Nastavení ověřování párování faktur závazků
 
@@ -57,7 +54,7 @@ K dispozici jsou čtyři různé typy ověření párování.
 12. Do pole **Tolerance celkové nákupní ceny** zadejte částku v zúčtovací měně. Toto pole je k dispozici, když je **Párování celkových cen** nastaveno na **Částka** nebo **Procento a částka**.
 13. V poli **Zobrazit ikonu párování celkových cen** určete, kdy bude zobrazena ikona, je-li odchylka párování faktur vyšší než tolerance čisté jednotkové ceny. Ikonu lze zobrazit, když je kladný rozdíl vyšší než tolerance nebo pokud kladný nebo záporný rozdíl je vyšší než tolerance.
 Například tolerance je 5 procent a celková řádková cena v nákupní objednávce je 10,00. Proto se bude ikona párování cen zobrazena, pokud celková řádková cena na faktuře překročí cenu 10,50. Pokud vyberete volbu **Pokud vyšší nebo nižší než tolerance**, bude ikona zobrazena také v případě, že součet cen řádků na faktuře je nižší než 9,50.
-13. Nastavte Párování nákladů.
+13. Nastavte **Párování nákladů**.
 14. Aby odpovídaly skutečným nákladům s očekávanými náklady na základě informací o nákupní objednávce, zaškrtněte políčko **Porovnání nákladů**.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Nastavení procentuálních hodnot tolerance jednotkových cen
@@ -78,7 +75,7 @@ Ve výchozím nastavení jsou povoleny záporné odchylky cen. Záporné číslo
 
 ## <a name="set-up-matching-policy-override"></a>Nastavení přepsání zásad párování
 
-Chcete-li definovat výchozí zadání pro pole zásad párování pro řádky ve formulář nákupní objednávky, přejděte na > **Závazky > Nastavení > Nastavení párování faktur > Zásady párování**. Toto je volitelné nastavení. Tento formulář slouží k nastavení dvoucestného nebo třícestného párování pro položky, dodavatele nebo kombinace položek a dodavatelů. Tato zadání vám umožňují definovat podrobnější zásady párování, než jsou zásady párování právnických osob definované na stránce **Parametry závazků**. Výchozí zásada párování řádků právnické osoby bude použita pro všechny položky a dodavatele s výjimkou těch, pro které je na této stránce určena jiná zásada párování řádků.
+Chcete-li definovat výchozí zadání pro pole **Zásada párování** u řádků ve formulář **Nákupní objednávka**, přejděte na **Závazky > Nastavení > Nastavení párování faktur > Zásady párování**. Toto je volitelné nastavení. Tato stránka slouží k nastavení dvoucestného nebo třícestného párování pro položky, dodavatele nebo kombinace položek a dodavatelů. Tato zadání vám umožňují definovat podrobnější zásady párování, než jsou zásady párování právnických osob definované na stránce **Parametry závazků**. Výchozí zásada párování řádků právnické osoby bude použita pro všechny položky a dodavatele s výjimkou těch, pro které je na této stránce určena jiná zásada párování řádků.
 
 Na této stránce vyberte **Úroveň zásad párování**. Zvolte úroveň v hierarchii zásad párování, pro kterou chcete nastavit zásady párování řádku.
 
@@ -98,3 +95,6 @@ Chcete-li určit tolerance specifické pro dodavatele pro párování součtů f
 
 1. Chcete-li určit tolerance pro jednotlivé dodavatele, kteří přepíší výchozí tolerance, zvolte **Účet dodavatele**.
 2. Zadejte procento odchylky přijatelné pro tohoto dodavatele.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

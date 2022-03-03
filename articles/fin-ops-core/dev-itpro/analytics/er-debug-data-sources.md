@@ -2,11 +2,9 @@
 title: Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace
 description: Toto téma vysvětluje, jak můžete ladit zdroje dat prováděného formátu ER, aby bylo možné lépe porozumět nakonfigurovanému toku dat a transformaci.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680775"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323754"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680775"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Když [konfigurujete](tasks/er-format-configuration-2016-11.md) řešení elektronického výkaznictví (ER) ke generování odchozích dokumentů, definujete metody, které se používají k získání dat mimo aplikaci a jejich zadání do generovaného výstupu. Aby byla podpora životního cyklu řešení ER efektivnější, mělo by vaše řešení sestávat z [datového modelu](general-electronic-reporting.md#DataModelComponent) a jeho komponent [mapování](general-electronic-reporting.md#ModelMappingComponent) a také z [formátu](general-electronic-reporting.md#FormatComponentOutbound) ER a jeho komponent mapování, tak, aby mapování modelu bylo specifické pro aplikaci, zatímco ostatní komponenty zůstaly pro aplikaci agnostické. Proto může několik komponent ER [ovlivnit](general-electronic-reporting.md#FormatComponentOutbound) proces zadávání dat do generovaného výstupu.
+Když [konfigurujete](tasks/er-format-configuration-2016-11.md) řešení elektronického výkaznictví (ER) ke generování odchozích dokumentů, definujete metody, které se používají k získání dat mimo aplikaci a jejich zadání do generovaného výstupu. Aby byla podpora životního cyklu řešení ER efektivnější, mělo by vaše řešení sestávat z datového modelu a jeho komponent mapování, a také z formátu ER a jeho komponent mapování, tak, aby mapování modelu bylo specifické pro aplikaci, zatímco ostatní komponenty zůstaly pro aplikaci agnostické. Proto může několik komponent ER ovlivnit proces zadávání dat do generovaného výstupu.
 
 Někdy vypadají data generovaného výstupu odlišně od stejných dat v aplikační databázi. V těchto případech budete chtít určit, která komponenta ER je zodpovědná za transformaci dat. Funkce ladicího programu zdroje dat ER významně snižuje čas a náklady, které jsou zahrnuty v tomto šetření. Můžete přerušit provádění formátu ER a otevřít rozhraní ladicího programu zdroje dat. Zde můžete procházet dostupné zdroje dat a vybrat individuální zdroj dat pro provedení. Toto ruční provedení simuluje spuštění zdroje dat během skutečného spuštění formátu ER. Výsledek je uveden na stránce, kde můžete analyzovat přijatá data.
 
@@ -66,7 +64,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto tématu.
 
-    ![Probíhá zpracování plateb dodavatele](./media/er-data-debugger-process-payment.png)
+    ![Probíhá zpracování plateb dodavatele.](./media/er-data-debugger-process-payment.png)
 
 2. Stáhněte a uložte soubor zip do místního počítače.
 3. Extrahujte soubor platby **ISO20022 Credit transfer.xml** ze souboru zip.
@@ -74,7 +72,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
     V souboru platby nemá kód IBAN (International Bank Account Number) bankovního účtu dodavatele žádné mezery. Proto se liší od hodnoty, která byla [zadána](#enteredIBANcode) na stránce **Bankovní účty**.
 
-    ![IBAN kód bez mezer](./media/er-data-debugger-payment-file.png)
+    ![IBAN kód bez mezer.](./media/er-data-debugger-payment-file.png)
 
     Pomocí ladicího programu zdroje dat ER zjistíte, která složka řešení ER se používá ke zkrácení mezer v kódu IBAN.
 
@@ -87,14 +85,14 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
     > [!NOTE]
     > Tento parametr je specifický pro uživatele a konkrétní společnost.
 
-    ![Dialogové okno Parametry uživatele](./media/er-data-debugger-user-parameters.png)
+    ![Dialogové okno Parametry uživatele.](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Zpracovat platbu dodavatele pro ladění
 
 1. Platby dodavatele zpracujte podle kroků v [příloze 3](#appendix3) tohoto tématu.
 2. V okně zprávy vyberte **Ano** pro potvrzení, že chcete přerušit zpracování plateb dodavatele a místo toho spustit ladění zdrojů dat na stránce **Ladit zdroje dat**.
 
-    ![Pole zprávy s potvrzením](./media/er-data-debugger-start-debugging.png)
+    ![Pole zprávy s potvrzením.](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>Ladění zdrojů dat, které se používají při zpracování plateb
 
@@ -117,7 +115,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 7. Vyberte **Rozbalit vše**.
 
-    ![Hodnota pole IBAN v mapování modelu](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Hodnota pole IBAN v mapování modelu.](./media/er-data-debugger-debugging-model-mapping.png)
 
     Jak vidíte, mapování modelů není zodpovědné za zkrácené mezery, protože kód IBAN, který vrátí pro bankovní účet dodavatele, zahrnuje mezery. Proto musíte pokračovat v ladění zdroje dat.
 
@@ -132,7 +130,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 7. Vyberte **Získat hodnotu**.
 8. Vyberte **Rozbalit vše**.
 
-    ![Hodnota pole IBAN v mapování formátu](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Hodnota pole IBAN v mapování formátu.](./media/er-data-debugger-debugging-format-mapping.png)
 
     Jak vidíte, zdroje dat mapování formátu nejsou zodpovědné za zkrácené mezery, protože kód IBAN, který vrací pro bankovní účet dodavatele, zahrnuje mezery. Proto musíte pokračovat v ladění zdroje dat.
 
@@ -144,7 +142,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 4. Rozbalte elementy formátu pro výběr možností **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** a pak vyberte **Získat hodnotu**.
 5. Vyberte **Rozbalit vše**.
 
-    ![Hodnota pole IBAN ve formátu](./media/er-data-debugger-debugging-format.png)
+    ![Hodnota pole IBAN ve formátu.](./media/er-data-debugger-debugging-format.png)
 
    Jak vidíte, vázání formátu není zodpovědné za zkrácené mezery, protože kód IBAN, který vrátí pro bankovní účet dodavatele, zahrnuje mezery. Proto je element **BankIBAN** nakonfigurován tak, aby používal transformaci formátu, která zkrátí mezery.
 
@@ -156,13 +154,13 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 2. Na stránce **Konfigurace** vyberte **Platební model** \> **Převod kreditu ISO20022**.
 3. Vyberte **Návrhář** a pak rozbalte elementy pro výběr možností **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**.
 
-    ![Element BankIBAN na stránce Návrhář formátu](./media/er-data-debugger-referred-transformation.png)
+    ![Element BankIBAN na stránce Návrhář formátu.](./media/er-data-debugger-referred-transformation.png)
 
     Jak vidíte, element **BankIBAN** je nakonfigurován na použití transformace **odstranit ne alfanumerické**.
 
 4. Vyberte kartu **Transformace**.
 
-    ![Karta Transformace pro element BankIBAN](./media/er-data-debugger-transformation.png)
+    ![Karta Transformace pro element BankIBAN.](./media/er-data-debugger-transformation.png)
 
     Jak vidíte, transformace **odstranit nealfanumerické** je nakonfigurována tak, aby používala výraz, který zkrátí mezery z poskytovaného textového řetězce.
 
@@ -170,7 +168,7 @@ Následující nastavení formátů ER aktuálně nejsou k dispozici pro laděn�
 
 Když konfigurujete pracovní verzi formátu ER, kterou lze spustit přímo z Návrháře operací, můžete získat přístup k ladicímu programu zdroje dat výběrem možnosti **Spustit ladění** v podokně akcí.
 
-![Tlačítko Spustit ladění na stránce Návrhář formátu](./media/er-data-debugger-run-from-designer.png)
+![Tlačítko Spustit ladění na stránce Návrhář formátu.](./media/er-data-debugger-run-from-designer.png)
 
 Mapování formátu a komponenty formátu ER, který je upravován, jsou k dispozici pro ladění.
 
@@ -178,7 +176,7 @@ Mapování formátu a komponenty formátu ER, který je upravován, jsou k dispo
 
 Když konfigurujete mapování modelu ER, které lze spustit ze stránky **Mapování modelu** můžete získat přístup k lacicímu programu zdroje dat výběrem možnosti **Spustit ladění** v podokně akcí.
 
-![Tlačítko Spustit ladění na stránce vývojáře Mapování modelu](./media/er-data-debugger-run-from-designer-mapping.png)
+![Tlačítko Spustit ladění na stránce vývojáře Mapování modelu.](./media/er-data-debugger-run-from-designer-mapping.png)
 
 Komponenta mapování modelu mapování ER je k dispozici pro ladění.
 
@@ -188,18 +186,18 @@ Komponenta mapování modelu mapování ER je k dispozici pro ladění.
 
 Pokud chcete použít řešení ER ke generování elektronického platebního souboru pro platbu zpracovanou prodejcem, můžete si [stáhnout](download-electronic-reporting-configuration-lcs.md) formát platby ER **Převod kreditu ISO20022**, který je k dispozici v knihovně Sdílený majetek ve službě Microsoft Dynamics Lifecycle Services (LCS) nebo v globálním úložišti.
 
-![Import platebního formátu ER na stránce úložiště konfigurace](./media/er-data-debugger-import-from-repo.png)
+![Import platebního formátu ER na stránce úložiště konfigurace.](./media/er-data-debugger-import-from-repo.png)
 
 Kromě vybraného formátu ER musí být následující [konfigurace](general-electronic-reporting.md#Configuration) automaticky importovány do instance Microsoft Dynamics 365 Finance jako součást řešení ER **Převod úvěru ISO20022**:
 
-- **Model platby** [Konfigurace datového modelu ER](general-electronic-reporting.md#DataModelComponent)
-- **Převod kreditu ISO20022** [Konfigurace formátu ER](general-electronic-reporting.md#FormatComponentOutbound)
-- **Mapování modelu platby 1611** [Konfigurace mapování modelu ER](general-electronic-reporting.md#ModelMappingComponent)
+- Konfigurace datového modelu ER **Model platby**
+- Konfigurace formátu ER **Převod kreditu ISO20022**
+- **Mapování modelu platby 1611** Konfigurace mapování modelu ER
 - **Mapování modelu platby do cíle ISO20022** Konfigurace mapování modelu ER
 
 Na stránce **Konfigurace** systému ER (**Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**) najdete následující konfigurace.
 
-![Importované konfigurace na stránce konfigurace](./media/er-data-debugger-configurations.png)
+![Importované konfigurace na stránce konfigurace.](./media/er-data-debugger-configurations.png)
 
 Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurací, musíte je stáhnout ručně z knihovny sdílených položek LCS stejným způsobem, jakým jste stáhli formát platby ER **Převod kreditu ISO20022**.
 
@@ -215,7 +213,7 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 
     Všimněte si, že pole datového modelu **Platby** je vázáno na zdroj dat **\$notSentTransactions**, který vrací seznam zpracovávaných řádků platby dodavatele.
 
-    ![Pole Platby na stránce Návrhář mapování modelů](./media/er-data-debugger-model-mapping.png)
+    ![Pole Platby na stránce Návrhář mapování modelů.](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>Kontrola mapování formátu
 
@@ -226,7 +224,7 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 
     Všimněte si, že je element **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** souboru **ISO20022CTReports** \> **XMLHeader** vázán na zdroj dat **\$PaymentByDebtor**, který je konfigurován na seskupení záznamů pole **Platby** datového modelu.
 
-    ![Element PmtInf na stránce Návrhář formátu](./media/er-data-debugger-format-mapping.png)
+    ![Element PmtInf na stránce Návrhář formátu.](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>Kontrola formátu
 
@@ -236,7 +234,7 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 
     Všimněte si, že element formátu v části **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** je konfigurován na zadání kódu IBAN účtu dodavatele v souboru platby.
 
-    ![Element BankIBAN na stránce Návrhář formátu](./media/er-data-debugger-format.png)
+    ![Prvek formátu BankIBAN na stránce Návrhář formátu.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Příloha 2: Konfigurace pohledávek
 
@@ -245,9 +243,9 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 1. Přejděte do části **Pohledávky** \> **Dodavatelé** \> **Všichni dodavatelé**.
 2. Vyberte dodavatele **DE-01002** a pak v podokně akcí na kartě **Dodavatel** ve skupině **Nastavení** vyberte **Bankovní účty**.
 3. Na pevné záložce **Identifikace** v okně **IBAN** <a name="enteredIBANcode"></a>zadejte **GB33 BUKB 2020 1555 5555 55**.
-4. Zvolte **Uložit**.
+4. Zvolte možnost **Uložit**.
 
-![Pole IBAN nastavené na stránce Bankovní účty dodavatele](./media/er-data-debugger-iban.png)
+![Pole IBAN nastavené na stránce Bankovní účty dodavatele.](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Nastavení způsobu platby
 
@@ -255,9 +253,9 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 2. Vyberte způsob platby **SEPA CT**.
 3. Na pevné záložce **Formáty souboru** v části **Formáty souboru** nastavte možnost **Obecný formát elektronického exportu** na **Ano**.
 4. V poli **Exportovat konfiguraci formátu** vyberte formát **Převod kreditu ISO20022** ER.
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
-![Nastavení formátu souboru na stránce Způsoby platby](./media/er-data-debugger-payment-method.png)
+![Nastavení formátu souboru na stránce Způsoby platby.](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Přidání platby dodavatele
 
@@ -267,9 +265,9 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 4. V poli **Účet** vyberte dodavatele **DE-01002**.
 5. Zadejte hodnotu do pole **Má dáti**.
 6. V poli **Způsob platby** vyberte **SEPA CT**.
-7. Zvolte **Uložit**.
+7. Zvolte možnost **Uložit**.
 
-![Platba dodavatele přidaná na stránce Platby dodavatele](./media/er-data-debugger-payment-journal.png)
+![Platba dodavatele přidaná na stránce Platby dodavatele.](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>Příloha 3: Zpracování platby dodavatele
 
@@ -281,3 +279,6 @@ Pokud v konfiguračním stromu chybí některá z dříve uvedených konfigurac�
 6. V poli **Bankovní účet** vyberte **DEMF OPER**.
 7. V dialogovém okně **Generovat platby** vyberte **OK**.
 8. V dialogovém okně **Parametry elektronické sestavy** vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Zásady třícestného párování
 description: Toto téma obsahuje příklady třícestného párování.
 author: abruer
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441102"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109986"
 ---
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
@@ -31,8 +28,7 @@ ms.locfileid: "4441102"
 
 Toto téma obsahuje příklady třícestného párování.
 
-<a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Příklad: Třícestné párování pro položky
 
 **Souhrn:** Ken bude kontrolor v sídle společnosti právnické osoby Fabrikam. Ken se rozhodne, že všechny faktury dodavatele, které jsou založeny na nákupních objednávkách, budou párovány s řádky nákupní objednávky (dvoucestné párování). Pro nákupy položek, které budou použity jako dlouhodobý majetek, by faktury měly být spárovány s řádky nákupní objednávky i řádky příjemky produktu (třícestné párování).
 
@@ -42,14 +38,14 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 -   Ken bude kontrolor pro společnost Fabrikam. Pomáhá osobám v organizaci při identifikaci a nápravě problémů s objednáváním, příjem a placením položek (zboží a služby) od dodavatelů.
 -   Phyllis a April jsou účetní vedoucí v oddělení závazků pro USA divizi společnosti Fabrikam. Mohou vynutit zásady společnosti a ujistit se, že faktury jsou zaplaceny až poté, co jsou faktury porovnávány s nákupní objednávkou a příjmem zboží a služeb (kde je to vhodné).
--   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. On a ostatní výrobní pracovníci mohou zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
+-   Tony je vedoucí výroby pro USA divizi společnosti Fabrikam. Spolu s ostatními výrobními pracovníky může zajistit, aby byly položky přijímány tak, jak jsou objednávány od dodavatelů, a jsou tvořeny tak, aby pracovníci měli vše potřebné ke své práci.
 
 ### <a name="prerequisites"></a>Předpoklady
 
--   Ken nastaví zásady párování na úrovni právnické osoby pro třícestné párování.
--   Ken nastaví Automaticky aktualizovat stav párování záhlaví u právnické osoby na hodnotu Ano.
--   Ken nastaví pole Párování celkových cen u právnické osoby na Procento a zadá 15 % jako procentuální hodnotu tolerance.
--   Ken nastaví zásady párování na úrovni položky pro položku 1500 – zařízení CNC Milicron na třícestné párování. Tato položka je položkou majetku použitou pro výrobu ve společnosti Fabrikam. Faktury pro tuto položku jsou pak spárovány s řádky nákupní objednávky s ohledem na ceny a příjemky produktů na množství.
+-   Ken nastaví **zásady párování** na úrovni právnické osoby pro **třícestné párování**.
+-   Ken nastaví přepínač **Automaticky aktualizovat stav párování záhlaví** u právnické osoby na hodnotu **Ano**.
+-   Ken nastaví pole **Párování celkových cen** u právnické osoby na **Procento** a zadá 15 % jako **Procentuální hodnotu tolerance**.
+-   Ken nastaví zásady párování na úrovni položky pro položku 1500 – zařízení CNC Milicron na **Třícestné párování**. Tato položka je položkou majetku použitou pro výrobu ve společnosti Fabrikam. Faktury pro tuto položku jsou pak spárovány s řádky nákupní objednávky s ohledem na ceny a příjemky produktů na množství.
 -   Tony zadá požadavek pro pět zařízení CNC Milicron. Alicia, úředník pro nákupní objednávky ve společnosti Fabrikam, vystaví nákupní objednávku právnické osobě s názvem Contoso s cílem zadat položky.
 
     | Číslo zboží                 | Množství | Jednotková cena | Čistá částka | Kód nákladů        | Hodnota nákladů |
@@ -84,7 +80,7 @@ Papírová faktura ze společnosti Contoso obsahuje následující informace.
 
 Vzhledem k tomu, že tento řádek splňuje požadavky procesu párování faktur, fakturu je možné zaúčtovat.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Příklad: Třícestné párování pro kombinaci položky a dodavatele
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a>Příklad: Třícestné párování pro kombinaci položky a dodavatele
 Souhrn: Ken bude kontrolor v sídle společnosti právnické osoby Fabrikam. Ken se rozhodne, že všechny faktury, které jsou založeny na nákupních objednávkách, budou párovány s řádky nákupní objednávky (dvoucestné párování). Cassie je účetní v divizi pro Malajsii společnosti Fabrikam. Určuje, že vybrané položky, které jsou objednány od určitých dodavatelů v Malajsii. je třeba spárovat s řádky nákupní objednávky i řádky příjemky produktu (třícestné párování). Rovněž může přepsat zásady párování na vyšší úroveň párování pro specifické nákupní objednávky. 
 
 Množství a částky jsou malé a mohlo dojít k potížím s dodávkou od některých dodavatelů v Malajsii. Z tohoto důvodu Cassie určí úroveň řízení pro určité kombinace položek a dodavatelů pocházející z Malajsie na třícestné párování. 
@@ -95,11 +91,11 @@ Zásady párování faktur v tomto příkladu pomáhají osobám v následujíc�
 
 ### <a name="prerequisites"></a>Předpoklady
 
--   Ken nastaví zásady párování na úrovni právnické osoby pro dvoucestné párování.
--   Ken nastaví pole Párování celkových cen u právnické osoby na Procento a zadá 10 % jako procentuální hodnotu tolerance.
+-   Ken nastaví **zásady párování** na úrovni právnické osoby pro **dvoucestné párování**.
+-   Ken nastaví pole **Párování celkových cen** u právnické osoby na **Procento** a zadá **10 %** jako **Procentuální hodnotu tolerance**.
 -   Ken nastaví toleranci ceny pro všechny položky na 2 %.
--   Cassie nastaví zásady párování na úrovni kombinace položek a dodavatelů "PH2500 – počítač" a "dodavatel Contoso" na třícestné párování.
--   Alicia, účetní nákupní objednávky v divizi pro Malajsii společnosti Fabrikam, vystaví nákupní objednávky pro společnost Contoso s cílem dodat tři položky způsobem znázorněným v následující tabulce. Když vytvoří nákupní objednávku, přepíše odpovídající zásady párování pro bezdrátovou myš na třícestné párování namísto dvoucestného párování.
+-   Cassie nastaví **zásady párování** na úrovni kombinace položek a dodavatelů "PH2500 – počítač" a "dodavatel Contoso" na **třícestné párování**.
+-   Alicia, účetní nákupní objednávky v divizi pro Malajsii společnosti Fabrikam, vystaví nákupní objednávky pro společnost Contoso s cílem dodat tři položky způsobem znázorněným v následující tabulce. Když vytvoří nákupní objednávku, přepíše odpovídající **zásady párování** pro bezdrátovou myš na třícestné párování namísto dvoucestného párování.
 
     | Číslo zboží           | Množství | Jednotková cena | Čistá částka | Zásady párování (výchozí hodnota) | Zásady párování (na řádku nákupní objednávky) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -138,10 +134,13 @@ Mějte na paměti následující body:
 -   Pro řádek MM01 – bezdrátová myš má sloupec Spárování množství v příjemce produktu uvedenou varovnou ikonu, protože řádek faktury neodpovídá příjemce produktu. Sloupec Párování jednotkové ceny má zobrazenou varovnou ikonu, protože dojde k překročení tolerance 2 % u čisté jednotkové ceny.
 -   Pro řádek Jednotka USB je sloupec Množství v příjemce produktu nevyplněný, protože dvoucestné párování neodpovídá množství na řádku faktury a řádku příjemky produktu.
 
-Pokud je schválení vyžadováno u faktur, které mají být zaúčtovány s odlišnostmi v párování faktur, je nutné vybrat možnost Schválit zaúčtování s odpovídajícími odlišnostmi na stránce Podrobnosti o párování faktur dříve, než bude možné zaúčtovat fakturu s chybou v párování ceny nebo párování množství. Pokud schválení není vyžadováno, zpracování faktury může pokračovat, pokud neexistují žádné chyby v zaúčtování.
+Pokud je schválení vyžadováno u faktur, které mají být zaúčtovány s odlišnostmi v párování faktur, je nutné vybrat možnost **Schválit zaúčtování s odpovídajícími odlišnostmi** na stránce **Podrobnosti o párování faktur** dříve, než bude možné zaúčtovat fakturu s chybou v párování ceny nebo párování množství. Pokud schválení není vyžadováno, zpracování faktury může pokračovat, pokud neexistují žádné chyby v zaúčtování.
 
 
 Další informace naleznete v tématu [Přehled párování faktur závazků](accounts-payable-invoice-matching.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

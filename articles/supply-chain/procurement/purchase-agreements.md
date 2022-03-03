@@ -1,12 +1,10 @@
 ---
 title: Nákupní smlouvy
 description: V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017180"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103731"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -43,10 +41,7 @@ Chcete-li zabránit použití a potvrzení nákupní smlouvy, označte stav smlo
 Podle klasifikace nákupní smlouvy můžete určit primárního zodpovědného pracovníka a sekundárního odpovědného pracovníka. Tyto hodnoty budou zděděny výslednou nákupní smlouvou. Není nutné přidávat zodpovědné pracovníky do nákupní smlouvy a mohou být upraveny přímo pro jednotlivé případy na základě nákupní smlouvy. Nemůžete určit sekundárního zodpovědného pracovníka bez primárního odpovědného pracovníka, i když nemusíte mít sekundárního zodpovědného pracovníka. Stejného pracovníka nelze určit jako primárního i sekundárního odpovědného pracovníka.
 
 > [!IMPORTANT]
-> Než můžete použít funkci zodpovědné strany, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-> 
-> - **Modul:** *Zásobování a zdroje*
-> - **Název funkce:** *Odpovědná strana nákupní smlouvy*
+> Chcete-li použít funkci zodpovědné strany, musíte ji ve svém systému zapnout. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Odpovědná strana nákupní smlouvy* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat řádky z více nákupních objednávek (NO), abyste splnili závazek. Existují čtyři typy závazků:
@@ -104,12 +99,13 @@ Když vytvoříte mezipodnikovou nákupní objednávku používající mezipodni
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Finanční dimenze nákupních smluv
 Můžete kopírovat finanční dimenze do záhlaví dokladů nebo jednotlivých řádků nákupní smlouvy. Pokud změníte dimenze v záhlaví smlouvy nebo na řádku smlouvy, neovlivní tato změna žádnou z již uvolněných objednávek, ale projeví se u nových objednávek.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další prostředky
 
-[Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
-
-[Vytvoření dílčí nákupní objednávky z nákupní smlouvy](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
+- [Použití nákupní smlouvy při tvorbě nákupní objednávky](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

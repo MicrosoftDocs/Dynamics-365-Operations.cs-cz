@@ -1,30 +1,27 @@
 ---
 title: Výchozí nastavení objednávky pro dimenze a varianty produktů
 description: Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek.
-author: t-benebo
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424106"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102756"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -118,7 +115,7 @@ Můžete definovat pravidla nastavení objednávek pro všechny aktivní dimenzi
 
 Představte si následující vzorový produkt:
 
-|                                                     |                                         |
+| Zboží                                                | Hodnota                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **Název produktu**                                    | Fotoelektrický snímač                    |
 | **Číslo položky**                                     | XW56                                    |
@@ -189,12 +186,9 @@ Můžete si vybrat, jak přísný by měl být systém při ověřování množs
 
 Platí přísná validace na hodnoty **Množství standardní objednávky** uvedené na pevných záložkách **Nákupní objednávka**, **Zásoby** a **Prodejní objednávka** na stránce **Výchozí nastavení objednávky**. Každá pevná záložka má své vlastní nastavení **Násobek**, které se používá k ověření hodnoty **Množství standardní objednávky** zadané pro tuto pevnou záložku.
 
-### <a name="enable-the-strict-validation-option"></a>Povolte možnost přísného ověření
+### <a name="turn-the-strict-validation-option-on-or-off"></a>Zapnutí nebo vypnutí možnosti přísného ověření
 
-Než můžete použít možnost přísné validace, musíte ji zapnout ve svém systému. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit je v případě potřeby. Tato funkce je uvedena jako:
-
-- **Modul** - *Řízení informací o produktech*
-- **Název funkce** - *Přísná validace na výchozí množství objednávek*
+Chcete-li použít přísné ověření, musí být ve vašem systému zapnutá funkce *Striktní ověření výchozího množství objednávky*. Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, můžete tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Striktní ověření výchozího množství objednávky* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="set-the-validation-option"></a>Nastavte možnost ověření
 
@@ -204,3 +198,6 @@ Nastavte možnost ověření takto:
 1. Na kartě **Všeobecné** nastavte **Ověření výchozího množství objednávky** na jednu z následujících hodnot:
     - **Přísný** - Tuto možnost vyberte, chcete-li zajistit, aby všechny hodnoty **Množství standardní objednávky** byly násobkem hodnoty **Násobek** pro každou pevnou záložku (**Nákupní objednávka**, **Zásoby** a **Prodejní objednávka**).
     - **Standardní** - Tuto možnost vyberte, chcete-li použít standardní ověření (které funguje stejně, jako když tato funkce není povolena).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

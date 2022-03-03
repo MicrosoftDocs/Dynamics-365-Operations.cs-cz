@@ -2,28 +2,25 @@
 title: Další zóny skladového místa
 description: Toto téma poskytuje přehled nových zón skladového místa, jež byly přidány do systému Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: dd9e97cabe5e3d3bdc261a7280930b73eb8e1419
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424179"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103831"
 ---
 # <a name="additional-location-zones"></a>Další zóny skladového místa
 
@@ -33,12 +30,9 @@ V programu Microsoft Dynamics 365 Supply Chain Management jsou při zadávání
 
 K použití polí zón není nutné žádné další nastavení.
 
-## <a name="turn-on-the-additional-location-zone-feature"></a>Zapnutí funkce Další zóna skladového místa
+## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>Zapnutí či vypnutí funkce Další zóna skladového místa
 
-Než můžete použít funkci *Další zóna skladového místa*, musíte ji v systému zapnout. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Další zóna skladového místa*
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Další zóna skladového místa* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="use-location-zones"></a>Používání zón skladového místa
 
@@ -58,3 +52,6 @@ Než můžete použít funkci *Další zóna skladového místa*, musíte ji v 
 7. Vyberte **Vytvořit**.
 8. Obdržíte zprávy uvádějící, že byla přidána nová skladová místa. Tlačítkem **Zobrazit zprávy** tyto zprávy zobrazíte.
 9. Přejděte do nabídky **Řízení skladu \> Nastavení \> Sklad \> Umístění**. Nová skladová místa se zobrazí v seznamu a jsou k dispozici všechna pole zóny (tj. pole existující zóny i pole nové další zóny).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

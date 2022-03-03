@@ -1,26 +1,23 @@
 ---
 title: Nastavení parametrů správy úvěru
 description: V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku.
-author: mikefalkner
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441122"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323403"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
@@ -34,7 +31,7 @@ Existují čtyři pevné záložky v sekci **Úvěry**, na kterých můžete mě
 
 ### <a name="credit-holds"></a>Blokování úvěru
 
-- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne**. .
+- Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo k navýšení hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ne**.
 - V poli **Důvody zrušených objednávek** vyberte důvod uvolnění, který bude standardně použit, dojde-li ke zrušení prodejní objednávky, která byla blokována správou úvěru.
 - Chcete-li kontrolovat limit úvěru skupiny odběratelů podle limitu úvěru, když odběratel na prodejní objednávce náleží ke skupině odběratelů podle limitu úvěru, nastavte možnost **Kontrolovat limit úvěru skupin odběratelů podle limitu úvěru** na **Ano**. Bude zkontrolován limit úvěru pro danou skupinu a v případě, že je dostatečný, bude zkontrolován limit úvěru pro odběratele.
 - Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od výchozích platebních podmínek daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano**. Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
@@ -53,7 +50,8 @@ Můžete také definovat počet dnů odkladu před další kontrolou pravidel ú
 
 Nezadáte-li počet dnů odkladu, budou pravidla úvěru zkontrolována při každém kroku zaúčtování, který je nastaven ke spouštění pravidel správy úvěru. Pokud prodejní objednávku uvolníte bez zaúčtování a poté znovu spustíte stejný krok zpracování objednávky, budou pravidla úvěru znovu zkontrolována. Objednávka se například zablokuje po potvrzení a vy ji uvolníte buď s zaúčtováním, nebo bez něj. V takovém případě bude objednávka znovu blokována, pokud ji znovu potvrdíte. Použijte dny odkladu, má-li objednávka pokračovat na další krok zpracování bez opětného blokování.
 
-Pro některé kontrolní body zaúčtování nelze na rozdíl od ostatních stanovit dny odkladu. Je nutné nastavit všechny kontrolní body zaúčtování tak, aby měly dny odkladu, nebo musí být všechny nastaveny tak, aby neměly žádné dny odkladu.
+> [!Note]
+> Pokud má jeden kontrolní bod zaúčtování zadaný den odkladu, všechny kontrolní body označené k zaúčtování musejí mít dny odkladu.
 
 - Označením políčka **Zaúčtování** můžete spustit pravidla správy úvěru, když je spuštěn kontrolní bod zaúčtování zobrazený na řádku. Pokud toto políčko neoznačíte, pravidla budou kontrolována pouze jednou během celého procesu zaúčtování.
 - Pokud políčko **Zaúčtování** označíte, zadejte počet dnů odkladu, které mají uplynout předtím, než budou pravidla blokování zkontrolována. Není-li označeno políčko **Zaúčtování**, nelze přidat dny odkladu.
@@ -75,7 +73,14 @@ V okně s fakty **Statistika správy úvěru odběratele** na stránce **Odbě
 
 - Ve správě úvěru je limit úvěru odběratele zobrazen v měně odběratele. Je nutné definovat typ směnného kurzu pro limit úvěru v měně odběratele. V poli **Typ směnného kurzu limitu úvěru** vyberte typ směnného kurzu, který má být použit k převodu primárního limitu úvěru na limit úvěru odběratele.
 - Chcete-li uživatelům zabránit v úpravách limitů úvěru na stránce **Odběratel**, nastavte možnost **Povolit ruční úpravy limitů úvěru** na **Ne**. Je-li tato možnost nastavena na **Ne**, změny limitu úvěru odběratele lze provést pouze zaúčtováním transakcí úprav limitu úvěru.
+- Nastavte možnost **Obejít rezervace zásob** na **Ano**, aby byly ignorovány rezervace zásob při kontrole pravidel blokování správy kreditu. V tomto případě systém zkontroluje kompletní množství řádku a povolí období odkladu kontrolních bodů bez ohledu na rezervované množství zásob.
+- Když je povolena správa kreditu, nastavení pole **Zpráva při překročení limitu úvěru** se použije pouze pro zpracování volných faktur. Přestože se zprávy nadále přidávají do prodejních objednávek, když zákazníci překročí svůj limit úvěru, přítomnost těchto zpráv neblokuje potvrzení, tisk výdejek a dodacích listů, ani zaúčtování faktur.
+
+    Správa kreditu je ve výchozím nastavení povolena, ale můžete ji zakázat. Pokud je povolena, pomocí pravidel blokování správy kreditu a kontrolních bodů můžete zjistit, kdy zákazníci překročí svůj limit úvěru. Pokud je zakázána, zprávy přidávané do prodejních objednávek na základě nastavení pole **Zpráva při překročení limitu úvěru** vám pomohou zjistit, kdy zákazníci překročí svůj limit úvěru.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Číselné řady a sdílené parametry číselných řad
 
 Ke zpracování úprav limitu úvěru je nutné zadat ID deníku. Je nutné přidat číslo úpravy limitu úvěru, které by mělo být použito ke generování ID deníku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

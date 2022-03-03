@@ -1,12 +1,10 @@
 ---
 title: Parametry správy majetku
 description: Ve správě majetku musí být nastaveny obecné parametry týkající se majetku, pracovních příkazů a plánování pracovních příkazů.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020646"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105482"
 ---
 # <a name="asset-management-parameters"></a>Parametry správy majetku
 
@@ -51,7 +49,7 @@ Karta **Pracovní příkazy** poskytuje následující nastavení:
 - **Výchozí typ pracovního příkazu** definuje standardní nastavení při vytváření pracovního příkazu.  
 - **Typ preventivního pracovního příkazu** definuje typ pracovního příkazu, který se používá při vytváření pracovních příkazů z plánů údržby. Pokud je toto pole ponecháno prázdné, použije se typ pracovního příkazu v poli **Výchozí typ pracovního příkazu**.  
 - V poli **Maska souvisejícího pracovního příkazu** definujete maximální počet pracovních příkazů, které mohou souviset s pracovním příkazem. Příklad: ## umožňuje použít až 99 souvisejících pracovních příkazů. Pokud definujete masku tak, jak je zde uvedeno, budou související pracovní příkazy očíslovány [ID pracovního příkazu, s nímž je spojen pracovní příkaz]-01,-02,-03 atd. Pokud v tomto poli nedefinujete masku, související pracovní příkaz dostane ID s následujícím pořadovým číslem.  
-- Pokud chcete automaticky kopírovat chyby registrované na pracovních příkazech do souvisejících požadavků na údržbu, vyberte možnost **Ano** na přepínacím tlačítku **Kopírovat chyby**. 
+- Pokud chcete automaticky kopírovat chyby registrované u požadavků na údržbu do souvisejících pracovních příkazů, vyberte možnost **Ano** na přepínacím tlačítku **Kopírovat chyby**. 
 - V poli **Úroveň** definujete úroveň funkčních míst, která je automaticky vložena do pracovního příkazu, pokud všechny související úlohy pracovních příkazů odkazují na stejné funkční místo. Pokud úlohy pracovních příkazů nesouvisí všechny se stejným funkčním místem na definované úrovni, pole **Funkční místo** zůstane na pracovním příkazu prázdné. Například: Pokud do tohoto pole vložíte číslo 1, jedná se o nejvyšší úroveň ve struktuře funkčních míst. Pokud do tohoto pole vložíte číslo 0, nedefinovali jste specifickou úroveň funkčního místa, ale pouze to, že všechny úlohy pracovních příkazů na pracovním příkazu musí souviset se stejným funkčním místem, které má být přidáno do pracovního příkazu.  
 - Deníky používané při účtování spotřeby na pracovním příkazu lze vybrat na záložce s náhledem **Obecné** v polích **Hodina**, **Položka** a **Výdaje**.  
 - V poli **Zdroj jazyka produktu** vyberte jazyk, který chcete použít pro názvy produktů v sestavách správy majetku. Můžete vybrat jazyk nastavený na účtu společnosti nebo jazyk nastavený pro aktuálně přihlášeného uživatele.  
@@ -101,8 +99,11 @@ Pole popsaná v následujícím seznamu se vztahují k vypočítaným skóre hod
 
 ## <a name="the-document-types-tab"></a>Karta typ dokumentu
 
-Vyberte typy dokumentů, které mají být k dispozici pro tisk příloh souvisejících se sestavou pracovního příkazu. To se provádí výběrem typu dokumentu v části **Dostupné** a výběrem ![šipky vpřed](media/15-setup-for-objects.png). Pokud chcete odstranit vybraný typ dokumentu, vyberte typ dokumentu v části **Vybrané** a vyberte tlačítko se ![šipkou zpět](media/16-setup-for-objects.png).
+Vyberte typy dokumentů, které mají být k dispozici pro tisk příloh souvisejících se sestavou pracovního příkazu. To se provádí výběrem typu dokumentu v části **Dostupné** a výběrem ![šipky vpřed.](media/15-setup-for-objects.png). Pokud chcete odstranit vybraný typ dokumentu, vyberte typ dokumentu v části **Vybrané** a vyberte tlačítko se ![šipkou zpět](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Karta Číselné řady
 
 Vyberte požadované číselné řady v tomto oddílu. Existují dvě číselné řady pro majetek: jedna pro ručně vytvořený majetek a druhá pro majetek vytvořený prostřednictvím čekajících majetků.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

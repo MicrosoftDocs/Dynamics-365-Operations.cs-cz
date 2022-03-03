@@ -2,25 +2,22 @@
 title: Seskupení vyskladnění
 description: Seskupení vyskladnění nabízejí způsob, jak vybrat více registračních značek najednou a poté je vyskladnit do různých umístění. Mohou být velmi užitečné pro maloobchod, kde registrační značky obvykle nejsou plnými paletami zásob.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512323"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103656"
 ---
 # <a name="putaway-clusters"></a>Seskupení vyskladnění
 
@@ -28,12 +25,9 @@ ms.locfileid: "4512323"
 
 Seskupení vyskladnění nabízejí způsob, jak vybrat více registračních značek najednou a poté je vyskladnit do různých umístění. Tento proces se často označuje jako *milk run*. Seskupení vyskladnění mohou být velmi užitečná pro maloobchod, kde registrační značky obvykle nejsou plnými paletami zásob. 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>Zapnutí funkce seskupení vyskladnění
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce seskupení vyskladnění
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Funkce seskupení vyskladnění*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta *Funkce seskupení vyskladnění*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním *Funkce seskupení vyskladnění* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Nastavení pro příkladový scénář
 
@@ -231,7 +225,7 @@ Tento scénář simuluje zpracování seskupení vyskladnění.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Příjem a třídění zásob do seskupení
 
-1. Přihlaste se do skladové aplikace jako uživatel, který má nastavený sklad *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který je nastaven pro sklad *61*.
 1. V hlavní nabídce vyberte **Příchozí**.
 1. V nabídce **Příchozí** vyberte **Přijímat a setřídit seskupení**.
 1. V poli **Ponum** zadejte číslo nákupní objednávky.
@@ -273,7 +267,7 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 
 #### <a name="put-the-cluster-away"></a>Vyskladnění seskupení
 
-1. Přihlaste se do skladové aplikace jako uživatel, který má nastavený sklad *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel, který je nastaven pro sklad *61*.
 1. V hlavní nabídce vyberte **Příchozí**.
 1. V nabídce **Příchozí** zvolte **Vyskladnění seskupení**.
 1. Vyberte **ID seskupení** a zadejte ID seskupení, které jste dříve zadali pro uzavřené seskupení.
@@ -287,7 +281,7 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 
     Máte standardní možnosti, jak tento krok přepsat nebo předat.
 
-    ![Vyskladnění seskupení: Stránka vložení](media/Cluster_putaway-Put.png "Vyskladnění seskupení: Stránka vložení")
+    ![Vyskladnění seskupení: Stránka vložení.](media/Cluster_putaway-Put.png "Vyskladnění seskupení: Stránka vložení")
 
 1. Zvolte **OK** a potvrďte vyskladnění seskupení.
 
@@ -296,3 +290,6 @@ Než bude možné položky v seskupení vyskladnit, musí být seskupení uzavř
 ## <a name="notes-and-tips"></a>Poznámky a tipy
 
 V případech, kdy se ID seskupení stane nadřazenou registrační značkou pro vnořenou paletu, je při skenování ID seskupení pozice vložení automaticky dána. Žádná další registrační značka nesmí být skenována, i když je generování poznávací značky nastaveno na ruční.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

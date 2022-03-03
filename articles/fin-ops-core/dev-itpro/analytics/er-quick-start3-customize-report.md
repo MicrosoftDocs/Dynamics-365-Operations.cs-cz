@@ -2,27 +2,27 @@
 title: Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 description: Toto téma vysvětluje, jak přizpůsobit konfigurace elektronického výkaznictví (ER) od společnosti Microsoft, které generují vlastní elektronické doklady.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683008"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324080"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 
@@ -108,7 +108,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance Finance, mus
 5. Na záložce s náhledem **Verze** vyberte verzi **11.2.2**.
 6. Volbou **Importovat** stáhnete vybranou verzi z globálního úložiště.
 
-![Stránka úložiště konfigurace](./media/er-quick-start3-import-solution1.png)
+![Stránka úložiště konfigurace.](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > Pokud máte potíže s přístupem na [globální úložiště](er-download-configurations-global-repo.md), můžete si místo toho [stáhnout konfigurace](download-electronic-reporting-configuration-lcs.md) ze služby Microsoft Dynamics Lifecycle Services (LCS).
@@ -120,9 +120,9 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance Finance, mus
 3. Na stránce **Konfigurace** rozbalte pevnou záložku **Konfigurační komponenty**.
 4. V konfiguračním stromu v levém podokně rozbalte **Model faktury** a poté rozbalte **Prodejní faktura UBL**.
 
-Všimněte si, že kromě vybraného formátu ER **Prodejní faktura Peppol** byly importovány další požadované konfigurace ER. Protože nové verze konfigurací ER jsou neustále publikovány do globálního úložiště a LCS, aby odpovídající řešení vyhovovala novým požadavkům, nejnovější verze požadované konfigurace [datového modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) a jeho konfigurace [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) byly importovány.
+Všimněte si, že kromě vybraného formátu ER **Prodejní faktura Peppol** byly importovány další požadované konfigurace ER. Protože nové verze konfigurací ER jsou neustále publikovány do globálního úložiště a LCS, aby odpovídající řešení vyhovovala novým požadavkům, nejnovější verze požadované konfigurace datového modelu a jeho konfigurace mapování modelu byly importovány.
 
-![Stránka Konfigurace](./media/er-quick-start3-imported-solution1a.png)
+![Stránka konfigurace.](./media/er-quick-start3-imported-solution1a.png)
 
 Pro simulaci stavu, ve kterém by byly konfigurace ER v aktuální instanci Finance, pokud jste importovali verzi **11.2.2** formátu ER **Prodejní faktura Peppol** v minulosti (například 7. srpna 2019), postupujte takto.
 
@@ -133,32 +133,32 @@ Potom se ujistěte, že ve stromu konfigurací jsou k dispozici následující 
 
 - Konfigurace datového modelu ER **Model faktury** (původně pojmenovaná **Model faktury zákazníka**):
 
-    - Verze 11 obsahuje verzi 10 komponenty ER [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components), která představuje datovou strukturu fakturační obchodní domény. Tato konfigurace ER byla importována jako předchůdce formátu ER **Prodejní faktura Peppol**, který byl vybrán pro import.
+    - Verze 11 obsahuje verzi 10 komponenty ER datový model, která představuje datovou strukturu fakturační obchodní domény. Tato konfigurace ER byla importována jako předchůdce formátu ER **Prodejní faktura Peppol**, který byl vybrán pro import.
     - Verze 50 obsahuje verzi 31 komponentu ER datového modelu. Tato konfigurace ER byla importována jako předchůdce verze z 7. srpna 2019 konfigurace mapování modelu ER **Mapování modelu faktury**.
 
-    ![Konfigurace datového modelu modelu ER na stránce Konfigurace](./media/er-quick-start3-imported-solution1b1.png)
+    ![Konfigurace datového modelu modelu ER na stránce Konfigurace.](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > Pokud nevidíte verzi 50 tohoto datového modelu, otevřete globální úložiště a importujte verzi 50.19 konfigurace ER **Mapování modelu faktury**.
 
 - Konfigurace mapování modelu ER **Mapování modelu faktury** (původně pojmenovaná **Mapování modelu faktury zákazníka**):
 
-    - Verze 50.19 byla importována jako nejnovější implementace verze 50 konfigurace datového modelu ER **Model faktury**. Obsahuje dvě komponenty ER [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components), které popisují, jak je datový model vyplněn daty aplikace za běhu.
+    - Verze 50.19 byla importována jako nejnovější implementace verze 50 konfigurace datového modelu ER **Model faktury**. Obsahuje dvě komponenty ER mapování modelu, které popisují, jak je datový model vyplněn daty aplikace za běhu.
 
-    ![Konfigurace mapování modelu ER mapování faktury na stránce Konfigurace](./media/er-quick-start3-imported-solution1b2.png)
+    ![Konfigurace mapování modelu ER mapování faktury na stránce Konfigurace.](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > Pokud nevidíte verzi 50.19 tohoto mapování modelu, otevřete globální úložiště a importujte verzi 50.19 konfigurace ER **Mapování modelu faktury**.
 
 - Konfigurace formátu elektronického výkaznictví **Prodejní faktura UBL**:
 
-    - Verze 11.2 obsahuje [formát](general-electronic-reporting.md#FormatComponentOutbound) a komponenty ER mapování formátu. Komponenta formát určuje rozvržení sestavy. Komponenta mapování formátu obsahuje zdroj dat modelu a určuje, jak se tento zdroj dat používá k vyplnění rozvržení sestavy za chodu. Tento formát ER byl nakonfigurován tak, aby generoval e-faktury ve formátu Universal Business Language (UBL). Byla importována jako nadřazená verze formátu ER **Prodejní faktura Peppol**, který byl vybrán pro import.
+    - Verze 11.2 obsahuje formát a komponenty ER mapování formátu. Komponenta formát určuje rozvržení sestavy. Komponenta mapování formátu obsahuje zdroj dat modelu a určuje, jak se tento zdroj dat používá k vyplnění rozvržení sestavy za chodu. Tento formát ER byl nakonfigurován tak, aby generoval e-faktury ve formátu Universal Business Language (UBL). Byla importována jako nadřazená verze formátu ER **Prodejní faktura Peppol**, který byl vybrán pro import.
 
 - Konfigurace formátu elektronického výkaznictví **Prodejní faktura Peppol**:
 
     - Verze 11.2.2 obsahuje komponenty ER pro formátování a formátování mapování, které byly konfigurovány pro generování elektronických faktur ve formátu PEPPOL (Pan-European Public Procurement OnLine).
 
-    ![Konfigurace formátu ER prodejní faktury Peppol na stránce Konfigurace](./media/er-quick-start3-imported-solution1b3.png)
+    ![Konfigurace formátu ER prodejní faktury Peppol na stránce Konfigurace.](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="configure-the-accounts-receivable-parameters"></a><a name="ConfigureAR1"></a>Konfigurujte parametry pohledávek.
 
@@ -166,7 +166,7 @@ Potom se ujistěte, že ve stromu konfigurací jsou k dispozici následující 
 2. Na kartě **Elektronické dokumenty** na pevné záložce **Elektronické výkaznictví** v poli **Prodejní a volná faktura** vyberte **Prodejní faktura Peppol**.
 3. Zvolte **Uložit**.
 
-![Karta Elektronické dokumenty na stránce Parametry pohledávek](./media/er-quick-start3-configure-ar1.png)
+![Karta Elektronické dokumenty na stránce Parametry pohledávek.](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>Nakonfigurujte parametry právnické osoby
 
@@ -216,9 +216,9 @@ Nyní můžete použít standardní konfigurace ER, které jste importovali, k e
     - V poli **Hlavní účet** vyberte **401100**.
     - Do pole **Jednotková cena** zadejte **1000**.
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
-![Stránka Volná faktura](./media/er-quick-start3-add-invoice.png)
+![Stránka Volná faktura.](./media/er-quick-start3-add-invoice.png)
 
 Více informací naleznete v tématu [Vytvoření volné faktury](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
@@ -228,14 +228,14 @@ Více informací naleznete v tématu [Vytvoření volné faktury](../../../finan
 2. Na stránce **Volná faktura** v podokně akcí vyberte **Zaúčtovat**.
 3. V dialogovém okně **Zaúčtovat volnou fakturu** vyberte **OK**.
 
-![Stránka Podrobnosti volné faktury](./media/er-quick-start3-post-invoice.png)
+![Stránka Podrobnosti volné faktury.](./media/er-quick-start3-post-invoice.png)
 
 ### <a name="send-a-posted-invoice"></a>Odešlete zaúčtovanou fakturu.
 
 1. Přejděte na **Pohledávky** \> **Faktury** \> **Všechny volné faktury**.
 2. Na stránce **Volná faktura** v podokně Akce ve skupině **Dokument** vyberte **Poslat** \> **Originál**.
 
-    ![Náhled původní faktury](./media/er-quick-start3-send-invoice.png)
+    ![Náhled původní faktury.](./media/er-quick-start3-send-invoice.png)
 
 3. Zavřete stránku **Volná faktura**.
 
@@ -245,12 +245,12 @@ Více informací naleznete v tématu [Vytvoření volné faktury](../../../finan
 2. Na stránce **Úlohy elektronických sestav** vyberte počáteční záznam, který má popis úkolu **Poslat efakturu XML**.
 3. Vyberte **Zobrazit soubory** pro přístup k seznamu vygenerovaných souborů.
 
-    ![Stránka úloh elektronického vykazování](./media/er-quick-start3-jobs-list.png)
+    ![Stránka úloh elektronického vykazování.](./media/er-quick-start3-jobs-list.png)
 
 4. Vyberte **Otevřít**, chcete-li stáhnout vygenerovaný soubor XML e-faktury.
 5. Analyzujte soubor XML e-faktury. Všimněte si, že schéma daně zákazníků je aktuálně reprezentováno atributy XML **schemeID** a **schemeAgencyID**. Všimněte si také, že prvek XML **cbc: CustomizationID** aktuálně obsahuje následující text: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
-    ![Náhled na vygenerovaný soubor XML e-faktury](./media/er-quick-start3-e-invoice1.png)
+    ![Náhled na vygenerovaný soubor XML e-faktury.](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>Přidejte vlastní databázové pole
 
@@ -282,7 +282,7 @@ Podle těchto pokynů proveďte přizpůsobení.
 12. V zobrazeném okně se zprávou vyberte **Ano** a potvrďte, že chcete vytvořit novou položku pole **FederalTaxID** pro tabulku **Zákazníci**.
 13. Vyberte **Vložit** pro <a name="insert_custom_field"></a>přidání pole **FederalTaxID\_Custom** na aktuální stránku.
 
-    ![Stránka Všichni odběratelé](./media/er-quick-start3-create-new-field.gif)
+    ![Stránka Všichni odběratelé.](./media/er-quick-start3-create-new-field.gif)
 
 14. Zavřete stránku **Všichni zákazníci**.
 
@@ -312,7 +312,7 @@ Jako uživatel v roli konzultanta funkčních elektronických zpráv můžete na
 
 Nyní můžete použít návrháře datových modelů ER k úpravě verze 50.1 konfigurace ER **Model faktury (Litware)** v **Návrhu** [stavu](general-electronic-reporting.md#component-versioning).
 
-![Verze 50.1 konfigurace ER na stránce Konfigurace](./media/er-quick-start3-added-custom-model.png)
+![Verze 50.1 konfigurace ER na stránce Konfigurace.](./media/er-quick-start3-added-custom-model.png)
 
 #### <a name="configure-a-custom-data-model"></a>Konfigurace vlastního datového modelu
 
@@ -328,7 +328,7 @@ Musíte upravit svůj vlastní datový model přidáním nového pole a poskytno
 8. V poli **Typ položky** přijměte výchozí hodnotu **Řetězec**.
 9. Vyberte **Přidat** a potom **Uložit**.
 
-    ![Stránka Návrhář modelu dat](./media/er-quick-start3-add-data-model-field.png)
+    ![Stránka Návrhář modelu dat.](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > Pole **Označení** a **Popis** popisují účel nového pole. Tato pole můžete vyplnit ve více jazycích. Další informace najdete v tématu [Návrh vícejazyčných sestab v elektronickém výkaznictví](er-design-multilingual-reports.md).
@@ -345,7 +345,7 @@ Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci
 
 Stav verze 50.1 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 50.2, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci datového modelu ER.
 
-![Verze 50.1 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-model1.png)
+![Verze 50.1 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-model1.png)
 
 ### <a name="customize-the-model-mapping-configuration"></a>Přizpůsobte konfiguraci mapování modelu
 
@@ -365,7 +365,7 @@ Jako uživatel v roli vývojáře elektronických zpráv můžete navrhnout svů
 
 7. Vyberte **Vytvořit konfiguraci** pro přidání nové konfigurace ER.
 
-![Přidání vlastní konfigurace mapování modelu na stránce Konfigurace](./media/er-quick-start3-adding-custom-mapping.png)
+![Přidání vlastní konfigurace mapování modelu na stránce Konfigurace.](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### <a name="configure-a-custom-model-mapping"></a>Konfigurace vlastního mapování modelu
 
@@ -376,7 +376,7 @@ Musíte upravit mapování vlastního modelu a určit, jak by mělo vlastní pol
 3. V podokně akcí zvolte **Návrhář**.
 4. Na stránce **Mapování modelu na zdroj dat** vyberte mapování **Faktury zákazníka**.
 
-    ![Stránka Mapování modelu na zdroj dat](./media/er-quick-start3-select-customer-mapping.png)
+    ![Stránka Mapování modelu na zdroj dat.](./media/er-quick-start3-select-customer-mapping.png)
 
 5. Vyberte možnost **Návrhář**.
 6. Na stránce **Návrhář mapování modelů** v podokně **Zdroje dat** rozbalte datový zdroj **CustInvoiceJour**, který představuje tabulku aplikkace **CustInvoiceJour**.
@@ -386,9 +386,9 @@ Musíte upravit mapování vlastního modelu a určit, jak by mělo vlastní pol
 10. V podokně **Datový model** rozbalte **Informace o zákazníkovi (zákazník)** a vyberte pole datového modelu **FederalTaxID\_Litware**.
 11. Vyberte možnost **vazba**.
 
-    ![Stránka návrháře mapování modelu](./media/er-quick-start3-customize-model-mapping.gif)
+    ![Stránka návrháře mapování modelu.](./media/er-quick-start3-customize-model-mapping.gif)
 
-12. Zvolte **Uložit**.
+12. Zvolte možnost **Uložit**.
 13. Zavřete stránku **Návrhář mapování modelu**.
 14. Zavřete stránku **Mapování modelu na zdroj dat**.
 
@@ -402,7 +402,7 @@ Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci
 
 Stav verze 50.19.1 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 50.19.2, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci mapování modelu ER.
 
-![Verze 50.19.1 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-mapping1.png)
+![Verze 50.19.1 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > Podporovaná konfigurace [životního cyklu](general-electronic-reporting-manage-configuration-lifecycle.md) nepokrývá životní cyklus databázových změn. Pokud exportujete verzi 50.19.1 konfigurace **Mapování modelu faktury (Litware)** z aktuální instance Finance a zkusíte ji importovat do jiné instance, která neobsahuje vlastní pole **FederalTaxID\_Custom** v tabulce **CustTable**, dojde k výjimce. Výjimkou bude uvedeno, že importovaná konfigurace ER není kompatibilní s metadaty cílové instance Finance.
@@ -426,11 +426,11 @@ Jako uživatel v roli konzultanta funkčních elektronických zpráv můžete na
 7. V poli **Datový model** vyberte kořenovou definici **InvoiceCustomer**.
 8. Vyberte **Vytvořit konfiguraci** pro přidání nové konfigurace ER.
 
-![Přidání vlastní konfigurace formátu na stránce Konfigurace](./media/er-quick-start3-adding-custom-format.png)
+![Přidání vlastní konfigurace formátu na stránce Konfigurace.](./media/er-quick-start3-adding-custom-format.png)
 
 Nyní můžete použít návrháře operací ER k úpravě verze 11.2.2.1 konfigurace ER **Prodejní faktury Peppol (Litware)** v **Koncept** [stavu](general-electronic-reporting.md#component-versioning).
 
-![Verze 11.2.2.1 konfigurace ER na stránce Konfigurace](./media/er-quick-start3-added-custom-format.png)
+![Verze 11.2.2.1 konfigurace ER na stránce Konfigurace.](./media/er-quick-start3-added-custom-format.png)
 
 #### <a name="configure-a-custom-format"></a>Konfigurace vlastního formátu
 
@@ -446,7 +446,7 @@ Svůj vlastní formát musíte upravit přidáním nového prvku formátu, kter�
 8. Ve stromě formátů v **XMLHeader** \> **Faktura** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** vyberte **FederalTaxID**.
 9. Vyberte **Přesunout nahoru**.
 
-![Nový prvek formátu na stránce Návrhář formátu](./media/er-quick-start3-customized-format.png)
+![Nový prvek formátu na stránce Návrhář formátu.](./media/er-quick-start3-customized-format.png)
 
 #### <a name="configure-a-custom-format-mapping"></a>Konfigurace vlastního mapování formátu
 
@@ -454,7 +454,7 @@ Svůj vlastní formát musíte upravit přidáním nového prvku formátu, kter�
 2. Ve **Faktuře** rozbalte **Informace o zákazníkovi (zákazník)** a vyberte **FederalTaxID\_Litware**.
 3. Vyberte možnost **vazba**.
 
-    ![Stránka návrháře formátu](./media/er-quick-start3-customized-format-mapping.png)
+    ![Stránka návrháře formátu.](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Vyberte zdroj dat **Faktura** typu **Model** a potom vyberte **Upravit**.
 5. V poli **Verze** vyberte verzi **1** vašeho vlastního datového modelu a poté vyberte **OK**.
@@ -471,7 +471,7 @@ Musíte [dokončit](general-electronic-reporting.md#component-versioning) práci
 
 Stav verze 11.2.2.1 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 11.2.2.2, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci formátu ER.
 
-![Verze 11.2.2.1 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-format1.png)
+![Verze 11.2.2.1 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="configure-the-accounts-receivable-parameters-to-start-to-use-custom-er-configurations"></a><a name="ConfigureAR2"></a>Nakonfigurujte parametry pohledávek, abyste mohli začít používat vlastní konfigurace ER.
 
@@ -479,16 +479,16 @@ Stav verze 11.2.2.1 se změní z **Koncept** na **Dokončeno** a verze se změn�
 2. Na kartě **Elektronické dokumenty** na pevné záložce **Elektronické výkaznictví** v poli **Prodejní a volná faktura** vyberte **Prodejní faktura Peppol (Litware)**.
 3. Zvolte **Uložit**.
 
-![Stránka Parametry pohledávek, karta Elektronické dokumenty, pevná záložka Elektronické vykazování](./media/er-quick-start3-configure-ar2.png)
+![Stránka Parametry pohledávek, karta Elektronické dokumenty, pevná záložka Elektronické vykazování.](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="update-a-customer-record-by-adding-a-federal-tax-identification-code"></a><a name="ConfigureCustomer2"></a>Aktualizujte záznam zákazníka přidáním federálního daňového identifikačního kódu
 
 1. Přejděte na **Pohledávky** \> **Odběratelé** \> **Všichni odběratelé**.
 2. Na stránce **Všichni zákazníci** vyberte odkaz na zákaznický účet **DE-014**.
 3. Na pevné záložce **Všeobecné** v poli **ID federální daně** zadejte **LITWARE-6789**.
-4. Zvolte **Uložit**.
+4. Zvolte možnost **Uložit**.
 
-    ![Stránka podrobnosti o zákazníkovi De-014](./media/er-quick-start3-added-tax-id-value.png)
+    ![Stránka podrobnosti o zákazníkovi De-014.](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Zavřete stránku **Všichni zákazníci**.
 
@@ -509,7 +509,7 @@ Stav verze 11.2.2.1 se změní z **Koncept** na **Dokončeno** a verze se změn�
 4. Vyberte **Otevřít**, chcete-li stáhnout vygenerovaný soubor XML e-faktury.
 5. Analyzujte soubor XML e-faktury. Všimněte si, že v souladu s vaším přizpůsobením zahrnuje schéma daně pro zákazníky vlastní atribut XML **FederalTaxID** vedle atributů XML **schémeID** a **schemeAgencyID**. Hodnotu tohoto nového atributu XML určuje ID federální daně **LITWARE-6789**, které bylo zadáno pro fakturovaného zákazníka.
 
-    ![Náhled na vygenerovaný soubor XML e-faktury s vašimi přizpůsobeními](./media/er-quick-start3-e-invoice2.png)
+    ![Náhled na vygenerovaný soubor XML e-faktury s vašimi přizpůsobeními.](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>Importujte poslední verze standardních konfigurací ER
 
@@ -522,7 +522,7 @@ Chcete-li zachovat sadu standardních konfigurací ER ve vaší instanci Finance
 5. Na pevné záložce **Verze** vyberte verzi **32.6.7** vybrané konfigurace formátu ER, která byla vydána na podporu elektronických faktur zákazníků ve formátu PEPPOL BIS 3. Další informace naleznete v článku [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Vyberte **Importovat**. Vybraná verze se stáhne z globálního úložiště do aktuální instance aplikace Finance.
 
-![Verze 32.6.7 vybraná na stránce Konfigurační úložiště](./media/er-quick-start3-import-solution2.png)
+![Verze 32.6.7 vybraná na stránce Konfigurační úložiště.](./media/er-quick-start3-import-solution2.png)
 
 Informace o tom, jak lze tento proces automatizovat, najdete v části [Importujte aktualizované verze konfigurací ER](er-download-updated-versions-global-repo.md).
 
@@ -543,13 +543,13 @@ Ujistěte se, že ve stromu konfigurací jsou nakonec k dispozici následujíc�
 
     - Verze 206 (nebo pozdější) obsahuje verzi 24 (nebo pozdější) komponenty ER datový model, která představuje datovou strukturu fakturační obchodní domény. Tato konfigurace ER byla importována jako předchůdce nejnovějšího dostupné konfigurace mapování modelu ER **Mapování modelu faktury**.
 
-    ![Verze 206 na stránce Konfigurace](./media/er-quick-start3-imported-solution2b1.png)
+    ![Verze 206 na stránce Konfigurace.](./media/er-quick-start3-imported-solution2b1.png)
 
 - Konfigurace mapování modelu ER **Mapování modelu faktury**:
 
     - Verze 206.132 (nebo pozdější) byla importována jako nejnovější implementace verze 206 konfigurace datového modelu ER **Model faktury**. Obsahuje několik komponent ER mapování modelu, které popisují, jak je datový model vyplněn daty aplikace za běhu.
 
-    ![Verze 206.132 na stránce Konfigurace](./media/er-quick-start3-imported-solution2b2.png)
+    ![Verze 206.132 na stránce Konfigurace.](./media/er-quick-start3-imported-solution2b2.png)
 
 - Konfigurace formátu elektronického výkaznictví **Prodejní faktura UBL**:
 
@@ -559,7 +559,7 @@ Ujistěte se, že ve stromu konfigurací jsou nakonec k dispozici následujíc�
 
     - Verze 32.6.7 obsahuje komponenty ER pro formátování a formátování mapování, které byly konfigurovány pro generování elektronických faktur ve formátu PEPPOL.
 
-    ![Verze 32.6.7 na stránce Konfigurace](./media/er-quick-start3-imported-solution2b3.png)
+    ![Verze 32.6.7 na stránce Konfigurace.](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="adopt-the-changes-to-the-new-standard-er-configurations-in-your-custom-er-configurations"></a><a name="RebaseCustomERConfigurations"></a>Přijměte změny nových verzí standardních konfigurací ER ve svých vlastních konfiguracích ER.
 
@@ -579,7 +579,7 @@ Ujistěte se, že ve stromu konfigurací jsou nakonec k dispozici následujíc�
 
 Stav verze 206.2 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 206.3, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci datového modelu ER.
 
-![Verze 206.2 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-model2.png)
+![Verze 206.2 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-model2.png)
 
 ### <a name="adopt-your-custom-er-model-mapping"></a>Přijměte svůj vlastní mapování modelu ER
 
@@ -592,12 +592,12 @@ Stav verze 206.2 se změní z **Koncept** na **Dokončeno** a verze se změní t
 
     Všimněte si, že byly objeveny některé konflikty přeskládání. Nyní musíte tyto konflikty vyřešit ručně.
 
-    ![Zpráva konfliktů přeskládání na stránce Konfigurace](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Zpráva konfliktů přeskládání na stránce Konfigurace.](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. V podokně akcí vyberte **Návrhář** a poté v seznamu mapování vyberte **zákaznická faktura**.
 6. U každého konfliktu přeskládání vyberte **Zachovat vlastní hodnotu**, protože pro každou uvedenou komponentu musíte zachovat číslo verze svého vlastního datového modelu.
 
-    ![Konflikty přeskládání na stránce návrháře mapování modelů](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![Konflikty přeskládání na stránce návrháře mapování modelů.](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Vyberte **Uložit** a poté zavřete stránku **Návrhář mapování modelů**.
 8. V seznamu mapování vyberte **Projektová faktura**.
@@ -611,7 +611,7 @@ Stav verze 206.2 se změní z **Koncept** na **Dokončeno** a verze se změní t
 
 Stav verze 206.132.2 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 206.132.3, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci mapování modelu ER.
 
-![Verze 206.132.2 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-mapping2.png)
+![Verze 206.132.2 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### <a name="adopt-your-custom-er-format"></a>Přijměte svůj vlastní formát ER
 
@@ -639,7 +639,7 @@ Stav verze 206.132.2 se změní z **Koncept** na **Dokončeno** a verze se změn
 
 Stav verze 32.6.7.2 se změní z **Koncept** na **Dokončeno** a verze se změní tak, že bude pouze pro čtení. Byla přidána nová editovatelná verze 32.6.7.3, která je nyní ve stavu **Koncept**. Tuto verzi můžete použít k provedení dalších změn ve vlastní konfiguraci formátu ER.
 
-![Verze 32.6.7.2 dokončena na stránce Konfigurace](./media/er-quick-start3-completed-custom-format2.png)
+![Verze 32.6.7.2 dokončena na stránce Konfigurace.](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="process-a-customer-invoice-by-using-new-versions-of-the-custom-er-configurations"></a><a name="ProcessInvoice3"></a>Zpracujte fakturu zákazníka pomocí nových verzí vlastních konfigurací ER.
 
@@ -662,12 +662,15 @@ Stav verze 32.6.7.2 se změní z **Koncept** na **Dokončeno** a verze se změn�
 4. Vyberte **Otevřít**, chcete-li stáhnout vygenerovaný soubor XML e-faktury.
 5. Analyzujte soubor XML e-faktury. Všimněte si, že v souladu s vaším přizpůsobením stále zahrnuje schéma daně pro zákazníky vlastní atribut XML **FederalTaxID** vedle atributů XML **schémeID** a **schemeAgencyID**. Navíc proto, že změny v nové verzi základního formátu **Prodejní faktura UBL** byly sloučeny s vaším přizpůsobením, text prvku XML **cbc:CustomizationID** byl změněn z `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` na `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
-    ![Náhled na vygenerovaný soubor XML e-faktury s přizpůsobeními](./media/er-quick-start3-e-invoice3.png)
+    ![Náhled na vygenerovaný soubor XML e-faktury s přizpůsobeními.](./media/er-quick-start3-e-invoice3.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Stažení konfigurací ER z Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Stažení konfigurací ER z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
-- [Vytvořit volnou fakturu](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [Vytvořit volnou fakturu](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [Vytvoření vlastních polí a práce s nimi](../../fin-ops/get-started/user-defined-fields.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

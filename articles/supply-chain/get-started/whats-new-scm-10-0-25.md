@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 0ce9bc4685542cf691d862c0fec76f3f7b40c6b6
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087313"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102989"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Náhled Dynamics 365 Supply Chain Management 10.0.25 (duben 2022)
 
@@ -52,11 +52,9 @@ Pokud chcete zapnout nebo vypnout některou z těchto funkcí, musíte to uděla
 |---|---|---|
 | Řízení zásob a skladu | (Polsko) Umožnit propojení několika faktur SAD na jeden řádek nákupní objednávky v jednom SAD | Tato funkce umožňuje rozdělit řádky nákupní objednávky a propojit je s jedním administrativním dokladem (SAD), pokud byly tyto řádky nákupní objednávky zaúčtovány pro několik různých faktur (například pro různé dodávky). |
 | Zásobování a zdroje | Konsolidovat více nákupních žádanek do jedné nákupní objednávky podle účetního data | Tato funkce umožňuje sloučit více nákupních žádanek do jedné nákupní objednávky, pokud mají nákupní žádanky různá účetní data. Pravidla nákupní politiky pro vytváření nákupních objednávek a konsolidaci poptávky lze nastavit tak, aby bylo automatizováno rozhodování o seskupování řádků žádanky podle účetního data na úrovni nákupní objednávky. Konsolidace nákupních objednávek podle účetního data není podporována, pokud je povoleno řízení rozpočtu, protože účetní datum se používá pro rozpočtové rezervace a břemeno. Proto by mělo být uchováno během přechodu z nákupní žádanky na nákupní objednávku. |
-| Zásobování a zdroje | Zakázat tlačítko resetování distribuce nákupní žádanky | Tato funkce deaktivuje tlačítko **Resetovat** na stránce **Rozúčtování** u nákupních žádanek, které jsou v procesu kontroly. |
 | Zásobování a zdroje | Zobrazit starší výchozí nastavení pole odpovědi na RFQ | Tato funkce znovu zavádí starší výchozí pole odpovědi na požadavku na nabídku (RFQ), která byla dříve z uživatelského rozhraní odstraněna. Tato nastavení neposkytují žádné funkce implicitně, ale lze je upravit podle potřeby. Povolte tuto funkci, pokud vaše organizace již přidala funkce pro výchozí nastavení polí odpovědi na RFQ nebo to plánuje. Když je tato funkce povolena, můžete přistupovat k nastavení přechodem na stránku **Parametry modulu Zásobování a zdroje**, kde otevřete kartu **Žádost o cenovou nabídku** a zvolíte **Výchozí pole odpovědí v požadavku na nabídku**. |
 | Zásobování a zdroje | Sloučit finanční dimenze dodavatele s finanční dimenzí aktivního propojení dimenzí na nákupní objednávce | Tato funkce umožňuje sloučit finanční dimenze od dodavatelů s aktivními finančními dimenzemi propojení dimenze po schválení nákupní žádanky, pokud nastavíte propojení mezi finanční dimenzí a dimenzí skladových zásob. Pravidla nákupní politiky pro vytváření nákupních objednávek a konsolidaci poptávky lze nastavit tak, aby řídila rozhodnutí o sloučení finančních dimenzí od dodavatelů s aktivní finanční dimenzí propojení dimenzí na úrovni hlavičky nákupní objednávky. |
 | Řízení výroby | (Rusko) Povolit nastavení výchozího umístění pro výrobní receptury nebo kusovník a automatickou rezervaci GTD nebo spotřebu ve výrobě | Tato funkce umožňuje další možnosti výroby z importovaných surovin (pouze ruská lokalizace):<ul><li>Možnost nastavit automatické výchozí umístění pro výrobní receptury a kusovníky ve skupinách zdrojů i ve skladech.</li><li>Automatická rezervace surovin podle dimenze *Číslo GTD* dimenze ve skladech s aktivovaným WMS podle rezervačního algoritmu, který není WMS. To platí v případech, kdy existuje zásada práce pro *Výdej suroviny* s **Metodou tvorby práce** nastavenou na *Nikdy*, jejíž nastavení skladu, umístění a čísla položky odpovídá inventárním transakcím výrobní zakázky (dávky).</li><li>Automatická spotřeba surovin podle dimenze *Číslo GTD* při zaúčtování výdejky, podle výše popsané pořízené rezervace.</li></ul> |
-| Řízení skladu | Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob | Tato funkce zabraňuje systému vytvářet očekávané transakce příjmu pro objednávky kvality, které vzorkují zásoby se stavem blokování. Protože zablokované zásoby nejsou k dispozici, tato funkce odstraní očekávané příjemky. To pomáhá zajistit, aby zásoby nakonec neměly několik stavů blokování, což může vést k problémům s integritou dat. |
 | Řízení skladu | (Náhled) Podpora jednotky škálování pro příchozí a odchozí objednávky skladu | Tato funkce způsobí, že systém vytvoří odchozí skladové objednávky během procesu uvolnění do skladu a vytvoří příchozí skladové objednávky, když jsou převodní příkazy zaúčtovány jako odeslané. Systém pak synchronizuje každou příchozí nebo odchozí skladovou objednávku s jednotkou škálování odpovědnou za odeslání nebo přijetí objednávky. Všimněte si, že po povolení této funkce je nutné upgradovat vaše prováděcí úlohy skladu. Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Tato funkce vyžaduje funkci *Odpojit odloženou práci od ASN* a umožní možnost přijímat převodní příkazy pomocí procesu příjmu registrační značky v mobilní aplikaci Warehouse Management. |
 
 ## <a name="feature-state-changes-in-this-release"></a>Změny stavu funkcí v této verzi
@@ -67,121 +65,121 @@ Tabulka také uvádí funkce, které byly dříve ve veřejném preview, ale zm�
 
 | Modul | Název funkce | Stav funkce |
 | --- | --- | --- |
-| Správa majetku | Použít pravidla pro seskupování pracovních příkazů při provádění plánu údržby | Obecně dostupné |
-| Správa majetku | Vylepšení údržby na základě čítače | Obecně dostupné |
-| Správa nákladů | Úroveň výpočtu nákladů | Obecně dostupné |
+| Správa majetku | [Použít pravidla pro seskupování pracovních příkazů při provádění plánu údržby](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Obecně dostupné |
+| Správa majetku | [Vylepšení údržby na základě čítače](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Obecně dostupné |
+| Správa nákladů | [Úroveň výpočtu nákladů](../cost-management/cost-calculation-level.md) | Obecně dostupné |
 | Správa nákladů | Povolit nastavení čísla dávky definované uživatelem pro storno uzávěrky zásob | Obecně dostupné |
-| Správa nákladů | Podrobnosti o průběhu uzávěrky zásob | Obecně dostupné |
-| Správa nákladů | Možnosti výchozích finančních dimenzí pro přecenění standardních nákladů na zásoby | Obecně dostupné |
+| Správa nákladů | [Podrobnosti o průběhu uzávěrky zásob](whats-new-scm-10-0-21.md) | Obecně dostupné |
+| Správa nákladů | [Možnosti výchozích finančních dimenzí pro přecenění standardních nákladů na zásoby](../cost-management/manage-standard-cost-updates.md) | Obecně dostupné |
 | Správa nákladů | Vyčištění dat výkazu hodnoty zásob | Zapnuto ve výchozím nastavení |
-| Správa nákladů | Úložiště sestavy hodnot zásob | Zapnuto ve výchozím nastavení |
+| Správa nákladů | [Úložiště sestavy hodnot zásob](../cost-management/inventory-value-report-storage.md) | Zapnuto ve výchozím nastavení |
 | Správa nákladů | Zobrazit protokol uzávěrky zásob v mřížce | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Povolení správy změn u stávajících produktů | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Správa technických změn | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Technická oznámení pro výrobu | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Vylepšená dědičnost atributů pro Řízení technických změn | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Spravujte změny v recepturách a jejich látkách | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Kontroly připravenosti produktu | Zapnuto ve výchozím nastavení |
-| Správa technických změn | Generování varianty pro technické produkty | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Povolení správy změn u stávajících produktů](../engineering-change-management/change-management-existing-products.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Správa technických změn](../engineering-change-management/product-engineering-overview.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Technická oznámení pro výrobu](../engineering-change-management/engineering-change-management.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Vylepšená dědičnost atributů pro Řízení technických změn](../engineering-change-management/engineering-attributes-and-search.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Spravujte změny v recepturách a jejich látkách](../engineering-change-management/manage-formula-changes.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Kontroly připravenosti produktu](../engineering-change-management/product-readiness.md) | Zapnuto ve výchozím nastavení |
+| Správa technických změn | [Generování varianty pro technické produkty](../engineering-change-management/engineering-variants.md) | Zapnuto ve výchozím nastavení |
 | Řízení zásob a skladu | Navigace do verze kusovníku z řádků kusovníku | Povinné |
-| Hlavní plánování | Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky | Obecně dostupné |
+| Hlavní plánování | [Dávkové potvrzení a konsolidace pro plánované hromadné a balíkové dávkové objednávky](whats-new-scm-10-0-20.md) | Obecně dostupné |
 | Hlavní plánování | Plánování zdrojů s údržbou | Obecně dostupné |
 | Hlavní plánování | Povolení funkcí průvodce nastavení hlavního plánu | Povinné |
-| Hlavní plánování | Výběr modelu prognózy v podrobnostech prognózy poptávky | Povinné |
-| Hlavní plánování | Znázornění průběhu hlavního plánování | Povinné |
-| Hlavní plánování | Paralelní potvrzování plánovaných objednávek | Povinné |
-| Hlavní plánování | Potvrzení plánované objednávky s filtrováním | Zapnuto ve výchozím nastavení |
-| Hlavní plánování | Uložená zobrazení pro plánované objednávky | Zapnuto ve výchozím nastavení |
+| Hlavní plánování | [Výběr modelu prognózy v podrobnostech prognózy poptávky](../master-planning/manual-adjustments-baseline-forecast.md) | Povinné |
+| Hlavní plánování | [Znázornění průběhu hlavního plánování](../master-planning/tasks/monitor-master-planning-run.md) | Povinné |
+| Hlavní plánování | [Paralelní potvrzování plánovaných objednávek](../master-planning/planning-optimization/planned-order-firming.md) | Povinné |
+| Hlavní plánování | [Potvrzení plánované objednávky s filtrováním](../master-planning/planning-optimization/planned-order-firming.md) | Zapnuto ve výchozím nastavení |
+| Hlavní plánování | [Uložená zobrazení pro plánované objednávky](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | Zakázat tlačítko resetování distribuce nákupní žádanky | Obecně dostupné |
-| Zásobování a zdroje | Povolit resetování pracovních postupů souvisejících se zásobováním | Obecně dostupné |
+| Zásobování a zdroje | [Povolit resetování pracovních postupů souvisejících se zásobováním](whats-new-scm-10-0-20.md) | Obecně dostupné |
 | Zásobování a zdroje | Možnost dávkového potvrzení přijatých nákupních objednávek z dodavatelské spolupráce | Povinné |
 | Zásobování a zdroje | Uzavřený stav nákupní smlouvy | Povinné |
 | Zásobování a zdroje | Přidat řádky k fakturám nákupních objednávek přidruženým k nákupní smlouvě | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | Přidat pole Objednané množství na stránku Zaúčtování příjemky produktu | Zapnuto ve výchozím nastavení |
-| Zásobování a zdroje | Umožnit dodavatelům žádat o kategorie zásobování prostřednictvím spolupráce s dodavateli | Zapnuto ve výchozím nastavení |
+| Zásobování a zdroje | [Umožnit dodavatelům žádat o kategorie zásobování prostřednictvím spolupráce s dodavateli](../procurement/category-requests-from-vendors.md) | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | Částky poplatků od a do na nákupních objednávkách | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | Nastavení poplatků s pracovištěm a skladem | Zapnuto ve výchozím nastavení |
 | Zásobování a zdroje | Povolit výpočet dovozního cla na základě ročního tarifu | Zapnuto ve výchozím nastavení |
-| Zásobování a zdroje | Odpovědná strana nákupní smlouvy | Zapnuto ve výchozím nastavení |
-| Zásobování a zdroje | Uložená zobrazení pro nákupní objednávky | Zapnuto ve výchozím nastavení |
-| Správa informací o produktech | Striktní ověření výchozího množství objednávky | Povinné |
+| Zásobování a zdroje | [Odpovědná strana nákupní smlouvy](../procurement/purchase-agreements.md) | Zapnuto ve výchozím nastavení |
+| Zásobování a zdroje | [Uložená zobrazení pro nákupní objednávky](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Správa informací o produktech | [Striktní ověření výchozího množství objednávky](../production-control/default-order-settings.md) | Povinné |
 | Správa informací o produktech | Kusovník předzpracovává sestavy, aby nedošlo k vypršení časového limitu | Zapnuto ve výchozím nastavení |
 | Správa informací o produktech | Výchozí finanční dimenze samostatně při použití šablon položek | Zapnuto ve výchozím nastavení |
 | Správa informací o produktech | Povolit skupiny dimenzí produktů pro šablony položek | Zapnuto ve výchozím nastavení |
 | Správa informací o produktech | Opětovně vygenerovat názvy variant produktů na základě názvosloví | Zapnuto ve výchozím nastavení |
-| Správa informací o produktech | Vylepšení stránky návrhů variant | Zapnuto ve výchozím nastavení |
+| Správa informací o produktech | [Vylepšení stránky návrhů variant](../pim/tasks/create-predefined-product-variants.md) | Zapnuto ve výchozím nastavení |
 | Řízení výroby | Vylepšený výdej množství skutečné hmotnosti produkce | Obecně dostupné |
 | Řízení výroby | Na stránku terminálu úkolových lístků bylo přidáno nové tlačítko Ukončit přestávku | Povinné |
-| Řízení výroby | Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku | Povinné |
+| Řízení výroby | [Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku](../production-control/production-floor-execution-configure.md) | Povinné |
 | Řízení výroby | Povolení částečného příjmu subdodavatelských položek a oprava problému s výpočtem odpadu pro řádky kusovníku typu dodavatele | Povinné |
-| Řízení výroby | Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce | Povinné |
+| Řízení výroby | [Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce](../production-control/production-floor-execution-configure.md) | Povinné |
 | Řízení výroby | Vylepšení dialogových oken Úlohy schválení a Úlohy převodu | Povinné |
-| Řízení výroby | Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku | Povinné |
-| Řízení výroby | Vytisknout štítek ze zařízení úkolového lístku | Povinné |
-| Řízení výroby | Provádění výrobního provozu | Povinné |
-| Řízení výroby | Funkce správy majetku pro rozhraní provádění výrobního provozu | Zapnuto ve výchozím nastavení |
-| Řízení výroby | Vyhledávání práce pro rozhraní ke spuštění výrobního provozu | Zapnuto ve výchozím nastavení |
-| Řízení výroby | Přepsat výchozí rezervaci výroby | Zapnuto ve výchozím nastavení |
-| Řízení výroby | Zobrazit celé sériové číslo, číslo dávky a registrační značku v rozhraní provádění výrobního provozu | Zapnuto ve výchozím nastavení |
-| Prodej a marketing | Vylepšení výkonu podrobností prodejní objednávky | Obecně dostupné |
+| Řízení výroby | [Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku](../production-control/production-floor-execution-configure.md) | Povinné |
+| Řízení výroby | [Vytisknout štítek ze zařízení úkolového lístku](../production-control/production-floor-execution-configure.md) | Povinné |
+| Řízení výroby | [Provádění výrobního provozu](../production-control/production-floor-execution-configure.md) | Povinné |
+| Řízení výroby | [Funkce správy majetku pro rozhraní provádění výrobního provozu](../production-control/production-floor-execution-configure.md) | Zapnuto ve výchozím nastavení |
+| Řízení výroby | [Vyhledávání práce pro rozhraní ke spuštění výrobního provozu](../production-control/production-floor-execution-configure.md) | Zapnuto ve výchozím nastavení |
+| Řízení výroby | [Přepsat výchozí rezervaci výroby](../production-control/override-default-reservation-principle.md) | Zapnuto ve výchozím nastavení |
+| Řízení výroby | [Zobrazit celé sériové číslo, číslo dávky a registrační značku v rozhraní provádění výrobního provozu](whats-new-scm-10-0-21.md) | Zapnuto ve výchozím nastavení |
+| Prodej a marketing | [Vylepšení výkonu podrobností prodejní objednávky](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Obecně dostupné |
 | Prodej a marketing | Vylepšení výkonu podrobností prodejní nabídky | Obecně dostupné |
 | Prodej a marketing | Zásady exportu dat odkazující na prodejní objednávku | Povinné |
-| Prodej a marketing | Zásady odstranění řádku prodejní objednávky propojeného s řádkem nákupní objednávky | Povinné |
-| Prodej a marketing | Zásady exportu dat odkazující na prodejní nabídku | Povinné |
-| Prodej a marketing | Optimalizace exportu datové entity kontaktní osoby | Zapnuto ve výchozím nastavení |
+| Prodej a marketing | [Zásady odstranění řádku prodejní objednávky propojeného s řádkem nákupní objednávky](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy) | Povinné |
+| Prodej a marketing | [Zásady exportu dat odkazující na prodejní nabídku](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy)| Povinné |
+| Prodej a marketing | [Optimalizace exportu datové entity kontaktní osoby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization) | Zapnuto ve výchozím nastavení |
 | Prodej a marketing | Povolit vyhledávání polí úvodu a závěru dokumentu prodejní nabídky | Zapnuto ve výchozím nastavení |
-| Prodej a marketing | Zlepšit výkonnost sestavy „Prvních 100“ zákazníků | Zapnuto ve výchozím nastavení |
+| Prodej a marketing | [Zlepšit výkonnost sestavy „Prvních 100“ zákazníků](whats-new-scm-10-0-23.md) | Zapnuto ve výchozím nastavení |
 | Prodej a marketing | Přepočítat odhadovaný zůstatek zákazníka | Zapnuto ve výchozím nastavení |
-| Prodej a marketing | Registrace řádků vratky prodeje s desetinnou přesností se skutečnou hmotností a bez ní | Zapnuto ve výchozím nastavení |
-| Prodej a marketing | Uložená zobrazení pro prodej a marketing | Zapnuto ve výchozím nastavení |
+| Prodej a marketing | [Registrace řádků vratky prodeje s desetinnou přesností se skutečnou hmotností a bez ní](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight) | Zapnuto ve výchozím nastavení |
+| Prodej a marketing | [Uložená zobrazení pro prodej a marketing](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
 | Prodej a marketing | Potvrzení prodejní objednávky jediným kliknutím | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Šablony cross dockingu se směrnicemi skladového místa | Obecně dostupné |
-| Řízení skladu | Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob | Obecně dostupné |
+| Řízení skladu | [Šablony cross dockingu se směrnicemi skladového místa](../warehousing/planned-cross-docking.md) | Obecně dostupné |
+| Řízení skladu | [Zakázat očekávané příjmy z objednávek kvality, které slouží pro pořízení vzorku blokovaných zásob](../inventory/inventory-blocking.md) | Obecně dostupné |
 | Řízení skladu | Historie přijetí registrační značky | Obecně dostupné |
-| Řízení skladu | Zaokrouhlit množství dolů na nejbližší prodejní jednotku při uvolnění do skladu | Obecně dostupné |
+| Řízení skladu | [Rozhraní vybavení manipulace s materiálem](../warehousing/mhax.md) | Obecně dostupné |
+| Řízení skladu | [Zaokrouhlit množství dolů na nejbližší prodejní jednotku při uvolnění do skladu](whats-new-scm-10-0-19.md) | Obecně dostupné |
 | Řízení skladu | Podpora jednotek škálování pro seznamy prací skladové aplikace | Obecně dostupné |
 | Řízení skladu | Podrobnosti štítku vlny dodávky | Obecně dostupné |
-| Řízení skladu | Použijte rychlejší rozhraní API pro zavírání/opětovné otevírání kontejnerů na balicí stanici | Obecně dostupné |
-| Řízení skladu | Ověřit šablony vybrané pro práci doplnění | Obecně dostupné |
+| Řízení skladu | [Použijte rychlejší rozhraní API pro zavírání/opětovné otevírání kontejnerů na balicí stanici](whats-new-scm-10-0-21.md) | Obecně dostupné |
+| Řízení skladu | [Ověřit šablony vybrané pro práci doplnění](whats-new-scm-10-0-20.md) | Obecně dostupné |
 | Řízení skladu | Povolit šabloně doplnění použít existující práci okamžitého doplnění (napříč jednotkami) | Povinné |
 | Řízení skladu | Automatické přiřazení GUID při vytváření uživatelů WHS | Povinné |
 | Řízení skladu | Zaznamenat varianty produktu a sledovací dimenze ve skladové aplikaci při příjmu položky vytížení | Povinné |
-| Řízení skladu | Změnit stav zásob položek kontrolovaných sledovacími dimenzemi | Povinné |
-| Řízení skladu | Změnit fond práce u práce | Povinné |
-| Řízení skladu | Plná pozice seskupení | Povinné |
-| Řízení skladu | Funkce odložení seskupení | Povinné |
-| Řízení skladu | Potvrdit a převést | Povinné |
-| Řízení skladu | Potvrdit odchozí dodávky z dávkových úloh | Povinné |
-| Řízení skladu | Určit zda se má na mobilních zařízeních zobrazit stránka se souhrnem příjmu | Povinné |
-| Řízení skladu | Odložené zpracování ruční operace přesunu zásob | Povinné |
+| Řízení skladu | [Změnit stav zásob položek kontrolovaných sledovacími dimenzemi](../inventory/inventory-statuses.md) | Povinné |
+| Řízení skladu | [Změnit fond práce u práce](../warehousing/change-work-pool-on-work.md) | Povinné |
+| Řízení skladu | [Plná pozice seskupení](../warehousing/cluster-position-full.md) | Povinné |
+| Řízení skladu | [Funkce odložení seskupení](../warehousing/putaway-clusters.md) | Povinné |
+| Řízení skladu | [Potvrdit a převést](../warehousing/confirm-and-transfer.md) | Povinné |
+| Řízení skladu | [Potvrdit odchozí dodávky z dávkových úloh](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Povinné |
+| Řízení skladu | [Určit zda se má na mobilních zařízeních zobrazit stránka se souhrnem příjmu](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Povinné |
+| Řízení skladu | [Odložené zpracování ruční operace přesunu zásob](../warehousing/deferred-processing-manual-inventory-movement.md) | Povinné |
 | Řízení skladu | Nepovolujte vytváření nákladů, které nesplňují požadavky šablony sestavení vytížení vlny | Povinné |
-| Řízení skladu | Vylepšené rozvržení popisků registračních značek | Povinné |
-| Řízení skladu | Vyhodnocení všech akcí pro směrnice umístění více SKU | Povinné |
+| Řízení skladu | [Vylepšené rozvržení popisků registračních značek](../warehousing/document-routing-layout-for-license-plates.md) | Povinné |
+| Řízení skladu | [Vyhodnocení všech akcí pro směrnice umístění více SKU](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Povinné |
 | Řízení skladu | Skrýt pole Celková hodnota na stránkách Všechny náklady a Podrobnosti o nákladu | Povinné |
 | Řízení skladu | Konfigurace sestavení popisků registračních značek | Povinné |
 | Řízení skladu | Ruční oprava řádku vytížení pro správce nebo podobné důvěryhodné uživatele | Povinné |
-| Řízení skladu | Umístění registrační značky místa | Povinné |
-| Řízení skladu | Směšování dimenzí produktu na skladovém místě | Povinné |
+| Řízení skladu | [Umístění registrační značky místa](../warehousing/location-license-plate-positioning.md) | Povinné |
+| Řízení skladu | [Směšování dimenzí produktu na skladovém místě](../warehousing/location-product-dimension-mixing.md) | Povinné |
 | Řízení skladu | Udělat pole stavu zásob pohybu zásob mobilního zařízení upravitelným | Povinné |
 | Řízení skladu | Služba ručního výdeje řádku prodeje pro správce nebo podobné důvěryhodné uživatele | Povinné |
-| Řízení skladu | Zabránit použití registračních značek odeslaných převodním příkazem na jiných skladech než je cílový sklad | Povinné |
+| Řízení skladu | [Zabránit použití registračních značek odeslaných převodním příkazem na jiných skladech než je cílový sklad](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Povinné |
 | Řízení skladu | Vyzvat k vyřešení nejednoznačných názvů 'Loc / LP' | Povinné |
-| Řízení skladu | Kontrola kvality | Povinné |
-| Řízení skladu | Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci | Povinné |
-| Řízení skladu | Další zóna skladového místa | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Vytvářet a zpracovat převodní příkazy z aplikace skladu | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Kontrola kvality](../warehousing/quality-check.md) | Povinné |
+| Řízení skladu | [Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci](../warehousing/install-configure-warehouse-management-app.md) | Povinné |
+| Řízení skladu | [Další zóna skladového místa](../warehousing/additional-location-zones.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Vytvářet a zpracovat převodní příkazy z aplikace skladu](../warehousing/create-transfer-order-from-warehouse-app.md) | Zapnuto ve výchozím nastavení |
 | Řízení skladu | Povolit rychlé ověření pro mobilních zařízení ve skladu | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Využití skladového místa pro konsolidaci zboží | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Vizualizace odchozí úlohy | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Zpracovat události aplikace skladu | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Uložené zobrazení pro pracovní plochu plánování vytížení | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Uložené zobrazení stránky s podrobnostmi o práci | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Uložené zobrazení pro zpracování vlny | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Uložená zobrazení pro zpracování vytížení | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Uložená zobrazení pro zpracování dodávky | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Podrobnosti dávkové úlohy vlny | Zapnuto ve výchozím nastavení |
-| Řízení skladu | Oznámení o provedení vlny | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu](../warehousing/onhand-cleanup.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Vizualizace odchozí úlohy](../warehousing/outbound-workload-visualization.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Zpracovat události aplikace skladu](../warehousing/warehouse-app-events.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Uložené zobrazení pro pracovní plochu plánování vytížení](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Uložené zobrazení stránky s podrobnostmi o práci](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Uložené zobrazení pro zpracování vlny](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Uložená zobrazení pro zpracování vytížení](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Uložená zobrazení pro zpracování dodávky](saved-views-scm.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Podrobnosti dávkové úlohy vlny](../warehousing/wave-processing.md) | Zapnuto ve výchozím nastavení |
+| Řízení skladu | [Oznámení o provedení vlny](../warehousing/wave-execution-notifications.md) | Zapnuto ve výchozím nastavení |
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -2,7 +2,7 @@
 title: Daně z online objednávek jsou nesprávně vypočítány
 description: Toto téma poskytuje pokyny pro řešení potíží, které mohou pomoci, když jsou daně z online objednávek nesprávně vypočítány nebo když daňová skupina na prodejním řádku není správně nastavena.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715253"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312024"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Daně z online objednávek jsou nesprávně vypočítány
 
@@ -32,7 +32,18 @@ Toto téma poskytuje pokyny pro řešení potíží, které mohou pomoci, když 
 
 Při zadání objednávky elektronického obchodu jsou daně nesprávně vypočítány nebo je nesprávně nastavena daňová skupina na prodejním řádku.
 
-## <a name="resolution"></a>Rozlišení
+## <a name="resolution"></a>Řešení
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurace obecné skupiny DPH v centrále Commerce
+
+Chcete-li nakonfigurovat obecné skupiny DPH v centrále Commerce, postupujte následovně.
+
+1. Přejděte na **Daň \> Nepřímé daně \> DPH \> Skupina DPH**.
+1. Na levém navigačním panelu vyberte daňovou skupinu, kterou chcete konfigurovat.
+1. Na kartě s náhledem **Maloobchodní daň podle cíle** nakonfigurujte daně pro skupinu DPH.
+
+> [!NOTE]
+> U dopravy, která nezahrnuje DPH určenou podle adresy zákazníka, určuje daňovou skupinu dodací adresa řádku a daně podle cíle, které jsou nakonfigurovány pro daňovou skupinu. Další informace viz [Nastavení daní pro online obchody podle cílového místa](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Konfigurace DPH pro maloobchod v centrále Commerce
 
@@ -57,17 +68,6 @@ Chcete-li nakonfigurovat DPH pro adresu zákazníka v centrále Commerce, postup
 
 > [!NOTE]
 > U dopravy, která zahrnuje DPH na adrese zákazníka, určuje doručovací adresa řádku daňovou skupinu pro řádek. Pokud zákazník odesílá na existující adresu, která má již nakonfigurovanou daňovou skupinu, bude použita stávající daňová skupina. Ve výchozím nastavení adresy nemají při vytvoření daňovou skupinu.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurace obecné skupiny DPH v centrále Commerce
-
-Chcete-li nakonfigurovat obecné skupiny DPH v centrále Commerce, postupujte následovně.
-
-1. Přejděte na **Daň \> Nepřímé daně \> DPH \> Skupina DPH**.
-1. Na levém navigačním panelu vyberte daňovou skupinu, kterou chcete nakonfigurovat.
-1. Na kartě s náhledem **Maloobchodní daň podle cíle** nakonfigurujte daně pro skupinu DPH.
-
-> [!NOTE]
-> U dopravy, která nezahrnuje DPH na adrese zákazníka, určuje daňovou skupinu dodací adresa řádku a daně podle cíle, které jsou nakonfigurovány pro daňovou skupinu. Další informace viz [Nastavení daní pro online obchody podle cílového místa](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Další prostředky
 

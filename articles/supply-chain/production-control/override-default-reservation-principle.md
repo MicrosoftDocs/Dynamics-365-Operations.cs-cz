@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 959b8b85fe55ed5e0a93b5b614c3f6166bbd2bb6ef07e9d0f0f4c2b1ea3c4659
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b12740e58b2bf8667bee8a2c51917d69771779f2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721312"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103356"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Přepis výchozího principu rezervace pro materiály ve výrobě
 
@@ -31,12 +31,9 @@ Když vytvoříte novou výrobní zakázku nebo dávkovou objednávku, budete vy
 
 Například pokud máte suroviny nebo přísady, které vyžadují výběr, kusovník nebo řádky vzorců, které jsou vytvořeny pro tyto produkty, vyžadují fyzickou rezervaci, protože fyzická rezervace je předpokladem pro generování skladové práce. Obvykle, pokud chcete, aby k rezervaci došlo automaticky, vyberete jeden z následujících principů rezervace: *odhad*, *plánování*, *uvolnění* nebo *Start*. Na druhou stranu, pokud máte materiály nebo přísady, které nevyžadují výběr, protože se spotřebovávají přímo z místa, obvykle vyberete *ruční* princip rezervace, který neprovádí žádné fyzické rezervace ani nevytváří žádnou práci s výběrem.
 
-## <a name="turn-on-the-feature"></a>Zapnutí funkce
+## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Přepsat výchozí produkční rezervaci
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení výroby*
-- **Název funkce:** *Přepsat výchozí produkční rezervaci*
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Přepsat výchozí produkční rezervaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Přiřazení zásady rezervace výroby ke skupině modelů zboží
 

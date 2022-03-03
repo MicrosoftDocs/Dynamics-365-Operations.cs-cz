@@ -2,7 +2,7 @@
 title: Odstraňování problémů s nastavením Finance Insights
 description: Toto téma uvádí seznam problémů, ke kterým může dojít při použití funkcí Finance Insights. Také vysvětluje, jak tyto problémy opravit.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064859"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109853"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Odstraňování problémů s nastavením Finance Insights
 
@@ -111,6 +111,14 @@ Další informace o tom, jak upravit kategorie **Včas**, **Pozdě** a **Velmi p
 
 ### <a name="resolution"></a>Řešení
 
-Trénink modelu **Předpověď peněžních toků** vyžaduje data, která pokrývají více než jeden rok a obsahují více než 100 transakcí. Tyto transakce musí ovlivnit účty likvidity, které jsou zahrnuty v nastavení prognózy peněžních toků.
+Trénink modelu **Předpověď peněžních toků** vyžaduje data se 100 nebo více transakcemi, která pokrývají více než jeden rok. Doporučujeme mít alespoň dva roky dat s více než 1 000 transakcemi.
 
-**Předpovědi plateb zákazníků** vyžaduje alespoň 100 zákaznických faktur a platebních transakcí za posledních šest až devět měsíců k vytvoření předpovědí.  
+Funkce **Předpovědi plateb zákazníků** vyžaduje více než 100 transakcí za předchozích šest až devět měsíců. Transakce mohou zahrnovat volné faktury, prodejní objednávky a platby zákazníků. Tato data musí být rozložena do všech nastavení **Včas**, **Pozdě** a **Velmi pozdě**, která jsou definována na stránce **Konfigurace**.    
+
+Funkce **Návrh rozpočtu** vyžaduje minimálně tři roky rozpočtových nebo skutečných údajů. Toto řešení používá v projekcích data za tři až deset let. Data za více než tři roky poskytují lepší výsledky. Data samotná fungují nejlépe, když se hodnoty liší. Pokud data obsahují pouze konstantní data, jako jsou náklady na pronájem, může trénink selhat, protože nedostatek variací nevyžaduje, aby AI promítla částky.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Příznak: Chybová zpráva uvádí, že "Tabulka s názvem, 'msdyn_paypredpredictionresultentities' neexistuje. Vzdálený server vrátil chybu: (404) Nenalezeno…"
+
+### <a name="resolution"></a>Řešení
+
+Prostředí dosáhlo maximálního limitu tabulky služeb Data Lake. Další informace o limitu naleznete v oddílu **Povolit změny dat téměř v reálném čase** tématu [Přehled exportu do Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

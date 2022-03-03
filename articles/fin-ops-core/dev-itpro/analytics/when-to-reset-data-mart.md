@@ -2,7 +2,7 @@
 title: Časté otázky týkající se resetování datového tržiště
 description: Toto téma poskytuje odpovědi na několik dotazů týkajících se resetování datového tržiště.
 author: jinniew
-ms.date: 07/16/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e5a40342306eb9888b456a865ab2220dccfe65f8ccecc67bf8fc16f907e06977
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767748"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119505"
 ---
 # <a name="data-mart-resets-faq"></a>Časté otázky týkající se resetování datového tržiště
 
@@ -35,8 +35,9 @@ Aby bylo zajištěno, že nebudou vložena stará data, lze reset datového trž
 
 Pokud se na vaši situaci vztahuje jeden nebo více z následujících výroků, může vaše organizace těžit z resetování datového tržiště:
 
-- Byla obnovena databáze aplikací.
-- Otevřeli jste lístek podpory a technik podpory vám nařídil resetovat datové tržiště jako součást kroku odstraňování problémů.
+- **Byla obnovena databáze aplikací**
+- **Otevřeli jste lístek podpory** – Technik podpory vám nařídil resetovat datové tržiště jako součást kroku odstraňování problémů.
+- **Velké procento zastaralých záznamů** – Zastaralé záznamy samy o sobě nutně neospravedlňují resetování datového tržiště. Vysoké procento zastaralých dat může snížit celkový výkon generování sestav a integrace a vynutit dodatečné využití databázového prostoru. Doporučujeme dokončit reset datového tržiště, abyste odstranili zastaralá data, když je v datovém tržišti více než 80 % zastaralých dat.
  
 > [!NOTE]
 > Proces resetování datového tržiště je ovlivněn počtem transakcí hlavní knihy a rozpočtu ve vaší databázi. V závislosti na počtu transakcí ve vašem systému lze reset datového tržiště dokončit za pouhých 15 minut, nebo to může trvat až čtyři hodiny. Pokud však váš reset trvá déle než čtyři hodiny, doporučujeme vám kontaktovat podporu.
@@ -45,13 +46,12 @@ Pokud se na vaši situaci vztahuje jeden nebo více z následujících výroků,
 
 Zde jsou některé okolnosti, kdy nedoporučujeme resetovat datové tržiště.
 
-- Máte problémy s výkonem spojené se synchronizací dat.
+- Máte problémy s výkonem integrace dat.
 - Máte opakující se vzor pro resetování z některého z následujících důvodů:
 
-    - **Chybějící data** - Pokud si všimnete, že data chybí, otevřete si u Microsoftu lístek podpory a zkontrolujte formát zprávy a možné problémy se synchronizací dat.
+    - **Chybějící nebo neočekávaná data v sestavě** - Pokud si všimnete, že data chybí, otevřete si u Microsoftu lístek podpory a zkontrolujte formát zprávy a možné problémy se synchronizací dat.
     - **Zaseknutý stav integrace**
-    - **Zastaralé záznamy** - Zastaralé záznamy samy o sobě nutně neospravedlňují resetování datového tržiště. Pokud máte velkou datovou sadu, proces resetování bude nějakou dobu trvat, ale je nepravděpodobné, že by vedl ke zlepšení.
-
+   
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Pokud resetuji datové tržiště, přijdu o sestavy, které jsem již vytvořil?
 
 Ne. Vaše sestavy jsou uloženy v tabulkách SQL, které nejsou ovlivněny resetem datového tržiště. Pokud se obáváte ztráty jakýchkoli sestav, které jste navrhli, můžete zálohovat návrhy, které nechcete ztratit. Chcete-li zálohovat návrhy, otevřete návrhář sestav a přejděte na **Společnost \> Společnosti \> Stavební bloky \> Export**.

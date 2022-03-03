@@ -2,26 +2,23 @@
 title: Kontrola kvality
 description: Toto téma obsahuje informace o funkci Kontrola kvality. Tato funkce umožňuje pracovníkům skladu provádět rychlé namátkové kontroly kvality, zatímco přijímají položky do oblasti příchozího doku.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424211"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103281"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -42,12 +39,9 @@ Při použití této funkce dojde ke kontrole příjezdu a kvality následujíc�
 
 Tento proces lze také nastavit tak, aby všechny naskenované registrační značky byly okamžitě přesměrovány na místo kontroly kvality.
 
-## <a name="turn-on-the-quality-check-feature"></a>Zapnutí funkce kontroly kvality
+## <a name="turn-the-quality-check-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce kontroly kvality
 
-Než můžete použít funkci *Kontrola kvality*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Kontrola kvality*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Kontrola kvality*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Kontrola kvality* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Nastavení funkce pro tento vzorový scénář
 
@@ -302,7 +296,7 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 
 #### <a name="receive-pallet-1"></a>Příjem palety 1
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *51*. (Zadejte *51* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *51*. (Zadejte *51* jako ID uživatele a *1* jako heslo.)
 1. Jděte na **Příchozí \> Příjem řádku PO**.
 1. V poli **PONUM** zadejte číslo nákupní objednávky.
 1. Potvrďte znovu číslo nákupní objednávky.
@@ -313,7 +307,7 @@ Po vytvoření nákupní objednávky ji můžete obdržet pomocí položky nabí
 
     Stránka **Kontrola kvality**, která se objeví, nemá žádná vstupní pole. Ve spodní části je pouze potvrzovací tlačítko (znak zaškrtnutí) a tlačítko Nabídka (**≡**) nahoře. (Tlačítko Nabídka se někdy označuje jako hamburger nebo hamburgerové tlačítko.) Pro urychlení procesu kontroly kvality, když paleta projde kontrolou kvality, uživatel pouze potvrdí stránku **Kontrola kvality**.
 
-    ![Stránka Kontrola kvality](media/quality-check.png "Stránka Kontrola kvality")
+    ![Stránka Kontrola kvality.](media/quality-check.png "Stránka Kontrola kvality")
 
 1. Vyberte potvrzovací tlačítko a předejte kontrolu kvality palety 1 z řádku 1.
 
@@ -397,3 +391,6 @@ U tohoto scénáře bude paleta 3 přijata.
 1. Vyberte tlačítko Nabídka (**≡**) v horní části stránky a poté v nabídce vyberte možnost **Zrušit** pro návrat do nabídky.
 
 Nyní můžete mobilní aplikaci zavřít.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

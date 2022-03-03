@@ -1,26 +1,23 @@
 ---
 title: Nastavení správy úvěrů
 description: Toto téma popisuje nastavení, které je nezbytné pro správu úvěrů.
-author: mikefalkner
-manager: AnnBe
-ms.date: 09/04/2019
+author: JodiChristiansen
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441028"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182421"
 ---
 # <a name="credit-management-setup"></a>Nastavení správy úvěrů 
 
@@ -42,7 +39,7 @@ Pokud se platební podmínky objednávky neshodují s výchozími platebními po
 
 Pokud jsou pořadí platebních podmínek aktivní a pokud platební podmínky objednávky mají vyšší pořadí než výchozí platební podmínky pro odběratele, prodejní objednávky budou blokovány.
 
-Pořadí platebních podmínek lze nastavit na stránce **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \>Seřadit platební podmínky**  
+Pořadí platebních podmínek lze nastavit na stránce **Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \>Seřadit platební podmínky**.  
 
 ### <a name="ranking-settlement-discounts"></a>Řazení slev pro vyrovnání
 
@@ -89,7 +86,7 @@ Stavy účtu můžete vytvořit na stránce **Stavy účtu** (**Úvěr a inkasa 
 
 ## <a name="scoring-groups"></a>Skupiny skórování
 
-Skupiny podle hodnocení lze nastavit tak, aby definovaly rizikové faktory a kritéria, která jsou použita k jejich měření. V případě použití informací o odběrateli na skupinu podle hodnocení se hodnocení vypočítá pro každý faktor rizika a používá se k umístění odběratele do skupiny podle rizika. Skupinu podle rizika lze použít k označení úvěrové způsobilosti a k výpočtu automatických limitů úvěru.
+**Skupiny podle hodnocení** lze nastavit tak, aby definovaly rizikové faktory a kritéria, která jsou použita k jejich měření. V případě použití informací o odběrateli na skupinu podle hodnocení se hodnocení vypočítá pro každý faktor rizika a používá se k umístění odběratele do skupiny podle rizika. Skupinu podle rizika lze použít k označení úvěrové způsobilosti a k výpočtu automatických limitů úvěru.
 
 Skupiny podle hodnocení lze vytvářet na stránce **Skupiny podle hodnocení** (**Úvěr a inkasa \> Nastavení \> Nastavení správy úvěru \> Riziko \> Skupiny podle hodnocení**).
 
@@ -153,3 +150,6 @@ Chcete-li přidat řádky reprezentující limit úvěru, který bude vygenerov�
 2. Vyberte operátor pro porovnání, který definuje, jakým způsobem mají být vyhodnocovány informace o skupině podle hodnocení.
 3. Zadejte hodnotu, která má být porovnána s hodnotou zadanou pro skupinu podle hodnocení.
 4. Zadejte limit úvěru, který má být přiřazen, pokud se informace o odběrateli shodují s hodnotou zadanou pro danou skupinu podle hodnocení. Můžete například vytvořit automatický limit úvěru pro skupinu podle hodnocení **Nízké**. Pokud je jednou ze skupin podle hodnocení počet let podnikání, můžete definovat jeden řádek, který přiřazuje limit úvěru 100 000, pokud odběratel podniká pět let, a další řádek, který přiřazuje limit úvěru 200 000, pokud odběratel podniká 10 let.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

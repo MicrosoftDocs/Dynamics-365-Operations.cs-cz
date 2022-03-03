@@ -1,69 +1,57 @@
 ---
-title: Povolení prognózy cashflow (Preview)
+title: Povolit prognózu cashflow
 description: Toto téma vysvětluje, jak zapnout funkci prognózy cashflow ve finančních přehledech.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 07/24/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 321c716c10b136769ea3a48a3b60a8a717798338
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 763818f70095964d77ff82cf02178367d05eaf23
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646222"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109572"
 ---
-# <a name="enable-cash-flow-forecasting-preview"></a>Povolení prognózy cashflow (Preview)
+# <a name="enable-cash-flow-forecasting"></a>Povolit prognózu cashflow
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma vysvětluje, jak zapnout funkci prognózy cashflow ve finančních přehledech.
+Toto téma vysvětluje, jak zapnout funkci prognózy cashflow ve Finance Insights.
 
 > [!NOTE]
 > Chcete-li použít předpovědi plateb v cashflow, musíte nastavit funkci předpovědí plateb zákazníků, jak je popsáno v části [Povolení předpovědí plateb zákazníka](enable-cust-paymnt-prediction.md).
-
-1. Použijte informace ze stránky prostředí v Microsoft Dynamics Lifecycle Services (LCS) pro připojení k primární instanci Azure SQL pro dané prostředí. Spuštěním následujícího příkazu Transact-SQL (T-SQL) zapněte testování pro prostředí sandboxu. (Možná budete muset zapnout přístup ke své IP adrese v LCS, než se budete moci vzdáleně připojit k aplikačnímu objektovému serveru \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Pokud vaše nasazení Microsoft Dynamics 365 Finance je nasazení Service Fabric, můžete tento krok přeskočit. Tým finančních přehledů už měl testování zapnout za vás. Pokud nevidíte funkci v pracovním prostoru **Správa funkcí** nebo pokud při pokusu o zapnutí dojde k potížím, kontaktujte <fiap@microsoft.com>.
   
-2. Otevřete pracovní prostor **Správa funkcí** a postupujte takto:
+1. Otevřete pracovní prostor **Správa funkcí** a postupujte takto:
 
     1. Vyberte možnost **Zkontrolovat aktualizace**.
-    2. Zapněte následující funkce:
+    2. Na kartě **Vše** vyhledejte **Předpovědi cashflow**. Pokud tuto funkci nemůžete najít, vyhledejte **(Preview) Návrh cashflow**. 
+    3. Zapnutí funkce.
 
-        - Nový ovládací prvek mřížky
-        - Seskupování do mřížek (Preview) 
-        - Předpovědi plateb odběratelů (Preview)
-        - Prognózy cashflow (Preview)
-
-3. Přejděte na **Pokladna a banka \> Nastavení prognózy cashflow** a přidejte účty likvidity, které by měly být zahrnuty do prognóz.
+2. Přejděte na **Pokladna a banka \> Nastavení prognózy cashflow** a přidejte účty likvidity, které by měly být zahrnuty do prognóz. Nastavte také účet likvidity pro platby na kartách **Pohledávky** a **Závazky**. Nezapomeňte přepočítat prognózu cashflow.
 
     > [!NOTE]
     > Pokud nejsou zřízeny účty likvidity, nelze generovat cashflow.
+    >
+    > Další informace o nastavení prognóz cashflow naleznete v tématu [Prognóza cashflow](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Jděte na **Pokladna a banka \> Nastavení \> Finanční přehledy (Preview) \> Prognózy cashflow (Preview)** a postupujte takto:
+3. Jděte na **Pokladna a banka \> Nastavení \> Finanční přehledy (Preview) \> Prognózy cashflow (Preview)** a postupujte takto:
 
     1. Na kartě **Prognózy cashflow** vyberte **Povolit funkci**.
     2. Vyberte **Vytvořit predikční model**.
 
+> [!NOTE]
+> Trénink modelu **Předpověď peněžních toků** vyžaduje data se 100 nebo více transakcemi, která pokrývají více než jeden rok. Doporučujeme mít alespoň dva roky dat s více než 1 000 transakcemi.
+
 Další informace o funkci prognózy cashflow naleznete v tématu [Prognóza cashflow](cash-flow-forecast-intro.md).
 
-## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

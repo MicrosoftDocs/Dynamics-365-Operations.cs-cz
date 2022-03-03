@@ -2,15 +2,12 @@
 title: Modul popisu cesty
 description: Tohle téma se zabývá moduly popisu cesty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517153"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109724"
 ---
 # <a name="breadcrumb-module"></a>Modul popisu cesty
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly popisu cesty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Moduly popisu cesty se používají k zajištění sekundární navigace na stránkách webu. Obvykle se zobrazují v horní části stránky pod záhlavím. Přestože lze moduly popisu cesty přidat na jakoukoli stránku, nejčastěji se používají na stránkách podrobností o produktu, aby zobrazovaly hierarchii kategorií produktů a poskytovaly rychlý způsob, jak se pohybovat po webu. Modul popisu cesty lze také použít k zobrazení odkazu „Zpět na výsledky“, když uživatelé otevřou stránku podrobností o produktu ze stránky vyhledávání nebo seznamu. Tímto způsobem se uživatelé mohou rychle vrátit na svou stránku filtrovaného seznamu a pokračovat v nakupování.
 
@@ -42,7 +37,7 @@ Na stránkách, které mají kontext kategorie produktu, jako jsou stránky podr
 
 Následující obrázek znázorňuje příklad modulu popisu cesty, který zobrazuje hierarchii kategorií na stránce podrobností o produktu.
 
-![Příklad modulu popisu cesty](./media/ecommerce-breadcrumb.PNG)
+![Příklad modulu popisu cesty.](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Nastavení modulu popisu cesty
 
@@ -86,7 +81,7 @@ Chcete-li přidat modul popisu cesty na stránku podrobností o produktu a nasta
 
 [Modul navigační nabídky](nav-menu-module.md)
 
-[Modul volby webu](site-selector.md)
+[Modul pro výběr lokality](site-selector.md)
 
 [Přehled výchozí cílové stránky kategorie a stránky výsledků hledání](category-search-page-overview.md)
 
@@ -95,3 +90,6 @@ Chcete-li přidat modul popisu cesty na stránku podrobností o produktu a nasta
 [Modul buy boxu](add-buy-box.md)
 
 [SDK a aktualizace knihovny modulů](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

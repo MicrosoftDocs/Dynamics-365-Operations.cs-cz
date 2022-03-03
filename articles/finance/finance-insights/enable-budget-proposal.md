@@ -1,50 +1,42 @@
 ---
-title: Povolení návrhů rozpočtu (Preview)
+title: Povolit návrh rozpočtu
 description: Toto téma vysvětluje, jak zapnout funkci návrhu rozpočtu ve finančních přehledech.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 07/24/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d8443c4e3e6f3d3a90acedc7c05b2846d6b68369
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: cd0ba4307f93148c241810759df9a95578592ba9
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646198"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109547"
 ---
-# <a name="enable-budget-proposals-preview"></a>Povolení návrhů rozpočtu (Preview)
+# <a name="enable-budget-proposal"></a>Povolit návrh rozpočtu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak zapnout funkci návrhu rozpočtu ve finančních přehledech.
 
-1. Použijte informace ze stránky prostředí v Microsoft Dynamics Lifecycle Services (LCS) pro připojení k primární instanci Azure SQL pro dané prostředí. Spuštěním následujícího příkazu Transact-SQL (T-SQL) zapněte testování pro prostředí sandboxu. (Možná budete muset zapnout přístup ke své IP adrese v LCS, než se budete moci vzdáleně připojit k aplikačnímu objektovému serveru \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
-
-    > [!NOTE]
-    > Pokud vaše nasazení Microsoft Dynamics 365 Finance je nasazení Service Fabric, můžete tento krok přeskočit. Tým finančních přehledů už měl testování zapnout za vás. Pokud nevidíte funkci v pracovním prostoru **Správa funkcí** nebo pokud se při pokusu o zapnutí setkáte s problémy, pošlete e-mail na adresu [Tým pro aplikaci Finanční přehledy (Preview)](mailto:fiap@microsoft.com).
-
-2. Otevřete pracovní prostor **Správa funkcí** a postupujte takto:
+1. Otevřete pracovní prostor **Správa funkcí** a postupujte takto:
 
     1. Vyberte možnost **Zkontrolovat aktualizace**.
-    2. Vyhledejte **Návrh rozpočtu** a zapněte tuto funkci.
+    2. Na kartě **Vše** vyhledejte **Návrh rozpočtu**. Pokud tuto funkci nemůžete najít, vyhledejte **(Preview) Návrh rozpočtu**. 
+    3. Zapnutí funkce.
 
-3. Jděte na **Rozpočtování \> Nastavení \> Základní rozpočtování \> Návrh rozpočtu (Preview)** a vyberte **Povolit funkci**.
+2. Jděte na **Rozpočtování \> Nastavení \> Základní rozpočtování \> Návrh rozpočtu** a vyberte **Povolit funkci**.
 
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+> [!NOTE]
+> Funkce **Návrh rozpočtu** vyžaduje minimálně tři roky rozpočtových nebo skutečných údajů. Tato funkce používá v projekcích data za tři až deset let. Data za více než tři roky poskytují lepší výsledky. Data samotná fungují nejlépe, když se hodnoty liší. Pokud data obsahují pouze konstantní data, jako jsou náklady na pronájem, může trénink selhat, protože nedostatek variací nevyžaduje, aby AI promítla částky.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

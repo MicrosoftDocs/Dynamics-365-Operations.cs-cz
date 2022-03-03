@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 98d28c39b2923afecc851299a07aa3b93ef2edce
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867287"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323868"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Návrh nové konfigurace ER pro generování sestav ve formátu Word
 
@@ -28,7 +28,7 @@ Abyste mohli generovat zprávy jako dokumenty Microsoft Word, musíte navrhnout 
 
 ![Ukázková šablona pro kontrolní sestavu v desktopové aplikaci Word.](./media/er-design-configuration-word-image1.png)
 
-Chcete-li použít dokument Word jako šablonu pro sestavy ve formátu Word, můžete nakonfigurovat nové [řešení](general-electronic-reporting.md)[elektronického výkaznictví (ER)](er-quick-start1-new-solution.md). Toto řešení musí obsahovat [konfiguraci ER](general-electronic-reporting.md#Configuration), která obsahuje komponentu [formát](general-electronic-reporting.md#FormatComponentOutbound) ER.
+Chcete-li použít dokument Word jako šablonu pro sestavy ve formátu Word, můžete nakonfigurovat nové [řešení](general-electronic-reporting.md)[elektronického výkaznictví (ER)](er-quick-start1-new-solution.md). Toto řešení musí obsahovat konfiguraci [ER](general-electronic-reporting.md#Configuration), která obsahuje komponentu formát ER.
 
 > [!NOTE]
 > Když vytvoříte novou konfiguraci formátu ER pro generování sestav ve formátu Word, musíte jako typ formátu zdroje vybrat buď **Word** v rozevíracím dialogu **Vytvořit konfiguraci**, nebo nechat pole **Typ formátu** prázdné.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758257"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323658"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Podporované typy složených dat pro vzorce elektronického výkaznictví
 
@@ -27,7 +27,7 @@ Toto téma obsahuje informace o typech složených dat, které jsou podporovány
 
 Datový typ *třída* odkazuje na veřejnou třídu aplikace. V ER je to reprezentováno jako [*záznam*](#record), který obsahuje samostatné pole pro každou veřejnou metodu odkazované třídy. Když je volání metody parametrizováno, musíte také určit požadované argumenty příslušných typů ve výrazu ER, který je nakonfigurován pro volání metody.
 
-V komponentech ER [mapování](general-electronic-reporting.md#data-model-and-model-mapping-components) a [formát](general-electronic-reporting.md#FormatComponentOutbound) můžete přidat zdroj dat **Třída**, který je uveden jako zdroj dat a který vrací hodnotu typu *třída*. Tento zdroj dat zpřístupňuje veřejné metody třídy, které lze volat za běhu.
+V komponentách mapování a formát ER můžete přidat zdroj dat **Třída**, který je uveden jako zdroj dat a který vrací hodnotu typu *třída*. Tento zdroj dat zpřístupňuje veřejné metody třídy, které lze volat za běhu.
 
 > [!NOTE]
 > Z výrazů ER lze volat pouze metody, které vracejí hodnotu.

@@ -1,35 +1,32 @@
 ---
 title: Centralizované platby pro závazky
-description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
+description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Toto téma uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 author: abruer
-manager: AnnBe
-ms.date: 02/12/2017
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a4632056d6873cfeb748251c77becc410f5cf54
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441205"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182498"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centralizované platby pro závazky
 
 [!include [banner](../includes/banner.md)]
 
-Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
+Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Toto téma uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 
 Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Kromě toho organizace šetří čas, protože je zjednodušen proces plateb.
 
@@ -301,3 +298,6 @@ Společnost Fabrikam vygeneruje platbu ve výši 75,00 pro účet dodavatele 300
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

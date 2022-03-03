@@ -2,27 +2,24 @@
 title: Nastavení klienta B2C v Commerce
 description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 06/22/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517373"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109879"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -30,60 +27,93 @@ ms.locfileid: "4517373"
 
 Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 
-## <a name="overview"></a>Přehled
-
 Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacích údajů a ověřování uživatele. Uživatel se může registrovat, přihlásit a obnovit své heslo pomocí těchto toků. Azure AD B2C ukládá citlivé informace o ověřování uživatele, například jeho uživatelské jméno a heslo. Záznam uživatele v klientovi B2C uloží buď záznam místního účtu B2C nebo záznam zprostředkovatele sociální identity B2C. Tyto záznamy B2C budou odkazovat zpět na záznam odběratele v prostředí Commerce.
 
-## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Vytvoření nebo připojení ke stávajícími klientovi AAD B2C v portálu Azure
+> [!WARNING] 
+> Azure AD B2C vyřadí staré (starší) toky uživatelů od 1. srpna 2021. Proto byste měli naplánovat migraci toků uživatelů do nové doporučené verze. Nová verze poskytuje paritu funkcí a nové funkce. Knihovna modulů pro Commerce verze 10.0.15 nebo vyšší by měla být použita s doporučenými toky uživatelů B2C. Další informace naleznete v tématu [Toky uživatelů v Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
+ 
+ > [!NOTE]
+ > Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure AD B2C pro demonstrační účely. Načtení vlastního klienta Azure AD B2C pomocí níže uvedených kroků není potřeba pro prostředí vyhodnocení.
+
+> [!TIP]
+> Můžete dále chránit uživatele svých stránek a zvýšit bezpečnost svých klientů Azure AD B2C pomocí Ochrany identity a podmíněný přístup k Azure AD. Chcete-li zkontrolovat možnosti, které mají k dispozici klienti Azure AD B2C Premium P1 a Premium P2, viz [Ochrana identity a podmíněný přístup k Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Předpoklady prostředí Dynamics
+
+Než začnete, ujistěte se, že vaše prostředí Dynamics 365 Commerce a kanál elektronického obchodování jsou odpovídajícím způsobem konfigurovány splněním následujících předpokladů.
+
+- Nastavte hodnotu operací POS **AllowAnonymousAccess** na "1" v centrále Commerce:
+    1. Jděte na **Operace POS**.
+    1. Klikněte pravým tlačítkem myši na mřížku a vyberte **Přizpůsobit**.
+    1. Vyberte **Přidat pole**.
+    1. V seznamu dostupných sloupců vyberte sloupec **AllowAnonymousAccess** pro přidání.
+    1. Vyberte **Aktualizovat**.
+    1. Pro operaci **612** „Přidání zákazníka“ změňte **AllowAnonymousAccess** na „1.“
+    1. Spusťte úlohu **1090 (Registry)**.
+- Nastavte atribut **Ruční** zákaznického účtu číselné sekvence na **Ne** v centrále Commerce:
+    1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Parametry \> Parametry závazků**.
+    1. Vyberte **číselné sekvence**.
+    1. Na řádku **Zákaznický účet** dvakrát klikněte na hodnotu **Kód číselné sekvence**.
+    1. Na záložce s náhledem **Obecné** číselné sekvence nastavte **Ruční** na **Ne**.
+
+Po nasazení vašeho prostředí Dynamics 365 Commerce se také doporučuje [inicializovat zdrojová data](enable-configure-retail-functionality.md) v prostředí.
+
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Vytvoření nebo připojení ke stávajícímu tenantovi Azure AD B2C v portálu Azure
+
+Tato část se zabývá vytvořením nebo propojením tenanta Azure AD B2C pro použití na vašem webu Commerce. Další informace naleznete v tématu [Kurz: Vytvoření tenanta Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Přihlaste se do [portálu Azure](https://portal.azure.com/).
 1. Z nabídky portálu Azure vyberte možnost **Vytvořit prostředek**. Ujistěte se, že používáte předplatné a adresář, který bude připojen k vašemu prostředí Commerce.
 
-    ![Vytvoření prostředku na portálu Azure](./media/B2CImage_1.png)
+    ![Vytvoření prostředku na portálu Azure.](./media/B2CImage_1.png)
 
 1. Přejděte na **Identita \> Azure Active Directory B2C**.
 1. Na stránce **Vytvoření nového klienta B2C nebo připojení k existujícímu klientovi** použijte jednu z následujících možností, které nejlépe vyhovují potřebám vaší společnosti:
 
-    - **Vytvořit nového klienta Azure AD B2C**: Touto možností vytvoříte nového klienta AAD B2C.
+    - **Vytvořit nového tenanta Azure AD B2C**: Touto možností vytvoříte nového tenanta Azure AD B2C.
         1. Vyberte **Vytvořit nového klienta Azure AD B2C**.
         1. Pro **Název organizace** zadejte název organizace.
         1. Pro **Počáteční název domény** zadejte počáteční název domény.
         1. Pro **Země nebo oblast** vyberte zemi nebo oblast.
         1. Volbou **Vytvořit** vytvoříte klienta.
 
-     ![Vytvoření nového klienta Azure AD](./media/B2CImage_2.png)
+     ![Vytvoření nového klienta Azure AD.](./media/B2CImage_2.png)
 
      - **Propojit existujícího klienta Azure AD B2C s mým předplatným Azure**: Tuto možnost použijte, pokud již existuje klient Azure AD B2C, který chcete propojit.
         1. Vyberte **Propojit existujícího klienta Azure AD B2C s mým předplatným Azure**.
         1. Pro **Klient Azure AD B2C** vyberte příslušného klienta B2C. Pokud se v oblasti výběru zobrazí zpráva „Nebyly nalezeni žádní oprávnění klienti B2C“, nemáte žádného existující oprávněného klienta B2C a budete muset vytvořit nového.
         1. Pro **Skupina prostředků** vyberte možnost **Vytvořit novou**. Zadejte **Název** pro skupinu prostředků, která bude obsahovat klienta, vyberte **Umístění skupiny prostředků** a pak vyberte možnost **Vytvořit**.
 
-    ![Propojení existujícího klienta Azure AD B2C s předplatným Azure](./media/B2CImage_3.png)
+    ![Propojení existujícího klienta Azure AD B2C s předplatným Azure.](./media/B2CImage_3.png)
 
 1. Po vytvoření nového adresáře Azure AD B2C (což může chvíli trvat) se na řídicím panelu zobrazí odkaz na nový adresář. Tento odkaz vás přesměruje na stránku „Vítá vás Azure Active Directory B2C“.
 
-    ![Odkaz na nový adresář AAD](./media/B2CImage_4.png)
+    ![Odkaz na nový adresář Azure AD](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Pokud máte více předplatných v rámci účtu Azure nebo jste zřídili klienta B2C bez propojení s aktivním předplatným, banner **Řešení potíží** vás nasměruje k propojení klienta a předplatného. Vyberte zprávu řešení potíží a podle pokynů vyřešte problém s předplatným.
 
 Na následujícím obrázku je znázorněn příklad banneru **Řešení potíží** v Azure AD B2C.
 
-![Upozornění, že adresář nemá žádné aktivní předplatné](./media/B2CImage_5.png)
+![Upozornění, že adresář nemá žádné aktivní předplatné.](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>Vytvoření aplikace B2C
 
-Po vytvoření klienta B2C vytvoříte aplikaci B2C s klientem pro interakci s akcemi Commerce.
+Po vytvoření klienta B2C vytvoříte aplikaci B2C s novým klientem Azure AD B2C pro interakci s Commerce.
 
 Chcete-li vytvořit aplikaci B2C, postupujte následovně.
 
-1. Na portálu Azure vyberte možnost **Aplikace (starší verze)** a pak vyberte možnost **Přidat**.
-1. V poli **Název** zadejte název požadované aplikace AAD B2C.
-1. V části **Webová aplikace/webové rozhraní API** vyberte pro **Zahrnout webovou aplikaci/webové rozhraní API** možnost **Ano**.
-1. Pro **Povolit implicitní tok** vyberte možnost **Ano** (výchozí hodnota).
-1. Pro **Adresa URL odpovědi** zadejte vyhrazené adresy URL pro odpovědi. Viz [Adresy URL pro odpovědi](#reply-urls) níže, kde najdete informace o adresách URL odpovědí a jak je naformátovat.
-1. Pro **Zahrnout nativního klienta** vyberte možnost **Ne** (výchozí hodnota).
-1. Vyberte **Vytvořit**.
+1. V portálu Azure vyberte **Registrace aplikací** a poté vyberte možnost **Nová registrace**.
+1. V poli **Název** zadejte název aplikace Azure AD B2C.
+1. V sekci **Podporované typy účtů** vyberte **Účty u libovolného zprostředkovatele identity nebo organizačního adresáře (pro ověřování uživatelů pomocí toků uživatelů)**.
+1. Jako **Identifikátor URI přesměrování** zadejte své vyhrazené adresy URL odpovědí jako typ **Web**. Viz [Adresy URL pro odpovědi](#reply-urls) níže, kde najdete informace o adresách URL odpovědí a jak je naformátovat. Chcete-li povolit přesměrování, je nutné zadat URI pro přesměrování / adresu URL odpovědi z Azure AD B2C zpět na váš web, když se uživatel autentizuje. Adresu URL odpovědi lze přidat během procesu registrace nebo ji lze přidat později výběrem odkazu **Přidat URI přesměrování** z nabídky **Přehled** v části **Přehled** aplikace B2C.
+1. Pro **Oprávnění** vyberte **Udělit souhlas správce oprávněním openid a offline_access**.
+1. Vyberte **Registrovat**.
+1. Vyberte nově vytvořenou aplikaci a přejděte do nabídky **Ověřování**. 
+1. Pokud je zadána adresa URL odpovědi, v části **Toky implicitního udělení oprávnění a hybridní toky** vyberte možnost **Přístupové tokeny** i **Tokeny ID** pro jejich povolení pro aplikaci a poté vyberte **Uložit**. Pokud nebyla při registraci zadána adresa URL odpovědi, lze ji také přidat na tuto stránku výběrem **Přidat platformu**, výběrem **Web** a poté zadáním URI přesměrování aplikace. Část **Toky implicitního udělení oprávnění a hybridní toky** pak bude k dispozici pro výběr možnosti **Přístupové tokeny** i **Tokeny ID**.
+1. Přejděte do nabídky **Přehled** portálu Azure Portal a zkopírujte **ID aplikace (klienta)**. Poznamenejte si toto ID pro pozdější kroky instalace (později zmiňováno jako **GUID klienta**).
+
+Další informace o registraci aplikací v Azure AD B2C viz [Nové prostředí registrace aplikací pro Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### <a name="reply-urls"></a>Adresy URL pro odpovědi
 
@@ -103,9 +133,9 @@ Azure AD B2C poskytuje tři základní typy toků uživatele:
 - Úprava profilu
 - Obnovení hesla
 
-Můžete zvolit, zda chcete použít výchozí toky uživatelů, které poskytuje Azure AD, čímž se zobrazí stránka hostovaná v AAD B2C. Alternativně můžete vytvořit stránku HTML, která určí vzhled a chování těchto toků uživatelů. 
+Můžete zvolit, zda chcete použít výchozí toky uživatelů, které poskytuje Azure AD, čímž se zobrazí stránka hostovaná v Azure AD B2C. Alternativně můžete vytvořit stránku HTML, která určí vzhled a chování těchto toků uživatelů. 
 
-Chcete-li přizpůsobit stránky zásad uživatelů pro Dynamics 365 Commerce, prostudujte si téma [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md). Další informace naleznete v tématu [Přizpůsobení rozhraní uživatelských prostředí v Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+Chcete-li přizpůsobit stránky zásad uživatelů se stránkami integrovanými v Dynamics 365 Commerce, prostudujte si téma [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md). Další informace naleznete v tématu [Přizpůsobení rozhraní uživatelských prostředí v Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Vytvoření zásady toku uživatele pro registraci a přihlášení
 
@@ -113,11 +143,11 @@ Chcete-li vytvořit zásadu toku uživatele pro registraci a přihlášení, pos
 
 1. Na portálu Azure vyberte možnost **Toky uživatelů (zásady)** v levém navigačním podokně.
 1. Na stránce **Azure AD B2C – toky uživatelů (zásady)** vyberte možnost **Nový tok uživatele**.
-1. Na kartě **Doporučené** vyberte možnost **Registrace a přihlášení**.
+1. Vyberte zásadu **Registrace a přihlášení** a poté vyberte **doporučenou** verzi.
 1. V položce **Název** zadejte název zásady. Tento název se pak zobrazí s použitím předpony, kterou přiřadí portál (například „B2C_1_“).
-1. V části **Zprostředkovatelé identity** zaškrtněte příslušné políčko.
+1. V části **Poskytovatelé identity** v části **Místní účty** vyberte **E-mailová registrace**. E-mailová autentizace se používá ve většině běžných scénářů pro Commerce. Pokud také používáte ověřování poskytovatele identity sociální sítě, lze v tuto chvíli vybrat i tyto.
 1. V části **Vícefaktorové ověřování** vyberte vhodnou volbu pro vaši společnost. 
-1. V části **Atributy a deklarace identit uživatelů** vyberte možnosti pro získání atributů nebo deklarací identit pro vrácení (podle potřeby). Commerce vyžaduje následující výchozí možnosti:
+1. V části **Atributy a deklarace identit uživatelů** vyberte možnosti pro získání atributů nebo deklarací identit pro vrácení (podle potřeby). Vyberte **Zobrazit více…** pro získání úplného seznamu vlastností a možností nároků. Commerce vyžaduje následující výchozí možnosti:
 
     | **Získat atribut** | **Vrátit deklaraci identity** |
     | ---------------------- | ----------------- |
@@ -131,11 +161,8 @@ Chcete-li vytvořit zásadu toku uživatele pro registraci a přihlášení, pos
 
 Následující obrázek je příkladem toku uživatele pro registraci a přihlášení Azure AD B2C.
 
-![Nastavení zásady registrace a přihlášení](./media/B2CImage_11.png)
+![Nastavení zásady registrace a přihlášení.](./media/B2CImage_11.png)
 
-Následující obrázek znázorňuje možnost **Spustit tok uživatele** v toku uživatele pro registraci a přihlášení Azure AD B2C.
-
-![Možnost Spustit tok uživatele v toku zásady](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Vytvoření zásady toku uživatele pro úpravu profilu
 
@@ -143,20 +170,24 @@ Chcete-li vytvořit zásadu toku uživatele pro úpravu profilu, postupujte podl
 
 1. Na portálu Azure vyberte možnost **Toky uživatelů (zásady)** v levém navigačním podokně.
 1. Na stránce **Azure AD B2C – toky uživatelů (zásady)** vyberte možnost **Nový tok uživatele**.
-1. Na kartě **Doporučené** vyberte možnost **Úprava profilu**.
+1. Vyberte **Úprava profilu** a potom vyberte **doporučenou** verzi.
 1. V části **Název** zadejte tok uživatele pro úpravu profilu. Tento název se pak zobrazí s použitím předpony, kterou přiřadí portál (například „B2C_1_“).
-1. V části **Zprostředkovatelé identity** vyberte možnost **Přihlášení k místnímu účtu**.
+1. V části **Poskytovatelé identity** v části **Místní účty** vyberte **E-mailové přihlášení**.
 1. V části **Atributy uživatele** zaškrtněte některé z následujících políček:
-    - **E-mailové adresy** (pouze **Vrátit deklaraci identity**)
-    - **Křestní jméno** (**Získat atribut** a **Vrátit deklaraci identity**)
-    - **Zprostředkovatel identity** (pouze **Vrátit deklaraci identity**)
-    - **Příjmení** (**Získat atribut** a **Vrátit deklaraci identity**)
-    - **ID objektu uživatele** (pouze **Vrátit deklaraci identity**)
+    
+    | **Získat atribut** | **Vrátit deklaraci identity** |
+    | ---------------------- | ----------------- |
+    |                        | E-mailové adresy   |
+    | Křestní jméno             | Křestní jméno        |
+    |                        | Poskytovatel identity |
+    | Příjmení                | Příjmení           |
+    |                        | ID objektu uživatele  |
+    
 1. Vyberte **Vytvořit**.
 
 Na následujícím obrázku je znázorněn příklad toku uživatele pro upravu profilu Azure AD B2C.
 
-![Vytvoření toku uživatele pro úpravu profilu](./media/B2CImage_12.png)
+![Příklad uživatelského toku úpravy profilu Azure AD B2C](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Vytvoření zásady toku uživatele pro resetování hesla
 
@@ -164,7 +195,7 @@ Chcete-li vytvořit zásadu toku uživatele pro resetování hesla, postupujte p
 
 1. Na portálu Azure vyberte možnost **Toky uživatelů (zásady)** v levém navigačním podokně.
 1. Na stránce **Azure AD B2C – toky uživatelů (zásady)** vyberte možnost **Nový tok uživatele**.
-1. Na kartě **Doporučené** vyberte možnost **Resetování hesla**.
+1. Vyberte **Resetování hesla** a potom vyberte **doporučenou** verzi.
 1. V poli **Název** zadejte název toku uživatele pro resetování hesla.
 1. V části **Zprostředkovatelé identity** vyberte možnost **Resetovat heslo pomocí e-mailové adresy**.
 1. Vyberte **Vytvořit**.
@@ -192,15 +223,15 @@ Je-li přidáno ověřování zprostředkovatele sociální identity a uživatel
 
 Před přidáním zprostředkovatele sociální identity pro ověřování je nutné přejít na portál zprostředkovatele identity a nastavit aplikaci zprostředkovatele identity tak, jak je uvedeno v dokumentaci k Azure AD B2C. Níže je uveden seznam odkazů na dokumentaci.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (jeden klient)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Účet Microsoft](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (jeden klient)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Účet Microsoft](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Přidání a nastavení zprostředkovatele sociální identity
 
@@ -220,15 +251,18 @@ Chcete-li přidat a nastavit zprostředkovatele sociální identity, postupujte 
 
 Následující obrázek znázorňuje příklad obrazovek **Přidání zprostředkovatele identity** a **Nastavení zprostředkovatele** sociální identity v Azure AD B2C.
 
-![Přidání poskytovatele sociální identity do aplikace](./media/B2CImage_14.png)
+![Přidání poskytovatele sociální identity do aplikace.](./media/B2CImage_14.png)
 
 Následující obrázek znázorňuje příklad, jak vybrat zprostředkovatele identity na stránce **Zprostředkovatelé identity** v Azure AD B2C.
 
-![Výběr jednotlivých zprostředkovatelů sociální identity a povolení vaší zásady](./media/B2CImage_16.png)
+![Výběr jednotlivých zprostředkovatelů sociální identity a povolení vaší zásady.](./media/B2CImage_16.png)
 
 Následující obrázek znázorňuje příklad výchozí přihlašovací obrazovky se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity.
 
-![Příklad výchozí obrazovky pro přihlášení se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity](./media/B2CImage_17.png)
+> [!NOTE]
+> Pokud používáte vlastní stránky integrované v Commerce pro vaše toky uživatelů, bude nutné přidat tlačítka pro zprostředkovatele sociální identity pomocí funkcí rozšiřitelnosti knihovny modulů Commerce. Navíc při nastavování aplikací u konkrétního zprostředkovatele sociální identity mohou v některých případech řetězce adresy URL nebo konfigurace rozlišovat velká a malá písmena. Další informace najdete v pokynech pro připojení zprostředkovatele sociální identity.
+ 
+![Příklad výchozí obrazovky pro přihlášení se zobrazeným tlačítkem pro přihlášení zprostředkovatele sociální identity.](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Aktualizace Commerce Headquarters o nové informace Azure AD B2C
 
@@ -238,7 +272,7 @@ Chcete-li aktualizovat Headquarters o nové informace Azure AD B2C, postupujte t
 
 1. V Commerce přejděte na **Sdílené parametry Commerce** a vyberte **Zprostředkovatelé identity** v levé nabídce.
 1. V části **Zprostředkovatelé identity** postupujte takto:
-    1. V poli **Vystavitel** zadejte adresu URL vystavitele zprostředkovatele identity. Chcete-li najít adresu URL svého vystavitele, viz [Získání adresy URL vystavitele](#obtain-issuer-url) níže.
+    1. V poli **Vystavitel** zadejte řetězec vystavitele zprostředkovatele identity. Chcete-li najít řetězec vydavatele, postupujte dle části [Získání řetězce vydavatele pro nastavení centrály](#obtain-issuer-string-for-headquarters-setup) uvedené níže.
     1. Do pole **Název** zadejte název záznamu vystavitele.
     1. Do pole **Typ** zadejte **Azure AD B2C (id_token)**.
 1. V části **Předávající strany** s výše vybranou položkou zprostředkovatele identity B2C postupujte takto:
@@ -250,15 +284,23 @@ Chcete-li aktualizovat Headquarters o nové informace Azure AD B2C, postupujte t
 1. V levé navigační nabídce stránky **Plán distribuce** vyberte úlohu **1110 Globální konfigurace**.
 1. V podokně akcí zvolte **Spustit**.
 
-### <a name="obtain-issuer-url"></a>Získání adresy URL vystavitele
+### <a name="obtain-issuer-string-for-headquarters-setup"></a>Získání řetězce vydavatele pro nastavení centrály
 
-Chcete-li získat adresu URL vystavitele svého zprostředkovatele identity, postupujte takto.
+Chcete-li získat řetězec vystavitele svého zprostředkovatele identity, postupujte takto.
+
+1. Na stránce Azure AD B2C na webu Azure Portal přejděte na tok uživatelů **Registrace a přihlášení**.
+1. Vyberte **Rozložení stránky** v levé navigační nabídce, v sekci **Název rozložení** vyberte **Jednotná stránka pro registraci nebo přihlášení** a potom vyberte **Spustit tok uživatele**.
+1. Ujistěte se, že je vaše aplikace nastavena podle zamýšlené aplikace Azure AD B2C vytvořené výše a poté v záhlaví **Spustit tok uživatele** vyberte odkaz na tok uživatele, který obsahuje řetězec ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``. (Nevybírejte příkaz **Spustit uživatelský tok**.) Otevře se nová karta zobrazující metadata pro zásadu shromažďování řetězce vydavatele.
+1. Na stránce metadat zobrazené na kartě prohlížeče zkopírujte řetězec vydavatele poskytovatele identity (hodnota **issuer** začínající na „https://“ a končící řetězcem „/v2.0/“), který vypadá podobně jako následující příklad.
+   - ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+ 
+**NEBO**: Chcete-li vytvořit stejnou adresu URL metadat ručně, proveďte následující kroky.
 
 1. V následujícím formátu vytvořte adresu URL metadat s použitím vašeho klienta a zásady B2C: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Příklad: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 1. Do adresního řádku prohlížeče zadejte adresu URL metadat.
 1. V metadatech zkopírujte adresu URL vystavitele zprostředkovatele identity (hodnota pro **„vystavitel“**).
-    - Příklad: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+    - Příklad: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
 ## <a name="configure-your-b2c-tenant-in-commerce-site-builder"></a>Konfigurace klienta B2C v konfigurátoru webů Commerce
 
@@ -268,29 +310,25 @@ Po dokončení nastavení klienta Azure AD B2C musíte nakonfigurovat klienta B2
 
 Chcete-li získat požadované informace o aplikaci, postupujte podle následujících kroků.
 
-1. V portálu Azure přejděte na **Domovská stránka \> Azure AD B2C – aplikace**.
-1. Pro získání podrobností o aplikaci vyberte svou aplikaci a v levém navigačním podokně vyberte **Vlastnosti**.
-1. Z pole **ID aplikace** získejte ID aplikace B2C vytvořené ve vašem klientovi B2C. Později bude zadáno jako **GUID klienta** v konfigurátoru webů.
-1. V poli **AdresaURL odpovědi** získejte adresu URL odpovědi.
-1. Přejděte na **Domovská stránka \> Azure AD B2C – toky uživatelů (zásady)** a získejte názvy jednotlivých zásad toku uživatelů.
+1. V portálu Azure přejděte na **Domovská stránka \> Azure AD B2C – Registrace aplikací**.
+1. Pro získání podrobností o aplikaci vyberte svou aplikaci a v levém navigačním podokně vyberte **Přehled**.
+1. Z reference **ID aplikace (klienta)** získejte ID aplikace B2C vytvořené ve vašem klientovi B2C. Později bude zadáno jako **GUID klienta** v konfigurátoru webů.
+1. Vyberte **Identifikátory URI přesměrování** a shromážděte adresu URL odpovědi zobrazenou pro váš web (adresu URL odpovědi zadanou při nastavení).
+1. Přejděte na **Domovská stránka \> Azure AD B2C – toky uživatelů (zásady)** a shromážděte celé názvy jednotlivých zásad toku uživatelů.
 
-Na následujícím obrázku je znázorněn příklad stránky **Azure AD B2C – aplikace**.
+Na následujícím obrázku je znázorněn příklad stránky přehledu **Azure AD B2C – Registrace aplikací**.
 
-![Přechod k aplikaci B2C ve vašem klientovi](./media/B2CImage_19.png)
-
-Na následujícím obrázku je znázorněn příklad stránky **Vlastnosti** aplikace v Azure AD B2C. 
-
-![Kopírování ID aplikace z vlastností aplikace B2C](./media/B2CImage_21.png)
+![Azure AD B2C – Stránka s přehledem registrací aplikací se zvýrazněným ID aplikace (klienta)](./media/ClientGUID_Application_AzurePortal.png)
 
 Následující obrázek znázorňuje příklad zásad toku uživatelů na stránce **Azure AD B2C – toky uživatelů (zásady)**.
 
-![Získání názvů jednotlivých toků zásad B2C](./media/B2CImage_22.png)
+![Získání názvů jednotlivých toků zásad B2C.](./media/B2CImage_22.png)
 
-### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Zadání informací o aplikaci klienta AAD B2C do platformy Commerce
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Zadání informací o aplikaci klienta Azure AD B2C do platformy Commerce
 
 Před přidružením klienta B2C ke svým webům je nutné zadat podrobnosti o klientovi Azure AD B2C do konfigurátoru webů Commerce.
 
-Chcete-li do platformy Commerce přidat informace o aplikaci klienta AAD B2C, postupujte podle následujících kroků.
+Chcete-li do platformy Commerce přidat informace o aplikaci klienta Azure AD B2C, postupujte podle následujících kroků.
 
 1. Přihlaste se jako správce ke konfigurátoru webů Commerce pro vaše prostředí.
 1. V levém navigačním podokně vyberte **Nastavení klienta**, čímž jej rozbalíte.
@@ -331,11 +369,11 @@ Chcete-li přidružit aplikaci B2C k webu a kanálu, postupujte takto.
 
 Pokud uvažujete o migraci záznamů zákazníků z předchozí platformy zprotředkovatele identity, spolupracujte s týmem Dynamics 365 Commerce, abyste zkontrolovali potřeby zákazníka ohledně migrace.
 
-Další dokumentaci Azure AD B2C ohledně migrace zákazníků najdete v tématu [Migrace uživatelů do Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+Další dokumentaci Azure AD B2C ohledně migrace zákazníků najdete v tématu [Migrace uživatelů do Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Vlastní zásady
 
-Další informace o přizpůsobení interakcí a toků zásad Azure AD B2C nad rámec toho, co je nabídnuto standardními zásadami B2C, naleznete v tématu [Vlastní zásady v Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Další informace o přizpůsobení interakcí a toků zásad Azure AD B2C nad rámec toho, co je nabídnuto standardními zásadami B2C, naleznete v tématu [Vlastní zásady v Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Sekundární správce
 
@@ -353,12 +391,15 @@ Nepovinný sekundární účet správce lze přidat do oddílu **Uživatelé** v
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
-[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md) Přidružení webu Dynamics 365 Commerce k online kanálu
+[Hromadné odeslání přesměrování URL adresy](upload-bulk-redirects.md)
 
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
 
-[Konfigurace více klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

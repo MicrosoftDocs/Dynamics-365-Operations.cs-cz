@@ -2,36 +2,33 @@
 title: Nastavení zásad faktur dodavatele
 description: Toto téma vysvětluje, jak nastavit zásady pro fakturu dodavatele.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 07/11/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441175"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109749"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Nastavení zásad faktur dodavatele
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit zásady pro fakturu dodavatele. Zásady faktur dodavatele se spouští při zaúčtování faktury dodavatele na stránce Faktura dodavatele, a při otevření stránky s porušením zásad faktury dodavatele. Můžete také konfigurovat workflow faktury dodavatele tak, aby spustila zásady faktury dodavatele při každém odeslání faktury do workflowu. 
+Toto téma vysvětluje, jak nastavit zásady pro fakturu dodavatele. Zásady faktur dodavatele se spouští při zaúčtování faktury dodavatele na stránce **Faktura dodavatele**, a při otevření stránky **Porušení zásad** faktury dodavatele. Můžete také konfigurovat workflow faktury dodavatele tak, aby spustila zásady faktury dodavatele při každém odeslání faktury do workflowu. 
 
 - Zásady faktur dodavatele se nevztahují na faktury, které byly vytvořeny v registru faktur a deníku faktur.  
-- Ověření párování faktur nepoužívá zásady faktur dodavatele, ale namísto toho nastaví údaje na stránce s parametry závazků.  
-- Tento záznam používá ukázkovou společnost USMF. Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky. Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur.
+- Ověření párování faktur nepoužívá zásady faktur dodavatele, ale namísto toho nastaví údaje na stránce **Parametry závazků**.  
+- Tento záznam používá ukázkovou společnost USMF. Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky. Před prvním krokem ověřte, že je vybraný klíč konfigurace **Párování faktur**.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Příprava na vytvoření zásad faktur dodavatele
@@ -73,3 +70,6 @@ Toto téma vysvětluje, jak nastavit zásady pro fakturu dodavatele. Zásady fak
 16. Vyberte **OK**.
 17. Zavřete stránky a vraťte se na domovskou stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

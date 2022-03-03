@@ -2,11 +2,9 @@
 title: Práce se směrnicemi skladového místa
 description: Toto téma popisuje, jak pracovat se směrnicemi skladového místa. Směrnice skladového místa jsou pravidla definovaná uživatelem, která pomáhají identifikovat místa vyskladnění a umístění pro pohyb zásob.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963303"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103131"
 ---
 # <a name="work-with-location-directives"></a>Práce se směrnicemi skladového místa
 
@@ -46,14 +44,14 @@ Než budete moci vytvořit směrnici o umístění, musíte se ujistit, že jsou
 1. Přejděte na **Řízení skladu \> Nastavení \> Sklad \> Sklady**.
 1. Vytvoření skladu.
 1. Na záložce **Sklady** nastavte možnost **Použít procesy správy skladu** na *Ano*.
-1. Vytvoření skladových míst, typů skladových míst, profilů skladových míst a formátů skladového místa. Další informace viz [Konfigurace umístění ve skladu podporujícím WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Vytvoření pracovišť, zón a skupin zón. Další informace viz [Nastavení skladu](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) a [Konfigurace umístění ve skladu podporujícím WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Vytvoření skladových míst, typů skladových míst, profilů skladových míst a formátů skladového místa. Další informace viz [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Vytvoření pracovišť, zón a skupin zón. Další informace viz [Nastavení skladu](../../commerce/channels-setup-warehouse.md) a [Konfigurace umístění ve skladu podporujícím WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Typy pracovních příkazů pro směrnice skladového místa
 
 Mnoho polí, která lze nastavit pro směrnice skladového místa, je společných pro všechny typy pracovních příkazů. Ostatní pole jsou však specifická pro konkrétní typy pracovních příkazů.
 
-![Typy pracovních příkazů pro směrnice skladového místa](media/Location_Directives_Work_Order_Types.png "Typy pracovních příkazů pro směrnice skladového místa")
+![Typy pracovních příkazů pro směrnice skladového místa.](media/Location_Directives_Work_Order_Types.png "Typy pracovních příkazů pro směrnice skladového místa")
 
 > [!NOTE]
 > Dva typy pracovních příkazů, *Zrušená práce* a *Počítání cyklů*, jsou používány pouze systémem. Pro tyto typy pracovních příkazů nelze vytvořit směrnice skladového místa.
@@ -145,14 +143,14 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
 - **Kód směrnice** – Vyberte kód směrnice, který se má přidružit k šabloně práce nebo šabloně doplnění. Na stránce **Směrnice** můžete vytvořit nové kódy, které lze použít k připojení pracovních šablon nebo šablon doplnění ke směrnicím skladového místa. Kódy směrnice lze také použít k vytvoření spojení mezi jakýmkoliv řádkem šablony práce a směrnicí skladového místa (jako je například nákladová brána nebo skladové místo fáze).
 
     > [!TIP]
-    > Pokud je nastaven kód směrnice, systém nebude hledat směrnice skladového místa podle pořadového čísla, když musí být generovaná práce. Místo toho bude vyhledávat podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu šablony skladového místa pro konkrétní krok v šabloně práce, jako je například krok pro fázování materiálů.
+    > Pokud je nastaven kód směrnice, systém nebude hledat směrnice skladového místa podle pořadového čísla, když musí být generovaná práce. Místo toho bude vyhledávat podle kódu směrnice. To znamená, že můžete být konkrétnější v použití typu směrnice skladového místa pro konkrétní krok v šabloně práce, jako je například krok pro fázování materiálů.
 
 - **Více SKU** – Nastavte tuto možnost na *Ano*, chcete-li povolit použití více skladových jednotek (SKU) v jednom skladovém místě. Například pro umístění křídlových dveří musí být povoleno více SKU. Pokud povolíte více SKU, bude vaše skladové místo pro vložení uvedeno v práci dle očekávání. Skladové místo však bude schopno zpracovat pouze vložení více položek (pokud práce zahrnuje různé SKU, které je třeba vybrat a umístit). Nezvládne vložení jedné SKU. Pokud nastavíte tuto možnost na *Ne*, skladové místo bude specifikováno pouze v případě, že vložení má pouze jeden druh SKU.
 
     > [!IMPORTANT]
     > Abyste mohli provádět vícepolohové i jednopolohové vnoření, musíte zadat dva řádky, které mají stejnou strukturu a nastavení, ale musíte nastavit možnost **Vícenásobná SKU** na *Ano* pro jeden řádek a *Ne* pro druhý. Pro operace vložení je proto nutné mít dvě stejné směrnice skladového místa, i když nerozlišujete mezi jednou a vícero skladovými jednotkami u ID práce. Často platí, že pokud nenastavíte obě tyto směrnice skladového místa umístění, neočekávaná umístění obchodních procesů budou pocházet z použité směrnice skladového místa. Podobné nastavení musíte použít pro směrnice skladového místa, které mají **Typ práce** *výběr*, pokud potřebujete zpracovat objednávky, které obsahují více SKU.
 
-    Použijte možnost **Vícenásobné SKU** pro řádky práce, které zpracovávají více než jedno číslo položky. (Číslo položky bude v detailech práce prázdné a bude zobrazeno jako **Násobek** na stránkách zpracování v aplikaci skladu.)
+    Použijte možnost **Vícenásobné SKU** pro řádky práce, které zpracovávají více než jedno číslo položky. (Číslo položky bude v detailech práce prázdné a bude zobrazeno jako **Násobek** na stránkách zpracování v mobilní aplikaci Řízení skladu.)
 
     V typickém příkladu scénáře je pracovní šablona nastavena tak, aby měla více než jeden pár vyskladnění/vložení. V takovém případě možná budete chtít vyhledat konkrétní pracovní místo, které se použije pro řádky s **Typem práce** *Vložení*.
 
@@ -166,12 +164,12 @@ Pole na pevné záložce **Směrnice skladového místa** jsou specifické pro t
     > [!NOTE]
     > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types) dříve v tomto tématu.
 
-- **Vyhledat podle** - Určete, zda by odložené množství mělo být celé množství na registrační značce, nebo zda by mělo být po jednotlivých položkách. Toto pole vám pomůže zajistit, aby byl veškerý obsah registrační značky vložen na jedno místo a aby systém nenavrhoval, abyste obsah rozdělili na několik míst pro procesy příjmu **ASN** (příjem registrační značky), příjem **Smíšené registrační značky** a **Klastr**. (Proces příjmu **Klastr** vyžaduje, aby *funkce odložení klastru* byla zapnutá.) Chování dotazu na směrnici skladového místa řádků a akcí směrnice skladového místa se bude lišit v závislosti na hodnotě, kterou vyberete. Pevná záložka **Čáry** se používá, jen tehdy, když je **Vyhledat podle** nastavena na *Položka*.
+- **Vyhledat podle** - Určete, zda by odložené množství mělo být celé množství na registrační značce, nebo zda by mělo být po jednotlivých položkách. Toto pole vám pomůže zajistit, aby byl veškerý obsah registrační značky vložen na jedno místo a aby systém nenavrhoval, abyste obsah rozdělili na několik míst pro procesy příjmu **ASN** (příjem registrační značky), příjem **Smíšené registrační značky** a **Klastr**. (Proces příjmu **Klastr** vyžaduje, aby [funkce odložení klastru](putaway-clusters.md) byla zapnutá.) Chování dotazu na směrnici skladového místa řádků a akcí směrnice skladového místa se bude lišit v závislosti na hodnotě, kterou vyberete. Pevná záložka **Čáry** se používá, jen tehdy, když je **Vyhledat podle** nastavena na *Položka*.
 
     > [!NOTE]
     > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types).
 
-- **Dispoziční kód** - Toto pole se používá pro směrnice skladového místa, které mají typ pracovního příkazu *Nákupní objednávky*, *Hotové zboží odloženo* nebo *Vrátit objednávky* a typ práce *Vložit*. Použijte jej k vedení toku k použití konkrétní směrnice skladového místa, v závislosti na kódu dispozice, který pracovník vybral v aplikaci skladu. Můžete například nasměrovat vrácené zboží na místo kontroly, než bude vráceno do skladu. Dispoziční kód lze propojit se stavem zásob. Tímto způsobem jej lze použít ke změně stavu zásob v rámci procesu přijímání. Máte například dispoziční kód *QA*, který nastavuje stav zásob na *QA*. Poté můžete mít samostatnou směrnici skladového místa, abyste toto zboží přesunuli do karantény.
+- **Dispoziční kód** - Toto pole se používá pro směrnice skladového místa, které mají typ pracovního příkazu *Nákupní objednávky*, *Hotové zboží odloženo* nebo *Vrátit objednávky* a typ práce *Vložit*. Použijte jej k vedení toku k použití konkrétní směrnice skladového místa, v závislosti na kódu dispozice, který pracovník vybral v mobilní aplikaci Řízení skladu. Můžete například nasměrovat vrácené zboží na místo kontroly, než bude vráceno do skladu. Dispoziční kód lze propojit se stavem zásob. Tímto způsobem jej lze použít ke změně stavu zásob v rámci procesu přijímání. Máte například dispoziční kód *QA*, který nastavuje stav zásob na *QA*. Poté můžete mít samostatnou směrnici skladového místa, abyste toto zboží přesunuli do karantény.
 
     > [!NOTE]
     > Toto pole je k dispozici pouze pro vybrané typy pracovních příkazů, kde je povoleno doplňování. Úplný seznam najdete v části [Pole, která jsou specifická pro typy pracovních příkazů](#fields-specific-types).
@@ -239,7 +237,7 @@ Můžete určit více akcí směrnice skladového místa pro každý řádek. Po
     - **Zaokrouhlete nahoru na celou dávku LP a FEFO** - Tato strategie kombinuje prvky strategií *dávkové rezervace FEFO* a *Zaokrouhlete na celé LP*. Je platný pouze pro dávkové položky a směrnice skladového místa, které mají typ práce *Výběr*. Aby bylo možné použít řádek, musí být dávkově povolen na použití strategie *Dávková rezervace FEFO* a strategii *Zaokrouhlit na celé LP* lze použít pouze pro doplnění. Pokud je tato strategie nakonfigurována společně s limitem umístění skladu, může to způsobit přetížení vybraného umístění pracovního místa a ignorování limitů skladování.
     - **Zaokrouhlit nahoru na úplnou registrační značku** - Tato strategie slouží k zaokrouhlování skladového množství, aby odpovídalo množství registrační značky přiřazenému ke zboží k výdeji. Tuto strategii můžete použít pouze pro směrnice skladového místa doplnění typu *Výběr*. Pokud je tato strategie nakonfigurována společně s limitem umístění skladu, může to způsobit přetížení vybraného umístění pracovního místa a ignorování limitů skladování.
     - **Řízeno registrační značkou** – tuto strategii použijte, když provedete uvolnění objednávky do skladu pro vytvoření práce výdeje a vložení. Tento přístup lze provést pro více registračních značek. Tato strategie se pokusí rezervovat a vytvořit práci výdeje z míst, kde jsou požadované registrační značky, které byly přidruženy k řádkům převodního příkazu. Pokud však tyto akce nelze dokončit, ale přesto chcete vytvořit vychystávací práci, měli byste se vrátit k jiné strategii pro akce směrnice skladovacího místa. V závislosti na požadavcích vašeho obchodního procesu můžete také hledat zásoby v jiné oblasti skladu.
-    - **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tuto strategii můžete použít pouze pro směrnice skladového místa, které mají typ práce *Výběr*.
+    - **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tuto strategii můžete použít pouze pro směrnice skladového místa, které mají typ práce *Vložit*.
     - **FIFO zastarávání místa** – Pomocí strategie FIFO můžete dodávat jak dávkově sledované položky, tak položky bez dávkového sledování, na základě data, kdy byl inventář zadán do skladu. Tato schopnost může být užitečná zejména u zásob bez dávkového sledování, kde není k dispozici datum vypršení platnosti pro třídění. Strategie FIFO najde místo, které obsahuje nejstarší datum stárnutí, a přidělí výdej podle tohoto data stárnutí.
     - **LIFO zastarávání místa** – Pomocí strategie LIFO můžete dodávat jak dávkově sledované položky, tak položky bez dávkového sledování, na základě data, kdy byl inventář zadán do skladu. Tato schopnost může být užitečná zejména u zásob bez dávkového sledování, kde není k dispozici datum vypršení platnosti pro třídění. Strategie LIFO najde místo, které obsahuje nejnovější datum stárnutí, a přidělí výdej podle tohoto data stárnutí.
 
@@ -251,9 +249,12 @@ Pro tento scénář musíte definovat dvě akce směrnice skladového místa. Pr
 
 ## <a name="next-step"></a>Další krok
 
-Po vytvoření směrnic skladového místa můžete přiřadit každý kód směrnice ke kódu šablony práce pro vytvoření práce. Další informace naleznete v tématu [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Po vytvoření směrnic skladového místa můžete přiřadit každý kód směrnice ke kódu šablony práce pro vytvoření práce. Další informace naleznete v tématu [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 
 - Video: [Podrobné prozkoumání konfigurace správy skladu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Téma nápovědy [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

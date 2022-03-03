@@ -2,26 +2,23 @@
 title: Plná pozice seskupení
 description: Tohle téma obsahuje informace o funkci Plná pozice seskupení. Tato funkce nabízí alternativu k přísnějšímu vynucování pravidel pracovní přestávky při použití výdejů v seskupení, protože umožňuje větší toleranci chyb ve volumetrických omezeních kontejnerů nebo břemen.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424173"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102820"
 ---
 # <a name="cluster-position-full"></a>Plná pozice seskupení
 
@@ -31,12 +28,9 @@ Funkce *Plná pozice seskupení* nabízí alternativu k přísnějšímu vynucov
 
 Tato funkce zavádí možnost spustit tlačítko **Plná** pro jednu z pracovních jednotek v seskupení. Ve starších verzích byla tato možnost k dispozici pouze pro běžný výdej objednávek, nikoli pro výdej v seskupení. Tato funkce se však liší od standardního tlačítka **Plná** v tom, že zruší zbývající práci. Funkce nenavrhne, aby uživatel přidal do stejného seskupení další přihrádku a automaticky nevytváří novou práci.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Zapnutí funkce Plná pozice seskupení
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Plná pozice seskupení
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Plná pozice seskupení*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Plná pozice seskupení*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Plná pozice seskupení* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Nastavení
 
@@ -214,7 +208,7 @@ Měla by být vytvořena dvě ID práce, z nichž každé má dva řádky výdej
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Spuštění toku mobilního zařízení – nastavení potvrzení práce pro produkt
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*.
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*.
 1. Jděte na **Odchozí \> Vytvoření výdeje v seskupení**.
 
     Zobrazí se stránka **ÚKOL: Přiřadit práci seskupení**.
@@ -276,3 +270,6 @@ V tomto scénáři byl proveden výdej v seskupení a uživatel je nasměrován 
     Zobrazí se zpráva „Seskupení dokončeno“.
 
 Nyní můžete pomocí položky nabídky **Prodejní výdej** vyskladnit zbývající množství. Poté můžete pomocí položky nabídky **Nakládání prodeje** přesunout položky z přechodného skladového místa do překladišť.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

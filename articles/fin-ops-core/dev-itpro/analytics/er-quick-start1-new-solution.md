@@ -2,27 +2,27 @@
 title: Navrhněte nové řešení ER pro tisk vlastní sestavy
 description: Toto téma vysvětluje, jak navrhnout řešení elektronického výkaznictví (ER) pro tisk vlastní sestavy.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680235"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323835"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Navrhněte nové řešení ER pro tisk vlastní sestavy
 
@@ -121,11 +121,11 @@ Následující kroky vysvětlují, jak může uživatel v roli administrátora s
 
 - [Další prostředky](#References)
 
-V tomto příkladu vytvoříte nové řešení ER pro modul [Dotazník](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires). Toto nové řešení ER vám umožňuje navrhnout sestavu pomocí listu Microsoft Excel jako šablony. Poté můžete vygenerovat **Dotazník** sestavu ve formátu Excel nebo PDF, kromě generování existující zprávy SQL Server Reporting Services (SSRS). Novou sestavu můžete také na požádání upravit později. Není nutné žádné kódování.
+V tomto příkladu vytvoříte nové řešení ER pro modul [Dotazník](../../../human-resources/hr-learning-questionnaires.md). Toto nové řešení ER vám umožňuje navrhnout sestavu pomocí listu Microsoft Excel jako šablony. Poté můžete vygenerovat **Dotazník** sestavu ve formátu Excel nebo PDF, kromě generování existující zprávy SQL Server Reporting Services (SSRS). Novou sestavu můžete také na požádání upravit později. Není nutné žádné kódování.
 
 1. Chcete-li spustit stávající sestavu, přejděte na **Dotazník** \> **Design** \> **Sestava dotazníků**.
 
-    ![Výběrem položky nabídky Přehled dotazníků v modulu Dotazník spustíte existující sestavu SSRS](./media/er-quick-start1-application-menu-origin.png)
+    ![Výběrem položky nabídky Přehled dotazníků v modulu Dotazník spustíte existující sestavu SSRS.](./media/er-quick-start1-application-menu-origin.png)
 
 2. V dialogovém okně **Sestava dotazníků** zadejte kritéria výběru. Použijte filtr tak, aby přehled obsahoval pouze **SBCCrsExam** dotazník.
 
@@ -133,7 +133,7 @@ V tomto příkladu vytvoříte nové řešení ER pro modul [Dotazník](https://
 
 Následující obrázek ukazuje generovanou verzi zprávy SSRS pro dotazník **SBCCrsExam**.
 
-![Generovaná SSRS sestava](./media/er-quick-start1-ssrs-report.png)
+![Generovaná SSRS sestava.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurace rámce ER
 
@@ -181,13 +181,13 @@ Další informace o poskytovatelích konfigurací ER naleznete v tématu [Vytvo
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Návrh datového modelu specifického pro doménu
 
-Musíte vytvořit novou konfiguraci ER obsahující součást [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components) pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
+Musíte vytvořit novou konfiguraci ER obsahující součást datového modelu pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
 
 Dokončením kroků v části [Importujte novou konfiguraci datového modelu](#ImportDataModel) můžete importovat požadovanou konfiguraci datového modelu z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace datového modelu](#DesignDataModel), chcete-li navrhnout tento datový model od začátku.
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Import nové konfigurace datového modelu
 
-1. Stáhněte si soubor [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
@@ -273,7 +273,7 @@ Chcete-li pokračovat, přeskočte další postup, [Vytvoření nové konfigurac
 
     Následující obrázek ukazuje dokončený upravitelný datový model na stránce **Návrhář datového modelu**.
 
-    ![Konfigurovaný datový model v návrháři datového modelu ER](./media/er-quick-start1-model2.png)
+    ![Konfigurovaný datový model v návrháři datového modelu ER.](./media/er-quick-start1-model2.png)
 
 7. Uložte změny.
 8. Zavřete stránku **Návrhář datového modelu**.
@@ -287,7 +287,7 @@ Chcete-li pokračovat, přeskočte další postup, [Vytvoření nové konfigurac
 
 Stav verze 1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verzi 1 již nelze změnit. Tato verze obsahuje konfigurovaný datový model a lze ji použít jako základ pro další konfigurace ER. Verze 2 této konfigurace je vytvořena a má stav **Návrh**. Tuto verzi můžete upravit a tak upravit datový model **Dotazník**.
 
-![Verze konfigurovatelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-model-configuration.png)
+![Verze konfigurovatelné konfigurace na stránce Konfigurace.](./media/er-quick-start1-model-configuration.png)
 
 Další informace o verzích pro konfigurace ER viz [Přehled elektronického výkaznictví (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -296,13 +296,13 @@ Další informace o verzích pro konfigurace ER viz [Přehled elektronického v�
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Návrh mapování modelu pro konfigurovaný datový model
 
-Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) součást pro **Dotazník** datový model. Protože tato komponenta implementuje nakonfigurovaný datový model pro Finance, je specifická pro Finance. Komponentu mapování modelu musíte nakonfigurovat, abyste určili aplikační objekty, které musí být použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K dokončení tohoto úkolu si musíte být vědomi podrobností o implementaci datové struktury systému **Dotazník** obchodní domény ve financích.
+Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje mapování modelu součást pro datový model **Dotazníku**. Protože tato komponenta implementuje nakonfigurovaný datový model pro Finance, je specifická pro Finance. Komponentu mapování modelu musíte nakonfigurovat, abyste určili aplikační objekty, které musí být použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K dokončení tohoto úkolu si musíte být vědomi podrobností o implementaci datové struktury systému **Dotazník** obchodní domény ve financích.
 
 Dokončením kroků v [Importujte novou konfiguraci mapování](#ImportModelMapping) datového modelu v další části můžete importovat požadovanou konfiguraci mapování z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace mapování modelu](#CreateModelMapping), chcete-li navrhnout tento model mapování od začátku.
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Import nové konfigurace mapového modelu
 
-1. Stáhněte si soubor [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
@@ -368,7 +368,7 @@ Pro přístup k aplikačním tabulkám, které obsahují podrobnosti dotazníku,
     2. Vyberte **přidat**.
     3. V dialogovém okně do pole **Název** zadejte **\$ResultGroup**.
     4. Vyberte možnost **Upravit vzorec**.
-    5. V [Editoru vzorců ER](general-electronic-reporting-formula-designer.md), v poli **Vzorec**, zadejte **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** k použití vzájemných vztahů mezi tabulkami KMCollection a KMQQuestionesultGroup typu [cesta](er-formula-language.md#paths).
+    5. V [Editoru vzorců ER](general-electronic-reporting-formula-designer.md), v poli **Vzorec**, zadejte **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** k použití vzájemných vztahů mezi tabulkami KMCollection a KMQQuestionesultGroup typu [cesta](er-formula-language.md#Paths).
     6. Zvolte **Uložit** a pak zavřete editor vzorců.
     7. Vyberte **OK** pro přidání nového počítaného pole.
 
@@ -441,7 +441,7 @@ Můžete přidat popisky ER a nakonfigurovat některé zdroje dat tak, aby vrát
 5. Zavřete **Překlad textu** dialogové okno.
 6. Vyberte možnost **Zrušit**.
 
-![Přidejte označení ER pro mapování upravitelného modelu](./media/er-quick-start1-adding-labels.png)
+![Přidejte označení ER pro mapování upravitelného modelu.](./media/er-quick-start1-adding-labels.png)
 
 Zadali jste označení ER pouze pro výchozí jazyk. Informace o tom, jak lze štítky ER překládat do jiných jazyků, naleznete v části [Navrhujte vícejazyčné zprávy](er-design-multilingual-reports.md).
 
@@ -475,7 +475,7 @@ Protože je nutné transformovat výsledky porovnání mezi hodnotami výčtu a 
     8. Zvolte **Uložit** a pak zavřete editor vzorců.
     9. Vyberte **OK** pro přidání nového zdroje dat.
 
-![Konfigurovaný model mapování v návrháři mapového modelu ER](./media/er-quick-start1-added-data-sources.png)
+![Konfigurovaný model mapování v návrháři mapového modelu ER.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Navázání zdroje dat na pole zdrojů dat
 
@@ -526,7 +526,7 @@ Konfigurované zdroje dat musíte svázat s poli datového modelu a určit, jak 
 
     Následující obrázek ukazuje konečný stav konfigurovaných mapování modelu na stránce **Návrhář mapování modelu**.
 
-    ![Plně konfigurovaný model mapování v návrháři mapového modelu ER](./media/er-quick-start1-mapping2.png)
+    ![Plně konfigurovaný model mapování v návrháři mapového modelu ER.](./media/er-quick-start1-mapping2.png)
 
 7. Uložte změny.
 8. Zavřete stránku **Návrhář mapování modelu**.
@@ -540,7 +540,7 @@ Konfigurované zdroje dat musíte svázat s poli datového modelu a určit, jak 
 
 Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verzi 1.1 již nelze změnit. Tato verze obsahuje konfigurovaný model mapování a lze ji použít jako základ pro další konfigurace ER. Verze 1.2 této konfigurace je vytvořena a má stav **Návrh**. Tuto verzi můžete upravit a tak upravit konfiguraci **Mapování dotazníku**.
 
-![Verze konfigurovatelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-mapping-configuration.png)
+![Verze konfigurovatelné konfigurace ER na stránce Konfigurace.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Konfigurované mapování modelu je vaše implementace abstraktního datového modelu specifického pro Finance, který představuje obchodní doménu **Dotazník**.
@@ -549,32 +549,32 @@ Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verz
 
 Architektura elektronického výkaznictví používá předdefinované šablony ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word). Při generování požadované sestavy je šablona podle požadovaných datových toků vyplněna požadovanými daty. Proto musíte nejprve vytvořit šablonu pro vlastní sestavu. Tato šablona musí být navržena jako sešit aplikace Excel, jehož struktura představuje rozložení vlastní sestavy. Musíte pojmenovat každou položku aplikace Excel, kterou chcete vyplnit požadovanými údaji.
 
-1. Stáhněte si soubor [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) a uložte jej do místního počítače.
 2. Otevřete soubor v aplikaci Excel a zkontrolujte strukturu sešitu.
 
 Jak ukazuje následující obrázek, stažená šablona byla navržena pro tisk specifických dotazníků, které představují otázky v dotazníku, spolu s příslušnými odpověďmi.
 
-![Šablona Excel pro tisk zadaných dotazníků](./media/er-quick-start1-template-layout.png)
+![Šablona Excel pro tisk zadaných dotazníků.](./media/er-quick-start1-template-layout.png)
 
 Do této šablony byly přidány názvy z Excelu, aby se vyplnily podrobnosti dotazníku. Pomocí Správce jmen můžete zkontrolovat názvy z Excelu.
 
-![Pomocí Správce jmen můžete zkontrolovat názvy z Excelu v dodané šabloně Excel](./media/er-quick-start1-template-names.png)
+![Pomocí Správce jmen můžete zkontrolovat názvy z Excelu v dodané šabloně Excel.](./media/er-quick-start1-template-names.png)
 
 Štítky přehledů byly přidány jako pevný text v anglickém jazyce. Štítky výkazů můžete nahradit novými názvy z aplikace Excel, které vyplní štítky textem závislým na jazyce pomocí [štítků](#AddMmLabels) formátu ER, jako jste to udělali pro výrazy závislé na jazyce v konfigurovaném mapování modelu. V tomto případě musí být štítky ER přidány v upravitelném formátu ER.
 
 Jak ukazuje následující obrázek, byla určena záhlaví vlastní sestavy, aby aplikace Excel mohla stránkovat.
 
-![Vlastní záhlaví sestavy v poskytnuté šabloně Excel](./media/er-quick-start1-template-header.png)
+![Vlastní záhlaví sestavy v poskytnuté šabloně Excel.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Návrh formátu
 
-Jako uživatel v roli funkčního konzultanta elektronického výkaznictví musíte vytvořit novou konfiguraci ER, která obsahuje komponent [formát](general-electronic-reporting.md#FormatComponentOutbound). Komponent formátu musíte nakonfigurovat, abyste určili, jak bude šablona výkazu vyplněna požadovanými daty za běhu.
+Jako uživatel v roli funkčního konzultanta elektronického výkaznictví musíte vytvořit novou konfiguraci ER, která obsahuje komponent formát. Komponent formátu musíte nakonfigurovat, abyste určili, jak bude šablona výkazu vyplněna požadovanými daty za běhu.
 
 Dokončením kroků v části [Import navrženého formátu konfigurace](#FormatImport) můžete importovat požadovaný formát z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace formátu](#FormatCreate), chcete-li navrhnout tento formát od začátku.
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Import navrženého formátu konfigurace
 
-1. Stáhněte si soubor [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) a uložte jej do místního počítače.
+1. Stáhněte si soubor [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) a uložte jej do místního počítače.
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. V pracovním prostoru **Elektronické výkaznictví** vyberte dlaždici **Konfigurace výkaznictví**.
 4. V podokně akcí vyberte **Směnka** \> **Načíst ze souboru XML**.
@@ -614,11 +614,11 @@ Chcete-li pokračovat, přeskočte další postup, [Vytvoření nové konfigurac
     2. Vyhledejte a vyberte místně uložený soubor **Questionnaires report template.xslx** a vyberte **Otevřít**.
     3. Kliknutím na tlačítko **OK** importujte šablonu.
 
-    ![Import šablony sestavy](./media/er-quick-start1-template-import.png)
+    ![Import šablony sestavy.](./media/er-quick-start1-template-import.png)
 
 **Excel\\Soubor** prvek formátu je automaticky přidán do upravitelného formátu jako kořenový element. Navíc buď **Excel\\Rozsah** prvek formátu nebo **Excel\\Buňka** element formátu je automaticky přidán pro každý rozpoznaný Excelový název importované šablony. **Excel\\Záhlaví** formát, který má vnořený **Řetězcový** prvek je automaticky přidán, aby odrážel nastavení záhlaví importované šablony.
 
-![Struktura formátu, která zahrnuje automaticky přidané prvky v návrháři operace ER](./media/er-quick-start1-template-import2.png)
+![Struktura formátu, která zahrnuje automaticky přidané prvky v návrháři operace ER.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurace formátu
 
@@ -629,14 +629,14 @@ Chcete-li pokračovat, přeskočte další postup, [Vytvoření nové konfigurac
 
     Informace o tom, jak určit jazykové a kulturní kontexty pro proces ER, viz [Návrh vícejazyčných sestav](er-design-multilingual-reports.md).
 
-    ![Konfigurace nastavení jazyka a kultury pro navrženou sestavu v návrháři operace ER](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurace nastavení jazyka a kultury pro navrženou sestavu v návrháři operace ER.](./media/er-quick-start1-template-format-structure1.png)
 
 5. Ve stromu formátu rozbalte kořenový uzel a poté vyberte **ResultsGroup**.
 6. Na kartě **Formát**, pole **Směr replikace**, vyberte **Žádná replikace**, protože neočekáváte, že pro jeden dotazník budete mít více skupin výsledků.
 
-    ![Definování směru replikace pro prvky formátu Oblast v návrháři operací ER](./media/er-quick-start1-template-format-structure2.png)
+    ![Definování směru replikace pro prvky formátu Oblast v návrháři operací ER.](./media/er-quick-start1-template-format-structure2.png)
 
-7. Zvolte **Uložit**.
+7. Zvolte možnost **Uložit**.
 
 #### <a name="define-the-data-binding-for-a-report-title"></a><a name="DefineFormatBindings"></a>Definice datové vazby pro název sestavy
 
@@ -654,7 +654,7 @@ Musíte zadat datovou vazbu pro prvek formátu, který se používá k vyplněn�
 
 5. Zavřete editor vzorců.
 
-    ![Konfigurace vazby k vyplnění názvu generované sestavy](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfigurace vazby k vyplnění názvu generované sestavy.](./media/er-quick-start1-add-report-title-label.png)
 
 Tuto techniku můžete použít k tomu, aby všechny ostatní štítky aktuální šablony byly závislé na jazyce. Informace o tom, jak mohou být přidané štítky jedné konfigurace ER přeloženy do všech podporovaných jazyků, viz [Návrh vícejazyčných sestav](er-design-multilingual-reports.md).
 
@@ -664,7 +664,7 @@ Tuto techniku můžete použít k tomu, aby všechny ostatní štítky aktuáln�
 2. Vyberte možnost **Upravit**.
 3. Přečtěte si informace v dialogovém okně **Vlastnosti zdroje dat**. Tento zdroj dat představuje verzi 1 **Dotazníkového** komponentu datového modelu, který je umístěný v **Model dotazníků** ER konfigurace.
 
-![Vlastnosti modelu zdroje dat v návrháři operací ER](./media/er-quick-start1-model-data-source.png)
+![Vlastnosti modelu zdroje dat v návrháři operací ER.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Vázání prvků formátu na pole zdroje dat
 
@@ -680,11 +680,11 @@ Chcete-li určit, jak je šablona vyplněna za běhu, musíte svázat každý pr
 
     Prvek formátu rozsahu **Dotazník** je nakonfigurován jako vertikálně replikovaný. Když je vázán na zdroj dat typu **Seznam záznamů**, vhodný **Dotazník** rozsahu šablony Excel se opakuje pro každý záznam vázaného zdroje dat.
  
-    ![Vazba prvku formátu dotazníku na příslušný zdroj dat seznamu záznamů v návrháři operací ER](./media/er-quick-start1-bindings1.png)
+    ![Vazba prvku formátu dotazníku na příslušný zdroj dat seznamu záznamů v návrháři operací ER.](./media/er-quick-start1-bindings1.png)
 
     Protože rozsah **Dotazník** šablony Excel je definován mezi řádky 5 až 14, tyto řádky se opakují pro každý vykazovaný dotazník.
 
-    ![Řádky v šabloně Excel, které se budou opakovat ve vygenerované sestavě pro každý záznam ze zdrojů dat seznamu záznamů](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Řádky v šabloně Excel, které se budou opakovat ve vygenerované sestavě pro každý záznam ze zdrojů dat seznamu záznamů.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Nakonfigurujte podobné vazby pro zbývající prvky formátu, jak je popsáno v následující tabulce.
 
@@ -720,7 +720,7 @@ Chcete-li určit, jak je šablona vyplněna za běhu, musíte svázat každý pr
 
 Následující obrázek ukazuje konečný stav mapování konfigurovaných datových vazeb na stránce **Návrhář formátu**.
 
-![Konfigurované datové vazby v návrháři operace ER](./media/er-quick-start1-bindings2.png)
+![Konfigurované datové vazby v návrháři operace ER.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Celá sbírka specifikovaných zdrojů dat a vazeb představuje komponentu mapování formátu konfigurovaného formátu. Toto mapování formátu je zavoláno při spuštění konfigurovaného formátu pro generování sestav.
@@ -740,9 +740,9 @@ Nyní můžete spustit navržený formát pro účely testování ze stránky **
 
 Ve [výchozím nastavení](electronic-reporting-destinations.md#default-behavior) se vygenerovaná zpráva doručí jako soubor Excelu, který si můžete stáhnout. Následující obrázky ukazují dvě stránky generované zprávy ve formátu Excel.
 
-![Příklad vygenerované sestavy ve formátu Excel, strana 1](./media/er-quick-start1-report1a.png)
+![Příklad vygenerované sestavy ve formátu Excel, strana 1.](./media/er-quick-start1-report1a.png)
 
-![Příklad vygenerované sestavy ve formátu Excel, strana 2](./media/er-quick-start1-report1b.png)
+![Příklad vygenerované sestavy ve formátu Excel, strana 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Vylaďte navržený formát
 
@@ -763,7 +763,7 @@ Ve vygenerované sestavě nejsou otázky správně uspořádány. Pořadí můž
 1. Na stránce **Návrhář formátu** vyberte kořenovou položku **Sestava**.
 2. Na kartě **Mapování** ve stromu formátu rozbalte **Sestava\\Dotazník\\Otázka**.
 
-    ![Prvek formátu otázek typu typu oblast v návrhář operací ER](./media/er-quick-start1-bindings3.png)
+    ![Prvek formátu otázek typu typu oblast v návrhář operací ER.](./media/er-quick-start1-bindings3.png)
 
 3. Na kartě **Mapování** vyberte **model.Questionnaire**.
 4. Vyberte **Přidat** \> **Funkce\\Vypočítané pole** a pak v poli **Název** zadejte **OrderedQuestions**.
@@ -776,7 +776,7 @@ Ve vygenerované sestavě nejsou otázky správně uspořádány. Pořadí můž
 11. Vyberte **Svázat** a poté potvrďte, že aktuální **model.Questionnaire.Questions** cesta je nahrazena novou **model.Questionnaire.OrderedQuestions** cestou ve všech vazbách vnořených prvků.
 12. Zvolte **Uložit**.
 
-![Vazba prvku formátu Otázka na konfigurovaný zdroj dat OrderedQuestions v Návrháři operací ER](./media/er-quick-start1-bindings4.png)
+![Vazba prvku formátu Otázka na konfigurovaný zdroj dat OrderedQuestions v Návrháři operací ER.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Spuštění upraveného formátu z ER
 
@@ -790,7 +790,7 @@ Nyní můžete spouštět upravený formát pro účely testování z rozhraní 
 
 Následující obrázek ukazuje vygenerovanou sestavu ve formátu Excel, kde jsou otázky správně uspořádány.
 
-![Generovaná sestava ve formátu Excel, která má správně uspořádané otázky](./media/er-quick-start1-report2.png)
+![Generovaná sestava ve formátu Excel, která má správně uspořádané otázky.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Dokončete návrh formátu
 
@@ -801,7 +801,7 @@ Následující obrázek ukazuje vygenerovanou sestavu ve formátu Excel, kde jso
 
 Stav verze 1.1 této konfigurace se změní z **Návrh** na **Dokončeno**. Verzi 1.1 již nelze změnit. Tato verze obsahuje nakonfigurovaný formát a lze ji použít k vytištění vlastní sestavy. Verze 1.2 této konfigurace je vytvořena a má stav **Návrh**. Tuto verzi můžete upravit a tak upravit formát vašeho sestavení **Dotazníku**.
 
-![Verze konfigurovatelné konfigurace ER na stránce Konfigurace](./media/er-quick-start1-format-configuration.png)
+![Upravitelné konfigurace ER na stránce Konfigurace.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Konfigurovaný formát je váš návrh sestavení **Dotazníku** a neobsahuje žádné vztahy k artefaktům specifickým pro Finance.
@@ -1051,7 +1051,7 @@ Vytvořte svůj projekt a zpřístupněte uživatelům novou položku nabídky.
 
 1. Jděte do **Dotazník** \> **Design** \> **Sestava dotazníků (využívá ER)**.
 
-    ![Výběrem položky nabídky Přehled dotazníků (využívá ER) v modulu Dotazník spustíte nakonfigurovaní ER formát](./media/er-quick-start1-application-menu-modified.png)
+    ![Výběrem položky nabídky Přehled dotazníků (využívá ER) v modulu Dotazník spustíte nakonfigurovaní ER formát.](./media/er-quick-start1-application-menu-modified.png)
 
 2. V dialogovém okně, v poli **Mapování formátu**, **Sestava dotazníků**.
 3. Vyberte **OK**.
@@ -1059,7 +1059,7 @@ Vytvořte svůj projekt a zpřístupněte uživatelům novou položku nabídky.
 5. Možnost filtrování potvrďte výběrem tlačítka **OK**.
 6. Klepnutím na tlačítko **OK** sestavu spustíte.
 
-    ![Zadání kritérií výběru v dialogovém okně Elektronický výkaz](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Zadání kritérií výběru v dialogovém okně Elektronický výkaz.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Prohlédněte si generovanou sestavu.
 
@@ -1084,7 +1084,7 @@ Konfigurované řešení ER můžete upravit tak, že používá třídu poskyto
 
 Přidaný zdroj dat poskytuje informace o ID záznamu běžícího mapování formátu ER.
 
-![Přidán zdroj dat v návrháři mapování modelů ER](./media/er-quick-start1-mapping3.png)
+![Přidán zdroj dat v návrháři mapování modelů ER.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Přidejte zdroj dat pro přístup k záznamům mapování formátu ER
 
@@ -1119,7 +1119,7 @@ Pokračujte v úpravách mapování vybraného modelu tak, aby se do datového m
 
 Protože jste použili **FormatName**, v konfigurovaném mapování modelu se nyní zobrazí název formátu ER, který během provádění volá toto mapování modelu.
 
-![Vazba pole datového modelu na metodu přidaného zdroje dat v návrháři mapování modelu ER](./media/er-quick-start1-mapping4.png)
+![Vazba pole datového modelu na metodu přidaného zdroje dat v návrháři mapování modelu ER.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Dokončení návrhu mapování modelu
 
@@ -1156,7 +1156,7 @@ Konfigurovaný formát ER můžete upravit tak, aby jeho název byl zobrazen v z
 
 Konfigurovaný formát byl nyní upraven tak, aby jeho nýzev byl vložený do zápatí vygenerované sestavy pomocí prvku **Zápatí\\Řetězec**.
 
-![Přidání prvku formátu zápatí do konfigurovaného formátu v návrháři operací ER](./media/er-quick-start1-template-format-structure3.png)
+![Přidání prvku formátu zápatí do konfigurovaného formátu v návrháři operací ER.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Dokončete návrh formátu
 
@@ -1178,7 +1178,7 @@ Stav verze 1.2 této konfigurace se změní z **Návrh** na **Dokončeno**. Verz
 
 Všimněte si, že zápatí generované sestavy obsahuje název formátu ER, který byl použit k jeho vygenerování.
 
-![Vygenerovaný soubor ve formátu Excel](./media/er-quick-start1-report4.png)
+![Vygenerovaný soubor ve formátu Excel.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Spusťte formát z ER
 
@@ -1199,7 +1199,7 @@ Všimněte si, že zápatí generované sestavy neobsahuje název formátu ER, k
 3. Na pevné záložce **Cílové místo souboru**, nastavte **Obrazovka** [cíl](er-destination-type-screen.md) pro **Sestavení** formátovací komponent, který byl [přidán](#AddFormatRootElement) jako kořenový prvek nakonfigurovaného formátu ER **Sestavení dotazníku**.
 4. Na pevné záložce **Nastavení převodu PDF**, nakonfigurujte cíl pro převod zprávy do [formátu PDF](electronic-reporting-destinations.md#OutputConversionToPDF) který používá orientaci stránky **na šířku**.
 
-![Konfigurace vlastního cíle obrazovky pro formát ER na stránce Cíle elektronického hlášení](./media/er-quick-start1-destination.png)
+![Konfigurace vlastního cíle obrazovky pro formát ER na stránce Cíle elektronického hlášení.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Spusťte formát z aplikace a zobrazte jej jako dokument PDF
 
@@ -1211,7 +1211,7 @@ Všimněte si, že zápatí generované sestavy neobsahuje název formátu ER, k
 
     Na pevné záložce **Cíle** si všimněte, že pole **Výstup** je nastaveno na **Obrazovka**. Pokud chcete změnit nakonfigurovaný cíl, vyberte **Změna**.
 
-    ![Dialogové okno hlášení ER runtime, kde můžete změnit nakonfigurovaný cíl](./media/er-quick-start1-run-settings.png)
+    ![Dialogové okno hlášení ER runtime, kde můžete změnit nakonfigurovaný cíl.](./media/er-quick-start1-run-settings.png)
 
 6. Klepnutím na tlačítko **OK** sestavu spustíte.
 7. Zkontrolujte vygenerovaný soubor ve formátu Excel.
@@ -1233,3 +1233,6 @@ Všimněte si, že zápatí generované sestavy neobsahuje název formátu ER, k
 - [Funkce IF](er-functions-logical-if.md)
 - [Funkce ORDERBY](er-functions-list-orderby.md)
 - [Funkce SESSIONNOW](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

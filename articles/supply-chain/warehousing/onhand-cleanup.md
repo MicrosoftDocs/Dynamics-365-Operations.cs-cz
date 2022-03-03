@@ -2,11 +2,9 @@
 title: Úloha vyčištění položek zásob na skladě v řízení skladu
 description: Toto téma popisuje úlohu vyčištění položek, která pomáhá zlepšit výkon systému identifikací a odstraněním souvisejících, ale nepotřebných záznamů.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014476"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103856"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Úloha vyčištění položek zásob na skladě v řízení skladu
+
+[!include [banner](../includes/banner.md)]
 
 Výkon dotazů, které se používají k výpočtu zásob na skladě, je ovlivněn počtem záznamů v příslušných tabulkách. Jedním ze způsobů, jak zlepšit výkon, je snížení počtu záznamů, které musí databáze zvážit.
 
@@ -58,7 +58,7 @@ Zlepšení výkonu, které poskytuje úloha vyčištění, by však mělo tyto m
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Zpřístupněte nastavení Maximální doba provedení
 
-Ve výchozím nastavení není nastavení **Maximální doba provedení** dostupné. Pokud ji chcete použít, musíte použít [správu funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro zapnutí související funkce ve vašem systému. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Nastavení **Maximální doba provedení** je dostupné pouze tehdy, když je zapnuta funkce *Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu*. Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Maximální doba provedení pro úlohu čištění položek zásob na skladě v řízení skladu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Maximální doba provedení pro úlohu čištění položek na skladě v rámci správy skladu*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

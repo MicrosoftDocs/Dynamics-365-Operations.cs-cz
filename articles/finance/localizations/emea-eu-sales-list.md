@@ -2,27 +2,24 @@
 title: Souhrnné hlášení EU
 description: V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 author: EvgenyPopovMBS
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407603"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323469"
 ---
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
@@ -30,8 +27,7 @@ ms.locfileid: "4407603"
 
 V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 
-<a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
------------------------
+## <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
 Dodavatel, který provádí intrakomunitární plnění dodávek zboží nebo služeb společnostem, které jsou vytvořeny v Evropské unii (EU), musí dodat přehled interních dodávek (souhrnné hlášení EU neboli ESL). Obecně platí, že přehled ESL je nutné podat finančnímu úřadu nejpozději poslední den v měsíci po kalendářním období, ke kterému se přehled ESL vztahuje. Dodavatel musí uvést své daňové identifikační číslo (DIČ) na formuláři ESL a musí také uvést následující informace o odběrateli:
 
@@ -72,13 +68,19 @@ Následující tabulka zobrazuje požadavky, které musí být splněny, než za
 <td>Nastavte parametry identifikace osvobození od daně na stránce <strong>Parametry země/oblasti</strong> (klikněte na <strong>Daň</strong> &gt; <strong>Nastavení</strong> &gt; <strong>DPH</strong> &gt; <strong>Parametry země/oblasti</strong>). Pro jednotlivé země/oblasti, kde máte protistrany, vytvořte záznam na stránce a zadejte následující informace:
 <ul>
 <li><strong>Země/oblast</strong> – vyberte zemi nebo oblast, kterou chcete přidružit k identifikaci osvobození od daně.</li>
-<li><strong>DPH</strong> – zadejte identifikační číslo daňového osvobození (tedy předponu čísla osvobození od daně) pro vybranou zemi/oblast.</li>
+<li><strong>DPH</strong> – zadejte identifikační číslo daňového osvobození (tedy DIČ nebo předponu čísla osvobození od daně) pro vybranou zemi/oblast.</li>
 <li><strong>Kontrolovat číslo osvobození od daně</strong> – toto políčko zaškrtněte, chcete-li ověřit identifikaci osvobození od daně pro vybranou zemi/oblast.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Nastavení: </strong>Čísla osvobození od daně</td>
-<td>Vytvořte čísla osvobození od daně pro vaše protistrany na stránce <strong>Čísla osvobození od daně</strong> (klikněte na <strong>Daň</strong> &gt; <strong>Nastavení</strong> &gt; <strong>DPH</strong> &gt; <strong>Čísla osvobození od daně</strong>). Pro každé číslo osvobození od daně vytvořte záznam na stránce a zadejte následující informace:
+<td><strong>Nastavení:</strong> DIČ</td>
+<td>Vytvořte DIČ pro vaše protistrany na stránce <strong>Všichni odběratelé</strong> (přejděte na <strong>Prodej a marketing</strong> &gt; <strong>Odběratelé</strong> &gt; <strong>Všichni odběratelé</strong>, vyberte záznam odběratele a poté vyberte <strong>Odběratelé</strong> &gt; <strong>ID registrace</strong>) nebo na stránce <strong>Dodavatelé</strong> (přejděte na <strong>Zásobování a zdroje</strong> &gt; <strong>Dodavatelé</strong> &gt; <strong>Dodavatelé</strong>, vyberte záznam dodavatele a poté vyberte <strong>Dodavatelé</strong> &gt; <strong>ID registrace</strong>). Na záložce <strong>ID registrace</strong> na kartě <strong>Všeobecné</strong> vytvořte záznam a zadejte následující informace:
+<ul>
+<li><strong>Typ registrace</strong> – Vyberte typ registrace přiřazený ke kategorii registrace <strong>DIČ</strong> pro zemi/region protistrany.</li>
+<li><strong>Registrační číslo</strong> – Zadejte DIČ protistrany.</li>
+<li><strong>Platné od</strong> – Vyberte začátek období používání DIČ.</li>
+</ul>  
+Alternativně můžete DIČ pro vaše protistrany vytvořit na stránce <strong>Čísla osvobození od daně</strong> (přejděte na <strong>Daň</strong> &gt; <strong>Nastavení</strong> &gt; <strong>DPH</strong> &gt; <strong>Čísla osvobození od daně</strong>). Pro každé číslo osvobození od daně vytvořte záznam na stránce a zadejte následující informace:
 <ul>
 <li><strong>Země/oblast </strong>– vyberte zemi/oblast daňové registrace protistrany.</li>
 <li><strong>Číslo osvobození od daně</strong> – zadejte číslo osvobození od daně protistrany.</li>
@@ -87,7 +89,7 @@ Následující tabulka zobrazuje požadavky, které musí být splněny, než za
 </tr>
 <tr class="even">
 <td><strong>Nastavení: </strong>Daňová registrace protistran</td>
-<td>Nastavte informace o daňové registraci protistran buď na stránce <strong>Všichni odběratelé</strong> (klikněte na položky <strong>Prodej a marketing</strong> &gt; <strong>Odběratelé</strong> &gt; <strong>Všichni odběratelé</strong>, vyberte záznam odběratele a klikněte na položky <strong>Možnosti</strong> &gt; <strong>Změnit zobrazení</strong> &gt; <strong>Zobrazení podrobností</strong>) , nebo na stránce <strong>Dodavatelé</strong> (klikněte na položky <strong>Zásobování a zdroje</strong> &gt; <strong>Dodavatelé</strong> &gt; <strong>Dodavatelé</strong>, vyberte záznam dodavatele a klikněte na položky <strong>Možnosti</strong> &gt; <strong>Změnit zobrazení</strong> &gt; <strong>Zobrazení podrobností</strong>). Na pevné záložce <strong>Faktury a dodávky</strong> v poli <strong>Číslo osvobození od daně</strong> vyberte číslo daňové registrace.</td>
+<td>Nastavte informace o daňové registraci protistran buď na stránce <strong>Všichni odběratelé</strong> (klikněte na položky <strong>Prodej a marketing</strong> &gt; <strong>Odběratelé</strong> &gt; <strong>Všichni odběratelé</strong>, vyberte záznam odběratele a klikněte na položky <strong>Možnosti</strong> &gt; <strong>Změnit zobrazení</strong> &gt; <strong>Zobrazení podrobností</strong>) , nebo na stránce <strong>Dodavatelé</strong> (klikněte na položky <strong>Zásobování a zdroje</strong> &gt; <strong>Dodavatelé</strong> &gt; <strong>Dodavatelé</strong>, vyberte záznam dodavatele a klikněte na položky <strong>Možnosti</strong> &gt; <strong>Změnit zobrazení</strong> &gt; <strong>Zobrazení podrobností</strong>). Na záložce <strong>Faktury a dodávky</strong> v poli <strong>Číslo osvobození od daně</strong> vyberte číslo registrace k DPH.</td>
 </tr>
 <tr class="odd">
 <td><strong>Nastavení: </strong>DPH</td>
@@ -160,3 +162,6 @@ Po dokončení procesu vykazování za určité období (například pokud finan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

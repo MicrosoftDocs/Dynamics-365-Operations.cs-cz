@@ -2,26 +2,23 @@
 title: Správa změn technických produktů
 description: Toto téma poskytuje informace o správě technických změn. Správa technických změn poskytuje strukturované procesy pro správu změn technických produktů, od navrhování, vyžádání a provádění změn, přes kontrolu a schvalování změn, hodnocení jejich dopadu na existující transakce a jejich následné sledování.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmRequestPriorityChart,EngChgEcmRequestListPage,EngChgEcmRequestFilteredPart,EngChgEcmRequestDetails,EngChgEcmReason,EngChgEcmProjTableInformation,EngChgEcmProductRoute,EngChgEcmProductRelease,EngChgEcmProductPreview, EngChgEcmWhereUsed, EngChgEcmInventTrans,EngChgEcmHeaderSelection,EngChgEcmHeaderPreviewPart,EngChgEcmHeaderFilteredPart,EngChgEcmHeaderDetails, EngChgCaseWhereUsedAnalysis, EngChgCaseValidatorMessage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 314563e083434832ee04d9c19deb17cec221ae02
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424270"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102903"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Správa změn technických produktů
 
@@ -95,9 +92,13 @@ Tento seznam slouží pouze pro informaci. Proto můžete přidat tolik souvisej
 
 Pevná záložka **Zdroj** umožňuje sledovat počáteční bod požadavku na změnu. To je užitečné, pokud například chcete zjistit, zda byl požadavek na změnu vytvořen z prodejní objednávky, kdo ji vytvořil a ve které společnosti byl vytvořen.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Vyhodnoťte obchodní dopad požadavku na změnu
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Vyhodnoťte obchodní dopad požadavku na změnu a odešlete oznámení
 
-Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto způsobem můžete posoudit dopad požadované změny na otevřené transakce, jako jsou prodejní objednávky, výrobní objednávky a okamžité zásoby.
+Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto způsobem můžete posoudit dopad požadované změny na otevřené transakce, jako jsou prodejní objednávky, výrobní objednávky a okamžité zásoby. Při kontrole žádostí o změnu můžete zasílat oznámení lidem, kteří jsou odpovědní za plnění různých typů souvisejících objednávek.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Zkontrolujte ovlivněné transakce, zablokujte vybrané transakce a odešlete oznámení
+
+Chcete-li zkontrolovat ovlivněné transakce, zablokovat vybrané transakce a odeslat oznámení, postupujte následovně.
 
 1. Přejděte na **Správa technických změn \> Společné \> Správa technických změn \> Požadavky na technickou změnu**.
 1. Otevřete existující požadavek na změnu nebo vyberte **Nový** v podokně akcí a vytvořte nový požadavek na změnu.
@@ -106,7 +107,36 @@ Když zkontrolujete požadavek na změnu, můžete vyhledat závislosti. Tímto 
     - **Vyhledávání** - Naskenuje všechny otevřené transakce a poté otevře dialogové okno **Dopad podnikání na otevřené transakce**, kde je uveden seznam všech transakcí, které budou změnou ovlivněny.
     - **Zobrazit předchozí vyhledávání** - Otevře dialogové okno **Dopad podnikání na otevřené transakce**, ve kterém je uveden seznam předchozích výsledků vyhledávání. (Nové vyhledávání není provedeno.)
 
-1. Pokud se problém, který vyžaduje změnu, považuje za kritický, můžete blokovat otevřené transakce nebo upozornit odpovědného uživatele pomocí tlačítek na panelu nástrojů v dialogovém okně **Dopad podnikání na otevřené transakce**.
+1. Dialogové okno **Obchodní dopad na otevřené transakce** poskytuje sadu karet, z nichž každá zobrazuje seznam ovlivněných transakcí konkrétního typu (**Prodejní objednávky**, **Nákupní objednávky**, **Výrobní zakázky**, **Zásoby** a tak dále). Každá karta také zobrazuje číslo, které udává počet ovlivněných transakcí daného typu. Vyberte kartu pro zobrazení příslušného seznamu.
+1. Chcete-li pracovat s transakcí v seznamu, vyberte ji a poté vyberte jedno z následujících tlačítek na panelu nástrojů:
+
+    - **Zobrazit transakci** - Otevřete záznam vybrané transakce.
+    - **Blokovat objednávku** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej, chcete-li blokovat vybranou prodejní objednávku.
+    - **Blokovat řádek** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej, chcete-li blokovat vybraný řádek nákupní objednávky.
+    - **Upozornit odpovědného** - Toto tlačítko je k dispozici pouze na kartě **Prodejní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou zakázku odběratele. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit objednavatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní objednávky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako objednavatel vybrané nákupní objednávky. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Oznámit výrobu** - Toto tlačítko je k dispozici pouze na kartě **Výrobní zakázky**. Na rozdíl od prodejních objednávek a nákupních objednávek nemají výrobní objednávky jediného uživatele, který je nastaven jako odpovědný od začátku do konce. Místo toho obvykle přebírají vlastnictví různí vedoucí nebo plánovači pro konkrétní web nebo pro konkrétní část produkce (například pro konkrétní zdroje nebo skupiny prostředků). Proto když vyberete toto tlačítko, všichni uživatelé, kteří jsou zodpovědní za jakýkoli prostředek, který souvisí s vybranou výrobní zakázkou, obdrží oznámení o změně. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit pořizovatele** - Toto tlačítko je k dispozici pouze na kartě **Nákupní žádanka**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako pořizovatel vybrané nákupní žádanky. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Upozornit odpovědného za prodej** - Toto tlačítko je k dispozici pouze na kartě **Nabídky**. Vyberte jej a odešlete oznámení o změně uživateli, který je nastaven jako odpovědný za vybranou nabídku. Další informace o tom, kdo a jak může oznámení zobrazit, viz [Zkontrolujte a zpracujte oznámení o změnách transakcí](#review-notifications).
+    - **Likvidace** - Toto tlačítko je k dispozici pouze na kartě **Zásoby**. Vyberte jej, chcete-li vybrané zásoby zlikvidovat.
+    - **Zobrazit historii** - Otevřete historii akcí, které byly provedeny u vybrané transakce pomocí dialogového okna **Obchodní dopad na otevřené transakce**. (Například historie ukazuje, zda byla zaslána oznámení nebo byly blokovány transakce.) 
+    - **Zobrazit všechny transakce** - Otevřete úplný seznam všech transakcí, nejen otevřených transakcí.
+
+> [!IMPORTANT]
+> Tlačítko **Upozornit výrobu** je k dispozici pouze v případě, že je zapnutá funkce *Inženýrská oznámení pro výrobu* ve vašem systému zapnutá. Pokyny k zapnutí nebo vypnutí této funkce a jejích předpokladů naleznete v části [Přehled správy technických změn](product-engineering-overview.md).
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Zkontrolujte a zpracovejte oznámení o změně transakcí
+
+Oznámení o změnách, která obdržíte, si můžete přečíst a zpracovat následujícími způsoby:
+
+- S výjimkou případu výrobních zakázek se oznámení změn pro transakce, za které zodpovídáte, zobrazí v centru akcí. Tlačítko **Zobrazit zprávy** (symbol zvonku) na pravé straně navigační lišty označuje, kdy je pro vás k dispozici zpráva z centra akcí. Můžete tlačítkem **Zobrazit zprávy** otevřít centrum akcí a zkontrolovat zprávy.
+- Chcete-li zobrazit všechny výrobní zakázky, pro které bylo zasláno technické oznámení, přejděte na **Výrobní zakázky \> Výrobní zakázky \> Všechny výrobní zakázky**. Poté v podokně akcí na kartě **Výrobní zakázka** ve skupině **Požadavek na technickou změnu** výběrem možnosti **Technická oznámení** otevřete stránku **Technická oznámení**.
+- U výrobních zakázek můžete zkontrolovat pouze oznámení o změně, která se vztahují na produkční prostředky, které spravujete. V pracovním prostoru **Správa výrobního provozu**, v podokně akcí vyberte **Konfigurovat můj pracovní prostor**, chcete-li filtrovat stránku tak, aby zobrazovala pouze informace o výrobních jednotkách, skupinách nebo prostředcích, které spravujete. V sekci **Souhrn** dlaždice s názvem **Výrobní zakázky se změněnými produkty** zobrazuje počet oznámení, která odpovídají vašemu nastavení filtru. Vyberte tuto dlaždici a otevřete stránku **Technická oznámení**, která zobrazuje úplný seznam transakcí, které splňují kritéria vašeho filtru.
+
+Při kontrole oznámení výrobní zakázky na stránce **Technická oznámení** můžete sledovat odkazy na související objednávky změn nebo výrobní zakázky výběrem hodnot sloupců nebo pomocí souvisejících příkazů v podokně akcí. Po dokončení vyhodnocení změny a poté, co jste podle potřeby zrušili nebo upravili výrobní zakázky, můžete označit oznámení jako vyřešené. Vyberte oznámení a poté v podokně akcí vyberte **Vyřešit**. Oznámení je odebráno ze zobrazení všech uživatelů.
+
+> [!IMPORTANT]
+> Možnost zasílat upozornění na výrobní zakázky vyžaduje, aby funkce *Inženýrská oznámení pro výrobu* ve vašem systému byla zapnutá. Pokyny k zapnutí nebo vypnutí této funkce a jejích předpokladů naleznete v části [Přehled správy technických změn](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Vytvoření změnového příkazu z požadavku na změnu
 
@@ -142,13 +172,14 @@ Během kontroly žádosti o změnu v podokně akcí na kartě **Změnit požadav
 
 Jak je popsáno v tématu [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md), údaje o produktu, které můžete upravit, se liší v závislosti na typu právnické osoby, ve které pracujete (strojírenská společnost versus provozní společnost). Pravidla vlastnictví dat se také použijí na objednávky technických změn. Proto můžete v závislosti na právnické osobě, kde vytvoříte objednávku technické změny, provést různé typy změn. Několik příkladů:
 
-- Pro objednávky technických změn v **technické společnosti** můžete provést základní změny technických dat. Můžete například vytvořit nové verze produktu, změnit strukturu produktu pomocí kusovníku a změnit hodnoty technických atributů. U každého ovlivněného produktu vyberte jednu z následujících hodnot v poli **Dopad** :
+- Pro objednávky technických změn v *technické společnosti* můžete provést základní změny technických dat. Můžete například vytvořit nové verze produktu, změnit strukturu produktu pomocí kusovníku a změnit hodnoty technických atributů. U každého ovlivněného produktu vyberte jednu z následujících hodnot v poli **Dopad** :
 
     - **Žádný** - Aktualizujte stávající verzi produktu (aktualizace ve verzi).
     - **Nová verze** - Vytvořte novou verzi založenou na vybrané verzi produktu.
-    - **Nový produkt** - Vytvořte zcela nový produkt nebo variantu produktu, která je založena na vybrané verzi produktu.
+    - **Nový produkt** - Vytvořte zcela nový produkt, která je založena na vybrané verzi produktu.
+    - **Nová varianta** - Vytvořte novou variantu založenou na vybrané verzi produktu. Budou zkopírovány jeho kusovník a informace o trase.
 
-- Pro objednávky technických změn v **provozní společnost** můžete změnit logistická data produktu. Můžete například obohatit stávající kusovník nastavením pro získávání zdrojů, přidat místní trasy nebo místní kusovníky a dokonce obohatit kusovník přidáním nových řádků kusovníku pro místní obalový materiál, mazací kapaliny nebo pokyny v místním jazyce. Obohacení, která uživatelé provádějí v provozní společnosti, budou zachována, když budou zaslány nové aktualizace od technické společnosti. Další informace viz [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md).
+- Pro objednávky technických změn v *provozní společnost* můžete změnit logistická data produktu. Můžete například obohatit stávající kusovník nastavením pro získávání zdrojů, přidat místní trasy nebo místní kusovníky a dokonce obohatit kusovník přidáním nových řádků kusovníku pro místní obalový materiál, mazací kapaliny nebo pokyny v místním jazyce. Obohacení, která uživatelé provádějí v provozní společnosti, budou zachována, když budou zaslány nové aktualizace od technické společnosti. Další informace viz [Pravidla technických společností a vlastnictví dat](engineering-org-data-ownership-rules.md).
 
     Když jsou objednávky technické změny zpracovávány v technické společnosti, produkty jsou vytvářeny a/nebo aktualizovány pouze v technické společnosti. Pokud by se tedy měla aktualizovat také kmenová data produktu, musíte produkty také vydat provozním společnostem.
 
@@ -185,3 +216,6 @@ Většina polí u objednávek technických změn je stejná jako pole pro vydan�
 | Bezpečnost, ochrana zdraví a životního prostředí | Uveďte, zda se na změnu vztahují pravidla ochrany životního prostředí a bezpečnosti. Pokud ano, můžete vybrat příslušná pravidla. |
 
 Můžete použít tlačítko **Údržba / kopírování informací o změně** ke kopírování informací o změně mezi ovlivněnými produkty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

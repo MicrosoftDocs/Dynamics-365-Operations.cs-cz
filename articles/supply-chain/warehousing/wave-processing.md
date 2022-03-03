@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579921"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103506"
 ---
 # <a name="wave-creation-and-processing"></a>Vytvoření a zpracování vlny
 
@@ -190,9 +190,9 @@ V případě potřeby můžete zrušit vlnu, která byla zpracována. Pokud chce
 
 Na stránce **Podrobnosti dávkové úlohy vlny** můžete zkontrolovat dávkové úlohy a souvisejících úkoly spojené s jakoukoli vlnou. To je užitečné zejména při řešení problémů s vlnou, která selhala. Bez této funkce budou mít přístup k podrobnostem dávkové úlohy obvykle pouze správci. Stránku **Podrobnosti dávkové úlohy vlny** lze zpřístupnit uživatelům bez oprávnění správce a poskytuje zobrazení dávkových úloh a souvisejících úkolů pouze pro čtení.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>Povolení stránky podrobností dávkové úlohy vlny
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Zapnutí nebo vypnutí stránky podrobností dávkové úlohy vlny
 
-Pokud váš systém ještě neobsahuje stránku **Podrobnosti dávkové úlohy vlny**, přejděte na [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Podrobnosti dávkové úlohy vlny*.
+Od verze Supply Chain Management 10.0.25 je stránka **Podrobnosti dávkové úlohy vlny** ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Podrobnosti dávkové úlohy vlny* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Použití stránky podrobností dávkové úlohy vlny
 

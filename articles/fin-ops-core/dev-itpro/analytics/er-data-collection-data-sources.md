@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413584"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323894"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Používejte datové zdroje SHROMAŽĎOVÁNÍ DAT ve formátech elektronického hlášení
 
 [!include [banner](../includes/banner.md)]
 
-Můžete použít návrháře operací rámce [Elektronického výkaznictví (ER)](general-electronic-reporting.md) pro konfiguraci komponenty [formátu](general-electronic-reporting.md#FormatComponentOutbound) řešení elektronického výkaznictví, které se používá ke generování odchozích dokumentů v různých formátech. Hierarchická struktura konfigurované součásti formátu sestává z prvků formátu různých typů. Tyto prvky formátu se používají k vyplňování vygenerovaných dokumentů s požadovanými informacemi za běhu. Při spuštění formátu elektronického výkaznictví jsou ve výchozím nastavení prvky formátu spouštěny ve stejném pořadí, v jakém jsou uvedeny v hierarchii formátu: jeden po druhém, shora dolů.
+Můžete použít návrháře operací architektury [Elektronického výkaznictví (ER)](general-electronic-reporting.md) pro konfiguraci komponenty formátu řešení elektronického výkaznictví, které se používá ke generování odchozích dokumentů v různých formátech. Hierarchická struktura konfigurované součásti formátu sestává z prvků formátu různých typů. Tyto prvky formátu se používají k vyplňování vygenerovaných dokumentů s požadovanými informacemi za běhu. Při spuštění formátu elektronického výkaznictví jsou ve výchozím nastavení prvky formátu spouštěny ve stejném pořadí, v jakém jsou uvedeny v hierarchii formátu: jeden po druhém, shora dolů.
 
-Když ER spustí element formátu, který obsahuje vazbu, spustí se vzorec této vazby a element formátu přidá hodnotu do generovaného dokumentu. Vazba může například předat hodnotu a pole [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components) na prvek formátu. Zdroj dat SHROMAŽĎOVÁNÍ DAT můžete nakonfigurovat tak, aby sbíral hodnoty polí datového modelu za běhu, prováděl sčítání hodnot a generovaný dokument vyplnil shromážděnými hodnotami. Chcete-li použít tento přístup, změňte počáteční vazbu, aby se konfigurovaný zdroj dat SHROMAŽĎOVÁNÍ DAT použil k předání hodnoty pole datového modelu prvku formátu. Předáním hodnot prostřednictvím zdroje dat SHROMAŽĎOVÁNÍ DAT můžete shromažďovat požadované podrobnosti pro další použití.
+Když ER spustí element formátu, který obsahuje vazbu, spustí se vzorec této vazby a element formátu přidá hodnotu do generovaného dokumentu. Vazba může například předat hodnotu a pole datový model na prvek formátu. Zdroj dat SHROMAŽĎOVÁNÍ DAT můžete nakonfigurovat tak, aby sbíral hodnoty polí datového modelu za běhu, prováděl sčítání hodnot a generovaný dokument vyplnil shromážděnými hodnotami. Chcete-li použít tento přístup, změňte počáteční vazbu, aby se konfigurovaný zdroj dat SHROMAŽĎOVÁNÍ DAT použil k předání hodnoty pole datového modelu prvku formátu. Předáním hodnot prostřednictvím zdroje dat SHROMAŽĎOVÁNÍ DAT můžete shromažďovat požadované podrobnosti pro další použití.
 
 Při konfiguraci zdroje dat SHROMAŽĎOVÁNÍ DAT zadejte typ hodnoty, který bude spravován ve zdroji dat. Následující [typy dat](er-formula-supported-data-types-primitive.md) jsou aktuálně podporovány pro shromažďování hodnot:
 

@@ -2,7 +2,7 @@
 title: Generovat finanční sestavy
 description: Toto téma obsahuje informace o generování finančních sestav.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 101cf2b29bb6f91cec5a3dac0be30b53388905c96ecf481f5b7b3e90cda3f804
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740256"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119496"
 ---
 # <a name="generate-financial-reports"></a>Generovat finanční sestavy
 
@@ -28,9 +28,22 @@ ms.locfileid: "6740256"
 
 Toto téma obsahuje informace o generování finančních sestav.
 
-Chcete-li vygenerovat sestavu, otevřete definici sestavy a vyberte tlačítko **Generovat** na panelu nástrojů. Otevře se stránka **Stav fronty sestav** a označí umístění vaší sestavy ve frontě. Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer.
+Chcete-li vygenerovat sestavu, otevřete definici sestavy a na panelu nástrojů vyberte tlačítko **Generovat**. Otevře se stránka **Stav fronty sestav** a označí umístění vaší sestavy ve frontě.
 
-Pro generování sestav jsou k dispozici následující možnosti:
+Jak generování sestav postupuje, mohou být na stránce **Stav fronty zpráv** viditelné následující indikátory stavu fronty sestav.
+
+| Stav          | Kraj | Popis|
+|-----------------|--------|--------------------|
+| Zařazování do fronty        | Prozatímní |Definice sestavy je ověřena před vložením sestavy do fronty generování.                    |
+| Zařazeno ve frontě          | Prozatímní | Sestava vstoupí do fronty generování sestav a čeká na zpracování.                      |
+| Zpracování      | Prozatímní | Tento stav obvykle následuje po stavu **Ve frontě** a obvykle přechází do stavu **Konečný**, kdy je zpracování dokončeno.       |
+| Po zpracování | Prozatímní | Tento stav navazuje na stav **Zpracování** a označuje, že jsou shromážděna všechna data sestavy, ale že se provádějí odvozené akce, jako je výpočet a souhrn.            |
+| Probíhá zrušení      | Prozatímní | Vykazování je na žádost uživatele zrušeno. Tento stav je výsledkem uživatelem požadovaného zrušení sestavy ve stavu **Ve frontě** nebo **Zpracování**. Systém se pokusí vložit zprávu do stavu **Zrušeno**, pokud není příliš daleko při zpracování a musí ji dokončit v jiném stavu. |
+| Zrušeno        | Konečná | Zpracování sestavy je hotové, ale nebylo dokončeno kvůli zastavení na žádost uživatele.            |
+| Dokončeno       | Konečná | Sestava je připravena k použití.                      |
+| Nezdařilo se          | Konečná | Zpracování zprávy bylo dokončeno, ale selhalo a nemělo by se používat. |
+
+Ve výchozím nastavení se generovaná sestava otevře ve Web Viewer. Pro generování sestav jsou k dispozici následující možnosti:
 
 - Nastavte plán pro generování sestavy nebo skupiny sestav automaticky
 - Kontrolujte chybějící účty nebo data v sestavách a ověřujte přesnost sestav

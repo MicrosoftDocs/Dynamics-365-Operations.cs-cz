@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920591"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103781"
 ---
 # <a name="wave-allocation"></a>Přidělení vlny
 
@@ -67,7 +67,7 @@ Nastavení paralelního zpracování:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Povolení nebo zákaz paralelizace napříč všemi právnickými osobami
 
-Doporučujeme nastavit metodu `allocateWave`, aby běžela paralelně napříč všemi právnickými osobami, protože to pomáhá zlepšit výkon zpracování vln. Počínaje verzí Supply Chain Management 10.0.17 je funkce *Paralelizace vln pro metodu přidělení vlny* ve výchozím nastavení povolena pro všechny nové a aktualizované instalace a nelze ji znovu vypnout. Po povolení této funkce dojde k následujícímu:
+Doporučujeme nastavit metodu `allocateWave`, aby běžela paralelně napříč všemi právnickými osobami, protože to pomáhá zlepšit výkon zpracování vln. Počínaje verzí Supply Chain Management 10.0.17 je funkce *Paralelizace vln pro metodu přidělení vlny* ve výchozím nastavení zapnuta pro všechny nové a aktualizované instalace a nelze ji znovu vypnout. Po povolení této funkce dojde k následujícímu:
 
 - Metoda `allocateWave` je aktualizována tak, aby zahrnovala nastavení konfigurace úlohy, které vám umožní používat stránku **Metody zpracování vlny** k definování počtu úloh, které budou spuštěny současně, ekvivalentní počtu paralelních procesů. Výsledkem je, že čas strávený krokem přidělení vlny (což je obvykle 30–60 % celkového času zpracování) je snížen o faktor, který je zhruba ekvivalentní počtu úloh. Je také možné vybrat, která dávka bude přiřazena ke zpracování těchto úloh. Je důležité si uvědomit, že všechny vaše právnické osoby budou nakonfigurovány pro dávkové zpracování vln. Pro sklady, které jsou již nakonfigurovány pro dávkové zpracování vln, a pro sklady, které jsou již nakonfigurovány pro paralelní použití metody `allocateWave`, zůstane zachována stávající konfigurace.
 - Ve výchozím nastavení jsou všechny nové právnické osoby nakonfigurovány pro dávkové zpracování vln. Všechny nové sklady s povolenou možností **Procesy řízení skladu** budou mít ve výchozím nastavení nakonfigurovanou metodu `allocateWave` pro paralelní běh.

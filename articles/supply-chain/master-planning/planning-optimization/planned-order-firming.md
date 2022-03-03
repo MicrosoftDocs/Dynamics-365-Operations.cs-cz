@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920716"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102706"
 ---
 # <a name="firm-planned-orders"></a>Potvrdit plánované objednávky
 
@@ -35,17 +35,15 @@ Toto téma podrobně popisuje každou metodu.
 
 Většina funkcí plánované objednávky je k dispozici ve všech standardních instalacích Microsoft Dynamics 365 Supply Chain Management které používají optimalizace plánování. Než však budete moci používat funkce, které jsou popsány v tomto tématu, musí být ve Správci funkcí zapnuté.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Zapněte paralelizované potvrzení plánovaných objednávek
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Zapnutí nebo vypnutí paralelizovaného potvrzení plánovaných objednávek
 
-Paralelizované potvrzování pomáhá urychlit proces zpevnění tím, že jej paralelizuje napříč více vlákny. Tento přístup může být užitečný, když je spuštěno mnoho plánovaných objednávek.
-
-Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Paralelní potvrzení plánovaných objednávek*. (Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta.)
+Paralelizované potvrzování pomáhá urychlit proces zpevnění tím, že jej paralelizuje napříč více vlákny. Tento přístup může být užitečný, když je spuštěno mnoho plánovaných objednávek. Chcete-li použít tuto funkčnost, musí být ve vašem systému zapnutá funkce *Paralelní potvrzování plánovaných objednávek*. Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, můžete tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Paralelní potvrzování plánovaných objednávek* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Povolte plánované potvrzení objednávky pomocí filtrování
 
 Zpracování plánovaných objednávek s filtrováním vám umožňuje definovat logická kritéria pro výběr plánovaných objednávek, které se mají potvrdit. Můžete také zobrazit náhled vybraných plánovaných objednávek, spustit proces na pozadí nebo jej naplánovat jako dávkovou úlohu.
 
-Chcete-li tuto funkci ve svém systému zpřístupnit, přejděte na [Správu funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Zpracování plánovaných objednávek s filtrováním*.
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Potvrzení plánované objednávky s filtrováním* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Zapněte automatické potvrzení pro optimalizací plánování
 

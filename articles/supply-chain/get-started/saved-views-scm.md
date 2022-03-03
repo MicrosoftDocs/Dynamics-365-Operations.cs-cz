@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 943eee819c08704212ceb5e02921c36e7f1032dc
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777832"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103681"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardní uložená zobrazení pro Supply Chain Management
 
@@ -37,9 +37,9 @@ Další informace o tom, jak přizpůsobit a přejmenovat uložená zobrazení, 
 
 ## <a name="available-saved-views-and-how-to-enable-them"></a>Dostupná uložená zobrazení a způsob jejich povolení
 
-Chcete-li použít funkci uložených zobrazení, musíte bez ohledu na to, zda použijete standardní uložené pohledy, zapnout funkci *Uložená zobrazení* ve [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li použít libovolné uložené zobrazení, musíte bez ohledu na to, zda použijete standardní uložené pohledy, zapnout funkci *Uložená zobrazení* ve [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (od verze 10.0.21 je tato funkce ve výchozím nastavení povolena).
 
-Zbývající části tohoto tématu obsahují tabulky, které popisují standardní uložená zobrazení, která jsou aktuálně k dispozici pro každý příslušný modul. Každá tabulka zobrazuje název každého uloženého zobrazení, stránku, kde ho najdete, a popis. Každá tabulka také zobrazuje název funkce, která zahrnuje uložené zobrazení. Chcete-li ve svém systému zobrazit standardní uložené zobrazení, musíte zapnout určenou funkci v okně [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Zbývající části tohoto tématu obsahují tabulky, které popisují standardní uložená zobrazení, která jsou aktuálně k dispozici pro každý příslušný modul. Každá tabulka zobrazuje název každého uloženého zobrazení, stránku, kde ho najdete, a popis. Každá tabulka také zobrazuje název funkce, která zahrnuje uložené zobrazení. Chcete-li ve svém systému zobrazit standardní uložené zobrazení, musíte zapnout určenou funkci v okně [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Od verze 10.0.25 jsou všechna uvedená zobrazení ve výchozím nastavení zapnuta.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Uložená zobrazení pro modul řízení zásob
 
@@ -47,15 +47,15 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízen
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Seznam skladu | Finance | Toto zjednodušené zobrazení vám umožní soustředit se na finanční informace, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Seznam skladu | Řízení kvality | Toto zjednodušené zobrazení vám umožní soustředit se na kontrolu kvality, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Seznam skladu | Příjem | Toto zjednodušené zobrazení vám umožní soustředit se na operace příjmu, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Seznam skladu | Expedice | Toto zjednodušené zobrazení vám umožní soustředit se na operace expedování, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Transakce | Zjednodušený | Toto zjednodušené zobrazení umožňuje kontrolovat stav zásob, aniž by vás rozptylovaly finanční informace a další pole, která se používají méně často. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Převodní příkazy | Expedice | Toto zjednodušené zobrazení vám umožní soustředit se na operace expedování, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Převodní příkazy | Příjem | Toto zjednodušené zobrazení vám umožní soustředit se na operace příjmu, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Převodní příkazy | Řízení kvality | Toto zjednodušené zobrazení vám umožní soustředit se na operace kontroly kvality, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Převodní příkazy | Finance | Toto zjednodušené zobrazení vám umožní soustředit se na finanční údaje, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro Správu inventáře (ve výchozím nastavení zapnuto od verze 10.0.21). |
+| Seznam skladu | Finance | Toto zjednodušené zobrazení vám umožní soustředit se na finanční informace, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Seznam skladu | Řízení kvality | Toto zjednodušené zobrazení vám umožní soustředit se na kontrolu kvality, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Seznam skladu | Příjem | Toto zjednodušené zobrazení vám umožní soustředit se na operace příjmu, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Seznam skladu | Expedice | Toto zjednodušené zobrazení vám umožní soustředit se na operace expedování, zatímco budete spravovat zásoby na skladě. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Transakce | Zjednodušený | Toto zjednodušené zobrazení umožňuje kontrolovat stav zásob, aniž by vás rozptylovaly finanční informace a další pole, která se používají méně často. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Převodní příkazy | Expedice | Toto zjednodušené zobrazení vám umožní soustředit se na operace expedování, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Převodní příkazy | Příjem | Toto zjednodušené zobrazení vám umožní soustředit se na operace příjmu, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Převodní příkazy | Řízení kvality | Toto zjednodušené zobrazení vám umožní soustředit se na operace kontroly kvality, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Převodní příkazy | Finance | Toto zjednodušené zobrazení vám umožní soustředit se na finanční údaje, zatímco budete spravovat objednávky převodu. | Uložená zobrazení pro řízení zásob<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Uložená zobrazení pro modul hlavního plánování
 
@@ -63,8 +63,8 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Hlavní
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Plánované objednávky: Stránka s podrobnostmi o plánované objednávce | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají pro práci s podrobnostmi jedné plánované objednávky. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro plánované objednávky |
-| Plánované objednávky: Stránka se seznamem plánovaných objednávek | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají pro práci se seznamy plánovaných objednávek. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro plánované objednávky |
+| Plánované objednávky: Stránka s podrobnostmi o plánované objednávce | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají pro práci s podrobnostmi jedné plánované objednávky. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro plánované objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Plánované objednávky: Stránka se seznamem plánovaných objednávek | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají pro práci se seznamy plánovaných objednávek. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro plánované objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
 
 ## <a name="saved-views-for-the-procurement-and-sourcing-module"></a>Uložená zobrazení pro modul Zásobování a zdroje
 
@@ -72,10 +72,10 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Zásobo
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Podrobnosti nákupní objednávky | Vytvoření objednávky | Toto zjednodušené zobrazení je optimalizováno pro vytváření nových objednávek. | Uložená zobrazení pro nákupní objednávky |
-| Podrobnosti nákupní objednávky | Řízení zásob | Toto zjednodušené zobrazení je optimalizováno pro provádění činností souvisejících s inventářem, jako je sledování zásob, které byly přijaty, příjem inventáře, kontrola požadavků na síť a úprava množství objednávky. | Uložená zobrazení pro nákupní objednávky |
-| Podrobnosti nákupní objednávky | Správa financí | Toto zjednodušené zobrazení je optimalizováno pro provádění činností souvisejících s financemi, jako je fakturace a kontrola cen, součtů a poplatků. | Uložená zobrazení pro nákupní objednávky |
-| Podrobnosti nákupní objednávky | Schválení objednávky | Toto zjednodušené zobrazení je optimalizováno pro schvalování nákupních objednávek. | Uložená zobrazení pro nákupní objednávky |
+| Podrobnosti nákupní objednávky | Vytvoření objednávky | Toto zjednodušené zobrazení je optimalizováno pro vytváření nových objednávek. | Uložená zobrazení pro nákupní objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Podrobnosti nákupní objednávky | Řízení zásob | Toto zjednodušené zobrazení je optimalizováno pro provádění činností souvisejících s inventářem, jako je sledování zásob, které byly přijaty, příjem inventáře, kontrola požadavků na síť a úprava množství objednávky. | Uložená zobrazení pro nákupní objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Podrobnosti nákupní objednávky | Správa financí | Toto zjednodušené zobrazení je optimalizováno pro provádění činností souvisejících s financemi, jako je fakturace a kontrola cen, součtů a poplatků. | Uložená zobrazení pro nákupní objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Podrobnosti nákupní objednávky | Schválení objednávky | Toto zjednodušené zobrazení je optimalizováno pro schvalování nákupních objednávek. | Uložená zobrazení pro nákupní objednávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
 
 ## <a name="saved-views-for-the-product-information-management-module"></a>Uložená zobrazení pro modul správy Informace o produktu
 
@@ -83,11 +83,11 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul správy
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Seznam uvolněných produktů | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Podrobnosti o uvolněném produktu | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Podrobnosti o uvolněném produktu | Správa logistických informací | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě logistických informací o produktech. | Uložená zobrazení pro uvolněné produkty (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Podrobnosti o uvolněném produktu | Správa informací o nákupu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o nákupech produktů. | Uložená zobrazení pro uvolněné produkty (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Podrobnosti o uvolněném produktu | Správa informací o prodeji | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o produktech souvisejících s prodejem. | Uložená zobrazení pro uvolněné produkty (ve výchozím nastavení zapnuto od verze 10.0.21). |
+| Seznam uvolněných produktů | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Podrobnosti o uvolněném produktu | Vytvoření produktu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při tvorbě produktů. | Uložená zobrazení pro uvolněné produkty<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Podrobnosti o uvolněném produktu | Správa logistických informací | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě logistických informací o produktech. | Uložená zobrazení pro uvolněné produkty<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Podrobnosti o uvolněném produktu | Správa informací o nákupu | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o nákupech produktů. | Uložená zobrazení pro uvolněné produkty<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Podrobnosti o uvolněném produktu | Správa informací o prodeji | Zjednodušené zobrazení stránky, které obsahuje pouze nejčastěji používaná pole při správě informací o produktech souvisejících s prodejem. | Uložená zobrazení pro uvolněné produkty<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Uložená zobrazení pro modul řízení výroby
 
@@ -95,10 +95,10 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízen
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Stránka podrobností výrobního příkazu | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Stránka výdejky výrobního příkazu | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby (ve výchozím nastavení zapnuto od verze 10.0.21). |
-| Stránka výdejky výrobních příkazů | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby (ve výchozím nastavení zapnuto od verze 10.0.21). |
+| Stránka kusovníku výrobního příkazu | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Stránka podrobností výrobního příkazu | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Stránka výdejky výrobního příkazu | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
+| Stránka výdejky výrobních příkazů | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložená zobrazení pro řízení výroby<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.21) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Uložená zobrazení pro modul Prodej a marketing
 
@@ -106,10 +106,10 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Prodej 
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Deník dodacích listů | Recenze deníku | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke kontrole deníků dodacích listů. | Uložená zobrazení pro prodej a marketing |
-| Prodejní objednávka | Vytvoření objednávky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají k vytvoření prodejních objednávek. | Uložená zobrazení pro prodej a marketing |
-| Prodejní objednávka | Kontrola objednávky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke kontrole prodejních objednávek. | Uložená zobrazení pro prodej a marketing |
-| Prodejní nabídka | Vytvoření nabídky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají k vytvoření prodejních nabídek. | Uložená zobrazení pro prodej a marketing |
+| Deník dodacích listů | Recenze deníku | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke kontrole deníků dodacích listů. | Uložená zobrazení pro prodej a marketing<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Prodejní objednávka | Tvorba objednávky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají k vytvoření prodejních objednávek. | Uložená zobrazení pro prodej a marketing<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Prodejní objednávka | Kontrola objednávky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke kontrole prodejních objednávek. | Uložená zobrazení pro prodej a marketing<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Prodejní nabídka | Tvorba nabídky | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají k vytvoření prodejních nabídek. | Uložená zobrazení pro prodej a marketing<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
 
 ## <a name="saved-views-for-the-warehouse-management-module"></a>Uložená zobrazení pro modul řízení skladu
 
@@ -117,13 +117,13 @@ Následující tabulka popisuje uložená zobrazení dostupná pro modul Řízen
 
 | Strana | Název zobrazení | Zobrazení popisu | Název funkce |
 |---|---|---|---|
-| Všechny náklady | Příchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování příchozích nákladů. | Uložená zobrazení pro zpracování vytížení |
-| Všechny náklady | Odchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování odchozích nákladů. | Uložená zobrazení pro zpracování vytížení |
-| Všechny dodávky | Příchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování příchozích zásilek. | Uložená zobrazení pro zpracování dodávky |
-| Všechny dodávky | Odchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování odchozích zásilek. | Uložená zobrazení pro zpracování dodávky |
-| Všechny vlny | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro zpracování vlny |
-| Pracovní plocha plánování vytížení | Zjednodušené | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro pracovní plochu plánování vytížení |
-| Podrobnosti o práci | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení stránky s podrobnostmi o práci |
+| Všechny náklady | Příchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování příchozích nákladů. | Uložená zobrazení pro zpracování vytížení<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Všechny náklady | Odchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování odchozích nákladů. | Uložená zobrazení pro zpracování vytížení<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Všechny dodávky | Příchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování příchozích zásilek. | Uložená zobrazení pro zpracování dodávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Všechny dodávky | Odchozí zpracování | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají ke zpracování odchozích zásilek. | Uložená zobrazení pro zpracování dodávky<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Všechny vlny | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro zpracování vlny<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Pracovní plocha plánování vytížení | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení pro pracovní plochu plánování vytížení<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
+| Podrobnosti o práci | Zjednodušený | Toto zjednodušené zobrazení zahrnuje pouze pole, která se nejčastěji používají. Tímto způsobem poskytuje rychlejší přehled a efektivní pracovní proces. | Uložené zobrazení stránky s podrobnostmi o práci<br><br>(Ve výchozím nastavení zapnuto od verze 10.0.25) |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Konfigurovat úkolový lístek pro zařízení
 description: Tohle téma popisuje různé možnosti konfigurace zařízení úkolového lístku.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423882"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103431"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
@@ -37,21 +34,19 @@ Než budou k dispozici, musí být ve vašem systému povoleno několik nastaven
 
 Chcete-li tuto funkci zpřístupnit, povolte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
-1. Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku
+1. *Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná.)
+1. *Povolit automatické generování čísla registrační značky při vykazování jako dokončeno v zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce povinná.)
 
 ### <a name="print-label"></a>Tisk etikety
 
 Chcete-li tuto funkci zpřístupnit, povolte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v pořadí):
 
-1. Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku
-1. Vytisknout štítek ze zařízení úkolového lístku
+1. *Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná.)
+1. *Vytisknout štítek ze zařízení úkolového lístku*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce povinná.)
 
 ### <a name="allow-locking-of-touch-screen"></a>Povolení uzamčení dotykové obrazovky
 
-Chcete-li tuto funkci zpřístupnit, povolte následující funkci ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- (Preview) Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním *Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="manage-your-device-configurations"></a>Správa konfigurace zařízení
 
@@ -95,3 +90,6 @@ Jak však bylo uvedeno výše, pokud používáte konfiguraci zařízení s mož
 ## <a name="additional-resources"></a>Další prostředky
 
 [Vykázání jako dokončené ze zařízení úkolového lístku](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
