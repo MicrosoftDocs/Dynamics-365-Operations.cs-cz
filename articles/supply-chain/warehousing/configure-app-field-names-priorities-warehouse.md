@@ -1,12 +1,10 @@
 ---
-title: Konfigurace názvů polí aplikace v aplikaci skladu
-description: Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Dynamics 365 Supply Chain Management.
+title: Konfigurace polí pro mobilní aplikaci Řízení skladu
+description: Toto téma popisuje, jak definovat a konfigurovat názvy a priority polí v mobilní aplikaci Řízení skladu.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -18,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9f9504ec87fd58bbf685519108477a48055da93
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963428"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344143"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurace názvů polí aplikace v aplikaci skladu
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurace polí pro mobilní aplikaci Řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Dynamics 365 Supply Chain Management. 
+Toto téma popisuje, jak definovat a konfigurovat názvy a priority polí v mobilní aplikaci Řízení skladu.
 
 > [!NOTE]
-> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace skladu a priority, a zároveň způsob jejich použití v aplikaci Warehousing. Podrobné informace o konfiguraci připojení k aplikaci Warehousing naleznete v kurzu [Přehled instalace a konfigurace aplikace skladu](install-configure-warehousing-app.md).
+> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Mobilní aplikace Řízení skladu je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy a priority polí mobilní aplikace Řízení skladu, a zároveň způsob jejich použití.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurace názvů polí aplikace skladu
 
@@ -139,7 +137,9 @@ Na základě nastavení priority pole aplikace skladu ve výše uvedené tabulce
 
 Zbývající metadata, například umístění, se nezobrazí na stránce úloh, ale budou zobrazena na stránce podrobností. Další informace a příklady uživatelského rozhraní naleznete v příspěvku blogu [Oznámení aplikace Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="additional-resources"></a>Další prostředky
---------
+## <a name="additional-resources"></a>Další prostředky
 
-[Přehled instalace a konfigurace aplikace skladu](install-configure-warehousing-app.md)
+[Instalace a připojení mobilní aplikace Řízení skladu](../warehousing/install-configure-warehouse-management-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

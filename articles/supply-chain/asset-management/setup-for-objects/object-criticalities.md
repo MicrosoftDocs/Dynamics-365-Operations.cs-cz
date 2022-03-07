@@ -1,12 +1,10 @@
 ---
 title: Typy kritičnosti majetku
 description: Téma vysvětluje typy kritičnosti majetku v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776913"
 ---
 # <a name="asset-criticality-types"></a>Typy kritičnosti majetku
 
@@ -42,7 +40,7 @@ Chcete-li nastavit kritičnost, nejprve vytvořte typy kritičnosti, které by m
 4. V poli **Název** zadejte název typu kritičnosti.
 5. Do pole **Faktor** zadejte faktor. Tento faktor se používá při výpočtu plánování pracovních příkazů k určení záznamu kritičnosti, který by měl být použit. (Záznam s nejvyšším faktorem je vždy použit.) Toto nastavení je důležité, pokud, jak je znázorněno na následujícím obrázku, jsou vytvořeny řádky kritičnosti, které mají stejnou hodnotu kritičnosti.
 
-    ![Stránky Typy kritických záležitostí](media/23-setup-for-objects.png)
+    ![Stránky Typy kritických záležitostí.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Nastavení kritičnosti majetku
 
@@ -61,3 +59,6 @@ Chcete-li nastavit kritičnost, nejprve vytvořte typy kritičnosti, které by m
 - Kritičnost na pracovním příkazu je přepočítána pokaždé, když je v pracovním příkazu přidán nebo odstraněn řádek.
 - Pokud pracovní příkaz obsahuje několik prací pracovního příkazu, v pracovním příkazu je vždy použita nejvyšší kritičnost podle pole **Faktor** na stránce **Typy kritičnosti**.
 - Obecně platí, že kritičnost majetku se může v průběhu období změnit. Kritičnost může být ovlivněna nákupem nového vybavení, rekonstrukcí a tak dále. Zvažte možnost přehodnocením kritičnosti svého majetku v pravidelných intervalech (například jednou za rok nebo každý druhý rok), abyste zajistili, že se vaše definice kritičnosti shodují s aktuálním nastavením výroby.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

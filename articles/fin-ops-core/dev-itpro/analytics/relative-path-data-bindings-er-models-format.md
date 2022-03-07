@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 686600e857c7b5aab74d80b7bc31c6bbaaf8d2336d57ff5839752d0ff33def84
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741673"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Použití relativní cesty v datových vazbách modelů a formátů elektronického výkaznictví
 
@@ -26,8 +26,8 @@ ms.locfileid: "8313560"
 
 Nástroj elektronické výkaznictví umožňuje uživatelům definovat struktury elektronického formátu a pak popsat, jak by tyto struktury měly být vyplněny pomocí dat a algoritmů, které existují. Další informace získáte v tématu [Vytvoření konfigurací elektronického výkaznictví](electronic-reporting-configuration.md). Chcete-li určit datový tok pro načítání dat aplikace Finance and Operations a použít jej k vygenerování elektronického dokumentu, je nutné provést následující kroky:
 
-- Navažte nakonfigurované zdroje dat na prvky navrženého datového modelu specifického pro určitou doménu. Struktura modelu a vybrané zdroje dat mohou být součástí komplexní hierarchické struktury. Z tohoto důvodu mohou být konečné vazby poměrně velké a obsahovat mnoho prvků různých typů (například vztahy, tabulky a metody). Vazby mohou být méně čitelné a poměrně složité pro kontrolu a pochopení, zejména pro nevlastníky. 
-- Provažte prvky datového modelu s komponentami formátu pro definování toho, jaká data budou naplněna z datového modelu do výstupu generovaného formátu.
+- Navažte nakonfigurované zdroje dat na prvky navrženého [datového modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) specifického pro určitou doménu. Struktura modelu a vybrané zdroje dat mohou být součástí komplexní hierarchické struktury. Z tohoto důvodu mohou být konečné vazby poměrně velké a obsahovat mnoho prvků různých typů (například vztahy, tabulky a metody). Vazby mohou být méně čitelné a poměrně složité pro kontrolu a pochopení, zejména pro nevlastníky. 
+- Provažte prvky datového modelu s komponentami [formátu](general-electronic-reporting.md#FormatComponentOutbound) pro definování toho, jaká data budou naplněna z datového modelu do výstupu generovaného formátu.
 
 Pro zlepšení použitelnosti návrhářů mapování elektronického výkaznictví byla vydána funkce [relativní cesty](er-formula-language.md#relative-path). Ve výchozím nastavení je možnost zobrazení relativní cesty zapnuta pro každou novou instanci aplikace, kde je povoleno rozhraní návrháře elektronického výkaznictví (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Implementovali jsme parametr relativní cesty, aby uživatelé mohli používat úplnou cestu při práci s touto prezentací vazeb elektronického výkaznictví.
 

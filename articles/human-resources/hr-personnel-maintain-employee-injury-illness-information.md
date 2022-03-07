@@ -1,29 +1,31 @@
 ---
 title: Udržování informací o zraněních a onemocněních zaměstnanců
-description: Doporučuje se nejprve postupovat podle příručky „Určení zranění a onemocnění“ protože některé se zde uplatňují některé údaje.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/29/2018
+description: Tento úkol popisuje, jak vytvořit případ zranění nebo nemoci.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 06307331db4d420e99de21c0eb0b3cf1c233f0d5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417597"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066643"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Udržování informací o zraněních a onemocněních zaměstnanců
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -31,65 +33,54 @@ Doporučuje se nejprve postupovat podle příručky „Určení zranění a onem
 
 
 
-Tento záznam úlohy popisuje základní postup pro vytvoření případu zranění nebo onemocnění. Kromě sledování podrobností o zranění nebo onemocnění, je také sledovaný stav případu.  Výchozí nastavení případu se stavem „Otevřeno“.  Stav lze spravovat z položky nabídky „Stav případu“ v pruhu aplikace v horní části stránky.
+Tento záznam úlohy popisuje základní postup pro vytvoření případu zranění nebo onemocnění. Kromě podrobností o zranění nebo nemoci je sledován stav případu. Ve výchozím nastavení mají případy stav **Otevřeno**. Stav můžete spravovat z položky nabídky **Stav případu** v horní části stránky.
 
-1. Přejděte na Lidské zdroje > Pracovníci > Zranění a onemocnění > Incidenty zranění nebo onemocnění.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Popis případu.
-    * Příklad: Zranění zápěstí  
-4. V poli Pracovník zadejte nebo vyberte hodnotu.
-    * Příklad: Ahmed Barnett  
-5. Zadejte datum a čas do pole Datum a čas incidentu.
-    * Příklad: 20. 1. 2016 10:00:00  
-6. V poli Typ zranění nebo onemocnění zadejte nebo vyberte hodnotu.
-    * Příklad: Zlomenina  
-7. V poli Část těla zadejte nebo vyberte hodnotu.
-    * Příklad: Zápěstí  
-8. V poli Typ výsledku zadejte nebo vyberte hodnotu.
-    * Příklad: Léčba  
-9. Zadejte datum a čas do pole Datum a čas nahlášení.
-    * Datum a čas ohlášené v poli musí být pozdější než datum a čas incidentu.  
-10. Zadejte nebo vyberte požadovanou hodnotu u osoby, která vykázala případ.
-    * To může být zaměstnanec nebo na jiný důkaz k incidentu.  Příklad: Ahmed Barnett  
-11. Rozbalte sekci Incident.
-12. Zadejte hodnotu do pole Kde k incidentu došlo.
-    * Příklad: Sklad  
-13. Vyberte možnost Ano v poli V pracovních prostorách.
-    * Pokud incident vznikl v pracovních prostorách, vyberte ano.  
-14. Zadejte datum a čas do pole Datum a čas zahájení práce.
-    * Zadejte datum a čas, kdy ovlivněný jednotlivec začal pracovat před výskytem incidentu.  
-15. Zadejte hodnotu do pole Práce nebo úkol zaměstnance.
-    * Zadejte úlohu nebo úkol, který pracovník vykonával při vzniku incidentu.  Příklad: Nakládání krabic  
-16. Zadejte hodnotu do pole Příčina incidentu.
-    * Zadejte příčinu nebo incident.  Příklad: Uklouznutí na vlhké podlaze  
-17. Zadejte nebo vyberte hodnotu do pole Úroveň závažnosti.
-18. Zadejte hodnotu do pole Provést akci.
-    * Příklad: Rychlé rozlití při úklidu  
-19. Zadejte číslo do pole Očekávané dny v pracovní neschopnosti.
-    * Zadejte počet dní, po které se očekává, že daná osoba bude v pracovní neschopnosti.  Jakmile se osoba vrátí do práce, aktualizujte pole „Počet dnů pracovní neschopnosti“ skutečným počtem dnů nepřítomnosti.  
-20. Rozbalte část Náklady na zranění nebo onemocnění.
-21. Klepněte na možnost Přidat.
-22. Do pole Datum zadejte datum.
-23. V poli Typ nákladů zadejte nebo vyberte hodnotu.
-    * Příklad:  Léčení   Můžete také zadat částku a připojit podklady, jako jsou například faktury nebo lékařské potvrzení o nákladech.  
-24. Klepněte na možnost Přidat.
-25. Do pole Datum zadejte datum.
-26. V poli Typ nákladů zadejte nebo vyberte hodnotu.
-    * Příklad: Lékař  
-27. Rozbalte část Ošetření zranění nebo onemocnění.
-28. Klepněte na možnost Přidat.
-29. Do pole Datum ošetření zadejte datum a čas.
-30. V poli Typ ošetření zadejte nebo vyberte hodnotu.
-    * Příklad: Dlaha  
-31. Volitelně nastavte v části Návštěva pohotovosti v nemocnici hodnotu Ano.
-32. Zadejte hodnotu do pole Poznámky k ošetření.
-    * Příklad: Dlaha po dobu 2 týdnů  
-33. Do pole Jméno lékaře zadejte hodnotu.
-    * Příklad: Dr. Anderson  
-34. Zadejte hodnotu do pole Léčebné zařízení a umístění.
-    * Příklad: Pohotovost Elm St.   
-35. Zadejte hodnotu do pole Podrobnosti o ošetření.
-    * Příklad: Rentgenem potvrzená zlomenina, aplikována dlaha  
-36. Klikněte na položku Uložit.
-    * Stav případu lze kdykoli aktualizovat.  Nastavte případ na stav Probíhá, pokud probíhá zpracování zranění nebo onemocnění.  Jakmile uzavřete incident, můžete pouze přidat nebo odebrat náklady, léčbu nebo evidenci související s incidentem.  Chcete-li upravit informace, případ znovu otevřete.  
+1. Přejděte na **Lidské zdroje \> Pracovníci \> Zranění a onemocnění \> Incidenty zranění nebo onemocnění**.
+2. Zvolte **Nové**.
+3. Do pole **Popis případu** zadejte hodnotu (například **Zranění zápěstí**).
+4. Do pole **Pracovník** zadejte nebo vyberte hodnotu (například **Ana Bowman**).
+5. Do pole **Datum a čas incidentu** zadejte datum a čas (například 20. ledna 2016 v 10:00).
+6. V poli **Typ zranění nebo onemocnění** zadejte nebo vyberte hodnotu (např. **Zlomenina**).
+7. Do pole **Část těla** zadejte nebo vyberte hodnotu (například **Zápěstí**).
+8. V poli **Typ výsledku** zadejte nebo vyberte hodnotu (např. **Terapie**).
+9. Zadejte datum a čas do pole **Datum a čas nahlášení**.
 
+    Datum a čas nahlášení v poli musí být pozdější než datum a čas incidentu.
+
+10. Zadejte nebo vyberte požadovanou hodnotu (např. **Ana Bowman**) v poli **Osoba, která vykázala případ**.
+
+    Konkrétní osoba může být zaměstnanec nebo jiný svědek incidentu.
+
+11. V sekci **Incident** v poli **Kde k incidentu došlo** zadejte hodnotu (např. **Sklad**).
+12. V poli **V pracovních prostorách** vyberte **Ano**, pokud k události došlo na pracovišti.
+13. V poli **Datum a čas zahájení práce** zadejte datum a čas, kdy postižená osoba začala pracovat před tím, než k incidentu došlo.
+14. V poli **Zaměstnanecká práce nebo úkol** zadejte práci nebo úkol, který pracovník vykonával, když k incidentu došlo (např. **Nakládání krabic**). 
+15. V poli **Příčina incidentu** zadejte příčinu incidentu (např. **Uklouzl na mokré podlaze**).
+16. Zadejte nebo vyberte hodnotu do pole **Úroveň závažnosti**.
+17. V poli **Je třeba podniknout opatření** zadejte hodnotu (např. **Rozlité látky okamžitě ukliďte**).
+18. V poli **Očekávané dny mimo práci** zadejte počet dní, po které má být jednotlivec mimo práci.
+
+    Jakmile se osoba vrátí do práce, aktualizujte pole **Počet dnů pracovní neschopnosti** skutečným počtem dnů nepřítomnosti dané osoby.
+
+19. V části **Náklady na zranění nebo onemocnění** vyberte **Přidat**.
+20. Do pole **Datum** zadejte datum.
+21. V poli **Typ nákladu** zadejte nebo vyberte hodnotu (např. **Terapie**).
+
+    Můžete také zadat částku a připojit podpůrné podklady k nákladům (například faktury nebo lékařské potvrzení).
+
+22. Vyberte **přidat**.
+23. Do pole **Datum** zadejte datum.
+24. V poli **Typ nákladu** zadejte nebo vyberte hodnotu (např. **Doktor**).
+25. V části **Ošetření zranění nebo onemocnění** vyberte **Přidat**.
+26. Do pole **Datum ošetření** zadejte datum a čas.
+27. V poli **Typ ošetření** zadejte nebo vyberte hodnotu (např. **Dlaha**).
+28. Volitelné: Nastavte sekci **Návštěva pohotovosti v nemocnici** na hodnotu **Ano**.
+29. V poli **Poznámky k ošetření** zadejte nebo vyberte hodnotu (např. **Dlaha na 2 týdny**).
+30. Do pole **Jméno lékaře** zadejte hodnotu (například **Dr. Anderson**).
+31. Do pole **Zdravotnícké zařízení a umístění** zadejte hodnotu (např. **Pohotovost Jičín**).
+32. Do pole **Podrobnosti o léčbě** zadejte hodnotu (např. **Rentgen potvrzuje zlomeninu, nosit dlahu**).
+33. Zvolte možnost **Uložit**.
+
+Stav případu lze kdykoli aktualizovat. Pokud probíhá zpracování zranění nebo onemocnění, nastavte stav na **Probíhá**. Po uzavření incidentu můžete pouze přidat nebo odebrat náklady, léčbu nebo evidenci související s incidentem. Chcete-li změnit další informace, musíte znovu otevřít případ.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

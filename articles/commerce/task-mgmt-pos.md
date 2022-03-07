@@ -2,34 +2,29 @@
 title: Správa úkolů v POS
 description: V tomto tématu je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772099"
 ---
 # <a name="task-management-in-pos"></a>Správa úkolů v POS
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Aplikace Dynamics 365 Commerce POS disponuje funkcemi správy úkolů, které umožňují manažerům a pracovníkům v obchodech spravovat úkoly a aktualizovat jejich stav. Pracovníci obchodu mohou získat přístup k úlohám buď výběrem dlaždice **Úkoly** na domovské stránce POS, nebo výběrem oznámení úkolu. Ve výchozím nastavení jsou pracovníci obchodu přesměrováni na kartu **Moje úkoly**, kde si mohou prohlédnout úkoly, které jsou jim přiřazeny. Mohou se však snadno přepnout na karty **Úkoly po termínu**, **Otevřené úkoly** a **Seznamy úkolů**.
 
@@ -49,13 +44,13 @@ Pracovníci obchodu mohou v aplikaci POS provádět následující operace s pou
 
 Na následujícím obrázku je zobrazena karta **Vlastní úkoly** v aplikaci Commerce POS.
 
-![Karta Moje úkoly v aplikaci Commerce POS](media/POS-task-management.png)
+![Karta Moje úkoly v aplikaci Commerce POS.](media/POS-task-management.png)
 
 Následující obrázek znázorňuje kartu **Seznamy úkolů**.
 
-![Karta Seznamy úkolů v aplikaci Commerce POS](media/POS-task-lists-management.png)
+![Karta Seznamy úkolů v aplikaci Commerce POS.](media/POS-task-lists-management.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled správy úkolů](task-mgmt-overview.md)
 
@@ -64,3 +59,6 @@ Následující obrázek znázorňuje kartu **Seznamy úkolů**.
 [Vytvoření seznamů úkolů a přidání úkolů](task-mgmt-create-lists.md)
 
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Vytvoření šablony záznamu pro usnadnění zadávání dat
 description: Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
 author: margoc
-manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68d3c7dd2f042617a7e2fcc8bee05fae6a82bde9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f6a2eec8d730cb4c63c854433cf6160c475ce660
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685209"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753957"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Vytvoření šablony záznamu pro usnadnění zadávání dat
 
@@ -43,3 +41,6 @@ Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, kter�
 13. Vyberte **OK**.
 14. Vyberte **Zavřít**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

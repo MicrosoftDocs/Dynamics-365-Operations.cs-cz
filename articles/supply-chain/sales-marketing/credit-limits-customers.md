@@ -1,27 +1,24 @@
 ---
 title: Limity úvěru pro odběratele
 description: Tento článek poskytuje přehled o tom, jak fungují úvěrové limity v Dynamics 365 Supply Chain Management.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e3476f1f25ac01d8740cce0442ac48ef25101a0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423909"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574298"
 ---
 # <a name="credit-limits-for-customers"></a>Limity úvěru pro odběratele
 
@@ -93,7 +90,7 @@ Použijte formulář **Parametry pohledávek** k zadání informací, vůči kte
 
 **Kde naleznu informace o použitém zbývajícím úvěru odběratele?**
 
-Informace o zůstatku odběratele a částce úvěru se vypočítají a uloží při vytvoření snímku sledování splatnosti a zobrazí se ve formuláři **Inkasa**. Částky, které jsou zobrazeny ve formuláři **Inkasa** nemusí zahrnovat všechny aktivity transakce, dokud není vytvořen snímek sledování splatnosti. Další informace naleznete v tématu [Inkasa a úvěr v modulu Pohledávky](https://technet.microsoft.com/library/hh209221.aspx).
+Informace o zůstatku odběratele a částce úvěru se vypočítají a uloží při vytvoření snímku sledování splatnosti a zobrazí se ve formuláři **Inkasa**. Částky, které jsou zobrazeny ve formuláři **Inkasa** nemusí zahrnovat všechny aktivity transakce, dokud není vytvořen snímek sledování splatnosti. Další informace naleznete v tématu [Inkasa a úvěr v modulu Pohledávky](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 V závislosti na zvolených dokumentech se vypočítá informace o zůstatku odběratele a zbývající částka úvěru při aktualizaci prodejních objednávek, dodacích listů a faktur odběratele. Pokud by částka dokumentu, se kterým pracujete, způsobila překročení limitu úvěru, zobrazí se zpráva.
 
@@ -138,3 +135,6 @@ V některých případech je třeba ručně zkontrolovat limit úvěru odběrate
 1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Prodejní objednávky** \> **Všechny prodejní objednávky**. Dvakrát klikněte na prodejní objednávku.
 
 2.  Ve formuláři **Prodejní objednávka** v podokně akcí na kartě **Spravovat**, klikněte na **Zkontrolovat limit úvěru**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

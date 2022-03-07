@@ -1,30 +1,29 @@
 ---
 title: Přehled hlavního plánování a funkce více pracovišť
 description: Hlavní plánování bere v úvahu nastavení dimenzí zásob pracoviště a skladu.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, InventSite
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 2434
+ms.custom:
+- "2434"
+- intro-internal
 ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2adbac35d556314b3ec9916e2b7b2706ce3528c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e594cfd71201c6a629c04d5557c117649e6b19b0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424049"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982322"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>Přehled hlavního plánování a funkce více pracovišť
 
@@ -52,3 +51,6 @@ Následující témata popisují, jak plánovací modul určuje používaný skl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

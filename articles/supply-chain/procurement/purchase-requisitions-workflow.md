@@ -1,12 +1,10 @@
 ---
 title: Workflow nákupního požadavku
 description: Proces workflowu přesouvá nákupní žádanky v procesu kontroly od počátečního stavu Koncept do konečného stavu Schváleno. Když je nákupní požadavek odeslán ke kontrole, proces workflowu se spustí. Po schválení nákupního požadavku lze generovat nákupní objednávku pro řádky nákupního požadavku a odeslat ji dodavateli pro splnění zakázky.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021973"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569450"
 ---
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
@@ -53,7 +51,7 @@ Následující obrázek znázorňuje, jak můžete nákupní požadavek odeslat 
 -   **Nákupčí**: Uživatel, který provádí kontrolu zásobování a může schválit dokument.
 -   **Manažer žadatele**: Uživatel, který provádí manažerskou kontrolu a může schválit dokument.
 
-![Proces kontroly workflowu nákupní žádanky](./media/purchreqworkflowoverview_submission.gif)  
+![Proces kontroly workflowu nákupní žádanky.](./media/purchreqworkflowoverview_submission.gif)  
 V tomto příkladu obsahuje proces workflowu pro nákupní žádanku následující kroky:
 
 1.  Pořizovatel odešle nákupní žádanku ke kontrole.
@@ -76,7 +74,7 @@ V tomto příkladu jsou v procesu workflowu zahrnuty následující role:
 -   **Manažer oddělení**: Uživatel, který provádí výdajovou kontrolu a může schválit dokument.
 -   **Manažer skupiny**: Uživatel, který provádí kontrolu podpisové autority a může schválit dokument.
 
-![Proces kontroly workflowu na řádku nákupní žádanky](./media/purchreqlineworkflowoverview.gif)  
+![Proces kontroly workflowu na řádku nákupní žádanky.](./media/purchreqlineworkflowoverview.gif)  
 V tomto příkladu obsahuje proces workflowu pro řádky nákupní žádanky následující kroky:
 
 1.  Pořizovatel odešle nákupní žádanku ke kontrole. Každý řádek je směrován kontrolorovi, který je nakonfigurován pro jeho příjem v rámci procesu workflowu.
@@ -107,8 +105,7 @@ Kontrolory výdajů můžete nastavit na stránce **Kontroloři výdajů nákupn
 
 Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve workflowu, je nutné nastavit možnost **Typ účastníka** na hodnotu **Účastníci výdajů** ve vlastnostech **Přiřazení** pro relevantní prvek workflowu.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Vytvoření žádanky pro spotřebu](tasks/create-requisition-consumption.md)
 
@@ -120,3 +117,6 @@ Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve work
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

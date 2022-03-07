@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0091af30b917aab3b8c4572a72a20d8d2d5d52e2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 95c1f3f87175a2c2a2887a4ed2ebde1bd7d1c0b9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407583"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227959"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Vydání vstupního certifikátu EU
 
@@ -87,3 +86,6 @@ Tento postup vás provede povolením vstupního certifikátu EU, konfigurací ú
 4. V podokně akcí klikněte na položku Faktura.
 5. Klikněte na možnost Zobrazit vystavené vstupní certifikáty.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

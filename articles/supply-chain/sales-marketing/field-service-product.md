@@ -1,30 +1,27 @@
 ---
 title: Synchronizace produktů v Supply Chain Management do produktů ve Field Service
 description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d96d1cd91bad4f950868074d9558cb403821d73f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09460139ba2ae7c9be78b1441e1d095952b405f8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423975"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566472"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Synchronizace produktů v Supply Chain Management do produktů ve Field Service
 
@@ -32,7 +29,7 @@ ms.locfileid: "4423975"
 
 Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-Používaná šablona **Produkty Field Service (Supply Chain Management do Field Service)** je založena na šabloně **Produkty (Supply Chain Management do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Supply Chain Management do Sales) – přímé](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Používaná šablona **Produkty Field Service (Supply Chain Management do Field Service)** je založena na šabloně **Produkty (Supply Chain Management do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Supply Chain Management do Sales) – přímé](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
 Toto téma pouze popisuje rozdíl mezi šablonami **Produkty Field Service (Supply Chain Management do Field Service)** je založena na šabloně **Produkty (Supply Chain Management do Sales) – Direct**.
 
@@ -72,4 +69,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Produkty Field Service (Supply Chain Management do Field Service): Products - Products
 
-[![Mapování šablony v integraci dat](./media/FSProduct.png)](./media/FSProduct.png)
+[![Mapování šablony v integraci dat.](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

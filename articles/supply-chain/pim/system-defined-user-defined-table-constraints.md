@@ -1,30 +1,27 @@
 ---
 title: Omezení tabulek definovaná uživatelem nebo systémem
 description: Tento článek popisuje dva typy omezení tabulky pro komponenty v modelu konfigurace produktu - definované uživatelem a systémem. Omezení tabulky představují matice povolených kombinací atributů, kde každý řádek určuje jednu sadu možných hodnot atributů.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fb1395859b5abd06539e07ada3d968b2e9c9147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4b484c99bc8f1cc830d4177460ec15a26714a56
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423829"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577377"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Omezení tabulek definovaná uživatelem nebo systémem
 
@@ -60,10 +57,12 @@ Při vytváření omezení tabulky definovaného systémem vyberte tabulku, voli
 
 Aby mohlo mít omezení tabulky vliv na model konfigurace produktu, je nutno zahrnout omezení tabulky do omezení v jedné z komponent modelu. Je třeba vytvořit nové omezení, vybrat typ omezení tabulky a poté vybrat definici omezení tabulky, kterou chcete použít. Nakonec je nutno všechna pole v omezení tabulky namapovat na atributy v modelu konfigurace produktu.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled modelů konfigurace produktu](product-configuration-models.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,24 @@
 title: Co je nového a co se změnilo v Dynamics 365 Supply Chain Management
 description: Tohle téma odkazuje na témata, která popisují nové a změněné funkce v jednotlivých verzích aplikace Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3350afc5f9537a0bd97b9c5257a66039b9dcb55c
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: dd383fef1a92c1bac1b50f1fe00292df8aabbd5d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014551"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7679022"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Co je nového a co se změnilo v Dynamics 365 Supply Chain Management
 
@@ -31,8 +29,15 @@ ms.locfileid: "5014551"
 
 Chcete-li zjistit, co je nového nebo změněno v jednotlivých vydáních aplikace Dynamics 365 Supply Chain Management, naleznete to v následujících tématech.
 
-| Verze | Číslo sestavení | Dostupnost automatické aktualizace | Další informace |
+| Verze | Číslo sestavení | Dostupnost automatické aktualizace | Více informací |
 |---|---|---|---|
+| 10.0.23 | 10.0.1037 | *Bude oznámeno* | [Preview verze Dynamics 365 Supply Chain Management 10.0.23](whats-new-scm-10-0-23.md) |
+| 10.0.22 | 10.0.995 | Listopad 2021 | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
+| 10.0.21 | 10.0.960 | 2021. říjen | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
+| 10.0.20 | 10.0.886 | Srpen 2021 | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.20](whats-new-scm-10-0-20.md) |
+| 10.0.19 | 10.0.837 | 2021. června | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.19](whats-new-scm-10-0-19.md) |
+| 10.0.18 | 10.0.793 | 2021. květen | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.18](whats-new-scm-10-0-18.md) |
+| 10.0.17 | 10.0.761 | 2021. duben | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.17](whats-new-scm-10-0-17.md) |
 | 10.0.16 | 10.0.689 | 2021. únor | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.16](whats-new-scm-10-0-16.md) |
 | 10.0.15 | 10.0.644 | 2021. leden | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.15](whats-new-scm-10-0-15.md) |
 | 10.0.14 | 10.0.605 | Listopad 2020 | [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management verze 10.0.14](whats-new-scm-10-0-14.md) |
@@ -67,3 +72,6 @@ Chcete-li zjistit, co je nového nebo co se změnilo ve vydáních před listopa
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | Listopad 2016    | [Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016. květen         | [Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016. únor    | [Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

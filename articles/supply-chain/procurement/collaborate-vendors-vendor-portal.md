@@ -1,12 +1,10 @@
 ---
 title: Spolupráce s dodavateli pomocí portálu pro dodavatele
 description: Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aece4fd621be803abe5011e40785f6a3301924f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019096"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568057"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
@@ -94,12 +92,14 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 |                           Odešlete novou verzi nákupní objednávky na portál pro dodavatele.                            |                                                                                                                                                                    Nová verze je registrována na portálu pro dodavatele a stav se změní na <strong>Na externí kontrole</strong>.                                                                                                                                                                     |
 |                                Dodavatel schválí novou verzi nákupní objednávky.                                 |                                                                                                                                                     Stav se změní na <strong>Potvrzeno</strong> buď automaticky nebo když obdržíte odpověď od dodavatele a poté potvrdíte nákupní objednávku.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Zabezpečení uživatele portálu pro dodavatele](configure-security-vendor-portal-users.md)
 
-[Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

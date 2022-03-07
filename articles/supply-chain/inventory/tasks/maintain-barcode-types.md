@@ -2,27 +2,24 @@
 title: Údržba typů čárového kódu
 description: Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze použít v rámci sestavy seznamu výdejek.
 author: perlynne
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 979726a1d094146b546bbc6d31963367de2c59f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 937384f14d88dafd537888d862ee1e363ea20626
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424072"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809511"
 ---
 # <a name="maintain-barcode-types"></a>Údržba typů čárového kódu
 
@@ -46,3 +43,6 @@ Tento postup popisuje, jak nastavit novou definici čárového kódu, který lze
 12. Klikněte na položku Uložit.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

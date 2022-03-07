@@ -1,31 +1,28 @@
 ---
-title: Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
+title: Úplné vyrovnání částečných a konečných plateb před datem slevy
 description: Tento článek popisuje scénáře, které zobrazují způsob záznamu částečných plateb pro odběratele a využití platebních slev v rámci období platební slevy.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 0ac544c86804a54aaad5038e0c470095ee145346b337a5a66d5450562da2cffc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737154"
 ---
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy
+# <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Úplné vyrovnání částečných a konečných plateb před datem slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,7 +61,7 @@ Arnie klepne na kartu **Platební sleva** a zobrazí tak částku slevy.
 | 25. 7. 2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Částečná platba za použití stránky Zadat platby odběratele
-Zákazník 4028 odešle platbu za 500,00 1. června. Při zadávání této platby Arnold neklikne na **Řádky**. Místo toho zaznamená platbu vytvořením nového deníku plateb a opětovným otevřením stránky **Zadat platby odběratele**. Zadá informace o platbě a označí fakturu, kterou zadal. Poté Arnie zadá **500,00** jako částku a zadá také **500,00** v poli **Částka k úhradě** v mřížce. Vzhledem k tomu, že společnost Fabrikam umožňuje platební slevy pro částečné platby, zjistí, že bude využita také částečná platební sleva 5,05. Výpočet pro tuto slevu je 500,00 ÷ 0,99 × 0,01 = 5,05. (V tomto výpočtu je 500,00 vyděleno číslem 0,99, protože existuje 1% sleva. Z toho vyplývá, že odběratel zaplatí 99 % faktury. Výsledek je vynásoben procentem slevy, což je 1 procento, neboli 0,01. Pokud zákazník přebírá plnou slevu ve výši 10,00, částka, která musí být vyrovnána, bude 990,00.) V mřížce v dolní části stránky **Zadat platby odběratele** se zobrazí informace o slevě.
+Zákazník 4028 odešle platbu za 500,00 1. června. Při zadávání této platby Arnold neklikne na **Řádky**. Místo toho zaznamená platbu vytvořením nového deníku plateb a opětovným otevřením stránky **Zadat platby odběratele**. Arnie zadá informace o platbě a označí fakturu, kterou zadal. Když Arnie zadá **500,00** jako částku, zadá také **500,00** v poli **Částka k úhradě** v mřížce. Vzhledem k tomu, že společnost Fabrikam umožňuje platební slevy pro částečné platby, Arnie zjistí, že bude využita také částečná platební sleva 5,05. Výpočet pro tuto slevu je 500,00 ÷ 0,99 × 0,01 = 5,05. (V tomto výpočtu je 500,00 vyděleno číslem 0,99, protože existuje 1% sleva. Z toho vyplývá, že odběratel zaplatí 99 % faktury. Výsledek je vynásoben procentem slevy, což je 1 procento, neboli 0,01. Pokud zákazník přebírá plnou slevu ve výši 10,00, částka, která musí být vyrovnána, bude 990,00.) V mřížce v dolní části stránky **Zadat platby odběratele** se zobrazí informace o slevě.
 
 | Částka platební slevy k přijetí | Přijatá platební sleva | Částka k vyplacení |
 |------------------------------|---------------------|---------------|
@@ -149,3 +146,6 @@ Arnie zaúčtuje deník a zkontroluje transakce odběratele na stránce **Transa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

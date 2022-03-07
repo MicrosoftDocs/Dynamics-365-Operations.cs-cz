@@ -2,11 +2,9 @@
 title: Import aktualizovaných verzí konfigurací ER
 description: Toto téma vysvětluje, jak importovat aktualizované verze konfigurací elektronického vykazování (ER) z globálního úložiště konfigurační služby.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 897663998c6c95ff6d7172de2abc4d4dd6ec5f12
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734881"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Import aktualizovaných verzí konfigurací ER
 
@@ -30,7 +28,7 @@ ms.locfileid: "4679503"
 
 [Úložiště](general-electronic-reporting.md#Repository) elektronického výkaznictví (ER) se používají ke sdílení [konfigurací ER](general-electronic-reporting.md#Configuration). Můžete [importovat](download-electronic-reporting-configuration-lcs.md) konfigurace ER z různých úložišť do vaší instance Microsoft Dynamics 365 Finance. Při importu konfigurací ER mohou [poskytovatelé konfigurací](general-electronic-reporting.md#Provider) publikovat nové [verze](general-electronic-reporting.md#component-versioning) v úložištích, aby bylo možné je sdílet.
 
-Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurační služba](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z globálního úložiště konfigurační služby. Další informace viz [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurační služba](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Kontrola dostupných aktualizovaných verzí
 
@@ -43,11 +41,11 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 2. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 3. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Import aktualizovaných verzí konfigurací**.
 
-    ![Stránka konfigurací lokalizace](./media/er-download-updated-versions-global-repo1.png)
+    ![Stránka konfigurací lokalizace.](./media/er-download-updated-versions-global-repo1.png)
 
 4. V dialogovém okně **Import aktualizovaných verzí konfigurací elektronického výkaznictví** vyberte v poli **Režim spouštění** možnost **Zobrazit pouze dostupné aktualizace**. Pak vyberte **OK**. 
 
-    ![Pole Režim spuštění s hodnotou Zobrazit pouze dostupné aktualizace](./media/er-download-updated-versions-global-repo2.png)
+    ![Pole Režim spuštění s hodnotou Zobrazit pouze dostupné aktualizace.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Zkontrolujte zprávy, které obdržíte. Tyto zprávy uvádějí následující informace o konfiguracích ER v aktuální instanci systému Finance a o tom, jak srovnávají s obsahem globálního úložiště:
 
@@ -74,14 +72,14 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 4. V dialogovém okně **Import aktualizovaných verzí konfigurací elektronického výkaznictví** vyberte v poli **Režim spouštění** možnost **Importovat nejnovější aktualizace**. Provede se import nejnovějších verzí konfigurací ER z globálního úložiště do aktuální instance systému Finance.
 5. Chcete-li naplánovat dávkovou úlohu importu, nastavte na záložce s náhledem **Spustit na pozadí** u možnosti **Dávkové zpracování** hodnotu **Ano**. Pokud chcete import opakovat pravidelně, nakonfigurujte požadované opakování.
 
-    ![Pole Režim spouštění nastavené na Import nejnovějších aktualizací](./media/er-download-updated-versions-global-repo5.png)
+    ![Pole Režim spouštění nastavené na Import nejnovějších aktualizací.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Vyberte **OK**.
 7. Chcete-li zjistit, jaké verze konfigurací byly importovány, postupujte takto:
 
     - Pokud import spustíte interaktivně místo použití dávkové úlohy, zkontrolujte zprávy, které obdržíte.
 
-        ![Zprávy přijaté během interaktivního importování](./media/er-download-updated-versions-global-repo6.png)
+        ![Zprávy přijaté během interaktivního importování.](./media/er-download-updated-versions-global-repo6.png)
 
     - Pokud spouštíte import v dávkovém režimu, postupujte takto:
 
@@ -89,7 +87,7 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
         2. Vyhledejte a vyberte úlohu **Import aktualizací verzí konfigurací elektronického výkaznictví** a poté v podokně Akce vyberte na kartě **Dávková úloha** možnost **Historie dávkových úloh**. Zobrazí se historie úloh.
         3. Na stránce **Historie dávkových úloh** vyberte možnost **Protokol**. Poté v obdržené zprávě klikněte na odkaz **Podrobnosti zprávy**. Zobrazí se protokol úlohy.
 
-        ![Protokol úlohy](./media/er-download-updated-versions-global-repo7.png)
+        ![Protokol úlohy.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Nedoporučujeme plánovat opakovanou dávkovou úlohu tak, aby importovala aktualizované verze konfigurací ER přímo z globálního úložiště do produkčního prostředí, protože importované verze budou okamžitě k dispozici k použití. Místo toho tímto postupem přeneste verze konfigurací ER do prostředí sandbox. Poté je můžete vyhodnotit v prostředí sandbox a teprve následně nasadit do produkčního prostředí.
@@ -98,3 +96,6 @@ Toto téma vysvětluje, jak importovat aktualizované verze konfigurací ER z g
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Stáhněte si konfigurace elektronického výkaznictví z Globálního úložiště konfigurační služby](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

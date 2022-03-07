@@ -1,12 +1,10 @@
 ---
 title: Zadání počátečních zůstatků mezd
-description: Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně. Tyto informace jsou důležité pro partnery při migraci nebo přenosu dat pro novou implementaci mezd z jiného systému.
+description: Toto téma popisuje postup při zadávání počátečních zůstatků pro kódy příjmů, srážky, odměny a daně.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9272828fe5d6e0bf131ea66353a0d5c3c7b1c4bd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797777"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752143"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Zadání počátečních zůstatků mezd
 
@@ -166,3 +164,6 @@ Je možné stornovat a znovu zadávat transakce. Chcete-li transakci stornovat, 
 2. Klepněte na tlačítko **Ano** po zobrazení zprávy "Při stornování tohoto výkazu mezd se vytvoří storno platby pro vyrovnání v tomto výkazu mezd. Nelze upravit žádný výkaz mezd. Chcete stornovat tento výkaz mezd?" . 
 
 Po stornování výkazu mezd můžete generovat nový výkaz mezd pracovníka na základě předtím vytvořeného výkazu mezd. Je nutné opravit jakékoli nesprávné řádky ve výkazu zisků předtím, než budete generovat nový výkaz mezd, a následně generovat nové výkazy mezd se správnými částkami. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,22 +1,22 @@
 ---
 title: Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
 description: Toto téma popisuje, jak vytvořit a zobrazit vlastní pokyny pro každý krok každého toku úkolů, který jste nastavili pro mobilní aplikaci Warehouse Management.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 08/11/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 112f4ab1d4ed6081ca14e93c3767139ccf95c9f7
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902240"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386140"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Přizpůsobte názvy kroků a instrukce pro mobilní aplikaci Warehouse Management
 

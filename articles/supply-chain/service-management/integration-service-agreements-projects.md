@@ -2,28 +2,25 @@
 title: Integrace pro servisní smlouvy a projekty
 description: Při práci se servisními smlouvami a řádky servisních smluv používáte data, která byla nastavená v oblastech řízení a účtování projektu.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 578e4b9fe5ef487e999fd0de28d7566bad21fd89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9855915bd4d1f8ebb0c73bf53e7032af4972c45
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424032"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831549"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integrace pro servisní smlouvy a projekty 
 
@@ -83,3 +80,6 @@ Dále můžete zpřístupnit pole **Počáteční čas** a **Koncový čas** na 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

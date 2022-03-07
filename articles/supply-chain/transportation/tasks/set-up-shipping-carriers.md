@@ -1,28 +1,25 @@
 ---
 title: Nastavení dopravců
 description: Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například pro službu, způsob dodávky, úhradu přepravy, omezení přepravy nebo sazbu expedice.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424183"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567649"
 ---
 # <a name="set-up-shipping-carriers"></a>Nastavení dopravců
 
@@ -73,3 +70,6 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 9. V poli **Modul mezioperačního času** vyberte z rozevírací nabídky požadovanou možnost.
 10. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

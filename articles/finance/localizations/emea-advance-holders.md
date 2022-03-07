@@ -2,27 +2,26 @@
 title: Přehled držitelů záloh
 description: Zjistěte více o funkci držitele záloh v aplikaci Microsoft Dynamics 365 Finance.
 author: LizaGolub
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: 262574
+ms.custom:
+- "262574"
+- intro-internal
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ddc3b9ec0b7e1980cef97a97184d2639bc62901a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa2d0a09f0136be5e2f020e6a9f4e15f33f348b0
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407593"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337165"
 ---
 # <a name="advance-holders-overview"></a>Přehled držitelů záloh
 
@@ -81,7 +80,7 @@ Pro správné zaregistrování a zaúčtování nákupní objednávky prostředn
 
 ### <a name="create-an-advance-holder"></a>Vytvoření držitele zálohy
 
-Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+Před vytvořením držitele zálohy musí mít již nastavené pracovníky. Další informace naleznete v tématu [Zadání informací o pracovníkovi (průvodce záznamem úloh).](../../human-resources/hr-personnel-enter-worker-information.md) 
 
 1. Zvolte **Závazky** \> **Držitelé zálohy** \> **Držitelé zálohy**.
 
@@ -158,3 +157,6 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

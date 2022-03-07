@@ -1,5 +1,5 @@
 ---
-title: Oříznout obrázky
+title: Oříznutí obrázků
 description: Toto téma popisuje, jak oříznout obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,14 +17,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 7af1378e26368c4f35f4661f41c066baeaa09803
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594471"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222578"
 ---
-# <a name="crop-images"></a>Oříznout obrázky
+# <a name="crop-images"></a>Oříznutí obrázků
 
 [!include [banner](includes/banner.md)]
 
@@ -66,3 +65,6 @@ Po dokončení vlastního oříznutí se úpravy obrazu projeví téměř okamž
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

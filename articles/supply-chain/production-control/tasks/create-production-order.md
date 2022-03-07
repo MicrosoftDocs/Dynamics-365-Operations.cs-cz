@@ -2,27 +2,24 @@
 title: Vytvoření výrobní zakázky
 description: Tato procedura popisuje způsob vytváření výrobní zakázky.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ce08532b8281d730cd5fae4ebd634a08c5baeedd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dfdce6061c0490fa3069e3e97eba7513721884f180089ba2a2b5fa934f2518f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746153"
 ---
 # <a name="create-a-production-order"></a>Vytvoření výrobní zakázky
 
@@ -71,3 +68,6 @@ Tato procedura popisuje způsob vytváření výrobní zakázky. K vytvoření 
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

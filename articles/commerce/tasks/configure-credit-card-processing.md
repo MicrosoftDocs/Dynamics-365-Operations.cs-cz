@@ -2,26 +2,23 @@
 title: " Konfigurace zpracování platební karty"
 description: Tato procedura vás provede zobrazením seznamu zprostředkovatelů plateb a způsobem konfigurace účtu plateb pro pohledávky.
 author: jashanno
-manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfec44bc1c767dff1109c4ecd4e2862443fb1d0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13aa59ab1c6b0170ae9ab8972fb00bcf47e2b754
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410840"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789749"
 ---
 # <a name="configure-credit-card-processing"></a> Konfigurace zpracování platební karty
 
@@ -62,3 +59,6 @@ Tato procedura vás provede zobrazením seznamu zprostředkovatelů plateb a zp�
 24. Zaškrtněte políčko Výchozí procesor pro nové platebních karty.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

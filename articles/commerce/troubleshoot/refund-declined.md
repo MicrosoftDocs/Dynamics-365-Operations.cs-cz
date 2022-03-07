@@ -2,9 +2,11 @@
 title: Vrácení peněz za vrácenou objednávku je odmítnuto
 description: Toto téma poskytuje pokyny pro řešení potíží, které mohou pomoci, když je vrácení platby za vrácenou objednávku odmítnuto, protože kreditní karta použitá k fakturaci se liší od karty použité během původní autorizace platby.
 author: Reza-Assadi
+manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e202c6b4b9e025d5af1cd5eb6235884aab6444e6
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738617"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585237"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Vrácení peněz za vrácenou objednávku je odmítnuto
 
@@ -34,9 +36,9 @@ Vrácení peněz je odmítnuto, pokud se kreditní karta použitá k fakturaci z
 
 Podrobnosti o autorizaci platby budou obsahovat následující chybovou zprávu: „Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty response returned from Adyen.(22001);"
 
-![Zamítnutá refundace při chybě objednávky vrácení.](media/refund-order-decline.jpg)
+![Zamítnutá refundace při chybě objednávky vrácení](media/refund-order-decline.jpg)
 
-## <a name="resolution"></a>Řešení
+## <a name="resolution"></a>Rozlišení
 
 ### <a name="enable-blind-returns-in-adyen"></a>Povolit slepé vrácení v Adyen
 

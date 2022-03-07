@@ -2,11 +2,9 @@
 title: Spuštění a monitorování experimentu
 description: Toto téma popisuje, jak spustit a monitorovat experiment ve službě třetí strany. Popisuje také, jak můžete provádět změny variant po spuštění experimentu.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba6fb94033e227790e01676819308bb4f0cd6868
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777565"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Spuštění a monitorování experimentu
 
@@ -30,7 +28,7 @@ Toto téma popisuje, jak můžete spustit a monitorovat experiment v aplikaci t�
 
 Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
 
-[ ![Cesta uživatele experimentováním – spuštění a monitorování](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Cesta uživatele experimentováním – spuštění a monitorování.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 Jakmile své varianty publikujete, jsou provedeny všechny kroky, které musíte provést v Commerce, abyste mohli experiment spustit. Dalším krokem je určení, která varianta se má zobrazit jednotlivým uživatelům, když budou požadovat zobrazení stránky. Toto rozhodnutí dělá služba třetí strany, ale nejprve musíte v této službě experiment aktivovat. Vzhledem k tomu, že kroky pro aktivaci experimentu se u jednotlivých služeb liší, budete muset postupovat podle pokynů vaší služby nebo poskytovatele. Pokud experiment není aktivován, uvidí uživatelé pouze výchozí verzi stránky (nezobrazí se žádné varianty).
 
@@ -52,3 +50,6 @@ Pokud budete z nějakého důvodu potřebovat své varianty upravit, postupujte 
 
 ## <a name="next-step"></a>Další krok
 [Povýšení varianty a dokončení experimentu](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

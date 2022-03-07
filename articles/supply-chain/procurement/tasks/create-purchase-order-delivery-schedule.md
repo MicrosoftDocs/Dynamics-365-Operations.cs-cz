@@ -1,7 +1,7 @@
 ---
 title: Vytvoření nákupní objednávky s plánem dodávek
 description: Toto téma ukazuje, jak vytvořit plán dodávek pro nákupní objednávku.
-author: RichardLuan
+author: mkirknel
 manager: tfehr
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -11,16 +11,17 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b8cbcd46e84ca9e718a0f8f59c106147544a3751
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021797"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424210"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Vytvoření nákupní objednávky s plánem dodávek
 

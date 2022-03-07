@@ -2,11 +2,9 @@
 title: Akce v procesech schválení workflow
 description: V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797595"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747170"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Akce v procesech schválení workflow
 
@@ -141,3 +139,6 @@ Když schvalující požaduje provedení změny v dokumentu, je dokument odeslá
 Stanislav například odeslal vyúčtování výdajů na 12 000 USD a tento dokument je přiřazen Šárce. Pokud bude Šárka požadovat změnu, bude vyúčtování výdajů odesláno zpět Stanislavovi.
 
 Stanislav může vyúčtování výdajů znovu odeslat. Nejprve může provést požadované změny, anebo může znovu odeslat původní verzi vyúčtování výdajů. Jestliže Stanislav vyúčtování výdajů znovu odešle, je odesláno Františkovi ke schválení, protože František je prvním schvalovatelem v procesu schvalování.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

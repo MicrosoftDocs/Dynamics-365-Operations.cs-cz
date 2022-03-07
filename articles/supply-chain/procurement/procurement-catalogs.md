@@ -1,28 +1,28 @@
 ---
 title: Přehled zásobovacího katalogu
 description: Tento článek popisuje na nejvyšší úrovni, jak mohou odborníci na nákup nastavit a spravovat zásobovací katalogy. Zásobovací katalogy definují položky a služby, které zaměstnanci společnosti mohou objednat pro interní použití.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe55adfc834b6170ca4c2a242d6bff5264ac8a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019772"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984288"
 ---
 # <a name="procurement-catalogs-overview"></a>Přehled zásobovacího katalogu
 
@@ -68,10 +68,12 @@ Aktualizace jsou publikovány automaticky nebo ručně v závislosti na možnost
 -   **Obě**: Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Statická**, je nutné je aktualizovat ručně při aktualizaci těchto kategorií. Pokud katalog zahrnuje kategorie produktů, které mají výchozí typ aktualizace **Dynamická**, aktualizuje se automaticky pokaždé, když se změní.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Nastavení hierarchie kategorií zásobování](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcd9247e24323ba606377d7e51bd4447ab51c905
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 566a174c631391577441e0f890bd9553dac0891c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961608"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204513"
 ---
 # <a name="remove-a-kanban-job-from-the-schedule"></a>Odebrání kanbanové úlohy z plánu
 
@@ -45,3 +45,6 @@ Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové �
 4. Klikněte na tlačítko OK.
     * Tím vrátíte aktuální stav úlohy ze stavu Plánováno na Neplánováno a odeberete ji z panelu procesů.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

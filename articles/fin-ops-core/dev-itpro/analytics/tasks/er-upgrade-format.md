@@ -1,12 +1,10 @@
 ---
 title: Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může spravovat konfiguraci formátu pro elektronické výkaznictví.
+description: Toto téma popisuje, jak udržovat konfigurace formátu pro elektronické výkaznictví (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720801"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
 
@@ -243,3 +241,6 @@ Aby to bylo možné, Proseware, Inc. musí změnit základní verzi konfigurace 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Test vlastního formátu pro generování souborů plateb
 Postupujte podle kroků v postupu „Použití vytvořeného formátu pro generování elektronických dokumentů pro platby“ v rámci paralelní relace Finance and Operations. Vyberte vytvořený formát 'BACS (Velká Británie – fiktivní vlastní)' v parametrech metody elektronické platby. Zkontrolujte, že vytvořený soubor platby obsahuje nedávno uvedený uzel XML společností by Proseware, Inc. představující kód účtu IBAN v souladu s místními požadavky. Soubor by rovněž měl obsahovat nedávno uvedených uzel XML uvedený společností Litware, Inc. představující bankovní kód SWIFT podle požadavků země.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84a0093d95c2f7084c7a0ed17f8b2f86d654b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3b89fca4e55aa852bd127eb9b1bda07c0e5bcdc0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423533"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255126"
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a>Vytvoření nového kanbanového pravidla duplikováním existujícího kanbanového pravidla
 
@@ -44,3 +43,6 @@ Tento postup se zaměřuje na vytváření kopií existujícího kanbanového pr
 3. Klikněte na tlačítko OK.
     * Všimněte si, že je vytvořeno duplicitní kanbanové pravidlo 000017.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

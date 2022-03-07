@@ -1,58 +1,45 @@
 ---
-title: Odeslání a schválení rozpočtu projektu
+title: Vytvoření a odeslání pracovního postupu projektových rozpočtů
 description: Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu.
-author: RichardLuan
-manager: tfehr
-ms.date: 08/13/2019
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
+author: Henrikan
+ms.date: 11/22/2021
+ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Service industries
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018721"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860402"
 ---
-# <a name="submit-and-approve-project-budget"></a>Odeslání a schválení rozpočtu projektu
+# <a name="create-and-submit-a-project-budget-workflow"></a>Vytvoření a odeslání pracovního postupu projektových rozpočtů
 
 [!include [banner](../../includes/banner.md)]
 
-Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu. 
+Při vytvoření rozpočtu projektu můžete zadat odhadované výnosy a náklady projektu a použít hodnoty pro kontrolu skutečných transakcí projektu. Rozpočtování projektu vyžaduje, aby byly všechny původní rozpočty a revize zaslány ke schválení do workflow projektu. Workflow vylepší vaši kontrolu rozpočtování a vytváří záznam historie změn. Po [vytvoření projektu](/dynamicsax-2012/appuser-itpro/create-a-project) použijte tento postup k vytvoření a odeslání rozpočtu.
 
-Při vytvoření rozpočtu projektu můžete zadat odhadované výnosy a náklady projektu a použít je pro kontrolu skutečných transakcí projektu. V rozpočtu projektu musí být všechny původní rozpočty a revize odeslány do workflow projektu ke schválení. Workflow vám poskytuje lepší kontrolu nad procesy a vytváří záznam historie změn.
-
-Tento úkol byl vytvořen pomocí sady dat USSI.
-
-1. V **navigačním podokně** přejděte na **Moduly > Řízení projektů a účetnictví > Projekty > Všechny projekty**.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. Klikněte na odkaz na vybraném řádku v seznamu.
-4. V **podokně akcí** klikněte na možnost **Plán**.
-5. Klikněte na **Rozpočet projektu**.
-6. Zadejte hodnotu do pole **Popis**.
-7. Rozbalte pevnou záložku **Náklady**.
-8. Klepněte na možnost **Nový**.
-9. V poli **Typ transakce** vyberte možnost.
-10. V poli **Kategorie** zadejte nebo vyberte hodnotu.
-11. Zadejte číslo do pole **Původní rozpočet**.
-12. Rozbalte pevnou záložku **Výnosy**.
-13. Klepněte na možnost **Nový**.
-14. Označte na seznamu vybraný řádek.
-15. V poli **Typ transakce** vyberte možnost.
-16. V poli **Kategorie** zadejte nebo vyberte hodnotu.
-17. Zadejte číslo do pole **Původní rozpočet**.
-18. Klikněte na možnost **Uložit**.
-19. Klikněte na **Workflow**.
-20. Klepněte na tlačítko **Odeslat**.
-21. Zadejte hodnotu do pole **Komentář**.
-22. Klepněte na tlačítko **Odeslat**.
-
+1. Přejděte na **Module** > **Řízení projektu a účetnictví** > **Projekty** > **Všechny projekty**.
+1. Vyberte projekt ze seznamu projektů.
+1. Na stránce podrobností projektu vyberte kartu **Plán**.
+1. Pod skupinou **Rozpočet** vyberte **Rozpočet projektu**.
+1. Na pevné záložce **Obecné** zadejte následující informace:
+   - Zadejte hodnotu do kolonky **Popis**.
+   - Vyberte možnost pro **Původní rozpočet**.
+   - Vyberte možnost pro **Zbývající rozpočet**.
+1. Rozbalte pevnou záložku **Náklady** a vyberte **Nový**. Pak proveďte následující nastavení:
+   - Vyberte možnost pro **Typ transakce**.
+   - Vyberte odpovídající **Kategorie**.
+   - Zadejte hodnotu do **Původního rozpočtu**.
+1. Rozbalte pevnou záložku **Výnosy** a vyberte **Nový**. Pak proveďte následující nastavení:
+   - Vyberte možnost pro **Typ transakce**.
+   - Vybrat **Kategorii**.
+   - Zadejte hodnotu pro **Původní rozpočet**.
+1. Zvolte možnost **Uložit**.
+1. Vyberte **Pracovní postup \> Odeslat**.
+1. Na stránce **Zkontrolujte původní pracovní postup rozpočtu – Odeslat** zadejte **Komentář** a vyberte **Odeslat**.

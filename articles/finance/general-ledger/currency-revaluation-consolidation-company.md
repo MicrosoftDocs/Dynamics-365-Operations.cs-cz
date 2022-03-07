@@ -2,28 +2,25 @@
 title: Přecenění měny v konsolidační společnosti
 description: Toto téma popisuje, jak přecenit měnu v konsolidační společnosti.
 author: roschlom
-manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerExchAdjHist
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: e4f2d4e1340e6ed986a1a079a7e88fea3bbe6e1d6af8aee99837adbfe03c39f1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4441325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713179"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Přecenění měny v konsolidační společnosti
 
@@ -89,3 +86,6 @@ Zobrazí se další transakce pro částky v měně vykazování.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

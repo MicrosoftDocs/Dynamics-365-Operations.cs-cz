@@ -1,28 +1,25 @@
 ---
 title: Převod měrné jednotky pro variantu produktu
 description: Toto téma popisuje nastavení způsobu převodu měrné jednotky pro varianty produktu. Zahrnuje také příklad nastavení.
-author: johanhoffmann
-manager: tfehr
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424101"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579561"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
@@ -59,7 +56,7 @@ Chcete-li nakonfigurovat předlohu produktu tak, aby podporovala převod jednotk
     - **Produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro základní produkt. Tento převod jednotek bude použit jako záložní pro všechny varianty produktů, pro které není definovaný žádný převod jednotek.
     - **Varianta produkt** - Vyberete-li tuto hodnotu, můžete nastavit převod jednotky pro určitou variantu produktu. Použijte pole **Varianta produktu** k výběru varianty.
 
-    ![![Přidání nového převodu jednotek](media/uom-new-conversion.png "Přidání nového převodu jednotek")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Přidání nového převodu jednotek.](media/uom-new-conversion.png "Přidání nového převodu jednotek")
 
 1. K nastavení převodu jednotek použijte další pole, která jsou k dispozici.
 1. Vyberte **OK** k uložení nového převodu jednotek.
@@ -107,3 +104,6 @@ Chcete-li exportovat jednotkové převody do Excelu, na stránce **Převody jedn
 ## <a name="additional-resources"></a>Další prostředky
 
 [Správa měrných jednotek](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

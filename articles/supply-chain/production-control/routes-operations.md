@@ -2,29 +2,26 @@
 title: Postupy a operace
 description: Toto téma obsahuje obecné informace o postupech a operacích.
 author: sorenva
-manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
 ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423624"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819273"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -260,3 +257,6 @@ Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

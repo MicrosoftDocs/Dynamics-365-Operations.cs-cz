@@ -1,29 +1,25 @@
 ---
 title: Přehled přípravy a zřízení servisních smluv
 description: Servisní smlouvy vám umožňují definovat zdroje používané při typické servisní návštěvě a způsob, jakým jsou tyto zdroje fakturovány odběrateli.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd17cc0304d58d27afe2cededa5bc0b96557b5e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 955e360a1c0d6aec51e82598737c847b190e5e1d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423902"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985854"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>Přehled přípravy a zřízení servisních smluv
 
@@ -79,3 +75,6 @@ Každý řádek servisní smlouvy podrobně popisuje obsah navrhované servisní
 ## <a name="related-topics"></a>Související témata
 
 [Vytváření servisních smluv](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

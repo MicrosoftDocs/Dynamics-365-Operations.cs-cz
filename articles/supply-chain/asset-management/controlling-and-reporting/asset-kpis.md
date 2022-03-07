@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 8741ad9c70182c0f4f9d4d5272a023a3627340f6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021773"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253799"
 ---
 # <a name="asset-kpis"></a>Ukazatele KPI majetku
 
@@ -89,3 +89,6 @@ Na následujícím obrázku je uveden snímek obrazovky výpočtu KUV pro čtyř
 - V části **Všechen majetek** můžete vícenásobně vybrat několik kusů majetku a kliknout na tlačítko **KPI majetku** na kartě **Obecné**. Pak klikněte na **OK** v dialogovém okně **Vypočítat KPI majetku** pro výpočet KPI u vybraného majetku.  
 - Výsledky výpočtu KPI mohou, ale nemusí zahrnovat [registrace prostojů údržby](../work-orders/maintenance-downtime.md), v závislosti na nastavení a použití kódů důvodu prostoje údržby. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

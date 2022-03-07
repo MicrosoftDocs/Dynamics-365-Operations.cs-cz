@@ -2,26 +2,23 @@
 title: Nastavení skupin DPH a skupin DPH položky
 description: Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně položky.
 author: twheeloc
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 844eee7f81c64eb50ada44cbc151c8aa00c5ae98
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441007"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815061"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Nastavení skupin DPH a skupin DPH položky
 
@@ -50,3 +47,6 @@ Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně polo�
 19. Klikněte na odkaz na vybraném řádku v seznamu.
 20. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

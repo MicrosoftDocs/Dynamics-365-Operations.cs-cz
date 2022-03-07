@@ -1,12 +1,10 @@
 ---
 title: Nastavení externího katalogu pro funkci PunchOut eProcurement
 description: Toto téma popisuje použití externího katalogu nebo katalogu funkce PunchOut ke shromažďování informací o nabídce od dodavatele a jejich přidání do žádanky.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9f1065c68723baa395bc06be6313e45a44661ea3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016370"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566905"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
@@ -42,7 +40,7 @@ Externí katalog by měl zaměstnanci, který zadá nákupní žádanku, umožni
 
 1. Nastavte hierarchii kategorií zásobování. Další informace o tom, jak nastavit hierarchii kategorií zásobování, najdete v tématu [Nastavení zásad pro hierarchie kategorie nákupu](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Zaregistrujte dodavatele v aplikaci Supply Chain Management. Dříve, než budete moci nastavit konfigurace pro přístup k externímu katalogu dodavatele, musíte nastavit dodavatele a kontakty dodavatele v aplikaci Microsoft Dynamics 365. Navíc musí být dodavatel externího katalogu přidán do vybrané kategorie zásobování. Další informace o registraci dodavatelů naleznete v tématu [Správa uživatelů pro spolupráci dodavatele](manage-vendor-collaboration-users.md). Informace o postupu při přidělování dodavatelů ke kategorii zásobování získáte v tématu [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
-3. Musí být nastavené měrné jednotky a měna používané dodavatelem. Pro informaci, jak vytvořit měrnou jednotku, přejděte na [Správa měrné jednotky](../pim/tasks/manage-unit-measure.md).
+3. Musí být nastavené měrné jednotky a měna používané dodavatelem. Pro informaci, jak vytvořit měrnou jednotku, přejděte na [Správa měrných jednotek](../pim/tasks/manage-unit-measure.md).
 4. Nakonfigurujte katalog externích dodavatelů na základě požadavků webu katalogu externích dodavatelů. Další informace o této úloze naleznete v části [Konfigurace katalogu externího dodavatele](#configure-the-external-vendor-catalog).
 5. Otestujte konfigurace katalogu externích dodavatelů k ověření, že nastavení jsou platná a máte přístup k externímu katalogu dodavatele. Pomocí akce **Ověřit nastavení** ověřte zprávu o nastavení požadavku, kterou jste definovali. Tato zpráva by měla zajistit, že se web externího katalogu otevře v novém okně prohlížeče. Při ověřování nelze objednávat položky a služby od dodavatele. Chcete-li objednat položky a služby, je nutné přejít ke katalogu dodavatele z nákupní žádanky.
 6. Aktivujte externí katalog tlačítkem **Aktivovat katalog** na stránce **Externí katalogy**. Externí katalog musí být aktivován před tím, než ho můžou používat zaměstnanci. Externí katalog lze kdykoli deaktivovat.
@@ -112,3 +110,5 @@ Pokud byl požadován produkt z externího katalogu dodavatele, nelze katalog od
 
 - [cXML vylepšení nákupu](purchasing-cxml-enhancements.md)
 - [Použití externích katalogů pro funkci PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

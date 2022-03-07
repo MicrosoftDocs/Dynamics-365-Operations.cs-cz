@@ -2,26 +2,23 @@
 title: Finanční konsolidace online
 description: Toto téma popisuje online finanční konsolidace v hlavní knize.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c8a36447670458b2a8fe423f35fafd5f8cff773461f4dff47577e52573abc3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758842"
 ---
 # <a name="online-financial-consolidations"></a>Finanční konsolidace online
 
@@ -34,7 +31,7 @@ Po dokončení nastavení zadejte podrobnosti konsolidace na stránce **Konsolid
 ## <a name="criteria"></a>Kritéria
 Na kartě **Kritéria** na stránce **Konsolidace [Online]** definujete účty, období a typ dat, která jsou konsolidována.
 
-![Karta Kritéria](./media/criteria-consolidate-online.png "Karta Kritéria")
+![Karta Kritéria.](./media/criteria-consolidate-online.png "Karta Kritéria")
 
 Zde je vysvětlení různých polí na této kartě:
 
@@ -60,16 +57,16 @@ Zde je vysvětlení různých polí na této kartě:
 ## <a name="financial-dimensions"></a>Finanční dimenze
 Na kartě **Finanční dimenze** definujete dimenze, které mají být zahrnuty v konsolidační společnosti. Chcete-li vybrat dimenze, nastavte pole **Specifikace** na **dimenze** a pak definujte pořadí dimenze v konsolidační společnosti.
 
-![Karta Finanční dimenze](./media/financial-dimensions-cons.png "Karta Finanční dimenze")
+![Karta Finanční dimenze.](./media/financial-dimensions-cons.png "Karta Finanční dimenze")
 
 Bez ohledu na pořadí, které definujete, bude **Hlavní účet** vždy prvním segmentem.
 
 ## <a name="legal-entities"></a>Právnické osoby
 Na kartě **Právnické osoby** definujete společnosti, které mají být zahrnuty v konsolidační společnosti. Můžete také definovat procento vlastnictví těchto společností. Zadáte-li nižší než 100% vlastnictví, zadané procento bude zahrnuto do konsolidační společnosti. Pro všechny rozdíly převodu se použije pole **Typ účtu pro rozdíly převodu** k výběru hlavního účtu z nastavení na stránce **Účty pro automatické transakce**.
 
-![(Karta Právnické osoby)](./media/legal-entities-cons.png "Karta Právnické osoby")
+![Karta Právnické osoby.](./media/legal-entities-cons.png "Karta Právnické osoby")
 
-![Stránka Účty pro automatické transakce](./media/accounts-for-automatic-cons.png "Stránka Účty pro automatické transakce")
+![Stránka Účty pro automatické transakce.](./media/accounts-for-automatic-cons.png "Stránka Účty pro automatické transakce")
 
 ## <a name="elimination"></a>Eliminace
 Na kartě **Eliminace** máte tři možnosti pro zpracování eliminací:
@@ -78,7 +75,7 @@ Na kartě **Eliminace** máte tři možnosti pro zpracování eliminací:
 - Vyberte pravidlo eliminace a poté v poli **Možnosti návrhu** vyberte **Pouze zaúčtovat**. Tato možnost zpracuje eliminaci během procesu konsolidace a zaúčtuje vše v jednom kroku.
 - Spusťte návrh eliminace odděleně od procesu konsolidace pomocí deníku eliminace.
 
-![Karta Eliminace](./media/elimination-cons-onl.png "Karta Eliminace")
+![Karta Eliminace.](./media/elimination-cons-onl.png "Karta Eliminace")
 
 Další informace o eliminacích naleznete v tématu [Pravidla eliminace](./elimination-rules.md).
 
@@ -89,10 +86,13 @@ Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnnéh
 - **Datum transakce** – Datum každé transakce se použije k výběru směnného kurzu. Tato možnost se nejčastěji používá pro dlouhodobý majetek a obvykle se označuje jako historický kurz. Nelze zobrazit náhled kurzu, protože existuje mnoho kurzů pro různé transakce v rozsahu účtu.
 - **Sazba definovaná uživatelem** – Když vyberete tuto možnost, můžete zadat směnný kurz, který chcete. Tato možnost může být užitečná pro průměrné směnné kurzy, nebo pokud konsolidujete proti pevnému směnnému kurzu.
 
-![Karta Převod měny](./media/currency-translation-cons-online.png "Karta Převod měny")
+![Karta Převod měny.](./media/currency-translation-cons-online.png "Karta Převod měny")
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

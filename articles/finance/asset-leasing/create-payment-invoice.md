@@ -2,13 +2,11 @@
 title: Vytvoření platebních faktur
 description: Toto téma vysvětluje, jak vytvořit měsíční leasingové faktury. Můžete vytvářet faktury pro jednotlivé leasingy nebo můžete použít dávkové zpracování pro vytvoření více leasingů.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePaymentSchedule
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bc87c329f6f5dd9532b1319f8d88fbc41dcd4d14
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344313"
 ---
 # <a name="create-payment-invoices"></a>Vytvoření platebních faktur
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Můžete vytvářet měsíční faktury pro jednotlivé leasingy nebo můžete použít dávkové zpracování pro vytvoření více leasingů. Následující postup ukazuje, jak vytvořit samostatnou položku leasingové splátky, když he zapnutý parametr **Platba dodavateli** na stránce **Nastavení leasingové knihy**.
 
@@ -41,6 +41,8 @@ Můžete vytvářet měsíční faktury pro jednotlivé leasingy nebo můžete p
 5. Vyberte správný deník a poté vyberte fakturu, kterou je třeba uhradit.
 
     V tomto příkladu je zapnutý parametr **Platba dodavateli** v leasingové knize. Faktura proto bude v deníku faktur. Sekce **Přehled** zobrazuje souhrn položky deníku a sekce **Řádky** obsahuje podrobnosti o samotných řádcích deníku.
+    
+   Systém zablokuje úpravu určitých finančních polí, aby se zabránilo jakýmkoli odchylkám mezi transakcemi a plány. Mezi zamčená pole patří: **Účet**, **Množství**, **Finanční dimenze**, **Měna** a **Typ transakce**. Kromě toho nebudete moci přidávat ani odstraňovat řádky záznamů deníku v žádných položkách deníku leasingu majektu, protože to může způsobit odchylky mezi plány a transakcemi.
 
     > [!NOTE]
     > Pokud je parametr **Platba dodavateli** vypnutý, budou položky deníku plateb uvedeny na stránce **Leasing majetku** pro leasingovou knihu a systém vytvoří položku leasingu majetku namísto faktury. Položka leasingové splátky bude zaúčtována do názvu deníku, který je zadán v poli **Deník měsíčního leasingu**.
@@ -48,3 +50,6 @@ Můžete vytvářet měsíční faktury pro jednotlivé leasingy nebo můžete p
 6. Po zaúčtování transakce můžete zobrazit informace o transakci a účetní hodnotu leasingového závazku výběrem **Transakce závazku** v leasingové knize.
 
     V platebním kalendáři bude vybráno políčko **Deník zaúčtován** a na řádku bude uvedeno číslo deníku faktury. Po vytvoření deníku plateb a položky pro tento deník musíte záznam stornovat, než jej lze znovu vytvořit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

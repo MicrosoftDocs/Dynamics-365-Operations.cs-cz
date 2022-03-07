@@ -2,26 +2,23 @@
 title: Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu
 description: Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množství a jejich přidání do kanbanového pravidla pro optimalizaci velikosti a množství kanbanu.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 039c4aaa355cf2b850ded06913e8e39ee8cac543
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 57d5bc5c93fa8f1aef58b9c346df06d17edef0d7cdd863f5e6ce2d42bc3d56aa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754649"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu
 
@@ -63,3 +60,6 @@ Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množst
 8. Klikněte na odkaz na vybraném řádku v seznamu.
     * Vyberte zásadu Speaker2016, kterou jste právě vytvořili v předchozím podúkolu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

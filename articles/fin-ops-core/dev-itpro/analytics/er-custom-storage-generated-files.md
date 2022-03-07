@@ -2,11 +2,9 @@
 title: Určení vlastních umístění úložišť pro vygenerované dokumenty
 description: Toto téma vysvětluje, jak rozšířit seznam umístění úložišť pro dokumenty generované formáty elektronického výkaznictví (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680751"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594902"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Určení vlastních umístění úložišť pro vygenerované dokumenty
 
@@ -29,7 +27,7 @@ Aplikační programovací rozhraní (API) rozhraní elektronického výkaznictv�
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Nasaďte topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Také musí mít přístup k této topologii pro jednu z následujících rolí.
+Nasaďte topologii, která podporuje průběžné sestavování. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Také musí mít přístup k této topologii pro jednu z následujících rolí.
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -43,7 +41,7 @@ Všechny úkoly v tomto tématu lze dokončit ve společnosti **USMF**.
 
 Chcete-li vygenerovat dokumenty, u kterých plánujete přidat vlastní umístění úložiště, [importujte](er-download-configurations-global-repo.md) konfiguraci formátu ER **Dopředné posunutí dlouhodobého majetku** do aktuální topologie.
 
-![Stránka úložiště konfigurace](./media/er-custom-storage-generated-files-import-format.png)
+![Stránka úložiště konfigurace.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Spuštění sestavy dopředného posunutí dlouhodobého majetku
 
@@ -54,7 +52,7 @@ Chcete-li vygenerovat dokumenty, u kterých plánujete přidat vlastní umístě
 5. V poli **Mapování formátu** vyberte **Dopředné posunutí dlouhodobého majetku**.
 6. Vyberte **OK**.
 
-![Dialogové okno modulu runtime pro sestavu dopředného posunutí dlouhodobého majetku](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Dialogové okno modulu runtime pro sestavu dopředného posunutí dlouhodobého majetku.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 v aplikaci Microsoft Excel zkontrolujte odchozí dokument, který je generován a je k dispozici ke stažení. Toto chování je [výchozí](electronic-reporting-destinations.md#default-behavior) pro formát ER, který nemá konfigurovány žádné [cíle](electronic-reporting-destinations.md) a běží v interaktivním režimu.
 
@@ -257,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Upravte existující třídu `AssetRollForwardService` a zapište kód pro nastavení vlastního cílového objektu pro vytváření, určený pro spouštěč sestavy. Všimněte si, že když je vytvořen vlastní cílový objekt pro vytváření, je předán parametr řízený aplikací, který určuje cílovou složku. Tímto způsobem se tato cílová složka používá k ukládání vygenerovaných souborů.
 
     > [!NOTE] 
-    > Zkontrolujte, že zadaná složka (v tomto příkladu **c:\\0**) se nachází v místním souborovém systému serveru, na kterém je spuštěna služba AOS. Jinak bude za běhu vyvolána výjimka [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
+    > Zkontrolujte, že zadaná složka (v tomto příkladu **c:\\0**) se nachází v místním souborovém systému serveru, na kterém je spuštěna služba AOS. Jinak bude za běhu vyvolána výjimka [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception).
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -341,3 +339,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 - [Domovská stránka pro rozšiřitelnost](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

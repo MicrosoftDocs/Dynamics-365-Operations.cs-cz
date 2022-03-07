@@ -2,16 +2,13 @@
 title: Vizuální konfigurace uživatelského rozhraní POS
 description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Commerce.
 author: boycezhu
-manager: annbe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 01797b5a1c29ee608e7796319a18d6402b542409
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4410915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353747"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Vizuální konfigurace uživatelského rozhraní POS
 
@@ -35,15 +32,15 @@ Uživatelské rozhraní Retail POS Microsoft Dynamics 365 Commerce lze konfiguro
 
 Následující obrázek ukazuje vztahy mezi různými entitami, které tvoří konfigurovatelné aspekty uživatelského rozhraní POS.
 
-![Entity rozložení obrazovky POS](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![Entity rozložení obrazovky POS.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Vizuální profil
 
 Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, které jsou specifické pro registrační pokladnu a sdílené mezi uživateli. Každý uživatel, který se přihlásí k registrační pokladně, bude mít stejný motiv, rozvržení, barvy a obrázky.
 
-![Uvítací obrazovka POS se světlým motivem](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Uvítací obrazovka POS se světlým motivem.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Obrazovka transakcí POS s tmavým motivem](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Obrazovka transakcí POS s tmavým motivem.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Číslo profilu** -číslo profilu je jedinečný identifikátor vizuálního profilu.
 - **Popis** -můžete zadat smysluplný název, který vám pomůže identifikovat správný profil pro danou situaci.
@@ -68,15 +65,15 @@ Musíte spustit úlohu distribučního plánu **1090** (**Registry**) pro synchr
 
 Konfigurace rozložení obrazovky určují akce, obsah a umístění ovládacích prvků uživatelského rozhraní na **ǘodní** obrazovce POS a obrazovce **Transakce**.
 
-![Zobrazení rozložení obrazovky POS](../commerce/media/POS-Screen-Layout-View.png)
+![Zobrazení rozložení obrazovky POS.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Úvodní obrazovka** - ve většině případů je uvítací obrazovka stránka, kterou uživatelé uvidí při prvním přihlášení do POS. Úvodní obrazovka může obsahovat obrázek značky a mřížky tlačítek, které poskytují přístup k operacím POS. Obvykle jsou na této obrazovce umístěny operace, které nejsou specifické pro aktuální transakci.
 
-    ![Úvodní obrazovka POS](../commerce/media/POS-Welcome-Screen.png)
+    ![Uvítací obrazovka POS.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Obrazovka Transakce** - obrazovka **Transakce** je hlavní obrazovka v POS pro zpracování prodejních transakcí a objednávek. Obsah a rozložení se konfigurují pomocí návrháře rozložení obrazovky.
 
-    ![Obrazovka POS pro transakce](../commerce/media/POS-Transaction-Screen.png)
+    ![Obrazovka transakce POS.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Výchozí úvodní obrazovka** - někteří maloobchodníci mají raději, když pokladník po přihlášení přejde přímo na obrazovku **Transakce**. Nastavení **výchozí úvodní obrazovky** umožňuje určit výchozí obrazovku, která se zobrazí po přihlášení pro každé rozvržení obrazovky.
 
@@ -92,7 +89,7 @@ Většina aspektů uživatelského rozhraní POS je responzivní a rozložení s
 
 Při spuštění aplikace POS automaticky zvolí nejbližší velikost rozložení nakonfigurovanou pro zařízení. Rozložení obrazovky může také obsahovat konfigurace pro režimy na šířku a na výšku, stejně jako pro zařízení s plnou velikostí a kompaktní zařízení. Uživatelé mohou být přiřazeni k jednomu rozvržení obrazovky, které bude fungovat v různých velikostech a formátech používaných v obchodě.
 
-![Velikosti rozvržení POS](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Velikosti rozvržení POS.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Název** – můžete zadat popisný název pro identifikaci velikosti obrazovky.
 - **Typ rozložení** – POS aplikace může zobrazit své uživatelské rozhraní v různých režimech k dosažení optimálního uživatelského prostředí na daném zařízení.
@@ -115,7 +112,10 @@ V úplném rozložení POS je umístění mřížky tlačítek určeno v návr
 
 V kompaktním rozvržení POS jsou mřížky tlačítek automaticky rozvrženy odshora dolů, od nejnižšího čísla (obrazovka transakcí 1) k nejvyššímu číslu. Lze k nim přistoupit v nabídce **Akce**.
 
-![Mřížky tlačítek kompaktního rozvržení](../commerce/media/Compact-View-Button-Grids.png)
+![Mřížky tlačítek kompaktního rozvržení.](../commerce/media/Compact-View-Button-Grids.png)
+
+> [!NOTE]
+> Velikost tlačítek v návrháři se změní tak, aby odpovídala velikosti okna, proto nemusí přesně odrážet skutečná tlačítka vykreslená v POS. Chcete-li co nejlépe simulovat rozložení mřížky tlačítek, upravte okna návrháře na stejnou velikost jako POS.
 
 ### <a name="images"></a>Obrázky
 
@@ -132,7 +132,7 @@ Návrhář rozložení obrazovky jevám umožní konfigurovat různé aspekty ob
 
 Návrhář úplného rozložení umožňuje uživatelům přetáhnout ovladací prvky uživatelského rozhraní na obrazovku POS **Transakce** a nakonfigurovat nastavení těchto prvků.
 
-![Návrhář úplného rozložení POS (režim na šířku)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Návrhář úplného rozložení POS (režim na šířku).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Importovat rozvržení/Exportovat rozvržení** – můžete exportovat a importovat návrhy rozvržení obrazovky POS jako soubory XML, tak, abyste je mohli znovu použít a sdílet je napříč prostředími. Je důležité, abyste importovali návrhy rozvržení pro správné velikosti rozvržení. V opačném případě se prvky uživatelského rozhraní nemusí správně vejít na obrazovku.
 - **Na šířku/na výšku** – pokud POS zařízení umoňuje uživateli přepínat mezi režimem na šířku a výšku, je nutné definovat rozložení obrazovky pro každý režim. POS automaticky zjistí otočení obrazovky a zobrazí správné rozvržení.
@@ -140,11 +140,11 @@ Návrhář úplného rozložení umožňuje uživatelům přetáhnout ovladací 
 - **Zvětšení návrháře** – můžete zvětšit nebo změnšit zobrazení návrháře pro lepší zobrazení obsahu na POS obrazovce. Tato funkce je užitečná, když se rozlišení obrazovky na POS značně liší od rozlišení obrazovky, která se používá v návrháři.
 - **Zobrazit/skrýt navigační panel** – pro úplné rozvržení POS můžete zvolit, zda bude levý navigační panel zobrazen na obrazovce **Transakce**. Tato funkce je užitečná pro displeje s nižším rozlišení. Chcete-li nastavit viditelnost, klikněte pravým tlačítkem myši na navigační panel v návrháři a zaškrtněte nebo odškrtněte políčko **Vždy viditelné**. Pokud je navigační panel skrytý, mohou k němu uživatelé POS přistupovat pomocí nabídky v levém horním rohu.
 
-    ![Zobrazit/skrýt navigační panel](../commerce/media/Navigation-Bar.PNG)
+    ![Zobrazit/skrýt navigační panel.](../commerce/media/Navigation-Bar.PNG)
 
 - **Ovládací prvky POS** – návrhář rozložení POS podporuje ovládací prvky. Můžete konfigurovat mnoho ovládacích prvků pravým tlačítkem myši a použitím nabídky zástupců.
 
-    ![Ovládací prvky uživatelského rozhraní POS](../commerce/media/POS-UI-Controls.png)
+    ![Ovládací prvky uživatelského rozhraní POS.](../commerce/media/POS-UI-Controls.png)
 
     - **Číselná klávesnice** - číselná klávesnice je hlavním mechanismem pro uživatelské vstupy na obrazovce POS **Transakce**. Ovládací prvek můžete nakonfigurovat tak, aby se zobrazovala úplná číselná klávesnice. Tato možnost je ideální pro zařízení s dotykovou obrazovkou. Rovněž je možné ji nakonfigurovat tak, aby se zobrazovalo pouze zadávací pole. V takovém případě slouží pro zadávání vstupů fyzické klávesnice. Nastavení číselné klávesnice jsou k dispozici v úplném rozložení. U kompaktního rozvržení se vždy zobrazí úplná číselná klávesnice na obrazovce **Transakce**.
     - **Souhrnný panel** - souhrnný panel lze konfigurovat v jednom nebo dvou sloupcích k zobrazení hodnot, jako je počet řádků, částka slevy, poplatky, souhrn a daně. Kompaktní rozvržení podporuje pouze jeden sloupec.
@@ -159,13 +159,13 @@ Návrhář úplného rozložení umožňuje uživatelům přetáhnout ovladací 
 
 Stejně jako návrhář úplného rozvržení vám návrhář kompaktního rozložení umožňuje nakonfigurovat rozvržení obrazovky POS pro telefony a malé tablety. Nicméně v tomto případě je samotné rozložení pevné. Můžete konfigurovat ovládací prvky v roložení pravým tlačítkem myši a použitím nabídky zástupců. Nelze však použít operace uchopení a přetažení pro další obsah.
 
-![Návrhář kompaktního rozložení](../commerce/media/Compact-Layout-Designer.png)
+![Návrhář kompaktního rozložení.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Návrhář mřížky tlačítek
 
 Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačítek, které lze použít na úvodní obrazovce POS a obrazovce **Transakce** pro úplné a kompaktní rozvržení. Stejnou mřížku tlačítek lze použít napříč rozvrženími a typy rozvržení. Stejně jako návrhář rozvržení obrazovky používá návrhář mřížky tlačítek technologii nasazení ClickOnce ke stažení, instalaci a spuštění nejnovější verze aplikace pokaždé, když k ní uživatel přistupuje. Je nutné zkontrolovat požadavky prohlížeče pro ClickOnce. Některé prohlížeče, jako je například Google Chrome, požadují rozšíření.
 
-![Návrhář mřížky tlačítek](../commerce/media/Button-Grid-Designer.png)
+![Návrhář mřížky tlačítek.](../commerce/media/Button-Grid-Designer.png)
 
 - **Nové tlačítko** – kliknutím přidátet nové tlačítko na mřížku tlačítek. Ve výchozím nastavení se nová tlačítka zobrazí v levém horním rohu mřížky. Můžete však uspořádat tlačítka jejich přetažením do rozvržení.
 
@@ -178,7 +178,7 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
     > [!IMPORTANT]
     > Některá nastavení mřížky tlačítek se vztahují pouze k Enterprise POS, nikoliv k Modern POS nebo Cloud POS.
 
-    ![Vlastnosti tlačítka mřížky tlačítek](../commerce/media/Button-grid-button-properties.png)
+    ![Vlastnosti tlačítka mřížky tlačítek.](../commerce/media/Button-grid-button-properties.png)
 
     - **Akce** – v seznamu použitelných POS operací vyberte operaci, která bude vyvolána při kliknutí na tlačítko v POS.
 
@@ -190,7 +190,7 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
     - **Popis tlačítka** – zadejte dodatečný text nápovědy, který se zobrazí, když na tlačítko ukážete myší.
     - **Velikost ve sloupcích/velikost v řádcích** – můžete určit výšku a šířku tlačítka.
 
-        ![Velikosti tlačítek POS v řádcích a sloupcích](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Velikosti tlačítek POS v řádcích a sloupcích.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Vlastní písma** – když vyberete zaškrtávací políčko **Povolit vlastní písmo pro POS**, můžete zadat jiné písmo, než je součástí výchozího systému POS.
     - **Vlastní motiv** – standardně používají tlačítka POS barvu zvýraznění z vizuálního profilu. Když vyberete zaškrtávací políčko **Použít vlastní motiv**, můžete určit další barvy.
@@ -200,8 +200,11 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 
     - **Obrázek tlačítka** – tlačítka mohou obsahovat obrázky a ikony. Vyberte z obrázků dostupných pod možností **Maloobchod a velkoobchod \> Nastavení kanálu \> Nastavení POS \> POS \> Obrázky**.
 
-![Příklad mřížky tlačítek v POS](../commerce/media/Example-Button-Grid-In-POS.png)
+![Příklad mřížky tlačítek v POS.](../commerce/media/Example-Button-Grid-In-POS.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Instalace návrháře rozložení pokladního místa Retail (POS)](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

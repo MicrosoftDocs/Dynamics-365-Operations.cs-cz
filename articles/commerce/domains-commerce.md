@@ -2,27 +2,24 @@
 title: Domény v Dynamics 365 Commerce
 description: Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517348"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022829"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -41,7 +38,7 @@ Při zřizování prostředí elektronického obchodu v [Microsoft Dynamics Life
 
 Následující obrázek ukazuje obrazovku pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**. 
 
-![Obrazovka pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**](./media/Domains_ProvisioningeCommerceScreen.png)
+![Obrazovka pro zřízení elektronického obchodu LCS se zvýrazněným polem **Podporované názvy hostitelů**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Pokud již došlo ke zřízení, můžete vytvořit požadavek na službu a přidat do prostředí další domény. Chcete-li vytvořit požadavek na službu v LCS, přejděte ve svém prostředí na **Podpora \> Problémy s podporou** a vyberte **Odeslat incident**.
 
@@ -154,7 +151,7 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
 
   [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md)
 
-  [Nastavení kanálu online obchodu](online-stores.md)
+  [Nastavení kanálu online obchodu](./channel-setup-online.md)
 
   [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
@@ -173,3 +170,6 @@ Instance Azure Front Door poskytnutá řešením Commerce nepodporuje vrcholové
   [Přidání podpory pro síť CDN](add-cdn-support.md)
 
   [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

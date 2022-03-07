@@ -2,11 +2,9 @@
 title: Prvky uživatelského rozhraní
 description: Toto téma popisuje prvky uživatelského rozhraní (UI) používané v aplikaci.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c2c50fadb38f3c6e20c72288b2c1e23278c10119250a0d0fcde643307cbaf7f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745057"
 ---
 # <a name="user-interface-elements"></a>Prvky uživatelského rozhraní
 
@@ -86,3 +84,6 @@ V následujícím obrázku jsou uvedeny příklady těchto typů upozornění.
 *Seznam* je název zadaný pro kolekci záznamů, kterou se můžete posunovat. Tyto záznamy lze přenést na stránku jejich výběrem. Často se tím otevře mřížka.
 
 ![Na následujícím obrázku vidíte příklady panelů nástrojů, mřížek a seznamů.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

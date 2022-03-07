@@ -2,27 +2,24 @@
 title: Přidání oznámení o vlastnických právech
 description: V tomto tématu je popsán postup při přidání oznámení o autorských právech na web elektronického obchodu.
 author: psimolin
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4410910"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964749"
 ---
 # <a name="add-a-copyright-notice"></a>Přidání oznámení o vlastnických právech
 
@@ -69,9 +66,10 @@ Zápatí, které obsahuje poznámku o autorských právech, se automaticky zobra
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 
-[Přidání uvítací zprávy](add-welcome-message.md)
-
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

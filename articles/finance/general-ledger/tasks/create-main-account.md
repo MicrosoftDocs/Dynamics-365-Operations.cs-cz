@@ -1,33 +1,30 @@
 ---
 title: Vytvoření hlavního účtu
-description: Tento průvodce úkoly váš provede přidáním hlavního účtu k existující účtové osnově.
+description: Tato procedura popisuje, jak přidat hlavní účet do existující účtové osnovy.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a116164a31337013d34f963b549c394aade2de1c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441060"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394628"
 ---
 # <a name="create-a-main-account"></a>Vytvoření hlavního účtu
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce úkoly váš provede přidáním hlavního účtu k existující účtové osnově. Tento záznam používá ukázkovou společnost USMF.  
+Tato procedura popisuje, jak přidat hlavní účet do existující účtové osnovy. Tento záznam používá ukázkovou společnost USMF.  
 
 1. Přejděte do části **Navigační podokno > Moduly >Hlavní kniha > Účtová osnova > Účty > Hlavní účty.**
 2. Klepněte na možnost **Nový**.
@@ -52,3 +49,6 @@ Tento průvodce úkoly váš provede přidáním hlavního účtu k existující
 21. V poli **Typ převodu měny** vyberte metodu pro výpočet směnných kurzů pro účet.
 22. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

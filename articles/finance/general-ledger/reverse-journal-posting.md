@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3244d857a9135249130672501f8b766ff9a0680
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 19f7ea540035a3bc9eba445c508cb6f29e4bd20f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441166"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204995"
 ---
 # <a name="reverse-journal-posting"></a>Stornování zaúčtování deníků
 
@@ -70,3 +69,6 @@ Pokud je počet řádků dokladu 100 nebo méně, bude proces storna spuštěn o
 
 Transakce lze stornovat pouze v případě, že vyhovují obchodním pravidlům pro jejich stornování. Platby dodavatele nelze stornovat pomocí možnosti popsané v tomto tématu. Platby dodavatelů je nutné stornovat podle kroků uvedených v části [Stornování platby dodavatele](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

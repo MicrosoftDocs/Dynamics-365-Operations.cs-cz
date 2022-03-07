@@ -2,25 +2,25 @@
 title: Domovská stránka Supply Chain Management
 description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
 author: kamaybac
-ms.date: 09/15/2021
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8b92dc975fdae74e134d86169a2b9ceffe63b62
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487856"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909784"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -60,8 +60,9 @@ Toto krátké video shrnuje nové funkce správy dodavatelsko-odběratelského �
 
 - [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017).
+Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do verze 7.3 aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (prosinec 2017).
 
+- [Integrace zpeněžení potenciálního zákazníka](https://youtu.be/AVV9x5x-XCg) 
 - [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Použití šablony skladu pro kopírování konfigurace](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -80,8 +81,8 @@ Následující záznamy technické konference se zabývají funkcemi správy dod
 - **Hlavní plánování:**
   - [Rozšíření funkce prognózy poptávky](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Hlavní plánování – tipy a triky pro řešení problémů s výkonem](https://youtu.be/7v8BPmEs9Dg)
-  - [Ladění výkonu MRP](https://youtu.be/RLXybx20B5o)
-- **Správa informací o produktech:**
+  - [Pomoc! MRP je pomalé.](https://youtu.be/RLXybx20B5o)
+- **Řízení informací o produktech:**
   - [Konfigurátor produktu v Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Řízení skladu:**
   - [Co nejefektivnější využívání systému řízení skladu](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)

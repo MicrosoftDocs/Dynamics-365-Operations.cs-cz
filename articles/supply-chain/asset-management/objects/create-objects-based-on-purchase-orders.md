@@ -1,12 +1,10 @@
 ---
 title: Vytvoření majetku na základě nákupních objednávek
 description: Toto téma vysvětluje, jak lze vytvořit seznam položek dlouhodobého majetku, který lze použít jako základ pro práce údržby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectItem, EntAssetPendingAssets
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83419fa5c6b6aee0b321c526565c3518deaf4bd0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754100"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Vytvoření majetku na základě nákupních objednávek
 
@@ -69,3 +67,6 @@ Můžete spustit **Inventuru čekajícího majetku** ke kontrole čekajícího m
 3. Tuto úlohu můžete nastavit tak, aby byla spouštěna jako dávková úloha, například jednou denně.
 
 **Upozornění:** Pokud dojde ke změně dat na nákupní objednávce *poté*, co jste vytvořili majetek na základě příslušející položky, tyto změny se na majetku neprojeví.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

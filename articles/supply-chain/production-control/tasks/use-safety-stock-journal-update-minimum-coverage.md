@@ -2,27 +2,24 @@
 title: Použití deníku pojistných zásob pro aktualizaci minimální disponibility
 description: Tento postup popisuje způsob výpočtu návrhů minimální disponibility na základě historických transakcí, a pokrytí následně aktualizaci disponibility položky podle návrhů.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 022ec17d0fdc8b1ee204280ecaac40d75e9c1a44974f2bd4a9bb49fa0aa7878e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759424"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Použití deníku pojistných zásob pro aktualizaci minimální disponibility
 
@@ -66,3 +63,6 @@ Tento postup popisuje způsob výpočtu návrhů minimální disponibility na z�
 5. V **podokně akcí** klikněte na možnost Plán.
 6. Klikněte na **Disponibilita položky**. Všimněte si, že bylo aktualizováno **Minimální množství** s novým minimálním množstvím z deníku pojistných zásob.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

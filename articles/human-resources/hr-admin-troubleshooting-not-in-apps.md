@@ -2,14 +2,11 @@
 title: Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
 description: Tento článek vysvětluje, jak postupovat v případech, kdy zákazník nevidí aplikaci Microsoft Dynamics 365 Human Resources for Talent mezi aplikacemi Microsoft Dynamics 365.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f90af26483cf82de57cbe8dd4237b39b281786804557319d5f6a7fc407027523
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782113"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Vydání**
 
@@ -40,18 +39,21 @@ Uživatel musí být přidán do role tvůrce prostředí pro prostředí v Micr
 
 3. Na kartě **Zabezpečení** na kartě **Role prostředí** zvolte **Tvůrce prostředí**.
 
-    ![Karta Role prostředí](media/environment-roles.png)
+    ![Karta Role prostředí.](media/environment-roles.png)
 
 4. Na kartě **Uživatelé** přidejte uživatele nebo organizaci.
 
-    ![Karta Uživatelé](media/environment-maker.png)
+    ![Karta Uživatelé.](media/environment-maker.png)
 
-5. Zvolte **Uložit**.
+5. Zvolte možnost **Uložit**.
 
 6. Uživatel se musí nyní přihlásit do [Microsoft Dynamics 365](https://home.dynamics.com/).
 
 7. Vyberte **Synchronizovat** pro aktualizaci uživatelských aplikací.
 
-    ![Tlačítko Synchronizovat](media/get-more.png)
+    ![Tlačítko Synchronizovat.](media/get-more.png)
 
     Po dokončení synchronizace se Human Resources se objeví na domovské stránce.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

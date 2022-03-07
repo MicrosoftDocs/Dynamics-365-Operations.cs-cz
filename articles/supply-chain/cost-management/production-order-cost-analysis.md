@@ -2,11 +2,9 @@
 title: Analýza nákladů ve výrobní zakázce
 description: Tento článek obsahuje informace o analýze nákladů, kterou lze provést pro dokončené a aktuální výrobní zakázky. Můžete analyzovat odhadované náklady a skutečné náklady na stránce Kalkulace ceny nebo pomocí sestavy Odhad a výpočet nákladů. Můžete sledovat informace o odhadovaných a skutečných nákladech (a množství) jsou zobrazeny pro každou položku komponenty, operaci postupu a nepřímé náklady.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734252"
 ---
 # <a name="production-order-cost-analysis"></a>Analýza nákladů ve výrobní zakázce
 
@@ -43,7 +41,7 @@ Odchylky jsou výsledkem porovnání vykázaných výrobních činností s výpo
 
 V následujícím diagramu jsou uvedeny tyto čtyři odchylky, které způsobují rozdíl mezi skutečnými náklady na výrobní zakázku a náklady kalkulovanými v rámci záznamu o ceně položky v okamžiku ukončení výrobní zakázky. 
 
-![Odchylky, které představují rozdíly v dokončené výrobní zakázce](./media/control.jpg) 
+![Odchylky, které představují rozdíly v dokončené výrobní zakázce.](./media/control.jpg) 
 
 Výrobní odchylky lze analyzovat prostřednictvím stránky **Odchylka** nebo sestavy **Výrobní odchylka**. Uvedené možnosti umožňují prohlédnout si podrobné odchylky podle položek a provozních prostředků, nebo podle nákladové skupiny. Zásady pro rozúčtování nákladů v parametrech zásob určují, zda budou odchylky sledovány podle nákladových skupin. Můžete také použít možnost zobrazení **jediná**, **více** a **celkem** umožňující zobrazení souhrnných odchylek. Informace o podrobných odchylkách představují způsob, jak porozumět zdroji každé odchylky. Chcete-li předjímat odchylky před dokončením výrobní zakázky, analyzujte podrobné informace, které jsou k dispozici v sestavě **Odhad a výpočet nákladů**.
 
@@ -57,10 +55,12 @@ Samostatné sestavy poskytují informace o jednotlivých typech transakcí. Pomo
 -   **Dokončené položky v procesu**− V této sestavě jsou uvedeny aktuální výrobní zakázky a transakce označené jako dokončené k určenému datu transakce.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Běžné zdroje výrobních odchylek](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

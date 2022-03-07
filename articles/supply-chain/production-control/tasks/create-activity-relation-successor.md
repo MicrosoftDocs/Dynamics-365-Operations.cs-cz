@@ -1,28 +1,25 @@
 ---
 title: Vytvoření relace aktivity - následník
 description: Tok aktivit ve štíhlém výrobním toku je zaznamenán prostřednictvím vztahů aktivity.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup, DefaultDashboard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91e1535ab6b53ad60394967d0377606a0cd27d01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8cee0c75de1fee24cfb6df018de62ece102c96cc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423538"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579201"
 ---
 # <a name="create-activity-relation---successor"></a>Vytvoření relace aktivity - následník
 
@@ -66,3 +63,6 @@ Požadavky:
 12. Zavřete stránku.
 13. Aktualizujte stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

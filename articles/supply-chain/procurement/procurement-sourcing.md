@@ -1,28 +1,27 @@
 ---
 title: Domovská stránka modulu Zásobování a zdroje
 description: V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
-author: mkirknel
-manager: tfehr
+author: kamaybac
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 50651
+ms.custom:
+- "50651"
+- intro-internal
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424095"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337922"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -86,12 +85,12 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 ## <a name="prices-and-discounts"></a>Ceny a slevy
 -   [Nákupní smlouvy](purchase-agreements.md)
 -   [Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
--   [Rabaty dodavatele](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (dokumentace)
+-   [Rabaty dodavatele](/dynamics/s-e/) (dokumentace)
 
 ## <a name="product-receipt-and-invoicing"></a>Příjem produktu a fakturace
 -   [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
--   [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Účetní profily dodavatele](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Účetní profily dodavatele](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Workflowy zásobování a zdrojů
 -   [Přehled zásobování a zdrojů](procurement-sourcing-overview.md)
@@ -104,3 +103,6 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65858838b0fbb245a9330fab4e3b65b36a9eb944
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423885"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219358"
 ---
 # <a name="quality-management-overview"></a>Přehled správy kvality
 
@@ -504,3 +503,6 @@ Přiřazení kvality je nutné definovat pro každou variantu obchodního proces
 [Řízení neshody](enable-nonconformance-management.md)
 
 [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

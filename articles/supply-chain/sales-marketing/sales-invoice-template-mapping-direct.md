@@ -1,30 +1,27 @@
 ---
 title: Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales
 description: Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci záhlaví a řádek prodejní faktury přímo z aplikace Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423688"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571634"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synchronizace záhlaví a řádků prodejních faktur přímo z aplikace Finance and Operations do aplikace Sales
 
@@ -36,7 +33,7 @@ Toto téma se věnuje šablonám a základní úloze, které se používají k s
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -119,11 +116,11 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Mapování šablony v integraci dat](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Mapování šablon v integraci dat pro SalesInvoiceHeader.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Mapování šablony v integraci dat](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Mapování šablon v integraci dat pro SalesInvoiceLine.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
@@ -138,3 +135,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Umístění na zeď - umístění do obchodu
 description: Toto téma obsahuje informace o funkci Umístění na zeď - umístění do obchodu. Tato funkce umožňuje zpracovat scénáře, ve kterých musíte produkt konsolidovat do pracovní oblasti předbalení na základě konfigurovatelných kritérií. Pomáhá zkrátit dobu výdeje, protože umožňuje výběry na jednu cílovou registrační značku a může používat více pozic umístění než cluster.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424148"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823280"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umístění na zeď - umístění do obchodu
 
@@ -525,7 +522,7 @@ Nyní, když byly veškeré zásoby vloženy do místa třídění, musí být r
 
 Pokud by se měly pozice třídění uzavřít ručně, musí být možnost **Automaticky zavřít pozici třídění** pro šablonu odchozího třídění nastavena na *Ne* a uzavření musí být provedeno před přesunutím zásob do oblasti nákladové brány. Pozice lze uzavřít různými způsoby:
 
-- Prostřednictvím skladové aplikace:
+- Prostřednictvím mobilní aplikace Řízení skladu:
 
     - Uživatel může naskenovat jednu z položek, které jsou již na dané pozici, a poté vybrat **Zavřít** pro uzavření pozice.
     - Pokud uživatel prohledá kontejner, který již byl roztříděn, zobrazí se chybová zpráva. Uživatel však stále může pokračovat k zavření pozice.
@@ -541,3 +538,6 @@ Pokud by se měly pozice třídění uzavřít ručně, musí být možnost **Au
 
 > [!IMPORTANT]
 > Po vytvoření pohybu z místa třídění nesmíte práci zrušit. V opačném případě bude pozice a kontejnery v ní odstraněny ze systému a nebudou k dispozici pro další zpracování. Budou odstraněny rovněž zásoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

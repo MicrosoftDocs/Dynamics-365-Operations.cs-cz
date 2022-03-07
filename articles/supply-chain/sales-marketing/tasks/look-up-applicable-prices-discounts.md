@@ -1,26 +1,23 @@
 ---
 title: Vyhledání platných cen a slev
 description: Tento postup popisuje vyhledání ceny a/nebo slevy produktu, které jsou aktuálně platné pro určitého odběratele, aniž by byla vytvořena prodejní objednávka.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c80ae00e1bcbc4498ec4705195c3208170cee1b1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423614"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578913"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Vyhledání platných cen a slev
 
@@ -60,3 +57,6 @@ Ověřte, že pole Účet odběratele obsahuje číslo odběratele US-001.
     * Jsou zde dvě smlouvy řádkových slev pro produkt T0012, kde je zadána sleva 5 procent pro množství na řádku objednávky od 1 do 10 a 7% sleva na množství objednávky vyšší než 10. Všimněte si, že slevy platí pro skupinu produktů, v tomto příkladu to je kód skupiny 01, do které produkt T0012 patří.  
 4. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

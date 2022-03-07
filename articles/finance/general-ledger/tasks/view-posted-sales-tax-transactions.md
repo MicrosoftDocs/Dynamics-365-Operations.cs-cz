@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b4e35d6a07ef4220bdd883eb3384a1c800ecd9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 21ea65532186821dab4907c58bbfef7cc2c3e840
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441258"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246879"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Zobrazení zaúčtovaných transakcí DPH
 
@@ -49,3 +48,6 @@ V tomto tématu jsou popsány některé způsoby zobrazení zaúčtovaných tran
 2. V podokně akcí klikněte na možnost **Kód prodejní daně**.
 3. Vyberte **Zaúčtovaná DPH**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

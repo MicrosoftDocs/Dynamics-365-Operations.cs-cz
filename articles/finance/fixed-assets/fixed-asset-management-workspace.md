@@ -2,27 +2,24 @@
 title: Pracovní prostor pro správu dlouhodobého majetku
 description: Toto téma obsahuje informace o pracovním prostoru Správa dlouhodobého majetku. Tento pracovní prostor zobrazuje informace vztahující se k dlouhodobému majetku, který je zadán v systému. Obsahuje souhrnné a analytické zobrazení.
 author: saraschi2
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ea6f04b1dad162749edc1ad7662f7d9cf077221d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 597a9a32995d44282c89725e053f6da4643dbb691b1b36ae7c237acbfa2afb70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721796"
 ---
 # <a name="fixed-asset-management-workspace"></a>Pracovní prostor pro správu dlouhodobého majetku
 
@@ -74,3 +71,6 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 | Mapy ocenění        | Podrobnosti o dlouhodobém majetku |
 
 Pokud chcete zobrazit analýzu s daty, je třeba nejprve aktualizovat agregované měření AssetTransactionMeasure na stránce **Obchod s entitami**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

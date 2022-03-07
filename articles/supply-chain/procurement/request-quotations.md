@@ -1,28 +1,28 @@
 ---
 title: Přehled požadavků na nabídku
 description: Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016924"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983385"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Přehled požadavků na nabídku
 
@@ -39,13 +39,13 @@ Proces požadavků na nabídku se skládá z následujících úloh:
 
 Následující obrázek přehledně znázorňuje průběh procesu požadavku na nabídku.
 
-[![Proces RFQ](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![Proces RFQ.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, z nákupní žádanky nebo ručním zadáním. Případ požadavku na nabídku je základní dokument, který použijete k vystavení požadavku na nabídku pro každého dodavatele.
 
 Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
+V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.
 
@@ -80,21 +80,21 @@ Vyberte šablonu, která se má použít pro oznámení e-mailem odeslané dodav
 - %Důvod pro vrácení nabídky%
 - %Důvod pro dodatek%
 - %Pořizovatel dodatku%
-- %Společnost%
+- %Company%
 - %Název případu požadavku na nabídku%
 - %Datum a čas vypršení%
-- %Datum%
+- %Date%
 
-Tokeny %Důvod pro vrácení nabídky% a %Důvod pro dodatek% jsou nahrazeny textem, který pracovník zásobování může zadat po dokončení dodatku v průvodci **Dodatek**. Hodnoty pro token %Pořizovatel dodatku% a %Společnost% jsou automaticky převzaty z požadavku na nabídku. Token %Date% je nahrazen aktuálním datem.
+Tokeny %Důvod pro vrácení nabídky% a %Důvod pro dodatek% jsou nahrazeny textem, který pracovník zásobování může zadat po dokončení dodatku v průvodci **Dodatek**. Hodnoty pro token %Pořizovatel dodatku% a %Company% jsou automaticky převzaty z RFQ. Token %Date% je nahrazen aktuálním datem.
 
 Jestliže chcete zrušit žádost o cenovou nabídku poté, co byla odeslána musíte to udělat z případu požadavku na nabídku. Pro zrušení se musí použít šablona e-mailu k odeslání oznámení o zrušení kontaktní osobě dodavatele. Je nutné vybrat šablonu na stránce **Parametry modulu Zásobování a zdroje**. Po vytvoření šablony může šablona obsahovat následující náhradní tokeny:
 
 - %Důvod zrušení%
 - %Případ požadavku na nabídku%
 - %Požadavek na nabídku zrušil/a%
-- %Společnost%
+- %Company%
 - %Název případu požadavku na nabídku%
-- %Datum%
+- %Date%
 
 Token %Důvod zrušení % se nahradí textem, který může zásobovací pracovník zadat v průvodci **Zrušení**. Token %Date% je nahrazen aktuálním datem.
 
@@ -167,7 +167,7 @@ Pokud konfigurujete proces dodatku tak, aby byl více omezující, před úpravo
 
 Pokud nakonfigurujete proces dodatku tak, aby byl méně omezující, nemusíte zvolit **Vytvořit** předtím, než bude možné upravit pole v případu požadavku na nabídku, který již byl odeslán. Musíte však ručně přidat poznámku o změně do požadavku na nabídku a odeslat případ znovu. Počítejte s tím, že tento přístup lze použít pouze v případě, že žádná z odpovědí (nabídek) nebyla upravována. Pokud jste zadali odpověď a je ve stavu **Přijato**, tlačítko **Odeslat** není k dispozici. V takovém případě je nutné vybrat **Vytvořit** a pak **Dokončit**, jako to musíte provést ve více omezujícím procesu. Odpověď se potom resetuje, aby odrážela změny případu požadavku na nabídku.
 
-Pokud dodavatelé používají rozhraní dodavatelské spolupráce k zadávání nabídek, musíte vždy použít proces dodatku, abyste informovali dodavatele o změnách případu požadavku na nabídku. Tento proces pomáhá zabránit situaci, kdy dodavatelé vytvoří nabídku na zastaralý případ požadavku na nabídku, zatímco probíhá jejich nabídka. Další informace o dodavatelské spolupráci naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Pokud dodavatelé používají rozhraní dodavatelské spolupráce k zadávání nabídek, musíte vždy použít proces dodatku, abyste informovali dodavatele o změnách případu požadavku na nabídku. Tento proces pomáhá zabránit situaci, kdy dodavatelé vytvoří nabídku na zastaralý případ požadavku na nabídku, zatímco probíhá jejich nabídka. Další informace o dodavatelské spolupráci naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Pokud chcete pozvat další dodavatele k nabídce a nebyly provedeny žádné změny případu požadavku na nabídku, lze použít tlačítko **Odeslat**. Dodavatele, které jste přidali, se zobrazí na stránce **Odeslat** a dostanou pozvání e-mailem.
 
@@ -246,3 +246,6 @@ V následujícím příkladu se můžete podívat na nejvyšší a nejnižší s
 | Přijměte jednu z nabídek. (nebo alespoň jeden řádek) |                          Přijato                           |                           Akceptováno                           |                    Přijato                    |                    Akceptováno                     |                   Přijato                   |                   Akceptováno                    |
 |           Odmítněte všechny ostatní nabídky.           |                          Odmítnuto                           |                           Akceptováno                           |                    Odmítnuto                    |                    Akceptováno                     |                   Odmítnuto                   |                   Přijato                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

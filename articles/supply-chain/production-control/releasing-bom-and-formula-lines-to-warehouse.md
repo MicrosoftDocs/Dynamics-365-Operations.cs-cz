@@ -2,27 +2,24 @@
 title: Uvolnění řádků kusovníku a receptury do skladu
 description: Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731215"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
 
@@ -64,7 +61,7 @@ V dotazu pro dávkovou úlohu **Automaticky uvolnit řádky kusovníku a receptu
 
 Následující obrázek znázorňuje výrobní zakázku, která obsahuje dvě úlohy, 10 a 20, které pokrývá sestavení a balení pro výrobní zakázku. Každá úloha je nastavena na spotřebu množství materiálu. Na tomto obrázku se časový limit uvolnění označený zelenou šipkou pod časovou osou rovná počtu dní zadanému v kritériu **(LessThanDate())**. Například **(LessThanDate(2))** označuje, že úlohu má hledat neuvolněné množství pouze v rámci doby dvou dnů.
 
-![Příklad výrobní zakázky, která má dvě dávkové úlohy](media/bach-job-setup.PNG)
+![Příklad výrobní zakázky, která má dvě dávkové úlohy.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Uvolnění materiálu podle čísla operace nebo v poměru k množství dokončeného zboží
 
@@ -81,7 +78,7 @@ Chcete-li kontrolovat operace, ke kterým má být uvolněn materiál, použijte
 
 Následující obrázek znázorňuje výrobní zakázku, která má dvě operace, 10 a 20. Pokud v tomto příkladu omezíte uvolnění na operaci 10, pouze materiál M9203 bude uvolněn.
 
-![Příklad uvolnění materiálu podle čísla operace](media/two-operations.PNG)
+![Příklad uvolnění materiálu podle čísla operace.](media/two-operations.PNG)
 
 Pro rychlou ukázku vydání materiálu v poměru k množství dokončených výrobků se podívejte na toto krátké video na YouTube o [vylepšení procesu uvolnění výrobní zakázky](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
@@ -98,3 +95,6 @@ Můžete uvolnit surovinu pro částečné množství dokončeného zboží nebo
     Jednotky, které jsou k dispozici, jsou definovány v ID skupiny klasifikace jednotek dokončeného zboží.
 
     Například dokončené zboží má následující převod jednotek mezi librami a paletami: 1 PL = 100 kg. Chcete-li vytvořit výrobní zakázku na 10 000 kg  dokončeného zboží, můžete uvolnit suroviny pro počet palet, které chcete vyrobit. Vyberte **PL** jako jednotku a vyberte odpovídající číslo v poli **Množství**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Integrace dlouhodobého majetku
 description: Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441140"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826827"
 ---
 # <a name="fixed-assets-integration"></a>Integrace dlouhodobého majetku
 
@@ -95,3 +92,6 @@ Další informace naleznete v tématu [Pořízení majetku pomocí zásobování
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

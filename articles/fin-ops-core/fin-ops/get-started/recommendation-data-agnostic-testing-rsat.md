@@ -2,11 +2,9 @@
 title: Agnostické testování dat pomocí Regression Suite Automation Tool
 description: V tomto tématu jsou popsána doporučení pro agnostické testování dat pomocí Regression Suite Automation Tool.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763403"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Agnostické testování dat pomocí Regression Suite Automation Tool
 
@@ -32,7 +30,7 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
 - Rámec ATL
 - Regression Suite Automation Tool (RSAT)
 
-[![Zkušební pyramida klasifikace](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Zkušební pyramida klasifikace.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Přehled
 -   **Rámec SysTest** – rámec SysTest je spolehlivý pro zapisování testů jednotek. Vzhledem k tomu, že testy jednotek obvykle testují metodu nebo funkci, měly by vždy být agnostické podle dat a záviset pouze na vstupních datech, která jsou poskytována jako součást testu.
@@ -44,8 +42,11 @@ Zatímco ověření funkčnosti aplikace ERP nemůže být plně agnostické, ex
     - o Zadejte jedinečné identifikátory, jako například čísla faktur, pomocí číselné řady nebo pomocí funkcí Microsoft Excel jako = =TEXT(NOW(),"yyyymmddhhmm"). Tato funkce zadá jedinečné číslo každou minutu, což umožňuje sledovat, kdy k akci došlo. Lze je použít pro proměnné, jako jsou například čísla příjemek produktů a čísla faktur dodavatele. Tyto testy znovu pracují se stejnou databází i znovu, aniž by bylo nutné provést obnovení.
     - Vždy nastavte **režim úprav** prostředí na **čtení** nebo **úprava** jako první testovací případ, protože výchozí volba je **Auto**. Možnosti **Auto** vždy používají předchozí nastavení a mohou být příčinou nespolehlivých testů. 
  
-    [![Stránka Možnosti, karta Výkon](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Stránka Možnosti, karta Výkon.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Proveďte ověření až poté, co filtrujete určitou transakci namísto obecného ověřování. Například pro počet záznamů můžete filtrovat číslo transakce nebo datum transakce tak, aby ověření vyloučilo všechny ostatní transakce. 
     - Pokud kontrolujete zůstatek odběratele nebo kontrolu rozpočtu, nejprve hodnotu uložte a poté přidejte hodnotu transakce pro ověření očekávaného výsledku namísto ověření pevné očekávané hodnoty. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

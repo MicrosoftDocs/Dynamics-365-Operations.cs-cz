@@ -2,28 +2,25 @@
 title: Finanční sestavy rozvah
 description: Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám.
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64e3624b387820bea3bfea9c2a4b2f48b0aa9822
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441226"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189014"
 ---
 # <a name="balance-sheet-financial-reports"></a>Finanční sestavy rozvah
 
@@ -31,8 +28,7 @@ ms.locfileid: "4441226"
 
 Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám. 
 
-<a name="default-balance-sheet-reports"></a>Výchozí finanční sestavy rozvah
------------------------------
+## <a name="default-balance-sheet-reports"></a>Výchozí finanční sestavy rozvah
 
 Existují dvě výchozí finanční sestavy rozvah. V jedné sestavě jsou oddíly nad sebou. Ve druhé jsou oddíly vedle sebe.
 
@@ -71,8 +67,7 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled finančního výkaznictví](financial-reporting-getting-started.md)
 
@@ -82,3 +77,6 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

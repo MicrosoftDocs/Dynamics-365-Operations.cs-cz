@@ -1,12 +1,10 @@
 ---
-title: Zřízení prostředí vyhodnocení Dynamics 365 Commerce
+title: Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit prostředí pro hodnocení v Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,14 +15,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777493"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení Dynamics 365 Commerce
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -34,8 +32,6 @@ Než začnete, doporučujeme vám toto téma rychle prohledat, abyste získali p
 
 > [!NOTE]
 > Prostředí vyhodnocení Commerce nejsou obecně dostupná a jsou poskytována partnerům a zákazníkům na základě žádosti. Podrobnější informace získáte od kontaktu společnosti Microsoft.
-
-## <a name="overview"></a>Přehled
 
 Chcete-li úspěšně zřídit prostředí pro hodnocení Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Commerce Scale Unit (CSU) také mají některé specifické parametry, které musíte použít, když se chystáte ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 
@@ -80,7 +76,7 @@ Chcete-li vytvořit nový projekt LCS pro projekt, postupujte následovně.
 
 ### <a name="add-the-azure-connector"></a>Přidejte konektor Azure
 
-Chcete-li přidat Azure Connector do svého projektu LCS, postupujte podle kroků v části [Dokončení procesu integrace Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
+Chcete-li přidat Azure Connector do svého projektu LCS, postupujte podle kroků v části [Dokončení procesu integrace Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
 
 ### <a name="deploy-the-environment"></a>Nasazení prostředí
 
@@ -94,16 +90,16 @@ Pro nasazení prostředí postupujte takto.
 1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.14**.
 1. V poli **verze platformy** použijte verzi platformy, která je automaticky vybrána pro vybranou verzi aplikace. 
 
-    ![Vyběr verze aplikace a platformy](./media/project1.png)
+    ![Výběr verze aplikace a platformy.](./media/project1.png)
 
 1. Zvolte **Další**.
 1. Výberte **Demo** jako topologii prostředí.
 
-    ![Výběr topologie prostředí 1](./media/project2.png)
+    ![Výběr topologie prostředí 1.](./media/project2.png)
 
 1. Na stránce **Nasadit prostředí** zadejte název prostředí. Ponechte Upřesňující nastavení, jak je.
 
-    ![Stránka Nasazení prostředí](./media/project4.png)
+    ![Stránka Nasazení prostředí.](./media/project4.png)
 
 1. Upravte velikost VM podle potřeby. (Doporučujeme skladovou jednotku VM \[SKU\] **D13 v2**.)
 1. Zkontrolujte ceny a licenční podmínky a pak zaškrtnutím políčka označte, že s nimi souhlasíte.
@@ -184,10 +180,13 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí vyhodnoce
 
 [Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (cloud)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

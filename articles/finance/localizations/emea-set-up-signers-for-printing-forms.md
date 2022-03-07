@@ -2,26 +2,23 @@
 title: Nastavení podepisujících uživatelů pro tiskové formuláře
 description: Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 64868aa08201fa3df99cd86fa6ef5231a9347151
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e5e80699f3ac2faaf947e0ce93e9408e3d0811265ec70d41c2a8b93e0f0d358a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717451"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Nastavení podepisujících uživatelů pro tiskové formuláře
 
@@ -29,8 +26,7 @@ ms.locfileid: "4407621"
 
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy.
 
-<a name="set-up-default-values"></a>Nastavení výchozích hodnot
----------------------
+## <a name="set-up-default-values"></a>Nastavení výchozích hodnot
 
 K nastavení podepisujících dokumentů, které společnost tiskne, použijte stránku **Úředníci**. Pro firmu i pro zákazníky nebo dodavatele můžete nastavit podepisující osoby a jejich jména, v závislosti na typu dokumentu. Následující tabulka popisuje karty na stránce **Úředníci**.
 
@@ -165,3 +161,6 @@ Funkce Úředníci zobrazuje výchozí předdefinované podepisující z tabulky
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Datum váženého průměru
 description: Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343693"
 ---
 # <a name="weighted-average-date"></a>Datum váženého průměru
 
@@ -41,7 +39,7 @@ Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 +
 
 Při uzávěrce skladu je výpočet proveden denně prostřednictvím období uzávěrky, jak je uvedeno na následujícím obrázku. 
 
-![Model denního výpočtu data váženého průměru](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Model denního výpočtu data váženého průměru.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Skladové transakce, které opustí sklad, jako například prodejní objednávky, deníky zásob a výrobních zakázky, probíhají v odhadované nákladové ceně k datu zaúčtování. Tato odhadovaná nákladová cena se také označuje jako průběžná průměrná nákladová cena. K datu uzávěrky skladu systém analyzuje skladové transakce za předchozí období, předchozí dny a pro aktuální den. Tato analýza slouží k určení, která z následujících metod uzávěrky má být použita:
 
@@ -74,7 +72,7 @@ Následující obrázek znázorňuje tyto transakce:
 -   2b. je provedena aktualizace finančního výdeje ve skladu pro množství 2 při ceně 10,00 USD za kus.
 -   3. Je provedena uzávěrka skladu s použitím metody přímého vyrovnání s cílem vyrovnat finanční příjem skladu oproti finančnímu výdeji skladu.
 
-![Přímé vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Přímé vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Popis obrázku:**
 
@@ -128,7 +126,7 @@ Systém vygeneruje a zaúčtuje souhrnnou transakci převodu zásob. Navíc apli
 
 Následující obrázek ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti **Zahrnovat fyzickou hodnotu**. 
 
-![Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Popis obrázku**
 
@@ -177,7 +175,7 @@ Před zaúčtováním transakce je možné označit transakci výdeje s příjme
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 USD. Následující obrázek ilustruje tuto sérii transakcí, včetně dopadu použití váženého průměru jako skladového modelu data a s označením.
 
-![Datum váženého průměru s označením](./media/weightedaveragedatewithmarking.gif) 
+![Datum váženého průměru s označením.](./media/weightedaveragedatewithmarking.gif) 
 
 **Popis obrázku:**
 
@@ -195,3 +193,6 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

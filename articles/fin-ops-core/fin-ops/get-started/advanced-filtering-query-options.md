@@ -1,12 +1,10 @@
 ---
 title: Pokročilé filtrování a syntaxe dotazu
-description: Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
+description: Toto téma popisuje možnosti filtrování a dotazů v dialogovém okně Rozšířený filtr či řazení, a operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798663"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070002"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Pokročilé filtrování a syntaxe dotazu
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shod** v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 
@@ -121,9 +122,9 @@ Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici p�
 <td>Dvě po sobě jdoucí dvojité uvozovky (<strong>""</strong>) naleznou řádky bez hodnoty pro aktuální sloupec.</td>
 </tr>
 <tr>
-<td>(<span class="code"> dotaz Finance and Operations</span>) (dotaz Finance and Operations mezi závorkami)</td>
+<td>(<span class="code">Dotaz Finance a Operace</span>) (Dotaz Finance a Operace v závorkách)</td>
 <td>Nalezení definovaného dotazu</td>
-<td>Pomocí dotazovacího jazyka Finance and Operations zadejte dotaz jako příkaz SQL mezi závorky.</td>
+<td>Pomocí dotazovacího jazyka Finance a Operace zadejte dotaz jako příkaz SQL mezi závorky.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        Jako příklad syntaxe pro podmínku filtru v poli z kořenového zdroje dat a také pro pole z jiného zdroje dat (pro stránku Všichni odběratelé)</td>
 </tr>
@@ -242,3 +243,6 @@ Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a n�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

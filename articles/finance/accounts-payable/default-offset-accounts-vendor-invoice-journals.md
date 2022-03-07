@@ -1,31 +1,28 @@
 ---
-title: Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
+title: Výchozí protiúčty pro deníky faktur dodavatele a schvalování faktur
 description: Toto téma vám pomůže s rozhodnutím, kam chcete přiřadit výchozí účty pro deníky faktur.
 author: abruer
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6ff4e209f1d1c41d7c05cad735aacc320bdeb83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e1b0184850602191da5448df25779437f70e5c3182e1b7b70d92d4c406e08599
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749021"
 ---
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
+# <a name="default-offset-accounts-for-vendor-invoice-and-invoice-approval-journals"></a>Výchozí protiúčty pro deníky faktur dodavatele a schvalování faktur
 
 [!include [banner](../includes/banner.md)]
 
@@ -98,3 +95,6 @@ Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí ú�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

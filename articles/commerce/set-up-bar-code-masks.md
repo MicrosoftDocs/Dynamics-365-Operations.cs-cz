@@ -2,11 +2,9 @@
 title: Nastavení masek čárových kódů
 description: Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5432741e7cdc21054d02bd24591deb307d096229
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 77daf93e3f516bfddd383e5828159824b97ead8f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969794"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804202"
 ---
 # <a name="set-up-bar-code-masks"></a>Nastavení masek čárových kódů
 
@@ -82,3 +80,6 @@ Masky čárových kódů musí být před použitím přiřazeny k čárovým k�
 5. Klikněte na tlačítko **Uložit**.
 
 Masku čárového kódu lze nyní použít k vytvoření čárových kódů pro produkty. Výše uvedené kroky jsou příklady vytváření masek čárových kódů pro produkty, ale také ukazují, jak vytvořit masky čárového kódu pro všechny ostatní podporované typy čárového kódu. Masky čárových kódů, typy a délky je třeba upravit pro použití v konkrétním prostředí.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

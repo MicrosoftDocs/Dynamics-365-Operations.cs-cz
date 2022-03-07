@@ -1,10 +1,12 @@
 ---
-title: Externí data v prognózách cashflow
+title: Použití externích dat v prognózách peněžních toků (náhled)
 description: Toto téma popisuje kroky nastavení, které musíte provést, aby bylo možné do prognóz peněžních toků zadávat nebo importovat externí data.
 author: rcarlson
-ms.date: 02/16/2022
+manager: AnnBe
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
@@ -15,34 +17,31 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23342114c25cd1b59d47aa7ce63f09de029fa690
-ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
+ms.openlocfilehash: ae0eba6d397725cf425d9781a597d904e1958d44
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8314692"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009381"
 ---
-# <a name="external-data-in-cash-flow-forecasts"></a>Externí data v prognózách cashflow
+# <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Použití externích dat v prognózách peněžních toků (náhled)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Externí data lze zadávat nebo importovat do prognóz peněžních toků. Toto téma popisuje kroky nastavení, které jsou specifické pro použití externích dat a které umožňují zahrnutí externích dat do prognózy peněžních toků.
 
 ## <a name="external-data-setup"></a>Nastavení externích dat
 
-Použijte kartu **Vnější zdroj** na stránce **Nastavení předpovědi cashflo** (**Pokladna a banka \> Prognóza cashflow \> Nastavení prognózy cashflow**) a zadejte nastavení, která podporují použití externích dat v předpovědích cashflow.
+Použijte kartu **Vnější zdroj** na stránce **Nastavení předpovědi peněžních toků** (**Pokladna a banka \> Prognóza peněžních toků**) a zadejte nastavení, která podporují použití externích dat v předpovědích peněžních toků.
 
-Externí data lze zadávat nebo importovat do prognóz peněžních toků. Před zadáním nebo importem externích dat je třeba nastavit externí zdroje. Na kartě **Vnější zdroj** nastavte externí kategorie peněžních toků. Kategorie může být buď **Odchozí** nebo **Příchozí**. **Likvidita** by měla být vybrána jako typ účtování. V mřížce **Nastavení právnické osoby** vyberte právnické osoby a odpovídající hlavní účty, na které se vztahují kategorie externích peněžních toků.
+Další informace o nastavení čítačů naleznete v tématu [Prognóza cashflow](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
 
-Další informace o nastavení prognóz cashflow naleznete v tématu [Prognóza cashflow](../cash-bank-management/cash-flow-forecasting.md).
+Chcete-li zadat externí data pro prognózy peněžních toků, můžete k zadávání a úpravě externích dat použít prostředí Otevřít v aplikaci Excel. Vyberte tlačítko **Externí data** a poté vyberte **Přidat externí data** nebo **Upravit existující externí data**. Když je soubor Microsoft Excel otevřen, můžete zadat informace do následujících polí:
 
-## <a name="enter-external-data"></a>Vložte externí data
-
-Chcete-li zadat a upravovat externí data pro prognózy peněžních toků, můžete použít prostředí **Otevřít v aplikaci Excel**. Vyberte tlačítko **Externí data** na stránce pracovního prostoru **Nastavení prognózy cashflow** a poté vyberte **Přidat externí data** nebo **Upravit existující externí data**. Když je soubor Microsoft Excel otevřen, můžete zadat informace do následujících polí:
-
-- **ID položky** (jedinečné)
+- **ID položky**
 - **Popis** (nepovinné)
-- **Název externího zdroje** - Vyberte jednu z hodnot v seznamu, který jste definovali při nastavování nástroje Finance Insights.
+- **Název externího zdroje** - Vyberte jednu z hodnot v seznamu, který jste definovali při nastavování nástroje Finanční přehledy.
 - **Právnická osoba**
 - **Datum**
 - **Částka v měně transakce**
@@ -61,4 +60,5 @@ Kromě toho, pokud musíte přesunout data nastavení z jednoho prostředí do j
 - Nastavení externího zdroje prognózy cashflow
 - Nastavení právnické osoby externího zdroje prognózy cashflow
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
+Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.

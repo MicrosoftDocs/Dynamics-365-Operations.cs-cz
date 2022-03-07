@@ -2,16 +2,13 @@
 title: Hlavní plánování s prognózami poptávky
 description: Toto téma vysvětluje, jak zahrnout prognózy poptávky během hlavního plánování pomocí Optimalizace plánování.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666715"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867240"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hlavní plánování s prognózami poptávky
 
@@ -89,9 +86,9 @@ Pokud do hlavního plánu zahrnete prognózu, můžete zvolit, jak budou požada
 
 Chcete-li zahrnout prognózu do hlavního plánu a vybrat metodu, která se používá ke snížení požadavků na prognózu, přejděte na **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**. Zvolte model prognózy v poli **Model prognózy**. V poli **Způsob používaný ke snížení požadavků na prognózy** vyberte metodu. Existují tyto možnosti:
 
-- Není
+- Žádný
 - Procento – redukční klíč
-- Transakce - redukční klíč (optimalizace plánování ho zatím nepodporuje)
+- Transakce – redukční klíč
 - Transakce – dynamické období
 
 Další části poskytují více informací o každé možnosti.
@@ -140,32 +137,85 @@ V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky 
 
 #### <a name="transactions--reduction-key"></a>Transakce – redukční klíč
 
-Pokud zvolíte **Transakce – redukční klíč**, požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
+Pokud nastavíte pole **Metoda používaná ke snížení požadavků na prognózy** do *Transakce - redukční klíč*, požadavky na prognózu jsou sníženy o transakce kvalifikované poptávky, ke kterým dochází během období definovaných redukčním klíčem.
+
+Kvalifikovaná poptávka je definována polem **Snížit předpověď o** na stránce **Skupiny pokrytí**. Pokud nastavíte pole **Snížit předpověď o** na *Objednávky*, pouze transakce prodejní objednávky jsou považovány za kvalifikovanou poptávku. Pokud ho nastavíte na *Všechny transakce*, všechny transakce se zásobami nesouvisející s mezipodnikovými emisemi jsou považovány za kvalifikovanou poptávku. Nastavte možnost **Zahrnout mezipodnikové objednávky** na *Ano*, pokud by měly být zahrnuty mezipodnikové objednávky, když je prognóza snížena.
+
+Snížení prognózy začíná prvním (nejranějším) záznamem prognózy poptávky v klíčovém období redukce. Pokud je množství kvalifikovaných skladových transakcí větší než množství řádků prognózy poptávky ve stejném klíčovém období redukce, použije se zůstatek množství transakcí zásob ke snížení množství prognózy poptávky v předchozím období (pokud existuje nespotřebovaná prognóza).
+
+Pokud v předchozím klíčovém období redukce nezůstane žádná nespotřebovaná prognóza, bude v následujícím měsíci použito množství inventárních transakcí ke snížení množství prognózy (pokud existuje nespotřebovaná prognóza).
+
+Hodnota pole **Procento** na řádcích redukčních klíčů se nepoužívá, když je pole **Metoda používaná ke snížení požadavků na prognózy** nastaveno na *Transakce - redukční klíč*. K definování období redukčního klíče se používají pouze data.
+
+> [!NOTE]
+> Jakákoli prognóza zveřejněná k dnešnímu datu nebo před ním bude ignorována a nebude použita k vytváření plánovaných objednávek. Pokud je například vaše prognóza poptávky na měsíc vygenerována 1. ledna a spustíte hlavní plánování, které zahrnuje prognózy poptávky na 2. ledna, výpočet bude ignorovat řádek prognózy poptávky s datem 1. ledna.
 
 ##### <a name="example-transactions--reduction-key"></a>Příklad: Transakce – redukční klíč
 
 Tento příklad ukazuje, jak jsou skutečné objednávky prováděné v období definovány podle redukčního klíče pro snížení požadavků prognózy poptávky.
 
-V tomto příkladu zvolte **Transakce - redukční klíč** v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány**.
+[![Skutečné objednávky a prognóza před spuštěním hlavního plánování.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Následující prodejní objednávky existují k 1. lednu.
+V tomto příkladu zvolte *Transakce - redukční klíč* v poli **Způsob používaný ke snížení požadavků na prognózy** na stránce **Hlavní plány**.
 
-| Měsíc    | Počet objednaných kusů |
-|----------|--------------------------|
-| Leden  | 956                      |
-| Únor | 1 176                    |
-| Březen    | 451                      |
-| Duben    | 119                      |
+Následující řádky prognózy poptávky existují 1. dubna.
 
-Pokud použijete stejnou prognózu poptávky pro 1000 kusů za měsíc, která byla použita v předchozím příkladu, následující požadované objemy se přenesou do hlavního plánu.
+| Datum     | Počet prognózovaných kusů |
+|----------|-----------------------------|
+| 5. duben  | 100                         |
+| 12. duben | 100                         |
+| 19. duben | 100                         |
+| 26. duben | 100                         |
+| 3. květen    | 100                         |
+| 10. květen   | 100                         |
+| 17. květen   | 100                         |
 
-| Měsíc                | Počet požadovaných kusů |
-|----------------------|---------------------------|
-| Leden              | 44                        |
-| Únor             | 0                         |
-| Březen                | 549                       |
-| Duben                | 881                       |
-| Květen až prosinec | 1 000                     |
+V dubnu existují následující řádky prodejní objednávky.
+
+| Datum     | Počet požadovaných kusů |
+|----------|----------------------------|
+| 27. duben | 240                        |
+
+[![Plánované dodávky generované na základě dubnových objednávek.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Když je hlavní plánování spuštěno 1. dubna, do hlavního plánu se přenesou následující požadované množství. Jak vidíte, dubnové prognózované transakce byly sníženy o poptávané množství 240 v pořadí, počínaje první z těchto transakcí.
+
+| Datum     | Počet požadovaných kusů |
+|----------|---------------------------|
+| 5. duben  | 0                         |
+| 12. duben | 0                         |
+| 19. duben | 60                        |
+| 26. duben | 100                       |
+| 27. duben | 240                       |
+| 3. květen    | 100                       |
+| 10. květen   | 100                       |
+| 17. květen   | 100                       |
+
+Předpokládejme, že nové objednávky byly importovány pro období květen.
+
+V květnu existují následující řádky prodejní objednávky.
+
+| Datum   | Počet požadovaných kusů |
+|--------|----------------------------|
+| 4. květen  | 80                         |
+| 11. květen | 130                        |
+
+[![Plánované dodávky generované na základě dubnových a květnových objednávek.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Když je hlavní plánování spuštěno 1. dubna, do hlavního plánu se přenesou následující požadované množství. Jak vidíte, dubnové prognózované transakce byly sníženy o poptávané množství 240 v pořadí, počínaje první z těchto transakcí. Počínaje první transakcí předpovídající poptávku v květnu se však květnové prognózované transakce snížily celkem o 210. Celkové částky za období jsou však zachovány (400 v dubnu a 300 v květnu).
+
+| Datum     | Počet požadovaných kusů |
+|----------|---------------------------|
+| 5. duben  | 0                         |
+| 12. duben | 0                         |
+| 19. duben | 60                        |
+| 26. duben | 100                       |
+| 27. duben | 240                       |
+| 3. květen    | 0                         |
+| 4. květen    | 80                        |
+| 10. květen   | 0                         |
+| 11. květen   | 130                       |
+| 17. květen   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transakce – dynamické období
 
@@ -250,7 +300,7 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
 1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
-2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
+2. Zvolte **Nový** pro vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 
@@ -266,11 +316,78 @@ Redukční klíče prognózy musí být přiřazen ke skupině disponibility pol
 2. Na záložce s náhledem **Jiné** v poli **Redukční klíč** vyberte redukční klíč, který chcete přiřadit ke skupině disponibility. Redukční klíč se pak použije na všechny položky, které patří do skupiny disponibility.
 3. Chcete-li použít redukční klíč pro výpočet snížení prognózy během hlavního plánování, musíte toto nastavení definovat v nastavení plánu prognózy nebo hlavního plánu. Přejděte na jedno z následujících míst:
 
-    - Hlavní plánování \> Nastavení \> Plány \> Plány prognózy
-    - Hlavní plánování \> Nastavení \> Plány \> Hlavní plány
+    - **Hlavní plánování \> Nastavení \> Plány \> Plány prognózy**
+    - **Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**
 
 4. Na stránce **Plány prognózy** nebo **Hlavní plány** na záložce s náhledem **Obecné** v poli **Způsob používaný ke snížení požadavků na prognózy** vyberte buď **Procento – redukční klíč** nebo **Transakce – redukční klíč**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Snížení prognózy podle transakcí
 
 Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamické období** jako metodu pro snížení požadavků prognózy, můžete určit, které transakce sníží prognózu. Na stránce **Skupiny krytí** na záložce s náhledem **Jiné** v poli **Snížit prognózu podle** vyberte **Všechny transakce**, pokud mají všechny transakce snížit prognózu, nebo **Objednávky** , pokud mají prognózu snížit pouze prodejní objednávky.
+
+## <a name="forecast-models-and-submodels"></a>Modely prognóz a dílčí modely
+
+Tato část popisuje, jak vytvořit modely prognóz a jak kombinovat více modelů prognóz nastavením dílčích modelů.
+
+*Model prognózy* jmenuje a identifikuje určitou prognózu. Poté, co vytvoříte model prognózy, můžete k němu přidat řádky prognózy. Chcete-li přidat řádky prognózy pro více položek, použijte stránku **Řádky prognózy poptávky**. Chcete-li přidat řádky prognózy pro konkrétní vybranou položku, použijte stránku **Vydané produkty**.
+
+Model prognózy může zahrnovat prognózy z jiných modelů prognóz. K dosažení tohoto výsledku přidáte další modely prognóz jako *dílčí modely* rodičovského modelu prognózy. Než budete moci přidat každý relevantní model jako dílčí model nadřízeného modelu prognózy, musíte jej vytvořit.
+
+Výsledná struktura vám poskytuje účinný způsob ovládání prognóz, protože umožňuje kombinovat (agregovat) vstup z více jednotlivých prognóz. Z hlediska plánování je proto snadné kombinovat prognózy pro simulace. Můžete například nastavit simulaci založenou na kombinaci běžné prognózy s prognózou jarní propagace.
+
+### <a name="submodel-levels"></a>Úrovně dílčích modelů
+
+Počet dílčích modelů, které lze přidat do nadřízeného modelu prognózy, není nijak omezen. Struktura však může mít hloubku pouze jedné úrovně. Jinými slovy, model prognózy, který je dílčím modelem jiného modelu prognózy, nemůže mít své vlastní dílčí modely. Když přidáte do modelu prognózy dílčí modely, systém zkontroluje, zda je tento model prognózy již dílčím modelem jiného modelu prognózy.
+
+Pokud hlavní plánování narazí na dílčí model, který má své vlastní dílčí modely, zobrazí se chybová zpráva.
+
+#### <a name="submodel-levels-example"></a>Příklad úrovní dílčích modelů
+
+Model prognózy A obsahuje model prognózy B jako dílčí model. Proto model prognózy B nemůže mít své vlastní dílčí modely. Pokud se pokusíte přidat dílčí model do modelu prognózy B, zobrazí se následující chybová zpráva: „Model prognózy B je dílčím modelem pro model A.“
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Agregace prognóz napříč modely prognóz
+
+Řádky prognózy, které se vyskytnou ve stejný den, budou agregovány napříč jejich modelem prognózy a jeho dílčími modely.
+
+#### <a name="aggregation-example"></a>Příklad agregace
+
+Model prognózy A obsahuje modely prognózy B a C jako dílčí modely.
+
+- Model prognózy A zahrnuje prognózu poptávky po 2 kusech (ks) na 15. června.
+- Model prognózy B zahrnuje prognózu poptávky po 3 kusech (ks) na 15. června.
+- Model prognózy C zahrnuje prognózu poptávky po 4 kusech (ks) na 15. června.
+
+Výsledná prognóza poptávky na 15. června bude jedinou poptávkou po 9 ks (2 + 3 + 4).
+
+> [!NOTE]
+> Každý dílčí model prognózy používá vlastní parametry, nikoliv parametry nadřízeného modelu prognózy.
+
+### <a name="create-a-forecast-model"></a>Vytvoření modelu prognózy
+
+Při vytváření modelu prognózy postupujte takto:
+
+1. Přejděte do uzlu **Hlavní plánování \> Nastavení \> Prognóza poptávky \> Modely prognózy**.
+1. V podokně akcí zvolte **Nový**.
+1. Nastavte následující pole pro nový model prognózy:
+
+    - **Model** – Zadejte jedinečný identifikátor modelu.
+    - **Název** – Zadejte popisný název modelu.
+    - **Zastaven** – Obvykle byste měli nastavit tuto možnost na *Ne*. Nastavte ji na *Ano* pouze v případě, kdy chcete zabránit úpravám všech řádků prognózy, které jsou přiřazeny k modelu.
+
+    > [!NOTE]
+    > Pole **Zahrnout do prognóz peněžních toků** a pole na záložce **Projekt** nesouvisejí s hlavním plánováním. Proto je můžete v tomto kontextu ignorovat. Musíte je brát do úvahy, pouze když pracujete s prognózou pro modul **Řízení projektů a účetnictví**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Přiřazení dílčích modelů k modelu prognózy
+
+Pokud chcete k modelu prognózy přiřadit dílčí modely, postupujte takto.
+
+1. Přejděte do uzlu **Řízení zásob \> Nastavení \> Prognóza \> Modely prognózy**.
+1. V podokně seznamu vyberte model prognózy, pro který chcete konfigurovat dílčí model.
+1. Na záložce **Dílčí model** přidejte řádek do mřížky výběrem možnosti **Přidat**.
+1. Na novém řádku nastavte následující pole:
+
+    - **Dílčí model** – Vyberte model prognózy, který chcete přidat jako dílčí model. Tento model prognózy již musí existovat a nesmí mít žádné vlastní dílčí modely.
+    - **Název** – Zadejte popisný název dílčího modelu. Například tento název může označovat vztah dílčího modelu k nadřízenému modelu prognózy.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

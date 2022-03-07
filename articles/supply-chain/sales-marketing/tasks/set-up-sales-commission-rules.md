@@ -2,26 +2,23 @@
 title: Nastavení pravidel prodejních provizí
 description: Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sledování.
 author: omulvad
-manager: tfehr
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b1ea016817462269a13e450c8c7576546c7f0eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 07d52e1152275e05e0d4ccc2c8d88818a19866e154f52275a8370606414102af
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774698"
 ---
 # <a name="set-up-sales-commission-rules"></a>Nastavení pravidel prodejních provizí
 
@@ -96,3 +93,6 @@ Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sled
 17. V seznamu vyberte skupinu provize, kterou jste vytvořili dříve.
 18. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

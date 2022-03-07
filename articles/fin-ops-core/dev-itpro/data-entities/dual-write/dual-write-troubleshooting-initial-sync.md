@@ -2,45 +2,36 @@
 title: Poradce při potížích s počáteční synchronizací
 description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy, které by se mohly vyskytnou během počáteční synchronizace.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744630"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063051"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Poradce při potížích s počáteční synchronizací
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy, které by se mohly vyskytnou během počáteční synchronizace.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy, které by se mohly vyskytnou během počáteční synchronizace.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Zkontrolovat chyby počáteční synchronizace v aplikaci Finance and Operations
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Kontrola úvodní synchronizace ve finanční a provozní aplikaci
 
 Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Pokud je stav **Nespuštěn**, došlo k chybám při počáteční synchronizaci. Chcete-li zobrazit chyby, vyberte kartu **Podrobnosti o počáteční synchronizaci** na stránce **Dvojí zápis**.
 
-![Chyba na kartě Počáteční podrobnosti synchronizace](media/initial_sync_status.png)
+![Chyba na kartě Počáteční podrobnosti synchronizace.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Počáteční synchronizaci nelze dokončit: 400 Chybný požadavek
 
@@ -48,7 +39,7 @@ Po povolení šablon mapování by měl být **Spuštěn** stav mapování. Poku
 
 Při pokusu o spuštění mapování a počáteční synchronizace se může zobrazit následující chybová zpráva:
 
-*(\[Chybný požadavek\] Vzdálený server vrátil chybu: (400) chybný požadavek.), při exportu AX byla zjištěna chyba*
+*(\[Chybný požadavek\] Vzdálený server vrátil chybu: (400) chybný požadavek.), při exportu AX byla zjištěna chyba.*
 
 Následuje příklad úplné chybové zprávy.
 
@@ -72,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Pokud k této chybě dojde konzistentně a nelze dokončit počáteční synchronizaci, opravte problém pomocí následujícího postupu.
 
-1. Přihlaste se k virtuálnímu počítači pro aplikaci Finance and Operations.
+1. Přihlaste se k virtuálnímu počítači pro finanční a provozní aplikaci.
 2. Otevřete konzoli MMC.
 3. V podokně **Služby** zkontrolujte, zda je spuštěna služba platformy importu a exportu dat Microsoft Dynamics 365. Restartujte ji, pokud byla zastavena, protože ji vyžaduje počáteční synchronizace.
 
@@ -84,10 +75,10 @@ Při počáteční synchronizaci se může zobrazit následující chybová zpr�
 
 Chcete-li opravit problém, postupujte následovně.
 
-1. Přihlášení do aplikace Finance and Operations.
+1. Přihlášení do finanční a provozní aplikace.
 2. Na stránce **aplikací Azure Active Directory** odstraňte klienta **DtAppID** a poté jej znovu přidejte.
 
-![DtAppID klient v seznamu aplikací Azure AD](media/aad_applications.png)
+![DtAppID klient v seznamu aplikací Azure AD.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Selhání odkazů na sebe sama a cirkulárních odkazů při počáteční synchronizaci
 
@@ -111,17 +102,17 @@ Několik příkladů:
 
 Pokud mají libovolné řádky v tabulce dodavatele hodnoty ve sloupcích **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** , postupujte podle kroků v části níže a dokončete počáteční synchronizaci.
 
-1. V aplikaci Finance and Operations odstraňte sloupce **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** z mapování a pak mapování uložte.
+1. Ve finanční a provozní aplikaci odstraňte sloupce **PrimaryContactPersonId** a **InvoiceVendorAccountNumber** z mapování a pak mapování uložte.
 
-    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)**, na kartě **Mapování tabulek**, v levém filtru vyberte **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
+    1. Na stránce mapování s dvojitým zápisem **Vendors V2 (msdyn\_vendors)**, na kartě **Mapování tabulek**, v levém filtru vyberte aplikace **Finance and Operations apps.Vendors V2**. V pravém filtru vyberte **Sales.Vendor**.
     2. Vyhledejte **primarycontactperson** a najděte zdrojový sloupec **PrimaryContactPersonId**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
-        ![Odstranění sloupce PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Odstranění sloupce PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Opakujte tyto kroky pro odstranění sloupce **InvoiceVendorAccountNumber**.
 
-        ![Odstranění sloupce InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Odstranění sloupce InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Uložte změny do mapování.
 
@@ -131,7 +122,7 @@ Pokud mají libovolné řádky v tabulce dodavatele hodnoty ve sloupcích **Prim
     2. Vyberte tabulku **Vendors V2**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
-        ![Vyberte možnost Sledování změn](media/selfref_options.png)
+        ![Vyberte možnost Sledování změn.](media/selfref_options.png)
 
     4. Vyberte **Zakázat sledování změn**.
 
@@ -158,17 +149,17 @@ Několik příkladů:
 
 Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **ContactPersonID** a **InvoiceAccount**, postupujte podle kroků v části níže a dokončete počáteční synchronizaci. Tento přístup můžete použít pro jakékoli dodávané tabulky, jako jsou **´´Učty** a **Kontakty**.
 
-1. V aplikaci Finance and Operations odstraňte sloupce **ContactPersonID** a **InvoiceAccount** z mapování **Customers V3 (accounts)** a mapování uložte.
+1. Ve finanční a provozní aplikaci odstraňte sloupce **ContactPersonID** a **InvoiceAccount** z mapování **Customers V3 (accounts)** a mapování uložte.
 
     1. Na stránce mapování s dvojitým zápisem pro **Customers V3 (accounts)** na kartě **Mapování tabulek** v levém filtru vyberte **Finance and Operations app.Customers V3**. V pravém filtru vyberte **Dataverse.Account**.
     2. Vyhledejte **contactperson** a najděte zdrojový sloupec **ContactPersonID**.
     3. Vyberte **Akce** a poté vyberte **Odstranit**.
 
-        ![Odstranění sloupce ContactPersonID](media/cust_selfref3.png)
+        ![Odstranění sloupce ContactPersonID.](media/cust_selfref3.png)
 
     4. Opakujte tyto kroky pro odstranění sloupce **InvoiceAccount**.
 
-        ![Odstranění sloupce InvoiceAccount](media/cust_selfref4.png)
+        ![Odstranění sloupce InvoiceAccount.](media/cust_selfref4.png)
 
     5. Uložte změny do mapování.
 
@@ -178,7 +169,7 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
     2. Vyberte tabulku **Zákazníci V3**.
     3. V podokně akcí zvolte **Možnosti** a poté vyberte **Sledování změn**.
 
-        ![Vyberte možnost Sledování změn](media/selfref_options.png)
+        ![Vyberte možnost Sledování změn.](media/selfref_options.png)
 
     4. Vyberte **Zakázat sledování změn**.
 
@@ -191,23 +182,57 @@ Pokud mají libovolné řádky v tabulce zákazníka hodnoty ve sloupcích **Con
     > Existují dvě mapy se stejným názvem. Vyberte mapu, která má následující popis na kartě **Podrobnosti**: **Šablona s dvojím zápisem pro synchronizaci mezi kontakty dodavatele FO.CDS V2 a CDS.Contacts. Vyžaduje nový balíček \[Dynamics365SupplyChainExtended\].**
 
 5. Přidejte sloupce **InvoiceAccount** a **ContactPersonId** zpět do mapování **Customers V3 (Accounts)** a mapování uložte. Sloupce **InvoiceAccount** i **ContactPersonId** jsou opět součástí živého synchronizačního režimu. V dalším kroku dokončíte počáteční synchronizaci těchto sloupců.
-6. Spusťte opět počáteční synchronizaci pro mapování **Customers V3 (Accounts)**. Protože sledování změn je vypnuto, data pro **InvoiceAccount** a **ContactPersonId** budou synchronizována z aplikace Finance and Operations do Dataverse.
-7. Chcete-li synchronizovat data pro **InvoiceAccount** a **ContactPersonId** z Dataverse do aplikace Finance and Operations, musíte použít projekt integrace dat.
+6. Spusťte opět počáteční synchronizaci pro mapování **Customers V3 (Accounts)**. Protože sledování změn je vypnuto, data pro **InvoiceAccount** a **ContactPersonId** budou synchronizována z finanční a provozní aplikace do Dataverse.
+7. Chcete-li synchronizovat data pro **InvoiceAccount** a **ContactPersonId** z Dataverse do finanční a provozní aplikace, musíte použít projekt integrace dat.
 
-    1. V Power Apps vytvořit projekt integrace dat mezi tabulkami **Sales.Account** a **Finance and Operations apps.Customers V3**. Směr dat musí být z Dataverse do aplikace Finance and Operations. Protože **InvoiceAccount** je nový atribut v dvojitém zápisu, možná budete chtít přeskočit počáteční synchronizaci pro tento atribut. Další informace naleznete v tématu [Integrace dat do Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. V Power Apps vytvořte projekt integrace dat mezi tabulkami **Sales.Account** a **Finance and Operations apps.Customers V3**. Směr dat musí být z Dataverse do finanční a provozní aplikace. Protože **InvoiceAccount** je nový atribut v dvojitém zápisu, možná budete chtít přeskočit počáteční synchronizaci pro tento atribut. Další informace naleznete v tématu [Integrace dat do Dataverse](/power-platform/admin/data-integrator).
 
         Následující ilustrace ukazuje projekt, který aktualizuje **CustomerAccount** a **ContactPersonId**.
 
-        ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId](media/cust_selfref6.png)
+        ![Projekt integrace dat pro aktualizaci CustomerAccount a ContactPersonId.](media/cust_selfref6.png)
 
-    2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly v aplikaci Finance and Operations aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Přidejte do filtru kritéria společnosti na straně Dataverse, aby byly ve finanční a provozní aplikaci aktualizovány pouze řádky, které odpovídají kritériím filtru. Chcete-li přidat filtr, vyberte tlačítko filtru. Potom v dialogovém okně **Upravit dotaz** můžete přidat dotaz filtru jako **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [POZNÁMKA] Pokud tlačítko filtru není k dispozici, vytvořte podpůrný ticket a požádejte tým pro integraci dat o povolení filtrování u klienta.
 
         Pokud nezadáte dotaz filtru pro **\_msdyn\_company\_value**, budou všechny řádky synchronizovány.
 
-        ![Přidání dotazu filtru](media/cust_selfref7.png)
+        ![Přidání dotazu filtru.](media/cust_selfref7.png)
 
     Počáteční synchronizace řádků je nyní dokončena.
 
-8. V aplikaci Finance and Operations opět zapněte sledování změn pro tabulku **Customers V3**.
+8. Ve finanční a provozní aplikaci opět zapněte sledování změn pro tabulku **Customers V3**.
+
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Počáteční selhání synchronizace na mapách s více než 10 vyhledávacími poli
+
+Může se zobrazit následující chybová zpráva při pokusu o spuštění počátečních selhání synchronizace v mapování **Zákazníci V3 - Účty**, **Prodejní objednávky** nebo jakékoliv mapě s více než 10 vyhledávacími poli:
+
+*CRMExport: Spuštění balíčku dokončeno. Chyba Popis 5 Pokusy o získání dat z https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=numbern account, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
+
+Z důvodu omezení vyhledávání v dotazu se počáteční synchronizace nezdaří, pokud mapování entit obsahuje více než 10 vyhledávání. Další informace viz [Načíst související záznamy tabulky pomocí dotazu](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Chcete-li opravit problém, postupujte následovně:
+
+1. Odeberte volitelná vyhledávací pole z mapy entit se dvěma zápisy, aby byl počet vyhledávání 10 nebo méně.
+2. Uložte mapu a proveďte počáteční synchronizaci.
+3. Když je počáteční synchronizace pro první krok úspěšná, přidejte zbývající vyhledávací pole a odeberte vyhledávací pole, která jste synchronizovali v prvním kroku. Ujistěte se, že počet vyhledávacích polí je 10 nebo méně. Uložte mapu a spusťte počáteční synchronizaci.
+4. Opakujte tyto kroky, dokud nebudou synchronizována všechna vyhledávací pole.
+5. Přidejte všechna vyhledávací pole zpět na mapu, mapu uložte a spusťte pomocí **Přeskočit počáteční synchronizaci**.
+
+Tento proces povoluje mapu pro režim živé synchronizace.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Známý problém při počáteční synchronizaci poštovních adres a elektronických elektronických adres
+
+Při pokusu o spuštění počáteční synchronizace poštovních adres strany a elektronických elektronických adres strany se může zobrazit následující chybová zpráva:
+
+*Číslo strany nebylo nalezeno v Dataverse.*
+
+Je nastaven rozsah **DirPartyCDSEntity** ve finanční a provozní aplikaci, který filtruje strany typu **Osoba** a **Organizace**. V důsledku toho počáteční synchronizace mapování **Strany CDS - msdyn_parties** nesynchronizuje strany jiných typů, včetně **Právnická osoba** a **Provozní jednotka**. Když se spustí počáteční synchronizace pro **Poštovní adresy stran CDS (msdyn_partypostaladdresses)** nebo **Kontakty stran V3 (msdyn_partyelectronicaddresses)**, může se zobrazit chyba.
+
+Pracujeme na opravě, která by odstranila rozsah typů stran na entitě Finance a Operace, aby se strany všech typů mohly synchronizovat na Dataverse úspěšně.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Existují nějaké problémy s výkonem při spuštění počáteční synchronizace pro data zákazníků nebo kontaktů?
+
+Pokud jste spustili počáteční synchronizaci pro data **Odběratel** a máte mapy **Odběratel** spuštěné poté se spustí počáteční synchronizace pro data **Kontakty**, mohou nastat problémy s výkonem při vkládání a aktualizacích tabulek **LogisticsPostalAddress** a **LogisticsElectronicAddress** pro adresy **Kontaktů**. Jsou sledovány stejné globální poštovní adresy a tabulky elektronických adres pro **CustCustomerV3Entity** a **VendVendorV2Entity** a duální zápis se pokouší vytvořit více dotazů pro zápis dat na druhou stranu. Pokud jste již spustili počáteční synchronizaci pro **Odběratele**, zastavte odpovídající mapu při spuštění počáteční synchronizace pro data **Kontakty**. Udělejte to samé pro data **Dodavatelů**. Po dokončení počáteční synchronizace můžete spustit všechny mapy přeskočením počáteční synchronizace.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

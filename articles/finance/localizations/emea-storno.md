@@ -15,12 +15,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 85f9a99383aca88306a29f15ba139076c9c3c81e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968319"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236207"
 ---
 # <a name="storno-accounting"></a>Záporné storno
 
@@ -169,3 +169,6 @@ Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole. Nap
 ## <a name="how-documents-create-storno"></a>Jak dokumenty vytvářejí storno
 Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Další informace naleznete v tématu [přecenění cizí měny v hlavní knize](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [přecenění cizí měny pro závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,27 @@
 ---
 title: Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
 description: Tento článek popisuje, jak vyloučit odlehlé hodnoty z historických dat, která se používají k výpočtu prognózy poptávky. Vyloučením odlehlých hodnot můžete zlepšit přesnost prognózy.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72621
 ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dec963ed5abd6f77e82029a3ea5ba1a69d44e36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc0826d3a0dd8ded19590867e9a8138bb772c89a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423684"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568632"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
 
@@ -42,8 +39,7 @@ Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot. Tato úloh
 
 **Poznámka:** Můžete také vytvořit dotaz, který vychází z existujícího dotazu. Vyberte dotaz, který se má kopírovat, a klikněte na možnost **Duplikovat**. Pole **Datum dotazu** určuje verzi. Můžete vybrat dotaz, jak je, nebo můžete kliknout na možnost **Upravit dotaz**, chcete-li změnit kritéria. Volitelně můžete upravit název a popis nového dotazu.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled prognózy poptávky](introduction-demand-forecasting.md)
 
@@ -51,3 +47,6 @@ Přesnost prognózy můžete zlepšit vyloučením odlehlých hodnot. Tato úloh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

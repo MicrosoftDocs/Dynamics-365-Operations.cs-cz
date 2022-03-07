@@ -2,16 +2,13 @@
 title: Redukční klíče prognózy
 description: Toto téma obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736616"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
@@ -199,7 +196,7 @@ Proto jsou v takovém případě vytvořeny následující plánované objednáv
 Redukční klíč prognózy se používá v metodách **Transakce – redukční klíč** a **Procento – redukční klíč** pro snížení požadavků prognózy. Chcete-li vytvořit a nastavit redukční klíč, postupujte podle těchto kroků.
 
 1. Přejděte na **Hlavní plánování \> Nastavení \> Disponibilita \> Redukční klíče**.
-2. Vyberte **Nový** nebo stiskněte klávesy **Ctrl + N** k vytvoření redukčního klíče.
+2. Zvolte **Nový** pro vytvoření redukčního klíče.
 3. V poli **Redukční klíč** zadejte jednoznačný identifikátor pro redukční klíč prognózy. Do pole **Název** zadejte název. 
 4. V každém období definujte období a procento redukčního klíče:
 
@@ -227,3 +224,6 @@ Když vyberete **Transakce – redukční klíč** nebo **Transakce – dynamick
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

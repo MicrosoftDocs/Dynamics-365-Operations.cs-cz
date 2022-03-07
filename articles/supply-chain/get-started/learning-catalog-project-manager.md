@@ -10,15 +10,16 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5585ad96ec689b55c00e123fc465684436028823
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 73662929f116ce6128c57a71037298f208c3c16b
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963603"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516662"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Katalog školení pro vedoucí projektu implementace pracující s Dynamics 365 Supply Chain Management
 

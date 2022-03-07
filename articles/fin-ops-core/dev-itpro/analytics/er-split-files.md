@@ -2,11 +2,9 @@
 title: Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
 description: Toto téma obsahuje informace o rozdělení generovaných souborů na základě velikost souboru a množství položek obsahu.
 author: NickSelin
-manager: AnnBe
-ms.date: 05/25/2018
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d60266aba42f502e7707bdace921cfee4526b6ae
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3735bcb06eff966fc364a891b38d44e34e845e35f59314822d13eba40d51d5f4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769965"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
 
@@ -40,10 +38,13 @@ Pokud jste nakonfigurovali cíle souboru pro prvek formátu FILE, který byl kon
 
 Další informace o této funkci zobrazíte přehráním Průvodce záznamem úloh **ER rozdělení souborů xml na základě velikosti souboru nebo množství položek obsahu**, která je součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)** a dá se stáhnout ze [služby Stažení softwaru Microsoft](https://go.microsoft.com/fwlink/?linkid=874684). Tento průvodce záznamem úloh vás provede procesem konfigurace formátu ER pro rozdělení generovaných souborů na základě limitů velikosti souboru a množství položek obsahu. Pro dokončení průvodce záznamem úloh si musíte stáhnout následující soubory:
 
-- [Konfigurace modelu ER - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-- [Konfigurace formátu ER – XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [Konfigurace modelu ER - XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
+- [Konfigurace formátu ER – XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
 
 ## <a name="additional-resources"></a>Další zdroje
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

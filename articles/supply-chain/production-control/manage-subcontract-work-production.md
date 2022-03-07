@@ -2,16 +2,13 @@
 title: Správa subdodavatelské práce při výrobě
 description: Toto téma vysvětluje, jak se spravují subdodavatelské operace v Dynamics 365 Supply Chain Management. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9119655384cd05e5aa3622712e699b346a43f492
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 11728694565b10bf0336671f6c1b5f43cbcadf78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424037"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825812"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
@@ -103,3 +100,6 @@ Obvykle jsou výstupní sklad a umístění subdodavatelské skupiny prostředk�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

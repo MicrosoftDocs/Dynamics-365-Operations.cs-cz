@@ -1,10 +1,12 @@
 ---
-title: Import dokladů pomocí entity hlavního deníku
+title: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
 description: Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
 author: rcarlson
+manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065063"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687636"
 ---
-# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Import dokladů pomocí entity hlavního deníku
+# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma obsahuje tipy pro import dat do finančního deníku pomocí entity obecného deníku.
 
@@ -66,6 +65,3 @@ V následujících oddílech je popsán dopad tohoto nastavení. Vysvětlují ta
 - Pokud je pole **Číslo dokladu** nastaveno na **Automaticky generované**, import se nezdaří. Nastavení **Automaticky generované** pro pole **Číslo dokladu** není podporováno.
 
 Ve výchozím nastavení používají entity obecného deníku zpracování založené na sadě. Po vyhodnocení obchodních požadavků vaší organizace můžete změnit nastavení **Zpracování založené na sadě** klepnutím na **Datové entity** v pracovním prostoru **Správa dat**. Zpracování založené na sadě se používá k urychlení procesu importu. Pokud nechcete zpracování založené na sadě použít, import entity obecného deníku bude pomalejší.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

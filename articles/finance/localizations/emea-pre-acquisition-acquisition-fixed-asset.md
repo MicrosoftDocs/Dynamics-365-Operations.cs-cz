@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26eaf0b1cfb504e241f2f171fb79cbe6aed794c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84402948b6cd9575ec5c3d2851c37711c652a5b3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407623"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236279"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Účtování předpořízení dlouhodobého majetku
 
@@ -49,6 +48,9 @@ Předtím, než budete moci zaúčtovat předpořízení, je třeba dokončit to
 9.  Kliknutím na tlačítko **OK** zavřete stránku **Návrh předpořízení**.
 10. Kliknutím na **Zaúčtovat** &gt; **Zaúčtovat** zaúčtujte transakci předpořízení. Stav dlouhodobého majetku na stránce **Knihy** by teď měl být **Pořízené**.
 
+  > [!NOTE]
+  > V parametrech návrhu akvizice / úpravy akvizice můžete nastavit datum v poli **Do data** až do data, kdy jsou vybrány transakce před akvizicí.
+  > Tato funkce je k dispozici ve verzi 10.0.17 nebo novější.
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

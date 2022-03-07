@@ -2,28 +2,25 @@
 title: Lineární odpisování
 description: Tento článek poskytuje přehled o metodě odpisování Lineární.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b7b9b240156263b4dc1bc308a7f4457380a27f3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 610e8c58975a02cf6a4b3c4f79639d94ae8c3d9b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441189"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193823"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineární odpisování
 
@@ -68,9 +65,9 @@ Vyberete-li Fiskální, v poli Frekvence období jsou k dispozici následující
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Příklad: Lineární odpis nezměněného dlouhodobého majetku
 Předpokládejme, že má dlouhodobý majetek následující charakteristiky.
 
-|                     |        |
+| Charakteristika      | Hodnota  |
 |---------------------|--------|
-| Pořizovací náklady    | 11 000 |
+| Pořizovací náklady    | 11,000 |
 | Zůstatková hodnota       | 1 000  |
 | Odpisová základna   | 10 000 |
 | Roky životnosti  | 5      |
@@ -108,3 +105,6 @@ Doba životnosti opravy pořizovací ceny je stejná jako u dlouhodobého majetk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

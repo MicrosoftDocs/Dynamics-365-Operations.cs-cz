@@ -2,26 +2,23 @@
 title: Nastavení účetních profilů dlouhodobého majetku
 description: Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f02aa936b7d485dd8c76225b5c4de02a238f9352
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441220"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813548"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Nastavení účetních profilů dlouhodobého majetku
 
@@ -123,3 +120,6 @@ Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Vyu
 88. Zadejte požadované hodnoty do pole **Hlavní účet**.
 89. Zadejte požadované hodnoty do pole **Protiúčet**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

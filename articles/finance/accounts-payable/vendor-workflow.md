@@ -2,26 +2,23 @@
 title: Workflow dodavatele
 description: Upravte informace o dodavateli a použijte k jejich schválení workflow.
 author: mikefalkner
-manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: e5aef18a7f541c6a0d4abf9d4461d1dd9cd27880
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441383"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810263"
 ---
 # <a name="vendor-workflow"></a>Workflow dodavatele
 
@@ -61,3 +58,6 @@ Až budete mít alespoň jednu navrženou změnu, zobrazí se další dvě karty
     Stav na stránce se změní na **Změny čekající na schválení**.
 
 Workflow postupuje podle standardního procesu workflow. Schvalovatel je přesměrován na stránku **Dodavatel**, kde může zkontrolovat změny na stránce **Navrhované změny** a poté zvolit **Workflow \> Schválit** pro schválení pracovního postupu. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

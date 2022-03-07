@@ -1,30 +1,29 @@
 ---
 title: Přehled doručení
 description: Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423887"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567432"
 ---
 # <a name="arrival-overview"></a>Přehled doručení
 
@@ -37,7 +36,7 @@ Stránka **Přehled doručení** uvádí přehled všech očekávaných přícho
 ## <a name="business-scenario"></a>Obchodní scénář
 Předpokládejme následující scénář v příchozích procesech.
 
-[![Obchodní scénář](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Obchodní scénář.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Marek, přijímající pracovník, chce vědět, co má být přijato na aktuální den. Na stránce **Přehled doručení** může Marek získat přehled aktuálních úkolů a hrubý odhad množství, objemu, hmotnosti, různých typů objednávek atd. Později je dodávka doručena do jednoho vstupního překladiště a Marek přijme přehled její přehled. Na stránce **Přehled doručení** může Marek provádět následující úlohy:
 
@@ -69,7 +68,7 @@ Pro automatické vytváření deníků doručení ze stránky **Přehled doruče
 
 -   Při vytváření nového deníku je nutné zadat název deníku.
 
-[![Zadání názvu deníku](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![Zadání názvu deníku.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Pokud zadáte hodnoty do polí **Sklad** a **Umístění**, použijí se tyto hodnoty na řádcích deníku. Pokud hodnoty nezadáte, systém použije hodnoty z dimenze, která je určena ve skladových transakcích.
 
@@ -121,3 +120,6 @@ Po zaregistrování veškerého zboží může vedoucí skladu nebo vedoucí ná
 
 ## <a name="summary"></a>Souhrn
 Stránka **Přehled doručení** může pomoci vedoucímu skladu a pracovníkům skladu dosáhnout přehledu očekávaných prací, které je třeba provést jako součást příchozího procesu. Na této stránce můžete také spustit proces doručení položky k zajištění, že položky budou sledovány v první položce skladu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,16 +1,13 @@
 ---
-title: Konfigurovat integraci se službou Common Data Service
-description: Integraci mezi Common Data Service a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
+title: Konfigurovat integraci se službou Dataverse
+description: Integraci mezi Microsoft Dataverse a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat tabulku.
 author: andreabichsel
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,35 +15,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527910"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052450"
 ---
-# <a name="configure-common-data-service-integration"></a>Konfigurovat integraci se službou Common Data Service
+# <a name="configure-dataverse-integration"></a>Konfigurovat integraci se službou Dataverse
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integraci mezi Common Data Service a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat entitu.
+Integraci mezi Microsoft Dataverse a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat tabulku.
 
-Když vypnete integraci, uživatelé mohou provádět změny v Human Resources nebo Common Data Service, ale tyto změny se mezi oběma prostředími nesynchronizují.
+> [!NOTE]
+> Pro více informací o Dataverse (dříve Common Data Service) a aktualizacích terminologie, viz [Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
-Ve výchozím nastavení je integrace dat mezi Human Resources a Common Data Service vypnuta.
+Když vypnete integraci, uživatelé mohou provádět změny v Human Resources nebo Dataverse, ale tyto změny se mezi oběma prostředími nesynchronizují.
+
+Ve výchozím nastavení je integrace dat mezi Human Resources a Dataverse vypnuta.
 
 V těchto situacích je vhodné vypnout integraci:
 
 - Vyplňujete data prostřednictvím Data Management Framework a je nutné je importovat vícekrát, aby je bylo možné dostat do správného stavu.
 
-- Existují problémy s daty v modulu Human Resources nebo Common Data Service. Pokud vypnete integraci, můžete odstranit záznam v jednom prostředí, aniž byste ho odstranili v jiném. Pokud opět zapnete integraci, bude záznam v prostředí, kde nebyl odstraněn, synchronizován zpět do prostředí, ve kterém byl odstraněn. Synchronizace začíná při příštím spuštění dávkové úlohy **Integrace Common Data Service zmeškala synchronizaci požadavku**.
+- Existují problémy s daty v modulu Human Resources nebo Dataverse. Pokud vypnete integraci, můžete odstranit záznam v jednom prostředí, aniž byste ho odstranili v jiném. Pokud opět zapnete integraci, bude záznam v prostředí, kde nebyl odstraněn, synchronizován zpět do prostředí, ve kterém byl odstraněn. Synchronizace začíná při příštím spuštění dávkové úlohy **Integrace Dataverse zmeškala synchronizaci požadavku**.
 
 > [!WARNING]
 > Když vypnete integraci dat, ujistěte se, že neupravujete stejný záznam v obou prostředích. Pokud zapnete integraci znovu, bude naposledy upravený záznam synchronizován. Pokud tedy neprovedete stejné změny v záznamu v obou prostředích, může dojít ke ztrátě dat.
 
-## <a name="access-the-common-data-service-integration-page"></a>Přístup na stránku integrace Common Data Service
+## <a name="access-the-dataverse-integration-page"></a>Přístup na stránku integrace Dataverse
 
-1. V instanci Human Resources, v níž chcete zobrazit nebo konfigurovat nastavení pro integraci s Common Data Service, vyberte dlaždici **Správa systému**.
+1. V instanci Human Resources, v níž chcete zobrazit nebo konfigurovat nastavení pro integraci s Dataverse, vyberte dlaždici **Správa systému**.
 
     [![Dlaždice správy systému](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
@@ -54,67 +54,77 @@ V těchto situacích je vhodné vypnout integraci:
 
     [![Karta Odkazy](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. V části **Integrace** vyberte **Konfigurace Common Data Service**.
+3. V části **Integrace** vyberte **Konfigurace Dataverse**.
 
-    [![Odkaz na konfiguraci Common Data Service](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
+    [![Odkaz na konfiguraci Dataverse](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
-## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Zapnutí a vypnutí integrace dat mezi Human Resources a Common Data Service
+## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Zapnutí a vypnutí integrace dat mezi Human Resources a Dataverse
 
-- Chcete-li zapnout integraci, nastavte možnost **Povolit integraci do Common Data Service** na **Ano**.
+- Chcete-li zapnout integraci, nastavte možnost **Povolit integraci Dataverse** na stránce **Integrace doMicrosoft Dataverse** na **Ano**.
 
     > [!NOTE]
-    > Při zapnutí integrace budou data synchronizována při příštím spuštění dávkové úlohy **Integrace Common Data Service zmeškala synchronizaci požadavku**. Všechna data by měla být k dispozici po dokončení dávkové úlohy.
+    > Při zapnutí integrace budou data synchronizována při příštím spuštění dávkové úlohy **Integrace Dataverse zmeškala synchronizaci požadavku**. Všechna data by měla být k dispozici po dokončení dávkové úlohy.
 
 - Chcete-li vypnout integraci, nastavte možnost na **Ne**.
 
-[![Zapnutí a vypnutí integrace Common Data Service](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+[![Zapnutí a vypnutí integrace Dataverse](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> Důrazně doporučujeme vypnout integraci Common Data Service při provádění úkolů migrace dat. Odesílání velkého objemu dat může výrazně ovlivnit výkon. Například nahrávání 2000 pracovníků může trvat několik hodin, když je integrace povolena, a méně než jednu hodinu, pokud je zakázána. Čísla uvedená v tomto příkladu slouží pouze k demonstračním účelům. Přesné množství času potřebného k importu záznamů se může značně lišit v závislosti na mnoha faktorech.
+> Důrazně doporučujeme vypnout integraci Dataverse při provádění úkolů migrace dat. Odesílání velkého objemu dat může výrazně ovlivnit výkon. Například nahrávání 2000 pracovníků může trvat několik hodin, když je integrace povolena, a méně než jednu hodinu, pokud je zakázána. Čísla uvedená v tomto příkladu slouží pouze k demonstračním účelům. Přesné množství času potřebného k importu záznamů se může značně lišit v závislosti na mnoha faktorech.
 
 ## <a name="view-data-integration-details"></a>Zobrazení podrobností integrace dat
 
-Na záložce s náhledem **Správa** na stránce **Integrace Common Data Service** můžete zobrazit, jak budou záznamy vzájemně propojeny mezi Human Resources a Common Data Service.
+Na záložce s náhledem **Správa** na stránce **Integrace Microsoft Dataverse** můžete zobrazit, jak budou řádky vzájemně propojeny mezi Human Resources a Dataverse.
 
-- Chcete-li zobrazit záznamy pro entitu, vyberte entitu v poli **Název entity CDS**. V mřížce jsou uvedeny všechny záznamy, které jsou propojeny s vybranou entitou.
-
-[![Zobrazení záznamů entity](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
+- Chcete-li zobrazit řádky tabulky, vyberte tabulku v poli **Tabulky Dataverse**. V mřížce jsou uvedeny všechny řádky, které jsou propojeny s vybranou tabulkou.
 
 > [!NOTE]
-> V tuto chvíli nejsou uvedeny všechny entity Common Data Service. V mřížce se zobrazí pouze entity, které podporují použití vlastních polí. Nové entity jsou k dispozici prostřednictvím kontinuálního vydávání aplikace Human Resources.
+> V tuto chvíli nejsou uvedeny všechny tabulky Dataverse. V mřížce se zobrazí pouze tabulky, které podporují použití vlastních polí. Nové tabulky jsou k dispozici prostřednictvím kontinuálního vydávání aplikace Human Resources.
 
 Mřížka obsahuje následující pole:
 
-- **Název entity CDS** - název entity v Common Data Service.
-- **Odkaz entity CDS**- identifikátor používající Common Data Service k identifikaci záznamu. Tato hodnota je ekvivalentní hodnotě **RecId** Human Resources. Identifikátor lze najít při otevření entity Common Data Service v aplikaci Microsoft Excel.
-- **Název entity Human Resources** – entita, která naposledy synchronizovala data do Common Data Service. Entita může mít buď předponu Common Data Service, nebo jinou předponu.
+- **Tabulka Dataverse** - Název tabulky v Dataverse.
+- **Odkaz na Dataverse tabulku**- identifikátor používající Dataverse k identifikaci záznamu. Tato hodnota je ekvivalentní hodnotě **RecId** Human Resources. Identifikátor lze najít při otevření tabulky Dataverse v aplikaci Microsoft Excel.
+- **Název entity Human Resources** – entita Human Resources, která naposledy synchronizovala data do Dataverse. Entita může mít buď předponu Dataverse, nebo jinou předponu.
 - **Odkaz na Human Resources** - hodnota **RecId**, která je přidružená k záznamu v Human Resources.
-- **Byla odstraněna z CDS** – hodnota, která určuje, zda byl záznam odstraněn z Common Data Service.
+- **Odstraněna z Dataverse** - hodnota, která určuje, zda byl řádek odstraněn z Dataverse.
 
-## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>Odebrání přidružení záznamu v Human Resources z Common Data Service
+> [!NOTE]
+> Záznamy v Human Resources odpovídají řádkům v Dataverse.
 
-Pokud se setkáte s problémy při synchronizaci dat mezi Human Resources a Common Data Service, můžete je vyřešit vymazáním sledování a opakovanou synchronizací sledovací tabulky. Pokud přidružení odeberete a poté změníte nebo odstraníte záznam v Common Data Service, nebudou provedené změny synchronizovány do Human Resources. Pokud provedete změny v Human Resources, bude vytvořen nový záznam sledování a záznam bude aktualizován v Common Data Service.
+## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Odebrání přidružení záznamu v Human Resources z řádku Dataverse
 
-- Chcete-li odebrat přidružení záznamu mezi Human Resources. a Common Data Service, vyberte entitu v poli **Název entity CDS** a poté vyberte možnost **Vymazat informace o sledování**.
+Pokud se setkáte s problémy při synchronizaci dat mezi Human Resources a Dataverse, můžete je vyřešit vymazáním sledování a opakovanou synchronizací sledovací tabulky. Pokud přidružení odeberete a poté změníte nebo odstraníte řádek v Dataverse, nebudou provedené změny synchronizovány do Human Resources. Pokud provedete změny v Human Resources, bude vytvořen nový záznam sledování a řádek bude aktualizován v Dataverse.
 
-[![Vymazat informace o sledování](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
+- Chcete-li odebrat přidružení záznamu mezi záznamem a řádkem Dataverse v Human Resources, vyberte **Tabulka Dataverse** a poté vyberte možnost **Vymazat informace o sledování**.
 
-Chcete-li spustit úplnou synchronizaci entity po vymazání sledování, postupujte podle následujícího postupu.
+[![Vymazat informace o sledování](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
-## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synchronizace entity mezi Human Resources a Common Data Service
+Chcete-li spustit úplnou synchronizaci tabulky po vymazání sledování, postupujte podle následujícího postupu.
+
+## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Synchronizace tabulky mezi Human Resources a Dataverse
 
 Tento postup použijte v následujících případech:
 
-- Zobrazení změn Common Data Service v Human Resources trvá příliš dlouho.
+- Zobrazení změn Dataverse v Human Resources trvá příliš dlouho.
 
 - Chcete-li sledování vymazat, je nutné aktualizovat sledovací tabulku.
 
-Chcete-li spustit úplnou synchronizaci entity mezi Human Resources a Common Data Service:
+Chcete-li spustit úplnou synchronizaci tabulky mezi Human Resources a Dataverse:
 
-1. V poli **Název entity CDS** vyberte entitu.
+1. Vyberte tabulku v poli **Tabulka Dataverse**.
 
 2. Vyberte **Synchronizovat nyní**.
 
-[![Spuštění úplné synchronizace](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
+[![Spuštění úplné synchronizace](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+
+## <a name="see-also"></a>Viz také
+
+[Tabulky Dataverse](hr-developer-entities.md)<br>
+[Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Virtuální tabulky lidských zdrojů - časté dotazy](hr-admin-virtual-entity-faq.md)<br>
+[Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Aktualizace terminologie](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,11 @@
 ---
 title: Finanční dimenze a hlavní účty v jazycích s psaním zprava doleva
-description: Toto téma popisuje některá implementační rozhodnutí, která byste měli zvážit, pokud používáte jazyk psaný zprava doleva a potřebujete nastavit finanční dimenze a hlavní účty.
+description: Toto téma popisuje rozhodnutí, která je třeba zvážit, pokud používáte jazyk psaný zprava doleva a potřebujete nastavit finanční dimenze a hlavní účty.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -16,12 +15,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 192ed371eec24ed4e0532aaca341bb249a4933c7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 496869bd3e7a372a5ec791df66fb7a8c43ccad13
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680475"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560993"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Finanční dimenze a hlavní účty v jazycích s psaním zprava doleva
 
@@ -38,3 +37,6 @@ Finanční dimenze a hlavní účty jsou klíčové součásti fázi plánován�
 - Nepoužívejte vybrané oddělovače účtové osnovy ve finanční dimenzi a hodnotách hlavního účtu.
 
 Podle těchto doporučených postupů můžete zajistit konzistentní reprezentaci uživatelem definované objednávky v celém systému.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

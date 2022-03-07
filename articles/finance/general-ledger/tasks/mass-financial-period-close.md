@@ -2,11 +2,9 @@
 title: Hromadné uzavření finančního období
 description: Toto téma ukazuje, jak pozdržet nebo trvale uzavřít období nebo více než jednu právnickou osobu současně.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7dac267d2d4ce0824bc47b63b8d07913a8dd7f02bcccc025880701cb4d0bdd3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751270"
 ---
 # <a name="mass-financial-period-close"></a>Hromadné uzavření finančního období
 
@@ -41,3 +39,6 @@ Toto téma ukazuje, jak pozdržet nebo trvale uzavřít období nebo více než 
 11. Vyberte **Stav aktualizace období** a nastavte stav na **Blokováno**, **Otevřeno** nebo **Trvale uzavřeno**. **Otevřeno** naznačuje, že období lze zaúčtovat, pokud má uživatel přístup. Hodnota **Blokováno** znamená, že období nelze zaúčtovat, ale můžete ho znovu otevřít. **Trvale uzavřeno** znamená, že je období uzavřeno a nikdy je nelze otevřít. Úpravy nelze zaúčtovat. Nedoporučujeme nastavit období na **Trvale uzavřeno**, dokud nejsou dokončeny všechny úpravy a audity.  
 12. Vyberte **Aktualizovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

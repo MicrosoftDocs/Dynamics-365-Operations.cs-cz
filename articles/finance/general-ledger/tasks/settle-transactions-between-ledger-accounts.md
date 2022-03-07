@@ -2,26 +2,23 @@
 title: Vyrovnání transakcí mezi účty hlavní knihy
 description: Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak zrušit vyrovnání hlavní knihy.
 author: aprilolson
-manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb53e9fee35712343f034389f00f3d4539cc652d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 711e2f445e043dc74cba0ee11f1ab2dc22215ff30f495e06dce1f6f3ab4a0a09
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723792"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Vyrovnání transakcí mezi účty hlavní knihy
 
@@ -49,3 +46,6 @@ Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak z
 7. Klepněte na Vyrovnání hlavní knihy.
 8. Označte v seznamu vybraný řádek.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

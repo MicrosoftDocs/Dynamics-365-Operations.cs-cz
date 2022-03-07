@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441277"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120472"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Přehled konsolidace a eliminace
 
@@ -60,6 +59,7 @@ Možnost **Finanční vykazování** nabízí neomezený počet měn vykazován�
 Řešením je možnost **Finanční vykazování**, protože podrobnosti do úrovně transakcí lze zobrazit pro tolik společností, kolik je zahrnuto do definice stromu výkaznictví.
 
 4.  Používáme plánování rozpočtu nebo kontrolu rozpočtu a je nutné je konsolidovat.
+
 Možnost **Finanční vykazování** je řešení pro konsolidaci veškerého plánování rozpočtu nebo dat kontroly rozpočtu.
 
 5.  Naše dceřiné společností jsou umístěny v celém světě a máme více účtových osnov. Která metoda je pro konsolidaci našich dat nejlepší?
@@ -86,6 +86,9 @@ Pro částečně vlastněné dceřiné společnosti máte několik možností. P
 
 Data můžete konsolidovat pomocí možnosti **Export zůstatků společnosti**, abyste exportovali z jedné instance a použili možnost **Konsolidovat s importem** na ostatních instancích.
 
+11. Mohu provést konsolidaci s rozpočtem ve stavu **KONCEPT**? 
+            
+V konsolidační společnosti nebudete moci zpracovávat ani vyplňovat rozpočty. Doporučujeme použít Financial Reporting ke konsolidaci konceptů rozpočtů.
 
 Další informace naleznete v tématu [Přecenění měny ve společnosti konsolidace](../general-ledger/currency-revaluation-consolidation-company.md).
 

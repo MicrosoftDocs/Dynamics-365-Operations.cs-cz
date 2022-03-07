@@ -1,27 +1,27 @@
 ---
 title: Přehled tisku dokumentu
 description: Dokumenty můžete tisknout buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Tento článek poskytuje přehled způsobu tisku dokumentů.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom: 69161
+ms.custom:
+- "69161"
+- intro-internal
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680089"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984901"
 ---
 # <a name="document-printing-overview"></a>Přehled tisku dokumentu
 
@@ -54,7 +54,7 @@ Protože se řešení liší, v závislosti na scénáři poskytují aplikace ve
 - **Scénář 2** používá aplikace klienta a služeb Microsoft 365.
 - **Scénář 3** vyžaduje podporu od aplikací klienta a služeb, které jsou hostovány v Microsoft Azure.
 
-Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance and Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
+Kromě platformy, která je nasazena do předplatného Azure, aplikace Finance a Operations poskytuje zákazníkům integrovanou aplikaci Azure první strany, která jim pomáhá snadněji využívat zařízení hostovaná na doméně pro tisk dokumentů.
 
 ## <a name="service-overview"></a>Přehled služby
 Zatímco dokumenty vytvořené hostovanými aplikacemi čekají na tisk na zařízení připojeném k síti, jsou uloženy v úložišti objektu blob Azure. [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](install-document-routing-agent.md) používá ověřování Azure k vytvoření zabezpečeného kanálu do služeb Azure.
@@ -71,6 +71,9 @@ Zatímco dokumenty vytvořené hostovanými aplikacemi čekají na tisk na zař�
 
 Následující diagram znázorňuje základní komponenty, které pomáhají s podporou operací síťového tisku.
 
-[![servisní-komponenty-pro-síťový-tisk\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![servisní-komponenty-pro-síťový-tisk\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Všimněte si, že jednu tiskárnu lze registrovat s více agenty pro směrování dokumentů. Chcete-li vyřešit předvolby tiskárny, hostovaná služba používá síťovou cestu, která jednoznačně identifikuje každou síťovou tiskárnu. Výsledkem je, že i když je tiskárna registrována více klienty, zobrazí se jako jedna volba v seznamu tiskáren dostupných v aplikacích.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

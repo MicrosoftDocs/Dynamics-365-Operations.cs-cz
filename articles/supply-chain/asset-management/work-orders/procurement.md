@@ -1,12 +1,10 @@
 ---
 title: Zásobování
 description: Tohle téma popisuje zásobování v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020197"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352755"
 ---
 # <a name="procurement"></a>Zásobování
 
@@ -38,7 +36,7 @@ Na stránce se seznamem **Nákupní žádanky na pracovním příkazu** (**Sprá
 
 Na následujícím obrázku je uveden příklad stránky se seznamem **Nákupní žádanka pracovního příkazu**.
 
-![Obrázek č. 1](media/08-work-orders.png)
+![Obrázek č. 1.](media/08-work-orders.png)
 
 
 Na stránce se seznamem **Nákupní v pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní v pracovním příkazu**) se zobrazuje seznam nákupních objednávek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní objednávka pracovního příkazu** k provádění různých akcí:
@@ -49,7 +47,7 @@ Na stránce se seznamem **Nákupní v pracovním příkazu** (**Správa majetku*
 
 Na následujícím obrázku je uveden příklad stránky se seznamem **Nákup pracovního příkazu**.
 
-![Obrázek č. 2](media/09-work-orders.png)
+![Obrázek č. 2.](media/09-work-orders.png)
 
 
 Na stránce se seznamem **Nákup pracovního příkazu** a na stránce se seznamem **Nákupní žádanka pracovního příkazu** se zobrazí symbol související s ovládacím prvkem data doručení, a to na pravé straně každého řádku. Pokud má ikona podobu vykřičníku v červeném kruhu, znamená to, že dodávka v související nákupní žádance nebo nákupní objednávce může být zpožděna.
@@ -95,7 +93,10 @@ Chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupn�
 
 Následující obrázek ukazuje příklad stránky **Nákupní objednávka** se zaměřením na **číslo aktivity**.
 
-![Obrázek č. 3](media/10-work-orders.png)
+![Obrázek č. 3.](media/10-work-orders.png)
 
 Podobně platí, že chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupní žádanky pracovního příkazu, na stránce se seznamem **Nákup pracovního příkazu** vyberte záznam nákupní objednávky a pak ve sloupci **Nákupní žádanka** vyberte odkaz na nákupní žádanku. Pole **Číslo aktivity** najdete na kartě **Projekt** pevné záložky **Podrobnosti řádku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

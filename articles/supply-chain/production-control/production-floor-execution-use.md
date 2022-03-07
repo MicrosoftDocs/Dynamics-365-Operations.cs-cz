@@ -2,30 +2,27 @@
 title: Jak pracovníci používají rozhraní pro provádění výrobního provozu
 description: Tohle téma popisuje, jak používat rozhraní pro provádění výrobního provozu z pohledu pracovníka.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecution
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4424123"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569330"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rozhraní pro provádění výrobního provozu je optimalizováno pro dotykovou interakci. Jeho provedení poskytuje vizuální kontrast, který splňuje požadavky na přístupnost pro prostředí dílny. Nabízí všechny funkce jako zařízení úkolového lístku. Umožňuje však také paralelní spuštění více úloh ze seznamu úloh. (Tato funkce je také známá jako *sdružování úloh*.) Navíc ze seznamu úloh mohou pracovníci otevřít průvodce, který byl vytvořen v Microsoft Dynamics 365 Guide. Tímto způsobem mohou získat vizuální pokyny na HoloLens.
 
@@ -35,17 +32,17 @@ Než mohou pracovníci začít zařízení používat, musí jej připravit supe
 
 Po přípravě zařízení se na něm zobrazí přihlašovací stránka. Tato stránka zobrazuje informace o stavu úloh pro místní pracovní buňku. Tyto informace jsou pravidelně aktualizovány. Na tuto stránku se pracovníci přihlásí pomocí ID znaku. Ačkoli pracovníci nemusí mít uživatelský účet pro Supply Chain Management, musí mít účet *časově registrovaný pracovník*, který mohou použít při přihlášení.
 
-![Přihlašovací stránka k rozhraní pro provádění výrobního provozu](media/pfei-sign-in-page.png "Přihlašovací stránka k rozhraní pro provádění výrobního provozu")
+![Přihlašovací stránka k rozhraní pro provádění výrobního provozu.](media/pfei-sign-in-page.png "Přihlašovací stránka k rozhraní pro provádění výrobního provozu")
 
 Zbývající části tohoto tématu popisují, jak pracovníci pracují s rozhraním.
 
 ## <a name="all-jobs-tab"></a>Karta Všechny úlohy
 
-Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*.
+Karta **Všechny úlohy** obsahuje seznam úloh se všemi výrobními úlohy, které mají stav *Nezahájeno*, *Zastaveno* nebo *Zahájeno*. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
 
-![Karta Všechny úlohy](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
+![Karta Všechny úlohy.](media/pfei-all-jobs-tab.png "Karta Všechny úlohy")
 
-Seznam úloh má následující sloupce. (Čísla odpovídají číslům na předchozím obrázku.)
+Seznam úloh má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
 
 1. **Sloupec výběru** – Sloupec zcela vlevo používá zatržítko k označení úloh, které vybral pracovník. Pracovníci mohou v seznamu vybrat více úloh najednou. Chcete-li vybrat všechny úlohy v seznamu, zaškrtněte políčko v záhlaví sloupce. Když je vybrána jedna úloha, podrobnosti o této úloze se zobrazí ve spodní části stránky.
 1. **Sloupec Stav úlohy** – Tento sloupec používá symboly k označení stavu každé úlohy. Úlohy, které nemají v tomto sloupci žádný symbol, mají stav *Nezahájeno*. Zelený trojúhelník označuje úlohy, které mají stav *Zahájeno*. Dvě žluté svislé čáry označují úlohy, které mají stav *Zastaveno*.
@@ -60,9 +57,11 @@ Seznam úloh má následující sloupce. (Čísla odpovídají číslům na pře
 
 ## <a name="active-jobs-tab"></a>Karta Aktivní úlohy
 
-![Karta Aktivní úlohy](media/pfei-active-jobs-tab.png "Karta Aktivní úlohy")
+Karty **Aktivní úlohy** zobrazují seznam všech úloh, které již přihlášený pracovník zahájil. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
 
-Seznam úloh na kartě **Aktivní úlohy** má následující sloupce:
+![Karta Aktivní úlohy.](media/pfei-active-jobs-tab.png "Karta Aktivní úlohy")
+
+Seznam aktivních úloh má následující sloupce:
 
 - **Sloupec výběru** – Sloupec zcela vlevo používá zatržítko k označení úloh, které vybral pracovník. Pracovníci mohou v seznamu vybrat více úloh najednou. Chcete-li vybrat všechny úlohy v seznamu, zaškrtněte políčko v záhlaví sloupce. Když je vybrána jedna úloha, podrobnosti o této úloze se zobrazí ve spodní části stránky.
 - **Objednávka** – Tento sloupec zobrazuje číslo výrobní zakázky pro úlohu.
@@ -73,11 +72,33 @@ Seznam úloh na kartě **Aktivní úlohy** má následující sloupce:
 - **Zlikvidováno** – Tento sloupec zobrazuje množství, které již bylo pro úlohu zlikvidováno.
 - **Zbývající** – Tento sloupec zobrazuje množství, které zbývá do dokončení úlohy.
 
+## <a name="my-machine-tab"></a>Karta Můj stroj
+
+Karta **Můj stroj** pracovníkům umožňuje vybrat majetek, který je připojen ke zdroji stroje v sadě filtrů na kartě **Všechny úlohy**. Pracovník pak může zobrazit stav vybraného majetku čtením hodnot až čtyř vybraných čítačů a seznamů posledních požadavků na údržbu a registrovaných prostojů. Pracovník může také požádat o údržbu vybraného majetku a zaregistrovat a upravit prostoje stroje. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
+ 
+![Karta Můj stroj.](media/pfei-my-machine-tab.png "Karta Můj stroj")
+
+Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
+
+1. **Majetek stroje** - Vyberte zařízení stroje, které chcete sledovat. Začněte psát název a vyberte jej ze seznamu odpovídajícího majetku, nebo vyberte ikonu lupy a vyberte ze seznamu všech aktiv spojených se zdroji, které jsou ve filtru seznamu úloh.
+
+    > [!NOTE]
+    > Uživatelé Supply Chain Management mohou podle potřeby přiřadit zdroj ke každé stránce **Všechny majetky** (na kartě **Fixní majetek** pomocí rozevíracího seznamu **Zdroj**). Další informace naleznete v tématu [Vytvoření majetku](../asset-management/objects/create-an-object.md).
+
+1. **Nastavení** - Vyberte ikonu ozubeného kola a otevřete dialogové okno, kde si můžete vybrat, která počítadla se mají zobrazit pro vybraný majetek stroje. Hodnoty těchto čítačů jsou zobrazeny v horní části karty **Správa majetku**. Nabídka **Nastavení** (zobrazená na následujícím snímku obrazovky) umožňuje povolit až čtyři čítače. U každého počítadla, které chcete povolit, použijte vyhledávací pole v horní části dlaždice a vyberte počítadlo. Vyhledávací pole obsahuje seznam všech čítačů přidružených k aktivu vybranému v horní části stránky **Správa majetku** . Nastavte každé počítadlo tak, aby sledovalo hodnotu **Agregované** nebo nejnovější **Aktuální** hodnotu čítače. Například pokud nastavíte čítač, který sleduje, kolik hodin stroj běžel, měli byste jej nastavit na **Agregované**. Pokud nastavíte počitadlo pro měření nejnovější aktualizované teploty nebo tlaku, měli byste jej nastavit na **Aktuální**. Volbou **OK** uložte svá nastavení a zavřete dialogové okno.
+
+    ![Nastavení karty Můj stroj.](media/pfei-my-machine-tab-settings.png "Nastavení karty Můj stroj")
+
+1. **požadavek na údržbu** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete vytvořit požadavek na údržbu. Budete moci poskytnout popis a poznámku. Na požadavek bude upozorněn uživatel Supply Chain Management, který poté bude moci převést požadavek na údržbu na objednávku údržby.
+1. **Registrovat prostoje** - Výběrem tohoto tlačítka otevřete dialogové okno, kde můžete zaregistrovat prostoje stroje. Budete moci vybrat kód důvodu a zadat časové rozpětí data a času prostoje. Registrace výpadku stroje se používá pro výpočet efektivity majetku stroje.
+1. **Zobrazit nebo upravit** - Toto tlačítko vyberte, chcete-li otevřít dialogové okno, kde můžete upravit nebo zobrazit stávající záznamy o prostojích.
+
+
 ## <a name="starting-and-completing-production-jobs"></a>Zahájení a dokončení výrobních úloh
 
 Pracovníci zahájí výrobní úlohu výběrem úlohy na kartě **Všechny úlohy** a poté výběrem možnosti **Zahájit úlohu** otevřou dialogové okno **Zahájení úlohy**.
 
-![Dialogové okno Zahájení úlohy](media/pfei-start-job-dialog.png "Dialogové okno Zahájení úlohy")
+![Dialogové okno Zahájení úlohy.](media/pfei-start-job-dialog.png "Dialogové okno Zahájení úlohy")
 
 Pracovníci v dialogovém okně **Zahájení úlohy** potvrdí množství výroby a poté zahájí úlohu. Pracovníci mohou upravit množství výběrem pole **Množství** a poté pomocí zobrazené numerické klávesnice. Pracovníci pak volbou **Zahájit** začnou práci na úloze. Dialogové okno **Zahájení úlohy** se zavře a úloha se přidá na kartu **Aktivní úlohy**.
 
@@ -87,13 +108,13 @@ Pracovníci mohou zahájit úlohu v jakémkoli stavu. Když pracovník zahájí 
 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat množství zboží, které bylo vyprodukováno, výběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit průběh**. Pak v dialogovém okně **Hlášení průběhu** pracovník zadá množství zboží pomocí numerické klávesnice. Ve výchozím nastavení je množství prázdné. Po zadání množství může pracovník aktualizovat stav úlohy na *Probíhá*, *Zastaveno* nebo *Dokončeno*.
 
-![Dialogové okno Hlášení průběhu](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
+![Dialogové okno Hlášení průběhu.](media/pfei-report-progress-dialog.png "Dialogové okno Hlášení průběhu")
 
 ## <a name="reporting-scrap"></a>Hlášení odpadu
 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod (*Žádný*, *Stroj*, *Operátor* nebo *Materiál*).
 
-![Dialogové okno Hlášení odpadu](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
+![Dialogové okno Hlášení odpadu.](media/pfei-report-scrap-dialog.png "Dialogové okno Hlášení odpadu")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Dokončení a zahájení nové úlohy
 
@@ -115,7 +136,7 @@ Pracovník vybere třetí úlohu na kartě **Všechny úlohy** a poté vybere **
 
 ## <a name="working-on-indirect-activities"></a>Práce na nepřímých aktivitách
 
-Nepřímé aktivity přímo nesouvisejí s výrobní zakázkou. Nepřímé aktivity lze flexibilně definovat, jak je popsáno v části [Nastavení nepřímých aktivit pro čas a docházku](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Nepřímé aktivity přímo nesouvisejí s výrobní zakázkou. Nepřímé aktivity lze flexibilně definovat, jak je popsáno v části [Nastavení nepřímých aktivit pro čas a docházku](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Například Shannon, pracovnice ve společnosti Contoso, se chce zúčastnit schůzky společnosti a schůzky jsou považovány za nepřímou aktivitu. Platí jeden z následujících dvou scénářů:
 
@@ -124,7 +145,7 @@ Například Shannon, pracovnice ve společnosti Contoso, se chce zúčastnit sch
 
 V obou scénářích poté, co Shannon potvrdí svůj výběr, přejde na přihlašovací stránku nebo na stránku, která na ni počká, aby potvrdila, že se vrátila ze své nepřímé aktivity. Stránka, která se zobrazí, závisí na konfiguraci rozhraní pro provádění výrobního provozu. (Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Práce na přestávkách
+## <a name="registering-breaks"></a>Registrace přestávek
 
 Pracovníci mohou registrovat přestávky. Přestávky lze flexibilně definovat, jak je popsáno v části [Plat na základě registrace](pay-based-on-registrations.md).
 
@@ -146,3 +167,6 @@ Pracovníci mohou otevřít dokument připojený k úloze výběrem volby **Poky
 1. Pracovník se s pomocí průvodce naučí danou úlohu.
 
 Další informace, jak vytvořit, přiřadit a použít průvodce pro HoloLens viz [Poskytnutí průvodce hybridní reality pro pracovníky ve výrobě](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

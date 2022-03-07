@@ -2,27 +2,24 @@
 title: Vytvoření kanbanového pravidla události řádku kusovníku
 description: Tato úloha je zaměřena na nastavení potřebné k vytvoření kanbanového pravidla události s cílem zajistit zásobování pro řádky výrobního kusovníku v kombinovaném provozním prostředí štíhlé a klasické výroby.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 698b7af3bc8e2146aaf86fb5e04dd123ea6d5153
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27d415e146f33224bcbbfb73498040d584e07f10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423537"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829203"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Vytvoření kanbanového pravidla události řádku kusovníku
 
@@ -83,3 +80,6 @@ Tato úloha je zaměřena na nastavení potřebné k vytvoření kanbanového pr
     * Všimněte si kanbanu vytvořeného pro dodání zboží M0001 pro odhadovanou výrobní zakázku.  
     * Poslední krok!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

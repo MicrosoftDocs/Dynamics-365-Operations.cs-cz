@@ -1,31 +1,30 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 28. květnu 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 00a5881ea88749c8553e4c810fb57070f217b01c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 624201841b512b01daf94d13e3d9fe7c381f5c11b328d57e22fbd73e1066bf88
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741374"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (28. května 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3287. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Lifecycle Services (LCS) pro referenci.
 
@@ -61,7 +60,7 @@ Nyní můžete přidávat přílohy během procesu zápisu výhod pro každý pl
 
 ## <a name="human-resources-application-in-teams"></a>Aplikace Human Resources v Teams
 
-Zaměstnanci mohou prohlížet a požadovat pracovní volno v rámci Microsoft Teams. Mohou interagovat s robotem a vytvářet žádosti o dovolenou. Další informace viz [Aplikace Human Resources v Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Zaměstnanci mohou prohlížet a požadovat pracovní volno v rámci Microsoft Teams. Mohou interagovat s robotem a vytvářet žádosti o dovolenou. Další informace viz [Aplikace Human Resources v Teams](./hr-admin-teams-leave-app.md). 
 
 ## <a name="leave-suspension"></a>Pozastavit pracovní volno
 
@@ -107,6 +106,8 @@ Entita DMF je nyní k dispozici pro akruální pozastavení
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

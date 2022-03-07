@@ -2,7 +2,7 @@
 title: Povolit návrh rozpočtu
 description: Toto téma vysvětluje, jak zapnout funkci návrhu rozpočtu ve finančních přehledech.
 author: ShivamPandey-msft
-ms.date: 02/11/2022
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd0ba4307f93148c241810759df9a95578592ba9
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 3ad610feccf88ac88475a463fd1f10f4336b9407
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109547"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752705"
 ---
 # <a name="enable-budget-proposal"></a>Povolit návrh rozpočtu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak zapnout funkci návrhu rozpočtu ve finančních přehledech.
 
@@ -35,8 +36,5 @@ Toto téma vysvětluje, jak zapnout funkci návrhu rozpočtu ve finančních př
     3. Zapnutí funkce.
 
 2. Jděte na **Rozpočtování \> Nastavení \> Základní rozpočtování \> Návrh rozpočtu** a vyberte **Povolit funkci**.
-
-> [!NOTE]
-> Funkce **Návrh rozpočtu** vyžaduje minimálně tři roky rozpočtových nebo skutečných údajů. Tato funkce používá v projekcích data za tři až deset let. Data za více než tři roky poskytují lepší výsledky. Data samotná fungují nejlépe, když se hodnoty liší. Pokud data obsahují pouze konstantní data, jako jsou náklady na pronájem, může trénink selhat, protože nedostatek variací nevyžaduje, aby AI promítla částky.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Změna data pro relaci
 description: V tomto tématu je vysvětleno, jak lze změnit datum relace.
 author: pvillads
-manager: AnnBe
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SystemDate
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b66f84360e7161e899177850bf45f16607600842
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: fb8f896645df7c7c9a8afa3d9dc9106a7162959d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796860"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065623"
 ---
 # <a name="change-the-date-for-a-session"></a>Změna data pro relaci
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 V tomto tématu je vysvětleno, jak lze změnit datum relace. Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum. Můžete změnit datum používané pro aktuální relaci. Použijte tuto funkci k antedatování položek deníku nebo zdrojových dokumentů podle potřeby.
 
@@ -32,3 +33,6 @@ V tomto tématu je vysvětleno, jak lze změnit datum relace. Standardně se př
 2. Do pole **Datum** zadejte datum.
 3. Vyberte **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

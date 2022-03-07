@@ -2,33 +2,31 @@
 title: Předpovědi plateb odběratelů (Preview)
 description: Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také mpže pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkasa dříve, než byste to zahájili v ostatních případech.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b321fdc185e175d9fe2673c9f1e16486efd8e798
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 25542e72e620e5273a9cd215d5b6cd2f89a2f364
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645666"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638361"
 ---
 # <a name="customer-payment-predictions-preview"></a>Předpovědi plateb odběratelů (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje předpovědi plateb, která mohou pomoci lépe porozumět typickým platebním praktikám zákazníků. Tato funkce vám také může pomoci identifikovat okolnosti, kdy byste měli zahájit proces inkas dříve, než byste to zahájili v ostatních případech.
 
@@ -56,11 +54,11 @@ Pro každou otevřenou fakturu funkce přiřadí tři pravděpodobnosti platby:
 
 Tato funkce také poskytuje souhrnný pohled na očekávané platby.
 
-[![Agregované zobrazení předpovědí platby](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Agregované zobrazení předpovědí platby.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Každá faktura má přiřazenou pravděpodobnost platby včas. Faktury, jejichž pravděpodobnost včasné úhrady je nižší než 50 %, budou označeny červeným kroužkem, což znamená, že mohou vyžadovat pozornost inkasního agenta.
 
-[![Seznam pravděpodobností platby](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Seznam pravděpodobností platby.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Funkce Zákaznické předpovědi plateb také poskytuje kontextové informace vysvětlující předpovědi. Tyto informace zahrnují hlavní faktory, které ovlivnily predikci, aktuální stav obchodu se zákazníkem a podrobnosti o historickém platebním chování zákazníka.
 
@@ -74,8 +72,6 @@ V minulosti bylo obvykle obtížné vyvinout a nasadit řešení umělé intelig
 
 Veřejný náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
 
-Funkce veřejného náhledu by měly být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a AI vytvořené v prostředí sandboxu není nutné migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+Funkce veřejného náhledu by měly být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a AI vytvořené v prostředí sandboxu není nutné migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
-## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

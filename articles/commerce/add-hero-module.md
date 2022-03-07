@@ -2,15 +2,12 @@
 title: Modul bloku obsahu
 description: Tohle téma se zabývá moduly bloků s obsahem a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,21 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410721"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797640"
 ---
 # <a name="content-block-module"></a>Modul bloku obsahu
-
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly bloků s obsahem a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Maloobchodní prodejce může například přidat modul bloku obsahu na domovskou stránku webu elektronického obchodu a propagovat tak nový produkt a upoutat pozornost zákazníků.
 
@@ -107,3 +101,6 @@ Chcete-li přidat modul hlavního banneru na novou stránku a nastavit požadova
 [Modul textového bloku](add-content-rich-block.md)
 
 [Modul videopřehrávače](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

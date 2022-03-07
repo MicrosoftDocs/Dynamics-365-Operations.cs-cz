@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4759faa4882bb559221708fb31e969bff12ebb0b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 8f86f3603b64093214bb7cf7d165ba0fc2229ca3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568752"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021533"
 ---
 # <a name="shipping-container-setup"></a>Nastavení přepravního kontejneru
 

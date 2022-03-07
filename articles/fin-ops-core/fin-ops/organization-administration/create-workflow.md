@@ -2,27 +2,27 @@
 title: Přehled vytvoření workflow
 description: Toto téma vysvětluje postup při vytváření workflowu.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 195583
+ms.custom:
+- "195583"
+- intro-internal
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: d1402019dbaaa60827499fcb6b93ee31440cfc3d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e67369fac733a7b0aa65ef5968d29320f119f6c1a79e5b0874d7fc61e0b2c700
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759937"
 ---
 # <a name="create-workflows-overview"></a>Přehled vytvoření workflow
 
@@ -83,3 +83,6 @@ Až budete připraveni uložit a aktivovat workflow, postupujte následovně.
 
     - Pokud chcete aktivovat tuto verzi workflowu, klepněte na tlačítko **Aktivovat novou verzi**. Když je workflow aktivní, uživatelé do něj mohou odesílat dokumenty ke zpracování a schválení.
     - Pokud nechcete tuto verzi aktivovat, klepněte na tlačítko **Neaktivovat novou verzi**. Workflow můžete aktivovat později.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

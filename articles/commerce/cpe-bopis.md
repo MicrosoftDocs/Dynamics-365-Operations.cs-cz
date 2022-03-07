@@ -1,38 +1,35 @@
 ---
 title: Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce
-description: Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) v prostředí vyhodnocení Microsoft Dynamics 365 Commerce po jeho zřízení.
-author: rubendel
-manager: annbe
+description: Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po jeho zřízení.
+author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410680"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779787"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace BOPIS prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) v prostředí vyhodnocení Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
+Tohle téma vysvětluje, jak konfigurovat proces „nákup online, vyzvednutí v obchodě“ (BOPIS) ve zkušebním prostředí Microsoft Dynamics 365 Commerce po zřízení tohoto prostředí.
 
 ## <a name="prerequisite"></a>Předpoklad
 
-Postupy v tomto tématu dokončete až po zřízení a konfiguraci prostředí vyhodnocení Commerce verze Preview. Informace o zřízení a konfiguraci prostředí viz [Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Postupy v tomto tématu dokončete až po zřízení a konfiguraci prostředí vyhodnocení Commerce verze Preview. Informace o zřízení a konfiguraci prostředí viz [Zřízení prostředí vyhodnocení aplikace Dynamics 365 Commerce](provisioning-guide.md) a [Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
 Po kompletním zřízení a konfiguraci prostředí Commerce můžete pomocí tohoto tématu povolit scénáře BOPIS.
 
@@ -40,7 +37,7 @@ Po kompletním zřízení a konfiguraci prostředí Commerce můžete pomocí to
 
 ### <a name="configure-modern-pos"></a>Konfigurace Modern POS
 
-Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarovou stanici. Hardwarová stanice je součástí klientů Modern POS pro Windows a Android. Používáte-li Cloud POS nebo Modern POS pro iOS, musí být pokladní místo (POS) spárováno se sdílenou hardwarovou stanicí. Toto téma vysvětluje, jak konfigurovat BOPIS pro klienty Windows a Android. Informace o nastavení sdílené hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarovou stanici. Hardwarová stanice je součástí klientů Modern POS pro Windows a Android. Používáte-li Cloud POS nebo Modern POS pro iOS, musí být pokladní místo (POS) spárováno se sdílenou hardwarovou stanicí. Toto téma vysvětluje, jak konfigurovat BOPIS pro klienty Windows a Android. Informace o nastavení sdílené hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](./retail-hardware-station-configuration-installation.md).
 
 1. Přejděte na **Retail a Commerce \> Instalace kanálu \> Nastavení POS \> Pokladny**.
 2. Vyberte pokladnu **SANFRAN-5** a pak vyberte možnost **Upravit**.
@@ -57,7 +54,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 4. Vyberte možnost **Stáhnout** a pak možnost **Retail Modern POS**. 
 5. Po stažení souboru **ModernPOSSetup.exe** vyberte možnost **Otevřít soubor**.
 
-    ![Otevřít soubor](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Otevřít soubor.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Chcete-li projít instalačním procesem, vyberte možnost **Další**. Po dokončení instalace vyberte možnost **Zavřít**.
 
@@ -90,7 +87,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Vytvoření objednávky výkladní skříně pro výdej na skladě
 
-1. Přejděte na adresu URL, kterou jste zadali v kroku [Inicializace e-Commerce](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) během konfigurace prostředí.
+1. Přejděte na adresu URL, kterou jste zadali v kroku [Inicializace e-Commerce](./provisioning-guide.md#initialize-e-commerce) během konfigurace prostředí.
 2. Vyberte položku a vyberte možnost **Přidat do nákupního košíku**.
 3. Na stránce nákupní tašky vyberte položku **Vyzvednout** pro řádek objednávky, který jste právě přidali.
 4. V dialogovém okně **Vyberte úložiště** zadejte hodnotu **San Francisco** a pak vyberte tlačítko **Hledat**.
@@ -115,7 +112,7 @@ Scénáře BOPIS, které zahrnují platbu kreditní kartou, vyžadují hardwarov
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Synchronizace online objednávek s administrativní podporou
 
-Informace o synchronizaci online objednávek naleznete v tématu [Zaúčtování online prodeje a plateb](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+Informace o synchronizaci online objednávek naleznete v tématu [Zaúčtování online prodeje a plateb](./tasks/posting-online-sales-payments.md).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Vyzvednutí objednávky v obchodě
 
@@ -151,16 +148,19 @@ V případě všech obecných problémů byste jako první věc měli vždy pros
 
 [Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Konektor platby Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Konektor platby Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Úspora nástrojů online plateb s konektorem Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Úspora nástrojů online plateb s konektorem Adyen](./dev-itpro/adyen-connector-listpi.md)
 
-[Přehled omnikanálových plateb](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Přehled omnikanálových plateb](./omni-channel-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

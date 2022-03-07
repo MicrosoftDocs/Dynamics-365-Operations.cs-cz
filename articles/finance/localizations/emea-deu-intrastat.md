@@ -1,26 +1,24 @@
 ---
 title: Německý Intrastat
 description: Toto téma obsahuje informace o deklaraci Intrastat ve Německu.
-author: anasyash
-ms.date: 09/09/2021
+author: andosip
+ms.date: 08/2/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759836"
 ---
 # <a name="german-intrastat"></a>Německý Intrastat
 
-[!include [banner](../includes/banner.md)]
-
-Stránka **Intrastat** se použije pro vygenerování a nahlášení informací o obchodu mezi zeměmi Evropské unie (EU). Německé prohlášení Intrastat obsahuje informace o obchodu se zbožím pro vykazování. Sestava je formátována podle pokynů německých úřadů, které jsou uvedeny na stránce [6.2 Deklarace souborů ve formátu INSTAT/XML](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html).
+Stránka **Intrastat** se použije pro vygenerování a nahlášení informací o obchodu mezi zeměmi Evropské unie (EU). Německé prohlášení Intrastat obsahuje informace o obchodu se zbožím pro vykazování.
 
 V následující tabulce jsou uvedena pole, která jsou zahrnuta v německém prohlášení Intrastat.
 
@@ -73,16 +71,15 @@ V následující tabulce jsou uvedena pole, která jsou zahrnuta v německém pr
     3. V poli **Mapování formátu sestavy** vyberte **Sestava Intrastat**.
     4. Na pevné záložce **Hierarchie komoditních kódů** v poli **Hierarchie kategorií** vyberte **Intrastat**.
     5. V poli **Kód transakce** vyberte kód transakce pro převody majetku. Tento kód použijete pro transakce, které provádí skutečné nebo plánované převody majetku v souvislosti s kompenzací (finanční nebo jinou). Použijete jej také pro opravy.
-    6. V poli **Dobropis** vyberte kód transakce pro vrácení zboží.
-    7. V poli **Pracovník** vyberte kontaktní osobu pro sestavu Intrastat. Případně na kartě **Kontakt** zadejte nebo vyberte hodnoty v polích **Jméno**, **Telefon**, **Fax**, **E-mail** a **Internetová adresa**. Tato pole jsou součástí sestavy.
-    8. V poli **Úřad** vyberte autoritu Intrastat.
-    9. Jděte na **Daň** > **Nepřímé daně** > **DPH** > **Finanční úřady** a zadejte následující informace pro úřad Intrastat, kterou jste vybrali v předchozím kroku:
+    6. V poli **Dobropis** vyberte kód transakce pro vrácení zboží. Tento kód použijete pro vrácení zboží po transakci, která byla původně zaznamenána pod kódem transakce.
+    7. V poli **Úřad** vyberte autoritu Intrastat.
+    8. Jděte na **Daň** > **Nepřímé daně** > **DPH** > **Finanční úřady** a zadejte následující informace pro úřad Intrastat, kterou jste vybrali v předchozím kroku:
 
        - Identifikace úřadu
        - Adresa
        - Kontaktní informace
 
-    10. Na kartě **Vlastnosti země/oblasti** v poli **Země/oblast** jsou uvedeny všechny země nebo oblasti, se kterými vaše společnost obchoduje. Pro každou zemi nebo oblast v poli **Typ země/oblasti** vyberte **EU**, aby se země nebo oblast objevila ve vaší sestavě Intrastat.
+    9. Na kartě **Vlastnosti země/oblasti** v poli **Země/oblast** jsou uvedeny všechny země nebo oblasti, se kterými vaše společnost obchoduje. Pro každou zemi nebo oblast v poli **Typ země/oblasti** vyberte **EU**, aby se země nebo oblast objevila ve vaší sestavě Intrastat.
 
 4. Nastavení kódů oblastí.
 

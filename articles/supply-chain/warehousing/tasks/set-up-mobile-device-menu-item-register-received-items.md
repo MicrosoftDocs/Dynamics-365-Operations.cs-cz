@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f636a1f3d598a069c3922160eedbe05b68bc91eb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 81282e8db199c0d81e4f10de964b2fd09a5734fe
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424169"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255984"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
 
@@ -60,3 +59,6 @@ Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Tento p
 6. Zvolte **Uložit**.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

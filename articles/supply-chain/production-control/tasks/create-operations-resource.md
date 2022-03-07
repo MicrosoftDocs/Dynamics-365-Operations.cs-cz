@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2e59b1e6a83d902df98a0b40ee6c572a6567f05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 514b0b27065b4318891a84f364b39e8e378d6a4a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423531"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255078"
 ---
 # <a name="create-an-operations-resource"></a>Vytvoření provozního prostředku
 
@@ -81,3 +80,6 @@ Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Tent
 4. V poli Vstupní místo zadejte nebo vyberte hodnotu.
     * Zadejte umístění ve skladu, ze kterého provozní prostředek spotřebovává materiál.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

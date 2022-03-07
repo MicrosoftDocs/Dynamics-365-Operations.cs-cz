@@ -2,28 +2,25 @@
 title: Vyrovnání částečné platby zákazníka, u níž je více období slev
 description: Tento článek popisuje způsob, jakým se vyrovnávají platby odběratelů po více období slevy.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14471
 ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5d0d517524add5e18b1f0795b2ee2fd7f5b7686b26919a7e8f2e20ac1d243fe9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740115"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby zákazníka, u níž je více období slev
 
@@ -57,7 +54,7 @@ Dne 28. června provede odběratel 4031 částečné platbu ve výši 294,00. Vz
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**. Pokud nezměníte hodnotu **Částka k vyrovnání** na hodnotu **294,00**, hodnoty **Částka platební slevy**, které se zobrazí, se budou lišit. Avšak 6,00 bude získáno jako platební sleva při zaúčtování platby, protože vyrovnání automaticky nastaví hodnotu **Částka k vyrovnání** za vás.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 6/30/2015 |
 | Částka platební slevy         | 20,00     |
@@ -76,7 +73,7 @@ Po zaúčtování platby Arnoldem je zůstatek faktury 700,00.
 
 Informace o slevě se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Datum platební slevy           | 7/09/2015 |
 | Částka platební slevy         | 30,00     |
@@ -98,3 +95,6 @@ Zůstatek faktury je nyní 0,00. Arnold informace může zobrazit na stránce **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

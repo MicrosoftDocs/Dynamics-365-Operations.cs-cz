@@ -1,33 +1,30 @@
 ---
 title: Definování finančních dimenzí
-description: Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovaných entitami a vlastní finanční dimenzi.
+description: Tato procedura ukazuje přidávání finančních dimenzí zálohovaných entitami a vlastní finanční dimenzi.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionDetails,  DimensionAttributeTableExtensionActivate, DimensionValueDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6fbe739eec0cfa1e7b0276872640bd4f82be3ef7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed6dad64032c03e638c2090471af825dd18560a1
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4440987"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394455"
 ---
 # <a name="define-financial-dimensions"></a>Definování finančních dimenzí
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovaných entitami a vlastní finanční dimenzi.  Průvodce používá ukázkovou společnost USMF.
+Tato procedura ukazuje přidávání finančních dimenzí zálohovaných entitami a vlastní finanční dimenzi.  Průvodce používá ukázkovou společnost USMF.
 
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Vytvoření finanční dimenze zálohované entitou
@@ -55,3 +52,6 @@ Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovanýc
 9. V poli **Hodnota dimenze** zadejte název pro popis vaší finanční hodnoty.
 10. V poli **Popis** zadejte popis, který popisuje vaši hodnotu finanční dimenze.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

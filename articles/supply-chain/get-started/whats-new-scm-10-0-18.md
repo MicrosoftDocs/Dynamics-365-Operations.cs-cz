@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c68b8ed1703f2cd49d47fad73485e9e4093aa82b902a484fb79bad4dd2dcbfb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4162ae04c58a88c7c3aac56297a6c12db98b15c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773554"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019219"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Co je nového nebo změněného v softwaru Dynamics 365 Supply Chain Management verze 10.0.18 (květen 2021)
 
@@ -37,11 +37,9 @@ Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vy
 
 - Automatické vydávání objednávek (vylepšení pro [Realizace skladu s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Vytváření a zobrazení certifikací v rozhraní pro spolupráci dodavatele](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - Další informace viz [Udržování certifikace dodavatele](../../finance/public-sector/manage-vendor-certification.md).
+- [Vylepšení výkonu a archivace v podnikovém měřítku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Další informace viz [Archivace skladových transakcí](../inventory/archive-inventory-transactions.md)
 
-- [Vylepšení výkonu a archivace v podnikovém měřítku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Další informace viz [Archivace skladových transakcí](../inventory/archive-inventory-transactions.md).
-
-- [Správa rabatu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md).
+- [Správa rabatu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Další informace naleznete v tématu [Přehled modulu Správa rabatu](../rebate-management/rebate-management-overview.md)
 
 - [Zásady nastavení exportu datové entity prodeje](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
 

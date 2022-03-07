@@ -1,29 +1,26 @@
 ---
 title: Skladové deníky
 description: Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d184b34ec33184d730d5b6eed3db144f1433f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423572"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573962"
 ---
 # <a name="inventory-journals"></a>Skladové deníky
 
@@ -98,7 +95,7 @@ Datové entity podporují scénáře integrace mezi následujícími typy:
 -    Synchronní servis (OData)
 -  Asynchronní integrace
 
-Další informace viz [Datové entity](../../dev-itpro/data-entities/data-entities.md).
+Další informace viz [Datové entity](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Ne všechny deníky zásob mají povolen OData, proto nemůžete použít konektor excelových dat k publikování, aktualizaci a importu dat zpět do aplikace Supply Chain Management. 
@@ -116,4 +113,7 @@ Tyto dva skladové deníky podporují pouze scénář *Inicializovat sklad* scé
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Datové entity](../../dev-itpro/data-entities/data-entities.md)
+[Datové entity](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

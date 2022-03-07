@@ -1,12 +1,10 @@
 ---
 title: Zpráva pracovního příkazu
 description: Toto téma popisuje sestavy pracovních příkazů v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 93544f0459641c5e72ec6a0af10f0db9718ad799
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3686629af4116df6fc7ea530216ec0d12ecd60bab8f7150e0d2a3917bc12adaf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780239"
 ---
 # <a name="work-order-report"></a>Zpráva pracovního příkazu
 
@@ -44,9 +42,12 @@ Můžete vygenerovat sestavu pracovních příkazů, která zobrazuje podrobné 
 
 Na následujícím obrázku je znázorněn příklad nastavení parametrů sestavy.
 
-![Obrázek č. 1](media/20-work-orders.png)
+![Obrázek č. 1.](media/20-work-orders.png)
 
 Na následujícím obrázku je znázorněn příklad sestavy pracovního příkazu, která je vygenerována na základě tohoto nastavení.
 
-![Obrázek č. 2](media/21-work-orders.png)
+![Obrázek č. 2.](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

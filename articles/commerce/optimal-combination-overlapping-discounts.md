@@ -2,16 +2,13 @@
 title: Určení optimální kombinace překrývajících se slev
 description: Při překrytí slev je třeba určit kombinaci překrývající se slev, které budou tvořit nejnižší celkové částky transakce nebo nejvyšší celkovou slevu. Pokud se částka slevy liší podle ceny produktů, které jsou zakoupeny, například u běžné maloobchodní slevy typu Při nákupu 1 sleva X procent (BOGO), tento proces bude problémem pro kombinatorní optimalizaci.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c7dafe55fc7072aa12b98ff42ed7d9e4719f4cd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410795"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804690"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Určení optimální kombinace překrývajících se slev
 
@@ -84,3 +81,6 @@ Chcete-li vyřešit problém exponenciálně rostoucího počtu kombinací, kter
 ![Vzorec pro výpočet mezní hodnoty](./media/overlapping-discount-combo-06.jpg)
 
 Po odečtení mezní hodnoty každé slevy ve sdílené sadě produktů se vypočte mezní hodnota, uplatní slevy na sdílené výrobky v pořadí, vyčerpávajícím způsobem, od nejvyšší mezní hodnoty k nejnižší mezní hodnotě. Pro tuto metodu nejsou porovnány všechny zbývající možnosti slev pokaždé, když je uplatněna jedna instance slevy. Místo toho jsou překrývající se slevy porovnány jednou a poté použity v pořadí. Nejsou prováděny žádné další porovnání. Můžete nakonfigurovat prahové hodnoty pro přepnutí na metodu mezní hodnoty na kartě **Sleva** stránky **Parametry velkoobchodu**. Přijatelná doba při výpočtu celkové slevy se v rámci odvětví maloobchodu liší. Tentokrát však obecně spadá do rozsahu desítky milisekund na jednu sekundu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Úroveň a popis služby
 description: V tomto tématu jsou vysvětleny úrovně a popis služby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019372"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808249"
 ---
 # <a name="service-level-and-description"></a>Úroveň a popis služby
 
@@ -55,3 +53,6 @@ Při vytvoření pracovního příkazu můžete pro něj definovat úrovně slu�
 2. Zvolte **Nové**.
 3. Zadejte popis do pole **Popis**.
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

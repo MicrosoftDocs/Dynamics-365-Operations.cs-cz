@@ -2,35 +2,37 @@
 title: Optimalizace naplánovaných dávkových úloh BYOD
 description: Toto téma vysvětluje, jak optimalizovat výkon, když používáte funkci použití vlastní databáze (BYOD) s řešením Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: d08762ff40b4da8264bd5bc4a1c16fd2afc4d610
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2f110d105b8c04f07f219f7f11a57d24e00ce4a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417613"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067772"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimalizace naplánovaných dávkových úloh BYOD
 
-Toto téma vysvětluje, jak optimalizovat výkon, když používáte funkci použití vlastní databáze (BYOD). Další informace o BYOD viz [Použití vlastní databáze (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Toto téma vysvětluje, jak optimalizovat výkon, když používáte funkci použití vlastní databáze (BYOD). Další informace o BYOD viz [Použití vlastní databáze (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Zvážení výkonu pro export dat
 
-Po publikování entit v cílové databázi můžete použít funkci Exportovat v pracovním prostoru **Správa dat** pro přesun dat. Funkce exportu vám umožňuje definovat úlohu přesnunu dat, která obsahuje jednu nebo více entit. Další informace, jak používat exportovat data, naleznete v tématu [Přehled úloh importu a exportu dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+Po publikování entit v cílové databázi můžete použít funkci Exportovat v pracovním prostoru **Správa dat** pro přesun dat. Funkce exportu vám umožňuje definovat úlohu přesnunu dat, která obsahuje jednu nebo více entit. Další informace, jak používat exportovat data, naleznete v tématu [Přehled úloh importu a exportu dat](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Stránku **Export** můžete použít pro export dat do různých cílových datových formátů, například souboru CSV. Tato stránka podporuje také databáze SQL jako další cíl.
 
@@ -61,7 +63,7 @@ Pro nejlepší výkon vždy používejte možnost **Exportovat v dávce** na str
 
 Když přidáte entitu pro export dat, můžete provést buď přírůstkové nabízení (export) nebo úplné nabízení. Úplné nabízení odstraní všechny existující záznamy z entity v databázi BYOD. Poté vloží aktuální sadu záznamů z entity Human Resources.
 
-Chcete-li provést přírůstkové nabízení, musíte zapnout sledování změn pro každou entitu na stránce **Entity**. Další informace viz [Povolení sledování změn pro entity](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+Chcete-li provést přírůstkové nabízení, musíte zapnout sledování změn pro každou entitu na stránce **Entity**. Další informace viz [Povolení sledování změn pro entity](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Pokud vyberete přírůstkové nabízení, první nabázení je vždy úplné nabízení. SQL sleduje změny od tohoto prvního úplného nabízení. Když je vložen nový záznam nebo když je záznam aktualizován nebo odstraněn, změna se projeví v cílové entitě.
 
@@ -88,11 +90,20 @@ Funkce BYOD má následující omezení:
 
 **Problém:** Když dojde k úplnému nabízení pro entitu, uvidíte velkou sadu záznamů v BYOD, když použijete příkaz **select**. Když však provedete přírůstkové nabízení, uvidíte v BYOD jen několik záznamů. Zdá se, jako by přírůstkové nabízení odstranilo všechny záznamy a přidalo pouze změněné záznamy v BYOD.
 
-**Řešení:** Tabulky sledování změn SQL nemusí být v očekávaném stavu. V případech tohoto typu doporučujeme vypnout sledování změn pro entitu a poté ji znovu zapnout. Další informace viz [Povolení sledování změn pro entity](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+**Řešení:** Tabulky sledování změn SQL nemusí být v očekávaném stavu. V případech tohoto typu doporučujeme vypnout sledování změn pro entitu a poté ji znovu zapnout. Další informace viz [Povolení sledování změn pro entity](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Pracovní tabulky se nevymazávají
+
+**Problém:** Při použití pracovní fáze pro projekt se pracovní tabulky nevymazávají správně. Data v tabulkách pak dále rostou, což způsobuje problémy s výkonem.
+
+**Řešení:** Sedm dní historie je udržováno v postupných tabulkách. Historická data starší než sedm dní automaticky vymazávají z pracovních tabulek dávkovými úlohami **Importovat vyčištění pracovní fáze exportu**. Pokud se tato úloha zasekne, tabulky se nevymažou správně. Restartování této dávkové úlohy bude pokračovat v procesu, který automaticky vymaže pracovní tabulky.
 
 ## <a name="see-also"></a>Viz také
 
-[Přehled správy dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[Použití vlastní databáze (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[Přehled úloh importu a exportu dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[Povolení sledování změn pro entity](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[Přehled správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Použití vlastní databáze (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Přehled úloh importu a exportu dat](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Povolení sledování změn pro entity](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

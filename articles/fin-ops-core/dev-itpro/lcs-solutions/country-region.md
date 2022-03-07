@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ed89c0c9cb915af0d5a70d14d1f0e251f20554d7
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685046"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154112"
 ---
 # <a name="globalization-resources"></a>Zdroje globalizace
 
@@ -55,7 +55,7 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 
 #### <a name="regulatory-updates"></a>Povinné aktualizace
 -   [Povinné aktualizace](../../../finance/localizations/regulatory-updates.md)
--   [Lokalizační portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizováno týdně)
+-   [Lokalizační portál](https://docs.microsoft.com/dynamics/s-e/) (aktualizováno týdně)
 -   [Hledání problémů v Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Aktualizováno denně)
 
 #### <a name="communication-and-alerts"></a>Komunikace a výstrahy

@@ -1,61 +1,31 @@
 ---
 title: Obecné řešení potíží
-description: Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
+description: Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744534"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062331"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-
-Toto téma obsahuje všeobecné informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse.
+Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
-
-## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Při pokusu o instalaci balíčku dvojího zapisování pomocí nástroje package deployer se nezobrazí žádná dostupná řešení
-
-Některé verze nástroje package deployer nejsou kompatibilní s balíčkem řešení dvojího zápisu. Chcete-li úspěšně nainstalovat balíček, je nutné použít [verzi 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) nebo novější z nástroje package deployer.
-
-Po instalaci nástroje package deployer nainstalujte balíček řešení pomocí následujících kroků.
-
-1. Stáhněte si nejnovější soubor balíčku řešení z Yammer.com. Po stažení souboru ZIP balíčku klepněte na něj pravým tlačítkem myši a vyberte **Vlastnosti**. Zaškrtněte políčko **odblokovat** a vyberte **Použít**. Není-li zaškrtávací políčko **Odblokovat** zobrazeno, je již zrušeno blokování souboru zip a tento krok můžete přeskočit.
-
-    ![Dialogové okno Vlastnosti](media/unblock_option.png)
-
-2. Extrahujte soubor zip balíčku a zkopírujte všechny soubory ve složce **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.**
-
-    ![Obsah složky Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
-
-3. Vložte všechny zkopírované soubory do složky **Nástroje** v nástroji Package Deployer. 
-4. Spuštěním **PackageDeployer.exe** vyberte prostředí Dataverse a nainstalujte řešení.
-
-    ![Obsah složky Nástroje](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Chcete-li zobrazit podrobnosti chyby, povolte a zobrazte protokol sledování modulů plug-in v Dataverse
 
@@ -63,49 +33,48 @@ Po instalaci nástroje package deployer nainstalujte balíček řešení pomocí
 
 Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Systém** vyberte **Správa**.
+1. Přihlaste se k aplikaci customer engagement, otevřete stránku **Nastavení** a v části **Systém** vyberte možnost **Správa**.
 2. Na stránce **Správa** zvolte **Nastavení systému**.
 3. Na kartě **Vlastní nastavení** ve sloupci **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
 
 
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k modelem řízené aplikaci v Dynamics 365, otevřete stránku **Nastavení** a v části **Přizpůsobení** vyberte **Protokol sledování modulu plug-in**.
+1. Přihlaste se k aplikaci customer engagement, otevřete stránku **Nastavení** a v části **Vlastní nastavení** vyberte možnost **Protokol sledování modulu plug-in**.
 2. Najděte protokoly sledování, kde sloupec **Název typu** je nastaven na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Chcete-li zobrazit úplný protokol, klikněte dvakrát na položku, a potom na pevné záložce **Spuštění** zkontrolujte text **Message Block**.
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v aplikacích Finance and Operations
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v finančních a provozních aplikacích
 
-**Požadovaná role pro zobrazení chyb:** Chyby duálního zápisu správce systému, které vznikly v Dataverse, se mohou objevit v aplikaci Finance and Operations. V některých případech není úplný text chybové zprávy k dispozici, protože zpráva je příliš dlouhá nebo obsahuje osobní identifikační údaje (PII). Pomocí následujících kroků můžete zapnout podrobné protokolování chyb.
+**Požadovaná role pro zobrazení chyb:** správce systému
 
-1. Všechny konfigurace projektu v aplikacích Finance and Operations mají vlastnost **IsDebugMode** v tabulce **DualWriteProjectConfiguration**. Otevřete tabulku **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel.
+Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou objevit ve finanční a provozní aplikaci. Pomocí následujících kroků můžete zapnout podrobné protokolování chyb:
 
-    > [!TIP]
-    > Snadným způsobem, jak tuto tabulku otevřít, je zapnout režim **Návrh** v doplňku aplikace Excel a poté přidat **DualWriteProjectConfigurationEntity** do listu. další informace získáte v tématu [Otevření dat tabulky v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel](../../office-integration/use-excel-add-in.md).
+1. Všechny konfigurace projektu ve finanční a provozní aplikaci mají příznak **IsDebugMode** v tabulce **DualWriteProjectConfiguration**.
+2. Otevřete **DualWriteProjectConfiguration** pomocí doplňku aplikace Excel. Chcete-li doplněk použít, povolte režim návrhu v doplňku Finance a Operace pro Excel a přidejte **DualWriteProjectConfiguration** na list. Další informace viz [Zobrazit a aktualizovat data entit pomocí Excelu](../../office-integration/use-excel-add-in.md).
+3. Nastavte **IsDebugMode** na **Ano** v projektu.
+4. Spuštění scénáře generujících chyby.
+5. Podrobné protokoly jsou uloženy v tabulce **DualWriteErrorLog**.
+6. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující odkaz: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` nahraďte `999` podle potřeby.
+7. Aktualizujte znovu po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), který je k dispozici pro aktualizace platformy 37 a novější. Pokud máte tuto opravu nainstalovanou, režim ladění zachytí více protokolů.  
 
-2. Nastavte vlastnost **IsDebugMode** na **Ano** pro projekt.
-3. Spuštění scénáře generujících chyby.
-4. Podrobné protokoly jsou k dispozici v tabulce DualWriteErrorLog. Chcete-li vyhledat data v prohlížeči tabulky, použijte následující adresu URL (nahraďte **XXX**):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
-
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro aplikaci Finance and Operations
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Zkontrolujte chyby synchronizace ve virtuálním počítači pro finanční a provozní aplikaci
 
 **Požadovaná role pro zobrazení chyb:** Správce systému
 
 1. Přihlaste se do Microsoft Dynamics Lifecycle Services (LCS).
 2. Otevřete projekt LCS, který jste zvolili pro testování dvojího zápisu.
 3. Zvolte dlaždici **Prostředí hostovaná v cloudu**.
-4. Pomocí vzdálené plochy se přihlaste k virtuálnímu počítači (VM) pro aplikaci Finance and Operations. Použijte místní účet, který je zobrazen v poli LCS.
+4. Pomocí vzdálené plochy se přihlaste k virtuálnímu počítači (VM) pro finanční a provozní aplikaci. Použijte místní účet, který je zobrazen v poli LCS.
 5. Otevřete prohlížeč událostí.
 6. Vyberte **Protokoly aplikací a služeb \> Microsoft \> Dynamics \> AX -DualWriteSync \> Provozní**.
 7. Prohlédněte si seznam posledních chyb.
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Zrušte propojení a propjte jiné prostředí Dataverse z aplikace Finance and Operations
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Odpojení a propojení jiného prostředí Dataverse z finanční a provozní aplikace
 
-**Požadovaná role pro zrušení propojení prostředí:** Správce systému buď pro aplikaci Finance and Operations nebo Dataverse.
+**Požadovaná role pro zrušení propojení prostředí**: Správce systému buď pro finanční a provozní aplikaci nebo Dataverse.
 
-1. Přihlášení do aplikace Finance and Operations.
+1. Přihlášení do finanční a provozní aplikace.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Dvojí zápis**.
 3. Vyberte všechna spuštěná mapování a pak vyberte **Zastavit**.
 4. Zvolte **Odpojit prostředí**.
@@ -118,7 +87,28 @@ Nyní můžete propojit nové prostředí.
 Po vytvoření prodejní objednávky v produktu Dynamics 365 Sales se můžete kliknutím na možnost **+ Přidat produkty** přesměrovat do formuláře řádku objednávky Dynamics 365 Project Operations. Neexistuje žádný způsob, jak z tohoto formuláře zobrazit formulář **Informace** pro řádek prodejní objednávky. Možnost pro **informace** není zobrazena v rozevírací nabídce pod položkou **Nový řádek objednávky**. K tomu dojde, protože operace projektu byly nainstalovány ve vašem prostředí.
 
 Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následujícím způsobem:
+
 1. Přejděte na entitu **Řádek** tabulky.
-2. Vyhledejte formulář **Informace** v uzlu formulářů. 
-3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**. 
+2. Vyhledejte formulář **Informace** v uzlu formulářů.
+3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**.
 4. Změňte nastavení zabezpečení na **Zobrazit všem**.
+
+## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Jak povolit a uložit trasování sítě, aby bylo možné připojit stopy k podpoře lístků
+
+Tým podpory možná bude muset zkontrolovat trasování sítě, aby vyřešil některé problémy. Chcete-li vytvořit sledování sítě, postupujte následujícím způsobem:
+
+### <a name="chrome"></a>Chrome
+
+1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
+2. Otevřete kartu **Síť** a zadejte **integ** v textovém poli filtru.
+3. Spusťte svůj scénář a sledujte protokolované požadavky.
+4. Klikněte pravým tlačítkem na položky a vyberte **Uložit vše jako HAR s obsahem**.
+
+### <a name="microsoft-edge"></a>Microsoft Edge
+
+1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
+2. Otevřete kartu **Síť**.
+3. Spusťte svůj scénář.
+4. Vyberte **Uložit**, chcete-li exportovat výsledky jako HAR.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

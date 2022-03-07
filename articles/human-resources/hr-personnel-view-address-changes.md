@@ -2,14 +2,11 @@
 title: Zobrazení a správa změn adres
 description: Toto téma vysvětluje, jak si můžete prohlížet a spravovat změny adres ve službě Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: f9cd6c86d65bced0323097e8388b14eff98345a14b94beb8a469c8c5f482c36b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725005"
 ---
 # <a name="view-and-manage-address-changes"></a>Zobrazení a správa změn adres
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Toto téma vysvětluje, jak si můžete prohlížet a spravovat změny adres na stránce **Upravit osobní údaje** v samoobsluze pro zaměstnance nebo na stránce podrobností **Pracovník** v Dynamics 365 Human Resources.
 
@@ -125,6 +124,9 @@ Pracovníci HR si mohou prohlížet a sledovat změny adres z pracovního prosto
 Když vyberete **Změny adresy** na nové stránce se zobrazí podrobnosti o všech změnách adresy. Můžete si vybrat **Zahrnout budoucí změny adresy** v pravém horním rohu pro zobrazení změn adresy s budoucím datem.
 
 > [!NOTE]
-> Pokud chcete dostávat upozornění nebo e-maily o těchto změnách adresy, můžete vytvořit nové pravidlo upozornění na kartě **Možnosti** v podokně akcí. Další informace o tom, jak vytvářet pravidla upozornění, naleznete v tématu [Vytvoření nových pravidel upozornění](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Pokud chcete dostávat upozornění nebo e-maily o těchto změnách adresy, můžete vytvořit nové pravidlo upozornění na kartě **Možnosti** v podokně akcí. Další informace o tom, jak vytvářet pravidla upozornění, naleznete v tématu [Vytvoření nových pravidel upozornění](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Pokud chcete nakonfigurovat pracovní postup pro změny adresy, můžete vybrat pravidlo **Odeslat externě** v pravidlu upozornění a poté použít Power Automate ke spuštění obchodní události a konfigurace pracovního postupu. Další informace naleznete v tématu [Upozornění jako obchodní události](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Pokud chcete nakonfigurovat pracovní postup pro změny adresy, můžete vybrat pravidlo **Odeslat externě** v pravidlu upozornění a poté použít Power Automate ke spuštění obchodní události a konfigurace pracovního postupu. Další informace naleznete v tématu [Upozornění jako obchodní události](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

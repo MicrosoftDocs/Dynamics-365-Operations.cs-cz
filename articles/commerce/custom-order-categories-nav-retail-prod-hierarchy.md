@@ -2,33 +2,30 @@
 title: Změna pořadí řazení pro maloobchodní entity
 description: Toto téma vysvětluje koncepty, které se vztahují k řízení pořadí zobrazení pro různé entity související s podporou prodeje v aplikaci Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410790"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779535"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Změna pořadí řazení pro maloobchodní entity
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech. Různé funkce mohou zákazníkům pomoci snadno objevit produkty. Mohou například procházet kategorie, vyhledávat a filtrovat.
 
@@ -54,9 +51,9 @@ Před provedením tohoto postupu je nutné, aby byla v prostředí nainstalován
 
 Pořadí zobrazení hierarchie navigace kanálu se odrazí v centrále pro hierarchii produktů commerce a uvolněné produkty podle kategorie.
 
-![Vlastní řazení hierarchie produktů se zápornými hodnotami](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Vlastní řazení hierarchie produktů se zápornými hodnotami.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Vlastní řazení uvolněných produktů podle kategorie na základě hierarchie produktů](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Vlastní řazení uvolněných produktů podle kategorie na základě hierarchie produktů.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurace pořadí zobrazení pro kategorie v hierarchii navigace kanálů
 
@@ -80,11 +77,14 @@ Před provedením tohoto postupu je nutné, aby byla v prostředí nainstalován
 
 Pořadí zobrazení hierarchie navigace kanálu se odráží v centrále, katalogu a kanálech.
 
-![Vlastní řazení hierarchie navigace kanálu](./media/ChannelNavCustomSorted.png)
+![Vlastní řazení hierarchie navigace kanálu.](./media/ChannelNavCustomSorted.png)
 
-![Vlastní řazení hierarchie navigace katalogu na základě hierarchie navigace kanálu](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Vlastní řazení hierarchie navigace katalogu na základě hierarchie navigace kanálu.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS s vlastním řazením kategorií](./media/POSChannelCategoriesCustomSorted.png)
+![POS s vlastním řazením kategorií.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Ve výchozím nastavení je funkce vlastního řazení vypnutá. Informace o zapnutí této funkce a dalších funkcí naleznete v tématu [Správa funkcí](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Ve výchozím nastavení je funkce vlastního řazení vypnutá. Informace o zapnutí této funkce a dalších funkcí naleznete v tématu [Správa funkcí](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

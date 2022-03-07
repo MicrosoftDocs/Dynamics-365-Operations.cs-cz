@@ -1,36 +1,31 @@
 ---
-title: Konfigurace prostředí vyhodnocení Dynamics 365 Commerce
+title: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 author: psimolin
-manager: annbe
-ms.date: 07/16/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410676"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913720"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení Dynamics 365 Commerce
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
-
-## <a name="overview"></a>Přehled
 
 Postupy v tomto tématu dokončete až po zřízení prostředí vyhodnocení Commerce. Informace o postupu zřízení prostředí vyhodnocení Commerce najdete v části [Zřízení prostředí vyhodnocení Commerce](provisioning-guide.md).
 
@@ -44,6 +39,7 @@ Po kompletním zřízení prostředí vyhodnocení Commerce je nutné dokončit 
 1. V seznamu vyberte své prostředí.
 1. V informacích o prostředí vpravo vyberte **Přihlášení k prostředí**. Budete posláni do centrály Commerce.
 1. Ujistěte se, že je v pravém horním rohu vybrána právnická osoba **USRT**.
+2. Přejděte na **Parametry Commerce > Konfigurační parametry** a zkontrolujte, že záznam u položky **ProductSearch.UseAzureSearch** je nastaven na **true**. Pokud tato položka chybí, můžete ji přidat a spustit **Databáze kanálů > Úplná synchronizace** pro Commerce Scale Unit spojenou s vaším webem elektronického obchodu.
 
 Během činností po zřízení v centrále Commerce se ujistěte, že právnická osoba **USRT** je vždy vybrána.
 
@@ -111,6 +107,12 @@ Pokud chcete povolit úlohy v Commerce, postupujte takto:
     1. V podokně akcí na kartě **Dávková úloha** vyberte **Změnit stav**.
     1. Vyberte **Ruší se** a poté vyberte **OK**.
 
+1. Je-li stav úlohy nastaven na **Sraženo**, postupujte následovně:
+
+    1. Vybrat záznam.
+    1. V podokně akcí na kartě **Dávková úloha** vyberte **Změnit stav**.
+    1. Vyberte možnost **Čekání** a potom **OK**.
+
 Volitelně můžete také nastavit interval opakování na jednu (1) minutu pro následující úlohy:
 
 * Zpracovat úlohu maloobchodního oznámení objednávky e-mailem
@@ -133,7 +135,7 @@ Chcete-li spustit úplnou synchronizaci dat v Commerce, postupujte takto v cent
 Chcete-li provést zkušební transakce na webu, můžete použít následující testovací kreditní kartu:
 
 - **Číslo karty:** 4111-1111-1111-1111
-- **Datum konce platnosti:** 10/20
+- **Datum konce platnosti:** 10/30
 - **Ověřovací hodnota platební karty (CVV):** 737
 
 > [!IMPORTANT]
@@ -144,6 +146,9 @@ Chcete-li provést zkušební transakce na webu, můžete použít následujíc�
 Po dokončení postupu zřizování a konfigurace můžete začít používat prostředí vyhodnocení. Pomocí adresy URL nástroje pro tvorbu webu Commerce můžete přejít na práci s vytvářením. Pomocí adresy URL webu Commerce přejděte do prostředí webu zákazníka maloobchodu.
 
 Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení Commerce, najdete informace v části [konfigurace volitelných funkcí prostředí vyhodnocení Commerce](cpe-optional-features.md).
+
+> [!NOTE]
+> Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure Active Directory (Azure AD) business-to-consumer (B2C) pro demonstrační účely. Konfiguace vlastního klienta Azure AD B2C není potřeba pro prostředí vyhodnocení. Pokud však konfigurujete zkušební prostředí tak, aby používalo vašeho vlastního klienta Azure AD B2C, nezapomeňte přidat ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako URL pro odpověď v aplikaci Azure AD B2C přes Azure Portal.
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -157,10 +162,15 @@ Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení 
 
 [Časté otázky týkající se prostředí vyhodnocení Dynamics 365 Commerce](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portál Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Zpracování deníku přidělení hlavní knihy
 description: Toto téma vysvětluje, jak zpracovat požadavek přidělení v aplikaci Dynamics 365 Finance.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a7e8c3ef6fa85daec2a191b433b1ec4ece441ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e89aa21f988d50bc1a922e053be0ff2dcd196268
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834402"
 ---
 # <a name="process-ledger-allocation-journal"></a>Zpracování deníku přidělení hlavní knihy
 
@@ -43,3 +41,6 @@ Toto téma vysvětluje, jak zpracovat požadavek na přidělení. Použijte str�
 9. Zvolte **Zaúčtovat**.
 10. Zvolte **Zaúčtovat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Vytvoření hierarchie klasifikace produktu
 description: Tento postup popisuje, jak vytvořit novou hierarchii kategorií a přiřadit typ hierarchie kódů komodit.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74be72ac5787273e13692abdb9db18be4c5ccc08
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 162b133fd60a862c86c2cd23d93f7495c0214d5cf7727ffa89c0d162190919a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738238"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Vytvoření hierarchie klasifikace produktu
 
@@ -66,3 +64,6 @@ Tento postup popisuje, jak vytvořit novou hierarchii kategorií a přiřadit ty
 8. Klikněte na odkaz na vybraném řádku v seznamu.
 9. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

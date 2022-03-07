@@ -1,12 +1,10 @@
 ---
 title: Přidání závady do pracovního příkazu
 description: Toto téma popisuje postup přidávání registrací závad do pracovních příkazů v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 083ceca9605ad044c172ba7aa23739d170f8c301
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1090d95d381a047e77bca3e18ef7b99151ea3d5f941f2d6c9e4877a339f1385e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761061"
 ---
 # <a name="add-fault-to-work-order"></a>Přidání chyby do pracovního příkazu
 
@@ -52,7 +50,7 @@ Můžete přidat závady nastavené v návrháři závad do pracovního příkaz
 
 Následující obrázek znázorňuje příklad stránky registrace závady.
 
-![Obrázek č. 1](media/19-work-orders.png)
+![Obrázek č. 1.](media/19-work-orders.png)
 
 
 ## <a name="view-asset-faults"></a>Zobrazení závad majetku
@@ -79,3 +77,6 @@ Na stránce se seznamem **Všechen majetek** můžete vytisknout sestavu závad 
 >[!NOTE]
 >Můžete také vytisknout sestavu závad pro několik majetků nebo typů majetku výběrem **Správa majetku** > **Sestavy** > **Majatek** > **Závada majetku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

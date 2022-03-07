@@ -2,15 +2,12 @@
 title: Náhled a publikování experimentu
 description: Toto téma popisuje, jak zobrazit náhled a publikovat experiment z Dynamics 365 Commerce.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4410921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740376"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Náhled a publikování experimentu
 
 Toto téma popisuje, jak můžete zobrazit náhled a publikovat experiment v Dynamics 365 Commerce poté, co jste [připojili experiment a upravili varianty](experimentation-connect-edit.md). Následující schéma znázorňuje všechny kroky, které zahrnuje nastavení a spuštění experimentu na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech.
 
-[ ![Cesta uživatele experimentováním – náhled a publikování](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+[ ![Cesta uživatele experimentováním – náhled a publikování.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
 ## <a name="preview-your-experiment-variations"></a>Náhled variant experimentu
 Můžete si prohlédnout náhled svých variant a dál je upravovat, dokud nebudou vypadat tak, jak chcete.
@@ -60,3 +57,6 @@ Při používání skupin publikování s experimenty je třeba brát v úvahu n
 
 ## <a name="next-step"></a>Další krok
 [Spuštění a monitorování experimentu](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

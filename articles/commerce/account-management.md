@@ -1,16 +1,13 @@
 ---
-title: Stránky a moduly správy účtů
+title: Moduly a stránky správy obchodního vztahu
 description: Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716243"
 ---
-# <a name="account-management-pages-and-modules"></a>Stránky a moduly správy účtů
+# <a name="account-management-pages-and-modules"></a>Moduly a stránky správy obchodního vztahu
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Správa účtů představuje skupinu stránek, které se používají ke správě informací o uživatelských účtech v řešení Dynamics 365 Commerce. Stránky správy účtů zahrnují cílovou stránku správy účtu, stránku uživatelského profilu, stránku uživatelské adresy, stránku historie objednávek, stránku podrobností objednávky, věrnostní stránku a seznam přání.
 
@@ -54,9 +49,9 @@ Stránka historie objednávek využívá modul historie objednávek k zobrazení
 
 Stránka podrobností objednávky poskytuje podrobné informace pro každou objednávku a je přístupná ze stránky historie objednávek. Používá modul podrobností objednávek, který vyžaduje ID prodeje nebo ID transakce k načtení podrobností objednávky.
 
-### <a name="user-profile-page"></a>Stránka profilu uživatele
+### <a name="my-profile-page"></a>Stránka profilu
 
-Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá podrobnosti profilu uživatele a moduly úprav profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit. Stránka profilu uživatele také zobrazuje uživatelské předvolby, které umožňují uživateli přihlásit nebo odhlásit odběr některých funkcí, jako je přizpůsobení seznamů doporučení. 
+Stránka Můj profil zobrazuje podrobnosti profilu účtu uživatele pomocí modulu profilu účtu. Tato stránka zobrazuje e-mailovou adresu přidruženou k účtu uživatele a preference nastavené pro tento účet. Pokud nastavujete vlastní atributy zákazníka, zobrazí tyto atributy také část „Další informace“. Uživatelé mohou upravovat své jméno, preference nebo další informace (jsou-li k dispozici).
 
 ### <a name="user-address-page"></a>Stránka adresy uživatele
 
@@ -89,3 +84,6 @@ Chcete-li se připojit k věrnostnímu programu, můžete vytvořit marketingovo
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

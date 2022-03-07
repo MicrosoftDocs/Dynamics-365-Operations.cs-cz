@@ -2,34 +2,29 @@
 title: Přiřazení seznamů úkolů k obchodům nebo zaměstnancům
 description: Toto téma popisuje, jak přiřadit seznamy úkolů k obchodům nebo zaměstnancům v řešení Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730820"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Přiřazení seznamů úkolů k obchodům nebo zaměstnancům
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak přiřadit seznamy úkolů k obchodům nebo zaměstnancům v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Správa úkolů v Dynamics 365 Commerce umožňuje přiřadit seznam úkolů několika obchodům nebo zaměstnancům nebo kombinaci obchodů a zaměstnanců. Například regionální manažer 20 obchodů bude chtít přiřadit seznam úkolů **Příprava na letní sezónu** ke všem 20 obchodům.
 
@@ -50,7 +45,7 @@ Chcete-li spustit proces přiřazování seznamu úkolů, postupujte podle násl
 
 Následující ilustrace znázorňuje příklad, jak najít a vybrat obchody v dialogovém okně **Spuštění procesu**.
 
-![Vyhledání a výběr obchodů v dialogovém okně Spuštění procesu](media/HQ-Assign-Tasks-Lists.png)
+![Vyhledání a výběr obchodů v dialogovém okně Spuštění procesu.](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Opakované přiřazování seznamů úkolů
 
@@ -67,7 +62,7 @@ Maloobchodní prodejce má někdy opakující se úkoly, například „Úkoly p
 
 Na následujícím obrázku je znázorněn příklad postupu při zadávání kritérií četnosti v dialogovém okně **Definovat opakování**.
 
-![Zadání kritérií četnosti v dialogovém okně Definovat opakování](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Zadání kritérií četnosti v dialogovém okně Definovat opakování.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Sledování stavu seznamu úkolů
 
@@ -92,3 +87,6 @@ Chcete-li sledovat stav seznamu úkolů pro všechny úkoly, které vám jsou p�
 [Vytvoření seznamů úkolů a přidání úkolů](task-mgmt-create-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

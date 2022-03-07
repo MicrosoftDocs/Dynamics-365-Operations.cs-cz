@@ -2,11 +2,9 @@
 title: Import konfigurací pro generování dokumentů s daty aplikace
 description: K provedení kroků v tomto postupu musíte nejprve dokončit postup "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 author: NickSelin
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727478"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Import konfigurací pro generování dokumentů s daty aplikace
 
@@ -75,3 +73,6 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
     * Prohlédněte si strukturu formátu použitého k vygenerování sestavy Intrastat. Všimněte si, že je navržena k vygenerování souboru formátu XML vyplněním dat z datového modelu, které je založen na kořenové položce 'Pro odchozí dokument'. Ověřte, že název vytvořeného souboru je definován ve formuláři dialogového okna uživatele (k tomu slouží zdroj dat 'fn').   
 30. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

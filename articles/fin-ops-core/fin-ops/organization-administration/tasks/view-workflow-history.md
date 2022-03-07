@@ -2,11 +2,9 @@
 title: Zobrazení historie workflow
 description: Toto téma popisuje, jak zobrazit stav dokumentu odeslaného do systému workflowu ke zpracování a schválení.
 author: jasongre
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowStatus
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 325478ed89b9c650899001dd08d1c98550fce520
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0410e8cad5d18c3c8efd96d065967515a657f7edbd0256d148cdb6c6d0b7df41
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749405"
 ---
 # <a name="view-workflow-history"></a>Zobrazení historie workflow
 
@@ -46,3 +44,6 @@ Toto téma popisuje, jak zobrazit stav dokumentu odeslaného do systému workflo
     - Tlačítko **Opětovné přiřazení** otevře dialogové okno, ve kterém můžete opětovně přiřadit pracovní položku jinému uživateli.  
     - Ujistěte se, že je rozbalená část **Sledování podrobností**. V této sekci můžete zobrazit historii workflowu vybraného dokumentu.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Nastavení hlavního plánování
 description: Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování.
 author: t-benebo
-manager: tfehr
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c06e8cc3ba37baae803bfe8d79b8e111f9e53ac3576ed8004f592cff70a358ff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758561"
 ---
 # <a name="set-up-master-planning"></a>Nastavení hlavního plánování
 
@@ -109,11 +106,11 @@ U každého plánu na záložce s náhledem **Obecné** stránky **Hlavní plán
 
 ### <a name="operations-scheduling"></a>Plánování operací
 
-Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase. Plánování operací nerozšiřuje na operace pro výrobní postup úloh. Další informace o plánování operací naleznete v tématu [Plánování operací](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase. Plánování operací nerozšiřuje na operace pro výrobní postup úloh. Další informace o plánování operací naleznete v tématu [Plánování operací](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Plánování úlohy
 
-Plánování práce je podrobnější metodou plánování, kde každá operace je rozdělena na jednotlivé úkoly nebo práce. Plánování práce zahrnuje informace o kapacitě. Obvykle se používá k plánováním jednotlivých úloh v dílně a obvykle je prováděno v krátkodobém až střednědobém časovém horizontu. Další informace o plánování práce naleznete v tématu [Plánování práce](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Plánování práce je podrobnější metodou plánování, kde každá operace je rozdělena na jednotlivé úkoly nebo práce. Plánování práce zahrnuje informace o kapacitě. Obvykle se používá k plánováním jednotlivých úloh v dílně a obvykle je prováděno v krátkodobém až střednědobém časovém horizontu. Další informace o plánování práce naleznete v tématu [Plánování práce](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Ochranné doby ve dnech
 
@@ -161,7 +158,7 @@ Zprávy akce navrhují změny, které lze provést u existující objednávky do
 
 Nastavením možnosti **Zpráva akce** na **Ano** můžete přepsat ochrannou dobu zprávy akce definovanou pro položku během hlavního plánování. V tomto případě zadejte počet dní, během nichž by mělo hlavní plánování generovat zprávy akce pro požadavky. Ochranná doba zprávy akce se počítá od aktuálního data.
 
-Další informace o zprávách akce naleznete v tématu [Zprávy akce](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Další informace o zprávách akce naleznete v tématu [Zprávy akce](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Výpočet zpráv akce má za následek delší operační dobu hlavního plánování. Nejsou-li zprávy akce pravidelně analyzovány a použity (denně, týdně atd.), zvažte při spuštění hlavního plánování vypnutí výpočtu. Chcete-li vypnout výpočet, na stránce **Hlavní plány** nastavte ochrannou dobu **Zprávy akce** na **0** (nula) fpro hlavní plán, který spouštíte. Rovněž zkontrolujte, zda je nastavení **Zprávy akce** vypnuto pro všechny skupiny disponibility.
@@ -226,4 +223,7 @@ Doba realizace + záporné dny + aktuální datum – datum požadavku
 
 Systém používá pouze plánované objednávky dodávek, které jsou v této ochranné době, a vytváří novou plánovanou objednávku mimo ni. Výhodou dynamických negativních dnů je, že bude zahrnuta doba realizace jednotlivého produktu pro opětovné použití existujících objednávek a pro zamezení vytváření nových plánovaných objednávek, které budou ukončeny později v důsledku zpoždění způsobených dobou realizace. 
 
-Další informace naleznete v tématu [Záporné dny a dynamické záporné dny](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Další informace naleznete v tématu [Záporné dny a dynamické záporné dny](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

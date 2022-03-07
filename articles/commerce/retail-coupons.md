@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb21c037c4492ce215780913301c0c0b54ab9d2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410712"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259459"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
@@ -82,3 +81,6 @@ Funkce kupón zahrnuje více různých funkcí. Centrály obchodu (HQ) a kanál 
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány Commerce Scale Unit a POS.** V aktualizaci HQ se aktualizují stránky kupónu a slev a modul velkoobchodní ceny je rovněž aktualizován. Pokud je aktualizována pouze jedna z těchto dvou komponent, některé stránky v modulu Commerce nebudou odpovídat datům výpočtu ceny. Při výpočtech slevy tak mohou nastat neočekávané výpočty slevy nebo chyby.
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány Commerce Scale Unit a POS (N-1).** Vzhledem k tomu, že zároveň nemohou být aktualizovány všechny obchody, doporučujeme, abyste provedli aktualizaci HQ před aktualizací maloobchodů. V případě scénáře N-1 nebude nová funkčnosti vztahující se ke kupónům k dispozici v obchodech, které dosud nebyly aktualizovány. Funkce kupónu například zavádí řádky vyloučení. Používáte-li u slevy vyloučené řádky, nebudou použity v obchodě, ve kterém je spuštěna dřívější verze.
 - **HQ se neaktualizuje, ale jsou aktualizovány Commerce Scale Unit a POS (N+1).** Vzhledem k tomu, že aktualizovaný cenový modul v Commerce Scale Unit dokáže zpracovávat zastaralé kódy slev během cenové kalkulace, aktualizace by neměla mít žádný funkční dopad na tento scénář.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

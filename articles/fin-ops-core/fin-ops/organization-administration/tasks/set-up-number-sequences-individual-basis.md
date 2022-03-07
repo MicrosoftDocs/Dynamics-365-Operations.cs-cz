@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 6ae2fb85bfca6c6a30ec5bd7a13838628a6376f9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796623"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560500"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nastavení číselných řad na jednotlivém základě
 
@@ -40,3 +39,6 @@ Toto téma vysvětluje nastavení číselných řad na jednotlivém základě. �
 8. Rozbalte sekci **Obecné**. Na pevné záložce Obecné určete, zda je číselná řada manuální a souvislá nebo nesouvislá. Navíc zadejte nejnižší a nejvyšší čísla, která lze použít v číselné řadě. Nedoporučujeme nesouvislou číselnou řadu změnit na souvislou číselnou řadu. Číselná řada nebude skutečně souvislá. Tato změna může způsobit narušení duplicitního klíče v databáze. Navíc souvislé číselné řady mají větší vliv na výkon.   
 9. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

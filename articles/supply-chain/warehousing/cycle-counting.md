@@ -1,29 +1,26 @@
 ---
 title: Cyklická inventura
 description: Tento článek popisuje postup použití cyklické inventury v rámci řešení skladu, které je k dispozici v modulu Řízení skladu. Tento článek se nevztahuje na skladové řešení, které je k dispozici v modulu Řízení zásob.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424152"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902214"
 ---
 # <a name="cycle-counting"></a>Cyklická inventura
 
@@ -37,7 +34,7 @@ Cyklická inventura je skladový proces, který slouží k auditu skladových po
 2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Dynamics 365 Supply Chain Management pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
 3.  **Vyřešení rozdílu v cyklicky vypočtené hodnotě** ─ po cyklické inventuře budou mít všechny položky, které se liší ve vypočítané hodnotě, stav práce **Čeká na kontrolu** na stránce **Veškerá práce**. Tyto rozdíly můžete vyřešit na stránce **Cyklická inventura práce čeká na kontrolu**.
 
-Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru](./media/performcyclecountinginawarehouselocation.jpg)
+Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Požadavky cyklické inventury
 Následující tabulka zobrazuje požadavky, které musí být splněny, než začnete používat cyklickou inventuru.
@@ -140,3 +137,6 @@ Můžete upravit rozdíly ve vypočítané hodnotě, a poté potvrdit vypočíta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

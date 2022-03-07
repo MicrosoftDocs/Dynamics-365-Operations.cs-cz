@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04b27a5560b6126fde3028f653a89059bb765844
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423838"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254958"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>Postoupení vrácených položek ke kontrole 
 
@@ -56,3 +55,6 @@ Tím systém vyzvete k vytvoření karanténního příkazu a osoba nebo odděle
 
 [Určení způsobu nakládání s vrácenými položkami](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

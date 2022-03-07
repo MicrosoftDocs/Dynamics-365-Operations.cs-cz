@@ -1,39 +1,35 @@
 ---
-title: Rozvrh převodů kanbanu podporuje skenery čárových kódů
+title: Podpora desky převodů kanbanu pro čtečky čárového kódu
 description: Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424040"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566804"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Podpora desky převodů kanbanu pro čtečky čárového kódu
 
 [!include [banner](../includes/banner.md)]
 
 Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
 
-<a name="registration-modes"></a>Režimy registrace
-------------------
+## <a name="registration-modes"></a>Režimy registrace
 
 Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, který řídí akci při skenování čísla kanbanové karty ne ručně skenujete číslo v poli Číslo kanbanové karty.
 
@@ -44,11 +40,10 @@ Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, kt
 | Prázdné                 | Registrovat manipulační jednotku materiálu odkazovanou kanbanovou kartou jako prázdnou.              |
 | Vybrat                | Registrovat číslo kanbanové karty a automaticky vybrat odkazovanou úlohu ze seznamu kanbanu. |
 
- 
-Režim registrace – Nastavit
-------------------------
+ 
+## <a name="registration-mode-select"></a>Režim registrace – Nastavit
 
-Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní.V tomto režimu platí následující podmínky:
+Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní. V tomto režimu platí následující podmínky:
 
 -   Zobrazí se pouze skenovaná kanbanová úloha.
 -   Podrobnosti o vybrané úloze jsou uvedeny na pevné záložce **Podrobnosti**.
@@ -95,7 +90,7 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <td>Ano</td>
 <td>Ano</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
 </tr>
 <tr class="even">
@@ -105,61 +100,61 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <li>Doložené úlohy nejsou dokončeny</li>
 </ul></td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převést</td>
 <td>Probíhá</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 <td>Ano</td>
 <td>Ano</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Převést</td>
 <td>Dokončeno</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 <td>Ano</td>
-<td>Č.</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převod nebo průběh</td>
 <td>Prázdné</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Převod nebo průběh</td>
 <td>Kanbanová karta nebyla nalezena</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Převod nebo průběh</td>
 <td>Kanbanová karta je nalezena, ale není přiřazena ke kanbanu</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="even">
 <td>Proces</td>
@@ -168,22 +163,22 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 <li>Připraveno</li>
 <li>Probíhá</li>
 </ul></td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 <tr class="odd">
 <td>Proces</td>
 <td>Dokončeno</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
-<td>Č.</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
+<td>Ne</td>
 </tr>
 </tbody>
 </table>
@@ -192,3 +187,6 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

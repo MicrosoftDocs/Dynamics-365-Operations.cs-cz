@@ -2,27 +2,24 @@
 title: Definování data vypršení platnosti verze výrobního toku
 description: Pro ukončení platnosti a zpracování verze výrobního toku k danému datu nebo naplánování nahrazení aktivní verze novou verzí je nutné nastavit datum vypršení platnosti na verzi.
 author: cvocph
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 97ac33d28a49ad0f2a3956ad65b159e4ec4785c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97d652fbf647b62359efe27d4d740f6e38b70b59
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423518"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828795"
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>Definování data vypršení platnosti verze výrobního toku
 
@@ -41,3 +38,6 @@ Pro ukončení platnosti a zpracování verze výrobního toku k danému datu ne
 6. Do pole Datum vypršení platnosti zadejte datum a čas.
     * Pro datum vypršení platnosti se nová verze nespustí nebo neaktivuje. Také již nebude možné vytvořit nebo spustit úlohy pro tento výrobní tok. Dále můžete dokončit zahájené úlohy po datu vypršení platnosti.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management
 description: Toto téma poskytuje přehled možností migrace produktů a řízení skladu.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5ac8c0d8781e5146186fbf71ce619f90ca3556ccefefe7e974efded7e0eb86dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775428"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -68,7 +66,7 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 1.  Vytvořte alespoň jeden nový profil skladového místa
 2.  Klikněte na **řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Povolit nastavení skladu**.
 3.  Na stránce **Povolit nastavení skladu** přidejte sklady, které mají být povoleny. Tento krok můžete dokončit přímo na stránce nebo pomocí integrace aplikace Microsoft Office.
-4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](../../dev-itpro/data-entities/data-entities.md).
+4.  Přiřadíte profil skladového místa všem skladovým místům. Tento krok můžete snadno dokončit pomocí integrace aplikace Microsoft Office přímo na stránce. Můžete exportovat a importovat data nebo použít zpracování datové entity v modulu [Správa dat](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 5.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 6.  Zpracujte změny.
 
@@ -79,6 +77,9 @@ Než bude možné použít vydané produkty v modulu **Řízení skladu**, musí
 3.  Na stránce **Hierarchie rezervací** definujte novou hierarchii rezervací podle skupiny skladu a dimenzí sledování.
 4.  Vytvořte jednu nebo více skupin klasifikace jednotek, které obsahují přinejmenším stejné jednotky, jaké se používají pro skladové položky.
 5.  Klikněte na **Řízení skladu** &gt; **Nastavení** &gt; **Povolit procesy řízení skladu** &gt; **Změnit skupinu dimenzí úložiště pro položky**.
-6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa data](../../dev-itpro/data-entities/data-entities.md).
+6.  Na stránce **Změnit skupinu dimenzí úložiště položek** přidejte čísla položky, skupiny dimenze úložiště a skupiny klasifikace jednotek. Tento krok můžete dokončit přímo na stránce pomocí integrace Microsoft Office nebo procesu entity dat v modulu [Správa data](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Ověřte změny. V rámci procesu ověření probíhají různá ověření integrity dat. V rámci rozsáhlejšího procesu upgradu může být nutné upravit problémy, které nastanou, ve zdrojové implementaci. V tomto případě bude vyžadován další upgrade dat.
 8.  Zpracujte změny. Aktualizace všech dimenzí zásob může chvíli trvat. Průběh můžete sledovat pomocí úkolů dávkové úlohy můžete sledovat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

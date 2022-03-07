@@ -2,11 +2,9 @@
 title: Najmutí existujících zaměstnanců prostřednictvím náboru
 description: Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: df23be9a657b7001b4974e7802a507c0c54a18dacb46354a68699d759827e941
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749573"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Najmutí existujících zaměstnanců prostřednictvím náboru
 
@@ -40,3 +38,6 @@ Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanc
 9. Klikněte na možnost Změna pozice.
     * Nyní můžete také změnit kompenzaci. Pokud nyní kompenzaci nepřiřadíte, můžete to změnit zobrazením formuláře pracovníka, výběrem karty Kompenzace a výběrem možnosti „Fixní plán“. Po výběru možnosti „Změna pozice“ bude stav přihlášky aktualizován na hodnotu „Zaměstnán“.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

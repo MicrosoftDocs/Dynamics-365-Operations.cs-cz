@@ -1,41 +1,41 @@
 ---
 title: Přehled fiskální integrace pro kanály Commerce
 description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
-author: josaw
+author: EvgenyPopovMBS
 manager: annbe
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017460"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343280"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Úvod
+Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce. 
 
-Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce. Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace:
+Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace:
 
 - Zaregistrujte prodej na fiskálním zařízení, které je připojeno k pokladnímu místu (POS), jako je například fiskální tiskárna, a vytiskněte pro zákazníka příjmový doklad.
 - Bezpečně odešlete informace, které souvisejí s prodejem a vráceními, které jsou dokončeny v Retail POS do externí webové službě, kterou provozuje daňový úřad.
 - Pomozte zaručit nezaměnitelnost dat prodejních transakcí prostřednictvím digitálních podpisů.
 
-Funkce fiskální integrace je rámcem, který poskytuje společné řešení pro další vývoj a přizpůsobení integrace mezi Retail POS a fiskálními zařízeními a službami. Funkčnost zahrnuje také ukázky fiskální integrace, které podporují základní scénáře pro konkrétní země nebo oblasti a které pracují se specifickými fiskálními zařízeními nebo službami. Ukázka fiskální integrace se skládá z několika rozšíření komponent aplikace Commerce a je zahrnuta v sadě software development kit (SDK). Další informace o ukázkách fiskální integrace naleznete v tématu [Ukázky fiskální integrace v Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informace o instalaci a použití sady Retail SDK naleznete v tématu [Architektura sady Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funkce fiskální integrace je rámcem, který poskytuje společné řešení pro další vývoj a přizpůsobení integrace mezi Retail POS a fiskálními zařízeními a službami. Funkčnost zahrnuje také ukázky fiskální integrace, které podporují základní scénáře pro konkrétní země nebo oblasti a které pracují se specifickými fiskálními zařízeními nebo službami. Ukázka fiskální integrace se skládá z několika rozšíření komponent aplikace Commerce a je zahrnuta v sadě software development kit (SDK). Další informace o ukázkách fiskální integrace naleznete v tématu [Ukázky fiskální integrace v Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Informace o instalaci a použití sady Commerce SDK naleznete v tématu [Architektura sady Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Chcete-li podporovat jiné scénáře, které nejsou podporovány ukázkou fiskální integrace, integrovat Retail POS s jinými fiskálními zařízeními nebo službami, nebo pokrýt požadavky jiných zemí nebo oblastí, musíte buď rozšířit existující ukázku fiskální integrace, nebo vytvořit novou ukázku pomocí příkladu existujícího ukázky jako příkladu.
 
@@ -56,15 +56,15 @@ Proces fiskální registrace pro specifickou registrační pokladnu POS je defin
 Následující příklad ukazuje typický tok provedení fiskální registrace pro fiskální zařízení. Tok začíná událostí v POS (například dokončením prodejní transakce) a implementuje následující pořadí kroků:
 
 1. POS požaduje fiskální dokument z CRT.
-2. CRT určuje, zda aktuální událost požaduje fiskální registraci.
-3. Na základě nastavení procesu fiskální registrace identifikuje CRT fiskální konektor a příslušného poskytovatele fiskálních dokumentů, které se použijí pro fiskální registraci.
-4. CRT spustí poskytovatele fiskálních dokumentů, který vygeneruje fiskální dokument (například dokument XML), který představuje transakci nebo událost.
-5. POS odešle fiskální dokument, který připravuje CRT, do hardwarové stanice.
-6. Hardwarová stanice spustí fiskální konektor, který zpracuje fiskální dokument a komunikuje ho do fiskálního zařízení nebo služby.
-7. POS analyzuje odpověď z fiskálního zařízení nebo služby a určí, zda byla fiskální registrace úspěšná.
-8. CRT uloží odpověď do databáze kanálů.
+1. CRT určuje, zda aktuální událost požaduje fiskální registraci.
+1. Na základě nastavení procesu fiskální registrace identifikuje CRT fiskální konektor a příslušného poskytovatele fiskálních dokumentů, které se použijí pro fiskální registraci.
+1. CRT spustí poskytovatele fiskálních dokumentů, který vygeneruje fiskální dokument (například dokument XML), který představuje transakci nebo událost.
+1. POS odešle fiskální dokument, který připravuje CRT, do hardwarové stanice.
+1. Hardwarová stanice spustí fiskální konektor, který zpracuje fiskální dokument a komunikuje ho do fiskálního zařízení nebo služby.
+1. POS analyzuje odpověď z fiskálního zařízení nebo služby a určí, zda byla fiskální registrace úspěšná.
+1. CRT uloží odpověď do databáze kanálů.
 
-![Schéma řešení](media/emea-fiscal-integration-solution.png "Schéma řešení")
+![Schéma řešení.](media/emea-fiscal-integration-solution.png "Schéma řešení")
 
 ## <a name="error-handling"></a>Zpracování chyb
 
@@ -118,6 +118,8 @@ Fiskální transakce ukládá následující podrobnosti:
 - Stav fiskální registrace: **Dokončeno** pro úspěšnou registraci, **Přeskočeno**, pokud operátor zvolil možnost **Přeskočit** pro nezdařenou registraci, nebo **Označeno jako registrované**, pokud operátor zvolil možnost **Označit jako registrované**.
 - Transakce informačních kódů, které souvisí s vybranou fiskální transakcí. Chcete-li zobrazit transakce informačních kódů, na záložce s náhledem **Fiskální transakce** zvolte fiskální transakci, která má stav **Přeskočeno** nebo **Označen jako registrované**, a poté vyberte **Transakce informačních kódů**.
 
+Výběrem možnosti **Rozšířená data** můžete také zobrazit některé vlastnosti fiskální transakce. Seznam vlastností, které lze zobrazit, je specifický pro funkci fiskální registrace, která generovala fiskální transakci. Můžete například zobrazit digitální podpis, pořadové číslo, kryptografický otisk certifikátu, identifikaci algoritmu hash a další fiskální transakční vlastnosti pro funkci digitálního podepisování pro Francii.
+
 ## <a name="fiscal-texts-for-discounts"></a>Fiskální texty pro slevy
 
 Některé země nebo oblasti mají zvláštní požadavky na dodatečné texty, které musí být vytištěny na fiskálních příjemkách při použití různých druhů slev. Funkce fiskální integrace umožňuje nastavit speciální text pro slevu, který je vytištěn na fiskální příjemce za řádkem slevy. Pro ruční slevy můžete nastavit fiskální text pro informační kód, který je určena jako informační kód **Sleva na produkt** ve funkčním profilu POS. Další informace o způsobu nastavení fiskálních textů pro slevy naleznete v tématu [Nastavení fiskálních textů pro slevy](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -129,23 +131,29 @@ Funkce fiskální integrace podporuje generování výkazů na konci dne, které
 - Nová tlačítka, která spouštějí odpovídající operace, by měla být přidána do rozložení obrazovky POS. Další podrobnosti naleznete v tématu [Nastavení fiskálních sestav X/ Z z POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - V ukázce fiskální integrace by tyto operace měly odpovídat příslušným operacím fiskálního zařízení.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Ukázky fiskální integrace v Retail SDK
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Ukázky fiskální integrace v Commerce SDK
 
-Následující ukázky fiskální integrace jsou v současné době k dispozici v sadě Retail SDK:
+Následující ukázky fiskální integrace jsou v současné době k dispozici v sadě Commerce SDK:
 
-- [Vzor integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md)
-- [Vzor integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md)
-- [Ukázka integrace fiskální služby pro Rakousko](emea-aut-fi-sample.md)
-- [Ukázka integrace fiskální služby pro Českou republiku](emea-cze-fi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Itálii](./emea-ita-fpi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Polsko](./emea-pol-fpi-sample.md)
+- [Ukázka integrace fiskální služby pro Rakousko](./emea-aut-fi-sample.md)
+- [Ukázka integrace fiskální služby pro Českou republiku](./emea-cze-fi-sample.md)
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Německo](./emea-deu-fi-sample.md)
 
-Následující funkce fiskální integrace je k dispozici také v sadě Retail SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
+Následující funkce fiskální integrace je také implementována pomocí rámce fiskální integrace, ale je k dispozici ihned a není součástí Commerce SDK:
 
+- [Fiskální registrace pro Brazílii](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digitální podpis pro Francii](./emea-fra-cash-registers.md)
 
-- [Digitální podpis pro Francii](emea-fra-cash-registers.md)
-- [Digitální podpis pro Norsko](emea-nor-cash-registers.md)
+Následující funkce fiskální integrace je k dispozici také v sadě Commerce SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
 
-Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Retail SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
+- [Digitální podpis pro Norsko](./emea-nor-cash-registers.md)
+
+Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Commerce SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
 
 - [Ukázka integrace kontrolní jednotky pro Švédsko (starší)](./retail-sdk-control-unit-sample.md)
+- [Digitální podpis pro Francii (starší)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

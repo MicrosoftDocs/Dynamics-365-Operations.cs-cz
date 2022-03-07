@@ -2,11 +2,9 @@
 title: Úprava formátů opětovným použitím šablon aplikace Excel
 description: K provedení kroků v tomto postupu musíte nejprve dokončit průvodce záznamem úloh s názvem „ER – návrh konfigurace pro generování sestav ve formátu OPENXML“.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24eb64679b458d14e30dc5b4365c7305d71cfc4c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754883"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Úprava formátů opětovným použitím šablon aplikace Excel
 
@@ -83,3 +81,6 @@ Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazov�
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Použijte upravené pracovní verze formátu ER při zpracování deníku plateb
 
 Zkontrolujte vytvořený seznam včetně nových podrobností o řádcích platby – datum platby.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

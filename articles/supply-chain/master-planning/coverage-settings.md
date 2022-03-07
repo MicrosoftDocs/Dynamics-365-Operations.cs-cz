@@ -1,30 +1,27 @@
 ---
 title: Nastavení distponibility
 description: Toto téma poskytuje informace o nastavení disponibility, které hlavní plánování používá k výpočtu požadavků na položky.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1d0fec443ee4c531d2bc7edc6623d309e863348b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424059"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569786"
 ---
 # <a name="coverage-settings"></a>Nastavení distponibility
 
@@ -66,3 +63,6 @@ Každá metoda doplnění je přiřazena k jednomu z následujících kódů pok
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hlavních plánů](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 6. srpnu 2020.
-author: darinkramer
-manager: AnnBe
-ms.date: 8/06/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 5f4a4de6cbed0a3ecb3e85782fac65d399731cf2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528418"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129820"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
 
@@ -142,9 +142,9 @@ Entita DMF je nyní k dispozici pro akruální pozastavení
 
 ## <a name="coming-soon"></a>Již brzy
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Položky kontrolního seznamu zahrnuté do Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Položky kontrolního seznamu zahrnuté do Dataverse
 
-Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Common Data Service k dispozici již brzy.
+Položky kontrolního seznamu pro onboarding, offboarding, převody a obchodní procesy budou v systému Dataverse k dispozici již brzy.
 
 ## <a name="known-issues"></a>Známé problémy
 

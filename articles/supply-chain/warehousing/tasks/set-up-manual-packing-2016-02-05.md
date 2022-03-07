@@ -1,28 +1,25 @@
 ---
 title: Nastavení ručního balení (únor 2016 a květen 2016)
 description: Proces balení umožňuje ověřit a zabalit produkty do kontejnerů.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbcd9653f2f3752f067828918ee61d96f9307c6d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424197"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576057"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Nastavení ručního balení (únor 2016 a květen 2016)
 
@@ -95,3 +92,6 @@ Proces balení umožňuje ověřit a zabalit produkty do kontejnerů. V tomto pr
 8. V poli Hmotnost jednotky zadejte nebo vyberte hodnotu.
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Výkaz DPH pro Českou republiku
 description: Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8dfd0f23008cd72c0aa359ef1024983a2f1fd080
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1e46024699cca6aeb30548807d20972311b9ee5a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962819"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839852"
 ---
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
@@ -147,3 +145,6 @@ Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH**, vybert
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

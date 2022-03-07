@@ -2,35 +2,30 @@
 title: Modul dodací adresy
 description: Toto téma popisuje modul dodací adresy a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4410944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765187"
 ---
 # <a name="shipping-address-module"></a>Modul dodací adresy
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje modul dodací adresy a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Modul dodací adresy umožňuje zákazníkovi přidat nebo vybrat dodací adresu objednávky během procesu platby. Je-li zákazník přihlášen, zobrazí se všechny adresy, které byly pro daného zákazníka dříve uloženy, a zákazník si z nich může vybírat. Zákazník může také přidat novou adresu. Modul dodací adresy se použije pro všechny položky v objednávce, které vyžadují dodání.
 
@@ -42,7 +37,7 @@ Přestože modul dodací adresy neposkytuje ověřování adres, tuto funkci lze
 
 Následující obrázek ukazuje příklad nového modulu dodací adresy na stránce pokladny.
 
-![Příklad modulu dodací adresy na stránce pokladny](./media/ecommerce-shippingaddress.PNG)
+![Příklad modulu dodací adresy na stránce pokladny.](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>Vlastnosti modulu
 
@@ -50,6 +45,8 @@ Následující obrázek ukazuje příklad nového modulu dodací adresy na strá
 |---------------|--------|-------------|
 | Záhlaví | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Volitelný nadpis pro modul dodací adresy. |
 | Zobrazit typ adresy | **Pravda** nebo **nepravda** | Pokud je tato volitelná vlastnost nastavena na **Pravda**, zobrazí se typ adresy, například **Domov** nebo **Podnik**. Pokud není zadán žádný typ adresy, bude adresa automaticky uložena jako **Typ**=**Jiný**. |
+| Povolit automatické návrhy| **Pravda** nebo **nepravda** | Pokud je tato volitelná vlastnost nastavena na **True**, budou poskytnuty automatické návrhy adres. Tyto návrhy jsou založeny na Bing Maps. Informace o tom, jak nastavit integraci Bing Maps pro váš web, najdete v části [Modul pro výběr obchodu](store-selector.md). Tato funkce je k dispozici v aplikaci Commerce od verze 10.0.15.|
+|Možnosti automatického navrhování| Číslo| Pokud jsou povoleny automatické návrhy adres, můžete určit další možnosti, například maximální počet návrhů, které by měly být poskytnuty.|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Na stránku pokladny přidejte modul dodací adresy a nastavte požadované vlastnosti.
 
@@ -72,3 +69,8 @@ Modul dodací adresy lze přidat pouze do modulu pokladny. Další informace o k
 [Modul podrobností objednávky](order-confirmation-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+[Modul volby obchodu](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

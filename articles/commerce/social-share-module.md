@@ -2,15 +2,12 @@
 title: Modul pro sdílení na sociálních sítích
 description: Tohle téma se zabývá moduly pro sdílení na sociálních sítích a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4410913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730940"
 ---
-# <a name="social-share-module"></a>Modul pro sdílení na sociálních sítích
+# <a name="social-share-module"></a>Modul sdílení na sociálních sítích
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly pro sdílení na sociálních sítích a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Moduly pro sdílení na sociálních sítích umožňují uživatelům sdílet adresy URL webových stránek e-Commerce na sociálních médiích, jako je Facebook , Twitter, Pinterest a LinkedIn. Adresy URL webových stránek lze také sdílet prostřednictvím e-mailu. Moduly pro sdílení na sociálních sítích se běžně používají na stránkách s podrobnostmi o produktu (PDP), které uživatelům pomáhají sdílet informace o produktu.
 
@@ -41,7 +36,7 @@ Každá platforma sociálních médií může sledovat soubory cookie, takže te
 
 Následující obrázek znázorňuje příklad modulu pro sdílení na sociálních sítích použitého na stránce s podrobnostmi o produktu.
 
-![Příklad modulu pro sdílení na sociálních sítích](./media/ecommerce-socialshare.png)
+![Příklad modulu pro sdílení na sociálních sítích.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Vlastnosti modulu pro sdílení na sociálních sítích
 
@@ -82,3 +77,6 @@ Chcete-li přidat modul pro sdílení na sociálních sítích do modulu buy box
 [Modul buy boxu](add-buy-box.md)
 
 [Zásady zacházení se soubory cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

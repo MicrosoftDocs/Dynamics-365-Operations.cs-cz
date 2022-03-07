@@ -1,12 +1,10 @@
 ---
 title: Automatizace procesů inkasa
-description: Tohle téma popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa (například telefonický hovor) nebo odeslání upomínky zákazníkovi.
+description: Toto téma popisuje, jak vytvořit strategie procesu inkasa, které automaticky identifikují faktury zákazníka, které vyžadují e-mailové připomenutí, aktivitu inkasa nebo odeslání upomínky zákazníkovi.
 author: panolte
-manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0afc56ecea72e281d689930cc91cf6048426d3127ab10c8c284b2eea0f3933d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723888"
 ---
 # <a name="collections-process-automation"></a>Automatizace procesů inkasa
 
@@ -32,6 +30,8 @@ Organizace tráví značné množství času zkoumáním sestav splatných zůst
 
 ## <a name="collections-process-setup"></a>Nastavení procesu inkasa
 Můžete použít stránku **Nastavení procesu inkasa** (**Kredit a inkasa > Nastavení > Nastavení procesu inkasa**) k vytvoření automatizovaného procesu inkasa, který bude plánovat aktivity, odesílat e-mailové zprávy a vytvářet a zaúčtovávat upomínky zákazníka. Kroky procesu jsou založeny na přední nebo nejstarší otevřené faktuře. Každý krok používá tuto fakturu k určení, jaká komunikace nebo aktivita by měla probíhat s konkrétním zákazníkem.  
+
+Týmy výběhu obvykle zasílají včasné oznámení týkající se každé nevyřízené faktury, aby byl zákazník informován, když má být faktura splatná. Výběr **Předupomínání** lze nastavit tak, aby umožňoval provedení jednoho kroku v každé hierarchii procesů pro každou fakturu, jakmile načasování faktury dosáhne tohoto kroku.
 
 ### <a name="process-hierarchy"></a>Hierarchie procesu
 Každý fond zákazníků lze přiřadit pouze jedné hierarchii procesů. Pořadí hierarchie v tomto kroku určuje, který proces bude mít přednost, pokud je zákazník součástí více než jedné skupiny, která má přiřazenu hierarchii procesů. ID fondu určuje, kterým zákazníkům bude proces přiřazen. 
@@ -82,6 +82,7 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 |                                                           |     Obchodní dokument                           |     Definuje šablonu aktivity nebo e-mailu, která se použije během kroku procesu.                                                                        |
 |                                                           |     Kdy                                          |     Definuje, zda bude krok procesu probíhat před nebo po datu splatnosti přední faktury spolu s polem **Dny ve vztahu k datu splatnosti faktury**.        |
 |                                                           |     Dny ve vztahu k datu splatnosti faktury        |     Spolu s polem **Když** určuje načasování kroku procesu.                                                                          |
+|                                                           |     Předběžná upomínka                                   |     Tento výběr umožňuje nastavit jeden krok na hierarchii procesů a spustit jej proti každé faktuře, jakmile dosáhne časových kritérií.                                                |
 |                                                           |     Příjemce                                     |     Určuje, zda bude e-mail zaslán na adresu kontaktu zákazníka, prodejní skupiny nebo inkasního agenta.                                                   |
 |                                                           |     Kontakt obchodního účelu                    |     Určuje, která e-mailová adresa příjemce se použije v e-mailové komunikaci.                                                                                 |
 
@@ -100,7 +101,7 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 ### <a name="collections-history"></a>Historie inkas 
 |     Strana                              |     Pole     |      popis                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Nastavení procesu inkasa       |               |     Zobrazí nedávnou historii pro vybranou hierarchii procesů.     |
+|     Nastavení procesu inkasa       |               |     Zobrazí nedávnou historii pro vybranou hierarchii procesů.       |
 
 ### <a name="collection-process-assignment"></a>Přiřazení procesu inkasa
 |     Strana                              |     Pole     |      popis                                                  |
@@ -110,6 +111,11 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 |     Verze Preview přiřazení procesu      |               |     Náhled zákazníků, kteří budou přiřazeni ke strategii, jakmile bude spuštěna.   |
 |     Verze Preview přiřazení zákazníka     |               |     Zobrazení strategie, ke které je přiřazen konkrétní zákazník.    |
  
+ ### <a name="process-simulation"></a>Simulace procesu
+|     Strana                              |     Pole     |      popis                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Simulace procesu                 |               |     Zobrazí náhled akcí, které budou vytvořeny, pokud je v tuto chvíli spuštěna automatizace vybraného procesu. |
+
 ### <a name="parameters"></a>Parametry
 |     Strana                                                                  |     Pole                                             |      popis                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,3 +123,7 @@ V následujících tabulkách je uveden seznam stránek a polí, ze kterých lze
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Automatické zaúčtování upomínek           |     Typy akcí upomínek, které zaúčtují upomínku během automatizace.                                      |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Vytváření aktivit pro automatizaci                |     Vytváření a uzavírání aktivit pro typy akcí bez aktivity, abyste mohli zobrazit všechny automatické kroky provedené v účtu.        |
 |     Parametry pohledávek > Automatizace procesu inkasa     |     Dny uchování automatizace procesu inkasa     |     Definuje počet dní, po které je uchována historie inkas.                                                       |
+|     Parametry pohledávek > Automatizace procesu inkasa     |     Vyloučit fakturu po aktivaci posledního kroku procesu    |     Faktura, která dosáhne posledního kroku procesu výběru, nebude použita k vytvoření budoucích typů akcí automatizace procesu. Další nejstarší faktura určí další krok automatizace procesu, aby bylo zajištěno, že akce automatizace procesu shromažďování budou pokračovat.                                                        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

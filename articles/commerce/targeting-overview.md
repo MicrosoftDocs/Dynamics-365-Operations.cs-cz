@@ -2,8 +2,8 @@
 title: Cílení na zařízení, trh a geografickou polohu
 description: Toto téma popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
 author: sushma-rao
-ms.date: 02/03/2022
-ms.topic: overview
+ms.date: 07/30/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 3ecc04c97b42b17f257aa40f665136c70de398748b9bda0da860c7000c062807
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730844"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Cílení na zařízení, trh a geografickou polohu
 
@@ -96,18 +96,6 @@ Chcete -li upravit cílovou skupinu, vyberte její hypertextový odkaz na kartě
 
 > [!NOTE]
 > Cílové skupiny jsou konceptem na úrovni webu v konfigurátoru webů Commerce. Můžete sdílet stejnou cílovou skupinu ve více cílech.
-
-### <a name="rename-an-audience-in-site-builder"></a>Přejmenování cílové skupiny v konfigurátoru webů
-
-Stávající cílovou skupinu přejmenujete v konfigurátoru webů Commerce tímto postupem.
-
-1. V levém navigačním podokně vyberte položku **Cílové skupiny**.
-1. Vyberte název segmentu cílové skupiny, který chcete přejmenovat.
-1. Výběrem příkazu **Upravit** začněte úpravu cílové skupiny.
-1. V podokně vlastností cílové skupiny vyberte symbol pera vedle názvu cílové skupiny.
-1. Podle potřeby upravte název cílové skupiny.
-1. Zaškrtnutím políčka potvrďte změnu názvu.
-1. Vyberte **Dokončit úpravy**.
 
 ## <a name="targets"></a>Cíle
 

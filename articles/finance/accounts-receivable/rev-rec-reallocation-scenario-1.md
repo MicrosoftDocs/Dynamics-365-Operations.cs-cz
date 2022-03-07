@@ -2,11 +2,9 @@
 title: Opětovné přidělení uznání výnosů – scénář 1
 description: Toto téma se zabývá scénářem opětovného přidělení uznání výnosů, když jsou zadány dvě prodejní objednávky, ale ty jsou pouze potvrzeny. K podobným výsledkům dojdete, když jsou potvrzeny více než dvě prodejní objednávky.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a0add2d4bc01127c1f359736398123a6a3df9fe
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d63082553f8625a9953b0a85d59a4949a37c92770ce2a41a43d78cf0266f3b85
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770706"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Opětovné přidělení uznání výnosů – scénář 1
 
@@ -58,3 +56,6 @@ Opětovné přidělení dokončíte tlačítkem **Zpracovat**. Zobrazí se výzv
 > Chcete-li zadat kontext, proč se zobrazují tyto další položky, můžete do mřížky přidat další sloupce, například **ID opětovného přidělení** a **Prodejní objednávka**.
 > 
 > [![Další sloupce na stránce Opětovné přidělení výnosových cen](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,29 +1,31 @@
 ---
 title: Vytvoření kontrol výkonnosti
 description: Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly.
-author: andreabichsel
-manager: AnnBe
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417625"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066943"
 ---
 # <a name="create-performance-reviews"></a>Vytvoření kontrol výkonnosti
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF.
@@ -66,15 +68,18 @@ Toto téma vysvětluje, jak vytvořit kontrolu výkonnosti, a popisuje účel pr
 30. Vyberte kartu **Hodnocení**.  
 
     - Pevná záložka **Podrobnosti hodnocení** umožňuje zaměstnancům hodnotit sebe a manažerům hodnotit zaměstnance. Pokud jsou použity váhy, hodnota váhy skóre se vypočítá automaticky.  
-    - Pokud chcete tuto část zobrazit, povolte nastavení parametrů pro zobrazení hodnocení zaměstnance.  
+    - Chcete -li zobrazit tuto část, povolte nastavení parametrů pro zobrazování hodnocení zaměstnanců na stránce **Sdílené parametry lidských zdrojů**.  
 
-31. Zvolte kartu **Podpisy**. Používá-li recenze pracovní postup, podpisy se zobrazí pouze po dokončení pracovního postupu. Pokud není použit žádný pracovní postup, pracovník a manažer jsou zde uvedeni. Požadované zaškrtávací políčko je vybráno na základě nastavení typu recenze.  
+31. Zvolte kartu **Podpisy**. Používá-li recenze pracovní postup, podpisy se zobrazí pouze po dokončení pracovního postupu. Pokud není použit žádný pracovní postup, pracovník a manažer jsou zde uvedeni. **Požadované** zaškrtávací políčko pro **Odhlášení** je vybráno na základě nastavení typu recenze.  
 32. Zvolte kartu **Obecné**.
 
     - Doba výkonu vytvoří ve výchozím nastavení počáteční a koncové datum. Tato data lze upravovat.  
-    - Stavy řídí přístup k přezkoumání. Stav **Nespuštěno** umožňuje všem uživatelům upravit recenzi. Stav **Probíhající** umožňuje zobrazit a upravit recenze pouze zaměstnancům. **Připraveno ke kontrole** umožňuje zobrazovat a upravovat recenze pouze správcům. Stav **Konečná kontrola** umožňuje zobrazit recenzi zaměstnanci i manažerovi a upravit ji v případě, že je nastavená v typu recenze. Stavy **Dokončeno** a **Zrušeno** nastavují recenzi jen pro čtení. Pokud je recenze **odmítnuta** a odeslána zpět zaměstnanci, jak zaměstnanec, tak manažer mohou provést nezbytné úpravy, aby je zaměstnanec mohl znovu odeslat.
+    - Stavy řídí přístup k přezkoumání. Stav **Nespuštěno** umožňuje všem uživatelům upravit recenzi. Stav **Probíhající** umožňuje zobrazit a upravit recenze pouze zaměstnancům. **Připraveno ke kontrole** umožňuje zobrazovat a upravovat recenze pouze správcům. Stav **Závěrečná recenze** umožňuje zaměstnanci i vedoucímu prohlížet a upravovat recenzi, pokud je v typu recenze vybrána možnost **Povolit úpravy při závěrečné recenzi**. Stavy **Dokončeno** a **Zrušeno** nastavují recenzi jen pro čtení. Pokud je recenze **odmítnuta** a odeslána zpět zaměstnanci, jak zaměstnanec, tak manažer mohou provést nezbytné úpravy, aby je zaměstnanec mohl znovu odeslat.
 
 33. Zadejte hodnotu do pole **Přehled**.
 34. Zvolte kartu **Kontrola**. S tím, jak recenze prochází jednotlivými stavy, zaměstnanec a manažer můžou přidávat komentáře pro každý cíl nebo kompetenci.  
 35. Vyberte kartu **Podpisy** . Pracovník a manažer se mohou podepsat při kontrole. Po dokončení všech požadovaných podpisů je stav změněn na hodnotu **Dokončeno** a nelze provést žádné další změny.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

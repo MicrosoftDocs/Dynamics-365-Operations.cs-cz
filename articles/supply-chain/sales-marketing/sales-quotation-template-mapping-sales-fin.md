@@ -1,47 +1,44 @@
 ---
 title: Synchronizace hlaviček a řádků prodejní nabídky přímo z aplikace Sales do Supply Chain Management
 description: Toto téma se věnuje šablonám a základním úlohám, které se používají k synchronizaci záhlaví a řádek prodejní nabídky přímo z aplikace Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 362b6c290b1784d05e42ecb650911cc51aa8478a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527331"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061977"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synchronizace hlaviček a řádků prodejní nabídky přímo z aplikace Sales do Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Toto téma se věnuje šablonám a základním úlohám, které se používají k synchronizaci záhlaví a řádek prodejní nabídky přímo z aplikace Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
-> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Šablona a úkoly
 
@@ -63,8 +60,8 @@ Následující úlohy synchronizace jsou vyžadovány před synchronizací záhl
 
 | Prodej.        | Správa dodavatelsko-odběratelského řetězce     |
 |--------------|----------------------------|
-| Citáty       | Záhlaví prodejní nabídky CDS |
-| QuoteDetails | Řádky prodejní nabídky CDS  |
+| Citáty       | Záhlaví prodejní nabídky Dataverse |
+| QuoteDetails | Řádky prodejní nabídky Dataverse  |
 
 ## <a name="entity-flow"></a>Tok entity
 
@@ -133,13 +130,16 @@ Na následujícím obrázku je příklad mapování šablony v integrátoru dat.
 
 ### <a name="quoteheader"></a>QuoteHeader
 
-![Mapování šablony v integrátoru dat](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integrátoru dat, QuoteHeader.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="quoteline"></a>QuoteLine
 
-![Mapování šablony v integrátoru dat](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![Mapování šablony v integrátoru dat, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## <a name="related-topics"></a>Související témata
 
-[zpeněžení potenciálního zákazníka](prospect-to-cash.md)
+[Zpeněžení potenciálního zákazníka](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Sestavy maloobchodních cen
 description: Toto téma obsahuje přehled funkce sestavy cen, kterou lze použít k zobrazení nadcházejících cenových změn u roztříděných produktů.
 author: shajain
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7fa2710d64d632c6e4ef376528aff8316b02a380ce7e2a976d53a3dd39375fa7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767259"
 ---
 # <a name="retail-price-reports"></a>Sestavy maloobchodních cen
 
@@ -44,3 +41,6 @@ Pro povolení sestavy cen musí být zapnut parametr **Povolit sestavu cen pro o
 | Zobrazení produktů se změnami cen | Nastavení na **Ano** zobrazí ceny pouze pro ta data, kdy byla cena změněna. Cena pro *jeden den před* datem vybraným v možnosti **Od data** se zobrazí vždy, aby manažer ochodu mohl snadno určit produkty, u kterých se nezměnily ceny po celou zvolenou dobu. Rovněž mohou zobrazit aktuální cenu. |
 
 Po vygenerování sestavy lze stáhnout soubor aplikace Excel pro všechny další potřeby filtrování. Sestavu cen lze také použít ke kontrole historických cen produktů pro minulá data.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Vytváření a úpravy prodejních nabídek
 description: Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku.
 author: omulvad
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable, CustQuotationConfirmationJournal, CustQuotationJournal, CustSalesLines, SalesQuotationCopying, SalesQuotationDeleteQuotations, SalesQuotationListPagePreviewPane, SalesQuotationTypeGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73c15b41a4b0979ec79c8dbd8d88627bffcf6ed3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51e80cf500181601cf6e0d2910b91c429c404f01
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423619"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836439"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Vytváření a úpravy prodejních nabídek
 
@@ -70,3 +67,6 @@ Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku. Tento pos
 13. Klikněte na **Prodejní objednávky**.
 14. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

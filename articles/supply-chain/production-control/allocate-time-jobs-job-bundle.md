@@ -2,11 +2,9 @@
 title: Přidělení času k úlohám ve skupině prací
 description: V modulu Provádění výroby můžete úlohy ukládat do svazků. Potom můžete spustit více úloh současně na stránce se seznamem úloh.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 382cf8d12d9695c80c3b13497886d20f29f3680c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fb0236f9f39afc67cb5c8cedecee5278a6555d03deefb859fc134a4a4160285b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766600"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Přidělení času k úlohám ve skupině prací
 
@@ -82,7 +80,7 @@ V následující tabulce je znázorněn vzorec pro výpočet přiděleného čas
 ## <a name="net-time-allocation-key"></a>Alokační klíč čistého času
 V následující tabulce je znázorněn vzorec pro výpočet přiděleného času. Zde je vzorec: vypočítaný čas na sestavu = čas sady ÷ počet úloh
 
-|                              | 09:00–10:00 (1 hodina) | 10:00–11:00 (1 hodina) | 11:00–13:00 (2 hodiny) | 13:00–15:00 (2 hodiny) | Přidělený čas |
+| Příklad                       | 09:00–10:00 (1 hodina) | 10:00–11:00 (1 hodina) | 11:00–13:00 (2 hodiny) | 13:00–15:00 (2 hodiny) | Přidělený čas |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Počet úloh v sadě | 1                    | 3                    | 2                     | 1                     | Nelze použít |
 | Úloha 1                        | 1 ÷ 1 = 1 hodina       | 1 ÷ 3 = 0,33 hodiny    | Nelze použít        | Nelze použít        | 1,33 hodiny     |
@@ -110,3 +108,6 @@ Korigované náklady na hodinu a na čas úlohy jsou zaúčtovány do výrobníh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

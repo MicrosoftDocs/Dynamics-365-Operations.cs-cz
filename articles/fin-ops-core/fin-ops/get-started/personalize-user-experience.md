@@ -2,11 +2,9 @@
 title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
@@ -17,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797483"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075415"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma vysvětluje, jak si můžete přizpůsobit aplikaci, a pokrývá následující témata: 
 
@@ -87,7 +89,7 @@ Nejtypičtější a nejdůležitější změny, které lze na stránce provést,
 
 Kromě toho jsou k dispozici základní typy přizpůsobení kliknutím pravým tlačítkem myši a následným výběrem **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Použijete-li tuto metodu přizpůsobení, zobrazí se *okno Vlastnosti* prvku.
 
-![Přizpůsobení vlastností prvku](./media/cli-element-property-window.png)
+![Přizpůsobení vlastností prvku.](./media/cli-element-property-window.png)
 
 Můžete použít okno vlastností pro individuální nastavení prvku následujícími způsoby:
 
@@ -100,7 +102,7 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okna vlastnosti pro řídicí panel umožňuje vytvořit nový vlastní pracovní prostor.
 
-### <a name="the-personalization-toolbar"></a>Panel nástrojů individuálních nastavení
+### <a name="personalization-toolbar"></a>Panel nástrojů individuálních nastavení
 
 Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změna uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Individuální nastavení**, proveďte jeden z následujících kroků:
 
@@ -109,7 +111,7 @@ Pokud chcete provést více změn stránky nebo provést změny, které nejsou k
 - Vyberte **Přizpůsobit tuto stránku** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí libovolné stránky.
 - Na navigačním panelu vyberte tlačítko **nastavení** (symbol ozubeného kola) a pak vyberte volbu **přizpůsobit**.
 
-[![Panel nástrojů individuálních nastavení](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Panel nástrojů individuálních nastavení.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigace na stránce
 
@@ -121,7 +123,10 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 
 - Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **vybrat** a pak vyberte požadovaný prvek. Při výběru prvku se otevře okno vlastností prvku, kde můžete změnit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Všimněte si, že některé vlastnosti přizpůsobení nemusí být v některých scénářích k dispozici. Nemůžete například zamknout pole, které je povinné.
 - Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Skrýt** a pak vyberte požadovaný prvek ke skrytí. Když použijete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné, ale jsou zobrazeny v šedém kontejneru. Poté můžete prvek zviditelnit jeho výběrem. Chcete-li vidět, jak bude stránka vypadat po skrytí prvků, přepněte do jiného nástroje pro individuální nastavení nebo zavřete panel nástrojů individuálního nastavení.
-- Použijte nástroj **Přidat pole** pro přidání polí na stránku. Použijete-li tento nástroj, můžete přidat pouze pole, která jsou součástí definice stránky. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vytvoření a práce s vlastními poli](user-defined-fields.md). Po výběru tlačítka **Přidat pole** na panelu nástrojů je nutné nejprve vybrat mřížku či oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou mřížkou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **aktualizovat**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
+- Použijte nástroj **Přidat pole** pro přidání polí na stránku. Použijete-li tento nástroj, můžete přidat pouze pole, která jsou součástí definice stránky. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vytvoření a práce s vlastními poli](user-defined-fields.md). Po výběru tlačítka **Přidat pole** na panelu nástrojů je nutné nejprve vybrat mřížku či oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou mřížkou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí, která chcete přidat, ze seznamu **Doporučená pole** nebo **Všechna pole**. Po výběru požadovaných polí vyberte možnost **Aktualizovat**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
+
+    Seznam **Doporučená pole** zobrazuje pole, která byla dříve přidána jinými uživateli ve vaší organizaci. Tento seznam polí je aktualizován na základě četnosti opakování **Dávkové úlohy doporučení**. Podrobné prostředí uvidíte při přidávání nových polí filtru pomocí podokna Filtr na stránce.
+
 - Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. Všimněte si, že prvek nelze přesunout mimo nadřazenou skupinu. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Přesunout** a pak vyberte požadovaný prvek k přesunutí. Při výběru prvku aplikace kontroluje stránku a určuje místa, do nichž lze prvek přesunout. Tato umístění se nazývají *zóny přetažení*. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
 - Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
@@ -149,11 +154,14 @@ U některých stránek, které obsahují seznamy, je funkce individuálního nas
 > [!NOTE]
 > Pokud je zapnutá funkce [Uložená zobrazení](saved-views.md), bude obsah, který zadáte do pracovního prostoru, přímo propojen se zobrazením. Dotaz zobrazení se používá k načtení dat v pracovním prostoru a odpovídající dlaždice nebo odkaz v pracovním prostoru otevře stránku s tímto zobrazením, takže se na něj uplatní dotazy a přizpůsobení zobrazení. Pokud je zobrazení aktualizováno, odpovídající prvky pracovního prostoru budou upraveny na novou definici zobrazení.
 
-[![Přidat na pracovní prostor](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Přidat na pracovní prostor.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Chcete-li přidat seznam do pracovního prostoru, nejprve seřaďte nebo filtrujte seznam na stránce tak, aby zobrazoval informace, jak chcete, aby se zobrazovaly v pracovním prostoru. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Seznam**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete vybrat sloupce, které se mají zobrazit na seznamu v pracovním prostoru. Můžete také určit popisek použitý pro seznam v pracovním prostoru.
 - Chcete-li přidat dlaždici do pracovního prostoru, nejprve vyfiltrujte seznam na stránce, aby ukázal data, která chcete sumarizovat, nebo k nim mít rychlý přístup. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Dlaždice**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který by měl být použit pro dlaždici v pracovním prostoru. Můžete také určit, zda má dlaždice ukazovat počet. Po přidání dlaždice do pracovního prostoru ji můžete vybrat k otevření aktuální stránky z pracovního prostoru. Poté můžete zobrazit filtrovaný seznam, který je spojený s dlaždicí.
-- Chcete-li přidat odkaz na pracovní prostor, nejprve filtrujte na stránce seznam tak, aby zobrazoval data, která vás zajímají. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Odkaz**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který se má použít pro odkaz. Můžete také volitelně zadat popisek pro nový oddíl, který bude tento odkaz obsahovat.
+- Chcete-li přidat odkaz na pracovní prostor, nejprve filtrujte na stránce seznam tak, aby zobrazoval data, která vás zajímají. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Odkaz**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který se má použít pro odkaz. Můžete také volitelně zadat popisek pro sekci, kam bude tento odkaz umístěn. Pokud sekce neexistuje, bude vytvořena nová.
+
+> [!NOTE]
+> Od verze 10.0.25 budete možná při konfiguraci seznamu, dlaždice nebo odkazu muset vybrat pohledy pracovního prostoru, do kterých chcete prvek přidat, pokud je povolena funkce **(Preview) Podpora uložených zobrazení v pracovních prostorech**. Dostupná zobrazení pracovního prostoru se objeví v sekci **Možnosti pracovního prostoru** každého dialogu **Konfigurovat**. 
 
 Po přidání seznamu, dlaždice nebo odkazu do pracovního prostoru můžete otevřít pracovní prostor a přeuspořádat jeho prvky podle potřeby.
 
@@ -171,11 +179,97 @@ Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s č
 Jedinou jedinečnou možností personalizace, která je k dispozici na řídicím panelu, je možnost přidat dlaždice. 
 
 - Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání dlaždic, seznamů a odkazů do pracovního prostoru](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
-- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat aplikaci**. V dialogovém okně vyberte, zda chcete přidat dlaždici pro nový pracovní prostor nebo dlaždici, která má obsah z Power Apps nebo webu. Poté podle pokynů nakonfigurujte vybranou možnost. V dolní části řídicího panelu se vytvoří nová dlaždice. 
+- Pokud je funkce **Aplikace na celou stránku** vypnutá, můžete přidat novou dlaždici tak, že kliknete pravým tlačítkem myši na řídicí panel a vyberete **Přidat aplikaci**. V dialogovém okně vyberte, zda chcete přidat dlaždici pro nový pracovní prostor nebo dlaždici, která má obsah z Power Apps nebo webu. Poté podle pokynů nakonfigurujte vybranou možnost. V dolní části řídicího panelu se vytvoří nová dlaždice. Další informace o tom, jak tyto vložené aplikace přidávat, upravovat, mazat a sdílet, najdete v tématu [Vložit aplikace plátna z Power Apps](embed-power-apps.md) a [Vložit aplikace třetích stran](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Sdílení individuálních nastavení
 
-Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Poté můžete požádat ostatní uživatele o import souboru personalizace. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít váš soubor individuálního nastavení na mnoho uživatelů současně pomocí stránky pro správu **Individuální nastavení**.
+Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení různými způsoby sdílet s dalšími uživateli. V následujícím seznamu jsou metody uspořádány v pořadí od nejvíce doporučených po nejméně doporučené.
+
+1. Publikování pohledů uživatelům.
+2. Zkopírujte zobrazení nebo individuální nastavení uživatelům.
+3. Exportujte a importujte pohledy nebo individuální nastavení.
+
+### <a name="publish-views-to-users"></a>Publikování pohledů uživatelům
+
+Pokud je funkce [Uložené pohledy](saved-views.md) zapnutá, a pokud stránka podporuje zobrazení, nejlepším způsobem sdílení personalizace s ostatními uživateli je publikování pohledu uživatelům, kteří mají jednu nebo více rolí zabezpečení. Další informace naleznete v tématu [Publikování zobrazení](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Zkopírujte zobrazení nebo individuální nastavení uživatelům
+
+Pokud je funkce [Uložené pohledy](saved-views.md) vypnutá, nebo pokud stránka nepodporuje zobrazení, doporučeným způsobem sdílení personalizací je jejich kopírování mezi uživateli. Tato metoda je k dispozici pouze privilegovaným uživatelům (například správcům systému). Správci však mohou vyhledat přizpůsobení konkrétního uživatele v systému (včetně osobního zobrazení uživatele, pokud jsou povolena uložená zobrazení) a zkopírovat konfiguraci dalším uživatelům.
+
+Pokud jsou uložená zobrazení povolena, zkopírujte personalizace podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Při kopírování osobních zobrazení postupujte takto:
+
+    1. Vyberte **Osobní pohledy**.
+    2. Vyberte požadované zobrazení v seznamu.
+    3. Vyberte **Kopírovat uživatelům**.
+    4. Vyberte uživatele, kterým chcete distribuovat pohledy.
+
+    Při kopírování přizpůsobení na stránky, které nepodporují zobrazení, postupujte takto:
+
+    1. Vyberte **Nastavení uživatele**.
+    2. Vyberte uživatele, který má personalizaci, kterou chcete distribuovat.
+    3. Vyberte **Správa všech přizpůsobení**.
+    4. Vyberte požadovaná individuální nastavení v seznamu.
+    5. Vyberte **Kopírovat uživatelům**.
+    6. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+
+Pokud jsou uložená zobrazení zakázána, zkopírujte personalizace podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Zvolte **Použít**.
+3. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+4. Vyberte **Vybrat existující přizpůsobení**.
+5. Najděte a vyberte (jednotlivou) personalizaci, která vás zajímá.
+6. Vyberte **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Exportujte a importujte pohledy nebo individuální nastavení
+
+Dalším způsobem, jak sdílet personalizace, je export a import. Jednotliví uživatelé nebo správce, který jedná jejich jménem, mohou pomocí této metody exportovat svá přizpůsobení nebo zobrazení a poté exportovaný soubor předat dalším uživatelům k importu. Alternativně mohou uživatelé dát své exportované individuální nastavení uživateli, který má oprávnění správce, a ten pak může použít stránku pro správu **Personalizace**, kde lze použít soubor individuální nastavení pro více uživatelů současně.
+
+> [!IMPORTANT]
+> Protože personalizace přetrvávají i po provedených aktualizacích, je opětovné importování všech přizpůsobení po aktualizaci služby nebo kdykoli jindy zbytečné a důrazně se nedoporučuje.
+
+#### <a name="export"></a>Export
+
+Obecně můžete exportovat jeden ze svých vlastních pohledů nebo personalizací otevřením příslušné stránky a otevřením panelu nástrojů **Individuální nastavení** a poté vyberte **Exportovat**. Další informace o panelu nástrojů najdete v části [Panel nástrojů Individuálních nastavení](#personalization-toolbar) dříve v tomto tématu. Alternativně, pokud [uložené pohledy](saved-views.md) jsou povoleny, můžete přejít v **Nastavení \> Možnosti uživatele \> Individuální nastavení** pro zobrazení seznamu všech vašich personalizací v systému. Odtud můžete vybrat zobrazení nebo přizpůsobení, která chcete exportovat, a poté vybrat **Exportovat**.
+
+Správci mohou dále exportovat personalizace ostatních uživatelů podle těchto kroků.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Na kartě **Uživatelé** vyberte uživatelský účet.
+3. Najděte a vyberte zobrazení nebo individuální nastavení, které vás zajímá.
+4. Vyberte **Export**.
+
+#### <a name="import"></a>Import
+
+Chcete-li importovat zobrazení nebo přizpůsobení, stačí otevřít panel nástrojů **Individuální nastavení** a vybrat **Importovat**. Správci mohou navíc importovat soubor a okamžitě jej dát jednomu nebo více uživatelům.
+
+Pokud jsou uložená zobrazení povolena, postupujte podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. V podokně akcí klikněte na možnost **Importovat zobrazení \> zobrazení uživatelů**.
+3. Výběr režimu importu:
+
+    - **Vyberte konkrétní uživatele** - Dát pohled nebo přizpůsobení vybraným uživatelům.
+    - **Importujte v původním stavu** - Importujte zobrazení nebo přizpůsobení stejnému uživateli, který jej exportoval.
+
+4. Vyberte **Procházet** a poté vyhledejte a vyberte individuální nastavení, které chcete importovat.
+5. Zvolte **Další**.
+6. Pokud jste vybrali **Vyberte konkrétní uživatele** v kroku 3, vyberte uživatele, pro které chcete individuální nastavení importovat.
+7. Vyberte **Import**.
+8. Vyřešte konflikty podle potřeby.
+
+Pokud nejsou uložená zobrazení povolena, postupujte podle těchto pokynů.
+
+1. Přejděte na **Správa systému \> Nastavení \> Individuální nastavení** .
+2. Zvolte **Použít**.
+3. Vyberte uživatele, kterým chcete distribuovat individuální nastavení.
+4. Vyberte **Importovat individuální nastavení ze souboru**.
+5. Vyberte **Procházet** a poté vyhledejte a vyberte individuální nastavení, které chcete importovat.
+6. Vyberte **OK**.
 
 ## <a name="administration-of-personalizations"></a>Správa přizpůsobení
 
@@ -195,3 +289,6 @@ U zákazníků, kteří ještě nezapnuli funkci [Uložená zobrazení](saved-vi
 Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například používáte přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky, ale sloupec se objeví při příštím otevření stránky K tomu dochází, protože nastavení **Zobrazení dimenzí** kontroluje dimenze zásob, které jsou zobrazeny. Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na jednotlivých stránkách.
 
 V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky na stránce, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tuto stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

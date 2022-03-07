@@ -2,31 +2,27 @@
 title: Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424174"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808911"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Expozice funkce
 
@@ -53,7 +49,7 @@ Vzhledem k tomu, že hmotnost zásob, když se dostanou do skladu, se může li
 > [!NOTE]
 > Aktivita mobilního zařízení spustí úpravy transakcí pouze v případě, že metoda odchylky výstupní hmotnosti pro zásady zpracování zboží se skutečnou hmotností je **Povolit odchylku hmotnosti**.
 
-**Příklad 1**
+### <a name="example-1"></a>Příklad 1
 
 Během výrobního procesu **Ohlásit jako dokončené** je zaznamenaná vstupní hmotnost registrační značky obsahující osm krabic produktu se skutečnou hmotností jako 80,1 kg. Registrační značka pak odložení uložena v oblasti hotových výrobků a během doby skladování některé hmotnost dojde ke ztrátě do ovzduší.
 
@@ -61,7 +57,7 @@ Později, jako součást procesu výdeje prodejní objednávky, je váha stejné
 
 V takovém případě systém automaticky upraví rozdíl zaúčtováním transakce pro chybějící 0,3 kg.
 
-**Příklad 2**
+### <a name="example-2"></a>Příklad 2
 
 Ve své definici je produkt nastaven tak, aby toleroval minimální hmotnost 8 kg a maximální hmotnost 12 kg pro jednotku skutečné hmotnosti **Krabice**.
 
@@ -107,7 +103,7 @@ Navíc, je-li u položky sledována značka, existuje parametr **Metoda zaznamen
 **Když se používá sledování značky skutečné hmotnosti**, musí být značka vždy vytvořena pro každou jednotku skutečné hmotnosti, která je přijata, a každá značka musí být vždy přiřazena k hmotnosti.
 
 Například **Krabice** je jednotka skutečné hmotnosti a přijmete jednu paletu s osmi krabicemi. V takovém případě se musí vytvořit osm jedinečných štítků skutečné hmotnosti a hmotnost musí být přiřazena ke každému štítku. V závislosti na štítku příchozí skutečné hmotnosti lze zaznamenat buď hmotnost všech osmi krabic a průměrná hmotnosti pak může být rozdělena na každou krabici, nebo lze zaznamenat jedinečnou hmotnost pro každou krabici.
-Při použití **Použít existující značky skutečné hmotnosti při vykazování výrobních zakázek jako dokončených** s procesem povoleným prostřednictvím položky nabídky mobilního zařízení se zásoby aktualizují na základě existující informace štítku skutečné hmotnosti. V důsledku toho aplikace skladu nezobrazí výzvu k zaznamenání dat štítku skutečné hmotnosti jako součásti výrobní sestavy jako dokončené operace.
+Při použití **Použít existující značky skutečné hmotnosti při vykazování výrobních zakázek jako dokončených** s procesem povoleným prostřednictvím položky nabídky mobilního zařízení se zásoby aktualizují na základě existující informace štítku skutečné hmotnosti. V důsledku toho mobilní aplikace Řízení skladu nezobrazí výzvu k zaznamenání dat štítku skutečné hmotnosti jako součásti výrobní sestavy jako dokončené operace.
 
 **Když se nepoužívá sledování značek skutečné hmotnosti**, lze zaznamenat hmotnost pro každou sadu dimenzí, (například pro každou poznávací značku a sledovací dimenzi). Případně lze zaznamenat hmotnost podle agregované úrovně, například pět poznávacích značek (palet).
 
@@ -195,7 +191,11 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 
 ### <a name="catch-weight-tags"></a>Štítky skutečné hmotnosti
 
-Značku skutečné hmotnosti lze vytvořit pomocí procesu aplikace skladu, ručně ve formuláři nebo pomocí procesu datové entity. Pokud je značka skutečné hmotnosti přidružena k příchozí řádce zdrojového dokumentu, jako je řádka nákupní objednávky, značka bude zaregistrována. Je-li řádek použit pro zpracování výstupu, bude značka aktualizována jako dodaná.
+Značku skutečné hmotnosti lze vytvořit pomocí procesu mobilní aplikace Řízení skladu, ručně ve formuláři **Řízení skladu > Dotazy a sestavy > Štítek skutečné hmotnosti** nebo pomocí procesu datové entity. Pokud je značka skutečné hmotnosti přidružena k příchozí řádce zdrojového dokumentu, jako je řádka nákupní objednávky, značka bude zaregistrována. Je-li řádek použit pro zpracování výstupu, bude značka aktualizována jako dodaná. Všechny historické události registrace štítků skutečné hmotnosti si můžete zobrazit přes **Registrace štítku skutečné hmotnosti** ze stránky **Štítek skutečné hmotnosti**.
+
+Můžete použít možnost **Změnit štítek skutečné hmotnosti** a ručně aktualizovat hodnotu hmotnosti pro štítek skutečné hmotnosti. Všimněte si, že hmotnost zásob na skladě nebude upravena jako součást tohoto manuálního procesu, ale můžete snadno použít stránku **Nesrovnalosti zásob na skladě u položek označených skutečnou hmotností** k vyhledání případných nesrovnalostí mezi aktuálně aktivními štítky skutečné hmotnosti a aktuálními zásobami.
+
+Další ruční možnosti jsou **Registrovat štítek** pro řádek zdrojového dokumentu a **Zaregistrovat práci** proti existující práci skladu.
 
 Kromě omezení, která aktuálně platí pro produkty se skutečnou hmotností, mají produkty se značkou skutečné hmotnostmi v současné době jiná omezení.
 
@@ -210,3 +210,6 @@ Kromě omezení, která aktuálně platí pro produkty se skutečnou hmotností,
 
 > [!NOTE]
 > Předchozí informace o štítcích se skutečnou hmotností jsou platné pouze v případě, že produkt se skutečnou hmotností má metodu sledování dimenze skutečné hmotnosti, která je plně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** u zásad zpracování položek skutečné hmotnosti nastaven na hodnotu **Dimenze produktu, sledovací dimenze a všechny dimenze uskladnění**). Je-li položka se skutečnou hmotností pouze částečně sledována (tj. pokud je parametr **Metoda sledování dimenze značky skutečné hmotnosti** nastaven na **Dimenze produktu, sledovací dimenze a stav zásob**), použijí se další omezení. Vzhledem k tomu, že značka a zásoby v tomto případě ztratí viditelnost, některé další scénáře nejsou podporovány.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

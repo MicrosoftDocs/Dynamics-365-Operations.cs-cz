@@ -1,12 +1,10 @@
 ---
 title: Typ cílového místa elektronického výkaznictví obrazovky
-description: Toto téma obsahuje informace o tom, jak konfigurovat cíl obrazovky pro každou komponentu složky nebo souboru formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů.
+description: Toto téma poskytuje informace o tom, jak nakonfigurovat cíl obrazovky pro každou složku nebo soubor ve formátu elektronického výkaznictví (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,14 +15,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 08bbde23cde6dcecea398b84bb3d7f78e2204a71
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2855ac9eb0248a65973898b107d33fc86ac9c1324dafaaf1606b76d8e82f3a8f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721945"
 ---
-# <a name="screen-destination"></a>Cíl obrazovky
+# <a name="screen-destination"></a>Cílové místo obrazovky
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,9 +30,12 @@ Můžete konfigurovat cíl obrazovky pro každou komponentu složky nebo souboru
 
 Nastavíte-li **Povoleno** na **Ano**, vytvoří se náhled výstupu. Některé typy souborů, například XML, TXT nebo PDF můžete zobrazit přímo v okně prohlížeče. U jiných typů souborů, jako jsou soubory aplikací Microsoft Excel nebo Word, se používá služba Microsoft Office Online.
 
-[![Stránka nastavení cíle](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
+[![Stránka nastavení cíle.](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

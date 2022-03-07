@@ -2,27 +2,24 @@
 title: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
 description: Toto téma ukazuje, jak umožnit pracovníkům skladu rychle najít alternativní umístění, pokud nejsou k dispozici dostatečné zásoby v umístění, do něhož byl nasměrován.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 90aeb860dc95a348b000a0f994fadc5cc9aea7e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814409"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
 
@@ -64,3 +61,6 @@ K vytvoření této procedury jsou použita ukázková data společnosti USMF.
 6. V seznamu vyberte **ID uživatele**. Například 24.
 7. Rozbalte pevnou záložku **Práce**.
 8. Vyberte možnost **Ano** v poli **Povolit ruční opakované přidělení zboží**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

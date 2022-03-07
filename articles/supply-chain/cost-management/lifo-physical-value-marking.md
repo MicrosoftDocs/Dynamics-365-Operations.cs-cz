@@ -2,11 +2,9 @@
 title: Metoda LIFO s fyzickou hodnotou a označením
 description: U skladového modelu LIFO (Last in, First out) jsou poslední (nejnovější) příjmy vydány jako první. Výdeje ze skladu jsou vyrovnávány vůči posledním příjmům na sklad podle data skladové transakce.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 55021
 ms.assetid: 49c492b0-b018-44e0-928f-9671e54eee20
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35650dc02ec923994026a3ab7f66dea5a81ed20d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 60ec1c1c24f05157b72a3ed57abe7dfaaa763093
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967601"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578529"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>Metoda LIFO s fyzickou hodnotou a označením
 
@@ -55,7 +53,7 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. Následující obrázky ukazují účinky skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
 
-![Metoda LIFO bez funkce Zahrnovat fyzickou hodnotu](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO bez funkce Zahrnovat fyzickou hodnotu.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -91,7 +89,7 @@ Transakce 6a bude upravena podle příjmové transakce 4b. Systém tyto transakc
 
 Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
 
-![Metoda LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifowithincludephysicalvalue.gif) 
+![LIFO s funkcí Zahrnovat fyzickou hodnotu.](./media/lifowithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -135,7 +133,7 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy. 
 
-![Metoda LIFO s označením](./media/lifowithmarking.gif) 
+![Metoda LIFO s označením.](./media/lifowithmarking.gif) 
 
 **Klíč k diagramu**
 
@@ -150,3 +148,6 @@ Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto s
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

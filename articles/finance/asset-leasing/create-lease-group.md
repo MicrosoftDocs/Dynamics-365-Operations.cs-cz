@@ -2,28 +2,25 @@
 title: Vytvoření skupiny leasingu
 description: Toto téma vysvětluje, jak nastavit skupiny leasingu. Skupiny leasingu jsou nutné k vytvoření nových leasingů.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseGroupTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f8512a59d0e9935090f97a0f0237bfefc8473955
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 88a49e4db868078fd05875df33ca5727363aaa18
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441356"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881221"
 ---
 # <a name="create-a-lease-group"></a>Vytvoření skupiny leasingu
 
@@ -50,3 +47,6 @@ Po vytvoření skupin leasingu můžete ke každé skupině přiřadit knihy. Kd
 1. Přejděte na **Leasing majetku \> Nastavení \> Skupina leasingu**.
 2. Vyberte skupinu leasingu a poté vyberte **Knihy**.
 3. Vyberte **Nový** a poté v poli **Typ knihy** vyberte knihu, kterou chcete přiřadit do skupiny leasingu. Skupině leasingu můžete přiřadit více knih, pokud musí být leasing účtován různými způsoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

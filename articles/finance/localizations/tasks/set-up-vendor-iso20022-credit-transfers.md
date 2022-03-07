@@ -2,26 +2,23 @@
 title: Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022
 description: Tento postup popisuje způsob nastavení informací o dodavateli a konkrétním bankovním účtu dodavatele požadovaných pro převedení kreditu SEPA nebo jakéhokoli jiného generování souboru pro platbu dodavatele podle normy ISO20022.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4809a352f87cc3d88429461a06dfe36189ed5f31
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7a901591f9f3d1a892c29f92e59dc96c1f172143cae6bec571da33b4a50d274
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4440983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723712"
 ---
 # <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a>Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022
 
@@ -52,3 +49,6 @@ Toto je čtvrtý z pěti úkolů, které společně popisují proces platby doda
 4. Klikněte na odkaz na řádku SEPA CT v seznamu.
 5. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

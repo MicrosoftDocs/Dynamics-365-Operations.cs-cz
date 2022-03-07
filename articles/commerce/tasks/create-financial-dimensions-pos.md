@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c51c77f4b9f411ae45fb955032aa40cb34738e9a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4042fb9da0fe38de50ad7e0c8e64b98925ea1188
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964763"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5265952"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách
 
@@ -47,3 +47,6 @@ Tato procedura vás provede procesem vytvoření finančních dimenzí pro regis
 17. Na seznamu vyhledejte a vyberte hodnotu dimenze pro aktualizovaný registr.
 18. Klepněte na tlačítko Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

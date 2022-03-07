@@ -1,12 +1,10 @@
 ---
 title: Počáteční mimořádný odpis
 description: Tento článek podává přehled o funkci počátečního mimořádného odpisu.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3621
 ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41a59b9dfe0482c995cfefc7a70f63550794428d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 04ee70fab05d033923a675e0db5c62d3c938d0e4
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969171"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674398"
 ---
 # <a name="bonus-depreciation"></a>Počáteční mimořádný odpis
 
@@ -64,3 +62,6 @@ Počáteční mimořádný odpis se zadává buď jako procento, nebo jako pevn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

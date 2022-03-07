@@ -2,16 +2,13 @@
 title: Ganttův diagram pro plánování úloh
 description: Plánovači výroby mohou kontrolovat a optimalizovat plány výroby pomocí Ganttova diagramu.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 180fb7b31ea826c546aa8472a7ef4025a3b8865a783a5b662ed30b69f98acf92
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730195"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Ganttův diagram pro plánování úloh
 
@@ -48,10 +45,10 @@ Ganttův graf lze otevřít dvěma různými způsoby, **Zobrazení objednávky*
 
 ## <a name="order-view"></a>Zobrazení objednávek
 
-[![Zobrazení objednávek](./media/orderview.png)](./media/orderview.png)
+[![Zobrazení objednávek.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Zobrazení prostředků
-[![Zobrazení prostředků](./media/resview.png)](./media/resview.png)
+[![Zobrazení prostředků.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktivity
 Aktivity se zobrazují jako panely a jsou uspořádány v mřížce na časovém měřítku s plánovaným počátečním a koncovým časem, což nastavuje délku pruhů úměrnou době potřebné pro dokončení aktivity. Aktivity budou zobrazeny podle časového rozmezí. Časové rozmezí můžete upravit v nabídce, kde vyberete jednotku pro počáteční a koncové datum a čas, například hodiny nebo dny. Úpravou časového měřítka můžete nastavit fokus na časový interval, ve kterém chcete spravovat aktivity. 
@@ -105,25 +102,25 @@ Není možné plánovat úlohy mimo stanovený časový interval Ganttova diagra
 
 V síti, aktivit, jako jsou úlohy náležející do stejné výrobní zakázky, můžete vybrat funkci **naplánovat předchozí úlohy** k naplánování předchozích úloh vzhledem k vybrané úloze v síti. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním předchozí úlohy a po naplánování předchozí úlohy. 
 
-[![Naplánovat předchozí úlohu](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Naplánovat předchozí úlohu.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Naplánovat následující úlohy
 
 Můžete použít funkci **Naplánovat následující úlohy** k naplánování dalších úloh vzhledem k vybrané úloze v síti aktivit. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním následující úlohy a po naplánování následující úlohy. 
 
-[![Naplánovat následující úlohu](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Naplánovat následující úlohu.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Plánování kolem úlohy
 
 Můžete použít funkci **Plánování kolem úlohy** k naplánování další úlohy a předchozí úlohy vzhledem k vybrané úloze v síti aktivit. V následujícím příkladu je zvýrazněná aktivita vybraná úloha. Diagram znázorňuje stav před naplánováním úlohy a po naplánování úlohy. 
 
-[![Plánování kolem úlohy](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Plánování kolem úlohy.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Uspořádat úlohy
 
 Pomocí funkce **Uspořádat** můžete uspořádat vybrané aktivity ve stejném prostředku. Tyto aktivity mohou být ve stejné síti aktivit, ale náležet také do různých sítí. Při použití funkce uspořádání budou mezery mezi vybranými aktivitami odstraněny. Tato funkce slouží k optimalizaci kapacity využití zdrojů. Diagram znázorňuje stav před naplánováním úlohy a po naplánování úlohy. 
 
-[![Uspořádat úlohu](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Uspořádat úlohu.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Opětovné přiřazení aktivit z jednoho zdroje do druhého
 
@@ -158,5 +155,8 @@ Ganttův diagram lze otevřít z následujících stránek.
 ## <a name="additional-resources"></a>Další zdroje  
 [Vizuální plánování s Ganntovým diagramem pro výrobu a dávkové objednávky (video)](https://youtu.be/BtbuShkGj4I)
 
-[Vizuální plánování výroby (ukázkový skript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
+[Vizuální plánování výroby (ukázkový skript)](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

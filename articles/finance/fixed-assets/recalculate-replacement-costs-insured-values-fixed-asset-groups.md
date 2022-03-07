@@ -1,34 +1,31 @@
 ---
 title: Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku
-description: Tento článek vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek.
-author: ShylaThompson
-manager: AnnBe
+description: Toto téma vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek.
+author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441215"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674869"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Přepočet reprodukčních nákladů a pojistných částek pro skupiny dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek.
+Toto téma vysvětluje postup aktualizace reprodukčních nákladů a pojistné částky pro dlouhodobý majetek.
 
 Pravidelně byste měli být informováni, že došlo ke změně reprodukčních nákladů nebo nákladů na pojištění dlouhodobého majetku. Například vás správce může informovat o tom, že byla inflace za poslední rok je 3 %, a potřebujete tak zvýšit reprodukční náklady u všech položek majetku o 3 %. 
 
@@ -78,3 +75,6 @@ Následující den vám manažer oznámí, že počítače klesly o 8 % místo 1
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

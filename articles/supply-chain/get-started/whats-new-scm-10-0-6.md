@@ -1,28 +1,25 @@
 ---
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.6. (listopad 2019)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.6.
-author: josaw1
-manager: tfehr
+author: kamaybac
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 9ee25036488d2f7f24c1691d36239f3f34caf0cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 87bcda25b89135e052a5a883b816ea0bb430479a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423862"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568896"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.6. (listopad 2019)
 
@@ -59,7 +56,7 @@ Aplikace Microsoft Dynamics 365 Supply Chain Management 10.0.6 zahrnuje aktualiz
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: plán 2. vlny vydání v r. 2019
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2019](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2019](/dynamics365-release-plan/2019wave2/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
@@ -71,3 +68,6 @@ Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management]
 Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

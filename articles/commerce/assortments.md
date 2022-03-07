@@ -2,25 +2,22 @@
 title: Správa sortimentu
 description: Toto téma vysvětluje základní koncepty správy sortimentu v aplikaci Dynamics 365 Commerce a poskytuje úvahy nad implementací pro váš projekt.
 author: jblucher
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717764"
 ---
 # <a name="assortment-management"></a>Správa sortimentu
 
@@ -38,7 +35,7 @@ Celková kombinace produktu kanálu je určena publikovanými sortimenty, které
 
 V následujícím příkladu je nakonfigurován jedinečný sortiment pro každý obchod. V takovém případě je pouze produkt 1 k dispozici v obchodě 1 a pouze produkt 2 je k dispozici v obchodě 2.
 
-![Každý produkt je k dispozici v jednom obchodě](./media/Managing-assortments-figure1.png)
+![Každý produkt je k dispozici v jednom obchodě.](./media/Managing-assortments-figure1.png)
 
 Chcete-li, aby byl produkt 2 k dispozici v obchodě 1, lze přidat produkt do sortimentu 1.
 
@@ -52,13 +49,13 @@ Případně můžete přidat obchod 1 do sortimentu 2.
 
 V situacích, kdy více kanálů sdílejí stejné sortimenty produktů, můžete nakonfigurovat sortimenty pomocí hierarchie organizace sortimentu aplikace Commerce. Při přidávání uzlů z této hierarchie budou zahrnuty všechny kanály v tomto uzlu a jeho podřízené uzly.
 
-![Organizační hierarchie](./media/Managing-assortments-figure4.png)
+![Organizační hierarchie.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktu
 
 Stejně tak na straně produktu můžete zahrnout skupiny produktů pomocí hierarchie kategorií produktu. Můžete konfigurovat sortimenty zahrnutím jednoho nebo více uzlů hierarchie kategorií. V tomto případě bude sortiment obsahovat všechny produkty v tomto uzlu kategorie a jeho podřízených uzlech.
 
-![Kategorie produktu](./media/Managing-assortments-figure5.png)
+![Kategorie produktu.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Vyloučené produkty nebo kategorie
 
@@ -67,7 +64,7 @@ Kromě zahrnutí produktů a kategorií do sortimentů můžete použít možnos
 > [!NOTE]
 > Pokud je produkt současně zahrnut a vyloučen v jednom nebo více sortimentech podle svojí podstatou, produkt bude vždy považován za vyloučený.
 
-![Vyloučené produkty](./media/Managing-assortments-figure6.png)
+![Vyloučené produkty.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globální a uvolněné produkty
 
@@ -107,3 +104,6 @@ Když plánujete a spravujete sortimenty pro svou maloobchodní implementaci, zv
 - **Prodeje a vrácení mimo sortimenty** – Tato možnost pomáhá maloobchodním prodejcům efektivně spravovat své sortimenty pomocí omezení počtu dostupných produktů na produkty, které patří do základní kombinace produktů obchodu. Tato funkce také pomáhá maloobchodním prodejcům zvládat situace, kdy byl produkt omylem vynechán ze sortiment nebo kdy byl vrácen mimo data platnosti sortimentu.
 
 Pokud v databázi kanálů neexistují data produktů, pokladní místo provádí volání v reálném čase do centrály pro načtení požadovaných informací, aby mohl být produkt prodán, vrácen nebo umístěn na objednávku odběratele. Informace o produktu, které jsou tímto způsobem načteny, jsou k dispozici pouze v rozsahu dané transakce. Produkt není přidán do definice sortimentu. Proto budou následující volání v reálném čase provedena podle potřeby.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Nastavení centralizovaných plateb
 description: Postupujte podle těchto kroků k přípravě zpracování plateb v jedné právnické osobě jménem ostatních právnických osob v organizaci.
 author: kweekley
-manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70b47f819730ae221568e625a1b218e046927e41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0ff7051611c1253ce8f431e24274fab53cf79b6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441154"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834903"
 ---
 # <a name="set-up-centralized-payments"></a>Nastavení centralizovaných plateb
 
@@ -58,3 +55,6 @@ Výchozí popis můžete definovat pro mezipodnikové doklady vyrovnání. Vých
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

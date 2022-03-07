@@ -2,26 +2,23 @@
 title: Podrobnosti řádku práce
 description: Toto téma uvádí informace o stránce Podrobnosti řádku práce, která zobrazuje kompletní, řaditelný a filtrovatelný seznam jednotlivých řádků práce v systému.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 3a932e4443521d67edb5c08c2d8eb563c6feb555
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424191"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568272"
 ---
 # <a name="work-line-details"></a>Podrobnosti řádku práce
 
@@ -128,3 +125,6 @@ Při vytváření práce výdeje postupujte takto:
 
 > [!IMPORTANT]
 > Pokud zrušíte jen část množství řádku práce, musíte také odstranit již neplatné množství z řádku nákladu. V opačném případě, pokud nebude dodávka nastavena správně, nebude možné potvrdit řádek nákladu k odeslání.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

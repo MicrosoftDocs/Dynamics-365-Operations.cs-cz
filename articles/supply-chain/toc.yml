@@ -4,39 +4,11 @@
       items:
         - name: Domovská stránka Dynamics 365 Supply Chain Management
           href: index.md
-        - name: Co je nového a co se změnilo
-          items:
-            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Co je nového a co se změnilo v aplikaci Supply Chain Management
-              items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
-                  href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.25 (duben 2022)
-                  href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (únor 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (leden 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
-            - name: Odstraněné nebo zastaralé funkce
-              items:
-                - name: Domovská stránka odstraněných nebo zastaralých funkcí
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
-                  href: get-started/removed-deprecated-features-scm-updates.md
-                - name: Odebrané nebo zastaralé funkce v předchozích verzích
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Odložené funkce AX 2012
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Začínáme
           items:
-            - name: Popis služby
-              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Registrace k verzi preview předplatného
+            - name: Registrace ukázkového předplatného
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Aktualizace služby One Version
               items:
@@ -88,6 +60,34 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikace Finance and Operations provozované společností 21Vianet v Číně
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikace Finance and Operations ve Francii
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Co je nového a co se změnilo
+              items:
+                - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Co je nového a co se změnilo v aplikaci Supply Chain Management
+                  items:
+                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
+                      href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.20 (srpen 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (červen 2021)
+                      href: get-started/whats-new-scm-10-0-19.md
+                - name: Odstraněné nebo zastaralé funkce
+                  items:
+                    - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Odložené funkce AX 2012
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -104,6 +104,8 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videa
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Glosář
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Výukový katalog
               items:
                 - name: Domovská stránka Výukový katalog
@@ -208,36 +210,16 @@
               items:
                 - name: Přehled globalizačních služeb
                   href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory Configuration Service (RCS)
+                - name: Regulatory Configuration Service
                   items:
-                    - name: Přehled Regulatory Configuration Service (RCS)
+                    - name: Přehled Regulatory Configuration Service
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Regulatory configuration service (RCS) – Globalizační funkce
+                    - name: Regulatory Configuration Service - Globalizační funkce
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service (RCS) a odeslání do globálního úložiště
+                    - name: Vytvoření konfigurací elektronického výkaznictví v Regulatory Configuration Service a odeslání do globálního úložiště
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services
+                    - name: Regulatory Configuration Service - ukončení podpory úložiště Lifecycle Services
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Stažení konfigurací elektronického výkaznictví do Supply Chain Management
-                      items:
-                        - name: Stažení konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Import konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Globální úložiště
-                      items:
-                        - name: Import konfigurací z globálního úložiště
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Import aktualizovaných verzí konfigurací elektronického výkaznictví
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Odeslání konfigurací do globálního úložiště
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Sdílení konfigurací v globálním úložišti
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Ukončení konfigurací v globálním úložišti RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronická fakturace
                   items:
                     - name: Přehled elektronické fakturace
@@ -254,25 +236,25 @@
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Začínáme
                       items:
-                        - name: Začínáme se správou služby elektronické fakturace
+                        - name: Začněte se správou služby elektronické fakturace
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začínáme s elektronickou fakturací
+                        - name: Začněte s elektronickou fakturací
                           href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začínáme s elektronickou fakturací pro Brazílii
+                        - name: Začněte s elektronickou fakturací pro Brazílii
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začínáme s elektronickou fakturací pro Egypt
+                        - name: Začněte s elektronickou fakturací pro Egypt
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Začínáme s elektronickou fakturací pro Mexiko
+                        - name: Začněte s elektronickou fakturací pro Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Nastavení elektronické fakturace
                           href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Časté otázky k elektronické fakturaci
+                    - name: Nejčastější dotazy k elektronické fakturaci
                       href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Výpočet daně
                   items:
                     - name: Přehled výpočtu daně
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Začínáme s výpočtem daně
+                    - name: Začněte s výpočtem daně
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Podpora daňových funkcí u převodních příkazů
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
@@ -292,24 +274,22 @@
                   href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Rusko
               items:
-                - name: Rusko – přehled
+                - name: Rusko - přehled
                   href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zásoby
                   items:
                     - name: Přepravované zboží od dodavatele
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Distribuovaná hybridní topologie
+        - name: Cloud a hraniční síť
           items:
-            - name: Jednotky škálování v distribuované hybridní topologii
+            - name: Jednotky škálování cloudu a hraniční sítě pro pracovní zátěže výroby a správy skladu
               href: cloud-edge/cloud-edge-landing-page.md
-            - name: Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
+            - name: Nasazení jednotek škálování hraničního zařízení na vlastní hardware pomocí LBD
               href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-workload-warehousing.md
-            - name: Konfigurace mobilní aplikace Warehouse Management mobile pro cloudové a hraniční jednotky škálování
-              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Skladové objednávky pro jednotky škálování cloudu a hraniční sítě
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Úprava skladových zásob
@@ -615,7 +595,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Použití balíčku obsahu pro výkaznictví v Microsoft Power BI
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
+            - name: Použití pracovního prostoru řízení pro mobilní aplikaci Finance and Operations
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globální účetnictví zásob
           items:
@@ -709,10 +689,8 @@
                   href: cost-management/inventory-close.md
                 - name: Úprava nákladové ceny množství na skladě
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Sestavy hodnot zásob
+                - name: Sestava úložiště hodnot zásob
                   href: cost-management/inventory-value-report-storage.md
-                - name: Příklady a logika sestavy hodnot zásob
-                  href: cost-management/inventory-value-report-examples.md
                 - name: Uložení sestavy stáří zásob
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Příklady a logika sestavy stáří zásob
@@ -753,6 +731,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Balíček obsahu Power BI správy nákladů
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Řešení potíží se správou nákladů
+              href: cost-management/troubleshoot-costmanagement.md
         - name: Vykazování a integrace Power BI
           items:
             - name: Vytváření sestav a analýzy s Power BI
@@ -945,11 +925,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Today
+                        - name: Dnes
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: List
+                    - name: Seznam
                       items:
                         - name: Funkce seznamu
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -1235,8 +1213,6 @@
                   items:
                     - name: Vytvoření konfigurací pro import dat z externího XML souboru
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Import dat z ručně vybraných souborů v režimu dávky
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace importu dat v režimu dávky ze souborů umístěných na platformě SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Import souborů v XML formátu
@@ -1259,10 +1235,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Import konfigurací (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory Configuration Service (RCS)
+                - name: Regulatory services (RCS)
                   items:
-                    - name: Přehled Regulatory Configuration Service (RCS)
-                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Funkce globalizace v RCS
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Stažení konfigurací elektronického výkaznictví do Supply Chain Management
                       items:
                         - name: Stažení konfigurací z RCS
@@ -1278,7 +1254,7 @@
                         - name: Vylepšené filtrování k nalezení konfigurací v globálním úložišti
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Odeslání konfigurací do globálního úložiště
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
                         - name: Sdílení konfigurací v globálním úložišti
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Ukončení konfigurací v globálním úložišti RCS
@@ -1339,17 +1315,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Použití BARCODE ke generování obrázků čárových kódů
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurace zdrojů dat VYHLEDÁVÁNÍ pro použití parametrů specifických pro aplikace elektronického výkaznictví
-                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Použití zdrojů dat SHROMAŽĎOVÁNÍ DAT ve formátech elektronického výkaznictví
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ladění zdrojů dat
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Použití BARCODE ke generování obrázků čárových kódů
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace mapování modelu
                   items:
-                    - name: Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země
+                    - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
@@ -1413,8 +1385,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurace cílových míst závislých na akcích
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurace cílových míst elektronického výkaznictví pro záznamy pro správu tisku
-                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nastavení odkazu na formát elektronického výkaznictví
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatické ověření generovaných sestav
@@ -1457,18 +1427,12 @@
                   items:
                     - name: Application Update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.11
+                    - name: Application Update 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.17
+                    - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.19
+                    - name: Application Update 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.21
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.23
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizace aplikace 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
@@ -1479,8 +1443,6 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Inicializace hodnot zdroje dat typu USER INPUT PARAMETER ze zdrojového kódu
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Změna kódu, aby uživatelé mohli konfigurovat a používat pojmenované cíle elektronického výkaznictví'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Řízení zásob
           items:
             - name: Přehled řízení zásob
@@ -1587,6 +1549,8 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: Mobilní pracovní prostor zásob na skladě
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: Řešení potíží se skladovými operacemi
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: Odchozí proces
               items:
                 - name: Přehled odchozího procesu
@@ -1608,26 +1572,12 @@
             - name: Archivace skladových transakcí
               href: inventory/archive-inventory-transactions.md
             - name: Doplněk viditelnosti zásob
-              items:
-                - name: Přehled doplňku viditelnosti zásob
-                  href: inventory/inventory-visibility.md
-                - name: Instalace a nastavení viditelnosti zásob
-                  href: inventory/inventory-visibility-setup.md
-                - name: Konfigurace viditelnosti zásob
-                  href: inventory/inventory-visibility-configuration.md
-                - name: Použití aplikace viditelnosti zásob
-                  href: inventory/inventory-visibility-power-platform.md
-                - name: Rezervace viditelnosti zásob
-                  href: inventory/inventory-visibility-reservations.md
-                - name: Veřejné rozhraní API viditelnosti zásob
-                  href: inventory/inventory-visibility-api.md
-                - name: Tipy k viditelnosti zásob
-                  href: inventory/inventory-visibility-tips.md
-        - name: Inteligence IoT
+              href: inventory/inventory-visibility.md
+        - name: IoT Intelligence
           items:
-            - name: Domovská stránka Inteligence IoT
+            - name: Domovská stránka IoT Intelligence
               href: iot/iot-intelligence-home-page.md
-            - name: Nastavení prostředků Azure
+            - name: Nastavení zdrojů Azure
               href: iot/iot-azure-setup.md
             - name: Formáty schémat zpráv pro centrum IoT
               href: iot/iot-schema-format.md
@@ -1649,26 +1599,18 @@
               items:
                 - name: Přehled optimalizace plánování
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: "Začínáme s\_optimalizací plánování"
+                - name: Začínáme s optimalizací plánování
                   href: master-planning/planning-optimization/get-started.md
-                - name: "Proces vydání optimalizace plánování a\_historie vydání"
-                  href: master-planning/planning-optimization/release-process.md
                 - name: Analýza přizpůsobení pro optimalizaci plánování
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Rozdíly mezi integrovaným hlavním plánováním a optimalizací plánování
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametry, které optimalizace plánování nepoužívá'
                   href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Plán dodávek
-                  href: master-planning/supply-schedule.md
                 - name: Použití filtrů na plán
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hlavní plánování s prognózou poptávky
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Hlavní plánování s obchodními smlouvami nákupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Parametry data a času používané optimalizací plánování
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Pojistné doby
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Tolerance zpoždění (záporné dny)
@@ -1679,36 +1621,26 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Plánování s nekonečnou kapacitou
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: Plánování s výběrem prostředků na základě schopností
-                  href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Plánování založené na prioritách
-                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Značení zásob s optimalizací plánování
                   href: master-planning/planning-optimization/marking.md
                 - name: Mezipodnikové plánování
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Vyloučení produktů s určitými stavy životního cyklu produktu
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: "Metody doplnění a\_modifikace množství"
+                - name: Metody doplnění a modifikace množství
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Ochranné doby disponibility
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: "Čisté požadavky a\_informace o\_doložení u\_optimalizace plánování"
-                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Schválení plánovaných objednávek
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Potvrdit plánované objednávky
                   href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Zjednodušené plánované objednávky
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Plánování se záporným množstvím na skladě
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Zobrazení historie pánů a plánovacích protokolů
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Zrušení plánovací úlohy
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Zprávy akce
-                  href: master-planning/action-messages.md
                 - name: Řešení potíží s optimalizací plánování
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Rozšiřitelnost optimalizace plánování
@@ -1733,14 +1665,14 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Splnění rezervních zásob položek
                   href: master-planning/safety-stock-replenishment.md
-                - name: Použití deníku pojistných zásob pro aktualizaci minimální disponibility pro položky
-                  href: master-planning/safety-stock-journal.md
                 - name: Zpoždění
                   href: master-planning/delays.md
                 - name: Zrušení hlavní plánovací úlohy
                   href: master-planning/cancel-master-planning-job.md
                 - name: Použití sledování pro rozpad
                   href: master-planning/trace-explosion.md
+                - name: Zprávy akce
+                  href: master-planning/action-messages.md
                 - name: Sledování běhu hlavního plánování
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Vytvoření rozvrhu pro pracoviště
@@ -1749,8 +1681,6 @@
                   href: master-planning/tasks/create-plan-site.md
                 - name: Kalendáře a hlavní plánování
                   href: master-planning/supply-chain-calendars-master-planning.md
-                - name: Vyřešení chyby modulu plánování „Nebyla nalezena dostatečná kapacita“
-                  href: master-planning/not-enough-capacity-error-resolution.md
                 - name: Vylepšení výkonu hlavního plánování
                   href: master-planning/master-planning-performance.md
                 - name: Zlepšení výkonu modulu plánování
@@ -1777,11 +1707,11 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Zobrazení výstupní plánované mezipodnikové poptávky
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: "Čisté požadavky a\_informace o\_doložení u\_integrovaného hlavního plánování"
-                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
             - name: Prognózování
               items:
-                - name: "Prognóza poptávky a\_nabídky"
+                - name: Prognóza poptávky a nabídky
                   items:
                     - name: Prognózy zásob
                       href: master-planning/inventory-forecast.md
@@ -1811,7 +1741,9 @@
                   items:
                     - name: Redukční klíče prognózy
                       href: master-planning/reduction-keys.md
-        - name: Mobilní aplikace
+            - name: Řešení potíží s hlavním plánováním
+              href: master-planning/troubleshoot-masterplanning.md
+        - name: Aplikace pro mobilní zařízení
           items:
             - name: Domovská stránka mobilní aplikace
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
@@ -1855,7 +1787,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nejčastější dotazy prostředí otevření v Excelu
+            - name: Vytvoření zkušeností s otevíráním v Excelu
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Přidání šablon do otevřených řádků v nabídce Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1901,13 +1833,11 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace globálního adresáře
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nastavení adresy
-                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Často kladené dotazy o adresáři
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace adresářů
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Systém pracovního postupu
+            - name: Systém workflow
               items:
                 - name: Přehled systému workflow
                   href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
@@ -2015,6 +1945,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Workflow zásobování a zdrojů
               href: procurement/procurement-sourcing-workflows.md
+            - name: Řešení problému s pracovními postupy zásobování a zdrojů
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Zásobovací katalogy
               items:
                 - name: Přehled zásobovacích katalogů
@@ -2035,11 +1967,9 @@
                   href: procurement/request-quotations.md
                 - name: Vytvoření požadavku na nabídku
                   href: procurement/tasks/create-request-quotation.md
-                - name: Zapečetěné nabídky pro požadavky na nabídku
-                  href: procurement/sealed-bidding.md
                 - name: Vytvoření žádanky používající požadavek na nabídku
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Vytvoření metody bodování pro požadavky na nabídku
+                - name: Vytvoření metody hodnocení pro požadavky na nabídku
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: "Vytvoření typů oslovení a\_kritérií hodnocení pro požadavky na nabídku"
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
@@ -2055,12 +1985,10 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobilní pracovní prostor schvalování nákupních objednávek
                   href: procurement/purchase-order-mobile-workspace.md
-                - name: Vytvoření a fakturace mezipodnikové nákupní objednávky pro interní použití
-                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
-                - name: Zkontrolovat nesrovnalosti v cenách v mezipodnikových objednávkách
-                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Zaznamenání příjmu zboží na nákupní objednávce
-                  href: procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Řešení problémů s nákupními objednávkami
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Vytvoření nákupní objednávky
               items:
                 - name: Ruční vytvoření nákupních objednávek
@@ -2091,6 +2019,8 @@
                   href: procurement/automatic-charges-allocation.md
                 - name: Rabaty dodavatele
                   href: procurement/vendor-rebates.md
+                - name: 'Řešení problémů s cenami, slevami, smlouvami a rabaty'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Zásady nákupu
               items:
                 - name: Přehled zásad nákupu
@@ -2105,6 +2035,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Přehled faktur dodavatele
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Řešení problémů s příjemkami produktů a fakturací
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Správa a spolupráce dodavatelů
               items:
                 - name: Nastavení a správa dodavatelské spolupráce
@@ -2155,12 +2087,10 @@
               items:
                 - name: "Nastavení informací o\_prostředku projektu"
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Vytvoření a odeslání pracovního postupu projektových rozpočtů
+                - name: "Odesílání a\_schvalování rozpočtů projektů"
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: "Odesílání a\_schvalování revizí projektových rozpočtů"
                   href: procurement/tasks/submit-approve-project-budget-revision.md
-            - name: Nejčastější dotazy k zásobování
-              href: procurement/procurement-faq.md
         - name: "Správa informací o\_produktech"
           items:
             - name: Přehled informací o produktech
@@ -2255,6 +2185,8 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Výpočty kusovníku
                   href: cost-management/bom-calculations.md
+                - name: Řešení potíží s informacemi o produktu
+                  href: pim/troubleshooting-productinformation.md
             - name: Konfigurace produktu
               items:
                 - name: Přehled konfigurace produktu
@@ -2317,8 +2249,8 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Převedení dat pro modely produktu
                       href: pim/tasks/transfer-data-product-models.md
-            - name: Nejčastější dotazy ke správě informací o produktech
-              href: pim/product-information-faq.md
+                - name: Řešení potíží s konfigurátorem produktu
+                  href: pim/troubleshooting-productconfigurator.md
         - name: Správa technických změn
           items:
             - name: Přehled správy technických změn
@@ -2347,11 +2279,9 @@
               href: engineering-change-management/engineering-change-management.md
             - name: Připravenost produktu
               href: engineering-change-management/product-readiness.md
-            - name: Struktura vydané verze produktu
+            - name: Uvolnit strukturu produktu
               href: engineering-change-management/release-product-structure.md
-            - name: Generujte varianty pro technické produkty
-              href: engineering-change-management/engineering-variants.md
-            - name: Časté otázky ke správě technických změn
+            - name: Nejčastější dotazy ke správě technických změn
               href: engineering-change-management/change-management-faq.md
         - name: Řízení výroby
           items:
@@ -2365,8 +2295,6 @@
               href: production-control/unified-job-ids.md
             - name: "Vyvolání toků automatizace procesů k\_vytvoření objednávek kvality"
               href: production-control/process-automation-quality-orders.md
-            - name: Integrace se systémy realizace výroby třetích stran
-              href: production-control/mes-integration.md
             - name: Diskrétní výroba
               items:
                 - name: Správa hlavních dat výroby
@@ -2447,7 +2375,19 @@
                       href: production-control/release-production-orders.md
                     - name: Vykázání výrobních zakázek jako dokončených
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfigurovat úkolový lístek pro zařízení
+                    - name: Nastavení a použití rozhraní pro provádění výrobního provozu
+                      items:
+                        - name: Konfigurace rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Návrh rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-tabs.md
+                        - name: Nastavení zařízení ke spuštění rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-use.md
+                        - name: Vytvoření rozhraní pro provádění výrobního provozu
+                          href: production-control/production-floor-execution-styles.md
+                    - name: Konfigurace úkolového lístku pro zařízení
                       href: production-control/config-job-card-device.md
                     - name: Ohlášení jako dokončené ze zařízení úkolového lístku
                       href: production-control/report-finished-job-device.md
@@ -2501,6 +2441,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Pružné skupiny
                       href: production-control/time-attendance-flex-groups.md
+                - name: Řešení potíží s diskrétní výrobou
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean manufacturing
               items:
                 - name: Lean manufacturing – přehled
@@ -2653,28 +2595,14 @@
                       href: production-control/consumption.md
                     - name: Zaúčtování výroby
                       href: cost-management/production-posting.md
-            - name: Nastavení a použití rozhraní pro provádění výrobního provozu
-              items:
-                - name: Konfigurace rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-configure.md
-                - name: Návrh rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-tabs.md
-                - name: Nastavení zařízení ke spuštění rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-setup.md
-                - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-use.md
-                - name: Vytvoření rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-styles.md
-                - name: Vlastní nastavení rozhraní pro provádění výrobního provozu
-                  href: production-control/production-floor-execution-customize.md
+                - name: Řešení potíží s procesní výrobou
+                  href: production-control/troubleshoot-processmanufacturing.md
         - name: Správa rabatu
           items:
             - name: Přehled modulu správy rabatu
               href: rebate-management/rebate-management-overview.md
-            - name: "Nastavení a\_konfigurace modulu správy rabatu"
+            - name: Nastavení a konfigurace modulu správy rabatu
               items:
-                - name: Zapněte ve svém systému modul správy rabatu
-                  href: rebate-management/rebate-management-enable.md
                 - name: Parametry správy rabatu
                   href: rebate-management/rebate-management-parameters.md
                 - name: Pracovní postupy obchodů správy rabatu
@@ -2689,13 +2617,11 @@
                   href: rebate-management/rebate-management-posting.md
             - name: Obchody správy rabatu
               href: rebate-management/rebate-management-deals.md
-            - name: "Zpracování, kontrola a\_zaúčtování rabatu"
+            - name: 'Zpracování, kontrola a zaúčtování rabatu'
               href: rebate-management/process-review-post.md
-            - name: Spravujte srážky pomocí pracovní plochy odpočtu
-              href: rebate-management/deduction-workbench.md
         - name: "Prodej a\_marketing"
           items:
-            - name: "Přehled prodeje a\_marketingu"
+            - name: Přehled prodeje a marketingu
               href: sales-marketing/overview-sales-marketing.md
             - name: Prodejní objednávky
               items:
@@ -2725,14 +2651,14 @@
                   href: procurement/automatic-charges-allocation.md
                 - name: Vytvoření nákupní objednávky z prodejní objednávky
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
-                - name: Vytvoření prodejní objednávky
+                - name: Vytvářet prodejní objednávky
                   href: sales-marketing/tasks/create-sales-orders.md
                 - name: Správa blokování objednávek
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Potvrzení prodejních objednávek
                   href: sales-marketing/tasks/confirm-sales-orders.md
-                - name: Nejčastější dotazy k prodejní objednávce
-                  href: sales-marketing/sales-orders-faq.md
+                - name: Řešení problémů s prodejními objednávkami
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Prodejní smlouvy
               items:
                 - name: Přehled prodejních smluv
@@ -2755,67 +2681,13 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: "Vytváření a\_úpravy prodejních nabídek"
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Mezipodnikový obchod
-              items:
-                - name: Nastavení mezipodnikového obchodu
-                  items:
-                    - name: Nastavení mezipodnikového obchodu
-                      href: sales-marketing/intercompany-trade-set-up.md
-                    - name: Mezipodnikové parametry
-                      href: sales-marketing/intercompany-parameters.md
-                    - name: 'Nastavení dodavatelů, zákazníků a položek pro mezipodnikový obchod'
-                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
-                    - name: Nastavení poplatků u mezipodnikových objednávek
-                      href: sales-marketing/intercompany-set-up-charges.md
-                    - name: Nastavení parametrů pro účtování mezipodnikové objednávky
-                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
-                - name: Synchronizace mezipodnikových informací
-                  items:
-                    - name: Synchronizace mezipodnikových cen a slev
-                      href: sales-marketing/intercompany-sync-prices-discounts.md
-                    - name: Synchronizace mezipodnikových poplatků
-                      href: sales-marketing/intercompany-sync-charges.md
-                    - name: Synchronizace mezipodnikových zákaznických informací
-                      href: sales-marketing/intercompany-synch-customer-information.md
-                    - name: Synchronizace mezipodnikových dispozičních kódů
-                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
-                - name: Mezipodnikové prodejní objednávky a faktury
-                  items:
-                    - name: Vytvoření mezipodnikových nákupních a prodejních objednávek v několika podnicích
-                      href: sales-marketing/intercompany-orders-in-several-companies.md
-                    - name: Mezipodnikové objednávky a vratky
-                      href: sales-marketing/intercompany-orders-and-return-orders.md
-                    - name: Vytvoření mezipodnikové prodejní objednávky pro interní použití
-                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
-                    - name: Vytvoření faktury a mezipodnikové prodejní objednávky pro externího zákazníka
-                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
-                    - name: Mezipodnikové rezervace
-                      href: sales-marketing/intercompany-reservations.md
-                    - name: Změna nebo odstranění původní mezipodnikové prodejní objednávky
-                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
-                    - name: Změna mezipodnikových objednávek
-                      href: sales-marketing/intercompany-change-orders.md
-                    - name: Mezipodniková dávka a sériová čísla
-                      href: sales-marketing/intercompany-batch-serial-numbers.md
-                    - name: Mezipodnikové dodací listy
-                      href: sales-marketing/intercompany-packing-slips.md
-                    - name: Automatická registrace plateb pro faktury za mezipodnikové zákaznické faktury
-                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
-                - name: Mezipodnikové nákupní objednávky
-                  items:
-                    - name: Vytvoření a fakturace mezipodnikové nákupní objednávky pro interní použití
-                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
-                    - name: Zkontrolovat nesrovnalosti v cenách v mezipodnikových objednávkách
-                      href: sales-marketing/intercompany-check-price-discrepancies.md
-                - name: Mezipodnikové převody měny
-                  href: sales-marketing/intercompany-currency-conversions.md
-                - name: Mezipodnikové hlavní plánování
-                  href: sales-marketing/intercompany-master-scheduling.md
+                - name: Řešení problémů s prodejními nabídkami
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Vrácení
               items:
                 - name: Prodejní vratky
                   href: warehousing/sales-returns.md
-            - name: Komise
+            - name: Provize
               items:
                 - name: Registrace prodejních provizí
                   href: sales-marketing/tasks/register-sales-commissions.md
@@ -2835,13 +2707,11 @@
               href: sales-marketing/trade-allowance.md
             - name: Vytvoření nové obchodní smlouvy
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: Vylepšení výkonu čištění historie prodeje
-              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
-        - name: Správa služeb
+        - name: Správa servisu
           items:
-            - name: Přehled správy služeb
+            - name: Přehled správy servisu
               href: service-management/service-management-home-page.md
-            - name: Nastavení služby zákazníkům
+            - name: Nastavení služby pro odběratele
               items:
                 - name: Nastavení servisní smlouvy
                   items:
@@ -3151,8 +3021,6 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Nastavení a konfigurace modulu nákladů na doručení
               items:
-                - name: Zapnutí modulu nákladů na doručení pro váš systém
-                  href: landed-cost/landed-cost-enable.md
                 - name: Parametry nákladů za doručení
                   href: landed-cost/landed-cost-parameters.md
                 - name: Parametry zásobování a zdrojů nákladů na doručení
@@ -3183,14 +3051,12 @@
                   href: landed-cost/manage-folios.md
             - name: Sledování příchozích plaveb a cesty přepravních kontejnerů
               href: landed-cost/inbound-tracking.md
-            - name: "Odhady a\_správa nákladů na doručení"
+            - name: Odhady a správa nákladů na doručení
               href: landed-cost/estimate-manage-landed-costs.md
             - name: Zpracování během tranzitu
               href: landed-cost/in-transit-processing.md
             - name: Zpracování nadměrných/nedostatečných transakcí
               href: landed-cost/over-under-transactions.md
-            - name: Aktualizovat sledování pro odložení
-              href: landed-cost/update-tracking-putaway.md
             - name: Dotazy na náklady na doručení
               href: landed-cost/landed-cost-inquiries.md
             - name: Sestavy nákladů na doručení
@@ -3223,31 +3089,37 @@
                   href: inventory/quality-management-for-warehouses-processes.md
                 - name: Kontrola kvality
                   href: warehousing/quality-check.md
+                - name: Řešení potíží s příchozími skladovými operacemi
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Odchozí skladové operace
               items:
-                - name: Flexibilní zásada rezervace dimenze na úrovni skladu
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-                - name: Uvolnění do skladu
-                  href: warehousing/release-to-warehouse-process.md
+                - name: Rezervace v řízení skladu
+                  items:
+                    - name: Flexibilní zásada rezervace dimenze na úrovni skladu
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: Řešení potíží s rezervacemi v řízení skladu
+                      href: warehousing/troubleshoot-warehouse-reservations.md
+                    - name: Odstraňování problémů s hierarchiemi dávkových a sériových rezervací skladu
+                      href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
                 - name: Částečné uvolnění a částečná dodávka
                   items:
                     - name: Částečná dodávka nákladu přepravy
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Vydání dávky částečně rezervovaných převodních příkazů
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: Řešení potíží s částečnými uvolněními a částečnými dodávkami
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: "Výdej a\_balení"
                   items:
-                    - name: Nastavení vyzvedávání v seskupení
+                    - name: Nastavení výdejů v seskupení
                       href: warehousing/set-up-cluster-picking.md
                     - name: Pozice seskupení plná
                       href: warehousing/cluster-position-full.md
                     - name: Systémem řízený výdej v seskupení
                       href: warehousing/system-directed-cluster-pick.md
-                    - name: "Přebírání prodejních objednávek a\_převodních příkazů"
-                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
-                    - name: "Nastavení různých rozměrů pro balení a\_skladování"
+                    - name: Nastavení různých rozměrů pro balení a skladování
                       href: warehousing/packing-vs-storage-dimensions.md
-                    - name: "Potvrzení dávky a\_registrační značky"
+                    - name: Potvrzení dávky a poznávací značky
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Povolení tisku popisku registrační značky
                       href: warehousing/tasks/license-plate-label-printing.md
@@ -3271,14 +3143,14 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Prodlení výdeje zásob směrnice místa
                       href: warehousing/location-directive-inventory-picking-aging.md
-                    - name: Ukotvení
-                      href: warehousing/anchoring.md
                     - name: Odchozí třídění
                       href: warehousing/outbound-sorting.md
-                    - name: Umístění na zeď – umístění do obchodu
+                    - name: Umístění na zeď - umístění do obchodu
                       href: warehousing/put-to-wall-put-to-store.md
-                    - name: Vizualizace odchozí úlohy
+                    - name: Vizualizace odchozího pracovní vytížení
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Řešení potíží s výdejem a balením
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: Doplnění
                   items:
                     - name: Přehled doplnění
@@ -3291,10 +3163,12 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Doplnění prahu zóny
                       href: warehousing/zone-threshold-replenishment.md
-                    - name: Strategie doplnění
+                    - name: Strategie doplňování
                       href: warehousing/replenishment-strategies.md
                     - name: Doplnění nad kapacitu místa
                       href: warehousing/replenishment-over-location-capacity.md
+                    - name: Řešení potíží s doplňováním skladu
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Sestavení nákladu a dodávky
                   items:
                     - name: Potvrdit a převést
@@ -3307,6 +3181,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Expedice malých balíků
                       href: warehousing/small-parcel-shipping.md
+                    - name: Řešení potíží se sestavením nákladu a dodávkami
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Zásady konsolidace dodávek
                   items:
                     - name: Zásady konsolidace dodávek
@@ -3321,12 +3197,14 @@
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: "Scénář 4\_–\_Konsolidace dodávek pomocí pracovní plochy konsolidace dodávky"
                       href: warehousing/consolidate-shipments-manual-workbench.md
-                    - name: Scénář 5 – Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
+                    - name: Scénář 5 - Ruční konsolidace dodávek pomocí stránky konsolidace dodávek
                       href: warehousing/consolidate-shipments-manual-form.md
-                - name: Tvorba a zpracování vlny
+                - name: Tvorba a zpracování vln
                   href: warehousing/wave-processing.md
                 - name: Opakovaný tisk a anulování štítků vlny
                   href: warehousing/reprint-and-void-wave-labels.md
+                - name: Řešení potíží s odchozími skladovými operacemi
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: Napříč operacemi skladu
               items:
                 - name: Zásady práce ve skladu
@@ -3391,6 +3269,8 @@
                       href: warehousing/work-split.md
                     - name: Rozhraní vybavení manipulace s materiálem (MHAX)
                       href: warehousing/mhax.md
+                    - name: Řešení potíží s prací skladu
+                      href: warehousing/troubleshoot-warehouse-work.md
             - name: Aplikace skladu
               items:
                 - name: 'Instalace, nastavení a použití mobilních zařízení'
@@ -3401,22 +3281,16 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Instalace a připojení aplikace skladu
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Mobilní podpora čárového kódu
-                      href: warehousing/mobile-barcode-support.md
                     - name: Skenování čárových kódů pomocí fotoaparátu v mobilní aplikaci Warehouse Management
                       href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Odstraňování problémů s připojením k mobilní aplikaci Warehouse Management
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Nastavení polí a nabídek pro mobilní zařízení
                   items:
                     - name: Konfigurace polí pro mobilní aplikaci Warehouse Management
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Nastavení mobilních zařízení pro práci ve skladu
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management
-                      href: warehousing/mobile-app-titles-instructions.md
-                    - name: Konfigurace propagovaných polí pro kroky v mobilním zařízení
-                      href: warehousing/warehouse-app-promoted-fields.md
-                    - name: Konfigurace náhradního procesu pro kroky v položkách nabídky mobilního zařízení
-                      href: warehousing/warehouse-app-detours.md
                     - name: Přijetí registrační značky prostřednictvím mobilní aplikace Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
@@ -3433,15 +3307,11 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Vyskladnění nejstarší dávky na mobilním zařízení
                       href: warehousing/pick-oldest-batch.md
-                - name: Globální parametry mobilního zařízení
-                  href: warehousing/mobile-device-parameters.md
-                - name: Uživatelské účty mobilního zařízení
-                  href: warehousing/mobile-device-work-users.md
                 - name: Uživatelská nastavení mobilního zařízení
                   href: warehousing/mobile-device-user-settings.md
                 - name: Zpracování události aplikace skladu
                   href: warehousing/warehouse-app-events.md
-                - name: Rozšíření mobilních procesů skladu
+                - name: Přizpůsobení aplikace skladu
                   items:
                     - name: Architektura průvodce procesem
                       href: warehousing/process-guide-framework.md
@@ -3513,14 +3383,20 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Rozvržení směrování dokumentu pro popisky registrační značky
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Kódy QR a čárové kódy GS1
-                      href: warehousing/gs1-barcodes.md
+                    - name: Mobilní podpora čárového kódu
+                      href: warehousing/mobile-barcode-support.md
                     - name: Nastavení skladu pro převodní příkazy
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: Řešení potíží s konfigurací skladu
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: "Upgrade a\_migrace"
                   items:
-                    - name: "Upgrade procesů řízení skladu z\_aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations"
+                    - name: Upgrade procesů řízení skladu z Microsoft Dynamics AX 2012 na Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: Řešení potíží s upgradem a migrací na pokročilou správu skladů
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: Řešení potíží s nastavením skladu
+                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Vývoj aplikace Supply Chain Management
           items:
             - name: Průvodce vývojem Ganttova diagramu
@@ -3533,15 +3409,7 @@
           items:
             - name: Správa nákladů
               items:
-                - name: Nesrovnalosti sestavy stáří zásob
-                  href: troubleshooting/costing/aging-report-discrepancies.md
-                - name: Varování nebo chyby při změně stavu období hlavní knihy bez uzávěrky zásob
-                  href: troubleshooting/costing/change-ledger-period-without-closing.md
-                - name: Funkční mezery mezi sestavami o hodnotě/stárnutí zásob a jejich verzemi úložiště
-                  href: troubleshooting/costing/function-gaps-storage-reports.md
-                - name: 'Konflikt aktualizace nastane, když metoda ocenění zásob je buď standardní cena nebo klouzavý průměr'
-                  href: troubleshooting/costing/update-conflict-standard-moving.md
-                - name: Chybějící nastavení pole při kopírování skupin modelů položek do jiné právnické osoby
+                - name: Chybí nastavení pole při kopírování skupin modelů položek do jiné právnické osoby
                   href: troubleshooting/costing/copying-item-model-groups.md
                 - name: "Sestava Nepřímé náklady v\_procesu zahrnuje odstraněné výrobní zakázky"
                   href: troubleshooting/costing/indirect-costs-in-pr.md
@@ -3553,21 +3421,7 @@
                   href: troubleshooting/costing/there-is-no-from-dat.md
             - name: Řízení zásob
               items:
-                - name: Nemůžete najít rozevírací dialogové okno „Workflow“ pro deníky zásob
-                  href: troubleshooting/inventory/cant-find-workflow-dropdown.md
-                - name: Workflow deníku zásob se nikdy nedokončí a deník nelze zpracovat
-                  href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: Deník zásob je uzamčen a dávková úloha workflow nefunguje
-                  href: troubleshooting/inventory/inventory-journal-locked-workflow.md
-                - name: Jednotka a množství jednotky nefungují v deníku zásob správně
-                  href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
-                - name: 'Podmínky workflow deníku zásob platí na úrovni deníku, nikoli na úrovni řádku'
-                  href: troubleshooting/inventory/journal-workflow-conditions.md
-                - name: Podokno filtru na stránce Seznamu na skladě nefunguje podle očekávání
-                  href: troubleshooting/inventory/on-hand-filter-unexpected.md
-                - name: Maximální počet desetinných míst pro skladovou jednotku je 0
-                  href: troubleshooting/inventory/sku-max-decimals-zero.md
-                - name: Několik transakcí zásob pro čísla dávek bez možnosti „Při fyzické aktualizaci“
+                - name: Několik skladových transakcí pro čísla dávek bez možnosti „Při fyzické aktualizaci“
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Stornování sestavy jako dokončené vytvoří neočekávanou otevřenou transakci
                   href: troubleshooting/inventory/reverse-report-as-fi.md
@@ -3581,22 +3435,6 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Hlavní plánování
               items:
-                - name: 'Systém nemůže najít plánovanou objednávku, když pracuje na více objednávkách'
-                  href: troubleshooting/planning/planned-order-not-exist.md
-                - name: U pevných a odhadovaných výrobních zakázek se rozpad kusovníku chová odlišně
-                  href: troubleshooting/planning/bom-explosion-works-differently.md
-                - name: 'Hodnota zpoždění se neaktualizuje, když přeplánujete plánovanou objednávku'
-                  href: troubleshooting/planning/delay-value-not-updated.md
-                - name: Aktualizace plánovaných objednávek trvá dlouho
-                  href: troubleshooting/planning/planned-order-long-update.md
-                - name: Plánované objednávky jsou generovány na skladě s výrobními zakázkami
-                  href: troubleshooting/planning/planned-orders-in-stock-items.md
-                - name: Plánování výroby nezohledňuje bezpečnostní rezervy
-                  href: troubleshooting/planning/prod-schedule-safety-margins.md
-                - name: 'Hlavní plánování plánuje větší množství, než je dostupná kapacita'
-                  href: troubleshooting/planning/respect-capacity-limitations.md
-                - name: Nebyla nalezena dostatečná kapacita
-                  href: troubleshooting/planning/not-enough-capacity-error.md
                 - name: Při spuštění integrovaného modulu hlavního plánování se zobrazí chyba
                   href: troubleshooting/planning/deprecated-master-planning-error.md
                 - name: Položka nemůže mít kusovník ani recepturu
@@ -3625,74 +3463,16 @@
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: "Nelze odebrat dimenzi prognózy poptávky skladu z\_řádků prognózy"
                   href: troubleshooting/planning/warehouse-removal-fr.md
-                - name: "Zobrazí se výzva k\_uložení nastavení disponibility zboží, přestože jste neprovedli žádné změny"
+                - name: "Zobrazí se výzva k\_uložení nastavení pokrytí položky, přestože jste neprovedli žádné změny"
                   href: troubleshooting/planning/when-importing-to-th.md
             - name: Zásobování
               items:
-                - name: Nesrovnalosti v datech řádků nákupní objednávky
-                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
-                - name: Nejméně jedno rozúčtování je buď nadměrně nebo nedostatečně distribuované
-                  href: troubleshooting/procurement/accounting-over-under-distributed.md
-                - name: Akci nákupní objednávky můžete dokončit pouze pro plně distribuovaná čísla řádků
-                  href: troubleshooting/procurement/action-requires-full-distribution.md
-                - name: Nelze změnit datum účinnosti pro schváleného dodavatele
-                  href: troubleshooting/procurement/approved-vendor-effective-date.md
-                - name: Zrušené nákupní objednávky se zobrazí v seznamu konceptů v pracovním prostoru
-                  href: troubleshooting/procurement/canceled-po-in-draft-list.md
-                - name: Transakce lze zaúčtovat na pozastavený účet hlavní knihy
-                  href: troubleshooting/procurement/canceled-receipts-posted.md
-                - name: Zrušení zbytku dodávky přesune nákupní objednávku do potvrzeného stavu
-                  href: troubleshooting/procurement/change-management-canceled-remainder.md
-                - name: Nemůžete konsolidovat více příjemek produktu do jedné nákupní objednávky
-                  href: troubleshooting/procurement/consolidate-multiple-receipts.md
-                - name: Výchozí daňová skupina a platební sleva se z účtu faktury nevyplňují
-                  href: troubleshooting/procurement/default-tax-group-and-discount.md
-                - name: Po změně dodací adresy nákupní objednávky není název doručení synchronizován
-                  href: troubleshooting/procurement/delivery-name-isnt-synced.md
-                - name: Během účtování faktury dodavatele dochází k výjimce
-                  href: troubleshooting/procurement/invocation-target-exception.md
-                - name: Importované nákupní objednávky zobrazují nesprávná čísla řádků
-                  href: troubleshooting/procurement/line-number-increments.md
-                - name: Maximální limit kupní smlouvy na nákupní žádanku není účinný
-                  href: troubleshooting/procurement/max-limit-on-requisition.md
-                - name: Při potvrzování nákupní objednávky dochází k chybě „Odkaz na objekt není nastaven“
-                  href: troubleshooting/procurement/object-reference-not-set.md
-                - name: Rozúčtování jsou buď nadměrně nebo nedostatečně distribuovaná
-                  href: troubleshooting/procurement/over-under-distribution.md
-                - name: Pole Jednotka ceny nelze přidat na stránku Kupní smlouva
-                  href: troubleshooting/procurement/personalize-purchase-agreement-price.md
-                - name: Nákupní objednávky neodrážejí jazyková nastavení právnické osoby
-                  href: troubleshooting/procurement/po-language.md
-                - name: Příjemka nákupní objednávky nezahrnuje všechny poplatky
-                  href: troubleshooting/procurement/po-receipt-missing-charges.md
-                - name: Jednotkové ceny u nákupních objednávek se nevypočítávají na základě převodu jednotek
-                  href: troubleshooting/procurement/po-unit-prices-not-calculated.md
-                - name: Nastavení možnosti Zaúčtovat na účet poplatků v hlavní knize není zapnuto
-                  href: troubleshooting/procurement/post-setting-turned-off.md
-                - name: Chyba při opětovném odeslání nákupní objednávky do workflow po změně
-                  href: troubleshooting/procurement/resubmit-po-after-change.md
-                - name: Problémy převodu měny obchodní smlouvy
-                  href: troubleshooting/procurement/trade-agreement-currencies.md
-                - name: Na importované řádky objednávky se nevztahují podmínky obchodní smlouvy
-                  href: troubleshooting/procurement/trade-agreement-not-applied.md
-                - name: Obchodní smlouvy lze vytvořit z odmítnutých požadavků na cenovou nabídku
-                  href: troubleshooting/procurement/trade-agreements-from-rejected-rfq.md
-                - name: Rabat dodavatele se nesčítá na základě faktur
-                  href: troubleshooting/procurement/vendor-rebate-not-cumulated.md
-                - name: 'Číslo poukazu o přijetí produktu je spotřebováno, i když není generován poukaz'
-                  href: troubleshooting/procurement/voucher-number-consumed.md
                 - name: Prodejní objednávku zákazníka nelze fakturovat
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: "Po žádosti o\_změnu nelze přidat řádek k\_nákupní žádance"
                   href: troubleshooting/procurement/purchase-requisition.md
             - name: "Správa informací o\_produktech"
               items:
-                - name: Vydaný produkt nemůžete smazat
-                  href: troubleshooting/products/cant-delete-released-prod.md
-                - name: Při výpočtu modelů konfigurace produktu jsou nesprávně zaokrouhlena celá čísla
-                  href: troubleshooting/products/integers-incorrectly-rounded.md
-                - name: 'Text položky se přepíše, když je produkt nakonfigurován na řádku prodejní objednávky'
-                  href: troubleshooting/products/text-overwritten-configured-item.md
                 - name: "Nemůžete použít šablonu k\_vytvoření uvolněného produktu"
                   href: troubleshooting/products/apply-template-in-re.md
                 - name: "Nemůžete importovat zboží použitím entity Uvolněné produkty\_V2"
@@ -3701,32 +3481,6 @@
                   href: troubleshooting/products/when-the-customer-ad.md
             - name: Řízení výroby
               items:
-                - name: Chyba výpočtu zpětného účtování nákladů při uzávěrce zásob
-                  href: troubleshooting/production/backflush-costing-calculation-error.md
-                - name: Výrobní zakázku nelze ukončit z důvodu chyby hodnoty kusovníku spotřeby
-                  href: troubleshooting/production/bom-consumption-cost-error.md
-                - name: Při vytváření nové výrobní zakázky nelze vložit kusovník a trasu
-                  href: troubleshooting/production/cant-insert-bom-route-number.md
-                - name: Předchozí probíhající úlohy jsou ukončeny při vykazování částečného množství u poslední úlohy
-                  href: troubleshooting/production/in-progress-jobs-ended.md
-                - name: 'Položku RM nelze plně uvolnit, když je vydána výrobní zakázka'
-                  href: troubleshooting/production/item-rm-not-reserved.md
-                - name: Nahlášení dokončené aktualizace selže s chybou chybějícího množství
-                  href: troubleshooting/production/missing-report-finished-quantity.md
-                - name: Chyba při zaúčtování sestavy jako dokončeného deníku
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: Chyba při změně stavu výrobní zakázky z Vykázáno jako dokončeno na Konec
-                  href: troubleshooting/production/production-order-status-error.md
-                - name: Výrobní zakázky se nezobrazují na stránce Označení
-                  href: troubleshooting/production/production-orders-marking-page.md
-                - name: Název prostředku se neaktualizuje po změně jména pracovníka
-                  href: troubleshooting/production/resource-name-not-updated.md
-                - name: Chyba celkového množství výrobků při pokusu o ukončení výrobní zakázky
-                  href: troubleshooting/production/total-good-quantity-order-error.md
-                - name: Nelze vysledovat sériová čísla hotových výrobků proti spotřebovanému zboží
-                  href: troubleshooting/production/trace-finished-goods-consumed-goods.md
-                - name: 'Nelze rezervovat nebo uvolnit práci, protože se aktuálně používají procesy'
-                  href: troubleshooting/production/warehouse-management-processes-used.md
                 - name: Nastavení principu odhlašování na řádcích kusovníku není respektováno
                   href: troubleshooting/production/flushing-principle-n.md
                 - name: Číslo dávky se při výběru nového ID šarže vymaže
@@ -3741,128 +3495,20 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: Správa rabatu
               items:
-                - name: Kumulace zákaznických rabatů pomocí skupin rabatu pro zboží selhává
+                - name: Kumulace zákaznických rabatů pomocí skupin rabatu pro položky selhává
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: "Prodej a\_marketing"
               items:
-                - name: Úloha čištění historie prodejů selhává nebo má problémy s výkonem
-                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
-                - name: V mezipodnikovém procesu není položka sady podporována
-                  href: troubleshooting/sales/bundle-item-intercompany-process.md
-                - name: 'Nelze zrušit mezipodnikovou nákupní objednávku, která je propojena s prodejní objednávkou'
-                  href: troubleshooting/sales/cancel-intercompany-purchase-order.md
-                - name: Při zrušení objednávky nelze rezervace zrušit
-                  href: troubleshooting/sales/cancel-order-reservations-not-removed.md
-                - name: 'Pokud pro překrývající se data existují dvě obchodní smlouvy, je vždy vybrána stejná'
-                  href: troubleshooting/sales/same-trade-agreement-selected.md
-                - name: Nelze změnit prodejní množství servisní položky na řádku nabídky prodeje
-                  href: troubleshooting/sales/service-item-sales-quantity.md
-                - name: 'Daňové informace se neaktualizují, pokud se změní umístění v hlavičce prodejní objednávky'
-                  href: troubleshooting/sales/tax-information-not-updated.md
                 - name: Množství nelze snížit při zrušení prodejní objednávky
                   href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Správci systému nemohou vymazat blokování objednávky, protože nejsou autorizovaní'
                   href: troubleshooting/sales/system-administrator.md
             - name: Správa přepravy
               items:
-                - name: "Hlavní účet jde přidat jako kreditní účet pouze z\_důvodů odsouhlasení"
+                - name: "Hlavní účet jde přidat jako účet Dal pouze z\_důvodů odsouhlasení"
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Řízení skladu
               items:
-                - name: Warehouse mobile app
-                  items:
-                    - name: Při nastavování připojení aplikace nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu
-                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: K problémům se zpracováním dochází po instalaci úlohy skladu škálovacích jednotek
-                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
-                - name: Výzva k automatické rezervaci čísla dávky se zobrazuje i u dostupných zásob
-                  href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
-                - name: Práce vyzvedávání nelze odblokovat kvůli nedokončeným doplňovacím pracím
-                  href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
-                - name: Po zaúčtování z prodejní objednávky nelze zrušit dodací list
-                  href: troubleshooting/warehousing/cancel-posted-packing-slip.md
-                - name: 'Pokud je sériové číslo prázdné a je povolen prázdný příjem, nelze přesunout registrační značku'
-                  href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: 'Nelze přesunout zásoby na místo, kde se kontrolují registrační značky'
-                  href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Profil seskupení nebyl nalezen
-                  href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: Opravu poznámky k dodání nelze zpracovat
-                  href: troubleshooting/warehousing/delivery-note-correction.md
-                - name: Chyba při potvrzování dodávky po vytvoření převodního příkazu pro sériové zboží
-                  href: troubleshooting/warehousing/dimension-location-left-blank.md
-                - name: Přímé doručení nelze zpracovat pro sklad s podporou WMS
-                  href: troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md
-                - name: Při používání profilu pro správu dokování se míchají typy zásob
-                  href: troubleshooting/warehousing/dock-management-inventory-mixing.md
-                - name: Možnost více SKU nevyhodnocuje více akcí direktivy umístění
-                  href: troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md
-                - name: Práce vyzvedávání se nevygeneruje okamžitě po uvolnění odchozího vytížení
-                  href: troubleshooting/warehousing/generate-work-immediately-load-release.md
-                - name: Při skenování ID registrační značky v mobilní aplikaci došlo k chybě registrační značky
-                  href: troubleshooting/warehousing/invalid-license-plate.md
-                - name: Vlastník zásob není povolen při zpracování pohybů ve skladové aplikaci
-                  href: troubleshooting/warehousing/inventory-owner-not-allowed.md
-                - name: Systém nemůže aktualizovat množství zásob z důvodu nedostatečných transakcí
-                  href: troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md
-                - name: Ve sloupci Typ práce nelze vybrat změnu stavu zásob
-                  href: troubleshooting/warehousing/inventory-status-change-work-type.md
-                - name: Při skenování v mobilní aplikaci došlo k chybě registrační značky nebo umístění
-                  href: troubleshooting/warehousing/license-plate-location-invalid.md
-                - name: Počet registračních značek není při registraci příchozích objednávek platný
-                  href: troubleshooting/warehousing/license-plate-quantity-not-valid.md
-                - name: Chyba specifikace registrační značky při potvrzování zásilky pro převodní příkaz
-                  href: troubleshooting/warehousing/license-plate-specified-location.md
-                - name: Jeden z řádků je již naložen
-                  href: troubleshooting/warehousing/line-already-on-load.md
-                - name: Chyba hmotnosti zatížení a aktualizace zrušena při zpracování práce mezi místy
-                  href: troubleshooting/warehousing/load-weight-positive-numbers.md
-                - name: Přijímání smíšených registračních značek nefunguje pro žádný dispoziční kód kromě kreditu
-                  href: troubleshooting/warehousing/mixed-license-plate-receiving.md
-                - name: K přístupu k emulátoru aplikace pro mobilní zařízení lze použít pouze roli správce
-                  href: troubleshooting/warehousing/mobile-app-emulator-administrator.md
-                - name: Problémy při přechodu ze základního skladování na rozšířené skladování
-                  href: troubleshooting/warehousing/move-basic-to-advanced-warehousing.md
-                - name: Při používání vyzvedávání seskupení řízeného systémem nebyl pro seskupení nalezen dostatek práce
-                  href: troubleshooting/warehousing/not-enough-work-for-cluster.md
-                - name: Stav objednávky zůstává částečně uvolněn i po fakturaci prodejní objednávky
-                  href: troubleshooting/warehousing/order-status-partially-released.md
-                - name: K částečnému vyzvedávání nelze použít mobilní aplikaci Warehouse Management
-                  href: troubleshooting/warehousing/partial-picking-warehouse-app.md
-                - name: Povolit změnu stavu zásob pro práci s dílčím množstvím
-                  href: troubleshooting/warehousing/partial-quantity-inventory-status.md
-                - name: Tisk poznámky k dodání nebo obsahu balení podle skladu nebo pracoviště
-                  href: troubleshooting/warehousing/print-documents-by-warehouse.md
-                - name: 'Množství není platné, pokud probíhají práce vyzvedávání s více registračními značkami na jednom místě'
-                  href: troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md
-                - name: Množství není platné při děleném výběru mezi více dávkami
-                  href: troubleshooting/warehousing/quantity-invalid-split-pick.md
-                - name: Částečně odeslaný náklad nelze uvolnit do skladu
-                  href: troubleshooting/warehousing/rerelease-partially-shipped-load.md
-                - name: 'Systém nemůže provádět rezervace, protože v zásobách je k dispozici 0,00'
-                  href: troubleshooting/warehousing/reservations-0-inventory-available.md
-                - name: Nelze vytvořit řádek vytížení pro vratku prodejní objednávky z důvodu neplatných dimenzí zásob
-                  href: troubleshooting/warehousing/return-order-invalid-dimensions.md
-                - name: Prodejní objednávku nebylo možné uvolnit s odchozími skladovými operacemi
-                  href: troubleshooting/warehousing/sales-order-not-released.md
-                - name: 'Zásilka pro nakládku byla potvrzena, ale nejsou zaúčtovány žádné řádky'
-                  href: troubleshooting/warehousing/shipment-confirmed-no-posting.md
-                - name: Šablony slotů nezohledňují zásoby na skladě pro zboží nad dávkami
-                  href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
-                - name: Nelze uvolnit zatížení pro částečné množství s hierarchií rezervací nad dávkami
-                  href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: Nepotvrzené nákupní objednávky jsou potvrzeny po spuštění aktualizace příjemek produktů
-                  href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
-                - name: Nelze zrušit rezervaci zásob na řádku prodejní objednávky
-                  href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Dodávku nemůžete potvrdit, protože je zákazník blokován'
-                  href: troubleshooting/warehousing/customer-is-on-hold.md
-                - name: 'Dodávku nemůžete potvrdit, protože řádky vytížení mají nulové množství'
-                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
-                - name: 'Nelze aktualizovat řádek vytížení, protože uvolněné množství by bylo záporné'
-                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Zrušené příjemky produktu neaktualizují stav transakcí na registrované
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Desetinné zaokrouhlení fyzického aktualizovaného je nesprávné
@@ -3921,5 +3567,3 @@
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
-    - name: Dynamics 365 Human Resources
-      href: ../human-resources/index.md

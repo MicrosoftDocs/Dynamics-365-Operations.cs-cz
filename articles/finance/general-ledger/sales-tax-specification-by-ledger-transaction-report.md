@@ -2,28 +2,25 @@
 title: Specifikace DPH podle sestavy transakce hlavní knihy
 description: V tomto tématu je vysvětleno použití specifikace DPH podle sestavy transakce hlavní knihy k zobrazení a tisku informací o transakcích hlavní knihy, pro které se počítá DPH.
 author: ericwang
-manager: Ann Beebe
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 438a640124e778b839c660f5e161efa22c319af0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f835f06c190f1d174fbde6b68f189b0484a7b39610bc2edc0676a3e2fa320268
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721748"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Specifikace DPH podle sestavy transakce hlavní knihy
 [!include [banner](../includes/banner.md)]
@@ -57,4 +54,7 @@ Při generování sestavy jsou k dispozici následující výchozí pole. Tato p
 
 Chcete-li v sestavě zobrazit pouze nedaňové účty, nastavte podmínku filtru, například hvězdičku (\*), jak je znázorněno na následujícím obrázku.
 
-![Sestava zobrazující nedaňové účty](media/taxspecperledgertrans.png)
+![Sestava zobrazující nedaňové účty.](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

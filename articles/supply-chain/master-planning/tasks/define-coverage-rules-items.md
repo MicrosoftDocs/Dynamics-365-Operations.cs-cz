@@ -2,26 +2,23 @@
 title: Definování pravidel disponibility pro položky
 description: K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11d92185bdbcf7aa1a668b6d2aa311805e42293c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff2d83a01f366517502bfc5c885b6f963bd945ca
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423830"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829706"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definování pravidel disponibility pro položky
 
@@ -102,3 +99,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 11. Do pole **Čas nákupu** zadejte hodnotu 5.
 12. Klikněte na možnost **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

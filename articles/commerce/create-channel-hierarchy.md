@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e1462c10dfe1c858429e9f4cc5d720ca43df609
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410679"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221322"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace sítě
 
@@ -107,3 +106,6 @@ Následující obrázek znázorňuje příklad uzlu s přidanými skupinami atri
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Správa atributů a skupin atributů](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Přehled správy zaměstnaneckých výhod
 description: Přehled funkce správy zaměstnaneckých výhod v Dynamics 365 Human Resources. Nabídněte svým zaměstnancům rozšířené možnosti zaměstnaneckých výhod pomocí snadno použitelného online prostředí.
 author: andreabichsel
-manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b6ace2ce83c668e83ec1b433f8062148a6dfaf4
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417596"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059057"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zaměstnaneckých výhod, abyste přilákali a udrželi své nejlepší zaměstnance. Kromě standardních výhod, jako je pojištění zdravotní a zubní péče, můžete také nabízet rozšířené služby, např. pomoc s adopcí, rekreační programy a příspěvky na ošacení. Funkce správy zaměstnaneckých výhod ve službě Microsoft Dynamics 365 Human Resources poskytuje flexibilní řešení, které podporuje širokou škálu možností zaměstnaneckých výhod. Aplikace Human Resources také zahrnuje snadno použitelné zaměstnanecké prostředí, které prezentuje vaše nabídky.
 
@@ -40,6 +39,10 @@ Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zam
 - Kvalifikované zpracování životních událostí podporuje budoucí žívotní události.
 
 Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolované testovací prostředí (sandbox).
+
+>[!NOTE]
+>Nyní můžete přizpůsobit formuláře pro správu výhod. Nyní můžete přidat vlastní pole související s mírou pokrytí formuláře **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
+>![Vlastních pole správy výhod](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 
@@ -97,3 +100,6 @@ Některé změny je nutné zpracovat, aby byly aktivní.
 - [Zpracování způsobilosti k životním událostem](hr-benefits-process-life-event-eligibility.md)
 - [Zpracování změn sazby](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

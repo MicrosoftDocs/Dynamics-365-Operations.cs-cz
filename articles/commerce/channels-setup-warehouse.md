@@ -2,36 +2,30 @@
 title: Nastavit sklad
 description: Toto téma popisuje, jak nastavit sklad, který má být použit s novým kanálem v Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734012"
 ---
 # <a name="warehouse-set-up"></a>Nastavit sklad
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak nastavit sklad, který má být použit s novým kanálem v Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Ke každému obchodnímu kanálu je nutné přidružit konfigurovaný sklad. Následující postupy poskytují minimální konfiguraci nutnou k nastavení skladu pro obchodní kanál. Další informace týkající se nastavení skladu naleznete v [Přehledu řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -51,7 +45,7 @@ Chcete-li konfigurovat místo skladu, postupujte podle následujících kroků.
 
 Následující obrázek znázorňuje příklad místa skladu.
 
-![Příklad místa skladu](media/warehouse-site.png)
+![Příklad místa skladu.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Nastavit sklad
 
@@ -104,7 +98,7 @@ Chcete-li nastavit umístění skladových zásob pro standardní, poškozené a
     
 Na následujícím obrázku je znázorněno nastavení skladového místa San Francisco.
 
-![Příklad nastavení skladového místa](media/warehouse-inventory-locations.png)
+![Příklad nastavení skladového místa.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Dokončené nastavení skladu
 
@@ -127,9 +121,9 @@ Abyste dokončili nastavení skladu, postupujte takto.
 
 Následující obrázek ukazuje podrobnosti pro konfigurovaný sklad.
 
-![Příklad nakonfigurovaného skladu](media/warehouse-sample.png)
+![Příklad nakonfigurovaného skladu.](media/warehouse-sample.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
@@ -147,3 +141,6 @@ Následující obrázek ukazuje podrobnosti pro konfigurovaný sklad.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

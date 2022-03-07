@@ -2,11 +2,9 @@
 title: Návrhář receptur v elektronickém výkaznictví
 description: Toto téma obsahuje obecné informace o použití návrháře receptur v elektronickém výkaznictví (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3cbd4a034b89308c33651c5a923b67bc0eabf413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682642"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345755"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -60,11 +58,11 @@ Návrháře receptur elektronického výkaznictví lze použít k definování v
 
 Následující obrázek znázorňuje návrh výraz tohoto typu. V tomto příkladu výraz zaokrouhluje hodnotu pole **Intrastat.AmountMST** v tabulce Intrastat na dvě desetinná místa a vrací zaokrouhlenou hodnotu.
 
-[![Výraz datové vazby](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Výraz datové vazby.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Je možné použít následující obrázek, který znázorňuje návrh výrazu tohoto typu. V tomto příkladu je výsledek navrženého výrazu zadán do komponenty **Transaction.InvoicedAmount** datového modelu **Vykazování daně**.
 
-[![Používaný výraz datové vazby](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Používaný výraz datové vazby.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 Navržená receptura `ROUND (Intrastat.AmountMST, 2)` zaokrouhluje za běhu hodnotu pole **AmountMST** pro každý záznam v tabulce Intrastat na dvě desetinná místa. Poté zadá zaokrouhlenou hodnotu do komponenty **Transaction.InvoicedAmount** datového modelu **Vykazování daně**.
 
@@ -74,17 +72,17 @@ Návrháře receptur elektronického výkaznictví lze použít k definování v
 
 Následující obrázek znázorňuje návrh transformace tohoto typu. V tomto příkladu ořeže transformace **TrimmedString** vstupní data typu dat *Řetězec* odstraněním počáteční a koncové mezery. Vrátí hodnotu oříznutého řetězce.
 
-[![Transformace](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Transformace.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Je možné použít následující obrázek, který znázorňuje návrh transformace tohoto typu. V tomto příkladu více součástí formátu odesílá text jako výstup do generovaného elektrického dokumentu za běhu. Všechny tyto součásti formátu odkazují na transofmraci **TrimmedString** podle názvu.
 
-[![Použitá transformace](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Použitá transformace.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Když součásti formátu, jako je například součást **partyName** na předchozím obrázku, odkazují na transformaci **TrimmedString**, transformace odešle text jako výstup generovaného elektronického dokumentu. Tento text nezahrnuje počáteční a koncové mezery.
 
 Pokud máte formátování, které je nutné použít jednotlivě, můžete toto formátování použít jako jednotlivý výraz vazby konkrétní součásti formátu. Následující obrázek znázorňuje výraz tohoto typu. V tomto příkladu je součást formátu **partyType** vázána na zdroj dat pomocí výrazu, který převede příchozí data z pole **Model.Company.RegistrationType** ve zdroji dat na text s velkými písmeny. Výraz pak odešle tento text jako výstup do elektronického dokumentu.
 
-[![Použití formátování na jednotlivou součást](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Použití formátování na jednotlivou součást.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Kontrola procesního toku
 
@@ -100,7 +98,7 @@ Každé pravidlo procesu řízení toku je navržen jako jednotlivé ověření.
 - Pokud je seznam transakcí prázdný, ověření zastaví proces spouštění a vrátí hodnotu **FALSE**.
 - Ověření vrátí chybovou zpráva, která obsahuje textu popisku 70894 v upřednostňovaném jazyce uživatele.
 
-[![Ověření](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Ověření.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 Návrhář receptur elektronického výkaznictví lze také použít k vygenerování názvu souboru pro generovaný elektronický dokument a kontrolu procesu vytvoření souboru. Následující obrázek znázorňuje návrh kontroly procesního toku tohoto typu. Zde je vysvětlení konfigurace v tomto příkladu:
 
@@ -109,7 +107,7 @@ Návrhář receptur elektronického výkaznictví lze také použít k vygenerov
 - Výraz vrátí název souboru pro generované elektronické dokumenty zřetězením názvu a přípony souboru. Pro druhou dávku a všechny následné dávky obsahuje název souboru ID dávky jako příponu.
 - Výraz umožňuje (vrácením hodnoty **TRUE**) proces vytváření souborů pro dávky, které obsahují alespoň jeden záznam.
 
-[![Kontrola procesního toku](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Kontrola procesního toku.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Řízení obsahu dokumentů
 
@@ -123,18 +121,18 @@ Následující obrázek znázorňuje výraz tohoto typu. (Jako příklad použij
 - Součást **PaymentNotes** slouží ke generování textu poznámek k platbě.
 - Součást **DelimitedSequence** generuje čísla faktur oddělená čárkou, která slouží k vyrovnání aktuálního peněžního převodu.
 
-[![Součásti PaymentNotes a DelimitedSequence](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![Součásti PaymentNotes a DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > Součásti **PaymentNotes** a **DelimitedSequence** jsou označeny otazníkem. Otazník označuje, že použití součásti je podmíněné. V tomto případě je použití součástí založeno na následujících kritériích:
 >
 > - Výraz `@.PaymentsNotes <> ""` definovaný pro součást **PaymentNotes** umožňuje (vrácením hodnoty **TRUE**) naplnění prvku XML **Ustrd** textem poznámek k platbám, když tento text pro aktuální peněžní převod není prázdný.
 >
->    [![Výraz pro součást PaymentNotes](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Výraz pro součást PaymentNotes.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - Výraz `@.PaymentsNotes = ""` definovaný pro součást **DelimitedSequence** umožňuje (vrácením hodnoty **TRUE**) naplnění prvku XML **Ustrd** seznamem čísel faktur oddělených čárkami, které jsou použity k účtování aktuálního peněžního převodu v případě, že text platby poznámek k platbám k tomuto peněžnímu převodu je prázdný.
 >
->    [![Výraz pro součást DelimitedSequence](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Výraz pro součást DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > V závislosti na tomto nastavení bude generovaná zpráva pro každou platbu dlužníka – prvek XML **Ustrd** – obsahovat buď text poznámek k platbě, nebo, je-li tento text prázdný, seznam čárkami oddělených čísel faktur použitých k účtování této platby.
 
@@ -142,7 +140,7 @@ Následující obrázek znázorňuje výraz tohoto typu. (Jako příklad použij
 
 Na stránce **návrháře receptur** vyberte **Test** pro ověření, jak funguje nakonfigurovaná receptura.
 
-[![Výběr testu pro ověření receptury](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Výběr testu pro ověření receptury.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Pokud jsou požadovány hodnoty argumentů receptury, můžete otevřít dialogové okno **Testovat výraz** ze stránky **návrháře receptur**. Ve většině případů je nutné tyto argumenty ručně definovat, protože nakonfigurované vazby nejsou spuštěny v době návrhu. Na kartě **Výsledek testu** na stránce **návrháře receptur** se zobrazí výsledek spuštění nakonfigurované receptury.
 
@@ -150,17 +148,20 @@ Následující příklad ukazuje, jak lze otestovat recepturu nakonfigurovanou p
 
 Při testování této receptury můžete použít dialogové okno **Testovat výraz** k určení hodnoty kódu komodity Intrastat pro testování.
 
-[![Určení kódu komodity Intrastat pro testování](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Určení kódu komodity Intrastat pro testování.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Po zadání kódu komodity Intrastat a výběru možnosti **OK** zobrazí karta **Výsledek testování** na stránce **návrháře receptur** výsledek provedení nakonfigurované receptury. Poté můžete vyhodnotit, zda je výsledek přijatelný. Pokud výsledek není přijatelný, můžete recepturu aktualizovat a znovu ji otestovat.
 
-[![Výsledek testu](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Výsledek testu.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Některé receptury nelze testovat v době návrhu. Receptura může například vrátit výsledek datového typu, který nelze zobrazit na kartě **Výsledek testu**. V tomto případě se zobrazí chybová zpráva oznamující, že recepturu nelze testovat.
 
-[![Chybová zpráva](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Chybová zpráva.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Jazyk receptur v elektronickém výkaznictví](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

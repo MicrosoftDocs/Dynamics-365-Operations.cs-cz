@@ -1,12 +1,11 @@
 ---
 title: Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 3 - Vytvoření formátu)
-description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví.
+description: Toto téma popisuje, jak nakonfigurovat formát elektronického výkaznictví na použití souborů správy dokumentů ve výstupu ER. (část 3)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1ec1ebc15cd980734aebec63d6758404868c1e36
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681846"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559742"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 3 - Vytvoření formátu)
 
@@ -119,3 +118,6 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 23. Klikněte na položku Uložit.
 24. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

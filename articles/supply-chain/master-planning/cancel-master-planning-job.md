@@ -2,16 +2,13 @@
 title: Zrušení hlavní plánovací úlohy
 description: Toto téma vysvětluje způsob zrušení aktivní plánovací úlohy, která používá integrovanou funkci plánování.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6f5ce460cc2915d1d4d9b5699723a62ed7f94599
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 513aee3b9475506e28db4bffe90df58567b6b281
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424062"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816597"
 ---
 # <a name="cancel-a-master-planning-job"></a>Zrušení hlavní plánovací úlohy
 
@@ -53,3 +50,6 @@ Tyto operace by měly být použity pouze v případě, že zrušení hlavní pl
 4. V okně **Dávkové úkoly** vyberte úkoly, které chcete ukončit.
 5. Klikněte na **Změnit stav**, vyberte **Zrušení** a klikněte na **OK**.
 6. Na pevné záložce **Dávkové úkoly** klikněte na **Ukončit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

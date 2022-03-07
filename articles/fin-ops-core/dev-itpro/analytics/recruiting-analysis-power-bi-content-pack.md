@@ -1,6 +1,6 @@
 ---
 title: Obsah náboru v Power BI
-description: Toto téma popisuje obsah náboru v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+description: Toto téma popisuje obsah náboru v Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 237af011229e3d84f54bc601753dc621f8335d2f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680555"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092734"
 ---
 # <a name="recruiting-power-bi-content"></a>Obsah náboru v Power BI
 

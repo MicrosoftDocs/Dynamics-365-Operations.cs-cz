@@ -2,11 +2,9 @@
 title: Časté dotazy k workflow
 description: Toto téma poskytuje odpovědi na časté otázky týkající se systému workflow.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797384"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890350"
 ---
 # <a name="workflow-faq"></a>Workflow – Často kladené otázky
 
@@ -47,9 +45,9 @@ Zde je několik klíčových oblastí, které je třeba vzít do úvahy při př
     - V budoucí aktualizaci bude přidána zpráva centra akcí, takže uživateli bude přiřazena pracovní položka workflow. 
 - Přidání oznámení do workflow
     - Zprávy centra akcí lze vytvářet pro konkrétní uživatele, například zprávu vytvořenou z workflow v jazyce X + +.
-    - [Workflow mají obchodní události](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), které může odběratel použít ke spuštění aplikace Flow s oznámeními, která hledají.   
+    - [Workflow mají obchodní události](../../dev-itpro/business-events/business-events-workflow.md), které může odběratel použít ke spuštění aplikace Flow s oznámeními, která hledají.   
 
-V souhrnu, pokud uživatel neobdrží správné oznámení z centra akcí, když jsou mu přiřazeny pracovní položky workflow, využijte [obchodní události workflow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) s aplikací Microsoft Power Automate s cílem poskytovat další nebo odlišná oznámení.
+V souhrnu, pokud uživatel neobdrží správné oznámení z centra akcí, když jsou mu přiřazeny pracovní položky workflow, využijte [obchodní události workflow](../../dev-itpro/business-events/business-events-workflow.md) s aplikací Microsoft Power Automate s cílem poskytovat další nebo odlišná oznámení.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Proč nelze editor workflowu spustit v rámci služby AD FS?
 Při spuštění v rámci služby AD FS (Active Directory Federation Services) v inovovaném prostředí může mít editor workflow potíže se spuštěním. Pokud tomu tak je, ujistěte se, že adresa URL "https://dynamicsaxworkfloweditor/" je přidána k vlastnosti **Microsoft Dynamics 365 for Operations On-premises - Workflow - Nativní aplikace** v nastavení ADFS.
@@ -59,3 +57,6 @@ Výchozí hodnota pole **Počet položek workflowu na dávkový úkol** na strá
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co je funkce Rozšířená chyba pracovního postupu?
 Funkce Rozšířená chyba pracovního postupu ve verzi 10.0.13 přidává chybové kódy k rozlišení různých tříd chyb pracovního postupu. Hlášené chybové zprávy budou většinou podobné, s menšími rozdíly, aby byly jasnější.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

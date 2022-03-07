@@ -2,28 +2,25 @@
 title: Nastavení účtů pro zaúčtování leasingu
 description: Toto téma uvádí seznam účtů pro zaúčtování, které jsou vyžadovány pro transakce leasingu majetku, a vysvětluje, jak definovat účty pro zaúčtování na stránce Parametry účtování leasingu.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePostingAccounts
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8ca1c6eea854577e5aa34b1a9b9d1731b209527b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: ac8dc59a19a489c6a7c4bf6621dd1a316de03ac3af4512d3ed7e55668af801b1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770634"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Nastavení účtů pro zaúčtování leasingu
 
@@ -84,3 +81,6 @@ Chcete-li přiřadit účty ke knihám a skupinám na leasing, musíte nakonfigu
     > [!NOTE]
     > Vybraný finanční nebo provozní účet bude odepsán po zaúčtování faktury za plánovaný výdaj.
     > **Vyrovnání výdajů na leasing** bude použito jako typ účtování pro transakce s náklady na výkon, ale zaúčtuje se na definovaný **Ofsetový účet** v **řádkách plánu plateb zachraňovacích nákladů** v podrobnostech leasingu nebo formuláři knihy leasingu.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

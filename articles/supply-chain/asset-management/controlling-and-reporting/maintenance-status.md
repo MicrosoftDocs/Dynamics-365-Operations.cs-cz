@@ -1,12 +1,10 @@
 ---
 title: Stav údržby
 description: Toto téma vysvětluje, jak vypočítat stav údržby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 138e2e72fbf761d209d288c2bd778c08519b9c69b0715f4466d4838255a2a31e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752002"
 ---
 # <a name="maintenance-status"></a>Stav údržby
 
@@ -59,11 +57,14 @@ V modulu Správa majetku můžete vytvořit výpočet přehledu nových, aktivn�
 
 Na níže uvedeném snímku obrazovky jsou aktivována tlačítka **Rok** a **Měsíc**. Při vybraných těchto možnostech **Seskupit podle** získáte obecný přehled o měsíčním pracovním vytížení a propustnosti, které souvisejí s požadavky na údržbu a pracovními příkazy. 
 
-![Příklad měsíčního pracovního vytížení](media/13-controlling-and-reporting.png)
+![Příklad měsíčního pracovního vytížení.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Příklad 2
 
 Na níže uvedeném snímku obrazovky byly přidány informace o funkčních místech. Nyní je možné porovnat pracovní vytížení a propustnost mezi funkčními místy, která mohou představovat geografická umístění, továrny nebo pracovní oblasti. 
 
-![Příklad měsíčního pracovního vytížení s funkčními místy](media/14-controlling-and-reporting.png)
+![Příklad měsíčního pracovního vytížení s funkčními místy.](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

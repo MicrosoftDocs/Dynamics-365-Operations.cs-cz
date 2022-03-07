@@ -2,11 +2,9 @@
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b84aaef5348d2cb6bdd6d35e7e26bca9a4e0f6b
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014526"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471805"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 
@@ -35,23 +33,23 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce. Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
-- Správa jednotek škálování pro cloud a hraniční zařízení s prováděcími úlohami pro výrobu a skladování<br> - Další informace naleznete v [Cloudových a hraničních jednotkách škálování pro pracovní zatížení výroby a správy skladu](../cloud-edge/cloud-edge-landing-page.md).
+- Správa jednotek škálování pro cloud a hraniční zařízení s prováděcími úlohami pro výrobu a skladování<br> - Další informace viz [Jednotky škálování v distribuované hybridní topologii](../cloud-edge/cloud-edge-landing-page.md).
 
-- [Vytvářet a zpracovat převodní příkazy z aplikace skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](../warehousing/create-transfer-order-from-warehouse-app.md).
+- [Vytvářet a zpracovat převodní příkazy z aplikace skladu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Další informace naleznete v tématu [Vytvoření objednávek přenosu z aplikace skladu](../warehousing/create-transfer-order-from-warehouse-app.md).
 
-- [Výchozí pole pro odpověď RFQ na nabídku dodavatele](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Další informace naleznete v tématu [Přehled požadavků na nabídku](../procurement/request-quotations.md).
+- [Výchozí pole pro odpověď RFQ na nabídku dodavatele](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Další informace naleznete v tématu [Přehled požadavků na nabídku](../procurement/request-quotations.md).
 
-- [Doplněk Engineering Change Management pro Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Další informace naleznete v tématu [Přehled správy technických změn](../engineering-change-management/product-engineering-overview.md).
+- [Doplněk Engineering Change Management pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Další informace naleznete v tématu [Přehled správy technických změn](../engineering-change-management/product-engineering-overview.md).
 
-- [Průvodci hybridní realitou pro výrobu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Další informace naleznete v tématu [Poskytování průvodců pro hybridní realitu pro pracovníky ve výrobě](../production-control/instruction-guides-in-production-overview.md).
+- [Průvodci hybridní realitou pro výrobu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Další informace naleznete v tématu [Poskytování průvodců pro hybridní realitu pro pracovníky ve výrobě](../production-control/instruction-guides-in-production-overview.md).
 
-- [Nové uživatelské prostředí pro realizaci výroby](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Další informace viz [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md).
+- [Nové uživatelské prostředí pro realizaci výroby](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Další informace viz [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md).
 
-- [Zpracovat události aplikace skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Další informace naleznete v tématu [Zpracování události aplikace skladu](../warehousing/warehouse-app-events.md).
+- [Zpracovat události aplikace skladu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Další informace naleznete v tématu [Zpracování události aplikace skladu](../warehousing/warehouse-app-events.md).
 
-- [Uložená zobrazení pro stránku Uvolněné produkty](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Další informace naleznete v tématu [Uložená zobrazení](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+- [Uložená zobrazení pro stránku Uvolněné produkty](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Další informace naleznete v tématu [Uložená zobrazení](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
 - Dokument s certifikátem o původu USMCA<br> - Další informace viz [Osvědčení o původu podle USMCA](../transportation/usmca-certification-of-origin.md).
 
@@ -71,7 +69,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizac�
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics365-release-plan/2020wave2/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
@@ -83,3 +81,6 @@ Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management]
 Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

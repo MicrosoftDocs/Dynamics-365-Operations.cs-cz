@@ -1,47 +1,50 @@
 ---
-title: Začínáme s Elektronickou fakturací pro Egypt
-description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt ve Finance a Supply Chain Management.
+title: Začínáme s doplňkem elektronické fakturace pro Egypt
+description: Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace pro Egypt ve Finance a Supply Chain Management.
 author: gionoder
-ms.date: 04/20/2021
+manager: AnnBe
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b25a3489d009a02b45d66d4c3a0271a56a92f5ac
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 68ee08226f440e850a080600dbf5e16768b45e43
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985618"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592591"
 ---
-# <a name="get-started-with-electronic-invoicing-for-egypt"></a>Začínáme s Elektronickou fakturací pro Egypt
+# <a name="get-started-with-the-electronic-invoicing-add-on-for-egypt"></a>Začínáme s doplňkem elektronické fakturace pro Egypt
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací pro Egypt. Toto téma vás provede kroky konfigurace, které jsou závislé na zemi v Regulatory Configuration Services (RCS), a doplní kroky popsané v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+[!include [banner](../includes/preview-banner.md)]
+
+Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace pro Egypt. Toto téma vás provede kroky konfigurace, které jsou závislé na zemi v Regulatory Configuration Services (RCS), a doplní kroky popsané v tomto tématu [Začínáme s doplňkem Elektronická fakturace](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Konfigurace specifické pro zemi pro funkci egyptské elektronické fakturace (EG)
 
-Některé parametry z **funkce Elektronická fakturace v Egypty (EG)** jsou publikovány s výchozími hodnotami. Než nasadíte funkci elektronické fakturace do prostředí služby, zkontrolujte a v případě potřeby aktualizujte hodnoty, aby lépe odpovídaly vašim obchodním potřebám.
-
-Tato část doplňuje část **Konfigurace nastavení elektronické fakturace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+Chcete-li nakonfigurovat funkci elektronické fakturace egyptské elektronické faktury (EG), je třeba provést několik kroků. Některé parametry z konfigurací jsou publikovány s výchozími hodnotami, takže je nutné je zkontrolovat a aktualizovat, aby lépe odpovídaly vašemu obchodnímu provozu.
 
 ### <a name="prerequisites"></a>Předpoklady
 
 Pro provedení procedury v této části musíte:
 
-- Vytvořit tajný klíč digitálního certifikátu, jak je popsáno v části **Vytvoření tajného klíče digitálního certifikátu** sekce v [Začínáme se správou služby elektronické fakturace](e-invoicing-get-started-service-administration.md). Pro účely testování egyptský daňový úřad poskytuje konkrétní testovací digitální certifikáty, které se musí používat pouze během fází testování a ověřování řešení. Další informace najdete na webových stránkách egyptského daňového úřadu pomocí odkazu uvedeného v [SDK egyptské elektronické fakturace](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Vytvořit tajný klíč digitálního certifikátu, jak je popsáno v části **Vytvoření tajného klíče digitálního certifikátu** sekce v [Začínáme se správou služby doplňku elektronické fakturace](e-invoicing-get-started-service-administration.md). Pro účely testování egyptský daňový úřad poskytuje konkrétní testovací digitální certifikáty, které se musí používat pouze během fází testování a ověřování řešení. Další informace najdete na webových stránkách egyptského daňového úřadu pomocí odkazu uvedeného v [SDK egyptské elektronické fakturace](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Vytvořit pro vaši organizaci funkci brazilské elektronické fakturace egyptské elektronické faktury (EG), jak je popsáno v části **Vytvoření funkce elektronické fakturace u poskytovatele organizace** tématu [Začínáme s doplňkem Elektronická fakturace](e-invoicing-get-started.md).
 
-1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
-2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Egyptská elektronická faktura (EG)**, kterou jste vytvořili.
+1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Doplněk elektronické fakturace**.
+2. Na stránce **Funkce doplňku elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Egyptská elektronická faktura (EG)**, kterou jste vytvořili.
 3. Na kartě **Verze** ověřte, že je vybrána verze **Koncept**.
 4. Na kartě **Nastavení** v mřížce vyberte nastavení funkce **Prodejní faktura**.
 5. Vyberte **Upravit** a na kartě **Akce** ve skupině polí **Akce** vyberte **Podepsat dokument json pro egyptské daňové úřady**.
@@ -49,16 +52,18 @@ Pro provedení procedury v této části musíte:
 7. Ve skupině polí **Akce** vyberte **Integrovat s egyptskou službou ETA**. Tento krok opakujte pro dva výskyty této akce.
 8. Ve skupině polí **Parametry** polí vyberte **URL webové služby** a **URL přihlašovací služby** a v případě potřeby zkontrolujte parametry adresy URL. Testovací a produkční adresu URL vám sdělí egyptský daňový úřad pomocí odkazu uvedeného v [SDK egyptské elektronické fakturace](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 9. Zvolte **Uložit** a zavřete stránku.
-10. Informace o nasazení funkce elektronické fakturace do prostředí služby najdete v části [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+10. Informace o konfiguraci nastavení aplikace najdete v části [Začínáme s doplňkem elektronická fakturace](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Konfigurace nastavení aplikace specifické pro zemi pro funkci egyptské elektronické faktury (EG)
 
-Před nasazením nastavení aplikace do aplikace připojené k Finance nebo Supply Chain Management proveďte tyto kroky.
+Konfigurace nastavení aplikace pro funkci elektronické fakturace **Egyptská elektronická faktura (EG)** vyžaduje provedení speciálního postupu. Před nasazením funkce elektronické fakturace do prostředí služby doplňku elektronické fakturace musíte provést tyto kroky.
 
-Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro zemi** v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+### <a name="prerequisites"></a>Předpoklady
 
-1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
-2. Na stránce **Funkce elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Egyptská elektronická faktura (EG)**.
+Než provedete postup v této části, vytvořte a inicializujte funkci elektronické fakturace **Egyptská elektronická faktura (EG)** ke konfiguraci nastavení aplikace pro funkci elektronické fakturace **Egyptská elektronická faktura (EG)**, jak je popsáno v části **Konfigurace nastavení aplikace** tématu [Začínáme s doplňkem Elektronická fakturace](e-invoicing-get-started.md).
+
+1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Doplněk elektronické fakturace**.
+2. Na stránce **Funkce doplňku elektronické fakturace** ověřte, že je vybrána funkce elektronické fakturace **Egyptská elektronická faktura (EG)**.
 3. Na kartě **Verze** ověřte, že je vybrána verze **Koncept**.
 4. Na kartě **Nastavení** vyberte **Nastavení aplikace** a v poli **Připojená aplikace** vyberte aplikaci, kam chcete provést nasazení.
 5. V poli **Název tabulky** ověřte, zda je vybrán deník faktury zákazníka.
@@ -70,7 +75,7 @@ Tato část doplňuje část **Konfigurace nastavení aplikace specifická pro z
 11. V poli **Stav odeslání** vyberte **Čeká na zpracování**.
 12. V poli **Název datové entity** vyberte **Záhlaví prodejní faktury V2**.
 13. V poli **Mapování modelů** vyberte **Import dat egyptské odpovědi** s  **(Náhled) Formát importu egyptské odpovědi** a vyberte **Uložit**.
-14. Informace o nasazení nastavení aplikace do aplikace připojené k Finance nebo Supply Chain Management najdete v tématu [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md).
+14. Informace o nasazení funkce elektronické fakturace najdete v části [Začínáme s doplňkem Elektronická fakturace](e-invoicing-get-started.md).
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
@@ -78,9 +83,9 @@ Aktivace funkce **Egyptská elektronická faktra (EG)** může vyžadovat odesí
 
 ## <a name="additional-resources"></a>Další prostředky
 
-- [Přehled elektronické fakturace](e-invoicing-service-overview.md)
-- [Začínáme se správou služby Elektronické fakturace](e-invoicing-get-started-service-administration.md)
-- [Začínáme s Elektronickou fakturací](e-invoicing-get-started.md)
+- [Přehled doplňku elektronické fakturace](e-invoicing-service-overview.md)
+- [Začněte se správou služby doplňku elektronické fakturace](e-invoicing-get-started-service-administration.md)
+- [Začněte s doplňkem elektronické fakturace](e-invoicing-get-started.md)
 - [Elektronické faktury zákazníka v Egyptě](emea-egy-e-invoices.md)
 
 

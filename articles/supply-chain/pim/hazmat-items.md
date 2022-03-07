@@ -1,31 +1,27 @@
 ---
 title: Nebezpečné materiály ve výrobcích, objednávkách, dodávkách a nákladech
 description: Toto téma vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424010"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570698"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Nebezpečné materiály ve výrobcích, objednávkách, dodávkách a nákladech
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
 
@@ -221,3 +217,6 @@ Pokud chcete spustit kontrolu kompatibility, postupujte takto.
 1. V podokně akcí na kartě **Náklady** ve skupině **Akce** vyberte **Kontrola kompatibility**.
 
 Obdržíte zprávu, která vás informuje o výsledcích kontroly.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

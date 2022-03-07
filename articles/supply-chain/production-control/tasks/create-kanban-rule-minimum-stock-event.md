@@ -1,28 +1,25 @@
 ---
 title: Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob
 description: Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového pravidlo pomocí události pro minimální úroveň zásob, aby tak bylo jisté, že bude konkrétní produkt v určitém místě vždy k dispozici.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b295000e132b8551045520df1af55a37673f131d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bd7e02a8a3bf62606c680dad91d46658775138df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423534"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566616"
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob
 
@@ -68,3 +65,6 @@ Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového p
 5. Rozbalte sekci Kanbany.
     * Všimněte si, že kanban byl vytvořen pro přenos potřebného materiálu do skladu 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: Nastavení kódů důvodu vrácení
 description: Nastavení skupin kódů důvodů vrácení
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c55e7dc087870ac414c5cf6ce3a3d10215ac4e8e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc857f7c2e8bbcf396e6bd7eaa7478f12b26ac12
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423490"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573170"
 ---
 # <a name="set-up-return-reason-codes"></a>Nastavení kódů důvodu vrácení   
 
@@ -32,9 +29,9 @@ ms.locfileid: "4423490"
 
 ## <a name="set-up-return-reason-code-groups"></a>Nastavení skupin kódů důvodů vrácení 
 
-1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **skupiny kódů důvodů vrácení**.
+1.  Přejděte na **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **skupiny kódů důvodů vrácení**.
 
-2.  Stisknutím kombinace kláves CTRL + N vytvořte řádek pro novou skupinu kódů příčin vrácení.
+2.  Výběrem možnosti **Nový** vytvořte řádek pro novou skupinu kódů příčin vrácení.
 
 3.  V poli **skupiny kódů důvodu vrácení** zadejte identifikátor pro tuto skupinu.
 
@@ -44,7 +41,7 @@ ms.locfileid: "4423490"
 
 Tento postup vám pomůže nastavit kódy důvodů vrácení, pomocí kterých můžete určit, proč byl produkt odběratelem vrácen.
 
-1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy důvodů vrácení**.
+1.  Přejděte na **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy důvodů vrácení**.
 
 2.  Vytvořte nový řádek s kódem důvodu vrácení stisknutím kombinace kláves CTRL + N.
 
@@ -63,3 +60,6 @@ Tento postup vám pomůže nastavit kódy důvodů vrácení, pomocí kterých m
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

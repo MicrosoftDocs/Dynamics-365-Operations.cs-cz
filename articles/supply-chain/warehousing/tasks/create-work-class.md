@@ -1,28 +1,25 @@
 ---
 title: Vytvoření pracovní třídy
 description: Tento postup popisuje nastavení pracovní třídy.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3c2a99771bc10f12f20fca1689b8786f3de8b316
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424171"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572306"
 ---
 # <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 
@@ -40,3 +37,6 @@ Tento postup popisuje nastavení pracovní třídy. Pracovní třídy se použí
     * Pokud vyberete typ umístění, nastaví se omezení s ohledem na to, kde je možné položky umístit poté, co byly vyskladněny. Toto nastavení se používá, když se směrnice umístění pokusí o překlad umístění nebo když pracovník skladu ručně zadá umístění pro položku nabídky mobilního zařízení.  
 8. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

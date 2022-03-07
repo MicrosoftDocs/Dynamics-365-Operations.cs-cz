@@ -2,11 +2,9 @@
 title: Otevření URL adresy v POS
 description: Toto téma poskytuje přehled vylepšení, která byla provedena u funkce vyhledávání produktu a vyhledávání zákazníka v aplikaci Dynamics 365 Commerce.
 author: AamirAllaq
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -17,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e4ccb8e03d63a7bd1ab2d118d86633a8c6324d43
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714107"
 ---
-# <a name="open-url-in-pos"></a>Otevřít URL adresu v POS
+# <a name="open-url-in-pos"></a>Otevření URL adresy v POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje konfiguraci tlačítka v Retail POS pro otevření adresy URL. Tato funkce nevyžaduje přizpůsobení kódu a může ji konfigurovat kdokoliv, i bez role vývojáře. 
+Toto téma popisuje konfiguraci tlačítka v pokladním místě Dynamics 365 Commerce pro otevření adresy URL. Tato funkce nevyžaduje přizpůsobení kódu a může ji konfigurovat kdokoliv, i bez role vývojáře. 
 
 Tato funkce umožňuje konfiguraci tlačítka v POS pomocí návrháře mřížky tlačítek pro otevření URL adresy. To je v současné době podporováno v následujících konfiguracích:
 
@@ -48,15 +46,15 @@ Otevření webové adresy URL v pokladním místě je momentálně podporováno 
 
 Tato funkce také umožňuje zadat newebovou adresu URL pro otevření nativní aplikace. Můžete například určit URL protokoly, např. MailTo, SIP, IM nebo MSTEAMS, které lze pak zpracovat pomocí příslušných nativní aplikací na zařízení hostitele. Chcete-li to povolit, je nutné konfigurovat adresu URL s vybranou možností **Otevřít v novém okně**.
 
-- U počítačů se systémem Windows nahlédněte do části [Export nebo import výchozích přidružení aplikace](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) a nastavte výchozí přidružení protokolu, pokud nastavujete svůj počítač pomocí Deployment Image Servicing and Management (DISM).
-- Pokud používáte MDM, jako je například Intune, pro správu počítačů Windows, nahlédněte do [Zásady zprostředkovatele kryptografických služeb - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Pokud jste vývojář vytvářející vlastní web, nahlédněte do tématu [Spuštění výchozí aplikace pro identifikátor URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
+- U počítačů se systémem Windows nahlédněte do části [Export nebo import výchozích přidružení aplikace](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) a nastavte výchozí přidružení protokolu, pokud nastavujete svůj počítač pomocí Deployment Image Servicing and Management (DISM).
+- Pokud používáte MDM, jako je například Intune, pro správu počítačů Windows, nahlédněte do [Zásady zprostředkovatele kryptografických služeb - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Pokud jste vývojář vytvářející vlastní web, nahlédněte do tématu [Spuštění výchozí aplikace pro identifikátor URI](/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Snadné otevření nativní aplikace
 
 Windows, iOS a Android povolují snadnější otevření aplikací, na základě přidružení protokolu aplikace. Pokud vaše aplikace není již nakonfigurována k tomu, aby zvládla otevírání z webového prohlížeče, budete možná potřebovat pro tuto konfiguraci vývojáře.
 
-- Pro systém Windows nahlédněte do části [Povolení aplikací pro weby s použitím obslužných rutin URI aplikace](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
+- Pro systém Windows nahlédněte do části [Povolení aplikací pro weby s použitím obslužných rutin URI aplikace](/windows/uwp/launch-resume/web-to-app-linking).
 - U systému iOS nahlédněte do tématu [Univerzální odkazy pro vývojáře](https://developer.apple.com/ios/universal-links/).
 - U systému Android nahlédněte do části [Zpracování odkazů aplikace Android](https://developer.android.com/training/app-links/).
 
@@ -82,3 +80,6 @@ Chcete-li nakonfigurovat, aby se URL adresa otevřela v pokladním místě, prov
 5. Vyberte **Otevřít adresu URL** jako akci.
 6. Zadejte adresu URL, kterou chcete použít.
 7. Nakonfigurujte, zda otevřít adresu URL v novém okně.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

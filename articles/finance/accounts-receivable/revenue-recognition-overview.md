@@ -1,10 +1,12 @@
 ---
-title: Přehled uznání výnosů (obsahuje video)
+title: Přehled uznání výnosů
 description: Toto téma obsahuje informace o funkci uznání výnosů. Tato funkce poskytuje flexibilní rámec, který vaší společnosti umožňuje definovat vlastní pravidla uznání výnosové ceny a plánu výnosů pro objednávky s více složkami.
 author: kweekley
+manager: aolson
 ms.date: 11/11/2019
-ms.topic: overview
+ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a7e37a0800ec7909f79e5a2354f59c7450995641
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982580"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995607"
 ---
 # <a name="revenue-recognition-overview"></a>Přehled uznání výnosů
 
@@ -53,6 +55,3 @@ Když je prodejní objednávka potvrzena, vytvoří se též plán očekávanýc
 Podrobnosti plánu uznání výnosů se udržují pro každý řádek prodejní objednávky. Proto může manažer uznání výnosů zobrazit podrobnosti a uvolnit řádky do výnosů, když byl dokončen smluvní závazek. Na konci každého období může manažer uznání výnosů vytvořit deník výnosů, aby uvolnil všechny řádky plánu, které jsou splatné v den nebo před dnem, který určí. Tento deník výnosů není zaúčtován okamžitě. Proto může manažer uznání výnosů ověřit, že jsou z odložených výnosů do skutečných výnosů uvolňovány správné částky.
 
 Pokud smluvní změna způsobí přidání nového řádku prodejní objednávky buď do existující prodejní objednávky nebo nové prodejní objednávky, lze spustit proces přidělení, aby se opravila výnosová cena napříč všemi řádky v prodejních objednávkách.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

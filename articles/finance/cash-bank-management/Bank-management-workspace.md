@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 3c5d248c5431b7a54835c699618a0a27ab760754
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4441341"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260200"
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 
@@ -64,3 +63,6 @@ Stránka **Analýza** poskytuje důležité metriky o bankovních účtech v akt
 -   Zůstatek podle měny
 
 Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**. Další informace naleznete v tématu [Přehled hotovosti obsahu Power BI](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

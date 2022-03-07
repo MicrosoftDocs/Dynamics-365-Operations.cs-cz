@@ -2,27 +2,24 @@
 title: Modul pokladny
 description: Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 author: anupamar-ms
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4410941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715499"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
@@ -30,15 +27,13 @@ ms.locfileid: "4410941"
 
 Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 
-## <a name="overview"></a>Přehled
-
 Modul poklady je speciální kontejner, který je hostitelem všech modulů, které jsou nutné k vytvoření objednávky. Modul poklady představuje podrobný tok, který zákazník používá k zadání všech relevantních informací za účelem provedení nákupu. Zachycuje doručovací adresu, způsob přepravy a informace o fakturaci. Poskytuje také souhrn objednávky a další informace, které souvisejí s objednávkou odběratele.
 
 Modul pokladny vykresluje data na základě ID košíku. ID košíku je uloženo jako soubor cookie prohlížeče. ID košíku je nutné k vykreslení informací v modulu pokladny, jako jsou například položky v objednávce, celková částka a slevy. 
 
 Následující obrázek ukazuje příklad modulu poklady Fabrikam na stránce pokladny.
 
-![Příklad modulu pokladny](./media/Checkout.PNG)
+![Příklad modulu pokladny.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Vlastnosti modulu pokladny
 
@@ -57,13 +52,13 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek ukazuje příklad modulu dodací adresy na stránce pokladny.
 
-    ![Příklad modulu dodací adresy](./media/ecommerce-shippingaddress.PNG)
+    ![Příklad modulu dodací adresy.](./media/ecommerce-shippingaddress.PNG)
 
 - **Možnosti dodání** – Tento modul umožňuje zákazníkovi vybrat způsob dodání pro objednávku. Další informace o tomto modulu naleznete v části [Modul možností doručení](delivery-options-module.md).
 
     Následující obrázek ukazuje příklad modulu možností dodání na stránce pokladny.
  
-    ![Příklad modulu možností dodání](./media/ecommerce-deliveryoptions.PNG)
+    ![Příklad modulu možností dodání.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kontejner sekce pokladny** – Tento modul je kontejner, do kterého můžete vložit více modulů a vytvořit sekci v rámci toku pokladny. Všechny moduly související s platbou v tomto kontejneru můžete například vložit do jedné sekce. Tento modul má vliv pouze na rozložení toku.
 
@@ -75,7 +70,7 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek ukazuje příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny.
 
-    ![Příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny](./media/ecommerce-payments.PNG)
+    ![Příklad modulů dárkové karty, věrnostních bodů a plateb na stránce pokladny.](./media/ecommerce-payments.PNG)
 
 - **Kontaktní informace** – Tento modul umožňuje zákazníkovi přidat nebo změnit kontaktní informace (e-mailovou adresu) na objednávce.
 
@@ -85,7 +80,7 @@ V modulu pokladny se zobrazí souhrn objednávek a funkce pro zadání objednáv
 
     Následující obrázek znázorňuje příklad smluvních podmínek na stránce pokladny.
 
-    ![Příklad smluvních podmínek na stránce pokladny](./media/ecommerce-checkout-terms.PNG)
+    ![Příklad smluvních podmínek na stránce pokladny.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakce Commerce Scale Unit
 
@@ -127,3 +122,6 @@ Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlast
 [Modul podrobností objednávky](order-confirmation-module.md)
 
 [Modul dárkového poukazu](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Expedování prodejních objednávek bez skladování
 description: Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výrobky odeslány odběrateli.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10e21bcdef22caf4f4d97ba7dd36ebf1a6e6e055
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424090"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578865"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Expedování prodejních objednávek bez skladování
 
@@ -56,3 +53,6 @@ Toto téma vysvětluje, jak aktualizovat prodejní objednávku, když jsou výro
 19. V podokně akcí vyberte **Vyskladnit a zabalit**.
 20. Vyberte **Dodací list**. Stránka **Deník dodacích listů** obsahuje všechny dokumenty dodacího listu, které byly vygenerovány pro vaši objednávku. Můžete zkontrolovat podrobnosti o jednotlivých dokumentech a vytisknout je, pokud chcete.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

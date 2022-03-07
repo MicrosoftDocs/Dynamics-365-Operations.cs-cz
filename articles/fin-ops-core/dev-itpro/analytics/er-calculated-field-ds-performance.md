@@ -2,11 +2,9 @@
 title: Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE
 description: Tohle téma popisuje, jak můžete zlepšit výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE.
 author: NickSelin
-manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681273"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944823"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zlepšete výkon řešení elektronického výkaznictví přidáním parametrizovaných zdrojů dat typu POČÍTANÉ POLE
 
@@ -246,9 +244,9 @@ Je nutné stáhnout a místně uložit následující soubory.
 
 | Soubor                                        | Obsah |
 |---------------------------------------------|---------|
-| Performance improvement model.version.1     | [Vzorová konfigurace datového modelu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement mapping.version.1.1 | [Vzorová konfigurace mapování elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement format.version.1.1  | [Vzorová konfigurace formátu elektronického výkaznictví](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Performance improvement model.version.1     | [Vzorová konfigurace datového modelu elektronického výkaznictví](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
+| Performance improvement mapping.version.1.1 | [Vzorová konfigurace mapování elektronického výkaznictví](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
+| Performance improvement format.version.1.1  | [Vzorová konfigurace formátu elektronického výkaznictví](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>Příloha 2: Konfigurace architektury elektronického výkaznictví
 
@@ -300,3 +298,6 @@ Další informace o poskytovatelích konfigurací elektronického výkaznictví 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem](trace-execution-er-troubleshoot-perf.md)
 - [Podpora parametrizovaných volání zdrojů dat elektronického výkaznictví typu vypočítaného pole](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

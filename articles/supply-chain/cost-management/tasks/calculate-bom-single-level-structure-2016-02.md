@@ -1,28 +1,25 @@
 ---
 title: Výpočet kusovníku pomocí struktury jediné úrovně (únor 2016)
 description: Tento postup ukazuje, jak vypočítat náklady na dokončený výrobek s použitím jednoúrovňového rozpadu založeného na nákladovém formuláři.
-author: ShylaThompson
-manager: tfehr
+author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83a62966e343a9b1c073c2d6ec1c1b69b1daddbb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8c5968631f5fed8a43cd63165a4ddff86e8cb4b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423891"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572090"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>Výpočet kusovníku pomocí struktury jediné úrovně (únor 2016)
 
@@ -44,3 +41,6 @@ Tento postup ukazuje, jak vypočítat náklady na dokončený výrobek s použit
     * Můžete kliknout na tlačítko se třemi tečkami (...) a v horní nabídce se zobrazí tato možnost.    Zde je složení nákladů  *    10 je odvozeno z ITEM_A, 10 z ITEM_B, 10 z BOM_2. V tomto případě nejsou žádné podrobnosti pro BOM_2, protože tato položka byla zadána jako standardní náklady 10, ale nebyl proveden výpočet.  *    7 je odvozeno z přípravného času, který je konstantním nákladem, a dalších 7 pochází z operace běhu (procesu).  *    Existují i jiné částky, které odpovídají nepřímým nákladům.  
 9. @SysTaskRecorder:_RequestClose
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Značení zásob s optimalizací plánování
 description: Toto téma poskytuje informace o možnostech, které jsou k dispozici pro označení zásob v potvrzených objednávkách, když používáte optimalizaci plánování.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 99a52c03e519384955d68d7101a7b73b7e9a7af6
-ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
+ms.openlocfilehash: dc94ca8b15d626d8ff64f50718d7d2e3e0326144465f3d27787805220842849f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711898"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Značení zásob s optimalizací plánování
 
@@ -49,3 +46,6 @@ Když zpracujete plánovanou objednávku, dialogové okno **Potvrzení** poskytu
 - **Ne** - Není použito žádné označení zásob.
 - **Standardní** – Označení zásob se aktualizuje podle doložení. Objednávka požadavku (poptávka) se označí podle objednávky splnění (nabídka). Pokud na objednávce plnění zůstane nějaké množství, není označeno a referenční informace zůstanou prázdné. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny pouze k prodejní objednávce.
 - **Rozšířený** – Označí se objednávka požadavku (poptávka) i objednávka splnění (nabídka) bez ohledu na to, zda v objednávce splnění zůstane nějaké množství nebo ne. Například pokud je prodejní objednávka na 100 ea doložena proti nákupní objednávce na 150 ea, referenční informace budou přiřazeny jak k prodejní objednávce, tak k nákupní objednávce.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

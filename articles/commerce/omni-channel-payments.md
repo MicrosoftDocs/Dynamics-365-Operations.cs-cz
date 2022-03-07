@@ -1,29 +1,28 @@
 ---
 title: Přehled omnikanálových plateb
 description: Toto téma poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Commerce.
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 09/17/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
-ms.custom: 141393
+ms.custom:
+- "141393"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410904"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984159"
 ---
 # <a name="omni-channel-payments-overview"></a>Přehled omnikanálových plateb
 
@@ -46,11 +45,11 @@ Toto téma poskytuje přehled omnikanálových plateb v aplikaci Dynamics 365 Co
 
 Pojem *omnikanálové platby* obecně popisuje schopnost vytvořit objednávku v jednom kanálu a splnit ji v jiném kanálu. Klíčem pro podporu omnikanálové platby je zachování platebních detailů spolu ze zbytkem detailů objednávky a následné použití těchto platebních detailů, když je objednávka stažena nebo zpracována v jiném kanálu. Klasickým příkladem je scénář "koupit online, vyzvednout v obchodě". V tomto scénáři jsou údaje o platbě doplněny při vytvoření objednávky online. Poté jsou v POS odvolány, aby v okamžiku vyzvednutí byla stržena platba z platební karty zákazníka. 
 
-Všechny scénáře popsané v tomto tématu lze implementovat pomocí standardní sady Software Development Kit (SDK) plateb dodávané s aplikací Commerce. Konektor [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) poskytuje přednastavenou implementaci každého scénáře, který je zde popsán. 
+Všechny scénáře popsané v tomto tématu lze implementovat pomocí standardní sady Software Development Kit (SDK) plateb dodávané s aplikací Commerce. Konektor [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) poskytuje přednastavenou implementaci každého scénáře, který je zde popsán. 
 
 ### <a name="prerequisites"></a>Předpoklady
 
-Každý scénář, který je popsán v tomto tématu, vyžaduje platební konektor, který podporuje omnikanálové platby. Konektor Adyen lze také použít ihned po vybalení, protože podporuje scénáře, které jsou k dispozici v sadě SDK plateb. Další informace o tom, jak implementovat konektory platby, a obecné informace o sadě SDK naleznete na stránce [Maloobchod pro profesionály IT a vývojáře](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Každý scénář, který je popsán v tomto tématu, vyžaduje platební konektor, který podporuje omnikanálové platby. Konektor Adyen lze také použít ihned po vybalení, protože podporuje scénáře, které jsou k dispozici v sadě SDK plateb. Další informace o tom, jak implementovat konektory platby, a obecné informace o sadě SDK naleznete na stránce [Maloobchod pro profesionály IT a vývojáře](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### <a name="supported-versions"></a>Podporované verze
 
@@ -60,14 +59,14 @@ Schopnosti omnikanálové platby, které jsou popsány v tomto tématu, byly vyd
 
 Sada SDK plateb spoléhá na dvě sady aplikačních programovacích rozhraní (API) pro platby. První sada rozhraní API je pojmenovaná **iPaymentProcessor**. Používá se k implementaci konektorů pro platby "karta není přítomna", které lze použít v kontaktních střediscích a na platformě elektronického obchodování Microsoft Dynamics. Další informace o rozhraní **iPaymentProcessor** naleznete v dokumentu white paper [Implementace platebního konektoru a platebního zařízení](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf), který se věnuje platbám. 
 
-Druhá sada rozhraní API je pojmenovaná **iNamedRequestHandler**. Podporuje implementaci integrace plateb "karta přítomna", která používá platební terminál. Další informace o rozhraní **iNamedRequestHandler** získáte v části [Vytvoření integrace platby pro platební terminál](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
+Druhá sada rozhraní API je pojmenovaná **iNamedRequestHandler**. Podporuje implementaci integrace plateb "karta přítomna", která používá platební terminál. Další informace o rozhraní **iNamedRequestHandler** získáte v části [Vytvoření integrace platby pro platební terminál](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 
 ### <a name="setup-and-configuration"></a>Instalace a konfigurace
 
 Jsou požadovány následující součásti a kroky nastavení:
 
-- **integrace eCommerce:** Podpora scénářů, jejichž pořadí pochází z online výlohy, vyžaduje integraci s aplikací Commerce. Další informace o sadě Retail e-Commerce SDK naleznete v tématu [sada SDK (Software Development Kit) platformy elektronického obchodování](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). V ukázkovém prostředí podporuje referenční výkladní skříň scénáře omniplateb. 
-- **Konfigurace online plateb:** nastavení online kanálu musí obsahovat platební konektor, který byl aktualizován pro podporu omniplateb. Případně lze použít konektor pro platby po vybalení. Informace o konfiguraci konektoru plateb Adyen pro online obchody naleznete v tématu [Konektor plateb Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Kromě kroků nastavení eCommerce popsaných v tomto tématu musí být nastaven parametr **Povolit nastavení informací o platbě v elektronickém obchododování** na hodnotu **Pravda** v nastavení konektoru Adyen. 
+- **integrace eCommerce:** Podpora scénářů, jejichž pořadí pochází z online výlohy, vyžaduje integraci s aplikací Commerce. Další informace o sadě Retail e-Commerce SDK naleznete v tématu [sada SDK (Software Development Kit) platformy elektronického obchodování](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). V ukázkovém prostředí podporuje referenční výkladní skříň scénáře omniplateb. 
+- **Konfigurace online plateb:** nastavení online kanálu musí obsahovat platební konektor, který byl aktualizován pro podporu omniplateb. Případně lze použít konektor pro platby po vybalení. Informace o konfiguraci konektoru plateb Adyen pro online obchody naleznete v tématu [Konektor plateb Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Kromě kroků nastavení eCommerce popsaných v tomto tématu musí být nastaven parametr **Povolit nastavení informací o platbě v elektronickém obchododování** na hodnotu **Pravda** v nastavení konektoru Adyen. 
 - **Konfigurace omnikanálových plateb:** V účetním systému přejděte na **Maloobchod a velkoobchod \> Nastavení centrály \> Parametry \> Sdílené parametry velkoobchodu**. Pak na kartě **Omnikanálové platby** nastavte možnost **Použít omnikanálové platby** na **Ano**. Ve verzích Commerce 10.0.12 a novějších je toto nastavení v pracovním prostoru **Správa funkcí**. Vyberte **Omnikanálové platby** a klikněte na **Povolit hned**. 
 - **Platební služby:** Kontaktní centrum používá výchozí platební konektor na stránce **Platební služby** ke zpracování plateb. Chcete-li podporovat scénáře jako například "koupit pomocí call centra, vyzvednout v obchodě", musí být tento výchozí konektor platby musí být konektor Adyen platby nebo platební konektor splňující požadavky na implementaci pro platby pomocí Omni kanálu.
 - **Služba EFT:** platby prostřednictvím platebního terminálu je nutné nastavit na pevné záložce **Služba EFT** hardwarového profilu. Konektor Adyen podporuje scénáře omnikanálových plateb ihned po vybalení. Ostatní platební konektory, které **podporují** rozhraní iNamedRequestHandler, mohou být použity také v případě, že podporují omnikanálové platby.
@@ -234,7 +233,10 @@ Když má objednávka více nabídek a je vybráno více řádků, pokladník ne
 
 ## <a name="related-topics"></a>Související témata
 
-- [Časté dotazy k platbám](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Platební konektor Dynamics 365 pro Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
+- [Časté dotazy k platbám](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Platební konektor Dynamics 365 pro Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurovat BOPIS v prostředí vyhodnocení Dynamics 365 Commerce](./cpe-bopis.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

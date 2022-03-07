@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42ca1d4d2d9b45d79cf479833f83e498e3b73540
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e1da5fee9607bf9f38c90d3db891ffa212ab01f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423556"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219286"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrace příjmu vrácených položek 
 
@@ -113,3 +112,6 @@ Jako alternativu k použití formuláře **Přehled doručení** můžete použ�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

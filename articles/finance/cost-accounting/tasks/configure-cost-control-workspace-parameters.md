@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 61f25b93440495b2d1b70227ecda011c43c2e564
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969346"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208768"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurace parametrů pracovního prostoru řízení nákladů
 
@@ -58,3 +58,6 @@ Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby v
 27. V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
     * Po výběru hierarchie dimenzí objektu nákladů rozbalte hierarchii dimenzí prvku nákladů a prohlédněte si požadované nákladové hodnoty. Můžete například rozbalit hierarchii Výrobní režie a zjistit z ní hodnoty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

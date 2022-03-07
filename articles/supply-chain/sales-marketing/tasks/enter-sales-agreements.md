@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d69f3eaacea641460b407c1456ee50600262fee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cdeddc915dc5ebfddf18a5e446f54b028b02325e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423616"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260400"
 ---
 # <a name="enter-sales-agreements"></a>Zadávání prodejních smluv
 
@@ -57,3 +56,6 @@ Toto téma vysvětluje, jak vytvořit prodejní smlouvu, která zavazuje jednoho
 11. Vyberte **OK**.
 12. Zavřete stránku. Smlouva je nyní platná. Můžete zahájit propojení smlouvy s objednávkami odběratele protiúčtem vůči potvrzenému cíli.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

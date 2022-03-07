@@ -2,27 +2,24 @@
 title: Automatizace návrhů plateb dodavatelům
 description: Tohle téma vysvětluje, jak mohou organizace, které platí dodavatelům podle opakujícího se plánu, automatizovat proces generování návrhů plateb dodavatelům.
 author: kweekley
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441378"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966708"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatizace návrhů plateb dodavatelům
 
@@ -35,6 +32,9 @@ Organizace, které platí dodavatelům podle opakujícího se plánu, nyní moho
 - V jakém deníku plateb dodavateli jsou výsledné platby uloženy
 
 Automatizace návrhů plateb neúčtuje platby automaticky. Proto můžete i nadále používat jakékoli procesy ověřování a pracovních postupů, které aktuálně používáte ke schvalování vytvořených plateb.
+
+> [!NOTE]
+> Funkce **Automatizace návrhů plateb dodavatele** musí být povolena ve správě funkcí. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Definování výskyt návrhů plateb dodavatelům
 
@@ -100,11 +100,11 @@ Doporučujeme, abyste na základě vašich požadavků vyhodnotili, zda bude aut
 
 Po vytvoření řady automatizace návrhu platby dodavateli jsou výskyty pro každou platbu zobrazeny v týdenním zobrazení automatizace procesů. U plateb dodavatelům bylo do pracovního prostoru **Platby dodavatelům** a na stránku **Automatizace procesů** přidáno týdenní zobrazení automatizace procesů.
 
-[![Týdenní zobrazení automatizace procesů v pracovním prostoru Platby dodavatelům](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Týdenní zobrazení automatizace procesů v pracovním prostoru Platby dodavatelům.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Týdenní zobrazení automatizace procesů v pracovním prostoru **Platby dodavatelům** zobrazuje pouze automatizace návrhů plateb dodavatelům. Zobrazuje všechny výskyty plateb za aktuální týden pro všechny právnické osoby, ke kterým má přihlášený uživatel bezpečnostní oprávnění. Pokud je například úředník pro platby závazků zodpovědný za platby ve společnostech USMF a USSI, uvidí výskyty automatizace návrhů plateb dodavatelům pro tyto dvě společnosti, nikoli však pro jiné společnosti.
 
-[![Týdenní zobrazení automatizace procesů pro společnosti USMF a USSI](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Týdenní zobrazení automatizace procesů pro společnosti USMF a USSI.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Každý výskyt zobrazuje společnost, ve které byl nebo bude vytvořen deník plateb. Pokud jsou platby vytvářeny pomocí centralizovaných plateb, zobrazí se společnost, ve které budou platby vytvořeny. Výskyt nutně neukazuje, které faktury společností budou zaplaceny.
 
@@ -144,3 +144,6 @@ Pro automatizace návrhů plateb dodavatelům byly přidány následující povi
 | Dotaz na výskyty v plánu | Úředník pro platby závazků, úředník pro centralizované platby závazků | Tato povinnost uděluje práva zobrazovat výskyty automatizace návrhů plateb prostřednictvím následujících oprávnění:<ul><li>Zobrazení výskytů v plánu</li><li>Zobrazení týdenního zobrazení výskytů</li></ul> |
 | Dotaz na řadu plánu      | Žádní                                                                       | Tato povinnost uděluje práva zobrazovat nastavení řady a výskytů prostřednictvím následujících oprávnění:<ul><li>Zobrazení výskytů v plánu</li><li>Zobrazení stránku se seznamem výskytů</li><li>Zobrazení týdenního zobrazení výskytů</li></ul>|
 | Údržba výskytů v plánu     | Žádní                                                                       | Tato povinnost uděluje práva vytvářet a udržovat výskyt prostřednictvím následujících oprávnění:<ul><li>Údržba výskytů v plánu</li><li>Zobrazení týdenního zobrazení výskytů</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 022ffc59b1b64913fedaf550f3fdb32141a94031
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4f5eff3cc1bcf85e1541917edf525d83c124edb7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020272"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253223"
 ---
 # <a name="move-replace-and-install-assets"></a>Přesun, nahrazení a instalace majetku
 
@@ -90,3 +90,6 @@ K instalaci struktury majetku do funkčního místa použijte funkci **Nainstalo
 4. V poli **Funkční místo** zvolte nové místo.
 5. Ve výchozím nastavení je pole **Začátek platnosti** automaticky nastaveno na aktuální datum a čas. Můžete však vybrat jiné datum a čas, od kterého je instalace ve struktuře majetku platná.
 6. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Aktualizace standardních nákladů v nevýrobním prostředí
 description: V tomto článku jsou pokyny k tomu, jak aktualizovat standardní náklady v nevýrobním prostředí.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 79723
 ms.assetid: 7ba0c408-2450-4042-9542-6fdf83c12e6c
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09dca3012952b739a75a6930908752fba73a4550
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 164c6257d9cd076fd8f91beafb6b797e3e999420
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423761"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830141"
 ---
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Aktualizace standardních nákladů v nevýrobním prostředí
 
@@ -52,3 +49,6 @@ Chcete-li opravit, upravit nebo aktualizovat standardní náklady nových polož
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

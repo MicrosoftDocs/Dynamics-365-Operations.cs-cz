@@ -2,16 +2,13 @@
 title: Katalogy kontaktního střediska
 description: Toto téma popisuje funkce kontaktního střediska pro katalogy v aplikaci Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4410930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742505"
 ---
 # <a name="call-center-catalogs"></a>Katalogy kontaktního střediska
 
@@ -42,7 +39,7 @@ Marketingový společnosti zaměřené na odběratele jsou velmi zaměřené na 
 
 Katalog nakonfigurujte použitím položek **Retail and Commerce** \> **Katalogy a sortiment** \> **Všechny katalogy**.
 
-Když vytvoříte nový katalog, je nutné nejprve propojit katalog s jedním nebo více kanály. K tomu se používá pevná záložka **Kanály Commerce** ve formuláři **Nastavení katalogu**. Klikněte na tlačítko **přidat** a vyberte jeden nebo více kanálů. Při vytváření katalogu lze použít pouze položky připojené k vybranému kanálu [sortiment](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments).
+Když vytvoříte nový katalog, je nutné nejprve propojit katalog s jedním nebo více kanály. K tomu se používá pevná záložka **Kanály Commerce** ve formuláři **Nastavení katalogu**. Klikněte na tlačítko **přidat** a vyberte jeden nebo více kanálů. Při vytváření katalogu lze použít pouze položky připojené k vybranému kanálu [sortiment](/dynamics365/unified-operations/retail/assortments).
 
 Pokud chcete přidat produkty do katalogu, musí být vybrána hierarchie navigace. Hierarchie navigace podporuje strukturu kategorie pro katalog. Je třeba vybrat jednu z hierarchie navigace spojenou s maloobchodními kanály vybranými na pevné záložce **Kanály Commerce** stránky **Katalog**. Pokud navigační kanál nebyl spojen s kanálem dříve, přejděte na **Retail and Commerce** \> **Nastavení kanálu** \> **Kategorie a atributy produktů kanálu** pro účely propojení výchozí hodnoty hierarchie navigace s každým z maloobchodních kanálů.
 
@@ -101,3 +98,6 @@ Na kartě **katalogy** kartě Možnosti konfigurace jsou k dispozici možnosti p
 ## <a name="additional-notes"></a>Další poznámky
 
 V současné době platí, že když je použito ID zdrojového kódu pro všechny prodejní objednávky v call centru, použije se pro generování cen, promoakcí, skriptů a návazného/křížového prodeje specifických pro katalog. Systém nebude zakazovat ani zabraňovat objednání produktu, který není v katalogu, v prodejní objednávce. Pokud je objednaná položka, která není součástí katalogu, systém použije nejprve **Cenovou skupinu** definovanou v kanálu kontaktního střediska (**Retail and Commerce** \> **Kanály** \> **kontaktní střediska** \> **šechna kontaktní střediska**) pro ceny zboží nebo promoakcí. Pokud žádná konkrétní kanálová cena není nalezena, použije se základní prodejní cena zboží.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

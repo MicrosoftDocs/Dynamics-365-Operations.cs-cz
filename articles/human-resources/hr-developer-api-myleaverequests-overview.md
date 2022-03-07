@@ -2,30 +2,28 @@
 title: Přehled MyLeaveRequests
 description: Entita MyLeaveRequests v Microsoft Dynamics 365 Human Resources poskytuje seznam požadavků na pracovní volno v systému (omezen) na požadavky, které jsou přístupné aktuálnímu uživateli při zadávání dotazu na entitu.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4bf3b298af9eb39e03514a4005afb43a42908e47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90698ddcc8fcf0eb975dffed0bdad11e6b277c90
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417563"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984689"
 ---
 # <a name="myleaverequests-overview"></a>Přehled MyLeaveRequests
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Entita MyLeaveRequests v Microsoft Dynamics 365 Human Resources poskytuje seznam požadavků na pracovní volno v systému (omezen) na požadavky, které jsou přístupné aktuálnímu uživateli při zadávání dotazu na entitu.
 
@@ -64,3 +62,5 @@ Entita MyLeaveRequests v Microsoft Dynamics 365 Human Resources poskytuje seznam
 
 - [Odeslání žádosti o volno do workflow](hr-developer-api-myleaverequests-submit.md)
 - [Ověřování](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

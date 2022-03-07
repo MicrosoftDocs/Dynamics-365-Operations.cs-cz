@@ -2,27 +2,27 @@
 title: Přehled elektronických podpisů
 description: Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití.
 author: maertenm
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
-ms.custom: 13611
+ms.custom:
+- "13611"
+- intro-internal
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 051bb023d3456dae0be30de3897b282c2d50c5af
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 4436d2570b6fc6e18936ddd57f658e601b08075febdb26d41d4bf80088ac99f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714489"
 ---
 # <a name="electronic-signatures-overview"></a>Přehled elektronických podpisů
 
@@ -109,3 +109,6 @@ Chcete-li určit schvalovatele, postupujte takto.
 1. Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele**.
 2. V poli **ID schvalujícího uživatele** vyberte ID uživatele, který musí podepsat změny provedené jiným uživatelem.
 3. V poli **Podepsat pro ID uživatele** vyberte ID uživatele, jehož změny musí být podepsány.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

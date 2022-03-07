@@ -1,103 +1,76 @@
 ---
-title: Přehled výpočtu daně
+title: Výpočet daně (Preview)
 description: Toto téma vysvětluje celkový rozsah a funkce výpočtu daně.
 author: wangchen
-ms.date: 11/17/2021
-ms.topic: overview
+ms.date: 06/03/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
+ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 4e01247cddad4201760fd56e00e05a8373a1ca6ef7c26ae5e1f5cca63bd8a456
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775087"
 ---
-# <a name="tax-calculation-overview"></a>Přehled výpočtu daně
+# <a name="tax-calculation-preview"></a>Výpočet daně (Preview)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Výpočet daně je hyperškálovatelná multiklientová služba, která umožňuje globálnímu daňovému modulu automatizovat a zjednodušit proces stanovení a výpočtu daně. Daňový modul je plně konfigurovatelný. Mezi prvky, které lze konfigurovat, patří mimo jiné model zdanitelných dat, daňový kód, matice použitelnosti daně a vzorec výpočtu daně. Daňový modul běží na platformě základních služeb Microsoft Azure a nabízí moderní technologie a exponenciální škálovatelnost.
 
 Výpočet daně je integrován s Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho se také integruje s Dynamics 365 Project Operations, Dynamics 365 Commerce a dalšími aplikacemi prvních stran a jiných výrobců.
 
 > [!IMPORTANT]
-> Když povolíte Výpočet daně, některé operace se souvisejícími daty mohou být prováděny v jiném datovém centru než v datovém centru, které udržuje vaše data služby. Zkontrolujte [Smluvní podmínky](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) před povolením Výpočtu daně. Ochrana vašich osobních údajů je pro nás důležitá. Chcete-li se dozvědět více, přečtěte si naše [Prohlášení o ochraně osobních údajů](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Když povolíte službu Výpočet daně, některé operace se souvisejícími daty mohou být prováděny v jiném datovém centru než v datovém centru, které udržuje vaše data služby. Zkontrolujte [Smluvní podmínky](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) před povolením služby Výpočet daně. Ochrana vašich osobních údajů je pro nás důležitá. Chcete-li se dozvědět více, přečtěte si naše [Prohlášení o ochraně osobních údajů](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-Výpočet daně je daňový modul založený na mikroslužbách, který nabízí exponenciální škálovatelnost a může vám pomoci provést následující úkoly:
+Výpočet daně je daňový modul založený na mikroslužbách, který nabízí exponenciální škálovatelnost. Pomůže vám provést následující úlohy:
 
-- Automaticky určit správnou skupinu DPH, skupinu DPH zboží a daňové kódy pomocí vylepšeného mechanismu určování.
-- Podpora více daňových registračních čísel v jedné právnické osobě a automatické určení správného daňového registračního čísla u zdanitelných transakcí.
-- Podpora stanovení, výpočtu, zaúčtování a vypořádání daně u převodních příkazů.
-- Definovat konfigurovatelné vzorce a podmínky výpočtu daně pro vaše konkrétní obchodní požadavky.
-- Sdílet řešení pro stanovení a výpočet daně mezi právnickými osobami, abyste ušetřili náklady na údržbu a předešli chybám.
-- Podpora určení daňového registračního čísla zákazníka a dodavatele.
-- Určení kódu seznamu podpory.
-- Podpora parametrů výpočtu daně na úrovni daňové jurisdikce.
+- Konfigurujte výpočet daně prostřednictvím služby Regulatory Configuration Service (RCS). RCS je vylepšená verze návrháře elektronických zpráv (ER) a je k dispozici jako samostatná služba.
+- Nakonfigurujte daňovou matici tak, aby automaticky určovala daňové kódy a sazby.
+- Nakonfigurujte daňovou matici tak, aby automaticky určovala daňové identifikační číslo (DIČ).
+- Nakonfigurujte návrháře výpočtu daně tak, aby definoval vzorce a podmínky.
+- Sdílejte řešení stanovení a výpočtu daně mezi právnickými osobami.
 
-Chcete-li použít Výpočet daně, nainstalujte doplněk Výpočet daně ze svého projektu ve Microsoft Dynamics Lifecycle Services (LCS). Poté dokončete nastavení v [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/) a povolte Výpočet daně v aplikacích Finance a Supply Chain Management. Více informací najdete v tématu [Začínáme s daňovou službou](global-get-started-with-tax-calculation-service.md).
+Chcete-li použít službu výpočtu daně, nainstalujte doplněk služby výpočtu daně ze svého projektu ve službách Microsoft Dynamics Lifecycle Services (LCS). Poté dokončete nastavení v RCS a povolte službu výpočtu daně v aplikacích Finance a Supply Chain Management. Více informací najdete v tématu [Začínáme s daňovou službou](./global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Dostupnost
 
-Od verze 10.0.21 je Výpočet daně obecně dostupný v produkčním prostředí všem zákazníkům.
+Výpočet daně je k dispozici pouze v prostředích sandbox a pro vybrané zákazníky, a to prostřednictvím programu Public Preview. Nakonec bude obecně k dispozici všem zákazníkům a v produkčních prostředích.
 
-Nové funkce budou i nadále dodávány. Kontrola nejaktuálnější plán vydání, abyste se dozvěděli o pokrytí a rozsahu podporovaných funkcí.
+Budou dodávány nové funkce, proto nezapomeňte často zkontrolovat nejaktuálnější dokumentaci, abyste se dozvěděli o pokrytí a rozsahu podporovaných funkcí.
 
-Výpočet daně je nasazen v následujících geografických oblastech Azure. Budou také přidány další geografické oblasti Azure na základě potřeb zákazníků.
+Výpočet daně je nasazen v následujících geografických oblastech Azure. Bude také nasazena do dalších geografických oblastí Azure, a to na základě potřeb zákazníků:
 
-- Asie a Tichomoří
-- Austrálie
-- Kanada
-- Evropa
-- Japonsko
-- Spojené království
 - Spojené státy americké
+- Evropa
 
 > [!NOTE]
-> Výpočet daně nepodporuje dřívější verzi Dynamics 365, například Dynamics AX 2012 nebo místní nasazení Dynamics 365.
+> Výpočet daně nepodporuje místní nasazení Dynamics 365. Nepodporuje také dřívější verze, například Dynamics AX 2012.
 
-## <a name="versions"></a>Verze
-Doporučujeme importovat a nastavit konfiguraci výpočtu daně s verzí, která odpovídá vaší verzi Finance nebo Supply Chain Management.
+## <a name="feature-highlights"></a>Zvýrazněné funkce
 
-| Verze Finance nebo Supply Chain Management | Verze konfigurace daně               |
-| --------------- | --------------------------------------- |
-| 10.0.18         | Konfigurace daně - Evropa 30.12.82     |
-| 10.0.19         | Konfigurace výpočtu daně 36.38.193 |
-| 10.0.20         | Konfigurace výpočtu daně 40.43.208 |
-| 10.0.21         | Konfigurace výpočtu daně 40.48.215 |
-| 10.0.22         | Konfigurace výpočtu daně 40.48.215 |
-| 10.0.23         | Konfigurace výpočtu daně 40.50.221 |
-| 10.0.24         | Konfigurace výpočtu daně 40.50.225 |
-| 10.0.25         | Konfigurace výpočtu daně 40.50.225 |
-
-
-## <a name="data-flow"></a>Tok dat
-
-Zde je přehled procesu toku dat pro výpočet daně. 
-
-1. V RCS zobrazujte a importujte konfigurace modelu zdanitelných dokumentů a konfigurace mapování modelu. Pokud musíte rozšířit konfigurace pro pokročilý scénář, viz [Přidejte datová pole do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).
-2. V RCS můžete vytvářet nebo udržovat daňové funkce. Pomocí daňových funkcí můžete zachovat daňové sazby a pravidla daňové použitelnosti.
-3. Po dokončení nastavení daňové funkce zveřejněte daňové konfigurace a daňové funkce z RCS do globálního úložiště.
-4. Ve Finance vyberte, kterou verzi nastavení daňových funkcí použijete pro konkrétní právnickou osobu.
-5. Ve Finance a Supply Chain Management provozujte transakce jako obvykle. Když je potřeba Výpočet daně, klient shromáždí informace z transakce, jako je prodejní objednávka nebo nákupní objednávka, a zabalí informace jako datovou část. Poté bude odeslán požadavek na výpočet daně.
-6. Od klienta je přijata žádost o výpočet daně a výpočet je dokončen. Výsledek daně je poté vrácen klientovi.
-7. Klient Dynamics 365 obdrží výsledek daně a výsledek výpočtu daně zobrazí na stránce DPH.
+- Konfigurovatelná matice daní, která automaticky určuje a vypočítá daň
+- Podpora více DIČ
+- Podpora převodních příkazů pro stanovení a výpočet daně
+- Podpora převodních příkazů pro určení více DIČ
 
 ## <a name="supported-transactions"></a>Podporované transakce
 
-Výpočet daně lze povolit transakcemi. 
+Výpočet daně může být povolen podle právnické osoby a transakce. Podporovány jsou následující transakce:
 
-Ve verzi 10.0.21 jsou podporovány následující transakce: 
-
-- Prodej.
+- Proces prodeje
 
     - Prodejní nabídka
     - Prodejní objednávka
@@ -110,7 +83,7 @@ Ve verzi 10.0.21 jsou podporovány následující transakce:
     - Záhlaví – vedlejší náklady
     - Řádek - vedlejší náklady
 
-- Nákup
+- Proces nákupu
 
     - Nákupní objednávka
     - Potvrzení
@@ -127,66 +100,10 @@ Ve verzi 10.0.21 jsou podporovány následující transakce:
     - Záhlaví požadavku na nabídku – vedlejší náklady
     - Řádek požadavku na nabídku – vedlejší náklady
 
-- Zásoby
+- Proces zásob
 
     - Převodní příkaz – expedice
     - Převodní příkaz – příjem
-
-Ve verzi 10.0.23 jsou podporovány následující transakce: 
-
-- Volná faktura
-
-## <a name="supported-countriesregions"></a>Podporované země/oblasti
-
-Výpočet daně lze povolit dle právnické osoby. 
-
-Ve verzi 10.0.21 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
-
-- Rakousko
-- Belgie
-- Dánsko
-- Estonsko
-- Finsko
-- Francie
-- Německo
-- Maďarsko
-- Island
-- Itálie
-- Lotyšsko
-- Litva
-- Nizozemsko
-- Norsko
-- Polsko
-- Švédsko
-- Švýcarsko
-- Spojené království
-- USA
-
-Ve verzi 10.0.22 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
-
-- Austrálie
-- Bahrajn
-- Kanada
-- Egypt
-- Hongkong
-- Kuvajt
-- Nový Zéland
-- Omán
-- Katar
-- Saúdská Arábie
-- Jižní Afrika
-- Spojené arabské emiráty
-
-Ve verzi 10.0.23 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
-
-- Thajsko
-- Japonsko
-- Malajsie
-- Singapur
-
-Ve verzi 10.0.24 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
-
-- Mexiko
 
 ## <a name="related-resources"></a>Související prostředky
 

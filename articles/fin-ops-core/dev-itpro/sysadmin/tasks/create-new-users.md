@@ -2,11 +2,9 @@
 title: Vytvoření nových uživatelů
 description: Uživatelé jsou interní zaměstnanci ve vaší organizaci nebo externí zákazníci a dodavatelé, kteří v rámci své práce vyžadují přístup k systému.
 author: peakerbl
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
-ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
+ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "4878650"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595379"
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
@@ -31,10 +29,10 @@ Než budete mít přístup do aplikací Finance and Operations, musíte být nej
 Informace o tom, jak nakupovat a licencovat pro aplikace Finance and Operations, najdete v části [Průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Přiřazení licence uživateli
-Správci systému mohou [přiřazovat licence uživatelům](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) v [centru správy Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Správci systému mohou [přiřazovat licence uživatelům](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) v [centru správy Microsoft 365](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Přidání externího uživatele do Azure AD a přiřazení licence 
-Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na aplikace Finance and Operations je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure Active Directory (Azure AD)), aby jim mohly být přiřazeny licence. Tito externí uživatelé by měli být přidáni do klienta v Azure AD jako uživatelé typu Host a poté jim přiřazovat příslušné licence. Požadavek na aplikace Finance and Operations je, že společnost hostujícího uživatele musí používat Azure AD. Další informace naleznete v tématu [Přidání uživatelů spolupráce B2B Azure Active Directory na portálu Azure](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Import nových uživatelů ze služby Azure AD 
 1. Přejděte do nabídky **Správa systému** \> **Uživatel** \> **Uživatelé**.
@@ -59,7 +57,7 @@ Externí uživatelé musí být zastoupeni ve vašem adresáři klienta (Azure A
 7. V poli **Společnost** vyberte výchozí spouštěcí společnost pro uživatele. 
 8. Zvolte **Uložit**.
 
-Hodnoty pro poskytovatele identity a telemetrické ID budou aktualizovány na základě volání [Microsoft graf](https://docs.microsoft.com/graph/overview), když je záznam uživatele uložen. ID telemetrie je založeno na uživatelském ID objektu / identifikátoru zabezpečení (SID) v Azure AD.
+Hodnoty pro poskytovatele identity a telemetrické ID budou aktualizovány na základě volání [Microsoft graf](/graph/overview), když je záznam uživatele uložen. ID telemetrie je založeno na uživatelském ID objektu / identifikátoru zabezpečení (SID) v Azure AD.
 
 > [!NOTE]
 > Po přidání uživatele musíte podle potřeby přiřadit role a organizace. Další informace viz [Přiřadit uživatelům role zabezpečení](assign-users-security-roles.md). Podmíněně může být také požadováno přidružení uživatele k **Osobě** a aktualizovat **možnosti uživatele**, například jazyk.
@@ -81,3 +79,6 @@ Chcete-li změnit ID uživatele, musíte klíč v databázi přejmenovat. Když 
 Další možnosti implementace uživatelů B2B najdete v tématu [Export uživatele B2B do Azure AD](../implement-b2b.md).
 
 Informace o předkonfigurovaných systémových účtech najdete v části [Předkonfigurované systémové účty](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: Zobrazit kódy důvodů fáze
 description: Zobrazte a upravte seznam důvodů fáze pro servisní zakázku.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd5485727761ac5ab13d44ab0598c5768324e6e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32b9d0122449b828d347b60ebe303b3ad2fdae5f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423972"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567792"
 ---
 # <a name="view-stage-reason-codes"></a>Zobrazit kódy důvodů fáze 
 
@@ -45,3 +42,6 @@ Zobrazte a upravte seznam důvodů fáze pro servisní zakázku. Použijte důvo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

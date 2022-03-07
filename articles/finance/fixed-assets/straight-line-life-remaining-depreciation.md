@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968997"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4441273"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Lineární odpis s vyrovnáním na konci životnosti
 
@@ -37,7 +38,7 @@ V poli **Odpisový rok** na stránce **Odpisové plány** můžete vybrat buď *
 
 ### <a name="calendar"></a>Kalendář
 
-Pokud vyberete **Kalendář** v poli **_Odpisový rok_*_, předpokládá se rok od 1. ledna do 31. prosince, i když jste fiskální kalendář definovali odlišně. Možnost _* Kalendář** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
+Pokud v poli **Rok odpisu** vyberete ***Kalendářní***, bude předpokládán rok od 1. ledna do 31. prosince, a to i v případě, že jste definovali fiskální kalendář odlišně. Možnost **Kalendářní** aktualizuje odpisovou základnu 1. ledna každého roku. Odpisová základna je obvykle zůstatková účetní hodnota mínus likvidační hodnota. V níže uvedených příkladech této kapitoly je odpisová základna čitatelem v prvním výrazu ve výpočtech ve sloupci Kalkulace. Vyberete-li jako odpisový rok možnost **Kalendář**, v poli **Frekvence období** jsou k dispozici následující možnosti:
 
 -   Možnost **Ročně** provede zaúčtování 31. prosince.
 -   **Měsíčně** provádí zaúčtování měsíčně na konci každého kalendářního měsíce.

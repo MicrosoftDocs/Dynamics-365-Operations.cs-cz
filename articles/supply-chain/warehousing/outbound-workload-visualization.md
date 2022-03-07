@@ -2,22 +2,24 @@
 title: Vizualizace odchozího pracovní vytížení
 description: Toto téma popisuje informace o vizualizaci odchozího pracovní vytížení. Tato funkce umožňuje správcům skladu a supervizorům vytvářet vlastní grafy pracovního vytížení, které lze použít k monitorování postupu aktuální práce a jejího množství, které zbývá. Manažeři skladu mohou podle potřeby vytvářet více zobrazení a nastavit automatické obnovování.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102881"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965545"
 ---
 # <a name="outbound-workload-visualization"></a>Vizualizace odchozího pracovní vytížení
 
@@ -27,9 +29,12 @@ Pokročilé možnosti nastavení, které jsou přístupné ze stránky **Vizuali
 
 Tuto funkci lze použít ke sledování postupu práce výdeje. Tato funkce je integrována do správy práce a pokud je nastavena správa práce, mohou vizualizace odchozího pracovní vytížení zobrazit výpočet počtu hodin, které zbývají pro zobrazenou práci výdeje (filtrovanou).
 
-## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce vizualizace odchozího pracovní vytížení
+## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Zapnutí funkce vizualizace odchozího pracovní vytížení
 
-Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkci zapnout nebo vypnout vyhledáním funkce *Vizualizace odchozí úlohy* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+
+- **Modul:** *Řízení skladu*
+- **Název funkce:** *Vizualizace odchozího pracovní vytížení*
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Nastavení vizualizací odchozího pracovní vytížení
 
@@ -57,7 +62,7 @@ Chcete-li nastavit vizualizaci odchozího pracovní vytížení, postupujte takt
     - **Dny k zahrnutí** - Zadejte počet dní v minulosti, pro které by měl být graf vygenerován.
     - **Typ pracovního příkazu** - Vyberte typy odchozích pracovních příkazů, na kterých chcete filtrovat.
 
-    ![Stránka Konfigurace filtrů.](media/work-viz-filters-1.png "Stránka Konfigurace filtrů")
+    ![Stránka Konfigurace filtrů](media/work-viz-filters-1.png "Stránka Konfigurace filtrů")
 
 1. Zavřete stránku **Konfigurovat filtry** pro návrat na stránku **Vizualizace odchozího pracovní vytížení**.
 
@@ -67,11 +72,11 @@ Chcete-li nastavit vizualizaci odchozího pracovní vytížení, postupujte takt
     - **Poslední aktualizace** - Toto pole zobrazuje datum a čas, kdy byly informace v grafu naposledy aktualizovány.
     - **Odhadovaný/skutečný čas** - Pokud jsou ve vašem systému nastaveny pracovní standardy, nastavte tuto možnost na *Ano* pro zobrazení kumulovaných odhadovaných časů výdeje v horní části každého sloupce v grafu. Pokud nepoužíváte pracovní standardy, tato možnost není k dispozici.
 
-    ![Příklad vizualizace.](media/work-viz-chart.png "Příklad vizualizace")
+    ![Příklad vizualizace](media/work-viz-chart.png "Příklad vizualizace")
 
 1. Vyberte libovolný pruh v grafu a zobrazte podrobnosti přidruženého řádku práce.
 
-    ![Podrobnosti řádku práce.](media/work-viz-work-details.png "Podrobnosti řádku práce")
+    ![Podrobnosti řádku práce](media/work-viz-work-details.png "Podrobnosti řádku práce")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Příklad: Vizualizace odchozího pracovní vytížení pro zóny
 
@@ -89,9 +94,6 @@ V tomto příkladu chcete nastavit vizualizaci, která zobrazuje řádky práce 
 
 Následující ilustrace znázorňuje příklad výsledného grafu.
 
-![Vizualizace stavu zóny a práce.](media/work-viz-chart.png "Vizualizace stavu zóny a práce")
+![Vizualizace stavu zóny a práce](media/work-viz-chart.png "Vizualizace stavu zóny a práce")
 
 Tento graf ukazuje dvě zóny pojmenované **FLOOR** a **BULK** a zónu s názvem **Prázdná**. Zóna **Prázdná** představuje všechny řádky práce, které nejsou členy žádné zóny. Graf vždy zobrazuje všechna nesouvisející filtrovaná data jako **Prázdná**, aby byla zajištěna co největší viditelnost. V zóně **FLOOR** graf ukazuje tři uzavřené čáry a čtyři otevřené čáry. V zóně **BULK** graf ukazuje čtyři uzavřené čáry jednu otevřenou čáru a 24 zrušených čar. Nakonec graf ukazuje osm uzavřených čar, které nejsou součástí žádné zóny, a proto jsou uvedeny jako **Prázdné**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

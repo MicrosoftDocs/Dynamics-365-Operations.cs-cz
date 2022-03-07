@@ -1,12 +1,10 @@
 ---
 title: Schválení a potvrzení nákupních objednávek
 description: Toto téma popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eafce0be07ae21e5bc2db2cf5bb694a9d71a6269
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018436"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825415"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
@@ -98,3 +96,6 @@ Pokud PO prochází správou změn, každá změna, například zrušení objedn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

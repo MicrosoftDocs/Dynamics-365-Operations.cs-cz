@@ -2,27 +2,24 @@
 title: Metody odpisu dlouhodobého majetku pro Českou republiku
 description: Toto téma obsahuje informace o odpisech dlouhodobého majetku pro právnické osoby v České republice.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264314
 ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ba00b4eb31f6bd5523ec39a4063151a74afa5e5d
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 2bd539834288b22c36342d80d106c98267e54ebd3444415a607368a74786e46c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4407627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771594"
 ---
 # <a name="fixed-assets-depreciation-methods-for-the-czech-republic"></a>Metody odpisu dlouhodobého majetku pro Českou republiku
 
@@ -112,3 +109,6 @@ Tento příklad ukazuje odpis vypočítaný pomocí zrychlené české metody od
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

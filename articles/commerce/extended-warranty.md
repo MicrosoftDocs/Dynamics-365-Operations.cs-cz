@@ -2,11 +2,9 @@
 title: Vytvoření a konfigurace rozšířených záruk
 description: Toto téma popisuje rozšířené záruky a vysvětluje, jak je vytvořit a konfigurovat v aplikaci Microsoft Dynamics 365 Commerce.
 author: sijoshi
-manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,14 +15,14 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745373"
 ---
-# <a name="create-and-configure-extended-warranties"></a>Vytvoření a konfigurace rozšířených záruk
+# <a name="create-and-configure-extended-warranties"></a>Vytváření a konfigurace rozšířených záruk
 
 [!include [banner](includes/banner.md)]
 
@@ -83,7 +81,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
 
     Například pro dvouletou záruku nastavte hodnotu pole **Jednotka času** na **Rok(y)** a **Doba** na **2**. Případně nastavte hodnotu v poli **Jednotka času** na **Měsíc(e)** a hodnotu v poli **Doba** na **24**, jak ukazuje následující obrázek.
 
-    ![Stránka s podrobnostmi o produktu pro záruční zboží](./media/ew-time-properties.png)
+    ![Stránka s podrobnostmi o produktu pro záruční zboží.](./media/ew-time-properties.png)
 
 1. Kliknutím na tlačítko **Uložit** uložte záruční zboží.
 1. Vydejte záruční produkt společnosti, aby mohl být prodán. Další informace získáte v tématu [Nastavení maloobchodních produktů](set-up-retail-products.md)
@@ -96,7 +94,7 @@ Chcete-li vytvořit záruční zboží v aplikaci Commerce, postupujte následov
 
     Například následující obrázek ukazuje pole **Základ cenového rozpětí** nastavené na hodnotu **Základní cena**, pole **Dolní limit** nastavené na $500 a pole **Horní limit** nastavené na $1000.
     
-    ![Stránka s podrobnostmi o vydané produktu pro záruční zboží](./media/ew-release-product-details.png)
+    ![Stránka s podrobnostmi o vydané produktu pro záruční zboží.](./media/ew-release-product-details.png)
 
 1. Zařaďte záruční zboží do kanálu, kde bude prodáváno. Další informace naleznete v tématu [Nastavení sortimentu](set-up-assortments.md).
 
@@ -163,11 +161,11 @@ Dvě operace POS umožňují prodejním partnerům prodávat během pracovního 
 
 Následující obrázek ukazuje příklad stránky terminálu POS s výzvou k přidání záručního zboží u zboží spadajícího do záruky.
 
-![Příklad výzvy k přidání záručního zboží pro aktuální nákup](./media/ew-sell-warranty.png)
+![Příklad výzvy k přidání záručního zboží pro aktuální nákup.](./media/ew-sell-warranty.png)
 
 Následující obrázek ukazuje příklad funkce pro přidání záručního zboží u zboží spadajícího do záruky, které bylo přidáno předtím.
 
-![Příklad funkce pro přidání záručního zboží pro dříve prodané zboží spadající do záruky](./media/ew-add-warranty-existing.png)
+![Příklad funkce pro přidání záručního zboží pro dříve prodané zboží spadající do záruky.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Zpracovat transakce záruky
 
@@ -238,3 +236,6 @@ Záruka je služba poskytovaná pro konkrétní jedinečný produkt. V Dynamics 
 [Nastavení sortimentu](set-up-assortments.md)
 
 [Přehled číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

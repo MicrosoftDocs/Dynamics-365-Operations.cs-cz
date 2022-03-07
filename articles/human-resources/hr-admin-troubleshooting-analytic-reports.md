@@ -2,14 +2,11 @@
 title: Řešení potíží u analytických sestav
 description: Tento článek vysvětluje, jak postupovat, když e nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4e76f3b6231b6f307173fa176360daf775c8a7950bc4ab2f2162c768102c369
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717407"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Řešení potíží u analytických sestav
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Vydání**
 
@@ -42,4 +41,7 @@ Tento problém může být pouze záležitostí časování. Tento postup slouž
 1. Vyhledejte úlohu **Nasadit měrný systém** v seznamu.
 1. Vyberte **Upravit** v horní části stránky a nastavte naplánované počáteční datum a čas na hodnotu, která bude aktualizovat analytiku blíže aktuálnímu času.
 
-![Dávkové úlohy](media/batch-jobs.png)
+![Dávkové úlohy.](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

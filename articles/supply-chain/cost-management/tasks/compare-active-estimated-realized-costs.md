@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, CostSelectPeriodDialogForm, CostCalculationPeriodTopVariancesListFormPart, ProdTable, CostCalculationCompareDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b028d9977dfeaec335d597b9505840150d36a858
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 38d8258c577cf64d41cf10ee5936719996eab0a4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423890"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239535"
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Porovnání aktivních, odhadovaných a realizovaných nákladů u výrobní zakázky
 
@@ -40,3 +39,6 @@ Tento postup popisuje, jak zobrazit důvody pro vysoké výrobní odchylky pro v
 6. Klikněte na Zobrazit porovnání nákladů.
 7. Klikněte na tlačítko Zavřít.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

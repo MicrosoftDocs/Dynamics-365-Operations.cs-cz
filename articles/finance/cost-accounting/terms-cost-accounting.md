@@ -2,16 +2,13 @@
 title: Terminologie týkající se účtování nákladů
 description: Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774370"
 ---
 # <a name="cost-accounting-terminology"></a>Terminologie týkající se účtování nákladů
 
@@ -131,7 +128,7 @@ Většina zdrojových systémů může poskytovat data, která odpovídají jedn
 |---|---|---|---|
 | Členy dimenze prvku nákladů  |  Ano | Ano  | Ano  |
 |  Členy dimenze objektu nákladů |  Ano | Ano  | Ano  |
-|  Členy statistické dimenze | Ano  | Žádný  | Žádný  |
+|  Členy statistické dimenze | Ano  | Ne  | Ne  |
 |  Hlavní kniha | Ano  | Ano  | Ano  |
 |  Položky rozpočtu  | Ano  | Ano  | Ano  |
 |  Statistická měření | Ano  | Ano  | Ano  |
@@ -205,3 +202,6 @@ Výpisy jsou zobrazení pro vedoucí pracovníky, kteří odpovídají za říze
 Verze se používají k simulaci, zobrazení a porovnání různých výsledků. Standardně jsou zobrazeny všechny skutečné náklady v jedné základní verzi, která se nazývá *Skutečné*. U rozpočtů a výpočtů můžete pracovat s libovolným počtem verzí. Můžete například importovat data rozpočtu do původní verze a poté revidovat rozpočet v revidované verzi. V případě výpočtů můžete vytvořit více verzí. V těchto různých verzích pak můžete vytvářet výpočty pomocí různých pravidel výpočtu, která se budou používat pro přidělení nákladů.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,32 +2,30 @@
 title: Přidružení dlouhodobého majetku k leasingům
 description: V tématu je vysvětleno, jak přidružit existující dlouhodobý majetek k novému leasingu.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseDetail
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d627633e43c2e6f5cad90dfe4100ff95a71541f7
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441362"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392467"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Přidružení dlouhodobého majetku k leasingům
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 V tématu je vysvětleno, jak přidružit existující dlouhodobý majetek k novému leasingu. Když přidružíte dlouhodobý majetek k leasingu, bude hodnotou používaného majetku při počátečním uznání pořizovací cena dlouhodobého majetku.
 
@@ -52,5 +50,18 @@ Po zaúčtování položky deníku počátečního uznání se transakce zobraz�
 
 Dlouhodobý majetek lze nyní odepisovat pomocí standardní funkce odpisování v části Dlouhodobý majetek. Další informace o odpisech naleznete v tématu [Odpisové metody a způsoby odpisu](../fixed-assets/depreciation-methods-conventions.md).
 
+Pokud je k dlouhodobému majetku přidružen leasing, pole **Životnost** v knize dlouhodobého majetku bude aktualizováno tak, aby odpovídalo nejmenší hodnotě z následujících kritérií: 
+
+ - Očekávaná doba použitelnosti majetku
+ - Doba trvání leasingu z přidružené knihy leasingu
+
+Pokud je pole **Převod vlastnictví** nastaveno na **Ano** u leasingové knihy, hodnota v poli **Doba životnosti** bude vždy očekávanou dobou použitelnosti aktiva. 
+ 
+Životnost se bude aktualizovat při každé úpravě leasingu, aby bylo zajištěno, že používaný majetek bude odepisován po dobu trvání leasingu, jako by byl odepisován při leasingu majetku.
+
 > [!NOTE]
 > Pokud přidružíte dlouhodobý majetek k leasingu, tlačítka **Odpis majetku** a **Snížení hodnoty leasingu** jsou v leasingu majetku deaktivována. Transakce odpisů majetku a snížení hodnoty leasingu si můžete prohlédnout v části Dlouhodobý majetek. Tlačítko **Transakce majetku**, které otevírá formulář dotazu, je také deaktivováno. Můžete také otevřít formulář dotazu **Transakce majetku** v části Dlouhodobý majetek.  
+
+Stránky **Dlouhodobý majetek** a **Kniha dlouhodobého majetku** zobrazí ID leasingu, které je spojeno s dlouhodobým majetkem. Pokud je k leasingu přidružen dlouhodobý majetek, ID leasingu a popis leasingu se zobrazí na pevné záložce **Informace o leasingu** na stránce **Dlouhodobý majetek**. U knih dlouhodobého majetku, které jsou přiřazeny ke knihám leasingu, pole **ID leasingu**, **Popis leasingu** a **Typ knihy** zobrazí informace o zvolené knize dlouhodobého majetku na pevné záložce **Informace o leasingu**, aby označily, že je spojena s knihou leasingu.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

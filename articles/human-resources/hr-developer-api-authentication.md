@@ -2,15 +2,12 @@
 title: Ověřování
 description: Tento článek obsahuje přehled informací o ověřování pomocí rozhraní API (Microsoft Dynamics 365 Human Resources data Application Programming Interface).
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417564"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070861"
 ---
 # <a name="authentication"></a>Ověřování
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tento článek obsahuje přehled informací o ověřování pomocí rozhraní API (Microsoft Dynamics 365 Human Resources data Application Programming Interface).
 
@@ -82,13 +84,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - U webových aplikací je to základní adresa URL aplikace. Například `http://localhost:31544` může být adresa URL webové aplikace, která je spuštěna v místním počítači. Uživatelé se pak pomocí této adresy URL přihlásí do aplikace webového klienta.
         - Pro veřejné klientské aplikace zadejte identifikátor URI, který Azure AD používá k vrácení odpovědí na tokeny. Zadejte hodnotu, která je specifická pro vaši aplikaci, například `myapp://auth`.
 
-        Chcete-li zobrazit konkrétní příklady webových aplikací nebo nativních aplikací, přejděte na [platformu Microsoft Identity (dříve Azure Active Directory pro vývojáře)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Chcete-li zobrazit konkrétní příklady webových aplikací nebo nativních aplikací, přejděte na [platformu Microsoft Identity (dříve Azure Active Directory pro vývojáře)](/azure/active-directory/develop/#quickstarts).
 
 5. V části **Oprávnění API** vyberte **Přidat oprávnění**. Pak na kartě **Rozhraní API používaná mojí organizací** vyhledejte **Dynamics 365 Human Resources** a přidejte do aplikace oprávnění **user\_impersonation**. ID aplikace Human Resources je f9be0c49-aa22-4ec6-911a-c5da515226ff. Pomocí tohoto ID můžete zajistit, že jste zvolili správnou aplikaci.
 
 6. Vyberte **Registrovat**.
 
-   [![Registrace nové aplikace na portálu Azure](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Registrace nové aplikace na portálu Azure.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD přiřadí vaší aplikaci jedinečné ID aplikace (ID klienta) a přejde na stránku **přehledu** vaší aplikace. Chcete-li do aplikace přidat více možností, můžete vybrat další možnosti konfigurace, jako jsou například možnosti pro obchodní značky a pro certifikáty a tajné klíče.
 
@@ -185,3 +187,6 @@ namespace TalentODataPoC
 ```
 
 Jakmile načtete přístupový token, předáte token v záhlaví autorizace jako token nosiče s každým požadavkem, který odešlete do datového rozhraní API, jak je popsáno výše.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,34 +2,29 @@
 title: Konfigurace správy úkolů
 description: Tohle téma popisuje, jak konfigurovat funkce správy úkolů v aplikaci Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730796"
 ---
 # <a name="configure-task-management"></a>Konfigurace správy úkolů
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma popisuje, jak konfigurovat funkce správy úkolů v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Než budou moci manažeři a zaměstnanci používat funkce správy úkolů v Dynamics 365 Commerce, nejprve musí být nakonfigurována správa úkolů. Konfigurace zahrnuje udělení oprávnění manažerům a zaměstnancům, distribuci oprávnění klientům v pokladním místě (POS), nastavení oznámení POS a konfiguraci dlaždice **Úkoly** na domovské stránce aplikace POS.
 
@@ -49,7 +44,7 @@ Chcete-li nakonfigurovat oprávnění pro správu úkolů pro manažery obchodů
 
 Následující obrázek znázorňuje, jak nakonfigurovat oprávnění pro správu úkolů pro manažery obchodů.
 
-![Konfigurace oprávnění pro správu úkolů pro manažery obchodů](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurace oprávnění pro správu úkolů pro manažery obchodů.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurace oprávnění pro zaměstnance
 
@@ -83,7 +78,7 @@ Chcete-li konfigurovat oznámení POS pro úkoly, postupujte takto.
 
 Následující obrázek znázorňuje operaci **Správa úkolů** na stránce **Operace POS**.
 
-![Operace správy úkolů na stránce Operace POS](media/HQ-POS-Tasks-Notifications.png)
+![Operace správy úkolů na stránce Operace POS.](media/HQ-POS-Tasks-Notifications.png)
 
 Další informace o konfiguraci oznámení POS naleznete v tématu [Zobrazení oznámení objednávek v pokladním místě (POS)](notifications-pos.md).
 
@@ -100,9 +95,9 @@ Chcete-li konfigurovat dlaždici **Úkoly** na domovské stránce aplikace POS, 
 
 Následující obrázek znázorňuje příklad dlaždice **Úkoly** na domovské stránce POS.
 
-![Dlaždice Úkoly na domovské stránce POS](media/POS-home-screen-tasks-button-image.png)
+![Dlaždice Úkoly na domovské stránce POS.](media/POS-home-screen-tasks-button-image.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled správy úkolů](task-mgmt-overview.md)
 
@@ -111,3 +106,6 @@ Následující obrázek znázorňuje příklad dlaždice **Úkoly** na domovské
 [Přiřazení seznamů úkolů k obchodům nebo zaměstnancům](task-mgmt-assign-lists.md)
 
 [Správa úkolů v POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

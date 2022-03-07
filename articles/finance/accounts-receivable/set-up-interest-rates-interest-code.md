@@ -3,7 +3,7 @@ title: Nastavení úrokových sazeb pro kód úroku
 description: Kódy úroků obsahují nastavení, která určují, kdy bude placen úrok a jak se vypočítá na účtech po splatnosti.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: Interest
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 59402
 ms.assetid: 3b945333-1eaf-4658-ab5a-1a7791a7eb40
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3ca43503ecbe8e814958576e46ced10bfe9ad49
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441056"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555358"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Nastavení úrokových sazeb pro kód úroku
 
@@ -47,10 +46,19 @@ Můžete nastavit úrokové sazby pro výpočet zadané procentní hodnoty.
 
 - Částka úroku platí pro všechny měny.
 - Volitelně lze zadat omezení částky úroku.
-- Na stránce <strong>Nastavení kódů úroků**</strong> je v poli <strong>**Vypočítat úrok podle</strong> zvolena možnost <strong>Procento</strong>.
+- Na stránce **Nastavení kódů úroků** je v poli **Vypočítat úrok podle** zvolena možnost **Procento**.
 
 Pokud chcete například nastavit kód úroku, který stanoví 5% úrok po uplynutí každých dvou měsíců, kdy je faktura po splatnosti, zadejte do pole **Vypočítat úroky jednou za** hodnotu 2 a vyberte možnost **Měsíc**.
 
+> [!NOTE] 
+> Nový algoritmus pro výpočet oznámení úroků je přidán pomocí správy funkcí. Chcete-li použít tento algoritmus, povolte vlastnost **(GBL) Umožnit vypočítat úrok za den jako roční procento vydělené 365**. Další informace o povolování funkcí naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Vzorec pro výpočet výše částky úroku je: 
+>  
+> Výše oznámení o úroku = dlužná částka × roční úrok % / 365 × počet dní zpodění
+>  
+> Tato funkce je k dispozici ve verzi 10.0.18 a novější.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Úrokové sazby podle částek
 Můžete nastavit úrokové sazby pro výpočet určité částky podle měny.
 - Částka úroku se zadává pro každou měnu v kódu úroku.
@@ -131,3 +139,6 @@ K zobrazení různých verzí můžete použít volbu nabídky **K datu** a vybr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

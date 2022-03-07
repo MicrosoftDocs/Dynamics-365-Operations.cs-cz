@@ -2,16 +2,13 @@
 title: Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 description: V tomto tématu je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748515"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
@@ -54,7 +51,7 @@ V závislosti na vaší společnosti může seznam "nejlépe prodávaných produ
 
 Seznam "nejlépe prodávaných" produktů má jeden parametr, který lze změnit:
 
-![Příklad výchozího parametru seznamu nejlépe se prodávajících produktů](./media/examplebestsellingparameters.PNG)
+![Příklad výchozího parametru seznamu nejlépe se prodávajících produktů.](./media/examplebestsellingparameters.PNG)
 
 1. **Zahrnout prodeje z posledních X dnů** - prodejní transakce, které se vyskytly během zadaného počtu dnů před aktuálním datem, lze použít k objednání produktů. Výchozí hodnota výše naznačuje, že k určení umístění produktu v seznamu nejlépe se prodávajících produktů se použijí všechny nákupy produktu za posledních 30 dnů. 
 
@@ -68,13 +65,13 @@ Seznam "nejlépe prodávaných" produktů má jeden parametr, který lze změnit
 1.  Chcete-li přidat produkty do tabulky, vyberte možnost **Přidat řádek.** 
 1.  Ve sloupci produkt vyhledejte produkt podle **názvu** nebo **čísla produktu**.
 
-    ![Příklad hledání produktu v novém seznamu produktů](./media/examplenewlistconfiguration1.png)
+    ![Příklad hledání produktu v novém seznamu produktů.](./media/examplenewlistconfiguration1.png)
 
 1.  Ve sloupci Typ řádku vyberte jednu z následujících možností:
     -   **Zahrnout** – vynutí umístění produkt v předu na seznamu
     -   **Vyloučit** – odebere produkt ze zobrazení v seznamu.
     
-    ![Příklad zahrnutí nebo vyloučení produktu z nového seznamu produktů](./media/examplenewlistconfiguration2.png)
+    ![Příklad zahrnutí nebo vyloučení produktu z nového seznamu produktů.](./media/examplenewlistconfiguration2.png)
 
 1.  Při změně **Pořadí zobrazení** se změní pořadí, v jakém se produkty označené jako **zahrnout** objeví na seznamu.
     - Pokud mají dva produkty stejnou hodnotu **pořadí zobrazení**, pak se konečné pořadí těchto dvou výsledků může lišit od back office.
@@ -90,11 +87,11 @@ V kontextu seznamů Často zakoupeno společně nebo Lidem se také líbí se st
 Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupujte takto:
 1.  Vyberte **Produkt typu seed**. 
 1.  Ve sloupci **Produkt** vyhledejte produkt podle **Názvu** nebo **Čísla produktu.**
-![Příklad hledání produktu v seznamu Často zakoupeno společně](./media/exampleFBTlistconfiguration1.png)
+![Příklad hledání produktu v seznamu Často zakoupeno společně.](./media/exampleFBTlistconfiguration1.png)
 1. Ve sloupci **Typ řádku** vyberte jednu z následujících možností:
     - **Zahrnout** – vynutí umístění produkt v předu na seznamu
     - **Vyloučit** – odebere produkt ze zobrazení v seznamu.     
-![Příklad zahrnutí nebo vyloučení produktu v seznamu Často zakoupeno společně](./media/exampleFBTlistconfiguration2.png)
+![Příklad zahrnutí nebo vyloučení produktu v seznamu Často zakoupeno společně.](./media/exampleFBTlistconfiguration2.png)
 1.  Odebrání produktů z tabulky: vyberte řádek, který chcete odebrat, a vyberte možnost Odstranit.
 
 
@@ -121,3 +118,6 @@ Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupuj
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

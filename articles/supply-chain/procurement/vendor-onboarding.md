@@ -1,26 +1,24 @@
 ---
 title: Nábor dodavatelů
 description: Toto téma popisuje proces nabírání nových dodavatelů. Vysvětluje akce, které jsou vyžadovány různými rolemi v průběhu tohoto procesu.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019872"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841424"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 
@@ -174,3 +172,6 @@ Pomocí akce **Odstranit** na požadavku registrace potenciálního dodavatele m
 |         Schváleno         |                                                                               Požadavek na dodavatele je schválen.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
 |         Odmítnuto         |                                                                               Požadavek na dodavatele je zamítnut.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

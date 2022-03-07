@@ -2,16 +2,13 @@
 title: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 author: bebeale
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 27e4f1c751ee865b0df536f3c1912cb1d8946032
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410694"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792600"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
-
-## <a name="overview"></a>Přehled
 
 V řešení Dynamics 365 Commerce jsou všechny informace o produktech a transakcích sledovány v úložišti entit prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 vlastněnému zákazníkem.
 
@@ -115,3 +110,6 @@ Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporuč
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

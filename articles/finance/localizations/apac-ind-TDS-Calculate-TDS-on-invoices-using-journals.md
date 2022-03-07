@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778886"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Výpočet TDS na fakturách pomocí deníků
 
@@ -65,6 +65,6 @@ Začněte otevřením stránky **Hlavní knihy** (**Hlavní kniha > Položky den
 
 8. Zadejte další požadované údaje. Proveďte ověření a zaúčtování deníku. Částka TDS, která se počítá z nákupních faktur, se zaúčtuje na účet závazků. Vypočítaná částka TDS, která je vypočítána na prodejních fakturách, se zaúčtuje na účet pohledávek, který je definován pro každý daňový zákon TDS ve skupině TDS. Účty závazků nebo účty pohledávek pro daňové kódy TDS jsou definovány na stránce **Kódy srážkové daně**.
 
-9. Vyberte **Zaúčtovaná srážková daň** k otevření stránky **Transakce srážkové daně**. Pole **Hodnota** zobrazuje celkové procento, které bylo použito k výpočtu TDS pro transakci.
+9. Vyberte **Zaúčtovaná srážková daň** k otevření stránky **Transakce** **srážkové** **daně**. Pole **Hodnota** zobrazuje celkové procento, které bylo použito k výpočtu TDS pro transakci.
 
    Políčka na kartách **Přehled**, **Všeobecné** a **Částka** na stránce Dočasné transakce srážkové daně zobrazují vypočítanou částku TDS a údaje o upravené částce TDS pro každý daňový zákon TDS, který je připojen ke skupině TDS.

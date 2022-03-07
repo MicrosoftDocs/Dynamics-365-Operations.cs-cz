@@ -2,9 +2,11 @@
 title: Úpravy a audit transakcí cash and carry a řízení hotovosti
 description: Toto téma popisuje, jak upravit a auditovat transakce cash and carry a řízení hotovosti v Microsoft Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85c4bd4c03b6ac09f2226d1767deabde1879f869e4b7c4d45e4d4c2a1d8effb3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 296dbf03ed65c1994562149a2c4b8fccd9073f0d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765331"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221912"
 ---
 # <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Úpravy a audit transakcí cash and carry a řízení hotovosti
 

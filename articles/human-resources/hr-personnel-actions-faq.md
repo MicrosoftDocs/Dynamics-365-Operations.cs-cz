@@ -2,29 +2,28 @@
 title: Často kladené dotazy k akcím personálu
 description: Tento článek obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu. Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu.
 author: andreabichsel
-manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417623"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333012"
 ---
 # <a name="personnel-actions-faq"></a>Často kladené dotazy k akcím personálu
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tento článek obsahuje odpovědí na možné otázky, pokud vaše organizace používá akce personálu. Akce personálu jsou další kroky, které je třeba splnit při provádění určité úlohy týkající se personálu. Příklady úloh, které mohou vyžadovat akce personálu, jsou při vytváření nových pozic, úpravě hodnot existující pozice, náboru nových pracovníků, převodu pracovníků, změně kompenzace pracovníka, změně přiřazení pozic nebo udělení výpovědi pracovníkům.
 
@@ -52,7 +51,7 @@ Akce pracovníků mohou mít následující stavy:
 - **Zamítnuto** – Žádost o akci byla odepřena schvalovatelem.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Můžu odstranit akci personálu?
-Ano, můžete odstranit akce personálu se stavem **Koncept**, **Chyba**, **Selhání** nebo **Zrušeno**.
+Ano, můžete odstranit akce personálu se stavem **Koncept**, **Chyba**, **Selhání** nebo **Zrušeno**. Můžete odstranit akce zaměstnanců, které mají stav **Dokončeno**, pouze pokud jste nastavili možnost **Povolit mazání dokončených akcí pracovníků** na **Ano** na stránce **Sdílené parametry lidských zdrojů**.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Jak mohu nejrychleji zkontrolovat stav žádosti o akci personálu?
 Otevřete libovolnou stránku seznamu akcí personálu a vyberte akci personálu.
@@ -69,7 +68,7 @@ Pokud požadavek akce personálu selže, postupujte v řešení chyby a opětovn
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Co se stane s akcí personálu používající workflow po dokončení výsledného schválení?
 Jestliže nebudou nalezeny žádné chyby, bude akce personálu jen pro čtení. (Historii můžete zobrazit na stránce seznamu **Všechny akce pracovníků**, ale nelze změnit akci personálu.) Pokud je stav akce personálu **Dokončeno**, záznam pozice nebo pracovníka již byl aktualizován. Pokud chcete zobrazit, které změny byly provedeny, otevřete stránku se seznamem **Pozice** nebo **Pracovníci**.
 
-## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Proč se zobrazuje následující chyba při zadání nenulové hodnoty v poli Mzdová sazba? "Hodnota je mimo platný rozsah – musí být v rozsahu 0,00 až 0,00"
+## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Proč se zobrazuje následující chyba při zadání nenulové hodnoty v poli Mzdová sazba? „Hodnota je mimo platný rozsah – musí být v rozsahu 0,00 až 0,00“
 Tato zpráva se zobrazí, protože pole Úroveň ve formuláři Úloha je prázdná pro úlohu, která je přidružená k vybrané pozici.
 
 Tuto chybu vyřešíte takto:
@@ -92,3 +91,6 @@ Příklad:
 - Datum platnosti v záhlaví akce **Přijmout pracovníka** je datum, které jste zadali do pole **Počáteční datum zaměstnání**.
 - Datum platnosti v záhlaví akce **Převést pracovníka** je datum, které jste zadali do pole **Počáteční datum přiřazení** pro pracovníka.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

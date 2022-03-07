@@ -2,41 +2,36 @@
 title: Přehled stránek s podrobnostmi o produktu
 description: Toto téma poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 01/23/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410888"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986194"
 ---
-# <a name="product-details-pages-overview"></a>Přehled stránek s podrobnostmi o produktu
+# <a name="product-details-pages-overview"></a>Přehled stránek s podrobnostmi o produktu
 
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Přehled
-
 Systém PDP poskytuje podrobné informace o produktu a umožňuje zákazníkům vybrat možnosti produktu, například velikost, styl a barvu. PDP by měl předprezentovat všechny informace o produktu, které odběratel potřebuje k provedení rozhodnutí o nákupu.
 
 Následující obrázek znázorňuje příklad PDP
 
-![Příklad stránky podrobností o produktu](./media/pdp.PNG)
+![Příklad stránky podrobností o produktu.](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Moduly záhlaví a zápatí
 
@@ -88,3 +83,6 @@ Pokud je marketingový obsah jedinečný pro určitý produkt, lze do PDP přida
 [Přehled stránek správy účtů](quick-tour-account-management.md)
 
 [Obohacení stránky podrobností produktu](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

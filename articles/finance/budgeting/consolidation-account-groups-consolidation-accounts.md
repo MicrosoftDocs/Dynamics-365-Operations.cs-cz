@@ -1,40 +1,36 @@
 ---
 title: Skupiny konsolidačních účtů a další konsolidační účty
-description: Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 Finance.
-author: aprilolson
-manager: AnnBe
+description: Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8db7a60656434aafd8114b08c2c0e9493140f27b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441279"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883380"
 ---
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Skupiny konsolidačních účtů a další konsolidační účty
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 Finance.
+Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití.
 
-<a name="consolidation-account-groups"></a>Skupiny konsolidačních účtů
-----------------------------
+## <a name="consolidation-account-groups"></a>Skupiny konsolidačních účtů
 
-Skupiny konsolidačních účtů umožňují vytvářet skupiny účtů, které chcete použít pro konsolidaci dat. Nejčastěji představuje skupina konsolidačních účtů vládou nařízené účtové osnovy nebo mapování účtů do skupiny, která je definována ústředím společnosti. Skupiny konsolidačních účtů naleznete v oblasti **Nastavení** modulu **Konsolidace**. Při přidání nové skupiny zadejte jedinečný identifikátor pro skupinu účtů a název.
+Skupiny konsolidačních účtů umožňují vytvářet skupiny účtů, které chcete použít pro konsolidaci dat. Konsolidační účetní skupina obvykle představuje vládou nařízenou účtovou osnovu. Konsolidační skupina účtů může také mapovat účty do skupiny, která je definována centrálou společnosti. Skupiny konsolidačních účtů naleznete v oblasti **Nastavení** modulu **Konsolidace**. Při přidání nové skupiny zadejte jedinečný identifikátor pro skupinu účtů a název.
 
 ## <a name="additional-consolidation-accounts"></a>Další konsolidační účty
 Další konsolidační účty umožňují přiřadit účet z existující účtové osnovy do skupiny konsolidačních účtů. Potom můžete zadat hodnotu a název konsolidačního účtu. 
@@ -54,3 +50,6 @@ Další informace naleznete v tématu [Vytvoření skupin konsolidace a další 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

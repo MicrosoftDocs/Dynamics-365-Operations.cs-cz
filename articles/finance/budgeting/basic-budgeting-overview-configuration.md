@@ -2,28 +2,25 @@
 title: Přehled rozpočtování
 description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 Finance, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441168"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827451"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -88,3 +85,6 @@ Společnost, která používá funkci plánování rozpočtu může vytvořit a 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

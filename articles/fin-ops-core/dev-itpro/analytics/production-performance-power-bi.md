@@ -2,9 +2,11 @@
 title: Obsah výkonosti výroby v Power BI
 description: Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI.
 author: AndersGirke
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c815a2e37f9882d695bf170a806301a3145d0f06
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761409"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094205"
 ---
 # <a name="production-performance-power-bi-content"></a>Obsah výkonosti výroby v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **výkonnosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **výkonosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
@@ -126,6 +128,3 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Entity                  | ID a jméno                                                   |
 | Zdroje                 | ID prostředku, název prostředku, typ prostředku a skupiny prostředků |
 | Produkty                  | Číslo produktu, název produktu, ID položky a skupina položek         |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90bd2900434b1be509f72ec82375e52ea32bc424
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: b7516620763e87440c0fb866ce507c744223a229
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4825366"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563623"
 ---
 # <a name="datetimeformat-er-function"></a>Funkce el. výkaznictví DATETIMEFORMAT
 
@@ -86,3 +85,6 @@ Funkce `DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O")
 ## <a name="additional-resources"></a>Další zdroje
 
 [Funkce data a času](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

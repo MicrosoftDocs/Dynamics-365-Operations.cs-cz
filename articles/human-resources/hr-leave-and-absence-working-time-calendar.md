@@ -1,31 +1,33 @@
 ---
 title: Vytvoření kalendáře pracovní doby
 description: Definujte kalendář pracovní doby, svátků a časy, kdy nepracujete, v Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bedbe65f146c4159c2a809de8f683815fd4a01f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54aa85acb43c1e9a474bea9996c72c7e7017c245
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417612"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068912"
 ---
 # <a name="create-a-working-time-calendar"></a>Vytvoření kalendáře pracovní doby
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kalendář pracovní doby v aplikaci Dynamics 365 Human Resources zobrazuje dny a hodiny, které zaměstnanci pracují ve vaší organizaci. Když zaměstnanec odešle požadavek na volno, nemusí se starat o svátky a uzávěrky.
 
@@ -65,7 +67,7 @@ Svátky a uzávěrky lze přidávat a měnit odděleně od kalendáře pracovní
 
 Svátky a uzavírky lze přidávat nebo lze měnit mimopracovní dobu odděleně od kalendáře pracovní doby.
 
-1. Na stránce **Správa organizace** vyberte **Mimopracovní doba**.
+1. Na stránce **Správa organizace** klikněte na **NEPRACOVNÍ DOBA**.
 
 2. Vyberte **Nový** a zadejte název a časový rozsah mimopracovní doby.
 
@@ -75,3 +77,6 @@ Pokud jste aktivovali funkci náhledu oprav pracovního volna a svátků, Aplika
 
 - [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md)
 - [Konfigurace typů pracovního volna a absence](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

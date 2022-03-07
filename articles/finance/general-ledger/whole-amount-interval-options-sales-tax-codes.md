@@ -1,37 +1,34 @@
 ---
-title: Možnost Celková částka a Interval výpočtu pro kódy DPH
-description: Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
-author: ShylaThompson
-manager: AnnBe
+title: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+description: Toto téma vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3e18eac934eb109e8f3f509b2bd78f76dd5f74d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441160"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726816"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje možnosti pro pole Metoda výpočtu pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
+Toto téma vysvětluje možnosti pro pole **Metoda výpočtu** pro kódy DPH, a postup výpočtu DPH v rámci intervalů a celých částek.
 
-Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce Kódy DPH pomocí pole Metoda výpočtu na pevné záložce Výpočet vyberte způsob výpočtu kódu DPH.
+Můžete nastavit kód DPH, aby byl vypočten na základě celé částky nebo částky intervalu. Na stránce **Kódy DPH** pomocí pole **Metoda výpočtu** na pevné záložce **Výpočet** vyberte způsob výpočtu kódu DPH.
 - Celá částka – Sazba daně se použije na celou zdanitelnou částku.
 - Interval – základ daně je rozdělen do částí, kde každá část spadá do rozsahu, který má konkrétní kurz DPH. Část částky, která spadá do příslušného intervalu, je zdaněna podle sazby daně pro tento interval. Prodejní daň je součtem částek daně, které byly vypočteny pro každou částku intervalu.
   > [!NOTE]                                                                                                                              
@@ -47,9 +44,8 @@ Pokud částka odpovídá horní mezi předchozím intervalem a zároveň dolní
 ## <a name="example-whole-amount-method-of-calculation"></a>Příklad: výpočet metodou celkové částky
 Na stránce Hodnoty kódu DPH jsou sazby DPH nastaveny v následujících intervalech:
 
-|                   |                   |              |
+| Minimální limit     | Maximální limit     | Sazba daně     |
 |-------------------|-------------------|--------------|
-| **Minimální limit** | **Maximální limit** | **Sazba daně** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -66,9 +62,8 @@ Prodejní daň bude vypočtena ve výši celé zdanitelné částky.
 ## <a name="example-interval-method-of-calculation"></a> Příklad: výpočet metodou intervalu
 Na stránce Hodnoty jsou sazby DPH nastaveny v následujících intervalech:
 
-|                   |                   |              |
+| Minimální limit     | Maximální limit     | Sazba daně     |
 |-------------------|-------------------|--------------|
-| **Minimální limit** | **Maximální limit** | **Sazba daně** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -90,3 +85,6 @@ Více informací najdete v části [Sazby DPH na základě polí Základ marže
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

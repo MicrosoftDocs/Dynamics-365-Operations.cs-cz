@@ -2,26 +2,23 @@
 title: Duální měna
 description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 Finance.
 author: kweekley
-manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b20c45952d2c0c28a1b785fd92bf47cfb25251fa3a3308d14130ad0f1c78305d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762060"
 ---
 # <a name="dual-currency"></a>Duální měna
 
@@ -209,3 +206,6 @@ V konsolidaci hlavní knihy byla přidána nová možnost pro konsolidaci část
 -  Nyní můžete zvolit, zda chcete použít zúčtovací měnu nebo měnu vykazování ze zdrojové společnosti jako transakční měnu v konsolidační společnosti.
 
 - Částky zúčtovací měny nebo měny vykazování ze zdrojové společnosti budou zkopírovány přímo do částek zúčtovací měny nebo měny vykazování v konsolidační společnosti, pokud je některá z měn stejná. Pokud žádná z měn není stejná, jsou částky zúčtovací měny nebo měny vykazování v konsolidační společnosti vypočteny pomocí směnného kurzu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

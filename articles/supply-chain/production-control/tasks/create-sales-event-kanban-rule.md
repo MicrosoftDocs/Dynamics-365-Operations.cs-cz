@@ -1,28 +1,25 @@
 ---
 title: Vytvoření kanbanového pravidla události prodeje
 description: Tento postup se zaměřuje na potřebné nastavení k vytvoření kanbanového pravidla, které se spustí při vytváření prodejní objednávky.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1759adea6db8120078e2f32bff79178545c2328a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3cd2b579e542b9f905fc51b63f2120e5a5c883ae
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423526"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566640"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Vytvoření kanbanového pravidla události prodeje
 
@@ -74,3 +71,6 @@ Tento postup se zaměřuje na potřebné nastavení k vytvoření kanbanového p
 2. Klepněte na Zobrazit strom doložení.
     * Všimněte si, že kanban je vytvořen stejným množstvím jako řádek prodeje. Můžete také vidět výdej materiálu vyžadovaný k výrobě L0050. Tento krok je posledním krokem v tomto postupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

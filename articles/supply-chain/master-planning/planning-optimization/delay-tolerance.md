@@ -1,7 +1,7 @@
 ---
 title: Tolerance zpoždění (záporné dny)
 description: Toto téma poskytuje informace o výpočtu tolerance zpoždění a o tom, jak ovlivňuje plánované vytváření objednávek v Optimalizaci plánování.
-author: ChristianRytt
+author: crytt
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
@@ -10,16 +10,17 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ccf827983694eab2037c73aa3251846b051e66f1
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 748e047e89747f2eabccc04a40c79bcb1e6f3dea
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678560"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306456"
 ---
 # <a name="delay-tolerance-negative-days"></a>Tolerance zpoždění (záporné dny)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Funkce tolerance zpoždění umožňuje Optimalizaci plánování zohlednit hodnotu **Negativní dny**, která je nastavena pro skupiny pokrytí. Používá se k prodloužení doby tolerance zpoždění, která se použije během hlavního plánování. Tímto způsobem se můžete vyhnout vytváření nových objednávek dodávek, pokud stávající nabídka bude schopna pokrýt poptávku po krátké prodlevě. Účelem této funkce je určit, zda má smysl vytvořit novou objednávku dodávky pro danou poptávku.
 

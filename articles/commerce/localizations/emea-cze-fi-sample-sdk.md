@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: adafde2123afdc793a6ef4edf8fa16b857c55bf8
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 18126f53dc314eca3e874e914346b860d7138109
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076929"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7945007"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Českou republiku (starší verze)
 
@@ -155,7 +155,7 @@ Předchozí postup umožňuje rozšíření, která jsou součástí ukázky int
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 
-Ukázka integrace služby fiskální registrace pro Českou republiku je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Ukázka integrace služby fiskální registrace pro Českou republiku je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu
 

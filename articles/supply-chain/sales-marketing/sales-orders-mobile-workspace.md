@@ -2,15 +2,12 @@
 title: Mobilní pracovní prostor prodejních objednávek
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Prodejní objednávky. Tento pracovní prostor vám pomáhá mít aktuální přehled o prodejních objednávkách kdekoliv a kdykoliv.
 author: Mirzaab
-manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 712b45cf1fd35de9f823af1bf89db9c4a572d61ebf7aa3e1fded16902c09557a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767357"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobilní pracovní prostor prodejních objednávek
 
@@ -84,7 +81,7 @@ Toto zobrazení uvádí seznam prodejních objednávek podle odběratele.
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Předpoklady při použití aplikace Supply Chain Management 
-Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Prodejní objednávky**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Prodejní objednávky**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 
@@ -104,17 +101,17 @@ Pokud je ve vaší organizaci nasazena aplikace Dynamics 365 for Operations verz
 
 <td>KB 4013633 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Prodejní objednávky</strong>. Pro implementaci KB 4013633 musí správce systému provést tyto kroky:
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a></li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></li>
 
 </ol></td>
 </tr>
 <tr class="even">
 <td>Publikujte mobilní pracovní prostor <strong>Prodejní objednávky</strong>.</td>
 <td>Správce systému</td>
-<td>Viz téma <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publikování mobilního pracovního prostoru</a>.</td>
+<td>Viz téma <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -132,7 +129,7 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>Zobrazení informací o prodejních objednávkách pro odběratele s použitím mobilního pracovního prostoru Prodejní objednávky
 
@@ -142,3 +139,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 4.  Vyberte zákazníka.
 5.  Vyberte **Kontaktní informace** nebo **Prodejní objednávky**. Pokud je vybraná možnost **Prodejní objednávky**, zobrazí se seznam prodejních objednávek pro zákazníka.
 6.  Vyberte **Prodejní objednávka**. Zde můžete nyní zobrazit informace o řádcích prodejní objednávky, informace o dodávkách, kontaktní informace zákazníka a kontaktní informace příjemce objednávky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

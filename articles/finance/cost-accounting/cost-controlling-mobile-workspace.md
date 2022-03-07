@@ -2,28 +2,25 @@
 title: Mobilní pracovní prostor Řízení nákladů
 description: Toto téma obsahuje informace o mobilním pracovním prostoru řízení nákladů. Tento pracovní prostor umožňuje manažerům nákladového střediska zobrazit informace o výkonu nákladového střediska kdykoli a odkudkoli.
 author: AndersGirke
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: cd86fdf640e59885e5e8aea841dc1c1c9604825b0f18d3b741c5a2777f8e9ff8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728786"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobilní pracovní prostor Řízení nákladů
 
@@ -73,13 +70,13 @@ Mobilní pracovní prostor **Řízení nákladů** poskytuje následující akce
 
     Při výběru odkazu se zobrazí karta pro každý nákladový prvek. Na každé kartě jsou uvedeny následující částky: skutečnost, rozpočet, odchylka rozpočtu, % odchylky rozpočtu, revidovaný rozpočet, odchylka revidovaného rozpočtu a % odchylky revidovaného rozpočtu.
     
-    [![Karta pro prvek nákladů ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Karta pro prvek nákladů.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Předpoklady
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-finance"></a>Předpoklady při použití Microsoft Dynamics 365 Finance
-Pokud je ve vaší organizaci nasazena aplikace Finance, správce systému musí publikovat mobilní pracovní prostor **Řízení nákladů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Pokud je ve vaší organizaci nasazena aplikace Finance, správce systému musí publikovat mobilní pracovní prostor **Řízení nákladů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena verze 1611 s aktualizací Platform update 3 nebo novější, správce systému musí dokončit následující předpoklady.
@@ -99,17 +96,17 @@ Pokud je ve vaší organizaci nasazena verze 1611 s aktualizací Platform update
 
 <td>KB 4013633 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Řízení nákladů</strong>. Pro implementaci KB 4013633 musí správce systému provést tyto kroky:
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Nainstalujte opravu hotfix metadat</a>.</li>
-<li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a></li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Nainstalujte opravu hotfix metadat</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Použití nasaditelného balíčku</a></li>
 
 </ol></td>
 </tr>
 <tr class="even">
 <td>Publikování mobilního pracovního prostoru <strong>Řízení nákladů</strong>.</td>
 <td>Správce systému</td>
-<td>Viz téma <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publikování mobilního pracovního prostoru</a>.</td>
+<td>Viz téma <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publikování mobilního pracovního prostoru</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -128,7 +125,7 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
-[![Vyžádání aktualizace](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Vyžádání aktualizace.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Zobrazení výkonu nákladového střediska pomocí mobilního pracovního prostoru řízení nákladů
 
@@ -145,3 +142,6 @@ Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 11. Zobrazte výkonnost jednotlivých prvků nákladů.
 12. Můžete také vyhledat konkrétní prvky nákladů.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

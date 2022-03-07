@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable, WrkCtrCapRes, WrkCtrApplicableResources
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 29961
 ms.assetid: 30e38233-2a64-4070-911f-8ffd78dd8281
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc01e2d28758008d2e147a92c498da7ccb14b173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abb5b26f9fa061906d49ca10f03bb01fd7dfc71
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423743"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262062"
 ---
 # <a name="resource-capabilities"></a>Schopnosti prostředku
 
@@ -58,3 +57,6 @@ Když máte provozní prostředky typu **lidské zdroje**, které jsou přiřaze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

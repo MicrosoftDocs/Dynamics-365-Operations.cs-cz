@@ -2,27 +2,24 @@
 title: Finanční dimenze
 description: Toto téma popisuje různé typy finančních dimenzí a způsob jejich nastavení.
 author: aprilolson
-manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
 ems.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0715d3e4e4cb167c55d9c7d98cdf599187bf3b43
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e931a6c1f7b43711995ebd3aac772e270baebfea
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441272"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819612"
 ---
 # <a name="financial-dimensions"></a>Finanční dimenze
 
@@ -140,3 +137,6 @@ Další informace naleznete v následujících tématech:
 
 - [Definování finančních dimenzí](tasks/define-financial-dimensions.md)
 - [Udržování výchozích šablon finančních dimenzí](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

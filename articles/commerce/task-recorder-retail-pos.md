@@ -2,16 +2,13 @@
 title: Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 description: Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730748"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 
@@ -34,7 +31,7 @@ Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Moder
 
 ## <a name="overview"></a>Přehled
 
-Záznamník úloh v Retail Modern POS nebo Cloud POS je nové řešení, které nabízí vysokou míru odezvy. Poskytuje flexibilní aplikační programovací rozhraní (API) pro rozšíření a plynulou integraci se spotřebiteli záznamů obchodních procesů. Integrace Záznamníku úloh s nástrojem Modelování podnikových procesů (BPM) ve službě Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) se posunula kupředu. Proto mohou uživatelé dále vytvářet diagramy pro bohaté obchodní procesy ze záznamů pro analýzu a návrh aplikací.
+Záznamník úloh v Retail Modern POS nebo Cloud POS je nové řešení, které nabízí vysokou míru odezvy. Poskytuje flexibilní aplikační programovací rozhraní (API) pro rozšíření a plynulou integraci se spotřebiteli záznamů obchodních procesů. Integrace Záznamníku úloh s nástrojem Modelování podnikových procesů (BPM) ve službě Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) se posunula kupředu. Proto mohou uživatelé dále vytvářet diagramy pro bohaté obchodní procesy ze záznamů pro analýzu a návrh aplikací.
 
 ## <a name="architecture"></a>Architektura
 
@@ -58,14 +55,14 @@ Tento postup slouží k vytvoření nového záznamu pomocí Záznamníku úloh.
 1. Spusťte Retail Modern POS nebo Cloud POS a přihlaste se.
 2. Na stránce **Nastavení** v části **Záznamník úloh** klikněte na **Otevřít záznamník úloh**. Otevře se podokno **Záznamníku úloh**. Můžete kliknout na tlačítko **Zavřít** (**X**) v pravém horním rohu pro zavření podokna **Záznamník úkolů** před zahájením nového záznamu. K opětovnému otevření podokna zopakujte krok 2.
 
-    [![Podokno Záznamník úloh](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Podokno Záznamník úloh.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Zadejte jméno a popis pro nahrávky a poté klepněte na možnost **Spustit**. Relace záznamu začne hned po klepnutí na tlačítko **Spustit**.
 
     > [!NOTE]
     > Pokud kliknete na tlačítko **Zavřít** (**X**) v pravém horním rohu v době, kdy probíhá nahrávání, podokno **Záznamník úloh** se zavře, ale relace nahrávání se neukončí. K opětovnému otevření podokna Záznamník úkolů klepněte na tlačítko **Nápověda** (otazník) v horní části obrazovky.
     >
-    > [![Otazník](./media/help.jpg)](./media/help.jpg)
+    > [![Otazník.](./media/help.jpg)](./media/help.jpg)
 
 4. Po kliknutí na tlačítko **Spustit** záznamník úloh přejde do režimu nahrávání. V podokně **Záznamník úloh** se zobrazují informace a ovládací prvky, které se vztahují k procesu záznamu.
 5. Proveďte akce, které chcete provést v uživatelském rozhraní Retail Modern POS nebo Cloud POS.
@@ -75,7 +72,7 @@ Tento postup slouží k vytvoření nového záznamu pomocí Záznamníku úloh.
 
 Po ukončení relace záznamu se zobrazuje několik možností tak, abyste si mohli stáhnout záznam.
 
-[![Možnosti stahování](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Možnosti stahování.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Uložit do tohoto počítače
 
@@ -91,7 +88,7 @@ Nezpracovaný soubor záznamu je užitečný pro scénáře vývojářů, jako j
 
 ## <a name="recording-controls"></a>Ovládací prvky pro záznam
 
-[![Ovládací prvky pro záznam](./media/controls.jpg)](./media/controls.jpg)
+[![Ovládací prvky pro záznam.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Zastavit
 
@@ -120,13 +117,13 @@ Začátek a konec sady seskupených kroků můžete určit pomocí tlačítka **
 
 Poznámka je doplňkový text, který přidáváte do kroku v záznamu. Můžete například použít poznámky k poskytnutí uživateli dalšího kontextu nebo pokynů. Můžete přidat poznámky před nebo za krok. Můžete přidat poznámky k jakémkoli kroku klepnutím na tlačítko **Upravit** (symbol tužky) napravo od kroku.
 
-[![Tlačítko Upravit u kroku](./media/annotate.jpg)](./media/annotate.jpg)
+[![Tlačítko Upravit u kroku.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Texty a poznámky
 
 V polích **Texty** a **Poznámky** můžete přidat text, který by měl být přidružený ke kroku v Průvodci záznamem úloh.
 
-[![Pole Text a Poznámky](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Pole Text a Poznámky.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Text
 
@@ -138,11 +135,14 @@ Text, který zadáte do pole **Poznámky**, se zobrazí *pod* krokem v Průvodci
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Nápověda v Retail Modern POS a Cloud POS
 
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-and-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Commerce, a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání.
+Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail Modern POS a Cloud POS, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../fin-ops-core/fin-ops/get-started/help-connect.md). Nápověda pro Retail Modern POS a Cloud POS prohlledává LCS v reálném čase. Vyhledává ve všech knihovnách BPM, které jsou vybrány v parametrech systému nápovědy aplikace Commerce, a zobrazí příslušné výsledky. Pro přístup do nabídky **Nápověda** klikněte na tlačítko **Nápověda** (otazník) v horní části obrazovky a do vyhledávacího pole napište název procesu. Potom klikněte na tlačítko pro vyhledávání.
 
-[![Tlačítko Nápověda](./media/help.jpg)](./media/help.jpg)
+[![Tlačítko Nápověda.](./media/help.jpg)](./media/help.jpg)
 
 Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako téma nápovědy nebo kroky exportovat do wordového dokumentu.
 
 > [!NOTE]
 > V nápovědě pro Retail Retail Modern POS a Cloud POS se nezobrazují průvodci záznamem úloh v závislosti na tom, v jakém jste formuláři nebo jakou provádíte operaci. Je nutné v poli pro vyhledávání zadat název procesu a poté kliknout na **Hledat**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

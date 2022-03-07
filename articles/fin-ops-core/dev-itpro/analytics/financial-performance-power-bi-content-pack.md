@@ -2,11 +2,9 @@
 title: Řešení PowerBI.com pro finanční výkon
 description: Toto téma popisuje řešení PowerBI.com pro finanční výkonnost.
 author: kweekley
-manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767796"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Řešení PowerBI.com pro finanční výkon
 
@@ -87,4 +85,7 @@ Následující entity byly použity jako základ řešení PowerBI.com **Finanč
 - Hlavní knihy
 - ChartofAccounts
 
-Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit sešit aplikace [Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu.
+Tyto entity byly použity k vytvoření vypočítaných hodnot v datovém modelu. Vypočtené hodnoty se poté použijí pro výpočet klíčových ukazatelů výkonu a sestav, které se používají v obsahu. Ve výchozím nastavení obsahuje obsah data za poslední tři roky a za jeden budoucí rok. Pokud budete chtít zahrnout další výpočty do svých sestav a řídicího panelu, můžete upravit sešit aplikace [Microsoft Excel](/dynamics/s-e/). Tento sešit představuje výchozí datový model, který byl použit k vytvoření obsahu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

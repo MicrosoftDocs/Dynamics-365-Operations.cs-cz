@@ -2,11 +2,9 @@
 title: Datum LIFO s fyzickou hodnotou a označením
 description: Metoda LIFO (Datum LIFO) je skladový model vycházející z principu LIFO. Výdeje ze skladu jsou vyrovnávány vůči posledním příjmům na sklad podle data skladové transakce. Pokud v případě data LIFO nepředchází výdeji žádný příjem, výdej je vyrovnán proti jakýmkoli příjmům, ke kterým dojde po datu výdeje. Několik výdejů ve stejný den lze vyrovnat v pořadí posledního výdeje a posledního příjmu.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f033dee70f3423ec560885d59e2db1bc61cb6009e9c9c151c15c0ecd8d697862
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748002"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>Datum LIFO s fyzickou hodnotou a označením
 
@@ -57,7 +55,7 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. 
 
-Následující obrázek ukazuje účinek skladového modelu Datum LIFO, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithoutincludephysicalvalue.gif) 
+Následující obrázek ukazuje účinek skladového modelu Datum LIFO, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -92,7 +90,7 @@ Následující obrázek znázorňuje tyto transakce:
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 20,00 USD. 
 
-Následující obrázek ukazuje účinek skladového modelu LIFO, když je použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifodatewithincludephysicalvalue.gif) 
+Následující obrázek ukazuje účinek skladového modelu LIFO, když je použita možnost **Zahrnovat fyzickou hodnotu**. ![Datum LIFO s funkcí Zahrnovat fyzickou hodnotu.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -138,7 +136,7 @@ Následující obrázek znázorňuje tyto transakce:
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 USD. 
 
-Následující obrázek ukazuje účinek skladového modelu LIFO, když je použito propojení mezi příjmy a výdeji. ![Metoda Datum LIFO s označením](./media/lifodatewithmarking.gif) 
+Následující obrázek ukazuje účinek skladového modelu LIFO, když je použito propojení mezi příjmy a výdeji. ![Metoda Datum LIFO s označením.](./media/lifodatewithmarking.gif) 
 
 **Klíč k diagramu**
 
@@ -156,3 +154,6 @@ Následující obrázek ukazuje účinek skladového modelu LIFO, když je použ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

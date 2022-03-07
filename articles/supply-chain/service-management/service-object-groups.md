@@ -1,31 +1,28 @@
 ---
 title: Skupiny předmětů servisu
 description: Použití skupin objektů je vhodné při řazení a filtrování dat o objektech pro účely sestav a statistik.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bfee8bacbf9c62950ff45b90d19258516ec20b20
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423501"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568968"
 ---
-# <a name="service-object-groups"></a>Skupiny předmětů servisu 
+# <a name="service-object-groups"></a>Skupiny předmětů servisu
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,17 +32,17 @@ Použití skupin objektů je vhodné při řazení a filtrování dat o objektec
 
 Tato metoda seskupení slouží k zobrazení umístění různých objektů spravovaných vaší společností. Seskupení předmětů podle geografického umístění může být vhodné například v případě, že potřebujete určit předměty, pro které již v konkrétní zemi nebo oblasti poskytuje vaše společnost servis.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-grouping-by-geographical-location"></a>Příklad seskupení podle geografického umístění
 
-Odběratel z Belgie volá vaše servisní středisko s požadavkem na vytvoření servisní smlouvy pro objekt ABC. Do všech předmětů, které jsou v Belgii servisovány, jste připojili skupinu předmětů pro zeměpisné umístění Belgie. Při použití této skupiny jako filtru můžete rychle vyhledat, zda již máte záznam pro ABC v programu, nebo zda je nutné nastavit nový předmět. 
+Odběratel z Belgie volá vaše servisní středisko s požadavkem na vytvoření servisní smlouvy pro objekt ABC. Do všech předmětů, které jsou v Belgii servisovány, jste připojili skupinu předmětů pro zeměpisné umístění Belgie. Při použití této skupiny jako filtru můžete rychle vyhledat, zda již máte záznam pro ABC v programu, nebo zda je nutné nastavit nový předmět.
 
 ## <a name="group-by-type"></a>Seskupení podle typu
 
 Pomocí této metody seskupení můžete zobrazit typy předmětů, pro které vaše společnost provádí servis. Seskupení předmětů může být vhodné také v případě, že chcete vytvořit nový objekt na základě podobných předmětů již existujících v daném programu.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-grouping-by-type"></a>Příklad seskupení podle typu
 
-Odběratel volá s požadavkem na vytvoření servisní smlouvy pro klimatizační jednotku HIJ. Pro tento stroj již nemáte záznam. Nastavili jste však skupinu předmětů s názvem Klimatizační jednotky a přiřadili tuto skupinu ke všem předmětům klimatizačních jednotek. Proto můžete rychle vyhledávat a identifikovat všechny ostatní klimatizační jednotky a používat informace o šablonách z těchto předmětů, abyste vytvořili řádky servisní smlouvy pro HIJ. Použitím skupin předmětů tímto způsobem můžete rychle nastavit nové předměty a stanovit servisní úkoly služby, které je třeba na nich provést. 
+Odběratel volá s požadavkem na vytvoření servisní smlouvy pro klimatizační jednotku HIJ. Pro tento stroj již nemáte záznam. Nastavili jste však skupinu předmětů s názvem Klimatizační jednotky a přiřadili tuto skupinu ke všem předmětům klimatizačních jednotek. Proto můžete rychle vyhledávat a identifikovat všechny ostatní klimatizační jednotky a používat informace o šablonách z těchto předmětů, abyste vytvořili řádky servisní smlouvy pro HIJ. Použitím skupin předmětů tímto způsobem můžete rychle nastavit nové předměty a stanovit servisní úkoly služby, které je třeba na nich provést.
 
 ## <a name="create-service-object-groups"></a>Vytvoření skupin předmětů servisu
 
@@ -66,3 +63,6 @@ Předměty servisu lze přiřadit ke skupině pomocí formuláře **Předměty s
 [Tvorba předmětů servisu](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

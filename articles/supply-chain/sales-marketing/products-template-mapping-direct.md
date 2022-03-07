@@ -1,39 +1,36 @@
 ---
 title: Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci produktů z Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527307"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062456"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!NOTE]
-> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
 Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci produktů přímo z Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
 
@@ -41,7 +38,7 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 
 Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Supply Chain Management a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
-[![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Tok dat ve zpeněžení potenciálního zákazníka.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -107,7 +104,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 > [!NOTE]
 > Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
 
-![Mapování šablony v integrátoru dat](./media/products-direct-template-mapping-data-integrator-1.png)
+![Mapování šablony v integrátoru dat.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Související témata
@@ -124,3 +121,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

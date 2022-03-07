@@ -1,52 +1,152 @@
 ---
-title: Konfigurace parametrů lidských zdrojů
-description: Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Konfigurace parametrů Human Resources
+description: Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost v aplikaci Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417575"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771428"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurace parametrů lidských zdrojů
+# <a name="configure-human-resources-parameters"></a>Konfigurace parametrů Human Resources
 
-Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dvě stránky slouží k nastavení parametrů lidských zdrojů. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**. Na stránce **Parametry lidských zdrojů** jsou nastavení rozdělena mezi šest karet:
+Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Toto téma vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
 
--   Obecné
--   Nábor - není součástí Dynamics 365 Human Resources
--   Kompenzace
--   Číselné řady
--   Opuštění z rodinných a lékařských důvodu (FMLA)
--   Samoobsluha pro zaměstnance
+K nastavení parametrů lidských zdrojů slouží dvě stránky. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**.
 
-Každá karta obsahuje informace, které se vztahují na jednu společnost. Nastavení kartě **Obecné** určuje vzhled informací o absencích, zraněních a onemocněních a nově přijatých zaměstnancích. Nastavení na této kartě také definují některé výchozí položky, které se zobrazí při práci. Konkrétně tato karta vás nechá vybrat barvu, která má být použita při otevření transakcí absencí, určit šablonu stylů, která má být použita pro sestavy, dále určit, zda mají být aktivována integrace mezi vzdělávacími kurzy a registrací absence, a vyberte kód absence, který má být použit při řízení této integrace. Můžete také určit, jak dlouho mají být zachovány případy zranění a onemocnění, a určit výchozí číslo identifikace, které se zobrazí při přijetí nového pracovníka. 
+![Přechod na parametry lidských zdrojů.](./media/hr-employee-self-service-human-resources-parameters.png)
 
-Nastavení na kartě **Nábor** definuje typy dokumentů, které se používají pro korespondence, která bude automaticky zaslána uchazečům a náborovému projektu použitému pro nevyžádané přihlášky (přihlášky, které nejsou určeny pro daný náborový projekt). Období definované pro náborový projekt časově určuje náborové projekty, které jsou zahrnuty na dlaždici **Časové projekty** v pracovním prostoru **Řízení náboru**. Období, které je definováno pro upozornění na termín přihlášky slouží k zobrazení náborových projektů, kterým se blíží jejich konečný termín přihlášky na dlaždici **Blíží se termín přihlášky** v pracovním prostoru **Nábor**. 
+Na stránce **Parametry lidských zdrojů** jsou nastavení rozdělena mezi šest karet:
 
-Nastavení na kartě **Kompenzace** definuje, zda uživatelé musí potvrzovat, že chtějí uložit informace pro plán fixní nebo variabilní kompenzace. Vyberete-li políčko **Povolit ověření ukládání**, kdykoli uživatelé zavřou stránku související s kompenzacemi, obdrží zprávu s dotazem, zda chtějí uložit záznam. Některé stránky v řízení kompenzace neumožní uživatelům odstranit informace. Vyzváním uživatelů k ověření, zda chtějí informace ukládat, budete schopni omezit informace, které jsou ukládány, a později nejdou odstranit. Pokud je zrušeno zaškrtnutí políčka **Povolit ověření ukládání**, záznamy budou vždy okamžitě uloženy případně již předtím, než je uživatel hotov. Pokud používáte funkci řízení výkonnosti, můžete na kartě **Kompenzace** vybrat model hodnocení, který má být použit namísto modelu přiřazeného k plánům kompenzace při hodnocení výkonnosti. 
+- **Obecný**
+- **Nábor** (tato karta není součástí Dynamics 365 Human Resources)
+- **Kompenzace**
+- **Číselné řady**
+- **Pracovní volno**
+- **Samoobsluha pro zaměstnance**
+- **Samoobsluha pro manažery**
+- **Správa zaměstnaneckých výhod**
+- **Pracovní volno a absence**
+- **Způsoby platby**
 
-### <a name="previously-released-functionality"></a>Dříve vydané funkce
+Každá karta obsahuje informace, které se vztahují na jednu společnost.
 
-Nastavení na kartě **Číselná řada** určují sekvence, které lze použít k automatickému přiřazení identifikátorů k položkám v modulu Lidské zdroje, například přihlášky, záznamy o absenci, výsledky procesu kompenzace, čísla případů, kurzy a agendy kurzů. Spravovat odkazy číselných řad a kódy můžete na stránce se seznamem **Číselné řady** (klikněte na **Správa organizace** &gt; **Číselné řady** &gt; **Číselné řady**).
+## <a name="general"></a>Obecný
+
+Nastavení kartě **Obecné** určuje vzhled informací o absencích, zraněních a onemocněních a nově přijatých zaměstnancích. Nastavení na této kartě také definují některé výchozí položky, které se zobrazí při práci. Tato karta konkrétně umožňuje:
+
+- Vybrat barvu, kterou chcete použít na otevřené transakce absencí.
+- Určit šablonu stylů, kterou chcete použít pro sestavy.
+- Povolit integraci mezi školeními a registrací absencí.
+- Vybrat kód absence, který se používá k řízení této integrace.
+- Uvést, jak dlouho chcete zachovat případy zranění a nemoci.
+- Zadat výchozí identifikační číslo zobrazené při najímání nového pracovníka.
+- Zadejte datum, které se použije k výpočtu let služby. 
+
+![Karta Obecné.](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Nábor
+
+Nastavení na kartě **Nábor** definují typy dokumentů používané pro korespondenci automaticky zasílanou uchazečům. Můžete také uvést náborový projekt používaný pro nevyžádané přihlášky.
+
+Období definované pro **Náborový projekt časově určuje**, které náborové projekty jsou zahrnuty na dlaždici **Časové projekty** v pracovním prostoru **Řízení náboru**. Období, které je definováno pro upozornění na termín přihlášky slouží k zobrazení náborových projektů, kterým se blíží jejich konečný termín přihlášky na dlaždici **Blíží se termín přihlášky** v pracovním prostoru **Nábor**.
+
+Další informace o náboru najdete na stránce [Nábor uchazečů o práci](hr-personnel-recruit.md).
+
+## <a name="compensation"></a>Kompenzace
+
+V aplikaci Dynamics 365 Finance definuje nastavení na kartě **Kompenzace**, zda uživatelé musí potvrzovat, že chtějí uložit informace pro plán fixní nebo variabilní kompenzace. Vyberete-li možnost **Povolit ověření ukládání**, obdrží uživatelé zprávu s dotazem, zda chtějí uložit záznam, kdykoli zavřou stránku související s kompenzacemi, . Některé stránky ve Správě kompenzací neumožní uživatelům odstranit informace. Vyzváním uživatelů k ověření, zda chtějí informace ukládat, budete schopni omezit informace, které jsou ukládány, a později nejdou odstranit. Pokud zrušíte zaškrtnutí možnosti **Povolit ověření ukládání**, záznamy jsou uloženy okamžitě, možná ještě předtím, než je uživatel připraven. Pokud používáte funkci Řízení výkonnosti, můžete na kartě **Kompenzace** vybrat model hodnocení, který má být použit namísto modelu přiřazeného k plánům kompenzace při hodnocení výkonnosti.
+
+V Human Resources můžete na kartě **Kompenzace** omezit přístup k plánům kompenzace a nastavit výchozí měnu.
+
+Další informace o kompenzacích naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
+
+![Karta Kompenzace.](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Číselné řady
+
+Nastavení na kartě **Číselná řada** určuje posloupnosti používané k automatickému přiřazování ID k položkám v Human Resources, například:
+
+- Žádosti
+- Registrace absencí
+- Výsledky procesu kompenzace
+- Čísla případů
+- Kurzy
+- Agendy kurzů
+
+Spravovat odkazy číselných řad a kódy můžete na stránce se seznamem **Číselné řady** (vyberete **Správa organizace > Číselné řady > Číselné řady**).
+
+Další informace naleznete v tématu [Přehled číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
-> Počet hodin, které jsou odpracovány nesmí překročit 1 250 a délka zaměstnání nesmí přesáhnout 12 měsíců. Tyto maximální hodnoty jsou v souladu s federálním právem ve Spojených státech amerických. Nakonec nastavení na kartě **Samoobslužné stránky zaměstnanců** určují informace, které manažeři zadávají jménem svých zaměstnanců.
+> Počet hodin, které jsou odpracovány nesmí překročit 1 250 a délka zaměstnání nesmí přesáhnout 12 měsíců. Tyto maximální hodnoty jsou v souladu s federálním právem ve Spojených státech amerických.
+
+![Karta Číselné řady.](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>Pracovní volno
+
+Na kartě Pracovní volno nastavíte požadavky na způsobilost a hodiny nároků na pracovní volno. Další informace naleznete v tématu [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md).
+
+![Karta Pracovní volno.](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Samoobsluha pro zaměstnance
+
+Nastavení na kartě **Samoobsluha pro zaměstnance** ovlivňuje, jak se zaměstnancům zobrazuje jejich **samoobsluha**. Na této kartě můžete provést následující úkoly:
+
+- Zapsat název pracovního prostoru **Samoobsluha pro zaměstnance**
+- Vybrat, jaké informace může manažer pro zaměstnance zadat
+- Přidat užitečné odkazy pro zaměstnance
+- U zaměstnanců můžete omezit jejich schopnost přidávat nebo upravovat detaily kontaktních údajů. Další informace najdete v tématu [Omezení úpravy osobních údajů](hr-employee-self-service-restrict-editing.md).
+
+Další informace o nastavení **samoobsluhy pro zaměstnance** najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
+
+![Karta Samoobsluha pro zaměstnance.](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Samoobsluha pro manažery
+
+Nastavení na kartě **Samoobsluha pro manažery** ovlivní to, co manažeři uvidí ve své **samoobsluze**. Na této kartě můžete konfigurovat následující možnosti:
+
+- Rozsah pro vypršení platnosti záznamů
+- Zda mohou manažeři informací prohlížet záznamy, jejichž platnost vyprší
+- Zda mohou manažeři zobrazit otevřené pozice pro další podřízené
+- Pohledy na odcházející pracovníky
+- Užitečné odkazy pro manažery
+
+Další informace o nastavení **samoobsluhy pro manažery** najdete v části [Přehled samoobsluhy pro zaměstnance a manažera](hr-employee-manager-self-service-overview.md).
+
+![Karta Samoobsluha pro manažery.](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Správa zaměstnaneckých výhod
+
+Na kartě **Správa výhod** můžete konfigurovat e-mailové možnosti pro správu výhod. Další informace o nastavení a použití správy zaměstnaneckých výhod naleznete v tématu [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md).
+
+![Karta Správa zaměstnaneckých výhod.](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Pracovní volno a absence
+
+Další informace o nastavení a používání pracovního volna a absencí získáte v části [Přehled pracovního volna a absencí](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Způsoby platby
+
+Na kartě **Metody platby** můžete vybrat metody platby podporované vaší organizací. Další informace o konfiguraci kompenzací naleznete v tématu [Přehled plánů kompenzací](hr-compensation-overview.md).
+
+![Karta Metody platby.](./media/hr-setup-parameters-payment-methods.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

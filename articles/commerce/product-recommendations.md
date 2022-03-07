@@ -2,29 +2,25 @@
 title: Přehled doporučení produktu
 description: V tomto tématu jsou obecné informace o doporučování produktů. Doporučení produktů umožňují zákazníkům snadno a rychle vyhledat produkty, které chtějí, a také produkty, které původně nechtěly nakupovat.
 author: Moonma
-manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7824de50a65370ef4f2f23b9c8e926f9bec2fcc3
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410656"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982112"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
@@ -35,6 +31,9 @@ Microsoft Dynamics 365 Commerce lze použít k zobrazení doporučení produktů
 Doporučení produktů umožňují zákazníkům snadno a rychle najít produkty, které chtějí, a u toho mají pozitivní zkušenosti. Křížový prodej a návazný prodej může dokonce zákazníkům pomoci najít další produkty, než které původně nakupují. Pokud se při zjišťování produktů používají doporučení, mohou vytvářet více možností převodu, pomoci zvýšit výnosy z prodeje a dokonce také zvýšit spokojenost a uchování zákazníků.
 
 V platformě e-Commerce doporučení produktů využívají technologie strojového učení Microsoft Recommendations ve velkém měřítku.
+
+Tato služba je doplňkem Dynamics 365 Commerce. Další informace získáte stažením nejnovějšího [průvodce licencováním Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Služba doporučení
 
@@ -88,3 +87,6 @@ V následující tabulce jsou popsány různé typy automatických doporučení 
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

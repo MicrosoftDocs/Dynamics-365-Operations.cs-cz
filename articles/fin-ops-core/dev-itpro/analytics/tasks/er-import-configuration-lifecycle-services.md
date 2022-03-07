@@ -1,12 +1,10 @@
 ---
 title: Import konfigurace ze služby Lifecycle Services
-description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace elektronického výkaznictví ze služby Microsoft Dynamics Lifecycle Services (LCS).
+description: Toto téma popisuje, jak importovat novou verzi konfigurace elektronického výkaznictví (ER) z Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
@@ -15,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712585"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Import konfigurace ze služby Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi [konfigurace elektronického výkaznictví](../general-electronic-reporting.md#Configuration) z [knihovny majetku na úrovni projektu](../../lifecycle-services/asset-library.md) ve službě Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Používání služby LCS jako úložiště pro konfigurace elektronického výkaznictví (ER) je označeno jako [zastaralé](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Další informace viz [Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 V tomto příkladu zvolíte požadovanou verzi konfigurace elektronického výkaznictví a importujete ji pro vzorovou společnost s názvem Litware, Inc. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace elektronického výkaznictví se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu [Odeslání konfigurace elektronického výkaznictví do služby Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Je rovněž vyžadován přístup k LCS.
 
@@ -103,3 +104,6 @@ V tomto příkladu zvolíte požadovanou verzi konfigurace elektronického výka
     Pro tento příklad vyberte verzi této konfigurace ve stavu **Sdíleno**.
 
     Všimněte si, že nyní je k dispozici také sdílená 1. verze vybrané konfigurace datového modelu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

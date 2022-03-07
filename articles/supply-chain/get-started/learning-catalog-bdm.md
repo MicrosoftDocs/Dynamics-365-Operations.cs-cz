@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4490cd5e9ad9696fd4ef512e2671894b0e22c972
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 026eedc334df0162a62e659cbb55428d42abbc40
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423651"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216170"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Vzdělávací katalog pro osoby rozhodující v obchodní oblasti týkající se Dynamics 365 Supply Chain Management
 
@@ -42,3 +41,6 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 | Obsah  | popis  | Formát  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Základy produktu Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prokažte, že rozumíte Microsoft Dynamics 365, Power Platform, cloudové pojmy, možnosti licencování a možnosti nasazení a vydání. | Zkouška; náklady se liší podle oblasti. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

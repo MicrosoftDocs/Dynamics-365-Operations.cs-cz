@@ -1,37 +1,39 @@
 ---
 title: Vytvoření kalendáře týmu
 description: Zobrazte a vytvořte kalendáře týmu v Dynamics 365 Human Resources.
-author: andreabichsel
-manager: tfehr
-ms.date: 11/02/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 8ee39f35f9d81f47c5438ddf48451d24ab0c0ed3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4962258"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065245"
 ---
 # <a name="view-team-and-company-calendars"></a>Zobrazení kalendáře týmu a společnosti
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Můžete zobrazit kalendáře týmu a společnosti v Dynamics 365 Human Resources. Týmové kalendáře zobrazují pouze přímé podřízené definice v hierarchii řádků.
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Zobrazení týmového kalendáře jako zaměstnanec
 
-1. V pracovní prostoru **Zaměstnanecká samoobsluha** vyberte **Kalendář absence týmu** v **Souhrnu**.
+- V pracovní prostoru **Zaměstnanecká samoobsluha** vyberte **Kalendář absence týmu** v **Souhrnu**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Zobrazení týmového kalendáře jako vedoucí
 
@@ -40,6 +42,21 @@ Můžete zobrazit kalendáře týmu a společnosti v Dynamics 365 Human Resource
 2. Vyberte **Pracovní volno a absence** a poté vyberte **Zobrazit kalendář absence vedoucího**.
 
 Manažeři také mohou přistupovat k týmovému kalendáři z **Nedokončených požadavků od mého týmu**, **Schváleného volna** a **Požadavků na volno**. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Zobrazte svůj kalendář nepřítomnosti jako správce nepřítomnosti
+
+> [!NOTE]
+> Chcete-li zobrazit kalendář správce nepřítomnosti, musíte nejprve zapnout funkci **(Náhled) Správce nepřítomnosti pro správu dovolené** ve Správě funkcí. Další informace o zapnutí funkcí Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
+
+Uživatelé v roli Správce nepřítomnosti mohou ve svém kalendáři zobrazit žádosti o volno. Chcete-li získat přístup ke kalendáři dovolené, postupujte takto.
+
+1. V samoobslužném pracovním prostoru **Samoobsluha zaměstnanců** vyberte **Správa pracovního volna** a pak **Kalendář správce nepřítomnosti**.
+
+2. Do pole **Datum** zadejte požadované datum.
+
+3. Podle potřeby aktualizujte možnosti zobrazení.
+
+Kalendář správce nepřítomnosti zobrazuje všechny záznamy zaměstnanců, kteří se hlásí správci nepřítomnosti v hierarchii Dovolená.
 
 ## <a name="view-a-company-calendar"></a>Zobrazit kalendář společnosti
 
@@ -61,14 +78,15 @@ Kalendáře nyní obsahují další filtry a možnosti. Všechny kalendáře obs
 - Žádosti o volno 
 - Žádosti o pracovní volno
 
-Konfigurace kalendáře v parametrech Pracovní volno a absence určuje dostupné možnosti zobrazení.
+Konfigurace kalendáře na stránce **Parametry dovolené a absence** určuje dostupné možnosti zobrazení.
 
 Můžete také filtrovat kalendáře podle manažera nebo oddělení. Přiřazení primární pozice určuje zaměstnance zobrazené při nastavení těchto filtrů. 
 
->[!IMPORTANT]
->Zobrazení pracovního volna a absencí napříč společnostmi je aktuálně ve verzi Preview. Budete to muset povolit ve svém prostředí **Sandbox**. Další informace o povolení funkcí verze Preview naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).<br><br>
->Poté musíte tuto funkci povolit v části **Sdílené parametry Human Resource** k zobrazení filtru právnické osoby v kalendářích. Další informace naleznete v tématu [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md).<br><br>
->Kalendář můžete filtrovat podle právnické osoby. Pokud chcete vidět všechny zaměstnance bez ohledu na právnickou osobu, zrušte zaškrtnutí políčka filtru a stiskněte Enter. 
+> [!IMPORTANT]
+> Můžete zapnout funkci **Zobrazení dovolené napříč společnostmi** v Správě funkcí. Poté musíte tuto funkci povolit na stránce **Sdílené parametry Human Resource** k zobrazení filtru právnické osoby v kalendářích. Další informace naleznete v tématu [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md).
+> 
+> Kalendář můžete filtrovat podle právnické osoby. Pokud chcete vidět všechny zaměstnance bez ohledu na právnickou osobu, zrušte zaškrtnutí políčka filtru a vyberte **Enter**. 
 
 Informace o nastavení kalendáře naleznete v tématu [Konfigurace parametrů kalendáře](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

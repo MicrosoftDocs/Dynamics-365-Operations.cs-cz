@@ -2,26 +2,23 @@
 title: Vytvoření plánu pro pracoviště
 description: Tento postup popisuje způsob plánování výrobních zakázek, které nebyly dosud pro pracoviště zahájeny.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9059080fcd77a5317ce4226de6aad38b0066500
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 070d8441700cd0051d421ea7e2210bcb668e8c22
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423832"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820363"
 ---
 # <a name="create-a-schedule-for-a-site"></a>Vytvoření plánu pro pracoviště
 
@@ -56,3 +53,6 @@ Tento postup popisuje způsob plánování výrobních zakázek, které nebyly d
 4. Klepněte na Kusovníky.
     * Na této stránce se zobrazí odhad spotřeby materiálu pro operace ve výrobní zakázce, a aktuální dostupné zásoby.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

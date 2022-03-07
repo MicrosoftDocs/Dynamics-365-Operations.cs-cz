@@ -2,28 +2,27 @@
 title: Prognóza cashflow (Preview)
 description: Toto téma popisuje funkci prognózování cashflow.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f97b8fc0896f0f7b95bf5609f94367b3a8230ca7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 3f16c8471123969443af52ff9bed7fc017b8e9c2
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645241"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6339208"
 ---
 # <a name="cash-flow-forecast-preview"></a>Prognóza cashflow (Preview)
 
@@ -66,5 +65,4 @@ Nová karta na stránce **Nastavení prognózy cashflow** umožňuje řídit, ja
 
 Na kartě **Dimenze** vyberte ze seznamu dimenze, které se mají použít pro filtrování, a pomocí kláves se šipkami je přesuňte do pravého sloupce. Pro filtrování dat prognózy cashflow lze vybrat pouze dvě dimenze. 
 
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

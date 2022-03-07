@@ -2,11 +2,9 @@
 title: Zlikvidovat dlouhodobý majetek jako odpad
 description: V tématu je popsán postup při odstranění transakcí dlouhodobého majetku, který byl odstraněn jako odpad.
 author: moaamer
-manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 4dee4468079a9ad500f513900cec090acf6026ce
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 90eb791bae2bbe70cf9fe7127a98962305449e1d0b370cfa001afbd3654046ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752911"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Zlikvidovat dlouhodobý majetek jako odpad
 
@@ -45,7 +43,7 @@ V tématu je popsán postup při odstranění transakcí dlouhodobého majetku, 
 Před vyřazením dlouhodobého majetku jako odpadu je nutné vytvořit účty hlavní knihy, které jsou spojeny s pořizovací hodnotou majetku, odpisy pro aktuální rok, odpisy za předchozí roky a zůstatkovou účetní hodnotou majetku. Typy transakcí dlouhodobého majetku jsou uvedeny na stránce **Účetní profil dlouhodobého majetku**. Přejděte na **Dlouhodobý majetek \> Nastavení \> Účetní profily dlouhodobého majetku** a pak na pevné záložce **Vyřazení** vyberte **Odpad** v poli nad mřížkou. Následující ilustrace znázorňuje seznam typů transakcí dlouhodobého majetku na stránce **Účetní profily dlouhodobého majetku**.
 
 
-[![Likvidace majetku jako odpad, obr. 1](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Likvidace majetku jako odpad, obr. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 Pro následující příklad byl dlouhodobý majetek pořízen 1. ledna 2018 a bude zlikvidován 31. března 2019.
 
@@ -60,24 +58,27 @@ Zůstatková účetní hodnota = Pořizovací cena – odpisy
 
 V tomto příkladu byl dlouhodobý majetek pořízen a odepisován po dobu 15 měsíců od ledna 2018 do března 2019. Z toho vyplývá, že zůstatková účetní hodnota majetku je 9 000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Příklad odpisu dlouhodobého majetku](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Příklad odpisu dlouhodobého majetku.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 Chcete-li vytvořit deník likvidace, přejděte na **Dlouhodobý majetek \> Položky deníku \> Deník dlouhodobého majetku** a poté v podokně akcí vyberte možnost **Řádky**. Vyberte **Vyřazení – likvidace** a poté vyberte ID dlouhodobého majetku. Chcete-li majetek úplně vyřadit, nezadávejte hodnotu do pole **Má dáti** nebo **Dal**.
 
-[![Deník dlouhodobého majetku](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Deník dlouhodobého majetku.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 Transakce likvidace dlouhodobého majetku mění hodnoty polí pro knihu dlouhodobého majetku následujícími způsoby:
 
 - V části **Zůstatek** je pole **Stav** aktualizováno na **Zlikvidovaný**.
 - V oddílu **Výdej** je pole **Datum vyřazení** nastaveno na datum, kdy byl majetek zlikvidován.
 
-[![Podrobnosti deníku dlouhodobého majetku](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Podrobnosti deníku dlouhodobého majetku.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 Zůstatek dlouhodobého majetku je zobrazen na následujícím obrázku.
 
-[![Zůstatek dlouhodobého majetku](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Zůstatek dlouhodobého majetku.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 Na následující ilustraci je zobrazen zaúčtovaný doklad.
 
-[![Zůstatková účetní hodnota](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+[![Zůstatková účetní hodnota.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

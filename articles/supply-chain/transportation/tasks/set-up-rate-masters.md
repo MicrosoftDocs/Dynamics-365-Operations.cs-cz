@@ -1,28 +1,25 @@
 ---
 title: Nastavení hlavních sazeb
 description: Tento postup popisuje, jak nastavíte hlavní sazby.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 10/16/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType, TMSRouteWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cca9fd47a5d8c81d7b8a913d0a467bc113b584
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: e6177458f2fc4651a10353afaa6f59ba6da4e28b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4424275"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567696"
 ---
 # <a name="set-up-rate-masters"></a>Nastavení hlavních sazeb
 
@@ -97,3 +94,6 @@ Tento postup popisuje, jak nastavíte hlavní sazby. Hlavní sazby obvykle nasta
     * Určete, pro které PSČ toto přiřazení základní sazby bude platné.
 10. Do pole **Země/oblast pro vyzvednutí** zadejte „USA“.
 11. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

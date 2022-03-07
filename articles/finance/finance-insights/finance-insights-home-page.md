@@ -2,28 +2,25 @@
 title: Domovská stránka Finanční přehledy (náhled)
 description: Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, které vám pomohou přesně a inteligentně předpovědět peněžní tok vaší společnosti, předpovědět, kdy obdržíte platbu za nevyrovnané pohledávky, a vygenerovat návrh rozpočtu, který může urychlit váš proces rozpočtování. Všechny tyto funkce jsou založeny na inteligentních modelech strojového učení.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d7d167c4a8035231ea3c5630001d3aeccbcd7988
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644914"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898053"
 ---
 # <a name="finance-insights-home-page-preview"></a>Domovská stránka Finanční přehledy (náhled)
 
@@ -34,7 +31,7 @@ Finanční přehledy poskytují konfigurovatelné a rozšiřitelné modely, kter
 
 Náhled finančních přehledů je k dispozici pro zkušební nasazení v USA, Evropě a Velké Británii. Microsoft postupně přidává podporu pro další regiony.
 
-Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Funkce náhledu mohou a měly by být zapnuty pouze v prostředích sandbox vrstvy 2. Modely nastavení a umělé inteligence (AI) vytvořené v prostředí sandboxu nelze migrovat do produkčního prostředí. Další informace viz [Doplňkové podmínky použití pro náhledy Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -46,7 +43,7 @@ Chcete-li požádat o program náhledu, vyplňte [Náhled finančních přehled�
 
 ### <a name="system-requirements"></a>Systémové požadavky
 
-Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí sandbox úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Pro zobrazení náhledu Finančních přehledů je vyžadováno prostředí sandbox úrovně 2 (multi-box). Základní informace o prostředích naleznete v části [Plánování prostředí](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Požadavky verzí
 
@@ -67,7 +64,7 @@ Budou provedeny změny Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecy
 - Správce klienta Active Directory bude muset autorizovat aplikaci AI Builder pro přístup k datovému jezeru.
 - Tato funkce bude zapnuta v Dynamics 365.
 
-Znalost procesu vytváření a správy prostředků v Azure, Common Data Service a LCS vám budou nápomocny při dokončení tohoto procesu.
+Znalost procesu vytváření a správy prostředků v Azure, Microsoft Dataverse a LCS vám budou nápomocny při dokončení tohoto procesu.
 
 ## <a name="configure-finance-insights"></a>Nakonfigurujte Finanční přehledy
 
@@ -82,7 +79,7 @@ Budete muset vytvořit projekt integrátoru dat, aby do něj mohla proudit data,
 Po dokončení konfiguračních kroků a nastavení demo dat musíte zapnout a nastavit všechny funkce, které plánujete použít: předpovědi plateb zákazníků, prognózy peněžních toků a návrhy rozpočtu.
 
 ### <a name="enable-customer-payment-predictions"></a>Povolit předpovědi plateb od zákazníka
-Pokud používáte demo data k testování předpovědí plateb zákazníků, možná budete muset importovat další demo data, abyste mohli úspěšně vytvořit svůj model AI. Konkrétní kroky pro import ukázkových dat najdete v části [Nastavit ukázková data pro předpovědi plateb](set-up-demo-data.md).
+Pokud používáte demo data k testování předpovědí plateb zákazníků, možná budete muset importovat další demo data, abyste mohli úspěšně vytvořit svůj model AI. 
 
 Chcete-li povolit předpovědi plateb od zákazníka, musíte dokončit sadu kroků k vytvoření modelu strojového učení, který využívá data vaší organizace k vygenerování předpovědí o tom, kdy zákazníci pravděpodobně zaplatí neuhrazené faktury a kdy budou pravděpodobně zaplaceny konkrétní faktury. Další informace a konkrétní kroky k dokončení najdete v části [Povolit předpovědi plateb od zákazníka](enable-cust-paymnt-prediction.md). 
 
@@ -130,3 +127,6 @@ Zašlete prosím e-mail na [Přehledy plateb zákazníka (Preview)](mailto:fiap@
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
 Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

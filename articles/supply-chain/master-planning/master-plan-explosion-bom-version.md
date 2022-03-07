@@ -1,30 +1,27 @@
 ---
 title: Rozpad verze kusovníku
 description: Tento článek popisuje scénář hlavního plánování, který zahrnuje rozpad verze kusovníku.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19211
 ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 482c036294f525be5db1dc6efefe76a9ba5b3ce5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: be4dfc85ad7ab01df9a95a394896873e2d649e12
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424050"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575092"
 ---
 # <a name="explosion-of-a-bom-version"></a>Rozpad verze kusovníku
 
@@ -37,10 +34,9 @@ Rozpad poptávky verze kusovníku vytvoří poptávku pro každou řádkovou pol
 -   Dimenze pracoviště je povinná a v případě transakce poptávky musí být zadaná.
 -   Dimenze pracoviště je konzistentní. To znamená, že pracoviště v poptávce nižší úrovně je stejné, jako pracoviště v původní transakci poptávky.
 
-Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky při hlavním plánování. ![Rozpad poptávky pomocí verze kusovníku](./media/multisitedemandexplosionscenariousingbomversion.gif)
+Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky při hlavním plánování. ![Rozpad poptávky pomocí verze kusovníku.](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další prostředky
 
 [Určení verze kusovníku](master-plan-bom-version-determined.md)
 
@@ -48,3 +44,6 @@ Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

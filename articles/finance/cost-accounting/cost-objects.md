@@ -2,16 +2,13 @@
 title: Dimenze objektu nákladů
 description: Když analyzujete náklady, používáte ke stanovení, kam jsou náklady převáděny, dimenze prvku nákladů. Dimenze objektu nákladů používáte k určení, kde byste měli přiřadit náklady. V tomto tématu jsou informace o dimenzích objektu nákladů.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionMember, CAMCostObject
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 223174
 ms.assetid: 2a1cdd35-30cb-41e7-9506-67fd04a537c5
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a090ecae2aadf1d0e08dd6127f831abdbf4a6b0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e266a9ee2f47b819a4074291ad4a52d8df46ce1abe4f16308a3645375cd2dd80
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727389"
 ---
 # <a name="cost-object-dimensions"></a>Dimenze objektu nákladů
 
@@ -37,10 +34,13 @@ Objekt nákladů může být jakýkoliv typ objektu, který chcete odhadnout, p�
 ## <a name="cost-object-dimensions-and-cost-object-dimension-members"></a>Dimenze objektu nákladů a členy dimenze objektu nákladů
 Objekty nákladů se označují jako *dimenze objektu nákladů*. Až se rozhodnete, které k jaké osobě by se měl objekt dimenze nákladů vztahovat, musíte zadat jednotlivé hodnoty dimenzí nebo je importovat do nákladového účetnictví z jiných zdrojových systémů. tyto hodnoty jednotlivých dimenzí se nazývají *členy dimenze objektu nákladů*. Chcete například použít finanční dimenzi, které se říká nákladové středisko, jako dimenzi objektu nákladů. Pokud chcete zobrazit, jak náklady míří do jednotlivých nákladových středisek, musíte importovat členy dimenze objektu nákladů. V tomto případě členy dimenze objektu náklady jsou skutečná nákladová střediska, jako například prodej, výroba, administrativa a geografická umístění. Následující obrázek znázorňuje příklad nákladového střediska jako dimenze objektu nákladů s jeho aktuálními nákladovými středisky jako členy dimenze objektu nákladů. 
 
-[![Snímek obrazovky s nákladovými středisky jako dimenze objektu nákladů](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
+[![Snímek obrazovky s nákladovými středisky jako dimenze objektu nákladů.](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 
 ## <a name="import-cost-object-dimension-members-through-data-connectors"></a>Import členů dimenze objektu nákladů pomocí datových konektorů
 Ve snaze usnadnit import členů dimenze objektů nákladů používáte datové spojnicemi konektory, abyste mohli načíst hodnoty z osob, které mají být použity jako dimenze objektu nákladů. Můžete použít buď předem připravené datové konektory nebo vlastní datové konektory, které vytvoříte.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,39 +1,30 @@
 ---
-title: Poradce při potížích souvisejících s upgrady aplikací Finance and Operations
-description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s upgrady aplikací Finance and Operations.
+title: Řešení problémů s upgrady ve finančních a provozních aplikacích
+description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683592"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062818"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Poradce při potížích souvisejících s upgrady aplikací Finance and Operations
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Řešení problémů s upgrady ve finančních a provozních aplikacích
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-Toto téma obsahuje informace o odstraňování potíží pro integrací dvojího zápisu mezi aplikacemi Finance and Operations a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady aplikací Finance and Operations.
+
+Toto téma obsahuje informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse. Konkrétně obsahuje informace, které vám pomohou vyřešit problémy s upgrady finančních a provozních aplikací.
 
 > [!IMPORTANT]
 > Některé problémy, které toto téma řeší, mohou vyžadovat buď roli správce systému, nebo pověření správce klienta Microsoft Azure Active Directory (Azure AD). Oddíl pro každý výdej vysvětluje, zda jsou vyžadovány určité role nebo pověření.
@@ -42,7 +33,7 @@ Toto téma obsahuje informace o odstraňování potíží pro integrací dvojíh
 
 **Požadovaná role pro opravu problému:** správce systému
 
-Pokud se pokusíte pomocí entity **DualWriteProjectConfiguration** aktualizovat aplikaci Finance and Operations na Platform update 30, může se zobrazit chybová zpráva podobná následujícímu příkladu.
+Pokud se pokusíte pomocí tabulky **DualWriteProjectConfiguration** aktualizovat finanční a provozní aplikaci na Platform update 30, může se zobrazit chybová zpráva podobná následujícímu příkladu.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -52,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Chcete-li opravit problém, postupujte následovně.
 
-1. Přihlaste se k virtuálnímu počítači pro aplikaci Finance and Operations.
+1. Přihlaste se k virtuálnímu počítači pro finanční a provozní aplikaci.
 2. Spusťte Visual Studio jako správce a otevřete strom aplikačních objektů (AOT).
 3. Vyhledejte **DualWriteProjectConfiguration**.
 4. Ve stromu aplikačních objektů klepněte pravým tlačítkem myši na položku **DualWriteProjectConfiguration** a vyberte **Přidat do nového projektu**. Chcete-li li vytvořit nový projekt, který bude používat výchozí možnosti, klepněte na tlačítko **OK**.
@@ -62,7 +53,7 @@ Chcete-li opravit problém, postupujte následovně.
 8. Chcete-li provést úplnou synchronizaci databáze, vyberte možnost **Synchronizovat**.
 9. Po úspěšné synchronizaci celé databáze spusťte znovu krok synchronizace databáze v Lifecycle Services (LCS) Microsoft Dynamics a podle potřeby použijte skripty ručního upgradu, abyste mohli pokračovat v aktualizaci.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Problém Chybějící pole entity u map
+## <a name="missing-table-columns-issue-on-maps"></a>Problém s chybějícími sloupci tabulky na mapách
 
 **Požadovaná role pro opravu problému:** správce systému
 
@@ -70,24 +61,27 @@ Na stránce **Dvojího zápisu** se může zobrazit chybová zpráva podobná n�
 
 *Chybějící zdrojové pole \<field name\> ve schématu.*
 
-![Příklad chybové zprávy chybějícího zdrojového pole](media/error_missing_field.png)
+![Příklad chybové zprávy chybějícího zdrojového sloupce.](media/error_missing_field.png)
 
-Chcete-li tento problém vyřešit, zkontrolujte nejprve následující kroky a ujistěte se, že pole jsou v entitě.
+Chcete-li tento problém vyřešit, zkontrolujte nejprve, že v tabulce jsou sloupce.
 
-1. Přihlaste se k modulu VM pro aplikaci Finance and Operations.
-2. Přejděte na **Pracovní prostory \> Správa dat**, vyberte dlaždici **Parametry architektury** a pak na kartě **Nastavení tabulky** vyberte **Aktualizovat seznam entit** pro aktualizaci tabulek.
-3. Přejděte na **Pracovní prostory \> Správa dat**, vyberte kartu **Datové tabulky** a zkontrolujte, zda je daná entita uvedena v seznamu. Není-li entita v seznamu uvedena, přihlaste se k virtuálnímu počítači pro aplikaci Finance and Operations a ujistěte se, že je daná entita dostupná.
-4. Otevřete stránku **Mapování tabulek** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
-5. Chcete-li vyplnit pole v mapování tabulky, vyberte možnost **Aktualizovat seznam entit** .
+1. Přihlaste se k virtuálnímu počítači pro finanční a provozní aplikaci.
+2. Přejděte na **Pracovní prostory \> Správa dat**, vyberte dlaždici **Parametry architektury** a pak na kartě **Nastavení tabulky** vyberte **Aktualizovat seznam tabulek** pro aktualizaci tabulek.
+3. Přejděte na **Pracovní prostory \> Správa dat**, vyberte kartu **Datové tabulky** a zkontrolujte, zda je daná tabulka uvedena v seznamu. Není-li tabulka v seznamu uvedena, přihlaste se k virtuálnímu počítači pro finanční a provozní aplikaci a ujistěte se, že je daná tabulka dostupná.
+4. Otevřete stránku **Mapování tabulek** ze stránky **Dvojí zapisování** ve finanční a provozní aplikaci.
+5. Chcete-li vyplnit sloupce v mapování tabulky, vyberte možnost **Aktualizovat seznam tabulek** .
 
 Pokud problém stále není opraven, postupujte podle následujících kroků.
 
 > [!IMPORTANT]
-> Tento postup vás provede procesem odstranění entity a jejím opětovným přidáním. Chcete-li předejít problémům, postupujte přesně podle kroků.
+> Tento postup vás provede procesem odstranění tabulky a jejím opětovným přidáním. Chcete-li předejít problémům, postupujte přesně podle kroků.
 
-1. V aplikaci Finance and Operations přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Datové tabulky**.
-2. Vyhledejte entitu, u které chybí atribut. V panelu nástrojů klikněte na možnost **Změnit mapování cíle**.
+1. Ve finanční a provozní aplikaci přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Datové tabulky**.
+2. Vyhledejte tabulku, u které chybí atribut. V panelu nástrojů klikněte na možnost **Změnit mapování cíle**.
 3. V podokně **Mapovat fázování na cíl** klikněte na možnost **Generovat mapování**.
-4. Otevřete stránku **Mapování tabulek** ze stránky **Dvojí zapisování** v aplikaci Finance and Operations.
+4. Otevřete stránku **Mapování tabulek** ze stránky **Dvojí zapisování** ve finanční a provozní aplikaci.
 5. Není-li atribut automaticky naplněn na mapě, přidejte jej ručně kliknutím na tlačítko **Přidat atribut** a následným kliknutím na tlačítko **Uložit**. 
 6. Vyberte mapování a klikněte na tlačítko **Spustit**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

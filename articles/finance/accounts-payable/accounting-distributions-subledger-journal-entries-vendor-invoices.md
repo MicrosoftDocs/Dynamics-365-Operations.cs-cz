@@ -2,25 +2,25 @@
 title: Rozúčtování a položky deníku pro faktury dodavatele
 description: Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výdaje, daně a náklady zaúčtovány na fakturách dodavatele. Každá částka, která musí být zaúčtována, když je dodavatelská faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
 author: sunfzam
-ms.date: 02/18/2022
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325961"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594684"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Rozúčtování a položky deníku pro faktury dodavatele
 
@@ -62,7 +62,7 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 <td>Produkt na skladě</td>
 <td><ol>
 <li>Rozúčtování řádku nákupní objednávky.</li>
-<li>Na stránce **Zaúčtování** se vybere pole **Hlavní účet** při výběru Nákupní výdaj pro produkt.</li>
+<li>Na stránce Zaúčtování se vybere pole Hlavní účet při výběru Nákupní výdaj pro produkt.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
@@ -73,35 +73,35 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 <td>Kategorie zásobování nebo produkt, který není na skladě</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud faktura dodavatele obsahuje odkaz na řádek nákupní objednávky.</li>
-<li>Na stránce **Zaúčtování** se vybere pole **Hlavní účet** při výběru Nákupní výdaj pro výdaje.</li>
+<li>Na stránce Zaúčtování se vybere pole Hlavní účet při výběru Nákupní výdaj pro výdaje.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</li>
 <li>Použijte výchozí hodnoty finanční dimenze na faktuře dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Dlouhodobý majetek</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud faktura dodavatele obsahuje odkaz na řádek nákupní objednávky.</li>
-<li>Je-li v poli **Typ transakce** na stránce **Faktura dodavatele** vybráno **Pořízení**, vybere se také pole **Hlavní účet** po zvolení **Pořízení** na stránce **Účetní profily dlouhodobého majetku**.</li>
-<li>Je-li v poli **Typ transakce** vybrána **Oprava pořizovací ceny**, vybere se také pole **Hlavní účet** po zvolení možnosti **Oprava pořizovací ceny** na stránce **Účetní profily dlouhodobého majetku**.</li>
+<li>Je-li v poli Typ transakce ve formuláři Faktura dodavatele vybráno Pořízení, vybere se také pole Hlavní účet po zvolení Pořízení na stránce Účetní profily dlouhodobého majetku.</li>
+<li>Je-li v poli Typ transakce vybrána Oprava pořizovací ceny, vybere se také pole Hlavní účet po zvolení Oprava pořizovací ceny na stránce Účetní profily dlouhodobého majetku.</li>
 </ol></td>
 <td><ol>
 <li>Použijte rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Projekt definovaný na řádku faktury dodavatele</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
-<li>Pokud vyberete **Zůstatek** v poli **Zaúčtovat náklady – položka** na stránce **Skupiny projektů**, vybere se pole **Hlavní účet** po zvolení možnosti **Náklady** na stránce **Nastavení účtování hlavní knihy**.</li>
-<li>Pokud vyberete **Zisk a ztráta** v poli **Zaúčtovat náklady – položka** na stránce **Skupiny projektů**, vybere se pole **Hlavní účet** po zvolení možnosti **Náklady - položka** na stránce **Nastavení účtování hlavní knihy**.</li>
+<li>Pokud vyberete Zůstatek v poli Zaúčtovat náklady – položka na stránce Skupiny projektů, vybere se pole Hlavní účet po zvolení možnosti Náklady na stránce Nastavení účtování hlavní knihy.</li>
+<li>Pokud vyberete Zisk a ztráta v poli Zaúčtovat náklady – položka na stránce Skupiny projektů, vybere se pole Hlavní účet po zvolení možnosti Náklady - položka na stránce Nastavení účtování hlavní knihy.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
@@ -111,18 +111,18 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 <td>Řádková sleva</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
-<li>Pole **Hlavní účet** při výběru možnosti **Sleva** na stránce **Zaúčtování**.</li>
+<li>Pole Hlavní účet při výběru možnosti Sleva na stránce Zaúčtování.</li>
 <li>Není-li hlavní účet pro slevu definován v profilu zaúčtování, rozúčtování rozšířené ceny na řádku nákupní objednávky.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Použijte finanční dimenze z rozúčtování pro rozšířenou cenu na řádku faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze pro řádek faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Náklady nákupu, které byly zadány na kartě **Cena a sleva** řádku nákupní objednávky</td>
+<td>Náklady nákupu, které byly zadány na kartě Cena a sleva řádku nákupní objednávky</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
 <li>Rozúčtování rozšířené ceny na řádku nákupní objednávky.</li>
@@ -136,21 +136,21 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 <td>Náklady na řádek</td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
-<li>Pokud vyberete **Účet hlavní knihy** v poli **Typ debetu** na stránce **Kód nákladů**, vybere se pole **MD účet** na stránce **Kód nákladů**.</li>
-<li>Pokud je vybrána **Položka** v poli **Typ debetu** na stránce **Kód nákladů**, vyberete rozúčtování pro rozšířenou cenu na řádku nákupní objednávky.</li>
-<li>Pokud vyberete **Odběratel/Dodavatel** v poli **Typ debetu** na stránce **Kód nákladů**, vybere se pole **Dal účet** na stránce **Kód nákladů**.</li>
+<li>Pokud vyberete Účet hlavní knihy v poli Typ ve formuláři Kód nákladů, vybere se pole Účet Má dáti na stránce Kód nákladů.</li>
+<li>Pokud je vybrána Položka v poli Typ debetu ve formuláři Kód nákladů, vyberete rozúčtování pro rozšířenou cenu na řádku nákupní objednávky.</li>
+<li>Pokud vyberete Odběratel/Dodavatel v poli Typ ve formuláři Kód nákladů, vybere se pole Účet Dal na stránce Kód nákladů.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Použijte finanční dimenze z rozúčtování pro rozšířenou cenu na řádku faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Daň s následující podmínkou:
 <ul>
-<li>Na stránce **Parametry hlavní knihy** je zaškrtnuto políčko Použít daňové předpisy platné v USA.</li>
+<li>Na stránce Parametry hlavní knihy je zaškrtnuto políčko Použít daňové předpisy platné v USA.</li>
 </ul></td>
 <td><ol>
 <li>Rozúčtování pro řádek nákupní objednávky, pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky.</li>
@@ -165,61 +165,61 @@ Když zadáváte fakturu dodavatele, jednotlivé částky budou rozděleny násl
 <tr class="odd">
 <td>Daň s následujícími podmínkami:
 <ul>
-<li>Na stránce **Parametry hlavní knihy** je zrušeno označení políčka Použít daňové předpisy platné v USA.</li>
-<li>Na stránce **Skupiny prodejní daně** je pro skupinu DPH zrušeno označení pole **Importní DPH**.</li>
+<li>Na stránce Parametry hlavní knihy je zrušeno označení políčka Použít daňové předpisy platné v USA.</li>
+<li>Na stránce Skupiny prodejní daně je pro skupinu DPH zrušeno označení pole Importní DPH.</li>
 </ul></td>
 <td><ol>
-<li>Pokud je částka DPH vratná, vybere se pole **DPH** na vstupu na stránce **Účetní skupiny**.</li>
+<li>Pokud je částka DPH vratná, vybere se pole DPH na vstupu na stránce Účetní skupiny.</li>
 <li>Pokud není částka daně vratná, rozšířená cena nebo rozúčtování pro náklady.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Použijte finanční dimenze z rozšířené ceny nebo rozúčtování pro náklady na řádku faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Daň s následujícími podmínkami:
 <ul>
-<li>Na stránce **Parametry hlavní knihy** je zrušeno označení políčka Použít daňové předpisy platné v USA.</li>
-<li>Na stránce **Skupiny prodejní daně** je pro skupinu DPH vybráno pole **Importní DPH**.</li>
+<li>Na stránce Parametry hlavní knihy je zrušeno označení políčka Použít daňové předpisy platné v USA.</li>
+<li>Na stránce Skupiny prodejní daně je pro skupinu DPH vybráno pole Importní DPH.</li>
 </ul></td>
 <td><ol>
-<li>Pokud je částka DPH vratná, vybere se pole **DPH** na vstupu na stránce **Účetní skupiny**.</li>
-<li>Pokud částka DPH není vratná, vybere se pole **Importní DPH – výdaj** na stránce **Účetní skupiny**.</li>
+<li>Pokud je částka DPH vratná, vybere se pole DPH na vstupu na stránce Účetní skupiny.</li>
+<li>Pokud částka DPH není vratná, vybere se pole Importní DPH – výdaj na stránce Účetní skupiny.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Použijte finanční dimenze z rozšířené ceny nebo rozúčtování pro náklady na řádku faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Náklady v záhlaví</td>
+<td>Náklady v záhlaví</td>
 <td><ol>
-<li>Pokud vyberete **Účet hlavní knihy** v poli **Typ debetu** na stránce **Kód nákladů**, vybere se pole **MD účet** na stránce **Kód nákladů**.</li>
-<li>Pokud vyberete **Odběratel/Dodavatel** v poli **Typ debetu** na stránce **Kód nákladů**, vybere se pole **Dal účet** na stránce **Kód nákladů**.</li>
+<li>Pokud vyberete Účet hlavní knihy v poli Typ ve formuláři Kód nákladů, vybere se pole Účet Má dáti na stránce Kód nákladů.</li>
+<li>Pokud vyberete Odběratel/Dodavatel v poli Typ ve formuláři Kód nákladů, vybere se pole Účet Dal na stránce Kód nákladů.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Je-li hlavní účet účet přidělení, použijte výchozí hodnotu z definice účtu přidělení.</li>
 <li>Použijte hodnoty výchozí šablony finanční dimenze ze záhlaví faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Sleva záhlaví</td>
 <td><ol>
-<li>Pole **Hlavní účet** pro **typ zaúčtování Sleva faktury dodavatele** na stránce **Účty pro automatické transakce**.</li>
+<li>Pole Hlavní účet pro typ zaúčtování Sleva faktury dodavatele na stránce Účty pro automatické transakce.</li>
 </ol></td>
 <td><ol>
 <li>Pokud řádek faktury obsahuje odkaz na řádek nákupní objednávky, použijte rozúčtování pro řádek nákupní objednávky.</li>
 <li>Použijte finanční dimenze z rozúčtování pro rozšířenou cenu na řádku faktury dodavatele.</li>
 <li>Použijte hodnoty finanční dimenze z řádku faktury dodavatele.</li>
-<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce **Účtová osnova**.</li>
+<li>Použijte výchozí hodnoty finanční dimenze z hlavního účtu na stránce Účtová osnova.</li>
 </ol></td>
 </tr>
 </tbody>

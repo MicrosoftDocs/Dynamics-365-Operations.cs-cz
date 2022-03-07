@@ -1,27 +1,24 @@
 ---
 title: Seznam zásob na skladě
 description: Toto téma popisuje, jak pomocí stránky Seznam na skladě zkontrolovat podrobnosti zásob na skladě. Ukazuje několik způsobů, jak různé možnosti filtrování a třídění spolupracují, a jak mohou tyto možnosti někdy při jejich kombinaci přinést neočekávané výsledky.
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424229"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573914"
 ---
 # <a name="inventory-on-hand-list"></a>Seznam zásob na skladě
 
@@ -146,3 +143,6 @@ Zde je výsledný výstup.
 | IA0001 | 1 | 2 | 2 |
 
 Všimněte si, že nastavení v podokně **Filtry** se vztahuje na podrobnou (neagregovanou) tabulku zásob, která je zobrazena na začátku této sekce. Proto kritérium **Dostupné fyzicky** \| **menší nebo rovno** \| _1_ najde z této tabulky dva řádky (první a třetí řádek, z nichž každý zobrazuje hodnotu **Dostupné fyzicky** _1_). V tomto scénáři však stránka **Seznam na skladě** není nastavena pro zobrazení dimenze **Sklad**. Proto agreguje dva původní řádky do jednoho výsledného řádku, protože oba řádky mají stejné hodnoty ve všech zobrazených rozměrech. Zdá se, že tento řádek porušuje kritérium filtrování, protože hodnota **Dostupné fyzicky** je zobrazena jako _2_. Výsledek je však správný, protože nastavení v podokně **Filtry** se vztahuje na zdrojovou tabulku, nikoli na agregovanou tabulku, která je zobrazena na stránce **Seznam na skladě**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

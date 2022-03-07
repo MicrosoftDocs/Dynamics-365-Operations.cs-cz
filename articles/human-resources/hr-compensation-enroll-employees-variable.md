@@ -2,28 +2,27 @@
 title: Přihlášení zaměstnance k plánu variabilní kompenzace
 description: Manažer kompenzací a zaměstnaneckých výhod může přihlásit zaměstnance do plánů variabilní kompenzace a vypočítat tak hotovostní a bezhotovostní odměny pro zaměstnance.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMCompVarEnrollEmpl, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 361403d61be64cfc58b3c2296937109b13a2b244
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2da79af8ab311cb41d62bff0e976ea76d2682e4
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417617"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6054181"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Přihlášení zaměstnance k plánu variabilní kompenzace
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Manažer kompenzací a zaměstnaneckých výhod může přihlásit zaměstnance do plánů variabilní kompenzace a vypočítat tak hotovostní a bezhotovostní odměny pro zaměstnance. Tento postup předpokládá, že byl vytvořen plán variabilní kompenzace, ve kterém je v poli Povolit přihlášení nastavena hodnota Ano, a že byla vytvořena pravidla způsobilosti pro tento plán variabilní kompenzace. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup zahájíte tak, že přejděte na Lidské zdroje > Pracovníci > Zaměstnanci > Kompenzace > Zápis variabilního plánu
 
@@ -41,3 +40,6 @@ Manažer kompenzací a zaměstnaneckých výhod může přihlásit zaměstnance 
 8. Přepněte rozšíření oddílu Organizační přepsání.
     * Je-li třeba zohlednit výkon zaměstnance, je možné přepsat výkon v ostatních odděleních nebo oddělení jiném, než které je přiřazeno pro pozici zaměstnance. Sloupec Procento musí dohromady dát číslo 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

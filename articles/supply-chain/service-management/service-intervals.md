@@ -1,29 +1,26 @@
 ---
 title: Intervaly servisu
-description: Servisní interval určuje, jak často jsou pro řádky servisní smlouvy vytvářeny řádky servisní zakázky při automatickém vytváření servisních zakázek.
-author: ShylaThompson
-manager: tfehr
+description: Toto téma poskytuje přehled práce s intervaly servisu. Interval servisní smlouvy určuje, jak často jsou pro řádky servisní smlouvy vytvářeny řádky servisní zakázky při automatickém vytváření servisních zakázek.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 08ec58037657f7d04e50c31aec0f343a09b9fa4e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423901"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580305"
 ---
 # <a name="service-intervals"></a>Intervaly servisu
 
@@ -94,3 +91,6 @@ Tři řádky servisních zakázek byly vytvořeny v tomto časovém rozsahu, kte
 
 [Nastavení intervalů servisu](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

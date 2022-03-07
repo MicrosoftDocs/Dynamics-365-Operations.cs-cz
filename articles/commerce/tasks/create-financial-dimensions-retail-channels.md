@@ -2,11 +2,9 @@
 title: Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
 description: Tato procedura vás provede vytvořením finanční dimenze kanálu commerce s hodnotami dimenzí a postupem pro konfiguraci hodnot finančních dimenzí v obchodech.
 author: jashanno
-manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86fc9c9a400bee1280b32f10b1e8f55e581e1984
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b98c37ad7695e81dbbd9558217287c868e052d08415d6d5c5d6055b5f9755eac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769336"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
 
@@ -54,3 +52,6 @@ Tato procedura vás provede vytvořením finanční dimenze kanálu commerce s h
 24. Klikněte na odkaz na vybraném řádku v seznamu.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

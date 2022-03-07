@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 51107731090b77e75a0e5a8c91b052d494b452e4
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077058"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944908"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Německo (starší verze)
 
@@ -156,13 +156,13 @@ V přechozím postupu jste povolili rozšíření, která jsou součástí ukáz
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 
-Ukázka integrace služby fiskální registrace pro Německo je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Ukázka integrace služby fiskální registrace pro Německo je založena na [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled návrhu ukázky fiskální integrace](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### <a name="commerce-runtime-extension-design"></a>Návrh obchodního rozšíření doby běhu
 
 Účelem rozšíření je, ab poskytovatel daňového dokumentu generoval dokumenty specifické pro službu a zpracovával odpovědi z daňové registrační služby.
 
-Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EFRSample**. Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled fiskální integrace pro kanály Commerce](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Rozšíření CRT je **Runtime.Extensions.DocumentProvider.EFRSample**. Další informace o návrhu řešení fiskální integrace naleznete v tématu [Přehled fiskální integrace pro kanály Commerce](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 

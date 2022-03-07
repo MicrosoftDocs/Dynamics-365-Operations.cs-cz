@@ -2,16 +2,13 @@
 title: Konfigurace a práce s blokováním objednávek kontaktního střediska
 description: Toto téma popisuje, jak pracovat s blokováním objednávek pomocí aplikace Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762589"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurace a práce s blokováním objednávek kontaktního střediska
 
@@ -56,7 +53,7 @@ Po zadání a uložení informace o blokování může uživatele zavřít strá
 
 Pokud je příznak **Povolit dokončení objednávky** zapnutý v kanálu kontaktního střediska, platba nemusí být použita na objednávku, která je blokována. Naproti tomu, pro prodejní objednávku, která není blokována, uživatelé nemohou opustit stránku zadávání prodejní objednávky, dokud není platba aplikována. Samozřejmě bude vyžadována platba před uvolněním blokování objednávky.
 
-Dále mohou uživatelé kontaktního střediska provést manuální blokování proti podvodu na objednávkách , které jsou z nějakého důvodu podezřelé. Objednávky lze rovněž blokovat automaticky, pokud naplní aktivní kritéria a pravidla podvodu. Další informace o tomto typu blokování objednávky naleznete v tématu [Nastavení výstrah u podvodů](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Dále mohou uživatelé kontaktního střediska provést manuální blokování proti podvodu na objednávkách , které jsou z nějakého důvodu podezřelé. Objednávky lze rovněž blokovat automaticky, pokud naplní aktivní kritéria a pravidla podvodu. Další informace o tomto typu blokování objednávky naleznete v tématu [Nastavení výstrah u podvodů](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Zobrazení a správa objednávek, které jsou blokované
 
@@ -103,3 +100,6 @@ Pokud uživatelé chtějí vymazat blokování a provést ještě další změny
 ## <a name="reporting-options"></a>Možnosti vykazování
 
 Přejděte na **Maloobchod a velkoobchod** \> **Dotazy a sestavy** \> **Sestavy kontaktního střediska** \> **Sestavy blokování objednávky** a spusťte sestavu týkající se blokování objednávek podle rozsahu dat, kódu blokování nebo jiných souvisejících kritérií.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

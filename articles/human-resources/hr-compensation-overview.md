@@ -1,33 +1,34 @@
 ---
 title: Plány kompenzace
-description: Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
+description: Toto téma popisuje, jak pomocí správy kompenzací spravovat a zpracovávat plány kompenzací.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
-ms.custom: 7521
+ms.search.scope: Human Resources
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417590"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066893"
 ---
 # <a name="compensation-plans"></a>Plány kompenzace
 
-Manažeři kompenzací a výhod mohou pomocí správy kompenzací udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Manažeři kompenzací a výhod mohou pomocí **Správy kompenzací** udržovat a zpracovávat fixní i variabilní plány kompenzací pro zaměstnance organizace.
 
 ### <a name="introduction"></a>Úvod
 
@@ -43,8 +44,8 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 <table>
 <thead>
 <tr class="header">
-<th>Součást</th>
-<th>Více informací…</th>
+<th>Komponenta</th>
+<th>Další informace</th>
 </tr>
 </thead>
 <tbody>
@@ -90,7 +91,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 </tr>
 <tr class="even">
 <td>Kontrolní bod</td>
-<td>Kontrolní bod určuje to, co považujete za ideální sazbu pro všechny zaměstnance na úrovni kompenzace. U struktur plánů tříd jsou kontrolní body obvykle středním bodem rozsahu. Struktury pásma kontrolní body používají jen zřídka. Kontrolní bod pro plán fixní kompenzace můžete určit ve formuláři Plány fixní kompenzace.</td>
+<td>Kontrolní bod určuje to, co považujete za ideální sazbu pro všechny zaměstnance na úrovni kompenzace. U struktur plánů tříd jsou kontrolní body obvykle středním bodem rozsahu. Struktury pásma kontrolní body používají jen zřídka. Kontrolní bod pro plán fixní kompenzace můžete určit ve stránce **Plány fixní kompenzace**.</td>
 </tr>
 <tr class="odd">
 <td>Pracovní funkce</td>
@@ -122,8 +123,7 @@ V následující tabulce jsou uvedeny komponenty procesu kompenzace, které moho
 ## <a name="process-events"></a>Procesní události
 Procesní události vypočítá informace o kompenzaci za dané časové období pro všechny zaměstnance, kteří jsou přihlášeni v jednom nebo několika plánech fixní nebo variabilní kompenzace. Procesní událost lze spouštět opakovaně a tím otestovat nebo aktualizovat vypočítané výsledky kompenzace.
 
-<a name="compensation-events"></a>Události kompenzace
--------------------
+## <a name="compensation-events"></a>Události kompenzace
 
 Při každém spuštění procesní události se vytvoří událost kompenzace.  Události kompenzace obsahují výsledky procesu kompenzace pro každého zaměstnance zahrnutého do této události procesu.  Pokud jsou výpočty správné, můžete načtením události kompenzace aktualizovat záznamy kompenzace pro zaměstnance, kteří jsou ovlivněny danou procesní událostí.
 
@@ -132,3 +132,6 @@ Po spuštění procesní události můžete doporučit úpravy nárůstu zásluh
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

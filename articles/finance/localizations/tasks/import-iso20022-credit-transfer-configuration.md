@@ -2,26 +2,23 @@
 title: Import konfigurace převodu kreditu ve formátu ISO20022
 description: Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 01f44c49b6623cbcc2f08cfd6e4978c9a1676b83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ffc86ba9dade0ae494ca4ace8d9f562da9c9527a4731493d892b60112293af3f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781129"
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Import konfigurace převodu kreditu ve formátu ISO20022
 
@@ -45,3 +42,6 @@ Toto je první z pěti úkolů, které společně popisují proces platby dodava
     * Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.  
 9. Klepněte na tlačítko Ano.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

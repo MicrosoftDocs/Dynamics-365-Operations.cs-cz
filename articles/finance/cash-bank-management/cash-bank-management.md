@@ -1,28 +1,29 @@
 ---
 title: Domovská stránka Pokladna a banka
 description: Pomocí nástroje Pokladna a banka spravujte bankovní účty a finanční nástroje právnické osoby, které jsou přidruženy k těmto bankovním účtům.
-author: roschlom
+author: panolte
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21941"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883687"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458634"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
@@ -85,7 +86,7 @@ Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a vlastní sm
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 
@@ -99,6 +100,3 @@ V aplikaci Finance je k dispozici další nápověda v podobě průvodců zázna
 #### <a name="videos"></a>Videa
 
 Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Přerušení odpisování (svátky)
 description: Toto téma obsahuje informace o přerušení nebo odložení odpisů pro Českou republiku.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265124
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: da44e0b2bd352cc545e2ceb16ed5d0941e6df807
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14b598916cbab439a354b678818652a91bc1db10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407611"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839863"
 ---
 # <a name="depreciation-suspension-holidays"></a>Přerušení odpisování (svátky)
 
@@ -40,3 +37,6 @@ Za účelem přerušení odpisu dlouhodobého majetku vyberte na stránce **Dlou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

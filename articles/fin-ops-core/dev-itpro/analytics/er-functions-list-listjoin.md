@@ -2,11 +2,9 @@
 title: Funkce elektronického výkaznictví LISTJOIN
 description: Toto téma obsahuje obecné informace o použití funkce LISTJOIN elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28f03e5e6af0f252a994f2e54b57a5ef654f4e67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682236"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027908"
 ---
 # <a name="listjoin-er-function"></a>Funkce elektronického výkaznictví LISTJOIN
 
@@ -33,7 +31,7 @@ Funkce `LISTJOIN` vrací hodnotu typu *seznam záznamů*, která představuje no
 ## <a name="syntax"></a>Syntaxe
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## <a name="arguments"></a>Argumenty
@@ -83,3 +81,6 @@ Struktura tohoto seznamu se skládá z jednoho pole **Množství** typu `Real`, 
 [Funkce seznamu](er-functions-category-list.md)
 
 [Ladění zdrojů dat prováděného formátu ER za účelem analýzy toku dat a transformace](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

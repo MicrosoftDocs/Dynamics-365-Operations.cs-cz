@@ -11,28 +11,27 @@ ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a98d096c0eec6b1d585856b63113fd6dd60c0a4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423486"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470875"
 ---
 # <a name="set-up-subscription-groups"></a>Nastavit skupiny předplatného 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
+1.  Přejděte na **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
 
-2.  Stisknutím kláves CTRL+N nebo klepnutím na možnost **Nový** na panelu nástrojů vytvořte novou skupinu předplatného.
+2.  Výběrem možnosti **Nový** vytvoříte novou skupinu předplatného.
 
 3.  V poli **skupina předplatného** zadejte název nové skupiny předplatného.
 
@@ -49,3 +48,6 @@ ms.locfileid: "4423486"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Nastavení formátu platebního dokladu pro faktury projektů
 description: Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c843f3b504d8390b26fdc94dd747a73de75df6a9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cb0d1d95013b3eac3131064992920da5fa9bea5a1f6d554e6be1d5006a9b21fb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732893"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Nastavení formátu platebního dokladu pro faktury projektů
 
@@ -66,3 +63,6 @@ Tato funkce je k dispozici pro právnické osoby, jejichž primární adresa je 
 16. Klikněte na položku Uložit.
 17. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

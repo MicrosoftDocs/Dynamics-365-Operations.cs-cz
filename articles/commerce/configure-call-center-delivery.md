@@ -2,11 +2,9 @@
 title: Konfigurace způsobů dodání a poplatků call centra
 description: Toto téma popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748564"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
@@ -67,11 +65,11 @@ V oddílu **řádky** lze definovat jeden nebo více nákladů podle měny, jak 
 
 Společnosti často konfigurují vrstvené poplatky. Částka, kterou odběratelé platí za dodání, je v tomto případě založena na hodnotě objednávky. Chcete-li konfigurovat vrstvené poplatky, zadejte hodnoty do pole **od částky** a **do částky** a také definujte náklady na vlastní poplatky v poli **náklady**. Například u objednávek, které mají hodnotu, která je nižší než $50, účtuje prodejce $5,95 pro expedici po zemi. Pro objednávky, které mají hodnotu, která je rovno nebo větší než $50, ale méně než $100, prodejce účtuje $7.95. A nakonec pro objednávky, které mají hodnotu, která je rovna nebo větší než $100, prodejce poskytuje dodání zdarma. Následující obrázek znázorňuje konfiguraci těchto nákladů.
 
-![Příklad pevných vrstvených poplatků](media/fixedtieredcharges.png)
+![Příklad pevných vrstvených poplatků.](media/fixedtieredcharges.png)
 
 Můžete vybrat kombinaci kategorie nákladů, v závislosti na požadavcích vaší společnosti. Například u všech objednávek, které mají hodnotu, která je nižší než $100, se účtuje pevný poplatek ve výši $9,95 za dodání. Poté pro objednávky, které mají hodnotu, která se rovná nebo je větší než $100, jsou náklady na dodání vypočítávány ve výši hodnoty objednávky. Následující obrázek znázorňuje konfiguraci těchto nákladů.
 
-![Příklad kombinovaných vrstvených poplatků](media/mixedtieredcharges.png)
+![Příklad kombinovaných vrstvených poplatků.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Použití způsobů dodání během zadání objednávky v kontaktním středisku
 
@@ -94,3 +92,6 @@ Volitelně můžete propojit kód urychleného zpracování u libovolného způs
 Například pro objednávky, které budou expedovány letecky další den, výdej je zapotřebí provést ze skladu do 13: 00 každý den. V takovém případě lze vytvořit kód urychleného zpracování a kód lze spojit s libovolným způsobem dodání další den, konfigurovaným v systému. Když se ve skladu vytvoří vlna výdeje, příslušný kód urychleného zpracování v poli **urychlené zpracování** lze použít jako filtr, aby byl běh výdeje jen pro objednávky, které mají způsob dodání spojený s tímto kódem.
 
 Dále platí, že při zadání objednávky kontaktního střediska, lze kód urychleného zpracování použít ručně v záhlaví prodejní objednávky nebo na samostatném řádku prodejní objednávky. Kód lze použít k třídění nebo pro účely vykazování. V některých případech musí být objednávka zpracována pečlivě z důvodu problému se službou odběratele. V takovém případě lze v záhlaví nebo na řádkách objednávky použít konkrétní kód urychleného zpracování na pomoc se stanovením prioritního pořadí při procesu plnění.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

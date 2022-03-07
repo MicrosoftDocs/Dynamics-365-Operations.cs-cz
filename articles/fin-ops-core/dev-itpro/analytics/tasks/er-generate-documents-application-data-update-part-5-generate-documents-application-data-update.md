@@ -2,11 +2,9 @@
 title: Generování dokumentů s daty aplikace
 description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup "ER Generování dokumentů s aktualizací dat aplikace (část 4 - úprava formátu)".
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2643c85e64373e30aab16be686c50cd224490fe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2591f5b32417dd7517f76fc237d2337af64b3f61
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684468"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745028"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generování dokumentů s daty aplikace
 
@@ -78,3 +76,6 @@ Prohlédněte si vygenerovaný soubor XML.
 6. Zavřete stránku.
 7. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Rozšířený editor vzorců elektronického výkaznictví
 description: V tomto tématu je popsáno, jak lze pomocí rozšířeného editoru vzorců konfigurovat výrazy v mapování modelu a komponentách formátu elektronického výkaznictví.
 author: NickSelin
-manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 14eb8a59b64a49649768f93befdf8e6e8dcf8105
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 58d7a936f94e1cd453c904ef6404e0db65083c54235c8420b9cfa561bcde1584
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714652"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Rozšířený editor vzorců elektronického výkaznictví
 
@@ -47,16 +45,29 @@ Chcete-li začít používat rozšířený editor vzorců v instanci aplikace Mi
 2.  Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
 3.  V dialogovém okně **Parametry uživatele** v části **Sledování provádění** nastavte parametr **Povolit rozšířený editor vzorců** na **Ano**.
 
-[![Stránka konfigurací elektronického výkaznictví](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Dialogové okno Uživatelské parametry, zvýrazněný parametr Povolit rozšířený editor vzorců.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Uvědomte si, že tento parametr je specifický pro uživatele a konkrétní společnost.
+
+Počínaje verzí Microsoft Dynamics 365 Finance 10.0.19 můžete určovat, jaký editor vzorců ER je ve výchozím nastavení nabízen. Pomocí následujících kroků povolíte rozšířený editor vzorců pro všechny uživatele a společnosti aktuální instance Finance.
+
+1.  Otevřete pracovní prostor **Správa funkcí**.
+2.  Najděte a vyberte funkci **Nastavte rozšířený editor vzorců ER jako výchozí pro všechny uživatele** v seznamu a poté vyberte **Povolit hned**.
+3.  Přejděte do části **Správa organizace** > **Elektronické výkaznictví** > **Konfigurace**.
+4.  Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
+5.  V dialogovém okně **Uživatelské parametry** vyhledejte parametr **Zakázat rozšířený editor vzorců** a ověřte, zda je nastaven na **Ne**.
+
+[![Dialogové okno Uživatelské parametry, zvýrazněný parametr Zakázat rozšířený editor vzorců.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+
+> [!NOTE]
+> Hodnoty parametrů **Povolit rozšířený editor vzorců** a **Zakázat rozšířený editor vzorců** jsou uchovávány odděleně pro každého uživatele a jsou nabízeny v dialogovém okně **Uživatelské parametry** v závislosti na stavu funkce **Nastavit rozšířený editor vzorců ER jako výchozí pro všechny uživatele**.
 
 ## <a name=""></a><a name="Autoformatting">Automatické formátování kódu</a>
 
 Při psaní složeného výrazu, který se skládá z více řádků kódu, bude odsazení nového řádku automaticky založeno na odsazení předchozího řádku. Můžete vybrat řádky a změnit jejich odsazení zadáním **tabulátoru** nebo **SHIFT+TAB**.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![Gif editoru vzorců ER zobrazující výběr řádků a změnu odsazení.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Automatické formátování umožňuje uchovat celý výraz správně naformátovaný, aby se usnadnila další údržba a aby se zjednodušilo pochopení konfigurované logiky.
 
@@ -64,7 +75,7 @@ Automatické formátování umožňuje uchovat celý výraz správně naformáto
 
 Editor poskytuje dokončování slova, které usnadňuje psaní výrazu a zamezení překlepů. Když začnete přidávat nový text, editor automaticky nabídne seznam funkcí podporovaných ve funkcích elektronického výkaznictví, které obsahují zadané znaky. IntelliSense lze aktivovat také v jakémkoli místě nakonfigurovaného výrazu zadáním **CTRL+mezerník**.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![Gif editoru vzorců ER zobrazující spouštění IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Dokončení kódu</a>
 
@@ -74,7 +85,7 @@ Editor automaticky poskytuje dokončení kódu těmito způsoby:
 - Vložení symbolu druhé uvozovky při zadání první uvozovky, se zachováním kurzoru uvnitř uvozovek.
 - Vložení symbolu druhé dvojité uvozovky při zadání první uvozovky, se zachováním kurzoru uvnitř uvozovek.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![GIF editoru vzorců ER zobrazující editor automaticky poskytující doplnění kódu.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 Když namíříte na zadanou závorku, druhá závorka tohoto páru se automaticky zvýrazní, aby se zobrazila konstrukce, kterou podporují.
 
@@ -90,7 +101,7 @@ Chcete-li například přejít na řádek **8**, postupujte takto:
 
 - Stiskněte **F1**, zadejte **G**, zvolte **Přejít na řádek**, zadejte hodnotu **8** a stiskněte **Enter**.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![Gif editoru vzorců ER, který ukazuje, jak vyhledat části výrazu pomocí palety příkazů.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Strukturování kódu</a>
 
@@ -112,7 +123,7 @@ Chcete-li rozbalit všechny oblasti, postupujte takto:
   
 - Stiskněte **F1**, zadejte **UN**, vyberte **Rozbalit vše** a poté stiskněte **Enter**
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![Gif editoru vzorců ER zobrazující rozbalování kódu.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Najít a nahradit</a>
 
@@ -140,13 +151,13 @@ Chcete-li změnit všechny výskyty určitého textu, vyberte text ve výrazu a 
   
 - Stiskněte **F1**, zadejte **C** a poté vyberte požadovanou možnost pro změnu vybraného textu. Zadejte alternativní text.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![Gif editoru vzorců ER zobrazující najít a nahradit.](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Vkládání datových zdrojů a funkcí</a>
 
 Můžete vybrat možnost **Přidat datový zdroj**, která vloží do aktuálního výrazu zdroj dat, který je aktuálně vybrán v levém panelu **zdroje dat**. Podobně můžete vybrat možnost **Přidat funkci**, která vloží do aktuálního výrazu funkci, která je aktuálně vybrána v pravém panelu **Funkce**. Pokud použijete editor vzorce elektronického výkaznictví, bude vybraná funkce nebo vybraný zdroj dat vždy vložen na konec konfigurovaného výrazu. Pokud použijete rozšířený editor vzorce elektronického výkaznictví, vybranou funkci nebo vybraný zdroj dat lze vložit do jakékoliv části konfigurovaného výrazu. Chcete-li určit, kam se mají data vložit, můžete použít kurzor.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![Gif editoru vzorců ER zobrazující přidání zdroje dat a vložení funkce.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Obarvení syntaxe</a>
 
@@ -154,7 +165,7 @@ V současné době se k zvýraznění následujících částí výrazů použí
 
 - Text v dvojitých závorkách, který může představovat ID popisku textové konstanty.
 
-[![Editor vzorce elektronického výkaznictví](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![Editor vzorce elektronického výkaznictví.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## <a name="limitations"></a>Omezení
 
@@ -171,3 +182,6 @@ Editor je aktuálně podporován v následujících webových prohlížečích:
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
 - [Editor Monaco](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

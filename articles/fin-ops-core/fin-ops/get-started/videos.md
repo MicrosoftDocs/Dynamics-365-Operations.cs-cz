@@ -2,11 +2,9 @@
 title: Videa
 description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: sericks007
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797868"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881729"
 ---
 # <a name="videos"></a>Videa 
 
@@ -86,12 +84,12 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videa pro Dynamics 365 Finance
 
+### <a name="business-document-management"></a>Správa obchodních dokumentů
+- [Vytvoření nového obchodního dokumentu pomocí Správy obchodních dokumentů](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>Přizpůsobení aplikace
 - [Přidat vlastní pole](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Vložení Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-
-### <a name="expenses"></a>Výdaj
-- [Rozhraní výdajů](https://youtu.be/Ocy-MsTvEE0)
 
 ### <a name="financial-reporting"></a>Finanční výkaznictví
 - [Vyhledání verze návrháře sestav](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -117,6 +115,9 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videa pro Dynamics 365 Supply Chain Management
+
+### <a name="business-document-management"></a>Správa obchodních dokumentů
+- [Vytvoření nového obchodního dokumentu pomocí Správy obchodních dokumentů](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Náklady
 - [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)
@@ -167,3 +168,6 @@ V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGC
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) se zaměřuje na poskytování technických podrobných a osvědčených postupů, které zákazníkům a partnerům poskytují podrobné znalosti specifické pro dané předměty.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

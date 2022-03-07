@@ -2,9 +2,11 @@
 title: Konfigurace produktových filtrů pro skladové transakce
 description: Toto téma popisuje, jak konfigurovat filtry pro produkty a kódy filtrů ke kategorizaci skladových položek ve skladu. Filtry lze také použít k určení, kteří odběratelé mohou objednat určité zboží a určit zboží, které lze zakoupit od určitého dodavatele.
 author: Mirzaab
+manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: dbf92c5e199ecadb3e4f7c6130427d449ef5b6c8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567672"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251762"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurace produktových filtrů pro skladové transakce
 
@@ -46,11 +48,11 @@ Filtry produktu poskytují až 10 vlastností **Název filtru**, což jsou hodno
 1. V poli **Název filtru** vyberte hodnotu.
 1. Zadejte hodnotu do pole **Kód filtru**.
 
-    ![Nastavení filtru produktu.](media/Product_Filters10.png "Nastavení filtru produktu")
+    ![Nastavení filtru produktu](media/Product_Filters10.png "Nastavení filtru produktu")
 
 1. Do pole **Popis** zadejte název kódu. Například *Kód 2* může představovat dodavatele. Poté můžete vytvořit produktový filtr pro konkrétního dodavatele nebo skupinu dodavatelů. Více informací naleznete v části [Nastavení kódů filtru dodavatele](#vendor-product-filters) dále v tomto tématu.
 
-    ![Nastavení filtrů produktu.](media/Product_Filters.png "Nastavení filtrů produktu")
+    ![Nastavení filtrů produktu](media/Product_Filters.png "Nastavení filtrů produktu")
 
 ## <a name="set-up-product-filter-groups"></a>Nastavení skupin filtru produktu
 
@@ -69,7 +71,7 @@ Chcete-li nastavit skupiny filtrů, postupujte následujícím způsobem.
 1. V poli **Skupina položek** vyberte skupinu položek, na kterou by se měl filtr produktu vztahovat.
 1. V poli **Kód 1** až **Kód 10** podle potřeby vyberte kódy filtrů, které chcete do skupiny zahrnout.
 
-    ![Sk. položek.](media/ProdFilterGroup.png "Sk. položek")
+    ![Sk. položek](media/ProdFilterGroup.png "Sk. položek")
 
 > [!NOTE]
 > Pokud se při zavření stránky zobrazí chybová zpráva, může chybět nastavení kódu. Na stránce **Skupiny položek** můžete označit kódy jako povinné pro skupinu položek zaškrtnutím políček **Přiřadit kód 1 filtru pro skupinu položek**, **Přiřadit kód 2 filtru pro skupinu položek** atd.
@@ -88,7 +90,7 @@ Chcete-li nastavit kódy filtrů pro skupiny zboží postupujte takto.
 
     Chcete-li aktualizovat vydaný produkt, otevřete jeho stránku **Podrobnosti o vydaném produktu** a poté v podokně akcí vyberte **Upravit**. Filtry, které jsou přidruženy ke kódům, budou poté k dispozici na záložce s náhledem **Sklad**.
 
-    ![Sk. položek.](media/ItemGroup10.png "Sk. položek")
+    ![Sk. položek](media/ItemGroup10.png "Sk. položek")
 
 1. V části **Filtr skupin položek** zaškrtněte políčka u filtrů, které se musí shodovat, aby skupina filtrů byla výchozí skupinou filtrů pro položku.
 

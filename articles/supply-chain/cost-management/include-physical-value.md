@@ -2,16 +2,13 @@
 title: Zahrnovat fyzickou hodnotu
 description: Pole Zahrnout fyzickou hodnotu na pevné záložce Skladový model na stránce Skupiny modelů položky se používá k určení toho, zda se fyzicky aktualizované transakce promítnou do výpočtu průběžných průměrných nákladových ceny položky.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 79033
 ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 711c30376c4f1ecc5c1a747c675e6438a867c51ed066b6c15cdace6a071f7cfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751115"
 ---
 # <a name="include-physical-value"></a>Zahrnovat fyzickou hodnotu
 
@@ -60,3 +57,6 @@ Při zaúčtování prodejní objednávky se zaúčtuje částka nákladů 10,00
 
 > [!NOTE]
 > Pokud pro porovnání označíte pole **Zahrnovat fyzickou hodnotu** pro toto zboží při zaúčtování prodejní objednávky, zaúčtované náklady budou 12,00 USD.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,28 +1,28 @@
 ---
 title: Přehled nákupních objednávek
 description: Tento článek poskytuje obecné informace o nákupních objednávkách a odkazy na další články, které se týkají různých fází, kterými prochází nákupní objednávka.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 93083
+ms.custom:
+- "93083"
+- intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fef4eaa9563647b8878e0d0fb0bc185fdc4ed319
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2ea818432e193863d5339d78377fbc4d2a09a3e9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022224"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578097"
 ---
 # <a name="purchase-order-overview"></a>Přehled nákupních objednávek
 
@@ -43,7 +43,7 @@ Následující články poskytují přehled o různých fázích, kterými proch
 -   [Vytváření nákupních objednávek](purchase-order-creation.md)
 -   [Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
 -   [Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
--   [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typy nákupních objednávek
 Existují tři typy nákupních objednávek: Při vytváření nákupní objednávky je nutné zadat její typ. Výchozí typ pro nové objednávky můžete nastavit na stránce **Parametry modulu Zásobování a zdroje**.
@@ -78,8 +78,7 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 -   **Potvrzeno** – tento stav je přiřazen poté, co objednávka byla potvrzena. Tento stav je obvykle poslední stav schválení přiřazený k objednávce.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Vytváření nákupních objednávek](purchase-order-creation.md)
 
@@ -87,7 +86,10 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 
 [Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

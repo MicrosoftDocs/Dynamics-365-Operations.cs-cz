@@ -1,8 +1,8 @@
 ---
 title: Pracovníci bez zaměstnání
-description: Pracovníci bez budoucího, aktivního nebo historického zaměstnání ve vaší organizaci se objeví na stránce Pracovníci bez zaměstnání.
-author: twheeloc
-ms.date: 11/03/2021
+description: Pracovníci bez budoucího, aktivního nebo historického zaměstnání ve vaší organizaci se objeví ve formuláři Pracovníci bez zaměstnání.
+author: andreabichsel
+ms.date: 04/06/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,26 +10,23 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0b8fe7dd0818fa1c3cc4224e73035849f9dadfe
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724957"
 ---
 # <a name="workers-without-employment"></a>Pracovníci bez zaměstnání
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Pracovníci bez budoucího, aktivního nebo historického zaměstnání ve vaší organizaci se objeví na stránce **Pracovníci bez zaměstnání**. Pracovníci tohoto typu se mohou objevit, když importujete pracovníky bez záznamu o zaměstnání nebo když odstraníte zaměstnání pracovníka prostřednictvím **Pracovníci \> Historie zaměstnání**.
+Pracovníci bez budoucího, aktivního nebo historického zaměstnání ve vaší organizaci se objeví ve formuláři **Pracovníci bez zaměstnání**. Pracovníci s tímto stavem se mohou objevit, když importujete pracovníky bez záznamu o zaměstnání nebo když odstraníte zaměstnání pracovníka prostřednictvím **Pracovníci > Historie zaměstnání**.
 
-Ve výchozím nastavení je stránka **Pracovníci bez zaměstnání** k dispozici pro následující role:
+Ve výchozím nastavení je formulář **Pracovníci bez zaměstnání** k dispozici pro následující role:
 
 - Asistent lidských zdrojů
 - Manažer lidských zdrojů

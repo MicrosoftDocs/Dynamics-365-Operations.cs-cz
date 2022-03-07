@@ -1,33 +1,32 @@
 ---
 title: Odebrání instance
-description: Tento článek vás provede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/07/2020
+description: Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417667"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393490"
 ---
 # <a name="remove-an-instance"></a>Odebrání instance
 
-Tento článek vás provede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Toto téma vám vysvětlí proces odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Odebrání testovacího prostředí
 
@@ -42,7 +41,7 @@ Existující testovací prostředí bude odstraněno. Po odebrání se můžete 
 
 ## <a name="remove-a-production-environment"></a>Odebrání produkčního prostředí
 
-Tento článek předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). 
+Toto téma předpokládá, že jste si zakoupili aplikaci Human Resources prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). 
 
 Vzhledem k tomu, že jedno prostředí aplikace Human Resources je obsaženo v jednom prostředí Power Apps, existují dvě možnosti ke zvážení. První možnost zahrnuje odebrání celého prostředí Power Apps; druhá možnost vyžaduje odebrání pouze aplikace Human Resources. První volba je upřednostňována při vytvoření prostředí Power Apps výslovně za účelem zřízení aplikace Human Resources a při začátku implementace, nebo když nemáte žádné ustavené integrace. Druhá možnost je vhodná, pokud máte zřízené prostředí Power Apps naplněné mnoha daty, která jsou využita v Power Apps a Power Automate.
 
@@ -81,7 +80,10 @@ Postup obnovení prostředí:
 
 1. Postupujte podle pokynů v [Obnovení prostředí Power Apps](/power-platform/admin/recover-environment.md).
 
-2. Chcete-li obnovit prostředí Human Resources, kontaktujte podporu. Pro další informace si přečtěte [Získání podpory](hr-admin-troubleshooting-support.md).
+2. Chcete-li obnovit prostředí Human Resources, kontaktujte podporu. Pro další informace si přečtěte [Získání podpory](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Prostředí Power Apps jsou uložena pouze po dobu sedmi dnů po odstranění. Prostředí musíte obnovit do sedmi dnů.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Výpočet DPH na řádcích hlavního deníku
 description: V tomto tématu je vysvětleno, jak se počítá DPH pro různé typy účtů (dodavatel, odběratel, hlavní kniha a projekt) na řádcích hlavního deníku.
 author: EricWangChen
-ms.date: 02/16/2022
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311947"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488304"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Výpočet DPH na řádcích hlavního deníku
 [!include [banner](../includes/banner.md)]
@@ -77,9 +77,19 @@ V následujícím diagramu je pravidlo znázorněno graficky.
 
 ### <a name="account-type-is-customer"></a>Typ účtu je Zákazník.
 
-Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou všechny řádky deníku v dokladu používat stejný směr DPH. 
+Pokud má doklad řádek deníku, u kterého je typ účtu **Zákazník**, budou všechny řádky deníku v dokladu používat stejný směr DPH. Následující body znázorňují možné daňové pokyny pro účty zákazníka.
 
-Pokud je kód DPH Osvobození od daně, je směr Prodej bez daně. V opačném případě je směr DPH Splatná DPH.
+•   Pokud je kód DPH Osvobození od daně, je směr Nákup bez daně.
+
+•   Pokud je kód DPH vnitřní DPH, je směr DPH Pohledávka DPH.
+
+•   Pokud je kód DPH stornované účtování, je směr DPH Pohledávka DPH.
+
+V opačném případě je směr DPH Splatná DPH.
+
+V následujícím diagramu je pravidlo znázorněno graficky.
+
+![Možnosti daňových směrů pro účty zákazníka.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Typ účtu je Hlavní kniha
 

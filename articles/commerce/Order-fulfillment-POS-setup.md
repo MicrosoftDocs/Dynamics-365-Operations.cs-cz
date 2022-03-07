@@ -2,11 +2,9 @@
 title: Nastavení plnění objednávek pro obchody
 description: Toto téma poskytuje přehled nastavení plnění obchodu.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
@@ -16,18 +14,16 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5cdf7b2655f62b693a8f2bc137c690fbc43b16a7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965302"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796431"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Nastavení plnění objednávek pro obchody
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Přehled
 
 Mnoho maloobchodních prodejců by chtělo optimalizovat plnění objednávky tak, že povolí plnění objednávky obchodům. Plnění objednávek na úrovni obchodu může pomoci zmírnit scénáře přeplnění pro konkrétní obchod, nebo může být zapotřebí z logistického hlediska v případech, kdy má obchod dodatečnou kapacitu nebo je umístěn v těsnější vzdálenosti od zákazníka. Aby se vyhovělo této potřebě, je na pokladním místě k dispozici sjednocená operace plnění objednávky.
 
@@ -130,3 +126,6 @@ Plnění objednávky na pokladním místě obsahuje filtrování umožňující 
 - Vytvořeno
 - Datum dodání
 - Datum příjmu
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

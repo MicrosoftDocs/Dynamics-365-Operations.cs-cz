@@ -2,26 +2,23 @@
 title: Auditování faktur a klíčových dat pro závazky
 description: Tohle téma popisuje, jako auditovat faktury a klíčová data pro závazky.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ac1e9d8c5255b8347c9563ce9ea846933c0c9dd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441040"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815229"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Auditování faktur a klíčových dat pro závazky
 
@@ -62,3 +59,6 @@ Tato procedura používá ukázkovou společnost USMF. Manažer závazků nebo o
 9. V podokně akcí klikněte na položku **Přehled**.
 10. Klikněte na položku **Podrobnosti párování**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

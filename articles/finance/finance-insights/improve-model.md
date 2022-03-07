@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646072"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009361"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Vylepšit model předpovědi (preview)
 
@@ -42,19 +41,19 @@ Pokud vaše organizace vyžaduje pouze dva výsledky, změňte prahové hodnoty 
 
 ## <a name="select-fields"></a>Vybrat pole
 
-Při výběru polí, která chcete zahrnout do modelu, mějte na paměti, že seznam obsahuje všechna dostupná pole v entitě Common Data Service, která je mapována na data v datovém jezeře Azure. Některá z těchto polí by **neměla** být vybrána. Pole, která by neměla být vybrána, spadají do jedné ze tří kategorií:
+Při výběru polí, která chcete zahrnout do modelu, mějte na paměti, že seznam obsahuje všechna dostupná pole v tabulce Microsoft Dataverse, která je mapována na data v datovém jezeře Azure. Některá z těchto polí by **neměla** být vybrána. Pole, která by neměla být vybrána, spadají do jedné ze tří kategorií:
 
-- Pole je povinné pro entitu Common Data Service, ale v datovém jezeře pro ni neexistují žádná podpůrná data.
+- Pole je povinné pro tabulku Dataverse, ale v datovém jezeře pro ni neexistují žádná podpůrná data.
 - Pole je ID, a proto nemá smysl pro funkci strojového učení.
 - Pole představuje informace, které během predikce nebudou k dispozici.
 
 V následujících částech jsou uvedena pole, která jsou k dispozici pro entity faktury a zákazníka, a seznam polí, která by **neměla** být vybrána pro cvičení. Kategorie, která je zadána pro každé z těchto polí, odkazuje na kategorie v předchozím seznamu.
  
-### <a name="invoice-common-data-model-entity"></a>Entita Common Data Model faktury
+### <a name="invoice-dataverse-table"></a>Tabulka faktury Dataverse
 
-Následující obrázek zobrazuje pole, která jsou k dispozici pro entitu faktury.
+Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku faktury.
 
-[![Dostupná pole pro entitu faktury](./media/available-fields.png)](./media/available-fields.png)
+[![Dostupná pole pro tabulku faktury](./media/available-fields.png)](./media/available-fields.png)
 
 Následující pole by pro cvičení neměla být vybrána:
 
@@ -65,11 +64,11 @@ Následující pole by pro cvičení neměla být vybrána:
 - **Záznam zdroje** (kategorie 2)
 - **Zdrojová tabulka** (kategorie 2)
 
-### <a name="customer-common-data-model-entity"></a>Entita Common Data Model zákazníka
+### <a name="customer-dataverse-table"></a>Tabulka zákazníka Dataverse
 
-Následující obrázek zobrazuje pole, která jsou k dispozici pro entitu zákazníka.
+Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku zákazníka.
 
-[![Dostupná pole pro entitu zákazníka](./media/related-entities.png)](./media/related-entities.png)
+[![Dostupná pole pro tabulku zákazníka](./media/related-entities.png)](./media/related-entities.png)
 
 Následující pole by pro cvičení nemělo být vybráno:
 

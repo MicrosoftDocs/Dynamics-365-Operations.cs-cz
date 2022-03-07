@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6febc340f140d0b3a3f08ea32a59d9eb4e6e5204
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 361b61690e9e16a690234ed9319478d864c743e7559746654e4868272de13524
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716461"
 ---
 # <a name="picked-quantity-isnt-sufficient-during-packing-slip-generation"></a>Vydané množství není během generování dodacího listu dostatečné
 
@@ -66,8 +66,8 @@ Následujícím postupem upravte množství řádku nákladu.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
 1. Vyberte náklad, pro který nelze vygenerovat dodací list.
-1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
-1. Na kartě **Řádky nákladu** vyberte řádek nákladu položky, která způsobuje problém.
+1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
+1. Na kartě  **Řádky nákladu** vyberte řádek nákladu položky, která způsobuje problém.
 1. Vyberte **Snížit vydané množství** a upravte vydané množství.
 1. Nastavte pole **Snížit řádek nákladu** tak, aby odráželo úpravy na řádku nákladu.
 
@@ -79,5 +79,5 @@ Chcete-li registraci vyskladnění zrušit, použijte následující postup.
 
 1. Přejděte na **Pohledávky \> Objednávky \> Všechny objednávky**.
 1. Vyberte prodejní objednávku, u které nemůžete zaúčtovat dodací list pro náklad.
-1. Na kartě **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, pro kterou byla provedena registrace vyskladnění.
+1. Na kartě  **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, pro kterou byla provedena registrace vyskladnění.
 1. Vyberte **Aktualizovat řádek \> Vyskladnit** ke zrušení vyskladnění položek.

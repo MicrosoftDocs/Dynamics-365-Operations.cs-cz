@@ -1,128 +1,27 @@
 ---
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
-ms.date: 01/18/2022
+author: ivanv-microsoft
+ms.date: 06/07/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067244"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261766"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
-
-## <a name="version-20150"></a>Verze 2.0.15.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
-
-- Zlepšení výkonu opravou problému s únikem paměti.
-- Opraven problém, kdy se některé hodnoty polí neaktualizovaly správně, když byly vybrány na stránce podrobností.
-
-## <a name="version-20140"></a>Verze 2.0.14.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
-
-- Opraven problém, který deaktivoval výchozí tlačítko Odeslat.
-
-## <a name="version-20130"></a>Verze 2.0.13.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
- 
-- Vylepšené posouvání mezi stránkami s plynulejší animací.
-- Opraveny neintuitivní reakce na pohyby přejetím a občasné zamrzání obrazovky.
-- Vylepšené kombinace textu a pozadí v tmavém režimu pro lepší čitelnost.
-- Opraven problém, kdy se některý text mohl při změně velikosti okna aplikace velmi zmenšit.
-- Opraven problém, který mohl někdy způsobit pád aplikace při skenování čárových kódů.
-- Přidána možnost nahradit posuvník tlačítkem.
-- Opraven problém, který mohl způsobit, že aplikace zobrazila chybovou zprávu „AADSTS7000215: Je poskytnut neplatný tajný klíč klienta“.
-- Opravena animace nápovědy ukazující, jak zavřít stránku pomocí gesta přejetím dolů.
-- Přidána možnost zavřít stránku pomocí krátkého potažení prstem dolů.
-- Opraven problém, kdy se nezobrazovaly názvy rozevíracího seznamu na stránce **Uživatelské nastavení**.
-- Opraven problém s lokalizací, kdy aplikace nerozpoznala čárku (,) jako oddělovač desetinných míst.
-- Vylepšená přístupnost.
-- Opravena navigace na stránce **Nové připojení** pro lepší přístupnost.
-- Opraven problém, kdy se při výběru vstupního pole nezobrazovala softwarová klávesnice (na obrazovce).
-- Opraven problém, který mohl způsobit selhání aplikace, pokud uživatelé rychle změnili velikost okna.
-- Opraven problém, kdy bylo rychlé stisknutí klávesy někdy interpretováno jako dlouhé stisknutí.
-- Opraven problém, kdy mohlo dojít k poškození rozvržení aplikace v důsledku přizpůsobení pole provedeného v Supply Chain Management.
-- Opraven problém, kdy se umístění položek nezobrazovalo správně.
-- Opraven problém související s krátkým výběrem pro pracovní postup variant produktu.
-- Odstraněno zbytečné ověřování polí obsahujících přednastavené výchozí hodnoty.
-- Zlepšení výkonu.
-- Přidáno nové nastavení, které uživatelům umožňuje zvolit způsob filtrování a řazení polí na stránce karty.
-
-## <a name="version-20110"></a>Verze 2.0.11.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
-
-- Přidána podpora pro propagovaná pole.
-- Přidána podpora navigace pomocí hardwarové klávesnice.
-- Vylepšená přístupnost.
-- Vylepšené karty podrobností.
-- Vylepšená obcházení pro kroky položek nabídky.
-- Drobná vylepšení uživatelského rozhraní.
-- Opraven problém, který mohl způsobit pád aplikace při skenování čárových kódů.
-- Byly opraveny různé problémy, které by mohly způsobit, že systém přestal reagovat.
-
-## <a name="version-20100"></a>Verze 2.0.10.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
-
-- Přidána animace při přejetí prstem v seznamech a stránkách.
-- Text se nyní na stránce s chybou připojení zalomí správně.
-- Kombinovaná pole bez výchozích hodnot se nyní zobrazují správně.
-- Informace v oblasti podnadpisů se nyní zobrazují pouze na stránce s úplnými podrobnostmi.
-- Prázdná vstupní pole se již na kartě podrobností nezobrazují.
-- Hodnoty potvrzení se již na kartě podrobností neduplikují.
-- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
-
-## <a name="version-2090"></a>Verze 2.0.9.0
-
-Tato verze řeší problém, kdy aplikace mohla přestat reagovat, pokud se uživatelé dostanou na začátek seznamu.
-
-## <a name="version-2080"></a>Verze 2.0.8.0
-
-Tato verze představuje následující nové funkce, opravy a vylepšení:
-
-- Přidána podpora pro [funkce krokových pokynů](mobile-app-titles-instructions.md), která byla představena v Supply Chain Management verze 10.0.21.
-- Přidána animace nápovědy, která uživatelům ukazuje, že překrytí mohou zavírat přejetím dolů.
-- Přidána podpora pro funkční klávesy v seznamech akcí a nabídkách. Uživatelé mohou podržením libovolné funkční klávesy po dobu tří sekund získat seznam dostupných příkazů.
-- Opravený problém, který způsoboval, že se na některých zařízeních zobrazovala následující chybová zpráva: „Nelze najít vhodné zobrazení pro zadanou velikost.“
-- Opraven problém, kdy režim celé obrazovky nefungoval vždy, když byla použita klávesnice na obrazovce.
-- Opravený problém, kdy přejíždění stránky nefungovalo na zařízeních Windows.
-- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
-
-## <a name="version-2070"></a>Verze 2.0.7.0
-
-### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nové funkce, opravy a vylepšení ve verzi 2.0.7.0
-
-- Přidána část do stránky **O aplikaci**, která kontroluje nejnovější vydanou verzi aplikace.
-- Usnadňuje pohyb mezi stránkami.
-- Změněna ikona tlačítka řazení vzestupně/sestupně v pracovním seznamu.
-- Zkrácené marže na kartě **Podrobnosti**, aby se do ní vešlo více informací.
-- Byla použita různá vylepšení výkonu, aby se aplikace v průběhu času nezpomalovala.
-- Pokud je na obrazovce více ovládacích prvků, než kolik se tam vejde, což má za následek nutnost stránkování, ovládací prvek číselníku se již neposouvá stejným způsobem jako stránka.
-- Upřednostňuje se zobrazení poslední naskenované hodnoty před zobrazením názvu úkolu, takže pokud se překrývají, bude název úkolu zkrácen.
-- Byly opraveny různé problémy, které způsobily, že systém přestal reagovat.
-- Text na různých místech již není v některých jazycích oříznut.
-- Aplikace nyní běží ve výchozím nastavení v režimu celé obrazovky.
-- Byl opraven problém, který občas způsoboval ignorování skenů na hlavní stránce u určitých zařízení.
-
-### <a name="known-issues-in-version-2070"></a>Známé problémy ve verzi 2.0.7.0
-
-- Na některých zařízeních se při spuštění aplikace nebo zahájení úkolu zobrazí následující chybová zpráva: „Nelze najít vhodné zobrazení pro zadanou velikost.“ Pokud se vám tato chybová zpráva zobrazí na kterémkoli z vašich zařízení, musíte na tomto zařízení downgradovat mobilní aplikaci Warehouse Management na verzi 2.0.6.0 a počkat na upgrade, dokud nebude vydána další verze aplikace.
 
 ## <a name="version-2060"></a>Verze 2.0.6.0
 
