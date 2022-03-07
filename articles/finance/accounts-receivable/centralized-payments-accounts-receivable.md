@@ -2,28 +2,25 @@
 title: Centralizované platby pohledávek
 description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto není nutné zadat stejné transakce pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 07a715c85bd1dadcf7a9848c4387241b1b866fb2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441128"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841182"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centralizované platby pohledávek
 
@@ -296,3 +293,6 @@ Společnost Fabrikam obdrží platbu ve výši 75,00 od odběratele číslo 4000
 | Pohledávky (Fabrikam-západ)    |              | 75,00         |
 | Pohledávky Fabrikam-východ (Fabrikam-západ) | 25,00        |               |
 | Pohledávky (Fabrikam-západ)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

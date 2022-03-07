@@ -1,12 +1,10 @@
 ---
 title: Kontrola pracovní doby
 description: Tohle téma popisuje kontrolu pracovní doby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742769"
 ---
 # <a name="work-hour-control"></a>Kontrola pracovní doby
 
@@ -68,8 +66,11 @@ Následující snímek obrazovky ukazuje příklad výpočtu **Řízení hodin m
 - Pole **Skutečné hodiny** zobrazuje zaúčtované hodiny na pracovních příkazech. 
 - Pole **Potvrzené hodiny** zobrazuje celkové množství hodin, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
 
-![Příklad výpočtu kontrolního času majetku](media/04-controlling-and-reporting.png)
+![Příklad výpočtu kontrolního času majetku.](media/04-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu hodin je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení hodin** na pevné záložce **Obecné**. Vybraný majetek je automaticky vložen do pole **Majetek** na pevné záložce **Záznamy, které mají být zahrnuty**. Klikněte na tlačítko **OK** v dialogovém okně **Řízení hodin majetku** a zobrazí se výpočet pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,29 +2,28 @@
 title: Pracovní plocha sestavení vytížení
 description: Toto téma popisuje, jak pracovat s pracovní plochou sestavení vytížení.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy
+ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 429a8bac5491a342ecbc8b67c59c71715a4b0889
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 306ca4f77d9c1d4879d750992e51c8b83917839e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646369"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574850"
 ---
 # <a name="load-building-workbench"></a>Pracovní plocha sestavení vytížení
+
+[!include [banner](../../includes/banner.md)]
 
 Pracovní plocha sestavení vytížení vám umožňuje při vytváření vytížení použít strategie vytváření vytížení.
 
@@ -67,3 +66,6 @@ Nyní můžete strategii sestavení vytížení přiřadit k šabloně sestaven�
 1. Zkontrolujte navrhovaná vytížení a navrhované řádky vytížení.
 1. V podokně akcí vyberte **Vytvořit zatížení** a vytvořte vytížení, která jsou založena na řádcích zdrojového dokumentu na záložce s náhledem **Navrhované řádky vytížení**.
 1. Zavřete stránku **Pracovní plocha sestavení zatížení**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

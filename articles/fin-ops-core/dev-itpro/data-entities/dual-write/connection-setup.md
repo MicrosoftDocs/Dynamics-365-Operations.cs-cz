@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: dee6bc52a0967dfd6134258d3a02dc18feb404a5
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744846"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560218"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Pokyny pro nastavení duálního zápisu
 
@@ -138,3 +137,6 @@ Odkazy na příklad a alternativní přístup najdete v části [Příklad](#exa
 Příklad viz [Povolení Customers V3 — mapa tabulek kontaktů](enable-entity-map.md#enable-table-map)
 
 Alternativní přístup založený na objemech dat v každé entitě, která musí spustit počáteční synchronizaci, najdete v části [Úvahy o počáteční synchronizaci](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

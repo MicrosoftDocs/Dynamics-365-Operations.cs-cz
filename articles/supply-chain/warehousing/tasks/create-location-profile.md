@@ -1,28 +1,25 @@
 ---
 title: Vytvoření profilu skladového místa
 description: Toto téma vysvětluje, jak vytvořit profil skladového místa v aplikaci Dynamics 365 Supply Chain Management.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 320059184dc69c4fd34c4b50265ceb142d47a467
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423678"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579993"
 ---
 # <a name="create-a-location-profile"></a>Vytvoření profilu skladového místa
 
@@ -43,3 +40,6 @@ Toto téma vysvětluje, jak vytvořit profil skladového místa v aplikaci Dynam
 10. Vyberte možnost **Ano** v poli **Povolit cyklickou inventuru**.
 11. Zvolte **Uložit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,36 +2,30 @@
 title: Funkce a možnosti usnadnění přístupu
 description: Toto téma obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13f035a080eb41b4a69cc31b7275d87a5836c686
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796311"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funkce a možnosti usnadnění přístupu
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma obsahuje informace o funkcích a možnostech usnadnění přístupu v různých verzích aplikace Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Funkce a možnosti usnadnění přístupu poskytují funkční prostředky pro přístup a provádění akcí, aby mohli všichni uživatelé dosáhnout svých cílů. Tato široká škála uživatelů může vyžadovat pomůcky pro usnadnění sluchu, zraku, mobility nebo neurodiverzity.
 
@@ -114,3 +108,6 @@ Chcete-li nastavit atribut **Minimální věku** u datového zdroje videa, postu
 [Přidání stránky se zásadami ochrany osobních údajů](add-privacy-page.md)
 
 [Nahrazení ID uživatelů přidružených ke změnám sledovaných obsahů](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

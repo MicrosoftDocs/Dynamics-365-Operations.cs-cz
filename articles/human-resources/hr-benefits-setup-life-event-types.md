@@ -2,15 +2,12 @@
 title: Konfigurace typů životních událostí
 description: Microsoft Dynamics 365 Human Resources používá typy životní události k definování událostí, které jsou platné k aktualizaci přihlášení zaměstnaneckých výhod.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,21 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44a6848b4a3ed6d5dd00ade27d18cce405f09f94284de4bd39c4c9441abfcd8a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732818"
 ---
 # <a name="configure-life-event-types"></a>Konfigurace typů životních událostí
 
-Microsoft Dynamics 365 Human Resources používá typy životní události k definování událostí, které jsou platné k aktualizaci přihlášení zaměstnaneckých výhod. Například svatba nebo narození dítěte. Každý ID typu životní události lze přidružit pouze k jednomu typu životní události. Vytvoříte-li například ID životní události nazvané Změna adresy, která je přidružená k typu životní události, nelze vytvořit další ID s označením změny adresy zaměstnance a spojit je s typem události změny adresy zaměstnance. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Po vytvoření typů životních událostí je nutné je přidružit k typům plánu. Další informace viz [Vytvoření typů plánů](hr-benefits-setup-plan-types.md).
-
-   > [!NOTE]
-   > Po vytvoření typů životní události je nutné je přidružit k typům plánu. Další informace viz [Vytvoření typů plánů](hr-benefits-setup-life-event-types.md).
+Dynamics 365 Human Resources používá typy životní události k definování událostí, které jsou platné k aktualizaci přihlášení zaměstnaneckých výhod, jako je svatba nebo narození dítěte. Každý ID typu životní události lze přidružit pouze k jednomu typu životní události. Vytvoříte-li například ID životní události nazvané Změna adresy, která je přidružená k typu životní události, nelze vytvořit další ID s označením změny adresy zaměstnance a spojit je s typem události změny adresy zaměstnance. Pokud typ životní události není spojen s typem plánu, typ životní události nespustí životní událost. Další informace viz [Vytvoření typů plánů](hr-benefits-setup-plan-types.md).
 
 ## <a name="create-a-life-event-type"></a>Vytvoření typu životní události
 
@@ -52,7 +46,7 @@ Po vytvoření typů životních událostí je nutné je přidružit k typům pl
 
 ## <a name="view-attached-plans"></a>Zobrazit přiložené plány
 
-Můžete zobrazit seznam plánů, které jsou připojeny k vybranému typu životní události. Události životního cyklu jsou připojeny k typu plánu a typy plánů jsou přidruženy k plánu. 
+Můžete zobrazit seznam plánů, které jsou připojeny k vybranému typu životní události. Události životního cyklu jsou připojeny k typu plánu a typy plánů jsou přidruženy k plánu.
 
 1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **typy životní události**.
 
@@ -67,24 +61,28 @@ Při vytváření typu životní události můžete vybrat některou z následuj
 | Životní událost | Umístění | Aktivační událost |
 | --- | --- | --- |
 | **Změna rodinného stavu** | Pracovník> Profil > osobní údaje > Rodinný stav| Změna v rodinném stavu |
-| **Změna stavu zaměstnání** | <ul><li>Pracovník > Zaměstnání</li><li>Stránka Historie zaměstnání</li></ul> | Změna stavu zaměstnání |
-| **Změna adresy zaměstnance** | <ul><li>Pracovník > Profil > Adresy </li><li>Pracovník > Osobní údaje > Osobní kontaktní > Adresa</li></ul> Přidaná, upravená nebo odstraněná adresa |
-| **Změna rodinného příslušníka** | <ul><li>Pracovník > Profil > Osobní údaje > Osobní kontakty > Přidat nebo odstranit závislou osobu</li><li>Samoobsluha pro zaměstnance</li></ul> | Závislá osoba byla přidána nebo odstraněna. Vztah osobního kontaktu musí být dítě, manžel/ka, druh/družka nebo bývalý manžel/manželka. Aktualizace data **Platné od** aktivuje životní událost. Pokud toto datum neaktualizujete, nebude spuštěna žádná životní událost. |
-| **Narození nebo adopce (závislá osoba)** | <ul><li>Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě</li><li>Samoobsluha pro zaměstnance</li></ul> | Zadány hodnoty do pole **Datum přijetí**. Je požadováno datum narození dítěte. |
+| **Změna stavu zaměstnání** | Pracovník > Zaměstnání<br>Stránka Historie zaměstnání | U pracovníka s existujícím podrobným údajem o zaměstnání vyvolá vytvoření nového pracovního detailu s jiným stavem zaměstnání životní událost.  Aktualizace stávajícího detailu zaměstnání s odlišným stavem zaměstnání také spustí životní událost.  |
+| **Změna adresy zaměstnance** | Pracovník > Profil > Adresy<br>Pracovník > Osobní údaje > Osobní kontaktní > Adresa | Změna adresy. Ke spuštění životní události musí být primární adresa. |
+| **Změna rodinného příslušníka** | Pracovník > Profil > Osobní údaje > Osobní kontakty<br>Samoobsluha pro zaměstnance | Přidejte osobní kontakt, určete ho jako závislou osobu a definujte **Platnost od**. Aktualizujte údaj závislého osobního kontaktu **Platnost do**. Vztah osobního kontaktu musí být dítě, manžel/ka, druh/družka nebo bývalý manžel/manželka.  |
+| **Narození nebo adopce (závislá osoba)** | Pracovník > Profil > Osobní údaje > Osobní kontakty<br>Samoobsluha zaměstnanců > Upravit osobní údaje > Osobní kontakty | Přidá se nebo aktualizuje **Datum narození** nebo **Datum adopce**. Je požadováno **Datum narození** dítěte. |
 | **Ztráta pokrytí (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> ztráta pokrytí | **Ztráta pokrytí** vybraná pro osobní kontakt spolu s **datem platnosti** |
-| Změna zaměstnání druha/družky | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě >Zaměstnaná. | <ul><li>Záznam podrobností o závislé osobě vytvořen a pole **Zaměstnaný osobní kontakt** = Ano</li><li>Pole **Zaměstnaný osobní kontakt** změněno (Ano nebo Ne)</li></ul> |
-| **Pracovní volno (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Pracovní volno | <ul><li>Záznam podobností o závislé úrovni vytvořen a pole **EhrLOAEffectiveDate** vyplněno</li><li>**personPrivateDetails.EhrIsLOA** změněno (ano nebo ne)</li><li>**personPrivateDetails. EhrLOAEffectiveDate** je změněno.</li></ul> |
-| **Změna pokrytí (pozice)** | <ul><li>Pracovník -> Přiřazení pozice > Přiřazení pozic pracovníka</li><li>Pozice > Pozice</li></ul> | <ul><li>Změna na pozici v záznamech přiřazení pozice pracovníka</li><li>Změna přiřazení pracovníka na pozici</li></ul> |
-| **Zdravotní péče (zaměstnanec / závislá osoba)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Datum účinnosti zdravotní péče | Není automaticky spuštěno, pokud osobní kontakt zadá datum platnosti. |
-| **Soudně nařízená podpora** | Pracovník > Profil > osobní údaje > Osobní kontakty > Závislá osoba > Podpora nařízená soudem (QMSCO/QDRO a data platnosti | Neaktivuje automatické aktualizace. Neovlivňuje způsobilost; zaznamenává životní událost. |
-| **Zemřel/a** | Pracovník> Profil > osobní údaje > Datum úmrtí | Je zadáno datum úmrtí |
-| **Důkaz pojištění** | <ul><li>Pracovník > Pracovník > Verze > Historie zaměstnání > Kalendář > Správce dat > Podrobnosti o zaměstnanecké výhodě</li><li> Pracovník > Zaměstnání > Podrobnosti zaměstnaneckých výhod> Datum ověření</li></ul> | <ul><li>Pracovník zadá datum ověření.</li><li>Pracovník nastaví pole EvidenceOfInsurability na hodnotu **Ano**.</li></ul> |
-| **Příjemce** | Pracovník > Profil > Osobní údaje > Osobní kontakty | Je přidán osobní kontakt a jsou zadány hodnoty do polí **Příjemce** a **Datum účinnosti**. Osobní kontakt musí být typu **Dítě**, **Manžel/ka**, **DomesticPartner**, **Sourozenec**, **FamilyContact**, **OtherContact**, **Parent**, **BeneficiaryEstate**, **BeneficiaryOrg** nebo **BeneficiaryTrust**. |
-| **Lékařská péče zaměstnance** | Pracovník > Pracovník > Verze > Historie zaměstnání > Kalendář > Správce dat > Podrobnosti o zaměstnanecké výhodě | <ul><li>**EhrMedicareEligibilityDate** je změněna.</li><li>**MedicareEligibile** je nastavena na **Ano**</li></ul> |
-| **Narozeniny** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě >Datum narození | Bylo přidáno nebo aktualizováno datum narození (ne po zpracování změny životní události). Příklad: Pokud jsou **možnosti nároku na osobní kontakt** dítěte nastaveny na věk: 26 v nastavení > Výhody > Možnosti nároku osobního kontaktu a v případě, že zaměstnanci HR zpracovávají změny události životního cyklu, zobrazí se zpráva s upozorněním, že závislost není nadále oprávněná pro pokrytí. |
-| **Změna nároku pracovníka (netýká se USA)** | <ul><li>Pracovník > Zaměstnání</li><li>Pracovník > pracovník > verze > Historie zaměstnání</li></ul> | <ul><li>Může se změnit typ zaměstnance, kategorie zaměstnání nebo pět polí nároku podle uživatele.</li><li>Změny **HcmEmploymentDetail.EhrEmploymentType** (zpracované jen pro *změněné* záznamy podrobností o zaměstnání, nezpracované pro *nové* záznamy o zaměstnání, jako opětovné přijetí do pracovního poměru a výpověď)</li></ul> |
-| **Nové přepsání nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Použití události zpracování životního cyklu | EhrBenefitEligibilityRuleOverride.ValidFrom |
-| **Změna přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Použití zpracování události životního cyklu (zachytí pouze změny polí **ValidFrom** a **ValidTo** v přepisu pravidla způsobilosti) |
-| **Vypršení platnosti přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Použití zpracování životní události. Pokud například upravíte datum vypršení platnosti pravidla způsobilosti plánu na hodnotu 5:00 odp., kdykoliv po 5:00 odp. nebo v následujících dnech, a poté spustíte zpracování změny události životního cyklu, zobrazí se zpráva oznamující, že platnost přepisu pravidla způsobilosti vypršela. |
-| **Nový plán zaměstnaneckých výhod (nespecifický pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Nový | <ul><li>Možnosti způsobilosti jsou přidány do aktuálního plánu.</li><li>Je přidán nový plán s připojenými možnostmi způsobilosti.</li></ul></br></br>Pracovníci HR by v této instanci měli spustit zpracování nároků na události životního cyklu. |
-| **Změna přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Pravidla/možnosti > Pravidla zaměstnaneckých výhod | Použití zpracování nároku na životní událost. Protokolováno, když se v záznamech **EhrBenefitEligibilityRule** změnily následující hodnoty: **UseEmplCategory**, **UseEmplStatus** nebo **UseEmplType**. Aktualizuje pouze transakce životní události, které již existují pro změněné pravidlo nebo kritéria způsobilosti. |
+| Změna zaměstnání druha/družky | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě >Zaměstnaná | Vytvoření osobního kontaktu a nastavení **Zaměstnaná** na **Ano**. Aktualizace osobního kontaktu a změna hodnoty **Zaměstnaná**.  |
+| **Pracovní volno (manžel/ka nebo druh/družka)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Pracovní volno | Byl vytvořen osobní kontakt a je definováno **Datum účinnosti pracovního volna**. Je aktualizováno **Pracovní volno** osobního kontaktu. Je aktualizováno **Datum platnosti pracovního volna** osobního kontaktu.  |
+| **Změna pokrytí (pozice)** | Pracovník -> Přiřazení pozice > Přiřazení pozic pracovníka<br>Pozice > Pozice | Změna na pozici v záznamech přiřazení pozice pracovníka. Změna přiřazení pracovníka na pozici. |
+| **Změna pokrytí (mzda)** | Pracovník > Kompenzace > Fixní plán<br>Pracovník > Osobní údaje > Roční plat zaměstnaneckých výhod | Pokud není povolena Správa výhod > Sdílené parametry lidských zdrojů> Výhody> Roční plat výhod, aktualizace Pracovník > Odměny > Pevný plán vytvoří životní událost. Pokud je povolena Správa výhod > Sdílené parametry lidských zdrojů> Výhody> Roční plat výhod, aktualizace Pracovník > Osobní informace > Roční plat zaměstnaneckých výhod vytvoří životní událost. |
+| **Zdravotní péče (zaměstnanec / závislá osoba)** | Pracovník > Profil > Osobní údaje > Osobní kontakty > Podrobnosti o závislé osobě> Datum účinnosti zdravotní péče | Přidávání nebo aktualizace data **Platnost Medicare** osobního kontaktu vytváří tuto životní událost. |
+| **Soudně nařízená podpora** | Pracovník > Profil > osobní údaje > Osobní kontakty > Závislá osoba > Podpora nařízená soudem (QMSCO/QDRO a data platnosti | Při vytváření osobního kontaktu bude vytvořena životní událost, pokud **Soud nařídil podporu** je **Ano**. Aktualizace **Soud nařídil podporu** nebo **Soudem nařízené datum vypršení platnosti** spustí také životní událost. |
+| **Zemřel/a** | Pracovník> Profil > osobní údaje > Datum úmrtí | Je zadáno nebo aktualizováno datum úmrtí. |
+| **Důkaz pojištění** | Pracovník > Pracovník > Verze > Historie zaměstnání > Kalendář > Správce dat > Podrobnosti o zaměstnanecké výhodě | **Důkazy o pojistitelnosti** je nastaveno na **Ano**. Je definováno **Datum ověření důkazu o pojistitelnosti**. |
+| **Příjemce** | Pracovník > Profil > Osobní údaje > Osobní kontakty | Je přidán osobní kontakt a jsou zadány hodnoty do polí **Příjemce** a **Datum účinnosti**. Osobní kontakt musí být typu **Dítě**, **Manžel/ka**, **DomesticPartner**, **Sourozenec**, **FamilyContact**, **OtherContact** nebo **Rodič**. |
+| **Lékařská péče zaměstnance** | Pracovník > Pracovník > Verze > Historie zaměstnání > Kalendář > Správce dat > Podrobnosti o zaměstnanecké výhodě | **Nárok na Medicare** je nastaveno na **Ano**. **Datum nároku na Medicare** je změněno. |
+| **Narozeniny** | Správa výhod > Zpracování změn životních událostí | Tyto životní události jsou vytvořeny z **Zpracování změn životních událostí**. Proces analyzuje zvolené období a právní subjekt a hledá přidružené pracovníky. Vypočítá jejich poslední narozeniny a vytvoří životní událost narozenin, pokud ještě nebyla vytvořena. |
+| **Změna nároku pracovníka (netýká se USA)** | Pracovník > Zaměstnání<br>Pracovník > pracovník > verze > Historie zaměstnání | Vytvoří životní událost, když:<br><ul><li>Vytváří se nové zaměstnání a existuje předchozí zaměstnání a mění se typ pracovníka.</li><li>Vytváří se nový údaj zaměstnání a existuje předchozí údaj zaměstnání a mění se typ zaměstnání nebo kategorie zaměstnání.</li><li>Je definována aktualizace záznamu o zaměstnání a jiného typu pracovníka.</li><li>Je zadána aktualizace podrobného záznamu zaměstnání a jiného typu nebo kategorie zaměstnání.</li></ul> |
+| **Nové přepsání nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Použití události zpracování životního cyklu<br>Vytvoření nového přepisu způsobilosti plánu výhod pro pracovníka spustí tuto životní událost.<br>BenefitEligibilityRuleOverride.ValidFrom. |
+| **Změna přepisu pravidla nároku (nespecifické pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Zaměstnanecké výhody > Přepis pravidla nároku | Aktualizace **Platnost od** nebo **Platnost do** na přepsání způsobilosti plánu výhod spustí tuto životní událost. |
+| **Vypršení platnosti přepisu pravidla nároku (nespecifické pro USA)** | Správa výhod > Zpracování změn životních událostí  | Tyto životní události jsou vytvořeny z **Zpracování změn životních událostí**. Proces analyzuje zvolené období a právní subjekt a hledá přidružená přepsání nároku na plán výhod. Vytvoří životní události, pokud vypršela platnost přepsání. |
+| **Nový plán zaměstnaneckých výhod (nespecifický pro USA)** | Pokročilé lidské zdroje > Výhody > Plány > Nový | Možnosti způsobilosti jsou přidány do aktuálního plánu. Je přidán nový plán s připojenými možnostmi způsobilosti.</br></br>Pracovníci HR by v této instanci měli spustit zpracování nároků na události životního cyklu. |
+| **Změna přepisu pravidla nároku (nespecifické pro USA)** | Správa výhod > Pravidla způsobilosti | Použití zpracování nároku na životní událost. Protokolováno, když se v záznamech **BenefitEligibilityRule** změnily následující hodnoty: **UseEmplCategory**, **UseEmplStatus** nebo **UseEmplType**. Aktualizuje pouze transakce životní události, které již existují pro změněné pravidlo nebo kritéria způsobilosti. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

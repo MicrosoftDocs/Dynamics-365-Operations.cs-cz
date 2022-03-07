@@ -2,28 +2,27 @@
 title: Úprava vztahů podřízenosti pro určitou pozici
 description: Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnance.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae8ca5b20f331709e9fc1d9ae3b5f350e5c19ab
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78410347e7e6cf67f692c7e9193419ffd87e3057
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417647"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6057085"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Úprava vztahů podřízenosti pro určitou pozici
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,3 +43,6 @@ Tento postup popisuje, jak změnit vykazování vztahu pro určitého zaměstnan
 12. V poli Nadřízená pozice zadejte nebo vyberte hodnotu.  Příklad: 000437
 13. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

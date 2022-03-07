@@ -1,29 +1,26 @@
 ---
 title: Moduly správy přepravy
 description: Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy.
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424182"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580113"
 ---
 # <a name="transportation-management-engines"></a>Moduly správy přepravy
 
@@ -46,8 +43,7 @@ Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozic
 | **Typ účtu dopravného**            | Standardizuje fakturu za přepravu a řádky účtu dopravného a používá se při automatickém párování účtu dopravného.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jaké moduly musí být nakonfigurovány pro výpočet sazby dodávky?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jaké moduly musí být nakonfigurovány pro výpočet sazby dodávky?
 
 K vypočítání sazby pro určitého dopravce je nutné nakonfigurovat několik modulů správy přepravy. **Výpočet přepravních sazeb** je sice vyžadován, ale pro podporu **Výpočet přepravních sazeb** mohou být nutné také ostatní moduly. Například **Výpočet přepravních sazeb** slouží k načtení dat z **Výpočet kilometrovného** pro výpočet sazby za kilometráž mezi zdrojem a cílem.
 
@@ -65,8 +61,7 @@ Ve většině případů můžete klepnout na tlačítko **Parametry** ve formul
 |  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi.                        |
 | <em>PřidělovacíStroj</em> |                        Modul pro výpočet rozdělení nákladů, který identifikuje záznam ve výpočtu rozdělení nákladů v databázi.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
 
 Moduly správy přepravy, které pracují s daty, která jsou definovány v rámci Supply Chain Management, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
 
@@ -89,7 +84,7 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | **Modul zóny**                                | Vyžaduje nastavení metadat přímo pro hlavní zónu.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Modul mezioperačního času** a **Modul kilometrovného** | Načte metadata přímo z formuláře pro nastavení konfigurace modulu pro výpočet kilometrovného.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Příklad metadat v modulu pro výpočet přepravních sazeb** Modul správy přepravy vyžaduje identifikaci původní adresy, cílového státu a země/oblasti a počáteční a koncový bod dodávky. Po použití těchto požadavků budou metadata vypadat jako údaje v následující tabulce. Tabulka obsahuje také informace o tom, jaký typ vstupních dat je zapotřebí.
+  **Příklad metadat v modulu pro výpočet přepravních sazeb** Modul správy přepravy vyžaduje identifikaci původní adresy, cílového státu a země/oblasti a počáteční a koncový bod dodávky. Po použití těchto požadavků budou metadata vypadat jako údaje v následující tabulce. Tabulka obsahuje také informace o tom, jaký typ vstupních dat je zapotřebí.
 -   Definujte tuto informaci pod **Správa přepravy** &gt; **Nastavení** na stránce **Typ základu sazby**.
 
 | Klasifikace | Jméno                          | Typ pole | Datový typ | Typ vyhledávání    | Povinné |
@@ -98,4 +93,13 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | 2        | Cílový stát             | Přiřazení | Řetězec    | Státní          |           |
 | 3        | Cílové PSČ | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 4        | Cílové koncové PSČ   | Přiřazení | Řetězec    | PSČ    | Vybrané  |
-| 5        | Cílová země           | Přiřazení | Řetězec    | Země / oblast |           |
+| 5        | Cílová země           | Přiřazení | Řetězec    | Země nebo oblast |           |
+
+### <a name="whitepaper"></a>Dokument Whitepaper
+
+Chcete-li získat další informace, stáhněte si následující dokument whitepaper (napsaný na podporu AX2012, ale stále platí pro Dynamics 365 Supply Chain Management)
+
+- [Moduly správy přepravy](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

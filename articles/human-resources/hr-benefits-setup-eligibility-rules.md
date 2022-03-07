@@ -2,7 +2,7 @@
 title: Konfigurace pravidel a možností nároků
 description: Nastavte pravidla a možnosti nároků ve správě zaměstnaneckých výhod v Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 872b5cface7af19e2ef970e624c0cb5ce14e75b1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417584"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466127"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurace pravidel a možností nároků
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Po nakonfigurování nezbytných parametrů pro správu výhod v Microsoft Dynamics 365 Human Resources můžete vytvářet pravidla způsobilosti, sady, období a programy, které budete přidružovat k plánům zaměstnaneckých výhod.
 
@@ -176,3 +178,6 @@ Programy jsou sadou plánů zaměstnaneckých výhod, které sdílejí společno
    | **Pravidla způsobilosti** | Vyberte pravidla způsobilosti, která chcete použít pro program zaměstnaneckých výhod. Pravidla způsobilosti se definují na kartě **Pravidla způsobilosti** na této stránce. |
    
 4. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

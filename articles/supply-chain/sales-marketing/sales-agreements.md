@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7f13b925dc2d42c1a0d79b0bafb47e4280af7ff
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423739"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231785"
 ---
 # <a name="sales-agreements-overview"></a>Přehled prodejních smluv
 
@@ -113,3 +112,6 @@ Můžete kopírovat finanční dimenze, záhlaví dokladů nebo jednotlivé řá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

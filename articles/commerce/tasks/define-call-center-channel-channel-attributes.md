@@ -2,25 +2,22 @@
 title: Vytvoření kanálů kontaktního střediska a definování atributů kanálu
 description: Tento postup vás provede vytvářením nového kanálu a definováním atributů kanálu.
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2f99029195a8b783f0d12990d4e8bab0bb348d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 444ffddab3df2d937725b9e1f3145eaece3db12844f4fb464f06a82db366579d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716802"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>Vytvoření kanálů kontaktního střediska a definování atributů kanálu
 
@@ -100,3 +97,6 @@ Tento postup vás provede vytvářením nového kanálu commerce a definováním
 65. Klikněte na položku Uložit.
 66. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Kontrola inkasních informací
 description: Toto téma vysvětluje kontrolu informací inkasa společně s různými možnostmi nastavení a transakcemi inkasa.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f643a0e3b231946f9b9d14f9ecb4d0417ae7d423
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441177"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816213"
 ---
 # <a name="review-collections-information"></a>Kontrola inkasních informací
 
@@ -143,3 +140,6 @@ Toto téma vysvětluje kontrolu informací inkasa společně s různými možnos
 5. Vyberte možnost **Zobrazit seznam**.
 - Vyberte účet odběratele nebo ponechejte výchozí hodnotu. Ve výchozím nastavení se jedná o vybraný účet odběratele na stránce se seznamem nebo ve formuláři, ze kterého jste otevřeli tento formulář. Pokud jste formulář otevřeli ze stránky se seznam, odběratelé v seznamu jsou odběratelé, kteří jsou zahrnuti do fondu inkasa použitého na stránce se seznamem.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

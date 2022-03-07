@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d415895bd05b9ab1a2311ab69cc3757047df91db
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424054"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204609"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Import historických dat pro prognózy poptávky
 
@@ -34,28 +33,34 @@ K zajištění přesnosti prognózy poptávky je nutné mít tolik historických
 V pracovním prostoru **Správa dat** lze zobrazit přehled všech polí v entitě.
 
 1. Otevřete pracovní prostor **Správa dat**.
-2. Klikněte na dlaždici **Datové entity**.
+2. Vyberte dlaždici **Datové entity**.
 3. Vyhledejte seznam entit pro možnost **Historická externí poptávka**.
-4. Klikněte na **Cílová pole**. Následující pole entit jsou povinná: site (**DeliveringSiteId**), datum (**DemandDate**), množství (**DemandQuantity**) a číslo položky (**ItemNumber**) nebo alokační klíč položky (**ProductAllocationKeyId**).
+4. Vyberte **Cílová pole**. Následující pole entit jsou povinná: site (**DeliveringSiteId**), datum (**DemandDate**), množství (**DemandQuantity**) a číslo položky (**ItemNumber**) nebo alokační klíč položky (**ProductAllocationKeyId**).
 
 Pokud chcete používat datovou entitu, musíte mít soubor Microsoft Excel nebo soubor ve formátu CSV, který obsahuje historická data poptávky. Tento příklad ukazuje, jak importovat data ze souboru CSV.
 
+Další informace o tom, jak importovat data, včetně toho, jak vyčistit data po importu, najdete v části [Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) a jsou to související témata.
+
 ## <a name="example"></a>Příklad
 
-Jako příklad můžete použít následující soubor: Stáhněte si článek [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Tento soubor obsahuje historická data poptávky pro položku D0001. Obsahuje pouze následující povinná pole: site, množství a data poptávky.
+Jako příklad můžete použít následující soubor: Stáhněte si článek [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). Tento soubor obsahuje historická data poptávky pro položku D0001. Obsahuje pouze následující povinná pole: site, množství a data poptávky.
 
 1. Vyberte společnost do které chcete importovat historická data.
 2. Otevřete pracovní prostor **Správa dat**.
-3. Klikněte na dlaždici **Import**.
+3. Vyberte dlaždici **Import**.
 4. Zadejte název projektu importu, například **Import historické poptávky pro položku D0001**.
 5. V poli **Formát zdrojových dat** vyberte formát souboru, který importujete. K importu souboru HistoricalDemandData v tomto příkladu vyberte **CSV**.
 6. V poli **Název entity** vyberte **Historická externí poptávka**.
 7. Uložte si soubor do počítače a poté jej odešlete.
-8. Klikněte na **Importovat**.
+8. Vyberte **Import**.
 9. Automaticky se otevře stránka **Souhrn spuštění**. Ověřte importovaná data na stránce.
 
 Po importu historických dat poptávky lze generovat prognózu poptávky.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)
+[Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)  
+[Přehled úloh importu a exportu dat](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

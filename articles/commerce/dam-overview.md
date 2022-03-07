@@ -2,36 +2,30 @@
 title: Přehled správy digitálního majetku
 description: Toto téma poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 73c41d97727c461a959d05e76c27efa49e9b5775
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594349"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983179"
 ---
-# <a name="digital-asset-management-overview"></a>Přehled správy digitálního majetku
+# <a name="digital-asset-management-overview"></a>Přehled správy digitálních aktiv
 
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled správy digitálního majetku v konfigurátoru webu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Knihovna médií pro konfigurátor webu Dynamics 365 Commerce nabízí funkce správy digitálních aktiv, včetně podpory následujících funkcí:
 - Obrazové materiály
@@ -60,3 +54,6 @@ Funkce digitálních materiálů a správy jsou umístěny v konfigurátoru webu
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

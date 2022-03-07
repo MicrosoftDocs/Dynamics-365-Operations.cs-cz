@@ -2,8 +2,11 @@
 title: Funkce elektronického výkaznictví ROUNDDOWN
 description: Toto téma obsahuje obecné informace o použití funkce ROUNDDOWN elektronického výkaznictví.
 author: NickSelin
+manager: kfend
 ms.date: 12/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77186dc4d607f419149e4001a7404afba9e80fc7ec2528b840261a329a1e7872
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9221476c1c12a7cc3fe2367cdee3ad44e5cbe381
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747290"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686875"
 ---
 # <a name="rounddown-er-function"></a>Funkce elektronického výkaznictví ROUNDDOWN
 
@@ -64,6 +67,3 @@ Tato funkce se chová jako [ROUND](er-functions-mathematical-round.md), ale vžd
 ## <a name="additional-resources"></a>Další zdroje
 
 [Matematické funkce](er-functions-category-mathematical.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

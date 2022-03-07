@@ -1,12 +1,10 @@
 ---
-title: Odeslat obrázky
-description: Toto téma popisuje, jak odeslat obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
+title: Odeslání obrázků
+description: Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757391"
 ---
-# <a name="upload-images"></a>Odeslat obrázky
+# <a name="upload-images"></a>Odeslání obrázků
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak odeslat obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
+Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 
 Knihovna médií pro konfigurátor webu Commerce umožňuje odesílat obrázky buď jednotlivě, nebo hromadně pomocí složek. Vždy byste měli odeslat verzi obrázku s nejvyšším rozlišením a kvalitou, protože komponenta pro změně velikosti obrázku automaticky optimalizuje obrázek pro různá zobrazení a jejich zarážky.
 
@@ -58,7 +54,8 @@ Výchozí zásady vytváření názvů se liší podle kategorie:
 - Obrázky zaměstnanců by měly mít název **"\{/Pracovníci/\}WorkerNumber.** jpg"
 - Obrázky produktu by měly mít název **"\{/Produkty/\}ProductNumber _000_001.** png"
     - 001 je posloupnost obrázku a může být 001, 002, 003, 004 nebo 005
-- Obrázky variant produktu by měly mít název "**/Produkty/\{ProductNumber\}\_\{Velikost\}\_\{Barva\}\_\{Styl\}\_000_001.png**"
+- Obrázky variant produktu by měly mít název "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - Například: 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## <a name="upload-an-image"></a>Odeslat obrázek
 
@@ -96,3 +93,6 @@ Chcete-li hromadně odeslat složku obrázků v rámci konfigurátoru webu, post
 [Přizpůsobení ohniska obrázku](dam-custom-focal-point.md)
 
 [Nahrání a obsloužení statických souborů](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

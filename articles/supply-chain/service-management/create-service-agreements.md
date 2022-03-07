@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f883d5b312c042a995e30998fc24da5b1c02f22a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965951"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470850"
 ---
 # <a name="create-service-agreements"></a>Vytváření servisních smluv
 
@@ -33,8 +33,8 @@ Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení pro
 ## <a name="create-a-service-agreement-from-service-management"></a>Vytvoření servisní smlouvy z modulu Řízení servisu
 
 1. Přejděte na **Správa servisu**.
-2. Kliknutím na **Servisní smlouvy** vytvořte nový řádek servisní smlouvy v záhlaví stránky. 
-3. Klepněte na možnost **Nový**. Zadejte popis, vyberte odkaz na projekt v poli **ID projektu** a vyplňte zbývající pole a řádky servisní smlouvy. Klikněte na tlačítko **Uložit**.
+2. Výběrem možnosti **Servisní smlouvy** vytvoříte nový řádek servisní smlouvy v záhlaví stránky. 
+3. Zvolte **Nové**. Zadejte popis, vyberte odkaz na projekt v poli **ID projektu** a vyplňte zbývající pole a řádky servisní smlouvy. Zvolte **Uložit**.
 4. Klikněte na kartu **Vztahy** a výběrem možnosti **Předměty servisu** nebo **Servisní úlohy** vytvořte vztahy předmětů servisu nebo vztahy servisních úloh pro servisní smlouvu. Servisní předměty a úlohy, pro které jste vytvořili vztahy, lze přidružit k řádkům na servisní smlouvě.
 5. V dolní části stránky vytvořte řádky servisní smlouvy. Tuto akci provedete zkopírováním řádků ze šablony servisu, použitím jiné servisní smlouvy nebo ručním vytvořením řádků servisní smlouvy.
 
@@ -45,14 +45,14 @@ Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení pro
 
 1. Ze stránky **Servisní smlouvy** přidejte mřížce řádků řádek servisní smlouvy. 
 2. Do řádku servisní smlouvy zadejte příslušné informace. 
-3. Řádek uložte stiskem kláves **CTRL+S** a zavřete stránku.
+3. Výběrem možnosti **Uložit** uložte řádek a poté zavřete stránku.
 
 ## <a name="create-a-service-agreement-from-project"></a>Vytvoření servisní smlouvy z projektu
 
-1. Klikněte na **Řízení a účetnictví projektů**.
-2. Klikněte na **Všechny projekty**.
+1. Vyberte možnost **Řízení projektů a účetnictví**.
+2. Vyberte **Všechny projekty**.
 3. Vyberte projekt ze seznamu.
-4. V **podokně akcí** klikněte na **Spravovat**. Ve skupině **Nová akce** klikněte na tlačítko **Servis** a vyberte **Servisní smlouva**.
+4. V **podokně akcí** vyberte **Spravovat**. Ve skupině **Nová akce** vyberte **Servis** a vyberte **Servisní smlouva**.
 5. Postupujte podle kroků v části s názvem **Vytvoření servisní smlouvy** popsané dříve v tomto tématu pro zadání odkazu na projekt.
 
 
@@ -61,3 +61,6 @@ Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení pro
 [Přehled přípravy a zřízení servisních smluv](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

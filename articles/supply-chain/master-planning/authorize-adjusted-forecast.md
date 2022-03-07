@@ -2,11 +2,9 @@
 title: Autorizovat upravenou prognózu
 description: Ne všechna data prognózy musí být ověřeny okamžitě. Tento článek vysvětluje, jak můžete určit období, pro které je prognóza autorizována. Také vysvětluje, jak lze autorizovat předpovědi pro určité společnosti a modely prognóz.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanImportForecastDialog
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ab8558f25f5ffd3b7eb3e1bc5680b1a1f8d5139
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 67098f6008086788ef8814f45fd0dd5add990460
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961421"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813692"
 ---
 # <a name="authorize-an-adjusted-forecast"></a>Autorizovat upravenou prognózu
 
@@ -50,3 +48,6 @@ Ujistěte se, že rozumíte způsobu, jakým pole **Uložit ruční úpravy prov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

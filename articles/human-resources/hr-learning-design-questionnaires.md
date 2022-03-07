@@ -1,33 +1,35 @@
 ---
-title: Návrh dotazníků
-description: Tento článek popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Vytvoření dotazníků
+description: Toto téma popisuje postup vytváření dotazníku.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065194"
 ---
-# <a name="design-questionnaires"></a>Návrh dotazníků
+# <a name="create-questionnaires"></a>Vytvoření dotazníků
 
-Tento článek popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí. 
 
 Pečlivě navržený dotazník pomáhá zvyšovat kvalitu dat, která shromažďujete. Díky promyšlenému návrhu můžete lépe a ve vhodný okamžik vybrat požadované otázky k dotazníku. Následující body vám pomohou naplánovat efektivní dotazník:
 
@@ -64,7 +66,7 @@ Některé předpoklady musí být stanoveny před vytvořením dotazníků, odpo
 
 ### <a name="questionnaire-types"></a>Typy dotazníku
 
-Typy dotazníků jsou povinné a musí být přiřazeny při vytváření dotazníku. Typy dotazníku umožňují snadněji spravovat a klasifikovat dotazníky. Typy dotazníků slouží ke klasifikaci dotazníků a jejich odlišení od sebe navzájem. Pokud máte například několik dotazníků, ze kterých můžete vybírat, můžete je filtrovat podle typu a usnadnit tak hledání specifického dotazníku. Následuje několik příkladů typů dotazníku:
+**Typy dotazníků** jsou povinné a musí být přiřazeny při vytváření dotazníku. **Typy dotazníků** umožňují snadněji spravovat a klasifikovat dotazníky. Typy dotazníků slouží ke klasifikaci dotazníků a jejich odlišení od sebe navzájem. Pokud máte například několik dotazníků, ze kterých můžete vybírat, můžete je filtrovat podle typu a usnadnit tak hledání specifického dotazníku. Následuje několik příkladů typů dotazníku:
 
 -   Rozvoj lidských zdrojů
 -   Průzkumy odběratelů
@@ -72,9 +74,9 @@ Typy dotazníků jsou povinné a musí být přiřazeny při vytváření dotazn
 
 ### <a name="question-types"></a>Typy otázek
 
-Typy otázek jsou povinné a musí být přiřazeny při vytváření otázky. 
+**Typy otázek** jsou povinné a musí být přiřazeny při vytváření otázky. 
 
-Typy otázek se používají k rozdělení otázek do kategorií pro účely vykazování. Typy otázek také usnadňují hledání otázek, protože typy slouží jako filtry na stránce **Otázky**. Následuje několik příkladů typů otázek:
+**Typy otázek** se používají k rozdělení otázek do kategorií pro účely vykazování. **Typy otázek** také usnadňují hledání otázek, protože typy slouží jako filtry na stránce **Otázky**. Následuje několik příkladů typů otázek:
 
 -   Lidské zdroje
 -   Řízení podniku
@@ -93,7 +95,7 @@ Dříve než začnete definovat vaše data, měli byste definovat veškeré para
 ## <a name="questionnaire-components"></a>Komponenty dotazníku
 Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový. Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
 
-[![Komponenty dotazníku](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Komponenty dotazníku.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Skupiny odpovědí a odpovědi
 
@@ -106,7 +108,7 @@ Chcete-li poskytnout seznam možných odpovědí pro uzavřené otázky, můžet
 
 Skupiny odpovědí a odpovědi jsou součásti hlavní části informací, ze kterých jsou otázky vytvořeny. Po vytvoření skupiny odpovědí můžete skupinu odpovědí přiřadit k otázce v poli **Skupina odpovědí** na stránce **Otázky**. 
 
-Skupinu odpovědí lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
+**Skupinu odpovědí** lze použít pro více otázek ve jednom dotazníku a pro více dotazníků. 
 
 > [!NOTE]
 > Pokud změníte textu odpovědi ve skupinách odpovědí, které již byly použity u vyplněných dotazníků, data může být obtížné vyhodnotit a výsledky dotazníku mohou být neplatné. Pokud musíte změnit skupinu odpovědí, zvažte vytvoření nové skupiny odpovědí namísto změny již existující skupiny. Skupiny odpovědí, které byly přiřazeny k určité otázce či odpovědi, nebo které byly zodpovězeny, není možné odstranit.
@@ -172,7 +174,7 @@ V dotazníku nelze odstranit následujících typy otázek:
 
 ### <a name="result-groups"></a>Skupiny výsledků
 
-Při připojování otázek k dotazníku jsou skupiny výsledků volitelné. 
+Při připojování otázek k dotazníku jsou **Skupiny výsledků** volitelné. 
 
 Skupiny výsledků se používají pro výpočet bodů a kategorizaci výsledků dotazníku. Při použití skupin výsledků můžete provádět následující úkoly:
 
@@ -197,7 +199,7 @@ Nastavte více skupin výsledků a vyhodnoťte body, které respondent získá z
 
 Pro každou skupinu výsledků můžete také nastavit jednu nebo více zpráv založených na bodech, které respondent získá po vyplnění dotazníku. Zobrazený text se může lišit v závislosti na výsledku, jehož respondenti dosáhnou ve skupině výsledků. Chcete-li použít zprávy založené na bodech, musíte definovat intervaly bodů a popis každého intervalu. Když respondent získá hodnocení určitého intervalu, bude text zahrnut do sestavy výsledků. 
 
-Vzhledem k tomu, že skupina výsledků souvisí s body, které jsou přiřazeny konkrétní sadě otázek v dotazníku, můžete pro dotazník použít pouze určitou skupinu výsledků.
+Vzhledem k tomu, že skupina výsledků souvisí s body, které jsou přiřazeny konkrétní sadě otázek v dotazníku, můžete pro dotazník použít pouze určitou skupinu výsledků.
 
 #### <a name="example-pointstexts-for-result-group-3"></a>Příklad: Body/text pro skupinu výsledků 3
 
@@ -233,6 +235,8 @@ Chcete-li použít podmíněné otázky a vytvářet hierarchii otázek v dotazn
 
 #### <a name="examples"></a>Příklad
 
-Právnická osoba nabízí zboží i služby zákazníkům. V takovém případě obvykle dochází k tomu, že někteří odběratelé kupují pouze zboží, jiní pouze služby a někteří zboží i služby. Proto pokud právnická osoba distribuuje průzkum spokojenosti zákazníků, použije na dotazník podmíněnou strukturu, aby odběratelé, kteří nakupují pouze služby, nemuseli odpovídat na otázky o zboží. 
+Právnická osoba nabízí zboží i služby zákazníkům. V takovém případě obvykle dochází k tomu, že někteří odběratelé kupují pouze zboží, jiní pouze služby a někteří zboží i služby. Proto pokud právnická osoba distribuuje průzkum spokojenosti zákazníků, použije na dotazník podmíněnou strukturu, aby odběratelé, kteří nakupují pouze služby, nemuseli odpovídat na otázky o zboží. 
 
 Případně můžete nastavit dotazník tak, že pokud respondent vybere odpověď A na otázku 1, další v pořadí bude otázka 2. Pokud však respondent vybere odpověď B na otázku 1, následuje otázka 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

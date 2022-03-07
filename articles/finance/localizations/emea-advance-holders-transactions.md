@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 262554
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a68c00fc7fc6742da7b2732897fd21e0028f1493
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89522a0cca16e3d2cab660d39ab51ca63364aa4c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407594"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209903"
 ---
 # <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 
@@ -64,3 +63,6 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 
 - [Záloha pro zaměstnance (východní Evropa)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

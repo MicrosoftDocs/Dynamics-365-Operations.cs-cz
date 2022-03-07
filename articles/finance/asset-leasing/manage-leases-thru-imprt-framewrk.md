@@ -2,28 +2,25 @@
 title: Správa leasingů prostřednictvím rámce importu leasingu
 description: Toto téma vysvětluje, jak pomocí rámce importu leasingu upravit více leasingů najednou.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d7a7d2afd8f352bc167ec8c0a354ee4ac0a9e77b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 534584a7da494b427d48b1bc97bf6554d25f4a79d9d62f59ec5f2afb65e67431
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758890"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Správa leasingů prostřednictvím rámce importu leasingu
 
@@ -56,7 +53,7 @@ Funkce porovnání umožňuje porovnat záznam, který importujete, s odpovídaj
 > [!NOTE]
 > Funkce porovnání nefunguje u leasingů, které mají typ zpracování **Přidat záznam**, protože proti tomuto leasingu není co porovnávat.
 >
-> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Porovnat** a vyberte **Porovnat**.
+> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Porovnat**.
 
 U každé entity si můžete prohlédnout rozdíly mezi tím, co je aktuálně v systému, a tím, co je v tabulkách fázování. Pro každou entitu v tabulkách fázování vyberte **Zobrazit rozdíly**. Zobrazí se dialogové okno, které zobrazuje aktuální hodnotu a navrhovanou hodnotu fázování.
 
@@ -65,17 +62,17 @@ Hodnotu fázování můžete také aktualizovat změnou v sloupci **Nová hodnot
 Můžete ověřit leasingy, abyste zajistili, že záznamy lze přenést do systému bez chyb. Před migrací záznamu o leasingu systém spustí několik ověření, aby bylo zajištěno, že bude záznam úspěšně importován. Chcete-li ověřit individuální leasing, vyberte **Ověřit**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Ověřit** a vyberte **Porovnat**.
+> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Ověřit**.
 
 Chcete-li zpracovat individuální leasing, vyberte **Migrace záznamů o lesaingu** na stránce **Importovat záhlaví**. Při migraci leasingu provede systém akci uvedenou v poli **Typ zpracování**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické \> Ověřit** a vyberte **Porovnat**.
+> Chcete-li migrovat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Migrovat**.
 
 Po porovnání leasingu můžete spustit sestavu a zobrazit rozdíly pro každý leasing, který je zahrnut v ID importu. Chcete-li spustit sestavu pro jeden leasing, vyberte tento leasing v datech fázování a poté vyberte **Porovnat a zobrazit sestavu \> Sestava o rozdílech**.
 
 > [!NOTE]
-> Chcete-li ověřit více leasingů najednou, přejděte na **Leasing majetku \> Dotazy a sestavy \> Sestava rozdílů** a vyberte **Porovnat**.
+> Chcete-li porovnat více leasingů najednou, přejděte na **Leasing majetku \> Rámec importu leasingu \> Periodické** a vyberte **Porovnat**. 
 
 ## <a name="set-up-update-fields"></a>Nastavení polí aktualizací
 
@@ -83,3 +80,6 @@ Pokud používáte rámec importu leasingu k aktualizaci leasingu a typ zpracov�
 
 1. Přejděte na **Leasing majetku \> Rámec importu leasingu \> Nastavení \> Aktualizovat výběr pole**.
 2. Na stránce, která se zobrazí, vyberte pole, která chcete aktualizovat, a poté je výběrem zelené šipky přesuňte na seznam **Vybraná pole**. Pouze pole v seznamu **Vybraná pole** lze aktualizovat pomocí sady pro import leasingu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

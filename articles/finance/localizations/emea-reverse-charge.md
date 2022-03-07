@@ -2,25 +2,22 @@
 title: Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 description: Toto téma popisuje určení přenesení daňové povinnosti (reverse charge) pro DPH u evropských zemí, v Saúdské Arábii a Singapuru.
 author: epodkolz
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
-ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4515044"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594712"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanismus přenesení daňové povinnosti pro režim DPH / GST
 
@@ -48,7 +45,6 @@ Abyste mohli mechanismus reverse charge použít, je třeba provést následují
 Doporučujeme používat pro nákupní a prodejní operace samostatné kódy DPH.
 
 <table>
-<body>
 <tr>
 <td><strong>Kód DPH u prodeje</strong></td>
 <td>Vytvořte kód daně z prodeje pro operace prodeje zpětného účtování (<strong>Daň</strong> &gt; <strong>Nepřímé daně</strong> &gt; <strong>Daň z prodeje</strong> &gt; <strong>Kódy daně z prodeje</strong>).
@@ -65,7 +61,6 @@ Skupině DPH položek je třeba přiřadit tento záporný kód DPH a pak při�
 <p>Další informace najdete v následující části &quot;Nastavení skupin DPH a skupin DPH položek.&quot;</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Nastavení skupin DPH a skupin DPH položky
@@ -124,7 +119,7 @@ Při zaúčtování nákupní faktury s reverse charge se vytvoří dvě transa
 
 Následující snímek obrazovky má jedna transakce směr **DPH na vstupu** směru a druhá **DPH na výstupu**. 
 
-![Zaúčtování DPH](media/apac-sau-posted-sales-tax.png)
+![Zaúčtování DPH.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Povolit mechanismus přenesení daňové povinnosti pro funkci schématu DPH/GST
 V pracovním prostoru **Správa funkcí** najděte funkci a vyberte **Povolit**.
@@ -137,3 +132,6 @@ K dispozici budou následující stránky a položky nabídky související s na
  - **Parametry zahraničního obchodu** (**Daň** > **Nastavení** > **DPH** > **Zahraniční obchod** > **Parametry zahraničního obchodu**). Viz [Nastavení vlastností země/oblasti](#Set-up-Country/region-properties).
 
 Zaškrtávací políčko **Stornovací poplatek** bude k dispozici na stránkách **Skupina DPH** a **Zaúčtovaná DPH**. Další informace najdete v částech [Nastavení skupin DPH a skupin DPH položek](#sales-tax-item-sales-tax-groups), [Stornovací poplatek na prodejní faktuře](#reverse-charge-sale) a [Stornovací poplatek na nákupní faktuře](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

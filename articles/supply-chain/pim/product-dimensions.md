@@ -2,16 +2,13 @@
 title: Dimenze produktu
 description: Existuje pět dimenzí produktu – barva, konfigurace, velikost, styl a verze. Kombinujte dimenze produktu ve skupinách dimenzí a přiřazujte skupiny dimenzí k základním produktům. Kombinace dimenzí produktu určuje způsob definování variant produktu.
 author: t-benebo
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 680d5ed929a396bfb2d3c7f05351ab6c93d29256c825c618cb166aac444aa5d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726890"
 ---
 # <a name="product-dimensions"></a>Dimenze produktu
 
@@ -107,7 +104,7 @@ Při testování kompatibility řešení s dimenzí verze hledejte následujíc�
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Mapy:** Pokud některé mapy používají dimenze zásob, musí být odpovídající mapování relací k těmto mapám aktualizováno tak, aby obsahovaly dimenzi verze. V rozšířeném modelu nebo rozšíření tabulky hledejte tabulky, kde pole obsahují rozměry inventáře.
-1. **Microsoft Dynamics 365 Commerce funkčnost:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikacích POS nebo elektronického obchodování. Tyto aplikace specifické pro obchod nebudou podporovat uživatele, kteří prodávají / odesílají nebo vracejí / přijímají zásoby podle dimenze verze. Funkce vyhledávání dostupnosti zásob nerozlišují zásoby podle dimenze verze v obchodních aplikacích. Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
+1. Funkce **Microsoft Dynamics 365 Commerce:** Po zapnutí se dimenze verze zobrazí v celém kódu pro obchod v Dynamics 365 Supply Chain Management. Dimenze verze však zatím není podporována databází kanálu Commerce ani aplikacích POS nebo elektronického obchodování. Tyto aplikace specifické pro obchod nebudou podporovat uživatele, kteří prodávají / odesílají nebo vracejí / přijímají zásoby podle dimenze verze. Funkce vyhledávání dostupnosti zásob nerozlišují zásoby podle dimenze verze v obchodních aplikacích. Toto chování se podobá současnému chování konfigurační dimenze v celém obchodu.
 
 #### <a name="turn-on-the-version-dimension"></a>Zapnout dimenzi verze
 
@@ -122,7 +119,7 @@ Než můžete použít dimenzi verze, musíte ji zapnout ve svém systému. Tato
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Oblasti, kde dimenze verze není podporována
 
-Následující oblasti nepodporují dimenzi verze, protože zavedení této dimenze by způsobilo změny způsobující chyby:
+Následující oblasti nepodporují dimenzi verze (tyto oblasti můžete nadále používat, ale nebudete do nich moci přidávat produkty s verzí (produkty, kde se používá dimenze verze)). Například nemůžete přidat položku verzí do katalogu dodavatele. Je to proto, že přidání produktů s dimenzí verze do těchto oblastí by vedlo ke změnám způsobujícím chybu.
 
 - Měsíční výpis nákladů objektu
 - Mezipaměť výpisu objektu nákladů
@@ -146,3 +143,6 @@ Dimenze verze funguje jako ostatní dimenze produktu. Vzhledem ke své specifick
 
 > [!IMPORTANT]
 > Pokud zapnete a použijete dimenzi verze, některá řešení, která odkazují na rozměry inventáře, přestanou fungovat podle očekávání. Chcete-li tyto problémy potvrdit a opravit, obraťte se na nezávislého dodavatele softwaru (ISV) ohledně řešení, kterých se to týká. Další informace viz [Povelte dimenzi verze](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

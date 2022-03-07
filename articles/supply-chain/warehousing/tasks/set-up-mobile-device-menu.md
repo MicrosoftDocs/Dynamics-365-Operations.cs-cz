@@ -1,28 +1,25 @@
 ---
 title: Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka
 description: Toto téma ukazuje způsob nastavení položky nabídky Mobilní zařízení.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86ccc39cb243354db337a5747701e9731c5ad775
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424025"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565145"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Nastavení položky nabídky v mobilním zařízení pro dokončení práce typu Nákupní objednávka
 
@@ -69,3 +66,6 @@ Toto téma ukazuje způsob nastavení položky nabídky Mobilní zařízení. V 
 5. Vyberte šipku ukazující napravo.
 6. Zvolte **Uložit**.
 7. Zavřete stránku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

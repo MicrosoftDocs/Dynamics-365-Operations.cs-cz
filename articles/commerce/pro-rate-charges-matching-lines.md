@@ -2,16 +2,13 @@
 title: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
 description: Toto téma popisuje další funkce pro výpočet a použití automatických nákladů pro objednávky kanálů Commerce pomocí funkce rozšířených automatických nákladů.
 author: hhaines
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410657"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018599"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
 
@@ -33,7 +30,7 @@ ms.locfileid: "4410657"
 
 Toto téma popisuje funkci pro seskupení automatických nákladů na úrovni řádku a jejich poměrné rozdělení na velkoobchodní prodejní řádky. Tato funkce je k dispozici pro transakce vytvořené v pokladním místu (POS) v aplikaci Retail verze 10.0.1 a prodeje, které byly vytvořeny v kontaktním středisku v aplikaci Retail verze 10.0.2.
 
-Tato funkce je k dispozici pouze tehdy, pokud je funkce [rozšířených automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) zapnuta pomocí možnosti na stránce **Parametry velkoobchodu**. Kromě toho může být rozšířený způsob výpočtu pro automatické náklady použit pouze na maloobchodní prodejní objednávky, které jsou vytvořeny prostřednictvím velkoobchodních kanálů (POS, kontaktní středisko a platforma Dynamics e-Commerce).
+Tato funkce je k dispozici pouze tehdy, pokud je funkce [rozšířených automatických nákladů](/dynamics365/unified-operations/retail/omni-auto-charges) zapnuta pomocí možnosti na stránce **Parametry velkoobchodu**. Kromě toho může být rozšířený způsob výpočtu pro automatické náklady použit pouze na maloobchodní prodejní objednávky, které jsou vytvořeny prostřednictvím velkoobchodních kanálů (POS, kontaktní středisko a platforma Dynamics e-Commerce).
 
 Tato nová funkce poskytuje organizacím větší flexibilitu ve způsobu, jakým jsou automatické náklady na úrovni záhlaví vypočítávány a aplikovány na prodejní transakce.
 
@@ -41,7 +38,7 @@ Ve verzích aplikace, které jsou starší než verze 10.0.1, se automatické n�
 
 Například automatické náklady na úrovni záhlaví jsou definované pro způsob dodání **99** a způsob dodání **11**. Prodejní objednávka je vytvořena a způsob dodání **99** je definován v záhlaví objednávky. Avšak některé řádky prodeje jsou nastaveny tak, aby byly expedovány pomocí způsobu dodání **11**. V takovém případě se zvažují pouze náklady na úrovni záhlaví propojené se způsobem dodání **99** a použijí se na prodejní objednávku.
 
-V aplikaci Commerce mají náklady na úrovni záhlaví další funkci, která umožňuje definovat [konfiguraci vrstvených nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) založenu na hodnotě objednávky. Pokud je například hodnota objednávky mezi 50,00 USD a 200 USD, organizace může chtít účtovat poplatek za přepravu ve výši 5 USD. Pokud je však hodnota objednávky mezi 200,01 USD a 500,00 USD, přepravné může být 4,00 USD.
+V aplikaci Commerce mají náklady na úrovni záhlaví další funkci, která umožňuje definovat [konfiguraci vrstvených nákladů](/dynamics365/unified-operations/retail/configure-call-center-delivery) založenu na hodnotě objednávky. Pokud je například hodnota objednávky mezi 50,00 USD a 200 USD, organizace může chtít účtovat poplatek za přepravu ve výši 5 USD. Pokud je však hodnota objednávky mezi 200,01 USD a 500,00 USD, přepravné může být 4,00 USD.
 
 Některé organizace chtějí výhody výpočtu vrstvených nákladů, která je poskytována s náklady na úrovní záhlaví. Ve scénářích, které zahrnují smíšené způsoby dodání, se však také chtějí ujistit, že vypočítané náklady jsou založeny na shodě se způsobem doručení, který je definován na každém řádku prodeje.
 
@@ -75,7 +72,7 @@ V kontaktním středisku je vytvořena prodejní objednávka a způsob dodání 
 
 V tomto scénáři je celá objednávka vyhodnocena proti tabulce automatických nákladů pro způsob dodání **99**. Celkový součet všech řádků prodeje se používá k určení odpovídající úrovně v konfiguraci automatických nákladů a tyto náklady se použijí na úrovni záhlaví objednávky. V tomto příkladu je celková částka objednávky 165,00 USD a na záhlaví objednávky je použito dopravné 15 USD. Automatické náklady, které jsou nakonfigurovány pro způsob dodání **11** nejsou nikdy odkazovány nebo použity.
 
-V tomto scénáři, pokud zákazník vrátí některé položky na objednávce a pokud [kód nákladů byl nakonfigurován tak, že bude vrácen](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), celkové náklady na úrovni záhlaví se systematicky použijí pro refundaci, i když jsou vráceny pouze některé položky.
+V tomto scénáři, pokud zákazník vrátí některé položky na objednávce a pokud [kód nákladů byl nakonfigurován tak, že bude vrácen](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), celkové náklady na úrovni záhlaví se systematicky použijí pro refundaci, i když jsou vráceny pouze některé položky.
 
 ### <a name="scenario-2"></a>Scénář 2
 
@@ -175,3 +172,6 @@ Pokud je tento způsob výpočtu použit ve scénáři částečného vrácení,
 [Omnikanálové rozšířené automatické náklady](omni-auto-charges.md)
 
 [Povolení a konfigurace automatických nákladů podle kanálu](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

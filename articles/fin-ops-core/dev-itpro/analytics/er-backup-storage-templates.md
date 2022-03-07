@@ -2,11 +2,9 @@
 title: Úložiště záloh šablon ER
 description: V tomto tématu je vysvětleno použití úložiště zálohy elektronického vykazování (ER) pro obnovení šablon.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767870"
 ---
 # <a name="backup-storage-of-er-templates"></a>Úložiště záloh šablon ER
 
@@ -67,19 +65,19 @@ Chcete-li nastavit parametr **Automaticky spustit proceduru obnovení poškozen�
 > [!NOTE]
 > Tento parametr je definován pro konkrétního uživatele uživatele aplikace a protokolovanou společnost.
 
-![Stránka konfigurací elektronického výkaznictví](./media/GER-BackupTemplates-1.png)
+![Stránka konfigurací elektronického výkaznictví.](./media/GER-BackupTemplates-1.png)
 
 Na následujícím obrázku je znázorněn příklad zprávy, která se zobrazí při nastavení parametru **Automatické spuštění procedury obnovy poškozených šablon v dávce** na hodnotu **Zapnuto**.
 
-![Stránka deníku plateb dodavatelů](./media/GER-BackupTemplates-2.png)
+![Stránka deníku plateb dodavatelů.](./media/GER-BackupTemplates-2.png)
 
 Následující ilustrace znázorňuje dávkovou úlohu **Obnovit poškozené šablony ze zálohy interní databáze** na stránce **Dávková úloha**.
 
-![Stránka Dávková úloha](./media/GER-BackupTemplates-3.png)
+![Stránka Dávková úloha.](./media/GER-BackupTemplates-3.png)
 
 Protokol spuštění s dokončenou dávkovou úlohou **Obnovit poškozené šablony ze zálohy interní databáze** obsahuje informace o šablonách, které byly obnoveny z umístění úložiště zálohy do umístění primárního úložiště.
 
-![Stránka historie dávkových úloh](./media/GER-BackupTemplates-4.png)
+![Stránka historie dávkových úloh.](./media/GER-BackupTemplates-4.png)
 
 Ve výchozím nastavení je proces automatického vytváření záložních kopií šablon, které jsou umístěny v konfiguracích formátu ER, zapnutý. Chcete-li zastavit vytváření záložních kopií šablon, nastavte možnost **Zastavit vytváření záložní kopie šablony** na **Ano** na kartě **Přílohy** na stránce **Parametry elektronického vykazování**. Můžete otevřít tuto stránku z pracovního prostoru **Elektronické vykazování**.
 
@@ -87,7 +85,7 @@ Nastavíte-li možnost **Zastavit vytváření záložních kopií** na **Ano** 
 
 Pokud jste upgradovali prostředí na Finance and Operations verze 10.0.5 (říjen 2019) a chcete migrovat do nového prostředí, které obsahuje konfigurace formátu ER, které lze spustit, vyberte možnost **Naplnit úložiště zálohy** na stránce **Parametry elektronického výkaznictví** před tím, než dojde k migraci. Toto tlačítko spustí proces vytváření záložních kopií všech dostupných šablon, aby je bylo možné uložit do umístění úložiště záloh ER pro šablony.
 
-![Stránka parametrů elektronického výkaznictví](./media/GER-BackupTemplates-5.png)
+![Stránka parametrů elektronického výkaznictví.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Ruční zotavení
 
@@ -102,3 +100,6 @@ V modulu Finance and Operations verze 10.0.5 je ukládání záloh šablon ER k 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
 [Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

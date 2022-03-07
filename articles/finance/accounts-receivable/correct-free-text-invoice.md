@@ -2,28 +2,25 @@
 title: Oprava faktury s volným textem
 description: Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf6e7a070d7c151c6ff5d868f4f916359b82683
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f04e70c9afb66be015ce18cebebd711f00d764b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441025"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827571"
 ---
 # <a name="correct-a-free-text-invoice"></a>Oprava faktury s volným textem
 
@@ -51,3 +48,6 @@ Zrušení faktury a opravnou fakturu lze určit dvěma způsoby:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

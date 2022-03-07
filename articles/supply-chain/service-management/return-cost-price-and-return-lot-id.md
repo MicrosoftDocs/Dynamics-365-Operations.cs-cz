@@ -1,12 +1,10 @@
 ---
 title: Nákladová cena vrácení a ID vrácené šarže
 description: Můžete chtít, aby se náklady na vrácené produkty rovnaly nákladům na produkty v době, kdy jste produkty prodali zákazníkovi. To lze provést pomocí **ID vrácené šarže**.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eff30383e06677793313e8abac0339c6032c2a7f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c8c5ad2f7e46ecefd490936b950d2b579faed60b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965823"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580329"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Nákladová cena vrácení a ID vrácené šarže        
 
@@ -111,3 +109,6 @@ Používáte-li pole **ID vrácené šarže** na řádku objednávky k určení 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

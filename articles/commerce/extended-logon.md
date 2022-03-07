@@ -1,30 +1,27 @@
 ---
 title: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
 description: Toto téma zahrnuje možnosti pro nastavení rozšířeného přihlášení pro systém Cloud POS a Retail Modern POS (MPOS).
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410739"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478664"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
 
@@ -62,8 +59,13 @@ Pokud chcete odstranit rozšířené přihlášení přiřazené k pracovníkovi
 
 ## <a name="extending-extended-logon"></a>Rozšíření rozšířeného přihlášení
 
+Rozšířené přihlášení umožňuje, aby implicitně bylo jako jedinečný identifikátor používáno pouze pět významných znaků. Pokud například nakonfigurujete dvě karty s ID „1234567“ a „1234578“, budou obě považovány za „12345“. Můžete vytvořit rozšíření pro podporu více znaků. Podrobný návod najdete v tématu [Rozšíření funkce Extended Logon pro MPOS a Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+
 Službu pro přihlášení lze rozšířit o podporu dalších zařízení pro rozšířené přihlášení, jako jsou čtečky dlaní. Další informace naleznete v dokumentaci k rozšíření služby POS.
 
 ## <a name="using-extended-logon"></a>Používání rozšířeného přihlášení
 
-Jakmile je rozšířené přihlášení nakonfigurováno a pracovník má přiřazen čárový kód nebo magnetický proužek, pracovníkovi stačí pouze protáhnout nebo naskenovat svoji kartu po zobrazení přihlašovací stránky POS. Je-li ke zpracování přihlášení nutné také heslo, pracovník je vyzván k zadání svého hesla.
+Jakmile je rozšířené přihlášení nakonfigurováno a pracovník má přiřazen čárový kód nebo magnetický proužek, pracovníkovi stačí pouze protáhnout nebo naskenovat svoji kartu po zobrazení přihlašovací stránky POS. Je-li ke zpracování přihlášení nutné také heslo, pracovník je vyzván k zadání hesla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

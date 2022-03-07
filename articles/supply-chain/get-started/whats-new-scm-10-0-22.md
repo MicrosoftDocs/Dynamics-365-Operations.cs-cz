@@ -1,5 +1,5 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22. (listopad 2021)
+title: Verze Preview Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.22.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,18 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778150"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579705"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.22. (listopad 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Verze Preview Dynamics 365 Supply Chain Management 10.0.22 (listopad 2021)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.22. Tato verze má číslo sestavení 10.0.995 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.22. Tato verze má číslo sestavení 10.0.995 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** září 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Říjen 2021
@@ -39,11 +40,13 @@ V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* 
 
 V následující tabulce je uveden seznam vylepšených funkcí této verze. Každé z těchto vylepšení poskytuje přírůstkové vylepšení stávající funkce. Protože se jedná pouze o vylepšení, nejsou uvedeny v seznamu [plán vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Aby se však zajistilo, že tato vylepšení nebudou v rozporu s vašimi stávajícími přizpůsobeními nebo předvolbami, je každé z nich ve výchozím nastavení vypnuto (pokud není uvedeno jinak). Pokud chcete použít některou z těchto funkcí, musíte ji výslovně povolit ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Modul | Název funkce ve správě funkcí | Další informace |
+| Oblast funkce | Název funkce ve správě funkcí | Další informace |
 |---|---|---|
+| Správa nákladů | Vytvoření souvisejících poukazů pro standardní zaokrouhlování nákladů | <p>Když je provedeno finanční zaúčtování zásob (například faktura prodejní objednávky nebo transakce zásob), tato funkce způsobí, že systém vytvoří samostatný doklad pro jakékoli související přecenění zaokrouhlování standardních nákladů a připojí jej k dokladu o finančním účtování jako související doklad.</p><p>Bez této funkce systém zaznamenává standardní přecenění zaokrouhlení nákladů na stejné zaúčtování poukázky. Toto chování může někdy způsobit konfliktní informace o datu, protože přecenění používají relaci nebo systémové datum, zatímco finanční účtování používá datum účtování.</p> |
 | Distribuovaná hybridní topologie | *(Není vyžadována žádná správa funkcí.)* | <p>Tato verze rozšiřuje možnosti plánování odchozího zatížení úlohy správy skladu pro cloudové a hraniční škálovací jednotky.</p><p>Další informace naleznete v části [Pracovní zatížení pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Správa technických změn | Generování varianty pro technické produkty | <p>Tato funkce vám umožňuje generovat několik variant pro technický produkt na základě jeho barvy, velikosti, stylu nebo rozměrů konfigurace.</p><p>Další informace viz [Generování variant pro strojírenské výrobky](../engineering-change-management/engineering-variants.md).</p> |
 | Řízení zásob a skladu | Integrace viditelnosti zásob s posunem rezervace | <p>Tuto funkci lze povolit až po povolení funkce *Integrace viditelnosti zásob*. Poskytuje funkce pro kompenzaci rezervací, které jsou provedeny na viditelnosti zásob.</p><p>Další informace viz [Rezervace ve Viditelnosti zásob](../inventory/inventory-visibility-reservations.md).</p> |
+| Prodej a marketing | Omezit počet prodejních objednávek, které lze vybrat k zaúčtování | <p>Tato funkce je povolena automaticky. Přidává pole s názvem **Max. počet prodejních objednávek k zaúčtování** na stránku **Parametry pohledávek**. Toto pole vám umožňuje definovat maximální počet prodejních objednávek, které lze vybrat při zaúčtování potvrzení, výdejek, dodacích listů a faktur ze stránky seznamu prodejních objednávek. Výchozí hodnota je *100*.</p><p>Tato funkce pomáhá zlepšit výkon stránky seznamu prodejních objednávek, když je vybrán značný počet prodejních objednávek. Nemá to žádný vliv na počet prodejních objednávek, které lze zpracovat periodickým úkolem.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
@@ -60,7 +63,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.22 aplikací Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.22 aplikací Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

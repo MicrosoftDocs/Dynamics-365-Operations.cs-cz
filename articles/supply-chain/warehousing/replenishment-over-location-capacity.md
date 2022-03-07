@@ -2,26 +2,23 @@
 title: Doplnění nad kapacitu místa
 description: Toto téma obsahuje informace o funkci Doplňování přes kapacitu místa. Tato funkce umožňuje veškerou doplňovací práci, která bude vyžadována na den, který má být vytvořen, a řídí dostupnost této doplňovací práce, aby bylo zajištěno, že místu vyskladnění nedojdou zásoby, ani nepřekročí kapacitu.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424203"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778200"
 ---
 # <a name="replenishment-over-location-capacity"></a>Doplnění nad kapacitu místa
 
@@ -35,7 +32,7 @@ Tato funkce umožňuje vytvořit více prací doplnění, než kolik se vejde na
 
 Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí):
 
-1. Blokování práce pro celou organizaci
+1. Blokování práce pro celou organizaci (od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout).
 1. Doplnění nad kapacitu místa
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Nastavení funkce pro tento vzorový scénář
@@ -242,7 +239,7 @@ V závislosti na množství, které máte k dispozici, se mohou vytvořená mno�
 
 #### <a name="on-hand-inventory-license-plate-id"></a>ID registrační značky na skladě
 
-Později v tomto scénáři budete používat skladovací aplikaci (nebo emulátor), kde musíte identifikovat registrační značku pro dokončení scénářů vychystávání a doplňování.
+Později v tomto scénáři budete používat mobilní aplikaci (nebo emulátor) Řízení skladu, kde musíte identifikovat registrační značku pro dokončení scénářů vychystávání a doplňování.
 
 Chcete-li najít ID registrační značky, které budete později potřebovat, postupujte takto.
 
@@ -267,7 +264,7 @@ Provedete doplnění umístění skladu pro první dvě ID práce. Práce na tř
 
 #### <a name="replenishment"></a>Doplnění
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
 1. Přejděte na **Zásoby \> Doplnění**.
 
     Jste vyzváni, abyste dokončili první práci na doplnění. Zobrazí se číslo položky, množství a umístění pro vyskladnění.
@@ -297,7 +294,7 @@ Dokud nebude z místa vybrán dostatek zásob, aby byl pod položkou nabídky uv
 
 Před dokončením zbývajícího úkolu doplňování musí být místo vyskladnění vyčerpáno ze zásoby na úroveň, na které lze zbývající část doplňování odblokovat. Jinými slovy, součet množství zásob na skladě v místě a množství doplňování nesmí překročit hodnota **Přetečené množství**. Pokud je tato částka menší než množství přetečení, zbývající doplňování bude odblokováno.
 
-1. Přihlaste se do skladové aplikace jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
+1. Přihlaste se do mobilní aplikace Řízení skladu jako uživatel skladu *61*. (Zadejte *61* jako ID uživatele a *1* jako heslo.)
 1. Přejděte do **Výstupní \> Prodejní výdej**.
 1. Zadejte první ID práce pro prodejní objednávku 1.
 
@@ -408,3 +405,6 @@ Nyní si můžete vybrat prodejní objednávku 2. Když bylo dokončeno doplňov
 - Pokud chcete, můžete ručně přepsat dostupnost práce doplňování pro každou hlavičku práce ze stránky **Podrobnosti o práci**.
 - Když systém nastaví dostupnost práce při doplňování, vezme v úvahu veškerý inventář, který je již v místě před dokončením jakékoli práce
 - Každá část práce na prodejní objednávce je spojena s konkrétní prací na doplnění. Neexistuje žádná odpovídající funkce dostupnosti prodejní práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

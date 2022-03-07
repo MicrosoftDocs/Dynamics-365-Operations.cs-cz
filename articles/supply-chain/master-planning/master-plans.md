@@ -2,16 +2,13 @@
 title: Přehled hlavních plánů
 description: Používání různých hlavních plánů na podporu každodenního provozu své společnosti, simulovat různé strategie plánování,které chcete monitorovat a zavádět podnikovou pravidla, týkající se například zásad interní výkonnosti nebo spokojenosti zákazníka.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqParameters, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 7911
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70a5b8f0c7e4857aa2904003b458bf6d02b72064
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4506e081258bf125a329830032972b35191aca72
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424046"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833370"
 ---
 # <a name="master-plans-overview"></a>Přehled hlavních plánů
 
@@ -57,3 +54,6 @@ Můžete také nastavit počáteční dynamický plán tak, aby se aktualizoval 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

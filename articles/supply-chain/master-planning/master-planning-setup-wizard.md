@@ -1,17 +1,14 @@
 ---
-title: Průvodce nastavením hlavního plánování
-description: Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování.
-author: t-benebo
-manager: tfehr
+title: Průvodce nastavením hlavního plánování (obsahuje video)
+description: Toto téma popisuje, jak spustit průvodce nastavením hlavního plánování a nastavit hlavní plánování.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423943"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937626"
 ---
 # <a name="master-planning-setup-wizard"></a>Průvodce nastavením hlavního plánování
 
@@ -48,13 +45,13 @@ Na první stránce průvodce se zobrazí dotaz na konkrétní požadavky vaší 
 
 Pokud počet vypočtených vláken přesahuje 75 % dostupného počtu vláken, je limitován na 75 % počtu vláken, která jsou k dispozici pro každého zákazníka. (Počet dostupných vláken bude určen pro každého zákazníka.)
 
-Více informací naleznete v části [Počet vláken](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Více informací naleznete v části [Počet vláken](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Velikost sady
 
 Velikost svazku bude nastavena na **1**. Tato hodnota je často nejlepší hodnotou, protože pomáhá zlepšit výkon hlavního plánování.
 
-Další informace naleznete v tématu [Počet úkolů v sadě úkolů pomocníka](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Další informace naleznete v tématu [Počet úkolů v sadě úkolů pomocníka](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Velikost potvrzujícího svazku
 
@@ -67,7 +64,7 @@ Výpočet svazku = (počet plánovaných objednávek × (ochranná doba potvrzen
 
 Velikost mezipaměti bude nastavena na **Maximum**. Tato hodnota je často nejlepší hodnotou, protože pomáhá zlepšit výkon hlavního plánování.
 
-Další informace naleznete v tématu [Přidělení času úlohám v sadě úloh](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Další informace naleznete v tématu [Přidělení času úlohám v sadě úloh](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Nastavení výroby
 
@@ -91,7 +88,7 @@ Zbývající otázky na této stránce a jejich odpovědi se řídí stejným sc
 - **Ano, jak je definováno v toto hlavním plánu** – Možnost **Plán prognóz (ochranná doba)** bude nastavena na **Ano**. Počet dnů, které zadáte, bude použit a přepíše hodnoty nastavené ve skupinách disponibility.
 - **Ano, jak je definováno ve skupině disponibility** – Možnost **Plán prognóz (ochranná doba)** bude nastavena na **Ne**.
 
-Další informace naleznete v tématu [Plánování úlohy](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Další informace naleznete v tématu [Plánování úlohy](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Možnosti plánování
 
@@ -102,7 +99,7 @@ Vaše odpověď na první otázku na této stránce („Potřebujete naplánovat
 - **Ano** – Bude použito plánování úlohy.
 - **Ne** – Bude použito plánování operací.
 
-Další informace naleznete v tématech [Plánování operací](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) a [Plánování úlohy](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Další informace naleznete v tématech [Plánování operací](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) a [Plánování úlohy](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Aktualizace poptávky a nabídky
 
@@ -209,3 +206,6 @@ V průvodci jsou pro výrobce Contoso Retailer zadány následující hodnoty:
     - **Odpověď:** „Ano, jak je definováno v tomto hlavním plánu.“ Je zadán **1 den**.
 
     Společnost Contoso používá schválené žádanky ze svých obchodů k vytvoření plánovaných nákupních objednávek pro doplnění těchto obchodů. Vzhledem k tomu, že hlavní plánování je spuštěno každý den, budou do plánování zahrnuty žádanky z posledního dne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

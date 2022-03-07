@@ -2,28 +2,25 @@
 title: Přecenění leasingových splátek vázaných na indexovou sazbu
 description: Toto téma popisuje úpravu provedenou za účelem pronájmu závazku k aktivu s právem na užívání (ROU), když se variabilní leasingové platby změní z důvodu změny indexové sazby.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 83684afbd5e11b890a59bc1469ddefffd1777c4e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441348"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968045"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Přecenění leasingových splátek vázaných na indexovou sazbu
 
@@ -46,7 +43,7 @@ Podle těchto kroků proveďte přecenění leasingových splátek vázaných na
 4. Vyberte filtry pro výběr leasingů, které by měly být zahrnuty do zpracování na pozadí, a poté vyberte **OK**.
 
     Objeví se dialogové okno **Náhled přehodnocení indexu** s nájemními smlouvami, které budou přeceněny. Ukazuje také úpravy aktiv a pasiv nebo úpravy variabilních plateb.
-    
+
 5. Chcete-li zabránit přeceňování leasingů, vyberte leasingy, které **by měly** být přeceněny. Pokud nevyberete žádné leasingy, budou všechny leasingy přeceněny. Po dokončení vyberte **OK** k přecenění leasingových splátek.
 6. Chcete-li zobrazit transakce, které byly vytvořeny pro konkrétní proces přecenění indexu, vyberte ID procesu a poté vyberte **Transakce**.
 
@@ -68,3 +65,8 @@ Chcete-li zobrazit účinky procesu přecenění leasingu na leasingy IFRS 16, o
 Můžete si prohlédnout nově vygenerovaný plán plateb, který začíná datem přecenění, a zobrazit celkovou aktualizovanou částku platby. Byl také vytvořen nový plán amortizace závazků z leasingu a plán odpisů aktiv, aby odrážely upravený splátkový kalendář.
 
 Položka deníku automaticky zaúčtovala položku deníku úprav na účet kvůli změnám v leasingových splátkách, které souvisejí s přeceněním indexu.
+
+> [!NOTE]
+> Pokud je možnost **Částka splátky** aktivní na pevné záložce **Všeobecné** stránky **Údaje leasingu** a související kniha je IFRS 16, proces přecenění indexu automaticky přidá záznam do dialogového okna **Rozdělení částky platby**. Částka bude odrážet změnu, která byla provedena v platbě z důvodu přecenění indexu. Záznam bude označen jako **Používá se pro přecenění indexu IRFS 16**.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

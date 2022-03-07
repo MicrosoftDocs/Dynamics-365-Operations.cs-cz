@@ -2,25 +2,25 @@
 title: Data faktur dodavatele
 description: Toto téma popisuje data, která se objevují na fakturách dodavatele. Vysvětluje také, jak nastavit systém tak, aby automaticky upravoval datum zaúčtování.
 author: sunfzam
-ms.date: 2/09/2022
+ms.date: 08/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105456"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647878"
 ---
 # <a name="vendor-invoice-dates"></a>Data faktur dodavatele
 
@@ -50,9 +50,6 @@ Chcete-li systému umožnit automatickou úpravu data účtování pro faktury d
     - **Vždy změňte datum zaúčtování na systémové datum** – Systém během zaúčtování automaticky změní datum zaúčtování na systémové datum.
     - **Změnit datum účtování na systémové datum, když je období data účtování uzavřeno nebo pozastaveno** – Systém během zaúčtování změní datum zaúčtování na systémové datum, ale pouze v případě, že odpovídající období data zaúčtování má stav **Zavřeno** nebo **Blokováno**.
     - **Změnit datum účtování na první den nového období, když je období data účtování uzavřeno nebo pozastaveno** – Systém během zaúčtování změní datum zaúčtování na pevní den nově otevřeného období, ale pouze v případě, že odpovídající období data zaúčtování má stav **Zavřeno** nebo **Blokováno**.
-
-> [!NOTE]
-> Pokud je nové datum zaúčtování, které bylo automaticky upraveno, v novém fiskálním roce, datum zaúčtování faktury se neaktualizuje. Uživatel uvidí chybu „Fiskální rok se změnil. Zkontrolujte a znovu zadejte datum zaúčtování." Aby bylo možné fakturu zaúčtovat, musí být aktualizováno datum zaúčtování do nového fiskálního roku.
 
 ## <a name="impact-of-posting-date-changes"></a>Dopad změn data zaúčtování
 

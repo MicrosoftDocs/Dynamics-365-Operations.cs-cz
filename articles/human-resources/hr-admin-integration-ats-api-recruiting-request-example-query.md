@@ -2,30 +2,28 @@
 title: Příklad dotazu na žádost o nábor
 description: Toto téma poskytuje ukázkový dotaz pro entitu Žádost na nábor v Dynamics 365 Human Resources.
 author: jaredha
+manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1cc7389403f0362cc005be1df320e63824a3ec3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 42028b175d717bec01180dc9a6bc4cb7b289be05
+ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066236"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5125923"
 ---
 # <a name="example-query-for-recruiting-request"></a>Příklad dotazu na žádost o nábor
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Toto téma poskytuje ukázkový dotaz pro entitu Žádost na nábor v Dynamics 365 Human Resources.
 
@@ -185,5 +183,3 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 ## <a name="see-also"></a>Viz také
 
 [Úvod do rozhraní API pro integraci systému sledování žadatelů](hr-admin-integration-ats-api-introduction.md)<br>
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

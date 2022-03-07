@@ -2,27 +2,24 @@
 title: Nastavení výchozích popisů pro automatické zaúčtování
 description: Toto téma popisuje jak nastavit výchozí text, který se používá k popisu účetních zápisů, které jsou automaticky zaúčtovány do hlavní knihy. Můžete nastavit výchozí text s popisem pomocí volného textu nebo výběrem pevných proměnných.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4440988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722688"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Nastavení výchozích popisů pro automatické zaúčtování
 
@@ -87,3 +84,6 @@ Po dokončení kroků uvedených v části [Nastavení výchozích popisů](#set
 2. V poli **Referenční tabulka** vyberte tabulku databáze, ze které chcete přidat data parametru do popisu.
 3. V poli **Referenční pole** vyberte pole databáze, ze kterého chcete přidat data parametru do popisu.
 4. Opakováním kroků 1 až 3 přidejte další parametry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

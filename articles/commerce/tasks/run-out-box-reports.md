@@ -2,27 +2,24 @@
 title: Generování a spuštění předpřipravených sestav
 description: Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Velkoobchodní prodej.
 author: ashishmsft
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774454"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generování a spuštění předpřipravených sestav
 
@@ -64,3 +61,6 @@ K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT. T
 5. Klikněte na Exportovat.
 6. Klikněte na PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

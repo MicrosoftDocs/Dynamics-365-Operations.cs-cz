@@ -1,109 +1,141 @@
 ---
 title: Přehled správy funkcí
 description: V tomto tématu je popsána funkce správy funkcí a její použití.
-author: ChrisGarty
-manager: AnnBe
-ms.date: 10/05/2020
-ms.topic: article
+author: Peakerbl
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: cgarty
+ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798345"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068002"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
 [!include [banner](../../includes/banner.md)]
 
-Funkce se přidávají a aktualizují v každém vydání. Rozhraní Správa funkcí poskytuje pracovní prostor, ve kterém si můžete prohlédnout seznam funkcí, které byly dodány v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace.
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
+Funkce se přidávají a aktualizují v každém vydání. Rozhraní Správa funkcí poskytuje pracovní prostor, ve kterém si můžete prohlédnout seznam funkcí, které byly dodány v jednotlivých vydáních. Pracovní prostor pak můžete použít k zobrazení dokumentace funkcí a k povolení nebo zakázání funkcí.
 
 ## <a name="the-feature-management-workspace"></a>Pracovní prostor Správa funkcí
 
-Pracovní prostor **Správa funkcí** lze otevřít výběrem příslušné dlaždice na řídicím panelu. Zobrazí se stránka se seznamem funkcí pro všechny verze, které jsou podporovány rozhraním správy funkcí. V průběhu času společnost Microsoft rozšíří rozhraní správy funkcí tak, aby obsahovalo další funkce, které vám pomohou při správě funkcí.
+Pracovní prostor **Správa funkcí** lze otevřít výběrem příslušné dlaždice na řídicím panelu. Zobrazí se stránka se seznamem funkcí pro všechny verze, které jsou podporovány rozhraním správy funkcí. 
 
 Seznam funkcí obsahuje následující informace:
 
 - **Název funkce** – Popis přidané funkce.
-- **Stav Povoleno** – symbol označuje, zda byla funkce zapnutá (zaškrtnutí), nebyla zapnutá (prázdné pole), byla naplánována pro zapnutí (hodiny), je povinně zapnutá (zámek), vyžaduje pozornost před zapnutím (upozornění), nebo ji nelze povolit (X). Nastavení, které je zobrazeno, je použito pro všechny právnické osoby. Všimněte si, že i když byla funkce zapnuta, je stále řízena zabezpečením. Tato funkce bude proto k dispozici pouze pro uživatele, kteří k ní mají přístup, na základě své role zabezpečení. Bude také k dispozici pouze v právnických osobách, ke kterým má uživatel přístup.
+- **Stav** – Symbol označuje, zda je funkce zapnutá (zaškrtnutí), vypnutá (prázdné pole), je naplánována pro zapnutí (hodiny), je povinná (zámek), vyžaduje pozornost před zapnutím (symbol upozornění), nebo ji nelze zapnout (X). Nastavení, které je zobrazeno, je použito pro všechny právnické osoby. Všimněte si, že i když byla funkce zapnuta, je stále řízena zabezpečením. Tato funkce bude proto k dispozici pouze pro uživatele, kteří k ní mají přístup, na základě své role zabezpečení. Bude také k dispozici pouze v právnických osobách, ke kterým má uživatel přístup.
 - **Datum povolení** – datum, kdy byla funkce zapnuta nebo na kdy je naplánováno zapnutí.
 - **Přidaná funkce** – Datum, kdy byla funkce přidána do vašeho prostředí. Toto datum je automaticky zadáno při aktualizaci prostředí během měsíčního vydání verze.
+- **Stav funkce** - Aktuální stav životního cyklu funkce: **Preview**, **Vydáno** (zobrazeno jako prázdné), **Ve výchozím nastavení zapnuto** a **Povinné**. Stavy jsou podrobněji popsány dále v tomto tématu. 
 - **Modul** – Modul, který je touto novou funkcí ovlivněn.
+
+> [!NOTE]
+> Sloupe **Stav funkce** je zahrnut od verze 10.0.21.
 
 Vyberete-li funkci, zobrazí se v podokně podrobností vpravo od seznamu funkcí další informace. V horní části podokna se zobrazí název funkce, datum, kdy byla funkce přidána, modul ovlivněný funkcí a odkaz na **Další informace**. Tento odkaz vyberte, chcete-li zobrazit dokumentaci k dané funkci. Není-li dokumentace k dispozici, budete navedeni na dočasnou stránku. Podokno podrobností rovněž obsahuje pole **Komentáře**, do kterého můžete přidat vlastní komentáře k funkci.
 
 V pracovním prostoru **Správa funkcí** je také k dispozici několik karet, z nichž každá ukazuje seznam funkcí.
 
 - **Nové** - Na této kartě se zobrazují všechny funkce, které byly přidány od poslední měsíční aktualizace. Pokud jste přeskočili všechny měsíční aktualizace, na kartě se zobrazí všechny nové funkce, které byly přidány od poslední aktualizace. Nejnovější funkce se zobrazí na začátku seznamu. Celkový počet nových funkcí je zobrazen také na dlaždici v horní části stránky.
-- **Není povoleno** – na této kartě jsou zobrazeny všechny funkce, které nebyly zapnuty. Nejnovější funkce se zobrazí na začátku seznamu. Celkový počet nových funkcí, které nebyly zapnut,y je uveden také v dlaždici v horní části stránky.
-- **Plánováno** – na této kartě se zobrazí všechny funkce, jejichž zapnutí je naplánováno k budoucímu datu. Funkce s nejdřívějším plánovaným datem se zobrazí na začátku seznamu. Celkový počet naplánovaných nových funkcí je zobrazen také na dlaždici v horní části stránky.
+- **Není povoleno** – na této kartě jsou zobrazeny všechny funkce, které nejsou zapnuty. Nejnovější funkce se zobrazí na začátku seznamu. Kromě toho dlaždice v horní části stránky zobrazuje celkový počet nových funkcí, které jsou aktuálně vypnuté.
+- **Plánováno** – na této kartě se zobrazí všechny funkce, jejichž zapnutí je naplánováno k budoucímu datu. Funkce s nejdřívějším plánovaným datem se zobrazí na začátku seznamu. Kromě toho se na dlaždici v horní části stránky zobrazí celkový počet naplánovaných funkcí.
 - **Vše** – na této kartě jsou zobrazeny všechny funkce. Nejnovější funkce se zobrazí na začátku seznamu.
 
-## <a name="turn-on-a-feature"></a>Zapnutí funkce
+## <a name="feature-states"></a>Stavy funkcí
+Funkce se mohou přepínat mezi několika stavy, od zavedení ve správě funkcí až po případnou nutnou přítomnost v produktu. Tato část popisuje platné stavy funkcí.
 
-Není-li funkce zapnutá, zobrazí se v podokně podrobností tlačítko **Povolit nyní**. Pomocí tohoto tlačítka můžete funkci zapnout.
+### <a name="preview-features-optional"></a>Funkce Preview (nepovinné)
 
-- Vyberte funkci, kterou chcete zapnout, a poté v podokně podrobností vyberte možnost **Povolit nyní.** Funkce se zapne.
+Produktové týmy se mohou rozhodnout nejprve spustit novou funkci jako funkci preview. Funkce preview nejsou ve výchozím nastavení povoleny a jsou volitelné. Vlastnící produktový tým bude aktualizovat funkce, které budou vydány po dokončení úspěšného období preview.
 
-Některé funkce nelze po zapnutí vypnout. Pokud nelze vypnout funkci, kterou se pokoušíte zapnout, zobrazí se upozornění. V tomto okamžiku můžete vybrat možnost **Zrušit**, chcete-li operaci zrušit a ponechat funkci vypnutou. Pokud však vyberete možnost **Povolit** a povolíte funkci, nebude možné ji později vypnout.
+> [!NOTE]
+> Funkce preview podléhají [smluvním podmínkám](https://go.microsoft.com/fwlink/?linkid=2105274) pro konkrétní preview. 
 
-Před zapnutím některých funkcí se zobrazí zpráva, která obsahuje další informace. Tyto funkce jsou označeny symbolem žlutého upozornění. Pozorně si přečtěte další informace, abyste lépe pochopili, co se stane, když je funkce povolena. Chcete-li však funkci zapnout, můžete také vybrat možnost **Povolit**.
+### <a name="released-features-optional"></a>Vydané funkce (volitelné)
+
+Sloupec **Stav funkce** je pro tyto funkce prázdný. Funkce, které jsou původně přidány jako vydané, nejsou ve výchozím nastavení zapnuty a jejich povolení je volitelné. Funkce, které jsou aktualizovány z preview, si zachovají svůj stav povolení.
+
+### <a name="on-by-default-features-optional"></a>Ve výchozím nastavení zapnuté funkce (volitelné)
+
+Funkce, které jsou aktualizovány na hodnotu **Ve výchozím nastavení zapnuto** jsou ve výchozím nastavení zapnuté, ale lze je zakázat. Když se funkce, které lze zakázat, nacházejí ve stavu **Vydáno** po dobu nejméně šesti měsíců, očekává se, že se do tohoto stavu přesunou v příštím hlavním vydání. U funkcí, které přecházejí do stavu **Ve výchozím nastavení zapnuto**, se očekává, že budou uvedeny v části [Co je nového](../whats-new-changed.md) pro dané vydání. Aktualizaci zahájí vlastnící produktový tým.
+
+> [!NOTE]
+> Protože tyto funkce budou povoleny automaticky, je důležité určit, zda je vaše organizace připravena tyto funkce převzít, nebo zda potřebujete více času. Pokud je zapotřebí více času, může být nutné dočasně tyto funkce zakázat. Všimněte si, že přechod funkce do stavu **Ve výchozím nastavení zapnuto** se obvykle provádí v hlavním vydání, než se má funkce dostat do stavu **Povinné**. Pak již nebudete mít možnost tuto funkci zakázat. 
+
+### <a name="mandatory"></a>Povinné
+
+**Povinné** je očekávaný konečný stav funkcí. Udává, že funkce jsou zapnuté a že je nelze zakázat, aniž byste kontaktovali společnost Microsoft. Očekává se, že volitelné funkce se stanou povinnými po dvou hlavních vydáních. Kriticky důležité funkce mohou být výjimečně zavedeny již jako povinné.
+
+## <a name="example-of-expected-feature-lifecycles"></a>Příklad očekávaných životních cyklů funkcí
+
+Očekává se, že funkce, které lze zakázat a které byly přidány jako vydané a volitelné před nebo jako součást dubnového vydání, přejdou v následujícím říjnovém vydání do stavu **Ve výchozím nastavení zapnuto**. V dubnu následujícího roku se pak očekává, že začnou být **Povinné** .
+
+Očekává se, že funkce, které nelze zakázat a které byly přidány jako vydané a volitelné před nebo jako součást dubnového vydání, přejdou v dubnu příštího roku do stavu **Povinné**.
+
+## <a name="enable-a-feature"></a>Povolení funkce
+
+Není-li funkce zapnutá, zobrazí se v podokně podrobností tlačítko **Povolit nyní**. Pomocí tohoto tlačítka můžete funkci povolit.
+
+Některé funkce nelze po povolení zakázat. Pokud nelze povolit funkci, kterou se pokoušíte zapnout, zobrazí se upozornění. V tomto okamžiku můžete vybrat možnost **Zrušit**, chcete-li operaci zrušit a ponechat funkci zakázanou. Pokud však vyberete možnost **Povolit** a povolíte funkci, nebude možné ji později zakázat.
+
+Před povolením některých funkcí se zobrazí zpráva, která obsahuje další informace. Tyto funkce jsou označeny symbolem žlutého upozornění. Pozorně si přečtěte další informace, abyste měli jistotu, že rozumíte tomu, co se stane po povolení funkce. Chcete-li však funkci povolit, můžete také vybrat možnost **Povolit**.
 
 Některé funkce zobrazí zprávu, že funkci lze povolit až po provedení akce. Tyto funkce jsou označeny symbolem červeného X. Před povolením funkce je nutné podniknout akce popsané v popisu. Pokud například nemůžete použít funkci, dokud není zakázán konfigurační klíč, je nutné nejprve zakázat konfigurační klíč a potom se vrátit ke správě funkcí a povolit tak funkci.
 
-Po zapnutí funkce se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla zapnutá, nebo uvádí budoucí datum, na kdy je naplánováno zapnutí funkce. Zobrazí se při každém výběru funkce v seznamu funkcí.
+Po povolení funkce se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla povolena, nebo uvádí budoucí datum, na kdy je naplánováno povolení funkce. Zobrazí se při každém výběru funkce v seznamu funkcí.
 
-Funkce, jejichž zapnutí je plánováno v budoucnu, se zobrazí na kartě **Naplánované**. Dávkové zpracování je zapne o půlnoci k určitému datu na základě časového pásma, které je vyjádřeno systémovým datem.
+Funkce, jejichž povolení je plánováno v budoucnu, se zobrazí na kartě **Naplánované**. Dávkové zpracování je povolí o půlnoci k určitému datu na základě časového pásma, které je vyjádřeno systémovým datem.
 
 ## <a name="reschedule-a-feature"></a>Přeplánování funkce
 
-Je-li funkce naplánována na zapnutí v budoucnu, zobrazí se v podokně podrobností tlačítko **Plán**. Toto tlačítko lze použít ke změně hodnoty **Datum povolení** na jiné datum.
+Je-li povolení funkce naplánováno v budoucnu, zobrazí se v podokně podrobností tlačítko **Plán**. Toto tlačítko lze použít ke změně hodnoty **Datum povolení** na jiné datum.
 
 1. Vyberte naplánovanou funkci, kterou chcete přeplánovat, a poté v podokně podrobností vyberte možnost **Plán**.
-2. V dialogovém okně, které se zobrazí, v poli **Datum povolení** zadejte nové datum, kdy má být funkce zapnuta.
+2. V dialogovém okně, které se zobrazí, v poli **Datum povolení** zadejte nové datum, kdy má být funkce povolena.
 3. Výběrem možnosti **Povolit** přeplánujte funkci nebo volbou **Zakázat** zrušte plán.
 
-## <a name="turn-off-a-feature"></a>Vypnutí funkce
+## <a name="disable-a-feature"></a>Zákaz funkce
 
-Pokud již byla funkce zapnutá, zobrazí se v podokně podrobností tlačítko **Zakázat**. Pomocí tohoto tlačítka můžete funkci vypnout. Tlačítko **Zakázat** není k dispozici, pokud po zapnutí nejde funkci vypnout.
+Pokud funkce byla povolena, zobrazí se v podokně podrobností tlačítko **Zakázat**. Pomocí tohoto tlačítka můžete funkci zakázat. Tlačítko **Zakázat** není k dispozici, pokud funkce nemůže být zakázána. 
 
-- Vyberte funkci, kterou chcete vypnout, a poté v podokně podrobností vyberte možnost **Zakázat.** Funkce je vypnutá a pole **Datum povolení** je vymazáno.
+Po zakázání funkce se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. V této zprávě je uvedeno, že funkce ještě nebyla povolena. Zobrazí se při každém výběru funkce v seznamu funkcí. Funkce, které nejsou povolené, jsou uvedeny na kartě **Není povoleno**.
 
-Po vypnutí funkce se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. V této zprávě je uvedeno, že funkce ještě nebyla zapnuta. Zobrazí se při každém výběru funkce v seznamu funkcí. Funkce, které nejsou zapnuté, jsou uvedeny na kartě **Není povoleno**.
+## <a name="features-that-must-be-enabled"></a>Funkce, které musí být povoleny
 
-## <a name="features-that-must-be-turned-on"></a>Funkce, které musí být zapnuté
+Někdy je nasazena kritická funkce, která musí být povolena automaticky při provedení aktualizace. Tyto funkce budou automaticky povoleny k datu, které je uvedeno v poli **Datum povolení**. Po povolení těchto funkcí se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla povolena, nebo udává budoucí datum, kdy bude funkce povolena. Zobrazí se při každém výběru funkce v seznamu funkcí.
 
-Někdy je doručena kritická funkce, která musí být povolena automaticky při provedení aktualizace. Tyto funkce budou automaticky zapnuty k datu, které je uvedeno v poli **Datum povolení**. Po povolení těchto funkcí se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla zapnutá, nebo uvádí budoucí datum, na kdy je naplánováno zapnutí funkce. Zobrazí se při každém výběru funkce v seznamu funkcí.
+## <a name="enable-all-features"></a>Povolit všechny funkce
 
-## <a name="enable-all-features"></a>Povolení všech funkcí
+Chcete-li povolit všechny funkce, zvolte tlačítko **Povolit vše**. 
 
-Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty. Chcete-li povolit všechny funkce, zvolte tlačítko **Povolit vše**. 
+Vyberete-li možnost **Povolit vše**, zobrazí se možnost, kde musíte zadat následující informace:
 
-Vyberete-li možnost **Povolit vše**, zobrazí se možnost, kde je třeba zadat následující informace:
 - Seznam všech funkcí, které vyžadují potvrzení před tím, než mohou být povoleny. Chcete-li povolit funkce v seznamu, vyberte možnost **Ano** pro tlačítko **Povolit funkce vyžadující potvrzení**.
 - Zobrazí se seznam všech funkcí, které nelze povolit. Tyto funkce nebudou povoleny.
 
 Budou povoleny všechny funkce, které lze povolit. Pokud je již v budoucnu naplánováno povolení funkce, plán se nezmění. 
 
-## <a name="turn-on-all-features-automatically"></a>Automaticky zapnout všechny funkce
+## <a name="enable-all-features-automatically"></a>Automatické povolení všech funkcí
 
-Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty, pokud nejsou povinné. Chcete-li však automaticky zapnout všechny nové funkce, můžete pomocí rozevíracího seznamu pod názvem pracovního prostoru změnit, k čemu dojde při přidání nových funkcí.
+Chcete-li automaticky povolit všechny nové funkce, můžete pomocí rozevíracího seznamu pod názvem pracovního prostoru změnit, k čemu dojde při přidání nových funkcí.
 
-- Výběrem možnosti `Enable new features automatically` se při přidání do vašeho prostředí automaticky zapnou všechny nové funkce.
-- Výběrem možnosti `Do not enable new features automatically` se při přidání do vašeho prostředí implicitně vypnou všechny nové funkce.
-
+- Výběrem možnosti **Automaticky povolovat nové funkce** se při přidání do vašeho prostředí automaticky povolí všechny nové funkce.
+- Možnost **Automaticky nepovolovat nové funkce** vyberte, když mají být všechny nové funkce při přidání do vašeho prostředí automaticky vypnuty.
 
 Pokud povolíte všechny funkce automaticky, budou zapnuty všechny funkce, které by byly povoleny při kliknutí na tlačítko **Povolit vše**. Nepovolí se funkce vyžadující potvrzení nebo funkce, které nelze povolit, dokud nebude provedena akce.
 
@@ -129,47 +161,42 @@ Datová entita, která je nazvaná **Správa funkcí**, umožňuje exportovat na
 
 Následující příklady popisují, co se děje při importu dat pomocí entity **Správa funkcí**.
 
-- Pokud změníte hodnotu pole **Povoleno** na **Ano**, funkce se zapne a v poli **Datum povolení** se nastaví aktuální datum.
-- Pokud změníte hodnotu pole **Povoleno** na **Ne** nebo bude v poli **EnableDate** prázdná hodnota, funkce se vypne a pole **Datum povolení** se vymaže. Nelze vypnout povinnou funkci nebo funkci, kterou po zapnutí nelze vypnout.
+- Pokud změníte hodnotu pole **Povoleno** na **Ano**, funkce se povolí a v poli **Datum povolení** se nastaví aktuální datum.
+- Pokud změníte hodnotu pole **Povoleno** na **Ne** nebo bude v poli **EnableDate** prázdná hodnota, funkce se zakáže a pole **Datum povolení** se vymaže. Zakázat nemůžete povinnou funkci nebo funkci, kterou po povolení nelze zakázat.
 - Změníte-li hodnotu pole **EnableDate** na budoucí datum, bude pro toto datum naplánována funkce.
 - Pokud změníte hodnotu pole **Povoleno** na **Ano** a změníte hodnotu v poli **Datum povolení** na budoucí datum, funkce se naplánuje na toto datum. 
 - Pokud změníte hodnotu pole **Povoleno** na **Ne**, ale změníte také hodnotu v poli **Datum povolení** na budoucí datum, funkce se naplánuje na toto datum.
-- Je-li funkce zapnuta a přidáte-li pole **EnableDate**, které je nastaveno na budoucí datum, funkce zůstane zapnutá. Chcete-li přeplánovat funkci, musíte změnit pole **Povoleno** na hodnotu **Ne**.
+- Je-li funkce povolena a přidáte-li pole **EnableDate**, které je nastaveno na budoucí datum, funkce zůstane povolena. Chcete-li přeplánovat funkci, musíte změnit hodnotu pole **Povoleno** na hodnotu **Ne**.
 
 ## <a name="feature-management-and-flighting"></a>Správa funkcí a testovací funkce
 
 Správa funkcí vám umožňuje ovládat funkce dodávané v jednotlivých verzích. Testovací verze umožňuje týmům společnosti Microsoft vydávat funkce omezenému počtu zákazníků tak, aby bylo možné funkce testovat a ověřovat bez ovlivnění všech odběratelů. Správa funkcí neřídí testovací verze žádných funkcí.
 
-## <a name="new-features-are-optional-for-12-months"></a>Nové funkce jsou po dobu 12 měsíců volitelné
-
-Je-li instalována nová nekritická funkce, bude volitelná po dobu 12 měsíců. To vám a vaší organizaci umožňuje plánovat dopředu, kdy nějakou funkci zavést, a otestovat ji v každodenním provozu. Další informace naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
-
-## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Použití správy funkcí k zapnutí funkcí ISV nebo vlastních funkcí
+## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Použití správy funkcí k zapnutí funkcí ISV nebo vlastních funkcí
 
 Správa funkcí není aktuálně k dispozici pro funkce od nezávislých dodavatelů softwaru (ISV) a vlastních funkcí. Společnost Microsoft však přidává k vylepšení správy funkcí více funkcí. Po dokončení těchto zdokonalení společnost Microsoft zpřístupní správu funkcí pro všechny funkce a poskytne pokyny k aktualizaci funkcí, které chcete použít.
 
 ## <a name="frequently-asked-questions-faq"></a>Časté dotazy
 
 ### <a name="when-are-features-added-removed-or-changed"></a>Kdy jsou funkce přidány, odebrány nebo změněny? 
-Funkce jsou přidávány, odebírány a měněny prostřednictvím změn kódu. Prostředí musí být aktualizováno, aby tyto změny přijalo.
+Funkce jsou přidávány, odebírány a měněny prostřednictvím změn kódu prováděných vlastnícími produktovými týmy. Prostředí musí být aktualizováno, aby tyto změny přijalo.
 
 ### <a name="does-a-feature-become-mandatory-automatically"></a>Stává se funkce povinnou automaticky? 
-Ne, to, že se funkce stane povinnou, není automatická akce. Týmy produktů musí provést změnu kódu.
-
-### <a name="when-do-features-become-mandatory"></a>Kdy se funkce stanou povinnými? 
-Zásadou je, že všechny nové funkce budou k dispozici po dobu 12 měsíců a nebudou vyžadovat žádné řízení změn, dokud tuto funkci nepovolíte. Týmy produktů si mohou vybrat, zda mají být funkce povinné po uplynutí této doby. 
+Ne, funkce se nestane automaticky povinnou. Vlastnící produktový tým musí provést změnu kódu.
 
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Proč neexistuje konkrétní „povinné povolené datum“? 
 Načasování vydání aktualizace je variabilní, načasování aktualizace prostředí je variabilní a zákazníci si mohou vybrat, že některé aktualizace přeskočí. V důsledku toho je obtížné určit konkrétní data. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Kde je dokumentace pro povinné funkce? 
-Tato dokumentace pochází od aplikačních týmů. Často budou zmiňovány v části [Odebrané nebo zastaralé funkce](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Kde je dokumentace pro povinné funkce? 
+Tato dokumentace pochází od každého aplikačního týmu Dynamics 365. Tyto funkce budou často zmíněny v článcích [Aktualizace stavů funkcí klienta](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) nebo [Odebrané nebo zastaralé funkce](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Existuje oznámení v rámci produktu nebo signál, že funkce bude povinně povolena? 
 V současné době neexistuje mechanismus oznamování týkající se povinné funkce.
 
 ### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Jsou funkce někdy povoleny, aniž by o tom zákazník věděl? 
-Ano, pokud funkce nemá funkční dopad, lze ji ve výchozím nastavení povolit.
+Ano, funkce lze povolit bez vědomí zákazníka v následujících situacích:
+- Funkce je přesunuta do stavu **Ve výchozím nastavení zapnuto**. V tomto stavu lze tuto funkci stále zakázat. 
+- Funkce je aktualizována na stav **Povinné**. Tato změna nastane pouze v kombinaci s hlavní verzí. Kriticky důležité funkce mohou být výjimečně přesunuty do stavu **Povinné** při jakékoli aktualizaci.
 
 ### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Co je to testovací funkce a jak souvisí se správou prvků? 
 Testovací funkce jsou přepínače v reálném čase, které řídí společnost Microsoft. Jsou odděleny od zákaznické kontroly poskytované Správou funkcí. 
@@ -203,3 +230,6 @@ IFeatureLifecycle je interní mechanismus Microsoftu pro označení fáze život
 - `PublicPreview` – Zobrazuje se ve výchozím nastavení, ale s upozorněním, že funkce je ve verzi Preview.
 - `Released` - Plně uvolněno.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

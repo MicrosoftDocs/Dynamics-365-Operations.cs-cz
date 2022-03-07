@@ -1,28 +1,25 @@
 ---
 title: Nastavení scénáře pro IoT Intelligence
 description: Tohle téma vysvětluje, jak konfigurovat scénáře pro IoT Intelligence v Microsoft Dynamics 365 Supply Chain Management.
-author: robinarh
-manager: tfehr
+author: tonyafehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424063"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782420"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Nastavení scénáře pro IoT Intelligence
 
@@ -45,7 +42,7 @@ Scénář **Výpadky zařízení** má tyto závislosti:
 Pro nakonfigurování scénáře postupujte takto.
 
 1. Přihlaste se k aplikaci Supply Chain Management.
-2. Povolte příznak funkce IoT Intelligence. Další informace naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+2. Povolte příznak funkce IoT Intelligence. Další informace naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Nakonfigurujte metriky. Další informace naleznete v části [Konfigurace metrik](iot-metrics-setup.md#configure-metrics).
 4. Přejděte na **Řízení výroby \> Nastavení \> IoT Intelligence \> Správa scénářů**.
 6. Na dlaždici **Výpadky zařízení** volbou **Konfigurovat** otevřete průvodce konfigurací.
@@ -143,3 +140,6 @@ Pokud chcete zakázat scénář, postupujte takto.
 2. Na dlaždici scénáře vyberte **Konfigurovat**.
 3. Volbou **Další** přejděte na poslední stránku průvodce.
 4. Nastavte možnost pro zákaz scénáře.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

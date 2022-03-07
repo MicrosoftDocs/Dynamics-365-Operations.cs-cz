@@ -2,28 +2,25 @@
 title: Přeřazení krátkodobé části leasingového závazku
 description: Toto téma vysvětluje, jak vytvořit měsíční zápis do deníku k reklasifikaci části závazku z leasingu jako krátkodobého.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: Dialog
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 46bcd396c93bc1d2944241165d438f8ccc013e20
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 21cf81ce84d91d88a800cd250fca8fd5a9c876e66f506cd366b8d61ed480ea7e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720615"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>Přeřazení krátkodobé části leasingového závazku
 
@@ -39,5 +36,7 @@ Chcete-li vytvořit a zaúčtovat záznam deníku reklasifikace krátkodobých z
 2. V dialogovém okně **Dávkové vytvoření deníku** v poli **Vybrat plán** vyberte **Přeřazení závazků z krátkodobého pronájmu**.
 3. V poli **Leasingová skupina** vyberte leasingovou skupinu. Případně v poli **ID knihy** vyberte ID knihy.
 4. Zapněte parametr **Zaúčtovat**. Případně, pokud by měl být záznam vytvořen, ale ne zaúčtován, ponechte tento parametr vypnutý.
-5. Zapněte parametr **Náhled před zveřejněním** k zobrazení záznamu před jeho zaúčtováním.
-6. Vyberte **OK**.
+5. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,22 @@
 title: Vytvoření subdodavatelské pracovní buňky pro lean manufacturing
 description: K modelování práce subdodávky pro lean manufacturing je nutné vytvořit pracovní buňku přidruženou k dodavateli, který zajišťuje práci.
 author: cvocph
-manager: tfehr
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bc1e8551bbebd11cad18d47f9e74a2dedcb908d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0dc1e28202c42502cbec0f0066863d24d4396c88
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423525"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828891"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Vytvoření subdodavatelské pracovní buňky pro lean manufacturing
 
@@ -71,3 +68,6 @@ K modelování práce subdodávky pro lean manufacturing je nutné vytvořit pra
 24. V poli Jednotka klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 25. Vyřešit změny jednotky.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

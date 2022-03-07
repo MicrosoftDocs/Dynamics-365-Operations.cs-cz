@@ -2,25 +2,22 @@
 title: Strategie doplňování
 description: Toto téma poskytuje informace o strategiích doplňování a vysvětluje, jak můžete pomocí pole Strategie doplňování na řádcích šablon doplňování poptávky vlny vybrat, jak se doplnění provádí.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646126"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814505"
 ---
 # <a name="replenishment-strategies"></a>Strategie doplňování
 
@@ -115,3 +112,6 @@ Výsledky se liší kvůli informacím, které jsou k dispozici při vytvářen�
 [![Příklad 2](media/ReplenTemp_example_2.png "Příklad 2")](media/ReplenTemp_example_2_large.png)
 
 Chcete-li tedy získat maximální množství na doplněná místa, měli byste nastavit možnost **Povolit rozdělení** na *Ano* na směrnicích skladového místa pro výdej doplňování.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

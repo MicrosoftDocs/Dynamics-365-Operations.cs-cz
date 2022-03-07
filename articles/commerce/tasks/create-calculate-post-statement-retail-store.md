@@ -2,11 +2,9 @@
 title: Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
 description: Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ef31bc02fe1761a587ff6bcbecf4a0f34daea9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58900ca4d3f6893689822a8cc5657d8c91772f65
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964863"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798530"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
 
@@ -47,3 +45,6 @@ Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování v
 12. Na domovské stránce vyberte **Finance obchodu**.
 13. Vyberte kartu **Publikované výkazy**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

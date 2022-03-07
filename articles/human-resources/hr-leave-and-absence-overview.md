@@ -1,31 +1,32 @@
 ---
 title: Přehled pracovního volna a absencí
-description: V aplikaci Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní rámec pro vytváření nových plánů pracovního volna. Poskytuje také pracovní postupy pro správu požadavků a intuitivní samoobslužnou stránku pro zaměstnance, kteří požadují pracovní volno.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/01/2020
-ms.topic: article
+description: V aplikaci Dynamics 365 Human Resources poskytuje pracovní prostor Pracovní volno a absence flexibilní rámec pro vytváření nových plánů pracovního volna.
+author: twheeloc
+ms.date: 10/28/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 344b4bba144a311530ce7be3b4bc230ce9cf8d1a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417688"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069014"
 ---
 # <a name="leave-and-absence-overview"></a>Přehled pracovního volna a absencí
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources vám pomáhá poskytovat vašim pracovníkům skvělé benefity ve formě pracovního volna. Pracovní prostor **Pracovní volno a absence** poskytuje flexibilní rámec pro vytváření nových plánů pracovního volna. Poskytuje také pracovní postupy pro správu požadavků a intuitivní samoobslužnou stránku pro zaměstnance, kteří požadují pracovní volno. Analýza pomáhá organizaci měřit a monitorovat zůstatky pracovního volna a využití plánů pracovního volna.
 
@@ -36,6 +37,7 @@ Před vytvořením plánů pro zaměstnance, je nutné provést několik kroků 
 - [Konfigurace parametrů pracovního volna a absence](hr-leave-and-absence-parameters.md)
 - [Vytvoření kalendáře pracovní doby](hr-leave-and-absence-working-time-calendar.md)
 - [Vytvoření workflow žádosti o pracovní volno](hr-leave-and-absence-workflow.md)
+- [Nakonfigurujte roli správce nepřítomnosti](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Vytvoření a správa plánů pracovního volna
 
@@ -51,6 +53,10 @@ Před vytvořením plánů pracovního volna pro pracovníky je nutné vytvořit
 
 Zaměstnanci mohou odesílat žádosti o volno a spravovat je v pracovním prostoru **Samoobsluha zaměstnanců**.
 
-[Žádost o volno](hr-employee-self-service-request-time-off.md)
-[Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
+- [Požádat o volno](hr-employee-self-service-request-time-off.md)
+- [Správa žádostí o pracovní volno a absenci](hr-employee-self-service-manage-requests.md)
+- [Nakonfigurujte roli správce nepřítomnosti](hr-configure-absence-manager.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,27 @@
 ---
 title: Generování statistické základní prognózy
 description: Toto téma obsahuje informace o parametrech a filtrech, které se používají při výpočtu prognózy poptávky.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8f34f1721b6215ac09173a346c1f3f1e6b262247
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424056"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577521"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generování statistické základní prognózy
 
@@ -70,11 +67,13 @@ Pokud se prognóza nevygeneruje pro velkou sadu položek, ale například vždy 
 > [!NOTE]
 > Potenciálně plochá prognóza může být způsobena historickými daty, která musí být delším historickým časovým obdobím (minimální doba 3 v případě, že chcete vyřadit vzorky, například tři roky s měsíční prognózou). Pokud chcete získat lepší výsledek, můžete se pokusit změnit rozlišovací schopnost časového rozsahu nebo vytvořit časový rozsah.
 
-<a name="additional-resources"></a>Další prostředky
---------
+## <a name="additional-resources"></a>Další prostředky
 
 - [Nastavení prognózy poptávky](demand-forecasting-setup.md)
 
 - [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
 - [Autorizace upravené prognózy](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ecdd377d12faf40f64736e93671dcf42ff132403
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920691"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6249068"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Množství překračuje procento nedostatečné dodávky během generování dodacího listu
 
@@ -49,8 +49,8 @@ Následujícím postupem upravte procento nedostatečné dodávky.
 
 1. Přejděte na **Pohledávky \> Objednávky \> Všechny objednávky**.
 1. Vyberte prodejní objednávku, u které nemůžete zaúčtovat dodací list pro náklad.
-1. Na kartě **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, který přesahuje procento nedostatečné dodávky.
-1. Na kartě **Podrobnosti řádku** vyberte možnost **Doručení**.
+1. Na kartě  **Řádky prodejní objednávky** vyberte řádek prodejní objednávky, který přesahuje procento nedostatečné dodávky.
+1. Na kartě  **Detaily řádku** vyberte možnost **Doručení**.
 1. Nastavte pole **Nedostatečná dodávka** na větší procento, které odpovídá množství, které bylo vyskladněno oproti množství naložení, aby mohlo pokračovat generování dodacího listu.
 
 ### <a name="reverse-and-make-adjustments"></a>Proveďte storno a úpravy
@@ -60,14 +60,14 @@ Stornujte vše, co bylo zaúčtováno pro náklad (například dodací list, pot
 Následujícím postupem zrušíte dodací list.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno dodacích listů**.
+1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno dodacích listů**.
 
 Následujícím postupem stornujete potvrzení zásilky.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně akcí na kartě **Odeslat a přijmout** ve skupině **Stornování** vyberte **Storno potvrzení zásilky**.
+1. V podokně akcí na kartě  **Odeslat a přijmout** ve skupině  **Stornování** vyberte **Storno potvrzení zásilky**.
 
 Storno práce můžete provést následujícím postupem.
 
 1. Přejděte na **Řízení skladu \> Náklady \> Všechny náklady**.
-1. V podokně Akce na kartě **Náklady** ve skupině **Práce** vyberte **Stornovat práci**.
+1. V podokně Akce na kartě  **Náklady** ve skupině  **Práce** vyberte  **Stornovat práci**.

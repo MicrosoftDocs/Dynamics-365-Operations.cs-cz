@@ -2,36 +2,30 @@
 title: Práce se šablonami
 description: Toto téma popisuje, jak pracovat s šablonami v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410796"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090787"
 ---
 # <a name="work-with-templates"></a>Práce se šablonami
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak pracovat s šablonami v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Jak bylo uvedeno v [Přehledu šablon a rozvržení](templates-layouts-overview.md), šablony definují sadu možností, které jsou k dispozici pro navazující autory. Šablony jsou užitečné pro tým pro vytváření webů v podniku z několika důvodů a dobře strukturované šablony vám mohou pomoci se všemi následujícími cíli:
 
@@ -44,7 +38,7 @@ Jak bylo uvedeno v [Přehledu šablon a rozvržení](templates-layouts-overview.
 - Zachovejte podnikové weby ve schváleném vzhledu definováním sady uspořádání modulů a možností konfigurace.
 
     > [!TIP] 
-    > Úspěšné weby e-Commerce poskytují zákazníkům známé, opakovatelné firemní vzory návrhu (UX). Pomocí šablon můžete ovládat konzistenci v celém webu.
+    > Úspěšné weby elektronického obchodu poskytují zákazníkům známé, opakovatelné firemní vzory návrhu (UX). Pomocí šablon můžete ovládat konzistenci v celém webu.
 
 - Zvyšte skóre optimalizace vyhledávače (SEO) tak, že zaručíte opakované a programově definované definice stránek a metadata.
 
@@ -55,7 +49,7 @@ Jak bylo uvedeno v [Přehledu šablon a rozvržení](templates-layouts-overview.
 
 Šablony jsou upravovány pomocí editoru šablon.
 
-Chcete-li otevřít editor šablon, postupujte jedním z následujících kroků:
+Chcete-li otevřít editor šablon v konfigurátoru webů Commerce, postupujte podle jednoho z těchto kroků:
 
 - V navigačním podokně webu vyberte možnost **Šablony** a poté vyberte šablonu, kterou chcete upravit.
 - V editoru stránek pro existující stránku vyberte horní uzel ve stromu osnovy vlevo. Potom v podokně vlastností vpravo vyberte vlastnost **Upravit šablonu**.
@@ -70,9 +64,9 @@ V zobrazení stromové struktury osnovy na levé straně jsou zobrazeny možnost
 | Max. moduly (kontejnery) | U modulů kontejnerů tato vlastnost definuje maximální počet modulů celkem, které by měly být přidány jako podřízené. Například pro modul karusel může být hodnota nastavena na číslo, které je menší než 10. |
 | Uzamčeno | **Zamčený** ovládací prvek logické hodnoty se zobrazí vedle všech vlastností základního modulu. To umožňuje autorovi šablony zamknout nastavení modulu v šabloně. Zamknuté nastavení modulu nelze přepsat žádnými podřízenými rozloženími nebo stránkami. Stane se centrálně upravitelnou hodnotou vlastnosti pro všechna rozložení a stránky, které šablonu používají. |
 
-## <a name="create-a-new-template"></a>Vytvořte novou šablonu
+## <a name="create-a-new-template"></a>Vytvořit novou šablonu
 
-Při vytváření nové šblony postupujte takto.
+Novou šablonu vytvoříte v konfigurátoru webů Commerce tímto postupem.
 
 1. V navigačním podokně webu vyberte možnost **Šablony**, chcete-li otevřít zobrazení inspektoru šablon.
 1. vyberte **Nová šabllona**.
@@ -91,7 +85,7 @@ V modulu kontejnerů nové stránky se zobrazí nová sada slotů (**Záhlaví**
 
 ## <a name="add-a-header-and-a-footer"></a>Vložení záhlaví a zápatí
 
-Pokud již na webu existuje fragment záhlaví, přidejte pomocí následujícího postupu záhlaví a zápatí do šablony.
+Pokud již na webu existuje fragment záhlaví, přidejte pomocí následujícího postupu v konfigurátoru webů záhlaví a zápatí do šablony.
 
 1. Ve stromu osnovy rozbalte oblast **Obsah** a její podřízený modul stránky.
 1. Vyberte slot **Záhlaví**.
@@ -104,7 +98,7 @@ Pokud váš web dosud neobsahuje fragment záhlaví, vyhledejte informace o [Vyt
 
 ## <a name="change-the-template-theme"></a>Změna motivu šablony
 
-Chcete-li nastavit výchozí motiv pro všechny stránky používající šablonu, postupujte následujícím způsobem.
+Chcete-li nastavit výchozí motiv pro všechny stránky používající šablonu, postupujte v konfigurátoru webů následujícím způsobem.
 
 1. Ve stromu osnovy stránky nalevo rozbalte slot **Hlavní část**.
 1. Ve slotu **Hlavní obsah** vyberte modul kontejneru stránky (například **Výchozí stránka**).
@@ -116,7 +110,7 @@ Ve výchozím nastavení budou nyní všechny nové stránky používat vybraný
 
 Do šablony můžete přidat prvky **&lt;skriptu&gt;** HTML, které obsahují JavaScript. Tímto způsobem můžete poskytnout výchozí chování skriptu k záhlaví HTML, začátku hlavního obsahu a konce základního obsahu na vašich sránkách.
 
-Chcete-li přidat skript do šablony, postupujte takto.
+Chcete-li přidat skript do šablony v rámci konfigurátoru webu, postupujte podle následujících kroků.
 
 1. Ve stromu osnovy vlevo vyberte slot, do něhož chcete přidat prvek **&lt;skriptu&gt;** (například záhlaví HTML, začátek hlavního obsahu či konec hlavního obsahu).
 1. Vyberte tlačítko se třemi tečkami pro slot a poté vyberte možnost **Přidat modul**.
@@ -129,7 +123,7 @@ Chcete-li přidat skript do šablony, postupujte takto.
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Uložení, navrácení se změnami, náhled a publikování šablony
 
-Chcete-li uložit a vrátit se změnami šablonu, postupujte následujícím způsobem.
+Chcete-li v konfigurátoru webů uložit a vrátit se změnami šablonu, postupujte následujícím způsobem.
 
 1. V horní části editoru šablon vyberte **Uložit**. Uložené změny nemají vliv na navazující stránky, dokud nejsou vráceny se změnami.
 1. Vyberte **Dokončit úpravy**. Vaše změny jsou nyní zjistitelné pro navazující workflowy.
@@ -145,8 +139,23 @@ Po zobrazení náhledu změn vašich šablon můžete publikovat šablonu na akt
 > [!WARNING]
 > Pokud je publikována šablona nebo jakákoli jiná položka systému správy obsahu (CMS), je zjistitelná na internetu. Nepublikujte dokumenty nebo materiály, dokud je nebudete moci zveřejnit. Verze dokumentů, které byly uloženy a vráceny se změnami, ale dosud nebyly publikovány, jsou zjistitelné pouze pro ověřené uživatele systému.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="rename-a-template"></a>Přejmenování šablony
+
+Stávající šablonu přejmenujete v konfigurátoru webů tímto postupem.
+
+1. V levém navigačním podokně vyberte položku **Šablony**.
+1. Vyberte název šablony, který chcete změnit.
+1. Výběrem příkazu **Upravit** začněte úpravu šablony. Upozorňujeme, že šablonu nelze upravit, pokud ji již upravuje někdo jiný.
+1. V podokně vlastností šablony vyberte symbol pera vedle názvu šablony.
+1. Podle potřeby upravte název šablony.
+1. Zaškrtnutím políčka potvrďte změnu názvu.
+1. Vyberte **Dokončit úpravy**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Práce s přednastavenými rozloženími](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

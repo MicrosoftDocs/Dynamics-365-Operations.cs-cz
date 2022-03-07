@@ -1,36 +1,34 @@
 ---
 title: Nastavení školících kurzů
 description: Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5923da86459e02013b1b05e3d814e963d77925d3
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417698"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465142"
 ---
 # <a name="set-up-training-courses"></a>Nastavení školících kurzů
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.
 
- <a name="set-up-prerequisites"></a> Nastavení předpokladů
----------------------
+##  <a name="set-up-prerequisites"></a> Nastavení předpokladů
 
 Před vytvořením kurzů je nutné znát a nastavit následující informace.
 -   **Typy kurzů**
@@ -82,7 +80,7 @@ U každého kurzu můžete provést následující úlohy.
 - Definovat minimální a maximální počet účastníků
 - Přiřadit místo konání kurzu a učebnu
 - Doporučit hotely účastníkům kurzu
-- Vytvořit popis kurzu, který je poté možné zveřejnit na portálu Samoobsluha pro zaměstnance
+- Vytvořit popis kurzu, který je poté možné zveřejnit na portálu **Samoobsluha pro zaměstnance**
 
   >**Poznámka** Kurz lze odstranit pouze v případě, že do něj není nikdo zaregistrován. 
 
@@ -128,8 +126,7 @@ V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze pro
 ## <a name="course-participants"></a>Účastníci kurzu
 Účastníci kurzu jsou pracovníci, kteří se účastní školicího kurzu nebo události. Účastníky můžete registrovat pouze pro otevřené kurzy. Maximální a minimální počty účastníků, které lze do kurzu registrovat, jsou uvedeny na pevné záložce **Obecné** na stránce **Kurzy**.
 
-<a name="workflow"></a>Workflow
---------
+## <a name="workflow"></a>Workflow
 
 Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro zaměstnance**, může být registrace nasměrována do workflowu pro schválení. Workflow lze přiřadit ke kurzu na pevné záložce **Obecné** na stránce **Kurzy**.
 
@@ -137,3 +134,6 @@ Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,32 @@
 ---
 title: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
-description: Tento článek vysvětluje, jak uložit průvodce záznamem úloh do Microsoft Dynamics Lifecycle Services (LCS) a poté je opětovně přehrát.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, jak uložit průvodce záznamem úloh do Microsoft Dynamics Lifecycle Services (LCS) a poté je opětovně přehrát.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54251aed1a54f626e5cd6cbd983e3eb4589a02e8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417639"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068352"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Podrobnosti o prostředí** 
 
@@ -34,7 +36,7 @@ Microsoft Dynamics 365 Human Resources, která byla nasazena pomocí služby Mic
 
 Zákazník chce uložit nové záznamy úlohy do projektu LCS a poté uložené průvodce záznamem úloh přehrát.
 
-**Řešení**
+**Rozlišení**
 
 Chcete-li uložit záznam úloh do LCS, postupujte takto:
 
@@ -53,7 +55,7 @@ Chcete-li uložit záznam úloh do LCS, postupujte takto:
 10. Vytvořit záznam úkolů.
 11. Po dokončení zvolte **Uložit ve službách Lifecycle Services**.
 
-    ![Uložit ve službách Lifecycle Services](media/task-guides.png)
+    ![Uložit ve službách Lifecycle Services.](media/task-guides.png)
 
 12. Vyberte BPM knihovnu a uzel, do kterého chcete uložit záznam úloh.
 
@@ -63,3 +65,6 @@ Postupujte podle těchto kroků k opětovnému přehrání průvodce záznamem �
 2. Zvolte **Otevřít z LCS**.
 3. Vyberte knihovnu a BPM uzel, který má uloženého průvodce záznamem úloh.
 4. Otevřete průvodce záznamem úloh.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Zobrazit expediční týmy
 description: Zobrazte expediční týmy.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e83e7008c2547ba0d9e7061772db825e69469a0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3cab1269bd5c11a6aa4484208c5b7c07e766c508
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423965"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824191"
 ---
 # <a name="view-dispatch-teams"></a>Zobrazit expediční týmy   
 
@@ -53,3 +50,6 @@ Informace o přiřazování pracovníka týmu naleznete v tématu [Nastavení up
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

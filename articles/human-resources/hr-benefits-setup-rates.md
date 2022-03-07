@@ -2,15 +2,12 @@
 title: Konfigurace sazeb
 description: Sazby v Microsoft Dynamics 365 Human Resources definují, jakým způsobem přispívají zaměstnavatelé a zaměstnanci k zaměstnanecké výhodě.
 author: andreabichsel
-manager: AnnBe
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417656"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266650"
 ---
 # <a name="configure-rates"></a>Konfigurace sazeb
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Sazby v Microsoft Dynamics 365 Human Resources definují, jakým způsobem přispívají zaměstnavatelé a zaměstnanci k zaměstnanecké výhodě. Hodnota může být v závislosti na konfiguraci částka nebo pružné kredity.
 
@@ -47,7 +46,7 @@ Pomocí sazeb lze určit, kolik zaměstnanců a zaměstnavatelů platí na jedno
    | **Vypršení platnosti** | Koncové datum sazby Výchozí hodnota je 12/31/2154 (což znamená nikdy). |
    | **Použít úrovně** | Úroveň, která má být použita pro výpočet sazby zaměstnaneckých výhod. Jediná úroveň pro jednu sazbu zaměstnaneckých výhod nebo dvojnásobná úroveň pro sazbu zaměstnaneckých výhod dvou úrovní. Příkladem dvojité úrovně je úroveň založená na pohlaví a věku. |
    | **Frekvence plateb** | Četnost plateb, která určuje, jak často je sazba příplatku na zaměstnanecké výhody placena zprostředkovatelem zaměstnaneckých výhod. Je-li například četnost plateb měsíční, představuje zaměstnanecká sazba měsíční částku platby. |
-   | **Zaokrouhlení sazby platební frekvence** | Způsob zaokrouhlení sazby: standardní nebo zkrácené. |
+   | **Zaokrouhlení sazby platební frekvence** | Metody zaokrouhlování kurzu jsou: Standardní, Zkrácené, Normální, Dolů a Zaokrouhlování nahoru. </br></br><ul><li>**Standard** - Vždy zaokrouhlit nahoru. Například 10,611 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,23. </li><li>**Zkráceno** - Vždy zaokrouhlit dolů. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,24. </li><li>**Normální** - Desetinná místa končící nebo větší než 5 se zaokrouhlují směrem od nuly. Desetinné hodnoty končící na nebo menší než 4 se zaokrouhlují na nulu. Například 10,615 se zaokrouhlí na 10,62. -10,235 se zaokrouhlí na -10,24. 10,614 se zaokrouhlí na 10,61. -10,234 se zaokrouhlí na -10,23. </li><li>**Dolů** - Zaokrouhlit na nulu. Například 10,619 se zaokrouhlí na 10,61. -10,231 se zaokrouhlí na -10,23. </li><li>**Zaokrouhlování nahoru** - Zaokrouhlení nahoru. Například 10,619 se zaokrouhlí na 10,62. -10,231 se zaokrouhlí na -10,24. |
    | **Částka zaměstnance nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
    | **Částka zaměstnavatele nekuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který nekouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
    | **Částka zaměstnance kuřáka** | Částka, kterou poskytovatel zaměstnaneckých výhod účtuje za zaměstnance, který kouří. Jedná se o částku, kterou zaměstnavatel zaplatí poskytovateli zaměstnaneckých výhod a měla by být založena na četnosti plateb pro nastavení sazby. |
@@ -93,3 +92,6 @@ Můžete také používat dvojí úrovně. Pokud pro hodnotu **Použít úrovně
    | **Sazba flexibilního kreditu kuřáka** | Počet flexibilních kreditů pro náklady na zaměstnanecké výhody na základě výpočtu definovaného pro úroveň úrovně pro kuřáky. |
 
 5. Zvolte **Uložit**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

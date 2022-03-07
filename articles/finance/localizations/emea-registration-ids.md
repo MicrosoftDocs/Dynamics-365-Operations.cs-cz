@@ -2,27 +2,24 @@
 title: ID registrace
 description: Toto téma poskytuje informace o nastavení a používání ID registrace.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782809"
 ---
 # <a name="registration-ids"></a>ID registrace
 
@@ -58,7 +55,7 @@ Registrace kategorie je identifikátor registrace země/oblasti, schválený pro
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
 
-Globální adresář (GAB) obsahuje konsolidované informace o adresách zákazníků, dodavatelů, kontaktů, obchodních vztahů a právnických osob. Další informace viz [Přehled globálního adresáře](../../fin-and-ops/organization-administration/overview-global-address-book.md). Záznamy strany, které jsou uloženy v globálním adresáři , mohou obsahovat jeden nebo více záznamů. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID pro informace o adrese zákazníků, dodavatelů, pracovníků a právnických osob. Najděte záznam strany (právnická osoba, dodavatel, zákazník, pracovník), pro kterou chcete zadat ID registru, a klepněte na tlačítko **ID registrace** ve formulářích týkajících se strany, právnické osoby, dodavatele, zákazníka nebo pracovníka, k otevření stránky **Spravovat adresy**. Na kartě **Daňová registrace** klepněte na tlačítko **přidat** a zadejte následující informace o ID registrace.
+Globální adresář (GAB) obsahuje konsolidované informace o adresách zákazníků, dodavatelů, kontaktů, obchodních vztahů a právnických osob. Další informace viz [Přehled globálního adresáře](../../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md). Záznamy strany, které jsou uloženy v globálním adresáři , mohou obsahovat jeden nebo více záznamů. Tyto adresy se používají k různým účelům, například k fakturaci nebo dodávce. Můžete nastavit registrační ID pro informace o adrese zákazníků, dodavatelů, pracovníků a právnických osob. Najděte záznam strany (právnická osoba, dodavatel, zákazník, pracovník), pro kterou chcete zadat ID registru, a klepněte na tlačítko **ID registrace** ve formulářích týkajících se strany, právnické osoby, dodavatele, zákazníka nebo pracovníka, k otevření stránky **Spravovat adresy**. Na kartě **Daňová registrace** klepněte na tlačítko **přidat** a zadejte následující informace o ID registrace.
 
 
 |Pole                |popis                                                |
@@ -112,3 +109,6 @@ Další informace o zpracování ID registrace, včetně nezbytných předpoklad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

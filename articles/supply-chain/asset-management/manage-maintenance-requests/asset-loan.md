@@ -1,12 +1,10 @@
 ---
 title: Zapůjčený majetek
 description: Toto téma popisuje, jak registrovat zapůjčený majetek v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752843"
 ---
 # <a name="asset-loans"></a>Zapůjčený majetek
 
@@ -46,7 +44,7 @@ Pokud vaše společnost obdrží aktiva pro práce opravy nebo údržby z intern
 
 Chcete-li zobrazit seznam všech majetků, které jste zapůjčili na jiná místa nebo jiným zákazníkům, vyberte možnost **Správa majetku** \> **Společné** \> **Zapůjčený majetek** \> **Všechen zapůjčený majetek**. Pokud je u majetku zaškrtnuto políčko **ukončeno**, byl majetek registrován jako vrácený do vaší společnosti.
 
-![Správa požadavků na údržbu](media/06-manage-maintenance-requests.png)
+![Správa požadavků na údržbu.](media/06-manage-maintenance-requests.png)
 
 Na stránce **aktivní zapůjčený majetek** můžete zobrazit seznam všeho zapůjčeného majetku, který nebyl ještě vrácen do vaší společnosti.
 
@@ -57,3 +55,6 @@ Na stránce **aktivní zapůjčený majetek** můžete zobrazit seznam všeho za
 3. V poli **Vráceno** zadejte datum a čas.
 4. Vyberte **OK**.
 5. Aktualizujte stránku seznamu **Aktivních zapůjčený majetek** a všimněte si, že se zapůjčený majetek již v seznamu nezobrazí.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

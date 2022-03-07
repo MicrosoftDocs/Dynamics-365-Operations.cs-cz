@@ -1,34 +1,30 @@
 ---
-title: Servisní zakázky
-description: Servisní zakázka představuje návštěvu servisního technika u zákazníka ve stanovený den.
-author: ShylaThompson
-manager: tfehr
+title: Počet servisních zakázek
+description: Toto téma poskytuje přehled práce se servisními zakázkami.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423498"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566112"
 ---
-# <a name="service-orders"></a>Servisní zakázky   
+# <a name="service-orders"></a>Počet servisních zakázek
 
 [!include [banner](../includes/banner.md)]
-
 
 Servisní zakázka představuje návštěvu servisního technika u zákazníka ve stanovený den. Každá servisní zakázka se skládá z jednoho nebo více řádků servisní zakázky. Řádky servisní zakázky představují hodiny práce, kterou musí provést servisní technik, a související položky, výdaje a poplatky.
 
@@ -42,19 +38,19 @@ Servisní zakázky lze také vytvořit samostatně jejich přidružení ke smlou
 
 
 > [!NOTE]
-> <P>K vytvoření servisních zakázek, které nejsou spojeny se servisní smlouvou, je nutné zaškrtnout políčko <STRONG>Povolit bez servisní smlouvy</STRONG> ve formuláři <STRONG>parametry správy servisu</STRONG>.</P>
+> K vytvoření servisních zakázek, které nejsou spojeny se servisní smlouvou, je nutné zaškrtnout políčko **Povolit bez servisní smlouvy** ve stránce **Parametry správy servisu**.
 
-**Scénář**
+### <a name="scenario"></a>Scénář
 
 Následující scénář popisuje jinou situaci, kdy je užitečné nejdříve vytvořit servisní zakázku, která není přidružena k servisní smlouvě.
 
-Dispečerka společnosti přijme telefonickou žádost o servis výtahu. Neexistuje žádný čas nastavení servisní smlouvy a projektu služby. Proto dispečerka vytvoří servisní zakázku přímo ve formuláři **servisní zakázky**, připojí servisní zakázku ke stávajícímu projektu a vytvoří řádky servisní zakázky. Kvůli zaznamenání práce, která nesouvisí se servisní smlouvou, může dispečerka vytvořit vztah s úkolem nebo předmětem stávající servisní zakázky. Další informace naleznete v tématu [ruční vytvoření servisních zakázek](create-service-orders-manually.md) a [vytvoření vztahů servisních úloh](create-service-task-relations.md).
+Dispečerka společnosti přijme telefonickou žádost o servis výtahu. Neexistuje žádný čas nastavení servisní smlouvy a projektu služby. Proto dispečerka vytvoří servisní zakázku přímo ve stránce **Servisní zakázky**, připojí servisní zakázku ke stávajícímu projektu a vytvoří řádky servisní zakázky. Kvůli zaznamenání práce, která nesouvisí se servisní smlouvou, může dispečerka vytvořit vztah s úkolem nebo předmětem stávající servisní zakázky. Další informace naleznete v tématu [ruční vytvoření servisních zakázek](create-service-orders-manually.md) a [vytvoření vztahů servisních úloh](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Sledování průběhu servisních zakázek
 
 Pokud chcete monitorovat pokrok servisní zakázky v různých týmech a pracovních procesech, můžete nastavit systém fází a kódů důvodu servisních zakázek. Pro každou fázi můžete zadat povolené akce: Další informace naleznete v tématu [Vytvoření kódů důvodu](create-reason-codes.md).
 
-**Příklad**
+### <a name="example"></a>Příklad
 
 Servisní zakázky je schválena dispečerkou. Ta provede aktualizaci fáze servisní zakázky a uvede kód důvodu, který označuje, že servisní zakázka byla uvolněna pro servisního technika. Technik navštíví zákazníka a realizuje servisní zakázku.
 
@@ -62,7 +58,7 @@ Servisní zakázky je schválena dispečerkou. Ta provede aktualizaci fáze serv
 
 Můžete určit skladové položky, které jsou požadovány pro servisní zakázky. Servisní zakázka však musí být spojena s projektem. Požadavky zboží pro objednávky služeb jsou zpracovávány prostřednictvím projektu. 
 
-**Příklad**
+### <a name="example"></a>Příklad
 
 Servisní zakázky, které jsou vytvořené ze servisních smluv, zpracuje dispečerka. U první servisní zakázky dispečerka zjistí, že servisní technik potřebuje důležitý náhradní díl, který momentálně není na skladě. Vytvoří proto pro náhradní díl požadavek na položku přímo ze servisní zakázky.
 
@@ -76,7 +72,7 @@ Jedna ze servisních zakázek, které byly vytvořeny v lednu, je zastaralá, pr
 
 ## <a name="post-from-projects"></a>Účtování z projektů
 
-Na konci každého týdne chce dispečerka zaúčtovat všechny servisní zakázky, které jsou připojené k určitému projektu. Proto dispečerka vyhledá příslušný projekt ve formuláři **projekty** a zaúčtuje servisní zakázky, které byly dokončeny. Další informace naleznete v tématu [Zaúčtování servisních zakázek (formulář třídy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+Na konci každého týdne chce dispečerka zaúčtovat všechny servisní zakázky, které jsou připojené k určitému projektu. Proto dispečerka vyhledá příslušný projekt ve stránce **Projekty** a zaúčtuje servisní zakázky, které byly dokončeny. Další informace naleznete v tématu [Zaúčtování servisních zakázek (formulář třídy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Odstranit servisní zakázky
 
@@ -89,3 +85,6 @@ Ve druhé polovině roku zákazník dospěje k závěru, že servisních zásah�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

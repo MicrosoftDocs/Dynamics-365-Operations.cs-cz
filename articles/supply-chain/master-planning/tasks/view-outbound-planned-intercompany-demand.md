@@ -1,27 +1,24 @@
 ---
 title: Zobrazení výstupní plánované mezipodnikové poptávky
-description: Tato procedura ukazuje, jak zobrazit všechny plánované objednávky, které budou splněny mezipodnikovým dodavatelem.
-author: ShylaThompson
-manager: tfehr
+description: Toto téma obsahuje postup ukazující, jak zobrazit odchozí plánovanou mezipodnikovou poptávku.
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 259ce229c18466b7d29fd231dc3f0be8a6906c6b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8cf2350d754c5da9d3d428e2b75950d027ccfd63
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423588"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569738"
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>Zobrazení výstupní plánované mezipodnikové poptávky
 
@@ -29,17 +26,18 @@ ms.locfileid: "4423588"
 
 Tato procedura ukazuje, jak zobrazit všechny plánované objednávky, které budou splněny mezipodnikovým dodavatelem. K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.
 
-1. Klikněte na Hlavní plánování.
-2. V poli Plán zadejte nebo vyberte hodnotu.
-    * V poli Plán vyberte plán 10.  
-3. Klikněte na položku Spustit.
-4. Do pole Počet vláken zadejte číslo.
+1. Vyberte **Hlavní plánování**.
+2. V poli **Plán** zadejte nebo vyberte hodnotu.
+    * V poli **Plán** vyberte plán *10*.  
+3. Vyberte *Spustit*.
+4. Do pole **Počet vláken** zadejte číslo.
     * To představuje počet paralelních podprocesů použitých pro hlavní plánování.  
-5. Klikněte na tlačítko OK.
+5. Vyberte **OK**.
     * Tato operace může chvíli trvat.  
-6. Klikněte na Plánovaná mezipodniková poptávka.
-7. Klikněte na Zobrazit výstupní plánovanou mezipodnikovou poptávku.
+6. Vyberte možnost **Plánovaná mezipodniková poptávka**.
+7. Vyberte možnost **Výstupní plánované mezipodniková poptávka**.
     * Tato stránka obsahuje přehled plánované poptávky, kterou splní dodavatel interního zásobovacího řetězce.  
-8. Rozbalte část Podrobnosti nadřazené poptávky.
+8. Rozbalte část **Podrobnosti nadřazené poptávky**.
     * V této části můžete zobrazit podrobnosti o tom, jak bude splněna poptávka. Než se zde zobrazí další informace, budete muset počkat na spuštění hlavního plánování v dodavatelské společnosti.  
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

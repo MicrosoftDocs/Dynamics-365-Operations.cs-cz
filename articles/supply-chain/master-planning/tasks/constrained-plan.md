@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8b9d5712dd1b4f9958de775e1a2224b64485d05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d238ffd7ee76dcb782931312a132545a89f537b5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423834"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214387"
 ---
 # <a name="generate-a-constrained-plan"></a>Vygenerování plánu s omezeními
 
@@ -53,3 +52,6 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. T
 3. Vyberte **OK**.
 4. Vyberte **Plánované objednávky**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

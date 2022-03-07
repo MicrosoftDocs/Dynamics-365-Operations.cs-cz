@@ -1,29 +1,27 @@
 ---
 title: Blokování úvěru pro prodejní objednávky
 description: V tomto tématu je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky.
-author: mikefalkner
-manager: AnnBe
-ms.date: 01/25/2019
+author: JodiChristiansen
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723960"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Blokování úvěru pro prodejní objednávky
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 V tomto tématu je popsáno nastavení pravidel používaných k blokování úvěru pro prodejní objednávky. Pravidla blokování správy úvěrů lze použít pro jednotlivé odběratele nebo pro skupinu odběratelů. Pravidla blokování definují odpovědi za následujících okolností:
 
@@ -44,6 +42,11 @@ Kromě toho existují dva parametry, které řídí další scénáře, jež bud
 
 Když odběratel zahájí prodejní transakci, informace o prodejní objednávce budou přezkoumány pomocí souboru pravidel blokování, která řídí rozhodnutí o tom, zda má nebo nemá být odběrateli poskytnut úvěr a umožněno pokračování prodeje. Můžete také definovat vyloučení, která zruší pravidla blokování a povolí zpracování prodejní objednávky. Pravidla blokování a pravidla vyloučení lze nastavit na stránce **Správa úvěru > Nastavení > Nastavení správy úvěru > Pravidla blokování**.
 
+Od verze 10.0.21 byla pravidla blokování ve správě kreditu přepracována následujícími způsoby, aby byla zajištěna větší flexibilita:
+
+- Byly povoleny požadavky na rozšiřitelnost, takže si můžete vytvořit vlastní pravidla blokování.
+- Zaškrtávací políčko **Uvolnit prodejní objednávku** je nyní k dispozici pro všechna pravidla blokování. Dříve bylo k dispozici pouze pro pravidlo blokování prodejní objednávky. Když je toto zaškrtávací políčko zaškrtnuto, pravidlo vyloučení uvolní prodejní objednávku, aniž by zohlednilo jiná pravidla, která mohou blokovat prodejní objednávky. Toto zaškrtávací políčko je k dispozici pouze pro typ pravidla **Vyloučení**.
+
 ### <a name="days-overdue"></a>Dny po splatnosti
 
 Otevřete záložku **Dny po splatnosti**, pokud se pravidlo blokování vztahuje na odběratele s jednou nebo více fakturami, které jsou určitý počet dní po splatnosti.
@@ -60,7 +63,7 @@ Otevřete záložku **Dny po splatnosti**, pokud se pravidlo blokování vztahuj
 5. Vyberte **Typ hodnoty**. Výchozí zadání je pevný počet dní. Pokud vytváříte vyloučení, můžete místo něj zadat pevný počet dní nebo částku. 
 6. Zadejte počet dnů u hodnoty **Po splatnosti**, které budou povoleny pro vybrané pravidlo blokování, než bude objednávka blokována pro správu úvěru pro účely kontroly. Počet dnů po splatnosti představuje další počet dní odkladu, který je přičten k počtu dní od data splatnosti, po jejichž uplynutí je faktura považována za fakturu v prodlení. Pokud jste zadali **Typ hodnoty** jako částku pro vyloučení, zadejte částku a měnu pro tuto částku.
 
-### <a name="accounts-status"></a>Stav účtů
+### <a name="account-status"></a>Stav účtu
 
 Pokud pravidlo blokování platí pro odběratele s vybraným stavem účtu, otevřete záložku **Stav účtu**.
 1. Vyberte typ pravidla, které nastavujete.  Možnost **Blokování** vytvoří pravidlo, které blokuje objednávku. **Vyloučení** vytvoří pravidlo, které bude vylučovat pravidlo z blokování objednávky. 
@@ -105,7 +108,7 @@ Pokud se pravidlo blokování vztahuje na odběratele s částkami po splatnosti
    - Chcete-li vytvořit pravidlo, které blokuje objednávku, vyberte možnost **Blokování**. 
    - Chcete-li vytvořit pravidlo, které vyloučí jiné pravidlo z blokování objednávky, vyberte možnost **Vyloučení**. 
 5. Zadejte hodnotu **Částka po splatnosti** pro vybrané pravidlo blokování, která označuje částku, při které bude objednávka blokována ve správě úvěrů za účelem kontroly. 
-6. Vyberte možnost **Typ hodnoty** definující typ hodnoty, který bude použit také k testování míry využití limitu úvěru. Pravidla blokování vyžadují procentní hodnotu, ale pro vyloučení lze nastavit pevnou částku nebo procentní hodnotu. Prahová hodnota se vztahuje k limitu úvěru.
+6. Vyberte možnost **Typ hodnoty** definující typ hodnoty, který bude použit také k testování míry využití limitu úvěru. Pravidla blokování a pravidla pro vyloučení umožňují procento pouze pro **Částka po splatnosti**. Prahová hodnota se vztahuje k limitu úvěru.
 7. Zadejte hodnotu **Prahová hodnota limitu úvěru** pro vybrané pravidlo, která odpovídá hodnotě, při které bude odběratel blokován ve správě úvěrů. Může se jednat o částku nebo procentní hodnotu podle typu hodnoty, který je vybrán v poli Typ hodnoty.
 8. Toto pravidlo kontroluje, zda je překročena **Částka po splatnosti** a **Prahová hodnota limitu úvěru**. 
 
@@ -125,8 +128,6 @@ Vyberte možnost **Prodejní objednávka**, pokud pravidlo blokování platí pr
    - Chcete-li vytvořit pravidlo, které blokuje objednávku, vyberte možnost **Blokování**. 
    - Chcete-li vytvořit pravidlo, které vyloučí jiné pravidlo z blokování objednávky, vyberte možnost **Vyloučení**. 
 5. Zadejte hodnotu **Částka prodejní objednávky** pro vybrané pravidlo blokování, která označuje částku, při které bude objednávka blokována ve správě úvěrů. 
-
-Pravidlo prodejní objednávky zahrnuje další nastavení, které ruší všechna ostatní pravidla. Chcete-li vytvořit vyloučení, které uvolní prodejní objednávku bez použití jakýchkoli jiných pravidel, označte políčko **Uvolnit prodejní objednávku** na řádku vyloučení.
 
 ### <a name="credit-limit-used"></a>Použitý úvěrový limit
 
@@ -265,3 +266,6 @@ Prodejní objednávky, které mají vynucený důvod blokování, nelze automati
 Správu úvěru lze aktuálně použít pouze pro prodejní objednávky. Volné faktury, místo prodejních objednávek a objednávky kontaktního střediska použijí dočasné limity úvěru a pojištění/záruk, které přidáte k úpravě limitu úvěru. Nebudou používat pravidla blokování a v případě potíží s limitem úvěru nebudou uloženy do seznamu blokování.
 
 Neexistuje podpora pro projektové faktury ve správě úvěrů.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

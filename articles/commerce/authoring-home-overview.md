@@ -1,37 +1,31 @@
 ---
-title: Přehled stránky pro vytváření obsahu
+title: Přehled stránky pro tvorbu
 description: Toto téma poskytuje přehled stránky pro vytváření obsahu v Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410762"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984614"
 ---
-# <a name="authoring-page-overview"></a>Přehled stránky pro vytváření obsahu
+# <a name="authoring-page-overview"></a>Přehled stránky pro tvorbu
 
   
  [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled stránky pro vytváření obsahu v Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Weby lze vytvářet za účelem podpory různých obchodních potřeb. Mohou představovat celou firmu, nabízet jeden kanál podniku nebo cílit na určitou cílovou skupinu nebo určitý její segment. Například výrobce oděvu může mít web, který obsahuje všechny značky, které vlastní. Stejný výrobce oděvů může poté mít pro každou z těchto značek oddělený web a také sadu webů s luxusní módou, venkovní módou nebo módou pro děti.
 
@@ -45,7 +39,7 @@ Stránka pro vytváření obsahu je v současné době tvořena následujícími
 
 Následující obrázek znázorňuje stránku pro vytváření obsahu.
 
-![Stránka pro vytváření obsahu Dynamics 365 Commerce](../commerce/media/authoring_tools_01.png)
+![Stránka pro vytváření obsahu Dynamics 365 Commerce.](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Vyberte nástroj pomocí tlačítka Domů
 
@@ -122,3 +116,6 @@ Po načtení nástroje pro tvorbu obsahu můžete vybrat možnost **Domů** a vr
 [Zvažování optimalizace webového vyhledávače pro váš web](search-engine-optimization-considerations.md)
 
 [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

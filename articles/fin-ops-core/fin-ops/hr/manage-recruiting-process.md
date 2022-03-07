@@ -1,12 +1,10 @@
 ---
 title: Řízení náborových procesů
-description: Tento článek popisuje koncept, který náboráři mohou použít pro sledování kroků v procesu náboru, včetně úsilí inzerovat otevřené pozice a provádět nábor uchazečů, sledovat informace v přihlášce a o uchazeči, vést pohovor s uchazeči a vybírat jednoho nebo více uchazečů pro naplnění otevřené pozice ve vaší organizaci.
+description: Toto téma popisuje koncept, který mohou náboráři použít ke sledování kroků v procesu náboru.
 author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798036"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965057"
 ---
 # <a name="manage-recruiting-processes"></a>Řízení náborových procesů
 
@@ -44,7 +42,7 @@ Náborové projekty umožňují náborářům a sledovat pokrok při obsazován�
 - Konečný termín přihlášky
 - Odhadované počáteční datum
 
-Náborový projekt obsahuje **Pracovní inzerát** použitý v **Samoobsluze pro zaměstnance** pro inzerování otevřené pozice. Pokud chcete zobrazit otevřenou pozici pro zaměstnance, musí mít náborový projekt **Pracovní inzerát**, pole **Zobrazit v samoobsluze pro zaměstnance** musí být nastaveno na hodnotu Ano, pole **Konečný termín přihlášky** musí být nastaven na budoucí datum a náborový projekt musí mít hodnotu **Stav projektu** Zahájeno. V následující tabulce jsou uvedeny možné stavy náborového projektu a jejich popis.
+Náborový projekt obsahuje hodnotu **Pracovní inzerát** použitý na stránce **Samoobsluha pro zaměstnance** pro inzerování otevřené pozice. Otevřenou pozici lze zaměstnancům zobrazit, pouze když má náborový projekt hodnotu **Pracovní inzerát**, pole **Zobrazit v samoobsluze** pro zaměstnance je nastaveno na hodnotu **Ano**, pole **Konečný termín přihlášky** je nastaven na budoucí datum a náborový projekt musí má hodnotu **Stav projektu** **Zahájeno**. V následující tabulce jsou uvedeny možné stavy náborového projektu a jejich popis.
 
 | Stav    | Udává, že...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -57,7 +55,7 @@ Náboráři mohou zaznamenávat také **Média** použitá pro reklamu volné po
 
 ## <a name="applicants"></a>Uchazeči
 
-Uchazeč je osoba, která se uchází o práci ve vaší společnosti. Uchazeče sdílejí všechny právnické osoby ve vaší organizaci a poskytují vám tak velký fond talentů, ve kterém můžete vyhledávat. Můžete spravovat odkazy, kompetence, požadavky a osobní údaje pro uchazeče. Při vytvoření záznamu žadatele se vytvoří osobní záznam tohoto uchazeče v globálním adresáři. Pomocí stránky **Uchazeč** můžete provádět aktualizace následujících informací pro globální adresář pro osoby, které jsou uchazeči:
+Uchazeč je osoba, která se uchází o práci ve vaší společnosti. Žadatelé jsou sdíleni všemi právnickými osobami ve vaší organizaci. Proto máte velkou zásobu talentů, ve kterých můžete hledat. Můžete spravovat odkazy, kompetence, požadavky a osobní údaje pro uchazeče. Při vytvoření záznamu žadatele se vytvoří osobní záznam tohoto uchazeče v globálním adresáři. Pomocí stránky **Uchazeč** můžete provádět aktualizace následujících informací pro globální adresář pro osoby, které jsou uchazeči:
 
 - Informace adresy
 - Kontaktní informace
@@ -86,7 +84,7 @@ Stav přihlášky označuje, kde se přihláška nachází v procesu náboru. V 
 
 ### <a name="correspondence-actions"></a>Akce korespondence
 
-Korespondenční akce **Přihlášky** určuje šablonu e-mailu nebo dokumentu, která se použije ke komunikaci s uchazečem, který podal přihlášku. Můžete přidružit **záložky přihlášek** kde korespondenčním akcím, což vám umožní použít hodnoty ze stránek Přihláška, Žadatel, Interview a Náborový projekt při komunikaci s uchazeči. **Šablony e-mailu aplikace** lze vytvářet pro akce korespondence k rychlému odeslání e-mailů uchazečům, kteří mají přihlášku s určitým stavem a kombinací akce korespondence. Můžete například odeslat e-mail s potvrzením všem uchazečům se **stavem** Přijato a **Akce korespondence** nastaveným na hodnotu Přijato. Po odeslání e-mailu, máte možnost automaticky aktualizovat stav žádostí.
+Korespondenční akce Přihlášky určuje šablonu e-mailu nebo dokumentu, která se použije ke komunikaci s uchazečem, který podal přihlášku. Můžete přidružit **záložky přihlášek** ke korespondenčním akcím, což vám umožní použít hodnoty ze stránek **Přihláška**, **Žadatel**, **Pohovor** a **Náborový projekt** při komunikaci s uchazeči. Vytvořením **šablon e-mailu aplikace** lze vytvářet pro akce korespondence k rychlému odeslání e-mailů uchazečům, jejichž přihláška má určitou kombinaci stavu akce a korespondence. Můžete například odeslat e-mail s potvrzením všem uchazečům s hodnotou **Stav** **Přijato** a hodnotou **Akce korespondence** **Přijato**. Po odeslání e-mailu máte možnost automaticky aktualizovat stav žádostí.
 
 ## <a name="application-routing"></a>Směrování přihlášek
 
@@ -103,3 +101,5 @@ Má-li přihlášku zkontrolovat několik pracovníků, lze pro vytvoření sezn
 ## <a name="hiring-applicants"></a>Přijímání uchazečů
 
 Pomocí stránky **Přihlášky** můžete najmou uchazeče. Při náboru žadatele bude mít záznam přihlášky stav **Zaměstnán** a osobní záznam uchazeče v globálním adresáři je přidružen k novému záznamu pracovníka. Změny informací v globálním adresáři pro nový záznam pracovníka je zobrazen také v záznamu žadatele. To vám může pomoci snížit objem zadávaní dat, pokud nový pracovník někdy zažádá o jinou pozici v rámci vaší organizace. Pokud chcete přijmout stávajícího pracovníka na novou pozici, klikněte na **Změnit pozici** v rozevíracím seznamu **Stav přihlášky** pro zahájení procesu převodu.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

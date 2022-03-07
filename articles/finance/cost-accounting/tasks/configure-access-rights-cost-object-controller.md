@@ -2,11 +2,9 @@
 title: Konfigurace přístupových práv pro kontrolora objektu nákladů
 description: Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontroloru objektu nákladů.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d6208e867bd322ddfc4e599856b1905fa8e19b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eef755dd9a44ce24d3bfb2953cf9a52e6a8ac849
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969371"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822872"
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurace přístupových práv pro kontrolora objektu nákladů
 
@@ -68,3 +66,6 @@ Pomocí tohoto postupu proveďte konfiguraci přístupových práv pro kontrolor
     * Pokud vyberete Ano, uživatel s přiřazenou některou z následujících čtyř rolí si může zobrazit sestavy v pracovním prostoru řízení nákladů: manažer nákladového účetnictví, nákladový účetní, úředník na pozici nákladového účetního nebo kontrolor objektu nákladů. Pokud vyberete Ne, pouze uživatel s přiřazenou některou z následujících rolí si může zobrazit sestavy: manažer nákladového účetnictví, nákladový účetní a úředník na pozici nákladového účetního.    
 9. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

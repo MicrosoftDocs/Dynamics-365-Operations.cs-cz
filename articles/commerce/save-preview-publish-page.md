@@ -2,27 +2,24 @@
 title: Uložení, náhled a publikování stránky
 description: Toto téma popisuje, jak uložit, zobrazit náhled a publikovat stránku v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 593c68e0934fa62d09c64b8d5d681697c3fb053ae6f4641ce2ae3104a03e0fba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718666"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Uložení, náhled a publikování stránky
 
@@ -100,3 +97,8 @@ Adresu URL publikujete takto.
 [Obohacení cílové stránky kategorie](enrich-category-page.md)
 
 [Ověření přístupnosti obsahu stránky](verify-accessibility.md)
+
+[Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

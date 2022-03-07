@@ -2,25 +2,27 @@
 title: Začínáme se správou služby Elektronické fakturace
 description: Toto téma poskytuje informace, jak začít s Elektronickou fakturací.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d039dd7f7384cd4af8705d767afe2cddfb166e93
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8adbe577e5111a6a4afdba6aed32855b2e30b39b
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984821"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335683"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Začínáme se správou služby Elektronické fakturace
 
@@ -31,7 +33,7 @@ ms.locfileid: "7984821"
 Než provedete postupy v tomto tématu, musí být splněny následující předpoklady:
 
 - Musíte mít přístup ke svému účtu Microsoft Dynamics Lifecycle Services (LCS).
-- Musíte mít projekt LCS, který obsahuje verzi 10.0.17 nebo novější nástroje Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management. Kromě toho musí být tyto aplikace nasazeny v jedné z následujících geografických oblastí Azure:
+- Musíte mít projekt LCS, který obsahuje verzi 10.0.17 nebo novější nástroje Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management. Kromě toho musí být tyto aplikace nasazeny v jedné z následujících geografických oblastí Azure:
 
     - Spojené státy americké
     - Evropa
@@ -45,20 +47,20 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Nainstalujte doplněk pro mikroslužby ve službě Lifecycle Services
 
 1. Přihlaste se do svého účtu LCS a na řídicím panelu projektů LCS vyberte projekt LCS.
-2. V projektu vyberte na řídicím panelu **prostředí** své prostředí pro nasazení. Prostředí, které vyberete, musí být spuštěné.
+2. V projektu vyberte na řídicím panelu prostředí svůj projekt nasazení LCS. Vybraný projekt musí být spuštěn.
 3. Na kartě **Integrace Power Platform** ve skupině polí **Doplňky prostředí** vyberte **Instalovat nový doplněk**.
 4. Vyberte **Nastavení elektronické fakturace**.
 5. V poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Toto je pevná hodnota.
-6. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure. Klient Azure Active Directory (Azure AD), kterého zadáte, by měl být stejný jako ten, který se používá pro RCS.
+6. V poli **ID klienta AAD** zadejte ID tenanta účtu předplatného Azure.
 7. Zkontrolujte smluvní podmínky a poté zaškrtněte políčko.
-8. Vyberte **Instalovat**. Instalace může trvat několik minut.
+8. Vyberte **Instalovat**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Nastavení parametrů pro integraci RCS s Elektronickou fakturací
 
 1. Přihlaste se k účtu RCS.
-2. V pracovním prostoru **Funkce globalizace** v části **Související nastavení** vyberte **Parametry elektronického výkaznictví**.
-3. Na kartě **Elektronická fakturace** v poli **Identifikátor URI koncového bodu služby** zadejte příslušný koncový bod služby pro vaši geografii Azure, jak je znázorněno v následující tabulce.
+2. V pracovním prostoru **Elektronické výkaznictví** v části **Související odkazy** vyberte **Parametry elektronického výkaznictví**.
+3. Na kartě **Služba elektronické fakturace** v poli **Identifikátor URI koncového bodu služby** zadejte příslušný koncový bod služby pro vaši geografii Azure, jak je znázorněno v následující tabulce.
 
     | Geografie datového centra Azure | URI adresa koncového bodu služby                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -67,7 +69,7 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
     | Spojené království             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Asie                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-4. Ověřte, zda je pole **ID aplikace** nastaveno na **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tato hodnota je pevná hodnota.
+4. Ověřte, zda je pole **Id aplikace** nastaveno na **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tato hodnota je pevná hodnota.
 5. V poli **ID prostředí LCS** zadejte ID prostředí LCS.
 6. Zvolte **Uložit** a pak zavřete stránku.
 
@@ -111,14 +113,12 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 8. Do pole **ID uživatele** zadejte alias uživatele. Do pole **E-mail** zadejte e-mailovou adresu uživatele.
 9. Zvolte **Uložit**.
 10. Pokud faktury pro vaši zemi/region vyžadují pro použití digitálních podpisů řetězec certifikátů, v podokně akcí vyberte **Parametry Key Vault** a poté zadejte **Sekvence certifikátů** a postupujte následovně:
-
     1. Vyberte **Nový** k vytvoření sekvence certifikátů.
     2. Do pole **Název** zadejte název sekvence certifikátů. Zadejte popis do pole **Popis**.
     3. V části **Certifikáty** vyberte **Přidat**, abyste přidali certifikát do sekvence.
     4. Pomocí tlačítek **Nahoru** a **Dolů** změňte polohu certifikátu v řetězci.
     5. Zvolte **Uložit** a pak zavřete stránku.
     6. Zavřete stránku.
-
 11. Na stránce **Prostředí služby** v podokně akcí vyberte **Publikovat**, chcete-li publikovat prostředí do cloudu. Hodnota pole **Stav** se změní na **Publikováno**.
 
 ## <a name="create-a-connected-application"></a>Vytvoření propojené aplikace
@@ -149,7 +149,7 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 ### <a name="set-up-the-service-endpoint-url"></a>Nastavte adresu URL koncového bodu služby
 
 1. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
-2. Na kartě **Elektronická fakturace** v poli **Adresa URL koncového bodu** zadejte příslušný koncový bod služby pro vaši geografii Azure, jak je znázorněno v následující tabulce.
+2. Na kartě **Služba odeslání** v poli **Identifikátor URL koncového bodu služby** zadejte příslušný koncový bod služby pro vaši geografii Azure, jak je znázorněno v následující tabulce.
 
     | Geografie datového centra Azure | URI adresa koncového bodu služby                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -161,8 +161,9 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 3. Do pole **Prostředí** zadejte název prostředí služby, které je publikováno v Elektronické fakturaci.
 4. Zvolte **Uložit** a pak zavřete stránku.
 
-### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>Povolení testovacích klíčů pro Finance nebo Supply Chain Management verze 10.0.17
+### <a name="enable-flighting-keys"></a>Povolit testovacích klíčů
 
+Povolte testovací klíče pro Microsoft Dynamics 365 Finance nebo Microsoft Dynamics 365 Supply Chain Management verze 10.0.17 nebo starší. 
 1. ProveĎte následující příkaz SQL:
 
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)

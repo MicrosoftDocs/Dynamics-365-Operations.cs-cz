@@ -2,11 +2,9 @@
 title: Nákladové objekty
 description: Tento článek poskytuje informace o nákladových objektech a vysvětluje, jakým způsobem se kumulují náklady a množství. Nákladový objekt je entita, pro kterou se kumulují náklady a množství. Entita nákladového objektu může být produkt a varianty produktu, například varianty pro styl a barvu.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65a0f72f8d97bda36bacd691d545807c413f8825
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d27e2dcfd8f70c8d4b0f2ae1254f3c4fce63bb4d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967651"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572162"
 ---
 # <a name="cost-objects"></a>Nákladové objekty
 
@@ -66,18 +64,20 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
 
 **Poznámka:** Parametr **Zahrnovat fyzickou hodnotu** nemá žádný vliv na předchozí výpočty.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
-[Skupina dimenzí produktů](https://technet.microsoft.com/library/aa499382.aspx)
+[Skupina dimenzí produktů](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Skupina dimenze úložiště](https://technet.microsoft.com/library/hh209317.aspx)
+[Skupina dimenze úložiště](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Skupina sledovací dimenze](https://technet.microsoft.com/library/hh209465.aspx)
+[Skupina sledovací dimenze](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Co je nového a co se změnilo](../../fin-and-ops/get-started/whats-new-changed.md)
+[Co je nového a co se změnilo](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Položky nákladů](cost-entries.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

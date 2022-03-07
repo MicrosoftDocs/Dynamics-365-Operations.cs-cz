@@ -2,30 +2,26 @@
 title: Příprava nebezpečných materiálů
 description: Toto téma vysvětluje, jak nastavit data potřebná ke klasifikaci položek jako nebezpečných materiálů. Když vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cf323272926936ba6397a9f98cfff8d8a31d091
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423998"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820339"
 ---
 # <a name="set-up-hazardous-materials"></a>Příprava nebezpečných materiálů
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Chcete-li používat funkce nebezpečných materiálů, musíte nejprve nastavit data, která jsou požadována ke klasifikaci položek jako nebezpečných materiálů. Poté, dyž vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
 
@@ -284,3 +280,6 @@ Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení infor
 Specifikace *Tunel pro nebezpečný materiál* omezuje typy tunelů, kterými lze přepravovat nebezpečný materiál, určením typů tunelů, které musí být použity. Kategorie tunelů jsou stanoveny příslušnými předpisy pro přepravu nebezpečných materiálů. Tato specifikace se obvykle vztahuje pouze na silniční dopravu.
 
 Chcete-li stanovit hodnoty pro tuto specifikaci, přejděte na **Řízení informací o produktech \> Nastavení \> Dokumentace expedice nebezpečného materiálu \> Tunel pro nebezpečný materiál**. Na stránce **Tunel pro nebezpečný materiál** můžete vytvořit libovolný počet identifikátorů tunelů a každý nakonfigurovat s identifikačním kódem a krátkým popisem.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

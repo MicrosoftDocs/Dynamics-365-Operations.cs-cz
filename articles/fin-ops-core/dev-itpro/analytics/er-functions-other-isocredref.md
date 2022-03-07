@@ -2,11 +2,8 @@
 title: Funkce elektronického výkaznictví ISOCREDREF
 description: Toto téma obsahuje obecné informace o použití funkce ISOCREDREF elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
-ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c9a75cedcf543b318df2850df3e4a60bac2dc6b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e13b9bacc642917e6a520968630fc75fb30bc9dc3fd02b2d9aa3cfb2ceb33790
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737920"
 ---
 # <a name="isocredref-er-function"></a>Funkce elektronického výkaznictví ISOCREDREF
 
@@ -60,3 +57,6 @@ Výsledná textová hodnota.
 ## <a name="additional-resources"></a>Další zdroje
 
 [Další funkce (konkrétní pro obchodní domény)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,28 +2,27 @@
 title: Domovská stránka leasingu majetku
 description: Toto téma poskytuje přehled dokumentace leasingu majetku a odkazy na konkrétní témata.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
-ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.openlocfilehash: d187f094a7d13e26a6121a2115c146c1372dba46bcafd423a3683d73a1e779f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4441373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775211"
 ---
 # <a name="asset-leasing-home-page"></a>Domovská stránka leasingu majetku
 
@@ -31,7 +30,9 @@ ms.locfileid: "4441373"
 
 Toto téma obsahuje seznam témat nápovědy, která jsou k dispozici pro leasing majetku, a obsahuje odkazy na konkrétní témata. 
 
-Leasing majetku je pokročilou schopností pro správu, sledování a automatizaci finančních transakcí pro pronajaté majetky (aktiva) v Microsoft Dynamics 365 Finance. Leasingu majetku vyhovuje mezinárodním účetním standardům (IFRS 16) a normám US GAAP (ASC 842). Leasing majetku zachycuje a zpracovává informace o leasinzích a pomáhá vygenerovat položky deníku v rámci celého životní cyklu leasingu od počátečního uznání, přes měsíční položky deníku, po snížení hodnoty a ukončení leasingu.  
+Leasing majetku je pokročilou schopností pro správu, sledování a automatizaci finančních transakcí pro pronajaté majetky (aktiva) v Microsoft Dynamics 365 Finance. Leasingu majetku vyhovuje mezinárodním účetním standardům (IFRS 16) a normám US GAAP (ASC 842). Leasing majetku zachycuje a zpracovává informace o leasinzích a pomáhá vygenerovat položky deníku v rámci celého životní cyklu leasingu od počátečního uznání, přes měsíční položky deníku, po snížení hodnoty a ukončení leasingu.
+
+Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru **Správa funkcí** zkontrolovat stav funkce a zapnout ji, pokud je třeba. V pracovním prostoru **Správa funkcí** vyhledejte a vyberte funkci, která se jmenuje **Leasing majetku** a poté klikněte na tlačítko **Povolit nyní**.
 
 ## <a name="asset-leasing-topics"></a>Témata leasingu majetku
 Následující téma vám pomůže konfigurovat a používat leasing majetku. 
@@ -85,7 +86,7 @@ Toto téma popisuje sestavy, které jsou k dispozici pro leasingy majetku.
 
 ### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
 
 ### <a name="blogs"></a>Blogy
 
@@ -96,3 +97,6 @@ Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](ht
 ### <a name="videos"></a>Videa
 
 Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

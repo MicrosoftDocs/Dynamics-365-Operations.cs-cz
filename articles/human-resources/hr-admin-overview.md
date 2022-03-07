@@ -1,35 +1,33 @@
 ---
-title: Přehled
-description: Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíže aplikace Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
-ms.topic: article
+title: Přehled správy
+description: Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro nastavení, správu a řešení problémů Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62fdf1936f36332a00818a1e1c706256aecafa9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527854"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984764"
 ---
-# <a name="overview"></a>Přehled
+# <a name="administration-overview"></a>Přehled správy
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíže aplikace Dynamics 365 Human Resources.
+Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro nastavení, správu a řešení problémů Dynamics 365 Human Resources.
 
 - [Systémové požadavky](hr-admin-system-requirements.md)
 
@@ -41,15 +39,15 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
 
 - Nastavení integrace dat
   - [Volba technologie integrace dat](hr-admin-integration-choose-technology.md)
-  - [Konfigurace integrace s Common Data Service](hr-admin-integration-common-data-service.md)
+  - [Konfigurace integrace s Dataverse](hr-admin-integration-common-data-service.md)
   - [Konfigurace integrace s aplikací Finance](hr-admin-integration-finance.md)
   - [Konfigurace integrace s aplikací Dayforce](hr-admin-integration-dayforce.md)
   - [Vytvoření aplikace pro export opakujících se dat](hr-admin-integration-recurring-data-export.md)
   - Integrace s Office
-    - [Kurz integrace s Office](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Aktualizace dat entity v aplikaci Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Vytvoření zkušeností s otevíráním v Excelu](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Řešení problémů s integrací s Office](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Kurz integrace s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Aktualizace dat entity v aplikaci Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Vytvoření zkušeností s otevíráním v Excelu](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Řešení problémů s integrací s Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Správa funkcí](hr-admin-manage-features.md)
 
@@ -84,7 +82,7 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
   - [Vytváření dokumentace nebo školení pomocí záznamníku úloh](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Řešení problémů s Human Resources
-  - [Získání podpory](hr-admin-troubleshooting-support.md)
+  - [Získání podpory](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimalizace výkonu pomocí úloh automatického vyčištění](hr-admin-troubleshooting-batch-history.md)
   - [Analytické sestavy nejsou aktualizovány](hr-admin-troubleshooting-analytic-reports.md)
   - [Nelze vytvořit prostředí v centru pro správu Power Apps](hr-admin-troubleshooting-power-apps.md)
@@ -95,10 +93,21 @@ Tento průvodce pro správce vám pomůže nastavit, spravovat a řešit potíž
   - [Přístup k soukromým adresám podle role zabezpečení](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources se nezobrazují v aplikacích Dynamics 365](hr-admin-troubleshooting-not-in-apps.md)
   - [Možnosti vykazování](hr-admin-troubleshooting-reporting.md)
-  - [Často kladené otázky k integraci](hr-admin-troubleshooting-integration.md)
+  - [Nejčastější dotazy k integraci](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>Další prostředky
+
+### <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
+Ohledně online kurzů a školení se podívejte na [Dynamics 365 Human Resources na Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videa
+
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ## <a name="see-also"></a>Viz také
 
-- [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)
+- [Co je nového a co se změnilo v aplikaci Human Resources](hr-admin-whats-new.md)
 - [Průvodce vývojáře](hr-developer-overview.md)
 - [Uživatelská příručka](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

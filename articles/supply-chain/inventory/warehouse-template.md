@@ -2,11 +2,9 @@
 title: Nastavení skladu s použitím šablony konfigurace skladu
 description: Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu.
 author: perlynne
-manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -18,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: adb14507ad26879ee4811c6eb984ce3888b1913a0e6f0664a99079ba49f1a4c5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751906"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Nastavení skladu s použitím šablony konfigurace skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu. Existuje několik předdefinovaných šablon konfigurace, které lze použít. Další informace o použití hodnot těchto šablon naleznete v tématu [Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md).
+Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu. Existuje několik předdefinovaných šablon konfigurace, které lze použít. Další informace o použití hodnot těchto šablon naleznete v tématu [Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scénáře, které mohou být šablony konfigurací užitečné
 
@@ -90,10 +88,13 @@ U datového balíčku můžete stáhnout soubor ZIP. Tento soubor obsahuje všec
 4. Vyberte **+ Přidat soubor** a odešlete soubor ZIP pro datový balíček.
 5. Vyberte **Import**. V zobrazení **Rozšířené** můžete použít možnost **Filtr**, abyste rychle získali přehled o problémech, které mohou nastat během importu.
 
-Možnost **Zobrazit protokol provádění** obsahuje podrobné informace o každé datové entitě, která je importována. Můžete použít zobrazení dat fázování, abyste se dostali rychle k cílovým datům. V takovém případě se zobrazí, jak vypadají importovaná data na souvisejících stránkách v aplikaci. Při použití výchozích datových šablon pracuje pořadí importu pro každou datovou entitu předem definovaným způsobem, aby se zajistilo, že všechna závislá data budou importována nejdříve. Jsou-li vlastní datové entity součástí projektu, je třeba zkontrolovat, že je definováno správné pořadí. Další informace naleznete v tématu[Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md).
+Možnost **Zobrazit protokol provádění** obsahuje podrobné informace o každé datové entitě, která je importována. Můžete použít zobrazení dat fázování, abyste se dostali rychle k cílovým datům. V takovém případě se zobrazí, jak vypadají importovaná data na souvisejících stránkách v aplikaci. Při použití výchozích datových šablon pracuje pořadí importu pro každou datovou entitu předem definovaným způsobem, aby se zajistilo, že všechna závislá data budou importována nejdříve. Jsou-li vlastní datové entity součástí projektu, je třeba zkontrolovat, že je definováno správné pořadí. Další informace naleznete v tématu[Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopírování konfigurace skladu z jedné společnosti do nové společnosti ve stejné instanci, podívejte se na toto 3minutové video na YouTube: [Použití šablony skladu ke kopírování konfigurace aplikace Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Související téma
 
-[Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

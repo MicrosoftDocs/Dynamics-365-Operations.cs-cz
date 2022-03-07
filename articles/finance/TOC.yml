@@ -4,39 +4,13 @@
       items:
         - name: Domovská stránka Dynamics 365 Finance
           href: index.md
-        - name: Co je nového a co se změnilo
-          items:
-            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-            - name: "Co je nového a\_co se změnilo v\_aplikaci Finance"
-              items:
-                - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
-                  href: get-started/whats-new-home-page.md
-                - name: Finance 10.0.25 (duben)
-                  href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (únor)
-                  href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (leden)
-                  href: get-started/whats-new-changed-10-0-23.md
-            - name: Odstraněné nebo zastaralé funkce
-              items:
-                - name: Domovská stránka odstraněných nebo zastaralých funkcí
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: Odebrané nebo zastaralé funkce v předchozích verzích
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: Odložené funkce AX 2012
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
         - name: Začínáme
           items:
             - name: Popis služby
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Registrace k verzi preview předplatného
+            - name: Registrace ukázkového předplatného
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizace služby One Version
               items:
@@ -88,6 +62,32 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
+            - name: Co je nového a co se změnilo
+              items:
+                - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                - name: "Co je nového a\_co se změnilo v\_aplikaci Finance"
+                  items:
+                    - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
+                      href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
+                    - name: Finance 10.0.22 (listopad 2021)
+                      href: get-started/whats-new-changed-10-0-22.md
+                    - name: Finance 10.0.21 (říjen 2021)
+                      href: get-started/whats-new-changed-10-0-21.md
+            - name: Odstraněné nebo zastaralé funkce
+              items:
+                - name: Domovská stránka odstraněných nebo zastaralých funkcí
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: Odložené funkce AX 2012
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -104,6 +104,8 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
                 - name: Videa
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
+                - name: Glosář
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/finance/toc.json
             - name: Výukový katalog
               items:
                 - name: Domovská stránka Výukový katalog
@@ -218,8 +220,6 @@
                   href: accounts-payable/vendor-copy.md
                 - name: Zaznamenání faktury dodavatele do deníku faktur
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-                - name: Použití platebního kalendáře na deník faktur
-                  href: accounts-payable/payment-invoice-journal.md
             - name: "Auditování faktur a\_klíčových dat pro závazky"
               href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: Zásady třícestného párování
@@ -408,15 +408,9 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
                 - name: Opětovné přidělení uznání výnosů – scénář 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
-            - name: Fakturace předplatného
-              items:
-                - name: Přehled fakturace předplatného
-                  href: accounts-receivable/subscription-billing-summary.md
-                - name: Nastavení plánů fakturace
-                  href: accounts-receivable/sb-billing-schedules.md
             - name: "Platby a\_vyrovnání"
               items:
-                - name: Přehled plateb zákazníka
+                - name: Přehled plateb odběratele
                   href: cash-bank-management/tasks/customer-payment-overview.md
                 - name: Centralizované platby pro pohledávky
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
@@ -524,8 +518,6 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Přehled rozpočtování
               href: budgeting/basic-budgeting-overview-configuration.md
-            - name: Dostupné rozpočtové prostředky
-              href: budgeting/budget-funds-available.md
             - name: Prognóza pozice
               href: budgeting/position-forecasting.md
             - name: Dokumenty odůvodnění plánování rozpočtu
@@ -842,8 +834,6 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: Vytvoření skupiny leasingu
                   href: asset-leasing/create-lease-group.md
-                - name: Typ částky platby
-                  href: asset-leasing/Payment-amount-type.md
                 - name: Nastavení indexových sazeb
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: Nastavení typů výdajů
@@ -904,144 +894,146 @@
               href: asset-leasing/asset-leasing-rprts.md
         - name: Hlavní kniha
           items:
-            - name: Domovská stránka hlavní knihy
+            - name: Přehled hlavní knihy
               href: general-ledger/general-ledger.md
-            - name: Účtová osnova
+            - name: Účty
               items:
-                - name: Plánování účtové osnovy
+                - name: Přehled časově rozlišených částek
+                  href: general-ledger/accruals-overview.md
+                - name: Pravidla eliminace
+                  href: general-ledger/elimination-rules.md
+                - name: Kombinace dimenzí a účtů
+                  href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Vyrovnané deníky pro účetnictví interunit
+                  href: general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Definice účtování
+                  href: general-ledger/posting-definitions.md
+                - name: Příklady definice účtování
+                  href: general-ledger/example-posting-definitions.md
+                - name: Nastavení výchozích popisů pro automatické zaúčtování
+                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
+                - name: Účetní zůstatky hlavní knihy
+                  href: general-ledger/general-ledger-account-balances.md
+                - name: Definování finančních dimenzí
+                  href: general-ledger/tasks/define-financial-dimensions.md
+                - name: Udržování výchozích šablon finanční dimenze
+                  href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Sady finančních dimenzí
+                  href: general-ledger/financial-dimension-sets.md
+                - name: Vytvoření účetních struktur
+                  href: general-ledger/tasks/create-account-structures.md
+                - name: Finanční dimenze a zaúčtování
+                  href: general-ledger/default-dimensions.md
+                - name: Vytvoření schémat časového rozlišení
+                  href: general-ledger/tasks/create-accrual-schemes.md
+                - name: Finanční konsolidace a převod měny
+                  items:
+                    - name: Přehled finančních konsolidací a převodu měny
+                      href: general-ledger/financial-consolidations-currency-translation.md
+                    - name: Konsolidovat online
+                      href: general-ledger/consolidate-online.md
+                    - name: Generování konsolidovaných finančních výkazů
+                      href: general-ledger/generating-consolidated-financial-statements.md
+                    - name: Import dat dceřiné společnosti ze souborů
+                      href: general-ledger/import-subsidiary-data-from-files.md
+                    - name: Export dat dceřiných společností do souboru
+                      href: general-ledger/export-subsidiary-data-to-file.md
+                    - name: Konsolidace pomocí importu – formát
+                      href: general-ledger/consolidate-with-import-format.md
+                    - name: Příprava právnické osoby pro použití v procesu konsolidace
+                      href: general-ledger/prepare-company-for-consolidation.md
+                    - name: Nastavení dceřiné právnické osoby pro konsolidaci
+                      href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+                - name: "Vytvoření konsolidačních skupin a\_dalšího konsolidačního účtu"
+                  href: general-ledger/tasks/create-consolidation-groups.md
+                - name: Typy hlavního účtu
+                  href: general-ledger/main-account-types.md
+                - name: Vytvoření hlavního účtu
+                  href: general-ledger/tasks/create-main-account.md
+                - name: Plánování účetní osnovy
                   href: general-ledger/plan-chart-of-accounts.md
-                - name: Hlavní účty
-                  items:
-                    - name: Typy hlavního účtu
-                      href: general-ledger/main-account-types.md
-                    - name: Nastavení kategorií hlavního účtu
-                      href: general-ledger/tasks/set-up-main-account-categories.md
-                    - name: Nastavení aliasu účtu hlavní knihy
-                      href: general-ledger/tasks/set-up-ledger-account-alias.md
-                    - name: Vytvoření hlavního účtu
-                      href: general-ledger/tasks/create-main-account.md
-                    - name: Podmínky přidělení
-                      href: general-ledger/main-account-allocation-terms.md
-                - name: Finanční dimenze
-                  items:
-                    - name: Finanční dimenze
-                      href: general-ledger/financial-dimensions.md
-                    - name: Definování finančních dimenzí
-                      href: general-ledger/tasks/define-financial-dimensions.md
-                    - name: Kombinace dimenzí a účtů
-                      href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                    - name: Sady finančních dimenzí
-                      href: general-ledger/financial-dimension-sets.md
-                    - name: Údržba výchozích šablon finančních dimenzí
-                      href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                    - name: Finanční dimenze a zaúčtování
-                      href: general-ledger/default-dimensions.md
-                    - name: Konfigurace účetních struktur
-                      href: general-ledger/configure-account-structures.md
-                    - name: Vytvoření účetních struktur
-                      href: general-ledger/tasks/create-account-structures.md
-                    - name: "Vytvoření a\_přiřazení struktur rozšířeného pravidla"
-                      href: general-ledger/tasks/create-assign-advanced-rule-structures.md
-                    - name: Jak nastavím vyrovnávací finanční dimenze?
-                      href: general-ledger/set-up-balance-dimensions.md
-            - name: Nastavení
-              items:
+                - name: Plánování místní účetní osnovy
+                  href: general-ledger/plan-local-chart-of-accounts.md
+                - name: Vyrovnání transakcí mezi účty hlavní knihy
+                  href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Nastavení aliasu účtu hlavní knihy
+                  href: general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Nastavení kategorií hlavního účtu
+                  href: general-ledger/tasks/set-up-main-account-categories.md
+                - name: Průzkumník zdroje účetnictví
+                  href: accounts-payable/accounting-source-explorer.md
+                - name: Rozúčtování
+                  href: accounts-payable/accounting-distributions.md
                 - name: Zpracování přidělení
                   href: general-ledger/process-allocations.md
-                - name: Konfigurace hlavní knihy
-                  items:
-                    - name: 'Fiskální kalendáře, fiskální roky a období'
-                      href: budgeting/fiscal-calendars-fiscal-years-periods.md
-                    - name: Konfigurace hlavních knih
-                      href: general-ledger/configure-ledger.md
-                    - name: Změna zúčtovací měny nebo měny vykazování
-                      href: general-ledger/add-change-acctg-rprtg-crrncy.md
-                    - name: Změna nebo opětovné přiřazení kalendáře hlavní knihy
-                      href: general-ledger/change-mdfy-clndr-to-ledger.md
-                - name: Mezipodnikové a vyrovnávací dimenze
-                  items:
-                    - name: Vyrovnané deníky pro mezijednotkové účetnictví
-                      href: general-ledger/example-balanced-journals-interunit-accounting.md
-                    - name: Nastavení mezipodnikového účetnictví
-                      href: general-ledger/intercompany-accounting-setup.md
-                    - name: Jak nastavím vyrovnávací finanční dimenze?
-                      href: general-ledger/set-up-balance-dimensions.md
-                - name: Výchozí nastavení deníku a účtování
-                  items:
-                    - name: Nastavení výchozích popisů pro automatické zaúčtování
-                      href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-                    - name: Přehled časově rozlišených částek
-                      href: general-ledger/accruals-overview.md
-                    - name: Vytvoření schémat časového rozlišení
-                      href: general-ledger/tasks/create-accrual-schemes.md
-                    - name: Typy deníku hlavní knihy
-                      href: general-ledger/ledger-journal-types.md
-                    - name: Vytvoření rozšířených pravidel pro deníky
-                      href: general-ledger/tasks/create-advanced-rules-journals.md
-                    - name: Přidání hodnot vyhledávání pro finanční dimenze do šablon aplikace Excel
-                      href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
-                    - name: Definice účtování
-                      href: general-ledger/posting-definitions.md
-                    - name: Příklady definice účtování
-                      href: general-ledger/example-posting-definitions.md
-                - name: Měna
-                  items:
-                    - name: Import směnných kurzů měn
-                      href: general-ledger/import-currency-exchange-rates.md
-                    - name: Duální měna
-                      href: general-ledger/dual-currency.md
-                - name: Pravidla přidělení
-                  items:
-                    - name: Pravidla přidělení hlavní knihy
-                      href: general-ledger/ledger-allocation-rules.md
-                    - name: Zpracování deníku přidělení hlavní knihy
-                      href: general-ledger/tasks/process-ledger-allocation-journal.md
-            - name: Deníky a zdrojové dokumenty
+                - name: Podmínky přidělení
+                  href: general-ledger/main-account-allocation-terms.md
+                - name: Finanční dimenze
+                  href: general-ledger/financial-dimensions.md
+                - name: Skupiny konsolidačních účtů a další konsolidační účty
+                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Přehled konsolidace a vyloučení
+                  href: budgeting/consolidation-elimination-overview.md
+                - name: 'Fiskální kalendáře, fiskální roky a období'
+                  href: budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Konfigurovat účetní struktury
+                  href: general-ledger/configure-account-structures.md
+                - name: Duální měna
+                  href: general-ledger/dual-currency.md
+            - name: Deníky a hlavní knihy
               items:
-                - name: Deníky
-                  items:
-                    - name: Zpracování hlavního deníku
-                      href: general-ledger/general-journal-processing.md
-                    - name: Účtování periodických deníků
-                      href: general-ledger/tasks/post-periodic-journals.md
-                    - name: "Vytváření a\_ověřování deníků"
-                      href: general-ledger/tasks/create-validate-journals.md
-                    - name: Selhání zaúčtování deníku z důvodu nevyváženosti
-                      href: general-ledger/posting-fail-imbalance.md
-                    - name: Stornování zaúčtování deníku
-                      href: general-ledger/reverse-journal-posting.md
-                    - name: Proč nemohu tuto transakci stornovat?
-                      href: general-ledger/cant-reverse-transctns.md
-                    - name: Vytvoření položky deníku pomocí šablony
-                      href: general-ledger/tasks/create-journal-entry-template.md
-                    - name: Zpracování deníku přidělení hlavní knihy
-                      href: general-ledger/tasks/process-ledger-allocation-journal.md
-                    - name: Zobrazení položek nebo transakcí deníku
-                      href: general-ledger/tasks/view-journal-entries-or-transactions.md
-                    - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
-                      href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                    - name: Publikování řádek deníku a dokumentů z Excelu
-                      href: general-ledger/open-lines-excel-journals-documents.md
-                    - name: Vytvoření transakcí časového rozlišení hlavní knihy
-                      href: general-ledger/tasks/create-ledger-accrual-transactions.md
-                    - name: Jeden doklad
-                      href: general-ledger/one-voucher.md
-                    - name: Nejčastější dotazy k jednomu dokladu
-                      href: general-ledger/one-voucher-faq.md
-                - name: Zdrojové dokumenty
-                  items:
-                    - name: Rozúčtování
-                      href: accounts-payable/accounting-distributions.md
-                    - name: Převod dílčí hlavní knihy do hlavní knihy
-                      href: general-ledger/subledger-transfer.md
-                    - name: Průzkumník zdroje účetnictví
-                      href: accounts-payable/accounting-source-explorer.md
-            - name: "Dotazy a\_sestavy"
-              items:
-                - name: Zobrazení položek a transakcí deníku
+                - name: Zpracování hlavního deníku
+                  href: general-ledger/general-journal-processing.md
+                - name: Účtování periodických deníků
+                  href: general-ledger/tasks/post-periodic-journals.md
+                - name: Stornování zaúčtování deníku
+                  href: general-ledger/reverse-journal-posting.md
+                - name: Zpracování deníku přidělení hlavní knihy
+                  href: general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Nastavení mezipodnikového účetnictví
+                  href: general-ledger/intercompany-accounting-setup.md
+                - name: Pravidla přidělení hlavní knihy
+                  href: general-ledger/ledger-allocation-rules.md
+                - name: Vytvoření rozšířených pravidel pro deníky
+                  href: general-ledger/tasks/create-advanced-rules-journals.md
+                - name: "Vytvoření a\_přiřazení struktur rozšířeného pravidla"
+                  href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Typy deníku hlavní knihy
+                  href: general-ledger/ledger-journal-types.md
+                - name: Konfigurace účetních knih
+                  href: general-ledger/configure-ledger.md
+                - name: "Vytváření a\_ověřování deníků"
+                  href: general-ledger/tasks/create-validate-journals.md
+                - name: Zobrazení položek nebo transakcí deníku
+                  href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
+                  href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Vytvoření položky deníku pomocí šablony
+                  href: general-ledger/tasks/create-journal-entry-template.md
+                - name: Vytvoření transakcí časového rozlišení hlavní knihy
+                  href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Převod dílčí hlavní knihy do hlavní knihy
+                  href: general-ledger/subledger-transfer.md
+                - name: Publikování řádek deníku a dokumentů z Excelu
+                  href: general-ledger/open-lines-excel-journals-documents.md
+                - name: Zobrazení položek a transakcí
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: Předvaha se sestavou transakčních podrobností
                   href: public-sector/general-ledger-public-sector-trial-balance.md
+                - name: Zapsání zaúčtovaných položek deníku do deníku
+                  href: general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Přecenění měny v konsolidační společnosti
+                  href: general-ledger/currency-revaluation-consolidation-company.md
+                - name: Přecenění cizí měny pro hlavní knihu
+                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Import směnných kurzů měn
+                  href: general-ledger/import-currency-exchange-rates.md
+                - name: Jeden doklad
+                  href: general-ledger/one-voucher.md
+                - name: Nejčastější dotazy k jednomu dokladu
+                  href: general-ledger/one-voucher-faq.md
+                - name: Vyrovnání hlavní knihy
+                  href: general-ledger/ledger-settlements.md
             - name: Závěrka období
               items:
                 - name: Uzávěrka hlavní knihy na konci období
@@ -1056,48 +1048,80 @@
                   href: general-ledger/tasks/mass-financial-period-close.md
                 - name: Časté dotazy k aktivitám na konci roku
                   href: general-ledger/faq-year-end-activities.md
-                - name: Vyrovnání hlavní knihy
-                  href: general-ledger/ledger-settlements.md
-                - name: Sledování mezi vypořádáním hlavní knihy a uzávěrkou na konci roku
-                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
-                - name: Přecenění cizí měny pro hlavní knihu
-                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Účetní zůstatky hlavní knihy
-                  href: general-ledger/general-ledger-account-balances.md
-                - name: Zpracování deníku přidělení hlavní knihy
-                  href: general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Pravidla přidělení hlavní knihy
-                  href: general-ledger/ledger-allocation-rules.md
-                - name: Zapsání zaúčtovaných položek deníku do deníku
-                  href: general-ledger/tasks/journalize-posted-journal-entries.md
-            - name: "Konsolidace a\_eliminace"
+            - name: DPH
               items:
-                - name: Přehled konsolidace a vyloučení
-                  href: budgeting/consolidation-elimination-overview.md
-                - name: Přehled finančních konsolidací a převodu měny
-                  href: general-ledger/financial-consolidations-currency-translation.md
-                - name: Skupiny konsolidačních účtů a další konsolidační účty
-                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: "Vytvoření konsolidačních skupin a\_dalšího konsolidačního účtu"
-                  href: general-ledger/tasks/create-consolidation-groups.md
-                - name: Příprava právnické osoby pro použití v procesu konsolidace
-                  href: general-ledger/prepare-company-for-consolidation.md
-                - name: Nastavení právnické osoby pobočky pro konsolidaci
-                  href: general-ledger/set-up-subsidiary-company-for-consolidation.md
-                - name: Konsolidace online
-                  href: general-ledger/consolidate-online.md
-                - name: Import dat pobočky ze souborů
-                  href: general-ledger/import-subsidiary-data-from-files.md
-                - name: Export dat pobočky do souboru
-                  href: general-ledger/export-subsidiary-data-to-file.md
-                - name: Konsolidace pomocí importu – formát
-                  href: general-ledger/consolidate-with-import-format.md
-                - name: Pravidla eliminace
-                  href: general-ledger/elimination-rules.md
-                - name: Generování konsolidovaných finančních výkazů
-                  href: general-ledger/generating-consolidated-financial-statements.md
-                - name: Přecenění měny v konsolidační společnosti
-                  href: general-ledger/currency-revaluation-consolidation-company.md
+                - name: Přehled DPH
+                  href: general-ledger/indirect-taxes-overview.md
+                - name: Sazby daně z prodeje na základě základu marže a metod výpočtu
+                  href: general-ledger/marginal-base-field.md
+                - name: Platby DPH a pravidla zaokrouhlení
+                  href: general-ledger/round-sales-tax-payments.md
+                - name: Metody výpočtu DPH v poli Zdroj
+                  href: general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+                  href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Výpočet DPH na řádcích hlavního deníku
+                  href: general-ledger/sales-tax-calculation-on-general-journal.md
+                - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
+                  href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Povolit opožděný výpočet daně v deníku
+                  href: general-ledger/enable-delayed-tax-calculation.md
+                - name: Vytvoření platby DPH
+                  href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Zaokrouhlování vyrovnání daně na základě vlastních desetinných míst měny
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+                - name: "Vytváření transakcí DPH v\_dokladech"
+                  href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Nastavení účetních skupin hlavní knihy pro DPH
+                  href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Nastavení finančních úřadů
+                  href: general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Nastavit kódy DPH
+                  href: general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: "Nastavení skupin DPH a\_skupin DPH položky"
+                  href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Nastavení kódů vykazování DPH
+                  href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Podpora dvojí měny pro DPH
+                  href: general-ledger/dual-currency-for-tax.md
+                - name: Specifikace DPH podle sestavy transakcí hlavní knihy
+                  href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                - name: Nastavení období vyrovnání DPH
+                  href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Zobrazení zaúčtovaných transakcí DPH
+                  href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                - name: Tisk platby DPH podle sestavy kódu
+                  href: general-ledger/print-sales-tax-payment-by-code-report.md
+                - name: Řešení problémů s DPH
+                  items:
+                    - name: Daň není vypočítána nebo je částka daně nulová
+                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                    - name: Výkon výpočtu daně ovlivňuje transakce
+                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                    - name: Nesprávná hodnota pole v TaxTrans
+                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                    - name: Záznam TaxTrans není generován
+                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                    - name: Daň se v dokladu zaúčtuje na nesprávný účet hlavní knihy
+                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                    - name: Doklad se nevygeneruje
+                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+            - name: Srážková daň
+              items:
+                - name: Nastavení srážkové daně
+                  href: general-ledger/tasks/set-up-withholding-tax.md
+                - name: Globální srážková daň
+                  items:
+                    - name: Globální přehled srážkové daně
+                      href: general-ledger/global-withholding-tax-overview.md
+                    - name: Nastavení globální srážkové daně
+                      href: general-ledger/set-up-global-withholding-tax.md
+                    - name: Srážková daň v nákupních transakcích
+                      href: general-ledger/withholding-tax-in-purchase-transactions.md
+                    - name: Srážková daň v prodejních transakcích
+                      href: general-ledger/withholding-tax-in-sales-transactions.md
+                    - name: Vytvoření platby srážkové daně
+                      href: general-ledger/create-a-withholding-tax-payment.md
             - name: Pracovní plocha auditu
               items:
                 - name: Pravidla zásad auditu
@@ -1186,8 +1210,6 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Povolení prognózy cashflow
                   href: finance-insights/enable-cash-flow-forecasting.md
-                - name: Externích data v prognózách cashflow
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Povolení návrhů rozpočtu
                   href: finance-insights/enable-budget-proposal.md
                 - name: Vytvoření projektu integrátoru dat
@@ -1208,8 +1230,10 @@
                   href: finance-insights/budget-proposals.md
                 - name: Pozice hotovosti
                   href: finance-insights/cash-position.md
-                - name: Prognóza hotovosti
+                - name: Prognóza cashflow
                   href: finance-insights/cash-flow-forecast-intro.md
+                - name: Použití externích dat v prognózách cashflow
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Předpovědi plateb zákazníka
                   href: finance-insights/payment-insights-overview.md
                 - name: Použití předpovědí plateb zákazníka
@@ -1402,18 +1426,14 @@
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: "Začínáme s\_elektronickou fakturací pro Egypt"
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Začínáme s elektronickou fakturací pro Mexiko
+                        - name: "Začínáme s\_elektronickou fakturací pro Mexiko"
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: "Začínáme s\_elektronickou fakturací pro Saúdskou Arábii"
                           href: localizations/e-invoicing-sa-get-started.md
-                        - name: Nastavení přímé integrace italské FatturaPA s SDI
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Použití služby elektronické fakturace k importu faktur dodavatele
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Nastavení elektronické fakturace
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Reference správce modulu plug-in Power Platform
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: "Časté otázky k\_elektronické fakturaci"
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Výpočet daně
@@ -1424,18 +1444,8 @@
                       items:
                         - name: Začínáme s výpočtem daně
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                        - name: Nastavení daňových kódů
-                          href: localizations/set-up-tax-codes.md
-                        - name: Nastavení daňových skupin
-                          href: localizations/set-up-tax-groups.md
-                        - name: Nastavení skupin daně položky
-                          href: localizations/set-up-item-tax-groups.md
-                        - name: Výpočty dovozních a vývozních daní
-                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Nastavení prostředí pro vyhledávání hlavních dat
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                        - name: Synchronizujte nastavení daně ze služby pro výpočet daně do aplikace Finance
-                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Určení
                       items:
                         - name: Datový model pro výpočet daně
@@ -1467,7 +1477,7 @@
                         - name: Vykazování pro Německo
                           items:
                             - name: "Přiznání k\_DPH"
-                              href: localizations/emea-deu-vat-declaration-germany.md
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Vykazování v Nizozemsku
                           items:
                             - name: "Přiznání k\_DPH"
@@ -1478,8 +1488,6 @@
                           items:
                             - name: 'Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
-                            - name: Přiznání k DPH
-                              href: localizations/emea-esp-vat-declaration-spain.md
                         - name: Výkaznictví ve Švédsku
                           items:
                             - name: Přiznání k DPH
@@ -1492,10 +1500,6 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Výkaznictví pro Norsko
-                          items:
-                            - name: Přiznání k DPH
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Povolení výpočtu daně pro převodní příkaz
                       items:
                         - name: "Podpora daňových funkcí u\_převodních příkazů"
@@ -1512,86 +1516,8 @@
                           href: localizations/customize-tax-configurations-master-data-lookup.md
                     - name: Časté dotazy k výpočtu daně
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
-            - name: Daň
-              items:
-                - name: DPH
-                  items:
-                    - name: Přehled DPH
-                      href: general-ledger/indirect-taxes-overview.md
-                    - name: Sazby daně z prodeje na základě základu marže a metod výpočtu
-                      href: general-ledger/marginal-base-field.md
-                    - name: Platby DPH a pravidla zaokrouhlení
-                      href: general-ledger/round-sales-tax-payments.md
-                    - name: Metody výpočtu DPH v poli Zdroj
-                      href: general-ledger/sales-tax-calculation-methods-origin-field.md
-                    - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
-                      href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                    - name: Výpočet DPH na řádcích hlavního deníku
-                      href: general-ledger/sales-tax-calculation-on-general-journal.md
-                    - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
-                      href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                    - name: Povolit opožděný výpočet daně v deníku
-                      href: general-ledger/enable-delayed-tax-calculation.md
-                    - name: Vytvoření platby DPH
-                      href: general-ledger/tasks/create-sales-tax-payment.md
-                    - name: Zaokrouhlování vyrovnání daně na základě vlastních desetinných míst měny
-                      href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-                    - name: "Vytváření transakcí DPH v\_dokladech"
-                      href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-                    - name: Nastavení účetních skupin hlavní knihy pro DPH
-                      href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                    - name: Nastavení finančních úřadů
-                      href: general-ledger/tasks/set-up-sales-tax-authorities.md
-                    - name: Nastavit kódy DPH
-                      href: general-ledger/tasks/set-up-sales-tax-codes.md
-                    - name: "Nastavení skupin DPH a\_skupin DPH položky"
-                      href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                    - name: Nastavení kódů vykazování DPH
-                      href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                    - name: Podpora dvojí měny pro DPH
-                      href: general-ledger/dual-currency-for-tax.md
-                    - name: Specifikace DPH podle sestavy transakcí hlavní knihy
-                      href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                    - name: Nastavení období vyrovnání DPH
-                      href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                    - name: Zobrazení zaúčtovaných transakcí DPH
-                      href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                    - name: Tisk platby DPH podle sestavy kódu
-                      href: general-ledger/print-sales-tax-payment-by-code-report.md
-                    - name: Řešení problémů s DPH
-                      items:
-                        - name: Daň není vypočítána nebo je částka daně nulová
-                          href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-                        - name: Výkon výpočtu daně ovlivňuje transakce
-                          href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-                        - name: Nesprávná hodnota pole v TaxTrans
-                          href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-                        - name: Záznam TaxTrans není generován
-                          href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-                        - name: Daň se v dokladu zaúčtuje na nesprávný účet hlavní knihy
-                          href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-                        - name: Doklad se nevygeneruje
-                          href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-                - name: Srážková daň
-                  items:
-                    - name: Nastavení srážkové daně
-                      href: general-ledger/tasks/set-up-withholding-tax.md
-                    - name: Globální srážková daň
-                      items:
-                        - name: Globální přehled srážkové daně
-                          href: general-ledger/global-withholding-tax-overview.md
-                        - name: Nastavení globální srážkové daně
-                          href: general-ledger/set-up-global-withholding-tax.md
-                        - name: Srážková daň v nákupních transakcích
-                          href: general-ledger/withholding-tax-in-purchase-transactions.md
-                        - name: Srážková daň v prodejních transakcích
-                          href: general-ledger/withholding-tax-in-sales-transactions.md
-                        - name: Vytvoření platby srážkové daně
-                          href: general-ledger/create-a-withholding-tax-payment.md
             - name: Aktualizace předpisů
               href: localizations/regulatory-updates.md
-            - name: Hledání aktualizací předpisů
-              href: localizations/search-for-regulatory-updates.md
             - name: Austrálie
               items:
                 - name: "Austrálie\_–\_přehled"
@@ -1619,7 +1545,7 @@
                 - name: Výkaz DPH
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Rakouský Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Nákupní cla
@@ -1810,8 +1736,6 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: "Výpočet úroků a\_pokut pro platby odběratelů"
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-                - name: Nastavení čísel bankovního účtu pro Brazílii
-                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: Daně
                   items:
                     - name: Přehled brazilských daní
@@ -1840,8 +1764,6 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: 'ICMS-ST doplněk, proces restituce a deklarace pro státy RS, SC a SP'
                       href: localizations/latam-bra-complement-restitution.md
-                    - name: Změna základu ve výpočtech daně ICMS-DIF pro produkty od dodavatelů z jiných států
-                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: Nastavení kódů oprav pro daně IPI
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: "Daně PIS a\_COFINS z\_dlouhodobého majetku"
@@ -1866,13 +1788,13 @@
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
             - name: Kanada
               items:
-                - name: GST/HST - Přenos souborů po internetu
+                - name: "Daň GST/harmonizovaná prodejní daň\_–\_Přenos souborů po internetu"
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: Čína
               items:
                 - name: "Čína\_–\_přehled"
                   href: localizations/china.md
-                - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
+                - name: "Finance and Operations provozované společností 21Vianet v\_Číně"
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Výběr skupin účtů pro čínské typy dokladů
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1890,7 +1812,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Metody odpisu dlouhodobého majetku
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Import souborů čínského systému Golden Tax
+                - name: Import čínské daňové entity Chinese Golden
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Průměrní měsíční model nákladů
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -1944,8 +1866,6 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: "Přiznání k\_DPH (Česká republika)"
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
-                - name: Český Intrastat
-                  href: localizations/emea-cze-intrastat.md
                 - name: Symboly bank pro bankovní účty
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: DPH intrakomunitárního plnění
@@ -1978,8 +1898,6 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Nastavení formátu platebního dokladu
                   href: localizations/tasks/set-up-payment-slip-format.md
-                - name: Dánský Intrastat
-                  href: localizations/emea-dnk-intrastat.md
             - name: Egypt
               items:
                 - name: Egypt - přehled
@@ -2002,8 +1920,6 @@
                   href: localizations/emea-est-personal-info.md
                 - name: Výkaz DPH
                   href: localizations/emea-est-vat-statement-details.md
-                - name: Estonský Intrastat
-                  href: localizations/emea-est-intrastat.md
             - name: Evropa
               items:
                 - name: Evropa - přehled
@@ -2150,23 +2066,19 @@
                       href: localizations/emea-vat-reporting.md
                     - name: "Vytvoření a\_odeslání sestavy DPH"
                       href: localizations/tasks/create-submit-vat-report.md
-                    - name: Datum registru DPH dodavatele
-                      href: localizations/emea-date-vendor-vat-register.md
                 - name: Zobrazení transakcí u vyrovnání
                   href: localizations/emea-transactions-settlement-form.md
                 - name: Finanční důvod
                   href: localizations/emea-financial-reason.md
             - name: Finsko
               items:
-                - name: Finsko – přehled
+                - name: Finsko - přehled
                   href: localizations/finland.md
                 - name: Sestava platby DPH pro Finsko
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
-                - name: Intrastat pro Finsko
-                  href: localizations/emea-fin-intrastat.md
             - name: Francie
               items:
-                - name: Francie – přehled
+                - name: Francie - přehled
                   href: localizations/france.md
                 - name: Veřejný sektor
                   items:
@@ -2342,8 +2254,6 @@
                       href: localizations/apac-ind-news-letter-10-0-01.md
                     - name: Co je nového a co se změnilo v aplikaci ve verzi 10.0.0
                       href: localizations/apac-ind-news-letter-10-0-00.md
-                - name: "Záznam pro audit a\_úpravy protokolů pro účetní software"
-                  href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
                 - name: Nepřímé daně
                   items:
                     - name: Indická daň GST
@@ -2684,12 +2594,8 @@
               items:
                 - name: Indonésie - přehled
                   href: localizations/indonesia.md
-                - name: Číslování daňových faktur a fakturace
-                  href: localizations/apac-idn-invoicing.md
                 - name: "Přiznání k\_DPH pro Indonésii"
                   href: localizations/apac-idn-ppn-declaration.md
-                - name: Sestava o srážkové dani pro Indonésii
-                  href: localizations/apac-idn-wht-declaration.md
             - name: Itálie
               items:
                 - name: Itálie – přehled
@@ -2756,8 +2662,6 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronické faktury zákazníka
                   href: localizations/emea-ita-e-invoices.md
-                - name: Elektronické faktury dodavatele
-                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Roční daňová komunikace
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Sledovatelnost plateb
@@ -2942,8 +2846,6 @@
                   href: localizations/emea-lva-tax-natural-resources.md
                 - name: Podrobnosti výpisu DPH
                   href: localizations/emea-lva-vat-statement-details.md
-                - name: Lotyšský Intrastat
-                  href: localizations/emea-lva-intrastat.md
             - name: Litva
               items:
                 - name: Litva - přehled
@@ -3062,20 +2964,6 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Výkaz DPH
                   href: localizations/emea-nor-sales-tax-payment-report.md
-                - name: Vratka DPH s přímým odesláním do Altinn
-                  items:
-                    - name: Přehled vratky DPH s přímým odesláním do Altinn
-                      href: localizations/emea-nor-vat-return.md
-                    - name: Registrace integračního bodu na webovém portálu ID-porten
-                      href: localizations/emea-nor-vat-return-integration-point.md
-                    - name: Příprava prostředí na spolupráci s webovými službami ID-porten a Altinn
-                      href: localizations/emea-nor-vat-return-setup.md
-                    - name: Kontrolní seznam pro nastavení elektronických zpráv pro vratku DPH
-                      href: localizations/emea-nor-vat-return-checklist.md
-                    - name: Autorizace prostředí Finance na spolupráci s webovými službami ID-porten a Altinn
-                      href: localizations/emea-nor-vat-return-authorization.md
-                    - name: Odeslání vratky DPH do webové služby Altinn
-                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Soubor standardního auditu pro daň (SAF-T) pro Norsko
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronické faktury zákazníka v Norsku
@@ -3132,15 +3020,13 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: "Podrobnosti o\_konkrétních obchodních scénářích v\_sestavě JPK-V7M"
                       href: localizations/emea-pol-vdek-scenarios.md
-                - name: Platební podmínky v sestavě obchodních transakcí
-                  href: localizations/emea-pol-payment-terms-report.md
             - name: Katar
               items:
                 - name: Katar - přehled
                   href: localizations/qatar.md
             - name: Rusko
               items:
-                - name: Rusko – přehled
+                - name: Rusko - přehled
                   href: localizations/russia.md
                 - name: Hlavní kniha
                   items:
@@ -3158,10 +3044,6 @@
                       href: localizations/rus-turnover-balance-statement-reports.md
                     - name: Sestavy pohybů na účtu
                       href: localizations/rus-account-activity-reports.md
-                    - name: Federální účetní standard 27-2021
-                      href: localizations/emea-rus-federal-accounting-standard-27-2021.md
-                    - name: Povolení cílových umístění pro elektronické výkaznictví pro ukládání ruských účetních dokumentů
-                      href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
                 - name: Držitelé zálohy
                   items:
                     - name: Přehled držitelů záloh pro Rusko
@@ -3264,8 +3146,6 @@
                           href: localizations/rus-not-valuable-assets.md
                         - name: Účetnictví pracovních oděvů/zvláštního vybavení (Rusko)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: Integrace dlouhodobého majetku s modulem správy majetku
-                      href: localizations/rus-integration-eam-with-fixed-asset.md
                 - name: Pohledávky a závazky
                   items:
                     - name: Opravy dobropisu (Rusko)
@@ -3300,8 +3180,6 @@
                           href: localizations/rus-purchases-on-commission.md
                         - name: Prodej za provizi
                           href: localizations/rus-sales-on-commission.md
-                    - name: Místní sestavy a primární formuláře v pohledávkách a závazcích
-                      href: localizations/rus-local-reports-primary-forms-ar-ap.md
                 - name: Zásoby
                   items:
                     - name: Přepravované zboží od dodavatele
@@ -3438,8 +3316,6 @@
                   href: localizations/emea-esp-report-340.md
                 - name: Sestava prohlášení 347
                   href: localizations/emea-esp-declaration-347-report.md
-                - name: "Přiznání k\_DPH 303"
-                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: Prodejní a nákupní cykly
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Speciální záznamy a počáteční stavy
@@ -3546,6 +3422,168 @@
                   href: localizations/noam-usa-form-1099-public-sector.md
                 - name: "Nastavení dodavatelů pro vykazování\_1099"
                   href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
+        - name: Human Resources
+          items:
+            - name: Přehled Human Resources
+              href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+            - name: Nastavení Human Resources
+              items:
+                - name: Konfigurace parametrů Human Resources
+                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurace sdílených parametrů Human Resources
+                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení workflow Human Resources
+                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
+                - name: Pochopení polí data a času
+                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
+            - name: Správa zaměstnanců
+              items:
+                - name: Organizování zaměstnanců
+                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení komponent práce
+                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Definování oddělení
+                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
+                - name: Přidání oddělení do hierarchie
+                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
+                - name: Definování prací
+                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření kalendáře pracovní doby
+                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
+                - name: Často kladené dotazy k akcím personálu
+                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
+                - name: Použití workflow ke správě informací o zaměstnanci
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
+                - name: Úprava vztahů podřízenosti pro určitou pozici
+                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
+                - name: "Zadávání informací o\_pracovnících"
+                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
+                - name: Zapůjčení položek pracovníkům
+                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření položek výpůjček
+                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
+                - name: Správa položek výpůjček
+                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
+                - name: Vypracování plánu kariérního postupu
+                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
+                - name: Zadávání časových rozvrhů projektů
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
+                - name: Projekty hromadného zařazení
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření projektu hromadného zařazení
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení pozic
+                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení informací o zraněních a onemocněních
+                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+                - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
+                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+            - name: Nábor kandidátů
+              items:
+                - name: Řízení náborových procesů
+                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                - name: Projekty hromadného zařazení
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md
+                - name: Vytvoření projektů hromadného zařazení
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
+                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                - name: Vytvoření a otevření požadavků na práci
+                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                - name: Nastavení pozic
+                  href: ../human-resources/hr-personnel-set-up-positions.md
+                - name: Přijetí kandidátů prostřednictvím náboru
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                - name: Najmutí existujícího zaměstnance prostřednictvím náboru
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
+                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+            - name: Nastavení plánů kompenzace
+              items:
+                - name: Přehled plánů kompenzací
+                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení kompenzačních mřížek
+                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
+                - name: Vývoj struktury a plánu kompenzace
+                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření plánů fixní kompenzace
+                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření plánů variabilní kompenzace
+                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
+                - name: "Přihlášení zaměstnanců k\_plánu fixní kompenzace"
+                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
+                - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
+                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
+                - name: "Definování procesu kompenzací a\_výpočet výsledků"
+                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
+                - name: Zpracování plánů kompenzace
+                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
+            - name: Správa zaměstnaneckých výhod
+              items:
+                - name: Definování a správa programu zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
+                - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
+                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
+                - name: Proces nároku na zaměstnaneckou výhodu
+                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
+                - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
+                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
+                - name: Definování programu zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření nových zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
+                - name: Registrace pracovníků k zaměstnaneckým výhodám
+                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
+                - name: Správa dat vypršení platnosti zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
+                - name: Generování ACA sestav
+                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Rozvoj zaměstnanců
+              items:
+                - name: Přehled řízení výkonnosti
+                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Vyrovnání dovedností zaměstnanců
+                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
+                - name: Přidání do deníku výkonnosti
+                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření cíle
+                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření kontroly výkonnosti
+                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
+            - name: Vytvořit kurzy
+              items:
+                - name: Nastavení školicích kurzů
+                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
+                - name: Přehled dotazníků
+                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh dotazníků
+                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Distribuce a plánování dotazníků
+                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: "Distribuce dotazníků s\_použitím plánování"
+                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
+                - name: Zobrazit výsledky dotazníku
+                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                - name: Analýza výsledků dotazníku
+                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                - name: "Vytvoření dotazu s\_otevřeným koncem"
+                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: "Vytvoření dotazu s\_uzavřeným koncem"
+                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření závislé otázky
+                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
+            - name: "Bezpečnost na pracovišti a\_dodržování předpisů (USA)"
+              items:
+                - name: Ověření formuláře I-9
+                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
+                - name: Ověření kvalifikačních předpokladů pro zaměstnání pomocí formuláře I-9
+                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
+                - name: Nastavení typů dokumentu Formuláře I-9
+                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
+                - name: Splnění standardu ADA (Americans with Disabilities Act)
+                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
+                - name: Správa přizpůsobení poskytovaných pracovníkům
+                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
         - name: Vykazování a integrace Power BI
           items:
             - name: Vytváření sestav a analýzy s Power BI
@@ -3791,11 +3829,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                        - name: Today
+                        - name: Dnes
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                        - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
-                    - name: List
+                    - name: Seznam
                       items:
                         - name: Funkce seznamu
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3895,14 +3931,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                        - name: Sloučení
+                        - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
-                        - name: Formát
+                        - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
-                        - name: GetLabelText
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
                         - name: GuidValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
                         - name: JsonValue
@@ -4089,8 +4123,6 @@
                   items:
                     - name: Vytvoření konfigurací pro import dat z externího XML souboru
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
-                    - name: Import dat z ručně vybraných souborů v režimu dávky
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace importu dat v režimu dávky ze souborů umístěných na platformě SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
                 - name: Import souborů v XML formátu
@@ -4171,8 +4203,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
                         - name: Spuštění sestav
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-                    - name: Seskupení záznamů a provádění počítání a sčítání pomocí zdrojů dat GROUPBY
-                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Použít generovaný výstup jako zdroj dat k provádění počítání a sčítání
                       items:
                         - name: Vytvoření formátů
@@ -4325,8 +4355,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                     - name: Aktualizace aplikace 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
-                    - name: Aktualizace aplikace 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
                 - name: Určení místa vlastního úložiště pro vygenerované dokumenty
                   items:
                     - name: Přihlášení odběru události pro vyžádání odezvy od obsluhy předplatného
@@ -4653,7 +4681,7 @@
               items:
                 - name: Vytvoření poskytovatelů směnných kurzů
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: 'Vytvoření poskytovatele směnných kurzů v aplikaci Finance and Operations, verze 8.0'
+                - name: Vytvoření poskytovatelů směnných kurzů v aplikaci Finance and Operations verze 8.0
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Vyrovnání transakcí pomocí CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
@@ -4663,5 +4691,3 @@
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
-    - name: Dynamics 365 Human Resources
-      href: ../human-resources/index.md

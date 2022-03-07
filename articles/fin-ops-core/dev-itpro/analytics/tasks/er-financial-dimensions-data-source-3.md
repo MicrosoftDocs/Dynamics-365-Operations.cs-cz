@@ -1,12 +1,10 @@
 ---
 title: Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 3 - návrh sestavy)
-description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
+description: Toto téma popisuje, jak nakonfigurovat model elektronického výkaznictví (ER) tak, aby používal finanční dimenze jako zdroj dat pro zprávy ER. (část 3)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 548eec45739a52d4eb168a80660540196225b2ed482d2104a4cd0d00503109dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773781"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 3 - návrh sestavy)
 
@@ -94,7 +92,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 59. Klikněte na možnost Přidat atributy.
 60. Do pole Název zadejte Popis.
 61. Klepněte na tlačítko OK.
-![Stránka návrháře operací ER](../media/er-financial-dimensions-guides-format1.png)
+![Stránka návrháře operací ER.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mapování prvků sestavy na zdroje dat
 1. Klikněte na kartu Mapování.
@@ -141,7 +139,10 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 42. Ve stromovém zobrazení vyberte 'Kořen: Prvek XML\Společnost: Atribut XML'.
 43. Ve stromovém zobrazení vyberte 'model: Datový model: ukázkový model finanční dimenze\Společnost: Řetězec'.
 44. Klikněte na možnost Vazba.
-45. Klepněte na tlačítko Uložit.
+45. Klikněte na tlačítko Uložit.
 46. Zavřete stránku.
-![Stránka návrháře operací ER](../media/er-financial-dimensions-guides-format2.png)
+![Stránka návrháře operací ER.](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

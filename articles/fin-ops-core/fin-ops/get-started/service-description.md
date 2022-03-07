@@ -2,19 +2,19 @@
 title: Popis služby pro aplikace Finance and Operations
 description: Toto téma poskytuje popis služby pro aplikace Finance and Operations.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 09/03/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952359"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472498"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro aplikace Finance and Operations
 
@@ -28,7 +28,7 @@ Aplikace Finance and Operations jsou nabídky softwaru jako služby (SaaS) pro p
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Společně s [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastrukturou](https://azure.microsoft.com/global-infrastructure/), [výpočtem](/azure/service-fabric/service-fabric-overview), a [databázovými službami](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) tyto aplikace umožňují organizacím spouštět podnikové procesy specifické pro dané odvětví a provozovat je. Zákazníci s podporou svého implementačního partnera určují konfiguraci logiky podnikových aplikací, která nejlépe vyhovuje jejich jedinečným obchodním procesům. Funkčnost a obchodní procesy lze zvětšit nebo rozšířit pomocí jednoho nebo kombinace následujících řešení:
+Společně s [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastrukturou](https://azure.microsoft.com/global-infrastructure/), [výpočtem](/azure/service-fabric/service-fabric-overview), a [databázovými službami](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) tyto aplikace umožňují organizacím spouštět podnikové procesy specifické pro dané odvětví a provozovat je. Zákazníci s podporou svého implementačního partnera určují konfiguraci logiky podnikových aplikací, která nejlépe vyhovuje jejich jedinečným obchodním procesům. Funkčnost a obchodní procesy lze zvětšit nebo rozšířit pomocí jednoho nebo kombinace následujících řešení:
 
 - Integrovaná [personalizační zkušenost](personalize-user-experience.md)
 - Nástroje [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)
@@ -50,7 +50,7 @@ Provozní model aplikací Finance and Operations definuje konkrétní role a odp
 
 ### <a name="customer-activities"></a>Aktivity zákazníka
 
-Zákazníci pracují se svým partnerem a [Microsoft FastTrack](/dynamics365/fasttrack/) podle [Průvodce implementací Dynamics 365](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), rámce [Success by Design](/dynamics365/fasttrack/success-by-design-overview) a nástrojů a šablon osvědčených postupů uvedených v [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) na implementaci jejich řešení. Mezi běžné činnosti patří:
+Zákazníci pracují se svým partnerem a [Microsoft FastTrack](/dynamics365/fasttrack/) v návaznosti na rámec [Success by Design](/dynamics365/fasttrack/success-by-design-overview) a používání nástrojů a šablon osvědčených postupů uvedených v [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) na implementaci jejich řešení. Mezi běžné činnosti patří:
 
 - Správa identity a zabezpečení uživatele
 - Definice, vývoj a provoz obchodních procesů
@@ -117,7 +117,7 @@ Aplikace Finance and Operations jsou obsluhovány z několika oblastí Azure po 
 ### <a name="countryregion-specific-considerations"></a>Aspekty nápovědy specifické pro zemi nebo oblast
 
 - Zákazníci v regulovaném odvětví nebo obchodních organizacích, které obchodují se subjekty ve Francii, které vyžadují místní datovou rezidenci, by si měli projít téma [Finance and Operations ve Francii](../../dev-itpro/deployment/france-local-deployment.md).
-- Zákazníci, kteří působí v Číně, by si měli projít téma [Playbook Azure pro Čínu](/azure/china/) a [Finance and Operations provozované společností 21Vianet v Číně](../../dev-itpro/deployment/china-local-deployment.md).
+- Zákazníci, kteří působí v Číně, by si měli projít téma [Finance and Operations provozované společností 21Vianet v Číně](../../dev-itpro/deployment/china-local-deployment.md).
 - Zákazníci, kteří mají provozy v Rusku, by si to měli projít [ruský zákon o lokalizaci osobních údajů](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Obecné nařízení o ochraně osobních údajů (GDPR)
@@ -197,17 +197,17 @@ Následující tabulka popisuje některé typické scénáře a aktivity pro slu
 | Zřiďte všechny provozní a neprovozní instance. | X | |
 | Ověřte nasazené provozní a neprovozní instance. | | X |
 | **Aktualizace služby** | |
-| Aplikujte aktualizace služeb na určené neprovozní a provozní instance. | X | |
-| Ručně aplikujte aktualizace služeb z LCS na instance sandboxu. Definujte, vyvíjejte, testujte aktualizaci a poskytněte balíček aktualizace kódu zpět do LCS. | | X |
-| Požádejte, aby byly aktualizace rozšíření aplikovány na provozní instanci, a naplánujte jejich aplikaci. | | X |
+| Společnost Microsoft aplikuje aktualizace služeb na určené neprovozní a provozní instance. | X | X |
+| Stáhněte si aktualizaci z LCS, definujte, vyvíjejte a testujte aktualizaci a poskytněte balíček aktualizace kódu zpět do LCS. | | X |
+| Požádejte, aby byly aktualizace rozšíření aplikovány na provozní instanci. | | X |
 | Před použitím aktualizací vytvořte zálohu kódu a dat pro provozní instanci. | X | |
 | V případě jakéhokoli selhání vraťte provozní instanci zpět do zálohy kódu a dat. | X | |
 | **Správa dat (zálohování, obnovení a aktualizace)** | | |
 | Zálohujte databázi. | X | |
 | Určete vysokou dostupnost a plán zotavení po havárii. | X | |
-| Monitorujte výkon provozní instanční databáze. | X | |
-| Vylaďte výkon provozní instanční databáze. | X | |
-| Proveďte aktualizaci databáze produkčních instancí k určitému bodu v čase do neproduktivní instance. | | X |
+| Monitorujte výkon provozní instanční databáze. | X | X |
+| Vylaďte výkon provozní instanční databáze. | X | X |
+| Začněte kopírování provozní instanční databáze do neprovozní instance. | | X |
 | **Aktualizace infrastruktury** | | |
 | Naplánujte pravidelné aktualizace infrastruktury. | X | |
 | **Škálování nahoru a dolů (uživatelé, úložiště a instance)** | | |
@@ -215,7 +215,7 @@ Následující tabulka popisuje některé typické scénáře a aktivity pro slu
 | Aktualizujte změny využití v nástroji LCS Subscription Estimator. | | X |
 | Nahlaste všechny závažné problémy s výkonem, které ovlivňují používání služby. | | X |
 | Proaktivně spravujte prostředky, které jsou pro příslušnou službu vyžadovány. | X | |
-| Vyšetřujte a řešte incidenty. | X | |
+| Vyšetřujte a řešte incidenty. | X | X |
 | **Zabezpečení (přístup uživatele)** | | |
 | Poskytněte uživateli přístup ke službě. | | X |
 | Zajistěte přístup k projektu LCS pro správu a provoz instancí, které byly nasazeny prostřednictvím LCS. | | X |
@@ -314,7 +314,7 @@ Plány a postupy zotavení po havárii společnosti Microsoft jsou pravidelně p
 | Společnost Microsoft zřizuje sekundární prostředí ve spárovaném datovém centru Azure, když je nasazena primární provozní instance. Další informace viz [provozní kontinuita a zotavení po havárii (BCDR): spárované regiony Azure](/azure/best-practices-availability-paired-regions). | Neomezeno |
 | Microsoft povoluje geografickou redundanci Azure SQL a Azure Blob Storage, když je nasazena primární provozní instance. | Neomezeno |
 | Microsoft povoluje automatické zálohování v databázích Azure SQL. | Neomezeno |
-| <p>Když dojde k výpadku, Microsoft určí, zda musí být pro zákazníka provedeno převzetí služeb při selhání a zda dojde ke ztrátě dat. Zákazníci mohou zaznamenat ztrátu dat až do 15 minut v závislosti na povaze a načasování výpadku. | V případě ztráty dat může zákazník pro spuštění převzetí služeb při selhání poskytnout písemné odhlášení. |
+| <p>Když dojde k výpadku, Microsoft určí, zda musí být pro zákazníka provedeno převzetí služeb při selhání a zda dojde ke ztrátě dat. Ztráta dat může být až pět sekund. Další informace viz [Geo obnovení Azure SQL Database](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>V případě ztráty dat společnost Microsoft požádá zákazníka o odhlášení za převzetí služeb při selhání.</p> | V případě ztráty dat může zákazník pro spuštění převzetí služeb při selhání poskytnout písemné odhlášení. |
 | Když dojde k převzetí služeb při selhání, příslušná služba funguje v omezeném režimu. Údržbu aktualizací nelze spustit v režimu převzetí služeb při selhání. | Zákazník nemůže v režimu převzetí služeb při selhání požadovat nasazení balíčku nebo jiné požadavky na pravidelnou údržbu. |
 | Když datové centrum začne fungovat, Microsoft převezme služby při selhání zpět do provozní instance v primární oblasti Azure. Obnoví se normální provoz. | Zákazník se možná bude muset odhlásit při vrácení služeb při selhání do provozní instance v primární oblasti Azure. |
 
@@ -333,9 +333,9 @@ Microsoft nabízí zákazníkům Finance and Operations tři plány podpory: Pre
 | Neomezené odesílání incidentů přestávky/opravy | Ano | Ano | Ano |
 | Nepřetržitý přístup přes LCS | Ano | Ano | Ano |
 | Doba odezvy na incident | Méně než jednu hodinu | Méně než jednu hodinu | Následující pracovní den |
-| Konzultační hodiny | Fondy se získávají na základě dohody. | Ne | Ne |
-| Specializovaný správce účtu podpory | Ano | Ne | Ne |
-| Specializovaný technik podpory | Zapojeno na základě samostatné dohody | Ne | Ne |
+| Konzultační hodiny | Fondy se získávají na základě dohody. | Žádný | Žádný |
+| Specializovaný správce účtu podpory | Ano | Žádný | Žádný |
+| Specializovaný technik podpory | Zapojeno na základě samostatné dohody | Žádný | Žádný |
 
 Další informace naleznete v [Přehled podpory](/power-platform/admin/support-overview).
 
@@ -356,7 +356,6 @@ Společnost Microsoft se zavázala k míře dostupnosti služby 99,9 procent za
 - **[Průvodce licencí](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** - Pomocí této příručky se dozvíte více o tom, jak licencovat Dynamics 365.
 - **[Zákaznická podpora](https://dynamics.microsoft.com/support/)** - Získejte špičkovou podporu pro své aplikace Dynamics 365.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** - Spravujte životní cyklus své aplikace a přejděte k předvídatelným, opakovatelným a vysoce kvalitním implementacím.
-- **[Příručka pro implementaci Dynamics 365](https://aka.ms/D365ImplementationGuideFlip)** – Příručka pro implementaci Dynamics 365 dokumentuje časem prověřené principy Success by Design a poskytuje normativní pokyny k budování, sestavování, testování a nasazení řešení Dynamics 365.
 
 ## <a name="definitions"></a>Definice
 
@@ -429,10 +428,6 @@ Smlouva SLA se vztahuje na online služby společnosti Microsoft. Další inform
 ### <a name="service-update"></a>Aktualizace služby
 
 Služby společnosti Microsoft prostředí Finance and Operations na konzistentním základě prostřednictvím aktualizací služeb. Zákazníci si nastavují vlastní kalendář aktualizací služeb na základě svých obchodních potřeb. Další informace naleznete v tématu [Často kladené dotazy k aktualizacím služby One Version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
-
-Rámec, který systematicky vede implementaci řadou hodnocení v kritických fázích, aby byla zajištěna optimální architektura, zabezpečení, výkon a uživatelské prostředí pro řešení Dynamics 365.
 
 ### <a name="user"></a>Uživatel
 

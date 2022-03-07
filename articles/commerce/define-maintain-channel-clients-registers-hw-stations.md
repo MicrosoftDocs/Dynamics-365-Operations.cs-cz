@@ -1,30 +1,27 @@
 ---
 title: Připojení periferních zařízení k pokladnímu místu (POS).
 description: Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410702"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779511"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
@@ -81,7 +78,7 @@ Bez ohledu na to, zda samotná hardwarová stanice na úrovni kanálu obsahuje i
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS s připojenými periferními zařízeními
 
-[![Tradiční, stálá prodejní místa](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradiční, stálá prodejní místa.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Pokud chcete připojit MPOS k perifernímu zařízení POS v podobě tradičního, stálého řešení POS, přejděte nejprve do samotného rejstříku a přiřaďte k němu hardwarový profil. Pokladny POS naleznete v nabídce **Retail and Commerce** &gt; **Instalace kanálu** &gt; **Instalace POS** &gt; **Pokladny**. 
 
@@ -100,7 +97,7 @@ Nakonec v aplikaci MPOS pomocí operace **Vybrat hardwarovou stanici** vyberte h
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS nebo Cloud POS se samostatnou hardwarovou stanicí
 
-[![Sdílená periferní zařízení](./media/shared-300x254.png)](./media/shared.png)
+[![Sdílená periferní zařízení.](./media/shared-300x254.png)](./media/shared.png)
 
 V tomto scénáři je samostatná hardwarová stanice sdílena mezi klienty MPOS a Cloud POS. Tento scénář vyžaduje vytvoření profilu hardwarové stanice a zadání balíčku ke stažení, portu a hardwarový profil, který používá hardwarová stanice. Profil hardwarové stanice naleznete v části **Retail and Commerce** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. 
 
@@ -205,3 +202,6 @@ Další informace týkající se aktivace zahrnují informaci o tom, který prac
 ### <a name="client-data-synchronization"></a>Synchronizace dat klienta
 
 Všechny změny v klientovi POS s výjimkou změn ve stavu aktivace zařízení musí synchronizovány s databázi kanálu, jinak se neprojeví. Chcete-li synchronizovat změny s databází kanálů, přejděte do nabídky **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Plán distribuce** a spusťte požadovaný plán distribuce. V případě klientských změn spouštějte plány distribuce **Pokladny** a **Konfigurace kanálu**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

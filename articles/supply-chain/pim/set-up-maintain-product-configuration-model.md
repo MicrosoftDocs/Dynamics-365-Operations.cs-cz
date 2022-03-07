@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 4051
 ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7af9aaa01d89da909f2b30089c17d67d377d9e78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ad6b8b7f3111f44b725de07d2541411e4145884
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423915"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204633"
 ---
 # <a name="set-up-a-product-configuration-model"></a>Nastavení modelu konfigurace produktu
 
@@ -53,3 +52,6 @@ Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

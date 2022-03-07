@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3843c165b3fc3030a937ec47a1439b1c1b36206d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441231"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216490"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Vytvoření záznamu deníku pomocí šablony
 
@@ -63,3 +62,6 @@ Zaúčtované deníky lze uložit jako šablony dokladů a použít v novém dok
 29. V poli **Částka** zadejte částku, kterou chcete použít pro doklad. Pole **Částka** se zobrazí pouze pokud je typ šablony dokladu Procento.  
 30. Klikněte na tlačítko **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

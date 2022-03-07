@@ -2,29 +2,25 @@
 title: Přehled webu elektronického obchodu
 description: Toto téma poskytuje přehled podpory pro weby elektronického obchodování v Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512910"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984562"
 ---
 # <a name="e-commerce-site-overview"></a>Přehled webu elektronického obchodu
 
@@ -40,37 +36,37 @@ V aplikaci Dynamics 365 Commerce můžete pomocí kanálu online obchodu vytvoř
 
 Než budete moci začít s Dynamics 365 Commerce, je třeba nastavit jeden kanál online obchodu. Jediný web elektronického obchodování však může poskytnout online prostředí pro více online obchodů. Pokud je například pro podporu různých zeměpisných oblastí nastaveno více online obchodů, lze použít jednu sadu stránek elektronického obchodu k poskytnutí jedinečných prostředí, které jsou definovány jednotlivými obchody. Další informace o konfiguraci webu pro podporu více online obchodů naleznete v tématu [Pidružení online webu ke kanálu](associate-site-online-store.md).
 
-Jakmile je online obchod nastaven, může být přidružen k webu Dynamics 365 Commerce, který bude sloužit jako online výkladní skříň. Další informace o online obchodech a jejich nastavení naleznete v tématu [Vyváření online obchodů](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Jakmile je online obchod nastaven, může být přidružen k webu Dynamics 365 Commerce, který bude sloužit jako online výkladní skříň. Další informace o online obchodech a jejich nastavení naleznete v tématu [Vyváření online obchodů](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
 
-Během inicializace webu elektronického obchodu se zobrazí výzva k zadání názvu domény. Další informace o doménách v Commerce najdete v části [Konfigurace názvu domény](configure-your-domain-name.md) a [Domény v Dynamics 365 Commerce](domains-commerce.md). Nasazení nového klienta elektronického obchodování pomocí [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), postupujte podle pokynů v části [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md). Poté, co je váš klient elektronického obchodu nastaven v LCS, je vytvořen odkaz na konfigurátor webů Commerce. Potom můžete použít konfigurátor webů Commerce k inicializaci a konfiguraci webů elektronického obchodu.
+Během inicializace webu elektronického obchodu se zobrazí výzva k zadání názvu domény. Další informace o doménách v Commerce najdete v části [Konfigurace názvu domény](configure-your-domain-name.md) a [Domény v Dynamics 365 Commerce](domains-commerce.md). Nasazení nového klienta elektronického obchodování pomocí [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), postupujte podle pokynů v části [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md). Poté, co je váš klient elektronického obchodu nastaven v LCS, je vytvořen odkaz na konfigurátor webů Commerce. Potom můžete použít konfigurátor webů Commerce k inicializaci a konfiguraci webů elektronického obchodu.
 
 ## <a name="initialize-your-e-commerce-site"></a>Inicializace webu elektronického obchodu
 
 Když spustíte konfigurátor webů Commerce z LCS, zobrazí se stránka **Weby** (Sites). Tato stránka obsahuje dva předem konfigurované weby, **výchozí** (default) a **fabrikam**, jak je znázorněno v příkladu na následujícím obrázku.
 
-![Stránka Weby v konfigurátoru webů Commerce](media/e-commerce-site-01.png)
+![Stránka Weby v konfigurátoru webů Commerce.](media/e-commerce-site-01.png)
 
 Když vyberete jeden z těchto webů, budete vyzváni k výběru názvu domény, výchozího kanálu online obchodu, podporovaného jazyka pro vybraný kanál a cesty. Pokud je použit pouze jeden kanál, můžete cestu nechat prázdnou. Více kanálů nebo jazyků online obchodu lze nakonfigurovat později v konfigurátoru webů Commerce. Každý další kanál nebo jazyk bude vyžadovat jedinečnou cestu. Například máte dva online kanály, které jsou přidruženy k jednomu webu, a název domény pro tento web je `www.fabrikam.com`. V tomto případě může být cesta pro jeden kanál výchozí hodnota, která neobsahuje žádnou cestu (`https://www.fabrikam.com`) a druhý kanál lze nastavit na novou cestu, například **web2**, který bude mít adresu URL `https://www.fabrikam.com/site2`. Následující obrázek ukazuje příklad dialogového okna inicializace webu v konfigurátoru webů Commerce.
 
-![Dialogové okno inicializace konfigurátoru webů Commerce](media/e-commerce-site-02.png)
+![Dialogové okno inicializace konfigurátoru webů Commerce.](media/e-commerce-site-02.png)
 
 Stránka **Weby** také obsahuje tlačítko **Nový web**. Dialogové okno, které se zobrazí, když vyberete toto tlačítko, se podobá dialogovému oknu inicializace webu, ale slouží k vytvoření nového webu. Nové weby jsou prázdné. Nezahrnují stejné výchozí šablony, fragmenty, stránky a obrázky, které obsahují **výchozí** a **fabrikam** weby. Dle potřeby však můžete otevřít lístek podpory a požádat o přidání kopie výchozího obsahu na nový prázdný web. Další informace najdete v části [Vytvoření webu elektronického obchodu](create-ecommerce-site.md).
 
 Po inicializaci nového webu se zobrazí **domovská** stránka konfigurátoru webů Commerce. Tato stránka obsahuje odkazy na běžné akce a průvodce, jak je znázorněno v příkladu na následujícím obrázku.
 
-![Odkazy na domovské stránce v konfigurátoru webů Commerce](media/e-commerce-site-03.png)
+![Odkazy na domovské stránce v konfigurátoru webů Commerce.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Změna kanálů online obchodu nebo přidání kanálů online obchodu na web elektronického obchodu
 
 Po vytvoření webu elektronického obchodu můžete změnit kanál, ke kterému je přidružen, podle pokynů v části [Přidružení webu elektronického obchodu k online kanálu](associate-site-online-store.md). Příklad na následujícím obrázku ukazuje, jak lze na stránce **Kanály** změnit číslo provozní jednotky kanálu (OUN) (**Nastavení webu \> Kanály**). Po provedení změny nezapomeňte vybrat **Uložit a publikovat**. Tímto způsobem zajistíte publikování změny.
 
-![Stránka Kanály v konfigurátoru webů Commerce](media/e-commerce-site-04.png)
+![Stránka Kanály v konfigurátoru webů Commerce.](media/e-commerce-site-04.png)
 
 Nové kanály můžete přidat volbou **Přidat kanál**. Chcete-li do kanálu přidat nové jazyky, vyberte daný kanál a poté vyberte **Přidat národní prostředí** v zobrazeném dialogovém okně kanálu. Než se v dialogovém okně mohou objevit národní prostředí, musí být předem nakonfigurována pro kanál online obchodu v centrále Commerce.
 
-![Dialogové okno Kanál konfigurátoru webů Commerce](media/e-commerce-site-05.png)
+![Dialogové okno Kanál konfigurátoru webů Commerce.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Vytvoření klienta Azure B2C
 
@@ -121,3 +117,6 @@ Další informace o správě obsahu webu naleznete v následujících tématech:
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
 
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

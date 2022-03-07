@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 55c39fac40498488519fcb539b3c3f7560a46b30
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 70ea2638408296df283a030dedce03b22cb57d81
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423741"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248732"
 ---
 # <a name="prospect-to-cash"></a>Zpeněžení potenciálního zákazníka
 
@@ -82,3 +81,6 @@ Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné
 
 - Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo vyšší verze.
 - Řešení Prospect to Cash (P2C) pro Dynamics 365 Sales, verze 1.15.0.0 nebo novější. Řešení je k dispozici ke stažení z AppSource. [Stáhnout Dynamics 365, zpeněžení potenciálního zákazníka](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

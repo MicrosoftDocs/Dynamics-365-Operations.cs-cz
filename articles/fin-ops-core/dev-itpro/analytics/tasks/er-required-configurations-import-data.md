@@ -1,12 +1,10 @@
 ---
 title: Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
-description: Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci Microsoft Dynamics 365 Finance z externího souboru.
+description: Toto téma popisuje, jak navrhnout konfigurace elektronického výkaznictví pro import dat do aplikace Microsoft Dynamics 365 Finance z externího souboru.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
@@ -15,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684271"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751455"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
 
 [!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Tyto kroky lze dokončit za použití datové sady USMF. Je také nutné stáhnout a lokálně uložit následující soubory: 
+
+| Popis obsahu                       | Název souboru                                     |
+|-------------------------------------------|-----------------------------------------------|
+| Konfigurace datového modelu ER - 1099 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| Konfigurace formátu ER - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Ukázka příchozího dokumentu ve formátu XML                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Ukázka sešitu ke správě dat příchozího dokumentu                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER umožňuje podnikovým uživatelům konfigurovat proces importu souborů externích dat do tabulek v ve formátech .XML nebo .TXT. Nejprve je třeba navrhnout konfiguraci abstraktního datového modelu a ER datového modelu, které budou představovat importovaná data. Dále je třeba definovat strukturu souboru, který chcete importovat, a metodu, kterou použijete k importu dat ze souboru do abstraktního datového modelu. Pro tento abstraktní datový model msuí být vytvořena konfigurace formátu ER, která se mapuje na navržený datový model. Poté musí být konfigurace datového modelu rozšířena mapováním, které popisuje, jak jsou importovaná data zachována jako data abstraktního datového modelu a jak se použijí k aktualizaci tabulek.  Konfigurace ER datového modelu musí být připojena k novému mapování modelu popisujícímu vazbu datového modelu k umístění aplikací.  
 
@@ -254,3 +259,6 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 27. Zavřete stránku.
 28. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

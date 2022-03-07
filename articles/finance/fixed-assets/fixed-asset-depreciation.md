@@ -2,11 +2,9 @@
 title: Odpisy dlouhodobého majetku
 description: Toto téma podává přehled odpisu pro dlouhodobý majetek.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b399ab3df9bddbce8b96752ef344bf93cb2563c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a72aa631f4678876de28c1d8b94c658c092d90865b2db4b10dac13e5cbcc7e7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734531"
 ---
 # <a name="fixed-asset-depreciation"></a>Odpisy dlouhodobého majetku
 
@@ -56,3 +54,6 @@ Další informace naleznete v tématu [Odpisové metody a způsoby odpisu](depre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

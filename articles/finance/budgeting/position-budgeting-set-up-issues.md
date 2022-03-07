@@ -2,11 +2,9 @@
 title: Odstraňování problémů s rozpočtováním pozice
 description: Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 492a0798d1934b0fe1adf4f0546013f394beab06948f02f92358bae408e7748f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726055"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Odstraňování problémů s rozpočtováním pozice
 
@@ -30,8 +28,7 @@ ms.locfileid: "5017610"
 
 Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek. 
 
-<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Proč nelze najít stránku s pozicí prognózy v modulu Lidské zdroje?
----------------------------------------------------------------
+## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Proč nelze najít stránku s pozicí prognózy v modulu Lidské zdroje?
 
 Pozice prognózy byly přesunuty do modulu Rozpočtování.
 
@@ -63,3 +60,6 @@ Data na řádku nákladového prvku pozice prognózy musí spadat do následují
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

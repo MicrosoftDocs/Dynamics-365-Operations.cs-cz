@@ -2,11 +2,9 @@
 title: Expedování objednávek jako přímých dodávek
 description: Toto téma ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku.
 author: omulvad
-manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7eacd80f8f8b9b4a4c2a1e5e5b0da7f0c46e82166d1d02d15ce26dd641f7127f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781362"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Expedování objednávek jako přímých dodávek
 
@@ -81,3 +79,6 @@ Toto téma ukazuje, jak vytvořit přímé dodávky pro prodejní objednávku. P
     - Stránka přímé dodávky se chová jako pracovní plocha pro nákupčí, který poskytuje přehled všech řádků prodejních objednávek, které mají být v přímo doručeny a umožňuje vytvořit odpovídající nákupní objednávky. Kromě toho mohou zobrazit otevření přímé dodávky a potvrzené objednávky na kartě potvrzení a dodání.  
     - Po vytvoření objednávky přímé dodávky se automaticky přesune na kartu Potvrzení. Můžete si vybrat potvrzení objednávky přímo z této stránky. Když je nákup potvrzen, bude automaticky přesunut na kartu dodání, odkud můžete zaregistrovat jeho přijetí.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

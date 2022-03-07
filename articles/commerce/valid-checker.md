@@ -1,119 +1,81 @@
 ---
-title: Ověření transakcí obchodu pro výpočet výkazu
-description: V tomto tématu je popsána funkce pro ověření transakcí obchodu v Microsoft Dynamics 365 Commerce.
-author: analpert
-ms.date: 01/31/2022
+title: Kontrola konzistence maloobchodních transakcí
+description: Toto téma popisuje funkci kontroly konzistence transakcí v aplikaci Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: analpert
+ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 38386087a74a0881867df89bbe26453dff740be3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087442"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350297"
 ---
-# <a name="validate-store-transactions-for-statement-calculation"></a>Ověření transakcí obchodu pro výpočet výkazu
+# <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsána funkce pro ověření transakcí obchodu v Microsoft Dynamics 365 Commerce. Proces ověření identifikuje a označí transakce, které způsobí chyby účtování dříve, než jsou vyzvednuty procesem účtování výkazu.
+Toto téma popisuje funkci kontroly konzistence transakcí v aplikaci Microsoft Dynamics 365 Commerce. Kontrola konzistence identifikuje a izoluje nekonzistentní transakce před tím, než se dostanou k procesu zaúčtování výkazů.
 
-Při pokusu o zaúčtování výkazu může proces ověření selhat z důvodu nekonzistentních dat v tabulkách obchodních transakcí. Zde je několik příkladů faktorů, které mohou způsobit tyto nekonzistence:
+Při zaúčtování výkazu může zaúčtování selhat kvůli nekonzistentním datům v tabulkách obchodních transakcí. Problém s daty může být způsoben nepředvídanými potížemi v aplikaci Point of Sale (POS), nebo tím, že transakce byly nesprávně naimportovány z POS systémů třetích stran. Příklady toho, jak mohou tyto nekonzistence vypadat, zahrnují: 
 
-- Celková částka transakce v tabulce hlavičky neodpovídá celkové částce transakce na řádcích.
-- Počet položek zadaný v tabulce hlavičky neodpovídá počtu položek v tabulce transakcí.
-- Daně v tabulce hlavičky neodpovídají celkové částce daně na řádcích. 
+- Celková částka transakce v tabulce záhlaví neodpovídá celkové částce transakce na řádcích.
+- Počet řádků v tabulce záhlaví neodpovídá počtu řádků v tabulce transakcí.
+- Daně v tabulce záhlaví neodpovídají celkové částce daně na řádcích. 
 
-Pokud jsou procesem zaúčtování výkazů vyzvednuty nekonzistentní transakce, vytvořené prodejní faktury a deníky plateb mohou způsobit selhání procesu zaúčtování výkazu. Proces **Ověřit transakce obchodu** předchází těmto problémům tím, že zajistí, aby do procesu výpočtu výkazu transakce byly předány pouze transakce, které projdou pravidly ověření transakce.
+Když jsou nekonzistentní transakce přejaty procesem zaúčtování výkazů, vytvoří se nekonzistentní prodejní faktury a deníky plateb, následkem čehož celý proces zaúčtování výkazu selže. Obnovení výkazů z takového stavu představuje složité opravy dat napříč mnoha tabulkami transakcí. Kontrola konzistence transakcí těmto problémům zabraňuje.
 
-Následující obrázek ukazuje opakující se denní procesy pro odesílání transakcí, ověřování transakcí a výpočet a účtování výkazů transakcí a procesy na konci dne pro výpočet a účtování finančních výkazů.
+Následujíc tabulka znázorňuje proces zaúčtování s kontrolou konzistence transakcí.
 
-![Obrázek ukazující opakující se denní procesy pro odesílání transakcí, ověřování transakcí a výpočet a účtování výkazů transakcí a procesy na konci dne pro výpočet a účtování finančních výkazů](./media/valid-checker-statement-posting-flow.png)
+![Proces zaúčtování výpisu pomocí kontroly konzistence transakce](./media/validchecker.png "Proces zaúčtování výpisu pomocí kontroly konzistence maloobchodní transakce")
 
-## <a name="store-transaction-validation-rules"></a>Uložení pravidel pro ověřování transakcí
+Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tabulek obchodních transakcí pro následující scénáře:
 
-Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tabulek obchodních transakcí na základě následujících pravidel ověření.
+- **Účet odběratele** - Ověřuje, že účet odběratele existuje v tabulce transakcí v HQ hlavních datech odběratele.
+- **Počet řádků** - Ověřuje, že počet řádků, jak je zaznamenaný v tabulce záhlaví transakcí, odpovídá počtu řádků v tabulce prodejních transakcí.
+- **Cena zahrnuje daň** - Potvrzuje, že parametr **Cena zahrnuje daň** je konzistentní napříč řádky transakcí a cena na řádku prodeje je v souladu s konfigurací ceny zahrnující daň a osvobození od daně.
+- **Částka platby** - Ověří, že záznamy o platbách odpovídají částce platby v záhlaví, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Hrubá částka** - Ověří, že hrubá částka v záhlaví je součtem čistých částek na řádcích plus částka daně, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Čistá částka** - Ověří, že čistá částka v záhlaví je součtem čistých částek na řádcích, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Nedoplatek/přeplatek** – Ověřuje, že rozdíl mezi hrubou částkou v záhlaví a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Částka slevy** – Ověřuje, že částka slevy v tabulkách slev a částka slevy v tabulkách řádků transakcí jsou konzistentní a že částka slevy v záhlaví je součtem částek slev na řádcích, a zároveň zohlední konfiguraci pro zaokrouhlování haléřů v hlavní knize.
+- **Řádková sleva** - Ověřuje, že řádková sleva na řádku transakce je součtem všech řádků v tabulce slev, která odpovídá řádku transakce.
+- **Položka dárkového poukazu** – Commerce nepodporuje vrácení položek dárkového poukazu. Nicméně zůstatek na dárkovém poukazu lze vyplatit v hotovosti. U jakékoliv položky dárkového poukazu, která je zpracována jako řádek vrácení namísto řádku vyplacení v hotovosti, se proces zaúčtování výkazů nezdaří. Proces ověřování pro položky dárkového poukazu pomáhá zaručit, že jediné položky řádku vrácení dárkového poukazu v tabulce transakcí jsou řádky vyplacení dárkového poukazu.
+- **Záporná cena** – Ověřuje, že neexistují žádné řádky transakce s negativní cenou.
+- **Položka a varianta** – Ověřuje, že položky a varianty na řádcích transakce existují v hlavním souboru položek a variant.
+- **Částka daně** - Ověřuje, že se záznamy daně shodují s částkami daně na řádcích.
+- **Sériové číslo** - Ověřuje, že se sériové číslo nachází v řádcích transakce pro položky řízené sériovým číslem.
+- **Podepsat** - Ověřuje, že znaménko množství a čistá částka budou stejné ve všech řádcích transakce.
+- **Obchodní datum** – Ověřuje, zda jsou finanční období pro všechna obchodní data pro transakce otevřená.
+- **Poplatky** - Ověřuje, že částka poplatku záhlaví a řádku odpovídá ceně, včetně konfigurace daně a osvobození od daně.
+
+## <a name="set-up-the-consistency-checker"></a>Nastavení kontroly konzistence
+
+Nakonfigurujte dávkové zpracování „Ověřit transakce obchodu“ pro periodická spuštění pomocí možností **Retail a Commerce \> IT pro Retail a Commerce \> Zaúčtování POS**. Dávkovou úlohu lze naplánovat na základě hierarchie organizace obchodu, podobným způsobem, jakým se nastavují zpracování „Vypočítat příkazy v dávkách“ a „Zaúčtovat příkazy v dávkách“. Doporučujeme, abyste nakonfigurovali toto dávkové zpracování tak, aby se spouštělo několikrát denně, a naplánovali jeho spuštění na konec každého provedení úlohy P.
+
+## <a name="results-of-validation-process"></a>Výsledky procesu ověření
+
+Výsledky procesu ověření podle dávkového zpracování jsou označeny na příslušné transakci. Pole **Stav ověření** na záznamu transakce je buď nastaveno na **Úspěšný** nebo **Chyba** a datum posledního spuštění ověření se zobrazí v poli **Poslední čas ověření**.
+
+Chcete-li zobrazit popisnější text chyby související se selháním ověření, zvolte příslušný záznam transakce a klikněte na tlačítko **Chyby ověřování**.
+
+Transakce, u kterých se nezdaří kontrola ověření, a transakce, které ještě nebyly ověřeny, nebudou publikovány do výkazů. Během procesu „Vypočítat výkaz“ budou uživatelé upozorněni, pokud existují transakce, které mohly být zahrnuty ve výkazu, ale nebyly.
+
+Pokud je nalezena chyba ověření, jediným způsobem její opravy je kontaktování podpory Microsoft Support. V dalších verzích bude přidána funkce, aby mohli uživatelé opravit nepodařené záznamy prostřednictvím uživatelského rozhraní. Rovněž budou zpřístupněny funkce protokolování a auditu pro sledování historie úprav.
 
 > [!NOTE]
-> Pravidla ověření budou i nadále přidávána v následujících vydáních.
+> V budoucích verzích bude přidáno více pravidel ověření pro podporu více scénářů.
 
-### <a name="transaction-header-validation-rules"></a>Pravidlo pro ověření hlavičky transakce
-
-V následující tabulce jsou uvedena pravidla ověření hlavičky transakcí, která jsou kontrolována oproti hlavičce maloobchodních transakcí před předáním těchto transakcí do zaúčtování výkazu.
-
-| Pravidlo | Popis |
-|-------|-------------|
-| Obchodní datum | Toto pravidlo ověřuje, že obchodní datum transakce je spojeno s otevřeným fiskálním obdobím v hlavní knize. |
-| Zaokrouhlování měn | Toto pravidlo ověřuje, že částky transakce jsou zaokrouhleny podle pravidla pro zaokrouhlování měn. |
-| Účet zákazníka | Toto pravidlo ověřuje, že zákazník použitý v transakci v databázi existuje. |
-| Částka slevy | Toto pravidlo ověřuje, že je částka slevy v hlavičce součtem částek slevy na řádcích. |
-| Stav zaúčtování fiskálního dokumentu (Brazílie) | Toto pravidlo ověřuje, že fiskální doklad lze úspěšně zaúčtovat. |
-| Hrubá částka | Toto pravidlo ověřuje, že je hrubá částka v hlavičce transakce shodná s čistou částkou včetně daně na řádcích transakce plus poplatky. |
-| Čistý | Toto pravidlo ověřuje, že je čistá částka v hlavičce transakce shodná s čistou částkou bez daně na řádcích transakce plus poplatky. |
-| Čistý + daň | Toto pravidlo ověřuje, že je hrubá částka v hlavičce transakce shodná s čistou částkou bez daně na řádcích transakce plus všechny daně a poplatky. |
-| Počet položek | Toto pravidlo ověřuje, že počet položek zadaný v hlavičce transakce odpovídá součtu množství na řádcích transakce. |
-| Částka platby | Toto pravidlo ověřuje, že částka platby v hlavičce transakce odpovídá součtu všech platebních transakcí. |
-| Výpočet osvobození od daně | Toto pravidlo ověřuje, že součet vypočtené částky a částky osvobozené od daně v řádcích poplatků se rovná původní vypočítané částce. |
-| Cena včetně daně | Toto pravidlo ověřuje, že je příznak **Daň je zahrnuta v ceně** konzistentní napříč hlavičkou transakce a daňovými transakcemi. |
-| Transakce není prázdná | Toto pravidlo ověřuje, že transakce obsahuje řádky, a že alespoň jeden řádek není prázdný. |
-| Nedoplatek/přeplatek | Toto pravidlo ověřuje, že rozdíl mezi hrubou částkou v hlavičce a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku. |
-
-### <a name="transaction-line-validation-rules"></a>Pravidla pro ověřování řádku transakce
-
-V následující tabulce jsou uvedena pravidla ověření řádku transakcí, která jsou kontrolována oproti podrobnostem řádku maloobchodních transakcí před předáním těchto transakcí do zaúčtování výkazu.
-
-| Pravidlo | Popis |
-|-------|-------------|
-| Čárový kód | Toto pravidlo ověřuje, že v databázi existují všechny čárové kódy položek, které jsou použity na řádcích transakce. |
-| Řádky poplatku | Toto pravidlo ověřuje, že součet vypočtené částky a částky osvobozené od daně v řádcích poplatků se rovná původní vypočítané částce. |
-| Vratky dárkového poukazu | Toto pravidlo ověřuje, že v rámci transakce nedochází k vracení dárkových poukazů. |
-| Varianta položky | Toto pravidlo ověřuje, že v databázi existují všechny položky a varianty, které jsou použity na řádcích transakce. |
-| Řádková sleva | Toto pravidlo ověřuje, že je částka slevy na řádku součtem slevy transakce. |
-| Řádková daň | Toto pravidlo ověřuje, že je částka daně na řádku součtem daní transakce. |
-| Záporná cena | Toto pravidlo ověřuje, že na řádcích transakce nejsou použity negativní ceny. |
-| Řízení sériovým číslem | Toto pravidlo ověřuje, že se sériové číslo nachází na řádku transakce pro položky řízené sériovým číslem. |
-| Dimenze sériového čísla | Toto pravidlo ověřuje, že není zadáno žádné sériové číslo, pokud je dimenze sériového čísla položky neaktivní. |
-| Znaménko rozdílu | Toto pravidlo ověřuje, že znaménka množství a čisté částky budou stejné na všech řádcích transakce. |
-| Osvobození od daně | Toto pravidlo ověřuje, že se součet ceny položky na řádku a částky osvobozené od daně rovná původní ceně. |
-| Přiřazení daňové skupiny | Toto pravidlo ověřuje, že kombinace skupiny DPH a skupiny daně položky vytváří platný daňový průsečík. |
-| Měrná jednotka převodu | Toto pravidlo ověřuje, že měrná jednotka všech řádků má platný převod na měrnou jednotku zásob. |
-
-## <a name="enable-the-store-transaction-validation-process"></a>Povolení procesu ověření transakce úložiště
-
-Nakonfigurujte úlohu **Ověřit transakce obchodu** pro periodická spuštění v centrále Commerce (**Retail a Commerce \> Retail a Commerce IT \> Zaúčtování POS**). Dávková úloha je naplánována na základě organizační hierarchie obchodu. Doporučujeme, abyste nakonfigurovali toto dávkové zpracování tak, aby se spouštěl se stejnou frekvencí jako vaše dávkové úlohy **úloha P** a **Výpočet transakčního výkazu**.
-
-## <a name="results-of-the-validation-process"></a>Výsledky procesu ověření
-
-Výsledky dávkového zpracování **Ověřit transakce obchodu** lze zobrazit v každé transakci maloobchodu. Pole **Stav ověření** v záznamu transakce je nastaveno na **Úspěšný**, **Chyba**, nebo **Žádný**. Pole **Čas posledního ověření** zobrazuje datum spuštění posledního ověření.
-
-Následující tabulka popisuje jednotlivé stavy ověření.
-
-| Stav ověření | Popis |
-|-------------------|-------------|
-| Úspěšný | Všechna povolená ověřovací pravidla jsou splněna. |
-| Chyba | Povolené ověřovací pravidlo identifikovalo chybu. Další podrobnosti o chybě zobrazíte výběrem **Chyby ověření** na podokně akcí. |
-| Žádný | Typ transakce nevyžaduje použití pravidel ověření. |
-
-![Stránka Transakce obchodu s polem Stav ověření a tlačítkem Chyby ověření.](./media/valid-checker-validation-status-errors.png)
-
-Pouze transakce, které mají stav ověření **Úspěšný**, budou vtaženy do výkazů transakcí. Chcete-li zobrazit transakce, které mají stav **Chyba**, zkontrolujte dlaždici **Selhání ověření Cash and carry** v pracovním prostoru **Finance obchodu**.
-
-![Dlaždice v pracovním prostoru Finance obchodu.](./media/valid-checker-cash-carry-validation-failures.png)
-
-Další informace o tom, jak opravit selhání ověření Cash and carry, viz [Úprava a audit transakcí Cash and carry a správy hotovosti](edit-cash-trans.md).
-
-## <a name="additional-resources"></a>Další prostředky
-
-[Úprava a audit transakcí Cash and carry a správy hotovosti](edit-cash-trans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Identifikování a nasazení nástrojů pro výběr kandidáta
 description: Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8015d4e32da2ba80230aa0ad48576948f2fd1678
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a9e0b300692d817024455c669c226a81e601366e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797743"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751903"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifikování a nasazení nástrojů pro výběr kandidáta
 
@@ -57,3 +55,6 @@ Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst 
 24. Zavřete stránku.
 25. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

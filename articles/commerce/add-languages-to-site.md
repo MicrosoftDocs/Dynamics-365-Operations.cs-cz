@@ -2,36 +2,30 @@
 title: Přidání jazyků na web
 description: V tomto tématu je vysvětleno, jak přidat podporu pro další jazyky na webu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410722"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964547"
 ---
 # <a name="add-languages-to-your-site"></a>Přidání jazyků na web
-
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak přidat podporu pro další jazyky na webu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Web můžete lokalizovat do libovolného jazyka, který Commerce podporuje. (Seznam podporovaných jazyků je uveden dále v tomto tématu.) Chcete-li přidat jazyk na váš web, musíte jej nejprve přidat do online obchodu vázaného na váš web.
 
@@ -171,8 +165,9 @@ Jazyk, který jste přidali, bude nyní k dispozici, abyste mohli nakonfigurovat
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 
-[Přidání uvítací zprávy](add-welcome-message.md)
-
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

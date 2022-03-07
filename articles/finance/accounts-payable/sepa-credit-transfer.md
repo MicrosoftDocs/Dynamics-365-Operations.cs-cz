@@ -1,29 +1,28 @@
 ---
 title: Přehled převodů SEPA
 description: Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu.
-author: ShylaThompson
-manager: AnnBe
+author: sunfzam
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441106"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984020"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
 
@@ -33,7 +32,7 @@ Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, kter
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co je zpráva o bezhotovostním převodu?
 Zpráva o převodu kreditu je požadavek, který odešle iniciující strana (vaše společnost) pro převod financí z vlastního účtu věřiteli. Existuje celá řada implementací specifických pro zemi/oblast a konkrétní implementace zpráv o převodu kreditu. Některé z nich se používají v rámci jedné země nebo oblasti a některé se stávají standardem. Jeden dobře zavedený globální standard je ISO 20022 a jeho iniciační zprávy, jako je například převod kreditu. Následující obrázek znázorňuje vztahy a pokrytí pro vybrané zprávy o převodu kreditu. 
-![Převod kreditu](./media/credit-transfer.jpg) Zprávy o převodu kreditu 
+![Peněžní převod](./media/credit-transfer.jpg) Zprávy o peněžním převodu 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Co jsou platby ISO 20022 a SEPA?
 Jednotná oblast pro platby v eurech (SEPA) je definována Evropskou komisí a určuje, že všechny elektronické platby jsou považovány za domácí bez ohledu na zemi nebo oblast, kde se osoba, podnik, nebo organizace a banka nachází. Neexistuje žádný rozdíl mezi národní a zahraniční platbou. SEPA zahrnuje 28 členských států Evropské unie (EU) plus Island, Lichtenštejnsko, Norsko, Švýcarsko, Monako a San Marino. SEPA umožňuje vytvořit jednotný trh pro platební transakce v Evropském hospodářském prostoru (EHP). Použitím SEPA se očekává snížit počet formátů plateb, se kterými banky, společnosti a jednotlivci musí pracovat. Evropská komise ustanovila právní základ pro platby SEPA prostřednictvím směrnice týkající se platebních služeb (PSD). Evropská rada pro platby (EPC) podporuje platby SEPA prostřednictvím následujících činností:
@@ -57,7 +56,7 @@ Formát platby platebního převodu pro evropské země je implementován pomoc�
 Měli byste vždy přejít do knihovny sdílený majetek ve službě Microsoft Dynamics Lifecycle services (LCS) a zobrazit nejaktuálnější seznam dostupných souborů, které mají typ majetku **konfigurace GER**. Další oddíl "Co musím nastavit?" obsahuje odkaz na téma, které vysvětluje, jak vytvořit úložiště LCS ke kontrole dostupných konfigurací a importovat vybrané konfigurace.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co je nutné nastavit?
--   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Před vytvořením souborů převodu kreditu je třeba alespoň jednu aktivní konfigurace převodu importovat do vaší konfigurace obecného elektronického výkaznictví. Pokyny viz [Stažení konfigurace elektronického vykazování ze služby Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Při konfiguraci metody platby Závazky zaškrtněte políčko **Obecné elektronické výkaznictví** a vyberte vhodný formát převodu kreditu (například **Převod kreditu ISO 20022 (AT)**) jako konfiguraci formátu exportu.
 -   Musíte nastavit také informace o právnické osobě a bankovním účtu.
 -   Čísla bankovních účtů, IBAN a někdy SWIFT kódy (BIC) nebo jiné ID, která jsou potřebná k vytvoření platné bezhotovostní platby. Proto je musíte nastavit pro bankovní účet dodavatele a bankovní účet pro organizaci, která žádá o převod.
@@ -126,3 +125,6 @@ Při generování plateb je vygenerován soubor platby a budete vyzváni k jeho 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

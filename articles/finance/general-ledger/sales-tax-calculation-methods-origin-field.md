@@ -2,28 +2,25 @@
 title: Metody výpočtu DPH v poli Zdroj
 description: Tento článek vysvětluje možnosti v poli Zdroj na stránce Kódy DPH, a postup výpočtu DPH na základě vybrané možnosti pro kód DPH.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0eb3671051d9a3be9430050e2a0ad4227b17677e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ac37858c68996c6c8140303327003d93bd357b512f9c634650b7e9df1284496
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769739"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Metody výpočtu DPH v poli Zdroj
 
@@ -55,8 +52,7 @@ Pokud je čistá částka 10,00, pak CLO 1 = 1,00 (10,00 x 10 %) a CLO 2 = 2,00 
 | Pro transakci lze použít pouze jeden daňový kód, kde Zdroj = procento z hrubé částky. Je-li více než jeden takový kód daně určen pro transakci, zobrazí se chyba a DPH nemůže být vypočítána. |
 
 
-<a name="percentage-of-sales-tax"></a>Procento DPH
------------------------
+## <a name="percentage-of-sales-tax"></a>Procento DPH
 
 Vyberete-li v poli Zdroj hodnotu Procento DPH, DPH se vypočítá jako procento z DPH vybrané v části Prodejní daň v poli DPH. DPH, která je vybrána v části Prodejní daň v poli DPH se vypočítá jako první. Druhá DPH bude vypočítána následovně na základě první částky DPH.
 ### <a name="example"></a>Příklad
@@ -122,8 +118,7 @@ Dokument / deník je nastaven na Částky včetně DPH = Ne Částka řádku tra
 
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Sazby DPH na základě polí Základ marže a Metody výpočtu](marginal-base-field.md)
 
@@ -131,3 +126,6 @@ Dokument / deník je nastaven na Částky včetně DPH = Ne Částka řádku tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

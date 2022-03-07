@@ -2,15 +2,12 @@
 title: Karuselový modul
 description: Tohle téma se zabývá karuselovými moduly a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721048"
 ---
 # <a name="carousel-module"></a>Karuselový modul
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá karuselovými moduly a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Karuselový modul slouží k umístění propagačních položek do rotujícího banneru karuselu (včetně formátovaných obrázků), který mohou zákazníci procházet. Maloobchodní prodejce může například pomocí karuselového modulu na domovské stránce prezentovat nové produkty nebo propagační akce.
 
@@ -45,7 +40,7 @@ Do karuselového modulu můžete přidat modul bloku obsahu. Vlastnosti karuselo
 
 Následující obrázek ukazuje příklad karuselového modulu použitého na domovské stránce. Tento karuselový model obsahuje několik položek bloku obsahu.
 
-![Příklad karuselového modulu](./media/Hero.PNG)
+![Příklad karuselového modulu.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Vlastnosti karuselového modulu
 
@@ -86,3 +81,6 @@ Chcete-li přidat karuselový modul na novou stránku a nastavit požadované vl
 [Modul bloku obsahu](add-hero-module.md)
 
 [Modul videopřehrávače](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

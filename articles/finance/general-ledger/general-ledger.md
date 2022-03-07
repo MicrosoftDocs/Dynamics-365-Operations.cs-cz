@@ -2,28 +2,27 @@
 title: Přehled hlavní knihy a finančního výkaznictví
 description: Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ade10020e4bab02490c9104c37fe1f234d634e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441269"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985230"
 ---
 # <a name="general-ledger-home-page"></a>Domovská stránka hlavní knihy
 
@@ -40,7 +39,7 @@ Můžete přidělovat nebo distribuovat peněžní částky na jeden či na víc
 - [Účetní zůstatky hlavní knihy](general-ledger-account-balances.md)
 - [Finanční dimenze](financial-dimensions.md)
 
-[![Obchodní proces](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Obchodní proces.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>DPH
 Každá společnost shromažďuje a odvádí daně různým finančním úřadům. Pravidla a sazby se liší v jednotlivých zemích/regionech, státech, krajích a městech.
@@ -55,14 +54,14 @@ Kromě toho pravidla musí být aktualizována pravidelně, když finanční ú�
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics365/release-plans/) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="financial-reporting"></a>Finanční výkaznictví
 Přejděte na [Přehled Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) téma pro informace o finančních zprávách.
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [Microsoft Dynamics 365 Finance and Operations - Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a blogu [Microsoft Dynamics 365 Finance a Operations – Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
@@ -74,3 +73,6 @@ Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanál
 
 - [Důležité informace o hlavní knize v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dcec3cfde34959de73132c8d764df25fb676d140
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423483"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242342"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Zahájení a ukončení záznamu času v servisní zakázce 
 
@@ -65,3 +64,6 @@ Tento postup můžete použít ke spuštění a zastavení nahrávání pro serv
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

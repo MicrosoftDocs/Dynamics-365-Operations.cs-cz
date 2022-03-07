@@ -1,37 +1,35 @@
 ---
 title: Doplněk Viditelnost zásob
 description: Toto téma popisuje, jak nainstalovat a nakonfigurovat doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management.
-author: chuzheng
-manager: tfehr
+author: sherry-zheng
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625058"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821122"
 ---
 # <a name="inventory-visibility-add-in"></a>Doplněk Viditelnost zásob
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Doplněk Viditelnost zásob je nezávislá a vysoce škálovatelná mikroslužba, která umožňuje sledování zásob na skladě v reálném čase, a tím poskytuje globální pohled na viditelnost zásob.
 
 Všechny informace, které se vztahují k zásobám na skladě, se do služby exportují téměř v reálném čase prostřednictvím nízkoúrovňové integrace SQL. Externí systémy přistupují ke službě prostřednictvím rozhraní API RESTful a dotazují se na praktické informace o daných sadách dimenzí, čímž získávají seznam dostupných pozic.
 
-Viditelnost zásob je mikroslužba postavená na Common Data Service, což znamená, že ji můžete rozšířit pomocí vytváření Power Apps a použitím Power BI, a poskytovat přizpůsobené funkce pro splnění vašich obchodních požadavků. Je také možné upgradovat index za účelem provádění dotazů na zásoby.
+Viditelnost zásob je mikroslužba postavená na Microsoft Dataverse, což znamená, že ji můžete rozšířit pomocí vytváření Power Apps a použitím Power BI, a poskytovat přizpůsobené funkce pro splnění vašich obchodních požadavků. Je také možné upgradovat index za účelem provádění dotazů na zásoby.
 
 Viditelnost zásob poskytuje možnosti konfigurace, které umožňují její integraci s více systémy třetích stran. Podporuje standardizovanou dimenzi zásob, přizpůsobitelnou rozšiřitelnost a standardizované, konfigurovatelné vypočítané množství.
 
@@ -48,11 +46,64 @@ Další informace naleznete v tématu [Zdroje Lifecycle Services](https://docs.m
 Před instalací doplňku Viditelnost zásob musíte provést následující:
 
 - Získejte implementační projekt LCS s alespoň jedním nasazeným prostředím.
-- Vygenerujte beta klíče pro vaši nabídku v LCS.
-- Povolte beta klíče pro vaši nabídku pro uživatele v LCS.
-- Kontaktujte produktový tým doplňku Viditelnost zásob společnosti Microsoft a sdělte jim ID prostředí, kam chcete nasadit doplněk Viditelnost zásob.
+- Ujistěte se, že předpoklady pro nastavení doplňků uvedené v [Přehledu doplňků](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) byly dokončeny. Viditelnost zásob nevyžaduje propojení duálního zápisu.
+- Kontaktujte tým doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a vyžádejte si následující tři požadované soubory:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (pokud je spuštěná verze Supply Chain Management starší než verze 10.0.18)
+
+> [!NOTE]
+> Mezi aktuálně podporované země a oblasti patří Kanada, Spojené státy a Evropská unie (EU).
 
 Máte-li jakékoli dotazy týkající se těchto předpokladů, obraťte se na produktový tým doplňku Viditelnost zásob.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Nastavení Dataverse
+
+Při nastavení Dataverse postupujte následujícím způsobem.
+
+1. Přidejte svému klientu princip služby:
+
+    1. Nainstalujte Azure AD PowerShell Module v2 dle popisu v tématu [Instalace Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Spusťte následující příkaz PowerShellu:
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Vytvořte uživatele aplikace pro Viditelnost zásob v Dataverse:
+
+    1. Otevřete adresu URL svého prostředí Dataverse.
+    1. Přejděte do uzlu **Pokročilá nastavení \> Systém \> Zabezpečení \> Uživatelé** a vytvořte uživatele aplikace. Pomocí nabídky zobrazení změňte zobrazení stránky na **Uživatelé aplikace**.
+    1. Zvolte **Nové**. Nastavte ID aplikace na *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (ID objektu se automaticky načte, když uložíte změny.) Název můžete upravit. Můžete jej například změnit na *Viditelnost zásob*. Po dokončení zvolte **Uložit**.
+    1. Vyberte příkaz **Přiřadit roli** a potom vyberte **Správce systému**. Pokud existuje role, která je pojmenována **Uživatel Common Data Service**, vyberte ji také.
+
+    Další informace naleznete v tématu [Vytvoření uživatele aplikace](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Importujte soubor `Inventory Visibility Dataverse Solution.zip`, který obsahuje entity související s konfigurací Dataverse a Power Apps:
+
+    1. Přejděte na stránku **Řešení**.
+    1. Vyberte **Import**.
+
+1. Importujte tok triggeru upgradu konfigurace:
+
+    1. Přejděte na stránku Microsoft Flow.
+    1. Ujistěte se, že existuje připojení s názvem *Dataverse (zastaralé)*. (Pokud neexistuje, vytvořte jej.)
+    1. Importujte soubor `Inventory Visibility Configuration Trigger.zip`. Po importu se trigger zobrazí v části **Moje toky**.
+    1. Inicializujte následující čtyři proměnné na základě informací o prostředí:
+
+        - ID klienta Azure
+        - ID klienta aplikace Azure
+        - Tajný klíč klienta aplikace Azure
+        - Koncový bod Viditelnosti zásob
+
+            Další informace o této proměnné najdete v části [ Nastavení integrace Viditelnosti zásob](#setup-inventory-visibility-integration) v další části tohoto tématu.
+
+        ![Trigger konfigurace](media/configuration-trigger.png "Trigger konfigurace")
+
+    1. Vyberte příkaz **Zapnout**.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Instalace doplňku
 
@@ -61,14 +112,16 @@ Pro instalaci doplňku Viditelnost zásob proveďte následující:
 1. Přihlaste se k portálu [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
 1. Na domovské stránce vyberte projekt, kde je nasazeno vaše prostředí.
 1. Na stránce projektu vyberte prostředí, do kterého chcete doplněk nainstalovat.
-1. Na stránce prostředí přejděte dolů, dokud neuvidíte sekci **Doplňky prostředí**. Pokud sekce není viditelná, ujistěte se, že byly plně zpracovány nezbytné beta klíče.
+1. Na stránce prostředí přejděte dolů, dokud neuvidíte část **Doplňky prostředí** v části **Integrace Power Platform** , kde najdete název prostředí Dataverse.
 1. V sekci **Doplňky prostředí** vyberte **Nainstalovat nový doplněk**.
+
     ![Stránka prostředí v LCS](media/inventory-visibility-environment.png "Stránka prostředí v LCS")
+
 1. Vyberte odkaz **Nainstalovat nový doplněk**. Otevře se seznam dostupných doplňků.
-1. Vyberte ze seznamu **Služba zásob**. (Upozorňujeme, že toto může být nyní uvedeno jako **Doplněk Viditelnost zásob pro Dynamics 365 Supply Chain Management**.)
+1. V seznamu vyberte možnost **Viditelnost zásob**.
 1. Zadejte hodnoty pro následující pole pro vaše prostředí:
 
-    - **ID aplikace AAD**
+    - **ID aplikace AAD (klienta)**
     - **ID klienta AAD**
 
     ![Stránka nastavení doplňku](media/inventory-visibility-setup.png "Stránka nastavení doplňku")
@@ -76,32 +129,122 @@ Pro instalaci doplňku Viditelnost zásob proveďte následující:
 1. Odsouhlaste smluvní podmínky výběrem zaškrtávacího políčka **Smluvní podmínky**.
 1. Vyberte **Instalovat**. Stav doplňku se zobrazí jako **Probíhá instalace**. Po dokončení obnovte stránku, aby se zobrazila změna stavu **Nainstalováno**.
 
-### <a name="get-a-security-service-token"></a>Získání tokenu služby zabezpečení
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>Odinstalace doplňku
 
-Chcete-li získat token služby zabezpečení, postupujte takto:
+Chcete-li doplněk odinstalovat, vyberte **Odinstalovat**. Po obnovení LCS bude doplněk Viditelnost zásob odebrán. Proces odinstalace odebere registraci doplňku a také spustí úlohu k vyčištění všech obchodních dat, která jsou uložena ve službě.
 
-1. Získejte `aadToken` a zavolejte koncový bod: https://securityservice.operations365.dynamics.com/token.
-1. Nahraďte `client_assertion` v textu za `aadToken`.
-1. Nahraďte kontext v textu prostředím, ve kterém chcete doplněk nasadit.
-1. Nahraďte obor v textu následovně:
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Data o spotřebě množství na skladě z aplikace Supply Chain Management
 
-    - Rozsah pro MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (ID aplikace Azure Active Directory ID tenanta pro MCK naleznete v `appsettings.mck.json`.)
-    - Rozsah pro PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (ID aplikace Azure Active Directory ID tenanta pro PROD naleznete v `appsettings.prod.json`.)
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Nasaďte integrační balíček Viditelnost zásob
 
-    Výsledek by měl vypadat podobně jako v následujícím příkladu.
+Pokud používáte Supply Chain Management verze 10.0.17 nebo starší, kontaktujte tým podpory doplňku Viditelnost zásob na adrese [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a vyžádejte si soubor balíčku. Pak nasaďte balíček do LCS.
+
+> [!NOTE]
+> Pokud během nasazení dojde k chybě neshody verzí, musíte ručně importovat projekt X++ do vývojového prostředí. Pak vytvořte nasaditelný balíček ve vývojovém prostředí a nasaďte jej ve svém produkčním prostředí.
+> 
+> Kód je součástí Supply Chain Management verze 10.0.18. Pokud používáte tuto verzi nebo novější, nasazení se nevyžaduje.
+
+Zkontrolujte, zda jsou ve vašem prostředí Supply Chain Management zapnuty následující funkce. (Implicitně jsou zapnuté.)
+
+| Popis funkce | Verze kódu | Třída přepnutí |
+|---|---|---|
+| Povolení nebo zákaz používání dimenzí zásob v tabulce InventSum | 10.0.11 | InventUseDimOfInventSumToggle |
+| Povolení nebo zákaz používání dimenzí zásob v tabulce InventSumDelta | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Nastavení integrace viditelnosti zásob
+
+1. V aplikaci Supply Chain Management otevřete pracovní prostor **[Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** a zapněte funkci **Integrace viditelnosti zásob**.
+1. Přejděte do uzlu **Řízení zásob \> Nastavení \> Parametry integrace viditelnosti zásob** a zadejte adresu URL prostředí, ve kterém je spuštěn doplněk Viditelnost zásob.
+
+    Najděte oblast Azure prostředí LCS a zadejte adresu URL. Adresa URL má následující tvar:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Pokud jste například v Evropě, vaše prostředí bude mít jednu z následujících adres URL:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Nyní jsou k dispozici následující oblasti:
+
+    | Oblast Azure | Krátký název oblasti |
+    |---|---|
+    | Austrálie – východ | eau |
+    | Austrálie – jihovýchod | seau |
+    | Střední Kanada | cca |
+    | Kanada – východ | eca |
+    | Evropa – sever | neu |
+    | Evropa – západ | weu |
+    | Východní USA | eus |
+    | USA – západ | wus |
+
+1. Přejděte do uzlu **Řízení zásob \> Periodické \> Integrace viditelnosti zásob** a povolte úlohu. Všechny události změny zásob z aplikace Supply Chain Management budou nyní odeslány do Viditelnosti zásob.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>Veřejné rozhraní API doplňku Viditelnost zásob
+
+Veřejné rozhraní REST API doplňku Viditelnost zásob představuje několik konkrétních koncových bodů pro integraci. Podporuje tři hlavní typy interakce:
+
+- Odesílání změn zásob na skladě do doplňku z externího systému
+- Dotazování na aktuální množství zásob na skladě z externího systému
+- Automatická synchronizace se zásobami na skladě v Supply Chain Management
+
+Automatická synchronizace není součástí veřejného API. Místo toho se zpracovává na pozadí pro ta prostředí, kde je povolen doplněk Viditelnost zásob.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Ověřování
+
+Token zabezpečení platformy se používá k volání doplňku Viditelnost zásob. Proto musíte *token Azure Active Directory (Azure AD)* vygenerovat pomocí vaší aplikace Azure AD. Poté musíte token Azure AD použít k získání *přístupového tokenu* od služby zabezpečení.
+
+Token služby zabezpečení získáte takto:
+
+1. Přihlaste se na portál Azure a použijte jej k vyhledání údajů `clientId` a `clientSecret` pro vaši aplikaci Supply Chain Management.
+1. Načtěte token Azure Active Directory (`aadToken`) odesláním požadavku HTTP s následujícími vlastnostmi:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metoda** - `GET`
+    - **Obsah těla (údaje formuláře)**:
+
+        | klíč | hodnota |
+        | --- | --- |
+        | id klienta | ${aadAppId} |
+        | tajný klíč klienta | ${aadAppSecret} |
+        | typ grantu | client_credentials |
+        | prostředek | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Měli byste obdržet `aadToken` v odpovědi, která se podobá následujícímu příkladu.
+
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formulujte požadavek JSON, který se podobá následujícímu:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Kde:
+    - Hodnota `client_assertion` musí být `aadToken`, který jste obdrželi v předchozím kroku.
+    - Hodnota `context` musí být ID prostředí, do kterého chcete doplněk nasadit.
+    - Nastavte všechny ostatní hodnoty, jak je znázorněno v příkladu.
+
+1. Odešlete požadavek HTTP s následujícími vlastnostmi:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metoda** - `POST`
+    - **Záhlaví HTTP** - Zahrňte verzi API (klíč je `Api-Version` a hodnota je `1.0`)
+    - **Obsah těla** - Zahrňte požadavek JSON, který jste vytvořili v předchozím kroku.
 
 1. V odpovědi získáte `access_token`. To je to, co potřebujete jako nosný token pro volání rozhraní API doplňku Viditelnost zásob. Následuje příklad.
 
@@ -113,27 +256,7 @@ Chcete-li získat token služby zabezpečení, postupujte takto:
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>Odinstalace doplňku
-
-Chcete-li doplněk odinstalovat, vyberte **Odinstalovat**. Obnovte LCS a doplněk Viditelnost zásob bude odebrán. Proces odinstalace odebere registraci doplňku a také spustí úlohu k vyčištění všech obchodních dat uložených ve službě.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Veřejné rozhraní API doplňku Viditelnosti zásob
-
-Veřejné rozhraní REST API doplňku Viditelnost zásob představuje několik konkrétních koncových bodů integrace. Podporuje tři hlavní typy interakce:
-
-- Odesílání změn zásob na skladě do doplňku z externího systému.
-- Dotazování na aktuální množství zásob na skladě z externího systému.
-- Automatická synchronizace se zásobami na skladě v Supply Chain Management.
-
-Automatická synchronizace není součástí veřejného API, ale místo toho se zpracovává na pozadí pro prostředí, která mají povolený doplněk Viditelnost zásob.
-
-### <a name="authentication"></a>Ověřování
-
-Token zabezpečení platformy se používá k volání doplňku Viditelnost zásob, takže musíte vygenerovat token Azure Active Directory pomocí vaší aplikace Azure Active Directory.
-
-Další informace o tom, jak získat token zabezpečení, najdete v části [Instalace doplňku Viditelnost zásob](#install-add-in).
-
-### <a name="configure-the-inventory-visibility-api"></a>Konfigurace rozhraní API doplňku Viditelnost zásob
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurace rozhraní API doplňku Viditelnost zásob
 
 Před použitím služby musíte dokončit konfigurace popsané v následujících pododdílech. Konfigurace se může lišit v závislosti na podrobnostech vašeho prostředí. Obsahuje primárně čtyři části:
 
@@ -205,7 +328,7 @@ Měli byste dva indexy definované následovně:
 
 Prázdná závorka se agreguje na základě ID produktu v oddílu.
 
-Indexování definuje, jak můžete seskupit výsledky na základě nastavení dotazu `groupBy`. V tomto případě, pokud nedefinujete žádné hodnoty `groupBy`, získáte součty `productid`. Jinak pokud definujete `groupBy` jako `groupBy=ColorId&groupBy=SizeId`, vrátí se vám více řádků na základě různých kombinací barev a velikostí v systému.
+Indexování definuje, jak můžete seskupit výsledky na základě nastavení dotazu `groupBy`. V tomto případě, pokud nedefinujete žádné hodnoty `groupBy`, získáte součty `productid`. Pokud definujete `groupBy` jako `groupBy=ColorId&groupBy=SizeId`, vrátí se vám více řádků na základě různých kombinací barev a velikostí v systému.
 
 Kritéria dotazu můžete zadat do textu požadavku.
 
@@ -230,7 +353,7 @@ Zde je ukázkový dotaz na produkt s kombinací barev a velikostí.
 
 #### <a name="custom-measurement"></a>Vlastní měrné systémy
 
-Výchozí množství měrného systému jsou propojena se Supply Chain Management, můžete však chtít mít množství, které je tvořeno kombinací výchozích měrných systémů. Chcete-li to provést, můžete mít konfiguraci vlastních množství, která budou přidána k výstupu dotazů na zásoby na skladě.
+Výchozí množství měření jsou spojena se Supply Chain Management. Možná však budete chtít množství, které je tvořeno kombinací výchozích měření. Chcete-li to provést, můžete mít konfiguraci vlastních množství, která budou přidána k výstupu dotazů na zásoby na skladě.
 
 Funkce jednoduše umožňuje definovat sadu měrných systémů, které budou přidány, anebo sadu měrných systémů, které budou odečteny, aby bylo možné vytvořit vlastní měrný systém.
 
@@ -500,3 +623,6 @@ Dotazy zobrazené v předchozích příkladech by mohly vrátit takový výslede
 ```
 
 Všimněte si, že pole množství jsou strukturována jako slovník měrných jednotek a jejich přidružených hodnot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

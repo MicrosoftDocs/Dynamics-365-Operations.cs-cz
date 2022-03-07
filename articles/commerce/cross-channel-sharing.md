@@ -2,35 +2,30 @@
 title: Povolení a používání sdílení napříč kanály
 description: Toto téma popisuje, jak povolit a používat funkci sdílení napříč kanály v konfigurátoru webů Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4410912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742409"
 ---
-# <a name="enable-and-use-cross-channel-sharing"></a>Povolení a používání sdílení napříč kanály
+# <a name="enable-and-use-cross-channel-sharing"></a>Povolení a použití sdílení napříč kanály
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak povolit a používat funkci sdílení napříč kanály v konfigurátoru webů Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Sdílení napříč kanály umožňuje maloobchodníkům opakovaně používat a sdílet obsah mezi několika kanály webu. Tuto schopnost oceníte, pokud mají kanály webu kompatibilní základní jazyk nebo pokud mají mnoho společných položek obsahu.
 
@@ -53,15 +48,15 @@ Sdílení napříč kanály povolíte v konfigurátoru webů Commerce tímto pos
 1. Přejděte na **Nastavení webu \> Funkce**.
 1. Možnost **Napříč kanály** nastavte na **Zapnuto**.
 
-    ![Možnost Napříč kanály nastavená na Zapnuto v konfigurátoru webů Commerce](./media/enabling-cross-channel-sharing.png)
+    ![Možnost Napříč kanály nastavená na Zapnuto v konfigurátoru webů Commerce.](./media/enabling-cross-channel-sharing.png)
 
 Po povolení sdílení napříč kanály se informace pro více kanálů objeví v sekci **Kanály** v oblasti **Nastavení webu \> Funkce**, jak ukazuje příklad na následujícím obrázku.
 
-![Informace kanálů viditelné po povolení sdílení napříč kanály](./media/channels-cross-channel.png)
+![Informace kanálů viditelné po povolení sdílení napříč kanály.](./media/channels-cross-channel.png)
 
 Jakmile povolíte sdílení napříč kanály, bude pole **Kanál** v pravém horním rohu konfigurátoru webů Commerce obsahovat možnost **Online obchod s více kanály**, kterou můžete použít ke správě obsahu pro více kanálů, jak znázorňuje následující obrázek.
 
-![Možnost Online obchod s více kanály v poli Kanály po povolení sdílení napříč kanály](./media/cross-channel-dropdown.png)
+![Možnost Online obchod s více kanály v poli Kanály po povolení sdílení napříč kanály.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Vytvoření a používání obsahu pro více kanálů
 
@@ -137,3 +132,6 @@ Když teď použijete základní adresu URL kanálu a přejdete na adresu URL st
 [Stavy dokumentu a životního cyklu](document-states-overview.md)
 
 [Práce s publikovacími skupinami](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

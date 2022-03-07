@@ -1,12 +1,10 @@
 ---
 title: Prostoj údržby pro pracovní příkazy
 description: Tohle téma popisuje jak vytvořit registrace prostojů údržby u majetku vybraného v pracovním příkazu.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753365"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Prostoj údržby pro pracovní příkazy
 
@@ -47,7 +45,7 @@ Registrace prostojů údržby můžete vytvořit u majetku vybraného v pracovn�
 
 Následující ilustrace znázorňuje příklad stránky **Kódy důvodu prostoje údržby**.
 
-![Obrázek č. 1](media/15-work-orders.png)
+![Obrázek č. 1.](media/15-work-orders.png)
 
 Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můžete vytvořit registrace prostojů údržby pro pracovní příkazy a majetek.
 
@@ -73,18 +71,21 @@ Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můž
 
 Následující ilustrace znázorňuje příklad stránky registrace prostoje údržby.
 
-![Obrázek č. 2](media/16-work-orders.png)
+![Obrázek č. 2.](media/16-work-orders.png)
 
 Kalendář použitý k výpočtu registrace prostoje údržby závisí na výběru v nastavení majetku a parametrů. Pokud je prostředek vybrán pro majetek v poli **Prostředek** pevné záložky **Investiční majetek** na stránce **Veškerý majetek**, použije se nastavený kalendář pro přidruženou skupinu prostředků, jak je znázorněno na následujícím obrázku.
 
-![Obrázek č. 3](media/17-work-orders.png)
+![Obrázek č. 3.](media/17-work-orders.png)
 
 Není-li pro majetek vybrán žádný prostředek, použije se standardní kalendář vybraný v části **Parametry správy majetku**, jak je znázorněno na následujícím obrázku.
 
-![Obrázek č. 4](media/18-work-orders.png)
+![Obrázek č. 4.](media/18-work-orders.png)
 
 Pokud chcete zobrazit přehled všech registrací prostojů údržby, klikněte na **Správa majetku** > **Dotazy** > **Prostoj údržby**.
 
 >[!NOTE]
 >Všechny kalendáře používané v modulu **Správa majetku** se nastavují v umístění **Správa organizace** > **Nastavení** > **Kalendáře** > **Kalendáře**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

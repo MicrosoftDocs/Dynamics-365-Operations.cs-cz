@@ -2,16 +2,13 @@
 title: Nastavení a práce s výstrahami u podvodů kontaktního střediska
 description: Toto téma vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763661"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Nastavení a práce s výstrahami u podvodů kontaktního střediska
 
@@ -37,13 +34,13 @@ Toto téma vysvětluje, jak lze nastavit kritéria a pravidla pro blokování po
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Zapnutí funkce pro zjišťování podvodů
 
-Chcete-li použít funkci zjišťování podvodu, je nutné nastavit možnost **Povolit dokončení objednávky** na kanálu na **Ano**, když je kanál kontaktního střediska [definován](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Když je ukončení objednávky zapnuto, uživatelé kontaktního střediska musí zvolit **Dokončit** na stránce prodejní objednávky pro všechny prodejní objednávky, které jsou vytvořeny. Akce dokončení bude mít za následek otevření stránky **Souhrn prodejní objednávky**. Poté, co uživatelé zadají požadovaná data platby na stránce **Souhrn prodejní objednávky**, vyberou **Odeslat** pro dokončení objednávky. Při odeslání objednávky se spustí funkce zjištění podvodu a všechna pravidla, která jsou v systému aktivní, se automaticky ověří.
+Chcete-li použít funkci zjišťování podvodu, je nutné nastavit možnost **Povolit dokončení objednávky** na kanálu na **Ano**, když je kanál kontaktního střediska [definován](/dynamics365/unified-operations/retail/set-up-order-processing-options). Když je ukončení objednávky zapnuto, uživatelé kontaktního střediska musí zvolit **Dokončit** na stránce prodejní objednávky pro všechny prodejní objednávky, které jsou vytvořeny. Akce dokončení bude mít za následek otevření stránky **Souhrn prodejní objednávky**. Poté, co uživatelé zadají požadovaná data platby na stránce **Souhrn prodejní objednávky**, vyberou **Odeslat** pro dokončení objednávky. Při odeslání objednávky se spustí funkce zjištění podvodu a všechna pravidla, která jsou v systému aktivní, se automaticky ověří.
 
-Uživatelé kontaktního střediska mohou také ručně blokovat prodejní objednávku ke kontrole proti podvodu, než zvolí **Odeslat**. Chcete-li ručně blokovat prodejní objednávku, na stránce **Souhrn prodejní objednávky** vyberte **Blokování** \> **Ruční blokování kvůli podvodu**. Poté budete vyzváni k zadání komentáře vysvětlujícího důvod blokování objednávky. Tato poznámka se zobrazí na pracovní ploše [blokování objednávek](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), aby poskytla kontextu uživateli kontrolujícímu objednávky, které jsou blokované, a pomohla mu určit, zda má být objednávka uvolněna.
+Uživatelé kontaktního střediska mohou také ručně blokovat prodejní objednávku ke kontrole proti podvodu, než zvolí **Odeslat**. Chcete-li ručně blokovat prodejní objednávku, na stránce **Souhrn prodejní objednávky** vyberte **Blokování** \> **Ruční blokování kvůli podvodu**. Poté budete vyzváni k zadání komentáře vysvětlujícího důvod blokování objednávky. Tato poznámka se zobrazí na pracovní ploše [blokování objednávek](/dynamics365/unified-operations/retail/work-with-order-holds), aby poskytla kontextu uživateli kontrolujícímu objednávky, které jsou blokované, a pomohla mu určit, zda má být objednávka uvolněna.
 
 Kromě konfigurace možnosti **Povolit dokončení objednávky** na kanálu je nutné také nastavit funkci zjištění podvodu v parametrech kontaktního střediska. Přejděte na **Maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska**. Na stránce **Parametry kontaktního střediska** na kartě **Blokování** nastavte **Zjišťování podvodu** na **Ano**.
 
-Na kartě **Blokování** byste měli také definovat [kódy blokování](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), které budou použity pro objednávku, která je ručně nebo automaticky blokována kvůli kontrole proti podvodu. Nastavte kódy blokování v polích **Kód ručního blokování kvůli podvodu** a **Kód blokování kvůli podvodu**. Může být užitečné vytvořit dva jedinečné kódy blokování, aby uživatelé, kteří pracují na pracovní ploše blokování mohli snadno filtrovat a odlišit automatické blokování od ručního.
+Na kartě **Blokování** byste měli také definovat [kódy blokování](/dynamics365/unified-operations/retail/work-with-order-holds), které budou použity pro objednávku, která je ručně nebo automaticky blokována kvůli kontrole proti podvodu. Nastavte kódy blokování v polích **Kód ručního blokování kvůli podvodu** a **Kód blokování kvůli podvodu**. Může být užitečné vytvořit dva jedinečné kódy blokování, aby uživatelé, kteří pracují na pracovní ploše blokování mohli snadno filtrovat a odlišit automatické blokování od ručního.
 
 Aby kontrola proti podvodu fungovala účinně, je nutné nastavit také pole **Minimální hodnocení**. Každé kritérium podvodu a pravidlo, které jsou definované v systému, mají skóre. Když se prodejní objednávka kontroluje proti shodě podvodu a nalezne se jedna nebo více shod, skóre se sečtou a dají objednávce výsledné hodnocení proti podvodu. Pokud celkové hodnocení podvodu objednávky překračuje hodnotu pole **Minimální hodnocení**, objednávka se automaticky zablokuje. Volitelně můžete použít jiná pole související s hodnocením na kartě **Blokování**, abyste definovali hodnocení e-mailu, telefonu, PSČ a rozšířeného PSČ. Pokud nezadáte hodnocení pro žádné z těchto statických kritérií podvodu, když je definujete na stránce **Statická podvodná data**, systém je bude hodnotit pomocí výchozích hodnocení zadaných na kartě **Blokování** na stránce **Parametry kontaktního střediska**.
 
@@ -68,4 +65,7 @@ Objednávka je uložena, a obsahuje příznak **Nezpracovávat**. Tento přízna
 
 Chcete-li zobrazit a spravovat objednávky, které jsou blokovány kvůli kontrole proti podvodu, přejděte na **Maloobchod a velkoobchod** \> **Odběratelé** \> **Blokování objednávek**. Na stránce **Blokování objednávek** v seznamu vyberte položku a klikněte na **Blokování objednávky**, abyste viděli podrobnější zobrazení, které obsahuje informace o důvodu blokování. Na pevné záložce **Podrobnosti podvodu** můžete zobrazit systematická kritéria podvodu, která byla nalezena jako shoda pro objednávku a použité skóre. Pokud objednávka byla blokována ručně, můžete provést revizi všech komentářů zadaných uživatelem, který objednávku zablokoval pohledem do části **Poznámky o podvodu** na pevné záložce **Poznámky**.
 
-Další informace o práci s blokováním objednávek najdete v části [Blokování objednávek](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+Další informace o práci s blokováním objednávek najdete v části [Blokování objednávek](/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

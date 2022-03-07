@@ -2,15 +2,12 @@
 title: Modul iframe
 description: Tohle téma se zabývá modulem iframe a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665389"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754007"
 ---
-# <a name="iframe-module"></a>Modul iframe
+# <a name="iframe-module"></a>Modul iFrame
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá modulem iframe a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Modul iframe poskytuje prvek iframe (vložený rámec), který hostuje externí obsah na webu. Například může být použit k hostování videa YouTube nebo prohlížeče souborů PDF na jakékoli stránce webu. 
 
@@ -42,7 +37,7 @@ Modul iframe vyžaduje cílovou adresu URL. Poté je hostitelem obsahu cílové 
 
 Následující obrázek ukazuje příklady modulů iframe, které zobrazují externí videa na stránkách webu.
 
-![Příklad modulů iframe zobrazujících externí videa](./media/ecommerce-iframe.PNG)
+![Příklad modulů iframe zobrazujících externí videa.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Vlastnosti modulu iframe
 
@@ -71,9 +66,15 @@ Chcete-li na stránku přidat modul iframe a zobrazit externí video, postupujte
 1. Nastavte další vlastnosti, například **Nadpis** a **Výška**, dle potřeby.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na marketingovou stránku svého webu. Měli byste vidět, že video je vykresleno v modulu iframe.
- 
+
+> [!NOTE]
+> Protože modul iframe hostí externí obsah, musí autoři stránek zajistit, aby obsah hostovaný v modulu iframe neporušoval zásady omezení obsahu na příslušném trhu. Pokud dojde k porušení obsahu na stránce, která používá modul iframe, může autor webu odebrat modul iframe tak, že stránku otevře v nástroji pro tvorbu webu a vybere **Odebrat modul** ve slotu modulu iframe a poté stránku uložit a znovu publikovat.
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Přehled knihovny modulů](starter-kit-overview.md)
 
 [Správa zásad zabezpečení obsahu (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

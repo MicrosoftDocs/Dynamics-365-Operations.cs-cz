@@ -1,12 +1,10 @@
 ---
 title: Řízení nákladů závad majetku
 description: Toto téma popisuje kontrolu nákladů na závady majetku v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCostControlFault
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 597e30db346e882a7002709be52ad1c2d0576099
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bbf2d6b8e22981db76ca028073f8170cbe7f40b2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019935"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361059"
 ---
 # <a name="asset-fault-cost-control"></a>Řízení nákladů závad majetku
 
@@ -58,6 +56,9 @@ V tomto příkladu je zobrazen výpočet kontroly nákladů majetku.
 - Pole **Skutečné náklady** zobrazuje zaúčtované náklady na pracovních příkazech. 
 - Pole **Potvrzené náklady** zobrazuje celkové množství nákladů, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
 
-    ![Obrázek č. 1](media/05-controlling-and-reporting.png)
+    ![Obrázek č. 1.](media/05-controlling-and-reporting.png)
 
 Více informací o nastavení závad získáte v části [Správa závad](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

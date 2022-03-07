@@ -2,11 +2,9 @@
 title: Pracovní zátěže spuštění výroby pro cloudové a hraniční jednotky škálování
 description: Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s cloudovými a hraničními jednotkami škálování.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,22 +16,22 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352729"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže spuštění výroby pro cloudové a hraniční jednotky škálování
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Úloha provádění výroby je v tomto okamžiku k dispozici v preview.
 > Některé obchodní funkce nejsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže.
 
-Při provádění výroby poskytují cloudové a okrajové jednotky škálování následující funkce, i když hraniční jednotky nejsou připojeny k centru:
+Při provádění výroby poskytují jednotky škálování následující funkce:
 
 - Obsluha strojů a vedoucí výroby mají přístup k operačnímu výrobnímu plánu.
 - Operátoři strojů mohou udržovat aktuální plán spuštěním samostatných a procesních výrobních úloh.
@@ -46,7 +44,7 @@ Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s clou
 
 Jak ukazuje následující obrázek, životní cyklus výroby je rozdělen do tří fází: *Plánování*, *Provedení* a *Dokončení*.
 
-[![Fáze provedení výroby při použití jediného prostředí](media/mes-phases.png "Fáze provedení výroby při použití jediného prostředí")](media/mes-phases-large.png)
+[![Fáze výroby při použití jediného prostředí](media/mes-phases.png „Fáze provádění výroby při použití jediného prostředí.“](media/mes-phases-large.png)
 
 Fáze _Plánování_ zahrnuje definici produktu, plánování, vytváření a plánování objednávek a vydání. Krok uvolnění označuje přechod z fáze _Plánování_ do fáze _Provedení_. Po uvolnění výrobní zakázky budou úlohy výrobní zakázky viditelné na produkční ploše a připraveny k provedení.
 
@@ -56,7 +54,7 @@ Když je úloha produkce označena jako dokončená, přesune se z fáze _Proved
 
 Jak ukazuje následující obrázek, při použití jednotek měřítka je fáze _Provedení_ rozdělena jako samostatná úloha.
 
-[![Fáze provedení výroby při použití jednotek škálování](media/mes-phases-workloads.png "Fáze provedení výroby při použití jednotek škálování")](media/mes-phases-workloads-large.png)
+[![Fáze výroby při použití jednotek škálování](media/mes-phases-workloads.png „Fáze výroby při použití jednotek škálování.“](media/mes-phases-workloads-large.png)
 
 Model nyní přechází z instalace s jednou instancí na model, který je založen na jednotkách centra a škálování. Fáze _Plánování_ a _Dokončení_ běží jako operace back-office v centru a pracovní zátěž provedení výroby probíhá na jednotkách škálování. Data se přenášejí asynchronně mezi centrem a jednotkami měřítka.
 
@@ -73,6 +71,7 @@ Následující úlohy provádění výroby lze aktuálně spouštět na úlohác
 - Vykázat odpad
 - Nepřímá aktivita
 - Přerušení
+- Hlášení jako dokončeno a vyskladněno (vyžaduje, abyste také spustili prováděcí úlohu skladování na vaší jednotce škálování, viz také [Hlášení jako dokončeno a vyskladněno na jednotce škálování](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Práce s výrobními úlohami spuštění v centru
 
@@ -88,7 +87,7 @@ I když se úloha obvykle spouští automaticky, můžete ji kdykoli spustit ru�
 
 Chcete-li zkontrolovat protokol zpracování registrace, přihlaste se do centra a přejděte na **Kontrola výroby \> Pravidelné úkoly \> Správa zátěže backoffice \> Nezpracovaný protokol zpracování registrace**. Stránka **Protokol zpracování nezpracované registrace** zobrazuje seznam zpracovaných nezpracovaných registrací a stav každé registrace.
 
-![Kontrola stránky protokolu nezpracované registrace](media/mes-processing-log.png "Kontrola stránky protokolu nezpracované registrace")
+![Kontrola stránky protokolu nezpracované registrace.](media/mes-processing-log.png "Kontrola stránky protokolu nezpracované registrace")
 
 Na jakékoli registraci v seznamu můžete pracovat tak, že ji vyberete a poté vyberete jedno z následujících tlačítek v podokně akcí:
 
@@ -109,3 +108,27 @@ Chcete-li zkontrolovat historii výrobních úloh, které byly zpracovány na je
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Výrobní centrum pro úlohu procesoru zprávy jednotky škálování
 
 Úloha _Výrobní centrum pro procesor zpráv jednotky škálování_ zpracovává data z centra do jednotky škálování. Tato úloha se automaticky spustí, když je nasazena úloha provedení. Můžete jej však kdykoli spustit ručně tak, že přejdete na **Kontrola výroby \> Pravidelné úkoly \> Správa úlohy backoffice \> Výrobní centrum pro škálování procesorů zpráv jednotky**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Hlášení jako dokončeno a vyskladněno na jednotce škálování
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+V aktuální verzi jsou zprávy o dokončení a operace vyskladnění (u hotových produktů, vedlejších produktů a souběžných produktů) podporovány [prováděcími úlohami skladování](cloud-edge-workload-warehousing.md) (nikoli prováděcími úlohami výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Pomocí mobilní aplikace Řízení skladu můžete hlásit jako dokončené a zpracovat vyskladňovací práce. Rozhraní pro provádění výrobního provozu tyto procesy aktuálně nepodporuje.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

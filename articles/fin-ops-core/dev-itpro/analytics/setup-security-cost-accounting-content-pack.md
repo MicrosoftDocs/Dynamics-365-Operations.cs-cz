@@ -1,12 +1,10 @@
 ---
 title: Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví
-description: Toto téma vysvětluje, jak můžete rozšířit zabezpečení na úrovni přístupu v nákladovém účetnictví na zabezpečení na úrovni řádku v aplikaci Microsoft Power BI. Tato funkce pomáhá zajistit, aby uživatelé viděli pouze Power BI data, ke kterým mají udělen přístup.
+description: Toto téma vysvětluje, jak můžete rozšířit zabezpečení na úrovni přístupu v nákladovém účetnictví na zabezpečení na úrovni řádku v aplikaci Microsoft Power BI.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751484"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví
 
@@ -44,11 +42,11 @@ Chcete-li rozšířit Power BI o zabezpečení na úrovni přístupu, musí vlas
 3. Vyhledejte soubor dat pro obsah **Analýzy nákladového účetnictví** v Power BI.
 4. Otevřete stránku zabezpečení.
 
-    ![Otevření stránky zabezpečení](./media/CA-picture-1.png)
+    ![Otevření stránky zabezpečení.](./media/CA-picture-1.png)
 
 5. Role **Kontrolor objektu nákladů** role je již vytvořena. Přidejte další členy, kteří jsou součástí organizační hierarchie na úrovni přístupu pro nákladové účetnictví.
 
-    ![Přidání členů](./media/CA-picture-2.png)
+    ![Přidání členů.](./media/CA-picture-2.png)
 
 Uživatelé, kteří jsou přidáni do role **Kontrolor objektu nákladů** uvidí pouze data, která mohou vidět, podle definice v organizační hierarchii úrovně přístupu nákladového účetnictví.
 
@@ -63,3 +61,6 @@ Předpokládáme, že vaše organizace chce omezit přístup k datům. Pokud jso
 
 ## <a name="additional-resources"></a>Další prostředky
 Další informace o zabezpečení na úrovni řádku v Power BI naleznete v tématu [Správa zabezpečení na vašem modelu v Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

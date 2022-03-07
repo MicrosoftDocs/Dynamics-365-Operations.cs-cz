@@ -1,12 +1,10 @@
 ---
 title: Kontrola data a nákladů
 description: Toto téma popisuje kontrolu data a nákladů v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart
 audience: Application User
@@ -14,23 +12,21 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1de12233ff296f77ba9984fa8d957d4c2bc90b3f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 826e0aab8c717bb951d80aff61b2d72dad802189706f720c48e72c8a1c393ead
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731906"
 ---
 # <a name="cost-and-date-control"></a>Kontrola data a nákladů
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-V modulu Správa majetku můžete vypočítat náklady pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady na majetku, funkčních místech a pracovních příkazech. Skutečné náklady jsou založeny na zaúčtovaných transakcích. 
+V modulu Správa majetku můžete vypočítat náklady pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady na majetku, funkčních místech a pracovních příkazech. Skutečné náklady jsou založeny na zaúčtovaných transakcích.
 
 Výpočet data lze provést také v případě, že chcete porovnat plánovaná počáteční a koncová data se skutečným počátečním a koncovým datem na pracovních příkazech.
 
@@ -48,8 +44,8 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
 5. V poli **Úroveň** určete, jak detailní mají být řádky řízení nákladů v případě funkčních míst. 
 
-    Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. 
-    
+    Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni.
+
     Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení nákladů na všech úrovních funkčních míst, ke kterým se vztahují.
 
 6. Chcete-li do výpočtu zahrnout tento sloupec, vyberte Ano na přepínači **Zobrazit otevřené potvrzené náklady**.
@@ -62,11 +58,11 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
     Následující obrázek ukazuje příklad dialogového okna **Řízení nákladů majetku**.
 
-    ![Dialogové okno Řízení nákladů na majetek](media/01-controlling-and-reporting.png)
+    ![Dialogové okno Řízení nákladů na majetek.](media/01-controlling-and-reporting.png)
 
 10. Na kartě **Kontrola nákladů majetku** klikněte na tlačítka **Seskupit podle** pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Příklad výsledků výpočtu v řízení nákladů na majetek
 
 Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možnoti **Řízení nákladů majetku**.
 
@@ -75,10 +71,9 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 - Pole **Otevřené potvrzené náklady** zobrazuje závazky k zaplacení za položky, hodiny a služby, které byly objednány nebo přijaty, ale dosud nebyly zaplaceny. 
 - Po zaúčtování všech registrací spotřeby budou související náklady zahrnuty do pole **Skutečné náklady**.
 
-![Příklad výsledků výpočtu v řízení nákladů na majetek](media/02-controlling-and-reporting.png)
+![Příklad výsledků výpočtu v řízení nákladů na majetek.](media/02-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu nákladů je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení nákladů** na kartě **Obecné**. V dialogovémokně  **Řízení nákladů majetku** je vybraný majetek automaticky vložen do pole **Majetek** na záložce s náhledem **Záznamy k zahrnutí**. Klikněte na **OK** a zobrazí se výpočet nákladů pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
-
 
 ## <a name="work-order-date-control"></a>Řízení data pracovního příkazu
 
@@ -96,7 +91,7 @@ Na této stránce můžete získat přehled o očekávaných počátečních a k
 
 6. Ve skupině **Seskupit podle** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-## <a name="example"></a>Příklad
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Příklad výsledků výpočtu v řízení pracovních příkazů
 
 Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možnoti **Kontrola data pracovního příkazu**.
 
@@ -104,6 +99,9 @@ Následující snímek obrazovky ukazuje příklad výpočtu výsledků v možno
 - Pole **Průměrné zpoždění ukončení** zobrazuje rozdíl mezi dny plánovaného koncového data pro pracovní příkaz ve srovnání se skutečným koncovým datem. Pokud například skutečné datum ukončení bylo tři dny po plánovaném koncovém datu, zobrazí se v tomto poli 3.  
 - V poli **Výskyty** se zobrazuje počet časových odchylek v závislosti na plánovaném a skutečném počátečním datu a plánovaném a skutečném koncovém datu na pracovním příkazu.
 
-![Příklad výsledků výpočtu v řízení pracovních příkazů](media/03-controlling-and-reporting.png)
+![Příklad výsledků výpočtu v řízení pracovních příkazů.](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

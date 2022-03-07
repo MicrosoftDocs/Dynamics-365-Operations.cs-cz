@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265204
 ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7b0c0dbaa10c83a5479de0cd01455f7aaa0a8eb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbaaf36a18003db6ed6330832b13695e824afdc5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407605"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236290"
 ---
 # <a name="depreciation-rounding"></a> Zaokrouhlení odpisu
 
@@ -39,3 +38,6 @@ Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

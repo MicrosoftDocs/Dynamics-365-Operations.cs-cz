@@ -2,26 +2,23 @@
 title: Import souborů ISO20022
 description: Toto téma vysvětluje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do Microsoft Dynamics 365 Finance.
 author: neserovleo
-manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407595"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891154"
 ---
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
@@ -117,7 +114,7 @@ Při importu konfigurace formátu z LCS importujete celý stromu konfigurace, co
  - **Pain.002** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor pain.002 do deníku převodů plateb dodavatele
  - **Camt.054** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor camt.054 do deníku převodů plateb dodavatele Stejná konfigurace formátu se použije ve funkci importu plateb odběratelů, ale použije se odlišné mapování konfiguraci mapování modelu platby ISO20022 do cílového umístění.
 
-Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md).
+Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Další zdroje
 - [Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -129,3 +126,6 @@ Další informace o elektronickém výkaznictví naleznete v tématu [Přehled e
 - [Nastavení způsobu platby pro převody kreditu ve formátu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Nastavení způsobu platby pro přímý debet ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

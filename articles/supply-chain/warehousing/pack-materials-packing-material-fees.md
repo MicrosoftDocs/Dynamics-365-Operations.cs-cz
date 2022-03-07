@@ -1,30 +1,27 @@
 ---
 title: Obalové materiály a poplatky
 description: Toto téma obsahuje informace o poplatcích za obalový materiál, které jsou zaplaceny recyklačním společnostem v určitých intervalech.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72d07365a5022a67b8868232fbbb04f610701009
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423697"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902014"
 ---
 # <a name="packing-materials-and-fees"></a>Obalové materiály a poplatky
 
@@ -112,3 +109,6 @@ Na faktuře můžete vytisknout hmotnost obalových materiálů a informovat o t
 
 1. Přejděte do **Pohledávky \> Nastavení \> Parametry pohledávek**.
 1. Na kartě **Aktualizace** na pevné záložce **Faktura** nastavte volbu **Tisk hmotnosti obalového materiálu** na hodnotu **Ano**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Vytvářet prodejní objednávky
 description: Tato procedura popisuje způsob vytváření prodejní zakázky.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423617"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566282"
 ---
 # <a name="create-sales-orders"></a>Vytvářet prodejní objednávky
 
@@ -68,3 +65,6 @@ Produkty prodané vaší organizací mohou nabízet více variant rozlišených 
     Stránka **Součty** zobrazí podrobnosti o celé objednávce. Jedná se o mezisoučtu částkou, která představuje součet všech čistých částek na řádku upravených pro případné řádkové slevy, celkovou částku faktury, která tvoří mezisoučet upravený pro případnou slevu na úrovni objednávky, náklady, DPH, situaci limitního úvěru zákazníka apod. Částka faktury je částka, která se zobrazí na dokladu pro fakturu odběratele.  
     
 3. Vyberte **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

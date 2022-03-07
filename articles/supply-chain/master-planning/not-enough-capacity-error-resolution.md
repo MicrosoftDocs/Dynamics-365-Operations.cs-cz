@@ -1,5 +1,5 @@
 ---
-title: Oprava chyby modulu plánování „Nebyla nalezena dostatečná kapacita“ a končené kapacity
+title: Opravte chybu modulu plánování „Nebyla nalezena dostatečná kapacita“
 description: Toto téma poskytuje informace o důvodech a řešeních chyby „výrobní zakázky“ %1 nebylo možné naplánovat. Chyba modulu plánování „Nebyla nalezena dostatečná kapacita“
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985023"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565752"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Opravte chybu modulu plánování „Nebyla nalezena dostatečná kapacita“
 
@@ -105,11 +105,5 @@ Chcete-li zkontrolovat dostupnou kapacitu skupiny zdrojů, postupujte následovn
 
 1. Jděte na **Správa organizace \> Zdroje \> Skupiny zdrojů** a vyberte skupinu zdrojů, která je použitelnýá pro objednávku, kterou nelze naplánovat.
 1. V podokně akcí na kartě **Skupina zdrojů** ve skupině **Zobrazení** vyberte **Zatížení kapacity** nebo **Zatížení kapacity, graficky**, a ujistěte se, že je k dispozici kapacita.
-
-## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Hlavní plánování rezervuje zdroj, když je kalendář zdrojů uzavřen
-
-Při použití plánování operací bude hlavní plánování plánovat kapacitu podle kalendáře primární skupiny zdrojů. Rezervuje sekundární operaci současně s primární operací a nebere v úvahu kalendáře ani kapacitu sekundární operace. To může mít za následek naplánování výrobní zakázky v uzavřeném kalendáři nebo v době, kdy sekundární operace není k dispozici (kalendář uzavřen, není kapacita).
-
-Při použití plánování úloh bude hlavní plánování při plánování zakázky brát v úvahu kapacitu a kalendář primární i sekundární operace. Aby mohla být objednávka naplánována, musí být kalendáře zdrojů obou operací otevřené a mít volnou kapacitu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

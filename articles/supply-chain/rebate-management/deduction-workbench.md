@@ -11,16 +11,17 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 04d7c1de85978f7915246fd835a0866cefb6de310bba240ebcadc57089e10521
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735104"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Správa odpočtů pomocí pracovní plochy odpočtu
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Toto téma popisuje, jak můžete používat pracovní plochu odpočtu ke zpracování plateb odběratelů, které zahrnují odpočty.
 

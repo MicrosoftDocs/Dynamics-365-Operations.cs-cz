@@ -2,26 +2,23 @@
 title: Integrace fiskální služby (ESR)
 description: Toto téma obsahuje informace o integraci fiskální služby pro Rakousko a Českou republiku.
 author: Anasyash
-manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CashRegister_W
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d47016732dfb31b810f4e3bd3b1d534baee63a23
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4d974b91289b27d7ead0102ba5f2e727184311a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407602"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826101"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
@@ -349,3 +346,6 @@ V následující tabulce jsou popsána pole pro platební transakce registračn�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

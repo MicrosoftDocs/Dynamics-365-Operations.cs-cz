@@ -2,27 +2,24 @@
 title: Nastavení online kanálu
 description: Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4410934"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936937"
 ---
 # <a name="set-up-an-online-channel"></a>Nastavení online kanálu
 
@@ -70,7 +67,7 @@ Pokud váš web e-Commerce bude podporovat více jazyků, rozbalte část **Jazy
 
 ## <a name="set-up-payment-account"></a>Nastavit účet platby
 
-V části **Platební účet** můžete přidat poskytovatele plateb třetí strany. Informace o nastavení platebního konektoru Adyen naleznete v tématu [Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md).
+V části **Platební účet** můžete přidat poskytovatele plateb třetí strany. Informace o nastavení platebního konektoru Adyen naleznete v tématu [Platební konektor Dynamics 365 pro Adyen](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Nastavení dodatečného kanálu
 
@@ -133,4 +130,7 @@ Následující obrázek znázorňuje příklad nastavení přiřazení skupiny p
 
 [Nastavení kanálu kontaktního střediska](channel-setup-callcenter.md)
 
-[Platební konektor Dynamics 365 pro Adyen](../retail/dev-itpro/adyen-connector.md)
+[Platební konektor Dynamics 365 pro Adyen](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

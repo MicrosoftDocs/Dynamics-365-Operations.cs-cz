@@ -2,28 +2,25 @@
 title: Inkasa v modulu Pohledávky
 description: Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa Microsoft Dynamics 365 Finance. Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas. Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723912"
 ---
 # <a name="collections-in-accounts-receivable"></a>Inkasa v modulu Pohledávky
 
@@ -102,8 +99,7 @@ Transakce odpisu je vytvořena v měně transakce.
 
 Další informace lze najít v části [Vytvoření odpisového deníku pro zákazníka](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Zpracování plateb při nedostatečných finančních prostředcích (NFP)  
 
 Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inkasa. Klepnutím na toto tlačítko je platba zrušena. Pokud pro zákazníka platí nějaký poplatek NFP, v deníku plateb se vytvoří poplatek za transakci. Výše poplatku závisí na nastavení automatických nákladů. Automatické poplatky, které platí pro platby NFP jsou určeny podle skupiny nákladů, která je vybrána na stránce Bankovní účty pro související bankovní účet.
 
@@ -111,3 +107,6 @@ Můžete zpracovat platby NFP klepnutím na možnost Platby NFP na stránce Inka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

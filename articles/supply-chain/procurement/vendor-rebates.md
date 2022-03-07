@@ -2,11 +2,9 @@
 title: Rabaty dodavatele
 description: Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966648"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344213"
 ---
 # <a name="vendor-rebates"></a>Rabaty dodavatele
 
@@ -55,7 +53,7 @@ Smlouva o rabatu dodavatele je záznamem dohody s dodavatelem, který určuje vy
 
 Chcete-li o stránku **Smlouvy o rabatech dodavatele**, vyberte **Zásobování a zdroje** &gt; **Rabaty dodavatele** &gt; **Smlouvy o rabatu**.
 
-![Nákupní smlouva](media/purchase-agreement.PNG)
+![Nákupní smlouva.](media/purchase-agreement.PNG)
 
 Na stránce **Smlouvy o rabatu dodavatele** můžete zobrazit podrobnosti o vyjednaných podmínkách ze smlouvy s dodavatelem.
 
@@ -131,7 +129,7 @@ Po schválení nároků je lze zpracovat podle závazků. Je automaticky vygener
 
     Deník časového rozlišení rabatu se zaúčtuje pro částku nároku. Toto zaúčtování zapisuje na vrub účtu pohledávek časově rozlišených rabatů dodavatele pro očekávaný kredit dodavatele a připisuje prozatímní účet přijatých časově rozlišených rabatů dodavatele k očekávanému zisku.
 
-    ![Zpráva](media/message.png)
+    ![Zpráva.](media/message.png)
 
 5. V seznamu rabatů vyberte řádek a poté vyberte v podokně akcí **Transakce rabatu** pro zobrazení a přechod na číslo dávky deníku pro toto zaúčtování časově rozlišeného rabatu.
 
@@ -166,3 +164,6 @@ Proces zpracování rabatů dodavatele zahrnuje více úloh ručního sledován�
 - Generování přesných nároků na rabat
 - Časové rozlišení očekávaných pohledávek a dočasného zisku v hlavní knize
 - Aktualizace zůstatku dodavatele a výsledovky se splatnou úhradou
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

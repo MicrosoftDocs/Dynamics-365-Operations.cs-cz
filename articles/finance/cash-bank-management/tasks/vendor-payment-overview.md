@@ -1,39 +1,37 @@
 ---
 title: Přehled plateb dodavatele
-description: Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby.
+description: Tento průvodce vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby.
 author: kweekley
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19cea683058f7fb757ac3a99541959ba06df1963
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441192"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394422"
 ---
 # <a name="vendor-payment-overview"></a>Přehled plateb dodavatele
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby. Tato procedura používá ukázkovou společnost USMF.
+Tento průvodce vás provede různými metodami pro vytvoření plateb dodavatelů, včetně použití návrhu platby nebo ručního zadání jednorázové platby. Tato procedura používá ukázkovou společnost USMF.
 
 1. Přejděte na **Podokno navigace Moduly > Závazky > Platby > Deník plateb**.
 2. Klepněte na možnost **Nový**.
 3. Vyberte deník plateb pro uložení plateb dodavatele. 
 4. Vyberte deník nebo jej zadejte ručně.
 5. Klikněte na možnost **Řádky**.
-6. V **podokně akcí** klikněte na **Návrh platby**.
+6. V **Podokně akcí** klikněte na **Návrh platby**.
 7. Klikněte na **Vytvořit návrh platby**. Návrh plateb je dotaz sloužící k výběru faktur k platbě. Před vytvořením nebo vygenerováním plateb dodavatele můžete upravit seznam faktur k úhradě.
 8. Vyberte faktury k platbě podle data splatnosti, platební slevy nebo obou možností. 
 9. Zadejte datum pro porovnání s datem splatnosti nebo platební slevou. 
@@ -63,3 +61,6 @@ Tento průvodce úkolem vás provede různými metodami pro vytvoření plateb d
 33. Platby vygenerujte kliknutím na tlačítko **OK**.
 34. Jsou-li všechny platby schválené a vygenerované, klikněte na možnost **Zaúčtovat**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

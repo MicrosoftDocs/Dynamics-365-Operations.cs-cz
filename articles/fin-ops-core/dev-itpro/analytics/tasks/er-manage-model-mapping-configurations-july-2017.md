@@ -1,12 +1,10 @@
 ---
 title: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
-description: Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může spravovat mapování modelu pro elektronické výkaznictví (ER) v samostatné konfiguraci ER.
+description: Toto téma popisuje způsob správy mapování modelu elektronického výkaznictví (ER) v samostatných konfiguracích ER.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cf4896bec7aa68cc6616756ef07c4db95e20a5cf7ebde3102f482cd5abad1420
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776041"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
 
@@ -161,3 +159,6 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 7. Klepněte na tlačítko OK.
     * Výchozí konfigurace mapování modelu se používá v této konfiguraci formátu pro generování elektronických dokumentů (vytvořený výstup obsahuje kód společnosti).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

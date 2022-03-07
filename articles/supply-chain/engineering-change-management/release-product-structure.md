@@ -2,11 +2,9 @@
 title: Uvolnění struktur produktu
 description: Toto téma vysvětluje, jak můžete kromě uvolnění produktů společně s jejich technickými verzemi uvolnit kompletní produktové struktury. Tímto způsobem můžete zajistit, že technicky relevantní data o produktech lze snadno znovu použít v různých právnických osobách.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967223"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567480"
 ---
 # <a name="release-product-structures"></a>Uvolnění struktur produktu
 
@@ -77,8 +75,6 @@ Příklad toho, jak produkt přijmout, najdete v části [Než produkt vydáte v
 
 Ne všechny provozní společnosti potřebují stejná produktová data. Obecně platí, že provozní společnosti, které vyrábějí technické výrobky, vyžadují kusovník, zatímco provozní společnost, která prodává pouze technické výrobky, kusovník nevyžadují. Zásady uvolnění můžete použít k určení parametrů, které se používají k uvolnění produktů.
 
-U technických produktů je zásada uvolnění přiřazena v kategorii technických produktů a toto pole je povinné. U standardních produktů je zásada přiřazena ke sdílenému produktu a pole je volitelné.
-
 Další informace o kategoriích technických produktů najdete v části [Technické verze a kategorie technických produktů](engineering-versions-product-category.md).
 
 Během procesu uvolnění můžete ovlivnit nastavení.
@@ -107,6 +103,7 @@ Na záložce s náhledem **Obecné** zásad uvolnění produktu nastavte násled
 | Pole | popis |
 |---|---|
 | Typ produktu | Vyberte, zda se zásada vztahuje na produkty typu *Položka* nebo *Služba*. Po uložení záznamu toto nastavení nemůžete změnit. |
+| Typ výroby | Toto pole se zobrazí, pouze pokud jste povolili [řízení změn receptur](manage-formula-changes.md) ve vašem systému. Vyberte typ výroby, pro který platí tato zásada vydané verze:<ul><li>**Souběžný produkt** - Pomocí této zásady vydáné verze můžete spravovat souběžné produkty. Souběžné produkty se vyrábějí během procesní výroby a nejedná se o verzované nebo technické produkty. Zásady vydání pro souběžné produkty mohou pomoci zajistit, že důležitá nastavení, jako např **Skupina dimenzí úložiště** a **Sledování skupiny dimenzí** jsou nastaveny pomocí uvolněné šablony produktu před jejich vydáním společnosti.</li><li>**Vedlejší produkt** - Pomocí této zásady vydáné verze můžete spravovat vedlejší produkty. Vedlejší produkty se vyrábějí během procesní výroby a nejedná se o verzované nebo technické produkty. Zásady vydání pro vedlejší produkty mohou pomoci zajistit, že důležitá nastavení, jako např **Skupina dimenzí úložiště** a **Sledování skupiny dimenzí** jsou nastaveny pomocí uvolněné šablony produktu před jejich vydáním společnosti.</li><li>**Žádná** - Tuto zásadu použijte ke správě standardních produktů, které nejsou verzovanými nebo technickými produkty nebo souběžnými produkty či vedlejšími produkty.</li><li>**Položka plánování** - Pomocí této zásady vydání můžete spravovat položky plánování, které se vyrábějí pomocí procesní výroby. Položky plánování používají receptury. Podobají se položkám receptur, ale používají se k výrobě pouze souběžných produktů a vedlejších produktů, nikoli hotových produktů.</li><li>**Kusovník** - Tuto zásadu vydané verze použijte ke správě technických produktů, které nepoužívají vzorce a obvykle (ale nemusí) zahrnovat kusovníky.</li><li>**Receptura** - Pomocí této zásady vydání můžete spravovat dokončené položky, které se vyrábějí pomocí procesní výroby. Tyto položky budou mít recepturu, ale nikoli kusovník.</li></ul> |
 | Použít šablony | Vyberte jednu z následujících možností a určete, zda a jak mají být šablony uvolnění produktu použity, když se použije zásada:<ul><li>**Vždy** - Pro uvolnění musí být vždy použit produkt uvolněný pomocí šablony. Pokud vyberete tuto možnost, použijte záložku s náhledem **Všechny produkty** k určení šablony, která se používá pro každou společnost, do které uvolňujete Pokud nezadáte šablonu pro každou společnost, která je uvedena na záložce s náhledem **Všechny produkty**, při pokusu o uložení této zásady se zobrazí chyba.</li><li>**Volitelné** - Pokud je produkt uvolněný pomocí šablony uveden pro společnost uvedenou na záložce s náhledem **Všechny produkty**, tato šablona bude použita při uvolnění do této společnosti. Jinak nebude použita žádná šablona. Pokud vyberete tuto možnost, můžete zásadu uložit bez přiřazení šablon všem společnostem. (Nezobrazí se žádné varování.)</li><li>**Nikdy** - Pro společnosti, do kterých uvolníte, nebude použit žádný produkt vydaný pomocí šablony, a to ani v případě, že je zadána šablona pro společnosti uvedené na záložce s náhledem **Všechny produkty**. Sloupce šablony nebudou k dispozici.</li></ul> |
 | Aktivní | Pomocí této možnosti můžete zachovat zásady uvolnění. Nastavte možnost na *Ano* pro všechny zásady uvolnění, které používáte. Nastavte ji na *Ne*, čímž označíte zásadu uvolnění jako neaktivní, když se nepoužívá. Všimněte si, že nemůžete deaktivovat zásadu uvolnění, která je přiřazena kategorii technického produktu, a můžete odstranit pouze neaktivní zásady uvolnění. |
 
@@ -159,3 +156,6 @@ Toto chování platí pouze v případě, že je produkt přímo vybrán k uvoln
 Například produkt X je přiřazen ke skupině vlastníků produktu *Designové skříňky*. Produkt X je také součástí kusovníku produktu Y, který je přiřazen ke skupině vlastníků produktů *Designové reproduktory*. Pokud uživatel ze skupiny vlastníků produktů *Designové reproduktory* uvolňuje produkt Y a jeho kusovník, produkt X bude uvolněn společně s produktem Y.
 
 Další informace naleznete v tématu [Vlastníci produktů](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

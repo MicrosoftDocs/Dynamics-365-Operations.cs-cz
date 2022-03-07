@@ -2,26 +2,23 @@
 title: Vytvoření zmocnění k přímému debetu pro odběratele
 description: Tento průvodce úkolem ukazuje, jak vytvořit zmocnění k přímému debetu a použít je ve faktuře.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51fea2b9a0f25b078abc3ca83ee02c585eaf465128bebba0234ffadb030ef42a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740043"
 ---
 # <a name="create-a-direct-debit-mandate-for-a-customer"></a>Vytvoření zmocnění k přímému debetu pro odběratele
 
@@ -90,3 +87,6 @@ Tento průvodce úkolem ukazuje, jak vytvořit zmocnění k přímému debetu a 
 3. Vyberte odběratele, pro kterého jste vybrali zmocnění.
 4. V poli **ID zmocnění k přímému debetu** zadejte nebo vyberte hodnotu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

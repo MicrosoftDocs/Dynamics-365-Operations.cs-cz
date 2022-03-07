@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e01629982bb383078e90ff3dad0592371f44bd1b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424195"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206840"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Nastavení skladů pro převodní příkazy 
 
@@ -53,3 +52,6 @@ Je také nutné nastavit dobu realizace přepravy mezi sklady na stránce **Dny 
 2. V poli **Místo příjmu** vyberte **sklad**.
 3. Vyberte **odesílající sklad**, **přijímající sklad** a **Počet dnů přepravy**. 
 4. (Volitelné) Můžete také nastavit dobu přepravy v závislosti na režimu doručení na kartě **Dny dopravy podle způsobu doručení**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

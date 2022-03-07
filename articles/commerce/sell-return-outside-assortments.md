@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86c6ecf9ef67ca3ac4ed3c44d930acaa965112b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 18d91287bfdcca272b5dd5e8dc8e04b1fd937a6d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410864"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254690"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Prodej a návrat produktů, které nejsou součástí sortimentu obchodu
 
@@ -46,3 +45,6 @@ Běžné scénáře jsou k dispozici pro prodejce používající aplikaci Comme
 + Vyskladňovat produkty v aktuálním obchodě nebo jiném obchodě.
 + Zrušit objednávku v aktuálním obchodě nebo jiném obchodě.
 + Vrátit objednávku s či bez příjmu v aktuálním obchodě nebo jiném obchodě.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

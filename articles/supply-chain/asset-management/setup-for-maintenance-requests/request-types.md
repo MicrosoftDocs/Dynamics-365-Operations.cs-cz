@@ -1,12 +1,10 @@
 ---
 title: Typy požadavků na údržbu
 description: Toto téma vysvětluje, jak nastavit stavy životního cyklu požadavků na údržbu v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56a83457097b64d195eec53000b29b2f16251772
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4ff80b2f3e23f46467b8a2fe7a2abd805e5e3a20
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019322"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808489"
 ---
 # <a name="maintenance-request-types"></a>Typy požadavků na údržbu
 
@@ -44,3 +42,6 @@ Typ požadavku údržby definuje příslušnost ke skupině stavů životního c
 Následující ilustrace znázorňuje příklad stránky **Typy požadavků na údržbu**.
 
 ![Stránka Typy požadavků na údržbu](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,29 @@
 title: Uspořádání zaměstnanců pomocí oddělení, prací a pozic
 description: Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Tento článek obsahuje koncepční informace o těchto prvcích.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778789"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců pomocí oddělení, prací a pozic
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Tento článek obsahuje koncepční informace o těchto prvcích. 
 
@@ -43,8 +42,7 @@ Následující příklad slouží k zobrazení konceptů popsaných v tomto čl�
 |**Lidské zdroje**|Manažer lidských zdrojů (střed)|Manažer lidských zdrojů|
 
 
- <a name="departments"></a>Oddělení
-------------
+##  <a name="departments"></a>Oddělení
 
 Oddělení je provozní jednotka, která představuje kategorii nebo funkční oblast organizace, která je zodpovědná za určitou oblast organizace, jako například prodej nebo účtování. Oddělení slouží k hlášení ve funkčních oblastech a může mít odpovědnost za zisky a ztráty. Oddělení také mohou obsahovat i skupinu nákladových středisek. Prodej, účtování a lidské zdroje jsou některé příklady oddělení v rámci organizace.
 
@@ -97,8 +95,7 @@ Používejte typy úloh pro klasifikaci podobných pozic do kategorií. Typy úl
 
 Za pomoci oblastí odpovědnosti můžete určit pracovní role, procesy a produkty, za které je pracovník na dané pozici odpovědný. příkladem oblasti odpovědnosti pro práci s názvem "Účetní" může být "Finanční vykazování pro produkt A".
 
-<a name="positions"></a>Pozice
-----------
+## <a name="positions"></a>Pozice
 
 Pozice jsou důležitým prvkem nižší úrovně hierarchie organizace. Pozice je individuální instance práce. Například pozice „Manažer prodeje (východ)“ je pouze jednou pozicí, která je přidružena k úloze „Manažer prodeje“. Pozice existují v oddělení a jsou přiřazeny pracovníkům.
 ### <a name="position-creation-and-maintenance"></a>Vytváření a údržba pozic
@@ -165,3 +162,6 @@ Můžete upravovat údaje uvedené v předchozí tabulce pro pozice nebo úlohy 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

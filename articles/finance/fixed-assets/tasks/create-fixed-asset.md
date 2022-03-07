@@ -2,26 +2,23 @@
 title: Vytvoření dlouhodobého majetku
 description: Toto téma vysvětluje, jak vytvořit nový záznam o dlouhodobém majetku na stránce se seznamem dlouhodobého majetku.
 author: moaamer
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
-ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
+ms.openlocfilehash: 770390092342e2db496dde850a75b2f7736bd4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4441385"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817094"
 ---
 # <a name="create-a-fixed-asset"></a>Vytvoření dlouhodobého majetku
 
@@ -55,3 +52,6 @@ Pokud jste nedefinovali číslo dlouhodobého majetku v šabloně doplňku aplik
 
 > [!WARNING]
 > Záznam dlouhodobého majetku nebude odstraněn, pokud byly transakce zaúčtovány do přidružené knihy nebo pokud je nově vytvořený dlouhodobý majetek zadán na řádku deníku, ale nebyl zaúčtován. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

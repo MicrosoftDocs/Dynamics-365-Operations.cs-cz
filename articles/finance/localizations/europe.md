@@ -3,24 +3,23 @@ title: Evropa - přehled
 description: Toto téma obsahuje odkazy na zdroje dokumentace Microsoft Dynamics 365 Finance pro Evropu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: b5aed9d3b5a82b88bb7d1e237aea0aa24dae102f
+ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512204"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5557417"
 ---
 # <a name="europe-overview"></a>Evropa - přehled
 
@@ -41,6 +40,7 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 - [Souhrnné hlášení EU](emea-eu-sales-list.md)
 - [Úpravy kurzů](emea-exchange-rate-adjustments.md)
 - [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md)
+- [Rady v oblasti financí (globalizace) o dopadu Brexitu](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integrace finanční služby (ESR)](emea-fiscal-service-integration.md)
 - [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Vygenerování dokladu převodu pro interní převod zásob](tasks/transfer-document-internal-inventory-transfer.md)
@@ -65,6 +65,7 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 - [Zpracování faktury](emea-invoice-processing.md)
 - [Vystavení vstupního certifikátu EU](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Podporované standardy pro elektronickou fakturaci](emea-oioubl-standards-electronic-invoicing.md)
+- [Vynucené generování elektronických faktur](emea-eur-forced-einvoices.md)
 - [Odkaz na původní fakturu (východní Evropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Vyhledání strany s použitím DIČ](tasks/eur-00015-party-search-vat-id.md)
 - [Nástroj pro generování platební reference](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -99,3 +100,6 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 
 - [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

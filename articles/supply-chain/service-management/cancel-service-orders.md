@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a253a9c9ae4d7c34403db9bb5f3d63bc77e11101
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423990"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259667"
 ---
 # <a name="cancel-service-orders"></a>Zrušit servisní zakázky   
 
@@ -78,3 +77,6 @@ Vybrané servisní zakázky budou buď zrušeny, nebo bude jejich stav **Zrušen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

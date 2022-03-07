@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8375c33bd6ffd3004cfc9d7b686d9a0edc77cdef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410727"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209220"
 ---
 # <a name="tab-module"></a>Modul karty
 
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly karty a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Moduly karet podobně jako moduly kontejnerů slouží k uspořádání informací na stránce webu pomocí karet. Lze je použít na jakékoli stránce, kde je třeba informace prezentovat na kartách.
 
@@ -84,3 +81,6 @@ Chcete-li přidat modul karty na stránku a nastavit vlastnosti, postupujte nás
 [Modul ovládacího prvku Accordion](add-accordion.md)
 
 [Modul textového bloku](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Majetek a pracovní příkazy
 description: Toto téma popisuje majetek a pracovní příkazy v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cddb0a25286c8ce9d72aef0b835809705ad577a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e2fe5523edf46712b17aa7abcad50da44c3eaffd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020932"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816759"
 ---
 # <a name="assets-and-work-orders"></a>Majetek a pracovní příkazy
 
@@ -54,3 +52,6 @@ Chcete-li naplánovat a spustit úlohu údržby v pracovním příkazu, je nutn�
 
 > [!NOTE]
 > Obecně, když pracujete v aplikaci Dynamics 365 Supply Chain Management a modulu **Správa majetku**, vyberete **Nový** pro vytvoření nového záznamu, vyberete možnost **Upravit** pro aktualizaci existujícího záznamu a vyberete možnost **Uložit** pro uložení nových nebo upravených dat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

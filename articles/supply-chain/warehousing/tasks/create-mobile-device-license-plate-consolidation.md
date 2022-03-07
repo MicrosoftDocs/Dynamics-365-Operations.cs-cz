@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7dc52284473f3e3275675b608386641c8570218b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54457261d4f80648050845f309bcbbcc16caa629
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423676"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239007"
 ---
 # <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
 
@@ -37,3 +36,6 @@ Tato procedura ukazuje, jak vytvořit položku nabídky mobilního zařízení p
 5. V poli Režim vyberte „Nepřímý“.
 6. V poli Kód aktivity vyberte "Konsolidovat registrační značky".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

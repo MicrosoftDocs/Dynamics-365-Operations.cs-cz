@@ -2,28 +2,27 @@
 title: Přehledy plateb odběratele (Preview)
 description: Toto téma popisuje funkci přehledů plateb, která pomáhá lépe porozumět typickým platebním praktikám jednotlivých zákazníků. Tato funkce vám pomůže identifikovat okolnosti, které ospravedlňují zahájení procesu inkasa dříve, než byste to udělali v ostatních případech.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644626"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983995"
 ---
 # <a name="customer-payment-insights-preview"></a>Přehledy plateb odběratele (Preview)
 
@@ -50,11 +49,11 @@ Pro každou otevřenou fakturu mohou Přehledy plateb zákazníka (Preview) pře
 
 Aplikace Přehledy plateb odběratelů (Preview) také poskytuje agregované zobrazení očekávaných plateb, což může pomoci organizacím pochopit celkovou částku platby, kterou mohou očekávat od zákazníka v jednom ze tří intervalů, včas, se zpožděním a s velkým zpožděním.
 
-[![Agregované zobrazení předpovědí platby](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Agregované zobrazení předpovědí platby.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Každá faktura má také přiřazenou pravděpodobnost platby včas. Je-li pravděpodobnost platby v čase nižší než 50 %, budou faktury označeny červeným kroužkem, což znamená, že tyto faktury mohou vyžadovat pozornost inkasa. 
 
-[![Seznam pravděpodobností platby](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Seznam pravděpodobností platby.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Aplikace Customer Payment Insights (Preview) také poskytuje kontextové informace vysvětlující předpověď, jako jsou například nejvyšší faktory ovlivňující předpovědi, aktuální stav obchodu se zákazníkem a podrobnosti historickém chování platby odběratele. V mnoha společnostech byl proces inkasa reaktivní aktivitou; což znamená, že nebyl zahájen, dokud nebyly faktury splatné. 
 
@@ -70,6 +69,9 @@ Pokud chcete vyzkoušet Přehledy plateb zákazníka (Preview), pošlete e-mail 
 
 ## <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
 
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance a Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

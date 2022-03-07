@@ -1,40 +1,36 @@
 ---
-title: Pozice hotovosti (Preview)
+title: Pozice hotovosti
 description: Toto téma popisuje, jak funkce prognózování cashflow predikuje pozici hotovosti organizace pro konkrétní časy. Také popisuje možnosti, které jsou k dispozici pro zobrazování prognóz pro různá období.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645883"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968980"
 ---
-# <a name="cash-position-preview"></a>Pozice hotovosti (Preview)
+# <a name="cash-position"></a>Pozice hotovosti
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Pozice hotovosti je projekce cashflow, která se předpovídá na nejbližší období. Je založena na projekci hotovostních příjmů od zákazníků, kteří platí neuhrazené faktury a objednávky, a také na projekci hotovostních výdajů, které jsou vypláceny prodejcům za nákupní faktury a objednávky.
 
 Když systém predikuje platby zákazníkovi, používá predikce plateb z funkce predikce plateb zákazníka. Bez predikcí plateb se k výpočtu data platby použije průměrná doba potřebná k převodu faktury zákazníka na platbu pro každého zákazníka. U otevřených objednávek zákazníků systém vypočítá datum faktury na základě průměrného počtu dnů pro fakturaci řádků objednávky na zákazníka. Poté použije datum faktury jako vstup pro funkci predikce platby. Funkce predikce plateb zákazníka vypočítá datum platby pro každý řádek objednávky. 
 
-<*Potřebujete text od Jarka nebo Davea o tom, jak se predikce plateb převádějí na datum*> Datum platby neuhrazených faktur je přibližně [*odhadované*] z predikcí plateb výběrem data, které odpovídá padesátému percentilu kumulativní distribuční funkce, která je získána z pravděpodobností predikovaného intervalu.
+Datum platby neuhrazených faktur je přibližně z predikcí plateb výběrem data, které odpovídá padesátému percentilu kumulativní distribuční funkce, která je získána z pravděpodobností predikovaného intervalu.
 
 Podobný přístup se používá k predikci plateb dodavatelům. Pro každého dodavatele systém vypočítá průměrnou dobu potřebnou k převodu faktury dodavatele na platbu. Tento počet dní se poté použije k výpočtu data platby. U otevřených objednávek dodavatelů systém vypočítá datum faktury s přihlédnutím k průměrnému počtu dní, který je vyžadován k převedení řádků objednávky na fakturu pro každého dodavatele. Pro každého dodavatele pak systém vypočítá datum platby pomocí průměrné doby potřebné k převodu faktury dodavatele na platbu.
 
@@ -49,5 +45,16 @@ Spodní část karty **Pozice hotovosti** zobrazuje podrobnosti o pozici, cashfl
 
 Chcete-li uložit a upravit pozici hotovosti, vytvořte snímek. Další informace o práci se snímky najdete v části [Přehled snímků](payment-snapshots.md).
 
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+## <a name="details-of-the-cash-position-capability"></a>Podrobnosti o funkci Pozice hotovosti 
+
+Funkce Pozice hotovosti zahrnuje následující funkce. 
+
+- Funkce Pozice hotovosti zobrazuje cashflow na základě existujících dokladů v systému a řádků přírůstku a úbytku hotovosti importovaných z externích systémů.
+- Usnadňuje integraci dat cashflow z externích systémů do Dynamics 365 Finance. Pozice cashflow může využívat také rámec importu a exportu dat. Tento rámec usnadňuje integraci s Excel OData. Můžete také kombinovat data z více zdrojů a vytvořit komplexní řešení pozice cashflow.
+- Představuje inteligentní pozici hotovosti. Pozice hotovosti se vytváří na základě chování platby zákazníka, aby bylo možné predikovat, kdy může společnost očekávat, že na její účty dorazí hotovost.
+- U zákaznických objednávek a faktur se funkce AI predikce plateb zákazníků používá k určení historického platebního chování zákazníků, kdy bude objednávka nebo faktura zaplacena.
+- U objednávek a faktur dodavatelů používáme průměrnou dobu mezi odesláním a zaplacením faktury podle dodavatele, abychom určili, kdy bude objednávka nebo faktura dodavatele zaplacena, čímž se zpřesní úbytek hotovosti.
+
+To vytváří přesnější pohled na cashflow založený na historickém platebním chování pokladníka. 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

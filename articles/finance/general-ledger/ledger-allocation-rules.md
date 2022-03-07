@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42896fc8b204df921f1e24797098472eca090d30
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31e01046d22c3b7a598386d5621d020339f44cb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441206"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248992"
 ---
 # <a name="ledger-allocation-rules"></a>Pravidla přidělení hlavní knihy
 
@@ -51,3 +50,6 @@ Každé pravidlo přidělení má čtyři komponenty: obecné údaje, zdroj, cí
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

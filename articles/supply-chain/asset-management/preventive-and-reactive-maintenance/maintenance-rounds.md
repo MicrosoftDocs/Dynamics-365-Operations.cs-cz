@@ -1,12 +1,10 @@
 ---
 title: Pořadí údržby
 description: Toto téma popisuje pořadí údržby v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018539"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740712"
 ---
 # <a name="maintenance-rounds"></a>Pořadí údržby
 
@@ -82,7 +80,7 @@ V modulu **Správa majetku** můžete vytvořit pořadí údržby pro různé po
 
 Následující obrázek znázorňuje ukázku a příklad pořadí údržby obsahující tři aktiva.
 
-![Obrázek č. 1](media/13-preventive-maintenance.png)
+![Obrázek č. 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Naplánovat pořadí údržby
@@ -108,11 +106,14 @@ Když nastavíte pořadí údržby, spusťte úlohu plánu, která plánuje vše
 
 Následující dvě ilustrace zobrazují **úlohu plánování v** dialogovém okně Naplánovat pořadí údržby a řádky plánu údržby vytvořené ve **všech plánech** údržby na základě této úlohy plánu.
 
-![Obrázek č. 2](media/14-preventive-maintenance.png)
+![Obrázek č. 2.](media/14-preventive-maintenance.png)
 
-![Obrázek č. 3](media/15-preventive-maintenance.png)
+![Obrázek č. 3.](media/15-preventive-maintenance.png)
 
 - Pokud jsou pro majetek, na který se vztahuje záruka dodavatele, vytvořeny pracovní příkazy ručně, zobrazí se dialogové okno, které uživatele upozorní na záruku. Vytvoření pracovního příkazu lze v tuto chvíli zrušit. Kontrola vztahu záruky je vynechána pro automaticky vytvořené pracovní příkazy.  
 - Na záložce s náhledem **Spustit na pozadí** můžete nastavit dávkovou úlohu pro plánování pořadí v pravidelných intervalech.  
 - Pokud je v několika fondech pracovních příkazů uvedeno pořadí (viz [Fondy pracovních příkazů](../work-orders/work-order-pools.md)), zobrazí se jeden záznam pro každý fond v části **Otevřené fondy rozvrhu údržby**. To je provedeno za účelem optimalizace možností filtrování pro fondy pracovních příkazů.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

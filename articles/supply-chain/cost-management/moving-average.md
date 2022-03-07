@@ -2,11 +2,9 @@
 title: Klouzavý průměr
 description: Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů.
 author: AndersGirke
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0957fee111ec1fd5bb66951126869cf46d88b36e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6721c01fd0ad3eec30de99dee3b5e98de6bd3b52
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967476"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567528"
 ---
 # <a name="moving-average"></a>Klouzavý průměr
 
@@ -154,3 +152,6 @@ V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna p
 
 > [!NOTE]
 > Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

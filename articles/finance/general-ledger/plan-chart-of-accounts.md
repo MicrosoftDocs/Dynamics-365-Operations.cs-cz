@@ -2,28 +2,25 @@
 title: Plánování účetní osnovy
 description: V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
 author: aprilolson
-manager: AnnBe
 ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 007b634c18ce897160aea38e05c9a73a64dd3917
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0c4a5c0d758ecacce6433b13a2b2044d2417d018
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441237"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403858"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Plánování účetní osnovy
 
@@ -60,3 +57,6 @@ Další informace naleznete v následujících tématech:
 
 - [Finanční dimenze](financial-dimensions.md)
 - [Vytvoření a přiřazení struktur rozšířeného pravidla](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

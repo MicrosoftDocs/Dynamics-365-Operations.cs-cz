@@ -1,38 +1,34 @@
 ---
 title: Země/oblast původu
 description: Mnoho organizací vydává certifikáty svým dodavatelům, aby zajistily, že produkty splňují specifické certifikační standardy. Tyto certifikáty často závisí na zemi původu. Toto téma obsahuje informace o funkci země původu, která vám umožňuje propojit produkt s jeho zemí původu a sledovat jeho certifikace produktu.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423477"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777614"
 ---
 # <a name="country-of-origin"></a>Země/oblast původu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mnoho organizací vydává certifikáty svým dodavatelům, aby zajistily, že produkty splňují specifické certifikační standardy. Tyto certifikáty často závisí na zemi původu. Funkce země původu, která vám umožňuje propojit produkt s jeho zemí původu a sledovat jeho certifikace produktu.
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>Zapnutí funkci země původu
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul**: *Řízení informací o produktech*
 - **Název funkce:** *Funkce správy země původu*
@@ -90,4 +86,7 @@ Při generování sestavy kusovníku můžete pro každou část, pro kterou jst
 
 Je vygenerována a zobrazena sestava, která zobrazuje informace o zemi původu každé části. Následuje příklad sestavy.
 
-![Sestava země původu](media/country-of-origin-report.png "Sestava země původu")
+![Sestava země původu.](media/country-of-origin-report.png "Sestava země původu")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

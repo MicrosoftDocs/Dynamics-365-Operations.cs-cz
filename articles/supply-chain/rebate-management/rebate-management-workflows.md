@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f18c3bd95901303379c460d026bc944cee809b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576657"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020376"
 ---
 # <a name="rebate-management-deal-workflows"></a>Pracovní postupy nabídky správy rabatu
 
@@ -27,12 +27,12 @@ ms.locfileid: "7576657"
 
 Ke schválení nabídek rabatů používá správa rabatů stejnou platformu pracovního postupu jako ostatní aplikace Finance and Operations. Ke každému pracovnímu postupu jsou přidruženy dva procesy úloh:
 
-- Jeden prvek pracovního postupu nabídku schvaluje.
 - Jeden prvek pracovního postupu aktivuje nabídku, aby mohl uživatel nebo proces pracovního postupu schválit transakce.
+- Jeden prvek pracovního postupu nabídku schvaluje.
 
 Abyste mohli použít nabídku rabatu, musí být aktivní v modulu **Správa rabatu**. Chcete-li aktivovat nabídku, musíte nejprve vytvořit a nakonfigurovat *Pracovní postup nabídek správy rabatů*.
 
-Uživatelé nemohou ručně schvalovat nabídky. Musí být vždy použit pracovní postup.
+Po aktivaci pracovního postupu pro správu rabatů nemohou uživatelé ručně schvalovat nabídky. Musí být vždy použit pracovní postup.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Vytvoření a správa pracovních postupů nabídky správy rabatu
 
@@ -42,17 +42,4 @@ Chcete-li pracovat s pracovními postupy nabídek správy rabatů, přejděte na
 
 Chcete-li aktivovat nabídku prostřednictvím pracovního postupu, otevřete nabídku (například na stránce **Všechny nabídky správy rabatů**). Poté v podokně akcí vyberte **Pracovní postup \> Odeslat**. Jakmile bude nová nabídka zpracována a schválena prostřednictvím pracovního postupu, bude aktivní a připravená k použití.
 
-Po aktivaci nabídky nemůžete změnit většinu nastavení. Pokud musíte změnit aktivní nabídku, nejprve ji deaktivujte a poté vytvořte novou nabídku. Pokud se nová nabídka bude podobat staré nabídce, můžete ji vytvořit zkopírováním staré nabídky.
-
-Po aktivaci nabídky můžete změnit následující nastavení:
-
-- Odsouhlasí
-- Kumulativní záruka
-- Účetní profil
-- Účetní profil pro záruku
-- Poznámky k dokumentu
-- Měna
-- Od data
-- Do data
-
-Kromě toho lze odstranit řádky rabatu.
+Po aktivaci nabídky nemůžete změnit její nastavení. Pokud musíte změnit aktivní nabídku, deaktivujte ji a poté vytvořte novou nabídku. Pokud se nová nabídka bude podobat staré nabídce, můžete ji vytvořit zkopírováním staré nabídky.
