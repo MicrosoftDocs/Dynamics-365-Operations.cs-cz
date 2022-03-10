@@ -1,7 +1,7 @@
 ---
 title: Mobilní pracovní prostor zásob na skladě
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Zásoby na skladě. Tento mobilní pracovní prostor pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli.
-author: Mirzaab
+author: yufeihuang
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4bad102224f05e97ff7b83534d6796fbbb67874e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 9e67e16acc8ed72d571e9010131723038c8586a9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348846"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573890"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilní pracovní prostor zásob na skladě
 

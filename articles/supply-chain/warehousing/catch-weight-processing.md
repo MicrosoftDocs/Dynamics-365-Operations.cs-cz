@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808911"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087363"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -40,7 +40,7 @@ Než budete moci produkt použít v řízení skladu, musíte provést několik
 - Nastavte skupinu klasifikace jednotek, kde je jednotka skutečné hmotnosti definována jako nejnižší skladová jednotka zásob (SKU).
 - Nastavte zásadu zpracování položky se skutečnou hmotností.
 
-Další informace naleznete v tématu [Nastavení a správa položek se skutečnou hmotností](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+Další informace naleznete v tématu [Nastavení a správa položek se skutečnou hmotností](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Úpravy transakce
 
@@ -138,7 +138,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 - Produkty se skutečnou hmotností, které mají povolenou variantu, nelze použít společně s funkcí pro převod měrných jednotek variant.
 - Produkty se skutečnou hmotností nelze označit jako obchodní sadu produktů.
 - Produkty se skutečnou hmotností lze použít pouze se skupinou klasifikace jednotky, která má manipulační jednotky skutečné hmotnosti a která má jednotku skutečné hmotnosti jako nejnižší sekvenci.
-- U produktů se skutečnou hmotností lze převést skladovou jednotku na jednotku skutečné hmotnosti pouze tehdy, pokud převod vyprodukuje nominální množství větší než 1.
 - Nastavení čárových kódů pro produkty se skutečnou hmotností nepodporuje nastavení proměnné hmotnosti.
 
 ### <a name="order-processing"></a>Zpracování objednávky

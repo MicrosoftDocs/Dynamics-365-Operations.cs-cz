@@ -1,29 +1,31 @@
 ---
 title: Zpracování změn životních událostí
-description: Zpracování změn životní události v Microsoft Dynamics 365 Human Resources pro změny životní události.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Toto téma vysvětluje, jak zpracovat změny životní události v Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3cddc6205660b48abd9067bfdcaa04c9d2ba541
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cb894d9886c095d760efe66abcf773a975a99caa
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790901"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067597"
 ---
 # <a name="process-life-event-changes"></a>Zpracování změn životních událostí
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

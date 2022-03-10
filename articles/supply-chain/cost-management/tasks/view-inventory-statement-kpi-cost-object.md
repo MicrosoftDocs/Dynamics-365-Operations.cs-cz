@@ -1,6 +1,6 @@
 ---
 title: Zobrazení výkazu zásob a ukazatele KPI podle objektů nákladů
-description: K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+description: Toto téma vysvětluje, jak zobrazit výkaz zásob a ukazatele KPI podle objektů nákladů.
 author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,28 +13,28 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6bc60baa723cee91b219bc078f4486e971d2c99fc89b9c42e2d4472d161a163
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f813b0e04a2450cb64e92128d36495a483ad14e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721336"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568152"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Zobrazení výkazu zásob a ukazatele KPI podle objektů nákladů
 
 [!include [banner](../../includes/banner.md)]
 
-K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
+K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro kontrolora nákladů.
 
-1. Klikněte na Správa nákladů.
-2. Klepněte na možnost Uvolněné produkty.
-3. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole Číslo položky pomocí hodnoty „d0005“.
-4. V podokně akcí klikněte na možnost Spravovat náklady.
-5. Klepněte na Nákladové objekty.
-6. Klepněte na Výkaz zásob a ukazatele KPI.
-7. Zadejte datum do pole Od data.
-8. Do pole Do data zadejte datum.
+1. Vyberte **Správu nákladů**.
+2. Vyberte **Uvolněné produkty**.
+3. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole **Číslo položky** pomocí hodnoty *d0005*.
+4. V podokně akcí klikněte na možnost **Správa nákladů**.
+5. Vyberte **Objekty nákladů**.
+6. Vyberte **Výkaz zásob a ukazatele KPI**.
+7. Do pole **Od data** zadejte datum.
+8. Do pole **Do data** zadejte datum.
 
 
 

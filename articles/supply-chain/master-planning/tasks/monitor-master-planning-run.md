@@ -1,26 +1,24 @@
 ---
 title: Sledování běhu hlavního plánování
 description: Toto téma vysvětluje, jak může plánovač provozu sledovat, zda probíhá hlavní spuštění plánování.
-author: josaw1
-manager: tfehr
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2dea87ac106e79339b8cb6bb2c28e36e35de4a1a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226092"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103156"
 ---
 # <a name="monitor-a-master-planning-run"></a>Sledování běhu hlavního plánování
 
@@ -30,12 +28,11 @@ ms.locfileid: "5226092"
 
 Na stránce **Zobrazit průběh hlavního plánování** můžete zobrazit podrobné informace o historickém běhu hlavního plánování jako Ganttův diagram. Tato funkce vám může pomoci pochopit čas strávený v různých fázích hlavního plánování. Pro aktuální aktivní úlohu plánování lze pomocí stránky **Zobrazit průběh hlavního plánování** sledovat průběh a zobrazit odhadovanou zbývající dobu.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Zapnout a použít funkci vizualizace průběhu hlavního plánu
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Zapnutí a vypnutí funkce vizualizace průběhu hlavního plánu
 
-Pokud chcete tuto funkci používat, postupujte takto:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Znázornění průběhu hlavního plánování* v pracovním prostoru [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. V pracovním prostoru **Správa funkcí** na kartě **Nová** vyberte v seznamu **Vizualizace pokroku optimalizace plánování**. Pokud se tato funkce nezobrazí na kartě **Nová**, podívejte se na karty **Není povoleno** a **Vše**.
-1. Vyberte **Povolit**. Můžete také vybrat možnost **Plán** a vybrat čas, kdy má být funkce zapnuta.
+### <a name="use-the-master-plan-progress-visualization-feature"></a>Používání funkce vizualizace průběhu hlavního plánu
 
 Na stránce **Zobrazit průběh hlavního plánování** lze zobrazit historické úlohy plánování i aktivní úlohy plánování. 
 

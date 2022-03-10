@@ -2,11 +2,9 @@
 title: Technické verze a kategorie technických produktů
 description: Toto téma poskytuje informace o konceptu technických verzí. Technické verze zajišťují, že různé stavy produktu a jeho dat jsou udržovány aktuální a jasné a že je lze v systému vizualizovat.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987472"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572882"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Technické verze a kategorie technických produktů
 
@@ -50,7 +48,8 @@ Když používáte technické produkty, každý produkt má alespoň jednu techn
 - Technická společnost, která produkt vytvořila a vlastní (Další informace viz [Technické společnosti a pravidla vlastnictví dat](engineering-org-data-ownership-rules.md) .)
 - Související technické dokumenty, jako je montážní příručka, uživatelské pokyny, obrázky a odkazy
 - Technické atributy (Další informace viz [Technické atributy a vyhledávání technických atributů](engineering-attributes-and-search.md) .)
-- Technické kusovníky
+- Kusovník (BOM) pro strojírenské výrobky
+- Vzorce pro produkty výrobního procesu
 - Technické postupy
 
 Tato data můžete aktualizovat na existující verzi nebo vytvořit novou verzi pomocí *příkazu k technické změně*. (Další informace viz [Správa změn technických produktů](engineering-change-management.md).) Pokud vytvoříte novou verzi produktu, systém zkopíruje všechna technická data do této nové verze. Poté můžete upravit data pro tuto novou verzi. Tímto způsobem můžete sledovat konkrétní data pro každou následující verzi. Chcete-li porovnat rozdíly mezi po sobě následujícími technickými verzemi, zkontrolujte příkaz k technické změně, který zahrnuje typy změn označují všechny změny.
@@ -112,9 +111,11 @@ Na záložce s náhledem **Podrobnosti** kategorie technického produktu nastavt
 | Pole | popis |
 |---|---|
 | Typ produktu | Vyberte, zda se kategorie vztahuje na produkty nebo služby. |
-| Sledování verzí v transakcích | Vyberte, zda má být verze produktu vyznačena u všech transakcí (logistický dopad). Pokud například sledujete verzi v transakcích, každá prodejní objednávka zobrazí, která konkrétní verze produktu byla v dané prodejní objednávce prodána. Pokud nesledujete verzi v transakcích, prodejní objednávky nezobrazí, která konkrétní verze byla prodána. Místo toho vždy zobrazují nejnovější verzi.<ul><li>Pokud je tato možnost nastavena na *Ano*, je pro produkt vytvořen základní produkt a každá verze produktu bude variantou, která používá dimenzi produktu *verze*. Pole **Podtyp produktu** je automaticky nastaveno na *Základní produkt* a musíte vybrat skupinu dimenzí produktu, kde je dimenze *verze* je aktivní. Zobrazí se pouze skupiny dimenzí produktů, kde *verze* je aktivní dimenzí. Nové skupiny dimenzí produktů můžete vytvořit výběrem tlačítka **Upravit** (symbol tužky).</li><li>Pokud je tato možnost nastavena na *Ne*, dimenze produktu *verze* nebude použita. Poté můžete vybrat, zda chcete vytvořit produkt nebo základní produkt, který používá ostatní dimenze.</li></ul><p>Tato možnost se často používá u produktů, které mají rozdíl nákladů mezi verzemi, nebo u produktů, kde platí různé podmínky ve vztahu k zákazníkovi. Proto je důležité určit, která verze byla použita v každé transakci.</p> |
+| Typ výroby | Toto pole se zobrazí, pouze pokud jste povolili [řízení změn receptur](manage-formula-changes.md) ve vašem systému. Vyberte typ výroby, pro který platí tato kategorie strojírenských produktů:<ul><li>**Položka plánování** - Pomocí této technické kategorie můžete provádět správu změn vzorců pro položky plánování. Položky plánování používají receptury. Podobají se položkám receptur, ale používají se k výrobě pouze souběžných produktů a vedlejších produktů, nikoli hotových produktů. Vzorce se používají při výrobním procesu.</li><li>**Kusovník** - Tuto kategorii strojírenství použijte ke správě strojírenských produktů, které nepoužívají vzorce a obvykle (ale nemusí) zahrnovat kusovníky.</li><li>**Vzorec** - Pomocí této technické kategorie můžete provádět správu změn vzorců pro dokončené produkty. Tyto položky budou mít recepturu, ale nikoli kusovník. Vzorce se používají při výrobním procesu.</li></ul> |
+| Skutečná hmotnost | Tato možnost se zobrazí, pouze pokud jste povolili [řízení změn vzorců](manage-formula-changes.md) ve vašem systému. Je k dispozici pouze v případě, že je pole **Typ výroby** nastaveno na *Položka plánování* nebo *Vzorec*. Tuto možnost nastavte na *Ano*, pokud tuto strojírenskou kategorii použijete ke správě položek, které vyžadují podporu hmotnosti. |
+| Sledování verzí v transakcích | Vyberte, zda má být verze produktu vyznačena u všech transakcí (logistický dopad). Pokud například sledujete verzi v transakcích, každá prodejní objednávka zobrazí, která konkrétní verze produktu byla v dané prodejní objednávce prodána. Pokud nesledujete verzi v transakcích, prodejní objednávky nezobrazí, která konkrétní verze byla prodána. Místo toho vždy zobrazují nejnovější verzi.<ul><li>Pokud je tato možnost nastavena na *Ano*, je pro produkt vytvořen základní produkt a každá verze produktu bude variantou, která používá dimenzi produktu *verze*. Pole **Podtyp produktu** je automaticky nastaveno na *Základní produkt* v poli **Skupina dimenze produktu** a musíte vybrat skupinu dimenzí produktu, kde je dimenze *verze* je aktivní. Zobrazí se pouze skupiny dimenzí produktů, kde *verze* je aktivní dimenzí. Nové skupiny dimenzí produktů můžete vytvořit výběrem tlačítka **Upravit** (symbol tužky).</li><li>Pokud je tato možnost nastavena na *Ne*, dimenze produktu *verze* nebude použita. Poté můžete vybrat, zda chcete vytvořit produkt nebo základní produkt, který používá ostatní dimenze.</li></ul><p>Tato možnost se často používá u produktů, které mají rozdíl nákladů mezi verzemi, nebo u produktů, kde platí různé podmínky ve vztahu k zákazníkovi. Proto je důležité určit, která verze byla použita v každé transakci.</p> |
 | Podtyp produktu | Vyberte, zda bude kategorie obsahovat produkty nebo základní produkty. U hlavních produktů se použijí dimenze produktu.
-| Skupina dimenzí produktů | Nastavení **Sledování verzí v transakcích** vám pomůže vybrat podtyp produktu. Pokud jste určili, že chcete sledovat verzi v transakcích, zobrazí se skupiny dimenzí produktu, kde *verze* se používá dimenze. V opačném případě se zobrazí pouze skupiny dimenzí produktů, kde dimenze *verze* se nepoužívá. |
+| Skupina dimenzí produktů | Nastavení **Sledování verzí v transakcích** vám pomůže vybrat skupinu dimenze produktu. Pokud jste určili, že chcete sledovat verzi v transakcích, zobrazí se skupiny dimenzí produktu, kde *verze* se používá dimenze. V opačném případě se zobrazí pouze skupiny dimenzí produktů, kde dimenze *verze* se nepoužívá. |
 | Stav životního cyklu produktu při vytvoření | Nastavte výchozí stav životního cyklu produktu, který by měl mít technický produkt při prvním vytvoření. Další informace viz [Stavy životního cyklu produktu a transakce](product-lifecycle-state-transactions.md). |
 | Pravidlo čísla verze | Vyberte pravidlo čísla verze, které se vztahuje na kategorii:<ul><li>**Manuální** - Pro každou novou verzi vyberete číslo verze.</li><li>**Automatické** - Systém nastaví číslo verze na základě formátu, který definujete. Při nastavování formátu použijte znak čísla (\#), který představuje číslici, a jakýkoli jiný znak představující konstantní hodnotu. Například pokud definujete formát jako *V-\#\#*, první verze bude „V-01“, druhá verze bude „V-02“ atd.</li><li>**Seznam** - Systém vezme další číslo z předdefinovaného seznamu vlastních hodnot, které definujete.</li></ul> |
 | Vynutit platnost | Vyberte, zda musí být data účinnosti technických verzí souvislá, nebo zda mohou existovat mezery a překrývání. Toto nastavení ovlivňuje způsob, jakým můžete používat pole **Platné od** a **Platné do** pro každou technickou verzi, kde platí kategorie.<ul><li>Pokud je tato možnost nastavena na *Ano*, hodnota **Platí od** pro každou verzi musí být zadána a mezi verzemi nejsou povoleny překryvy ani mezery. Datový rozsah pro každou technickou verzi je spojeno přímo s předchozí a další technickou verzí, pokud existují. V tomto scénáři se vždy používá nejnovější verze a starší verze se již nepoužívají.</li><li>Pokud je tato možnost nastavena na **Ne**, neexistují žádná omezení v polích data účinnosti u technických verzí a jsou povolena překrývání i mezery. V tomto scénáři může být aktivních více verzí současně a můžete pracovat s jakoukoli aktivní verzí.</li></ul><p>Tato možnost také ovlivní kusovníky a postupy, které jsou připojeny k verzi produktu. Další informace viz [Připojení kusovníků a postupů k technickým verzím](#boms-routes) dále v tomto tématu.</p> |
@@ -141,7 +142,10 @@ Pro každý řádek, který přidáte do mřížky, nastavte následující pole
 
 ### <a name="readiness-policy-fasttab"></a>Záložka s náhledem Zásady připravenosti
 
-Použijte pole **Zásady připravenosti produktu** a vyberte zásadu připravenosti, která se vztahuje na produkty patřící do této kategorie. Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).
+Použijte pole **Zásady připravenosti produktu** a vyberte zásadu připravenosti, která by se měly vztahovat na produkty, které jsou vytvářeny na základě strojírenské kategorie. Další informace naleznete v tématu [Připravenost produktu](product-readiness.md).
+
+> [!NOTE]
+> Pole **Zásady připravenosti produktu** funguje trochu jinak, pokud jste zapnuli funkci *Kontroly připravenosti produktu* ve vašem systému. (Tato funkce umožňuje použít zásady připravenosti na standardní \[nestrojírenské\] produkty). Další informace viz [Přiřaďte zásady připravenosti standardním a strojírenským produktům](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Záložka s náhledem Zásady uvolnění
 
@@ -161,3 +165,6 @@ Technické kusovníky a postupy se vytvářejí z technické verze, kde platí. 
 U produktů, kde používáte dimenze produktu *verze* (spolu s logistickým dopadem na transakce), je verze také přidána do kusovníků a postupů. Toto chování pomáhá odlišit kusovníky a postupy po sobě jdoucích verzí, bez ohledu na nastavení **Vynutit platnost**.
 
 U produktů, kde nepoužíváte dimenze produktu *verze* (bez logistického dopadu na transakce), není verze přidána do kusovníků nebo postupů. Proto nebude mezi kusovníky a postupy po sobě jdoucích verzí žádný rozdíl. V tomto případě důrazně doporučujeme nastavit možnost **Vynutit platnost** na *Ano*. Tímto způsobem pomůžete zabránit tomu, aby se technické verze překrývaly, a můžete také aktivovat kusovník a postup novější verze, aniž byste nejprve museli deaktivovat kusovník a postup předchozí verze. Pokud v tomto případě nastavíte možnost **Nastavit platnost** na *Ano*, musíte ručně deaktivovat kusovníky a postupy starších verzí, než budete moci aktivovat nejnovější verzi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

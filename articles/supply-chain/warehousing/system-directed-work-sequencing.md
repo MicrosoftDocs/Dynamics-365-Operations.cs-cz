@@ -2,26 +2,23 @@
 title: Řazení práce řízené systémem
 description: Toto téma uvádí informace o řazení práce řízeném systémem. Tato funkce umožňuje třídit a filtrovat pracovní příkazy, které systém předává uživatelům k provádění. Hodí se v situacích, kdy se k řízení procesu vydávání ze skladu využívají další kritéria.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424202"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577809"
 ---
 # <a name="system-directed-work-sequencing"></a>Řazení práce řízené systémem
 
@@ -305,3 +302,6 @@ Dotazy na řazení práce řízené systémem jsou *inkluzivní*. Na tuto skute�
 Proto bylo v příkladu v tomto scénáři ID práce *4* také zachyceno dotazem. Při vytvoření byly přidány dva řádky: jeden pro 25 ks druhý pro 10 ks. Práce je prezentována uživateli, protože alespoň jeden řádek práce má množství menší než 20 ks.
 
 V závislosti na scénáři můžete tomuto chování bránit s využitím dělení práce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: Životní cyklus dávkové objednávky od vytvoření po spuštění
 description: Tento proces vás provede první částí životního cyklu dávkové objednávky.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdBOM, PmfProdCoBy, ProdParmCostEstimation, ProdCalcTrans, ProdParmRelease, ProdSchedule, ProdRouteJob, ProdParmStartUp, ProdJournalTransBOM, ProdJournalTransRoute
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5fd04587c95ba8a48750f96302a11aeaf82308d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7ca259ca8f176cd5bc76081836adcb7d272972b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981399"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579249"
 ---
 # <a name="batch-order-lifecycle-from-create-to-start"></a>Životní cyklus dávkové objednávky od vytvoření po spuštění
 
@@ -91,3 +89,6 @@ Předpoklady pro spuštění procedury s jinou sadou dat je uvolněný produkt s
 12. Zavřete stránku.
 13. Zavřete stránku.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

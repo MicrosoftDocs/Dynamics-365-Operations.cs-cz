@@ -2,16 +2,13 @@
 title: Ručně vytvořit uspořádaná doporučení
 description: V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9826785700dcc1a35e6199b7aeff4e06b6d9da39
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f8142bb8a23e467ba38e3d22b070c2d275c95f506a3cc263dcd2986f60fb5860
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729883"
 ---
 # <a name="manually-create-curated-recommendations"></a>Ručně vytvořit uspořádaná doporučení
 
@@ -50,7 +47,7 @@ Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 
 ## <a name="example-list"></a>Ukázkový seznam
 
-![Ukázkový doporučený seznam v administrativě](./media/examplecuratedrecolist.png)
+![Ukázkový doporučený seznam v administrativě.](./media/examplecuratedrecolist.png)
 
 ## <a name="additional-resources"></a>Další prostředky
 
@@ -75,3 +72,6 @@ Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 [Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
 
 [Často kladené dotazy k doporučení produktu](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

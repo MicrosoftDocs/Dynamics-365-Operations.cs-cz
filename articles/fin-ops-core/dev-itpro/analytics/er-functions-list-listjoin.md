@@ -3,7 +3,6 @@ title: Funkce elektronického výkaznictví LISTJOIN
 description: Toto téma obsahuje obecné informace o použití funkce LISTJOIN elektronického výkaznictví.
 author: NickSelin
 ms.date: 04/01/2020
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: d9346afc88adb89c08098f39a5fd1c2cb82f664af2244b8cafbbe8a4d2f516c6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755795"
 ---
 # <a name="listjoin-er-function"></a>Funkce elektronického výkaznictví LISTJOIN
 
@@ -66,15 +65,15 @@ Zadáte pak zdroj dat **Záznam 2** typu `Container`. Tento zdroj dat obsahuje n
 - **Množství**: Toto pole obsahuje výraz, který vrací hodnotu typu `Real`.
 - **IsValid**: Toto pole obsahuje výraz, který vrací hodnotu typu `Boolean`.
 
-![Stránka Návrhář mapování modelu ER](./media/er-functions-list-listjoin-image1.gif)
+![Stránka Návrhář mapování modelu ER.](./media/er-functions-list-listjoin-image1.gif)
 
 V tomto případě výraz `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` vrátí nový seznam, který obsahuje dva záznamy.
 
-![Stránka návrháře mapování modelu elektronického výkaznictví se dvěma záznamy](./media/er-functions-list-listjoin-image2.gif)
+![Stránka návrháře mapování modelu elektronického výkaznictví se dvěma záznamy.](./media/er-functions-list-listjoin-image2.gif)
 
 Struktura tohoto seznamu se skládá z jednoho pole **Množství** typu `Real`, protože toto pole je jediné pole, které je přítomno v každém argumentu volané funkce.
 
-![Pole částky na stránce návrháře mapování modelu elektronického výkaznictví](./media/er-functions-list-listjoin-image3.gif)
+![Pole částky na stránce návrháře mapování modelu elektronického výkaznictví.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 175e1cc568ed027feee39eabfd9f08de6fe7f4b4
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542630"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782522"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Dostupnost zásob v dvojitém zápisu
 

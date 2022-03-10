@@ -1,29 +1,25 @@
 ---
 title: Přehled správy servisu
 description: Za pomoci správy servisu můžete sestavit servisní smlouvy a předplatné služeb, zpracování servisních zakázek, dotazů odběratelů a ke správě a analýze poskytování služeb odběratelům.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b9b8444c635fe08a224314d1b76de5ac8d9defbc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423503"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982995"
 ---
 # <a name="service-management-overview"></a>Přehled správy servisu
 
@@ -50,7 +46,7 @@ Pomocí nástrojů pro vykazování můžete sledovat marže ze servisní objedn
 
 Následující diagram znázorňuje obchodní procesy vysoké úrovně pro **řízení služeb** a popisuje, kde se procesy služby integrují v jiných modulech.
 
-[![Diagram obchodního procesu Správa služby](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Diagram obchodního procesu Správa služby.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## <a name="service-management-at-a-glance"></a>Řízení služeb v kostce
 
@@ -67,7 +63,10 @@ Následující diagram znázorňuje obchodní procesy vysoké úrovně pro **ř�
 Řízení služeb lze integrovat do těchto produktů v rámci modulů:
 
   - [Přehled prodeje a marketingu](../sales-marketing/overview-sales-marketing.md)
-  - [Lidské zdroje](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Lidské zdroje](/dynamics365/unified-operations/talent/index)
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

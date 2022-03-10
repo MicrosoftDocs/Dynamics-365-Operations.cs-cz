@@ -1,93 +1,82 @@
 ---
 title: Nastavení duálního zápisu z Lifecycle Services
 description: Toto téma vysvětluje, jak nastavit připojení pro duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 01/06/2020
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6971c8e2d5fa03c2991b9a3054c638cff6322c8b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567713"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063665"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-V tomto tématu je vysvětleno, jak zřídit připojení s dvojím zápisem mezi novým prostředím Finance and Operations a novým prostředím Dataverse z Microsoft Dynamics Lifecycle Services (LCS).
+
+Toto téma vysvětluje, jak povolit duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Připojení s dvojím zápisem může nastavit pouze správce.
+Musíte vyplnit integraci Power Platform, jak je popsáno v následujících tématech:
 
-+ Musíte mít přístup k tomuto klientovi.
-+ Musíte být správce v prostředích Finance and Operations i Dataverse.
++ [Integrace Power Platform - povolit během nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Integrace Power Platform – povolit po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
-## <a name="set-up-a-dual-write-connection"></a>Nastavení připojení s dvojím zápisem
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Nastavení duálního zápisu pro nová prostředí Dataverse
 
-Chcete-li nastavit připojení s dvojím zápisem, postupujte následujícím způsobem.
+Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o prostředí**:
 
-1. V LCS přejděte na svůj projekt.
-2. Pro nasazení nového prostředí vyberte **Konfigurace**.
-3. Vyberte verzi. 
-4. Vyberte topologii. Je-li k dispozici pouze jedna topologie, bude automaticky vybrána.
-5. Proveďte první kroky v průvodci **Nastavení nasazení**.
-6. Na kartě **Dataverse** proveďte jeden z následujících kroků:
+1. Na stránce **Podrobnosti o prostředí** rozbalte sekci **Integrace Power Platform**.
 
-    - Pokud je prostředí Dataverse již pro klienta zřízeno, můžete je vybrat.
+2. Vyberte tlačítko **Aplikace pro dvojí zápis**.
 
-        1. Nastavte možnost **Konfigurovat Dataverse** na **Ano**.
-        2. Ve sloupci **Dostupná prostředí** vyberte prostředí, které chcete integrovat s vašimi daty Finance and Operations. Seznam obsahuje všechna prostředí, v nichž máte oprávnění správce.
-        3. Zaškrtnutím políčka **Souhlasím** dáte najevo, že souhlasíte s podmínkami a ujednáními.
+    ![Integrace Power Platform.](media/powerplat_integration_step2.png)
 
-        ![Karta Dataverse, když už je pro klienta zřízeno prostředí Dataverse](../dual-write/media/lcs_setup_1.png)
+3. Zkontrolujte smluvní podmínky a poté vyberte **Konfigurovat**.
 
-    - Pokud váš klient ještě nemá prostředí Dataverse, bude zřízeno nové prostředí.
+4. Pokračujte volbou tlačítka **OK**.
 
-        1. Nastavte možnost **Konfigurovat Dataverse** na **Ano**.
-        2. Zadejte název prostředí Dataverse.
-        3. Vyberte oblast, ve které má být prostředí nasazeno.
-        4. Vyberte výchozí jazyk a měnu pro prostředí.
+5. Pokrok můžete sledovat pravidelným obnovováním stránky s podrobnostmi o prostředí. Nastavení obvykle trvá 30 minut nebo méně.  
 
-            > [!NOTE]
-            > Jazyk a měnu nelze později změnit.
+6. Po dokončení nastavení vás bude informovat zpráva, zda byl proces úspěšný nebo zda došlo k selhání. Pokud se nastavení nezdařilo, zobrazí se související chybová zpráva. Před přechodem k dalšímu kroku musíte opravit všechny chyby.
 
-        5. Zaškrtnutím políčka **Souhlasím** dáte najevo, že souhlasíte s podmínkami a ujednáními.
+7. Vyberte **Odkaz na prostředí Power Platform**, chcete-li vytvořit spojení mezi Dataverse a databázemi aktuálního prostředí. To obvykle trvá méně než 5 minut.
 
-        ![Karta Dataverse, pokud váš klient ještě nemá prostředí Dataverse](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Odkaz na prostředí Power Platform.":::
 
-7. Proveďte zbývající kroky v průvodci **Nastavení nasazení**.
-8. Poté, co má prostředí stav **Nasazeno** otevřete stránku s podrobnostmi o prostředí. V sekci **Integrace prostředí Power Platform** jsou uvedeny názvy prostředí Finance and Operations a Dataverse, která jsou propojena.
+8. Po dokončení propojení se zobrazí hypertextový odkaz. Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí Finance and Operations. Odtud můžete nastavit mapování entit.
 
-    ![Sekce integrace Power Platform](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Nastavení duálního zápisu pro existující prostředí Dataverse
 
-9. Správce prostředí Finance and Operations se musí přihlásit k LCS a dokončit propojení výběrem **Odkaz na CDS for Apps**. Na stránce s podrobnostmi o prostředí jsou uvedeny kontaktní informace na správce.
+Chcete-li nastavit duální zápis pro existující prostředí Dataverse, musíte vytvořit [lístek podpory](../../lifecycle-services/lcs-support.md) společnosti Microsoft. Lístek musí obsahovat:
 
-    Po dokončení propojení se stav aktualizuje na **Propojení prostředí proběhlo úspěšně**.
-
-10. Chcete-li otevřít pracovní prostor **Integrace dat** v prostředí Finance and Operations a ovládat šablony, které jsou k dispozici, vyberte možnost **Odkaz na CDS for Apps**.
-
-    ![Tlačítko Odkaz na CDS for Apps v sekci s informacemi o Power Platform](../dual-write/media/lcs_setup_4.png)
++ Vaše ID prostředí Finance and Operations.
++ Název vašeho prostředí ze služby Lifecycle Services.
++ ID organizace Dataverse nebo ID prostředí Power Platform z Centra pro správu Power Platform. Ve svém lístku požádejte, aby ID bylo použito jako instance integrace Power Platform.
 
 > [!NOTE]
 > Nelze zrušit propojení prostředí pomocí LCS. Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.
 
+## <a name="linking-mismatch"></a>Nesoulad propojení
 
+Je možné, že vaše prostředí LCS je propojeno s jednou instancí Dataverse, zatímco vaše prostředí duálního zápisu je propojeno s jinou instancí Dataverse. Tento nesoulad propojení může způsobit neočekávané chování a může dojít k odeslání dat do nesprávného prostředí. Doporučené prostředí pro duální zápis je prostředí, které je vytvořeno jako součást integrace Power Platform a dlouhodobě to bude jediný způsob, jak vytvořit propojení mezi prostředími.
+
+Pokud má vaše prostředí nesoulad propojení, LCS zobrazí na stránce s podrobnostmi o vašem prostředí varování „Microsoft zjistil, že je vaše prostředí propojeno pomocí duálního zápisu do jiného cíle, než je uvedeno v integraci Power Platform, což se nedoporučuje“:
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrace - neshoda propojení":::
+
+Pokud narazíte na tuto chybu, existují dvě možnosti podle vašich potřeb:
+
++ [Odpojit a znovu propojit prostředí duálního zápisu (obnovit nebo změnit propojení)](relink-environments.md#scenario-reset-or-change-linking), jak je uvedeno na stránce podrobností o vašem prostředí LCS. Toto je ideální volba, protože ji můžete spustit bez podpory společnosti Microsoft.  
++ Pokud chcete zachovat své propojení v duálním zápisu, můžete požádat o pomoc podporu společnosti Microsoft a změnit integraci Power Platform, abyste využili své stávající prostředí Dataverse, jak je dokumentováno v předchozí části.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

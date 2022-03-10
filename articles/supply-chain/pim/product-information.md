@@ -2,34 +2,31 @@
 title: Přehled informací o produktech
 description: Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy.
 author: t-benebo
-manager: tfehr
 ms.date: 06/01/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18b371494248c8b8f395996c786bb6bf7a54a6de
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987197"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063309"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy. 
 
@@ -95,3 +92,6 @@ Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevř
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 
 Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

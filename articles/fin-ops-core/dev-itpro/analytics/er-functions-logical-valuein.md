@@ -2,9 +2,7 @@
 title: Funkce el. výkaznictví VALUEIN
 description: Toto téma obsahuje obecné informace o použití funkce VALUEIN elektronického výkaznictví.
 author: NickSelin
-manager: kfend
-ms.date: 08/18/2020
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5a0ac314a61abce610407550e65479cbf5a6b5b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: efa811df360b2ca38eb59bac849e70041405fa81
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565825"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922355"
 ---
 # <a name="valuein-er-function"></a>Funkce el. výkaznictví VALUEIN
 
@@ -64,6 +62,9 @@ Obecně platí, že funkce `VALUEIN` je převedena do sady podmínek **OR**. Pok
 ```
 
 V některých případech ji lze převést do databázového příkazu SQL pomocí operátoru `EXISTS JOIN`.
+
+> [!NOTE]
+> Hodnota, kterou vrací funkce `VALUEIN`, se [používá různě](er-functions-list-filter.md#usage-notes) v závislosti na tom, zda slouží k určení kritérií výběru pro funkci [`FILTER`](er-functions-list-filter.md) nebo [`WHERE`](er-functions-list-where.md).
 
 ## <a name="example-1"></a>Příklad 1
 

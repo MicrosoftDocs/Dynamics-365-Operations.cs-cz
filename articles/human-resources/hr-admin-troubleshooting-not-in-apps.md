@@ -1,8 +1,8 @@
 ---
 title: Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
-description: Tento článek vysvětluje, jak postupovat v případech, kdy zákazník nevidí aplikaci Microsoft Dynamics 365 Human Resources for Talent mezi aplikacemi Microsoft Dynamics 365.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, co dělat, pokud Microsoft Dynamics 365 Human Resources není uveden v seznamu aplikací Microsoft Dynamics 365.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,24 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f90af26483cf82de57cbe8dd4237b39b281786804557319d5f6a7fc407027523
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782113"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069673"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources se nezobrazují v aplikacích Microsoft Dynamics 365
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Aplikace Human Resources se nezobrazuje v aplikacích Microsoft Dynamics 365
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**Vydání**
+**Problém**
 
 Zákazník nevidí Dynamics 365 Human Resources mezi aplikacemi Microsoft Dynamics 365.
 

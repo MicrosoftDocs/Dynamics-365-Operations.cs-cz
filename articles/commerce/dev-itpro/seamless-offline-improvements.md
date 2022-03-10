@@ -1,7 +1,7 @@
 ---
 title: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
 description: V tomto tématu je uveden přehled vylepšení, která poskytují jednoduchý offline přepínač pro určité typy plateb.
-author: rubendel
+author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019950"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779485"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Snadný offline přepínač pro operace dárkového poukazu a dobropisu
 
@@ -36,7 +36,7 @@ Pokud však POS ztratí spojení po přidání dárkového poukazu do transakce,
 
 Chcete-li povolit funkci uzavření transakcí dárkového poukazu po přepnutí do režimu offline, přejděte na kartu **Zaúčtování** na stránce **Parametry Commerce**. Na dané kartě vyhledejte pevnou záložku **Dárkový poukaz** a nastavte možnost **Povolit uzavření transakcí dárkového poukazu v offline režimu** na hodnotu **Ano**.
 
-![Nastavení dárkového poukazu offline](../media/gift.png)
+![Nastavení dárkového poukazu offline.](../media/gift.png)
 
 Parametry Commerce jsou obvykle uloženy v mezipaměti. Z toho vyplývá, že po aktualizaci nastavení tohoto parametru a při zahájení plánu distribuce dojde k synchronizaci změny v kanálu, takže se tato změna může uskutečnit až 24 hodin. Chcete-li provést okamžitou efektivní změnu, obnovte službu IIS (Microsoft Internet Information Services).
 
@@ -46,7 +46,7 @@ Stejně jako u interních dárkových poukazů jsou dobropisy centrálně udržo
 
 Chcete-li povolit funkci uzavření transakcí dobropisu po přepnutí do režimu offline, přejděte na kartu **Zaúčtování** na stránce **Parametry Commerce**. Na dané kartě vyhledejte pevnou záložku **Dobropis** a nastavte možnost **Povolit uzavření transakcí dobropisu v offline režimu** na hodnotu **Ano**.
 
-![Nastavení dobropisu offline](../media/creditmemo.png)
+![Nastavení dobropisu offline.](../media/creditmemo.png)
 
 Parametry Commerce jsou obvykle uloženy v mezipaměti. Z toho vyplývá, že po aktualizaci nastavení tohoto parametru a při zahájení plánu distribuce dojde k synchronizaci změny v kanálu, takže se tato změna může uskutečnit až 24 hodin. Chcete-li provést změny okamžitě, obnovte službu IIS.
 

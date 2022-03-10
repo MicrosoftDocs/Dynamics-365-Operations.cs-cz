@@ -2,11 +2,9 @@
 title: Přidání nové webové stránky
 description: Toto téma popisuje, jak přidat novou stránku webu v řešení Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d96f173c68bd6a7d9c7a559ed7f18329c3508af
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208032"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090712"
 ---
 # <a name="add-a-new-site-page"></a>Přidání nové webové stránky
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak přidat novou stránku webu v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Po vytvoření šablon a fragmentů pro váš web je dalším krokem vytváření stránek, které je používají. Než začnete, musíte vybrat šablonu nebo rozložení, název stránky a adresu URL stránky.
 
@@ -38,11 +33,11 @@ Po vytvoření šablon a fragmentů pro váš web je dalším krokem vytvářen�
 
 Pro novou stránku můžete použít buď šablonu, nebo rozvržení. Další informace získáte v části [Přehled šablon a rozložení](templates-layouts-overview.md).
 
-## <a name="page-name"></a>Název stránky
+## <a name="specify-the-page-name"></a>Zadání názvu stránky
 
-Název stránky musí být jedinečný pro vaši stránku. Měl by být názorný, aby jej bylo možné snadno najít a ostatní uživatelé věděli, pro k čemu je daná stránka určena. Název stránky vyberte pečlivě, protože jej nelze později změnit.
+Název stránky musí být na webu jedinečný a měl by být názorný, aby ji bylo možné snadno najít a ostatní uživatelé věděli, k čemu je daná stránka určena. Stránku můžete později přejmenovat tak, že ji upravíte a poté vyberete symbol pera vedle názvu stránky v panelu vlastností.
 
-## <a name="page-url"></a>Adresa URL stránky
+## <a name="specify-the-page-url"></a>Zadání adresy URL stránky
 
 Máte možnost zadat adresu URL nové stránky. Při vytváření stránky můžete zadat řetězec, který bude použit k vytvoření úplné adresy URL. Tento řetězec je označován jako relativní adresa URL nebo jako slug adresy URL. Na základě slugu adresy URL je poté vytvořena úplná adresa URL a je jí přiřazena nová stránka. Tento slug adresy URL lze změnit později před publikováním stránky. Další informace naleznete v tématu [Vytvoření adresy URL stránky](create-page-URL.md).
 

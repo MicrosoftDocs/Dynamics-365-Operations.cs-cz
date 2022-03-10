@@ -4,24 +4,17 @@ description: Toto téma vysvětluje, jak nastavit sloupce stavu prodejní objedn
 author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: damadipa
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346563"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782277"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Nastavení mapování pro sloupce stavu prodejní objednávky
 

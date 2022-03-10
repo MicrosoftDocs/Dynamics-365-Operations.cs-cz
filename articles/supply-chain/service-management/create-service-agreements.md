@@ -1,12 +1,10 @@
 ---
 title: Vytváření servisních smluv
 description: Toto téma popisuje použití funkcí v modulech Správa servisu a Řízení projektů a účetnictví k vytváření servisních smluv.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f883d5b312c042a995e30998fc24da5b1c02f22a
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: c9a5d580b0bb146bf5d445823b37f607e507f7eb
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470850"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569136"
 ---
 # <a name="create-service-agreements"></a>Vytváření servisních smluv
 

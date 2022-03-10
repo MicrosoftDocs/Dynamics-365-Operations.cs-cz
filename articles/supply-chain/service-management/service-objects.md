@@ -1,34 +1,31 @@
 ---
 title: Přehled předmětů servisu
-description: Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony.
-author: ShylaThompson
-manager: tfehr
+description: Toto téma poskytuje přehled práce s předměty servisu.
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1e0a40d351150ce432164438cd9680cf80792e1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ad758d32c6e9de0758c6fddb57a7dea886ab73d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974303"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986428"
 ---
 # <a name="service-objects-overview"></a>Přehled předmětů servisu
 
 [!include [banner](../includes/banner.md)]
 
-Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony. V závislosti na typu poskytované služby se může jednat o hmotné či nehmotné předměty:
+Předměty servisu jsou majetek a produkty odběratele, u kterých je možné provádět servisní úkony. V závislosti na typu poskytované služby se může jednat o hmotné či nehmotné předměty:
 
 -  Hmotnými předměty se rozumí věci jako například stroje, zařízení nebo budovy, pro které lze provádět fyzické servisní úkony.
 
@@ -46,3 +43,6 @@ Společnost A spravuje finanční záznamy několika malých společností. Jedn
 
 [Tvorba předmětů servisu](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Obsah kompenzací v Power BI
 description: Toto téma popisuje obsah kompenzací v Power BI. Vysvětluje, jak přistupovat k sestavám, a poskytuje informace o použitém datovém modelu.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 549111dab1b6d3b66567801ae787a680a04b18e20e286e1a59d1ab388bf2a4f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763589"
 ---
 # <a name="compensation-power-bi-content"></a>Obsah kompenzací v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **Kompenzace** v Microsoft Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje obsah **kompenzací** v Microsoft Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Kompenzace** v Power BI se zobrazuje v pracovním prostoru **Správa kompenzací**, pokud používáte jeden z následujících produktů:
@@ -71,3 +69,6 @@ Následující data se používají k vyplňování sestav v obsahu **Kompenzace
 | Jméno zaměstnance            | Křestní jméno, příjmení a celé jméno                                                                       | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Titul zaměstnance           | Název a datum služebního věku                                                                                   | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Společnost, kompenzace, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání, zaměstnanecké výhody |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Cross docking z výrobních příkazů na výstupní překladiště
 description: Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ee91fa28943a27474bff5fb7a7fc368142dabcdd6c9c9772d38134af0257ef6e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715739"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
@@ -31,8 +28,7 @@ ms.locfileid: "4424161"
 
 Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 
-<a name="introduction"></a>Úvod
-------------
+## <a name="introduction"></a>Úvod
 
 Cross docking z výroby do výstupního skladového místa je relevantní pro výrobce, kteří produkují velké množství a v ideálním případě chtějí expedovat dokončené produkt při jejich prohlášení za dokončené z výrobních linek. Účelem je dodat produkty do distribučních center, které se fyzicky nacházejí blízko poptávky odběratele, namísto vytváření zásob na výrobním pracovišti.
 
@@ -46,7 +42,7 @@ Produkt je vykázaný jako dokončený do výstupního místa výroby (3) a řid
 -   Pokud je k nákladové bráně již přiřazen přívěs, řidič nákladního automobilu bude nasměrován k přímému naložení výrobku na přívěs.
 -   Pokud neexistuje žádná plánovaná aktivita pro převod produktu, řidič vysokozdvižného vozíku bude nasměrován umístit produkt v interním skladu (5).
 
-[![příležitostný cross docking](./media/scenario1.png)](./media/scenario1.png)
+[![příležitostný cross docking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurace cross dockingu
 Proces cross dockingu se konfiguruje v **zásadách práce**. Zásady práce obsahují typ pracovního příkazu, umístění a produkt. V následujícím příkladu je cross docking nakonfigurovaný pro produkt X a skladové místo Y.
@@ -127,3 +123,6 @@ Poté, co je výrobek vykázán jako dokončený na výrobní lince, je přeprav
 -   Scénář cross dockingu je podporován pro dávku a sériové řízené zboží, přičemž jak dimenze dávky, tak dimenze sériového čísla jsou definovány nad a pod skladovým místem v hierarchii rezervací. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

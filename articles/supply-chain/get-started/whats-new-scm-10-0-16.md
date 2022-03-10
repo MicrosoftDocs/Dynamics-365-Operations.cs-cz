@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909912"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474909"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.16. (únor 2021)
 
@@ -54,34 +54,10 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 - [Prodejní ceny založené na atributech pro konfiguraci produktu založeného na omezeních](../pim/attribute-based-product-configurator.md)
 - [Automatické přidělování poplatků](../procurement/automatic-charges-allocation.md)
 - [Přehled nebezpečných materiálů](../pim/hazmat-overview.md) (a související témata)
-- [Migrace optimalizace plánování pro hlavní plánování](../master-planning/new-master-planning-engine.md)
+- [Migrace na optimalizaci plánování pro hlavní plánování](../master-planning/new-master-planning-engine.md)
 - [cXML rozšíření nákupu](../procurement/purchasing-cxml-enhancements.md)
-- [Řešení potíží s řízením nákladů](../cost-management/troubleshoot-costmanagement.md)
-- [Řešení potíží s příchozími skladovými operacemi](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Odstraňování potíží se sestavením nákladu a dodávkami](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Odstraňování potíží s hlavním plánováním](../master-planning/troubleshoot-masterplanning.md)
-- [Řešení potíží s odchozími skladovými operacemi](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Odstraňování potíží s částečným uvolněním a částečnou dodávkou](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Odstraňování potíží s konfigurátorem produktu](../pim/troubleshooting-productconfigurator.md)
-- [Odstraňování potíží s informacemi o produktech](../pim/troubleshooting-productinformation.md)
-- [Řešení problému s pracovními postupy zásobování a zdrojů](../procurement/troubleshoot-procurementworkflows.md)
-- [Řešení problémů s nákupními objednávkami](../procurement/troubleshoot-purchaseorders.md)
-- [Řešení problémů s cenami, slevami, smlouvami a rabaty](../procurement/troubleshooting-pricediscountagreements.md)
-- [Řešení problémů s příjemkami produktů a fakturací](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Odstraňování potíží s diskrétní výrobou](../production-control/troubleshoot-discretemanufacturing.md)
-- [Poradce při potížích s výdejem a balením](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Odstraňování potíží s procesní výrobou](../production-control/troubleshoot-processmanufacturing.md)
-- [Odstraňování problémů s rezervacemi v řízení skladu](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Řešení problémů s prodejními objednávkami](../sales-marketing/troubleshooting-sales.md)
-- [Řešení problémů s prodejními nabídkami](../sales-marketing/troubleshooting-salesquotation.md)
-- [Řešení potíží s upgradem a migrací na pokročilou správu skladů](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Odstraňování problémů s připojením mobilní aplikace Řízení skladu](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Ostraňování potíží s konfigurací skladu](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Odstraňování problémů s doplňováním skladu](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Odstraňování problémů s nastavením skladu](../warehousing/troubleshoot-warehouse-setup.md)
-- [Odstraňování problémů s prací skladu](../warehousing/troubleshoot-warehouse-work.md)
 - [Seskupení vyskladnění](../warehousing/putaway-clusters.md)
-- [Strategie doplnění](../warehousing/replenishment-strategies.md)
+- [Strategie doplňování](../warehousing/replenishment-strategies.md)
 - [Rozdělení práce](../warehousing/work-split.md)
 - [Práce se směrnicemi skladového místa](../warehousing/create-location-directive.md)
 

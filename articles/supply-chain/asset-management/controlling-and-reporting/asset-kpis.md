@@ -1,12 +1,10 @@
 ---
 title: Ukazatele KPI majetku
 description: V tomto tématu jsou vysvětleny ukazatelé KPI v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8741ad9c70182c0f4f9d4d5272a023a3627340f6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8bdc60d993a784ffc123d36b5e51cbd6028316f18a2dee6f4ee134a93ffc024e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778741"
 ---
 # <a name="asset-kpis"></a>Ukazatele KPI majetku
 
@@ -84,7 +82,7 @@ V následující tabulce naleznete popis polí na stránce **KPI majetku**.
 
 Na následujícím obrázku je uveden snímek obrazovky výpočtu KUV pro čtyři majetky.
 
-![Snímek obrazovky výpočtu KUV pro čtyři aktiva](media/11-controlling-and-reporting.png)
+![Snímek obrazovky výpočtu KUV pro čtyři aktiva.](media/11-controlling-and-reporting.png)
 
 - V části **Všechen majetek** můžete vícenásobně vybrat několik kusů majetku a kliknout na tlačítko **KPI majetku** na kartě **Obecné**. Pak klikněte na **OK** v dialogovém okně **Vypočítat KPI majetku** pro výpočet KPI u vybraného majetku.  
 - Výsledky výpočtu KPI mohou, ale nemusí zahrnovat [registrace prostojů údržby](../work-orders/maintenance-downtime.md), v závislosti na nastavení a použití kódů důvodu prostoje údržby. 

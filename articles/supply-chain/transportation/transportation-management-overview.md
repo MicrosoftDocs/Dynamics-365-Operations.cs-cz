@@ -1,28 +1,28 @@
 ---
 title: Přehled správy přepravy
 description: Toto téma poskytuje přehled správy přepravy v aplikaci Supply Chain Management.
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 30251
+ms.custom:
+- "30251"
+- intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fca83ef2c80ed6df9cfbdedd2805e453df3f737a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 68082a736fd45c6701324a1492087c1b16bf0566
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006484"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985438"
 ---
 # <a name="transportation-management-overview"></a>Přehled správy přepravy
 
@@ -69,20 +69,23 @@ Modul Správa přepravy slouží ke správě přepravy ve vaší společnosti a 
 ## <a name="planning-transportation-in-supply-chain-management"></a>Plánování přepravy v Supply Chain Management
 V modulu Správa přepravy lze dopravní plánování založit na objednávkách nebo na dodávkách, které jsou vytvořeny na základě těchto objednávek. Dodávky vždy v každém okamžiku existují, ale nejsou požadovány pro plánování přepravy. Převodní příkazy jsou součástí odchozího scénáře a je možné je plánovat společně s prodejními objednávkami. 
 
-![Načíst výkres](./media/Load-drawing1-1024x477.jpg)
+![Načíst výkres.](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Příchozí přeprava
 Pokud objednáváte od dodavatele zboží, které je potřeba dodat na sklad, pravděpodobně budete chtít zajistitt přepravu tohoto zboží sami. Pomocí aplikace Supply Chain Management můžete naplánovat přepravu i převzetí příchozího nákladu. Následující obrázek znázorňuje tok obchodního procesu pro plánování přepravy příchozího nákladu. 
 
-![Obchodní proces: průběh přepravy pro vstupní náklady](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Obchodní proces: průběh přepravy pro vstupní náklady.](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Odchozí přeprava
 Můžete naplánovat a zpracovat odchozí náklad a dodat tak konkrétní položky ze skladu společnosti odběrateli. Pomocí aplikace Supply Chain Management můžete naplánovat přepravu i expedici odchozího nákladu. Následující obrázek znázorňuje tok obchodního procesu pro plánování a zpracování odchozích nákladů pro expedici. 
 
-![Plánování a zpracování odchozích nákladů](./media/Planningandprocessingoutboundloads.jpg)
+![Plánování a zpracování odchozích nákladů.](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Sestavení vytížení
 Aplikace Supply Chain Management obsahuje strategii sestavení vytížení, která se nazývá Strategie sestavení vytížení založená na objemu. Tato strategie umožňuje použít maximální hodnoty zadané pro výšku a hmotnost v šabloně vytížení nebo přepsat nastavení zadáním nových hodnot. Pokud chcete použít tuto strategii, vyberte ji v poli **Strategie sestavení vytížení** na pevné záložce **Nastavení** na stránce **Pracovní plocha sestavení vytížení**. Kromě toho můžete přidat vlastní strategie sestavení vytížení vytvořením nové třídy ve stromu aplikačních objektů (AOT).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

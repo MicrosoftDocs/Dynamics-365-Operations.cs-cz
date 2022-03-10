@@ -2,30 +2,24 @@
 title: Přehled fiskální integrace pro kanály Commerce
 description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 08/10/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
-ms.custom: intro-internal
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2019-1-16
-ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343280"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077185"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce. 
 
@@ -39,32 +33,61 @@ Funkce fiskální integrace je rámcem, který poskytuje společné řešení pr
 
 Chcete-li podporovat jiné scénáře, které nejsou podporovány ukázkou fiskální integrace, integrovat Retail POS s jinými fiskálními zařízeními nebo službami, nebo pokrýt požadavky jiných zemí nebo oblastí, musíte buď rozšířit existující ukázku fiskální integrace, nebo vytvořit novou ukázku pomocí příkladu existujícího ukázky jako příkladu.
 
-## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Proces fiskální registrace a ukázky fiskální integrace pro fiskální zařízení
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services"></a>Proces fiskální registrace a ukázky fiskální integrace pro fiskální zařízení a služby
 
-Proces fiskální registrace v Retail POS se může skládat z jednoho nebo více kroků. Každý krok zahrnuje fiskální registraci konkrétních transakcí nebo události v jednom fiskálním zařízení nebo službě. Následující součásti řešení se účastní fiskální registrace ve fiskálním zařízení, které je napojeno na hardwarovou stanici:
+Proces fiskální registrace v Retail POS se může skládat z jednoho nebo více kroků. Každý krok zahrnuje fiskální registraci konkrétních transakcí nebo události v jednom fiskálním zařízení nebo službě. Následující součásti řešení se účastní fiskální registrace ve fiskálním zařízení nebo službě:
 
-- **Rozšíření Commerce Runtime (CRT)** – Tato součást serializuje data o transakcích/událostech ve formátu, který se také používá pro interakci s fiskálním zařízením, analyzuje odpovědi z fiskálního zařízení a ukládá odpovědi v databázi kanálů. Rozšíření také definuje specifické transakce a události, které musí být registrovány. Tato součást se často označuje jako *poskytovatel fiskálního dokumentu*.
-- **Rozšíření hardwarové stanice** – Tato součást inicializuje komunikaci s fiskálním zařízením, odesílá požadavky a přímé příkazy do fiskálního zařízení na základě dat transakcí/událostí, které jsou extrahovány z fiskálního dokumentu, a přijímá odpovědi z fiskálního zařízení. Tato součást se často označuje jako *fiskální konektor*.
+- **Poskytovatel fiskálního dokumentu** – Tato součást serializuje data o transakcích/událostech ve formátu, který se také používá pro interakci s fiskálním zařízením nebo službou, analyzuje odpovědi z fiskálního zařízení a ukládá odpovědi v databázi kanálů. Rozšíření také definuje specifické transakce a události, které musí být registrovány.
+- **Fiskální konektor** – Tato součást inicializuje komunikaci s fiskálním zařízením nebo službou, odesílá požadavky a přímé příkazy do fiskálního zařízení nebo služby na základě dat transakcí/událostí, které jsou extrahovány z fiskálního dokumentu, a přijímá odpovědi z fiskálního zařízení nebo služby
 
-Ukázka fiskální integrace pro fiskální zařízení obsahuje rozšíření CRT a hardwarové stanice pro poskytovatele fiskálních dokumentů a fiskální konektor. Zahrnuje také následující konfigurace součástí:
+Ukázka fiskální integrace může obsahovat rozšíření Commerce Runtime (CRT), hardwarové stanice pro POS pro poskytovatele fiskálních dokumentů a fiskální konektor. Zahrnuje také následující konfigurace součástí:
 
-- **Konfigurace poskytovatele fiskálního dokumentu** – Tato konfigurace definuje výstupní metodu a formát pro fiskální dokumenty. Obsahuje také mapování dat pro daně a způsoby platby, aby byla data z Retail POS kompatibilní s hodnotami, které jsou předem definovány ve firmwaru fiskálního zařízení.
-- **Konfigurace fiskálního konektoru** – Tato konfigurace definuje fyzickou komunikaci s konkrétním fiskálním zařízením.
+- **Konfigurace poskytovatele fiskálního dokumentu** – Tato konfigurace definuje výstupní metodu a formát pro fiskální dokumenty. Obsahuje také mapování dat pro daně a způsoby platby, aby byla data z Retail POS kompatibilní s hodnotami, které jsou předem definovány ve firmwaru fiskálního zařízení nebo služby.
+- **Konfigurace fiskálního konektoru** – Tato konfigurace definuje fyzickou komunikaci s konkrétním fiskálním zařízením nebo službou.
 
-Proces fiskální registrace pro specifickou registrační pokladnu POS je definován příslušným nastavením ve funkčním profilu POS. Další podrobnosti o tom, jak konfigurovat proces fiskální registrace, odeslat konfigurace poskytovatele fiskálních dokumentů a fiskálních konektorů a změnit jejich parametry naleznete v tématu [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Proces fiskální registrace pro specifickou registrační pokladnu POS je definován příslušným nastavením ve funkčním profilu POS. Další podrobnosti o tom, jak konfigurovat proces fiskální registrace, odeslat konfigurace poskytovatele fiskálních dokumentů a fiskálních konektorů a změnit parametry konfigurace naleznete v tématu [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-Následující příklad ukazuje typický tok provedení fiskální registrace pro fiskální zařízení. Tok začíná událostí v POS (například dokončením prodejní transakce) a implementuje následující pořadí kroků:
+Následující typický fiskální registrační tok začíná událostí v POS (například dokončením prodejní transakce) a implementuje předem definovanou sekvenci kroků, které zahrnují další komponenty Commerce (např. CRT a Hardwarová stanice).
 
-1. POS požaduje fiskální dokument z CRT.
-1. CRT určuje, zda aktuální událost požaduje fiskální registraci.
-1. Na základě nastavení procesu fiskální registrace identifikuje CRT fiskální konektor a příslušného poskytovatele fiskálních dokumentů, které se použijí pro fiskální registraci.
-1. CRT spustí poskytovatele fiskálních dokumentů, který vygeneruje fiskální dokument (například dokument XML), který představuje transakci nebo událost.
-1. POS odešle fiskální dokument, který připravuje CRT, do hardwarové stanice.
-1. Hardwarová stanice spustí fiskální konektor, který zpracuje fiskální dokument a komunikuje ho do fiskálního zařízení nebo služby.
-1. POS analyzuje odpověď z fiskálního zařízení nebo služby a určí, zda byla fiskální registrace úspěšná.
-1. CRT uloží odpověď do databáze kanálů.
+1. POS požaduje fiskální dokument z rámce fiskální integrace (FIF).
+1. FIF určuje, zda aktuální událost požaduje fiskální registraci.
+1. Na základě nastavení procesu fiskální registrace identifikuje FIF fiskální konektor a příslušného poskytovatele fiskálních dokumentů, které se použijí pro fiskální registraci.
+1. FIF spustí poskytovatele fiskálních dokumentů, který vygeneruje fiskální dokument (například dokument XML), který představuje transakci nebo událost.
+1. FIF vrátí vygenerovaný fiskální doklad do POS.
+1. POS požaduje, aby FIF předložila fiskální dokument fiskálnímu zařízení nebo službě.
+1. FIF spustí fiskální konektor, který zpracuje fiskální dokument a odesílá ho do fiskálního zařízení nebo služby.
+1. FIF vrátí fiskální odpověď (tj. odpověď fiskálního zařízení nebo služby) do POS.
+1. POS analyzuje fiskální odpověď a určí, zda byla fiskální registrace úspěšná. Podle potřeby POS požaduje, aby FIF zpracoval všechny chyby, ke kterým došlo. 
+1. POS požaduje, aby FIF zpracoval a uložil fiskální odpověď.
+1. Poskytovatel fiskálních dokumentů zpracovává fiskální odpověď. V rámci tohoto zpracování poskytovatel fiskálních dokumentů analyzuje odpověď a extrahuje z ní rozšířená data.
+1. FIF uloží odpověď a rozšířená data do databáze kanálu.
+1. Podle potřeby vytiskne POS účtenku prostřednictvím běžné tiskárny účtenek, která je připojena k hardwarové stanici. Účtenka může obsahovat požadované údaje z fiskální odpovědi.
+ 
+Následující příklady ukazují toky provedení fiskální registrace pro typická fiskální zařízení nebo služby.
+ 
+### <a name="fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station"></a>Fiskální registrace se provádí prostřednictvím zařízení připojeného ke hardwarové stanici
 
-![Schéma řešení.](media/emea-fiscal-integration-solution.png "Schéma řešení")
+Tato konfigurace se používá, když je k hardwarové stanici připojeno fyzické fiskální zařízení, jako je fiskální tiskárna. Je také použitelná, když komunikace s fiskálním zařízením nebo službou probíhá prostřednictvím softwaru, který je nainstalován na hardwarové stanici. V tomto případě se poskytovatel fiskálních dokumentů nachází na CRT a fiskální konektor je umístěn na hardwarové stanici.
+
+![Fiskální registrace se provádí prostřednictvím zařízení připojeného ke hardwarové stanici.](media/FIF-CRT-HWS.png)
+
+### <a name="fiscal-registration-is-done-via-an-external-service"></a>Fiskální registrace se provádí prostřednictvím externí služby
+
+Tato konfigurace se používá, když se fiskální registrace provádí prostřednictvím externí služby, jako je webová služba provozovaná daňovým úřadem. V tomto případě se poskytovatel fiskálních dokumentů i fiskální konektor nacházejí na CRT.
+
+![Fiskální registrace se provádí prostřednictvím externí služby.](media/FIF-CRT-CRT.png)
+ 
+### <a name="fiscal-registration-is-done-internally-in-the-crt"></a>Fiskální registrace se provádí interně v CRT
+
+Tato konfigurace se používá, když pro fiskální registraci není vyžadováno žádné externí fiskální zařízení nebo služba. Používá se například, když se fiskální registrace provádí prostřednictvím digitálního podepisování prodejních transakcí. V tomto případě se poskytovatel fiskálních dokumentů i fiskální konektor nacházejí na CRT.
+
+![Fiskální registrace se provádí interně v CRT.](media/FIF-CRT-CRT-SGN.png)
+
+### <a name="fiscal-registration-is-done-via-a-device-or-service-in-the-local-network"></a>Fiskální registrace se provádí prostřednictvím zařízení nebo služby v místní síti
+
+Tato konfigurace se používá, když je v místní síti obchodu přítomno fyzické fiskální zařízení nebo fiskální služba a poskytuje aplikační programovací rozhraní (API) HTTPS. V tomto případě se poskytovatel fiskálních dokumentů nachází na CRT a fiskální konektor je umístěn na POS.
+
+![Fiskální registrace se provádí prostřednictvím zařízení nebo služby v místní síti.](media/FIF-CRT-POS.png)
 
 ## <a name="error-handling"></a>Zpracování chyb
 
@@ -74,19 +97,24 @@ Architektura fiskální integrace poskytuje následující možnosti k řešení
 - **Zrušit** – Tato možnost umožňuje operátorům odložit fiskální registraci aktuální transakce nebo události, pokud selže. Po odložení registrace může operátor pokračovat v práci na POS a může dokončit jakoukoli operaci, pro kterou není požadována fiskální registrace. Když nastane událost vyžadující fiskální registraci v POS (například otevření nové transakce), automaticky se zobrazí dialogové okno pro zpracování chyb, které oznamuje operátorovi, že předchozí transakce nebyla správně zaregistrována, a poskytuje možnosti zpracování chyb.
 - **Přeskočit** – Operátoři mohou tuto možnost využít, pokud lze fiskální registraci vynechat za určitých podmínek a lze pokračovat v pravidelných operacích na POS. Tuto možnost lze například použít, pokud lze obchodní transakci, u níž fiskální registrace selhala, zaregistrovat ve zvláštním papírovém deníku.
 - **Označit jako registrované** – Operátoři mohou tuto možnost použít, když byla transakce skutečně zaregistrována ve fiskálním zařízení (například byla vytištěna fiskální příjemka), ale došlo k chybě, když byla fiskální odpověď uložena do databáze kanálů.
+- **Odložit** – Operátoři mohou tuto možnost použít, když transakce nebyla zaregistrována, protože registrační služba nebyla k dispozici. 
 
 > [!NOTE]
-> Možnosti **Přeskočit** a **Označit jako registrované** je třeba aktivovat v procesu fiskální registrace před jejich použití. Kromě toho musí být udělena odpovídající oprávnění operátorům.
+> Možnosti **Přeskočit**, **Označit jako registrované** a **Odložit** je třeba aktivovat v procesu fiskální registrace před jejich použití. Kromě toho musí být udělena odpovídající oprávnění operátorům.
 
-Možnosti **Přeskočit** a **Označit jako registrované** umožňují informačním kódům zaznamenat některé konkrétní informace o selhání, jako je důvod selhání nebo odůvodnění pro přeskočení fiskální registrace nebo označení transakce jako registrované. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Možnosti **Přeskočit**, **Označit jako registrované** a **Odložit** umožňují informačním kódům zaznamenat některé konkrétní informace o selhání, jako je důvod selhání nebo odůvodnění pro přeskočení fiskální registrace nebo označení transakce jako registrované. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Volitelná fiskální registraci
 
 Fiskální registrace může být povinná pro některé operace, ale volitelná pro jiné. Fiskální registrace pravidelných prodejů a vrácení může být například povinná, ale fiskální registrace operací, které se týkají vkladů zákazníků, může být volitelná. V tomto případě by nedokončení fiskální registrace prodeje mělo blokovat další prodej, ale nedokončení fiskální registrace vkladu zákazníka by nemělo blokovat další prodej. Chcete-li rozlišit povinné a volitelné operace, doporučujeme, abyste je zpracovali prostřednictvím různých poskytovatelů dokumentů a abyste nastavili samostatné kroky v procesu fiskální registrace pro tyto poskytovatele. Parametr **Pokračovat při chybě** by měl být povolen pro všechny kroky, které souvisí s volitelnou fiskální registrací. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-### <a name="manually-running-fiscal-registration"></a>Ruční spuštění fiskální registrace
+### <a name="manually-rerun-fiscal-registration"></a>Ruční opětovné spuštění fiskální registrace
 
 Pokud byla fiskální registrace transakce nebo události odložena po selhání (například pokud operátor zvolil **Zrušit** v dialogovém okně zpracování chyb), můžete ručně spustit fiskální registraci vyvoláním příslušné operace. Více informací naleznete v části [Povolit ruční provedení odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="postpone-option"></a>Možnost odložit
+
+Možnost **Odložit** umožňuje pokračovat v procesu fiskální registrace, pokud aktuální krok selže. Lze jej použít, pokud existuje možnost zálohy fiskální registrace.
 
 ### <a name="fiscal-registration-health-check"></a>Kontrola stavu fiskální registrace
 
@@ -115,8 +143,8 @@ Fiskální transakce jsou přeneseny do Headquarters podle *úlohy P*, společn�
 Fiskální transakce ukládá následující podrobnosti:
 
 - Podrobnosti procesu fiskální registrace (proces, skupina konektorů, konektor atd.). Též ukládá sériové číslo fiskálního zařízení do pole **Číslo pokladny**, pokud jsou tyto informace zahrnuty do fiskální odezvy.
-- Stav fiskální registrace: **Dokončeno** pro úspěšnou registraci, **Přeskočeno**, pokud operátor zvolil možnost **Přeskočit** pro nezdařenou registraci, nebo **Označeno jako registrované**, pokud operátor zvolil možnost **Označit jako registrované**.
-- Transakce informačních kódů, které souvisí s vybranou fiskální transakcí. Chcete-li zobrazit transakce informačních kódů, na záložce s náhledem **Fiskální transakce** zvolte fiskální transakci, která má stav **Přeskočeno** nebo **Označen jako registrované**, a poté vyberte **Transakce informačních kódů**.
+- Stav fiskální registrace: **Dokončeno** pro úspěšnou registraci, **Přeskočeno**, pokud operátor zvolil možnost **Přeskočit** pro nezdařenou registraci, nebo **Označeno jako registrované**, pokud operátor zvolil možnost **Označit jako registrované**, nebo **Odložené**, pokud operátor vybral možnost **Odložit**.
+- Transakce informačních kódů, které souvisí s vybranou fiskální transakcí. Chcete-li zobrazit transakce informačních kódů, na záložce s náhledem **Fiskální transakce** zvolte fiskální transakci, která má stav **Přeskočeno**, **Označeno jako registrované** nebo **Odloženo**, a poté vyberte **Transakce informačních kódů**.
 
 Výběrem možnosti **Rozšířená data** můžete také zobrazit některé vlastnosti fiskální transakce. Seznam vlastností, které lze zobrazit, je specifický pro funkci fiskální registrace, která generovala fiskální transakci. Můžete například zobrazit digitální podpis, pořadové číslo, kryptografický otisk certifikátu, identifikaci algoritmu hash a další fiskální transakční vlastnosti pro funkci digitálního podepisování pro Francii.
 
@@ -141,6 +169,7 @@ Následující ukázky fiskální integrace jsou v současné době k dispozici 
 - [Ukázka integrace fiskální služby pro Českou republiku](./emea-cze-fi-sample.md)
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Německo](./emea-deu-fi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Rusko](./rus-fpi-sample.md)
 
 Následující funkce fiskální integrace je také implementována pomocí rámce fiskální integrace, ale je k dispozici ihned a není součástí Commerce SDK:
 

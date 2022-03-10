@@ -1,26 +1,24 @@
 ---
 title: Pracovní postupy schválení deníku zásob
 description: Toto téma popisuje, jak nastavit s používat pracovní postupy schválení deníků pro různé typy transakcí fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011665"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778298"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Pracovní postupy schválení deníku zásob
 
@@ -33,7 +31,7 @@ Toto téma popisuje, jak nastavit a používat pracovní postupy schválení den
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Zapnutí funkce pracovních postupů schválení deníku zásob
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul:** *Řízení zásob a skladu*
 - **Název funkce:** *Pracovní postup schválení deníku zásob*
@@ -57,7 +55,7 @@ Vytvoření pracovních postupů schválení deníku inventáře:
     - **Deník kusovníků zásob**
     - **Deník úprav zásob**
 
-    ![Dialogové okno Vytvořit pracovní postup](media/journal-workflow-create-workflow.png "Dialogové okno Vytvořit pracovní postup")
+    ![Dialogové okno Vytvořit pracovní postup.](media/journal-workflow-create-workflow.png "Dialogové okno Vytvořit pracovní postup")
 
 1. Na vašem počítači se spustí aplikace editoru pracovního postupu. (Můžete být vyzváni, abyste tuto akci schválili.) Slouží k návrhu vašeho pracovního postupu podle potřeby. Podrobnosti o tom, jak používat editor pracovního postupu, viz [Přehled systému pracovního postupu](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Po uložení a zavření aplikace editoru pracovního postupu musíte zvolit, zda tuto verzi pracovního postupu aktivovat nebo ponechat jako neaktivní.
@@ -75,7 +73,7 @@ Chcete-li přiřadit pracovní tok deníku zásob k názvu deníku zásob:
 1. Chcete-li otevřít stránku nastavení, vyberte ze sloupce seznamu název deníku.
 1. Na pevné záložce **Obecné** nastavte možnost **Pracovní postup schválení** na **Ano**. Vyberte **Ano** po zobrazení výzvy ke schválení akce.
 
-    ![Přiřadit pracovní postup k názvu deníku](media/journal-workflow-journal-name.png "Přiřadit pracovní postup k názvu deníku")
+    ![Přiřadit pracovní postup k názvu deníku.](media/journal-workflow-journal-name.png "Přiřadit pracovní postup k názvu deníku")
 
 1. Otevřete rozevírací seznam **Pracovní postup** a vyberte požadovaný pracovní postup. Seznam zobrazuje každý aktivní pracovní postup, který jste vytvořili pomocí aplikace editoru pracovního postupu.
 
@@ -89,7 +87,7 @@ Jakmile přiřadíte název deníku zásob k odpovídajícímu pracovnímu postu
 1. Podle potřeby vyplňte deník.
 1. Když vytvoříte nebo otevřete deník zásob s přidruženým pracovním postupem schvalování, tlačítko **Pracovní postup** bude aktivní v podokně akcí. Až budete připraveni odeslat deník ke schválení, vyberte tlačítko **Pracovní postup** a otevřete rozevírací dialogové okno a poté vyberte **Odeslat**. Žádost o schválení pak směřuje k příslušnému schvalovateli, který bude upozorněn pomocí metody oznámení nakonfigurovaného pro pracovní postup.
 
-    ![Předložení deníku ke schválení](media/journal-workflow-inventory-journal.png "Předložení deníku ke schválení")
+    ![Předložení deníku ke schválení.](media/journal-workflow-inventory-journal.png "Předložení deníku ke schválení")
 
 Chcete-li vyvolat žádost o schválení, otevřete příslušný deník, vyberte **Pracovní postup** a poté vyberte **Odvolání**. Tím se resetuje pracovní postup.
 
@@ -118,3 +116,6 @@ Chcete-li zkontrolovat historii pracovního postupu pro deník:
 1. V navigačním podokně rozbalte **Řízení zásob \> Zápisy v deníku \> Položky** a poté vyberte typ deníku zásob.
 1. Otevření relevantní deník.
 1. Vyberte tlačítko **Pracovní postup** v podokně akcí a otevřete rozevírací dialogové okno. Vyberte **Historii pracovního postupu**. Další informace viz [Historie pracovního postupu](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

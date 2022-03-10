@@ -2,8 +2,7 @@
 title: Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 description: Toto téma popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd.
 author: NickSelin
-manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 11/02/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,149 +12,180 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11b4d185703731d8491ad10bdeedea40ce811f5d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
+ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564087"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7751699"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 
 [!include [banner](../../includes/banner.md)]
 
-Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER. Argumenty pro volání třídy hodnoty lze definovat dynamicky při spuštění: například na základě informací v dokumentu určeném k ověření jejich správnosti. V této příručce vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví. 
+Toto téma popisuje, jak opakovaně použít existující aplikační logiku v konfiguracích [elektronického výkaznictví (ER)](../general-electronic-reporting.md) voláním požadovaných metod aplikačních tříd ve výrazech ER. Hodnoty argumentů pro volání tříd lze dynamicky definovat za běhu. Hodnoty mohou být například založeny na informacích v dokumentu analýzy, aby byla zajištěna jeho správnost.
 
-Tyto kroky lze dokončit za použití libovolné datové sady. Je nutné stáhnout a lokálně uložit následující soubor: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Jako příklad v tomto tématu navrhnete proces, který analyzuje příchozí bankovní výpisy pro aktualizaci dat aplikace. Příchozí bankovní výpisy obdržíte jako textové soubory (.txt), které obsahují kódy mezinárodních čísel bankovních účtů (IBAN). V rámci procesu importu bankovních výpisů je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici.
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
+## <a name="prerequisites"></a>Předpoklady
 
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Ověřte, zda poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.   
-    * Navrhujete proces pro analýzu příchozích bankovních výpisů pro aktualizaci dat aplikace. Obdržíte příchozí bankovní výpisy jako TXT soubory, které obsahují kód IBAN kódy. V rámci procesu importu bankovního výpisu je nutné ověřit správnost těchto kódů IBAN na základě logiky, která je již k dispozici.   
+Tento postup je navržen pro uživatele s přiřazenou rolí **správce systému** nebo **vývojáře elektronického vykazování**.
+
+Tyto postupy lze dokončit za použití libovolné datové sady.
+
+Pro jejich dokončení je nutné stáhnout a uložit následující soubor: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
+
+V tomto tématu vytvoříte požadované konfigurace ER pro vzorovou společnost Litware, Inc. Před provedením procedury v tomto tématu je proto třeba provést následující kroky.
+
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+2. Na stránce **Konfigurace lokalizace** ověřte, že je dostupný poskytovatel konfigurace ukázkové společnosti **Litware, Inc.** a že je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivní](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="import-a-new-er-model-configuration"></a>Import nové konfigurace ER modelu
-1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte dlaždici poskytovatele společnosti Microsoft.  
-2. Klikněte na možnost Úložiště.
-3. Klepněte na tlačítko Zobrazit filtry.
-4. Přidejte pole filtru ‘Type name’. Do pole Název typu zadejte hodnotu filtru “zdroje”, vyberte operaci filtru "obsahuje" a klikněte na Použít.
-5. Klikněte na možnost Otevřít.
-6. Ve stromovém zobrazení vyberte „Model platby“.
-    * Pokud není aktivní tlačítko Import na pevné záložce Verze, již jste importovali verzi 1 konfigurace ER 'Platební model'. Zbývající kroky tohoto dílčího úkolu můžete vynechat.   
-7. Klepněte na tlačítko Importovat.
-8. Klepněte na tlačítko Ano.
-9. Zavřete stránku.
-10. Zavřete stránku.
+
+1. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** vyberte dlaždici poskytovatele konfigurace **Microsoft**.
+2. Vyberte **Úložiště**.
+3. Na stránce **Lokalizační úložiště** vyberte **Zobrazit filtry**.
+4. Chcete-li vybrat záznam globálního úložiště, přidejte pole filtru **Název**.
+5. Do pole **Název** zadejte **Globální**. Poté vyberte operátor filtru **contains**.
+6. Zvolte **Použít**.
+7. Vyberte **[Otevřít](../er-download-configurations-global-repo.md#open-configurations-repository)** a zkontrolujte seznam konfigurací ER ve vybraném úložišti.
+8. Na stránce **Úložiště konfigurace** ve stromu konfigurací vyberte **Model platby**.
+9. Na záložce s náhledem **Verze**, pokud je k dispozici tlačítko **Import**, vyberte jej a poté zvolte **Ano**.
+
+    Pokud není tlačítko **Import** kdispozici, již jste importovali vybranou verzi konfigurace ER **Platební model**.
+
+10. Zavřete stránku **Úložiště konfigurace** a poté zavřete stránku **Lokalizační úložiště**.
 
 ## <a name="add-a-new-er-format-configuration"></a>Přidání nové konfigurace formátu ER
-1. Klikněte na Konfigurace výkaznictví.
-    * Přidejte nový formát ER pro účely analýzy příchozích bankovních výpisů ve formátu TXT.  
-2. Ve stromovém zobrazení vyberte „Model platby“.
-3. Kliknutím na možnost Vytvořit konfiguraci otevřete nabídku dialogového okna.
-4. V poli Nový zadejte "Formát založený na datovém modelu PaymentModel".
-5. Do pole Název zadejte "Formát importu bankovního výpisu (ukázka)".
-    * Formát importu bankovního výpisu (ukázka)  
-6. Vyberte možnost Ano v poli Podporuje import dat.
-7. Klepněte na možnost Vytvořit konfiguraci.
 
-## <a name="design-the-er-format-configuration---format"></a>Návrh konfigurace formátu ER - formát
-1. Klikněte na možnost Návrhář.
-    * Navržený formát představuje očekávanou strukturu externího souboru ve formátu TXT.  
-2. Klepnutím na možnost Přidat kořen otevřete nabídku dialogového okna.
-3. Ve stromovém zobrazení vyberte 'Text\Pořadí'.
-4. Do pole Název zadejte Kořen.
-    * Kořen  
-5. V poli speciální znaky vyberte "Nový řádek – Windows (CR LF)".
-    * V poli ‘Speciální znaky’ je vybraná možnost ‘Nový řádek - Windows (CR LF)’. Na základě tohoto nastavení je každý řádek analýzy souboru považována za samostatný záznam.  
-6. Klikněte na tlačítko OK.
-7. Klepnutím na možnost Přidat otevřete dialogové okno.
-8. Ve stromovém zobrazení vyberte 'Text\Pořadí'.
-9. Do pole název zadejte text Řádky.
-    * Řádky  
-10. V poli Násobnost vyberte Jeden-n.
-    * V poli "Násobnost" je vybraná možnost 'Jeden k mnoha'. Na základě tohoto nastavení se očekává, že v souboru analýzy bude prezentován alespoň jeden řádek.  
-11. Klikněte na tlačítko OK.
-12. Ve stromu vyberte možnost 'Root\Rows'.
-13. Klikněte na položku Přidat pořadí.
-14. Do pole Název zadejte text Pole.
-    * Pole  
-15. V poli Násobnost vyberte Přesně jeden.
-16. Klikněte na tlačítko OK.
-17. Ve stromu vyberte možnost 'Root\Rows\Fields'.
-18. Klepnutím na možnost Přidat otevřete dialogové okno.
-19. Ve stromovém zobrazení vyberte „Text\Řetězec“.
-20. Do pole Název zadejte IBAN.
-    * KÓD IBAN  
-21. Klikněte na tlačítko OK.
-    * Konfigurace je taková, že každý řádek v souboru analýzy obsahuje pouze kód IBAN.  
-22. Klikněte na položku Uložit.
+Přidejte nový formát ER pro účely analýzy příchozích bankovních výpisů ve formátu TXT.
 
-## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>Návrh konfigurace formátu ER – mapování na datový model
-1. Klikněte na Mapovat formát na model.
-2. Klikněte na položku Nová.
-3. V poli Definice zadejte hodnotu BankToCustomerDebitCreditNotificationInitiation.
-    * BankToCustomerDebitCreditNotificationInitiation  
-4. ResolveChanges Definice.
-5. Do pole Název zadejte Mapování na model dat.
-    * Mapování na datový model  
-6. Klikněte na položku Uložit.
-7. Klikněte na možnost Návrhář.
-8. Ve stromu vyberte'Dynamics 365 for Operations\Class'.
-9. Klikněte na možnost Přidat kořen.
-    * Přidejte nový zdroj dat pro volání existující aplikační logiky pro ověření kódů IBAN.  
-10. Do pole Název zadejte 'check_codes'.
-    * check_codes  
-11. Do pole Třída napište 'ISO7064'.
-    * ISO7064  
-12. Klikněte na tlačítko OK.
-13. Ve stromové struktuře rozbalte Formát.
-14. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)'.
-15. Ve stromovém zobrazení vyberte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)'.
-16. Klikněte na možnost Vazba.
-17. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)'.
-18. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)'.
-19. Ve stromovém zobrazení vyberte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)'.
-20. Ve stromovém zobrazení rozbalte 'Payments = format.Root.Rows'.
-21. Ve stromovém zobrazení rozbalte 'Payments = format.Root.Rows\Creditor Account(CreditorAccount)'.
-22. Ve stromovém zobrazení rozbalte 'Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification'.
-23. Ve stromovém zobrazení vyberte 'Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification\IBAN'.
-24. Klikněte na možnost Vazba.
-25. Klikněte na kartu Ověření.
-26. Klikněte na položku Nová.
-    * Přidejte nové pravidlo ověření pro chybovou zprávu u všech řádků v souboru analýzy, který obsahuje neplatný kód IBAN.  
-27. Klikněte na Upravit podmínku.
-28. Ve stromovém zobrazení rozbalte 'check_codes'.
-29. Ve stromovém zobrazení vyberte 'check_codes\verifyMOD1271_36'.
-30. Klikněte na možnost Přidat datový zdroj.
-31. V poli Vzorec zadejte 'check_codes.verifyMOD1271_36('.
-    * check_codes.verifyMOD1271_36(  
-32. Ve stromové struktuře rozbalte Formát.
-33. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)'.
-34. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)'.
-35. Ve stromovém zobrazení rozbalte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)'.
-36. Ve stromovém zobrazení vyberte 'format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)'.
-37. Klikněte na možnost Přidat datový zdroj.
-38. V poli Vzorec zadejte 'check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)'.
-    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
-39. Klikněte na položku Uložit.
-40. Zavřete stránku.
-    * Stav ověření je nakonfigurován tak, že vrátí hodnotu FALSE u každého neplatného kódu IBAN voláním stávající metody ‘verifyMOD1271_36’ aplikační třídy ‘ISO7064’. Všimněte si, že hodnota kódu IBAN je definována dynamicky při spuštění jako argumentem metody volání založený na obsahu souboru TXT analýzy.   
-41. Klikněte na Upravit zprávu.
-42. V poli Vzorec zadejte 'CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)'.
-    * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  
-43. Klikněte na položku Uložit.
-44. Zavřete stránku.
-45. Klikněte na položku Uložit.
-46. Zavřete stránku.
+1. Na stránce **Konfigurace lokalizace** vyberte dlaždici **Konfigurace výkaznictví**.
+2. Na stránce **Konfigurace** ve stromu konfigurací v levém podokně vyberte **Model platby**.
+3. Vyberte **Vytvořit konfiguraci**. 
+4. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. V poli **Nový** zadejte **Formát založený na datovém modelu PaymentModel**.
+    2. Do pole **Název** zadejte **Formát importu bankovního výpisu (ukázka)**.
+    3. Vyberte **Ano** v poli **Podporuje import dat**.
+    4. Dokončete vytváření konfigurace zvolením **Vytvořit konfiguraci**.
+
+## <a name="design-the-er-format-configuration--format"></a>Návrh konfigurace formátu ER - formát
+
+Navrhněte formát ER, který představuje očekávanou strukturu externího souboru ve formátu TXT.
+
+1. Pro konfiguraci formátu **Formát importu bankovního výpisu (ukázka)**, kterou jste přidali, vyberte **Návrhář**.
+2. Na stránce **Návrhář formátu** ve stromu struktury formátu v levém podokně vyberte **Přidat kořen**.
+3. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. Ve stromu vyberte **Text\\Pořadí**, chcete-li přidat komponentu formátu **Sekvence**.
+    2. Do pole **Název** zadejte řetězec **Kořen**.
+    3. V poli **speciální znaky** vyberte **Nový řádek – Windows (CR LF)**. Na základě tohoto nastavení bude každý řádek souboru analýzy považován za samostatný záznam.
+    4. Vyberte **OK**.
+
+4. Vyberte **přidat**.
+5. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. Ve stromovém zobrazení vyberte **Text\\Pořadí**.
+    2. Do pole **Název** zadejte **Řádek**.
+    3. V poli **Násobnost** vyberte **Jeden-n**. Na základě tohoto nastavení se očekává, že v souboru analýzy bude přítomen alespoň jeden řádek.
+    4. Vyberte **OK**.
+
+6. Ve stromu vyberte **Kořen\\Řádky** a poté vyberte **Přidat pořadí**.
+7. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. Do pole **Název** zadejte **Pole**.
+    2. V poli **Násobnost** vyberte **Přesně jeden**.
+    3. Vyberte **OK**.
+
+8. Ve stromu vyberte **Kořen\\Řádky\\Pole** a poté vyberte **Přidat**.
+9. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. Ve stromovém zobrazení vyberte **Text\\String**.
+    2. Do pole **Název** zadejte **IBAN**.
+    3.. Vyberte **OK**.
+
+10. Zvolte možnost **Uložit**.
+
+Konfigurace je nyní konfigurována tak, že každý řádek v souboru analýzy obsahuje pouze kód IBAN.
+
+![Konfigurace formátu Formát importu bankovního výpisu (ukázka) na stránce návrhaře Formát.](../media/design-expressions-app-class-er-01.png)
+
+## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>Návrh konfigurace formátu ER – mapování na datový model
+
+Navrhněte mapování formátu ER, které využívá informace ze souboru analýzy k vyplnění datového modelu.
+
+1. Na stránce **Návrhář formátu** v podokně Akce vyberte možnost **Mapovat formát na model**.
+2. Na stránce **Mapování modelu na zdroj dat** v podokně Akce vyberte možnost **Nový**.
+3. V poli **Definice** vyberte **BankToCustomerDebitCreditNotificationInitiation**.
+4. V poli **Název** zadejte **Mapovat na datový model**.
+5. Zvolte možnost **Uložit**.
+6. Vyberte možnost **Návrhář**.
+7. Na stránce **Návrhář mapování modelu** ve stromu **Typy datových zdrojů** zvolte položku **Dynamics 365 for Operations\\Třída**.
+8. V sekci **Zdroje dat** vyberte **Přidat kořen**, chcete-li přidat zdroj dat, který volá existující aplikační logiku pro ověření kódů IBAN.
+9. V rozevíracím dialogovém okně proveďte následující kroky:
+
+    1. Do pole **Název** zadejte **Kontrolovat\_kódy**.
+    2. V poli **Třída** zadejte nebo vyberte **ISO7064**.
+    3. Vyberte **OK**.
+
+10. Ve stromě **Typy zdrojů dat** postupujte takto:
+
+    1. Rozbalte zdroj dat **formát**.
+    2. Rozbalte **format\\Root: Sequence(Root)**.
+    3. Rozbalte **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)**.
+    4. Rozbalte **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)\\Fields: Sequence 1..1 (Fields)**.
+
+11. Ve stromě **Datový model** postupujte takto:
+
+    1. Rozbalte pole **Platby** datového modelu.
+    2. Rozbalte **Payments\\Creditor Account(CreditorAccount)**.
+    3. Robalte **Payments\\Creditor Account(CreditorAccount)\\Identification**.
+    4. Rozbralte **Payments\\Creditor Account(CreditorAccount)\\Identification\\IBAN**.
+
+12. Chcete-li svázat komponenty nakonfigurovaného formátu s poli datového modelu, postupujte takto:
+
+    1. Vyberte **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)**.
+    2. Vyberte **Platby**.
+    3. Vyberte možnost **vazba**. Na základě tohoto nastavení bude každý řádek souboru analýzy považován za jednu platbu.
+    4. Vyberte **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)\\Fields: Sequence 1..1 (Fields)\\IBAN: String(IBAN)**.
+    5. Vyberte **Payments\\Creditor Account(CreditorAccount)\\Identification\\IBAN**.
+    6. Vyberte možnost **vazba**. Na základě tohoto nastavení pole **IBAN** datového modelu bude vyplněno hodnotou ze souboru analýzy.
+
+    ![Vazba komponent formátu na pole datového modelu na stránce Návrhář mapování modelu.](../media/design-expressions-app-class-er-02.png)
+
+13. Na kartě **Validace** podle následujících kroků přidejte pravidlo [validace](../general-electronic-reporting-formula-designer.md#Validation), které zobrazuje chybovou zprávu pro libovolný řádek v souboru analýzy, který obsahuje neplatný kód IBAN:
+
+    1. Vyberte **Nový** a poté vyberte **Upravit podmínku**.
+    2. Na stránce **Návrhář vzorce** ve stromu **Zdroj dat** rozbalte **Check\_codes**, který představuje aplikační třídu **ISO7064** pro zobrazení dostupných metod této třídy.
+    3. Vyberte **Check\_codes\\verifyMOD1271\_36**.
+    4. Vyberte **Přidat zdroj dat**.
+    5. V poli **Vzorec** zadejte následující [výraz](../general-electronic-reporting-formula-designer.md#Binding): **Check\_codes.verifyMOD1271\_36(format.Root.Rows.Fields.IBAN)**.
+    6. Zvolte **Uložit** a pak zavřete stránku.
+    7. Vyberte možnost **Upravit zprávu**.
+    8. Na stránce **Návrhář vzorců** do pole **Vzorec** zadejte **CONCATENATE("Byl nalezen neplatný kód IBAN:&nbsp;", format.Root.Rows.Fields.IBAN)**.
+    9. Zvolte **Uložit** a pak zavřete stránku.
+
+    Na základě těchto nastavení stav ověření vrátí hodnotu *[FALSE](../er-formula-supported-data-types-primitive.md#boolean)* u každého neplatného kódu IBAN voláním stávající metody **verifyMOD1271\_36** aplikační třídy **ISO7064**. Všimněte si, že hodnota kódu IBAN je definována dynamicky při spuštění jako argumentem metody volání založený na obsahu textového souboru analýzy.
+
+    ![Pravidlo ověření na stránce návrháře mapování modelů.](../media/design-expressions-app-class-er-03.png)
+
+14. Zvolte možnost **Uložit**.
+15. Zavřete stránku **Návrhář mapování modelů** a poté zavřete stránku **Mapování modelu na zdroj dat**.
 
 ## <a name="run-the-format-mapping"></a>Spuštění mapování formátu
-Pro účely testování proveďte mapování formátu pomocí souboru SampleIncomingMessage.txt, který jste stáhli. Generovaný výstup zahrnuje data, která budou importována z vybraného souboru TXT a načtena do vlastního datového modelu při reálném importu.   
-1. Klikněte na položku Spustit.
-    * Klikněte na tlačítko Procházet a vyhledejte soubor SampleIncomingMessage.txt, který jste předtím stáhli.  
-2. Klikněte na tlačítko OK.
-    * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány pouze řádky 3 importovaného souboru TXT. Kód IBAN na řádku 4, který není platný, byl vynechán a v informačním protokolu je uvedena chybová zpráva.  
 
+Pro účely testování spusťte mapování formátu pomocí souboru SampleIncomingMessage.txt, který jste stáhli dříve. Generovaný výstup zahrnuje data, která budou importována z vybraného textového souboru a načtena do vlastního datového modelu při reálném importu.
 
+1. Na stránce **Mapování modelu k datovým zdrojům** vyberte **Spustit**.
+2. Na stránce **Parametry elektronického výkaznictví** vyberte **Procházet**, přejděte na soubor **SampleIncomingMessage.txt**, který jste stáhli, a vyberte jej.
+3. Vyberte **OK**.
+4. Všimněte si, že stránka **Mapování modelu na zdroj dat** zobrazuje chybovou zprávu o neplatném kódu IBAN.
+
+    ![Výsledek spuštění mapování modelu na stránce Mapování modelu na zdroj dat.](../media/design-expressions-app-class-er-04.png)
+
+5. Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že pouze tři řádky importovaného textového soboru byly zpracovány bez chyb. IBAN kód na řádku 4 není platný a byl přeskočen.
+
+    ![výstup XML.](../media/design-expressions-app-class-er-05.png)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

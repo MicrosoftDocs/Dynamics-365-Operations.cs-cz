@@ -1,7 +1,7 @@
 ---
 title: Vytvoření kanbanového pravidla události řádku kusovníku
 description: Tato úloha je zaměřena na nastavení potřebné k vytvoření kanbanového pravidla události s cílem zajistit zásobování pro řádky výrobního kusovníku v kombinovaném provozním prostředí štíhlé a klasické výroby.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 27d415e146f33224bcbbfb73498040d584e07f10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 14cef6279b756ff71872747dfb1ca9e5c8cd8fcc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829203"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575044"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Vytvoření kanbanového pravidla události řádku kusovníku
 

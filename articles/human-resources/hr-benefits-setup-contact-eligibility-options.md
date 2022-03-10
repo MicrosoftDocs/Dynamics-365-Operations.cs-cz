@@ -1,35 +1,35 @@
 ---
 title: Konfigurace možností způsobilosti osobních kontaktů
-description: Nakonfigurujte možnosti způsobilosti osobních kontaktů v Microsoft Dynamics 365 Human Resources. Osobními kontakty mohou být osoby, které jsou příjemci nebo závislé osoby.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+description: Toto téma vysvětluje, jak konfigurovat možnosti způsobilosti osobních kontaktů v Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f300ac917ac21db9fffbffcc6eb8589357c0a3e
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: ad9dc9d12bcc419c3925b0f78566d9f3eb0a1e35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466199"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070343"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurace možností způsobilosti osobních kontaktů
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek vysvětluje, jak konfigurovat typy osobních kontaktů, které mají být použity ve výhodách v aplikaci Microsoft Dynamics 365 Human Resources. Osobními kontakty mohou být osoby, které jsou příjemci nebo závislé osoby. 
+Ttoto téma vysvětluje, jak konfigurovat typy osobních kontaktů, které mají být použity ve výhodách v aplikaci Microsoft Dynamics 365 Human Resources. Osobní kontakty jsou jednotlivci, na které se budou vztahovat vaše plány (závislé osoby) nebo kteří budou mít prospěch z vašich plánů (příjemci). Závislými osobami jsou obvykle manželé nebo děti. Příjemci mohou být manželé, děti, svěřenské fondy nebo rodiče.
 
 1. V pracovním prostoru **Správa výhod** vyberte v části **Nastavení** možnost **Možnosti nároků na osobní kontakty**.
 

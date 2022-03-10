@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ff80b2f3e23f46467b8a2fe7a2abd805e5e3a20
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f51c90f72120d236ae9acf3fbcb8ac98fdc8cdf3d3bd032b3a3a3d317483b070
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721480"
 ---
 # <a name="maintenance-request-types"></a>Typy požadavků na údržbu
 
@@ -41,7 +41,7 @@ Typ požadavku údržby definuje příslušnost ke skupině stavů životního c
 
 Následující ilustrace znázorňuje příklad stránky **Typy požadavků na údržbu**.
 
-![Stránka Typy požadavků na údržbu](media/07-setup-for-requests.png)
+![Stránka Typy požadavků na údržbu.](media/07-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

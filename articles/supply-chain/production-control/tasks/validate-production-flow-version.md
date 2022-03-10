@@ -1,27 +1,25 @@
 ---
 title: Ověření výrobního toku a verze
 description: Tato procedura popisuje postup při vytvoření nového výrobního toku a první verze pro lean manufacturing.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3cc8465fb56239f91982db15601cf87e3c00d3fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6d87aa427c2bc3868e255c97ea11fd4e79456eef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980949"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573578"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Ověření výrobního toku a verze
 
@@ -63,3 +61,6 @@ Tato procedura popisuje postup při vytvoření nového výrobního toku a prvn�
     * Období skutečného času cyklu je počet dnů, jejichž úlohy jsou zpětně seskupeny od aktuální minuty pro výpočet skutečného času cyklu. Hodnota může být změněna kdykoli a je použita pouze pro výpočet skutečného času cyklu.  
 13. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

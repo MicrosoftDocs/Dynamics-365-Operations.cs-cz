@@ -1,12 +1,10 @@
 ---
 title: Správa skladových zásob
 description: Toto téma popisuje typy dokumentů, které můžete použít ke správě zásob.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 43625d17e0e2827396edb69a1d1d73a8472294ea
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a4a8f517ebb6fd4ce291b5d28ae22db62a832251
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252527"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779351"
 ---
 # <a name="commerce-inventory-management"></a>Správa zásob Commerce
 
@@ -41,11 +39,11 @@ Aplikace Commerce, které jsou spuštěny na CSU, v současné době nepodporuje
 
 - Aplikace Pokladní místo (POS) může nabídnout omezenou podporu pro následující dimenze. POS může automaticky vložit některé z těchto dimenzí ve skladových transakcích na základě konfigurace nastavení skladu nebo obchodu. POS však nebude plně podporovat dimenze způsobem, kterým jsou podporovány v případě ručního zadání prodejní transakce v Comerce Headquarters. 
 
-- **Umístění skladu** - Když používají nové POS operace [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) a [Odchozí operace ](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), uživatelé si mohou vybrat umístění inventáře skladu, ze kterého budou přijímat položky nebo odesílat položky odchozích objednávek. Pokud používají zastaralé operace **Vyzvednutí a příjem** pro příjem a odesílání odchozích převodů, je k dispozici omezená podpora správy polohy. Tato podpora je k dispozici pouze pokud **Použít procesy řízení skladu** byla pro položku a sklad obchodu zapnuta možnost. Místo inventáře nelze v současné době použít s operacemi **Počet na skladě** nebo **Vyhledávání zásob**.
+- **Umístění skladu** - Když používají nové POS operace [Příchozí operace](./pos-inbound-inventory-operation.md) a [Odchozí operace ](./pos-outbound-inventory-operation.md), uživatelé si mohou vybrat umístění inventáře skladu, ze kterého budou přijímat položky nebo odesílat položky odchozích objednávek. Pokud používají zastaralé operace **Vyzvednutí a příjem** pro příjem a odesílání odchozích převodů, je k dispozici omezená podpora správy polohy. Tato podpora je k dispozici pouze pokud **Použít procesy řízení skladu** byla pro položku a sklad obchodu zapnuta možnost. Místo inventáře nelze v současné době použít s operacemi **Počet na skladě** nebo **Vyhledávání zásob**.
 
-- **Registrační značka** - Registrační značky platí pouze v případě, když byla povolena možnost **Použít procesy řízení skladu** pro danou položku a sklad obchodu. V POS, pokud je inventář přijat do skladu pomocí operace **Příchozí operace** nebo **Výdej a příjem**, kde byl zapnut proces správy skladu, a pokud je místo, které bylo vybráno pro příjem položky, spojeno s profilem místa, který vyžaduje kontrolu poznávací značky, aplikace POS systematicky aplikuje poznávací značku na řádek příjmu. Uživatelé POS nemohou tato data poznávací značky změnit ani spravovat. Je-li vyžadována úplná správa registračních značek, doporučujeme, aby obchod použil [skladovací aplikaci](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) klienta účetního systému ke správě příjmu těchto položek.
+- **Registrační značka** - Registrační značky platí pouze v případě, když byla povolena možnost **Použít procesy řízení skladu** pro danou položku a sklad obchodu. V POS, pokud je inventář přijat do skladu pomocí operace **Příchozí operace** nebo **Výdej a příjem**, kde byl zapnut proces správy skladu, a pokud je místo, které bylo vybráno pro příjem položky, spojeno s profilem místa, který vyžaduje kontrolu poznávací značky, aplikace POS systematicky aplikuje poznávací značku na řádek příjmu. Uživatelé POS nemohou tato data poznávací značky změnit ani spravovat. Je-li vyžadována úplná správa registračních značek, doporučujeme, aby obchod použil [skladovací aplikaci](../supply-chain/warehousing/install-configure-warehousing-app.md) klienta účetního systému ke správě příjmu těchto položek.
 
-- **Sériové číslo** – Aplikace POS má omezenou podporu pro jednotlivá sériová čísla, která mají být registrována na řádku prodejní transakce pro objednávky vytvořené v POS a obsahují serializované položky. Toto sériové číslo není ověřováno proti registrovaným sériovým číslům, která jsou již v zásobách. Je-li prodejní objednávka vytvořena v kanálu kontaktního střediska nebo splněna prostřednictvím podnikových zdrojů plánování (ERP) a více sériových čísel je registrováno v jednom řádku prodeje v průběhu procesu plnění v ERP, tato sériová čísla nebude možné použít nebo ověřit, pokud je pro tuto objednávku zpracováváno vrácení v POS. Když je inventář přijat pomocí operace **Příchozí operace**, uživatelé mohou [zaregistrovat nebo potvrdit přijatá sériová čísla](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Sériové číslo** – Aplikace POS má omezenou podporu pro jednotlivá sériová čísla, která mají být registrována na řádku prodejní transakce pro objednávky vytvořené v POS a obsahují serializované položky. Toto sériové číslo není ověřováno proti registrovaným sériovým číslům, která jsou již v zásobách. Je-li prodejní objednávka vytvořena v kanálu kontaktního střediska nebo splněna prostřednictvím podnikových zdrojů plánování (ERP) a více sériových čísel je registrováno v jednom řádku prodeje v průběhu procesu plnění v ERP, tato sériová čísla nebude možné použít nebo ověřit, pokud je pro tuto objednávku zpracováváno vrácení v POS. Když je inventář přijat pomocí operace **Příchozí operace**, uživatelé mohou [zaregistrovat nebo potvrdit přijatá sériová čísla](./pos-serialized-items.md).
 
 - **ID šarže** - Aplikace POS poskytuje omezenou podporu během odesílání výpisů, pokud se prodává položka řízená dávkou, ale uživatelé POS nejsou schopni definovat ID dávky, které bylo prodáno nebo vybráno při použití aplikace POS.
 
@@ -58,11 +56,11 @@ Aplikace Commerce, které jsou spuštěny na CSU, v současné době nepodporuje
 
 ## <a name="purchase-orders"></a>Nákupní objednávky
 
-Objednávky jsou vytvářeny v commerce Headquarters. Pokud je sklad zahrnut v záhlaví nákupní objednávky nebo v řádku nákupní objednávky, objednávku lze přijmout v obchodě pomocí operace [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) v POS. 
+Objednávky jsou vytvářeny v commerce Headquarters. Pokud je sklad zahrnut v záhlaví nákupní objednávky nebo v řádku nákupní objednávky, objednávku lze přijmout v obchodě pomocí operace [Příchozí operace](./pos-inbound-inventory-operation.md) v POS. 
 
 ## <a name="transfer-orders"></a>Převodní příkazy
 
-Převodní příkazy lze vytvořit v Commerce Headquarters nebo prostřednictvím operací [Příchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) nebo [Odchozí operace](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) v POS. Použijte **Příchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán do obchodu z jiného skladu nebo umístění obchodu. Použijte **Odchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán z obchodu do jiného skladu nebo umístění obchodu. Po vytvoření příkazu k převodu do obchodu může tento obchod spravovat příjem inventáře pro příkaz k převodu prostřednictvím operace **Příchozí operace** v POS. Pokud je v obchodě dodávka zásob na jiné místo, operace **Odchozí operace** v POS se používá ke správě procesu odeslání tohoto obchodu.
+Převodní příkazy lze vytvořit v Commerce Headquarters nebo prostřednictvím operací [Příchozí operace](./pos-inbound-inventory-operation.md) nebo [Odchozí operace](./pos-outbound-inventory-operation.md) v POS. Použijte **Příchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán do obchodu z jiného skladu nebo umístění obchodu. Použijte **Odchozí operace** operaci POS k vytvoření požadavku na převod, aby byl inventář odeslán z obchodu do jiného skladu nebo umístění obchodu. Po vytvoření příkazu k převodu do obchodu může tento obchod spravovat příjem inventáře pro příkaz k převodu prostřednictvím operace **Příchozí operace** v POS. Pokud je v obchodě dodávka zásob na jiné místo, operace **Odchozí operace** v POS se používá ke správě procesu odeslání tohoto obchodu.
 
 ## <a name="stock-counts"></a>Počty na skladě
 
@@ -70,7 +68,7 @@ Inventury mohou být plánované nebo neplánované. Plánované počty zásob s
 
 ## <a name="inventory-lookup"></a>Vyhledávání zásob
 
-Na stránce **Vyhledávání zásob** lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Vyberte obchod, pro který chcete zobrazit množství dostupném pro slíbení, a pak vyberte **Zobrazit dostupnost obchodu**. Informace o dostupných konfiguračních možnostech naleznete v části [Výpočet dostupnosti zásob pro maloobchodní kanály](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Na stránce **Vyhledávání zásob** lze zobrazit aktuální množství produktu na skladě pro více obchodů a skladů. Kromě aktuálního množství na skladě je možné zobrazit budoucí množství, které lze slíbit (ATP) pro každý jednotlivý obchod. Vyberte obchod, pro který chcete zobrazit množství dostupném pro slíbení, a pak vyberte **Zobrazit dostupnost obchodu**. Informace o dostupných konfiguračních možnostech naleznete v části [Výpočet dostupnosti zásob pro maloobchodní kanály](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

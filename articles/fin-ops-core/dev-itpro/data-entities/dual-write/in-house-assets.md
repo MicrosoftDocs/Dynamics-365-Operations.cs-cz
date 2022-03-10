@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 9ba92b9bf0e35aa812fc7077d998c8779ebe622e
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542336"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781409"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interní majetek pro údržbu
 

@@ -2,11 +2,9 @@
 title: Automatické vyrovnání a stanovení priorit
 description: Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 043f403c22ae3334e28dedda3b65136499822d9e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ba8a2f3b6a731e3371ca5245d5a9177b4cd0c226768c39c0cf7f6cb27526058
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724176"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priorit
 
@@ -82,3 +80,6 @@ Pokud nejsou uvedeny žádné uživatelem definované priority vyrovnání, tran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

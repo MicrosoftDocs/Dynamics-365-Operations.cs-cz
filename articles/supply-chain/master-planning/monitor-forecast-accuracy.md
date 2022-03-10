@@ -1,12 +1,10 @@
 ---
 title: Monitorování přesnosti prognózy
 description: Toto téma popisuje typy přesnosti prognózy, které aplikace Dynamics 365 Supply Chain Management vypočítává, a popisuje způsob, jakým lze hodnoty přesnosti zobrazit.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastDetails
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a21e9d6199229438b73bfdf8307030eed60c21bb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4246a277aa5d88193c18336cb1de69916ec2a3c2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977931"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565776"
 ---
 # <a name="monitor-forecast-accuracy"></a>Monitorování přesnosti prognózy
 
@@ -40,8 +38,7 @@ Aplikace Supply Chain Management provádí výpočet následujících typů pře
 > Pokud používáte strojové učení Microsoft Azure prognózy poptávky, přesnost výpočtu interního modelu vychází ze sady testovaných dat. Pokud chcete určit velikost sady testovaných dat, nastavte parametr **TEST\_SET\_SIZE\_PERCENT** na stránce **Parametry tvorby prognóz poptávky**. Pokud je nastavena hodnota na **20**, posledních 20 procent historických dat se použije k výpočtu přesnosti interního modelu.
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Autorizace upravené prognózy](authorize-adjusted-forecast.md)
 
@@ -49,3 +46,6 @@ Aplikace Supply Chain Management provádí výpočet následujících typů pře
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,35 +2,30 @@
 title: Přidání ikony oblíbené položky
 description: Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410717"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964725"
 ---
 # <a name="add-a-favicon"></a>Přidání ikony oblíbené položky
 
 [!include [banner](includes/banner.md)]
 
 Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
-
-## <a name="overview"></a>Přehled
 
 Ikona oblíbené položky je malý grafický soubor, který se mimo jiná umsítění zobrazuje na kartě webového prohlížeče, v adresním řádku, v historii procházení a v záložkách nebo oblíbených položkách. Doporučujeme přidat ikonu oblíbené položky na svůj web, protože reprezentuje a posiluje vaši značku a pomáhá rozlišit váš web od jiných webů, které vaši zákazníci navštěvují.
 
@@ -66,7 +61,7 @@ Chcete-li vytvořit fragment, který obsahuje metaznačku pro ikonu oblíbené p
 1. V dialogovém okně **Nový fragment** vyberte jako modul, na němž je založen fragment **Metaznačky**.
 1. Zadejte název fragmentu a poté vyberte **OK**.
 1. Ve stromu hierarchie fragmentů vyberte podřízenou položku **Výchozí metaznačky**.
-1. V pravém podokně pod **Metaznačky** vyberte **Přidat** a zadejte řetězec HTML, který jste pro oblíbenou položku vytvořili dříve. 
+1. V pravém podokně pod **Metaznačky** vyberte **Přidat** a zadejte řetězec HTML, který jste pro oblíbenou položku vytvořili dříve. 
 1. Chcete-li publikovat fragment, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Přidejte fragment s metaznačkami do sekce HTML na vašich stránkách
@@ -91,11 +86,12 @@ Při náhledu stránek založených na šabloně, do které jste přidali fragme
 
 [Práce se soubory přepisu šablon CSS](css-override-files.md)
 
-[Přidání uvítací zprávy](add-welcome-message.md)
-
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
 
 [Přidání kódu skriptu na webové stránky pro podporu telemetrie](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
 description: Tohle téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources k 6. srpnu 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -18,38 +15,40 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f4a4de6cbed0a3ecb3e85782fac65d399731cf2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129820"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062179"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (06. srpna 2020)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.3444. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Lifecycle Services (LCS) pro referenci.
 
 ## <a name="platform-update-1001236-is-now-available"></a>Nyní je k dispozici aktualizace platformy 10.0.12(36).
 
-Další informace naleznete v části [Aktualizace platformy pro verze 10.0.12 aplikací Finance and Operations (srpen 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
+Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.12 finančních a provozních aplikací (srpen 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Entity právy datových rámců (DMF) pro správu zaměstnaneckých výhod
  
 Zvýhodněné účetní jednotky se uvolňují. Entity DMF umožňují import a export dat pro snadnou konfiguraci správy výhod. K přesunutí dat bude k dispozici šablona správy výhod. Šablona exportuje a importuje data sekvenčně, aby respektovala datové závislosti. Další informace naleznete zde:
 
-- [Podpora entit DMF](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) v plánu 1. vlny vydání v r. 2020 programu Dynamics 365
-- [Přehled správy dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- [Podpora entit DMF](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) v plánu 1. vlny vydání v r. 2020 programu Dynamics 365
+- [Přehled správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire vytváří pracovní postup pro nákup a prodej žádostí o dovolenou (446557)
 
 Další informace naleznete zde:
 
-- [Umožněte zaměstnancům nakupovat a prodávat dovolenou](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) v plánu 2. vlny vydání v Dynamics 365 2020
-- [Správa zásad nákupu a prodeje pracovního volna](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Nákup a prodej pracovního volna](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Umožněte zaměstnancům nakupovat a prodávat dovolenou](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) v plánu 2. vlny vydání v Dynamics 365 2020
+- [Správa zásad nákupu a prodeje pracovního volna](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Nákup a prodej pracovního volna](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>V2 entita poštovní adresy pracovníka má přístup napříč právnickými osobami s omezeným přístupem (459126)
@@ -62,7 +61,7 @@ Použijete-li zástupný symbol k otevření kontroly výkonnosti ve workflow ko
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Nové entity pro nákup a prodej dovolené (473180)
 
-Entity správy datových rámců jsou nyní k dispozici pro nákup a prodej dovolené. Další informace naleznete v tématu [Přehled správy dat](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Entity správy datových rámců jsou nyní k dispozici pro nákup a prodej dovolené. Další informace naleznete v tématu [Přehled správy dat](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>Při prohlížení informací o záznamu a používání pokročilých filtrů uživatel mohl získat přístup k záznamům jiných zaměstnanců (472490)
 
@@ -96,9 +95,9 @@ S touto změnou je detekce kruhových odkazů pozic hierarchie omezena na jeden 
 
 Některé organizace poskytují výhodu, která zaměstnancům umožňuje nakupovat nebo prodávat dovolenou. Tento proces je často řízen ručně. Tato funkce automatizuje správu zásad a požadavků oddělení lidských zdrojů. Usnadňuje proces správy dovolených a pomáhá eliminovat chyby. Další informace naleznete zde:
 
-- [Umožněte zaměstnancům nakupovat a prodávat dovolenou](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) v plánu 2. vlny vydání v Dynamics 365 2020
-- [Správa zásad nákupu a prodeje pracovního volna](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Nákup a prodej pracovního volna](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Umožněte zaměstnancům nakupovat a prodávat dovolenou](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) v plánu 2. vlny vydání v Dynamics 365 2020
+- [Správa zásad nákupu a prodeje pracovního volna](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Nákup a prodej pracovního volna](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Časové rozlišení pracovního volna pro jednu společnost nebo jeden plán
 
@@ -126,15 +125,15 @@ Můžete vytvořit pravidlo pro pozastavení přírůstků dovolené pro zaměst
 
 Nyní můžete změnit pole na povinná pomocí personalizačních funkcí systému lidských zdrojů. Tato funkce vyžaduje **Uložená zobrazení**. Další informace o uložených zobrazeních naleznete v tématu:
 
-- [Uložená zobrazení - obecná dostupnost](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) v plánu 2. vlny vydání v Dynamics 365 2020
-- [Vytváření formulářů, které plně využívají uložená zobrazení](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Uložená zobrazení - obecná dostupnost](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) v plánu 2. vlny vydání v Dynamics 365 2020
+- [Vytváření formulářů, které plně využívají uložená zobrazení](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Aplikace Human Resources v Teams
 
 Zaměstnanci mohou prohlížet a požadovat pracovní volno v rámci Microsoft Teams. Mohou interagovat s robotem a vytvářet žádosti o dovolenou. Další informace naleznete zde:
 
-- [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 1. vlny vydání v Dynamics 365 2020
-- [Aplikace Human Resources v Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Dovolená a nepřítomnost zaměstnanců v Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) v plánu 1. vlny vydání v Dynamics 365 2020
+- [Aplikace Human Resources v Teams](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>Entita DMF dostupná pro pozastavení časového rozlišení
 
@@ -172,6 +171,9 @@ Ve **Správa funkcí** pracovním prostoru mohou být zobrazeny funkce, které j
 ## <a name="see-also"></a>Viz také
 
 [Co je nového a co se změnilo v Human Resources](hr-admin-whats-new.md)</br>
-[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Přehled produktu Dynamics 365 Human Resources vydání 2019 vlny 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)</br>
 [Správa funkcí](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

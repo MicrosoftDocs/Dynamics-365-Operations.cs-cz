@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 7dd25fdd1549fb2fddff57dc2d9cf8762cfd6823
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908749"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416520"
 ---
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
@@ -50,7 +50,7 @@ Hlavní plány zpravidla zahrnují krátkodobý horizont, což může být obdob
 
 Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří rámec modulu Hlavní plánování. Informace o způsobu použití tohoto modulu získáte kliknutím na odkazy v sekci [Rychlé odkazy](#quick-links).
 
-[![Mapa výuky pro hlavní plánování](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Mapa výuky pro hlavní plánování.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Rychlé odkazy
 
@@ -84,7 +84,7 @@ K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodc
 
 - [Rozšíření funkce prognózy poptávky](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Hlavní plánování – tipy a triky pro řešení problémů s výkonem](https://youtu.be/7v8BPmEs9Dg)
-- [Pomoc! MRP je pomalé.](https://youtu.be/RLXybx20B5o)
+- [Ladění výkonu MRP](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

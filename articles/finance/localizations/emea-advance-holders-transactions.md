@@ -2,11 +2,9 @@
 title: Transakce držitelů záloh
 description: Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89522a0cca16e3d2cab660d39ab51ca63364aa4c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9b780d349c5df4bd578d394efb139e11cef50d13ab704c526cc2e27374b2aee3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782216"
 ---
 # <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 

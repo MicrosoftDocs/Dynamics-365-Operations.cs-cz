@@ -1,29 +1,26 @@
 ---
 title: Stavy životního cyklu pracovního příkazu
 description: Toto téma vysvětluje stavy životního cyklu pracovního příkazu v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6e96f2f6b324ffe44e8684d9bd2a42fb52d0aed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768659"
 ---
 # <a name="work-order-lifecycle-states"></a>Stavy životního cyklu pracovního příkazu
 
@@ -38,9 +35,9 @@ Stavy životního cyklu pracovního příkazu, které jsou vyžadovány pro vaš
 
 V následující tabulce jsou popsány možnosti v oddílech **Pracovní příkaz** a **Plánovat** na pevné záložce **Obecné** na stránce **Stav životního cyklu pracovního příkazu** (**Správa majetku** \> **Nastavení** \> **Pracovní příkazy** \> **Stavy životního cyklu**).
 
-![Stav životního cyklu pracovního příkazu](media/09-setup-for-work-orders.png)
+![Stav životního cyklu pracovního příkazu.](media/09-setup-for-work-orders.png)
 
-| Název možnosti                   | Popis |
+| Název možnosti                   | popis |
 |-------------------------------|-------------|
 | Aktivní                        | Tuto možnost nastavte na **Ano**, má-li být pracovní příkaz aktivní v tomto stavu životního cyklu. |
 | Přidat řádek                      | Nastavte tuto možnost na **Ano**, chcete-li do pracovního příkazu, který je v tomto stavu životního cyklu, přidat úlohy pracovního příkazu |
@@ -96,7 +93,7 @@ V následující tabulce jsou popsány možnosti v oddílech **Pracovní příka
     - Je-li možnost **Prostoj údržby** nastavena na **Ano** pro stav životního cyklu, na který je aktualizován pracovní příkaz, bude ověření prostoje údržby provedeno u majetku souvisejícího s tímto pracovním příkazem. Pokud byla provedena registrace prostojů údržby, ale nedošlo k žádnému **Ukončení** registrace, zobrazí se při aktualizaci pracovního příkazu do tohoto stavu životního cyklu zpráva.
     - Pokud standardní nastavení projektu nezahrnuje všechny fáze, které požadujete pro nastavení správy majetku, můžete nastavit uživatelem definované fáze projektu na kartě **Fáze projektu** na stránce **Parametry modulu Řízení a účetnictví projektu**. Na následujícím obrázku je zobrazena karta **Fáze projektu** na stránce **Parametry modulu Řízení a účetnictví projektu**.
 
-    ![Stránka Nastavit fáze projektu pro různé typy projektů](media/10-setup-for-work-orders.png)
+    ![Stránka Nastavit fáze projektu pro různé typy projektů.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Pokud stav životního cyklu, na který aktualizujete pracovní příkaz, je neaktivní, deníky související s tímto pracovním příkazem, které dosud nebyly zaúčtovány, budou automaticky odstraněny. Toto chování pomáhá zaručit automatické vyčištění nepoužívaných dat. (Stav životního cyklu je neaktivní, pokud je možnost **Aktivní** nastavena na **Ne** na pevné záložce **Obecné** na stránce **Stav životního cyklu pracovního příkazu**.)
@@ -114,7 +111,7 @@ Důvodem pro použití typů je to, že při definování typu, například podl
 
 Na následujícím obrázku je znázorněn vztah mezi typy pracovních příkazů, modely životního cyklu a stavy životního cyklu.
 
-![Stránka typ pracovní objednávky ve srovnání s pracovní objednávkou – stránka Modely životního cyklu](media/11-setup-for-work-orders.png)
+![Stránka typ pracovní objednávky ve srovnání s pracovní objednávkou – stránka Modely životního cyklu.](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Modely životního cyklu pracovního příkazu
 
@@ -129,13 +126,16 @@ Po vytvoření stavů životního cyklu pracovního příkazu, které jsou poža
 
 5. Na kartě **Stavy životního cyklu** vyberte stavy životního cyklu, které si přejete zahrnout v modelu životního cyklu:
 
-    - Chcete-li v modelu životního cyklu použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/12-setup-for-work-orders.png) a přesuňte jej do části **Vybrané stavy životního cyklu**.
-    - Chcete-li do modelu životního cyklu zahrnout všechny dostupné stavy životního cyklu, vyberte tlačítko **Vybrat všechny dostupné fáze** ![Vybrat všechny dostupné fáze](media/13-setup-for-work-orders.png). Všechny stavy životního cyklu jsou přesunuty do části **Vybrané stavy životního cyklu**.
-    - Chcete-li z modelu životního cyklu odebrat stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/14-setup-for-work-orders.png) a přesuňte jej do části **Zbývající stavy životního cyklu**.
+    - Chcete-li v modelu životního cyklu použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/12-setup-for-work-orders.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Vybrané stavy životního cyklu**.
+    - Chcete-li do modelu životního cyklu zahrnout všechny dostupné stavy životního cyklu, vyberte tlačítko **Vybrat všechny dostupné fáze** ![Vybrat všechny dostupné fáze.](media/13-setup-for-work-orders.png). Všechny stavy životního cyklu jsou přesunuty do části **Vybrané stavy životního cyklu**.
+    - Chcete-li z modelu životního cyklu odstranit stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/14-setup-for-work-orders.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Zbývající stavy životního cyklu**.
 
 6. Vyberte **Aktualizace stavu životního cyklu**, chcete-li definovat stavy životního cyklu, které mohou následovat po vybraném stavu životního cyklu.
 7. Na pevné záložce **Aktualizace** v poli **Plánovaný stav** vyberte stav životního cyklu, který by měl být vždy vybrán pro pracovní příkaz, pro který jste dokončili plánování pracovních úkolů, bez ohledu na předchozí stav životního cyklu pracovního příkazu.
 8. V poli **Neplánovaný stav životného cyklu** vyberte stav životního cyklu, který by měl být vybrán vždy pro pracovní příkaz v případě, že je odstraněno plánování pracovního příkazu.
 9. Uložte model životního cyklu pracovních příkazů.
 
-![Stránka Modely životního cyklu pracovního příkazu](media/15-setup-for-work-orders.png)
+![Stránka Modely životního cyklu pracovního příkazu.](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

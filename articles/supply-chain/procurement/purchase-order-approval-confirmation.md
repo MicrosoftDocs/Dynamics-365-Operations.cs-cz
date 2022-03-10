@@ -1,7 +1,7 @@
 ---
 title: Schválení a potvrzení nákupních objednávek
 description: Toto téma popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
-author: kamaybac
+author: Henrikan
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825415"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570530"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
@@ -41,8 +41,8 @@ Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy s
 | Stav schválení | Popis                                                                      | Požadavek na změnu je povolen. |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Koncept           | Nákupní objednávka je ve stavu Návrh a nebyla odeslána ke schválení v pracovním postupu nákupní objednávky.     | Ne                        |
-| Probíhá kontrola       | Nákupní objednávka byla předložena ke schválení v pracovním postupu nákupní objednávky. Čeká se na schválení.       | Č.                        |
-| Odmítnuto        | Nákupní objednávka byla odmítnuta během procesu schvalování.                                 | Č.                        |
+| Probíhá kontrola       | Nákupní objednávka byla předložena ke schválení v pracovním postupu nákupní objednávky. Čeká se na schválení.       | Ne                        |
+| Odmítnuto        | Nákupní objednávka byla odmítnuta během procesu schvalování.                                 | Ne                        |
 | Schváleno        | Nákupní objednávka byla schválena.                                                             | Ano                       |
 | Potvrzeno       | Nákupní objednávka byla potvrzena. Nákupní objednávky nelze potvrdit, dokud nedojde k jejich schválení.        | Ano                       |
 | Finalizováno       | Nákupní objednávka byla dokončena. Nyní je finančně uzavřena a nemůže již být změněna. | Ne                        |
@@ -83,8 +83,7 @@ Chcete-li zrušit celé množství na řádku NO, zrušte v řádku zbývající
 
 Pokud PO prochází správou změn, každá změna, například zrušení objednávky nebo zůstatek dodávky, musí být před dokončením procesu odeslána do systému workflowu a schválena a skladové transakce mohou být aktualizovány jako zrušené.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 

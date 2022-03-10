@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359756"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102782"
 ---
 # <a name="location-license-plate-positioning"></a>Umístění registrační značky místa
 
@@ -30,12 +30,9 @@ Tato funkce přidá pořadové číslo ke každé registrační značce vložen�
 
 Toto téma představuje scénář, který ukazuje, jak tuto funkci nastavit a používat.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Zapnutí funkce Určení pozice registrační značky na skladovém místě
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Určení pozice registrační značky na skladovém místě
 
-Než můžete použít funkci Určení pozice registrační značky na skladovém místě, musíte ji v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Určení pozice registrační značky na skladovém místě*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Umístění registrační značky místa*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Umístění registrační značky místa* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Příklad
 

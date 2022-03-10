@@ -3,7 +3,7 @@ title: Přehled elektronické fakturace
 description: Toto téma poskytuje informace o elektronické fakturaci v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: eebe51ae89326965235c031ed11008c6af3d453f0f297d3201862946ab4caca9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741501"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983842"
 ---
 # <a name="electronic-invoicing-overview"></a>Přehled elektronické fakturace
 
@@ -50,8 +50,10 @@ V současné době je Elektronická fakturace k dispozici zákazníkům prostře
 
 Elektronická fakturace je nasazena v následujících geografických oblastech Azure:
 
-- Spojené státy americké
+- USA
 - Evropa
+- Spojené království
+- Asie
 
 > [!NOTE]
 > Elektronická fakturace nepodporuje místní nasazení.

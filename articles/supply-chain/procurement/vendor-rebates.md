@@ -1,7 +1,7 @@
 ---
 title: Rabaty dodavatele
 description: Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
-author: omulvad
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344213"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566856"
 ---
 # <a name="vendor-rebates"></a>Rabaty dodavatele
 

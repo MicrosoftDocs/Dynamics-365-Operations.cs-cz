@@ -2,11 +2,9 @@
 title: Nastavení scénářů plateb faktur
 description: Toto téma popisuje, jak nakonfigurovat Dynamics 365 Commerce pro podporu různých scénářů týkajících se plateb faktur.
 author: josaw1
-manager: AnnBe
 ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8b65fe3968698da1c5b76cf2d0ef706f3f1ec4bb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9dc4ff9241cec4033b65f15449c233bdb43233c0dce1ab04a2cd66baf5272a6b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772978"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Nastavení scénářů plateb faktur
 
@@ -45,3 +43,6 @@ Chcete-li povolit tyto scénáře, je třeba nakonfigurovat funkční profil pro
 
 > [!NOTE]
 > Platba nebo vyrovnání dílčích částek není ještě podporována.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

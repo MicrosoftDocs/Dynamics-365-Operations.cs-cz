@@ -1,26 +1,26 @@
 ---
 title: Přepínání mezi návrhy dodavatele
-description: Tohle téma popisuje způsob přepínání integrace dat dodavatele mezi aplikacemi Finance and Operations a Dataverse.
+description: Toto téma popisuje způsob přepínání mezi integrací dat dodavatele mezi finančními a provozními aplikacemi a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 09/20/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 21f48574d34b810c8ca554a55f1c063893a34b4d
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416802"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062743"
 ---
 # <a name="switch-between-vendor-designs"></a>Přepínání mezi návrhy dodavatele
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 

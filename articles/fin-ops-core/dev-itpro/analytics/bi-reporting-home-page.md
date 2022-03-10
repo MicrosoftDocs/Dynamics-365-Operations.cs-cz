@@ -2,26 +2,26 @@
 title: Domovská stránka vytváření sestav a analýzy s Power BI
 description: Toto téma vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence a nástrojích pro vykazování.
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 694c1f415fd52eb9e98ace2e5787c12f7a1fed8e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712729"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Domovská stránka vytváření sestav a analýzy s Power BI
 
@@ -88,4 +88,7 @@ Následující sestavy poskytují referenční informace o objektech:
 - [Hledání informací o standardních datových entitách](../data-entities/data-entities-report.md)
 - [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md)
 - [Dostupné sestavy služby Microsoft SQL Server Reporting Services](SSRS-report.md)
-- [Sestava typů workflow](../../fin-ops/organization-administration/workflow-types-report.md)
+- [Sestava typů pracovních postupů](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

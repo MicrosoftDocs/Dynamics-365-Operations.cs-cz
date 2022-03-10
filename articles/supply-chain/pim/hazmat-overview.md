@@ -1,24 +1,23 @@
 ---
 title: Přehled nebezpečných materiálů
 description: Toto téma poskytuje přehled funkcí, které souvisejí s manipulací a dokumentací nebezpečných materiálů během správy informací o produktu a správy skladu.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 5f8c3dc084f4f260f8cc29b3957913e9bc1b762d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356992"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986269"
 ---
 # <a name="hazardous-materials-overview"></a>Přehled nebezpečných materiálů
 

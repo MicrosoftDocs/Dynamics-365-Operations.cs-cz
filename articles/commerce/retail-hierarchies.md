@@ -2,11 +2,9 @@
 title: Hierarchie Commerce
 description: Tento článek popisuje hierarchie v aplikaci Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94b391ab5028f76debb75d25ac9469e25361cb12
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 60534536476cfbe7a4f254923785ab1eb0001a3eaf7630dec75f28f07dff30d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716137"
 ---
 # <a name="commerce-hierarchies"></a>Hierarchie Commerce
 
@@ -44,3 +42,6 @@ V následující tabulce jsou uvedeny dostupné typy hierarchií kategorie a obe
 | Hierarchie navigace   | Použijte tento typu hierarchie pro seskupení a uspořádání produktů do kategorií, aby je bylo možné procházet online nebo v POS. |
 
 Pomocí hierarchie kategorií k vytvoření struktury produktů můžete nastavit a spravovat atributy a vlastnosti produktů na úrovni kategorie. Tyto atributy a vlastnosti zahrnují nastavení pro dimenze produktu a nastavení POS. Všechny produkty, které přiřadíte k těmto kategoriím, automaticky zdědí atributy a vlastnosti, které definujete. Můžete také zkopírovat nastavení vlastností pro jakýkoli produkt do více produktů ve vybrané kategorii současně.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

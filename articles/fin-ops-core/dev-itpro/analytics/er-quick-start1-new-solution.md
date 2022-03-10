@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af610ae86e751ec4425f4c555cdf59c042fabcdb46e6a3a018b0d94a8926d92e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770061"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323835"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Navrhněte nové řešení ER pro tisk vlastní sestavy
 
@@ -181,7 +181,7 @@ Další informace o poskytovatelích konfigurací ER naleznete v tématu [Vytvo
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Návrh datového modelu specifického pro doménu
 
-Musíte vytvořit novou konfiguraci ER obsahující součást [datový model](general-electronic-reporting.md#data-model-and-model-mapping-components) pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
+Musíte vytvořit novou konfiguraci ER obsahující součást datového modelu pro obchodní doménu **Dotazník**. Tento datový model bude později použit jako zdroj dat, když navrhujete formát ER pro generování sestavy **Dotazník**.
 
 Dokončením kroků v části [Importujte novou konfiguraci datového modelu](#ImportDataModel) můžete importovat požadovanou konfiguraci datového modelu z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace datového modelu](#DesignDataModel), chcete-li navrhnout tento datový model od začátku.
 
@@ -296,7 +296,7 @@ Další informace o verzích pro konfigurace ER viz [Přehled elektronického v�
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Návrh mapování modelu pro konfigurovaný datový model
 
-Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje [mapování modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) součást pro **Dotazník** datový model. Protože tato komponenta implementuje nakonfigurovaný datový model pro Finance, je specifická pro Finance. Komponentu mapování modelu musíte nakonfigurovat, abyste určili aplikační objekty, které musí být použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K dokončení tohoto úkolu si musíte být vědomi podrobností o implementaci datové struktury systému **Dotazník** obchodní domény ve financích.
+Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje mapování modelu součást pro datový model **Dotazníku**. Protože tato komponenta implementuje nakonfigurovaný datový model pro Finance, je specifická pro Finance. Komponentu mapování modelu musíte nakonfigurovat, abyste určili aplikační objekty, které musí být použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K dokončení tohoto úkolu si musíte být vědomi podrobností o implementaci datové struktury systému **Dotazník** obchodní domény ve financích.
 
 Dokončením kroků v [Importujte novou konfiguraci mapování](#ImportModelMapping) datového modelu v další části můžete importovat požadovanou konfiguraci mapování z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace mapování modelu](#CreateModelMapping), chcete-li navrhnout tento model mapování od začátku.
 
@@ -568,7 +568,7 @@ Jak ukazuje následující obrázek, byla určena záhlaví vlastní sestavy, ab
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Návrh formátu
 
-Jako uživatel v roli funkčního konzultanta elektronického výkaznictví musíte vytvořit novou konfiguraci ER, která obsahuje komponent [formát](general-electronic-reporting.md#FormatComponentOutbound). Komponent formátu musíte nakonfigurovat, abyste určili, jak bude šablona výkazu vyplněna požadovanými daty za běhu.
+Jako uživatel v roli funkčního konzultanta elektronického výkaznictví musíte vytvořit novou konfiguraci ER, která obsahuje komponent formát. Komponent formátu musíte nakonfigurovat, abyste určili, jak bude šablona výkazu vyplněna požadovanými daty za běhu.
 
 Dokončením kroků v části [Import navrženého formátu konfigurace](#FormatImport) můžete importovat požadovaný formát z poskytnutého souboru XML. Alternativně můžete dokončit kroky v sekci [Vytvoření nové konfigurace formátu](#FormatCreate), chcete-li navrhnout tento formát od začátku.
 

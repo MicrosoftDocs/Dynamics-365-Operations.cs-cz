@@ -2,11 +2,9 @@
 title: Umožňuje uživatelům dostávat e-mailové zprávy týkající se workflowu
 description: Systém můžete konfigurovat na zaslání e-mailových zpráv uživatelům, když nastanou události týkající se workflowu.
 author: jasongre
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, SysUserSetup
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 221e38cbe31e2ad24a56cb2e71206a1ebcdd619e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 368fe2fbf1f8a1adcabe37ced5ed942f9fb86fc8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798997"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070418"
 ---
 # <a name="enable-users-to-receive-workflow-related-email-messages"></a>Umožňuje uživatelům dostávat e-mailové zprávy týkající se workflowu
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Systém můžete konfigurovat na zaslání e-mailových zpráv uživatelům, když nastanou události týkající se workflowu. Například je možné zaslat e-mailové zprávy uživatelům, když jim jsou přiřazeny dokumenty ke schválení. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
@@ -41,3 +42,6 @@ Systém můžete konfigurovat na zaslání e-mailových zpráv uživatelům, kdy
 
 > [!NOTE]
 > Šablony e-mailů pracovního postupu budou získány buď ze systémových e-mailových šablon nebo e-mailových šablon organizace v závislosti na tom, zda je pracovní postup pracovním postupem na úrovni systému (nikoli společnosti) nebo na úrovni organizace (specifický pro společnost).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

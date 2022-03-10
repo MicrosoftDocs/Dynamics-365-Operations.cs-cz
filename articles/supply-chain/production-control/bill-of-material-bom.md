@@ -1,7 +1,7 @@
 ---
 title: Kusovníky a receptury
 description: Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu.
-author: cvocph
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190105"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578001"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Kusovníky a receptury
 

@@ -2,11 +2,9 @@
 title: Nastavení analýzy recency/frekvence/peněžního období
 description: Toto téma vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7a216b237052e084e7efac2580bf5ff9846d3127
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765211"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Nastavení analýzy recency/frekvence/peněžního období
 
@@ -96,3 +94,6 @@ Tento postup použijte pro zobrazení nebo vymazání historie záznamu analýzy
 2. Na stránce **Analýza RFM** vyberte záznam, který chcete zobrazit.
 3. Pro zobrazení historie záznamů zvolte pevnou záložku **Historie**.
 4. Chcete-li vymazat historii záznamu, zvolte **Vymazat historii**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

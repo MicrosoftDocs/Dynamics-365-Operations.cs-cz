@@ -2,8 +2,7 @@
 title: Funkce elektronického výkaznictví FILTER
 description: Toto téma obsahuje obecné informace o použití funkce FILTER elektronického výkaznictví.
 author: NickSelin
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8c0b4601db625d442dd545151968f38bd58cf1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746596"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922416"
 ---
 # <a name="filter-er-function"></a>Funkce elektronického výkaznictví FILTER
 
@@ -50,11 +49,17 @@ Platný podmíněný výraz, který slouží k filtrování záznamů zadaného 
 
 Výsledný seznam záznamů.
 
-## <a name="usage-notes"></a>Poznámky k použití
+## <a name="usage-notes"></a><a name="usage-notes"></a>Poznámky k použití
 
 Tato funkce se liší od funkce [WHERE](er-functions-list-where.md), protože zadaná podmínka je použita u jakéhokoli zdroje dat elektronického výkaznictví typu *Záznamy tabulky* na úrovni databáze. Seznam a podmínku lze definovat pomocí tabulek a relací.
 
 Pokud jeden či více argumentů konfigurovaných pro tuto funkci (`list` a `condition`) neumožňuje překlad tohoto požadavku na přímé volání SQL, dojde v době návrhu k výjimce. Tato výjimka informuje uživatele, že k dotazování databáze nelze použít `list` nebo `condition`.
+
+> [!NOTE]
+> Když je k zadání kritérií výběru použita funkce [`VALUEIN`](er-functions-logical-valuein.md), funkce `FILTER` se chová jinak než funkce `WHERE`.
+> 
+> - Pokud je funkce `VALUEIN` použita v rozsahu funkce `WHERE` a druhý argument funkce `VALUEIN` odkazuje na zdroj dat, který nevrací žádné záznamy, zváží se logická hodnota *[False](er-formula-supported-data-types-primitive.md#boolean)* vrácená funkcí `VALUEIN`. Proto výraz `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` nevrací žádné záznamy dodavate, pokud zdroj dat **VendGroups** nevrací žádné záznamy skupiny dodavatelů.
+> - Pokud je funkce `VALUEIN` použita v rozsahu funkce `FILTER` a druhý argument funkce `VALUEIN` odkazuje na zdroj dat, který nevrací žádné záznamy, ignoruje se logická hodnota *[False](er-formula-supported-data-types-primitive.md#boolean)* vrácená funkcí `VALUEIN`. Proto výraz `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` vrátí všechny záznamy dodavate zdroje dat **Vendors**, i když zdroj dat **VendGroups** nevrací žádné záznamy skupiny dodavatelů.
 
 ## <a name="example-1"></a>Příklad 1
 

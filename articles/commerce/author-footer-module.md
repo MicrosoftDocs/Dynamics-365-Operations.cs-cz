@@ -2,11 +2,9 @@
 title: Modul zápatí
 description: Toto téma popisuje moduly zápatí a způsob jejich vytváření v řešení Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 038fee32cbf1ed6b4967f440faaf3c0d4fa583f6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719979"
 ---
 # <a name="footer-module"></a>Modul zápatí  
 
@@ -29,13 +27,11 @@ ms.locfileid: "4979940"
 
 Toto téma popisuje moduly zápatí a popisuje, jak je vytvořit v řešení Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Přehled
-
 Modul zápatí je speciální kontejner, který se používá k hostování modulů, které se zobrazují v zápatí stránky. Může se například jednat o odkazy na různé stránky na webu, například **O nás** a **Zásady obchodu**.
 
 Následující obrázek znázorňuje příklad modulu zápatí na stránce webu.
 
-![Příklad modulu zápatí](./media/ecommerce-footer.PNG)
+![Příklad modulu zápatí.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Vlastnosti modulu zápatí 
 
@@ -86,3 +82,6 @@ Přidáním fragmentu do šablon stránek pomůžete zaručit, že zápatí bude
 [Modul záhlaví](author-header-module.md)
 
 [Modul zápatí](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

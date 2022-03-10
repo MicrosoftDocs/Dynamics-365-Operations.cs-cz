@@ -2,7 +2,7 @@
 title: Odeslání obrázků
 description: Toto téma popisuje, jak nahrát obrázky v konfigurátoru webu Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757391"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891515"
 ---
 # <a name="upload-images"></a>Odeslání obrázků
 
@@ -41,7 +41,8 @@ Při odesílání obrázku lze zadat následující informace.
 - **Publikovat majetek po odeslání**: Pokud je toto políčko zaškrtnuto, bude obrázek nebo obrázky publikovány ihned po odeslání.
 
 > [!NOTE]
-> Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
+> - Obrazové prvky s přiřazenou kategorií jsou také automaticky označeny kategorií jako klíčové slovo, které pomáhá vyhledávat majetek určité kategorie.
+> - Stránky s podrobnostmi o produktu dynamicky generují **Alternativní text** pomocí názvu produktu, takže změna hodnoty **Alternativní text** pro obrázek produktu nebude mít žádný vliv na vykreslený obrázek.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Zásady vytváření názvů pro multikanálové obrázky 
 
@@ -52,10 +53,17 @@ Výchozí zásady vytváření názvů se liší podle kategorie:
 - Obrázky kategorií by měly být pojmenované **"\{/Kategorie/\}CategoryName.** png"
 - Obrázky zákazníků by měly mít název **"\{/Zákazníci/\}CustomerNumber.** jpg"
 - Obrázky zaměstnanců by měly mít název **"\{/Pracovníci/\}WorkerNumber.** jpg"
-- Obrázky produktu by měly mít název **"\{/Produkty/\}ProductNumber _000_001.** png"
+- Obrázky produktu by měly mít název "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 je posloupnost obrázku a může být 001, 002, 003, 004 nebo 005
 - Obrázky variant produktu by měly mít název "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - Například: 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - Například: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Obrázky variant produktu s dimenzí konfigurace by měly mít název "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
+    - Například: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> U obrázků variant produktu, pokud je hodnota dimenze prázdná, musí mezi mezerami v názvu souboru existovat dvě mezery.
+
+Výše uvedené příklady používají výchozí konfiguraci. Oddělovací znak a rozměry jsou konfigurovatelné a přesné pojmenování se může mezi nasazeními lišit. Jednou z metod identifikace požadované konvence přesného pojmenování je použití konzoly pro vývojáře v prohlížeči ke kontrole požadavků na obrázek varianty produktu při změně rozměrů produktu na stránce s podrobnostmi o produktu (PDP).
 
 ## <a name="upload-an-image"></a>Odeslat obrázek
 

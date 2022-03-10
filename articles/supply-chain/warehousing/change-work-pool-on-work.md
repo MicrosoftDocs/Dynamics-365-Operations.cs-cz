@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 066655b58d4676bafb6e8ed8d80a95636c047444
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566016"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102856"
 ---
 # <a name="change-work-pool-on-work"></a>Změnit fond práce u práce
 
@@ -28,12 +28,9 @@ Fondy práce můžete použít k uspořádání práce do skupin. Můžete např
 
 Funkce *Změna fondu práce v práci* přidá tlačítko **Změna fondu práce** do podokna akcí pro pracovní položky. Proto mohou vedoucí skladu snadno změnit fond práce stávající práce. Tato funkce umožňuje manažerům rychle reagovat na změny ve skladu ve skladu a pomáhá zlepšit jejich schopnost přizpůsobit se měnícím se situacím a potřebě převést práci do jiného pracovního fondu.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Zapněte funkci Změnit fond práce pro práci
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce Změnit fond práce u práce
 
-Než začnete tuto funkci nastavovat nebo používat, musíte se ujistit, že je ve vašem systému k dispozici. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Změnit fond práce pro práci*
+Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Změnit fond práce u práce* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Nastavte funkci Změnit fond práce pro práci
 

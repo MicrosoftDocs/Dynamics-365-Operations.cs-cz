@@ -1,28 +1,28 @@
 ---
 title: Domovská stránka Rozpočtování
 description: V tomto tématu najdete přehled o součástech funkce rozpočtování, rozpočtových nástrojích a možnostech vykazování v aplikaci Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5222df8ffd3e0cb8759f7c094e5efde97d2ede0c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210258"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983945"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 
@@ -30,8 +30,7 @@ ms.locfileid: "5210258"
 
 V tomto tématu najdete přehled o součástech funkce rozpočtování, rozpočtových nástrojích a možnostech vykazování. 
 
-<a name="components-of-budgeting-functionality"></a>Součásti funkce rozpočtování
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Součásti funkce rozpočtování
 
 Cyklus plánování zdrojů pro společnost se obvykle skládá z plánování, sestavování rozpočtu a prognózování.
 

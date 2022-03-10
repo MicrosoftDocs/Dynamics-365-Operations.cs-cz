@@ -2,7 +2,7 @@
 title: Práce s fragmenty
 description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350201"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090737"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
@@ -122,7 +122,21 @@ Fragment upravíte v konfigurátoru webů Commerce tímto postupem.
 
 Fragment můžete také upravit tak, že jej vyberete na stránce, v šabloně nebo v nadřazeném fragmentu a poté vyberete **Upravit fragment** v podokně vlastností vpravo.
 
-## <a name="additional-resources"></a>Další zdroje
+### <a name="rename-a-fragment"></a>Přejmenování fragmentu
+
+Stávající fragment přejmenujete v konfigurátoru webů tímto postupem.
+
+1. V levém navigačním podokně vyberte položku **Fragmenty**.
+1. Vyberte název fragmentu, který chcete změnit.
+1. Výběrem příkazu **Upravit** začněte úpravu fragmentu. Upozorňujeme, že fragment nelze upravit, pokud jej již upravuje někdo jiný.
+1. V podokně vlastností fragmentu vyberte symbol pera vedle názvu fragmentu.
+1. Podle potřeby upravte název fragmentu.
+1. Zaškrtnutím políčka potvrďte změnu názvu.
+1. Vyberte **Dokončit úpravy**.
+
+Fragment můžete po jeho vytvoření přejmenovat tak, že jej upravíte a poté vyberete symbol pera vedle názvu fragmentu v panelu vlastností.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 

@@ -2,11 +2,9 @@
 title: Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy
 description: V tomto článku budete provedeni scénářem vyrovnání dobropisu pro fakturu.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 553150a59d132bb1d8b563e03456995cbc8d2be5f36bab0c1fe6b8bbbf77dce1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737106"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy
 
@@ -42,10 +40,10 @@ Dodavatelé společnosti Fabrikam poskytují platební slevy pro dobropisy. Doda
 
 Informace o slevě dobropisu se zobrazí v dolní části stránky **Vyrovnat otevřené transakce**.
 
-|                              |           |
+| Pole                        | Hodnota     |
 |------------------------------|-----------|
-| Datum platební slevy           | 7/13/2015 |
-| Částka platební slevy         | 2,00      |
+| Dat. plat. slevy           | 7/13/2015 |
+| Částka platební slevy         | 2.00      |
 | Použít platební slevu            | Normální    |
 | Přijatá platební sleva          | 0,00      |
 | Částka platební slevy k přijetí | 2,00      |

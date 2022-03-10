@@ -2,27 +2,19 @@
 title: Synchronizace na požádání s cenovým modulem Supply Chain Management
 description: V tomto tématu je popsán způsob použití cenového modulu v aplikaci Microsoft Dynamics 365 Supply Chain Management z Dynamics 365 Sales.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: e2067e83d3f0c98e986873b8eaf1b817de912c0f
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 134bfc2ec0e69938c945e384a98676d3708c8e17
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570133"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783300"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synchronizace na požádání s cenovým modulem Supply Chain Management
 
@@ -49,7 +41,7 @@ Microsoft Dynamics 365 Supply Chain Management obsahuje cenový modul, který zp
     + Celková daň
     + Celková částka
     
-5. Chcete-li zajistit, aby systém při výpočtu ceny přihlížel k obchodním a prodejním smlouvám, postupujte takto:
+5. Chcete-li zajistit, aby systém při výpočtu ceny přihlížel k obchodním smlouvám, postupujte takto:
     1. Přejděte k prostředí Supply Chain Management .
     2. Přejděte na **Pohledávky \> Nastavení \> Parametry pohledávek**.
     3. Na vedlejším navigačním panelu vyberte kartu **Ceny**.
@@ -59,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management obsahuje cenový modul, který zp
 
 Když v Sales vyberete **Ocenit objednávku**, pro přidruženou prodejní objednávku je volána funkce **Součty** na kartě **Prodejní objednávka \> Zobrazení** v Supply Chain Management. Hodnoty celkové výše objednávky v Sales se používají k vyplnění odpovídajících sloupců v modulu Supply Chain Management.
 
-Při výpočtu celkové částky prodejní objednávky v modulu Supply Chain Management vyhodnotí výpočet existující obchodní smlouvy a prodejní smlouvy pro zákazníka a produkty, které jsou uvedeny v prodejní objednávce. Tyto informace se použijí k výpočtu součtů. Když je vybrána možnost **Ocenit objednávku**, Sales automaticky převezme veškeré nastavení, které bylo provedeno v Supply Chain Management.
+Při výpočtu celkové částky prodejní objednávky v modulu Supply Chain Management vyhodnotí výpočet existující obchodní smlouvy pro zákazníka a produkty, které jsou uvedeny v prodejní objednávce. Tyto informace se použijí k výpočtu součtů. Když je vybrána možnost **Ocenit objednávku**, Sales automaticky převezme veškeré nastavení, které bylo provedeno v Supply Chain Management.
 
 ## <a name="limitations"></a>Omezení
 
@@ -68,6 +60,7 @@ Při vyplnění sloupců v Sales platí následující omezení:
 + Nastavení nákladů a přidělení nákladů v Supply Chain Management není replikováno v Sales.
 + Cenová kalkulace nebere v potaz zvláštní maloobchodní ceny, které jsou zadány ve sloupci **Maloobchodní síť** na stránce řádku prodejní objednávky v modulu Supply Chain Management.
 + Slevy, které jsou definovány v oddílu **Správa obchodních náhrad** v modulu Supply Chain Management, se neberou v úvahu.
++ Ceny nezohledňují prodejní smlouvy.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

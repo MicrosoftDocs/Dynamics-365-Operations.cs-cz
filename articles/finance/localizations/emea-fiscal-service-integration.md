@@ -13,12 +13,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4d974b91289b27d7ead0102ba5f2e727184311a5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 52c49d0bf7293f2c4da08f20e0a7ffc840a5d40973aa7941aae54792687a687d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781689"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
@@ -79,7 +79,7 @@ Každá registrační pokladna musí být nastavena pro komunikaci s fiskální 
 <td>Pro každou registrační pokladnu vyberte formáty elektronického výkaznictví, které se použijí k tisku účtenek, odesílání požadavků do fiskální služby a přijímání odezvy od fiskální služby. Zvolené formáty elektronického výkaznictví musí odpovídat primární adrese právnické osoby.</td>
 <td>Například pro formát účtenky vyberte <strong>Formátu hotovostní příjemky (AT)</strong> pro Rakousko a <strong>Formát hotovostní příjemky (CZ)</strong> pro Českou republiku.
 
-Pokud formát nemůžete najít v seznamu, můžete stáhnout poslední elektronické formáty z LCS. Další informace viz <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Stažení konfigurace elektronického vykazování ze služby Lifecycle Services</a>.</td>
+Pokud formát nemůžete najít v seznamu, můžete stáhnout poslední elektronické formáty z LCS. Další informace viz <a href="/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Stažení konfigurace elektronického vykazování ze služby Lifecycle Services</a>.</td>
 </tr>
 <tr>
 <td>Nastavení certifikátu registrační pokladny</td>
@@ -189,7 +189,7 @@ Tato část vás provede následujícími obchodními procesy a používá fisk�
     2. Na pevné záložce **Registrační pokladna** zkontrolujte umístění terminálu, registrační pokladnu a kódy operátora. Kód terminálu je automaticky vyplněn z pole **Výchozí terminál registrační pokladny** na stránce **Operátoři registrační pokladny**. Změňte kód terminálu pouze v případě, když je přijata hotovostní platba na jiném terminálu registrační pokladny, než který je k dispozici pro aktuálního operátora.
     3. Vyberte **OK**.
 
-7. Zkontrolujte hotovostní příjemku, která je vygenerována pro zaúčtovanou fakturu. Ve výchozím nastavení je vygenerovaná hotovostní příjemka k dispozici jako soubor. Více informací o nastavení jiných cílových umístění, která můžete použít pro hotovostní příjemky, naleznete v tématu [Místa určení elektronického výkaznictví](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+7. Zkontrolujte hotovostní příjemku, která je vygenerována pro zaúčtovanou fakturu. Ve výchozím nastavení je vygenerovaná hotovostní příjemka k dispozici jako soubor. Více informací o nastavení jiných cílových umístění, která můžete použít pro hotovostní příjemky, naleznete v tématu [Místa určení elektronického výkaznictví](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
 ### <a name="register-an-automatically-posted-cod-payment-for-a-sales-order-invoice-and-print-a-cash-receipt"></a>Registrace automaticky zaúčtované platby na dobírku pro fakturu prodejní objednávky a tisk hotovostní příjemky

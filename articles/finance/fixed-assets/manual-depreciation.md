@@ -1,7 +1,7 @@
 ---
 title: Ruční odpis
 description: Tento článek poskytuje přehled o metodě ručního odpisu.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bb8d739f3c6c8315ba8f135e7a71075f34f32f1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815637"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674820"
 ---
 # <a name="manual-depreciation"></a>Ruční odpis
 
@@ -30,11 +30,11 @@ Tento článek poskytuje přehled o metodě ručního odpisu.
 
 Když nastavujete odpisový plán dlouhodobého majetku a v poli **Metoda** na stránce **Odpisové plány** vyberete položku **Ručně**, jsou odpisy dlouhodobého majetku přiřazené k odpisovému plánu stanoveny podle procentuální hodnoty zadané pro každý interval v kalendářním roce. Nastavené procentuální hodnoty pro intervaly jsou zaúčtovány podle hodnoty, kterou jste vybrali v poli **Frekvence období** na pevné záložce **Obecné** na stránce **Odpisové plány**. Vybrat můžete tyto hodnoty:
 
--   Ročně
--   Měsíčně
--   Kvartálně
--   Pololetně
--   Denně
+- Ročně
+- Měsíčně
+- Kvartálně
+- Pololetně
+- Denně
 
 Po výběru frekvence období klikněte na možnost **Ruční plány** a nastavte procentuální hodnoty pro jednotlivé intervaly účtování. Ručně zadávané plány a intervaly účtování společně definují částku odpisu (viz příklady níže v tomto článku). Ruční odpisy se vždy počítají jako procentuální hodnota pořizovací ceny. U ručních odpisů nemusí procentuální hodnoty, které zadáváte do intervalů odpisu, dávat dohromady 100 procent. Ruční odpisy jsou flexibilní odpisovou metodu, která se často používá k určení mimořádného odpisového plánu na stránce **Knihy**, jako je například nepravidelný odpis pro zvláštní účely (například daň).
 

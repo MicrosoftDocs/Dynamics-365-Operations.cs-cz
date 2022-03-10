@@ -1,9 +1,9 @@
 ---
 title: Přehled modelů konfigurace produktu
 description: Tento článek definuje termíny a pojmy, které jsou relevantní pro modely konfigurace produktu. Modely konfigurace produktu umožňují vytvořit obecnou strukturu produktu, kterou lze použít ke konfiguraci mnoha variant produktu pro jeden produkt.
-author: cvocph
+author: t-benebo
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48cabc174cd46d95631010692da5972c182b36167d520cfefd9742b4b522ca73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722360"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984639"
 ---
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 

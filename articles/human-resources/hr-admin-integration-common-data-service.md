@@ -1,8 +1,8 @@
 ---
-title: Konfigurovat integraci se službou Dataverse
-description: Integraci mezi Microsoft Dataverse a Dynamics 365 Human Resources můžete zapnout nebo vypnout. Chcete-li pomoci při řešení problémů s daty mezi oběma prostředími, můžete také zobrazit podrobnosti o synchronizaci, vymazat data sledování a znovu synchronizovat tabulku.
-author: andreabichsel
-ms.date: 01/25/2021
+title: Konfigurace integrace Dataverse
+description: Toto téma popisuje integraci mezi aplikacemi Microsoft Dataverse a Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052450"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065444"
 ---
-# <a name="configure-dataverse-integration"></a>Konfigurovat integraci se službou Dataverse
+# <a name="configure-dataverse-integration"></a>Konfigurace integrace Dataverse
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,15 +51,15 @@ V těchto situacích je vhodné vypnout integraci:
 
 1. V instanci Human Resources, v níž chcete zobrazit nebo konfigurovat nastavení pro integraci s Dataverse, vyberte dlaždici **Správa systému**.
 
-    [![Dlaždice správy systému](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Dlaždice správy systému.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Zvolte kartu **Odkazy**.
 
-    [![Karta Odkazy](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Karta Odkazy.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. V části **Integrace** vyberte **Konfigurace Dataverse**.
 
-    [![Odkaz na konfiguraci Dataverse](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Odkaz na konfiguraci Dataverse.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Zapnutí a vypnutí integrace dat mezi Human Resources a Dataverse
 
@@ -67,7 +70,7 @@ V těchto situacích je vhodné vypnout integraci:
 
 - Chcete-li vypnout integraci, nastavte možnost na **Ne**.
 
-[![Zapnutí a vypnutí integrace Dataverse](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Zapnutí a vypnutí integrace Dataverse.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > Důrazně doporučujeme vypnout integraci Dataverse při provádění úkolů migrace dat. Odesílání velkého objemu dat může výrazně ovlivnit výkon. Například nahrávání 2000 pracovníků může trvat několik hodin, když je integrace povolena, a méně než jednu hodinu, pokud je zakázána. Čísla uvedená v tomto příkladu slouží pouze k demonstračním účelům. Přesné množství času potřebného k importu záznamů se může značně lišit v závislosti na mnoha faktorech.
@@ -98,7 +101,7 @@ Pokud se setkáte s problémy při synchronizaci dat mezi Human Resources a Data
 
 - Chcete-li odebrat přidružení záznamu mezi záznamem a řádkem Dataverse v Human Resources, vyberte **Tabulka Dataverse** a poté vyberte možnost **Vymazat informace o sledování**.
 
-[![Vymazat informace o sledování](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Vymazat informace o sledování.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Chcete-li spustit úplnou synchronizaci tabulky po vymazání sledování, postupujte podle následujícího postupu.
 
@@ -116,13 +119,13 @@ Chcete-li spustit úplnou synchronizaci tabulky mezi Human Resources a Dataverse
 
 2. Vyberte **Synchronizovat nyní**.
 
-[![Spuštění úplné synchronizace](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Spuštění úplné synchronizace.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Viz také
 
 [Tabulky Dataverse](hr-developer-entities.md)<br>
 [Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Virtuální tabulky lidských zdrojů - časté dotazy](hr-admin-virtual-entity-faq.md)<br>
+[Nejčastější dotazy k virtuálním tabulkám Human Resources](hr-admin-virtual-entity-faq.md)<br>
 [Co je Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Aktualizace terminologie](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

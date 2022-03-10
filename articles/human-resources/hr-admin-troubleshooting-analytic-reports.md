@@ -1,8 +1,8 @@
 ---
 title: Řešení potíží u analytických sestav
-description: Tento článek vysvětluje, jak postupovat, když e nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma vysvětluje, jak řešit a diagnostikovat problémy, když se nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,20 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d4e76f3b6231b6f307173fa176360daf775c8a7950bc4ab2f2162c768102c369
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ea04c06858cc98b0e233b9133d9dfbebfe59fd6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717407"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067722"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Řešení potíží u analytických sestav
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

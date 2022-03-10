@@ -1,7 +1,7 @@
 ---
 title: Nastavení profilu přehledu doručení zboží
 description: Toto téma je zaměřeno na nastavení profilu přehledu doručení.
-author: ShylaThompson
+author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
@@ -12,19 +12,19 @@ ms.reviewer: kamaybac
 ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3de1316844451d2bbfd4c8a4d4f72d75bfd27b9a13d72ed8237e0e8066147add
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a9a98c84c0dcc86e58b74f53a9061c4a0518ecbf
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755292"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964799"
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Nastavení profilu přehledu doručení zboží
 
-[!include [banner](../../includes/banner.md)]]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma je zaměřeno na nastavení profilu přehledu doručení. Profil přehledu doručení je kolekce pravidel, která budou použita při otevření stránky přehledu doručení uživatelem. Tento postup můžete projít v ukázkových datech společnosti USMF. Tento proces obvykle provádí přijímající pracovník.
 

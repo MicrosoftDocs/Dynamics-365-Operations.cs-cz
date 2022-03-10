@@ -2,11 +2,9 @@
 title: Nastavení úrokových sazeb pro kód úroku
 description: Kódy úroků obsahují nastavení, která určují, kdy bude placen úrok a jak se vypočítá na účtech po splatnosti.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
-ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
+ms.openlocfilehash: 09808433140f71bf2d7bfaaca87b6c27adb56d86c4c14ad44b37592d416fa2b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "5555358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716710"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Nastavení úrokových sazeb pro kód úroku
 
@@ -92,7 +90,6 @@ Takto nastavíte rozsah informací.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Příklad 2: Úrok podle rozsahu = dny
---------------------------------------------------
 
 Nastavíte kód úroku, který přiřadí úrok jednou za každých 15 dnů, po které platba faktury překročí její splatnost. Chcete založit výpočet na hodnotě částky úroku podle stupňovitých intervalů dnů. Hodnota úroku bude 10,00 za každých 15 dní během prvních 60 dnů, 15,00 za každých 15 dní od 61. do 90. dne a 20,00 za každých 15 dní od 91. dne. Hodnoty polí pro kód úroku nastavíte následovně.
 
@@ -113,7 +110,6 @@ Takto nastavíte rozsah informací.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Příklad 3: Úrok podle rozsahu = měsíce
-----------------------------------------------------
 
 Nastavíte kód úroku, který přiřadí úrok jednou za každý měsíc, po které platba faktury překročí její splatnost. Chcete založit výpočet na hodnotě úroku v procentech podle stupňovitých intervalů měsíců. Hodnota úroků bude 1,5 % měsíčně za první tři měsíce po splatnosti, 2,0 % měsíčně za druhé tři měsíce a 2,5 % měsíčně za každý měsíc po prvních šesti měsících. Hodnoty polí pro kód úroku nastavíte následovně.
 

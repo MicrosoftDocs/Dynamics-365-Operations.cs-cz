@@ -1,7 +1,7 @@
 ---
 title: Degresivní odpis 150 procent
-description: Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 150 procent“.
-author: saraschi2
+description: Toto téma poskytuje přehled metody degresivního odpisu 150 %.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1c6b7e92ea8b20123c0b1c1747c49847b0e2420
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827163"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883305"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Degresivní odpis 150 procent
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled o metodě odpisu „degresivní odpis 150 procent“.
+Toto téma poskytuje přehled metody degresivního odpisu 150 %.
 
 Pokud nastavujete odpisový profil dlouhodobého majetku a zaškrtnete volbu **Degresivní 150 %** v poli **Metoda** na stránce **Odpisové profily**, dlouhodobý majetek, který je přiřazen k tomuto odpisovému profilu, bude odpisován o stejný procentní podíl v každém období odpisu. Tato procentuální hodnota se vypočte na základě životnosti majetku. Když má například majetek životnost pět let, procentuální hodnota se vypočte jako 30 procent (150 % ÷ 5). 
 

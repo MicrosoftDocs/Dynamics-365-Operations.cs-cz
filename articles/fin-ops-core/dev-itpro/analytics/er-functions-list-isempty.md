@@ -2,9 +2,7 @@
 title: Funkce elektronického výkaznictví ISEMPTY
 description: Toto téma obsahuje obecné informace o použití funkce ISEMPTY elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b689e6d4bb849f07db5d00cf8a9dc5c16646a927
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 41d1f773e3fc2f076dbe3d826d14a364548d6656c95c03e54eb36345c004fecd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740959"
 ---
 # <a name="isempty-er-function"></a>Funkce elektronického výkaznictví ISEMPTY
 

@@ -2,7 +2,7 @@
 title: Nastavení online kanálu
 description: Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/02/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936937"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092105"
 ---
 # <a name="set-up-an-online-channel"></a>Nastavení online kanálu
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit nový online kanál v řešení Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Dynamics 365 Commerce podporuje více maloobchodních sítí. Tyto maloobchodní kanály zahrnují online obchody, kontaktní střediska a maloobchody (neboli kamenné obchody). Online obchody nabízí zákazníkům možnost nákupu produktů prodejce online i v maloobchodě.
 
@@ -55,11 +52,15 @@ Chcete-li vytvořit a konfigurovat nový online kanál, postupujte dle těchto k
 
 V následujícím obrázku je znázorněno vytvoření nového online kanálu.
 
-![Nvý online kanál](media/channel-setup-online-1.png)
+![Nvý online kanál.](media/channel-setup-online-1.png)
 
 Následující obrázek znázorňuje příklad online kanálu.
 
-![Příklad online kanálu](media/channel-setup-online-2.png)
+![Příklad online kanálu.](media/channel-setup-online-2.png)
+
+## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Přiřazení kanálu k Commerce Scale Unit
+
+Váš nový kanál musí být přiřazen k Commerce Scale Unit. Pokyny viz [Konfigurace kanálů pro použití Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
 
 ## <a name="set-up-languages"></a>Nastavit jazyky
 
@@ -75,7 +76,7 @@ Další úkoly požadované pro nastavení online kanálu zahrnují nastavení z
 
 Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek**, **Způsobů platby** a **Přiřazení skupiny plnění** na kartě **Nastavení**.
 
-![Další akce nastavení online kanálu](media/channel-setup-online-3.png)
+![Další akce nastavení online kanálu.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
@@ -90,7 +91,7 @@ Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto ka
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
-![Příklad způsobů platby](media/channel-setup-retail-5.png)
+![Příklad způsobů platby.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Nastavit způsoby dodání
 
@@ -104,7 +105,7 @@ Chcete-li změnit nebo přidat způsob dodání, postupujte podle následující
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
-![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
+![Nastavit způsoby dodání.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Nastavení přiřazení skupiny plnění
 
@@ -118,9 +119,9 @@ Chcete-li nastavit přiřazení skupiny plnění, postupujte podle následujíc�
 
 Následující obrázek znázorňuje příklad nastavení přiřazení skupiny plnění.
 
-![Nastavení Přiřazení skupiny plnění](media/channel-setup-retail-9.png)
+![Nastavení Přiřazení skupiny plnění.](media/channel-setup-retail-9.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled kanálů](channels-overview.md)
 

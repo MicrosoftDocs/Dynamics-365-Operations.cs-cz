@@ -1,27 +1,25 @@
 ---
 title: Vytvoření provozního prostředku
 description: Provozní prostředek provádí aktivity projektu nebo výrobního procesu.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 514b0b27065b4318891a84f364b39e8e378d6a4a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90535d3a6cf58fc10309cf035bc74143a96c2add
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255078"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576849"
 ---
 # <a name="create-an-operations-resource"></a>Vytvoření provozního prostředku
 

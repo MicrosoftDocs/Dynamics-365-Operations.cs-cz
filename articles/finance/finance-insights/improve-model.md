@@ -1,12 +1,10 @@
 ---
-title: Vylepšit model předpovědi (preview)
+title: Vylepšit model předpovědi
 description: Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009361"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595030"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Vylepšit model předpovědi (preview)
+# <a name="improve-the-prediction-model"></a>Vylepšit model předpovědi
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predikčních modelů. Model začnete vylepšovat v pracovním prostoru **Předpovědi plateb zákazníka** v Microsoft Dynamics 365 Finance. Kroky vylepšení jsou poté dokončeny v AI Builderu.
 
@@ -35,7 +32,7 @@ Toto téma popisuje funkce, které můžete použít ke zlepšení výkonu predi
 
 Nejprve vyberete jeden nebo více ze tří možných výsledků pro faktury: **Včas**, **Pozdě** a **Velmi pozdě**. Měly by být vybrány všechny tři výsledky. Pokud zrušíte výběr některého z výsledků, faktury se odfiltrují z procesu cvičení a přesnost predikce se sníží.
 
-[![Potvrzování výsledků](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Potvrzování výsledků.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Pokud vaše organizace vyžaduje pouze dva výsledky, změňte prahové hodnoty **Pozdě** a **Velmi pozdě** na 0 (nula) dnů. Tímto způsobem efektivně sbalíte předpověď na binární stav **Včas** nebo **Pozdě**.
 
@@ -53,7 +50,7 @@ V následujících částech jsou uvedena pole, která jsou k dispozici pro enti
 
 Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku faktury.
 
-[![Dostupná pole pro tabulku faktury](./media/available-fields.png)](./media/available-fields.png)
+[![Dostupná pole pro tabulku faktury.](./media/available-fields.png)](./media/available-fields.png)
 
 Následující pole by pro cvičení neměla být vybrána:
 
@@ -68,7 +65,7 @@ Následující pole by pro cvičení neměla být vybrána:
 
 Následující obrázek zobrazuje pole, která jsou k dispozici pro tabulku zákazníka.
 
-[![Dostupná pole pro tabulku zákazníka](./media/related-entities.png)](./media/related-entities.png)
+[![Dostupná pole pro tabulku zákazníka.](./media/related-entities.png)](./media/related-entities.png)
 
 Následující pole by pro cvičení nemělo být vybráno:
 
@@ -76,9 +73,8 @@ Následující pole by pro cvičení nemělo být vybráno:
 
 ## <a name="filters"></a>Filtry
 
-Filtry aktuálně nepodporují scénář predikce plateb zákazníka. Proto vyberte **Přeskočit tento krok** a pokračujte na souhrnnou stránku.
+Faktury, které se používají ke trénování, můžete filtrovat nastavením kritérií filtru pro pole na faktuře nebo v tabulkách zákazníků. Můžete například nastavit prahovou hodnotu tak, aby zahrnovala pouze faktury, jejichž součet se rovná určité částce nebo ji překračuje. Alternativně můžete vyloučit faktury spojené se zákazníky v konkrétní skupině zákazníků.
 
-[![Detailní model s filtry](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Další informace o filtrování dat najdete v části [Vytvoření predikčního modelu](/ai-builder/prediction-create-model#filter-your-data).
 
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

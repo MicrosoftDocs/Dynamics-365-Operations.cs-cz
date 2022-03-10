@@ -2,11 +2,9 @@
 title: Import souborů v XML formátu s volitelnými atributy
 description: Toto téma obsahuje informace o navrhování formátů elektronického výkaznictví, které určují atributy XML pro analýzu příchozích elektronických dokumentů ve formátu XML.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 14b14dd609805a7cf9331427012b991791698cfd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757290"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import souborů v XML formátu s volitelnými atributy
 
@@ -130,3 +128,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 3. Klikněte na **Procházet** a zvolte soubor **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Klikněte na tlačítko **OK**.
 5. Prohlédněte si vygenerovaný soubor. Všimněte si, že stejný soubor byl importován jako návrh formátu. V tomto okamžiku zvažte atribut ID pro prvek ‘document’ jako volitelný.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

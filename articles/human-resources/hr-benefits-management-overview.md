@@ -1,105 +1,156 @@
 ---
 title: Přehled správy zaměstnaneckých výhod
-description: Přehled funkce správy zaměstnaneckých výhod v Dynamics 365 Human Resources. Nabídněte svým zaměstnancům rozšířené možnosti zaměstnaneckých výhod pomocí snadno použitelného online prostředí.
-author: andreabichsel
-ms.date: 04/21/2021
-ms.topic: article
+description: Toto téma obsahuje přehled funkce správy zaměstnaneckých výhod v modulu Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 12/06/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b6ace2ce83c668e83ec1b433f8062148a6dfaf4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 696c7632fd8adda71b2b67d59fba7f7d83193f5b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059057"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065936"
 ---
 # <a name="benefits-management-overview"></a>Přehled správy zaměstnaneckých výhod
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Chcete-li si zachovat konkurenceschopnost, musíte nabídnout bohatý soubor zaměstnaneckých výhod, abyste přilákali a udrželi své nejlepší zaměstnance. Kromě standardních výhod, jako je pojištění zdravotní a zubní péče, můžete také nabízet rozšířené služby, např. pomoc s adopcí, rekreační programy a příspěvky na ošacení. Funkce správy zaměstnaneckých výhod ve službě Microsoft Dynamics 365 Human Resources poskytuje flexibilní řešení, které podporuje širokou škálu možností zaměstnaneckých výhod. Aplikace Human Resources také zahrnuje snadno použitelné zaměstnanecké prostředí, které prezentuje vaše nabídky.
 
 - Vylepšené plány zaměstnaneckých výhod vám umožňují vytvářet a spravovat jedinečné plány zaměstnaneckých výhod a podporovat složité tabulky sazeb zaměstnaneckých výhod a vnořené úrovně. Můžete snadno vytvářet programy, balíky a pravidla automatického zařazení pro zaměstnanecké výhody k usnadnění použití zaměstnancem.
-
 - Programy flexibilních kreditů umožňují rozdělit podporu mezi důchod a další životní události.
-
 - Rozsáhlá pravidla způsobilosti zajišťují poskytnutí správných zaměstnaneckých výhod odpovídajícím zaměstnancům.
-
 - Online zařazení do zaměstnaneckých výhod poskytuje vašim zaměstnancům snadno použitelné prostředí.
-
 - Kvalifikované zpracování životních událostí podporuje budoucí žívotní události.
 
 Chcete-li získat přístup k ukázkovým datům, musíte znovu nasadit izolované testovací prostředí (sandbox).
 
->[!NOTE]
->Nyní můžete přizpůsobit formuláře pro správu výhod. Nyní můžete přidat vlastní pole související s mírou pokrytí formuláře **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
->![Vlastních pole správy výhod](media/hr-benefits-management-custom-fields.png)
+> [!NOTE]
+> Nyní můžete přizpůsobit stránky pro správu výhod. Vlastní pole související s mírou pokrytí lze přidat do stránky **Možnost pokrytí** pro plány výhod. Další informace o práci s vlastními poli naleznete v tématu [Vlastní pole](hr-developer-custom-fields.md).
+>
+> ![Vlastních pole správy výhod](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Povolení správy zaměstnaneckých výhod
 
-Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také sděluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí nebo jsou zakázány po zapnutí správy zaměstnaneckých výhod.
+Toto téma popisuje způsob, jakým lze zapnout funkce v aplikaci Human Resources. Také vysvětluje, které existující funkce v aplikaci Human Resources správa zaměstnaneckých výhod nahradí a které jsou zakázány po zapnutí správy zaměstnaneckých výhod.
 
 > [!IMPORTANT]
 > Po povolení Správy zaměstnaneckých výhod v **Produkčním** prostředí ji již nelze zakázat. Doporučujeme povolit a otestovat Správu zaměstnaneckých výhod v prostředí **Sandbox** před jejím povolením v **Produkčním** prostředí. Existují významné rozdíly mezi staršími funkcemi výhod a novými funkcemi pro správu výhod, které vyžadují další nastavení a měly by být testovány před uvedením do produkce.
 
-- [Správa funkcí](hr-admin-manage-features.md)
+Další informace naleznete v tématu [Správa funkcí](hr-admin-manage-features.md).
 
-## <a name="configure-employee-information"></a>Konfigurace informací o zaměstnancích
+## <a name="process-overview"></a>Přehled procesu
 
-Před zapojením zaměstnanců do zaměstnaneckých výhod je nutné zadat požadované informace. Je nutné, aby byl zaměstnanec zapsán do **Plánu fixní kompenzace** první den a musíte vybrat **Frekvence plateb zaměstnaneckých výhod** v **Podrobnostech o zaměstnání** ve formuláři **Pracovník**.
+Proces konfigurace výhod zahrnuje následující úkoly:
 
-Pokud máte zaměstnance, který dostává dodatečné odměny, jako jsou provize, můžete přidat částku **Roční výplata benefitů** ze záznamu zaměstnance. Human Resources budou využívat částku **Roční výplata benefitů** při určování částek krytí, namísto pevné roční náhrady. **Roční výplata benefitů** musí platit od počátečního data zaměstnance nebo od začátku období zaměstnaneckých výhod, podle toho, co nastane dříve. Pokud je pro zaměstnance zaznamenána jak pevná odměna, tak roční částka zamšstnaneckých výhod, použije se při stanovení výše krytí roční plat zaměstnaneckých výhod.
+1.  Nastavte požadované informace o výhodách.
+2.  Nastavte volitelné informace o výhodách.
+3.  Nastavení plánů zaměstnaneckých výhod.
+4.  Nastavení programů flexibilních kreditů (volitelné).
+5.  Nakonfigurujte požadované informace o zaměstnancích.
+6.  Nakonfigurujte volitelné informace o zaměstnancích.
+7.  Zpracovat zaměstnance k určení způsobilosti.
+8.  Zaměstnanci si vybírají plány prostřednictvím samoobsluhy zaměstnanců (volitelně).
+9.  Potvrďte výběr plánu zaměstnanců.
+10. Zpracování životní události (volitelné).
+11. Aktualizace sazeb (volitelné).
 
+## <a name="set-up-required-benefit-information"></a>Nastavte požadované informace o výhodách
+
+Předtím, než mohou být zaměstnanci zapsáni do plánů, musí být nastaveno více komponent:
+
+- **Parametry správy výhod** - Tato nastavení jsou sdílena mezi společnostmi. Můžete nastavit výchozí kódy důvodů, povolit možnost **Roční výplata zaměstnaneckých výhod**, nastavit výchozí frekvenci plateb pro nové zaměstnance a povolit životní události. Další informace naleznete v tématu [Nastavení parametrů správy zaměstnaneckých výhod](hr-benefits-setup-parameters.md).
+- **Možnosti nároku na osobní kontakt** - Osobní kontakty jsou jednotlivci, kteří budou závislými osobami nebo příjemci plánů, které jsou zřízeny. Typicky jsou to děti, manželé nebo důvěryhodné organizace. Další informace viz [Konfigurace možností způsobilosti osobních kontaktů](hr-benefits-setup-contact-eligibility-options.md).
+- **Možnosti pokrytí** - Nastavte typy pokrytí, které budou k dispozici pro plán. Konkrétně definujte, na koho by se mělo vztahovat pokrytí nebo kolik je k dispozici pokrytí. Další informace viz [Vytvoření možností pokrytí](hr-benefits-setup-coverage-options.md).
+- **Typy plánů** - Nastavte typy plánů, které budou k dispozici při vytváření plánu výhod. Mezi příklady typů plánů patří **Zubní**, **Oční** a **Úspory**. Některá důležitá nastavení typu plánu určují nastavení, která jsou k dispozici v plánu výhod. Další informace viz [Vytvoření typů plánů](hr-benefits-setup-plan-types.md).
+- **Pravidla způsobilosti** - Pravidla způsobilosti se používají k určení, zda má zaměstnanec nárok na plán. S každým plánem výhod musí být spojeno alespoň jedno pravidlo způsobilosti. Další informace viz [Konfigurace pravidel a možností způsobilosti](hr-benefits-setup-eligibility-rules.md).
+- **Frekvence plateb** - Při konfiguraci sazeb výhod jsou vyžadovány frekvence plateb. Četnost plateb, která se používá na kurzu, pomáhá identifikovat částku, kterou zaměstnanec nebo zaměstnavatel dluží na týdenní, měsíční nebo roční bázi. Další informace naleznete v tématu [Nastavení frekvence plateb](hr-benefits-setup-payment-frequencies.md).
+- **Sazby** - Sazby definují, kolik bude výhoda stát zaměstnance nebo zaměstnavatele. Pokud mají být peníze přiděleny zpět zaměstnanci (například kredit na členství v tělocvičně), je zadána záporná sazba. Další informace naleznete v tématu [Konfigurace sazeb](hr-benefits-setup-rates.md).
+- **Úrovně sazeb** - Úrovně sazeb se používají, když se sazba musí změnit na základě některých kritérií. Nejběžnější úrovní sazeb je jednotlivá úroveň založená na věku. Lze však také nastavit dvojí úrovně sazeb, kde se sazba může změnit na základě pohlaví, věku nebo jiných kritérií.
+- **Odpočty** - Odpočty jsou v zásadě informace / kódy záhlaví, které budou předány mzdovému systému za účelem identifikace odpočtu dávky. Tyto odpočty musíte nastavit, protože budou vyžadovány v plánu dávek. Další informace naleznete v tématu [Konfigurace odpočtů](hr-benefits-setup-deductions.md).
+- **Období výhod** - Období výhod je období, kdy budou mít zaměstnanci krytí výhod. Je také známý jako plánovaný rok. Zde se také nastavují otevřené doby registrace.
+
+## <a name="set-up-optional-benefit-information"></a>Nastavte volitelné informace o výhodách
+
+K vytvoření plánu výhod není nutné nastavovat následující součásti:
+
+- **Programy** - Program je soubor výhod, které se řídí stejnými pravidly způsobilosti. Například každý v obchodním oddělení může dostat mobilní telefon.
+- **Sady** - Sada je skupina výhod, kde je nutné vybrat jeden plán, než bude k dispozici možnost výběru dalších plánů. Například vysoce odpočitatelný lékařský plán může být spojen s plánem účtu zdravotního spoření (HSA).
+- **Typy životních událostí** - Životní události jsou události, které umožňují změnu v pokrytí zaměstnance. Typy životních událostí jsou propojeny s typem plánu. Například typ lékařského plánu může umožnit změny plánů z důvodu narození nebo adopce nebo z důvodu změny rodinného stavu. Typ pojistného plánu však nemusí umožňovat žádné změny z důvodu životních událostí. Další informace naleznete v tématu [Konfigurace typů životních událostí](hr-benefits-setup-life-event-types.md).
+- **Čekací dny a čekací lhůty** - Čekací dobu pokrytí lze nastavit v plánu výhod. Například nově přijatý zaměstnanec může být schopen zapsat se k 401(k) až po třech měsících zaměstnání. V tomto případě je čekací doba tři měsíce. Čekací dny se používají v čekací době, pokud lze nové registrace zpracovat a odeslat poskytovateli pouze v konkrétní den v měsíci. Například pokud zápisy 401(k) lze zpracovat pouze patnáctého měsíce, po třech měsících zaměstnání je nastavená čekací doba tři měsíce a čekací den patnáctý. Další informace viz [Konfigurujte čekací dny](hr-benefits-setup-waiting-days.md) a [Konfigurujte čekací doby](hr-benefits-setup-waiting-periods.md).
+- **Kódy důvodů** - Kódy důvodů se používají k vysvětlení, proč se pro zaměstnance může změnit výhoda. Další informace naleznete v tématu [Nastavení kódů důvodu](hr-benefits-setup-reason-codes.md).
+
+## <a name="set-up-benefit-plans"></a>Nastavení plánů zaměstnaneckých výhod
+
+Když nastavujete plán výhod, musíte před registrací zaměstnanců dokončit následující kroky:
+
+- Přiřazení období zaměstnanecké výhody.
+- Připojit možnosti pokrytí.
+- Nastavte datum začátku platnosti a datum konce platnosti na kartě **Všeobecné**.
+- Přiřaďte alespoň jedno pravidlo způsobilosti.
+- Nastavte pole **Povolit/pokračovat v registraci** na kartě **Nastavení**.
+
+Další informace o postupu při nastavení plánů zaměstnaneckých výhod získáte v tématu [Nastavení plánů zaměstnaneckých výhod](hr-benefits-plans-setup.md).
+
+## <a name="set-up-flex-credit-programs-optional"></a>Nastavení programů flexibilních kreditů (volitelné)
+
+Programy pružného kreditu umožňují registrovat zaměstnance k zaměstnaneckým výhodám podle předem stanoveného počtu pružných kreditů. Zaměstnanci si mohou vybrat způsob přidělení pružných kreditů. Například pokud jsou zaměstnanci již pojištěni v rámci plánu zdravotního pojištění svého manžela či manželky, nemusí používat své kredity pro zdravotní pojištění. Proto je možná budou chtít použít pro jiné výhody. Další informace o flexibilních kreditních programech viz [Nastavit flexibilní kreditní programy](hr-benefits-plans-flex-credit-programs.md).
+
+## <a name="configure-required-employee-information"></a>Nakonfigurujte požadované informace o zaměstnancích
+
+Před zapojením zaměstnanců do zaměstnaneckých výhod je nutné zadat požadované informace. 
+
+Zaměstnanec musí mít přiřazenu **Pozici**. **Pozici** lze přiřadit zaměstnanci na stránce **Pracovník** nebo **Pozice** aktualizací hodnoty **Přiřazení pracovníka**. 
+
+Dále musí být zaměstnanci registrování v plánu fixních odměn v den zahájení, nebo musí mít částku **Roční výše zaměstnaneckých výhod dle platu**. Před přidělením **Fixní kompenzace** k zaměstnanci musí být přiřazena **Pozice**. 
+
+> [!NOTE] 
+> **Počáteční datum fixní kompenzace** nesmí být před **Datem přiřazení pozice**.
+
+Alternativně, pokud máte zaměstnance, který dostává dodatečné odměny, jako jsou provize, můžete přidat částku **Roční výplata zaměstnaneckých výhod** ze záznamu zaměstnance. Human Resources budou využívat částku **Roční výplata zaměstnaneckých výhod** při určování částek krytí, namísto částky **Fixní roční kompenzace**. **Roční výplata benefitů** musí platit od počátečního data zaměstnance nebo od začátku období zaměstnaneckých výhod, podle toho, co nastane dříve. K přiřazení **Roční výplaty zaměstnaneckých výhod** nicméně není vyžadována pozice. Chcete-li povolit funkci **Roční výplata zaměstnaneckých výhod**, přejděte na stránku **Sdílené parametry Human Resources** na kartě **Správa zaměstnaneckých výhod**. Tato funkce je ve výchozím nastavení vypnutá.
+
+> [!IMPORTANT]
+> Pokud jsou pro zaměstnance zadány obě částky **Fixní kompenzace** a **Roční výplata zaměstnaneckých výhod**, **Roční výplata zaměstnaneckých výhod** se použije při určování částky krytí. V sekci **Podrobnosti o zaměstnání** na stránce **Pracovník** musíte vybrat hodnotu v poli **Frekvence vyplácení zaměstnaneckých výhod**.
+
+## <a name="configure-optional-employee-information"></a>Nakonfigurujte volitelné informace o zaměstnancích
 Při vytvoření plánu zaměstnaneckých výhod, který používá sazby založené na pohlaví nebo věku, je nutné zadat datum narození a pohlaví zaměstnance pro výpočet nákladů na zaměstnanecké výhody.
 
-## <a name="configure-benefits-management"></a>Konfigurace správy zaměstnaneckých výhod
+## <a name="process-employees-to-determine-eligibility"></a>Zpracovat zaměstnance k určení způsobilosti
+Předtím, než se zaměstnanci mohou zaregistrovat do plánů, je spuštěno zpracování způsobilosti, aby se zjistilo, pro které plány mají nárok. Výsledky procesu způsobilosti si můžete prohlédnout v **Prohlížeči výsledků procesu**. Další informace naleznete v tématu [Zpracování způsobilosti k registraci](hr-benefits-process-enrollment-eligibility.md).
 
-Před vytvořením plánů zaměstnaneckých výhod pro vaše zaměstnance musíte nakonfigurovat možnosti pro plány.
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Zaměstnanci si vybírají plány prostřednictvím **samoobsluhy pro zaměstnance** (volitelně)
 
-- [Nastavení parametrů správy zaměstnaneckých výhod](hr-benefits-setup-parameters.md)
-- [Konfigurace možností a pravidel způsobilosti](hr-benefits-setup-eligibility-rules.md)
-- [Konfigurace možností způsobilosti osobních kontaktů](hr-benefits-setup-contact-eligibility-options.md)
-- [Vytvoření možností pokrytí](hr-benefits-setup-coverage-options.md)
-- [Nastavení frekvencí platby](hr-benefits-setup-payment-frequencies.md)
-- [Konfigurace typů životních událostí](hr-benefits-setup-life-event-types.md)
-- [Vytvoření typů plánu](hr-benefits-setup-plan-types.md)
-- [Nastavení kódů důvodů](hr-benefits-setup-reason-codes.md)
-- [Nastavení kódů úrovně](hr-benefits-setup-tier-codes.md)
-- [Konfigurace sazeb](hr-benefits-setup-rates.md)
-- [Konfigurace srážek](hr-benefits-setup-deductions.md)
-- [Konfigurace dnů čekání](hr-benefits-setup-waiting-days.md)
-- [Konfigurace období čekání](hr-benefits-setup-waiting-periods.md)
-- [Nastavení pravidel zaokrouhlování](hr-benefits-setup-rounding-rules.md)
-- [Vytvoření kategorií zaměstnání](hr-benefits-setup-employment-categories.md)
-- [Nastavení typů zaměstnání](hr-benefits-setup-employment-types.md)
-- [Konfigurace samoobsluhy pro zaměstnance](hr-benefits-setup-employee-self-service.md)
+Když dojde k otevřené registraci, zaměstnanci jsou nově najati nebo dojde k životní události, zaměstnanci si mohou vybrat nebo aktualizovat své zaměstnanecké výhody prostřednictvím **samoobsluhy pro zaměstnance**. Další informace viz [Konfigurace samoobsluhy pro zaměstnance](hr-benefits-setup-employee-self-service.md).
 
-## <a name="create-benefit-plans"></a>Vytvoření plánů zaměstnaneckých výhod
+## <a name="confirm-employee-plan-selections"></a>Potvrďte výběr plánu zaměstnanců
 
-Tyto články ukazují, jak vytvářet plány zaměstnaneckých výhod, včetně balíků a programů pro pružné kredity.
+Výhody, které si zaměstnanci vyberou, musí být potvrzeny, než budou zaměstnanci považováni za zapsané v nich. Výhody lze vybrat také jménem zaměstnance. Chcete-li vybrat nebo potvrdit výhody, na stránce **Zaměstnanec** na kartě **Zamšstnanecké výhody** vyberte **Plány zaměstnaneckých výhod**. Chcete-li vybrat nebo potvrdit výhody pro více zaměstnanců, použijte stránku **Hromadná aktualizace plánů zaměstnaneckých výhod**.
 
-- [Nastavení plánů zaměstnaneckých výhod](hr-benefits-plans-setup.md)
-- [Nastavení programů flexibilních kreditů](hr-benefits-plans-flex-credit-programs.md)
+## <a name="life-event-processing-optional"></a>Zpracování životní události (volitelné)
 
-## <a name="process-benefit-plans"></a>Zpracování plánů zaměstnaneckých výhod
+Během životního cyklu zaměstnance se každý zaměstnanec může setkat s různými životními událostmi, jako je manželství, změny v zaměstnání nebo změny závislých osob nebo příjemců. Chcete-li používat životní události, musíte je povolit na stránce **Sdílené parametry lidských zdrojů**. Nastavte typy životních událostí a možnosti životních událostí pro typy plánů.
 
-Některé změny je nutné zpracovat, aby byly aktivní.
+Než bude možné zpracovat životní události, musí být v průběhu doby náboru alespoň jednou spuštěna možnost otevřít registraci. V USA je otevření registrace obvykle jednou za rok. Mimo USA může být otevření registrace spuštěno v době nástupu do zaměstnání. Zpracování životních událostí nevyžaduje, aby pracovníci vybrali plán výhod. Pracovníci však musí být zahrnuti do zpracování otevřené registrace. Další informace naleznete v následujících tématech:
 
-- [Zpracování způsobilosti k registraci](hr-benefits-process-enrollment-eligibility.md)
 - [Zpracování životních událostí](hr-benefits-process-life-events.md)
 - [Zpracování změn životních událostí](hr-benefits-process-life-event-changes.md)
 - [Zpracování způsobilosti k životním událostem](hr-benefits-process-life-event-eligibility.md)
-- [Zpracování změn sazby](hr-benefits-process-rate-changes.md)
 
+## <a name="rate-updates-optional"></a>Aktualizace sazeb (volitelné)
 
+Někdy se sazba výhod během období plánu mění. Chcete-li aktualizovat sazby pro zaměstnance, kteří jsou již zapsáni v plánu, musíte zpracovat změny sazby. Další informace naleznete v tématu [Zpracování změn sazeb](hr-benefits-process-rate-changes.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

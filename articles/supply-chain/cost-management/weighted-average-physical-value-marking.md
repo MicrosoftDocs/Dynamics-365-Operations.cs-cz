@@ -2,11 +2,9 @@
 title: Vážený průměr s fyzickou hodnotou a označením
 description: Vážený průměr představuje skladový model založený na principu váženého aritmetického průměru. V tomto modelu jsou při uzávěrce skladové výdeje oceňovány průměrnou cenou položek přijatých na sklad plus jakékoli množství na skladě z předcházejícího období.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60ffd74363056babdd9d50df5be93d3ae466d860
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d94e61384ad2d0880a6d62b963e9a99518a41db1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011715"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571994"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vážený průměr s fyzickou hodnotou a označením
 
@@ -67,7 +65,7 @@ V následujícím scénáři byl zaúčtován finančně aktualizovaný příjem
 
 Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu přímého vyrovnání bez možnosti Zahrnovat fyzickou hodnotu. 
 
-![Metoda Vážený průměr DS bez možnosti Zahrnovat fyzickou hodnotu](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Metoda Vážený průměr DS bez možnosti Zahrnovat fyzickou hodnotu.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 - Skladové transakce jsou reprezentovány svislými šipkami.
@@ -101,7 +99,7 @@ V grafu jsou uvedeny následující transakce:
 
 Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti Zahrnovat fyzickou hodnotu. 
 
-![Metoda Vážený průměr SS bez možnosti Zahrnovat fyzickou hodnotu](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Metoda Vážený průměr SS bez možnosti Zahrnovat fyzickou hodnotu.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 - Skladové transakce jsou reprezentovány svislými šipkami.
@@ -130,7 +128,7 @@ V níže uvedeném grafu jsou znázorněny následující transakce:
 
 Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu přímého vyrovnání s možností Zahrnovat fyzickou hodnotu. 
 
-![Metoda Vážený průměr DS s možností Zahrnovat fyzickou hodnotu](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Metoda Vážený průměr DS s možností Zahrnovat fyzickou hodnotu.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 - Skladové transakce jsou reprezentovány svislými šipkami.
@@ -163,7 +161,7 @@ V grafu jsou uvedeny následující transakce:
 
 Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti Zahrnovat fyzickou hodnotu. 
 
-![Metoda Vážený průměr SS s možností Zahrnovat fyzickou hodnotu](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Metoda Vážený průměr SS s možností Zahrnovat fyzickou hodnotu.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 - Skladové transakce jsou reprezentovány svislými šipkami.
@@ -211,7 +209,7 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 
 Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu s označením. 
 
-![Vážený průměr s označením](./media/weightedaveragewithmarking.gif) 
+![Vážený průměr s označením.](./media/weightedaveragewithmarking.gif) 
 
 **Klíč k diagramu**
 - Skladové transakce jsou reprezentovány svislými šipkami.
@@ -229,3 +227,6 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,31 +1,28 @@
 ---
-title: Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy
+title: Použití jedné platby na úhradu více faktur, které zasahují do více období slevy
 description: Toto téma popisuje, jak je více faktur vypláceno, pokud jednotlivé faktury splňují nárok na platební slevu. Scénáře v tomto článku popisují, jak se liší využité platební slevy v závislosti na tom, kdy je platba provedena.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 6c86423c9e3453d8be11e6bdbc3484647e26e9eeec59c9a2e888cc5a2b2b5592
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769052"
 ---
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy
+# <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Použití jedné platby na úhradu více faktur, které zasahují do více období slevy
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +66,7 @@ Pokud Arnie vytvoří deník plateb a úplně vyrovná faktury do 1. července, 
 | Vybrané a zvýrazněné | Normální            | FTI-10042 | 4032    | 25. 6. 2015 | 25. 7. 2015 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Částečné vyrovnání 29. června
-Odběratel 4032 může uhradit částečnou platbu, například polovinu každé faktury. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání. Na každém řádku zadá částku k vyrovnání na základě pokynů uvedených odběratelem. Když Arnie vybere řádek, uvidí částku slevy pro daný řádek a částku platební slevy, která je využita. Vzhledem k tomu, že zákazník platí poloviční fakturu, Arnie uvidí hodnotu v poli **Částka platební slevy** pro fakturu FTI 10042 jako **20,00**, ale hodnota v poli **Přijatá platební sleva** je **10,00**. Částka platby je 1 485,00.
+Odběratel 4032 může uhradit částečnou platbu, například polovinu každé faktury. Arnie vytvoří platbu pro odběratele 4032 a potom otevřete stránku **Vyrovnat transakce**. Na stránce **Vyrovnat transakce** Arnie označí všechny tři řádky faktury pro vyrovnání. Na každém řádku zadá částku k vyrovnání na základě pokynů uvedených odběratelem. Když Arnold vybere řádek, uvidí částku slevy pro daný řádek a částku platební slevy, která je využita. Vzhledem k tomu, že zákazník platí poloviční fakturu, Arnie uvidí hodnotu v poli **Částka platební slevy** pro fakturu FTI 10042 jako **20,00**, ale hodnota v poli **Přijatá platební sleva** je **10,00**. Částka platby je 1 485,00.
 
 | Označit                     | Použít platební slevu | Doklad   | Účet | Datum      | Datum splatnosti  | Faktura | Částka Má dáti v transakční měně | Částka Dal v transakční měně | Měna | Částka k vyrovnání |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -101,3 +98,6 @@ Arnold informace může zobrazit na stránce **Transakce odběratele**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

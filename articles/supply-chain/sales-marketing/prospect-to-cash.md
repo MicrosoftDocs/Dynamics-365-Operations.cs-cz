@@ -1,12 +1,10 @@
 ---
 title: zpeněžení potenciálního zákazníka
 description: Toto téma obsahuje přehled řešení zpeněžení potenciálního zákazníka mezi Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70ea2638408296df283a030dedce03b22cb57d81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b96f22d711ce5b34c2f8de5a86caf5f89dd3f337
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578985"
 ---
 # <a name="prospect-to-cash"></a>Zpeněžení potenciálního zákazníka
 

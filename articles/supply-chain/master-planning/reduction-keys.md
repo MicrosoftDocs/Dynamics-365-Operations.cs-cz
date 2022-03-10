@@ -1,7 +1,7 @@
 ---
 title: Redukční klíče prognózy
 description: Toto téma obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736616"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570818"
 ---
 # <a name="forecast-reduction-keys"></a>Redukční klíče prognózy
 
@@ -86,7 +86,18 @@ V tomto případě, pokud spustíte plánování prognózy 1. ledna, požadavky 
 
 ### <a name="transactions--reduction-key"></a>Transakce – redukční klíč
 
-Pokud zvolíte **Transakce – redukční klíč**, požadavky na prognózu jsou sníženy podle transakcí probíhajících během časového období, které jsou definovány podle redukčního klíče.
+Pokud nastavíte pole **Metoda používaná ke snížení požadavků na prognózy** do *Transakce - redukční klíč*, požadavky na prognózu jsou sníženy o transakce kvalifikované poptávky, ke kterým dochází během období definovaných redukčním klíčem.
+
+Kvalifikovaná poptávka je definována polem **Snížit předpověď o** na stránce **Skupiny pokrytí**. Pokud nastavíte pole **Snížit předpověď o** na *Objednávky*, pouze transakce prodejní objednávky jsou považovány za kvalifikovanou poptávku. Pokud ho nastavíte na *Všechny transakce*, všechny transakce se zásobami nesouvisející s mezipodnikovými emisemi jsou považovány za kvalifikovanou poptávku. Nastavte možnost **Zahrnout mezipodnikové objednávky** na *Ano*, pokud by měly být zahrnuty mezipodnikové objednávky, když je prognóza snížena.
+
+Snížení prognózy začíná prvním (nejranějším) záznamem prognózy poptávky v klíčovém období redukce. Pokud je množství kvalifikovaných skladových transakcí větší než množství řádků prognózy poptávky ve stejném klíčovém období redukce, použije se zůstatek množství transakcí zásob ke snížení množství prognózy poptávky v předchozím období (pokud existuje nespotřebovaná prognóza).
+
+Pokud v předchozím klíčovém období redukce nezůstane žádná nespotřebovaná prognóza, bude v následujícím měsíci použito množství inventárních transakcí ke snížení množství prognózy (pokud existuje nespotřebovaná prognóza).
+
+Hodnota pole **Procento** na řádcích redukčních klíčů se nepoužívá, když je pole **Metoda používaná ke snížení požadavků na prognózy** nastaveno na *Transakce - redukční klíč*. K definování období redukčního klíče se používají pouze data.
+
+> [!NOTE]
+> Jakákoli prognóza zveřejněná k dnešnímu datu nebo před ním bude ignorována a nebude použita k vytváření plánovaných objednávek. Pokud je například vaše prognóza poptávky na měsíc vygenerována 1. ledna a spustíte hlavní plánování, které zahrnuje prognózy poptávky na 2. ledna, výpočet bude ignorovat řádek prognózy poptávky s datem 1. ledna.
 
 #### <a name="example-transactions--reduction-key"></a>Příklad: Transakce – redukční klíč
 

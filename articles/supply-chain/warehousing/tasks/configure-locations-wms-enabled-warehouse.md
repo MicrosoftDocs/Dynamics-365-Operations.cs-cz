@@ -2,11 +2,9 @@
 title: Konfigurace umístění ve skladu s povolenými procesy řízení skladu
 description: Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (sklad, který používá procesy rozšířené správy skladu).
 author: perlynne
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
@@ -15,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8df9f17d9d8c0c84c7c6a829308d44d70bae612f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239103"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599341"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurace umístění ve skladu s povolenými procesy řízení skladu
 
@@ -35,7 +33,7 @@ Tento průvodce popisuje konfiguraci skladového místa pro nový sklad WMS (skl
 2. Klepněte na možnost **Nový**.
 3. Zadejte hodnotu do pole **Sklad**.
 4. Zadejte hodnotu do pole **Název**.
-5. Zadejte hodnotu do pole **Pracoviště**.
+5. V poli **Web** vyberte nebo zadejte existující hodnotu webu.
 6. Rozbalte sekci **Sklad**.
 7. Nastavte **Použít procesy řízení skladu** na Ano. Toto nastavení umožňuje spustit rozšířené skladové procesy prostřednictvím skladové práce a mobilních zařízení.
 8. Zavřete stránku.

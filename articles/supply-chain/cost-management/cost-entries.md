@@ -2,29 +2,26 @@
 title: Položky nákladů
 description: Tento článek obsahuje informace o položkách nákladů a o tom, kdy se vytváří. Položka nákladů je záznam, který registruje množství a náklady na danou událost.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19131
 ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3116f9fd2d1fe6a0967b114a069f495cea6217a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 53e2dd7375daf0d33ff61b870fecfdaa44dd0838
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4423480"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575913"
 ---
 # <a name="cost-entries"></a>Položky nákladů
 
@@ -65,10 +62,12 @@ Stránka **Položky nákladů** umožňuje filtrovat podle ID doklad a data dokl
 > [!NOTE]
 > Položky nákladů jsou k dispozici pouze pro [objekty nákladů](cost-object.md) nebo uvolněné produkty.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Nákladové objekty](cost-object.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

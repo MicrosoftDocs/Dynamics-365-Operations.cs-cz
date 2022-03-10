@@ -2,26 +2,23 @@
 title: Správa pokladní hotovosti pro Commerce pro východní Evropu
 description: Toto téma popisuje, jak nastavit a používat funkce správy hotovosti v aplikaci Commerce pro východní Evropu.
 author: epopov
-manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b7c7c63083dceebe73bfa04169a0b2da3228c8b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7a4c2e404b42a10a8d5f8b57135c56ae479a9efc3f5a8cef30831d02a3e53fe6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719910"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Správa pokladní hotovosti pro Commerce pro východní Evropu
 
@@ -29,7 +26,7 @@ ms.locfileid: "4407597"
 
 Tento článek obsahuje informace o východoevropské lokalizaci specifické pro oblast obchodu.
 
-V souladu s požadavky na účtování ve východní Evropě můžete nastavit operace pro pokladní účty pro automatizaci procesů pro příjemky, pokladní doklady a výpisy hotovosti. Více informací naleznete v části [(EEUR) Nastavení parametrů pro správu hotovosti](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
+V souladu s požadavky na účtování ve východní Evropě můžete nastavit operace pro pokladní účty pro automatizaci procesů pro příjemky, pokladní doklady a výpisy hotovosti. Více informací naleznete v části [(EEUR) Nastavení parametrů pro správu hotovosti](/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet nebo kuponů. V maloobchodním pokladním místě (POS) jsou hotovost, doklady o platbě kartou a ostatní platby zpracovány n pokladně.
 
@@ -39,7 +36,7 @@ Pomocí správy hotovosti v aplikaci Commerce můžete provádět následující
 - Použít deníky hotovosti k zaúčtování hotovostních transakcí a plateb zákazníků přijímaných v Retail POS.
 - Sdružení transakcí v řádku výkazu při zaúčtování výkazu. Můžete sdružovat odvody do trezoru, odvody do banky, transakce dokladu, odebírat transakce odvodu, transakce s plovoucí položkou, příjmové transakce, výdajové transakce, platby odběratelů, prodejní transakce a návratové transakce.
 
-Všechny transakce, které se uskutečňují v POS, jsou zaúčtovány pomocí deníku hlavní knihy. Pokladní deníky plateb, deníky plateb odběratelů a hlavní deníky můžete používat k vytvoření a zaúčtování výkazů. Více informací naleznete v části [Vytvoření, výpočet a zaúčtování výkazů pro maloobchod](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+Všechny transakce, které se uskutečňují v POS, jsou zaúčtovány pomocí deníku hlavní knihy. Pokladní deníky plateb, deníky plateb odběratelů a hlavní deníky můžete používat k vytvoření a zaúčtování výkazů. Více informací naleznete v části [Vytvoření, výpočet a zaúčtování výkazů pro maloobchod](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 Na stránce **Zaúčtované výkazy** v podokně akcí můžete provést následující:
 
@@ -50,7 +47,7 @@ Na stránce **Zaúčtované výkazy** v podokně akcí můžete provést násled
 
 Následující postup nastavení je nutné dokončit před použitím řízení hotovosti:
 
-- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v POS můžete použít různé metody platby. Další informace o metodách platby naleznete v tématu [Metody platby](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v POS můžete použít různé metody platby. Další informace o metodách platby naleznete v tématu [Metody platby](/dynamics365/unified-operations/retail/payment-methods).
 - Nastavení parametrů pro hotovostní operace.
 - Nastavení metody platby pro platby v hotovosti v obchodě.
 
@@ -93,3 +90,6 @@ Následující postup slouží k nastavení metody platby pro platby v hotovosti
 
 > [!NOTE]
 > Je nutné nastavit protiúčty jak pro metodu platby pro úhrady hotovosti, tak pro odebrání úhrady nebo metodu platby plovoucí položky pro obchod. Tím se vytvoří vyrovnané položky hlavní knihy pro odebrání úhrady nebo transakce plovoucí položky.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

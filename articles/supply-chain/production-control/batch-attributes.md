@@ -1,30 +1,27 @@
 ---
 title: Atributy dávky
 description: Toto téma popisuje informace o atributech dávky. Atributy dávky umožňují charakterizovat suroviny a hotové výrobky, které vytvářejí skladové dávky. Toto téma rovněž vysvětluje postup přiřazení atributů dávky a způsob, jakým je můžete vyhledat při rezervaci dávek.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup, WHSBatchAttribReserve
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 370893e415a79091404f1c4eb0404ba8fd5b9ff2
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ceb971e7468245297f2359317533b123a3a4f83a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424163"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565321"
 ---
 # <a name="batch-attributes"></a>Atributy dávky
 
@@ -53,3 +50,6 @@ Atribut dávky můžete vyhledat, pokud rezervujete dávku pro prodejní objedn�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

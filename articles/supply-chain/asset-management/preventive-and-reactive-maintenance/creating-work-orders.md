@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743691"
 ---
 # <a name="creating-work-orders"></a>Vytvoření pracovních příkazů
 
@@ -48,7 +48,7 @@ Chcete-li vytvořit pracovní příkazy, které jsou založeny na vašem plánu 
 
     Otevře se dialogové okno **Vytvořit pracovní příkazy**. V poli **Hodiny prognózy údržby** se zobrazí celkový počet hodin prognózy pro vybrané řádky.
 
-    ![Dialogové okno Vytvořit pracovní příkazy](media/18-preventive-maintenance.png)
+    ![Dialogové okno Vytvořit pracovní příkazy.](media/18-preventive-maintenance.png)
 
 1. V části **Parametry** zadejte počet pracovních příkazů, které mají být vytvořeny. Vyberte některou z následujících možností:
 

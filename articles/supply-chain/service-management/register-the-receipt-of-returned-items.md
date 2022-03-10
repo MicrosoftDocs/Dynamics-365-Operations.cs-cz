@@ -1,12 +1,10 @@
 ---
 title: Registrace příjmu vrácených položek
 description: Příjem vráceného zboží můžete zaregistrovat pomocí formuláře Přehled doručení nebo Registrace.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e1da5fee9607bf9f38c90d3db891ffa212ab01f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3a1dc18e50dd10568c719c4f87d805be526d6746
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219286"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576393"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrace příjmu vrácených položek 
 

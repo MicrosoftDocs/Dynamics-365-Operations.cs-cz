@@ -1,26 +1,24 @@
 ---
 title: Zboží dvojího užití
 description: Toto téma vysvětluje, jak sledovat výrobky, které jsou identifikovány jako zboží dvojího užití, ukládat čísla certifikátů pro každý relevantní produkt a zemi určení a tisknout platná čísla certifikátů na příslušné faktury, dodací listy a / nebo prodejní objednávky.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 4623b6eaa18b65f0f61cb8c227115d59f3ff9c08
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007685"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570746"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 
@@ -107,3 +105,6 @@ Používáte stránku **Certifikáty dvojího použití** pro nastavení a sprá
     | Vytisknout na fakturu | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na fakturách, které jsou adresovány konkrétní zemi během zadaného časového období. |
     | Vytisknout na dodacím listu | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na dodacích listech, které jsou adresovány konkrétní zemi během zadaného časového období. |
     | Vytisknout na prodejní objednávku | Zaškrtněte toto políčko, chcete-li vytisknout číslo certifikátu na prodejních objednávkách, které jsou adresovány konkrétní zemi během zadaného časového období. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

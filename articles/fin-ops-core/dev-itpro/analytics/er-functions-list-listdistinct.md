@@ -2,9 +2,7 @@
 title: Funkce LISTDISTINCT ER
 description: Toto téma obsahuje obecné informace o použití funkce LISTDISTINCT elektronického výkaznictví.
 author: NickSelin
-manager: kfend
 ms.date: 7/30/2020
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: f20565d73cea8d0cc1361bd03cda86a79a97955e
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7cc51695d261a63521ae88e2a9362b6f30b9618ed89300bcaeb606b050c81350
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735567"
 ---
 # <a name="listdistinct-er-function"></a>Funkce LISTDISTINCT ER
 

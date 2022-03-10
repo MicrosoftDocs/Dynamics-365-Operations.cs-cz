@@ -1,7 +1,7 @@
 ---
 title: Domovská stránka modulu Zásobování a zdroje
 description: V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
-author: kamaybac
+author: Henrikan
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337922"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565488"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -76,10 +76,9 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Vytvoření opakované nákupní objednávky](tasks/create-repeat-purchase-order.md)
 -   [Vytvoření nákupní objednávky z prodejní objednávky](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Vytvoření nákupní objednávky pro jednorázového dodavatele](tasks/create-purchase-order-one-time-supplier.md)
--   [Vytvoření nákupní objednávky s plánem dodávek](tasks/create-purchase-order-delivery-schedule.md)
+-   [Vytvoření nákupní objednávky s plánem dodávek](tasks/create-purchase-order-delivery-schedule.md)
 -   [Vytvoření nákupní vratky](tasks/create-purchase-return-order.md)
--   [Vytvoření dílčí nákupní objednávky z nákupní smlouvy](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky](tasks/create-purchase-release-order-creating-purchase-order.md)
+-   [Použití nákupní smlouvy při tvorbě nákupní objednávky](tasks/create-purchase-release-order-purchase-agreement.md)
 -   [Vytvoření nové zakázky na doplnění stavu zásob dodávky](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Ceny a slevy

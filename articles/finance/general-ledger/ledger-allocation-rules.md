@@ -1,12 +1,10 @@
 ---
 title: Pravidla přidělení hlavní knihy
 description: Tento článek obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31e01046d22c3b7a598386d5621d020339f44cb4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 718640390cd1d4c6c2e9fb1d6bdeba21b515be4a
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248992"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726864"
 ---
 # <a name="ledger-allocation-rules"></a>Pravidla přidělení hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít.
+Toto téma obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít.
 
 Pravidla přidělení hlavní knihy se používají k automatickému výpočtu a generování deníků přidělení a účetních položek pro přidělování zůstatků hlavní knihy nebo pevných částek. Metody přidělení mohou být proměnné nebo pevné. Pro pravidla přidělení hlavní knihy můžete použít následující metody přidělení:
 

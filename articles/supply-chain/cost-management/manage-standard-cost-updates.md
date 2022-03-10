@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579753"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678658"
 ---
 # <a name="manage-standard-cost-updates"></a>Správa aktualizací standardních nákladů
 
@@ -43,8 +43,6 @@ Následující příklad znázorňuje použití přístupu s jednou verzí a dv�
 V tomto příkladu byla použita dodatečná nákladová verze pro správu aktualizací v průběhu roku 2020. Lze použít více dodatečných nákladových verzí (například samostatnou verzi pro každou dávku aktualizací). Při použití více dalších nákladů musí být záloha vyjádřena jako aktivní náklady, protože aktivní náklady jsou rozděleny na více nákladových verzích.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Finanční dimenze pro standardní přecenění nákladů
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktivace nové standardní ceny obvykle přecení aktuální hodnotu zásob standardními transakcemi přecenění nákladů. Finanční dimenze položky se pak zaúčtují na transakcích. hcete-li však určit, zda a jak jsou finanční dimenze zaúčtovány, použijte [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) k zapnutí funkce nazvané *Možnosti výchozí finanční dimenze pro přecenění standardních nákladů na zásoby*. Po povolení této funkce přejděte na **Správa nákladů> Nastavení zásad účtování zásob> Parametry** a nastavte nový rozevírací seznam **Původ finanční dimenze** na jednu z následujících hodnot:
 

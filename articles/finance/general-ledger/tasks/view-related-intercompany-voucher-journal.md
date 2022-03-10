@@ -2,11 +2,9 @@
 title: Zobrazení souvisejícího mezipodnikového dokladu z deníku
 description: Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69168d62c9583149db6e61816a6ccd1059ee52db
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9c41826986aea79206c8ec6ed045078e93a285a90042f0950fb5725c0bd850ac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772772"
 ---
 # <a name="view-related-intercompany-voucher-from-journal"></a>Zobrazení souvisejícího mezipodnikového dokladu z deníku
 
@@ -53,3 +51,6 @@ Související doklad zobrazí doklad společností protiúčtu při zaúčtován
 3. Označte v seznamu vybraný řádek.
 4. Klikněte na možnost Doklad.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

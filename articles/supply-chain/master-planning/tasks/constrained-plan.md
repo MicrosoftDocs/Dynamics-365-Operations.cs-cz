@@ -1,26 +1,24 @@
 ---
 title: Vygenerování plánu s omezeními
 description: Toto téma vysvětluje způsob vytvoření plánu, který bere v úvahu omezení materiálu a kapacity.
-author: ShylaThompson
-manager: tfehr
+author: ChristianRytt
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d238ffd7ee76dcb782931312a132545a89f537b5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5fea315d41d01cb578d7d60c9eb7006e4b6c3362
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214387"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578337"
 ---
 # <a name="generate-a-constrained-plan"></a>Vygenerování plánu s omezeními
 

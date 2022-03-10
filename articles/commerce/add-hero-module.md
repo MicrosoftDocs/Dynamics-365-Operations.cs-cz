@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726432"
 ---
 # <a name="content-block-module"></a>Modul bloku obsahu
 
@@ -46,15 +46,15 @@ Kromě toho může motiv vystavovat různé vlastnosti pro každé rozvržení. 
 
 Na následujícím obrázku je znázorněn příklad modulu blok obsahu s rozvržením Hero.
 
-![Příklad hlavního modulu](./media/Hero.PNG)
+![Příklad hlavního modulu.](./media/Hero.PNG)
 
 Na následujícím obrázku je znázorněn příklad modulu blok obsahu s rozvržením funkce.
 
-![Příklady propagačních modulů](./media/Feature.PNG)
+![Příklady propagačních modulů.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Vlastnosti modulu bloku obsahu
 
-| Název vlastnosti  | Hodnoty | Popis |
+| Název vlastnosti  | Hodnoty | popis |
 |----------------|--------|-------------|
 | Obrázek          | Soubor obrázku | Obrázek lze použít pro prezentaci produktu nebo promoakce. Obrázek lze odeslat do galerie obrázků nebo lze použít existující obrázek. |
 | Záhlaví        | Text a značka nadpisu (**H1**, **H2**, **H3**, **H4**, **H5** nebo **H6**) | Každý modul hlavního banneru může mít nadpis. Standardně se pro značku nadpisu používá označení **H2**. Značku však lze změnit tak, aby vyhovovala požadavkům na usnadnění. |

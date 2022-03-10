@@ -1,12 +1,10 @@
 ---
 title: Stavy životního cyklu požadavku na údržbu
 description: Toto téma popisuje, jak nastavit stavy životního cyklu požadavků na údržbu v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022073"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743667"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stavy životního cyklu požadavku na údržbu
 
@@ -50,7 +48,7 @@ Stavy životního cyklu požadavků údržby definují fáze, kterými může po
 
 Následující ilustrace znázorňuje příklad stránky **Stavy životního cyklu požadavků na údržbu**.
 
-![Stránka Stavy životního cyklu požadavku na údržbu](media/02-setup-for-requests.png)
+![Stránka Stavy životního cyklu požadavku na údržbu.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Stavy životního cyklu požadavků na údržbu, skupiny stavů životního cyklu a typy jsou propojeny a používány stejným způsobem jako stavy životního cyklu pracovních příkazů, skupiny stavů životního cyklu a typy. 
@@ -68,9 +66,9 @@ Po vytvoření stavů životního cyklu, které jsou požadovány pro vaše pož
 
 5. Na kartě **Stavy životního cyklu** vyberte stavy životního cyklu, které si přejete zahrnout v modelu životního cyklu:
 
-    - Chcete-li v modelu životního cyklu použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/03-setup-for-requests.png) a přesuňte jej do části **Vybrané stavy životního cyklu**.
-    - Chcete-li do modelu životního cyklu zahrnout všechny dostupné stavy životního cyklu, vyberte tlačítko **Vybrat všechny dostupné stavy** ![Vybrat všechny dostupné stavy](media/04-setup-for-requests.png). Všechny stavy životního cyklu jsou přesunuty do části **Vybrané stavy životního cyklu**.
-    - Chcete-li z modelu životního cyklu odebrat stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/05-setup-for-requests.png) a přesuňte jej do části **Zbývající stavy životního cyklu**.
+    - Chcete-li v modelu životního cyklu použít stav životního cyklu, vyberte jej v části **Zbývající stavy životního cyklu** a potom vyberte tlačítko šipky vpravo ![Šipka vpravo](media/03-setup-for-requests.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Vybrané stavy životního cyklu**.
+    - Chcete-li do modelu životního cyklu zahrnout všechny dostupné stavy životního cyklu, vyberte tlačítko **Vybrat všechny dostupné stavy** ![Vybrat všechny dostupné stavy.](media/04-setup-for-requests.png). Všechny stavy životního cyklu jsou přesunuty do části **Vybrané stavy životního cyklu**.
+    - Chcete-li z modelu životního cyklu odstranit stav životního cyklu, vyberte jej v části **Vybrané stavy životního cyklu** a potom vyberte tlačítko šipky vlevo ![Šipka vlevo](media/05-setup-for-requests.png) a přesuňte jej do části Vybrané stavy životního cyklu. pro přesun do části **Zbývající stavy životního cyklu**.
 
 6. Na kartě **Obecné** jsou pole v části **Aktualizace** relevantní, pokud používáte opravu skladu.
 
@@ -79,4 +77,7 @@ Po vytvoření stavů životního cyklu, které jsou požadovány pro vaše pož
 
 Následující ilustrace znázorňuje příklad stránky **Modely životního cyklu požadavků na údržbu**.
 
-![Stránka Modely životního cyklu požadavku na údržbu](media/06-setup-for-requests.png)
+![Stránka Modely životního cyklu požadavku na údržbu.](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

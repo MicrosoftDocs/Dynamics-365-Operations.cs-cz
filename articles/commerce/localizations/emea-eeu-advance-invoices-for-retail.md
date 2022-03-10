@@ -2,11 +2,9 @@
 title: Zálohové faktury pro Commerce pro východní Evropu
 description: Toto téma vysvětluje, jak nastavit oznámení zálohách v Commerce pro východní Evropu.
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d27eec5ad2ec12d1f2e617fc3e182e2bbefa39a9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4433dfad61aacb41aba9cf233515460410c7260304e8e3d690b015b193ffe774
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718687"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Zálohové faktury pro Commerce pro východní Evropu
 
@@ -32,7 +30,7 @@ Pro Polsko, Maďarsko a Českou republiku platí, že při přijetí zálohy od 
 
 Po konečném zaúčtování faktury faktury prodejní objednávky by měl konečný doklad obsahovat zálohovou fakturu a měly by být uvedeny všechny zálohy.
 
-Pokud prodejní objednávky generujete z modulu Pohledávky, musíte ručně generovat zálohové faktury pomocí kroků uvedených v části [Zálohové faktury pro východní Evropu](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Pokud generujete prodejní objednávky prostřednictvím POS systém vytvoří a zaúčtuje zálohové faktury za vás.
+Pokud prodejní objednávky generujete z modulu Pohledávky, musíte ručně generovat zálohové faktury pomocí kroků uvedených v části [Zálohové faktury pro východní Evropu](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Pokud generujete prodejní objednávky prostřednictvím POS systém vytvoří a zaúčtuje zálohové faktury za vás.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 
@@ -87,3 +85,6 @@ Tento postup slouží k povolení tisku dokumentů z POS na tiskárně Windows, 
 
 4. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
 5. Vyberte úlohu **1090** a klikněte na tlačítko **Spustit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

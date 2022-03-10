@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358043"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103281"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -39,12 +39,9 @@ Při použití této funkce dojde ke kontrole příjezdu a kvality následujíc�
 
 Tento proces lze také nastavit tak, aby všechny naskenované registrační značky byly okamžitě přesměrovány na místo kontroly kvality.
 
-## <a name="turn-on-the-quality-check-feature"></a>Zapnutí funkce kontroly kvality
+## <a name="turn-the-quality-check-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce kontroly kvality
 
-Než můžete použít funkci *Kontrola kvality*, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Kontrola kvality*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Kontrola kvality*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Kontrola kvality* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Nastavení funkce pro tento vzorový scénář
 

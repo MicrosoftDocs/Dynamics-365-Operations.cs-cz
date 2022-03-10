@@ -3,7 +3,7 @@ title: Přehled vytvoření workflow
 description: Toto téma vysvětluje postup při vytváření workflowu.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
@@ -17,16 +17,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e67369fac733a7b0aa65ef5968d29320f119f6c1a79e5b0874d7fc61e0b2c700
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759937"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067951"
 ---
 # <a name="create-workflows-overview"></a>Přehled vytvoření workflow
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma vysvětluje postup při vytváření workflowu.
 

@@ -1,7 +1,7 @@
 ---
 title: Nastavení plnění objednávek pro obchody
 description: Toto téma poskytuje přehled nastavení plnění obchodu.
-author: rubencdelgado
+author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5cdf7b2655f62b693a8f2bc137c690fbc43b16a7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796431"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779589"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Nastavení plnění objednávek pro obchody
 
@@ -33,9 +33,9 @@ Operace plnění objednávky na pokladním místě poskytuje jediný pracovní p
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Nastavení operace plnění objednávky
 
-Plnění objednávky [ID operace 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
+Plnění objednávky [ID operace 928](pos-operations.md) lze použít pro přístup k pracovní oblasti plnění objednávky obchodu v pokladním místě.
 
-Postupujte podle kroků v části [Přidat operaci do mřížky tlačítek](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) a určete, který parametr má být použit při vyvolání plnění objednávky na pokladním místě. Ve výchozím nastavení se zvolí **Všechny objednávky** po určení operací plnění objednávky. Když je nakonfigurována s tímto parametrem, operace uvede seznam všech řádků objednávky pro plnění v aktuálním obchodě. Je k dispozici také možnost **Objednávky k expedici**, kterou lze přiřadit k tlačítku a využít v případě, že uživatel pouze chce zobrazit objednávky, které budou expedovány z obchodu. Nakonec je tu možnost **Objednávky k výdeji**. Při vyvolání na pokladním místě se uvede pouze seznam objednávek, které mají být vyzvednuty v obchodě. Různé parametry lze přiřadit různým tlačítkům, aby měl uživatel k dispozici různé způsoby zobrazení plnění objednávek.
+Postupujte podle kroků v části [Přidat operaci do mřížky tlačítek](pos-screen-layouts.md) a určete, který parametr má být použit při vyvolání plnění objednávky na pokladním místě. Ve výchozím nastavení se zvolí **Všechny objednávky** po určení operací plnění objednávky. Když je nakonfigurována s tímto parametrem, operace uvede seznam všech řádků objednávky pro plnění v aktuálním obchodě. Je k dispozici také možnost **Objednávky k expedici**, kterou lze přiřadit k tlačítku a využít v případě, že uživatel pouze chce zobrazit objednávky, které budou expedovány z obchodu. Nakonec je tu možnost **Objednávky k výdeji**. Při vyvolání na pokladním místě se uvede pouze seznam objednávek, které mají být vyzvednuty v obchodě. Různé parametry lze přiřadit různým tlačítkům, aby měl uživatel k dispozici různé způsoby zobrazení plnění objednávek.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Povolte uživatelům přístup k plnění objednávek na pokladním místě.
 
@@ -104,9 +104,9 @@ Ve výchozím nastavení objednávky budou mít stav **Přijato**. Stav objedná
 
 - **Upravit** - pokud je stav objednávky čekající, lze ho upravit na pokladním místě. Objednávky, které již byly částečně vyskladněné, zabalené nebo fakturované, nemohou být upraveny ze zobrazení plnění objednávky.
 - **Přijmout** - pokud je položka **Ruční přijetí** nakonfigurována na úrovni kanálu, řádky musí být nejprve přijaty, dříve než mohou procházet proces plnění objednávky.
-- **Vyskladnit** -možnost vyskladnění podporuje několik akcí. Nejprve **Výdej** aktualizuje stav řádku objednávky, aby se ostatní v obchodě nepokusili vyskladnit stejný řádek. Dále **Tisk výdejky** vytiskne výdejku pro vybraný řádek nebo řádky a aktualizuje jejich stav na **Výdej**. Formáty výdejek jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Nakonec možnost **Označit jako vyskladněno** označuje, že řádek byl vyskladněn. **Označit jako vyskladněno** zahájí odpovídající skladové transakce v účetním systému. Akce výdeje lze provést zároveň současně pro několik řádků objednávky napříč objednávkami a pro všechny způsoby dodání.
+- **Vyskladnit** -možnost vyskladnění podporuje několik akcí. Nejprve **Výdej** aktualizuje stav řádku objednávky, aby se ostatní v obchodě nepokusili vyskladnit stejný řádek. Dále **Tisk výdejky** vytiskne výdejku pro vybraný řádek nebo řádky a aktualizuje jejich stav na **Výdej**. Formáty výdejek jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md). Nakonec možnost **Označit jako vyskladněno** označuje, že řádek byl vyskladněn. **Označit jako vyskladněno** zahájí odpovídající skladové transakce v účetním systému. Akce výdeje lze provést zároveň současně pro několik řádků objednávky napříč objednávkami a pro všechny způsoby dodání.
 - **Zamítnout** - Řádky nebo částečné řádky lze odmítnout. To umožňuje jejich opětovné přiřazení z účetního systému do jiného obchodu nebo skladu. Řádky lze zamítnout pouze tehdy, pokud nebyly ještě vyskladněny či zabaleny. Chcete-li odmítnout řádek, který byl vyskladněn nebo zabalen, musí být u toho řádku zrušeno vydání nebo zabalení z účetního systému.
-- **Balení** - možnost balení podporuje dvě akce: **Tisk dodacího listu** vytiskne dodací list pro vybrané řádky a položka **Označit jako zabaleno** označí řádky jako zabalené a označit řádky jako dodané v účetním systému. Současně lze zabalit pouze řádky objednávky, které patří ke stejné objednávce a se stejným způsobem dodání. Formáty dodacích listů jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Balení** - možnost balení podporuje dvě akce: **Tisk dodacího listu** vytiskne dodací list pro vybrané řádky a položka **Označit jako zabaleno** označí řádky jako zabalené a označit řádky jako dodané v účetním systému. Současně lze zabalit pouze řádky objednávky, které patří ke stejné objednávce a se stejným způsobem dodání. Formáty dodacích listů jsou ovládány jako součást formátů příjemek. Další informace o nastavení formátů příjemek naleznete v tématu [Šablony pro příjemky a tisk](receipt-templates-printing.md).
 - **Expedovat** - akce expedice označí vybrané řádky jako **Dodáno** v účetním systému. Poté, co byl řádek plně expedován, se již nezobrazí v zobrazení plnění objednávky.
 - **Výdej** - akce vyskladnění přidá řádky k zobrazení transakcí pro výdej. Pokud neexistují další řádky na objednávce, které nejsou aktuálně vydávány, budou přidány k zobrazení transakcí s nulovým množstvím. Poté, co byl řádek plně vydán, se již nezobrazí v zobrazení plnění objednávky.
 

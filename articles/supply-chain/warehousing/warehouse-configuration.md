@@ -3,24 +3,26 @@ title: Přehled konfigurace skladu
 description: Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 author: perlynne
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11554
+ms.custom:
+- "11554"
+- intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734246cde20f5ce76e34dae772ed0ba6b0e361a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837362"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982992"
 ---
 # <a name="warehouse-configuration-overview"></a>Přehled konfigurace skladu
 
@@ -109,8 +111,7 @@ Jako název naznačuje, směrnice skladového místa slouží ke směrování pr
 
 Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jednotlivým řádkům směrnice skladového místa, použijte jednu z předdefinovaných strategií. Můžete například použít strategii **Prázdné umístění s žádnou příchozí prací** k vyhledávání volného místa ve skladu, nebo můžete použít strategii **Rezervace dávky FEFO** pro odchozí výdej prodeje.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Konfigurace umístění ve skladu s povolenými procesy řízení skladu](tasks/configure-locations-wms-enabled-warehouse.md)
 

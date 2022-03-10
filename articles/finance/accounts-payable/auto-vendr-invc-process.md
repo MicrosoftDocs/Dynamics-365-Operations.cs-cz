@@ -3,24 +3,23 @@ title: Přehled procesů automatizované fakturace dodavatelů
 description: Toto téma popisuje možnosti automatizace zpracování faktur dodavatelů a výhody používání automatizovaného procesu.
 author: abruer
 ms.date: 02/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c409b460df4c6a8b2f7811083e8c13c8fdfc186c09f859ecb91e2f3cc0b8b59f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749119"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985649"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Přehled procesů automatizované fakturace dodavatelů
 
@@ -34,6 +33,7 @@ Některé procesy fakturace závazků dodavatelů můžete automatizovat. Mezi t
 
 Procesy automatizace umožňují:
 
+- Automatické použití záloh na faktury dodavatele
 - Automaticky odesílat importované faktury do systému workflowu.
 - Párovat příjemky produktu s nevyřízeními řádky faktury dodavatele.
 - Simulovat zaúčtování před zaúčtováním faktury dodavatele.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 405fd7fbbbb8862446d09b9ea33ef14348e691f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 267452bf5ec8cafebb5927045e8708a41603ec16f48626b7fd351d13fdb2fab7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746249"
 ---
 # <a name="maintenance-schedule-cost"></a>Náklady rozvrhu údržby
 
@@ -49,7 +49,7 @@ V modulu Správa majetku lze vypočítat rozpočtové náklady na řádcích roz
 
 Na následujícím obrázku jsou uvedeny výsledky výpočtu nákladů rozvrhu údržby.
 
-![Obrázek č. 1](media/17-preventive-maintenance.png)
+![Obrázek č. 1.](media/17-preventive-maintenance.png)
 
 
 

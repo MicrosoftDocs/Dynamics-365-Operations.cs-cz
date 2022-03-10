@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86f0fd33eb8cbb99436b347b81bffd32ac24567f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9e99d350abd810045b6b5b4c840f67d21c9d5e39
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821338"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569858"
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Zobrazení nákladových položek pro objekt nákladů
 

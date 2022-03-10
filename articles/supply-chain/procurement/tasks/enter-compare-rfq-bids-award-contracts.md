@@ -1,7 +1,7 @@
 ---
 title: Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 description: Toto téma vysvětluje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů.
-author: kamaybac
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811983"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579465"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy
 
@@ -32,7 +32,7 @@ Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace 
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Zadání odpovědi jako dodavatel
 
-1. Na řídicím panelu vyberte **Nabídky dodavatele**.
+1. Přejděte do **Spolupráce s dodavateli \> Pracovní prostory \> Nabídky dodavatelů**.
 2. V seznamu **Pozvánky k nové nabídce** vyhledejte požadavek na nabídku, který byl právě odeslán. Vyberte požadavek na nabídku, u nějž chcete zkontrolovat, co bylo požadováno.
 3. Vyberte **Přílohy požadavku na nabídku** pro kontrolu všech přidaných příloh.
 4. Chcete-li vytvořit upravitelná pole, vyberte **Nabídka**. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Odběratel aktualizuje**.

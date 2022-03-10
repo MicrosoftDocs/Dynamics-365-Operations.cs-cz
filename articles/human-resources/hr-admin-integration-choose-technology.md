@@ -1,14 +1,13 @@
 ---
 title: Volba technologie integrace dat
-description: Tento článek poskytuje informace o integraci s daty spravovanými v Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Toto téma obsahuje informace o integraci s daty spravovanými v Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,27 +15,29 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0d2978d680efa59b1ba9cfcd7f58655da0ff4107
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890093"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065034"
 ---
 # <a name="choose-a-data-integration-technology"></a>Volba technologie integrace dat
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tento článek poskytuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
+
+Toto téma obsahuje informace o integraci s daty spravovanými v Dynamics 365 Human Resources. Popisuje různé integrační technologie, které vám pomohou určit, které technologie nejlépe odpovídají vašim potřebám.
 
 ## <a name="data-integration-background"></a>Pozadí integrace dat
 
 Obchodní data představují klíčový prostředek, který činí vaši společnost jedinečnou. Data vašeho podniku jsou velice cenná. Vztahy mezi daty, která se shromažďují ve vaší společnosti, můžete použít ke zlepšení obchodních procesů a analytických nástrojů v rámci celé společnosti. Usilujeme o zajištění snadného, zabezpečeného a stabilního přístupu k obchodním datům, ať už se jedná o systém, ze kterého pochází.
 
-V minulosti byla integrace dat mezi více systémy obtížná.
-Společnost Microsoft činí kroky, které usnadňují integraci dat, a velkým krokem k uskutečnění tohoto cíle je použití služby [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+V minulosti byla integrace dat mezi více systémy obtížná. Společnost Microsoft činí kroky, které usnadňují integraci dat, a velkým krokem k uskutečnění tohoto cíle je použití služby [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources činí ze služby Dataverse upřednostňované veřejné rozhraní pro data aplikace Human Resources. Očekáváme, že všechna nejdůležitější data spravovaná aplikací Human Resources budou v průběhu času zpřístupněna ve službě Dataverse. Doporučujeme službu Dataverse jako preferovanou technologii pro většinu typů uplatnění v rámci integrace dat.
 
@@ -48,7 +49,7 @@ V následujících částech jsou popsány různé technologie integrace dat, k
 
 ### <a name="dataverse-tables"></a>Tabulky Dataverse
 
-Služba Dataverse je preferované veřejné datové rozhraní pro aplikaci Human Resources. Vyrostl z platformy Dynamics 365 XRM, která se používá řešeními [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps).
+Služba Dataverse je preferované veřejné datové rozhraní pro aplikaci Human Resources. Vyrostl z platformy Dynamics 365 XRM, kterou používají řešení [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps).
 
 Dataverse poskytuje platformu a rozhraní API pro datové tabulky. Při nasazení Human Resources se připojuje k instanci aplikace Dataverse. Entity pro data Human Resources, které se nasazují do této instance Dataverse. Tabulky a jejich data jsou k dispozici pro libovolnou aplikaci, která se může připojit k dané instanci Dataverse. Human Resources synchronizuje data do a z tabulke Dataverse.
 
@@ -70,7 +71,7 @@ Tabulky služby Dataverse a přidružená rozhraní API jsou nejlepší možnos
 
 ### <a name="dmfdixf-entities"></a>Entity DMF/DIXF
 
-Human Resources, postavené převážně na stejné platformě jako aplikace Finance and Operations, poskytují [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF je také znám jako Data Import Export Framework (DIXF). Modul Human Resources poskytuje sadu datových entit, které lze použít pro import a export dat Human Resources. Zatímco tabulky služby Dataverse jsou preferovaným rozhraním integrace dat pro aplikaci Human Resources, entity DMF jsou nadále za určitých okolností užitečné. Jedná se například o tyto případy:
+Human Resources, postavené převážně na stejné platformě jako finanční a provozní aplikace, poskytují [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF je také znám jako Data Import Export Framework (DIXF). Modul Human Resources poskytuje sadu datových entit, které lze použít pro import a export dat Human Resources. Zatímco tabulky služby Dataverse jsou preferovaným rozhraním integrace dat pro aplikaci Human Resources, entity DMF jsou nadále za určitých okolností užitečné. Jedná se například o tyto případy:
 
 - Tabulky služby Dataverse dosud nejsou k dispozici.
 
@@ -113,7 +114,7 @@ BYOD je vhodné pro řešení vykazování, integraci dat a kombinace více dato
 
 ### <a name="odata-enabled-entities"></a>Entity s povolenou službou OData
 
-Většina entit DMF je také povolena pro přístup prostřednictvím datové služby (OData) aplikací Human Resources. Dokumentace, která je poskytována pro [službu OData Finance and Operations](/dynamics365/unified-operations/dev-itpro/data-entities/odata), se vztahuje na Human Resources s výjimkou vytváření vlastních entit vystavených OData.
+Většina entit DMF je také povolena pro přístup prostřednictvím datové služby (OData) aplikací Human Resources. Dokumentace, která je poskytována pro [službu OData Finance a Operace](/dynamics365/unified-operations/dev-itpro/data-entities/odata), se vztahuje na Human Resources s výjimkou vytváření vlastních entit vystavených OData.
 
 I když je služba Dataverse a implementace služby OData poskytovaná službou Dataverse (prostřednictvím [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) preferována před datovou službou aplikace Human Resources, datová služba aplikace Human Resources má momentálně úplnější pokrytí entit pro data aplikace Human Resources.
 
@@ -131,7 +132,7 @@ Projekty Data Integrator jsou vhodné pro dávkové integrace Dataverse. Jedná 
 
 ### <a name="power-query"></a>Power Query
 
-Služba Data Integrator podporuje [nástroj Power Query](/power-query/power-query-what-is-power-query) prostřednictvím své [funkce Advanced Query](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query poskytuje výkonné, flexibilní filtrování a transformaci dat včetně bohatého jazyka M formula language. Power Query bude pravděpodobně dobře znám v případě, že jste vytvořili sestavy Power BI.
+Služba Data Integrator podporuje nástroj [Power Query](/power-query/power-query-what-is-power-query) prostřednictvím své [funkce Advanced Query](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query poskytuje výkonné, flexibilní filtrování a transformaci dat včetně bohatého jazyka M formula language. Power Query bude pravděpodobně dobře znám v případě, že jste vytvořili sestavy Power BI.
 
 ## <a name="deciding-on-an-integration-technology"></a>Rozhodování o technologii integrace
 
@@ -145,7 +146,7 @@ V případě, že je k dispozici mnoho různých integračních technologií, 
 | BYOD                   | Ano, plánováno správcem v aplikaci Human Resources        | Asynch., dávka                                | Ne<sup>3</sup>                                    | Vysoké (stovky tisíc záznamů)                    | Podporuje všechny entity DMF.           |
 | Entity s povolenou službou OData | Ano, použití middlewaru                    | Synchronizovat                                        | Ano, prostřednictvím datové služby (OData) aplikace Human Resources  | Liší se podle jednotlivých případů použití (podporuje stránkování v případě interaktivního použití) | Vysoké                                |
 | Doplněk pro aplikaci Excel           | Ne                                       | Synchronizovat                                        | Ne                                        | Střední (desítky tisíc záznamů)                      | Podporuje všechny entity s povolenou službou OData. |
-| Služba Data Integrator        | Ano, plánováno ve službě Data Integrator        | Asynch., dávka                                | Žádný                                        | Liší se podle případu použití.                                       | Podporuje všechny Dataverse tabulky           |
+| Služba Data Integrator        | Ano, plánováno ve službě Data Integrator        | Asynch., dávka                                | Ne                                        | Liší se podle případu použití.                                       | Podporuje všechny Dataverse tabulky           |
 
 <sup>2</sup>společnost Microsoft intenzivně investuje do zvýšení pokrytí dat pro tabulky Dataverse. Doporučujeme použít Dataverse, pokud je k dispozici pokrytí. Služba Dataverse poskytuje v současné době nízké datové pokrytí ve srovnánís DMF a entitami s povolenou službou OData.
 

@@ -1,7 +1,7 @@
 ---
 title: Údržba postupu pro model produktu
 description: Spuštění této procedury vyžaduje, aby model konfigurace produktu existoval.
-author: ShylaThompson
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88df8b867ac7f354417add0462e7999747333451
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817982"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577257"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Údržba postupu pro model produktu
 
@@ -26,43 +26,43 @@ ms.locfileid: "5817982"
 
 Spuštění této procedury vyžaduje, aby model konfigurace produktu existoval. Při provádění celým procesem tento postup používá model špičkový model reproduktoru v ukázkové společnosti USMF.
 
-
 ## <a name="add-a-route-operation"></a>Přidání postupu operace
-1. Klepněte na Definice modelu varianty produktu.
-2. Klepněte na Modely konfigurace produktu.
-3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+
+1. Přejděte na **Řízení informací o produktech \> Produkty \> Modely konfigurace produktu**.
+1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Pro toto cvičení vyberte model špičkového reproduktoru.  
-4. Klikněte na odkaz na vybraném řádku v seznamu.
-5. Rozbalte sekci Operace postupu.
-6. Klepněte na možnost Přidat.
-7. Zadejte hodnotu do pole Název.
-8. Zadejte nějakou hodnotu do pole Popis.
-9. Klikněte na položku Uložit.
+1. Vyberte odkaz na vybraném řádku v seznamu.
+1. Rozbalte sekci **Operace postupu**.
+1. Vyberte **přidat**.
+1. Zadejte hodnotu do pole **Název**.
+1. Zadejte hodnotu do pole **Popis**.
+1. Zvolte **Uložit**.
 
 ## <a name="enter-route-operation-details"></a>Zadání podrobností operace postupu
-1. Klepněte na Podrobnosti operace postupu.
-2. V poli Operace zadejte nebo vyberte hodnotu.
-3. V číslu operace Č. zadejte číslo.
+
+1. Vyberte **Podrobnosti operace trasy**.
+1. V poli **Operace** zadejte nebo vyberte hodnotu.
+1. V poli **Operace č.** zadejte číslo.
     * Čísla operace určující pořadí v postupu.  
     * Každá vlastnost při operaci postupu může získat statickou hodnotu nebo namapování na atribut. Mapování na atribut způsobí, že hodnota bude nastavena v rámci konfigurace.  
-4. V poli Skupina postupů zadejte nebo vyberte hodnotu.
+1. V poli **Skupina postupů** zadejte nebo vyberte hodnotu.
     * Skupina postupů určuje základní chování pro náklady, spotřebu a nastavení.  
-5. Klikněte na záložku Nastavení.
-6. Klepněte na kartu Časy.
-7. Do pole Množství procesu zadejte číslo.
+1. Vyberte kartu **Nastavení**.
+1. Vyberte kartu **Časy**.
+1. Do pole **Množství procesu** zadejte číslo.
     * Určuje, kolik se zpracuje při jedné operaci.  
-8. Do pole Hodiny/čas zadejte číslo.
+1. Do pole **Hodiny/čas** zadejte číslo.
     * Zadejte časový úsek.  
-9. Zaškrtněte políčko položky Nastavit.
-10. Do pole Operační čas zadejte číslo.
+1. Zaškrtněte políčko položky **Nastavit**.
+1. Do pole **Operační čas** zadejte číslo.
     * Určete čas zpracování pro množství, které jste zadali.  
-11. Klepněte na kartu Požadavky na zdroj.
-12. Klepněte na možnost Přidat.
-13. Označte v seznamu vybraný řádek.
-14. V poli Typ požadavku vyberte možnost.
+1. Zvolte kartu **Požadavky na zdroj**.
+1. Vyberte **přidat**.
+1. Označte na seznamu vybraný řádek.
+1. V poli **Typ požadavku** vyberte možnost.
     * Rozhodněte, zda chcete zadat určité zdroje nebo možností, které musí mít.  
-15. V poli Požadavek zadejte nebo vyberte hodnotu.
-16. Klikněte na tlačítko OK.
+1. V poli **Požadavek** zadejte nebo vyberte hodnotu.
+1. Vyberte **OK**.
 
 
 

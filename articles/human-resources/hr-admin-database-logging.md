@@ -1,8 +1,8 @@
 ---
 title: Konfigurace a správa protokolování databáze
 description: Můžete sledovat změny tabulek a polí v Dynamics 365 Human Resources s protokolováním databáze.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781650"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066433"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurace a správa protokolování databáze
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -93,14 +96,14 @@ Můžete odstranit všechny nebo část protokolů databáze pomocí následují
 Chcete-li nastavit čištění protokolu databáze, postupujte následujícím způsobem: 
 
 1. Přejděte na **Správa systému > Odkazy > Databáze > Protokol databáze**. Vyberte **Vyčistit protokol**.
-
-2. Vyberte metodu výběru protokolů k odstranění zadáním jedné z následujících možností:
+2. V záhlaví **Záznamy k zahrnutí** vyberte **Filtr**.
+3. Vyberte metodu, která bude použita pro výběr protokolů k odstranění. Zadejte některou z následujících možností:
 
    - ID tabulky
    - Typ protokolu
-   - Datum a čas vytvoření
+   - Datum a čas vytvoření
 
-3. Pomocí karty **Vyčištění protokolu databáze** zjistěte, kdy spustit úlohu vyčištění protokolu. Ve výchozím nastavení jsou protokoly databáze k dispozici po dobu 30 dnů.
+4. Pomocí karty **Vyčištění protokolu databáze** zjistěte, kdy spustit úlohu vyčištění protokolu. Ve výchozím nastavení jsou protokoly databáze k dispozici po dobu 30 dnů.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

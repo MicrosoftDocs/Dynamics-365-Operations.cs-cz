@@ -2,11 +2,9 @@
 title: Omezení platebních metod pro vrácení bez příjemky
 description: Toto téma popisuje, jak lze určité typy plateb omezit pro refundaci, pokud jsou vrácení provedená bez příjemky.
 author: rapraj
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: fc087ea24ebbebd5acd1cf37fdfd5c9422d44be8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 716b3a924da14d94061966d0d671003a6e2b90f88a3c0c4064191b47d8930f93
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773831"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Omezení platebních metod pro vrácení bez příjemky
 
@@ -40,7 +38,7 @@ K nastavení způsobů platby je třeba dokončit následující úlohy.
 3. Nastavte platební metody obchodu. Přiřaďte způsoby plateb ke každému obchodu a poté zadejte konkrétní nastavení pro každý způsob platby.
 4. Nastavte karetní platební metody pro obchody. Pro jakékoli metody platby kartou, které obchod přijímá, dokončete nastavení karty.
 
-![Nastavení obchodu](media/NoReceiptReturns1.png "Nastavení maloobchodu") 
+![Nastavení obchodu.](media/NoReceiptReturns1.png "Nastavení maloobchodu") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Omezení platebních metod pro vrácení bez příjemky
@@ -51,12 +49,12 @@ Výchozí hodnota přepínače je **Ne**, což zaručuje, že metoda platby pro 
 
 Když je možnost **Omezit pro refundace bez příjemky** nastavena na **Ano**, zvolená metoda platby nebude pro refundace povolena. 
 
-![Způsob platby obchodu](media/NoReceiptReturns3.png "Způsob platby v maloobchodu") 
+![Způsob platby obchodu.](media/NoReceiptReturns3.png "Způsob platby v maloobchodu") 
 
 > [!NOTE]
 > Pokud pokladník vybere způsob platby, který je omezen pro refundaci bez příjemky, zobrazí se zpráva pro ověření přijatelných způsobů platby.
 
-![Přijatelné způsoby platby](media/NoReceiptReturns4.png "Přijatelné způsoby platby") 
+![Přijatelné způsoby platby.](media/NoReceiptReturns4.png "Přijatelné způsoby platby") 
 
 Pokud má transakce vrácení s příjemkou i bez příjemky, podmínky omezení nebudou vynuceny, protože transakce bude workflow vrácení s příjemkou. 
 

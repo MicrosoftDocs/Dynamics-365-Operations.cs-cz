@@ -1,12 +1,10 @@
 ---
 title: Fáze servisních zakázek
 description: Definováním fází servisní zakázky a jejich přiřazením k zaměstnancům můžete řídit tok servisní zakázky pomocí jednotlivých úloh, které provádějí různé osoby v rámci servisní organizace.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAStageTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d126b68bea8d2083fcf1d08e168b9ead1511b25c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0a43cbe0cf5993a305ff500f34f0da5d3763084c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001242"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576321"
 ---
 # <a name="service-order-stages"></a>Fáze servisních zakázek   
 
@@ -46,3 +44,6 @@ Při nastavování servisní fáze můžete vytvořit více možností nebo vět
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

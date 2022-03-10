@@ -1,8 +1,8 @@
 ---
 title: Vytvoření aplikace pro export opakujících se dat
-description: Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Toto téma popisuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources podle opakujícího se plánu.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 368eee6bb182f363f47467a5c5ad8208a57db7ec
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054997"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069775"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Vytvoření aplikace pro export opakujících se dat
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek ukazuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources na opakujícím se plánu. Výukový kurz využívá pro export dat rozhraní API REST balíčku DMF aplikace Human Resources. Po exportu dat uloží logic app exportovaný balíček dat do složky Microsoft OneDrive pro firmy.
+Toto téma popisuje, jak vytvořit logic app v Microsoft Azure, která exportuje data z Microsoft Dynamics 365 Human Resources podle opakujícího se plánu. Výukový kurz využívá pro export dat rozhraní API REST balíčku DMF aplikace Human Resources. Po exportu dat uloží logic app exportovaný balíček dat do složky Microsoft OneDrive pro firmy.
 
 ## <a name="business-scenario"></a>Scénáře obchodu
 
@@ -63,13 +66,13 @@ Na konci tohoto cvičení budete mít logic app, která je připojena k prostře
 
 Dokončená logic app se bude podobat následující ilustraci.
 
-![Přehled logic app](media/integration-logic-app-overview.png)
+![Přehled logic app.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Krok 1: Vytvoření projektu exportu dat v Human Resources
 
 V aplikaci Human Resources vytvořte projekt exportu dat, který exportuje pracovníky. Nazvěte projekt **Export pracovníků** a ujistěte se, že je možnost **Generovat balíček dat** nastaven na **Ano**. Přidejte do projektu jednu entitu (**Pracovník**) a vyberte formát, do kterého chcete exportovat. (V tomto výukovém kurzu se používá formát Microsoft Excel.)
 
-![Datový projekt exportu pracovníků](media/integration-logic-app-export-workers-project.png)
+![Datový projekt exportu pracovníků.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Zapamatujte si název projektu exportu dat. Budete ho potřebovat při vytváření logic app v dalším kroku.
@@ -80,12 +83,12 @@ Sada cvičení zahrnuje vytvoření logic app.
 
 1. Na portálu Azure vytvořte logic app.
 
-    ![Stránka vytvoření logic app](media/integration-logic-app-creation-1.png)
+    ![Stránka vytvoření logic app.](media/integration-logic-app-creation-1.png)
 
 2. V aplikaci Logic Apps Designer začněte s prázdnou logic app.
 3. Přidejte [aktivační událost plánu opakování](/azure/connectors/connectors-native-recurrence) pro spuštění logic app každých 24 hodin (nebo podle zvoleného plánu).
 
-    ![Dialogové okno opakování](media/integration-logic-app-recurrence-step.png)
+    ![Dialogové okno opakování.](media/integration-logic-app-recurrence-step.png)
 
 4. Volejte [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API pro naplánování exportu vašeho datového balíčku.
 
@@ -97,7 +100,7 @@ Sada cvičení zahrnuje vytvoření logic app.
         > [!NOTE]
         > Služba Human Resources ještě neposkytuje konektor, který vystavuje všechna rozhraní API, která tvoří rozhraní REST API balíčku DMF, jako například **ExportToPackage**. Místo toho je nutné volat rozhraní API pomocí nezpracovaných požadavků HTTPS prostřednictvím protokolu HTTP s konektorem Azure AD. Tento konektor používá Azure Active Directory (Azure AD) pro ověřování a autorizaci Human Resources.
 
-        ![HTTP s konektorem Azure AD](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP s konektorem Azure AD.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Přihlaste se ke svému prostředí Human Resources prostřednictvím protokolu HTTP s konektorem Azure AD.
     3. Nastavte požadavek HTTP **POST** na volání **ExportToPackage** DMF REST API.
@@ -116,21 +119,21 @@ Sada cvičení zahrnuje vytvoření logic app.
             }
             ```
 
-        ![Vyvolat akci požadavku HTTP](media/integration-logic-app-export-to-package-step.png)
+        ![Vyvolat akci požadavku HTTP.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Můžete chtít přejmenovat každý krok tak, aby byl výstižnější než výchozí název, **Vyvolat požadavek HTTP**. Tento krok můžete například přejmenovat na **ExportToPackage**.
 
 5. [Inicializujte proměnnou](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) pro uložení stavu spuštění požadavku **ExportToPackage**.
 
-    ![Akce inicializace proměnné](media/integration-logic-app-initialize-variable-step.png)
+    ![Akce inicializace proměnné.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Počkejte, než bude stav spuštění exportu dat **Úspěšný**.
 
     1. Přidejte [do smyčky](/azure/logic-apps/logic-apps-control-flow-loops#until-loop), což se opakuje, než bude hodnota proměnné **ExecutionStatus** **Úspěšné**.
     2. Přidejte akci **zpoždění**, která počká pět sekund předtím, než se dotazuje na stav aktuálního spuštění exportu.
 
-        ![Kontejner do smyčky](media/integration-logic-app-until-loop-step.png)
+        ![Kontejner do smyčky.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Nastavte počet limitů na **15** a počkejte na dokončení exportu maximálně 75 sekund (15 iterací x 5 sekund). Pokud export trvá déle, upravte podle potřeby počet limitů.        
@@ -146,9 +149,9 @@ Sada cvičení zahrnuje vytvoření logic app.
             > [!NOTE]
             > Je možné, že budete muset zadat hodnotu **Tělo požadavku** v zobrazení kódu nebo v editoru funkcí v návrháři.
 
-        ![Vyvolat akci požadavku HTTP 2](media/integration-logic-app-get-execution-status-step.png)
+        ![Vyvolat akci požadavku HTTP 2.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Nastavení akce proměnné](media/integration-logic-app-set-variable-step.png)
+        ![Nastavení akce proměnné.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > Hodnota akce **Nastavení proměnné** (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) se bude lišit od hodnoty těla pro **Vyvolat požadavek HTTP 2**, a to i v případě, že návrhář zobrazí hodnoty stejným způsobem.
@@ -161,7 +164,7 @@ Sada cvičení zahrnuje vytvoření logic app.
         - **URL adresa požadavku:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Tělo požadavku:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![Akce GetExportedPackageURL](media/integration-logic-app-get-exported-package-step.png)
+        ![Akce GetExportedPackageURL.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Stáhněte exportovaný balíček.
 
@@ -173,7 +176,7 @@ Sada cvičení zahrnuje vytvoření logic app.
             > [!NOTE]
             > Je možné, že budete muset zadat hodnotu **URI** v zobrazení kódu nebo v editoru funkcí v návrháři.
 
-        ![Akce HTTP GET](media/integration-logic-app-download-file-step.png)
+        ![Akce HTTP GET.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Tento požadavek nevyžaduje žádné další ověření, protože adresa URL, kterou vrací **GetExportedPackageUrl** API, zahrnuje token podpisů sdílených přístupů, který uděluje přístup ke stažení souboru.
@@ -187,7 +190,7 @@ Sada cvičení zahrnuje vytvoření logic app.
         - **Název souboru:** worker\_package.zip
         - **Obsah souboru:** tělo z předchozího kroku (dynamický obsah)
 
-        ![Akce vytvoření souboru](media/integration-logic-app-create-file-step.png)
+        ![Akce vytvoření souboru.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Krok 3: Testování logic app
 
@@ -197,7 +200,7 @@ Pokud je u některého kroku hlášeno selhání, vyberte v návrháři neúspě
 
 Následující obrázek ukazuje, jak vypadá aplikace Logic Apps Designer, když jsou všechny kroky logic app úspěšně spuštěny.
 
-![Úspěšné spuštění logic app](media/integration-logic-app-successful-run.png)
+![Úspěšné spuštění logic app.](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Souhrn
 

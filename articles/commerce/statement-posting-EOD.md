@@ -1,37 +1,31 @@
 ---
 title: Vylepšení funkcionality zaúčtování výkazů
 description: Toto téma popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
-author: josaw1
-manager: AnnBe
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410854"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087596"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje první sadu vylepšení, která byla provedena u funkce zaúčtování výkazu. Tato zlepšení jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivace
 
-Ve výchozím nastavení při nasazení aplikace Finance and Operations 7.3.2. je aplikace nastavená na používání zastaralé funkce pro zaúčtování výkazů. Pro povolení funkce vylepšeného zaúčtování výkazů zaúčtování musíte zapnout konfigurační klíč.
+Ve výchozím nastavení při nasazení finanční a provozní aplikace 7.3.2. je aplikace nastavená na používání zastaralé funkce pro zaúčtování výkazů. Pro povolení funkce vylepšeného zaúčtování výkazů zaúčtování musíte zapnout konfigurační klíč.
 
 - Přejděte na **Správa systému** \> **Nastavení** \> **Konfigurace licence** a poté v uzlu **Retail a Commerce** zrušte zaškrtnutí políčka **Výkazy (starší verze)** a zaškrtněte políčko **Výkazy**.
 
@@ -56,12 +50,24 @@ Jako součást vylepšení funkce zaúčtování výkazu byly zavedeny tři nov�
 
 - **Je vyžadována deaktivace inventur** – při nastavení této možnosti na **Ano** proces zaúčtování výkazů pokračuje i v případě, že rozdíl mezi vypočítanou částkou a částkou transakce na výkazu je mimo prahovou hodnotu, která je definovaná v pevné záložce **Výkaz** pro obchody.
 
+> [!NOTE]
+> Od vydání Commerce verze 10.0.14 platí, že když je povolena funkce **Výkazy maloobchodu – Postupné**, dávková úloha **Zaúčtovat zásoby** již není použitelná a nelze ji spustit.
+
 Dále byly zavedeny následující parametry na pevné záložce **Dávkové zpracování** na kartě **Zaúčtování** stránky **Parametry Commerce**: 
 
 - **Maximální počet zaúčtování paralelních výkazů** – Toto pole definuje počet dávkových úloh, které budou použity při zaúčtování více výkazů. 
 - **Maximální počet vláken pro zpracování objednávky podle výkazu** – Toto pole představuje maximální počet vláken, které používá dávková úloha zaúčtování výkazu k vytvoření a fakturaci prodejních objednávek pro jeden výkaz. Celkový počet vláken, která budou použita procesem zaúčtování výkazu, bude vypočten na základě hodnoty v tomto parametru vynásobené hodnotou v parametru **Maximální počet zaúčtování paralelních příkazů**. Nastavení příliš vysoké hodnoty tohoto parametru může negativně ovlivnit výkon procesu zaúčtování výkazu.
 - **Maximální počet řádků transakce zahrnutých do agregace** – Toto pole definuje počet řádků transakce, které budou zahrnuty do jedné agregované transakce před vytvořením nové. Agregované transakce jsou vytvářeny na základě různých agregačních kritérií, jako je například odběratel, obchodní datum nebo finanční dimenze. Je důležité si uvědomit, že řádky z jedné transakce nebudou rozděleny mezi různé agregované transakce. To znamená, že je možné, že počet řádků v agregované transakci je o něco vyšší nebo nižší podle faktorů, jako je například počet různých produktů.
 - **Maximální počet vláken pro ověření transakcí obchodu** – Toto pole definuje počet vláken, která budou použita k ověření transakcí. Ověření transakcí je povinný krok, ke kterému musí dojít předtím, než mohou být transakce načteny do výkazů. Je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry Commerce**. Je nutné to definovat i v případě, že organizace nepoužívá dárkové poukazy.
+
+V následující tabulce jsou uvedeny doporučené hodnoty pro předchozí parametry. Tyto hodnoty by měly být otestovány a přizpůsobeny konfiguraci nasazení a dostupné infrastruktuře. Jakékoli zvýšení doporučených hodnot může nepříznivě ovlivnit jiné dávkové zpracování a mělo by být ověřeno.
+
+| Parametr | Doporučená hodnota | Podrobnosti |
+|-----------|-------------------|---------|
+| Maximální počet zaúčtování paralelních příkazů | <p>Nastavte tento parametr na počet dávkových úloh, které jsou dostupné pro skupinu dávek, která provádí úlohu **Výpis**.</p><p>**Obecné pravidlo:** Vynásobte počet virtuálních serverů AOS počtem dávkových úloh, které jsou k dispozici na virtuálním serveru AOS.</p> | Tento parametr nelze použít, když je povolena funkce **Výkazy maloobchodu – Postupné**. |
+| Max. počet vláken pro zpracování objednávky na jeden výkaz | Začněte testovat hodnoty od **4**. Obvykle by tato hodnota neměla překročit **8**. | Tento parametr určuje počet vláken, která se používají k vytvoření a zaúčtování prodejních objednávek. Představuje počet vláken, která jsou k dispozici pro zaúčtování na jeden výpis. |
+| Max. počet řádků transakcí v rámci agregace | Začněte testovat hodnoty od **1000**. V závislosti na konfiguraci centrály mohou být z hlediska výkonu výhodnější menší objednávky. | Tento parametr určuje počet řádků, které budou zahrnuty do každé prodejní objednávky během účtování výpisu. Po dosažení tohoto počtu budou řádky rozděleny do nové objednávky. Přestože počet prodejních řádků nebude přesný, protože k rozdělení dochází na úrovni prodejní objednávky, bude se blížit nastavenému počtu. Tento parametr se používá ke generování prodejních objednávek pro maloobchodní transakce, které nemají pojmenovaného zákazníka. |
+| Maximální počet vláken pro ověření transakcí obchodu | Doporučujeme nastavit tento parametr na **4** a zvýšit ho pouze v případě, že nedosáhnete přijatelného výkonu. Počet vláken, která tento proces používá, nemůže překročit počet procesorů, které jsou dostupné pro dávkový server. Pokud zde přiřadíte příliš mnoho vláken, můžete ovlivnit další dávkové zpracování. | Tento parametr řídí počet transakcí, které lze pro daný obchod současně ověřit. |
 
 > [!NOTE]
 > Všechna nastavení a parametry související se zaúčtováním výkazu, které jsou definovány v obchodech a na stránce **Parametry Commerce**, se vztahují na vylepšenou funkci zaúčtování výkazu.
@@ -119,9 +125,17 @@ Výkaz prochází různými operacemi (například vytvořit, vypočítat, vymaz
 
 ### <a name="aggregated-transactions"></a>Agregované transakce
 
-Během procesu zaúčtování jsou prodejní transakce seskupeny podle konfigurace. Tyto souhrnné transakce jsou v systému uloženy a slouží k vytváření prodejních objednávek. Každá souhrnná transakce agregační vytvoří jednu odpovídajících prodejní objednávky v systému. Souhrnné transakce můžete zobrazit pomocí tlačítka **Souhrnné transakce** ve skupině **Podrobnosti o spuštění** ve výkazu.
+Během procesu zaúčtování jsou transakce cash-and-carry agregovány podle zákazníka a produktu. Proto se sníží počet prodejních objednávek a vytvořených řádků. Tyto souhrnné transakce jsou v systému uloženy a slouží k vytváření prodejních objednávek. Každá souhrnná transakce agregační vytvoří jednu odpovídajících prodejní objednávky v systému. 
 
-Karta **Prodejní objednávky** souhrnné transakce uvádí následující informace:
+Pokud výkaz není úplně zaúčtován, můžete si ve výkazu prohlédnout agregované transakce. V podokně akcí na kartě **Výkaz** ve skupině **Podrobnosti o spuštění** vyberte **Agregované transakce**.
+
+![Tlačítko agregovaných transakcí pro výkaz, který není zcela zaúčtován.](media/aggregated-transactions.png)
+
+Pro zaúčtované výkazy můžete zobrazit agregované transakce na stránce **Zaúčtované výkazy**. V podokně akcí vyberte **Dotazy** a pak vyberte **Agregované transakce**.
+
+![Příkaz agregovaných transakcí pro zaúčtované výkazy.](media/aggregated-transactions-posted-statements.png)
+
+Záložka s náhledem **Podrobnosti prodejní objednávky** agregované transakce uvádí následující informace:
 
 - **ID záznamu** – ID záznamu souhrnné transakce.
 - **Číslo výkazu** – výkaz, ke kterému souhrnná transakce patří.
@@ -130,12 +144,28 @@ Karta **Prodejní objednávky** souhrnné transakce uvádí následující infor
 - **Počet souhrnných řádků** – celkový počet řádků pro souhrnnou transakci a prodejní objednávku.
 - **Stav** – stav poslední souhrnné transakce.
 - **ID faktury** – při fakturaci souhrnné prodejní objednávky pro souhrnnou transakci, ID prodejní faktury. Pokud je toto pole prázdné, faktura pro prodejní objednávku nebyla zaúčtována.
+- **Chybový kód** – Toto pole je nastaveno, pokud je agregace v chybovém stavu.
+- **Chybová zpráva** – Toto pole je nastaveno, pokud je agregace v chybovém stavu. Udává podrobnosti o tom, co způsobilo selhání procesu. K vyřešení problému můžete použít informace v chybovém kódu a poté proces ručně restartovat. V závislosti na typu řešení může být nutné agregované prodeje odstranit a zpracovat na novém výkazu.
 
-Karta **Podrobnosti o transakcích** agregované transakce zobrazuje všechny transakce, které byly převedeny do souhrnné transakce. Agregované řádky agregované transakce zobrazují všechny agregované záznamy z transakce. Agregované řádky také zobrazují podrobné informace, jako je položka, varianta, množství, cena, čistá částka, jednotka a sklad. Každý agregovaný řádek v zásadě odpovídá jednomu řádku prodejní objednávky.
+![Pole na záložce s náhledem Podrobnosti prodejní objednávky pro agregovanou transakci.](media/aggregated-transactions-error-message-view.png)
 
-Ze stránky **Souhrnné transakce** si můžete stáhnout soubor XML pro určitou souhrnnou transakci pomocí tlačítka **Exportovat XML prodejní objednávky**. Kód XML slouží k ladění problémů, které se týkají vytvoření prodejní objednávky a zaúčtování. Stačí stáhnout si soubor XML, nahrát ho do testovacího prostředí a vyladit výdej v testovacím prostředí. Funkce pro stažení souboru XML pro agregované transakce není k dispozici pro výkazy, které byly zaúčtovány.
+Záložka s náhledem **Podrobnosti o transakcích** agregované transakce zobrazuje všechny transakce, které byly převedeny do agregované transakce. Agregované řádky agregované transakce zobrazují všechny agregované záznamy z transakce. Agregované řádky také zobrazují podrobné informace, jako je položka, varianta, množství, cena, čistá částka, jednotka a sklad. Každý agregovaný řádek v zásadě odpovídá jednomu řádku prodejní objednávky.
 
-Zobrazení souhrnné transakce poskytuje následující výhody:
+![Podrobnosti o transakci na záložce s náhledem agregované transakce.](media/aggregated-transactions-sales-details.png)
+
+V některých situacích mohou agregované transakce selhat při zaúčtování jejich konsolidované prodejní objednávky. V těchto situacích bude ke stavu výkazu přidružen chybový kód. Chcete-li zobrazit pouze agregované transakce, které obsahují chyby, zaškrtnutím příslušného políčka v zobrazení agregovaných transakcí můžete povolit filtr **Zobrazit pouze selhání**. Povolením tohoto filtru omezíte výsledky na agregované transakce, které obsahují chyby vyžadující řešení. Informace, jak opravit tyto chyby, najdete v části [Úprava a audit online objednávky a asynchronních transakcí objednávek zákazníků](edit-order-trans.md).
+
+![Zaškrtávací políčko pro filtr Zobrazit pouze selhání v zobrazení agregovaných transakcí.](media/aggregated-transactions-failure-view.png)
+
+Na stránce **Agregované transakce** si můžete stáhnout soubor XML pro určitou agregovanou transakci výběrem možnosti **Exportovat agregovaná data**. Soubor XML si můžete prohlédnout v libovolné aplikaci pro soubory XML, abyste viděli samotné podrobnosti dat, které zahrnují vytvoření a zaúčtování prodejní objednávky. Funkce pro stažení souboru XML pro agregované transakce není k dispozici pro výkazy, které byly zaúčtovány.
+
+![Tlačítko Exportovat agregovaná data na stránce Agregované transakce.](media/aggregated-transactions-export.png)
+
+V případě, že nemůžete chybu opravit opravou dat na prodejní objednávce nebo dat, která podporují prodejní objednávku, k dispozici je tlačítko **Odstranit objednávku odběratele**. Chcete-li odstranit objednávku, vyberte agregovanou transakci, která selhala, a poté vyberte **Odstranit objednávku odběratele**. Bude odstraněna jak agregovaná transakce, tak odpovídajících prodejní objednávka. Nyní můžete transakce zkontrolovat pomocí funkce pro úpravy a auditování. Případně je lze znovu zpracovat prostřednictvím nového výkazu. Po odstranění všech selhání můžete pokračovat v účtování výkazu spuštěním funkce pro zaúčtování příslušného výkazu.
+
+![Tlačítko Odstranit objednávku odběratele v zobrazení agregovaných transakcí.](media/aggregated-transactions-delete-cust-order.png)
+
+Zobrazení agregovaných transakcí poskytuje následující výhody:
 
 - Uživatel má vhled do souhrnných transakcí, které selhaly při vytváření prodejní objednávky, a prodejních objednávek, které selhaly při fakturaci.
 - Uživatel má přehled o způsobu, jakým budou transakce agregovány.
@@ -174,3 +204,6 @@ Ostatní backendová vylepšení, která uživatel vidí byla provedena u funkce
 
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **aktualizace zásob** v poli **úroveň podrobností** vyberte **Souhrn**.
     - Přejděte na možnost **Retail a Commerce** \> **Nastavení Headquarters** \> **Parametry** \> **Parametry Commerce**. Poté na kartě **zaúčtování** na pevné záložce **Agregace** nastavte možnost **transakce dokladu** na **Ano**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

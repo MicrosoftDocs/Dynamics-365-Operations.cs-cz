@@ -1,7 +1,7 @@
 ---
 title: Nábor dodavatelů
 description: Toto téma popisuje proces nabírání nových dodavatelů. Vysvětluje akce, které jsou vyžadovány různými rolemi v průběhu tohoto procesu.
-author: kamaybac
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPag
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c2950cecfaf2c8b19ed14df748810b7d6f926c53
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841424"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566880"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 

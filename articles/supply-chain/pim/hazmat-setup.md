@@ -1,7 +1,7 @@
 ---
 title: Příprava nebezpečných materiálů
 description: Toto téma vysvětluje, jak nastavit data potřebná ke klasifikaci položek jako nebezpečných materiálů. Když vytvoříte prodejní objednávku, která obsahuje položku klasifikovanou jako nebezpečný materiál, systém vygeneruje dokumentaci nebezpečného materiálu pro tuto prodejní objednávku při jeho expedici.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 5cf323272926936ba6397a9f98cfff8d8a31d091
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820339"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778002"
 ---
 # <a name="set-up-hazardous-materials"></a>Příprava nebezpečných materiálů
 
@@ -27,7 +27,7 @@ Chcete-li používat funkce nebezpečných materiálů, musíte nejprve nastavit
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Zapnutí funkce nebezpečných materiálů v systému
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Od verze Supply Chain Management 10.0.21 je tato funkce ve výchozím nastavení zapnuta. Správci mohou pomocí stránky [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a povolit či zakázat ji v případě potřeby. Tato funkce je uvedena jako:
 
 - **Modul**: *Řízení informací o produktech*
 - **Název funkce** *Informace o produktu s nebezpečnými materiály a dokumentace expedice*

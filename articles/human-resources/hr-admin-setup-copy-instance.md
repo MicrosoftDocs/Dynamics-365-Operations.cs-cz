@@ -2,15 +2,12 @@
 title: Kopírovat instanci
 description: Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox).
 author: andreabichsel
-manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,16 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111771"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060824"
 ---
 # <a name="copy-an-instance"></a>Kopírovat instanci
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Pomocí služby Microsoft Dynamics Lifecycle Services (LCS) můžete kopírovat databázi Microsoft Dynamics 365 Human Resources do prostředí izolovaného prostoru (sandbox). Máte-li jiné prostředí izolovaného prostoru (sandbox), můžete také zkopírovat databázi z prostředí do cíleného prostředí sandbox.
 
@@ -39,7 +38,7 @@ Při kopírování instance mějte na paměti následující tipy:
 
 - Musíte být správcem cílového prostředí, abyste se k němu mohli po zkopírování instance přihlásit.
 
-- Při kopírování databáze aplikace Human Resources nejsou zkopírovány prvky (aplikace nebo data), které jsou obsaženy v prostředí Microsoft Power Apps. Informace o tom, jak kopírovat prvky do prostředí Power Apps, naleznete v tématu [kopírování prostředí](https://docs.microsoft.com/power-platform/admin/copy-environment). Prostředí Power Apps, které chcete přepsat, musí být prostředí izolovaného prostoru (sandbox). Chcete-li změnit produkční prostředí Power Apps na prostředí s izolovaným prostorem, musíte být globálním správcem klienta. Další informace o změně prostředí Power Apps naleznete v tématu [přepnutí instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- Při kopírování databáze aplikace Human Resources nejsou zkopírovány prvky (aplikace nebo data), které jsou obsaženy v prostředí Microsoft Power Apps. Informace o tom, jak kopírovat prvky do prostředí Power Apps, naleznete v tématu [kopírování prostředí](/power-platform/admin/copy-environment). Prostředí Power Apps, které chcete přepsat, musí být prostředí izolovaného prostoru (sandbox). Chcete-li změnit produkční prostředí Power Apps na prostředí s izolovaným prostorem, musíte být globálním správcem klienta. Další informace o změně prostředí Power Apps naleznete v tématu [přepnutí instance](/dynamics365/admin/switch-instance).
 
 - Pokud zkopírujete instanci do prostředí sandbox a chcete integrovat prostředí sandbox s Dataverse, musíte znovu použít vlastní pole na tabulky Dataverse. Viz [Použití vlastních polí na Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
@@ -53,9 +52,9 @@ Při kopírování databáze aplikace Human Resources dojde k následujícím ud
 
 - Dokumenty v úložišti objektů BLOB Microsoft Azure nejsou kopírovány z jednoho prostředí do jiného. Ve výsledku nebudou žádné připojené dokumenty a šablony, které jsou připojeny, zkopírovány a zůstanou ve zdrojovém prostředí.
 
-- Všichni uživatelé, kromě správce a ostatních interních uživatelských účtů služby budou nedostupní. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
+- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, a dalších uživatelských účtů interní služby, nebudou k dispozici. Správce může odstranit nebo zamlžit data před tím, než se budou moci ostatní uživatelé vrátit do systému.
 
-- Uživatel s oprávněními správce musí provést požadované změny konfigurace, například opětovné připojení koncových bodů integrace pro určité služby nebo adresy URL.
+- Každý uživatel s rolí zabezpečení „Správce systému“ musí provést požadované změny konfigurace, například znovu připojit koncové body integrace ke konkrétním službám nebo adresám URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopírování databáze aplikace Human Resources
 
@@ -72,15 +71,15 @@ Chcete-li dokončit tento úkol, nejprve zkopírujte instanci a poté se přihla
 
 4. V podokně úloh **Kopírovat instanci** vyberte instanci, kterou chcete přepsat, a poté vyberte možnost **kopírovat**. Počkejte, až bude hodnota pole **Kopírovat stav** aktualizována na hodnotu **dokončeno**.
 
-   ![[Výběr instance, kterou chcete přepsat](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Výběr instance, která má být přepsána.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vyberte **Power Platform** a přihlaste se do centra pro správu Microsoft Power Platform.
 
-   ![[Výběr Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Vyberte Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vyberte prostředí Power Apps, ke zkopírování a pak vyberte **Kopírovat**.
 
-7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Dataverse. Další informace a pokyny naleznete v části [Konfigurace integrace Dataverse](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Po dokončení procesu kopírování se přihlaste k cílové instanci a povolte integraci Dataverse. Další informace a pokyny naleznete v části [Konfigurace integrace Dataverse](./hr-admin-integration-common-data-service.md).
 
 ## <a name="data-elements-and-statuses"></a>Datové prvky a stavy
 
@@ -112,7 +111,7 @@ Některé z těchto prvků nebyly zkopírovány, protože jsou specifické pro p
 
 Při kopírování instance se dále mění následující stavy:
 
-- Všichni uživatelé s výjimkou správce jsou nastaveni na **Zakázáno**.
+- Všichni uživatelé s výjimkou těch, kteří mají roli zabezpečení „Správce systému“, jsou nastaveni na **Zakázáno**.
 
 - Všechny dávkové úlohy, s výjimkou některých systémových úloh, jsou nastaveny na **srážka**.
 
@@ -142,7 +141,7 @@ Pro každé vlastní pole, které je vystaveno v tabulkách Dataverse, proveďte
 
 Proces zrušení výběru, použití změn, opětovného výběru a opětovného použití změn vyzve schéma k aktualizaci v Dataverse pro zahrnutí vlastních polí.
 
-Další informace o vlastních polích naleznete v tématu [Vytvoření vlastních polí a práce s nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+Další informace o vlastních polích naleznete v tématu [Vytvoření vlastních polí a práce s nimi](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ## <a name="see-also"></a>Viz také
 
@@ -150,3 +149,6 @@ Další informace o vlastních polích naleznete v tématu [Vytvoření vlastní
 [Odebrání instance](hr-admin-setup-remove-instance.md)</br>
 [Aktualizace procesu](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

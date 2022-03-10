@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766963"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchie dimenzí
 
@@ -39,7 +39,7 @@ Hierarchie dimenzí se používají na různých místech v nákladovém účetn
 
 Následuje příklad hierarchie dimenzí.
 
-![Příklad hierarchie dimenzí](./media/dimension-hierarchy.png)
+![Příklad hierarchie dimenzí.](./media/dimension-hierarchy.png)
 
 Hierarchii dimenzí lze vytvořit pro následující typy dimenzí:
 
@@ -80,7 +80,7 @@ Hierarchie dimenzí je vytvořena jako stromové struktura, která má vztahy uz
 
 Malá společnost má následující strukturu organizace, kde finance a lidské zdroje jsou oddělení pod správou a montáž a balení jsou oddělení v rámci výroby.
 
-![Příklad organizační struktury](./media/dimension-hierarchy-org.png)
+![Příklad organizační struktury.](./media/dimension-hierarchy-org.png)
 
 Dimenze objektu nákladů představuje všechna nákladová střediska v organizaci.
 
@@ -118,7 +118,7 @@ Hierarchii dimenzí, která splňuje požadavky organizace na výkazy, lze nasta
 
 | Název hierarchie dimenze | Dimenze    | Název typu hierarchie dimenze      | Hierarchie přístupového seznamu |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Žádný                    |
+| Organizace             | Nákladová střediska | Hierarchie klasifikace dimenzí | Ne                    |
 
 Hierarchii dimenzí pro vykazování lze nastavit tak, jak je uvedeno zde.
 
@@ -331,7 +331,7 @@ Nastavení pro hierarchii seznamu přístupu se používají ke kontrole dat, zo
     - Vizualizace dat Power BI, které jsou vloženy do klienta Dynamics 365 Finance
 
 > [!NOTE] 
-> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarchie seznamu přístupu nepomáhá zabezpečit export dat do aplikace Excel. Z toho vyplývá, že nástroj pro vytváření sestav by měl být použit pouze nákladovými účetními a vedoucími pracovníky, kteří mají úplný přístup k zobrazení dat.
 
 

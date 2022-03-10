@@ -1,33 +1,29 @@
 ---
 title: Přehled splnění servisních smluv
 description: Toto téma poskytuje přehled úloh ke splnění servisních smluv.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19d31cc3a651f4978a0f5f432c39579ccb871418
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010640"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985879"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Přehled splnění servisních smluv 
+# <a name="fulfill-service-agreements-overview"></a>Přehled splnění servisních smluv
 
 [!include [banner](../includes/banner.md)]
-
 
 Toto téma poskytuje přehled úloh ke splnění servisních smluv. Uvádí také přehled součástí obchodních procesů banky, seznamů formulářů, které jsou přidružené k jednotlivých součástem obchodních procesů, a popis úkolů přidruženým k jednotlivým součástem obchodních procesů.
 
@@ -43,9 +39,9 @@ V následující tabulce jsou uvedeny formuláře, které podporují komponenty 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -106,3 +102,6 @@ V následující tabulce jsou uvedeny formuláře, které podporují komponenty 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

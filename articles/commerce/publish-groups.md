@@ -2,11 +2,9 @@
 title: Práce se skupinami publikování
 description: Toto téma popisuje funkci skupin publikování v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b623573f598f6b21291cafe95fa04e6777cffe11
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717665"
 ---
 # <a name="work-with-publish-groups"></a>Práce se skupinami publikování
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje funkci skupin publikování v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Internetové stránky E-commerce jsou průběžně aktualizovány novým obsahem po celý rok. Aktualizace jsou často publikovány v dávkách kolem zaneprázdněných událostí E-commerce, jako jsou svátky, sezónní marketingové kampaně nebo propagační akce. Tyto aktualizace často vyžadují, aby byly skupiny obsahu webu (příklady, stránky, obrázky, fragmenty a šablony) připraveny, ověřeny a publikovány souběžně v jedné akci.
 

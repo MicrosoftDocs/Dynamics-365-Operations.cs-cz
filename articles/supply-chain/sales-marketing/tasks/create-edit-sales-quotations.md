@@ -1,7 +1,7 @@
 ---
 title: Vytváření a úpravy prodejních nabídek
 description: Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku.
-author: omulvad
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTabl
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 51e80cf500181601cf6e0d2910b91c429c404f01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1c409d294565f89eac95e42f6207573d22859100
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836439"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578937"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Vytváření a úpravy prodejních nabídek
 

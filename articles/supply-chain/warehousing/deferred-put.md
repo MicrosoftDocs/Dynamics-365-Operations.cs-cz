@@ -1,27 +1,24 @@
 ---
 title: Odložené zpracování práce skladu
 description: Toto téma popisuje funkci, která umožňuje odložené zpracování operací vložení práce v aplikaci Dynamics 365 Supply Chain Management.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4424151"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577857"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odložené zpracování práce skladu
 
@@ -31,7 +28,7 @@ Toto téma popisuje funkci, která umožňuje odložené zpracování operací v
 
 Funkce odloženého zpracování umožňují pracovníkům skladu pokračovat v práci i v době, kdy na pozadí běží operace vložení. Odložené zpracování je užitečné, pokud je nutné zpracovat mnoho řádků práce a pracovník může nechat zpracování běžet asynchronně. Je také užitečná v případě, kdy server může mít v době zpracování ad hoc nebo neplánovaný nárůst doby zpracování a ta může ovlivnit produktivitu uživatele.
 
-Zpracování na pozadí je dosaženo pomocí systému SysOperation. Další informace získáte v části [Přehled systému SysOperation](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Zpracování na pozadí je dosaženo pomocí systému SysOperation. Další informace získáte v části [Přehled systému SysOperation](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurace zásad zpracování pracovních postupů
 
@@ -110,3 +107,9 @@ Pracovní prostor **sledování odchozích prací** obsahuje dvě dlaždice, kte
 ## <a name="deleting-completed-tasks"></a>Odstranění dokončených úkolů
 
 Odložené úlohy zpracování vložení můžete odstranit tak, že je vyberete a odstraníte na stránce.
+
+## <a name="additional-resources"></a>Další prostředky
+
+- [Odložené zpracování ruční operace přesunu zásob](deferred-processing-manual-inventory-movement.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

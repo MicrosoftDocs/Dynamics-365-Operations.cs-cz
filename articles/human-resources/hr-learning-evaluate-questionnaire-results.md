@@ -1,8 +1,8 @@
 ---
 title: Zobrazení a vyhodnocení výsledků dotazníků
-description: Tento článek vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, jež respondenti dokončí.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Toto téma vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, které respondenti dokončí.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 4b0a79b533e90abbddba81a7dac0602544a90bde
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056269"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070695"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Zobrazení a vyhodnocení výsledků dotazníků
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tento článek vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, jež respondenti dokončí. 
+Toto téma vysvětluje způsob, jakým lze zobrazit a vyhodnotit výsledky dotazníků, které respondenti dokončí. 
 
 Jakmile respondenti vyplní dotazník, existuje několik způsobů, jak můžete výsledky dotazníku zobrazit a vyhodnotit:
 

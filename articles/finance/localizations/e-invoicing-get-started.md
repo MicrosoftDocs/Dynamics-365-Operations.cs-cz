@@ -1,346 +1,269 @@
 ---
-title: Začněte s doplňkem elektronické fakturace
-description: Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
+title: Začínáme s Elektronickou fakturací
+description: Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací v Microsoft Dynamics 365 Finance a Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 10/08/2020
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441339"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779687"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on"></a>Začněte s doplňkem elektronické fakturace
+# <a name="get-started-with-electronic-invoicing"></a>Začínáme s Elektronickou fakturací
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace, které vám pomohou začít s doplňkem elektronické fakturace. Nejprve vás provede kroky konfigurace v Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS) a Dynamics 365 Finance. Dále popisuje postup pro odesílání dokumentů prostřednictvím služby za použití Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management. Dozvíte se také, jak interpretovat protokoly odeslání.
-
-## <a name="availability"></a>Dostupnost
-
-Doplněk elektronické fakturace je zpočátku k dispozici pro několik zemí. Doplněk podporuje vytváření elektronických faktur a odesílání následujících obchodních dokumentů:
-
-| Země nebo oblast  | Obchodní dokument                          |
-|-----------------|--------------------------------------------|
-| Rakousko         | Prodejní a projektové faktury                 |
-| Belgie         | Prodejní a projektové faktury                 |
-| Brazílie          | Elektronický fiskální dokument model 55 (NF-e) |
-| Dánsko         | Prodejní a projektové faktury                 |
-| Estonsko         | Prodejní a projektové faktury                 |
-| Finsko         | Prodejní a projektové faktury                 |
-| Francie          | Prodejní a projektové faktury                 |
-| Německo         | Prodejní a projektové faktury                 |
-| Itálie           | Prodejní a projektové faktury                 |
-| Mexiko          | faktura CFDI                               |
-| Nizozemsko     | Prodejní a projektové faktury                 |
-| Norsko          | Prodejní a projektové faktury                 |
-| Španělsko           | Prodejní a projektové faktury                 |
-| Evropa          | Prodejní a projektové faktury PEPPOL          |
-    
-## <a name="licensing"></a>Licence
-
-Doplněk Elektronická fakturace můžete použít s vaší aktuální licencí. K používání služby nejsou vyžadovány žádné další licence.
+Toto téma poskytuje informace, které vám pomohou začít s Elektronickou fakturací. Toto téma vás provede běžnými kroky konfigurace služeb Regulatory Configuration Services (RCS) a Dynamics 365 Finance, a popisuje kroky, které musíte dodržet při odesílání obchodních dokumentů a kontrole výsledků zpracování.
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Před provedením kroků v tomto tématu je třeba splnit následující předpoklady:
+Než provedete postupy v tomto tématu, musí být splněny následující předpoklady:
 
-- Přístup k vašemu účtu LCS.
-- Projekt nasazení LCS, který zahrnuje Finance nebo Supply Chain Management verze 10.0.13 nebo novější.
-- Přístup k vašemu účtu RCS.
-- Zapněte funkci Globalizace pro svůj účet RCS prostřednictvím modulu **Správa funkcí**. Pro více informací viz [Regulatory Configuration Services (RCS) - funkce globalizace](rcs-globalization-feature.md)
-- Vytvořte prostředek trezoru klíčů a účet úložiště Azure. Další informace viz [Vytvořte účet Azure Storage a trezor klíčů](e-invoicing-create-azure-storage-account-key-vault.md).
+- Nakonfigurujte služby Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) a prostředí Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management. Další informace najdete v tématu [Začínáme se správou služby Elektronické fakturace](e-invoicing-get-started-service-administration.md).
+- Vytvořte poskytovatele konfigurace pro vaši organizaci. Další informace naleznete v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-## <a name="overview"></a>Přehled
+## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importujte funkci elektronické fakturace od poskytovatele konfigurace společnosti Microsoft 
 
-Následující obrázek ukazuje pět hlavních kroků, které v tomto tématu provedete.
+1. Přihlaste se ke svému účtu Regulatory Configuration Service (RCS).
+2. V pracovním prostoru **Funkce globalizace** v části **Funkce** vyberte dlaždici **Elektronická fakturace**.
+3. Vyberte **Import** a potom vyberte **Synchronizovat**.
+4. Filtrujte sloupec **Poskytovatel konfigurace** sloupec podle výrazu **Microsoft**.
+5. V tabulce vyberte název funkce elektronické fakturace a poté vyberte **Import**.
 
-![Přehled pěti kroků v tomto tématu](media/e-invoicing-services-get-started-overview-5-steps.png)
+## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Vytvoření funkce elektronické fakturace u poskytovatele organizace
 
-1. **Nastavení prostředků Azure:** Nakonfigurujte úložiště Azure a nahrávání digitálních certifikátů v trezoru klíčů Azure.
-2. **Nastavení LCS:** Nainstalujte doplněk pro mikroslužby.
-3. **Nastavení RCS:** Nastavte funkce prostředí, přístupu uživatelů a elektronické fakturace.
-4. **Nastavení klienta:** Nastavte spojení mezi klientem a doplňkem elektronické fakturace a vypněte staré funkce pro odesílání a přijímání odpovědí na elektronické dokumenty.
-5. **Odeslat faktury:** Odesílejte elektronické dokumenty prostřednictvím doplňku Elektronická fakturace a přijímejte odpovědi.
+1. V RCS v části **Funkce** pracovního prostoru **Funkce globalizace** vyberte dlaždici **Elektronická fakturace**.
+2. Vyberte **Přidat** > **Na základě stávající funkce** a do pole **Název** zadejte název funkce elektronické fakturace.
+3. Do pole **Popis** zadejte popis funkce.
+4. V **poli základní funkce** vyberte importovanou funkci elektronické fakturace od poskytovatele konfigurace společnosti Microsoft.
+5. Vyberte **Vytvořit funkci**.
 
-> [!NOTE]
-> Některé konfigurační kroky v tomto tématu jsou společné a nezávislé na zemi / regionu. Kroky a postupy nastavení, které jsou specifické pro zemi / region, jsou popsány v tématech pro jednotlivé země / regiony.
+## <a name="country-specific-configuration-for-electronic-invoicing-feature"></a>Konfigurace funkce elektronické fakturace specifická pro zemi
 
-## <a name="lcs-setup"></a>Nastavení LCS
-
-1. Přihlaste se k účtu LCS.
-2. Vyberte dlaždici **Správa funkcí Preview** a ve skupině polí **Funkce public preview** vyberte **BusinessDocumentSubmission**.
-3. Označte pole **Funkce Preview povolena**.
-4. Vyberte projekt nasazení LCS. Než budete moci vybrat projekt, musí být funkční.
-5. Na pevné záložce **Doplňky prostředí** vyberte **Nainstalujte nový doplněk**.
-6. Vyberte **Odeslání obchodního dokladu**.
-7. V dialogovém okně **Instalační doplněk** v poli **ID aplikace AAD** zadejte **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tato hodnota je pevná hodnota.
-8. V poli **ID klienta AAD** zadejte ID účtu předplatného Azure.
-
-    ![Dialogové okno Nastavení doplňku v LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
-
-9. Zaškrtnutím políčka přijměte smluvní podmínky.
-10. Vyberte **Instalovat**.
-
-## <a name="rcs-setup"></a>Nastavení RCS
-
-Během instalace RCS dokončíte tyto úlohy:
-
-1. Nastavte trezor klíčů v RCS.
-2. Nastavte integraci RCS se serverem doplňkové elektronické fakturace.
-3. Vytvořte prostředí doplňkové elektronické fakturace pro vaši organizaci.
-
-### <a name="set-up-the-key-vault-in-rcs"></a>Nastavte trezor klíčů v RCS
-
-1. Přihlaste se k účtu RCS.
-2. V pracovním prostoru **Funkce globalizace** v části **prostředí** vyberte dlaždici **elektronická fakturace**.
-3. Vyberte **Prostředí služeb**.
-
-    ![Výběr Prostředí služeb](media/e-invoicing-services-get-started-select-service-environments.png)
+V závislosti na zemi nebo regionu může funkce elektronické fakturace vyžadovat specifickou konfiguraci. 
 
 > [!NOTE]
-> Možnost **Připojené aplikace** uděluje přístup pro automatickou konfiguraci doplňku elektronické fakturace ve Finance nebo Supply Management prostřednictvím RCS. V současné době je však tato funkce stále ve vývoji.
+> Když povolíte funkci elektronické fakturace pro Finsko, parametry specifické pro aplikaci ve vyhledávání nebudou podporovány. Chcete-li tento problém vyřešit, v modulu **Elektronické hlášení** zkontrolujte konfigurace formátu prodejní faktury a projektové faktury. Ručně nastavte vypočítané pole pro mapování **$PaymentMethodSubstitution** a poté svážte toto pole s polem **EpiPaymentMeansCode** z formátů prodejní faktury a projektové faktury.
+>
+> Když povolíte funkci elektronické fakturace pro Itálii, parametry specifické pro aplikaci ve vyhledávání nebudou podporovány. Chcete-li tento problém vyřešit, v modulu **Elektronické hlášení** ručně nastavte počítané pole pro mapování **$NaturaReverseCharge**.
+>
+> Konkrétní kroky, které se týkají jiných umístění, najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
-4. V podokně akcí zvolte **Parametry trezoru klíčů**.
+## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Import konfigurací mapování modelu z elektronického výkaznictví
 
-    ![Výběr parametru trezoru klíčů](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
+1. V RCS vyberte pracovní prostor **Elektronické výkaznictví**.
+2. V seznamu dostupných poskytovatelů konfigurace **Microsoft** vyberete **Úložiště**.
+3. Vyberte **Globální** a v podokně akcí vyberte **Otevřít**.
+4. Importujte konfigurace mapování modelu podle následující tabulky na základě názvu prvku.
 
-5. V podokně Akce vyberte možnost **Nový** a přidejte trezor klíčů.
-6. V poli **URI trezoru klíčů** zadejte hodnotu atributu **Název DNS** prostředku trezoru klíčů, který jste nakonfigurovali v Azure. Informace o tom, kde najít hodnotu **Název DNS**, najdete v části [Vytvořte účet Azure Storage a trezor klíčů](e-invoicing-create-azure-storage-account-key-vault.md).
+| Název funkce                         | Konfigurace mapování modelu |
+|--------------------------------------|-----------------------------|
+| Rakouské elektronické faktury (AT)    | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Belgická elektronická faktura (BE)      | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Brazilský NF-e (BR)                  | <p>Model kontextu faktury odběratele</p><p>Fiskální dokumenty</p><p>Model zprávy odpovědi</p> |
+| Brazilian NFS-e ABRASF Curitiba (BR) | <p>Model kontextu faktury odběratele</p><p>Fiskální dokumenty</p><p>Model zprávy odpovědi</p> |
+| Dánská elektronická faktura (DK)       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Egyptská elektronická faktura (EG)     | <p>Model kontextu faktury odběratele</p><p>Model faktury</p><p>Model zprávy odpovědi</p> |
+| Estonská elektronická faktura (EE)     | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Finská elektronická faktura (FI)       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Francouzská elektronická faktura (FR)       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Německá elektronická faktura (DE)       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| FatturaPA (IT)                       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Mexická CFDI Interfactura (MX)       | <p>Model kontextu faktury odběratele</p><p>Model faktury</p><p>Model zprávy odpovědi</p> |
+| Nizozemská elektronická faktura (NL)        | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Norská elektronická faktura (NO)    | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Španělská elektronická faktura (ES)      | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Elektronická faktura PEPPOL            | <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
+| Saúdskoarabská elektronická faktura (SA)| <p>Model kontextu faktury odběratele</p><p>Model faktury</p> |
 
-    ![Pole URI trezoru klíčů](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. Na pevné záložce **Certifikáty** vyberte **Přidat** a zadejte názvy všech digitálních certifikátů a tajné kódy z trezoru klíčů, které jsou zapotřebí k navázání důvěryhodných připojení. V poli **Typ** můžete určit, jestli se jedná o certifikát nebo tajný kód. Obě sady hodnot se konfigurují na prostředku trezoru klíčů v Azure.
+## <a name="configure-the-application-setup"></a>Konfigurace nastavení aplikace
 
-    ![Přidávání certifikátů](media/e-invoicing-services-get-started-add-digital-certificates.png)
+1. Vyberte funkci elektronické fakturace, kterou jste vytvořili.
+2. Na kartě **Nastavení** vyberte **Nastavení aplikace**.
+3. V poli **Připojit aplikaci** vyberte připojení, které je spojeno s vaší instancí Finance nebo Supply Chain Management.
+4. V části **Typy elektronického dokumentu** vyberte **Přidat**.
+5. Vyberte a zadejte **Název tabulky** podle následující tabulky.
 
-8. Pokud faktura pro vaši zemi / region vyžaduje pro použití digitálního podpisu řetězec certifikátů, vyberte **Řetězec certifikátů** v podokně akcí a poté zadejte sekvenci certifikátů nebo tajných kódů trezoru klíčů, které tvoří řetězec.
+    | Název funkce                         | Obchodní dokument | Název tabulky |
+    |--------------------------------------|-------------------|------------|
+    | Rakouské elektronické faktury (AT)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | Daňový doklad |
+    | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby | Daňový doklad |
+    | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Finská elektronická faktura (FI)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Francouzská elektronická faktura (FR)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Německá elektronická faktura (DE)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | FatturaPA (IT)                       | <p>Prodejní faktura</p><p>Faktura projektu | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Mexická CFDI Interfactura (MX)       | <p>Prodejní faktura</p><p>Dodací list</p><p>Převod zásob</p><p>Doplněk platby</p> | Deník faktur odběratele |
+    | Nizozemská elektronická faktura (NL)        | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Deník faktur odběratele</p><p>Faktura projektu</p> |
 
-### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Nastavte integraci RCS se serverem doplňkové elektronické fakturace
+6. U každého vytvořeného názvu tabulky vyberte a zadejte kontext podle následující tabulky.
 
-1. V pracovním prostoru **Funkce globalizace** v části **Související nastavení** vyberte odkaz **Parametry elektronického výkaznictví**.
-2. Vybrat **Kliknutím sem se připojíte ke službě Lifecycle**. Pokud se nechcete připojit k LCS, vyberte **Zrušit**.
-3. Na záložce **Služby elektronické fakturace** zadejte do pole **Identifikátor URI koncového bodu služby** hodnotu podle dostupných zeměpisných oblastí: `https://businessdocumentsubmission.us.operations365.dynamics.com/` nebo `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
-4. V poli **ID aplikace** ověřte, zda zobrazuje ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tato hodnota je pevná hodnota.
-5. V poli **ID prostředí LCS** zadejte ID účtu předplatného LCS.
+    | Název funkce                         | Obchodní dokument | Kontext |
+    |--------------------------------------|-------------------|---------|
+    | Rakouské elektronické faktury (AT)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | <p>Kontextový model faktury zákazníka – kontext fiskálního dokumentu</p><p>Kontextový model faktury zákazníka – kontext dopisu opravy FD</p> |
+    | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby| Kontextový model faktury zákazníka – kontext fiskálního dokumentu |
+    | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Finská elektronická faktura (FI)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Francouzská elektronická faktura (FR)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Německá elektronická faktura (DE)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | FatturaPA (IT)                       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Mexická CFDI Interfactura (MX)       | <p>Prodejní faktura</p><p>Dodací list</p><p>Převod zásob</p><p>Doplněk platby</p> | Kontextový model faktury zákazníka – kontext faktury zákazníka |
+    | Nizozemská elektronická faktura (NL)        | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Kontextový model faktury zákazníka – kontext faktury zákazníka</p><p>Kontextový model faktury zákazníka – kontext faktury projektu</p> |
 
-![Zadání doplňkových parametrů elektronické fakturace](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
+7. U každého názvu tabulky a kontextu vyberte a zadejte hodnotu mapování obchodního dokumentu podle následující tabulky.
 
-### <a name="add-an-electronic-invoicing-add-on-environment"></a>Přidejte prostředí doplňku elektronické fakturace
+    | Název funkce                         | Obchodní dokument | Mapování obchodního dokumentu |
+    |--------------------------------------|-------------------|---------------------------|
+    | Rakouské elektronické faktury (AT)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Belgická elektronická faktura (BE)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Brazilský NF-e (BR)                  | <p>Daňový doklad</p><p>Dopis o opravě</p> | <p>Mapování fiskálních dokumentů – Mapování fiskálních dokumentů</p><p>Mapování fiskálních dokumentů – mapování opravných dopisů</p> |
+    | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokument služby | Mapování fiskálních dokumentů – Mapování fiskálních dokumentů |
+    | Dánská elektronická faktura (DK)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Egyptská elektronická faktura (EG)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Estonská elektronická faktura (EE)     | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Finská elektronická faktura (FI)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Francouzská elektronická faktura (FR)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Německá elektronická faktura (DE)       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | FatturaPA (IT)                       | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Mexická CFDI Interfactura (MX)       | <p>Prodejní faktura</p><p>Dodací list</p><p>Převod zásob</p><p>Doplněk platby</p> | Mapování modelu faktury – faktura zákazníka |
+    | Nizozemská elektronická faktura (NL)        | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Norská elektronická faktura (NO)    | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Španělská elektronická faktura (ES)      | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Elektronická faktura PEPPOL            | <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
+    | Saúdskoarabská elektronická faktura (SA)| <p>Prodejní faktura</p><p>Faktura projektu</p> | <p>Mapování modelu faktury – faktura zákazníka</p><p>Mapování modelu faktury – faktura projektu</p> |
 
-Pro doplněk elektronické fakturace můžete vytvořit různá prostředí, například vývojová, testovací nebo produkční prostředí.
 
-1. V pracovním prostoru **Funkce globalizace** v části **prostředí** vyberte dlaždici **elektronická fakturace**.
-2. Vyberte **Nový** pro vytvoření prostředí.
-3. V poli **Účet tokenu SAS úložiště** zadejte název tajného kódu trezoru klíčů, který jste nakonfigurovali v trezoru klíčů v RCS.
+## <a name="country-specific-configuration-of-application-setup"></a>Konfigurace nastavení aplikace pro určitou zemi
 
-    ![Pole účtu tokenu úložiště SAS](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
+V závislosti na zemi nebo regionu může nastavení aplikace vyžadovat specifickou konfiguraci. 
 
-4. Na pevné záložce **Uživatelé** vyberte **Nový**, chcete-li udělit uživatelům přístup k tomuto prostředí.
+Konkrétní kroky najdete v dokumentaci „Začínáme“, která je k dispozici pro vaši zemi nebo region.
 
-    ![Přidávání uživatelů služby](media/e-invoicing-services-get-started-enter-service-users.png)
+## <a name="deploy-the-electronic-invoicing-feature-to-service-environment"></a>Nasazení funkce elektronické fakturace do prostředí služby
 
-5. V podokně akcí vyberte **Publikovat**, chcete-li publikovat prostředí na serveru doplňku elektronické fakturace.
+1. Na kartě **Verze** vyberte verzi funkce elektronické fakturace, kterou chcete nasadit.
+2. Vyberte **Změnit stav** \> **Dokončeno**.
+3. Vyberte **Změnit stav** \> **Publikovat**.
+4. Vyberte **Nasadit**.
+5. Nastavte možnost **Nasadit do připojené aplikace** na **Ne**.
+6. Nastavte možnost **Nasadit do prostředí služby** na **Ano**.
+7. V poli **Prostředí služby** vyberte prostředí služby elektronické fakturace, kam chcete nasadit funkci elektronické fakturace.
+8. V poli **Od data** vyberte datum, kdy musí funkce elektronické fakturace nabýt účinnosti v Elektronické fakturaci.
+9. Vyberte **OK**.
 
-    ![Tlačítko Publikovat](media/e-invoicing-services-get-started-publish-service-environment.png)
+## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Nasazení funkce elektronické fakturace do připojené aplikace
 
-### <a name="e-invoicing-feature-setup"></a>nastavení funkce elektronické fakturace
+1. Na kartě **Verze** vyberte verzi funkce elektronické fakturace, kterou chcete nasadit.
+2. Vyberte **Nasadit**.
+3. Nastavte možnost **Nasadit do připojené aplikace** na **Ano**.
+4. V poli **Připojit aplikaci** vyberte připojení, které je spojeno s vaší instancí Finance nebo Supply Chain Management.
+5. Nastavte možnost **Nasadit do prostředí služby** na **Ne**.
+6. Vyberte **OK**.
 
-„Funkce elektronické fakturace“ je obecný název prostředku, který je nakonfigurován a publikován tak, aby využíval server doplňku elektronické fakturace. Nastavení funkce elektronické fakturace mimo jiné kombinuje použití konfiguračních formátů elektronických zpráv (ER) k vytvoření konfigurovatelných souborů exportu a importu a použití akcí a toků akcí k umožnění vytváření konfigurovatelných pravidel pro odesílání požadavků, import odpovědi a analýzu obsahu odpovědí.
+## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Zapnutí funkce elektronické fakturace ve Finance nebo Supply Chain Management
 
-Z důvodu variací formátů faktur a toků akcí je nastavení funkce elektronické fakturace závislé na zemi / regionu.
+1. Přihlaste se k Finance nebo Supply Chain Management a ověřte si, že jste ve správné právnické osobě.
+2. Přejděte na **Správa organizace** \> **Nastavení** \> **Parametry elektronického dokumentu**.
+3. Na kartě **Funkce** vyberte funkci specifickou pro danou zemi/oblast a zapněte funkci elektronické fakturace pro Finance nebo Supply Chain Management. V následující tabulce je uveden seznam funkcí elektronické fakturace, které jsou k dispozici pro konkrétní zemi/oblasti. 
 
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance-or-supply-chain-management"></a>Nastavte integraci doplňku elektronické fakturace ve Finance nebo Supply Chain Management 
-
-Během tohoto nastavení provedete následující úkoly:
-
-1. Otevřená testovací funkce
-2. Chcete-li povolit integraci s Finance, zapněte funkci integrace doplňku elektronické fakturace.
-3. Nastavte afdresu URL koncového bodu doplňku elektronické fakturace.
-4. Importujte konfigurace ER, které souvisejí s funkcí elektronické fakturace pro konkrétní zemi / region.
-5. Zapněte příslušnou funkci elektronické fakturace pro konkrétní zemi / region.
-6. Importujte konfigurace ER a nastavte typy odpovědí, které jsou nutné k aktualizaci faktury pro konkrétní zemi / region jako výsledek procesu odeslání.
-
-### <a name="open-flighted-feature"></a>Otevřená testovací funkce
-Funkce integrace elektronické faktury je povolena prostřednictvím testování. Testování je koncept, který ve výchozím nastavení umožňuje funkci zapnout nebo vypnout. Následující kroky umožňují testování v neprodukčním prostředí. 
-
-1. ProveĎte následující příkaz SQL:
-
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    | Název funkce                                          | Země nebo oblast  |
+    |-------------------------------------------------------|-----------------|
+    | Rakouské elektronické faktury (AT)                     | Rakousko         |
+    | Belgická elektronická faktura (BE)                       | Belgie         |
+    | Mexická elektronická faktura CFDI (MX)                  | Mexiko          |
+    | Dánská elektronická faktura (DK)                        | Dánsko         |
+    | Nizozemská elektronická faktura (NL)                         | Nizozemsko |
+    | Egyptská elektronická faktura (EG)                      | Egypt           |
+    | Estonská elektronická faktura (EE)                      | Estonsko         |
+    | Finská elektronická faktura (FI)                       | Finsko         |
+    | Francouzská elektronická faktura (FR)                        | Francie          |
+    | Německá elektronická faktura (DE)                        | Německo         |
+    | Italská elektronická faktura (IT)                       | Itálie           |
+    | Brazilská elektronická faktura NF-e Federal (BR)      | Brazílie          |
+    | NFS-e – elektronické faktura za služby (městské) pro Brazílii   | Brazílie          |
+    | Norská elektronická faktura (NO)                     | Norsko          |
+    | Elektronická faktura PEPPOL                             | Globální          |
+    | Španělská elektronická faktura (ES)                       | Španělsko           |
+    | Saúdskoarabská elektronická faktura (SA)                 | Saúdskoarabské království    |
     
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
-    
-2. Po provedení výše uvedené změny proveďte IISReset na všech AOS
 
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Zapněte funkci integrace doplňku elektronické fakturace
+4. Zvolte možnost **Uložit**.
 
-1. Přihlaste se k aplikaci Finance nebo Supply Chain Management.
-2. V pracovní prostoru **Správa funkcí** vyhledejte novou funkci **Konfigurovatelná integrace doplňku elektronické fakturace**. Pokud se funkce stále nezobrazuje na stránce Správa funkcí, spusťte funkci **Kontrola aktualizací**
-3. Vyberte funkci a poté vyberte tlačítko **Povolit nyní**.
+## <a name="issue-electronic-invoices"></a>Vydávání elektronických faktur
 
-### <a name="set-up-the-service-endpoint-url"></a>Nastavte adresu URL koncového bodu služby
-
-1. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
-2. Na kartě **Služba odeslání** v poli **Adresa URL koncového bodu služby** zadejte `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
-3. V poli **Prostředí** zadejte název prostředí doplňku elektronické fakturace, které jste vytvořili během instalace RCS.
-
-![Zadání parametrů služby](media/e-invoicing-services-get-started-enter-service-endpoint.png)
-
-### <a name="import-the-er-configurations"></a>Import konfigurací ER
-
-Chcete-li povolit shromažďování a odesílání obchodních dat do doplňku elektronické fakturace, musíte importovat datový model ER a konfiguraci datového modelu ER, které souvisejí s funkcí elektronické fakturace pro konkrétní zemi / region, kterou chcete použít.
-
-1. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**. Ujistěte se, že je tento poskytovatel konfigurace nastaven na **Aktivní**. Další informace o tom, jak nastavit poskytovatele jako **Aktivní** naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
-3. Vyberte **Úložiště**.
-4. Vyberte **Globální prostředek** a potom vyberte **Otevřít**.
-5. V dialogovém okně **Připojte se k Lifecycle Services** vyberte **Kliknutím sem se připojíte ke službě Lifecycle**.
-6. V závislosti na zemi nebo oblasti, kde chcete použít funkci elektronické fakturace, musíte importovat příslušný datový model, mapování datového modelu a formáty. Informace o konfiguracích ER, které byste měli importovat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
-7. Importujte **Kontextový model faktury zákazníka**. Tento model obsahuje další parametry, které mimo jiné popisují prostředí ve Finance, které se používá pro doplněk Elektronická fakturace během zadávání obchodních údajů.
-
-### <a name="turn-on-countryregion-specific-e-invoicing-features"></a><a name="region-specific"></a>Zapněte funkce elektronické fakturace pro konkrétní zemi / region.
-
-Chcete-li zapnout funkce elektronické fakturace specifické pro zemi / region, aby fungovaly s doplňkem elektronické fakturace, musíte tuto funkci zapnout u každé právnické osoby, kde ji chcete použít. Poté již nelze použít starou integraci elektronické fakturace a je zapnuta integrace s novým doplňkem elektronické fakturace.
-
-1. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
-2. Na kartě **Funkce** na řádku funkce, která souvisí s funkcí elektronické fakturace specifické pro vaši zemi / region, zaškrtněte políčko ve sloupci **Povoleno**. Informace o tom, které funkce byste měli zapnout, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
-
-![Zapnutí funkce elektronické fakturace](media/e-invoicing-services-get-started-enable-invoicing-feature.png)
-
-> [!NOTE]
-> Pokud máte více právnických osob, které jsou nakonfigurovány pro různé země nebo regiony, můžete pro každou právnickou osobu zapnout funkci elektronické fakturace specifickou pro danou zemi / region.
-
-### <a name="import-er-configurations-and-set-up-the-response-types-to-update-your-countryregion-specific-invoice-document"></a>Importujte konfigurace ER a nastavte typy odpovědí, abyste mohli aktualizovat fakturační dokument specifický pro vaši zemi / region
-
-Pokud odeslaný fakturační dokument vyžaduje aktualizaci po reakci odeslání na autorizační služby vlády, musíte importovat speciální datový model a konfigurace ER, aby bylo možné aktualizovat stav fakturačního dokladu nebo jakéhokoli jiného dalšího pole.
-
-1. V pracovním prostoru **Elektronické výkaznictví** v části **Poskytovalé konfigurace** vyberte dlaždici **Microsoft**.
-2. Vyberte **Úložiště**.
-3. Vyberte **Globální prostředek** a potom vyberte **Otevřít**.
-4. Importujte **Model zprávy s odpovědí**, **Formát importu zprávy s odpovědí**, **Mapování modelu zprávy s odpovědí na místo určení** a **Formát importu obsahu souboru**.
-5. Přejděte na **Správa organizace \> Nastavení \> Parametry elektronického dokumentu**.
-6. Na kartě **Elektronický dokument** vyberte **Přidat** k zadání názvu tabulky, která souvisí s fakturačním dokladem specifickým pro vaši zemi / region. Informace o tom, které názvy tabulek byste měli vybrat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
-7. Vyberte **Typy odpovědí**, chcete-li konfigurovat typy odpovědí. Informace o tom, které názvy tabulek byste měli vybrat, najdete v tématu specifické pro zemi / region „Začínáme s doplňkem elektronické fakturace“.
-
-![Nastavení typů odpovědí](media/e-invoicing-services-get-started-set-up-response-types.png)
-
-## <a name="e-invoicing-feature-names-by-country"></a>Názvy funkcí elektronické fakturace podle země 
-Následující tabulka popisuje další funkce elektronické fakturace, které jsou k dispozici ke stažení z globálního úložiště elektronického výkaznictví za účelem generování elektronických faktur.
-V RCS si můžete stáhnout funkce elektronické fakturace uvedené v této tabulce, konfigurace ER a dostupná nastavení funkcí elektronické fakturace.
-Ve službě Finance můžete povolit související odkazy na funkce na stránce **Parametry elektronického dokumentu** pro vystavování elektronických faktur pro tyto země. Další informace najdete v části [Zapněte funkce elektronické fakturace specifické pro zemi / region](#region-specific) uvedené dříve v tomto tématu.
-
-| Název funkce                      | popis                                 | Konfigurace ER                                                                                                  | Nastavení                                                                                                                                                         | Země nebo oblast  | Odkaz na funkci      |
-|-----------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------------------|
-| Rakouské elektronické faktury (AT) | Prodejní a projektové faktury pro Rakousko      | - Prodejní faktura OIOUBL <br>- Faktura k projektu OIOUBL <br>- Prodejní dobropis OIOUBL <br>- Dobropis k projektu OIOUBL | - Generování prodejní faktury (AT) <br>- Generování projektové faktury (AT) <br>- Generování prodejního dobropisu (AT) <br>- Generování projektového dobropisu (AT)         | Rakousko         | EUR-00023              |
-| Belgická elektronická faktura (BE)   | Prodejní a projektové faktury pro Belgii      | - Prodejní faktura UBL BE <br>- Projektová faktura UBL BE <br>- Dobropis k projektu UBL BE <br>- Prodejní dobropis UBL BE | - Generování prodejní faktury (BE)<br>- Generování projektové faktury (BE) <br>- Generování prodejního dobropisu (BE) <br>- Generování projektového dobropisu (BE)         | Belgie         | EUR-00023              |
-| Dánská elektronická faktura (DK)    | Prodejní a projektové faktury pro Dánsko      | - Prodejní faktura OIOUBL <br>- Faktura k projektu OIOUBL <br>- Prodejní dobropis OIOUBL <br>- Dobropis k projektu OIOUBL | - Generování prodejní faktury (DK) <br>- Generování projektové faktury (DK) <br>- Generování prodejního dobropisu (DK)<br>- Generování projektového dobropisu (DK)         | Dánsko         | EUR-00023<br> DK-00001 |
-| Nizozemská elektronická faktura (NL)     | Prodejní a projektové faktury pro Nizozemsko  | - Prodejní faktura UBL NL <br>- Projektová faktura UBL NL <br>- Prodejní dobropis UBL NL <br>- Dobropis k projektu UBL NL | - Generování prodejní faktury (NL) <br> - Generování projektové faktury (NL) <br> - Generování prodejního dobropisu (NL) <br>- Generování projektového dobropisu (NL)          | Nizozemsko | EUR-00023              |
-| Estonská elektronická faktura (EE)  | Prodejní a projektové faktury pro Estonsko      | - Prodejní faktura (EE) <br> - Projektová faktura (EE)                                                                     | - Generování prodejní faktury (EE) <br>- Generování projektové faktury (EE)                                                                                           | Estonsko         | EUR-00023              |
-| Finská elektronická faktura (FI)   | Prodejní a projektové faktury pro Finsko      | - Prodejní faktura (FI) <br>- Generování projektové faktury (FI)                                                          | - Generování prodejní faktury (FI) <br>- Generování projektové faktury (FI)                                                                                           | Finsko         | EUR-00023              |
-| Francouzská elektronická faktura (FR)    | Prodejní a projektové faktury pro Francii    | - Prodejní faktura UBL FR <br> - Projektová faktura UBL FR <br> - Prodejní dobropis UBL FR <br>- Dobropis k projektu UBL FR | - Generování prodejní faktury (FR) <br> - Generování projektové faktury (FR) <br>- Generování prodejního dobropisu (FR) <br>- Generování projektového dobropisu (FR)         | Francie          | EUR-00023              |
-| Německá elektronická faktura (DE)    | Prodejní a projektové faktury pro Německo      |- Prodejní faktura (DE) <br> - Projektová faktura <DE>                                                                     | - Generování prodejní faktury (DE) <br>- Generování projektové faktury (DE)                                                                                           | Německo         | EUR-00023              |
-| Norská elektronická faktura (NO) | Prodejní a projektové faktury pro Norsko       | - Prodejní faktura OIOUBL <br>- Faktura k projektu OIOUBL <br>- Prodejní dobropis OIOUBL <br>- Dobropis k projektu OIOUBL | - Generování prodejní faktury (NO) <br>- Generování projektové faktury (NO) <br>- Generování prodejního dobropisu (NO) <br>- Generování projektového dobropisu (NO)          | Norsko          | EUR-00023<br> NO-00010 |
-| Španělská elektronická faktura (ES)   | Prodejní a projektové faktury pro Španělsko        | - Prodejní faktura (ES) <br>- Projektová faktura (ES)                                                                     | - Generování prodejní faktury (ES) <br>- Generování projektové faktury (ES)                                                                                           | Španělsko           | EUR-00023 <br>ES-00025 |
-| Italská elektronická faktura (IT)   | Prodejní a projektové faktury pro Itálii        | - (Náhled) Prodejní faktura (IT) <br> - Projektová faktura (IT)                                                           | - Prodejní faktura <br> - Projektová faktura                                                                                                                           | Itálie           | EUR-00023 <br>IT-00036 |
-| Elektronická faktura PEPPOL         | Generování prodejní a projektové faktury PEPPOL | - Prodejní faktura PEPPOL <br>- Projektová faktura PEPPOL <br>- Prodejní dobropis PEPPOL <br> - Projektový dobropis PEPPOL | - Generování prodejní faktury PEPPOL <br>- Generování projektové faktury PEPPOL <br>- Generování prodejního dobropisu PEPPOL <br>- Generování projektového dobropisu PEPPOL |                 | EUR-00023              |
-
-
-## <a name="electronic-invoice-processing-in-finance-and-supply-chain-management"></a>Elektronické zpracování faktur ve Finance a Supply Chain Management
-
-Během zpracování dokončíte tyto úlohy:
-
-1. Odešlete obchodní dokument (fakturu) prostřednictvím doplňku Elektronická fakturace.
-2. Zobrazit protokoly provádění podání.
-
-### <a name="submit-business-documents"></a>Odešlete obchodní dokumenty
-
-Během běžného procesu odesílání je komunikace mezi klientem a doplňkem elektronické fakturace obousměrná. Účelem je splnění dvou hlavních úkolů při předkládání elektronických dokumentů:
-
-1. Odešlete všechny elektronické dokumenty, které čekají na odeslání z Finance, a které mají správný stav pro odeslání a splňují kritéria výběru.
-2. Importujte do Finance odpověď, kterou doplněk elektronické fakturace vrátí u dříve odeslaných elektronických dokumentů. Po importu se odpovědi analyzují a stav obchodních dokumentů se odpovídajícím způsobem aktualizuje.
-
-Obchodní dokumenty můžete odeslat ručně nebo na základě vašich požadavků na plán.
-
-1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Odesílejte elektronické dokumenty**.
-2. Pro první odeslání jakéhokoli dokumentu vždy nastavte možnost **Znovu odeslat dokumenty** na **Ne**. Pokud musíte znovu odeslat dokument prostřednictvím služby, nastavte tuto možnost na **Ano**.
-3. Na pevné záložce **Záznamy, které mají být zahrnuty** vyberte **Filtr** a otevřete dialogové okno **Dotaz**, kde můžete vytvořit dotaz pro výběr dokumentů k odeslání.
-
-![Dialogové okno Odeslat elektronické dokumenty](media/e-invoicing-services-get-started-submission-form.png)
-
-### <a name="filter-query"></a>Dotaz filtru
-
-1. V dialogovém okně **Dotaz** na kartě **Rozsah** zadejte kritéria filtru pomocí polí **Tabulka**, **Odvozená tabulka**, **Pole** a **Kritéria**.
-2. Vyberte **Přidat**, chcete-li přidat tolik dalších kritérií, kolik potřebujete k výběru obchodních dokumentů.
-
-    ![Nastavení kritérií filtru odeslání](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
-
-3. Zvolte **OK** a zavřete dialogové okno **Dotaz**.
-4. Vyberte **OK** a odešlete vybrané obchodní dokumenty do doplňku Elektronická fakturace.
+1. Přejděte na **Správa organizace** \> **Periodické** \> **Elektronické dokumenty** \> **Odesílat elektronické dokumenty**.
+2. Na pevné záložce **záznamy, které mají být zahrnuty** vyberte možnost **Filtr**.
+3. Vybrat **Přidat** pro přidání názvu tabulky do filtru dotazu.
+4. Vyberte tabulku, která obsahuje faktury.
 
     > [!NOTE]
-    > Během prvního pokusu o odeslání dokumentu prostřednictvím služby budete vyzváni k potvrzení spojení s doplňkem Elektronická fakturace. Vyberte **Klikněte zde pro připojení ke službě elektronického odesílání dokumentů**.
-    >
-    > ![Připojit ke poli zprávy služby elektronického odesílání dokumentů](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
-    >
-    > Pokud je připojení úspěšné, obdržíte potvrzovací zprávu.
-    >
-    > ![Potvrzení připojení k doplňku Elektronická fakturace](media/e-invoicing-services-get-started-confirmation-connection-e-invoicing-services.png)
+    > Název tabulky musí být uveden v tabulce v části [Konfigurace nastavení aplikace](#configure-the-application-setup) dříve v tomto tématu.
 
-5. Zavřete dialogové okno.
+5. Z tabulky, které se chcete dotazovat, vyberte název pole.
+6. Zadejte název tabulky a název pole pro kritéria dotazování.
+7. Opakováním kroků 5 a 6 přidejte do dotazu další pole a kritéria a poté vyberte **OK**.
+8. Vyberte **OK**.
+
+## <a name="view-submission-logs"></a>Zobrazit protokoly odeslání
+
+1. Přejděte na **Správa organizace** \> **Periodické** \> **Elektronické dokumenty** \> **Protokol o odeslání elektronických dokumentů**.
+2. V poli **Typ dokumentu** vyberte tabulku, která obsahuje faktury.
+
+    > [!NOTE]
+    > Název tabulky musí být uveden v tabulce v části [Konfigurace nastavení aplikace](#configure-the-application-setup) dříve v tomto tématu.
+
+3. Vyberte fakturu v mřížce a poté vyberte **Dotaz** \> **Podrobnosti o podání**.
+
+## <a name="download-an-electronic-document-file"></a>Stáhněte si soubor elektronického dokumentu
+
+1. Přejděte na **Správa organizace** \> **Periodické** \> **Elektronické dokumenty** \> **Protokol o odeslání elektronických dokumentů**.
+2. V poli **Typ dokumentu** vyberte tabulku, která obsahuje faktury.
+3. Vyberte dokument v mřížce a poté vyberte **Elektronický dokument** \> **Stáhnout soubor**. Archiv, který obsahuje soubor elektronického dokumentu, bude navržen ke stažení.
 
 > [!NOTE]
-> Po každém odeslání centrum akcí zobrazuje počet odeslaných dokumentů.
->
-> ![Zprávy centra akcí](media/e-invoicing-services-get-started-view-action-center-messages.png)
-
-### <a name="submission-by-batch"></a>Odesílání po dávkách
-
-Místo ručního odesílání dokumentů můžete automatizovat proces odesílání a spustit jej na pozadí na základě nakonfigurované frekvence dávkového provedení.
-
-1. V dialogovém okně **Odeslat elektronické dokumenty** na pevné záložce **Spustit na pozadí** nastavte u možnosti **Dávkové zpracování** hodnotu **Ano**.
-2. Na kartě **Opakování** nakonfigurujte frekvenci dávkového zpracování.
-
-![Nastavení odesílání po dávkách](media/e-invoicing-services-get-started-set-up-submission-batch.png)
-
-### <a name="view-all-submission-logs"></a>Zobrazit všechny protokoly odeslání
-
-1. Přejděte na **Správa organizace \> Periodické \> Elektronické dokumenty \> Protokol o odeslání elektronických dokumentů**.
-2. V poli **Typ dokumentu** vyberte typ dokumentu, podle kterého chcete filtrovat.
-
-    ![Výběr typu dokumentu pro zobrazení protokolů odeslání](media/e-invoicing-services-get-started-select-document-type-for-viewing-submission-log.png)
-
-    > [!IMPORTANT]
-    > Hodnota, která je uvedena ve sloupci **Stav odeslání** představuje stav, který souvisí s dokončením samotného procesu odesílání. Označuje, zda byl tok akcí nakonfigurovaných v RCS spuštěn až do konce, bez ohledu na to, zda byl elektronický dokument schválen nebo odmítnut. Hodnota ve sloupci **Stav podání** nepředstavuje stav odeslaného dokumentu. Stav odeslaného dokumentu (tj. zda byl dokument schválen nebo zamítnut) si můžete prohlédnout na pevné záložce **Zpracování protokolu akcí** v podrobnostech protokolu odeslání, jak je popsáno dále.
-
-3. V podokně akcí zvolte **Dotazy \> Podrobnosti o odeslání**.
-4. Zobrazit podrobnosti protokolu odeslání.
-
-    ![Podrobnosti protokolu odeslání](media/e-invoicing-services-get-started-view-submission-log-form.png)
-
-Výsledky, které se zobrazují v protokolu odeslání, závisí na tom, jak byla v RCS nastavena funkce elektronické fakturace. Bez ohledu na nastavení však protokol odeslání má vždy tři pevné záložky:
-
-- **Zpracování akcí** - tato pevná záložka zobrazí protokol provádění akcí, které jsou konfigurovány ve verzi funkce, která byla nastavena v RCS. Sloupec **Stav** ukazuje, zda byla akce úspěšně spuštěna.
-- **Soubory akcí** - tato pevná záložka zobrazí přechodné soubory, které byly vygenerovány během provádění akcí. Můžete vybrat **Zobrazit** a stáhnout soubor a zobrazit jeho obsah.
-- **Zpracování protokolu akcí** - Tato pevná záložka zobrazuje výsledky komunikace mezi doplňkem Elektronická fakturace a cílovou webovou službou. Ukazuje také, co bylo vráceno zpracováním webové služby.
+> Než budete moci stahovat soubory, možnost **Exportovat výsledek** musí být zapnuta pro související akci v nastavení funkce elektronické fakturace v RCS.
 
 ## <a name="related-topics"></a>Související témata
 
-- [Přehled doplňku Elektronická fakturace](e-invoicing-service-overview.md)
-- [Začněte s doplňkem elektronické fakturace pro Brazílii](e-invoicing-bra-get-started.md)
-- [Začněte s doplňkem elektronické fakturace pro Mexiko](e-invoicing-mex-get-started.md)
-- [Začněte s doplňkem elektronické fakturace pro Itálii](e-invoicing-ita-get-started.md)
-- [Nastavení doplňku Elektronická fakturace](e-invoicing-setup.md)
+- [Přehled elektronické fakturace](e-invoicing-service-overview.md)
+- [Začínáme se správou služby Elektronické fakturace](e-invoicing-get-started-service-administration.md)
+- [Začínáme s Elektronickou fakturací pro Brazílii](e-invoicing-bra-get-started.md)
+- [Začínáme s Elektronickou fakturací pro Mexiko](e-invoicing-mex-get-started.md)
+- [Začněte s elektronickou fakturací pro Itálii](e-invoicing-ita-get-started.md)
+- [Elektronické faktury zákazníka v Egyptě](emea-egy-e-invoices.md)
+- [Elektronické faktury zákazníka v Saúdské Arábii](emea-sau-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

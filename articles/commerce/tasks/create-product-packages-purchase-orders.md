@@ -2,26 +2,23 @@
 title: " Vytváření balení produktů pro nákupní objednávky"
 description: Tato procedura vás provede vytvářením balíčku výrobku a jeho použití v nákupní objednávce.
 author: josaw1
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b0084c6b4acbf14e3afec552575d5be26114237
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb10164be8d7a0828169cf3865f884afaa2e8408472edebe4cb0c7d4db059d8c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723230"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Vytváření balení produktů pro nákupní objednávky
 
@@ -73,3 +70,6 @@ Tato procedura vás provede vytvářením balíčku výrobku a jeho použití v 
 17. Klikněte na položku Vytvořit.
 18. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

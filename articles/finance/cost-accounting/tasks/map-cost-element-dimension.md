@@ -2,25 +2,22 @@
 title: Namapování dimenze prvku nákladů
 description: Kontrolor nákladů může tento postup použít k mapování dimenze prvku nákladů k dimenzi nákladového prvku u právnické osoby MXMF.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f8d5356e6c7f8aff507d3fa87bb3c30cb38cf36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81b76d7410de793a9d906677cf2e4e6ce4932a8b66f78a874594818d5c8d0ffe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754259"
 ---
 # <a name="map-a-cost-element-dimension"></a>Namapování dimenze prvku nákladů
 
@@ -44,3 +41,6 @@ Kontrolor nákladů může tento postup použít k mapování dimenze prvku nák
     * V tomto příkladu vyberte člena dimenze 6001004 Telefon.  
 11. Klikněte na položku Uložit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

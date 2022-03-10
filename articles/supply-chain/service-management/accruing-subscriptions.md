@@ -1,7 +1,7 @@
 ---
 title: Časové rozlišení předplatného
 description: U předplatného servisu ručně rozlišujete výnosy do období následujících po datu, kdy jste fakturovali transakci poplatku.
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d51bcdcc268cf0662ef3d82e6cc8581fd4894bba4b2f1f905b9dfd324cce98
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719568"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580473"
 ---
 # <a name="accruing-subscriptions"></a>Časové rozlišení předplatného 
 
@@ -65,7 +65,7 @@ Aby bylo možné časově rozlišovat výnosy předplatného, musí být zaškrt
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Povolení časového rozlišení výnosů u skupiny předplatného
 
-1.  Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
+Klikněte na uzel **Řízení služeb** \> **Nastavení** \> **Servisní zakázky** \> **Skupiny předplatného**.
 
 ## <a name="periods"></a>Období
 
@@ -75,8 +75,8 @@ V následující tabulce získáte přehled o možných obdobích časového roz
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,26 +1,24 @@
 ---
 title: Pracovní prostor správy banky
-description: Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje Informace, které se vztahují k bankovním účtům společnosti a obsahují souhrnné zobrazení a stránku analýzy. Souhrnné zobrazení ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Na stránce analýzy se používají funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
-author: saraschi2
-manager: AnnBe
+description: Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje informace, které se vztahují k bankovním účtům společnosti.
+author: roschlom
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3c5d248c5431b7a54835c699618a0a27ab760754
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f12f907e6135af60e092a2c20ebfd4d196b2d861
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260200"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883330"
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 

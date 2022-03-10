@@ -1,7 +1,7 @@
 ---
 title: Integrace pro servisní smlouvy a projekty
 description: Při práci se servisními smlouvami a řádky servisních smluv používáte data, která byla nastavená v oblastech řízení a účtování projektu.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9855915bd4d1f8ebb0c73bf53e7032af4972c45
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a43a8bab6a5e5ea527f4a062feea79b4313cb56f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831549"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578793"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integrace pro servisní smlouvy a projekty 
 

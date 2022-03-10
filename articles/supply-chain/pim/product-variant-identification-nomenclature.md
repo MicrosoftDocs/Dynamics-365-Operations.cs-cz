@@ -1,12 +1,10 @@
 ---
 title: Názvosloví čísel a názvů variant produktu
 description: Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl].
-author: roxanadiaconu
-manager: tfehr
+author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 220104
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: f17f9e1401c68c11e23f327d96028663470b3245
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 14ea9bb5afe7b05f1f0392fde523a95a04a6e2ad
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011315"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569690"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
@@ -190,10 +188,12 @@ V závislosti na názvosloví se systém může pokusit přiřadit nejedinečné
 
 Během jednoho kroku procesu konfigurace systém navrhne hodnotu konfigurace podle klasifikace. V tomto kroku můžete ručně změnit hodnotu konfigurace. Po uložení konfigurace systém zkontroluje, zda je hodnota konfigurace jedinečná. Není-li hodnota, kterou jste zadali jedinečná, zobrazí se chybová zpráva. Chcete-li uložit konfiguraci, musíte zadat jedinečnou hodnotu konfigurace.
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

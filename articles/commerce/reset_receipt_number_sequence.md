@@ -2,16 +2,13 @@
 title: Resetování čísel příjemek
 description: V tomto tématu je popsán postup při obnovení čísel účtenek, která se používají pro různé akce k požadovanému datu (například fiskální rok nebo kalendářní rok).
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733862"
 ---
 # <a name="reset-receipt-numbers"></a>Resetování čísel příjemek 
 
@@ -58,7 +55,7 @@ Chcete-li zapnout resetování, postupujte následujícím způsobem.
 1. V poli **Resetovat typ příjemky** vyberte **pouze jednorázově** nebo **Ročně**.
 1. Vyberte **OK**.
 
-![Výběr data obnovení účtenky](media/Enable_receipt_reset.png "Výběr data obnovení účtenky")
+![Výběr data obnovení účtenky.](media/Enable_receipt_reset.png "Výběr data obnovení účtenky")
 
 Poté, co vyberete datum, bude zobrazeno ve sloupci **další datum resetování čísla příjemky**. Datum resetování lze použít pro všechny typy transakcí příjemky. Proto bude číselná řada příjmu vynulována pro všechny typy příjemek.
 
@@ -68,3 +65,6 @@ Chcete-li vymazat budoucí data resetování, můžete použít funkci **Vymazat
 
 > [!NOTE]
 > V závislosti na zvoleném datu resetování a na formátu účtenky mohou být k dispozici duplicitní čísla příjmu. Ačkoli systém Retail POS může tyto situace zpracovat, zvyšují dobu potřebnou ke zpracování vratek, protože prodejci musí vybírat mezi duplicitními příjmy. Další komplikace související s čištěním dat mohou nastat v případě, že duplicitní příjemky nebyly naplánovány. Proto doporučujeme, abyste používali dynamické datové znaky (například **DDD**, **mm**, **DD** a **RR**), aby se zabránilo výskytu duplicitních čísel příjmu po resetování.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

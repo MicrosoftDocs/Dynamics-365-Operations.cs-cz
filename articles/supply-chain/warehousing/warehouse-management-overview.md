@@ -1,25 +1,24 @@
 ---
 title: Řízení skladu – přehled
 description: Pomocí správy skladu můžete sledovat a automatizovat procesy skladu.
-author: ShylaThompson
+author: Mirzaab
 ms.date: 04/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 844e54caa072eef3481e094ef296a82fa099a68bb806d763baa550b1a2226347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762691"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982845"
 ---
 # <a name="warehouse-management-overview"></a>Přehled řízení skladu
 

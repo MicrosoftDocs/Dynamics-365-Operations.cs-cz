@@ -1,12 +1,10 @@
 ---
 title: Natavení kupónů pro maloobchodní prodej
-description: Toto téma poskytuje přehled kupónů a vysvětluje postup při jejich nastavení.
-author: scott-tucker
-manager: AnnBe
-ms.date: 06/04/2020
+description: Toto téma poskytuje přehled kupónů a vysvětluje postup při jejich nastavení v Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fcb21c037c4492ce215780913301c0c0b54ab9d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259459"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603116"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
@@ -40,6 +38,10 @@ Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spoj�
 
 > [!NOTE]
 > Po propojení kupónu se slevou začne být několik polí na stránce slevy v aplikaci Commerce jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
+> 
+> Při používání kupónu v kanálu call centra musíte vybrat tlačítko **Přepočítat** **(Karta Prodat > Vypočítat > Přepočítat)**, aby byla uplatněna sleva spojená s kupónem. Tento další krok bude v budoucím vydání odebrán.
+
+Chcete-li použít kupón na prodejní transakci v pokladním místě (POS), můžete použít **Kód kupónu** nebo **Čárový kód kupónu**. K použití možnosti **Kód kupónu** musí být možnost **Přidat kód kupónu** nakonfigurována v POS **Transakce** [rozložení obrazovky](pos-screen-layouts.md). Vyberte **Přidat kód kupónu** a zadejte kód kupónu. Případně k použití **Čárový kód kupónu** naskenujte čárový kód nebo zadejte čárový kód pomocí numerické klávesnice na obrazovce **Transakce**.
 
 ### <a name="limited-use-coupons"></a>Kupóny s omezeným použitím
 

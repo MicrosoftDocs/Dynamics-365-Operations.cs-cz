@@ -2,11 +2,9 @@
 title: Doplnění prahu zóny
 description: Doplňování na základě zón používá strategii minimálního/maximálního (min./max.) doplňování, ale místo pouze jednotlivých skladových míst vyhodnocuje celé skladové zóny. Skladoví manažeři mohou díky tomu rychleji zjistit, když je třeba do zóny vychystávání dodat další zásoby.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 2e83d6885bf7400916d633a49d3b19b8843b0269
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965495"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568984"
 ---
 # <a name="zone-threshold-replenishment"></a>Doplnění prahu zóny
 
@@ -343,3 +341,6 @@ Zde je několik poznámek a tipů pro práci s touto funkcí:
 
 - Pokud používáte dynamická skladová místa, vytvoří se práce doplnění pro první dostupné skladové místo nebo pro skladové místo, které již obsahuje zásoby, je-li akce směrnice skladového místa nastavena k použití strategie **Konsolidovat**.
 - Pokud místo zón používáte pevná skladová místa, měli byste použít [standardní min./max. doplnění](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

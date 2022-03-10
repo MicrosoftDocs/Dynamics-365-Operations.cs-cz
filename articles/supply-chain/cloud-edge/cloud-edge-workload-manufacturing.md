@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068837"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Úloha provádění výroby je v tomto okamžiku k dispozici v preview.
+> [!IMPORTANT]
+> Úloha provádění výroby je v tomto okamžiku k dispozici pouze v Preview.
+>
 > Některé obchodní funkce nejsou ve veřejném náhledu plně podporovány, když se používají jednotky škálování pracovní zátěže.
+>
+> Nemůžete na jednotce škálování spustit úlohu provádění výroby Preview, pokud je nainstalována také úloha provádění skladu.
 
 Při provádění výroby poskytují jednotky škálování následující funkce:
 
@@ -44,7 +47,7 @@ Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s clou
 
 Jak ukazuje následující obrázek, životní cyklus výroby je rozdělen do tří fází: *Plánování*, *Provedení* a *Dokončení*.
 
-[![Fáze výroby při použití jediného prostředí](media/mes-phases.png „Fáze provádění výroby při použití jediného prostředí.“](media/mes-phases-large.png)
+[![Fáze provedení výroby při použití jediného prostředí](media/mes-phases.png "Fáze provedení výroby při použití jediného prostředí.")](media/mes-phases-large.png)
 
 Fáze _Plánování_ zahrnuje definici produktu, plánování, vytváření a plánování objednávek a vydání. Krok uvolnění označuje přechod z fáze _Plánování_ do fáze _Provedení_. Po uvolnění výrobní zakázky budou úlohy výrobní zakázky viditelné na produkční ploše a připraveny k provedení.
 
@@ -54,7 +57,7 @@ Když je úloha produkce označena jako dokončená, přesune se z fáze _Proved
 
 Jak ukazuje následující obrázek, při použití jednotek měřítka je fáze _Provedení_ rozdělena jako samostatná úloha.
 
-[![Fáze výroby při použití jednotek škálování](media/mes-phases-workloads.png „Fáze výroby při použití jednotek škálování.“](media/mes-phases-workloads-large.png)
+[![Fáze provedení výroby při použití jednotek škálování](media/mes-phases-workloads.png "Fáze provedení výroby při použití jednotek škálování.")](media/mes-phases-workloads-large.png)
 
 Model nyní přechází z instalace s jednou instancí na model, který je založen na jednotkách centra a škálování. Fáze _Plánování_ a _Dokončení_ běží jako operace back-office v centru a pracovní zátěž provedení výroby probíhá na jednotkách škálování. Data se přenášejí asynchronně mezi centrem a jednotkami měřítka.
 
@@ -128,6 +131,22 @@ V aktuální verzi jsou zprávy o dokončení a operace vyskladnění (u hotový
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivace a použití operaci spuštění na jednotce škálování
+
+V aktuální verzi je operace spuštění pro výrobní a dávkové objednávky podporována [prováděcími úlohami skladování](cloud-edge-workload-warehousing.md) (nikoli prováděcími úlohami výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující úkoly:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Aktivujte funkci *Zahájení výrobní zakázky v úlohách správy skladu pro jednotky škálování cloudu a hrany* ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Pomocí mobilní aplikace Warehouse Management spusťte produkční nebo dávkovou objednávku.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktivace a používání spotřeby materiálu na jednotce škálování
+
+V aktuální verzi je tok v mobilní aplikaci Warehouse Management pro evidenci spotřeby materiálu podporován [úlohou provádění skladu](cloud-edge-workload-warehousing.md) (nikoli úlohou provádění výroby). Chcete-li tedy tuto funkci používat při připojení k jednotce škálování, musíte provést následující úkoly:
+
+- Nainstalujte na svou jednotku škálování prováděcí úlohu skladování a prováděcí úlohu výroby.
+- Aktivujte funkci *Registrovat spotřebu materiálu v mobilní aplikaci na jednotce škálování* ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Použijte mobilní aplikaci Warehouse Management k registraci spotřeby materiálu.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

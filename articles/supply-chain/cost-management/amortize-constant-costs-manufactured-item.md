@@ -2,11 +2,9 @@
 title: Amortizace konstantních nákladů na vyráběné zboží
 description: Konstantní náklady na vyráběné zboží reflektují doby nastavení operace a komponenty s konstantní kvalitou nebo s konstantní odpadovostí.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 70d2a308f801b1e58585f571355e3a860d99da95
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d9c539d525639ace6a139716e0644214364a060a2957ac97586cfad617e56ec0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726938"
 ---
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>Amortizace konstantních nákladů na vyráběné zboží
 
@@ -46,3 +44,6 @@ Vypočtené množství amortizovaných konstantních nákladů na vyráběnou po
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
