@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 06c783c1e4a2961f1445909ea03d557c0985064e
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 7c81155f0c5150af44982f224c8eca2026a78ee7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728582"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060882"
 ---
 # <a name="understand-date-and-time-fields"></a>Pochopení polí data a času
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Pole **Datum a čas** jsou základním konceptem v aplikaci Microsoft Dynamics 365 Human Resources. Je důležité pochopit, jak pracovat s údaji **Datum a čas** na stránkách, v Dataverse a v externích zdrojích.
 

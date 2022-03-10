@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417075"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486939"
 ---
 # <a name="swedish-intrastat"></a>Švédský Intrastat
 
@@ -48,7 +48,7 @@ Další informace viz [Stáhněte si konfigurace elektronického výkaznictví z
 3. V poli **Mapování formátu sestavy** vyberte **Sestava Intrastat**.
 4. Na pevné záložce **Hierarchie komoditních kódů** v poli **Hierarchie kategorií** vyberte **Intrastat**.
 5. V poli **Kód transakce** vyberte kód transakce pro převody majetku. Tento kód použijete pro transakce, které provádí skutečné nebo plánované převody majetku v souvislosti s kompenzací (finanční nebo jinou). Použijete jej také pro opravy. Společnosti ve Švédsku používají jednomístné transakční kódy.
-6. V poli **Dobropis** vyberte kód transakce pro vrácení zboží. Tento kód použijete pro vrácení zboží po transakci, která byla původně zaznamenána pod kódem transakce. Společnosti ve Švédsku používají jednomístné transakční kódy.
+6. V poli **Dobropis** vyberte kód transakce pro vrácení zboží.
 7. Na kartě **Vlastnosti země/oblasti** v poli **Země/oblast** jsou uvedeny všechny země nebo oblasti, se kterými vaše společnost obchoduje. Pro každou zemi, která je součástí EU, v poli **Typ země/oblasti** vyberte **EU**, aby se země objevila ve vaší sestavě Intrastat.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Nastavte parametry produktu pro prohlášení Intrastat

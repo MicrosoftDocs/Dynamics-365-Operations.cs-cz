@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548142"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074987"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Vytvoření a fakturace mezipodnikové prodejní objednávky pro externího odběratele
 
@@ -75,5 +75,18 @@ Tyto kroky proveďte u právnické osoby B. Tento postup odpovídá políčku 2 
 1. Vyberte prodejní objednávku a poté vyberte **OK**.
 
 Faktura odběratele pro mezipodnikovou prodejní objednávku je automaticky zaúčtována u právnické osoby B. Mezipodniková faktura dodavatele je pak automaticky vytvořena a zaúčtována u právnické osoby A. Pokud je původní prodejní objednávka nastavena jako přímá dodávka, dojde k vytvoření faktury odběratele pro původní prodejní objednávku u právnické osoby A.
+
+> [!NOTE]
+> Dříve v případě scénářů mezipodnikového prodeje platilo, že když byl pracovní postup faktury dodavatele konfigurován v mezipodnikové nákupní společnosti, nebylo možné mezipodnikovou prodejní objednávku úspěšně fakturovat. Proto musel být pracovní postup faktury dodavatele pro mezipodnikovou nákupní společnost vypnut. 
+> 
+> Toto omezení bylo opraveno nedávnou funkcí ve vydání 10.0.25. Mezipodnikové prodejní objednávky lze nyní fakturovat, když je v mezipodnikové nákupní společnosti konfigurován pracovní postup faktury dodavatele.
+> 
+> Pokud chcete tuto funkci povolit, postupujte takto.
+>
+> 1. Zvolte právnickou osobu mezipodnikového prodeje.  
+> 2. Přejděte na **Pohledávky \> Odběratelé \> Všichni odběratelé**.
+> 3. Vyberte zákazníka pro mezipodnikovou nákupní společnost.
+> 4. Přejděte do nabídky **Všeobecné \> Nastavení \> Mezipodnikové**.
+> 5. Na kartě **Zásady nákupních objednávek** vyberte parametr **Obejít pracovní postup faktury dodavatele pro mezipodnikové faktury dodavatelů**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

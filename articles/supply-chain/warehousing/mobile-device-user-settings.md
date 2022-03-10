@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901865"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103706"
 ---
 # <a name="mobile-device-user-settings"></a>Uživatelská nastavení mobilního zařízení
 
@@ -39,12 +39,9 @@ Tato funkce může pracovníkům pomoci začít rychleji, kdykoli začnou použ�
 > [!IMPORTANT]
 > Funkce *Uživatelské nastavení mobilního zařízení* se vztahuje pouze na novou mobilní aplikaci Warehouse Management. Se starou aplikací skladu to nefunguje.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Zapněte funkci uživatelského nastavení mobilního zařízení
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Zapnutí nebo vypnutí funkci uživatelského nastavení mobilního zařízení
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Uživatelská nastavení, ikony a názvy kroků pro novou aplikaci skladu*
+Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnutá funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Vytváření a správa uživatelských nastavení
 

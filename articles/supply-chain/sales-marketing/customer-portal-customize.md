@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení a použití zákaznického portálu
 description: Toto téma vysvětluje, jak přizpůsobit zákaznický portál poté, co byl přidán do vašeho systému.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
@@ -9,19 +9,20 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359878"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063486"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 Toto téma popisuje různé stránky, které jsou ihned k dispozici na zákaznickém portálu. Vysvětluje, co stránky dělají a jak je můžete přizpůsobit.
 

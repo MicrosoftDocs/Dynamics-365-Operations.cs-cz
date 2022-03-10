@@ -1,7 +1,7 @@
 ---
 title: Domovská stránka veřejného sektoru
-description: Dynamics 365 Finance podporuje běžné obchodní procesy veřejného sektoru. Patří mezi ně rozpočtování, nákupy, závazky a pohledávky.
-author: ShylaThompson
+description: Dynamics 365 Finance podporuje běžné obchodní procesy veřejného sektoru. Tyto procesy zahrnují rozpočtování, nákupy, závazky a pohledávky.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 20691
+ms.custom:
+- "20691"
+- intro-internal
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c4b7221cb5b0ea1fdbb4e05831cdd6dd482e321
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823531"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817734"
 ---
 # <a name="public-sector-home-page"></a>Domovská stránka veřejného sektoru
 
@@ -63,8 +65,7 @@ Následující tabulka obsahuje informace o způsobu, jakým tento konfiguračn�
 | Podřízené klíče | Konfigurační klíč **Pokročilé zadávání do hlavní knihy** (AdvancedLedgerEntry), Konfigurační klíč **Veřejný sektor 1099G** (Tax1099G), Konfigurační klíč **Veřejný sektor 1099S** (Tax1099S), Konfigurační klíč **Francouzské předpisy** |
 
 
-<a name="additional-resources"></a>Další zdroje
---------
+## <a name="additional-resources"></a>Další zdroje
 
 [Plán pro funkci veřejného sektoru](plan-public-sector-functionality.md)
 

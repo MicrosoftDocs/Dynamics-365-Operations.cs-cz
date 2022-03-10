@@ -1,34 +1,30 @@
 ---
-title: Vyhodnotit počáteční predikční model platby zákazníka (náhled)
+title: Vyhodnocení modelu predikce plateb počátečního zákazníka
 description: Toto téma popisuje kroky, které můžete podniknout, abyste porozuměli modelu predikce plateb zákazníků a vyhodnotili jeho účinnost.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d761e31c4e4169b09711e351948390d2d40f3739
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644962"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969105"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Vyhodnotit počáteční predikční model platby zákazníka (náhled)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Vyhodnocení modelu predikce plateb počátečního zákazníka
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak vyhodnotit predikční model poté, co jste zapnuli finanční přehledy a poté vygenerovali a proškolili svůj první model. Toto téma se zabývá modely předpovídání plateb od zákazníků. Popisuje kroky, které můžete podniknout, abyste porozuměli modelu predikce plateb zákazníků a vyhodnotili jeho účinnost.
 
@@ -36,32 +32,32 @@ Toto téma vysvětluje, jak vyhodnotit predikční model poté, co jste zapnuli 
 
 Na stránce **Parametry finančních přehledů** v Microsoft Dynamics 365 Finance se objeví odkaz **Zlepšete přesnost modelu** vedle skóre přesnosti.
 
-[![Odkaz Zlepšete přesnost modelu](./media/prediction-model.png)](./media/prediction-model.png)
+[![Odkaz Zlepšete přesnost modelu.](./media/prediction-model.png)](./media/prediction-model.png)
 
-Tento odkaz vás přenese do AI Builderu, kde se můžete dozvědět více o aktuálním modelu a také podniknout kroky k jeho vylepšení. Na následující ilustraci je zobrazena otevřená stránka.
+Tento odkaz vás přenese do AI Builder, kde se můžete dozvědět více o aktuálním modelu a také podniknout kroky k jeho vylepšení. Na následující ilustraci je zobrazena otevřená stránka.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Na otevřené stránce se zobrazí následující informace:
 
-- V části **Výkon** poskytuje stupeň výkonu modelu pohled na kvalitu modelu. Další informace o tomto stupni viz [Predikční výkon modelu](https://docs.microsoft.com/ai-builder/prediction-performance) v dokumentaci AI Builderu.
+- V části **Výkon** poskytuje stupeň výkonu modelu pohled na kvalitu modelu. Další informace o tomto stupni viz [Predikční výkon modelu](/ai-builder/prediction-performance) v dokumentaci AI Builder.
 - Čáset **Nejvlivnější data** ukazuje, jak důležité byly různé typy vstupních dat pro váš model. Tento seznam a odpovídající procenta můžete vyhodnotit, abyste zjistili, zda jsou informace v souladu s informacemi o vašem podnikání a trhu.
 
-    [![Výkonové a nejvlivnější datové sekce pro predikční model](./media/models.png)](./media/models.png)
+    [![Výkonové a nejvlivnější datové sekce pro predikční model.](./media/models.png)](./media/models.png)
 
 - V části **Výkon** vyberte **Zobrazit podrobnosti**, chcete-li se dozvědět více o stupni a dalších aspektech. Na následujícím obrázku podrobnosti ukazují, že model používá méně informací, než je doporučeno. Proto systém vygeneroval varovnou zprávu.
 
-    [![Varování ohledně výkonu modelu](./media/details.png)](./media/details.png)
+    [![Varování ohledně výkonu modelu.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Podrobnější informace
 
 Ačkoli přesnost je dobrým výchozím bodem pro hodnocení modelu a stupeň výkonu poskytuje perspektivu, AI Builder poskytuje podrobnější metriky, které můžete použít pro své vyhodnocení. Chcete-li stáhnout podrobnosti, v části **Výkon** vyberte tlačítko se třemi tečkami (**...**) vedle tlačítka **Použít model** a poté vyberte **Stáhnout podrobné metriky**.
 
-[![Stáhnout podrobný příkaz metriky](./media/performance.png)](./media/performance.png)
+[![Stáhnout podrobný příkaz metriky.](./media/performance.png)](./media/performance.png)
 
 Následující obrázek ukazuje formát, ve kterém si můžete data stáhnout.
 
-[![Formát stažených dat](./media/data-format.png)](./media/data-format.png)
+[![Formát stažených dat.](./media/data-format.png)](./media/data-format.png)
 
 Pro hlubší analýzu výsledků je dobrým výchozím bodem kontrola metriky „Matice zmatků“. Například zde jsou data, která se pro tuto metriku zobrazují na předchozím obrázku.
 
@@ -69,7 +65,7 @@ Pro hlubší analýzu výsledků je dobrým výchozím bodem kontrola metriky �
 
 Tato data můžete rozšířit následujícím způsobem.
 
-|                          | Předpovídáno včas | Předpovězeno pozdě | Předpovězeno velmi pozdě |
+| &nbsp;                   | Předpovídáno včas | Předpovězeno pozdě | Předpovězeno velmi pozdě |
 |--------------------------|-------------------|----------------|---------------------|
 | Skutečná včasná platba   | **71**            | 0              | 21                  |
 | Skutečná pozdní platba      | 5                 | **0**          | 27                  |
@@ -99,5 +95,4 @@ Poté, co lépe pochopíte výsledky svého prvního modelu, možná budete cht�
 
 Další informace o tom, jak vyhodnotit predikční modely, naleznete ve [Výsledcích modelů strojového učení](/confusion-matrix.md)
 
-#### <a name="privacy-notice"></a>Oznámení o ochraně osobních údajů
-Verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb (SLA) pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

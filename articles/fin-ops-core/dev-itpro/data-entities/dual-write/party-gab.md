@@ -2,36 +2,36 @@
 title: Strana a globální adresář
 description: Toto téma popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216605"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060324"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-*Strana* a *globální adresář* jsou pojmy aplikací Finance and Operations. Stranou může být osoba nebo organizace. Je vhodné globálně ukládat a spravovat vlastnosti strany, například jméno, jazyk, kontakty a adresy. Poté, když se hodnota vlastnosti změní na jednom místě, projeví se to na všech místech, kde je strana zapojena.
+
+*Strana* a *globální adresář* jsou pojmy finančních a provozních aplikací. Stranou může být osoba nebo organizace. Je vhodné globálně ukládat a spravovat vlastnosti strany, například jméno, jazyk, kontakty a adresy. Poté, když se hodnota vlastnosti změní na jednom místě, projeví se to na všech místech, kde je strana zapojena.
 
 ## <a name="party"></a>Strana
 
-Strana je osoba nebo organizace zapojená do podnikání. Použitím konceptu strany může osoba nebo organizace hrát v podniku více než jednu roli (pracovník, zákazník, dodavatel nebo kontakt). Role je založena na kontextu a účelu. Zde je několik příkladů rolí pro dvě fiktivní společnosti Contoso a Fabrikam.
+Strana je osoba nebo organizace zapojená do podnikání. Použitím konceptu strany může osoba nebo organizace hrát v podniku více než jednu roli (pracovník, zákazník, dodavatel nebo kontakt). Role je založena na kontextu a účelu. Zde je několik příkladů rolí pro dvě fiktivní společnosti Contoso a Fabrikam:
 
 + **Pracovník** - Zaměstnanec. Příkladem je zaměstnanec společnosti Contoso.
-+ **Dodavatel** - Dodavatelská organizace nebo jediný majitel, který dodává zboží či služby nějakému podniku. Například pokud Fabrikam prodává zásoby Contoso, Fabrikam je pro Contoso prodejcem.
-+ **Kontakt** - Osoba, kterou je třeba kontaktovat. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, zaměstnanci společnosti Contoso by se spojil s kontaktem ve společnosti Fabrikam.
-+ **Zákazník** - Zákazník je osoba nebo společnost, která nakupuje věci od společnosti. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, pak je společnost Contoso zákazníkem společnosti Fabrikam.
++ **Dodavatel** - Dodavatelská organizace nebo jediný majitel, který dodává zboží či služby nějakému podniku. Například pokud Fabrikam prodává zásoby společnosti Contoso, Fabrikam je pro Contoso prodejcem.
++ **Kontakt** - Osoba, kterou je třeba kontaktovat. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, zaměstnanci společnosti Contoso by se spojili s kontaktem ve společnosti Fabrikam.
++ **Zákazník** - Zákazník je osoba nebo společnost, která nakupuje věci od společnosti. Například pokud společnost Contoso nakupuje zásoby od společnosti Fabrikam, společnost Contoso je zákazníkem společnosti Fabrikam.
 
 Model strany se často používá k reprezentaci středních až složitých vztahů mezi organizacemi a lidmi, zvláště když strana hraje více než jednu roli. Několik běžných příkladů:
 
@@ -41,12 +41,12 @@ Model strany se často používá k reprezentaci středních až složitých vzt
 
 Následující obrázek ukazuje datový model pro stranu:
 
-![Datový model pro stranu](media/party-gab-image1.png)
+![Datový model pro stranu.](media/party-gab-image1.png)
 
 > [!TIP]
 > Když se pokoušíte vytvořit nový záznam účtu, použijte pole **Strana** k vyhledání záznamu podle názvu. Tímto způsobem, pokud najdete záznam, stačí jej vybrat. Systém automaticky vyplní všechna data ze strany. Nemusíte ručně zadávat všechna požadovaná pole. Toto chování najdete na integrovaných formulářích na stránkých **Účet**, **Kontakt** a **Dodavatel**.
 
-Duální zápis nepodporuje všechny role stran aplikací Finance and Operations. Úplný seznam rolí stran najdete v části [Přehled globálního adresáře](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Duální zápis nepodporuje všechny role stran finančních a provozních aplikací. Úplný seznam rolí stran najdete v části [Přehled globálního adresáře](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Globální adresář
 
@@ -58,7 +58,7 @@ V závislosti na obchodním kontextu může osoba nebo organizace hrát více ne
 
 Následující ilustrace znázorňuje datový model pro globální adresář.
 
-![Datový model pro globální adresář](media/party-gab-image2.png)
+![Datový model pro globální adresář.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakt
 
@@ -75,7 +75,7 @@ Tabulka **Kontakt** může ukládat tyto typy řádků:
 |----------|-------------|
 | Osoba, která je zákazníkem (například prodejní kontakt nebo zákazník B2C) | Záznam prokládaného kontaktu, kde pole **Společnost** není prázdné a pole **Je zákazník** je nastaveno na **Ano**. |
 | Osoba, která je dodavatelem (například jediný vlastník, jako je dodavatel) | Záznam prokládaného kontaktu, kde pole **Společnost** není prázdné a pole **Je dodavatel** je nastaveno na **Ano**. |
-| Osoba,, která je zákazníkem i dodavatelem | Záznam prokládaného kontaktu, kde pole **Společnost** není prázdné, pole **Je zákazník** je nastaveno na **Ano** a pole **Je dodavatel** je nastaveno na **Ano**. Osoba může být jak výrobcem jednoho produktu, tak spotřebitelem jiného produktu. Tuto relaci podporují jak aplikace Finance and Operations, tak duální zápis. |
+| Osoba,, která je zákazníkem i dodavatelem | Záznam prokládaného kontaktu, kde pole **Společnost** není prázdné, pole **Je zákazník** je nastaveno na **Ano** a pole **Je dodavatel** je nastaveno na **Ano**. Osoba může být jak výrobcem jednoho produktu, tak spotřebitelem jiného produktu. Tuto relaci podporují jak finanční a provozní aplikace, tak duální zápis. |
 | Osoba, která je kontaktní osobou pro organizaci, ale není zákazníkem ani prodejcem. | Záznam neprokládaného kontaktu, kde pole **Společnost** je prázdné, pole **Je zákazník** je nastaveno na **Ne** a pole **Je dodavatel** je nastaveno na **Ne**. |
 
 ## <a name="contact-for-party-table"></a>Tabulka kontaktu pro stranu
@@ -94,7 +94,7 @@ Tyto relace jsou uloženy v tabulce **Kontakt pro stranu**. Tyto informace najde
     + Když zvolíte hodnotu v poli **Přidružený kontakt**, pak vybíráte prokládaný kontakt typu **Osoba**.
     + Pokud vyberete hodnotu v poli **Přidružený účet** nebo **Přidružený prodejce**, vybíráte organizaci.
 
-    ![Karta Přidružené organizace na stránce Kontakt](media/party-gab-image3.png)
+    ![Karta Přidružené organizace na stránce Kontakt.](media/party-gab-image3.png)
 
     Bez ohledu na váš výběr je přidružení vytvořeno na úrovni strany a je použitelné na všechny role strany a je uloženo v entitě **Kontakt pro stranu**.
 
@@ -109,7 +109,7 @@ Když otevřete řádek **Kontakt**, ve kterém jsou pole **Je zákazník** nebo
 
 Do formulářů **Účet**, **Kontakt** a **Dodavatel** byla přidána nová stránka s názvem **Adresy**. Tato karta podporuje více poštovních adres pomocí mřížky, jak je znázorněno na následujícím obrázku.
 
-![Mřížka pro poštovní adresy](media/party-gab-image4.png)
+![Mřížka pro poštovní adresy.](media/party-gab-image4.png)
 
 Mřížka obsahuje následující sloupce:
 
@@ -121,7 +121,7 @@ Můžete použít tlačítko **Nová adresa** nad mřížkou k vytvoření tolik
 
 Pole **Adresa 1** a **Adresa 2** na kartě **Souhrn** stránky **Účet** odpovídají adresám **Dodávka** a **Faktura**.
 
-![Karta Souhrn pro poštovní adresy](media/party-gab-image5.png)
+![Karta Souhrn pro poštovní adresy.](media/party-gab-image5.png)
 
 Pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **Kontakt** odpovídají adresám **Podnik**, **Dodávka** a **Faktura**.
 
@@ -129,7 +129,7 @@ Pole **Adresa 1**, **Adresa 2** a **Adresa 3** na kartě **Souhrn** stránky **K
 
 Do formulářů **Elektronické adresy**, **Kontakt** a **Dodavatel** byla přidána nová stránka s názvem **Adresy**. Tato karta podporuje více elektronických adres pomocí mřížky, jak je znázorněno na následujícím obrázku.
 
-![Mřížka pro elektronické adresy](media/party-gab-image6.png)
+![Mřížka pro elektronické adresy.](media/party-gab-image6.png)
 
 Mřížka obsahuje následující sloupce:
 
@@ -139,7 +139,10 @@ Mřížka obsahuje následující sloupce:
 
 Můžete použít tlačítko **Nová elektronická adresa** nad mřížkou k vytvoření tolika elektronických adres, kolik chcete.
 
-Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verzích budou všechna pole elektronické a poštovní adresy odstraněna z jiných karet (například karet **Souhrn** a **Detaily**).
+Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verzích budou všechna pole elektronické a poštovní adresy odstraněna z jiných karet, například karet **Souhrn** a **Detaily**. Kontaktní údaje zobrazené na kartě **Podrobnosti** jsou kopie primární elektronické adresy pouze pro čtení, jako je primární telefon, primární e-mail, primární fax a primární Twitter ID. Během procesu kvalifikace zájemce můžete zadat obchodní telefonní číslo i číslo mobilního telefonu. Firemní telefonní číslo je považováno za primární telefon, pokud **IsMobile=No** a číslo mobilního telefonu je považováno za sekundární telefon, pokud **IsMobile=Yes**.
+
+> [!TIP]
+> Použití karet **Adresy** a **Elektronické adresy** ve formulářích **Obchodní vztah** a **Kontakt** pro správu poštovních a elektronických adres. Tím je zajištěno, že se data adres synchronizují do finančních a provozních aplikací.
 
 ## <a name="setup"></a>Nastavení
 
@@ -149,7 +152,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
 3. Nainstalujte [Řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab).
 
-4. Otevřete aplikaci Finance and Operations. Přejděte do modulu Správa dat a vyberte kartu Duální zápis. Otevře se stránka pro správu duálního zápisu.
+4. Otevřete finanční a provozní aplikaci. Přejděte do modulu Správa dat a vyberte kartu Duální zápis. Otevře se stránka pro správu duálního zápisu.
 
 5. Aplikujte obě řešení nainstalovaná v krocích 2 a 3 pomocí funkce [Použít řešení](link-your-environment.md).
 
@@ -205,7 +208,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     | ID strany (pole) | Přesná shoda |
     | Výběr (pole) | (prázdné) |
 
-    ![Duplicitní pravidlo pro účty](media/duplicate-rule-1.PNG)
+    ![Duplicitní pravidlo pro účty.](media/duplicate-rule-1.PNG)
 
 10. Rozbalte pravidlo pro detekci duplikátů pro tabulku **Kontakty** nastavením následujících polí.
 
@@ -221,13 +224,13 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     | ID strany (pole) | Přesná shoda |
     | Výběr (pole) | (prázdné) |
 
-    ![Duplicitní pravidlo pro kontakty](media/duplicate-rule-2.PNG)
+    ![Duplicitní pravidlo pro kontakty.](media/duplicate-rule-2.PNG)
 
 11. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data.
 
 12. Spusťte mapy v následujícím pořadí. Pokud se zobrazí chyba se stavem „Ověření projektu se nezdařilo. Chybí cílové pole ... “, otevřete mapu a vyberte **Obnovit tabulky**. Poté spusťte mapu.
 
-    Aplikace Finance and Operations | Aplikace Customer Engagement  
+    Finanční a provozní aplikace | Aplikace Customer Engagement  
     ----------------------------|------------------------
     [Strany CDS](mapping-reference.md#220) | msdyn_parties
     [Místa poštovní adresy CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -249,13 +252,11 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     [Záhlaví prodejní objednávky CDS](mapping-reference.md#217) | salesorders
     [Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury
 
-> [!Note]
+> [!NOTE]
 > Mapa `CDS Contacts V2 (contacts)` je mapa, kterou jste zastavili v kroku 1. Když se pokusíte spustit další mapy, mohou se tyto 2 mapy objevit v seznamu závislých osob. Nespouštějte tyto mapy.
-
-> [!Note]
+>
 > Pokud je nainstalováno řešení strany a globálního adresáře, musíte deaktivovat pojmenované připojení `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Pokud odinstalujete řešení strany a globálního adresáře, musíte znovu aktivovat plugin .
-
-> [!Note]
+>
 > Pole `msdyn_*partynumber` (jednořádkové textové pole), zahrnuté v tabulkách **Účet**, **Kontakt** a **Prodejce** by se neměly v budoucnosti používat. Název štítku má předponu **(Zastaralé)** pro přehlednost. Místo toho použijte pole **msdyn_partyid**. Pole je vyhledáváním pro tabulku **msdyn_party**.
 
 > Název tabulky | Staré pole | Nové pole
@@ -268,7 +269,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
 Kolekce mapování tabulek pracují společně pro interakci strany a globálního adresáře, jak je uvedeno v následující tabulce.
 
-| Aplikace Finance and Operations | Aplikace Customer Engagement | popis |
+| Finanční a provozní aplikace | Aplikace Customer Engagement | Popis |
 |----------------------------|-------------------------|-------------|
 | [Tituly kontaktní osoby](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Zákazníci V3](mapping-reference.md#101) | účty |
@@ -294,17 +295,16 @@ Další informace viz [Odkaz na mapování duálního zápisu ](mapping-referenc
 
 ## <a name="known-issues-and-limitations"></a>Známé problémy a omezení
 
-+ v aplikacích Finance and Operations, když vytvoříte zákazníka spolu s adresou a uložíte jej, nemusí se adresa synchronizovat s tabulkou **Adresa**. Důvodem je problém se sekvenováním platformy pro dvojí zápis. Jako řešení nejprve vytvořte zákazníka a uložte ho. Poté přidejte adresu.
-+ V aplikacích Finance and Operations, když má záznam zákazníka primární adresu a vytvoříte nový kontakt pro tohoto zákazníka, pak záznam kontaktu zdědí primární adresu z přidruženého záznamu zákazníka. K tomu dochází také u kontaktu prodejce. Dataverse aktuálně toto chování nepodporuje. Pokud je povolen duální zápis, kontakt na zákazníka zdědí primární adresu z aplikace Finance and Operations je synchronizována do Dataverse spolu s jeho adresou.
-+ Elektronické adresy z tabulky `msdyn_partyelectronicaddress` neproudí do polí elektronických adres v tabulkách **Účet** a **Kontakt**. Plánujeme tento problém vyřešit v přírůstkové verzi. Stávající údaje v polích elektronické adresy v tabulkách **Účet** a **Kontakt** nebudou přepsány.
++ Když ve finančních a provozních aplikacích vytvoříte zákazníka spolu s adresou a uložíte jej, nemusí se adresa synchronizovat s tabulkou **Adresa**. Důvodem je problém se sekvenováním platformy pro dvojí zápis. Jako řešení nejprve vytvořte zákazníka a uložte ho. Poté přidejte adresu.
++ Když má ve finančních a provozních aplikacích záznam zákazníka primární adresu a vytvoříte nový kontakt pro tohoto zákazníka, pak záznam kontaktu zdědí primární adresu z přidruženého záznamu zákazníka. K tomu dochází také u kontaktu prodejce. Dataverse aktuálně toto chování nepodporuje. Pokud je povolen duální zápis, kontakt na zákazníka zdědí primární adresu z finanční a provozní aplikace je synchronizována do Dataverse spolu s jeho adresou.
 + Elektronické adresy nastavené v záložce elektronických adres tabulek **Účet**, **Kontakt** a **Dodavatel** pochází z tabulky `msdyn_partyelectronicaddress`. Tyto informace neplynou k souvisejícím transakcím, jako je prodejní objednávka, nabídka a nákupní objednávka. Plánujeme tento problém vyřešit v přírůstkové verzi. Existující data v polích elektronické adresy v záznamech účtu a kontaktů budou i nadále fungovat na transakcích, jako je prodejní objednávka, nabídka a nákupní objednávka.
-+ V aplikacích Finance and Operations můžete vytvořit záznam kontaktu z formuláře **Přidat kontakt**. Když se pokusíte vytvořit nový kontakt z formuláře **Zobrazit kontakt**, akce selže. Toto je známý problém.
++ ve finančních a provozních aplikacích můžete vytvořit záznam kontaktu z formuláře **Přidat kontakt**. Když se pokusíte vytvořit nový kontakt z formuláře **Zobrazit kontakt**, akce selže. Toto je známý problém.
 
-    ![Známý problém s Přidat kontakt](media/party-gab-contact-issue.png)
+    ![Známý problém s Přidat kontakt.](media/party-gab-contact-issue.png)
 
 + **Počáteční synchronizace** nepodporuje časová pole **Dostupný z** a **K dispozici pro** v **ContactForParty**, protože DIXF převádí hodnotu na řetězec místo na celé číslo. Konverze spustí chybu `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + Pokud se poštovní adresa používá z více než jednoho důvodu, například adresa obchodní komunikace a fakturační adresa, měla by vypadat jako `Business;Invoice` jak je znázorněno na následujícím obrázku. Pokud mezi hodnoty přidáte mezeru, zobrazí se chyba.
 
-    ![Známý problém s adresou](media/party-gab-address-issue.png)
+    ![Známý problém s adresou.](media/party-gab-address-issue.png)
 
-+ Poštovní adresu se zpětným datem nelze zadat pomocí aplikace Finance and Operations s duálním zápisem, protože Dataverse nepodporuje datum platnosti. Pokud zadáte poštovní adresu s datem do budoucna pomocí aplikace Finance and Operations, synchronizuje se do Dataverse úplně a uvidíte adresu na uživatelském rozhraní okamžitě. Jakékoli aktualizace tohoto záznamu budou mít za následek chybu, protože je datován do budoucnosti a není aktuální v aplikaci Finance and Operations.
++ Poštovní adresu se zpětným datem nelze zadat pomocí finanční a provozní aplikace s duálním zápisem, protože Dataverse nepodporuje datum platnosti. Pokud zadáte poštovní adresu s datem do budoucna pomocí finanční a provozní aplikace, synchronizuje se do Dataverse úplně a uvidíte adresu na uživatelském rozhraní okamžitě. Jakékoli aktualizace tohoto záznamu budou mít za následek chybu, protože je datován do budoucnosti a není aktuální ve finanční a provozní aplikaci.

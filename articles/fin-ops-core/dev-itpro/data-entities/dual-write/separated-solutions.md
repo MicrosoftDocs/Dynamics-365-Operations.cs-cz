@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924864"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063255"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Oddělený balíček pro orchestraci aplikace s duálním zápisem
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dříve byl balíček pro orchestraci aplikace s duálním zápisem jediný balíček, který obsahoval následující řešení:
 
 - Dynamics 365 – poznámky
-- Dynamics 365 Finance and Operations – společná kotva
-- Dynamics 365 Finance and Operations – mapy entit s duálním zápisem
+- Dynamics 365 Finance a Operations – společná kotva
+- Mapy entit duálního zápisu Dynamics 365 Finance and Operations
 - Aplikace Dynamics 365 – správa majetku
 - Dynamics 365 – správa majetku
 - Společné HCM
 - Dynamics 365 – rozšířený dodavatelský řetězec
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations – společné
+- Dynamics 365 Finance a Operations – společné
 - Dynamics 365 – společnost
 - Směnné kurzy měny
 - Field Service Common
@@ -51,14 +51,14 @@ Balíček Základ aplikace s duálním zápisem umožňuje uživatelům instalov
 | Jedinečný název                           | Zobrazovaný název                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 – společnost                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – společné |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance a Operations – společné |
 | CurrencyExchangeRates                 | Směnné kurzy měny                    |
 | msdyn_DualWriteAppCoreMaps            | Základní mapy entit aplikací s duálním zápisem   |
 | msdyn_DualWriteAppCoreAnchor          | Základní kotva aplikací s duálním zápisem        |
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Aplikace Finance and Operations     | Aplikace Customer Engagement                    |
+| Finanční a provozní aplikace     | Aplikace Customer Engagement                    |
 |---------------------------------|---------------------------------------------|
 | Provozní jednotka                  | msdyn_internalorganizations                 |
 | Organizační hierarchie          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Balíček Lidské zdroje s duálním zápisem obsahuje řešení a mapy, které 
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Aplikace Finance and Operations | Aplikace Customer Engagement         |
+| Finanční a provozní aplikace | Aplikace Customer Engagement         |
 |-----------------------------|----------------------------------|
 | Etnický původ              | cdm_ethnicorigins                |
 | Pracovní funkce kompenzace   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Balíček Dodavatelský řezěuec s duálním zápisem obsahuje řešení a mapy
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Aplikace Finance and Operations                 | Aplikace Customer Engagement                      |
+| Finanční a provozní aplikace                 | Aplikace Customer Engagement                      |
 |---------------------------------------------|-----------------------------------------------|
 | Jednotky                                       | uoms                                          |
 | Záhlaví prodejní objednávky CDS                     | salesorders                                   |
@@ -197,7 +197,7 @@ Balíček Finance s duálním zápisem obsahuje řešení a mapy, které jsou nu
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Aplikace Finance and Operations             | Aplikace Customer Engagement        |
+| Finanční a provozní aplikace             | Aplikace Customer Engagement        |
 |-----------------------------------------|---------------------------------|
 | Skupiny srážkové daně                  | msdyn_withholdingtaxgroups      |
 | CDS Contacts V2 (zákazník)              | kontakty                        |
@@ -274,7 +274,7 @@ Balíček Správa majetku s duálním zápisem obsahuje řešení a mapy, které
 
 K dispozici pro tento balíček jsou následující mapy.
 
-| Aplikace Finance and Operations                           | Aplikace Customer Engagement                |
+| Finanční a provozní aplikace                           | Aplikace Customer Engagement                |
 |-------------------------------------------------------|-----------------------------------------|
 | Správa majetku – záruka                             | msdyn_warranties                        |
 | Správa majetku – modely                               | msdyn_models                            |

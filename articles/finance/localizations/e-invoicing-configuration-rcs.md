@@ -2,7 +2,7 @@
 title: Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 description: Toto téma vysvětluje, jak konfigurovat Elektronickou fakturaci v Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897713"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779663"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurace Elektronické fakturace v Regulatory Configuration Services (RCS)
 
@@ -46,21 +46,13 @@ Funkce také podporují scénáře, kde je vyžadován soulad se specifikacemi f
 
 Funkce konečně podporují výměnu zpráv s externími webovými službami, které jsou hostovány buď daňovým úřadem, nebo nějakou akreditovanou stranou, a žádosti o povolení nebo razítko schválení v elektronické faktuře.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Dostupnost funkcí elektronické fakturace
+## <a name="availability-of-electronic-invoicing-features"></a>Dostupnost funkcí elektronické fakturace
 
 Dostupnost funkcí elektronické fakturace závisí na zemi nebo regionu. Ačkoli jsou některé funkce obecně dostupné, jiné jsou v preview.
 
-#### <a name="generally-available-features"></a>Obecně dostupné funkce
+### <a name="generally-available-features"></a>Obecně dostupné funkce
 
 V následující tabulce jsou uvedeny funkce elektronické fakturace, které jsou obecně dostupné.
-
-| Země nebo oblast | Název funkce                         | Obchodní dokument |
-|----------------|--------------------------------------|-------------------|
-| Egypt          | Egyptská elektronická faktura (EG) | Prodejní a projektové faktury |
-
-#### <a name="preview-features"></a>Funkce náhledu
-
-V následující tabulce jsou uvedeny funkce elektronické fakturace, které jsou aktuálně v preview.
 
 | Země nebo oblast | Název funkce                         | Obchodní dokument |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,40 @@ V následující tabulce jsou uvedeny funkce elektronické fakturace, které jso
 | Belgie        | Belgická elektronická faktura (BE)      | Prodejní a projektové faktury |
 | Brazílie         | Brazilský NF-e (BR)                  | Fiskální dokument model 55, opravné dopisy, zrušení a vyřazení |
 | Brazílie         | Brazilian NFS-e ABRASF Curitiba (BR) | Fiskální dokumenty služby |
+| Brazílie         | Brazilský import NF-e z e-mailu (BR) | Model 55 fiskálního dokumentu |
 | Dánsko        | Dánská elektronická faktura (DK)       | Prodejní a projektové faktury |
+| Egypt          | Egyptská elektronická faktura (EG)     | Prodejní a projektové faktury |
 | Estonsko        | Estonská elektronická faktura (EE)     | Prodejní a projektové faktury |
 | Finsko        | Finská elektronická faktura (FI)      | Prodejní a projektové faktury |
 | Francie         | Francouzská elektronická faktura (FR)       | Prodejní a projektové faktury |
 | Německo        | Německá elektronická faktura (DE)       | Prodejní a projektové faktury |
 | Itálie          | FatturaPA (IT)                       | Prodejní a projektové faktury |
-| Mexiko         | Mexické CFDI (MX)                    | Prodejní faktury, dodací listy, převody zásob, doplňky plateb a zrušení |
 | Nizozemsko    | Nizozemská elektronická faktura (NL)        | Prodejní a projektové faktury |
 | Norsko         | Norská elektronická faktura (NO)    | Prodejní a projektové faktury |
 | Španělsko          | Španělská elektronická faktura (ES)      | Prodejní a projektové faktury |
 | Evropa         | Elektronická faktura PEPPOL            | Prodejní a projektové faktury PEPPOL |
+| Evropa         | Faktura dodavatele PEPPOL                | Import faktur dodavatele PEPPOL |
+| Saúdskoarabské království   | Saúdskoarabská elektronická faktura (SA)| Prodejní a projektové faktury |
+
+### <a name="preview-features"></a>Funkce náhledu
+
+V následující tabulce jsou uvedeny funkce elektronické fakturace, které jsou aktuálně v preview.
+
+| Země nebo oblast | Název funkce                         | Obchodní dokument |
+|----------------|--------------------------------------|-------------------|
+| Mexiko         | Mexické CFDI (MX)                    | Prodejní faktury, dodací listy, převody zásob, doplňky plateb a zrušení |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Konfigurovatelné komponenty funkcí elektronické fakturace
 
 Funkce elektronické fakturace se skládají z následujících skupin konfigurovatelných komponent:
 
-- **Formáty** – Formáty umožňují konfigurovat, co musí Elektronická fakturace generovat, když se z elektronického dokumentu stane elektronická faktura. Formáty zahrnují konfiguraci formátu pro elektronickou fakturu a pro soubory a zprávy, které se používají k odesílání požadavků a přijímání odpovědí, když je vyžadována komunikace s externí webovou službou.
-- **Akce** – Akce vám umožní nakonfigurovat, jak Elektronická fakturace generuje transformaci elektronického dokumentu, který aplikace Finance a Supply Chain Management odeslaly do elektronické faktury.
-- **Pravidla použitelnosti** – Pravidla použitelnosti vám umožňují konfigurovat kontext, který Elektronická fakturace musí vzít v úvahu při zpracování funkce elektronické fakturace.
-- **Proměnné** – Proměnné umožňují konfigurovat podporu pro konstrukci logiky konfigurace. Proměnné mohou fungovat jako vstup hodnot k provedení konkrétní akce. Alternativně mohou fungovat jako výměna hodnot mezi Finance a Supply Chain Management a Elektronickou fakturací.
-- **Mapování modelu elektronického dokumentu** – Mapování modelu elektronického dokumentu umožňuje konfigurovat mapování modelu ER. Mapování modelu definuje mapování dat abstraktní faktury, která je integrována do Elektronické fakturace při odesílání elektronických dokumentů.
-- **Kontextový model faktury** – Kontextový model faktury umožňuje konfigurovat kontextový model faktury ER a definovat kontext funkce elektronické fakturace.
-- **Typy odpovědí** – Typy odpovědí vám umožňují konfigurovat, co musí Elektronická fakturace aktualizovat ve Finance Supply Chain Management v důsledku zpracování elektronické faktury.
+- **Formáty**: Formáty umožňují konfigurovat, co musí Elektronická fakturace generovat, když se z elektronického dokumentu stane elektronická faktura. Formáty zahrnují konfiguraci formátu pro elektronickou fakturu a pro soubory a zprávy, které se používají k odesílání požadavků a přijímání odpovědí, když je vyžadována komunikace s externí webovou službou.
+- **Akce**: Akce vám umožní nakonfigurovat, jak Elektronická fakturace generuje transformaci elektronického dokumentu, který aplikace Finance a Supply Chain Management odeslaly do elektronické faktury.
+- **Pravidla použitelnosti**: Pravidla použitelnosti vám umožňují konfigurovat kontext, který Elektronická fakturace musí vzít v úvahu při zpracování funkce elektronické fakturace.
+- **Proměnné**: Proměnné umožňují konfigurovat podporu pro konstrukci logiky konfigurace. Proměnné mohou fungovat jako vstup hodnot k provedení konkrétní akce. Alternativně mohou fungovat jako výměna hodnot mezi Finance a Supply Chain Management a Elektronickou fakturací.
+- **Mapování modelu elektronického dokumentu**: Mapování modelu elektronického dokumentu umožňuje konfigurovat mapování modelu ER. Mapování modelu definuje mapování dat abstraktní faktury, která je integrována do Elektronické fakturace při odesílání elektronických dokumentů.
+- **Kontextový model faktury**: Kontextový model faktury umožňuje konfigurovat kontextový model faktury ER a definovat kontext funkce elektronické fakturace.
+- **Typy odpovědí**: Typy odpovědí vám umožňují konfigurovat, co musí Elektronická fakturace aktualizovat ve Finance Supply Chain Management v důsledku zpracování elektronické faktury.
 
 ### <a name="formats"></a>Formáty
 
@@ -195,6 +198,13 @@ Následující seznamy ukazují konfigurace formátu ER, které jsou k dispozici
 - Prodejní faktura (ES)
 - Projektová faktura (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudskoarabská (AT) elektronická faktura: Prodejní a projektové faktury pro Saudskou Arábii
+
+- Prodejní e-faktura (SA)
+- Projektová e-faktura (SA)
+
+Kromě konfigurací formátu ER, které jsou k dispozici ihned pro použití ve službě elektronické fakturace, můžete také vytvořit své vlastní konfigurace formátu ER. Konfigurace formátu, které jsou vytvořeny pro použití s funkcemi elektronické fakturace, však nepodporují přímý odkaz na tabulky Finance nebo Supply Chain Management nebo žádným z odpovídajících metadat. Podporovány jsou pouze odkazy na mapování modelu ER.
+
 ### <a name="actions"></a>Akce
 
 V následující tabulce jsou uvedeny dostupné akce a to, zda jsou aktuálně obecně dostupné nebo stále v preview.
@@ -202,10 +212,10 @@ V následující tabulce jsou uvedeny dostupné akce a to, zda jsou aktuálně o
 | Akce                                        | popis                                                                  | Dostupnost         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Převod dokumentu                            | Spusťte formát elektronického výkaznictví a transformujte dokument.                   | Obecně dostupné  |
-| Podepsat dokument xml                             | Podepisujte dokumenty XML digitálním podpisem.                                   | Náhled           |
+| Podepsat dokument xml                             | Podepisujte dokumenty XML digitálním podpisem.                                   | Obecně dostupné  |
 | Podepsat dokument JSON pro egyptský daňový úřad | Podepisujte dokumenty JSON digitálním podpisem pro egyptský daňový úřad.       | Obecně dostupné  |
 | Integrace s egyptskou službou ETA           | Komunikujte s egyptským daňovým úřadem.                                     | Obecně dostupné  |
-| Volejte brazilskou službu SEFAZ                  | Integrace s brazilskou službou SEFAZ pro odesílání fiskálních dokumentů.       | Náhled           |
+| Volejte brazilskou službu SEFAZ                  | Integrace s brazilskou službou SEFAZ pro odesílání fiskálních dokumentů.       | Obecně dostupné  |
 | Volání mexické služby PAC                      | Integrace s mexickou službou PAC pro odesílání CFDI.                      | Náhled           |
 | Odezva procesu                              | Analýza odpovědi přijatou z volání webové služby.                     | Obecně dostupné  |
 | Použití MS Power Automate                         | Integrace s tokem vytvořeným v Microsoft Power Automate.                       | Náhled           |
@@ -270,7 +280,7 @@ Logické operátory:
 - A
 - nebo
 
-Typy operátorů:
+Typy operátoru:
 - Equal
 - Not equal
 - Greater than

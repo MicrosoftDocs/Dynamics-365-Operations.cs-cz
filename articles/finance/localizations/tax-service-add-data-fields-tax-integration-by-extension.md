@@ -2,10 +2,9 @@
 title: Přidání datových polí do daňové integrace pomocí rozšíření
 description: Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.
 author: qire
-ms.date: 03/26/2021
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,18 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fdf112bbdd5245d19ab1d07cfcf94c58bf8208c5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830333"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323516"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Přidání datových polí do daňové integrace pomocí rozšíření
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace. Tato pole lze rozšířit na daňový datový model daňové služby a použít k určení daňových kódů. Další informace najdete v tématu [Přidání datových polí do daňových konfigurací](tax-service-add-data-fields-tax-configurations.md).
 
@@ -43,7 +41,7 @@ Zde je seznam hlavních objektů:
 
 Následující obrázek ukazuje, jak tyto objekty souvisejí.
 
-[![Vztah objektu datového modelu](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
+[![Vztah objektu datového modelu.](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
 
 Objekt **Document** může obsahovat mnoho objektů **Line**. Každý objekt obsahuje metadata pro daňovou službu.
 
@@ -355,15 +353,77 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-V tomto kódu je `_destination` objektem obálky, který se používá ke generování zasílaného požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`. 
+V tomto kódu je `_destination` objektem obálky, který se používá ke generování zasílaného požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> * Definujte klíč, který se používá ve formuláři žádosti, jako `private const str`.
-> * Nastavte pole v metodě `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` pomocí metody `SetField`. Datový typ druhého parametru by měl být `string`. Pokud datový typ není `string` převeďte ho na `string`.
+> Definujte klíč, který se používá ve formuláři žádosti, jako **private const str**. Řetězec by měl být přesně stejný jako název míry přidané v tématu [Přidání datových polí v daňových konfiguracích](tax-service-add-data-fields-tax-configurations.md).
+> Nastavte pole v metodě **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** pomocí metody **SetField**. Datový typ druhého parametru by měl být **string**. Pokud datový typ není **string**, převeďte ho na něj.
+> Pokud je rozšířen **výčtový typ** X++, všimněte si rozdílu mezi jeho hodnotou, popiskem a názvem.
+> 
+>   - Hodnota výčtu je typu integer.
+>   - Popisek výčtu se může v různých preferovaných jazycích lišit. Nepoužívejte **enum2Str** k převodu výčtového typu na řetězec.
+>   - Název výčtu je doporučen, protože je pevný. **enum2Symbol** lze použít k převodu výčtu na jeho název. Přidaná hodnota výčtu v konfiguraci daně by měla být přesně stejná jako název výčtu.
+
+## <a name="model-dependency"></a>Závislost na modelu
+
+Chcete-li úspěšně sestavit projekt, přidejte do závislostí modelu následující referenční modely:
+
+- ApplicationPlatform
+- ApplicationSuite
+- Daňový modul
+- Dimenze, pokud je použita finanční dimenze
+- Další potřebné modely uvedené v kódu
+
+## <a name="validation"></a>Ověření
+
+Po dokončení předchozích kroků můžete potvrdit své změny.
+
+1. V části Finance přejděte na **Závazky** a přidejte k adrese URL část **&debug=vs%2CconfirmExit&**. Například https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Závěrečný znak **&** je zásadní.
+2. Otevřete stránku **Nákupní objednávka** a výběrem položky **Nová** vytvořte nákupní objednávku.
+3. Nastavte hodnotu pro přizpůsobené pole a poté vyberte **Prodejní daň**. Soubor pro odstraňování problémů s předponou **TaxServiceTroubleshootingLog** se stáhne automaticky. Tento soubor obsahuje informace o transakci odeslané do služby pro výpočet daně. 
+4. Zkontrolujte, zda je přidané přizpůsobené pole přítomno v sekci **Vstupní JSON služby pro výpočet daně** a zda je jeho hodnota správná. Pokud hodnota není správná, znovu zkontrolujte kroky v tomto dokumentu.
+
+Příklad souboru:
+
+```
+===Tax service calculation input JSON:===
+{
+  "TaxableDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Line Type": "Normal",
+            "Item Code": "",
+            "Item Type": "Item",
+            "Quantity": 0.0,
+            "Amount": 1000.0,
+            "Currency": "EUR",
+            "Transaction Date": "2022-1-26T00:00:00",
+            ...
+            /// The new fields added at line level
+            "Cost Center": "003",
+            "Project": "Proj-123"
+          }
+        ],
+        "Amount include tax": true,
+        "Business Process": "Journal",
+        "Currency": "",
+        "Vendor Account": "DE-001",
+        "Vendor Invoice Account": "DE-001",
+        ...
+        // The new fields added at header level, no new fields in this example
+        ...
+      }
+    ]
+  },
+}
+...
+```
 
 ## <a name="appendix"></a>Dodatek
 
-Tato příloha ukazuje kompletní ukázkový kód pro integraci finančních dimenzí (**Nákladové středisko** a **Projekt**) na úrovni řádku.
+Tato příloha ukazuje kompletní ukázkový kód pro integraci finančních dimenzí **Nákladové středisko** a **Projekt** na úrovni řádku.
 
 ### <a name="taxintegrationlineobject_extensionxpp"></a>TaxIntegrationLineObject_Extension.xpp
 

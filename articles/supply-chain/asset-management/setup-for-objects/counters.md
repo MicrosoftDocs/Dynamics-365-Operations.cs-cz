@@ -1,12 +1,10 @@
 ---
 title: Měrný systém majetku
 description: Toto téma vysvětluje, jak vytvořit typy měrného systému majetku v modulu Správa majetku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectCounterPart, EntAssetObjectCounterLookup, EntAssetCounterType, EntAssetObjectCounterTotals
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 41bedaaace09f632ca7506f504c3086a1dabf193
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723568"
 ---
 # <a name="counters"></a>Čítače
 
@@ -64,7 +62,7 @@ Registraci čítače majetku lze aktualizovat ručně nebo automaticky na zákla
 
 Když jsou typy majetku přidány k typu čítače v poli **Čítače**, je tento čítač automaticky přidán k typům majetku na pevné záložce v okně **čítače** v poli [Typy majetku](../setup-for-objects/object-types.md).
 
-![Obrázek č. 1](media/071-setup-for-objects.png)
+![Obrázek č. 1.](media/071-setup-for-objects.png)
 
 
 

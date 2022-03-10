@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773283"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860501"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Začínáme s modulem Globální účetnictví zásob
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Globální účetnictví zásob umožňuje provádět účetnictví pro více skladů ve vámi vytvořených hlavních knihách globálního účetnictví zásob. Jednotlivé hlavní knihy globálního účetnictví zásob je nutné přidružit ke *konvencím*. Konvence je kolekce následujících typů zásad účetnictví:
 
@@ -60,7 +61,7 @@ Než budete moci povolit funkce doplňku, musíte jej integrovat s Microsoft Pow
 1. V dialogovém okně **Nastavení prostředí Power Platform** zaškrtněte políčko a poté vyberte **Založit**. Nastavení obvykle trvá 60 až 90 minut.
 1. Po nastavení prostředí Microsoft Power Platform stránka zobrazí název vašeho prostředí. Navíc je v sekci **Integrace Power Platform** uvedena věta „Nastavení prostředí Power Platform je dokončeno.“ Globální účetnictví zásob nevyžaduje aplikaci pro dvojí zápis.
 
-Další informace naleznete v tématu [Nastavení po nasazení prostředí](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
+Další informace naleznete v tématu [Aktivace po nasazení prostředí](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ### <a name="set-up-dataverse"></a>Nastavit Dataverse
 

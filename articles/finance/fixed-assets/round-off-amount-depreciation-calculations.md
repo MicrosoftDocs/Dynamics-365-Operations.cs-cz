@@ -1,12 +1,10 @@
 ---
 title: Částka pro zaokrouhlení výpočtů odpisů
-description: Tento článek popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.
-author: ShylaThompson
-manager: AnnBe
+description: Toto téma popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8662f0731abd089c9039c16bb77e39c1d3e51
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d3df48fc7bb092b0257c4652a8c67d1d740dbcfe
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976008"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674326"
 ---
 # <a name="round-off-amount-for-depreciation-calculations"></a>Částka pro zaokrouhlení výpočtů odpisů
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.
+Toto téma popisuje pole **Zaokrouhlit odpis**, které se nachází na stránce **Nastavení knihy**.
 
 Celková částka odpisů je stanovena pro každou knihu. Současné odpisové částky se používají v profilu odpisování dlouhodobého majetku, který ukazuje budoucí odpisy a hodnotu dlouhodobého majetku, a také v návrzích na odpisy. Zadejte nejnižší částku odpisu povolenou pro tuto knihu. 
 
@@ -49,3 +47,6 @@ Odpis je bez zaokrouhlení vypočítán v částce 2 444,44. Stejně jako v nás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

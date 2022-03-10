@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2bada42073e46c69101e6d31f3328a2eeb95f880
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c67f892e36e536ae2a30b242164eeaa581c7d01b163845a529dd777be6d4f1f9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771601"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Zobrazení zaúčtovaných plateb a transakcí TDS za období vyrovnání TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak zobrazit platby a transakce odečtené u zdroje (TDS
 
 1. Přejděte na **Daň \> Nepřímé daně \> Srážková daň \> Období vypořádání srážkové daně**.
 
-    [![Stránka období vyrovnání srážkové daně](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
+    [![Stránka období vyrovnání srážkové daně.](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
 
 2. Na stránce **Období zúčtování srážkové daně** vyberte **Platby srážkové daně** k otevření stránky **Platby srážkové daně**, kde si můžete prohlédnout vypořádání TDS, která byla vytvořena pro konkrétní období vypořádání TDS.
 

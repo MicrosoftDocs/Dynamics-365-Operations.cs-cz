@@ -5,22 +5,22 @@ author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: eee4076c5f16d9655bde3ee4943f79732598199f286d14aa542c167497d83262
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726204"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060913"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Používání portálů Microsoft Power Apps s datovým modelem strany
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-[!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Verze řešení orchestrace aplikace s duálním zápisem 2.0.999.0 a novější zahrnuje změny datového modelu strany a globálního adresáře u tabulek Účet a Kontakt. Změny umožňují vztahy N:N, které podporují pokročilé obchodní scénáře. Tyto změny nejsou podporovány webovými rolemi portálu, včetně zákaznického portálu, které jsou dodávány jako integrované nebo které ve vašem prostředí existovaly před instalací duálního zápisu. Aby webové role fungovaly podle očekávání, musíte pomocí nového datového modelu vytvořit nové webové role. 
 

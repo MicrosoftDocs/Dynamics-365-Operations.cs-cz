@@ -2,11 +2,9 @@
 title: Vytvoření provozní jednotky
 description: Provozní jednotka je organizace, která se používá k rozdělení řízení ekonomických zdrojů a operačních procesů v podniku.
 author: sericks007
-manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0157e7e080f6b65dc6b3bb8f01ace5b521bb3dca
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dcfcd64ae24297c8e11f36629490ebe7cd063de53c717559e1b73743ccc61664
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758986"
 ---
 # <a name="create-an-operating-unit"></a>Vytvoření provozní jednotky
 
@@ -41,3 +39,6 @@ Provozní jednotka je organizace, která se používá k rozdělení řízení e
     + Zadejte informace o způsobech komunikace, například e-mailové adresy, adresy URL a telefonní čísla. Chcete-li zadat nový záznam komunikace, klikněte na tlačítko Nový. Chcete-li upravit existující záznam komunikace, klikněte na tlačítko položky **Více možností > Pokročilé**.   
 6. Volitelně můžete podle potřeby změnit **Číslo provozní jednotky**. Všimněte si, že toto číslo je jedinečným identifikátorem pro odpovídající záznam **Strana** a nemůže být stejné jako jiné provozní jednotky.
 7. Zvolte **Uložit**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,22 +1,22 @@
 ---
 title: Naplánujte tisk vlnových štítků během vlny
 description: Toto téma popisuje, jak nastavit a používat funkce pro tisk štítků vln založených na úlohách.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777858"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920142"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Naplánujte tisk vlnových štítků během vlny
 
@@ -40,7 +40,7 @@ Chcete-li používat funkce popsané v tomto tématu, musí být pro váš syst�
 
 Nejprve musíte vytvořit novou metodu kroku vlny a povolit ji pro paralelní asynchronní zpracování úloh.
 
-1. Přejděte na  **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování ve vlnách**.
+1. Přejděte do **Řízení skladu \> Nastavení \> Vlny \> Metody zpracování vlny**.
 1. V podokně Akce vyberte možnost **Obnovit metodu**. Všimněte si *waveLabelPrinting* je přidán do seznamu metod zpracování vln, které můžete použít ve svých šablonách přepravních vln.
 1. Vyberte záznam, kde je pole **Název metody** nastaveno na *waveLabelPrinting* a poté v podokně akcí vyberte **Konfigurace úlohy**.
 1. V podokně Akce vyberte možnost **Nový**. Tím se přidá řádek do mřížky. Poté pro nový řádek nastavte následující pole:
@@ -51,7 +51,7 @@ Nejprve musíte vytvořit novou metodu kroku vlny a povolit ji pro paralelní as
 
 Nyní můžete aktualizovat existující šablonu vln tak, aby používala metodu zpracování vln *Tisk štítků vln*. Alternativně můžete vytvořit novou vlnovou šablonu, která ji používá.
 
-1. Přejděte na  **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
+1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
 1. V podokně akcí vyberte **Upravit**.
 1. V podokně seznamu vyberte šablonu vlny, kterou chcete aktualizovat. (Pokud používáte demo data pro účely testování, můžete vybrat *Vychozí dodávka 24*.)
 1. Na záložce s náhledem **Metody** ve sloupci **Zbývající metody** vyberte řádek, ve kterém je pole **Název** nastaveno na *waveLabelPrinting*.

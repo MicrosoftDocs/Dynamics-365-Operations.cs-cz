@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c02273adf90afc67b7c0ae1b82c19d489bfbd3b1
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 371a8c7178cd7c5091d6dd9a91d0ee03b943a269
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920067"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103181"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>Úloha čištění historie prodejů selhává nebo má problémy s výkonem
 
@@ -30,5 +30,5 @@ K tomu může dojít, pokud váš systém obsahuje velký počet aktualizací pr
 
 ## <a name="resolution"></a>Řešení
 
-Nová verze dávkové úlohy **Vyčištění historie aktualizace prodeje** je k dispozici pro Supply Chain Management verze 10.0.19 a novější. Tato funkce není ve výchozím nastavení zapnutá. Podrobnosti o tom, jak to funguje a jak to povolit ve správě funkcí, viz [Vylepšení výkonu vyčištění historie prodeje](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
+Nová verze dávkové úlohy **Vyčištění historie aktualizace prodeje** je k dispozici pro Supply Chain Management verze 10.0.19 a novější. Ve výchozím nastavení není tato funkce zapnutá. Podrobnosti o tom, jak to funguje a jak to povolit ve správě funkcí, viz [Vylepšení výkonu vyčištění historie prodeje](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

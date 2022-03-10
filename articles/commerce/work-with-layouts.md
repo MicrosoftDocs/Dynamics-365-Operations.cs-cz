@@ -2,36 +2,30 @@
 title: Práce s přednastavenými rozloženími
 description: Toto téma popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410801"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090838"
 ---
 # <a name="work-with-preset-layouts"></a>Práce s přednastavenými rozloženími
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak pracovat s přednastavenými rozloženími v aplikaci Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Před dokončením postupů uvedených v tomto tématu si přečtěte [Přednastavená a vlastní rozložení](templates-layouts-overview.md#preset-and-custom-layouts). Obecný přehled naleznete v tématu [Šablony a rozvržení – přehled](templates-layouts-overview.md).
 
@@ -84,7 +78,7 @@ Obvyklou praxí je nastavit výchozí motiv pro všechny stránky, které použ�
 Chcete-li nastavit nebo změnit motiv pro všechny podřízené stránky, které používají předdefinované rozvržení, postupujte podle následujících kroků.
 
 1. V editoru rozvržení vyberte v levém stromu osnovy modul kontejneru stránky. (Tento modul je obvykle druhým uzlem a má název **Výchozí stránka**.)
-1. V podokně vlastností vpravo v poli **Motiv** vyberte motiv.
+1. V podokně vlastností vpravo vyberte motiv v poli **Motiv**.
 
 ## <a name="save-check-in-preview-and-publish-a-preset-layout"></a>Uložení, navrácení se změnami, náhled a publikování přednastaveného rozvržení
 
@@ -97,15 +91,30 @@ Chcete-li zobrazit náhled změn, buď otevřete existující stránku, která p
 
 Po zobrazení náhledu změn v rozvržení přednastavených položek můžete publikovat rozvržení na aktivním webu podle jednoho z následujících kroků:
 
-* Přejděte na **Rozvržení**, vyberte rozvržení a pak vyberte **Publikovat.**
-* Vyberte název rozvržení pro otevření editoru rozložení a pak vyberte **Publikovat**.
-* Publikujte stránku, která odkazuje na nepublikované rozvržení. Rozvržení bude automaticky publikováno.
+1. Přejděte na **Rozvržení**, vyberte rozvržení a pak vyberte **Publikovat.**
+1. Vyberte název rozvržení pro otevření editoru rozložení a pak vyberte **Publikovat**.
+1. Publikujte stránku, která odkazuje na nepublikované rozvržení. Rozvržení bude automaticky publikováno.
 
 > [!WARNING]
 > Na přednastavená rozvržení lze odkazovat více stránek. Při publikování přednastaveného rozložení si uvědomte, že může být ovlivněno rozvržení více stránek.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="rename-a-preset-layout"></a>Přejmenování přednastaveného rozložení
+
+Chcete-li přejmenovat přednastavené rozložení v nástroji pro tvorbu webu, postupujte následovně.
+
+1. V levém navigačním podokně vyberte položku **Rozložení**.
+1. Vyberte název rozložení, které chcete přejmenovat.
+1. Výběrem příkazu **Upravit** začněte úpravu rozložení.
+1. V podokně vlastností rozložení vyberte symbol pera vedle názvu rozložení.
+1. Podle potřeby upravte název rozložení.
+1. Zaškrtnutím políčka potvrďte změnu názvu.
+1. Vyberte **Dokončit úpravy**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled šablon a rozvržení](templates-layouts-overview.md)
 
 [Práce se šablonami](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

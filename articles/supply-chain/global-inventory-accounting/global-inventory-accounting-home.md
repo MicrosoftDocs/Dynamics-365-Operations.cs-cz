@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4b64863c668b71335b8935037cc1c2de1fcc620e0f3f91e97ca38614334e6cc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774962"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103556"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Domovská stránka Globálního účetnictví zásob
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Mezinárodní organizace jsou pod rostoucím tlakem úřadů, aby dodržovaly místní a globální účetní standardy. Při zajišťování souladu hraje významnou roli ocenění zásob. Doplněk Globální účtetnictví zásob pro Microsoft Dynamics 365 Supply Chain Management poskytuje komplexní řešení, které umožňuje organizacím (zejména mezinárodním organizacím) používat k účtování zásob více účtů nákladů. Tyto organizace proto mohou dodržovat více účetních standardů a interní manažerské účetnictví současně.
 
@@ -48,6 +49,8 @@ Globální účetnictví zásob je aktuálně k dispozici v následujících geo
 - Kanada
 
 Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, Microsoft Dynamics Lifecycle Services (LCS) zobrazí zprávu, že tato geografická oblast není podporována. Globální účetnictví zásob nepodporuje místní nasazení Supply Chain Management.
+
+Pokud máte nějaké problémy s povolením globálního skladového účetnictví v jedné ze zde uvedených podporovaných geografických oblastí, pošlete prosím e -mailovou zprávu s vaším ID prostředí na adresu [týmu globálního skladového účetnictví](mailto:GlobalInvAccount@microsoft.com) pro ověření.
 
 ## <a name="licensing"></a>Licence
 

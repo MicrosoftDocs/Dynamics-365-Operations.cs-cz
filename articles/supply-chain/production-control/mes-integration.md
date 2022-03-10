@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778442"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952670"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrace s výrobními informačními systémy třetích stran
 
@@ -37,10 +37,17 @@ Následující obrázek ukazuje typickou kolekci obchodních událostí, proces�
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Zapnutí funkce integrace MES
 
-Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Než budete moci používat tuto funkci, musí ji správce v systému zapnout, jak je popsáno v následujícím tématu.
 
-- **Modul:** *Řízení výroby*
-- **Název funkce:** *Integrace výrobního informačního systému*
+1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
+1. Ujistěte se, že je aktivní licenční klíč **Čas a docházka** (zobrazuje se zaškrtnutí). Tento licenční klíč je vyžadován, protože řídí funkčnost a data výrobního systému. Pokud není aktivní, proveďte následující kroky:
+    1. Uveďte systém do režimu údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. Na stránce **Konfigurace licence** zaškrtněte políčko **Čas a docházka**.
+    1. Vypněte režim údržby, jak je popsáno v tématu [Režim údržby](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
+1. Zapněte funkci, která je uvedena následovně (viz též [Přehled správy funkce](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Modul:** *Řízení výroby*
+    - **Název funkce:** *Integrace výrobního informačního systému*
 
 ## <a name="processes-available-for-mes-integration"></a>Dostupné procesy pro integraci MES
 
@@ -191,7 +198,7 @@ Následující tabulka ukazuje pole, která jsou podporována v každém řádku
 
 | Název pole | Stav | Typ |
 |---|---|---|
-| `OperationNumber` | Povinné | Povinné, celé číslo |
+| `OperationNumber` | Povinné | Celé číslo |
 | `OperationPriority` | Volitelné | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Volitelné | Řetězec |
 | `OperationsResourceId` | Volitelné | Řetězec |

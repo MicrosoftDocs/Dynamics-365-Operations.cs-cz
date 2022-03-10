@@ -2,7 +2,7 @@
 title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
-ms.date: 08/09/2021
+ms.date: 10/28/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075292"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -38,8 +38,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 | Zásoby&nbsp;a&nbsp;logistika | [Doplněk Globální účetnictví zásob pro Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Domovská stránka globálního skladového účetnictví](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kódy důvodů pro inventury zásob](../warehousing/reason-codes-for-counting-journals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Zásady exportu dat odkazující na prodejní nabídku](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Určete, zda změny dat odkazovaných v nabídkách způsobí zahrnutí těchto nabídek (nebo řádků) do dalšího přírůstkového exportu. Pokud se rozhodnete nezahrnout tyto nabídky nebo řádky, vaše přírůstkové exporty poběží rychleji.<br><br>Tato funkce přidává nastavení s názvem **Vynechat data odkazovaná v prodejních nabídkách při sledování změn** do stránky **Parametry pohledávek**. |
-| Zásoby&nbsp;a&nbsp;logistika | Zapečetěné nabídky <!-- KFM: Add RP link when available --> | [Zapečetěné nabídky pro požadavky na nabídku](../procurement/sealed-bidding.md) |
-| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) |
+| Zásoby&nbsp;a&nbsp;logistika | [Zapečetěné nabídky](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Zapečetěné nabídky pro požadavky na nabídku](../procurement/sealed-bidding.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Předběžná rezervace pro doplněk Viditelnost zásob](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezervace viditelnosti zásob](../inventory/inventory-visibility-reservations.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Vylepšení odpočtů a skutečné hmotnosti ve správě rabatu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Správa odpočtů pomocí pracovní plochy odpočtu](../rebate-management/deduction-workbench.md )<br><br>[Zpracování, kontrola a zaúčtování rabatu](../rebate-management/process-review-post.md)<br><br>[Obchody správy rabatu](../rebate-management/rebate-management-deals.md) |
 | Zásoby&nbsp;a&nbsp;logistika | [Pokyny ke kroku aplikace skladu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Přizpůsobení názvů kroků a pokyny pro mobilní aplikaci Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
@@ -50,7 +49,7 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 V následující tabulce je uveden seznam vylepšených funkcí této verze. Každý z nich poskytuje přírůstkové vylepšení stávající funkce. Protože se jedná pouze o vylepšení, nejsou uvedeny v seznamu [plán vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Aby se však zajistilo, že tato vylepšení nebudou v rozporu s vašimi stávajícími přizpůsobeními nebo předvolbami, je každé z nich ve výchozím nastavení vypnuto (pokud není uvedeno jinak). Pokud chcete použít některou z těchto funkcí, musíte ji výslovně povolit ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Oblast funkce | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
+| Modul | Vlastnosti&nbsp;název&nbsp;ve funkci&nbsp;řízení | Další informace |
 |---|---|---|
 | Správa nákladů | Podrobnosti o průběhu uzávěrky zásob | Tato funkce preview umožňuje detailní zobrazení průběhu uzávěrky zásob. |
 | Zásobování a zdroje | Zabránit nadměrné spotřebě rezervací účelových položek rozpočtu, když je v pracovním postupu více nákupních žádanek | Tato funkce preview vylepšuje kontrolu chyb, když uživatelé odesílají a schvalují nákupní žádanky, které překračují zbývající zůstatek řádku rezervace účelových položek rozpočtu. To pomáhá předcházet nadměrné spotřebě rezervace účelových položek rozpočtu, když je v pracovním postupu více nákupních žádanek. |
@@ -59,6 +58,64 @@ V následující tabulce je uveden seznam vylepšených funkcí této verze. Ka�
 | Řízení skladu | Odpojit odloženou práci od ASN | Tato funkce je vyžadována k odesílání a přijímání rozšířených oznámení expedice (ASN), když spouštíte úlohu správy skladu na jednotce škálování (jako součást distribuované hybridní topologie). Přidává novou databázovou tabulku určenou k ukládání informací o práci vyskladnění. Dříve byly tyto informace uloženy v tabulkách používaných také pro ASN. |
 | Řízení skladu | Umístit smíšené jednotky do slotu | Umožňuje systému vkládat položky na místa, která obsahují smíšené jednotky (například krabice a pouzdra). U každého řádky šablony slotingu vám tato funkce umožňuje zvolit, zda má řádek vkládat položky do umístění se smíšenou jednotkou nebo jednou jednotkou. |
 | Řízení skladu | Použijte rychlejší rozhraní API pro zavírání/opětovné otevírání kontejnerů na balicí stanici | Když je tato funkce preview povolena, transakce zásob související s kontejnery se vytvářejí pomocí nového zjednodušeného procesu, který zlepšuje výkon zavírání nebo opětovného otevírání kontejnerů během ručního zpracování ve stanici balení. |
+
+## <a name="features-turned-on-by-default-in-this-release"></a>Funkce v této verzi zapnuté ve výchozím nastavení
+
+V následující tabulce je uveden seznam funkcí, které jsou ve verzi 10.0.21 ve výchozím nastavení zapnuté. Většinu funkcí, které byly automaticky zapnuty, lze vypnout v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Název funkce | Povolit datum | Funkce přidána | Stav funkce | Modul |
+| :--- | :--- | :--- | :--- | :--- |
+| Úložiště sestavy zásob na skladě | 1. 9. 2021 | 1. 4. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Zrušení převodního příkazu | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Odemknout deník zásob | 1. 9. 2021 | 17. 8. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Uložená zobrazení pro řízení zásob | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Navigace do verze kusovníku z řádků kusovníku | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Použití měrné jednotky a jednotkového množství v denících zásob | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Povolit prázdné hodnoty atributů dávky | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Automatické navyšování čísel řádků převodních příkazů zásob | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Workflow schválení deníku zásob | 1. 9. 2021 | 6. 1. 2020 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Povolit funkci upozornění na parametry správy kvality zásob | 1. 9. 2021 | 7. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Vytvořit převodní příkaz z řádku prodeje | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Řízení zásob a skladu |
+| Výběr modelu prognózy v podrobnostech prognózy poptávky | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Hlavní plánování |
+| Znázornění průběhu hlavního plánování | 1. 9. 2021 | 7. 10. 2019 | Zapnuto ve výchozím nastavení | Hlavní plánování |
+| Automatické potvrzování pro optimalizaci plánování | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Hlavní plánování |
+| Paralelní potvrzování plánovaných objednávek | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Hlavní plánování |
+| Zpráva o úspěšném odeslání nabídky | 1. 9. 2021 | 15. 5. 2019 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| Referenční odkaz požadavku na nabídku byl přidán do NO | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| Možnost dávkového potvrzení přijatých nákupních objednávek z dodavatelské spolupráce | 1. 9. 2021 | 10. 9. 2019 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| cXML vylepšení nákupu | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| Zobrazte odkaz „Otevřít publikované žádosti o nabídku“ jako dlaždici | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| Otázky a odpovědi v RFQ | 1. 9. 2021 | 19. 2. 2020 | Zapnuto ve výchozím nastavení | Zásobování a zdroje |
+| Informace o produktu nebezpečných materiálů a přepravní dokumentace | 1. 9. 2021 | 14. 6. 2020 | Zapnuto ve výchozím nastavení | Správa informací o produktech |
+| Striktní ověření výchozího množství objednávky | 1. 9. 2021 | 24. 6. 2020 | Zapnuto ve výchozím nastavení | Správa informací o produktech |
+| Funkce správy země původu | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Správa informací o produktech |
+| Uložená zobrazení pro uvolněné produkty | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Správa informací o produktech |
+| Vylepšení dialogových oken Úlohy schválení a Úlohy převodu | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Registrační značka pro vykazování jako dokončené přidána do zařízení úkolového lístku | 1. 9. 2021 | 31. 8. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Na stránku terminálu úkolových lístků bylo přidáno nové tlačítko Ukončit přestávku | 1. 9. 2021 | 19. 2. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Povolte částečný příjem subdodavatelských položek a opravte problém s výpočtem odpadu pro řádky kusovníku typu dodavatele. | 1. 9. 2021 | 11. 11. 2019 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Uložená zobrazení pro řízení výroby | 1. 9. 2021 | 17. 8. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Dynamics 365 Guides pro výrobu | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Provádění výrobního provozu | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Funkce pro uzamčení zařízení úkolového lístku a terminálu úkolových lístků za účelem dezinfekce | 1. 9. 2021 | 10. 5. 2020 | Zapnuto ve výchozím nastavení | Řízení výroby |
+| Přidělení poplatků na prodejní objednávce | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Prodej a marketing |
+| Omezit počet prodejních objednávek, které lze vybrat k zaúčtování | 1. 9. 2021 | 1. 9. 2021 | Zapnuto ve výchozím nastavení | Prodej a marketing |
+| Vyčistit historii aktualizace prodejní objednávky | 1. 9. 2021 | 1. 9. 2021 | Zapnuto ve výchozím nastavení | Prodej a marketing |
+| Změnit číselnou řadu pro práci cyklické inventury | 1. 9. 2021 | 7. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Doplnění vlny poptávky na základě úkolu | 1. 9. 2021 | 7. 10. 2019 | Povinné | Řízení skladu |
+| Skrýt pole Celková hodnota na stránkách „Všechny náklady“ a „Podrobnosti o nákladu“ | 1. 9. 2021 | 7. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Tisk štítků vlny | 1. 9. 2021 | 19. 2. 2020 | Povinné | Řízení skladu |
+| Přiřadit transakce zásob nákupní objednávky k vytížení | 1. 9. 2021 | 6. 1. 2020 | Povinné | Řízení skladu |
+| Vylepšené rozvržení popisků registračních značek | 1. 9. 2021 | 19. 2. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Blokování práce pro celou organizaci | 1. 9. 2021 | 19. 2. 2020 | Povinné | Řízení skladu |
+| Podrobnosti řádku práce | 1. 9. 2021 | 11. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Udělat pole stavu zásob pohybu zásob mobilního zařízení upravitelným | 1. 9. 2021 | 16. 10. 2019 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Potvrdit odchozí dodávky z dávkových úloh | 1. 9. 2021 | 13. 7. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Určit zda se má na mobilních zařízeních zobrazit stránka se souhrnem příjmu | 1. 9. 2021 | 1. 4. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Vyzvat k vyřešení nejednoznačných názvů &#39;Loc / LP&#39; | 1. 9. 2021 | 1. 4. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Zaznamenat varianty produktu a sledovací dimenze ve skladové aplikaci při příjmu položky vytížení | 1. 9. 2021 | 10. 5. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Nepovolujte vytváření nákladů, které nesplňují požadavky šablony sestavení vytížení vlny. | 1. 9. 2021 | 17. 8. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
+| Vyhodnocení všech akcí pro směrnice umístění více SKU | 1. 9. 2021 | 30. 9. 2020 | Zapnuto ve výchozím nastavení | Řízení skladu |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
@@ -80,9 +137,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.21 aplikací Finance and Operations (říjen 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.21 finančních a provozních aplikací (říjen 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

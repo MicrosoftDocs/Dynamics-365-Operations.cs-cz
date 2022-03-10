@@ -1,508 +1,78 @@
 ---
-title: Přehled správy kvality
-description: Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
-author: perlynne
-manager: tfehr
-ms.date: 10/15/2019
+title: Povolit správu kvality a neshod
+description: Toto téma poskytuje přehled procesu pro nastavení a konfiguraci funkcí správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management.
+author: yufeihuang
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
+ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome, InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement, InventTestRelatedOperations
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65858838b0fbb245a9330fab4e3b65b36a9eb944
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7c2c8b7e9a1a8d7692e1d2215e38de1b0f4d2d82
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219358"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567408"
 ---
-# <a name="quality-management-overview"></a>Přehled správy kvality
+# <a name="enable-quality-and-nonconformance-management"></a>Povolit správu kvality a neshod
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
+Toto téma poskytuje přehled procesu pro nastavení a konfiguraci funkcí správy kvality a neshod v Microsoft Dynamics 365 Supply Chain Management.
 
-Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Supply Chain Management může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
+## <a name="enable-quality-and-nonconformance-management"></a><a name="enable-qm"></a>Povolit správu kvality a neshod
 
-Kromě funkcí pro správu neshod obsahuje moduly správy kvality také funkce pro sledování problémů podle jejich typu (včetně interních potíží) a pro určování krátkodobých a dlouhodobých řešení. Statistické údaje o klíčových ukazatelů výkonnosti (KPI) nabízí náhled na historii předchozích potíží s neshodami a řešení, která byla použita k jejich nápravě. Historická data můžete použít ke kontrole účinnosti předchozích opatření pro zajištění kvality a k rozhodnutí o tom, zda tato opatření použít i v budoucnu.
+Chcete-li ve svém systému povolit správu kvality, postupujte podle těchto pokynů.
 
-Při nastavování přidružení kvality může aplikace Supply Chain Management vygenerovat objednávky kvality pro různé obchodní procesy, události a podmínky. Přiřazení kvality může zahrnovat určitou položku, určitou skupinu položek nebo všechny položky.
+1. Přejděte do nabídky **Řízení zásob \> Nastavení \> Parametry řízení zásob a skladu**.
+1. Na kartě **Správa kvality** nastavte možnost **Použít správu kvality** na *Ano*.
+1. Do pole **Hodinová sazba** zadejte hodinovou pracovní sazbu v místní měně. Hodinová sazba se používá pro výpočet nákladů na operace, které souvisejí s neshodou. Hodinová sazba a vypočtené náklady poskytují referenční informace o neshodách. S ostatními funkcemi nespolupracují.
+1. Vyberte **Nastavení sestavy**.
+1. Přidejte nové řádky pro různé typy zpráv a vyberte typ dokumentu, který se má použít pro každou zprávu.
+1. Zavřete stránku.
+1. Zavřete stránku.
 
-## <a name="examples-of-the-use-of-quality-management"></a>Příklady použití správy kvality
-Správa kvality je flexibilní a lze ji implementovat různými způsoby, aby byly splněny požadavky konkrétních úrovní operací dodavatelsko-odběratelského řetězce. V následujících příkladech jsou znázorněna možná použití těchto funkcí:
+## <a name="quality-management-configuration-process"></a>Proces konfigurace správy kvality
 
--   Automatické spuštění procesu řízení kvality na základě předem definovaných kritérií (při registraci nákupní objednávky od konkrétního dodavatele ve skladu).
--   Blokování zásob při inventuře zabraňuje použití neschválených zásob (úplné blokování množství nákupní objednávky).
--   Použití vzorkování jako součásti přidružení k definici množství aktuálních fyzických zásob, které je nutné zkontrolovat. Vzorkování může být založeno na pevném množství, procentuální hodnotě nebo celé licenční značky.
+Než začnete používat funkce správy kvality a generovat objednávky kvality, musíte nakonfigurovat systém a předpoklady. Zde je seznam kroků, které jsou nutné ke konfiguraci správy kvality.
 
-> [!NOTE]
-> Funkce _Správa kvality pro procesy skladu_ rozšiřuje možnosti správy kvality. Používáte-li tuto funkci, přejděte do tématu [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md), kde najdete příklady, jak povolit správu kvality.
+1. [Povolit správu kvality a neshod](#enable-qm).
+1. Volitelně: [Nakonfigurovat zkušební nástroje](quality-test-instruments.md).
+1. [Nakonfigurovat testy](quality-tests.md).
+1. [Nakonfigurujte testovací proměnné a výsledky](quality-test-variables.md).
+1. [Konfigurujte testovací skupiny](quality-test-groups.md).
+1. Volitelné: [Nakonfigurujte skupiny kvality a odkazy na produkty](quality-groups.md).
+1. Volitelně: [Nakonfigurujte přidružení kvality](quality-associations.md).
 
--   Vytvořte objednávky kvality pro částečné příjmy. Abyste mohli vytvořit objednávku kvality, která je založena na množství fyzicky přijatém s objednávkou, je nutné zaškrtnout políčko **Na aktualizované množství** ve formuláři **Vzorkování položky**.
--   Vytvoření typů testu, které zahrnují minimální, maximální a cílové hodnoty testu, a vykonání testu kvality vůči množství s předdefinovanými ověřovacími výsledky.
--   Určení přijatelné úrovně kvality (AQL) pro řízení odchylek měření kvality.
--   Určení zdrojů vyžadovaných operací kontroly, jako je například prostor testu nebo testovací přístroje.
+Po dokončení konfigurace můžete začít vytvářet a zpracovávat objednávky kvality. Další informace o vytváření a objednávek kvality a práci s nimi naleznete v tématu [Objednávky kvality](quality-orders.md).
 
-## <a name="working-with-quality-associations"></a>Práce s přidruženími kvality
-Obchodní proces, který používá přidružení kvality, může být přiřazen k různým zdrojovým dokumentům, jako například k nákupním objednávkám, prodejním objednávkám nebo výrobním zakázkám.
+## <a name="nonconformance-management-configuration-process"></a>Proces konfigurace správy neshod
 
-Každý záznam o přidružení kvality určuje sadu testů, přijatelnou úroveň kvality a plán vzorkování, které platí pro vygenerované objednávky kvality. Je nutné definovat záznam o přidružení kvality pro každou variantu v obchodním procesu. Můžete například nastavit přidružení kvality, které vygeneruje objednávku kvality při aktualizaci příjemky produktu nákupní objednávky. V závislosti na nastavení plánu provedení může být samotný spouštěcí proces blokován, dokud existuje otevřená objednávka kvality, nebo mohou být blokovány další procesy, jako například fakturování nákupní objednávky.
+Než začnete používat funkce správy neshod a generovat neshody, musíte nakonfigurovat systém a předpoklady. Zde je seznam kroků, které jsou nutné ke konfiguraci správy neshod.
 
-**Poznámka:** Pokud existují otevřené objednávky kvality, skladová množství jsou automaticky blokována před vydáním. V závislosti na nastavení **Úplné blokování** na stránce **Vzorkování položky** se množství rovná buď množství na objednávce kvality, nebo množství na řádku zdrojového dokumentu.
+1. [Povolit správu kvality a neshod](#enable-qm).
+1. [Konfigurujte pracovníky, kteří jsou odpovědní za schvalování neshod](quality-responsible-workers.md).
+1. [Nakonfigurujte typy problémů](quality-problem-types.md).
+1. [Nakonfigurujte karanténní zóny](quality-quarantine-zones.md).
+1. [Nakonfigurujte typy diagnostiky](quality-diagnostic-types.md).
+1. [Nakonfigurujte operace](quality-operations.md).
+1. Volitelně: [Nakonfigurujte poplatky za kvalitu](quality-charges.md).
 
-Pro určitý obchodní proces určuje záznam o přidružení kvality událost a podmínky, pro které je objednávka kvality generována. Podmínky mohou být specifické buď pro pracoviště, nebo pro právnickou osobu. Objednávku kvality, která zahrnuje destrukční testy, je možné generovat, jen když pro tuto událost existují zásoby.
+Po dokončení konfigurace můžete začít vytvářet a zpracovávat neshody. Další informace o vytvoření neshod a práci s nimi naleznete v tématu [Vytvoření a zpracování neshod](tasks/create-process-non-conformance.md).
 
-Následující příklady ilustrují způsob definování záznamu o přidružení kvality pro varianty každého obchodního procesu. Pro každý příklad jsou v následující tabulce shrnuty události a podmínky, kterou jsou definovány v záznamu o přidružení kvality.
+## <a name="additional-resources"></a>Další prostředky
 
-<table>
-<tbody>
-<tr>
-<th>Typ odkazu</th>
-<th>Typ události</th>
-<th>Spuštění</th>
-<th>Blokování události</th>
-<th>Odkaz na dokument</th>
-</tr>
-<tr>
-<td>Zásoby</td>
-<td>Nelze použít</td>
-<td>Nelze použít</td>
-<td>Žádné</td>
-<td>Vše</td>
-</tr>
-<tr>
-<td rowspan="7">Prodeje</td>
-<td rowspan="4">Proces vyskladnění je naplánován.</td>
-<td rowspan="4">Před</td>
-<td>Žádné</td>
-<td rowspan="22">Specifické ID, Skupina nebo Vše</td>
-</tr>
-<tr>
-<td>Proces vyskladnění</td>
-</tr>
-<tr>
-<td>Dodací list</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="3">Dodací list</td>
-<td rowspan="3">Před</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Dodací list</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="15">Nákup</td>
-<td rowspan="7">Příjemka</td>
-<td rowspan="4">Před</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Příjemka</td>
-</tr>
-<tr>
-<td>Příjemka produktu</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="3">Po</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Příjemka produktu</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="3">Registrace</td>
-<td rowspan="3">Nelze použít</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Příjemka produktu</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="5">Příjemka produktu</td>
-<td rowspan="3">Před</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Příjemka produktu</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="2">Po</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Faktura</td>
-</tr>
-<tr>
-<td rowspan="8">Výroba</td>
-<td rowspan="3">Registrace</td>
-<td rowspan="3">Nelze použít</td>
-<td>Žádné</td>
-<td rowspan="12">Vše</td>
-</tr>
-<tr>
-<td>Ohlásit jako dokončené</td>
-</tr>
-<tr>
-<td>Konec</td>
-</tr>
-<tr>
-<td rowspan="5">Ohlásit jako dokončené</td>
-<td rowspan="3">Před</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Ohlásit jako dokončené</td>
-</tr>
-<tr>
-<td>Konec</td>
-</tr>
-<tr>
-<td rowspan="2">Po</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td>Konec</td>
-</tr>
-<tr>
-<td rowspan="4">Karanténa</td>
-<td rowspan="3">Ohlásit jako dokončené</td>
-<td rowspan="2">Před</td>
-<td>Ohlásit jako dokončené</td>
-</tr>
-<tr>
-<td>Konec</td>
-</tr>
-<tr>
-<td>Po</td>
-<td>Konec</td>
-</tr>
-<tr>
-<td>Konec</td>
-<td>Před</td>
-<td>Konec</td>
-</tr>
-<tr>
-<td rowspan="3">Operace postupu</td>
-<td rowspan="3">Ohlásit jako dokončené</td>
-<td rowspan="2">Před</td>
-<td>Žádné</td>
-<td rowspan="3">Specifické ID, Skupina nebo Vše a Podle prostředku, Skupina nebo Vše</td>
-</tr>
-<tr>
-<td>Ohlásit jako dokončené</td>
-</tr>
-<tr>
-<td>Po</td>
-<td>Žádné</td>
-</tr>
-<tr>
-<td rowspan="3">Výroba vedlejších produktů</td>
-<td>Registrace</td>
-<td>Nelze použít</td>
-<td rowspan="3">Žádné</td>
-<td rowspan="3">Vše</td>
-</tr>
-<tr>
-<td rowspan="2">Ohlásit jako dokončené</td>
-<td>Před</td>
-</tr>
-<tr>
-<td>Po</td>
-</tr>
-</tbody>
-</table>
-
-V následující tabulce jsou uvedeny další informace o způsobu, jak lze generovat objednávky kvality pro určité typy procesů.
-<div class="tableSection">
-
-<table>
-<tbody>
-<tr>
-<th>Typ procesu</th>
-<th>Kdy lze objednávku kvality generovat automaticky</th>
-<th>Kdy lze objednávku kvality generovat v případě, že je vyžadován destrukční test</th>
-<th>Informace o podmínkách</th>
-<th>Informace o ručním generování</th>
-</tr>
-<tr>
-<td>Nákupní objednávka</td>
-<td>Před tím nebo po tom, co je příjemka produktu pro přijatý materiál zaúčtována</td>
-<td>Po tom, co je příjemka produktu pro přijatý materiál zaúčtována, protože materiál musí být k dispozici pro destrukční testy</td>
-<td>Požadavek pro objednávku kvality se může týkat určitého pracoviště, položky, dodavatele nebo kombinace těchto podmínek.</td>
-<td>Ručně vygenerovaná objednávka kvality, která odkazuje na nákupní objednávku, může použít informace ze záznamu o přidružení kvality, jako je plán testování vzorku.</td>
-</tr>
-<tr>
-<td>Karanténní příkaz</td>
-<td>Před tím nebo po tom, co je karanténní příkaz vykázán jako dokončený nebo ukončený</td>
-<td>Objednávky kvality, které vyžadují provedení destrukčních testů, nelze generovat. Předpokládá se, že funkce karanténního příkazu zpracovává likvidaci materiálu, který je zničen.</td>
-<td>Požadavek pro objednávku kvality se může týkat určitého pracoviště, položky, dodavatele nebo kombinace těchto podmínek.</td>
-<td>Ručně vygenerovaná objednávka kvality, která odkazuje na karanténní příkaz, může použít informace ze záznamu o přidružení kvality, jako je plán testování vzorku.</td>
-</tr>
-<tr>
-<td>Prodejní objednávka</td>
-<td>Před naplánovaným procesem vyskladnění nebo aktualizací dodacího listu pro položky, které byly právě dodány</td>
-<td>Při jakémkoli kroku</td>
-<td>Požadavek pro objednávku kvality se může týkat určitého pracoviště, položky, odběratele nebo kombinace těchto podmínek.</td>
-<td>Ručně vygenerovaná objednávka kvality, která odkazuje na prodejní objednávku, může použít informace ze záznamu o přidružení kvality, jako je plán testování vzorku.</td>
-</tr>
-<tr>
-<td>Výrobní zakázka</td>
-<td>Před tím nebo po tom, co je vykázáno dokončené množství pro výrobní zakázku</td>
-<td>Po tom, co je vykázáno dokončené množství pro výrobní zakázku</td>
-<td>Požadavek pro objednávku kvality se může týkat určitého pracoviště, položky nebo kombinace těchto podmínek.</td>
-<td>Ručně vygenerovaná objednávka kvality, která odkazuje na výrobní zakázku, může použít informace ze záznamu o přidružení kvality, jako je plán testování vzorku.</td>
-</tr>
-<tr>
-<td>Výrobní zakázka s operací postupu</td>
-<td>Před tím nebo po tom, co je dokončeno ohlášení pro operaci</td>
-<td>Po tom, co je pro poslední operaci dokončeno ohlášení výrobní zakázky</td>
-<td>Požadavek pro objednávku kvality se může týkat určitého pracoviště, položky, provozního prostředku nebo kombinace těchto podmínek.</td>
-<td>Ručně vygenerovaná objednávka kvality, která odkazuje na operaci postupu, může použít informace ze záznamu o přidružení kvality, jako je plán testování vzorku.</td>
-</tr>
-<tr>
-<td>Zásoby</td>
-<td>Objednávku kvality nelze automaticky generovat pro transakci v deníku zásob ani pro transakce převodních příkazů.</td>
-<td></td>
-<td></td>
-<td>Objednávku kvality je možné vytvořit ručně pro množství položky na skladě. Jsou vyžadovány fyzické zásoby na skladě.</td>
-</tr>
-</tbody>
-</table>
-
-## <a name="quality-order-auto-generation-examples"></a>Příklady automatického generování objednávek kvality
-
-### <a name="purchasing"></a>Nákup
-
-Pokud v nákupu nastavíte pole **Typ události** na hodnotu **Příjemka produktu** a pole **Spuštění** na **Po** na stránce **Přidružení kvality**, získáte následující výsledky: 
-
-- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ano**, objednávka kvality se vygeneruje pro každý příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Při každém příjmu množství na základě nákupní objednávky jsou nové objednávky kvality generovány na základě nově přijatého množství.
-- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ne**, objednávka kvality se vygeneruje pro první příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Dále se vytvoří jedna nebo více objednávek kvality na základě zbývajícího množství v závislosti na sledovacích dimenzích. Objednávky kvality nejsou vygenerovány pro následné příjmy s nákupní objednávkou.
-
-### <a name="production"></a>Výrobní
-
-Pokud ve výrobě nastavíte pole **Typ události** na hodnotu **Vykázat jako dokončené** a pole **Spuštění** na **Po** na stránce **Přidružení kvality**, získáte následující výsledky:
-
-- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ano**, objednávka kvality se vygeneruje podle každého dokončeného množství a nastavení ve vzorku položky. Při každém vykázání množství jako dokončeného na základě výrobní zakázky jsou nové objednávky kvality generovány na základě nově dokončeného množství. Tato logika generování je konzistentní s nákupem.
-- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ne**, objednávka kvality se vygeneruje při přvní vykázání množství jako dokončeného na základě dokončeného množství. Dále se vytvoří jedna nebo více objednávek kvality na základě zbývajícího množství v závislosti na sledovacích dimenzích vzorku položky. Objednávky kvality nejsou vygenerovány pro následná dokončená množství.
-
-<table>
-<tbody>
-<tr>
-<th>Specifikace kvality</th>
-<th>Na aktualizované množství</th>
-<th>Na sledovací dimenzi</th>
-<th>Výsledek</th>
-</tr>
-<tr>
-<td>Počet procent: 10 %</td>
-<td>Ano</td>
-<td>
-<p>Číslo dávky: Ne</p>
-<p>Sériové číslo: Ne</p>
-</td>
-<td>
-<p>Množství na objednávce: 100</p>
-<ol>
-<li>Vykázat jako dokončené pro 30
-<ul>
-<li>Objednávka kvality č. 1 na 3 (10 % z 30)</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 70
-<ul>
-<li>Objednávka kvality č.2 na 7 (10 % ze zbývajícího množství objednávky, které se v tomto případě rovná 70)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 1</td>
-<td>Ne</td>
-<td>
-<p>Číslo dávky: Ne</p>
-<p>Sériové číslo: Ne</p>
-</td>
-<td>Množství na objednávce: 100
-<ol>
-<li>Vykázat jako dokončené pro 30
-<ul>
-<li>Objednávka kvality č. 1 pro 1 (pro první vykázané množství jako dokončené, které má pevnou hodnotu 1)</li>
-<li>Objednávka kvality č. 2 pro 1 (pro zbývající množství, které má stabilně pevnou hodnotu 1)</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 10
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 60
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 1</td>
-<td>Ano</td>
-<td>
-<p>Číslo dávky: Ano</p>
-<p>Sériové číslo: Ano</p>
-</td>
-<td>
-<p>Množství na objednávce: 10</p>
-<ol>
-<li>Vykázat jako dokončené pro 3: 1 pro #b1, #s1; 1 pro #b2, #s2 a 1 pro #b3, #s3
-<ul>
-<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
-<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
-<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 2:1 pro #b4, #s4 a 1 pro #b5, #s5
-<ul>
-<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
-<li>Pořadí kvality č 5 pro 1 z dávky #b5, sériové #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Poznámka:</strong> Dávku lze znovu použít.</p>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 2</td>
-<td>Ne</td>
-<td>
-<p>Číslo dávky: Ano</p>
-<p>Sériové číslo: Ano</p>
-</td>
-<td>
-<p>Množství na objednávce: 10</p>
-<ol>
-<li>Vykázat jako dokončené 4: 1 pro #b1, #s1; 1 pro #b2, #s2; 1 pro #b3, #s3 a 1 pro #b4, #s4
-<ul>
-<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
-<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
-<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
-<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
-</ul>
-<ul>
-<li>Objednávka kvality #5 pro 2, bez reference na dávku a sériové číslo</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 6: 1 pro #b5, #s5; 1 pro #b6, #s6; 1 pro #b7, #s7; 1 pro #b8, #s8; 1 pro #b9, #s9 a 1 pro #b10, #s10
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-
-> [!NOTE]
-> Funkce *Správa kvality pro procesy skladu* přidává možnosti zpracování objednávky kvality pro výrobu s atributem **Typ události** nastaveným jako *Oznámit jako dokončené* a atributem **Spuštění** nastaveným jako *Po dokončení*, a pro nákupy s atributem **Typem události** nastaveným jako *Registrace*. Další informace vizi [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md).
-
-## <a name="quality-management-pages"></a>Stránky modulu Správa kvality
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Strana</th>
-<th>popis</th>
-<th>Příklad</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Přiřazení kvality</td>
-<td>Přečtěte si předchozí část tohoto článku.</td>
-<td>Přidružení kvality určuje pro vygenerovanou objednávku kvality tyto informace:
-<ul>
-<li>Událost transakce</li>
-<li>Sada testů, které je nutné u položky vykonat</li>
-<li>Přijatelná úroveň kvality</li>
-<li>Plán vzorkování</li>
-</ul>
-Přiřazení kvality je nutné definovat pro každou variantu obchodního procesu, který vyžaduje automatické generování objednávky kvality. Objednávky kvality lze generovat například v obchodních procesech pro nákupní objednávky, karanténní příkazy, prodejní objednávky a výrobní zakázky.</td>
-</tr>
-<tr class="even">
-<td>Testy</td>
-<td>Tuto stránku použijte k definování a prohlížení individuálních testů, které zjišťují, zda vaše produkty splňují specifikace kvality. Ke skupině testů můžete přiřadit jeden nebo více individuálních testů. V tomto případě zadáte také informace specifické pro daný test, jako jsou například přijatelné hodnoty měření. Hodnoty měření se používají k testování množství a testovací proměnné slouží pro testy kvality.
-<ul>
-<li>Kvantitativní test má typ testu <strong>Celé číslo</strong> nebo <strong>Zlomek</strong> a také má určenou měrnou jednotku. Specifikace kvality a výsledky testu jsou vyjádřeny jako čísla.</li>
-<li>V případě testu kvality se jedná o test typu <strong>Parametr</strong>. Testy kvality vyžadují další informace o měřených testovacích proměnných a o výčtu jejich hodnot. Specifikace kvality a výsledky testu jsou vyjádřeny v závislosti na výstupu.</li>
-</ul></td>
-<td>Výrobní společnost provádí dva testy na zakoupeném materiálu: kvantitativní test ohledně kvality materiálu a test kvality ohledně poškození balení. Tato společnost definuje další informace ohledně kvalitativního testu s cílem identifikovat testovací proměnnou (poškozené balení) a její výstupní hodnoty. Společnost používá stránku <strong>Testovací skupiny</strong> k přiřazení dvou testů do skupiny testů a k určení informací o daném testu. Testovací skupina je přiřazena k objednávce kvality, takže daná společnost může vytvořit sestavu pro dané dva testy.</td>
-</tr>
-<tr class="odd">
-<td>Testovací skupiny</td>
-<td>Tato stránka slouží k nastavení, úpravě a zobrazení testovacích skupin a jednotlivých testů přiřazených testovací skupině. V horním podokně jsou zobrazeny testovací skupiny a v dolním podokně jsou zobrazeny testy, které jsou přiřazené vybrané testovací skupině. Každé testovací skupině můžete přiřadit několik zásad, jako například plán vzorkování, přijatelnou úroveň kvality a požadavek na destrukční testy. Při přiřazení jednotlivého testu do skupiny testů definujete další informace, jako jsou například pořadí, dokumenty nebo data platnosti. Pro kvantitativní test definujete také informace o přijatelných hodnotách měření. Informace o testu kvality obsahují také testovací proměnné a výchozí výstup. Skupina testů přiřazená objednávce kvality určuje výchozí sadu testů, které je nutné na určených položkách vykonat. Testy však můžete přidat, odstranit nebo změnit na objednávce kvality. Výsledky testu jsou uvedeny pro všechny testy v objednávce kvality.</td>
-<td>Výrobní společnost má definované testovací skupiny pro každou variantu pokynů týkajících se kvality. Různé testovací skupiny odrážejí rozdíly v plánech vzorkování, v sadách testů, které je nutné provádět dohromady, v přijatelné úrovni kvality i v dalších činitelích. Pro kvantitativní testy existují také rozdíly v přijatelných hodnotách měření. K uplatnění pokynů týkajících se kvality přiřadí společnost na stránce <strong>Přidružení kvality</strong> každé testovací skupině pravidlo automatického generování objednávek kvality a také přiřadí skupiny testů k objednávce kvality, který byla vytvořena ručně.</td>
-</tr>
-<tr class="even">
-<td>Skupiny kvality položek</td>
-<td>Tato stránka slouží k nastavení, úpravě a zobrazení položek zařazených do skupin kvality, které jsou přiřazeny položce. Skupina kvality představuje společné požadavky na testování položek. Po určení požadavků na testování na stránce <strong>Testovací skupiny</strong> můžete definovat pravidla pro automatické generování objednávek kvality. Proces můžete zjednodušit tak, že nebudete definovat pravidla pro jednotlivé položky. Namísto toho na stránce <strong>Přidružení kvality</strong> určíte pravidla pro skupinu kvality. Pro vybranou skupinu kvality můžete také použít stránku <strong>Skupiny kvality položek</strong> a přiřadit k této skupině příslušné položky. Pro vybranou položku můžete také použít stránku <strong>Skupiny kvality položek</strong> a přiřadit příslušnou skupiny kvality příslušné položce.</td>
-<td>Výrobní společnost nakupuje různé suroviny, které při vstupní kontrole podléhají stejným požadavkům na testování. Společnost definuje skupinu kvality a přiřadí čísla položek, které jsou přidruženy k surovinám, do této skupiny. Později společnosti zakoupí nový typ suroviny, který má stejné požadavky na testování. Namísto vytvoření nových požadavků na testování pro nový materiál společnost přidá číslo položky pro nový materiál do stávající skupiny kvality. Stejná výrobní společnost vyrábí také položky, na které jsou kladeny stejné požadavky na testování, a expeduje položky, které před odesláním podléhají stejné kontrole. Společnost definuje další dvě skupiny kvality a do každé skupiny zařadí příslušné položky.</td>
-</tr>
-<tr class="odd">
-<td>Testovací proměnné</td>
-<td>Tato stránka slouží k určení a zobrazení proměnných spojených s testem kvality. Pro každou proměnnou určete výčet výstupních hodnot, které reprezentují možné volby. Na stránce <strong>Testy</strong> určete testy. U testů kvality je nutné nastavit typ testu na hodnotu <strong>Možnost</strong>. Na stránce <strong>Testovací skupiny</strong> přiřaďte testovací proměnnou k jednotlivému testu.</td>
-<td>Společnost vyrábějící cukrovinky používá kontrolní test pro dokončené výrobky. Kontrolní test má několik proměnných. Jedna proměnná odpovídá chuti, přičemž možné výstupní hodnoty pro tuto proměnnou jsou „dobrá“ a „špatná“. Druhá proměnná odpovídá barvě, přičemž možní výstupní hodnoty jsou „příliš tmavá“, „příliš světlá“ a „správná“.</td>
-</tr>
-<tr class="even">
-<td>Výsledky testovacích proměnných</td>
-<td>Na této stránce lze nastavit, upravit nebo zobrazit možné výsledky testů pro testovací proměnnou, která je přidružena k testu kvality. Každé výstupní hodnotě přiřadíte stav <strong>úspěch</strong> nebo <strong>neúspěch</strong>. Pro každý test kvality definovaný na stránce <strong>Testy</strong> je nutné definovat proměnnou a její výstupní hodnoty. (U kvalitativních testů je typ testu nastaven na <strong>Volba</strong> na stránce <strong>Testy</strong>.) Pomocí stránky <strong>Skupiny testů</strong> přiřaďte proměnnou testu a výchozí výstup k samostatnému kvalitativnímu testu.</td>
-<td>Společnost vyrábějící cukrovinky používá kontrolní test pro dokončené výrobky. Kontrolní test má několik proměnných. Jedna proměnná odpovídá chuti, přičemž možné výstupní hodnoty pro tuto proměnnou jsou „dobrá“ a „špatná“. Druhá proměnná odpovídá barvě, přičemž možní výstupní hodnoty jsou „příliš tmavá“, „příliš světlá“ a „správná“. Ke každé výstupní hodnotě je přiřazen stav <strong>úspěch</strong> nebo <strong>neúspěch</strong>. Během kontrolního testu pro každou proměnnou kontrolor ohlásí výsledky testu výběrem některé z výstupních hodnot.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-<a name="additional-resources"></a>Další zdroje
---------
-
-[Procesy správy kvality](quality-management-processes.md)
-
-[Řízení neshody](enable-nonconformance-management.md)
-
-[Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md)
-
+- [Přehled správy kvality](quality-management-processes.md)
+- [Povolit správu kvality a neshod](enable-quality-management.md)
+- [Správa kvality pro procesy skladu](quality-management-for-warehouses-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

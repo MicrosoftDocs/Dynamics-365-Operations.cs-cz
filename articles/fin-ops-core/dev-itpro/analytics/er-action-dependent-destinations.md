@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358662"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323972"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurace cílů ER závislých na akci
 
 [!include [banner](../includes/banner.md)]
 
-Můžete konfigurovat [cíle](electronic-reporting-destinations.md) pro každou výstupní komponentu (složku nebo soubor) [elektronického výkaznictví (ER)](general-electronic-reporting.md) [formát](general-electronic-reporting.md#FormatComponentOutbound) [konfigurace](general-electronic-reporting.md#Configuration) který se používá pro generování odchozích dokumentů. Uživatelé, kteří používají formát tohoto typu ER a mají příslušná přístupová práva, mohou také změnit nakonfigurované nastavení cíle za běhu.
+Můžete konfigurovat [cíle](electronic-reporting-destinations.md) pro každou výstupní komponentu (složku nebo soubor) [konfigurace](general-electronic-reporting.md#Configuration) formátu [elektronického výkaznictví (ER)](general-electronic-reporting.md), která se používá pro generování odchozích dokumentů. Uživatelé, kteří používají formát tohoto typu ER a mají příslušná přístupová práva, mohou také změnit nakonfigurované nastavení cíle za běhu.
 
 V Microsoft Dynamics 365 Finance **verze 10.0.17 a novější** lze spustit formát ER pomocí [zajišťování](er-apis-app10-0-17.md) kódu akce, který uživatel provede spuštěním daného formátu ER. Například v modulu **Pohledávky** v nastavení správy tisku můžete vybrat formát ER, který generuje konkrétní obchodní dokument, například fakturu s volným textem. Poté můžete vybrat **Zobrazit** k zobrazení náhledu faktury nebo **Vytisknout** pro odeslání na tiskárnu. Pokud je za běhu předána akce uživatele pro spuštěný formát ER, můžete nakonfigurovat různé cíle ER pro různé akce uživatele. Toto téma vysvětluje, jak konfigurovat cíle ER pro tento typ formátu ER.
 
@@ -115,7 +115,6 @@ Následující seznam obchodních dokumentů je řízen funkcí **Směrovat výs
 - Nákupní žádanka nákupní objednávky
 - Prodejní objednávka – potvrzení
 - Upomínka
-- Výpis z účtu odběratele
 - Oznámení úroků
 - Poradenství ohledně plateb dodavatelům
 - Požadavek na nabídku

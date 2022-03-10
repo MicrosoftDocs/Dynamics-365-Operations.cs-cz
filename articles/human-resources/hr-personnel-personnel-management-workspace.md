@@ -1,29 +1,32 @@
 ---
 title: Pracovní prostor správy personálu
 description: Toto téma popisuje koncepční prvky pracovního prostoru správy personálu.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a83dea308e3e2eec1edebd5d619f9455e1a2268
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754805"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066568"
 ---
 # <a name="personnel-management-workspace"></a>Pracovní prostor správy personálu
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -33,11 +36,11 @@ Pracovní prostor **Správa personálu** obsahuje obrovské množství obsahu. O
 
 Karta **Aktivita** obsahuje sekce, které seskupují pracovníky na základě jejich stadia v procesu zaměstnávání:
 
-- Kandidáti k přijetí
-- Začne brzy
-- Nejnovější přijetí
-- Ukončování
-- Ukončeno
+- **Kandidáti k přijetí**
+- **Začne brzy**
+- **Nejnovější přijetí**
+- **Ukončování**
+- **Ukončeno**
 
 Když je pracovník v jedné z těchto fází, jsou konkrétní akce k dispozici jako tlačítko na kartě nebo v nabídce, která se zobrazí, když vyberete tři tečky (**…**) v pravém horním rohu. Následující pododdíly popisují oddíly karty **Aktivita** a seznam akcí, které jsou k dispozici.
 
@@ -51,9 +54,9 @@ Když je pracovník v jedné z těchto fází, jsou konkrétní akce k dispozici
 
 Když se kandidáti objeví v části **Uchazeči o zaměstnání**, můžete provést následující akce výběrem tří teček na kartě kandidáta:
 
-- Zamítnout kandidáta
-- Nepřijímat
-- Přijmout
+- **Zamítnout kandidáta**
+- **Nepřijímat**
+- **Přijmout**
 
 > [!NOTE]
 > Pokud se seznam kandidátů vyplňuje z Microsoft Dataverse, budou se u všech právnických osob zobrazovat stejní kandidáti, protože ke kandidátovi nebyla přidružena žádná právnická osoba.
@@ -65,7 +68,7 @@ Když se kandidáti objeví v části **Uchazeči o zaměstnání**, můžete pr
 Pokud se manažer na kartě neobjeví, nebyla pracovníkovi přiřazena pozice.
 
 > [!NOTE] 
-> Před použitím kontrolního seznamu vám doporučujeme přiřadit pozici pracovníka, protože úkoly při registraci se někdy přiřazují vedoucímu nově přijatého zaměstnance. Pokud však není přiřazena žádná pozice, manažera nového zaměstnance nelze určit. V takovém případě budou úkoly přihlašování, které jsou určeny pro správce, přiřazeny vlastníkovi kontrolního seznamu.
+> Než použijete kontrolní seznam, doporučujeme přiřadit pozici pracovníkovi. Někdy jsou úkoly při nástupu přiděleny manažerovi nově přijatého zaměstnance. Pokud však není přiřazena žádná pozice, manažera nového zaměstnance nelze určit. V takovém případě budou úkoly přihlašování, které jsou určeny pro správce, přiřazeny vlastníkovi kontrolního seznamu.
 
 Když se pracovníci objeví v části **Brzy začíná**, jsou pro ně k dispozici následující akce:
 
@@ -85,7 +88,7 @@ Když se pracovníci objeví v části **Brzy začíná**, jsou pro ně k dispoz
 Ve výchozím nastavení seznam zobrazuje pracovníky, kteří byli najati za posledních sedm dní. Chcete-li toto nastavení změnit, na stránce **Parametry lidských zdrojů** karty **Všeobecné** definujte časový rámec pro **Poslední přijatí**. Údaje v části **Poslední přijatí** lze zobrazit pro konkrétní počet dní, měsíců nebo let. Chcete-li například zobrazit seznam pracovníků, kteří byli přijati za posledních 14 dní, nastavte pole **Doba** na **14** a pole **Jednotka** na **Dny**.
 
 > [!NOTE]
-> Nastavení na stránce **Parametry lidských zdrojů** se liší podle společnosti. Časový rámec, pro který si prohlížíte poslední přijaté, se proto může u jednotlivých společností lišit. Například ve společnosti USMF možná budete chtít zobrazit všechny nové zaměstnance z posledních sedmi dnů. Ve společnosti USSI ale budete chtít zobrazit všechny nové zaměstnance z posledních 14 dnů. V tomto případě musíte otevřít stránku **Parametry lidských zdrojů** v každé společnosti a podle potřeby nastavit parametry.
+> Nastavení na stránce **Parametry lidských zdrojů** se liší podle společnosti. Časový rámec, pro který si prohlížíte poslední přijaté, se proto může u jednotlivých společností lišit. Například ve společnosti USMF možná budete chtít zobrazit všechny nové zaměstnance z posledních sedmi dnů. Ve společnosti USSI ale budete chtít zobrazit všechny nové zaměstnance z posledních 14 dnů. V tomto případě otevřete stránku **Parametry lidských zdrojů** v každé společnosti a podle potřeby nastavit parametry.
 
 Pokud se manažer na kartě neobjeví, nebyla pracovníkovi přiřazena pozice.
 
@@ -132,13 +135,9 @@ Když se pracovník objeví v části **Skončili**, jsou pro něj k dispozici n
 
 Karta **Změny zaměstnanců** poskytuje seznam všech akcí zaměstnanců. Tento seznam není k dispozici ve výchozím nastavení. Chcete-li povolit tuto funkci, na stránce **Sdílené parametry lidských zdrojů** na kartě **Akce zaměstnanců** nastavte možnost **Povolit akce pracovníka** na **Ano**.
 
-Další informace o akcích pracovníků najdete na stránce (Odkaz na stránku Akce pracovníků).
-
 ## <a name="position-changes-tab"></a>Karta Změny pozice
 
 Karta **Změny pozice** poskytuje seznam všech akcí zaměstnanců týkajících se pozice. Tento seznam není k dispozici ve výchozím nastavení. Chcete-li povolit tuto funkci, na stránce **Sdílené parametry lidských zdrojů** na kartě **Akce zaměstnanců** nastavte možnost **Povolit akce pozice** na **Ano**.
-
-Další informace o akcích pracovníků najdete na stránce (Odkaz na stránku Akce pracovníků).
 
 ## <a name="open-positions-tab"></a>Karta Otevřené pozice
 
@@ -151,11 +150,11 @@ Karta **Otevřené pozice** obsahuje seznam všech otevřených pozic. Aby se po
 
 Karta **Platnost záznamů vyprší** obsahuje seznam všech položek, jejichž platnost vypršela nebo vyprší pro pracovníky ve společnosti, ke které je uživatel přihlášen. V seznamu se zobrazují následující položky:
 
-- Certifikáty
-- Identifikace
-- Zkušební doba
-- Prověřování
-- Testy
+- **Certifikáty**
+- **Identifikace**
+- **Zkušební doba**
+- **Prověřování**
+- **Testy**
 
 Chcete-li určit, zda seznam zobrazuje záznamy, jejichž platnost vypršela nebo vyprší, na stránce **Parametry lidských zdrojů** na kartě **Všeobecné** definujte časový rámec pro **Záznamy, jejichž platnost končí** nebo **Záznamy, jejichž platnost skončila**. Data na kartě **Záznamy, jejichž platnost končí** může být zobrazena pro konkrétní počet dní. Chcete-li například zobrazit seznam záznamů, jejichž platnost vyprší za následujících 14 dní, nastavte pole **Počet dní** na **14**.
 

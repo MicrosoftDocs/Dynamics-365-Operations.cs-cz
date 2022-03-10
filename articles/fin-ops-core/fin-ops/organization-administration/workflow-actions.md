@@ -14,22 +14,25 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747170"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070926"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Akce v procesech schválení workflow
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu.
 
 Workflow může zahrnovat několik skupin osob: původce, zmocněnci pro úkol, pracovníci s rozhodovací pravomocí a schvalovatelé. Například v následujícím workflowu k vyúčtování výdajů je Stanislav původcem, členové fronty jsou zmocněnci pro úkol, Jan je pracovníkem s rozhodovací pravomocí a František, Šárka a Anna jsou schvalovateli.
 
-[![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Workflow\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Následující části vysvětlují akce workflowu, které může provést každá skupina.
 

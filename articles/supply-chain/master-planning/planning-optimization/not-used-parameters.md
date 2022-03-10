@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 61cdbe3d966d06193b1dc5c145233e53be3946ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571058"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087492"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
@@ -54,25 +54,13 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
   - **Produkce** – Čekající podpora *Plánování*.
   - Pole v části **Projekt** – čekající podpora *Plánování*.
 
-- Karta **Standardní aktualizace**:
-
-  - **Aktualizovat označení** – Čekající podpora *Potvrzení*.
-  - **Pokud dojde k chybě, zastavit potvrzování** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle dodavatele** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle skupiny kupujícího** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle nákupní smlouvy** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle období** – Čekající podpora *Potvrzování*.
-  - **Vyhledat nákupní smlouvu** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle priority plánování** – Čekající podpora *Potvrzování*.
-  - **Seskupit podle období** – Čekající podpora *Potvrzování*.
-
 ## <a name="coverage-groups-page"></a>Stránka skupin disponibility
 
 Optimalizace plánování nepoužívá následující parametry nebo možnosti na stránce **Skupiny disponibility**:
 
 - Pevná záložka **Obecné**:
 
-  - **Pozitivní dny** – Čekající podpora *Pozitivní dny*.
+  - **Kladné dny** – Hodnota *Kladné dny* se nepoužívá. V Optimalizací plánování jsou kladné dny považovány za nekonečné.
   - **Spotřebovat zásob na skladě** – Čekající podpora *Spotřeba zásob na skladě*.
   - **Použijte zadaný kusovník nebo verzi vzorce** – Čekající podpora *Verze receptury s vedlejším/souběžným produktem*.
   - **Použijte zadanou verzi trasy** – Čekající podpora *Poptávka se specifickými požadavky na kusovník nebo trasu*.
@@ -172,6 +160,10 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
   - **Přidat vypočítané zpoždění k datu požadavku** (v části **Plánované výrobní zakázky**) – čekající podpora *Vypočítané zpoždění*.
   - **Přidat vypočítané zpoždění k datu požadavku** (v části **Plánovaný převod**) – čekající podpora *Vypočítané zpoždění*.
   - **Přidat vypočítané zpoždění k datu požadavku** (v části **Plánovaný kanban**) – čekající podpora *Vypočítané zpoždění*.
+
+- Záložka **Zpráva akce**:
+
+  - **Aktualizovat datum odložení jako datum požadavku** - Tento parametr již není součástí Optimalizace plánování.
 
 - Pevná záložka **Pořadí**:
 

@@ -1,7 +1,7 @@
 ---
 title: Instalace a připojení mobilní aplikace Warehouse Management
 description: Toto téma vysvětluje, jak nainstalovat aplikaci Warehouse Management Mobile App z vašich mobilních zařízení a nakonfigurovat ji tak, aby se připojovala k vašemu prostředí Microsoft Dynamics 365 Supply Chain Management.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908945"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103406"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalace a připojení mobilní aplikace Warehouse Management
 
@@ -39,12 +39,9 @@ Warehouse Management Mobile App je k dispozici pro operační systémy Windows i
 - Windows 10 (Universal Windows Platform \[UWP\]) říjen 2018 aktualizace 1809 (sestavení 10.0.17763) nebo novější
 - Android 4.4 nebo novější
 
-## <a name="turn-on-the-feature"></a>Zapnutí funkce
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Zapnutí nebo vypnutí funkce mobilní aplikace Warehouse Management v Supply Chain Management
 
-Než můžete použít aplikaci, musíte ve svém systému zapnout související funkci. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, pokud je třeba. Funkce je zde uvedena následujícím způsobem:
-
-- **Modul:** *Řízení skladu*
-- **Název funkce:** *Uživatelská nastavení, ikony a názvy kroků pro novou aplikaci skladu*
+Chcete-li používat mobilní aplikaci Warehouse Management, musí být ve vašem systému zapnutá funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Uživatelská nastavení, ikony a názvy kroků pro novou skladovou aplikaci* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Získání mobilní aplikace pro správu skladu
 
@@ -78,28 +75,28 @@ Pokud chcete povolit interakci aplikace Warehouse Management Mobile App s konkr
 1. Zadejte jméno a heslo uživatele, kteří mají přístup k předplatnému Azure.
 1. Na portálu Azure v levém navigačním podokně vyberte **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Ujistěte se, že pracujete s instancí Azure AD, kterou používá Supply Chain Management.
 1. V seznamu **Spravovat** zvolte **Registrace aplikací**.
 
-    ![Registrace aplikací](media/app-connect-azure-register.png "Registrace aplikací")
+    ![Registrace aplikací.](media/app-connect-azure-register.png "Registrace aplikací")
 
 1. Na panelu nástrojů vyberte **Nová registrace** a otevřete průvodce **Zaregistrovat aplikaci**.
 1. Zadejte název aplikace, vyberte možnost **Pouze účty v tomto organizačním adresáři** a poté zvolte **Registrovat**.
 
-    ![Průvodce registrací aplikace](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
+    ![Průvodce registrací aplikace.](media/app-connect-azure-register-wizard.png "Průvodce registrací aplikace")
 
 1. Otevře se vaše nová registrace aplikace. Poznamenejte si hodnotu v poli **ID aplikace (klienta)**, protože ji budete potřebovat později. Na toto ID se budeme dále v tomto tématu odkazovat jako na *ID klienta*.
 
-    ![ID aplikace (klienta)](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
+    ![ID aplikace (klienta).](media/app-connect-azure-app-id.png "ID aplikace (klienta)")
 
 1. V seznamu **Spravovat** zvolte **Certifikát a tajné klíče**. Poté vyberte jedno z následujících tlačítek v závislosti na tom, jak chcete nakonfigurovat aplikaci pro ověřování. (Pro více informací viz [Ověření pomocí certifikátu nebo tajného klíče klienta](#authenticate) dále v tomto tématu.)
 
     - **Odeslat certifikát** – Odešlete certifikát, který chcete použít jako tajný klíč. Tento přístup doporučujeme, protože je bezpečnější a lze jej také zcela automatizovat. Pokud provozujete Warehouse Management mobile app na zařízeních Windows, poznamenejte si hodnota **Kryptografický otisk**, která se zobrazí po odeslání certifikátu. Tuto hodnotu budete potřebovat při konfiguraci certifikátu na zařízeních Windows.
     - **Nový tajný klíč klienta** – Vytvořte klíč zadáním popisu klíče a jeho délky trvání do části **Hesla** a poté vyberte **Přidat**. Vytvořte kopii klíče a bezpečně ji uložte.
 
-    ![Certifikát a tajné klíče](media/app-connect-azure-authentication.png "Certifikát a tajné klíče")
+    ![Certifikát a tajné klíče.](media/app-connect-azure-authentication.png "Certifikát a tajné klíče")
 
 Další informace o nastavení aplikací webových služeb v Azure AD naleznete v následujících zdrojích:
 
@@ -109,7 +106,7 @@ Další informace o nastavení aplikací webových služeb v Azure AD naleznete
     - [Rychlý start: registrace aplikace pomocí platformy identity Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Postup: Použití portálu k vytvoření aplikace Azure AD a hlavní služby, které mají přístup ke zdrojům](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
 
 Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD, postupujte takto.
 
@@ -117,17 +114,24 @@ Chcete-li povolit Supply Chain Management pro použití vaší aplikace Azure AD
 
     1. V aplikaci Supply Chain Management přejděte na **Správa systému \> Uživatelé \> Uživatelé**.
     1. Vytvořte uživatele.
-    1. Přiřaďte uživatele skladového mobilního zařízení.
+    1. Přiřaďte uživateli roli *Uživatel skladového mobilního zařízení*.
 
-    ![Přiřazení uživatele skladového mobilního zařízení](media/app-connect-app-users.png "Přiřazení uživatele skladového mobilního zařízení")
+    ![Přiřaďte uživatele skladového mobilního zařízení.](media/app-connect-app-users.png "Přiřazení uživatele skladového mobilního zařízení")
 
 1. Přidružte aplikaci Azure AD k uživateli Warehouse Management mobile app:
 
     1. Přejděte na **Správa systému \> Nastavení \> Aplikace Azure Active Directory**.
-    1. Vytvořte řádek.
-    1. Zadejte ID klienta, které jste si poznamenali v předchozí části, pojmenujte ho a vyberte právě vytvořeného uživatele. Doporučujeme označit všechna vaše zařízení. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management.
+    1. V podokně Akce vyberte možnost **Nový** a vytvořte řádek.
+    1. V poli **ID klienta** zadejte ID klienta, které jste si poznamenali v předchozí části.
+    1. Do pole **Název** zadejte název.
+    1. V poli **ID uživatele** vyberte ID uživatele, kterého jste právě vytvořili.
 
-    ![Aplikace Azure Active Directory](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
+    ![Aplikace Azure Active Directory.](media/app-connect-aad-apps.png "Aplikace služby Azure Active Directory")
+
+> [!TIP]
+> Jedním ze způsobů, jak tato nastavení použít, je vytvořit ID klienta v Azure pro každé vaše fyzické zařízení a poté každé ID klienta přidat na stránku **Aplikace Azure Active Directory**. Pokud zařízení ztratíte, můžete z této stránky snadno odebrat přístup k aplikaci Supply Chain Management odstraněním ID klienta. (Tento přístup funguje, protože přihlašovací údaje pro připojení, které jsou uloženy na každém zařízení, také určují ID klienta, jak je popsáno dále v tomto tématu.)
+>
+> Kromě toho je výchozí jazyk, formát čísla a nastavení časového pásma pro každé ID klienta určeno předvolbami nastavenými pro hodnotu **ID uživatele**, která je zde mapována. Proto můžete tyto předvolby použít k vytvoření výchozího nastavení pro každé zařízení nebo kolekci zařízení na základě ID klienta. Tato výchozí nastavení však budou přepsána, pokud jsou také definována pro *uživatelský účet aplikace skladu* který pracovník používá k přihlášení do zařízení. (Další informace naleznete v tématu [Nastavení uživatelských účtů mobilních zařízení](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Ověření pomocí certifikátu nebo tajného klíče klienta
 
@@ -136,6 +140,10 @@ Ověřování pomocí Azure AD poskytuje bezpečný způsob připojení mobilní
 Certifikáty mohou být použity jako tajné klíče k prokázání identity aplikace, když je požadován token. Veřejná část certifikátu je nahrána do registrace aplikace na portálu Azure, zatímco úplný certifikát musí být nasazen na každém zařízení, na kterém je Warehouse Management mobile app nainstalovaná. Vaše organizace odpovídá za správu certifikátu z hlediska rotace atd. Můžete použít certifikáty s vlastním podpisem, ale vždy byste měli používat neexportovatelné certifikáty.
 
 Certifikát musíte zpřístupnit lokálně na každém zařízení, na kterém spouštíte Warehouse Management mobile app. Informace o tom, jak spravovat certifikáty pro zařízení řízená aplikací Intune, pokud používáte Intune, naleznete v části [Použití certifikátů pro ověření v Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě
+
+Pokud plánujete provozovat mobilní aplikaci Warehouse Management v kombinaci s jednotkou škálování cloudu a hraniční sítě, je potřeba provést několik dalších kroků. Pokyny naleznete v části [Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurace aplikace importem nastavení připojení
 
@@ -150,7 +158,7 @@ Nastavení připojení můžete importovat ze souboru nebo z QR kódu. Pro oba 
 | ConnectionName | Zadejte název nastavení připojení. Maximální délka je 20 znaků. Protože je tato hodnota jedinečným identifikátorem nastavení připojení, ujistěte se, že je v seznamu jedinečná. Pokud v zařízení již existuje připojení se stejným názvem, bude toto nastavení přepsáno z importovaného souboru. |
 | ActiveDirectoryClientAppId | Určete ID klienta, které jste si poznamenali při nastavování Azure AD v části [Vytvoření aplikaci webové služby v Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Zadejte kořenovou adresu URL aplikace Supply Chain Management. |
-| ActiveDirectoryTenant | Určete klienta Azure AD, kterého používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Určete název domény Azure AD, kterou používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-domain-name>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. Další informace o tom, jak najít název domény Azure AD najdete v části [Vyhledání důležitých ID pro uživatele](/partner-center/find-ids-and-domain-names). |
 | Společnost | Zadejte právnickou osobu v aplikaci Supply Chain Management, ke které se má aplikace připojovat. |
 | Typ připojení | (Volitelné) Určete, zda by nastavení připojení mělo používat certifikát nebo tajný klíč klienta pro připojení k prostředí. Platné hodnoty jsou *"certificate"* a *"clientsecret"*. Výchozí hodnota je *"certificate"*.<p>**Poznámka:** Tajné klíče klienta nelze importovat.</p> |
 | IsEditable | (Volitelné) Určete, zda by měl mít uživatel aplikace možnost upravit nastavení připojení. Platné hodnoty jsou *"true"* a *"false"*. Výchozí hodnota je *"true"*. |
@@ -213,30 +221,30 @@ Chcete-li importovat nastavení připojení ze souboru nebo z QR kódu, postupu
 
 1. Spusťte na svém mobilním zařízení mobilní aplikaci Warehouse Management mobile app. Při prvním spuštění aplikace se zobrazí uvítací zpráva. Vyberte **Vybrat připojení**.
 
-    ![Uvítací zpráva](media/app-configure-welcome-screen.png "Uvítací zpráva")
+    ![Uvítací zpráva.](media/app-configure-welcome-screen.png "Uvítací zpráva")
 
 1. Pokud importujete nastavení připojení ze souboru, aplikace již mohla soubor najít, pokud byl při uložení použit výchozí název a výchozí umístění. V takovém případě přeskočte na krok 4. Jinak vyberte **Nastavení připojení** a poté pokračujte krokem 3.
 
-    ![Nastavení připojení](media/app-configure-set-up-connection.png "Nastavení připojení")
+    ![Nastavení připojení.](media/app-configure-set-up-connection.png "Nastavení připojení")
 
 1. V dialogovém okně **Nastavení připojení** vyberte **Přidat ze souboru** nebo **Přidat z QR kódu**, podle toho, jak chcete importovat nastavení:
 
     - Pokud importujete nastavení připojení ze souboru, vyberte **Přidat ze souboru**, přejděte na soubor v místním zařízení a vyberte jej. Pokud vyberete vlastní umístění, aplikace ho uloží a při příštím použití ho automaticky použije.
     - Pokud importujete nastavení připojení skenováním QR kódu, vyberte **Přidat z QR kódu**. Aplikace vás vyzve k povolení pro použití fotoaparátu zařízení. Po udělení povolení se fotoaparát spustí, takže ho můžete použít ke skenování. V závislosti na kvalitě fotoaparátu zařízení a složitosti QR kódu může být obtížné získat správný sken. V takovém případě zkuste snížit složitost QR kódu generováním pouze jednoho připojení na QR kód. (V současné době můžete ke skenování QR kódu použít pouze fotoaparát zařízení.)
 
-    ![Nabídka nastavení připojení](media/app-configure-connection-setup-flyout.png "Nabídka nastavení připojení")
+    ![Nabídka nastavení připojení.](media/app-configure-connection-setup-flyout.png "Nabídka nastavení připojení")
 
 1. Po úspěšném načtení nastavení připojení se zobrazí vybrané připojení.
 
-    ![Nastavení připojení načteno](media/app-configure-select-connection.png "Nastavení připojení načteno")
+    ![Nastavení připojení načteno.](media/app-configure-select-connection.png "Nastavení připojení načteno")
 
 1. Pokud používáte Android zařízení a k ověření certifikát, zařízení vás vyzve k výběru certifikátu.
 
-    ![Výzva k výběru certifikátu na zařízení Android](media/app-configure-select-certificate.png "Výzva k výběru certifikátu na zařízení Android")
+    ![Výzva k výběru certifikátu na zařízení Android.](media/app-configure-select-certificate.png "Výzva k výběru certifikátu na zařízení Android")
 
 1. Aplikace se připojí k serveru Supply Chain Management a zobrazí přihlašovací stránku.
 
-    ![Přihlašovací stránka](media/app-configure-sign-in-page.png "Přihlašovací stránka")
+    ![Přihlašovací stránka.](media/app-configure-sign-in-page.png "Přihlašovací stránka")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Ruční konfigurace aplikace
 
@@ -246,15 +254,15 @@ Pokud nemáte soubor nebo QR kód, můžete aplikaci na zařízení nakonfigurov
 1. Pokud je aplikace spuštěna v **demo režimu**, vyberte **Nastavení připojení**. Pokud se při spuštění aplikace zobrazí stránka **Přihlásit**, vyberte **Změnit připojení**.
 1. Vyberte **Nastavit připojení**.
 
-    ![Nastavení připojení](media/app-configure-set-up-connection.png "Nastavení připojení")
+    ![Nastavení připojení.](media/app-configure-set-up-connection.png "Nastavení připojení")
 
 1. Vyberte **Zadat ručně**.
 
-    ![Nabídka nastavení připojení](media/app-configure-connection-setup-flyout.png "Nabídka nastavení připojení")
+    ![Nabídka nastavení připojení.](media/app-configure-connection-setup-flyout.png "Nabídka nastavení připojení")
 
     Zobrazí se stránka **Nové připojení** a ukazuje nastavení, která jsou vyžadována pro ruční zadání podrobností o připojení.
 
-    ![Pole pro ruční připojení](media/app-configure-input-manually.png "Pole pro ruční připojení")
+    ![Pole pro ruční připojení.](media/app-configure-input-manually.png "Pole pro ruční připojení")
 
 1. Zadejte následující informace:
 
@@ -268,7 +276,7 @@ Pokud nemáte soubor nebo QR kód, můžete aplikaci na zařízení nakonfigurov
         > [!IMPORTANT]
         > Neukončujte tuto hodnotu lomítkem (/).
 
-    - **Klient Active Directory** – Zadejte klienta Azure AD, kterého používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Tenant Active Directory** – Zadejte název domény Azure AD, kterou používáte se serverem Supply Chain Management. Tato hodnota má tvar `https://login.windows.net/<your-Azure-AD-domain-name>`. Zde je příklad: `https://login.windows.net/contosooperations.onmicrosoft.com`. Další informace o tom, jak najít název domény Azure AD najdete v části [Vyhledání důležitých ID pro uživatele](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Neukončujte tuto hodnotu lomítkem (/).
@@ -295,5 +303,10 @@ Ztraceným nebo narušeným zařízením je nutné odebrat přístup k aplikaci
 1. Na panelu nástrojů vyberte **Odstranit**.
 1. V zobrazené zprávě s potvrzením vyberte **Ano**.
 
+## <a name="additional-resources"></a>Další prostředky
+
+- [Uživatelská nastavení mobilního zařízení](mobile-device-user-settings.md)
+- [Přiřaďte ikony kroků a názvy pro mobilní aplikaci Warehouse Management](step-icons-titles.md)
+- [Konfigurace mobilní aplikace Warehouse Management pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

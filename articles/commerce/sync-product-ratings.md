@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354606"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967943"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizace hodnocení produktů v Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak synchronizovat hodnocení produktu v Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Chcete-li využívat hodnocení produktů v omnikanálech, jako je například na pokladním místě (POS) a v kontaktních střediscích, musí být hodnocení produktů ze služby hodnocení a recenzí importována do databáze velkoobchodní sítě. Pokud jsou hodnocení produktů k dispozici v omnikanálech, mohou zákazníkům pomoci při jejich interakci s prodejcem.
 
@@ -132,6 +130,16 @@ Následující obrázek znázorňuje příklad hodnocení produktů v kanálech 
 [Správa hodnocení a recenzí](manage-reviews.md)
 
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
+
+[Synchronizace hodnocení produktů](sync-product-ratings.md)
+
+[Povolit ruční publikování hodnocení a recenzí moderátorem](manual-publish-rating-reviews.md)
+
+[Import a export hodnocení a recenzí](import-export-reviews.md)
+
+[Konfigurace ověřování mezi službami](service-to-service-auth.md)
+
+[Nejčastější dotazy k hodnocení a recenzím](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

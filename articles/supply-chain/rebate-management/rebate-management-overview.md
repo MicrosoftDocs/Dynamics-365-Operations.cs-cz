@@ -3,9 +3,8 @@ title: Přehled modulu správy rabatu
 description: Toto téma poskytuje přehled modulu správy rabatů pro Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 ms.date: 02/19/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -13,18 +12,17 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 826cee7b1e30020aec99f6148dd9ab16f126c417
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 75311e137df522c476b938f660b8305004396137
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839118"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985489"
 ---
 # <a name="rebate-management-module-overview"></a>Přehled modulu správy rabatu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Můžete použít modul **Správa rabatů** k vytváření smluv, nabídek nebo dohod mezi vaším podnikem a jeho zákazníky nebo dodavateli, takže můžete vypočítat rabaty, odpočty a autorské poplatky. Správa rabatu sleduje a udržuje transakce rabatu a odpočtu na centrálním místě, kde je uživatelé mohou efektivně vytvářet, kontrolovat a zpracovávat.
 
@@ -72,7 +70,7 @@ Rabaty lze konfigurovat na základě mnoha různých parametrů. Mohou být nap�
 
 Výsledky výpočtu rabatu lze snížit také o jiné rabaty, v závislosti na tom, zda je rabat nastaven tak, aby se počítal na základě čisté částky.
 
-Na straně dodavatele mohou rabaty vypočítat cenu na základě pravidla FIFO, nejnovější nákupní ceny, průměrné nákupní ceny nebo prodejní ceny.
+Na straně dodavatele mohou rabaty, které jsou založené na prodejních objednávkách, vypočítat cenu na základě pravidla FIFO, nejnovější nákupní ceny, průměrné nákupní ceny nebo prodejní ceny.
 
 ## <a name="rebate-target-transactions"></a>Cílové transakce rabatu
 
@@ -86,15 +84,15 @@ Výstupy položek vytvářejí bezplatnou prodejní objednávku položky pro rab
 
 Kombinace přidružených nabídek, četnost výpočtů, základ výpočtu a vybraná metoda výpočtu určuje přesnost výpočtů rabatů. K časovému rozlišení zaúčtovaných a nárokovaných hodnot lze použít dodávky rabatů.
 
-Dodávky lze spravovat denně nebo měsíčně. Funkce však může přidělit či vyplatit rabat, nebo obdržet jeho platbu v libovolné definované frekvenci. Uživatelé mohou kdykoli během vyplacení snadno upravit plán nebo částky plateb.
+Zřizování lze spravovat denně, týdně, měsíčně nebo podle vlastního období. Funkce však může alokovat nebo vyplatit slevu nebo obdržet její platbu v jakékoli definované frekvenci, která je stejně dlouhá nebo delší než frekvence poskytování. Odpis používá stejnou frekvenci jako rabat. Uživatelé mohou kdykoli během vyplacení snadno upravit plán nebo částky plateb.
 
-Uživatelé již nemusí řešit nabídky nebo dodávky ve dvou krocích. Dodávky a odpisy se zaúčtují přímo do hlavní knihy. Navíc lze automaticky vytvářet dobropisy. Existuje tedy úplná integrace se závazky a pohledávkami. Během zpracování výpočty zohledňují slevy na vyrovnání, zaplacené faktury, obchodní slevy a stávající dobropisy, aby bylo zajištěno přesné vypočítání částek a hodnot.
+Uživatelé již nemusí řešit nabídky nebo dodávky ve dvou krocích. Dodávky a odpisy se zaúčtují přímo do hlavní knihy. Navíc lze automaticky vytvářet dobropisy. Existuje tedy úplná integrace se závazky a pohledávkami. Během zpracování výpočty mohou zohlednit slevy na vyrovnání, zaplacené faktury, obchodní slevy a stávající dobropisy, aby bylo zajištěno přesné vypočítání částek a hodnot.
 
-Když se vypočítají rabaty, proces vytvoří transakce, které lze zkontrolovat, než dojde k zaúčtování. Poté lze vytvořit deník, dobropis nebo debetní transakci. Samostatný proces zaúčtuje transakce rabatů a odpočtů. Pro zajištění souladu, účinnosti a transparentnosti lze získat výkazy a výpisy transakcí.
+Když se vypočítají rabaty, proces vytvoří transakce, které lze zkontrolovat, než dojde k zaúčtování. Samostatný proces zaúčtuje transakce správy rabatů. Deník, dobropis nebo debetní transakci lze poté vytvořit během zaúčtování do navrhovaných transakcí. Pro zajištění souladu, účinnosti a transparentnosti lze získat výkazy a výpisy transakcí.
 
 ## <a name="guaranteed-royalty-payments"></a>Zaručené platby autorských poplatků
 
-Ve správě rabatů umožňuje automatické generování plateb rychlé a snadné vypořádání autorských poplatků, i když platí garantovaná minima. 
+Ve správě rabatů umožňuje automatické generování plateb rychlé a snadné vypořádání autorských poplatků, i když platí garantovaná minima.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maximální útrata a rabaty
 

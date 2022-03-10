@@ -1,9 +1,8 @@
 ---
 title: Klávesové zkratky
-description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci v aplikacích Finance and Operations.
+description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci ve finančních a provozních aplikacích.
 author: jasongre
-manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a08e01c17ec3c1e47e9e58f2fbccf2159d34559d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566345"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119545"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
 
-Následující klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data v aplikacích Finance and Operations.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Klávesové zkratky vám mohou pomoci rychle a efektivně zadávat data ve finančních a provozních aplikacích. 
 
 > [!NOTE]
 > Klávesové zkratky, jež jsou zde popsány, se vztahují na rozvržení klávesnice pro Spojené státy. Klávesy na klávesnicích s jiným rozvržením nemusí přesně odpovídat klávesám klávesnice pro USA.
@@ -35,11 +37,11 @@ Některé zkratky na této stránce představují *klávesové akordy*, což zna
 
 ## <a name="finding-a-shortcut"></a>Nalezení klávesových zkratek
 
-Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné klávesové zkratky přímo z uživatelského rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte.
+Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatelském rozhraní. Stačí kliknout pravým tlačítkem na ovládací prvek a zvolit **Zobrazit klávesové zkratky**. Otevře se dialogové okno zobrazující klávesové zkratky, které lze použít podle toho, kde na stránce se nalézáte. Případně můžete toto dialogové okno otevřít stisknutím Alt+Shift+K (a stisknutím Alt+Shift+K podruhé zobrazíte všechny aktuálně dostupné zkratky pro stránku).    
 
 ## <a name="action-shortcuts"></a>Zkratky akcí
 
-| Akce                                      | Stisknout                            |
+| Akce                                      | Stiskněte tlačítko .                            |
 |-------------------------------------------------|----------------------------------|
 | Otevření hledání akce                              | Ctrl+’ nebo Alt+Q                  |
 | Přesunutí do standardního podokna akcí                | Alt+M,A nebo Ctrl+F6               |
@@ -128,8 +130,10 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 
 ## <a name="grid-shortcuts"></a>Zkratky mřížky
 
-| Akce                                                                                                             | Stisknout                           |
+| Akce                                                                                                             | Stiskněte tlačítko .                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertikální posouvání                                                                                                     | Kolečko myši                     |
+| Horizontální posouvání                                                                                                   | Shift + kolečko myši             |
 | Přechod na další nebo předchozí sloupec                                                                                       | Tab / Shift+Tab                 |
 | Přechod na další nebo předchozí řádek                                                                                          | Šipka nahoru nebo šipka dolů           |
 | Přesunout na další/předchozí řádek bez výběru<blockquote>[!NOTE] Tato klávesová zkratka platí pouze pro vícenásobné výběry scénáře.</blockquote> | Ctrl+šipka nahoru nebo Ctrl+šipka dolů |
@@ -141,22 +145,24 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přejít k prvnímu záznamu                                                                                               | CTRL+HOME                       |
 | Přejít k poslednímu záznamu                                                                                                | CTRL+END                        |
 | Vybrat nebo vymazat všechny řádky                                                                                               | Ctrl+Shift+M                    |
-| Přejít k prvnímu označenému řádku                                                                                           | Alt+Shift+M, F                    |
-| Přejít na další označený řádek                                                                                            | Alt+Shift+M, L                    |
-| Přejít na předchozí označený řádek                                                                                        | Alt+Shift+M, P                    |
-| Přesunuto k poslednímu označenému řádku                                                                                           | Alt+Shift+M, N                    |
+| Přejít k prvnímu označenému řádku                                                                                           | Alt+Shift+M, F                  |
+| Přejít na další označený řádek                                                                                            | Alt+Shift+M, L                  |
+| Přejít na předchozí označený řádek                                                                                        | Alt+Shift+M, P                  |
+| Přesunuto k poslednímu označenému řádku                                                                                           | Alt+Shift+M, N                  |
 | Spuštění výchozí akce v mřížce<blockquote>[!NOTE] Tato zkratka je povolena při zaměření na buňku obsahující hypertextový odkaz a všechny buňky v tomto sloupci mají hypertextové odkazy.</blockquote> | Zadat                           |
 | Přepnout výběr mezi vybraným řádkem a řádkem záhlaví                                                               | Alt+Shift+H                     |
 | Zvětšit/zmenšit aktuální sloupec (s výběrem v řádku záhlaví)                                                  | Šipka doprava / šipka doleva        |
-| Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Zadat                           |
+| Přesunutí aktuálního sloupce do další/předchozí pozice (se zaměřením v řádku záhlaví)                                   | Ctrl+Shift+Šipka vpravo / Ctrl+Shift+Šipka vlevo |
+| Otevřít filtrování mřížky pro aktuální sloupec (s výběrem v řádku záhlaví)                                              | Enter                           |
+| Změnit velikost aktuálního sloupce tak, aby odpovídal obsahu (se zaměřením v řádku záhlaví)                                           | A (nebo dvakrát klikněte na úchyt pro nastavení velikosti sloupce) |
 
 ## <a name="input-control-shortcuts"></a>Zkratky pro ovládání vstupu
 
-| Akce                                                                   | Stisknout                         |
+| Akce                                                                   | Stiskněte tlačítko .                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otevření hypertextového odkazu                                                           | Ctrl+Enter                    |
-| Zadání data relace do pole kalendářních dat                                       | D                         |
-| Zadání aktuálního data do pole kalendářních dat                                       | bil.                         |
+| Zadání data relace do pole kalendářních dat                                       | D                             |
+| Zadání aktuálního data do pole kalendářních dat                                       | bil.                             |
 | Otevření vyhledávání, pole se seznamem, výběru data a dialogového okna                         | ALT+Šipka dolů                |
 | Zavření vyhledávání, pole se seznamem, výběru data a dialogového okna                        | Esc                           |
 | Změna zaměření na vyhledání (pokud je vyhledávání již otevřeno)                   | ALT+Šipka dolů                |
@@ -203,8 +209,8 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Použití nástroje Přesun (v režimu přizpůsobení)                                                                       | M                                   |
 | Vyberte aktuální ovládací prvek, který chcete přesunout (při použití nástroje Přesun a bez prozatímního výběru ovládacího prvku k přesunu)  | Mezerník nebo Enter                      |
 | Vymazat ovládací prvek k přesunutí (při použití nástroje Přesun)                                                                   | Esc                                 |
-| Přesunout na další pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                          | Tabulátor nebo šipka doprava nebo šipka dolů    |
-| Přesunout na předchozí pozici pro vybraný ovládací prvek (při použití nástroje Přesun)                                      | Shift+Tabulátor nebo šipka doleva nebo šipka nahoru |
+| Přesunout vybraný ovládací prvek na další pozici (při použití nástroje Přesun)                                              | Tabulátor nebo šipka doprava nebo šipka dolů    |
+| Přesunout vybraný ovládací prvek na předchozí pozici (při použití nástroje Přesun)                                          | Shift+Tabulátor nebo šipka doleva nebo šipka nahoru |
 | Použití nástroje Skrytí (v režimu přizpůsobení)                                                                       | H.                                   |
 | Přepnout mezi zobrazením a skrytím aktuálního ovládacího prvku (při použití nástroje Skrytí)                                     | Mezerník nebo Enter                      |
 | Použití nástroje Přeskočení (v režimu přizpůsobení)                                                                       | K                                   |
@@ -250,10 +256,14 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Rozbalení/sbalení animovaného automaticky otevíraného okna (při přehrávání Průvodce záznamem úloh)              | Alt+R,C                    |
 | Zobrazení více / méně informací v animovaném automaticky otevíraném okně (při přehrávání Průvodce záznamem úloh) | Alt+R,M                    |
 
+## <a name="focus-management"></a>Správa fokusu 
+Správa zaměření popisuje, jak je v aplikaci zpracováno fokus uživatele. Finanční a provozní aplikace mají specializovaná chování fokusu zaměřená na optimalizaci produktivity uživatelů, zejména pro scénáře zadávání dat. Chování fokusu zahrnuje následující:  
+
+-  Po načtení stránky bude aktivní první upravitelný vstupní ovládací prvek na stránce a může okamžitě přijmout uživatelský vstup. Pokud na stránce není žádný upravitelný vstupní ovládací prvek, je počáteční fokus předán na první vstupní ovládací prvek na stránce, po kterém následuje první ovládací prvek, který lze na stránce zaměřit.   
+-  Obvykle, když je vybráno tlačítko, akce se zpracuje a fokus se může vrátit na stránku. Když k tomu dojde, fokus má tendenci se vrátit na ovládací prvek, který byl vybrán. Toto platí ve finančních a provozních aplikacích **s výjimkou případu**, kdy je tlačítko umístěno v podokně akcí nebo na panelu nástrojů. V těchto případech se po dokončení akce fokus vrátí na poslední ovládací prvek *mimo* podokno akcí (nebo panelu nástrojů), který byl aktivní před výběrem tlačítka.
+
 ## <a name="additional-resources"></a>Další prostředky
 
 [Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

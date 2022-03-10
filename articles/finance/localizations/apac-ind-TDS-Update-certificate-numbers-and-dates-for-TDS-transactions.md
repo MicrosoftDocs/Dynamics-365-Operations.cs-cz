@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: da835306e523129fb667153ff6a5fbe574f2769649639595c90af603f1258e4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757992"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Aktualizace čísel a dat certifikátu pro transakce TDS
 
@@ -33,7 +33,7 @@ Podle těchto pokynů aktualizujete čísla a data certifikátu pro transakci TD
 
 1. Přejděte do nabídky **Daň \> Přiznání \> Srážková daň \> Aktualizovat certifikát**.
 
-    [![Stránka Aktualizovat certifikát](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Stránka Aktualizovat certifikát.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. Na stránce **Aktualizovat certifikát** v části **Vybrat** v poli **Typ daně** vyberte **TDS**.
 3. V poli **Číslo certifikátu** vyberte číslo certifikátu TDS zákazníka nebo dodavatele.
@@ -60,4 +60,4 @@ Podle těchto pokynů aktualizujete čísla a data certifikátu pro transakci TD
 8. Vyberte **Aktualizovat** k aktualizaci polí **Číslo certifikátu** a **Datum certifikátu** pro transakce TDS ve spodní mřížce.
 10. Přejděte na **Daň \> Nepřímé daně \> Srážková daň \> Vratný certifikát** a vyberte **Poptávka** pro zobrazení aktualizovaných řádků transakcí, které mají na certifikátu nová čísla certifikátů na stránce **Transakce s certifikáty**.
 
-    [![Stránka Transakce s certifikátem](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Stránka Transakce s certifikátem.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

@@ -1,7 +1,7 @@
 ---
 title: Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
 description: Tohle téma popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
-author: ShylaThompson
+author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357995"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565248"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
 

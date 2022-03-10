@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771000"
 ---
 # <a name="enrich-a-category-landing-page"></a>Obohacení cílové stránky kategorie
 
@@ -31,7 +31,7 @@ V tomto tématu je popsáno obohacování stránek kategorií v řešení Dynami
 
 Namísto použití výchozí stránky kategorie však můžete použít „obohacenou“ cílovou stránku kategorie s dalším obsahem a specifickými prvky. Typické obohacení může zahrnovat přidání marketingového obchodního obsahu na stránku kategorie, které se týká. Tento obsah může zahrnovat umístění produktu, který je součástí více kategorií, pro účely křížového prodeje, redakční seznamy, obrázky, videa a další text. Výchozí stránku kategorie můžete buď upravit, nebo definovat jinou stránku kategorie pro určitou kategorii.
 
-![Obohacená cílová stránka kategorie](./media/CategoryLandingPages.png)
+![Obohacená cílová stránka kategorie.](./media/CategoryLandingPages.png)
 
 V tvůrci webů Commerce se na stránce **Produkt** nachází seznam kategorií z daného kanálu, které jsou přiřazeny k danému webu. Je- li pro stránku kategorie vybrán stav **Obohaceno**, tato stránka kategorie byla obohacena. V opačném případě se pro kategorii použije výchozí stránka a obsah kategorie. Chcete-li zobrazit náhled obohacených i neobohacených stránek kategorie, vyberte název kategorie.
 

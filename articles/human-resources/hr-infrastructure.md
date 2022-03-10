@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018341"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024560"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Sloučení infrastruktury Dynamics 365 Human Resources – aktualizace verze 10.0.25
 
@@ -28,7 +28,7 @@ Verze 10.0.25 přináší první vlnu schopností při sloučení infrastruktury
 
 Sloučení poskytne uživatelům Human Resources konzistenci následujícími způsoby:
 
-- [Správa prostředí a integrace jsou konzistentní mezi aplikacemi Human Resources a Finance a Operace.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps)
+- [Správa prostředí a integrace jsou konzistentní mezi finančními a provozními aplikacemi a aplikacemi Human Resources.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps)
 
     - Spravujte prostředí v Microsoft Dynamics Lifecycle Services, Hledání problémů a Regression Suite Automation Tool.
     - Existuje jednotná kódová základna, kde jsou nové funkce pro Human Resources uvolněny jako součást pravidelného procesu aktualizace jedné verze.
@@ -53,7 +53,7 @@ Sloučení poskytne uživatelům Human Resources konzistenci následujícími zp
     | Tisknout kontroly výkonu | Recenze výkonu si můžete vytisknout ve formátu PDF. | Obecně dostupné | 
     | Vlastní odkazy v **samoobsluze pro manažery** | Můžete vytvořit vlastní odkazy, které se zobrazí v části **Související odkazy** **samoobsluhy pro manažery**. | Obecně dostupné | 
     | Zobrazit kompenzaci mezi společnostmi | Uživatelé si mohou prohlížet kompenzační plány v **samoobsluze pro manažery** napříč všemi právnickými osobami, aniž by bylo nutné měnit společnosti. | Obecně dostupné | 
-    | Konfigurace úrovní kompenzací podle práce\*&dagger; | Práce nyní podporují více úrovní kompenzací. | Obecně dostupné | 
+    | Konfigurace úrovní kompenzací podle práce\*&dagger; | Práce nyní podporují více úrovní kompenzací. | Náhled | 
     | Správa úkolů\* | Můžete vytvořit kontrolní seznamy a úkoly pro proces onboardingu, zrušení zprovoznění a přechodu. | Náhled | 
     | Zjednodušené zadávání zaměstnance | Tato funkce poskytuje aktualizované uživatelské prostředí na stávající stránce **Pracovník**. | Náhled | 
     | Vylepšení uživatelského prostředí Human Resources | Viz tabulka v další části.  | Náhled | 

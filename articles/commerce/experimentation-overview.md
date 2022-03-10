@@ -2,28 +2,24 @@
 title: Experimentování v Dynamics 365 Commerce
 description: Experimentování umožňuje vytváření, úpravy a správu rozložení stránky a úpravy obsahu v konfigurátoru webů. U stránek a entit elektronického obchodování na stránce je povolena úplná podpora experimentování.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4410922"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986534"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experimentování v Dynamics 365 Commerce
 Pomocí experimentování v Dynamics 365 Commerce můžete ověřovat hypotézy o efektivnosti vašich stránek elektronického obchodování a rozhodovat se na základě dat. Commerce podporuje testování A/B na stránkách, v modulech a fragmentech a umožňuje vám měřit dopad navrhovaných změn na váš web.
@@ -42,7 +38,7 @@ V konfigurátoru webů Commerce můžete vytvářet, upravovat a spravovat zprac
 ## <a name="experimentation-lifecycle"></a>Životní cyklus experimentování
 Nastavení experimentu, vytváření variant a spuštění experimentu je iterativní proces. Na schématu níže je znázorněn životní cyklus experimentování v Commerce a ve službě třetí strany. 
 
-[ ![Životní cyklus experimentování](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Životní cyklus experimentování.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Další informace o jednotlivých krocích v procesu experimentování najdete v následujících tématech.
 - [Identifikace hypotézy a určení metriky experimentu](experimentation-identify.md)
@@ -57,3 +53,6 @@ Další informace o jednotlivých krocích v procesu experimentování najdete v
 
 ## <a name="next-step"></a>Další krok
 [Identifikace hypotézy a určení metriky úspěšnosti experimentu](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

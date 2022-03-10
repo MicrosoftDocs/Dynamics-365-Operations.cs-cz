@@ -2,30 +2,33 @@
 title: Přehled systému workflow
 description: Toto téma popisuje systém workflowu.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796989"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067926"
 ---
 # <a name="workflow-system-overview"></a>Přehled systému workflow
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma popisuje systém workflowu.
 
@@ -41,7 +44,7 @@ Workflow je systém, který je spuštěn na aplikačním objektovém serveru (AO
 
 Workflow představuje obchodní proces. Definuje tok dokumentu nebo jeho procházení systémem zobrazením, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu. Následující obrázek znázorňuje příklad workflowu pro sestavy výdajů.
 
-![Workflow s prvky, které jsou přiřazeny uživatelům](./media/workflow_user.gif)
+![Workflow s prvky, které jsou přiřazeny uživatelům.](./media/workflow_user.gif)
 
 Abychom lépe pochopili tento workflow, předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 7 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky, které mu Stanislav předal. Poté musí být vyúčtování výdajů schváleno Františkem a Šárkou. Nyní předpokládejme, že Stanislav odešle vyúčtování výdajů s částkou 11 000 USD. V tomto scénáři musí Ivan zkontrolovat účtenky a František, Šárka a Anna musí toto vyúčtování výdajů schválit.
 
@@ -71,3 +74,6 @@ Používání systému workflowu v organizaci má několik výhod:
 + [Konfigurace paralelních větví ve workflow](configure-parallel-branch-workflow.md)
 + [Konfigurace workflow položky řádku](configure-line-item-workflow.md)
 + [Workflow – Často kladené otázky](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,24 +3,26 @@ title: Přehled faktur dodavatele
 description: V tomto tématu jsou obecné informace o fakturách dodavatele.
 author: abruer
 ms.date: 06/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 13971
+ms.custom:
+- "13971"
+- intro-internal
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12b85103ff136799e5d676f72186e007161e9a9
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186341"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985330"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -70,12 +72,9 @@ Vaše organizace může využívat workflowy ke správě procesu kontroly faktur
 Následuje několik způsobů, jak lze zabránit odeslání faktury do workflowu.
 
 - **Celková částka faktury a zaregistrovaná celková částka se neshodují.** Osoba, která předložila fakturu, obdrží upozornění, že součty nejsou stejné. Výstraha poskytuje příležitost opravit zůstatky před opětovným odesláním faktury do workflow. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když liší celková částka faktury a registrovaná celková částka** na stránce **Správa funkcí**. 
-
 - **Faktura obsahuje nepřidělené náklady.** Osoba, která odeslala fakturu, obdrží výstrahu, že faktura obsahuje nepřidělené částky, takže může opravit fakturu před opětovným odesláním do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když existují nepřidělené částky na faktuře dodavatele** na stránce **Správa funkcí**.
-
 - **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží zprávu s oznámením, že byla nalezena faktura s duplicitním číslem. Duplicitní číslo lze opravit před opětovným odesláním faktury do pracovního postupu. Tato výstraha se zobrazí, pokud je parametr **Zkontrolovat použité číslo faktury** v závazcích nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.
-
-- **Faktura obsahuje řádek, kde je množství faktury menší než shodné množství příjmu produktu.** Osoba, která předloží fakturu nebo se pokusí zaúčtovat, obdrží zprávu, že množství není stejné. Zpráva poskytuje příležitost opravit hodnoty před opětovným odesláním faktury do workflow. Tato funkce je k dispozici, pokud je parametr **Blokovat účtování a odesílání faktur dodavatele do pracovního postupu** na stránce **Správa funkcí** zapnuty a parametr **Blokovat zveřejňování a odesílání do pracovního postupu** na stránce **Parametry závazků** je zapnutý.  
+- **Faktura obsahuje řádek, kde je množství faktury menší než shodné množství příjmu produktu.** Osoba, která předloží fakturu nebo se pokusí zaúčtovat, obdrží zprávu, že množství není stejné. Zpráva poskytuje příležitost opravit hodnoty před opětovným odesláním faktury do workflow. Tato funkce je k dispozici, pokud je parametr **Blokovat účtování a odesílání faktur dodavatele do pracovního postupu** na stránce **Správa funkcí** zapnuty a parametr **Blokovat zveřejňování a odesílání do pracovního postupu** na stránce **Parametry závazků** je zapnutý.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Spárování faktur dodavatele s příjemkami produktu
 
@@ -120,9 +119,32 @@ Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude mís
 Na stránce **Historie workflowu** můžete resetovat stav workflow na **Koncept**. Tuto stránku můžete otevřít **Faktury dodavatele** nebo z navigace **Obecné > Dotazy > Workflow**. Chcete-li obnovit stav workflow na **Koncept**, vyberte možnost **Obnovit**. Stav workflow můžete také resetovat na koncept výběrem akce **Obnovit** na stránce **Faktura dodavatele** nebo **Čekající faktury dodavatele**. Po resetování stavu workflow na **Koncept** bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Zobrazení celkové fakturované částky na stránce Čekající faktury dodavatele
+
 Celkovou fakturovanou částku můžete zobrazit na stránce **Čekající faktury dodavatele** povolením parametru **Zobrazit součet faktur na seznamu čekajících faktur dodavatele vyřízení** na stránce **Parametry závazků**. 
 
+## <a name="vendor-open-transactions-report"></a>Sestava otevřených transakcí dodavatelů
 
+Sestava **Otevřené transakce dodavatele** poskytuje podrobné informace o otevřených transakcích pro každého dodavatele k datu, které zadáte. Tato sestava se často používá během auditního postupu pro ověření zůstatků mezi transakcemi v knize dodavatelů a transakcemi na účtu hlavní knihy.
+
+Pro každou transakci obsahuje sestava následující údaje:
+
+- Číslo faktury
+- Datum transakce
+- Číslo dokladu
+- Částka transakce v měně transakce a účetní měně
+- Kreditní zůstatek v měně transakce a účetní měně
+- Debetní zůstatek v měně transakce a účetní měně
+- Částka mezisoučtu v zúčtovací měně
+- Datum splatnosti platby
+
+### <a name="filter-the-data-on-the-report"></a>Filtrování dat v sestavě
+
+Při generování sestavy **Otevřené transakce dodavatele** jsou k dispozici následující výchozí parametry. Slouží k filtrování dat, která se zobrazí v sestavě.
+
+- **Vyloučit budoucí vypořádání** – Toto zaškrtávací políčko zaškrtněte, chcete-li vyloučit transakce, které jsou vypořádány po datu zadaném do pole **Otevřené transakce za**.
+- **Otevřené transakce za** – Zadejte datum pro zahrnutí transakcí, které jsou k tomuto datu otevřené. Pokud nezadáte datum, toto pole je nastaveno na maximální datum. (Maximální datum je nejzazší datum, které systém přijme, 31. prosince 2154.) Ve výchozím nastavení bude toto pole při příštím spuštění sestavy nastaveno jako poslední datum, které do něj bylo zadáno.
+
+Můžete použít filtry pod polem **Záznam k zahrnutí** pro další omezení transakčních dat, která jsou zahrnuta ve zprávě.
 
 ## <a name="additional-resources"></a>Další prostředky
 

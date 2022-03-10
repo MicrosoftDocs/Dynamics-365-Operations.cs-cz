@@ -3,7 +3,7 @@ title: Přehled stránek košíku a pokladny
 description: Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792236"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982961"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Přehled stránek košíku a pokladny
 
@@ -37,7 +37,7 @@ Stránka košíku slouží jako nákupní sáček a zahrnuje všechny položky, 
 
 Následující ilustrace znázorňuje příklad stránky košíku, která byla sestavena pomocí knihovny modulů a tématu "Fabrikam".
 
-![Příklad stránky košíku](./media/cart2.PNG)
+![Příklad stránky košíku.](./media/cart2.PNG)
 
 HLavní část stránky košíku zobrazuje všechny položky, které odběratel přidal do nákupního košíku. Přednastaveny všechny použitelné slevy. Tyto slevy zahrnují složité slevy. Příklady zahrnují "nákup 3 položky a získej 10% slevu" nebo "kup láhev a batoh a získej slevu 10%." V modulu souhrn objednávek je zobrazena částka, která je splatná po použití slev, expedice, daní atd. Existuje také modul propagačního kódu, který umožňuje odběrateli použití nebo odebrání propagačních kódů.
 
@@ -53,7 +53,7 @@ Na stránce pokladny jsou umístěny informace vyžadované k zadání objedná
 
 Následující ilustrace znázorňuje příklad stránky pokladny, která byla sestavena pomocí knihovny modulů.
 
-![Příklad stránky pokladny](./media/Checkout.PNG)
+![Příklad stránky pokladny.](./media/Checkout.PNG)
 
 Hlavní část stránky pokladny, v níž jsou shromážděny všechny informace o objednávce. Tyto informace zahrnují dodací adresu, možnosti dodání a informace o platbě. Pokladna má tok krok za krokem, protože informace musí být zadány v určitém pořadí, které má být zpracováno. Před vypočítáním nákladů na dodání je například nutné zadat dodací adresu a autorizovat platbu.
 

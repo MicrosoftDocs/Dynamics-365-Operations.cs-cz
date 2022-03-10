@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358475"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345221"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Připojení daňových kódů TDS k daňovým skupinám TDS a definování vzorce pro výpočet TDS
 
@@ -55,7 +55,7 @@ Pomocí těchto kroků můžete nastavit daňovou skupinu TDS, připojit k ní d
     > [!NOTE]
     > Pole **Zdanitelný základ** nelze nastavit na **Bez hrubé částky** pro daňový zákon TDS, který má ID priority **1**.
 
-12. Výpočet TDS je založen na vzorci, který je definován v poli **Výpočetní výraz** pro každý daňový kód, který je připojen k daňové skupině TDS. Vyberte tlačítko plus (**+**), znaménko minus (**-**), znak násobení (**\**_) nebo znak dělení (_*/**) pro zadání výrazu výpočtu pro vybraný daňový kód TDS v poli **Výpočetní výraz**.
+12. Výpočet TDS je založen na vzorci, který je definován v poli **Výpočetní výraz** pro každý daňový kód, který je připojen k daňové skupině TDS. Vyberte tlačítko plus (+), znaménko minus (-), znak násobení (\*) nebo znak dělení (/) pro zadání výrazu výpočtu pro vybraný daňový kód TDS v poli **Výpočetní výraz**.
 
     > [!NOTE]
     > Pro daňový kód TDS, který má ID priority **1**, nelze definovat žádný výpočetní výraz.

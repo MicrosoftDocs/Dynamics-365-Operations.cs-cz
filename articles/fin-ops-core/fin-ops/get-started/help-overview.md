@@ -1,41 +1,46 @@
 ---
-title: Systém nápovědy
-description: Toto téma poskytuje přehled o systému nápovědy pro aplikace Finance and Operations.
+title: Systém nápovědy (obsahuje video)
+description: Toto téma poskytuje přehled o systému nápovědy pro finanční a provozní aplikace.
 author: edupont04
-ms.date: 04/14/2021
-ms.topic: article
+ms.date: 07/20/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 16381
+ms.custom:
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923439"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070494"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Uživatelé následujících aplikací mohou přistupovat ke kontextové nápovědě a jinému obsahu, který je založen na stejném systému nápovědy:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
 
 Ve všech těchto aplikacích získáte přístup k nápovědě pro konkrétní produkt z podokna **Nápověda**.
 
-![Podokno Nápověda](./media/help-pane-ops-help.png)
+![Podokno Nápověda.](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
 
@@ -48,9 +53,20 @@ Obsah na docs.microsoft.com najdete pomocí libovolného vyhledávače. Pro dosa
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Získejte informace o změnách prostřednictvím kanálu RSS
 
-Chcete-li se přihlásit k odběru kanálu RSS (Really Simple Syndication) všech aktualizací obsahu na docs.microsoft.com, použijte následující odkaz:
+Chcete-li se přihlásit k odběru kanálu RSS všech aktualizací obsahu na docs.microsoft.com napříč finančními a provozními aplikacemi, použijte následující odkaz:
 
-[Kanál RSS](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+[Kanál RSS](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+
+> [!NOTE]
+> Zdroj RSS vrací seznam 100 naposledy aktualizovaných témat. Seznam není roztříděn podle data.  
+
+Alternativně se můžete přihlásit k odběru kanálu RSS pomocí aplikace:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Dodavatelský řetězec](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Správa talentů](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
 
 ### <a name="leave-us-feedback"></a>Zanechte nám svůj názor
 
@@ -60,7 +76,7 @@ Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní �
 
 2. Začněte psát komentáře a potom vyberte **Odeslat zpětnou vazbu**.
 
-    ![Publikovat komentář](./media/feedback.png)
+    ![Publikovat komentář.](./media/feedback.png)
 
 > [!NOTE]
 > Pokud chcete odeslat zpětnou vazbu k dokumentaci, musíte se přihlásit pomocí účtu GitHub. Další informace najdete v části [Nastavení a správa vašeho profilu GitHub](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -84,11 +100,11 @@ Průvodce úkolem je kontrolovaný, řízený a interaktivní způsob, který v�
 
 Společnost Microsoft vydala knihovny průvodců záznamem úloh pro verze produktů prostřednictvím vydání aplikace Dynamics 365 for Finance and Operations z prosince 2017. Část [Přístup k průvodcům úkolem z podokna Nápověda](#accessing-task-guides-from-the-help-pane) tohoto tématu popisuje, jak najít správné průvodce záznamem úloh pro daný produkt.
 
-![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
+![Zobrazení pro čtení Průvodce záznamem úloh.](./media/task-guide-ops.png)
 
 Chcete-li zažít řízenou interaktivní zkušenost, zvolte možnost **Spustit průvodce úloh** v dolní části podokna **Nápověda**. Černý ukazatel ukazuje, kam přejít nejdříve. Postupujte podle pokynů v uživatelském rozhraní a zadejte data podle pokynů.
 
-![Pokyny ke kroku Průvodce záznamem úloh](./media/task-guide-step-1-ops.png)
+![Pokyny ke kroku Průvodce záznamem úloh.](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Data, která zadáte při přehrávání průvodce záznamem úloh, jsou skutečná. Pokud jste ve výrobním prostředí, budou zadána data, která skutečně používáte.
@@ -101,7 +117,7 @@ Některá pole mají popisy polí, které uživatelům pomáhají pokračovat na
 
 Chcete-li získat přístup k obsahu nápovědy, vyberte tlačítko **Nápověda** (**?**) a poté vyberte **Nápověda**. Případně stiskněte **Ctrl+Shift+?**. V obou případech se zobrazí podokno **Nápověda**. Z podokna **Nápověda** můžete přistupovat ke koncepčním tématům nebo průvodcům záznamů úloh, které jsou relevantní pro oblast produktu, ve kterém se právě nacházíte.
 
-![Podokno Nápověda](./media/help-pane-ops-help.png)
+![Podokno Nápověda.](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Přístup k tématům nápovědy z podokna Nápověda
 
@@ -118,13 +134,13 @@ Před zobrazením průvodců záznamem úloh v podokně **Nápověda** musí sp
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -132,7 +148,7 @@ On the **System parameters** page, follow these steps:
 
 Poté, co dokončí správce systému tyto kroky, můžete otevřít podokno **Nápověda** a zvolit kartu **Průvodci záznamem úloh**. Zobrazí se vám nyní průvodci záznamem úloh vztahují ke stránce, na které se momentálně nacházíte. Pokud nebyly nalezeny žádné průvodce úkolem, můžete zadat klíčová slova pro upřesnění hledání. Po zvolení průvodce záznamem úloh v podokně **Nápověda** se v podokně **Nápověda** zobrazí podrobné pokyny a můžete také přehrát průvodce úkolem.
 
-![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
+![Zobrazení pro čtení Průvodce záznamem úloh.](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Kde se nacházejí přeložení průvodci záznamem úloh pro knihovny Microsoft?
 

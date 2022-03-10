@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
-ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187264"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007600"
 ---
 # <a name="engineering-change-management-faq"></a>Správa technických změn – časté otázky
 
@@ -63,6 +63,11 @@ Následující tabulky ukazují pole, která se zkopírují během těchto proce
 | **Varianty produktu** | Všechna pole v části **Výchozí varianta produktu** | Stejná pole, která se kopírují pro technickou společnost |
 
 Kromě polí, která jsou uvedena v předchozí tabulce, se z šablony vydané položky zkopírují všechna výchozí nastavení objednávek, a to jak při vytvoření produktu v v technické společnosti, tak při jeho vydání provozní společnosti. (Chcete-li zobrazit výchozí nastavení objednávky pro šablonu vydané položky, otevřete příslušnou stránku **Údaje o vydaném produktu** a poté na panelu akcí na kartě **Správa zásob** vyberte **Výchozí nastavení objednávky**.)
+
+> [!NOTE]
+>
+> - Jednotka je výchozí ze šablony.
+> - Pro maloobchodníky používající funkci Dynamics 365 Commerce při přiřazování kategorie maloobchodu k produktu použije kategorie maloobchodu výchozí hodnoty pro mnoho polí pro úroveň uvolněného produktu. Tyto výchozí hodnoty přepisují výchozí hodnoty, které již mohly být nastaveny šablonou nebo zkopírovány z technických produktů.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Mám vytvořit samostatnou právnickou osobu pro technické produkty, nebo použít existující právnickou osobu?
 

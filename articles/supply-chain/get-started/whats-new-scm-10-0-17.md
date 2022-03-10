@@ -1,12 +1,10 @@
 ---
-title: Náhled Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.17.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571805"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474595"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Náhled Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.17 (duben 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.17. Tato verze má číslo sestavení 10.0.761 a je k dispozici následujícím způsobem:
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.17. Tato verze má číslo sestavení 10.0.761 a je k dispozici následujícím způsobem:
 
 - **Náhled vydané verze:** únor 2021
 - **Obecně dostupné vydání (automatická aktualizace):** březen 2021
@@ -36,69 +33,71 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-Tato verze obsahuje následující funkce. Některé z uvedených funkcí jsou stále ve verzi Preview, zatímco jiné již mohou být obecně dostupné. Postupujte podle odkazů v [plánu vydání](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
+Tato verze obsahuje následující funkce.  Postupujte podle odkazů v [plánu vydání](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) pro zobrazení oficiálních dat vydání pro každou funkci.
 
 Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 ### <a name="asset-management"></a>Správa majetku
 
-- [Použití pravidel pro seskupování pracovních příkazů při provádění plánu údržby](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Další informace naleznete v tématu [Vytvoření pracovních příkazů](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
+- [Použití pravidel pro seskupování pracovních příkazů při provádění plánu údržby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Další informace naleznete v tématu [Vytvoření pracovních příkazů](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
-- [Fakturace zákazníků za údržbářské práce](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Další informace viz [Účet za údržbu na majetku ve vlastnictví zákazníka](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+- [Fakturace zákazníků za údržbářské práce](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Další informace viz [Účet za údržbu na majetku ve vlastnictví zákazníka](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
-- [Plánovaná údržba na základě kumulovaných hodnot počitadel majetku](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Další informace naleznete v tématu [Plány údržby](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+- [Plánovaná údržba na základě kumulovaných hodnot počitadel majetku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Další informace naleznete v tématu [Plány údržby](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
 ### <a name="inventory-and-logistics"></a>Zásoby a logistika
 
-- [Integrační rámec pro zařízení pro manipulaci s materiálem pro automatizované skladové procesy (dříve MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Další informace viz [Rozhraní pro manipulaci s materiálem (MHAX)](../warehousing/mhax.md).
+- [Integrační rámec pro zařízení pro manipulaci s materiálem pro automatizované skladové procesy (dříve MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Další informace viz [Rozhraní pro manipulaci s materiálem (MHAX)](../warehousing/mhax.md).
 
-- [Náklady za doručení](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Další informace viz [Modul Náklady za doručení](../landed-cost/landed-cost-overview.md).
+- [Náklady za doručení](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Další informace viz [Modul Náklady za doručení](../landed-cost/landed-cost-overview.md).
 
-- [Dimenze balení a uskladnění](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Další informace viz [Nastavení různých rozměrů pro balení a skladování](../warehousing/packing-vs-storage-dimensions.md).
+- [Dimenze balení a uskladnění](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Další informace viz [Nastavení různých rozměrů pro balení a skladování](../warehousing/packing-vs-storage-dimensions.md).
 
-- [Uložená zobrazení pro inventář a logistiku](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
+- [Paralelní přidělení vlny](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - Další informace získáte v části [Přidělení vlny](../warehousing/wave-allocation-method.md).
 
-- [Plánování vytvoření skladové práce](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Další informace viz [Plánování vytváření práce během vlny](../warehousing/configure-wave-schedule-work-creation.md).
+- [Uložená zobrazení pro inventář a logistiku](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
 
-- [Nastavení výchozích finančních dimenzí pro poukázky na přecenění standardních nákladů na zásoby](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Další informace viz [Správa aktualizací standardních nákladů](../cost-management/manage-standard-cost-updates.md).
+- [Plánování vytvoření skladové práce](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Další informace viz [Plánování vytváření práce během vlny](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Expedice malých balíků (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Další informace viz [Expedice malých balíků](../warehousing/small-parcel-shipping.md).
+- [Nastavení výchozích finančních dimenzí pro poukázky na přecenění standardních nákladů na zásoby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Další informace viz [Správa aktualizací standardních nákladů](../cost-management/manage-standard-cost-updates.md).
 
-- [Provádění skladů s jednotkami škálování v cloudu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Další informace získáte v části [Pracovní zatížení řízení skladu pro cloudové a okrajové jednotky škálování](../cloud-edge/cloud-edge-workload-warehousing.md) a [Skladové objednávky pro cloudové a okrajové jednotky škálování](../cloud-edge/cloud-edge-warehouse-order.md).
+- [Expedice malých balíků (SPS)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Další informace viz [Expedice malých balíků](../warehousing/small-parcel-shipping.md).
 
-- [Mobilní aplikace pro správu skladu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Další informace viz [Instalace a připojení aplikace Warehouse Management](../warehousing/install-configure-warehouse-management-app.md) a [Uživatelské nastavení mobilního zařízení](../warehousing/mobile-device-user-settings.md).
+- [Provádění skladů s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Další informace získáte v části [Pracovní zatížení řízení skladu pro cloudové a okrajové jednotky škálování](../cloud-edge/cloud-edge-workload-warehousing.md) a [Skladové objednávky pro cloudové a okrajové jednotky škálování](../cloud-edge/cloud-edge-warehouse-order.md).
+
+- [Mobilní aplikace pro správu skladu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Další informace viz [Instalace a připojení aplikace Warehouse Management](../warehousing/install-configure-warehouse-management-app.md) a [Uživatelské nastavení mobilního zařízení](../warehousing/mobile-device-user-settings.md).
+
+- Oznámení o provedení vlny<br> - Další informace viz [Oznámení o provedení vlny](../warehousing/wave-execution-notifications.md)
 
 ### <a name="manufacturing"></a>Výroba
 
-- [Funkce správy majetku v rozhraní pro spuštění výrobního provozu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Další informace viz [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md).
+- [Funkce správy majetku v rozhraní pro spuštění výrobního provozu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-configure.md).
 
-- [Přepsání výchozího principu rezervace pro materiály ve výrobě](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Další informace získáte v části [Přepis výchozího principu rezervace pro materiály ve výrobě](../production-control/override-default-reservation-principle.md).
+- [Provádění výroby s jednotkami škálování v cloudu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Další informace naleznete v části [Pracovní zatížení provádění výroby a jednotky okrajového škálování](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
-- [Uložená zobrazení pro řízení výroby](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
+- [Přepsání výchozího principu rezervace pro materiály ve výrobě](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Další informace získáte v části [Přepis výchozího principu rezervace pro materiály ve výrobě](../production-control/override-default-reservation-principle.md).
 
-- [Provádění výroby s jednotkami škálování v cloudu](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Další informace naleznete v části [Pracovní zatížení provádění výroby a jednotky okrajového škálování](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- [Uložená zobrazení pro řízení výroby](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
+
+- Sjednocená číselná řady pro ID úloh<br> - Další informace viz [Sjednocená číselná řada pro ID úloh](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Plánování
 
-- [Podpora ochranné lhůty pro optimalizaci plánování](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Další informace viz [Ochranná lhůta pokrytí](../master-planning/planning-optimization/coverage-time-fence.md).
+- [Podpora ochranné lhůty pro optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Další informace viz [Ochranná lhůta pokrytí](../master-planning/planning-optimization/coverage-time-fence.md).
 
-- [Podpora podmodelu Forecast pro optimalizaci plánování](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Další informace naleznete v části [Hlavní plánování s prognózami poptávky](../master-planning/planning-optimization/demand-forecast.md).
+- [Podpora podmodelu Forecast pro optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Další informace naleznete v části [Hlavní plánování s prognózami poptávky](../master-planning/planning-optimization/demand-forecast.md).
 
-- [Podpora nákupních žádanek pro optimalizaci plánování](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Další informace naleznete v tématu [Nákupní žádanky](../master-planning/planning-optimization/purchase-requisitions.md)
+- [Podpora nákupních žádanek pro optimalizaci plánování](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Další informace naleznete v tématu [Nákupní žádanky](../master-planning/planning-optimization/purchase-requisitions.md)
 
-- [Uložená zobrazení pro plánované objednávky](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
+- [Uložená zobrazení pro plánované objednávky](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Další informace viz [Standardní uložená zobrazení pro Supply Chain Management](saved-views-scm.md).
 
 ### <a name="product-information-management"></a>Řízení informací o produktech
 
-- [Povolit správu změn u stávajících produktů](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Další informace naleznete v tématu [Povolení změnového řízení u existujících produktů](../engineering-change-management/change-management-existing-products.md).
+- [Povolit správu změn u stávajících produktů](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Další informace naleznete v tématu [Povolení změnového řízení u existujících produktů](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
 Nedávno jsme přidali nebo významně aktualizovali následující témata nápovědy. Nemusí nutně souviset s novými funkcemi přidanými pro toto vydání, jak je uvedeno v předchozí části, ale mohou vám pomoci lépe využít stávající funkce.
-
-### <a name="cost-management"></a>Správa nákladů
-
-- [Řešení potíží se správou nákladů](../cost-management/troubleshoot-costmanagement.md)
 
 ### <a name="asset-management"></a>Správa majetku
 
@@ -111,8 +110,6 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 - [Částečná cyklická inventura místa](../warehousing/partial-location-cycle-counting.md)
 
 - [Seskupování řádků vyskladnění](../warehousing/pick-line-grouping.md)
-
-- [Řešení potíží se skladovými operacemi](../inventory/troubleshoot-inventory-operations.md)
 
 - [Skladový slotting](../warehousing/warehouse-slotting.md)
 
@@ -144,7 +141,7 @@ Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizac�
 
 Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
 
-Přečtěte si téma [Dynamics 365: plán 1. vlny vydání v r. 2021](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+Přečtěte si téma [Dynamics 365: plán 1. vlny vydání v r. 2021](/dynamics365-release-plan/2021wave1/). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 

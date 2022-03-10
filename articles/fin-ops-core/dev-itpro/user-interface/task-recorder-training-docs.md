@@ -2,38 +2,39 @@
 title: Vytváření dokumentace nebo školení pomocí záznamníku úloh
 description: Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 author: josaw1
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b0a31b709c964bbb896079f2db5aeee3c1f22f2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563123"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070519"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 
 > [!IMPORTANT]
 > Můžete nahrát své vlastní průvodce záznamem úloh pro aplikaci Dynamics 365 Human Resources, ale nebude možné je uložit do knihovny modelování podnikových procesů nebo je otevřít z podokna Nápovědy. Můžete je uložit v místním počítači nebo na umístění v síti a potom je otevřít a přehrát pomocí záznamníku úkolů. 
 
-<a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
--------------------------
+## <a name="learn-about-task-recorder"></a>Informace o Záznamníku úkolů
 
 Záznamník úkolů je nástroj, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní produktu. Při použití Záznamníku úkolů jsou zaznamenány všechny události prováděné v uživatelském rozhraní, které jsou spouštěny na serveru, včetně přidání hodnot, změny nastavení a odebrání dat. Kroky, které zaznamenáte, jsou souhrnně označovány termínem *záznam úkolu*. Záznamy úloh lze používat mnoha způsoby:
 
@@ -64,21 +65,21 @@ Při vytváření nového záznamu úkolů nebo založení záznamu na záznamů
 
 Toto je podokno úprav, které se zobrazí při přidání poznámky během vytváření záznamu. Do pole **Nadpis** zadejte poznámku k nadpisu. 
 
-[![Podokno úprav s poznámkou v záhlaví](./media/screen1.png)](./media/screen1.png) 
+[![Podokno úprav s poznámkou v záhlaví.](./media/screen1.png)](./media/screen1.png) 
 
 Toto je vzhled poznámky k nadpisu v bublině v průvodci záznamem úloh. 
 
-[![Vzhled poznámky nadpisu v Průvodci záznamem úloh](./media/screen2.png)](./media/screen2.png)
+[![Vzhled poznámky nadpisu v Průvodci záznamem úloh.](./media/screen2.png)](./media/screen2.png)
 
 -   **Poznámky:** Poznámka k poznámkám se zobrazí za textem kroku, který Záznamník úkolů automaticky vygeneruje. V průvodci úkolem bude viditelná, pouze pokud uživatel klikne na odkaz **Zobrazit více** v bublině v průvodci úkolem. Použijte tento typ poznámky, chcete-li popsat cokoli, co musí uživatel znát pro dokončení kroku.
 
 Toto je podokno úprav, které se zobrazí při přidání poznámky během vytváření záznamu. Do pole **Poznámky** zadejte poznámku k poznámkám. 
 
-[![Podokno úprav s komentářem v poli Poznámky](./media/screen3.png)](./media/screen3.png) 
+[![Podokno úprav s komentářem v poli Poznámky.](./media/screen3.png)](./media/screen3.png) 
 
 Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 
-[![Vzhled anotace Poznámky v Průvodci záznamem úloh](./media/screen4.png)](./media/screen4.png)
+[![Vzhled anotace Poznámky v Průvodci záznamem úloh.](./media/screen4.png)](./media/screen4.png)
 
 -   **Informační krok**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok.** Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává. V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci, nebo pro účely odkazování na jiné záznamy (však v poznámkách nelze vytvořit hypertextové odkazy).
 
@@ -112,8 +113,7 @@ Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použí
 
 
 
-<a name="additional-resources"></a>Další prostředky
---------
+## <a name="additional-resources"></a>Další prostředky
 
 [Systém nápovědy](../../fin-ops/get-started/help-overview.md)
 

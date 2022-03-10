@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfab08a4190bf51518bd4a9b445b229a5081e87d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 05438b11f446da57016ff66f4deafd0c07fd62f32eba6f10c4b08b3f1de88e6b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739922"
 ---
 # <a name="run-the-periodic-tds-settlement-process"></a>Spuštění periodického procesu vypořádání TDS
 
@@ -31,7 +31,7 @@ Toto téma vysvětluje, jak vypořádat pravidelné daně odečtené u zdroje (T
 
 1. Přejděte do nabídky **Daň \> Přiznání \> Srážková daň \> Platba srážkové daně**.
 
-    [![Dialogové okno Platba srážkové daně](./media/apac-ind-TDS-47.png)](./media/apac-ind-TDS-47.png)
+    [![Dialogové okno Platba srážkové daně.](./media/apac-ind-TDS-47.png)](./media/apac-ind-TDS-47.png)
 
 2. V dialogovém okně **Platba srážkové daně** v poli **Typ daně** vyberte **TDS**.
 3. V poli **Číslo daňového účtu (TAN)** vyberte číslo daňového účtu (TAN), pro které chcete spustit proces vypořádání.

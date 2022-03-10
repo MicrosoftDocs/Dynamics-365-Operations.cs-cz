@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9392245abe5858b03b8324dcb471f5652aed7cd6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5773149760ecb2a26f4916036fe36c9cc04f654039dee4eab9bfac86eb02e1fd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713023"
 ---
 # <a name="calculate-item-forecast"></a>Vypočítat prognózu položky
 
@@ -56,7 +56,7 @@ To je užitečné v případě, že chcete získat přehled o očekávané spot�
 
 8. Chcete-li zobrazit produkt, sklad nebo sledovací dimenze související s položkami, klikněte na tlačítko **Zobrazit dimenze**. Zvolte příslušná zaškrtávací políčka a klikněte na tlačítko **OK**.
 
-![Obrázek č. 1](media/02-capacity-planning.png)
+![Obrázek č. 1.](media/02-capacity-planning.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

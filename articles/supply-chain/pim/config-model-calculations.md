@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-18
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eaf6264f060d33575740ad38e7a65158baba296b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 349fed3ca75b94db2f421a1ff3c3553c96c202c37d59857a3d973f3de8f995ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755244"
 ---
 # <a name="product-configuration-model-calculations"></a>Výpočty modelu konfigurace produktu
 
@@ -70,7 +70,7 @@ Tento příklad používá textový atribut `textFixedList` jako cílový atribu
 
 Následující snímek obrazovky ukazuje, jak by nastavení tohoto atributu mohlo vypadat ve vašem systému.
 
-![Nastavení typu atributu pro příklad 2](media/model-calculations-example2.png "Nastavení typu atributu pro příklad 2")
+![Nastavení typu atributu pro příklad 2.](media/model-calculations-example2.png "Nastavení typu atributu pro příklad 2")
 
 Atribut se používá v následujícím podmíněném příkazu:
 
@@ -92,7 +92,7 @@ Tento příklad používá cílový atribut `textFixedList` z předchozího př�
 
 Následující snímek obrazovky ukazuje, jak by nastavení tohoto atributu mohlo vypadat ve vašem systému.
 
-![Nastavení typu atributu pro příklad 3](media/model-calculations-example3.png "Nastavení typu atributu pro příklad 3")
+![Nastavení typu atributu pro příklad 3.](media/model-calculations-example3.png "Nastavení typu atributu pro příklad 3")
 
 Hodnota pro atribut `textFixedList` se počítá pomocí následujícího podmíněného příkazu:
 

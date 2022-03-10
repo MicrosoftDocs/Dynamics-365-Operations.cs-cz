@@ -2,11 +2,9 @@
 title: Často kladené dotazy k adresářům
 description: Toto téma obsahuje odpovědi na časté dotazy související s adresáři.
 author: msftbrking
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796891"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463608"
 ---
 # <a name="address-books-faq"></a>Často kladené dotazy o adresáři
 
@@ -67,3 +65,13 @@ Můžete zadat záznamy strany buď v globálním adresáři nebo na stránce p�
 ## <a name="can-i-translate-address-information-for-party-records"></a>Mohu převést informace o adrese pro záznamy strany?
 
 Můžete nastavit překlady informací o adrese, aby se tyto údaje zobrazily ve vašem uživatelském jazyce (systémový jazyk) ve vaší aplikaci, ale v jiném jazyce v dokumentech, jako například prodejních objednávkách. Je možné zadat překlady pro názvy zemí nebo oblastí, adresy a pořadí jmen. Například váš systémový jazyk je dánština a vytváříte prodejní objednávku pro odběratele ve Francii. V takovém případě lze zobrazit záznam odběratele v dánštině v programu, ale informace o adrese zobrazit ve francouzštině v tištěné prodejní objednávce. Při nastavování překladů měli byste zadat překlad pro všechny položky v seznamu. Všechny položky, pro které nezadáte překlad, se zobrazí v systémovém jazyce. Například váš systémový jazyk je dánština a odesíláte dokument odběrateli ve Francii. Pokud jste nezadali překlady pro španělštinu (ESP) pro adresní údaje, příslušné informace se zobrazí v dánštině v programu i ve vytištěném dokumentu.
+
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Proč nemohu po importu adres upravit záznamy?
+
+Při importu adres je pole s názvem **IsLocationOwner**. Toto pole udává, zda strana, která je spojena s místem (adresou), je vlastníkem adresy. Pokud je strana vlastníkem adresy, lze adresu upravit při použití strany v globálním adresáři nebo z formuláře hlavního záznamu (například zákazník, prodejce nebo pracovník). Pokud strana není vlastníkem adresy, záznam nelze upravit. 
+
+Při importu adres by mělo pole **IsLocationOwner** být nastaveno na **Ano**, chcete-li adresu upravit pomocí přidružené strany. Pokud je toto pole importováno nesprávně, vlastníka umístění lze aktualizovat v globálním adresáři.
+
+Další informace o tom, jak změnit vlastníka umístění importované adresy, najdete v tématu [Správa vlastníků lokality](./global-address-book-location-owner.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

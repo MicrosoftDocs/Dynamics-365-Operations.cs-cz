@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a15c913c876e961c6824c1e8812ab2be2d6ffa4333cd0d4e6f80cae8bac79394
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746740"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102732"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odložené zpracování ručního pohybu zásob
 
@@ -32,10 +32,10 @@ Zpracování na pozadí je dosaženo použitím [Funkce zpracování událostí 
 
 Chcete-li tuto funkci zpřístupnit, zapněte následující funkce ve [správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Musíte je zapnout v tomto pořadí:
 
-1. Blokování práce pro celou organizaci
-1. Zpracovat události aplikace skladu
-1. Odložené operace Put
-1. Odložené zpracování ruční operace přesunu zásob
+1. *Blokování práce pro celou organizaci*<br>(Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
+1. *Zpracovat události aplikace skladu*<br>(Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta.)
+1. *Odložené operace Put*
+1. *Odložené zpracování ruční operace přesunu zásob*<br>(Od Supply Chain Management verze 10.0.25 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurace zásad zpracování pracovních postupů
 

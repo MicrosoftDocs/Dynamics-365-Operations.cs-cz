@@ -2,36 +2,30 @@
 title: Vytvoření online funkčního profilu
 description: Toto téma popisuje, jak vytvořit nový online funkční profil v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5ecbfcf3fa78ad2909a7cc9988ab1edaf2b98376
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716187"
 ---
 # <a name="create-an-online-functionality-profile"></a>Vytvoření online funkčního profilu
-
 
 [!include [banner](includes/banner.md)]
 
 Toto téma obsahuje přehled nastavení online funkčních profilů pro Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Přehled
 
 Profil online funkcí poskytuje různá nastavení používaná pro online kanály. Každý online kanál musí určovat profil online funkcí.
 
@@ -48,7 +42,7 @@ Následující postup vysvětluje, jak vytvořit online profil funkcí z aplikac
 
 Následující obrázek znázorňuje příklad online funkčního profilu.
   
-![Příklad online funkčního profilu](media/online-functionality-profile.png)
+![Příklad online funkčního profilu.](media/online-functionality-profile.png)
 
 ## <a name="functions"></a>Funkce
 
@@ -67,3 +61,6 @@ Následující obrázek znázorňuje příklad online funkčního profilu.
 [Nastavení maloobchodního kanálu](channel-setup-retail.md)
 
 [Nastavení kanálu kontaktního střediska](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

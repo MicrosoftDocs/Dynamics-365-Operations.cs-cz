@@ -1,25 +1,24 @@
 ---
-title: Přehled výstrah
+title: Přehled výstrah (obsahuje video)
 description: Toto téma obsahuje obecné informace o výstrahách. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: e57b065dc1a2c0db593b38106f4391e281feb1e6
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565031"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984961"
 ---
 # <a name="alerts-overview"></a>Přehled výstrah
 
@@ -78,13 +77,13 @@ Pravidlo výstrahy obsahuje pět komponent:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Video [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) (zobrazeno výše) je zahrnuto v [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
+Video (uvedené výše) [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) je zahrnuto v [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
 
 ### <a name="alert-rule-options"></a>Možnosti pravidla výstrahy
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM)  (zobrazené výše) je zahrnuto do [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM) (zobrazené výše) je zahrnuto do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 
 
