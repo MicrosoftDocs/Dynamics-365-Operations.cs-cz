@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119180"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376175"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednotky škálování v distribuované hybridní topologii
 
@@ -40,7 +40,7 @@ Schopnosti pracovního zatížení jsou vydávány nepřetržitě prostřednictv
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Škálování jednotek a vyhrazená pracovní zatížení
 
-Jednotky škálování rozšiřují vaše centrální prostředí centra Supply Chain Management přidáním vyhrazené kapacity zpracování. Jednotky škálování mohou běžet v cloudu. Alternativně mohou běžet na hraně, onsite ve vašem místním zařízení.
+Jednotky škálování rozšiřují vaše centrální prostředí centra Supply Chain Management přidáním vyhrazené kapacity zpracování. Jednotky škálování mohou běžet v cloudu. Alternativně mohou běžet v [hraniční síti](cloud-edge-edge-scale-units-lbd.md), onsite ve vašem místním zařízení.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 s jednotkami škálování.":::
 
@@ -127,31 +127,25 @@ Když aktivujete prostředí Dynamics 365 na podporu distribuované hybridní to
 
 Data, která jsou přenesena do a uložena v datových centrech v USA, budou odstraněna podle zásad uchovávání dat společnosti Microsoft. Vaše soukromí je pro Microsoft důležité. Chcete-li se dozvědět více, přečtěte si naše [Prohlášení o ochraně osobních údajů](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## <a name="onboarding-in-two-stages"></a>Zprovozňování ve dvou fázích
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Nasazení do distribuované, hybridní topologie pro Supply Chain Management
 
-Proces zprovozňování distribuované hybridní topologie má dvě fáze. Během první fáze musíte ověřit přizpůsobení, abyste se ujistili, že fungují v distribuované topologii, která má jednotky škálování. Sandboxová a provozní prostředí se přesouvají až během druhé fáze.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Vyzkoušení distribuované hybridní topologie
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Fáze 1: Vyhodnoťte přizpůsobení v samostatných vývojových prostředích
+Proces zprovozňování distribuované hybridní topologie má dvě fáze. Během první fáze [vyzkoušejte](cloud-edge-try-out.md) řešení a ověřte svá přizpůsobení, abyste se ujistili, že fungují v distribuované topologii, která zahrnuje jednotky škálování. (K ověření můžete použít stávající vývojová prostředí.) Poté můžete pokračovat do druhé fáze, kde získáte produkční prostředí.
 
-Než začnete zprovozňovat sandbox nebo provozní prostředí, doporučujeme vám prozkoumat jednotky škálování v nastavení vývoje, jako je samostatné prostředí (označované také jako prostředí úrovně 1), abyste mohli ověřovat procesy, přizpůsobení a řešení. Během této fáze budou data a přizpůsobení aplikována na samostatné prostředí. Jedno prostředí převezme roli centra a druhé převezme roli jednotky škálování. Toto nastavení poskytuje nejlepší způsob, jak identifikovat a opravit problémy. K dokončení této fáze lze také použít nejnovější sestavení předčasného přístupu (PEAP).
-
-Pro fázi 1 byste měli použít [nástroje nasazení jednotek škálování pro samostatná vývojová prostředí](https://github.com/microsoft/SCMScaleUnitDevTools). Tyto nástroje umožňují konfigurovat jednotky rozbočovače a nebo dvě oddělená samostatná prostředí. Nástroje jsou poskytovány jako binární verze a ve zdrojovém kódu na GitHubu. Prostudujte si projekt wiki, který obsahuje [Průvodce používáním krok za krokem](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), který popisuje, jak se nástroje používají.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Fáze 2: Získejte doplňky a nasaďte je v sandboxu a provozním prostředí
-
-Chcete-li zprovoznit jedno z vašich sandboxových nebo produkčních prostředí s novou topologií, musíte získat doplňky pro jednu nebo více jednotek škálování cloudu (a v budoucnu pro jednotky škálování hrany). Doplňky přidělí odpovídající sloty pro projekt a prostředí v [LCS](https://lcs.dynamics.com/), aby bylo možné nasadit prostředí jednotek škálování.
-
-> [!NOTE]
-> Doplňky jednotky škálování nejsou spojeny s omezeným počtem uživatelů, ale mohou být použity jakýmkoli uživatelem v existujícím předplatném na základě rolí, které správce přiřadí.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Výběr klienta projektu LCS a podrobný proces nasazení
 
 Jednotky škálování jsou nabízeny ve více skladových jednotkách (SKU) a cenových možnostech. Proto si můžete vybrat možnost, která nejlépe odpovídá vašim plánovaným měsíčním objemům transakcí a výkonovým požadavkům.
+
+> [!TIP]
+> Chcete-li určit velikost, která nejlépe vyhovuje vašim potřebám, spolupracujte se svým implementačním partnerem a společností Microsoft, abyste porozuměli měsíční velikosti transakce, kterou požadujete.
 
 Základní SKU se označuje jako *Základní* a výkonnější SKU se označuje jako *Standard*. Každá SKU je předem načtena s konkrétním počtem měsíčních transakcí. Můžete však zvýšit měsíční rozpočet transakcí přidáním nadbytečných doplňků pro každou SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Doplňky cloudové jednotky škálování.":::
 
-> [!TIP]
-> Chcete-li určit velikost, která nejlépe vyhovuje vašim potřebám, spolupracujte se svým partnerem a společností Microsoft, abyste porozuměli měsíční velikosti transakce, kterou požadujete.
+> [!NOTE]
+> Doplňky škálovací jednotky nejsou spojeny s omezeným počtem uživatelů. Jsou dostupné všem uživatelům ve vašem stávajícím předplatném (za předpokladu, že jim váš administrátor přidělil požadované uživatelské role).
 
 Nákup každého doplňku jednotky škálování vám nejen poskytne měsíční objem transakcí, ale také vás opravní k určitému počtu slotů prostředí v LCS. Za každý doplněk jednotky škálování cloudu máte nárok na jeden nový produkční slot a jeden nový slot sandbox. Během procesu registrace bude přidán nový projekt LCS, který má tyto sloty. Práva na použití pro sloty jsou vázána, takže sloty musí být použity jako jednotky škálování, které mají cloudové centrum.
 
@@ -159,9 +153,6 @@ Doplňky nadlimitního použití vás neopravňují k novým slotům prostředí
 
 Chcete-li získat více prostředí sandbox, můžete si zakoupit další běžné sloty sandbox. Microsoft vám pak může pomoci povolit tyto sloty jako jednotky škálování sandboxu pro hybridní topologii.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Nasazení do distribuované, hybridní topologie pro Supply Chain Management
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Výběr klienta projektu LCS a podrobný proces nasazení
 
 Poté, co dokončíte plánování, jak se připojíte k distribuované hybridní topologii pro řízení Supply Chain Management, použijete [Portál správy jednotky škálování](https://aka.ms/SCMSUM) k zahájení procesu registrace. V portálu vyberte kartu **Klienti Dynamics 365**. Tato karta zobrazuje seznam klientů, kterých je váš účet součástí a toho, kde jste vlastníkem nebo správcem prostředí pro projekt LCS.
 

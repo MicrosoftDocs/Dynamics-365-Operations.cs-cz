@@ -2,7 +2,7 @@
 title: Přehled hledání využívajícího cloud
 description: Toto téma poskytuje přehled o cloudovém vyhledávání v řešení Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/29/2020
+ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983662"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371422"
 ---
 # <a name="cloud-powered-search-overview"></a>Přehled hledání využívajícího cloud
 
@@ -26,13 +26,13 @@ ms.locfileid: "7983662"
 
 Toto téma poskytuje přehled o cloudovém vyhledávání v řešení Microsoft Dynamics 365 Commerce.
 
-Možnost vyhledání produktu pomáhá zajistit, že zákazníci mohou snadno a rychle vyhledávat produkty pomocí procházení kategorií, vyhledávání a filtrování. Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech.
+Možnost vyhledání produktu pomáhá zajistit, že zákazníci mohou snadno a rychle vyhledávat produkty pomocí procházení kategorií, vyhledávání a filtrování. Maloobchodníci považují zjišťování produktů za primární nástroj pro interakci se zákazníky napříč kanály využívajícími Cloud Scale Unit (CSU), jako je elektronický obchod a pokladní místo (POS).
 
-Zákazníci jsou zvyklí na téměř okamžitou odezvu webových vyhledávačů, sofistikovaných webů elektronických obchodů, sociálních aplikací, automatických návrhů, které se zobrazují při zadávání hledaných podmínek, fasetové navigace a zvýrazňování. Pokud zákazníci nenaleznou požadovaný produkt v jednom elektronickém obchodě, bez váhání přejdou do jiného elektronického obchodu.
+Zákazníci jsou zvyklí na téměř okamžitou odezvu webových vyhledávačů, sofistikovaných webů elektronických obchodů, sociálních aplikací, automatických návrhů, které se zobrazují při zadávání hledaných podmínek, fasetové navigace a zvýrazňování. Pokud zákazníci rychle nenaleznou požadovaný produkt v jednom elektronickém obchodě, bez váhání přejdou do jiného elektronického obchodu.
 
-Cloudové vyhledávání produktů v řešení Dynamics 365 Commerce pomáhá maloobchodním prodejcům pokračovat v navyšování počtu udržených zákazníků a míry úspěšnosti pro všechny kanály, tedy kanály elektronického obchodování a kanálů pokladních míst (POS).
+Cloudové vyhledávání produktů v Commerce pomáhá maloobchodním prodejcům pokračovat v navyšování počtu udržených zákazníků a míry úspěšnosti pro všechny obsluhované jednotkou CSU.
 
-Vyhledávání v řešení Dynamics 365 Commerce má vylepšené funkce, které umožňují maloobchodníkům dosáhnout lepšího zjistitelnosti produktu. Tyto možnosti zároveň zajišťují škálovatelnost a výkon, které jsou potřebné pro provoz elektronického obchodu.
+Vyhledávání v Commerce má vylepšené funkce, které umožňují maloobchodníkům dosáhnout lepšího zjistitelnosti produktu. Tyto možnosti zároveň zajišťují škálovatelnost a výkon, které jsou potřebné pro provoz elektronického obchodu.
 
 ## <a name="browse-and-search"></a>Procházení a vyhledávání
 
@@ -54,9 +54,9 @@ Na následujícím obrázku je znázorněn příklad, ve kterém je při hledán
 
 ## <a name="immersive-autosuggest"></a>Moderní automatické návrhy
 
-Aktuální funkce automatických návrhů pouze zobrazují klíčová slova, která spouštějí hledání odpovídajícího klíčového slova. Z důvodu nových vylepšení v Dynamics 365 Commerce mohou zákazníci často vyhledávat odkazy na produkty před tím, než dokončí zadávání.
+Aktuální funkce automatických návrhů zobrazují klíčová slova, která spouštějí hledání odpovídajícího klíčového slova. Z důvodu nových vylepšení v Commerce mohou zákazníci často vyhledávat odkazy na produkty před tím, než dokončí zadávání.
 
-Řešení Dynamics 365 Commerce také podporuje funkce pro shody klíčových slov v různých kategoriích. Tato funkce umožňuje zákazníkům zobrazit velké množství odpovídajících klíčových slov pro různé kategorie a spustit hledání klíčového slova v jiných kategoriích.
+Commerce také podporuje funkce pro shody klíčových slov v různých kategoriích. Tato funkce umožňuje zákazníkům zobrazit velké množství odpovídajících klíčových slov pro různé kategorie a spustit hledání klíčového slova v jiných kategoriích.
 
 Na následujícím obrázku je znázorněn příklad použití moderního automatického návrhu.
 
@@ -64,10 +64,10 @@ Na následujícím obrázku je znázorněn příklad použití moderního automa
 
 ## <a name="sort"></a>Seřadit
 
-Rozšířené třídění v řešení Dynamics 365 Commerce umožňujě zákazníkům třídit, vyhledávat a procházet výsledky vyhledávání a zpřesnit je podle kritérií, jako je cena, název produktu a číslo produktu. Zákazníci mohou také seřadit výsledky podle toho, zda je produkt nový, nejprodávanější nebo naposledy přidaný.
+Rozšířené třídění v Commerce umožňuje zákazníkům třídit, vyhledávat a procházet výsledky vyhledávání a zpřesnit je podle kritérií, jako je cena, název produktu a číslo produktu. Zákazníci mohou také seřadit výsledky podle toho, zda je produkt nový, nejprodávanější nebo naposledy přidaný.
 
->[!NOTE]
->Tyto vyhledávací funkce využívající cloud jsou k dispozici od verze 10.0.8. Ujistěte se, že v části **Parametry velkoobchodu> Konfigurační parametry** je u položky ProductSearch.UseAzureSearch nastavena hodnota „true“. 
+> [!NOTE]
+> Tyto vyhledávací funkce využívající cloud jsou k dispozici od verze 10.0.8. Ujistěte se, že v části **Parametry velkoobchodu> Konfigurační parametry** je u položky „ProductSearch.UseAzureSearch“ nastavena hodnota „true“. 
 ![Konfigurační parametry pro cloudové vyhledávání.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Další prostředky
@@ -77,4 +77,4 @@ Rozšířené třídění v řešení Dynamics 365 Commerce umožňujě zákazn
 [Správa metadat SEO](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

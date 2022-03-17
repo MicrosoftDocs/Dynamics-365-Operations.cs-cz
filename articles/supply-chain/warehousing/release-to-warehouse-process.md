@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428914"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376201"
 ---
 # <a name="release-to-warehouse"></a>Uvolnit do skladu
 
@@ -125,6 +125,7 @@ Pro nastavení dávkové úlohy, která vydává prodejní objednávky, postupuj
     - **Množství k uvolnění** - vyberte, zda má být v dávce uvolněné celé množství nebo jen fyzicky rezervované množství.
     - **Povolit uvolnění částečně uvolněných objednávek** - Určete, zda má být zbývající množství pro částečně uvolněné objednávky uvolněno do skladu.
     - **Ponechat rezervace při selhání vydání** - Určete, zda by množství, která byla automaticky vyhrazena pro prodejní objednávku, zůstala vyhrazena, pokud proces uvolnění do skladu selže.
+    - **Seskupit vydání podle zákazníka** – Tato možnost určuje, zda má systém zpracovávat vydání do skladových operací zvlášť pro každého zákazníka, nebo zda má uvolňovat všechny prodejní objednávky najednou. Když je tato možnost nastavena na *Ano*, systém shromáždí všechny řádky prodejní objednávky pro vybraného zákazníka, uvolní tyto objednávky do skladu a poté zpracuje dalšího zákazníka. Když je tato možnost nastavena na *Ne*, systém uvolní všechny dostupné řádky prodejní objednávky v jednom vydání do operace skladu. Povolení této možnosti může pomoci zvýšit výkon a odolnost procesu uvolnění do skladu. Při použití této možnosti spolu se šablonami vln, které jsou nakonfigurovány na „Zpracování vlny při vydání do skladu“, však musíte být opatrní, protože tato kombinace může generovat mnoho vln pro jednoho zákazníka, každou s prací generovanou pouze pro tohoto zákazníka. Pokud chcete generovat práci, která kombinuje zásilky pro více zákazníků, měli byste buď vypnout možnost *Seskupit vydání podle zákazníka*, nebo nakonfigurovat šablony vln pro použití odloženého zpracování.
     - **Uzamčené zpracování objednávky** - Vyberte, jak má systém zpracovávat prodejní objednávky, které jsou aktuálně zamčené, protože je upravují jiní uživatelé nebo procesy:
 
         - *Počkat, až se odemknou objednávky* - Systém by měl počkat, až se objednávky odemknou, než je uvolní do skladu. V tomto případě může proces uvolnění do skladu trvat déle.

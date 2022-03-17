@@ -2,19 +2,19 @@
 title: Nastavení fiskální integrace pro obchodní kanály
 description: Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076956"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388383"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
@@ -46,6 +46,7 @@ Proces nastavení fiskální integrace zahrnuje následující obecné úlohy:
 - Nakonfigurujte proces fiskální registrace, který definuje pořadí kroků fiskální registrace a fiskálních konektorů a poskytovatelů fiskálních dokumentů používaných v jednotlivých krocích.
 - Přiřaďte procesy fiskální registrace do funkčních profilů POS.
 - Přiřadíte technické profily konektoru hardwarovým profilům.
+- Přiřaďte technické profily hardwarovým profilům POS nebo funkce.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Nahrání konfigurace poskytovatelů fiskálních dokumentů
 
@@ -161,10 +162,12 @@ Entity procesu fiskální registrace přiřaďte k profilům POS takto.
 1. V centrále Commerce přejděte na stránku **Funkční profily POS** (**Maloobchod a obchodování \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Funkční profily**). 
 1. Přiřaďte procesy fiskální registrace do funkčního profilu POS.
 1. Vyberte **Upravit** a poté na kartě **Fiskální registrace** v poli **Číslo procesu** vyberte proces.
+1. Na kartě **Fiskální služby** vyberte technické profily konektoru s umístěním konektoru **Registr**.
 1. Přejděte na stránku **Hardwarový profil POS** (**Maloobchod a obchodování \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**).
 1. Přiřaďte technické profily konektoru k hardwarovému profilu. 
 1. Vyberte položku **Upravit** a poté na kartě **Fiskální periferie** přidejte řádek. 
 1. Zvolte technický profil konektoru v poli **Číslo profilu**.
+1. Na kartě **Fiskální periferie** vyberte technické profily konektoru s umístěním konektoru **Hardwarová stanice**.
 
 > [!NOTE]
 > Můžete přidat několik technických profilů ke stejnému hardwarovému profilu. Profil hardwaru nebo profil funkce POS, by však měl mít pouze jeden průsečík s libovolnou skupinou fiskálního konektoru.
@@ -175,6 +178,17 @@ Tok fiskální registrace je definován procesem fiskální registrace a také u
 - Poskytovatel fiskálního dokumentu nese odpovědnost také za identifikaci fiskálního konektoru, který se používá k fiskální registraci. Odpovídá funkčním profilům konektoru, které jsou zahrnuty ve skupině fiskálních konektorů, která je zadaná pro aktuální krok procesu daňové registrace s technickým profilem konektoru, který je přiřazen profilu hardwaru hardwarové stanice, se kteoru je POS spárován.
 - Poskytovatel fiskálního dokumentu používá nastavení mapování dat z konfigurace poskytovatele fiskálního dokumentu k transformaci dat transakce nebo události, například daně a plateb, zatímco je generován daňový doklad.
 - Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v programovacím rozhraní aplikace zařízení (API) v závislosti na tom, jak je komunikace zpracovávána.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Nastavte registry s omezeními fiskální registrace
+
+Můžete si vybrat registry, kde je fiskální registrace zakázána, například v případech, kdy potřebujete na těchto zařízeních poskytovat pouze nefiskální operace, jako je vyhledávání v katalogu produktů, vyhledávání zákazníků nebo vytváření konceptů transakcí.
+
+K nastavení registry s omezeními fiskální registrace postupujte následovně.
+
+1. V ústředí Commerce Přejděte na **Retail a Commerce \> Nastavení kanálu \> Fiskální integrace \> Proces fiskální registrace**.
+1. Vyberte požadovaný proces.
+1. Vyberte kartu **Registry POS s omezením fiskálních procesů**.
+1. Podle potřeby přidejte registry POS s omezením fiskálních procesů.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Ověření procesu fiskální registrace
 

@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952645"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388256"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -83,31 +83,48 @@ Na kartě **Mapování** návrháře operací elektronického výkaznictví mů�
 
 ## <a name="range-component"></a>Součást rozsahu
 
-Součást **Rozsah** označuje rozsah Excelu, který musí být ovládán touto součástí elektronického výkaznictví. Název rozsahu je definován ve vlastnosti **Rozsah aplikace Excel** této komponenty.
-
-### <a name="replication"></a>Replikace
-
-Vlastnost **Směr replikace** určuje, zda a jak bude rozsah opakován v generovaném dokumentu:
-
-- Pokud je vlastnost **Směr replikace** nastavena na **Žádná replikace**, příslušný rozsah aplikace Excel nebude ve vygenerovaném dokumentu opakován.
-- Pokud je vlastnost **Směr replikace** nastavena na **Vertikální**, příslušný rozsah aplikace Excel bude ve vygenerovaném dokumentu opakován. Každý replikovaný rozsah je umístěn pod původní rozsah v šabloně Excel. Počet opakování je definován počtem záznamů ve zdroji dat typu **Seznam záznamů**, který je vázán na tuto součást elektronického výkaznictví.
-- Pokud je vlastnost **Směr replikace** nastavena na **Horizontální**, příslušný rozsah aplikace Excel bude ve vygenerovaném dokumentu opakován. Každý replikovaný rozsah je umístěn napravo od původního rozsahu v šabloně Excel. Počet opakování je definován počtem záznamů ve zdroji dat typu **Seznam záznamů**, který je vázán na tuto součást elektronického výkaznictví.
-
-Chcete-li se dozvědět více o horizontální replikaci, postupujte podle kroků v části [Použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v tabulkách aplikace Excel](tasks/er-horizontal-1.md).
-
 ### <a name="nested-components"></a>Vnořené komponenty
 
-Součást **Rozsah** může mít další vnořené součásti elektronického výkaznictví, které se používají k zadávání hodnot do příslušných pojmenovaných rozsahů aplikace Excel.
+#### <a name="data-typing"></a>Typování dat
+
+Součást **Rozsah** může mít další vnořené součásti elektronického výkaznictví, které se používají k zadávání hodnot do příslušných rozsahů.
 
 - Pokud je některá součást skupiny **Text** použita k zadávání hodnot, hodnota se zadává v rozsahu Excelu jako textová hodnota.
 
     > [!NOTE]
     > Tento vzor použijte k formátování zadaných hodnot na základě národního prostředí, které je definováno v aplikaci.
 
-- Pokud je součást **Buňka** skupiny **Excel** použita k zadávání hodnot, hodnota se zadává v rozsahu Excelu jako hodnota datového typu, který je definován vazbou součásti **Buňka** (například **Řetězec**, **Skutečný**, nebo **Celé číslo**).
+- Pokud je součást **Buňka** skupiny **Excel** použita k zadávání hodnot, hodnota se zadává v rozsahu Excelu jako hodnota datového typu, který je definován vazbou součásti **Buňka**. Datový typ může být například **Řetězec**, **Reálné číslo** nebo **Celé číslo**.
 
     > [!NOTE]
     > Tento vzor použijte k povolení aplikace Excel pro formátování zadané hodnoty na základě národního prostředí místního počítače, které otevírá odchozí dokument.
+
+#### <a name="row-handling"></a>Manipulace s řádky
+
+Komponentu **Rozsah** lze nakonfigurovat jako vertikálně replikovanou, takže v listu aplikace Excel je generováno více řádků. Řádky může generovat nadřazená komponenta **Rozsah** nebo vnořená komponenta **Rozsah**.
+
+Ve verzi 10.0.26 a novější můžete vynutit, aby vygenerovaný list ponechal vygenerované řádky na stejné stránce. V návrháři formátu ER nastavte možnost **Udržovat řádky pohromadě** na **Ano** pro nadřazenou komponentu **Rozsah** v editovatelném formátu ER. ER se pak pokusí ponechat veškerý obsah, který je generován tímto rozsahem, na stejné stránce. Pokud výška obsahu překročí zbývající prostor na aktuální stránce, bude přidán konec stránky a obsah začne v horní části další nové stránky.
+
+> [!NOTE]
+> Doporučujeme vám nakonfigurovat možnost **Udržovat řádky pohromadě** pouze pro rozsahy, které pokrývají celou šířku generovaného dokumentu.
+>
+> Možnost **Udržovat řádky pohromadě** se vztahuje pouze na komponenty **Excel \> Soubor**, které jsou nakonfigurovány pro použití šablony sešitu aplikace Excel.
+>
+> Možnost **Udržovat řádky pohromadě** se dá použít pouze tehdy, když je povolena možnost **Povolit používání knihovny EPPlus v rámci elektronického vykazování**.
+>
+> Tuto funkci lze použít pro komponenty **Rozsah**, které jsou umístěny pod komponentou **Stránka**. Neexistuje však žádná záruka, že [součty zápatí stránky](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) se správně vypočítají pomocí zdrojů dat [Sběr dat](er-data-collection-data-sources.md).
+
+Chcete-li se dozvědět, jak tuto možnost používat, postupujte podle příkladů v [Návrh formátu ER k udržení řádků pohromadě na stejné stránce aplikace Excel](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Replikace
+
+Vlastnost **Směr replikace** určuje, zda a jak bude rozsah opakován v generovaném dokumentu:
+
+- **Žádná replikace** – Příslušný rozsah Excelu se ve vygenerovaném dokumentu nebude opakovat.
+- **Vertikální** – Příslušný rozsah Excelu se ve vygenerovaném dokumentu bude opakovat vertikálně. Každý replikovaný rozsah je umístěn pod původní rozsah v šabloně Excel. Počet opakování je definován počtem záznamů ve zdroji dat typu **Seznam záznamů**, který je vázán na tuto součást elektronického výkaznictví.
+- **Horizontální** – Příslušný rozsah Excelu se ve vygenerovaném dokumentu bude opakovat horizontálně. Každý replikovaný rozsah je umístěn napravo od původního rozsahu v šabloně Excel. Počet opakování je definován počtem záznamů ve zdroji dat typu **Seznam záznamů**, který je vázán na tuto součást elektronického výkaznictví.
+
+    Chcete-li se dozvědět více o horizontální replikaci, postupujte podle kroků v části [Použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v tabulkách aplikace Excel](tasks/er-horizontal-1.md).
 
 ### <a name="enabling"></a>Povoluje se
 
@@ -280,12 +297,12 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 
 - Když vyberete hodnotu **Automaticky**, přepočítají se všechny závislé vzorce pokaždé, když je generovaný dokument připojen novými rozsahy, buňkami atd.
 
-    >[!NOTE]
+    > [!NOTE]
     > To může způsobit problém s výkonem šablon aplikace Excel, které obsahují více souvisejících vzorců.
 
 - Když vyberete hodnotu **Ručně**, nebudou vzorce přepočítány při generování dokumentu.
 
-    >[!NOTE]
+    > [!NOTE]
     > Přepočet vzorce je vynucen ručně, když je generovaný dokument otevřen k náhledu v aplikaci Excel.
     > Tuto možnost nepoužívejte, pokud konfigurujete cíl elektronického výkaznictví, který předpokládá použití vygenerovaného dokumentu bez jeho náhledu v aplikaci Excel (pro převod PDF, odeslání e-mailem atd.), protože generovaný dokument nemusí obsahovat hodnoty v buňkách obsahujících vzorce.
 

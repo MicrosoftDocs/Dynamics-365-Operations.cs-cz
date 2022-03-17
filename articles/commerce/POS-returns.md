@@ -2,7 +2,7 @@
 title: Vytvoření vrácení v POS
 description: Toto téma popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715523"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349684"
 ---
 # <a name="create-returns-in-pos"></a>Vytvoření vrácení v POS
 
@@ -96,6 +96,13 @@ Pokud informace na straně kanálu nejsou z nějakého důvodu aktuální a je z
 
 > [!NOTE]
 > Když je zapnuta funkce **Sjednocené prostředí pro zpracování vrácení v POS**, jsou k dispozici nové volitelné funkce, které podporují ověřování vrácení serializovaného produktu. Další informace viz [Vrácení produktů řízených sériovým číslem v aplikaci Point of Sale (POS)](POS-serial-returns.md).
+
+## <a name="version-details"></a>Podrobnosti verze
+
+Následující seznam uvádí minimální požadavky na verzi pro různé součásti.
+- Ústředí Commerce: verze 10.0.20
+- Commerce Scale Unit (CSU): verze 9.30
+- Pokladní místo (POS): verze 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Povolení správného výpočtu daně pro vrácení s částečným množstvím
 

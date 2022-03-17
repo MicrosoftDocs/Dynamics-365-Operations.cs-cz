@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103933"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384688"
 ---
 # <a name="inventory-value-reports"></a>Sestavy hodnot zásob
 
@@ -102,7 +102,7 @@ Na stránce **Sestavy hodnot zásob** nastavte obsah, který je zahrnut do různ
         - Přijaté a dosud nevyfakturované položky, když je možnost **Zaúčtovat fyzické zásoby** pro příslušnou skupinu modelů položek vypnuta.
         - Přijaté a dosud nevyfakturované položky, když je možnost **Zaúčtovat příjemku produktu do hlavní knihy** vypnuta na záložce s náhledem **Příjem produktu** na kartě **Všeobecné** ve stránce **Parametry závazků** (**Závazky \> Nastavení \> Parametry závazků**).
 
-    - **Vypočítat průměrné náklady na jednotku** – Nastavte tuto možnost na *Ano*, chcete-li zobrazit sloupec s průměrnými náklady na jednotku. Průměrné náklady na jednotku jsou celkové množství dělené celkovou částkou.
+    - **Vypočítat průměrné náklady na jednotku** – Nastavte tuto možnost na *Ano*, chcete-li zobrazit sloupec s průměrnými náklady na jednotku. Průměrné náklady na jednotku jsou celková částka dělená celkovým množstvím.
     - **Celkové množství a hodnota** – Nastavte tuto možnost na *Ano*, chcete-li zobrazit sloupce ukazující celkové množství fyzických zásob (a finanční množství) a celkovou částku fyzických zásob (a finanční částky). Tuto možnost můžete nastavit na *Ano*, pouze když je možnost **Shrnout fyzické a finanční hodnoty** nastavena na *Ne*.
     - **Dimenze zásob** – V této mřížce zapněte zaškrtávací políčko **Zobrazit** u každé dimenze, kterou chcete v sestavě zobrazit. V sestavě se zobrazí pouze dimenze, které mají zapnutou možnost **Finanční zásoby**. Ostatní dimenze zobrazí pouze prázdné sloupce. U dimenzí, které vyberete k zobrazení, můžete zapnutím políčka **Součet** zahrnout i součtové údaje.
     - **ID zdroje** – Nastavte možnost **Zobrazit** na *Ano*, chcete-li zobrazit sloupec identifikující položku pro každý řádek. Nastavte možnost **Součet** na *Ano*, chcete-li zahrnout i součty. V závislosti na typu položky, která je uvedena v každém řádku, zobrazuje sloupec jeden z následujících typů informací:

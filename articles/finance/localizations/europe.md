@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982087"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367841"
 ---
 # <a name="europe-overview"></a>Evropa - přehled
 
@@ -36,13 +36,13 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 - [Úprava ID faktury v prodejních objednávkách pro východní Evropu](emea-edit-invoice-id-sales-orders.md)
 - [Vstupní certifikáty EU](emea-entry-certificates.md)
 - [Souhrnné hlášení EU](emea-eu-sales-list.md)
+  - [Příklad pro obecný prodejní seznam EU](emea-eu-sales-list-example.md)
 - [Úpravy kurzů](emea-exchange-rate-adjustments.md)
 - [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md)
 - [Rady v oblasti financí (globalizace) o dopadu Brexitu](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integrace finanční služby (ESR)](emea-fiscal-service-integration.md)
 - [Vyřazení dlouhodobého majetku pro Estonsko a Litvu](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Vygenerování dokladu převodu pro interní převod zásob](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generování sestavy souhrnného hlášení EU](tasks/eur-00011-eu-sales-list-report.md)
 - Soubory ISO20022
   - [Import souborů ISO20022](emea-ISO20022-file-formats.md)
   - [Import konfigurace přímého debetu ve formátu ISO20022](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ Toto téma obsahuje informace a odkazy na zdroje, které vám pomohou nastavit p
 - [Přehled převodu kreditu SEPA](../accounts-payable/sepa-credit-transfer.md)
 - [Přehled přímého inkasa SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Nastavení kompenzace odběratelů a dodavatelů](emea-compensation-customer-vendor-transactions.md)
-- [Nastavení souhrnného hlášení EU](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Nastavení formátu platebního dokladu pro faktury projektů](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Nastavení podepisujících uživatelů tištěných formulářů](emea-set-up-signers-for-printing-forms.md)
 - [Záporné storno](emea-storno.md)

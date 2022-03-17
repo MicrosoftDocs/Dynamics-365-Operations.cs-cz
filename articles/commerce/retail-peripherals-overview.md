@@ -2,27 +2,22 @@
 title: Periferní zařízení
 description: Toto téma vysvětluje pojmy související s periferními zařízeními aplikace Obchod.
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092477"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370969"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -45,7 +40,7 @@ Zařízení mohou být mapována na aplikací následujících typů: Retail Mod
 
 ### <a name="modern-pos"></a>Modern POS
 
-Modern POS je program POS pro systém Microsoft Windows. Může být nasazen v operačních systémech Windows 10.
+Modern POS je program POS pro systém Microsoft Windows. Může být nasazen v operačních systémech Windows 10 a Windows 11.
 
 ### <a name="cloud-pos"></a>Cloud POS
 
@@ -108,7 +103,7 @@ Vložky na osobní identifikační číslo (PIN) jsou podporovány prostřednict
 
 ### <a name="secondary-display"></a>Sekundární displej
 
-Je-li nakonfigurován sekundární displej, bude k zobrazení základních informací používán displej Windows číslo 2. Účelem sekundárního displeje je podporovat rozšíření nezávislého dodavatele softwaru (ISV), protože sekundární displej nelze okamžitě konfigurovat a zobrazuje omezený obsah.
+Je-li nakonfigurován sekundární displej, bude k zobrazení základních informací používán displej Windows číslo 2. Ve výchozím nastavení není sekundární displej konfigurovatelný a zobrazuje omezený obsah. Účelem sekundárního displeje je podporovat rozšíření nezávislého dodavatele softwaru (ISV). 
 
 ### <a name="payment-device"></a>Platební zařízení
 
@@ -176,7 +171,7 @@ Chcete-li použít vyhrazenou hardwarovou stanici, postupujte takto.
 1. Otevřete Modern POS v režimu bez zásuvky a použijte operaci **Správa hardwarových stanic** pro zapnutí funkcí hardwarové stanice. Vyhrazená hardwarová stanice bude ve výchozím nastavení aktivní. 
 1. Odhlaste se ze systému Modern POS. Poté se přihlaste zpět a otevřete směnu. Periferie, které jsou nakonfigurovány v hardwarovém profilu, budou nyní použitelné. 
 
-### <a name="shared"></a>Sdílený 
+### <a name="shared"></a>Sdílený
 
 Služba IIS bývá také někdy označována jako hardwarová stanice „IIS“, což znamená, že aplikace POS se připojují k hardwarové stanici prostřednictvím internetové informační služby Microsoft. Aplikace POS se k hardwarové stanici služby IIS připojuje prostřednictvím webových služeb, které jsou spuštěny v počítači, ke kterému jsou zařízení připojena. Při použití sdílené hardwarové stanice může kterákoli registrační pokladna POS nacházející se na stejné síti jako hardwarová stanice IIS využívat periferní zařízení připojená k hardwarové stanici. Protože pouze Modern POS for Windows a Android obsahuje integrovanou podporu pro periferní zařízení, všechny ostatní aplikace Modern POS musejí používat hardwarovou stanici služby IIS ke komunikaci s periferiemi POS, které jsou nakonfigurovány v hardwarovém profilu. Proto každá instance služby hardwarové stanice IIS vyžaduje počítač, na kterém je spuštěna webová služba a aplikaci, která komunikuje s zařízeními. 
 
@@ -184,7 +179,7 @@ Sdílenou hardwarovou stanici lze použít k tomu, aby více klientů pokladníh
 
 Pokud je hardwarová stanice používána pro podporu sdílení periferních zařízení mezi více klienty POS, měly by být použity pouze hotovostní zásuvky, tiskárny příjemek a platební terminály. Nelze přímo připojit samostatné čtečky čárových kódů, MSR, řádkové displeje, váhy či jiná zařízení. Jinak bude docházet ke konfliktům, když se více zařízení POS pokusí nárokovat si tato periferní zařízení současně. Zde je způsob správy konfliktů u podporovaných zařízení:
 
--   **Zásuvka s hotovostí** – Zásuvka se otevírá prostřednictvím události, která se odesílá do zařízení. Jediný problém, ke kterému může docházet při volání zásuvky s hotovostí, nastává tehdy, když je zásuvka s hotovostí již otevřena. V případě sdílených hardwarových stanic by měla být zásuvka s hotovostí v hardwarovém profilu nastavena na **Sdílené**. Toto nastavení zabrání POS v kontrole, zda je zásuvka již otevřena při odesílání příkazů k otevření.
+-   **Zásuvka s hotovostí** – Zásuvka se otevírá prostřednictvím události, která se odesílá do zařízení. K problému může docházet při volání zásuvky s hotovostí, když je zásuvka s hotovostí již otevřena. Zásuvka s hotovostí, která se používá v konfiguraci sdílených hardwarových stanic by měla být nastavena na **Sdílené** v hardwarovém profilu. Toto nastavení zabrání POS v kontrole, zda je zásuvka již otevřena při odesílání příkazů k otevření.
 -   **Tiskárna účtenek** – Budou-li do hardwarové stanice odeslány dva příkazy pro tisk účtenek současně, může se jeden z příkazů můžete ztratit, což závisí na zařízení. Některá zařízení mají interní paměť nebo sjednocené prostředky, které mohou tomuto problému zabránit. Pokud tiskový příkaz není úspěšný, pokladník obdrží chybovou zprávu a můžete tiskový příkaz zopakovat z programu POS.
 -   **Platební terminál** – Jestliže se pokladník pokusí zařídit transakci na platebním terminálu, který je již používán, bude pokladník upozorněn zprávou, že terminál je používán, a požádán, aby se o tuto akci pokusil později. Pokladníci obvykle sami zjistí, že terminál je již používán, a než se znovu pokusí o řízení, počkají na dokončení druhé transakce.
 
@@ -205,7 +200,7 @@ Logika, která řídí fyzicky připojené a síťově adresovatelné periferie,
 ## <a name="setup-and-configuration"></a>Instalace a konfigurace
 ### <a name="hardware-station-installation"></a>Instalace hardwarové stanice
 
-Informace naleznete v tématu [Konfigurace a instalace hardwarové stanice](retail-hardware-station-configuration-installation.md).
+Další informace o instalaci hardwarové stanice viz [Konfigurace a instalace hardwarové stanice](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalace a konfigurace Moderního POS pro Windows
 
@@ -431,7 +426,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Všichni klienti Modern POS sdíleli hardwarovou stanici IIS.
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>Všichni klienti Modern POS, kteří sdílejí hardwarovou stanici IIS
 
 > [!NOTE]
 > Když je hardwarová stanice IIS "sdílena", více zařízení může používat hardwarovou stanici najednou. V tomto scénáři byste měli používat pouze zařízení uvedená v následující tabulce. Pokud se pokoušíte sdílet zařízení, která zde nejsou uvedena, jako například čtečky čárových kódů a MSR, dojde k chybě, jakmile se několik zařízení pokusí uplatnit stejné periferní zařízení. V budoucnu se takové konfiguraci explicitně zabrání.
@@ -487,7 +482,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfigurace pro podporované scénáře
-Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md). 
+Další informace o postupu při vytváření hardwarových profilů naleznete v tématu [Připojení periferních zařízení k pokladnímu místu (POS)](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
 
@@ -623,9 +618,8 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 | Výrobce | Model    | Rozhraní | Komentáře                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Vlastní    | Připojeno prostřednictvím sítě   |
-| HP           | F7M67AA  | OPOS      | Napájené USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Napájené USB             |
 | Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě   |
 | Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -637,30 +631,21 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
 | Výrobce  | Model         | Rozhraní | Komentáře |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symbol        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Klávesnice pro kód PIN
+#### <a name="payment-terminals-and-pin-pads"></a>Platební terminály a číselníky na PIN
 
-| Výrobce | Model  | Rozhraní | Poznámky                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
+Dynamics 365 Commerce poskytuje připravené řešení pro integraci s Adyen pro platební služby. [Konektor Dynamics 365 Payment pro Adyen](dev-itpro/adyen-connector.md) používá [aplikační programovací rozhraní (API) platebního terminálu Adyen](https://www.adyen.com/blog/introducing-the-terminal-api) nezávislé na zařízení a může komunikovat se všemi platebními terminály, které toto API podporuje. Kompletní seznam podporovaných platebních terminálů viz [POS terminály Adyen](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Patební terminál 
-
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+Můžete také použít jiné poskytovatele plateb s Dynamics 365 Commerce vytvořením vlastního konektoru. S Dynamics 365 Commerce lze použít jakýkoli platební terminál, který je podporován poskytovatelem plateb. Podobně Dynamics 365 Commerce umožňuje jakýkoli model integrace platebního zařízení, který je podporován poskytovatelem plateb, jako je místní IP, cloudové API nebo přímé připojení (například přes USB) k POS. Další informace viz [Vytvoření komplexní integrace plateb pro platební terminál](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
-| Výrobce | Model     | Rozhraní | Poznámky                |
+| Výrobce | Model     | Rozhraní | Komentáře                |
 |--------------|-----------|-----------|-------------------------|
 | Star         | mPOP      | OPOS      | Připojeno pomocí Bluetooth |
 | APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě   |
@@ -670,14 +655,14 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 
 #### <a name="line-display"></a>Řádkový displej
 
-| Výrobce  | Model   | Rozhraní | Poznámky |
-|---------------|---------|-----------|----------|
-| HP Integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Výrobce | Model    | Rozhraní | Komentáře |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T-series | OPOS      |          |
 
 #### <a name="signature-capture"></a>Zaznamenání podpisu
 
-| Výrobce | Model  | Rozhraní | Poznámky |
+| Výrobce | Model  | Rozhraní | Komentáře |
 |--------------|--------|-----------|----------|
 | Scriptel     | ST1550 | OPOS      |          |
 
@@ -701,43 +686,33 @@ Následující periferní zařízení byly testovány pomocí vyhrazené, nesdí
 
 #### <a name="printer"></a>Tiskárna
 
-| Výrobce | Model    | Rozhraní | Komentáře              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Vlastní    | Připojeno prostřednictvím sítě |
-| HP           | F7M67AA  | OPOS      | Napájené USB           |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Výrobce | Model    | Rozhraní | Komentáře                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Napájené USB             |
+| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě   |
+| Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
-| Výrobce  | Model   | Rozhraní | Komentáře |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symbol        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| Výrobce  | Model         | Rozhraní | Komentáře |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Klávesnice pro kód PIN
+#### <a name="payment-terminals-and-pin-pads"></a>Platební terminály a číselníky na PIN
 
-| Výrobce | Model  | Rozhraní | Poznámky                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vyžaduje úpravu konektoru platby |
+Dynamics 365 Commerce poskytuje připravené řešení pro integraci s Adyen pro platební služby. [Konektor Dynamics 365 Payment pro Adyen](dev-itpro/adyen-connector.md) používá [API platebního terminálu Adyen](https://www.adyen.com/blog/introducing-the-terminal-api) nezávislé na zařízení a může komunikovat se všemi platebními terminály, které toto API podporuje. Kompletní seznam podporovaných platebních terminálů viz [POS terminály Adyen](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Patební terminál 
-
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+Můžete také použít jiné poskytovatele plateb s Dynamics 365 Commerce vytvořením vlastního konektoru. S Dynamics 365 Commerce lze použít jakýkoli platební terminál, který je podporován poskytovatelem plateb. Podobně Dynamics 365 Commerce umožňuje jakýkoli model integrace platebního zařízení, který je podporován poskytovatelem plateb, jako je místní IP, cloudové API nebo přímé připojení (například přes USB) k POS. Další informace viz [Vytvoření komplexní integrace plateb pro platební terminál](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
-| Výrobce | Model     | Rozhraní | Poznámky              |
+| Výrobce | Model     | Rozhraní | Komentáře              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -780,26 +755,24 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 
 #### <a name="printer"></a>Tiskárna
 
-| Výrobce | Model    | Rozhraní | Komentáře              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Vlastní    | Připojeno prostřednictvím sítě |
-| HP           | F7M67AA  | OPOS      | Napájené USB           |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Výrobce | Model    | Rozhraní | Komentáře                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Napájené USB             |
+| Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>Platební terminál
 
-| Výrobce | Model | Rozhraní | Komentáře                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+Dynamics 365 Commerce poskytuje připravené řešení pro integraci s Adyen pro platební služby. [Konektor Dynamics 365 Payment pro Adyen](dev-itpro/adyen-connector.md) používá [API platebního terminálu Adyen](https://www.adyen.com/blog/introducing-the-terminal-api) nezávislé na zařízení a může komunikovat se všemi platebními terminály, které toto API podporuje. Kompletní seznam podporovaných platebních terminálů viz [POS terminály Adyen](https://www.adyen.com/pos-payments/terminals).
+
+Můžete také použít jiné poskytovatele plateb s Dynamics 365 Commerce vytvořením vlastního konektoru. S Dynamics 365 Commerce lze použít jakýkoli platební terminál, který je podporován poskytovatelem plateb. Podobně Dynamics 365 Commerce umožňuje jakýkoli model integrace platebního zařízení, který je podporován poskytovatelem plateb, jako je místní IP, cloudové API nebo přímé připojení (například přes USB) k POS. Další informace viz [Vytvoření komplexní integrace plateb pro platební terminál](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Zásuvka s hotovostí
 
-| Výrobce | Model     | Rozhraní | Poznámky              |
+| Výrobce | Model     | Rozhraní | Komentáře              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Vlastní    | Připojeno prostřednictvím sítě |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -822,7 +795,7 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 
 **Řešení:** tento problém může způsobit některý z následujících faktorů:
 
--   Hardwarová stanice nebyla v sídle správně nastavena. Pomocí kroků uvedených dříve v tomto tématu ověřte, zda je správně zadán profil hardwarové stanice a hardwarová stanice.
+-   Hardwarová stanice nebyla v sídle správně nastavena. Další informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   Úlohy nebyly spuštěny pro aktualizaci konfigurace kanálu. V takovém případě spusťte úlohu 1070 pro konfiguraci kanálu.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Moderní POS neodráží nové nastavení pokladní zásuvky

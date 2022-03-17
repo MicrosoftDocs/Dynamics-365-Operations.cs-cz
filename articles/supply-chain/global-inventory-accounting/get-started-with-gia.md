@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 88f1e9ef8c8b2aa494c44ea3b33713adc470eb96
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860501"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384790"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Začínáme s modulem Globální účetnictví zásob
 
@@ -121,7 +121,7 @@ Pomocí těchto kroků nastavíte integraci mezi Globálním účetnictvím zás
 1. Přihlaste se k aplikaci Supply Chain Management.
 1. Přejděte do nabídky **Správa systému \> Správa funkcí**.
 1. Vyberte možnost **Zkontrolovat aktualizace**.
-1. Na kartě **Všechny** vyhledejte pojmenovanou funkci *Globální účetnictví zásob*.
+1. Na kartě **Všechny** vyhledejte pojmenovanou funkci *(Preview) Globální účetnictví zásob*.
 1. Vyberte **Povolit**.
 1. Přejděte na **Globální účetnictví zásob \> Nastavit \> Parametry Globálního účetnictví zásob \> Parametry integrace**.
 1. Do pole **Koncový bod datové služby** a **Koncový bod globálního účetnictví zásob** zadejte adresy URL z e-mailu, který tým globálního účetnictví zásob poslal, když jste se přihlásili k náhledu.

@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182498"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331735"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centralizované platby pro závazky
 
 [!include [banner](../includes/banner.md)]
 
 Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Toto téma uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
-
-Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto stejné platby není nutné zadat pro více právnických osob. Kromě toho organizace šetří čas, protože je zjednodušen proces plateb.
 
 V organizaci s centralizovanými platbami existuje mnoho právnických osob pro operace a každá provozní právnická osoba spravuje své vlastní faktury dodavatele. Platby pro všechny provozní právnické osoby jsou generovány jednou právnickou osobou, která se nazývá právnická osoba platby. Během procesu vyrovnání jsou generovány odpovídající kreditní a debetní transakce. Můžete určit, která právnická osoba v organizaci přijímá transakce realizovaného zisku nebo realizované ztráty a také jak mají být zpracovány transakce platebních slev, které souvisejí s platbou mezi společnostmi. Na řádku deníku centralizované platby musí být **Typ účtu** nastaven na dodavatele. **Typ protiúčtu** musí být nastaven na banku nebo deník. Bankovní účet musí být v aktuální společnosti. 
 

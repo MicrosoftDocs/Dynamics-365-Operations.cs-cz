@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83d0b6243efd802ffc959f8de14f6232736fc88c
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087567"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384422"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -67,7 +67,10 @@ Pokud uděláte chybu a již nechcete zobrazovat celkový součet v určitém sl
 ### <a name="calculating-totals"></a>Výpočet součtů
 Když přejdete na stránku se zobrazeným zápatím a sloupci, které jsou již pro součty nakonfigurovány, mohou být součty zobrazeny v zápatí nebo nikoliv. Chování je závislé na velikosti datové sady na stránce. Pokud je datová sada dostatečně malá, součty se zobrazí automaticky spolu s počtem řádků v sadě dat. Pokud v zápatí existují pomlčky pod sloupci, které jste nakonfigurovali pro součty, je sada dat příliš velká, aby systém mohl zobrazit součty okamžitě, a k výpočtu součtů je nutné provést explicitní akci. Tu provedete kliknutím na tlačítko **Vypočítat** v zápatí, nebo klikněte pravým tlačítkem na sloupec, pro který chcete vytvořit součet a vyberte možnost **Sečíst tento sloupec**.
 
-Pokud výpočet trvá příliš dlouho, můžete operaci zrušit kliknutím na tlačítko **Zrušit**. Někdy je však datová sada příliš velká pro výpočet součtů (limit stanovený vaší organizací) a místo toho budete upozorněni na filtrování dat.
+Pokud výpočet trvá příliš dlouho, můžete operaci zrušit kliknutím na tlačítko **Zrušit**. Někdy je datová sada příliš velká pro výpočet součtů (limit stanovený vaší organizací) a místo toho budete upozorněni na filtrování dat. 
+
+> [!NOTE]
+> Správci systému mohou upravit limit počtu záznamů dostupných pro výpočet součtů úpravou parametru **Maximální počet místních záznamů pro každou mřížku** na stránce **Možnosti výkonu klienta**. Výchozí hodnota je 25 000 záznamů. Správci by měli být při úpravě této hodnoty opatrní, protože příliš velká hodnota může vyčerpat dostupnou paměť v počítači uživatele. Doporučení je nepřekročit 50 000 záznamů.   
 
 Součty se aktualizují automaticky při aktualizaci, odstranění nebo vytvoření řádků v sadě dat.
 

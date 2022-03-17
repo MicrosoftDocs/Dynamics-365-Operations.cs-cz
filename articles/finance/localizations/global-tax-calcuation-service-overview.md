@@ -2,7 +2,7 @@
 title: Přehled výpočtu daně
 description: Toto téma vysvětluje celkový rozsah a funkce výpočtu daně.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105430"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388488"
 ---
 # <a name="tax-calculation-overview"></a>Přehled výpočtu daně
 
@@ -58,8 +58,9 @@ Výpočet daně je nasazen v následujících geografických oblastech Azure. Bu
 - Kanada
 - Evropa
 - Japonsko
+- Švýcarsko
 - Spojené království
-- Spojené státy americké
+- Spojené státy
 
 > [!NOTE]
 > Výpočet daně nepodporuje dřívější verzi Dynamics 365, například Dynamics AX 2012 nebo místní nasazení Dynamics 365.
@@ -77,6 +78,7 @@ Doporučujeme importovat a nastavit konfiguraci výpočtu daně s verzí, která
 | 10.0.23         | Konfigurace výpočtu daně 40.50.221 |
 | 10.0.24         | Konfigurace výpočtu daně 40.50.225 |
 | 10.0.25         | Konfigurace výpočtu daně 40.50.225 |
+| 10.0.26         | Konfigurace výpočtu daně 40.54.234 |
 
 
 ## <a name="data-flow"></a>Tok dat
@@ -136,6 +138,11 @@ Ve verzi 10.0.23 jsou podporovány následující transakce:
 
 - Volná faktura
 
+Ve verzi 10.0.26 jsou podporovány následující transakce: 
+
+- Hlavní deníky
+- Deník faktur dodavatele
+
 ## <a name="supported-countriesregions"></a>Podporované země/oblasti
 
 Výpočet daně lze povolit dle právnické osoby. 
@@ -187,6 +194,12 @@ Ve verzi 10.0.23 jsou podporovány následující země/oblasti pro primární a
 Ve verzi 10.0.24 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
 
 - Mexiko
+
+Ve verzi 10.0.26 jsou podporovány následující země/oblasti pro primární adresu právnické osoby:
+
+- Čína
+- Česká republika
+- Španělsko
 
 ## <a name="related-resources"></a>Související prostředky
 

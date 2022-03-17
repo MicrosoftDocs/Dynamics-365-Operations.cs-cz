@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "27361"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2959df58dbde71ba516c1a230e64d38b885c23f5
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984070"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358257"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Přehled párování faktur závazků
 
@@ -36,24 +36,24 @@ Zadáte například nákupní objednávku s jedním řádkem obsahujícím 1 000
 
 Obdržíte fakturu na 1 000 baterií s cenou 1,10 za kus. Vaše zásady právnické osoby pro tuto kategorii položek povolují 5procentní toleranci čisté jednotkové ceny. Cena 1,05 by byla přijatelná, ale cena 1,10 přijatelná není. Při zadávání údajů z faktury je identifikována odchylka párování cen a fakturu je možné uložit do doby, než dojde k vyřešení odchylky.
 
-Můžete použít následující typy párování faktur závazků:
+Můžete použít následující typy **Párování faktur závazků**:
 
--   Párování součtů faktur – párování celkových částek na faktuře s celkovými částkami na nákupní objednávce. Tento typ párování faktur zahrnuje nejmenší množství podrobností, takže ho můžete použít k vytvoření ovládacích prvků, které zaměstnancům minimalizují čas potřebný ke kontrole informací o párování faktur.
--   Dvoucestné párování – páruje informace o ceně na faktuře s informacemi o ceně na nákupní objednávce.
--   Třícestné párování – páruje informace o ceně na faktuře s informacemi o ceně na nákupní objednávce. Také páruje informace o množství na faktuře s informacemi o množství na příjemkách produktů, které jsou vybrány pro fakturu.
--   Párování nákladů – páruje informace o nákladech (částky) na faktuře s informacemi o nákladech (částky) na nákupní objednávce.
+-   **Párování součtů faktur** – párování celkových částek na faktuře s celkovými částkami na nákupní objednávce. Tento typ párování faktur zahrnuje nejmenší množství podrobností, takže ho můžete použít k vytvoření ovládacích prvků, které zaměstnancům minimalizují čas potřebný ke kontrole informací o párování faktur.
+-   **Dvoucestné párování** – páruje informace o ceně na faktuře s informacemi o ceně na nákupní objednávce.
+-   **Třícestné párování** – páruje informace o ceně na faktuře s informacemi o ceně na nákupní objednávce. Také páruje informace o množství na faktuře s informacemi o množství na příjemkách produktů, které jsou vybrány pro fakturu.
+-   **Párování nákladů**– páruje informace o nákladech (částky) na faktuře s informacemi o nákladech (částky) na nákupní objednávce.
 
 > [!NOTE]
 > Ostatní typy ověření faktury lze provést pomocí zásad faktur dodavatele. 
 
 Dvoucestné s třícestné párování vždy páruje informace o ceně podle jednotkové ceny. Tyto zásady párování můžete nakonfigurovat rovněž tak, aby párovaly informace o ceně podle celkové ceny.
--   Párování čisté jednotkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté jednotkové ceny pro jednotlivé řádky na faktuře s odpovídající čistou jednotkovou cenou na nákupní objednávce. Čistá jednotková cena je určována podle tohoto vzorce: čistá částka na řádku / množství na řádku.
--   Párování celkové ceny – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka je určována podle tohoto vzorce: *(jednotková cena \* množství na řádku) + náklady na řádku − slevy na řádku*. Při párování celkové ceny podle procent, systém porovnává hodnoty pomocí měny transakce. Při párování celkové ceny podle částky, systém porovnává hodnoty pomocí zúčtovací měny. Když částečně fakturujete řádek nákupní objednávky, dojde k ověření párování celkové ceny na poslední faktuře pro daný řádek. 
+-   **Párování čisté jednotkové ceny** – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté jednotkové ceny pro jednotlivé řádky na faktuře s odpovídající čistou jednotkovou cenou na nákupní objednávce. Čistá jednotková cena je určována podle tohoto vzorce: čistá částka na řádku / množství na řádku.
+-   **Párování celkové ceny** – párování informací o ceně pro dvoucestné nebo třícestné párování porovnáním čisté ceny (celkové ceny) pro jednotlivé řádky na faktuře s odpovídající čistou částkou na nákupní objednávce. Čistá částka je určována podle tohoto vzorce: *(jednotková cena \* množství na řádku) + náklady na řádku − slevy na řádku*. Při párování celkové ceny podle procent, systém porovnává hodnoty pomocí měny transakce. Při párování celkové ceny podle částky, systém porovnává hodnoty pomocí zúčtovací měny. Když částečně fakturujete řádek nákupní objednávky, dojde k ověření párování celkové ceny na poslední faktuře pro daný řádek. 
 
-Výpočet párování faktur se obvykle provádí automaticky při úpravě faktur dodavatele na stránce Faktura dodavatele. Případně lze párování faktur provést podle potřeby. Párování faktur na vyžádání je pro právnickou osobu řízeno parametrem Automaticky aktualizovat stav záhlaví faktury na kartě Ověření faktury na stránce Parametry závazků. Párování faktur lze provést také v rámci proces kontroly faktury. Výsledky párování faktur si můžete zobrazit na stránce Faktura dodavatele a na stránkách souvisejících s párováním faktur.
+Výpočet párování faktur se obvykle provádí automaticky při úpravě faktur dodavatele na stránce **Faktura dodavatele**. Případně lze párování faktur provést podle potřeby. Párování faktur na vyžádání je pro právnickou osobu řízeno parametrem **Automaticky aktualizovat stav záhlaví faktury** na kartě **Ověření faktury** na stránce **Parametry závazků**. Párování faktur lze provést také v rámci proces kontroly faktury. Výsledky párování faktur si můžete zobrazit na stránce **Faktura dodavatele** a na stránkách souvisejících s párováním faktur.
 
 ## <a name="invoice-totals-matching"></a> Párování součtu faktur
-Párování součtu faktur můžete použít k ověření toho, zda se celkové částky na faktuře neodlišují od očekávaných částek o větší než přijatelnou odchylku. Šest součtů je porovnáno na stránce Shodné podrobnosti o celkových součtech faktur (viz následující tabulka). Pokud je přípustná tolerance pro párování součtů faktur 20 %, je za odchylku párování považována 100% odchylka pro částku celkové slevy.
+Párování součtu faktur můžete použít k ověření toho, zda se celkové částky na faktuře neodlišují od očekávaných částek o větší než přijatelnou odchylku. Šest součtů je porovnáno na stránce **Shodné podrobnosti o celkových součtech faktur** (viz následující tabulka). Pokud je přípustná tolerance pro párování součtů faktur 20 %, je za odchylku párování považována 100% odchylka pro částku celkové slevy.
 
 | Pole Celkem    | Skutečný součet faktury | Očekávaný součet faktury | Odchylka v % | Stav párování |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -64,7 +64,7 @@ Párování součtu faktur můžete použít k ověření toho, zda se celkové 
 | Zaokrouhlení      | 0,00                 | 0,00                   | 0 %                  | Úspěšné       |
 | Fakturovaná částka | 699,88               | 687,50                 | 2 %                  | Úspěšné       |
 
-Párování součtu faktur je pro právnickou osobu řízeno přepínačem Párování součtu faktur na stránce Parametry závazků. Párování je provedeno na očekávaných součtech faktur a skutečných součtech faktur. Očekávané součty faktur jsou vypočítány na základě informací o cenách, nákladech a DPH na nákupní objednávce a na základě množství na faktuře.
+Párování součtu faktur je pro právnickou osobu řízeno přepínačem **Párování součtu faktur** na stránce **Parametry závazků**. Párování je provedeno na očekávaných součtech faktur a skutečných součtech faktur. Očekávané součty faktur jsou vypočítány na základě informací o cenách, nákladech a DPH na nákupní objednávce a na základě množství na faktuře.
 
 ## <a name="two-way-price-totals-matching"></a> Dvoucestné párování celkových cen na fakturách
 Dvoucestné párování použijte k ověření toho, zda odchylka mezi informacemi o ceně na nákupní objednávce a faktuře jsou v rámci přípustné tolerance. Můžete porovnat informace o ceně pro čistou částku na každém řádku faktury a všechny čekající a dříve zaúčtované řádky faktury s čistou částkou na odpovídajícím řádku nákupní objednávky. Tento úkon se nazývá párování celkových cen. 
@@ -74,33 +74,33 @@ Párování celkových cen může být založeno na procentu, částce nebo na p
 Pokud je specifikována celková procentní tolerance nákupní ceny, porovná se pět polí (viz následující tabulka). Vzhledem k tomu, že celková procentní tolerance nákupní ceny činí 10 %, celková odchylky ceny 50 % představuje odchylku párování.
 
 | Stav párování | Čistá částka faktury | Očekávaná čistá částka | Celková hodnota nespárované nákupní ceny (částka odchylky) | Celková procentuální hodnota nespárované nákupní ceny (procento odchylky) | Procento tolerance celkové nákupní ceny |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Úspěšné       | 105,00 USD             | 100,00              | 5,00                                             | 5 %                                                              | 10 %                                    |
-| Nezdařilo se       | 150,00             | 100,00              | 50,00                                            | 50 %                                                             | 10 %                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Úspěšné       | 105,00 USD             | 100,00              | 5,00                                             | 5 %                             | 10 %                 |
+| Nezdařilo se       | 150,00             | 100,00              | 50,00                                            | 50 %                            | 10 %                     |
 
 Pokud je specifikována celková tolerance částky nákupní ceny, porovná se pět polí (viz následující tabulka). Vzhledem k tomu, že celková tolerance částky nákupní ceny činí 100,00, částka celkové odchylky ceny 105,00 představuje odchylku párování.
 
 | Stav párování | Čistá částka faktury | Očekávaná čistá částka | Celková hodnota nespárované nákupní ceny (částka odchylky) | Celková hodnota nespárovaných nákupních cen v zúčtovací měně (částka odchylky) | Tolerance celkové nákupní ceny |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Úspěšné       | 150,00             | 100,00              | 50,00                                            | 50,00                                                                   | 100,00                         |
-| Nezdařilo se       | 205,00             | 100,00              | 105,00 USD                                           | 105,00 USD                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Úspěšné       | 150,00             | 100,00              | 50,00                                            | 50,00                    | 100,00                         |
+| Nezdařilo se       | 205,00             | 100,00              | 105,00 USD                                           | 105,00 USD                  | 100,00                         |
 
 Pokud je párování celkových cen nastaveno procentuální tolerancí a částkou odchylky (někdy označovanou jako částku, kterou nelze překročit), při vyhodnocování toho, zda má řádek odchylku párování, se použijí obě tolerance. Jestliže procento nebo částka překračuje toleranci, jak je uvedeno v řádcích 150,00 a 205,00 v následující tabulce, má řádek odchylku párování.
 
 | Stav párování | Čistá částka faktury | Očekávaná čistá částka | Celková procentuální hodnota nespárované nákupní ceny (procento odchylky) | Procento tolerance celkové nákupní ceny | Celková hodnota nespárovaných nákupních cen v zúčtovací měně (částka odchylky) | Tolerance celkové nákupní ceny |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Úspěšné       | 105,00 USD             | 100,00              | 5 %                                                              | 10 %                                    | 5,00                                                                    | 100,00                         |
-| Nezdařilo se       | 150,00             | 100,00              | 50 %                                                             | 10 %                                    | 50,00                                                                   | 100,00                         |
-| Nezdařilo se       | 205,00             | 100,00              | 105 %                                                            | 10 %                                    | 105,00 USD                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Úspěšné       | 105,00 USD             | 100,00              | 5 %                     | 10 %                         | 5,00           | 100,00                         |
+| Nezdařilo se       | 150,00             | 100,00              | 50 %                   | 10 %                     | 50,00            | 100,00                         |
+| Nezdařilo se       | 205,00             | 100,00              | 105 %                 | 10 %                      | 105,00 USD                                  | 100,00                         |
 
-Dvoucestné párování je pro právnickou osobu řízeno hodnotou v poli Zásady párování řádků na stránce Parametry závazků. V závislosti na výběru v poli Povolit přepsání zásad párování můžete na stránce Zásady párování zvolit dvoucestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce Nákupní objednávka pro konkrétní nákupní objednávku.
+Dvoucestné párování je pro právnickou osobu řízeno hodnotou v poli **Zásady párování řádků** na stránce **Parametry závazků**. V závislosti na výběru v poli **Povolit přepsání zásad párování** můžete na stránce **Zásady párování** zvolit dvoucestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce **Nákupní objednávka** pro konkrétní nákupní objednávku.
 
-Párování celkových cen je pro právnickou osobu řízeno polem Párování celkových cen na stránce Parametry závazků. Na této stránce jsou uvedeny také celková procentní tolerance a částka tolerance nákupní ceny (částka, kterou nelze překročit).
+Párování celkových cen je pro právnickou osobu řízeno polem **Párování celkových cen** na stránce **Parametry závazků**. Na této stránce jsou uvedeny také celková procentní tolerance a částka tolerance nákupní ceny (částka, kterou nelze překročit).
 
 ## <a name="two-way-net-unit-price-matching"></a> Dvoucestné párování čisté jednotkové ceny
 Dvoucestné párování použijte k ověření toho, zda odchylka mezi informacemi o ceně na nákupní objednávce a faktuře jsou v rámci přípustné tolerance. Můžete porovnat informace o ceně pro jednotkovou cenu každé položky na faktuře. Tento úkon se nazývá párování čistých jednotkových cen. 
 
-Devět částek řádku je porovnáno na stránce Podrobnosti o párování faktur (viz následující tabulka). Pokud je přípustná tolerance ceny pro párování čistých jednotkových cen 10 %, 22,61% odchylka pro čistkou jednotkovou cenu je považována za odchylku párování.
+Devět částek řádku je porovnáno na stránce **Podrobnosti o párování faktur** (viz následující tabulka). Pokud je přípustná tolerance ceny pro párování čistých jednotkových cen 10 %, 22,61% odchylka pro čistkou jednotkovou cenu je považována za odchylku párování.
 
 | Pole řádku                    | Hodnota faktury | Hodnota nákupní objednávky | Odchylka v % | Stav párování |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -114,9 +114,9 @@ Devět částek řádku je porovnáno na stránce Podrobnosti o párování fakt
 | Čistá částka                    | 271,60        | 221,52               | 22,61 %              | Nezdařilo se       |
 | Čistá jednotková cena                | 67,9000       | 55,3800              | 22,61 %              | Nezdařilo se       |
 
-Dvoucestné párování je pro právnickou osobu řízeno hodnotou v poli Zásady párování řádků na stránce Parametry závazků. V závislosti na výběru v poli Povolit přepsání zásad párování můžete na stránce Zásady párování zvolit dvoucestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce Nákupní objednávka pro konkrétní nákupní objednávku. 
+Dvoucestné párování je pro právnickou osobu řízeno hodnotou v poli **Zásady párování řádků** na stránce **Parametry závazků**. V závislosti na výběru v poli **Povolit přepsání zásad párování** můžete na stránce **Zásady párování** zvolit dvoucestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce **Nákupní objednávka** pro konkrétní nákupní objednávku. 
 
-Párování čistých jednotkových cen je pro právnickou osobu řízeno polem Povolit ověření párování faktur na stránce Parametry závazků. Procentní tolerance čisté jednotkové ceny pro položky, skupiny položek, dodavatele, skupiny dodavatelů, kombinace položek a dodavatelů nebo pro právnickou osobu lze konfigurovat na stránce Tolerance ceny.
+Párování čistých jednotkových cen je pro právnickou osobu řízeno polem **Povolit ověření párování faktur** na stránce **Parametry závazků**. Procentní tolerance čisté jednotkové ceny pro položky, skupiny položek, dodavatele, skupiny dodavatelů, kombinace položek a dodavatelů nebo pro právnickou osobu lze konfigurovat na stránce **Tolerance ceny**.
 
 ## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a> Dvoucestné párování celkových cen a párování čistých jednotkových cen
 Párování celkových cen a párování čistých jednotkových cen můžete použít společně. Tento příklad vychází z následující konfigurace:
@@ -162,10 +162,10 @@ Na stránce Podrobnosti o párování faktur jsou porovnány stejné částky ř
 | Fakturované množství               | 4,00          |              |
 | Celkový počet spárovaných příjemek produktů | 0,00          | Nezdařilo se       |
 
-Třícestné párování je pro právnickou osobu řízeno hodnotou v poli Zásady párování řádků na stránce Parametry závazků. V závislosti na výběru v poli Povolit přepsání zásad párování můžete na stránce Zásady párování zvolit třícestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce Nákupní objednávka pro konkrétní nákupní objednávku.
+Třícestné párování je pro právnickou osobu řízeno hodnotou v poli **Zásady párování řádků** na stránce **Parametry závazků**. V závislosti na výběru v poli **Povolit přepsání zásad párování** můžete na stránce **Zásady párování** zvolit třícestné párování pro určitého dodavatele, položku nebo kombinaci položky a dodavatele a na stránce **Nákupní objednávka** pro konkrétní nákupní objednávku.
 
 ## <a name="charges-matching"></a> Párování nákladů
-Párování nákladů můžete použít k ověření toho, zda se částky nákladů neodlišují od očekávaných částek o větší než přijatelnou procentní odchylku. Na stránce Porovnat hodnoty nákladů – faktura: se porovnají celkové částky pro každý kód nákladů, který je použit na faktuře a nákupní objednávce (viz následující tabulka). Pokud je přípustná tolerance pro kódy nákladů 25 %, je za odchylku párování považována 99 999 999 999,99% odchylka pro kód nákladů na licence.
+Párování nákladů můžete použít k ověření toho, zda se částky nákladů neodlišují od očekávaných částek o větší než přijatelnou procentní odchylku. Na stránce **Porovnat hodnoty nákladů – faktura:** se porovnají celkové částky pro každý kód nákladů, který je použit na faktuře a nákupní objednávce (viz následující tabulka). Pokud je přípustná tolerance pro kódy nákladů 25 %, je za odchylku párování považována 99 999 999 999,99% odchylka pro **Kód nákladů na licence**.
 
 > [!NOTE] 
 > Procentní odchylka 99 999 999 999,99 % znamená, že očekávaná částka na základě nákupní objednávky je nulová a skutečná částka na faktuře je kladná hodnota. 
@@ -176,10 +176,10 @@ Párování nákladů můžete použít k ověření toho, zda se částky nákl
 | Úspěšné               | Dopravné              | 200                           | 200                             | 0               | 0 %                  | 25 %                  |
 | Nezdařilo se               | Urychleně zpracovat             | 4                             | 2                               | 2               | 100 %                | 25 %                  |
 
-Párování nákladů je pro právnickou osobu řízeno přepínačem Párování nákladů na stránce Parametry závazků. Procentuální tolerance odchylek pro náklady můžete nastavit na stránce Tolerance nákladů.
+Párování nákladů je pro právnickou osobu řízeno přepínačem **Párování nákladů** na stránce **Parametry závazků**. Procentuální tolerance odchylek pro náklady můžete nastavit na stránce **Tolerance nákladů**.
 
 > [!NOTE]
-> Párování nákladů se provádí jen u kódů nákladů, pro které je přepínač Porovnat hodnotu nákupní objednávky s hodnotou faktury na stránce Kód nákladů aktivován.
+> Párování nákladů se provádí jen u kódů nákladů, pro které je přepínač **Porovnat hodnotu nákupní objednávky s hodnotou faktury** na stránce **Kód nákladů** aktivován.
 
 ## <a name="related-functionality"></a> Související funkce
 Faktury dodavatele bývají často založeny na příjemkách produktu, které představují skutečné dodávky, namísto na nákupních objednávkách. Částky faktur se někdy neshodují s částkami nákupních objednávek a dodané množství se někdy neshoduje s fakturovaným množstvím. Správu těchto informací si můžete usnadnit těmito způsoby:

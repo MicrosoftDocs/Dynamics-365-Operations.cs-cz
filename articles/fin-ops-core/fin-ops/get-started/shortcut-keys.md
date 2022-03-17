@@ -2,7 +2,7 @@
 title: Klávesové zkratky
 description: Toto téma poskytuje přehled kombinací klávesových zkratek, které můžete použít při práci ve finančních a provozních aplikacích.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119545"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384556"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -199,9 +199,12 @@ Uživatelé najdou aktuálně dostupné klávesové zkratky přímo v uživatels
 | Přesun na obsah hlavní stránky (se zaměřením v jiném podokně)                    | Alt+M,M                    |
 | Přesun do okna s fakty (může zahrnovat jeho otevření)                       | Alt+M,B nebo Ctrl+F2         |
 
+> [!NOTE]
+> Funkce **Zjednodušit chování tabulátoru v celostránkových formulářích**, představená ve verzi 10.0.26, umožňuje uživatelům procházet všemi oblastmi stránky, aniž by k pohybu mezi oblastmi potřebovali myš nebo speciální klávesové zkratky. K rychlému pohybu mezi oblastmi na stránce můžete stále používat stávající klávesové zkratky (například klávesové akordové zkratky Alt+M).
+
 ## <a name="personalization-shortcuts"></a>Klávesové zkratky pro [přizpůsobení](personalize-user-experience.md) 
 
-| Akce                                                                                                             | Stisknout                               |
+| Akce                                                                                                             | Stiskněte tlačítko .                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Převedení stránky do režimu přizpůsobení                                                                          | Ctrl+Shift+P                        |
 | Použití nástroje Výběr (v režimu přizpůsobení)                                                                     | s                                   |

@@ -2,13 +2,13 @@
 title: Přehled faktur dodavatele
 description: V tomto tématu jsou obecné informace o fakturách dodavatele.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985330"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358410"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -51,10 +51,10 @@ V následující diskusi naleznete více informací o použití stránek **Otev�
 
 Při otevření faktury dodavatele ze související nákupní objednávky systém vytvoří řádky faktury z nákupní objednávky. Dle výchozího nastavení systém převezme množství z příjemky produktu. Můžete však použít některé z následujících výchozích chování:
 
-- **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Systém nastaví výchozí hodnotu v poli **Množství** z množství určeného v poli **Přijmout nyní** na nákupní objednávce.
-- **Objednané množství** – tuto možnost použijte pro úplné dodávky. Systém nastaví výchozí hodnotu v poli **Množství** z množství určeného v poli **Objednáno** na nákupní objednávce.
+- **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Výchozí hodnota v poli **Množství** bude nastavena na množství určené v poli **Přijmout nyní** na nákupní objednávce.
+- **Objednané množství** – tuto možnost použijte pro úplné dodávky. Výchozí hodnota v poli **Množství** bude nastavena na množství určené v poli **Objednáno** na nákupní objednávce.
 - **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
-- **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Systém převezme výchozí hodnotu v poli **Množství** z celkového množství dostupných příjemek produktu.
+- **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Výchozí hodnota v poli **Množství** je celkové množství dostupných příjemek produktu.
 - **Registrované množství a služby** – tuto možnost použijte, pokud byla množství registrována v deníku doručených položek pro položky na skladě nebo položky, které nejsou na skladě. Tato možnost zahrnuje také služby bez ohledu na to, zda jsou registrovány.
 
 Používá-li vaše právnická osoba párování faktur, můžete si zobrazit výsledky párování množství ve sloupci **Spárování množství v příjemce produktu**. K zobrazení výsledků párování množství můžete použít také tlačítko **Podrobnosti o párování** na kartě podokna akcí **Kontrola**.
@@ -65,7 +65,7 @@ Do faktury dodavatele můžete přidat řádek, který nebyl na nákupní objedn
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Odeslání faktury dodavatele ke kontrole
 
-Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat** sloužící k odeslání faktury dodavatele do procesu kontroly.
+Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se tlačítko **Odeslat** odesílá faktury dodavatele do procesu kontroly.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Zabránění odeslání faktury do workflowu 
 
@@ -102,7 +102,7 @@ Můžete zadat počet faktur, které mají být zahrnuty do dávky, a počet hod
 
 ## <a name="working-with-multiple-invoices"></a>Práce s více fakturami
 
-Můžete pracovat s více fakturami současně a zaúčtovat je všechny najednou. Pokud je nutné vytvořit více faktur, použijte stránku **Nevyřízené faktury dodavatele**. Potřebujete-li zaúčtovat a vytisknout více faktur dodavatele, použijte deník pro schvalování faktur. Když používáte deník pro schvalování faktur, musí být pro nákupní objednávku zaúčtována alespoň jedna příjemka produktu a faktura pro nákupní objednávku musí být zaúčtována do registru faktur. Finanční informace pro fakturu pocházejí z faktury zaúčtované do registru.
+Můžete pracovat s více fakturami současně a zaúčtovat je všechny najednou. Pokud je nutné vytvořit více faktur, použijte stránku **Nevyřízené faktury dodavatele**. Potřebujete-li zaúčtovat a vytisknout více faktur dodavatele, použijte **Deník pro schvalování faktur**. Když používáte **deník pro schvalování faktur**, musí být pro nákupní objednávku zaúčtována alespoň jedna příjemka produktu a faktura pro nákupní objednávku musí být zaúčtována do registru faktur. Finanční informace pro fakturu pocházejí z faktury zaúčtované do registru.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Obnovení faktur dodavatele, které se používají
 

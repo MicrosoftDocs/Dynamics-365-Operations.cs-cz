@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ee206ced76dbdd356c77d34a4b8f197879e9a3f0
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790859"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384765"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Návrh rozhraní pro provádění výrobního provozu
 
@@ -54,7 +54,7 @@ Chcete-li vytvořit a konfigurovat novou kartu, postupujte dle těchto kroků:
 1. V záhlaví stránky proveďte následující nastavení:
 
     - **Název karty** – Zadejte název karty.
-    - **Hlavní zobrazení** – Vyberte z předdefinovaných seznamů úloh (*Aktivní úlohy*, *Všechny úlohy* a *Můj počítač*).
+    - **Hlavní zobrazení** – Vyberte z předdefinovaných seznamů úloh (*Aktivní úlohy*, *Všechny úlohy*, *Moje úlohy* a *Můj počítač*).
     - **Zobrazení podrobností** – Vyberte mezi prázdnou hodnotou nebo **Podrobnosti o úloze**. Pokud vyberete prázdnou hodnotu, na kartě nebude žádné podrobné zobrazení. Pokud vyberete **Podrobnosti o úloze**, podrobné zobrazení bude obsahovat podrobný popis úlohy vybrané v seznamu úloh v hlavním zobrazení.
 
 1. V části **Primární panel nástrojů** vyberte, která tlačítka by měla být k dispozici na primárním panelu nástrojů. Sloupec **Dostupné akce** zobrazuje seznam všech tlačítek, která lze přidat. Sloupec **Vybrané akce** zobrazuje seznam všech tlačítek, která jsou součástí aktuální konfigurace. Pomocí tlačítek mezi sloupci můžete podle potřeby přesouvat vybrané položky mezi sloupci. Použijte tlačítka nahoru a dolů vedle sloupce **Vybrané akce** pro ovládání pořadí, v jakém jsou tlačítka zobrazena v uživatelském rozhraní.

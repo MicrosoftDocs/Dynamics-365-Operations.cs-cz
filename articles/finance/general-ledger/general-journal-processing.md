@@ -2,7 +2,7 @@
 title: Zpracování hlavního deníku
 description: Toto téma popisuje možnosti v aplikaci Microsoft Dynamics 365 Finance, které usnadňují zpracování deníku hlavní knihy a které lze také použít k zaručení správnosti pořízených dat a dodržení interní kontroly.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726770"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367873"
 ---
 # <a name="general-journal-processing"></a>Zpracování hlavního deníku
 
@@ -101,7 +101,7 @@ Na stránce deníku je k dispozici tlačítko pro odemknutí deníku, který má
 Možnost odvolat deník v workflowu, který má stav "bez možnosti obnovy", je povolena pomocí tlačítka **Workflow** v deníku a na stránce **Historie workflowu**. To je povoleno funkcí nazvanou **Obnovení stavu workflowu pro deníky** na stránce **Správa funkcí**.
 
 ## <a name="delete-journal-lines"></a>Odstranit řádky deníku
-Možnost rychlé odstranění všech řádků deníku je povolena v deníku v části **Funkce** > **Odstranit řádky deníku**. Chcete-li tuto funkci povolit, vyberte ve **Správě funkcí** možnost **Odstranit optimalizace výkonu deníku**.
+Možnost rychlé odstranění všech řádků deníku je povolena v deníku v části **Funkce** > **Odstranit řádky deníku**. Chcete-li tuto funkci povolit, vyberte ve **Správě funkcí** možnost **Odstranit optimalizace výkonu deníku**. Tato funkce ovlivňuje rozšíření na tabulce **LedgerJournalTrans** a je to metoda **Odstranit**, protože sada řádků je odstraněna bez volání metody **Odstranit** každého řádku. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

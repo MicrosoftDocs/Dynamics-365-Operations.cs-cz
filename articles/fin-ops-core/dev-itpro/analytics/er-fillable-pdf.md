@@ -2,7 +2,7 @@
 title: Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 description: Toto téma obsahuje informace o tom, jak navrhnout formát elektronického výkaznictví pro vyplnění šablony PDF.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758281"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367810"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -294,6 +294,20 @@ Následující obrázek znázorňuje příklad první stránky vygenerované ses
 Následující obrázek znázorňuje příklad další stránky vygenerované sestavy.
 
 ![Další stránka vygenerované sestavy.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Omezení
+
+Názvy vyplnitelných polí by měly být jedinečné ve formuláři PDF, který chcete použít jako šablonu zprávy. Pro každé takové pole je při importu formuláře PDF vytvořen samostatný prvek formátu s odpovídajícím názvem v upravitelném formátu ER. Pokud formulář PDF obsahuje několik polí se stejným názvem, vytvoří se pro pole jeden prvek formátu, který neumožňuje jednotlivá vyplnění za běhu.
+
+## <a name="frequently-asked-questions"></a>Časté dotazy
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Když spustím formát ER pro generování zprávy ve formátu PDF, proč se mi zobrazují následující chyby: **Nelze zpracovat iref streamy. Současná implementace PDFSharp nezvládá tuto funkci PDF zavedenou s Acrobatem 6.** a **Název PDF musí začínat lomítkem (/).**
+
+Rámec ER používá ke generování těchto zpráv PDF verzi 1.5 knihovny PDFSharp. Některé funkce PDF 1.5 (Adobe Reader 6.0) ještě nejsou v této knihovně implementovány. Proto PDFSharp zatím nemůže otevřít některé soubory, které jsou označeny jako **pro PDF 1.5 nebo vyšší** a může mít za následek obdržené chyby. K vyřešení problému použijte jedno z následujících řešení:
+
+-   Když používáte vlastní šablonu PDF: Přejděte na nižší verzi šablony Adobe a začněte používat novou šablonu ve vašem formátu ER.
+-   Když používáte šablonu formátu ER, kterou s vámi sdílel jiný poskytovatel konfigurace jako součást řešení ER: Kontaktujte vlastníka tohoto řešení ER a poskytněte mu popis problému.
+-   Když používáte řešení ISV, které obsahuje dřívější verzi knihovny PDFSharp: Kontaktujte vlastníka řešení a navrhněte mu upgrade na novější verzi PDFSharp.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -2,21 +2,21 @@
 title: Přehled fiskální integrace pro kanály Commerce
 description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077185"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388306"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Přehled fiskální integrace pro kanály Commerce
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -46,6 +46,9 @@ Ukázka fiskální integrace může obsahovat rozšíření Commerce Runtime (CR
 - **Konfigurace fiskálního konektoru** – Tato konfigurace definuje fyzickou komunikaci s konkrétním fiskálním zařízením nebo službou.
 
 Proces fiskální registrace pro specifickou registrační pokladnu POS je definován příslušným nastavením ve funkčním profilu POS. Další podrobnosti o tom, jak konfigurovat proces fiskální registrace, odeslat konfigurace poskytovatele fiskálních dokumentů a fiskálních konektorů a změnit parametry konfigurace naleznete v tématu [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Pokud potřebujete na těchto zařízeních poskytovat pouze nefiskální operace, jako je vyhledávání v katalogu produktů, vyhledávání zákazníků nebo vytváření konceptů transakcí, můžete vybrat registry s omezeními fiskálního procesu. Další informace viz [Nastavení registrů s omezeními fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Následující typický fiskální registrační tok začíná událostí v POS (například dokončením prodejní transakce) a implementuje předem definovanou sekvenci kroků, které zahrnují další komponenty Commerce (např. CRT a Hardwarová stanice).
 

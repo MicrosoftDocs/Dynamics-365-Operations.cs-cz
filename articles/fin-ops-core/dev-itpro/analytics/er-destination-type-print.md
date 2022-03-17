@@ -2,7 +2,7 @@
 title: Typ cílového místa elektronického výkaznictví tiskárny
 description: Toto téma vysvětluje, jak nakonfigurovat cíl tiskárny pro každou SLOŽKU nebo SOUBOR ve formátu elektronického výkaznictví (ER).
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712705"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388281"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Cílové místo tiskárny
 
@@ -43,7 +43,24 @@ Chcete-li zpřístupnit cíl **tiskárny** v aktuální instanci Microsoft Dynam
 
 ### <a name="applicability"></a>Použitelnost
 
-Cíl **tiskárny** lze konfigurovat pouze pro součásti souboru, které jsou použity ke generování výstupu ve formátu tisknutelného PDF (PDF Merger nebo prvky formátu souboru PDF) nebo formátu Microsoft Office Excel/Word. Když je výstup generován ve formátu PDF, je odeslán do tiskárny. Když je výstup generován ve formátu Microsoft Office, je automaticky převeden do formátu PDF a poté odeslán do tiskárny.
+#### <a name="pdf-printing"></a>Tisk PDF
+
+Ve verzích Finance před 10.0.18 lze cíl **Tiskárna** konfigurovat pouze pro součásti souboru, které jsou použity ke generování výstupu ve formátu tisknutelného PDF (**PDF Merger** nebo prvky formátu **souboru PDF**) nebo formátu Microsoft Office Excel a Word (prvek formátu **Soubor Excel**). Když je výstup generován ve formátu PDF, je odeslán do tiskárny. Když je výstup generován ve formátu Office pomocí prvku formátu **Soubor Excel**, je automaticky převeden do formátu PDF a poté odeslán do tiskárny.
+
+Od verze 10.0.18 však můžete nakonfigurovat cíl **Tiskárna** pro prvek formátu **Soubor Common**. Tento prvek formátu se většinou používá pro generování výstupu buď ve formátu TXT, nebo XML. Můžete nakonfigurovat formát ER, který obsahuje prvek formátu **Soubor Common** jako kořenový prvek formátu a formátu **Binární obsah** jako jediný vnořený element pod ním. V tomto případě prvek formátu **Soubor Common** vytvoří výstup ve formátu, který je určen vazbou, kterou konfigurujete pro prvek formátu **Binární obsah**. Tuto vazbu můžete například nakonfigurovat k [vyplnění](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) tohoto prvku obsahem přílohy [Správa dokumentů](../../fin-ops/organization-administration/configure-document-management.md) přílohu ve formátu PDF nebo Office (Excel nebo Word). Výstup můžete vytisknout pomocí nakonfigurovaného cíle **Tiskárna**. 
+
+> [!NOTE]
+> Když vyberete prvek formátu **Common\\File** pro konfiguraci cíle **Tiskárna**, neexistuje způsob, jak v době návrhu zaručit, že vybraný prvek vytvoří výstup ve formátu PDF, nebo výstup, který lze převést do formátu PDF. Proto se zobrazí následující varovná zpráva: „Ujistěte se prosím, že výstup generovaný vybranou komponentou formátu lze převést do PDF. V opačném případě zrušte zaškrtnutí možnosti „Převést do PDF“.“ Musíte podniknout kroky, které pomohou předejít problémům za běhu, když je k tisku za běhu poskytnut výstup bez PDF nebo nekonvertibilní do PDF. Pokud očekáváte, že budete přijímat výstup ve formátu Office (Excel nebo Word), možnost **Převést do PDF** musí být vybrána.
+>
+> Ve verzi 10.0.26 a k použití možnosti **Převést do PDF** musíte vybrat **PDF** jako parametr **Typ směrování dokumentu** konfigurovaného cíle **Tiskárna**.
+
+#### <a name="zpl-printing"></a>Tisk ZPL
+
+Ve verzi 10.0.26 a novější můžete nakonfigurovat cíl **Tiskárna** pro prvek formátu **Common\\File** výběrem **ZPL** jako parametru **Typ směrování dokumentu**. V tomto případě je možnost **Převést do PDF** za běhu ignorována a výstup TXT nebo XML je odeslán přímo na vybranou tiskárnu pomocí smlouvy Zebra Programming Language (ZPL) [Agent pro směrování dokumentů (DRA)](install-document-routing-agent.md). Tuto funkci použijte pro formát ER, který představuje rozložení štítků ZPL II pro tisk různých štítků.
+
+[![Nastavení parametru Typ směrování dokumentu v dialogovém okně Nastavení cíle.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Další informace o této funkci viz [Návrh nového ER řešení pro tisk štítků ZPL](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Omezení
 

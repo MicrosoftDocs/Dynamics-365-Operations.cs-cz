@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068102"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384477"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěže správy skladu pro jednotky škálování cloudu a hraniční sítě
 
@@ -210,9 +210,9 @@ Následující funkce správy skladu nejsou aktuálně podporovány v úlohách 
 - Zpracování s položkami povolenými pouze pro správu dopravy (TMS).
 - Zpracování s negativními zásobami na skladě.
 - Sdílení dat mezi společnostmi pro produkty. <!-- Planned -->
-- Zpracování skladové práce s dodacími listy.
-- Zpracování skladové práce s manipulací s materiálem / automatizací skladu.
+- Zpracování skladové práce s dodacími listy (například poznámky k balení na balicí stanici).
 - Obrázky hlavních dat produktu (například v mobilní aplikaci Warehouse Management).
+- Zpracování skladové práce s manipulací s materiálem / automatizací skladu.
 
 > [!WARNING]
 > Některé funkce skladu nebudou k dispozici pro sklady se spuštěnými úlohami správy skladu na jednotce škálování a také nejsou podporovány na rozbočovači nebo na úlohách jednotky škálování.
@@ -235,10 +235,9 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Zpracování vlny dodávky                                     | Ne  |Ano, kromě **Stavba a třídění nákladu** |
 | Udržování zásilek pro vlnu                                  | Ne  | Ano|
 | Zpracování skladových prací (vč. tisku registrační značky)        | Ne  | Ano, ale pouze pro dříve uvedené podporované funkce |
-| Výdej seskupení                                              | Ne  | Ano|
-| Ruční zpracování balení, vč. „Zpracování vychystávání zabaleného kontejneru“ | Číslo <P>Některé zpracování lze provést po počátečním procesu vychystávání zpracovaném jednotkou škálování, ale nedoporučuje se to kvůli následujícím blokovaným operacím.</p>  | Ne |
-| Odebrat kontejner ze skupiny                                  | Ne  | Ne |
-| Zpracování odchozího třídění                                  | Ne  | Ne |
+| Výdej seskupení                                              | Číslo  | Ano|
+| Ruční zpracování v balicí stanici  | Číslo  | Číslo |
+| Zpracování odchozího třídění                                  | Číslo  | Číslo |
 | Tisk dokumentů souvisejících se zátěží                           | Ano | Ano|
 | Přepravní doklad a generování ASN                            | Ne  | Ano|
 | Potvrzení zásilky                                             | Ne  | Ano|
@@ -258,6 +257,7 @@ Následující tabulka ukazuje, které odchozí funkce jsou podporovány a kde j
 | Zrušit potvrzení expedice                                | Číslo  | Ano|
 | Žádost o zrušení řádků skladových objednávek                      | Ano | Ne, ale žádost bude schválena nebo zamítnuta |
 | <p>Uvolnit převodní příkazy pro příjem</p><p>Tento proces proběhne automaticky jako součást procesu odeslání převodního příkazu. Lze jej však ručně použít k povolení příjmu registrační značky na jednotce škálování, pokud byly zrušeny řádky příchozích skladových objednávek nebo jako součást procesu nasazení nové úlohy.</p> | Ano | Číslo|
+<!--| Ruční zpracování v balicí stanici, vč. práce „vychystávání zabaleného kontejneru“  | Číslo  | Ano, ale bez prokazování zásilky TMS a vystavení prodejního dodacího listu a bez poznámek k balení a obrázků produktů |-->
 
 ### <a name="inbound"></a>Příchozí
 
@@ -359,6 +359,7 @@ V nasazení centra můžete následující dávkové úlohy spravovat ručně:
     - Zpracovatel zprávy jednotky škálování do centra
     - Registrovat příjmy zdrojové objednávky
     - Dokončit skladové objednávky
+    - Vygenerovat chybějící odchozí skladové objednávky
 
 - Následující dávkové úlohy můžete spravovat v okně **Warehouse management \> Pravidelné úkoly \> Správa úlohy**:
 

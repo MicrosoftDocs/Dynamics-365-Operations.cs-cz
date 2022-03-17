@@ -1,8 +1,8 @@
 ---
 title: Odebrané nebo zastaralé funkce platformy
-description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
+description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 author: sericks007
-ms.date: 12/16/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927472"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384713"
 ---
-# <a name="removed-or-deprecated-platform-features"></a>Odebrané nebo zastaralé funkce platformy
+# <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy aplikací Finance and Operations.
+Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 
-- *Odstraněná* funkce již není k dispozici v produktu.
+- *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
 
 ## <a name="feature-removal-effective-october-2021"></a>Odstranění funkce platné od října 2021
 
@@ -67,7 +67,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.23 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.23 finančních a provozních aplikací
 
 ### <a name="ondbsynchronize-event"></a>Událost OnDBSynchronize
 
@@ -90,7 +90,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé. Plánované datum odstranění je duben 2023. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.21 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.21 finančních a provozních aplikací
 
 ### <a name="skype-for-business-online-support"></a>Podpora aplikace Online Skype pro firmy
 
@@ -145,15 +145,15 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Abychom snížili režii provozu, monitorování a údržby správy indexu zákazníky, byla tato funkce odstraněna. |
 | **Nahrazeno jinou funkcí?**   | Do budoucna budou údržbu indexu provádět služby společnosti Microsoft. K tomu bude docházet nepřetržitě, aniž by to ovlivnilo pracovní vytížení uživatele. |
-| **Ovlivněné oblasti produktu**         | Aplikace Finance and Operations|
+| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace|
 | **Možnost nasazení**              | Nasazení v cloudu - ovlivňuje provozní prostředí spravovaná společností Microsoft a prostředí sandbox Tier 2 až Tier 5. |
 | **Stav**                         | Tato funkce byla odstraněna. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.17 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.17 finančních a provozních aplikací
 
 
-### <a name="visual-studio-2015"></a>Visual Studio2015
+### <a name="visual-studio-2015"></a>Visual Studio 2015
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -177,24 +177,25 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Artefakty metadat spojené s Dynamics AX 2012 Enterprise Portal (EP) byly vyřazeny, protože aplikace Finance and Operations nikdy nepodporovaly EP. |
-| **Nahrazeno jinou funkcí?**   | Ne |
+| **Důvod pro zrušení/odstranění** | Artefakty metadat spojené s Dynamics AX 2012 Enterprise Portal (EP) byly vyřazeny, protože finanční a provozní aplikace nikdy nepodporovaly EP. |
+| **Nahrazeno jinou funkcí?**   | Číslo |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Ve vydání z října 2021 je naplánováno odstranění všech kódů EP. |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.15 aplikací Finance and Operations
+## <a name="deprecation-effective-december-2020"></a>Oznámení o ukončení podpory od prosince 2020
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Podpora aplikace Internet Explorer 11 pro Dynamics 365 je zastaralá
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je podpora aplikace Microsoft Internet Explorer 11 zastaralá pro všechny produkty Dynamics 365 a Internet Explorer 11 nebude podporován po srpnu 2021.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365. |
+| **Důvod pro zrušení/odstranění** | S platností od prosince 2020 je aplikace Microsoft Internet Explorer 11 označena jako zastaralá u všech produktů Dynamics 365 Dynamics Lifecycle Services (LCS) a Internet Explorer 11 nebude po srpnu 2021 podporován.<br><br>To bude mít dopad na zákazníky, kteří používají produkty Dynamics 365 a LCS, které jsou navrženy pro použití prostřednictvím rozhraní Internet Explorer 11. Po srpnu 2021 nebude Internet Explorer 11 podporován pro takové produkty Dynamics 365 a LCS. |
 | **Nahrazeno jinou funkcí?**   | Doporučujeme zákazníkům přejít na Microsoft Edge.|
-| **Ovlivněné oblasti produktu**         | Všechny produkty Dynamics 365 |
+| **Ovlivněné oblasti produktu**         | Všechny produkty Dynamics 365 a LCS |
 | **Možnost nasazení**              | Vše|
 | **Stav**                         | Zastaralé: Internet Explorer 11 nebude podporován po srpnu 2021.|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.15 finančních a provozních aplikací
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Doplněk sady Visual Studio pro použití oprav hotfix metadat
 
@@ -207,7 +208,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Stav**                         | Od verzei 10.0.15 už tento doplněk není součástí nástrojů sady Visual Studio. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.14 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.14 finančních a provozních aplikací
 
 ### <a name="online-users-page"></a>Stránka online uživatelů 
 
@@ -220,7 +221,7 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Stav**                         | Do října 2021 bude tento formulář odstraněn.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.13 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.13 finančních a provozních aplikací
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Vlastní kód definovaný ve vlastnostech sestavy SSRS 
@@ -264,19 +265,19 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 | **Stav**                         | Ve verzi 10.0.13 / Platform Update 37 je funkce uložených pohledů obecně k dispozici a zákazníci ji mohou volitelně zapnout. Funkce uložených pohledů začne být povinný od vydání z října 2021. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.12 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.12 finančních a provozních aplikací
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Rozšíření formuláře ovládacího prvku mřížky nebo skupiny obsahující neplatné odkazy na pole
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Vlastnost datové skupiny v mřížce nebo skupinových ovládacích prvcích se používá k automatickému zobrazení všech polí skupiny polí. Ovládací prvek mřížky nebo skupiny přidaný pomocí rozšíření může obsahovat pole, která již nejsou definována ve skupině polí, nebo to mohou být chybějící pole, která jsou definována ve skupině polí. To může způsobit nekonzistentní chování za běhu. Aktualizace platformy pro verze 10.0.12 aplikací Finance and Operations nyní kategorizují tento problém jako *varování* kompilátoru. Chcete-li tento problém vyřešit, otevřete rozšíření formuláře a uložte je.
+| **Důvod pro zrušení/odstranění** | Vlastnost datové skupiny v mřížce nebo skupinových ovládacích prvcích se používá k automatickému zobrazení všech polí skupiny polí. Ovládací prvek mřížky nebo skupiny přidaný pomocí rozšíření může obsahovat pole, která již nejsou definována ve skupině polí, nebo to mohou být chybějící pole, která jsou definována ve skupině polí. To může způsobit nekonzistentní chování za běhu. Aktualizace platformy pro verze 10.0.12 finančních a provozních aplikací nyní kategorizují tento problém jako *varování* kompilátoru. Chcete-li tento problém vyřešit, otevřete rozšíření formuláře a uložte je.
 | **Nahrazeno jinou funkcí?**   | Toto varování kompilátoru bude v budoucí aktualizaci nahrazeno chybou kompilátoru. |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Varování kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.12 aplikací Finance and Operations. |
+| **Stav**                         | Varování kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.12 finančních a provozních aplikací. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Aktualizace platformy pro verzi 10.0.11 aplikací Finance and Operations
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Aktualizace platformy pro verze 10.0.11 finančních a provozních aplikací
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicitní bezpečné seznamy pro samoobslužná prostředí
 
@@ -302,11 +303,11 @@ Podrobné informace o objektech v aplikacích Finance and Operations lze naléz
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Skupiny polí v definicích metadat tabulky mohou obsahovat odkazy na pole, které nejsou platné. Při nasazení těchto skupin polí to může způsobit chyby runtime ve Financial Reporting a Microsoft SQL Server Reporting Services (SSRS). Aktualizace platformy 23 zavedla *upozornění* kompilátoru, které umožnilo adresovat tento problém s metadaty. Aktualizace platformy pro verze 10.0.11 aplikací Finance and Operations kategorizují tento problém jako *chybu* kompilátoru.<p>Chcete-li opravit problém, postupujte následovně.</p><ol><li>Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.</li><li>Překompilujte.</li><li>Zkontrolujte, zda jsou řešeny všechny chyby.</li></ol> |
+| **Důvod pro zrušení/odstranění** | Skupiny polí v definicích metadat tabulky mohou obsahovat odkazy na pole, které nejsou platné. Při nasazení těchto skupin polí to může způsobit chyby runtime ve Financial Reporting a Microsoft SQL Server Reporting Services (SSRS). Aktualizace platformy 23 zavedla *upozornění* kompilátoru, které umožnilo adresovat tento problém s metadaty. Aktualizace platformy pro verze 10.0.11 finančních a provozních aplikací kategorizují tento problém jako *chybu* kompilátoru.<p>Chcete-li opravit problém, postupujte následovně.</p><ol><li>Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.</li><li>Překompilujte.</li><li>Zkontrolujte, zda jsou řešeny všechny chyby.</li></ol> |
 | **Nahrazeno jinou funkcí?**   | Tato chyba kompilátoru trvale nahrazuje upozornění kompilátoru.  |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: upozornění kompilátoru je chybou kompilátoru v aktualizacích platformy pro verze 10.0.11 aplikací Finance and Operations. |
+| **Stav**                         | Zastaralé: Upozornění kompilátoru představuje chybu kompilátoru u aktualizací platformy pro verze 10.0.11 finančních a provozních aplikací. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Licence ISV vytvořené pomocí algoritmu hash SHA1
 

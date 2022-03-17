@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075012"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384412"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -71,6 +71,18 @@ Seznam aktivních úloh má následující sloupce:
 - **Dokončeno** – Tento sloupec zobrazuje množství, které již bylo pro úlohu dokončeno.
 - **Zlikvidováno** – Tento sloupec zobrazuje množství, které již bylo pro úlohu zlikvidováno.
 - **Zbývající** – Tento sloupec zobrazuje množství, které zbývá do dokončení úlohy.
+
+## <a name="my-jobs-tab"></a>Karta Moje úlohy
+
+Karta **Moje úlohy** umožňuje pracovníkům snadno zobrazit všechny nezahájené a nedokončené úlohy, které jsou jim specificky přiřazeny. Je to užitečné ve společnostech, kde jsou úkoly někdy nebo vždy přiděleny konkrétním pracovníkům (lidské zdroje) namísto jiných typů zdrojů (jako jsou stroje). 
+
+Plánovací systém automaticky přiřadí každou produkční úlohu ke konkrétnímu záznamu prostředku a každý záznam prostředku má svůj typ (například stroj nebo člověk). Když nastavíte zaměstnance jako výrobního pracovníka, můžete účet pracovníka přidružit k jedinečnému záznamu lidských zdrojů. 
+
+Karta **Moje úlohy** obsahuje všechny nezahájené a nedokončené úlohy, které byly přiřazeny k záznamu lidských zdrojů přihlášeného pracovníka, pokud je nějaký pracovník přihlášen. Nikdy neuvádí úlohy, které byly přiřazeny k počítači nebo jinému typu zdroje, i když přihlášený pracovník na těchto úlohách začal pracovat.
+
+Chcete-li zobrazit všechny úlohy, které byly spuštěny přihlášeným pracovníkem, bez ohledu na typ zdroje, ke kterému je každá úloha přiřazena, použijte kartu **Aktivní úlohy**. Chcete-li zobrazit všechny nedokončené úlohy, které odpovídají konfiguraci místního filtru úloh, bez ohledu na pracovníka nebo stav zahájení, použijte kartu **Všechny úlohy**.
+
+![Karta Moje úlohy.](media/pfei-my-jobs-tab.png "Karta Moje úlohy")
 
 ## <a name="my-machine-tab"></a>Karta Můj stroj
 
@@ -133,6 +145,13 @@ Pokud je dávkový příkaz vytvořen z verze vzorce, kde je možnost **Variace 
 
 V tomto případě může pracovník specifikovat koprodukt a množství, které se má hlásit, výběrem **Variace koproduktů** v dialogovém okně hlášení pokroku. Pracovník si pak může vybrat ze všech uvolněných produktů, které jsou definovány jako koprodukty.
 
+### <a name="reporting-catch-weight-items"></a>Vykazování položek se skutečnou hmotností
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek, které jsou vytvořeny pro položky skutečné hmotnosti. Dávkové příkazy se vytvářejí ze vzorců, které lze definovat tak, aby měly položky skutečné hmotnosti jako položky vzorce, koprodukty a vedlejší produkty. Vzorec lze také definovat tak, aby obsahoval řádky vzorce pro přísady, které jsou definovány pro skutečnou hmotnost. Položky skutečné hmotnosti používají ke sledování inventáře dvě měrné jednotky: množství skutečné hmotnosti a množství inventáře. Například v potravinářském průmyslu lze maso v krabicích definovat jako položku skutečné hmotnosti, kde se množství skutečné hmotnosti používá ke sledování počtu krabic a množství v inventáři se používá ke sledování hmotnosti krabic.
+
 ## <a name="reporting-scrap"></a>Hlášení odpadu
 
 Když pracovník dokončí nebo částečně dokončí úlohu, může vykázat odpadvýběrem úlohy na kartě **Aktivní úlohy** a poté volbou **Hlásit odpad**. Pak v dialogovém okně **Hlášení odpadu** pracovník zadá množství odpadu pomocí numerické klávesnice. Pracovník také vybere důvod (*Žádný*, *Stroj*, *Operátor* nebo *Materiál*).
@@ -187,6 +206,13 @@ Provádět můžete následující akce:
 
 Tlačítko **Upravit materiál** lze nakonfigurovat tak, aby se zobrazovalo na panelu nástrojů vpravo. (Další informace viz téma [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).) Pracovník může vybrat příkaz **Upravit materiál** pro probíhající výrobní úlohu. V tomto případě se zobrazí dialogové okno **Upravit materiál**, kde pracovník může provést požadované úpravy. Po otevření dialogového okna se pro výrobní úlohu vytvoří výrobní výdejka, která obsahuje řádky pro upravená množství. Když pracovník vybere příkaz **Zaúčtovat**, úprava je potvrzena a seznam k odběru je zaúčtován. Když pracovník vybere **Storno**, výdejka je odstraněna a není provedena žádná změna.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Úprava spotřebu materiálu pro položky skutečné hmotnosti
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracovníci mohou upravit spotřebu materiálu pro položky skutečné hmotnosti. Tato funkce se používá ve scénářích, kde skutečné množství materiálu skutečné hmotnosti, které bylo spotřebováno výrobní úlohou, bylo větší nebo menší než plánované množství. Proto musí být upraveno tak, aby vyjadřovalo aktuální stav zásob. Když pracovník upraví spotřebu položky skutečné hmotnosti, může upravit množství skutečné hmotnosti i množství inventáře. Pokud je například plánována výrobní zakázka na spotřebu pěti krabic, které mají odhadovanou hmotnost 2 kilogramy na krabici, pracovník může upravit jak počet krabic ke spotřebě, tak hmotnost krabic. Systém ověří, že zadaná hmotnost krabic je v rámci definované minimální a maximální prahové hodnoty, která je definována na uvolněném produktu.
+
 ### <a name="reserve-materials"></a>Rezervace materiálů
 
 V dialogu **Upravit materiál** může pracovník provádět a upravovat rezervace materiálů výběrem příkazu **Rezervovat materiál**. Dialogové okno **Rezervovat materiál**, které se objeví, ukazuje fyzicky dostupné zásoby položky pro každou skladovací a sledovací dimenzi.
@@ -197,6 +223,8 @@ Další informace o tom, jak nastavit umístění výrobního vstupu, najdete v 
 
 > [!NOTE]
 > Rezervace, které pracovník provádí v dialogovém okně **Rezervovat materiál**, zůstanou zachovány, když pracovník vybere **Storno** v dialogu **Hlášení průběhu** nebo **Hlášení odpadu**.
+>
+> U položek se skutečnou hmotností není možné upravovat rezervace.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Dokončení a zahájení nové úlohy
 

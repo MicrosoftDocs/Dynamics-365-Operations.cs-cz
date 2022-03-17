@@ -2,7 +2,7 @@
 title: Seznam funkcí elektronického výkaznictví textové kategorie
 description: Toto téma obsahuje informace o textových funkcích, které jsou podporovány v elektronickém výkaznictví (ER).
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075493"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367760"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Seznam funkcí elektronického výkaznictví textové kategorie
 
@@ -51,7 +51,7 @@ Textové funkce elektronického výkaznictví (ER) lze použít k provádění o
 | [Vpravo](er-functions-text-right.md) | Tato funkce vrací hodnotu typu *řetězec*, která představuje zadaný počet znaků od konce zadaného řetězce. |
 | [Text](er-functions-text-text.md) | Tato funkce vrací zadané číslo jako hodnotu *řetězec* poté, co bylo převedeno na textový řetězec naformátovaný podle nastavení národního prostředí jazyka stávající instance aplikace. |
 | [Přeložit](er-functions-text-translate.md) | Tato funkce vrací *řetězcovou* hodnotu, která obsahuje výsledek nahrazení zadaného textu znaky pro jinou zadanou sadu znaků. |
-| [Trim](er-functions-text-trim.md) | Tato funkce vrací určený textový řetězec jako hodnotu typu *řetězec* poté, co byly zkráceny úvodní a koncové mezery a odebráno více mezer mezi slovy. |
+| [Trim](er-functions-text-trim.md) | Tato funkce vrátí zadaný textový řetězec jako hodnotu *Řetězec* poté, co tabulátor, návrat vozíku, posun řádku a posun formuláře byly nahrazeny jednou mezerou, po zkrácení úvodní a koncové mezery a po odstranění více mezer mezi slovy. |
 | [Upper](er-functions-text-upper.md) | Tato funkce vrací zadaný textový řetězec jako hodnotu *řetězec* poté, co byl převeden na velká písmena. |
 
 ## <a name="additional-resources"></a>Další zdroje

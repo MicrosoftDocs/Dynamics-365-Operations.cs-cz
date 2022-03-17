@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062079"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358357"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organizační hierarchie v Dataverse
 
@@ -36,11 +36,11 @@ Mapování tabulky organizační hierarchie jsou k dispozici pro jednosměrnou s
 
 ## <a name="templates"></a>Šablony
 
-Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map tabulek pro synchronizaci produktů a souvisejících informací.
+Organizace představuje skupinu lidí, kteří spolupracují na provádění obchodního procesu nebo dosažení cíle. Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik. Můžete definovat následující typy interních organizací: právnické osoby, provozní jednotky a týmy. Jak ukazuje následující tabulka, je vytvořena kolekce tabulkových map pro synchronizaci informací o právnických osobách, provozních jednotkách a souvisejících organizačních hierarchiích.
 
-Finanční a provozní aplikace | Aplikace Customer Engagement     | popis
+Finanční a provozní aplikace | Aplikace Customer Engagement     | Popis
 -----------------------|--------------------------------|---
-[Právnické osoby](mapping-reference.md#102) | cdm_companies | Poskytuje obousměrnou synchronizaci informací o právnické osobě (společnosti).
+[Právnické osoby](mapping-reference.md#102) | cdm_companies | 
 [Právnické osoby](mapping-reference.md#142) | msdyn_internalorganizations |
 [Provozní jednotka](mapping-reference.md#143) | msdyn_internalorganizations |
 [Organizační hierarchie - publikovaná](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Tato šablona poskytuje jednosměrnou synchronizaci tabulky publikované hierarchie organizace.

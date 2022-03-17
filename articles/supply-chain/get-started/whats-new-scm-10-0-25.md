@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102989"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384531"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Náhled Dynamics 365 Supply Chain Management 10.0.25 (duben 2022)
 
@@ -34,10 +34,10 @@ V následující tabulce je uveden seznam funkcí této verze. Tohle téma můž
 
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
-| Zásoby&nbsp;a&nbsp;logistika | Vylepšení nebezpečných materiálů | Tato vylepšení vycházejí ze stávající funkčnosti nebezpečných materiálů a pomáhají společnostem lépe dodržovat místní předpisy při přepravě nebezpečných materiálů v různých geografických oblastech. <!-- KFM: Update to 2022w1 link when published -->| Správa funkcí:<br>*Vylepšení nebezpečných materiálů* |
-| Zásoby&nbsp;a&nbsp;logistika | Práce balení pro balicí stanice | Tato funkce výrazně zlepšuje flexibilitu a agilitu vašich balicích a přepravních operací. Během procesu balení mohou nyní skladníci balit a odesílat jednotlivé balíky, které se týkají stejné dodávky a nákladu. Řádky objednávek, které jsou součástí stejné dodávky, nemusejí být nutně odeslány společně, pokud jsou některé položky připraveny k odeslání ihned. Jedna objednávka může být zabalena a odeslána ve více dodávkách v různých dodacích lhůtách, čímž se zkrátí čekací doby a zvýší se agilita.<!-- KFM: Update to 2022w1 link when published --> | Správa funkcí:<br>*Práce balení pro balicí stanice* |
-| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) | Správa funkcí:<br>*Naskenovat čárové kódy GS1* |
-| Výroba | [Spotřeba materiálu a rezervace v rozhraní pro provádění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)* |
+| Zásoby&nbsp;a&nbsp;logistika | [Vylepšení nebezpečných materiálů](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Již brzy | Správa funkcí:<br>*Vylepšení nebezpečných materiálů* |
+| Zásoby&nbsp;a&nbsp;logistika | [Práce balení pro balicí stanice](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Již brzy | Správa funkcí:<br>*Práce balení pro balicí stanice* |
+| Zásoby&nbsp;a&nbsp;logistika | [Skenování čárových kódů ve skladu pomocí standardů formátu GS1](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [QR kódy a čárové kódy GS1](../warehousing/gs1-barcodes.md) | Správa funkcí:<br>*Naskenovat čárové kódy GS1* |
+| Výroba | [Spotřeba materiálu a rezervace v rozhraní pro provádění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*<br><br>Nebo:<br><br>Správa funkcí:<br>*(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)* |
 | Výroba | [Registrovat spotřebu materiálu v jednotce škálování](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě](../cloud-edge/cloud-edge-workload-manufacturing.md) | Správa funkcí:<br>*Registrovat spotřebu materiálu v mobilní aplikaci na jednotce škálování* |
 | Plánování | [Návrhy optimalizace plánování pro optimalizaci stávající nabídky](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Zprávy akce](../master-planning/action-messages.md) | Ve výchozím nastavení povoleno |
 | Plánování | Zjednodušené plánované objednávky | [Zjednodušené plánované objednávky](../master-planning/planning-optimization/planned-orders-simplified.md ) | Správa funkcí:<br>*Zjednodušené plánované objednávky* |

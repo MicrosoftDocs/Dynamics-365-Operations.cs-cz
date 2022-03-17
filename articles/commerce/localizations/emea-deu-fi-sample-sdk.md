@@ -2,23 +2,24 @@
 title: Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Německo (starší verze)
 description: Toto téma obsahuje pokyny pro nasazení ukázky fiskální integrace pro Německo ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077058"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388177"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Německo (starší verze)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Toto téma obsahuje pokyny pro nasazení ukázkové integrace služby fiskální registrace pro Německo ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace služby fiskální registrace pro Německo](emea-deu-fi-sample.md). 
 
@@ -85,11 +86,15 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
     ```
 
-### <a name="enable-hardware-station-extensions"></a>Povolení rozšíření hardwarové stanice
+### <a name="enable-fiscal-connector-extensions"></a>Zapnutí rozšíření fiskálních konektorů
+
+Rozšíření fiskálního konektoru můžete zapnout na [hardwarové stanici](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) nebo [registru POS](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+
+#### <a name="enable-hardware-station-extensions"></a>Povolení rozšíření hardwarové stanice
 
 Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarové stanice. Pro dokončení následujících postupů otevřete řešení **HardwareStationSamples.sln** v části **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### <a name="efrsample-component"></a>Komponenta EFRSample
+##### <a name="efrsample-component"></a>Komponenta EFRSample
 
 1. Najděte projekt **HardwareStation.Extension.EFRSample** a vytvořte ho.
 2. Ve složce **Extension.EFRSample\\bin\\Debug** vyhledejte následující soubory sestavení:
@@ -112,6 +117,30 @@ Komponenty rozšíření hardwarové stanice jsou součástí ukázek hardwarov�
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### <a name="enable-pos-extensions"></a>Zapnutí rozšíření POS
+
+Ukázka rozšíření POS se nachází ve složce **src\\FiscalIntegration\\PosFiscalConnectorSample** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+
+Chcete-li používat ukázku rozšíření POS ve starší sadě SDK, postupujte takto.
+
+1. Zkopírujte složku **Pos.Extension** do POS složky **Extensions** starší sady SDK (např. `C:\RetailSDK\src\POS\Extensions`).
+1. Přejmenujte kopii složky **Pos.Extension** **PosFiscalConnector**.
+1. Odeberte následující složky a soubory ze složky **PosFiscalConnector**:
+
+    - bin
+    - DataService
+    - devDependencies
+    - Knihovny
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdmxModel.g.xml
+    - tsconfig.json
+
+1. Otevřete řešení **CloudPos.sln** nebo **ModernPos.sln**.
+1. Do projektu **Pos.Extensions** zahrňte složku **PosFiscalConnector**.
+1. Otevřete soubor **extensions.json** a přidejte rozšíření **PosFiscalConnector**.
+1. Sestavte sadu SDK.
 
 ### <a name="production-environment"></a>Produkční prostředí
 
@@ -210,3 +239,26 @@ Jsou přidána následující nastavení:
 - **Adresa koncového bodu** – adresa URL služby daňové registrace.
 - **Časový limit** – doba v milisekundách (ms), po kterou bude čekat ovladač na odpověď od služby daňové registrace.
 - **Zobrazit oznámení o fiskální registraci** – Pokud je tento parametr zapnutý, budou se upozornění z fiskální služby zobrazovat jako uživatelské zprávy v POS.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Návrh rozšíření fiskálních konektorů POS
+
+Účelem rozšíření fiskálního konektoru POS je komunikace se službou daňové registrace z POS. Ke komunikaci využívá protokol HTTPS.
+
+#### <a name="fiscal-connector-factory"></a>Továrna fiskálního konektoru
+
+Továrna fiskálního konektoru mapuje název konektoru na implementaci fiskálního konektoru a je umístěna v souboru **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Název konektoru musí odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v centrále Commerce.
+
+#### <a name="efr-fiscal-connector"></a>Fiskální konektor EFR
+
+Fiskální konektor EFR je umístěn v souboru **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Implementuje rozhraní **IFiscalConnector**, které podporuje následující požadavky:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – tento požadavek odesílá dokumenty službě daňové registrace a z ní vrátí odpověď.
+- **FiscalRegisterIsReadyClientRequest** – tento požadavek se používá pro kontrolu stavu služby daňové registrace.
+- **FiscalRegisterInitializeClientRequest** – tento požadavek se používá pro inicializaci stavu služby daňové registrace.
+
+#### <a name="configuration"></a>Konfigurace
+
+Konfigurace se nachází ve složce **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Tento soubor slouží k povolení nastavení pro fiskální konektor ke konfiguraci z centrály Commerce. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace. Jsou přidána následující nastavení:
+
+- **Adresa koncového bodu** – adresa URL služby daňové registrace.
+- **Časový limit** – doba v milisekundách (ms), po kterou bude čekat konektor na odpověď od služby daňové registrace.

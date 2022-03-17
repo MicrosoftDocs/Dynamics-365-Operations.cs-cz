@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311972"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349710"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -158,8 +158,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 504 | Odvolat transakci | Stornování dříve pozastavené transakce z aktuálního obchodu. | Ano | Ano | Ne | Ano‡ | Ne |
 | 305 | Uplatnit věrnostní body | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ano |
 | 635 | Refundovat dopravné | Refundace poplatků za dopravu u zrušené objednávky. | Ne | Ne | Ne | Ne | Ne |
-| 644 | Odebrat kód kupónu | Vyzvěte uživatele k odstranění kupónů jejich výběrem v seznamu kupónů, které jsou aktuálně přidruženy k transakci. | Ano | Ano | Ne | Ano | Ne |
-| 1057 | Znovu vytisknout Z | Znovu vytiskněte sestavu Z pro předchozí směnu nebo vybranou směnu. | Ano | Ano | Ano | Ne | Ne |
+| 644 | Odebrat kód kupónu | Vyzvěte uživatele k odstranění kupónů jejich výběrem v seznamu kupónů, které jsou aktuálně přidruženy k transakci. | Ano | Ano | Ne | Ano | Číslo |
+| 1057 | Znovu vytisknout Z | Znovu vytiskněte sestavu Z pro předchozí směnu. | Ano | Ano | Ano | Číslo | Číslo |
 | 1216 | Zadejte nové heslo | Tato operace umožní uživateli, který má oprávnění k obnovení hesla, resetovat heslo jiného zaměstnance pomocí dočasného hesla. | Ano | Ano | Ano | Ne | Ne |
 | 1219 | Otevření URL adresy v POS | Otevření správcem nakonfigurovanou adresu URL v POS. | Ano | Ano | Ano | Ano | Ne |
 | 109 | Vrátit produkt | Provede vrácení jednotlivých produktů. Další naskenovaný produkt se zobrazí jako vracený produkt, který má záporné množství a cenu. | Ano | Ano | Ne | Ano | Ne |

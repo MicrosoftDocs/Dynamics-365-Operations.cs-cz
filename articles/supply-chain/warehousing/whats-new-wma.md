@@ -2,7 +2,7 @@
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067244"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384357"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20170"></a>Verze 2.0.17.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Opraven problém, kdy byly čárové kódy naskenovány nesprávně.
+- Opraven problém se skenováním GS1 pro skener fotoaparátu.
+- Opraven problém se skenováním GS1 pro čtečku čárových kódů na zařízeních Zebra.
+- Vylepšen tok dotazů obcházení, takže výběr karty obcházení se nyní vrátí k hlavnímu toku.
+- Přidána podpora pro obecný tok dotazů na data.
+- Přidána zpráva, která informuje uživatele o změnách stavu připojení k síti.
+- Sladěna oprávnění úložiště se zásadami ochrany osobních údajů úložiště v Android 10.
+- U toků, které to potřebují, nyní číselník množství obsahuje pozici, která uživatelům umožňuje zadat prázdnou číselnou hodnotu.
+- Opraveny problémy s orientací číselníku.
+- Opraven problém, kdy číselník množství skočil na nesprávnou hodnotu.
+- Opraven problém, kdy se vstup na primární stránku ztrácel při vyplnění ze stránky podrobností.
+- Opraven problém, kdy se zástupný text považoval za původně vybranou hodnotu v seznamech výběru.
+- Tlačítko „Odeslat“ v potvrzovacích krocích je nyní automaticky aktivováno, pokud jsou zde předvolené hodnoty.
+- Opravena karta s podrobnostmi, aby se u textových polí s více řádky zobrazovalo co nejvíce řádků.
+- Opravena výška tlačítek „Odeslat“ a „Více akcí“, takže nyní zabírají méně místa na obrazovce.
+- Přidány chybějící názvy výběrových seznamů.
+- Opraven problém, kdy nefungovalo tlačítko Zpět.
+- Bylo přidáno několik oprav a vylepšení navigace pomocí klávesnice, včetně následujících stránek:
+  - Uživatelské přihlášení
+  - Vybrat připojení
+  - Upravit připojení
+- Opraveno posouvání při používání navigace pomocí klávesnice.
+- Vylepšená dostupnost, včetně následujících vylepšení:
+  - Opravena viditelnost barev a kontrast.
+  - Zabráněno ztrátě zaměření klávesnice při zavření vyskakovacích stránek.
+  - Do vyprávění byly přidány chybové zprávy.
+  - Zvětšena velikost zástupných hodnot v pruhu kroku.
+- Opraven příklad vlastní starší stránky v demo režimu.
 
 ## <a name="version-20150"></a>Verze 2.0.15.0
 
@@ -39,7 +72,7 @@ Tato verze představuje následující nové funkce, opravy a vylepšení:
 ## <a name="version-20130"></a>Verze 2.0.13.0
 
 Tato verze představuje následující nové funkce, opravy a vylepšení:
- 
+
 - Vylepšené posouvání mezi stránkami s plynulejší animací.
 - Opraveny neintuitivní reakce na pohyby přejetím a občasné zamrzání obrazovky.
 - Vylepšené kombinace textu a pozadí v tmavém režimu pro lepší čitelnost.

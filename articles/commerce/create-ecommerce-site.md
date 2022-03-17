@@ -2,7 +2,7 @@
 title: Vytvoření webu elektronického obchodu
 description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090762"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388204"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090762"
 V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 
 Když si pořídíte licenci na funkce Dynamics 365 Commerce, bude konfigurátor webu obsahovat startovací web, který můžete použít jako základ pro svůj vlastní web. Pokud však chcete začít úplně od začátku nebo pokud si chcete vytvořit druhý web, budete si muset ve vývojovém prostředí webu založit nový web. 
+
+## <a name="site-creation-prerequisites"></a>Předpoklady pro vytvoření webu
+
+Uživatel konfigurátoru webů musí mít uživatelský účet Microsoft Azure Active Directory (Azure AD), který je součástí skupiny zabezpečení Azure AD přiřazené administrátorům systému elektronického obchodování. Další informace viz [Nasazení nového klienta elektronického obchodu](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Uživatelé Azure AD typu host mohou mít ve vašem klientu Azure AD různá přístupová oprávnění. I když jsou součástí skupiny zabezpečení Azure AD přiřazené administrátorům systému elektronického obchodování, může uživatel typu host potřebovat upravit nastavení oprávnění Azure AD **Externí uživatelé**, aby šlo vytvořit web elektronického obchodu v Commerce. 
+
+Při úpravě nastavení Azure AD **Externí uživatelé** postupujte takto.
+
+1. V portálu Azure přejděte ke klientu Azure AD.
+1. Přejděte do nabídky **Uživatelské nastavení \> Externí uživatelé** a vyberte odkaz **Správa nastavení externí spolupráce**. Tím otevřete stránku **Nastavení externí spolupráce**, kde lze nastavit přístup uživatele typu host, nastavení pozvání hostů a omezení spolupráce. 
+1. Nastavení externí spolupráce upravte v souladu se zásadami zabezpečení vaší společnosti. 
 
 ## <a name="set-up-your-site"></a>Zřízení webu
 

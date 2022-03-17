@@ -2,7 +2,7 @@
 title: Ukázka integrace fiskální služby pro Českou republiku
 description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -10,16 +10,17 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 990de96f57f4a22b4d58da5f970b1b96f5fc21f5
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: cb9679bd02c5400fc015c6807407b01e9bf55343
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077083"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388229"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 V tomto tématu je uveden přehled fiskální integrace pro Českou republiku v Microsoft Dynamics 365 Commerce.
 
@@ -68,7 +69,7 @@ Ukázka integrace daňové registrační služby implementuje následující pra
 - Transakce související s vkladem na účet odběratele nebo je vklad objednávky zákazníka registrována ve službě daňové registrace jako samostatný řádek transakce a je označen zvláštním atributem. Skupina DPH zálohy je zadána v tomto řádku.
 - Při vytvoření hybridní objednávky odběratele, tedy objednávky odběratele, která obsahuje produkty, které lze převést mimo obchod odběratelem a k produktům, které budou vyzvednuty nebo expedovány, obsahuje transakce registrovaná ve službě daňové registrace obsahuje řádky pro produkty, které jsou prováděny, a také řádku objednávky vkladu.
 - Platba z účtu zákazníka je považována za běžnou platbu a je označena zvláštním atributem při registraci transakce ve službě daňové registrace
-- Částka vkladu objednávky odběratele použitá na objednávce odběratele v operaci *Vyzvednout* je považována za běžnou platbu a je označena zvláštním atributem při registraci transakce daňové registrace služby.
+- Částka vkladu objednávky odběratele použitá na objednávce odběratele v operaci Vyzvednout je považována za běžnou platbu a je označena zvláštním atributem při registraci transakce daňové registrace služby.
 
 ### <a name="offline-registration"></a>Offline registrace
 
@@ -291,14 +292,28 @@ Tento postup slouží k nastavení vývojového prostředí, abyste mohli testov
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Instalace rozšíření hardwarové stanice:
+1. Instalace rozšíření fiskálních konektorů:
 
-    1. Ve složce **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** vyhledejte instalační program **HardwareStation.EFR.Installer**.
-    1. Spusťte instalační program rozšíření z příkazového řádku:
+    Rozšíření fiskálního konektoru můžete nainstalovat na [hardwarové stanici](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) nebo [registru POS](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Instalace rozšíření hardwarové stanice:
+
+        1. Ve složce **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** vyhledejte instalační program **HardwareStation.EFR.Installer**.
+        1. Spusťte instalační program rozšíření z příkazového řádku spuštěním následujícího příkazu.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Nainstalujte rozšíření POS:
+
+        1. Otevřete vzorové řešení fiskálního konektoru POS na adrese **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln** a sestavte ho.
+        1. Ve složce **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** vyhledejte instalační program **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer**.
+        1. Spusťte instalační program rozšíření z příkazového řádku spuštěním následujícího příkazu.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Produkční prostředí
 
@@ -350,5 +365,28 @@ Konektor podporuje následující požadavky.
 #### <a name="configuration"></a>Konfigurace
 
 Konfigurační soubor pro fiskální konektor se nachází v umístění **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. Tento soubor slouží k povolení nastavení pro fiskální konektor ke konfiguraci z centrály Commerce. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Návrh rozšíření fiskálních konektorů POS
+
+Účelem rozšíření fiskálního konektoru POS je komunikace se službou daňové registrace z POS. Ke komunikaci využívá protokol HTTPS.
+
+#### <a name="fiscal-connector-factory"></a>Továrna fiskálního konektoru
+
+Továrna fiskálního konektoru mapuje název konektoru na implementaci fiskálního konektoru a je umístěna v souboru **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Název konektoru musí odpovídat názvu poskytovatele dokumentu fiskálního konektoru zadanému v centrále Commerce.
+
+#### <a name="efr-fiscal-connector"></a>Fiskální konektor EFR
+
+Fiskální konektor EFR je umístěn v souboru **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Implementuje rozhraní **IFiscalConnector**, které podporuje následující požadavky:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – tento požadavek odesílá dokumenty službě daňové registrace a z ní vrátí odpověď.
+- **FiscalRegisterIsReadyClientRequest** – tento požadavek se používá pro kontrolu stavu služby daňové registrace.
+- **FiscalRegisterInitializeClientRequest** – tento požadavek se používá pro inicializaci stavu služby daňové registrace.
+
+#### <a name="configuration"></a>Konfigurace
+
+Konfigurace se nachází ve složce **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** v úložišti [Řešení Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Tento soubor slouží k povolení nastavení pro fiskální konektor ke konfiguraci z centrály Commerce. Formát souboru je v souladu s požadavky na konfiguraci fiskální integrace. Jsou přidána následující nastavení:
+
+- **Adresa koncového bodu** – adresa URL služby daňové registrace.
+- **Časový limit** – doba v milisekundách (ms), po kterou bude čekat konektor na odpověď od služby daňové registrace.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,11 +18,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473369"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "7983816"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Použití služby elektronické fakturace k importu faktur dodavatele
 
@@ -69,8 +69,8 @@ Konfigurujte kanál Microsoft SharePoint, pokud funkce elektronické fakturace i
 2. Na kartě **Nastavení** v mřížce vyberte nastavení funkce a poté vyberte **Upravit**.
 3. Na kartě **Datový kanál** ve skupině polí **Parametry** vyberte **Adresa SharePoint** a zadejte URL adresu SharePointu.
 4. Vyberte **Port serveru** a zadejte port používaný poskytovatelem e-mailového účtu.
-5. Vyberte **ID aplikace** a zadejte název tajného klíče trezoru klíčů, který obsahuje ID klienta SharePointu.
-6. Vyberte **Tajný klíč aplikace** a zadejte název tajného klíče trezoru klíčů, který obsahuje heslo klienta SharePointu.
+5. Vyberte **ID aplikace** a zadejte název tajného kódu trezoru klíčů, který obsahuje ID klienta SharePointu.
+6. Vyberte **Tajný kód aplikace** a zadejte název tajného kódu trezoru klíčů, který obsahuje heslo klienta SharePointu.
 7. Vyberte **Filtr souboru**. Zkontrolujte a aktualizujte masku a filtrujte soubory, které obsahují elektronickou fakturu dodavatele k importu.
 8. Na kartě **Pravidla použitelnosti** v případě potřeby zkontrolujte a aktualizujte kritéria. Další informace naleznete v tématu [Pravidla použitelnosti](e-invoicing-configuration-rcs.md#applicability-rules).
 9. Zvolte **Uložit** a zavřete stránku.

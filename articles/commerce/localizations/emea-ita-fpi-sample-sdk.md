@@ -2,23 +2,24 @@
 title: Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Itálii (starší verze)
 description: Toto téma obsahuje pokyny pro nasazení ukázky integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076879"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388437"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Itálii (starší verze)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Toto téma obsahuje pokyny pro nasazení ukázkové integrace fiskální tiskárny pro Itálii ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md). 
 
@@ -89,13 +90,13 @@ Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují k
 1. Proveďte kroky popsané v sekci [Vývojové prostředí](#development-environment) výše v tomto tématu.
 2. Proveďte následující změny v balíčku konfiguračních souborů ve složce **RetailSdk\\Assets**:
 
-    - V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádek do části **composition**.
+    1. V konfiguračních souborech **commerceruntime.ext.config** a **CommerceRuntime.MPOSOffline.Ext.config** přidejte následující řádek do části **composition**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - V konfiguračním souboru **HardwareStation.Extension.config** přidejte následující řádek do oddílu **composition**.
+    1. V konfiguračním souboru **HardwareStation.Extension.config** přidejte následující řádek do oddílu **composition**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -103,20 +104,56 @@ Následujícím postupem vytvoříte balíčky pro nasazení, které obsahují k
 
 3. Proveďte následující změny v konfiguračním souboru balíčku přizpůsobení **Customization.settings** ve složce **BuildTools**:
 
-    - Přidejte následující řádek pro zahrnutí rozšíření CRT do nasaditelných balíčků.
+    1. Přidejte následující řádek pro zahrnutí rozšíření CRT do nasaditelných balíčků.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Přidáte následující řádek pro zahrnutí rozšíření hardwarové stanice do balíčků pro nasazení.
+    1. Přidáte následující řádek pro zahrnutí rozšíření hardwarové stanice do balíčků pro nasazení.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Spusťte příkazový řádek MSBuild pro program Visual Studio a poté spusťte **msbuild** ve složce Retail SDK pro vytvoření balíčků k nasazení.
-5. Balíčky použijte pomocí služby LCS nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Proveďte následující změny v **Sdk.ModernPos.Shared.csproj** soubor pod složkou **Packages\_SharedPackagingProjectComponents** složku pro zahrnutí zdrojových souborů pro Itálii do nasaditelných balíčků:
+
+    1. Přidejte část **ItemGroup**, která obsahuje uzly, které ukazují na zdrojové soubory pro požadované překlady. Ujistěte se, že jste zadali správné jmenné prostory a názvy vzorků. Následující příklad přidá zdrojové uzly pro místní prostředí **it** a **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. Do části **Target Name="CopyPackageFiles"** přidejte jeden řádek pro každé národní prostředí, jak ukazuje následující příklad.
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. Proveďte následující změny v **Sdk.RetailServerSetup.proj** soubor pod složkou **Packages\_SharedPackagingProjectComponents** složku pro zahrnutí zdrojových souborů pro Itálii do nasaditelných balíčků:
+
+    1. Přidejte část **ItemGroup**, která obsahuje uzly, které ukazují na zdrojové soubory pro požadované překlady. Ujistěte se, že jste zadali správné jmenné prostory a názvy vzorků. Následující příklad přidá zdrojové uzly pro místní prostředí **it** a **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. Do části **Target Name="CopyPackageFiles"** přidejte jeden řádek pro každé národní prostředí, jak ukazuje následující příklad.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Spusťte příkazový řádek MSBuild pro program Visual Studio a poté spusťte **msbuild** ve složce Retail SDK pro vytvoření balíčků k nasazení.
+7. Balíčky použijte pomocí služby LCS nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření
 

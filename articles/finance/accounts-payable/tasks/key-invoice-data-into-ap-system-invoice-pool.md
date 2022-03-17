@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777257"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358282"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Zadání dat faktury do systému závazků s použitím evidence faktur
 
@@ -58,7 +58,7 @@ Tohle téma popisuje použití registru faktur k vytváření faktur. Potom pou�
 6. Vyberte **Změnit zobrazení**.
 7. Vyberte **Zobrazení mřížky**.
 8. Zvolte **Zaúčtovat**.
-9. Zavřete formulář.
+9. Zavřete stránku.
 10. V navigačním podokně přejděte na **Moduly > Závazky > Dodavatelé > Dodavatelé**.
 11. Vyberte dodavatele, který se nacházel na nákupní objednávce. Vyberte například dodavatele **1001**.
 12. V podokně akcí vyberte možnost **Dodavatel**.

@@ -2,7 +2,7 @@
 title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075415"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384636"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -158,6 +158,7 @@ U některých stránek, které obsahují seznamy, je funkce individuálního nas
 
 - Chcete-li přidat seznam do pracovního prostoru, nejprve seřaďte nebo filtrujte seznam na stránce tak, aby zobrazoval informace, jak chcete, aby se zobrazovaly v pracovním prostoru. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Seznam**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete vybrat sloupce, které se mají zobrazit na seznamu v pracovním prostoru. Můžete také určit popisek použitý pro seznam v pracovním prostoru.
 - Chcete-li přidat dlaždici do pracovního prostoru, nejprve vyfiltrujte seznam na stránce, aby ukázal data, která chcete sumarizovat, nebo k nim mít rychlý přístup. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Dlaždice**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který by měl být použit pro dlaždici v pracovním prostoru. Můžete také určit, zda má dlaždice ukazovat počet. Po přidání dlaždice do pracovního prostoru ji můžete vybrat k otevření aktuální stránky z pracovního prostoru. Poté můžete zobrazit filtrovaný seznam, který je spojený s dlaždicí.
+    - Počínaje verzí 10.0.26, pokud je zapnutá funkce **Umožnit uživatelům vybrat a změnit velikosti dlaždic**, můžete vybrat jednu ze čtyř dostupných **Velikostí dlaždic** pro vaši novou dlaždici v dialogovém okně **Konfigurovat dlaždici**. Tato funkce také umožňuje upravit velikost dlaždice po jejím vytvoření přímo z pracovního prostoru.   
 - Chcete-li přidat odkaz na pracovní prostor, nejprve filtrujte na stránce seznam tak, aby zobrazoval data, která vás zajímají. (Pokud je funkce **Uložená zobrazení** zapnutá, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Odkaz**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který se má použít pro odkaz. Můžete také volitelně zadat popisek pro sekci, kam bude tento odkaz umístěn. Pokud sekce neexistuje, bude vytvořena nová.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Po přidání seznamu, dlaždice nebo odkazu do pracovního prostoru můžete ot
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Přidání souhrnu z pracovního prostoru do řídicího panelu
 
 Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s čísly na nich) a můžete také nechat dlaždice zobrazit na řídicím panelu. V pracovním prostoru klikněte pravým tlačítkem na dlaždici s počtem, vyberte **Přizpůsobit** a poté v okně vlastností dlaždice vyberte **Připnout na řídicí panel**. Příště, až budete otevírat (a aktualizovat) řídicí panel, zobrazí se vám tento počet pod navigační dlaždicí daného pracovního prostoru. Tento počet můžete vybrat pro přechod přímo na data, která reprezentuje.
+
+### <a name="changing-the-size-of-a-tile"></a>Změna maximální dlaždice
+Počínaje verzí 10.0.26 funkce **Umožnit uživatelům vybrat a změnit velikosti dlaždic** umožňuje uživatelům upravit velikost libovolné dlaždice bez KPI prostřednictvím personalizace. V pracovním prostoru klepněte pravým tlačítkem na dlaždici a vyberte **Přizpůsobit**. V okně vlastností dlaždice vyberte požadovanou velikost z možností **Velikost dlaždice**. Velikost dlaždic se okamžitě přizpůsobí. Pokud je zapnutá funkce **(Preview) Podpora uložených zobrazení pro pracovní prostory**, můžete toto přizpůsobení uložit do zobrazení pracovního prostoru.  
 
 ### <a name="personalizing-your-dashboard"></a>Individuální nastavení řídicího panelu
 

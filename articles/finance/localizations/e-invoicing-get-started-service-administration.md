@@ -18,11 +18,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463802"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "7984821"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Začínáme se správou služby Elektronické fakturace
 
@@ -89,10 +89,10 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 2. Vyberte **Reference trezoru klíčů** a v části **Certifikáty** vyberte **Přidat**.
 3. Do pole **Název** zadejte název tajného kódu účtu úložiště. Další informace viz [Vytvoření účtu úložiště a trezoru klíčů Azure](e-invoicing-create-azure-storage-account-key-vault.md).
 4. Zadejte popis do pole **Popis**.
-5. V poli **Typ** vyberte **Tajný klíč**.
+5. V poli **Typ** vyberte **Tajný kód**.
 6. Zvolte **Uložit** a pak zavřete stránku.
 
-## <a name="create-a-digital-certificate-secret"></a>Vytvoření tajného klíče digitálního certifikátu
+## <a name="create-a-digital-certificate-secret"></a>Vytvoření tajného kódu digitálního certifikátu
 
 1. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Prostředí služby** a potom vyberte **Parametry trezoru klíčů**.
 2. Vyberte **Reference trezoru klíčů** a poté v části **Certifikáty** vyberte **Přidat**.
@@ -108,7 +108,7 @@ Než provedete postupy v tomto tématu, musí být splněny následující pře
 3. Na stránce **Nastavení prostředí** v podokně akcí vyberte **Prostředí služby**.
 4. Vyberte **Nový** pro vytvoření nového prostředí služby.
 5. Do pole **Název** zadejte název prostředí elektronické fakturace. Zadejte popis do pole **Popis**.
-6. V poli **Tajný klíč tokenu SAS úložiště** vyberte název tajného klíče účtu úložiště, který se musí použít k ověření přístupu k účtu úložiště.
+6. V poli **Tajný kód tokenu SAS úložiště** vyberte název tajného kódu účtu úložiště, který se musí použít k ověření přístupu k účtu úložiště.
 7. V části **Uživatelé** vyberte **Přidat**, chcete-li přidat uživatele, který má povoleno odesílat elektronické faktury prostřednictvím prostředí a také se připojit k účtu úložiště.
 8. Do pole **ID uživatele** zadejte alias uživatele. Do pole **E-mail** zadejte e-mailovou adresu uživatele.
 9. Zvolte **Uložit**.

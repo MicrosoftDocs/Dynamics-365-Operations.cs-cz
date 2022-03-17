@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5b07c1d4c2189184b2ad29d46ec2aef0ee03c1c0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985355"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358207"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatické použití na faktury dodavatele
 
@@ -36,12 +36,12 @@ Následující body popisují, jak se uplatňují zálohy, když jsou dodržová
 - **Více faktur dodavatele na nákupní objednávku** – Záloha na nákupní objednávce bude použita na první importovanou fakturu dodavatele. Pokud částka zálohy přesáhne částku faktury, použití zálohy se nezdaří a je nutné provést zálohu ručně.
 - **Více faktur dodavatele pro více nákupních objednávek** – Zálohy na nákupních objednávkách budou použita na první relevantní fakturu. Pokud částka zálohy přesáhne částku faktury, použití zálohy se nezdaří a je nutné provést zálohy ručně. Pokud jsou nějaké zálohy, které zůstanou po zálohách, použity na první faktuře, lze je použít na faktury následující.
 
-Pokud se systém pokusí použít zálohu, ale použití selže, chování závisí na nastavení možnosti **Zablokovat proces následné automatizace v případě selhání použití zálohy**:
+Jestliže pokus o použití zálohy selže, další kroky určí na nastavení možnosti **Zablokovat proces následné automatizace v případě selhání použití zálohy**:
 
 - **Ano** – Do historie automatizace se přidá chybové hlášení „Automatické použití zálohy: Selhalo“ a faktura zůstane v seznamu nevyřízených faktur dodavatele. Faktura zůstane zablokována, dokud ručně nezaplatíte zálohu.
 
-    Chcete-li ručně použít zálohy, přejděte na nevyřízenou fakturu dodavatele. Na stránce **Detaily faktury** nastavte možnost **Zahrnout do automatizovaného zpracování** pro blokovanou fakturu na **Ne**. Nyní můžete ručně použít platbu předem. Po připsání platby předem nastavte možnost **Zahrnout do automatizovaného zpracování** zpět na **Ano**, aby mohla být faktura automaticky zpracována.
+Chcete-li ručně použít zálohy, přejděte na nevyřízenou fakturu dodavatele. Na stránce **Detaily faktury** nastavte možnost **Zahrnout do automatizovaného zpracování** pro blokovanou fakturu na **Ne**. Nyní můžete ručně použít platbu předem. Po připsání platby předem nastavte možnost **Zahrnout do automatizovaného zpracování** zpět na **Ano**, aby mohla být faktura automaticky zpracována.
 
-    Automatickou aplikaci zálohy můžete také obejít nastavením možnosti **Zahrnout do automatizovaného zpracování** na **Ne** a poté jejím nastavením zpět na **Ano**. Obdržíte následující zprávu: „Pro objednávku již existuje platba předem. Chcete to ignorovat u faktury vybraného dodavatele?“ Vyberte **Ano**. Do historie automatizace je přidána zpráva „Použití platby předem bylo vynecháno ručně“ a faktura dodavatele nebude zablokována, když se automatizovaný proces znovu spustí.
+Automatickou aplikaci zálohy můžete také obejít nastavením možnosti **Zahrnout do automatizovaného zpracování** na **Ne** a poté jejím nastavením zpět na **Ano**. Obdržíte následující zprávu: „Pro objednávku již existuje platba předem. Chcete to ignorovat u faktury vybraného dodavatele?“ Vyberte **Ano**. Do historie automatizace je přidána zpráva „Použití platby předem bylo vynecháno ručně“ a faktura dodavatele nebude zablokována, když se automatizovaný proces znovu spustí.
 
 - **Ne** – Následné automatizační procesy budou pokračovat. Zálohu můžete uplatnit i při vyúčtování.

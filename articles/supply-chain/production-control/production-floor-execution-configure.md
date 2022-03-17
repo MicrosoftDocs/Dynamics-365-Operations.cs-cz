@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103381"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384740"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -78,6 +78,38 @@ Tato funkce umožňuje přidat vyhledávací pole do seznamu úloh. Pracovníci 
 Tato funkce umožňuje pracovníkům používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek. Toto hlášení zahrnuje hlášení o koproduktech a vedlejších produktech. Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Zpráva o vedlejších a souběžných produktech z rozhraní pro provádění výrobního provozu*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Zapnutí zobrazení úplných sériových čísel, čísel šarží a registračních čísel vozidel
+
+Tato funkce poskytuje vylepšené prostředí k prohlížení seznamů sériových, dávkových a registračních čísel v rozhraní pro provádění výrobního provozu. Zobrazení se změní ze zobrazení karty s omezeným počtem znaků na zobrazení seznamu, ve kterém je dostatek prostoru pro zobrazení celých hodnot. Seznam také poskytuje možnost vyhledávat konkrétní čísla.
+
+Od verze Supply Chain Management 10.0.25 je tato funkce ve výchozím nastavení zapnuta. Správci mohou tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Zobrazit úplná čísla série, dávky a registrační značky vozidla v produkčním rozhraní výrobního provozu* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### <a name="enable-registering-of-material-consumption"></a>Zapnutí registrace spotřeby materiálu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Tato funkce umožňuje pracovníkům používat rozhraní k provádění výrobního provozu k registraci spotřeby materiálu, čísel šarží a sériových čísel. Někteří výrobci, zejména výrobci ve zpracovatelském průmyslu, potřebují explicitně registrovat množství spotřebovaného materiálu pro každou dávku nebo výrobní zakázku. Pracovníci mohou například používat váhu k vážení množství spotřebovaného materiálu při práci. Aby byla zajištěna úplná sledovatelnost materiálu, organizace musí také registrovat, která čísla šarží byla spotřebována při výrobě každého produktu.
+
+Tato funkce existuje ve dvou verzích. Jedna podporuje pouze položky, které *nemají* povoleno používat pokročilé skladové procesy (WMS). Druhý podporuje položky, které *mají* povoleno používat WMS. Chcete-li použít tuto funkci, zapněte jednu nebo obě z následujících funkcí v části [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (v tomto pořadí), v závislosti na tom, zda máte položky, které jsou povoleny pro WMS:
+
+- *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*
+- *(Preview) Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (s povoleným WMS)*
+
+> [!IMPORTANT]
+> Funkci mimo WMS můžete používat samostatně. Pokud však používáte WMS, musíte povolit obě funkce.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Povolit hlášení o položkách skutečné hmotnosti
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Pracovníci mohou používat rozhraní provádění produkčního podlaží k hlášení průběhu dávkových objednávek pro položky skutečné hmotnosti. Dávkové příkazy se vytvářejí ze vzorců, které lze definovat tak, aby měly položky skutečné hmotnosti jako položky vzorce, koprodukty a vedlejší produkty. Vzorec lze také definovat tak, aby obsahoval řádky vzorce pro přísady, které jsou definovány pro skutečnou hmotnost. Položky skutečné hmotnosti používají ke sledování inventáře dvě měrné jednotky: množství skutečné hmotnosti a množství inventáře. Například v potravinářském průmyslu lze maso v krabicích definovat jako položku skutečné hmotnosti, kde se množství skutečné hmotnosti používá ke sledování počtu krabic a množství v inventáři se používá ke sledování hmotnosti krabic.
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Preview) Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 
