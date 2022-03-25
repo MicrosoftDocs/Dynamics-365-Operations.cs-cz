@@ -1020,6 +1020,8 @@
                   href: unit-of-measure.md
                 - name: Použití nastavení zobrazení pro dimenze produktu
                   href: dimension-settings.md
+                - name: Povolení a aktivace režimu údržby elektronického obchodu
+                  href: enable-maintenance-mode.md
             - name: Správa obsahu vašeho webu
               items:
                 - name: Způsoby přidání obsahu
@@ -2100,6 +2102,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Ladění zdrojů dat
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurace datových modelů
+                  items:
+                    - name: Podpora parametrizovaných volání datových modelů elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace mapování modelu
                   items:
                     - name: Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Rozšíření definice modulu
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Změna statických řetězců knihovny modulů
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Datové akce
                       items:
                         - name: Přepisy datových akcí
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Rozšíření tématu ze základního tématu
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: Změna řetězce modulu tématu
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: "Balíček a\_nasazení"
                   items:
                     - name: Konfigurace balíčků a jejich nasazení do online prostředí
@@ -2792,12 +2802,14 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
                     - name: Testování stránek elektronického obchodu ohledně úniků paměti
                       href: e-commerce-extensibility/memory-leak-detection.md
-                    - name: Výkon
+                    - name: Výkonnost
                       items:
                         - name: Konfigurace mezipaměti stránky
                           href: e-commerce-extensibility/page-caching.md
                         - name: Mezipaměť instance datových akcí
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: Optimalizace modulu CSS
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetrie a analýzy
                       items:
                         - name: Protokolovací nástroj telemetrie

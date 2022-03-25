@@ -747,9 +747,33 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Porovnání sestavy úložiště cen položek
                   href: cost-management/compare-item-price.md
+            - name: Metodologie výpočtu nákladů
+              items:
+                - name: Průběžná průměrná nákladová cena
+                  href: cost-management/running-average-cost-price.md
+                - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Metoda FIFO s fyzickou hodnotou a označením
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Datum LIFO s fyzickou hodnotou a označením
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: Metoda LIFO s fyzickou hodnotou a označením
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Vážený průměr s fyzickou hodnotou a označením
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Datum váženého průměru s fyzickou hodnotou a označením
+                  href: cost-management/weighted-average-date.md
+                - name: Klouzavý průměr
+                  href: cost-management/moving-average.md
+                - name: Posloupnost záložních nákladů klouzavého průměru
+                  href: cost-management/moving-average-fallback.md
             - name: Skladové účetnictví
               items:
-                - name: Nákladové objekty
+                - name: Fyzické a finanční aktualizace
+                  href: cost-management/physical-financial-updates.md
+                - name: Zahrnovat fyzickou hodnotu
+                  href: cost-management/include-physical-value.md
+                - name: Objekty nákladů
                   href: cost-management/cost-object.md
                 - name: Zobrazení zůstatku objektu nákladů
                   href: cost-management/tasks/view-cost-object-balance.md
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Nákladové skupiny
                   href: cost-management/cost-groups.md
-                - name: Metoda FIFO s fyzickou hodnotou a označením
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Zahrnovat fyzickou hodnotu
-                  href: cost-management/include-physical-value.md
                 - name: Hodnoty objektu zásob
                   href: cost-management/physical-quantity.md
-                - name: Datum LIFO s fyzickou hodnotou a označením
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: Metoda LIFO s fyzickou hodnotou a označením
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Klouzavý průměr
-                  href: cost-management/moving-average.md
-                - name: Posloupnost záložních nákladů klouzavého průměru
-                  href: cost-management/moving-average-fallback.md
-                - name: Fyzické a finanční aktualizace
-                  href: cost-management/physical-financial-updates.md
-                - name: Průběžná průměrná nákladová cena
-                  href: cost-management/running-average-cost-price.md
-                - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Datum váženého průměru
-                  href: cost-management/weighted-average-date.md
-                - name: Vážený průměr s fyzickou hodnotou a označením
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Uzavřít zásoby
                   href: cost-management/inventory-close.md
                 - name: Úprava nákladové ceny množství na skladě
@@ -1431,6 +1433,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ladění zdrojů dat
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace datových modelů
+                  items:
+                    - name: Podpora parametrizovaných volání datových modelů elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace mapování modelu
                   items:
                     - name: Konfigurace mapování modelu elektronického výkaznictví závislého na kontextu země
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Neočekávaný rozdíl mezi daty požadavku a relace během testování
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: Při nastavování připojení aplikace nebyla nalezena důvěryhodná kotva pro certifikační cestu
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Při aktualizaci a migraci do WMS nebyla nalezena důvěryhodná kotva pro certifikační cestu

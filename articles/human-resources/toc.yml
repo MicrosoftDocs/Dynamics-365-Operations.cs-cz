@@ -4,106 +4,58 @@
       items:
         - name: Domovská stránka Dynamics 365 Human Resources
           href: index.md
-        - name: Vydání infrastruktury 10.0.25
-          href: hr-infrastructure.md
-        - name: Co je nového a co se změnilo ve sloučené infrastruktuře Dynamics 365 Human Resources
-          href: ./get-started/hr-whats-new-changed-10-0-25.md
+        - name: Co je nového a co se změnilo
+          items:
+            - name: Co je nového a co se změnilo ve finančních a provozních aplikacích
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: "Co je nového a\_co se změnilo v\_aplikaci Human Resources"
+              items:
+                - name: Human Resources 10.0.26 (sloučená infrastruktura)
+                  href: ./get-started/hr-whats-new-changed-10-0-26.md
+                - name: Human Resources 10.0.25 (sloučená infrastruktura)
+                  href: ./get-started/hr-whats-new-changed-10-0-25.md
+                - name: Co je nového v Dynamics 365 Human Resources (samostatně)
+                  items:
+                    - name: Co je nového v archivech 2021 Dynamics 365 Human Resources (samostatně)
+                      href: hr-admin-whats-new.md
+                    - name: 29. listopadu 2021
+                      href: hr-whats-new-2021-11-29.md
+                    - name: 5. října 2021
+                      href: hr-whats-new-2021-10-04.md
+                    - name: 20. září 2021
+                      href: hr-whats-new-2021-09-20.md
+                    - name: 6. září 2021
+                      href: hr-whats-new-2021-09-06.md
+                    - name: 23. srpna 2021
+                      href: hr-whats-new-2021-08-23.md
+                    - name: 9. srpna 2021
+                      href: hr-whats-new-2021-08-09.md
+                    - name: 26. července 2021
+                      href: hr-whats-new-2021-07-26.md
+                    - name: 12. července 2021
+                      href: hr-whats-new-2021-07-12.md
+                    - name: 22. června 2021
+                      href: hr-whats-new-2021-06-22.md
+                    - name: "20.\_května\_2021"
+                      href: hr-whats-new-2021-05-20.md
+                    - name: "3.\_května\_2021"
+                      href: hr-whats-new-2021-05-03.md
+                    - name: "19.\_dubna\_2021"
+                      href: hr-whats-new-2021-04-19.md
+                    - name: "5.\_dubna\_2021"
+                      href: hr-whats-new-2021-04-05.md
+                    - name: "22.\_března\_2021"
+                      href: hr-whats-new-2021-03-22.md
+                    - name: "8.\_března\_2021"
+                      href: hr-whats-new-2021-03-08.md
+                    - name: 22. února 2021
+                      href: hr-whats-new-2021-02-22.md
+                    - name: 28. ledna 2021
+                      href: hr-whats-new-2021-01-28.md
+                    - name: 21. ledna 2021
+                      href: hr-whats-new-2021-01-21.md
         - name: Začínáme
           items:
-            - name: Co je nového
-              href: hr-admin-whats-new.md
-            - name: Co je nového a co se změnilo v archivech 2021
-              items:
-                - name: 29. listopadu 2021
-                  href: hr-whats-new-2021-11-29.md
-                - name: 5. října 2021
-                  href: hr-whats-new-2021-10-04.md
-                - name: 20. září 2021
-                  href: hr-whats-new-2021-09-20.md
-                - name: 6. září 2021
-                  href: hr-whats-new-2021-09-06.md
-                - name: 23. srpna 2021
-                  href: hr-whats-new-2021-08-23.md
-                - name: 9. srpna 2021
-                  href: hr-whats-new-2021-08-09.md
-                - name: 26. července 2021
-                  href: hr-whats-new-2021-07-26.md
-                - name: 12. července 2021
-                  href: hr-whats-new-2021-07-12.md
-                - name: 22. června 2021
-                  href: hr-whats-new-2021-06-22.md
-                - name: "20.\_května\_2021"
-                  href: hr-whats-new-2021-05-20.md
-                - name: "3.\_května\_2021"
-                  href: hr-whats-new-2021-05-03.md
-                - name: "19.\_dubna\_2021"
-                  href: hr-whats-new-2021-04-19.md
-                - name: "5.\_dubna\_2021"
-                  href: hr-whats-new-2021-04-05.md
-                - name: "22.\_března\_2021"
-                  href: hr-whats-new-2021-03-22.md
-                - name: "8.\_března\_2021"
-                  href: hr-whats-new-2021-03-08.md
-                - name: 22. února 2021
-                  href: hr-whats-new-2021-02-22.md
-                - name: 28. ledna 2021
-                  href: hr-whats-new-2021-01-28.md
-                - name: 21. ledna 2021
-                  href: hr-whats-new-2021-01-21.md
-            - name: Archivy novinek 2020
-              items:
-                - name: 2. prosince 2020
-                  href: hr-whats-new-2020-12-02.md
-                - name: 22. října 2020
-                  href: hr-whats-new-2020-10-22.md
-                - name: 6. října 2020
-                  href: hr-whats-new-2020-10-06.md
-                - name: 26. září 2020
-                  href: hr-whats-new-2020-09-26.md
-                - name: 16. září 2020
-                  href: hr-whats-new-2020-09-16.md
-                - name: 3. září 2020
-                  href: hr-whats-new-2020-09-03.md
-                - name: 20. srpna 2020
-                  href: hr-whats-new-2020-08-20.md
-                - name: 6. srpna 2020
-                  href: hr-whats-new-2020-08-06.md
-                - name: 23. července 2020
-                  href: hr-whats-new-2020-07-23.md
-                - name: 8. července 2020
-                  href: hr-whats-new-2020-07-08.md
-                - name: 25. června 2020
-                  href: hr-whats-new-2020-06-23.md
-                - name: 11. června 2020
-                  href: hr-whats-new-2020-06-11.md
-                - name: 28. května 2020
-                  href: hr-whats-new-2020-05-28.md
-                - name: 14. května 2020
-                  href: hr-whats-new-2020-05-14.md
-                - name: 1. května 2020
-                  href: hr-whats-new-2020-05-01.md
-                - name: 13. dubna 2020
-                  href: hr-whats-new-2020-04-13.md
-                - name: 3. dubna 2020
-                  href: hr-whats-new-2020-04-03.md
-                - name: 24. března 2020
-                  href: hr-whats-new-2020-03-24.md
-                - name: 19. března 2020
-                  href: hr-whats-new-2020-03-19.md
-                - name: 10. března 2020
-                  href: hr-whats-new-2020-03-10.md
-                - name: 3. března 2020
-                  href: hr-whats-new-2020-03-03.md
-                - name: 25. února 2020
-                  href: hr-whats-new-2020-02-25.md
-                - name: 18. února 2020
-                  href: hr-whats-new-2020-02-18.md
-                - name: 12. února 2020
-                  href: hr-whats-new-2020-02-12.md
-                - name: 7. února 2020
-                  href: hr-whats-new-2020-02-07.md
-                - name: 3. února 2020
-                  href: hr-whats-new-2020-02-03.md
             - name: Přehled
               href: hr-admin-overview.md
             - name: Systémové požadavky
