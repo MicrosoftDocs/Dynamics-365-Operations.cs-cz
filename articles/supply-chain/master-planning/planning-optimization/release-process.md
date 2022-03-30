@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087159"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407837"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces a historie vydání modulu Optimalizace plánování
 
@@ -33,6 +33,7 @@ Protože se při aktualizaci Optimalizace plánování ve vašem prostředí nez
 
 | Změny | Podrobnosti správy funkcí | Data vydání |
 |---|---|---|
+| <p>Vylepšení obecného výkonu, kvality a stability.<p>Centralizovaná údržba kalendáře Optimalizace plánování<p>Návrhy optimalizace plánování pro optimalizaci stávající nabídky | Není vyžadována žádná správa funkcí. | 7. – 11. března 2022 |
 | <p>Přidána podpora priority plánování u výrobních zakázek. | K dispozici ve verzi 10.0.25 jako součást funkce *Podpora MRP řízená prioritou pro optimalizaci plánování*. | 12. – 18. listopadu 2021 |
 | <p>Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 12. – 18. listopadu 2021 |
 | <p>Přidána podpora vzorců pro výpočet doby procesu, výrobního postupu s překrýváním a čísla výrobní operace u transakcí požadavků.</p><p>Vylepšené chybové zprávy pro plánování výroby související s časovým limitem, nenalezenou kapacitou a cyklickým postupem.</p><p>Vylepšená konzistence při výpočtu dat příjmu a data vydání u plánovaných objednávek i pevných objednávek.</p><p>Vylepšení obecného výkonu, kvality a stability. | Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování* | 22. – 27. října 2021 |

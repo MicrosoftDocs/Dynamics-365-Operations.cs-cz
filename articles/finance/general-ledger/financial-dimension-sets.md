@@ -2,7 +2,7 @@
 title: Sady finančních dimenzí
 description: Toto téma popisuje sady finančních dimenzí a poskytuje několik tipů pro optimalizaci jejich použití.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739971"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392929"
 ---
 # <a name="financial-dimension-sets"></a>Sady finančních dimenzí
 
@@ -61,6 +61,11 @@ Tlačítko **Znovu sestavit zůstatky** použijte pro opětovné vytvoření zů
 ## <a name="clear-balances"></a>Vymazat zůstatky
 
 Tlačítko **Vymazat zůstatky** použijte k odstranění zůstatků a zastavení dalších aktualizací. Sada dimenzí již nebude mít dopad na aktivity účtování hlavní knihy.
+
+## <a name="delete-a-dimension-set"></a>Odstranění sady dimenzí
+
+Nepokoušejte se **smazat a znovu vytvořit** sady dimenzí jako jakékoli náhradní řešení k vyřešení potenciálních problémů s daty zůstatků pro konkrétní sadu dimenzí. Znovuvytvoření sady dimenzí je nákladné. Další pomoc s problémy vám poskytnou pracovníci zákaznické podpory. 
+
 
 Další informace naleznete v tématu [Finanční dimenze](financial-dimensions.md).
 

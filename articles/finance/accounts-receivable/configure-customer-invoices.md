@@ -2,7 +2,7 @@
 title: Vytvoření faktury odběratele
 description: Faktura odběratele pro prodejní objednávku je účet, který se vztahuje k prodeji a který organizace předává odběrateli.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087416"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392904"
 ---
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
@@ -82,6 +82,9 @@ Na stránce se seznamem **Všechny prodejní objednávky** si můžete zobrazit 
 Tento proces použijte, když jsou některé prodejní objednávky připraveny k fakturaci a vy je chcete sloučit do jedné faktury. 
 
 Na stránce se seznamem **Prodejní objednávka** můžete vybrat více faktur a poté použít možnost **Generovat faktury** k jejich konsolidaci. Na stránce **Zaúčtování faktury** můžete změnit nastavení položky **Souhrnná objednávka** tak, aby bylo shrnutí provedeno podle čísla objednávky (pokud existuje více dodacích listů pro jednu prodejní objednávku) nebo podle účtu faktury (pokud existuje více prodejních objednávek pro jeden účet faktury). Tlačítkem **Uspořádat** konsolidujte prodejní objednávky do jedné faktury na základě nastavení v poli **Souhrnná objednávka**.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky, které neobsahují cenu
+Budete moci aktualizovat účet **Výnosy** v **Hlavní knize** u těch řádků prodejních objednávek, které neobsahují žádnou cenu. Chcete-li nastavit nebo zobrazit tyto informace, přejděte na parametr **Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky s nulovou cenou** na kartě **Hlavní kniha a DPH** na stránce **Parametry pohledávek**. (**Pohledávky > Nastavení > Parametry pohledávek**). Výběrem možnosti **Ano** aktualizujete účet **Výnosy** u těch řádků faktur prodejní objednávky, které neobsahují žádnou cenu. Výnosový účet je definován na stránce parametrů **Zaúčtování skladu**, na kartě definice účtu **Prodejní objednávka**. Pokud tato možnost není vybrána, řádky, které neobsahují informace o ceně, nebudou zaúčtovány na účet **Výnosy**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Další nastavení, která mění chování zaúčtování
 Následující pole mění chování procesu zaúčtování.

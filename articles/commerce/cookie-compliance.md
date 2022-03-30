@@ -2,7 +2,7 @@
 title: Shoda souborů cookie
 description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747690"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403140"
 ---
 # <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
 
@@ -58,6 +58,7 @@ Následující tabulka ukazuje aktuální referenční seznam souborů cookie, k
 | \_msdyn365___aud_0                          | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
 | \_msdyn365___aud_1                           | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
 | \_msdyn365___aud_2                           | Ukládá hodnoty segmentů používané cílením a používá se pouze v případě, že je cílení nakonfigurováno na stránce nebo fragmentu požadovaném uživatelem webu. Soubor cookie je umístěn, pouze pokud hodnoty segmentu pocházejí od poskytovatele segmentace třetí strany.      | 7 dnů |
+| d365gi                                       | Tento soubor cookie ukládá údaje o zeměpisné poloze při použití geolokační služby třetí strany.      | 1 den |
 
 Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, soubory cookie v následující tabulce budou sledovány také v jeho prohlížeči.
 
@@ -65,17 +66,17 @@ Pokud uživatel webu vybere nějaké odkazy na sociální média v rámci webu, 
 | Doména                      | Cookie               | popis                                                  | Zdroj                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | Synchronizace ID reklam LinkedIn                                      | Značka LinkedIn Feed a Insight                                |
-| .linkedin.com               | li_sugr                  | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
+| .linkedin.com               | li_sugr                  | Identifikátor prohlížeče                                           | Značka LinkedIn Insight Tag, pokud adresa IP není v určené zemi |
 | .linkedin.com               | BizographicsOptOut       | Určuje stav odhlášení ze sledování třetích stran.              | Ovládací prvky pro hosty LinkedIn a oborová odhlášení           |
 | .linkedin.com               | \_guid                    | Identifikátor prohlížeče pro Google Ads.                            | Kanál LinkedIn                                                |
 | .linkedin.com               | li_oatml                 | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
 | Různé domény první strany | li_fat_id                | Nepřímý identifikátor člena pro sledování, retargeting a analýzu konverzí. | Značka LinkedIn Ads a Insight                                |
-| .adsymptotic.com            | U                        | Identifikátor prohlížeče                                           | Značka LinkedIn Insight, pokud adresa IP není v určené zemi |
+| .adsymptotic.com            | U                        | Identifikátor prohlížeče                                           | Značka LinkedIn Insight Tag, pokud adresa IP není v určené zemi |
 | .linkedin.com                | bcookie                  | Soubor cookie s ID prohlížeče                                            | Žádosti na LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Zabezpečený soubor cookie prohlížeče                                        | Žádosti na LinkedIn                                         |
 | .linkedin.com               | lang                     | Nastaví výchozí národní prostředí a jazyk.                                 | Žádosti na LinkedIn                                         |
 | .linkedin.com                | lidc                     | Používá se pro směrování.                                             | Žádosti na LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Soubor cookie správce cílové skupiny Adobe                                                     | Nastaveno pro synchronizaci ID                                              |
+| .linkedin.com               | aam_uuid                 | Správce souborů cookie Adobe Audience Manager                                                     | Nastaveno pro synchronizaci ID                                              |
 | .linkedin.com               | \_ga                      | Soubor cookie Google Analytics                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Soubor cookie Google Analytics                                             | Google Analytics                                             |

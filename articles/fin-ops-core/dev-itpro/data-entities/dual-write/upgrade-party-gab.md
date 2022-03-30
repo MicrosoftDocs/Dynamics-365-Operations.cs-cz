@@ -2,19 +2,19 @@
 title: Upgrade na model strany a globálního adresáře
 description: Toto téma popisuje, jak upgradovat data duálního zápisu na model strany a globálního adresáře.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060472"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407787"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -151,13 +151,19 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
 ## <a name="run-the-templates"></a>Spusťte šablony
 
-1. Zastavte následující mapy dvojitého zápisu **Účet**, **Kontakt** a **Prodejce**, které využívají finanční a provozní aplikaci:
+1. Zastavte následující mapy dvojitého zápisu **Strana**, **Účet**, **Kontakt** a **Prodejce**, které využívají finanční a provozní aplikace:
 
+    + Strany CDS (msdyn_parties) 
     + Zákazníci V3 (accounts)
     + Zákazníci V3(kontakty)
     + Kontakty CDS V2(kontakty)
     + Kontakty CDS V2(kontakty)
     + Dodavatel V2 (msdyn_vendor)
+    + Kontakty V2 (msdyn_contactforparties)
+    + Umístění poštovní adresy strany CDS (msdyn_partypostaladdresses)
+    + Historie poštovních adres CDS V2 (msdyn_postaladdresses)
+    + Umístění poštovní adresy strany CDS (msdyn_postaladdresscollections)
+    + Kontakty strany V3 (msdyn_partyelectronicaddresses)
 
 2. Ujistěte se, že jsou mapy odstraněny z tabulky **msdy_dualwriteruntimeconfig** v Dataverse.
 3. Nainstalujte [řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab) z AppSource.

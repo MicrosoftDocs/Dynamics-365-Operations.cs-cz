@@ -1,23 +1,23 @@
 ---
 title: Vytvoření volné faktury
 description: Toto téma vysvětluje, jak vytvořit volné faktury.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763279"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392878"
 ---
 # <a name="create-a-free-text-invoice"></a>Vytvoření volné faktury
 
@@ -68,6 +68,7 @@ Toto téma vysvětluje, jak vytvořit volné faktury. Pro proceduru použijte uk
 
     * Můžete změnit časování tisku faktury. Výběrem **Aktuální** vytisknete jednotlivé faktury při aktualizaci. Výběrem **Po** vytisknete všechny faktury po aktualizaci.
     * Pokud chcete změnit ověření limitu úvěru odběratele před zaúčtováním faktury, změňte hodnoty v **typ limitu úvěru** pole.
+    * Na kartě **Aktualizace** ve stránce **Parametry pohledávek** (**Pohledávky > Nastavení > Parametry pohledávek**) můžete zastavit účtování volných faktur, když nastane chyba. Výběrem možnosti **Ano** u parametru **Zastavit účtování volných faktur při první chybě** zastavíte účtování volných faktur, když dojde k chybě. Pokud účtujete v dávce, chyba zastaví proces účtování a stav dávky bude nastaven na **Chyba**. Pokud tato možnost není vybrána, proces zaúčtování přeskočí fakturu s chybou zaúčtování a bude pokračovat v zaúčtování dalších faktur. Pokud účtujete v dávce, chyba účtování nezabrání v zaúčtování dalších faktur. Stav dávky bude **Skončeno**. Podrobná zpráva o procesu zaúčtování bude k dispozici ke kontrole v historii dávkové úlohy.
     * Volbou možnosti **Ano** vytisknete fakturu.
     * Volbou možnosti **Ano** zaúčtujete fakturu. Fakturu můžete vytisknout bez jejího zaúčtování.
 
@@ -82,6 +83,12 @@ Jakmile zkopírujete řádky, lze podle potřeby upravit informace.
 Můžete vytvořit volnou fakturu ze šablony. Vyberete-li **Nová ze šablony** na kartě **Faktura**, můžete vybrat název šablony a účet odběratele pro novou volnou fakturu. Výchozí hodnoty, jako jsou například platební podmínky a způsob platby, lze automaticky vyplnit z odběratele, nebo můžete použít hodnoty, které byly uloženy v šabloně.
 
 Bude vytvořena nová volná faktura a můžete upravit hodnoty podle potřeby.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Resetování stavu pracovního postupu pro volné faktury z Bez možnosti obnovy na Koncept
+Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je pracovní postup volné faktury odběratele ve stavu **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept** výběrem možnosti **Obnovit** v akcích pracovního postupu. Poté můžete volnou fakturu odběratele upravit. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetování stavu pracovního postupu pro volné faktury z Bez možnosti obnovy na Koncept** na stránce **Správa funkcí**.
+
+Na stránce **Historie workflowu** můžete resetovat stav workflow na **Koncept**. Tuto stránku můžete otevřít z **Volné faktury** nebo z nabídky **Obecné > Dotazy > Pracovní postup**. Chcete-li obnovit stav workflow na **Koncept**, vyberte možnost **Obnovit**. Stav pracovního postupu můžete také resetovat na **Koncept** výběrem akce **Obnovit** na stránce **Volná faktura** nebo **Všechny volné faktury**. Po resetování stavu pracovního postupu na **Koncept** bude k dispozici pro úpravy na stránce **Volná faktura**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

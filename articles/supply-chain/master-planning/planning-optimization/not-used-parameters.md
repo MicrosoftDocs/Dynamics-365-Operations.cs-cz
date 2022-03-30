@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087492"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408223"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
@@ -194,12 +194,6 @@ Optimalizace plánování nepoužívá následující možnost parametru na str�
   - **Řízení data dodání** – Optimalizace plánování nepodporuje možnost *CTP*, čekající podpora *CTP*.
   - **Čas realizace zásob** - Ve verzích služby Planning Optimization, které jsou starší než vydání ze 6. srpna 2021, Planning Optimization používá tento parametr k výpočtu správné objednávky a data dodání, ale sám neuloží vypočítanou dodací lhůtu do plánované objednávky. V novějších verzích služba také používá vypočítanou dodací lhůtu k nastavení pole **Dodací lhůta** pole a možnosti **Pracovní dny**, jak je požadováno pro příslušnou plánovanou objednávku.
   - **Pracovní dny** - Ve verzích služby Planning Optimization, které jsou starší než vydání ze 6. srpna 2021, Planning Optimization používá tento parametr k výpočtu správné objednávky a data dodání, ale sám neuloží vypočítanou dodací lhůtu do plánované objednávky. V novějších verzích služba také používá vypočítanou dodací lhůtu k nastavení pole **Dodací lhůta** pole a možnosti **Pracovní dny**, jak je požadováno pro příslušnou plánovanou objednávku.
-
-## <a name="working-time-calendars-page"></a>Stránka Kalendáře pracovní doby
-
-Optimalizace plánování nepoužívá následující parametr na stránce **Kalendáře pracovní doby**:
-
-- **Základní kalendář** – Čekající podpora *Základní kalendáře*.
 
 ## <a name="batch-disposition-master-page"></a>Stránka Vzor dispozice dávky
 

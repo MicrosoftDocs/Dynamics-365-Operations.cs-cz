@@ -1,198 +1,303 @@
 ---
-title: Datum váženého průměru
+title: Denní vážený průměr se zahrnutím fyzické hodnoty a označením
 description: Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu.
 author: AndersGirke
-ms.date: 10/25/2017
+ms.date: 03/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 28991
-ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3cf2206863d891eceb9c65ff879da3f9f72032b1
+ms.sourcegitcommit: fcded93fc6c27768a24a3d3dc5cc35e1b4eff22b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572018"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8391994"
 ---
-# <a name="weighted-average-date"></a>Datum váženého průměru
+# <a name="weighted-average-date-with-include-physical-value-and-marking"></a>Denní vážený průměr se zahrnutím fyzické hodnoty a označením
 
 [!include [banner](../includes/banner.md)]
 
-Datum váženého průměru je skladový model založený na principu váženého průměru. Pro princip váženého průměru jsou vydání ze skladu zváženy pomocí průměrné hodnoty položek přijatých do skladu pro každý den v období uzávěrky skladu. 
+*Denní vážený průměr* je model zásob založený na průměru vypočítaném vynásobením každé složky (transakce položky) koeficientem (nákladová cena) odrážejícím její důležitost (množství) za každý den v období. Jinými slovy, tento model zásob přiřazuje náklady na výdejové transakce na základě průměrné hodnoty všech zásob přijatých během každého dne plus veškerých zásob na skladě z předchozího dne.
 
-Při spuštění uzávěrky skladu s použitím data váženého průměru budou všechny denní příjmy vyrovnány s jedním virtuálním výdejem. Tento virtuální výdej obsahuje celkové přijaté množství a hodnotu za daný den. Virtuální výdej má odpovídající virtuální příjem, kterým jsou výdeje vyrovnány. Proto budou mít všechny příjmy stejnou průměrnou cenu. Na virtuální výdej a příjem lze nahlížet jako na virtuální převod, označovaný také jako *převod uzávěrky skladu s váženým průměrem*”. 
+Když spustíte uzávěrku zásob pomocí modelu zásob Denní vážený průměr, existují dva způsoby, jak lze vytvořit vyrovnání. Typicky jsou všechny příjmy vyrovnány jedním virtuálním výdejem, který představuje celkové přijaté množství i celkovou hodnotu. Tento virtuální výdej má odpovídající virtuální příjem, kterým jsou výdeje vyrovnány. Tímto způsobem budou mít všechny výdeje každý den stejnou průměrnou cenu. Virtuální výdej a virtuální účtenku lze považovat za virtuální převod. Tento virtuální převod se označuje jako *vážený průměr – převod uzávěrky skladu*. Proto se tato metoda vyrovnání nazývá *souhrnné vyrovnání s váženým průměrem*. Existuje-li pouze jeden příjem, mohou jím být vyrovnány všechny výdeje a nebude vytvořen žádný virtuální převod. Tento způsob vyrovnání se označuje jako *přímé vyrovnání*. Zásoby, které jsou k dispozici po ukončení inventury, jsou oceněny váženým průměrem z posledního dne předchozího období a zahrnuty do výpočtu denního váženého průměru v následujícím období.
 
-Pokud dojde pouze k jednomu příjmu k datu nebo před ním, není nutné počítat průměrnou hodnotu. Protože všechny výdeje jsou vyrovnány z daného příjmu, virtuální převod nebude vytvořen. Podobně pokud dojde k výdejům pouze v den s daným datem, nejsou k dispozici žádné příjmy, ze kterých by bylo možné vypočítat průměrnou hodnotu, a virtuální přenosy nebudou vytvořeny. Při používání data váženého průměru můžete označit skladové transakce tak, aby byl příjem určitých položek vyrovnán konkrétním výdejem. V takovém případě nepoužíváte pravidlo data váženého průměru. Používáte-li jako skladový model datum váženého průměru, doporučujeme provádět uzávěrku skladu měsíčně. 
+Princip denního váženého průměru můžete přepsat tak, že označíte skladové transakce, aby byl příjem určitých položek vyrovnán konkrétním výdejem. Pravidelná uzávěrka skladu je vyžadována, když používáte model zásob denního váženého průměru k vytváření vyrovnání a úpravě hodnoty výdejů podle principu denního váženého průměru. Dokud nespustíte uzavření zásob, jsou transakce vydávání oceňovány průběžným průměrem, kdy došlo k fyzickým a finančním aktualizacím. Pokud nepoužíváte označování, průběžný průměr se vypočítá při provedení fyzické nebo finanční aktualizace.
 
-Následující vzorec se používá pro výpočet nákladové metody s datem váženého průměru: 
+U metody ocenění skladu denním váženým průměrem se každý den používá následující vzorec:
 
-Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
+*Náklady* = \[(*Q*<sub>*b*</sub> × *P*<sub>*b*</sub>) + &#x2211;<sub>*n*</sub>(*Q*<sub>*n*</sub> × *P*<sub>*n*</sub>)\] ÷ (*Q*<sub>*b*</sub> + &#x2211;<sub>*n*</sub>*Q*<sub>*n*</sub>)
 
-Při uzávěrce skladu je výpočet proveden denně prostřednictvím období uzávěrky, jak je uvedeno na následujícím obrázku. 
+- *Q* = Množství transakce
+- *P* = Cena transakce
 
-![Model denního výpočtu data váženého průměru.](./media/weightedaveragedatedailycalculationmodel.gif) 
+Jinými slovy, vážený průměr nákladů se rovná počátečnímu množství krát počáteční cena plus součet každého množství účtenky krát jeho cena příjmu, to vše děleno počátečním množstvím plus součtem množství příjmu.
 
-Skladové transakce, které opustí sklad, jako například prodejní objednávky, deníky zásob a výrobních zakázky, probíhají v odhadované nákladové ceně k datu zaúčtování. Tato odhadovaná nákladová cena se také označuje jako průběžná průměrná nákladová cena. K datu uzávěrky skladu systém analyzuje skladové transakce za předchozí období, předchozí dny a pro aktuální den. Tato analýza slouží k určení, která z následujících metod uzávěrky má být použita:
+Při uzávěrce skladu je výpočet proveden denně během období uzávěrky.
 
--   Přímé vyrovnání
--   Souhrnné vyrovnání
+> [!NOTE]
+> Další informace o vyrovnání naleznete v tématu [Uzávěrka skladu](inventory-close.md).
 
-Jako vyrovnání jsou označována zaúčtování uzávěrky skladu, při nichž jsou výdeje přiřazeny ke správnému váženému průměru k datu uzávěrky. 
+V následujících příkladech je znázorněn dopad použití denního váženého průměru v pěti konfiguracích:
 
-**Poznámka:** Další informace o vyrovnání naleznete v článku o skladových uzávěrkách. V následujících příkladech je znázorněn dopad použití váženého průměru v pěti konfiguracích:
-
--   Přímé vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
--   Souhrnné vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**.
--   Přímé vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
--   Souhrnné vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
--   Datum váženého průměru s použitím označení
+- Přímé vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
+- Souhrnné vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**.
+- Přímé vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
+- Souhrnné vyrovnání s použitím data váženého průměru s volbou **Zahrnout fyzickou hodnotu**
+- Datum váženého průměru s použitím označení
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-isnt-used"></a>Přímé vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu
-Aktuální verze používá stejnou metodu přímého vyrovnání, která je použitá pro datum váženého průměru v předchozích verzích. V systému jsou provedena přímá vyrovnání mezi příjmy a výdeji. Systém tuto metodu přímého vyrovnání používá v určitých situacích:
 
--   V daném období byl zaúčtován jeden příjem a jeden nebo několik výdejů.
--   V daném období byly zaúčtovány pouze výdeje a na skladě jsou položky z předchozí uzávěrky.
+Princip přímého vyrovnání vytváří vyrovnání přímo mezi příjmy a výdeji, bez vytváření dalších transakcí se zásobami. V systému je tato metoda přímého vyrovnání použita v následujících situacích:
 
-V následujícím scénáři byl zaúčtován finančně aktualizovaný příjem a výdej. Během skladové uzávěrky systém vyrovná příjem přímo oproti výdeji a pro daný výdej nebude nutné provádět žádnou úpravu nákladové ceny. 
+- V daném období byl zaúčtován jeden příjem a jeden nebo několik výdejů.
+- V daném období byly zaúčtovány pouze výdeje a na skladě jsou položky z předchozí uzávěrky.
 
-Následující obrázek znázorňuje tyto transakce:
-
--   1a. Je provedena aktualizace fyzického příjmu ve skladu pro množství 5 při ceně 10,00 USD za kus.
--   1b. Je provedena aktualizace finančního příjmu ve skladu pro množství 5 při ceně 10,00 USD za kus.
--   2a. Je provedena aktualizace fyzického výdeje ve skladu pro množství 2 při ceně 10,00 USD za kus.
--   2b. je provedena aktualizace finančního výdeje ve skladu pro množství 2 při ceně 10,00 USD za kus.
--   3. Je provedena uzávěrka skladu s použitím metody přímého vyrovnání s cílem vyrovnat finanční příjem skladu oproti finančnímu výdeji skladu.
-
-![Přímé vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
-
-**Popis obrázku:**
-
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad nebo pod každou svislou šipkou je zadána hodnota skladové transakce ve formě *Množství*@*Jednotková cena*.
--   Pokud je hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Pokud není hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
-
-## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu
-Vážený průměr je založen na principu, kdy všechny příjmy v období uzávěrky jsou sečteny do nové transakce převodu zásob. Tato transakce se nazývá *Uzávěrka skladu – vážený průměr*. Všechny příjmy pro daný den budou vyrovnány oproti výdeji nově vytvořené transakce převodu skladu. Všechny výdeje pro daný den budou vyrovnány oproti příjmu nové transakce převodu skladu. Pokud bude po uzávěrce skladu hodnota zásob na skladě kladná, budou sečteny hodnota zásob na skladě a hodnota zásob v rámci nové transakce převodu skladu (příjem). Pokud bude po uzávěrce skladu hodnota zásob na skladě záporná, bude hodnota zásob na skladě a hodnota zásob tvořena souhrnem jednotlivých položek, které nebyly úplně vyrovnány. 
-
-V níže uvedeném scénáři bylo během daného období zaúčtováno několik finančně aktualizovaných příjmů a výdejů. Při skladové uzávěrce systém vyhodnotí každý den s cílem určit postup při uzávěrce jednotlivých dní. 
-
-Následující obrázek znázorňuje tyto transakce: 
+V tomto příkladu není políčko **Zahrnout fyzickou hodnotu** na stránce **skupině modelů položek** pro vydaný produkt zaškrtnuto. Následující schéma znázorňuje tyto transakce:
 
 **Den 1:**
 
--   1a. Fyzický příjem ve skladu byl aktualizován pro množství 3 při ceně 15,00 USD za kus.
--   1b. Finanční příjem ve skladu byl aktualizován pro množství 3 při ceně 15,00 USD za kus.
--   2a. Fyzický výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD.
--   2b. Finanční výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD.
-
-V systému bude pro den 1 použita metoda přímého vyrovnání. 
+- 1a. Fyzický příjem ve skladu pro množství 10 při ceně 10,00 USD za kus
+- 1b. Finanční příjem ve skladu pro množství 10 při ceně 10,00 USD za kus
+- 2a. Fyzický příjem ve skladu pro množství 10 při ceně 20,00 USD za kus
+- 3a. Fyzický výdej ze skladu pro množství 1 při ceně 10,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+- 3b. Finanční výdej ze skladu pro množství 1 při ceně 10,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
 
 **Den 2:**
 
--   3a. Fyzický výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD
--   3b. Finanční výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD
-
-V systému bude pro den 2 použita metoda přímého vyrovnání. 
+- 4a. Fyzický příjem ve skladu pro množství 1 při ceně 25,00 USD za kus
+- 5a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 5b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 6a. Finanční výdej ze skladu pro množství 1 při ceně 20,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
 
 **Den 3:**
 
--   4a. Fyzický výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD
--   4b. Finanční výdej ze skladu pro množství 1 při průběžné průměrné ceně 15,00 USD
--   5a. Fyzický příjem ve skladu pro množství 1 při ceně 17,00 USD za kus
--   5b. Finanční příjem ve skladu pro množství 1 při ceně 17,00 USD za kus
+- 7\. Je provedena uzávěrka skladu. Na základě metody denního váženého průměru systém používá metodu přímého vyrovnání pro 30. prosinec (30. 12.), protože ke 30. prosinci je finančně aktualizována pouze jedna účtenka. V tomto příkladu je vytvořeno jedno vyrovnání mezi transakcemi 1b a 3b. Je provedena úprava 10,00 USD, aby se hodnota transakce 3b zvýšila na 20,00. Dne 31. prosince (31. 12.) se neprovádí žádná úprava ani vyrovnání, protože 31. prosince nejsou žádné finančně aktualizované výdeje.
 
-Je provedena uzávěrka skladu. Bude třeba provést přímé vyrovnání, protože existuje více příjmů přes větší počet dnů.
+Následující diagram ukazuje tuto sérii transakcí a dopad použití váženého průměru jako skladového modelu a principu přímého vyrovnání bez možnosti **Zahrnovat fyzickou hodnotu**.
 
--   7a. Je vytvořen finanční výdej transakce uzávěrky skladu s použitím váženého průměru pro množství 2 při ceně 32,00 USD s cílem sečíst vyrovnání všech finančních příjmů ve skladu k datu, které dosud nebylo uzavřeno.
--   7b. Jako protiúčet k bodu 7a je vytvořen finanční příjem transakce uzávěrky skladu s použitím váženého průměru.
+![Přímé vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](media/weighted-average-date-direct-settlement-without-include-physical-value.png)
 
-Systém vygeneruje a zaúčtuje souhrnnou transakci převodu zásob. Navíc aplikace systém vyrovná všechny příjmy pro daný den a skladové zásoby pro předchozí dny s ohledem na souhrnnou transakci převodu zásob výdeje. Všechny výdeje pro daný den budou vyrovnány oproti sumarizované transakci příjmu pro převod skladu. Nákladová cena s použitím váženého průměru je vypočtena jako 16,00 USD. Pro výdej bude použita úprava 1,00 USD s cílem upravit náklady váženého průměru. Nová nákladová cena s použitím průběžného váženého průměru bude 16,00 USD. 
+**Vysvětlivky k diagramu:**
 
-Následující obrázek ilustruje tuto sérii transakcí, včetně dopadu volby váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti **Zahrnovat fyzickou hodnotu**. 
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Fyzické transakce jsou znázorněny kratšími světle šedými šipkami.
+- Finanční transakce jsou znázorněny delšími černými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod osou.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Data jsou oddělena tenkými černými svislými čarami. Kalendářní data jsou uvedena ve spodní části diagramu.
+- Uzávěrky skladu jsou reprezentovány červenými svislými přerušovanými čarami.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
-![Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu
 
-**Popis obrázku**
+Když je v období více příjmů, denní vážený průměr používá princip souhrnného vyrovnání, kdy všechny příjmy v jednom dni jsou sečteny do transakce s názvem *Uzávěrka skladu – denní vážený průměr*. Všechny příjmy v tomto dni budou vyrovnány výdejem nově vytvořené transakce zásob. Všechny výdeje v tomto dni budou vyrovnány příjmem nové transakce zásob. Pokud budou po uzávěrce skladu hodnota na skladě zásoby, hodnota zásob na skladě je zahrnuta do transakce příjmu transakce uzávěrky skladu s váženým průměrem.
 
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad nebo pod každou svislou šipkou je zadána hodnota skladové transakce ve formě *Množství*@*Jednotková cena*.
--   Pokud je hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Pokud není hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
--   Plné červené diagonální šipky znázorňují transakce příjmu, pro které je prováděno vyrovnání s transakcí výdeje vytvořenou systémem.
--   Plná zelená diagonální šipka reprezentuje transakci příjmu vygenerovanou systémem vyrovnání, s níž je vyrovnána původně zaúčtovaná transakce výdeje.
+Následující schéma znázorňuje tyto transakce:
+
+**Den 1:**
+
+- 1a. Fyzický příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 1b. Finanční příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 2a. Fyzický příjem ve skladu pro množství 1 při ceně 20,00 USD za kus
+- 2b. Finanční příjem ve skladu pro množství 1 při ceně 22,00 USD za kus
+- 3a. Fyzický výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+- 3b. Finanční výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+
+**Den 2:**
+
+- 4a. Fyzický příjem ve skladu pro množství 1 při ceně 25,00 USD za kus
+- 5a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 5b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 6a. Fyzický výdej ze skladu pro množství 1 při ceně 23,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+
+**Den 3:**
+
+- 7\. Je provedena uzávěrka skladu.
+- 7a. Je vytvořena transakce Uzávěrka skladu – vážený průměr finančního výdeje, která představuje součet vyrovnání všech finančních příjmů zásob.
+
+    - Transakce 1b je vyrovnána za množství 1 s vyrovnanou částkou 10,00 USD.
+    - Transakce 2b je vyrovnána za množství 1 s vyrovnanou částkou 22,00 USD.
+    - Transakce 7a je vytvořena pro množství 2 s vyrovnanou částkou 32,00 USD. Tato transakce kompenzuje součet dvou příjmových transakcí, které jsou v daném období finančně aktualizovány.
+
+- 7b. Jako protiúčet pro finančně zaúčtované výdeje je vytvořen finanční příjem transakce uzávěrky skladu s použitím váženého průměru.
+
+    - Transakce 3b je vyrovnána za množství 1 s vyrovnanou částkou 16,00 USD. Tato transakce není upravena, protože se jedná o vážený průměr finančně zaúčtovaných transakcí za 1. prosinec (12/1).
+    - Transakce 7b je vytvořena pro množství 2 s finanční částkou 32,00 USD a vyrovnanou částkou 16,00 USD k vyrovnání transakce 3b. Tato transakce kompenzuje součet jedné výdejové transakce, která je v daném období finančně aktualizována. Transakce zůstává otevřená, protože je stále jedna jednotka skladem.
+
+Následující schéma ilustruje tuto sérii transakcí a dopad volby váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti **Zahrnovat fyzickou hodnotu**.
+
+![Souhrnné vyrovnání s použitím data váženého průměru bez volby Zahrnout fyzickou hodnotu.](media/weighted-average-date-summarized-settlement-without-include-physical-value.png)
+
+**Vysvětlivky k diagramu:**
+
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Fyzické transakce jsou znázorněny kratšími světle šedými šipkami.
+- Finanční transakce jsou znázorněny delšími černými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod osou.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Data jsou oddělena tenkými černými svislými čarami. Kalendářní data jsou uvedena ve spodní části diagramu.
+- Uzávěrky skladu jsou reprezentovány červenými svislými přerušovanými čarami.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-is-used"></a>Přímé vyrovnání s použitím data váženého průměru s volbou Zahrnout fyzickou hodnotu
-Aktuální verze používá stejnou metodu přímého vyrovnání pro datum váženého průměru, která je použita v předchozích verzích. V systému jsou provedena přímá vyrovnání mezi příjmy a výdeji. Systém tuto metodu přímého vyrovnání používá v určitých situacích:
 
--   V daném období byl zaúčtován jeden příjem a jeden nebo několik výdejů.
--   V daném období byly zaúčtovány pouze výdeje a ve skladě se nacházejí skladové položky z předchozí uzávěrky.
+V aktuální verzi produktu možnost **Zahrnovat fyzickou hodnotu** funguje se skladovým modelem denního váženého průměru jinak než ve starších verzích produktu. Když zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupina modelů zboží**, systém použije fyzicky aktualizované příjmy při výpočtu odhadované nákladové ceny výdeje nebo průběžného průměru. Výdeje v průběhu období budou zaúčtovány na základě této odhadované nákladové ceny. Při uzávěrce skladu budou finančně aktualizované příjmy vzaty v potaz pouze ve výpočtu váženého průměru.
 
-Pokud označíte pole **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupina modelů zboží**, systém použije fyzicky aktualizované příjmy při výpočtu odhadované nákladové ceny nebo průběžného průměru. Výdeje budou během daného období zaúčtovány na základě odhadované nákladové ceny. Při uzávěrce skladu budou finančně aktualizované příjmy vzaty v potaz pouze ve výpočtu váženého průměru.
+Následující schéma znázorňuje tyto transakce:
+
+**Den 1:**
+
+- 1a. Fyzický příjem ve skladu pro množství 10 při ceně 10,00 USD za kus
+- 1b. Finanční příjem ve skladu pro množství 10 při ceně 10,00 USD za kus
+- 2a. Fyzický příjem ve skladu pro množství 10 při ceně 20,00 USD za kus
+- 3a. Fyzický výdej ze skladu pro množství 1 při ceně 15,00 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+- 3b. Finanční výdej ze skladu pro množství 1 při ceně 15,00 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+
+**Den 2:**
+
+- 4a. Fyzický příjem ve skladu pro množství 1 při ceně 25,00 USD za kus
+- 5a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 5b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 6a. Fyzický výdej ze skladu pro množství 1 při ceně 21,25 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+
+**Den 3:**
+
+- 7\. Je provedena uzávěrka skladu. Na základě metody denního váženého průměru systém používá metodu přímého vyrovnání pro 30. prosinec (30. 12.), protože ke 30. prosinci je finančně aktualizována pouze jedna účtenka. V tomto příkladu je vytvořeno jedno vyrovnání mezi transakcemi 1b a 3b. K 30. 12. není u vydání provedena žádná úprava. Ani ke dni 31. prosince (31. 12.) se neprovádí žádná úprava ani vyrovnání, protože 31. prosince nejsou žádné finančně aktualizované výdeje.
+
+Následující diagram ukazuje tuto sérii transakcí a dopad použití váženého průměru jako skladového modelu a principu přímého vyrovnání s možností **Zahrnovat fyzickou hodnotu**.
+
+![Přímé vyrovnání váženého průměru s možností Zahrnovat fyzickou hodnotu.](media/weighted-average-date-direct-settlement-with-include-physical-value.png)
+
+**Vysvětlivky k diagramu:**
+
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Fyzické transakce jsou znázorněny kratšími světle šedými šipkami.
+- Finanční transakce jsou znázorněny delšími černými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod osou.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Data jsou oddělena tenkými černými svislými čarami. Kalendářní data jsou uvedena ve spodní části diagramu.
+- Uzávěrky skladu jsou reprezentovány červenými svislými přerušovanými čarami.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-is-used"></a>Souhrnné vyrovnání s použitím data váženého průměru s volbou Zahrnout fyzickou hodnotu
-Pokud označíte pole **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupina modelů zboží**, systém použije fyzicky aktualizované příjmy při výpočtu odhadované nákladové ceny nebo průběžného průměru. Výdeje budou během daného období zaúčtovány na základě odhadované nákladové ceny. Při uzávěrce skladu budou finančně aktualizované příjmy vzaty v potaz pouze ve výpočtu váženého průměru. Vyrovnání váženého průměru je založeno na principu, že příjmy v období uzávěrky jsou sečteny do nové transakce převodu zásob, která se nazývá *Uzávěrka skladu – vážený průměr*. Všechny příjmy pro daný den budou vyrovnány oproti výdeji nově vytvořené transakce převodu skladu. Všechny výdeje pro daný den budou vyrovnány oproti příjmu nové transakce převodu skladu. Pokud bude po uzávěrce skladu hodnota zásob na skladě kladná, budou sečteny hodnota zásob na skladě a hodnota zásob v rámci nové transakce převodu skladu (příjem). Pokud bude po uzávěrce skladu hodnota zásob na skladě záporná, bude hodnota zásob na skladě a hodnota zásob tvořena souhrnem jednotlivých položek, které nebyly úplně vyrovnány.
+
+V aktuální verzi produktu možnost **Zahrnovat fyzickou hodnotu** funguje se skladovým modelem váženého průměru jinak než ve starších verzích produktu. Když zaškrtnete políčko **Zahrnovat fyzickou hodnotu** pro položku na stránce **Skupina modelů zboží**, systém použije fyzicky aktualizované příjmy při výpočtu odhadované nákladové ceny nebo průběžného průměru. Výdeje v průběhu období budou zaúčtovány na základě této odhadované nákladové ceny. Při uzávěrce skladu budou finančně aktualizované příjmy vzaty v potaz pouze ve výpočtu váženého průměru. Používáte-li jako skladový model vážený průměr, doporučujeme provádět uzávěrku skladu měsíčně. V tomto příkladu souhrnného vyrovnání denního váženého průměru je u skladového modelu označeno, že má obsahovat fyzickou hodnotu.
+
+Následující schéma znázorňuje tyto transakce:
+
+**Den 1:**
+
+- 1a. Fyzický příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 1b. Finanční příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 2a. Fyzický příjem ve skladu pro množství 1 při ceně 20,00 USD za kus
+- 2b. Finanční příjem ve skladu pro množství 1 při ceně 22,00 USD za kus
+- 3a. Fyzický výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+- 3b. Finanční výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+
+**Den 2:**
+
+- 4a. Fyzický příjem ve skladu pro množství 1 při ceně 25,00 USD za kus
+- 5a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 5b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 6a. Fyzický výdej ze skladu pro množství 1 při ceně 23,67 USD (průběžná průměrná hodnota fyzicky a finančně zaúčtovaných transakcí).
+
+**Den 3:**
+
+- 7\. Je provedena uzávěrka skladu.
+- 7a. Je vytvořena transakce Uzávěrka skladu – vážený průměr finančního výdeje, která představuje součet vyrovnání všech finančních příjmů zásob.
+
+    - Transakce 1b je vyrovnána za množství 1 s vyrovnanou částkou 10,00 USD.
+    - Transakce 2b je vyrovnána za množství 1 s vyrovnanou částkou 22,00 USD.
+    - Transakce 7a je vytvořena pro množství 2 s vyrovnanou částkou 32,00 USD. Tato transakce kompenzuje součet dvou příjmových transakcí, které jsou v daném období finančně aktualizovány.
+
+- 7b. Jako protiúčet pro finančně zaúčtované výdeje je vytvořen finanční příjem transakce uzávěrky skladu s použitím váženého průměru.
+
+    - Transakce 3b je vyrovnána za množství 1 s vyrovnanou částkou 16,00 USD. Tato transakce není upravena, protože se jedná o vážený průměr finančně zaúčtovaných transakcí za 1. prosinec (12/1).
+    - Transakce 7b je vytvořena pro množství 2 s finanční částkou 32,00 USD a vyrovnanou částkou 16,00 USD k vyrovnání transakce 3b. Tato transakce kompenzuje součet jedné výdejové transakce, která je v daném období finančně aktualizována. Transakce zůstává otevřená, protože je stále jedna jednotka skladem.
+
+Následující diagram ukazuje tuto sérii transakcí a dopad použití váženého průměru jako skladového modelu a principu souhrnného vyrovnání bez možnosti **Zahrnovat fyzickou hodnotu**.
+
+![Souhrnné vyrovnání váženého průměru s možností Zahrnovat fyzickou hodnotu.](media/weighted-average-date-summarized-settlement-with-include-physical-value.png)
+
+**Vysvětlivky k diagramu:**
+
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Fyzické transakce jsou znázorněny kratšími světle šedými šipkami.
+- Finanční transakce jsou znázorněny delšími černými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod osou.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Data jsou oddělena tenkými černými svislými čarami. Kalendářní data jsou uvedena ve spodní části diagramu.
+- Uzávěrky skladu jsou reprezentovány červenými svislými přerušovanými čarami.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 ## <a name="weighted-average-date-when-marking-is-used"></a>Datum váženého průměru s použitím označení
-Označování je proces, který umožňuje propojit transakci výdeje s transakcí příjmu. Označení lze provést před zaúčtováním transakce nebo po ní. Označení lze provést tehdy, pokud chcete zjistit přesné náklady skladu při zaúčtování transakce, nebo při provedení uzávěrky skladu. 
 
-Předpokládejme například, že oddělení pro servisní služby odběratelům přijalo spěšnou objednávku od některého důležitého odběratele. Vzhledem k tomu, že se jedná o spěšnou objednávku, bude nutné při splnění požadavku zákazníka za tuto položku zaplatit více. Přitom si musíte být jisti, že pro fakturu této prodejní objednávky se náklady na tuto skladovou položku odrazí v marži nebo v nákladech na prodané zboží. Při zaúčtování nákupní objednávky bude ve skladu zaznamenán příjem s náklady 120,00 USD. Dokument prodejní objednávky je propojen s nákupní objednávkou před zaúčtováním dodacího listu nebo faktury. Náklady na prodané zboží budou místo aktuální průběžné průměrné ceny položky činit 120,00 USD. Pokud jsou dodací list nebo faktura zaúčtovány ještě před vytvořením propojení, budou náklady na prodané zboží zaúčtovány s použitím průběžné průměrné nákladové ceny. I před provedením uzávěrky skladu lze tyto dvě transakce vzájemně propojit. Pokud je transakce příjmu propojena s transakcí výdeje, nebude metoda vyhodnocení definovaná ve skupině skladových modelů položky vzata v potaz. Místo toho systém vyrovná tyto transakce navzájem. 
+Termínem označení se popisuje proces, který umožňuje propojit transakci výdeje s transakcí příjmu, neboli je označit jako propojené. Označení lze provést před zaúčtováním transakce nebo po ní. Označení lze provést tehdy, pokud chcete zjistit přesné náklady skladu při zaúčtování transakce, nebo při provedení uzávěrky skladu.
 
-Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. To lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky**. Můžete zobrazit otevřené transakce příjmu na stránce **Označení**. Po zaúčtování transakce je možné označit transakci výdeje s příjmem. Můžete spárovat nebo označit transakci výdeje pro transakci otevřených příjmů u naskladněné položky z deníku úpravy zaúčtované inventury. Následující obrázek znázorňuje tyto transakce:
+Předpokládejme například, že oddělení pro servisní služby odběratelům přijalo spěšnou objednávku od některého důležitého odběratele. Vzhledem k tomu, že se jedná o spěšnou objednávku, bude nutné při splnění požadavku zákazníka za tuto položku zaplatit více. Přitom si musíte být jisti, že pro fakturu této prodejní objednávky se náklady na tuto skladovou položku odrazí v marži nebo v nákladech na prodané zboží.
 
--   1a. Fyzický příjem ve skladu pro množství 1 při nákladové ceně 10,00 USD za kus
--   1b. Finanční příjem ve skladu pro množství 1 při nákladové ceně 10,00 USD za kus
--   2a. Fyzický příjem ve skladu pro množství 1 při nákladové ceně 20,00 USD za kus
--   2b. Finanční příjem ve skladu pro množství 1 při nákladové ceně 20,00 USD za kus
--   3a. Fyzický příjem ve skladu pro množství 1 při nákladové ceně 25,00 USD za kus
--   4a. Fyzický příjem ve skladu pro množství 1 při nákladové ceně 30,00 USD za kus
--   4b. Finanční příjem ve skladu pro množství 1 při nákladové ceně 30,00 USD za kus
--   5a. Fyzický výdej ze skladu pro množství 1 při ceně 21,25 USD (průběžná průměrná hodnota finančních a fyzických aktualizovaných transakcí).
--   5b. Finanční výdej ze skladu pro množství 1 je před zaúčtováním transakce propojen s příjmem ve skladu 2b. Tato transakce je zaúčtována s nákladovou cenou 20,00 USD.
--   6a. Fyzický výdej ze skladu pro množství 1 při ceně 21,25 USD.
--   7. Je provedena uzávěrka skladu. Vzhledem k tomu, že finančně aktualizovaná transakce je propojena s existujícím příjmem, budou tyto transakce vzájemně vyrovnány a nebudou provedeny žádné úpravy.
+Při zaúčtování nákupní objednávky bude ve skladu zaznamenán příjem s náklady 120,00 USD. Je-li dokument prodejní objednávky propojen s nákupní objednávkou před zaúčtováním dodacího listu nebo faktury, budou náklady na prodané zboží činit 120,00 USD namísto aktuální průběžné průměrné hodnoty nákladů na položku. Pokud jsou dodací list nebo faktura zaúčtovány ještě před vytvořením označení, budou náklady na prodané zboží zaúčtovány s použitím průběžné průměrné nákladové ceny.
 
-Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 USD. Následující obrázek ilustruje tuto sérii transakcí, včetně dopadu použití váženého průměru jako skladového modelu data a s označením.
+I před provedením uzávěrky skladu lze tyto dvě transakce vzájemně propojit.
 
-![Datum váženého průměru s označením.](./media/weightedaveragedatewithmarking.gif) 
+Když je transakce příjmu propojena s transakcí výdeje, nebude metoda vyhodnocení vybraná pro skupinu skladových modelů položky vzata v potaz a tyto transakce budou v systému vzájemně vyrovnány.
 
-**Popis obrázku:**
+Před zaúčtováním transakce je možné označit transakci výdeje s příjmem. Toto označení lze provést na řádku prodejní objednávky na stránce **Podrobnosti prodejní objednávky**. Můžete zobrazit otevřené transakce příjmu na stránce **Označení**.
 
--   Skladové transakce jsou reprezentovány svislými šipkami.
--   Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
--   Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
--   Nad nebo pod každou svislou šipkou je zadána hodnota skladové transakce ve formě *Množství*@*Jednotková cena*.
--   Pokud je hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je fyzicky zaúčtována do skladu.
--   Pokud není hodnota skladové transakce uzavřená do hranatých závorek, označuje, že skladová transakce je finančně zaúčtována do skladu.
--   Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
--   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
--   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
--   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
+Po zaúčtování transakce je možné také označit transakci výdeje s příjmem. Můžete spárovat nebo označit transakci výdeje pro transakci otevřených příjmů u naskladněné položky z deníku úpravy zaúčtované inventury.
 
+Následující schéma znázorňuje tyto transakce:
 
+**Den 1:**
 
+- 1a. Fyzický příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 1b. Finanční příjem ve skladu pro množství 1 při ceně 10,00 USD za kus
+- 2a. Fyzický příjem ve skladu pro množství 1 při ceně 20,00 USD za kus
+- 2b. Finanční příjem ve skladu pro množství 1 při ceně 22,00 USD za kus
+- 3a. Fyzický výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+- 3b. Finanční výdej ze skladu pro množství 1 při ceně 16,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+- 3c. Finanční výdej zásob pro transakci 3b je označen jako finanční výdej zásob pro transakci 2b.
 
+**Den 2:**
 
+- 4a. Fyzický příjem ve skladu pro množství 1 při ceně 25,00 USD za kus
+- 5a. Fyzický příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 5b. Finanční příjem ve skladu pro množství 1 při ceně 30,00 USD za kus
+- 6a. Fyzický výdej ze skladu pro množství 1 při ceně 23,00 USD (průběžná průměrná cena finančně zaúčtovaných transakcí).
+
+**Den 3:**
+
+- 7\. Je provedena uzávěrka skladu. Na základě principu značení, které využívá metodu váženého průměru, jsou označené transakce vzájemně vyrovnány. V tomto příkladu se transakce 3b vyrovná proti transakci 2b a úprava pro 6,00 USD se zaúčtuje do transakce 3b, aby se hodnota dostala na 22,00 USD. V tomto příkladu nejsou prováděna žádná další vyrovnání, protože uzavření vytváří vyrovnání pouze pro finančně aktualizované transakce.
+
+Následující schéma ukazuje tuto sérii transakcí a dopad použití váženého průměru jako skladového modelu s označením.
+
+![Vážený průměr s označením.](media/weighted-average-date-with-marking.png)
+
+**Vysvětlivky k diagramu:**
+
+- Skladové transakce jsou reprezentovány svislými šipkami.
+- Fyzické transakce jsou znázorněny kratšími světle šedými šipkami.
+- Finanční transakce jsou znázorněny delšími černými šipkami.
+- Příjmy do skladu jsou reprezentovány svislými šipkami nad osou.
+- Výdeje ze skladu jsou reprezentovány svislými šipkami pod osou.
+- Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
+- Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
+- Data jsou oddělena tenkými černými svislými čarami. Kalendářní data jsou uvedena ve spodní části diagramu.
+- Uzávěrky skladu jsou reprezentovány červenými svislými přerušovanými čarami.
+- Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

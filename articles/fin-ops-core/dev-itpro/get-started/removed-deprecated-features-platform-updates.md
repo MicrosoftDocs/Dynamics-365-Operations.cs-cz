@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384713"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396542"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
@@ -31,6 +31,18 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Odstranění funkce je platné ke dni 14. března 2022
+
+### <a name="xslt-scripting-in-data-management"></a>Skriptování XSLT ve Správě dat
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Podpora skriptování XSLT ve Správě dat je označena jako zastaralá, aby se zlepšilo zabezpečení a ochrana dat ve finančních a provozních aplikacích.  |
+| **Nahrazeno jinou funkcí?**   | Číslo Zákazníci a nezávislí dodavatelé softwaru by měli zvážit opětovnou implementaci svých řešení založených na jazyce X++ namísto skriptování XSLT. |
+| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé – plánované datum odstranění je 14. března 2022.<br><br>Výjimka: Zákazníci, kteří aktuálně používají skriptování XLST. Mohou jej nadále používat, dokud neaktualizují na verzi 10.0.30 nebo novější. Zákazníci s touto výjimkou obdrželi upozornění v Centru zpráv dostupném v Centru pro správu Microsoft 365. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Odstranění funkce platné od října 2021
 

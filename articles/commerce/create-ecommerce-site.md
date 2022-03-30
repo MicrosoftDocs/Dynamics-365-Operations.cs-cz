@@ -2,7 +2,7 @@
 title: Vytvoření webu elektronického obchodu
 description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388204"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402768"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
@@ -70,6 +70,14 @@ Chcete-li na web přejmenovat v konfigurátoru webů, postupujte podle následuj
 1. Chcete-li otevřít zobrazení seznamu webů, vyberte **Přepínač webů** v pravém horním rohu a poté vyberte **Spravovat weby**. 
 1. Zaškrtněte políčko vedle webu, který chcete přejmenovat, a poté vyberte **Přejmenovat** na příkazovém řádku.
 1. V dialogovém okně **Nový název webu** zadejte nový název webu a poté klikněte na tlačítko **OK**. Seznam webů se aktualizuje a zobrazí nový název webu.
+
+## <a name="delete-a-site"></a>Odstranění webu
+
+Chcete-li odstranit web v konfigurátoru webů, postupujte takto.
+
+1. Chcete-li otevřít zobrazení seznamu webů, vyberte **Přepínač webů** v pravém horním rohu a poté vyberte **Spravovat weby**.
+1. Vyberte web, který chcete odstranit, a poté vyberte na příkazovém řádku příkaz **Odstranit** .
+1. V dialogovém okně **Odstranit \<site name\>** zadejte název webu a poté vyberte možnost **Odstranit**.
 
 ## <a name="additional-resources"></a>Další prostředky
 

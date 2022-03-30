@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344971"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408008"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -58,7 +58,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Funkce | Uvedený problém | Vysvětlení | Očekávaná dostupnost |
 | --- | --- | --- | --- |
 | Akce | Výpočet skupin disponibility s akcemi povolen: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou akce generovány během hlavního plánování, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. Hlavním účelem akcí je navrhovat změny ve stávajících objednávkách. Vyhodnoťte, zda jsou akce aktivně uplatňovány jako součást vašich obchodních procesů nebo zda jsou dostatečné informace o zpoždění související s objednávkami. | 2022. duben |
-| Základní kalendáře | Kalendáře používající základní kalendář: _\#_ | Tato funkce čeká na implementaci. V současné době je základní kalendář ignorován při povolení optimalizace plánování. Vyhodnoťte, zda je pro vaše obchodní procesy potřeba základní kalendář nebo zda postačuje přímé nastavení v kalendářích. | 2022. duben | 
+| Základní kalendáře | Kalendáře používající základní kalendář: _\#_ | Tato funkce je nyní podporována. | 2022. březen | 
 | Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: _\#_ | Tato funkce čeká na implementaci. V současné době jsou kódy dispozice dávky ignorovány, pokud je povolena optimalizace plánování. | Říjen 2022 nebo pozdější |
 | Příslib na základě ověření dostupné kapacity (CTP) | Výchozí nastavení objednávky s datem dodání nastaveným na CTP: _\#_ | Tato funkce čeká na implementaci. V současnosti je CTP ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | 2022. říjen |
 | Kopírovat statický do dynamického plánu | Kopírování statického do dynamického plánu je povoleno na parametrech hlavního plánování. | Optimalizace plánování nekopíruje statický plán do dynamického plánu bez ohledu na toto nastavení. Obecně platí, že tento koncept je méně významný z důvodu rychlosti a úplného obnovení, které poskytuje optimalizace plánování. Pokud jsou použity dva nebo více plánů, je třeba pro každý plán spustit hlavní plánování. | 2022. říjen |

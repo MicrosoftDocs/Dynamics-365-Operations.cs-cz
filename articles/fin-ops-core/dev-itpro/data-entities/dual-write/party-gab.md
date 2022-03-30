@@ -2,19 +2,19 @@
 title: Strana a globální adresář
 description: Toto téma popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060324"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407758"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -226,9 +226,9 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
     ![Duplicitní pravidlo pro kontakty.](media/duplicate-rule-2.PNG)
 
-11. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data.
+11. Pokud jste stávajícím uživatelem a používáte dvojí zapisování, postupujte podle pokynů v [Upgrade na model strany a globálního adresáře](upgrade-party-gab.md) a upgradujte svá data. **Nepokračujte krokem 12 bez dokončení tohoto kroku.** Pokud jste nový uživatel s duálním zápisem, pokračujte krokem 12.
 
-12. Spusťte mapy v následujícím pořadí. Pokud se zobrazí chyba se stavem „Ověření projektu se nezdařilo. Chybí cílové pole ... “, otevřete mapu a vyberte **Obnovit tabulky**. Poté spusťte mapu.
+12. Pokud jste stávající uživatel s duálním zápisem, dokončete krok 11 a poté můžete spouštět mapy v následujícím pořadí. Pokud jste nový zákazník s duálním zápisem, můžete pokračovat přímo. Pokud se zobrazí chybová zpráva se stavem „Ověření projektu se nezdařilo. Chybí cílové pole ... “, otevřete mapu, vyberte **Obnovit tabulky** a poté spusťte mapu.
 
     Finanční a provozní aplikace | Aplikace Customer Engagement  
     ----------------------------|------------------------

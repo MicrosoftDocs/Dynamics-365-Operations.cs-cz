@@ -2,19 +2,19 @@
 title: Přiznání k DPH (Německo)
 description: Toto téma popisuje, jak nastavit a vygenerovat předběžné přiznání k dani z přidané hodnoty (DPH) pro Německo v oficiálním formátu XML.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860876"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402796"
 ---
 # <a name="vat-declaration-germany"></a>Přiznání k DPH (Německo)
 
@@ -163,6 +163,9 @@ Otevřete pracovní prostor **Elektronické hlášení** a importujte následuj�
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a><a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Nastavení parametrů specifických pro aplikace pro pole přiznání k DPH
 
 Chcete-li automaticky generovat přiznání k DPH, musíte přidružit kódy DPH v aplikaci a výsledky vyhledávání v konfiguraci ER.
+
+> [!NOTE]
+> Doporučujeme, abyste aktivovali funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER** v pracovním prostoru **Správa funkcí**. Když je tato funkce povolena, parametry, které jsou konfigurovány pro dřívější verzi formátu ER, se automaticky stanou použitelnými u novější verze stejného formátu. Pokud tato funkce není povolena, musíte u každé verze formátu explicitně konfigurovat parametry specifické pro aplikaci. Funkce **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER** je dostupná v pracovním prostoru **Správa funkcí** od verze Finance 10.0.23. Další informace o tom, jak nastavit parametry formátu ER pro každou právnickou osobu najdete v tématu [Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Pomocí těchto kroků definujte, které kódy DPH generují která pole v přiznání k DPH.
 
