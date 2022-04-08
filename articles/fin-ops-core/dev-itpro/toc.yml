@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Nástroj Platform Updates pro verzi 10.0.24 (únor 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Nástroj Platform Updates pro verzi 10.0.23 (leden 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Finanční a provozní aplikace v Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
+            - name: Data a metadata uložená v Azure Data Lake
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: Zpřístupnění úložiště entit jako Data Lake
               href: data-entities/entity-store-data-lake.md
             - name: Obchodní události generované exportem do Azure Data Lake (Preview)
@@ -410,6 +410,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md
+                    - name: Upgrade systému Windows Server ve vašich prostředích Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-upgrade-os.md
                     - name: Upgrade instance systému SQL Server prostředí Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Místní agent
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS pro partnery
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Podporované webové prohlížeče
+                  href: lifecycle-services/web-browsers.md
                 - name: RESTful API
                   items:
                     - name: "Spuštění a\_zastavení prostředí"
@@ -1490,7 +1494,9 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Upgrade souborů parametrů
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Kurz pro nástroj Regression suite automation tool
+            - name: Zkušební režim bez Azure DevOps
+              href: perf-test/rsat/rsat-trial-without-devops.md
+            - name: Kurz pro Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurace uživatelů bez oprávnění správce
               href: perf-test/rsat/rsat-configure-nonadmin.md

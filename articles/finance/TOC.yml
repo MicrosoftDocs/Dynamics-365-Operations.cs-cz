@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (únor)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (leden)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -414,8 +412,20 @@
               items:
                 - name: Přehled fakturace předplatného
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Nastavení plánů fakturace
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Opakovaná fakturace smlouvy
+                  items:
+                    - name: Vytvoření plánů fakturace
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Kopírování plánu fakturace
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Vyúčtování po milnících
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Ukončení plánů fakturace
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Časové rozlišení výnosů a výdajů
+                  items: null
+                - name: Víceprvkové přidělení výnosů
+                  items: null
             - name: "Platby a\_vyrovnání"
               items:
                 - name: Přehled plateb zákazníka
@@ -1443,11 +1453,11 @@
                             - name: Konfigurace kanálu SharePointu
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Nastavení a použití elektronické fakturace s Finance a Supply Chain Management
-                          items: null
-                        - name: Aktivace a nastavení integrace s elektronickou fakturací
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Nastavení parametrů elektronické fakturace
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Aktivace a nastavení integrace s elektronickou fakturací
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Nastavení parametrů elektronické fakturace
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Práce s elektronickou fakturací
                           items:
                             - name: Odeslání elektronických dokumentů do elektronické fakturace
@@ -1532,20 +1542,28 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Výkaznictví ve Finsku
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Vykazování pro Francii
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Vykazování pro Německo
                           items:
-                            - name: "Přiznání k\_DPH"
+                            - name: Přiznání k DPH
                               href: localizations/emea-deu-vat-declaration-germany.md
                         - name: Vykazování v Nizozemsku
                           items:
-                            - name: "Přiznání k\_DPH"
+                            - name: Přiznání k DPH
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Souhrnné hlášení (EU)
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Výkaznictví pro Norsko
+                          items:
+                            - name: Přiznání k DPH
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Výkaznictví ve Španělsku
                           items:
                             - name: 'Okamžité poskytnutí informací o DPH (Suministro Inmediato de Información del IVA, SII)'
@@ -1564,10 +1582,6 @@
                           items:
                             - name: Přiznání k DPH
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Výkaznictví pro Norsko
-                          items:
-                            - name: Přiznání k DPH
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Povolení výpočtu daně pro převodní příkaz
                       items:
                         - name: "Podpora daňových funkcí u\_převodních příkazů"
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Poplatky za obalový materiál
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Výkaz DPH
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Sestava zahraničních služeb
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Rakouský Intrastat
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: "Aktualizace zobrazení částek v\_sestavách a\_dokumentech"
                   href: localizations/emea-amount-printing-forms.md
-                - name: Výkaz DPH
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: "Přiznání k\_DPH (Česká republika)"
+                - name: Přiznání k DPH
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Český Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Dánský Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: Přiznání k DPH
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egypt
               items:
                 - name: Egypt - přehled
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Intrastat pro Finsko
                   href: localizations/emea-fin-intrastat.md
+                - name: Přiznání k DPH
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Francie
               items:
                 - name: Francie – přehled
@@ -2330,14 +2344,10 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: "Vyrovnání odpisů u\_dodatečných pořízení za druhý rok"
                   href: localizations/tasks/de-00002-depreciation.md
-                - name: "Přiznání k\_DPH"
+                - name: Přiznání k DPH
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: "Elektronický přenos přiznání k\_DPH (ELSTER)"
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Německý Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Výkaz DPH
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Sestava elektronických faktur zákazníka
                   href: localizations/emea-deu-e-invoices.md
                 - name: Sestava seznamu deníku
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: Souhrnné hlášení (EU)
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: Přiznání k DPH
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Maďarsko
               items:
                 - name: "Maďarsko\_–\_přehled"
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: Dovoz služeb s GST
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Účtuje přidělení na stránce celního prohlášení pro importní objednávky
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: Vývoz zboží s nulovou sazbou daně
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: Vývoz služeb s nulovou sazbou daně
@@ -3114,19 +3124,15 @@
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
             - name: Nizozemsko
               items:
-                - name: Nizozemí - přehled
+                - name: Nizozemsko – přehled
                   href: localizations/netherlands.md
-                - name: Přiznání k DPH
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektronické daňové přiznání (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Integrace Semansys XBRL
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Soubor auditu (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: "Přiznání k\_DPH (Nizozemsko)"
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Nizozemský Intrastat
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: Souhrnné hlášení (EU)
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3540,7 +3546,7 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Sestava platby DPH pro Švédsko
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Přiznání k DPH pro Švédsko
+                - name: Přiznání k DPH
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Švédský Intrastat
                   href: localizations/emea-swe-intrastat.md

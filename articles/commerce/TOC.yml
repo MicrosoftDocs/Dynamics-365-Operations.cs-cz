@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: 'Modern Point of Sale (MPOS), Cloud POS a Store Commerce'
                   items:
-                    - name: "Aplikace Store Commerce v\_Microsoft Dynamics 365 Commerce (Preview)"
+                    - name: Aplikace Store Commerce
                       href: dev-itpro/store-commerce.md
                     - name: Průvodce implementací správy zařízení
                       href: implementation-considerations-devices.md
@@ -2872,7 +2872,9 @@
               items:
                 - name: Refundace na vratce je odmítnuta
                   href: troubleshoot/refund-declined.md
-                - name: Dynamics 365 Payment Connector pro Adyen
+                - name: Vratné poplatky jsou špatně vypočítány na základě vráceného množství
+                  href: troubleshoot/refund-miscalculated-partial-return.md
+                - name: Aplikace Dynamics 365 Payment Connector pro Adyen
                   items:
                     - name: Řešení potíží s Dynamics 365 Payment Connector pro Adyen
                       href: troubleshoot/adyen-support.md
