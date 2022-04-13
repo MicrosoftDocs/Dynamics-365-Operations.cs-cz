@@ -1,7 +1,7 @@
 ---
 title: Průvodce nastavením hlavního plánování (obsahuje video)
 description: Toto téma popisuje, jak spustit průvodce nastavením hlavního plánování a nastavit hlavní plánování.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: a5914f63de654acd076048240c6e37d5b67f4ffa
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937626"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470198"
 ---
 # <a name="master-planning-setup-wizard"></a>Průvodce nastavením hlavního plánování
 
@@ -31,7 +31,7 @@ Toto téma obsahuje pokyny pro **Průvodce nastavením hlavního plánování**.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-[Video Průvodce nastavením hlavního plánování v aplikaci Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (zobrazené výše) je součástí playlistu [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+[Průvodce nastavením hlavního plánování v aplikaci Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (zobrazené výše) je zahrnut do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Specifické požadavky vaší společnosti

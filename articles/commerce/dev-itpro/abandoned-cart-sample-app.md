@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353356"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489023"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Detekce opuštěných košíků a zasílání upozornění zákazníkům
 
@@ -127,7 +127,7 @@ Chcete-li nakonfigurovat ukázkovou aplikaci konektoru opuštěného košíku, u
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-Stav úlohy načítání opuštěného košíku, ID košíků a upravená časová razítka jsou uloženy v databázi Azure Cosmos DB. Ve výchozím nastavení odkazují nastavení v konfiguračním souboru na instanci místního emulátoru Azure Cosmos DB. Když nasadíte konektor do produkčního prostředí, musíte aktualizovat tato nastavení, aby odkazovala na instanci Azure Cosmos DB ve vašem předplatném Azure. Pro místní testování nebo testování v sandboxu můžete použít [emulátor Azure Cosmos](/azure/cosmos-db/local-emulator).
+Stav úlohy načítání opuštěného košíku, ID košíků a upravená časová razítka jsou uloženy v databázi Azure Cosmos DB. Ve výchozím nastavení odkazují nastavení v konfiguračním souboru na instanci místního emulátoru Azure Cosmos DB. Když nasadíte konektor do produkčního prostředí, musíte aktualizovat tato nastavení, aby odkazovala na instanci Azure Cosmos DB ve vašem předplatném Azure. Pro místní testování nebo testování v sandboxu můžete použít [emulátor Azure Cosmos DB](/azure/cosmos-db/local-emulator).
 
 | Vlastnost    | Popis |
 | ----------- | ----------- |

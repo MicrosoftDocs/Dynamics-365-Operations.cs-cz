@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781956"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492913"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Kurz pro nástroj Regression Suite Automation Tool
 
@@ -43,7 +43,7 @@ V následujícím příkladu je ukázáno, jak lze pomocí této funkce ověřit
     5. Označte na seznamu vybraný řádek.
     6. Ověřte, zda hodnota pole **Celkem k dispozici** je **411.0000000000000000**.
 
-2. Uložte záznam úlohy jako **nahrávku vývojáře** a připojte jej k testovacímu případu v Azure Devops.
+2. Uložte záznam úlohy jako **nahrávku vývojáře** a připojte jej k testovacímu případu v Azure DevOps.
 3. Přidejte testovací případ do testovacího plánu a načtěte testovací případ do RSAT.
 4. Otevřete soubor parametrů Excel a přejděte na kartu **Kroky TestCase**.
 5. Pro ověření, zda bude množství na skladě vždy vyšší než **0**, přejděte na krok **Ověřit dostupný celkový počet** a změňte jeho hodnotu z **411** na **0**. Změňte hodnotu pole **Operátor** ze znaku rovná se (**=**) na znak je větší než (**\>**).
@@ -172,6 +172,7 @@ RSAT lze volat z okna **Příkazového řádku** nebo **PowerShell**.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ RSAT lze volat z okna **Příkazového řádku** nebo **PowerShell**.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ RSAT lze volat z okna **Příkazového řádku** nebo **PowerShell**.
 
 #### <a name=""></a>?
 
-Zobrazí nápovědu ke všem dostupným příkazům a jejich parametrům.
+Zobrazí seznam všech příkazů nebo zobrazí nápovědu pro konkrétní příkaz spolu s dostupnými parametry.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: Volitelné parametry
 
-`command`: Kde ``[command]`` je jeden z níže uvedených příkazů.
+`command`: Část ``[command]`` je jedním z příkazů v předchozím seznamu.
 
-#### <a name="about"></a>o aplikaci
+#### <a name="about"></a>about
 
-Zobrazí aktuální verze.
+Zobrazí verzi instalovaného RSAT.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -214,62 +217,115 @@ Vymaže obrazovku.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
 
-#### <a name="download"></a>stáhnout
+#### <a name="download"></a>download
 
-Stáhne přílohy pro zadaný testovací případ do výstupního adresáře.
-Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+Stáhne přílohy (soubory nahrávek, provádění a parametrů) pro zadaný testovací případ z Azure DevOps do výstupního adresáře. Příkazem ``list`` získáte všechny dostupné testovací případy a libovolnou hodnotu z prvního sloupce pak můžete použít jako parametr **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>download: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces stahování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
 
 ##### <a name="download-required-parameters"></a>download: požadované parametry
 
 + `test_case_id`: Představuje ID testovacího případu.
-+ `output_dir`: Představuje výstupní adresář. Adresář musí existovat.
 
-##### <a name="download-examples"></a>stažení: příklady
+##### <a name="download-optional-parameters"></a>download: volitelné parametry
+
++ `output_dir`: Představuje výstupní pracovní adresář. Adresář musí existovat. Pokud tento parametr není zadán, použije se pracovní adresář z nastavení.
+
+##### <a name="download-examples"></a>download: příklady
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
 
-#### <a name="edit"></a>upravit
+#### <a name="downloadsuite"></a>downloadsuite
+
+Stáhne přílohy (soubory nahrávek, provádění a parametrů) pro všechny testovací případy v zadané testovací sadě z Azure DevOps do výstupního adresáře. Příkazem ``listtestsuitenames`` získáte všechny dostupné testovací sady a libovolnou hodnotu pak můžete použít jako parametr **test_suite_name**.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces stahování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/byid`: Tento přepínač označuje, že požadovaná testovací sada je identifikována pomocí ID Azure DevOps, nikoli názvem testovací sady.
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: požadované parametry
+
++ `test_suite_name`: Představuje název testovací sady. Tento parametr je povinný, pokud přepínač /byid **není** zadán. Tento název je názvem testovací sady Azure DevOps.
++ `test_suite_id`: Představuje ID testovací sady. Tento parametr je povinný, pokud přepínač /byid **je** zadán. Toto ID je ID testovací sady Azure DevOps.
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: volitelné parametry
+
++ `output_dir`: Představuje výstupní pracovní adresář. Adresář musí existovat. Pokud tento parametr není zadán, použije se pracovní adresář z nastavení.
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: příklady
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
+
+#### <a name="edit"></a>edit
 
 Umožňuje otevřít soubor parametrů v aplikaci Excel a upravit jej.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
 
-##### <a name="edit-required-parameters"></a>upravit: povinné parametry
+##### <a name="edit-required-parameters"></a>edit: povinné parametry
 
 + `excel_file`: Musí obsahovat úplnou cestu k existujícímu souboru aplikace Excel.
 
 ##### <a name="edit-examples"></a>edit: příklady
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
-#### <a name="generate"></a>generovat
+#### <a name="generate"></a>generate
 
 Generuje spuštění testu a soubory parametrů pro zadaný testovací případ v výstupním adresáři. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
 
-##### <a name="generate-required-parameters"></a>generovat: požadované parametry
+##### <a name="generate-optional-switches"></a>generate: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces generování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/dllonly`: Generovat pouze spouštěcí soubory testu. Soubor Excelu s parametry znovu negeneruje.
++ `/keepcustomexcel`: Aktualizace existujícího souboru parametrů. Také znovu generuje spouštěcí soubory.
+
+##### <a name="generate-required-parameters"></a>generate: požadované parametry
 
 + `test_case_id`: Představuje ID testovacího případu.
-+ `output_dir`: Představuje výstupní adresář. Adresář musí existovat.
 
-##### <a name="generate-examples"></a>generovat: příklady
+##### <a name="generate-optional-parameters"></a>generate: volitelné parametry
+
++ `output_dir`: Představuje výstupní pracovní adresář. Adresář musí existovat. Pokud tento parametr není zadán, použije se pracovní adresář z nastavení.
+
+##### <a name="generate-examples"></a>generate: příklady
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-Generuje nový testovací případ odvozený od poskytnutého testovacího případu. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+Generuje nový odvozený (podřízený) testovací případ zadaného testovacího případu. Nový testovací případ se také přidá do zadané testovací sady. Příkazem ``list`` získáte všechny dostupné testovací případy a libovolnou hodnotu z prvního sloupce pak můžete použít jako parametr **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces generování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: požadované parametry
 
@@ -281,47 +337,71 @@ Generuje nový testovací případ odvozený od poskytnutého testovacího pří
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-Generuje pouze soubor spuštění testu pro zadaný testovací případ v výstupním adresáři. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+Generuje pouze spouštěcí soubory testu pro zadaný testovací případ. Negeneruje znovu soubor Excelu s parametry. Soubory jsou generovány v určeném výstupním adresáři. Příkazem ``list`` získáte všechny dostupné testovací případy a libovolnou hodnotu z prvního sloupce pak můžete použít jako parametr **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces generování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: požadované parametry
 
 + `test_case_id`: Představuje ID testovacího případu.
-+ `output_dir`: Představuje výstupní adresář. Adresář musí existovat.
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: volitelné parametry
+
++ `output_dir`: Představuje výstupní pracovní adresář. Adresář musí existovat. Pokud tento parametr není zadán, použije se pracovní adresář z nastavení.
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: příklady
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-Generuje všechny testovací případy pro zadanou sadu ve výstupním adresáři. Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **test_suite_name** použijte libovolnou hodnotu z prvního sloupce.
+Generuje všechny soubory pro automatizaci testů pro všechny testovací případy v zadané testovací sadě. Příkazem ``listtestsuitenames`` získáte všechny dostupné testovací sady a libovolnou hodnotu pak můžete použít jako parametr **test_suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces generování počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/dllonly`: Generovat pouze spouštěcí soubory testu. Soubor Excelu s parametry znovu negeneruje.
++ `/keepcustomexcel`: Aktualizace existujícího souboru parametrů. Také znovu generuje spouštěcí soubory.
++ `/byid`: Tento přepínač označuje, že požadovaná testovací sada je identifikována pomocí ID Azure DevOps, nikoli názvem testovací sady.
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: požadované parametry
 
-+ `test_suite_name`: Představuje název testovací sady.
-+ `output_dir`: Představuje výstupní adresář. Adresář musí existovat.
++ `test_suite_name`: Představuje název testovací sady. Tento parametr je povinný, pokud přepínač /byid **není** zadán. Tento název je názvem testovací sady Azure DevOps.
++ `test_suite_id`: Představuje ID testovací sady. Tento parametr je povinný, pokud přepínač /byid **je** zadán. Toto ID je ID testovací sady Azure DevOps.
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: volitelné parametry
+
++ `output_dir`: Představuje výstupní pracovní adresář. Adresář musí existovat. Pokud tento parametr není zadán, použije se pracovní adresář z nastavení.
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: příklady
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
 
-#### <a name="help"></a>nápověda
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
+
+#### <a name="help"></a>help
 
 Totožný s [?](#section) příkaz.
 
-#### <a name="list"></a>seznam
+#### <a name="list"></a>list
 
-Obsahuje seznam všech dostupných testovacích případů.
+Vypíše seznam všech dostupných testovacích případů v aktuálním plánu testování.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Obsahuje seznam všech dostupných testovacích plánů.
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-Uvádí seznam testovacích případů pro zadanou testovací sadu. Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **suite_name** použijte libovolnou hodnotu z prvního sloupce.
+Uvádí seznam testovacích případů pro zadanou testovací sadu. Příkazem ``listtestsuitenames`` získáte všechny dostupné testovací sady a libovolnou hodnotu ze seznamu pak můžete použít jako parametr **suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: požadované parametry
 
-+ `suite_name`: Název požadované sady.
++ `test_suite_name`: Název požadované sady.
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: příklady
 
@@ -347,33 +427,61 @@ Uvádí seznam testovacích případů pro zadanou testovací sadu. Pomocí př�
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+Uvádí seznam testovacích případů pro zadanou testovací sadu.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: požadované parametry
+
++ `test_suite_id`: ID požadované sady.
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: příklady
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-Obsahuje seznam všech dostupných testovacích sad.
+Vypíše seznam všech dostupných testovacích sad v aktuálním plánu testování.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>playback
 
-Přehraje testovací případ pomocí souboru aplikace Excel.
+Přehraje testovací případ, který je přidružen k zadanému souboru parametrů aplikace Excel. Tento příkaz používá existující místní soubory automatizace a nestahuje soubory z Azure DevOps. Tento příkaz není podporován u testovacích případů pokladního místa POS.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
 
-##### <a name="playback-required-parameters"></a>přehrávání: požadované parametry
+##### <a name="playback-optional-switches"></a>playback: volitelné přepínače
 
-+ `excel_file`: Úplná cesta k souboru aplikace Excel. Soubor musí existovat.
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces přehrávání počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/comments[="comment"]`: Zadejte vlastní informační řetězec, který bude přidán do pole **Komentáře** na stránkách souhrnu a výsledků testu pro spuštění testovacích případů Azure DevOps.
 
-##### <a name="playback-examples"></a>přehrávání: příklady
+##### <a name="playback-required-parameters"></a>playback: požadované parametry
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
++ `excel_parameter_file`: Úplná cesta k souboru parametrů aplikace Excel. Soubor musí existovat.
 
-`playback e:\temp\test.xlsx`
+##### <a name="playback-examples"></a>playback: příklady
+
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
+
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-Přehrává se více testovacích případů najednou. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+Přehrává se více testovacích případů najednou. Testovací případy jsou identifikovány podle jejich ID. Tento příkaz stáhne soubory z Azure DevOps. Příkazem ``list`` získáte všechny dostupné testovací případy a libovolnou hodnotu z prvního sloupce pak můžete použít jako parametr **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a>playbackbyid: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces přehrávání počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/comments[="comment"]`: Zadejte vlastní informační řetězec, který bude přidán do pole **Komentáře** na stránkách souhrnu a výsledků testu pro spuštění testovacích případů Azure DevOps.
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: požadované parametry
 
@@ -387,75 +495,132 @@ Přehrává se více testovacích případů najednou. Pomocí příkazu ``list`
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Přehraje řadu testovacích případů najednou pomocí souborů aplikace Excel.
+Přehrává se více testovacích případů najednou. Testovací případy jsou identifikovány podle souborů parametrů aplikace Excel. Tento příkaz používá existující místní soubory automatizace a nestahuje soubory z Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a>playbackmany: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces přehrávání počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/comments[="comment"]`: Zadejte vlastní informační řetězec, který bude přidán do pole **Komentáře** na stránkách souhrnu a výsledků testu pro spuštění testovacích případů Azure DevOps.
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: požadované parametry
 
-+ `excel_file1`: Úplná cesta k souboru aplikace Excel. Soubor musí existovat.
-+ `excel_file2`: Úplná cesta k souboru aplikace Excel. Soubor musí existovat.
-+ `excel_fileN`: Úplná cesta k souboru aplikace Excel. Soubor musí existovat.
++ `excel_parameter_file1`: Úplná cesta k souboru parametrů aplikace Excel. Soubor musí existovat.
++ `excel_parameter_file2`: Úplná cesta k souboru parametrů aplikace Excel. Soubor musí existovat.
++ `excel_parameter_fileN`: Úplná cesta k souboru parametrů aplikace Excel. Soubor musí existovat.
 
 ##### <a name="playbackmany-examples"></a>playbackmany: příklady
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-Přehraje všechny testovací případy ze zadané sady testů.
-Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **suite_name** použijte libovolnou hodnotu z prvního sloupce.
+Přehraje všechny testovací případy z jedné či více zadaných testovacích sad. Pokud je zadán přepínač /local, budou pro přehrávání použity místní přílohy. V opačném případě budou přílohy staženy z Azure DevOps. Příkazem ``listtestsuitenames`` získáte všechny dostupné testovací sady a libovolnou hodnotu z prvního sloupce pak můžete použít jako parametr **suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: volitelné přepínače
+
++ `/updatedriver`: Je-li zadán tento přepínač, bude webový ovladač internetového prohlížeče podle potřeby aktualizován před spuštěním procesu přehrávání.
++ `/local`: Tento přepínač označuje, že pro přehrávání by se měly používat místní přílohy místo stahování souborů z Azure DevOps.
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces přehrávání počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/comments[="comment"]`: Zadejte vlastní informační řetězec, který bude přidán do pole **Komentáře** na stránkách souhrnu a výsledků testu pro spuštění testovacích případů Azure DevOps.
++ `/byid`: Tento přepínač označuje, že požadovaná testovací sada je identifikována pomocí ID Azure DevOps, nikoli názvem testovací sady.
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: požadované parametry
 
-+ `suite_name`: Název požadované sady.
++ `test_suite_name1`: Představuje název testovací sady. Tento parametr je povinný, pokud přepínač /byid **není** zadán. Tento název je názvem testovací sady Azure DevOps.
++ `test_suite_nameN`: Představuje název testovací sady. Tento parametr je povinný, pokud přepínač /byid **není** zadán. Tento název je názvem testovací sady Azure DevOps.
++ `test_suite_id1`: Představuje ID testovací sady. Tento parametr je povinný, pokud přepínač /byid **je** zadán. Toto ID je ID testovací sady Azure DevOps.
++ `test_suite_idN`: Představuje ID testovací sady. Tento parametr je povinný, pokud přepínač /byid **je** zadán. Toto ID je ID testovací sady Azure DevOps.
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: příklady
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
 
-#### <a name="quit"></a>opustit
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
 
-Zavře aplikaci.
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+Spustí všechny testovací případy v zadané sadě testů Azure DevOps.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>playbacksuitebyid: volitelné přepínače
+
++ `/retry[=seconds]`: Pokud je zadán tento přepínač a testovací případy jsou blokovány jinými instancemi RSAT, proces přehrávání počká zadaný počet sekund a poté to zkusí ještě jednou. Výchozí hodnota přepínače \[seconds\] je 120 sekund. Bez tohoto přepínače bude proces okamžitě zrušen, pokud jsou testovací případy zablokovány.
++ `/comments[="comment"]`: Zadejte vlastní informační řetězec, který bude přidán do pole **Komentáře** na stránkách souhrnu a výsledků testu pro spuštění testovacích případů Azure DevOps.
++ `/byid`: Tento přepínač označuje, že požadovaná testovací sada je identifikována pomocí ID Azure DevOps, nikoli názvem testovací sady.
+
+##### <a name="playbacksuitebyid-required-parameters"></a>playbacksuitebyid: požadované parametry
+
++ `test_suite_id`: Představuje ID testovací sady tak, jak existuje v Azure DevOps.
+
+##### <a name="playbacksuitebyid-examples"></a>playbacksuitebyid: příklady
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
+
+#### <a name="quit"></a>quit
+
+Zavře aplikaci. Tento příkaz je užitečný pouze v případě, že aplikace běží v interaktivním režimu.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>quit: příklady
+
+`quit`
+
 #### <a name="upload"></a>upload
 
-Odešle všechny soubory náležející do zadané sady testů nebo testovacích případů.
+Nahrává soubory příloh (soubory nahrávek, provádění a parametrů), které patří do určené testovací sady nebo testovacích případů, do Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>upload: požadované parametry
+##### <a name="upload-required-parameters"></a>upload: požadované parametry
 
-+ `suite_name`: Odešle všechny soubory náležející do zadané testovací sady.
-+ `testcase_id`: Odešle všechny soubory náležející do zadaných testovacích případů.
++ `test_suite_name`: Odeslány budou všechny soubory patřící do zadané testovací sady.
++ `test_case_id1`: Představuje ID prvního testovacího případu, který by měl být nahrán. Tento parametr použijte pouze v případě, že nebyl zadán žádný název testovací sady.
++ `test_case_idN`: Představuje ID posledního testovacího případu, který by měl být nahrán. Tento parametr použijte pouze v případě, že nebyl zadán žádný název testovací sady.
 
 ##### <a name="upload-examples"></a>upload: příklady
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-Odešle pouze soubor nahrávky, který náleží do zadaných testovacích případů.
+Nahraje do Azure DevOps pouze soubor nahrávky, který patří do jedné či více zadaných testovacích případů.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: požadované parametry
 
-+ `testcase_id`: Odešle soubor nahrávky, který náleží do zadaných testovacích případů.
++ `test_case_id1`: Představuje ID prvního testovacího případu nahrávky, který by měl být nahrán do Azure DevOps.
++ `test_case_idN`: Představuje ID posledního testovacího případu nahrávky, který by měl být nahrán do Azure DevOps.
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: příklady
 
@@ -463,11 +628,23 @@ Odešle pouze soubor nahrávky, který náleží do zadaných testovacích pří
 
 `uploadrecording 123 456`
 
-#### <a name="usage"></a>použití
+#### <a name="usage"></a>usage
 
-Zobrazení dvou způsobů vyvolání této aplikace: jeden s použitím souboru výchozího nastavení, další poskytuje soubor nastavení.
+Zobrazuje tři režimy použití této aplikace.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Interaktivní spuštění aplikace:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Spuštění aplikace zadáním příkazu:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Spuštění aplikace poskytnutím souboru nastavení:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Příklad Windows PowerShell
 

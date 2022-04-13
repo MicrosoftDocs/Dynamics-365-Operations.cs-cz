@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e9edd384cf8cc1373481fd47c040cdaeae7d050d2cdba5e0a9afb7c1d361362
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 666ecc5b4e0df9ed518e8e9dabc1babd442508bc
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759106"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487606"
 ---
 # <a name="configure-address-books"></a>Konfigurace adresářů
 
@@ -26,7 +26,7 @@ ms.locfileid: "6759106"
 
 Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci.
 
-Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF. Tento záznam je určen pro členy týmu plánování a konfigurace.
+Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.
 
 
 ## <a name="configure-address-books"></a>Konfigurace adresářů

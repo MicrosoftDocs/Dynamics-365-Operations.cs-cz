@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330694"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487574"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrace s výrobními informačními systémy třetích stran
 
@@ -65,6 +65,8 @@ Pro integraci můžete povolit kterýkoli nebo všechny z následujících proce
 ## <a name="monitor-incoming-messages"></a>Sledování příchozích zpráv
 
 Chcete-li sledovat příchozí zprávy do systému, otevřete stránku **Integrace výrobních informačních systémů**. Zde můžete prohlížet, zpracovávat a odstraňovat problémy.
+
+Všechny zprávy pro konkrétní výrobní zakázku jsou zpracovány v pořadí, v jakém byly přijaty. Zprávy pro různé výrobní zakázky však nemusí být zpracovány v přijatém pořadí, protože dávkové úlohy jsou zpracovávány paralelně. V případě selhání se dávková úloha pokusí zpracovat každou zprávu třikrát, než u ní nastaví stav *Nezdařilo se*.
 
 ## <a name="call-the-api"></a>Volání rozhraní API
 
@@ -119,13 +121,13 @@ Následující tabulka ukazuje pole, která jsou podporována v každém řádku
 | `ReportedGoodQuantity` | Volitelné | Reálný|
 | `ReportedErrorCatchWeightQuantity` | Volitelné | Reálný |
 | `ReportedGoodCatchWeightQuantity` | Volitelné | Reálný |
-| `AcceptError` | Volitelné |Logická |
+| `AcceptError` | Volitelné | Výčet (Ano\| Ne) |
 | `ErrorCause` | Volitelné | Enum (None \| Material \| Machine \| OperatingStaff), rozšiřitelné |
 | `ExecutedDateTime` | Volitelné | Datum/čas |
 | `ReportAsFinishedDate` | Volitelné | Datum |
 | `AutomaticBOMConsumptionRule` | Volitelné | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Volitelné |Enum (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Volitelné | Logická |
+| `RespectFlushingPrincipleDuringOverproduction` | Volitelné | Výčet (Ano\| Ne) |
 | `ProductionJournalNameId` | Volitelné | Řetězec |
 | `PickingListProductionJournalNameId` | Volitelné | Řetězec|
 | `RouteCardProductionJournalNameId` | Volitelné | Řetězec |
@@ -133,11 +135,11 @@ Následující tabulka ukazuje pole, která jsou podporována v každém řádku
 | `ToOperationNumber` | Volitelné | Celé číslo|
 | `InventoryLotId` | Volitelné | Řetězec |
 | `BaseValue` | Volitelné | Řetězec |
-| `EndJob` | Volitelné | Logická |
-| `EndPickingList` | Volitelné | Logická |
-| `EndRouteCard` | Volitelné | Logická |
-| `PostNow` | Volitelné | Logická |
-| `AutoUpdate` | Volitelné | Logická |
+| `EndJob` | Volitelné | Výčet (Ano\| Ne) |
+| `EndPickingList` | Volitelné | Výčet (Ano\| Ne) |
+| `EndRouteCard` | Volitelné | Výčet (Ano\| Ne) |
+| `PostNow` | Volitelné | Výčet (Ano\| Ne) |
+| `AutoUpdate` | Volitelné | Výčet (Ano\| Ne) |
 | `ProductColorId` | Volitelné | Řetězec|
 | `ProductConfigurationId` | Volitelné | Řetězec |
 | `ProductSizeId` | Volitelné | Řetězec |
@@ -181,7 +183,7 @@ Následující tabulka ukazuje pole, která jsou podporována v každém řádku
 | `OperationNumber` | Volitelné | Celé číslo |
 | `LineNumber` | Volitelné | Reálný |
 | `PositionNumber` | Volitelné | Řetězec |
-| `IsConsumptionEnded` | Volitelné | Logická |
+| `IsConsumptionEnded` | Volitelné | Výčet (Ano\| Ne) |
 | `ErrorCause` | Volitelné | Enum (None \| Material \| Machine \| OperatingStaff), rozšiřitelné |
 | `InventoryLotId` | Volitelné | Řetězec |
 
@@ -217,9 +219,9 @@ Následující tabulka ukazuje pole, která jsou podporována v každém řádku
 | `ConsumptionDate` | Volitelné | Datum |
 | `TaskType` | Volitelné | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Volitelné | Enum (None \| Material \| Machine \| OperatingStaff), rozšiřitelné |
-| `OperationCompleted` | Volitelné | Logická |
-| `BOMConsumption` | Volitelné | Logická |
-| `ReportAsFinished` | Volitelné | Logická |
+| `OperationCompleted` | Volitelné | Výčet (Ano\| Ne) |
+| `BOMConsumption` | Volitelné | Výčet (Ano\| Ne) |
+| `ReportAsFinished` | Volitelné | Výčet (Ano\| Ne) |
 
 ### <a name="end-production-order-message"></a>Zpráva o ukončení výrobní zakázky
 
@@ -230,9 +232,13 @@ U zprávy *ukončení výrobní zakázky* má údaj `_messageType` hodnotu `Prod
 | `ProductionOrderNumber` | Povinné | Řetězec |
 | `ExecutedDateTime` | Volitelné | Datum/čas |
 | `EndedDate` | Volitelné | Datum |
-| `UseTimeAndAttendanceCost` | Volitelné | Logická |
-| `AutoReportAsFinished` | Volitelné | Logická |
-| `AutoUpdate` | Volitelné | Logická |
+| `UseTimeAndAttendanceCost` | Volitelné | Výčet (Ano\| Ne) |
+| `AutoReportAsFinished` | Volitelné | Výčet (Ano\| Ne) |
+| `AutoUpdate` | Volitelné | Výčet (Ano\| Ne) |
+
+## <a name="other-production-information"></a>Další informace o výrobě
+
+Zprávy podporují akce nebo události, ke kterým dochází v dílně. Jsou zpracovány pomocí integračního prostředí MES popsaného v tomto tématu. Návrh předpokládá, že další referenční informace, které mají být sdíleny s MES (jako jsou informace související s produktem nebo kusovník nebo trasa (s konkrétním nastavením a časy konfigurace) použité v konkrétní výrobní zakázce), budou načteny ze systému s využitím [datových entit](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) prostřednictvím přenosu souborů nebo OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Získání zpětné vazby o stavu zprávy
 

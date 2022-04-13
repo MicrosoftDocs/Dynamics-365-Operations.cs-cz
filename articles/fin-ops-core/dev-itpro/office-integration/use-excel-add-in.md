@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068785"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464930"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
@@ -48,7 +48,7 @@ Další informace o používání doplňku aplikace Excel se dozvíte v krátké
 2. Zvolte možnost **Otevřít v aplikaci Excel** a otevřete sešit, který je generován. Tento sešit obsahuje závazné informace pro entitu, ukazatel pro vaše prostředí a ukazatel na doplněk aplikace Excel.
 3. V aplikaci Excel zvolte **Povolit úpravy**. Tím povolíte spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Pokud používáte doplněk aplikace Excel poprvé, zvolte možnost **Důvěřovat tomuto doplňku**.
-5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k finanční a provozní aplikaci. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
+5. Pokud se zobrazí výzva k přihlášení, zvolte **Přihlásit** a potom se přihlaste pomocí stejných pověření, jaká jste použili pro přihlášení k finanční a provozní aplikaci. Doplněk aplikace Excel bude používat předchozí přihlašovací kontext z prohlížeče a automaticky vás přihlásí, pokud je to možné. (Informace o prohlížeči, který se používá na základě operačního systému, viz [Prohlížeče používané doplňky Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Aby bylo zajištěno, že přihlášení proběhlo úspěšně, ověřte uživatelské jméno v pravém horním rohu doplňku Excel. 
 
 Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Všimněte si, že v sešitu nebudou žádná data, dokud ho doplněk aplikace Excel nenačte.
 

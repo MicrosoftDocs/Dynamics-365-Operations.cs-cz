@@ -2,7 +2,7 @@
 title: Vykazování DPH pro Evropu
 description: Toto téma obsahuje obecné informace o nastavení a generování výkazu daně z přidané hodnoty (DPH) pro některé evropské země.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741483"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487747"
 ---
 # <a name="vat-reporting-for-europe"></a>Vykazování DPH pro Evropu
 
@@ -39,6 +39,25 @@ Toto téma obsahuje obecný přístup k nastavení a generování výkazu DPH. T
 -   Litva
 -   Nizozemsko
 -   Švédsko
+
+> [!IMPORTANT]
+> Funkce popsané v tomto tématu pro Rakousko, Českou republiku, Německo, Nizozemsko a Švédsko jsou zastaralé. Další informace naleznete v části [Odstraněné a zastaralé funkce](../get-started/removed-deprecated-features-finance.md).
+> Pomocí odkazů v následující tabulce získáte další informace o novém vzhledu přiznání k DPH v odpovídajících zemích.
+> 
+>
+> | Země        | Doplňkové informace                                                          |
+> |----------------|---------------------------------------------------------------------------------|
+> | Rakousko        | [Přiznání k DPH (Rakousko)](emea-aut-vat-declaration-austria.md)       |                                                                           
+> | Česká republika | [Přiznání k DPH (Česká republika)](emea-cze-vat-declaration-tax-declaration-model.md) |
+> | Dánsko        | [Přiznání k DPH (Dánsko)](emea-dnk-vat-declaration-denmark.md)         |
+> | Francie         | [Přiznání k DPH (Francie)](emea-fra-vat-declaration-preview-france.md)       |
+> | Německo        | [Přiznání k DPH (Německo)](emea-deu-vat-declaration-germany.md)           |
+> | Nizozemsko    | [Přiznání k DPH (Nizozemsko)](emea-nl-vat-declaration-netherlands.md)    |
+> | Norsko         | [Vratka DPH s přímým odesláním do Altinn](emea-nor-vat-return.md) |
+> | Španělsko          | [Přiznání k DPH (Španělsko)](emea-esp-vat-declaration-spain.md)              |
+> | Švédsko         | [Přiznání k DPH (Švédsko)](emea-swe-vat-declaration-sweden.md)          |
+> | Švýcarsko    | [Přiznání k DPH (Švýcarsko)](emea-che-vat-declaration-switzerland.md) |
+> | Velká Británie             | [Příprava na integraci s MRD pro DPH](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>Přehled výkazu DPH
 Výkaz DPH je založený na částkách daňových transakcí. Proces generování výkazu DPH je součástí procesu platby DPH, který je implementován pomocí funkce vypořádání a zaúčtování DPH. Tato funkce se používá k výpočtu DPH splatné pro dané období. Výpočet vyrovnání zahrnuje zaúčtovanou DPH pro vybrané období vyrovnání daňových transakcí. Postup pro výpočet dat pro výkaz DPH je založen na vztahu mezi kódy DPH a kódy vykazování DPH, kde kódy vykazování daně odpovídají polím s výkazy DPH. Pro každý kód DPH by měly být nastaveny kódy vykazování DPH pro každý typ transakce, například zdanitelné prodeje zdanitelné nákupy, zdanitelný import. Tento typ transakcí je popsán v části Kódy DPH pro vykazování DPH dále v tomto tématu.
@@ -258,10 +277,10 @@ Výkaz DPH pro každou zemi musí splňovat požadavky právních předpisů té
 
 | Země        | Doplňkové informace                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Rakousko        |  [Podrobnosti výkazu DPH pro Rakousko](emea-aut-vat-statement-details.md)         |
+| Rakousko        | [Podrobnosti výkazu DPH pro Rakousko](emea-aut-vat-statement-details.md)         |
 | Belgie        |                                                                                 |
-| Česká republika |  [Výkaz DPH pro Českou republiku](emea-cze-vat-statement-details.md)   |
-| Estonsko        |  [Podrobnosti výkazu DPH pro Estonsko](emea-est-vat-statement-details.md) |
+| Česká republika | [Výkaz DPH pro Českou republiku](emea-cze-vat-statement-details.md)   |
+| Estonsko        | [Podrobnosti výkazu DPH pro Estonsko](emea-est-vat-statement-details.md) |
 | Finsko        | [Sestava DPH pro Finsko](emea-fin-sales-tax-payment-report-finland.md)          |
 | Německo        | [Přiznání k DPH pro Německo](emea-de-vat-declaration.md)                       |
 | Itálie          | [Podrobnosti výkazu DPH pro Itálii](emea-ita-vat-statements-details.md)            |

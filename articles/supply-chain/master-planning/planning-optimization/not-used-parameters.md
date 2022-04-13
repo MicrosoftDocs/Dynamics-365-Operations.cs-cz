@@ -1,22 +1,22 @@
 ---
 title: Parametry, které optimalizace plánování nepoužívá
 description: V tomto tématu jsou uvedeny parametry, které optimalizace plánování aktuálně během provozu nezvažuje.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408223"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469107"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametry, které optimalizace plánování nepoužívá
 
@@ -65,18 +65,6 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
   - **Použijte zadaný kusovník nebo verzi vzorce** – Čekající podpora *Verze receptury s vedlejším/souběžným produktem*.
   - **Použijte zadanou verzi trasy** – Čekající podpora *Poptávka se specifickými požadavky na kusovník nebo trasu*.
 
-- Pevná záložka **Akce**:
-
-  - **Akční zpráva** – Čekající podpora *Akce*.
-  - **Ochranná doba akce** – Čekající podpora *Akce*.
-  - **Odložit marži** – Čekající podpora *Akce*.
-  - **Marže předem** – Čekající podpora *Akce*.
-  - **Základní datum** – Čekající podpora *Akce*.
-  - **Předem** – Čekající podpora *Akce*.
-  - **Odložit** – Čekající podpora *Akce*.
-  - **Snížit** – Čekající podpora *Akce*.
-  - **Zvýšit** – Čekající podpora *Akce*.
-  - **Odvozené akce** – Čekající podpora *Akce*.
 
 - Pevná záložka **Jiný**:
 
@@ -149,7 +137,6 @@ Optimalizace plánování nepoužívá následující parametry nebo možnosti n
   - **Plán předpovědi** – Čekající další podpora *Předpověď*.
   - **Kapacita** – Čekající podpora *Plánování*.
   - **Plán kontinuity** – Čekající podpora *Plánování kontinuity*.
-  - **Akční zpráva** – Čekající podpora *Akce*.
   - **Vypočítaná zpoždění** – Čekající další podpora *Vypočítané zpoždění*.
   - **Pořadí** – Čekající podpora *Produkce*.
 

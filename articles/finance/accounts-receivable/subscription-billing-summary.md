@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182676"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462462"
 ---
 # <a name="subscription-billing-overview"></a>Přehled fakturace předplatného
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Fakturace předplatného umožňuje organizacím spravovat příležitosti k výnosům z předplatného a opakovaně fakturovat prostřednictvím plánů účtování. Komplexní cenové a fakturační modely a alokace výnosů se snadno spravují a jsou účtovány a uznávány na úrovni řádku. Víceprvková alokace výnosů umožňuje alokaci výnosů v souladu s mezinárodními účetními normami (International Financial Reporting Standard 15 \[IFRS 15\]) a Obecně uznávanými účetními zásadami ve Spojených státech (US GAAP) (Accounting Standards Codification Topic 606 \[ASC 606\]).
+Fakturace předplatného umožňuje organizacím spravovat příležitosti k výnosům z předplatného a opakovaně fakturovat prostřednictvím plánů fakturace. Komplexní cenové a fakturační modely a alokace výnosů se snadno spravují a jsou účtovány a uznávány na úrovni řádku. Víceprvková alokace výnosů umožňuje alokaci výnosů v souladu s mezinárodními účetními normami (International Financial Reporting Standard 15 \[IFRS 15\]) a Obecně uznávanými účetními zásadami ve Spojených státech (US GAAP) (Accounting Standards Codification Topic 606 \[ASC 606\]).
 
 Řešení má tři moduly, které lze používat nezávisle. Alternativně lze všechny tři moduly používat společně.
 

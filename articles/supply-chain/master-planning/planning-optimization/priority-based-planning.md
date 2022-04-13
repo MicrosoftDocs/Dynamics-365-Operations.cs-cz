@@ -1,27 +1,26 @@
 ---
 title: Plánování na základě priority
 description: Toto téma popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 41c4f3e9bd41735b213743bd8b4cdd8d9657a073
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777882"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468293"
 ---
 # <a name="priority-based-planning"></a>Plánování na základě priority
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Toto téma popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management. Tato funkce přidává podporu pro plánování řízené poptávkou, což je jeden z kroků plánování materiálových požadavků řízené poptávkou (DDMRP). Plánování na základě priority umožňuje nástroji Optimalizace plánování generovat plánované objednávky, které jsou řízeny prioritami plánování namísto dat požadavků.
 

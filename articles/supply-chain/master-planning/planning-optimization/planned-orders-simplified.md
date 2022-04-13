@@ -1,28 +1,26 @@
 ---
 title: Zjednodušené plánované objednávky
 description: Toto téma popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky Zjednodušené plánované objednávky.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: bb51293f0fcb421b9d55f8d5cfe1922569fce5d6
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408033"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470114"
 ---
 # <a name="planned-orders-simplified"></a>Zjednodušené plánované objednávky
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: preview until 10.0.25 GA -->
 
 Toto téma popisuje, jak můžete zobrazit, spravovat a potvrdit plánované objednávky pomocí stránky **Zjednodušené plánované objednávky**.
 

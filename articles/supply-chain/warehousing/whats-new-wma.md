@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418633"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487829"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20200"></a>Verze 2.0.20.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Opraveno několik případů ukončení aplikace.
+- Opraven problém, kdy se na kartách ve stránce **Pracovní seznam** zobrazovaly nesprávné hodnoty.
+- Vylepšeno posouvání a eliminováno chvění obrazovky na stránkách **Pracovní seznam** a **Dotaz na položku** v systému Android.
+- Na přihlašovací stránku bylo přidáno tlačítko pro ukončení, které ukončí aplikaci.
 
 ## <a name="version-20190"></a>Verze 2.0.19.0
 

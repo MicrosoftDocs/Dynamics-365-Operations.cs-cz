@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105557"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470086"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -37,38 +37,28 @@ Regulativní aktualizace vydané v rámci měsíční aktualizace jsou označeny
 
 Nejnovější plány povinné aktualizace naleznete v následující tabulce.   
 
-|Země/oblast|Datum vydání|Verze vydání  |Povinná aktualizace|
+|Země|Datum vydání|Verze vydání|Povinná aktualizace|
 |--------------------|---------------|-------|-------| 
-|      Rakousko         |   Srpen 2021      | 10.0.22      |   Přiznání k DPH v XML a náhled v Excelu   |
-|      Rakousko         |   Září 2021      | 10.0.22HF      |   Formát Intrastat je od roku 2022 aktualizován – země původu a partnerské DIČ se stávají při odesílání povinnými údaji   |
-|      Belgie        |   2021. říjen      | 10.0.22HF     |   Kódy transakcí Intrastat se od roku 2022 změní na 2 číslice  |
-|      Brazílie         |   Srpen 2021      | 10.0.22      |   NF-e NT2020.006 - Identifikace zprostředkovatele digitální platformy (aktualizace pravidel rozložení a ověření)   |
-|      Brazílie         |   2021. prosince         | 10.0.22, 10.0.23, 10.0.24         |    Fiskální SPED – rozložení 2022  |
-|      Česká republika         |   2021. říjen         | 10.0.23HF         |     Formát Intrastat je od roku 2022 aktualizován – země původu a partnerské DIČ se stávají při odesílání povinnými údaji  |
-|      Dánsko         |   2021. prosince         | 10.0.22HF         |    Formát Intrastat se aktualizuje od roku 2022  |
-|      Estonsko         |   2021. prosince      | 10.0.22HF      |   Formát Intrastat je od roku 2022 aktualizován – země původu a partnerské DIČ se stávají při odesílání povinnými údaji  |
-|      Finsko         |   Listopad 2021         | 10.0.22HF         |    Formát Intrastat se od roku 2022 aktualizuje.  |
-|      Německo        |   Srpen 2021       | 10.0.22HF      |   Formát Intrastat INSTAT XML se od roku 2022 aktualizuje. Formát Intrastat TXT nelze od 1. 7. 2021 používat  |
-|      Německo        |   2021. říjen       | 10.0.23      |   Přiznání k DPH v XML a náhled v Excelu (nový design s částkami v měně daňových kódů, okamžitě funkční s funkcí přenesení daňové povinnosti, lze spouštět na právnických osobách mimo DE a může vybírat daňovou transakci od několika právnických osob)  |
-|      Itálie         |   Listopad 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Elektronická fakturace pro přeshraniční transakce  |
-|      Mexiko         |   Listopad 2021      | 10.0.22      |   Doplněk Carta de Porte v dokumentech CFDI   |
+|      Brazílie         |   2021. prosince         | 10.0.24, 10.0.25         |    Fiskální SPED – rozložení 2022  |
+|      Brazílie         |   2022. březen    | 10.0.24HF, 10.0.25HF         |    Inkaso ICMS-DIFAL v operacích zaměřených na nedaňové poplatníky (doplňkový zákon č. 190/22)  |
+|      Dánsko         |   2022. leden  | 10.0.25HF         |    Náhled přiznání k DPH v Excelu |
+|      Francie   |   Listopad 2021 | 10.0.25         |    Export archivace francouzských dat (FEC) – příloha „Odůvodnění chybějících čísel“ |
+|      Itálie         |   Listopad 2021         | 10.0.24         |    Elektronická fakturace pro přeshraniční transakce  |
+|      Itálie         |   2022. únor | 10.0.24HF, 10.0.25HF| Jedinečná certifikace – 2022 v Dynamics 365 Finance  |
+|      Litva|   2022. únor | 10.0.24HF, 10.0.25HF | i.SAF se v Dynamics 365 Finance mění od 1. 1. 2022  |
 |      Mexiko         |   2021. prosince      | 10.0.24      |   Doplněk Carta de Porte, verze 2.0  |
-|      Nizozemsko        |   2021. říjen      | 10.0.22HF      |   2místné kódy transakcí ve formátu souboru Intrastat od roku 2022  |
-|      Nový Zéland         |   Srpen 2021      | 10.0.22    |   Formulář GST101A prohlášení daně GST  |
 |      Norsko        |   Listopad 2021      | 10.0.24      |   Formát přiznání k DPH 2022 s přímým podáním – Dynamics 365 Finance |
-|      Omán         |   Srpen 2021      | 10.0.22      |   Přiznání k DPH – Verze 1 |
-|      Polsko          |   2021. říjen     | 10.0.23, 10.0.24     |   JPK_V7M - nová verze schématu od ledna 2022 |
+|      Polsko          |   2021. říjen     | 10.0.24     |   JPK_V7M - nová verze schématu od ledna 2022 |
 |      Polsko          |   Listopad 2021     | 10.0.24HF     |   Roční sestava dle dat platby u obchodních transakcí |
 |      Polsko          |   2021. říjen     | 10.0.24     |   Elektronický formát seznamu prodejů v EU (VAT-UE) |
-|      Rusko          |   2021. říjen     | 10.0.22HF, 10.0.23, 10.0.24    |   Změny v knihách prodejů, nákupů a v denících faktur|
+|      Rusko          |   2021. říjen     | 10.0.24    |   Změny v knihách prodejů, nákupů a v denících faktur|
 |      Rusko          |   2021. říjen     | 10.0.24HF    |   Změna formátů přiznání k DPH s přílohami|
 |      Rusko          |   Listopad 2021     | 10.0.24    |   Federální účetní standard 6-2020 (Dlouhodobý majetek)|
-|      Saúdskoarabské království          |   Listopad 2021     | 10.0.22HF, 10.0.23    |   Generování elektronické fakturace v Saúdské Arábii – Fáze 1|
-|      Saúdskoarabské království          |   Listopad 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Maloobchod – Elektronická fakturace v Saúdské Arábii – Fáze 1|
-|      Španělsko          |   2021. říjen     | 10.0.23    |    Model přiznání k DPH 303 v TXT a náhled v Excelu|
-|      Španělsko          |   Září 2021     | 10.0.22    |    Formát Intrastat bude pro vykazování v roce 2022 aktualizován – partnerské DIČ a země původu se stávají při odesílání povinnými údaji|
-|      Švédsko          |   2021. říjen     | 10.0.22HF    |    Formát Intrastat je od roku 2022 aktualizován – země původu a partnerské DIČ se stávají při odesílání povinnými údaji. Budou použity 2místné transakční kódy.|
-|      Spojené království          |   Srpen 2021     | 10.0.22    |    Spojené království – prevence podvodů MTD 2021)|
+|      Rusko          |   2022. leden     | 10.0.24HF, 10.0.25    |   Povolení cílového umístění pro elektronické výkaznictví (ER) pro ukládání ruských účetních dokumentů (primárních dokumentů a účetních sestav)|
+|      Rusko          |   2021. prosince     | 10.0.25    |   Modul Integrace dlouhodobého majetku (Rusko) s modulem Správa majetku|
+|      Rusko          |   2022. únor     | 10.0.24HF, 10.0.25    |  Nový formát faktury za přepravu (nařízení vlády N 2116 30.11.2021)|
+|      Saúdskoarabské království          |   Listopad 2021     | 10.0.24    |   Maloobchod – Elektronická fakturace v Saúdské Arábii – Fáze 1|
+|      Španělsko      |   2022. březen| 10.0.24HF, 10.0.25HF | Španělsko: Model přiznání k DPH 303 se od 1. ledna 2022 v Dynamics 365 Finance změní|
 
 
 

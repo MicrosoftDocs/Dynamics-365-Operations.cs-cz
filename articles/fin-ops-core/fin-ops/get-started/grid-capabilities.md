@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384422"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462785"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -151,7 +151,7 @@ Podobně jako v Excelu mohou uživatelé automaticky vynutit změnu velikosti sl
 
 Funkce **Nový ovládací prvek mřížky** je k dispozici přímo ve správě funkcí v jakémkoli prostředí. Po povolení funkce ve správě funkcí budou všechny následující relace uživatelů využívat nové ovládání mřížky. 
 
-Tato funkce je ve výchozím nastavení povolena od verze 10.0.21 a ve verzi 10.0.25 se stává povinnou. 
+Tato funkce je ve výchozím nastavení povolena od verze 10.0.21 a od října 2022 se stává povinnou.  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Vývojář] Odhlásit jednotlivé stránky z používání nové mřížky 
 Pokud vaše organizace objeví stránku, která má nějaké problémy s využitím nové mřížky, je k dispozici rozhraní API, které umožňuje jednotlivému formuláři používat starší ovládací prvek mřížky, přičemž stále umožňuje ostatním systémům využívat nový ovládací prvek mřížky. Chcete-li jednotlivou stránku odhlásit z nové mřížky, přidejte následující příspěvek volání `super()` s metodou formuláře `run()`.

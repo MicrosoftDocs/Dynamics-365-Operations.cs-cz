@@ -1,7 +1,7 @@
 ---
 title: Začínáme s optimalizací plánování
 description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902552"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469806"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -58,7 +58,7 @@ Před instalací doplňku Optimalizace plánování musí být splněny následu
 
 - Musíte používat Supply Chain Management v LCS aktivovaném prostředí s vysokou dostupností, vrstvy 2 nebo vyšší (ne prostředí OneBox) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější. Pokud se pokusíte nainstalovat doplněk v prostředí OneBox, instalace se nedokončí a budete ji muset zrušit.
 
-- Váš systém musí být nastaven na integraci Power Platform. Další informace naleznete v tématu [Integrace Microsoft Power Platform s aplikacemi Finance and Operations](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Váš systém musí být nastaven na integraci Power Platform. Další informace naleznete v tématu [Integrace Microsoft Power Platform s finančními a provozními aplikacemi](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Povolení licence Optimalizace plánování
 

@@ -1,23 +1,23 @@
 ---
 title: Správa ověření mezinárodního čísla bankovního účtu (IBAN)
 description: Toto téma vysvětluje správu ověření mezinárodního čísla bankovního účtu (IBAN).
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860812"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462757"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Správa ověření mezinárodního čísla bankovního účtu (IBAN)
 
@@ -25,13 +25,13 @@ ms.locfileid: "7860812"
 
 Ověření mezinárodního čísla bankovního účtu (IBAN) zvyšuje množství ověření, které se provádí při přidání čísla IBAN k bankovnímu účtu.
 
-Informace o struktuře kódu IBAN jsou uloženy v aplikaci Microsoft Dynamics 365 Finance. Tyto informace se načtou automaticky, když použijete kód IBAN na bankovní účty poprvé. Obsahuje délku kódu IBAN počáteční pozice čísla bankovního účtu a směrového čísla, a délku čísla bankovního účtu a směrového čísla.
+Informace o struktuře IBAN jsou uloženy v aplikaci Microsoft Dynamics 365 Finance a automaticky se načtou při prvním použití IBAN na bankovních účtech. Obsahuje délku kódu IBAN počáteční pozice čísla bankovního účtu a směrového čísla, a délku čísla bankovního účtu a směrového čísla.
 
 ## <a name="set-up-iban-structures"></a>Nastavení struktur čísla IBAN
 
 1. Přejděte do **Pokladna a banka \> Nastavení \> IBAN struktury**.
 2. Všimněte si, že IBAN struktury pro každou zemi nebo oblast byly vytvořeny automaticky.
-3. Pokud chcete přizpůsobit struktury pro konkrétní zemi nebo region, můžete je upravit.
+3. Vyberte tlačítko **Upravit**, pokud je potřeba aktualizovat strukturu pro konkrétní zemi nebo region.
 4. Definice struktury budou částí každé nové verze. Lze použít nabídku **Resetovat struktury** pro načtení nejnovějších definic po každé aktualizaci.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Ověření IBAN struktury v bankovním účtu

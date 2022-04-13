@@ -2,7 +2,7 @@
 title: Časté otázky týkající se resetování datového tržiště
 description: Toto téma poskytuje odpovědi na několik dotazů týkajících se resetování datového tržiště.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119505"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466404"
 ---
 # <a name="data-mart-resets-faq"></a>Časté otázky týkající se resetování datového tržiště
 
@@ -47,10 +47,14 @@ Pokud se na vaši situaci vztahuje jeden nebo více z následujících výroků,
 Zde jsou některé okolnosti, kdy nedoporučujeme resetovat datové tržiště.
 
 - Máte problémy s výkonem integrace dat.
+- Integrace aplikace Financial Reporter není povolena. 
+
+    - To znamená, že data hlavní knihy již nejsou synchronizována s vaším datovým tržištěm Financial Reporting. Vaše aplikace Financial Reporter možná nedostává aktuální čísla z vašich finančních sestav. K tomu obvykle dochází, pokud Financial Reporter delší dobu nepoužíváte.
+    - Budete vyzváni k povolení integrace resetováním datového tržiště. Pokračovat můžete výběrem možnosti **Ano**. Můžete se také rozhodnout resetovat datové tržiště později. Po aktivaci integrace se vaše data hlavní knihy znovu synchronizují do aplikace Financial Reporter. 
 - Máte opakující se vzor pro resetování z některého z následujících důvodů:
 
     - **Chybějící nebo neočekávaná data v sestavě** - Pokud si všimnete, že data chybí, otevřete si u Microsoftu lístek podpory a zkontrolujte formát zprávy a možné problémy se synchronizací dat.
-    - **Zaseknutý stav integrace**
+    - **Zaseknutý stav integrace** – Pokud si všimnete, že se stav integrace za běhu zasekl, může to být způsobeno velkým objemem transakcí v systému. Tento stav se vyřeší sám. Pokud si však všimnete, že se stav integrace zasekl na více než čtyři hodiny, otevřete nový lístek podpory u společnosti Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Pokud resetuji datové tržiště, přijdu o sestavy, které jsem již vytvořil?
 

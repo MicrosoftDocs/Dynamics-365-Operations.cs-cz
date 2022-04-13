@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060994"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524514"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
@@ -39,22 +39,25 @@ Než začnete pracovat s Viditelností zásob, musíte dokončit následující 
 
 Než začnete, nainstalujte a nastavte doplněk Viditelnost inventáře podle popisu v tématu [Instalace a nastavení doplňku Viditelnost zásob](inventory-visibility-setup.md).
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Povolení funkcí Viditelnost zásob ve správě funkcí Power Apps
-
-Doplněk Viditelnost zásob přidává do vašeho systému několik nových funkcí instalace Power Apps. Ve výchozím nastavení jsou tyto funkce vypnuté. Chcete-li je použít, otevřete stránku **Konfigurace** v Power Apps a potom na kartě **Správa funkcí** zapněte následující funkce.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
-
-Pokud neznáte správný koncový bod služby Viditelnost zásob, otevřete stránku **Konfigurace** v Power Apps a poté vyberte v pravém horním rohu příkaz **Zobrazit koncový bod služby**. Na stránce se zobrazí správný koncový bod služby.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Stránka Konfigurace aplikace Viditelnost zásob
 
 V Power Apps stránka **Konfigurace** [aplikace Viditelnost zásob](inventory-visibility-power-platform.md) vám pomůže nastavit konfiguraci množství na skladě a konfiguraci předběžných rezervací. Po instalaci doplňku obsahuje výchozí konfigurace hodnotu ze softwaru Microsoft Dynamics 365 Supply Chain Management (zdroj dat `fno`). Výchozí nastavení můžete zkontrolovat. Navíc na základě vašich obchodních požadavků a požadavků na účtování zásob vašeho externího systému můžete upravit konfiguraci a standardizovat tak způsob, jakým mohou být změny v inventáři zaúčtovány, organizovány a dotazovány z různých systémů. Zbývající části tohoto tématu vysvětlují, jak používat každou část stránky **Konfigurace**.
 
 Po dokončení konfigurace vyberte v aplikaci příkaz **Aktualizovat konfiguraci**.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Povolení funkcí Viditelnost zásob ve správě funkcí Power Apps
+
+Doplněk Viditelnost zásob přidává do vašeho systému několik nových funkcí instalace Power Apps. Ve výchozím nastavení jsou tyto funkce vypnuté. Chcete-li je použít, otevřete stránku **Konfigurace** a potom na kartě **Správa funkcí** zapněte podle potřeby následující funkce.
+
+| Název ve Správě funkcí | Popis |
+|---|---|
+| OnHandReservation | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackgroundService | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Tato funkce umožňuje plán změn na skladě a (volitelnou) funkci Lze slíbit (ATP). Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
+
+Pokud neznáte správný koncový bod služby Viditelnost zásob, otevřete stránku **Konfigurace** v Power Apps a poté vyberte v pravém horním rohu příkaz **Zobrazit koncový bod služby**. Na stránce se zobrazí správný koncový bod služby.
 
 ## <a name="data-source-configuration"></a>Konfigurace zdroje dat
 
@@ -178,15 +181,21 @@ Chcete-li nastavit vlastí vypočítanou míru, postupujte následovně.
 
 1. Přihlaste se ke svému prostředí Power Apps a otevřete **Viditelnost zásob**.
 1. Otevřete stránku **Konfigurace**.
-1. Na kartě **Vypočítaná míra** vyberte příkaz **Nová výpočetní míra** a přidejte vypočítanou míru. Poté nastavte pole, jak je popsáno v následující tabulce.
+1. Na kartě **Vypočítaná míra** vyberte příkaz **Nová výpočetní míra** a přidejte vypočítanou míru.
+1. Nastavte následující pole pro novou vypočítanou míru:
 
-    | Pole | Hodnota |
-    |---|---|
-    | Název nové vypočítané míry | Zadejte název vypočítané míry. |
-    | Zdroj dat | Dotazovací systém je zdrojem dat. |
-    | Zdroj dat modifikátoru | Zadejte zdroj dat modifikátoru. |
-    | Modifikátor | Zadejte název modifikátoru. |
-    | Typ modifikátoru | Vyberte typ modifikátoru (*Sčítání* nebo *Odčítání*). |
+    - **Název nové vypočítané míry** – Zadejte název vypočítané míry.
+    - **Zdroj dat** – Vyberte zdroj dat, který je spojen s novým modifikátorem. Dotazovací systém je zdrojem dat.
+
+1. Vyberte **Přidat** a přidejte modifikátor k nové vypočítané míře.
+1. Nastavte následující pole pro nový modifikátor:
+
+    - **Modifikátor** – Vyberte typ modifikátoru (*Sčítání* nebo *Odčítání*).
+    - **Zdroj dat** – Vyberte zdroj dat, kde by se měla nacházet míra, která poskytuje hodnotu modifikátoru.
+    - **Míra** – Vyberte název míry (z vybraného zdroje dat), která poskytuje hodnotu pro modifikátor.
+
+1. Opakujte kroky 5 až 6, dokud nepřidáte všechny požadované modifikátory.
+1. Zvolte možnost **Uložit**.
 
 Například byste mohli mít následující výsledek dotazu:
 
@@ -465,6 +474,10 @@ V tomto příkladu můžete provést rezervaci v následujících posloupnostech
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 Platná posloupnost dimenzí by měla striktně dodržovat hierarchii rezervací, dimenzi po dimenzi. Například hierarchická posloupnost`(SiteId, LocationId, SizeId)` není platná, protože chybí `ColorId`.
+
+## <a name="available-to-promise-configuration-optional"></a>Konfigurace funkce Lze slíbit (volitelné)
+
+Viditelnost zásob vám umožní naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit (ATP). ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití tohoto výpočtu může výrazně zvýšit vaši schopnost plnění objednávky. Chcete-li tuto funkci používat, musíte ji povolit na kartě **Správa funkcí** a poté ji nastavit na kartě **Nastavení ATP**. Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Dokončení a aktualizace konfigurace
 

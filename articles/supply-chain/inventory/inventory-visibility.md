@@ -2,52 +2,74 @@
 title: Přehled doplňku Viditelnost zásob
 description: Toto téma vysvětluje, co je Viditelnost zásob a popisuje funkce doplňku.
 author: yufeihuang
-ms.date: 10/26/2020
+ms.date: 03/18/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8871d10dac9103f17780989bc547b6c20ba79b76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985538"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524486"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Přehled doplňku Viditelnost zásob
 
 [!include [banner](../includes/banner.md)]
 
-Doplněk Viditelnost zásob (označovaný také jako *Viditelnost zásob*) je nezávislá a vysoce škálovatelná mikroslužba, která umožňuje sledování zásob na skladě v reálném čase. Poskytuje tedy globální pohled na zásoby.
+Doplněk Viditelnost zásob (označovaný také jako *služba Viditelnost zásob*) poskytuje nezávislou a vysoce škálovatelnou mikroslužbu, která umožňuje okamžité účtování změn zásob v reálném čase a sledování viditelnosti napříč všemi vašimi datovými zdroji a kanály. Poskytuje platformu, která vám umožní spravovat vaše globální zásoby pomocí funkcí, které zahrnují (ale nejen) následující seznam:
 
-Externí systémy přistupují ke službě prostřednictvím RESTful rozhraní API. Tímto způsobem se mohou buď přímo dotazovat na informace o daných sadách dimenzí, nebo provádět změny ve vašem inventáři v různých přizpůsobených zdrojích dat.
+- Centrální sledování nejnovějšího stavu zásob (například na skladě, objednané, zakoupené, na cestě, vrácené a v karanténě) napříč všemi datovými zdroji, sklady a umístěními připojením aplikace Supply Chain Management nebo zdrojů logistických dat třetích stran (jako jsou systémy pro správu objednávek, systémy \[ERP\] plánování podnikových zdrojů třetích stran, systémy pokladních míst \[POS\] a systémy řízení skladu) ke službě Viditelnost zásob.
+- Dotazy na dostupnost zboží na skladě a nedostatek zásob, a získání okamžité odpovědi přímým voláním služby Viditelnost zásob.
+- Eliminace nadměrného prodeje, zvláště když vaše poptávka pochází z různých kanálů, pomocí předběžných rezervací v reálném čase ve službě Viditelnost zásob.
+- Lepší správa slíbených objednávek a očekávání zákazníků poskytnutím přesných dat o aktuální nebo následující dostupnosti, aby funkce Omnikanálu Lze slíbit (ATP) mohla vypočítat očekávaná data plnění objednávek.
 
-Jako mikroslužba, jejímž základem je služba Microsoft Dataverse poskytuje Viditelnost zásob určitou rozšiřitelnost. K vytváření aplikací můžete použít Power Apps. Power BI můžete také použít k poskytování přizpůsobených funkcí, které splňují vaše obchodní požadavky.
+## <a name="extensibility"></a>Rozšiřitelnost
 
-Viditelnost zásob můžete integrovat s různými systémy třetích stran nastavením možností konfigurace pro standardizované dimenze zásob a nastavením typů transakcí. Viditelnost zásob také podporuje přizpůsobitelnou rozšiřitelnost prostřednictvím konfigurovatelných vypočítaných množství.
+Služba Viditelnost zásob je rozšiřitelná, protože vstup a výstup dat není omezen na aplikace společnosti Microsoft. Externí systémy mohou přistupovat ke službě prostřednictvím RESTful aplikačních programovacích rozhraní (API). Kromě použití předem připravených mapování, která jsou k dispozici pro zdroj dat a dimenze Supply Chain Management, můžete integrovat Viditelnost zásob s různými systémy třetích stran nastavením dalších zdrojů dat, měr stavů zásob (označovaných ve službě Viditelnost zásob jako *fyzické míry*) a dimenzí inventáře prostřednictvím konfigurační aplikace. Tímto způsobem můžete flexibilně dotazovat a měnit své různé zdroje dat a předdefinované dimenze zásob.
 
-## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Nastavení integrace Viditelnosti zásob s aplikací Dynamics 365 Supply Chain Management
+Navíc, protože služba Viditelnost zásob používá Microsoft Dataverse, lze její data použít k sestavení a integraci s Power Apps. Power BI můžete také použít k vytvoření přizpůsobených řídicích panelů, které splňují vaše obchodní požadavky.
 
-Integrované řešení čerpá skladová data z Dynamics 365 Supply Chain Management a průběžně sleduje změny zásob. Další informace viz [Instalace a nastavení viditelnosti zásob](inventory-visibility-setup.md) a [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
+## <a name="scalability"></a>Škálovatelnost
 
-## <a name="get-a-global-view-of-inventory"></a>Jak získat globální přehled o zásobách
+Službu Viditelnost skladu lze škálovat nahoru nebo dolů v závislosti na objemu vašich dat. Škálovatelnost je většinou bezproblémová a je řízena týmem platformy Microsoft na základě automatické detekce a vyhodnocení objemu vašich transakčních dat.
 
-Integrované řešení vám umožňuje definovat vlastní zdroje dat a centralizovat data zásob. Další informace viz [Konfigurace viditelnosti zásob](inventory-visibility-configuration.md).
+## <a name="feature-highlights"></a>Zvýrazněné funkce
 
-Existují dva přístupy k prohlížení vašich zásob:
+### <a name="get-a-global-view-of-real-time-inventory"></a>Jak získat globální přehled o zásobách v reálném čase
 
-- Odešlete dotaz prostřednictvím vysoce výkonného rozhraní API. Toto rozhraní API může vracet data o zásobách téměř v reálném čase přímo z instance uložené v mezipaměti. Smlouvy a vzorky najdete v části [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
-- Zobrazte nezpracovaný seznam zásob na skladě. Tento seznam je pravidelně synchronizován z instance uložené v mezipaměti a je viditelný v Dataverse. Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md).
+Viditelnost zásob zajišťuje, že budete mít kdykoli přístup k nejaktuálnějším množstvím zásob ve všech vašich kanálech, místech a skladech. Nejvíce budete těžit z toho, že službu budete používat k podpoře vašeho každodenního provozního podnikání, kdykoli potřebujete získat záznamy o zásobách. Fyzické zásoby na skladě, prodaná a zakoupená množství jsou automaticky k dispozici. Můžete také konfigurovat další fyzické míry zásob (jako jsou data o vráceném zboží, zboží v karanténě a odeslaném zboží), jak potřebujete, abyste získali tyto podrobnosti v reálném čase. Viditelnost zásob dokáže efektivně zpracovat miliony zaúčtovaných změn zásob. Tato data lze agregovat a promítnout do nejnovějších zásob ve službě okamžitě, za sekundu nebo za minutu, v závislosti na intervalu, ve kterém jsou data zaúčtována. Další informace viz [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
 
-## <a name="soft-reservations"></a>Předběžné rezervace
+### <a name="soft-reservation-to-avoid-overselling-across-all-order-channels"></a>Předběžná rezervace, která brání nadměrnému prodeji ve všech kanálech objednávek
 
-Předběžná rezervace se použije v případě, kdy si podnik musí rezervovat konkrétní množství produktů, aby podpořil například plnění prodejní objednávky, které zamezí nadměrnému prodeji. Když je prodejní objednávka vytvořena a potvrzena v Supply Chain Management nebo jiných systémech pro správu objednávek, je požadavek na rezervaci množství odeslán do Viditelnosti zásob. Viditelnost zásob vám umožňuje rezervovat produkty s podrobnostmi o dimenzi a konkrétními typy transakcí zásob. (Další informace viz [Aplikace Viditelnost zásob](inventory-visibility-power-platform.md) .) Poté, co je množství úspěšně rezervováno, je vráceno ID rezervace. Toto ID rezervace můžete použít ke zpětnému propojení na původní objednávku v Supply Chain Management nebo v jiných systémech správy objednávek.
+*Předběžná rezervace* umožňuje přiřadit nebo označit konkrétní množství pro splnění objednávky nebo poptávky. Předběžná rezervace neovlivňuje fyzické zásoby, ale odečítá z nich množství zásob *k dispozici pro rezervaci* a poskytuje aktualizované množství pro budoucí plnění objednávky. Tato funkce je užitečná, pokud do vašeho podniku přicházejí prodejní požadavky nebo objednávky z jednoho nebo více kanálů nebo zdrojů dat, které jdou mimo váš systém plánování podnikových zdrojů (ERP).
 
-Funkce je navržena tak, aby rezervace v doplňku Viditelnost zásob nezměnila celkové množství. Místo toho pouze označí vyhrazené množství. (Z tohoto důvodu se pro ni používá označení *předběžná rezervace*.) Množství s předběžnou rezervací lze kompenzovat, když jsou produkty spotřebovány v Supply Chain Management nebo v systému třetí strany, opětovným zavoláním API k provedení odpočtu množství a aktualizaci celkového množství ve Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md).
+Pokud nepoužíváte předběžné rezervace ve službě Viditelnost zásob, musíte počkat, dokud nebude objednávka synchronizována a zpracována vaším systémem ERP, abyste získali aktualizaci fyzického množství zásob. Tento proces má obvykle velkou latenci. Předběžné rezervace se však okamžitě projeví pokaždé, když je ve vašich prodejních kanálech vygenerována prodejní žádost nebo objednávka. Pomáhají tedy předcházet situacím nadměrného prodeje tím, že zajišťují, aby se vaše objednávky v Omnikanálu vzájemně nerušily, když se nakonec dostanou do ERP systému. Předběžné rezervace také zajišťují, že můžete splnit všechny objednávky, které jste slíbili. Pomohou vám tedy splnit očekávání zákazníků a udržet jejich loajalitu. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md).
+
+### <a name="immediate-response-of-atp-dates-confirmation"></a>Okamžitá odpověď na potvrzení dat ATP
+
+Viditelnost vašich předpokládaných zásob v blízké budoucnosti (včetně nabídky, poptávky a předpokládaných podrobností o množství na skladě) je důležitá, protože pomáhá vaší společnosti dosáhnout následujících cílů:
+
+- Minimalizovat úrovně zásob, abyste snížili náklady na jejich správu.
+- Usnadnit interní zpracování objednávek, aby prodejci mohli vypočítat data odeslání a dodání na základě dostupnosti objednaných produktů.
+- Poskytovat transparentní informace o tom, kdy mohou zákazníci očekávat, že položka není skladem, a to uvedením nejbližšího data dostupnosti.
+
+Funkci ATP lze snadno zařadit do vašeho každodenního procesu vyřizování objednávek. A co je nejdůležitější, stejně jako ostatní funkce Viditelnosti zásob je i ATP *globální a v reálném čase*. Proto můžete nastavit více vzorců pro výpočet ATP, abyste měli úplné dotazy na dostupnost zásob, které pokrývají všechny vaše obchodní kanály a zdroje dat. Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
+
+### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilita s položkami pokročilé správy skladu
+
+Cílem společnosti Microsoft je poskytnout okamžitou integraci s pokročilou správou skladu (WHS), aby zákazníci WHS mohli také využívat výhod služby Viditelnost zásob. Ve vlně 1 vydání 2022 (veřejné preview v březnu) služba zásob podporuje dotazy na položky WHS a ATP. Funkce předběžné rezervace a přidělování bude pro zákazníky WHS podporována v příští vlně. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+
+## <a name="licensing"></a>Licence
+
+Služba Viditelnost zásob je k dispozici v následujících verzích:
+
+- **Doplněk Viditelnost zásob pro Microsoft Dynamics 365 Supply Chain Management** – Pro společnosti, které mají platnou licenci Supply Chain Management, je Viditelnost zásob k dispozici bez dalších licenčních nákladů. Můžete ji hned začít zkoušet. Podrobnosti o instalaci najdete v tématu [Instalace a nastavení viditelnosti zásob](inventory-visibility-setup.md).
+- **Služba Viditelnosti zásob jako součást IOM** – Tato verze je určena buď pro zákazníky Intelligent Order Management (IOM), nebo pro společnosti, které nepoužívají Supply Chain Management jako svůj ERP systém. Licence je součástí balíčku IOM. Další informace naleznete v tématu [Přehled aplikace Intelligent Order Management](/dynamics365/intelligent-order-management/overview).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

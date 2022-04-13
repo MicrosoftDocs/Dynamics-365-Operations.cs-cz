@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: fae25eb1cb9dd4059b9d49e47cbb0060e717c9bc
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8386992"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524430"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Náhled Dynamics 365 Supply Chain Management 10.0.26 (květen 2022)
 
@@ -35,7 +35,7 @@ V následující tabulce je uveden seznam funkcí této verze. Tohle téma můž
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
 | Zásoby a logistika | [Přímý dotaz k viditelnosti zásob na podporu položek pokročilou správu skladu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Již brzy | Správa funkcí:<br>*Povolte skladové položky ve viditelnosti zásob* |
-| Zásoby a logistika | [Dostupné jako příslib pro doplněk viditelnosti skladu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | Již brzy | Aktivováno konfigurací služeb |
+| Zásoby a logistika | [Dostupné jako příslib pro doplněk viditelnosti skladu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](../inventory/inventory-visibility-available-to-promise.md) | Aktivováno konfigurací služeb |
 | Výroba | [Položky skutečné hmotnosti pro rozhraní ke spuštění výrobního provozu](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*(Preview) Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu* |
 | Výroba | Karta Moje úlohy v rozhraní pro provádění výrobního provozu <!-- KFM: Add link to release plan when available --> | [Jak pracovníci používají rozhraní pro provádění výrobního provozu](../production-control/production-floor-execution-use.md) | Správa funkcí:<br>*Karta Moje úlohy v rozhraní pro provádění výrobního provozu* |
 

@@ -2,25 +2,27 @@
 title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 Finance a jak používat finanční možnosti vytváření sestav.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983970"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527306"
 ---
 # <a name="get-started-with-financial-reporting"></a>Začínáme s finančním výkaznictvím 
 
@@ -174,7 +176,7 @@ Problém 1: Návrhář sestav se nespustí, když vyberete **Nový** nebo **Upra
 * V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery a poté vyberte **Weby**. V **Přidejte tento web do zóny** zadejte "\*\.dynamics.com" (bez uvozovek) a poté vyberte **Přidat**. 
 * V Internet Explorer vyberte **Nastavení**, poté vyberte **Možnosti internetu**. Vyberte kartu **Zabezpečení**. Vyberte Důvěryhodné servery. V oblasti Úroveň zabezpečení pro tuto zónu změňte možnost na **Střední-Nízká**.
 * Zakažte blokování vyskakovacích oken v prohlížeči.
-* K instalaci jsou vyžadovány pracovní stanice Microsoft .NET Framework 4.6.2 nebo vyšší. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* K instalaci jsou vyžadovány pracovní stanice Microsoft .NET Framework 4.7.2 nebo vyšší. Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * Pokud používáte prohlížeč Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav. Pokud používáte Chrome v režimu incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito. Další informace o rozšíření ClickOnce pro Chrome naleznete v části [Systémové požadavky pro nasazení cloudu](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Pokud používáte Microsoft Edge s prohlížečem Chrome, nemusíte instalovat rozšíření ClickOnce pro Edge Chromium. Musíte však povolit možnost ClickOnce, abyste mohli stáhnout klienta Report Designer. Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito.
 

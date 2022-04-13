@@ -2,7 +2,7 @@
 title: Omnikanálové rozšířené automatické náklady
 description: Toto téma popisuje funkce pro správu dalších nákladů objednávky pro objednávky velkoobchodní sítě pomocí funkcí rozšířených automatických nákladů.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743424"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489611"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
@@ -187,6 +187,9 @@ Pokud byly kódy důvodů zaznamenány pro přepsané náklady, přepsán, bude 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Refundace nákladů na transakci vrácení POS
 
 Pokud je parametr **Použít rozšířené automatické náklady** nastaven na hodnotu **Ano**, existující parametr velkoobchodu pro možnost **Refundovat dopravné** již není k dispozici. Chcete-li uvést, které poplatky by měly být zákazníkovi systematicky refundovány při použití rozšířených automatických nákladů, zkontrolujte, zda je příslušný kód nákladů nakonfigurován **Vratný** na stránce nastavení **Kód nákladů**. Ujistěte se, že nastavení byla synchronizována do databází velkoobchodní sítě prostřednictvím zpracování plánu distribuce.
+
+> [!TIP]
+> Pokyny, které vám pomohou zajistit, aby byly vratné poplatky na úrovni řádku vypočítány na základě vráceného množství, najdete v tématu [Vratné poplatky se nepočítají na základě vráceného množství](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Refundace nákladů na transakci vratky
 

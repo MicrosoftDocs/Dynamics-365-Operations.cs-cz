@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902090"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462663"
 ---
 # <a name="mobile-device-user-accounts"></a>Uživatelské účty mobilního zařízení
 
@@ -90,8 +90,8 @@ Když se pracovník přihlásí do mobilní aplikace Warehouse Management, změn
 1. V podokně akcí vyberte volbu **Možnosti uživatele**.
 1. Na kartě **Předvolby** natavte následující pole:
 
-    - **Jazyk** – Vyberte jazyk, který pracovník preferuje. Toto pole také řídí formát data, který se zobrazuje v aplikaci skladu.
-    - **Formát data, času a čísla** – Vyberte jazyk, který bude určovat formáty čísel, které se zobrazí v aplikaci skladu. Všimněte si, že formáty data a času, které se zobrazují v aplikaci skladu, jsou ve skutečnosti určeny polem **Jazyk**, ne tímto polem.
+    - **Jazyk** – Vyberte jazyk, který pracovník preferuje. Toto pole také řídí formát čísla, které se zobrazuje v aplikaci skladu.
+    - **Formát data, času a čísla** – Vyberte formát data a času, kterému pracovník dává přednost. Skladová aplikace používá číselný formát spojený s jazykem vybraným v poli **Jazyk** místo tohoto nastavení.
     - **Časové pásmo** – Vyberte časové pásmo, ve kterém pracovník pracuje. Toto pole ovlivňuje časové razítko pro všechny registrace, které pracovník pomocí aplikace provede.
 
 > [!NOTE]

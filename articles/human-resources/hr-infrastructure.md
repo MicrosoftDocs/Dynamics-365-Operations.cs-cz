@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024560"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487787"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Sloučení infrastruktury Dynamics 365 Human Resources – aktualizace verze 10.0.25
 
@@ -34,7 +34,7 @@ Sloučení poskytne uživatelům Human Resources konzistenci následujícími zp
     - Existuje jednotná kódová základna, kde jsou nové funkce pro Human Resources uvolněny jako součást pravidelného procesu aktualizace jedné verze.
     - Způsob, jakým jsou upgrady, aktualizace a opravy hotfix aplikovány na prostředí, je konzistentní.
 
-- [Možnosti rozšiřitelnosti jsou vylepšeny.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Možnosti rozšiřitelnosti jsou vylepšeny.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - Můžete pokračovat v používání nástrojů Microsoft Power Platform k rozšíření podle potřeby.
     - Funkčnost můžete rozšířit prostřednictvím formulářů, tabulek, metod a rozhraní API.
@@ -42,7 +42,7 @@ Sloučení poskytne uživatelům Human Resources konzistenci následujícími zp
 
     Další informace o možnostech rozšíření, které jsou k dispozici, viz [Přehled rozšiřitelnosti v Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-- [Vytvoření jedné sady funkcí Human Resources v Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Vytvoření jedné sady funkcí Human Resources v Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     Ve verzi 10.0.25 byly v infrastruktuře Finance a Operations zpřístupněny funkční schopnosti, které existovaly pouze v Human Resources. Aby zákazníci mohli využívat výhody těchto schopností v prostředí Finance and Operations, musí být ve správě funkcí povoleny následující funkce Human Resources.
 

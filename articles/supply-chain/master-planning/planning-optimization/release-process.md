@@ -1,21 +1,21 @@
 ---
 title: Proces a historie vydání modulu Optimalizace plánování
 description: Toto téma poskytuje informace o procesu vydání a historii vydání Optimalizace plánování.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 673543ff2c9abefbca0529f35ce20bb26156acc4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407837"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469694"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces a historie vydání modulu Optimalizace plánování
 
@@ -33,7 +33,7 @@ Protože se při aktualizaci Optimalizace plánování ve vašem prostředí nez
 
 | Změny | Podrobnosti správy funkcí | Data vydání |
 |---|---|---|
-| <p>Vylepšení obecného výkonu, kvality a stability.<p>Centralizovaná údržba kalendáře Optimalizace plánování<p>Návrhy optimalizace plánování pro optimalizaci stávající nabídky | Není vyžadována žádná správa funkcí. | 7. – 11. března 2022 |
+| <p>Vylepšení obecného výkonu, kvality a stability.<p>[Centralizovaná údržba kalendáře Optimalizace plánování](../supply-chain-calendars-master-planning.md)<p>[Návrhy optimalizace plánování pro optimalizaci stávající nabídky](../action-messages.md)<p>[Podpora Optimalizace plánování u subdodávek](../../production-control/manage-subcontract-work-production.md) | Není vyžadována žádná správa funkcí. | 7. – 11. března 2022 |
 | <p>Přidána podpora priority plánování u výrobních zakázek. | K dispozici ve verzi 10.0.25 jako součást funkce *Podpora MRP řízená prioritou pro optimalizaci plánování*. | 12. – 18. listopadu 2021 |
 | <p>Vylepšení obecného výkonu, kvality a stability. | Není vyžadována žádná správa funkcí. | 12. – 18. listopadu 2021 |
 | <p>Přidána podpora vzorců pro výpočet doby procesu, výrobního postupu s překrýváním a čísla výrobní operace u transakcí požadavků.</p><p>Vylepšené chybové zprávy pro plánování výroby související s časovým limitem, nenalezenou kapacitou a cyklickým postupem.</p><p>Vylepšená konzistence při výpočtu dat příjmu a data vydání u plánovaných objednávek i pevných objednávek.</p><p>Vylepšení obecného výkonu, kvality a stability. | Název funkce: *Plánování s nekonečnou kapacitou pro Optimalizaci plánování* | 22. – 27. října 2021 |

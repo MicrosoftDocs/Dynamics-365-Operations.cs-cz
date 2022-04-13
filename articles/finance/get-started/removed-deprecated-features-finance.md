@@ -1,23 +1,23 @@
 ---
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Finance.
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890946"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466827"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Finance
 
@@ -31,7 +31,21 @@ Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odst
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!NOTE]
-> Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
+> Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.26
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>Sestava DPH pro Finsko (design založený na kódech vykazování)
+
+[Sestava DPH pro Finsko](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nahrazeno novým designem přiznání k DPH, [Přiznání k DPH pro Finsko](../localizations/emea-fin-vat-declaration.md). |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Aplikace |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Do 1. března 2023 plánujeme přestat podporovat sestavu DPH pro Finsko (rozložení sestavy pro Finsko). Místo toho jsou v rámci modelu **Daňové přiznání** zavedeny nové formáty elektronického výkaznictví **Přiznání k DPH v XML (FI**) a **Přiznání k DPH pro Excel (FI)**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Odebrané nebo zastaralé funkce v aplikaci Finance verze 10.0.24
 

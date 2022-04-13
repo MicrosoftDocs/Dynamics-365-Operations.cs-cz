@@ -2,7 +2,7 @@
 title: Výkaz DPH pro Českou republiku
 description: Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,19 @@ ms.search.region: Czech Republic
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c842ca7a904dab21c47fbc5e0d1beac83178572de3d1acf961fadf52a62a0797
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e0db99393d3ccfa8b01b5bdb2df4c826c844287d
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728710"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487814"
 ---
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
 [!include [banner](../includes/banner.md)]
+
+  > [POZNÁMKA!] Tato funkce je zastaralá. Další informace naleznete v části [Odstraněné a zastaralé funkce](../get-started/removed-deprecated-features-finance.md#vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic).
+  > Další informace o přiznání k DPH viz [Přiznání k DPH (Česká republika)](emea-cze-vat-declaration-tax-declaration-model.md)
 
 Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 

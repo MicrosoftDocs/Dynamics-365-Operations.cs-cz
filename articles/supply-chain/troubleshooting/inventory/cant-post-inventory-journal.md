@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 9430068f9c2d92c894817db04143297de6c6aa6a
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 5e8168a20a1fa4f52d28129eebb9931b31157ced
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475758"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8488960"
 ---
 # <a name="inventory-journal-workflow-never-completes-and-the-journal-cant-be-processed"></a>Workflow deníku zásob se nikdy nedokončí a deník nelze zpracovat
 
@@ -28,6 +28,6 @@ Po odeslání pracovního postupu schválení deníku přestane zpracování pra
 
 Existuje několik důvodů, proč zpracování workflowu nemusí být provedeno. Zkontrolujte následující problémy:
 
-- Jděte na **Řízení zásob &gt; Nastavení &gt; Workflowy správy skladu** a zkontrolujte konfiguraci ovlivněného workflowu. Další informace naleznete v tématu [Workflowy schválení deníku](/dynamics365/supply-chain/inventory/inventory-journal-workflow.md).
+- Jděte na **Řízení zásob &gt; Nastavení &gt; Workflowy správy skladu** a zkontrolujte konfiguraci ovlivněného workflowu. Další informace naleznete v tématu [Workflowy schválení deníku](../../inventory/inventory-journal-workflow.md).
 - Ve workflowu může docházet k výjimce nebo chybě. Zkontrolujte historii pracovní položky ovlivněného workflowu, abyste zjistili, zda obsahuje chybu aplikace, která workflow ukončí.
 - Deník zásob lze aktualizovat nebo upravovat, pouze pokud je schválen. Pokud je vyvolání aktivní, můžete se pokusit vyvolat deník. Provádění dávkové úlohy workflowu může být pozastaveno z několika důvodů. Některé z těchto důvodů mohou být způsobeny problémem rámce workflowu.

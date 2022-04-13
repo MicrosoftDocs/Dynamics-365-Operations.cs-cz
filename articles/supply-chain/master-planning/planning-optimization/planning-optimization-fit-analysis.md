@@ -1,7 +1,7 @@
 ---
 title: Analýza přizpůsobení pro optimalizaci plánování
 description: V tomto tématu je vysvětleno, jak ověřit aktuální nastavení a data proti funkcím funkce optimalizace plánování.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408008"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487635"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -84,8 +84,8 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 | Výroba | Řádky kusovníků/receptur se spotřebou zdrojů: _\#_ | Tato funkce čeká na implementaci. V současné době se řádky kusovníku a receptur se spotřebou zdroje při povolení optimalizace plánování ignorují. Když je tato funkce podporována, bude požadavek na materiál nastaven na datum zahájení výroby. Dokud nebude tato funkce podporována, nebudou se generovat požadavky na materiály, které jsou označeny příznakem spotřeby prostředků. | 2022. říjen |
 | Výroba | Řádky kusovníků/receptur s krokovou spotřebou: _\#_ | Tato funkce čeká na implementaci. V současné době je ignorována kroková spotřeba na řádcích kusovníku a receptur při povolení optimalizace plánování. | 2022. říjen |
 | Výroba | Kusovníky s definovaným konstantním nebo variabilním odpadem: _\#_ | Tato funkce čeká na implementaci. V současné době je při povolení optimalizace plánování ignorován konstantní a variabilní odpad, které jsou definovány v kusovnících. | 2022. říjen |
-| Výroba | Kusovníky se subdodávkami: _\#_ | Tato funkce čeká na implementaci. V současnosti je ignorováno nastavení subdodávek v kusovníku, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | 2022. duben |
-| Výroba | Kusovníky bez pracoviště: _\#_ | Tato funkce je nyní podporována. Další informace viz [Plánování výroby](production-planning.md) | Podporováno |
+| Výrobní | Kusovníky se subdodávkami: _\#_ | Tato funkce je nyní podporována. | Podporováno |
+| Výrobní | Kusovníky bez pracoviště: _\#_ | Tato funkce je nyní podporována. Další informace viz [Plánování výroby](production-planning.md) | Podporováno |
 | Výroba | Poptávka se specifickým kusovníkem nebo definovanými požadavky postupu: _\#_ | Tato funkce čeká na implementaci. V současné době jsou ignorovány konkrétní požadavky kusovníku nebo postupu definovanými pro poptávku (například dílčí kusovník nebo dílčí postup v prodejní objednávce), pokud je povolena optimalizace plánování. Bude použit standardní kusovník nebo postup bez ohledu na toto nastavení. | 2022. říjen |
 | Výroba | Verze receptur se souběžnými nebo vedlejšími produkty: _\#_ | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignorují souběžné a vedlejší produkty, které jsou přidruženy k verzi receptury. | 2022. říjen |
 | Výroba | Verze receptury s výtěžností: _\#_ | Tato funkce čeká na implementaci. V současné době se při povolení optimalizace plánování ignoruje výtěžnost, která je přidružena k verzi receptury. | 2022. říjen |
