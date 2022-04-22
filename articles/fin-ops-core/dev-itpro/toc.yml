@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Nástroj Platform Updates pro verzi 10.0.25 (duben 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Nástroj Platform Updates pro verzi 10.0.24 (únor 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurace proxy pro místní prostředí
                       href: deployment/onprem-reverseproxy.md
+                    - name: Instalace zařízení síťové tiskárny v místních prostředích
+                      href: analytics/install-network-printer-onprem.md
                     - name: Místní diagnostika
                       href: deployment/on-premises-diagnostics.md
                     - name: Místní konfigurace zotavení po havárii
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: 'Časté dotazy k vývoji a vytváření virtuálních počítačů, které nepovolují přístup správce'
                   href: sysadmin/VMs-no-admin-access.md
+                - name: Nastavení VHD ke stažení pro první použití
+                  href: dev-tools/vhd-setup.md
                 - name: Přejmenování místních prostředí pro přístup k Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Systémové požadavky na vývoj
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Rozšíření Azure DevOps (Public Preview)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Kurz pro rozšíření Azure DevOps (Public Preview)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Integrace Microsoft Power Platform
           items:
             - name: Přehled
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Spustit nástroj Regression Suite Automation Tool (RSAT) s paralelním prováděním
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: Integrace RSAT s kanály Azure DevOps
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Řešení potíží
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Vydávání řešení pomocí služby Lifecycle Services
