@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392956"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612343"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Návrh nového řešení ER pro tisk štítků ZPL
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje jak může uživatel v roli administrátora systému, vývojáře elektronických zpráv nebo funkčního konzultanta pro elektronické vykazování konfigurovat parametry rámce [elektronické vykazování (ER)](general-electronic-reporting.md), navrhovat požadované [konfigurace](general-electronic-reporting.md#Configuration) ER nového řešení ER pro přístup k datům systému Warehouse Management, a vygenerovat vlastní štítky lokality skladu ve formátu Zebra Programming Language (ZPL) II. Tyto kroky lze provést v rámci společnosti **USRT**.
 
@@ -69,7 +68,7 @@ Upravitelnou verzi nakonfigurovaného datového modelu můžete zobrazit na str�
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a>Návrh mapování modelu pro konfigurovaný datový model
 
-Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje součást [mapování modelu](er-overview-components.md#model-mapping-component) pro datový model Skladu. Tato komponenta implementuje nakonfigurovaný datový model pro Dynamics 365 Finance a je specifická pro tuto aplikaci. Musíte ji nakonfigurovat, abyste určili aplikační objekty, které budou použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K provedení tohoto úkolu musíte chápat implementaci datové struktury obchodní domény Warehouse management ve Financích.
+Jako uživatel v roli Electronic Reporting Developer musíte vytvořit novou konfiguraci ER, která obsahuje součást [mapování modelu](er-overview-components.md#model-mapping-component) pro datový model Skladu. Tato komponenta implementuje konfigurovaný datový model pro Dynamics 365 Finance a je specifická pro tuto aplikaci. Musíte ji nakonfigurovat, abyste určili aplikační objekty, které budou použity k vyplnění nakonfigurovaného datového modelu aplikačními daty za běhu. K provedení tohoto úkolu musíte chápat implementaci datové struktury obchodní domény Warehouse management ve Financích.
 
 ### <a name="import-a-model-mapping-configuration"></a>Import konfigurace mapového modelu
 
@@ -196,8 +195,8 @@ Přidejte si do webového prohlížeče Chrome aplikaci emulátoru tiskárny pro
 
 [Přidejte novou místní tiskárnu](https://support.microsoft.com/windows/install-a-printer-in-windows-10-cc0724cf-793e-3542-d1ff-727e4978638b), kterou může aktuální zařízení používat, aby předávala vygenerované štítky z DRA do aplikace emulátoru tiskárny.
 
-1. V systému Windows vyberte **Start** \> **Nastavení** \> **Zařízení** \> **Tiskárny a skenery**.
-2. Vyberte **Nastavení tiskáren a skenerů**.
+1. V systému Windows vyberte **Start** \> **Nastavení** \> **Zařízení** \> **Tiskárny \& skenery**.
+2. Vyberte **Nastavení tiskáren \& skenerů**.
 3. V části **Přidat tiskárnu nebo skener** vyberte **Přidat zařízení**.
 4. V části **Tiskárna, kterou chci, není uvedena** vyberte **Přidat ručně**.
 5. V poli **Najít tiskárnu podle dalších možností** vyberte **Přidat místní tiskárnu nebo síťovou tiskárnu s ručním nastavením**.

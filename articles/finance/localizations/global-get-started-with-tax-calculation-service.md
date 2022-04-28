@@ -2,7 +2,7 @@
 title: Začněte s výpočtem daně
 description: Toto téma vysvětluje, jak nastavit výpočet daně.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952514"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558306"
 ---
 # <a name="get-started-with-tax-calculation"></a>Začínáme s výpočtem daně
 
@@ -36,7 +36,7 @@ Nastavení se skládá ze tří hlavních kroků.
 
 ## <a name="high-level-design"></a>Návrh na vysoké úrovni
 
-### <a name="runtime-design"></a>Návrh runtime
+### <a name="runtime-design"></a><a name="runtime"></a> Návrh runtime
 
 Následující obrázek znázorňuje návrh runtime na vysoké úrovni Tax Calculation. Protože Tax Calculation lze integrovat s více aplikacemi Dynamics 365, na obrázku je jako příklad použita integrace s Finance.
 
@@ -95,6 +95,14 @@ Než budete moci provést zbývající postupy uvedené v tomto tématu, musí 
 - Následující funkce musí být zapnuty v pracovním prostoru **Správa funkcí** vašeho nasazeného prostředí RCS.
 
     - Globalizační funkce
+
+- Následující role by měly být podle potřeby přiřazeny uživatelům ve vašem prostředí RCS:
+
+    - Návrhář elektronického výkaznictví
+    - Vývojář globalizační funkce
+    - Vývojář daňového modulu
+    - Konzultant funkcí daňového modulu
+    - Vývojář daňových služeb
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Nastavení výpočtu daně v LCS
 
@@ -201,17 +209,23 @@ Kroky v této části nesouvisí s konkrétním právním subjektem. Tento postu
     | ---------------- | --------- | ------- | ------------ |
     | Prodej.            | DEU       | DEU     | DEU_Domestic |
     | Prodej.            | DEU       | FRA     | DEU_EU       |
-    | Prodej.            | BEL       | BEL     | BEL_Domestic |
-    | Prodej.            | BEL       | FRA     | BEL_EU       |
+    | Prodej            | BEL       | BEL     | BEL_Domestic |
+    | Prodej            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Pokud je výchozí skupina daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto tématu.
 
 22. Na kartě **Použitelnost daňové skupiny zboží** vyberte sloupce, které jsou nutné k určení správného daňového kódu, a poté vyberte **Přidat**. Zadejte nebo vyberte hodnoty pro každý sloupec. Pole **Daňová skupina zboží** bude výstupem této matice. Pokud tato karta není nakonfigurována, použije se skupina DPH zboží na řádku transakce.
 
     Následuje příklad.
 
-    | Kód položky | Skupina daně zboží |
+    | Kód položky | Skupina daně položky |
     | --------- | -------------- |
-    | D0001     | Plný           |
+    | D0001     | Celý           |
     | D0003     | Snížené        |
+
+    > [!NOTE]
+    > Pokud je výchozí skupina položek daně z obratu na řádcích vašeho zdanitelného dokladu správná, ponechte tuto matici prázdnou. Více informací naleznete v části [Návrh runtime](#runtime) v dále v tomto tématu.
 
     Další informace o tom, jak se určují daňové kódy ve Výpočtu daně, viz [Logika určování skupiny DPH a skupiny DPH zboží](global-sales-tax-group-determination.md).
 

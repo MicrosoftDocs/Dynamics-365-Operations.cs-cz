@@ -2,19 +2,19 @@
 title: Obecné řešení potíží
 description: Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062331"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554592"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -29,20 +29,31 @@ Toto téma obsahuje obecné informace o odstraňování potíží pro integrací
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Chcete-li zobrazit podrobnosti chyby, povolte a zobrazte protokol sledování modulů plug-in v Dataverse
 
+Protokoly trasování mohou být užitečné při řešení problémů se živou synchronizací s duálním zápisem mezi Finance a Operations a Dataverse. Protokoly mohou poskytnout konkrétní podrobnosti týmům, které poskytují technickou a technickou podporu pro Dynamics 365. Tento článek popisuje, jak povolit protokoly trasování a jak je zobrazit. Protokoly trasování se spravují na stránce Nastavení Dynamics 365 a ke změně a zobrazení vyžadují oprávnění na úrovni správce. 
+
 **Požadovaná role pro zapnutí protokolu sledování a zobrazení chyb:** správce systému
 
+### <a name="turn-on-the-trace-log"></a>Zapněte protokol trasování
 Chcete-li zapnout protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k aplikaci customer engagement, otevřete stránku **Nastavení** a v části **Systém** vyberte možnost **Správa**.
-2. Na stránce **Správa** zvolte **Nastavení systému**.
-3. Na kartě **Vlastní nastavení** ve sloupci **Modul plug-in a vlastní sledování aktivity workflowu** vyberte možnost **Vše**, chcete-li povolit trasovací protokol modulu plug-in. Chcete-li protokolovat protokoly trasování pouze při výskytu výjimek, můžete namísto toho vybrat **Výjika**.
+1.  Přihlaste se k Dynamics 365 a pak na horním navigačním panelu vyberte **Nastavení**. Na stránce Systémy klikněte na **Správa**.
+2.  Na stránce Správa zvolte **Nastavení systému**.
+3.  Vyberte kartu **Vlastní nastavení** a plug-in a pak v sekci vlastní sledování aktivity workflowu změňte rozevírací nabídku na **Všechny**. To bude sledovat všechny aktivity a poskytne komplexní soubor dat pro týmy, které musí prověřit potenciální problémy.
 
+> [!NOTE]
+> Nastavení rozevíracího seznamu na **Výjimka** poskytne informace o sledování pouze v případě, že dojde k výjimkám (chybám).
 
+Po povolení budou protokoly trasování zásuvného modulu nadále shromažďovány, dokud je ručně nevypnete návratem do tohoto umístění a výběrem **Vypnuto**.
+
+### <a name="view-the-trace-log"></a>Zobrazení protokolu trasování
 Chcete-li zobrazit protokol sledování, postupujte následujícím způsobem.
 
-1. Přihlaste se k aplikaci customer engagement, otevřete stránku **Nastavení** a v části **Vlastní nastavení** vyberte možnost **Protokol sledování modulu plug-in**.
-2. Najděte protokoly sledování, kde sloupec **Název typu** je nastaven na **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Chcete-li zobrazit úplný protokol, klikněte dvakrát na položku, a potom na pevné záložce **Spuštění** zkontrolujte text **Message Block**.
+1. Na stránce Nastavení Dynamics 365 na horním navigačním panelu vyberte **Nastavení**. 
+2. Vyberte **Protokol trasování pluginu** v sekci **Přizpůsobení** stránky.
+3. Položky můžete najít v seznamu protokolů trasování na základě názvu typu a/nebo názvu zprávy.
+4. Chcete-li zobrazit celý protokol, otevřete požadovaný záznam. Blok zpráv v sekci Provedení poskytne dostupné informace o zásuvném modulu. Pokud jsou k dispozici, budou poskytnuty také podrobnosti o výjimce. 
+
+Můžete zkopírovat obsah protokolů trasování a vložit je do jiné aplikace, jako je Poznámkový blok nebo jiné nástroje, abyste mohli zobrazit protokoly nebo textové soubory, abyste snadněji viděli veškerý obsah. 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Povolit režim ladění pro řešení potíží se živými synchronizacemi v finančních a provozních aplikacích
 
@@ -69,6 +80,34 @@ Chyby dvojího zapisování, které pocházejí z aplikace Dataverse, se mohou o
 5. Otevřete prohlížeč událostí.
 6. Vyberte **Protokoly aplikací a služeb \> Microsoft \> Dynamics \> AX -DualWriteSync \> Provozní**.
 7. Prohlédněte si seznam posledních chyb.
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>Vstupní stránka s duálním zápisem uživatelského rozhraní je prázdná
+Při otevření stránky s duálním zápisem v prohlížeči Microsoft Edge nebo Google Chrome se domovská stránka nenačte a zobrazí se prázdná stránka nebo chyba, jako je „Něco se pokazilo“.
+V Devtools se v protokolech konzoly zobrazuje chyba:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Nepodařilo se načíst vlastnost 'sessionStorage' z 'Window': Přístup je pro tento dokument zamítnut. at t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) at new t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) at Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) at jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) at Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) at Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) at Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) at vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+Uživatelské rozhraní používá „úložiště relace“ prohlížeče k uložení některých hodnot vlastností pro načtení domovské stránky. Aby to fungovalo, musí být v prohlížeči webu povoleny soubory cookie třetích stran. Chyba naznačuje, že uživatelské rozhraní nemá přístup k úložišti relace. K tomuto problému mohou nastat dva scénáře:
+
+1.  Otevíráte uživatelské rozhraní v anonymním režimu Edge/Chrome a soubory cookie třetích stran v anonymním režimu jsou blokovány.
+2.  V Edge/Chrome jste zcela zablokovali soubory cookie třetích stran.
+
+### <a name="mitigation"></a>Zmírnění dopadů
+V nastavení prohlížeče musí být povoleny soubory cookie třetích stran.
+
+### <a name="google-chrome-browser"></a>Prohlížeč Google Chrome
+1. možnost:
+1.  Přejděte do nastavení zadáním chrome://settings/ do adresního řádku a poté přejděte na Soukromí a zabezpečení -> Soubory cookie a další data webu.
+2.  Vyberte 'Povolit všechny soubory cookie'. Pokud si to nepřejete, přejděte na druhou možnost.
+
+2. možnost:
+1.  Přejděte do nastavení zadáním chrome://settings/ do adresního řádku a poté přejděte na Soukromí a zabezpečení -> Soubory cookie a další data webu.
+2.  Pokud je vybrána možnost „Blokovat soubory cookie třetích stran v anonymním režimu“ nebo „Blokovat soubory cookie třetích stran“, přejděte na „Weby, které mohou vždy používat soubory cookie“ a klikněte na **Přidat**. 
+3.  Přidejte název webu aplikací Finance & Operations – https://<your_FinOp_instance>.cloudax.dynamics.com. Ujistěte se, že jste zaškrtli políčko „Všechny soubory cookie, pouze na tomto webu“. 
+
+### <a name="microsoft-edge-browser"></a>Prohlížeč Microsoft Edge
+1.  Přejděte do Nastavení -> Oprávnění webu -> Soubory cookie a data webu.
+2.  Vypněte možnost „Blokovat soubory cookie třetích stran“.  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Odpojení a propojení jiného prostředí Dataverse z finanční a provozní aplikace
 
@@ -97,14 +136,14 @@ Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následuj
 
 Tým podpory možná bude muset zkontrolovat trasování sítě, aby vyřešil některé problémy. Chcete-li vytvořit sledování sítě, postupujte následujícím způsobem:
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Prohlížeč Google Chrome
 
 1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
 2. Otevřete kartu **Síť** a zadejte **integ** v textovém poli filtru.
 3. Spusťte svůj scénář a sledujte protokolované požadavky.
 4. Klikněte pravým tlačítkem na položky a vyberte **Uložit vše jako HAR s obsahem**.
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Prohlížeč Microsoft Edge
 
 1. Na otevřené kartě stiskněte **F12** nebo vyberte **Vývojářské nástroje** a otevřete nástroje pro vývojáře.
 2. Otevřete kartu **Síť**.

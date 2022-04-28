@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920193"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570471"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
@@ -57,7 +57,7 @@ Pokud chcete některou z těchto funkcí zapnout nebo vypnout, musíte tak učin
 | Zásobování a zdroje | Vyčistit historii aktualizace nákupní objednávky | Tato funkce vám umožňuje vyčistit dočasné historické záznamy související s aktualizacemi nákupních objednávek. Přidává nové tlačítko s názvem **Vyčistit historii aktualizací nákupů** do podokna akcí na stránce **Všechny nákupní objednávky**. Tato funkce je povolena ve výchozím nastavení. |
 | Řízení výroby | (Preview) Automatické vyskladňování materiálů s povoleným skladem pro automaticky účtované výdejky | Tato funkce vám umožňuje automaticky vydávat a řešit dimenze zásob pro automaticky zaúčtované, odvozené a zpětně účtované deníky výdejek. |
 | Řízení výroby | Potvrdit expiraci surovin oproti plánovanému datu spotřeby | Tato funkce mění způsob, jakým se ověřují data expirace šarže při rezervaci šarže suroviny, která má být použita během výroby. Když je tato funkce povolena, datum vypršení šarže se ověřuje proti datu plánované spotřeby (datum suroviny), jak je stanoveno na řádku výrobního kusovníku nebo řádku vzorce dávkové objednávky. Když je tato funkce zakázána, je datum vypršení šarže ověřeno oproti plánovanému datu dodání výrobní nebo dávkové zakázky (jako dříve). |
-| Prodej a marketing | Vyčistění historie aktualizace prodejů na základě stáří | Tato funkce umožňuje nastavit maximální stáří záznamů, které se mají uchovávat při spuštění periodické úlohy **Vyčištění historie aktualizace prodeje**. Starší záznamy budou smazány. To je užitečné, když nastavíte pravidelné spouštění úlohy, protože stáří se vždy počítá vzhledem k datu spuštění úlohy. Bez této funkce můžete nastavit pouze konkrétní datum pro uchování nejstarších záznamů. |
+| Prodej a marketing | Vyčistění historie aktualizace prodejů na základě stáří | Tato funkce umožňuje nastavit maximální stáří záznamů, které se mají uchovávat při spuštění periodické úlohy **Vyčištění historie aktualizace prodeje**. Starší záznamy budou smazány. To je užitečné, když nastavíte pravidelné spouštění úlohy, protože stáří se vždy počítá vzhledem k datu spuštění úlohy. Bez této funkce můžete nastavit pouze konkrétní datum pro uchování nejstarších záznamů. Další informace viz [Vymazání historických dat plánu prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Prodej a marketing | Zlepšit výkonnost sestavy „Prvních 100“ zákazníků | Tato funkce zlepšuje výkon sestavy zákazníků **Top 100** tím, že se sestava vždy spouští u všech zákazníků (což je její zamýšlené použití) místo umožnění vlastních dotazů. Když je tato funkce povolena, všechna nastavení **Záznamy k zahrnutí** jsou zakázána v dialogovém okně sestavy **Top 100**. |
 | Řízení skladu | Podpora jednoty škálování pro uvolnění odchozích objednávek do skladu | Když je tato funkce povolena, mohou být odchozí objednávky uvolněny z centra přímo na jednotku měřítka, odkud budou objednávky splněny. |
 
@@ -79,9 +79,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.23 aplikací Finance and Operations (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.23 aplikací Finance a Operace (listopad 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

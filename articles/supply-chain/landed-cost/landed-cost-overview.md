@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983410"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570374"
 ---
 # <a name="landed-cost-module"></a>Modul Náklady za doručení
 
@@ -39,7 +39,7 @@ Náklady za doručení poskytují přesné a včasné odhady nákladů na režij
 
 ### <a name="voyages"></a>Cesty
 
-V modulu Náklady za doručení je cesta samostatným pohybem z odchozího místa, procházející přes určitou sadu cílů během zadaného období, až do zadaného umístění příchozího skladu. Nákupní objednávky a řádky objednávek lze u cesty přidat buď do jednoho kontejneru, nebo do více kontejnerů, a náklady budou správně přiděleny zpět do řádku položky. Objednávky a řádky objednávek lze také přidat mezi jednotlivé právnické osoby jedné cesty.
+V modulu Náklady za doručení je cesta samostatným pohybem z odchozího místa, procházející přes určitou sadu cílů během zadaného období, až do zadaného umístění příchozího skladu. Nákupní objednávky a řádky objednávek lze u cesty přidat buď do jednoho kontejneru, nebo do více kontejnerů, a náklady budou správně přiděleny zpět do řádku položky. 
 
 ### <a name="item-ownership"></a>Vlastnictví položky
 

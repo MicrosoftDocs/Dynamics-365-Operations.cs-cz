@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752801"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548073"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
 
@@ -816,7 +816,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Jako dodavatel můžete získat informace o množství zasílaných zásob, které se převádějí k odběrateli. | Pro možnost účtovat odběrateli dodavatel vyžaduje údaje o surovinách zakoupených ze zásilky dodávky a datum zakoupení. Dodavatel může také monitorovat zásoby na skladě u zákazníka pomocí rozhraní dodavatelské spolupráce. |
 | Přesunujte zásoby vlastněné dodavatelem pomocí deníku převodu. | Chcete-li sledovat fyzickou pozici zásob vlastněných dodavatelem, musíte být schopní zaznamenat umístění v systému. Pomocí deníku převodu můžete zaznamenat fyzické přesunutí zásob, jako je například pohyb z jednoho místa ve skladu do jiného místa v dotyčném skladu. |
 | Upravte zásoby vlastněné dodavatelem pomocí deníku inventur. | Je důležité, abyste zásoby na skladě systému synchronizovali se skutečnými fyzickými zásobami. Zásoby vlastněné dodavatelem lze upravit pomocí procesů inventury, například úpravou množství a procesů deníku inventury. |
-| Další informace o podpoře pro dodávku v Dynamics 365 for Operations | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](../../../supply-chain/inventory/consignment.md), [Nastavení zásilky](../../../supply-chain/inventory/set-up-consignment.md), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Další informace o podpoře pro dodávku v Dynamics 365 for Operations | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](../../../supply-chain/inventory/consignment.md), [Nastavení zásilky](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Dodavatelská spolupráce (dříve označovaná jako portál pro dodavatele)
 
@@ -940,9 +940,9 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 </tbody>
 </table>
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
+[Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570939"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570415"
 ---
 # <a name="manage-voyages"></a>Správa cest
 
@@ -66,9 +66,9 @@ V následující tabulce jsou popsány akce, které jsou k dispozici na kartě *
 | Na cestě | Aktualizuje pole **Stav cesty** na stav při přepravě, který je stanoven na stránce **[Parametry nákladů za doručení](landed-cost-parameters.md)**. Tento proces nemá žádnou další logiku. Cestu lze také automaticky aktualizovat na stav při přepravě na základě nastavení v [řídicím centru sledování](delivery-information-setup.md).
 | Připraveno k výpočtu nákladů | Aktualizuje pole **Stav cesty** na stav připravenosti k výpočtu nákladů, který je stanoven na stránce **[Parametry nákladů za doručení](landed-cost-parameters.md)**. Cesta může být oceněna, když jsou zpracovány všechny faktury (skladové faktury i faktury za náklady na cestu) a bylo přijato zboží. Pokud odhadované náklady spojené s cestou nebyly oceněny, dojde k chybě při pokusu o zpracování ocenění cesty. |
 | Nacenění nákladů | Odstraňte případné nesrovnalosti ve výpočtu nákladů poté, co u všech nákupních objednávek a nákladů na cestu existuje faktura. Když vyberete toto tlačítko, zobrazí se dialogové okno **Aktualizace cesty – Oceněno**. V něm si můžete vybrat zaúčtování ve standardní finanční datum nebo zadat datum zaúčtování a poté akci spustit. Akci můžete spustit tolikrát, kolikrát chcete. Dialogové okno **Aktualizace cesty – Oceněno** můžete také použít k vytvoření plánu spuštění akce jako periodické úlohy (dávková úloha). Doporučujeme akci pravidelně spouštět jejím nastavením jako dávkové úlohy. |
-| Zaúčtovat příjemky | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky v cestě. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování seznamu příjemek, které musí být zpracováno v každé právnické osobě. |
-| Zaúčtovat příjemku produktu | Zaúčtuje příjemku produktu pro všechny řádky nákupní objednávky v cestě. Proces přijetí produktu pro řádky nákupní objednávky, které jsou spojeny s cestou, bude použit pouze v případě, že zboží **neprojde** zpracováním přepravovaného zboží. Pokud zboží projde zpracováním přepravovaného zboží, zobrazí se při pokusu o zaúčtování příjemky produktu na řádku nákupní objednávky chyba. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost dialogové okno účtování nové poznámky k dodání. |
-| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky v cestě. Pokud zboží na cestě projde zpracováním přepravovaného zboží, budou řádky nákupní objednávky fakturovány před dokončením procesu přijímání. Při fakturaci původní nákupní objednávky budou vytvořeny objednávky přepravovaného zboží, které jsou přidruženy k řádkům původní nákupní objednávky. Tyto objednávky pak může přijmout sklad. Pokud se používají dodávky s více společnostmi, otevře se pro každou společnost nové dialogové okno účtování faktury. |
+| Zaúčtovat příjemky | Zaúčtuje seznam příjemek pro všechny řádky nákupní objednávky v cestě.  |
+| Zaúčtovat příjemku produktu | Zaúčtuje příjemku produktu pro všechny řádky nákupní objednávky v cestě. Proces přijetí produktu pro řádky nákupní objednávky, které jsou spojeny s cestou, bude použit pouze v případě, že zboží **neprojde** zpracováním přepravovaného zboží. Pokud zboží projde zpracováním přepravovaného zboží, zobrazí se při pokusu o zaúčtování příjemky produktu na řádku nákupní objednávky chyba.  |
+| Zaúčtovat fakturu | Zaúčtuje fakturu pro všechny řádky nákupní objednávky v cestě. Pokud zboží na cestě projde zpracováním přepravovaného zboží, budou řádky nákupní objednávky fakturovány před dokončením procesu přijímání. Při fakturaci původní nákupní objednávky budou vytvořeny objednávky přepravovaného zboží, které jsou přidruženy k řádkům původní nákupní objednávky. Tyto objednávky pak může přijmout sklad.  |
 | Převodní příkaz expedice | Zaúčtuje cestu převodního příkazu pro všechny řádky nákupní objednávky v cestě. Pokud je toto tlačítko vybráno, budou možné aktualizovat pouze převodní příkazy. |
 | Přijmout převodní příkaz | Zaúčtuje příjemku převodního příkazu pro všechny řádky nákupní objednávky v cestě. |
 | Přijmout přepravované zboží | Přijme všechny řádky objednávky, které jsou v cestě přepravovány. Toto tlačítko je jednou ze tří možností, které jsou k dispozici pro příjem přepravovaného zboží na cestě. (Další dvě možnosti jsou tlačítko **Vytvořit deník doručení**, které je popsáno dále v této tabulce, a mobilní aplikace Řízení skladu.) Tato možnost je nejjednodušší a bude zpracovávat přepravované zboží z tranzitního skladu do konečného cílového skladu. Chcete-li mít nad procesem větší kontrolu, použijte ke zpracování příjmu zboží deník příjezdu nebo mobilní zařízení. |
@@ -84,7 +84,7 @@ V následující tabulce jsou popsána tlačítka, která jsou k dispozici na ka
 
 | Tlačítko | popis |
 |---|---|
-| Příjemka | Otevře seznam příjemek produktu pro všechny řádky nákupní objednávky v cestě. Pokud se používají cesty s více společnostmi, otevře se pro každou společnost nový seznam příjemek. Pokud nebyly zpracovány žádné seznamy příjemek produktů, toto tlačítko není k dispozici. |
+| Příjemka | Otevře seznam příjemek produktu pro všechny řádky nákupní objednávky v cestě.  Pokud nebyly zpracovány žádné seznamy příjemek produktů, toto tlačítko není k dispozici. |
 | Příjemka produktu | Otevře záznam příjmu produktu pro řádky nákupní objednávky, které jsou spojeny s cestou, pokud je tento záznam použit. Pokud nebyly zaúčtovány žádné příjemky produktů, toto tlačítko není k dispozici. Proces příjmu produktu nebude použit, pokud používáte zpracování přepravovaného zboží. |
 | Doručení položky | Otevře deník doručení zboží, pokud je použit. |
 | Sledování | Otevře stránku **Sledování vstupu**, kde můžete aktualizovat očekávané datum příjezdu zboží v přepravním kontejneru a cestě, a následně aktualizovat očekávané termíny dodání řádků nákupní objednávky. |

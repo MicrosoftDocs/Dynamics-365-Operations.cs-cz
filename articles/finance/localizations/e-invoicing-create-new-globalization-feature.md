@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371580"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603018"
 ---
 # <a name="create-a-globalization-feature"></a>Vytvoření funkce globalizace
 
@@ -47,7 +47,7 @@ Chcete-li vytvořit funkci elektronické fakturace, postupujte takto.
 8. V mřížce **Konfigurace** vyhledejte a vyberte konfigurace formátu, které jsou vyžadovány pro kanál zpracování (například pro generování souborů elektronických faktur nebo zpracování odpovědí z externích webových služeb).
 9. Vyberte **OK**. Nyní můžete použít konfigurace v akcích kanálu zpracování. Další informace získáte v části [Práce s konfiguracemi](e-invoicing-work-configurations.md).
 10. Chcete-li přidat nastavení funkce elektronické fakturace, vytvořte ho na kartě **Nastavení** stránky **Nová funkce**. Další informace naleznete v tématu [Práce s nastavením funkcí](e-invoicing-feature-setup.md).
-11. Dokončete nastavení a nasaďte funkci elektronické fakturace do prostředí služby. Další informace najdete v tématu [Dokončení, publikování a nasazení funkce globalizace](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Dokončete nastavení a nasaďte funkci elektronické fakturace do prostředí služby. Další informace najdete v tématu [Dokončení, publikování a nasazení funkce globalizace](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Vytvoření konfigurací formátu souboru, které jsou odvozeny ze stávajícího modelu faktury
 
@@ -91,4 +91,4 @@ Nové konfigurace formátu souboru musejí být sdíleny s doménou Microsoft, n
     - Zkontrolujte konfigurace v případě, že musíte přizpůsobit formáty ER a jejich vazby na mapování formátu pro verzi funkce.
     - Zkontrolujte nastavení, v případě, že musíte pro verzi funkce přizpůsobit kartu **Akce**, kartu **Pravidla použitelnosti** nebo kartu **Proměnné**.
 
-9. Dokončete nastavení a nasaďte funkci elektronické fakturace do prostředí služby. Další informace najdete v tématu [Dokončení, publikování a nasazení funkce globalizace](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Dokončete nastavení a nasaďte funkci elektronické fakturace do prostředí služby. Další informace najdete v tématu [Dokončení, publikování a nasazení funkce globalizace](e-invoicing-complete-publish-deploy-globalization-feature.md).

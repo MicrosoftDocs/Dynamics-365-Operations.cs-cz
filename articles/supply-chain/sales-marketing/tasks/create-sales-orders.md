@@ -2,7 +2,7 @@
 title: Vytvářet prodejní objednávky
 description: Tato procedura popisuje způsob vytváření prodejní zakázky.
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566282"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551717"
 ---
 # <a name="create-sales-orders"></a>Vytvářet prodejní objednávky
 
@@ -66,5 +66,7 @@ Produkty prodané vaší organizací mohou nabízet více variant rozlišených 
     
 3. Vyberte **OK**.
 
+## <a name="sales-order-creation-performance-enhancement"></a>Vylepšení výkonu vytváření prodejní objednávky
+Nová funkce představená ve verzi aplikace 10.0.26 omezuje vytváření dalších záznamů pro tabulky **SourceDocumentHeader** a **SourceDocumentLine**. Zlepšil se výkon a zmenšila se velikost úložiště, protože se tyto záznamy nevytvářejí. Tyto základní tabulky rámce zdrojového dokumentu se v současné době nepoužívají pro prodejní objednávky v produktu a neexistují žádné plánované plány na jejich využití. Povolení této funkce je považováno za bezpečnou změnu pro lepší výkon. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

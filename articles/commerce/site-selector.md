@@ -2,7 +2,7 @@
 title: Modul pro výběr lokality
 description: Tohle téma se zabývá modulem pro výběr lokality a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109699"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551687"
 ---
 # <a name="site-picker-module"></a>Modul pro výběr lokality
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109699"
 
 Tohle téma se zabývá modulem pro výběr lokality a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
-Pokud má firma různé weby napříč trhy, regiony a národními prostředími, uživatelé webu potřebují snadný způsob, jak přepínat mezi lokalitami a vybrat si preferovaný nákupní web. Jako řešení tohoto scénáře umožňuje modul pro výběr lokality uživatelům procházet více webů.
+Pokud má firma různé weby napříč trhy, regiony a národními prostředími, uživatelé webu potřebují snadný způsob, jak přepínat mezi lokalitami a vybrat si preferovaný nákupní web. Jako řešení tohoto scénáře umožňuje modul pro výběr lokality uživatelům procházet více webů. Nástroj pro výběr webu se také doporučuje, když [geodetekce a přesměrování](geo-detection-redirection.md) byly implementovány pro váš web elektronického obchodu, takže zákazníci mají možnost přepsat preference webu, které uvedou pomocí modulu [výběr země/oblasti](country-region-picker-module.md). 
 
-Modul pro výběr lokality musí být nakonfigurován se seznamem webů (trhy, regiony nebo národní prostředí), které uživatelé webu mohou procházet.
-
-> [!NOTE]
-> Modul pro výběr lokality je k dispozici v Dynamics 365 Commerce verze 10.0.14.
-
-Následující obrázek ukazuje příklad modulu pro výběr lokality, který se nachází v záhlaví stránky webu.
+Modul pro výběr lokality musí být nakonfigurován se seznamem webů (trhy, regiony nebo národní prostředí), které uživatelé webu mohou procházet. Následující obrázek ukazuje příklad modulu pro výběr lokality, který se nachází v záhlaví stránky webu.
 
 ![Příklad modulu pro výběr lokality v záhlaví stránky webu.](./media/ecommerce-sitepicker.PNG)
 

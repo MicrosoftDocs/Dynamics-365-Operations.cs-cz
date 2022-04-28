@@ -2,19 +2,19 @@
 title: Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
 description: Toto téma obsahuje informace o řešení potíží, které vám pomohou vyřešit problémy s modulem dvojího zapisování v finančních a provozních aplikacích.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061801"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565959"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Řešení problémů s duálním zápisem ve finančních a provozních aplikacích
 
@@ -70,6 +70,21 @@ Při pokusu o zastavení mapování tabulky se může zobrazit následující ch
 K této chybě dojde, pokud propojené prostředí Dataverse není k dispozici.
 
 Chcete-li tento problém vyřešit, vytvořte lístek pro tým pro integraci dat. Připojte sledování sítě, aby mohl tým pro integraci dat označit mapy jako **nespuštěný** na back endu.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Povolte paralelní zpracování ve finančních a provozních aplikacích pro zlepšení výkonu
+
+Povolení paralelního zpracování může zkrátit čas potřebný k importu dat z finančních a provozních aplikací do aplikací pro zapojení zákazníků a Microsoft Dataverse. 
+
+Chcete-li povolit paralelní zpracování ve finančních a provozních aplikacích, postupujte následujícím způsobem.
+
+1. Přihlaste se do svého prostředí finančních a provozních aplikací.
+2. Přejděte na **Správa dat > Parametry rámce**.
+3. Vyberte **Nastavení entity** a vyberte **Konfigurace parametrů provádění entity**.
+4. Přidejte parametry pro paralelní zpracování:
+    - **Počet záznamů prahu importu** – Počet záznamů, které musí být splněny, než bude povoleno paralelní zpracování.
+    - **Počet importu úkolů** – Počet vláken (úloh), které se mají spustit paralelně.
+5. Zvolte možnost **Uložit**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Chyby při pokusu o spuštění mapování tabulky
 

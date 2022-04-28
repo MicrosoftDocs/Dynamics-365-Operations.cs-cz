@@ -4,7 +4,8 @@ description: Toto téma obsahuje informace a odkazy na obsah týkající se mís
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712561"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566032"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -33,7 +34,7 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Přehled místního nasazení](on-premises-overview.md)
 - [Plán a příprava pro místní nasazení](plan-onprem-deployment.md)
 - [Systémové požadavky pro místní nasazení](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + software podporovaný Operations (místní)](onprem-compatibility.md)
+- [Podporovaný software Microsoft Dynamics 365 Finance + Operations (on-premises)](onprem-compatibility.md)
 - [Požadavky nastavení velikosti hardwaru pro místní prostředí](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Zakoupení Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Srovnání funkcí cloudu a on-premises](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -72,7 +73,7 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Skripty pro řešení problémů v místních prostředích](onprem-tsg-implementations.md)
 - [Rotace certifikátů](certificate-rotation-on-prem.md)
 - [Místní diagnostika](on-premises-diagnostics.md)
-- [Odstraněné nebo zastaralé funkce Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  
 

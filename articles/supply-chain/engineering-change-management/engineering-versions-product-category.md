@@ -2,7 +2,7 @@
 title: Technické verze a kategorie technických produktů
 description: Toto téma poskytuje informace o konceptu technických verzí. Technické verze zajišťují, že různé stavy produktu a jeho dat jsou udržovány aktuální a jasné a že je lze v systému vizualizovat.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572882"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553355"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Technické verze a kategorie technických produktů
 
@@ -137,7 +137,7 @@ Pro každý řádek, který přidáte do mřížky, nastavte následující pole
 |---|---|
 | Jméno | Vyberte atributy, které chcete přidat. |
 | Hodnota | Vyberte výchozí hodnotu pro atribut. |
-| Povinné | Pro atributy *logického* typu, pokud je tato možnost nastavena na *Ano*, musí uživatelé nastavit atribut na *Ano*. Pokud je tato možnost nastavena na *Ne*, mohou uživatelé nastavit atribut na *Ano* nebo *Ne*. U ostatních datových typů je nastavení této možnosti pouze informativní. |
+| Povinné | Vyberte, zda je atribut povinný, což znamená, že uživatelé musí před uložením produktu zadat platnou hodnotu atributu. Účinek tohoto nastavení se mírně liší v závislosti na typu dat vybraného atributu, jak je definováno v následujícím seznamu.<ul><li>**Logický** – Nastavte na *Ano*, chcete-li vyžadovat, aby měl atribut hodnotu *Ano* (systém odmítne uložit produkt, kde je atribut nastaven na *Ne*). Tuto možnost nastavte na *Ne*, abyste mohli přijmout *Ano* i *Ne*. (Atributy typu *Logický* nemohou mít prázdnou hodnotu.)</li><li>**Celé číslo nebo Desetinné číslo** – Nastavte na *Ano*, chcete-li požadovat po uživatelích zadání nenulové hodnoty tohoto atributu. Tuto možnost nastavte na *Ne*, abyste uživatelům umožnili ukládat s nulovou hodnotou.  (Atributy těchto typů nemohou mít prázdnou hodnotu.)</li><li>**Seznam** – Seznamy mají datový typ *Text*, ale také obsahují předdefinovaný seznam možných hodnot. U atributů tohoto typu tedy není možné zadat prázdnou hodnotu, takže toto nastavení nemá žádný vliv a je pouze informativní.</li><li>**Všechny ostatní datové typy** – Nastavte toto na *Ano*, aby byl atribut povinný. Nastavte na *Ne*, aby uživatelé mohli uložit produkt bez zadání hodnoty tohoto atributu.</li></ul> |
 | Atribut dávky | Vyberte, zda se má atribut rozšířit prostřednictvím dávkové funkce. |
 
 ### <a name="readiness-policy-fasttab"></a>Záložka s náhledem Zásady připravenosti

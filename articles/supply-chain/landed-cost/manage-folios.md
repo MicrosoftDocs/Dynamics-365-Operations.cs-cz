@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575769"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570429"
 ---
 # <a name="manage-folios"></a>Správa folií
 
 [!include [banner](../../includes/banner.md)]
 
-Folio je často určeno celní předpisy. Může se skládat ze zboží jednoho dodavatele pro jednu entitu nebo společnost na zásilku. Zboží ve foliu může být v jednom kontejneru, nebo může být rozloženo mezi více kontejnerů.
+Folio je často určeno celní předpisy. Může se skládat ze zboží jednoho dodavatele pro jednu entitu nebo společnost na zásilku. Zboží ve foliu je spravováno v jednom kontejneru.
 
 Chcete-li otevřít stránku **Všechna folia** přejděte na **Náklady za doručení \> Folia \> Všechna folia**. Tato stránka zobrazuje seznam všech aktuálních folií. Pomocí tlačítek v podokně akcí můžete vytvářet či odstraňovat folia a pracovat s nimi. Vyberte jakékoli folio v seznamu a zobrazte jeho podrobnosti na stránce **Folia**.
 

@@ -2,7 +2,7 @@
 title: Modul platby
 description: Toto téma popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952462"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565722"
 ---
 # <a name="payment-module"></a>Platební modul
 
@@ -74,6 +74,8 @@ Následující obrázek ukazuje příklad prvku iframe PayPal vyvolaného pomoc�
 | Přepsání stylu platby | Kód kaskádových stylů (CSS) | Protože je platební modul hostován v prvku iframe, existuje omezená schopnost stylování. Pomocí této vlastnosti můžete dosáhnout určitého stylu. Chcete-li přepsat styly webů, musíte vložit CSS kód jako hodnotu této vlastnosti. Přepsání a styly CSS tvůrce stránek se na tento modul nevztahují. |
 |Podporované typy úhrad| Řetězec| Pokud je nakonfigurováno více konektorů platby, měli byste zadat řetězec podporovaného typu úhrady, jak je definován v konfiguraci konektoru platby v centrále Commerce (viz následující obrázek). Pokud je prázdný, použije se výchozí konektor platby Adyen. Přidáno v Comerce verze 10.0.14.|
 |Je primární platba|  **Pravda** nebo **nepravda** | Má-li hodnotu **Pravda**, jakékoli chybové zprávy budou generovány z primárního konektoru platby na stránce pokladny. Pokud jsou nakonfigurovány konektory platby Adyen i PayPal, nastavte Adyen na **Pravda**, což bylo přidáno ve verzi Commerce 10.0.14.|
+|Použít ID konektoru| **Pravda** nebo **Nepravda** | Tuto vlastnost použijte, pokud je pro web nakonfigurováno více platebních konektorů. Je-li nastavení **True**, konektory budou muset pro korelaci plateb používat ID konektoru.|
+|Použijte kód jazyka nastaveného v prohlížeči pro iFrame|  **Pravda** nebo **Nepravda** | (Pouze Adyen) Pokud je nastaveno **True**, Adyen iFrame vykreslí jazyk na základě kontextu prohlížeče uživatele webu namísto použití kódu jazyka komerčního kanálu nakonfigurovaného pro web. Přidáno v Comerce verze 10.0.27.|
 
 Následující obrázek ukazuje příklad hodnoty **Podporované typy úhrad** nastavené na „PayPal“ v konfiguraci konektoru platby v centrále Commerce.
 ![Příklad podporovaných typů úhrad v centrále Commerce.](./media/ecommerce-paymenttendertypes.png)

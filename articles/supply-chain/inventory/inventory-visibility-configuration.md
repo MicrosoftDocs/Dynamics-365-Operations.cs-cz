@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524514"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547781"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
@@ -51,9 +51,10 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 
 | Název ve Správě funkcí | Popis |
 |---|---|
-| OnHandReservation | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
-| OnHandMostSpecificBackgroundService | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | Tato funkce umožňuje plán změn na skladě a (volitelnou) funkci Lze slíbit (ATP). Další informace najdete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Tato funkce vám umožní vytvářet rezervace, spotřebovat rezervace a/nebo obnovit zadaná množství zásob pomocí Viditelnosti zásob. Další informace viz [Rezervace ve Viditelnosti zásob](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackgroundService* | Tato funkce poskytuje souhrn zásob produktů společně se všemi dimenzemi. Souhrnná data zásob budou pravidelně synchronizována z aplikace Viditelnost zásob. Další informace naleznete v tématu [Souhrn zásob](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Tato volitelná funkce umožňuje plán změn na skladě a funkci Lze slíbit (ATP). Další informace najdete v tématu [Plán změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md). |
+| *Povolte skladové položky ve viditelnosti zásob* | Tato volitelná funkce umožňuje viditelnosti zásob podporovat položky, které jsou povoleny pro pokročilé skladové procesy (položky WHS). Další informace viz [Podpora Viditelnost zásob pro položky WHS](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Vyhledání koncového bodu služby
 
@@ -61,7 +62,7 @@ Pokud neznáte správný koncový bod služby Viditelnost zásob, otevřete str�
 
 ## <a name="data-source-configuration"></a>Konfigurace zdroje dat
 
-Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „aplikace Dynamics 365 Finance a Operations“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
+Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „finanční a provozní aplikace Dynamics 365“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
 
 > [!NOTE]
 > Zdroj dat `fno` je vyhrazen pro Supply Chain Management. Pokud je váš doplněk Viditelnost zásob integrován s prostředím Supply Chain Management, doporučujeme neodstraňovat konfigurace související s `fno` ve zdroji dat.

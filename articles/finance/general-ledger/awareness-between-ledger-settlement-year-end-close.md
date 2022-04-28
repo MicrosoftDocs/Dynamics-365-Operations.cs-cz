@@ -2,7 +2,7 @@
 title: Sledování mezi vypořádáním hlavní knihy a uzávěrkou na konci roku
 description: Toto téma poskytuje informace o vylepšeních, která mají vliv na vypořádání hlavní knihy a na uzavření hlavní knihy na konci roku.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462345"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553325"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Sledování mezi vypořádáním hlavní knihy a uzávěrkou na konci roku
 
@@ -48,12 +48,16 @@ Na podporu nových vylepšení byly provedeny změny ve vyúčtování účetní
 
 Kvůli změnám ve funkčnosti a datovém modelu je důležité, abyste před aktivací funkce zvážili následující body:
 
+- Protože do počátečního zůstatku jsou převedeny pouze vypořádané transakce, musíte zrušit vypořádání transakcí z aktuálního fiskálního roku, které jsou vypořádány s transakcemi v předchozím fiskálním roce. Transakce musí být vypořádány proti transakcím v rámci aktuálního fiskálního roku. To lze provést prostřednictvím opravné položky v aktuálním fiskálním roce. Úprava ruší souhrnné počáteční zůstatky a kompenzace s podrobnou transakcí nutnou k vypořádání položek hlavní knihy v běžném roce. 
+
+  > [!IMPORTANT]
+  > Pokud tak neučiníte, obdržíte chybu **nevyrovnáno** při spuštění uzávěrky na konci roku pro aktuální fiskální rok. Pokud není možné zrušit a znovu vypořádat transakce hlavní knihy se stejným fiskálním rokem, povolte tuto funkci až po dokončení uzávěrky na konci roku. Aktivujte funkci ihned po dokončení uzávěrky na konci roku a před vypořádáním jakýchkoli nových transakcí hlavní knihy v příštím fiskálním roce. 
+  
 - Všechny transakce, které byly označeny k vypořádání, ale nebyly vypořádány, budou automaticky zrušeny, když je tato funkce povolena. Abyste předešli ztrátě práce, vyrovnejte všechny označené transakce, než funkci povolíte.
 - Některé organizace provádějí uzávěrku na konci roku vícekrát za stejný fiskální rok. Funkci nepovolujte, pokud uzávěrka na konci roku již jednou proběhla a bude spuštěna znovu pro stejný fiskální rok. Tato funkce musí být povolena před zpracováním první uzávěrky na konci roku nebo po zpracování poslední uzávěrky na konci roku pro fiskální rok.
 
   Pokud chcete funkci aktivovat, ale uzávěrka na konci roku již jednou proběhla, musíte před aktivací funkce vrátit uzávěrku na konci roku.
 
-- Vzhledem k tomu, že vypořádání mezi fiskálními roky již není povoleno, doporučujeme tuto funkci aktivovat před zahájením procesu uzavírání na konci roku. Poté, aby se zajistilo, že počáteční zůstatky příštího fiskálního roku nebudou ovlivněny předchozími vypořádáním napříč fiskálními roky, měla by být transakce počátečního zůstatku vypořádána za fiskální rok, který se uzavírá.
 - Protože vypořádání mezi hlavními účty již není povoleno, upravte svou účtovou osnovu nebo procesy podle potřeby, abyste zajistili, že vypořádání hlavní knihy bude možné provést na stejném hlavním účtu.
 - Tuto funkci nelze aktivovat, pokud se používá proces uzavření veřejného sektoru na konci roku.
 

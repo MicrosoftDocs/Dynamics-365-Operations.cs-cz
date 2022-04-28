@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413583"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603047"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Nakonfigurujte cíle ER pro záznamy pro správu tisku
 
@@ -35,7 +35,7 @@ Postupy lze provést v rámci společnosti USMF. Není nutné žádné kódován
 
 ## <a name="introduction"></a>Úvod
 
-Můžete konfigurovat [cíle](electronic-reporting-destinations.md) pro každou složku v souboru výstupní komponentu ER [formátu](general-electronic-reporting.md#FormatComponentOutbound) [konfigurace](general-electronic-reporting.md#Configuration), který se používá pro generování odchozích dokumentů. Když spustíte formát tohoto typu ER a máte příslušná přístupová práva, můžete také změnit nakonfigurované nastavení cíle za běhu.
+Můžete konfigurovat [cíle](electronic-reporting-destinations.md) pro každou složku v souboru výstupní komponentu ER [formátu](general-electronic-reporting.md) [konfigurace](general-electronic-reporting.md#Configuration), který se používá pro generování odchozích dokumentů. Když spustíte formát tohoto typu ER a máte příslušná přístupová práva, můžete také změnit nakonfigurované nastavení cíle za běhu.
 
 V Microsoft Dynamics 365 Finance **verze 10.0.17 a novější** může být kód akce [nastaven](er-apis-app10-0-17.md) pro formát ER ke specifikaci akce, kterou uživatelé provedou spuštěním daného formátu ER. Například v modulu **Pohledávky** v nastavení správy tisku můžete vybrat formát ER, který generuje konkrétní obchodní dokument, například fakturu s volným textem. Poté můžete vybrat **Zobrazit** k zobrazení náhledu faktury nebo **Vytisknout** pro odeslání na tiskárnu. Pokud je za běhu předána akce pro spuštěný formát ER, můžete [nakonfigurovat různé cíle ER pro různé akce uživatele](er-action-dependent-destinations.md).
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715223"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547975"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – ukončení podpory úložiště Lifecycle Services (LCS)
 
@@ -29,8 +29,8 @@ ms.locfileid: "7715223"
 Používání služby Microsoft Dynamics Lifecycle Services (LCS) jako úložiště pro konfigurace elektronického výkaznictví (ER) je označeno jako zastaralé. Toto rušení bude zahrnovat následující změny:
 
 - Konfigurace vyrobené společností Microsoft, které se používají v aplikacích Microsoft Dynamics 365, již nebudou publikovány do knihovny sdíleného materiálu v LCS. Místo toho budou publikovány pouze prostřednictvím globálního úložiště RCS. Konfigurace pro Dynamics AX 2012 však budou nadále publikovány v knihovně sdíleného materiálu v LCS až do konce podpory životního cyklu AX 2012.
-- Funkce, která vám umožní nahrát konfigurace do knihovny materiálů projektu v LCS z aplikací Finance and Operations a z RCS, bude deaktivována. Stále však budete moci použít prohlížeč v LCS k nahrání konfigurací do knihovny materiálů projektu. Proto budete i nadále moci přidávat konfigurace do LCS, aby je bylo možné zahrnout do balíčků řešení.
-- Import konfigurací z LCS bude i nadále k dispozici a po nějakou dobu podporován v aplikacích Finance and Operations a v RCS. Funkce však bude jednou ukončena. (Přesné datum ukončení podpory bude oznámeno později.)
+- Funkce, která vám umožní nahrát konfigurace do knihovny materiálů projektu v LCS z finančních a provozních aplikací a z RCS, bude deaktivována. Stále však budete moci použít prohlížeč v LCS k nahrání konfigurací do knihovny materiálů projektu. Proto budete i nadále moci přidávat konfigurace do LCS, aby je bylo možné zahrnout do balíčků řešení.
+- Import konfigurací z LCS bude i nadále k dispozici a po nějakou dobu podporován ve finančních a provozních aplikacích a v RCS. Funkce však bude jednou ukončena. (Přesné datum ukončení podpory bude oznámeno později.)
 
 ## <a name="deprecation-notice"></a>Oznámení o ukončení podpory
 
@@ -52,7 +52,7 @@ Importujte všechny požadované konfigurace z LCS do RCS a poté je publikujte 
 
 1. Pokud instance RCS již není k dispozici, vytvořte ji. Další informace naleznete v tématu [Přehled RCS](rcs-overview.md).
 2. Ve zřízené instanci RCS zaregistrujte pro každý projekt LCS v knihovně materiálů, která obsahuje odvozené konfigurace ER, příslušné úložiště LCS.
-3. Importujte konfigurace ER z úložišť LCS do RCS. Další informace získáte v tématu [Import konfigurací z LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Importujte konfigurace ER z úložišť LCS do RCS. Další informace získáte v tématu [Import konfigurací z LCS](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. Pokud není globální úložiště automaticky poskytováno, zaregistrujte jej v RCS.
 5. Nahrajte všechny odvozené konfigurace z aktuální instance RCS do globálního úložiště. Použijte funkci **Konfigurační balíčky**, která vám pomůže s nahráváním. Další informace najdete v článku [Nahrávání do globálního úložiště RCS](rcs-global-repo-upload.md).
 
@@ -73,7 +73,7 @@ Vizuální designéry v RCS používejte k následujícím účelům:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Znamená tato změna, že LCS nelze použít jako centrální úložiště pro konfigurace?
 
-Ano. Funkce, která vám umožní nahrát konfigurace do knihovny materiálů projektu v LCS z aplikací Finance and Operations a z RCS, bude vyřazena. Stále však budete moci použít prohlížeč v LCS k nahrání konfigurací do knihovny materiálů projektu podle potřeby.
+Ano. Funkce, která vám umožní nahrát konfigurace do knihovny materiálů projektu v LCS z finančních a provozoních aplikací a z RCS, bude vyřazena. Stále však budete moci použít prohlížeč v LCS k nahrání konfigurací do knihovny materiálů projektu podle potřeby.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Myslel jsem, že RCS je náhradní úložiště pro import souborů globálních šablon. Nemyslel jsem si, že se používá k ukládání konfigurací. Co je správně?
 
@@ -81,7 +81,7 @@ RCS je designová služba pro vytváření a úpravy konfigurací ER. RCS má vl
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Jaký je navrhovaný způsob ukládání konfigurací bez LCS, aby bylo možné snadno spravovat a přenášet „testovací“ a „produkční“ konfigurace?
 
-RCS používá koncept *připojené aplikace*. Připojená aplikace vytváří spojení mezi RCS a jakoukoli instancí aplikací Finance and Operations. Protože RCS lze použít k úpravám konfigurací, lze připojenou aplikaci použít k odeslání konfigurací přímo z návrháře do prostředí aplikací Finance and Operations. Proto můžete své konfigurace rychle změnit a otestovat, místo abyste museli procházet úložiště LCS na úrovni projektu.
+RCS používá koncept *připojené aplikace*. Připojená aplikace vytváří spojení mezi RCS a jakoukoli instancí finančních a provozních aplikací. Protože RCS lze použít k úpravám konfigurací, lze připojenou aplikaci použít k odeslání konfigurací přímo z návrháře do prostředí finančních a provozoních aplikací. Proto můžete své konfigurace rychle změnit a otestovat, místo abyste museli procházet úložiště LCS na úrovni projektu.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Existují nějaké příklady, které ukazují nastavení a správu?
 
@@ -104,4 +104,4 @@ Další informace o podpoře produktu viz [Přehled globalizačních služeb Dyn
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Jaké jsou náklady na používání RCS?
 
-RCS a globalizační úložiště jsou poskytovány zdarma jako součást stávajících licencí aplikace Finance and Operations. S používáním služby návrhu RCS nebo ukládáním konfigurací v globálním úložišti nejsou spojeny žádné samostatné náklady. V současné době není omezen počet konfigurací ani připojených aplikací.
+RCS a globalizační úložiště jsou poskytovány zdarma jako součást stávajících licencí finančních a provozoních aplikací. S používáním služby návrhu RCS nebo ukládáním konfigurací v globálním úložišti nejsou spojeny žádné samostatné náklady. V současné době není omezen počet konfigurací ani připojených aplikací.

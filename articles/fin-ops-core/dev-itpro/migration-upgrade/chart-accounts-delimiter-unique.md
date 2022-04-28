@@ -2,7 +2,7 @@
 title: Jak vytvořit jedinečný oddělovač účtové osnovy
 description: Toto téma vysvětluje, proč nemůžete mít stejný oddělovač pro účtovou osnovu a hodnoty dimenze. Po upgradu je třeba změnit hodnoty oddělovače.
 author: panolte
-ms.date: 03/23/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 433e9f8a7b0a9f476c74096a4bd7fef03c87dee1
-ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
+ms.openlocfilehash: 6081a62077f1fc6b6920991ed6faae667c25a47c
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468041"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573611"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Jak vytvořit jedinečný oddělovač účtové osnovy
 
 [!include [banner](../includes/banner.md)]
 
-V aplikaci Microsoft Dynamics AX 2012 můžete použít stejný oddělovač pro hodnoty účtové osnovy a dimenze. V aktuálních verzích Finance and Operations nemůžete mít stejný oddělovač pro účtovou osnovu a hodnoty dimenze. Pokud je duplicitní oddělovač, můžete ho změnit po upgradu. 
+V aplikaci Microsoft Dynamics AX 2012 můžete použít stejný oddělovač pro hodnoty účtové osnovy a dimenze. V aktuálních verzích finančních a provozních aplikací nemůžete mít stejný oddělovač pro účtovou osnovu a názvy či hodnoty dimenze. Pokud je duplicitní oddělovač, můžete ho změnit po upgradu. 
 
 ## <a name="update-delimiter"></a>Aktualizovat oddělovač
 Pokud je v konfliktu s účtovou osnovu, lze změnit formát oddělovače účetní osnovy a formát ID projektu/dílčího projektu. Žádné další oddělovače dimenze nelze změnit. 

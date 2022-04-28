@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349736"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550000"
 ---
 # <a name="commerce-analytics-preview"></a>Analytické nástroje Commerce (Preview)
 
@@ -352,15 +352,20 @@ Stránka **Sestava zobrazení** obsahuje následující metriky:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Povolit a nakonfigurovat analýzu Commerce (Preview)
 
-Chcete-li nainstalovat analýzu Commerce (Preview), musíte mít oprávnění k vytváření prostředků v předplatném Azure. Musíte mít také oprávnění k instalaci doplňků v LCS. 
+Chcete-li nainstalovat analýzu Commerce (Preview), musíte mít oprávnění k vytváření prostředků v předplatném Azure. Musíte mít také oprávnění k instalaci doplňků v LCS.
 
 Při povolení a konfiguraci doplňku analýzy Commerce (preview), postupujte následovně.
 
-1. [Povolte a konfigurujte doplněk Export do Data Lake](#enableExportToDataLake).
-1. [Nainstalujte a nakonfigurujte Azure Synapse workspace](#configureAzureSynapse).
-1. [Přidejte tajné kódy do trezoru klíčů](#addSecrets).
-1. [Povolit a nakonfigurovat doplněk analýzy Commerce (Preview)](#enableCommerceAnalyticsAddin).
-1. [Instalace aplikace šablony Power BI](#powerbi).
+1. [Odešlete formulář pro příjem Preview pro analýzu Commerce (Preview)](#joinPreview)
+2. [Povolte a konfigurujte doplněk Export do Data Lake](#enableExportToDataLake).
+3. [Nainstalujte a nakonfigurujte Azure Synapse workspace](#configureAzureSynapse).
+4. [Přidejte tajné kódy do trezoru klíčů](#addSecrets).
+5. [Povolit a nakonfigurovat doplněk analýzy Commerce (Preview)](#enableCommerceAnalyticsAddin).
+6. [Instalace aplikace šablony Power BI](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Odešlete formulář pro příjem Preview pro analýzu Commerce (Preview)
+
+Odešlete [formulář pro příjem Preview pro analýzu Commerce (Preview)](https://forms.office.com/r/vW5VLJGXZ2). Po zpracování vašeho požadavku bude na e-mailovou adresu, kterou jste uvedli ve formuláři, zaslán potvrzovací e-mail.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Povolení a konfigurace doplňku Export do Data Lake
 

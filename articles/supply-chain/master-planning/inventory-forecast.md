@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469363"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548160"
 ---
 # <a name="inventory-forecasts"></a>Prognózy zásob
 
@@ -39,7 +39,7 @@ Existují také další způsoby, jak vytvořit řádky prognózy:
 - [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md).
 - [Import historických dat pro prognózy poptávky](import-historical-data.md).
 - [Generování prognózy pomocí webové služby Microsoft Azure Machine Learning](demand-forecasting-setup.md).
-- [Import řádků prognózy poptávky nebo nabídky pomocí architektury pro správu dat (datové entity ForecastDemandForecastEntryStaging a ForecastSupplyForecastEntryStaging)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Import řádků prognózy poptávky nebo nabídky pomocí architektury pro správu dat (datové entity ForecastDemandForecastEntryStaging a ForecastSupplyForecastEntryStaging)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 Jak ukazuje tabulka v kroku 1, existují různé způsoby přístupu k použitým stránkám.
 
