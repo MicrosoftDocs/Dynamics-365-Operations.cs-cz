@@ -14,6 +14,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizace Platform Update pro verzi 10.0.27 (červenec 2022)
+                  href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Aktualizace Platform Update pro verzi 10.0.26 (květen 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Nástroj Platform Updates pro verzi 10.0.25 (duben 2022)
@@ -66,6 +68,8 @@
                   href: data-entities/odata.md
                 - name: Vlastní nasazení služby
                   href: data-entities/custom-services.md
+                - name: Sledování servisního požadavku
+                  href: data-entities/service-request-tracing.md
                 - name: Opakované integrace
                   href: data-entities/recurring-integrations.md
                 - name: Testovací služby pomocí nástrojů třetích stran
@@ -1714,6 +1718,22 @@
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Upgrade plánování rozpočtu
                       href: migration-upgrade/upgrade-budget-planning.md
+                - name: Řešení potíží s upgradem
+                  items:
+                    - name: Řešení potíží s vývojovými prostředími během upgradu
+                      href: migration-upgrade/troubleshoot-dev-env.md
+                    - name: Řešení potíží s upgrady na samoobslužná prostředí
+                      href: migration-upgrade/troubleshoot-self-service-env.md
+                    - name: Řešení potíží se skripty upgradu PreSync a PostSync
+                      href: migration-upgrade/pre-post-upgrade-scripts.md
+                - name: Operace prostředí
+                  items:
+                    - name: Migrace příloh dokumentů
+                      href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+                    - name: Vyčištění zdrojových dat pro upgrade
+                      href: migration-upgrade/clean-up-source-data-upgrade.md
+                    - name: Komprimace tabulek v prostředích Dynamics AX 2012
+                      href: migration-upgrade/compress-tables-ax-2012.md
             - name: Migrace dat z AX 2009
               items:
                 - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
@@ -2000,3 +2020,5 @@
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../../human-resources/index.md

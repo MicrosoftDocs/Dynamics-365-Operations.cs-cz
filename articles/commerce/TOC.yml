@@ -12,14 +12,12 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (červenec 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (květen 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (duben 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (únor 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (leden 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Konfigurace DPH pro online objednávky
                           href: sales-tax-config.md
+                        - name: Skrytí informací o daňovém rozdělení v souhrnech objednávek
+                          href: hide-taxes-breakup.md
                     - name: Nastavení profilu oznámení e-mailem
                       href: email-notification-profiles.md
                     - name: Číselné řady
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Průvodce implementací správy zařízení
                       href: implementation-considerations-devices.md
-                    - name: Výběr mezi MPOS a Cloud POS
+                    - name: Výběr mezi Store Commerce a Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Online a offline POS operace
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: "Vytváření finančních dimenzí pro maloobchodní sítě a\_konfigurace hodnot v\_obchodech"
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Nastavení číselných řad pro výkazy maloobchodu
+                  href: retail-statements-number-sequences.md
                 - name: Povolení konzistentního zpracování režimu doručení v kanálech elektronického obchodování
                   href: consistent-delivery-mode-handling.md
             - name: Nastavení online kanálu
@@ -884,6 +886,8 @@
           items:
             - name: Přehled výkazů
               href: retail-statements.md
+            - name: Parametry zaúčtování v Commerce
+              href: commerce-posting-parameters.md
             - name: Ověření transakcí obchodu pro výpočet výkazu
               href: valid-checker.md
             - name: Zákaz pravidel v kontrole konzistence maloobchodních transakcí
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Instalace tématu Adventure Works
                       href: install-adventure-works.md
+                - name: Průvodce lokalizací aplikace Commerce
+                  href: e-commerce-localization-guide.md
             - name: Správa digitálních aktiv
               items:
                 - name: Přehled správy digitálních aktiv
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Nastavení omezení množství produktů pro weby elektronického obchodu B2B
               href: b2b/quantity-limits.md
+            - name: Katalogy Commerce pro B2B weby
+              items:
+                - name: Vytvoření katalogů Commerce pro B2B weby
+                  href: catalogs-b2b-sites.md
+                - name: Dopad na rozšiřitelnost katalogů Commerce pro přizpůsobení B2B
+                  href: catalogs-b2b-sites-dev.md
+                - name: Nejčastější dotazy ke katalogům Commerce
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Monitorování a analýza
           items:
             - name: Monitorování výkonnosti prodeje a marží
@@ -2474,13 +2488,17 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: Bezobslužná aplikace Commerce
               items:
+                - name: Přehled
+                  items:
+                    - name: Úvod do základů Commerce Scale Unit (CSU)
+                      href: dev-itpro/CSU-core.md
                 - name: Rozhraní API a reference
                   items:
                     - name: Zákazník Commerce Scale Unit s rozhraní API spotřebitele
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Spotřeba rozhraní API Retail Serveru v externích aplikacích
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Retail Typescript a C# proxy pro Retail POS
+                    - name: TypeScript a C# proxy pro Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: Architektura a konfigurace Commerce Runtime (CRT)
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2528,6 +2546,8 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: "Balíček a\_nasazení"
                   items:
+                    - name: Vytvoření balíčku rozšíření Cloud Scale Unit
+                      href: dev-itpro/CSU-packaging.md
                     - name: Odebrání rozšíření Cloud Scale Unit
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Migrace rozšíření POS do Commerce SDK
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Ladění rozšíření Store Commerce pomocí VS Code
+                      href: dev-itpro/sc-debug.md
                 - name: Nastavení prostředí
                   items:
                     - name: Místní vývojové prostředí
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Vytvoření balíčku rozšíření Cloud POS
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Vytvoření instalačního balíčku rozšíření Store Commerce
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: Elektronické obchodování
               items:
                 - name: Přehled
@@ -2814,8 +2838,12 @@
                       items:
                         - name: Protokolovací nástroj telemetrie
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
+                - name: Rozšíření balíčku CDX
+                  items:
+                    - name: Rozšíření zákaznického balíčku CDX pro přidání vlastních dat
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: "Balíček a\_nasazení"
                   items:
                     - name: Vytvoření balíčku plateb Commerce pro nasazení ve finančních a provozních aplikacích

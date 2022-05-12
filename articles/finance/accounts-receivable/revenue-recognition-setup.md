@@ -2,7 +2,7 @@
 title: Nastavení uznání výnosů
 description: Toto téma popisuje možnosti nastavení pro uznání výnosů a jejich dopady.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867213"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656714"
 ---
 # <a name="revenue-recognition-setup"></a>Nastavení uznání výnosů
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Zadejte popisné hodnoty do polí **Plán výnosů** a **Popis**. Následující
     - **Výskyty** – Částka je přidělena rovnoměrně mezi výskyty, ale může zahrnovat období navíc, pokud jako způsob uznání vyberete **Skutečné počáteční datum**.
     - **Fiskální období podle dnů** – Částka je přidělena na základě skutečných dnů v každém fiskálním období. 
 
-    Výsledky možností **Měsíčně podle dnů** a **Fiskální období podle dnů** budou stejné, když fiskální období odpovídají kalendářním měsícům. Jedinou výjimkou je, když je způsob uznání nastaven na **Konec měsíce/období** a pole **Počáteční datum smlouvy** a **Koncové datum** pole jsou na řádku prodejní objednávky prázdná.
+         - Výsledky možností **Měsíčně podle dnů** a **Fiskální období podle dnů** budou stejné, když fiskální období odpovídají kalendářním měsícům. Jedinou výjimkou je, když je způsob uznání nastaven na **Konec měsíce/období** a pole **Počáteční datum smlouvy** a **Koncové datum** pole jsou na řádku prodejní objednávky prázdná.
 
 - **Způsob uznání** – Způsob uznání určuje data, která jsou nastavena v plánu výnosů pro fakturu.
 
@@ -108,7 +108,7 @@ Zadejte popisné hodnoty do polí **Plán výnosů** a **Popis**. Následující
     - **Prvního v měsíci/období** – Datum v prvním řádku plánu je datum zahájení smlouvy (nebo datum fakturace). Všechny následující řádky plánů jsou však vytvořeny pro prvního v měsíci nebo fiskálním období.
     - **Rozdělení v polovině měsíce** – Datum v prvním řádku plánu závisí na datu fakturace. Pokud je faktura zaúčtována mezi prvním až patnáctým dnem v měsíci, vytvoří se plán výnosů pomocí prvního dne v měsíci. Pokud je faktura zaúčtována šestnáctého a později, vytvoří se plán výnosů pomocí prvního dne v následujícím měsíci.
 
-        **Rozdělení v polovině měsíce** nelze vybrat, pokud je základ uznání nastaven na **Fiskální období podle dnů**.
+        - **Rozdělení v polovině měsíce** nelze vybrat, pokud je základ uznání nastaven na **Fiskální období podle dnů**.
 
     - **První den v následujícím měsíci/období** – Datum začátku plánu je první den následujícího měsíce nebo fiskálního období.
     - **Konec měsíce/období** – Datum v prvním řádku plánu je datum zahájení smlouvy (nebo datum fakturace). Všechny následující řádky plánu jsou však vytvořeny pro poslední den měsíce nebo fiskálního období. 

@@ -12,14 +12,12 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Supply Chain Management"
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (červenec 2022)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (květen 2022)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (duben 2022)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (únor 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (leden 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Odstraněné nebo zastaralé funkce
               items:
                 - name: Domovská stránka odstraněných nebo zastaralých funkcí
@@ -1719,14 +1717,12 @@
                   href: inventory/inventory-visibility-tips.md
         - name: Inteligence IoT
           items:
-            - name: Domovská stránka Inteligence IoT
+            - name: Domovská stránka IoT Intelligence
               href: iot/iot-intelligence-home-page.md
             - name: Nastavení zdrojů Azure
               href: iot/iot-azure-setup.md
             - name: Formáty schémat zpráv pro centrum IoT
               href: iot/iot-schema-format.md
-            - name: Instalace doplňku v LCS
-              href: iot/iot-lcs-setup.md
             - name: Nastavení metrik
               href: iot/iot-metrics-setup.md
             - name: Nastavení scénáře
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Jak pracovníci používají rozhraní pro provádění výrobního provozu
                   href: production-control/production-floor-execution-use.md
+                - name: Zobrazení zůstatku dovolené v rozhraní pro provádění výrobního provozu
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Vytvoření rozhraní pro provádění výrobního provozu
                   href: production-control/production-floor-execution-styles.md
                 - name: Vlastní nastavení rozhraní pro provádění výrobního provozu

@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo v\_aplikaci Finance"
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.27 (červenec)
+                  href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (květen)
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (duben)
@@ -412,6 +414,8 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Opakovaná fakturace smlouvy
                   items:
+                    - name: Nastavení opakovaného účtování kontaktů
+                      href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Vytvoření plánů fakturace
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopírování plánu fakturace
@@ -420,22 +424,26 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Vyúčtování po milnících
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Přidělení výnosu
+                      href: accounts-receivable/sb-rev-allocation.md
                     - name: Proces podpory a obnovení
                       href: accounts-receivable/sb-support-renewals.md
+                    - name: Nevyfakturované výnosy
+                      href: accounts-receivable/sb-unbilled-revenue.md
                     - name: Plány indexu spotřebitelských cen
                       href: accounts-receivable/cpischedules.md
                     - name: Ukončení plánů fakturace
                       href: accounts-receivable/terminate-billing-schedule.md
+                    - name: Scénáře data vyrovnání
+                      href: accounts-receivable/sb-alignment-date-examples.md
                 - name: Časové rozlišení výnosů a výdajů
                   items:
                     - name: Nastavení časového rozlišení výnosů a výdajů
                       href: accounts-receivable/sb-deferrals.md
-                    - name: Plány odkladu
-                      items:
-                        - name: Vytvoření plánů odkladů
-                          href: accounts-receivable/sb-deferrals-schedules.md
-                        - name: Odložené výchozí transakce
-                          href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Vytvoření plánů odkladů
+                      href: accounts-receivable/sb-deferrals-schedules.md
+                    - name: Odložené výchozí transakce
+                      href: accounts-receivable/sb-deferral-transactions.md
                 - name: Víceprvkové přidělení výnosů
                   items:
                     - name: Nastavit víceprvkové přidělení výnosů
@@ -1429,7 +1437,7 @@
                             - name: Nastavení zdrojů Azure pro elektronickou fakturaci
                               href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
                             - name: Vytvoření Azure Key Vault na Azure Portal
-                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
                             - name: Vytvoření účtu úložiště Azure na Azure Portal
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: Konfigurace připojení SharePointu
@@ -1460,6 +1468,8 @@
                           href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
                         - name: Sdílení s ostatními organizacemi
                           href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Řídicí panel správy využití
+                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                         - name: Zpracování příchozích elektronických dokumentů
                           items:
                             - name: Zpracování příchozích elektronických dokumentů
@@ -1468,12 +1478,12 @@
                               href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
                             - name: Konfigurace kanálu SharePointu
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
-                        - name: Nastavení a použití elektronické fakturace s Finance a Supply Chain Management
-                          items:
-                            - name: Aktivace a nastavení integrace s elektronickou fakturací
-                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                            - name: Nastavení parametrů elektronické fakturace
-                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Nastavení a použití elektronické fakturace s Finance a Supply Chain Management
+                      items:
+                        - name: Aktivace a nastavení integrace s elektronickou fakturací
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Nastavení parametrů elektronické fakturace
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Práce s elektronickou fakturací
                           items:
                             - name: Odeslání elektronických dokumentů do elektronické fakturace
@@ -1486,15 +1496,9 @@
                       items:
                         - name: Dostupnost funkcí elektronické fakturace
                           href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-                        - name: Začínáme se správou služby elektronické fakturace
-                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: "Začínáme s\_elektronickou fakturací"
-                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Vytvoření nové funkce elektronické fakturace
-                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
-                        - name: "Začínáme s\_elektronickou fakturací pro Brazílii"
+                        - name: Začínáme s elektronickou fakturací pro Brazílii
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: "Začínáme s\_elektronickou fakturací pro Egypt"
+                        - name: Začínáme s elektronickou fakturací pro Egypt
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Začínáme s elektronickou fakturací pro Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
@@ -1504,10 +1508,6 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Použití služby elektronické fakturace k importu faktur dodavatele
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: Nastavení elektronické fakturace
-                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Reference správce modulu plug-in Power Platform
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: "Časté otázky k\_elektronické fakturaci"
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Výpočet daně
@@ -1618,6 +1618,12 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Prázdný seznam daňových funkcí v parametrech výpočtu daně
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                        - name: Daňový kód nelze určit
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                        - name: Nelze nalézt žádné odpovídající výsledky
+                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                        - name: Povolení režimu ladění ve službě výpočtu daně
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: Časté dotazy k výpočtu daně
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Daň
@@ -3725,6 +3731,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Výkon prodeje a ziskovosti
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                - name: Obsah Power BI fakturace předplatného
+                  href: accounts-receivable/sub-bill-power-bi.md
                 - name: Platby dodavatelů
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: Metriky zaměstnanců
