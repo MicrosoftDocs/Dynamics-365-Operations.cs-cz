@@ -2,7 +2,7 @@
 title: Přehled kontroly rozpočtu
 description: Toto téma představuje funkci kontroly rozpočtu a poskytuje informace, které vám pomohou nakonfigurovat kontrolu rozpočtu tak, aby optimalizovala správu finančních zdrojů vaší organizace.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986049"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644838"
 ---
 # <a name="budget-control-overview"></a>Přehled kontroly rozpočtu
 
@@ -31,7 +31,7 @@ ms.locfileid: "7986049"
 
 Toto téma představuje funkci kontroly rozpočtu a poskytuje informace, které vám pomohou nakonfigurovat kontrolu rozpočtu tak, aby optimalizovala správu finančních zdrojů vaší organizace.
 
-Kontrola rozpočtu podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, workflowů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
+Kontrola rozpočtu podporuje správu finančních prostředků v organizaci prostřednictvím účtové osnovy, pracovních postupů, skupin uživatelů, zdrojových dokumentů a deníků, konfigurovatelného výpočtu dostupných finančních prostředků, rozpočtových cyklů a prahových hodnot. Když jsou prvky řízení zavedené, organizace může plánovat, měřit, spravovat a předvídat své finanční prostředky během celého fiskálního roku. 
 
 Po schválení rozpočtů v systému můžete použít plány rozpočtu ke generování položek registru rozpočtu pro zaznamenání rozpočtu výdajů pro organizaci. Případně můžete vytvořit nebo importovat položky registru rozpočtu z programu třetí strany namísto použití funkce plánování rozpočtu. 
 
@@ -80,7 +80,9 @@ Na kartě **Dostupné rozpočtové prostředky** můžete definovat vzorec, kter
 > [!NOTE]
 > Pokud je tento výpočet po upraven během rozpočtového cyklu, tyto změny neovlivní žádné dokumenty, které dříve prošly kontrolami rozpočtu a které byly zaúčtovány či dokončeny. Funkce, která je pojmenována **Sledovat pouze částky ve výpočtu dostupných rozpočtových prostředků** umožňuje změnit, která data jsou sledována v tabulkách BudgetSourceTracking. Když je tato funkce zapnutá, částky se ukládají, pouze pokud jsou vybrány pro použití ve výpočtu dostupných rozpočtových prostředků. Další informace naleznete v tématu [Dostupné rozpočtové prostředky](budget-funds-available.md).
 
-Na kartě **Dokumenty a deníky** můžete vybrat, které zdrojové dokumenty a deníky budou podrobeny kontrole rozpočtu a zda ke kontrole dojde na úrovni položky řádku nebo celého dokumentu. 
+### <a name="documents-and-journals"></a>Dokumenty a deníky
+
+Na kartě **Dokumenty a deníky** můžete vybrat, které zdrojové dokumenty a deníky budou podrobeny kontrole rozpočtu a zda ke kontrole dojde na úrovni položky řádku nebo celého dokumentu. Navíc nová funkce **Vylepšení filtrování dokumentů kontroly rozpočtu**, která je k dispozici počínaje Microsoft Dynamics 365 Finance verze 10.0.27, poskytuje možnost filtru založeného na dotazech pro každý dokument, který je součástí řízení rozpočtu. Můžete tedy určit, které doklady kontroly rozpočtu budou kontrolovány. Tímto způsobem funkce umožňuje kontrolu rozpočtu pouze u podmnožiny typů dokladu. Můžete například zkontrolovat pouze nákupní objednávky, kde je pole **Fond** nastaveno na **01**. Nový sloupec přidaný na kartě **Dokumenty a deníky** udává, zda je pro vybraný typ dokumentu definován dotaz. Kromě toho dvě nová tlačítka, která jsou přidána do panelu nástrojů nad mřížkou dokumentu, umožňují přidat, upravit nebo odstranit filtrování. 
 
 Měli byste spárovat zdrojové dokumenty, které jsou vybrány zaškrtávacími políčky pro zůstatky zahrnuté ve výpočtu dostupných rozpočtových prostředků. Pokud vyberete například položku **Rezervace rozpočtu pro břemena**, měli byste vybrat možnost **Nákupní objednávky**. Při provádění kontroly rozpočtu pro částky a účty v nákupním řádku je k rezervaci přiřazena kategorie kontroly rozpočtu **Břemeno**. Když je kontrola rozpočtu prováděna z hlediska částek a účtů na nákupní žádance, kategorie kontroly rozpočtu přiřazená k rezervaci bude **Předběžné břemeno**. 
 

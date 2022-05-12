@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749045"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629404"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatelů pomocí návrhu platby
 
@@ -48,7 +48,7 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 - **Zahrnout faktury dodavatelů od ostatních právnických osob** - Pokud má vaše organizace centralizované zpracování plateb a návrh platby by měl mít zahrnuté faktury od ostatních právnických osob, které jsou zahrnuty do kritérií hledání, nastavte tuto možnost na **Ano**.
 - **Navrhnout samostatnou platbu dodavatele za každou právnickou osobu** – je-li tato možnost nastavena na **Ano**, pro každou právnickou osobu u každého dodavatele je vytvořena samostatná platba. Dodavatele u platby je dodavatelem z faktury od každé právnické osoby. Pokud je tato možnost nastavena na **Ne** a stejný dodavatel má faktury z více právnických osob, bude vytvořena jediná platba na celkovou částku vybraných faktur. Dodavatel pro platbu je dodavatel od aktuální právnické osoby. Pokud účet dodavatele u aktuální právnické osoby neexistuje, bude použit účet dodavatele pro první splatnou fakturu.
 - **Měna platby** – toto pole specifikuje měnu, ve které jsou vytvořeny všechny platby. Pokud není měna definována, každý faktura je zaplacena v měně faktury.
-- **Den v týdnu pro platbu** – zadejte den v týdnu, kdy bude provedena platba. Toto pole se používá pouze v případě, že je metoda nastavena na celkové faktury k platbě pro určitý den v týdnu.
+- **Den v týdnu pro platbu** – Zadejte den v týdnu, kdy má být platba provedena, toto pole se používá pouze v případě, že je nastaven způsob platby **Týden**. Částky faktur k platbě jsou sečteny v určený den v týdnu k platbě.
 - **Typ protiúčtu** a **Protiúčet** – tato pole nastavte, pokud chcete definovat určitý typ účtu (například **Hlavní kniha** nebo **Banka**) a protiúčet (například konkrétní bankovní účet). Metoda platby pro fakturu definuje výchozí typ protiúčtu a protiúčet, ale můžete přepsat výchozí hodnoty těchto polí.
 - **Souhrnné datum platby** – Používá se pouze v případě, kdy je pole **Období** u způsobu platby nastaveno na hodnotu **Celkem**. Pokud je definováno datum, jsou vytvořeny všechny platby k tomuto datu. Pole **Minimální datum platby** je ignorováno.
 - **Další filtry** – Na pevné záložce **Záznamy**, které chcete zahrnout můžete definovat další rozsahy kritérií. Například pokud chcete zaplatit pouze pro určitý rozsah dodavatelů, můžete definovat filtr pro rozsah dodavatelů. Tato funkce se často používá k výběru faktur pro konkrétní platební metodu. Například můžete definovat filtr, kde **Způsob platby** = **Kontrola** a pouze faktury, které mají tento způsob platby, budou vybrány pro platbu, za předpokladu, že splňují také jiná kritéria zadaná v dotazu.

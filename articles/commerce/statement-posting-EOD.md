@@ -2,19 +2,19 @@
 title: Vylepšení funkcionality zaúčtování výkazů
 description: Toto téma popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
 author: analpert
-ms.date: 01/31/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: d7c7c330695cbcd18a44db5b3f4e28411d8de4f3
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462543"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649012"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
@@ -51,25 +51,6 @@ Jako součást vylepšení funkce zaúčtování výkazu byly zavedeny tři nov�
 
 > [!NOTE]
 > Od vydání Commerce verze 10.0.14 platí, že když je povolena funkce **Výkazy maloobchodu – Postupné**, dávková úloha **Zaúčtovat zásoby** již není použitelná a nelze ji spustit.
-
-Dále byly zavedeny následující parametry na pevné záložce **Dávkové zpracování** na kartě **Zaúčtování** stránky **Parametry Commerce**: 
-
-- **Maximální počet zaúčtování paralelních výkazů** – Toto pole definuje počet dávkových úloh, které budou použity při zaúčtování více výkazů. 
-- **Maximální počet vláken pro zpracování objednávky podle výkazu** – Toto pole představuje maximální počet vláken, které používá dávková úloha zaúčtování výkazu k vytvoření a fakturaci prodejních objednávek pro jeden výkaz. Celkový počet vláken, která budou použita procesem zaúčtování výkazu, bude vypočten na základě hodnoty v tomto parametru vynásobené hodnotou v parametru **Maximální počet zaúčtování paralelních příkazů**. Nastavení příliš vysoké hodnoty tohoto parametru může negativně ovlivnit výkon procesu zaúčtování výkazu.
-- **Maximální počet řádků transakce zahrnutých do agregace** – Toto pole definuje počet řádků transakce, které budou zahrnuty do jedné agregované transakce před vytvořením nové. Agregované transakce jsou vytvářeny na základě různých agregačních kritérií, jako je například odběratel, obchodní datum nebo finanční dimenze. Je důležité si uvědomit, že řádky z jedné transakce nebudou rozděleny mezi různé agregované transakce. To znamená, že je možné, že počet řádků v agregované transakci je o něco vyšší nebo nižší podle faktorů, jako je například počet různých produktů.
-- **Maximální počet vláken pro ověření transakcí obchodu** – Toto pole definuje počet vláken, která budou použita k ověření transakcí. Ověření transakcí je povinný krok, ke kterému musí dojít předtím, než mohou být transakce načteny do výkazů. Je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry Commerce**. Je nutné to definovat i v případě, že organizace nepoužívá dárkové poukazy.
-
-V následující tabulce jsou uvedeny doporučené hodnoty pro předchozí parametry. Tyto hodnoty by měly být otestovány a přizpůsobeny konfiguraci nasazení a dostupné infrastruktuře. Jakékoli zvýšení doporučených hodnot může nepříznivě ovlivnit jiné dávkové zpracování a mělo by být ověřeno.
-
-| Parametr | Doporučená hodnota | Podrobnosti |
-|-----------|-------------------|---------|
-| Maximální počet zaúčtování paralelních příkazů | <p>Nastavte tento parametr na počet dávkových úloh, které jsou dostupné pro skupinu dávek, která provádí úlohu **Výpis**.</p><p>**Obecné pravidlo:** Vynásobte počet virtuálních serverů AOS počtem dávkových úloh, které jsou k dispozici na virtuálním serveru AOS.</p> | Tento parametr nelze použít, když je povolena funkce **Výkazy maloobchodu – Postupné**. |
-| Max. počet vláken pro zpracování objednávky na jeden výkaz | Začněte testovat hodnoty od **4**. Obvykle by tato hodnota neměla překročit **8**. | Tento parametr určuje počet vláken, která se používají k vytvoření a zaúčtování prodejních objednávek. Představuje počet vláken, která jsou k dispozici pro zaúčtování na jeden výpis. |
-| Max. počet řádků transakcí v rámci agregace | Začněte testovat hodnoty od **1000**. V závislosti na konfiguraci centrály mohou být z hlediska výkonu výhodnější menší objednávky. | Tento parametr určuje počet řádků, které budou zahrnuty do každé prodejní objednávky během účtování výpisu. Po dosažení tohoto počtu budou řádky rozděleny do nové objednávky. Přestože počet prodejních řádků nebude přesný, protože k rozdělení dochází na úrovni prodejní objednávky, bude se blížit nastavenému počtu. Tento parametr se používá ke generování prodejních objednávek pro maloobchodní transakce, které nemají pojmenovaného zákazníka. |
-| Maximální počet vláken pro ověření transakcí obchodu | Doporučujeme nastavit tento parametr na **4** a zvýšit ho pouze v případě, že nedosáhnete přijatelného výkonu. Počet vláken, která tento proces používá, nemůže překročit počet procesorů, které jsou dostupné pro dávkový server. Pokud zde přiřadíte příliš mnoho vláken, můžete ovlivnit další dávkové zpracování. | Tento parametr řídí počet transakcí, které lze pro daný obchod současně ověřit. |
-
-> [!NOTE]
-> Všechna nastavení a parametry související se zaúčtováním výkazu, které jsou definovány v obchodech a na stránce **Parametry Commerce**, se vztahují na vylepšenou funkci zaúčtování výkazu.
 
 ## <a name="processing"></a>Zpracování
 

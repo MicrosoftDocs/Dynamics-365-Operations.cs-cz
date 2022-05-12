@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
+ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469806"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648702"
 ---
 # <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
@@ -40,7 +40,7 @@ Než zapnete optimalizaci plánování, důrazně doporučujeme, abyste vyhodnot
 
 ## <a name="availability"></a>Dostupnost
 
-Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Evropa, Spojené království, Austrálie, Asie a Tichomoří, Japonsko a Indie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována. Další informace o geografických oblastech Azure a souvisejících oblastech najdete v tématu [Geografické oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Optimalizace plánování je v současné době k dispozici v následujících geografických oblastech Azure: USA, Kanada, Brazílie, Evropa, Spojené království, Austrálie, Asie a Tichomoří, Japonsko a Indie. Pokud se pokusíte nainstalovat doplněk z jiné geografické oblasti, LCS zobrazí zprávu, že tato geografická oblast není podporována. Další informace o geografických oblastech Azure a souvisejících oblastech najdete v tématu [Geografické oblasti Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Všimněte si, že optimalizace plánování nepodporuje místní nasazení Dynamics 365 Supply Chain Management.
 

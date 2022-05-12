@@ -2,7 +2,7 @@
 title: Možnosti mřížky
 description: Toto téma popisuje několik výkonných funkcí ovládacího prvku mřížky. Chcete-li mít přístup k těmto funkcím, je nutné povolit novou funkci mřížky.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602955"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644350"
 ---
 # <a name="grid-capabilities"></a>Možnosti mřížky
 
@@ -106,7 +106,7 @@ Chcete-li použít tuto funkci, klikněte pravým tlačítkem na sloupec, podle 
 - Počet datových řádků v této skupině
 - Mezisoučty pro všechny sloupce konfigurované pro zobrazení součtů
 
-Pokud jsou povolena [uložená zobrazení](saved-views.md), lze toto seskupení uložit přizpůsobením jako součást zobrazení pro rychlý přístup při další návštěvě stránky.
+Pokud je povolena funkce [Uložená zobrazení](saved-views.md), můžete uložit seskupení jako součást zobrazení na stránkách, které umožňují ukládání dotazů do zobrazení. Například u těch s voliči velkých zobrazení. Další informace naleznete v části [Přepínání mezi zobrazeními](saved-views.md#switching-between-views). 
 
 ### <a name="multiple-levels-of-grouping"></a>Více úrovní seskupení
 Poté, co seskupíte data podle jednoho sloupce, můžete data seskupit podle jiného sloupce výběrem možnosti **Seskupit podle tohoto sloupce** na požadovaném sloupci. Tento proces lze opakovat, dokud nemáte 5 vnořených úrovní seskupení, což je maximální podporovaná hloubka. V tomto okamžiku již nebudete moci seskupovat podle dalších sloupců.

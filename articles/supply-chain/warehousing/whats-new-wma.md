@@ -2,7 +2,7 @@
 title: Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 description: Toto téma uvádí nové a změněné funkce pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487829"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644725"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20210"></a>Verze 2.0.21.0
+
+Tato verze představuje následující nové funkce, opravy a vylepšení:
+
+- Opraveno několik případů ukončení aplikace.
+- Byl opraven problém, kdy při skenování nebo psaní na výchozí stránce nebyly rozpoznány některé znaky.
+- Byl opraven problém, kdy při zadání klávesy backspace na výchozí stránce došlo k odstranění dvou znaků najednou.
+- Byl opraven problém, kdy pole **Řadit podle** na stránce **Pracovní seznam** zobrazuje nesprávnou hodnotu, která neodpovídá skutečnému pořadí řazení karet.
+- Byl opraven problém, kdy se po změně velikosti okna aplikace při spuštění zobrazovalo nesprávné rozvržení Microsoft Windows.
+- Byl opraven problém, kdy posouvání ve vyskakovacím seznamu mohlo způsobit, že některé položky seznamu zůstaly skryté nebo se zdeformovaly.
+- Přihlašovací stránka byla přepracována tak, aby se při spuštění na větších displejích zobrazovala pole uživatelského jména a hesla na stejné stránce.
+- Byl vylepšen způsob, jakým ovládací prvky reagují na rychlé klepnutí.
+- Bylo přidáno zobrazení protokolu chyb v aplikaci.
+- Bylo přidáno několik vylepšení usnadnění přístupu (vylepšené vyprávění, opraveny chybějící zástupné symboly Android, povolený vstup z klávesnice pro ovládání posuvníku a další).
 
 ## <a name="version-20200"></a>Verze 2.0.20.0
 

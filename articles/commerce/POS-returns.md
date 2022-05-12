@@ -2,24 +2,20 @@
 title: Vytvoření vrácení v POS
 description: Toto téma popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349684"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648981"
 ---
 # <a name="create-returns-in-pos"></a>Vytvoření vrácení v POS
 
@@ -107,9 +103,64 @@ Následující seznam uvádí minimální požadavky na verzi pro různé souč�
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Povolení správného výpočtu daně pro vrácení s částečným množstvím
 
 Tato funkce zajišťuje, že při vrácení objednávky s použitím více faktur se daně nakonec budou rovnat původně účtované částce daně.
-1.  Přejděte do pracovního prostoru **Správa funkcí** a vyhledejte možnost **Povolení správného výpočtu daně pro vrácení s částečným množstvím**.
-2.  Vyberte **Povolení správného výpočtu daně pro vrácení s částečným množstvím** a poté klikněte na **Povolit**.
 
+1. V pracovním prostoru **Správa funkcí** vyhledejte možnost **Povolení správného výpočtu daně pro vrácení s částečným množstvím**.
+1. Vyberte funkci **Povolení správného výpočtu daně pro vrácení s částečným množstvím** a poté vyberte **Povolit**.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Nastavení skladových umístění vratek v maloobchodech
+
+Commerce vám umožní nastavit skladová umístění vratek, která jsou založena na maloobchodních informačních kódech a kódech důvodu z oblasti prodeje a marketingu. Pokladníci často udávají důvod vrácení nákupu zákazníkem. Můžete určit, že vrácené produkty budou přiřazeny do různých míst pro vrácení ve skladu, v závislosti na odpovědi pokladníka na informační kódy a kódy důvodu, které pokladníci vyberou v pokladně.
+
+Zákazník například vrátí vadný produkt a pokladní zpracuje transakci vrácení. Když Retail POS zobrazí informační kód pro vratky, pokladník vybere dílčí kód pro vadné vratky. Vrácený produkt je pak automaticky přiřazen ke konkrétnímu místu vrácení.
+
+Místo pro vrácení může být obchod, sklad, umístění v obchodě nebo skladu nebo dokonce konkrétní paleta, v závislosti na skladových místech, která vaše organizace nastavila. Každé místo pro vrácení lze mapovat na jeden nebo více maloobchodních informačních kódů a kódů důvodu prodeje a marketingu.
+
+### <a name="prerequisites"></a>Předpoklady
+
+Dříve než lze vytvořit skladová místa pro vratky, je nutné nastavit následující prvky:
+
+- **Maloobchodní informační kódy** – výzvy v pokladně POS, které jsou nastaveny v modulu **Maloobchod**. Další informace naleznete v tématu [Nastavení informačních kódů](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Kódy důvodu pro prodej a marketing** – výzvy v pokladně POS, které jsou nastaveny v modulu **Prodej a marketing**. Další informace naleznete v tématu [Nastavení kódů důvodu](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Skladová místa** – místa, ve kterých jsou ukládány zásoby. Další informace viz téma [Nastavení skladových míst](/dynamicsax-2012/appuser-itpro/about-locations).
+    
+### <a name="set-up-return-locations"></a>Nastavení skladových umístění vratek
+
+Chcete-li nastavit skladová místa pro vratky, postupujte následujícím způsobem.
+
+1. Přejděte do nabídky **Maloobchod a obchod \> Nastavení kanálu \> Sklady** a vyberte sklad.
+1. Na záložce **Maloobchod** vyberte v poli **Výchozí místo pro vrácení** skladové místo, které chcete použít pro vrácení, kde informační kódy nebo kódy důvodu nejsou namapovány na místa vrácení.
+1. V poli **Výchozí vrácená paleta** vyberte paletu, které chcete použít pro vrácení, kde informační kódy nebo kódy důvodu nejsou namapovány na místa vrácení.
+1. Přejděte na **Maloobchod a obchod \> Řízení zásob \> Místa vratek**.
+1. Vyberte **Nová**, chcete-li vytvořit novou zásadu umístění pro vrácení.
+1. Zadejte jedinečný název a popis skladového místa pro vratky.
+
+    > [!NOTE]
+    > Název je zadán automaticky, je-li nastavena číselná řada pro skladová umístění vratek.
+
+1. Na záložce **Všeobecné** nastavte možnost **Tisk štítků** na **Ano**, aby se tiskly štítky pro všechny produkty, které jsou přiřazeny k místům vrácení.
+1. Nastavte možnost **Blokovat zásoby** na **Ano**, chcete-li přijmout vrácené produkty do výchozího místa mimo sklad a zabránit jeho prodeji.
+1. Chcete-li namapovat konkrétní maloobchodní informační kódy a dílčí kódy na místa vrácení, postupujte takto:
+
+    1. Na pevné záložce **Maloobchodní informační kódy** vyberte **Přidat**.
+    1. V poli **Informační kód** vyberte informační kód pro vratky.
+    1. V poli **Dílčí kód** vyberte dílčí kód důvodu vrácení. Pole **Popis** ukazuje popis vybraného dílčího kódu.
+    1. V poli **Obchod** vyberte skladové místo, kde chcete použít informační kód.
+    1. K určení místa vrácení použijte pole **Sklad**, **Umístění** a **ID palety**. Například pro výběr místa v obchodě vyberte obchod v poli **Obchod** a umístění v poli **Umístění**.
+    1. Zapnutím políčka **Blokovat zásoby** vyberete vrácené produkty ze zásob a zabráníte jejich prodeji.
+
+1. Chcete-li namapovat konkrétní prodejní a marketingové kódy důvodu na místa vrácení, postupujte takto:
+
+    1. Na záložce **Kódy prodejních a marketingových důvodů** vyberte **Přidat**.
+    1. Poté v poli **Kód důvodu** vyberte nový kód důvodu pro vratky. Pole **Popis** ukazuje popis vybraného kódu důvodu.
+    1. V poli **Obchod** vyberte skladové místo, kde chcete použít kód důvodu.
+    1. K určení místa vrácení použijte pole **Sklad**, **Umístění** a **ID palety**. Pokud chcete například určit paletu v umístění ve skladu, vyberte sklad v poli **Sklad**, místo v poli **Umístění** a paletu v poli **ID palety**.
+    1. Zapnutím políčka **Blokovat zásoby** vyberete vrácené produkty ze zásob a zabráníte jejich prodeji.
+
+    > [!NOTE]
+    > Pokud se pro položku použije zásada místa vrácení, ale důvod vrácení vybraný pokladníkem neodpovídá žádnému kódu uvedenému na záložce **Maloobchodní informační kódy** nebo **Kódy prodejních a marketingových důvodů**, je položka odeslána do výchozího místa vrácení, které je definováno na stránce **Sklad**. Kromě toho nastavení zaškrtávacího políčka **Blokovat zásoby** na záložce **Všeobecné** ve stránce **Místa vrácení** určuje, zda má být vrácená položka blokována jako zásoba.
+
+1. Přejděte na **Maloobchod a obchod \> Hierarchie obchodních produktů**.
+1. Na záložce **Spravovat vlastnosti kategorie zásob** vyberte v poli **Místo vratky** místo vrácení. Protože pro stejný obchod lze definovat více zásad místa vrácení, hodnota, kterou zde vyberete, určuje použitou zásadu místa vrácení.
 
 ## <a name="additional-resources"></a>Další prostředky
 

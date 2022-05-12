@@ -2,7 +2,7 @@
 title: Čisté požadavky a informace o doložení s integrovaným hlavním plánováním
 description: Toto téma poskytuje informace o vypočítaných čistých požadavcích a informacích o doložení v integrovaném hlavním plánování.
 author: t-benebo
-ms.date: 7/28/2021
+ms.date: 04/20/2022
 ms.topic: article
 ms.search.form: ReqTransOverview
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 19c64d62386a94494b729aa05b0612609812a418
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 98da80c73eec58c08d1043e48deb14ca828c34eb
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470422"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618281"
 ---
 # <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Čisté požadavky a informace o doložení s integrovaným hlavním plánováním
 
@@ -26,6 +26,8 @@ Když spustíte hlavní plánování, je důležité, abyste porozuměli jeho v�
 
 Stránka **Čisté požadavky** zobrazuje čisté požadavky, které jsou pro produkt vypočítány během hlavního plánování. Ukazuje také nastavení disponibility, která byla použita za běhu hlavního plánování, rozpis součtů požadavků podle typu transakce a informace o doložení.
 
-Stránka **Čisté požadavky** funguje stejným způsobem, bez ohledu na to, zda používáte Optimalizaci plánování nebo integrovaný hlavní plánovací modul. Další informace o tom, jak pracovat s touto stránkou, najdete v tématu [Čisté požadavky a informace o doložení s Optimalizací plánování](planning-optimization/net-requirements.md).
+Stránka **Čisté požadavky** se chová trochu odlišně na základě toho, zda používáte Optimalizaci plánování nebo integrovaný hlavní plánovací modul. Další informace o tomto rozdílu viz [Rozdíly mezi vestavěným hlavním plánováním a Optimalizací plánování](planning-optimization/planning-optimization-differences-with-built-in.md).
+
+Další informace o tom, jak pracovat s touto stránkou, najdete v tématu [Čisté požadavky a informace o doložení s Optimalizací plánování](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Přehled fakturace předplatného
 description: Toto téma popisuje fakturaci předplatného v aplikaci Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462462"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644520"
 ---
 # <a name="subscription-billing-overview"></a>Přehled fakturace předplatného
 
@@ -33,6 +33,8 @@ Fakturace předplatného umožňuje organizacím spravovat příležitosti k vý
 - **Opakovaná fakturace smlouvy** – Tento modul umožňuje opakovanou fakturaci a správu cen pro zajištění kontroly nad cenami a parametry fakturace, obnovení smlouvy a konsolidované fakturace.
 - **Časové rozlišení výnosů a nákladů** – Tento modul eliminuje manuální procesy a závislost na externích systémech tím, že spravuje výnosy a umožňuje přehled o měsíčních opakujících se výnosech v reálném čase.
 - **Víceprvkové rozdělení příjmů** – Tento modul pomáhá s dodržováním právních předpisů v oblasti výnosů tím, že zpracovává ceny a rozděluje výnosy mezi více položek.
+
+Další informace o fakturaci předplatného viz [Vyúčtování předplatného obsahu Power BI](sub-bill-power-bi.md).
 
 Fakturace předplatného je povolena prostřednictvím **Správy funkcí**. Nelze ji však použít spolu s funkcí **Uznání výnosů**. Před aktivací fakturace předplatného proto musíte tuto funkci zakázat.
 

@@ -2,7 +2,7 @@
 title: Nastavení parametrů formátu ER podle právnické osoby
 description: V tomto tématu je vysvětleno, jak nastavit parametry formátu elektronického výkaznictví (ER) podle právnické osoby.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927447"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644492"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Nastavení parametrů formátu ER podle právnické osoby
 
@@ -30,7 +30,7 @@ ms.locfileid: "7927447"
 
 Chcete-li provést tento postup, musíte nejprve dokončit kroky v tématu [Nastavení formátů ER, které budou používat parametry specifikované podle právnické osoby](er-app-specific-parameters-configure-format.md).
 
-K dokončení příkladů v tomto tématu musíte mít přístup k aplikaci Microsoft Dynamics 365 Finance některou z následujících rolí:
+K dokončení příkladů v tomto tématu musíte mít přístup k aplikaci Microsoft Dynamics 365 Finance pro některou z následujících rolí:
 
 - Návrhář elektronického výkaznictví
 - Funkční konzultant elektronického výkaznictví
@@ -226,7 +226,7 @@ Pokud nakonfigurujete parametry specifické pro aplikaci pro jednu verzi formát
 Při výběru souboru pro import bude porovnána struktura parametrů specifických pro aplikaci v tomto souboru se strukturou odpovídajících zdrojů dat typu **vyhledávání** ve formátu ER, který je vybrán pro import. Ve výchozím nastavení je import proveden pouze v případě, že struktura jednotlivých parametrů specifických pro aplikaci odpovídá struktuře odpovídajícího zdroje dat ve formátu ER vybraném pro import. Pokud se struktury neshodují, zobrazí se varovná zpráva oznamující, že import nelze provést. Pokud import vynutíte, budou vymazány stávající parametry specifické pro vybraný formát ER a bude nutné je nastavit až od začátku.
 
 
-Od Dynamics 365 Finance verze 10.0.24 můžete změnit výchozí chování a vyhnout se přijímání varovné zprávy aktivací funkce **Při importu zarovnejte parametry specifické pro aplikaci elektronického výkaznictví** v pracovním prostoru **Správa funkcí**. Když je tato funkce aktivní a struktura parametrů specifických pro aplikaci, které importujete se liší od struktury odpovídajících zdrojů dat v cílovém formátu ER, který je vybrán pro import, import se podaří v následujících případech:
+Od verze 10.0.24 aplikace Finance můžete změnit výchozí chování a vyhnout se přijímání varovné zprávy aktivací funkce **Při importu zarovnejte parametry specifické pro aplikaci elektronického výkaznictví** v pracovním prostoru **Správa funkcí**. Když je tato funkce aktivní a struktura parametrů specifických pro aplikaci, které importujete se liší od struktury odpovídajících zdrojů dat v cílovém formátu ER, který je vybrán pro import, import se podaří v následujících případech:
 
 - Struktura cílového formátu ER byla změněna přidáním nových sloupců podmínek do libovolných existujících zdrojů dat typu **Vyhledat**. Po dokončení importu se aktualizují parametry specifické pro aplikaci. Ve všech importovaných záznamech parametrů specifických pro aplikaci jsou hodnoty v každém přidaném sloupci podmínky inicializovány s výchozí hodnotou pro [datový typ](er-formula-supported-data-types-primitive.md) toho sloupce.
 - Struktura cílového formátu ER byla změněna odstraněním některých sloupců podmínek z libovolných existujících zdrojů dat typu **Vyhledat**. Po dokončení importu se aktualizují parametry specifické pro aplikaci. Ve všech importovaných záznamech parametrů specifických pro aplikaci jsou odstraněny hodnoty v každém sloupci odstraněných podmínek.
@@ -235,9 +235,33 @@ Od Dynamics 365 Finance verze 10.0.24 můžete změnit výchozí chování a vyh
 
 Po dokončení importu se kromě změn, které byly právě popsány, změní stav importovaných parametrů specifických pro aplikaci na **Probíhá**. Varovné hlášení vás informuje, že automaticky nastavené parametry specifické pro aplikaci je nutné upravit ručně.
 
+#### <a name="replicate-parameters"></a>Replikace parametrů
+
+Od verze 10.0.27 aplikace Finance můžete zkopírovat parametry, které jste konfigurovali v jedné společnosti, do jiných společností současně.
+
+Pomocí následujících kroků zkopírujete parametry.
+
+1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
+2. Vyberte **Konfigurace vykazování**.
+3. Ve stromu konfigurace vyberte formát **Formát pro ověření, jak vyhledat data LE**.
+4. V podokně akcí na kartě **Konfigurace** ve skupině **Parametry specifické pro aplikaci** vyberte **Nastavení**.
+5. Vyberte verzi **1.1.1** formátu ER.
+6. V podokně Akce klikněte na možnost **Replikovat**.
+7. V dialogu **Replikovat** na kartě **Společnosti** vyberte společnosti, do kterých chcete parametry zkopírovat.
+
+    > [!NOTE]
+    > Seznam cílových společností je nabízen pouze uživatelům s přiřazenou [rolí zabezpečení](../sysadmin/role-based-security.md#security-roles), která uděluje přístup ke všem organizacím.
+
+8. Vyberte **OK**.
+
+    > [!NOTE]
+    > Potvrzovací dialogové okno vás informuje o tom, že některé cílové společnosti obsahují dříve konfigurované parametry pro vybranou verzi formátu ER. Výběrem možnosti **Ano** přepíšete parametry jejich zkopírováním z aktuální společnosti.
+
+    Konfigurovaná sada parametrů specifických pro aplikaci je nyní zkopírována do vybraných společností.
+
 ### <a name="reuse-existing-parameters"></a>Opakované použití existujících parametrů
 
-Od verze Dynamics 365 Finance 10.0.23 můžete znovu použít parametry specifické pro aplikaci, které byly nakonfigurovány pro jednu verzi formátu ER, když spustíte vyšší verzi stejného formátu. Chcete-li to provést, aktivujte funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER** v pracovním prostoru **Správa funkcí**. Když je tato funkce povolena a spustíte jednu verzi formátu ER, která se pokouší číst parametry specifické pro aplikaci, ER se pokusí najít parametry specifické pro aplikaci, které byly nakonfigurovány pro běžící verzi tohoto formátu. Nebo pokud nejsou k dispozici, pro nejbližší nižší verzi tohoto formátu.
+Od verze 10.0.23 aplikace Finance můžete znovu použít parametry specifické pro aplikaci, které byly nakonfigurovány pro jednu verzi formátu ER, když spustíte vyšší verzi stejného formátu. Chcete-li znovu použít existující parametry, aktivujte funkci **Použít parametry specifické pro aplikaci z předchozích verzí formátů ER** v pracovním prostoru **Správa funkcí**. Když je tato funkce povolena a spustíte jednu verzi formátu ER, která se pokouší číst parametry specifické pro aplikaci, ER se pokusí najít parametry specifické pro aplikaci, které byly konfigurovány pro běžící verzi tohoto formátu. Když nejsou k dispozici, ER zkusí najít parametry pro nejbližší nižší verzi tohoto formátu.
 
 > [!NOTE]
 > Parametry specifické pro aplikaci můžete znovu použít pouze v rozsahu aktuálního právního subjektu.

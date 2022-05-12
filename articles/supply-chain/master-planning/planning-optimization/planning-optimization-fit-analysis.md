@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: bf63069c5f18fe67c7d7f538311853d79c0f4fe8
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487635"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649150"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analýza přizpůsobení pro optimalizaci plánování
 
@@ -57,7 +57,7 @@ V následující tabulce jsou uvedeny různé výsledky, které lze zobrazit po 
 
 | Funkce | Uvedený problém | Vysvětlení | Očekávaná dostupnost |
 | --- | --- | --- | --- |
-| Akce | Výpočet skupin disponibility s akcemi povolen: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou akce generovány během hlavního plánování, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. Hlavním účelem akcí je navrhovat změny ve stávajících objednávkách. Vyhodnoťte, zda jsou akce aktivně uplatňovány jako součást vašich obchodních procesů nebo zda jsou dostatečné informace o zpoždění související s objednávkami. | 2022. duben |
+| Akce | Výpočet skupin disponibility s akcemi povolen: _\#_ | Tato funkce čeká na implementaci. V současné době nejsou akce generovány během hlavního plánování, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. Hlavním účelem akcí je navrhovat změny ve stávajících objednávkách. Vyhodnoťte, zda jsou akce aktivně uplatňovány jako součást vašich obchodních procesů nebo zda jsou dostatečné informace o zpoždění související s objednávkami. | Podporováno |
 | Základní kalendáře | Kalendáře používající základní kalendář: _\#_ | Tato funkce je nyní podporována. | 2022. březen | 
 | Kódy dispozice dávky | Vzory dispozice dávky bez čisté hodnoty: _\#_ | Tato funkce čeká na implementaci. V současné době jsou kódy dispozice dávky ignorovány, pokud je povolena optimalizace plánování. | Říjen 2022 nebo pozdější |
 | Příslib na základě ověření dostupné kapacity (CTP) | Výchozí nastavení objednávky s datem dodání nastaveným na CTP: _\#_ | Tato funkce čeká na implementaci. V současnosti je CTP ignorováno, pokud je povolena optimalizace plánování, bez ohledu na toto nastavení. | 2022. říjen |

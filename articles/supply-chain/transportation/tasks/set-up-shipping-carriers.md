@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567649"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660372"
 ---
 # <a name="set-up-shipping-carriers"></a>Nastavení dopravců
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567649"
 
 Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například pro službu, způsob dodávky, úhradu přepravy, omezení přepravy nebo sazbu expedice. Koordinátor přepravy potom může přiřadit dopravce k příchozímu nebo odchozímu vytížení.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Vytvoření nového dopravce
+
 1. Přejděte na **Navigační > podokno Moduly > Správa přepravy > Nastavení > Dopravci > Dopravci.**
 2. V podokně akcí zvolte **Nový**.
 3. Zadejte hodnotu do pole **Dopravce dodávky**.
@@ -36,6 +36,7 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 5. V poli **Režim** vyberte z rozevírací nabídky požadovanou možnost.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Zadání obecných informací pro dopravce
+
 1. Přepněte rozšíření oddílu **Přehled**.
 2. Zaškrtněte nebo zrušte zaškrtnutí políčka **Aktivovat dopravce**.
 3. V poli **Účet dodavatele** vyberte z rozevírací nabídky požadovanou možnost. Vyberte účet dodavatele, ke kterému chcete přiřadit dopravce.  
@@ -43,13 +44,16 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 5. Zaškrtněte nebo zrušte zaškrtnutí políčka **Aktivovat hodnocení dopravce**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Vytvoření nezbytných služeb pro dopravce
+
 1. Přepněte rozšíření oddílu **Služby**.
 2. Zvolte **Nové**.
 3. Zadejte hodnotu do pole **Služba dopravce**.
 4. Zadejte hodnotu do pole **Název**.
-5. V poli **Metoda přepravy** vyberte z rozevírací nabídky požadovanou možnost.
+5. V poli **Načíst ID šablony** vyberte šablonu načtení, kterou chcete přidružit ke službě. Šablona vytížení definuje maximální měření pro hmotnost a objem celého vytížení. Šablona vytížení může například představovat velikost kontejneru nebo nákladního automobilu. ID šablony načtení jsou také specifikována v šablonách sestavení načtení a při použití [workbenche sestavení vytížení](load-building-workbench.md), který vám pomůže použít strategie budování zátěže k vytvoření zátěží. Výsledkem je, že systém bude schopen přiřadit každý nový náklad ke vhodné službě přepravce tím, že porovná zadané ID šablony nákladu.
+6. V poli **Metoda přepravy** vyberte z rozevírací nabídky požadovanou možnost.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Nastavení adresy pro dopravce (volitelné)
+
 1. Přepněte rozšíření oddílu **Adresy**.
 2. Zvolte **Nové**.
 3. Zadejte hodnotu do pole **Název nebo popis**.
@@ -59,6 +63,7 @@ Toto téma popisuje, jak nastavit dopravce a definujte podrobnosti například p
 7. Vyberte **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Nastavení profilu hodnocení pro dopravce
+
 1. Rozbalte oddíl **Profily sazeb**.
 2. Zvolte **Nové**.
 3. Zadejte hodnotu do pole **Profil sazeb**.

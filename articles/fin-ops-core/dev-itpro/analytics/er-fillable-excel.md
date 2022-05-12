@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388256"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645128"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -141,7 +141,12 @@ Na kartě **Mapování** návrháře operací elektronického výkaznictví mů�
 > [!NOTE]
 > Kvůli známému [Omezení Excelu](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), i když nakonfigurujete buňky pro zalamování textu a nakonfigurujete řádky obsahující tyto buňky tak, aby automaticky upravovaly svou výšku tak, aby odpovídaly zalamovanému textu, možná nebudete moci použít funkce aplikace Excel **Automatické přizpůsobení** a **Obtékání textu** pro sloučené buňky a řádky, které je obsahují. 
 
-V Dynamics 365 Finance verze 10.0.23 můžete přinutit elektronické výkaznictví, aby ve vygenerovaném dokumentu vypočítal výšku každého řádku, který byl nakonfigurován tak, aby se jeho výška automaticky přizpůsobila obsahu vnořených buněk, kdykoli tento řádek obsahuje alespoň jednu sloučenou buňku, která byla nakonfigurována tak, aby obtékala text uvnitř. Vypočítaná výška se pak použije ke změně velikosti řádku, aby bylo zajištěno, že ve vygenerovaném dokumentu budou viditelné všechny buňky v řádku. Chcete-li začít používat tuto funkci při spuštění jakýchkoli formátů elektronického výkaznictví, které byly nakonfigurovány pro použití šablon aplikace Excel ke generování odchozích dokumentů, postupujte takto.
+Od verze 10.0.23 aplikace Dynamics 365 Finance můžete při práci v generovaném dokumentu přinutit elektronické výkaznictví, aby vypočítalo výšku každého řádku, který byl konfigurován tak, aby se jeho výška automaticky přizpůsobila obsahu vnořených buněk, kdykoli tento řádek obsahuje alespoň jednu sloučenou buňku, která byla konfigurována tak, aby obtékala text uvnitř. Vypočítaná výška se pak použije ke změně velikosti řádku, aby bylo zajištěno, že ve vygenerovaném dokumentu budou viditelné všechny buňky v řádku.
+
+> [!NOTE]
+> Poznámka: tato funkce nemusí fungovat podle očekávání, když se k formátování sloučené buňky použije vlastní písmo. Protože Excel nevkládá vlastní písma, neposkytuje informace o vlastní velikosti písma. Velikost sloučené buňky proto může být nesprávně odhadnuta.
+
+Chcete-li začít používat tuto funkci při spuštění jakýchkoli formátů elektronického výkaznictví, které byly nakonfigurovány pro použití šablon aplikace Excel ke generování odchozích dokumentů, postupujte takto.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
 2. Na stránce **Konfigurace lokalizace** vyberte v části **Související odkazy** možnost **Parametry elektronického výkaznictví**.

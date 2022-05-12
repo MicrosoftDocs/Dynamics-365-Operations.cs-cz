@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384740"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644325"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurace rozhraní pro provádění výrobního provozu
 
@@ -111,17 +111,67 @@ Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě fu
 
 - *(Preview) Sestava položek skutečné hmotnosti z rozhraní provádění výrobního provozu*
 
+### <a name="enable-the-my-day-dialog"></a>Povolení dialogového okna „Můj den“
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Dialogové ono **Můj den** poskytuje pracovníkům přehled jejich denních registracích a aktuálních zůstatcích za placenou dobu, placené přesčasy, nepřítomnost a placenou nepřítomnost.
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Zobrazení Můj den pro rozhraní pro provádění výrobního provozu*
+
+### <a name="enable-teams"></a>Povolení týmů
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Když je ke stejné výrobní úloze přiděleno více pracovníků, mohou vytvořit tým. Tým může nominovat jednoho pracovníka jako pilota. Zbývající pracovníci se pak automaticky stanou asistenty tohoto pilota. Pro výsledný tým musí stav úlohy zaregistrovat pouze pilot. Časové záznamy platí pro všechny členy týmu.
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Produkční týmy v rozhraní pro provádění výrobního provozu*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Povolení další konfigurace v rozhraní pro provedení výrobního provozu
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Tato funkce přidává nastavení pro následující funkce na stránce **Konfigurace provádění výrobního provozu**:
+
+- Automatické otevření dialogového okna **Zahájení úlohy** po dokončení vyhledávání.
+- Automatické otevření dialogového okna **Průběh sestavy** po dokončení vyhledávání.
+- Předvyplnění zbývajícího množství v dialogovém okně **Průběh sestavy**.
+- Povolení úprav spotřeby materiálu v dialogovém okně **Průběh sestavy**. (Tato funkce vyžaduje také funkci *Registrace spotřeby materiálu na rozhraní pro provádění výrobního provozu (mimo WMS)*.)
+- Povolení vyhledávání podle ID projektu.
+
+Informace o použití těchto nastavení jsou uvedeny dále v tomto tématu.
+
+Chcete-li tuto funkci používat, zapněte následující funkci ve [Správě funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Další konfigurace v rozhraní pro provádění výrobního provozu*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Práce s konfiguracemi rozhraní pro provádění výrobního provozu
 
 Chcete-li vytvořit a udržovat konfigurace provedení výrobního provozu, přejděte na **Řízení výroby \> Nastavení \> Provádění výroby \> Konfigurace provádění výrobního provozu**. Na stránce **Konfigurace provádění výrobního provozu** se nachází seznam existujících konfigurací. Na této stránce můžete provést následující akce:
 
 - Výběrem libovolné konfigurace výrobního provozu uvedené v levém sloupci ji zobrazíte a upravíte.
-- Volbou **Nová** v podokně akcí přidejte novou konfiguraci do seznamu. Poté do pole **Konfigurace** zadejte název, dle kterého identifikujete novou konfiguraci. Zadaný název musí být ve všech konfiguracích jedinečný a později jej nebudete moci upravit.
+- Volbou **Nová** v podokně akcí přidáte novou konfiguraci do seznamu. Poté do pole **Konfigurace** zadejte název, dle kterého identifikujete novou konfiguraci. Zadaný název musí být ve všech konfiguracích jedinečný a později jej nebudete moci upravit. Do pole **Popis** volitelně zadejte popis konfigurace.
 
-Dále nakonfigurujte různá nastavení pro vybranou konfiguraci. K dispozici jsou následující pole:
+Dále nakonfigurujte různá nastavení pro vybranou konfiguraci, jak je popsáno v následujících podsekcích.
 
-- **Pouze označení příchodu a odchodu** - Nastavte tuto možnost na *Ano* k vytvoření zjednodušeného rozhraní, které poskytuje pouze funkci označení příchodu a odchodu. Tím se deaktivuje většina ostatních možností na této stránce. Než tuto možnost povolíte, musíte odstranit všechny řádky ze záložky s náhledem **Výběr karty**.
-- **Povolit vyhledávání** - Nastavte tuto možnost na *Ano*. chcete-li zahrnout vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu.
+### <a name="the-general-fasttab"></a>Záložka s náhledem Obecné
+
+Na záložce s náhledem **Obecné** jsou k dispozici následující nastavení:
+
+- **Pouze označení příchodu a odchodu** – Nastavte tuto možnost na *Ano* k vytvoření zjednodušeného rozhraní, které poskytuje pouze funkci označení příchodu a odchodu. Toto nastavení deaktivuje většinu ostatních možností na této stránce. Než tuto možnost povolíte, musíte odstranit všechny řádky ze záložky s náhledem **Výběr karty**.
+- **Povolit vyhledávání** – Nastavte tuto možnost na *Ano*. chcete-li zahrnout vyhledávací pole do seznamu úloh. Pracovníci mohou najít konkrétní práci zadáním ID úlohy nebo vyhledat všechny úlohy pro konkrétní objednávku zadáním ID objednávky. Pracovníci mohou zadat ID pomocí klávesnice nebo naskenováním čárového kódu.
+- **Povolit vyhledávání podle ID projektu** – Nastavením této možnosti na *Ano* umožníte pracovníkům vyhledávat podle ID projektu (kromě ID úlohy a ID objednávky) ve vyhledávacím poli v rozhraní pro provádění výrobního provozu. U této možnosti můžete nastavit hodnotu *Ano*, pouze když je možnost **Povolit vyhledávání** nastavena na *Ano*.
+- **Automatické otevření dialogového okna spuštění** – Pokud je tato možnost nastavena na *Ano*, když pracovníci použijí vyhledávací panel k nalezení úlohy, automaticky se otevře dialogové okno **Zahájení úlohy**.
+- **Automatické otevření dialogového okna průběhu vykazování** – Pokud je tato možnost nastavena na *Ano*, když pracovníci použijí vyhledávací panel k nalezení úlohy, automaticky se otevře dialogové okno **Průběh sestavy**.
+- **Povolit úpravu materiálu** – Nastavením této možnosti na *Ano* povolíte tlačítko **Upravit materiál** v dialogovém okně **Průběh sestavy**. Pracovníci mohou vybrat toto tlačítko, aby upravili spotřebu materiálu pro úlohu.
 - **Hlášení množství při odchodu** – Nastavením možnosti na *Ano* vyzvete pracovníky, aby nahlásili zpětnou vazbu o probíhajících úlohách při odchodu. Při nastavení na *Ne* k tomu pracovníci nebudou vyzváni.
 - **Zamknout zaměstnance** – Když je tato možnost nastavena na *Ne*, pracovníci budou odhlášeni ihned po provedení registrace (například nové úlohy). Rozhraní se poté vrátí na přihlašovací stránku. Pokud je tato možnost nastavena na *Ano*, pracovníci zůstanou přihlášení k rozhraní provedení výrobního provozu. Pracovník se však může ručně odhlásit, aby se mohl jiný pracovník přihlásit, zatímco rozhraní provedení výrobního provozu nadále běží pod stejným uživatelským účtem systému. Další informace o těchto typech účtů naleznete v tématu [Přiřazení uživatelé](config-job-card-device.md#assigned-users).
 - **Použít skutečný čas registrace** – Nastavením na *Ano* nastavíte pro každou novou registraci přesný čas, kdy se pracovník registroval. Když je tato možnost nastavena na *Ne*, místo toho se použije čas přihlášení. Tuto možnost budete obvykle chtít nastavit na *Ano*, pokud možnosti **Zamknout zaměstnance** a/nebo **Jeden pracovník** nastavili na *Ano*, kde pracovníci často zůstávají přihlášeni delší dobu.
@@ -130,7 +180,17 @@ Dále nakonfigurujte různá nastavení pro vybranou konfiguraci. K dispozici js
 - **Doba trvání uzamčení obrazovky** – Když je možnost **Povolit uzamčení dotykové obrazovky** nastavena na *Ano*, použijte tuto možnost pro zadání počtu sekund, po které by měla být dotyková obrazovka uzamčena pro dezinfekci. Doba trvání musí být mezi 5 a 120 sekundami.
 - **Generovat registrační značku** – Nastavením této možnosti na *Ano* vygenerujete novou registrační značku pokaždé, když pracovník použije rozhraní provedení výrobního provozu k vykázání dokončené práce. Registrační značka vozidla je generována z číselné posloupnosti nastavené na stránce **Parametry řízení skladu**. Při nastavení této možnosti na *Ne* musí pracovníci při vykazování dokončené práce uvést existující registrační značku.
 - **Tisk etikety** – Nastavte tuto možnost na *Ano* k vytištění etikety poznávací značky, když pracovník používá rozhraní provedení výrobního provozu k nahlášení dokončené práce. Konfigurace etikety je nastavena ve směrování dokumentu, jak je popsáno v [Rozvržení směrování dokumentu pro popisky registrační značky](../warehousing/document-routing-layout-for-license-plates.md).
-- **Výběr karty** - Pomocí nastavení v této části zvolte, které karty by se měly zobrazit rozhraním provádění výrobního provozu, když je aktivní aktuální konfigurace. Můžete navrhnout tolik karet, kolik potřebujete, a poté je zde podle potřeby přidat a uspořádat. Podrobnosti o tom, jak zde navrhovat karty a pracovat s nastavením, najdete v části [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Záložka s náhledem Výběr karty
+
+Pomocí nastavení na záložce s náhledem **Výběr karty** zvolte, které karty provádění výrobního provozu se mají zobrazit, když je aktivní aktuální konfigurace. Můžete navrhnout tolik karet, kolik potřebujete, a poté je přidat a uspořádat podle potřeby pomocí tlačítek na panelu nástrojů záložky s náhledem. Informace, jak zde navrhovat karty a pracovat s nastavením, najdete v části [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Záložka s náhledem Průběh sestavy
+
+Na záložce s náhledem **Průběh sestavy** jsou k dispozici následující nastavení:
+
+- **Povolit úpravu materiálu** – Nastavením této možnosti na *Ano* přidáte tlačítko **Upravit materiál** v dialogovém okně **Průběh sestavy**. Pracovníci mohou vybrat toto tlačítko, aby upravili spotřebu materiálu pro úlohu.
+- **Výchozí zbývající množství** – Nastavením této možnost na *Ano* dojde k předvyplnění očekávaného zbývajícího množství výrobní úlohy v dialogovém okně **Průběh sestavy**.
 
 ## <a name="clean-up-job-configurations"></a>Konfigurace úloh čištění
 

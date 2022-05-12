@@ -2,7 +2,7 @@
 title: Odebrané nebo zastaralé funkce platformy
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z aktualizací platformy finančních a provozních aplikací.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396542"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644597"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Odstraněné nebo zastaralé funkce platformy
 
@@ -32,7 +32,19 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/global/axtechrefrep_61). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
 
-## <a name="feature-removal-effective-march-14-2022"></a>Odstranění funkce je platné ke dni 14. března 2022
+## <a name="feature-deprecation-effective-april-2022"></a>Oznámení o ukončení podpory funkce od dubna 2022
+
+### <a name="xml-url-resolution-in-data-management"></a>Rozlišení URL XML ve správě dat 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Odstraňujeme podporu pro rozlišení URL XML, protože to bylo identifikováno jako potenciální bezpečnostní chyba. To znamená, že externí zdroje přidružené k souborům XML již nebudou řešeny.  |
+| **Nahrazeno jinou funkcí?**   | Číslo |
+| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. |
+
+## <a name="feature-deprecation-effective-march-14-2022"></a>Oznámení o ukončení podpory funkce od 14. května 2022
 
 ### <a name="xslt-scripting-in-data-management"></a>Skriptování XSLT ve Správě dat
 
@@ -40,9 +52,9 @@ Podrobné informace o objektech v finančních a provozních aplikacích lze nal
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Podpora skriptování XSLT ve Správě dat je označena jako zastaralá, aby se zlepšilo zabezpečení a ochrana dat ve finančních a provozních aplikacích.  |
 | **Nahrazeno jinou funkcí?**   | Číslo Zákazníci a nezávislí dodavatelé softwaru by měli zvážit opětovnou implementaci svých řešení založených na jazyce X++ namísto skriptování XSLT. |
-| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace. |
+| **Ovlivněné oblasti produktu**         | Finanční a provozní aplikace |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé – plánované datum odstranění je 14. března 2022.<br><br>Výjimka: Zákazníci, kteří aktuálně používají skriptování XLST. Mohou jej nadále používat, dokud neaktualizují na verzi 10.0.30 nebo novější. Zákazníci s touto výjimkou obdrželi upozornění v Centru zpráv dostupném v Centru pro správu Microsoft 365. |
+| **Stav**                         | Zastaralé <br><br>**Výjimka:** Zákazníci, kteří aktuálně používají skriptování XLST. Mohou jej nadále používat, dokud neaktualizují na verzi 10.0.30 nebo novější. Pro dřívější verze platnost výjimky vyprší 31. ledna 2023. Zákazníci s touto výjimkou obdrželi upozornění v Centru zpráv dostupném v Centru pro správu Microsoft 365. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Odstranění funkce platné od října 2021
 

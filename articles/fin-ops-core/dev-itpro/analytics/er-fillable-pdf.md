@@ -2,7 +2,7 @@
 title: Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 description: Toto téma obsahuje informace o tom, jak navrhnout formát elektronického výkaznictví pro vyplnění šablony PDF.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367810"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645100"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -252,10 +252,14 @@ Vzhledem k tomu, že obě vlastnosti jsou pro prvek formátu **Pole** volitelné
 - Je-li atribut **Název** definován a výraz **Název** je nakonfigurovaný, bude vyplněno pole PDF, které má stejný název jako hodnota vrácená výrazem **Název** prvku formátu.
 
 > [!NOTE]
-> Zaškrtávací políčko PDF lze vyplnit tak, jak bylo vybráno následujícími způsoby:
+> Když zaškrtávací políčko v šabloně PDF nepatří do skupiny zaškrtávacích políček, je reprezentováno v upravitelném formátu ER jako prvek **Pole**, který je vnořen do prvku **Soubor PDF**. Tento typ zaškrtávacího políčka PDF lze nastavit jako vybraný následujícími způsoby:
 >
-> - Když je odpovídající prvek formátu **Pole** svázán s polem zdroje dat typu **Logický**, který má hodnotu **True**
-> - Pokud odpovídající prvek formátu **Pole** obsahuje vnořený prvek formátu **Řetězec**, který je svázán s polem zdroje dat, které má textovou hodnotu **1**, **True** nebo **Ano**.
+> - Odpovídající prvek formátu **Pole** je svázán s polem zdroje dat typu *[Logická hodnota](er-formula-supported-data-types-primitive.md#boolean)*, který má hodnotu **True**.
+> - Odpovídající prvek formátu **Pole** obsahuje vnořený prvek formátu **Řetězec**, který je svázán s polem zdroje dat, které má textovou hodnotu **1**, **True** nebo **Ano**.
+>
+> Vaše šablona může obsahovat skupinu zaškrtávacích políček, kde lze vybrat vždy pouze jedno zaškrtávací políčko. Tato zaškrtávací políčka jsou v šabloně PDF reprezentována jako více polí formuláře typu *CHECKBOX*. Každé pole má stejný název, ale jinou exportní hodnotu. Když importujete šablonu do upravitelného formátu ER, všechna zaškrtávací políčka budou reprezentována v hierarchické struktuře formátu jako prvek **Položka skupiny zaškrtávacích políček**, vnořené do stejného prvku **Skupina zaškrtávacích políček**. Název prvku **Skupina zaškrtávacích políček** se bude rovnat názvu polí zaškrtávacích políček v šabloně PDF. Název každého prvku **Položka skupiny zaškrtávacích políček** se bude rovnat exportní hodnotě odpovídajícího pole zaškrtávacího políčka v šabloně PDF.
+>
+> Prvek **Položka skupiny zaškrtávacích políček** můžete navázat pouze na pole zdroje dat datového typu *Logická hodnota*.
 
 ## <a name="run-the-format-configuration"></a>Spuštění konfigurace formátu
 

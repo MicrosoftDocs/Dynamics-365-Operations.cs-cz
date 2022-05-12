@@ -2,7 +2,7 @@
 title: Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B
 description: Toto téma popisuje, jak nakonfigurovat způsob platby zákaznického účtu v Microsoft Dynamics 365 Commerce. Popisuje také, jak úvěrové limity ovlivňují zachycení platby na účet na webech elektronického obchodování mezi podniky (B2B).
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323348"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616825"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B
 
@@ -82,20 +82,20 @@ Vlastnost **Typ úvěrového limitu** má hodnoty **Žádný**, **Zůstatek**, *
 
 Další vlastností, která ovlivňuje objednávání na účet, je **Povinný úvěrový limit**, který se nachází na záložce **Úvěry a inkasa** záznamu zákazníka. Nastavením této vlastnosti na **Ano** u konkrétních zákazníků můžete donutit systém, aby zkontroloval jejich úvěrový limit, i když vlastnost **Typ úvěrového limitu** byla nastavena na **Žádný**, aby úvěrový limit nebyl kontrolován u žádného zákazníka.
 
-V současné době weby B2B, kde je vlastnost **Povinný úvěrový limit** povolena, mají další funkce. Pokud je vlastnost povolena v záznamu zákazníka a zákazník zadá objednávku, web B2B mu zabrání v použití způsobu platby na účet k tomu, aby zaplatil více, než je zbývající zůstatek kreditu. Pokud je například zbývající úvěrový zůstatek zákazníka 1000 $, ale objednávka má hodnotu 1 200 $, může zákazník zaplatit pomocí metody „na účet“ pouze 1 000 $. K zaplacení zůstatku musí použít jinou platební metodu. Pokud je vlastnost **Povinný úvěrový limit** v záznamu zákazníka deaktivována, zákazník může zaplatit libovolnou částku pomocí platební metody na účet. I když však zákazník může zadávat objednávky, systém neumožní realizaci těchto objednávek, pokud překročí úvěrový limit. Pokud musíte zkontrolovat úvěrový limit u všech zákazníků, kteří mají nárok platit na účet, doporučujeme nastavit vlastnost **Typ úvěrového limitu** na **Zůstatek + dodací list nebo příjemka produktu** a vlastnost **Povinný úvěrový limit** na **Ne**.
+V současné době nemůže zákazník využívající platební metodu Na účet zaplatit více, než je zbývající kreditní zůstatek objednávky. Pokud je například zbývající úvěrový zůstatek zákazníka 1000 $, ale objednávka má hodnotu 1 200 $, může zákazník zaplatit pomocí metody „na účet“ pouze 1 000 $. K zaplacení zůstatku musí zákazník použít jinou platební metodu. V budoucí verzi konfigurace Commerce umožní uživatelům při zadávání objednávek utrácet nad rámec jejich kreditního limitu.
 
 Modul **Úvěry a inkasa** má nové možnosti správy úvěru. Chcete-li tyto funkce zapnout, povolte funkci **Správa úvěrů** v pracovním prostoru **Správa funkcí**. Jedna z nových funkcí umožňuje pozastavení prodejních objednávek na základě pravidel blokování. Osoba správce úvěru může poté po další analýze uvolnit nebo odmítnout objednávky. Možnost pozastavení prodejních objednávek se však nevztahuje na objednávky Commerce, protože prodejní objednávky mají často platbu předem a funkce **Správa úvěrů** zcela nepodporuje scénáře s předplacením. 
 
 Bez ohledu na to, zda je funkce **Správa úvěrů** aktivována, prodejní objednávky nebudou pozastaveny, pokud zůstatek zákazníka během plnění objednávky překročí úvěrový limit. Místo toho Commerce vygeneruje buď varovnou nebo chybovou zprávu, v závislosti na hodnotě pole **Zpráva při překročení úvěrového limitu** na záložce **Úvěrové limity**.
 
-Vlastnost **Vyloučit ze správy úvěrů**, která zabraňuje pozastavení prodejních objednávek Commerce, se nachází v záhlaví prodejní objednávky (**Maloobchod a obchod \> Zákazníci \> Všechny prodejní objednávky**). Pokud je tato vlastnost nastavena na **Ano** (výchozí hodnota) pro obchodní objednávky Commerce, budou objednávky vyloučeny z pracovního postupu pozastavení správy úvěru. Všimněte si, že ačkoli je vlastnost pojmenována **Vyloučit ze správy úvěrů**, definovaný úvěrový limit bude při plnění objednávky stále využíván. Objednávky se prostě nepozastaví.
+Vlastnost **Vyloučit ze správy úvěrů**, která zabraňuje pozastavení prodejních objednávek Commerce, se nachází v záhlaví prodejní objednávky (**Maloobchod a obchod \> Zákazníci \> Všechny prodejní objednávky**). Pokud je tato vlastnost nastavena na **Ano** (výchozí hodnota) pro obchodní objednávky Commerce, budou objednávky vyloučeny z pracovního postupu pozastavení správy úvěru. Ačkoli je vlastnost pojmenována **Vyloučit ze správy úvěrů**, definovaný úvěrový limit bude při plnění objednávky stále využíván. Objednávky se prostě nepozastaví.
 
 Schopnost pozastavit prodejní objednávky Commerce na základě pravidel blokování je plánována pro budoucí verze Commerce. Dokud to nebude podporováno, pokud musíte přinutit prodejní objednávky Commerce, aby prošly novými toky správy úvěru, upravte následující soubory XML ve svém řešení Visual Studio. V souborech upravte logiku tak, aby byl příznak **CredManExcludeSalesOrder** nastaven na **Ne**. Tímto způsobem nastavíte vlastnost **Vyloučit ze správy úvěrů** na **Ne** jako výchozí pro prodejní objednávky Commerce.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Všimněte si, že pokud je příznak **CredManExcludeSalesOrder** nastaven na **Ne** a B2B zákazník může nakupovat v obchodech pomocí aplikace pokladního místa (POS), zaúčtování transakcí cash and carry může selhat. Například existuje pravidlo blokování typu platby v hotovosti a zákazník B2B nakoupil některé položky v obchodě pomocí hotovosti. V tomto případě nebude výsledná prodejní objednávka úspěšně fakturována, protože bude pozastavena. Proto se zaúčtování nezdaří. Z tohoto důvodu doporučujeme, abyste po implementaci tohoto přizpůsobení provedli komplexní testování.
+Pokud je příznak **CredManExcludeSalesOrder** nastaven na **Ne** a B2B zákazník může nakupovat v obchodech pomocí aplikace pokladního místa (POS), zaúčtování transakcí cash and carry může selhat. Například existuje pravidlo blokování typu platby v hotovosti a zákazník B2B nakoupil některé položky v obchodě pomocí hotovosti. V tomto případě nebude výsledná prodejní objednávka úspěšně fakturována, protože bude pozastavena. Proto se zaúčtování nezdaří. Z tohoto důvodu doporučujeme, abyste po implementaci tohoto přizpůsobení provedli komplexní testování.
 
 ## <a name="additional-resources"></a>Další prostředky
 

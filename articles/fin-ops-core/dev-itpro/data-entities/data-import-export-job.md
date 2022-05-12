@@ -2,7 +2,7 @@
 title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071078"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644452"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -74,8 +74,11 @@ Vyberete-li entitu, je nutné vybrat formát dat, která budou exportována nebo
 > [!NOTE]
 > Je důležité vybrat správnou hodnotu pro **Oddělovač řádků**, **Oddělovač sloupců** a **Textový kvalifikátor**, pokud je možnost **Formát souboru** nastavena na **Oddělené**. Ujistěte se, že vaše data neobsahují znak použitý jako oddělovač nebo kvalifikátor, protože to může způsobit chyby při importu a exportu.
 
+> [!NOTE]
+> U formátů souborů založených na XML se ujistěte, že používáte pouze povolené znaky. Další podrobnosti o platných znacích najdete v článku [Platné znaky v XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 nepovoluje žádné řídicí znaky kromě tabulátorů a znaků CR a LF. Mezi příklady nepovolených znaků patří hranaté závorky, složené závorky a zpětná lomítka. 
+
 ### <a name="sequence-the-entities"></a>Seřazení entit
-Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export.
+Entity lze seřadit v šabloně dat nebo v úloze importu a exportu. Při spuštění úlohy, která obsahuje více než jednu entitu dat, se musíte ujistit, že jsou entity správně seřazeny. Entity seřazujete především proto, abyste mohli adresovat všechny funkční závislosti mezi entitami. Pokud nemají entity žádnou funkční závislost, lze je naplánovat pro paralelní import nebo export. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Spuštění jednotek, úrovní nebo řad
 Jednotka spuštění, úroveň v jednotce spuštění a řazení entity pomáhají kontrolovat pořadí, v jakém jsou data exportována nebo importována.

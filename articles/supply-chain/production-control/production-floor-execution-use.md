@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384412"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644983"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracovníci používají rozhraní pro provádění výrobního provozu
 
@@ -74,9 +74,9 @@ Seznam aktivních úloh má následující sloupce:
 
 ## <a name="my-jobs-tab"></a>Karta Moje úlohy
 
-Karta **Moje úlohy** umožňuje pracovníkům snadno zobrazit všechny nezahájené a nedokončené úlohy, které jsou jim specificky přiřazeny. Je to užitečné ve společnostech, kde jsou úkoly někdy nebo vždy přiděleny konkrétním pracovníkům (lidské zdroje) namísto jiných typů zdrojů (jako jsou stroje). 
+Karta **Moje úlohy** umožňuje pracovníkům snadno zobrazit všechny nezahájené a nedokončené úlohy, které jsou jim specificky přiřazeny. Je to užitečné ve společnostech, kde jsou úkoly někdy nebo vždy přiděleny konkrétním pracovníkům (lidské zdroje) namísto jiných typů zdrojů (jako jsou stroje).
 
-Plánovací systém automaticky přiřadí každou produkční úlohu ke konkrétnímu záznamu prostředku a každý záznam prostředku má svůj typ (například stroj nebo člověk). Když nastavíte zaměstnance jako výrobního pracovníka, můžete účet pracovníka přidružit k jedinečnému záznamu lidských zdrojů. 
+Plánovací systém automaticky přiřadí každou produkční úlohu ke konkrétnímu záznamu prostředku a každý záznam prostředku má svůj typ (například stroj nebo člověk). Když nastavíte zaměstnance jako výrobního pracovníka, můžete účet pracovníka přidružit k jedinečnému záznamu lidských zdrojů.
 
 Karta **Moje úlohy** obsahuje všechny nezahájené a nedokončené úlohy, které byly přiřazeny k záznamu lidských zdrojů přihlášeného pracovníka, pokud je nějaký pracovník přihlášen. Nikdy neuvádí úlohy, které byly přiřazeny k počítači nebo jinému typu zdroje, i když přihlášený pracovník na těchto úlohách začal pracovat.
 
@@ -87,7 +87,7 @@ Chcete-li zobrazit všechny úlohy, které byly spuštěny přihlášeným praco
 ## <a name="my-machine-tab"></a>Karta Můj stroj
 
 Karta **Můj stroj** pracovníkům umožňuje vybrat majetek, který je připojen ke zdroji stroje v sadě filtrů na kartě **Všechny úlohy**. Pracovník pak může zobrazit stav vybraného majetku čtením hodnot až čtyř vybraných čítačů a seznamů posledních požadavků na údržbu a registrovaných prostojů. Pracovník může také požádat o údržbu vybraného majetku a zaregistrovat a upravit prostoje stroje. (Tento název karty je přizpůsobitelný a může se u vašeho systému lišit.)
- 
+
 ![Karta Můj stroj.](media/pfei-my-machine-tab.png "Karta Můj stroj")
 
 Karta **Můj stroj** má následující sloupce. Čísla odpovídají číslům na předchozím obrázku.
@@ -202,9 +202,9 @@ Provádět můžete následující akce:
 - Když pracovník vybere **OK**, seznam výdejek odstraněn není. Bude zaúčtován při nahlášení úlohy v dialogovém okně **Hlášení odpadu** nebo **Hlášení průběhu**.
 - Pokud pracovník vybere tlačítko **Storno** v dialogovém okně **Hlášení odpadu** nebo **Hlášení průběhu**, seznam výdejek se odstraní.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Úprava materiálu v pravém panelu nástrojů
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Úprava materiálu z primárního nebo sekundárního panelu nástrojů
 
-Tlačítko **Upravit materiál** lze nakonfigurovat tak, aby se zobrazovalo na panelu nástrojů vpravo. (Další informace viz téma [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).) Pracovník může vybrat příkaz **Upravit materiál** pro probíhající výrobní úlohu. V tomto případě se zobrazí dialogové okno **Upravit materiál**, kde pracovník může provést požadované úpravy. Po otevření dialogového okna se pro výrobní úlohu vytvoří výrobní výdejka, která obsahuje řádky pro upravená množství. Když pracovník vybere příkaz **Zaúčtovat**, úprava je potvrzena a seznam k odběru je zaúčtován. Když pracovník vybere **Storno**, výdejka je odstraněna a není provedena žádná změna.
+Tlačítko **Upravit materiál** lze nakonfigurovat tak, aby se zobrazovalo na primárním nebo sekundárním panelu nástrojů. (Další informace viz téma [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).) Pracovník může vybrat příkaz **Upravit materiál** pro probíhající výrobní úlohu. V tomto případě se zobrazí dialogové okno **Upravit materiál**, kde pracovník může provést požadované úpravy. Po otevření dialogového okna se pro výrobní úlohu vytvoří výrobní výdejka, která obsahuje řádky pro upravená množství. Když pracovník vybere příkaz **Zaúčtovat**, úprava je potvrzena a seznam k odběru je zaúčtován. Když pracovník vybere **Storno**, výdejka je odstraněna a není provedena žádná změna.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Úprava spotřebu materiálu pro položky skutečné hmotnosti
 
@@ -260,6 +260,42 @@ V obou scénářích poté, co Shannon potvrdí svůj výběr, přejde na přihl
 Pracovníci mohou registrovat přestávky. Přestávky lze flexibilně definovat, jak je popsáno v části [Plat na základě registrace](pay-based-on-registrations.md).
 
 Pracovník zaregistruje přestávku výběrem **Přestávka** a poté vyberte kartu, která představuje typ přestávky (například oběd). Poté, co pracovník potvrdí výběr, zařízení zobrazí buď přihlašovací stránku, nebo stránku, která počká, až pracovník potvrdí, že se vrátil z přestávky. Stránka, která se zobrazí, závisí na konfiguraci rozhraní pro provádění výrobního provozu. (Další informace viz [Konfigurace rozhraní pro provádění výrobního provozu](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>Zobrazení dialogového okna „Můj den“
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Dialogové okno **Můj den** poskytuje pracovníkům přehled jejich registrací a zůstatků. Dialog je rozdělen do následujících tří částí:
+
+- V hlavní části jsou uvedeny registrace, které aktuální pracovník provedl ke zvolenému datu. Otevře se s registracemi pro aktuální den a poskytuje výběr data, který umožňuje pracovníkovi zobrazit další dny.
+- Sekce **Poslední vypočítaný denní zůstatek** zobrazuje aktuální zůstatky pracovníka za placený čas, placený přesčas, absenci a placenou absenci. Tyto hodnoty jsou založeny na registracích, které byly vypočteny během schvalovacího procesu.
+- Sekce **Zůstatky** poskytuje přehled zůstatků za definované období u vybraných kategorií registrací (jako je dovolená, standardní čas a přesčas). Tyto zůstatky jsou založeny na způsobu, jakým jsou nastaveny statistické zůstatky v modulu **Čas a docházka**. Další informace o tomto nastavení najdete v části [Zobrazení zůstatků dovolené v rozhraní pro provádění výrobního provozu](production-floor-execution-payroll-stats.md).
+
+Správci mohou přidat tuto funkci do rozhraní umístěním tlačítka **Můj den** na panel nástrojů pro každou relevantní kartu, jak je popsáno v části [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Práce v týmech
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Když je ke stejné výrobní úloze přiděleno více pracovníků, mohou vytvořit tým. Tým může nominovat jednoho pracovníka jako pilota. Zbývající pracovníci se pak automaticky stanou asistenty tohoto pilota. Pro výsledný tým musí stav úlohy zaregistrovat pouze pilot. Časové záznamy platí pro všechny členy týmu.
+
+### <a name="prerequisites"></a>Předpoklady
+
+Chcete-li používat týmy, musí správce povolit akci **Pomocník** pro primární panel nástrojů na kartě **Všechny úlohy** v rozhraní pro provádění výrobního provozu. Návod najdete v tématu [Návrh rozhraní pro provádění výrobního provozu](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Vytvoření nového týmu, který má vedoucího a pomocníka
+
+Pracovník se může zaregistrovat jako pomocník výběrem možnosti **Pomocník** na kartě **Všechny úlohy**. Poté ve zobrazeném dialogovém okně **Vyberte zaměstnance, který má pomoci** může pracovník vybrat vedoucího týmu ze seznamu pracovníků, kteří aktivně pracují na úloze. Poté, co pracovník potvrdí svůj výběr, stane se pomocníkem vybraného pracovníka, který se stane vedoucím nového týmu.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Přiřazení nového vedoucího týmu do existujícího týmu
+
+Když chce tým vybrat nového vedoucího, musí stávající vedoucí týmu nominovat jiného pracovníka v týmu jako nového vedoucího týmu. Pro nominaci nového vedoucího týmu vybere aktuální vedoucí možnost **Pomocník** na kartě **Všechny úlohy**. Poté ve zobrazeném dialogovém okně **Změnit vedoucího týmu** může vedoucí týmu vybrat nového vedoucího týmu ze seznamu pracovníků, kteří jsou již v týmu. Poté, co současný vedoucí týmu potvrdí svůj výběr, je z týmu úplně vyřazen. Může se však podle potřeby znovu připojit k týmu.
+
+### <a name="assistant-clocks-out"></a>Odchod pomocníka
+
+Když pracovník, který pracuje jako pomocník, odejde z práce, opustí tým. Pokud jsou možnosti **Trvalé týmy** a **Restartovat při registraci příchodu** nastaveny na *Ano*, pracovník, který odejde, se automaticky připojí k týmu při příštím příchodu. Tyto možnosti najdete na kartě **Obecné** na stránce **Parametry času a docházky**.
 
 ## <a name="opening-instructions"></a>Otevření pokynů
 

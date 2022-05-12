@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533705"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644295"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Časově rozlišit plány pracovního volna a absence
 
@@ -105,8 +105,10 @@ Odstranit záznamy o časovém rozlišení pro určitý plán a rozsah dat Data 
 **Vynechávat audit časového rozlišení** se zobrazí pokaždé, když spustíte nebo odstraníte časové rozlišení pro jednoho nebo všechny zaměstnance. Zobrazí se také datum a osoba, která akci provedla.
 
 1. Na stránce **Pracovní volno a absence** klikněte na kartu **Odkazy**.
-
 2. V nabídce **Správa pracovního volna** vyberte **Odstranit audit časového rozlišení pracovního volna**.
+
+## <a name="leave-accrual-rounding"></a>Zaokrouhlování časového rozlišení pracovního volna
+Když je zaměstnanec zaregistrován nebo odhlášen, zaokrouhlování dovolené bude poměrné. Dříve bylo zaokrouhlování povoleno pouze v případě, že plán dovolené byl nastaven na poměrnou část a zaměstnanec byl zaregistrován/odhlášen v polovině období. Časové rozlišení dovolené se nyní bude zaokrouhlovat bez ohledu na registraci/odhlášení v polovině období nebo na začátku období.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Audit transakce časového rozlišení pracovního volna
 

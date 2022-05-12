@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577641"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644631"
 ---
 # <a name="costing-parameter-values-setup"></a>Nastavení hodnot parametrů výpočtu nákladů
 
@@ -123,9 +123,9 @@ V následující tabulce jsou popsána nastavení, která jsou k dispozici pro k
 
 ## <a name="volumetric-divisors"></a>Objemové dělitele
 
-Pro výpočet objemové hmotnosti se používají objemové dělitele. Každá přepravní / nákladní společnost formuluje své vlastní objemové dělitele. Dělitelé společnosti se navíc obvykle liší v závislosti na způsobu doručení. Například přeprava vzduchem a po moři mají často velmi odlišné dělitele. Společnost může také vytvářet složitější pravidla podle toho, odkud odesílá.
+Pro výpočet objemové hmotnosti se používají objemové dělitele. Každá přepravní / nákladní společnost formuluje své vlastní objemové dělitele. Dělitelé společnosti se navíc obvykle liší v závislosti na způsobu doručení. Například přeprava vzduchem a po moři mají často velmi odlišné dělitele. Společnost může také vytvářet složitější pravidla podle toho, odkud odesílá. Systém používá k nalezení objemové hmotnosti následující vzorec: Objemová hmotnost = Objem ÷ Objemový dělitel.
 
-Například balíček odeslaný letecky má objem 3 krychlové metry (m³). Společnost ho zpoplatňuje na základě objemové hmotnosti a uplatňuje objemový dělitel 6. Tento dělitel se vynásobí objemem a určí se tak objemová hmotnost. Proto je objemová hmotnost pro tento příklad 3 × 6 = 18 kilogramů (kg).
+Například balíček odeslaný letecky má objem 3 krychlové metry (m³). Společnost ho zpoplatňuje na základě objemové hmotnosti a uplatňuje objemový dělitel 6. Tento dělitel vydělí objem a určí se tak objemová hmotnost. Proto je objemová hmotnost pro tento příklad 3 ÷ 6 = 0,5 kilogramu (kg).
 
 Chcete-li nastavit objemové dělitele, přejděte na stránku **Náklady za doručení \> Nastavení výpočtu nákladů \> Objemové dělitele**. Stránka **Objemové dělitele** poskytuje mřížku se seznamem všech existujících objemových dělitelů. Pomocí tlačítek na panelu akcí můžete přidávat, odebírat a upravovat řádky v mřížce.
 
@@ -136,4 +136,7 @@ V následující tabulce jsou popsána pole, která jsou k dispozici v každém 
 | Dopravní společnost | Vyberte účet dodavatele přepravní společnosti, který je spojen s objemovým dělitelem. |
 | Kód typu nákladů | Vyberte kód typu nákladů, který je spojen s objemovým dělitelem. Toto pole slouží k vložení typů nákladů do intervalů sestav. Sestavy lze tisknout buď podle kategorií vykazování, nebo podle typu nákladů. |
 | Výchozí přístav | Vyberte přístav „od“, na který se vztahuje objemový dělitel. |
-| Objemový dělitel | Zadejte hodnotu objemového dělitele, která se použije na řádek. Hodnota, kterou zadáte, bude *vynásobena* objemem každého balení k určení objemové hmotnosti daného balení. |
+| Objemový dělitel | Zadejte hodnotu objemového dělitele, která se použije na řádek. Hodnota každého balení bude vynásobena objemem, který zadáte, a vypočítá se tak objemová hmotnost daného balení. |
+
+> [!NOTE]
+> Systém použije maximální hodnotu údajů **skutečná hmotnost** a **objemová hmotnost**.

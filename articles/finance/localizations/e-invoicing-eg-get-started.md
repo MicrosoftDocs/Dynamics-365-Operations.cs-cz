@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371349"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661715"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronická fakturace pro Egypt
 
@@ -42,7 +42,7 @@ Než začnete provádět postupy v tomto tématu, musejí být dokončeny násl
     - [Nainstalujte doplněk pro mikroslužby ve službě Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
     
 - Aktivujte integraci mezi aplikací Microsoft Dynamics 365 Finance nebo Dynamics 365 Supply Chain Management a službou Elektronická fakturace, jak je popsáno v tématu [Aktivace a nastavení integrace s Elektronickou fakturací](e-invoicing-activate-setup-integration.md).
-- Vytvořte tajný kód digitálního certifikátu v Azure Key Vault a nastavte jej podle popisu v tématu [Zákaznické certifikáty a tajné kódy](e-invoicing-customer-certificates-secrets.md). Pro účely testování egyptský daňový úřad poskytuje konkrétní testovací digitální certifikáty, které se musí používat pouze během fází testování a ověřování řešení. Další informace najdete na webových stránkách egyptského daňového úřadu pomocí odkazu uvedeného v [SDK egyptské elektronické fakturace](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Vytvořte tajný kód digitálního certifikátu v Azure Key Vault a nastavte jej podle popisu v tématu [Zákaznické certifikáty a tajné kódy](e-invoicing-customer-certificates-secrets.md). Pro účely testování egyptský daňový úřad poskytuje konkrétní testovací digitální certifikáty, které se musí používat pouze během fází testování a ověřování řešení. Další informace najdete na webových stránkách egyptského daňového úřadu pomocí odkazu uvedeného v [SDK egyptské elektronické fakturace](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Konfigurace specifické pro zemi pro funkci egyptské elektronické fakturace (EG)
 
@@ -56,7 +56,7 @@ Některé parametry funkce **Egyptská elektronická faktura (EG)** jsou publiko
 6. Na kartě **Kanál zpracování** vyberte v sekci **Kanál zpracování** možnost **Podepsat dokument JSON pro egyptský daňový úřad**.
 7. V sekci **Parametry** vyberte **Název certifikátu** a potom vyberte název digitálního certifikátu, který jste vytvořili.
 8. V sekci **Kanál zpracování** vyberte **Integrovat s egyptskou službou ETA**. Tento krok opakujte pro dva výskyty této akce.
-9. V sekci **Parametry** vyberte možnosti **Adresa URL webové služby** a **Adresa URL přihlašovací služby**. Poté zkontrolujte parametry adresy URL. Chcete-li získat testovací a produkční adresu URL, přejděte na web egyptského daňového úřadu pomocí odkazu uvedeného v tématu [SDK egyptské elektronické fakturace](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. V sekci **Parametry** vyberte možnosti **Adresa URL webové služby** a **Adresa URL přihlašovací služby**. Poté zkontrolujte parametry adresy URL. Chcete-li získat testovací a produkční adresu URL, přejděte na web egyptského daňového úřadu pomocí odkazu uvedeného v tématu [SDK egyptské elektronické fakturace](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Zvolte **Uložit** a zavřete stránku.
 11. Opakujte kroky 4 až 10 a nastavte funkci **Odvozená projektová faktura**.
 

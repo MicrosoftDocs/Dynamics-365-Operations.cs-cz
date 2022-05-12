@@ -2,27 +2,42 @@
 title: Nastavení fiskální integrace pro obchodní kanály
 description: Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462150"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661742"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Nastavení fiskální integrace pro obchodní kanály
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoobchodní kanály. Další informace o fiskální integraci naleznete v tématu [Přehled fiskální integrace pro velkoobchodní kanály](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Povolení funkcí v centrále Commerce
+
+Chcete-li povolit funkce související s funkcí fiskální integrace pro obchodní kanály, postupujte takto.
+
+1. V centru Commerce přejděte do nabídky **Správa systému \> Pracovní prostory \> Správa funkcí**.
+1. Najděte a povolte následující funkce:
+
+    - **Přímá fiskální integrace z registrů POS** – Tato funkce rozšiřuje rámec fiskální integrace přidáním schopnosti vytvářet fiskální konektory, které budou provozovány v místě prodeje (POS). Tento typ konektoru komunikuje s fiskálním zařízením nebo službou, která poskytuje aplikační programovací rozhraní HTTP (API) a nevyžaduje vyhrazený fyzický stroj v obchodě. Tato funkce například umožňuje fiskální integraci pro mobilní zařízení bez potřeby sdílené hardwarové stanice.
+    - **Přepsání technického profilu fiskální integrace** – Tato funkce umožňuje rozšíření konfigurace fiskální integrace a přidává možnost kontroly parametrů připojení na stránce nastavení registru POS. Když je tato funkce povolena, můžete přepsat parametry technického profilu.
+    - **Stav fiskální registrace registrů POS** – Když je tato funkce povolena, můžete zakázat proces fiskální registrace pro konkrétní registry POS. Pokud je pro registr POS zakázána fiskální registrace, nelze v tomto registru provádět prodejní transakce.
+    - **Fiskální integrace zálohování místního úložiště** – Tato funkce rozšiřuje možnosti zpracování chyb rámce fiskální integrace. Umožňuje také automatické zálohování dat fiskální registrace v případě ztráty dat, takže data v místním úložišti jsou obnovena během aktivace zařízení.
+
 ## <a name="set-up-commerce-parameters"></a>Nastavení parametrů velkoobchodu
+
+Chcete-li nastavit obecné parametry, postupujte následujícím způsobem.
 
 1. Na stránce **Sdílené parametry velkoobchodu** na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.
 1. Na kartě **Číselné řady** definujte číselné řady pro následující reference:
@@ -33,8 +48,8 @@ Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro velkoo
 
 1. Na stránce **Parametry velkoobchodu** definujte číselné řady pro číslo fiskálního funkčního profilu.
 
-    > [!NOTE]
-    > Číselné řady jsou volitelné. Čísla pro všechny entity fiskální integrace lze generovat z číselných řad nebo ručně.
+> [!NOTE]
+> Číselné řady jsou volitelné. Čísla pro všechny entity fiskální integrace lze generovat z číselných řad nebo ručně.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Nastavení procesu fiskální registrace
 
@@ -176,7 +191,7 @@ Tok fiskální registrace je definován procesem fiskální registrace a také u
 - Přihlášení k odběru akcí a transakcí pro fiskální registraci je u poskytovatele fiskálního dokumentu předdefinované.
 - Poskytovatel fiskálního dokumentu nese odpovědnost také za identifikaci fiskálního konektoru, který se používá k fiskální registraci. Odpovídá funkčním profilům konektoru, které jsou zahrnuty ve skupině fiskálních konektorů, která je zadaná pro aktuální krok procesu daňové registrace s technickým profilem konektoru, který je přiřazen profilu hardwaru hardwarové stanice, se kteoru je POS spárován.
 - Poskytovatel fiskálního dokumentu používá nastavení mapování dat z konfigurace poskytovatele fiskálního dokumentu k transformaci dat transakce nebo události, například daně a plateb, zatímco je generován daňový doklad.
-- Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v programovacím rozhraní aplikace zařízení (API) v závislosti na tom, jak je komunikace zpracovávána.
+- Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v rozhraní API v závislosti na tom, jak je komunikace zpracovávána.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Nastavte registry s omezeními fiskální registrace
 
@@ -283,4 +298,21 @@ Chcete-li povolit ruční provedení odložené fiskální registrace, měli bys
     1. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Zobrazení parametrů připojení a dalších informací v POS
+
+Chcete-li zobrazit parametry připojení a další informace v systému POS, postupujte podle následujících kroků.
+
+1. Otevřete Modern POS (MPOS) nebo Cloud POS (CPOS).
+1. Vyberte **Nastavení**. Pokud je fiskální integrace povolena, zobrazí se v části **Fiskální integrace** vpravo následující informace:
+
+    - Stav fiskální registrace
+    - Stav poslední fiskální transakce
+    - Počet čekajících událostí auditu
+
+1. Vyberte **Detaily** k zobrazení následujících informací:
+
+    - Kroky procesu registrace
+    - Parametry připojení
+    - Podrobnosti událostí auditu
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

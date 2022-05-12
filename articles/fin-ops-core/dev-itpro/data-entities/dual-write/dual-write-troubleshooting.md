@@ -2,19 +2,19 @@
 title: Obecné řešení potíží
 description: Toto téma obsahuje obecné informace o odstraňování potíží pro integrací dvojitého zápisu mezi aplikacemi Finance a Operace a Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554592"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614088"
 ---
 # <a name="general-troubleshooting"></a>Obecné řešení potíží
 
@@ -131,6 +131,29 @@ Chcete-li znovu povolit možnost formuláře **Informace**, postupujte následuj
 2. Vyhledejte formulář **Informace** v uzlu formulářů.
 3. Vyberte formulář **Informace** a klikněte na možnost **Povolit role zabezpečení**.
 4. Změňte nastavení zabezpečení na **Zobrazit všem**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Jak zajistit integraci dat pomocí nejaktuálnějšího finančního a provozního schématu
+
+Pokud nepoužíváte nejaktuálnější schéma, můžete při integraci dat čelit problémům s daty. Následující kroky vám pomohou aktualizovat seznam entit ve finančních a provozních aplikacích a entity v integrátoru dat.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Obnovení seznamu entit v prostředí finančních a provozních aplikací
+1.  Přihlaste se do svého prostředí finančních a provozních aplikací.
+2.  Vyberte **Správa dat**.
+3.  V části Správa dat vyberte **Parametry architektury**.
+4.  Na stránce **Parametry platformy importu a exportu dat** vyberte kartu **Nastavení entity** a poté vyberte **Obnovit seznam entit**. Obnovení může trvat déle než 30 minut, v závislosti na počtu zúčastněných entit.
+5.  Přejděte do **Správy dat**, vyberte **Datové entity** a zkontrolujte, že v seznamu jsou uvedeny očekávané entity. Pokud očekávané entity nejsou uvedeny, ověřte, že se entity objevují ve vašem prostředí finančních a provozních aplikací, a podle potřeby obnovte chybějící entity.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Pokud obnovení nevyřeší problém, odstraňte a znovu přidejte entity
+
+> [!NOTE]
+> Možná budete muset před odstraněním zastavit všechny skupiny zpracování, které aktivně používají entity.
+
+1.  V prostředí finančních a provozních aplikací vyberte položku **Správa dat** a poté vyberte **Datové entity**.
+2.  Vyhledejte problematické entity a vytvořte si poznámku o cílové entitě, pracovní tabulce, názvu entity a dalších nastaveních. Odstraňte entitu nebo entity ze seznamu.
+3.  Vyberte položku **Nová** a znovu přidejte entitu nebo entity pomocí dat z kroku 2. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Obnovení entit v integrátoru dat
+Přihlaste se do Centra pro správu Power Platform a vyberte **Integrace dat**. Otevřete projekt, kde se vyskytují problémy, a vyberte příkaz **Obnovit entity**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Jak povolit a uložit trasování sítě, aby bylo možné připojit stopy k podpoře lístků
 

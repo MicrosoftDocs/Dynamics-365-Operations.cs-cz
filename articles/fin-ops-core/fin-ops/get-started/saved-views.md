@@ -2,7 +2,7 @@
 title: Uložená zobrazení
 description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065699"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644780"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -45,7 +45,7 @@ Po zpřístupnění zobrazení pro prostředí bude horní část libovolné str
 
 Výběr zobrazení obsahuje dvě varianty velikosti: 
 
-- **Selektory velkého zobrazení** - Stránky, které výrazně vyplní seznam, budou mít větší výběr zobrazení z několika důvodů. Nejdůležitější je, že větší selektor zobrazení označuje stránky, jejichž zobrazení může zahrnovat uživatelem definované filtry. Vzhledem k tomu, že filtry jsou zahrnuty v zobrazeních, je rovněž odůvodněna větší velikost selektoru, protože zobrazené názvy jsou často nejlepším popisem dat zobrazených na obrazovce a očekávání je, že uživatelé budou pro tyto typy stránek častěji přepínat mezi zobrazeními.
+- **Selektory velkého zobrazení** - Stránky, které výrazně vyplní seznam, budou mít větší výběr zobrazení z několika důvodů. Nejdůležitější je, že větší selektor zobrazení označuje stránky, jejichž zobrazení může zahrnovat uživatelem definované filtry a řazení. Vzhledem k tomu, že filtry a řazení jsou zahrnuty v zobrazeních, je rovněž odůvodněna větší velikost selektoru, protože zobrazené názvy jsou často nejlepším popisem dat zobrazených na obrazovce a očekávání je, že uživatelé budou pro tyto typy stránek častěji přepínat mezi zobrazeními. Seskupení v mřížce lze také uložit do zobrazení na stránce s výběrem velkých zobrazení. 
 - **Selektory malého zobrazení** - všechny ostatní stránky přes celou obrazovku (s výjimkou pracovních prostorů a řídicích panelů) mají menší výběr zobrazení, který se zobrazí vedle titulku stránky. Zobrazení na těchto stránkách zahrnují pouze přizpůsobení a ne uživatelem definované filtry. Na těchto stránkách se často jedná o nejdůležitější informace v horní části stránky. Menší velikost selektoru zobrazení také odráží nižší očekávanou frekvenci přepínání zobrazení na těchto stránkách. 
  
 Vyberte-li název zobrazení, otevře se výběr zobrazení a zobrazí se seznam dostupných zobrazení pro tuto stránku.

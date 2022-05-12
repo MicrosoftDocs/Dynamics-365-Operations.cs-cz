@@ -2,7 +2,7 @@
 title: Úprava leasingů
 description: Toto téma vysvětluje, jak upravit leasing. Může být vyžadována úprava, pokud dojde ke změně podmínek leasingu, prodloužení leasingu nebo změně jiných okolností.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729647"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644548"
 ---
 # <a name="adjust-leases"></a>Úprava leasingů
 
@@ -134,5 +134,19 @@ Pokud byl leasing upraven, můžete zobrazit jeho různé verze. Můžete si tak
 2. Chcete-li zobrazit historické plány, otevřete upravený leasingu ze stránky **Souhrn leasingu**, vyberte požadovanou knihu a poté v podokně akcí vyberte **Historie verzí knihy**.
 3. Na stránce **Verze knihy** vyberte verzi a plán, které chcete zobrazit.
 
+## <a name="adjust-a-lease-book"></a>Úprava leasingové knihy
+
+Chcete-li upravit pouze leasingovou knihu, postupujte následovně.
+
+1. Přejděte na **Leasing majetku** \> **Leasingy** \> **Shrnutí leasingu**.
+2. Vyberte a otevřete leasing.
+3. Na stránce **Podrobnosti o leasingu** vyberte **Knihy**.
+4. V podokně Akce na kartě **Podrobnosti o knize** ve skupině **Správa** vyberte **Upravit knihu**. 
+5. Odeberte řádky platebního kalendáře.
+6. V poli **Datum změny leasingu** zadejte datum změny. Poté zvažte odstranění všech dalších aspektů aktiv/pasiv (počáteční přímé náklady, pobídka k uzavření leasingové smlouvy, leasingové zálohy, náklady na demontáž a záruka zůstatkové hodnoty), pokud nějaké existují. 
+7. Chcete-li předejít nepřesným výpočtům při úpravě leasingu, přidejte nové řádky plánu plateb pro nová data plateb, která odpovídají datu úpravy. 
+
+> [!NOTE] 
+> Při úpravě leasingu doporučujeme použít průvodce **Úprava leasingu**. Průvodce snižuje počet ručních kroků, poskytuje náhled zůstatků po úpravě a umožňuje změnit částky před zaúčtováním.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

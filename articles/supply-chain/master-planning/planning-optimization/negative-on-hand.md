@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469135"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625379"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Plánování se záporným množstvím na skladě
 
@@ -75,7 +75,7 @@ Výsledkem je plánovaná objednávka na 25 kusů. (= 25 ks. &minus;0 kusů.) pr
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Plánování při existenci rezervace proti negativním zásobám na skladě
 
-Pokud upravujete zásoby v době, kdy existují fyzické rezervace, můžete způsobit situaci, kdy je objednávka fyzicky rezervována proti negativním zásobám na skladě. V tomto případě, protože existuje fyzická rezervace, aplikace Optimalizace plánování předpokládá, že to množství na skladě umožňuje, i když příjem množství na skladě ještě není v systému zaregistrován. Proto předpokládá, že doplnění není nutné, a nevytvoří plánovanou objednávku k doplnění množství objednávky.
+Pokud upravujete zásoby v době, kdy existují fyzické rezervace, můžete způsobit situaci, kdy je objednávka fyzicky rezervována proti negativním zásobám na skladě. V tomto případě, protože existuje fyzická rezervace, musíte mít zásobu na pokrytí rezervovaného množství. Proto je nutné doplnění, takže systém buď vytvoří plánovanou objednávku na doplnění množství, které nebylo možné pokrýt stávající skladovou zásobou, nebo ji pokryje existující objednávkou položky.
 
 Ilustruje to následující vzorový scénář.
 
@@ -88,7 +88,7 @@ Systém je konfigurován následujícím způsobem:
 - Existuje prodejní objednávka na množství *10* ks produktu *FG*.
 - Množství prodejní objednávky je fyzicky rezervováno proti stávajícímu množství na skladě.
 
-Poté upravíte množství produktu *FG*, takže množství na skladě klesne na 0 (nula). Vzhledem k tomu, že zásoba produktu na skladě je nulová, je nyní množství prodejní objednávky vyhrazeno proti zápornému množství na skladě. Pokud však nyní spustíte hlavní plánování, nevytvoří se žádná plánovaná objednávka k dodání prodejní objednávky, protože Optimalizace plánování předpokládá, že k dodání fyzické rezervace existuje požadované množství na skladě.
+Poté upravíte množství produktu *FG*, takže množství na skladě klesne na 5. Protože množství produktu na skladě je 5, množství prodejní objednávky je nyní rezervováno proti množství, které není k dispozici na skladě (bylo by podobné, kdyby na skladě bylo 0, v takovém případě by prodejní objednávka byla rezervována proti záporným zásobám ). Když nyní spustíte hlavní plánování, vytvoří se plánovaná objednávka s množstvím 5 pro *FG* k dodání prodejní objednávky, protože Optimalizace plánování vždy použije stávající dodávku nebo vytvoří novou plánovanou objednávku k dodání fyzické rezervace.
 
 ## <a name="related-resources"></a>Související prostředky
 

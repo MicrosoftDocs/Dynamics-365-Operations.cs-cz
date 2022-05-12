@@ -2,7 +2,7 @@
 title: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění z Dynamics 365 Commerce.
 author: josaw
-ms.date: 03/04/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384600"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649068"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Commerce
 
@@ -32,6 +32,20 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zas
 
 > [!NOTE]
 > Podrobné informace o objektech v finančních a provozních aplikacích lze nalézt v části [Sestavy technických informací](/dynamics/s-e/). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí finančních a provozních aplikací.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.25
+
+### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
+
+Aplikace Modern Point of Sale (MPOS) bude ve verzi Commerce 10.0.25 ukončena a nahrazena aplikací Store Commerce.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Aplikace v prodejných jsou základním kamenem nabídky omnikanálu Dynamics 365 Commerce. Neustále inovujeme, abychom poskytovali moderní a inteligentní řešení do prodejen a za účelem další modernizace našeho řešení zavádíme nové sady změn, které výrazně zlepší IT operace a uživatelská prostředí v našich stávajících aplikacích do prodejen pro systém Windows. Nová aplikace Store Commerce je technologický upgrade stávající aplikace MPOS. Poskytuje lepší výkon, spolehlivost a dlouhodobou podporu na platformě Windows a eliminuje potřebu opakovaného vytvoření balíčku aplikace s každou aktualizací. |
+| **Nahrazeno jinou funkcí?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
+| **Ovlivněné oblasti produktu**         | Modern Point of Sale |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od verze Commerce 10.0.25 bude instalační program MPOS dodávaný prostřednictvím virtuálních počítačů LCS (VM) odstraněn v říjnu 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.21
 
@@ -59,7 +73,7 @@ Retail SDK se dodává ve službě Lifecycle Services (LCS). Tento způsob distr
 | **Nahrazeno jinou funkcí?**   |  [Stažení ukázek Retail SDK a referenčních balíčků z GitHub a NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Ovlivněné oblasti produktu**         | Retail SDK |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Od verze 10.0.21 bude sada SDK dodávaná prostřednictvím virtuálních počítačů LCS v dubnu 2023 odstraněna. |
+| **Stav**                         | Zastaralé: Od verze 10.0.21 bude sada SDK dodávaná prostřednictvím virtuálních počítačů LCS v říjnu 2023 odstraněna. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Maloobchodně nasaditelný balíček a kombinované instalační programy POS, hardwarové stanice a cloudové škály
 
@@ -92,7 +106,7 @@ Vývoj rozšíření POS pomocí ModernPos.sln, CloudPos, POS.Extension.csproj a
 | **Nahrazeno jinou funkcí?**   | [Balení SDK nezávislé na POS](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Ovlivněné oblasti produktu**         | Rozšíření a nasazení Dynamics 365 Commerce POS |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Od verze 10.0.21 bude v dubnu 2023 odebrána podpora pro kombinované POS balíčky a model rozšíření využívající ModernPos.Sln, CloudPOs.sln a POS.Extensons.csproj v Retail SDK. |
+| **Stav**                         | Zastaralé: Od verze 10.0.21 bude v říjnu 2023 odebrána podpora pro kombinované POS balíčky a model rozšíření využívající ModernPos.Sln, CloudPOs.sln a POS.Extensons.csproj v Retail SDK. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Odebrané nebo zastaralé funkce v aplikaci Commerce verze 10.0.17
 

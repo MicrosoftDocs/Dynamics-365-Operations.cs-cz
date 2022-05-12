@@ -2,7 +2,7 @@
 title: Správa metadat SEO
 description: Toto téma popisuje způsob správy metadat optimalizace vyhledávačů (SEO) v aplikaci Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751560"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644752"
 ---
 # <a name="manage-seo-metadata"></a>Správa metadat SEO
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje způsob správy metadat optimalizace vyhledávačů (SEO) v aplikaci Microsoft Dynamics 365 Commerce.
 
@@ -62,19 +63,23 @@ Dynamics 365 Commerce umožňuje spravovat metadata SEO pro jednotlivé stránky
 ### <a name="modify-page-metadata"></a>Upravit metadata stránky
 
 Chcete-li upravit metadata stránky, postupujte takto.
-
 1. V části **Weby** vyberte **Fabrikam** (nebo název vašeho webu).
 1. V navigačním podokně nalevo vyberte položku **Stránky**.
 1. Vyberte domovskou stránku, kterou chcete otevřít v editoru stránek.
 1. Na příkazovém řádku vyberte možnost **Upravit**.
-1. V podokně vlastnosti vpravo rozbalte možnost **Výchozí metatagy**.
-1. Chcete-li přidat nový metatag, vyberte možnost **Přidat** a poté zadejte požadovanou značku do pole. Chcete-li odebrat existující metatag, vyberte symbol odpadkového koše napravo od něj.
+1. V editoru stránky v horní části ovládacího prvku obrysu stránky vlevo vyberte **Možnost režimu obrysu** (symbol ozubeného kola) a poté vyberte **Zobrazení rozšířeného obrysu**.
+1. V zobrazení obrysu rozbalte ovládací prvky stromu a zobrazte obsah pozice **Záhlaví HTML**.
+1. V pozici **Záhlaví HTML** vyberte požadovaný modul SEO (např. **Souhrn stránky**, **Souhrn produktové stránky**, **Přehled stránky kategorie** nebo **Metaznačky**).
+1. V podokně vlastností vpravo upravte požadovaná data SEO pro vybraný modul SEO (např. **Nadpis**, **Popis** nebo **Sdílení obrázku**).
 1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
-1. Do pole **Poznámky** zadejte **Aktualizované MetaTagy** a pak vyberte **OK.**
+1. Do pole **Komentáře** zadejte **Aktualizovaná SEO data** a pak vyberte **OK**.
 1. Chcete-li zobrazit náhled stránky, vyberte volbu **Náhled**. Až skončíte, zavřete kartu náhledu a vraťte se do nástroje pro vytváření obsahu.
 1. Zvolte **Publikovat**.
 
-## <a name="additional-resources"></a>Další zdroje
+> [!TIP]
+> Autoři mohou použít **Možnost režimu obrysu** (symbol ozubeného kola) v horní části levého ovládacího prvku obrysu v editoru stránek, aby se přepínali mezi režimy **Zobrazení základního obrysu** a **Zobrazení rozšířeného obrysu**. **Zobrazení základního obrysu** je výchozí nastavení a filtruje obrys tak, že zobrazuje pouze moduly v pozici **Tělo** HTML stránky. **Zobrazení rozšířeného obrysu** zobrazuje celý modul stránky, včetně pozic **Záhlaví HTML**, **Začátek těla** a **Konec těla**. Toto zobrazení je užitečné, když autoři musí upravit konkrétní nastavení modulu SEO nebo skriptu pro stránku.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Úprava existující webové stránky](modify-existing-page.md)
 

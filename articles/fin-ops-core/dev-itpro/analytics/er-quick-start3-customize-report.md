@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324080"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661651"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Přizpůsobte konfigurace elektronického výkaznictví tak, aby generovaly elektronický dokument
 
 [!include[banner](../includes/banner.md)]
 
-[Rámec elektronického výkaznictví (ER)](general-electronic-reporting.md) vám umožní nahrát ER [konfigurace](general-electronic-reporting.md#Configuration), které Microsoft poskytuje vaší instanci Microsoft Dynamics 365 Finance. Tímto způsobem mohou konfigurace poskytované společností Microsoft sloužit jako ER řešení, které se používá ke generování elektronických faktur zákazníka (e-faktury). Toto řešení ER můžete použít ke konfiguraci vlastního řešení ER pro přístup k vašim vlastním databázovým polím a generování elektronických faktur, které jsou v souladu s vašimi konkrétními požadavky, aniž byste museli upravovat zdrojový kód.
+[Architektura elektronického výkaznictví (ER)](general-electronic-reporting.md) vám umožní nahrát [konfigurace](general-electronic-reporting.md#Configuration) ER poskytované společností Microsoft do vaší instance Microsoft Microsoft Dynamics 365 Finance. Tímto způsobem mohou konfigurace poskytované společností Microsoft sloužit jako ER řešení, které se používá ke generování elektronických faktur zákazníka (e-faktury). Toto řešení ER můžete použít ke konfiguraci vlastního řešení ER pro přístup k vašim vlastním databázovým polím a generování elektronických faktur, které jsou v souladu s vašimi konkrétními požadavky, aniž byste museli upravovat zdrojový kód.
 
 ## <a name="overview"></a>Přehled
 
@@ -61,7 +61,7 @@ Jako uživatel v roli funkčního konzultanta elektronického výkaznictví nebo
 ### <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** vyberte v části **Související odkazy** možnost **Parametry elektronického výkaznictví**.
+2. Na stránce **Plán lokalizace** vyberte v části **Související odkazy** možnost **Parametry elektronického výkaznictví**.
 3. Na stránce **Parametry elektronického výkaznictví** nastavte na kartě **Obecné** u možnosti **Povolit režim návrhu** hodnotu **Ano**.
 4. Na kartě **Přílohy** v poli **Konfigurace** vyberte **Soubor**.
 5. V polích **Archiv úloh**, **Dočasné**, **Základ** a **Ostatní** vyberte typ **souboru**.
@@ -78,13 +78,13 @@ U každé přidané konfigurace elektronického výkaznictví je vyznačen jako 
 #### <a name="review-the-list-of-er-configuration-providers"></a>Kontrola seznamu poskytovatelů konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
+2. Na stránce **Plán lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
 3. Na stránce **Tabulka poskytovatelů konfigurací** má záznam každého poskytovatele jedinečný název a adresu URL. Zkontrolujte obsah této stránky. Pokud již existuje záznam **Litware, Inc.** ( `https://www.litware.com`), další postup, [přidání nového poskytovatele konfigurace ER](#AddProvider), přeskočte.
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Přidání nového poskytovatele konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
+2. Na stránce **Plán lokalizace** v části **Související odkazy** vyberte možnost **Poskytovatelé konfigurací**.
 3. Na stránce **Poskytovatelé konfigurace** zvolte **Nový**.
 4. Do pole **Název** zadejte **Litware, Inc.**
 5. Do pole **Internetová adresa** zadejte `https://www.litware.com`.
@@ -93,7 +93,7 @@ U každé přidané konfigurace elektronického výkaznictví je vyznačen jako 
 #### <a name="activate-an-er-configuration-provider"></a>Aktivace poskytovatele konfigurace elektronického výkaznictví
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** klikněte v části **Poskytovatelé konfigurací** na dlaždici **Litware, Inc.** a poté vyberte možnost **Nastavit jako aktivní**.
+2. Na stránce **Plán lokalizace** klikněte v části **Poskytovatelé konfigurací** na dlaždici **Litware, Inc.** a poté vyberte možnost **Nastavit jako aktivní**.
 
 Další informace o poskytovatelích konfigurací elektronického výkaznictví naleznete v tématu [Vytvoření poskytovatelů konfigurací a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Další informace o poskytovatelích konfigurací elektronického výkaznictví 
 Chcete-li přidat standardní konfigurace ER do aktuální instance Finance, musíte je importovat z [úložiště](general-electronic-reporting.md#Repository) ER, jež je pro tuto instanci nakonfigurováno.
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Chcete-li zobrazit seznam úložišť pro poskytovatele Microsoft, klikněte na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurací** na dlaždici **Microsoft** a poté vyberte možnost **Úložiště**.
+2. Chcete-li zobrazit seznam úložišť pro poskytovatele Microsoft, klikněte na stránce **Plán lokalizace** v části **Poskytovatelé konfigurací** na dlaždici **Microsoft** a poté vyberte možnost **Úložiště**.
 3. Na stránce **Úložiště konfigurací** vyberte úložiště typu **Globální** a poté zvolte **Otevřít**. Pokud budete vyzváni k autorizaci pro připojení ke službě Regulatory Configuration Service, postupujte podle pokynů k autorizaci.
 4. Na stránce **Úložiště konfigurace** vyberte ve stromu konfigurací v levém podokně konfiguraci formátu **Prodejní faktury Peppol**.
 5. Na záložce s náhledem **Verze** vyberte verzi **11.2.2**.
@@ -116,7 +116,7 @@ Chcete-li přidat standardní konfigurace ER do aktuální instance Finance, mus
 ### <a name="review-the-imported-er-configurations"></a>Kontrola importovaných konfigurací ER
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Konfigurace** vyberte dlaždici **Konfigurace výkaznictví**.
+2. Na stránce **Plán lokalizace** v části **Konfigurace** vyberte dlaždici **Konfigurace výkaznictví**.
 3. Na stránce **Konfigurace** rozbalte pevnou záložku **Konfigurační komponenty**.
 4. V konfiguračním stromu v levém podokně rozbalte **Model faktury** a poté rozbalte **Prodejní faktura UBL**.
 

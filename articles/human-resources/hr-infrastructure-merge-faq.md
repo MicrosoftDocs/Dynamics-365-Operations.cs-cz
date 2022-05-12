@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062718"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661451"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Často kladené dotazy ke sloučení infrastruktiry Dynamics 365 Human Resources
 
@@ -45,7 +45,7 @@ Dynamics 365 Human Resources je samostatná aplikace, která používá jinou in
 
 ### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Moje organizace používá modul Human Resources v Dynamics 365 Finance, Supply Chain Management, Commerce či Project Operations. Jaké výhody uvidíme z těchto změn?
 
-Možnosti a investice do Dynamics 365 Human Resources nyní budou k dispozici zákazníkům, kteří používají HR modul v systému Dynamics 365 Finance. Některé z těchto funkcí zahrnují správu dovolené a nepřítomnosti, správu výhod a správu úkolů.
+Možnosti a investice, které byly dostupné v Dynamics 365 Human Resources, budou nyní k dispozici zákazníkům, kteří používají HR modul v aplikaci Dynamics 365 Finance. Některé z těchto funkcí zahrnují správu dovolené a nepřítomnosti, správu výhod a správu úkolů.
 
 ### <a name="will-i-lose-any-features-or-capabilities-that-i-currently-use"></a>Ztratím nějaké funkce nebo funkce, které aktuálně používám?
 
@@ -231,6 +231,3 @@ Stávající uživatelé aplikací Dynamics 365 a uživatelé samostatných apl
 
 K podpoře změny infrastruktury se nevyžadují další prostředí.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Na koho se mám obrátit, pokud mám další dotazy týkající se licencování produktů?
-
-Pokud máte otázky týkající se licencí, najdete další informace na [Biz Apps Hub - ceny a licence D365](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Pokud tyto informace nepomohou vyřešit váš problém, otevřete požadavek pomocí LicenseQ.

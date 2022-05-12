@@ -2,7 +2,7 @@
 title: Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B
 description: Toto téma popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v centrále Commerce.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323448"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616850"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323448"
 Toto téma popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v centrále Commerce.
 
 > [!NOTE]
-> Téma [Správa B2B obchodních partnerů pomocí zákaznických hierarchií](partners-customer-hierarchies.md) je předpokladem tohoto dokumentu. 
+> - Téma [Správa B2B obchodních partnerů pomocí zákaznických hierarchií](partners-customer-hierarchies.md) je předpokladem tohoto dokumentu.
+> - Ujistěte se, že jste inicializovali entitu typů dokumentů v ústředí Commerce otevřením formuláře **Typy dokumentů** v nabídce **Správa organizace \> Správa dokumentů \> Typy dokumentů**.
 
 Weby elektronického obchodování B2B vyžadují registraci organizací, aby se staly obchodními partnery. Poté, co organizace odešle registrační údaje na web elektronického obchodování B2B, projde požadavek na registraci procesem kvalifikace. Pokud se organizace úspěšně kvalifikuje, je přijata jako obchodní partner.
 

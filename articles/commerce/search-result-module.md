@@ -2,7 +2,7 @@
 title: Modul výsledků hledání
 description: Tohle téma se zabývá moduly výsledků hledání a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bae825ed7093494c48abac119c480be0dba4f951
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919467"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644919"
 ---
 # <a name="search-results-module"></a>Modul výsledků hledání
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 Tohle téma se zabývá moduly výsledků hledání a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
@@ -86,53 +86,44 @@ Chcete-li přidat modul výsledků vyhledávání na stránku kategorie, postupu
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Povolit povědomí o zásobách pro modul výsledků vyhledávání
 
-Zákazníci obecně očekávají, že web elektronického obchodu bude po celou dobu procházení informován o zásobách, takže se mohou rozhodnout, co dělat, pokud pro produkt neexistuje žádný inventář. Modul výsledků vyhledávání lze vylepšit tak, aby zahrnoval data inventáře a poskytoval následující možnosti:
+Zákazníci obecně očekávají, že web elektronického obchodu bude po celou dobu procházení informován o zásobách, takže se mohou rozhodnout, co dělat, pokud pro produkt neexistuje žádný inventář. Modul výsledků vyhledávání lze konfigurovat tak, aby zahrnoval data inventáře a poskytoval následující možnosti:
 
-- Spolu s produkty zobrazte štítek dostupnosti inventáře.
-- Skrýt produkty, které nejsou skladem.
-- Zobrazit produkty, které nejsou skladem, na konci seznamu výsledků vyhledávání.
-    
-Chcete-li povolit tato prostředí, musíte nakonfigurovat následující nastavení nezbytných předpokladů v centrále Commerce.
+- Spolu s produkty zobrazte štítek dostupnosti zásob.
+- Skryjte produkty, které nejsou skladem, v seznamu produktů.
+- Zobrazte produkty, které nejsou skladem, na konci seznamu výsledků vyhledávání.
+- Filtrujte produkty ve výsledcích vyhledávání podle úrovně inventáře.
 
-### <a name="enable-the-enhanced-e-commerce-product-discovery-to-be-inventory-aware-feature"></a>Aktivace funkce Vylepšené zjišťování produktů elektronického obchodování s ohledem na zásoby
+Chcete-li povolit tyto funkce, musíte nejprve povolit funkci **Vylepšené zjišťování produktů v e-commerce, abyste byli informováni o zásobách** v pracovním prostoru **Správa funkcí**.
 
 > [!NOTE]
-> Funkce **Vylepšené zjišťování produktů v elektronického obchodování s ohledem na zásoby** je k dispozici od verze Commerce 10.0.20.
+> Funkce **Vylepšené zjišťování produktů v elektronického obchodování s ohledem na zásoby** je k dispozici od verze Commerce 10.0.20 a novějších verzích.
 
-Chcete-li povolit funkci **Vylepšené zjišťování produktů v elektronického obchodování s ohledem na zásoby** v ústředí Commerce, postupujte takto.
+Vyhledávání produktů s ohledem na zásoby používá atributy produktů k získání informací o dostupnosti zásob. Nezbytným předpokladem této funkce je vytvoření vyhrazených atributů produktu, zadání dat o zásobách a jejich přidání do online kanálu. 
 
-1. Přejděte na **Pracovní prostory \> Správa funkcí**.
-1. Vyhledejte funkci **Vylepšené zjišťování produktů elektronického obchodování s ohledem na zásoby** a aktivujte ji.
-
-### <a name="configure-the-populate-product-attributes-with-inventory-level-job"></a>Konfigurace úlohy Naplnění atributů produktu úrovní zásob
-
-Úloha **Naplnění atributů produktu úrovní zásob** vytvoří nový atribut produktu pro zachycení dostupnosti zásob a poté tento atribut nastaví na nejnovější hodnotu úrovně zásob pro každý hlavní produkt. Protože se dostupnost zásob prodávaného produktu nebo sortimentu neustále mění, důrazně doporučujeme naplánovat úlohu jako dávkový proces.
-
-Chcete-li nakonfigurovat úlohu **Naplnění atributů produktu úrovní zásob:** centrále Commerce, postupujte takto.
+Chcete-li vytvořit vyhrazené atributy produktu pro podporu modulu výsledků vyhledávání s ohledem na skladové zásoby, postupujte takto.
 
 1. Přejděte na **Retail a Commerce \> Retail a Commerce IT \> Produkty a zásoby**.
-1. Vyberte **Naplnění atributů produktu úrovní zásob**.
-1. V dialogovém okně **Naplnění atributů produktu úrovní zásob** postupujte takto:
+1. Vyberte a otevřete **Naplnění atributů produktu úrovní zásob**.
+1. V dialogovém okně zadejte následující informace:
 
-    1. V části **Parametry** v poli **Atribut produktu a název typu** zadejte název vyhrazeného atributu produktu, který bude vytvořen pro zachycení dostupnosti zásob.
-    1. V části **Parametry** v poli **Dostupnost zásob na základě** vyberte množství, na kterém by měl být založen výpočet úrovně zásob (např. **Dostupné fyzické**).
-    1. V části **Spustit na pozadí** nakonfigurujte úlohu tak, aby se spouštěla na pozadí, a volitelně zapněte možnost **Dávkové zpracování**. 
+    1. V poli **Název atributu a typu produktu** zadejte název vyhrazeného atributu produktu, který bude vytvořen pro zachycení dostupnosti zásob.
+    1. V poli Parametry v poli **Dostupnost zásob na základě** vyberte typ množství, na kterém by měl být založen výpočet úrovně zásob (např. **Dostupné fyzické**). 
 
-> [!NOTE]
-> Pro konzistentní výpočet úrovně zásob napříč PDP a stránkami se seznamem produktů na vašem webu elektronického obchodu nezapomeňte vybrat stejnou možnost množství pro nastavení **Dostupnost zásob na základě** v centrále Commerce i nastavení **Úroveň zásob na základě** v nástroji Commerce Site Builder. Další informace o nastavení zásob v tvůrci webů naleznete v části [Použití nastavení zásob](inventory-settings.md).
-
-### <a name="configure-the-new-product-attribute"></a>Konfigurace nového atributu produktu
-
-Po spuštění úlohy **Naplnění atributů produktu úrovní zásob** musíte nakonfigurovat nově vytvořený atribut produktu na webu elektronického obchodu, kde chcete povolit přehled o zásobách pro modul výsledků vyhledávání.
-
-Ke konfiguraci atributu nového produktu v centrále Commerce postupujte následovně.
-
-1. Přejděte na **Retail a Commerce \> Nastavení kanálu \> Kategorie kanálu a atributy produktu** a vyberte web elektronického obchodování.
-1. Vyberte a otevřete přidruženou skupinu atributů, přidejte do ní nově vytvořený atribut produktu a poté stránku zavřete.
-1. Vyberte **Nastavit metadata atributu**, vyberte nově přidaný atribut produktu a poté zapněte možnosti **Zobrazit atribut na kanálu**, **Načítatelné**, **Lze zpřesnit** a **Lze se dotázat**.
+1. Spusťte úlohu na pozadí. Vzhledem k tomu, že se zásoby produktů ve vícekanálovém prostředí neustále mění, důrazně doporučujeme naplánovat tuto úlohu jako dávkový proces.
 
 > [!NOTE]
-> U produktů, které se zobrazují v modulu výsledků vyhledávání, se úroveň zásob zadává na úrovni hlavního produktu namísto úrovně jednotlivých variant. Má pouze dvě možné hodnoty: „na skladě“ a „není na skladě“. Samotný text hodnot je načten z definice [profil úrovně zásob](inventory-buffers-levels.md). Hlavní produkt je považován za vyprodaný pouze v případě, že nejsou skladem všechny jeho varianty. Úroveň zásob varianty je určena na základě definice profilu úrovně zásob produktu. 
+> Pro konzistentní výpočet úrovně zásob napříč stránkami a modly se seznamem produktů na vašem webu elektronického obchodu nezapomeňte vybrat stejnou možnost množství pro nastavení **Dostupnost zásob na základě** v centrále Commerce i nastavení **Úroveň zásob na základě** v nástroji Commerce Site Builder. Další informace o nastavení zásob v tvůrci webů naleznete v části [Použití nastavení zásob](inventory-settings.md).
+
+Chcete-li nakonfigurovat atributy produktu pro online kanál, postupujte takto. 
+
+1. Přejděte na **Retail and Commerce \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
+2. Vyberte online kanál, pro který chcete povolit modul výsledků vyhledávání s ohledem na zásoby.
+3. Vyberte a otevřete přidruženou skupinu atributů a přidejte do ní nově vytvořený atribut produktu.
+4. Pro verze služby Commerce před vydáním verze 10.0.27 vyberte **Nastavit metadata atributu**, vyberte nově přidaný atribut produktu a poté zapněte možnosti **Zobrazit atribut na kanálu**, **Načítatelné**, **Lze zpřesnit** a **Lze se dotázat**.
+5. Až budete hotovi, přejděte na **Maloobchod a velkoobchod \> IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu **Konfigurace kanálu 1150 (katalog)**. Pokud naplánujete úlohu **Naplnit atributy produktu úrovní zásob** jako dávkový proces, doporučujeme také naplánovat úlohu 1150 jako dávkový proces, který běží se stejnou frekvencí.
+
+> [!NOTE]
+> U produktů, které se zobrazují v modulu výsledků vyhledávání, se úroveň zásob ukazuje na úrovni hlavního produktu namísto úrovně jednotlivých variant. Má pouze dvě možné hodnoty: „na skladě“ a „není na skladě“. Skutečný popisek hodnoty je načten z definice [profil úrovně zásob](inventory-buffers-levels.md). Hlavní produkt je považován za vyprodaný pouze v případě, že nejsou skladem všechny jeho varianty.
 
 Po dokončení všech předchozích konfiguračních kroků zobrazí zpřesňující parametry na stránkách s výsledky vyhledávání filtr založený na inventáři a modul výsledků vyhledávání načte data inventáře ze zákulisí. Poté můžete nakonfigurovat **Nastavení zásob pro stránky se seznamem produktů** v nástroji Commerce Site Builder, abyste mohli ovládat, jak modul výsledků vyhledávání zobrazuje produkty, které nejsou skladem. Další informace [Použít nastavení zásob](inventory-settings.md).
 

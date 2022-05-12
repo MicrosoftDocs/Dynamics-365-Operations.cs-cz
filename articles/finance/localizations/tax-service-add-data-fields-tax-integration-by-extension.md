@@ -2,7 +2,7 @@
 title: Přidání datových polí do daňové integrace pomocí rozšíření
 description: Toto téma vysvětluje, jak používat rozšíření X++ k přidání datových polí do daňové integrace.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323516"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649094"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Přidání datových polí do daňové integrace pomocí rozšíření
 
@@ -334,9 +334,10 @@ Rozšiřte metodu `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentO
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-V tomto kódu je `_destination` objektem obálky, který se používá ke generování zasílaného požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.
+V tomto kódu je `_destination` objektem obálky, který se používá ke generování požadavku, a `_source` je objekt třídy `TaxIntegrationLineObject`.
 
 > [!NOTE]
-> Definujte klíč, který se používá ve formuláři žádosti, jako **private const str**. Řetězec by měl být přesně stejný jako název míry přidané v tématu [Přidání datových polí v daňových konfiguracích](tax-service-add-data-fields-tax-configurations.md).
-> Nastavte pole v metodě **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** pomocí metody **SetField**. Datový typ druhého parametru by měl být **string**. Pokud datový typ není **string**, převeďte ho na něj.
-> Pokud je rozšířen **výčtový typ** X++, všimněte si rozdílu mezi jeho hodnotou, popiskem a názvem.
+> Definujte název pole, které se používá ve formuláři žádosti, jako **private const str**. Řetězec by měl být přesně stejný jako název uzlu (nikoli popisek) přidaný v tématu [Přidání datových polí v daňových konfiguracích](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Nastavte pole v metodě **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** pomocí metody **SetField**. Datový typ druhého parametru by měl být **string**. Pokud datový typ není **string**, převeďte ho na řetězec.
+> Pokud je datový typ X++ **typ výčtu**, doporučujeme použít metodu **enum2Symbol** pro převod hodnoty enum na řetězec. Přidaná hodnota výčtu v konfiguraci daně by měla být přesně stejná jako název výčtu. Následuje seznam rozdílů mezi hodnotou výčtu, štítkem a názvem.
+> 
+>   - Název enum je symbolický název v kódu. **enum2Symbol()** lze použít k převodu hodnoty výčtu na jeho název.
 >   - Hodnota výčtu je typu integer.
->   - Popisek výčtu se může v různých preferovaných jazycích lišit. Nepoužívejte **enum2Str** k převodu výčtového typu na řetězec.
->   - Název výčtu je doporučen, protože je pevný. **enum2Symbol** lze použít k převodu výčtu na jeho název. Přidaná hodnota výčtu v konfiguraci daně by měla být přesně stejná jako název výčtu.
+>   - Popisek výčtu se může v různých preferovaných jazycích lišit. **enum2Str()** lze použít k převodu hodnoty výčtu na jeho popisek.
 
 ## <a name="model-dependency"></a>Závislost na modelu
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

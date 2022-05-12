@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565621"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625355"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -41,7 +41,7 @@ Aby bylo možné zřídit nové produkční prostředí, musí být splněny ná
 ## <a name="provision-a-human-resources-trial-environment"></a>Zřídit zkušební prostředí Human Resources
 
 >[!NOTE]
-> Od dubna 2022 nebudou zkušební prostředí Human Resources dostupná v samostatné aplikaci. Potenciální zákazníci, kteří mají zájem o vyhodnocení schopností Human Resources v rámci finančních a provozních aplikací, tak mohou učinit pomocí bezplatné 30denní zkušební verze spolu s ukázkovými daty. Dynamics 365 Finance bude zahrnovat funkce Human Resources přenesené do infrastruktury Finance sloučením samostatné aplikace. Více informací viz [Sloučení nabídek HR přináší zákazníkům možnosti](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Další informace o zkušebních verzích Dynamics 365 Finance najdete v podrobném [průvodci](/fin-ops/get-started/before-you-buy). 
+> Od dubna 2022 nebudou zkušební prostředí Human Resources dostupná v samostatné aplikaci. Potenciální zákazníci, kteří mají zájem o vyhodnocení schopností Human Resources v rámci finančních a provozních aplikací, tak mohou učinit pomocí bezplatné 30denní zkušební verze spolu s ukázkovými daty. Dynamics 365 Finance bude zahrnovat funkce Human Resources přenesené do infrastruktury Finance sloučením samostatné aplikace. Více informací viz [Sloučení nabídek HR přináší zákazníkům možnosti](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Další informace o zkušebních verzích Dynamics 365 Finance najdete v podrobném [průvodci](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Před zřízením prvního sandboxu nebo produkčního prostředí můžete zřídit [Zkušební prostředí Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) k ověření funkčnosti Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. 

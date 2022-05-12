@@ -2,7 +2,7 @@
 title: Finanční dimenze
 description: Toto téma popisuje různé typy finančních dimenzí a způsob jejich nastavení.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754187"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644332"
 ---
 # <a name="financial-dimensions"></a>Finanční dimenze
 
@@ -79,8 +79,12 @@ V zájmu udržení referenční integrity dat lze finanční dimenze v řídk�
 - Používá se finanční dimenze v nějaké aktivní účetní struktuře, struktuře rozšířeného pravidla nebo sadě finančních dimenzí?
 - Je finanční dimenze součástí výchozího formátu integrace finanční dimenze?
 - Byla finanční dimenze nastavena jako výchozí dimenze?
+- Byla v nastavení Financial Reporting zrušena volba finanční dimenze? 
 
 Pokud je odpověď na některou z těchto otázek kladná, finanční dimenzi nelze odstranit.
+
+> [!NOTE]
+> Počínaje verzí Finance 10.0.27 již nebudou finanční dimenze automaticky vybírány pro nastavení finančního výkaznictví při jejich vytváření. 
 
 ## <a name="default-dimension-values"></a>Výchozí hodnoty dimenze
 
