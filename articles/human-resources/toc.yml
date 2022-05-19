@@ -452,8 +452,6 @@
               href: hr-personnel-positions.md
             - name: Vytvoření kalendáře pracovní doby
               href: hr-personnel-create-working-time-calendar.md
-            - name: Nábor uchazečů o práci
-              href: hr-personnel-recruit.md
             - name: Často kladené dotazy k akcím personálu
               href: hr-personnel-actions-faq.md
             - name: Použití pracovního postupu ke správě informací o zaměstnanci
@@ -463,7 +461,7 @@
             - name: Úprava vztahů podřízenosti pro určitou pozici
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Zjednodušené zadávání zaměstnance
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: "Zadávání informací o\_pracovnících"
               href: hr-personnel-enter-worker-information.md
             - name: Pracovníci bez zaměstnání
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Nábor kandidátů
+            - name: Nábor
               items:
-                - name: Řízení náborových procesů
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Projekty hromadného zařazení
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Vytvoření projektů hromadného zařazení
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Vytvoření a otevření požadavků na práci
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Nastavení pozic
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Přijetí kandidátů prostřednictvím náboru
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Najmutí existujícího zaměstnance prostřednictvím náboru
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Přehled
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Náborové projekty
+                  items:
+                    - name: Řízení procesu náborových projektů
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: "Ruční zadávání dat o\_přihlášce a\_uchazeči"
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Vytvoření a otevření požadavků na práci
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Nastavení pozic
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Přijetí kandidátů prostřednictvím náboru
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Najmutí existujícího zaměstnance prostřednictvím náboru
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Projekty hromadného zařazení
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Vytvoření projektů hromadného zařazení
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Požadavky na nábor (sloučená infrastruktura)
+                  items:
+                    - name: Nábor uchazečů o práci
+                      href: hr-personnel-recruit.md
         - name: Správa úkolů
           href: hr-task-mgmt.md
         - name: "Pracovní volno a\_absence"
@@ -800,6 +806,8 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurace integrace s aplikací Finance
               href: hr-admin-integration-finance.md
+            - name: Vytváření odkazů z aplikace Human Resources do jiného prostředí
+              href: configure-links.md
             - name: Konfigurace integrace s aplikací Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Vytvoření aplikace pro export opakujících se dat

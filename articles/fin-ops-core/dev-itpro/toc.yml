@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: Integrace dat
           items:
-            - name: Integrace mezi aplikacemi Finance and Operations a službami třetích stran
+            - name: Integrace mezi finančními a provozními aplikacemi a službami třetích stran
               href: data-entities/integration-overview.md
-            - name: Omezování na základě priority
-              hreF: data-entities/priority-based-throttling.md
-            - name: Nejčastější dotazy k omezování na základě priority
-              href: data-entities/throttling-faq.md
             - name: Rozhraní API integrace dat
               items:
                 - name: REST API balíčku správy dat
@@ -74,6 +70,18 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testovací služby pomocí nástrojů třetích stran
                   href: data-entities/third-party-service-test.md
+            - name: Limity ochrany služeb
+              items:
+                - name: Limity rozhraní API ochrany služeb
+                  href: data-entities/service-protection-api-limits.md
+                - name: Priority omezování
+                  href: data-entities/priority-based-throttling.md
+                - name: Opakování operací
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Monitorování omezování rozhraní API
+                  href: data-entities/service-protection-monitoring.md
+                - name: Maximalizace propustnosti rozhraní API
+                  href: data-entities/service-protection-maximizing-api-throughput.md
             - name: Konektor Finance and Operations
               href: data-entities/fin-ops-connector.md
             - name: Vývoj pro integraci
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurace proxy pro místní prostředí
                       href: deployment/onprem-reverseproxy.md
+                    - name: Konfigurace aplikace skladů pro místní nasazení
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Instalace zařízení síťové tiskárny v místních prostředích
                       href: analytics/install-network-printer-onprem.md
                     - name: Místní diagnostika
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Rozšíření, přizpůsobení a spolupráce na nápovědě'
                   href: help/contributor-guide.md
-            - name: Zvažování nasazení
+            - name: Regionální služby finančních a provozních aplikací
               items:
-                - name: Možnosti nasazení suverénního a místního cloudu pro Dynamics 365 Finance a Dynamics 365 Supply Chain Management
+                - name: Místní oblasti
                   href: deployment/deployment-options-geo.md
-                - name: Finance a Supply Chain Management v US Government Community Cloud (GCC)
+                - name: US Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: Finance a Supply Chain Management provozované prostřednictvím 21Vianet v Číně
+                - name: "Provozované společností 21Vianet v\_Číně"
                   href: deployment/china-local-deployment.md
-                - name: Aplikace Finance and Operations ve Francii
-                  href: deployment/france-local-deployment.md
         - name: Vývoj a přizpůsobení
           items:
             - name: Domovská stránka Vývoj a přizpůsobení
@@ -559,7 +567,7 @@
                     - name: Přehled vytvoření modelů a prvků datového modelu
                       href: dev-tools/create-data-model-elements.md
                     - name: "Pokyny k\_názvům pro rozšíření"
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Vypnutí přizpůsobení modelu a neschválení funkce
                       href: dev-tools/lock-models.md
                 - name: Sestava analýz úprav

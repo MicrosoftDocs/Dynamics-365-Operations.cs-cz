@@ -1,25 +1,23 @@
 ---
 title: Nejčastější dotazy k finančnímu výkaznictví
 description: Toto téma poskytuje odpovědi na nejčastější dotazy týkající se finančního výkaznictví.
-author: jiwo
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: b5e0702864815c630f35e3f5b753ece1cb1daa71
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605272"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722289"
 ---
 # <a name="financial-reporting-faq"></a>Nejčastější dotazy k finančnímu výkaznictví
 
@@ -57,7 +55,7 @@ Pokud máte sestavu, který nemá odpovídající zůstatky, použijte k identif
 9. Vygenerujte sestavu. 
 10. Exportujte sestavu do Microsoft Excel.
 
-### <a name="in-dynamics-365-finance"></a>V Dynamics 365 Finance
+### <a name="in-dynamics-365-finance"></a>V aplikaci Dynamics 365 Finance
 
 1. Přejděte na **Hlavní kniha \> Dotazy a sestavy \> Předvaha**.
 2. Nastavte následující pole:
@@ -104,7 +102,7 @@ Podobně platí, že když se generují sestavy pomocí převodu měny pro účt
 
 ## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Jaké jsou odhadované intervaly integrace datového tržiště?
 
-Financial Reporter používá 16 úloh ke kopírování dat z Dynamics 365 Finance do databáze Financial Reporter. Následující tabulka uvádí těchto 16 úkolů a ukazuje interval, který určuje, jak často se jednotlivé úlohy spouští. Intervaly nelze změnit.
+Financial Reporter používá 16 úloh ke kopírování dat z aplikace Dynamics 365 Finance do databáze Financial Reporter. Následující tabulka uvádí těchto 16 úkolů a ukazuje interval, který určuje, jak často se jednotlivé úlohy spouští. Intervaly nelze změnit.
 
 | Název                                                       | Interval | Časové intervaly |
 |------------------------------------------------------------|----------|-----------------|

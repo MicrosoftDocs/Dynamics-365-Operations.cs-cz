@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Zakoupení Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurace skladů pro místní nasazení
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -272,6 +270,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Účetní profil dodavatele
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Vytvoření kódů poplatků
+              href: accounts-receivable/create-charges-codes.md
             - name: Data faktur dodavatele
               href: accounts-payable/vendor-invoice-dates.md
             - name: Přecenění cizí měny pro závazky a pohledávky
@@ -292,6 +292,8 @@
               items:
                 - name: Centralizované platby pro Závazky
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Nastavení a zpracování překlenovacích plateb
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Konfigurace vyrovnání
                   href: cash-bank-management/configure-settlement.md
                 - name: Vyrovnání zůstatku
@@ -354,8 +356,12 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Rozúčtování a položky dílčí hlavní knihy pro volné faktury
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: Zaúčtování pohledávek
+              href: general-ledger/accts-recvble-posting.md
             - name: Účetní profily odběratele
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Vytvoření kódů poplatků
+              href: accounts-receivable/create-charges-codes.md
             - name: Přehled přímého inkasa SEPA
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: Nastavení zmocnění přímého inkasa SEPA
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Scénáře data vyrovnání
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Rozdělení výnosů
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Časové rozlišení výnosů a výdajů
                   items:
                     - name: Nastavení časového rozlišení výnosů a výdajů
@@ -452,6 +460,8 @@
               items:
                 - name: Přehled plateb zákazníka
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Nastavení a zpracování překlenovacích plateb
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Centralizované platby pro pohledávky
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Vklad platby odběratele
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Duální měna
                       href: general-ledger/dual-currency.md
+                - name: Účetní profily
+                  items:
+                    - name: Přehled účetních profilů
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Doporučené postupy pro profily účtování
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Účty pro automatické transakce
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Pravidla přidělení
                   items:
                     - name: Pravidla přidělení hlavní knihy

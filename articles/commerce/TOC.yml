@@ -600,6 +600,8 @@
                       href: wallets.md
                     - name: Rozšířené platby v pokladně obchodu
                       href: dev-itpro/enhanced-sca.md
+                    - name: Konfigurace expresních plateb pro PayPal
+                      href: dev-itpro/express-payments-paypal.md
                     - name: Časté dotazy k platbám
                       href: dev-itpro/payments-retail.md
                 - name: "E-mail a\_oznámení"
@@ -958,6 +960,8 @@
               href: online-store-overview.md
             - name: Vytvoření webu elektronického obchodu
               items:
+                - name: Mapování kanálů na weby elektronického obchodování
+                  href: map-channels-sites.md
                 - name: Konfigurace názvu domény
                   href: configure-your-domain-name.md
                 - name: Nasazení nového klienta elektronického obchodu
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Migrace rozšíření POS do Commerce SDK
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Vytvoření projektu balíčku rozšíření POS
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Ladění rozšíření Store Commerce pomocí VS Code
                       href: dev-itpro/sc-debug.md
+                    - name: Zapečetěná rozšíření MPOS a CPOS
+                      items:
+                        - name: Vytvoření souboru .appx pro balíček rozšíření Modern POS
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: Ladění rozšíření MPOS (zapečetěné) a CPOS
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Nastavení prostředí
                   items:
                     - name: Místní vývojové prostředí
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Vytvoření projektu balíčku rozšíření POS
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Vytvoření souboru .appx pro balíček rozšíření Modern POS
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Ladění rozšíření POS
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Rozhraní API a reference
                   items:
                     - name: Zobrazení informací o balíčku rozšíření POS
@@ -2834,6 +2840,10 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Optimalizace modulu CSS
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Optimalizace obrázků na stránkách s podrobnostmi o produktu
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Optimalizace obrázků na stránkách vyhledávání a kategorií
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetrie a analýzy
                       items:
                         - name: Protokolovací nástroj telemetrie

@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zakoupení Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurace skladů pro místní nasazení
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zdroje dokumentace
               items:
                 - name: Systém nápovědy
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Import příchozích ASN prostřednictvím datové entity V2
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Import příchozích ASN prostřednictvím datové entity V3
+                  href: warehousing/import-asn-data-entity.md
                 - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
