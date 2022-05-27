@@ -1,22 +1,22 @@
 ---
 title: Synchronizace mezipodnikových informací o odběratelích
 description: Toto téma vysvětluje synchronizaci informací o odběratelích u mezipodnikových objednávek
-author: GalynaFedorova
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c82216c8391f6c447bec74f25cd16b9db18d468d
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 1949cb69f22ade6b0e03a02c93ad78e8b7e550ae
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548152"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672791"
 ---
 # <a name="synchronize-intercompany-customer-information"></a>Synchronizace mezipodnikových informací o odběratelích
 

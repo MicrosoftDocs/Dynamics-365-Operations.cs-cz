@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407787"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688367"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Upgrade na model strany a globálního adresáře
 
@@ -281,7 +281,7 @@ Tato část popisuje nastavení, které je nutné před spuštěním šablony Da
 
     ![Spouštění šablon Poštovní adresy strany a Elektronické adresy strany.](media/ADF-7.png)
 
-10. Chcete-li aktualizovat finanční a provozní aplikace s těmito daty, musíte převést soubory .csv do sešitu aplikace Excel a [importovat jej do finanční a provozní aplikace](/data-entities/data-import-export-job). Případně, pokud vám CSV import vyhovuje, můžete soubory .csv importovat přímo. V závislosti na objemu může tento krok trvat několik hodin.
+10. Chcete-li aktualizovat finanční a provozní aplikace s těmito daty, musíte převést soubory .csv do sešitu aplikace Excel a [importovat jej do finanční a provozní aplikace](../data-import-export-job.md). Případně, pokud vám CSV import vyhovuje, můžete soubory .csv importovat přímo. V závislosti na objemu může tento krok trvat několik hodin.
 
     ![Úspěšný import.](media/ADF-8.png)
 

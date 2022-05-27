@@ -1,7 +1,7 @@
 ---
 title: Přehled převodu standardních nákladů
 description: V tomto článku je popsán přehled usnadňující nastavení a spuštění převodu standardních nákladů. Uvedené kroky jsou určeny k dokončení po dokončení předběžných kroků nutných pro převod standardních nákladů.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b7b7973acedcfd0c0e74e47b82f2344c4eb63b50
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982682"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8679464"
 ---
 # <a name="standard-cost-conversion-overview"></a>Přehled převodu standardních nákladů
 

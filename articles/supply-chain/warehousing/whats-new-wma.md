@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
+ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644725"
+ms.lasthandoff: 05/02/2022
+ms.locfileid: "8661818"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Co je nového nebo změněného v mobilní aplikaci Warehouse Management
 
@@ -23,7 +23,7 @@ ms.locfileid: "8644725"
 
 Toto téma uvádí nové funkce, opravy, vylepšení a známé problémy pro každou vydanou verzi mobilní aplikace Warehouse Management pro Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="version-20210"></a>Verze 2.0.21.0
+## <a name="version-20220"></a>Verze 2.0.22.0
 
 Tato verze představuje následující nové funkce, opravy a vylepšení:
 

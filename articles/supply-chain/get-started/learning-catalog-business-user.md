@@ -1,23 +1,23 @@
 ---
 title: Katalog kurzů pro uživatele Dynamics 365 Supply Chain Management
 description: Vyhledejte všechny možnosti školení pro uživatele Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402659"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673179"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Katalog kurzů pro uživatele Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 |---------|-------------|--------|--------|
 | [Osvojení si obchodní hodnoty Microsoft Dynamics 365 a Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Máte zájem o získání informací o obchodních aplikacích? Možná nevíte, kde začít s aplikacemi Microsoft Dynamics 365 a Power Platform? Zjistěte, jakým způsobem mohou obchodní aplikace pomoci při transformování vašeho podniku. | Libovolná online školení vlastním tempem | 8 hodin |
 | [Základy Dynamics 365 a Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Máte zájem o získání informací o obchodních aplikacích? Začněte touto studijní cestou a zjistěte, jak se používají aplikace Dynamics 365. Informace o pojmech cloudu, Power Platform a o tom jak začít s aplikacemi Dynamics 365 | Libovolná online školení vlastním tempem | 5.5 hodin |
-| [Začínáme s aplikacemi Finance and Operations](/learn/paths/get-started-finance-operations/) | Informace, jak aplikace Finance and Operations podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s aplikacemi Finance and Operations se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
+| [Začínáme s finančními a provozními aplikacemi](/learn/paths/get-started-finance-operations/) | Informace, jak finanční a provozní aplikace podporují správu globálních finančních systémů, provozních obchodních procesů a efektivnějších dodavatelských řetězců, které usnadňují rychlé a informovaná rozhodnutí ve firmách. Jako první krok při práci s finančními a provozními aplikacemi se musíte seznámit s jejími funkcemi a funkcionalitou bez ohledu na požadovanou roli. | Libovolná online školení vlastním tempem | 2 hodin |
 | [Začínáme s doplňkem správy majetku pro Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Správa majetku je modul pro správu majetku a úloh údržby v aplikaci Dynamics 365 Supply Chain Management. Správa majetku umožňuje efektivně spravovat a provádět úkoly související se správou a údržbou mnoha typů zařízení ve vaší firmě, například strojů, výrobních zařízení a vozidel. Správa majetku podporuje řešení napříč četnými průmyslovými odvětvími. | Bezplatný online výukový modul pro školení vlastním tempem | 1 hodina |
 | [Začněte s doplňkem Engineering Change Management pro Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management poskytuje zaměstnancům a organizacím možnost získat jednotný přehled zásob, skladu, výroby, servisu a logistiky s prediktivní analýzou, která převádí data na postřehy zajišťující lepší strategická rozhodnutí. | Bezplatný online výukový modul pro školení vlastním tempem | 2 hodin |
 | [Začínáme s aplikací Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | S Dynamics 365 Intelligent Order Management zákazníci mohou řídit orchestraci objednávek až do jejich splnění. Tyto funkce umožňují organizacím organizovat toky objednávek na různých platformách a aplikacích. | Bezplatný online výukový modul pro školení vlastním tempem | 4 hodin |
@@ -39,10 +39,10 @@ Následující katalog je uspořádán od základních znalostí do konkrétníc
 
 ## <a name="core-platform-knowledge"></a>Základní znalost platforem<a name="core-platform-knowledge"></a>
 
-| Obsah | popis | Formát | Délka |
+| Obsah | Popis | Formát | Délka |
 |---------|-------------|--------|--------|
-| [Konfigurace organizace v aplikacích Finance and Operations](/learn/paths/configure-your-organization-finance-ops/) | Jako funkční konzultant, který pracuje s aplikacemi Finance and Operations, musíte chápat, jak nastavit organizaci pro daného zákazníka. Tato vzdělávací cesta zobrazuje mimo jiné úkoly, jak nastavit právnické osoby, implementovat nastavení zabezpečení, přizpůsobit uživatelské rozhraní pro uživatele, navrhovat a vytvářet mobilní aplikace a implementovat společné integrace. | Libovolná online školení vlastním tempem | 12 hodin |
-| [Konfigurace a práce s analýzou a vykazováním v aplikacích Finance and Operations](/learn/paths/configure-analytics-reporting-finance-operations/) | Vedoucí firem mohou ve své společnosti provádět důležitá rozhodnutí, pokud mají přesný přehled o základních rozpočtových a provozních datech. Podnikový uživatel může také konfigurovat a používat elektronický nástroj vykazování bez jediného řádku kódu, přijímat nové zákonné požadavky a vytvářet obchodní dokumenty v požadovaném formátu pro elektronickou výměnu informací s vládními institucemi, bankami a jinými stranami. | Libovolná online školení vlastním tempem | 4 hodin |
+| [Konfigurace organizace ve finančních a provozních aplikacích ve vaší organizaci.](/learn/paths/configure-your-organization-finance-ops/) | Jako funkční konzultant, který pracuje s aplikacemi finanční a provozní aplikace, musíte chápat, jak nastavit organizaci pro daného zákazníka. Tato vzdělávací cesta zobrazuje mimo jiné úkoly, jak nastavit právnické osoby, implementovat nastavení zabezpečení, přizpůsobit uživatelské rozhraní pro uživatele, navrhovat a vytvářet mobilní aplikace a implementovat společné integrace. | Libovolná online školení vlastním tempem | 12 hodin |
+| [Konfigurace a práce s analýzou a vykazováním ve finančních a provozních aplikacích](/learn/paths/configure-analytics-reporting-finance-operations/) | Vedoucí firem mohou ve své společnosti provádět důležitá rozhodnutí, pokud mají přesný přehled o základních rozpočtových a provozních datech. Podnikový uživatel může také konfigurovat a používat elektronický nástroj vykazování bez jediného řádku kódu, přijímat nové zákonné požadavky a vytvářet obchodní dokumenty v požadovaném formátu pro elektronickou výměnu informací s vládními institucemi, bankami a jinými stranami. | Libovolná online školení vlastním tempem | 4 hodin |
 
 ## <a name="supply-chain-management"></a>Správa dodavatelsko-odběratelského řetězce<a name="supply-chain-management"></a>
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02f0b0664dcb78d20c2719b4377dcc6047f2bf3392225f1cf9c166a1073ecd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772609"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686848"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources 21 leden 2021
 
@@ -43,7 +42,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 
 | Funkce | Plán vydání | Dokumentace |
 | --- | --- | --- |
-| Platform update 10.0.16(40) | -- | [Platform Update pro verzi 10.0.16 aplikací Finance and Operations (únor 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Platform update 10.0.16(40) | -- | [Aktualizace platformy pro verze 10.0.16 finančních a provozních aplikací (únor 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Vylepšené požadavky a schválení pracovního toku | [Vylepšení prostředí pracovního postupu pro správu organizace a personálu](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Možnost konfigurace pro umístění seznamu Pracovní položky přiřazené mně](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Aktualizace souladu zákona Affordable Care Act (ACA) pro formulář 1095-C, formulář 1095-B a elektronické hlášení ve starší verzi Benefits | -- | -- | 
 | Správa zaměstnaneckých výhod nyní podporuje podávání zpráv o shodě s ACA pro právnické osoby se sídlem v USA | -- | [Generujte zprávy ACA ve Správě zaměstnaneckých výhod](hr-benefits-management-aca-reports.md) |

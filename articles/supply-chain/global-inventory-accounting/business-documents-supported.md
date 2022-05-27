@@ -1,21 +1,21 @@
 ---
 title: Obchodní dokumenty podporované globálním účtováním zásob
 description: V tomto tématu je uveden seznam obchodních dokumentů, které jsou podporovány globálních účtováním zásob. Poskytuje také podrobný příklad pro dokumenty nákupní objednávky.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 47251a7167a00346aed26b9e9535f1b12301e5a6
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860579"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674442"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Obchodní dokumenty podporované globálním účtováním zásob
 

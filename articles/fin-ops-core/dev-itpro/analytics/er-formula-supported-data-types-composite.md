@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323658"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689235"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Podporované typy složených dat pro vzorce elektronického výkaznictví
 
@@ -81,7 +81,7 @@ Další informace o transformaci hodnot *záznam* viz [Seznam funkcí ER v kateg
 
 Ve výchozím nastavení jsou záznamy *seznamu záznamů* přístupné postupně. Pro přístup ke konkrétnímu záznamu můžete použít funkci [INDEX](er-functions-list-index.md) a zadat index *integer*.
 
-Výchozí hodnota *seznamu záznamů* je **null**. Můžete použít funkci [ISEMPTY](/er-functions-list-isempty.md) k vyhodnocení, zda je *seznam záznamů* prázdný.
+Výchozí hodnota *seznamu záznamů* je **null**. Můžete použít funkci [ISEMPTY](er-functions-list-isempty.md) k vyhodnocení, zda je *seznam záznamů* prázdný.
 
 > [!NOTE]
 > Pokud je *seznam záznamů* prázdný, jakýkoli pokus o získání hodnoty pole pro *záznam*, který se v něm nachází, způsobí, že výjimka bude vyvolána za běhu. Informace o tom, jak můžete zabránit výjimkám za běhu tohoto typu, najdete v tématu [Zvažování případů prázdného seznamu](er-components-inspections.md#i9).

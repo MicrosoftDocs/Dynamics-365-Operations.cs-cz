@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2b2b233e22378c8710a63dce83d168bfd89eba7f
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 3857ce3720430c6f512d5abc4c9c4d390a0c3377
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920491"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686676"
 ---
 # <a name="the-filter-pane-on-the-on-hand-list-page-doesnt-work-as-expected"></a>Podokno filtru na stránce Seznamu na skladě nefunguje podle očekávání
 
@@ -28,6 +28,6 @@ Filtry v podokně filtru na stránce **Seznam zásob na skladě** nefiltrují v�
 
 Stránka **Seznam na skladě** je sestavena z podrobné tabulky zásob na skladě, která obsahuje všechny dostupné rozměry. Seznam na této stránce je však shrnutím. Proto by mohl kombinovat řádky ze zdrojové tabulky agregováním hodnot podle zobrazených rozměrů.
 
-Filtry, které jsou nastaveny v podokně filtrů se vztahují na zdrojovou tabulku, nikoli na agregovaný seznam. Toto chování může někdy způsobit neočekávané výsledky, jak je uvedeno v [těchto příkladech](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#examples).
+Filtry, které jsou nastaveny v podokně filtrů se vztahují na zdrojovou tabulku, nikoli na agregovaný seznam. Toto chování může někdy způsobit neočekávané výsledky, jak je uvedeno v [těchto příkladech](/dynamics365/supply-chain/inventory/inventory-on-hand-list#examples).
 
-Nicméně, [filtry poskytované v mřížce](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#grid-filters) *platí* pro agregovaný seznam. Tyto filtry zahrnují QuickFilter v horní části mřížky a filtr pro každou hlavičku sloupce.
+Nicméně, [filtry poskytované v mřížce](/dynamics365/supply-chain/inventory/inventory-on-hand-list#grid-filters) *platí* pro agregovaný seznam. Tyto filtry zahrnují QuickFilter v horní části mřížky a filtr pro každou hlavičku sloupce.

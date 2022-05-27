@@ -9,23 +9,22 @@ ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f18c3bd95901303379c460d026bc944cee809b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0fe5bc5af953ee7cbbda3477d75a38261bb2bb10
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576657"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687405"
 ---
 # <a name="rebate-management-deal-workflows"></a>Pracovní postupy nabídky správy rabatu
 
 [!include [banner](../includes/banner.md)]
 
-Ke schválení nabídek rabatů používá správa rabatů stejnou platformu pracovního postupu jako ostatní aplikace Finance and Operations. Ke každému pracovnímu postupu jsou přidruženy dva procesy úloh:
+Ke schválení nabídek rabatů používá správa rabatů stejnou platformu pracovního postupu jako ostatní finanční a provozní aplikace. Ke každému pracovnímu postupu jsou přidruženy dva procesy úloh:
 
 - Jeden prvek pracovního postupu nabídku schvaluje.
 - Jeden prvek pracovního postupu aktivuje nabídku, aby mohl uživatel nebo proces pracovního postupu schválit transakce.
