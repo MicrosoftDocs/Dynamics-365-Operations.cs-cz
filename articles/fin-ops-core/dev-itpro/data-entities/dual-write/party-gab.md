@@ -2,19 +2,19 @@
 title: Strana a globální adresář
 description: Toto téma popisuje funkci strany a globálního adresáře duálního zápisu.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407758"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717439"
 ---
 # <a name="party-and-global-address-book"></a>Strana a globální adresář
 
@@ -139,7 +139,7 @@ Mřížka obsahuje následující sloupce:
 
 Můžete použít tlačítko **Nová elektronická adresa** nad mřížkou k vytvoření tolika elektronických adres, kolik chcete.
 
-Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verzích budou všechna pole elektronické a poštovní adresy odstraněna z jiných karet, například karet **Souhrn** a **Detaily**. Kontaktní údaje zobrazené na kartě **Podrobnosti** jsou kopie primární elektronické adresy pouze pro čtení, jako je primární telefon, primární e-mail, primární fax a primární Twitter ID. Během procesu kvalifikace zájemce můžete zadat obchodní telefonní číslo i číslo mobilního telefonu. Firemní telefonní číslo je považováno za primární telefon, pokud **IsMobile=No** a číslo mobilního telefonu je považováno za sekundární telefon, pokud **IsMobile=Yes**.
+Během procesu kvalifikace zájemce můžete zadat obchodní telefonní číslo i číslo mobilního telefonu. Firemní telefonní číslo je považováno za primární telefonní číslo, pokud **IsMobile=No**, a číslo mobilního telefonu je považováno za sekundární telefonní číslo, pokud **IsMobile=Yes**.
 
 > [!TIP]
 > Použití karet **Adresy** a **Elektronické adresy** ve formulářích **Obchodní vztah** a **Kontakt** pro správu poštovních a elektronických adres. Tím je zajištěno, že se data adres synchronizují do finančních a provozních aplikací.
@@ -148,7 +148,7 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
 1. Otevřete prostředí aplikace pro zapojení zákazníků.
 
-2. Nainstalujte si nejnovější verzi (2.2.2.60 nebo novější) z [Řešení orchestrace aplikace s duálním zápisem](https://aka.ms/dual-write-app).
+2. Nainstalujte všechna nezbytná řešení, jak je popsáno v článku [Oddělený balíček pro orchestraci aplikace s duálním zápisem](separated-solutions.md).
 
 3. Nainstalujte [Řešení strany a globálního adresáře s duálním zápisem](https://aka.ms/dual-write-gab).
 
@@ -163,10 +163,10 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
 
 7. Následující mapování entit jsou aktualizována pro funkčnost strany, takže na tato mapování musí být použita nejnovější verze.
 
-    Zobrazit na mapě | Aktualizujte na tuto verzi | Změny
+    Mapa | Aktualizujte na tuto verzi | Změny
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Toto je nová mapa přidaná jako součást tohoto vydání.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Toto je nová mapa přidaná jako součást tohoto vydání.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Customers V3 (accounts)` | 1.0.0.5 |Odebráno `PartyNumber` a další pole týkající se strany, jako je jméno, osobní detaily, pole poštovní adresy, pole elektronické kontaktní adresy atd.
     `Customer V3 (contacts)` | 1.0.0.5 | Odebráno `PartyNumber` a další pole týkající se strany, jako je jméno, osobní detaily, pole poštovní adresy, pole elektronické kontaktní adresy atd.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Odebráno `PartyNumber` a další pole týkající se strany, jako je jméno, osobní detaily, pole poštovní adresy, pole elektronické kontaktní adresy atd.
@@ -174,16 +174,17 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Nahrazuje kontaktní osobu referencí `ContactforParty`.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Nahrazuje kontaktní osobu referencí `ContactforParty`.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Toto je nová mapa přidaná jako součást tohoto vydání.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Toto je nová mapa přidaná jako součást tohoto vydání.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Toto je nová mapa přidaná jako součást tohoto vydání.
 
 8. Před spuštěním výše uvedených map musíte ručně aktualizovat integrační klíče, jak je popsáno v následujících krocích. Pak vyberte **Uložit**.
 
@@ -251,14 +252,15 @@ Elektronické adresy jsou k dispozici pouze v této mřížce. V budoucích verz
     [Záhlaví prodejní nabídky CDS](mapping-reference.md#215) | nabídky
     [Záhlaví prodejní objednávky CDS](mapping-reference.md#217) | salesorders
     [Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury
+    [Role adresy CDS](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > Mapa `CDS Contacts V2 (contacts)` je mapa, kterou jste zastavili v kroku 1. Když se pokusíte spustit další mapy, mohou se tyto 2 mapy objevit v seznamu závislých osob. Nespouštějte tyto mapy.
 >
-> Pokud je nainstalováno řešení strany a globálního adresáře, musíte deaktivovat pojmenované připojení `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Pokud odinstalujete řešení strany a globálního adresáře, musíte znovu aktivovat plugin .
+> Pokud je nainstalováno řešení strany a globálního adresáře, musíte deaktivovat modul plugin s názvem `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Pokud odinstalujete řešení strany a globálního adresáře, musíte znovu aktivovat plugin .
 >
 > Pole `msdyn_*partynumber` (jednořádkové textové pole), zahrnuté v tabulkách **Účet**, **Kontakt** a **Prodejce** by se neměly v budoucnosti používat. Název štítku má předponu **(Zastaralé)** pro přehlednost. Místo toho použijte pole **msdyn_partyid**. Pole je vyhledáváním pro tabulku **msdyn_party**.
-
+>
 > Název tabulky | Staré pole | Nové pole
 > --------|-------|--------
 > Účet | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Kolekce mapování tabulek pracují společně pro interakci strany a globální
 | [Záhlaví prodejní faktury V2](mapping-reference.md#118) | faktury |
 | [Oslovení](mapping-reference.md#228) | msdyn\_salutations |
 | [Dodavatelé V2](mapping-reference.md#202) | msdyn\_vendors |
+| [Role adresy CDS](mapping-reference.md#301) |msdyn\_addressroles|
 
 Další informace viz [Odkaz na mapování duálního zápisu ](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Role adres jako rozevírací seznam s více možnostmi
+Poštovní adresa nebo elektronická adresa může sloužit více účelům. Například poštovní adresa může sloužit jako fakturační i doručovací adresa. V těchto případech může uživatel vybrat v rozevíracím seznamu obě položky **Faktura** i **Dodávka**, jak je znázorněno na následujícím obrázku. 
+
+![Rozbalovací seznam Účel/Role.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Známé problémy a omezení
 
 + Když ve finančních a provozních aplikacích vytvoříte zákazníka spolu s adresou a uložíte jej, nemusí se adresa synchronizovat s tabulkou **Adresa**. Důvodem je problém se sekvenováním platformy pro dvojí zápis. Jako řešení nejprve vytvořte zákazníka a uložte ho. Poté přidejte adresu.
 + Když má ve finančních a provozních aplikacích záznam zákazníka primární adresu a vytvoříte nový kontakt pro tohoto zákazníka, pak záznam kontaktu zdědí primární adresu z přidruženého záznamu zákazníka. K tomu dochází také u kontaktu prodejce. Dataverse aktuálně toto chování nepodporuje. Pokud je povolen duální zápis, kontakt na zákazníka zdědí primární adresu z finanční a provozní aplikace je synchronizována do Dataverse spolu s jeho adresou.
-+ Elektronické adresy nastavené v záložce elektronických adres tabulek **Účet**, **Kontakt** a **Dodavatel** pochází z tabulky `msdyn_partyelectronicaddress`. Tyto informace neplynou k souvisejícím transakcím, jako je prodejní objednávka, nabídka a nákupní objednávka. Plánujeme tento problém vyřešit v přírůstkové verzi. Existující data v polích elektronické adresy v záznamech účtu a kontaktů budou i nadále fungovat na transakcích, jako je prodejní objednávka, nabídka a nákupní objednávka.
 + ve finančních a provozních aplikacích můžete vytvořit záznam kontaktu z formuláře **Přidat kontakt**. Když se pokusíte vytvořit nový kontakt z formuláře **Zobrazit kontakt**, akce selže. Toto je známý problém.
 
     ![Známý problém s Přidat kontakt.](media/party-gab-contact-issue.png)
 
-+ **Počáteční synchronizace** nepodporuje časová pole **Dostupný z** a **K dispozici pro** v **ContactForParty**, protože DIXF převádí hodnotu na řetězec místo na celé číslo. Konverze spustí chybu `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ Pokud se poštovní adresa používá z více než jednoho důvodu, například adresa obchodní komunikace a fakturační adresa, měla by vypadat jako `Business;Invoice` jak je znázorněno na následujícím obrázku. Pokud mezi hodnoty přidáte mezeru, zobrazí se chyba.
-
-    ![Známý problém s adresou.](media/party-gab-address-issue.png)
-
++ **Počáteční synchronizace** nepodporuje časová pole **Dostupný z** a **K dispozici pro** v **ContactForParty**, protože DIXF převádí hodnotu na řetězec místo na celé číslo. Konverze spustí chybu `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + Poštovní adresu se zpětným datem nelze zadat pomocí finanční a provozní aplikace s duálním zápisem, protože Dataverse nepodporuje datum platnosti. Pokud zadáte poštovní adresu s datem do budoucna pomocí finanční a provozní aplikace, synchronizuje se do Dataverse úplně a uvidíte adresu na uživatelském rozhraní okamžitě. Jakékoli aktualizace tohoto záznamu budou mít za následek chybu, protože je datován do budoucnosti a není aktuální ve finanční a provozní aplikaci.

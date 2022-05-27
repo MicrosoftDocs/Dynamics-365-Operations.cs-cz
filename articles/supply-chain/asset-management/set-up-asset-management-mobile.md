@@ -1,6 +1,6 @@
 ---
 title: Nastavení mobilního pracovního prostoru správy majetku
-description: Toto téma popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a Finance and Operations (Dynamics 365) pro spuštění mobilního pracovního prostoru Asset management, který mohou pracovníci použít k provádění úkolů správy majetku.
+description: Toto téma popisuje, jak nastavit mobilní aplikace Microsoft Dynamics 365 Supply Chain Management a Finance and Operations (Dynamics 365) ke správě mobilního pracovního prostoru Správa majetku, který mohou pracovníci používat k provádění úkolů správy majetku.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572186"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693493"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Nastavení mobilního pracovního prostoru správy majetku
 

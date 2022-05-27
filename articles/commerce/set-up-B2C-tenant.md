@@ -2,7 +2,7 @@
 title: Nastavení klienta B2C v Commerce
 description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109879"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714305"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
@@ -332,9 +332,9 @@ Chcete-li do platformy Commerce přidat informace o aplikaci klienta Azure AD B2
 
 1. Přihlaste se jako správce ke konfigurátoru webů Commerce pro vaše prostředí.
 1. V levém navigačním podokně vyberte **Nastavení klienta**, čímž jej rozbalíte.
-1. V části **Nastavení klienta** vyberte **Nastavení B2C**. 
-1. V hlavním okně vedle položky **Aplikace B2C** vyberte možnost **Spravovat**. (Pokud se klient zobrazí v seznamu aplikací B2C, pak již byl přidán správcem. Ověřte, že položky v kroku 6 odpovídají vaší aplikaci B2C.)
-1. Vyberte **Přidat aplikaci B2C**.
+1. V **Nastavení klienta** vyberte **Nastavení ověřování webu**. 
+1. V hlavním okně vedle **Ověřovací profily webu** vyberte **Spravovat**. (Pokud se klient zobrazí v seznamu profilů ověřování webu, pak již byl přidán správcem. Ověřte, že položky v kroku 6 odpovídají vašemu plánovanému nastavení B2C. Nový profil lze také vytvořit pomocí klientů nebo aplikací Azure AD B2C, aby se zohlednily drobné rozdíly, jako jsou různá ID uživatelských zásad).
+1. Zvolit **Přidat profil ověřování webu**.
 1. Ve zobrazeném formuláři zadejte následující požadované položky s použitím hodnot z klienta a aplikace B2C. Pole, která nejsou vyžadována (bez hvězdičky), mohou být ponechána prázdná.
 
     - **Název aplikace**: název aplikace B2C, například „Fabrikam B2C“.
@@ -347,12 +347,13 @@ Chcete-li do platformy Commerce přidat informace o aplikaci klienta Azure AD B2
 1. Vyberte **OK**. Nyní by se měl zobrazit název vaší aplikace B2C v seznamu.
 1. Klepnutím na tlačítko **Uložit** uložte změny.
 
+Volitelné pole **Přihlaste se do vlastní domény** by mělo být použito pouze v případě, že nastavujete vlastní doménu pro klienta Azure AD B2C. Pro další podrobnosti a úvahy týkající se použití pole **Přihlaste se do vlastní domény** viz [Další informace o B2C](#additional-b2c-information) níže.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Přidružení aplikace B2C k webu a kanálu
 
 > [!WARNING]
-> Pokud je váš web již přidružen k aplikaci B2C, změna na jinou aplikaci B2C odstraní aktuální odkazy vytvořené pro uživatele, které jsou již zaregistrováni v tomto prostředí. V případě změny nebudou mít uživatelé k dispozici žádná pověření přidružená k aktuálně přiřazené aplikaci B2C. 
-> 
-> Aplikaci B2C aktualizujte pouze v případě, že aplikaci B2C kanálu zřizujete poprvé, nebo pokud čekáte, že se uživatelé znovu zaregistrují s novými pověřeními pro tento kanál pomocí nové aplikace B2C. Buďte opatrní při přiřazování kanálů k aplikacím B2C a pojmenovávejte aplikace srozumitelně. Není-li kanál přidružen k aplikaci B2C v níže uvedených krocích, uživatelé přihlašující se k tomuto kanálu pro váš web budou zadáni do aplikace B2C, která se zobrazí jako **výchozí** v seznamu aplikací B2C v umístění **Nastavení klienta \> Nastavení B2C**.
+> - Pokud je váš web již přidružen k aplikaci B2C, změna na jinou aplikaci B2C odstraní aktuální odkazy vytvořené pro uživatele, které jsou již zaregistrováni v tomto prostředí. V případě změny nebudou mít uživatelé k dispozici žádná pověření přidružená k aktuálně přiřazené aplikaci B2C. 
+> - Aplikaci B2C aktualizujte pouze v případě, že aplikaci B2C kanálu zřizujete poprvé, nebo pokud čekáte, že se uživatelé znovu zaregistrují s novými pověřeními pro tento kanál pomocí nové aplikace B2C. Buďte opatrní při přiřazování kanálů k aplikacím B2C a pojmenovávejte aplikace srozumitelně. Není-li kanál přidružen k aplikaci B2C v níže uvedených krocích, uživatelé přihlašující se k tomuto kanálu pro váš web budou zadáni do aplikace B2C, která se zobrazí jako **výchozí** v seznamu aplikací B2C v umístění **Nastavení klienta \> Nastavení B2C**.
 
 Chcete-li přidružit aplikaci B2C k webu a kanálu, postupujte takto.
 
@@ -378,6 +379,23 @@ Další informace o přizpůsobení interakcí a toků zásad Azure AD B2C nad r
 ### <a name="secondary-admin"></a>Sekundární správce
 
 Nepovinný sekundární účet správce lze přidat do oddílu **Uživatelé** v klientovi B2C. Může se jednat o přímý nebo obecný účet. Potřebujete-li sdílet účet v prostředcích týmu, je možné také vytvořit běžný účet. Vzhledem k citlivosti dat uložených v Azure AD B2C je třeba společný účet pečlivě monitorovat dle bezpečnostních postupů společnosti.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Nastavte si vlastní přihlašovací doménu
+
+Azure AD B2C vám umožňuje nastavit vlastní přihlašovací doménu pro klienta Azure AD B2C. Pokyny viz [Povolit vlastní domény pro Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+
+Pokud používáte vlastní přihlašovací doménu, doména musí být zadána do nástroje Commerce Site Builder.
+
+Chcete-li zadat vlastní doménu přihlašování v nástroji pro tvorbu webu, postupujte následovně.
+
+1. Vyberte Přepínač webů v pravém horním rohu nástroje pro tvorbu webu a poté vyberte **Spravovat weby**.
+1. V levém navigačním podokně vyberte **Nastavení klienta \> Nastavení ověřování webu**.
+1. V sekci **Ověřovací profily webu** vyberte **Spravovat**.
+1. V plovoucím panelu vpravo vyberte tlačítko **Upravit** (symbol tužky) vedle profilu ověřování webu, pro který chcete zadat vlastní doménu.
+1. V dialogovém okně **Upravit profil ověřování webu** v **Přihlaste se do vlastní domény** zadejte svou vlastní přihlašovací doménu (například 'login.fabrikam.com').
+
+> [!WARNING]
+> Při aktualizaci na vlastní doménu pro klienta Azure AD B2C změna ovlivní podrobnosti o vydavateli vygenerovaného tokenu klienta. Podrobnosti o vydavateli pak budou zahrnovat vlastní doménu namísto výchozí domény, kterou poskytuje Azure AD B2C. Rozdílná konfiguace **Vydavatel** v Commerce headquarters (**Maloobchod a obchod \> Nastavení ústředí \> Parametry \> Sdílené parametry obchodu \> Poskytovatelé identity**) změní interakci systému s uživateli webu a případně vytvoří nový záznam zákazníka, pokud se uživatel ověřuje proti novému vydavateli. Jakékoli změny vlastní domény by měly být důkladně otestovány před přechodem na vlastní doménu v živém prostředí Azure AD B2C.
 
 ## <a name="additional-resources"></a>Další prostředky
 

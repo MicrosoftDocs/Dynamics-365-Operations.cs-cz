@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d91ef244f8dd48baf65f5633357a7d81a68f84621b20d39d4e0ee771283a2bab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741350"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693465"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources, 5. dubna 2021
 
@@ -72,7 +71,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 | Funkce | Podrobnosti |
 | --- | --- |
 | Dovednosti zadané manažery pro své zaměstnance lze automaticky schválit pomocí pracovního postupu | Již brzy. |
-| Platform update 10.0.17 (41) | Aktualizace platformy 10.0.17 je naplánována na zavedení s dalším vydáním 19. dubna 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.17 aplikací Finance and Operations (duben 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
+| Platform update 10.0.17 (41) | Aktualizace platformy 10.0.17 je naplánována na zavedení s dalším vydáním 19. dubna 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.17 finančních a provozních aplikací (duben 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
 Úplný seznam plánovaných funkcí a plánovaných verzí najdete v části [Přehled o 1. vlně vydání Dynamics 365 Human Resources v roce 2021](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 

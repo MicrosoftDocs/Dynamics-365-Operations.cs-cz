@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50b486cd01850049ab3d23117d994c3db1038124
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745789"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716880"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Nastavení aliasu účtu hlavní knihy
 
@@ -26,17 +26,14 @@ ms.locfileid: "6745789"
 
 Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pro zadání čísla účtu. Tato procedura používá data ukázkové společnosti USMF.
 
-1. Přejděte do části Hlavní kniha > Účtová osnova > Účty > Alias hlavní knihy.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Alias hlavní knihy.
-4. V poli Struktura účtu vyberte strukturu, do které účet a dimenze náleží.
-5. V poli Společnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-6. V seznamu najděte a vyberte společnost, které se alias má týkat.
-7. Klikněte na odkaz na vybraném řádku v seznamu.
-8. V poli Definice aliasu účtu hlavní knihy zadejte účet a dimenze.
+1. Přejděte do části **Hlavní kniha > Účtová osnova > Účty > Alias hlavní knihy**, klikněte na **Nový**.
+2. Zadejte hodnotu do pole **Alias hlavní knihy**.
+3. V poli **Struktura účtu** vyberte strukturu, do které účet a dimenze náleží.
+4. V poli **Společnost**, v seznamu vyberte společnost, které se alias má týkat.
+5. V poli **Definice aliasu účtu hlavní knihy** zadejte účet a dimenze.
     * Účet a dimenze se vyplní při použití zástupce.  
-9. V poli Počáteční výběr vyberte dimenzi, která bude mít výběr při použití alias.
-    * Po zadání zástupce a vyplnění účtu a dimenzí, se kurzor přesune do pole Počáteční výběr.  
+6. V poli **Počáteční výběr** vyberte dimenzi, která bude mít výběr při použití alias.
+    * Po zadání zástupce a vyplnění účtu a dimenzí, se kurzor přesune do pole **Počáteční výběr**.  
 
 
 

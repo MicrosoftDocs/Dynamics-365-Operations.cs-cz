@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722760"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716387"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatizace faktur pro naskenované dokumenty
 
@@ -58,7 +58,7 @@ Datový balík je jednotka práce, které musí být odeslána, aby bylo možné
 
 Příloha dokumentu faktury dodavatele je nová datová entita, která je zavedena jako součást této funkce. Entita v záhlaví faktury dodavatele byla upravena tak, aby podporovala přílohy. Entita řádku faktury dodavatele pro tuto funkci nebyla změněna.
 
-Pro podrobné informace o datových balíčcích viz [Přehled správy dat](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Pro informace o tom, jak vytvořit datové balíčky pomocí pracovního prostoru pro správu dat, viz [Zpracování a spotřebování datových balíčků v řešení aplikací Dynamics 365 Finance and Operations](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Pro podrobné informace o datových balíčcích viz [Přehled správy dat](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Pro informace o tom, jak vytvořit datové balíčky pomocí pracovního prostoru pro správu dat, viz [Zpracování a spotřebování datových balíčků v řešení finančních a provozních aplikací Dynamics 365](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Chcete-li rychle generovat testovací data, která zahrnují faktury a přílohy, postupujte takto.
 

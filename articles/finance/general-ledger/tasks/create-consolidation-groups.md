@@ -13,19 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: a9ee95621f184b882ead1750d61626d184174cef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182597"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716461"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Vytvoření konsolidačních skupin a dalších konsolidačních účtů
 
 [!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do skupiny přidat účty. Tato procedura používá data ukázkové společnosti USMF.
-
 
 ## <a name="create-a-consolidation-account-group"></a>Vytvoření skupiny konsolidačních účtů
 1. Přejděte do části **Hlavní kniha > Účtová osnova > Účty > Skupiny konsolidačních účtů**.
@@ -34,14 +33,12 @@ Tento postup popisuje, jak vytvořit skupinu konsolidačních účtů a poté do
 4. Zadejte hodnotu do pole **Název**.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Přidání účtů do skupiny konsolidačních účtů
-1. Přejděte do části Hlavní kniha > Účtová osnova > Účty > Dodatečné konsolidační účty.
-2. Klepněte na možnost Nový.
-3. V poli Hlavní účet klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. V seznamu klepněte na hlavní účet, který má být mapován.
-5. V poli Skupina konsolidačních účtů klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-6. V seznamu klepněte na skupinu konsolidačních účtů.
-7. Zadejte hodnotu do pole Konsolidační účet.
-8. Zadejte hodnotu do pole Název konsolidačního účtu.
+1. Přejděte do části **Hlavní kniha > Účtová osnova > Účty > Dodatečné konsolidační účty**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Hlavní účet** vyberte v seznamu hlavní účet, který chcete namapovat.
+4. V poli **Skupina konsolidačních účtů** klikněte v seznamu na skupinu konsolidačních účtů.
+5. Zadejte hodnotu do pole **Konsolidační účet**.
+6. Zadejte hodnotu do pole **Název konsolidačního účtu**.
 
 
 

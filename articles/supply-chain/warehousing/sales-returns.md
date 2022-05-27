@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565272"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695556"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
@@ -76,7 +76,6 @@ Při vytváření objednávky vrácení je třeba zahrnout informace z následuj
 | Číslo RMA         | ID, které bylo přiřazeno objednávce vrácení              | Číslo RMA se v celém procesu objednávky vrácení používá jako alternativní klíč. Identifikační číslo, které je přiřazeno, se zakládá na číselné řadě nastavené na stránce **Parametry pohledávek**.                                                                                                                              |
 | Konečný termín           | Poslední datum, kdy bude lze zboží vrátit.               | Výchozí hodnota se počítá jako aktuální datum plus doba platnosti. Například pokud vrácení je platné pouze po dobu 90 dní od data, kdy je byla vytvořena objednávka vrácení a objednávka vrácení byla vytvořena dne 1. května, hodnota v poli je **30. června**. Doba platnosti se nastavuje na stránce **parametry pohledávky**. |
 | Kód důvodu vrácení | Důvody vrácení zboží uvedené odběratelem          | Kód příčiny se vybírá v seznamu uživatelem definovaných kódů důvodů. Toto pole můžete kdykoli aktualizovat.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Vytvořit řádky objednávky vrácení
 
 Po dokončení záhlaví vrácení můžete vytvořit řádky vrácení pomocí jedné z následujících metod:
@@ -84,7 +83,8 @@ Po dokončení záhlaví vrácení můžete vytvořit řádky vrácení pomocí 
 -   Ručně zadejte údaje o zboží, množství a další informace pro každý řádek vrácení.
 -   Vytvoření řádku objednávky vrácení pomocí funkce **Najít prodejní objednávku**. Při vytváření objednávky vrácení doporučujeme používat tuto funkci. Funkce **Najít prodejní objednávku** založí odkaz z řádku objednávky vrácení na řádek vyfakturované prodejní objednávky a načte údaje řádku, jako například číslo zboží, množství, a hodnoty ceny, slevy a nákladů z řádku prodeje. Odkaz pomáhá zaručit, aby byl produkt po svém vrácení společnosti oceněn na stejnou hodnotu za jednotkové množství, za jakou byl prodáván. Odkaz také ověří, zda nejsou vytvořeny objednávky vracení pro množství přesahující množství prodané podle faktury.
 
->[Poznámka!] Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto tématu.
+>[!NOTE] 
+>Řádky objednávky vrácení, které mají odkaz na prodejní objednávku, jsou zpracovány jako opravy nebo změny prodeje. Další informace naleznete v části „Zařazení do hlavní knihy“ dále v tomto tématu.
 
 ### <a name="charges"></a>Poplatky
 
@@ -189,8 +189,10 @@ Během procesu příchodu budou vrácení integrována s obecným postupem pro p
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifikujte produkty v seznamu přehled příchodů
 
-Na stránce **Přehled příchodů** jsou uvedeny všechna plánovaná doručení příchodů. 
->[Poznámka!] Doručení z objednávek vrácení musí být zpracováno odděleně od ostatních typů transakcí příchodů. Po identifikaci příchozího balíčku na stránce **přehled doručení** (například pomocí průvodního dokladu RMA) v podokně akcí klikněte na tlačítko **Zahájit příchod** k vytvoření a inicializaci deníku příchodů, který bude odpovídat danému příchodu.
+Na stránce **Přehled příchodů** jsou uvedeny všechna plánovaná doručení příchodů.
+
+>[!NOTE] 
+>Doručení z objednávek vrácení musí být zpracováno odděleně od ostatních typů transakcí příchodů. Po identifikaci příchozího balíčku na stránce **přehled doručení** (například pomocí průvodního dokladu RMA) v podokně akcí klikněte na tlačítko **Zahájit příchod** k vytvoření a inicializaci deníku příchodů, který bude odpovídat danému příchodu.
 
 ### <a name="edit-the-arrival-journal"></a>Upravte deník příchodů.
 
@@ -232,7 +234,8 @@ Pokud dodáváte zákazníkovi náhradní zboží a v objednávce vrácení pou
 
 Náhradní zboží bude doručeno pomocí nezávislé prodejní objednávky, náhradní prodejní objednávky. Tato prodejní objednávka je vytvářena při generování dodacího listu pro objednávku vrácení. Záhlaví objednávky používá informace od zákazníka, na které je odkazováno v hlavičce objednávky vrácení. Informace o řádku jsou shromažďovány z informací zadaných na stránce **Náhrada zboží**. Stránka **Náhrada zboží** musí být vyplněna pro řádky, které mají dispoziční akce, které začínají slovem "replace" ("nahradit"). Avšak ani množství ani totožnost náhradního zboží nebude ověřena ani omezena. Toto chování umožňuje případy, kdy zákazník požaduje stejné zboží, ale v jiné konfiguraci nebo velikosti a také případy, kdy zákazník chce úplně jiné zboží. Dle výchozího nastavení se shodné zboží zadává na stránce **náhrada zboží**. Můžete však vybrat jiné zboží, za předpokladu, že byla nastavena funkce. 
 
->[Poznámka!] náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
+>[!NOTE] 
+>Náhradní prodejní objednávku můžete po jejím vytvoření upravit enbo vymazat.
 
 ## <a name="generate-a-packing-slip"></a>Vytvořte dodací list
 Před přijetím vrácených položek na sklad musíte aktualizovat dodací list pro objednávku, do které toto zboží náleží. Stejně jako je proces aktualizace faktury aktualizací finanční transakce, proces aktualizace dodacího listu je fyzickou aktualizací skladového záznamu. Jinými slovy, tento proces potvrdí změny zásob. V případě vrácení jsou kroky přiřazené k dispoziční akci implementovány v průběhu aktualizace dodacího listu. Při generování dodacího listu dojde k následujícím událostem:
@@ -253,8 +256,10 @@ I když stránka **Objednávka vrácení** obsahuje informace a akce, které jso
 
 ### <a name="credit-correction"></a>Úvěrové vyrovnání
 
-V rámci procesu fakturace ověřte správnost veškerých různých nákladů. Aby se ze zaúčtování hlavní knihy staly opravy (Storno), zvažte použití možnosti **Korekce přípisu** na kartě **Ostatní** na stránce **Odeslání faktury** při zaúčtování faktury nebo dobropisu. 
->[Poznámka!] Dle výchozího nastavení bude volba **Korekce přípisu** aktivována tehdy, jestliže byla povolena možnost **Dobropis jako oprava** na stránce **Parametry pohledávek**. Doporučujeme Vám však neúčtovat vrácení se Stornem.
+V rámci procesu fakturace ověřte správnost veškerých různých nákladů. Aby se ze zaúčtování hlavní knihy staly opravy (Storno), zvažte použití možnosti **Korekce přípisu** na kartě **Ostatní** na stránce **Odeslání faktury** při zaúčtování faktury nebo dobropisu.
+
+> [!NOTE]
+> Dle výchozího nastavení bude volba **Korekce přípisu** aktivována tehdy, jestliže byla povolena možnost **Dobropis jako oprava** na stránce **Parametry pohledávek**. Doporučujeme Vám však neúčtovat vrácení se Stornem.
 
 ## <a name="create-intercompany-return-orders"></a>Vytvořit mezipodnikové objednávky vrácení
 Objednávky vrácení lze dokončit mezi dvěma společnostmi v rámci organizace. Podporovány jsou následující scénáře:
@@ -308,7 +313,8 @@ Objednávka vrácení neodkazuje na fakturu odběratele. Vrácené zboží je ú
 
 ![Objednávka vrácení neodkazuje na fakturu odběratele.](./media/SalesReturn09.png)  
 
->[Poznámka!] hlavní cena zboží se používá jako výchozí hodnota pro parametr **Nákladová cena vrácení**. Implicitní cena se liší od nákladové ceny v době vydání zásob. Důsledkem tedy je, že vznikla ztráta 3. Kromě toho objednávka vrácení neobsahuje slevu, která byla poskytnuta zákazníkovi na prodejní objednávku. Proto dojde k přeplatku.
+> [!NOTE]
+> Hlavní cena zboží se používá jako výchozí hodnota pro parametr **Nákladová cena vrácení**. Implicitní cena se liší od nákladové ceny v době vydání zásob. Důsledkem tedy je, že vznikla ztráta 3. Kromě toho objednávka vrácení neobsahuje slevu, která byla poskytnuta zákazníkovi na prodejní objednávku. Proto dojde k přeplatku.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Příklad 2: Pro objednávku vrácení byla vybrána korekce přípisu
 
@@ -316,7 +322,8 @@ Příklad 2 je stejný jako v příkladu 1, ale při generování faktury pro ob
 
 ![Objednávka vrácení, v níž byla vybrána korekce na straně Dal.](./media/SalesReturn10.png)  
 
->[Poznámka!] Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
+>[!NOTE] 
+>Účetní zápisy hlavní knihy jsou zadány jako záporné opravy.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Příklad 3: Řádek objednávky vrácení je vytvořen pomocí funkce Najít prodejní objednávku
 
@@ -324,7 +331,8 @@ V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **
 
 ![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku.](./media/SalesReturn11.png)  
 
->[Poznámka!] **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
+> [!NOTE]
+> **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
 
 
 

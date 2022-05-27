@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570471"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691463"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
@@ -75,7 +75,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 | Řízení skladu | [Globální parametry mobilního zařízení](../warehousing/mobile-device-parameters.md) |
 | Řízení skladu | [Ukotvení](../warehousing/anchoring.md) |
 | Prodej a marketing | Mezipodnikový obchod je nyní podrobně popsán, počínaje [Nastavení mezipodnikového obchodu](../sales-marketing/intercompany-trade-set-up.md) a s tím souvisejících témat. |
+| Prodej a marketing | [Vylepšení výkonu čištění historie prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Řízení zásob | Dokumentace viditelnosti zásob byla rozšířena a aktualizována počínaje [Přehled doplňku Viditelnost zásob](../inventory/inventory-visibility.md) a s tím souvisejícími tématy. |
+| Řízení skladu | [Uživatelské účty mobilního zařízení](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Další prostředky
 

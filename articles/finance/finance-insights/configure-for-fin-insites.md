@@ -8,26 +8,26 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051363"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710607"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurace Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights kombinují funkčnost Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech. Chcete-li úspěšně dokončit postupy v tomto tématu, musíte mít přístup správce systému a úpravce systému v [Centru pro správu Power Portal](https://admin.powerplatform.microsoft.com/), přístup správce systému v Dynamics 365 Finance a přístup k vytváření prostředí v Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights kombinují funkčnost Microsoft Microsoft Dynamics 365 Finance s Dataverse, Azure a AI Builder, které vaší organizaci poskytnou výkonné nástroje pro prognózy. Toto téma vysvětluje kroky konfigurace, které vašemu systému umožní používat funkce, které jsou k dispozici ve finančních přehledech. Chcete-li úspěšně dokončit postupy v tomto tématu, musíte mít přístup správce systému a úpravce systému v [Centru pro správu Power Portal](https://admin.powerplatform.microsoft.com/), přístup správce systému v Dynamics 365 Finance a přístup k vytváření prostředí v Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
 > Následující postupy pro nastavení Finance Insights jsou platné pro verze Dynamics 365 Finance 10.0.21 a vyšší.

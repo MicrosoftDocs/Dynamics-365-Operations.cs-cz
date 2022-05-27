@@ -2,20 +2,20 @@
 title: Oddělený balíček pro orchestraci aplikace s duálním zápisem
 description: Balíček pro orchestraci aplikace s duálním zápisem již není jediným balíčkem, ale byl rozdělen do menších balíčků. Toto téma popisuje řešení a mapy, které každý balíček obsahuje, a jeho závislost na jiných balíčcích.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063255"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716545"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Oddělený balíček pro orchestraci aplikace s duálním zápisem
 
@@ -26,19 +26,19 @@ ms.locfileid: "8063255"
 Dříve byl balíček pro orchestraci aplikace s duálním zápisem jediný balíček, který obsahoval následující řešení:
 
 - Dynamics 365 – poznámky
-- Dynamics 365 Finance a Operations – společná kotva
-- Mapy entit duálního zápisu Dynamics 365 Finance and Operations
+- Dynamics 365 Finance and Operations - společná kotva
+- Dynamics 365 Finance and Operations - mapy entit s dvojím zápisem
 - Aplikace Dynamics 365 – správa majetku
 - Dynamics 365 – správa majetku
 - Společné HCM
 - Dynamics 365 – rozšířený dodavatelský řetězec
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance a Operations – společné
+- Dynamics 365 Finance and Operations - společné
 - Dynamics 365 – společnost
 - Směnné kurzy měny
 - Field Service Common
 
-Protože se jednalo o jediný balíček, zákazníky stavěl do situace „vše nebo nic“. Microsoft jej však nyní rozdělil do menších balíčků. Zákazník si tak může vybrat pouze balíčky pro řešení, které potřebuje. Pokud jste například zákazník Microsoft Dynamics 365 Supply Chain Management a nepotřebujete integraci s Dynamics 365 Human Resources, poznámky a správu majetku, můžete tato řešení vyloučit z nainstalovaných řešení. Vzhledem k tomu, že základní názvy řešení, vydavatel a verze map zůstávají stejné, tato změna nemá na nic vliv. Stávající instalace budou upgradovány.
+Protože se jednalo o jediný balíček, zákazníky stavěl do situace „vše nebo nic“. Microsoft jej však nyní rozdělil do menších balíčků. Zákazníci si tak mohou vybrat pouze balíčky pro řešení, které potřebují. Pokud jste například zákazník Microsoft Dynamics 365 Supply Chain Management a nepotřebujete integraci s Dynamics 365 Human Resources, poznámky a správu majetku, můžete tato řešení vyloučit z nainstalovaných řešení. Vzhledem k tomu, že základní názvy řešení, vydavatel a verze map zůstávají stejné, tato změna nemá na nic vliv. Stávající instalace budou upgradovány.
 
 ![Oddělený balíček.](media/separated-package-1.png)
 
@@ -51,7 +51,7 @@ Balíček Základ aplikace s duálním zápisem umožňuje uživatelům instalov
 | Jedinečný název                           | Zobrazovaný název                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 – společnost                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance a Operations – společné |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations - společné |
 | CurrencyExchangeRates                 | Směnné kurzy měny                    |
 | msdyn_DualWriteAppCoreMaps            | Základní mapy entit aplikací s duálním zápisem   |
 | msdyn_DualWriteAppCoreAnchor          | Základní kotva aplikací s duálním zápisem        |
@@ -191,9 +191,9 @@ Balíček Finance s duálním zápisem obsahuje řešení a mapy, které jsou nu
 | Jedinečný název                            | Zobrazovaný název                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended – mapy entit |
+| msdyn_Dynamics365FinanceExtendedMaps   | Mapy entit Dynamics 365 Finance extended |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended – kotva      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Kotva Dynamics 365 Finance extended      |
 
 K dispozici pro tento balíček jsou následující mapy.
 
@@ -300,3 +300,47 @@ Project Operations závisí na následujících balíčcích. Proto byste měli 
 - Balíček Dodavatelský řetězec s duálním zápisem
 - Balíček Správa majetku s duálním zápisem
 - Balíček Lidské zdroje s duálním zápisem
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Řešení strany a globálního adresáře s duálním zápisem
+
+Balíček strany a globálního adresáře s duálním zápisem obsahuje následující řešení a mapy, které jsou nutné k synchronizaci dat stran a globálního adresáře. 
+
+| Jedinečný název                       | Zobrazovaný název                            |
+|-----------------------------------|-----------------------------------------|
+| Strana                             | Strana                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB - rozšířené               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB – mapy entit s duálním zápisem |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB a strana              |
+
+K dispozici pro tento balíček jsou následující mapy.
+
+| Finanční a provozní aplikace | Aplikace Customer Engagement | 
+|-----------------------------|--------------------------|
+| Strany CDS | msdyn_parties | 
+| Místa poštovní adresy CDS | msdyn_postaladdresscollections | 
+| Historie poštovní adresy CDS V2 | msdyn_postaladdresses | 
+| Místa poštovní adresy strany CDS | msdyn_partypostaladdresses | 
+| Kontakty strany V3 | msdyn_partyelectronicaddresses | 
+| Zákazníci V3 | účty | 
+| Zákazníci V3 | kontakty | 
+| Dodavatelé V2 | msdyn_vendors | 
+| Tituly kontaktní osoby | msdyn_salescontactpersontitles | 
+| Zdvořilostní zakončení | msdyn_complimentaryclosings | 
+| Oslovení | msdyn_salutations | 
+| Role v rozhodovacím procesu | msdyn_decisionmakingroles | 
+| Pracovní funkce zaměstnání | msdyn_employmentjobfunctions | 
+| Úrovně věrnosti | msdyn_loyaltylevels | 
+| Typy osobní charakteristiky | msdyn_personalcharactertypes | 
+| Kontakty V2 | msdyn_contactforparties | 
+| Záhlaví prodejní nabídky CDS | nabídky | 
+| Záhlaví prodejní objednávky CDS | salesorders | 
+| Záhlaví prodejní faktury V2 | faktury | 
+| Role adresy CDS | msdyn_addressroles |
+
+**Informace o závislostech**
+
+Řešení strany a globálního adresáře s dvojím zápisem závisí na následujících třech balíčcích. Proto byste měli nainstalovat tyto balíčky před instalací balíčku řešení strany a globálního adresáře s duálním zápisem.
+
+- Balíček Základ aplikace s duálním zápisem
+- Balíček Finance s duálním zápisem
+- Balíček Dodavatelský řetězec s duálním zápisem

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757212"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711313"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -969,7 +969,7 @@ K dispozici je zlepšená instalace součásti zlepšení odlehčeného klienta 
 </tr>
 <tr>
 <td>Sledovat stav systému a určit příčiny chyb a potíží.</td>
-<td>Tato funkce vyžaduje balíček <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Tato funkce vyžaduje balíček <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Sledování a diagnostika pro součásti maloobchodu jsou nyní dostupné prostřednictvím řídicího panelu <strong>Provozní analytika</strong>v LCS.</td>
 <td>Řídicí panel <strong>Provozní analytika</strong> je cloudový sledovací portál, díky kterému není potřeba instalovat infrastrukturu System Center Operations Manager (SCOM).</td>
 </tr>
@@ -1026,9 +1026,9 @@ Nebyly přidány následující nové funkce.
 |------------------|------------------|-----------------|------------------------|
 | Stáhnout, nainstalovat a nakonfigurovat Portál skladu pro mobilní zařízení. | Portál můžete stáhnout, nainstalovat a nakonfigurovat při instalaci aplikace Microsoft Dynamics AX pomocí standardního nastavení. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Prostřednictvím položky nabídky v modulu Řízení skladu si můžete stáhnout samostatný instalační program. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Pokud nastavíte možnost použití funkce mobilního zařízení, je nutné Portál skladu pro mobilní zařízení nainstalovat a nakonfigurovat místně a připojit se k aplikaci Dynamics AX v cloudu. |
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Co je nového a co se změnilo v domovské stránce Finance and Operations](whats-new-changed.md)
+[Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations](whats-new-changed.md)
 
 [Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 

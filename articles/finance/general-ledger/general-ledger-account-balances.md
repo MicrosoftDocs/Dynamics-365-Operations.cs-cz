@@ -1,6 +1,6 @@
 ---
 title: Zůstatky účtu hlavní knihy
-description: V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
+description: V tomto tématu jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3c1f3832d5e50a709b3032c379298eb32b81649c1c15b5cc426aa5d3afb2ac6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748179"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716430"
 ---
 # <a name="general-ledger-account-balances"></a>Zůstatky účtu hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 
-V tomto článku jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
+V tomto tématu jsou vysvětleny dva způsoby pro zobrazení zůstatků účtů hlavní knihy – stránka se seznamem Předvaha a finanční sestavy. Také popisuje, jak aktualizovat zůstatky pro sadu dimenzí.
 
 Existuje mnoho způsobů, kterými mohou uživatelé zobrazit zůstatky v hlavní knize. Nejběžnější možnosti jsou:
 

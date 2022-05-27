@@ -2,7 +2,7 @@
 title: Modul pro výběr lokality
 description: Tohle téma se zabývá modulem pro výběr lokality a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/06/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551687"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710296"
 ---
 # <a name="site-picker-module"></a>Modul pro výběr lokality
 
@@ -43,7 +43,23 @@ Modul pro výběr lokality musí být nakonfigurován se seznamem webů (trhy, r
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Přidání modulu pro výběr lokality na stránku
 
-Modul pro výběr lokality lze přidat do pozice **Výběr lokality** [modulu záhlaví](author-header-module.md). Po přidání modulu pro výběr lokality můžete definovat možnosti záhlaví a webu modulu. Obecně je modul záhlaví obsažen ve fragmentu záhlaví, který lze sdílet na stránkách elektronického obchodu pro daný web. V následujícím příkladu byl modul pro výběr lokality přidán do pozice **Výběr lokality** modulu záhlaví, který je obsažen ve fragmentu záhlaví **HeaderContainer**.
+Modul pro výběr lokality lze přidat do pozice **Výběr lokality** [modulu záhlaví](author-header-module.md). Po přidání modulu pro výběr lokality můžete definovat možnosti záhlaví a webu modulu. Obecně je modul záhlaví obsažen ve fragmentu záhlaví, který lze sdílet na stránkách elektronického obchodu pro daný web. 
+
+Chcete-li přidat modul pro výběr lokality modulu záhlaví, postupujte takto:
+
+1. V pozici **Výběr webu** modulu záhlaví fragmenu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
+1. V dialogovém okně **Vybrat moduly** přidejte modul **Výběr webu** a poté klikněte na tlačítko **OK**.
+1. V podokně vlastností **Výběr webu** vyberte **Přidat seznam možností webu**. Zobrazí se editovatelná možnost **Seznam možností webu**.
+1. Vyberte **Seznam možností webu**. Objeví se dialogové okno **Seznam možností webu**.
+1. Jako **Název webu** zadejte text názvu webu, který se zobrazí v rozevíracím seznamu pro výběr webu.
+1. V **Adresa URL přesměrování webu** vyberte **Přidat odkaz**. Objeví se plovoucí podokno **Přidat odkaz**.
+1. V plovoucím podokně **Přidat odkaz** vyberte **Vlastní stránka** a poté vyberte **Další**.
+1. Ze seznamu adres URL webu vyberte adresu URL s cestou, kterou jste vytvořili při přidávání kanálu na web (např. `www.adventure-works.com/fr-ca`) a poté vyberte **Použít**.
+1. Vyberte **OK**.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Výběrem možnosti **Publikovat** publikujte stránku.
+
+V následujícím příkladu byl modul pro výběr lokality přidán do pozice **Výběr lokality** modulu záhlaví, který je obsažen ve fragmentu záhlaví **HeaderContainer**.
 
 ![Příklad modulu pro výběr lokality ve fragmentu záhlaví.](./media/ecommerce-sitepicker-2.png)
 

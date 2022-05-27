@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1bfbfabc8ba9c41dfd02c205755042f82387f5e09c88722e2503316bc1cf5feb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01babeae8ccb5af5e414cb78734ce05adf670277
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770353"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689768"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 3. května 2021
 
@@ -71,7 +70,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 | Funkce | Podrobnosti |
 | --- | --- |
-| Platform update 10.0.18 (42) | Aktualizace platformy 10.0.18 je naplánována na zavedení se servisním vydáním 17. května 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.18 aplikací Finance and Operations (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Platform update 10.0.18 (42) | Aktualizace platformy 10.0.18 je naplánována na zavedení se servisním vydáním 17. května 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.18 finančních a provozních aplikací (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Podpora vlastních polí v pravidlech nároku ve správě výhod  | [Vlastní podpora pole pro zpracování způsobilosti](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Úplný seznam plánovaných funkcí a plánovaných verzí najdete v části [Přehled o 1. vlně vydání Dynamics 365 Human Resources v roce 2021](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).

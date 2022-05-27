@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441258"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717104"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrace s LinkedIn Talent Hub
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Integrace mezi Dynamics 365 Human Resources a LinkedIn Talent Hub popsané v tomto tématu budou 31. prosince 2021 vyřazeny. Integrační služba po tomto datu již nebude k dispozici. Organizace, které dosud nepoužívají integrační službu, nebudou moci tuto službu implementovat před vyřazením.
+> Integrace mezi Dynamics 365 Human Resources a LinkedIn Talent Hub popsané v tomto tématu byly 31. prosince 2021 vyřazeny. Integrační služba po tomto datu již nebude k dispozici. Organizace, které dosud nepoužívají integrační službu, nebudou moci tuto službu implementovat před vyřazením.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) je platforma pro systém sledování žadatelů (ATS). Umožňuje vám získávat, spravovat a najímat zaměstnance z jednoho místa. Integrací Microsoft Dynamics 365 Human Resources s LinkedIn Talent Hub můžete snadno vytvářet záznamy o zaměstnancích v Human Resources pro uchazeče, kteří byli najati na pozici.
 

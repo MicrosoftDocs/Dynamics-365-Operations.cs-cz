@@ -2,7 +2,7 @@
 title: Vytvořte projekt integrace dat
 description: Toto téma vysvětluje, jak vytvořit projekt integrace dat.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107280"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722876"
 ---
 # <a name="create-a-data-integration-project"></a>Vytvořte projekt integrace dat
 
@@ -28,7 +28,7 @@ ms.locfileid: "8107280"
 
 Toto téma vysvětluje, jak vytvořit projekt integrace dat.
 
-1. Přihlaste se do aplikace Microsoft Dynamics 365 Finance.
+1. Přihlaste se do Microsoft Dynamics 365 Finance.
 2. Přejděte na **Pracovní prostory \> Správa dat** a vyberte dlaždici **Datové entity**. Než přejdete k dalšímu kroku, počkejte, dokud se neobnoví všechny datové entity.
 3. Otevřete [portál Power Apps](https://make.powerapps.com/) a postupujte takto:
 
@@ -55,11 +55,14 @@ Toto téma vysvětluje, jak vytvořit projekt integrace dat.
 
 5. Otevřete [prostředí Power Apps](https://admin.powerapps.com/environments) a postupujte takto:  
 
-    1. Vytvořte projekty integrace dat pro následující šablony pomocí sady připojení, kterou jste právě vytvořili:
+    1. Vytvořte jeden projekt integrace dat pro každou z následujících šablon pomocí sady připojení, kterou jste právě vytvořili:
 
         - Výsledek přehledu plateb zákazníka (CDS do Fin and Ops 10.0.17+)
         - Výsledky časové řady cashflow (CDS do Fin and Ops)
         - Výsledky časové řady rozpočtu (CDS do Fin and Ops)
+
+      > [!NOTE]
+      > Vytvoření více projektů integrace dat pro každou šablonu může způsobit chyby, které zablokují aktualizace.
 
     2. Nastavte vhodné plánování pro každý projekt.
 

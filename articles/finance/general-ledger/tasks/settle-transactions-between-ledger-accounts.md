@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711e2f445e043dc74cba0ee11f1ab2dc22215ff30f495e06dce1f6f3ab4a0a09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a871e379826626edbad2434b11281fce5e29e14e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723792"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717299"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Vyrovnání transakcí mezi účty hlavní knihy
 
@@ -28,22 +28,22 @@ Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak z
 
 
 ## <a name="settle-transaction-between-ledger-accounts"></a>Vyrovnání transakce mezi účty hlavní knihy
-1. Přejděte do hlavní knihy > Periodické úkoly > Vyrovnání hlavní knihy.
+1. Přejděte do **hlavní knihy > Periodické úkoly > Vyrovnání hlavní knihy**.
 2. V seznamu vyhledejte transakce, které chcete vyrovnat.
    > [!NOTE]
    > Zůstatek na účtu musí být nula.  
-3. Klepněte na Zahrnout.
-4. Klepněte na možnost Akceptovat.
+3. Klikněte na **Zahrnout**.
+4. Klikněte na **Akceptovat**.
 
 ## <a name="cancel-a-ledger-settlement"></a>Zrušení vyrovnání hlavní knihy
 
-1. Přejděte do části Hlavní kniha > Dotazy a sestavy > Předvaha.
-2. Klepnutím na možnost Parametry otevřete dialogové okno.
-3. Klepněte na položku Aktualizovat.
+1. Přejděte do části **Hlavní kniha > Dotazy a sestavy > Předvaha**.
+2. Klepnutím na možnost **Parametry** otevřete dialogové okno.
+3. Klikněte na položku **Aktualizovat**.
 4. V seznamu vyhledejte účet, který má vyrovnanou transakci.
-5. Klepněte na Všechny transakce.
+5. Klikněte na **Všechny transakce**.
 6. Filtr lze použít ke snadnému vyhledání transakce v seznamu.
-7. Klepněte na Vyrovnání hlavní knihy.
+7. Klikněte na **Vyrovnání hlavní knihy**.
 8. Označte v seznamu vybraný řádek.
 
 

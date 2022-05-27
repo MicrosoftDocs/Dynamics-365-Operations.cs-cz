@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "260624"
 - intro-internal
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8674c228a1e624a79ae210dc6ad5c0f80741570f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c867d051f5e32c5f98ea49a92475c6f15427ad54
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075039"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692772"
 ---
 # <a name="human-resources-home-page"></a>Domovská stránka Human Resources
 
@@ -47,7 +46,7 @@ Aplikace Human Resources propojuje informace o lidech a operacích, které vám 
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Pro více informací o Dynamics 365 Finance přejděte na [domovskou stránku aplikace Finance](../finance/index.md).
+Informace o Dynamics 365 Finance naleznete v části [Domovská stránka financí](../finance/index.md).
 
 ## <a name="additional-resources"></a>Další prostředky
 

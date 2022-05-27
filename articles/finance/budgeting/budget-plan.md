@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 65ebfddb1baf39e20c22d3ed9bb26dbb33765e20
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595303"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711997"
 ---
 # <a name="budget-planning"></a>Plánování rozpočtu
 
@@ -36,7 +36,7 @@ Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Mi
 
 ## <a name="prerequisites"></a>Předpoklady 
 
-Pro tento kurz budete potřebovat přístup k prostředí aplikace Microsoft Dynamics 365 Finance s ukázkovými daty Contoso a přiřazení k instanci jako správce. Pro tento seminář nepoužívejte soukromý režim prohlížeče – odhlaste se z jiného účtu v prohlížeči podle potřeby a přihlaste se pomocí údajů správce. Při přihlašování **MUSÍTE** zaškrtnout políčko „Zůstat přihlášen”. Tímto krokem zajistíte vytvoření trvalého souboru cookie, který aplikace Excel momentálně vyžaduje. Přihlašujete-li se k aplikaci pomocí jiného prohlížeče než IE, zobrazí se výzva k přihlášení v aplikaci Excel. Po kliknutí na tlačítko „Přihlásit” v aplikaci Excel se otevře místní okno IE a při přihlašování **MUSÍTE** zaškrtněte políčko „Zůstat přihlášeni”. Pokud se zdá, že volba „Přihlásit se” v aplikaci Excel nemá žádný účinek, vyprázdněte mezipaměť souborů cookie v IE.
+Pro tento kurz budete potřebovat přístup k prostředí aplikace Microsoft Microsoft Dynamics 365 Finance s ukázkovými daty Contoso a přiřazení k instanci jako správce. Pro tento seminář nepoužívejte soukromý režim prohlížeče – odhlaste se z jiného účtu v prohlížeči podle potřeby a přihlaste se pomocí údajů správce. Při přihlašování **MUSÍTE** zaškrtnout políčko „Zůstat přihlášen”. Tímto krokem zajistíte vytvoření trvalého souboru cookie, který aplikace Excel momentálně vyžaduje. Přihlašujete-li se k aplikaci pomocí jiného prohlížeče než IE, zobrazí se výzva k přihlášení v aplikaci Excel. Po kliknutí na tlačítko „Přihlásit” v aplikaci Excel se otevře místní okno IE a při přihlašování **MUSÍTE** zaškrtněte políčko „Zůstat přihlášeni”. Pokud se zdá, že volba „Přihlásit se” v aplikaci Excel nemá žádný účinek, vyprázdněte mezipaměť souborů cookie v IE.
 
 ## <a name="scenario-overview"></a>**Přehled scénáře**
 Julie pracuje jako finanční manažerka společnosti Contoso Entertainment Systems v Německu (DEMF). S blížícím se fiskálním rokem 2016 potřebuje pracovat na nastavení rozpočtu společnosti pro nadcházející rok. Příprava rozpočtu vypadá takto:

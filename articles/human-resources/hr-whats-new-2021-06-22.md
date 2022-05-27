@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 897c25df96017c5be1ae789027d178ca6b3ccc0410b4f65c7d2557b39e840134
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735344"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694417"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources 22. června 2021
 
@@ -83,7 +82,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 | Funkce | Podrobnosti |
 | --- | --- |
-| Platform update 10.0.19 (43) | Aktualizace platformy 10.0.19 je naplánována na zavedení se servisním vydáním 28. června 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.19 aplikací Finance and Operations (červen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform update 10.0.19 (43) | Aktualizace platformy 10.0.19 je naplánována na zavedení se servisním vydáním 28. června 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.19 finančních a provozních aplikací (červen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Přepínání zobrazení počtu let ve společnosti | Tato funkce poskytuje možnost použít různá data k výpočtu let služby ve společnosti zobrazených ve formuláři **Zjednodušené zadávání zaměstnance** a ve formuláři **Lidé**.  To bude k dispozici v parametrech Human Resources. |
 |  Povolit správci nepřítomnosti správu dovolené | [Povolit správci nepřítomnosti správu dovolené](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Přílohy zmocnění pro konkrétní typy pracovního volna | Tato funkce umožňuje správcům nařídit přidání příloh při odesílání žádostí o pracovní volno u konkrétních typů pracovního volna. |

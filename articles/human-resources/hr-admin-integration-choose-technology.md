@@ -1,6 +1,6 @@
 ---
 title: Volba technologie integrace dat
-description: Toto téma obsahuje informace o integraci s daty spravovanými v Human Resources.
+description: Toto téma obsahuje informace o integraci s daty spravovanými oddělením lidských zdrojů.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 98c1c56b445ae426103d19f96cbf1a77891221ef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065034"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717132"
 ---
 # <a name="choose-a-data-integration-technology"></a>Volba technologie integrace dat
 
@@ -128,7 +127,7 @@ Doplněk pro aplikaci Excel je vhodný pro ad-hoc importy/exporty dat prováděn
 
 Můžete použít [službu Data Integrato](/powerapps/administrator/data-integrator) k integraci dat do a z Dataverse. Službu Data Integrator umožňuje definovat integrační projekty, často na základě předdefinovaných šablon, které vývojáři aplikací přizpůsobili pro konkrétní integrace. Projekty integrace můžete naplánovat tak, aby se spouštěly automaticky na základě opakujícího se harmonogramu, nebo mohou být spouštěny ručně.
 
-Projekty Data Integrator jsou vhodné pro dávkové integrace Dataverse. Jedná se o skvělou volbu pro integraci mezi aplikací řady Dynamics 365. Například společnost Microsoft poskytuje šablonu služby Data Integrator k integraci dat z aplikace Human Resources do aplikace Dynamics 365 Finance. Další informace o šabloně v [integraci z Dynamics 365 Human Resources do Dynamics 365 Finance](hr-admin-integration-finance.md).
+Projekty Data Integrator jsou vhodné pro dávkové integrace Dataverse. Jedná se o skvělou volbu pro integraci mezi aplikací řady Dynamics 365. Například společnost Microsoft poskytuje šablonu služby Data Integrator k integraci dat z aplikace Human Resources do aplikace Dynamics 365 Finance. Více o šabloně si můžete přečíst v tématu [Integrace z Dynamics 365 Human Resources do Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 

@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "17251"
 - intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982058"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711736"
 ---
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
@@ -32,7 +32,7 @@ Toto téma popisuje plánování rozpočtu. Obsahuje informace, které vám pomo
 
 ## <a name="overview-of-budget-planning"></a>Přehled plánování rozpočtu
 
-Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 Finance, bude pro vás snazší a efektivnější provádět plánování rozpočtu ve vaší organizaci.
+Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Microsoft Dynamics 365 Finance, bude pro vás snazší a efektivnější provádět plánování rozpočtu ve vaší organizaci.
 
 ### <a name="key-terms"></a>Klíčové podmínky
 

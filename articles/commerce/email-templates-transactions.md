@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919494"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722512"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Vytvoření e-mailových šablon pro transakční události
 
@@ -64,8 +64,8 @@ Typ oznámení o dokončení balení podporuje následující dodatečné e-mail
 | ------------------- | ------- |
 | `pickupstorename`     | Název obchodu, kde je možné objednávku vyzvednout. |
 | `pickupstoreaddress`  | Adresa obchodu, kde je možné objednávku vyzvednout. |
-| `pickupstorehourfrom` | Otevírací doba výdejny. |
-| `pickupstorehourto`   | Zavírací doba výdejny. |
+| `pickupstoreopenfrom` | Otevírací doba výdejny. |
+| `pickupstoreopento` | Zavírací doba výdejny. |
 | `pickupchannelid`     | ID kanálu obchodu výdejny. |
 | `packingslipid`      | ID dodacího listu k objednávce, která bude vyzvednuta. |
 | `confirmationid`      | ID potvrzení objednávky která bude vyzvednuta. (Toto ID se někdy označuje jako referenční ID kanálu.) |
@@ -102,7 +102,7 @@ Typ oznámení o vydání dárkové karty podporuje následující další zást
 | Název zástupného textu      | Účel |
 | --------------------- | ------- |
 | `giftcardnumber`        | Číslo dárkového poukazu pro výrobky typu dárkového poukazu. |
-| `giftcardbalance`       | Zůstatek dárkového poukazu pro výrobky typu dárkového poukazu. |
+| `availablebalance` | Zbývající zůstatek na dárkové kartě. |
 | `giftcardmessage`       | Zpráva dárkového poukazu pro výrobky typu dárkového poukazu. |
 | `giftcardpin`         | PIN kód dárkového poukazu pro výrobky typu dárkového poukazu. (Tento zástupný text je specifický pro externí dárkové poukazy.) |
 | `giftcardexpiration`    | Datum vypršení dárkového poukazu pro výrobky typu dárkového poukazu. (Tento zástupný text je specifický pro externí dárkové poukazy.) |
