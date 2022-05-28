@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066593"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733973"
 ---
 # <a name="recruit-job-candidates"></a>Nábor uchazečů o práci
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066593"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources vám pomůže spravovat žádosti o nábor. Pomůže vám také s bezproblémovým přechodem uchazečů o zaměstnání na zaměstnance. Pokud vaše organizace používá samostatnou náborovou aplikaci, může váš náborový proces zahrnovat následující kroky:
+Dynamics 365 Human Resources vám pomůže spravovat žádosti o nábor. Pomůže vám také s bezproblémovým přechodem uchazečů o zaměstnání na zaměstnance. Pokud vaše organizace používá samostatnou náborovou aplikaci, může váš náborový proces zahrnovat následující kroky:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Zadejte svou žádost o nábor v Human Resources.
 - Přijměte doporučení kandidátů v Human Resources z náborové aplikace.
@@ -38,17 +37,22 @@ Dynamics 365 Human Resources vám pomůže spravovat žádosti o nábor. Pomůž
 Pokud nepoužíváte samostatnou náborovou aplikaci, můžete kandidáty spravovat také ručně v Human Resources.
 
 > [!NOTE]
-> Pokud jste správcem nebo vývojářem a chcete integrovat Human Resources s náborovou aplikací jiných výrobců, přečtěte si [Konfigurace integrace Dataverse](hr-admin-integration-common-data-service.md) a [Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)
+> Pokud jste správcem nebo vývojářem a chcete integrovat Human Resources s náborovou aplikací jiných výrobců, jděte na [Konfigurace integrace Dataverse](hr-admin-integration-common-data-service.md) a [Konfigurace virtuálních tabulek Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Najdete zde také náborové integrační aplikace v [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Povolit požadavky na nábor
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Povolení požadavků na nábor ve sloučené infrastruktuře
 
-Pokud chcete odeslat žádosti o nábor v Human Resources, musíte nejprve povolit tuto funkci v části **Sdílené parametry Human Resources**.
+Pokud chcete podat žádosti o nábor v náboru lidských zdrojů, musíte nejprve povolit funkce **Uživatelské prostředí HR** a **Řízení procesu náboru**.
 
-1. V pracovním prostoru **Správa zaměstnanců** vyberte kartu **Odkazy**.
-2. V části **Nastavení** vyberte **Sdílené parametry Human Resources**.
-3. Na kartě **Nábor** v části **Nábor** nastavte **Povolit žádosti o nábor** na **Ano**.
+Jakmile jsou funkce zapnuté, vyberte je pomocí následujících kroků: 
+1. Jděte na **Lidské zdroje** > **Nastavení** > **Parametry lidských zdrojů**.
+2. Na kartě  **Nábor**  nastavte pole **Nábor zakázán** na **Ne**.
+3. V rozevíracím seznamu **Zkušenosti s náborem** vyberte **Nábor HR**.   
+
+> [!Note] 
+> Po výběru **Nábor HR** bude pole **Projekty náboru** (zastaralé) jen pro čtení. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Přidání umístění žádosti o nábor
 
@@ -61,7 +65,7 @@ Pokud má vaše organizace více umístění, můžete je přidat, aby si žadat
     ![Přidání umístění žádosti o nábor.](./media/hr-recruit-0a-add-location.png)
 
 4. Do pole **Popis** zadejte popis umístění.
-5. Ve volbě **Umístění** vyberte **Přidat**. Pokud se objeví dialogové okno **Nová adresa**, zadejte adresu umístění.
+5. Ve volbě **Umístění** vyberte **Přidat**. Pokud se objeví dialogové okno **Nová adresa**, zadejte adresu umístění.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Zadejte adresu.](./media/hr-recruit-0b-address.png)
 
@@ -91,12 +95,12 @@ Manažeři mohou odesílat žádosti o nábor v Human Resources. Pokud použív�
     Zbytek žádosti o nábor se naplní výchozími informacemi o zadané práci.
 
 8. V části **Vnější popis** zadejte popis práce, který se bude zobrazovat navenek.
-9. V části **Pozice** vyberte **Přidat** a poté vyberte pozici pro tuto žádost o nábor.
+9. V části **Pozice** vyberte **Přidat** a poté vyberte pozici pro tuto žádost o nábor.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Přidání pozice.](./media/hr-recruit-4-select-position.png)
 
 10. V části **Dovednosti** vyberte **Přidat** a poté vyberte dovednost.
-11. V části **Požadavky na vzdělání** vyberte **Přidat** a poté vyberte hodnoty z rozevíracích seznamů **Vzdělání** a **Úroveň vzdělání**.
+11. V části **Požadavky na vzdělání** vyberte **Přidat** a poté vyberte hodnoty z rozevíracích nabídek **Vzdělání** a **Úroveň vzdělání**.
 
     ![Přidání dalších požadavků.](./media/hr-recruit-5-select-educational-requirements.png)
 

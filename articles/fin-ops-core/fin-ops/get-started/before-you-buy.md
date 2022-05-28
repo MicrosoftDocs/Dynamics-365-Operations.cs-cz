@@ -1,7 +1,7 @@
 ---
 title: Před zakoupením
 description: Podrobné pokyny k použití, pokud zvažujete zakoupit Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce.
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,29 +10,29 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874577"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713269"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
 [!include [banner](../includes/banner.md)]
 
-Neznáte Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce? Připravili jsme podrobné pokyny, ať již aplikaci stále hodnotíte, nebo jste připravení na nákup.
+Pracujete v Dynamics 365 Finance, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce nově? Připravili jsme podrobné pokyny, ať již aplikaci stále hodnotíte, nebo jste připravení na nákup.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok 1: Vyzkoušejte aplikaci Finance and Operations zdarma po dobu 30 dnů
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok jedna: Vyzkoušejte si aplikaci Finance and Operations 30 dní zdarma
 
-Aplikaci Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze aplikací Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte v tématu [Registrace ukázkového předplatného](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Aplikaci Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management nebo Dynamics 365 Commerce můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze finančních a provozních aplikací obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte v tématu [Registrace ukázkového předplatného](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok dva: Výběr možnosti nasazení
 
-Aplikace Finance and Operations můžete nyní nasadit v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
+Finanční a provozní aplikace můžete nyní nasadit v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
 
 Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvahu následující:
 
@@ -68,7 +68,7 @@ Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolup
 
 Pokud má vaše organizace 250 nebo více uživatelů Dynamics 365, může vás zajímat [smlouva o multilicenci](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-Ve multilicencích jsou aplikace Finance and Operations k dispozici prostřednictvím:
+Při využití multilicence jsou finanční a provozní aplikace dostupné následujícími způsoby:
 
 - Smlouva Enterprise
 - Předplatné smlouvy Enterprise

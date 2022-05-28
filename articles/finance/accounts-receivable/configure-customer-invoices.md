@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392904"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756956"
 ---
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
@@ -30,7 +30,7 @@ ms.locfileid: "8392904"
 
 **Faktura s volným textem** nesouvisí s prodejní objednávkou. Obsahuje řádky objednávky zahrnující účty hlavní knihy, textové popisy a vámi zadanou částku prodeje. Číslo položky nelze u tohoto druhu faktury zadat. Je však nutné zadat příslušné informace o DPH. Hlavní účet pro prodej je uveden na každém řádku faktury, který můžete rozdělit do několika účtů hlavní knihy kliknutím na možnost **Distribuovat částky** na stránce **Volná faktura**. Zůstatek odběratele je navíc zaúčtovány do souhrnného účtu z účetního profil, který se používá pro volnou fakturu.
 
-Další informace naleznete zde: 
+Další informace naleznete zde:
 
 [Vytvořit volné faktury](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Další informace naleznete zde:
 [Generování a zaúčtování opakovaných volných faktur](tasks/post-recurring-free-text-invoices.md)
 
 
-**Proforma faktura** je faktura připravená jako odhad skutečných částek faktury před zaúčtováním faktury. Proforma fakturu lze vytisknout buď pro fakturu odběratele pro prodejní objednávku, nebo pro volnou fakturu.
+**Proforma faktura** je faktura připravená jako odhad skutečných částek faktury před zaúčtováním faktury. **Proforma fakturu** lze vytisknout buď pro fakturu odběratele u prodejní objednávky, nebo pro volnou fakturu. 
+
+>[!NOTE]
+> V případě přerušení systému během procesu prodejní proforma faktury může proforma faktura zůstat osiřelá. Osiřelou proforma fakturu lze odstranit spuštěním periodické úlohy **Odstranit proforma faktury ručně**. Přejděte do nabídky **Prodej a marketing > Periodické úkoly > Vyčištění > Odstranit proforma faktury ručně**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Použití entit dat zákaznické faktury prodejní objednávky
 Datové entity můžete použít k importu a exportu informací o zákaznické faktuře pro prodejní objednávku. Existují různé entity pro informace v záhlaví prodejní faktury a řádcích prodejní faktury.
@@ -70,7 +73,7 @@ Na stránce se seznamem **Všechny prodejní objednávky** si můžete zobrazit 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-packing-slips-and-the-date"></a>Zaúčtování a tisk jednotlivých faktur odběratele založených na dodacích listech a datu
 Tento proces použijte, když byl pro danou prodejní objednávku zaúčtován alespoň jeden dodací list. Faktura odběratele je založena na těchto dodacích listech a odráží na nich uvedená množství. Finanční údaje pro fakturu jsou založeny na údajích zadaných při zaúčtování faktury. 
 
-Můžete vytvořit fakturu odběratele založenou na položkách řádku dodacího listu, které byly odeslány k určitému datu, a to i když všechny položky pro určitou prodejní objednávku nebyly dosud odeslány. To lze provést například v situaci, kdy daná právnická osoba vystavuje každému odběrateli jednu fakturu měsíčně, která zahrnuje všechny dodávky za daný měsíc. Každý dodací list odpovídá částečné nebo úplné dodávce položek na prodejní objednávce. 
+Můžete vytvořit fakturu odběratele založenou na položkách řádku dodacího listu, které byly odeslány k určitému datu, a to i když všechny položky pro určitou prodejní objednávku nebyly odeslány. To lze provést například v situaci, kdy daná právnická osoba vystavuje každému odběrateli jednu fakturu měsíčně, která zahrnuje všechny dodávky za daný měsíc. Každý dodací list odpovídá částečné nebo úplné dodávce položek na prodejní objednávce. 
 
 Při zaúčtování faktury bude množství **Zůstatek faktury** pro každou položku aktualizováno o souhrn dodaných množství z vybraných dodacích listů. Pokud bude množství **Zůstatek faktury** i množství **Zbývá dodat** pro všechny položky na prodejní objednávce nulové (0), stav prodejní objednávky se změní na hodnotu **Fakturováno**. Pokud množství v poli **Zůstatek faktury** není nulové (0), stav prodejní objednávky se nezmění a k této objednávce je možné zadat další faktury. 
 
@@ -82,6 +85,11 @@ Na stránce se seznamem **Všechny prodejní objednávky** si můžete zobrazit 
 Tento proces použijte, když jsou některé prodejní objednávky připraveny k fakturaci a vy je chcete sloučit do jedné faktury. 
 
 Na stránce se seznamem **Prodejní objednávka** můžete vybrat více faktur a poté použít možnost **Generovat faktury** k jejich konsolidaci. Na stránce **Zaúčtování faktury** můžete změnit nastavení položky **Souhrnná objednávka** tak, aby bylo shrnutí provedeno podle čísla objednávky (pokud existuje více dodacích listů pro jednu prodejní objednávku) nebo podle účtu faktury (pokud existuje více prodejních objednávek pro jeden účet faktury). Tlačítkem **Uspořádat** konsolidujte prodejní objednávky do jedné faktury na základě nastavení v poli **Souhrnná objednávka**.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Rozdělení faktur prodejních objednávek podle místa a informací o dodání
+Na kartě **Souhrnná aktualizace** stránky **Parametry pohledávek** můžete konfigurovat rozdělení zákaznických faktur prodejních objednávek podle webu nebo podle dodací adresy. 
+ - Vyberte možnost **Rozdělit na základě pracoviště faktury**, pokud chcete při zaúčtování vytvořit jednu fakturu na každé pracoviště. 
+ - Možnost **Rozdělit na základě informací o dodávce faktury** vyberte, chcete-li při zaúčtování vytvořit jednu fakturu na jednu adresu dodání na řádku prodejní objednávky. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky, které neobsahují cenu
 Budete moci aktualizovat účet **Výnosy** v **Hlavní knize** u těch řádků prodejních objednávek, které neobsahují žádnou cenu. Chcete-li nastavit nebo zobrazit tyto informace, přejděte na parametr **Zaúčtovat na účet výnosů pro řádky faktury prodejní objednávky s nulovou cenou** na kartě **Hlavní kniha a DPH** na stránce **Parametry pohledávek**. (**Pohledávky > Nastavení > Parametry pohledávek**). Výběrem možnosti **Ano** aktualizujete účet **Výnosy** u těch řádků faktur prodejní objednávky, které neobsahují žádnou cenu. Výnosový účet je definován na stránce parametrů **Zaúčtování skladu**, na kartě definice účtu **Prodejní objednávka**. Pokud tato možnost není vybrána, řádky, které neobsahují informace o ceně, nebudou zaúčtovány na účet **Výnosy**.

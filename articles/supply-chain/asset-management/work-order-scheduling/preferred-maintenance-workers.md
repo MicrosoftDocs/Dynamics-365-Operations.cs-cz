@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734420"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687662"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Nastavení preferovaných pracovníků údržby
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Během plánování pracovního příkazu můžete vytvořit předvolbu, která se týká toho, který pracovník údržby nebo skupina pracovníků budou přiděleni k dokončení pracovního příkazu. Použití této funkce je volitelné, ale může vám pomoci vybrat pro nejvíce kvalifikovaného pracovníka údržby, aby dokončil úlohu na základě dovedností a kompetencí pracovníků. Naplánovány budou pouze pracovníci údržby, kteří jsou k dispozici v čase plánování. Pokud je nastavení preferovaných pracovníků údržby během plánování shodné s pracovním příkazem, ale pracovník údržby je přidělen k jiným úlohám, bude pracovní příkaz naplánován na jiného dostupného pracovníka údržby.
 
@@ -51,13 +49,15 @@ Upřednostňovaný pracovník údržby nebo skupina pracovníků může souviset
 
 3. Začněte vytvořením "výchozího" pracovníka pro údržbu nebo skupiny pracovníků. To znamená, že provedete výběr pouze v poli **Skupina preferovaných pracovníků údržby** nebo **Preferovaný pracovník údržby**. Na níže uvedeném snímku obrazovky vidíte příklad v prvním záznamu, ve kterém je vybrána možnost „požadavky“ jako **skupina preferovaných pracovníků údržby**.
 
-    [!NOTE] Toto výchozí nastavení bude použito během plánování pracovního příkazu, pokud žádná jiná specifická kombinace neodpovídá obsahu pracovního příkazu.
+    > [!NOTE]
+    > Toto výchozí nastavení bude použito během plánování pracovního příkazu, pokud žádná jiná specifická kombinace neodpovídá obsahu pracovního příkazu.
 
 4. Opakujte krok 2 a vytvořte nový záznam. Proveďte požadované výběry v závislosti na úrovni podrobností pro preferovaného pracovníka nebo skupinu pracovníků. 
 
     *Příklad:* na snímku obrazovky níže, v šestém záznamu, je jako preferovaný pracovník vybrán pracovník údržby Shawn Richardson. Při plánování pracovního příkazu bude automaticky vybrána možnost, která zahrnuje majetek CH-BP1-03-02 a typ práce údržby "Hodnocení zařízení", pokud je k dispozici v naplánovaném čase.
 
-    [!NOTE] Obecně platí, že když je při plánování pracovních příkazů vybrán preferovaný pracovník údržby, Správa majetku projde všechny záznamy **Preferovaní pracovníci údržby** a zkontroluje možné odpovídající položky. Vždy nejprve zkontroluje nejkonkrétnější kombinaci. Pokud není nalezena žádná shoda, bude použit "výchozí" záznam s výběrem v poli **Skupina preferovaných pracovníků údržby** nebo **Preferovaný pracovník údržby**.
+    > [!NOTE]
+    > Obecně platí, že když je při plánování pracovních příkazů vybrán preferovaný pracovník údržby, Správa majetku projde všechny záznamy **Preferovaní pracovníci údržby** a zkontroluje možné odpovídající položky. Vždy nejprve zkontroluje nejkonkrétnější kombinaci. Pokud není nalezena žádná shoda, bude použit "výchozí" záznam s výběrem v poli **Skupina preferovaných pracovníků údržby** nebo **Preferovaný pracovník údržby**.
 
 ![Obrázek č. 1.](media/02-work-order-scheduling.png)
 

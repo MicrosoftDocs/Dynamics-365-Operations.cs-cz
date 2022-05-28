@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763183"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734597"
 ---
 # <a name="cost-control-workspace"></a>Pracovní prostor řízení nákladů 
 
@@ -54,7 +54,7 @@ Na pevné záložce **Filtrování dat** určete základ dat pro sestavu. Uživa
 | Hlavní kniha nákladového účetnictví                                            | **Hlavní kniha nákladového účetnictví**, na které je sestava založena. Hodnota je odvozena od pole **Jednotka řízení nákladů**. |
 | Jednotka řízení nákladů                                                 | Hodnota, kterou jste vybrali, určuje hlavní knihu nákladového účetnictví a objekty nákladů, na kterých je tato sestava založena. |
 | Hierarchie statistické dimenze, Hierarchie dimenze prvku nákladů | Záznam konfigurace pracovního prostoru **Řízení nákladů** může vykázat buď nepeněžní nebo peněžní hodnoty, nikoliv však ve stejném rozvržení. Vyberte hodnotu v poli **Hierarchie dimenze prvku nákladů** pro vykázání peněžních hodnot. Vyberte hodnotu v poli **Hierarchie statistické dimenze** pro vykázání nepeněžních hodnot. Zvolený záznam hierarchie dimenze určuje strukturu úrovně vykazování a agregace.<blockquote>[!NOTE]<br>Chcete-li zobrazit nefinanční a finanční hodnoty vedle sebe, můžete exportovat data do aplikace Microsoft Excel pro balíček obsahu Microsoft Power BI.</blockquote> |
-| Hierarchie dimenze objektu nákladů                                   | Vyberte hierarchii dimenze z dimenze objektu nákladů, který vyhovuje účelu vykazování, které definujete. |
+| Hierarchie dimenze objektu nákladů      | Vyberte hierarchii dimenze z dimenze objektu nákladů, který vyhovuje účelu vykazování, které definujete. |
 | Původní verze rozpočtu                                           | Vyberte ID verze rozpočtu, která se chová jako původní rozpočet v rámci této sestavy. |
 | Revidovaná verze rozpočtu                                            | Vyberte ID verze rozpočtu, která se chová jako revidovaný rozpočet v rámci této sestavy. |
 

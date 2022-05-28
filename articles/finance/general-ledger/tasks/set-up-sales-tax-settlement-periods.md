@@ -1,6 +1,6 @@
 ---
 title: Nastavení období vyrovnání DPH
-description: Toto téma vysvětluje, jak nastavit období vyrovnání DPH v aplikaci Dynamics 365 Finance.
+description: Toto téma vysvětluje, jak nastavit kódy období vypořádání DPH v Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732950"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735807"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>Nastavení období vyrovnání DPH
+# <a name="set-up-sales-tax-settlement-periods"></a>Nastavit období vyrovnání DPH
 
 [!include [banner](../../includes/banner.md)]
 
 Toto téma vysvětluje, jak nastavit období vyrovnání DPH. Období vyrovnání DPH obsahuje informace o intervalech období, pro které se musí DPH vykazovat a platit. Proces vyrovnání lze spustit pro období vyrovnání pro specifický časový interval. Všechny kódy daně, které jsou spojené s obdobím vyrovnání, budou vyrovnány. V závislosti na nastavení souvisejícího finančního úřadu je daňová povinnost zaúčtována pro dodavatele nebo na účet hlavní knihy.
 
-Tento úkol využívá ukázkovou společnost USMF.
+Tento úkol používá ukázkovou společnost USMF.
 
-1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH**.
+1. Přejděte na **Daň > Nepřímé daně > DPH > Období vyrovnání DPH**.
 2. Zvolte **Nové**.
 3. Zadejte hodnotu do pole **Období vyrovnání**.
 4. Zadejte hodnotu do pole **Popis**.

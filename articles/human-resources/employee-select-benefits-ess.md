@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 190eb7e437af7edd8eee97b8f2b7601254cbd240
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066411"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743479"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>Zaměstnanci si vybírají plány pomocí samoobsluhy zaměstnanců (volitelně)
 
@@ -35,11 +34,11 @@ Chcete zaměstnanec získat přístup k jejich výhodám pro zápis, přejde na 
 Na stránce **Samoobsluha výhod** jsou plány výhod seskupeny podle typu plánu. Chcete zaměstnanec zobrazit plány výhod v typu plánu, vybere dlaždici na stránce **Zaměstnanecké výhody**. Zaměstnanec uvidí pouze výhody, na které má nárok.
 
 > [!IMPORTANT]
-> Než bude možné zobrazit typ plánu v **Samoobsluze zaměstnanců**, musí být nakonfigurován. Další informace viz [Konfigurace samoobsluhy pro zaměstnance](/hr-benefits-setup-employee-self-service.md).
+> Než bude možné zobrazit typ plánu v **Samoobsluze zaměstnanců**, musí být nakonfigurován. Další informace viz [Konfigurace samoobsluhy pro zaměstnance](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 V závislosti na typu plánu lze pro registraci vybrat jednu nebo více výhod. Například typ lékařského plánu může být nakonfigurován tak, aby omezil zaměstnance na jeden lékařský plán. Typ plánu životního pojištění může zaměstnanci umožnit vybrat si více plánů životního pojištění.
 
-Poté, co se zaměstnanec rozhodne, do kterého plánu se zapíše, může být požadováno, aby vybral závislé osoby. Pokud si zaměstnanec vybral možnost krytí, která je **Zaměstnanec +1**, **Zaměstnanec + děti** nebo **Rodina**, musí být vybrány závislé osoby. Další informace o možnostech krytí viz [Vytvoření možností pokrytí](/hr-benefits-setup-coverage-options.md).
+Poté, co se zaměstnanec rozhodne, do kterého plánu se zapíše, může být požadováno, aby vybral závislé osoby. Pokud si zaměstnanec vybral možnost krytí, která je **Zaměstnanec +1**, **Zaměstnanec + děti** nebo **Rodina**, musí být vybrány závislé osoby. Další informace o možnostech krytí viz [Vytvoření možností pokrytí](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
 Chce-li zaměstnanec vybrat plán benefitů, vybere buď tlačítko se třemi tečkami (**...**), nebo **Přidat do košíku**. Poté, co zaměstnanec dokončí přidávání všech výběrů benefitů do košíku, vybere **Prohlédnout košík**. Zaměstnanec je poté přenesen na stránku **Plány**, kde si může prohlédnout své vybrané plány výhod a plány, kterých se vzdal.
 

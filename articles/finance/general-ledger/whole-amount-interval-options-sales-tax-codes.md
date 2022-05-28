@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 6f06c92f2151f54a7d9b684b9687b786d1e4cd7a
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726816"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727447"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
 
@@ -54,7 +54,7 @@ Prodejní daň bude vypočtena ve výši celé zdanitelné částky.
 
 | Zdanitelná částka (cena) | Výpočet    | DPH |
 |------------------------|----------------|-----------|
-| 35,00                  | 35,00 \* 0,30  | 10.50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50 USD     |
 | 50,00                  | 50,00 \* 0,30  | 15:00     |
 | 85,00                  | 85,00 \* 0,20  | 17,00     |
 | 305,00                 | 305,00 \* 0,10 | 30,50     |
@@ -72,7 +72,7 @@ Prodejní daň je součtem částek daně, které byly vypočteny pro každou č
 
 | Zdanitelná částka (cena) | Výpočet                                                               | DPH |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35,00 \* 0,30                                                             | 10.50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50 USD     |
 | 50,00                  | 50,00 \* 0,30                                                             | 15:00     |
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45.50     |

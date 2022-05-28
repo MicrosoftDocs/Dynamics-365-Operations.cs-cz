@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753963"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734450"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Přidání informací o správě úvěru pro odběratele
 
@@ -32,7 +32,7 @@ Podrobnosti o odběrateli lze přidat na pevné záložce **Úvěr a inkasa** 
 1. Nastavte možnost **Neomezený limit úvěru** na **Ano**, nemá-li být odběratel omezen žádnými testy limitu úvěru.
 2. Nastavte možnost **Vyloučit ze správy úvěru** na **Ano** pro vyloučení odběratele ze všech úkonů, které jsou obvykle prováděny během procesů správy úvěru.
 3. Vyberte skupinu správy úvěru pro odběratele.
-4. Pro výpočet limitu úvěru v měně odběratele zadejte do pole **Limit úvěru v měně odběratele** limit úvěru odběratele. Limit úvěru v měně společnosti bude převeden s použitím směnných kurzů, které jsou definovány typem směnného kurzu limitu úvěru vybraným v rámci parametrů správy úvěru.
+4. Pro výpočet limitu úvěru v měně odběratele zadejte do pole **Limit úvěru v měně odběratele** limit úvěru odběratele. Limit úvěru v měně společnosti bude převeden s použitím směnných kurzů, které jsou definovány typem směnného kurzu limitu úvěru vybraným v rámci **parametrů správy úvěru**.
 5. Do pole **Datum poslední kontroly** zadejte datum, kdy byl limit úvěru odběratele naposledy zkontrolován správcem úvěru.
 6. Do pole **Datum příští plánované kontroly** zadejte datum, kdy je plánována kontrola a aktualizace úvěru odběratele.
 7. Do pole **Přípustný limit úvěru** zadejte nejvyšší limit úvěru, který může být přidělen odběrateli na základě vaší kontroly úvěrové historie tohoto odběratele. Přípustný limit úvěru se může lišit od limitu úvěru, který se zobrazuje na pevné záložce **Úvěr a inkasa**.
@@ -46,7 +46,8 @@ Podrobnosti o odběrateli lze přidat na pevné záložce **Úvěr a inkasa** 
 15. Do pole **Odběratelem od** zadejte datum, kdy byly zpracovány první transakce pro tohoto odběratele. Tyto informace se používají při vytváření hodnocení rizik.
 16. Zadejte poznámky, které může úvěrový tým použít k dalšímu vyhodnocení úvěrové způsobilosti odběratele.
 
-Upozorňujeme, že některé informace zobrazené na stránce **Odběratel** jsou vytvořeny jiným procesem:
+> [!Note] 
+> Některé informace zobrazené na stránce **Odběratel** jsou vytvořeny jiným procesem:
 
 - V poli **Datum vypršení platnosti limitu úvěru** se zobrazuje datum, kdy vyprší platnost limitu úvěru. Pokud toto pole nenastavíte, platnost limitu úvěru odběratele nevyprší.
 - V poli **Datum limitu úvěru** se zobrazuje datum, kdy byl limit úvěru vytvořen. Toto pole je aktualizováno při každé úpravě limitu úvěru.

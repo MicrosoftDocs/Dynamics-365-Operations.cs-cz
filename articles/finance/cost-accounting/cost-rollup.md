@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779949"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734422"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zásady shrnutí nákladů a výpočet režijních nákladů 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779949"
 Nákladové účetnictví vám umožní získat přehled o vztahu toku nákladů k produktům a službám, které jsou dodávány v rámci organizace. Pro zobrazení transparentních nákladů je velmi důležité dosáhnout přidělení nákladů mezi objekty nákladů na základě příslušného základu přidělení. Ve výchozím nastavení je dosaženo přidělení nákladů pro primární prvek nákladů, který je v některých situacích vyžadován, ale je zde několik důsledků, které je třeba zvážit.
 
 -   Pomocné objekty nákladů budou končit s nulovým zůstatkem pro primární prvek nákladů po výpočtu režijních nákladů.
-
 -   Objem položek nákladů vygenerovaný při výpočtu režijních nákladů může být velmi vysoký.
-
 -   Není možné sledovat tok nákladů mezi objekty nákladů.
 
 Abyste zabránili těmto důsledkům, nákladové účetnictví vám umožní nakonfigurovat přidělení nákladů tak, aby vyhovovalo manažerským požadavkům na vykazování ve vaší organizaci. Toto téma se zabývá tím, jak určit správnou úroveň sekundárních prvků nákladů a vytvořit pravidla shrnutí nákladů, které spadají do výkaznictví organizace a sledovatelnosti nákladů.

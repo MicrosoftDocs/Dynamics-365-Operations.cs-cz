@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064915"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743534"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Ověření mezi servery pro integrační API ATS
 
@@ -89,7 +89,7 @@ U nové role musí být odpovídající přístup přiřazen minimálně násled
 
 Druhým krokem je zajistit, aby aplikaci byla udělena příslušná oprávnění k datům v Human Resources propojením s uživatelem v aplikaci Human Resources. U uživatele aplikace jsou volání mezi servery prostřednictvím virtuálních tabulek Dataverse prováděny v kontextu identity uživatele (aplikace) v Dataverse, které vyvolává akci. Služba adaptéru virtuální tabulky poté vyhledá přidruženého uživatele v Human Resources a spustí dotaz v kontextu daného uživatele. To znamená, že uživatel musí být vytvořen v Human Resources se správnými přiřazenými rolemi, aby mohl poskytnout přístup k datům, která bude integrace potřebovat.
 
-Uživateli Human Resources bude také nutné přiřadit správná oprávnění k datům v oblasti Human Resources. Role **Žádost o nábor** (HcmRecruitingIntegrator) je k dispozici s oprávněními pro primární entity potřebné pro integraci s náborovými daty. Tuto roli lze přiřadit uživateli aplikace na stránce **Uživatelé** k udělení příslušného přístupu k údajům. Další informace o rolích zabezpečení Human Resources najdete v tématu [Zabezpečení založené na rolích](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Uživateli Human Resources bude také nutné přiřadit správná oprávnění k datům v oblasti Human Resources. Role **Žádost o nábor** (HcmRecruitingIntegrator) je k dispozici s oprávněními pro primární entity potřebné pro integraci s náborovými daty. Tuto roli lze přiřadit uživateli aplikace na stránce **Uživatelé** k udělení příslušného přístupu k údajům. Další informace o rolích zabezpečení Human Resources najdete v tématu [Zabezpečení založené na rolích](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Nastavení nového uživatele s příslušnými oprávněními
 

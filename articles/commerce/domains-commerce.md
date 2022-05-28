@@ -2,7 +2,7 @@
 title: Domény v Dynamics 365 Commerce
 description: Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733984"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737339"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domény v Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733984"
 Tohle téma popisuje, jak se zachází s doménami v Microsoft Dynamics 365 Commerce.
 
 Domény jsou webové adresy používané k navigaci na weby Dynamics 365 Commerce ve webovém prohlížeči. Správu své domény provádíte u vybraného poskytovatele serveru DNS (Domain Name Server). Na domény se odkazuje v rámci konfigurátoru webů Dynamics 365 Commerce za účelem koordinace přístupu na web, když je publikován. Toto téma popisuje, jak se s doménami zachází a jak se na ně odkazuje během celého životního cyklu vývoje a spuštění webu Commerce.
+
+> [!NOTE]
+> Od 6. května 2022 budou všechna prostředí vytvořená v Dynamics 365 Commerce zřizována s doménou `.dynamics365commerce.ms`, nahrazující dřívější vzor `.commerce.dynamics.com`. Stávající prostředí vybavená doménou `.commerce.dynamics.com` bude nadále fungovat.
 
 ## <a name="provisioning-and-supported-host-names"></a>Zřizování a podporované názvy hostitelů
 
@@ -44,7 +47,7 @@ Pokud již došlo ke zřízení, můžete vytvořit požadavek na službu a při
 
 ## <a name="commerce-generated-urls"></a>Adresy URL generované řešením Commerce
 
-Při zřizování prostředí elektronického obchodu Dynamics 365 Commerce vygeneruje Commerce adresu URL, která bude pracovní adresou prostředí. Tuto adresu URL obsahuje odkaz na web elektronického obchodu zobrazeném v LCS po zřízení prostředí. Adresa URL generovaná řešením Comerce je ve formátu `https://<e-commerce tenant name>.commerce.dynamics.com`, kde název klienta elektronického obchodu je název zadaný v LCS pro prostředí Commerce.
+Při zřizování prostředí elektronického obchodu Dynamics 365 Commerce vygeneruje Commerce adresu URL, která bude pracovní adresou prostředí. Tuto adresu URL obsahuje odkaz na web elektronického obchodu zobrazeném v LCS po zřízení prostředí. Adresa URL generovaná řešením Comerce je ve formátu `https://<e-commerce tenant name>.dynamics365commerce.ms`, kde název klienta elektronického obchodu je název zadaný v LCS pro prostředí Commerce.
 
 Můžete také použít názvy hostitelů výrobního webu v prostředí sandbox. Tato možnost je ideální, když budete kopírovat web z prostředí sandbox do produkčního prostředí.
 
@@ -67,11 +70,11 @@ Pole **Cesta** může zůstat prázdné nebo lze přidat další řetězec cesty
 
 Například pokud máte web v konfigurátoru webů s názvem „fabrikam“ v klientu elektronického obchodu s názvem „xyz“ a pokud nastavíte web s prázdnou cestou, měli byste přístup k publikovanému obsahu webu ve webovém prohlížeči přímým přechodem na základní adresu URL generovanou řešením Commerce:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Alternativně, pokud byste během nastavení stejného webu přidali cestu „fabrikam“, měli byste přístup k publikovanému obsahu webu ve webovém prohlížeči pomocí následující adresy URL:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Stránky a adresy URL
 
@@ -92,16 +95,16 @@ Podporované hodnoty názvů hostitelů jsou k dispozici k přidružení jako do
 Pokud při práci s weby v konfigurátoru webů máte dva weby nastavené se dvěma různými doménami, můžete připojit atribut **?domain=** k vaší pracovní adrese URL pro přístup k publikovanému obsahu webu v prohlížeči.
 
 Například bylo zřízeno prostředí „xyz“ a v konfigurátoru webů byly vytvořeny a přidruženy dva weby: jeden s doménou `www.fabrikam.com` a druhý s doménou `www.constoso.com`. Každý web byl nastaven s prázdnou cestou. K těmto dvěma webům je pak možné přistupovat ve webovém prohlížeči pomocí atributu **?doména=**:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Pokud není řetězec dotazu na doménu zadán v prostředí s více doménami, použije Commerce první doménu, kterou jste zadali. Například pokud byla cesta „fabrikam“ poprvé zadána během nastavení webu, adresu URL `https://xyz.commerce.dynamics.com` lze použít pro přístup k publikovanému obsahu webu pro `www.fabrikam.com`.
+Pokud není řetězec dotazu na doménu zadán v prostředí s více doménami, použije Commerce první doménu, kterou jste zadali. Například pokud byla cesta „fabrikam“ poprvé zadána během nastavení webu, adresu URL `https://xyz.dynamics365commerce.ms` lze použít pro přístup k publikovanému obsahu webu pro `www.fabrikam.com`.
 
 ## <a name="traffic-forwarding-in-production"></a>Přesměrování provozu ve výrobě
 
-Můžete simulovat více domén pomocí parametrů řetězce dotazu na doménu na samotném koncovém bodě commerce.dynamics.com. Ale pokud potřebujete začít fungovat ve výrobě, musíte přesměrovat provoz pro vlastní doménu na koncový bod `<e-commerce tenant name>.commerce.dynamics.com`.
+Můžete simulovat více domén pomocí parametrů řetězce dotazu na doménu na samotném koncovém bodě commerce.dynamics.com. Ale pokud potřebujete začít fungovat ve výrobě, musíte přesměrovat provoz pro vlastní doménu na koncový bod `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Koncový bod `<e-commerce tenant name>.commerce.dynamics.com` nepodporuje vlastní domény Secure Sockets Layers (SSL), takže musíte nastavit vlastní domény pomocí služby front door nebo sítě pro doručování obsahu (CDN). 
+Koncový bod `<e-commerce tenant name>.dynamics365commerce.ms` nepodporuje vlastní domény Secure Sockets Layers (SSL), takže musíte nastavit vlastní domény pomocí služby front door nebo sítě pro doručování obsahu (CDN). 
 
 Chcete-li nastavit vlastní domény pomocí služby front door nebo CDN, máte dvě možnosti:
 

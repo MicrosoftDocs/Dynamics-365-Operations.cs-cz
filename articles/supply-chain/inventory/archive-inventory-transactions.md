@@ -2,7 +2,7 @@
 title: Archivace skladových transakcí
 description: Toto téma popisuje, jak archivovat data skladových transakcí za účelem zlepšení výkonu systému.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99a7b61d9bd5e1e2bd8d2c7df34882646bb51270
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567456"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736054"
 ---
 # <a name="archive-inventory-transactions"></a>Archivace skladových transakcí
 
@@ -116,3 +116,110 @@ Panel nástrojů nad mřížkou poskytuje následující tlačítka, která mů�
 - **Pozastavit archivaci** – Pozastaví vybraný archiv, který se právě zpracovává. Pauza se projeví až po vygenerování úlohy archivace. Proto může dojít k krátkému zpoždění, než se pozastavení projeví. Pokud byl archiv pozastaven, objeví se značka zaškrtnutí v jeho poli **Zastavit aktuální aktualizaci**.
 - **Pokračovat v archivaci** – Obnoví zpracování vybraného archivu, který je právě pozastaven.
 - **Stornovat** – Stornuje vybraný archiv. Archiv můžete stornovat, pouze pokud je jeho **Stav** nastaven na *Dokončeno*. Pokud byl archiv stornován, objeví se značka zaškrtnutí v jeho poli **Stornováno**.
+
+## <a name="extend-your-code-to-support-custom-fields"></a>Rozšiřte svůj kód o podporu vlastních polí
+
+Pokud tabulka `InventTrans` obsahuje jedno nebo více vlastních polí, pak možná budete muset rozšířit kód, aby je podporoval, v závislosti na tom, jak jsou pojmenována.
+
+- Pokud vlastní pole z tabulky `InventTrans` má stejné názvy polí jako v tabulce `InventtransArchive`, znamená to, že jsou mapovány 1:1. Proto stačí vložit vlastní pole do tabulky `InventoryArchiveFields` pole skupiny `inventTrans`.
+- Pokud názvy vlastních polí v tabulce `InventTrans` neodpovídají názvům polí v tabulce `InventtransArchive`, pak je třeba přidat kód k jejich mapování. Pokud máte například systémové pole s názvem `InventTrans.CreatedDateTime`, pak musíte vytvořit pole v tabulce `InventTransArchive` s jiným názvem (např. `InventtransArchive.InventTransCreatedDateTime`) a přidat rozšíření do třídy `InventTransArchiveProcessTask` a`InventTransArchiveSqlStatementHelper`, jak je znázorněno v následujícím ukázkovém kódu.
+
+Následující ukázka kódu ukazuje příklad, jak přidat požadované rozšíření do třídy `InventTransArchiveProcessTask`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+Následující ukázka kódu ukazuje příklad, jak přidat požadované rozšíření do třídy `InventTransArchiveSqlStatementHelper`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

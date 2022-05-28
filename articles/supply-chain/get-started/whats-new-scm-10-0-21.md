@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075292"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739380"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.21 (říjen 2021)
 
@@ -130,7 +130,7 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 | Hlavní plánování | [Zobrazení historie pánů a plánovacích protokolů](../master-planning/planning-optimization/plan-history-logs.md) |
 | Řízení skladu | [Strategie balení kontejnerů](../warehousing/container-packing-strategy-overview.md) |
 | Řízení skladu | [Příkladové scénáře cyklické inventury](../warehousing/cycle-counting-scenarios.md) |
-| Řízení skladu | [Import příchozích ASN prostřednictvím datové entity V2](../warehousing/import-asn-v2-data-entity.md) |
+| Řízení skladu | [Import příchozích ASN prostřednictvím datové entity V3](../warehousing/import-asn-data-entity.md) |
 | Řízení skladu | [Nadměrné vyskladnění u prodejních objednávek a převodních příkazů](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Řízení skladu | [Plánování tisku štítků vlny během vlny](../warehousing/configure-task-based-wave-label-printing.md) |
 | Řízení skladu | [Co je nového nebo změněného v mobilní aplikaci Warehouse Management](../warehousing/whats-new-wma.md) |

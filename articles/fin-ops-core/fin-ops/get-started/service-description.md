@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656796"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740645"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Popis služby pro finanční a provozní aplikace
 
@@ -265,7 +265,7 @@ Správce klienta zákazníka má přístup k provozním nebo neprovozním instan
 |---|---|---|
 | **Neprovozní**<br>Sandboxové prostředí 1. úrovně | Neprovozní prostředí, které zákazníci nasazují pro účely vývoje, ukázek nebo školení. | Sandbox 1. úrovně (označovaný také jako cloudové prostředí) je virtuální počítač spravovaný zákazníkem, který je nasazen do předplatného Azure zákazníka od LCS. Protože se jedná o virtuální počítač v zákazníkově předplatném Azure, má zákazník plný přístup pro správce k prostředí prostřednictvím vzdálené plochy. |
 | **Neprovozní**<br>Sandbox 2. úrovně (nebo vyšší) | Neprovozní prostředí, které zákazníci nasazují pro testování přijatelnosti uživatelem, integrační testování, školení, fázování nebo jakýkoli jiný scénář před provozem. | Sandboxy úrovně 2 a vyšší jsou nasazeny v předplatném SaaS Finance a provoz. Přístup k databázím Azure SQL database, které jsou přidruženy k neprovoznímu prostředí, je udělován prostřednictvím [přístupu za běhu](../../dev-itpro/database/database-just-in-time-jit-access.md). Přístup ke vzdálené ploše není k dispozici. |
-| **Výrobní** | Provozní prostředí je nasazeno, když je projekt [připraven k počátečnímu spuštění](/imp-lifecycle/environment-planning.md#production-system-readiness). | Do předplatného SaaS jsou nasazena provozní prostředí. Veškerý přístup je prostřednictvím prohlížeče, koncových bodů služby nebo LCS. |
+| **Výrobní** | Provozní prostředí je nasazeno, když je projekt [připraven k počátečnímu spuštění](../imp-lifecycle/environment-planning.md#production-system-readiness). | Do předplatného SaaS jsou nasazena provozní prostředí. Veškerý přístup je prostřednictvím prohlížeče, koncových bodů služby nebo LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Přístup pro správu společnosti Microsoft
 
@@ -286,7 +286,7 @@ Společnost Microsoft investovala do rozsáhlé sady nástrojů pro sledování 
 |---|---|
 | <ul><li>Sledujte dostupnost služby.</li><li>Průběžně sledujte a upozorňujte pomocí metrik stavu a hlídacích psů na kritické součásti, jako jsou Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce a Management Reporter.</li><li>Monitorujte snížení výkonu, které je způsobeno službami infrastruktury (jako např. Azure Active Directory \[Azure AD\] a Azure SQL).</li><li>Pokud společnost Microsoft zjistí, že jeden proces nebo dávková úloha způsobuje aberace, bude tento proces nebo úloha po komunikaci se zákazníkem ukončena.</li></ul> | <ul><li>Monitorujte změny konfigurací a rozšíření aplikací, které mohou způsobit problémy s funkčností a výkonem.</li><li>Chyby aplikace je třeba diagnostikovat pomocí monitorovacích nástrojů. Pomocí těchto nástrojů můžete diagnostikovat aberace výkonu hlášené uživateli.</li><li>Informujte společnost Microsoft, pokud je očekávané zatížení systému nad rámec předpokládaného vrcholového využití.</li><li>Pokud příslušná služba není v provozní instanci k dispozici, může zákazník použít LCS k nahlášení [výpadku výroby](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Odesláním žádostí o podporu online prostřednictvím LCS zákazníci umožní společnosti Microsoft poskytovat rychlé a hluboké technické znalosti nejefektivnějším a nejúčinnějším způsobem. Přestože je k dispozici možnost telefonu, měla by být použita pouze v případě, že možnost online není k dispozici. Další informace naleznete v tématu [Možnosti telefonické podpory](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Odesláním žádostí o podporu online prostřednictvím LCS zákazníci umožní společnosti Microsoft poskytovat rychlé a hluboké technické znalosti nejefektivnějším a nejúčinnějším způsobem. Přestože je k dispozici možnost telefonu, měla by být použita pouze v případě, že možnost online není k dispozici. Další informace naleznete v tématu [Možnosti telefonické podpory](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Správa incidentů
 

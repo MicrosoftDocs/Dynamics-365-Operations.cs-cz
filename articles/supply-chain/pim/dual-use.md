@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570746"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736026"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 
@@ -34,7 +34,7 @@ Představte si následující scénář:
 2. Stránka **Vydané podrobnosti o produktu** pro produkt X-100 naznačuje, že se jedná o zboží dvojího užití. Kód, kategorie, skupina a režim společně označují klasifikaci kontroly vývozu, do které produkt patří.
 3. Stránka **Certifikáty dvojího užití** obsahuje certifikát pro produkt X-100, když je dodáván do Francie. Platnost tohoto certifikátu vyprší 1. ledna 2020.
 4. 17. června 2020 vytvoříte prodejní objednávku pro zákaznickou společnost se sídlem ve Francii a objednávka zahrnuje produkt X-100.
-5. Při uložení prodejní objednávky systém určí následující informace:
+5. Při potvrzení prodejní objednávky systém určí následující informace:
 
     1. Zahrnuje objednávka nějaké výrobky, které jsou zboží dvojího užití?
     2. Pokud objednávka zahrnuje zboží dvojího užití, vyžaduje země určení osvědčení o dvojím použití?

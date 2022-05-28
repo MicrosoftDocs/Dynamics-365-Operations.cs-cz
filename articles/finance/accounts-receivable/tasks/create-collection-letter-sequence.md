@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921192"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734151"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Vytvoření posloupnosti upomínek
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921192"
 
 Tato procedura slouží k vytvoření posloupnosti upomínek. Tento úkol využívá ukázkovou společnost USMF.
 
-1. V navigačním podokně přejděte na **Moduly > Kredit a inkasa > Nastavení > Nastavit pořadí upomínek inkasa**.
+1. Přejděte na **Úvěry a inkasa > Nastavení > Nastavit pořadí upomínek**.
 2. Klepněte na možnost **Nový**.
 3. V poli **Posloupnost upomínek** zadejte ID posloupnosti, které bude představovat číselnou řadu. Použije se při nastavování profilu zaúčtování.
-4. Zadejte hodnotu do pole **Popis**.  Platební podmínky jsou volitelné. Pokud zde zadáte hodnotu, faktura upomínky na poplatek bude používat platební podmínky namísto podmínek platby, které jsou uloženy pro odběratele.  
+4. Zadejte hodnotu do pole **Popis**. Platební podmínky jsou volitelné. Pokud zde zadáte hodnotu, faktura upomínky na poplatek bude používat platební podmínky namísto podmínek platby, které jsou uloženy pro odběratele.  
 5. V poli **Kód upomínky inkasa** vyberte kód pro první upomínku, kterou chcete odeslat. První upomínka se vytvoří podle data splatnosti na faktuře, hodnoty zadané pro období odkladu v poli Dny na tomto řádku a dalších informací, které zadáte do tohoto řádku.  
 6. Zadejte hodnotu do pole **Popis**. 
 7. Výchozí měnou poplatku je měna právnické osoby. Kód měny může být jiný, než jaká je měna faktury.   
@@ -52,9 +52,9 @@ Tato procedura slouží k vytvoření posloupnosti upomínek. Tento úkol využ�
 22. Klikněte na odkaz na vybraném řádku v seznamu.
 23. V poli **Minimální zůstatek po datu splatnosti** zadejte číslo.
 24. Zadejte číslo do pole **Dny**.
-25. Zaškrtnutím políčka **Blok** se zablokují další dodávky a fakturace pro odběratele. Pro odblokování účtu vyberte možnost **Ne** v poli Fakturace a dodávka na stránce Odběratelé.  
+25. Zaškrtnutím políčka **Blok** se zablokují další dodávky a fakturace pro odběratele. Pro odblokování účtu vyberte možnost **Ne** v poli **Fakturace a dodávka** na stránce **Odběratelé**.  
 26. Rozbalte pevnou záložku **Poznámka**.
-27. Zadejte text, který se má zobrazit v upomínce pro vybraný kód upomínky. Tento text lze přeložit do několika jazyků pomocí nabídky Překlady nad polem.  
+27. Zadejte text, který se má zobrazit v upomínce pro vybraný kód upomínky. Tento text lze přeložit do několika jazyků pomocí nabídky **Překlady** nad polem.  
 
 
 

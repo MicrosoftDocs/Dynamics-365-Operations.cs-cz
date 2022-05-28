@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ad33d9a34bc449b81ec6d02a78b9ca1653aca5
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 4c29597155e525638e7c2ded7d641017f2189c49
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018372"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734569"
 ---
 # <a name="posting-profiles-overview"></a>Přehled účetních profilů
 
@@ -99,7 +99,7 @@ Termín *clearingový účet* se často používá v účetnictví. Některé ty
 
 ## <a name="additional-resources"></a>Další prostředky
 
-Mnoho modulů v Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Project Operations mát profil účtování nebo další konfigurace, které řídí, jak funguje účtování do hlavní knihy. V následujících tématech se dozvíte více o profilech účtování a nastavení účtování v každém modulu:
+Mnohé moduly v Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce a Dynamics 365 Project Operations mají profil účtování nebo další konfigurace, které řídí, jak funguje účtování do hlavní knihy. V následujících tématech se dozvíte více o profilech účtování a nastavení účtování v každém modulu:
 
 - [Účty pro automatické transakce](accounts-for-auto-transactions.md)
 - [Účtování závazků](accts-payble-posting.md)
