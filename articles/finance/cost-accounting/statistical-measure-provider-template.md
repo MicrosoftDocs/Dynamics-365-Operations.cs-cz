@@ -1,6 +1,6 @@
 ---
 title: Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
-description: Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření. Členy statistické dimenze lze použít jako základ přidělení v zásadách, jako je distribuce nákladů a přidělení nákladů. Můžete je také používat k vykazování spotřeby nepeněžních nákladů.
+description: Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767640"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733899"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Šablony poskytovatelů pro členy statistických dimenzí a poskytovatele měření
 
@@ -132,7 +132,7 @@ Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákla
 
 **Zdroj dat**
 
-| Název        | Datový konektor                                                                     | Člen statistické dimenze |
+| Jméno        | Datový konektor                                                                     | Člen statistické dimenze |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
 | FTEs D365FO | Dynamics 365 Finance – Statistická měření | FTE                         |
 

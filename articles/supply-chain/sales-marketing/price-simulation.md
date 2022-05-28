@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689671"
 ---
 # <a name="price-simulation"></a>Simulace ceny
 
@@ -32,7 +32,8 @@ V rámci simulace ceny pro určitou nabídku je zobrazena nová celková částk
 
 Simulace ceny nezmění cenu v nabídce. Pokud je simulace ceny použita na celou nabídku je s ní v záhlaví nabídky nakládáno jako se speciální slevou. Vztahuje-li se simulace ceny na konkrétní položky, je s ní nakládáno jako se speciální slevou na řádcích nabídky. Prodejní jednotková cena na vytvořeném řádku nabídky se při použití simulace ceny nezmění. Namísto toho je použita procentuální hodnota slevy, která odpovídá snížení ceny řádku nabídky. Při použití simulace ceny jsou jednotková prodejní cena a procentuální hodnota slevy přeneseny na řádek nabídky nebo do záhlaví nabídky.  
 
->[Poznámka!] Při provádění simulace ceny je k vytvoření simulace použita pouze aktuální prodejní měna. Pokud však zobrazíte součty nabídky, zobrazí se kombinace měny společnosti a prodejní měny.  
+>[!NOTE]
+>Při provádění simulace ceny je k vytvoření simulace použita pouze aktuální prodejní měna. Pokud však zobrazíte součty nabídky, zobrazí se kombinace měny společnosti a prodejní měny.  
 
 Doplňkové položky, které jsou přidány na řádky nabídky, mohou aktivovat řádkové slevy nebo víceřádkové slevy. Také mohou aktivovat celkové slevy, které změní příspěvkové marže a příspěvkové poměry na řádcích nabídky nebo celou slevu.  
 

@@ -3,7 +3,7 @@ title: Modul volby obchodu
 description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772149"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710773"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
@@ -59,6 +59,16 @@ Pro zadání hodnot zeměpisné šířky a délky umístění obchodu v centrá
     ![Příklad nastavení zeměpisné šířky a délky pro obchod v centrále.](./media/Store-latitude-longitude.png)
 
 1. V podokně akcí vyberte **Uložit**. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Skrýt obchod z modulu pro výběr obchodů
+
+Některé obchody ve skupině plnění nemusí být platná místa vyzvednutí. Chcete-li zajistit, aby se jako možnosti v modulu pro výběr prodejny objevila pouze platná místa vyzvednutí, postupujte podle těchto kroků v Commerce headquarters.
+
+1. Přejděte na **Retail a Commerce \> Nastavení Commerce \> Skupiny plnění \> Všechny obchody**.
+1. V podokně akcí vyberte **Upravit**.
+1. V **Nastavení** u každého obchodu, který není platným místem vyzvednutí, zrušte zaškrtnutí políčka **Je místo vyzvednutí**.
+1. V podokně akcí vyberte **Uložit**.
+1. Spusťte úlohu plánu distribuce 1070 **Konfigurace kanálu**.
 
 ## <a name="bing-maps-integration"></a>Integrace Bing Maps
 

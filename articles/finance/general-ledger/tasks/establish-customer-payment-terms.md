@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766948"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716964"
 ---
 # <a name="establish-customer-payment-terms"></a>Stanovení platebních podmínek odběratele
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766948"
 
 Tento postup definuje platební slevu a nastavení data splatnosti. Tento průvodce úlohou používá ukázkovou společnost USMF.
 
-1. Přejděte na **Podokno navigace > Moduly > Pohledávky > Nastavení plateb > Dny platby**. Nastavení možností **Platební podmínky** je sdíleno pro **Pohledávky** a **Závazky**. Pokud je definujete v jednom modulu, bude k dispozici i ve druhém modulu. Pro tohoto průvodce úkolem jsou nastaveny všechny podmínky platby v části **Pohledávky**.
+1. Přejděte na **Podokno navigace > Moduly > Pohledávky > Nastavení plateb > Dny platby**. Nastavení možností **Platební podmínky** je sdíleno pro **Pohledávky** a **Závazky**. Pokud je definujete v jednom modulu, bude k dispozici i ve druhém modulu. Pro tohoto průvodce záznamem úloh jsou nastaveny všechny podmínky platby v části **Pohledávky**.
 2. Klepněte na možnost **Nový**. Vytvořte den platby, pokud vaše platební podmínky vyžadují určitý den v týdnu (pondělí, úterý atd.) nebo určité datum v měsíci (5., 10. atd.). 
 3. V poli **Den platby** zadejte ID.
 4. Do pole **Popis zadejte** popis dne platby.

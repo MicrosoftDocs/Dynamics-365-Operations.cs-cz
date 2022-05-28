@@ -2,23 +2,23 @@
 title: Zobrazení souvisejícího mezipodnikového dokladu z deníku
 description: Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 05/5/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c41826986aea79206c8ec6ed045078e93a285a90042f0950fb5725c0bd850ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a2f226c9b784a687296157b995bebb761aae27b
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772772"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717271"
 ---
 # <a name="view-related-intercompany-voucher-from-journal"></a>Zobrazení souvisejícího mezipodnikového dokladu z deníku
 
@@ -28,28 +28,22 @@ Související doklad zobrazí doklad společností protiúčtu při zaúčtován
 
 
 ## <a name="post-an-intercompany-journal"></a>Zaúčtování mezipodnikového deníku
-1. Přejděte na možnost Hlavní deníky.
-2. Klikněte na položku Nová.
-3. Označte v seznamu vybraný řádek.
-4. V poli Název zadejte nebo vyberte název mezipodnikového deníku.
-5. Klikněte na možnost Řádky.
-6. Označte na seznamu vybraný řádek.
-7. Zadejte požadované hodnoty do pole Účet.
-8. V poli Popis zadejte nebo vyberte hodnotu.
-9. Zadejte nějakou hodnotu do pole Popis.
-10. Zavřete stránku.
-11. Do pole Má dáti zadejte čísl.
-12. V poli Společnost protiúčtu vyberte nebo zadejte společnost protiúčtu.
-13. V poli Společnost protiúčtu zadejte nebo vyberte hodnotu.
-14. Zavřete stránku.
-15. Zadejte požadované hodnoty do pole Protiúčet.
-16. Klikněte na položku Zaúčtovat.
+1. Přejděte na **Hlavní deníky** a klikněte na **Nový**.
+2. Označte na seznamu vybraný řádek.
+3. V poli **Název** zadejte nebo vyberte název mezipodnikového deníku.
+4. Klikněte na **Řádky** v seznamu, označte vybraný řádek.
+5. Zadejte požadované hodnoty do pole **Účet**.
+6. V poli **Popis** zadejte nebo vyberte hodnotu.
+7. Zavřete stránku.
+8. Do pole **Má dáti** zadejte číslo.
+9. V poli **Společnost protiúčtu** vyberte nebo zadejte společnost protiúčtu.
+10. Zadejte požadované hodnoty do pole **Protiúčet**.
+11. Klikněte na možnost **Zaúčtovat**.
 
 ## <a name="view-related-intercompany-voucher"></a>Zobrazení souvisejícího mezipodnikového dokladu
-1. Klikněte na možnost Doklad.
-2. Klikněte na možnost Související doklady.
-3. Označte v seznamu vybraný řádek.
-4. Klikněte na možnost Doklad.
+1. Klikněte na možnost **Doklad**.
+2. Klikněte na **Související doklady** v seznamu, označte vybraný řádek.
+3. Klikněte na možnost **Doklad**.
 
 
 

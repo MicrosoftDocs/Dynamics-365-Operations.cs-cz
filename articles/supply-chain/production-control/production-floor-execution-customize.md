@@ -2,7 +2,7 @@
 title: Přizpůsobení rozhraní pro provádění výrobního provozu
 description: Toto téma vysvětluje, jak rozšířit aktuální formuláře nebo vytvořit nové formuláře a tlačítka pro rozhraní provádění výrobního provozu.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066539"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712936"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Přizpůsobení rozhraní pro provádění výrobního provozu
 
@@ -60,7 +60,7 @@ Po dokončení bude nové tlačítko (akce) automaticky uvedeno na seznamu **Ná
 1. Vytvořte rozšíření s názvem `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, kde je metoda `getMainMenuItemsList` rozšířena přidáním nové položky nabídky do seznamu. Následující kód znázorňuje příklad.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Přidání ovládacích prvků data a času do formuláře nebo dialogu
+
+Tato část ukazuje, jak přidat ovládací prvky data a času do formuláře nebo dialogu. Dotekové ovládání data a času umožňuje pracovníkům specifikovat data a časy. Následující snímky obrazovky ukazují, jak se ovládací prvky obvykle zobrazují na stránce. Ovládací prvek času nabízí 12hodinovou i 24hodinovou verzi; zobrazená verze bude odpovídat předvolbám nastaveným pro uživatelský účet, pod kterým rozhraní běží.
+
+![Příklad ovládacího prvku kalendářního data.](media/pfe-customize-date-control.png "Příklad ovládacího prvku kalendářního data")
+
+![Příklad ovládacího prvku času s 12hodinovým časem.](media/pfe-customize-time-control-12h.png "Příklad ovládacího prvku času s 12hodinovým časem")
+
+![Příklad ovládacího prvku času s 24hodinovým časem.](media/pfe-customize-time-control-24h.png "Příklad ovládacího prvku času s 24hodinovým časem")
+
+Následující postup ukazuje příklad přidání ovládacích prvků data a času do formuláře.
+
+1. Přidejte do formuláře kontroler pro každý ovládací prvek data a času, který by měl formulář obsahovat. (Počet kontrolerů se musí rovnat počtu ovládacích prvků data a času ve formuláři.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Deklarujte požadované proměnné (typu `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Vytvořte metody, kde bude datum a čas aktualizován kontrolery typu datetime. Následující příklad ukazuje jednu takovou metodu.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Nastavte chování každého kontroleru typu datetime a připojte každý kontroler k části formuláře. Následující příklad ukazuje, jak nastavit data pro ovládací prvky datum-počáteční a čas-počáteční. Podobný kód můžete přidat do ovládacích prvků datum-konečný a čas-konečný (nezobrazeno).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Pokud vše, co potřebujete, je ovládací prvek kalendářního data, můžete přeskočit nastavení ovládacího prvku času a místo toho pouze nastavit ovládací prvek data, jak je znázorněno v následujícím příkladu:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>Další prostředky
 

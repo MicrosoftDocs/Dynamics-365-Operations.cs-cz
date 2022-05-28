@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance a Dynamics 365 Supply Chain Management v službě US Government Community Cloud (GCC)
+title: Dynamics 365 Finance, Supply Chain Management a Commerce v US Government Community Cloud (GCC)
 description: Toto téma poskytuje informace o produktech Microsoft Dynamics 365 US Government, které jsou k dispozici kvalifikovaným státním a soukromým entitám.
 author: hasaid
 ms.date: 11/12/2021
@@ -9,14 +9,14 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 204bf1886ff7f7393fba5713a54f305274f540d0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062279"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693301"
 ---
-# <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance a Dynamics 365 Supply Chain Management v službě US Government Community Cloud (GCC)
+# <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management a Commerce v US Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ Některé funkce nebudou k dispozici pro nasazení v GCC nebo nebudou k dispozic
 
 ### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Jsou Dynamics 365 Finance a Dynamics 365 Supply Chain Management podporovány v GCC-High?
 
-Č. Dynamics 365 Finance a Dynamics 365 Supply Chain Management jsou podporovány pouze v GCC.
+Číslo Dynamics 365 Finance a Dynamics 365 Supply Chain Management podporovány pouze v GCC.
 
 ### <a name="can-i-use-public-azure-devops-with-finance-and-supply-chain-management-in-gcc"></a>Mohu použít veřejné Azure DevOps s Finance a Supply Chain Management v GCC?
 

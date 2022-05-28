@@ -1,7 +1,7 @@
 ---
 title: Nastavení účtů dodavatele
 description: Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565464"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676967"
 ---
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
@@ -63,7 +63,7 @@ Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkop
 
 Záznam kontaktní osoby nelze odstranit, pokud je na tento kontakt v dokumentu odkazováno. Namísto toho lze kontakt deaktivovat.  
 
-Kontakty dodavatele můžete přidat do osobních kontaktů v Microsoft 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Supply Chain Management a Microsoft 365. v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
+Kontakty dodavatele můžete přidat do osobních kontaktů ve službách Microsoft 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Supply Chain Management a službami Microsoft 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dodavatelé z různých právnických osob
 Dodavatel je ve vaší organizaci registrován pouze pro jednu právnickou osobu a ostatní právnické osoby si musí zaregistrovat stejného dodavatele. Ke konfiguraci dodavatele pro jinou právnickou osobu lze použít stránku **Přidat dodavatele k jiné právnické osobě**. U dodavatele je ve vybrané právnické osobě nutné určit skupinu dodavatelů, měnu a stav blokování.  

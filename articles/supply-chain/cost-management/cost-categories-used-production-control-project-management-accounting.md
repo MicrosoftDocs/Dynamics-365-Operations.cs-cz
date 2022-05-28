@@ -1,7 +1,7 @@
 ---
 title: Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
 description: Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Tento článek obsahuje informace o nákladových kategoriích, které je nutné definovat pro tyto typy výrobních prací pro účely výroby a projektů.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 78253
 ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374ff726673a2360ba05f931a80c4906eaec38b0df44e12c69898d77b819a4a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742745"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675339"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
 

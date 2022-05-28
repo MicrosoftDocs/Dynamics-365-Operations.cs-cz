@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fadad34be31f6522654bc3af47a4f71695dcc5fea7f0b3e760ff26d79d88eb4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722504"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685735"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Human Resources, 19. dubna 2021
 
@@ -42,7 +41,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 
 | Funkce | Plán vydání | Dokumentace |
 | --- | --- | --- |
-| Platform update 10.0.17 (41) | -- | [Platform Update pro verzi 10.0.17 aplikací Finance and Operations (duben 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Platform update 10.0.17 (41) | -- | [Aktualizace platformy pro verze 10.0.17 finančních a provozních aplikací (duben 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Podpora vlastních polí ve formulářích pro správu výhod | [Podpora vlastních polí ve správě výhod](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Opravy chyb
@@ -78,7 +77,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 | Funkce | Podrobnosti |
 | --- | --- |
 | Dovednosti zadané manažery pro své zaměstnance lze automaticky schválit pomocí pracovního postupu | Již brzy. |
-| Platform update 10.0.18 (42) | Aktualizace platformy 10.0.18 je naplánována na zavedení se servisním vydáním 17. května 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.18 aplikací Finance and Operations (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Platform update 10.0.18 (42) | Aktualizace platformy 10.0.18 je naplánována na zavedení se servisním vydáním 17. května 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.18 finančních a provozních aplikací (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Podpora vlastních polí v pravidlech nároku ve správě výhod  | [Vlastní podpora pole pro zpracování způsobilosti](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Úplný seznam plánovaných funkcí a plánovaných verzí najdete v části [Přehled o 1. vlně vydání Dynamics 365 Human Resources v roce 2021](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).

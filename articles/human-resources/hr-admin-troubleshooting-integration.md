@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071103"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693997"
 ---
 # <a name="integration-with-finance-faq"></a>Nejčastější dotazy týkající se integrace s aplikací Finance
 
@@ -34,7 +33,7 @@ Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Mohu upravit uživatele aplikace Dynamics 365 Talent v Power Apps?
 
-Č. Pokud upravíte uživatele aplikace Human Resources, integrace mezi Human Resources a Dataverse může selhat. V následující tabulce jsou uvedena výchozí nastavení pro uživatele aplikace Talent.
+Číslo Pokud upravíte uživatele aplikace Human Resources, integrace mezi Human Resources a Dataverse může selhat. V následující tabulce jsou uvedena výchozí nastavení pro uživatele aplikace Talent.
 
 | Celé jméno | ID přihlášky | ID objektu Azure AD | Identifikátor URI ID přihlášky |
 | --- | --- | --- | --- |
@@ -157,7 +156,7 @@ Při implementaci aplikace Human Resources ověřte, zda číselné řady v apli
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Při vytvoření sady připojení nevidím připojení v rozevíracím seznamu připojení. Co udělat?
 
-Při vytváření připojení zvolte Dynamics 365 Finance a Dataverse.
+Při vytváření připojení se ujistěte, že jste vybrali Dynamics 365 Finance a Dataverse.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
 

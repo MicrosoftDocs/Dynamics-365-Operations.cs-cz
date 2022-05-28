@@ -1,7 +1,7 @@
 ---
 title: Přehled prodeje a marketingu
 description: Modul prodeje a marketingu můžete používat k získávání, ukládání a používání různých druhů v průběhu prodeje. Mezi tato data patří původní prodejní iniciativy, budoucí následné akce a dodatečné prodeje.
-author: kfend
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
-ms.author: kfend
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021ff1ff24e20516b7a8ac1ce206b76aa8e91a2a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5dcbd95465703c209cc0de5e8880cbf40e732fc6
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982527"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675844"
 ---
 # <a name="sales-and-marketing-overview"></a>Přehled prodeje a marketingu
 

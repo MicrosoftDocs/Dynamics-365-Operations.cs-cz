@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f4fc4768f8c96678b216709f78af6d3ddfd4132
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: a3fd8705c7735cb3c0945f71651fafa767a7addf
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556926"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691575"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (20. září 2021)
 
@@ -84,7 +83,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 | Funkce | Podrobnosti |
 |---|---|
-| Platform update 10.0.21 (45) | Vydání aktualizace platformy 10.0.21 je naplánováno spolu se servisním vydáním 4. října 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.21 aplikací Finance and Operations (říjen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Platform update 10.0.21 (45) | Vydání aktualizace platformy 10.0.21 je naplánováno spolu se servisním vydáním 4. října 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.21 finančních a provozních aplikací (říjen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 |Zobrazení rozšířených sestav deníků výkonu | Tato funkce bude v příštím vydání ve výchozím nastavení povolena. |
 
 

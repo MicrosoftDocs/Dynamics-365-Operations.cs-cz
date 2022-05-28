@@ -2,7 +2,7 @@
 title: Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak konfigurovat prostředí vyhodnocení Microsoft Dynamics 365 Commerce poté, co je zřízeno.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913720"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747630"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
@@ -39,7 +39,9 @@ Po kompletním zřízení prostředí vyhodnocení Commerce je nutné dokončit 
 1. V seznamu vyberte své prostředí.
 1. V informacích o prostředí vpravo vyberte **Přihlášení k prostředí**. Budete posláni do centrály Commerce.
 1. Ujistěte se, že je v pravém horním rohu vybrána právnická osoba **USRT**.
-2. Přejděte na **Parametry Commerce > Konfigurační parametry** a zkontrolujte, že záznam u položky **ProductSearch.UseAzureSearch** je nastaven na **true**. Pokud tato položka chybí, můžete ji přidat a spustit **Databáze kanálů > Úplná synchronizace** pro Commerce Scale Unit spojenou s vaším webem elektronického obchodu.
+1. Přejděte na **Parametry Commerce \> Konfigurační parametry** a zkontrolujte, že záznam **ProductSearch.UseAzureSearch** existuje a je nastaven na **true**. Pokud tato položka chybí, můžete ji přidat, nastavit hodnotu na **true** a poté vybrat příkaz **Databáze kanálů \> Úplná synchronizace dat** pro Commerce Scale Unit spojenou s vaším webem elektronického obchodu.
+1. Přejděte na možnost **Retail a Commerce \> Nastavení centrály \> Plánovač velkoobchodu \> Inicializovat plánovač obchodu**. V plovoucí nabídce **Inicializovat plánovač obchodu** nastavte možnost **Odstranit existující konfiguraci** na **Ano** a pak vyberte **OK**.
+1. Chcete-li přidat kanály do jednotky Commerce Scale Unit, přejděte na **Maloobchod a obchod \> Nastavení centrály \> Plánovač obchodu \> Databáze kanálů** a poté v levém podokně vyberte jednotku Commerce Scale Unit. Na pevné záložce **Maloobchodní kanál** přidejte kanály **Internetový obchod AW**, **Internetový obchod AW Business** a **Rozšířený internetový obchod Fabrikam**. Volitelně můžete také přidat maloobchodní prodejny, pokud budete používat POS (např. **Seattle**, **San Francisco** a **San Jose**).
 
 Během činností po zřízení v centrále Commerce se ujistěte, že právnická osoba **USRT** je vždy vybrána.
 
@@ -85,6 +87,7 @@ Pokud chcete začít nastavovat web vyhodnocení v Commerce, postupujte násled
 1. Jako výchozí jazyk vyberte **en-us**.
 1. Ponechte hodnotu pole **Cesta** tak, jak je.
 1. Vyberte **OK**. Zobrazí se seznam stránek na webu.
+1. Opakujte kroky 2-7 pro web **AdventureWorks** (který se mapuje na kanál **Internetový obchod AW**) a web **AdventureWorks Business** (který se mapuje na kanál **Internetový obchod AW Business**). Pokud je pole **Cesta** pro web Fabrikam prázdné, musíte přidat cesty ke dvěma webům AdventureWorks (například „aw“ a „awbusiness“).
 
 ## <a name="enable-jobs"></a>Povolit úlohy
 
@@ -149,6 +152,28 @@ Pokud chcete provést konfiguraci volitelných funkcí prostředí vyhodnocení 
 
 > [!NOTE]
 > Prostředí vyhodnocení Commerce přicházejí s předinstalovaným klientem Azure Active Directory (Azure AD) business-to-consumer (B2C) pro demonstrační účely. Konfiguace vlastního klienta Azure AD B2C není potřeba pro prostředí vyhodnocení. Pokud však konfigurujete zkušební prostředí tak, aby používalo vašeho vlastního klienta Azure AD B2C, nezapomeňte přidat ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako URL pro odpověď v aplikaci Azure AD B2C přes Azure Portal.
+
+## <a name="troubleshooting"></a>Řešení potíží
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Seznam kanálů nástroje Site Builder je při konfiguraci webu prázdný
+
+Pokud nástroj pro tvorbu webu nezobrazuje žádné kanály online obchodu, zkontrolujte v centrále, že kanály byly přidány do jednotky Commerce Scale Unit, jak je popsáno v sekci [Než začnete](#before-you-start) výše. Spusťte také úlohu **Inicializovat plánovač obchodu** s polem **Odstranit stávající konfiguraci** nastaveným na **Ano**.  Jakmile jsou tyto kroky dokončeny, spusťte ve stránce **Databáze kanálů** (**Maloobchod a obchod\> Nastavení centrály \> Obchodní plánovač \> Databáze kanálů**) úlohu **9999** na jednotce Commerce Scale Unit.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Vzorníky barev se nevykreslují na stránce kategorie, ale vykreslují se na stránce s podrobnostmi o produktu (PDP)
+
+Následujícím postupem zajistěte, aby vzorky barev a velikostí byly nastaveny tak, aby je bylo možné upravit.
+
+1. V centrále přejděte na **Maloobchod a obchod \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
+1. V levém podokně vyberte kanál internetového obchodu a poté vyberte **Nastavit metadata atributu**.
+1. Nastavte možnost **Zobrazit atribut na kanálu** na **Ano**, nastavte možnost **Lze upřesnit** na **Ano** a poté vyberte **Uložit**. 
+1. Vraťte se na stránku kanálu internetového obchodu a poté vyberte **Publikovat aktualizace kanálu**.
+1. Přejděte na **Maloobchod a obchod \> Nastavení centrály \> Plánovač obchodu \> Databáze kanálů** a spusťte úlohu **9999** na jednotce Commerce Scale Unit.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Zdá se, že obchodní funkce nejsou na webu AdventureWorks zapnuté
+
+V centrále se ujistěte, že kanál internetového obchodu má **Typ zákazníka** nastaven na **B2B**. Pokud je **Typ zákazníka** nastaven na **B2C**, musí být vytvořen nový kanál, protože stávající kanál nelze upravovat. 
+
+Ukázková data dodávaná ve verzi Commerce 10.0.26 a dřívějších verzích obsahovala chybnou konfiguraci kanálu **Internetový obchod AW Business**. Řešením je vytvořit nový kanál se stejným nastavením a konfiguracemi s výjimkou **Typu zákazníka**, který by měla být nastaven na **B2B**.
 
 ## <a name="additional-resources"></a>Další prostředky
 

@@ -1,6 +1,6 @@
 ---
 title: Finanční sestavy rozvah
-description: Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám.
+description: Toto téma popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,32 +8,32 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 276e877db42361282ad2bf4a01dd971ec02e2af7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734507"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734299"
 ---
 # <a name="balance-sheet-financial-reports"></a>Finanční sestavy rozvah
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám. 
+Toto téma popisuje výchozí sestavy pro rozvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám. 
 
 ## <a name="default-balance-sheet-reports"></a>Výchozí finanční sestavy rozvah
 
 Existují dvě výchozí finanční sestavy rozvah. V jedné sestavě jsou oddíly nad sebou. Ve druhé jsou oddíly vedle sebe.
 
 | Výchozí sestava                       | Jak funguje                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------|----------------------------------------------------------------------------------------------|
 | Rozvaha – výchozí              | Poskytuje přehled finanční pozice organizace pro rok.                                                                 |
 | Rozvaha vedle sebe – výchozí | Poskytuje přehled finanční pozice organizace pro rok. Aktiva a pasiva a jmění akcionářů jsou vedle sebe. |
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625355"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710856"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -144,7 +143,7 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
 6. Možnosti duálního zápisu pro integraci dat lidských zdrojů s prostředím Power Apps lze použít pouze v případě, kdy je vybrána možnost **Povolit aplikace Dynamics 365** pro prostředí. V tématu [Domovská stránka pro duální zápis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) získáte více informací o duálním zápisu.
 
     > [!NOTE]
-    > Možnost **Povolit aplikace Dynamics 365** musí být vybrána během vytváření prostředí Power Apps. Pokud tato možnost není v době zřízení vybrána, nebudete moci používat duální zápis k integraci dat mezi Dynamics 365 Human Resources a prostředím Power Apps ani instalovat do prostředí aplikace Dynamics 365, jako je Dynamics 365 Sales a Field Service. Tato možnost není reverzibilní. Další informace viz [Některé důležité úvahy při vytváření nového prostředí](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) na webu dokumentace Power Platform.
+    > Možnost **Povolit aplikace Dynamics 365** musí být vybrána během vytváření prostředí Power Apps. Pokud tato možnost není v době zřízení vybrána, nebudete moci používat duální zápis k integraci dat mezi Dynamics 365 Human Resources a prostředím Power Apps ani instalovat do prostředí aplikace Dynamics 365, jako je Dynamics 365 Sales a Field Service. Tato možnost není reverzibilní. Další informace viz [Některé důležité úvahy při vytváření nového prostředí](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) na webu dokumentace Power Platform.
 
 7. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
 

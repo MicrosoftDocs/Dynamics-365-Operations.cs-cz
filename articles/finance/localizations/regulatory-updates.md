@@ -2,7 +2,7 @@
 title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649122"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711907"
 ---
 # <a name="regulatory-updates"></a>Aktualizace předpisů
 
@@ -29,11 +29,11 @@ Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových
 
 Microsoft se snaží implementovat nové legislativní požadavky co nejdříve. Skutečný termín dodání závisí na datu oznámení zákona, dostupnosti podrobností o požadavcích od místních úřadů, dostupnosti validačních nástrojů a na velikosti a složitosti změny.
 
-Plánujeme dodat povinné aktualizace v aktualizacích služby One Version, které jsou včas zveřejňovány pro zákazníky, aby mohly být aktualizovány a připraveny na datum vynucení (pro transakční povinné aktualizace), nebo pro první povinnou lhůtu nahlášení (pro povinné aktualizace týkajících se nahlášení). Zákazníci a partneři si mohou prohlédnout nové povinné aktualizace v programu PEAP (Preview Early Adoption Programme).
+Plánujeme dodat povinné aktualizace v aktualizacích služby One Version, které jsou včas zveřejňovány pro zákazníky, aby mohly být aktualizovány a připraveny na datum vynucení (pro transakční povinné aktualizace), nebo pro první povinnou lhůtu nahlášení (pro povinné aktualizace týkajících se nahlášení). Zákazníci a partneři si mohou prohlédnout nové povinné aktualizace v balíčku Preview poskytovaném pro každou aktualizaci služby.
 
 V případě pozdního oznámení, pozdní dostupnosti podrobností požadavku nebo ověřovacích nástrojů, nebo mimořádně velkých a složitých změn, nemusí být možné provést povinnou aktualizaci do dostupnosti data všeobecné dostupnosti měsíční aktualizace. V těchto případech bude povinná aktualizace dodána jako oprava hotfix pro relevantní dostupné měsíční aktualizace.
 
-Regulativní aktualizace vydané v rámci měsíční aktualizace jsou označeny pouze verzí vydání. Regulativní aktualizace, které jsou dodávány jako opravy hotfix nebo jako součást náhledu vydání, lze identifikovat pomocí zkratek HF a PEAP. 
+Regulativní aktualizace vydané v rámci měsíční aktualizace jsou označeny pouze verzí vydání. Regulativní aktualizace, které jsou dodávány jako opravy hotfix nebo jako součást vydání Preview, lze identifikovat pomocí zkratek HF a Preview. 
 
 Nejnovější plány povinné aktualizace naleznete v následující tabulce.   
 

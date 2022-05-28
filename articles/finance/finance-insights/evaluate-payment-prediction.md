@@ -2,25 +2,25 @@
 title: Vyhodnocení modelu predikce plateb počátečního zákazníka
 description: Toto téma popisuje kroky, které můžete podniknout, abyste porozuměli modelu predikce plateb zákazníků a vyhodnotili jeho účinnost.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969105"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677947"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Vyhodnocení modelu predikce plateb počátečního zákazníka
 
@@ -30,7 +30,7 @@ Toto téma vysvětluje, jak vyhodnotit predikční model poté, co jste zapnuli 
 
 ## <a name="getting-details-about-the-model"></a>Získání podrobností o modelu
 
-Na stránce **Parametry finančních přehledů** v Microsoft Dynamics 365 Finance se objeví odkaz **Zlepšete přesnost modelu** vedle skóre přesnosti.
+Na stránce **Parametry Finance Insights** v Microsoft Dynamics 365 Finance se objeví odkaz **Zlepšete přesnost modelu** vedle skóre přesnosti.
 
 [![Odkaz Zlepšete přesnost modelu.](./media/prediction-model.png)](./media/prediction-model.png)
 
@@ -93,6 +93,6 @@ Poté, co lépe pochopíte výsledky svého prvního modelu, možná budete cht�
 
 ## <a name="for-more-information"></a>Získání dalších informací
 
-Další informace o tom, jak vyhodnotit predikční modely, naleznete ve [Výsledcích modelů strojového učení](/confusion-matrix.md)
+Další informace o tom, jak vyhodnotit predikční modely, naleznete ve [Výsledcích modelů strojového učení](confusion-matrix.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

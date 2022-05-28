@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728024"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735457"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze
 
@@ -33,12 +33,12 @@ Fungujete-li coby globální společnost a řídíte se požadavky účetnictví
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Mapovat členy dimenze prvku nákladů do běžného formátu
 Následující příklad ukazuje, jak vy, coby správce nákladů, můžete vytvořit nový prvek dimenze nákladů v nákladovém účetnictví, který mapuje členy dimenze prvku nákladů v americké struktuře účtové osnovy a francouzské struktuře účtové osnovy do běžné sady členů dimenze prvku nákladů. Poté můžete použít běžnou sadu členů dimenze prvku nákladů k analýze dat nákladů ze dvou právnických osob v hlavní knize nákladového účetnictví.
 
-| Zdroj: americká účtová osnova                                          | Zdroj: francouzská účtová osnova                                          | Nová běžná sada členů dimenze prvku nákladů                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Zdroj: americká účtová osnova          | Zdroj: francouzská účtová osnova           | Nová běžná sada členů dimenze prvku nákladů                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Importované členy dimenze prvku nákladů z americké účtové osnovy | Importované členy dimenze prvku nákladů z francouzské účtové osnovy | Mapovat americké a francouzské členy dimenze prvku nákladů do běžné sady |
-| 5001: Prodej                                                           | 5001: Prodej a marketing                                               | 5000: Prodej a marketing                                             |
-| 5030: Reklama                                                     | 6390: Skladový nákup\*                                                    | 7000: náklady na úklid                                                 |
-| 7001: náklady na úklid                                               | 7001: Cestovní výdaje                                                      | 7001: Cestovné a výdaje                                                   |
+| 5001: Prodej                   | 5001: Prodej a marketing                      | 5000: Prodej a marketing                               |
+| 5030: Reklama             | 6390: Skladový nákup\*                          | 7000: náklady na úklid                                   |
+| 7001: náklady na úklid              | 7001: Cestovní výdaje                     | 7001: Cestovné a výdaje                                                   |
 
 \*Skladový nákup francouzského prvku dimenze prvku nákladů není zmapován.
 

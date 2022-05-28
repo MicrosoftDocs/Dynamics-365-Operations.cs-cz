@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087210"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710214"
 ---
 # <a name="task-management"></a>Správa úkolů
 
@@ -57,18 +56,14 @@ Karta **Rušení** záložka obsahuje seznam zaměstnanců, kteří ze společno
 Karta **Přechody** obsahuje seznam **Všechny úkoly**, který zobrazuje všechny úkoly pro všechny zaměstnance, kteří budou měnit pozici nebo kteří nedávno změnili pozici. Existuje také seznam zpožděných úkolů a seznam úkolů, které jsou přiřazeny aktuálnímu uživateli.
 
 Na všech třech kartách mohou HR asistenti a manažeři provádět následující činnosti:
-
-- Použít kontrolní seznam na zaměstnance.
-- Aktualizovat stav úkolu.
-- Znovu přiřadit úkol.
-- Aktualizovat termín dokončení úkolu.
+- Aplikace kontrolního seznamu na zaměstnance
+- Aktualizace stavu úkolu
+- Opětovné přiřazení úkolu
+- Aktualizace termínu dokončení úkolu
 
 > [!NOTE]
 > Ve výchozím nastavení karta **Nasazování** zobrazuje zaměstnance, kteří byli najati za posledních sedm dní. Chcete-li toto nastavení změnit, na stránce **Parametry lidských zdrojů** na kartě **Všeobecné** v poli **Poslední přijatí** definujte časový rámec. Údaje v seznamu **Poslední přijatí** lze zobrazit pro konkrétní počet dní, měsíců nebo let. Chcete-li například zobrazit seznam zaměstnanců, kteří byli přijati za posledních 14 dní, nastavte pole **Doba** na **14** a pole **Jednotka** na **Dny**.
->
-> Na stránce **Parametry lidských zdrojů** můžete také aktualizovat časové období pro seznamy odcházejících a odšedších zaměstnanců, kteří jsou uvedeni na kartě **Rušení**.
->
-> Tato nastavení platí také pro pracovní prostor **Řízení pracovníků**.
+> Na stránce **Parametry lidských zdrojů** můžete také aktualizovat časové období pro seznamy odcházejících a odešlých zaměstnanců, kteří jsou uvedeni na kartě **Rušení**. Tato nastavení platí také pro pracovní prostor **Správa personálu**.
 
 ## <a name="setting-up-tasks"></a>Nastavení úkolů
 
@@ -188,6 +183,13 @@ Kontrolní seznam můžete také použít na zaměstnance otevřením jeho strá
 ## <a name="completing-tasks"></a>Provádění úkolů
 
 Na stránce **Zaměstnanecká samoobsluha** může zaměstnanec zobrazit všechny úkoly, které jsou mu přiřazeny. Pro každý přidělený úkol jsou zobrazeny hodnoty **Úkol**, **Popis**, **Pokyny** a **Kontaktní osoba**. Kromě toho může zaměstnanec pro každý úkol otevřít přidruženou externí webovou stránku nebo přidruženou stránku v aplikaci Dynamics 365.
+
+Úkoly lze také zobrazit na výchozím řídicím panelu. Chcete-li zobrazit úkoly na výchozím řídicím panelu:
+1. Přejděte do části **Možnosti uživatele – Předvolby – Správa úloh** 
+2. Nastavte možnost **Zobrazit úkoly na výchozím řídicím panelu** na **Zapnuto**.  
+
+>[!Note] 
+>Funkce **Správa úkolů** musí být ve **Správě funkcí** zapnutá, aby se možnost zobrazila v části **Uživatelské možnosti**.
 
 Úkoly lze označit jako **Probíhající**, **Zrušené**, nebo **Dokončené**. Pokud byl úkol přiřazen skupině, bude označen jako **Dokončený**, když jej dokončí jeden člověk ve skupině.
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4519e90e19d0652f855999d1a73ca64777b53b53465d6065987afc1cf2494187
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc7e89fabe1651c858097a6c564b4910a524331f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731930"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692744"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources, 20. května 2021
 
@@ -42,7 +41,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 
 | Funkce | Plán vydání | Dokumentace |
 | --- | --- | --- |
-| Platform update 10.0.18 (42) | -- | [Platform Update pro verzi 10.0.18 aplikací Finance and Operations (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
+| Platform update 10.0.18 (42) | -- | [Aktualizace platformy pro verze 10.0.18 finančních a provozních aplikací (květen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 | Aplikace Human Resources pro Microsoft Teams nyní podporuje definice půldnů a schopnost rozdělit den | -- | [Správa žádostí o dovolenou v aplikaci Teams](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
 
 ### <a name="bug-fixes"></a>Opravy chyb

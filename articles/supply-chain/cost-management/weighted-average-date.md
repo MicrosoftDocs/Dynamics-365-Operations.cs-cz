@@ -1,7 +1,7 @@
 ---
 title: Denní vážený průměr se zahrnutím fyzické hodnoty a označením
 description: Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 03/04/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 28991
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cf2206863d891eceb9c65ff879da3f9f72032b1
-ms.sourcegitcommit: fcded93fc6c27768a24a3d3dc5cc35e1b4eff22b
+ms.openlocfilehash: 1497cb08f4cc5a455c832b9bf125c309cd90aa3d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8391994"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672115"
 ---
 # <a name="weighted-average-date-with-include-physical-value-and-marking"></a>Denní vážený průměr se zahrnutím fyzické hodnoty a označením
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641423"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695753"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Human Resources (5. října 2021)
 
@@ -42,7 +41,7 @@ V této verzi jsou všeobecně dostupné následující funkce.
 
 | Funkce | Plán vydání | Dokumentace |
 |---|---|---|
-| Platform update 10.0.21 (45) | -- | [Platform Update pro verzi 10.0.21 aplikací Finance and Operations (říjen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Platform update 10.0.21 (45) | -- | [Aktualizace platformy pro verze 10.0.21 finančních a provozních aplikací (říjen 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>Opravy chyb
@@ -87,7 +86,7 @@ Verze Preview obsahuje následující nové funkce. Další informace o zapnutí
 
 | Funkce | Podrobnosti |
 |---|---|
-| Platform update 10.0.22 (46) | Vydání aktualizace platformy 10.0.22 je naplánováno spolu se servisním vydáním 1. listopad 2021. Další informace naleznete v části [Aktualizace platformy pro verze 10.0.22 aplikací Finance and Operations (listopad 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Platform update 10.0.22 (46) | Vydání aktualizace platformy 10.0.22 je naplánováno spolu se servisním vydáním 1. listopad 2021. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.22 finančních a provozních aplikací (listopad 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 

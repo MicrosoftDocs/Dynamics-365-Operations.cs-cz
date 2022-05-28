@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83ea7a870c52884030125736809ead02b264aef1dcd654f6ff94dab0fbb2004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739995"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717523"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Uzavření hlavní knihy ke konci období
 
@@ -28,7 +28,7 @@ ms.locfileid: "6739995"
 
 Toto téma popisuje úlohy, které jsou obvykle dokončeny při provádění uzávěrky období pro hlavní knihu. 
 
-V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěrky připravují systém pro nové období. Abyste systém připravili na nový rok, je nutné spustit proces roční uzávěrky. Každá organizace má různé postupy a kroky, které provádí na konci období. Zde jsou některé volitelné kroky pro ukončení období:
+V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěrky připravují systém pro nové období. Abyste se připravili na nový rok, je nutné spustit proces roční uzávěrky. Každá organizace má různé postupy a kroky, které provádí na konci období. Zde jsou některé volitelné kroky pro ukončení období:
 
 -   Dokončete všechny úlohy pro všechny ostatní moduly, jako jsou například Pohledávky, Závazky a Zásoby.
 -   Ověřte, že všechny deníky jsou zaúčtovány.
@@ -41,7 +41,7 @@ V hlavní knize můžete provést uzávěrku období nebo roku. Postupy uzávěr
 -   Generujte finanční výkazy konce období pomocí Finančního výkaznictví.
 -   Nastavte období hlavní knihy na **Blokováno**, aby neprobíhalo žádné další zaúčtování. Můžete také omezit období pro určitou skupinu uživatelů, zatímco probíhají aktivity na konci období, abyste získali lepší kontrolu. Není vhodné nastavit období na **Trvale zavřeno**, protože uzavřené období nelze znovu otevřít.
 
-Pracovní prostor uzavření finančního období lze použít k uspořádání a sledování úkolů vyžadovaných pro různé procesy na konci období. 
+Pracovní prostor **uzavření finančního období** lze použít k uspořádání a sledování úkolů vyžadovaných pro různé procesy na konci období. 
 
 
 Další informace naleznete v následujících tématech:
