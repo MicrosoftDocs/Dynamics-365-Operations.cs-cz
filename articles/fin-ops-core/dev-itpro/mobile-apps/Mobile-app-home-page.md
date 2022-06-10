@@ -1,8 +1,8 @@
 ---
 title: Domovská stránka mobilní aplikace
-description: Toto téma popisuje mobilní aplikaci Finance and Operations (Dynamics 365) a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
+description: Toto téma popisuje mobilní aplikaci Operations Finance and Operations (Dynamics 365) a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729701"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811166"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Toto téma popisuje mobilní aplikaci **Finance and Operations (Dynamics 365)** a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 
@@ -130,9 +131,9 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <td>8</td>
 <td>Uživatel</td>
 <td>Stáhněte a nainstalujte mobilní aplikaci.</td>
-<td>Aplikace 
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations pro Android</a><BR/>Aplikace 
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations pro iOS</a><BR/>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Sklady pro aplikaci Finance and Operations pro Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Sklady pro aplikaci Finance and Operations pro iOS</a><BR/>
 (Není podporován Windows Phone)
 </td>
 </tr>

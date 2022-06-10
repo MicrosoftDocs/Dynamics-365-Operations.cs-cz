@@ -2,7 +2,7 @@
 title: Návrh konfigurace pro generování dokumentů ve formátu Excel
 description: Toto téma popisuje, jak navrhnout formát elektronického výkaznictví tak, aby vyplnil šablonu Excel, a poté vygenerovat odchozí dokumenty ve formátu Excel.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645128"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811413"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Návrh konfigurace pro generování dokumentů ve formátu Excel
 
@@ -288,6 +288,16 @@ Můžete vybrat možnost **Aktualizovat z Excelu** na kartě podokna akcí **Imp
 
 ![Možnost Vytvořit prvek formátu listu Excel v dialogovém okně Aktualizovat z Excelu.](./media/er-excel-format-update-template.png)
 
+Ve verzi 10.0.28 a novějších můžete použít volbu **Aktualizujte prvky formátu záhlaví a zápatí aplikace Excel**.
+
+- Když nastavíte tuto možnost na **Ne**, prvky formátu Excel Header a Excel Footer zůstanou nezměněny, i když byla odpovídající záhlaví nebo zápatí aktualizována v listech importované šablony ve formátu sešitu Excel.
+- Když nastavíte tuto možnost na **Ano**, prvky formátu Excel Header a Excel Footer se změní, když byla odpovídající záhlaví nebo zápatí aktualizována v listech importované šablony ve formátu sešitu Excel.
+
+    - Pokud se struktura záhlaví nebo zápatí listu nezměnila nebo pokud byla pouze připojena, aktualizuje se struktura odpovídajícího prvku formátu Excel Header nebo Excel Footer. Vazby prvků formátu, které jsou vnořeny pod tímto prvkem formátu Excel Header nebo Excel Footer, budou zachovány.
+    - Pokud se struktura záhlaví nebo zápatí listu změnila, odpovídající prvek formátu Excel Header nebo Excel Footer se opět vytvoří. Vazby prvků formátu, které jsou vnořeny pod tímto prvkem formátu Excel Header nebo Excel Footer, budou odebrány.
+
+![Možnost Aktualizovat prvky formátu záhlaví a zápatí Excel v dialogovém okně Aktualizovat z Excelu.](./media/er-excel-format-update-template2.png)
+
 Chcete-li se o této funkci dozvědět více, postupujte podle pokynů v části [Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## <a name="validate-an-er-format"></a>Ověření formátu elektronického výkaznictví
@@ -355,7 +365,7 @@ Když je generován odchozí dokument ve formátu sešitu Microsoft Excel, někt
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Příklad 2: Oprava problému EPPlus se sloučenými buňkami
 
-Můžete spustit formát elektronického výkaznictví a tím vygenerovat odchozí dokument ve formátu sešitu aplikace Excel. Když je povolena funkce **Povolit používání knihovny EPPlus v rámci elektronického vykazování** v pracovním prostoru **Správa funkcí**, [knihovna EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) se použije k vytvoření výstupu ve formátu sešitu Excel. Nicméně kvůli známému [chování aplikace Excel](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) a omezení knihovny EPPlus se můžete setkat s následující výjimkou: „Nelze odstranit/přepsat sloučené buňky. Rozsah je částečně sloučen s jiným sloučeným rozsahem.“ Chcete-li zjistit, jaké šablony aplikace Excel mohou způsobit tuto výjimku a jak můžete problém vyřešit, postupujte dle následujícího příkladu.
+Můžete spustit formát elektronického výkaznictví a tím vygenerovat odchozí dokument ve formátu sešitu aplikace Excel. Když je povolena funkce **Povolit používání knihovny EPPlus v rámci elektronického vykazování** v pracovním prostoru **Správa funkcí**, [knihovna EPPlus](https://www.nuget.org/packages/epplus/4.5.2.1) se použije k vytvoření výstupu ve formátu sešitu Excel. Nicméně kvůli známému [chování aplikace Excel](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) a omezení knihovny EPPlus se můžete setkat s následující výjimkou: „Nelze odstranit/přepsat sloučené buňky. Rozsah je částečně sloučen s jiným sloučeným rozsahem.“ Chcete-li zjistit, jaké šablony aplikace Excel mohou způsobit tuto výjimku a jak můžete problém vyřešit, postupujte dle následujícího příkladu.
 
 1. V desktopové aplikaci Excel vytvořte nový sešit Excel.
 2. V listu **List1** přidejte název **ReportTitle** pro buňku **A2**.

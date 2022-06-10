@@ -2,7 +2,7 @@
 title: Modul výsledků hledání
 description: Tohle téma se zabývá moduly výsledků hledání a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644919"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780911"
 ---
 # <a name="search-results-module"></a>Modul výsledků hledání
 
@@ -65,23 +65,26 @@ Modul výsledků vyhledávání podporuje [modul rychlého zobrazení](quick-vie
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Přidat modul výsledků vyhledávání na stránku kategorie
 
-Chcete-li přidat modul výsledků vyhledávání na stránku kategorie, postupujte podle následujících kroků.
+Chcete-li přidat modul výsledků vyhledávání na stránku kategorie v konfigurátoru webů, postupujte následujícím způsobem.
 
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** zadejte název **Výsledků vyhledávání** a poté klikněte na tlačítko **OK**.
 1. V pozici **Tělo** vyberte tři tečky (...) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
 1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (...) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V pozici **Kontejner** vyberte tři tečky (...) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Popis cesty** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Popis cesty** a poté klikněte na **OK**.
 1. V podokně vlastností **Popis cesty** zadejte hodnotu **1** pro **Min. počet výskytů**.
 1. V pozici **Kontejner** vyberte tři tečky (...) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Výsledky vyhledávání** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vyberte moduly** vyberte modul **Výsledky vyhledávání** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností **Výsledky vyhledávání** zadejte hodnotu **1** pro **Min. počet výskytů** a poté nastavte další požadované vlastnosti modulu výsledků hledání. Nastavením těchto vlastností v šabloně zajistíte, že veškerá přizpůsobení konkrétní stránce kategorie budou tato nastavení automaticky zahrnovat.
 1. Chcete-li publikovat šablonu, vyberte možnost **Dokončit úpravy** a volbou **Publikovat**.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Výsledky vyhledávání**, kterou jste vytvořili, zadejte **Stránku kategorie** pro **Název stranky** a pak vyberte tlačítko **OK**. Protože jsou všechny hodnoty nastaveny v šabloně, je stránka připravena k publikování.
+1. V dialogovém okně **Vytvořit novou stránku** v části **Název stránky** zadejte **Stránka kategorie** a poté vyberte **Další**.
+1. V části **Vyberte šablonu** vyberte vytvořenou šablonu **Výsledky vyhledávání** a poté vyberte **Další**.
+1. V části **Vyberte rozložení** vyberte rozložení stránky (např. **Flexibilní rozložení**) a poté vyberte **Další**.
+1. V části **Zkontrolovat a dokončit** zkontrolujte konfiguraci stránky. Pokud potřebujete upravit informace o stránce, vyberte **Zpět**. Pokud jsou informace o stránce správné, vyberte **Vytvořit stránku**.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Povolit povědomí o zásobách pro modul výsledků vyhledávání
@@ -102,7 +105,7 @@ Vyhledávání produktů s ohledem na zásoby používá atributy produktů k z�
 
 Chcete-li vytvořit vyhrazené atributy produktu pro podporu modulu výsledků vyhledávání s ohledem na skladové zásoby, postupujte takto.
 
-1. Přejděte na **Retail a Commerce \> Retail a Commerce IT \> Produkty a zásoby**.
+1. V centrále přejděte na možnost **Retail a Commerce \> Retail a Commerce IT \> Produkty a zásoby**.
 1. Vyberte a otevřete **Naplnění atributů produktu úrovní zásob**.
 1. V dialogovém okně zadejte následující informace:
 
@@ -116,11 +119,11 @@ Chcete-li vytvořit vyhrazené atributy produktu pro podporu modulu výsledků v
 
 Chcete-li nakonfigurovat atributy produktu pro online kanál, postupujte takto. 
 
-1. Přejděte na **Retail and Commerce \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
-2. Vyberte online kanál, pro který chcete povolit modul výsledků vyhledávání s ohledem na zásoby.
-3. Vyberte a otevřete přidruženou skupinu atributů a přidejte do ní nově vytvořený atribut produktu.
-4. Pro verze služby Commerce před vydáním verze 10.0.27 vyberte **Nastavit metadata atributu**, vyberte nově přidaný atribut produktu a poté zapněte možnosti **Zobrazit atribut na kanálu**, **Načítatelné**, **Lze zpřesnit** a **Lze se dotázat**.
-5. Až budete hotovi, přejděte na **Maloobchod a velkoobchod \> IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu **Konfigurace kanálu 1150 (katalog)**. Pokud naplánujete úlohu **Naplnit atributy produktu úrovní zásob** jako dávkový proces, doporučujeme také naplánovat úlohu 1150 jako dávkový proces, který běží se stejnou frekvencí.
+1. V centrále přejděte na **Maloobchod a obchod \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
+1. Vyberte online kanál, pro který chcete povolit modul výsledků vyhledávání s ohledem na zásoby.
+1. Vyberte a otevřete přidruženou skupinu atributů a přidejte do ní nově vytvořený atribut produktu.
+1. Pro verze služby Commerce před vydáním verze 10.0.27 vyberte **Nastavit metadata atributu**, vyberte nově přidaný atribut produktu a poté zapněte možnosti **Zobrazit atribut na kanálu**, **Načítatelné**, **Lze zpřesnit** a **Lze se dotázat**.
+1. Až budete hotovi, přejděte na **Maloobchod a velkoobchod \> IT pro maloobchod a velkoobchod \> Plán distribuce** a spusťte úlohu **Konfigurace kanálu 1150 (katalog)**. Pokud naplánujete úlohu **Naplnit atributy produktu úrovní zásob** jako dávkový proces, doporučujeme také naplánovat úlohu 1150 jako dávkový proces, který běží se stejnou frekvencí.
 
 > [!NOTE]
 > U produktů, které se zobrazují v modulu výsledků vyhledávání, se úroveň zásob ukazuje na úrovni hlavního produktu namísto úrovně jednotlivých variant. Má pouze dvě možné hodnoty: „na skladě“ a „není na skladě“. Skutečný popisek hodnoty je načten z definice [profil úrovně zásob](inventory-buffers-levels.md). Hlavní produkt je považován za vyprodaný pouze v případě, že nejsou skladem všechny jeho varianty.

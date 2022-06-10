@@ -2,7 +2,7 @@
 title: Mobilní pracovní prostor dodavatelské spolupráce
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 author: GalynaFedorova
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,21 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c1e8a6589b16c4a24b151980d01929ed154bbb7b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670097"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811707"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Spolupráce dodavatele**. Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations.
+Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations (Dynamics 365).
 
 ## <a name="overview"></a>Přehled 
 Mobilní pracovní prostor **Dodavatelská spolupráce** informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta pracovní prostor. 
@@ -109,7 +110,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

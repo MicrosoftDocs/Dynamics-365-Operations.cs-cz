@@ -2,7 +2,7 @@
 title: Mobilní pracovní prostor Můj tým
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Můj tým, ve kterém si manažeři mohou zobrazovat informace o přímých podřízených a dalších zaměstnancích.
 author: ShielaSogge
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767105"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811050"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilní pracovní prostor Můj tým
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Můj tým**. V tomto pracovním prostoru si manažeři mohou prohlížet informace o přímých podřízených a dalších zaměstnancích. Kromě toho mohou podřízeným také poslat pochvalu.
 
@@ -54,7 +55,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </ul>
 </td>
 <td>Správce systému</td>
-<td>Pokud nemáte &#39;ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již &#39;ve své organizaci nasazenou aplikaci Human Resources, správce systému může přistupovat ke zkušební verzi z <a href="https://dynamics.microsoft.com/human-resources/overview/">webové stránky Human Resources</a>.
+<td>Pokud nemáte ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již &#39;ve své organizaci nasazenou aplikaci Human Resources, správce systému může přistupovat ke zkušební verzi z <a href="https://dynamics.microsoft.com/human-resources/overview/">webové stránky Human Resources</a>.
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +68,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547781"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786831"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurace viditelnosti zásob
 
@@ -60,7 +60,7 @@ Doplněk Viditelnost zásob přidává do vašeho systému několik nových funk
 
 Pokud neznáte správný koncový bod služby Viditelnost zásob, otevřete stránku **Konfigurace** v Power Apps a poté vyberte v pravém horním rohu příkaz **Zobrazit koncový bod služby**. Na stránce se zobrazí správný koncový bod služby.
 
-## <a name="data-source-configuration"></a>Konfigurace zdroje dat
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfigurace zdroje dat
 
 Každý zdroj dat představuje systém, ze kterého vaše data pocházejí. Mezi příklady názvů zdroje dat patří `fno` (což znamená „finanční a provozní aplikace Dynamics 365“) a `pos` (což znamená „prodejní místo“). Ve výchozím nastavení je Supply Chain Management nastaven ve Viditelnosti zásob jako výchozí zdroj dat (`fno`).
 
@@ -141,7 +141,7 @@ Chcete-li přidat mapování dimenzí, postupujte následujícím způsobem.
 
 Pokud váš zdroj dat obsahuje například dimenzi barvy produktu, můžete ji namapovat na základní dimenzi `ColorId` a přidat tak vlastní dimenzi `ProductColor` ve zdroji dat `exterchannel`. Poté je dimenze mapována na základní dimenzi `ColorId`.
 
-### <a name="physical-measures"></a>Fyzické míry
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fyzické míry
 
 Když zdroj dat odešle změnu zásob do Viditelnosti zásob, odešle tuto změnu pomocí *fyzických měr*. Fyzické míry mění množství a odrážejí stav zásob. Na základě vašich požadavků můžete definovat své vlastní fyzické míry. Dotazy mohou být založeny na fyzických mírách.
 
@@ -175,6 +175,9 @@ Pokud je zdrojem dat Supply Chain Management, nemusíte znovu vytvářet výchoz
 ### <a name="calculated-measures"></a>Vypočtené míry
 
 Viditelnost zásob můžete použít k dotazování na fyzické míry zásob i na *vlastní vypočítané míry*. Vypočítané míry poskytují přizpůsobený výpočetní vzorec, který se skládá z kombinace fyzických měr. Tato funkce vám umožňuje definovat sadu fyzických měrných systémů, které budou přidány, anebo sadu fyzických měrných systémů, které budou odečteny, aby bylo možné vytvořit vlastní měrný systém.
+
+> [!IMPORTANT]
+> Vypočítaná míra je složením fyzických měr. Její vzorec může zahrnovat pouze fyzické míry bez duplicit, nikoli vypočítané míry.
 
 Konfigurace umožňuje definovat sadu modifikátorů, které se přidávají nebo odčítají, aby se získalo celkové agregované výstupní množství.
 

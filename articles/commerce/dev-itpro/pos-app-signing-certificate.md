@@ -1,8 +1,8 @@
 ---
-title: Podepsání MPOS pomocí certifikátu pro podepisování kódu
+title: Podepsání MPOS souboru .appx pomocí certifikátu pro podepisování kódu
 description: Toto téma vysvětluje, jak podepsat MPOS pomocí certifikátu pro podepisování kódu.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741538"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811078"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>Podepsání MPOS appx pomocí kódu podpisového certifikátu
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Podepsání MPOS souboru .appx pomocí certifikátu pro podepisování kódu
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Chcete-li nainstalovat Modern POS (MPOS), musíte aplikaci MPOS podepsat certifikátem pro podepisování kódu od důvěryhodného poskytovatele a nainstalovat stejný certifikát na všechny počítače, kde je nainstalován MPOS, a to do důvěryhodné kořenové složky pro aktuálního uživatele.
 
@@ -42,7 +43,7 @@ Použití úlohy Zabezpečit soubor je doporučeným přístupem pro podepisová
 ![Tok podepisování aplikace MPOS.](media/POSSigningFlow.png)
 
 > [!NOTE]
-> V současné době balíček OOB podporuje podepisování pouze u souboru appx, různé samoobslužné instalační programy jako MPOIS, RSSU a HWS tímto procesem podepsány nejsou. Musíte je ručně podepsat pomocí nástroje SignTool nebo jiných nástrojů pro podepisování. Certifikát používaný k podepisování souboru appx musí být nainstalován v počítači, kde je nainstalován Modern POS.
+> V současné době balíček OOB podporuje podepisování pouze u souborů .appx, různé samoobslužné instalační programy jako MPOIS, RSSU a HWS tímto procesem podepsány nejsou. Musíte je ručně podepsat pomocí nástroje SignTool nebo jiných nástrojů pro podepisování. Certifikát používaný k podepisování souborů .appx musí být nainstalován v počítači, kde je nainstalován Modern POS.
 
 ## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Kroky konfigurace certifikátu pro podepisování v Azure Pipelines
 
@@ -51,21 +52,22 @@ Použití úlohy Zabezpečit soubor je doporučeným přístupem pro podepisová
 Stáhněte [úkol DownloadFile](/visualstudio/msbuild/downloadfile-task) certifikát a přidejte jej jako první krok v procesu sestavení. Výhodou použití úlohy Zabezpečit soubor je to, že soubor je zašifrován a umístěn na disk během sestavování bez ohledu na to, zda je sestavení úspěšné, selže nebo je zrušeno. Po dokončení procesu sestavení je soubor odstraněn z umístění pro stahování.
 
 1. Stáhněte úkol Zabezpečit soubor a přidejte ho jako první krok v kanálu sestavení Azure. Úlohu Zabezpečit soubor si můžete stáhnout z [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Nahrajte certifikát do úlohy Zabezpečit soubor a v části Výstupní proměnné nastavte Referenční název, jak je znázorněno na následujícím obrázku.
+1. Nahrajte certifikát do úlohy Zabezpečit soubor a v části Výstupní proměnné nastavte Referenční název, jak je znázorněno na následujícím obrázku.
     > [!div class="mx-imgBorder"]
     > ![Úkol Zabezpečit soubor.](media/SecureFile.png)
-3. Vytvořte novou proměnnou v Azure Pipelines výběrem možnosti **Nová proměnná** na kartě **Proměnné**.
-4. Zadejte název proměnné do pole hodnoty, např. **MySigningCert**.
-5. Uložte proměnnou.
-6. Otevřete soubor **Customization.settings** ve složce **RetailSDK\\BuildTools** a aktualizujte **ModernPOSPackageCertificateKeyFile** názvem proměnné vytvořené v kanálu (krok 3). Například:
+1. Vytvořte novou proměnnou v Azure Pipelines výběrem možnosti **Nová proměnná** na kartě **Proměnné**.
+1. Zadejte název proměnné do pole hodnoty, např. **MySigningCert**.
+1. Uložte proměnnou.
+1. Otevřete soubor **Customization.settings** ve složce **RetailSDK\\BuildTools** a aktualizujte **ModernPOSPackageCertificateKeyFile** názvem proměnné vytvořené v kanálu (krok 3). Například:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Tento krok je vyžadován, pokud certifikát není chráněn heslem. Pokud je certifikát chráněn heslem, pokračujte následujícími kroky.
- 
-7. Na kartě **Proměnné** kanálu přidejte novou proměnnou zabezpečeného textu. Nastavte její název na **MySigningCert.secret** a nastavte hodnotu hesla pro certifikát. Chcete-li proměnnou zabezpečit, vyberte ikonu zámku.
-8. Přidejte do kanálu úkol **Skript prostředí Powershell** (za krok Stáhnout zabezpečený soubor a před krok Sestavit). Zadejte **Zobrazovaný název** a nastavte Typ jako **Vložený**. Zkopírujte a vložte následující text do části skriptu.
+    
+1. Pokud chcete MPOS soubor .appx označit časovým razítkem při jeho podepisování certifikátem, otevřete soubor **Retail SDK\\Build tool\\Customization.settings** a do proměnné **ModernPOSPackageCertificateTimestamp** zapište poskytovatele časového razítka (například `http://timestamp.digicert.com`).
+1. Na kartě **Proměnné** kanálu přidejte novou proměnnou zabezpečeného textu. Nastavte její název na **MySigningCert.secret** a nastavte hodnotu hesla pro certifikát. Chcete-li proměnnou zabezpečit, vyberte ikonu zámku.
+1. Přidejte do kanálu úkol **Skript prostředí Powershell** (za krok Stáhnout zabezpečený soubor a před krok Sestavit). Zadejte **Zobrazovaný název** a nastavte Typ jako **Vložený**. Zkopírujte a vložte následující text do části skriptu.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Stáhněte [úkol DownloadFile](/visualstudio/msbuild/downloadfile-task) certifi
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Otevřete soubor **Customization.settings** ve složce **RetailSDK\\BuildTools** a aktualizujte **ModernPOSPackageCertificateThumbprint** hodnotou kryptografického otisku certifikátu.
+1. Otevřete soubor **Customization.settings** ve složce **RetailSDK\\BuildTools** a aktualizujte **ModernPOSPackageCertificateThumbprint** hodnotou kryptografického otisku certifikátu.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Stáhněte [úkol DownloadFile](/visualstudio/msbuild/downloadfile-task) certifi
  
 Podrobnosti o tom, jak získat otisk pro certifikát, najdete v části o [načtení otisku certifikátu](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Stáhněte si nebo vygenerujte certifikát pro ruční podepsání aplikace MPOS pomocí msbuild v SDK
 
 Pokud je k podepsání aplikace MPOS použit stažený nebo vygenerovaný certifikát, aktualizujte uzel **ModernPOSPackageCertificateKeyFile** v souboru **BuildTools\\Customization.settings** tak, aby ukazoval na umístění souboru pfx (**$(SdkReferencesPath)\\appxsignkey.pfx**). Například:

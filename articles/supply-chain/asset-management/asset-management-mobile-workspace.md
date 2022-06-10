@@ -2,7 +2,7 @@
 title: Použití mobilního pracovního prostoru správy majetku
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Správa majetku.
 author: johanhoffmann
-ms.date: 01/15/2021
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 62bb178e714611367c825c87044a31275f5540accc9363137c7cecbcec1bec65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771532"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811497"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Použití mobilního pracovního prostoru správy majetku
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Správa majetku**. Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat.
 
@@ -45,7 +46,7 @@ Než budete moci použít mobilní pracovní prostor **Správa majetku**, musí 
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
 
 - [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

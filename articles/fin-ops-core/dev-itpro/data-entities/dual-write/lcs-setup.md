@@ -2,19 +2,19 @@
 title: Nastavení duálního zápisu z Lifecycle Services
 description: Toto téma vysvětluje, jak nastavit připojení pro duální zápis z Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063665"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783194"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Nastavení duálního zápisu z Lifecycle Services
 
@@ -26,12 +26,12 @@ Toto téma vysvětluje, jak povolit duální zápis z Microsoft Dynamics Lifecyc
 
 ## <a name="prerequisites"></a>Předpoklady
 
-Musíte vyplnit integraci Power Platform, jak je popsáno v následujících tématech:
+Zákazníci musejí vyplnit integraci Power Platform, jak je popsáno v následujících tématech:
 
-+ [Integrace Power Platform - povolit během nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Integrace Power Platform – povolit po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Pokud ještě nepoužíváte Microsoft Power Platform a chcete rozšířit své prostředí finančních a provozních aplikací přidáním možností platformy, přečtěte si téma [Integrace Power Platform – Aktivace po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Pokud již máte prostředí Dataverse a Power Platform a chcete je propojit s prostředím finančních a provozních aplikací, viz[Integrace Power Platform – Aktivace po nasazení prostředí](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Nastavení duálního zápisu pro nová prostředí Dataverse
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Nastavení duálního zápisu pro nová nebo existující prostředí Dataverse
 
 Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o prostředí**:
 
@@ -55,28 +55,19 @@ Podle těchto pokynů nastavíte duální zápis ze stránky LCS **Podrobnosti o
 
 8. Po dokončení propojení se zobrazí hypertextový odkaz. Pomocí odkazu se přihlaste do oblasti správy duálního zápisu v prostředí Finance and Operations. Odtud můžete nastavit mapování entit.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Nastavení duálního zápisu pro existující prostředí Dataverse
-
-Chcete-li nastavit duální zápis pro existující prostředí Dataverse, musíte vytvořit [lístek podpory](../../lifecycle-services/lcs-support.md) společnosti Microsoft. Lístek musí obsahovat:
-
-+ Vaše ID prostředí Finance and Operations.
-+ Název vašeho prostředí ze služby Lifecycle Services.
-+ ID organizace Dataverse nebo ID prostředí Power Platform z Centra pro správu Power Platform. Ve svém lístku požádejte, aby ID bylo použito jako instance integrace Power Platform.
-
-> [!NOTE]
-> Nelze zrušit propojení prostředí pomocí LCS. Chcete-li zrušit propojení prostředí, otevřete pracovní prostor **Integrace dat** v prostředí Finance and Operations a poté vyberte možnost **Zrušit propojení**.
-
 ## <a name="linking-mismatch"></a>Nesoulad propojení
 
-Je možné, že vaše prostředí LCS je propojeno s jednou instancí Dataverse, zatímco vaše prostředí duálního zápisu je propojeno s jinou instancí Dataverse. Tento nesoulad propojení může způsobit neočekávané chování a může dojít k odeslání dat do nesprávného prostředí. Doporučené prostředí pro duální zápis je prostředí, které je vytvořeno jako součást integrace Power Platform a dlouhodobě to bude jediný způsob, jak vytvořit propojení mezi prostředími.
+Je možné, že vaše prostředí s duálním zápisem je propojeno s instancí Dataverse, zatímco služba LCS nemá nastavenu integraci Power Platform. Tento nesoulad propojení může způsobit neočekávané chování. Doporučuje se, aby se detaily prostředí LCS shodovaly s tím, k čemu jste připojeni v duálním zápisu, aby stejné připojení mohly používat obchodní události, virtuální tabulky a doplňky.
 
-Pokud má vaše prostředí nesoulad propojení, LCS zobrazí na stránce s podrobnostmi o vašem prostředí varování „Microsoft zjistil, že je vaše prostředí propojeno pomocí duálního zápisu do jiného cíle, než je uvedeno v integraci Power Platform, což se nedoporučuje“:
+Pokud ve vašem prostředí existuje nesoulad propojení, LCS zobrazí na stránce s podrobnostmi o vašem prostředí varování podobající se následujícímu příkladu: „Microsoft zjistil, že je vaše prostředí propojeno pomocí duálního zápisu do jiného cíle, než je uvedeno v integraci Power Platform, což se nedoporučuje“:
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrace - neshoda propojení":::
 
-Pokud narazíte na tuto chybu, existují dvě možnosti podle vašich potřeb:
+Pokud se zobrazí toto varování, zkuste jedno z následujících řešení:
 
-+ [Odpojit a znovu propojit prostředí duálního zápisu (obnovit nebo změnit propojení)](relink-environments.md#scenario-reset-or-change-linking), jak je uvedeno na stránce podrobností o vašem prostředí LCS. Toto je ideální volba, protože ji můžete spustit bez podpory společnosti Microsoft.  
-+ Pokud chcete zachovat své propojení v duálním zápisu, můžete požádat o pomoc podporu společnosti Microsoft a změnit integraci Power Platform, abyste využili své stávající prostředí Dataverse, jak je dokumentováno v předchozí části.  
+- Pokud vaše prostředí LCS nemělo nikdy nastavenu integraci Power Platform, můžete se připojit k instanci Dataverse, která je konfigurována pro duální zápis podle pokynů v tomto článku.
+- Pokud vaše prostředí LCS již má nastavenu integraci Power Platform, měli byste zrušit propojení duálního zápisu a znovu se připojit k cíli určenému LCS pomocí návodu v článku [Scénář: Obnova nebo změna propojení](relink-environments.md#scenario-reset-or-change-linking).
+
+V minulosti byla k dispozici možnost ručního lístku podpory, ale to bylo předtím, než existovala možnost 1 výše.  Společnost Microsoft již nepodporuje požadavky na ruční opětovné propojení prostřednictvím lístků podpory.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

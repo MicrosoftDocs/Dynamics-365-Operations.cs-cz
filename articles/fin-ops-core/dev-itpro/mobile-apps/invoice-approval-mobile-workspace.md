@@ -2,7 +2,7 @@
 title: Mobilní pracovní prostor pro schválení faktur
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení faktur.
 author: abruer
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759973"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811351"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilní pracovní prostor pro schválení faktur
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Schválení faktur**. Tento pracovní prostor obsahuje seznam faktur, které vám byly přiřazeny v procesu workflowu záhlaví faktury dodavatele. 
 
@@ -45,7 +46,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 Finance musí být nasazen ve vaší organizaci.</td>
+<td>Ve vaší organizaci musí být nasazena aplikace Microsoft Dynamics 365 Finance.</td>
 <td>Správce systému</td>
 <td>Viz část <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>.
 </td>
@@ -60,7 +61,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

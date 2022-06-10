@@ -2,7 +2,7 @@
 title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
 description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 Commerce ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700082"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806420"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -106,6 +106,8 @@ Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce ot
 > Pokud přidáte příliš mnoho zástupců, rozevírací nabídka panelu vyhledávání v POS se přehltí a může to ovlivnit vyhledávání zaměstnance. Doporučujeme přidávat pouze tolik zástupců, kolik potřebujete.
 
 Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky v POS. Kritéria, která jsou zobrazena ve vlastnostech ihned po vybalení, které používá algoritmus hledání odběratele pro hledání odběratele. Partneři však mohou přidat vlastní vlastnosti jako zástupce hledání. Pokud chcete přidat vlastní vlastnosti jako zkratky hledání, musí správce systému rozšířit rozšiřitelné vyčíslení (enum), které se používá pro kritéria vyhledávání odběratele, a následně označit vlastní vlastnosti partnera jako zástupce. Partneři zodpovídají za zápis kódu k vyhledání výsledků, když se používají k hledání jejich vlastní zástupci.
+
+Překlady pro zkratky jsou vyžadovány, pokud chcete, aby se na POS zobrazovaly zkratky. Pokud se jazyk vašeho kanálu liší od výchozího jazyka systému, musíte definovat překlad pro každou zkratku v očekávaném jazyce. Překlady můžete definovat výběrem příkazu **Přeložit** pro každou zkratku. 
 
 > [!NOTE]
 > Vlastní vlastnost, která je přidána do výčtu, neovlivní standardní algoritmus hledání odběratele. Jinými slovy, algoritmus hledání zákazníků nevyhledává ve vlastní vlastnosti. Uživatelé mohou vlastní vlastnosti použít k vyhledávání pouze v případě, že je vlastní vlastnost přidána jako zástupce, případně je přepsán výchozí algoritmus hledání.

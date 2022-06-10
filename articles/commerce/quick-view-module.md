@@ -2,7 +2,7 @@
 title: Modul rychlého zobrazení
 description: Tohle téma se zabývá moduly rychlého zobrazení a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 68808da1ad2b3474852b3544df55db948f8758cd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692693"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780811"
 ---
 # <a name="quick-view-module"></a>Modul rychlého zobrazení
 
@@ -61,7 +61,7 @@ Chcete-li přidat modul rychlého zobrazení do modulu kolekce produktů v konfi
 
 1. Přejděte na **Stránky** a poté vyberte domovskou stránku webu Fabrikam.
 1. Přejděte na libovolný modul **Kolekce produktů** na domovské stránce, vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Rychlé zobrazení** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vyberte moduly** vyberte modul **Rychlé zobrazení** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu **Rychlé zobrazení**, vyberte **Nadpis**. V dialogovém okně **Nadpis**, nastavte pole **Úroveň nadpisu** na **H2** a potom vyberte **OK**.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 

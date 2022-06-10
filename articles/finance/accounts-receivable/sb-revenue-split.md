@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660449"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770147"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Šablony rozdělení výnosů fakturace předplatného
 
@@ -99,3 +99,54 @@ Chcete-li vytvořit plán fakturace, který obsahuje položku, která je nastave
 > - Podřízené položky jsou automaticky zadány do řádku prodejní objednávky nebo plánu fakturace.
 >
 > Pokud je možnost **Automaticky vytvořit rozdělení výnosů** nastavena na **Ne**, příslušné chování je vysvětleno dříve.
+
+## <a name="additional-revenue-split-information"></a>Doplňkové informace o rozdělení výnosů
+
+Když přidáte položku, která je součástí rozdělení výnosů, mějte na paměti následující informace: 
+
+- Nadřízená částka nemůže být odložena.
+- Počáteční datum, koncové datum, množství, jednotka, lokalita a skladové hodnoty podřízených položek jsou založeny na nadřazené položce. Tyto hodnoty nelze u podřízených položek změnit. Všechny změny musejí být provedeny v nadřazené položce. 
+- Metoda stanovení ceny je **Paušální** a nedá se změnit.
+- Podřízené položky lze přidat nebo odebrat.
+- Nadřazené a podřízené položky musejí používat stejnou skupinu položek. 
+- Podřízené položky mohou mít jedno z následujících nastavení:
+
+    - Pole **Frekvence fakturace** a **Intervaly fakturace** jsou nastavena na stejnou hodnotu jako u nadřazené položky. 
+    - Pole **Frekvence fakturace** je nastaveno na **Jednorázová**. V tomto případě se pole **Intervaly fakturace** automaticky nastaví na **1**. 
+
+- Součet čistých částek podřízených položek se rovná nadřazené částce. Pokud je metoda přidělení **Nulové částky**, součet částek podřízené položky i nadřazená částka jsou 0 (nula). 
+
+    > [!NOTE]
+    > Pokud je metoda přidělení **Nulová nadřazená částka**, (nenulový) součet podřízených položek se nerovná rodičovské částce, která je 0 (nula). Tato metoda přidělování se používá pro interní účely, takže zaměstnanci mohou vidět podřízené položky. Zákazníci však mohou vidět pouze nadřazenou položku.
+
+- Pokud je typ uspořádání více prvků (MEA) prodejní objednávky **Jednotlivě**, odpovídající víceprvkový řádek přidělení výnosů se vytvoří při přidání nadřazené a podřízené položky. 
+- Pokud je metoda přidělení pro rozdělení výnosů **Stejné částky** a změní se nadřazená částka, částky se přepočítají pro všechny podřízené řádky. 
+- U rozdělení výnosů, kde je metoda přidělení **Variabilní částka**, dojde k následujícímu chování:
+
+    - Čistá částka nadřazené položky se objeví ve sloupci **Nadřazená částka**. Tuto hodnotu lze upravit. Jednotková cena, čistá částka a sleva jsou však 0 (nula) a nelze je upravit.
+    - Jednotková cena podřízených položek je 0 (nula). Jednotkovou cenu nebo čistou částku můžete upravit. Když upravíte jednu hodnotu, druhá hodnota se automaticky aktualizuje.
+
+- U rozdělení výnosů, kde je metoda přidělení **Procento**, dojde k následujícímu chování:
+
+    - Čistá částka nadřazené položky se objeví ve sloupci **Nadřazená částka**. Tuto hodnotu lze upravit. Jednotková cena, čistá částka a sleva jsou však 0 (nula) a nelze je upravit. 
+    - Čistá částka podřízených položek se vypočítá jako *Procento* &times; *Nadřazená částka*.
+
+- U rozdělení výnosů, kde je metoda přidělení **Stejná částka**, dojde k následujícímu chování:
+
+    - Čistá částka nadřazené položky se objeví ve sloupci **Nadřazená částka**. Tuto hodnotu lze upravit. Jednotková cena, čistá částka a sleva jsou však 0 (nula) a nelze je upravit. 
+    - Čistá částka podřízených položek se vypočítá rozdělením nadřazené částky rovným dílem mezi všechny podřízené položky. 
+    - Pokud jsou podřízené položky odebrány nebo přidány, čistá částka a jednotkové ceny se přepočítají tak, aby všechny podřízené řádky měly stejné částky. 
+    - Pokud nadřazenou částku nelze rozdělit rovným dílem, může být čistá částka a jednotková cena poslední podřízené položky o něco vyšší nebo nižší než čistá částka a jednotková cena ostatních podřízených položek. 
+
+- U rozdělení výnosů, kde je metoda přidělení **Nulová částka**, dojde k následujícímu chování:
+
+    - Jednotkovou cenu, čistou částku a slevu lze upravit. Nadřazená částka je 0 (nula) a nelze ji upravit. 
+    - Množství, jednotka, lokalita a skladové hodnoty podřízených položek jsou založeny na nadřazené položce. Tyto hodnoty nelze u podřízených položek změnit. Všechny změny musejí být provedeny v nadřazené položce. 
+    - Jednotková cena a čistá cena podřízených položek je 0 (nula) a nelze je upravit. 
+
+- U rozdělení výnosů, kde je metoda přidělení **Nulová nadřazená částka**, dojde k následujícímu chování:
+
+    - Jednotková cena, nadřazená částka a čistá částka nadřazené položky jsou 0 (nula).
+    - V plánu fakturace se podřízené řádky zobrazují, jako by byly přidány ručně, a všechny hodnoty se aktualizují na základě vybrané skupiny plánu fakturace. Tyto hodnoty lze upravit. U podřízených položek máte přístup k možnostem **Eskalace a sleva** a **Rozšířené možnosti tvorby cen** prostřednictvím polí **Zadané množství**, **Jednotková cena**, **Sleva** a **Čistá částka** ve stránce **Zobrazit fakturační údaje**. 
+    - Na prodejní objednávce mají podřízené řádky slevu a procento slevy 0 (nula). 
+    - Frekvenci fakturace nadřazených a podřízených položek lze změnit a každý řádek může mít jinou frekvenci. Nadřazená položka je však automaticky aktualizována tak, aby používala nejkratší frekvenci ze svých podřízených řádků. Například rozdělení výnosů má dvě podřízené položky, z nichž jedna používá **Měsíční** frekvenci fakturace a druhá **Roční** frekvenci fakturace. V tomto případě je frekvence fakturace nadřazené položky aktualizována na **Měsíční**.

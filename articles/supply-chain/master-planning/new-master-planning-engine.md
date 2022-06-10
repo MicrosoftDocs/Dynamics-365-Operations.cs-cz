@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469890"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809088"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrace na optimalizaci plánování pro hlavní plánování
 
@@ -47,7 +47,7 @@ Jak bylo zmíněno, ve verzi 10.0.16 a novější se zobrazí chybová zpráva,
 
 ### <a name="new-deployments"></a>Nová nasazení
 
-Optimalizace plánování by měla být považována za výchozí hlavní plánovací modul pro všechna nová nasazení v cloudu. Optimalizace plánování by se měla obecně použít pro všechna nová nasazení, která během generování plánování negenerují plánované výrobní zakázky. Pokud nové nasazení závisí na funkčnosti, kterou Optimalizace plánování aktuálně nepodporuje, můžete požádat o výjimku, abyste mohli i nadále používat integrovaný hlavní plánovací modul.
+Optimalizace plánování musí být považována za výchozí hlavní plánovací modul pro všechna nová nasazení v cloudu. Optimalizace plánování by se měla obecně použít pro všechna nová nasazení, která během generování plánování negenerují plánované výrobní zakázky. Pokud nové nasazení závisí na funkčnosti, kterou Optimalizace plánování aktuálně nepodporuje, můžete požádat o výjimku, abyste mohli i nadále používat integrovaný hlavní plánovací modul.
 
 ### <a name="existing-deployments"></a>Stávající nasazení
 
@@ -63,7 +63,7 @@ V současné době jsou výjimky pro migraci optimalizace plánování relevantn
 
 Poté, co budou k dispozici požadované funkce, poskytne Microsoft období odkladu do vypršení platnosti výjimky. Správce prostředí bude informován, až budou k dispozici požadované funkce a začne období odkladu.
 
-Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962).
+Následující vývojový diagram shrnuje informace uvedené v tomto tématu, takže můžete rychle zjistit, zda byste měli požádat o výjimku. Pokud potřebujete požádat o výjimku, vyplňte a odešlete [Dotazník pro plánování optimalizace migrace a výjimky](https://go.microsoft.com/fwlink/?linkid=2144962). Za vyhodnocení a schvalování každé žádosti o výjimku je zodpovědná produktová skupina, proto pomocí uvedeného odkazu odešlete žádost přímo produktové skupině a nevytvářejte pro ni lístek podpory. Pokud bude váš požadavek zamítnut, nevytvářejte lístek podpory, protože podpora společnosti Microsoft nemůže přehodnotit ani udělit výjimky.
 
 ![Vývojový diagram výjimek.](media/exception-diagram.png "Vývojový diagram výjimek")
 

@@ -2,7 +2,7 @@
 title: Online a offline operace pokladního místa (POS)
 description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Dynamics 365 Commerce. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740675"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811195"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -44,7 +44,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 > [!NOTE]
 > Následující operace se vztahují na nejnovější verzi aplikace Commerce. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
 
-| ID   | Operace                                         | Popis                                                                                                                                                                                                    | Uživatelská operace?    | Obrazovka transakce | Uvítací obrazovka | K dispozici offline? | Specifické pro národní prostředí |
+| ID   | Operace                                         | Popis                                                                                                                                                                                                    | Uživatelské operace    | Obrazovka transakce | Uvítací obrazovka | K dispozici offline? | Specifické pro národní prostředí |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Prodej produktu                                      | Přidejte konkrétní produkt do transakce.                                                                                                                                                                    | Ano            | Ano                | Ano            | Ano               | Číslo              |
 | 101  | Kontrola ceny                                       | Vyhledejte cenu konkrétního produktu.                                                                                                                                        | Ano            | Ano                | Ano            | Ano               | Číslo              |
@@ -273,11 +273,11 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 1219 | Otevření adresy URL v POS                                   | Otevření správcem konfigurované adresy URL v POS.                                                                                                                                                                           | Ano            | Ano                | Ano            | Ano               | Číslo              |
 | 1220 | Správa trezoru                                       | Správa trezoru pro různé pokladny.                                                                                                                                                                       | Ano            | Ano                | Ano            | Ano               | Číslo              |
 | 1221 | Anulovat pozastavené transakce                       | Anuluje pozastavené transakce.                                                                                                                                                                               | Ano            | Ano                | Ano            | Ano               | Číslo              |
-| 1300 | Přeskočit fiskální registraci                          | Přeskočí fiskální registraci.                                                                                                                                                                                       | Ano            | Ano                | Ano            | Ano               | Ano             |
-| 1301 | Označit fiskální událost jako registrovanou                      |  Označí fiskální událost jako registrovanou.                                                                                                                                                                                  | Ano            | Ano                | Ano            | Ano               | Ano             |
-| 1302 | Dokončit proces fiskální registrace              | Dokončí proces fiskální registrace.                                                                                                                                                                           | Ano            | Ano                | Ano            | Ano               | Ano             |
-| 1303 | Přeskočit chybu kontroly stavu                           | Přeskočí chybu kontroly stavu.                                                                                                                                                                                        | Ano            | Ano                | Ano            | Ano               | Ano             |
-| 1304 |  Odložit fiskální registraci                     | Odložte fiskální registraci.                                                                                                                                                                                  | Ano            | Ano                | Ano            | Ano               | Ano             |
+| 1300 | Přeskočit fiskální registraci                          | Přeskočí fiskální registraci.                                                                                                                                                                                       | Číslo            | Číslo                | Číslo            | Ano               | Číslo             |
+| 1301 | Označit fiskální událost jako registrovanou                      |  Označí fiskální událost jako registrovanou.                                                                                                                                                                                  | Číslo            | Číslo                | Číslo            | Ano               | Číslo             |
+| 1302 | Dokončit proces fiskální registrace              | Dokončí proces fiskální registrace.                                                                                                                                                                           | Číslo            | Číslo                | Ano            | Ano               | Ano             |
+| 1303 | Přeskočit chybu kontroly stavu                           | Přeskočí chybu kontroly stavu.                                                                                                                                                                                        | Ano            | Ano                | Ano            | Ano               | Číslo             |
+| 1304 |  Odložit fiskální registraci                     | Odložte fiskální registraci.                                                                                                                                                                                  | Číslo            | Číslo                | Číslo            | Ano               | Číslo             |
 | 1400 | Správa kontrolních seznamů a úkolů                       | Spravuje kontrolní seznam zaměstnanců a úkoly.                                                                                                                                                                        | Číslo             | Číslo                 | Ano            | Číslo                | Číslo              |
 | 2000 | Správa plánu                               | Tato operace není ještě podporována.                                                                                                                                                                           | Ano            | Ano                | Ano            | Ne                | Ne              |
 | 2001 | Požadavky na plán                                 | Tato operace není ještě podporována.                                                                                                                                                                           | Ano            | Ano                | Ano            | Číslo                | Číslo              |

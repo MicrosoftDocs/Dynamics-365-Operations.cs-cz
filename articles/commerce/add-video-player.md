@@ -2,7 +2,7 @@
 title: Modul přehrávače videa
 description: Tohle téma se zabývá moduly přehrávače videa a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7ec2ea0f8360bbf1dffa023e4546e4deadb5ff9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731712"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780757"
 ---
 # <a name="video-player-module"></a>Modul videopřehrávače
 
@@ -76,18 +76,21 @@ Chcete-li přidat modul přehrávače videa na novou stránku a nastavit požado
 1. Přejděte na **Šablony** a poté volbou **Nová** vytvořte novou šablonu.
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona video přehrávače** a poté klikněte na tlačítko **OK**.
 1. V pozici **Tělo** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Výchozí stránka** a poté klikněte na tlačítko **OK**.
 1. V pozici **Hlavní** modulu **Výchozí stránka** vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Video přehrávač** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Videopřehrávač** a poté klikněte na tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte. 
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte šablonu video přehrávače, kterou jste vytvořili. V části **Název stránky** zadejte **Stránka video přehrávače** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vytvořit novou stránku** v části **Název stránka** zadejte **Stránku videopřehrávače** a poté vyberte **Další**.
+1. V položce **Vybrat šablonu** vyberte **Šablonu videopřehrávače**, kterou jste vytvořili, a pak vyberte **Další**.
+1. V části **Vyberte rozložení** vyberte rozložení stránky (např. **Flexibilní rozložení**) a poté vyberte **Další**.
+1. V části **Zkontrolovat a dokončit** zkontrolujte konfiguraci stránky. Pokud potřebujete upravit informace o stránce, vyberte **Zpět**. Pokud jsou informace o stránce správné, vyberte **Vytvořit stránku**.
 1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Video přehrávač** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Videopřehrávač** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu video přehrávače vyberte možnost **Přidat video**.
 1. V dialogovém okně **Výběr média** vyberte video a poté vyberte možnost **Odeslat novou mediální položku**.
 1. V Průzkumníkovi souborů vyberte soubor videa a pak vyberte možnost **Otevřít**.

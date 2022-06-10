@@ -2,7 +2,7 @@
 title: Modul záhlaví
 description: Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2707173eb4d5525437c22a2f236c7d5c588ea7c3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712783"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780303"
 ---
 # <a name="header-module"></a>Modul záhlaví
 
@@ -74,15 +74,15 @@ V motivu Adventure Works podporuje modul záhlaví vlastnost **Mobilní logo**. 
 Chcete-li vytvořit fragment záhlaví, postupujte následujícím způsobem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment** vyberte modul **Kontejner**, zadejte název fragmentu a poté klepněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat fragment** vyberte modul **Kontejner**, zadejte název fragmentu a poté klepněte na tlačítko **OK**.
 1. Vyberte pozici **Výchozí kontejner** a poté v podokně vlastností napravo nastavte vlastnost **Šířka** na **Vyplnit obrazovku**.
 1. V pozici **Výchozí kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte moduly **Souhlas se soubory cookie**, **Záhlaví** a **Propagační banner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Výběr modulů** vyberte moduly **Souhlas se soubory cookie**, **Záhlaví** a **Propagační banner** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu **Propagační banner** vyberte **Přidat zprávu** a potom vyberte **Zpráva**.
 1. V dialogovém okně **Zpráva** přidejte text a odkazy na propagační obsah a poté vyberte **OK**.
 1. V podokně vlastností modulu **Souhlas se soubory cookie** přidejte a nakonfigurujte text a odkaz na stránku ochrany osobních údajů webu.
 1. V pozici **Navigační nabídka** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Navigační nabídka** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Navigační nabídka** a poté klikněte na **OK**.
 1. V podokně vlastností modulu navigační nabídky v části **Zdroj pro navigační nabídku** vyberte **Server maloobchodu**.
 1. V podokně vlastností modulu navigační nabídky v části **Statické položky nabídky** vyberte **Přidat položku nabídky** a potom vyberte **Položka nabídky**. 
 1. V dialogovém okně **Položka nabídky** v části **Text položky nabídky** zadejte „Kontakt“.
@@ -90,10 +90,10 @@ Chcete-li vytvořit fragment záhlaví, postupujte následujícím způsobem.
 1. V dialogovém okně **Přidat odkaz** vyberte adresu URL pro stránku „Kontakt“ na webu a vyberte tlačítko **OK**.  
 1. V dialogovém okně **Položka nabídky** vyberte **OK**.
 1. V pozici **Vyhledávání** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Vyhledávání** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Vyhledat** a poté klikněte na **OK**.
 1. V podokně vlastností modulu vyhledávání dle potřeby nakonfigurujte vlastnosti.
 1. V pozici **Ikona nákupního košíku** modulu záhlaví vyberte tři tečky (**...**) a poté vyberte **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Ikona nákupního košíku** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Ikona košíku** a poté klikněte na **OK**.
 1. V podokně vlastností modulu ikony nákupního košíku dle potřeby nakonfigurujte vlastnosti. Pokud chcete, aby ikona nákupního košíku zobrazovala souhrn nákupního košíku (označovaný také jako mini košík), když na ni uživatelé umístí kurzor myši, vyberte **Zobrazit mini košík**.
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** jej publikujte.
 

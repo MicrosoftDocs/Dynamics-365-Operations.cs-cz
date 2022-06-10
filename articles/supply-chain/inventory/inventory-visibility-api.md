@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524458"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786858"
 ---
 # <a name="inventory-visibility-public-apis"></a>Veřejná rozhraní API Viditelnosti zásob
 
@@ -41,17 +41,22 @@ V následující tabulce jsou uvedeny rozhraní API, které jsou aktuálně k di
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Zaúčtovat | [Nastaví/přepíše množství na skladě](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Zaúčtovat | [Vytvoří jednu rezervační událost](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Zaúčtovat | [Vytvoří více rezervačních událostí](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Zaúčtovat | [Vytvoří jednu plánovanou změnu ve skladu](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Zaúčtovat | [Vytvoří více plánovaných změn ve skladu](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Zaúčtovat | [Vytvoří jednu plánovanou změnu ve skladu](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Zaúčtovat | [Vytvoří více plánovaných změn ve skladu](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Zaúčtovat | [Dotaz pomocí metody POST](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Získat | [Dotaz pomocí metody GET](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Zaúčtovat | [Vytvoří jednu událost přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Zaúčtovat | [Vytvoří jednu událost zrušení přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Zaúčtovat | [Vytvoří jednu událost změny přidělení](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Zaúčtovat | [Vytvoří jednu událost spotřeby](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Zaúčtovat | [Dotaz na výsledek přidělení](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Součástí cesty {environmentId} je ID prostředí v Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Hromadné API může vrátit maximálně 512 záznamů pro každý požadavek.
 
-Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Společnost Microsoft poskytla integrovanou kolekci požadavků *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Najděte koncový bod podle svého prostředí Lifecycle Services
 
@@ -84,7 +89,7 @@ Společnost Microsoft vytvořila uživatelské rozhraní (UI) v Power Apps, abys
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Ověřování
 
-Token zabezpečení platformy se používá k volání veřejného API Viditelnosti zásob. Proto musíte _token Azure Active Directory (Azure AD)_ vygenerovat pomocí vaší aplikace Azure AD. Poté musíte token Azure AD použít k získání _přístupového tokenu_ od služby zabezpečení.
+Token zabezpečení platformy se používá k volání veřejného API Viditelnosti zásob. Proto musíte token _token Azure Active Directory (Azure AD)_ vygenerovat pomocí aplikace Azure AD. Poté musíte token Azure AD použít k získání _přístupového tokenu_ od služby zabezpečení.
 
 Společnost Microsoft poskytuje integrovanou kolekci pro získání tokenů *Postman*. Tuto kolekci můžete importovat do svého softwaru *Postman* pomocí následujícího sdíleného odkazu: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -539,7 +544,7 @@ Následující příklad ukazuje ukázkový obsah těla.
 }
 ```
 
-Následující příklady ukazují, jak dotazovat všechny produkty na konkrétním pracovišti a umístění.
+Následující příklad ukazuje, jak dotazovat všechny produkty na konkrétním pracovišti a umístění.
 
 ```json
 {
@@ -580,6 +585,10 @@ Zde je ukázka adresy URL pro metodu GET. Tento GET požadavek je přesně stejn
 
 ## <a name="available-to-promise"></a>Lze slíbit (ATP)
 
-Viditelnost zásob vám umožní naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit. ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití výpočtu ATP může výrazně zvýšit vaši schopnost plnění objednávky. Informace o tom, jak povolit tuto funkci a jak interagovat s Viditelností zásob prostřednictvím jejího rozhraní API po aktivaci funkce, naleznete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md).
+Viditelnost zásob vám umožní naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit. ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití výpočtu ATP může výrazně zvýšit vaši schopnost plnění objednávky. Informace o tom, jak povolit tuto funkci a jak interagovat s Viditelností zásob prostřednictvím jejího rozhraní API po aktivaci funkce, naleznete v tématu [Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Přidělení
+
+API související s přidělením se nacházejí v [přidělování Viditelnosti zásob](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Zobrazení a aktualizace dat entity v aplikaci Excel
 description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics pro aplikaci Excel.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464930"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762618"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Zobrazení a aktualizace dat entity v aplikaci Excel 
 
@@ -110,7 +110,7 @@ Chcete-li upravit sloupce, které jsou automaticky přidány do listu, můžete 
 5. Pokud jste přidali pole (sloupec), zvolte **Aktualizovat** pro načtení aktualizované sady dat.
 
 ## <a name="change-the-publish-batch-size"></a>Změna velikosti dávky publikování
-Když uživatelé publikují změny datových záznamů pomocí doplňku Excel, aktualizace se odesílají v dávkách. Výchozí velikost dávky pro publikování je 100 řádků. Ve verzi 10.0.17 a novější vám funkce **Povolit konfiguraci velikosti dávky publikování v doplňku aplikace Excel** poskytuje flexibilní kontrolu nad velikostí dávky publikování.
+Když uživatelé publikují změny datových záznamů pomocí doplňku Excel, aktualizace se odesílají v dávkách. Výchozí (a maximální) velikost dávky pro publikování je 100 řádků; nicméně funkce **Povolit konfiguraci velikosti dávky publikování v doplňku aplikace Excel** vám poskytuje flexibilitu při snižování velikosti publikované dávky, zejména pokud při pokusu o publikování aktualizací z Excelu dochází k vypršení časového limitu.
 
 Správci systému mohou určit celosystémový limit velikosti dávky publikování pro sešity "Otevřít v aplikaci Excel" nastavením pole **Publikovat limit dávky** v části **Parametry aplikace** stránky **Parametry aplikace Office**.
 

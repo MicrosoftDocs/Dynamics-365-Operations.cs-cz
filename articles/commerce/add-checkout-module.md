@@ -2,7 +2,7 @@
 title: Modul pokladny
 description: Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 author: anupamar-ms
-ms.date: 08/31/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715499"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780507"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
@@ -91,14 +91,14 @@ Většina informací o pokladně, například dodací adresa a způsob dodání,
 Chcete-li přidat modul pokladny na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
 1. Přejděte na **Fragmenty** a volbou **Nový** vytvořte nový fragment.
-1. V dialogovém okně **Nový fragment** vyberte modul **Pokladna**.
+1. V dialogovém okně **Vybrat fragment** vyberte modul **Pokladna**.
 1. V části **Název fragmentu** zadejte název pro **Fragment pokladny** a poté vyberte **OK**.
 1. Vyberte pozici **Modul pokladny**.
 1. V podokně vlastností vpravo vyberte symbol tužky, do pole zadejte text záhlaví a poté zaškrtněte symbol zaškrtnutí.
 1. V pozici **Informace o pokladně** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte moduly **Dodací adresa**, **Možnosti dodání**, **Kontejner sekce pokladny** a **Kontaktní informace** a vyberte **OK**.
+1. V dialogovém okně **Výběr modulů** vyberte moduly **Dodací adresa**, **Možnosti dodání**, **Kontejner sekce pokladny** a **Kontaktní informace** a vyberte **OK**.
 1. V modulu **Kontejner sekce poklady** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte moduly **Dárkový poukaz**, **Věrnostní program** a **Platba** a poté klikněte na tlačítko **OK**. Tímto způsobem zajistíte, že se všechny způsoby platby budou v sekci zobrazovat společně.
+1. V dialogovém okně **Výběr modulů** vyberte moduly **Dárkový poukaz**, **Věrnostní program** a **Platba** a poté klikněte na tlačítko **OK**. Tímto způsobem zajistíte, že se všechny způsoby platby budou v sekci zobrazovat společně.
 1. Ve slotu **Smluvní podmínky**, přidejte **Platební podmínky** modul, pokud je to požadováno. V podokně vlastností modulu nakonfigurujte podle potřeby text podmínek.
 1. Vyberte možnost **Uložit** a poté vyberte možnost **Náhled**, chcete-li zobrazit náhled fragmentu. Některé moduly, které nemají kontext nákupního košíku, nemusí být v náhledu vykresleny.
 1. Chcete-li vrátit fragment se změnami, vyberte možnost **Dokončit úpravy** a volbou **Publikovat** ji publikujte.

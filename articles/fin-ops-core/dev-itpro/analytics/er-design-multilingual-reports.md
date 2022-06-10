@@ -2,7 +2,7 @@
 title: Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 description: Toto téma vysvětluje, jak můžete pomocí štítků elektronického výkaznictví (ER) navrhovat a generovat vícejazyčné zprávy.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313684"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811600"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Navrhujte vícejazyčné zprávy v elektronickém výkaznictví
 
@@ -217,6 +217,11 @@ Přeložené štítky budou importovány do vybrané konfigurace ER. Přeložen�
 Štítky komponenty ER, které lze upravit, jsou spolu s dalším obsahem komponenty uloženy v příslušné verzi konfigurace ER.
 
 Na popisy základní komponenty ER lze odkazovat v odvozené verzi komponenty ER, kterou vytvoříte, aby se zavedly vaše modifikace.
+
+> [!TIP]
+> Když navrhujete řešení ER, můžete odvodit svoji vlastní součást [datového modelu](er-overview-components.md#data-model-component) ER z té, která je k dispozici. V tomto odvozeném datovém modelu můžete zavést své vlastní štítky ER a použít je ve všech formátech ER, které budou používat datový model jako zdroj dat. Poté si můžete odvodit vlastní součást [formátu](er-overview-components.md#format-component) ER z té, která je poskytnuta, výběrem vašeho odvozeného datového modelu ER namísto poskytnutého. Ve verzi 10.0.28 a pozdější můžete povolit funkci **Vylepšený přístup k popiskům vzestupného datového modelu elektronického výkaznictví** pro přístup k popiskům vzestupného datového modelu elektronického výkaznictví, i když jste se datový model elektronického výkaznictví, který jste vybrali pro odvozenou součást ER, liší od toho, který byl použit v základní komponentě elektronického výkaznictví.
+>
+> Když je ve vaší odvozené komponentě a jejích vzestupných komponentách použit stejný název štítku, použije se váš překlad tohoto štítku jako nejrelevantnější.
 
 Verze verzí ER řídí přiřazení štítku k libovolnému atributu v komponentě ER. Změny přiřazení štítků jsou zaznamenány v seznamu změn (delta) editovatelné komponenty ER, která byla vytvořena jako odvozená verze poskytované komponenty ER. Tyto změny budou ověřeny, jakmile bude odvozená verze znovu převedena na novou základní verzi.
 

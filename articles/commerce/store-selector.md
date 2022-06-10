@@ -3,7 +3,7 @@ title: Modul volby obchodu
 description: Tohle téma se zabývá modulem volby obchodu a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710773"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780632"
 ---
 # <a name="store-selector-module"></a>Modul volby obchodu
 
@@ -138,23 +138,26 @@ Chcete-li nakonfigurovat modul pro výběr úložiště tak, aby zobrazoval dost
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona marketingu** a poté klikněte na tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona marketingu**. V části **Název stránky** zadejte **Umístění obchodu** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vytvořit novou stránku** v části **Název stránky** zadejte **Umístění obchodů** a poté vyberte **Další**.
+1. V části **Vyberte šablonu** vyberte vytvořenou položku **Marketingová šablona** a poté vyberte **Další**.
+1. V části **Vyberte rozložení** vyberte rozložení stránky (např. **Flexibilní rozložení**) a poté vyberte **Další**.
+1. V části **Zkontrolovat a dokončit** zkontrolujte konfiguraci stránky. Pokud potřebujete upravit informace o stránce, vyberte **Zpět**. Pokud jsou informace o stránce správné, vyberte **Vytvořit stránku**. 
 1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner se 2 sloupci** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vyberte moduly** vyberte modul **Kontejner se 2 sloupci** a poté klikněte na tlačítko **OK**.
 1. V podokně vlastností modulu nastavte hodnotu **Šířka** na **Vyplnit kontejner**.
 1. Nastavte hodnotu **Konfigurace portu s velmi malým zobrazením** na **100%**.
 1. Nastavte hodnotu **Konfigurace portu s malým zobrazením** na **100%**.
 1. Nastavte hodnotu **Konfigurace portu se středním zobrazením** na **33% 67%**.
 1. Nastavte hodnotu **Konfigurace portu s velkým zobrazením** na **33% 67%**.
 1. V pozici **Kontejner se 2 sloupci** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Volba obchodu** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Výběr obchodů** a poté klikněte na **OK**.
 1. V podokně vlastností modulu nastavte hodnotu **Režim** na **Najít obchody**.
 1. Nastavte hodnotu v poli **Poloměr vyhledávání** v mílích.
 1. Podle potřeby nastavte další vlastnosti, například **Nastavit jako preferovaný obchod**, **Zobrazit všechny obchody**, a **Povolit automatické návrhy**.
 1. V pozici **Kontejner se 2 sloupci** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Mapa** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Mapa** a poté klikněte na **OK**.
 1. V podokně vlastností modulu nastavte podle potřeby další vlastnosti.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
  

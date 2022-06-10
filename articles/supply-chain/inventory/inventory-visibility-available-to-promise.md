@@ -2,7 +2,7 @@
 title: Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit
 description: Toto téma popisuje, jak naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit (ATP).
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525878"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763246"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit
 
@@ -32,9 +32,12 @@ Předtím, než začnete používat ATP, musíte nastavit jedno nebo více vypo�
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Nastavení vypočítaných měr pro množství ATP
 
-*Vypočítaná míra ATP* je předem definovaná vypočítaná míra, která se obvykle používá k nalezení aktuálně dostupného množství. Součet jejího množství modifikátoru sčítání je množství nabídky a součet jejího množství modifikátoru odečítání je množství poptávky.
+*Vypočítaná míra ATP* je předem definovaná vypočítaná míra, která se obvykle používá k nalezení aktuálně dostupného množství. *Dodávané množství* je součet množství těch fyzikálních měr, které mají typ modifikátoru *sčítání* a *poptávkové množství* je součet množství těch fyzikálních měr, které mají typ modifikátoru *odčítání*.
 
-Pro výpočet množství ATP můžete přidat více vypočtených měr. Celkový počet modifikátorů ve všech vypočtených mírách ATP by však měl být menší než devět.
+Pro výpočet více množství ATP můžete přidat více vypočtených měr. Celkový počet jedinečných fyzických měr ve všech vypočtených mírách ATP by však měl být menší než devět.
+
+> [!IMPORTANT]
+> Vypočítaná míra je složením fyzických měr. Její vzorec může zahrnovat pouze fyzické míry bez duplicit, nikoli vypočítané míry.
 
 Můžete vytvářet například následující vypočítanou míru:
 
@@ -43,6 +46,12 @@ Můžete vytvářet například následující vypočítanou míru:
 Součet (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) představuje nabídku a součet (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) představuje poptávku. Proto lze vypočítanou míru chápat takto:
 
 **Dostupné na skladě** = *Nabídka* – *Poptávka*
+
+Pro výpočet množství ATP **Fyzicky na skladě** můžete přidat další vypočítanou míru.
+
+**Fyzicky na skladě** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+K těmto dvěma vypočteným měrám ATP existuje osm různých fyzických měr: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* a *Outbound*.
 
 Další informace o vypočítaných mírách naleznete v tématu [Vypočítané míry](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Například zadáte objednávku na 10 kol a očekáváte, že dorazí zítra. Pr
 
 Když zašlete dotaz do aplikace Viditelnost zásob na množství na skladě a ATP, vrátí následující informace pro každý den v období plánu:
 
-- **Datum** – Datum, na který se výsledek vztahuje.
+- **Datum** – Datum, na který se výsledek vztahuje. Časové pásmo je koordinovaný světový čas (UTC).
 - **Množství na skladě** – Skutečné množství na skladě pro zadané datum. Tento výpočet se provádí podle vypočítané míry ATP, která je konfigurována pro Viditelnost zásob.
 - **Plánovaná dodávka** – Součet všech plánovaných příchozích množství, která nebyla fyzicky k dispozici pro okamžitou spotřebu nebo odeslání k určenému datu.
 - **Plánovaná poptávka** – Součet všech plánovaných odchozích množství, která nebyla spotřebována nebo odeslána k určenému datu.
@@ -132,7 +141,7 @@ Výsledky v tomto příkladu ukazují hodnotu *očekávané množství na sklad�
 
     - Množství poptávky 15 na 4. února 2022
     - Množství dodávky 1 na 5. února 2022
-    - Množství poptávky 3 na 6. února 2022
+    - Množství dodávky 3 na 6. února 2022
 
     Následující tabulka zobrazuje výsledek.
 
@@ -190,8 +199,8 @@ Následující adresy URL aplikačního programovacího rozhraní (API) můžete
 
 | Cesta | Metoda | Popis |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Vytvoří jednu plánovanou změnu množství na skladě. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Vytvoří více plánovaných změn množství na skladě. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Vytvoří jednu plánovanou změnu množství na skladě. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Vytvoří více plánovaných změn množství na skladě. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Vytvoří jednu událost změny množství na skladě. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Vytvoří více změnových událostí. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Dotaz používající metodu `POST`. |
@@ -199,31 +208,46 @@ Následující adresy URL aplikačního programovacího rozhraní (API) můžete
 
 Další informace viz [Veřejná rozhraní API Viditelnosti zásob](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Odeslání plánů změn na skladě
+### <a name="create-one-on-hand-change-schedule"></a>Vytvoření jednoho plánu změny množství na skladě
 
-Plány změn množství na skladě se provádějí odesláním požadavku `POST` na příslušnou adresu URL služby Viditelnost zásob (viz sekce [Odeslání plánů změn, událostí změn a dotazů ATP prostřednictvím rozhraní API](#api-urls)). Můžete také odesílat hromadné požadavky.
+Plán změny množství na skladě se provádí odesláním požadavku `POST` na příslušnou adresu URL služby Viditelnost zásob (viz sekce [Odeslání plánů změn, událostí změn a dotazů ATP prostřednictvím rozhraní API](#api-urls)). Můžete také odesílat hromadné požadavky.
 
-Chcete-li odeslat plán změn na skladě, musí tělo požadavku obsahovat ID organizace, ID produktu, plánované datum a množství podle data. Naplánované datum musí být mezi aktuálním datem a koncem aktuálního plánovacího období.
+Plán změny množství na skladě musí být vytvořen jen pokud je plánované datum mezi aktuálním datem a koncem aktuálního plánovacího období. Formát data a času by měl být *rok-měsíc-den* (například **2022-02-01**). Formát času musí být přesný pouze na den.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Příklad těla požadavku, který obsahuje jednu aktualizaci
+Toto API vytvoří jeden plán změny množství na skladě.
 
-Následující příklad ukazuje tělo požadavku, který obsahuje jednu aktualizaci.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+Následující příklad ukazuje ukázkový obsah těla bez `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Příklad těla požadavku, který obsahuje více (hromadných) aktualizací
+### <a name="create-multiple-on-hand-change-schedules"></a>Vytvoření více plánů množství na skladě
 
-Následující příklad ukazuje tělo požadavku, který obsahuje více (hromadných) aktualizací.
+Toto API může vytvářet více záznamů současně. Jediné rozdíly mezi tímto API a API pro jednu událost jsou hodnoty `Path` a `Body`. U tohoto API obsahuje `Body` pole záznamů. Maximální počet záznamů je 512. Rozhraní API pro hromadné plánování změn množství na skladě proto může podporovat až 512 naplánovaných změn najednou.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+Následující příklad ukazuje ukázkový obsah těla.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Odeslání událostí změn ve skladu
+### <a name="create-on-hand-change-events"></a>Vytvoření událostí změn ve skladu
 
 Události změn množství na skladě se provádějí odesláním požadavku `POST` na příslušnou adresu URL služby Viditelnost zásob (viz sekce [Odeslání plánů změn, událostí změn a dotazů ATP prostřednictvím rozhraní API](#api-urls)). Můžete také odesílat hromadné požadavky.
 
 > [!NOTE]
-> Události změny na skladě nejsou jedinečnou součástí funkce ATP, ale jsou součástí standardního API aplikace Viditelnost skladu. Tento příklad byl začleněn, protože události jsou při práci s ATP relevantní. Události změny na skladě se podobají rezervacím změn na skladě, ale zprávy událostí musejí být odeslány na jinou adresu URL API a události používají v těle zprávy parametr `quantities` namísto `quantityByDate`. Další informace o událostech změny na skladě a dalších funkcích rozhraní API aplikace Viditelnost skladu naleznete v části [Veřejná rozhraní API aplikace Viditelnost skladu](inventory-visibility-api.md).
-
-Chcete-li odeslat událost změny na skladě, musí tělo požadavku obsahovat ID organizace, ID produktu, plánované datum a množství podle data. Naplánované datum musí být mezi aktuálním datem a koncem aktuálního plánovacího období.
+> Události změny na skladě nejsou jedinečnou součástí funkce ATP, ale jsou součástí standardního API aplikace Viditelnost skladu. Tento příklad byl začleněn, protože události jsou při práci s ATP relevantní. Události změny na skladě se podobají rezervacím změn na skladě, ale zprávy událostí musejí být odeslány na jinou adresu URL API a události používají v těle zprávy parametr `quantities` namísto `quantityByDate`. Další informace o událostech změny na skladě a dalších funkcích rozhraní API aplikace Viditelnost skladu naleznete v části [Veřejná rozhraní API aplikace Viditelnost skladu](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Následující příklad ukazuje tělo požadavku, který obsahuje jednu událost změny na skladě.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ V požadavku nastavte parametr `QueryATP` na *true*, pokud se chcete dotazovat n
 - Pokud požadavek odesíláte metodou `POST`, nastavte tento parametr v těle požadavku.
 
 > [!NOTE]
-> Bez ohledu na to, zda je v těle požadavku parametr `returnNegative` nastaven na *true* nebo *false*, bude výsledek obsahovat záporné hodnoty, když se dotazujete na plánované změny na skladě a výsledky ATP. Tyto záporné hodnoty budou zahrnuty, protože pokud jsou plánovány pouze objednávky poptávky, nebo pokud jsou dodávaná množství menší než poptávaná množství, budou plánované změny na skladě záporné. Pokud by záporné hodnoty nebyly zahrnuty, výsledky by byly matoucí. Další informace o této možnosti a o tom, jak funguje u jiných typů dotazů, naleznete v části [Veřejná rozhraní API aplikace Viditelnost skladu](inventory-visibility-api.md).
+> Bez ohledu na to, zda je v těle požadavku parametr `returnNegative` nastaven na *true* nebo *false*, bude výsledek obsahovat záporné hodnoty, když se dotazujete na plánované změny na skladě a výsledky ATP. Tyto záporné hodnoty budou zahrnuty, protože pokud jsou plánovány pouze objednávky poptávky, nebo pokud jsou dodávaná množství menší než poptávaná množství, budou plánované změny na skladě záporné. Pokud by záporné hodnoty nebyly zahrnuty, výsledky by byly matoucí. Další informace o této možnosti a o tom, jak funguje u jiných typů dotazů, naleznete v části [Veřejná rozhraní API aplikace Viditelnost skladu](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Příklad metody POST
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 Následující příklad ukazuje, jak vytvořit tělo požadavku, které lze odeslat do aplikace Viditelnosti skladu metodou `POST`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Příklad metody GET
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 Následující příklad ukazuje, jak vytvořit adresu URL požadavku jako požadavek `GET`.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Výsledek tohoto požadavku `GET` je přesně stejný jako výsledek požadavku `POST` v předchozím příkladu.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688113"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809606"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Často kladené dotazy ke sloučení infrastruktiry Dynamics 365 Human Resources
 
@@ -131,6 +131,9 @@ Záleží na koncovém bodě integrace. Další informace o integračních techn
 Pokud jsou prostředí Dynamics 365 Human Resources a Finance and Operations, která budou spojena v prostředí na nové infrastruktuře, připojena ke stejnému prostředí Dataverse, budou obě aplikace nadále připojeny ke stejnému prostředí Dataverse po migraci. U žádného rozšíření Dataverse proto není nutná žádná migrace.
 
 Pokud jsou však prostředí Dynamics 365 Human Resources a Finance and Operations aktuálně spojena do oddělených prostředí Dataverse, obě prostředí Dataverse bude třeba zkombinovat, aby byly připojeny k jednomu prostředí na nové infrastruktuře. Pro tuto migraci Dataverse mohou být tabulky Dataverse, které jsou standardem řešení Human Resources, připojeny a znovu synchronizovány s novým prostředím Dataverse. Žádná rozšíření prostředí Dataverse nebudou migrována automaticky, ale musí být znovu nasazena v novém prostředí. Ke správě svých rozšíření Dataverse doporučujeme použít spravovaná řešení. Další informace viz [Úvod do řešení](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Využili jsme funkce vlastního pole v rámci Dynamics 365 Human Resources, budou tato vlastní pole migrovat automaticky?
+Ano, vlastní pole, která byla přidána, migrují do nové infrastruktury.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Nakonfigurovali jsme toky Microsoft Power Automate a/nebo Microsoft Power Apps pro práci s Dynamics 365 Human Resources. Budou tyto komponenty Microsoft Power Platform migrovány a fungují automaticky po dokončení změny infrastruktury?
 

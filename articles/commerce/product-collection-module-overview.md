@@ -2,7 +2,7 @@
 title: Moduly kolekce produktů
 description: V tomto tématu je uveden přehled modulů kolekcí produktů v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984537"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780402"
 ---
 # <a name="product-collection-modules"></a>Moduly kolekce produktů
 
@@ -70,11 +70,14 @@ Modul kolekce produktů podporuje [modul rychlého zobrazení](quick-view-module
 Přidání modulu kolekce produktů do stránky kategorie provedete následovně.
 
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte stejnou šablonu, jaká byla použita na výchozí stránce kategorie. V části **Název stránky** zadejte příslušný název a vyberte **OK**.
+1. V dialogovém okně **Vytvořit novou stránku** v části **Název stránky** zadejte vhodný název stránky a poté vyberte **Další**.
+1. V části **Zvolte šablonu** vyberte stejnou šablonu, jaká byla použita na výchozí stránce kategorie, a poté vyberte **Další**.
+1. V části **Vyberte rozložení** vyberte rozložení stránky (např. **Flexibilní rozložení**) a poté vyberte **Další**.
+1. V části **Zkontrolovat a dokončit** zkontrolujte konfiguraci stránky. Pokud potřebujete upravit informace o stránce, vyberte **Zpět**. Pokud jsou informace o stránce správné, vyberte **Vytvořit stránku**. 
 1. V pozici **Dílčí zápatí** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kolekce produkt** a poté klikněte na tlačítko **OK**.  
+1. V dialogovém okně **Vyberte moduly** vyberte modul **Kolekce produkt** a poté klikněte na tlačítko **OK**.  
 1. V podokně vlastnosti modulu kolekce produktů vyberte možnost **Přidat seznam produktů**.
 1. V dialogovém okně **Vybrat konfiguraci seznamu produktů** vyberte typ seznamu, zdroj seznamu a zadejte počet položek. Nakonfigurujte jakékoli další možnosti dostupné pro typ seznamu. Další informace o typech seznamu naleznete v následující tabulce. 
 1. Vyberte **OK**.

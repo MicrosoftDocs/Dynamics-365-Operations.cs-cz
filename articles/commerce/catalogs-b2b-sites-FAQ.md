@@ -2,19 +2,19 @@
 title: Nejčastější dotazy k obchodním katalogům pro B2B
 description: Toto téma poskytuje odpovědi na nejčastější dotazy týkající se katalogů Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 776820e8e77cd0884b3df5412bb95e6e80ca4fc7
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656829"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782855"
 ---
 # <a name="commerce-catalogs-for-b2b-faq"></a>Nejčastější dotazy k obchodním katalogům pro B2B
 
@@ -25,7 +25,7 @@ Toto téma poskytuje odpovědi na nejčastější dotazy týkající se [busines
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Proč nemohu konfigurovat hierarchii navigace specifickou pro katalog nebo zobrazit možnost přidružení hierarchie zákazníka?
 
-Ujistěte se, že je povolena funkce **Povolit použití více katalogů na maloobchodních kanálech** v pracovním prostoru **Správa funkcí** centrály Commerce. Dále zkontrolujte, že vaše prostředí používá verzi Commerce 10.0.26 nebo novější.
+Ujistěte se, že je povolena funkce **Povolit použití více katalogů na maloobchodních kanálech** v pracovním prostoru **Správa funkcí** centrály Commerce. Dále zkontrolujte, že vaše prostředí používá verzi Commerce 10.0.27 nebo novější.
 
 ## <a name="can-i-view-the-catalog-specific-hierarchy-and-enrich-category-pages-in-commerce-site-builder"></a>Mohu zobrazit hierarchii specifickou pro katalog a rozšířit stránky kategorií v nástroji Commerce Site Builder?
 

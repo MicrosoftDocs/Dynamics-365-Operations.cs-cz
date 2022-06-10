@@ -2,35 +2,32 @@
 title: Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL
 description: Toto téma popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694333"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811024"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Toto téma popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
 
-Stránku elektronického obchodování lze nakonfigurovat tak, aby zobrazovala různý obsah na základě segmentu v cestě URL. Proto se stránka nazývá dynamická stránka. Segment se používá jako parametr k načtení obsahu stránky. Například stránka s názvem **blog\_viewer** je vytvořena a přidružena k adrese URL `https://fabrikam.com/blog`. Tuto stránku lze poté použít k zobrazení jiného obsahu na základě posledního segmentu v cestě URL. Například poslední segment v adrese URL `https://fabrikam.com/blog/article-1` je **article-1**.
+Stránku elektronického obchodování lze nakonfigurovat tak, aby zobrazovala různý obsah na základě segmentu v cestě URL. Proto se stránka nazývá dynamická stránka. Segment se používá jako parametr k načtení obsahu stránky. Například stránka vytvořená v nástroji pro tvorbu webů s názvem **blog\_viewer** je namapována na adresu URL `https://fabrikam.com/blog`. Tuto stránku lze poté použít k zobrazení jiného obsahu na základě posledního segmentu v cestě URL. Například poslední segment v adrese URL `https://fabrikam.com/blog/article-1` je **article-1**.
 
-Samostatné vlastní stránky, které přepisují dynamickou stránku, lze také přidružit k segmentům v cestě URL. Například stránka s názvem **blog\_summery** je vytvořena a přidružena k adrese URL `https://fabrikam.com/blog/about-this-blog`. Je-li tato adresa URL požadována, stránka **blog\_summary** stránka, která je přidružena k parametru **/about-this-blog**, je vrácena namísto stránky **blog\_viewer**.
+Také můžete přepsat segment parametrizované adresy URL stránkou v nástroji pro tvorbu webů. Například stránka vytvořená v nástroji pro tvorbu webů s názvem **blog\_summary** může být namapována na adresu URL `https://fabrikam.com/blog/about-this-blog`. Je-li tato adresa URL `https://fabrikam.com/blog` požadována se segmentem `/about-this-blog` na konci, obsah stránky **blog\_summary** je vrácen namísto segmentu `/about-this-blog`, který je interpretován jako parametr, který se používá na stránce `https://fabrikam.com/blog`. 
+
+Při výběru názvů pro parametry, které mají být předány dynamické stránce, název dynamické stránky, jak je uveden v adrese URL (`/blog` ve výše uvedeném příkladu), nelze použít jako název parametru nebo podřetězec názvu parametru. 
 
 > [!NOTE]
 > Funkce pro hostování, načítání a zobrazování dynamického obsahu stránky je implementována pomocí vlastního modulu. Další informace viz [Rozšíření online kanálu](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Chcete-li nakonfigurovat cestu k dynamické stránce v nástroji pro tvorbu web
 1. V části **Parametrizované cesty URL** vyberte **Přidat** a poté zadejte cestu URL, kterou jste zadali při vytváření adresy URL (v tomto příkladu **/blog**).
 1. Vyberte možnost **Uložit a publikovat**.
 
-Po nakonfigurování trasy všechny požadavky na cestu parametrizované adresy URL vrátí stránku, která je přidružena k této adrese URL. Pokud nějaké požadavky obsahují další segment, vrátí se přidružená stránka a obsah stránky se načte pomocí segmentu jako parametru. Například `https://fabrikam.com/blog/article-1` vrátí stránku **blog\_summary** a její obsah se načte pomocí parametru **/article-1**.
+Po nakonfigurování trasy všechny požadavky na cestu parametrizované adresy URL vrátí stránku, která je přidružena k této adrese URL. Pokud nějaké požadavky obsahují další segment, vrátí se přidružená stránka a obsah stránky se načte pomocí segmentu jako parametru. Například `https://fabrikam.com/blog/article-1` vrátí stránku `https://fabrikam.com/blog` a zobrazí obsah, který načte pomocí parametru **/article-1**.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Přepsání parametrizované adresy URL vlastní stránkou
 

@@ -2,7 +2,7 @@
 title: Mobilní pracovní prostor schvalování nákupních objednávek
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení nákupní objednávky, který umožňuje zobrazit nákupní objednávky a odpovědět na ně prostřednictvím akce. Nákupní objednávky můžete například schválit nebo odmítnout.
 author: GalynaFedorova
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32c22d582c0af03482767d335b824ccbe81ee607
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b0bdcb2f6db95ae061e786365d22cdf74643d09e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674302"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811805"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilní pracovní prostor schvalování nákupních objednávek
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Schválení nákupní objednávky**. Tento pracovní prostor vám umožní zobrazit nákupní objednávky a reagovat na ně pomocí akcí. Nákupní objednávky můžete například schválit nebo odmítnout.
  

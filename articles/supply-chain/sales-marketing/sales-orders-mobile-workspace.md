@@ -2,7 +2,7 @@
 title: Mobilní pracovní prostor prodejních objednávek
 description: Toto téma obsahuje informace o mobilním pracovním prostoru Prodejní objednávky. Tento pracovní prostor vám pomáhá mít aktuální přehled o prodejních objednávkách kdekoliv a kdykoliv.
 author: Henrikan
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3a746ae5d7f0c6ca2fd8e69a23114cfcaa24b16b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: be9fd32f5f5d80bb9bce5f0de7e4ff92d6f5d28f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675002"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811560"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobilní pracovní prostor prodejních objednávek
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Prodejní objednávky**. Tento pracovní prostor vám pomáhá mít aktuální přehled o prodejních objednávkách kdekoliv a kdykoliv. 
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations.
+Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations (Dynamics 365).
 
 ## <a name="overview"></a>Přehled
 Mobilní pracovní prostor **Prodejní objednávky** umožňuje zobrazit podrobné informace o jednotlivých prodejních objednávkách. Tyto informace zahrnují stav objednávky, kontaktní informace odběratele a kontaktní informace pro příjemce objednávky. Mobilní pracovní prostor **prodejních objednávek** poskytuje okamžitý přehled o prodejních objednávkách. Můžete zobrazit všechny prodejní objednávky, prodejní objednávky podle zákazníka nebo informace o konkrétní prodejní objednávce. 
@@ -117,7 +118,7 @@ Pokud je ve vaší organizaci nasazena aplikace Dynamics 365 for Operations verz
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations (Dynamics 365):
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

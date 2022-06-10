@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 2c2d79c9ea36c42cfc0f6ba0d3c81d063d8d9446
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323918"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782169"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Potlačit ovládací prvky obsahu Word v generovaných sestavách
 
@@ -26,7 +26,7 @@ ms.locfileid: "8323918"
 
 Chcete-li generovat sestavy jako dokumenty Microsoft Word, musíte navrhnout šablonu pro zprávy jako dokument aplikace Word. Tato šablona musí obsahovat ovládací prvky obsahu Word jako zástupné symboly pro data, která budou vyplněna za běhu. Chcete-li použít vytvořený dokument Word jako šablonu pro své sestavy, můžete [nakonfigurovat](er-design-configuration-word.md) nové [řešení](er-quick-start1-new-solution.md) [elektronického výkaznictví (ER)](general-electronic-reporting.md). Řešení musí obsahovat [konfiguraci](general-electronic-reporting.md#Configuration) ER, která obsahuje komponentu formát ER. Tento formát ER musí být nakonfigurován pro použití navržené šablony pro generování sestav.
 
-Ve verzi 10.0.6 a novější Dynamics 365 Finance můžete nakonfigurovat vzorce ve formátu ER tak, aby potlačily některé ovládací prvky obsahu Word v generovaných dokumentech.
+Ve verzi Dynamics 365 Finance 10.0.6 a novější můžete nakonfigurovat vzorce ve formátu ER tak, aby potlačily některé ovládací prvky obsahu Word v generovaných dokumentech.
 
 Následující kroky vysvětlují, jak může uživatel, který je přiřazen správci systému nebo roli konzultanta funkčních elektronických zpráv, nakonfigurovat formát ER, který generuje sestavy jako soubory aplikace Word a potlačuje některé ovládací prvky obsahu v generovaných sestavách, které byly konfigurovány pomocí šablony Word.
 
@@ -47,7 +47,7 @@ Po dokončení kroků v těchto průvodcích úkoly jsou připraveny následují
 
 Musíte si také stáhnout a uložit následující šablonu pro vzorovou sestavu:
 
-- [Vázaná šablona 2 sestavy platby (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [Vázaná šablona 2 sestavy platby (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a name="review-the-downloaded-word-template"></a><a id="tag-control"></a>Kontrola stažené šablony Wordu
 

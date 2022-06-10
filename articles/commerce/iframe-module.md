@@ -2,7 +2,7 @@
 title: Modul iframe
 description: Tohle téma se zabývá modulem iframe a popisuje, jak jej přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eeb9d76367be6b2d2153578f6358594b807382ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754007"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780227"
 ---
 # <a name="iframe-module"></a>Modul iFrame
 
@@ -56,12 +56,15 @@ Chcete-li na stránku přidat modul iframe a zobrazit externí video, postupujte
 1. V dialogovém okně **Nová šablona** v části **Název šablony** zadejte **Šablona marketingu** a poté klikněte na tlačítko **OK**.
 1. Chcete-li vrátit šablonu se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
 1. Přejděte na **Stránky** a volbou **Nová** vytvořte novou stránku.
-1. V dialogovém okně **Zvolte šablonu** vyberte šablonu **Šablona marketingu**. V části **Název stránky** zadejte **Stránka marketingu** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vytvořit novou stránku** v části **Název stránky** zadejte **Stránka marketingu** a poté vyberte **Další**.
+1. V části **Vyberte šablonu** vyberte vytvořenou položku **Marketingová šablona** a poté vyberte **Další**.
+1. V části **Vyberte rozložení** vyberte rozložení stránky (např. **Flexibilní rozložení**) a poté vyberte **Další**.
+1. V části **Zkontrolovat a dokončit** zkontrolujte konfiguraci stránky. Pokud potřebujete upravit informace o stránce, vyberte **Zpět**. Pokud jsou informace o stránce správné, vyberte **Vytvořit stránku**. 
 1. V pozici **Hlavní** na nové stránce vyberte tlačítko se třemi tečkami (**...**) a vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **Kontejner** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **Kontejner** a poté klikněte na **OK**.
 1. V podokně vlastností modulu nastavte hodnotu **Šířka** na **Vyplnit kontejner**.
 1. V pozici **Kontejner** vyberte tři tečky (**...**) a poté vyberte možnost **Přidat modul**.
-1. V dialogovém okně **Přidat modul** vyberte modul **iframe** a poté klikněte na tlačítko **OK**.
+1. V dialogovém okně **Vybrat moduly** vyberte modul **iframe** a poté klikněte na **OK**.
 1. V podokně vlastností modulu nastavte hodnotu **Cílová adresa URL** externí adresy URL videa.
 1. Nastavte další vlastnosti, například **Nadpis** a **Výška**, dle potřeby.
 1. Chcete-li vrátit stránku se změnami, vyberte možnost **Uložit**, pak **Dokončit úpravy** a volbou **Publikovat** ji publikujte.
