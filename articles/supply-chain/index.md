@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487856"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789205"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
@@ -58,7 +58,7 @@ Pro více informací o Dynamics 365 Finance přejděte na [domovskou stránku ap
 
 Toto krátké video shrnuje nové funkce správy dodavatelsko-odběratelského řetězce přidané do verze 8.0 aplikace Microsoft Dynamics 365 for Finance and Operations (duben 2018).
 
-- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 Tato krátká videa shrnují nové funkce správy dodavatelsko-odběratelského řetězce přidané do aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017).
 
@@ -98,7 +98,7 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blog
 ## <a name="white-papers"></a>Dokumenty white paper
 
 - [Lean Manufacturing: příslib na základě ověření dostupné kapacity a plánování kanbanové úlohy](/dynamics/s-e/)
-- [Výpočet kusovníku pomocí nákladového formuláře](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Výpočet kusovníku pomocí nákladového formuláře](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
 

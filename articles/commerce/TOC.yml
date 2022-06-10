@@ -12,6 +12,8 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_aplikace Commerce"
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.28 (červenec 2022)
+                  href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (červenec 2022)
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (květen 2022)
@@ -1300,6 +1302,10 @@
               items:
                 - name: Vytvoření stránek s vlastní odpovědí pro chyby kódu stavu 4xx/5xx
                   href: build-pages-400-500-errors.md
+            - name: Integrace služeb
+              items:
+                - name: Integrace Customer Voice do stránek webu elektronického obchodu
+                  href: customer-voice-integration.md
         - name: Ochrana proti podvodům
           items:
             - name: Integrace Dynamics 365 Fraud Protection s aplikací Dynamics 365 Commerce
@@ -2118,6 +2124,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Použití zdrojů dat SHROMAŽĎOVÁNÍ DAT ve formátech elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Použití zdrojů dat USER INPUT PARAMETER pro určení parametrů sestavy, kterou chcete vygenerovat'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Ladění zdrojů dat
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace datových modelů
@@ -2728,6 +2736,8 @@
                               href: e-commerce-extensibility/interactive-components.md
                             - name: Napodobení stavu přihlášení během místního vývoje
                               href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Nastavení přenosu ověřování webového rozhraní API pomocí Azure Active Directory B2C
+                              href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
                             - name: Konfigurace zobrazení vlastností modulu na základě kontextu
                               href: e-commerce-extensibility/configure-properties-context.md
                             - name: Globalizace modulů pomocí třídy CultureInfoFormatter
@@ -2944,6 +2954,8 @@
                   href: troubleshoot/items-without-inventory-checked-out.md
                 - name: 'Upřesnění hodnocení se zobrazí ve výsledcích vyhledávání a na stránkách kategorií, pokud není povoleno řešení pro hodnocení a recenze'
                   href: troubleshoot/hide-ratings-refiner.md
+                - name: Mezisoučet souhrnu objednávek nezahrnuje daně z poplatků při použití přizpůsobených modulů souhrnu objednávek
+                  href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
             - name: Správa zákazníků
               items:
                 - name: 'Uvítací e-mail se neodesílá, když jsou vytvořeni noví zákazníci'

@@ -14,9 +14,11 @@
               items:
                 - name: "Domovská stránka Co je nového a\_co se změnilo u\_nástroje Platform Updates"
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizace Platform Update pro verzi 10.0.27 (červenec 2022)
+                - name: Platform updates for version 10.0.28 (srpen 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: Platform updates for version 10.0.27 (červenec 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Aktualizace Platform Update pro verzi 10.0.26 (květen 2022)
+                - name: Platform updates for version 10.0.26 (květen 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Nástroj Platform Updates pro verzi 10.0.25 (duben 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
@@ -1018,11 +1020,13 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Restart služeb prostředí
               href: lifecycle-services/restart-environment-services.md
-            - name: Sestava výpadku výroby
+            - name: Aktualizace správce prostředí
+              href: lifecycle-services/update-environment-admin.md
+            - name: Nahlášení výpadku výroby
               href: lifecycle-services/report-production-outage.md
             - name: Sledování přihlášení uživatelů
               href: lifecycle-services/user-logins.md
-            - name: Knihovna prostředků
+            - name: Knihovna materiálů
               href: lifecycle-services/asset-library.md
             - name: Řešení problémů s výkonností pomocí nástrojů v LCS
               href: lifecycle-services/performancetroubleshooting.md
@@ -1266,6 +1270,8 @@
               items:
                 - name: Přehled doplňků
                   href: power-platform/add-ins-overview.md
+            - name: Vytváření mobilních prostředí
+              href: power-platform/build-mobile-experiences.md
             - name: "Zásady a\_komunikace"
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobilní platforma
