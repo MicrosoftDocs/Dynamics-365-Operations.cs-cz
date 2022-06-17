@@ -1,6 +1,6 @@
 ---
 title: Distribuovaná správa objednávek (DOM)
-description: Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
+description: Tento článek popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878505"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 Commerce.
 
 Distribuovaná správa objednávek je omnikanálové řešení, které optimalizuje a maximalizuje vyřizování objednávek v síti dodavatelského řetězce. Díky distribuované správě objednávek budou vašim zákazníkům dodány produkty ve správném množství, ze správných zdrojů a ve správný čas. Mimo to vám distribuovaná správa objednávek pomůže maximalizovat zisky, minimalizovat náklady a plnit požadavky na úrovni služeb.
 

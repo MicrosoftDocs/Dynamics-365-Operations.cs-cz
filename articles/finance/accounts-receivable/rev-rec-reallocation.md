@@ -1,6 +1,6 @@
 ---
 title: Opětovné přidělení uznání výnosů
-description: Toto téma popisuje opětovné přidělení, které organizacím umožňuje přepočítat výnosové ceny při změně podmínek smluvního prodeje. Téma obsahuje odkazy na další témata, která popisují, jak uznat výnosy v různých situacích.
+description: Tento článek popisuje opětovné přidělení, které organizacím umožňuje přepočítat výnosové ceny při změně podmínek smluvního prodeje. Téma obsahuje odkazy na další témata, která popisují, jak uznat výnosy v různých situacích.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903413"
 ---
 # <a name="revenue-recognition-reallocation"></a>Opětovné přidělení uznání výnosů
 
@@ -58,7 +58,7 @@ Proces opětovného přidělení ovlivňuje jeden parametr.
 
 Protože opětovné přidělení lze provést pro částečně nebo plně fakturovanou prodejní objednávku, všechny předchozí účetní položky faktury musí být opraveny pomocí nových, opětovně přidělených výnosových cen. Tato oprava spočívá ve stornování účetní položky původní faktury a zaúčtováním nové účetní položky na základě opětovně přidělených výnosových cen.
 
-Každá organizace se musí rozhodnout, zda má oprava aktualizovat pouze hlavní knihu, nebo také pohledávky. Přijaté rozhodnutí určí vhodné nastavení možnosti **Zaúčtovat opravy faktur do pohledávek při opětovném přidělení** na kartě **Uznání výnosů** na stránce **Parametry hlavní knihy** (**Uznání výnosů \> Nastavení \> Parametry hlavní knihy**). Příslušná nastavení závisí na konkrétní situaci. Další informace o možných situacích získáte pod odkazy v sekci [Scénáře, kdy lze použít opětovné přidělení](#scenarios-for-reallocation) dále v tomto tématu.
+Každá organizace se musí rozhodnout, zda má oprava aktualizovat pouze hlavní knihu, nebo také pohledávky. Přijaté rozhodnutí určí vhodné nastavení možnosti **Zaúčtovat opravy faktur do pohledávek při opětovném přidělení** na kartě **Uznání výnosů** na stránce **Parametry hlavní knihy** (**Uznání výnosů \> Nastavení \> Parametry hlavní knihy**). Příslušná nastavení závisí na konkrétní situaci. Další informace o možných situacích získáte pod odkazy v sekci [Scénáře, kdy lze použít opětovné přidělení](#scenarios-for-reallocation) dále v tomto článku.
 
 [![Karta Uznání výnosů na stránce Parametry hlavní knihy](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Proces opětovného přidělení spustíte tlačítkem **Opětovné přidělení
 
 [![Opětovné přidělení ceny k novým řádkům objednávky](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Horní mřížka na stránce **Opětovné přidělení ceny k novým řádkům objednávky** je pojmenována **Prodej**. Tato mřížka obsahuje seznam prodejních objednávek odběratele. Vyberte prodejní objednávky, které je třeba opětovně přidělit. Pokud má prodejní objednávka ID opětovného přidělení, už byla označena pro opětovné přidělení jiným uživatelem. Pokud byly jedna nebo více prodejních objednávek dříve opětovně přiděleny a musí být zahrnuty do jiného opětovného přidělení, musí být opětovné přidělení těchto prodejních objednávek nejprve zrušeno. Poté mohou být zahrnuty do nového opětovného přidělení. Podrobnější informace najdete v částech [Vrátit zpět opětovné přidělení](#undo-a-reallocation) a [Opakovaně provést opětovné přidělení](#reallocate-multiple-times) dále v tomto tématu.
+Horní mřížka na stránce **Opětovné přidělení ceny k novým řádkům objednávky** je pojmenována **Prodej**. Tato mřížka obsahuje seznam prodejních objednávek odběratele. Vyberte prodejní objednávky, které je třeba opětovně přidělit. Pokud má prodejní objednávka ID opětovného přidělení, už byla označena pro opětovné přidělení jiným uživatelem. Pokud byly jedna nebo více prodejních objednávek dříve opětovně přiděleny a musí být zahrnuty do jiného opětovného přidělení, musí být opětovné přidělení těchto prodejních objednávek nejprve zrušeno. Poté mohou být zahrnuty do nového opětovného přidělení. Podrobnější informace najdete v částech [Vrátit zpět opětovné přidělení](#undo-a-reallocation) a [Opakovaně provést opětovné přidělení](#reallocate-multiple-times) dále v tomto článku.
 
 Dolní mřížka na stránce je pojmenována **Řádky**. Když v mřížce **Prodej** vyberete jednu nebo více prodejních objednávek, mřížka **Řádky** zobrazí řádky prodejní objednávky. Vyberte řádky prodejní objednávky, které je třeba opětovně přiřadit. Pokud jste vybrali pouze jednu prodejní objednávku, řádky na totožné prodejní objednávce musejí být znovu přiděleny. K této situaci může dojít, když byl jeden z řádků prodejní objednávky dříve fakturován a poté byl přidán nový řádek, nebo byl odebrán či zrušen existující řádek. Pokud byl řádek odebrán, v mřížce se nezobrazí, a proto jej nelze vybrat. Po spuštění procesu opětovného přidělení však bude stále brán v potaz.
 

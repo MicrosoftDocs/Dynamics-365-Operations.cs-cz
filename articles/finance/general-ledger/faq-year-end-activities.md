@@ -1,6 +1,6 @@
 ---
 title: Časté dotazy k aktivitám na konci roku
-description: Toto téma uvádí otázky, které mohou vyvstat při uzavírání roku, a odpovědi, které mohou pomoci s činnostmi při roční uzávěrce.
+description: Tento článek uvádí otázky, které mohou vyvstat při uzavírání roku, a odpovědi, které mohou pomoci s činnostmi při roční uzávěrce.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865733"
 ---
 # <a name="year-end-activities-faq"></a>Časté dotazy k aktivitám na konci roku 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí otázky, které mohou vyvstat při uzavírání roku, a odpovědi, které mohou pomoci s činnostmi při roční uzávěrce. Informace v tomto tématu se primárně zaměřují na otázky ohledně aktivit roční uzávěrky pro hlavní knihu a závazky.
+Tento článek uvádí otázky, které mohou vyvstat při uzavírání roku, a odpovědi, které mohou pomoci s činnostmi při roční uzávěrce. Informace v tomto článku se primárně zaměřují na otázky ohledně aktivit roční uzávěrky pro hlavní knihu a závazky.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Vylepšení roční uzávěrky v hlavní knize 
 Verze 10.0.20 zavedla vylepšení roční uzávěrky, které je ve výchozím nastavení povoleno počínaje verzí 10.0.25. Pokud vaše organizace používá verzi starší než 10.0.25, doporučujeme tuto funkci povolit před zahájením procesu uzávěrky na konci roku. Než můžete použít tuto funkci, musíte ji zapnout ve svém systému. Správci mohou pomocí pracovního prostoru Správa funkcí zkontrolovat stav funkce a zapnout ji v případě potřeby. Funkce je zde uvedena následujícím způsobem:
@@ -75,7 +75,7 @@ Nepotřebné sady dimenzí také ovlivní dávkovou úlohu **BudgetDimensionFocu
 [![Sady finančních dimenzí](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfigurace šablon roční uzávěrky
-Šablona roční uzávěrky umožňuje organizacím zvolit úroveň finanční dimenze, která se má zachovat při převodu zůstatků zisků a ztrát do nerozděleného zisku. Nastavení umožňují organizaci uchovat podrobné finanční dimenze při přesunu zůstatků do nerozděleného zisku (**Zavřít vše**) nebo shrnout částky do jedné hodnoty dimenze (**Zavřít jednu**). Lze to definovat pro každou finanční dimenzi. Další informace o těchto nastaveních najdete v tématu [Roční uzávěrka](year-end-close.md).
+Šablona roční uzávěrky umožňuje organizacím zvolit úroveň finanční dimenze, která se má zachovat při převodu zůstatků zisků a ztrát do nerozděleného zisku. Nastavení umožňují organizaci uchovat podrobné finanční dimenze při přesunu zůstatků do nerozděleného zisku (**Zavřít vše**) nebo shrnout částky do jedné hodnoty dimenze (**Zavřít jednu**). Lze to definovat pro každou finanční dimenzi. Další informace o těchto nastaveních najdete v článku [Roční uzávěrka](year-end-close.md).
 
 Pro zlepšení výkonu doporučujeme vyhodnotit požadavky vaší organizace a pomocí možnosti roční uzávěrky **Zavřít jednu** zavřít co nejvíce dimenzí. Při zavření jedné hodnoty dimenze (což může být také prázdná hodnota) systém počítá méně podrobností při rozhodování o zůstatcích pro účetní položky nerozděleného zisku.
 

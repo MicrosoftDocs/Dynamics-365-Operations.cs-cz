@@ -1,6 +1,6 @@
 ---
 title: Přidání polí do sešitu aplikace Excel pro úpravu maloobchodních transakcí
-description: Toto téma popisuje, jak přidat pole do sešitu aplikace Microsoft Excel, abyste mohli upravovat maloobchodní transakce v Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak přidat pole do sešitu aplikace Microsoft Excel, abyste mohli upravovat maloobchodní transakce v Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 359d4c360238db746402321a82f825f0d2c9a88a012800c5455d453e3a8bda73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2abf121f42d8196e52ef98f1dcb4f6b6d9004140
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725451"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867805"
 ---
 # <a name="add-fields-to-an-excel-workbook-to-edit-retail-transactions"></a>Přidání polí do sešitu aplikace Excel pro úpravu maloobchodních transakcí
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak přidat pole do sešitu aplikace Microsoft Excel, abyste mohli upravovat maloobchodní transakce v Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak přidat pole do sešitu aplikace Microsoft Excel, abyste mohli upravovat maloobchodní transakce v Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 

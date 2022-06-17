@@ -1,6 +1,6 @@
 ---
 title: Změna zúčtovací měny nebo měny vykazování
-description: Toto téma vysvětluje, jak změnit zúčtovací měnu nebo měnu vykazování nebo jak přidat měnu vykazování k nastavení hlavní knihy.
+description: Tento článek vysvětluje, jak změnit zúčtovací měnu nebo měnu vykazování nebo jak přidat měnu vykazování k nastavení hlavní knihy.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904607"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Změna zúčtovací měny nebo měny vykazování
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak změnit zúčtovací měnu nebo měnu vykazování nebo jak přidat měnu vykazování k nastavení hlavní knihy.
+Tento článek vysvětluje, jak změnit zúčtovací měnu nebo měnu vykazování nebo jak přidat měnu vykazování k nastavení hlavní knihy.
 
 ## <a name="symptom"></a>Příznak
 
@@ -73,7 +73,7 @@ Pomocí těchto kroků zkopírujte nastavení a hlavní data z aktuální prá
 10. V oblasti **Vybrané entity** vyberte možnost **Přidat šablonu**.
 11. Vyberte, které šablony se použijí. Navrhované šablony pro novou právnickou osobu zahrnují **025 - Hlavní kniha** a **Finance**. Doporučujeme vám zkontrolovat všechny ostatní dostupné šablony, abyste zjistili, zda by šly některé použít pro vaše požadavky.
 12. Výběrem možnosti **Kopírování do právnické osoby** spusťte dávkové zpracování, které vytvoří vybrané entity a zkopíruje je do cílové právnické osoby.
-13. Po dokončení procesu, ale před zaúčtováním jakékoli transakce, přejděte do hlavní knihy a aktualizujte zúčtovací měnu a měnu vykazování, jak je popsáno výše v tomto tématu.
+13. Po dokončení procesu, ale před zaúčtováním jakékoli transakce, přejděte do hlavní knihy a aktualizujte zúčtovací měnu a měnu vykazování, jak je popsáno výše v tomto článku.
 
 Pokud jste vytvořili novou právnickou osobu, abyste mohli zúčtovací měnu nebo měnu vykazování změnit, ověřte, zda jsou počáteční zůstatky převedeny z měn staré právnické osoby na nové měny.
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 99083ae30de147d8c0c8d60edc858a31c26bee0be0c65019423f4f4696af2218
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 757eb6aa1a8debfde28bcba1f46ca8bc54b57b64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895220"
 ---
 > [!IMPORTANT]
-> Některá vylepšení zmíněná v tomto tématu jsou k dispozici pro cílové uživatele, kteří se rozhodli pro program CAAP (Continuous Auto-update Advantage Program). Další informace o standardních a cílených verzích naleznete v tématu [Dostupnost aktualizací služby](../get-started/public-preview-releases.md).
+> Některá vylepšení zmíněná v tomto článku jsou k dispozici pro cílové uživatele, kteří se rozhodli pro program CAAP (Continuous Auto-update Advantage Program). Další informace o standardních a cílených verzích naleznete v tématu [Dostupnost aktualizací služby](../get-started/public-preview-releases.md).

@@ -1,6 +1,6 @@
 ---
 title: Nastavení uznání výnosů
-description: Toto téma popisuje možnosti nastavení pro uznání výnosů a jejich dopady.
+description: Tento článek popisuje možnosti nastavení pro uznání výnosů a jejich dopady.
 author: kweekley
 ms.date: 04/28/2022
 ms.topic: index-page
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 86690af303eb87335c980bd7dae3ae34ce06a2a0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ef294af8d3a8f39a80b98aeba293267dcca1f29b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900006"
 ---
 # <a name="revenue-recognition-setup"></a>Nastavení uznání výnosů
 [!include [banner](../includes/banner.md)]
 
-Byl přidán nový modul **Uznání výnosů**, který obsahuje položky nabídky pro veškerá požadovaná nastavení. Toto téma popisuje možnosti nastavení a jejich dopady.
+Byl přidán nový modul **Uznání výnosů**, který obsahuje položky nabídky pro veškerá požadovaná nastavení. Tento článek popisuje možnosti nastavení a jejich dopady.
 
 > [!NOTE]
 > Funkci uznání výnosů je nyní povolena ve výchozím nastavení pomocí správy funkcí. Pokud vaše organizace tuto funkci nepoužívá, můžete ji vypnout v pracovním prostoru **Správa funkcí**.

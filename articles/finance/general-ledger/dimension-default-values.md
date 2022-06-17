@@ -1,6 +1,6 @@
 ---
 title: Výchozí finanční dimenze ve finančních denících
-description: Toto téma popisuje pravidla, která definují, jak se nastavují hodnoty finanční dimenze u transakcí zadávaných prostřednictvím finančních deníků. Obsahuje také podrobnosti pro scénáře, kde se používají pevné dimenze.
+description: Tento článek popisuje pravidla, která definují, jak se nastavují hodnoty finanční dimenze u transakcí zadávaných prostřednictvím finančních deníků. Obsahuje také podrobnosti pro scénáře, kde se používají pevné dimenze.
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907915"
 ---
 # <a name="default-financial-dimensions-on-financial-journals"></a>Výchozí finanční dimenze ve finančních denících
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje pravidla, která definují, jak se nastavují hodnoty finanční dimenze u transakcí zadávaných prostřednictvím finančních deníků (ale ne prostřednictvím skladových deníků nebo projektových deníků). Obsahuje také podrobnosti pro scénáře, kde se používají pevné dimenze.
+Tento článek popisuje pravidla, která definují, jak se nastavují hodnoty finanční dimenze u transakcí zadávaných prostřednictvím finančních deníků (ale ne prostřednictvím skladových deníků nebo projektových deníků). Obsahuje také podrobnosti pro scénáře, kde se používají pevné dimenze.
 
 ## <a name="symptom"></a>Příznak
 

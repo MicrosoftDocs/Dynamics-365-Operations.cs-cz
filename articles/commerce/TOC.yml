@@ -58,6 +58,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Předběžný a následný servis
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: Zastavení aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Získání upozornění na aktualizace služeb
@@ -394,6 +396,8 @@
                   items:
                     - name: Aplikace Store Commerce
                       href: dev-itpro/store-commerce.md
+                    - name: Migrace moderního POS do Store Commerce
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Průvodce implementací správy zařízení
                       href: implementation-considerations-devices.md
                     - name: Výběr mezi Store Commerce a Cloud POS
@@ -2222,6 +2226,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Řešení problémů s výkonem v konfiguracích elektronického výkaznictví
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Snížení počtu polí tabulky, která se načítají za běhu'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: Správa obchodních dokumentů (BDM)
                   items:
                     - name: Přehled BDM
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Migrace starší verze sady Retail SDK
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 'Zastaralé a odstraněné rozhraní API, třídy a metody'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Modernizace technologického zásobníku Commerce v obchodě (dokument white paper)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Nastavení prostředí
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Vytvoření balíčku rozšíření Cloud Scale Unit
                       href: dev-itpro/CSU-packaging.md
+                    - name: Sloučení balíčků rozšíření Cloud Scale Unit pro nasazení
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Odebrání rozšíření Cloud Scale Unit
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Řešení potíží
           items:
+            - name: Store Commerce
+              items:
+                - name: Problémy s nastavením a instalací
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Problémy s výkonem
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Problémy s rozšířením
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Zpracování objednávky
               items:
                 - name: Chyba „Typ platby musí být kreditní karta“

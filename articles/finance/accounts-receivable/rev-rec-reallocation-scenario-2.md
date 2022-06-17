@@ -1,6 +1,6 @@
 ---
 title: Opětovné přidělení uznání výnosů – scénář 2
-description: Toto téma se zabývá scénářem opětovného přidělení, kdy jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
+description: Tento článek se zabývá scénářem opětovného přidělení, kdy jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4026b8c69e51cb33c64bcf71a62a13b28b86bd49
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904837"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Opětovné přidělení uznání výnosů – scénář 2
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma se zabývá scénářem opětovného přidělení, kdy jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
+Tento článek se zabývá scénářem opětovného přidělení, kdy jsou zadány dvě prodejní objednávky a po fakturaci první z nich odběratel přidá položku do smlouvy. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
 
 V tomto scénáři je možnost **Zaúčtovat opravy faktur do pohledávek při opětovném přidělení** na kartě **Uznání výnosů** na stránce **Parametry hlavní knihy** (**Uznání výnosů \> Nastavení \> Parametry hlavní knihy**) nastavena na **Ne**.
 

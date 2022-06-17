@@ -1,6 +1,6 @@
 ---
 title: Uznání výnosů na prodejních objednávkách
-description: Toto téma popisuje základní funkci pro uznání výnosů na prodejních objednávkách a fakturách. Uznání výnosů je k dispozici na prodejních objednávkách a příslušné faktuře, která je vytvořena z prodejní objednávky.
+description: Tento článek popisuje základní funkci pro uznání výnosů na prodejních objednávkách a fakturách. Uznání výnosů je k dispozici na prodejních objednávkách a příslušné faktuře, která je vytvořena z prodejní objednávky.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725477"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899950"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Uznání výnosů na prodejních objednávkách
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725477"
 > [!NOTE]
 > Funkci uznání výnosů nelze zapnout prostřednictvím správy funkcí. V současné době ji aktivujete pomocí konfiguračních klíčů.
 
-Toto téma popisuje základní funkci pro uznání výnosů na prodejních objednávkách a fakturách. Uznání výnosů je k dispozici na prodejní objednávce a příslušné faktuře, která je vytvořena z prodejní objednávky. Prodejní objednávku lze rovněž vytvořit prostřednictvím projektů určených materiálem a časem.
+Tento článek popisuje základní funkci pro uznání výnosů na prodejních objednávkách a fakturách. Uznání výnosů je k dispozici na prodejní objednávce a příslušné faktuře, která je vytvořena z prodejní objednávky. Prodejní objednávku lze rovněž vytvořit prostřednictvím projektů určených materiálem a časem.
 
 > [!NOTE]
-> Na ilustracích v tomto tématu byly sloupce skryty nebo přidány do mřížky, aby se lépe zobrazily koncepty. Stránky a data na obrázcích se proto mohou lišit od toho, co vidíte v produktu.
+> Na ilustracích v tomto článku byly sloupce skryty nebo přidány do mřížky, aby se lépe zobrazily koncepty. Stránky a data na obrázcích se proto mohou lišit od toho, co vidíte v produktu.
 
 ## <a name="enter-a-sales-order"></a>Zadání prodejní objednávky
 

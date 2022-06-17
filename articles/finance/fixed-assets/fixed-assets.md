@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Dlouhodobý majetek
-description: Toto téma poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance.
+description: Tento článek poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880809"
 ---
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance. Dlouhodobý majetek jsou položky s hodnotou, které vlastní jednotlivec nebo organizace. Položky zahrnují budovy, vozidla, pozemky a vybavení. 
+Tento článek poskytuje přístup ke zdrojům, které vám mohou pomoci používat Dlouhodobý majetek pro Microsoft Dynamics 365 Finance. Dlouhodobý majetek jsou položky s hodnotou, které vlastní jednotlivec nebo organizace. Položky zahrnují budovy, vozidla, pozemky a vybavení. 
 
 Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a spravovat ho odepisováním a nastavením prahu kapitalizace, podle nějž se určují odpisy. Můžete rovněž vypočítat úpravy dlouhodobého majetku a zadat informaci o jeho vyřazení. Při používání hlavní knihy spolu s dlouhodobým majetkem můžete zobrazit aktuální hodnotu veškerého dlouhodobého majetku. Způsob zpracování dlouhodobého majetku musí odpovídat jak mezinárodním účetním normám, tak legislativě účetnictví v každé zemi nebo regionu. Požadavky mohou zahrnovat pravidla pro zaznamenávání pořizovacích a vyřazovacích transakcí, odpisů, životnost a zvýšení či snížení hodnoty dlouhodobého majetku. Funkce dlouhodobého majetku již mnoho z těchto norem a pravidel obsahuje.
 

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075390"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865825"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentace pro aplikaci Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
-Zjistěte, jak můžete pro svůj obchod využít aplikace Finance and Operations pomocí zdrojů uvedených v tomto tématu. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
+Zjistěte, jak můžete pro svůj obchod využít aplikace Finance and Operations pomocí zdrojů uvedených v tomto článku. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
 
 Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Commerce a Dynamics 365 Human Resources. 
 
@@ -58,7 +58,7 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Comm
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Použití aktualizací na cloudová prostředí</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurace aktualizací služby</a></p>
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Zastavení aktualizací služby</a></p>
-<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Informujte se o aktualizacích služeb</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Získání upozornění na aktualizace služeb</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatizace datové úlohy</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 

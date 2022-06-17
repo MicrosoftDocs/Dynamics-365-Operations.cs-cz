@@ -1,6 +1,6 @@
 ---
 title: Vylepšené zpracování položek sledovaných dávkou
-description: Toto téma popisuje vylepšené zpracování položek sledovaných dávkou během procesu zaúčtování příkazu. Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje vylepšené zpracování položek sledovaných dávkou během procesu zaúčtování příkazu. Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881871"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Vylepšené zpracování položek sledovaných dávkou
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje vylepšené zpracování položek sledovaných dávkou během procesu zaúčtování příkazu. Microsoft Dynamics 365 Commerce.
+Tento článek popisuje vylepšené zpracování položek sledovaných dávkou během procesu zaúčtování příkazu. Microsoft Dynamics 365 Commerce.
 
 Na Dynamics 365 Commerce pokladním místě (POS) nelze zaznamenat čísla dávek pro položky sledované dávkou v okamžiku prodeje. Nicméně pro konkrétní konfigurace při zaúčtování prodejů v Commerce Headquarters prostřednictvím objednávek zákazníků nebo zaúčtování příkazů očekává aplikace Commerce, že platná čísla dávky pro položky sledované dávkou existují, a že budou použity během procesu fakturace.
 

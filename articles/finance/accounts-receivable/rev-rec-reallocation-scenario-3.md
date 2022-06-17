@@ -1,6 +1,6 @@
 ---
 title: Opětovné přidělení uznání výnosů – scénář 3
-description: Toto téma popisuje scénář opětovného přidělení, kdy je do existující fakturované prodejní objednávky přidán nový řádek. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
+description: Tento článek popisuje scénář opětovného přidělení, kdy je do existující fakturované prodejní objednávky přidán nový řádek. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904809"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Opětovné přidělení uznání výnosů – scénář 3
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje scénář opětovného přidělení, kdy je do existující fakturované prodejní objednávky přidán nový řádek. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky. Tento scénář také ukazuje, co se stane, když jsou kvůli opětovnému přidělení aktualizovány pohledávky.
+Tento článek popisuje scénář opětovného přidělení, kdy je do existující fakturované prodejní objednávky přidán nový řádek. Je-li do smlouvy přidána nová položka, lze ji přidat buď do nové, nebo do existující prodejní objednávky. Tento scénář také ukazuje, co se stane, když jsou kvůli opětovnému přidělení aktualizovány pohledávky.
 
 V tomto scénáři je možnost **Zaúčtovat opravy faktur do pohledávek při opětovném přidělení** na kartě **Uznání výnosů** na stránce **Parametry hlavní knihy** (**Uznání výnosů \> Nastavení \> Parametry hlavní knihy**) nastavena na **Ano**.
 

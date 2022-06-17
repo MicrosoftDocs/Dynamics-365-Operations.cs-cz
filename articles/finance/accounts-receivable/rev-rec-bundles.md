@@ -1,6 +1,6 @@
 ---
 title: Sady pro uznání výnosů
-description: Toto téma popisuje funkci sady, která je součástí funkce uznání výnosů v pohledávkách. Sada obsahuje nadřazenou položku a několik položek komponent.
+description: Tento článek popisuje funkci sady, která je součástí funkce uznání výnosů v pohledávkách. Sada obsahuje nadřazenou položku a několik položek komponent.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876289"
 ---
 # <a name="revenue-recognition-bundles"></a>Sady pro uznání výnosů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkci sady, která je součástí funkce uznání výnosů v pohledávkách. Sada obsahuje nadřazenou položku a několik položek komponent. Nadřazená položka se nachází na prodejní objednávce, takže je zadání objednávky efektivnější. Poté je však rozbalena do položek komponent. Položky komponent jsou uvedeny v interních dokumentech, například na dodacím listě. Externí dokumenty však obsahují pouze nadřazenou položku.
+Tento článek popisuje funkci sady, která je součástí funkce uznání výnosů v pohledávkách. Sada obsahuje nadřazenou položku a několik položek komponent. Nadřazená položka se nachází na prodejní objednávce, takže je zadání objednávky efektivnější. Poté je však rozbalena do položek komponent. Položky komponent jsou uvedeny v interních dokumentech, například na dodacím listě. Externí dokumenty však obsahují pouze nadřazenou položku.
 
 > [!NOTE]
 > Kanály Microsoft Dynamics 365 Commerce, jako je kanál online, pokladní místo (POS) nebo kontaktní středisko, nepodporují uznání výnosů (včetně funkce sady). To platí i pro řešení Zpeněžení potenciálního odběratele pro Dynamics 365 Supply Chain Management a Dynamics 365 Sales. Položky využívající uznání výnosů nesmí být přidány na objednávky nebo do transakcí vytvořených v kanálech Commerce nebo v řešení Zpeněžení potenciálního odběratele.

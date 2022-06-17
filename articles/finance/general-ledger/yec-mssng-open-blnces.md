@@ -1,6 +1,6 @@
 ---
 title: Chybějící počáteční zůstatky roční uzávěrky
-description: Toto téma vysvětluje, proč mohou při uzavírání roku chybět počáteční zůstatky a jak tyto zůstatky znovu vytvořit, pokud chybí.
+description: Tento článek vysvětluje, proč mohou při uzavírání roku chybět počáteční zůstatky a jak tyto zůstatky znovu vytvořit, pokud chybí.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894841"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Chybějící počáteční zůstatky roční uzávěrky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, proč mohou při uzavírání roku chybět počáteční zůstatky a jak tyto zůstatky znovu vytvořit, pokud chybí.
+Tento článek vysvětluje, proč mohou při uzavírání roku chybět počáteční zůstatky a jak tyto zůstatky znovu vytvořit, pokud chybí.
 
 ### <a name="symptom"></a>Příznak
 
@@ -36,7 +36,7 @@ Zde je třeba zkontrolovat, zda jste provedli roční uzávěrku v hlavní kniz
 
 Pokud je pole **Vrátit zpět předchozí uzávěrku** nastaveno na **Ano**, dojde ke stornování předchozí roční uzávěrky pro stejný fiskální rok. Při spuštění procesu stornování roční uzávěrky se odstraní všechny záznamy pro konečné a počáteční zůstatky, jako kdyby roční uzávěrka nikdy neproběhla. Odstraní se i doklady. Proces roční uzávěrky se znovu automaticky nespustí. Celý proces je třeba spustit znovu, ale tentokrát s aktualizovaným nastavením **Vrátit zpět předchozí uzávěrku** na **Ne**.
 
-Tomuto scénáři se věnují časté dotazy na téma roční uzávěrky. Další informace viz [Časté dotazy k aktivitám na konci roku](faq-year-end-activities.md).
+Tomuto scénáři se věnuje článek s častými dotazy na téma roční uzávěrky. Další informace viz [Časté dotazy k aktivitám na konci roku](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Příznak
 

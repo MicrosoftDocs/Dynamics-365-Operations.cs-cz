@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Supply Chain Management
-description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
+description: Tato stránka uvádí seznam článků nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879069"
 ---
 # <a name="supply-chain-management-home-page"></a>Domovská stránka Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje seznam témat nápovědy a dalších zdrojů v Dynamics 365 Supply Chain Management.
+Tento článek uvádí seznam článků nápovědy a dalších zdrojů v Dynamics 365 Supply Chain Management.
 
 ## <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
@@ -93,7 +93,7 @@ Následující záznamy technické konference se zabývají funkcemi správy dod
 
 ## <a name="blogs"></a>Blogy
 
-Výrobě a správě dodavatelského řetězce se věnuje spousta témat v [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](/archive/blogs/axmfg/) a v [blogu tým výzkumu a vývoje Supply Chain Management v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Většina jich je napsána pro předchozí verzi, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné.
+Výrobě a správě dodavatelského řetězce se věnuje spousta článků v [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](/archive/blogs/axmfg/) a v [blogu tým výzkumu a vývoje Supply Chain Management v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Většina jich je napsána pro předchozí verzi, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné.
 
 ## <a name="white-papers"></a>Dokumenty white paper
 

@@ -1,6 +1,6 @@
 ---
 title: Domovská stránka Závazků
-description: Toto téma poskytuje přehled závazků.
+description: Tento článek obsahuje přehled závazků.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595279"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946094"
 ---
 # <a name="accounts-payable-home-page"></a>Domovská stránka Závazků
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled závazků. 
+Tento článek obsahuje přehled závazků. 
 
 Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou cestou prostřednictvím datové entity. Poté, co jsou faktury zadány nebo přijaty, můžete zkontrolovat a schválit faktury pomocí deníku schválených faktur nebo stránky **Faktura dodavatele**. Můžete použít párování faktur, zásady faktur dodavatele a workflow k automatizaci procesu kontroly tak, aby se automaticky schvalovaly faktury, které splňují určitá kritéria, a zbývající faktury se označily ke kontrole autorizovaným uživatelem.
 
@@ -126,13 +126,13 @@ Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](/dynamics
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o závazcích a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Názory, novinky a jiné informace o závazcích a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance – Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci Dynamics 365.
 
 #### <a name="community-blogs"></a>Blogy komunity
 
-[Správa závazků v Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Jak spravovat závazky v Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
