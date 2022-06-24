@@ -1,6 +1,6 @@
 ---
 title: Zobrazení výkazu zásob a ukazatele KPI podle objektů nákladů
-description: Toto téma vysvětluje, jak zobrazit výkaz zásob a ukazatele KPI podle objektů nákladů.
+description: Tento článek vysvětluje, jak zobrazit výkaz zásob a ukazatele KPI podle objektů nákladů.
 author: JennySong-SH
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c4a53abcbc66abb6ce8a81c2e9f1dcbd7be75a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a3e83b03e4d6c82b256faa9b8a25218517d1553
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850808"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Zobrazení výkazu zásob a ukazatele KPI podle objektů nákladů
 

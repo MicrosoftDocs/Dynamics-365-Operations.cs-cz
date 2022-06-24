@@ -1,6 +1,6 @@
 ---
 title: Práce se serializovanými položkami v POS
-description: Toto téma vysvětluje, jak spravovat serializované položky v aplikaci pokladního místa (POS).
+description: Tento článek vysvětluje, jak spravovat serializované položky v aplikaci pokladního místa (POS).
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880022"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Práce se serializovanými položkami v POS
 
 [!include [banner](includes/banner.md)]
 
-Mnoho prodejců prodává výrobky, které vyžadují sériovou kontrolu. Tyto produkty jsou označovány jako *serializované položky*. Někteří prodejci mohou chtít udržovat sériová čísla zásob v obchodě nebo skladu pro účely sledování. Ostatní prodejci mohou chtít během procesu prodeje zachytit sériová čísla pro účely servisu a záruky. Toto téma vysvětluje, jak můžete spravovat serializované položky v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
+Mnoho prodejců prodává výrobky, které vyžadují sériovou kontrolu. Tyto produkty jsou označovány jako *serializované položky*. Někteří prodejci mohou chtít udržovat sériová čísla zásob v obchodě nebo skladu pro účely sledování. Ostatní prodejci mohou chtít během procesu prodeje zachytit sériová čísla pro účely servisu a záruky. Tento článek vysvětluje, jak můžete spravovat serializované položky v aplikaci pokladního místa (POS) Microsoft Dynamics 365 Commerce.
 
 ## <a name="serial-number-configurations"></a>Konfigurace sériového čísla
 
@@ -124,7 +124,7 @@ U serializovaných položek prodaných pro budoucí vyzvednutí nebo odeslání 
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Použijte sériová čísla během plnění nebo vyzvednutí objednávky zákazníka
 
-Při plnění řádků objednávek zákazníků pro serializované produkty pomocí operace **Plnění objednávek** v POS, POS vynucuje zachycení sériového čísla před konečným plněním. Pokud tedy sériové číslo nebylo poskytnuto během počátečního zachycení objednávky, musí být zachyceno během procesu vyzvednutí, zabalení nebo odeslání v POS. Ověření se provádí v každém kroku a uživatel bude požádán o údaje o sériovém čísle, pouze pokud chybí nebo již neplatí. Například pokud uživatel přeskočí kroky vyzvednutí nebo zabalení a okamžitě zahájí dodávku a sériové číslo nebylo pro linku zaregistrováno, POS bude vyžadovat zadání sériového čísla před dokončením posledního kroku faktury. Při vynucování zachycení sériového čísla během operací plnění objednávek v POS stále platí všechna pravidla uvedená dříve v tomto tématu. Pouze serializované položky nakonfigurované jako **Aktivní** projdou ověřením sériového čísla zásob. Položky nakonfigurované jako **Aktivní v procesu prodeje** nebudou ověřeny. Je-li **Záporný fyzický sklad** povolen pro **Aktivní** produkty, bude přijato jakékoli sériové číslo bez ohledu na dostupnost na skladu. Pro **Aktivní** i **Aktivní v procesu prodeje** položky, pokud je nakonfigurován **Povolen prázdný výdej**, může uživatel ponechat sériová čísla prázdná, pokud je to požadováno během kroků vyzvednutí, zabalení a dodání.
+Při plnění řádků objednávek zákazníků pro serializované produkty pomocí operace **Plnění objednávek** v POS, POS vynucuje zachycení sériového čísla před konečným plněním. Pokud tedy sériové číslo nebylo poskytnuto během počátečního zachycení objednávky, musí být zachyceno během procesu vyzvednutí, zabalení nebo odeslání v POS. Ověření se provádí v každém kroku a uživatel bude požádán o údaje o sériovém čísle, pouze pokud chybí nebo již neplatí. Například pokud uživatel přeskočí kroky vyzvednutí nebo zabalení a okamžitě zahájí dodávku a sériové číslo nebylo pro linku zaregistrováno, POS bude vyžadovat zadání sériového čísla před dokončením posledního kroku faktury. Při vynucování zachycení sériového čísla během operací plnění objednávek v POS stále platí všechna pravidla uvedená dříve v tomto článku. Pouze serializované položky nakonfigurované jako **Aktivní** projdou ověřením sériového čísla zásob. Položky nakonfigurované jako **Aktivní v procesu prodeje** nebudou ověřeny. Je-li **Záporný fyzický sklad** povolen pro **Aktivní** produkty, bude přijato jakékoli sériové číslo bez ohledu na dostupnost na skladu. Pro **Aktivní** i **Aktivní v procesu prodeje** položky, pokud je nakonfigurován **Povolen prázdný výdej**, může uživatel ponechat sériová čísla prázdná, pokud je to požadováno během kroků vyzvednutí, zabalení a dodání.
 
 Ověření sériových čísel také nastane, když uživatel provede operace vyzvednutí u objednávek zákazníků v POS. Aplikace POS neumožňuje finalizaci vyzvednutí na serializovaném produktu, pokud neprojde validacemi, jak bylo uvedeno výše. Ověření vždy vychází z dimenze sledování produktu a konfigurací prodejního skladu. 
 

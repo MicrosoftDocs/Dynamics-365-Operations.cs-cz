@@ -1,6 +1,6 @@
 ---
 title: Archivace skladových transakcí
-description: Toto téma popisuje, jak archivovat data skladových transakcí za účelem zlepšení výkonu systému.
+description: Tento článek popisuje, jak archivovat data skladových transakcí za účelem zlepšení výkonu systému.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736054"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874094"
 ---
 # <a name="archive-inventory-transactions"></a>Archivace skladových transakcí
 
 [!include [banner](../../includes/banner.md)]
 
-V průběhu času bude tabulka skladových transakcí (`InventTrans`) i nadále růst a zabírat více prostoru v databázi. Proto se dotazy spouštěné proti této tabulce postupně zpomalí. Toto téma popisuje, jak můžete používat funkci *Archivace skladových transakcí* pro archivaci dat o skladových transakcích, která pomůže zlepšit výkon systému.
+V průběhu času bude tabulka skladových transakcí (`InventTrans`) i nadále růst a zabírat více prostoru v databázi. Proto se dotazy spouštěné proti této tabulce postupně zpomalí. Tento článek popisuje, jak můžete používat funkci *Archivace skladových transakcí* pro archivaci dat o skladových transakcích, která pomůže zlepšit výkon systému.
 
 > [!NOTE]
 > Ve vybraném uzavřeném období hlavní knihy lze archivovat pouze finančně aktualizované skladové transakce. Finančně aktualizované odchozí skladové transakce, které chcete archivovat, musejí mít stav výdeje s hodnotou *Prodáno*, a příchozí skladové transakce musejí mít stav přijetí *Zakoupeno*.
@@ -35,7 +35,7 @@ Když kombinace `itemId` a `inventDimId` obsahuje pouze jednu transakci příjmu
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Zapnutí funkce ve vašem systému
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Archivace skladových transakcí*. Tuto funkci nelze deaktivovat, jakmile bude povolena.
+Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Archivace skladových transakcí*. Tuto funkci nelze deaktivovat, jakmile bude povolena.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Co je třeba zvážit před archivací skladových transakcí
 

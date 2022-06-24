@@ -1,6 +1,6 @@
 ---
 title: Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
-description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Supply Chain Management.
+description: Tento článek popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Supply Chain Management.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860515"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061302"
 
 
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v Dynamics 365 Field Service do prodejních objednávek v Dynamics 365 Supply Chain Management.
+Tento článek popisuje šablony a základní úlohy, které se používají k synchronizaci pracovních příkazů v Dynamics 365 Field Service do prodejních objednávek v Dynamics 365 Supply Chain Management.
 
 [![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ Ke sledování prodejních objednávek, které pocházejí z pracovních příka
 
 Ve výchozím nastavení mapování vybírá původ prodeje pro typ původu prodeje možnost **integrace příkazu práce** pro všechny prodejní objednávky, které jsou vytvořeny z pracovních příkazů. Toto chování může být užitečné při práci s prodejní objednávkou v Supply Chain Management. Ujistěte se, že prodejních objednávky, které pocházejí z pracovních příkazů, nejsou synchronizovány zpět do modulu Field Service jako pracovní příkazy.
 
-Podrobnosti o postupu vytváření správného nastavení původu prodeje v Supply Chain Management získáte v části Předpoklady a nastavení mapování tohoto tématu.
+Podrobnosti o postupu vytváření správného nastavení původu prodeje v Supply Chain Management získáte v části Předpoklady a nastavení mapování tohoto článku.
 
 ### <a name="status"></a>Stav
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurace rezervních zásob a úrovní zásob
-description: Toto téma vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
+description: Tento článek vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
 author: boycezhu
 ms.date: 06/01/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: acfe71f7fb55f1bc701297bb3949e91d6450d9e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853786"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurace rezervních zásob a úrovní zásob
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak konfigurovat rezervní zásoby a úrovně zásob, které určují zasílání zpráv o dostupnosti zásob na weby Microsoft Dynamics 365 Commerce.
 
 Centrála Dynamics 365 Commerce uchovává údaje o zásobách a různé kanály, jako jsou aplikace v místě prodeje (POS), poutače e-Commerce a další vlastní integrované aplikace, které řídí oběh zásob asynchronním způsobem. Dostupné hodnoty inventáře, které se získají prostřednictvím stránky inventáře v centrále Commerte, prostřednictvím uživatelského rozhraní POS (UI) a prostřednictvím rozhraní API pro dostupnost zásob elektronického obchodování, tedy nejsou vždy v reálném čase vždy stoprocentně přesné.
 

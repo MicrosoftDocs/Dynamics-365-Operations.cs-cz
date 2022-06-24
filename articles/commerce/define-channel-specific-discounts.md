@@ -1,6 +1,6 @@
 ---
 title: Definovat slevy specifické pro kanál
-description: Maloobchodní prodejci často nastavují různé slevy v různých kanálech. Toto téma popisuje koncepty, které je nutné znát k vytvoření slevy pro konkrétní kanál.
+description: Maloobchodní prodejci často nastavují různé slevy v různých kanálech. Tento článek popisuje koncepty, které je nutné znát k vytvoření slevy pro konkrétní kanál.
 author: scott-tucker
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ceb5c8e47288e7ffdd3808cd8d60112f81ce314
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759304"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873403"
 ---
 # <a name="define-channel-specific-discounts"></a>Definování slev specifických pro kanál
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje koncepty, které je nutné znát k vytvoření slevy pro konkrétní kanál.
+Tento článek popisuje koncepty, které je nutné znát k vytvoření slevy pro konkrétní kanál.
 
 ## <a name="channel-specific-discounts"></a>Slevy specifické pro kanál
 

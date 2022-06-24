@@ -1,6 +1,6 @@
 ---
 title: Konfigurace propagovaných polí pro kroky v mobilní aplikaci Warehouse Management
-description: Toto téma popisuje, jak propagovat a zvýraznit konkrétní informace pro libovolný krok v tocích úloh pro mobilní aplikaci Warehouse Management.
+description: Tento článek popisuje, jak propagovat a zvýraznit konkrétní informace pro libovolný krok v tocích úloh pro mobilní aplikaci Warehouse Management.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857047"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurace propagovaných polí pro kroky v mobilní aplikaci Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkce, které jsou popsány v tomto tématu, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
+> Funkce, které jsou popsány v tomto článku, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
 
-Toto téma popisuje, jak propagovat a zvýraznit konkrétní informace pro libovolný krok v tocích úloh pro mobilní aplikaci Warehouse Management. Tato schopnost může pomoci zaměřit pozornost pracovníků na nejdůležitější oblasti při práci v toku. Pro každý krok v každém procesu mohou správci vybrat, která pole propagovat a která pole zvýraznit.
+Tento článek popisuje, jak propagovat a zvýraznit konkrétní informace pro libovolný krok v tocích úloh pro mobilní aplikaci Warehouse Management. Tato schopnost může pomoci zaměřit pozornost pracovníků na nejdůležitější oblasti při práci v toku. Pro každý krok v každém procesu mohou správci vybrat, která pole propagovat a která pole zvýraznit.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivace propagovaných polí v systému
 
@@ -44,7 +44,7 @@ Než budete moci nastavit propagovaná pole, musíte provést následující pos
     - **Modul:** *Řízení skladu*
     - **Název funkce:** *Propagovaná pole aplikace Warehouse*
 
-    Tato funkce je funkce popsaná v tomto tématu.
+    Tato funkce je funkce popsaná v tomto článku.
 
 1. Aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
@@ -56,7 +56,7 @@ Pomocí následujícího postupu nastavte propagovaná pole.
 1. Vytvořte přepsání specifické pro nabídku pro příslušnou nabídku a krok, jak je popsáno v části [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md).
 1. Najděte kombinaci hodnot **ID kroku** a **Názvu položky nabídky**, které chcete upravit, a vyberte hodnotu ve sloupci **ID kroku**.
 1. Na stránce, která se objeví, na pevné záložce **Vybrat propagovaná pole** vyberte možnost **Vybrat pole** na panelu nástrojů.
-1. V dialogovém okně **Propagovaná pole** vyberte pole, která chcete propagovat. Můžete také zvýraznit až dvě z vybraných polí. Zvýrazněná pole budou v mobilní aplikaci Warehouse Management zobrazena tučně. Při výběru polí vezměte v úvahu skutečnost, že některé obrazovky mohou být dostatečně velké, aby zobrazily pouze jedno nebo dvě propagovaná pole. Příklad, který ukazuje, jak tato nastavení používat, naleznete ve scénáři dále v tomto tématu.
+1. V dialogovém okně **Propagovaná pole** vyberte pole, která chcete propagovat. Můžete také zvýraznit až dvě z vybraných polí. Zvýrazněná pole budou v mobilní aplikaci Warehouse Management zobrazena tučně. Při výběru polí vezměte v úvahu skutečnost, že některé obrazovky mohou být dostatečně velké, aby zobrazily pouze jedno nebo dvě propagovaná pole. Příklad, který ukazuje, jak tato nastavení používat, naleznete ve scénáři dále v tomto článku.
 
     > [!NOTE]
     > Seznam **Dostupná pole** je omezen na pole, která se mohou objevit pro položku nabídky. O tom, zda se pole skutečně objeví v mobilní aplikaci Warehouse Management, však rozhodují další faktory (například složení položky). Pokud jste nakonfigurovali propagovaná pole, na hlavní stránce mobilní aplikace Warehouse Management se zobrazí pouze vybraná pole. Pracovníci však mohou stále zobrazit zbývající pole klepnutím na stránku podrobností.

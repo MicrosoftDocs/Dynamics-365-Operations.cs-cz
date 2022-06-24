@@ -1,6 +1,6 @@
 ---
-title: Nabídky správy rabatu
-description: Toto téma popisuje, jak vytvořit nabídky správy rabatu. Nabídky se používají k řízení různých metod a základů pro výpočet rabatů a autorských poplatků. Zahrnují pravidla pro zahrnutí a vyloučení.
+title: Obchody správy rabatu
+description: Tento článek popisuje, jak vytvořit nabídky správy rabatu. Nabídky se používají k řízení různých metod a základů pro výpočet rabatů a autorských poplatků. Zahrnují pravidla pro zahrnutí a vyloučení.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851587"
 ---
 # <a name="rebate-management-deals"></a>Nabídky správy rabatu
 
 [!include [banner](../includes/banner.md)]
 
-Nabídky správy rabatu se používají k řízení různých metod a základů pro výpočet rabatů a autorských poplatků. Zahrnují pravidla pro zahrnutí a vyloučení. Existují tři typy nabídek správy rabatů: rabaty zákazníků, autorské poplatky zákazníků a rabaty dodavatelů. Všechny tři typy používají podobná nastavení. Toto téma poukazuje na rozdíly tam, kde existují.
+Nabídky správy rabatu se používají k řízení různých metod a základů pro výpočet rabatů a autorských poplatků. Zahrnují pravidla pro zahrnutí a vyloučení. Existují tři typy nabídek správy rabatů: rabaty zákazníků, autorské poplatky zákazníků a rabaty dodavatelů. Všechny tři typy používají podobná nastavení. Tento článek poukazuje na rozdíly tam, kde existují.
 
 ## <a name="create-a-deal"></a>Vytvoření nabídky
 
@@ -118,7 +118,7 @@ Karta **Obecné** na záložce s náhledem **Podrobnosti správy rabatu** umož�
 
 | Pole | popis |
 |---|---|
-| Metoda výpočtu | Vyberte metodu, která se použije, když je vybraný řádek nabídky kombinován s jinými řádky nabídky (*Kroková*, *Kumulativní*, *Postupná* nebo *Celková*). Hodnota tohoto pole může dramaticky ovlivnit výsledek vašich výpočtů rabatu. Úplný popis každé metody a příklady, které ukazují, jak ovlivňuje výpočet rabatu, najdete v části [Metody výpočtu pro řádky nabídky](#calc-methods) dále v tomto tématu. |
+| Metoda výpočtu | Vyberte metodu, která se použije, když je vybraný řádek nabídky kombinován s jinými řádky nabídky (*Kroková*, *Kumulativní*, *Postupná* nebo *Celková*). Hodnota tohoto pole může dramaticky ovlivnit výsledek vašich výpočtů rabatu. Úplný popis každé metody a příklady, které ukazují, jak ovlivňuje výpočet rabatu, najdete v části [Metody výpočtu pro řádky nabídky](#calc-methods) dále v tomto článku. |
 | Základ | Vyberte, zda se rabat použije na základě množství (tedy celkového počtu zakoupených nebo prodaných jednotek) nebo hodnoty (tedy celkové ceny zakoupeného nebo prodaného zboží). |
 | Typ transakce | <p>Vyberte bod v procesu, kdy má dojít k výpočtu:</p><ul><li>*Objednávka* - Jako základ pro výpočet použijte objednané množství nebo hodnotu.</li><li>*Doručeno* - Jako základ pro výpočet použijte doručené množství nebo hodnotu.</li><li>*Faktura* - Jako základ pro výpočet použijte vyfakturované množství nebo hodnotu.</li></ul> |
 | Jednotka | Pokud jste vybrali *Množství* v poli **Základ**, vyberte jednotku, ve které musí být uvedeno množství. |

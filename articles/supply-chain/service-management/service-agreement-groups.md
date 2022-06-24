@@ -1,6 +1,6 @@
 ---
 title: Přehled servisních smluv
-description: Toto téma poskytuje přehled fungování servisních smluv.
+description: Tento článek poskytuje přehled fungování servisních smluv.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5566f559da6340a82ca015fb5dee2dae7887202e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862446"
 ---
 # <a name="service-agreements-overview"></a>Přehled servisních smluv
 
@@ -35,7 +35,7 @@ V poli **Skupina servisních smluv** na stránce **Parametry správy servisu** m
 - Ve vaší společnosti jste vytvořili tři skupiny smluv: Gold, Silver a Bronze.
 - Ve vaší společnosti byl zaměstnán nový manažer servisu. Servisní manažer zodpovídá za jednání se všemi zákazníky ze skupiny smluv Gold. Můžete vyfiltrovat všechny záznamy, které patří do skupiny smluv Gold, u nichž je nutné zadat nového manažera servisu, který je za ně odpovědný.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Vytvoření skupin servisních smluv](create-service-agreement-groups.md)
 

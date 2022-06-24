@@ -1,6 +1,6 @@
 ---
 title: Vytvoření vrácení v POS
-description: Toto téma popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
+description: Tento článek popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856991"
 ---
 # <a name="create-returns-in-pos"></a>Vytvoření vrácení v POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
+Tento článek popisuje, jak iniciovat vrácení u transakcí typu cash and carry nebo objednávek zákazníků v aplikaci Microsoft Dynamics 365 Commerce Point of Sale (POS).
 
 > [!NOTE]
 > Ve verzi Commerce verze 10.0.20 a novějších je k dispozici nová funkce s názvem **Sjednocené prostředí pro zpracování vrácení v POS**. Tato funkce poskytuje více konsistentní a jednotnější proces vrácení v POS, bez ohledu na typ transakce (typu cash and carry nebo objednávky zákazníka) nebo původní kanál, ve kterém byla objednávka vytvořena. Doporučujeme, aby všechny organizace zapnuly tuto novou funkci, které pomůže zlepšit celkovou spolehlivost zpracování vratek prostřednictvím POS.

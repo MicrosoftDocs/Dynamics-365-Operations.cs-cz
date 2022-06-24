@@ -1,6 +1,6 @@
 ---
 title: Automatické nastavení nákladů
-description: Toto téma popisuje nastavení pravidel nákladů pro různé úrovně příchozí cesty. Na základě těchto pravidel systém vypočítá náklady a automaticky je přidá. Uživatelé proto nemusí náklady ručně přidávat.
+description: Tento článek popisuje nastavení pravidel nákladů pro různé úrovně příchozí cesty. Na základě těchto pravidel systém vypočítá náklady a automaticky je přidá. Uživatelé proto nemusí náklady ručně přidávat.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852382"
 ---
 # <a name="auto-costs-setup"></a>Automatické nastavení nákladů
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695325"
 
 Na stránce **Automatické náklady** můžete nastavit pravidla nákladů pro různé nákladové oblasti (například cesty, přepravní kontejnery, folia, nákupní objednávky, položky nebo řádky převodních objednávek). Na základě pravidel a polí, která uživatelé vyberou při vytváření záznamů pro jednu z nákladových oblastí, systém vypočítá náklady a automaticky je přidá. Uživatelé proto nemusí náklady ručně přidávat.
 
-Chcete-li pracovat s automatickými náklady, přejděte na stránku **Náklady za doručení \> Nastavení kalkulace \> Automatické náklady**. Poté nastavte pravidla pro automatické náklady, jak je popsáno ve zbytku tohoto tématu.
+Chcete-li pracovat s automatickými náklady, přejděte na stránku **Náklady za doručení \> Nastavení kalkulace \> Automatické náklady**. Poté nastavte pravidla pro automatické náklady, jak je popsáno ve zbytku tohoto článku.
 
 ## <a name="work-with-cost-areas"></a>Práce s nákladovými oblastmi
 

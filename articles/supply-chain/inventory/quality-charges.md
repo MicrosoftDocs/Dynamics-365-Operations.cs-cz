@@ -1,6 +1,6 @@
 ---
 title: Náklady kvality pro operace neshod
-description: Toto téma popisuje, jak vytvořit náklady kvality, které lze použít s operacemi pro neshodu.
+description: Tento článek popisuje, jak vytvořit náklady kvality, které lze použít s operacemi pro neshodu.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850721"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Náklady kvality pro operace neshod
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit náklady kvality, které lze použít s operacemi pro neshodu.
+Tento článek popisuje, jak vytvořit náklady kvality, které lze použít s operacemi pro neshodu.
 
 Na stránce **Náklady kvality** definujte typy nákladů, které můžete přidat k operacím neshod. Poplatky vám umožňují sledovat podrobnosti poplatků, které dlužíte zákazníkovi za neshodné výrobky, nebo které vám prodejce dluží za neshodné výrobky, které jste obdrželi. Můžete také použít poplatky ke sledování nákladů, které jsou požadovány pro externí dodavatele nebo služby k provedení operace.
 

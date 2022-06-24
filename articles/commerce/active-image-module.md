@@ -1,6 +1,6 @@
 ---
 title: Modul aktivního obrázku
-description: Tohle téma se zabývá moduly aktivního obrázku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek se zabývá moduly aktivního obrázku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 3d532d21f847a80a16af814eeaf097a616605795
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853843"
 ---
 # <a name="active-image-module"></a>Modul aktivního obrázku
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá moduly aktivního obrázku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+Tento článek se zabývá moduly aktivního obrázku a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 K vložení značek produktu do obrázku lze použít modul aktivního obrázku. Uživatelé webu elektronického obchodování pak mohou umístit kurzor nad značky a zobrazit náhled produktů zobrazených na obrázku. Náhledy se zobrazují ve vyskakovacích oknech. Výběrem vyskakovacího okna náhledu mohou uživatelé přejít přímo na stránku podrobností o produktu (PDP) pro příslušný produkt.
 

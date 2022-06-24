@@ -1,6 +1,6 @@
 ---
 title: Ukázka integrace fiskální služby pro Rakousko
-description: V tomto tématu je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873351"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Ukázka integrace fiskální služby pro Rakousko
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
+V tomto článku je uveden přehled ukázkové fiskální integrace pro Rakousko v Microsoft Dynamics 365 Commerce.
 
 Pro účely splnění fiskálních požadavků na registrační pokladny v Rakousku obsahuje funkce Dynamics 365 Retail pro Rakousko vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) od [EFSTA](https://www.efsta.eu/at/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR by měla být hostitelem hardwarové stanice pro maloobchod nebo samostatný počítač, se kterým se lze propojit z hardwarové stanice. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
 

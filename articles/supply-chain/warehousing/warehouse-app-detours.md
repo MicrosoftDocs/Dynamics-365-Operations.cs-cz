@@ -1,6 +1,6 @@
 ---
 title: Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
-description: Toto téma popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli zaparkovat aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
+description: Tento článek popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli zaparkovat aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863585"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurace obcházení pro kroky v položkách nabídky mobilního zařízení
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funkce, které jsou popsány v tomto tématu, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
+> Funkce, které jsou popsány v tomto článku, platí pouze pro novou mobilní aplikaci Warehouse Management. Nemají vliv na starou skladovou aplikaci, která je nyní zastaralá.
 
-Toto téma popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli „zaparkovat“ aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
+Tento článek popisuje, jak nakonfigurovat obcházení pro položky nabídky, aby pracovníci mohli „zaparkovat“ aktuální úkol, provést jiný úkol a poté se vrátit k původnímu úkolu bez ztráty jakýchkoli informací.
 
 Obcházení je samostatná položka nabídky, kterou lze otevřít z kroku v hlavním úkolu. Na konci obcházení je pracovník vrácen na místo, kde opustil hlavní úkol. Během konfigurace určíte položku nabídky, která má fungovat jako obcházení. Dále zvolíte, které hodnoty polí z hlavní úlohy se mají automaticky přeposlat (zkopírovat) na obcházení a tam zadat. Proto musíte pochopit, kde v toku úkolů chcete, aby bylo obcházení pro pracovníky dostupné. Musíte také zajistit, aby informace, které je třeba zkopírovat do obcházení, byly pro daný krok postupu úlohy k dispozici.
 
@@ -46,7 +46,7 @@ Než budete moci nakonfigurovat obcházení pro kroky v položkách nabídky mob
     - **Modul:** *Řízení skladu*
     - **Název funkce:** *Obcházení aplikace Warehouse Management*
 
-    Tato funkce je funkce popsaná v tomto tématu.
+    Tato funkce je funkce popsaná v tomto článku.
 
 1. Aktualizujte názvy polí v mobilní aplikaci Warehouse Management tím, že přejdete na **Warehouse Management \> Nastavení \> Mobilní zařízení \> Názvy polí aplikace Warehouse** a vyberete **Vytvořit výchozí nastavení**. Další informace viz [Konfigurace polí pro mobilní aplikaci Řízení skladu](configure-app-field-names-priorities-warehouse.md).
 1. Opakujte předchozí krok pro každou právnickou osobu (společnost), kde používáte mobilní aplikaci Warehouse Management.
@@ -57,7 +57,7 @@ Následující postup použijte k nastavení obcházení od přepisu specifické
 
 1. Vytvořte přepsání specifické pro nabídku pro příslušnou nabídku a krok, jak je popsáno v části [Přizpůsobení názvů kroků a pokynů pro mobilní aplikaci Warehouse Management](mobile-app-titles-instructions.md).
 1. Najděte kombinaci hodnot **ID kroku** a **Názvu položky nabídky**, které chcete upravit, a vyberte hodnotu ve sloupci **ID kroku**.
-1. Na stránce, která se objeví, na pevné záložce **Dostupná obcházení (položky nabídky)** můžete určit položku nabídky, která by měla fungovat jako obcházení. Dále můžete zvolit, které hodnoty polí z hlavní úlohy se mají automaticky zkopírovat do obcházení a z něj. Příklady, které ukazují, jak tato nastavení používat, naleznete ve scénářích dále v tomto tématu.
+1. Na stránce, která se objeví, na pevné záložce **Dostupná obcházení (položky nabídky)** můžete určit položku nabídky, která by měla fungovat jako obcházení. Dále můžete zvolit, které hodnoty polí z hlavní úlohy se mají automaticky zkopírovat do obcházení a z něj. Příklady, které ukazují, jak tato nastavení používat, naleznete ve scénářích dále v tomto článku.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Ukázkový scénář 1: Vychystávání prodeje, kde dotaz na lokalitu funguje jako obcházení
 

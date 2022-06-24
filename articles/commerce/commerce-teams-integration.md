@@ -1,6 +1,6 @@
 ---
 title: Přehled integrace Dynamics 365 Commerce a Microsoft Teams
-description: Toto téma představuje přehled integrace Microsoft Dynamics 365 Commerce a Microsoft Teams.
+description: Tento článek představuje přehled integrace Microsoft Dynamics 365 Commerce a Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7786a527a9aca08f5d9326570e8a2dafc5059dc5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b674f40b6bb433bc5e2c9216d649a7f15169442
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887081"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Přehled integrace Dynamics 365 Commerce a Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-Toto téma představuje přehled integrace Microsoft Dynamics 365 Commerce a Microsoft Teams.
+Tento článek představuje přehled integrace Microsoft Dynamics 365 Commerce a Microsoft Teams.
 
 Dynamics 365 Commerce se integruje s Teams a pomáhá zákazníkům a jejich zaměstnancům zlepšit produktivitu synchronizací správy úkolů mezi těmito dvěma aplikacemi. Bezproblémová správa úkolů, kterou poskytuje integrace Commerce a Teams, umožňuje manažerům obchodu a zaměstnancům vytvářet seznamy úkolů, přiřazovat úkoly do více obchodů a sledovat stav úkolů v obchodech z kterékoli aplikace.
 

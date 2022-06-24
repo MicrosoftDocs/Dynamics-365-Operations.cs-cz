@@ -1,8 +1,8 @@
 ---
-title: Doplněk Viditelnost skladu - Přidělení zásob
-description: Toto téma vysvětluje, jak nastavit a používat funkci přidělení zásob, která vám umožní odložit vyhrazené zásoby, abyste zajistili, že budete moci plnit své nejziskovější kanály nebo zákazníky.
+title: Přidělení zásob v Inventory Visibility
+description: Tento článek vysvětluje, jak nastavit a používat funkci přidělení zásob, která vám umožní odložit vyhrazené zásoby, abyste zajistili, že budete moci plnit své nejziskovější kanály nebo zákazníky.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852498"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Doplněk Viditelnost skladu - Přidělení zásob
 
@@ -98,7 +98,7 @@ Zde jsou počáteční vypočítané míry:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Přidejte další fyzické míry do vypočítané míry K dispozici pro přidělení
 
-Chcete-li použít přidělení, musíte nastavit vypočítanou míru K dispozici pro přidělení (`@iv` .`@available_to_allocate`). Například máte zdroj dat `fno` a míru `onordered`, zdroj dat `pos` a míru `inbound` a chcete provést přidělení zásob na skladě ve výši součtu `fno.onordered` a `pos.inbound`. V tomto případě by `@iv.@available_to_allocate` měla ve vzorci obsahovat `pos.inbound` a `fno.onordered`. Následuje příklad:
+Chcete-li použít přidělení, musíte nastavit vypočítanou míru K dispozici pro přidělení (`@iv.@available_to_allocate`). Například máte zdroj dat `fno` a míru `onordered`, zdroj dat `pos` a míru `inbound` a chcete provést přidělení zásob na skladě ve výši součtu `fno.onordered` a `pos.inbound`. V tomto případě by `@iv.@available_to_allocate` měla ve vzorci obsahovat `pos.inbound` a `fno.onordered`. Následuje příklad:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Názvy skupin se zadávají na stránce **Konfigurace aplikace Viditelnost záso
 
 Pokud například použijete čtyři názvy skupin a nastavíte je na \[`channel`, `customerGroup`, `region`, `orderType`\], budou tato jména platná pro požadavky související s přidělením, když zavoláte rozhraní API pro aktualizaci konfigurace.
 
-### <a name="allcoation-using-tips"></a>Přidělení pomocí tipů
+### <a name="allocation-using-tips"></a>Přidělení pomocí tipů
 
-- U každého produktu by funkce přidělení měla používat stejnou úroveň dimenze podle hierarchie indexu produktu, kterou nastavíte v [konfiguraci hierarchie indexu produktů](inventory-visibility-configuration.md#index-configuration). Hierarchie indexu je například lokalita, umístění, barva, velikost. Pokud přidělíte nějaké množství pro jeden produkt na úrovni lokality, umístění, barvy. Při příštím přidělení byste měli také použít úrovně lokality, umístění, barvy, pokud použijete lokalitu, umístění, barvu a velikost nebo lokalitu a umístění, nebudou data konzistentní.
+- U každého produktu by funkce přidělení měla používat stejnou *úroveň dimenze* podle hierarchie indexu produktu, kterou nastavíte v [konfiguraci hierarchie indexu produktů](inventory-visibility-configuration.md#index-configuration). Předpokládejme například, že vaše hierarchie indexu je \[`Site`, `Location`, `Color`, `Size`\]. Pokud přidělíte nějaké množství pro jeden produkt na úrovni dimenze \[`Site`, `Location`, `Color`\], až budete příště chtít přidělit tento produkt, měli byste také přidělit na stejné úrovni, \[`Site`, `Location`, `Color`\]. Pokud použijete úroveň \[`Site`, `Location`, `Color`, `Size`\] nebo \[`Site`, `Location`\], data budou nekonzistentní.
 - Změna názvu skupiny přidělení neovlivní data uložená ve službě.
 - K přidělení by mělo dojít poté, co má produkt kladné množství na skladě.
+- Chcete-li přidělit produkty ze skupiny vysoké *úrovně přidělení* do podskupiny, použijte rozhraní API `Reallocate`. Máte například hierarchii skupiny alokace \[`channel`, `customerGroup`, `region`, `orderType`\] a chcete alokovat nějaký produkt ze skupiny alokace \[Online, VIP\] do podskupiny alokace \[Online, VIP, EU\], použijte rozhraní API `Reallocate` pro přesun množství. Pokud použijete rozhraní API `Allocate`, přidělí množství z virtuálního společného fondu.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Použití rozhraní API pro přidělování
 

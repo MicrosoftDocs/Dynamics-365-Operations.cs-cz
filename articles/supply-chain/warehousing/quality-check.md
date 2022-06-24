@@ -1,6 +1,6 @@
 ---
 title: Kontrola kvality
-description: Toto téma obsahuje informace o funkci Kontrola kvality. Tato funkce umožňuje pracovníkům skladu provádět rychlé namátkové kontroly kvality, zatímco přijímají položky do oblasti příchozího doku.
+description: Tento článek obsahuje informace o funkci Kontrola kvality. Tato funkce umožňuje pracovníkům skladu provádět rychlé namátkové kontroly kvality, zatímco přijímají položky do oblasti příchozího doku.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855050"
 ---
 # <a name="quality-check"></a>Kontrola kvality
 
@@ -41,11 +41,11 @@ Tento proces lze také nastavit tak, aby všechny naskenované registrační zna
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce kontroly kvality
 
-Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Kontrola kvality*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Kontrola kvality* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li používat funkčnost popsanou v tomto článku, musí být ve vašem systému zapnuta funkce *Kontrola kvality*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Kontrola kvality* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Nastavení funkce pro tento vzorový scénář
 
-Tato část obsahuje pokyny a příklad, který ukazuje, jak nastavit funkci *Kontrola kvality* a připravit ukázková data pro příkladový scénář, který je uveden dále v tomto tématu.
+Tato část obsahuje pokyny a příklad, který ukazuje, jak nastavit funkci *Kontrola kvality* a připravit ukázková data pro příkladový scénář, který je uveden dále v tomto článku.
 
 ### <a name="make-sample-data-available"></a>Příprava ukázkových dat
 
@@ -270,7 +270,7 @@ Nakonfigurujte položku nabídky tak, aby mobilní zařízení mohla provádět 
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Příklad
 
-Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžete v rámci tohoto scénáře vyzkoušet funkci *Kontrola kvality*. Hodnoty zobrazené v tomto scénáři předpokládají, že pracujete se standardními ukázkovými daty, která jste vybrali v právnické osobě **USMF** a připravili jste vzorové záznamy, které jsou popsány dříve v tomto tématu. Tento scénář také slouží jako příklad, který ukazuje, jak lze funkci použít v produkčním nastavení.
+Po zpřístupnění a nastavení všech výše popsaných vzorových dat můžete v rámci tohoto scénáře vyzkoušet funkci *Kontrola kvality*. Hodnoty zobrazené v tomto scénáři předpokládají, že pracujete se standardními ukázkovými daty, která jste vybrali v právnické osobě **USMF** a připravili jste vzorové záznamy, které jsou popsány dříve v tomto článku. Tento scénář také slouží jako příklad, který ukazuje, jak lze funkci použít v produkčním nastavení.
 
 ### <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
 
@@ -357,7 +357,7 @@ U tohoto scénáře bude paleta 2 odmítnuta.
 
 Nyní jste dokončili kontrolu kvality a vytvořili jste objednávku kvality pro odmítnutou paletu. Chcete-li zobrazit vytvořenou objednávku kvality, přejděte na **Řízení zásob \> Periodické úkoly \> Řízení kvality \> Objednávky kvality**.
 
-Testování objednávky kvality je nyní možné zpracovat. V tomto tématu není zahrnuto testování kvality.
+Testování objednávky kvality je nyní možné zpracovat. V tomto článku není zahrnuto testování kvality.
 
 Další informace o řízení kvality naleznete v tématu [Přehled řízení kvality](../inventory/enable-quality-management.md).
 

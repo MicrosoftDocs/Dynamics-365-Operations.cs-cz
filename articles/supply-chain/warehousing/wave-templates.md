@@ -1,6 +1,6 @@
 ---
 title: Šablony vlny
-description: Toto téma popisuje, jak nastavit kritéria určující, zda jsou vlny zpracovány ručně nebo automaticky, a práci, která vznikne pro sklad při zpracování vlny.
+description: Tento článek popisuje, jak nastavit kritéria určující, zda jsou vlny zpracovány ručně nebo automaticky, a práci, která vznikne pro sklad při zpracování vlny.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 61fbcad572bbb69ab8a4eb2cd309cdf8a6328391
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e4a74b61ea32df432da118ac8af550a4ca4b0089
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851191"
 ---
 # <a name="wave-templates"></a>Šablony vlny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit kritéria určující, zda jsou vlny zpracovány ručně nebo automaticky, a práci, která vznikne pro sklad při zpracování vlny. Podle potřeby určete kritéria nastavením šablon vlny a dotazů, které odpovídají vlně ve vydaných řádcích u prodejní objednávky, výrobní zakázky a kanbanů.
+Tento článek popisuje, jak nastavit kritéria určující, zda jsou vlny zpracovány ručně nebo automaticky, a práci, která vznikne pro sklad při zpracování vlny. Podle potřeby určete kritéria nastavením šablon vlny a dotazů, které odpovídají vlně ve vydaných řádcích u prodejní objednávky, výrobní zakázky a kanbanů.
 
 ## <a name="settings-for-wave-templates"></a>Nastavení šablon vlny
 

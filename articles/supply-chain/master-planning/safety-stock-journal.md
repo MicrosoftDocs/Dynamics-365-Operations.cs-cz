@@ -1,6 +1,6 @@
 ---
 title: Použití deníku pojistných zásob pro aktualizaci minimální disponibility položek
-description: Toto téma popisuje, jak používat deník pojistných zásob k aktualizaci množství pojistných zásob pro položky výpočtem návrhů minimální disponibility na základě historických transakcí.
+description: Tento článek popisuje, jak používat deník pojistných zásob k aktualizaci množství pojistných zásob pro položky výpočtem návrhů minimální disponibility na základě historických transakcí.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851761"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Použití deníku pojistných zásob pro aktualizaci minimální disponibility položek
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468531"
 
 Pojistné zásoby označují dodatečné množství položky uložené ve skladu za účelem snížení rizika, že položka nebude na skladě. Pojistné zásoby se používají jako vyrovnávací v případě příchozích prodejních objednávek, kdy dodavatel nemůže splnit požadované datum expedice odběrateli.
 
-Toto téma popisuje způsob použití deníku pojistných zásob k výpočtu návrhů minimální disponibility na základě historických transakcí, a pokrytí následně aktualizaci disponibility položky podle návrhů.
+Tento článek popisuje způsob použití deníku pojistných zásob k výpočtu návrhů minimální disponibility na základě historických transakcí, a pokrytí následně aktualizaci disponibility položky podle návrhů.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Přehled využití minimální disponibility
 
@@ -43,7 +43,7 @@ Hodnotu **Minimum** lze nastavit třemi způsoby:
 
 Deníky pojistných zásob se používají k výpočtu navrhovaného minimálního množství na základě historického použití položky, a to buď pro účely min/max nebo pro účely plánu zásob. Historické použití představuje všechny výdajové transakce během zadaného období. Tyto výdajové transakce zahrnují transakce prodejních objednávek a úpravy zásob. Výpočty také identifikují vliv navrženého minimálního množství na hodnotu zásob a změnu hodnoty zásob oproti současným minimálním množstvím.
 
-Každý řádek deníku pojistných zásob představuje položku a její dimenze disponibility. Tyto řádky deníku jsou vytvořeny a zobrazeny na stránce **Řádky deníku pojistných zásob** (**Hlavní plánování \>Hlavní plánování \> Spustit \>Výpočet pojistné zásoby**). Obchodní proces pro použití deníků pojistných zásob k výpočtu navrhovaných minimálních množství je popsán dále v tomto tématu.
+Každý řádek deníku pojistných zásob představuje položku a její dimenze disponibility. Tyto řádky deníku jsou vytvořeny a zobrazeny na stránce **Řádky deníku pojistných zásob** (**Hlavní plánování \>Hlavní plánování \> Spustit \>Výpočet pojistné zásoby**). Obchodní proces pro použití deníků pojistných zásob k výpočtu navrhovaných minimálních množství je popsán dále v tomto článku.
 
 Plánovač používá deník pojistných zásob k výpočtu navrhovaných minimálních množství pro vybrané položky na základě historického použití během vybraných období. Navrhovaná minima lze podle potřeby ručně přepsat a potenciální dopad navrhovaných minim na hodnotu zásob můžete zkontrolovat. Když je deník zaúčtován, automaticky se aktualizují související minimální množství v disponibilitě položky.
 
@@ -89,7 +89,7 @@ Chcete-li automaticky generovat řádky deníku, postupujte podle těchto kroků
 
     - **Od data** – Vyberte počáteční datum období, pro které mají být výdeje zahrnuty do výpočtu.
     - **Do data** – Vyberte koncové datum období, pro které mají být výdeje zahrnuty do tohoto výpočtu. Mezi datem zahájení a ukončení musejí uplynout alespoň dva měsíce.
-    - **Vypočítat směrodatnou odchylku** – Nastavte tuto možnost na *Ano*, chcete-li vypočítat směrodatnou odchylku. Tuto možnost musíte nastavit na *Ano*, když chcete použít možnost **Použít úroveň služeb** při výpočtu návrhu (jak je popsáno dále v tomto tématu).
+    - **Vypočítat směrodatnou odchylku** – Nastavte tuto možnost na *Ano*, chcete-li vypočítat směrodatnou odchylku. Tuto možnost musíte nastavit na *Ano*, když chcete použít možnost **Použít úroveň služeb** při výpočtu návrhu (jak je popsáno dále v tomto článku).
 
 1. Na záložce s náhledem **Záznamy, které mají být zahrnuty** můžete nastavit filtry a omezení, která definují, jaké položky budou zahrnuty. (Můžete například filtrovat podle hodnoty **Skupina disponibility**.) Výběrem položky **Filtr** otevřete standardní dialogové okno editoru dotazů, kde můžete definovat kritéria výběru, kritéria řazení a spojení. Pole fungují stejně jako u jiných typů dotazů v Microsoft Dynamics 365 Supply Chain Management.
 1. Na záložce s náhledem **Spustit na pozadí** zvolte, zda má úloha běžet v dávkovém režimu a/nebo nastavte opakující se rozvrh. Pole fungují stejně jako u jiných typů [prací na pozadí](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) v Supply Chain Management.
@@ -110,7 +110,7 @@ Tento krok vypočítá navrhované minimum pro každý řádek deníku a potenci
 Zobrazené výpočty neovlivní skutečné hodnoty minimálního množství pro každý produkt, dokud nevyberete v podokně akcí příkaz **Zaúčtovat**. Pak budou hodnoty **Nové minimální množství** použity na každý produkt.
 
 1. Přejděte na nabídku **Hlavní plánování \> Hlavní plánování \> Spustit \> Výpočet pojistných zásob**.
-1. Otevřete deník, pro který chcete vypočítat návrh. Případně vytvořte nový deník, jak je popsáno dříve v tomto tématu.
+1. Otevřete deník, pro který chcete vypočítat návrh. Případně vytvořte nový deník, jak je popsáno dříve v tomto článku.
 1. Na záložce s náhledem **Řádky deníku** vyberte na panelu nástrojů příkaz **Vypočítat návrh**. (Nemusíte vybrat žádné řádky.)
 1. V dialogu **Výpočet návrhu pro minimální úroveň skladových zásob** nastavte následující pole:
 

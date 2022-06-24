@@ -1,6 +1,6 @@
 ---
 title: Správa uživatelů obchodních partnerů na webech B2B elektronického obchodování pomocí aplikace Dynamics 365 Sales
-description: Toto téma popisuje, jak používat Microsoft Dynamics 365 Sales ke správě schválení obchodních partnerů na webech elektronického obchodování Dynamics 365 Commerce typu business-to-business (B2B).
+description: Tento článek popisuje, jak používat Microsoft Dynamics 365 Sales ke správě schválení obchodních partnerů na webech elektronického obchodování Dynamics 365 Commerce typu business-to-business (B2B).
 author: shajain
 ms.date: 2/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540e8f26d7f2a08060a3839f9e4f97bf8ddcafac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ac4aa15f2c6e7f557105254c2c8ce743a9466985
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878614"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites-using-dynamics-365-sales"></a>Správa uživatelů obchodních partnerů na webech B2B elektronického obchodování pomocí aplikace Dynamics 365 Sales
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak používat Microsoft Dynamics 365 Sales ke správě schválení obchodních partnerů na webech elektronického obchodování Dynamics 365 Commerce typu business-to-business (B2B). Organizace, které již investovaly do řešení Dynamics 365 Sales, mohou využít jeho koncepty potenciálních zákazníků a příležitostí pro proces schvalování obchodních partnerů B2B elektronického obchodování.
+Tento článek popisuje, jak používat Microsoft Dynamics 365 Sales ke správě schválení obchodních partnerů na webech elektronického obchodování Dynamics 365 Commerce typu business-to-business (B2B). Organizace, které již investovaly do řešení Dynamics 365 Sales, mohou využít jeho koncepty potenciálních zákazníků a příležitostí pro proces schvalování obchodních partnerů B2B elektronického obchodování.
 
 Základní informace o procesu schvalování obchodních partnerů B2B najdete v tématu [Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B](manage-b2b-users.md).
 

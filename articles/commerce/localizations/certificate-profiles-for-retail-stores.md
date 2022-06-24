@@ -1,6 +1,6 @@
 ---
-title: Profily certifikátů definované uživatelem pro maloobchodní prodejny
-description: Toto téma poskytuje přehled o tom, jak se certifikáty používají v maloobchodních prodejnách.
+title: Profily certifikátů definovaných uživatelem pro maloobchodní prodejny
+description: Tento článek poskytuje přehled o tom, jak se certifikáty používají v maloobchodních prodejnách.
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b40c74efa56a6e18af907e000554b9ab269bb31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873022"
 ---
-# <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profily certifikátů definované uživatelem pro maloobchodní prodejny
+# <a name="user-defined-certificate-profiles-for-retail-stores"></a>Profily certifikátů definovaných uživatelem pro maloobchodní prodejny
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="overview"></a>Přehled
 
-Toto téma obsahuje přehled certifikátových profilů dostupných v Microsoft Dynamics 365 Commerce. Tato funkce rozšiřuje funkci [Správa tajných kódů pro kanály Retail](../dev-itpro/manage-secrets.md) přidáním podpory pro místní certifikáty.
+Tento článek obsahuje přehled certifikátových profilů dostupných v Microsoft Dynamics 365 Commerce. Tato funkce rozšiřuje funkci [Správa tajných kódů pro kanály Retail](../dev-itpro/manage-secrets.md) přidáním podpory pro místní certifikáty.
 
 Když pokladní místo běží v offline režimu, nemůže pracovat s certifikáty, které jsou uloženy v trezoru klíčů. Místo toho by měl být použit místní certifikát. Podporovány jsou následující schopnosti:
 

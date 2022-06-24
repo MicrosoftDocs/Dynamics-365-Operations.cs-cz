@@ -1,6 +1,6 @@
 ---
 title: Obohacení stránky produktu
-description: Toto téma popisuje, jak obohatit stránku produktu v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak obohatit stránku produktu v řešení Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad58f0324c91c7488e5eb823fa3d0e1758ec63fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847619"
 ---
 # <a name="enrich-a-product-page"></a>Obohacení stránky produktu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak obohatit stránku produktu v řešení Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak obohatit stránku produktu v řešení Microsoft Dynamics 365 Commerce.
 
 Ve výchozím nastavení používá web pro zobrazení dat produktu běžnou stránku. Tato stránka obsahuje základní informace o produktu a ovládací prvky, které jsou nutné k jeho prodeji. Můžete však doplnit informace, které pocházejí z Commerce Scale Unit, o další obrázky nebo text pro určitý produkt. Tento proces nazýváme obohacováním stránky produktu.
 

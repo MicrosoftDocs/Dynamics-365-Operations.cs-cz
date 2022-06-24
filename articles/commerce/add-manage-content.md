@@ -1,6 +1,6 @@
 ---
 title: Způsoby přidání obsahu
-description: V tomto tématu je uveden přehled a výběr odkazů pro umístění a způsob zahájení správy obsahu pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
+description: V tomto článku je uveden přehled a výběr odkazů pro umístění a způsob zahájení správy obsahu pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8a2dbb7bc7659e2e23b0ba6e2b5645dbe508ef9c9bda10df3bad8d04a6cfb32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f01de31e4eca1266066b4fcf1c92b429bfc71c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727671"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871747"
 ---
 # <a name="ways-to-add-content"></a>Způsoby přidání obsahu
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je uveden přehled a odkazy na dokumentaci o tom, jak spravovat obsah pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
+V tomto článku je uveden přehled a odkazy na dokumentaci o tom, jak spravovat obsah pomocí sady nástrojů Microsoft Dynamics 365 Commerce pro vytváření webových stránek.
 
 Existuje mnoho způsobů, jak změnit vzhled, atmosféru a obsah vašeho webu. V závislosti na požadované úrovni vlastního nastavení mohou mnohé z těchto změn implementovat nevývojáři v rámci programu Site Builder, který je součástí sady nástrojů pro vytváření webových stránek aplikace Dynamics 365 Commerce. Nástroj Site Builder umožňuje vytvářet šablony, vybírat motivy a vybírat a konfigurovat moduly bez nutnosti psaní jakéhokoliv kódu. Oproti tomu jsou potřebné vývojové dovednosti pro vytvoření nového motivu nebo modulu, protože musí být použit pracovní postup pro nasazení sady SDK (Software Development Kit) pro elektronické obchodování a řešení Microsoft Dynamics Lifecycle Services (LCS).
 
-Následující témata umožňují začít s vysvětlením způsobu přidání a správy obsahu webu. Většina uvedených témat se zaměřují na oblasti vašeho webu, které nevyžadují vývojáře. Některé adresy upravují základní obsah, zatímco jiné se soustředí na úlohy správce webu. Každé z těchto témat povede k označení konkrétních úkolů, které mohou vyžadovat práci sady SDK. V každém tématu se předpokládá, že jste již web zřídili a byl vám udělen přístup k sadě nástrojů pro vytváření webů na vašem webu.
+Následující články umožňují začít s vysvětlením způsobu přidání a správy obsahu webu. Většina uvedených článků se zaměřují na oblasti vašeho webu, které nevyžadují vývojáře. Některé adresy upravují základní obsah, zatímco jiné se soustředí na úlohy správce webu. Každé z těchto článků povede k označení konkrétních úkolů, které mohou vyžadovat práci sady SDK. V každém článku se předpokládá, že jste již web zřídili a byl vám udělen přístup k sadě nástrojů pro vytváření webů na vašem webu.
 
-Začněte výběrem jednoho z následujících témat.
+Začněte výběrem jednoho z následujících článků.
 
 - Chcete-li se seznámit s terminologií správy obsahu, která se používá v konfigurátoru webů a v této dokumentaci, viz [Glosář modelu stránky](page-elements-overview.md).
 - Chcete-li pochopit, jak moduly pracují v rámci workflowů správy obsahu, viz [Práce s moduly](work-with-modules.md).

@@ -1,6 +1,6 @@
 ---
 title: Směšování dimenzí produktu na skladovém místě
-description: Toto téma poskytuje informace o míchání dimenzí produktů na skladovém místě. Tato funkce profilu skladového místa pomáhá zlepšit správu skladového místa, pokud se používají varianty produktu nebo produkty, které mají různé dimenze, jako například v módním průmyslu. Funkce umožní rozhodnout, zda je možné konfigurace, barvy, styly a velikosti pro konkrétní profil skladového místa míchat, nebo zda lze na jedno skladové místo umístit pouze jednu dimenzi nebo kombinaci.
+description: Tento článek poskytuje informace o míchání dimenzí produktů na skladovém místě. Tato funkce profilu skladového místa pomáhá zlepšit správu skladového místa, pokud se používají varianty produktu nebo produkty, které mají různé dimenze, jako například v módním průmyslu. Funkce umožní rozhodnout, zda je možné konfigurace, barvy, styly a velikosti pro konkrétní profil skladového místa míchat, nebo zda lze na jedno skladové místo umístit pouze jednu dimenzi nebo kombinaci.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885718"
 ---
 # <a name="location-product-dimension-mixing"></a>Směšování dimenzí produktu na skladovém místě
 
@@ -28,7 +28,7 @@ Míchání dimenzí produktu na skladovém místě je funkce profilu skladového
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce míchání dimenzí produktů na skladovém místě
 
-Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta funkce *Směšování dimenzí produktu na skladovém místě*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Směšování dimenzí produktu na skladovém místě* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li používat funkčnost popsanou v tomto článku, musí být ve vašem systému zapnuta funkce *Směšování dimenzí produktu na skladovém místě*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním funkce *Směšování dimenzí produktu na skladovém místě* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Nastavení
 
@@ -44,7 +44,7 @@ Každé skladové místo ve skladu musí mít přidružený profil skladového m
     > [!NOTE]
     > U této možnosti můžete nastavit hodnotu *Ano*, pouze když je u možnosti **Povolit míchání položek** nastavena možnost *Ne*.
 
-1. Na záložce s náhledem **Povolit míchání položek** nastavte u položky **Velikost** hodnotu *Ano*. Ve scénáři popsaném v tomto tématu lze míchání provádět pouze u produktů, které se liší dimenzí **Velikost**. K dispozici jsou však také další možnosti.
+1. Na záložce s náhledem **Povolit míchání položek** nastavte u položky **Velikost** hodnotu *Ano*. Ve scénáři popsaném v tomto článku lze míchání provádět pouze u produktů, které se liší dimenzí **Velikost**. K dispozici jsou však také další možnosti.
 1. Zvolte **Uložit**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Vytvoření nového základního produktu a variant produktů

@@ -1,6 +1,6 @@
 ---
 title: Zobrazení majetku
-description: Toto téma popisuje zobrazení majetku v modulu Správa majetku.
+description: Tento článek popisuje zobrazení majetku v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4265928fc5cb899a77eee6e5b9ff0a928efbe99c99ec7fe31eecffcb0f98f752
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882714"
 ---
 # <a name="asset-view"></a>Zobrazení majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6765531"
 
  
 
-Toto téma popisuje zobrazení majetku v modulu Správa majetku. Stránka **Zobrazení majetku** zobrazuje aktivní majetek a funkční místa ve stromovém zobrazení. Proto můžete snadno získat přehled o vztazích majetku a funkčních místech. Dále můžete zobrazit podrobné informace o funkčních místech, majetku a souvisejících kusovnících. Můžete také získat rychlý přehled o aktivních požadavcích na údržbu a pracovních příkazech, které souvisejí s majetkem.
+Tento článek popisuje zobrazení majetku v modulu Správa majetku. Stránka **Zobrazení majetku** zobrazuje aktivní majetek a funkční místa ve stromovém zobrazení. Proto můžete snadno získat přehled o vztazích majetku a funkčních místech. Dále můžete zobrazit podrobné informace o funkčních místech, majetku a souvisejících kusovnících. Můžete také získat rychlý přehled o aktivních požadavcích na údržbu a pracovních příkazech, které souvisejí s majetkem.
 
 1. Vyberte **Správa majetku** \> **Společné** \> **Majetek** \> **Zobrazení majetku**.
 2. Chcete-li změnit zobrazení na stránce, vyberte novou hodnotu v poli **Zobrazení**.

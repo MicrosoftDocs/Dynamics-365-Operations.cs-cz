@@ -1,6 +1,6 @@
 ---
 title: Integrace s výrobními informačními systémy třetích stran
-description: Toto téma vysvětluje, jak můžete integrovat Microsoft Dynamics 365 Supply Chain Management s výrobním informačním systémem třetí strany (MES).
+description: Tento článek vysvětluje, jak můžete integrovat Microsoft Dynamics 365 Supply Chain Management s výrobním informačním systémem třetí strany (MES).
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678680"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860631"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrace s výrobními informačními systémy třetích stran
 
@@ -238,7 +238,7 @@ U zprávy *ukončení výrobní zakázky* má údaj `_messageType` hodnotu `Prod
 
 ## <a name="other-production-information"></a>Další informace o výrobě
 
-Zprávy podporují akce nebo události, ke kterým dochází v dílně. Jsou zpracovány pomocí integračního prostředí MES popsaného v tomto tématu. Návrh předpokládá, že další referenční informace, které mají být sdíleny s MES (jako jsou informace související s produktem nebo kusovník nebo trasa (s konkrétním nastavením a časy konfigurace) použité v konkrétní výrobní zakázce), budou načteny ze systému s využitím [datových entit](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) prostřednictvím přenosu souborů nebo OData.
+Zprávy podporují akce nebo události, ke kterým dochází v dílně. Jsou zpracovány pomocí integračního prostředí MES popsaného v tomto článku. Návrh předpokládá, že další referenční informace, které mají být sdíleny s MES (jako jsou informace související s produktem nebo kusovník nebo trasa (s konkrétním nastavením a časy konfigurace) použité v konkrétní výrobní zakázce), budou načteny ze systému s využitím [datových entit](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) prostřednictvím přenosu souborů nebo OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Získání zpětné vazby o stavu zprávy
 
@@ -251,7 +251,7 @@ Poté, co MES odešle zprávu do aplikace Supply Chain Management, může být d
 
 V těchto případech můžete využít standardní funkci výstrahy v Supply Chain Management. Informace o tom, jak fungují standardní výstrahy, naleznete v následujících zdrojích:
 
-- Téma nápovědy: [Přehled výstrah](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Článek nápovědy: [Přehled výstrah](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Možnosti pravidla výstrahy v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Můžete například nastavit následující výstrahy, abyste poskytli zpětnou vazbu o stavu zprávy:

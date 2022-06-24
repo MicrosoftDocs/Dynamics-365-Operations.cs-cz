@@ -1,6 +1,6 @@
 ---
 title: Cílení na zařízení, trh a geografickou polohu
-description: Toto téma popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
+description: Tento článek popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
 author: sushma-rao
 ms.date: 02/03/2022
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 90772fd942db30bbf4f65a87b1dca4b2aaacee1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090687"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881650"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Cílení na zařízení, trh a geografickou polohu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
+Tento článek popisuje, jak vytvářet, upravovat a spravovat cílové kupiny a cíle v konfigurátoru webů Microsoft Dynamics 365 Commerce pomocí informací o zařízení, trhu a geolokaci.
 
 Dynamics 365 Commerce umožňuje přizpůsobit variace obsahu vaší stránky (známé jako *cíle*) pro konkrétní skupiny zákazníků (známé jako *cílové skupiny*), které pomohou zvýšit zapojení a spokojenost uživatelů. Nejprve si můžete vytvořit cílovou skupinu nebo cíl. Úspěšné cílení však vyžaduje obě tyto součásti.
 

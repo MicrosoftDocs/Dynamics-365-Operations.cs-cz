@@ -1,6 +1,6 @@
 ---
 title: Vytvoření opakované nákupní objednávky
-description: Toto téma popisuje, jak vytvořit opakující se nákupní objednávky zkopírováním řádků z předchozího dokumentu nákupní objednávky do nové či stávající nákupní objednávky.
+description: Tento článek popisuje, jak vytvořit opakující se nákupní objednávky zkopírováním řádků z předchozího dokumentu nákupní objednávky do nové či stávající nákupní objednávky.
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865085"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Vytvoření opakované nákupní objednávky
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit opakující se nákupní objednávky zkopírováním řádků z předchozího dokumentu nákupní objednávky do nové či stávající nákupní objednávky. Existují dva způsoby vytvoření opakovaných objednávek. Můžete použít akce dostupné na úrovni dokumentů v podokně akcí, nebo můžete použít akce z podrobností o řádku. Akce na úrovni dokumentu jsou určeny především k vytváření nové nákupní objednávky přidáním řádků a informace do záhlaví z jiné objednávky, zatímco akce z podrobností řádku se používá zejména pro přidávání řádků do existující objednávky. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento úkol obvykle provádí nákupčí.
+Tento článek popisuje, jak vytvořit opakující se nákupní objednávky zkopírováním řádků z předchozího dokumentu nákupní objednávky do nové či stávající nákupní objednávky. Existují dva způsoby vytvoření opakovaných objednávek. Můžete použít akce dostupné na úrovni dokumentů v podokně akcí, nebo můžete použít akce z podrobností o řádku. Akce na úrovni dokumentu jsou určeny především k vytváření nové nákupní objednávky přidáním řádků a informace do záhlaví z jiné objednávky, zatímco akce z podrobností řádku se používá zejména pro přidávání řádků do existující objednávky. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento úkol obvykle provádí nákupčí.
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>Vytvoření nové opakující se nákupní objednávky

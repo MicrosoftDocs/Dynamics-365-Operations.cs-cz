@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867920"
 ---
 # <a name="product-dimensions"></a>Dimenze produktu
 
@@ -47,7 +47,7 @@ Hodnoty dimenzí produktu pro rozměry, barvy a styl dimenzí lze vytvořit na n
 
 Hodnoty dimenze produktu pro konfigurační dimenze jsou obvykle tvořeny pomocí konfigurátoru produktu nebo konfigurátoru založeného na dimenzích. 
 
-Verze produktu se obvykle vytvářejí pro konkrétní verze, protože se produkt vyvíjí během jeho životního cyklu. Verze produktu jsou podrobně popsány dále v tomto tématu.
+Verze produktu se obvykle vytvářejí pro konkrétní verze, protože se produkt vyvíjí během jeho životního cyklu. Verze produktu jsou podrobně popsány dále v tomto článku.
 
 Dimenze produktu se také vytvářejí a udržují na stránce **Dimenze produktu**, která je přístupná z následujících umístění:
 

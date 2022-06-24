@@ -1,6 +1,6 @@
 ---
 title: Odložené zpracování ručního pohybu zásob
-description: Toto téma popisuje, jak použít odložené zpracování ručního pohybu zásob v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jak použít odložené zpracování ručního pohybu zásob v Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863730"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Odložené zpracování ručního pohybu zásob
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak použít odložené zpracování ručního pohybu zásob v Microsoft Dynamics 365 Supply Chain Management.
+Tento článek popisuje, jak použít odložené zpracování ručního pohybu zásob v Microsoft Dynamics 365 Supply Chain Management.
 
 Odložené zpracování umožňuje pracovníkům skladu pokračovat v práci i v době, kdy na pozadí běží operace vložení. Odložené zpracování je užitečné v případě, kdy server může mít v době zpracování občasný nebo neplánovaný nárůst doby zpracování a ta může ovlivnit produktivitu pracovníka. Typ práce *Pohyb zásob* byl nyní přidán do sady pracovních typů, které tato funkce podporuje.
 

@@ -1,6 +1,6 @@
 ---
 title: Naplánovat pracovní příkazy
-description: Toto téma vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku.
+description: Tento článek vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845047"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718052"
 
  
 
-Toto téma vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku. 
+Tento článek vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku. 
 
 Požadovaný počet hodin pro pracovní příkaz je definován součtem předpokládaných hodin minus zaúčtované hodiny. Je-li vyžadováno více času, musí být prognóza upravena odpovídajícím způsobem. Ve volbě **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** můžete zobrazit nebo upravit prognózy na pracovním příkazu výběrem pracovního příkazu a kliknutím na **Prognóza** na kartě **Pracovní příkaz**. Po vytvoření a odhadu pracovních příkazů je dalším krokem přidělení požadovaných pracovníků a nástrojů údržby, které dokončí pracovní příkazy.
 

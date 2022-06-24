@@ -1,6 +1,6 @@
 ---
 title: Zásady práce
-description: Toto téma vysvětluje, jak nastavit pracovní zásady.
+description: Tento článek vysvětluje, jak nastavit pracovní zásady.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855841"
 ---
 # <a name="work-policies"></a>Zásady práce
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit systém a mobilní aplikaci Řízení skladu tak, aby podporovaly pracovní zásady. Tuto funkci můžete použít k rychlé registraci zásob bez vytvoření práce odložení, když obdržíte objednávky nákupu nebo převodu nebo když dokončíte výrobní procesy. Toto téma obsahuje obecné informace. Podrobné informace týkající se přijímání registračních značek viz [Příjem registrační značky prostřednictvím mobilní aplikaci Řízení skladu](warehousing-mobile-device-app-license-plate-receiving.md).
+Tento článek vysvětluje, jak nastavit systém a mobilní aplikaci Řízení skladu tak, aby podporovaly pracovní zásady. Tuto funkci můžete použít k rychlé registraci zásob bez vytvoření práce odložení, když obdržíte objednávky nákupu nebo převodu nebo když dokončíte výrobní procesy. V tomto článku jsou obecné informace. Podrobné informace týkající se přijímání registračních značek viz [Příjem registrační značky prostřednictvím mobilní aplikaci Řízení skladu](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená položka nahlášena jako dokončená nebo když je zboží přijato pomocí mobilní aplikaci Řízení skladu. Každé zásady práce nastavíte definováním podmínek, ve kterých platí: typy a procesy pracovní objednávky, umístění zásob a (volitelně) produkty. Například objednávka produktu *A0001* musí být přijata na místě *RECV* ve skladu *24*. Později se produkt spotřebuje v jiném procesu na místě *RECV*. V takovém případě můžete nastavit pracovní zásadu, která zabrání tomu, aby v případě, že pracovník ohlásí produkt *A0001* jako přijatý do skladu *RECV*, nebyla vytvořena práce odložení.
 
@@ -35,7 +35,7 @@ Zásady práce určují, zda je práce ve skladu vytvořena, když je vyrobená 
 
 ## <a name="activate-the-features-in-your-system"></a>Aktivace funkcí v systému
 
-Chcete-li zpřístupnit všechny funkce popsané v tomto tématu ve vašem systému, zapněte v systému dvě následující funkce [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Chcete-li zpřístupnit všechny funkce popsané v tomto článku ve vašem systému, zapněte v systému dvě následující funkce [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Rozšíření příjmu registrační značky
 - Vylepšení zásad práce pro příchozí práci

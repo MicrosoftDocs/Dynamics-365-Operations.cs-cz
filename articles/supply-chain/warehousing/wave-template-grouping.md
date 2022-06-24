@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851239"
 ---
 # <a name="wave-template-grouping"></a>Seskupení šablon vlny
 
@@ -41,7 +41,7 @@ Než můžete použít funkci *Seskupení šablon vlny*, musíte ji v systému 
 Chcete-li zpřístupnit seskupení šablon vlny, nastavte [šablonu vlny](tasks/configure-wave-processing.md) v souladu s pokyny níže.
 
 1. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny**.
-1. V levém podokně vyberte šablonu vlny, kterou chcete nastavovat. Pokud se chystáte využít scénář uvedený dále v tomto tématu s využitím ukázkových dat, vyberte šablonu **Výchozí dodávka 62**.
+1. V levém podokně vyberte šablonu vlny, kterou chcete nastavovat. Pokud se chystáte využít scénář uvedený dále v tomto článku s využitím ukázkových dat, vyberte šablonu **Výchozí dodávka 62**.
 1. Vyberte možnost **Upravit**, tím přepnete stránku do režimu úprav.
 1. Na záložce s náhledem **Obecné** nastavte následující hodnoty:
 
@@ -84,7 +84,7 @@ Tento scénář můžete také použít jako vodítko pro použití této funkce
 
 Tento scénář ukazuje, jak pomocí seskupení šablon vlny automaticky vytvářet více vln na základě kritérií seskupení definovaných v šabloně vlny. V tomto scénáři je šablona vlny nastavena v systému tak, aby vytvořila jednu vlnu pro každou službu dopravce.
 
-Než začnete, připravte si šablonu vlny postupem popsaným v tématu v části [Nastavení šablony vlny k použití pro seskupení šablon vlny](#set-up-template) výše. Pokud budete využívat tento scénář s ukázkovými daty, je třeba použít hodnoty z ukázkových dat, jak se v proceduře navrhuje. Toto nastavení seskupí vaše vlny podle služby dopravce, jež je nastavena pro každou prodejní objednávku.
+Než začnete, připravte si šablonu vlny postupem popsaným v článku v části [Nastavení šablony vlny k použití pro seskupení šablon vlny](#set-up-template) výše. Pokud budete využívat tento scénář s ukázkovými daty, je třeba použít hodnoty z ukázkových dat, jak se v proceduře navrhuje. Toto nastavení seskupí vaše vlny podle služby dopravce, jež je nastavena pro každou prodejní objednávku.
 
 #### <a name="create-sales-order-1"></a>Vytvoření prodejní objednávky 1
 

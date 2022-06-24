@@ -1,6 +1,6 @@
 ---
 title: Značení zásob s optimalizací plánování
-description: Toto téma poskytuje informace o možnostech, které jsou k dispozici pro označení zásob v potvrzených objednávkách, když používáte optimalizaci plánování.
+description: Tento článek poskytuje informace o možnostech, které jsou k dispozici pro označení zásob v potvrzených objednávkách, když používáte optimalizaci plánování.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8d06527d125837b056729574517ca5ed6738fcff
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844460"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Značení zásob s optimalizací plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma poskytuje informace o možnostech, které jsou k dispozici pro označení zásob v potvrzených objednávkách, když používáte optimalizaci plánování.
+Tento článek poskytuje informace o možnostech, které jsou k dispozici pro označení zásob v potvrzených objednávkách, když používáte optimalizaci plánování.
 
 *Označení* slouží k propojení nabídky a poptávky. Připomíná to *doložení*, které označuje, jak hlavní plánování očekává pokrytí poptávky. Z hlediska plánování je hlavní rozdíl v tom, že značení je trvalejší než doložení.
 

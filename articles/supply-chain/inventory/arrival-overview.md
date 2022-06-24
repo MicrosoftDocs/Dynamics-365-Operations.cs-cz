@@ -1,6 +1,6 @@
 ---
 title: Přehled doručení
-description: Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
+description: Tento článek obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,22 +18,22 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874065"
 ---
 # <a name="arrival-overview"></a>Přehled doručení
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
+Tento článek obsahuje informace o funkci Přehled doručení. Stránka Přehled doručení je součástí této funkce a poskytuje přehled všech položek, které jsou očekávány jako příchozí položky.
 
-Stránka **Přehled doručení** uvádí přehled všech očekávaných příchozích položek. Zobrazuje také doručení, která mohou být inicializována na základě přehledu. Toto téma se zaměřuje na proces příjmu.
+Stránka **Přehled doručení** uvádí přehled všech očekávaných příchozích položek. Zobrazuje také doručení, která mohou být inicializována na základě přehledu. Tento článek se zaměřuje na proces příjmu.
 
-## <a name="business-scenario"></a>Obchodní scénář
+## <a name="business-scenario"></a>Scénáře obchodu
 Předpokládejme následující scénář v příchozích procesech.
 
 [![Obchodní scénář.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)

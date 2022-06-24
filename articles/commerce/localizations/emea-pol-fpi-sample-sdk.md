@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)
-description: Toto téma obsahuje pokyny pro nasazení ukázky integrace fiskální tiskárny pro Polsko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
+description: Tento článek obsahuje pokyny pro nasazení ukázky integrace fiskální tiskárny pro Polsko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 3de7559838a8d8caf64993a468f06ba2d50fff46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851150"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Pokyny k nasazení ukázkové integrace fiskální tiskárny pro Polsko (starší verze)
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma obsahuje pokyny pro nasazení ukázkové integrace fiskální tiskárny pro Polsko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md). 
+Tento článek obsahuje pokyny pro nasazení ukázkové integrace fiskální tiskárny pro Polsko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md). 
 
-Ukázka fiskální integrace pro Polsko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tato ukázka sestává z rozšíření pro CRT (Commerce Runtime) a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
+Ukázka fiskální integrace pro Polsko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tato ukázka sestává z rozšíření pro CRT (Commerce Runtime) a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
 
 ## <a name="development-environment"></a>Vývojové prostředí
 

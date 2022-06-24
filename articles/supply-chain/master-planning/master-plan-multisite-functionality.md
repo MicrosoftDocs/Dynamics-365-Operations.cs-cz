@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55594290f0583085f16506acb058ad83a02c54f1
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 289763931703eb354ae78fa18f37cd00f1102de8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844902"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>Přehled hlavního plánování a funkce více pracovišť
 
@@ -37,7 +37,7 @@ Když je dimenze povinná, je nutné zadat její hodnotu ve všech skladových t
 
 Pokud není sklad nastavený jako povinný, je možné jej odvodit z počátečního požadavku. Plánovací modul musí na základě nastavení definovaných pro položku, jednotlivé sklady a podrobností řádku objednávky určit, který sklad se má použít.
 
-Následující témata popisují, jak plánovací modul určuje používaný sklad při definici různých nastavení.
+Následující články popisují, jak plánovací modul určuje používaný sklad při definici různých nastavení.
 
 [Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 

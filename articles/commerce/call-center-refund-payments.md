@@ -1,6 +1,6 @@
 ---
 title: Zpracování refundace platby v kontaktních střediscích
-description: Toto téma vysvětluje, jak se refundace plateb generují prostřednictvím call center, když se vytvářejí vrácené položky nebo když se ruší objednávky nebo řádky objednávek.
+description: Tento článek vysvětluje, jak se refundace plateb generují prostřednictvím call center, když se vytvářejí vrácené položky nebo když se ruší objednávky nebo řádky objednávek.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880107"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Zpracování refundace platby v kontaktních střediscích
 
-Toto téma vysvětluje, jak se refundace plateb generují prostřednictvím call center, když se vytvářejí vrácené položky nebo když se ruší objednávky nebo řádky objednávek.
+Tento článek vysvětluje, jak se refundace plateb generují prostřednictvím call center, když se vytvářejí vrácené položky nebo když se ruší objednávky nebo řádky objednávek.
 
 Uživatel, který vytvoří objednávku vrácení pro zákazníka jako uživatel call centra v ústředí Microsoft Dynamics 365 Commerce, používá stránku **Vrátit objednávku** k vytvoření počáteční autorizace vrácených materiálů (RMA). RMA definuje produkty, které chce zákazník vrátit nebo vyměnit, a vytváří propojenou prodejní objednávku vrácení, která má typ objednávky **Vrácená objednávka**. Tato propojená vrácená objednávka se používá ke sledování zaúčtování vráceného zboží a veškerých dobropisů nebo vrácení plateb, které jsou zaúčtovány.
 
@@ -92,7 +92,7 @@ Nastavení **Ano** pro možnost **Použít kredit** je k dispozici pouze v pří
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Přepíše platby za vrácení z call centra
 
-Ačkoli logika call centra systematicky určuje způsob platby refundace způsobem popsaným výše v tomto tématu, uživatelé někdy mohou chtít tyto platby přepsat. Uživatel může například upravit nebo odebrat stávající řádky platby pro refundaci a použít nové řádky platby. Systémem vypočítané platby refundace mohou změnit pouze uživatelé, kteří mají správná přepisovací oprávnění. Tato oprávnění lze konfigurovat na stránce **Přepsat oprávnění** v Retail a Commerce. Chcete-li provést přepsání platby refundace, musí být uživatel propojen s rolí zabezpečení, kde je možnost **Povolit alternativní platbu** nastavena na **Ano** na stránce **Přepsat oprávnění**.
+Ačkoli logika call centra systematicky určuje způsob platby refundace způsobem popsaným výše v tomto článku, uživatelé někdy mohou chtít tyto platby přepsat. Uživatel může například upravit nebo odebrat stávající řádky platby pro refundaci a použít nové řádky platby. Systémem vypočítané platby refundace mohou změnit pouze uživatelé, kteří mají správná přepisovací oprávnění. Tato oprávnění lze konfigurovat na stránce **Přepsat oprávnění** v Retail a Commerce. Chcete-li provést přepsání platby refundace, musí být uživatel propojen s rolí zabezpečení, kde je možnost **Povolit alternativní platbu** nastavena na **Ano** na stránce **Přepsat oprávnění**.
 
 ![Povolení alternativních možností platby na stránce Přepsat oprávnění.](media/overridepermissions.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Vytváření obchodních katalogů pro B2B weby
-description: Toto téma popisuje, jak vytvořit katalogy Commerce pro weby elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
+title: Vytvoření katalogů Commerce pro B2B weby
+description: Tento článek popisuje, jak vytvořit katalogy Commerce pro weby elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848982"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>Vytváření obchodních katalogů pro B2B weby
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>Vytvoření katalogů Commerce pro B2B weby
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Toto téma popisuje, jak vytvořit katalogy produktů Commerce pro weby elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce. Odpovědi na často kladené otázky o katalozích Commerce pro B2B weby najdete v článku [Nejčastější dotazy k obchodním katalogům pro B2B](catalogs-b2b-sites-FAQ.md).
+Tento článek popisuje, jak vytvořit katalogy produktů Commerce pro weby elektronického obchodování typu business-to-business (B2B) v Microsoft Dynamics 365 Commerce. Odpovědi na často kladené otázky o katalozích Commerce pro B2B weby najdete v článku [Nejčastější dotazy k obchodním katalogům pro B2B](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Toto téma se týká Microsoft Dynamics 365 Commerce verze 10.0.27 a novějších vydání.
+> Tento článek se týká Microsoft Dynamics 365 Commerce verze 10.0.27 a novějších vydání.
 
 Pomocí katalogů Commerce můžete identifikovat produkty, které chcete nabídnout na vašich internetových obchodech B2B. Když vytváříte katalog, identifikujete online obchody, ve kterých jsou produkty nabízeny, přidáte produkty, které chcete zahrnout, a rozšíříte nabídku produktů přidáním podrobností o merchandisingu. Pro každý B2B online obchod můžete vytvořit více katalogů.
 

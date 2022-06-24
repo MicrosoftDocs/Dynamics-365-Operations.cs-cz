@@ -1,6 +1,6 @@
 ---
 title: Integrace Dynamics 365 Supply Chain Management (správa majetku) s Dynamics 365 Guides
-description: Toto téma vysvětluje, jak integrovat modul správy majetku do produktu Microsoft Dynamics 365 Supply Chain Management s Dynamics 365 Guides, aby bylo možné využít příručky smíšené reality ve vašich každodenních pracovních a servisních pracovních postupech.
+description: Tento článek vysvětluje, jak integrovat modul správy majetku do produktu Microsoft Dynamics 365 Supply Chain Management s Dynamics 365 Guides, aby bylo možné využít příručky smíšené reality ve vašich každodenních pracovních a servisních pracovních postupech.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875677"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrace Dynamics 365 Supply Chain Management (správa majetku) s Dynamics 365 Guides
 
@@ -47,7 +47,7 @@ Chcete-li průvodce přiřadit, použijte řádek kontrolního seznamu údržby 
 
 Chcete-li přiřadit průvodce k šabloně kontrolního seznamu údržby, postupujte takto.
 
-1. Vytvořte průvodce pomocí aplikací Dynamics 365 Guides PC a HoloLens. Další informace o vytvoření průvodce naleznete v následujících tématech:
+1. Vytvořte průvodce pomocí aplikací Dynamics 365 Guides PC a HoloLens. Další informace o vytvoření průvodce naleznete v následujících článcích:
 
     - [Vytvoření průvodce pomocí aplikace PC](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Umístění hologramů pomocí aplikace HoloLens](/dynamics365/mixed-reality/guides/hololens-app-overview)

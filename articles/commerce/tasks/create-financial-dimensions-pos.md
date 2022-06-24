@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12206661c20c3029ca61c75f728fbd915706477be6f6ebf7abe8366ebda8980b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e85756a2b7cdd3627c7a3fffa8dc97e0db13641a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884783"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách
 
 [!include [banner](../includes/banner.md)]
 
-Tato procedura vás provede procesem vytvoření finančních dimenzí pro registry pokladních míst (POS) a ukazuje, jak nakonfigurovat hodnoty finančních dimenzí na registračních pokladnách. Tato procedura neobsahuje další související postup, jako je například vytváření sad dimenzí a účetních struktur. Tyto úkoly můžete najít v jiných tématech. Tento záznam používá data ukázkové společnosti USRT.
+Tato procedura vás provede procesem vytvoření finančních dimenzí pro registry pokladních míst (POS) a ukazuje, jak nakonfigurovat hodnoty finančních dimenzí na registračních pokladnách. Tato procedura neobsahuje další související postup, jako je například vytváření sad dimenzí a účetních struktur. Tyto úkoly můžete najít v jiných článcích. Tento záznam používá data ukázkové společnosti USRT.
 
 1. Přejděte do části Hlavní kniha > Účtová osnova > Dimenze > Finanční dimenze.
 2. Klikněte na položku Nová.

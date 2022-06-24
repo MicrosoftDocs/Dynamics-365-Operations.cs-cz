@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobení navigace na webu
-description: V tomto tématu je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
+description: V tomto článku je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8af68fff17f2f92356ade356da0e75867ed54950d744c6cbe730ad8db4ac3975
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60aaae397501269be55f5ef75e4314b4e1f0b252
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755875"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863454"
 ---
 # <a name="customize-site-navigation"></a>Přizpůsobení navigace na webu
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
+V tomto článku je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
 
 Online výkladní skříně obvykle zákazníkům umožňují vyhledat a procházet produkty pomocí procházení kategorií produktů. Takovou možnost obvykle poskytují karty v horní části stránky nebo navigační panel vlevo. V řešení Dynamics 365 Commerce můžete vytvářet a spravovat hierarchickou strukturu navigace mezi kategoriemi a produkty zahrnuté do různých kategorií.
 

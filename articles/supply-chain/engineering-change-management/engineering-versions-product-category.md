@@ -1,6 +1,6 @@
 ---
-title: Technické verze a kategorie technických produktů
-description: Toto téma poskytuje informace o konceptu technických verzí. Technické verze zajišťují, že různé stavy produktu a jeho dat jsou udržovány aktuální a jasné a že je lze v systému vizualizovat.
+title: Technické verze a kategorie technických produktů
+description: Tento článek poskytuje informace o konceptu technických verzí. Technické verze zajišťují, že různé stavy produktu a jeho dat jsou udržovány aktuální a jasné a že je lze v systému vizualizovat.
 author: t-benebo
 ms.date: 04/07/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: a98ead81a61ceac2ed721848847164f76e758f80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872058"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Technické verze a kategorie technických produktů
 
@@ -60,7 +60,7 @@ Upozorňujeme, že technický produkt může být najednou pouze v jednom přík
 
 ## <a name="track-versions-in-transactions"></a>Sledování verzí v transakcích
 
-Když používáte správu technických změn, vaše hlavní data produktu vždy obsahují jednu nebo více technických verzí. V nastavení technických produktů si můžete vybrat, zda je technická verze také součástí *logistické transakce*. (Další informace viz [Nastavení kategorií technických produktů](#product-category) dále v tomto tématu.) Pokud je logistický dopad relevantní, liší se podle produktu a společnosti. Někdy se používá pouze nejnovější verze produktu. Proto při zavedení nové verze již nelze použít předchozí verzi. V ostatních případech je předchozí verze vyžadována v logistických transakcích k překonání následujících výzev:
+Když používáte správu technických změn, vaše hlavní data produktu vždy obsahují jednu nebo více technických verzí. V nastavení technických produktů si můžete vybrat, zda je technická verze také součástí *logistické transakce*. (Další informace viz [Nastavení kategorií technických produktů](#product-category) dále v tomto článku.) Pokud je logistický dopad relevantní, liší se podle produktu a společnosti. Někdy se používá pouze nejnovější verze produktu. Proto při zavedení nové verze již nelze použít předchozí verzi. V ostatních případech je předchozí verze vyžadována v logistických transakcích k překonání následujících výzev:
 
 - Logistické oddělení musí zákazníkovi odeslat dva kusy produktu. V tomto případě se musíte rozhodnout, zda chcete nebo dovolíte odeslat dvě různé verze.
 - Později se zjistilo, že nastal problém a že souvisí s konkrétní změnou. V tomto případě by mohlo být výhodné přesně určit, která verze byla v každé objednávce dodána.
@@ -118,7 +118,7 @@ Na záložce s náhledem **Podrobnosti** kategorie technického produktu nastavt
 | Skupina dimenzí produktů | Nastavení **Sledování verzí v transakcích** vám pomůže vybrat skupinu dimenze produktu. Pokud jste určili, že chcete sledovat verzi v transakcích, zobrazí se skupiny dimenzí produktu, kde *verze* se používá dimenze. V opačném případě se zobrazí pouze skupiny dimenzí produktů, kde dimenze *verze* se nepoužívá. |
 | Stav životního cyklu produktu při vytvoření | Nastavte výchozí stav životního cyklu produktu, který by měl mít technický produkt při prvním vytvoření. Další informace viz [Stavy životního cyklu produktu a transakce](product-lifecycle-state-transactions.md). |
 | Pravidlo čísla verze | Vyberte pravidlo čísla verze, které se vztahuje na kategorii:<ul><li>**Manuální** - Pro každou novou verzi vyberete číslo verze.</li><li>**Automatické** - Systém nastaví číslo verze na základě formátu, který definujete. Při nastavování formátu použijte znak čísla (\#), který představuje číslici, a jakýkoli jiný znak představující konstantní hodnotu. Například pokud definujete formát jako *V-\#\#*, první verze bude „V-01“, druhá verze bude „V-02“ atd.</li><li>**Seznam** - Systém vezme další číslo z předdefinovaného seznamu vlastních hodnot, které definujete.</li></ul> |
-| Vynutit platnost | Vyberte, zda musí být data účinnosti technických verzí souvislá, nebo zda mohou existovat mezery a překrývání. Toto nastavení ovlivňuje způsob, jakým můžete používat pole **Platné od** a **Platné do** pro každou technickou verzi, kde platí kategorie.<ul><li>Pokud je tato možnost nastavena na *Ano*, hodnota **Platí od** pro každou verzi musí být zadána a mezi verzemi nejsou povoleny překryvy ani mezery. Datový rozsah pro každou technickou verzi je spojeno přímo s předchozí a další technickou verzí, pokud existují. V tomto scénáři se vždy používá nejnovější verze a starší verze se již nepoužívají.</li><li>Pokud je tato možnost nastavena na **Ne**, neexistují žádná omezení v polích data účinnosti u technických verzí a jsou povolena překrývání i mezery. V tomto scénáři může být aktivních více verzí současně a můžete pracovat s jakoukoli aktivní verzí.</li></ul><p>Tato možnost také ovlivní kusovníky a postupy, které jsou připojeny k verzi produktu. Další informace viz [Připojení kusovníků a postupů k technickým verzím](#boms-routes) dále v tomto tématu.</p> |
+| Vynutit platnost | Vyberte, zda musí být data účinnosti technických verzí souvislá, nebo zda mohou existovat mezery a překrývání. Toto nastavení ovlivňuje způsob, jakým můžete používat pole **Platné od** a **Platné do** pro každou technickou verzi, kde platí kategorie.<ul><li>Pokud je tato možnost nastavena na *Ano*, hodnota **Platí od** pro každou verzi musí být zadána a mezi verzemi nejsou povoleny překryvy ani mezery. Datový rozsah pro každou technickou verzi je spojeno přímo s předchozí a další technickou verzí, pokud existují. V tomto scénáři se vždy používá nejnovější verze a starší verze se již nepoužívají.</li><li>Pokud je tato možnost nastavena na **Ne**, neexistují žádná omezení v polích data účinnosti u technických verzí a jsou povolena překrývání i mezery. V tomto scénáři může být aktivních více verzí současně a můžete pracovat s jakoukoli aktivní verzí.</li></ul><p>Tato možnost také ovlivní kusovníky a postupy, které jsou připojeny k verzi produktu. Další informace viz [Připojení kusovníků a postupů k technickým verzím](#boms-routes) dále v tomto článku.</p> |
 | Použít názvosloví pravidla čísla | Tuto možnost nastavte na *Ano*, čímž povolíte pravidla pro definování čísla produktu pomocí číselných řad, názvů a hodnot technických atributů a textových konstant jako segmentů. Chcete-li vytvořit nebo upravit pravidla, vyberte tlačítko **Upravit**. |
 | Použít názvosloví pravidla názvu | Tuto možnost nastavte na *Ano*, čímž povolíte pravidla pro definování názvu pomocí názvů technických atributů, hodnot technických atributů a textových konstant jako segmentů. Chcete-li vytvořit nebo upravit pravidla, vyberte tlačítko **Upravit**. |
 | Použít názvosloví pravidla popisu | Tuto možnost nastavte na *Ano*, čímž povolíte pravidla pro definování popisu pomocí názvů technických atributů, hodnot technických atributů a textových konstant jako segmentů. Chcete-li vytvořit nebo upravit pravidla, vyberte tlačítko **Upravit**. |

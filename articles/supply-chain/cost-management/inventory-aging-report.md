@@ -1,6 +1,6 @@
 ---
 title: Příklady a logika sestavy stárnutí zásob
-description: Toto téma uvádí několik příkladů, které ukazují, jak interpretovat výsledky sestavy stárnutí zásob.
+description: Tento článek uvádí několik příkladů, které ukazují, jak interpretovat výsledky sestavy stárnutí zásob.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848013"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Příklady a logika sestavy stárnutí zásob
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí několik příkladů, které ukazují, jak interpretovat výsledky sestavy **stárnutí zásob**. Tato sestava kategorizuje hodnoty množství na skladě a zásob pro vybranou položku nebo skupinu položek do několika intervalů období. Toto téma také ukazuje vnitřní logiku sestavy.
+Tento článek uvádí několik příkladů, které ukazují, jak interpretovat výsledky sestavy **stárnutí zásob**. Tato sestava kategorizuje hodnoty množství na skladě a zásob pro vybranou položku nebo skupinu položek do několika intervalů období. Tento článek také ukazuje vnitřní logiku sestavy.
 
-Příklady v tomto tématu ukazují výsledky, které jsou prezentovány ve standardní sestavě **Stárnutí zásob**. Obecně však doporučujeme použít verzi [úložiště sestavy stárnutí zásob](inventory-aging-report-storage.md) této sestavy, zejména pokud máte mnoho položek a skladů, které je třeba zpracovat. Úložiště sestavy stárnutí zásob ukládá každý vygenerovaný přehled, zobrazuje výsledky jako interaktivní stránku a graf a umožňuje exportovat všechny uložené sestavy.
+Příklady v tomto článku ukazují výsledky, které jsou prezentovány ve standardní sestavě **Stárnutí zásob**. Obecně však doporučujeme použít verzi [úložiště sestavy stárnutí zásob](inventory-aging-report-storage.md) této sestavy, zejména pokud máte mnoho položek a skladů, které je třeba zpracovat. Úložiště sestavy stárnutí zásob ukládá každý vygenerovaný přehled, zobrazuje výsledky jako interaktivní stránku a graf a umožňuje exportovat všechny uložené sestavy.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Ukázková data použitá v těchto příkladech
 
-Příklady v tomto tématu jsou založeny na ukázkových datech skladových transakcí, které jsou popsány v této části.
+Příklady v tomto článku jsou založeny na ukázkových datech skladových transakcí, které jsou popsány v této části.
 
 ### <a name="storage-dimension-setup"></a>Nastavení dimenze úložiště
 

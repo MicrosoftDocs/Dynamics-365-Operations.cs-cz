@@ -1,6 +1,6 @@
 ---
 title: Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
-description: Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod.
+description: Tento článek popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod.
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 740857e6a902e21588855eef5e36cac68e560898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873271"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod. Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly. Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných tématech. Pokud chcete tento postup dokončit, musíte mít transakce, které byly dokončeny v POS a pak odeslány do aplikace Dynamics 365 Commerce. Tento záznam používá v ukázkových datech společnost USRT.
+Tento článek popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod. Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly. Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných článcích. Pokud chcete tento postup dokončit, musíte mít transakce, které byly dokončeny v POS a pak odeslány do aplikace Dynamics 365 Commerce. Tento záznam používá v ukázkových datech společnost USRT.
 
 1. Na domovské stránce vyberte **Finance obchodu**.
 2. Vyberte **Nový výpis**.

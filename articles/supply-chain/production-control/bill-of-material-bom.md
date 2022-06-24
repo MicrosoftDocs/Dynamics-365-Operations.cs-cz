@@ -1,6 +1,6 @@
 ---
 title: Kusovníky a receptury
-description: Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu.
+description: Tento článek obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 57a30aba3b0a37d939d0747b2dd305a92c82ae23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887276"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Kusovníky a receptury
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby. 
+Tento článek obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu. Kusovníky a vzorce určují požadované materiály nebo látky pro konkrétní produkt. Vzorce také určují souběžné a vedlejších produkty, které jsou přijaty v rámci konkrétní výroby. 
 
 ## <a name="bills-of-materials"></a>Kusovník
 

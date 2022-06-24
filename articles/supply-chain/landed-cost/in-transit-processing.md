@@ -1,6 +1,6 @@
 ---
 title: Zpracování přepravovaného zboží
-description: Toto téma popisuje, jak pracovat s objednávkami přepravovaného zboží. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, může být zboží fakturováno před jeho přijetím do skladu ke spotřebě.
+description: Tento článek popisuje, jak pracovat s objednávkami přepravovaného zboží. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, může být zboží fakturováno před jeho přijetím do skladu ke spotřebě.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854377"
 ---
 # <a name="goods-in-transit-processing"></a>Zpracování přepravovaného zboží
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak pracovat s objednávkami přepravovaného zboží. Tento typ objednávky se používá pouze v modulu **Náklady za doručení**. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, nemusíte čekat na přijetí zboží do skladu, než může být zboží fakturováno. Místo toho je zboží fakturováno, když opouští výchozí sklad nebo přístav dodavatele, a finanční náklady jsou uznány při zahájení cesty. Tato funkce vám umožní správně převzít vlastnictví zásob, protože zboží se často stává majetkem vaší organizace, když opustí přepravní přístav.
+Tento článek popisuje, jak pracovat s objednávkami přepravovaného zboží. Tento typ objednávky se používá pouze v modulu **Náklady za doručení**. Když je objednávka nebo cesta nastavena tak, aby používala zpracování přepravovaného zboží, nemusíte čekat na přijetí zboží do skladu, než může být zboží fakturováno. Místo toho je zboží fakturováno, když opouští výchozí sklad nebo přístav dodavatele, a finanční náklady jsou uznány při zahájení cesty. Tato funkce vám umožní správně převzít vlastnictví zásob, protože zboží se často stává majetkem vaší organizace, když opustí přepravní přístav.
 
 Při použití objednávek přepravovaného zboží jsou finančně aktualizované položky přijímány v prozatímním skladu, který se nazývá tranzitní sklad zboží. Zboží poté zůstane v tomto skladu, dokud ho nebude možné přijmout v konečném cílovém skladu (tj. ve skladu, který je definován na nákupním řádku). Nelze ho ručně odstranit.
 

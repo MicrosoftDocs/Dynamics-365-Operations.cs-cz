@@ -1,6 +1,6 @@
 ---
-title: Nastavení zásilky
-description: Toto téma vysvětluje, jak používat procesy příchozí skladové zásilky.
+title: Konfigurace zásilky
+description: Tento článek vysvětluje, jak používat procesy příchozí skladové zásilky.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872029"
 ---
-# <a name="set-up-consignment"></a>Nastavení zásilky
+# <a name="set-up-consignment"></a>Konfigurace zásilky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak používat procesy příchozí skladové zásilky.
+Tento článek vysvětluje, jak používat procesy příchozí skladové zásilky.
 
-Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Toto téma obsahuje informace o tom, jak fyzicky přijmout zásoby dodavatele na skladě bez nutnosti vytvoření transakcí v hlavní knize, jak spustit výrobní proces, kde lze fyzicky rezervovat zásoby vlastněné dodavatele, a jak změnit vlastnictví suroviny, aby bylo možné zpracovat spotřebu jakou součást zpracování výrobní zakázky. Je zda také pár informací o tom, jak může dodavatel sledovat spotřebu skladových zásob pomocí rozhraní dodavatelské spolupráce.
+Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Tento článek obsahuje informace o tom, jak fyzicky přijmout zásoby dodavatele na skladě bez nutnosti vytvoření transakcí v hlavní knize, jak spustit výrobní proces, kde lze fyzicky rezervovat zásoby vlastněné dodavatele, a jak změnit vlastnictví suroviny, aby bylo možné zpracovat spotřebu jakou součást zpracování výrobní zakázky. Je zda také pár informací o tom, jak může dodavatel sledovat spotřebu skladových zásob pomocí rozhraní dodavatelské spolupráce.
 
 ## <a name="overview-of-the-consignment-process"></a>Přehled procesu zásilky
 

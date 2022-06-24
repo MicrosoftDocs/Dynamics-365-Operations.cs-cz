@@ -1,6 +1,6 @@
 ---
 title: Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit
-description: Toto téma popisuje, jak naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit (ATP).
+description: Tento článek popisuje, jak naplánovat budoucí změny ve skladu a vypočítat množství, které lze slíbit (ATP).
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856186"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Plány změn ve skladu Viditelnosti zásob a funkce Lze slíbit
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit funkci *Plán změn ve skladu* pro plánování budoucích změn ve skladu a výpočet dostupných množství, které lze slíbit (ATP). ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití tohoto výpočtu může výrazně zvýšit vaši schopnost plnění objednávky.
+Tento článek popisuje, jak nastavit funkci *Plán změn ve skladu* pro plánování budoucích změn ve skladu a výpočet dostupných množství, které lze slíbit (ATP). ATP (Lze slíbit) je množství položky, které je k dispozici a může být odběrateli přislíbena v příštím období. Použití tohoto výpočtu může výrazně zvýšit vaši schopnost plnění objednávky.
 
 Mnoha výrobcům, maloobchodníkům či prodejcům nestačí jen vědět, co mají aktuálně skladem. Musejí mít úplný přehled o budoucí dostupnosti. Tato budoucí dostupnost by měla zohledňovat budoucí nabídku, budoucí poptávku a ATP.
 

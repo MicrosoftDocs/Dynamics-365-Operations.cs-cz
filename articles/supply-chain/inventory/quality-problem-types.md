@@ -1,6 +1,6 @@
 ---
 title: Typy problémů pro neshody
-description: Toto téma popisuje, jak vytvářet a používat typy problémů pro neshody.
+description: Tento článek popisuje, jak vytvářet a používat typy problémů pro neshody.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26705dd12f478f4ca6046c7265d4ae3cb1d08c69
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a73e692257c2a27085d60e75e028445811ee778a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857743"
 ---
 # <a name="problem-types-for-nonconformances"></a>Typy problémů pro neshody
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvářet a používat typy problémů pro neshody.
+Tento článek popisuje, jak vytvářet a používat typy problémů pro neshody.
 
 Stránku **Typy problémů** použijte k definování klasifikace problémů s kvalitou, které mohou nastat u různých typů neshod. Pro každý typ problému, který vytvoříte, musíte určit typy neshod, se kterými lze typ problému použít. Můžete nastavit následující typy neshod:
 

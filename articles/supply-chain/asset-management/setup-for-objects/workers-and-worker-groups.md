@@ -1,6 +1,6 @@
 ---
 title: Pracovníci údržby a skupiny pracovníků
-description: Toto téma vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku.
+description: Tento článek vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860892"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Pracovníci údržby a skupiny pracovníků
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750117"
 
  
 
-Toto téma vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku. V modulu Správa majetku můžete pracovníky údržby připojit k funkčním místům. (Další informace o funkčních umístěních naleznete v tématu [Tvorba funkčních míst](../functional-locations/create-functional-locations.md).) Tato funkce může být užitečná například v případě, že plánujete úlohu údržby stroje, který je umístěn na funkčním místě 01, a chcete práci přidělit pracovníkům údržby ze stejného místa.
+Tento článek vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku. V modulu Správa majetku můžete pracovníky údržby připojit k funkčním místům. (Další informace o funkčních umístěních naleznete v tématu [Tvorba funkčních míst](../functional-locations/create-functional-locations.md).) Tato funkce může být užitečná například v případě, že plánujete úlohu údržby stroje, který je umístěn na funkčním místě 01, a chcete práci přidělit pracovníkům údržby ze stejného místa.
 
 Můžete také vytvořit skupiny pracovníků údržby a přidružit k nim pracovníky údržby. Tato funkce je užitečná, když provádíte jednoduché plánování pracovních zakázek a chcete naplánovat skupinu údržbářských pracovníků na pracovní příkaz. Pracovníky údržby a údržbářské skupiny můžete použít k nastavení preferovaných pracovníků údržby a zodpovědných pracovníků údržby. 
 

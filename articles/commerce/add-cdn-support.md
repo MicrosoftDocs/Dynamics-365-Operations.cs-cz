@@ -1,6 +1,6 @@
 ---
-title: Přidání podpory pro síť CDN
-description: V tomto tématu je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
+title: Přidání podpory sítě pro doručování obsahu (CDN)
+description: V tomto článku je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2ed8f66d447e1d9e890c0885fd20e9b55c66ac0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855869"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory sítě pro doručování obsahu (CDN)
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
+V tomto článku je popsán postup při přidání sítě pro doručování obsahu (CDN) do prostředí Microsoft Dynamics 365 Commerce.
 
 Pokud zřídíte prostředí elektronického obchodu v řešení Dynamics 365 Commerce, můžete jej nakonfigurovat tak, aby spolupracovalo se službou CDN. 
 
@@ -60,7 +60,7 @@ Proces nastavení CDN se skládá z následujících obecných kroků:
 
 ### <a name="add-a-front-end-host"></a>Přidání hostitele front-endu
 
-Je možné použít libovolnou službu CDN, ale v příkladu v tomto tématu se použije služba Azure Front Door Service. 
+Je možné použít libovolnou službu CDN, ale v příkladu v tomto článku se použije služba Azure Front Door Service. 
 
 Informace, jak nastavit službu Azure Front Door Service, naleznete v tématu [Rychlý start: Vytvoření služby Front Door pro vysoce dostoupnou globální webovou aplikaci](/azure/frontdoor/quickstart-create-front-door).
 
@@ -101,7 +101,7 @@ Chcete-li nastavit pravidlo směrování ve službě Azure Front Door Service, p
 
 
 > [!WARNING]
-> Pokud je doména, kterou budete používat, již aktivní a živá, vytvořte lístek podpory z dlaždice **Podpora** v [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) a získejte pomoc při dalších krocích. Další informace viz [Získejte podporu pro aplikace Finance and Operations nebo Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+> Pokud je doména, kterou budete používat, již aktivní a živá, vytvořte lístek podpory z dlaždice **Podpora** v [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) a získejte pomoc při dalších krocích. Další informace získáte v článku [Získání podpory pro finanční a provozní aplikace nebo Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 Pokud je vaše doména nová a nejedná se o dříve existující živou doménu, můžete svou vlastní doménu přidat do konfigurace služby Azure Front Door Service. To umožní, aby se webový provoz přesměroval na váš web prostřednictvím instance Azure Front Door. Chcete-li přidat vlastní doménu (například `www.fabrikam.com`), je nutné pro doménu nakonfigurovat kanonický název (CNAME).
 

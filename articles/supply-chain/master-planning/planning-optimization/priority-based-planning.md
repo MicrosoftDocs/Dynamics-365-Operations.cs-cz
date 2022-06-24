@@ -1,6 +1,6 @@
 ---
 title: Plánování na základě priority
-description: Toto téma popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873804"
 ---
 # <a name="priority-based-planning"></a>Plánování na základě priority
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management. Tato funkce přidává podporu pro plánování řízené poptávkou, což je jeden z kroků plánování materiálových požadavků řízené poptávkou (DDMRP). Plánování na základě priority umožňuje nástroji Optimalizace plánování generovat plánované objednávky, které jsou řízeny prioritami plánování namísto dat požadavků.
+Tento článek popisuje funkci plánování na základě priority v softwaru Microsoft Dynamics 365 Supply Chain Management. Tato funkce přidává podporu pro plánování řízené poptávkou, což je jeden z kroků plánování materiálových požadavků řízené poptávkou (DDMRP). Plánování na základě priority umožňuje nástroji Optimalizace plánování generovat plánované objednávky, které jsou řízeny prioritami plánování namísto dat požadavků.
 
 Plánování na základě priority vám umožňuje upřednostňovat objednávky na doplnění, abyste zajistili, že naléhavá poptávka bude upřednostněna před méně důležitou poptávkou. Například objednávka na doplnění vyčerpaných zásob bude mít přednost před standardní objednávkou na doplnění zásob. Systém dokáže automaticky rozdělit větší objednávky na samostatné menší objednávky, kde jsou řádky objednávek seskupeny podle priority. Poté může nejprve zpracovat všechny objednávky s vysokou prioritou.
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurovat úkolový lístek pro zařízení
-description: Tohle téma popisuje různé možnosti konfigurace zařízení úkolového lístku.
+title: Konfigurace úkolového lístku pro zařízení
+description: Tento článek popisuje různé možnosti konfigurace zařízení úkolového lístku.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860718"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurovat úkolový lístek pro zařízení
 
 [!include [banner](../includes/banner.md)]
 
-Zařízení úkolového lístku používají pracovníci dílny k registraci své každodenní práce, například při zahájení práce, hlášení zpětné vazby o úkolech, registraci nepřímých činností a hlášení nepřítomnosti. Tyto registrace jsou základem pro sledování průběhu a nákladů výrobních zakázek a pro výpočet základu pro odměny pracovníků. Tohle téma popisuje různé možnosti konfigurace zařízení úkolového lístku.
+Zařízení úkolového lístku používají pracovníci dílny k registraci své každodenní práce, například při zahájení práce, hlášení zpětné vazby o úkolech, registraci nepřímých činností a hlášení nepřítomnosti. Tyto registrace jsou základem pro sledování průběhu a nákladů výrobních zakázek a pro výpočet základu pro odměny pracovníků. Tento článek popisuje různé možnosti konfigurace zařízení úkolového lístku.
 
 ## <a name="enable-new-features-in-feature-management"></a>Povolení nových funkcí ve správě funkcí
 
-Než budou k dispozici, musí být ve vašem systému povoleno několik nastavení popsaných v tomto tématu. Použijte stránku [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro povolení některých nebo všech následujících funkcí podle potřeby.
+Než budou k dispozici, musí být ve vašem systému povoleno několik nastavení popsaných v tomto článku. Použijte stránku [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pro povolení některých nebo všech následujících funkcí podle potřeby.
 
 ### <a name="generate-license-plate"></a>Generovat poznávací značku
 

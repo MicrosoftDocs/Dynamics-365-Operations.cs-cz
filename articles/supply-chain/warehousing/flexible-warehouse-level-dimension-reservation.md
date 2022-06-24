@@ -1,6 +1,6 @@
 ---
 title: Flexibilní zásada rezervace dimenze na úrovni skladu
-description: V tomto tématu jsou popsány zásady rezervace zásob, které umožňují společnostem prodávat produkty sledované podle dávky a spustit jejich logistiku, protože operace s povoleným WMS rezervují konkrétní dávky pro prodejní objednávky zákazníka, a to i v případě, že hierarchie rezervací, přidružená k produktům, neumožňuje rezervaci specifických dávek.
+description: V tomto článku jsou popsány zásady rezervace zásob, které umožňují společnostem prodávat produkty sledované podle dávky a spustit jejich logistiku, protože operace s povoleným WMS rezervují konkrétní dávky pro prodejní objednávky zákazníka, a to i v případě, že hierarchie rezervací, přidružená k produktům, neumožňuje rezervaci specifických dávek.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885805"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibilní zásada rezervace dimenze na úrovni skladu
 
@@ -28,7 +28,7 @@ Pokud je hierarchie rezervací zásob typu *Batch-below\[location\]* spojena s 
 
 Podobně nemohou být vyhrazeny konkrétní registrační značky pro produkty na prodejních objednávkách, pokud jsou tyto produkty spojeny s výchozí hierarchií rezervace.
 
-V tomto tématu jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky nebo registrační značky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací *Batch-below\[location\]*.
+V tomto článku jsou popsány zásady rezervace zásob, které těmto podnikům umožňují rezervovat specifické dávky nebo registrační značky, a to i v případě, že jsou produkty přiřazeny k hierarchii rezervací *Batch-below\[location\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Hierarchie rezervací zásob
 

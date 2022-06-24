@@ -1,6 +1,6 @@
 ---
 title: Nastavení projektu pracovního příkazu
-description: Toto téma vysvětluje nastavení projektu pracovního příkazu v modulu Správa majetku.
+description: Tento článek vysvětluje nastavení projektu pracovního příkazu v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874123"
 ---
 # <a name="work-order-project-setup"></a>Nastavení projektu pracovního příkazu
 
@@ -80,7 +80,7 @@ Nastavení umožňuje úplnou integraci s modulem **Řízení projektů a úče
 ![Stránka nastavení projektu pracovních příkazů, přidání pracovního příkazu.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Při každém vytvoření řádku pracovního příkazu vyhledá Správa majetku skupinu projektů, která by měla souviset s projektem pracovního příkazu. Hledání je založeno na nastavení popsaném v tomto tématu. Každá skupina projektů má související typ projektu. Skupiny projektů s **Časem a materiálem** nebo typem projektu **S pevnou cenou** jsou platné pouze pro majetek, který souvisí s účtem odběratele.
+> Při každém vytvoření řádku pracovního příkazu vyhledá Správa majetku skupinu projektů, která by měla souviset s projektem pracovního příkazu. Hledání je založeno na nastavení popsaném v tomto článku. Každá skupina projektů má související typ projektu. Skupiny projektů s **Časem a materiálem** nebo typem projektu **S pevnou cenou** jsou platné pouze pro majetek, který souvisí s účtem odběratele.
 >
 > U nadřazených projektů a skupin projektů je výběr založen na záznamech, které jste vytvořili pomocí předchozího postupu, když systém vybere dostupný projekt pracovního příkazu nebo skupinu projektů. Správa majetku prochází záznamy, které souvisejí s projektem pracovního příkazu, a slouží ke kontrole možného spárování. Vždy zkontroluje nejdříve nejkonkrétnější kombinaci. Jinými slovy, pro nadřazený projekt pracovního příkazu Správa majetku nejprve zkontroluje možnou shodu v poli **Majetek**. Pokud není nalezena shoda, zkontroluje shodu v poli **Typ majetku**. Pokud není nalezena shoda, zkontroluje shodu v poli **Funkční místo** a tak dále. Jak vidíte v rozvržení stránky **Nastavení projektu pracovního příkazu**, toto chování znamená, že pro nalezení nejspecifičtější kombinace zkontroluje Správa majetku každý záznam zprava doleva pro nalezení shody. Není-li nalezena žádná shoda, použije se výchozí záznam, v němž je vybrán pouze ID projektu. Proces vyhledání související skupiny projektů je podobný. Správa majetku nejprve zkontroluje možné párování pro pole **Majetek**, poté pole **Typ majetku** a poté pole **Typ pracovního příkazu**. Není-li nalezena žádná shoda, použije se výchozí záznam, v němž je vybrána pouze skupina projektu.
 

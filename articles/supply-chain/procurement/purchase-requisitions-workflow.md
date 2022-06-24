@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849351"
 ---
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
@@ -89,7 +89,7 @@ V tomto příkladu obsahuje proces workflowu pro řádky nákupní žádanky ná
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurace workflowu pro nákupní žádanky
 Pokud chcete směrovat nákupní žádanku ke kontrole, je nutné nakonfigurovat procesy workflowu pro nákupní žádanku. Proces workflowu, který definujete, řídí interakci mezi uživatelem, který si vyžádal položku (žadatel) a kontrolorem a schvalujícím ve workflowu. Postup nákupní žádanky závisí na podmínkách, které jsou uvedeny v konfiguraci workflowu. Například tyto podmínky určují, kdy je třeba směrovat nákupní žádanku, roli, na kterou roli má být nákupní žádanka směrována, a akce, které mohou uživatelé provést.  
 
-Příklady v tomto tématu ukazují, jak lze nákupní požadavek směrovat prostřednictvím workflowu jako jeden dokument nebo ve formě jednotlivých řádků nákupní žádanky. Můžete také konfigurovat workflow pro nákupní žádanky, který odráží interní kontroly řízení pro nákupní žádanky definované pro vaši organizaci.  
+Příklady v tomto článku ukazují, jak lze nákupní požadavek směrovat prostřednictvím workflowu jako jeden dokument nebo ve formě jednotlivých řádků nákupní žádanky. Můžete také konfigurovat workflow pro nákupní žádanky, který odráží interní kontroly řízení pro nákupní žádanky definované pro vaši organizaci.  
 
 Účastníci nebo kontroloři, kterým je úloha přiřazena ve workflowu, mohou být členy určité skupiny uživatelů, uživateli, kteří mají konkrétní role zabezpečení, uživateli, kteří jsou přidružení k odesílateli v manažerské hierarchii, nebo jmenovanými uživateli nebo uživateli, kteří mají určité výdajové odpovědnosti.
 

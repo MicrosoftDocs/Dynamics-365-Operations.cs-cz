@@ -1,6 +1,6 @@
 ---
 title: Modul pokladny
-description: Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
+description: Tento článek popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a30d56d7edf967a3afab7442338dd9f480ef7fd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869021"
 ---
 # <a name="checkout-module"></a>Modul pokladny
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
+Tento článek popisuje, jak na stránku přidat modul pokladny a jak nastavit požadované vlastnosti.
 
 Modul poklady je speciální kontejner, který je hostitelem všech modulů, které jsou nutné k vytvoření objednávky. Modul poklady představuje podrobný tok, který zákazník používá k zadání všech relevantních informací za účelem provedení nákupu. Zachycuje doručovací adresu, způsob přepravy a informace o fakturaci. Poskytuje také souhrn objednávky a další informace, které souvisejí s objednávkou odběratele.
 

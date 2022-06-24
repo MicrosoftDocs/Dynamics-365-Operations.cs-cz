@@ -1,6 +1,6 @@
 ---
 title: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
-description: V tomto tématu je uveden přehled vylepšení, která poskytují jednoduchý offline přepínač pro určité typy plateb.
+description: V tomto článku je uveden přehled vylepšení, která poskytují jednoduchý offline přepínač pro určité typy plateb.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869154"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Snadný offline přepínač pro operace dárkového poukazu a dobropisu
 
 [!include [banner](../includes/banner.md)]
 
-Pokud zařízení pokladního místa (POS) ztratí spojení s databází kanálu, většina operací a transakcí POS, které probíhaly, mohou pokračovat poté, co pokladník obdrží varovnou zprávu o ztrátě připojení. V některých případech však transakce obsahují prvky, které vyžadují službu v reálném čase, a tyto prvky nejsou podporovány v případě, že je POS offline. V tomto tématu jsou popsány některé funkce, které v takových případech pomáhají snižovat dopad ztraceného připojení.
+Pokud zařízení pokladního místa (POS) ztratí spojení s databází kanálu, většina operací a transakcí POS, které probíhaly, mohou pokračovat poté, co pokladník obdrží varovnou zprávu o ztrátě připojení. V některých případech však transakce obsahují prvky, které vyžadují službu v reálném čase, a tyto prvky nejsou podporovány v případě, že je POS offline. V tomto článku jsou popsány některé funkce, které v takových případech pomáhají snižovat dopad ztraceného připojení.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Provedení transakcí dárkového poukazu v offline režimu
 
@@ -50,7 +50,7 @@ Chcete-li povolit funkci uzavření transakcí dobropisu po přepnutí do režim
 
 Parametry Commerce jsou obvykle uloženy v mezipaměti. Z toho vyplývá, že po aktualizaci nastavení tohoto parametru a při zahájení plánu distribuce dojde k synchronizaci změny v kanálu, takže se tato změna může uskutečnit až 24 hodin. Chcete-li provést změny okamžitě, obnovte službu IIS.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 - [Offline funkce pokladního místa (POS)](../pos-offline-functionality.md)
 - [Online a offline operace pokladního místa (POS)](../pos-operations.md)

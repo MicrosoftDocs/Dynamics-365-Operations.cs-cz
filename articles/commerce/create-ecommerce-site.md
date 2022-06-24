@@ -1,6 +1,6 @@
 ---
 title: Vytvoření webu elektronického obchodu
-description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
+description: V tomto článku jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/10/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: b4ac8d1b930c89bf330a2332c0b510dadb92e51f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402768"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855762"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
+V tomto článku jsou popsány kroky a informace požadované k vytvoření nového webu elektronického obchodu v Konfigurátoru webu Dynamics 365 Commerce.
 
 Když si pořídíte licenci na funkce Dynamics 365 Commerce, bude konfigurátor webu obsahovat startovací web, který můžete použít jako základ pro svůj vlastní web. Pokud však chcete začít úplně od začátku nebo pokud si chcete vytvořit druhý web, budete si muset ve vývojovém prostředí webu založit nový web. 
 

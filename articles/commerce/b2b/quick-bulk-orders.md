@@ -1,6 +1,6 @@
 ---
 title: Rychlé zadávání objednávky na webu B2B
-description: Toto téma popisuje funkce aplikace Microsoft Dynamics 365 Commerce, které umožňují uživatelům obchodních webů typu business-to-business (B2B) rychle zadávat hromadné a opakované objednávky.
+description: Tento článek popisuje funkce aplikace Microsoft Dynamics 365 Commerce, které umožňují uživatelům obchodních webů typu business-to-business (B2B) rychle zadávat hromadné a opakované objednávky.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881354"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>Rychlé zadávání objednávky na webu B2B
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje funkce aplikace Microsoft Dynamics 365 Commerce, které umožňují uživatelům obchodních webů typu business-to-business (B2B) rychle zadávat hromadné a opakované objednávky.
+Tento článek popisuje funkce aplikace Microsoft Dynamics 365 Commerce, které umožňují uživatelům obchodních webů typu business-to-business (B2B) rychle zadávat hromadné a opakované objednávky.
 
 Weby elektronického obchodování B2B Dynamics 365 Commerce umožňují uživatelům provádět standardní operace, jako je objevování nových produktů prostřednictvím vyhledávání a procházení, prohlížení podrobností o produktu, přidávání položek do košíku a placení. Zatímco však zákazníci webových obchodů typu business-to-consumer (B2C) obvykle objednávají položky v malých množstvích a objednávají je pouze jednou, zákazníci B2B obvykle objednávají položky ve velkém množství a opakovaně. Protože tito zákazníci obvykle přesně vědí, jaké položky chtějí koupit, často přeskočí fázi objevování produktu a přejdou přímo k objednávce. Pro uspokojení potřeb těchto zákazníků poskytují weby elektronického obchodu B2B Commerce různé funkce, které jim pomáhají rychle zadávat objednávky.
 
@@ -65,4 +65,4 @@ Následující obrázek ukazuje příklad historie objednávek uživatele a mož
 
 ![Opětovná objednávka z historie objednávek.](../media/Reorder.png)
 
-Toto téma popisuje jen některé ze způsobů, jak weby Commerce B2B pomáhají uživatelům rychle najít, objednat a znovu objednat produkty, které chtějí. Vyvíjejí se další funkce, které dále zjednodušují proces zachycování hromadných objednávek.
+Tento článek popisuje jen některé ze způsobů, jak weby Commerce B2B pomáhají uživatelům rychle najít, objednat a znovu objednat produkty, které chtějí. Vyvíjejí se další funkce, které dále zjednodušují proces zachycování hromadných objednávek.

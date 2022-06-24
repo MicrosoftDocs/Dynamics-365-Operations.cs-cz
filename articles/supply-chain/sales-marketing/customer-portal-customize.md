@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobení a použití zákaznického portálu
-description: Toto téma vysvětluje, jak přizpůsobit zákaznický portál poté, co byl přidán do vašeho systému.
+description: Tento článek vysvětluje, jak přizpůsobit zákaznický portál poté, co byl přidán do vašeho systému.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878867"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Přizpůsobení a použití zákaznického portálu
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje různé stránky, které jsou ihned k dispozici na zákaznickém portálu. Vysvětluje, co stránky dělají a jak je můžete přizpůsobit.
+Tento článek popisuje různé stránky, které jsou ihned k dispozici na zákaznickém portálu. Vysvětluje, co stránky dělají a jak je můžete přizpůsobit.
 
 Zákaznický portál nabízí ihned několik webových stránek a akcí. Následující mapa webu poskytuje přehled těchto webových stránek a akcí a rolí, které mohou akce provádět.
 
@@ -32,16 +32,16 @@ Zákaznický portál nabízí ihned několik webových stránek a akcí. Násled
 
 ## <a name="typical-customizations"></a>Typické úpravy
 
-Následující témata vám pomohou naučit se základy Power Apps portálů a jak můžete portály přizpůsobit:
+Následující články vám pomohou naučit se základy Power Apps portálů a jak můžete portály přizpůsobit:
 
-- [Práce se šablonami](/powerapps/maker/portals/work-with-templates) - Toto téma poskytuje obecný přehled o tom, jak Power Apps portály fungují a jak můžete provádět jednoduché přizpůsobení portálů.
-- [Správa obsahu portálu](/dynamics365/portals/manage-portal-content) - Toto téma vysvětluje, jak můžete spravovat a přizpůsobovat obsah, který se objeví na vašem portálu.
-- [Upravit CSS](/powerapps/maker/portals/edit-css) - Toto téma vám pomůže provádět složitější úpravy uživatelského rozhraní (UI) vašeho portálu.
-- [Vytvořte téma pro svůj portál](/dynamics365/portals/create-theme) - Toto téma vám pomůže vytvořit motiv uživatelského rozhraní pro váš portál.
-- [Vytvářejte a exponujte obsah portálu snadno](/dynamics365/portals/create-expose-portal-content) - Toto téma vám pomůže spravovat základní data a tabulky, které používáte pro svůj portál.
-- [Nakonfigurujte kontakt pro použití na portálu](/powerapps/maker/portals/configure/configure-contacts) - Toto téma vysvětluje, jak vytvářet a přizpůsobovat uživatelské role a jak funguje zabezpečení a ověřování Power Apps portálů.
-- [Nakonfigurujte poznámky pro formuláře tabulky a webové formuláře na portálech](/powerapps/maker/portals/configure-notes) - Toto téma vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
-- [Chyba při manipulaci s webovým portálem](/powerapps/maker/portals/admin/view-portal-error-log) - Toto téma vysvětluje, jak zobrazit protokoly chyb portálu a uložit je do vašeho účtu úložiště blob Microsoft Azure.
+- [Práce se šablonami](/powerapps/maker/portals/work-with-templates) – Tento článek poskytuje obecný přehled o tom, jak Power Apps portály fungují a jak můžete provádět jednoduché přizpůsobení portálů.
+- [Správa obsahu portálu](/dynamics365/portals/manage-portal-content) – Tento článek vysvětluje, jak můžete spravovat a přizpůsobovat obsah, který se objeví na vašem portálu.
+- [Upravit CSS](/powerapps/maker/portals/edit-css) – Tento článek vám pomůže provádět složitější úpravy uživatelského rozhraní (UI) vašeho portálu.
+- [Vytvořte téma pro svůj portál](/dynamics365/portals/create-theme) – Tento článek vám pomůže vytvořit motiv uživatelského rozhraní pro váš portál.
+- [Vytvářejte a exponujte obsah portálu snadno](/dynamics365/portals/create-expose-portal-content) – Tento článek vám pomůže spravovat základní data a tabulky, které používáte pro svůj portál.
+- [Nakonfigurujte kontakt pro použití na portálu](/powerapps/maker/portals/configure/configure-contacts) – Tento článek vysvětluje, jak vytvářet a přizpůsobovat uživatelské role a jak funguje zabezpečení a ověřování Power Apps portálů.
+- [Nakonfigurujte poznámky pro formuláře tabulky a webové formuláře na portálech](/powerapps/maker/portals/configure-notes) – Tento článek vysvětluje, jak přidat dokumenty a další úložiště na váš portál.
+- [Chyba při manipulaci s webovým portálem](/powerapps/maker/portals/admin/view-portal-error-log) – Tento článek vysvětluje, jak zobrazit protokoly chyb portálu a uložit je do vašeho účtu úložiště blob Microsoft Azure.
 
 ## <a name="customize-the-order-creation-process"></a>Přizpůsobte proces vytváření objednávek
 

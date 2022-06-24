@@ -1,6 +1,6 @@
 ---
-title: Integrujte Customer Voice do stránek webu elektronického obchodování
-description: Toto téma popisuje, jak integrovat Microsoft Dynamics 365 Customer Voice do stránek elektronického obchodování Dynamics 365 Commerce.
+title: Integrace Customer Voice do stránek webu elektronického obchodu
+description: Tento článek popisuje, jak integrovat Microsoft Dynamics 365 Customer Voice do stránek elektronického obchodování Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850323"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrujte Customer Voice do stránek webu elektronického obchodování
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrace Customer Voice do stránek webu elektronického obchodu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak integrovat Microsoft Dynamics 365 Customer Voice do stránek elektronického obchodování Dynamics 365 Commerce.
+Tento článek popisuje, jak integrovat Microsoft Dynamics 365 Customer Voice do stránek elektronického obchodování Dynamics 365 Commerce.
 
 Můžete integrovat [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) na svůj web elektronického obchodování a shromažďovat, analyzovat a sledovat zpětnou vazbu od zákazníků v reálném čase. Chcete-li začít s integrací, musíte si vytvořit účet a vybrat šablonu projektu Customer Voice pro typ zpětné vazby, kterou chcete shromažďovat.
 
@@ -37,7 +37,7 @@ Chcete-li vybrat šablonu projektu Customer Voice, postupujte takto.
 1. Vyberte šablonu projektu pro typ zpětné vazby, kterou chcete shromažďovat, a poté vyberte možnost **Další**.
 1. Na kartě **Poslat** v **Vyberte formát pro vložení** vyberte formát pro vložení. Pole **Vložený kód** pole zobrazuje kód, který musí být vložen do konfigurátoru webů Commerce.
 
-Příklady v tomto tématu používají šablonu projektu **Pravidelný zákaznický průzkum** a vložený formát **Tlačítko**.
+Příklady v tomto článku používají šablonu projektu **Pravidelný zákaznický průzkum** a vložený formát **Tlačítko**.
 
 Následující ukázkový obrázek ukazuje stránku šablony projektu **Pravidelný zákaznický průzkum**, kde je vybrána možnost pro formát vložení **Tlačítko** a kód pro vložení pro tuto možnost se zobrazí v poli **Vložený kód**. K vložení poskytnutého kódu na stránky vašeho webu jsou vyžadovány tři samostatné akce, jak je popsáno v následujících částech.
 

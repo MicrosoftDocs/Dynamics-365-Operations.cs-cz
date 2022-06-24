@@ -1,6 +1,6 @@
 ---
 title: Identifikátory produktu
-description: Toto téma obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
+description: Tento článek obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063334"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851703"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063334"
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
+Tento článek obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
 
 Při práci s produkty v dílně nebo ve skladu v aplikaci Microsoft Dynamics ERP nebo Microsoft Dynamics CRM musíte mít dobrou strategii pro identifikaci těchto produktů a variant produktu.
 
@@ -125,7 +125,7 @@ Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání 
 | Produkty V2 | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na nastavení entity a číselné řady pro číslo produktu lze automaticky vytvořit číslo produktu v okamžiku importu. |
 | Varianty produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na šabloně klasifikace produktu může být číslo výrobku automaticky vytvořeno při importu. Můžete však importovat všechna jedinečná číslo výrobku a toto číslo produktu nemusí vycházet ze struktury šablony klasifikace produktu. |
 | Překlady produktu | Název produktu, popis produktu | Název produktu, popis produktu | Tato entita přepíše libovolný jazyk. Když je přepsán název nebo popis jazyka primární právnické osoby, název a popis produktu se změní. |
-| Tvorba uvolněného produktu V2 | Číslo položky, číslo produktu, vyhledávací název položky| Číslo položky, číslo produktu, vyhledávací název položky, vyhledávací název produktu, název produktu | Tato entita může být složitá při použití číselných řad během vytváření nových uvolněných produktů. Vliv má číselná řada **č. položky** i **číslo produktu**. Číselná řada **Číslo položky** však platí pro právnickou osobu, zatímco číselná řada **číslo produktu** je globální. Proto nedoporučujeme používat číselnou řadu **Číslo položky** při nasazení nových uvolněných produktů. Samozřejmě při použití entity pro uvolnění existujícího produktu musí být číslo produktu uvedeno v entitě. Další informace naleznete v tématu "Číselné řady produktů a položek" v tomto tématu. |
+| Tvorba uvolněného produktu V2 | Číslo položky, číslo produktu, vyhledávací název položky| Číslo položky, číslo produktu, vyhledávací název položky, vyhledávací název produktu, název produktu | Tato entita může být složitá při použití číselných řad během vytváření nových uvolněných produktů. Vliv má číselná řada **č. položky** i **číslo produktu**. Číselná řada **Číslo položky** však platí pro právnickou osobu, zatímco číselná řada **číslo produktu** je globální. Proto nedoporučujeme používat číselnou řadu **Číslo položky** při nasazení nových uvolněných produktů. Samozřejmě při použití entity pro uvolnění existujícího produktu musí být číslo produktu uvedeno v entitě. Další informace naleznete v tématu "Číselné řady produktů a položek" v tomto článku. |
 | Uvolněné varianty produktu | Číslo položky, dimenze produktu, číslo produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu, dimenze produktu | Stejně jako entit **varianty produktu** i tato entita slouží k vytvoření nových produktů, které mají stejnou šablonu klasifikace produktu nebo číslo produktu pro variantu. |
 | Popisy externích položek pro odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Skupinu odběratelů (například přidružení kupujícího) lze sloučit do jedné skupiny pomocí entity **Skupiny odběratelů popisu externí položky**. |
 | Popis externích položek pro dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Skupinu dodavatelů (například prodejní asociaci nebo průmyslovou organizaci) lze sloučit do jedné skupiny pomocí entity **Skupiny dodavatelů popisu externí položky**. |
@@ -184,7 +184,7 @@ Takto se konfiguruje prostředí:
 
 Nyní můžete použít datové entity **Entita identifikátoru Common Data Service entity produktu**, **Kód identifikátoru entity produktu** a **Rozsah identifikátoru entity produktu** za účelem exportu identifikátorů pro jakýkoliv cílový systém.
 
-## <a name="related-topic"></a>Související téma
+## <a name="related-article"></a>Související článek
 
 [Vyhledávání produktů a variant produktu během zadávání objednávky](search-products-product-variants.md)
 

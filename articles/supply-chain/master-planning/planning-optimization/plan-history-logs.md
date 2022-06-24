@@ -1,8 +1,8 @@
 ---
 title: Zobrazení historie plánu a protokolů plánování
-description: Toto téma vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování.
+description: Tento článek vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863933"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Zobrazení historie plánu a protokolů plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování v aplikaci Microsoft Dynamics 365 Supply Chain Management.
+Tento článek vysvětluje, jak zobrazit historii úloh plánování, které jsou spouštěny funkcí Optimalizace plánování v aplikaci Microsoft Dynamics 365 Supply Chain Management.
 
 Chcete-li zobrazit historii plánu, otevřete plán tak, že přejdete na **Hlavní plánování** \> **Nastavení** \> **Plány** \> **Hlavní plány** a vyberete **Historie**. V rámci historie jsou uvedeny všechny úlohy pro vybraný plán. Seznam obsahuje dokončené a aktivní úlohy.
 
-Historie úloh pro hlavní plánovací běhy Optimalizace plánování udržuje maximálně 60 záznamů na hlavní plán. Kdykoli spustíte nový výpočet hlavního plánování, bude odstraněn nejstarší záznam historie tohoto plánu.
+Systém uchovává maximálně 60 záznamů historie na hlavní plán a maže záznamy starší 30 dnů. Pokaždé, když spustíte nový výpočet hlavního plánování, systém přidá nový záznam historie a poté podle potřeby vyčistí nejstarší záznamy.
 
 Kromě toho, že se zobrazuje počáteční čas a stav úloh, můžete zobrazit protokol pro určitou práci. Protokol obsahuje další informace a upozornění. Některé úlohy nemají protokol. Chcete-li zobrazit protokol pro úlohu, vyberte možnost **protokol**. Položky protokolu se ukládají po dobu pouze 30 dní po datu dokončení úlohy, poté se automaticky smažou.
 

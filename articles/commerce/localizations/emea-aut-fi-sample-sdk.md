@@ -1,6 +1,6 @@
 ---
 title: Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Rakousko (starší verze)
-description: Toto téma obsahuje pokyny pro nasazení ukázky fiskální integrace pro Rakousko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
+description: Tento článek obsahuje pokyny pro nasazení ukázky fiskální integrace pro Rakousko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 7cb0e7b665add397b12e1a841b6a2e9565528d6d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 94fe6817358ae18126a30794fd52fe5eb01a5265
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885430"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Pokyny k nasazení ukázkové integrace služby fiskální registrace pro Rakousko (starší verze)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje pokyny pro nasazení ukázkové integrace služby fiskální registrace pro Rakousko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace služby fiskální registrace pro Rakousko](emea-aut-fi-sample.md). 
+Tento článek obsahuje pokyny pro nasazení ukázkové integrace služby fiskální registrace pro Rakousko ze sady SDK (Software Development Kit) pro Microsoft Dynamics 365 Commerce Retail na vývojářském virtuálním počítači (VM) v Microsoft Dynamics Lifecycle Services (LCS). Další informace o této ukázkové fiskální integraci naleznete v tématu [Ukázka integrace služby fiskální registrace pro Rakousko](emea-aut-fi-sample.md). 
 
-Ukázka fiskální integrace pro Rakousko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ukázka fiskální integrace sestává z rozšíření pro Commerce Runtime (CRT), hardwarovou stanici a pokladní místo (POS). Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, hardwarové stanice a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
+Ukázka fiskální integrace pro Rakousko je součástí sady Retail SDK. Informace o instalaci a použití sady SDK naleznete v tématu [Architektura sady SDK (Software Development Kit) pro Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ukázka fiskální integrace sestává z rozšíření pro Commerce Runtime (CRT), hardwarovou stanici a pokladní místo (POS). Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT, hardwarové stanice a POS. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto článku. Rovněž doporučujeme používat systém správy zdrojového kódu, jako je Azure DevOps, kde žádné soubory nebyly dosud změněny.
 
 ## <a name="development-environment"></a>Vývojové prostředí
 

@@ -1,6 +1,6 @@
 ---
 title: Nastavení profilu přehledu doručení zboží
-description: Toto téma je zaměřeno na nastavení profilu přehledu doručení.
+description: Tento článek je zaměřeno na nastavení profilu přehledu doručení.
 author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -15,18 +15,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a98c84c0dcc86e58b74f53a9061c4a0518ecbf
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 8517710f5d0be1859f86449152712d950281769a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872000"
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Nastavení profilu přehledu doručení zboží
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma je zaměřeno na nastavení profilu přehledu doručení. Profil přehledu doručení je kolekce pravidel, která budou použita při otevření stránky přehledu doručení uživatelem. Tento postup můžete projít v ukázkových datech společnosti USMF. Tento proces obvykle provádí přijímající pracovník.
+Tento článek je zaměřeno na nastavení profilu přehledu doručení. Profil přehledu doručení je kolekce pravidel, která budou použita při otevření stránky přehledu doručení uživatelem. Tento postup můžete projít v ukázkových datech společnosti USMF. Tento proces obvykle provádí přijímající pracovník.
 
 1. V navigačním podokně přejděte na **Moduly > Řízení zásob > Nastavení > Distribuce > Profily přehledu doručení**.
 2. Zvolte **Nové**. Vzhledem k tomu, že budete téměř vždy pracovat ve stejném skladu s vykládkou úplných vytížení, pro zjednodušení procesu registrace přijatého zboží byste měli vytvořit profil přehledu doručení.  

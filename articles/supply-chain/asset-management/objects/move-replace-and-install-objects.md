@@ -1,6 +1,6 @@
 ---
 title: Přesun, nahrazení a instalace majetku
-description: Toto téma vysvětluje, jak přesunout, nahradit a nainstalovat majetek v modulu Správa majetku.
+description: Tento článek vysvětluje, jak přesunout, nahradit a nainstalovat majetek v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769628"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872117"
 ---
 # <a name="move-replace-and-install-assets"></a>Přesun, nahrazení a instalace majetku
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769628"
 
  
 
-Toto téma vysvětluje, jak přesunout, nahradit a nainstalovat majetek v modulu Správa majetku. Můžete vytvořit jednotlivý majetek, který nemá žádné vztahy k jiným majetkům, nebo můžete vytvořit strukturu majetku, která zahrnuje nadřazený majetek (majetek nejvyšší úrovně) a související podřízený majetek (dílčí majetek). V modulu Správa majetku existují tři přístupy k přesunu a změně umístění majetku:
+Tento článek vysvětluje, jak přesunout, nahradit a nainstalovat majetek v modulu Správa majetku. Můžete vytvořit jednotlivý majetek, který nemá žádné vztahy k jiným majetkům, nebo můžete vytvořit strukturu majetku, která zahrnuje nadřazený majetek (majetek nejvyšší úrovně) a související podřízený majetek (dílčí majetek). V modulu Správa majetku existují tři přístupy k přesunu a změně umístění majetku:
 
 - **Přesunout** – Přesun majetku buď do jiné struktury majetku nebo do jiného umístění ve stejné struktuře majetku.
 - **Nahradit** – Dočasně odstraňte majetek ze struktury majetku, aby mohl být opraven nebo obnoven, a poté znovu přidejte obnovený majetek zpět do struktury majetku později. Můžete také trvale nahradit použitý majetek novým majetkem.
@@ -42,7 +42,7 @@ Toto téma vysvětluje, jak přesunout, nahradit a nainstalovat majetek v modulu
 Použijte funkci **Přesunout majetek** – pro přesun majetku buď do jiné struktury majetku nebo do jiného umístění ve stejné struktuře majetku. Majetek můžete také přesunout mimo strukturu majetku tak, aby se stal samostatným majetkem, který nemá žádné vztahy se strukturou.
 
 > [!NOTE]
-> Tuto funkci nepoužívejte, pokud je majetek opraven nebo dočasně nahrazen. Místo toho použijte funkci **Nahradit majetek**, která je popsána dále v tomto tématu.
+> Tuto funkci nepoužívejte, pokud je majetek opraven nebo dočasně nahrazen. Místo toho použijte funkci **Nahradit majetek**, která je popsána dále v tomto článku.
 
 1. Zvolte **Správa majetku** \> **Společné** \> **Majetek** \> **Všechen majetek** nebo **Aktivní majetek**.
 2. V seznamu vyberte majetek, který chcete přesunout. Pokud má majetek podřízený majetek, přesunete také tento majetek.

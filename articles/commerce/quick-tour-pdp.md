@@ -1,6 +1,6 @@
 ---
-title: Přehled stránek s podrobnostmi o produktu
-description: Toto téma poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
+title: Přehled stránek s podrobnostmi o produktu
+description: Tento článek poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7b7630a15f98da4a1454f7c9b0d3501d4f035649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884278"
 ---
 # <a name="product-details-pages-overview"></a>Přehled stránek s podrobnostmi o produktu
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
+Tento článek poskytuje přehled stránek podrobností o produktu (PDP) v řešení Microsoft Dynamics 365 Commerce.
 
 Systém PDP poskytuje podrobné informace o produktu a umožňuje zákazníkům vybrat možnosti produktu, například velikost, styl a barvu. PDP by měl předprezentovat všechny informace o produktu, které odběratel potřebuje k provedení rozhodnutí o nákupu.
 
@@ -35,7 +35,7 @@ Následující obrázek znázorňuje příklad PDP
 
 ## <a name="header-and-footer-modules"></a>Moduly záhlaví a zápatí
 
-Horní okraj PDP obsahuje záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů a další stránky, které chtějí odběratelé vyhledávat. Dolní okraj stránky má zápatí, které obsahuje rychlé odkazy na různá témata, která mohou být zajímavá.
+Horní okraj PDP obsahuje záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů a další stránky, které chtějí odběratelé vyhledávat. Dolní okraj stránky má zápatí, které obsahuje rychlé odkazy na různé články, které mohou být zajímavé.
 
 ## <a name="buy-box-module"></a>Modul buy boxu
 

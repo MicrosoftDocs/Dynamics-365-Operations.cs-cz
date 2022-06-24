@@ -1,6 +1,6 @@
 ---
 title: Naplánování vytvoření práce během vlny
-description: Toto téma popisuje, jak nastavit a používat metodu zpracování ve vlnách Zpracovat vytvoření práce.
+description: Tento článek popisuje, jak nastavit a používat metodu zpracování ve vlnách Zpracovat vytvoření práce.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852063"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Naplánování vytvoření práce během vlny
 
@@ -30,7 +30,7 @@ Když je funkce povolena, automaticky se vytvoří plánovaná práce, kterou sy
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Ve správě funkcí zapněte funkce plánovaného vytváření práce
 
-Chcete-li používat funkce popsané v tomto tématu, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce v následujícím pořadí:
+Chcete-li používat funkce popsané v tomto článku, musí být pro váš systém zapnuty. Použijte pracovní prostor [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte následující funkce v následujícím pořadí:
 
 1. **Blokování práce v celé organizaci** - Vyžadováno pro ruční i automatickou konfiguraci plánovaného vytváření práce. (Od Supply Chain Management verze 10.0.21 je tato funkce povinná, takže je ve výchozím nastavení zapnutá a nelze ji znovu vypnout.)
 1. **Plánování vytváření práce** - Vyžadováno pro ruční i automatickou konfiguraci plánovaného vytváření práce.

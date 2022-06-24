@@ -1,6 +1,6 @@
 ---
 title: Připravenost produktu
-description: Toto téma vysvětluje, jak můžete pomocí kontrol připravenosti zajistit, aby byla pro produkt dokončena požadovaná hlavní data před použitím v transakcích.
+description: Tento článek vysvětluje, jak můžete pomocí kontrol připravenosti zajistit, aby byla pro produkt dokončena požadovaná hlavní data před použitím v transakcích.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a8e76d5fc786b6f4cac7cd0430399ca3ad13a7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856215"
 ---
 # <a name="product-readiness"></a>Připravenost produktu
 
@@ -61,7 +61,7 @@ Pokud je vytvořena nová technická *verze* pro produkt, systém zkontroluje, z
 - Technická verze je nastavena na neaktivní, aby zablokovala používání produktu.
 
 > [!NOTE]
-> Můžete také nastavit zásady kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu.
+> Můžete také nastavit zásady kontroly připravenosti na standardní (netechnické) produkty. Další informace viz [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto článku.
 
 ## <a name="view-readiness-checks"></a>Zobrazení kontrol připravenosti
 
@@ -151,7 +151,7 @@ Pro každý řádek, který přidáte, nastavte následující pole.
 | Společnost | Pokud nastavíte pole **Provést v** na *Jedna společnost*, vyberte společnost. |
 | Typ vlastníka | Vyberte, zda kontroly připravenosti, které řádek generuje, by měly být přiřazeny osobě nebo týmu. |
 | Vlastník | Vyberte osobu nebo tým, kterým mají být přiřazeny kontroly připravenosti generované řádkem. |
-| Dotazník | Vyberte dotazník, který se má použít pro kontrolní seznam. Kontrolní seznam je místní kontrolní seznam ve společnosti, kde se provádí kontrola připravenosti. Systém musí být schopen vyhodnotit, zda je kontrolní seznam správně zodpovězen. Proto musí být kontrolní seznam nastaven tak, aby bylo hodnocení provedeno na základě správných odpovědí. Další informace o tom, jak vytvářet dotazníky, najdete v části [Použití dotazníků](/dynamicsax-2012/appuser-itpro/using-questionnaires) a souvisejících tématech. |
+| Dotazník | Vyberte dotazník, který se má použít pro kontrolní seznam. Kontrolní seznam je místní kontrolní seznam ve společnosti, kde se provádí kontrola připravenosti. Systém musí být schopen vyhodnotit, zda je kontrolní seznam správně zodpovězen. Proto musí být kontrolní seznam nastaven tak, aby bylo hodnocení provedeno na základě správných odpovědí. Další informace o tom, jak vytvářet dotazníky, najdete v části [Použití dotazníků](/dynamicsax-2012/appuser-itpro/using-questionnaires) a souvisejících článcích. |
 | Automatické schválení | Záznamy o kontrole připravenosti zahrnují zaškrtávací políčko **Schváleno** označující stav schválení. Vyberte zaškrtávací políčko **Automatické schválení** pro kontroly, které by měly být nastaveny na schválené ihned poté, co je přidělený uživatel dokončí. Zrušte zaškrtnutí tohoto políčka, chcete-li jako další krok vyžadovat výslovné schválení. |
 | Povinné | Toto políčko zaškrtněte u kontrol, které musí přiřazený uživatel dokončit. Povinné kontroly nelze přeskočit. |
 
@@ -159,7 +159,7 @@ Pro každý řádek, který přidáte, nastavte následující pole.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Přiřaďte zásady připravenosti standardním a strojírenským produktům
 
-Když vytvoříte nový produkt na základě technické kategorie, vytvoříte obojí *uvolněný produkt* a související *sdílený produkt*. Způsob, jakým jsou vyřešeny zásady připravenosti pro vydaný produkt, závisí na tom, zda je zapnuta funkce *Kontroly připravenosti produktu* na vašem systému (viz část [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto tématu, kde najdete podrobnosti o této funkci a o tom, jak ji zapnout nebo vypnout).
+Když vytvoříte nový produkt na základě technické kategorie, vytvoříte obojí *uvolněný produkt* a související *sdílený produkt*. Způsob, jakým jsou vyřešeny zásady připravenosti pro vydaný produkt, závisí na tom, zda je zapnuta funkce *Kontroly připravenosti produktu* na vašem systému (viz část [Kontroly připravenosti standardních produktů](#standard-products) dále v tomto článku, kde najdete podrobnosti o této funkci a o tom, jak ji zapnout nebo vypnout).
 
 - Když je funkce *Kontroly připravenosti produktu* *vypnuta* ve vašem systému, je zásada připravenosti nastavena a zobrazena pouze v záznamu [technické kategorie](engineering-versions-product-category.md). Chcete-li zjistit, jaké zásady platí pro vydaný produkt, systém zkontroluje pole **Zásady připravenosti produktu** pro související technickou kategorii. Zásadu připravenosti pro existující produkt můžete změnit úpravou související technické kategorie (nikoli sdíleného produktu).
 - Když je funkce *Kontroly připravenosti produktu* *zapnuta*, přidá pole **Zásady připravenosti produktu** na stránku **Produkt** (kde jsou nastaveny sdílené produkty) a na stránku **Uvolněný produkt** (kde je hodnota jen pro čtení a je převzata ze souvisejícího sdíleného produktu). Systém najde zásadu připravenosti na vydaný produkt kontrolou souvisejícího sdíleného produktu. Když k vytvoření nového technického produktu použijete technickou kategorii, systém vytvoří sdílený produkt i uvolněný produkt a zkopíruje libovolné nastavení **Zásady připravenosti produktu** pro technickou kategorii do nového sdíleného produktu. Zásadu připravenosti pro existující produkt můžete potom změnit úpravou souvisejícího sdíleného produktu (nikoli uvolněné technické kategorie).
@@ -188,14 +188,14 @@ Tato funkce vyžaduje, aby byly na vašem systému zapnuty funkce *Správa techn
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Vytvořte zásady připravenosti pro standardní produkty
 
-Zásady připravenosti pro standardní produkty vytváříte stejně jako pro technické produkty. Viz dřívější informace v tomto tématu.
+Zásady připravenosti pro standardní produkty vytváříte stejně jako pro technické produkty. Viz dřívější informace v tomto článku.
 
 ### <a name="assign-readiness-policies-to-standard-products"></a>Přiřaďte zásady připravenosti pro standardní produkty
 
-Chcete-li přiřadit zásadu připravenosti ke standardnímu produktu, otevřete související sdílený produkt a nastavte pole **Zásady připravenosti produktu** na název zásady, která by měla platit. Další informace viz sekce [Přiřaďte zásady připravenosti standardním a technickým produktům](#assign-policy) dříve v tomto tématu.
+Chcete-li přiřadit zásadu připravenosti ke standardnímu produktu, otevřete související sdílený produkt a nastavte pole **Zásady připravenosti produktu** na název zásady, která by měla platit. Další informace viz sekce [Přiřaďte zásady připravenosti standardním a technickým produktům](#assign-policy) dříve v tomto článku.
 
 ### <a name="view-and-process-readiness-checks-on-standard-products"></a>Zobrazit a zpracovat kontroly připravenosti standardních produktů
 
-Když je tato funkce zapnutá, prohlížíte a zpracováváte kontroly připravenosti standardních produktů stejně jako u technických produktů. Viz dřívější informace v tomto tématu.
+Když je tato funkce zapnutá, prohlížíte a zpracováváte kontroly připravenosti standardních produktů stejně jako u technických produktů. Viz dřívější informace v tomto článku.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

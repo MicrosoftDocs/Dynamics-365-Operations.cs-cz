@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854493"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
 
@@ -31,7 +31,7 @@ Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu 
 
 Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Nákladová kategorie v tomto případě je nutná pro účely výroby a projektu. Další informace související s projektem je nutné definovat při použití kategorie nákladů v produkci a projektech. Například hodinové náklady přidružené k projektům se mohou lišit od hodinových nákladů přidružených k výrobě. Stránku **Nákladové kategorie** lze použít a definovat s ní nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů. 
 
-**Poznámka:** Nákladové účetnictví obsahuje stránku **Kategorie projektu**, ale nemá žádný vztah k funkcím popsaným v tomto tématu. Používáte-li nákladovou kategorii na projektech, stránka **Nákladové kategorie** obsahuje další karty, které obsahují další údaje související s projektem. Tyto informace zahrnují skupinu kategorií, vlastnost řádku a účty hlavní knihy, které jsou přiřazeny k nákladové kategorii.
+**Poznámka:** Nákladové účetnictví obsahuje stránku **Kategorie projektu**, ale nemá žádný vztah k funkcím popsaným v tomto článku. Používáte-li nákladovou kategorii na projektech, stránka **Nákladové kategorie** obsahuje další karty, které obsahují další údaje související s projektem. Tyto informace zahrnují skupinu kategorií, vlastnost řádku a účty hlavní knihy, které jsou přiřazeny k nákladové kategorii.
 
 -   Kategorii nákladů je nutné přiřadit skupině kategorií, která podporuje typ transakce **Hodiny**.
 -   Vlastnost řádku určuje výchozí informace o způsobu fakturování hlášeného času v projektu.

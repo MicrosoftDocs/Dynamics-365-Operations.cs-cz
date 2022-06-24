@@ -1,6 +1,6 @@
 ---
 title: Nastavení zaúčtování správy rabatu
-description: Toto téma Popisuje, jak nastavit účetní profily. Účetní profily se používají k určení položek účtování pro řádky výpočtu správy rabatů.
+description: Tento článek popisuje, jak nastavit účetní profily. Účetní profily se používají k určení položek účtování pro řádky výpočtu správy rabatů.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873572"
 ---
 # <a name="rebate-management-posting-setup"></a>Nastavení zaúčtování správy rabatu
 
@@ -30,7 +30,7 @@ Tato funkce funguje napříč společnostmi (právnickými osobami). Můžete ur
 
 Chcete-li nastavit účetní profily správy rabatu pro zákazníky a dodavatele, přejděte na **Správa rabatů \> Nastavení účtování správy rabatů \> Účetní profily správy rabatů**. Stránka **Účetní profily správy rabatů** obsahuje podokno se seznamem, které zobrazuje všechny vaše stávající profily. Tlačítka v podokně akcí můžete přidat profily do seznamu nebo je odstranit.
 
-Zbývající části tohoto tématu Popisují, jak použít dostupná pole při vytváření nebo úpravách profilu.
+Zbývající části tohoto článku popisují, jak použít dostupná pole při vytváření nebo úpravách profilu.
 
 ## <a name="posting-profile-header"></a>Záhlaví účetního profilu
 

@@ -1,6 +1,6 @@
 ---
 title: Kódy důvodů pro inventury zásob
-description: Toto téma popisuje, jak nastavit a použít kódy důvodů pro úlohy účtování.
+description: Tento článek popisuje, jak nastavit a použít kódy důvodů pro úlohy účtování.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857105"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kódy důvodů pro inventury zásob
 
@@ -42,7 +42,7 @@ Před nastavením systému doporučujeme nejprve definovat strategii pro práci 
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Zapnutí funkce kódu důvodu v systému
 
-Pokud ve svém systému nevidíte všechny funkce popsané v tomto tématu, pravděpodobně budete muset zapnout funkci *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
+Pokud ve svém systému nevidíte všechny funkce popsané v tomto článku, pravděpodobně budete muset zapnout funkci *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*. Správci mohou pomocí nastavení [správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav funkce a zapnout ji, je-li to potřeba. V pracovním prostoru **Správa funkcí** je tato funkce uvedena následovně:
 
 - **Modul:** *Řízení skladu*
 - **Název funkce:** *Zaúčtovat úpravy množství na skladě pomocí konfigurovatelných kódů důvodu připojených k protiúčtům*
@@ -111,7 +111,7 @@ Chcete-li nastavit kódy důvodu inventury, postupujte následujícím způsobem
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Nastavení skupin kódů důvodů inventury
 
-*Skupiny kódů důvodu inventury* lze použít jako součást položek nabídky *Příchozí úprava* a *Odchozí úprava* v mobilní aplikaci Warehouse Management pro omezení seznamu kódů důvodů inventury. (Další informace o skupinách kódů důvodu inventury najdete v článku [Nastavení položek nabídky mobilního zařízení pro příchozí a odchozí úpravu](#setup-adjustment-in-out) dále v tomto tématu.)
+*Skupiny kódů důvodu inventury* lze použít jako součást položek nabídky *Příchozí úprava* a *Odchozí úprava* v mobilní aplikaci Warehouse Management pro omezení seznamu kódů důvodů inventury. (Další informace o skupinách kódů důvodu inventury najdete v článku [Nastavení položek nabídky mobilního zařízení pro příchozí a odchozí úpravu](#setup-adjustment-in-out) dále v tomto článku.)
 
 1. Přejděte do nabídky **Řízení zásob** \> **Nastavení** \> **Zásoby** \> **Skupiny kódů důvodů inventury**.
 1. V podokně Akce vyberte možnost **Nový** a přidejte skupinu.
@@ -174,7 +174,7 @@ Chcete-li nastavit položku nabídky mobilního zařízení pro příchozí a od
         - *Skrýt* - Nezobrazit kód důvodu.
 
     - **Upravit kód důvodů inventury** – Nastavením této možnosti na *Ano* umožníte pracovníkovi upravovat kód důvodu, když se zobrazí během inventury na mobilním zařízení. Nastavte možnost na *Ne*, když pracovník nesmí kód upravit.
-    - **Skupina kódů důvodu inventury** – Chcete -li omezit seznam možností, který se zobrazí pracovníkům, vyberte skupinu kódů důvodu. Informace o tom, jak nastavit skupiny kódů důvodu, najdete v části [Nastavení skupin kódů důvodů inventury](#reason-groups) dříve v tomto tématu. 
+    - **Skupina kódů důvodu inventury** – Chcete -li omezit seznam možností, který se zobrazí pracovníkům, vyberte skupinu kódů důvodu. Informace o tom, jak nastavit skupiny kódů důvodu, najdete v části [Nastavení skupin kódů důvodů inventury](#reason-groups) dříve v tomto článku. 
 
 > [!NOTE]
 > Když přiřadíte skupinu kódů důvodu inventury k položkám nabídky *Příchozí úprava* a *Odchozí úprava* a možnost **Použít průvodce procesem** je nastavena na *Ano*, získáte omezený seznam kódů důvodu inventury jako součást zpracování v mobilní aplikaci Warehouse Management.

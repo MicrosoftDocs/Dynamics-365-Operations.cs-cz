@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850634"
 ---
 # <a name="product-lifecycle-state-overview"></a>Přehled životního cyklu produktu
 
@@ -74,7 +74,7 @@ Stavy životního cyklu produktu jsou podporovány datovými entitami a stav ži
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Nalezení zastaralých produktů a variant produktů
 
-Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu. Chcete-li nalézt zastaralé produkty, nahlédněte do části [Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu](tasks/obsolete-product-variants.md). Toto téma ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.  
+Můžete spustit simulační analýzu, abyste nalezli zastaralé uvolněné produkty nebo varianty produktu, a poté aktualizovat jejich stav životního cyklu produktu. Chcete-li nalézt zastaralé produkty, nahlédněte do části [Nalezení zastaralých variant produktu a přiřazení stavu životního cyklus produktu](tasks/obsolete-product-variants.md). Tento článek ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Také ukazuje, jak zobrazit výsledky simulace, a vyhodnocuje počet produktů a variant produktů, který bude přidružen k novému stavu životního cyklu produktu při spuštění aktualizace bez simulace.  
 
 Spuštěním analýzy v režimu simulace se zobrazí produkty a varianty produktů identifikované jako zastaralé v konkrétním formuláři, kde je lze snadno zkontrolovat. Analýza vyhledá transakce a konkrétní hlavní data k určení produktů, které nemají žádnou poptávku v rámci proměnného období a žádná hlavní data, která mohou mít za následek poptávku. Nové uvolněné produkty v rámci proměnného období lze vyloučit z analýzy. Když simulace analýzy vrátí očekávaný výsledek, může uživatel spustit analýzu a nastavit nový stav životního cyklu produktu pro všechny produkty identifikované analýzou jako zastaralé.  
 
@@ -97,7 +97,7 @@ Použijte následující kritéria pro výběr a aktualizaci uvolněných produk
 - Žádný aktivní či budoucí řádky prodejní nebo nákupní smlouvy pro produkt nebo variantu produktu.
 - Produkt nebo varianta produktu se nepoužívá v kusovníku, který je přidružený se schválenou verzí kusovníku, který ještě nevypršel, pro produkt nebo variantu, která jsou aktivní pro plánování.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 - [Vytvoření nového stavu životního cyklu produktu](tasks/new-product-lifecycle-state.md)
 - [Vytvoření výchozího stavu životního cyklu produktu](tasks/default-product-lifecycle-state.md)

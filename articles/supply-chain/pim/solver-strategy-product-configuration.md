@@ -1,6 +1,6 @@
 ---
 title: Strategie řešitele pro konfiguraci produktů
-description: Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
+description: Tento článek popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 author: t-benebo
 ms.date: 02/19/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37e8f2c9557ee6fc827d60ca6dc83cd638b6378a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 76ad64c19fe088ec85fafba4a3276a4d8c23a18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852353"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
+Tento článek popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 
 Koncept strategie řešitele byl poprvé představen v aktualizaci Cumulative update 7 (CU7) pro Microsoft Dynamics AX 2012 R2. Byl rozšířen v kumulativní aktualizaci 8 (CU8) pro Microsoft Dynamics AX 2012 R3 a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 

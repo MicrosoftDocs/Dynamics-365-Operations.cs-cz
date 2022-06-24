@@ -1,6 +1,6 @@
 ---
 title: Přidání kódu skriptu na webové stránky pro podporu telemetrie
-description: V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
+description: V tomto článku je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
 author: bicyclingfool
 ms.date: 09/29/2020
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 262216ee99d52e3d53f5f5dae663104bb79757c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852834"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Přidání kódu skriptu na webové stránky pro podporu telemetrie
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
+V tomto článku je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
 
 Služba Web Analytics je základní nástroj, který umožňuje pochopit, jakým způsobem zákazníci komunikují s webem, a učinit rozhodnutí, která pomohou optimalizovat prostředí s maximálním vylazením. K dispozici je mnoho balíčků služby Web Analytics, které vám pomohou dosáhnout těchto cílů, jako jsou služby Google Analytics, Clicky, Moz Analytics a KISSMetrics. Většina balíčků služby Web Analytics vyžaduje přidání kódu skriptu na straně klienta do prvku **\<head\>** kódu HTML pro všechny stránky vašeho webu.
 
 > [!NOTE]
-> Pokyny v tomto tématu se vztahují také na jiné vlastní funkce na straně klienta, které řešení Microsoft Dynamics 365 Commerce nativně nenabízí.
+> Pokyny v tomto článku se vztahují také na jiné vlastní funkce na straně klienta, které řešení Microsoft Dynamics 365 Commerce nativně nenabízí.
 
 ## <a name="create-a-reusable-fragment-for-your-script-code"></a>Vytvoření opakovaně použitelného fragmentu kódu skriptu
 

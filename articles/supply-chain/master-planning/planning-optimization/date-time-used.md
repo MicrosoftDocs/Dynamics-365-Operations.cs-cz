@@ -1,6 +1,6 @@
 ---
 title: Parametry data a času, které používá optimalizace plánování
-description: Toto téma poskytuje informace o parametrech data a času, které optimalizace plánování používá během své činnosti.
+description: Tento článek poskytuje informace o parametrech data a času, které optimalizace plánování používá během své činnosti.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885892"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametry data a času, které používá optimalizace plánování
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma poskytuje informace o parametrech data a času, které optimalizace plánování používá během své činnosti.
+Tento článek poskytuje informace o parametrech data a času, které optimalizace plánování používá během své činnosti.
 
 Zatímco vestavěný modul hlavního plánování používá data transakcí ve všech výpočtech, optimalizace plánování pracuje s hodnotami data a času, které jsou převedeny na data. Tento rozdíl v chování může vést k situacím, kdy například prognózované transakce, které jsou vytvořeny o půlnoci dne, kdy je spuštěno hlavní plánování, nejsou zahrnuty, protože optimalizace plánování se domnívá, že byly vytvořeny před aktuálním datem.
 

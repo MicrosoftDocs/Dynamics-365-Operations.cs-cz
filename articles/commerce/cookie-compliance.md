@@ -1,6 +1,6 @@
 ---
-title: Shoda souborů cookie
-description: V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
+title: Zásady zacházení se soubory cookie
+description: V tomto článku jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/10/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
-ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
+ms.openlocfilehash: 6a96ba21f1872b41156768fb7277933e68a16d90
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "8403140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863532"
 ---
 # <a name="cookie-compliance"></a>Zásady zacházení se soubory cookie
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
+V tomto článku jsou popsány důležité informace týkající se kompatibility souborů cookie a výchozích zásad obsažených v aplikaci Microsoft Dynamics 365 Commerce.
 
 Ochrana osobních údajů je důležitým faktorem při použití všech technologií sledování, které ovlivňují zákazníky elektronického obchodu. Z důvodu norem dodržování ochrany osobních údajů, jako je obecné nařízení o ochraně osobních údajů (GDPR) v Evropské unii (EU), je třeba zvážit elektronické zásady ochrany osobních údajů pro všechny weby, které jsou v současné době aktivní. Vzhledem k tomu, že je většina webů elektronického obchodování ve výchozím nastavení globálně přístupná, je důležité prostudovat standardy kompatibility pro web elektronického obchodování.
 

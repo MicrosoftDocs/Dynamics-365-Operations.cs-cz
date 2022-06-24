@@ -1,6 +1,6 @@
 ---
 title: Ukázka integrace kontrolní jednotky pro Švédsko
-description: V tomto tématu je uveden přehled ukázkové fiskální integrace pro Švédsko v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Švédsko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885395"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Ukázka integrace kontrolní jednotky pro Švédsko
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled ukázkové fiskální integrace pro Švédsko v Microsoft Dynamics 365 Commerce.
+V tomto článku je uveden přehled ukázkové fiskální integrace pro Švédsko v Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > Tato ukázková funkce fiskální integrace nahrazuje předchozí [ukázku integrace POS s kontrolními jednotkami pro Švédsko](retail-sdk-control-unit-sample.md). Dřívější ukázka nevyužívá výhody [rámce fiskální integrace](./fiscal-integration-for-retail-channel.md) a v pozdějších aktualizacích nebude mít podporu. Informace, jak migrovat z dřívější ukázky na ukázku odpovídající verzi Dynamics 365 Commerce **10.0.22 a starší** viz [Migrace z dřívější ukázkové integrace](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -83,7 +83,7 @@ Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastn�
 
 Pro každý poožadovaný formát příjemky změňte hodnotu pole **Chování tisku** na **Vždy tisknout**.
 
-V Návrháři formátu příjemky přidejte následující vlastní pole do sekce **Zápatí**. Všimněte si, že názvy polí odpovídají jazykovým textům, které jste definovali v předchozím oddílu v tomto tématu.
+V Návrháři formátu příjemky přidejte následující vlastní pole do sekce **Zápatí**. Všimněte si, že názvy polí odpovídají jazykovým textům, které jste definovali v předchozím oddílu v tomto článku.
 
 - **Registrace kontrolního kódu** – Toto pole vytiskne kontrolní kód.
 - **Registrace zařízení** – Toto pole vytiskne výrobní číslo kontrolní jednotky.

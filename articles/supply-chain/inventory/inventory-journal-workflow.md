@@ -1,6 +1,6 @@
 ---
 title: Pracovní postupy schválení deníku zásob
-description: Toto téma popisuje, jak nastavit s používat pracovní postupy schválení deníků pro různé typy transakcí fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
+description: Tento článek popisuje, jak nastavit s používat pracovní postupy schválení deníků pro různé typy transakcí fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873978"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Pracovní postupy schválení deníku zásob
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit a používat pracovní postupy schválení deníku zásob pro různé typy transakcí fyzických zásob, jako například výdeje a příjmy, skladové pohyby, kusovníky a odsouhlasení fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
+Tento článek popisuje, jak nastavit a používat pracovní postupy schválení deníku zásob pro různé typy transakcí fyzických zásob, jako například výdeje a příjmy, skladové pohyby, kusovníky a odsouhlasení fyzických zásob. Pracovní postupy deníku zásob zajišťují, že k transakcím mohou být zaúčtovány pouze schválené deníky zásob.
 
 > [!NOTE]
 > Pracovní postupy schvalování deníku zásob se vztahují pouze na transakce zaznamenané pomocí modulu Správa zásob. Nepracují s deníky zásob spuštěnými z modulu Řízení skladu.

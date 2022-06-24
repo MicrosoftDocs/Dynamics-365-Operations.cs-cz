@@ -1,6 +1,6 @@
 ---
-title: Nastavení analýzy recency/frekvence/peněžního období
-description: Toto téma vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
+title: Nastavení analýzy recency, frekvence a peněžní (RFM) analýzy
+description: Tento článek vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 153759ac6b70235b79c080e934819536c2861371
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765211"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850164"
 ---
-# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Nastavení analýzy recency/frekvence/peněžního období
+# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Nastavení analýzy recency, frekvence a peněžní (RFM) analýzy
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
+Tento článek vysvětluje, jak nastavit analýzu RFM (Recency, Frequency, and Monetary) odběratelů.
 
 Analýza RFM je marketingový nástroj, který vaše organizace může používat k vyhodnocení dat, která je vygenerována nákupy odběratelů. Po nastavení analýzy RFM je odběratelů přiřazeno hodnocení RFM, jak nakupují. Hodnocení RFM může být trojmístné hodnocení nebo celkové číslo v závislosti na konfiguraci analýzy RFM ve vaší organizaci. Zde je princip hodnocení, pokud vaše organizace používá trojmístné hodnocení pro výsledek:
 

@@ -1,6 +1,6 @@
 ---
 title: Správa uživatelů e-Commerce a rolí
-description: V tomto tématu je vysvětleno, jak udělit uživatelům přístup k vývojovému prostředí vašeho webu Microsoft Dynamics 365 Commerce.
+description: V tomto článku je vysvětleno, jak udělit uživatelům přístup k vývojovému prostředí vašeho webu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac4342e4439db229997d9d4a0ad32f3664a795b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715399"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868954"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Správa uživatelů e-Commerce a rolí
 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak udělit uživatelům přístup k vývojovému prostředí vašeho webu Microsoft Dynamics 365 Commerce.
+V tomto článku je vysvětleno, jak udělit uživatelům přístup k vývojovému prostředí vašeho webu Microsoft Dynamics 365 Commerce.
 
 Chcete-li pomoci řídit uživatelský přístup a udělit uživatelům oprávnění k provádění konkrétních úkolů, používá vývojové prostředí na webu skupiny zabezpečení, které vytvoříte v Microsoft Azure Active Directory (Azure AD). Nejprve přiřaďte novou nebo existující skupinu zabezpečení z Azure AD k jednotlivým rolím ve vývojovém prostředí. Poté přiřadíte nebo odvoláte oprávnění pro jednotlivé uživatele tím, že přidáte tyto uživatele do příslušné skupiny zabezpečení nebo je odeberete ze skupiny zabezpečení.
 
@@ -50,7 +50,7 @@ Pokud zřizujete Dynamics 365 Commerce v prostředí služby Microsoft Dynamics 
 
 ## <a name="administrator-role"></a>Role správce
 
-Při vytváření nového webu v rámci Commerce budete požádáni o poskytnutí skupiny zabezpečení pro roli **Správce**. Přehled oprávnění, která tato role uděluje, naleznete v tabulce uvedené výše v tomto tématu.
+Při vytváření nového webu v rámci Commerce budete požádáni o poskytnutí skupiny zabezpečení pro roli **Správce**. Přehled oprávnění, která tato role uděluje, naleznete v tabulce uvedené výše v tomto článku.
 
 ## <a name="add-or-update-security-groups"></a>Přidat nebo aktualizovat skupiny zabezpečení
 

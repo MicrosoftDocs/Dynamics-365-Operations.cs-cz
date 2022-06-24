@@ -1,6 +1,6 @@
 ---
 title: Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
-description: Toto téma vysvětluje, jak zřídit místní jednotky škálování hrany pomocí vlastního hardwaru a nasazení, které je založeno na místních obchodních datech (LBD).
+description: Tento článek vysvětluje, jak zřídit místní jednotky škálování hrany pomocí vlastního hardwaru a nasazení, které je založeno na místních obchodních datech (LBD).
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882743"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Nasazení jednotek škálování hraniční sítě na vlastní hardware pomocí LBD
 
@@ -27,7 +27,7 @@ Jednotky škálování hrany hrají důležitou roli v distribuované hybridní 
 
 Jednotky škálování hrany lze nasadit vytvořením [místního prostředí](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) místních obchodních dat (LBD) a poté je nakonfigurovat tak, aby fungovaly jako jednotka škálování ve vaší distribuované hybridní topologii pro správu dodavatelského řetězce. Toho je dosaženo propojením místního prostředí LBD s prostředím Supply Chain Management v cloudu, které bylo nakonfigurováno tak, aby fungovalo jako centrum.  
 
-Toto téma popisuje, jak nastavit místní prostředí LBD jako jednotku škálování hrany a pak ji přidružit k centru.
+Tento článek popisuje, jak nastavit místní prostředí LBD jako jednotku škálování hrany a pak ji přidružit k centru.
 
 ## <a name="infrastructure-considerations"></a>Úvahy o infrastruktuře
 
@@ -44,21 +44,21 @@ Zde je přehled kroků nasazení.
 
 1. **Nastavte a nasaďte prostředí LBD s *prázdnou* databází.**
 
-    Použijte LCS k nasazení prostředí LBD s nejnovější topologií a prázdnou databází. Pro více informací viz část [Nastavení a nasazení prostředí LBD s prázdnou databází](#set-up-deploy) dále v tomto tématu. Musíte používat Supply Chain Management verze 10.0.21 s nebo vyšší v prostředích center a jednotek škálování.
+    Použijte LCS k nasazení prostředí LBD s nejnovější topologií a prázdnou databází. Pro více informací viz část [Nastavení a nasazení prostředí LBD s prázdnou databází](#set-up-deploy) dále v tomto článku. Musíte používat Supply Chain Management verze 10.0.21 s nebo vyšší v prostředích center a jednotek škálování.
 
 1. **Nahrajte cílové balíčky do prostředků projektu LBD v LCS.**
 
-    Připravte si balíčky aplikací, platformy a přizpůsobení, které použijete v centru a jednotce škálování hran. Pro více informací viz část [Nahrání cílových balíčků do prostředků projektu LBD v LCS](#upload-packages) dále v tomto tématu.
+    Připravte si balíčky aplikací, platformy a přizpůsobení, které použijete v centru a jednotce škálování hran. Pro více informací viz část [Nahrání cílových balíčků do prostředků projektu LBD v LCS](#upload-packages) dále v tomto článku.
 
 1. **Obsluhujte prostředí LBD pomocí cílových balíčků.**
 
-    Tento krok zajistí, že na centru i paprsku bude nasazeno stejné sestavení a přizpůsobení. Pro více informací viz část [Obsluha prostředí LBD pomocí cílových balíčků](#service-target-packages) dále v tomto tématu.
+    Tento krok zajistí, že na centru i paprsku bude nasazeno stejné sestavení a přizpůsobení. Pro více informací viz část [Obsluha prostředí LBD pomocí cílových balíčků](#service-target-packages) dále v tomto článku.
 
 1. **Dokončete konfiguraci jednotky škálování a přiřazení pracovní zátěže.**
 
-    Pro více informací viz část [Přiřazení jednotky škálování hrany LBD k centru](#assign-edge-to-hub) dále v tomto tématu.
+    Pro více informací viz část [Přiřazení jednotky škálování hrany LBD k centru](#assign-edge-to-hub) dále v tomto článku.
 
-Zbývající části tohoto tématu poskytují podrobnější informace o tom, jak provést tyto kroky.
+Zbývající části tohoto článku poskytují podrobnější informace o tom, jak provést tyto kroky.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Nastavte a nasaďte prostředí LBD s prázdnou databází
 
@@ -67,7 +67,7 @@ Tento krok vytvoří funkční prostředí LBD. Prostředí však nemusí mít n
 1. Postupujte podle pokynů v části [Nastavení a nasazení místních prostředí (Platform Update 41 a novější)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Musíte používat Supply Chain Management verze 10.0.21 s nebo vyšší v prostředích center a jednotek škálování. Kromě toho musíte použít skripty infrastruktury verze 2.12.0 nebo novější. 
 
     > [!IMPORTANT]
-    > Přečtěte si zbytek této části **před** provedením kroků v tomto tématu.
+    > Přečtěte si zbytek této části **před** provedením kroků v tomto článku.
 
 1. Než popíšete svou konfiguraci v souboru infrastructure\\ConfigTemplate.xml, spusťte následující skript:
 

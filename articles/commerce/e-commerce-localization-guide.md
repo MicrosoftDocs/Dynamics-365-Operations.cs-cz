@@ -1,6 +1,6 @@
 ---
 title: Průvodce lokalizací elektronického obchodu Dynamics 365 Commerce
-description: Toto téma popisuje, jak lokalizovat web elektronického obchodu Microsoft Dynamics 365 Commerce do dalších jazyků a konfigurovat web tak, aby podporoval více kanálů.
+description: Tento článek popisuje, jak lokalizovat web elektronického obchodu Microsoft Dynamics 365 Commerce do dalších jazyků a konfigurovat web tak, aby podporoval více kanálů.
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1e9d91036ceeb9161dc8ee903532b2cf3ca435e2
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 955a85340f6d35f1e203d74920d07b5dc6ff8654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873377"
 ---
 # <a name="dynamics-365-commerce-e-commerce-localization-guide"></a>Průvodce lokalizací elektronického obchodu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak lokalizovat web elektronického obchodu Microsoft Dynamics 365 Commerce do dalších jazyků a konfigurovat web tak, aby podporovaly více kanálů. Najdete tu také koncepty a terminologii související s procesem.
+Tento článek popisuje, jak lokalizovat web elektronického obchodu Microsoft Dynamics 365 Commerce do dalších jazyků a konfigurovat web tak, aby podporovaly více kanálů. Najdete tu také koncepty a terminologii související s procesem.
 
 Schopnosti elektronického obchodování v Dynamics 365 Commerce byly navrženy tak, aby aktivovaly online prostředí, které lze přizpůsobit konkrétním zemím a jazykům, ale zároveň umožňují maximální opětovné použití šablon, stránek, obsahu a médií. Můžete také vytvořit základní web a poté expandovat na nové trhy přidáním podpory pro další země a jazyky v průběhu času.
 
@@ -79,7 +79,7 @@ V této konfiguraci zákazníci a partneři obvykle vyvíjejí všechny materiá
 ![Výchozí nastavení webu elektronického obchodu Dynamics 365 Commerce](media/loc-guide-1.png)
 
 > [!NOTE]
-> V ukázkovém web Fabrikam můžete konfigurovat další jazyk, aby bylo možné vývoj obsahu provádět v tomto jazyce. Informace o tom, jak přidat nový jazyk do webu a kanálu najdete v části [Konfigurace dalšího jazyka pro web](#configure-an-additional-language-for-your-site) dále v tomto tématu.
+> V ukázkovém web Fabrikam můžete konfigurovat další jazyk, aby bylo možné vývoj obsahu provádět v tomto jazyce. Informace o tom, jak přidat nový jazyk do webu a kanálu najdete v části [Konfigurace dalšího jazyka pro web](#configure-an-additional-language-for-your-site) dále v tomto článku.
 
 Nicméně systém správy obsahu (CMS) a model stránky pro weby elektronického obchodu Dynamics 365 Commerce byly navrženy tak, aby umožňovaly expanzi na nové trhy a lokality. Proto můžete prostřednictvím jediného webu elektronického obchodu spravovat materiály pro internetový obchod pokrývající více trhů a jazyků.
 
@@ -117,7 +117,7 @@ Chcete-li v konfigurátoru webu přidat jazyk do kanálu, postupujte podle násl
 
 Když se vrátíte do zobrazení **Stránky** v konfigurátoru webů Commerce, nový jazyk bude k dispozici v ovládacím prvku výběru kanálu a národního prostředí vpravo nahoře. Nyní můžete vytvářet lokalizované verze stránek ve vašem základním jazyce.
 
-Proces lokalizace obsahu vašich stránek a fragmentů je popsán v části [Lokalizace obsahu webu elektronického obchodu](#localize-e-commerce-site-content) dále v tomto tématu.
+Proces lokalizace obsahu vašich stránek a fragmentů je popsán v části [Lokalizace obsahu webu elektronického obchodu](#localize-e-commerce-site-content) dále v tomto článku.
 
 ### <a name="configure-a-new-channel-for-your-site"></a>Konfigurace nového kanálu pro web
 
@@ -156,7 +156,7 @@ V konfigurátoru webu lze lokalizovat následující materiály webu elektronick
 
 Všechny nové stránky, fragmenty a multimediální materiály jsou vytvářeny v kontextu kanálu a jazyka, které jsou aktuálně vybrány ve výběru kanálu a národního prostředí. Tento jazyk je obvykle vaším „základním jazykem“, pokud jste nekonfigurovali další jazyky nebo kanály. Na webech, kde je konfigurováno více kanálů a jazyků, je „základní jazyk“ definován kanálem a národním prostředím, které jste nastavili jako výchozí na stránce **Kanály** v nastavení webu.
 
-Kroky lokalizace obsahu pro stránky, fragmenty a mediální materiály jsou podobné. Na výjimky a rozdíly upozorníme v následujících částech. Kroky při lokalizaci obsahu modulu se však liší. Více informací naleznete v části [Lokalizace modulů](#localize-modules) dále v tomto tématu.
+Kroky lokalizace obsahu pro stránky, fragmenty a mediální materiály jsou podobné. Na výjimky a rozdíly upozorníme v následujících částech. Kroky při lokalizaci obsahu modulu se však liší. Více informací naleznete v části [Lokalizace modulů](#localize-modules) dále v tomto článku.
 
 #### <a name="step-1-export-an-xliff-file"></a>Krok 1: Exportujte soubor XLIFF
 

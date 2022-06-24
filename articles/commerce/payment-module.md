@@ -1,6 +1,6 @@
 ---
-title: Modul platby
-description: Toto téma popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+title: Platební modul
+description: Tento článek popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 04/12/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: a89ca5dd4f46611e75faccd3213028750fa48d35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850268"
 ---
 # <a name="payment-module"></a>Platební modul
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
+Tento článek popisuje modul platby a popisuje, jak jej konfigurovat v řešení Microsoft Dynamics 365 Commerce.
 
 Platba – Tento modul umožňuje zákazníkovi zaplatit za objednávku pomocí kreditní nebo debetní karty. Integraci platby pro tento modul zajišťuje konektor plateb Dynamics 365 pro Adyen. Další informace o nastavení a konfiguraci konektoru plateb pro online obchody naleznete v tématu [Konektor plateb Dynamics 365 pro Ayden](dev-itpro/adyen-connector.md)  
 

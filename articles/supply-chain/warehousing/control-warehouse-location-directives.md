@@ -1,6 +1,6 @@
 ---
 title: Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa
-description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
+description: Tento článek popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877414"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
+Tento článek popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 
 Pokyny, které pracovníci skladu obdrží v mobilním zařízení, jsou určeny podle šablon práce, které nastavíte v aplikaci Dynamics 365 Supply Chain Management k definování různých procesů a úloh ve skladu. Šablony práce určují způsob provedení práce pro každý skladový proces. Přiřazením směrnic skladového místa k šablonám práce můžete pomoci zajistit, že práce bude probíhat v určitých fyzických oblastech skladu.
 
@@ -73,7 +73,7 @@ Směrnice skladového místa určují, *kde* mají být položky vyzvednuty a *k
 ## <a name="additional-resources"></a>Další prostředky
 
 - Video: [Podrobné prozkoumání konfigurace správy skladu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Téma nápovědy: [Práce se směrnicemi skladového místa](create-location-directive.md)
+- Článek nápovědy: [Práce se směrnicemi skladového místa](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

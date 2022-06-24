@@ -1,6 +1,6 @@
 ---
 title: Nastavení skladu s použitím šablony konfigurace skladu
-description: Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu.
+description: Tento článek vysvětluje nastavení skladu s použitím šablony konfigurace skladu.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856099"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Nastavení skladu s použitím šablony konfigurace skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace skladu. Existuje několik předdefinovaných šablon konfigurace, které lze použít. Další informace o použití hodnot těchto šablon naleznete v tématu [Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Tento článek vysvětluje nastavení skladu s použitím šablony konfigurace skladu. Existuje několik předdefinovaných šablon konfigurace, které lze použít. Další informace o použití hodnot těchto šablon naleznete v tématu [Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scénáře, které mohou být šablony konfigurací užitečné
 
@@ -38,7 +38,7 @@ Toto téma vysvětluje nastavení skladu s použitím šablony konfigurace sklad
 - Chcete se rychle připravit na ukázku funkcí skladu.
 - Chcete, aby existující položky a sklady používaly funkce v modulu Řízení skladu namísto funkce v modulu Řízení zásob.
 
-Toto téma se zaměřuje na první z těchto scénářů. Ukazuje použití šablony konfigurace pro zkopírování nastavení konfigurace z testovacího prostředí do provozního prostředí.
+Tento článek se zaměřuje na první z těchto scénářů. Ukazuje použití šablony konfigurace pro zkopírování nastavení konfigurace z testovacího prostředí do provozního prostředí.
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>Kopírování nastavení konfigurace z testovacího prostředí do provozního prostředí
 
@@ -90,9 +90,9 @@ U datového balíčku můžete stáhnout soubor ZIP. Tento soubor obsahuje všec
 
 Možnost **Zobrazit protokol provádění** obsahuje podrobné informace o každé datové entitě, která je importována. Můžete použít zobrazení dat fázování, abyste se dostali rychle k cílovým datům. V takovém případě se zobrazí, jak vypadají importovaná data na souvisejících stránkách v aplikaci. Při použití výchozích datových šablon pracuje pořadí importu pro každou datovou entitu předem definovaným způsobem, aby se zajistilo, že všechna závislá data budou importována nejdříve. Jsou-li vlastní datové entity součástí projektu, je třeba zkontrolovat, že je definováno správné pořadí. Další informace naleznete v tématu[Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopírování konfigurace skladu z jedné společnosti do nové společnosti ve stejné instanci, podívejte se na toto 3minutové video na YouTube: [Použití šablony skladu ke kopírování konfigurace aplikace Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopírování konfigurace skladu z jedné společnosti do nové společnosti ve stejné instanci, podívejte se na toto 3minutové video na YouTube nazvané [Použití šablony skladu ke kopírování konfigurace v aplikaci Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
-## <a name="related-topic"></a>Související téma
+## <a name="related-article"></a>Související článek
 
 [Šablony dat konfigurací](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

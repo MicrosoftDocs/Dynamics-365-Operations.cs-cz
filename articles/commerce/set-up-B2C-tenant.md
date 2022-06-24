@@ -1,6 +1,6 @@
 ---
 title: Nastavení klienta B2C v Commerce
-description: Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
+description: Tento článek popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853734"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Nastavení klienta B2C v Commerce
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
+Tento článek popisuje, jak nastavíte své klienty Azure Active Directory (Azure AD) business-to-consumer (B2C) pro ověření webu uživatele v aplikaci Dynamics 365 Commerce.
 
 Dynamics 365 Commerce používá Azure AD B2C pro podporu toků přihlašovacích údajů a ověřování uživatele. Uživatel se může registrovat, přihlásit a obnovit své heslo pomocí těchto toků. Azure AD B2C ukládá citlivé informace o ověřování uživatele, například jeho uživatelské jméno a heslo. Záznam uživatele v klientovi B2C uloží buď záznam místního účtu B2C nebo záznam zprostředkovatele sociální identity B2C. Tyto záznamy B2C budou odkazovat zpět na záznam odběratele v prostředí Commerce.
 

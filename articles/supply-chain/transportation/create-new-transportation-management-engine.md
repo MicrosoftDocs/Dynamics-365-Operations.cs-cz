@@ -1,6 +1,6 @@
 ---
 title: Vytvoření nového modulu správy přepravy
-description: Toto téma popisuje, jak vytvořit nový modul správy přepravy v Dynamics 365 Supply Chain Management.
+description: Tento článek popisuje, jak vytvořit nový modul správy přepravy v Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857250"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Vytvoření nového modulu správy přepravy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit nový modul správy přepravy v Dynamics 365 Supply Chain Management. 
+Tento článek popisuje, jak vytvořit nový modul správy přepravy v Dynamics 365 Supply Chain Management. 
 
 Moduly správy přepravy (TMS) definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy. Supply Chain Management poskytuje několik různých typů modulů, které vypočítávají různé parametry, jako jsou sazby, časy přepravy a počet zón, které budou během přepravy překročeny. Tento článek vysvětluje, jak používat vývojové prostředí Microsoft Visual Studio spolu s vývojovými nástroji Supply Chain Management k vytvoření a nasazení nového modulu TMS a následně jak nastavit modul v Operations. Více informací o motorech viz [Motory pro řízení dopravy](transportation-management-engines.md).
 

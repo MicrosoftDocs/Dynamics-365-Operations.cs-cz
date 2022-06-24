@@ -1,6 +1,6 @@
 ---
 title: Vytvoření rozhraní pro provádění výrobního provozu
-description: Toto téma vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
+description: Tento článek vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859133"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Vytvoření rozhraní pro provádění výrobního provozu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
+Tento článek vysvětluje, jak nakonfigurovat ovládací prvky formuláře, aby se na ně aplikovaly výchozí styly provádění výrobní plochy.
 
 ## <a name="forms-and-dialogs"></a>Formuláře a dialogy
 
@@ -31,7 +31,7 @@ Styly lze na formulář nebo dialog použít pouze v případě, že jsou splně
 - Pokud by se formulář měl podobat existujícímu formuláři průběhu sestavy, musí název vašeho formuláře nebo dialogu začínat řetězcem `JmgProductionFloorExecutionCustomInputDialog`.
 - Formulář nebo dialog může obsahovat podrobnou část formuláře. Chcete-li na něj použít styly, musí název části formuláře podrobností začínat řetězcem `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Pokud má mít formulář nebo dialogové okno jednoduché zobrazení, musí název jednoduchého zobrazení začínat řetězcem `JmgProductionFloorExecutionCustomDialog`. Příklady formulářů, které mají jednoduché zobrazení, zahrnují počáteční formulář a formulář nepřímé aktivity.
-- Všechny ovládací prvky v dialogu musejí být konfigurovány tak, jak je popsáno v tomto tématu.
+- Všechny ovládací prvky v dialogu musejí být konfigurovány tak, jak je popsáno v tomto článku.
 
 > [!IMPORTANT]
 > Funkce uvedené v prvních dvou odrážkách tohoto seznamu vyžadují Supply Chain Management verze 10.0.19 nebo novější.

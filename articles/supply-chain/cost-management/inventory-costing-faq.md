@@ -1,6 +1,6 @@
 ---
 title: Časté otázky týkající se výpočtu nákladů zásob
-description: Toto téma poskytuje odpovědi na časté otázky týkající se výpočtu nákladů na zásoby v Microsoft Dynamics 365 Supply Chain Management.
+description: Tento článek poskytuje odpovědi na časté otázky týkající se výpočtu nákladů na zásoby v Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850837"
 ---
 # <a name="inventory-costing-faq"></a>Časté otázky týkající se výpočtu nákladů zásob
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje odpovědi na časté otázky týkající se výpočtu nákladů na zásoby v Microsoft Dynamics 365 Supply Chain Management.
+Tento článek poskytuje odpovědi na časté otázky týkající se výpočtu nákladů na zásoby v Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Uzávěrka skladu, vyrovnání a přepočet
 
@@ -359,7 +359,7 @@ Doporučujeme, abyste často monitorovali a opravovali záporné zásoby, pokud 
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Musím vytvořit novou položku, pokud se moje zásoby dostaly do záporné hodnoty a používám klouzavý průměr?
 
-Číslo Pokud vaše organizace umožňuje, aby zásoby byly fyzicky záporné a jako model zásob používáte klouzavý průměr, systém použije posloupnost záložních nákladů, která je přiřazena na stránce **Parametry modulu Řízení zásob a skladu** a určí, jak budou náklady přiřazeny k vašim výdejům. Obecně doporučujeme, abyste nepovolovali, aby se vaše zásoby dostaly do fyzického záporu. Více informací naleznete mezi dalšími otázkami v sekci [Záporné zásoby](#negative-inventory) v tomto tématu.
+Číslo Pokud vaše organizace umožňuje, aby zásoby byly fyzicky záporné a jako model zásob používáte klouzavý průměr, systém použije posloupnost záložních nákladů, která je přiřazena na stránce **Parametry modulu Řízení zásob a skladu** a určí, jak budou náklady přiřazeny k vašim výdejům. Obecně doporučujeme, abyste nepovolovali, aby se vaše zásoby dostaly do fyzického záporu. Více informací naleznete mezi dalšími otázkami v sekci [Záporné zásoby](#negative-inventory) v tomto článku.
 
 ## <a name="not-stocked-products"></a>Produkty, které nejsou na skladě
 
@@ -433,7 +433,7 @@ Pokud existuje cenový rozdíl mezi zaúčtováním fyzické aktualizace a finan
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Když použiji klouzavý průměr, co se stane, když dojde k výdeji před příjmem?
 
-Obvykle se může vyskytnout výdej před příjmem buď proto, že povolujete fyzické záporné zásoby pro skupinu modelů položek, nebo proto, že je výdej datován zpětně. Více informací najdete v části [Záporné zásoby](#negative-inventory) v tomto tématu.
+Obvykle se může vyskytnout výdej před příjmem buď proto, že povolujete fyzické záporné zásoby pro skupinu modelů položek, nebo proto, že je výdej datován zpětně. Více informací najdete v části [Záporné zásoby](#negative-inventory) v tomto článku.
 
 Pokud provádíte zpětné datování transakcí, doporučujeme vám pečlivě zvážit svůj obchodní proces a operace, abyste zjistili, zda existuje způsob, jak se tomuto scénáři vyhnout. Pokud provedete zpětné datování transakce pro položku, která používá klouzavý průměr, systém transakci přiřadí aktuální klouzavý průměr. Pozdější výdeje nejsou upraveny. Další informace o klouzavém průměru se zpětně datovanými transakcemi naleznete v části [Klouzavý průměr](moving-average.md).
 

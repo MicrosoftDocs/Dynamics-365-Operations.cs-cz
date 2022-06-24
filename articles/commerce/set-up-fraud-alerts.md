@@ -1,6 +1,6 @@
 ---
 title: Nastavení a práce s výstrahami u podvodů kontaktního střediska
-description: Toto téma vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek.
+description: Tento článek vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885341"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Nastavení a práce s výstrahami u podvodů kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak lze nastavit kritéria a pravidla pro blokování potenciálně podvodných prodejních objednávek do doby, než je zkontrolujete. Funkce kontroly podvodu se používá při ověřování platnosti informací na prodejní objednávce. Pokud se informace v prodejní objednávce zdají být pochybné na základě kritérií a pravidel organizace týkajících se podvodu, objednávku lze pozdržet pro další kontrolu. V takovém případě objednávku nelze uvolnit do skladu pro další zpracování, dokud nebude blokování vymazáno.
+Tento článek vysvětluje, jak lze nastavit kritéria a pravidla pro blokování potenciálně podvodných prodejních objednávek do doby, než je zkontrolujete. Funkce kontroly podvodu se používá při ověřování platnosti informací na prodejní objednávce. Pokud se informace v prodejní objednávce zdají být pochybné na základě kritérií a pravidel organizace týkajících se podvodu, objednávku lze pozdržet pro další kontrolu. V takovém případě objednávku nelze uvolnit do skladu pro další zpracování, dokud nebude blokování vymazáno.
 
 > [!NOTE]
 > Tuto funkci lze použít pouze se zpracováním prodejních objednávek pro kanál kontaktního střediska Commerce.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 559ca80976955d6328cb4d6b2020d5662460cef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863643"
 ---
 # <a name="putaway-clusters"></a>Seskupení vyskladnění
 
@@ -27,7 +27,7 @@ Seskupení vyskladnění nabízejí způsob, jak vybrat více registračních zn
 
 ## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Zapnutí nebo vypnutí funkce seskupení vyskladnění
 
-Chcete-li používat funkčnost popsanou v tomto tématu, musí být ve vašem systému zapnuta *Funkce seskupení vyskladnění*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním *Funkce seskupení vyskladnění* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Chcete-li používat funkčnost popsanou v tomto článku, musí být ve vašem systému zapnuta *Funkce seskupení vyskladnění*. Od verze Supply Chain Management 10.0.25 je tato funkce povinná a nelze ji vypnout. Pokud používáte verzi starší než 10.0.25, mohou správci tuto funkčnost zapnout nebo vypnout vyhledáním *Funkce seskupení vyskladnění* v pracovním prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Nastavení pro příkladový scénář
 

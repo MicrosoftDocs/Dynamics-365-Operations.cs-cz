@@ -1,6 +1,6 @@
 ---
 title: Vrácení peněz za vrácenou objednávku je odmítnuto
-description: Toto téma poskytuje pokyny pro řešení potíží, které mohou pomoci, když je vrácení platby za vrácenou objednávku odmítnuto, protože kreditní karta použitá k fakturaci se liší od karty použité během původní autorizace platby.
+description: Tento článek poskytuje pokyny pro řešení potíží, které mohou pomoci, když je vrácení platby za vrácenou objednávku odmítnuto, protože kreditní karta použitá k fakturaci se liší od karty použité během původní autorizace platby.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8360be76fe5ef5ddfbcf290cf6272825bc1849f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738617"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879970"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Vrácení peněz za vrácenou objednávku je odmítnuto
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma poskytuje pokyny pro řešení potíží, které mohou pomoci, když je vrácení platby za vrácenou objednávku odmítnuto, protože kreditní karta použitá k fakturaci se liší od karty použité během původní autorizace platby.
+Tento článek poskytuje pokyny pro řešení potíží, které mohou pomoci, když je vrácení platby za vrácenou objednávku odmítnuto, protože kreditní karta použitá k fakturaci se liší od karty použité během původní autorizace platby.
 
 ## <a name="description"></a>popis
 

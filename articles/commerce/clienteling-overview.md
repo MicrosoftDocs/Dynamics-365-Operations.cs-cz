@@ -1,6 +1,6 @@
 ---
 title: Přehled clientelingu
-description: Toto téma obsahuje přehled nových funkcí clientelingu dostupných v aplikaci obchodu.
+description: Tento článek obsahuje přehled nových funkcí clientelingu dostupných v aplikaci obchodu.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885604"
 ---
 # <a name="clienteling-overview"></a>Přehled clientelingu
 
@@ -81,7 +81,7 @@ Chcete-li ve vašem prostředí zapnout funkci clientelingu, postupujte podle n�
     - Nastavte pořadí zobrazení těchto atributů. Toto pořadí zobrazení určuje, které atributy mají být zobrazeny na kartě zákazníka v klientské knize. Pořadí zobrazení 1 je považováno za vyšší než pořadí zobrazení 2. Proto atribut, který má pořadí zobrazení 1, bude zobrazen před atributem, který má pořadí zobrazení 2.
 
     > [!NOTE]
-    > Customer Insights můžete zpřístupnit na stejné stránce. Pro účely ověření je však nutné vytvořit ID aplikace Azure a tajný klíč. (Informace o požadavcích naleznete v další čísti tohoto tématu [Zapnutí integrace Customer Insights s aplikací Commerce](#turn-on-the-integration-of-customer-insights-with-commerce).) Je-li zapnuta aplikace Customer Insights a vyberete jedno nebo více měřítek, které mají být zobrazeny na kartě zákazníka, tato měřítka se zobrazí jako první. Dále budou zobrazeny skupiny atributů klientských knih na základě pořadí zobrazení. Pokud například vyberete dvě měřítka z Customer Insights, zobrazí se na kartě zákazníka tao dvě měřítka a jeden atribut v klientské knize. (Zobrazený atribut klienta knihy bude atribut, který má nejvyšší pořadí zobrazení.)
+    > Customer Insights můžete zpřístupnit na stejné stránce. Pro účely ověření je však nutné vytvořit ID aplikace Azure a tajný klíč. (Informace o požadavcích naleznete v další části tohoto článku [Zapnutí integrace Customer Insights s aplikací Commerce](#turn-on-the-integration-of-customer-insights-with-commerce).) Je-li zapnuta aplikace Customer Insights a vyberete jedno nebo více měřítek, které mají být zobrazeny na kartě zákazníka, tato měřítka se zobrazí jako první. Dále budou zobrazeny skupiny atributů klientských knih na základě pořadí zobrazení. Pokud například vyberete dvě měřítka z Customer Insights, zobrazí se na kartě zákazníka tao dvě měřítka a jeden atribut v klientské knize. (Zobrazený atribut klienta knihy bude atribut, který má nejvyšší pořadí zobrazení.)
 
 6. Na stránce **Parametry Commerce** na kartě **Clienteling** v poli **Skupina atributů klientských knih** vyberte skupinu atributů, kterou jste právě vytvořili.
 

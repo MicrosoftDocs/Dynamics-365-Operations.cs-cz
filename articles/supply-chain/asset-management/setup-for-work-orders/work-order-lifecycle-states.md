@@ -1,6 +1,6 @@
 ---
 title: Stavy životního cyklu pracovního příkazu
-description: Toto téma vysvětluje stavy životního cyklu pracovního příkazu v modulu Správa majetku.
+description: Tento článek vysvětluje stavy životního cyklu pracovního příkazu v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860863"
 ---
 # <a name="work-order-lifecycle-states"></a>Stavy životního cyklu pracovního příkazu
 
@@ -69,7 +69,7 @@ V následující tabulce jsou popsány možnosti v oddílech **Pracovní příka
 
     Na pevné záložce **Podrobnosti** pole **Modely životního cyklu** zobrazuje počet modelů životního cyklu pracovního příkazu, které používají tento stav životního cyklu.
 
-8. Na pevné záložce **Obecné** v oddíle **Pracovní příkaz** vyberte funkce, které mají být k dispozici pro tento stav životního cyklu, nastavením příslušných možností na **Ano**. Jednotlivé možnosti jsou popsány ve výše uvedené tabulce v tomto tématu.
+8. Na pevné záložce **Obecné** v oddíle **Pracovní příkaz** vyberte funkce, které mají být k dispozici pro tento stav životního cyklu, nastavením příslušných možností na **Ano**. Jednotlivé možnosti jsou popsány ve výše uvedené tabulce v tomto článku.
 9. V části **Projekt** vyberte v poli **Fáze** fázi projektu, která má být spojena s tímto stavem životního cyklu.
 10. V oddílu **Projekt** nastavte možnost **uzavřít aktivity** na **Ano**, chcete-li, aby byly aktivity projektu související s každou úlohou pracovního příkazu byly automaticky uzavřeny v tomto stavu životního cyklu.
 
@@ -77,7 +77,7 @@ V následující tabulce jsou popsány možnosti v oddílech **Pracovní příka
     > Chcete-li najít číslo aktivity projektu, která souvisí s úlohou pracovního příkazu, vyberte **Správa majetku** \> **Společné** \> **Pracovní příkazy** \> **Všechny pracovní příkazy**, **Aktivní pracovní příkazy** nebo **Moje aktivní pracovní příkazy**. Otevřete pracovní přkazu a poté vyberte úlohu pracovního příkazu. Číslo aktivity je zobrazeno v poli **Číslo aktivity** v oddílu **Projekt** na kartě **Obecné** na pevné záložce **Podrobnosti řádku**.
 
 11. V oddílu **Prognóza** nastavte možnost **Kopírovat prognózu hodin**, **Kopírovat prognózu položek** a/nebo **Kopírovat prognózu výdajů** na **Ano**, pokud mají být prognózy projektu pracovního příkazu automaticky zkopírovány do deníků pracovních příkazů, pokud je tento pracovní příkaz v tomto stavu životního cyklu.
-12. V části **Plán** nastavte jednu z možností na **Ano**, pokud má být stav plánu pro úlohy pracovních příkazů aktualizován, když je pracovní příkaz v tomto stavu životního cyklu. Popisy možností pro možnosti **Dokončení**, **Zahájení**, **Ukončení** a **Odstranění řádků** plánu naleznete v tabulce dříve v tomto tématu.
+12. V části **Plán** nastavte jednu z možností na **Ano**, pokud má být stav plánu pro úlohy pracovních příkazů aktualizován, když je pracovní příkaz v tomto stavu životního cyklu. Popisy možností pro možnosti **Dokončení**, **Zahájení**, **Ukončení** a **Odstranění řádků** plánu naleznete v tabulce dříve v tomto článku.
 
     > [!NOTE]
     > Chcete-li zobrazit řádky plánu, které souvisí s úlohami pracovního příkazu, vyberte **Správa majetku** \> **Společné** \> **Pracovní příkazy** \> **Všechny pracovní příkazy**, **Aktivní pracovní příkazy** nebo **Moje aktivní pracovní příkazy**. Otevřete pracovní příkaz, vyberte úlohu pracovního příkazu na pevné záložce **Úlohy pracovního příkazu** a zobrazte související informace na záložce s náhledem **Podrobnosti řádku**. V poli **Stav** na kartě **Plán** se zobrazuje stav úlohy pracovního příkazu. Pole **Stav** může být nastaveno na následující hodnoty: **Naplánováno**, **Připraveno**, **Zahájeno**, **Zastaveno** a **Ukončeno**.

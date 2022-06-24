@@ -1,6 +1,6 @@
 ---
 title: Nastavení profilu oznámení e-mailem
-description: Toto téma popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878479"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Nastavení profilu oznámení e-mailem
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak vytvořit profil oznámení e-mailem v aplikaci Microsoft Dynamics 365 Commerce.
 
 Při vytváření kanálů můžete nastavit e-mailový oznamovací profil. Profil e-mailových upozornění definuje události prodejní transakce (jako je například vytvořená objednávka, zabalení objednávky a fakturovaná objednávka), o kterých budete svým zákazníkům zasílat upozornění. 
 

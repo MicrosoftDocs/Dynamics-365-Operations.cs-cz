@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.15.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3141cea22b6ab80f36f5562fd450b0cd547d235d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471805"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879127"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.15 (leden 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.15. Tato verze má číslo sestavení 10.0.644 a je k dispozici následujícím způsobem:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.15. Tato verze má číslo sestavení 10.0.644 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** Říjen 2020
 - **Obecně dostupné vydání (automatická aktualizace):** Listopad 2020
@@ -57,9 +57,9 @@ Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-
 
 ## <a name="additional-resources"></a>Další prostředky
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro aplikace Finance and Operations
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizace platformy pro finanční a provozní aplikace
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.15 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.15 aplikací Finance and Operations (říjen 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.15 zahrnuje aktualizace platformy. Další informace naleznete v tématu [Aktualizace platformy pro verze 10.0.15 finančních a provozních aplikací (říjen 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -73,12 +73,12 @@ Přečtěte si téma [Dynamics 365: plán 2. vlny vydání v r. 2020](/dynamics
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
-Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+Článek [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v článku [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 

@@ -1,6 +1,6 @@
 ---
 title: Odeslání a obsluha statických souborů
-description: Tohle téma popisuje, jak odeslat statický soubor do konfigurátoru webů Microsoft Dynamics 365 Commerce a jak vytvořit vlastní adresu URL a název souboru, který lze použít k vyžádání tohoto souboru.
+description: Tento článek popisuje, jak odeslat statický soubor do konfigurátoru webů Microsoft Dynamics 365 Commerce a jak vytvořit vlastní adresu URL a název souboru, který lze použít k vyžádání tohoto souboru.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885315"
 ---
 # <a name="upload-and-serve-static-files"></a>Odeslání a obsluha statických souborů
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma popisuje, jak odeslat statický soubor do konfigurátoru webů Microsoft Dynamics 365 Commerce a jak vytvořit vlastní adresu URL a název souboru, který lze použít k vyžádání tohoto souboru.
+Tento článek popisuje, jak odeslat statický soubor do konfigurátoru webů Microsoft Dynamics 365 Commerce a jak vytvořit vlastní adresu URL a název souboru, který lze použít k vyžádání tohoto souboru.
 
-Některé konektory jiných výrobců vyžadují, aby byl soubor hostován a obsluhován z webu elektronického obchodování. Tyto konektory očekávají, že soubor bude vrácen požadavky na konkrétní cestu URL zpětného volání a název souboru. Toto téma proto vysvětluje, jak nahrát a zobrazit statický soubor, který má na webu uživatelem definovanou adresu URL a název souboru na webu elektronického obchodování Dynamics 365 Commerce.
+Některé konektory jiných výrobců vyžadují, aby byl soubor hostován a obsluhován z webu elektronického obchodování. Tyto konektory očekávají, že soubor bude vrácen požadavky na konkrétní cestu URL zpětného volání a název souboru. Tento článek proto vysvětluje, jak nahrát a zobrazit statický soubor, který má na webu uživatelem definovanou adresu URL a název souboru na webu elektronického obchodování Dynamics 365 Commerce.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Vytvoření adresy URL webu, která vrací statický soubor
 
@@ -86,7 +86,7 @@ Po vytvoření adresy URL nelze změnit její cestu. Pokud musíte změnit cestu
 
 K úpravě cesty URL postupujte následovně.
 
-1. Chcete-li vytvořit novou adresu URL a namapovat ji na existující soubor nebo jiný prostředek, postupujte podle pokynů v části [Vytvoření adresy URL webu, která vrací statický soubor](#create-a-site-url-that-returns-a-static-file) dříve v tomto tématu.
+1. Chcete-li vytvořit novou adresu URL a namapovat ji na existující soubor nebo jiný prostředek, postupujte podle pokynů v části [Vytvoření adresy URL webu, která vrací statický soubor](#create-a-site-url-that-returns-a-static-file) dříve v tomto článku.
 1. Vyberte novou adresu URL a vyberte **Publikovat** na panelu příkazů. Nová adresa URL je publikována.
 1. Chcete-li zrušit publikování staré adresy URL, vyberte ji a poté vyberte **Zrušit publikování** na panelu příkazů. Jestli chcete, můžete nyní odstranit starou adresu URL.
 

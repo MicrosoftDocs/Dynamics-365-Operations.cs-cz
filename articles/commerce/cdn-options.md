@@ -1,6 +1,6 @@
 ---
 title: Možnosti implementace sítě pro doručování obsahu
-description: V tomto tématu jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
+description: V tomto článku jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692718"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884410"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Možnosti implementace sítě pro doručování obsahu
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
+V tomto článku jsou uvedeny různé možnosti implementace sítě pro doručování obsahu (CDN), které lze použít s prostředím Microsoft Dynamics 365 Commerce. Mezi tyto možnosti patří nativní instance služby Azure Front Door poskytované Commerce a instance Azure Front Door vlastněné zákazníky.
 
 Zákazníci Commerce mají několik možností, když uvažují, kterou službu CDN použít ve svém Commerce prostředí. Commerce je vydáván se základní podporou Azure Front Door, která pokrývá základní požadavky na hostování a vlastní doménu. Pro společnosti, které chtějí větší kontrolu a konkrétnější možnosti zabezpečení, jako je brána firewall webových aplikací (WAF), může být nejlepší volbou použít buď instanci Azure Front Door, kterou vlastní zákazník, nebo externí službu CDN.
 

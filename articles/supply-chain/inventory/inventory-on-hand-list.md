@@ -1,6 +1,6 @@
 ---
 title: Seznam zásob na skladě
-description: Toto téma popisuje, jak pomocí stránky Seznam na skladě zkontrolovat podrobnosti zásob na skladě. Ukazuje několik způsobů, jak různé možnosti filtrování a třídění spolupracují, a jak mohou tyto možnosti někdy při jejich kombinaci přinést neočekávané výsledky.
+description: Tento článek popisuje, jak pomocí stránky Seznam na skladě zkontrolovat podrobnosti zásob na skladě. Ukazuje několik způsobů, jak různé možnosti filtrování a třídění spolupracují, a jak mohou tyto možnosti někdy při jejich kombinaci přinést neočekávané výsledky.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879041"
 ---
 # <a name="inventory-on-hand-list"></a>Seznam zásob na skladě
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak pomocí stránky **Seznam na skladě** zkontrolovat podrobnosti zásob na skladě. Ukazuje několik způsobů, jak různé možnosti filtrování a třídění spolupracují, a jak mohou tyto možnosti někdy při jejich kombinaci přinést neočekávané výsledky.
+Tento článek popisuje, jak pomocí stránky **Seznam na skladě** zkontrolovat podrobnosti zásob na skladě. Ukazuje několik způsobů, jak různé možnosti filtrování a třídění spolupracují, a jak mohou tyto možnosti někdy při jejich kombinaci přinést neočekávané výsledky.
 
 ## <a name="query-your-on-hand-inventory"></a>Dotaz na zásoby na skladě.
 
@@ -35,9 +35,9 @@ Stránka **Seznam skladu** se automaticky aktualizuje při provádění transakc
 K vyhledání sady produktů, které hledáte, použijte následující nástroje:
 
 - Na podokně akcí vyberte [**Dimenze**](#dimensions) a otevřete dialogové okno, ve kterém můžete přidat nebo odebrat sloupce, které jsou zobrazeny v mřížce **Na skladě**.
-- V [podokně **Filtry**](#filters-pane) zadejte hodnoty pro konkrétní pole, aby se zobrazovaly pouze záznamy, které odpovídají těmto hodnotám. Filtry, které zde definujete, se vztahují na zdrojové tabulky, které mohou být později agregovány podle rozměrů, které jste vybrali k zobrazení. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
+- V [podokně **Filtry**](#filters-pane) zadejte hodnoty pro konkrétní pole, aby se zobrazovaly pouze záznamy, které odpovídají těmto hodnotám. Filtry, které zde definujete, se vztahují na zdrojové tabulky, které mohou být později agregovány podle rozměrů, které jste vybrali k zobrazení. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto článku.
 - V podokně **Filtry** vyberte **Použít**, chcete-li vygenerovat seznam odpovídajících zásob na skladě v mřížce **Na skladě**.
-- V mřížce **Na skladě** vyberte libovolný nadpis sloupce, který chcete seřadit nebo filtrovat podle hodnot v tomto sloupci. QuickFilter v horní části mřížky poskytuje další možnosti filtrování. Tyto filtry se vztahují na výsledky, nikoli na zdrojové tabulky. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
+- V mřížce **Na skladě** vyberte libovolný nadpis sloupce, který chcete seřadit nebo filtrovat podle hodnot v tomto sloupci. QuickFilter v horní části mřížky poskytuje další možnosti filtrování. Tyto filtry se vztahují na výsledky, nikoli na zdrojové tabulky. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto článku.
 
 Pro každou odpovídající položku mřížka **Na skladě** poskytuje následující sloupce informací o zásobách.
 
@@ -64,7 +64,7 @@ Použijte podokno **Filtry**, chcete-li filtrovat seznam zásob na skladě tak, 
 > [!IMPORTANT]
 > Stránka **Seznam na skladě** je sestavena z podrobné tabulky zásob na skladě, která obsahuje všechny dostupné rozměry. Seznam na této stránce je však shrnutím. Proto by mohl kombinovat řádky ze zdrojové tabulky agregováním hodnot podle zobrazených rozměrů.
 >
-> Filtry, které definujete v podokně **Filtry** se vztahují na zdrojovou tabulku, nikoli na agregovaný seznam. Toto chování může někdy vést k neočekávaným výsledkům. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
+> Filtry, které definujete v podokně **Filtry** se vztahují na zdrojovou tabulku, nikoli na agregovaný seznam. Toto chování může někdy vést k neočekávaným výsledkům. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto článku.
 > 
 > Nicméně, [filtry poskytované v mřížce](#grid-filters) *platí* pro agregovaný seznam. Tyto filtry zahrnují QuickFilter v horní části mřížky a filtr pro každou hlavičku sloupce.
 
@@ -75,7 +75,7 @@ Můžete upravit sadu filtrů, které jsou k dispozici v podokně **Filtry** pom
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Vyberte, které rozměry chcete zobrazit
 
-Rozměry vám řeknou více o každé položce v seznamu zásob na skladě a poskytují vám více způsobů třídění a filtrování seznamu. Rozměry, které se rozhodnete zobrazit, také ovlivňují způsob agregace řádků na stránce **Seznam na skladě**. Tato agregace zase může ovlivnit, jak se řádky ze zdrojových tabulek kombinují ve výsledcích, které vidíte. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
+Rozměry vám řeknou více o každé položce v seznamu zásob na skladě a poskytují vám více způsobů třídění a filtrování seznamu. Rozměry, které se rozhodnete zobrazit, také ovlivňují způsob agregace řádků na stránce **Seznam na skladě**. Tato agregace zase může ovlivnit, jak se řádky ze zdrojových tabulek kombinují ve výsledcích, které vidíte. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto článku.
 
 Chcete-li přizpůsobit výběr zobrazených rozměrů, postupujte takto.
 
@@ -89,7 +89,7 @@ Chcete-li přizpůsobit výběr zobrazených rozměrů, postupujte takto.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrujte na výstupu seznamu zásob na skladě
 
-Můžete vybrat jakýkoliv nadpis sloupce v mřížce **Na skladě** a seřadit nebo filtrovat podle hodnot v tomto sloupci. QuickFilter v horní části mřížky poskytuje další možnosti filtrování. Tyto filtry se vztahují na výsledky, nikoli na zdrojové tabulky. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto tématu.
+Můžete vybrat jakýkoliv nadpis sloupce v mřížce **Na skladě** a seřadit nebo filtrovat podle hodnot v tomto sloupci. QuickFilter v horní části mřížky poskytuje další možnosti filtrování. Tyto filtry se vztahují na výsledky, nikoli na zdrojové tabulky. Informace o tom, jak toto chování může ovlivnit vaše výsledky, naleznete na stránce [příklady](#examples) dále v tomto článku.
 
 > [!NOTE]
 > Nemůžete filtrovat a třídit podle všech sloupců. Většina sloupců množství neobsahuje ovládací prvky řazení a filtrování, protože se jedná o pole vypočtená. Sloupec **Na objednávce** je výjimkou.

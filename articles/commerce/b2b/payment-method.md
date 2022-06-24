@@ -1,6 +1,6 @@
 ---
 title: Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B
-description: Toto téma popisuje, jak nakonfigurovat způsob platby zákaznického účtu v Microsoft Dynamics 365 Commerce. Popisuje také, jak úvěrové limity ovlivňují zachycení platby na účet na webech elektronického obchodování mezi podniky (B2B).
+description: Tento článek popisuje, jak nakonfigurovat způsob platby zákaznického účtu v Microsoft Dynamics 365 Commerce. Popisuje také, jak úvěrové limity ovlivňují zachycení platby na účet na webech elektronického obchodování mezi podniky (B2B).
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878640"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Nakonfigurujte způsob platby zákaznického účtu pro stránky elektronického obchodování B2B
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak nakonfigurovat způsob platby zákaznického účtu v Microsoft Dynamics 365 Commerce. Popisuje také, jak úvěrové limity ovlivňují zachycení platby na účet na webech elektronického obchodování mezi podniky (B2B).
+Tento článek popisuje, jak nakonfigurovat způsob platby zákaznického účtu v Microsoft Dynamics 365 Commerce. Popisuje také, jak úvěrové limity ovlivňují zachycení platby na účet na webech elektronického obchodování mezi podniky (B2B).
 
 Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají v kanálu elektronického obchodování. Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému v aplikaci Dynamics 365 Commerce. Platební metoda zákaznického účtu (nebo „na účet“) musí být podporována na webech B2B elektronického obchodování. 
 

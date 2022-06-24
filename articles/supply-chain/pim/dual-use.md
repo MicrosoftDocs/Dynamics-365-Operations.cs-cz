@@ -1,6 +1,6 @@
 ---
 title: Zboží dvojího užití
-description: Toto téma vysvětluje, jak sledovat výrobky, které jsou identifikovány jako zboží dvojího užití, ukládat čísla certifikátů pro každý relevantní produkt a zemi určení a tisknout platná čísla certifikátů na příslušné faktury, dodací listy a / nebo prodejní objednávky.
+description: Tento článek vysvětluje, jak sledovat výrobky, které jsou identifikovány jako zboží dvojího užití, ukládat čísla certifikátů pro každý relevantní produkt a zemi určení a tisknout platná čísla certifikátů na příslušné faktury, dodací listy a / nebo prodejní objednávky.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878896"
 ---
 # <a name="dual-use-goods"></a>Zboží dvojího užití
 
@@ -42,7 +42,7 @@ Představte si následující scénář:
 
 6. Objednávka zahrnuje produkt X-100, produkt je dodáván do Francie a pro produkt existuje francouzský certifikát. Platnost certifikátu však vypršela. Proto se zobrazí následující upozornění: „Certifikáty dvojího užití pro jednu nebo více položek dvojího užití v této prodejní objednávce nejsou platné. Chcete pokračovat s potvrzením?“
 
-Toto téma vysvětluje, jak nakonfigurovat všechna nastavení, která jsou nutná pro nastavení zboží dvojího užití, a podporovat tento scénář.
+Tento článek vysvětluje, jak nakonfigurovat všechna nastavení, která jsou nutná pro nastavení zboží dvojího užití, a podporovat tento scénář.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definujte požadavky na dvojí použití pro každou příslušnou zemi
 

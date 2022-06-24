@@ -1,6 +1,6 @@
 ---
 title: Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
-description: Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
+description: Tento článek popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847593"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Záznamník úloh a nápověda pro Retail Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
+Tento článek popisuje, jak používat záznamník úloh v aplikacích Retail Modern POS (MPOS) a Cloud POS.
 
 ## <a name="overview"></a>Přehled
 
@@ -139,7 +139,7 @@ Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy pro Retail 
 
 [![Tlačítko Nápověda.](./media/help.jpg)](./media/help.jpg)
 
-Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako téma nápovědy nebo kroky exportovat do wordového dokumentu.
+Po kliknutí na Průvodce záznamem úloh ve výsledcích vyhledávání můžete zobrazit kroky jako článek nápovědy nebo kroky exportovat do wordového dokumentu.
 
 > [!NOTE]
 > V nápovědě pro Retail Retail Modern POS a Cloud POS se nezobrazují průvodci záznamem úloh v závislosti na tom, v jakém jste formuláři nebo jakou provádíte operaci. Je nutné v poli pro vyhledávání zadat název procesu a poté kliknout na **Hledat**.

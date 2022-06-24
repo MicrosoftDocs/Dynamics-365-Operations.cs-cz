@@ -1,6 +1,6 @@
 ---
 title: Automatická aktualizace čítačů majetku
-description: Toto téma popisuje automatickou aktualizaci čítačů majetku ve správě majetku.
+description: Tento článek popisuje automatickou aktualizaci čítačů majetku ve správě majetku.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856244"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatická aktualizace čítačů majetku
 

@@ -1,6 +1,6 @@
 ---
 title: Naplánované práce údržby pracovního příkazu
-description: Toto téma vysvětluje naplánované práce údržby pracovního příkazu v modulu Správa majetku.
+description: Tento článek vysvětluje naplánované práce údržby pracovního příkazu v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 077ea3c122086ec0f06722f8f166f057ffa36ec60ec55da334c9b563210b362b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849612"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Naplánované práce údržby pracovního příkazu
 

@@ -1,6 +1,6 @@
 ---
 title: Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
-description: Toto téma obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
+description: Tento článek obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
 author: bebeale
 ms.date: 08/31/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 6e0c84dd6b173a111b70a8adb6036be946149f7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885164"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Povolení Azure Data Lake Storage v prostředí Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
+Tento článek obsahuje pokyny pro připojení k řešení Azure Data Lake Storage Gen 2 a úložiště entit prostředí Dynamics 365 Commerce. Toto je požadovaný krok před povolením doporučení produktů.
 
 V řešení Dynamics 365 Commerce jsou data nezbytná k výpočtu doporučení, produktů a transakcí agregována v úložišti Entity prostředí. Chcete-li zpřístupnit tato data jiným službám Dynamics 365, jako například analýze dat, business intelligence a personalizovaná doporučení, je nutné připojit prostředí k řešení Azure Data Lake Storage Gen 2 vlastněnému zákazníkem.
 

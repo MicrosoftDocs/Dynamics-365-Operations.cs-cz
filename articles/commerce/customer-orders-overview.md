@@ -1,6 +1,6 @@
 ---
 title: Objednávky zákazníků v pokladním místě (POS)
-description: Toto téma obsahuje informace o objednávkách zákazníků v pokladním místě (POS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
+description: Tento článek obsahuje informace o objednávkách zákazníků v pokladním místě (POS). Objednávky odběratele jsou označovány také jako speciální objednávky. Tento článek obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850375"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Objednávky zákazníků v pokladním místě (POS)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace, jak vytvořit a spravovat objednávky zákazníků v aplikaci Pokladním místo (POS). Objednávky zákazníků lze použít k zaznamenání prodejů, kdy si odběratelé chtějí vyzvednout produkty později, vyzvednout si produkty z jiného místa nebo si nechat zboží odeslat. 
+Tento článek obsahuje informace, jak vytvořit a spravovat objednávky zákazníků v aplikaci Pokladním místo (POS). Objednávky zákazníků lze použít k zaznamenání prodejů, kdy si odběratelé chtějí vyzvednout produkty později, vyzvednout si produkty z jiného místa nebo si nechat zboží odeslat. 
 
 Ve světě omni-channel commerce celá řada maloobchodních prodejců poskytuje možnost objednávek odběratele neboli speciálních objednávek, aby splnili různé požadavky týkající se produktu a plnění. Zde jsou některé typické scénáře:
 

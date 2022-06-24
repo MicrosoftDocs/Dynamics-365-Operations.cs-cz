@@ -1,6 +1,6 @@
 ---
 title: Vytvoření seznamů úkolů a přidání úkolů
-description: Tohle téma popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a299be239d911e4605ed26625a313c93bd3020b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881624"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Vytvoření seznamů úkolů a přidání úkolů
 
 [!include [banner](includes/banner.md)]
 
-Tohle téma popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
+Tento článek popisuje, jak vytvořit seznamy úkolů a jak do nich přidat úkoly v řešení Microsoft Dynamics 365 Commerce.
 
 *Úkol* definuje určitou část práce nebo akci, kterou musí dokončit v určitém termínu splnění nebo před ním. V Dynamics 365 Commerce může úkol obsahovat podrobné pokyny a informace o kontaktní osobě. Může rovněž zahrnovat odkazy na operace administrativy, operace pokladního místa (POS) nebo stránky webu, aby se zvýšila produktivita a byl poskytnut kontext, který vlastník úkolu potřebuje k efektivnímu dokončení úkolu.
 

@@ -1,6 +1,6 @@
 ---
 title: Přehled předmětů servisu
-description: Toto téma poskytuje přehled práce s předměty servisu.
+description: Tento článek poskytuje přehled práce s předměty servisu.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cef4cf1222c4c66991069da72e3e6f5a7040153
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8150a94677fe38f4caa6f3e0b5fb5d1be5972eaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862404"
 ---
 # <a name="service-objects-overview"></a>Přehled předmětů servisu
 
@@ -39,7 +39,7 @@ Předměty servisu jsou majetek a produkty odběratele, u kterých je možné pr
 
 Společnost A spravuje finanční záznamy několika malých společností. Jedním z klientů společnosti A je místní fotbalový klub, pro který tato společnost A provádí týdenní úkony účetnictví a také výroční audit klubových účtů. Účty klubu jsou konfigurovány ve formuláři Předměty servisu a v servisní smlouvě jsou uvedeny jako předmět servisu. U objektu existují dva řádky servisní smlouvy. Řádek 1 obsahuje úkony účetnictví v týdenním intervalu, které jsou přiřazeny k řádku, a řádek 2 obsahuje výroční audit, ke kterému je přidělen roční rozsah.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Tvorba předmětů servisu](create-service-objects.md)
 

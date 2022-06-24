@@ -1,6 +1,6 @@
 ---
 title: Pracovní postupy nabídky správy rabatu
-description: Toto téma vysvětluje, jak nastavit pracovní postup nabídky správy rabatu, aby bylo možné nabídky schvalovat a aktivovat.
+description: Tento článek vysvětluje, jak nastavit pracovní postup nabídky správy rabatu, aby bylo možné nabídky schvalovat a aktivovat.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0fe5bc5af953ee7cbbda3477d75a38261bb2bb10
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2b1611ff7877efc4a2f98b8f84a1ef91971902ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869510"
 ---
 # <a name="rebate-management-deal-workflows"></a>Pracovní postupy nabídky správy rabatu
 
@@ -35,7 +35,7 @@ Uživatelé nemohou ručně schvalovat nabídky. Musí být vždy použit pracov
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Vytvoření a správa pracovních postupů nabídky správy rabatu
 
-Chcete-li pracovat s pracovními postupy nabídek správy rabatů, přejděte na **Správa rabatů \> Nastavit \> Pracovní postupy správy rabatu**. Tam můžete podle potřeby zobrazovat, vytvářet a aktualizovat pracovní postupy. Najednou může být aktivní pouze jeden pracovní postup tohoto typu. Další informace o pracovních postupech, jak pracovat se stránkou **Pracovní postupy správy rabatu** a jak vytvářet pracovní postupy, naleznete v části [Přehled systému pracovních postupů](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) a souvisejících tématech.
+Chcete-li pracovat s pracovními postupy nabídek správy rabatů, přejděte na **Správa rabatů \> Nastavit \> Pracovní postupy správy rabatu**. Tam můžete podle potřeby zobrazovat, vytvářet a aktualizovat pracovní postupy. Najednou může být aktivní pouze jeden pracovní postup tohoto typu. Další informace o pracovních postupech, jak pracovat se stránkou **Pracovní postupy správy rabatu** a jak vytvářet pracovní postupy, naleznete v části [Přehled systému pracovních postupů](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) a souvisejících článcích.
 
 ## <a name="use-a-workflow-to-activate-a-deal"></a>Použití pracovního postupu k aktivaci nabídky
 

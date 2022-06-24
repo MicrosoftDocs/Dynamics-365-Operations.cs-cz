@@ -1,6 +1,6 @@
 ---
 title: Skladové deníky
-description: Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
+description: Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c0ac9146c44b08698f8f9d15a3610bf0b7cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849409"
 ---
 # <a name="inventory-journals"></a>Skladové deníky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
+Tento článek popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 
 Deníky zásob v aplikaci Supply Chain Management se používají k zaúčtování různých typů transakcí fyzických zásob, jako například zaúčtování výdejů a příjmů, skladové pohyby, vytvoření kusovníku a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 

@@ -1,6 +1,6 @@
 ---
-title: Identifikace hypotézy a určení metriky experimentu
-description: Toto téma popisuje, jak identifikovat hypotézu a metriku úspěšnosti experimentu, který spouštíte na webu elektronického obchodu v Dynamics 365 Commerce.
+title: Identifikace hypotézy a určení metriky pro experiment
+description: Tento článek popisuje, jak identifikovat hypotézu a metriku úspěšnosti experimentu, který spouštíte na webu elektronického obchodu v Dynamics 365 Commerce.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: a143f00eedc2ddb3b54f05f2475a616609af8d5a7b8a4d19d0bbcb021290dfd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b6bdf160522fc93e841ec2f8a4542ff80d8f67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852779"
 ---
 # <a name="identify-a-hypothesis-and-determine-success-metrics-for-an-experiment"></a>Identifikace hypotézy a určení metriky úspěšnosti experimentu
-První fáze životního cyklu experimentování zahrnuje identifikování hypotézy experimentu a určení metriky, kterou budete sledovat k vyhodnocení úspěšnosti. Následující schéma znázorňuje všechny kroky, které zahrnuje [nastavení a spuštění experimentu](experimentation-overview.md) na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných tématech. 
+První fáze životního cyklu experimentování zahrnuje identifikování hypotézy experimentu a určení metriky, kterou budete sledovat k vyhodnocení úspěšnosti. Následující schéma znázorňuje všechny kroky, které zahrnuje [nastavení a spuštění experimentu](experimentation-overview.md) na webu elektronického obchodu v Dynamics 365 Commerce. Další kroky jsou popsány v samostatných článcích. 
 
 [ ![Cesta uživatele experimentováním – identifikace.](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 

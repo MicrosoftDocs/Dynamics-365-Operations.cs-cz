@@ -1,6 +1,6 @@
 ---
 title: Digitální dárkové karty elektronického obchodování
-description: Toto téma popisuje, jak fungují digitální dárkové karty v implementaci elektronického obchodování Microsoft Dynamics 365 Commerce. Poskytuje také přehled důležitých konfiguračních kroků.
+description: Tento článek popisuje, jak fungují digitální dárkové karty v implementaci elektronického obchodování Microsoft Dynamics 365 Commerce. Poskytuje také přehled důležitých konfiguračních kroků.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884897"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitální dárkové karty elektronického obchodování
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak fungují digitální dárkové karty v implementaci elektronického obchodování Microsoft Dynamics 365 Commerce. Poskytuje také přehled důležitých konfiguračních kroků.
+Tento článek popisuje, jak fungují digitální dárkové karty v implementaci elektronického obchodování Microsoft Dynamics 365 Commerce. Poskytuje také přehled důležitých konfiguračních kroků.
 
 V Dynamics 365 Commerce nákup digitálních dárkových karet dodržuje stejný postup jako nákup dalších produktů v systému. Není třeba konfigurovat žádné další moduly. Pokud je do košíku přidáno více dárkových karet, položky dárkových karet se neagregují na jednom řádku prodeje. Toto chování je povinné, protože každý řádek prodeje je fakturován pomocí samostatného čísla dárkové karty.
 

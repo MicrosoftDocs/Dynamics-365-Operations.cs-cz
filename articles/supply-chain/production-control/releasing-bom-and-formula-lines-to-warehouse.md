@@ -1,6 +1,6 @@
 ---
 title: Uvolnění řádků kusovníku a receptury do skladu
-description: Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu.
+description: Tento článek popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860602"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu. Když uvolníte řádek kusovníku nebo receptury do skladu, systém nejdříve určí, zda je materiál již dostupný na vstupním místě pro výrobu v dílenském zařízení materiál, kde bude materiální spotřebován pro výrobní proces.
+Tento článek popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu. Když uvolníte řádek kusovníku nebo receptury do skladu, systém nejdříve určí, zda je materiál již dostupný na vstupním místě pro výrobu v dílenském zařízení materiál, kde bude materiální spotřebován pro výrobní proces.
 
 - Pokud je materiál k dispozici na umístění výrobního vstupu, je vydán z tohoto umístění ihned po přijetí signál pro uvolnění materiálu do skladu.
 - Není-li materiál k dispozici na vstupní místě výroby, uvolnění materiálu označuje, že materiál musí být přesunut z místa ve skladu do vstupního místa výroby. Materiál je přesunut prostřednictvím skladové práce pro výdej suroviny. Z tohoto důvodu musí být nakonfigurovány skladové procesy pro výdej suroviny. Další informace naleznete v tématech [Přehled doplnění](../warehousing/replenishment.md) a [Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa](../warehousing/control-warehouse-location-directives.md).

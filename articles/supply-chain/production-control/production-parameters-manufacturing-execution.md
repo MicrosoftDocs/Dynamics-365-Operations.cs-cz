@@ -1,6 +1,6 @@
 ---
 title: Parametry výroby v modulu Provádění výroby
-description: Toto téma obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
+description: Tento článek obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873659"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry výroby v modulu Provádění výroby
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
+Tento článek obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
 
 Modul **Provádění výroby** je určen především pro výrobní společnosti. Lze ho použít k registraci času a spotřeby zboží ve výrobních úlohách nebo projektech. Dříve než začnete používat modul Provádění výroby pro registrace úlohy, musíte nastavit různé parametry výroby, které definují, jak a kdy jsou zaúčtovány registrace během výrobního procesu. Nastavení parametrů výroby ovlivňuje správu skladů, řízení výroby a výpočet nákladů.
 

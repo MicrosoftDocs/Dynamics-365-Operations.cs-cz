@@ -1,6 +1,6 @@
 ---
 title: Zpracování příchozích nákladů ve skladu pro nákupní objednávky
-description: Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
+description: Tento článek popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855925"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Zpracování příchozích nákladů ve skladu pro nákupní objednávky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
+Tento článek popisuje proces zpracování skladu pro vstupní náklady pro nákupní objednávky.
 
 Pro každý příchozí náklad by váš systém již měl obsahovat související prodejní objednávku a může také obsahovat související specifikaci nákladu a/nebo plán přepravy. Další informace o vytváření a správě příchozích nákladů naleznete v tématu [Obchodní proces: plánování přepravy pro příchozí náklady](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -209,7 +209,7 @@ V následující tabulce jsou shrnuty účinky nastavení **Povolit více pří
 | Ano | Žádné aktualizace | _Přijato_, pokud je celkové zaregistrované množství nákladu rovno nebo větší než množství nákladu | |
 | Ano | Žádné aktualizace | _Odesláno_ nebo _Zpracovává se_, pokud je celkové zaregistrované množství nákladu menší než množství nákladu | |
 
-Po nastavení pole **Stav nákladu** na _Přijato_ již nelze pro daný náklad provést další zaúčtování příjemky produktu. Pracovník však může zaregistrovat zbývající množství objednávky proti přijatému nákladu za následujících podmínek. (Další informace naleznete v oddílu [Příjem většího množství nákladu](#load-over-receiving) dříve v tomto tématu.)
+Po nastavení pole **Stav nákladu** na _Přijato_ již nelze pro daný náklad provést další zaúčtování příjemky produktu. Pracovník však může zaregistrovat zbývající množství objednávky proti přijatému nákladu za následujících podmínek. (Další informace naleznete v oddílu [Příjem většího množství nákladu](#load-over-receiving) dříve v tomto článku.)
 
 - Verze Supply Chain Management je starší než verze 10.0.11.
 - Pokud je zapnuta funkce _Příjem většího množství nákladu_ a **Množství řádku nákladu větší, než příjemka** v položce nabídky mobilního zařízení pro akci přijetí položky nákladů je nastaveno na _Povolit_.

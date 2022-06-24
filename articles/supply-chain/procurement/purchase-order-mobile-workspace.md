@@ -1,6 +1,6 @@
 ---
 title: Mobilní pracovní prostor schvalování nákupních objednávek
-description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení nákupní objednávky, který umožňuje zobrazit nákupní objednávky a odpovědět na ně prostřednictvím akce. Nákupní objednávky můžete například schválit nebo odmítnout.
+description: Tento článek obsahuje informace o mobilním pracovním prostoru Schválení nákupní objednávky, který umožňuje zobrazit nákupní objednávky a odpovědět na ně prostřednictvím akce. Nákupní objednávky můžete například schválit nebo odmítnout.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b0bdcb2f6db95ae061e786365d22cdf74643d09e
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 224d3ce5c9163e95de817a3446a57f07c85df757
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811805"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863846"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilní pracovní prostor schvalování nákupních objednávek
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Toto téma obsahuje informace o mobilním pracovním prostoru **Schválení nákupní objednávky**. Tento pracovní prostor vám umožní zobrazit nákupní objednávky a reagovat na ně pomocí akcí. Nákupní objednávky můžete například schválit nebo odmítnout.
+Tento článek obsahuje informace o mobilním pracovním prostoru **Schválení nákupní objednávky**. Tento pracovní prostor vám umožní zobrazit nákupní objednávky a reagovat na ně pomocí akcí. Nákupní objednávky můžete například schválit nebo odmítnout.
  
 ## <a name="overview"></a>Přehled 
 Nákupní objednávky, které vyžadují schválení, procházejí workflowem schválení. Workflow může obsahovat různé kroky, které vyžadují, aby jedna nebo více osob provedly akci. Osoba může například muset dokončit úlohu nebo schválit nákupní objednávku. 

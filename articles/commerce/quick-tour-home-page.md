@@ -1,6 +1,6 @@
 ---
 title: Přehled domovské stránky
-description: Toto téma poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
+description: Tento článek poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844665"
 ---
 # <a name="home-page-overview"></a>Přehled domovské stránky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
+Tento článek poskytuje přehled úvodní stránky v Microsoft Dynamics 365 Commerce.
 
 Domovská stránka je výchozí stránka, na kterou kupující přichází při návštěvě webu e-Commerce. Tato stránka obvykle předběžně obsahuje produkty a promoakce pomocí kombinace marketingových modulů. Domovská stránka by měla být bohatá s obrázky a textem, aby kupující zaujala.
 
@@ -33,7 +33,7 @@ Následující ilustrace znázorňuje příklad domovské stránky, která byla 
 
 ![Příklad domovské stránky.](./media/Homepage2.PNG)
 
-Horní okraj domovské stránky obsahuje záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů a další stránky, které chtějí odběratelé vyhledávat. Dolní okraj domovské stránky má zápatí, které obsahuje rychlé odkazy na různá témata, která mohou být zajímavá.
+Horní okraj domovské stránky obsahuje záhlaví, ve kterém jsou zobrazeny všechny kategorie produktů a další stránky, které chtějí odběratelé vyhledávat. Dolní okraj domovské stránky má zápatí, které obsahuje rychlé odkazy na různé články, které mohou být zajímavé.
 
 Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo promoakce pomocí různých modulů Dynamics 365 Commerce:
 
@@ -49,8 +49,8 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 
     ![Příklady propagačních modulů.](./media/Feature.PNG)
 
-- **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
-- **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto tématu, zahrnuje modul přehrávače videa.
+- **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto článku, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
+- **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto článku, zahrnuje modul přehrávače videa.
 - **Blok textu** – modul bloku s formátovaným obsahem lze použít k zobrazení textového obsahu na domovské stránce v rozložení s jedním sloupcem a více sloupci.
 - **Doporučení produktu** – moduly doporučení produktu slouží k zobrazení seznamů, například **Nový**, **Trendující** a **Nejlépe prodávané** na domovské stránce. Tyto seznamy předkládají produkty založené na nákupních trendech a lze je vybrat ručně nebo generovat algoritmem. Pomáhají zákazníkům rychle objevit nejlepší produkty a poté pokračovat v nákupu.
 

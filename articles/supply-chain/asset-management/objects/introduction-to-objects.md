@@ -1,6 +1,6 @@
 ---
 title: Úvod do majetku
-description: Toto téma obsahuje přehled majetku v modulu Správa majetku.
+description: Tento článek obsahuje přehled majetku v modulu Správa majetku.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874181"
 ---
 # <a name="introduction-to-assets"></a>Úvod do majetku
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767501"
 
  
 
-Toto téma obsahuje přehled majetku v modulu Správa majetku. *Majetek* je jakýkoliv typ zařízení, například stroj nebo část stroje vyžadující údržbu, servis nebo opravu.
+Tento článek obsahuje přehled majetku v modulu Správa majetku. *Majetek* je jakýkoliv typ zařízení, například stroj nebo část stroje vyžadující údržbu, servis nebo opravu.
 
-Majetek je automaticky aktualizován o související informace. Tyto informace mohou například souviset s novými nebo aktualizovanými pracovními příkazy. Majetek můžete vytvořit buď pomocí položky nabídky **Všechen majetek** nebo položky nabídky **Čekající majetek**. Toto téma vysvětluje, jak vytvořit majetek pomocí položky nabídky **Všechen majetek**. Informace o způsobu vytvoření majetku pomocí položky nabídky **Čekající majetek** naleznete v tématu [Vytvoření majetku na základě nákupních objednávek](../objects/create-objects-based-on-purchase-orders.md).
+Majetek je automaticky aktualizován o související informace. Tyto informace mohou například souviset s novými nebo aktualizovanými pracovními příkazy. Majetek můžete vytvořit buď pomocí položky nabídky **Všechen majetek** nebo položky nabídky **Čekající majetek**. Tento článek vysvětluje, jak vytvořit majetek pomocí položky nabídky **Všechen majetek**. Informace o způsobu vytvoření majetku pomocí položky nabídky **Čekající majetek** naleznete v tématu [Vytvoření majetku na základě nákupních objednávek](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Všechen majetek
 

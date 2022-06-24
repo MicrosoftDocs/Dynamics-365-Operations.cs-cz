@@ -1,6 +1,6 @@
 ---
-title: Pracovní zátěže spuštění výroby pro cloudové a hraniční jednotky škálování
-description: Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s cloudovými a hraničními jednotkami škálování.
+title: Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
+description: Tento článek popisuje, jak pracovní zátěže spuštění výroby fungují s cloudovými a hraničními jednotkami škálování.
 author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b30e16489b0b0169f08e52c70cf4489c9bf4ce1b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c73c2440d8807e965e5d2d89105c2a8a6971c849
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865317"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pracovní zátěž spouštění výroby pro jednotky škálování cloudu a hraniční sítě
 
@@ -41,7 +41,7 @@ Při provádění výroby poskytují jednotky škálování následující funkc
 - Vedoucí dílny může upravit operační plán.
 - Pracovníci mají přístup k času a docházce pro označení příchodu a odchodu v hraničním pásmu, aby zajistili správný výpočet platu pracovníka.
 
-Toto téma popisuje, jak pracovní zátěže spuštění výroby fungují s cloudovými a hraničními jednotkami škálování.
+Tento článek popisuje, jak pracovní zátěže spuštění výroby fungují s cloudovými a hraničními jednotkami škálování.
 
 ## <a name="the-manufacturing-lifecycle"></a>Životní cyklus výroby
 

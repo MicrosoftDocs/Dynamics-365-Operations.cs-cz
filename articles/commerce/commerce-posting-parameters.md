@@ -1,6 +1,6 @@
 ---
-title: Parametry zaúčtování Commerce
-description: Toto téma popisuje parametry, které jsou specifické pro účtování finančních a fyzických transakcí v Microsoft Dynamics 365 Commerce.
+title: Parametry zaúčtování v Commerce
+description: Tento článek popisuje parametry, které jsou specifické pro účtování finančních a fyzických transakcí v Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 1b49c893567d39f05e16cefee47407a424b7e139
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649193"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887107"
 ---
-# <a name="commerce-posting-parameters"></a>Parametry zaúčtování Commerce
+# <a name="commerce-posting-parameters"></a>Parametry zaúčtování v Commerce
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Toto téma popisuje parametry, které jsou specifické pro účtování finančních a fyzických transakcí v Microsoft Dynamics 365 Commerce. Parametry zaúčtování Commerce se nacházejí v centrále Commerce v nabídce **Maloobchod a obchod \> Nastavení centrály \> Parametry \> Parametry Commerce \> Zaúčtování**.
+Tento článek popisuje parametry, které jsou specifické pro účtování finančních a fyzických transakcí v Microsoft Dynamics 365 Commerce. Parametry zaúčtování Commerce se nacházejí v centrále Commerce v nabídce **Maloobchod a obchod \> Nastavení centrály \> Parametry \> Parametry Commerce \> Zaúčtování**.
 
 ## <a name="periodic-discount-parameters"></a>Parametr časové slevy
 

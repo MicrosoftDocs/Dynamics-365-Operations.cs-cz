@@ -1,6 +1,6 @@
 ---
 title: Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B
-description: Toto téma popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v centrále Commerce.
+description: Tento článek popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v Commerce headquarters.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860288"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Správa uživatelů obchodních partnerů na webech elektronického obchodu B2B
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v centrále Commerce.
+Tento článek popisuje, jak přidávat, upravovat a odstraňovat uživatele obchodních partnerů na webech Microsoft Dynamics 365 Commerce elektronického obchodování typu business-to-business (B2B) a v Commerce headquarters.
 
 > [!NOTE]
-> - Téma [Správa B2B obchodních partnerů pomocí zákaznických hierarchií](partners-customer-hierarchies.md) je předpokladem tohoto dokumentu.
+> - Článek [Správa B2B obchodních partnerů pomocí zákaznických hierarchií](partners-customer-hierarchies.md) je předpokladem tohoto dokumentu.
 > - Ujistěte se, že jste inicializovali entitu typů dokumentů v ústředí Commerce otevřením formuláře **Typy dokumentů** v nabídce **Správa organizace \> Správa dokumentů \> Typy dokumentů**.
 
 Weby elektronického obchodování B2B vyžadují registraci organizací, aby se staly obchodními partnery. Poté, co organizace odešle registrační údaje na web elektronického obchodování B2B, projde požadavek na registraci procesem kvalifikace. Pokud se organizace úspěšně kvalifikuje, je přijata jako obchodní partner.
@@ -121,7 +121,7 @@ Chcete-li zapojit obchodní partnery a uživatele do centrály Commerce, postupu
 
 ## <a name="additional-information"></a>Doplňkové informace
 
-- Všechny úlohy zmíněné v tomto tématu lze nakonfigurovat tak, aby se spouštěly podle plánu v dávkovém formátu. Očekává se, že obchodní partneři nakonfigurují dávkové úlohy podle potřeby.
+- Všechny úlohy zmíněné v tomto článku lze nakonfigurovat tak, aby se spouštěly podle plánu v dávkovém formátu. Očekává se, že obchodní partneři nakonfigurují dávkové úlohy podle potřeby.
 - V současné době lze jako uživatele - správce - označit pouze jeden záznam uživatele / zákazníka a tuto roli lze změnit pouze v centrále Commerce. Neexistuje žádná podpora pro samoobslužné funkce, které obchodním partnerům umožňují určit více správců nebo změnit správce z webů B2B elektronického obchodování.
 - Ačkoli pro uživatele mohou být definovány limity výdajů, vynucení limitů výdajů během procesu zadávání objednávek ještě nebylo implementováno.
 - Veškerá obchodní logika a ověřování uživatelských prostředí na webových stránkách B2B elektronického obchodování jsou založeny na konfiguraci záznamu zákazníka, který je namapován na uživatele v centrále Commerce.

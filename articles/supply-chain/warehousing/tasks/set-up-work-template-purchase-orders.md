@@ -1,6 +1,6 @@
 ---
 title: Nastavení šablony práce pro nákupní objednávky
-description: Toto téma popisuje nastavení jednoduché pracovní šablony pro použití při odložení doručených položek.
+description: Tento článek popisuje nastavení jednoduché pracovní šablony pro použití při odložení doručených položek.
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ee6bc896a979c326001e1596e4a463753005fabf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877356"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Nastavení šablony práce pro nákupní objednávky
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje nastavení jednoduché pracovní šablony pro použití při odložení doručených položek. Šablony práce určují sadu pokynů představovanou pracovníkovi skladu na mobilním zařízení, zatímco jsou položky přesouvány z místa příjmu. Můžete použít tuto proceduru s daty zmíněnými v ukázkových datech společnosti USMF. Před spuštěním tohoto průvodce vytvořte ID fondu práce. V tomto příkladu se používá ID fondu práce nazvaný Příchozí. Tento postup je určen pro vedoucího skladu.
+Tento článek popisuje nastavení jednoduché pracovní šablony pro použití při odložení doručených položek. Šablony práce určují sadu pokynů představovanou pracovníkovi skladu na mobilním zařízení, zatímco jsou položky přesouvány z místa příjmu. Můžete použít tuto proceduru s daty zmíněnými v ukázkových datech společnosti USMF. Před spuštěním tohoto průvodce vytvořte ID fondu práce. V tomto příkladu se používá ID fondu práce nazvaný Příchozí. Tento postup je určen pro vedoucího skladu.
 
 1. V navigačním podokně přejděte na **Moduly > Řízení skladu > Nastavení > Práce > Pracovní šablony**.
 2. V poli **Typ pořadí pracovních činností** vyberte možnost **Nákupní objednávky**.

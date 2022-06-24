@@ -1,6 +1,6 @@
 ---
 title: Konfigurovat online obchody
-description: Tento článek poskytuje odkazy na témata, která vám pomohou centrálně konfigurovat a spravovat online obchod.
+description: Tento článek poskytuje odkazy na články, která vám pomohou centrálně konfigurovat a spravovat online obchod.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734097"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861872"
 ---
 # <a name="configure-online-stores"></a>Konfigurovat online obchody
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje odkazy na témata, která vám pomohou centrálně konfigurovat a spravovat online obchod.
+Tento článek poskytuje odkazy na články, která vám pomohou centrálně konfigurovat a spravovat online obchod.
 
-Témata uvedená v následující tabulce usnadňují konfiguraci komponent Commerce a online obchod v klientovi.
+Články uvedené v následující tabulce usnadňují konfiguraci komponent Commerce a online obchod v klientovi.
 
 ## <a name="configure-an-online-store"></a>Konfigurovat online obchod
 
-| Úkol                                                | Podrobnosti                                                                                                                                                                                                                                                                                                                                                   | Témata                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Úkol                                                | Podrobnosti                                                                                                                                                                                                                                                                                                                                                   | Články                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurovat komponenty.                        | Nastavte a spravujte informace pro operace commerce. Tyto informace zahrnují obchody, daně, výrobky, dárkové poukazy, promoakce a slevy.                                                                                                                                                                                                          | [Nastavení a udržování maloobchodu](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (Obsah webu TechNet pro Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
 | Konfigurace hierarchie navigace kanálu.    | Vytvořte hierarchii navigačních kategorií kanálu pro nastavení struktury kategorie pro produkty, které nabízíte prostřednictvím online obchodu. Definujte hierarchii kategorií a přiřaďte do kategorií produkty, skupiny atributů produktů a hodnoty atributů. Poté přiřaďte hierarchii kategorií k online obchodu.                            | [Nastavení hierarchie maloobchodu](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (Obsah TechNet AX pro 2012)</br> [Nastavit atributy a typy atributů](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (obsah TechNet pro AX 2012)</br> [Nastavit skupiny atributů maloobchodu](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (obsah TechNet AX pro 2012) |
@@ -41,7 +41,7 @@ Témata uvedená v následující tabulce usnadňují konfiguraci komponent Comm
 
 ## <a name="configure-online-store-products"></a>Konfigurace produktů online obchodu
 
-| Úkol                                 | Podrobnosti                                                                                                                                           | Témata                                                                                                                                                                                                                                                                            |
+| Úkol                                 | Podrobnosti                                                                                                                                           | Články                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Přidejte sortimenty do online obchodu. | Přidejte sortimenty obsahující produkty, které nabízíte v online obchodu.                                                                  | [Nastavení online obchodu](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (Obsah webu TechNet pro AX 2012)                                                                                                                                              |
 | Spravujte katalogy.                     | Použijte katalogy produktů k identifikaci produktů, které chcete nabídnout ve svých obchodech.                                                              | [Klíčové úkoly: vytvoření katalogů maloobchodních produktů](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (Obsah webu TechNet pro AX 2012)                                                                                                                           |
@@ -52,7 +52,7 @@ Témata uvedená v následující tabulce usnadňují konfiguraci komponent Comm
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Nastavení výměny dat mezi Commerce a online obchodem
 
-| Úkol                                 | Podrobnosti                                                                                                                               | Témata                                                                                                                                                                                                                                                                                  |
+| Úkol                                 | Podrobnosti                                                                                                                               | Články                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nastavte profily integrace kanálů. | Profily umožňují součástem komunikovat mezi sebou. Před konfigurací nastavení výměny dat nastavte profily. | [Nastavení profilu služby v reálném čase](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (obsah TechNet pro AX 2012)</br> [Nastavení profilu kanálu](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (obsah TechNet pro AX 2012) |
 

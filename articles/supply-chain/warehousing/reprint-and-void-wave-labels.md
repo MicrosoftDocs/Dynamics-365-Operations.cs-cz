@@ -1,6 +1,6 @@
 ---
 title: Opakovaný tisk a anulování vlnových štítků
-description: Toto téma vysvětluje, jak zrušit a znovu vytisknout stávající vlnové štítky.
+description: Tento článek vysvětluje, jak zrušit a znovu vytisknout stávající vlnové štítky.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871826"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Opakovaný tisk a anulování vlnových štítků
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak spravovat štítky generované zpracováním vlny. (Podrobný popis a pokyny pro konfiguraci naleznete v části [Konfigurace tisku vlnových štítků](../warehousing/configure-wave-label-printing.md) .)
+Tento článek vysvětluje, jak spravovat štítky generované zpracováním vlny. (Podrobný popis a pokyny pro konfiguraci naleznete v části [Konfigurace tisku vlnových štítků](../warehousing/configure-wave-label-printing.md) .)
 
 Vlnové štítky můžete kdykoli znovu vytisknout. Například pokud bude existující štítek ztracen nebo poškozen, pravděpodobně budete muset vytisknout jeden štítek. Alternativně by mohlo být nutné, aby pracovník nebo vedoucí skladu znovu vytiskl celou roli štítků, pokud by se počet a/nebo složení celé řady vlnových štítků změnily (například z důvodu nedostatku zásob nebo z jiných důvodů). Často, i když se změnil pouze počet kartonů, musí být celá role znovu vytištěna, aby byl celkový počet v části „Karton X Y“ každé etikety přesný.
 
@@ -32,10 +32,10 @@ Funkce opakovaného tisku vlnových štítků podporuje následující funkce:
 - Zrušte štítky a současně je znovu vytiskněte. (Schopnost zrušit štítky je například začleněná do scénářů krátkého výběru.)
 - Vyčistěte historii vlnového štítku.
 
-Toto téma představuje sbírku scénářů, které prostřednictvím příkladů ukazují, jak pracovat s funkcí opakovaného tisku vlnových štítků.
+Tento článek představuje sbírku scénářů, které prostřednictvím příkladů ukazují, jak pracovat s funkcí opakovaného tisku vlnových štítků.
 
 > [!IMPORTANT]
-> Chcete-li zpracovat scénáře uvedené v tomto tématu, musíte nejprve zapnout a nakonfigurovat příslušné funkce tisku vlny, jak je popsáno v části [Konfigurace tisku vlnových štítků](../warehousing/configure-wave-label-printing.md). Několik scénářů v tomto tématu také vyžaduje, abyste nejprve prošli scénáře v tomto tématu a vytvořili předběžná vzorová data.
+> Chcete-li zpracovat scénáře uvedené v tomto článku, musíte nejprve zapnout a nakonfigurovat příslušné funkce tisku vlny, jak je popsáno v části [Konfigurace tisku vlnových štítků](../warehousing/configure-wave-label-printing.md). Několik scénářů v tomto článku také vyžaduje, abyste nejprve prošli scénáře v tomto článku a vytvořili předběžná vzorová data.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scénář 1: Opakovaný tisk štítků z webového klienta
 

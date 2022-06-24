@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9bee2d68a2ed2aa339ddf8232bba4541f4fe52b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871913"
 ---
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 
@@ -75,7 +75,7 @@ Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</
 <td>Omezení</td>
 <td>Omezení popisují limity konfigurace modelu produktu. Omezení slouží k zajištění toho, aby byly při konfiguraci produktu vybrány pouze platné hodnoty. Omezení může být omezení výrazů nebo omezení tabulek:
 <ul>
-<li>Omezení výrazů mohou být použita pouze pro komponentu, se kterou jsou svázány. Omezení výrazů pro komponentu se může odkazovat na atributy dílčích komponent dané komponenty. Řešitel konfigurace produktu slouží k vyřešení omezení. Při psaní omezení je třeba dodržovat syntaxi tohoto řešitele. Další informace naleznete v odkazu na téma věnované omezením výrazu a omezením tabulky.</li>
+<li>Omezení výrazů mohou být použita pouze pro komponentu, se kterou jsou svázány. Omezení výrazů pro komponentu se může odkazovat na atributy dílčích komponent dané komponenty. Řešitel konfigurace produktu slouží k vyřešení omezení. Při psaní omezení je třeba dodržovat syntaxi tohoto řešitele. Další informace naleznete v odkazu na článek věnovaný omezením výrazu a omezením tabulky.</li>
 <li>Omezení tabulky musí být definována předtím, než je možné použít pro komponentu v modelu konfigurace produktu. Omezení tabulek mohou být definovaná uživatelem nebo systémem. Uživatelem definované omezení tabulky je typ matice, kterou lze použít k popisu sady kombinací hodnot atributů, které jsou definovány pomocí typů atributů. Například v případě výroby reproduktorů může matice pro uživatelem definované omezení tabulky obsahovat sloupce pro povrch a mřížku reproduktorů.</li>
 </ul>
 <strong>Příklad:</strong> Reproduktory jsou k dispozici se čtyřmi různými povrchy: černý, dub, palisandr nebo bílý. Reproduktory mohou mít jednu ze tří předních mřížek: černá, kov nebo bílá. Černé provedení je k dispozici pro všechny mřížky, ale ostatní materiály povrchové úpravy jsou omezeny na konkrétní mřížky. V následující tabulce je ukázka informace, které se zobrazí na kartě <strong>Povolené kombinace</strong> na stránce <strong>Upravit omezení tabulky</strong>.

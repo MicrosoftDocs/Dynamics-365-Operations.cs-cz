@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851877"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Katalog kurzů pro funkční konzultanty Dynamics 365 Supply Chain Management
 
@@ -68,7 +68,7 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 | [Kurz MB-300T01-A: Základní běžné funkce Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Tento kurz popisuje základní běžné funkce aplikace Microsoft Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
 | [Kurz MB-300T02-A: Základní konfigurace v Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Tento kurz se zabývá základními konfiguračními úkoly aplikace Microsoft Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
 | [Kurz MB-300T03-A: Migrace dat a příprava na uvedení do provozu s Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Tento kurz se zabývá migrací a přípravou na uvedení do provozu pro Microsoft Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |
-| [Domovská stránka Implementace životního cyklu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Tato témata popisují programy, nástroje a procesy, které souvisí s životním cyklem implementace projektu Microsoft Dynamics 365 for Finance and Operations. | Dokumentace | |
+| [Domovská stránka Implementace životního cyklu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Tyto články popisují programy, nástroje a procesy, které souvisí s životním cyklem implementace projektu Microsoft Dynamics 365 for Finance and Operations. | Dokumentace | |
 
 ## <a name="migration-and-upgrade"></a>Migrace a upgrade<a name="migration"></a>
 
@@ -104,8 +104,8 @@ U funkčních konzultantů náš analytický výzkum úloh ukázal, že každý 
 | [Konfigurace a práce se správou přepravy v Dynamics 365 Supply Chain Management](/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Modul Správa přepravy v aplikaci Dynamics 365 Supply Chain Management usnadňuje vyhledání nejúčinnějšího způsobu dodávání zboží vašim zákazníkům. Správa přepravy vypočítá nejméně nákladný a nejrychlejší způsob dodání zboží a umožňuje identifikovat dodavatele a směrování pro příchozí a odchozí objednávky. | Libovolná online školení vlastním tempem | 3 hodin |
 | [Warehousing Mobile App (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Tato technická přednáška pojednává o pokročilém systému skladových položek v aplikaci Dynamics 365 for Operations a o tom, co v budoucnu povede k pokročilému mobilnímu rozhraní skladu. Prozkoumáme nově vydanou mobilní aplikaci a porovnáme ji se starší WMDP. Budeme se učit, co je nutné k instalaci, konfiguraci a používání této mobilní aplikace a jejímu využití pro obohacení vlastních implementací. | Bezplatný záznam webové konference | 54 min. |
 | [Dodavatelská spolupráce(DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | Tato technická přednáška je ukázkou funkce pro spolupráci s dodavateli, včetně funkce Spotřeba odpovědi od dodavatele, která je k dispozici v červencovém (jarním) vydání. | Bezplatný záznam webové konference | 58 min. |
-| [Proces migrace zboží a skladu pro použití správy rozšířeného skladu (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | V této technické přednášce vás naučíme, jak migrovat existující nastavení skladu a položky s otevřenými transakcemi do pokročilé správy skladů pomocí nových schopností změnit skupinu dimenzí úložiště pro položky a povolit sklady pro použití pokročilých procesů řízení skladu. | Bezplatný záznam webové konference | 54 min. |
-| [Domovská stránka správy dodavatelsko-odběratelského řetězce](/dynamics365/unified-operations/supply-chain/) | Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations. | Dokumentace | |
+| [Proces migrace zboží a skladu pro použití správy rozšířeného skladu (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | V této technické přednášce vás naučíme, jak migrovat existující nastavení skladu a položky s otevřenými transakcemi do pokročilé správy skladů pomocí nových schopností změnit skupinu dimenzí úložiště pro položky a povolit sklady pro použití pokročilých procesů řízení skladu. | Bezplatný záznam webové konference | 54 minut |
+| [Domovská stránka správy dodavatelsko-odběratelského řetězce](/dynamics365/unified-operations/supply-chain/) | Tento článek poskytuje seznam článků nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations. | Dokumentace | |
 | [Doplnění poptávky po vyskladnění surovin (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Tato Technická přednáška se věnuje výběru materiálu a doplnění poptávky po výběru surovin. | Bezplatný záznam webové konference | 38 min. |
 | [Kurz MB-330T01-A: Konfigurace a použití správy dodavatelských řetězců v aplikaci Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | Tento kurz se zabývá konfigurací a používáním Supply Chain Management v aplikaci Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 2 dny |
 | [Kurz MB-330T02-A: Použití řízení kvality, vnitropodnikového obchodování a hlavního plánování v Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Tento kurz se věnuje používání řízení kvality, mezipodnikovému obchodování a hlavnímu plánování v Dynamics 365 for Finance and Operations. | Instruktorem vedené osobní nebo online školení; náklady se liší podle oblasti a partnera. | 1 den |

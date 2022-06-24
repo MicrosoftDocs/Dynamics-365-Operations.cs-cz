@@ -1,6 +1,6 @@
 ---
-title: Příchozí skladová operace v POS
-description: Toto téma popisuje možnosti příchozí skladové operace v pokladním místě (POS).
+title: Operace příchozích zásob v POS
+description: Tento článek popisuje možnosti příchozí skladové operace v pokladním místě (POS).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858875"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operace příchozích zásob v POS
 
@@ -215,7 +215,7 @@ Po úspěšném odeslání dokumentu konceptu do Commerce Headquarters se tento 
 
 Poté, co je dokument ve stavu **Požadováno**, je viditelný na kartě **Aktivní**. Nelze jej však zatím přijmout v příchozím obchodu nebo skladu. Poté, co výstupní sklad expedoval některé nebo všechny převodní příkazy, vstupní obchod nebo sklad může zaúčtovat příjemky v POS. Když výstupní strana zpracovává dokumenty převodního příkazu, jejich stav je aktualizován ze stavu **Požadováno** na **Expedováno** nebo **Částečně expedováno**. Jakmile jsou dokumenty ve stavu **Expedováno** nebo **Částečně expedováno**, může příchozí obchod nebo sklad podle nich účtovat příjemky pomocí procesu příjmu příchozí operace.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Odchozí skladová operace v POS](pos-outbound-inventory-operation.md)
 

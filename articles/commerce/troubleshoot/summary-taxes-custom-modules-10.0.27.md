@@ -1,6 +1,6 @@
 ---
 title: Mezisoučet souhrnu objednávek nezahrnuje daně z poplatků při použití přizpůsobených modulů souhrnu objednávek
-description: Toto téma obsahuje pokyny k odstraňování problémů, které vám mohou pomoci, když používáte přizpůsobené moduly souhrnu objednávek a mezisoučet souhrnu objednávek nezahrnuje daně z poplatků ve scénáři „cena zahrnuje DPH“.
+description: Tento článek obsahuje pokyny k odstraňování problémů, které vám mohou pomoci, když používáte přizpůsobené moduly souhrnu objednávek a mezisoučet souhrnu objednávek nezahrnuje daně z poplatků ve scénáři „cena zahrnuje DPH“.
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,16 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 1a47561a3ac984bc554b5b93546592237c16cf18
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 260dcb6bc1585615195e32adfcd1da6bfbca294e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767950"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848830"
 ---
 # <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>Mezisoučet souhrnu objednávek nezahrnuje daně z poplatků při použití přizpůsobených modulů souhrnu objednávek
 
-Toto téma obsahuje pokyny k odstraňování problémů, které vám mohou pomoci, když používáte přizpůsobené moduly souhrnu objednávek a mezisoučet souhrnu objednávek nezahrnuje daně z poplatků ve scénáři „cena zahrnuje DPH“.
+Tento článek obsahuje pokyny k odstraňování problémů, které vám mohou pomoci, když používáte přizpůsobené moduly souhrnu objednávek a mezisoučet souhrnu objednávek nezahrnuje daně z poplatků ve scénáři „cena zahrnuje DPH“.
 
 ## <a name="description"></a>Popis
 

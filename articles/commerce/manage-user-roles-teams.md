@@ -1,6 +1,6 @@
 ---
 title: Správa uživatelských rolí v Microsoft Teams
-description: Toto téma popisuje správu uživatelských rolí Microsoft Dynamics 365 Commerce v Microsoft Teams.
+description: Tento článek popisuje správu uživatelských rolí Microsoft Dynamics 365 Commerce v Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3bde573456856b6457740587b7e921408285a762
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 478bdc762bbc808b031b3ec160126deb4627b6e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881264"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Správa uživatelských rolí v Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje správu uživatelských rolí Microsoft Dynamics 365 Commerce v Microsoft Teams.
+Tento článek popisuje správu uživatelských rolí Microsoft Dynamics 365 Commerce v Microsoft Teams.
 
 Když vytvoříte tým pro každý obchod nebo kanál v Teams, vytvoří se členství ve skupině, které odpovídá vytvořenému týmu (například `HOUSTON_D365@<YourTenantAzureADDomain>.com`). Všem pracovníkům obchodu v rámci členství v týmové skupině je přiřazena jedna ze dvou uživatelských rolí: **Vlastník** nebo **Člen**. Zaměstnanci obchodu, kteří mají uživatelskou roli **Vlastník**, mohou provádět operace, jako je přidání soukromého kanálu a přidání nebo odstranění členů. Manažeři obchodů obvykle mají uživatelskou roli **Vlastník**.
 

@@ -1,6 +1,6 @@
 ---
 title: Vyvážení dávky
-description: Toto téma popisuje proces vyvážení dávky.
+description: Tento článek popisuje proces vyvážení dávky.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856041"
 ---
 # <a name="batch-balancing"></a>Vyvážení dávky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje podporu procesu vyvážení dávky.
+Tento článek popisuje podporu procesu vyvážení dávky.
 
 Další informace naleznete ve [videu o vyvážení dávky](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -149,7 +149,7 @@ Vyvážené množství pomocné látky se počítá jako rozdíl mezi velikostí
 Proces vyvážení dávky se provádí ze stránky **Vyvážení dávky**.
 Zvolte **Řízení nákladů \> Dávkové objednávky** a poté na kartě **Proces** zvolte **Vyvážení dávky**. Vyvážení dávky je k dispozici pro dávkové objednávky, které mají stav **Zahájeno**.
 
-Obecně platí, že vyvážení dávky lze použít pro dávkové objednávky, pokud má receptura alespoň jeden řádek receptury s **typem látky** *Aktivní*. (Ohledně výjimky k tomuto pravidlu nahlédněte do části "Dávkové objednávky, které nejsou použitelné pro vyvážení dávky" dále v tomto tématu)
+Obecně platí, že vyvážení dávky lze použít pro dávkové objednávky, pokud má receptura alespoň jeden řádek receptury s **typem látky** *Aktivní*. (Ohledně výjimky k tomuto pravidlu nahlédněte do části "Dávkové objednávky, které nejsou použitelné pro vyvážení dávky" dále v tomto článku)
 
 Proces vyvážení dávky může být rozdělen do dvou dílčích procesů:
 

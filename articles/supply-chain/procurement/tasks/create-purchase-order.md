@@ -1,6 +1,6 @@
 ---
 title: Vytvoření nákupní objednávky
-description: Toto téma popisuje způsob ručního vytváření nákupní objednávky.
+description: Tento článek popisuje způsob ručního vytváření nákupní objednávky.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd627b9874b3e3f7aad71fb2970ddcc333a608
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a04a9f4a512a307efecb19703cd3df638ba5ff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856070"
 ---
 # <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje způsob ručního vytváření nákupní objednávky. Nákupní objednávky jsou obvykle vytvářeny automaticky jako výsledek hlavního plánování, přímé dodávky a jiných procesů. Nákupní objednávky jsou obvykle vytvořeny agentem pro nákup. Zde uvedený příklad lze použít v rámci dat z ukázkové společnosti USMF při použití hodnot, které jsou doporučeny v rámci poznámek pro různé kroky.
+Tento článek popisuje způsob ručního vytváření nákupní objednávky. Nákupní objednávky jsou obvykle vytvářeny automaticky jako výsledek hlavního plánování, přímé dodávky a jiných procesů. Nákupní objednávky jsou obvykle vytvořeny agentem pro nákup. Zde uvedený příklad lze použít v rámci dat z ukázkové společnosti USMF při použití hodnot, které jsou doporučeny v rámci poznámek pro různé kroky.
 
 
 ## <a name="create-the-purchase-order-header"></a>Vytvoření záhlaví nákupní objednávky

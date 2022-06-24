@@ -1,6 +1,6 @@
 ---
 title: Strategie balení kontejnerů
-description: Toto téma popisuje rozdíly mezi strategiemi balení kontejnerů a poskytuje příklady.
+description: Tento článek popisuje rozdíly mezi strategiemi balení kontejnerů a poskytuje příklady.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676376"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862359"
 ---
 # <a name="container-packing-strategies"></a>Strategie balení kontejnerů
 
 [!include [banner](../includes/banner.md)]
 
-*Strategie balení kontejnerů* je strategie, kterou můžete použít k definování přidělení položek napříč kontejnery. Toto téma vysvětluje rozdíly mezi strategiemi *Zabalit do všech otevřených kontejnerů* a *Zabalit pouze do aktuálního kontejneru*.
+*Strategie balení kontejnerů* je strategie, kterou můžete použít k definování přidělení položek napříč kontejnery. Tento článek vysvětluje rozdíly mezi strategiemi *Zabalit do všech otevřených kontejnerů* a *Zabalit pouze do aktuálního kontejneru*.
 
 - **Zabalit do všech otevřených kontejnerů** - Systém musí zkontrolovat všechny otevřené kontejnery, které již byly vytvořeny během cyklu kontejnerizace, aby se ujistil, že se položka vejde do jednoho z nich. Během balení systém kontroluje každou položku, aby určil, zda se vejde do některého z dříve vytvořených kontejnerů. Pokud se položka nevejde do existujícího kontejneru, systém vytvoří nový kontejner a pokračuje, dokud nedokončí zabalení celé objednávky.
 

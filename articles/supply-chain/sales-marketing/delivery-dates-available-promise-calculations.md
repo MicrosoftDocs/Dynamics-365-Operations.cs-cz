@@ -1,6 +1,6 @@
 ---
 title: Příslib objednávky
-description: Tohle téma poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
+description: Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
 author: Henrikan
 ms.date: 04/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f7535ba28358fef21784956da38cd334a4aebe7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 21af95f06182863c6ba74e4329052fc15c1b49a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878809"
 ---
 # <a name="order-promising"></a>Příslib objednávky
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
+Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
 
 Při příslibu objednávky se na základě metody řízení data dodání a počtu přepravních dnů vypočítá nejdřívější datum expedice a příjmu. Vybírat lze ze čtyř metod řízení data dodání:
 

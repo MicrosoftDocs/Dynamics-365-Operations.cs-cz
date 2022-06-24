@@ -1,6 +1,6 @@
 ---
 title: Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.23.
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849467"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Supply Chain Management 10.0.23 (leden 2022)
 
 [!include [banner](../includes/banner.md)]
 
-Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.23. Tato verze má číslo sestavení 10.0.1037 a je k dispozici následujícím způsobem:
+Tento článek uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze 10.0.23. Tato verze má číslo sestavení 10.0.1037 a je k dispozici následujícím způsobem:
 
 - **Verze Preview:** Říjen 2021
 - **Obecně dostupné vydání (automatická aktualizace):** Prosinec 2021
@@ -29,7 +29,7 @@ Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Micro
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
-V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci. Chcete -li zjistit, jak zapnout funkci, podívejte se na sloupec *Povoleno uživatelem*. Další informace o tom, jak používat správu funkcí, naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tohle téma můžeme aktualizovat, aby obsahovalo funkce, které se dostaly do sestavení poté, co bylo toto téma původně publikováno.
+V následující tabulce je uveden seznam funkcí této verze. Sloupec *Funkce* poskytuje odkazy na [plán vydání](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), kde můžete vidět oficiální datumy vydání jednotlivých funkcí. Sloupec *Další informace* obsahuje další podrobnosti a/nebo odkazy na související dokumentaci. Chcete -li zjistit, jak zapnout funkci, podívejte se na sloupec *Povoleno uživatelem*. Další informace o tom, jak používat správu funkcí, naleznete v tématu [Přehled správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tento článek můžeme aktualizovat, aby obsahovalo funkce, které se dostaly do sestavení poté, co byl tento článek původně publikován.
 
 | Oblast funkce | Funkce | Další informace | Povolil/a   |
 |---|---|---|---|
@@ -63,9 +63,9 @@ Pokud chcete některou z těchto funkcí zapnout nebo vypnout, musíte tak učin
 
 ## <a name="new-and-updated-documentation-resources"></a>Nové a aktualizované zdroje dokumentace
 
-Nedávno jsme přidali nebo významně aktualizovali následující témata nápovědy. Tato témata nemusí nutně souviset s novými funkcemi, které byly přidány pro toto vydání, jak je uvedeno v předchozí části. Mohou vám však pomoci lépe využít stávající funkce.
+Nedávno jsme přidali nebo významně aktualizovali následující články nápovědy. Tento článek nemusí nutně souviset s novými funkcemi, které byly přidány pro toto vydání, jak je uvedeno v předchozí části. Mohou vám však pomoci lépe využít stávající funkce.
 
-| Oblast funkce | Nová nebo aktualizovaná témata |
+| Oblast funkce | Nové nebo aktualizované články |
 |---|---|
 | Správa technických změn | [Technické atributy a vyhledávání technických atributů](../engineering-change-management/engineering-attributes-and-search.md) nyní popisuje, jak funguje dědění technického atributu. |
 | Hlavní plánování | [Hlavní plánování s prognózami poptávky](../master-planning/planning-optimization/demand-forecast.md) a [Redukční klíče prognózy](../master-planning/reduction-keys.md) nyní poskytuje více informací o tom, jak pracovat s redukčními klíči. |
@@ -74,9 +74,9 @@ Nedávno jsme přidali nebo významně aktualizovali následující témata náp
 | Hlavní plánování | [Plán dodávek](../master-planning/supply-schedule.md) |
 | Řízení skladu | [Globální parametry mobilního zařízení](../warehousing/mobile-device-parameters.md) |
 | Řízení skladu | [Ukotvení](../warehousing/anchoring.md) |
-| Prodej a marketing | Mezipodnikový obchod je nyní podrobně popsán, počínaje [Nastavení mezipodnikového obchodu](../sales-marketing/intercompany-trade-set-up.md) a s tím souvisejících témat. |
+| Prodej a marketing | Mezipodnikový obchod je nyní podrobně popsán, počínaje [Nastavení mezipodnikového obchodu](../sales-marketing/intercompany-trade-set-up.md) a s tím souvisejících článcích. |
 | Prodej a marketing | [Vylepšení výkonu čištění historie prodeje](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Řízení zásob | Dokumentace viditelnosti zásob byla rozšířena a aktualizována počínaje [Přehled doplňku Viditelnost zásob](../inventory/inventory-visibility.md) a s tím souvisejícími tématy. |
+| Řízení zásob | Dokumentace viditelnosti zásob byla rozšířena a aktualizována počínaje [Přehled doplňku Viditelnost zásob](../inventory/inventory-visibility.md) a s tím souvisejícími články. |
 | Řízení skladu | [Uživatelské účty mobilního zařízení](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Další prostředky
@@ -97,12 +97,12 @@ Přečtěte si [Dynamics 365 a průmyslová cloudová řešení: Plán vlny 2 v
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
 
-Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+Článek [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
-Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v článku [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
 
 U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.
 

@@ -1,6 +1,6 @@
 ---
 title: Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
-description: Tohle téma popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
+description: Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863614"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrace položek pro položky umožňující pokročilé uskladnění s použitím deníku doručení zboží
 
 [!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník.
+Tento článek popisuje postup, jak zaregistrovat položky pomocí deníku doručení položek, když použijete pokročilé postupy řízení skladu. To obvykle provádí přijímající pracovník.
 
 ## <a name="enable-sample-data"></a>Povolit ukázková data
 
-Chcete-li projít tímto scénářem pomocí ukázkových záznamů a hodnot uvedených v tomto tématu, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data, a než začnete, musíte vybrat právnickou osobu *USMF*.
+Chcete-li projít tímto scénářem pomocí ukázkových záznamů a hodnot uvedených v tomto článku, musíte používat systém, ve kterém jsou nainstalována standardní ukázková data, a než začnete, musíte vybrat právnickou osobu *USMF*.
 
 Místo toho můžete projít tímto scénářem nahrazením hodnot ze svých vlastních dat za předpokladu, že máte k dispozici následující data:
 

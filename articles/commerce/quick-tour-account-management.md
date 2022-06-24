@@ -1,6 +1,6 @@
 ---
 title: Přehled stránek správy účtů
-description: Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
+description: Tento článek poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cc70f48371fb90f4e3529173d30baffd6fe4e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984512"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868876"
 ---
 # <a name="account-management-pages-overview"></a>Přehled stránek správy účtů
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
+Tento článek poskytuje přehled stránek správy účtů v řešení Microsoft Dynamics 365 Commerce.
 
 Stránky správy účtů umožňují odběratelům zobrazit informace související s jejich účtem a objednávkami. Stránky správy účtů zahrnují cílovou stránku správy účtu, stránky uživatelského profilu, adresy, stránku historie objednávek, stránku podrobností objednávky, věrnostní body a seznam přání.
 

@@ -1,6 +1,6 @@
 ---
 title: Přidání adresy do servisní zakázky
-description: Toto téma popisuje postup přidání adresy odběratele do servisní zakázky.
+description: Tento článek popisuje postup přidání adresy odběratele do servisní zakázky.
 author: sorenva
 ms.date: 05/02/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 560d0c58aebe652e668cc0ec3ed05d84f004872e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844728"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Přidání adresy do servisní zakázky    
 
 [!include [banner](../includes/banner.md)]
 
 
-Toto téma popisuje postup přidání adresy odběratele do servisní zakázky. Při vytváření servisní zakázky se informace o adrese přenáší z projektu, ke kterému je servisní zakázka připojena. Pro odběratele, dodavatele, pracoviště, sklady, servisní zakázky a projekty však můžete vybrat alternativní umístění z adres, které jsou již zadány v aplikaci Microsoft Dynamics AX.
+Tento článek popisuje postup přidání adresy odběratele do servisní zakázky. Při vytváření servisní zakázky se informace o adrese přenáší z projektu, ke kterému je servisní zakázka připojena. Pro odběratele, dodavatele, pracoviště, sklady, servisní zakázky a projekty však můžete vybrat alternativní umístění z adres, které jsou již zadány v aplikaci Microsoft Dynamics AX.
 
 Můžete také vytvořit adresy nové. Ve výchozím stavu je nová adresa převedena do projektu. Můžete však zadat, aby nová adresa byla relevantní pouze pro tuto instanci služby. V takovém případě nová adresa do projektu převedena nebude.
 

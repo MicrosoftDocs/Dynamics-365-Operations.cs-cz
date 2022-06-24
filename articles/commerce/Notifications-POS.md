@@ -1,6 +1,6 @@
 ---
 title: Zobrazení oznámení objednávek v pokladním místě (POS)
-description: Toto téma popisuje postup povolení oznámení objednávek v pokladním místě a architekturu oznámení.
+description: Tento článek popisuje postup povolení oznámení objednávek v pokladním místě a architekturu oznámení.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853948"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Zobrazení oznámení objednávek v pokladním místě (POS)
 
@@ -65,10 +65,10 @@ U oznámení o plnění objednávky i zrušení objednívky se při zpracování
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Povolení aktivního obsahu na tlačítkách POS
 
-Tlačítka POS mohou nyní zobrazit počet, což pracovníkům usnadňuje určit úkoly, které vyžadují jejich okamžitou pozornost. Chcete-li zobrazit toto číslo na POS tlačítku, je nutné dokončit nastavení oznámení popsané dříve v tomto tématu (musíte povolit oznámení pro operaci, nastavit interval upozornění a aktualizovat skupinu oprávnění POS pro daného pracovníka). Dále musíte otevřít návrháře mřížky tlačítek, zobrazit vlastnosti tlačítka a vybrat zaškrtávací políčko **Povolit aktivní obsah**. V poli **Zarovnání obsahu** můžete určit, zda se počet zobrazí v pravém horním rohu tlačítka (**Vpravo nahoře**) nebo uprostřed (**Na střed**).
+Tlačítka POS mohou nyní zobrazit počet, což pracovníkům usnadňuje určit úkoly, které vyžadují jejich okamžitou pozornost. Chcete-li zobrazit toto číslo na POS tlačítku, je nutné dokončit nastavení oznámení popsané dříve v tomto článku (musíte povolit oznámení pro operaci, nastavit interval upozornění a aktualizovat skupinu oprávnění POS pro daného pracovníka). Dále musíte otevřít návrháře mřížky tlačítek, zobrazit vlastnosti tlačítka a vybrat zaškrtávací políčko **Povolit aktivní obsah**. V poli **Zarovnání obsahu** můžete určit, zda se počet zobrazí v pravém horním rohu tlačítka (**Vpravo nahoře**) nebo uprostřed (**Na střed**).
 
 > [!NOTE]
-> Aktivní obsah lze povolit pro operace pouze v případě, kdy je zaškrtnuto políčko **Povolit oznámení** na stránce **Operace POS**, jak bylo popsáno dříve v tomto tématu.
+> Aktivní obsah lze povolit pro operace pouze v případě, kdy je zaškrtnuto políčko **Povolit oznámení** na stránce **Operace POS**, jak bylo popsáno dříve v tomto článku.
 
 Následující obrázek znázorňuje nastavení aktivního obsahu v návrháři mřížky tlačítek.
 

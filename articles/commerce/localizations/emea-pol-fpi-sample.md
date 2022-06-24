@@ -1,6 +1,6 @@
 ---
 title: Vzor integrace fiskální tiskárny pro Polsko
-description: V tomto tématu je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
+description: V tomto článku je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876942"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Vzor integrace fiskální tiskárny pro Polsko
 
 [!include[banner](../includes/banner.md)]
 
-V tomto tématu je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
+V tomto článku je uveden přehled ukázkové fiskální integrace pro Polsko v Microsoft Dynamics 365 Commerce.
 
 Funkce Dynamics 365 Commerce pro Polsko zahrnuje ukázkovou integraci pokladního místa (POS) s fiskální tiskárnou. Ukázka rozšiřuje [funkce fiskální integrace](fiscal-integration-for-retail-channel.md) a podporuje protokol POSNET THERMAL HD 2.02 pro fiskální tiskárny od [Posnet Polska S.A.](https://www.posnet.com.pl) Ukázka umožňuje komunikaci s fiskální tiskárnou připojenou přes port COM pomocí nativního softwarového ovladače. Ten byl implementován a testován s použitím softwarového emulátoru, který Posnet poskytl pro fiskální tiskárnu Posnet Thermal HD FV EJ. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
 

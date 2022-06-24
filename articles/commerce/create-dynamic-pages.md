@@ -1,6 +1,6 @@
 ---
 title: Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL
-description: Toto téma popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
+description: Tento článek popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884656"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Vytváření dynamických stránek elektronického obchodu na základě parametrů adresy URL
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Toto téma popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
+Tento článek popisuje, jak nastavit stránku elektronického obchodování Microsoft Dynamics 365 Commerce, která může poskytovat dynamický obsah na základě parametrů adresy URL.
 
 Stránku elektronického obchodování lze nakonfigurovat tak, aby zobrazovala různý obsah na základě segmentu v cestě URL. Proto se stránka nazývá dynamická stránka. Segment se používá jako parametr k načtení obsahu stránky. Například stránka vytvořená v nástroji pro tvorbu webů s názvem **blog\_viewer** je namapována na adresu URL `https://fabrikam.com/blog`. Tuto stránku lze poté použít k zobrazení jiného obsahu na základě posledního segmentu v cestě URL. Například poslední segment v adrese URL `https://fabrikam.com/blog/article-1` je **article-1**.
 

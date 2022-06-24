@@ -1,6 +1,6 @@
 ---
 title: Přidáno nastavení dodavatele pro náklady za doručení
-description: Toto téma popisuje nová pole, která se přidají na stávající stránku Dodavatelé, když povolíte modul nákladů za doručení. Tato pole slouží k nastavení prodejců, které budete používat společně s funkcemi nákladů za doručení.
+description: Tento článek popisuje nová pole, která se přidají na stávající stránku Dodavatelé, když povolíte modul nákladů za doručení. Tato pole slouží k nastavení prodejců, které budete používat společně s funkcemi nákladů za doručení.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b4e02397f7a4cdeaa21b451268b16e4fbe773612
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 84d1dee0815b036a3d411eabff49d8a08249bed3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882569"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>Přidáno nastavení dodavatele pro náklady za doručení
 

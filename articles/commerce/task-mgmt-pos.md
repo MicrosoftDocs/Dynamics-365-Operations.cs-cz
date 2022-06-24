@@ -1,6 +1,6 @@
 ---
 title: Správa úkolů v POS
-description: V tomto tématu je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
+description: V tomto článku je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e61456b7ae79a2c82c96b5b669e95ad1818f71d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878424"
 ---
 # <a name="task-management-in-pos"></a>Správa úkolů v POS
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
+V tomto článku je popsána správa úkolů v aplikaci pokladního místa (POS) pro Microsoft Dynamics 365 Commerce.
 
 Aplikace Dynamics 365 Commerce POS disponuje funkcemi správy úkolů, které umožňují manažerům a pracovníkům v obchodech spravovat úkoly a aktualizovat jejich stav. Pracovníci obchodu mohou získat přístup k úlohám buď výběrem dlaždice **Úkoly** na domovské stránce POS, nebo výběrem oznámení úkolu. Ve výchozím nastavení jsou pracovníci obchodu přesměrováni na kartu **Moje úkoly**, kde si mohou prohlédnout úkoly, které jsou jim přiřazeny. Mohou se však snadno přepnout na karty **Úkoly po termínu**, **Otevřené úkoly** a **Seznamy úkolů**.
 

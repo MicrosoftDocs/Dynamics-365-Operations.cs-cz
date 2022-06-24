@@ -1,6 +1,6 @@
 ---
 title: Poskytování příruček v hybridní realitě pro pracovníky ve výrobě
-description: Toto téma vysvětluje, jak modul řízení výroby v Microsoft Dynamics 365 Supply Chain Management integrovat s Dynamics 365 Guides.
+description: Tento článek vysvětluje, jak modul řízení výroby v Microsoft Dynamics 365 Supply Chain Management integrovat s Dynamics 365 Guides.
 author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 703f2cb9a1ea8691420765a8598d59f3e6cc6488
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3f29fad004631e336fad06260d0a0951743525d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869597"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Poskytování příruček v hybridní realitě pro pracovníky ve výrobě
 

@@ -1,6 +1,6 @@
 ---
 title: Plánování výroby
-description: Toto téma popisuje plánování výroby a vysvětluje, jak upravit plánované výrobní zakázky pomocí optimalizace plánování.
+description: Tento článek popisuje plánování výroby a vysvětluje, jak upravit plánované výrobní zakázky pomocí optimalizace plánování.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873775"
 ---
 # <a name="production-planning"></a>Plánování výroby
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469051"
 
 Optimalizace plánování podporuje několik produkčních scénářů. Pokud migrujete ze stávajícího integrovaného hlavního plánovacího modulu, je důležité si uvědomit nějaké změněné chování.
 
-Následující video poskytuje krátký úvod k některým konceptům pojednávaným v tomto tématu: [Dynamics 365 Supply Chain Management: Vylepšení optimalizace plánování](https://youtu.be/u1pcmZuZBTw).
+Následující video poskytuje krátký úvod k některým konceptům pojednávaným v tomto článku: [Dynamics 365 Supply Chain Management: Vylepšení optimalizace plánování](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Zapnutí této funkce ve vašem systému
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Plánované výrobní zakázky pomocí optimalizace plánování.*.
+Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapněte funkci *Plánované výrobní zakázky pomocí optimalizace plánování.*.
 
 ## <a name="planned-production-orders"></a>Plánované výrobní zakázky
 
@@ -65,7 +65,7 @@ Pokud chcete změnit informace o plánované objednávce a zjistit dopad na souv
 2. Schvalte plánovanou objednávku.
 3. Spusťte hlavní plánování.
 
-Při spuštění hlavního plánování byste neměli používat filtry, pokud jsou zahrnuty plánované výrobní zakázky. Více informací naleznete v části [Filtry](#filters) v dále v tomto tématu.
+Při spuštění hlavního plánování byste neměli používat filtry, pokud jsou zahrnuty plánované výrobní zakázky. Více informací naleznete v části [Filtry](#filters) v dále v tomto článku.
 
 > [!NOTE]
 > Pokud se datum dodání plánované objednávky změní na pozdější datum, může být požadavek navázán na novou plánovanou objednávku. K tomuto chování dochází, když nové datum dodávky způsobí zpoždění pro vázanou poptávku, ale podle nastavení doby předstihu lze zpoždění zabránit.

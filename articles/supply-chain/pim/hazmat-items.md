@@ -1,6 +1,6 @@
 ---
 title: Nebezpečné materiály ve výrobcích, objednávkách, dodávkách a nákladech
-description: Toto téma vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
+description: Tento článek vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860689"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Nebezpečné materiály ve výrobcích, objednávkách, dodávkách a nákladech
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
+Tento článek vysvětluje, jak nastavit vlastnosti nebezpečných materiálů pro uvolněné produkty, jak stanovit limity zásob nebezpečných položek a jak zahrnout nebezpečné materiály do prodejní objednávky, dodávky nebo nákladu.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Nastavení specifikací nebezpečných materiálů pro výrobky
 
@@ -109,11 +109,11 @@ Zde je klíč k vzorci:
 - *&lt;PřevodJednotek&gt;* je faktor převodu pro převod mezi jednotkou, která se používá pro množství na řádku nákladu, a jednotkou, která je uvedena pro produkt v poli **Jednotka** na záložce s náhledem **Správa materiálu**.
 - *&lt;Násobitel&gt;* je násobitel, který je uveden pro produkt v poli **Násobitel** na záložce s náhledem **Správa materiálu**.
 
-Toto skóre je hlášeno pro každý řádek nákladu, který obsahuje produkt, kde jsou uvedeny tyto hodnoty. Další informace viz [Dodávky obsahující nebezpečné materiály](#hazmat-shipments) a [Náklady obsahující nebezpečné materiály](#hazmat-loads) dále v tomto tématu.
+Toto skóre je hlášeno pro každý řádek nákladu, který obsahuje produkt, kde jsou uvedeny tyto hodnoty. Další informace viz [Dodávky obsahující nebezpečné materiály](#hazmat-shipments) a [Náklady obsahující nebezpečné materiály](#hazmat-loads) dále v tomto článku.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>Jak se počítá váha nebezpečného materiálu
 
-Náklady a řádky nákladů obsahující produkty, kde je možnost **Omezené množství** na záložce s náhledem **Správa materiálu** nastavena na **Ano**, zobrazí celkovou hmotnost nebezpečného materiálu, jak je popsáno v částech [Dodávky obsahující nebezpečné materiály](#hazmat-shipments) a [Náklady obsahující nebezpečné materiály](#hazmat-loads) dále v tomto tématu. Váha nebezpečného materiálu je vypočítána pomocí následujícího vzorce:
+Náklady a řádky nákladů obsahující produkty, kde je možnost **Omezené množství** na záložce s náhledem **Správa materiálu** nastavena na **Ano**, zobrazí celkovou hmotnost nebezpečného materiálu, jak je popsáno v částech [Dodávky obsahující nebezpečné materiály](#hazmat-shipments) a [Náklady obsahující nebezpečné materiály](#hazmat-loads) dále v tomto článku. Váha nebezpečného materiálu je vypočítána pomocí následujícího vzorce:
 
 Hmotnost nebezpečného materiálu = *&lt;MnožŘád&gt;* × *&lt;HmotnostProduktu&gt;* × *&lt;PřevodJednotek&gt;*
 

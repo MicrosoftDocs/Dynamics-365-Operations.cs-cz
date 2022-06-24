@@ -1,6 +1,6 @@
 ---
 title: Přehled kanálů
-description: Toto téma poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce.
+description: Tento článek poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: cc7f00d69a6fd57efcd9b6eece56ddc0702c6935
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af5089f0065610873360b2e2883928a43600caa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884630"
 ---
 # <a name="channels-overview"></a>Přehled kanálů
 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení každého kanálu.
+Tento článek poskytuje přehled kanálů v Microsoft Dynamics 365 Commerce. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení každého kanálu.
 
 ## <a name="types-of-channels"></a>Typy kanálů
 

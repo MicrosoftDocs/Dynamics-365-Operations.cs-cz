@@ -1,6 +1,6 @@
 ---
 title: Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.
-description: Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů z Dynamics 365 Sales do Supply Chain Management.
+description: Tento článek se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů z Dynamics 365 Sales do Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8d415174f62c511626852b91f3591f907b4a85ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851558"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.
 
@@ -32,7 +32,7 @@ ms.locfileid: "8063078"
 > [!NOTE]
 > Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
+Tento článek se věnuje šablonám a základní úloze, které se používají k synchronizaci obchodních vztahů přímo z Dynamics 365 Sales do Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
@@ -101,7 +101,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ![Mapování šablony v integraci dat.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 
 [Zpeněžení potenciálního zákazníka](prospect-to-cash.md)

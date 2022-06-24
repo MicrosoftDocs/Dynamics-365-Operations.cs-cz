@@ -1,6 +1,6 @@
 ---
 title: Nastavení intervalů servisu
-description: Toto téma popisuje, jak nastavit intervaly servisu. Servisní interval určuje, jak často jsou pro řádky servisní smlouvy vytvářeny řádky servisní zakázky při automatickém vytváření servisních zakázek.
+description: Tento článek popisuje, jak nastavit intervaly servisu. Servisní interval určuje, jak často jsou pro řádky servisní smlouvy vytvářeny řádky servisní zakázky při automatickém vytváření servisních zakázek.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56b8a31af061b90aeddfb460f6e86c2c5636b280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845946"
 ---
 # <a name="set-up-service-intervals"></a>Nastavení intervalů servisu  
 
@@ -48,7 +48,7 @@ Chcete například vytvořit interval servisu o délce 10 dní.
 5. Do pole **Četnost** zadejte hodnotu 10.
 6. Stiskem kláves **Alt+S** interval servisu uložte.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 [Intervaly servisu](service-intervals.md)  
 

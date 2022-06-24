@@ -1,6 +1,6 @@
 ---
 title: Konsolidace zboží - Využití skladového místa
-description: Toto téma poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky Konsolidace položek, aby konsolidovali položky, a proto lépe využívali skladové prostory.
+description: Tento článek poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky Konsolidace položek, aby konsolidovali položky, a proto lépe využívali skladové prostory.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849177"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidace zboží - Využití skladového místa
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky **Konsolidace položek**, aby konsolidovali položky, a proto lépe využívali skladové prostory.
+Tento článek poskytuje informace o funkcích, které usnadňují vedoucím skladu prohlížet a filtrovat objemové využití umístění v celém skladu. Manažeři mohou vybírat místa a vytvářet pohyby inventáře přímo ze stránky **Konsolidace položek**, aby konsolidovali položky, a proto lépe využívali skladové prostory.
 
 ## <a name="turn-on-the-features"></a>Zapnutí funkcí
 
-Než budete moci používat funkce popsané v tomto tématu, musíte je v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Zapněte obě následující funkce v pořadí, v jakém jsou uvedeny v seznamu. (Obě funkce jsou pro modul **Správa skladu**.)
+Než budete moci používat funkce popsané v tomto článku, musíte je v systému zapnout. Správci mohou pomocí pracovního prostoru [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) zkontrolovat stav těchto funkcí a dle potřeby je zapnout. Zapněte obě následující funkce v pořadí, v jakém jsou uvedeny v seznamu. (Obě funkce jsou pro modul **Správa skladu**.)
 
 1. Stav umístění ve skladu
 2. Využití skladového místa pro konsolidaci zboží
@@ -51,7 +51,7 @@ Tato pole umožňují manažerům skladu mít lepší přehled o stavu skladový
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Nastavení konsolidace zboží a využití skladového místa
 
-Tato část popisuje, jak připravit systém k použití konsolidace položek a využití umístění. Postupy používají ukázkové hodnoty ze standardních demonstračních dat. Pokud se chystáte projít cvičná scénář, který je uveden dále v tomto tématu, vyberte právnickou osobu **USMF** (která obsahuje standardní demo data) a vytvořte každý záznam popsaný v této části. Pokud neplánujete pracovat s ukázkovým scénářem, mohou být hodnoty, které jsou zde uvedeny, považovány za příklady typů nastavení, které musíte pro použití funkcí dokončit.
+Tato část popisuje, jak připravit systém k použití konsolidace položek a využití umístění. Postupy používají ukázkové hodnoty ze standardních demonstračních dat. Pokud se chystáte projít cvičná scénář, který je uveden dále v tomto článku, vyberte právnickou osobu **USMF** (která obsahuje standardní demo data) a vytvořte každý záznam popsaný v této části. Pokud neplánujete pracovat s ukázkovým scénářem, mohou být hodnoty, které jsou zde uvedeny, považovány za příklady typů nastavení, které musíte pro použití funkcí dokončit.
 
 ### <a name="released-product"></a>Uvolněný produkt
 

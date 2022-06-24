@@ -1,6 +1,6 @@
 ---
 title: Ochranná doba disponibility
-description: Toto téma popisuje, jak nastavit ochranné lhůty disponibility, když používáte optimalizaci plánování. Ochranná lhůta disponibility označuje váš plánovací horizont a limit.
+description: Tento článek popisuje, jak nastavit ochranné lhůty disponibility, když používáte optimalizaci plánování. Ochranná lhůta disponibility označuje váš plánovací horizont a limit.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847926"
 ---
 # <a name="coverage-time-fences"></a>Ochranná doba disponibility
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma popisuje, jak nastavit *ochranné lhůty* disponibility, když používáte optimalizaci plánování. Plánovači mohou definovat horizont plánování (ochranná lhůta disponibility ve dnech) a vyloučit nabídku a poptávku, které přesahují tento horizont. Ochranné lhůty disponibility proto pomáhají předcházet „šumu“, který je způsoben návrhy dodávek, na které nemusíte měsíce reagovat. Mezi příklady patří prognóza pro příští rok a objednávky zákazníků, které jsou umístěny daleko za běžnou dodací lhůtu.
+Tento článek popisuje, jak nastavit *ochranné lhůty disponibility*, když používáte optimalizaci plánování. Plánovači mohou definovat horizont plánování (ochranná lhůta disponibility ve dnech) a vyloučit nabídku a poptávku, které přesahují tento horizont. Ochranné lhůty disponibility proto pomáhají předcházet „šumu“, který je způsoben návrhy dodávek, na které nemusíte měsíce reagovat. Mezi příklady patří prognóza pro příští rok a objednávky zákazníků, které jsou umístěny daleko za běžnou dodací lhůtu.
 
 Ochranná lhůta disponibility je počet dní po dnešním datu (nebo přesněji datum, kdy provedete plánovací běh), kdy je vyloučena nabídka a poptávka. Abyste se vyhnuli zpožděním, musíte zajistit, aby časový limit disponibility byl delší než celková doba realizace. Výchozí systémová hodnota je 100 dní.
 

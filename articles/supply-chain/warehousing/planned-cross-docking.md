@@ -1,6 +1,6 @@
 ---
 title: Plánovaný cross docking
-description: Toto téma popisuje cross docking s rozšířeným plánováním, kde je množství zásob potřebných pro objednávku, směrováno přímo z příjmu nebo tvorby do správného výstupního překladiště nebo přípravné oblasti. Veškeré zbývající zásoby z příchozího zdroje jsou směrovány na správné přípravné místo pomocí běžného procesu zaskladnění.
+description: Tento článek popisuje cross docking s rozšířeným plánováním, kde je množství zásob potřebných pro objednávku, směrováno přímo z příjmu nebo tvorby do správného výstupního překladiště nebo přípravné oblasti. Veškeré zbývající zásoby z příchozího zdroje jsou směrovány na správné přípravné místo pomocí běžného procesu zaskladnění.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863672"
 ---
 # <a name="planned-cross-docking"></a>Cross docking s plánováním
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje cross docking s rozšířeným plánováním. Cross docking s rozšířeným plánováním je skladový proces, kde je množství zásob potřebných pro objednávku, směrováno přímo z příjmu nebo tvorby do správného výstupního překladiště nebo přípravné oblasti. Veškeré zbývající zásoby z příchozího zdroje jsou směrovány na správné přípravné místo pomocí běžného procesu zaskladnění.
+Tento článek popisuje cross docking s rozšířeným plánováním. Cross docking s rozšířeným plánováním je skladový proces, kde je množství zásob potřebných pro objednávku, směrováno přímo z příjmu nebo tvorby do správného výstupního překladiště nebo přípravné oblasti. Veškeré zbývající zásoby z příchozího zdroje jsou směrovány na správné přípravné místo pomocí běžného procesu zaskladnění.
 
 Cross docking umožňuje pracovníkům přeskočit zaskladnění zásob na vstupu a jejich výdej na výstupu, když jsou již zásoby označeny pro výstupní objednávku. Tím se všude tam, kde je to možné, minimalizuje počet operací se zásobami. Protože se redukuje množství interakce se systémem, lze též dosáhnout dalších časových i prostorových úspor ve skladu.
 
@@ -37,7 +37,7 @@ V době přijetí příchozí objednávky nastavení cross dockingu automaticky
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Zapnutí funkcí Cross docking s plánováním
 
-Pokud váš systém ještě neobsahuje funkce popsané v tomto tématu, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapínejte následující funkce v následujícím pořadí:
+Pokud váš systém ještě neobsahuje funkce popsané v tomto článku, přejděte na stránku [Správa funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a zapínejte následující funkce v následujícím pořadí:
 
 1. *Plánovaný cross docking*
 1. *Šablony cross dockingu se směrnicemi skladového místa*

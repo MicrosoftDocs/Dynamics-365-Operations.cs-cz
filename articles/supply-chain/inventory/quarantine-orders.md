@@ -1,6 +1,6 @@
 ---
 title: Karanténní příkazy
-description: Toto téma popisuje jak použít karanténní příkazy k blokování zásob.
+description: Tento článek popisuje jak použít karanténní příkazy k blokování zásob.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869655"
 ---
 # <a name="quarantine-orders"></a>Karanténní příkazy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje jak použít karanténní příkazy k blokování zásob.
+Tento článek popisuje jak použít karanténní příkazy k blokování zásob.
 
 Karanténní příkazy vám umožňují blokovat zásoby. Můžete například chtít umístit do karantény položky z důvodů kontroly kvality. Sklad, který byl umístěn do karantény, je převeden do karanténního skladu.
 

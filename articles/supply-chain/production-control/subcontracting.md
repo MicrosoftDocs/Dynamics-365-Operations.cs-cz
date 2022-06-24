@@ -1,6 +1,6 @@
 ---
 title: Subdodávka
-description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Dynamics 365 Supply Chain Management.
+description: Tento článek vás provede subdodávkami ve výrobě v aplikaci Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854170"
 ---
 # <a name="subcontracting"></a>Subdodávka
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 Supply Chain Management. První část tohoto tématu popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
+Tento článek vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 Supply Chain Management. První část tohoto článku popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
 
 ## <a name="target-audience"></a>Cílová skupina
 
-V tomto tématu se naučíte, jak nastavit subdodávky ve výrobě. Budete používat existující data v právnické osobě HQUS k provedení základního nastavení toku aktivity subdodávky. Ukázková data v právnické osobě HQUS obsahují nastavení parametrů, které byly přednastaveny k podpoře kroků v ukázce. Přestože ukázka adresuje klíčové problémy a výzvy pro různé role, může ji dokončit správce systému.
+V tomto článku se naučíte, jak nastavit subdodávky ve výrobě. Budete používat existující data v právnické osobě HQUS k provedení základního nastavení toku aktivity subdodávky. Ukázková data v právnické osobě HQUS obsahují nastavení parametrů, které byly přednastaveny k podpoře kroků v ukázce. Přestože ukázka adresuje klíčové problémy a výzvy pro různé role, může ji dokončit správce systému.
 
 ## <a name="demo-scenario"></a>Scénář ukázky
 

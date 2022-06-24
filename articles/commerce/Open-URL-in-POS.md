@@ -1,6 +1,6 @@
 ---
-title: Otevření URL adresy v POS
-description: Toto téma poskytuje přehled vylepšení, která byla provedena u funkce vyhledávání produktu a vyhledávání zákazníka v aplikaci Dynamics 365 Commerce.
+title: Otevření adresy URL v POS
+description: Tento článek poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 Commerce ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853955"
 ---
-# <a name="open-url-in-pos"></a>Otevření URL adresy v POS
+# <a name="open-url-in-pos"></a>Otevření adresy URL v POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje konfiguraci tlačítka v pokladním místě Dynamics 365 Commerce pro otevření adresy URL. Tato funkce nevyžaduje přizpůsobení kódu a může ji konfigurovat kdokoliv, i bez role vývojáře. 
+Tento článek popisuje konfiguraci tlačítka v pokladním místě Dynamics 365 Commerce pro otevření adresy URL. Tato funkce nevyžaduje přizpůsobení kódu a může ji konfigurovat kdokoliv, i bez role vývojáře. 
 
 Tato funkce umožňuje konfiguraci tlačítka v POS pomocí návrháře mřížky tlačítek pro otevření URL adresy. To je v současné době podporováno v následujících konfiguracích:
 

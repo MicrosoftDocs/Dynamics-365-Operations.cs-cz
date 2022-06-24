@@ -1,6 +1,6 @@
 ---
 title: Vytvoření nákupní objednávky s plánem dodávek
-description: Toto téma ukazuje, jak vytvořit plán dodávek pro nákupní objednávku.
+description: Tento článek ukazuje, jak vytvořit plán dodávek pro nákupní objednávku.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875239"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Vytvoření nákupní objednávky s plánem dodávek
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma ukazuje, jak vytvořit plán dodávek pro nákupní objednávku. Plán dodávek se používá, pokud množství z objednávky nebo deníku má být dodáno v podobě vícenásobné expedice. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento postup by obvykle prováděl nákupčí.
+Tento článek ukazuje, jak vytvořit plán dodávek pro nákupní objednávku. Plán dodávek se používá, pokud množství z objednávky nebo deníku má být dodáno v podobě vícenásobné expedice. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento postup by obvykle prováděl nákupčí.
 
 ## <a name="create-a-delivery-schedule"></a>Vytvoření plánu dodávek
 1. V navigačním podokně přejděte na **Moduly > Zásobování a zdroje > Nákupní objednávky > Všechny nákupní objednávky**.

@@ -1,6 +1,6 @@
 ---
 title: Nastavte položku nabídky mobilního zařízení a poskytněte přehled řádků výdeje
-description: Toto téma vysvětluje, jak definovat, kdy se seznam všech řádků práce zobrazí pracovníkům skladu, kteří zpracovávají skladovou práci na mobilním zařízení. Tato funkce může být užitečná pro pracovníky skladu, kteří často vyžadují přehled řádků výdeje v pracovním příkazu, aby mohli optimalizovat sekvenci výdeje.
+description: Tento článek vysvětluje, jak definovat, kdy se seznam všech řádků práce zobrazí pracovníkům skladu, kteří zpracovávají skladovou práci na mobilním zařízení. Tato funkce může být užitečná pro pracovníky skladu, kteří často vyžadují přehled řádků výdeje v pracovním příkazu, aby mohli optimalizovat sekvenci výdeje.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885660"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Nastavte položku nabídky mobilního zařízení a poskytněte přehled řádků výdeje
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak konfigurovat možnosti, které souvisejí s přehledem řádku výdeje pro položky nabídky mobilního zařízení, které se používají ke zpracování práce výdeje. Přehled řádků výdeje umožňuje pracovníkům skladu zobrazit a vybrat ze seznamu všech řádků práce, které souvisejí s jejich aktuálním úkolem. Tato schopnost může pracovníkům pomoci optimalizovat jejich sekvenci vychystávání. Tato funkce poskytuje možnosti, které nahrazují standardní tlačítko **Přeskočit**, které umožňuje pracovníkům procházet řádky jeden po druhém v pevném pořadí. (Možnost použít toto tlačítko je však stále k dispozici.)
+Tento článek vysvětluje, jak konfigurovat možnosti, které souvisejí s přehledem řádku výdeje pro položky nabídky mobilního zařízení, které se používají ke zpracování práce výdeje. Přehled řádků výdeje umožňuje pracovníkům skladu zobrazit a vybrat ze seznamu všech řádků práce, které souvisejí s jejich aktuálním úkolem. Tato schopnost může pracovníkům pomoci optimalizovat jejich sekvenci vychystávání. Tato funkce poskytuje možnosti, které nahrazují standardní tlačítko **Přeskočit**, které umožňuje pracovníkům procházet řádky jeden po druhém v pevném pořadí. (Možnost použít toto tlačítko je však stále k dispozici.)
 
 Správci mohou nakonfigurovat každou položku nabídky samostatně, aby určili, jak, kdy a kde mobilní aplikace Řízení skladu zobrazuje přehled řádků výdeje.
 

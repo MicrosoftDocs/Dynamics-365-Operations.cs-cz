@@ -1,6 +1,6 @@
 ---
 title: Možnost Uložit pro mou další platbu se nezobrazí
-description: Toto téma poskytuje pokyny pro řešení potíží, které vám mohou pomoci, když se políčko Uložit pro moji další platbu nezobrazí v části Platební metoda na stránce pokladny webu elektronického obchodování.
+description: Tento článek poskytuje pokyny pro řešení potíží, které vám mohou pomoci, když se políčko Uložit pro moji další platbu nezobrazí v části Platební metoda na stránce pokladny webu elektronického obchodování.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4887cde3e4243ae7a4da6402782e69e780ae20331ed80df63ba1239ef5187e41
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: efa04c87f78c376fd00da1b26aedb9e8b428dfa5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871548"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Možnost „Uložit pro mou další platbu“ se nezobrazí
 
 [!include [banner](../../includes/banner.md)]
 
-Toto téma poskytuje pokyny pro řešení potíží, které vám mohou pomoci, když se políčko **Uložit pro moji další platbu** nezobrazí v části **Platební metoda** na stránce pokladny webu elektronického obchodování.
+Tento článek poskytuje pokyny pro řešení potíží, které vám mohou pomoci, když se políčko **Uložit pro moji další platbu** nezobrazí v části **Platební metoda** na stránce pokladny webu elektronického obchodování.
 
 ## <a name="description"></a>popis
 

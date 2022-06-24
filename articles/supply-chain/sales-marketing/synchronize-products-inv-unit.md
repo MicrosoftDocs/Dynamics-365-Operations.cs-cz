@@ -1,6 +1,6 @@
 ---
 title: Synchronizace produktů ve skladové jednotce z aplikace Supply Chain Management do služby Field Service
-description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
+description: Tento článek popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6ac346d735bc44e9f9660c60b23a73057e4b7306
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5f7658eacd20aa69a64d6288e9d29e53b6ccb002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887247"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Synchronizace produktů ve skladové jednotce z aplikace Supply Chain Management do služby Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
+Tento článek popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
 [![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service.](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
 Použitá šablona **Produkty Field Service s jednotkou zásob (Supply Chain Management Field Service)** je založena na šabloně **Produkty Field Service ( Supply Chain Management do Field Service)**. Více informací naleznete v části [Synchronizace produktů ve službě Supply Chain Management s produkty v aplikaci Field Service](field-service-product.md).
 
-V tomto tématu jsou popsány pouze rozdíly mezi dvěma šablonami: 
+V tomto článku jsou popsány pouze rozdíly mezi dvěma šablonami: 
 - **Produkty Field Service se skladovou jednotkou (Supply Chain Management do Sales)**
 - **Produkty Field Service (Supply Chain Management do Field Service)** 
 

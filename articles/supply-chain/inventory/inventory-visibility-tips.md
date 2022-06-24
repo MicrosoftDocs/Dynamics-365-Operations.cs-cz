@@ -1,6 +1,6 @@
 ---
-title: Tipy ohledně doplňku Viditelnost zásob
-description: Toto téma obsahuje několik tipů, které byste měli zvážit při nastavení a použití doplňku Viditelnost zásob.
+title: Tipy pro Inventory Visibility
+description: Tento článek obsahuje několik tipů, které byste měli zvážit při nastavení a použití doplňku Viditelnost zásob.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885950"
 ---
 # <a name="inventory-visibility-tips"></a>Tipy ohledně doplňku Viditelnost zásob
 
@@ -34,5 +34,6 @@ Zde je několik tipů, které byste měli zvážit při nastavení a použití d
 - Pokud do svého prostředí Supply Chain Management přidáte jedno nebo více nových opatření, měli byste je přidat také do Viditelnosti zásob. Všechny změny množství pro nová opatření však musí pocházet z vašeho prostředí Supply Chain Management.
 - V současné době se [konfigurace oddílu](inventory-visibility-configuration.md#partition-configuration) skládá ze dvou základních dimenzí (`SiteId` a `LocationId`), které ukazují, jak jsou data distribuována. Operace ve stejném oddílu mohou poskytovat vyšší výkon za nižší náklady. Ve výchozím nastavení obsahuje řešení tuto konfiguraci oddílu. Z tohoto důvodu ji *nemusíte sami definovat*. Nepřizpůsobujte výchozí konfiguraci oddílu. Pokud ji odstraníte nebo změníte, pravděpodobně způsobíte neočekávanou chybu.
 - Základní dimenze, které jsou definovány v konfiguraci oddílu, by neměly být definovány v [konfiguraci hierarchie indexu produktu](inventory-visibility-configuration.md#index-configuration).
+- [Konfigurace hierarchie indexu produktu](inventory-visibility-configuration.md#index-configuration) musí obsahovat alespoň jednu hierarchii indexu (například obsahující základní dimezni `Empty`), jinak dotazy selžou s chybou „Nebyla nastavena žádná hierarchie indexu.“
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

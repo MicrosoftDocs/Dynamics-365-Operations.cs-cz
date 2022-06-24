@@ -1,6 +1,6 @@
 ---
 title: Přidání ikony oblíbené položky
-description: Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
+description: Tento článek vysvětluje, jak přidat ikonu oblíbené položky na váš web.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855788"
 ---
 # <a name="add-a-favicon"></a>Přidání ikony oblíbené položky
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak přidat ikonu oblíbené položky na váš web.
+Tento článek vysvětluje, jak přidat ikonu oblíbené položky na váš web.
 
 Ikona oblíbené položky je malý grafický soubor, který se mimo jiná umsítění zobrazuje na kartě webového prohlížeče, v adresním řádku, v historii procházení a v záložkách nebo oblíbených položkách. Doporučujeme přidat ikonu oblíbené položky na svůj web, protože reprezentuje a posiluje vaši značku a pomáhá rozlišit váš web od jiných webů, které vaši zákazníci navštěvují.
 
-Ačkoli lze na web přidat více ikon oblíbené položky různých velikostí a typů souborů, tohle téma ukazuje, jak přidat jednu ikonu oblíbené položky. Stejný proces a umístění se však používají k přidání dalších ikon oblíbené položky.
+Ačkoli lze na web přidat více ikon oblíbené položky různých velikostí a typů souborů, tento článek ukazuje, jak přidat jednu ikonu oblíbené položky. Stejný proces a umístění se však používají k přidání dalších ikon oblíbené položky.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Odeslání ikony oblíbené položky do kolekce prostředků webu
 

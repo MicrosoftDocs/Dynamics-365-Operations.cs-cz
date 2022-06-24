@@ -1,6 +1,6 @@
 ---
-title: Dodavatelská spolupráce se zákazníky
-description: Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami ke sledování zásob na skladě.
+title: Dodavatelská spolupráce s odběrateli
+description: Tento článek popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami ke sledování zásob na skladě.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859162"
 ---
-# <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
+# <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce s odběrateli
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 Supply Chain Management. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
+Tento článek popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 Supply Chain Management. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
 
 - **Potvrzení nákupní objednávky** – sledování nákupních objednávek a odpovídání na ně.
 - **Nabídky dodavatele** – zobrazení požadavků na nabídku a odpovídání na ně zadáním nabídky.
 - **Informace o dodavateli** – zobrazení a aktualizace hlavních dat dodavatele.
-- **Fakturace** – práce s fakturami. Toto téma nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturace** – práce s fakturami. Tento článek nepokrývá pracovní prostor **Fakturace**. Další informace o tomto pracovním prostoru naleznete v části [Pracovní prostor fakturace dodavatelské spolupráce](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Dodavatele mohou také monitorovat informace o zásobách dodávky.
 
@@ -47,9 +47,9 @@ V pracovním prostoru **Potvrzení nákupní objednávky** existují tři seznam
 
 Pro práci s nákupními objednávkami můžete použít následující stránky:
 
-- **Nákupní objednávky ke kontrole** – Tato stránka obsahuje stejné informace jako seznam v pracovním prostoru **Nákupní objednávky ke kontrole**. Viz dřívější popis v tomto tématu.
+- **Nákupní objednávky ke kontrole** – Tato stránka obsahuje stejné informace jako seznam v pracovním prostoru **Nákupní objednávky ke kontrole**. Viz dřívější popis v tomto článku.
 - **Historie potvrzení nákupních objednávek dodavatele** – Tato stránka obsahuje všechny nákupní objednávky a všechny verze nákupních objednávek, které byly odeslány dodavateli. Také obsahuje všechny odpovědi, které byly vráceny od dodavatele.
-- **Otevřené potvrzené nákupní objednávky** – Tato stránka obsahuje stejné informace jako seznam v pracovním prostoru **Otevřené potvrzené nákupní objednávky**. Viz dřívější popis v tomto tématu.
+- **Otevřené potvrzené nákupní objednávky** – Tato stránka obsahuje stejné informace jako seznam v pracovním prostoru **Otevřené potvrzené nákupní objednávky**. Viz dřívější popis v tomto článku.
 - **Všechny potvrzené nákupní objednávky** – Tato stránka obsahuje všechny nákupní objednávky, které byly potvrzeny. Nákupní objednávky zobrazené na této stránce zahrnují objednávky, kde byly přijaty produkty nebo služby. Tento seznam slouží ke sledování nákupních objednávek, ke kterým můžete poslat faktury.
 
 ### <a name="responding-to-pos"></a>Odpověď na nákupní objednávky

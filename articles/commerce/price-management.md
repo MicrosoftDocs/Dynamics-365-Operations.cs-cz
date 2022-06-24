@@ -1,6 +1,6 @@
 ---
 title: Správa prodejní ceny v aplikaci Retail
-description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Dynamics 365 Commerce.
+description: Tento článek popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887003"
 ---
-# <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
+# <a name="retail-sales-price-management"></a>Správa prodejní ceny v aplikaci Retail
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o procesu vytváření a správy prodejních cen v Dynamics 365 Commerce. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
+Tento článek obsahuje informace o procesu vytváření a správy prodejních cen v Dynamics 365 Commerce. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
 
 ## <a name="terminology"></a>Terminologie
 
-V tomto tématu se používají následující termíny:
+V tomto článku se používají následující termíny:
 
 | Termín | Definice, použití a poznámky |
 |---|---|
-| Cena | Jednoduchá jednotková částka, za kterou se prodává podukt v klientovi pokladního místa nebo na prodejní objednávce. V tomto tématu se termín *cena* vždy vztahuje na prodejní cenu, nikoliv cenu zásob nebo nákladovou cenu. |
+| Cena | Jednoduchá jednotková částka, za kterou se prodává podukt v klientovi pokladního místa nebo na prodejní objednávce. V tomto článku se termín *cena* vždy vztahuje na prodejní cenu, nikoliv cenu zásob nebo nákladovou cenu. |
 | Základní cena | Cena, která se nastavuje v poli **Cena** na uvolněném produktu. |
 | Cena na základě obchodních smluv | Cena, která je nastavena na produkt nebo variantu pomocí obchodní smlouvy typu **Cena (prodej)**. |
-| Nejlepší cena | Pokud se na produkt může uplatnit více než jedna cena nebo sleva, nejmenší částka ceny a/nebo největší částka slevy, která produkuje nejnižší možnou čistou částku, kterou musí zákazník zaplatit. V tomto tématu se koncept nejlepší ceny vždy vztahuje na „nejlepší cenu“. Tato nejlepší cena se liší od výčtové hodnoty **Nejlepší cena** pro souběžný režim slevy a neměla by se s tímto pojmem zaměňovat. |
+| Nejlepší cena | Pokud se na produkt může uplatnit více než jedna cena nebo sleva, nejmenší částka ceny a/nebo největší částka slevy, která produkuje nejnižší možnou čistou částku, kterou musí zákazník zaplatit. V tomto článku se koncept nejlepší ceny vždy vztahuje na „nejlepší cenu“. Tato nejlepší cena se liší od výčtové hodnoty **Nejlepší cena** pro souběžný režim slevy a neměla by se s tímto pojmem zaměňovat. |
 
 ## <a name="price-groups"></a>Cenové skupiny
 
@@ -97,7 +97,7 @@ Chcete-li použít cenovou prioritu pro ceny, musíte přiřadit cenovou priorit
 
 Funkce cenové priority byla zavedena pro podporu scénáře, kdy maloobchodník chce uplatnit vyšší ceny v určité sadě obchodů. Například maloobchodník definoval regionální ceny pro východní pobřeží Spojených států, ale požaduje vyšší ceny některých produktů v obchodech v New Yorku, protože náklady na prodej některých produktů ve městě jsou vyšší anebo protože místní trh snese vyšší cenu.
 
-Jak bylo popsáno v sekci Nejlepší cena v tomto tématu, cenový modul obvykle vybírá nižší ze dvou cen. Proto je maloobchodníkovi obvykle zabráněno, aby použil vyšší cenu ze dvou cen v obchodě, který má cenové skupiny na východním pobřeží i v New Yorku. Pro vyřešení tohoto problému předtím, než byla zavedena funkce s prioritní cenou, musel maloobchodník dvakrát definovat ceny pro každý produkt a nepřiřadit obě cenové skupiny. Případně prodejce musel vytvořit další cenové skupiny, aby izoloval produkty s vyšší cenou od produktů, které mají obvyklé nižší ceny.
+Jak bylo popsáno v sekci Nejlepší cena v tomto článku, cenový modul obvykle vybírá nižší ze dvou cen. Proto je maloobchodníkovi obvykle zabráněno, aby použil vyšší cenu ze dvou cen v obchodě, který má cenové skupiny na východním pobřeží i v New Yorku. Pro vyřešení tohoto problému předtím, než byla zavedena funkce s prioritní cenou, musel maloobchodník dvakrát definovat ceny pro každý produkt a nepřiřadit obě cenové skupiny. Případně prodejce musel vytvořit další cenové skupiny, aby izoloval produkty s vyšší cenou od produktů, které mají obvyklé nižší ceny.
 
 Nicméně funkce priority cen umožňuje maloobchodnímu prodejci vytvořit cenovou prioritu pro ceny obchodu, která je vyšší než cenová priorita regionálních cen. Maloobchodní prodejce může případně vytvořit priority cen pouze pro ceny obchodu a ponechat regionální ceny na výchozí prioritě cen, což je 0 (nula). Obě nastavení pomáhají zaručit, že ceny obchodu budou vždy používány před regionálními cenami.
 
@@ -151,7 +151,7 @@ Pomocí deníku obchodních dohod můžete pro každý produkt vytvářet obchod
 
 Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, velkoobchodní cenový modul použije při určování ceny **Tabulku** obchodní smlouvy.
 
-Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji používá. Mimo Commerce jsou obchodní smlouvy prodejní cenou **Skupina** pro jednoduchou skupinu odběratelů. V aplikaci Commerce byl však koncept skupiny odběratelů rozšířen tak, aby byl obecnější cenovou skupinou. Cenovou skupinu lze napojit na kanál, umístění, věrnostní program nebo katalog. Podrobné informace o cenových skupin naleznete v části "Cenových skupin" dříve v tomto tématu.
+Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji používá. Mimo Commerce jsou obchodní smlouvy prodejní cenou **Skupina** pro jednoduchou skupinu odběratelů. V aplikaci Commerce byl však koncept skupiny odběratelů rozšířen tak, aby byl obecnější cenovou skupinou. Cenovou skupinu lze napojit na kanál, umístění, věrnostní program nebo katalog. Podrobné informace o cenových skupin naleznete v části "Cenových skupin" dříve v tomto článku.
 
 > [!NOTE]
 > Cena obchodní smlouvy se vždy použije před základní cenou.

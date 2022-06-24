@@ -1,6 +1,6 @@
 ---
 title: Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
-description: Toto téma vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
+description: Tento článek vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728284"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861907"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurace volitelných funkcí pro prostředí vyhodnocení aplikace Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
+Tento článek vysvětluje, jak konfigurovat volitelné funkce prostředí vyhodnocení Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Předpoklady
 
@@ -108,7 +108,7 @@ Pro každou transakční událost, pro kterou chcete odeslat e-maily, musíte ak
     - Šablona objednávky balení
     - Šablona objednávky výdeje
 
-1. Přizpůsobte šablony pomocí textu nebo editoru HTML. Další informace naleznete v části [podporované tokeny](#supported-tokens-in-the-email-template) dále v tomto tématu.
+1. Přizpůsobte šablony pomocí textu nebo editoru HTML. Další informace naleznete v části [podporované tokeny](#supported-tokens-in-the-email-template) dále v tomto článku.
 1. Přihlášení do Commerce.
 1. Pomocí nabídky v levé části přejděte na **Moduly \> Správa organizace \> Nastavení \> Šablony e-mailu organizace**.
 1. Rozbalením seznamu v levé části zobrazíte všechny šablony.

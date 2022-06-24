@@ -1,6 +1,6 @@
 ---
 title: Odhad a správa nákladů za doručení
-description: Systém používá vaše nastavení automatických nákladů k určení odhadu vašich nákladů za doručení. Toto téma vysvětluje, jak můžete definovat různé scénáře a dosáhnout tak přesnějšího odhadu.
+description: Systém používá vaše nastavení automatických nákladů k určení odhadu vašich nákladů za doručení. Tento článek vysvětluje, jak můžete definovat různé scénáře a dosáhnout tak přesnějšího odhadu.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854434"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Odhad a správa nákladů za doručení
 
@@ -50,7 +50,7 @@ V následující tabulce jsou popsána pole, která jsou k dispozici pro každou
 
 Dialogové okno **Odhad nákladů** použijte ke generování nového odhadu nákladů, který je založen na vybrané šabloně nákladů, vybrané sadě položek a dalších podrobnostech cesty. Tato nastavení se poté použijí k určení odhadovaných nákladů na zboží. Tyto odhady nákladů se primárně používají při práci se standardními nákladovými položkami. Přidáním odhadovaných nákladů za doručení ke standardním nákladům na zboží ve skladu byste měli po přidání zboží do cesty zaznamenávat transakce s menšími odchylkami, protože standardní náklady budou odrážet odhady těchto nákladů za doručení.
 
-Chcete-li otevřít dialogové okno **Odhad nákladů**, přejděte na uzel **Náklady za doručení \> Periodické úkoly \> Odhad nákladů**. Poté nastavte pole, která jsou popsána v následujících pododdílech. Nakonec výběrem **OK** vytvořte odhad. Poté se zobrazí stránka **Odhad nákladů** (**Náklady za doručení \> Dotazy \> Odhady nákladů**) a zobrazí váš nový odhad, jak je popsáno dále v tomto tématu.
+Chcete-li otevřít dialogové okno **Odhad nákladů**, přejděte na uzel **Náklady za doručení \> Periodické úkoly \> Odhad nákladů**. Poté nastavte pole, která jsou popsána v následujících pododdílech. Nakonec výběrem **OK** vytvořte odhad. Poté se zobrazí stránka **Odhad nákladů** (**Náklady za doručení \> Dotazy \> Odhady nákladů**) a zobrazí váš nový odhad, jak je popsáno dále v tomto článku.
 
 ### <a name="settings-on-the-parameters-tab"></a>Nastavení na kartě Parametry
 
@@ -91,7 +91,7 @@ Chcete-li zobrazit nebo upravit podrobnosti o objemu anebo hmotnosti položky, v
 
 ## <a name="manage-estimated-costs"></a>Správa odhadovaných nákladů
 
-Chcete-li zobrazit a upravit odhady nákladů, které jste vytvořili, přejděte na uzel **Náklady za doručení \> Dotazy \> Odhady nákladů**. Na stránce **Odhady nákladů** se v podokně seznamu vlevo zobrazí všechny aktuální odhady nákladů. K práci s vybraným odhadem můžete použít tlačítka v podokně akcí. Všimněte si, že ve stránce **Odhady nákladů** nemůžete vytvořit nový odhad nákladů. Místo toho použijte dialogové okno **Odhad nákladů** (**Náklady za doručení \> Periodické úkoly \> Odhad nákladů**), jak je popsáno výše v tomto tématu.
+Chcete-li zobrazit a upravit odhady nákladů, které jste vytvořili, přejděte na uzel **Náklady za doručení \> Dotazy \> Odhady nákladů**. Na stránce **Odhady nákladů** se v podokně seznamu vlevo zobrazí všechny aktuální odhady nákladů. K práci s vybraným odhadem můžete použít tlačítka v podokně akcí. Všimněte si, že ve stránce **Odhady nákladů** nemůžete vytvořit nový odhad nákladů. Místo toho použijte dialogové okno **Odhad nákladů** (**Náklady za doručení \> Periodické úkoly \> Odhad nákladů**), jak je popsáno výše v tomto článku.
 
 Stránka **Odhady nákladů** ukazuje, jak byly odvozeny jednotlivé odhadované náklady. Ukazuje také odhadované náklady za doručení pro každou položku. Odhad nákladů můžete upravit změnou nákladové ceny anebo měny spojené s různým zbožím. Můžete také upravit přidružené náklady na cestu na úrovni cesty i na úrovni kontejneru. Když použijete tuto stránku k úpravě nákladů, zobrazí se výzva k přepočtu odhadovaných nákladů pro položky v odhadu nákladů. Až budete připraveni, můžete pomocí odhadů aktualizovat nákladovou cenu položek v šabloně nákladů.
 
